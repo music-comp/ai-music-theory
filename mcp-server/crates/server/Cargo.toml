@@ -23,6 +23,8 @@ schemars = { workspace = true }
 walkdir = { workspace = true }
 glob = { workspace = true }
 shellexpand = { workspace = true }
+pulldown-cmark = { workspace = true }
+serde_yaml = { workspace = true }
 thiserror = { workspace = true }
 
 # For future search implementation

@@ -4,6 +4,7 @@ use walkdir::WalkDir;
 
 use crate::config::Config;
 use crate::error::Result;
+use crate::markdown::{extract_first_heading, extract_frontmatter};
 
 /// A search result item.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -129,36 +130,14 @@ pub fn search_concepts(
 
 /// Extract title from markdown content.
 fn extract_metadata(content: &str) -> (String, Option<String>) {
-    let mut title = String::new();
-    let mut in_frontmatter = false;
-    let mut frontmatter_count = 0;
+    // Extract frontmatter
+    let (frontmatter, body) = extract_frontmatter(content).unwrap_or((None, content));
 
-    for line in content.lines().take(20) {
-        if line.trim() == "---" {
-            frontmatter_count += 1;
-            if frontmatter_count == 1 {
-                in_frontmatter = true;
-                continue;
-            } else if frontmatter_count == 2 {
-                in_frontmatter = false;
-                continue;
-            }
-        }
-
-        if in_frontmatter && line.starts_with("title:") {
-            title = line[6..].trim().trim_matches('"').to_string();
-            continue;
-        }
-
-        if !in_frontmatter && title.is_empty() && line.starts_with('#') {
-            title = line.trim_start_matches('#').trim().to_string();
-            break;
-        }
-    }
-
-    if title.is_empty() {
-        title = "Untitled".to_string();
-    }
+    // Get title from frontmatter or first heading
+    let title = frontmatter
+        .and_then(|fm| fm.title)
+        .or_else(|| extract_first_heading(body).map(|(_, text)| text))
+        .unwrap_or_else(|| "Untitled".to_string());
 
     (title, None)
 }

@@ -5,6 +5,7 @@ use walkdir::WalkDir;
 
 use crate::config::Config;
 use crate::error::{Error, Result};
+use crate::markdown::{extract_first_heading, extract_first_paragraph, extract_frontmatter};
 
 /// Information about a guide document.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -97,74 +98,28 @@ fn extract_topic(base: &Path, file_path: &Path) -> String {
 fn extract_title_and_description(path: &Path) -> Result<(String, Option<String>)> {
     let content = fs::read_to_string(path)?;
 
-    let mut title = String::new();
-    let mut description = String::new();
-    let mut in_frontmatter = false;
-    let mut frontmatter_count = 0;
-    let mut found_title = false;
+    // Extract frontmatter
+    let (frontmatter, body) = extract_frontmatter(&content)?;
 
-    for line in content.lines().take(30) {
-        // Handle YAML frontmatter
-        if line.trim() == "---" {
-            frontmatter_count += 1;
-            if frontmatter_count == 1 {
-                in_frontmatter = true;
-                continue;
-            } else if frontmatter_count == 2 {
-                in_frontmatter = false;
-                continue;
-            }
-        }
+    // Get title from frontmatter or first heading
+    let title = frontmatter
+        .as_ref()
+        .and_then(|fm| fm.title.clone())
+        .or_else(|| extract_first_heading(body).map(|(_, text)| text))
+        .unwrap_or_else(|| {
+            // Fallback to filename
+            path.file_stem()
+                .and_then(|s| s.to_str())
+                .unwrap_or("Untitled Guide")
+                .replace(['-', '_'], " ")
+        });
 
-        if in_frontmatter {
-            if let Some(stripped) = line.strip_prefix("title:") {
-                title = stripped.trim().trim_matches('"').to_string();
-                found_title = true;
-            } else if let Some(stripped) = line.strip_prefix("description:") {
-                description = stripped.trim().trim_matches('"').to_string();
-            }
-            continue;
-        }
+    // Get description from frontmatter or first paragraph
+    let description = frontmatter
+        .and_then(|fm| fm.description)
+        .or_else(|| extract_first_paragraph(body, 300));
 
-        // Extract first heading as title if not in frontmatter
-        if !found_title && line.starts_with('#') {
-            title = line.trim_start_matches('#').trim().to_string();
-            found_title = true;
-            continue;
-        }
-
-        // Collect first paragraph as description
-        if found_title
-            && !line.trim().is_empty()
-            && description.len() < 300
-            && !line.starts_with('#')
-        {
-            description.push_str(line);
-            description.push(' ');
-        }
-
-        if description.len() >= 300 {
-            break;
-        }
-    }
-
-    // Use filename as fallback title
-    if title.is_empty() {
-        // Safety: unwrap_or provides sensible display fallback if filename extraction fails
-        title = path
-            .file_stem()
-            .and_then(|s| s.to_str())
-            .unwrap_or("Untitled Guide")
-            .replace(['-', '_'], " ");
-    }
-
-    let description_opt = if description.trim().is_empty() {
-        None
-    } else {
-        Some(description.trim().to_string())
-    };
-
-    Ok((title, description_opt))
+    Ok((title, description))
 }
 
 /// Get a specific guide by ID.
