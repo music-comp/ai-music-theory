@@ -226,7 +226,10 @@ fn find_chapter_file(source_dir: &Path, chapter: &str) -> Result<PathBuf> {
 
     // Try to find by prefix (e.g., "01-16" matches "01-16-intervals.md")
     for entry in WalkDir::new(source_dir).max_depth(2) {
-        let entry = entry?;
+        let entry = entry.map_err(|e| {
+            // Convert walkdir::Error to io::Error, then to our Error
+            std::io::Error::new(std::io::ErrorKind::Other, e)
+        })?;
         let path = entry.path();
 
         if let Some(filename) = path.file_stem().and_then(|s| s.to_str()) {
