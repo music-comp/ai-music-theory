@@ -9,6 +9,16 @@ use error::Result;
 use rmcp::{transport::stdio, ServiceExt};
 use server::MusicTheoryServer;
 
+/// Add context to a configuration error.
+fn config_context(context: &str, error: impl std::fmt::Display) -> error::Error {
+    error::Error::config(format!("{}: {}", context, error))
+}
+
+/// Add context to an IO/server error.
+fn io_context(context: &str, error: impl std::fmt::Debug) -> error::Error {
+    error::Error::io(std::io::Error::other(format!("{}: {:?}", context, error)))
+}
+
 #[tokio::main]
 async fn main() -> Result<()> {
     // Load configuration
@@ -16,8 +26,7 @@ async fn main() -> Result<()> {
 
     // Initialize logging with twyg from config
     let log_opts = config.logging.to_twyg()?;
-    twyg::setup(log_opts)
-        .map_err(|e| error::Error::config(format!("Failed to setup logging: {}", e)))?;
+    twyg::setup(log_opts).map_err(|e| config_context("Failed to setup logging", e))?;
 
     log::info!(
         version = &*config.server.version,
@@ -30,18 +39,13 @@ async fn main() -> Result<()> {
     let service = MusicTheoryServer::new(config)
         .serve(stdio())
         .await
-        .map_err(|e| {
-            error::Error::io(std::io::Error::other(format!(
-                "Failed to start server: {:?}",
-                e
-            )))
-        })?;
+        .map_err(|e| io_context("Failed to start server", e))?;
 
     // Wait for server to finish
     service
         .waiting()
         .await
-        .map_err(|e| error::Error::io(std::io::Error::other(format!("Server error: {:?}", e))))?;
+        .map_err(|e| io_context("Server error", e))?;
 
     log::info!("Server stopped");
     Ok(())

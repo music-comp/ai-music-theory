@@ -77,9 +77,12 @@ fn scan_converted_sources(base_path: &Path) -> Result<Vec<SourceInfo>> {
             // Count markdown files in this source directory
             let chapter_count = count_markdown_files(&path)?;
 
+            // Compute title before moving source_id to avoid clone
+            let title = humanize_source_id(&source_id);
+
             sources.push(SourceInfo {
-                id: source_id.clone(),
-                title: humanize_source_id(&source_id),
+                id: source_id,
+                title,
                 format: SourceFormat::Markdown,
                 path: path.to_string_lossy().to_string(),
                 chapters: Some(chapter_count),

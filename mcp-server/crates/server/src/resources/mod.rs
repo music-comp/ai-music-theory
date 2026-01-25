@@ -4,6 +4,25 @@ use std::fs;
 use crate::config::Config;
 use crate::error::Result;
 
+// Resource constants
+const MIME_TYPE_MARKDOWN: &str = "text/markdown";
+
+const URI_CONVENTIONS: &str = "skill://conventions";
+const NAME_CONVENTIONS: &str = "Music Theory Conventions";
+const DESC_CONVENTIONS: &str = "Notation conventions and terminology used in this skill";
+
+const URI_SCOPE: &str = "skill://scope";
+const NAME_SCOPE: &str = "Skill Scope";
+const DESC_SCOPE: &str = "Topics covered and learning objectives of this skill";
+
+const URI_SOURCES: &str = "skill://sources";
+const NAME_SOURCES: &str = "Source Materials";
+const DESC_SOURCES: &str = "Bibliography and source attribution";
+
+const URI_INDEX: &str = "skill://index";
+const NAME_INDEX: &str = "Skill Index";
+const DESC_INDEX: &str = "Complete index of concepts, topics, and materials";
+
 /// Resource information for MCP.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct ResourceInfo {
@@ -17,28 +36,28 @@ pub struct ResourceInfo {
 pub fn list_resources() -> Vec<ResourceInfo> {
     vec![
         ResourceInfo {
-            uri: "skill://conventions".to_string(),
-            name: "Music Theory Conventions".to_string(),
-            description: "Notation conventions and terminology used in this skill".to_string(),
-            mime_type: "text/markdown".to_string(),
+            uri: URI_CONVENTIONS.to_string(),
+            name: NAME_CONVENTIONS.to_string(),
+            description: DESC_CONVENTIONS.to_string(),
+            mime_type: MIME_TYPE_MARKDOWN.to_string(),
         },
         ResourceInfo {
-            uri: "skill://scope".to_string(),
-            name: "Skill Scope".to_string(),
-            description: "Topics covered and learning objectives of this skill".to_string(),
-            mime_type: "text/markdown".to_string(),
+            uri: URI_SCOPE.to_string(),
+            name: NAME_SCOPE.to_string(),
+            description: DESC_SCOPE.to_string(),
+            mime_type: MIME_TYPE_MARKDOWN.to_string(),
         },
         ResourceInfo {
-            uri: "skill://sources".to_string(),
-            name: "Source Materials".to_string(),
-            description: "Bibliography and source attribution".to_string(),
-            mime_type: "text/markdown".to_string(),
+            uri: URI_SOURCES.to_string(),
+            name: NAME_SOURCES.to_string(),
+            description: DESC_SOURCES.to_string(),
+            mime_type: MIME_TYPE_MARKDOWN.to_string(),
         },
         ResourceInfo {
-            uri: "skill://index".to_string(),
-            name: "Skill Index".to_string(),
-            description: "Complete index of concepts, topics, and materials".to_string(),
-            mime_type: "text/markdown".to_string(),
+            uri: URI_INDEX.to_string(),
+            name: NAME_INDEX.to_string(),
+            description: DESC_INDEX.to_string(),
+            mime_type: MIME_TYPE_MARKDOWN.to_string(),
         },
     ]
 }
@@ -48,19 +67,19 @@ pub fn get_resource(config: &Config, uri: &str) -> Result<String> {
     let skill_docs_path = config.paths.skill_docs_path()?;
 
     let content = match uri {
-        "skill://conventions" => {
+        URI_CONVENTIONS => {
             let path = skill_docs_path.join("CONVENTIONS.md");
             fs::read_to_string(path).unwrap_or_else(|_| default_conventions())
         }
-        "skill://scope" => {
+        URI_SCOPE => {
             let path = skill_docs_path.join("SCOPE.md");
             fs::read_to_string(path).unwrap_or_else(|_| default_scope())
         }
-        "skill://sources" => {
+        URI_SOURCES => {
             let path = skill_docs_path.join("SOURCES.md");
             fs::read_to_string(path).unwrap_or_else(|_| default_sources())
         }
-        "skill://index" => {
+        URI_INDEX => {
             let path = skill_docs_path.join("INDEX.md");
             fs::read_to_string(path).unwrap_or_else(|_| default_index())
         }

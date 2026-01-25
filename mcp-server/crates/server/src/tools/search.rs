@@ -172,30 +172,45 @@ fn extract_snippet(content: &str, query: &str) -> String {
         let start = pos.saturating_sub(100);
         let end = (pos + query.len() + 100).min(content.len());
 
-        let mut snippet = content[start..end].to_string();
+        // Pre-allocate with estimated capacity to avoid reallocations
+        let mut snippet = String::with_capacity(end - start + 6); // +6 for possible "..." on both ends
 
-        // Clean up snippet
-        snippet = snippet.replace('\n', " ");
-        snippet = snippet.trim().to_string();
-
-        // Add ellipsis if truncated
+        // Add leading ellipsis if truncated
         if start > 0 {
-            snippet = format!("...{}", snippet);
-        }
-        if end < content.len() {
-            snippet = format!("{}...", snippet);
+            snippet.push_str("...");
         }
 
-        snippet
+        // Extract and clean the content in one pass
+        let slice = &content[start..end];
+        for ch in slice.chars() {
+            if ch == '\n' {
+                snippet.push(' ');
+            } else {
+                snippet.push(ch);
+            }
+        }
+
+        // Add trailing ellipsis if truncated
+        if end < content.len() {
+            snippet.push_str("...");
+        }
+
+        // Trim whitespace
+        snippet.trim().to_string()
     } else {
         // Fallback to first 200 characters
-        content
-            .chars()
-            .take(200)
-            .collect::<String>()
-            .replace('\n', " ")
-            .trim()
-            .to_string()
+        let mut snippet = String::with_capacity(200);
+        let char_count = content.chars().take(200).count();
+
+        for ch in content.chars().take(char_count) {
+            if ch == '\n' {
+                snippet.push(' ');
+            } else {
+                snippet.push(ch);
+            }
+        }
+
+        snippet.trim().to_string()
     }
 }
 

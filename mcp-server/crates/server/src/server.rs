@@ -63,6 +63,15 @@ pub struct GetGuideParams {
     guide_id: String,
 }
 
+/// Helper function to create serialization error response.
+fn serialization_error(e: serde_json::Error) -> ErrorData {
+    ErrorData::new(
+        ErrorCode::INTERNAL_ERROR,
+        format!("Serialization error: {}", e),
+        None,
+    )
+}
+
 #[tool_router]
 impl MusicTheoryServer {
     /// Create a new server instance.
@@ -91,13 +100,7 @@ impl MusicTheoryServer {
         let response = tools::sources::list_sources(&self.config)
             .map_err(|e| e.to_mcp_error("Error listing sources"))?;
 
-        let content = serde_json::to_string_pretty(&response).map_err(|e| {
-            ErrorData::new(
-                ErrorCode::INTERNAL_ERROR,
-                format!("Serialization error: {}", e),
-                None,
-            )
-        })?;
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
@@ -147,13 +150,7 @@ impl MusicTheoryServer {
         let response = tools::concepts::list_concepts(&self.config, Some(filter_params))
             .map_err(|e| e.to_mcp_error("Error listing concepts"))?;
 
-        let content = serde_json::to_string_pretty(&response).map_err(|e| {
-            ErrorData::new(
-                ErrorCode::INTERNAL_ERROR,
-                format!("Serialization error: {}", e),
-                None,
-            )
-        })?;
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
@@ -182,13 +179,7 @@ impl MusicTheoryServer {
         let response = tools::search::search_concepts(&self.config, search_params)
             .map_err(|e| e.to_mcp_error("Error searching concepts"))?;
 
-        let content = serde_json::to_string_pretty(&response).map_err(|e| {
-            ErrorData::new(
-                ErrorCode::INTERNAL_ERROR,
-                format!("Serialization error: {}", e),
-                None,
-            )
-        })?;
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
@@ -198,13 +189,7 @@ impl MusicTheoryServer {
         let response = tools::guides::list_guides(&self.config)
             .map_err(|e| e.to_mcp_error("Error listing guides"))?;
 
-        let content = serde_json::to_string_pretty(&response).map_err(|e| {
-            ErrorData::new(
-                ErrorCode::INTERNAL_ERROR,
-                format!("Serialization error: {}", e),
-                None,
-            )
-        })?;
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
