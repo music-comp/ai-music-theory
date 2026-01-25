@@ -1,0 +1,57 @@
+[server]
+name = "music-theory-skill"
+version = "0.1.0"
+
+[paths]
+# Base path for the skill repository
+base = "~/lab/music-comp/ai-music-theory"
+
+# Converted sources
+sources_md = "${paths.base}/sources-md"
+
+# Concept cards
+concept_cards = "${paths.base}/concept-cards"
+
+# Unified concepts (future)
+concepts_unified = "${paths.base}/concepts-unified"
+
+# Topic guides (future)
+guides = "${paths.base}/guides"
+
+# Core skill documents
+skill_docs = "${paths.base}"
+
+[sources]
+# Source file locations (original PDFs/EPUBs)
+# These are the raw sources before conversion
+
+[sources.oxford]
+path = "~/Dropbox/Apps/Oxford University Press"
+
+[sources.oxford.files]
+lewin-gmit = "[2007] Lewin - Generalized Musical Intervals and Transformations - Revised Edition.pdf"
+tymoczko-geometry = "[2011] Tymoczko - A Geometry of Music - Harmony and Counterpoint in the Extended Common Practice.pdf"
+tymoczko-tonality = "[2023] Tymoczko - Tonality - An Owners Manual.epub"
+cohn-audacious = "[2012] Cohn - Audacious Euphony - Chromaticism and the Triad's Second Nature.pdf"
+gollin-handbook = "[2012] Gollin - The Oxford Handbook of Neo-Riemannian Music Theories.pdf"
+
+[sources.general]
+path = "~/Dropbox/Apps/General Books/Music"
+
+[sources.general.files]
+open-music-theory = "[2022] Gotham - Open Music Theory.xml"
+straus-post-tonal = "[2016] Straus - Introduction to Post-Tonal Theory - 4th Edition.pdf"
+wright-math-music = "[2009] Wright - Mathematics and Music.pdf"
+hutchinson-21c = "[2023] Hutchinson - Music Theory for the 21st-Century Classroom.epub"
+messiaen-technique = "[1944] Messiaen - The Technique of My Musical Language.pdf"
+
+[sources.papers]
+path = "~/Dropbox/Apps/Papers/Music Theory"
+
+[sources.papers.files]
+papadopoulos = "[2014] Papadopoulos - Mathematics and group theory in music/[2014] Papadopoulos - Mathematics and group theory in music.pdf"
+fiore = "[2009] Fiore - Music and Mathematics.pdf"
+acef-sanchez = "[2012] Acef-Sanchez - An Introduction to Group Theory with applications to Mathematical Music Theory.pdf"
+
+[logging]
+level = "info"

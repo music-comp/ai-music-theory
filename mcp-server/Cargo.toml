@@ -1,0 +1,20 @@
+[package]
+name = "music-theory-mcp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rmcp = { version = "0.1", features = ["server", "transport-stdio"] }
+confyg = "0.1"
+twyg = "0.1"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+walkdir = "2"
+glob = "0.3"
+shellexpand = "3"
+thiserror = "2"
+
+# For search (optional, can start simpler)
+# tantivy = "0.21"
