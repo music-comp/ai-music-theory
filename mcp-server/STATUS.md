@@ -60,8 +60,10 @@ impl ServerHandler for MusicTheoryServer {
 
 ### ✅ Dependencies
 - `rmcp = "0.14"` - Official Rust MCP SDK
+- `confyg = "0.3"` - TOML + ENV configuration management
+- `twyg = "0.6"` - Beautiful colored logging with structured key-value support
 - `tokio`, `serde`, `serde_json` - Core async/serialization
-- `toml`, `walkdir`, `glob` - File operations
+- `walkdir`, `glob`, `shellexpand` - File operations and path expansion
 - `schemars = "1.2"` - JSON Schema support (upgraded for rmcp compatibility)
 
 ### ✅ Tool Registration

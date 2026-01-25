@@ -63,11 +63,15 @@ impl MusicTheoryServer {
     pub fn new(config: Config) -> Self {
         let tool_router = Self::tool_router();
 
-        // Log registered tools
+        // Log registered tools with structured logging
         let tools = tool_router.list_all();
-        log::info!("Registered {} tools:", tools.len());
+        log::info!(count = tools.len(); "Registered tools");
         for tool in tools {
-            log::info!("  - {}: {}", tool.name, tool.description.as_deref().unwrap_or(""));
+            log::info!(
+                tool = &*tool.name,
+                description = tool.description.as_deref().unwrap_or("");
+                "Tool available"
+            );
         }
 
         Self {

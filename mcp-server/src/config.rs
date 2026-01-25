@@ -1,6 +1,7 @@
+use confyg::Confygery;
 use serde::Deserialize;
 use std::collections::HashMap;
-use std::path::{Path, PathBuf};
+use std::path::PathBuf;
 
 use crate::error::{Error, Result};
 
@@ -100,21 +101,19 @@ pub struct LoggingConfig {
 impl Config {
     /// Load configuration from the default location.
     pub fn load() -> Result<Self> {
-        let config_path = PathBuf::from("config/default.toml");
-        Self::load_from_path(&config_path)
-    }
-
-    /// Load configuration from a specific path.
-    pub fn load_from_path(path: &Path) -> Result<Self> {
-        let contents = std::fs::read_to_string(path)?;
-        let config: Config = toml::from_str(&contents)
-            .map_err(|e| Error::parse_error(format!("Failed to parse config: {}", e)))?;
+        let config: Config = Confygery::new()
+            .map_err(|e| Error::config(format!("Failed to initialize confyg: {}", e)))?
+            .add_file("config/default.toml")
+            .map_err(|e| Error::config(format!("Failed to add config file: {}", e)))?
+            .build()
+            .map_err(|e| Error::config(format!("Failed to build config: {}", e)))?;
         Ok(config)
     }
 }
 
 /// Expand shell variables and tildes in paths.
 fn expand_path(path_str: &str) -> Result<PathBuf> {
+    // First expand environment variables via shellexpand
     let expanded = shellexpand::full(path_str)
         .map_err(|e| Error::invalid_path(PathBuf::from(path_str), e.to_string()))?;
 

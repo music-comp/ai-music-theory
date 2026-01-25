@@ -9,7 +9,8 @@ A Model Context Protocol (MCP) server that provides access to comprehensive musi
 ### Current Implementation
 
 - ✅ **rmcp 0.14 integrated** - Using official Rust MCP SDK (2M+ downloads)
-- ✅ **Configuration management** - TOML with path expansion and variable interpolation
+- ✅ **Configuration management** - confyg for TOML + ENV with path expansion
+- ✅ **Logging** - twyg for beautiful colored output
 - ✅ **Error handling** - Canonical pattern with backtraces (EH-17)
 - ✅ **8 Tools registered and working**:
   - `list_sources` - List all source materials with metadata

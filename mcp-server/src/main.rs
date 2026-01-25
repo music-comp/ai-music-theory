@@ -8,20 +8,32 @@ use config::Config;
 use error::Result;
 use rmcp::{transport::stdio, ServiceExt};
 use server::MusicTheoryServer;
+use twyg::{LogLevel, OptsBuilder, Output};
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    // Initialize logging
-    env_logger::init();
+    // Initialize logging with twyg (output to stderr for MCP compatibility)
+    let log_opts = OptsBuilder::new()
+        .coloured(true)
+        .level(LogLevel::Info)
+        .output(Output::Stderr)
+        .build()
+        .map_err(|e| error::Error::config(format!("Failed to build log options: {}", e)))?;
+
+    twyg::setup(log_opts)
+        .map_err(|e| error::Error::config(format!("Failed to setup logging: {}", e)))?;
 
     // Load configuration
     let config = Config::load()?;
 
-    log::info!("Music Theory MCP Server v{}", config.server.version);
-    log::info!("Server: {}", config.server.name);
+    log::info!(
+        version = &*config.server.version,
+        name = &*config.server.name;
+        "Music Theory MCP Server starting"
+    );
 
     // Create and run the MCP server with stdio transport
-    log::info!("Starting MCP server with stdio transport...");
+    log::info!(transport = "stdio"; "Starting MCP server");
     let service = MusicTheoryServer::new(config)
         .serve(stdio())
         .await
