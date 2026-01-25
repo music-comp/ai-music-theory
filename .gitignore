@@ -1,5 +1,6 @@
 /workbench
 /mcp-server/assets/ai/ai-rust
 /mcp-server/target
+/mcp-server/bin
 /.claude
 
