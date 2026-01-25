@@ -1,378 +1,221 @@
-# Path Resolution Utilities and Update
+# Implementation Plan: Fix Path Resolution for Claude Desktop
 
-## Overview
+**Date:** 2026-01-25
+**Goal:** Fix configuration loading failure when MCP server is run by Claude Desktop from arbitrary working directory
+**Error:** `Configuration error: Failed to build config: no configurations added`
 
-Implement a `util/paths.rs` module that provides robust path resolution for the MCP server. This solves the problem of locating config files and skill content regardless of:
+---
 
-- Where the binary is run from
-- Whether it's invoked by Claude Desktop (arbitrary working directory)
-- Whether it's run during development or after installation
+## Problem Statement
 
-## The Problem
+The MCP server fails to start when invoked by Claude Desktop because config loading uses CWD-relative paths (`./config`, `../config`, `./crates/server/config`). When Claude Desktop runs the binary, the current working directory is arbitrary (not the project root), causing config file lookup to fail.
 
-Currently, config loading uses relative paths that fail when Claude Desktop runs the binary:
+**Current behavior:**
 
-```
-Error: Configuration error: Failed to build config: no configurations added
-```
+- Binary location: `mcp-server/target/release/music-theory-mcp` or `mcp-server/bin/music-theory-mcp`
+- Config file location: `mcp-server/crates/server/config/default.toml`
+- Problem: Config loading searches relative to CWD, not relative to binary location
 
-The binary can't find `config/default.toml` because the working directory isn't what we expect.
+**Required behavior:**
 
-## Solution
+- Config loading should work regardless of CWD
+- Find config by walking up from binary location
+- Support environment variable overrides
+- Fall back to sensible defaults
 
-Create `util/paths.rs` with functions that:
+---
 
-1. Find the binary's location using `std::env::current_exe()`
-2. Walk up the directory tree to find project markers
-3. Support environment variable overrides
-4. Provide fallbacks for robustness
+## Solution Overview
 
-## Dependencies
+Create `util/paths.rs` module that:
 
-Add to `Cargo.toml`:
+1. Finds binary location using `std::env::current_exe()`
+2. Walks up directory tree looking for project markers
+3. Provides functions for finding config dir and skill content root
+4. Supports environment variable overrides (`MUSIC_THEORY_CONFIG_DIR`, `MUSIC_THEORY_SKILL_ROOT`)
+
+---
+
+## Implementation Steps
+
+### Step 1: Add Dependencies
+
+**File:** `mcp-server/Cargo.toml` (workspace root)
+
+Add to `[workspace.dependencies]`:
 
 ```toml
-[dependencies]
 dirs = "5"
 ```
 
-## Implementation
+**File:** `mcp-server/crates/server/Cargo.toml`
 
-Create `src/util/paths.rs`:
+Add to `[dependencies]`:
 
-```rust
-//! Path resolution utilities for finding project resources.
-//!
-//! Handles the challenge of locating config files and resources whether
-//! the binary is run from the workspace, installed globally, or invoked
-//! by Claude Desktop from an arbitrary working directory.
-
-use std::path::{Path, PathBuf};
-
-/// Markers that indicate we've found the project root (ai-music-theory)
-const PROJECT_MARKERS: &[&str] = &[
-    "SKILL.md",
-    "CONVENTIONS.md",
-    "SCOPE.md",
-];
-
-/// Markers that indicate we've found the MCP server crate root
-const SERVER_MARKERS: &[&str] = &[
-    "config/default.toml",
-];
-
-/// Find the absolute path to the currently running binary.
-pub fn binary_path() -> Option<PathBuf> {
-    std::env::current_exe().ok()
-}
-
-/// Find the directory containing the currently running binary.
-pub fn binary_dir() -> Option<PathBuf> {
-    binary_path().and_then(|p| p.parent().map(Path::to_path_buf))
-}
-
-/// Find the MCP server crate root by walking up from the binary location.
-///
-/// Looks for `config/default.toml` as a marker.
-///
-/// Handles common binary locations:
-/// - `mcp-server/bin/music-theory-mcp` (installed)
-/// - `mcp-server/target/release/music-theory-mcp` (cargo build --release)
-/// - `mcp-server/target/debug/music-theory-mcp` (cargo build)
-pub fn server_root() -> Option<PathBuf> {
-    let binary_dir = binary_dir()?;
-
-    // Walk up from binary location, checking each directory
-    let mut current = binary_dir.as_path();
-
-    for _ in 0..10 {  // Limit search depth
-        // Check if this looks like the server crate root
-        if SERVER_MARKERS.iter().any(|marker| current.join(marker).exists()) {
-            return Some(current.to_path_buf());
-        }
-
-        // Also check crates/server subdirectory (if we're at workspace root)
-        let crates_server = current.join("crates/server");
-        if SERVER_MARKERS.iter().any(|marker| crates_server.join(marker).exists()) {
-            return Some(crates_server);
-        }
-
-        current = current.parent()?;
-    }
-
-    None
-}
-
-/// Find the project root (ai-music-theory) by walking up from the binary location.
-///
-/// Looks for SKILL.md, CONVENTIONS.md, or SCOPE.md as markers.
-pub fn project_root() -> Option<PathBuf> {
-    let binary_dir = binary_dir()?;
-
-    let mut current = binary_dir.as_path();
-
-    for _ in 0..10 {  // Limit search depth
-        if PROJECT_MARKERS.iter().any(|marker| current.join(marker).exists()) {
-            return Some(current.to_path_buf());
-        }
-
-        current = current.parent()?;
-    }
-
-    None
-}
-
-/// Find the config directory for the MCP server.
-///
-/// Search order:
-/// 1. `MUSIC_THEORY_CONFIG_DIR` environment variable
-/// 2. Relative to server root: `{server_root}/config`
-/// 3. Common relative paths from current working directory
-/// 4. Fallback to home directory path
-pub fn config_dir() -> Option<PathBuf> {
-    // 1. Environment variable override
-    if let Ok(path) = std::env::var("MUSIC_THEORY_CONFIG_DIR") {
-        let path = PathBuf::from(path);
-        if path.exists() {
-            return Some(path);
-        }
-    }
-
-    // 2. Relative to server root (found by walking up from binary)
-    if let Some(root) = server_root() {
-        let config = root.join("config");
-        if config.exists() {
-            return Some(config);
-        }
-    }
-
-    // 3. Relative paths from current directory (for development)
-    for relative in &["./config", "../config", "./crates/server/config"] {
-        let path = PathBuf::from(relative);
-        if path.exists() {
-            if let Ok(canonical) = path.canonicalize() {
-                return Some(canonical);
-            }
-        }
-    }
-
-    // 4. Fallback to hardcoded home path
-    if let Some(home) = dirs::home_dir() {
-        let path = home.join("lab/music-comp/ai-music-theory/mcp-server/crates/server/config");
-        if path.exists() {
-            return Some(path);
-        }
-    }
-
-    None
-}
-
-/// Find the skill content root (where sources-md, concept-cards, etc. live).
-///
-/// This is the ai-music-theory project root, not the mcp-server subdirectory.
-///
-/// Search order:
-/// 1. `MUSIC_THEORY_SKILL_ROOT` environment variable
-/// 2. Walk up from binary to find project root
-/// 3. Fallback to home directory path
-pub fn skill_root() -> Option<PathBuf> {
-    // 1. Environment variable override
-    if let Ok(path) = std::env::var("MUSIC_THEORY_SKILL_ROOT") {
-        let path = PathBuf::from(path);
-        if path.exists() {
-            return Some(path);
-        }
-    }
-
-    // 2. Walk up from binary to find project root
-    if let Some(root) = project_root() {
-        return Some(root);
-    }
-
-    // 3. Fallback to hardcoded home path
-    if let Some(home) = dirs::home_dir() {
-        let path = home.join("lab/music-comp/ai-music-theory");
-        if path.exists() {
-            return Some(path);
-        }
-    }
-
-    None
-}
-
-/// Resolve a path that might contain `~` to an absolute path.
-pub fn expand_tilde(path: impl AsRef<Path>) -> PathBuf {
-    let path = path.as_ref();
-
-    if let Ok(stripped) = path.strip_prefix("~") {
-        if let Some(home) = dirs::home_dir() {
-            return home.join(stripped);
-        }
-    }
-
-    path.to_path_buf()
-}
-
-/// Get a human-readable description of resolved paths (for debugging/logging).
-pub fn debug_paths() -> String {
-    format!(
-        "Path resolution:\n  \
-         binary: {:?}\n  \
-         server_root: {:?}\n  \
-         project_root: {:?}\n  \
-         config_dir: {:?}\n  \
-         skill_root: {:?}",
-        binary_path(),
-        server_root(),
-        project_root(),
-        config_dir(),
-        skill_root(),
-    )
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn test_binary_path_exists() {
-        let path = binary_path();
-        assert!(path.is_some());
-        assert!(path.unwrap().exists());
-    }
-
-    #[test]
-    fn test_binary_dir_exists() {
-        let dir = binary_dir();
-        assert!(dir.is_some());
-        assert!(dir.unwrap().is_dir());
-    }
-
-    #[test]
-    fn test_expand_tilde_with_home() {
-        let expanded = expand_tilde("~/some/path");
-        assert!(!expanded.to_string_lossy().contains('~'));
-        assert!(expanded.is_absolute() || dirs::home_dir().is_none());
-    }
-
-    #[test]
-    fn test_expand_tilde_preserves_absolute() {
-        let path = "/usr/local/bin";
-        assert_eq!(expand_tilde(path), PathBuf::from(path));
-    }
-
-    #[test]
-    fn test_expand_tilde_preserves_relative() {
-        let path = "./relative/path";
-        assert_eq!(expand_tilde(path), PathBuf::from(path));
-    }
-
-    #[test]
-    fn test_debug_paths_does_not_panic() {
-        // Just ensure it doesn't panic
-        let _ = debug_paths();
-    }
-}
+```toml
+dirs = { workspace = true }
 ```
 
-## Update `util/mod.rs`
+---
 
-Add the new module:
+### Step 2: Create Path Resolution Module
+
+**File:** `mcp-server/crates/server/src/util/paths.rs` (NEW)
+
+Create complete module with:
+
+- `binary_path()` - Get absolute path to running binary
+- `binary_dir()` - Get directory containing binary
+- `server_root()` - Find MCP server crate root by walking up from binary
+  - Looks for marker: `config/default.toml`
+  - Handles: `mcp-server/target/{release,debug}/binary`, `mcp-server/bin/binary`
+  - Also checks `crates/server` subdirectory if at workspace root
+- `project_root()` - Find ai-music-theory project root
+  - Looks for markers: `SKILL.md`, `CONVENTIONS.md`, `SCOPE.md` (all exist)
+- `config_dir()` - Find config directory with precedence:
+  1. `MUSIC_THEORY_CONFIG_DIR` env var
+  2. `{server_root}/config` (found by walking up from binary)
+  3. CWD-relative paths (for development compatibility)
+  4. Fallback to `~/lab/music-comp/ai-music-theory/mcp-server/crates/server/config`
+- `skill_root()` - Find skill content root with precedence:
+  1. `MUSIC_THEORY_SKILL_ROOT` env var
+  2. Walk up from binary to find project root
+  3. Fallback to `~/lab/music-comp/ai-music-theory`
+- `expand_tilde()` - Resolve `~` to home directory
+- `debug_paths()` - Human-readable debug output
+
+**Include comprehensive tests:**
+
+- `test_binary_path_exists`
+- `test_binary_dir_exists`
+- `test_expand_tilde_*` (3 tests)
+- `test_debug_paths_does_not_panic`
+
+---
+
+### Step 3: Register Module
+
+**File:** `mcp-server/crates/server/src/util/mod.rs`
+
+Change from:
 
 ```rust
 pub mod files;
-pub mod markdown;
-pub mod paths;  // Add this line
 ```
 
-## Update Config Loading
-
-Refactor `src/config.rs` (or wherever `Config::load()` lives) to use the new utilities:
+To:
 
 ```rust
-use crate::util::paths;
+pub mod files;
+pub mod paths;
+```
 
-impl Config {
-    /// Load configuration from the default location.
-    pub fn load() -> Result<Self> {
-        let config_dir = paths::config_dir()
-            .ok_or_else(|| Error::config(
-                format!("Could not locate config directory.\n{}", paths::debug_paths())
-            ))?;
+---
 
-        let mut opts = conf::Options::default();
-        opts.add_path(&config_dir);
+### Step 4: Update Config Loading
 
-        let config: Config = Confygery::new()
-            .map_err(|e| Error::config(format!("Failed to initialize confyg: {}", e)))?
-            .with_opts(opts)
-            .map_err(|e| Error::config(format!("Failed to set options: {}", e)))?
-            .add_file("default.toml")
-            .map_err(|e| Error::config(format!("Failed to add config file: {}", e)))?
-            .build()
-            .map_err(|e| Error::config(format!("Failed to build config: {}", e)))?;
+**File:** `mcp-server/crates/server/src/config.rs`
 
-        Ok(config)
-    }
+**Current code (lines 139-156):**
+
+```rust
+pub fn load() -> Result<Self> {
+    let mut opts = conf::Options::default();
+    opts.add_path("./config")
+        .add_path("../config")
+        .add_path("./crates/server/config");
+
+    let config: Config = Confygery::new()
+        .map_err(|e| Error::config(format!("Failed to initialize confyg: {}", e)))?
+        .with_opts(opts)
+        .map_err(|e| Error::config(format!("Failed to set options: {}", e)))?
+        .add_file("default.toml")
+        .map_err(|e| Error::config(format!("Failed to add config file: {}", e)))?
+        .build()
+        .map_err(|e| Error::config(format!("Failed to build config: {}", e)))?;
+    Ok(config)
 }
 ```
 
-## Update Tool Implementations
-
-Any tool that needs to find skill content (sources, concepts, guides) should use `paths::skill_root()`:
+**New code:**
 
 ```rust
-use crate::util::paths;
+pub fn load() -> Result<Self> {
+    use crate::util::paths;
 
-// Example: in tools/concepts.rs
-fn get_concepts_dir() -> Result<PathBuf> {
-    let skill_root = paths::skill_root()
+    let config_dir = paths::config_dir()
         .ok_or_else(|| Error::config(
-            format!("Could not locate skill root directory.\n{}", paths::debug_paths())
+            format!("Could not locate config directory.\n{}", paths::debug_paths())
         ))?;
 
-    Ok(skill_root.join("concept-cards"))
-}
+    let mut opts = conf::Options::default();
+    opts.add_path(&config_dir);
 
-// Example: in tools/sources.rs
-fn get_sources_dir() -> Result<PathBuf> {
-    let skill_root = paths::skill_root()
-        .ok_or_else(|| Error::config(
-            format!("Could not locate skill root directory.\n{}", paths::debug_paths())
-        ))?;
+    let config: Config = Confygery::new()
+        .map_err(|e| Error::config(format!("Failed to initialize confyg: {}", e)))?
+        .with_opts(opts)
+        .map_err(|e| Error::config(format!("Failed to set options: {}", e)))?
+        .add_file("default.toml")
+        .map_err(|e| Error::config(format!("Failed to add config file: {}", e)))?
+        .build()
+        .map_err(|e| Error::config(format!("Failed to build config: {}", e)))?;
 
-    Ok(skill_root.join("sources-md"))
+    Ok(config)
 }
 ```
 
-## Optional: Add Startup Logging
+**Key changes:**
 
-In `main.rs`, log the resolved paths at startup for debugging:
+- Import `crate::util::paths`
+- Call `paths::config_dir()` to find config directory
+- Use single `add_path()` with found directory instead of multiple CWD-relative paths
+- Include `paths::debug_paths()` in error message for troubleshooting
+
+---
+
+### Step 5: Add Optional Debug Logging
+
+**File:** `mcp-server/crates/server/src/main.rs`
+
+After logging initialization (around line 30), add:
 
 ```rust
-use crate::util::paths;
-
-fn main() -> Result<()> {
-    // Initialize logging first
-    // ...
-
-    // Log path resolution for debugging
-    tracing::debug!("{}", paths::debug_paths());
-
-    // Rest of startup...
-}
+log::debug!(
+    binary = ?crate::util::paths::binary_path(),
+    server_root = ?crate::util::paths::server_root(),
+    config_dir = ?crate::util::paths::config_dir(),
+    skill_root = ?crate::util::paths::skill_root();
+    "Path resolution"
+);
 ```
 
-## Environment Variables Supported
+This helps debug path issues during development and troubleshooting.
 
-After this change, these environment variables can override path resolution:
+---
 
-| Variable | Purpose |
-|----------|---------|
-| `MUSIC_THEORY_CONFIG_DIR` | Override config directory location |
-| `MUSIC_THEORY_SKILL_ROOT` | Override skill content root location |
+## Files Changed Summary
 
-Example usage in Claude Desktop config:
+| File | Type | Change |
+|------|------|--------|
+| `Cargo.toml` | Modify | Add `dirs = "5"` to workspace dependencies |
+| `crates/server/Cargo.toml` | Modify | Add `dirs = { workspace = true }` |
+| `crates/server/src/util/paths.rs` | Create | New path resolution module (~275 lines) |
+| `crates/server/src/util/mod.rs` | Modify | Add `pub mod paths;` |
+| `crates/server/src/config.rs` | Modify | Update `Config::load()` to use `paths::config_dir()` |
+| `crates/server/src/main.rs` | Modify | Add debug logging of resolved paths (optional) |
+
+---
+
+## Environment Variables
+
+After this change, users can override path resolution:
+
+| Variable | Purpose | Example |
+|----------|---------|---------|
+| `MUSIC_THEORY_CONFIG_DIR` | Override config directory | `/custom/path/to/config` |
+| `MUSIC_THEORY_SKILL_ROOT` | Override skill content root | `/custom/path/to/ai-music-theory` |
+
+**Claude Desktop config example:**
 
 ```json
 {
@@ -387,27 +230,110 @@ Example usage in Claude Desktop config:
 }
 ```
 
-## Checklist
+---
 
-- [ ] Add `dirs = "5"` to Cargo.toml
-- [ ] Create `src/util/paths.rs` with the implementation above
-- [ ] Add `pub mod paths;` to `src/util/mod.rs`
-- [ ] Update `Config::load()` to use `paths::config_dir()`
-- [ ] Update tool implementations to use `paths::skill_root()`
-- [ ] Add debug logging of paths at startup (optional)
-- [ ] Run tests: `cargo test`
-- [ ] Test manually: run binary from `/` to verify it finds config
-- [ ] Restart Claude Desktop and verify connection succeeds
+## Verification Plan
 
-## Testing
-
-After implementation, verify it works from an arbitrary directory:
+### 1. Unit Tests
 
 ```bash
-# Should fail before fix, succeed after
+cargo test
+```
+
+Should see 6 new tests pass in `util::paths::tests`.
+
+### 2. Build and Run
+
+```bash
+cargo build --release
+```
+
+### 3. Test from Arbitrary Directory
+
+```bash
+# Should fail BEFORE fix, succeed AFTER
 cd /
-~/lab/music-comp/ai-music-theory/mcp-server/bin/music-theory-mcp
+~/lab/music-comp/ai-music-theory/mcp-server/target/release/music-theory-mcp
 
 # Should show resolved paths in debug output
-RUST_LOG=debug ~/lab/music-comp/ai-music-theory/mcp-server/bin/music-theory-mcp
+cd /tmp
+RUST_LOG=debug ~/lab/music-comp/ai-music-theory/mcp-server/target/release/music-theory-mcp
 ```
+
+### 4. Test with Claude Desktop
+
+1. Update `claude_desktop_config.json`:
+
+   ```json
+   {
+     "mcpServers": {
+       "music-theory": {
+         "command": "/Users/YOUR_USERNAME/lab/music-comp/ai-music-theory/mcp-server/target/release/music-theory-mcp"
+       }
+     }
+   }
+   ```
+
+2. Restart Claude Desktop (quit and relaunch)
+
+3. Open new conversation and verify:
+   - Server appears in MCP servers list
+   - No error in developer console
+   - Tools are available and working (`list_concepts`, etc.)
+
+4. Check logs in `~/Library/Logs/Claude/mcp-server-music-theory.log`:
+   - Should see successful config loading
+   - Should NOT see "no configurations added" error
+   - With `RUST_LOG=debug`, should see path resolution debug output
+
+### 5. Test Environment Variable Override
+
+```bash
+# Create alternate config
+mkdir -p /tmp/test-config
+cp ~/lab/music-comp/ai-music-theory/mcp-server/crates/server/config/default.toml /tmp/test-config/
+
+# Test override
+MUSIC_THEORY_CONFIG_DIR=/tmp/test-config \
+  ~/lab/music-comp/ai-music-theory/mcp-server/target/release/music-theory-mcp
+```
+
+Should use config from `/tmp/test-config/default.toml`.
+
+---
+
+## Success Criteria
+
+- ✅ Binary can find config from any working directory
+- ✅ All tests pass (including 6 new path tests)
+- ✅ No clippy warnings
+- ✅ Claude Desktop successfully connects to server
+- ✅ No "no configurations added" error in logs
+- ✅ All 8 MCP tools work correctly
+- ✅ Environment variable overrides work
+- ✅ Debug logging shows correct path resolution
+
+---
+
+## Rollback Plan
+
+If issues occur:
+
+1. Revert changes to `config.rs` (restore CWD-relative paths)
+2. Remove `util/paths.rs`
+3. Remove `pub mod paths;` from `util/mod.rs`
+4. Remove `dirs` dependency
+5. Git revert the commit
+
+This restores original behavior (works from project root, fails from arbitrary directory).
+
+---
+
+## Notes
+
+- The `dirs` crate is lightweight (no platform-specific issues)
+- Path walking is limited to 10 levels for safety
+- Fallback paths use the current user's home directory
+- Project markers (SKILL.md, etc.) already exist at correct locations
+- Config file already exists at expected location
+- All current tool implementations continue to work unchanged (they use `config.paths.*_path()`)
