@@ -94,6 +94,107 @@ cargo test
 RUST_LOG=info cargo run
 ```
 
+## Using with Claude Desktop
+
+Claude Desktop can launch and communicate with this MCP server using the stdio transport. You have two options for running the server:
+
+### Option 1: Development Mode (Using Cargo)
+
+This approach rebuilds the server on each launch, useful during development:
+
+1. **Locate your Claude Desktop config file:**
+   ```
+   ~/Library/Application Support/Claude/claude_desktop_config.json
+   ```
+
+2. **Add the server configuration:**
+   ```json
+   {
+     "mcpServers": {
+       "music-theory": {
+         "command": "cargo",
+         "args": [
+           "run",
+           "--manifest-path",
+           "/Users/YOUR_USERNAME/path/to/ai-music-theory/mcp-server/Cargo.toml"
+         ]
+       }
+     }
+   }
+   ```
+
+   **Note:** Replace the path with your actual project location.
+
+3. **Restart Claude Desktop** completely (quit and relaunch)
+
+### Option 2: Production Mode (Using Compiled Binary)
+
+This approach is faster and recommended for regular use:
+
+1. **Build the release binary:**
+   ```bash
+   cargo build --release
+   ```
+
+2. **Locate your Claude Desktop config file:**
+   ```
+   ~/Library/Application Support/Claude/claude_desktop_config.json
+   ```
+
+3. **Add the server configuration:**
+   ```json
+   {
+     "mcpServers": {
+       "music-theory": {
+         "command": "/Users/YOUR_USERNAME/path/to/ai-music-theory/mcp-server/target/release/music-theory-mcp"
+       }
+     }
+   }
+   ```
+
+   **Note:** Replace the path with your actual project location.
+
+4. **Restart Claude Desktop** completely (quit and relaunch)
+
+### Verifying the Connection
+
+Once Claude Desktop restarts:
+
+1. Open a new conversation
+2. Look for the server connection indicator (usually in the UI)
+3. Try using one of the 8 available tools:
+   - `list_concepts` - List all concept cards
+   - `search_concepts` - Search for specific topics
+   - `list_guides` - Browse topic guides
+   - `get_source_chapter` - Access source material chapters
+
+You can also check Claude Desktop's developer console for connection logs.
+
+### Troubleshooting
+
+**Server not appearing in Claude Desktop:**
+- Verify the config file path is correct (no typos)
+- Check that the config JSON is valid (use a JSON validator)
+- Ensure Claude Desktop was fully restarted (quit, don't just close window)
+- For cargo mode: verify cargo is in your PATH
+- For binary mode: verify the binary exists at the specified path
+
+**Server crashes on startup:**
+- Check that all configured paths in `config/default.toml` exist
+- Ensure you have read permissions for the configured directories
+- Look for error logs in Claude Desktop's developer console
+- Try running the server manually to see error messages:
+  ```bash
+  cargo run  # or ./target/release/music-theory-mcp
+  ```
+
+**Tools not working:**
+- Verify the data directories configured in `config/default.toml` contain the expected files
+- Check that markdown files have valid frontmatter (YAML between `---` delimiters)
+- Ensure concept cards, guides, and source materials are in the correct locations
+
+For more details on server configuration, see the **Configuration** section below.
+
 ## Development Guidelines
 
 This project follows the comprehensive Rust guidelines in `assets/ai/ai-rust/guides/`:

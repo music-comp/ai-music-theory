@@ -46,6 +46,12 @@ cd crates/server
 cargo run
 ```
 
+### Integrating with Claude Desktop
+
+The MCP server can be integrated with Claude Desktop using the stdio transport. You can run it in development mode (using `cargo run`) or production mode (using a compiled binary).
+
+For complete step-by-step instructions including configuration, verification, and troubleshooting, see the **[Using with Claude Desktop](crates/server/README.md#using-with-claude-desktop)** section in the server documentation.
+
 ## Status
 
 ✅ **Fully Functional** - All core features implemented and working
