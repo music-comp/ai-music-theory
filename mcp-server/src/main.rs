@@ -8,15 +8,21 @@ use config::Config;
 use error::Result;
 use rmcp::{transport::stdio, ServiceExt};
 use server::MusicTheoryServer;
-use twyg::{LogLevel, OptsBuilder, Output};
+use twyg::{Color, ColorAttribute, Colors, LogLevel, OptsBuilder, Output, TSFormat};
 
 #[tokio::main]
 async fn main() -> Result<()> {
+    // Configure custom colors for twyg
+    let mut colors = Colors::default();
+    colors.timestamp = Some(Color::fg(ColorAttribute::HiBlack));
+
     // Initialize logging with twyg (output to stderr for MCP compatibility)
     let log_opts = OptsBuilder::new()
         .coloured(true)
         .level(LogLevel::Info)
         .output(Output::Stderr)
+        .timestamp_format(TSFormat::Simple)
+        .colors(colors)
         .build()
         .map_err(|e| error::Error::config(format!("Failed to build log options: {}", e)))?;
 
