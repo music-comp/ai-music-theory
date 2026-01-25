@@ -13,8 +13,10 @@ use twyg::{Color, ColorAttribute, Colors, LogLevel, OptsBuilder, Output, TSForma
 #[tokio::main]
 async fn main() -> Result<()> {
     // Configure custom colors for twyg
-    let mut colors = Colors::default();
-    colors.timestamp = Some(Color::fg(ColorAttribute::HiBlack));
+    let colors = Colors {
+        timestamp: Some(Color::fg(ColorAttribute::HiBlack)),
+        ..Default::default()
+    };
 
     // Initialize logging with twyg (output to stderr for MCP compatibility)
     let log_opts = OptsBuilder::new()
@@ -44,19 +46,17 @@ async fn main() -> Result<()> {
         .serve(stdio())
         .await
         .map_err(|e| {
-            error::Error::io(std::io::Error::new(
-                std::io::ErrorKind::Other,
-                format!("Failed to start server: {:?}", e),
-            ))
+            error::Error::io(std::io::Error::other(format!(
+                "Failed to start server: {:?}",
+                e
+            )))
         })?;
 
     // Wait for server to finish
-    service.waiting().await.map_err(|e| {
-        error::Error::io(std::io::Error::new(
-            std::io::ErrorKind::Other,
-            format!("Server error: {:?}", e),
-        ))
-    })?;
+    service
+        .waiting()
+        .await
+        .map_err(|e| error::Error::io(std::io::Error::other(format!("Server error: {:?}", e))))?;
 
     log::info!("Server stopped");
     Ok(())

@@ -5,6 +5,8 @@ use crate::config::Config;
 use crate::error::Result;
 
 /// Resource information for MCP.
+// Allow unused - will be used when resource features are implemented
+#[allow(dead_code)]
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct ResourceInfo {
     pub uri: String,
@@ -14,6 +16,8 @@ pub struct ResourceInfo {
 }
 
 /// List all available resources.
+// Allow unused - will be used when resource features are implemented
+#[allow(dead_code)]
 pub fn list_resources() -> Vec<ResourceInfo> {
     vec![
         ResourceInfo {
@@ -44,6 +48,8 @@ pub fn list_resources() -> Vec<ResourceInfo> {
 }
 
 /// Get resource content by URI.
+// Allow unused - will be used when resource features are implemented
+#[allow(dead_code)]
 pub fn get_resource(config: &Config, uri: &str) -> Result<String> {
     let skill_docs_path = config.paths.skill_docs_path()?;
 
@@ -74,6 +80,8 @@ pub fn get_resource(config: &Config, uri: &str) -> Result<String> {
     Ok(content)
 }
 
+// Allow unused - will be used when resource features are implemented
+#[allow(dead_code)]
 fn default_conventions() -> String {
     r#"# Music Theory Conventions
 
@@ -99,6 +107,8 @@ Sources are cited using author-date format (Lewin 2007, Tymoczko 2011).
     .to_string()
 }
 
+// Allow unused - will be used when resource features are implemented
+#[allow(dead_code)]
 fn default_scope() -> String {
     r#"# Music Theory Skill Scope
 
@@ -137,6 +147,8 @@ Basic music literacy (reading notation, understanding scales) is recommended.
     .to_string()
 }
 
+// Allow unused - will be used when resource features are implemented
+#[allow(dead_code)]
 fn default_sources() -> String {
     r#"# Source Materials
 
@@ -167,6 +179,8 @@ All source materials are used for educational purposes and are properly attribut
     .to_string()
 }
 
+// Allow unused - will be used when resource features are implemented
+#[allow(dead_code)]
 fn default_index() -> String {
     r#"# Skill Index
 

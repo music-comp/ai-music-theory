@@ -37,7 +37,10 @@ fn default_limit() -> usize {
 }
 
 /// Search across concept cards for a query.
-pub fn search_concepts(config: &Config, params: SearchConceptsParams) -> Result<SearchConceptsResponse> {
+pub fn search_concepts(
+    config: &Config,
+    params: SearchConceptsParams,
+) -> Result<SearchConceptsResponse> {
     let concept_cards_path = config.paths.concept_cards_path()?;
 
     if !concept_cards_path.exists() {
@@ -55,12 +58,7 @@ pub fn search_concepts(config: &Config, params: SearchConceptsParams) -> Result<
     for entry in WalkDir::new(&concept_cards_path)
         .into_iter()
         .filter_map(|e| e.ok())
-        .filter(|e| {
-            e.path()
-                .extension()
-                .and_then(|s| s.to_str())
-                == Some("md")
-        })
+        .filter(|e| e.path().extension().and_then(|s| s.to_str()) == Some("md"))
     {
         let path = entry.path();
 
@@ -74,6 +72,7 @@ pub fn search_concepts(config: &Config, params: SearchConceptsParams) -> Result<
                 let (title, _) = extract_metadata(&content);
 
                 // Extract category
+                // Safety: unwrap_or provides sensible display fallback if path parsing fails
                 let category = path
                     .parent()
                     .and_then(|p| p.strip_prefix(&concept_cards_path).ok())
@@ -86,8 +85,10 @@ pub fn search_concepts(config: &Config, params: SearchConceptsParams) -> Result<
                 let snippet = extract_snippet(&content, &params.query);
 
                 // Calculate relevance score
-                let relevance = calculate_relevance(&content_lower, &title.to_lowercase(), &query_lower);
+                let relevance =
+                    calculate_relevance(&content_lower, &title.to_lowercase(), &query_lower);
 
+                // Safety: unwrap_or provides sensible display fallback if filename extraction fails
                 let concept_id = path
                     .file_stem()
                     .and_then(|s| s.to_str())
@@ -107,7 +108,12 @@ pub fn search_concepts(config: &Config, params: SearchConceptsParams) -> Result<
     }
 
     // Sort by relevance (highest first)
-    results.sort_by(|a, b| b.relevance.partial_cmp(&a.relevance).unwrap());
+    // Safety: Use unwrap_or to handle potential NaN values gracefully
+    results.sort_by(|a, b| {
+        b.relevance
+            .partial_cmp(&a.relevance)
+            .unwrap_or(std::cmp::Ordering::Equal)
+    });
 
     let total = results.len();
 
@@ -250,7 +256,7 @@ mod tests {
         let title2 = "random title";
 
         let score1 = calculate_relevance(content1, title1, "harmony");
-        let score2 = calculate_relevance(content2, title2, "harmony");
+        let _score2 = calculate_relevance(content2, title2, "harmony");
 
         // Title match should boost score significantly
         assert!(score1 > 5.0);

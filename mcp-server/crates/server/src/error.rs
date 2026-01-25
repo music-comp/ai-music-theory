@@ -13,10 +13,23 @@ pub struct Error {
 pub(crate) enum ErrorKind {
     Io(std::io::Error),
     Config(String),
-    NotFound { path: PathBuf },
-    InvalidPath { path: PathBuf, reason: String },
-    ParseError { message: String },
-    SearchError { message: String },
+    NotFound {
+        path: PathBuf,
+    },
+    InvalidPath {
+        path: PathBuf,
+        reason: String,
+    },
+    // Allow unused - will be used when markdown parsing features are implemented
+    #[allow(dead_code)]
+    ParseError {
+        message: String,
+    },
+    // Allow unused - will be used when search features are fully implemented
+    #[allow(dead_code)]
+    SearchError {
+        message: String,
+    },
 }
 
 impl Error {
@@ -48,6 +61,8 @@ impl Error {
         }
     }
 
+    // Allow unused - will be used when markdown parsing features are implemented
+    #[allow(dead_code)]
     pub(crate) fn parse_error(message: String) -> Self {
         Self {
             kind: ErrorKind::ParseError { message },
@@ -55,6 +70,8 @@ impl Error {
         }
     }
 
+    // Allow unused - will be used when search features are fully implemented
+    #[allow(dead_code)]
     pub(crate) fn search_error(message: String) -> Self {
         Self {
             kind: ErrorKind::SearchError { message },
@@ -63,16 +80,22 @@ impl Error {
     }
 
     /// Check if this is an I/O error.
+    // Allow unused - part of public API for error inspection
+    #[allow(dead_code)]
     pub fn is_io(&self) -> bool {
         matches!(self.kind, ErrorKind::Io(_))
     }
 
     /// Check if this is a not-found error.
+    // Allow unused - part of public API for error inspection
+    #[allow(dead_code)]
     pub fn is_not_found(&self) -> bool {
         matches!(self.kind, ErrorKind::NotFound { .. })
     }
 
     /// Check if this is a configuration error.
+    // Allow unused - part of public API for error inspection
+    #[allow(dead_code)]
     pub fn is_config(&self) -> bool {
         matches!(self.kind, ErrorKind::Config(_))
     }

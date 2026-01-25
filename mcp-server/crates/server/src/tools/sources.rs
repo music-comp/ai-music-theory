@@ -67,6 +67,7 @@ fn scan_converted_sources(base_path: &Path) -> Result<Vec<SourceInfo>> {
         let path = entry.path();
 
         if path.is_dir() {
+            // Safety: unwrap_or provides sensible display fallback if directory name extraction fails
             let source_id = path
                 .file_name()
                 .and_then(|n| n.to_str())
@@ -101,7 +102,10 @@ fn list_unconverted_sources(config: &Config) -> Result<Vec<SourceInfo>> {
             id: format!("oxford-{}", file_id),
             title: extract_title(filename),
             format,
-            path: config.sources.oxford.file_path(file_id)?
+            path: config
+                .sources
+                .oxford
+                .file_path(file_id)?
                 .to_string_lossy()
                 .to_string(),
             chapters: None,
@@ -116,7 +120,10 @@ fn list_unconverted_sources(config: &Config) -> Result<Vec<SourceInfo>> {
             id: format!("general-{}", file_id),
             title: extract_title(filename),
             format,
-            path: config.sources.general.file_path(file_id)?
+            path: config
+                .sources
+                .general
+                .file_path(file_id)?
                 .to_string_lossy()
                 .to_string(),
             chapters: None,
@@ -131,7 +138,10 @@ fn list_unconverted_sources(config: &Config) -> Result<Vec<SourceInfo>> {
             id: format!("papers-{}", file_id),
             title: extract_title(filename),
             format,
-            path: config.sources.papers.file_path(file_id)?
+            path: config
+                .sources
+                .papers
+                .file_path(file_id)?
                 .to_string_lossy()
                 .to_string(),
             chapters: None,
@@ -169,13 +179,11 @@ fn detect_format(filename: &str) -> SourceFormat {
 /// Extract title from filename (remove year prefix and extension).
 fn extract_title(filename: &str) -> String {
     // Remove year prefix like "[2007] " and file extension
-    let without_year = filename
-        .split(']')
-        .nth(1)
-        .unwrap_or(filename)
-        .trim();
+    // Safety: unwrap_or falls back to full filename if no year bracket found
+    let without_year = filename.split(']').nth(1).unwrap_or(filename).trim();
 
     // Remove file extension
+    // Safety: unwrap_or falls back to filename if no extension found
     let without_ext = without_year
         .rsplit_once('.')
         .map(|(name, _)| name)
@@ -228,7 +236,7 @@ fn find_chapter_file(source_dir: &Path, chapter: &str) -> Result<PathBuf> {
     for entry in WalkDir::new(source_dir).max_depth(2) {
         let entry = entry.map_err(|e| {
             // Convert walkdir::Error to io::Error, then to our Error
-            std::io::Error::new(std::io::ErrorKind::Other, e)
+            std::io::Error::other(e)
         })?;
         let path = entry.path();
 

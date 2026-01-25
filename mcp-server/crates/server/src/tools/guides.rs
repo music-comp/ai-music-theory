@@ -48,12 +48,7 @@ fn scan_guides(base_path: &Path) -> Result<Vec<GuideInfo>> {
     for entry in WalkDir::new(base_path)
         .into_iter()
         .filter_map(|e| e.ok())
-        .filter(|e| {
-            e.path()
-                .extension()
-                .and_then(|s| s.to_str())
-                == Some("md")
-        })
+        .filter(|e| e.path().extension().and_then(|s| s.to_str()) == Some("md"))
     {
         let path = entry.path();
 
@@ -61,6 +56,7 @@ fn scan_guides(base_path: &Path) -> Result<Vec<GuideInfo>> {
         let topic = extract_topic(base_path, path);
 
         // Extract guide ID from filename
+        // Safety: unwrap_or provides sensible display fallback if filename extraction fails
         let guide_id = path
             .file_stem()
             .and_then(|s| s.to_str())
@@ -87,6 +83,7 @@ fn scan_guides(base_path: &Path) -> Result<Vec<GuideInfo>> {
 
 /// Extract topic from the path relative to base.
 fn extract_topic(base: &Path, file_path: &Path) -> String {
+    // Safety: unwrap_or provides sensible display fallback if topic extraction fails
     file_path
         .parent()
         .and_then(|parent| parent.strip_prefix(base).ok())
@@ -120,11 +117,11 @@ fn extract_title_and_description(path: &Path) -> Result<(String, Option<String>)
         }
 
         if in_frontmatter {
-            if line.starts_with("title:") {
-                title = line[6..].trim().trim_matches('"').to_string();
+            if let Some(stripped) = line.strip_prefix("title:") {
+                title = stripped.trim().trim_matches('"').to_string();
                 found_title = true;
-            } else if line.starts_with("description:") {
-                description = line[12..].trim().trim_matches('"').to_string();
+            } else if let Some(stripped) = line.strip_prefix("description:") {
+                description = stripped.trim().trim_matches('"').to_string();
             }
             continue;
         }
@@ -137,11 +134,13 @@ fn extract_title_and_description(path: &Path) -> Result<(String, Option<String>)
         }
 
         // Collect first paragraph as description
-        if found_title && !line.trim().is_empty() && description.len() < 300 {
-            if !line.starts_with('#') {
-                description.push_str(line);
-                description.push(' ');
-            }
+        if found_title
+            && !line.trim().is_empty()
+            && description.len() < 300
+            && !line.starts_with('#')
+        {
+            description.push_str(line);
+            description.push(' ');
         }
 
         if description.len() >= 300 {
@@ -151,12 +150,12 @@ fn extract_title_and_description(path: &Path) -> Result<(String, Option<String>)
 
     // Use filename as fallback title
     if title.is_empty() {
+        // Safety: unwrap_or provides sensible display fallback if filename extraction fails
         title = path
             .file_stem()
             .and_then(|s| s.to_str())
             .unwrap_or("Untitled Guide")
-            .replace('-', " ")
-            .replace('_', " ");
+            .replace(['-', '_'], " ");
     }
 
     let description_opt = if description.trim().is_empty() {
@@ -197,10 +196,7 @@ fn find_guide_file(base_path: &Path, guide_id: &str) -> Result<PathBuf> {
     }
 
     // Search recursively
-    for entry in WalkDir::new(base_path)
-        .into_iter()
-        .filter_map(|e| e.ok())
-    {
+    for entry in WalkDir::new(base_path).into_iter().filter_map(|e| e.ok()) {
         let path = entry.path();
         if let Some(stem) = path.file_stem().and_then(|s| s.to_str()) {
             if stem == guide_id {

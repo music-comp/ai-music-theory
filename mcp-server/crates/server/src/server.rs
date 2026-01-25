@@ -1,7 +1,9 @@
-use rmcp::handler::server::ServerHandler;
 use rmcp::handler::server::tool::ToolRouter;
 use rmcp::handler::server::wrapper::Parameters;
-use rmcp::model::{CallToolResult, Content, ErrorCode, ErrorData, Implementation, ServerCapabilities, ServerInfo};
+use rmcp::handler::server::ServerHandler;
+use rmcp::model::{
+    CallToolResult, Content, ErrorCode, ErrorData, Implementation, ServerCapabilities, ServerInfo,
+};
 use rmcp::{tool, tool_handler, tool_router};
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
@@ -82,11 +84,21 @@ impl MusicTheoryServer {
 
     #[tool(description = "List all available source materials with metadata")]
     async fn list_sources(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::sources::list_sources(&self.config)
-            .map_err(|e| ErrorData::new(ErrorCode::INTERNAL_ERROR, format!("Error listing sources: {}", e), None))?;
+        let response = tools::sources::list_sources(&self.config).map_err(|e| {
+            ErrorData::new(
+                ErrorCode::INTERNAL_ERROR,
+                format!("Error listing sources: {}", e),
+                None,
+            )
+        })?;
 
-        let content = serde_json::to_string_pretty(&response)
-            .map_err(|e| ErrorData::new(ErrorCode::INTERNAL_ERROR, format!("Serialization error: {}", e), None))?;
+        let content = serde_json::to_string_pretty(&response).map_err(|e| {
+            ErrorData::new(
+                ErrorCode::INTERNAL_ERROR,
+                format!("Serialization error: {}", e),
+                None,
+            )
+        })?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
@@ -101,7 +113,13 @@ impl MusicTheoryServer {
             &params.0.source_id,
             &params.0.chapter,
         )
-        .map_err(|e| ErrorData::new(ErrorCode::INTERNAL_ERROR, format!("Error retrieving chapter: {}", e), None))?;
+        .map_err(|e| {
+            ErrorData::new(
+                ErrorCode::INTERNAL_ERROR,
+                format!("Error retrieving chapter: {}", e),
+                None,
+            )
+        })?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
@@ -111,12 +129,19 @@ impl MusicTheoryServer {
         &self,
         params: Parameters<GetSourcePdfPathParams>,
     ) -> Result<CallToolResult, ErrorData> {
-        let path = tools::sources::get_source_pdf_path(&self.config, &params.0.source_id)
-            .map_err(|e| ErrorData::new(ErrorCode::INTERNAL_ERROR, format!("Error getting PDF path: {}", e), None))?;
+        let path = tools::sources::get_source_pdf_path(&self.config, &params.0.source_id).map_err(
+            |e| {
+                ErrorData::new(
+                    ErrorCode::INTERNAL_ERROR,
+                    format!("Error getting PDF path: {}", e),
+                    None,
+                )
+            },
+        )?;
 
-        let path_str = path
-            .to_str()
-            .ok_or_else(|| ErrorData::new(ErrorCode::INTERNAL_ERROR, "Invalid UTF-8 in path", None))?;
+        let path_str = path.to_str().ok_or_else(|| {
+            ErrorData::new(ErrorCode::INTERNAL_ERROR, "Invalid UTF-8 in path", None)
+        })?;
 
         Ok(CallToolResult::success(vec![Content::text(
             path_str.to_string(),
@@ -133,11 +158,22 @@ impl MusicTheoryServer {
             limit: params.0.limit,
         };
 
-        let response = tools::concepts::list_concepts(&self.config, Some(filter_params))
-            .map_err(|e| ErrorData::new(ErrorCode::INTERNAL_ERROR, format!("Error listing concepts: {}", e), None))?;
+        let response =
+            tools::concepts::list_concepts(&self.config, Some(filter_params)).map_err(|e| {
+                ErrorData::new(
+                    ErrorCode::INTERNAL_ERROR,
+                    format!("Error listing concepts: {}", e),
+                    None,
+                )
+            })?;
 
-        let content = serde_json::to_string_pretty(&response)
-            .map_err(|e| ErrorData::new(ErrorCode::INTERNAL_ERROR, format!("Serialization error: {}", e), None))?;
+        let content = serde_json::to_string_pretty(&response).map_err(|e| {
+            ErrorData::new(
+                ErrorCode::INTERNAL_ERROR,
+                format!("Serialization error: {}", e),
+                None,
+            )
+        })?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
@@ -147,8 +183,14 @@ impl MusicTheoryServer {
         &self,
         params: Parameters<GetConceptParams>,
     ) -> Result<CallToolResult, ErrorData> {
-        let content = tools::concepts::get_concept(&self.config, &params.0.concept_id)
-            .map_err(|e| ErrorData::new(ErrorCode::INTERNAL_ERROR, format!("Error retrieving concept: {}", e), None))?;
+        let content =
+            tools::concepts::get_concept(&self.config, &params.0.concept_id).map_err(|e| {
+                ErrorData::new(
+                    ErrorCode::INTERNAL_ERROR,
+                    format!("Error retrieving concept: {}", e),
+                    None,
+                )
+            })?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
@@ -163,22 +205,43 @@ impl MusicTheoryServer {
             limit: params.0.limit,
         };
 
-        let response = tools::search::search_concepts(&self.config, search_params)
-            .map_err(|e| ErrorData::new(ErrorCode::INTERNAL_ERROR, format!("Error searching concepts: {}", e), None))?;
+        let response =
+            tools::search::search_concepts(&self.config, search_params).map_err(|e| {
+                ErrorData::new(
+                    ErrorCode::INTERNAL_ERROR,
+                    format!("Error searching concepts: {}", e),
+                    None,
+                )
+            })?;
 
-        let content = serde_json::to_string_pretty(&response)
-            .map_err(|e| ErrorData::new(ErrorCode::INTERNAL_ERROR, format!("Serialization error: {}", e), None))?;
+        let content = serde_json::to_string_pretty(&response).map_err(|e| {
+            ErrorData::new(
+                ErrorCode::INTERNAL_ERROR,
+                format!("Serialization error: {}", e),
+                None,
+            )
+        })?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
 
     #[tool(description = "List all available topic guides")]
     async fn list_guides(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::guides::list_guides(&self.config)
-            .map_err(|e| ErrorData::new(ErrorCode::INTERNAL_ERROR, format!("Error listing guides: {}", e), None))?;
+        let response = tools::guides::list_guides(&self.config).map_err(|e| {
+            ErrorData::new(
+                ErrorCode::INTERNAL_ERROR,
+                format!("Error listing guides: {}", e),
+                None,
+            )
+        })?;
 
-        let content = serde_json::to_string_pretty(&response)
-            .map_err(|e| ErrorData::new(ErrorCode::INTERNAL_ERROR, format!("Serialization error: {}", e), None))?;
+        let content = serde_json::to_string_pretty(&response).map_err(|e| {
+            ErrorData::new(
+                ErrorCode::INTERNAL_ERROR,
+                format!("Serialization error: {}", e),
+                None,
+            )
+        })?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
@@ -188,8 +251,13 @@ impl MusicTheoryServer {
         &self,
         params: Parameters<GetGuideParams>,
     ) -> Result<CallToolResult, ErrorData> {
-        let content = tools::guides::get_guide(&self.config, &params.0.guide_id)
-            .map_err(|e| ErrorData::new(ErrorCode::INTERNAL_ERROR, format!("Error retrieving guide: {}", e), None))?;
+        let content = tools::guides::get_guide(&self.config, &params.0.guide_id).map_err(|e| {
+            ErrorData::new(
+                ErrorCode::INTERNAL_ERROR,
+                format!("Error retrieving guide: {}", e),
+                None,
+            )
+        })?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }

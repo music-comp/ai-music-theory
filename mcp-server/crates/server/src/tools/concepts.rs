@@ -34,7 +34,10 @@ pub struct ListConceptsParams {
 }
 
 /// List all available concept cards, optionally filtered by category.
-pub fn list_concepts(config: &Config, params: Option<ListConceptsParams>) -> Result<ListConceptsResponse> {
+pub fn list_concepts(
+    config: &Config,
+    params: Option<ListConceptsParams>,
+) -> Result<ListConceptsResponse> {
     let concept_cards_path = config.paths.concept_cards_path()?;
 
     if !concept_cards_path.exists() {
@@ -71,12 +74,7 @@ fn scan_concept_cards(base_path: &Path) -> Result<Vec<ConceptInfo>> {
     for entry in WalkDir::new(base_path)
         .into_iter()
         .filter_map(|e| e.ok())
-        .filter(|e| {
-            e.path()
-                .extension()
-                .and_then(|s| s.to_str())
-                == Some("md")
-        })
+        .filter(|e| e.path().extension().and_then(|s| s.to_str()) == Some("md"))
     {
         let path = entry.path();
 
@@ -84,6 +82,7 @@ fn scan_concept_cards(base_path: &Path) -> Result<Vec<ConceptInfo>> {
         let category = extract_category(base_path, path);
 
         // Extract concept ID from filename
+        // Safety: unwrap_or provides sensible display fallback if filename extraction fails
         let concept_id = path
             .file_stem()
             .and_then(|s| s.to_str())
@@ -114,6 +113,7 @@ fn scan_concept_cards(base_path: &Path) -> Result<Vec<ConceptInfo>> {
 
 /// Extract category from the path relative to base.
 fn extract_category(base: &Path, file_path: &Path) -> String {
+    // Safety: unwrap_or provides sensible display fallback if category extraction fails
     file_path
         .parent()
         .and_then(|parent| parent.strip_prefix(base).ok())
@@ -146,8 +146,8 @@ fn extract_title_and_preview(path: &Path) -> Result<(String, Option<String>)> {
         }
 
         if in_frontmatter {
-            if line.starts_with("title:") {
-                title = line[6..].trim().trim_matches('"').to_string();
+            if let Some(stripped) = line.strip_prefix("title:") {
+                title = stripped.trim().trim_matches('"').to_string();
             }
             continue;
         }
@@ -171,6 +171,7 @@ fn extract_title_and_preview(path: &Path) -> Result<(String, Option<String>)> {
 
     // Use filename as fallback title
     if title.is_empty() {
+        // Safety: unwrap_or provides sensible display fallback if filename extraction fails
         title = path
             .file_stem()
             .and_then(|s| s.to_str())
@@ -216,10 +217,7 @@ fn find_concept_file(base_path: &Path, concept_id: &str) -> Result<PathBuf> {
     }
 
     // Search recursively
-    for entry in WalkDir::new(base_path)
-        .into_iter()
-        .filter_map(|e| e.ok())
-    {
+    for entry in WalkDir::new(base_path).into_iter().filter_map(|e| e.ok()) {
         let path = entry.path();
         if let Some(stem) = path.file_stem().and_then(|s| s.to_str()) {
             if stem == concept_id {
