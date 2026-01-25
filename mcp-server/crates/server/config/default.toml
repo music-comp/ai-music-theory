@@ -3,23 +3,24 @@ name = "music-theory-skill"
 version = "0.1.0"
 
 [paths]
-# Base path for the skill repository
-base = "~/lab/music-comp/ai-music-theory"
+# Base path for the skill repository (dynamically resolved from binary location)
+# All relative paths below are resolved against the skill root directory
+base = "."
 
 # Converted sources
-sources_md = "${paths.base}/sources-md"
+sources_md = "sources-md"
 
 # Concept cards
-concept_cards = "${paths.base}/concept-cards"
+concept_cards = "concept-cards"
 
 # Unified concepts (future)
-concepts_unified = "${paths.base}/concepts-unified"
+concepts_unified = "concepts-unified"
 
 # Topic guides (future)
-guides = "${paths.base}/guides"
+guides = "guides"
 
 # Core skill documents
-skill_docs = "${paths.base}"
+skill_docs = "."
 
 [sources]
 # Source file locations (original PDFs/EPUBs)

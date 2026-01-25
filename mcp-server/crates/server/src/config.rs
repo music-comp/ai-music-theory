@@ -163,12 +163,27 @@ impl Config {
 }
 
 /// Expand shell variables and tildes in paths.
+/// Relative paths are resolved against the skill root directory.
 fn expand_path(path_str: &str) -> Result<PathBuf> {
-    // First expand environment variables via shellexpand
+    use crate::util::paths;
+
+    // First expand environment variables and tilde via shellexpand
     let expanded = shellexpand::full(path_str)
         .map_err(|e| Error::invalid_path(PathBuf::from(path_str), e.to_string()))?;
 
-    Ok(PathBuf::from(expanded.as_ref()))
+    let path = PathBuf::from(expanded.as_ref());
+
+    // If the path is relative, resolve it against skill_root()
+    if path.is_relative() {
+        let skill_root = paths::skill_root()
+            .ok_or_else(|| Error::config(
+                format!("Cannot resolve relative path '{}': skill root not found.\n{}",
+                    path_str, paths::debug_paths())
+            ))?;
+        Ok(skill_root.join(path))
+    } else {
+        Ok(path)
+    }
 }
 
 #[cfg(test)]
