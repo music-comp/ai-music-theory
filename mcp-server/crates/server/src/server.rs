@@ -88,22 +88,8 @@ impl MusicTheoryServer {
 
     #[tool(description = "List all available source materials with metadata")]
     async fn list_sources(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::sources::list_sources(&self.config).map_err(|e| {
-            let (code, msg) = if e.is_not_found() {
-                (ErrorCode::RESOURCE_NOT_FOUND, format!("Not found: {}", e))
-            } else if e.is_config() {
-                (
-                    ErrorCode::INVALID_PARAMS,
-                    format!("Configuration error: {}", e),
-                )
-            } else {
-                (
-                    ErrorCode::INTERNAL_ERROR,
-                    format!("Error listing sources: {}", e),
-                )
-            };
-            ErrorData::new(code, msg, None)
-        })?;
+        let response = tools::sources::list_sources(&self.config)
+            .map_err(|e| e.to_mcp_error("Error listing sources"))?;
 
         let content = serde_json::to_string_pretty(&response).map_err(|e| {
             ErrorData::new(
@@ -126,22 +112,7 @@ impl MusicTheoryServer {
             &params.0.source_id,
             &params.0.chapter,
         )
-        .map_err(|e| {
-            let (code, msg) = if e.is_not_found() {
-                (ErrorCode::RESOURCE_NOT_FOUND, format!("Not found: {}", e))
-            } else if e.is_config() {
-                (
-                    ErrorCode::INVALID_PARAMS,
-                    format!("Configuration error: {}", e),
-                )
-            } else {
-                (
-                    ErrorCode::INTERNAL_ERROR,
-                    format!("Error retrieving chapter: {}", e),
-                )
-            };
-            ErrorData::new(code, msg, None)
-        })?;
+        .map_err(|e| e.to_mcp_error("Error retrieving chapter"))?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
@@ -151,24 +122,8 @@ impl MusicTheoryServer {
         &self,
         params: Parameters<GetSourcePdfPathParams>,
     ) -> Result<CallToolResult, ErrorData> {
-        let path = tools::sources::get_source_pdf_path(&self.config, &params.0.source_id).map_err(
-            |e| {
-                let (code, msg) = if e.is_not_found() {
-                    (ErrorCode::RESOURCE_NOT_FOUND, format!("Not found: {}", e))
-                } else if e.is_config() {
-                    (
-                        ErrorCode::INVALID_PARAMS,
-                        format!("Configuration error: {}", e),
-                    )
-                } else {
-                    (
-                        ErrorCode::INTERNAL_ERROR,
-                        format!("Error getting PDF path: {}", e),
-                    )
-                };
-                ErrorData::new(code, msg, None)
-            },
-        )?;
+        let path = tools::sources::get_source_pdf_path(&self.config, &params.0.source_id)
+            .map_err(|e| e.to_mcp_error("Error getting PDF path"))?;
 
         let path_str = path.to_str().ok_or_else(|| {
             ErrorData::new(ErrorCode::INTERNAL_ERROR, "Invalid UTF-8 in path", None)
@@ -189,23 +144,8 @@ impl MusicTheoryServer {
             limit: params.0.limit,
         };
 
-        let response =
-            tools::concepts::list_concepts(&self.config, Some(filter_params)).map_err(|e| {
-                let (code, msg) = if e.is_not_found() {
-                    (ErrorCode::RESOURCE_NOT_FOUND, format!("Not found: {}", e))
-                } else if e.is_config() {
-                    (
-                        ErrorCode::INVALID_PARAMS,
-                        format!("Configuration error: {}", e),
-                    )
-                } else {
-                    (
-                        ErrorCode::INTERNAL_ERROR,
-                        format!("Error listing concepts: {}", e),
-                    )
-                };
-                ErrorData::new(code, msg, None)
-            })?;
+        let response = tools::concepts::list_concepts(&self.config, Some(filter_params))
+            .map_err(|e| e.to_mcp_error("Error listing concepts"))?;
 
         let content = serde_json::to_string_pretty(&response).map_err(|e| {
             ErrorData::new(
@@ -223,23 +163,8 @@ impl MusicTheoryServer {
         &self,
         params: Parameters<GetConceptParams>,
     ) -> Result<CallToolResult, ErrorData> {
-        let content =
-            tools::concepts::get_concept(&self.config, &params.0.concept_id).map_err(|e| {
-                let (code, msg) = if e.is_not_found() {
-                    (ErrorCode::RESOURCE_NOT_FOUND, format!("Not found: {}", e))
-                } else if e.is_config() {
-                    (
-                        ErrorCode::INVALID_PARAMS,
-                        format!("Configuration error: {}", e),
-                    )
-                } else {
-                    (
-                        ErrorCode::INTERNAL_ERROR,
-                        format!("Error retrieving concept: {}", e),
-                    )
-                };
-                ErrorData::new(code, msg, None)
-            })?;
+        let content = tools::concepts::get_concept(&self.config, &params.0.concept_id)
+            .map_err(|e| e.to_mcp_error("Error retrieving concept"))?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
@@ -254,23 +179,8 @@ impl MusicTheoryServer {
             limit: params.0.limit,
         };
 
-        let response =
-            tools::search::search_concepts(&self.config, search_params).map_err(|e| {
-                let (code, msg) = if e.is_not_found() {
-                    (ErrorCode::RESOURCE_NOT_FOUND, format!("Not found: {}", e))
-                } else if e.is_config() {
-                    (
-                        ErrorCode::INVALID_PARAMS,
-                        format!("Configuration error: {}", e),
-                    )
-                } else {
-                    (
-                        ErrorCode::INTERNAL_ERROR,
-                        format!("Error searching concepts: {}", e),
-                    )
-                };
-                ErrorData::new(code, msg, None)
-            })?;
+        let response = tools::search::search_concepts(&self.config, search_params)
+            .map_err(|e| e.to_mcp_error("Error searching concepts"))?;
 
         let content = serde_json::to_string_pretty(&response).map_err(|e| {
             ErrorData::new(
@@ -285,22 +195,8 @@ impl MusicTheoryServer {
 
     #[tool(description = "List all available topic guides")]
     async fn list_guides(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::guides::list_guides(&self.config).map_err(|e| {
-            let (code, msg) = if e.is_not_found() {
-                (ErrorCode::RESOURCE_NOT_FOUND, format!("Not found: {}", e))
-            } else if e.is_config() {
-                (
-                    ErrorCode::INVALID_PARAMS,
-                    format!("Configuration error: {}", e),
-                )
-            } else {
-                (
-                    ErrorCode::INTERNAL_ERROR,
-                    format!("Error listing guides: {}", e),
-                )
-            };
-            ErrorData::new(code, msg, None)
-        })?;
+        let response = tools::guides::list_guides(&self.config)
+            .map_err(|e| e.to_mcp_error("Error listing guides"))?;
 
         let content = serde_json::to_string_pretty(&response).map_err(|e| {
             ErrorData::new(
@@ -318,22 +214,8 @@ impl MusicTheoryServer {
         &self,
         params: Parameters<GetGuideParams>,
     ) -> Result<CallToolResult, ErrorData> {
-        let content = tools::guides::get_guide(&self.config, &params.0.guide_id).map_err(|e| {
-            let (code, msg) = if e.is_not_found() {
-                (ErrorCode::RESOURCE_NOT_FOUND, format!("Not found: {}", e))
-            } else if e.is_config() {
-                (
-                    ErrorCode::INVALID_PARAMS,
-                    format!("Configuration error: {}", e),
-                )
-            } else {
-                (
-                    ErrorCode::INTERNAL_ERROR,
-                    format!("Error retrieving guide: {}", e),
-                )
-            };
-            ErrorData::new(code, msg, None)
-        })?;
+        let content = tools::guides::get_guide(&self.config, &params.0.guide_id)
+            .map_err(|e| e.to_mcp_error("Error retrieving guide"))?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }

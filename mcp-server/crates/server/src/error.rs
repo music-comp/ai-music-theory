@@ -2,6 +2,8 @@ use std::backtrace::Backtrace;
 use std::fmt;
 use std::path::PathBuf;
 
+use rmcp::model::{ErrorCode, ErrorData};
+
 /// Main error type for the music theory MCP server.
 pub struct Error {
     kind: ErrorKind,
@@ -94,6 +96,32 @@ impl Error {
     /// Check if this is a configuration error.
     pub fn is_config(&self) -> bool {
         matches!(self.kind, ErrorKind::Config(_))
+    }
+
+    /// Convert internal error to MCP ErrorData with appropriate error code.
+    ///
+    /// Maps our internal error types to MCP protocol error codes:
+    /// - NotFound errors → RESOURCE_NOT_FOUND
+    /// - Config errors → INVALID_PARAMS
+    /// - All other errors → INTERNAL_ERROR
+    ///
+    /// # Arguments
+    /// * `context` - A descriptive context string (e.g., "Error listing sources")
+    pub fn to_mcp_error(&self, context: &str) -> ErrorData {
+        let (code, msg) = if self.is_not_found() {
+            (
+                ErrorCode::RESOURCE_NOT_FOUND,
+                format!("Not found: {}", self),
+            )
+        } else if self.is_config() {
+            (
+                ErrorCode::INVALID_PARAMS,
+                format!("Configuration error: {}", self),
+            )
+        } else {
+            (ErrorCode::INTERNAL_ERROR, format!("{}: {}", context, self))
+        };
+        ErrorData::new(code, msg, None)
     }
 }
 
