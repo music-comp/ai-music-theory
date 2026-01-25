@@ -19,7 +19,7 @@ BUILD_TIME := $(shell date -u '+%Y-%m-%dT%H:%M:%SZ')
 RUST_VERSION := $(shell rustc --version 2>/dev/null || echo "unknown")
 
 # List of binaries to build and install
-BINARIES := tbd odm
+BINARIES := music-theory-mcp
 
 # External tools configuration
 OXUR_WORKSPACE := ../oxur
@@ -132,12 +132,6 @@ build: clean $(BIN_DIR)
 	else \
 		cargo build; \
 	fi
-	@echo "$(CYAN)• Building external tools (odm)...$(RESET)"
-	@if [ "$(MODE)" = "release" ]; then \
-		cargo build --release --manifest-path $(ODM_PATH)/Cargo.toml; \
-	else \
-		cargo build --manifest-path $(ODM_PATH)/Cargo.toml; \
-	fi
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
 		if [ "$$bin" = "odm" ]; then \
@@ -228,15 +222,15 @@ format:
 coverage:
 	@echo "$(BLUE)Generating test coverage report...$(RESET)"
 	@echo "$(CYAN)• Running tests with coverage (server crate only)...$(RESET)"
-	@cd crates/server && cargo llvm-cov --lib --no-default-features
+	@cd crates/server && cargo llvm-cov --all-features
 	@echo "$(GREEN)✓ Coverage report generated$(RESET)"
-	@echo "$(YELLOW)→ For detailed HTML report, run: cd crates/server && cargo llvm-cov --html --lib --no-default-features$(RESET)"
+	@echo "$(YELLOW)→ For detailed HTML report, run: cd crates/server && cargo llvm-cov --html --all-features$(RESET)"
 
 .PHONY: coverage-html
 coverage-html:
 	@echo "$(BLUE)Generating HTML coverage report...$(RESET)"
 	@echo "$(CYAN)• Running tests with coverage (server crate only)...$(RESET)"
-	@cd crates/server && cargo llvm-cov --html --lib --no-default-features
+	@cd crates/server && cargo llvm-cov --html --all-features
 	@echo "$(GREEN)✓ HTML coverage report generated$(RESET)"
 	@echo "$(CYAN)→ Report: crates/server/target/llvm-cov/html/index.html$(RESET)"
 
