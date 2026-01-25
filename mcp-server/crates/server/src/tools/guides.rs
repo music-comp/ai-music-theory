@@ -156,4 +156,72 @@ mod tests {
         let topic = extract_topic(&base, &file_path);
         assert_eq!(topic, "general");
     }
+
+    #[test]
+    fn test_extract_topic_nested() {
+        let base = PathBuf::from("/guides");
+        let file_path = PathBuf::from("/guides/harmony/advanced/modal-interchange.md");
+        let topic = extract_topic(&base, &file_path);
+        // Should extract first level only
+        assert_eq!(topic, "harmony");
+    }
+
+    #[test]
+    fn test_extract_topic_no_parent() {
+        let base = PathBuf::from("/guides");
+        let file_path = PathBuf::from("guide.md");
+        let topic = extract_topic(&base, &file_path);
+        assert_eq!(topic, "general");
+    }
+
+    #[test]
+    fn test_guide_info_serialization() {
+        let info = GuideInfo {
+            id: "test-guide".to_string(),
+            title: "Test Guide".to_string(),
+            topic: "harmony".to_string(),
+            path: "/path/to/guide.md".to_string(),
+            description: Some("This is a description".to_string()),
+        };
+
+        let json = serde_json::to_string(&info).expect("Should serialize");
+        assert!(json.contains("test-guide"));
+        assert!(json.contains("Test Guide"));
+        assert!(json.contains("harmony"));
+        assert!(json.contains("This is a description"));
+    }
+
+    #[test]
+    fn test_guide_info_serialization_no_description() {
+        let info = GuideInfo {
+            id: "test".to_string(),
+            title: "Test".to_string(),
+            topic: "general".to_string(),
+            path: "/path".to_string(),
+            description: None,
+        };
+
+        let json = serde_json::to_string(&info).expect("Should serialize");
+        // description: None should be skipped
+        assert!(!json.contains("description"));
+    }
+
+    #[test]
+    fn test_list_guides_response_serialization() {
+        let response = ListGuidesResponse {
+            guides: vec![GuideInfo {
+                id: "test".to_string(),
+                title: "Test".to_string(),
+                topic: "harmony".to_string(),
+                path: "/path".to_string(),
+                description: None,
+            }],
+            total: 1,
+        };
+
+        let json = serde_json::to_string(&response).expect("Should serialize");
+        assert!(json.contains("guides"));
+        assert!(json.contains("total"));
+        assert!(json.contains("\"total\":1"));
+    }
 }

@@ -253,4 +253,160 @@ mod tests {
         // Title match should boost score significantly
         assert!(score1 > 5.0);
     }
+
+    #[test]
+    fn test_default_limit() {
+        assert_eq!(default_limit(), 10);
+    }
+
+    #[test]
+    fn test_search_result_serialization() {
+        let result = SearchResult {
+            id: "test-concept".to_string(),
+            title: "Test Concept".to_string(),
+            category: "harmony".to_string(),
+            path: "/path/to/concept.md".to_string(),
+            snippet: "This is a test snippet".to_string(),
+            relevance: 8.5,
+        };
+
+        let json = serde_json::to_string(&result).expect("Should serialize");
+        assert!(json.contains("test-concept"));
+        assert!(json.contains("Test Concept"));
+        assert!(json.contains("8.5"));
+    }
+
+    #[test]
+    fn test_search_concepts_response_serialization() {
+        let response = SearchConceptsResponse {
+            results: vec![],
+            total: 0,
+            query: "test query".to_string(),
+        };
+
+        let json = serde_json::to_string(&response).expect("Should serialize");
+        assert!(json.contains("results"));
+        assert!(json.contains("total"));
+        assert!(json.contains("test query"));
+    }
+
+    #[test]
+    fn test_search_concepts_params_deserialization() {
+        let json = r#"{"query":"harmony"}"#;
+        let params: SearchConceptsParams = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(params.query, "harmony");
+        assert_eq!(params.limit, 10); // default value
+    }
+
+    #[test]
+    fn test_search_concepts_params_with_limit() {
+        let json = r#"{"query":"harmony","limit":5}"#;
+        let params: SearchConceptsParams = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(params.query, "harmony");
+        assert_eq!(params.limit, 5);
+    }
+
+    #[test]
+    fn test_extract_category() {
+        use std::path::PathBuf;
+        let base = PathBuf::from("/concepts");
+        let file_path = PathBuf::from("/concepts/harmony/triads.md");
+        let category = extract_category(&base, &file_path);
+        assert_eq!(category, "harmony");
+    }
+
+    #[test]
+    fn test_extract_category_uncategorized() {
+        use std::path::PathBuf;
+        let base = PathBuf::from("/concepts");
+        let file_path = PathBuf::from("/concepts/readme.md");
+        let category = extract_category(&base, &file_path);
+        assert_eq!(category, "uncategorized");
+    }
+
+    #[test]
+    fn test_extract_metadata_with_title() {
+        let content = "---\ntitle: Test Title\n---\n\nContent here";
+        let (title, _) = extract_metadata(content);
+        assert_eq!(title, "Test Title");
+    }
+
+    #[test]
+    fn test_extract_metadata_with_heading() {
+        let content = "# Heading Title\n\nContent here";
+        let (title, _) = extract_metadata(content);
+        assert_eq!(title, "Heading Title");
+    }
+
+    #[test]
+    fn test_extract_metadata_untitled() {
+        let content = "Just some content without title or heading";
+        let (title, _) = extract_metadata(content);
+        assert_eq!(title, "Untitled");
+    }
+
+    #[test]
+    fn test_extract_snippet_not_found() {
+        let content = "This is a test document about rhythm and melody.";
+        let snippet = extract_snippet(content, "nonexistent");
+        // Should return first 200 chars when query not found
+        assert!(!snippet.is_empty());
+        assert!(snippet.contains("rhythm"));
+    }
+
+    #[test]
+    fn test_extract_snippet_at_start() {
+        let content = "harmony is important in music theory and composition";
+        let snippet = extract_snippet(content, "harmony");
+        assert!(snippet.starts_with("harmony"));
+        assert!(!snippet.starts_with("..."));
+    }
+
+    #[test]
+    fn test_extract_snippet_at_end() {
+        let long_content = format!("{} harmony", "x".repeat(300));
+        let snippet = extract_snippet(&long_content, "harmony");
+        assert!(snippet.ends_with("harmony"));
+        assert!(!snippet.ends_with("..."));
+    }
+
+    #[test]
+    fn test_extract_snippet_newline_replacement() {
+        let content = "First line\nSecond line with harmony\nThird line";
+        let snippet = extract_snippet(content, "harmony");
+        // Newlines should be replaced with spaces
+        assert!(!snippet.contains('\n'));
+        assert!(snippet.contains("harmony"));
+    }
+
+    #[test]
+    fn test_calculate_relevance_empty_content() {
+        let score = calculate_relevance("", "title", "query");
+        assert_eq!(score, 0.0);
+    }
+
+    #[test]
+    fn test_calculate_relevance_exact_word_match() {
+        let content = "the harmony in this piece is complex. harmony theory is deep.";
+        let score = calculate_relevance(content, "no match", "harmony");
+        // Should get bonus for exact word matches
+        assert!(score > 0.0);
+    }
+
+    #[test]
+    fn test_calculate_relevance_multiple_occurrences() {
+        let content1 = "harmony";
+        let content2 = "harmony harmony harmony";
+        let score1 = calculate_relevance(content1, "", "harmony");
+        let score2 = calculate_relevance(content2, "", "harmony");
+        // More occurrences should give higher score (but normalized by length)
+        assert!(score1 > 0.0);
+        assert!(score2 > 0.0);
+    }
+
+    #[test]
+    fn test_calculate_relevance_no_match() {
+        let score = calculate_relevance("rhythm and melody", "rhythm", "harmony");
+        assert_eq!(score, 0.0);
+    }
 }

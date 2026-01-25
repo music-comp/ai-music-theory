@@ -182,4 +182,111 @@ mod tests {
         let category = extract_category(&base, &file_path);
         assert_eq!(category, "harmony");
     }
+
+    #[test]
+    fn test_extract_category_root_level() {
+        let base = PathBuf::from("/concepts");
+        let file_path = PathBuf::from("/concepts/readme.md");
+        let category = extract_category(&base, &file_path);
+        assert_eq!(category, "uncategorized");
+    }
+
+    #[test]
+    fn test_extract_category_no_parent() {
+        let base = PathBuf::from("/concepts");
+        let file_path = PathBuf::from("file.md");
+        let category = extract_category(&base, &file_path);
+        assert_eq!(category, "uncategorized");
+    }
+
+    #[test]
+    fn test_extract_category_same_as_base() {
+        let base = PathBuf::from("/concepts");
+        let file_path = PathBuf::from("/concepts");
+        let category = extract_category(&base, &file_path);
+        assert_eq!(category, "uncategorized");
+    }
+
+    #[test]
+    fn test_concept_info_serialization() {
+        let info = ConceptInfo {
+            id: "test-concept".to_string(),
+            title: "Test Concept".to_string(),
+            category: "harmony".to_string(),
+            path: "/path/to/concept.md".to_string(),
+            preview: Some("This is a preview".to_string()),
+        };
+
+        let json = serde_json::to_string(&info).expect("Should serialize");
+        assert!(json.contains("test-concept"));
+        assert!(json.contains("Test Concept"));
+        assert!(json.contains("harmony"));
+        assert!(json.contains("This is a preview"));
+    }
+
+    #[test]
+    fn test_concept_info_serialization_no_preview() {
+        let info = ConceptInfo {
+            id: "test".to_string(),
+            title: "Test".to_string(),
+            category: "test".to_string(),
+            path: "/path".to_string(),
+            preview: None,
+        };
+
+        let json = serde_json::to_string(&info).expect("Should serialize");
+        // preview: None should be skipped
+        assert!(!json.contains("preview"));
+    }
+
+    #[test]
+    fn test_list_concepts_response_serialization() {
+        let response = ListConceptsResponse {
+            concepts: vec![ConceptInfo {
+                id: "test".to_string(),
+                title: "Test".to_string(),
+                category: "harmony".to_string(),
+                path: "/path".to_string(),
+                preview: None,
+            }],
+            total: 1,
+        };
+
+        let json = serde_json::to_string(&response).expect("Should serialize");
+        assert!(json.contains("concepts"));
+        assert!(json.contains("total"));
+        assert!(json.contains("\"total\":1"));
+    }
+
+    #[test]
+    fn test_list_concepts_params_default() {
+        let json = "{}";
+        let params: ListConceptsParams = serde_json::from_str(json).expect("Should deserialize");
+        assert!(params.category.is_none());
+        assert!(params.limit.is_none());
+    }
+
+    #[test]
+    fn test_list_concepts_params_with_category() {
+        let json = r#"{"category":"harmony"}"#;
+        let params: ListConceptsParams = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(params.category, Some("harmony".to_string()));
+        assert!(params.limit.is_none());
+    }
+
+    #[test]
+    fn test_list_concepts_params_with_limit() {
+        let json = r#"{"limit":10}"#;
+        let params: ListConceptsParams = serde_json::from_str(json).expect("Should deserialize");
+        assert!(params.category.is_none());
+        assert_eq!(params.limit, Some(10));
+    }
+
+    #[test]
+    fn test_list_concepts_params_with_both() {
+        let json = r#"{"category":"rhythm","limit":5}"#;
+        let params: ListConceptsParams = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(params.category, Some("rhythm".to_string()));
+        assert_eq!(params.limit, Some(5));
+    }
 }

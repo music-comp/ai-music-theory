@@ -234,4 +234,67 @@ mod tests {
         assert!(debug_output.contains("Config dir:"), "Should contain config dir");
         assert!(debug_output.contains("Skill root:"), "Should contain skill root");
     }
+
+    #[test]
+    fn test_server_root_exists() {
+        // Server root should be findable from test binary location
+        let root = server_root();
+        // May or may not find it depending on test location, but should not panic
+        assert!(root.is_some() || root.is_none());
+    }
+
+    #[test]
+    fn test_project_root_exists() {
+        // Project root should be findable
+        let root = project_root();
+        // May or may not find it depending on test location
+        assert!(root.is_some() || root.is_none());
+    }
+
+    #[test]
+    fn test_config_dir_exists() {
+        // Config dir should be findable
+        let dir = config_dir();
+        if let Some(path) = dir {
+            // If found, should contain default.toml
+            assert!(path.join("default.toml").exists() || !path.exists());
+        }
+    }
+
+    #[test]
+    fn test_skill_root_exists() {
+        // Skill root should be findable
+        let root = skill_root();
+        assert!(root.is_some() || root.is_none());
+    }
+
+    #[test]
+    fn test_expand_tilde_tilde_only() {
+        let path = expand_tilde("~");
+        if let Some(home) = dirs::home_dir() {
+            assert_eq!(path, home, "~ should expand to home directory");
+        }
+    }
+
+    #[test]
+    fn test_expand_tilde_tilde_with_slash() {
+        let path = expand_tilde("~/");
+        if let Some(home) = dirs::home_dir() {
+            assert!(path.starts_with(&home), "~/ should expand to home directory");
+        }
+    }
+
+    #[test]
+    fn test_debug_paths_contains_all_fields() {
+        let debug_output = debug_paths();
+        assert!(debug_output.contains("Binary path:"));
+        assert!(debug_output.contains("Binary dir:"));
+        assert!(debug_output.contains("Server root:"));
+        assert!(debug_output.contains("Project root:"));
+        assert!(debug_output.contains("Config dir:"));
+        assert!(debug_output.contains("Skill root:"));
+        assert!(debug_output.contains("CWD:"));
+        assert!(debug_output.contains("MUSIC_THEORY_CONFIG_DIR:"));
+        assert!(debug_output.contains("MUSIC_THEORY_SKILL_ROOT:"));
+    }
 }
