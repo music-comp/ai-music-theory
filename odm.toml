@@ -1,0 +1,13 @@
+# ODM Configuration for the AI Music Theory Skill repo
+
+# Design docs directory (workspace-specific)
+docs_directory = "./mcp-server/crates/design/docs"
+
+# Development documents directory (workspace-specific)
+dev_directory = "./mcp-server/crates/design/dev"
+
+# Preserve state directory structure in dustbin
+preserve_dustbin_structure = true
+
+# Automatically stage changes with git
+auto_stage_git = true
