@@ -6,7 +6,7 @@ mod tools;
 
 use config::Config;
 use error::Result;
-use rmcp::ServiceExt;
+use rmcp::{transport::stdio, ServiceExt};
 use server::MusicTheoryServer;
 
 #[tokio::main]
@@ -20,29 +20,27 @@ async fn main() -> Result<()> {
     log::info!("Music Theory MCP Server v{}", config.server.version);
     log::info!("Server: {}", config.server.name);
 
-    // Create server instance
-    let server = MusicTheoryServer::new(config);
-
-    // Set up stdio transport
-    let (stdin, stdout) = (tokio::io::stdin(), tokio::io::stdout());
-
-    // Start the MCP server
+    // Create and run the MCP server with stdio transport
     log::info!("Starting MCP server with stdio transport...");
-    let running_server = server.serve::<_, std::io::Error, _>((stdin, stdout)).await
-        .map_err(|e| error::Error::io(std::io::Error::new(
-            std::io::ErrorKind::Other,
-            format!("Failed to start server: {:?}", e)
-        )))?;
+    let service = MusicTheoryServer::new(config)
+        .serve(stdio())
+        .await
+        .map_err(|e| {
+            error::Error::io(std::io::Error::new(
+                std::io::ErrorKind::Other,
+                format!("Failed to start server: {:?}", e),
+            ))
+        })?;
 
     // Wait for server to finish
-    let quit_reason = running_server.waiting().await
-        .map_err(|e| error::Error::io(std::io::Error::new(
+    service.waiting().await.map_err(|e| {
+        error::Error::io(std::io::Error::new(
             std::io::ErrorKind::Other,
-            format!("Server error: {:?}", e)
-        )))?;
+            format!("Server error: {:?}", e),
+        ))
+    })?;
 
-    log::info!("Server stopped: {:?}", quit_reason);
-
+    log::info!("Server stopped");
     Ok(())
 }
 

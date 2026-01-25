@@ -15,7 +15,7 @@ shellexpand = "3"
 thiserror = "2"
 env_logger = "0.11"
 log = "0.4"
-schemars = "=0.8.21"
+schemars = "1.2"
 
 # For future search implementation
 # tantivy = "0.21"
