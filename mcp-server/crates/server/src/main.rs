@@ -51,13 +51,31 @@ async fn main() -> Result<()> {
         .await
         .map_err(|e| io_context("Failed to start server", e))?;
 
-    // Wait for server to finish
-    service
-        .waiting()
-        .await
-        .map_err(|e| io_context("Server error", e))?;
+    // Set up graceful shutdown handler for Ctrl+C
+    let cancel_token = service.cancellation_token();
+    tokio::spawn(async move {
+        match tokio::signal::ctrl_c().await {
+            Ok(()) => {
+                log::info!("Received shutdown signal (Ctrl+C), shutting down gracefully...");
+                cancel_token.cancel();
+            }
+            Err(err) => {
+                log::error!("Failed to listen for shutdown signal: {}", err);
+            }
+        }
+    });
 
-    log::info!("Server stopped");
+    // Wait for server to finish (either naturally or due to Ctrl+C)
+    match service.waiting().await {
+        Ok(reason) => {
+            log::info!("Server stopped: {:?}", reason);
+        }
+        Err(e) => {
+            log::error!("Server task join error: {:?}", e);
+            return Err(io_context("Server task join error", e));
+        }
+    }
+
     Ok(())
 }
 
