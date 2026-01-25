@@ -137,12 +137,17 @@ impl LoggingConfig {
 
 impl Config {
     /// Load configuration from the default location.
-    /// Searches in multiple locations: ./config, ../config, crates/server/config
+    /// Searches for config directory using binary-relative path resolution.
     pub fn load() -> Result<Self> {
+        use crate::util::paths;
+
+        let config_dir = paths::config_dir()
+            .ok_or_else(|| Error::config(
+                format!("Could not locate config directory.\n{}", paths::debug_paths())
+            ))?;
+
         let mut opts = conf::Options::default();
-        opts.add_path("./config")
-            .add_path("../config")
-            .add_path("./crates/server/config");
+        opts.add_path(config_dir.to_string_lossy().as_ref());
 
         let config: Config = Confygery::new()
             .map_err(|e| Error::config(format!("Failed to initialize confyg: {}", e)))?
@@ -152,6 +157,7 @@ impl Config {
             .map_err(|e| Error::config(format!("Failed to add config file: {}", e)))?
             .build()
             .map_err(|e| Error::config(format!("Failed to build config: {}", e)))?;
+
         Ok(config)
     }
 }

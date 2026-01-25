@@ -30,6 +30,14 @@ async fn main() -> Result<()> {
     let log_opts = config.logging.to_twyg()?;
     twyg::setup(log_opts).map_err(|e| config_context("Failed to setup logging", e))?;
 
+    log::debug!(
+        "Path resolution: binary={:?}, server_root={:?}, config_dir={:?}, skill_root={:?}",
+        util::paths::binary_path(),
+        util::paths::server_root(),
+        util::paths::config_dir(),
+        util::paths::skill_root()
+    );
+
     log::info!(
         version = &*config.server.version,
         name = &*config.server.name;

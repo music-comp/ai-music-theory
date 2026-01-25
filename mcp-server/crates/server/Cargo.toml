@@ -27,6 +27,7 @@ shellexpand = { workspace = true }
 pulldown-cmark = { workspace = true }
 serde_yaml = { workspace = true }
 thiserror = { workspace = true }
+dirs = { workspace = true }
 
 # For future search implementation
 # tantivy = "0.21"
