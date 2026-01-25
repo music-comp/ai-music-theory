@@ -9,6 +9,12 @@ Refactor the MCP server's file operations to:
 3. Use `tokio::fs` for all file I/O
 4. Create a clean `util::files` module that all tool implementations share
 
+## Prerequisites
+
+* Read CLAUDE.md (note that the assets/ai/ai-rust dir it references is a symlink!)
+* Read the SKILL.md file it references and follow those instructions
+* Read the guides/* files appropriate for this task
+
 ## Dependencies to Add
 
 ```toml
@@ -26,9 +32,9 @@ You can likely remove `walkdir` after refactoring (unless used elsewhere ... but
 
 These functions are nearly identical:
 
-- `find_concept_file(base_path, id)`
-- `find_guide_file(base_path, id)`
-- `find_chapter_file(source_dir, chapter)`
+* `find_concept_file(base_path, id)`
+* `find_guide_file(base_path, id)`
+* `find_chapter_file(source_dir, chapter)`
 
 Those are just examples. Perforn an exhuasive search of the codebase to identify other potential duplications of this type.
 
@@ -43,8 +49,8 @@ All follow the pattern:
 
 These functions share scanning logic:
 
-- `scan_concept_cards(base_path)`
-- `scan_converted_sources(base_path)`
+* `scan_concept_cards(base_path)`
+* `scan_converted_sources(base_path)`
 
 Both walk directories and collect metadata.
 
@@ -458,17 +464,17 @@ impl Error {
 
 ## Checklist
 
-- [ ] Add `async-walkdir` and `futures` to Cargo.toml
-- [ ] Create `src/util/mod.rs` (if not exists)
-- [ ] Create `src/util/files.rs` with shared utilities
-- [ ] Refactor `tools/concepts.rs` to use `util::files`
-- [ ] Refactor `tools/guides.rs` to use `util::files`
-- [ ] Refactor `tools/sources.rs` to use `util::files`
-- [ ] Refactor any other file operations in other tool modules
-- [ ] Update function signatures from sync to async where needed
-- [ ] Run tests: `cargo test`
-- [ ] Run clippy: `cargo clippy`
-- [ ] Remove `walkdir` from Cargo.toml if no longer used
+* [ ] Add `async-walkdir` and `futures` to Cargo.toml
+* [ ] Create `src/util/mod.rs` (if not exists)
+* [ ] Create `src/util/files.rs` with shared utilities
+* [ ] Refactor `tools/concepts.rs` to use `util::files`
+* [ ] Refactor `tools/guides.rs` to use `util::files`
+* [ ] Refactor `tools/sources.rs` to use `util::files`
+* [ ] Refactor any other file operations in other tool modules
+* [ ] Update function signatures from sync to async where needed
+* [ ] Run tests: `cargo test`
+* [ ] Run clippy: `cargo clippy`
+* [ ] Remove `walkdir` from Cargo.toml if no longer used
 
 ## Testing
 
@@ -481,7 +487,7 @@ cargo clippy -- -D warnings
 
 ## Notes
 
-- `async-walkdir` is async-runtime agnostic (works with tokio)
-- `tokio::fs::try_exists` is the async equivalent of `Path::exists()`
-- The `FindOptions` builder pattern makes the API flexible without lots of function variants
-- `FileInfo` provides structured data that callers can use to build their domain types
+* `async-walkdir` is async-runtime agnostic (works with tokio)
+* `tokio::fs::try_exists` is the async equivalent of `Path::exists()`
+* The `FindOptions` builder pattern makes the API flexible without lots of function variants
+* `FileInfo` provides structured data that callers can use to build their domain types
