@@ -1,21 +1,57 @@
-[package]
-name = "music-theory-mcp"
+[workspace]
+resolver = "2"
+members = [
+    "crates/server",
+    "crates/design",
+]
+
+[workspace.package]
 version = "0.1.0"
 edition = "2021"
+authors = ["Duncan McGreggor <oubiwann@gmail.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/oxur/ai-music-theory"
+description = "Music Theory AI Skill - MCP server for accessing music theory educational materials"
 
-[dependencies]
+[workspace.dependencies]
+# MCP SDK
 rmcp = { version = "0.14", features = ["server", "transport-io"] }
+
+# Async runtime
 tokio = { version = "1", features = ["full"] }
+
+# Configuration and logging
+confyg = "0.3"
+twyg = "0.6"
+log = "0.4"
+
+# Serialization
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
+
+# Schema support
+schemars = "1.2"
+
+# File operations
 walkdir = "2"
 glob = "0.3"
+shellexpand = "3.1"
+
+# Error handling
 thiserror = "2"
-schemars = "1.2"
-confyg = "0.3.0"
-twyg = "0.6.2"
-shellexpand = "3.1.1"
-log = "0.4.29"
 
 # For future search implementation
 # tantivy = "0.21"
+
+[profile.dev]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = true
+
+[profile.test]
+opt-level = 1

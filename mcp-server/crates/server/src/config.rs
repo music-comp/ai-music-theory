@@ -1,4 +1,4 @@
-use confyg::Confygery;
+use confyg::{conf, Confygery};
 use serde::Deserialize;
 use std::collections::HashMap;
 use std::path::PathBuf;
@@ -100,10 +100,18 @@ pub struct LoggingConfig {
 
 impl Config {
     /// Load configuration from the default location.
+    /// Searches in multiple locations: ./config, ../config, crates/server/config
     pub fn load() -> Result<Self> {
+        let mut opts = conf::Options::default();
+        opts.add_path("./config")
+            .add_path("../config")
+            .add_path("./crates/server/config");
+
         let config: Config = Confygery::new()
             .map_err(|e| Error::config(format!("Failed to initialize confyg: {}", e)))?
-            .add_file("config/default.toml")
+            .with_opts(opts)
+            .map_err(|e| Error::config(format!("Failed to set options: {}", e)))?
+            .add_file("default.toml")
             .map_err(|e| Error::config(format!("Failed to add config file: {}", e)))?
             .build()
             .map_err(|e| Error::config(format!("Failed to build config: {}", e)))?;

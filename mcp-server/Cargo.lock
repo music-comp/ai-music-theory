@@ -422,6 +422,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "music-theory-design"
+version = "0.1.0"
+
+[[package]]
 name = "music-theory-mcp"
 version = "0.1.0"
 dependencies = [
