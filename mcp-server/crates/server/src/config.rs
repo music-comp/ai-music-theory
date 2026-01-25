@@ -105,9 +105,36 @@ impl SourceCategory {
 /// Logging configuration.
 #[derive(Debug, Clone, Deserialize)]
 pub struct LoggingConfig {
-    // Allow unused - will be used when dynamic log level configuration is implemented
-    #[allow(dead_code)]
     pub level: String,
+}
+
+impl LoggingConfig {
+    /// Convert logging configuration to twyg options.
+    pub fn to_twyg(&self) -> Result<twyg::Opts> {
+        use twyg::{Color, ColorAttribute, Colors, LogLevel, OptsBuilder, Output, TSFormat};
+
+        // Parse level string into LogLevel enum
+        let level: LogLevel = self
+            .level
+            .parse()
+            .map_err(|_| Error::config(format!("Invalid log level: {}", self.level)))?;
+
+        // Configure custom colors for twyg
+        let colors = Colors {
+            timestamp: Some(Color::fg(ColorAttribute::HiBlack)),
+            ..Default::default()
+        };
+
+        // Build opts using OptsBuilder (MCP requires stderr output)
+        OptsBuilder::new()
+            .coloured(true)
+            .output(Output::Stderr)
+            .level(level)
+            .timestamp_format(TSFormat::Simple)
+            .colors(colors)
+            .build()
+            .map_err(|e| Error::config(format!("Failed to build twyg opts: {}", e)))
+    }
 }
 
 impl Config {
@@ -157,5 +184,39 @@ mod tests {
         let result = expand_path("/absolute/path");
         assert!(result.is_ok());
         assert_eq!(result.unwrap(), PathBuf::from("/absolute/path"));
+    }
+
+    #[test]
+    fn test_logging_config_to_twyg_valid() {
+        let config = LoggingConfig {
+            level: "debug".to_string(),
+        };
+        let result = config.to_twyg();
+        assert!(result.is_ok(), "Should parse valid log level 'debug'");
+    }
+
+    #[test]
+    fn test_logging_config_to_twyg_invalid() {
+        let config = LoggingConfig {
+            level: "invalid".to_string(),
+        };
+        let result = config.to_twyg();
+        assert!(result.is_err(), "Should reject invalid log level");
+        assert!(result
+            .unwrap_err()
+            .to_string()
+            .contains("Invalid log level"));
+    }
+
+    #[test]
+    fn test_logging_config_to_twyg_all_levels() {
+        let levels = vec!["trace", "debug", "info", "warn", "error"];
+        for level in levels {
+            let config = LoggingConfig {
+                level: level.to_string(),
+            };
+            let result = config.to_twyg();
+            assert!(result.is_ok(), "Should parse valid log level '{}'", level);
+        }
     }
 }
