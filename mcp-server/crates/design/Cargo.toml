@@ -1,0 +1,16 @@
+[package]
+name = "music-theory-design"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Design documentation and architectural decision records for Music Theory MCP Server"
+keywords = ["documentation", "design"]
+categories = ["development-tools"]
+
+[dependencies]
+# No dependencies - this is a documentation-only crate
+
+[dev-dependencies]
+# No dev dependencies currently
