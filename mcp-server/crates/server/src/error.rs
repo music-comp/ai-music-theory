@@ -80,22 +80,18 @@ impl Error {
     }
 
     /// Check if this is an I/O error.
-    // Allow unused - part of public API for error inspection
+    /// Available for error handling but not currently used in tool handlers
     #[allow(dead_code)]
     pub fn is_io(&self) -> bool {
         matches!(self.kind, ErrorKind::Io(_))
     }
 
     /// Check if this is a not-found error.
-    // Allow unused - part of public API for error inspection
-    #[allow(dead_code)]
     pub fn is_not_found(&self) -> bool {
         matches!(self.kind, ErrorKind::NotFound { .. })
     }
 
     /// Check if this is a configuration error.
-    // Allow unused - part of public API for error inspection
-    #[allow(dead_code)]
     pub fn is_config(&self) -> bool {
         matches!(self.kind, ErrorKind::Config(_))
     }

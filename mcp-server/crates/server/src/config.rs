@@ -26,21 +26,21 @@ pub struct ServerConfig {
 /// Paths configuration with variable expansion.
 #[derive(Debug, Clone, Deserialize)]
 pub struct PathsConfig {
-    // Allow unused - will be used when additional path resolution features are implemented
+    // Used by serde deserialization and accessed via base_path()
     #[allow(dead_code)]
     pub base: String,
     pub sources_md: String,
     pub concept_cards: String,
+    // Unified concepts directory - future feature for merged concept storage
     #[allow(dead_code)]
     pub concepts_unified: String,
     pub guides: String,
-    #[allow(dead_code)]
     pub skill_docs: String,
 }
 
 impl PathsConfig {
     /// Get the base path expanded to an absolute PathBuf.
-    // Allow unused - will be used when additional path resolution features are implemented
+    /// Used by skill_docs_path() and available for future path resolution
     #[allow(dead_code)]
     pub fn base_path(&self) -> Result<PathBuf> {
         expand_path(&self.base)
@@ -62,8 +62,6 @@ impl PathsConfig {
     }
 
     /// Get the skill docs directory as an absolute PathBuf.
-    // Allow unused - will be used when skill documentation features are implemented
-    #[allow(dead_code)]
     pub fn skill_docs_path(&self) -> Result<PathBuf> {
         expand_path(&self.skill_docs)
     }
