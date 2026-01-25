@@ -98,6 +98,7 @@ impl MusicTheoryServer {
     #[tool(description = "List all available source materials with metadata")]
     async fn list_sources(&self) -> Result<CallToolResult, ErrorData> {
         let response = tools::sources::list_sources(&self.config)
+            .await
             .map_err(|e| e.to_mcp_error("Error listing sources"))?;
 
         let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
@@ -115,6 +116,7 @@ impl MusicTheoryServer {
             &params.0.source_id,
             &params.0.chapter,
         )
+        .await
         .map_err(|e| e.to_mcp_error("Error retrieving chapter"))?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
@@ -148,6 +150,7 @@ impl MusicTheoryServer {
         };
 
         let response = tools::concepts::list_concepts(&self.config, Some(filter_params))
+            .await
             .map_err(|e| e.to_mcp_error("Error listing concepts"))?;
 
         let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
@@ -161,6 +164,7 @@ impl MusicTheoryServer {
         params: Parameters<GetConceptParams>,
     ) -> Result<CallToolResult, ErrorData> {
         let content = tools::concepts::get_concept(&self.config, &params.0.concept_id)
+            .await
             .map_err(|e| e.to_mcp_error("Error retrieving concept"))?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
@@ -177,6 +181,7 @@ impl MusicTheoryServer {
         };
 
         let response = tools::search::search_concepts(&self.config, search_params)
+            .await
             .map_err(|e| e.to_mcp_error("Error searching concepts"))?;
 
         let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
@@ -187,6 +192,7 @@ impl MusicTheoryServer {
     #[tool(description = "List all available topic guides")]
     async fn list_guides(&self) -> Result<CallToolResult, ErrorData> {
         let response = tools::guides::list_guides(&self.config)
+            .await
             .map_err(|e| e.to_mcp_error("Error listing guides"))?;
 
         let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
@@ -200,6 +206,7 @@ impl MusicTheoryServer {
         params: Parameters<GetGuideParams>,
     ) -> Result<CallToolResult, ErrorData> {
         let content = tools::guides::get_guide(&self.config, &params.0.guide_id)
+            .await
             .map_err(|e| e.to_mcp_error("Error retrieving guide"))?;
 
         Ok(CallToolResult::success(vec![Content::text(content)]))

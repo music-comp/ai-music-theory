@@ -18,7 +18,9 @@ description = "Music Theory AI Skill - MCP server for accessing music theory edu
 rmcp = { version = "0.14", features = ["server", "transport-io"] }
 
 # Async runtime
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "1", features = ["full", "fs", "sync"] }
+async-walkdir = "1"
+futures = "0.3"
 
 # Configuration and logging
 confyg = "0.3"
@@ -33,7 +35,6 @@ serde_json = "1"
 schemars = "1.2"
 
 # File operations and markdown
-walkdir = "2"
 glob = "0.3"
 shellexpand = "3.1"
 pulldown-cmark = "0.9"

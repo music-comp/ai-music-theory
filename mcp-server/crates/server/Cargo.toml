@@ -20,7 +20,8 @@ log = { workspace = true }
 serde = { workspace = true }
 serde_json = { workspace = true }
 schemars = { workspace = true }
-walkdir = { workspace = true }
+async-walkdir = { workspace = true }
+futures = { workspace = true }
 glob = { workspace = true }
 shellexpand = { workspace = true }
 pulldown-cmark = { workspace = true }
@@ -29,3 +30,6 @@ thiserror = { workspace = true }
 
 # For future search implementation
 # tantivy = "0.21"
+
+[dev-dependencies]
+tempfile = "3"

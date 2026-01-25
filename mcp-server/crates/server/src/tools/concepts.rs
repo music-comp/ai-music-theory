@@ -1,11 +1,10 @@
 use serde::{Deserialize, Serialize};
-use std::fs;
 use std::path::{Path, PathBuf};
-use walkdir::WalkDir;
 
 use crate::config::Config;
-use crate::error::{Error, Result};
+use crate::error::Result;
 use crate::markdown::{extract_first_heading, extract_first_paragraph, extract_frontmatter};
+use crate::util::files::{find_all_files, find_file_by_id, read_file, FindOptions};
 
 /// Information about a concept card.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -35,20 +34,20 @@ pub struct ListConceptsParams {
 }
 
 /// List all available concept cards, optionally filtered by category.
-pub fn list_concepts(
+pub async fn list_concepts(
     config: &Config,
     params: Option<ListConceptsParams>,
 ) -> Result<ListConceptsResponse> {
     let concept_cards_path = config.paths.concept_cards_path()?;
 
-    if !concept_cards_path.exists() {
+    if !crate::util::files::exists(&concept_cards_path).await {
         return Ok(ListConceptsResponse {
             concepts: Vec::new(),
             total: 0,
         });
     }
 
-    let mut concepts = scan_concept_cards(&concept_cards_path)?;
+    let mut concepts = scan_concept_cards(&concept_cards_path).await?;
 
     // Filter by category if specified
     if let Some(params) = params {
@@ -68,30 +67,23 @@ pub fn list_concepts(
 }
 
 /// Scan the concept cards directory.
-fn scan_concept_cards(base_path: &Path) -> Result<Vec<ConceptInfo>> {
+async fn scan_concept_cards(base_path: &Path) -> Result<Vec<ConceptInfo>> {
     let mut concepts = Vec::new();
 
-    // Walk through all markdown files in the concept cards directory
-    for entry in WalkDir::new(base_path)
-        .into_iter()
-        .filter_map(|e| e.ok())
-        .filter(|e| e.path().extension().and_then(|s| s.to_str()) == Some("md"))
-    {
-        let path = entry.path();
+    // Find all markdown files in the concept cards directory
+    let files = find_all_files(base_path, FindOptions::markdown()).await?;
+
+    for file_info in files {
+        let path = &file_info.path;
 
         // Determine category from directory structure
         let category = extract_category(base_path, path);
 
         // Extract concept ID from filename
-        // Safety: unwrap_or provides sensible display fallback if filename extraction fails
-        let concept_id = path
-            .file_stem()
-            .and_then(|s| s.to_str())
-            .unwrap_or("unknown")
-            .to_string();
+        let concept_id = file_info.stem.clone();
 
         // Try to extract title and preview from file content
-        let (title, preview) = extract_title_and_preview(path)?;
+        let (title, preview) = extract_title_and_preview(path).await?;
 
         concepts.push(ConceptInfo {
             id: concept_id,
@@ -125,8 +117,8 @@ fn extract_category(base: &Path, file_path: &Path) -> String {
 }
 
 /// Extract title and preview from markdown file.
-fn extract_title_and_preview(path: &Path) -> Result<(String, Option<String>)> {
-    let content = fs::read_to_string(path)?;
+async fn extract_title_and_preview(path: &Path) -> Result<(String, Option<String>)> {
+    let content = read_file(path).await?;
 
     // Extract frontmatter
     let (frontmatter, body) = extract_frontmatter(&content)?;
@@ -150,44 +142,25 @@ fn extract_title_and_preview(path: &Path) -> Result<(String, Option<String>)> {
 }
 
 /// Get a specific concept card by ID.
-pub fn get_concept(config: &Config, concept_id: &str) -> Result<String> {
+pub async fn get_concept(config: &Config, concept_id: &str) -> Result<String> {
     let concept_cards_path = config.paths.concept_cards_path()?;
 
     // Search for the concept file
-    let concept_path = find_concept_file(&concept_cards_path, concept_id)?;
+    let concept_path = find_concept_file(&concept_cards_path, concept_id).await?;
 
     // Read and return the content
-    let content = fs::read_to_string(&concept_path)?;
+    let content = read_file(&concept_path).await?;
     Ok(content)
 }
 
 /// Find a concept file by ID.
-fn find_concept_file(base_path: &Path, concept_id: &str) -> Result<PathBuf> {
-    // Try common extensions and naming patterns
-    let patterns = vec![
-        format!("{}.md", concept_id),
-        format!("{}/README.md", concept_id),
-        concept_id.to_string(),
-    ];
-
-    for pattern in patterns {
-        let path = base_path.join(&pattern);
-        if path.exists() {
-            return Ok(path);
-        }
-    }
-
-    // Search recursively
-    for entry in WalkDir::new(base_path).into_iter().filter_map(|e| e.ok()) {
-        let path = entry.path();
-        if let Some(stem) = path.file_stem().and_then(|s| s.to_str()) {
-            if stem == concept_id {
-                return Ok(path.to_path_buf());
-            }
-        }
-    }
-
-    Err(Error::not_found(base_path.join(concept_id)))
+async fn find_concept_file(base_path: &Path, concept_id: &str) -> Result<PathBuf> {
+    find_file_by_id(
+        base_path,
+        concept_id,
+        FindOptions::markdown().with_patterns(vec!["{id}.md", "{id}/README.md"]),
+    )
+    .await
 }
 
 #[cfg(test)]

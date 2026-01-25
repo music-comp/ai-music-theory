@@ -18,6 +18,9 @@ pub(crate) enum ErrorKind {
     NotFound {
         path: PathBuf,
     },
+    NotFoundMsg {
+        message: String,
+    },
     InvalidPath {
         path: PathBuf,
         reason: String,
@@ -42,6 +45,16 @@ impl Error {
         }
     }
 
+    pub(crate) fn io_with_path(err: std::io::Error, path: &std::path::Path) -> Self {
+        // Create an IO error with path context
+        let contextualized =
+            std::io::Error::new(err.kind(), format!("{}: {}", path.display(), err));
+        Self {
+            kind: ErrorKind::Io(contextualized),
+            backtrace: Backtrace::capture(),
+        }
+    }
+
     pub(crate) fn config(message: String) -> Self {
         Self {
             kind: ErrorKind::Config(message),
@@ -52,6 +65,15 @@ impl Error {
     pub(crate) fn not_found(path: PathBuf) -> Self {
         Self {
             kind: ErrorKind::NotFound { path },
+            backtrace: Backtrace::capture(),
+        }
+    }
+
+    pub(crate) fn not_found_msg(message: impl Into<String>) -> Self {
+        Self {
+            kind: ErrorKind::NotFoundMsg {
+                message: message.into(),
+            },
             backtrace: Backtrace::capture(),
         }
     }
@@ -90,7 +112,10 @@ impl Error {
 
     /// Check if this is a not-found error.
     pub fn is_not_found(&self) -> bool {
-        matches!(self.kind, ErrorKind::NotFound { .. })
+        matches!(
+            self.kind,
+            ErrorKind::NotFound { .. } | ErrorKind::NotFoundMsg { .. }
+        )
     }
 
     /// Check if this is a configuration error.
@@ -132,6 +157,9 @@ impl fmt::Display for Error {
             ErrorKind::Config(msg) => write!(f, "Configuration error: {}", msg),
             ErrorKind::NotFound { path } => {
                 write!(f, "File not found: {}", path.display())
+            }
+            ErrorKind::NotFoundMsg { message } => {
+                write!(f, "Not found: {}", message)
             }
             ErrorKind::InvalidPath { path, reason } => {
                 write!(f, "Invalid path {}: {}", path.display(), reason)

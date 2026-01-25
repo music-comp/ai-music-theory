@@ -1,11 +1,10 @@
 use serde::{Deserialize, Serialize};
-use std::fs;
 use std::path::{Path, PathBuf};
-use walkdir::WalkDir;
 
 use crate::config::Config;
-use crate::error::{Error, Result};
+use crate::error::Result;
 use crate::markdown::{extract_first_heading, extract_first_paragraph, extract_frontmatter};
+use crate::util::files::{find_all_files, find_file_by_id, read_file, FindOptions};
 
 /// Information about a guide document.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -26,46 +25,40 @@ pub struct ListGuidesResponse {
 }
 
 /// List all available topic guides.
-pub fn list_guides(config: &Config) -> Result<ListGuidesResponse> {
+pub async fn list_guides(config: &Config) -> Result<ListGuidesResponse> {
     let guides_path = config.paths.guides_path()?;
 
-    if !guides_path.exists() {
+    if !crate::util::files::exists(&guides_path).await {
         return Ok(ListGuidesResponse {
             guides: Vec::new(),
             total: 0,
         });
     }
 
-    let guides = scan_guides(&guides_path)?;
+    let guides = scan_guides(&guides_path).await?;
     let total = guides.len();
 
     Ok(ListGuidesResponse { guides, total })
 }
 
 /// Scan the guides directory for available guides.
-fn scan_guides(base_path: &Path) -> Result<Vec<GuideInfo>> {
+async fn scan_guides(base_path: &Path) -> Result<Vec<GuideInfo>> {
     let mut guides = Vec::new();
 
-    for entry in WalkDir::new(base_path)
-        .into_iter()
-        .filter_map(|e| e.ok())
-        .filter(|e| e.path().extension().and_then(|s| s.to_str()) == Some("md"))
-    {
-        let path = entry.path();
+    // Find all markdown files in the guides directory
+    let files = find_all_files(base_path, FindOptions::markdown()).await?;
+
+    for file_info in files {
+        let path = &file_info.path;
 
         // Extract topic from directory structure
         let topic = extract_topic(base_path, path);
 
         // Extract guide ID from filename
-        // Safety: unwrap_or provides sensible display fallback if filename extraction fails
-        let guide_id = path
-            .file_stem()
-            .and_then(|s| s.to_str())
-            .unwrap_or("unknown")
-            .to_string();
+        let guide_id = file_info.stem.clone();
 
         // Extract title and description from file content
-        let (title, description) = extract_title_and_description(path)?;
+        let (title, description) = extract_title_and_description(path).await?;
 
         guides.push(GuideInfo {
             id: guide_id,
@@ -95,8 +88,8 @@ fn extract_topic(base: &Path, file_path: &Path) -> String {
 }
 
 /// Extract title and description from markdown file.
-fn extract_title_and_description(path: &Path) -> Result<(String, Option<String>)> {
-    let content = fs::read_to_string(path)?;
+async fn extract_title_and_description(path: &Path) -> Result<(String, Option<String>)> {
+    let content = read_file(path).await?;
 
     // Extract frontmatter
     let (frontmatter, body) = extract_frontmatter(&content)?;
@@ -123,44 +116,25 @@ fn extract_title_and_description(path: &Path) -> Result<(String, Option<String>)
 }
 
 /// Get a specific guide by ID.
-pub fn get_guide(config: &Config, guide_id: &str) -> Result<String> {
+pub async fn get_guide(config: &Config, guide_id: &str) -> Result<String> {
     let guides_path = config.paths.guides_path()?;
 
     // Search for the guide file
-    let guide_path = find_guide_file(&guides_path, guide_id)?;
+    let guide_path = find_guide_file(&guides_path, guide_id).await?;
 
     // Read and return the content
-    let content = fs::read_to_string(&guide_path)?;
+    let content = read_file(&guide_path).await?;
     Ok(content)
 }
 
 /// Find a guide file by ID.
-fn find_guide_file(base_path: &Path, guide_id: &str) -> Result<PathBuf> {
-    // Try common patterns
-    let patterns = vec![
-        format!("{}.md", guide_id),
-        format!("{}/README.md", guide_id),
-        format!("{}/index.md", guide_id),
-    ];
-
-    for pattern in patterns {
-        let path = base_path.join(&pattern);
-        if path.exists() {
-            return Ok(path);
-        }
-    }
-
-    // Search recursively
-    for entry in WalkDir::new(base_path).into_iter().filter_map(|e| e.ok()) {
-        let path = entry.path();
-        if let Some(stem) = path.file_stem().and_then(|s| s.to_str()) {
-            if stem == guide_id {
-                return Ok(path.to_path_buf());
-            }
-        }
-    }
-
-    Err(Error::not_found(base_path.join(guide_id)))
+async fn find_guide_file(base_path: &Path, guide_id: &str) -> Result<PathBuf> {
+    find_file_by_id(
+        base_path,
+        guide_id,
+        FindOptions::markdown().with_patterns(vec!["{id}.md", "{id}/README.md", "{id}/index.md"]),
+    )
+    .await
 }
 
 #[cfg(test)]

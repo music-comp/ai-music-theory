@@ -1,10 +1,10 @@
 use serde::{Deserialize, Serialize};
-use std::fs;
-use walkdir::WalkDir;
+use std::path::Path;
 
 use crate::config::Config;
 use crate::error::Result;
 use crate::markdown::{extract_first_heading, extract_frontmatter};
+use crate::util::files::{find_all_files, read_file, FindOptions};
 
 /// A search result item.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -38,13 +38,13 @@ fn default_limit() -> usize {
 }
 
 /// Search across concept cards for a query.
-pub fn search_concepts(
+pub async fn search_concepts(
     config: &Config,
     params: SearchConceptsParams,
 ) -> Result<SearchConceptsResponse> {
     let concept_cards_path = config.paths.concept_cards_path()?;
 
-    if !concept_cards_path.exists() {
+    if !crate::util::files::exists(&concept_cards_path).await {
         return Ok(SearchConceptsResponse {
             results: Vec::new(),
             total: 0,
@@ -55,16 +55,14 @@ pub fn search_concepts(
     let query_lower = params.query.to_lowercase();
     let mut results = Vec::new();
 
-    // Walk through all markdown files
-    for entry in WalkDir::new(&concept_cards_path)
-        .into_iter()
-        .filter_map(|e| e.ok())
-        .filter(|e| e.path().extension().and_then(|s| s.to_str()) == Some("md"))
-    {
-        let path = entry.path();
+    // Find all markdown files
+    let files = find_all_files(&concept_cards_path, FindOptions::markdown()).await?;
+
+    for file_info in files {
+        let path = &file_info.path;
 
         // Read file content
-        if let Ok(content) = fs::read_to_string(path) {
+        if let Ok(content) = read_file(path).await {
             let content_lower = content.to_lowercase();
 
             // Check if query matches
@@ -73,14 +71,7 @@ pub fn search_concepts(
                 let (title, _) = extract_metadata(&content);
 
                 // Extract category
-                // Safety: unwrap_or provides sensible display fallback if path parsing fails
-                let category = path
-                    .parent()
-                    .and_then(|p| p.strip_prefix(&concept_cards_path).ok())
-                    .and_then(|p| p.components().next())
-                    .and_then(|c| c.as_os_str().to_str())
-                    .unwrap_or("uncategorized")
-                    .to_string();
+                let category = extract_category(&concept_cards_path, path);
 
                 // Extract snippet around match
                 let snippet = extract_snippet(&content, &params.query);
@@ -89,12 +80,7 @@ pub fn search_concepts(
                 let relevance =
                     calculate_relevance(&content_lower, &title.to_lowercase(), &query_lower);
 
-                // Safety: unwrap_or provides sensible display fallback if filename extraction fails
-                let concept_id = path
-                    .file_stem()
-                    .and_then(|s| s.to_str())
-                    .unwrap_or("unknown")
-                    .to_string();
+                let concept_id = file_info.stem.clone();
 
                 results.push(SearchResult {
                     id: concept_id,
@@ -126,6 +112,18 @@ pub fn search_concepts(
         total,
         query: params.query,
     })
+}
+
+/// Extract category from the path relative to base.
+fn extract_category(base: &Path, file_path: &Path) -> String {
+    // Safety: unwrap_or provides sensible display fallback if category extraction fails
+    file_path
+        .parent()
+        .and_then(|parent| parent.strip_prefix(base).ok())
+        .and_then(|relative| relative.components().next())
+        .and_then(|component| component.as_os_str().to_str())
+        .unwrap_or("uncategorized")
+        .to_string()
 }
 
 /// Extract title from markdown content.

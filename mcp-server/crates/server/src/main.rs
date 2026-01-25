@@ -4,6 +4,7 @@ mod markdown;
 mod resources;
 mod server;
 mod tools;
+mod util;
 
 use config::Config;
 use error::Result;

@@ -1,10 +1,11 @@
 use serde::{Deserialize, Serialize};
-use std::fs;
 use std::path::{Path, PathBuf};
-use walkdir::WalkDir;
 
 use crate::config::Config;
 use crate::error::{Error, Result};
+use crate::util::files::{
+    count_files, find_file_by_id, list_subdirectories, read_file, FindOptions,
+};
 
 /// Information about a source material.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -43,13 +44,13 @@ pub struct ListSourcesResponse {
 }
 
 /// List all available source materials.
-pub fn list_sources(config: &Config) -> Result<ListSourcesResponse> {
+pub async fn list_sources(config: &Config) -> Result<ListSourcesResponse> {
     let mut sources = Vec::new();
 
     // Check for converted sources in sources-md directory
     let sources_md_path = config.paths.sources_md_path()?;
-    if sources_md_path.exists() {
-        sources.extend(scan_converted_sources(&sources_md_path)?);
+    if crate::util::files::exists(&sources_md_path).await {
+        sources.extend(scan_converted_sources(&sources_md_path).await?);
     }
 
     // Add unconverted sources from configuration
@@ -59,36 +60,31 @@ pub fn list_sources(config: &Config) -> Result<ListSourcesResponse> {
 }
 
 /// Scan the sources-md directory for converted markdown sources.
-fn scan_converted_sources(base_path: &Path) -> Result<Vec<SourceInfo>> {
+async fn scan_converted_sources(base_path: &Path) -> Result<Vec<SourceInfo>> {
     let mut sources = Vec::new();
 
-    for entry in fs::read_dir(base_path)? {
-        let entry = entry?;
-        let path = entry.path();
+    for dir in list_subdirectories(base_path).await? {
+        // Safety: unwrap_or provides sensible display fallback if directory name extraction fails
+        let source_id = dir
+            .file_name()
+            .and_then(|n| n.to_str())
+            .unwrap_or("unknown")
+            .to_string();
 
-        if path.is_dir() {
-            // Safety: unwrap_or provides sensible display fallback if directory name extraction fails
-            let source_id = path
-                .file_name()
-                .and_then(|n| n.to_str())
-                .unwrap_or("unknown")
-                .to_string();
+        // Count markdown files in this source directory
+        let chapter_count = count_files(&dir, FindOptions::markdown()).await?;
 
-            // Count markdown files in this source directory
-            let chapter_count = count_markdown_files(&path)?;
+        // Compute title before moving source_id to avoid clone
+        let title = humanize_source_id(&source_id);
 
-            // Compute title before moving source_id to avoid clone
-            let title = humanize_source_id(&source_id);
-
-            sources.push(SourceInfo {
-                id: source_id,
-                title,
-                format: SourceFormat::Markdown,
-                path: path.to_string_lossy().to_string(),
-                chapters: Some(chapter_count),
-                status: SourceStatus::Converted,
-            });
-        }
+        sources.push(SourceInfo {
+            id: source_id,
+            title,
+            format: SourceFormat::Markdown,
+            path: dir.to_string_lossy().to_string(),
+            chapters: Some(chapter_count),
+            status: SourceStatus::Converted,
+        });
     }
 
     Ok(sources)
@@ -155,16 +151,6 @@ fn list_unconverted_sources(config: &Config) -> Result<Vec<SourceInfo>> {
     Ok(sources)
 }
 
-/// Count markdown files in a directory.
-fn count_markdown_files(dir: &Path) -> Result<usize> {
-    let count = WalkDir::new(dir)
-        .into_iter()
-        .filter_map(|e| e.ok())
-        .filter(|e| e.path().extension().and_then(|s| s.to_str()) == Some("md"))
-        .count();
-    Ok(count)
-}
-
 /// Detect file format from filename extension.
 fn detect_format(filename: &str) -> SourceFormat {
     let lower = filename.to_lowercase();
@@ -211,46 +197,32 @@ fn humanize_source_id(id: &str) -> String {
 }
 
 /// Get a specific chapter from a converted source.
-pub fn get_source_chapter(config: &Config, source_id: &str, chapter: &str) -> Result<String> {
+pub async fn get_source_chapter(config: &Config, source_id: &str, chapter: &str) -> Result<String> {
     let sources_md_path = config.paths.sources_md_path()?;
     let source_path = sources_md_path.join(source_id);
 
-    if !source_path.exists() {
-        return Err(Error::not_found(source_path));
+    if !crate::util::files::exists(&source_path).await {
+        return Err(crate::error::Error::not_found(source_path));
     }
 
     // Try to find the chapter file
-    let chapter_path = find_chapter_file(&source_path, chapter)?;
+    let chapter_path = find_chapter_file(&source_path, chapter).await?;
 
     // Read and return the chapter content
-    let content = fs::read_to_string(&chapter_path)?;
+    let content = read_file(&chapter_path).await?;
     Ok(content)
 }
 
 /// Find a chapter file in the source directory.
-fn find_chapter_file(source_dir: &Path, chapter: &str) -> Result<PathBuf> {
-    // Try exact match first
-    let exact_path = source_dir.join(format!("{}.md", chapter));
-    if exact_path.exists() {
-        return Ok(exact_path);
-    }
-
-    // Try to find by prefix (e.g., "01-16" matches "01-16-intervals.md")
-    for entry in WalkDir::new(source_dir).max_depth(2) {
-        let entry = entry.map_err(|e| {
-            // Convert walkdir::Error to io::Error, then to our Error
-            std::io::Error::other(e)
-        })?;
-        let path = entry.path();
-
-        if let Some(filename) = path.file_stem().and_then(|s| s.to_str()) {
-            if filename.starts_with(chapter) {
-                return Ok(path.to_path_buf());
-            }
-        }
-    }
-
-    Err(Error::not_found(source_dir.join(chapter)))
+async fn find_chapter_file(source_dir: &Path, chapter: &str) -> Result<PathBuf> {
+    find_file_by_id(
+        source_dir,
+        chapter,
+        FindOptions::markdown()
+            .with_patterns(vec!["{id}.md"])
+            .with_max_depth(2),
+    )
+    .await
 }
 
 /// Get the filesystem path to a source PDF/EPUB file.
