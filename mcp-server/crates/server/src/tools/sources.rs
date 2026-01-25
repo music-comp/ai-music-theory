@@ -272,4 +272,177 @@ mod tests {
         assert_eq!(humanize_source_id("open-music-theory"), "Open Music Theory");
         assert_eq!(humanize_source_id("lewin-gmit"), "Lewin Gmit");
     }
+
+    #[test]
+    fn test_detect_format_markdown_default() {
+        // Files without recognized extensions default to Markdown
+        assert!(matches!(detect_format("readme.txt"), SourceFormat::Markdown));
+        assert!(matches!(detect_format("notes"), SourceFormat::Markdown));
+    }
+
+    #[test]
+    fn test_detect_format_case_insensitive() {
+        assert!(matches!(detect_format("TEST.EPUB"), SourceFormat::Epub));
+        assert!(matches!(detect_format("file.XML"), SourceFormat::Xml));
+    }
+
+    #[test]
+    fn test_extract_title_no_year() {
+        // Files without year prefix
+        let title = extract_title("Simple Title.pdf");
+        assert_eq!(title, "Simple Title");
+    }
+
+    #[test]
+    fn test_extract_title_no_extension() {
+        // Files without extension
+        let title = extract_title("[2020] Title Without Extension");
+        assert_eq!(title, "Title Without Extension");
+    }
+
+    #[test]
+    fn test_extract_title_complex() {
+        // Complex filename
+        let title = extract_title("[1999] Author - Long Title With - Dashes.epub");
+        assert_eq!(title, "Author - Long Title With - Dashes");
+    }
+
+    #[test]
+    fn test_humanize_source_id_empty() {
+        // Edge case: empty string
+        assert_eq!(humanize_source_id(""), "");
+    }
+
+    #[test]
+    fn test_humanize_source_id_single_word() {
+        assert_eq!(humanize_source_id("test"), "Test");
+    }
+
+    #[test]
+    fn test_humanize_source_id_multiple_dashes() {
+        assert_eq!(humanize_source_id("one-two-three-four"), "One Two Three Four");
+    }
+
+    #[test]
+    fn test_get_source_pdf_path_invalid_format() {
+        use crate::config::Config;
+        let config = Config::load().expect("Config should load");
+
+        // Invalid format: no dash
+        let result = get_source_pdf_path(&config, "nodash");
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("category-file-id"));
+    }
+
+    #[test]
+    fn test_get_source_pdf_path_unknown_category() {
+        use crate::config::Config;
+        let config = Config::load().expect("Config should load");
+
+        // Invalid category
+        let result = get_source_pdf_path(&config, "unknown-file");
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("Unknown category"));
+    }
+
+    #[test]
+    fn test_get_source_pdf_path_oxford_valid() {
+        use crate::config::Config;
+        let config = Config::load().expect("Config should load");
+
+        // Oxford category - file may or may not exist but path should be constructed
+        let result = get_source_pdf_path(&config, "oxford-lewin-gmit");
+        // Should either succeed or fail with file-not-found, not category error
+        match result {
+            Ok(path) => assert!(path.to_string_lossy().contains("Lewin")),
+            Err(e) => {
+                // Should be "File ID not found" error, not category error
+                let msg = e.to_string();
+                assert!(msg.contains("File ID") || msg.contains("not found") || msg.contains("Invalid path"));
+            }
+        }
+    }
+
+    #[test]
+    fn test_get_source_pdf_path_general_valid() {
+        use crate::config::Config;
+        let config = Config::load().expect("Config should load");
+
+        let result = get_source_pdf_path(&config, "general-straus-post-tonal");
+        match result {
+            Ok(path) => assert!(path.to_string_lossy().contains("Straus") || path.to_string_lossy().len() > 0),
+            Err(e) => {
+                let msg = e.to_string();
+                assert!(msg.contains("File ID") || msg.contains("not found") || msg.contains("Invalid path"));
+            }
+        }
+    }
+
+    #[test]
+    fn test_get_source_pdf_path_papers_valid() {
+        use crate::config::Config;
+        let config = Config::load().expect("Config should load");
+
+        let result = get_source_pdf_path(&config, "papers-fiore");
+        match result {
+            Ok(path) => assert!(path.to_string_lossy().len() > 0),
+            Err(e) => {
+                let msg = e.to_string();
+                assert!(msg.contains("File ID") || msg.contains("not found") || msg.contains("Invalid path"));
+            }
+        }
+    }
+
+    #[test]
+    fn test_source_info_serialization() {
+        let info = SourceInfo {
+            id: "test-id".to_string(),
+            title: "Test Title".to_string(),
+            format: SourceFormat::Pdf,
+            path: "/test/path".to_string(),
+            chapters: Some(5),
+            status: SourceStatus::Converted,
+        };
+
+        let json = serde_json::to_string(&info).expect("Should serialize");
+        assert!(json.contains("test-id"));
+        assert!(json.contains("Test Title"));
+        assert!(json.contains("pdf"));
+    }
+
+    #[test]
+    fn test_source_info_chapters_none() {
+        let info = SourceInfo {
+            id: "test".to_string(),
+            title: "Test".to_string(),
+            format: SourceFormat::Markdown,
+            path: "/path".to_string(),
+            chapters: None,
+            status: SourceStatus::NotConverted,
+        };
+
+        let json = serde_json::to_string(&info).expect("Should serialize");
+        // chapters: None should be skipped in serialization
+        assert!(!json.contains("chapters"));
+    }
+
+    #[test]
+    fn test_list_sources_response_serialization() {
+        let response = ListSourcesResponse {
+            sources: vec![
+                SourceInfo {
+                    id: "test1".to_string(),
+                    title: "Test 1".to_string(),
+                    format: SourceFormat::Pdf,
+                    path: "/path1".to_string(),
+                    chapters: None,
+                    status: SourceStatus::NotConverted,
+                },
+            ],
+        };
+
+        let json = serde_json::to_string(&response).expect("Should serialize");
+        assert!(json.contains("sources"));
+        assert!(json.contains("test1"));
+    }
 }

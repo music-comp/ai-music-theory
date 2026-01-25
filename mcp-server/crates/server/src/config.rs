@@ -238,4 +238,141 @@ mod tests {
             assert!(result.is_ok(), "Should parse valid log level '{}'", level);
         }
     }
+
+    #[test]
+    fn test_expand_path_relative() {
+        // Relative paths should be resolved against skill_root
+        let result = expand_path("test/path");
+        // Should either succeed with an absolute path or fail with skill root error
+        match result {
+            Ok(path) => assert!(path.is_absolute(), "Relative path should be resolved to absolute"),
+            Err(e) => assert!(e.to_string().contains("skill root") || e.to_string().contains("Cannot resolve")),
+        }
+    }
+
+    #[test]
+    fn test_expand_path_dot() {
+        // "." should be resolved against skill_root
+        let result = expand_path(".");
+        match result {
+            Ok(path) => assert!(path.is_absolute(), "Dot path should be resolved to absolute"),
+            Err(e) => assert!(e.to_string().contains("skill root") || e.to_string().contains("Cannot resolve")),
+        }
+    }
+
+    #[test]
+    fn test_source_category_file_path_success() {
+        let mut files = HashMap::new();
+        files.insert("test-file".to_string(), "test.pdf".to_string());
+
+        let category = SourceCategory {
+            path: "/test/path".to_string(),
+            files,
+        };
+
+        let result = category.file_path("test-file");
+        assert!(result.is_ok());
+        let path = result.unwrap();
+        assert!(path.to_string_lossy().contains("test.pdf"));
+    }
+
+    #[test]
+    fn test_source_category_file_path_not_found() {
+        let category = SourceCategory {
+            path: "/test/path".to_string(),
+            files: HashMap::new(),
+        };
+
+        let result = category.file_path("nonexistent");
+        assert!(result.is_err());
+        let err = result.unwrap_err();
+        assert!(err.to_string().contains("File ID 'nonexistent' not found"));
+    }
+
+    #[test]
+    fn test_source_category_default() {
+        let category = SourceCategory::default();
+        assert_eq!(category.path, "");
+        assert!(category.files.is_empty());
+    }
+
+    #[test]
+    fn test_paths_config_base_path() {
+        let config = PathsConfig {
+            base: "/test/base".to_string(),
+            sources_md: "sources".to_string(),
+            concept_cards: "concepts".to_string(),
+            concepts_unified: "unified".to_string(),
+            guides: "guides".to_string(),
+            skill_docs: "docs".to_string(),
+        };
+
+        let result = config.base_path();
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/test/base"));
+    }
+
+    #[test]
+    fn test_paths_config_sources_md_path() {
+        let config = PathsConfig {
+            base: ".".to_string(),
+            sources_md: "/absolute/sources".to_string(),
+            concept_cards: "concepts".to_string(),
+            concepts_unified: "unified".to_string(),
+            guides: "guides".to_string(),
+            skill_docs: "docs".to_string(),
+        };
+
+        let result = config.sources_md_path();
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/absolute/sources"));
+    }
+
+    #[test]
+    fn test_paths_config_concept_cards_path() {
+        let config = PathsConfig {
+            base: ".".to_string(),
+            sources_md: "sources".to_string(),
+            concept_cards: "/absolute/concepts".to_string(),
+            concepts_unified: "unified".to_string(),
+            guides: "guides".to_string(),
+            skill_docs: "docs".to_string(),
+        };
+
+        let result = config.concept_cards_path();
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/absolute/concepts"));
+    }
+
+    #[test]
+    fn test_paths_config_guides_path() {
+        let config = PathsConfig {
+            base: ".".to_string(),
+            sources_md: "sources".to_string(),
+            concept_cards: "concepts".to_string(),
+            concepts_unified: "unified".to_string(),
+            guides: "/absolute/guides".to_string(),
+            skill_docs: "docs".to_string(),
+        };
+
+        let result = config.guides_path();
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/absolute/guides"));
+    }
+
+    #[test]
+    fn test_paths_config_skill_docs_path() {
+        let config = PathsConfig {
+            base: ".".to_string(),
+            sources_md: "sources".to_string(),
+            concept_cards: "concepts".to_string(),
+            concepts_unified: "unified".to_string(),
+            guides: "guides".to_string(),
+            skill_docs: "/absolute/docs".to_string(),
+        };
+
+        let result = config.skill_docs_path();
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/absolute/docs"));
+    }
 }

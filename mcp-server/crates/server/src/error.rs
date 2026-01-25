@@ -193,3 +193,179 @@ impl From<std::io::Error> for Error {
 
 /// Result type alias for this crate.
 pub type Result<T> = std::result::Result<T, Error>;
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use std::error::Error as StdError;
+    use std::path::PathBuf;
+
+    #[test]
+    fn test_error_io() {
+        let io_err = std::io::Error::new(std::io::ErrorKind::NotFound, "file not found");
+        let err = Error::io(io_err);
+        assert!(err.is_io());
+        assert!(!err.is_not_found());
+        assert!(!err.is_config());
+        assert!(err.to_string().contains("I/O error"));
+    }
+
+    #[test]
+    fn test_error_io_with_path() {
+        let io_err = std::io::Error::new(std::io::ErrorKind::PermissionDenied, "permission denied");
+        let path = PathBuf::from("/test/path.txt");
+        let err = Error::io_with_path(io_err, &path);
+        assert!(err.is_io());
+        let msg = err.to_string();
+        assert!(msg.contains("I/O error"));
+        assert!(msg.contains("/test/path.txt"));
+        assert!(msg.contains("permission denied"));
+    }
+
+    #[test]
+    fn test_error_config() {
+        let err = Error::config("invalid configuration".to_string());
+        assert!(err.is_config());
+        assert!(!err.is_io());
+        assert!(!err.is_not_found());
+        assert!(err.to_string().contains("Configuration error"));
+        assert!(err.to_string().contains("invalid configuration"));
+    }
+
+    #[test]
+    fn test_error_not_found() {
+        let path = PathBuf::from("/missing/file.txt");
+        let err = Error::not_found(path.clone());
+        assert!(err.is_not_found());
+        assert!(!err.is_io());
+        assert!(!err.is_config());
+        let msg = err.to_string();
+        assert!(msg.contains("File not found"));
+        assert!(msg.contains("/missing/file.txt"));
+    }
+
+    #[test]
+    fn test_error_not_found_msg() {
+        let err = Error::not_found_msg("concept not found");
+        assert!(err.is_not_found());
+        assert!(!err.is_io());
+        assert!(!err.is_config());
+        assert!(err.to_string().contains("Not found"));
+        assert!(err.to_string().contains("concept not found"));
+    }
+
+    #[test]
+    fn test_error_invalid_path() {
+        let path = PathBuf::from("/bad/path");
+        let err = Error::invalid_path(path.clone(), "invalid characters".to_string());
+        assert!(!err.is_io());
+        assert!(!err.is_not_found());
+        assert!(!err.is_config());
+        let msg = err.to_string();
+        assert!(msg.contains("Invalid path"));
+        assert!(msg.contains("/bad/path"));
+        assert!(msg.contains("invalid characters"));
+    }
+
+    #[test]
+    fn test_error_parse_error() {
+        let err = Error::parse_error("syntax error at line 5".to_string());
+        assert!(!err.is_io());
+        assert!(!err.is_not_found());
+        assert!(!err.is_config());
+        assert!(err.to_string().contains("Parse error"));
+        assert!(err.to_string().contains("syntax error at line 5"));
+    }
+
+    #[test]
+    fn test_error_search_error() {
+        let err = Error::search_error("index corrupted".to_string());
+        assert!(!err.is_io());
+        assert!(!err.is_not_found());
+        assert!(!err.is_config());
+        assert!(err.to_string().contains("Search error"));
+        assert!(err.to_string().contains("index corrupted"));
+    }
+
+    #[test]
+    fn test_error_from_io_error() {
+        let io_err = std::io::Error::new(std::io::ErrorKind::ConnectionReset, "connection lost");
+        let err: Error = io_err.into();
+        assert!(err.is_io());
+        assert!(err.to_string().contains("connection lost"));
+    }
+
+    #[test]
+    fn test_error_source_io() {
+        let io_err = std::io::Error::new(std::io::ErrorKind::NotFound, "test");
+        let err = Error::io(io_err);
+        assert!(err.source().is_some());
+    }
+
+    #[test]
+    fn test_error_source_non_io() {
+        let err = Error::config("test".to_string());
+        assert!(err.source().is_none());
+    }
+
+    #[test]
+    fn test_to_mcp_error_not_found() {
+        let err = Error::not_found(PathBuf::from("/test.txt"));
+        let mcp_err = err.to_mcp_error("Error reading file");
+        assert_eq!(mcp_err.code, rmcp::model::ErrorCode::RESOURCE_NOT_FOUND);
+        assert!(mcp_err.message.contains("Not found"));
+    }
+
+    #[test]
+    fn test_to_mcp_error_not_found_msg() {
+        let err = Error::not_found_msg("concept not found");
+        let mcp_err = err.to_mcp_error("Error finding concept");
+        assert_eq!(mcp_err.code, rmcp::model::ErrorCode::RESOURCE_NOT_FOUND);
+        assert!(mcp_err.message.contains("Not found"));
+    }
+
+    #[test]
+    fn test_to_mcp_error_config() {
+        let err = Error::config("missing field".to_string());
+        let mcp_err = err.to_mcp_error("Error loading config");
+        assert_eq!(mcp_err.code, rmcp::model::ErrorCode::INVALID_PARAMS);
+        assert!(mcp_err.message.contains("Configuration error"));
+    }
+
+    #[test]
+    fn test_to_mcp_error_io() {
+        let io_err = std::io::Error::new(std::io::ErrorKind::PermissionDenied, "denied");
+        let err = Error::io(io_err);
+        let mcp_err = err.to_mcp_error("Error accessing file");
+        assert_eq!(mcp_err.code, rmcp::model::ErrorCode::INTERNAL_ERROR);
+        assert!(mcp_err.message.contains("Error accessing file"));
+    }
+
+    #[test]
+    fn test_error_debug_format() {
+        let err = Error::config("test error".to_string());
+        let debug_str = format!("{:?}", err);
+        // Debug format should include the error message
+        assert!(debug_str.contains("Configuration error"));
+        assert!(debug_str.contains("test error"));
+    }
+
+    #[test]
+    fn test_error_display_all_variants() {
+        // Test Display for each ErrorKind variant
+        let errors = vec![
+            Error::io(std::io::Error::new(std::io::ErrorKind::NotFound, "io")),
+            Error::config("config".to_string()),
+            Error::not_found(PathBuf::from("/path")),
+            Error::not_found_msg("msg"),
+            Error::invalid_path(PathBuf::from("/path"), "reason".to_string()),
+            Error::parse_error("parse".to_string()),
+            Error::search_error("search".to_string()),
+        ];
+
+        for err in errors {
+            let display = err.to_string();
+            assert!(!display.is_empty(), "Display should produce non-empty string");
+        }
+    }
+}
