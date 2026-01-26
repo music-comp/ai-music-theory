@@ -3,6 +3,7 @@
 //! This module exposes the core functionality for integration testing
 //! and potential library usage.
 
+pub mod cli;
 pub mod config;
 pub mod error;
 pub mod markdown;
@@ -17,7 +18,7 @@ pub mod util;
 // Re-export commonly used types
 pub use config::Config;
 pub use error::{Error, Result};
-pub use search::{create_search_backend, SearchDocument};
+pub use search::SearchDocument;
 pub use state::AppState;
 pub use tools::search::{search_concepts, SearchConceptsParams, SearchConceptsResponse, SearchResult};
 

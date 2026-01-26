@@ -22,7 +22,7 @@ mod schema;
 mod tantivy_search;
 
 // Public exports
-pub use backend::create_search_backend;
+pub use backend::SearchBackend;
 pub use document::SearchDocument;
 pub use simple_search::SimpleSearch;
 
