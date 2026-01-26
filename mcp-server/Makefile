@@ -29,16 +29,19 @@ BINARIES := music-theory-mcp
 help:
 	@echo ""
 	@echo "$(CYAN)╔══════════════════════════════════════════════════════════╗$(RESET)"
-	@echo "$(CYAN)║$(RESET) $(BLUE)$(PROJECT_NAME) Build System$(RESET)                                   $(CYAN)║$(RESET)"
+	@echo "$(CYAN)║$(RESET) $(BLUE)$(PROJECT_NAME) Build System$(RESET)                                  $(CYAN)║$(RESET)"
 	@echo "$(CYAN)╚══════════════════════════════════════════════════════════╝$(RESET)"
 	@echo ""
 	@echo "$(GREEN)Building:$(RESET)"
 	@echo "  $(YELLOW)make build$(RESET)            - Build all binaries ($(BINARIES))"
+	@echo "  $(YELLOW)make build-fts$(RESET)        - Build with full-text search feature"
 	@echo "  $(YELLOW)make build-release$(RESET)    - Build optimized release binaries"
 	@echo "  $(YELLOW)make build MODE=release$(RESET) - Build with custom mode"
 	@echo ""
 	@echo "$(GREEN)Testing & Quality:$(RESET)"
-	@echo "  $(YELLOW)make test$(RESET)             - Run all tests"
+	@echo "  $(YELLOW)make test$(RESET)             - Run all tests (without FTS)"
+	@echo "  $(YELLOW)make test-fts$(RESET)         - Run all tests with FTS feature"
+	@echo "  $(YELLOW)make test-all$(RESET)         - Run tests in both configurations"
 	@echo "  $(YELLOW)make lint$(RESET)             - Run clippy and format check"
 	@echo "  $(YELLOW)make format$(RESET)           - Format all code with rustfmt"
 	@echo "  $(YELLOW)make coverage$(RESET)         - Generate test coverage report"
@@ -139,6 +142,27 @@ build: clean $(BIN_DIR)
 	@echo "$(GREEN)✓ Build complete$(RESET)"
 	@echo "$(CYAN)→ Binaries available in $(BIN_DIR)/$(RESET)"
 
+.PHONY: build-fts
+build-fts: clean $(BIN_DIR)
+	@echo "$(BLUE)Building $(PROJECT_NAME) with FTS feature in $(MODE) mode...$(RESET)"
+	@echo "$(CYAN)• Compiling workspace with --features fts...$(RESET)"
+	@if [ "$(MODE)" = "release" ]; then \
+		cargo build --release --features fts; \
+	else \
+		cargo build --features fts; \
+	fi
+	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (with FTS)"; \
+		else \
+			echo "  $(YELLOW)⚠$(RESET) $$bin not found, skipping"; \
+		fi; \
+	done
+	@echo "$(GREEN)✓ Build complete (FTS enabled)$(RESET)"
+	@echo "$(CYAN)→ Binaries available in $(BIN_DIR)/$(RESET)"
+
 .PHONY: build-release
 build-release: MODE = release
 build-release: TARGET = ./target/$(MODE)
@@ -226,17 +250,36 @@ clean-all: clean
 # Testing & Quality targets
 .PHONY: test
 test:
-	@echo "$(BLUE)Running tests...$(RESET)"
+	@echo "$(BLUE)Running tests (without FTS)...$(RESET)"
 	@echo "$(CYAN)• Running all workspace tests...$(RESET)"
-	@cargo test --all-features --workspace
+	@cargo test --workspace
 	@echo "$(GREEN)✓ All tests passed$(RESET)"
+
+.PHONY: test-fts
+test-fts:
+	@echo "$(BLUE)Running tests with FTS feature...$(RESET)"
+	@echo "$(CYAN)• Running all workspace tests with --features fts...$(RESET)"
+	@cargo test --features fts --workspace
+	@echo "$(GREEN)✓ All tests passed (FTS enabled)$(RESET)"
+
+.PHONY: test-all
+test-all:
+	@echo "$(BLUE)Running tests in both configurations...$(RESET)"
+	@echo "$(CYAN)• Configuration 1: Without FTS$(RESET)"
+	@cargo test --workspace
+	@echo "$(CYAN)• Configuration 2: With FTS$(RESET)"
+	@cargo test --features fts --workspace
+	@echo "$(GREEN)✓ All tests passed in both configurations$(RESET)"
 
 .PHONY: lint
 lint:
-	@echo "$(BLUE)Running linter checks...$(RESET)"
-	@echo "$(CYAN)• Running clippy...$(RESET)"
-	@cargo clippy --all-features --workspace -- -D warnings
-	@echo "$(GREEN)✓ Clippy passed$(RESET)"
+	@echo "$(BLUE)Running linter checks (both configurations)...$(RESET)"
+	@echo "$(CYAN)• Running clippy without FTS...$(RESET)"
+	@cargo clippy --workspace -- -D warnings
+	@echo "$(GREEN)✓ Clippy passed (without FTS)$(RESET)"
+	@echo "$(CYAN)• Running clippy with FTS...$(RESET)"
+	@cargo clippy --features fts --workspace -- -D warnings
+	@echo "$(GREEN)✓ Clippy passed (with FTS)$(RESET)"
 	@echo "$(CYAN)• Checking code formatting...$(RESET)"
 	@cargo fmt --all -- --check
 	@echo "$(GREEN)✓ Format check passed$(RESET)"
@@ -250,17 +293,17 @@ format:
 
 .PHONY: coverage
 coverage:
-	@echo "$(BLUE)Generating test coverage report...$(RESET)"
+	@echo "$(BLUE)Generating test coverage report (with FTS)...$(RESET)"
 	@echo "$(CYAN)• Running tests with coverage (server crate only)...$(RESET)"
-	@cd crates/server && cargo llvm-cov --all-features
+	@cd crates/server && cargo llvm-cov --features fts
 	@echo "$(GREEN)✓ Coverage report generated$(RESET)"
-	@echo "$(YELLOW)→ For detailed HTML report, run: cd crates/server && cargo llvm-cov --html --all-features$(RESET)"
+	@echo "$(YELLOW)→ For detailed HTML report, run: make coverage-html$(RESET)"
 
 .PHONY: coverage-html
 coverage-html:
-	@echo "$(BLUE)Generating HTML coverage report...$(RESET)"
+	@echo "$(BLUE)Generating HTML coverage report (with FTS)...$(RESET)"
 	@echo "$(CYAN)• Running tests with coverage (server crate only)...$(RESET)"
-	@cd crates/server && cargo llvm-cov --html --all-features
+	@cd crates/server && cargo llvm-cov --html --features fts
 	@echo "$(GREEN)✓ HTML coverage report generated$(RESET)"
 	@echo "$(CYAN)→ Report: crates/server/target/llvm-cov/html/index.html$(RESET)"
 

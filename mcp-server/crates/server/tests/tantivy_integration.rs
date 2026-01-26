@@ -3,6 +3,8 @@
 //! These tests verify the complete search pipeline from index building
 //! through query execution and result retrieval.
 
+#![cfg(feature = "fts")]
+
 use music_theory_mcp::config::{Config, LoggingConfig, PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
 use music_theory_mcp::search::{build_index, create_search_backend};
 use music_theory_mcp::tools::search::{SearchConceptsParams, search_concepts};

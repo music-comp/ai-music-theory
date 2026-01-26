@@ -46,7 +46,8 @@ async fn main() -> Result<()> {
         "Music Theory MCP Server starting"
     );
 
-    // Build Tantivy index if configured
+    // Build Tantivy index if configured (only when fts feature enabled)
+    #[cfg(feature = "fts")]
     if config.search.backend == "tantivy" && config.search.rebuild_on_startup {
         log::info!("Rebuilding Tantivy index on startup");
         match search::build_index(&config).await {

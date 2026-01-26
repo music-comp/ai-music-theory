@@ -45,8 +45,11 @@ dirs = "5"
 # Error handling
 thiserror = "2"
 
-# For future search implementation
-# tantivy = "0.21"
+# Full-text search (optional)
+tantivy = "0.22"
+
+# CLI parsing
+clap = { version = "4", features = ["derive"] }
 
 [profile.dev]
 opt-level = 0

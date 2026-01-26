@@ -11,6 +11,10 @@ description.workspace = true
 name = "music-theory-mcp"
 path = "src/main.rs"
 
+[features]
+default = []
+fts = ["dep:tantivy"]
+
 [dependencies]
 rmcp = { workspace = true }
 tokio = { workspace = true }
@@ -30,8 +34,11 @@ serde_yaml = { workspace = true }
 thiserror = { workspace = true }
 dirs = { workspace = true }
 
-# Full-text search engine
-tantivy = "0.22"
+# CLI parsing
+clap = { workspace = true }
+
+# Full-text search engine (optional)
+tantivy = { workspace = true, optional = true }
 
 [dev-dependencies]
 tempfile = "3"

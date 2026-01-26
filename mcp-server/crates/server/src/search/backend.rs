@@ -53,6 +53,7 @@ pub trait SearchBackend: Send + Sync {
 /// - Backend initialization fails (e.g., Tantivy index doesn't exist)
 pub async fn create_search_backend(config: &Config) -> Result<Box<dyn SearchBackend>> {
     match config.search.backend.as_str() {
+        #[cfg(feature = "fts")]
         "tantivy" => {
             use crate::search::TantivySearch;
 
@@ -120,6 +121,7 @@ mod tests {
     }
 
     #[tokio::test]
+    #[cfg(feature = "fts")]
     async fn test_create_search_backend_tantivy_no_index() {
         let config = test_config("tantivy");
         let result = create_search_backend(&config).await;

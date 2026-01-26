@@ -3,6 +3,8 @@
 //! This module provides functionality to build a complete Tantivy index
 //! from all concept card files in the concept_cards directory.
 
+#![cfg(feature = "fts")]
+
 use std::path::Path;
 
 use crate::config::Config;

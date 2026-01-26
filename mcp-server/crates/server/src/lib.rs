@@ -16,5 +16,9 @@ pub mod util;
 // Re-export commonly used types
 pub use config::Config;
 pub use error::{Error, Result};
-pub use search::{build_index, create_search_backend, IndexStats, SearchDocument};
+pub use search::{create_search_backend, SearchDocument};
 pub use tools::search::{search_concepts, SearchConceptsParams, SearchConceptsResponse, SearchResult};
+
+// FTS-specific re-exports (only when feature enabled)
+#[cfg(feature = "fts")]
+pub use search::{build_index, IndexStats};
