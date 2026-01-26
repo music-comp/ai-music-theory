@@ -15,6 +15,9 @@ use rmcp::{transport::stdio, ServiceExt};
 use server::MusicTheoryServer;
 use state::AppState;
 
+#[cfg(feature = "fts")]
+use std::sync::Arc;
+
 /// Add context to a configuration error.
 fn config_context(context: &str, error: impl std::fmt::Display) -> error::Error {
     error::Error::config(format!("{}: {}", context, error))
@@ -48,34 +51,20 @@ async fn main() -> Result<()> {
         "Music Theory MCP Server starting"
     );
 
-    // Build Tantivy index if configured (only when fts feature enabled)
-    // TODO: Phase 3 will move this to background async indexing
-    #[cfg(feature = "fts")]
-    if config.search.backend == "tantivy" && config.search.rebuild_on_startup {
-        log::info!("Rebuilding Tantivy index on startup");
-        match search::build_index(&config).await {
-            Ok(stats) => {
-                log::info!(
-                    files = stats.files_found,
-                    indexed = stats.indexed,
-                    errors = stats.errors;
-                    "Index build complete"
-                );
-            }
-            Err(e) => {
-                log::error!("Failed to build index: {}", e);
-                return Err(e);
-            }
-        }
-    } else if config.search.backend == "tantivy" {
-        log::info!("Using existing Tantivy index (rebuild_on_startup = false)");
-    }
-
     // Create application state
     log::info!("Creating application state");
     let state = AppState::new(config)
         .await
         .map_err(|e| io_context("Failed to create application state", e))?;
+
+    // Initialize FTS (non-blocking - may start background indexing)
+    #[cfg(feature = "fts")]
+    {
+        let state_arc = Arc::new(state.clone());
+        crate::state::initialize_fts(&state_arc)
+            .await
+            .map_err(|e| io_context("Failed to initialize FTS", e))?;
+    }
 
     // Create and run the MCP server with stdio transport
     log::info!(transport = "stdio"; "Starting MCP server");

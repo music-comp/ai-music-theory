@@ -11,6 +11,8 @@ mod simple_search;
 #[cfg(feature = "fts")]
 mod builder;
 #[cfg(feature = "fts")]
+mod freshness;
+#[cfg(feature = "fts")]
 mod indexer;
 #[cfg(feature = "fts")]
 mod query;
@@ -31,6 +33,8 @@ pub use builder::{build_index, IndexStats};
 pub use tantivy_search::TantivySearch;
 
 // Internal FTS modules
+#[cfg(feature = "fts")]
+pub(crate) use freshness::{compute_content_hash, is_index_fresh, save_metadata, IndexMetadata};
 #[cfg(feature = "fts")]
 pub(crate) use indexer::Indexer;
 #[cfg(feature = "fts")]

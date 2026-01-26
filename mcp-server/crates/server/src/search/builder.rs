@@ -6,11 +6,12 @@
 #![cfg(feature = "fts")]
 
 use std::path::Path;
+use std::time::SystemTime;
 
 use crate::config::Config;
 use crate::error::Result;
 use crate::metadata::extract_concept_metadata;
-use crate::search::{Indexer, SearchDocument};
+use crate::search::{compute_content_hash, save_metadata, IndexMetadata, Indexer, SearchDocument};
 use crate::util::files::{find_all_files, FindOptions};
 
 /// Statistics from index building.
@@ -116,6 +117,15 @@ pub async fn build_index(config: &Config) -> Result<IndexStats> {
     // Commit
     log::info!("Committing index...");
     indexer.commit()?;
+
+    // Save metadata for freshness tracking
+    let content_hash = compute_content_hash(config).await?;
+    let metadata = IndexMetadata {
+        doc_count: indexed,
+        last_indexed: SystemTime::now(),
+        content_hash,
+    };
+    save_metadata(&index_path, &metadata).await?;
 
     let stats = IndexStats {
         files_found,

@@ -3,6 +3,7 @@
 //! This module provides AppState for managing the search backend state,
 //! including FTS readiness tracking and dynamic backend switching.
 
+use std::path::Path;
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::{Arc, RwLock};
 
@@ -12,7 +13,7 @@ use crate::search::backend::SearchBackend;
 use crate::search::SimpleSearch;
 
 #[cfg(feature = "fts")]
-use crate::search::TantivySearch;
+use crate::search::{build_index, is_index_fresh, TantivySearch};
 
 /// Shared application state.
 ///
@@ -186,6 +187,119 @@ fn initialize_fts_backend(
             Arc::new(AtomicBool::new(false)),
         ))
     }
+}
+
+/// Initialize FTS backend and start background indexing if needed.
+///
+/// This is the main entry point for FTS initialization. It:
+/// 1. Checks if an index exists and is fresh
+/// 2. If fresh, loads it immediately
+/// 3. If not fresh or missing, starts background indexing
+///
+/// Server starts immediately - indexing happens asynchronously.
+///
+/// # Arguments
+///
+/// * `state` - Shared application state
+///
+/// # Errors
+///
+/// Returns `Err` if index path resolution fails.
+#[cfg(feature = "fts")]
+pub async fn initialize_fts(state: &Arc<AppState>) -> Result<()> {
+    if state.config.search.backend != "tantivy" {
+        log::debug!("FTS not configured (backend={})", state.config.search.backend);
+        return Ok(());
+    }
+
+    let index_path = state.config.search.index_path()?;
+
+    // Check if index exists and is fresh
+    if index_exists_and_fresh(&index_path, &state.config).await? {
+        log::info!("FTS index found and is current");
+        // Index already loaded during AppState::new()
+        Ok(())
+    } else {
+        log::info!("FTS index needs building - starting background task");
+        start_background_indexing(Arc::clone(state));
+        Ok(())
+    }
+}
+
+/// Check if index exists and is fresh (module-level helper).
+#[cfg(feature = "fts")]
+async fn index_exists_and_fresh(index_path: &Path, config: &Config) -> Result<bool> {
+    if !index_path.exists() {
+        log::debug!("Index path does not exist: {}", index_path.display());
+        return Ok(false);
+    }
+
+    match is_index_fresh(index_path, config).await {
+        Ok(fresh) => {
+            if fresh {
+                log::debug!("Index is fresh");
+            } else {
+                log::debug!("Index exists but is stale");
+            }
+            Ok(fresh)
+        }
+        Err(e) => {
+            log::warn!("Error checking index freshness: {}", e);
+            Ok(false)
+        }
+    }
+}
+
+/// Start background indexing task (module-level function).
+///
+/// Spawns a tokio task that builds the index asynchronously.
+/// When complete, updates the AppState with the new backend and marks FTS ready.
+#[cfg(feature = "fts")]
+fn start_background_indexing(state: Arc<AppState>) {
+    tokio::spawn(async move {
+        log::info!("Background indexing started");
+
+        match build_fts_index_for_state(&state).await {
+            Ok(stats) => {
+                log::info!(
+                    indexed = stats.indexed,
+                    errors = stats.errors;
+                    "Background indexing complete"
+                );
+
+                // Load newly built index
+                if let Ok(index_path) = state.config.search.index_path() {
+                    match TantivySearch::new(&index_path, state.config.search.clone()) {
+                        Ok(backend) => {
+                            if state.update_fts_backend(backend).is_ok() {
+                                state.set_fts_ready(true);
+                                log::info!("FTS backend now active");
+                            } else {
+                                log::error!("Failed to update FTS backend");
+                            }
+                        }
+                        Err(e) => {
+                            log::error!("Failed to load newly built index: {}", e);
+                        }
+                    }
+                } else {
+                    log::error!("Failed to resolve index path after build");
+                }
+            }
+            Err(e) => {
+                log::error!("Background indexing failed: {}", e);
+                // Simple backend remains active
+            }
+        }
+    });
+}
+
+/// Build FTS index for the given state (module-level wrapper).
+#[cfg(feature = "fts")]
+async fn build_fts_index_for_state(
+    state: &AppState,
+) -> Result<crate::search::IndexStats> {
+    build_index(&state.config).await
 }
 
 #[cfg(test)]

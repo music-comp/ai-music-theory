@@ -24,3 +24,5 @@ pub use tools::search::{search_concepts, SearchConceptsParams, SearchConceptsRes
 // FTS-specific re-exports (only when feature enabled)
 #[cfg(feature = "fts")]
 pub use search::{build_index, IndexStats};
+#[cfg(feature = "fts")]
+pub use state::initialize_fts;

@@ -191,6 +191,12 @@ impl From<std::io::Error> for Error {
     }
 }
 
+impl From<serde_json::Error> for Error {
+    fn from(err: serde_json::Error) -> Self {
+        Self::config(format!("JSON serialization error: {}", err))
+    }
+}
+
 /// Result type alias for this crate.
 pub type Result<T> = std::result::Result<T, Error>;
 
