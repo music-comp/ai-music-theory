@@ -1,114 +1,229 @@
 ---
 concept: Anticipation
-category: voice-leading
+category: harmony
 source: Open Music Theory
-chapter: "Fifth-Species Counterpoint"
-part: 2
+chapter: "Non-Chord Tones and Embellishments"
+part: 4
 ---
 
 # Anticipation
 
 ## Quick Definition
 
-A non-chord tone that anticipates (sounds in advance) a note that will become a chord tone on the following beat or in the following chord.
+A non-chord tone that arrives early—a note from the upcoming chord sounded before the rest of that chord arrives, typically appearing on a weak beat or weak part of the beat and approached by step, creating a subtle forward momentum by "anticipating" the arrival of the next harmony, common in cadential approaches where the melody arrives at the tonic pitch before the bass and inner voices complete the resolution.
 
 ## Formal Definition
 
-An **anticipation** (abbreviated ANT or ant) is a melodic embellishment in which a note from the upcoming chord sounds early, before the harmony changes. The anticipation is typically unaccented (on a weak beat) and is followed by the same pitch on the following strong beat where it becomes a chord tone.
+**Anticipation** (ANT or A) is a non-chord tone that:
 
 **Characteristics**:
-- Occurs on a weak beat (unaccented)
-- The same pitch is repeated on the following stronger beat
-- The anticipated note becomes a consonant chord tone when the harmony arrives
-- Creates a sense of forward motion and arrival
-- Typically approached by step (though leap is possible)
-- Left by repetition (the same note continues into the new chord)
+- Appears **before** the chord it belongs to
+- Occurs on **weak beat** or weak part of beat
+- Usually approached by **step** (up or down)
+- Becomes **consonant** when the chord arrives
+- **Not prepared** as a consonance (unlike suspension)
+- Often resolves by **staying** on the same pitch
 
-Pattern: [Previous chord tone] → [anticipation] → [same pitch as chord tone in new harmony]
+**Pattern**:
+```
+Chord 1: [chord tones] → ANT (dissonant)
+         ↓
+Chord 2: ANT becomes chord tone (consonant)
+```
 
-In fifth-species counterpoint, anticipations are introduced as embellishments, often appearing:
-- As eighth notes anticipating the following downbeat
-- In combination with turns or other ornamental figures
-- To embellish suspension resolutions
+**Metric placement**: Weak beat or offbeat (unaccented)
 
-**Context**: The anticipation is consonant or dissonant depending on whether it fits the current (old) harmony or the upcoming (new) harmony—it "belongs" to the new harmony but sounds during the old one.
+**Function**: Creates forward momentum, anticipates arrival
+
+## Anticipation Patterns
+
+**Melodic anticipation** (most common):
+```
+     V          I
+S:   D  C      C    (C anticipated on weak beat)
+B:   G  ↓      C
+
+Soprano arrives at C before bass completes resolution
+C is non-chord tone in V, chord tone in I
+```
+
+**Cadential anticipation**:
+```
+Measure: 1    2    3    4  |  1
+Chord:   V⁷   →    →    I-I  I
+Melody:  D    →    C    C    C
+         ↑         ↑    ↑
+         V⁷       ANT  consonant
+
+C arrives early on beat 3, anticipates I chord on beat 4
+```
+
+**Multiple anticipations**:
+```
+     V               I
+S:   D    C         C    (anticipation)
+A:   B    C         C    (anticipation)
+T:   G    →         E
+B:   G    →         C
+
+Both soprano and alto anticipate I chord
+```
+
+## Voice Leading
+
+**Standard anticipation**:
+```
+Beat:    1    2    3    4  |  1
+         [  Chord 1   ] ANT | Chord 2
+         stronger    weak   | strong
+
+Anticipation on weak beat/subdivision
+Becomes consonant when new chord arrives
+Often stays on same pitch (no resolution needed)
+```
+
+**Stepwise approach** (typical):
+```
+Chord 1: E → D → C (anticipation)
+         ↑   ↑   ↑
+         CT  CT  ANT (anticipates next chord)
+
+Approached by step, arrives early
+```
+
+**Leap possible** (less common):
+```
+Chord 1: E → C (anticipation)
+         leap to anticipated note
+
+Less typical, but acceptable
+```
+
+## Anticipation vs. Other Non-Chord Tones
+
+**vs. Suspension**:
+- **Suspension**: Held over from previous chord, **strong beat**, resolves **down**
+- **Anticipation**: Arrives early, **weak beat**, often **stays**
+
+**vs. Passing tone**:
+- **Passing**: Fills gap between chord tones
+- **Anticipation**: Jumps ahead to next chord's note
+
+**vs. Neighbor**:
+- **Neighbor**: Returns to same note
+- **Anticipation**: Moves to note that becomes consonant in next chord
 
 ## Musical Context
 
-Anticipations serve specific melodic and expressive functions:
+Anticipations serve specific purposes:
+- **Forward momentum**: Creates sense of arrival
+- **Cadential smoothness**: Softens final cadences
+- **Melodic interest**: Adds subtle embellishment
+- **Weak-beat placement**: Unaccented, gentle effect
+- **Common in vocal music**: Natural anticipation of resolution
+- **Frequent at cadences**: Melody arrives before harmony completes
 
-**Melodic functions**:
-- Create forward motion toward the next chord
-- Smooth melodic arrival on strong beats
-- Add rhythmic interest and variety
-- Generate expectation and fulfillment
-
-**Harmonic functions**:
-- Blur harmonic boundaries by introducing the new harmony early
-- Create gentle dissonance (if dissonant with current harmony)
-- Enhance the sense of harmonic progression
-- Soften cadential arrivals
-
-**Rhythmic functions**:
-- Create syncopation through early arrival
-- Add rhythmic momentum
-- Emphasize the following downbeat through anticipation
-
-**Stylistic uses**:
-- **Baroque**: Common in embellished lines, especially in slow movements
-- **Classical**: Frequent in cadential formulas and melodic elaborations
-- **Romantic**: Used for expressive effect and harmonic color
-- **Jazz**: Common melodic device, especially in vocal and instrumental lines
-- **Pop**: Ubiquitous in vocal melodies and instrumental fills
-
-Anticipations are among the smoothest non-chord tones because they're approached by step and left by repetition.
+Anticipations are subtle but effective embellishments in tonal music.
 
 ## Examples
 
 ### Basic
 
-**Simple anticipation at a cadence**:
-- Harmony: V → I (G major → C major)
-- Melody: ...D (quarter) – C (eighth, anticipation) | C (half, chord tone)
-  (C anticipates the tonic arrival on the downbeat)
+**Simple anticipation at cadence** (C major):
+```
+     V          I
+S:   D - C     C    (C anticipated)
+A:   B - →     C
+T:   G - →     E
+B:   G - →     C
 
-**Anticipation in embellished suspension**:
-- Suspension resolves from D to C
-- Instead of simple resolution: D (suspension) – C (resolution)
-- Embellished: D (suspension) – C-[turn]-C (anticipation of next chord tone)
+Soprano arrives at C early (weak beat)
+Anticipates I chord arrival
+```
 
-**Anticipation with leap approach**:
-- Harmony: I → V (C major → G major)
-- Melody: E (quarter) – G (eighth, anticipation by leap) | G (half, chord tone)
-  (G anticipates the dominant harmony)
+**Stepwise approach**:
+```
+     V               I
+S:   E → D → C     C
+         ↑   ↑
+         CT  ANT
+
+D is chord tone (^2 in V)
+C arrives early as anticipation
+Becomes ^1 when I chord arrives
+```
+
+**Multiple voices anticipating**:
+```
+     V⁷              I
+S:   F → E         E    (anticipation)
+A:   D → C         C    (anticipation)
+T:   B → →         C
+B:   G → →         C
+
+Both soprano and alto anticipate I chord
+Creates smooth, early arrival
+```
+
+**In context** (phrase ending):
+```
+mm. 7-8:  IV    V⁷    ANT-I
+          F     G⁷    C
+          
+Anticipation softens cadential arrival
+Melody reaches tonic before bass
+```
+
+**Offbeat anticipation**:
+```
+Beat:     1    &    2    &    3    &    4    &  |  1
+Chord:    [    V⁷         ]         ANT        |  I
+Melody:   D              D    C               C
+
+C on "&" of 4 = anticipation
+Arrives before downbeat
+```
 
 ### From Repertoire
 
-- **Bach, Chorales**: Frequent anticipations in soprano line at cadences
-- **Mozart, Piano Sonatas**: Melodic anticipations in graceful passages
-- **Beethoven, String Quartets**: Anticipations in expressive melodic lines
-- **Chopin, Nocturnes**: Elaborate anticipations in ornamented melodies
-- **Jazz standards**: Vocal and instrumental anticipations ubiquitous
-- **Pop ballads**: Singers frequently anticipate chord tones in melodies
-- **Film music**: Anticipations create smooth, flowing melodic lines
+**Mozart, Piano Sonatas**: Frequent anticipations at phrase endings, melody anticipates tonic arrival while accompaniment completes cadence.
+
+**Bach, Chorales**: Anticipations in upper voices at final cadences, soprano often arrives at ^1 before other voices resolve.
+
+**Haydn, String Quartets**: Melodic anticipations create smooth phrase endings, particularly in slow movements.
+
+**Popular music/hymns**: Anticipations very common at phrase endings, vocal melody anticipates final chord.
+
+**Brahms, songs**: Anticipations in vocal line create natural text setting, arrives at cadential tones early for expressive effect.
 
 ## Related Concepts
 
-- **Prerequisite**: non-chord-tone, chord-tone, weak-beat, stepwise-motion, harmonic-change
-- **Leads to**: syncopation, embellishment, melodic-anticipation, ornamentation
-- **See also**: suspension, passing-tone, neighbor-tone, escape-tone, fifth-species
+- **Prerequisite**: non-chord-tone, consonance-dissonance, weak-beat, stepwise-motion, cadence
+- **Leads to**: embellishing-tones, non-harmonic-tones, melodic-embellishment
+- **See also**: suspension, passing-tone, neighbor-tone, escape-tone, weak-beat-dissonance
 
 ## Common Confusions
 
-- Anticipation vs. suspension: Anticipations are unaccented (weak beat) and anticipate the *next* chord; suspensions are accented (strong beat) and hold over from the *previous* chord
-- Anticipations are left by repetition (same note), unlike passing tones (which continue in the same direction) or neighbor tones (which return in the opposite direction)
-- The anticipation may be consonant or dissonant with the current harmony—what matters is that it belongs to the upcoming harmony
-- "Anticipation" describes the function (anticipating the next chord), not just early arrival
-- In strict counterpoint, anticipations typically appear as eighth notes on weak beats
-- Anticipations smooth arrival rather than create tension (unlike suspensions or appoggiaturas)
-- Cadential anticipations are especially common—the tonic note anticipated just before the final arrival
-- Not to be confused with upbeat or anacrusis (which precedes the entire phrase, not just a single chord)
+- Anticipation = note from next chord arrives **early**
+- Appears on **weak beat** (unaccented)
+- Usually approached by **step** (up or down)
+- **Not prepared** as consonance (unlike suspension)
+- Becomes consonant when next chord arrives
+- Often **stays** on same pitch (no resolution by leap/step needed)
+- Most common at **cadences** (melody arrives before harmony)
+- Opposite of suspension (suspension holds over, anticipation arrives early)
+- Creates forward momentum (looks ahead to next chord)
+- Can occur in multiple voices simultaneously
+- Stepwise approach most common, but leap possible
+- Unaccented (weak beat or offbeat placement)
+- Brief duration (doesn't last long before chord changes)
+- "ANT" or "A" abbreviation in analysis
+- Not to be confused with appoggiatura (which is accented)
+- Different from escape tone (escape leaves by leap)
+- Natural in vocal music (singers anticipate resolution)
+- Subtle embellishment (less dramatic than suspension)
 
 ## Source Reference
 
-Open Music Theory, Part II, Chapter 6: "Fifth-Species Counterpoint"
+Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
+Open Music Theory, Part IV: "Non-Chord Tones: Embellishing Tones"
