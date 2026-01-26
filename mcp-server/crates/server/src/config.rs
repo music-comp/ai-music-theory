@@ -14,6 +14,9 @@ pub struct Config {
     // Allow unused - will be used when dynamic log level configuration is implemented
     #[allow(dead_code)]
     pub logging: LoggingConfig,
+    // Allow unused - will be used when search backends are implemented (Phase 2+)
+    #[allow(dead_code)]
+    pub search: SearchConfig,
 }
 
 /// Server configuration.
@@ -97,6 +100,61 @@ impl SourceCategory {
 
         let base = expand_path(&self.path)?;
         Ok(base.join(filename))
+    }
+}
+
+/// Search configuration.
+/// Fields will be used when search backends are implemented (Phase 2+).
+#[derive(Debug, Clone, Deserialize)]
+#[allow(dead_code)]
+pub struct SearchConfig {
+    /// Backend selection: "simple" or "tantivy"
+    #[serde(default = "default_backend")]
+    pub backend: String,
+
+    /// Tantivy index directory (relative to skill root or absolute)
+    #[serde(default = "default_index_path")]
+    pub index_path: String,
+
+    /// Rebuild index on startup (useful for development)
+    #[serde(default)]
+    pub rebuild_on_startup: bool,
+
+    /// Snippet size in characters for search results
+    #[serde(default = "default_snippet_size")]
+    pub snippet_size: usize,
+
+    /// Enable fuzzy search (typo tolerance)
+    #[serde(default)]
+    pub fuzzy_search: bool,
+
+    /// Maximum edit distance for fuzzy matching (1-2)
+    #[serde(default = "default_fuzzy_distance")]
+    pub fuzzy_distance: u8,
+}
+
+fn default_backend() -> String {
+    "simple".to_string()
+}
+
+fn default_index_path() -> String {
+    ".tantivy-index".to_string()
+}
+
+fn default_snippet_size() -> usize {
+    200
+}
+
+fn default_fuzzy_distance() -> u8 {
+    2
+}
+
+impl SearchConfig {
+    /// Get the index path as an absolute PathBuf.
+    /// Will be used when search backends are implemented (Phase 2+).
+    #[allow(dead_code)]
+    pub fn index_path(&self) -> Result<PathBuf> {
+        expand_path(&self.index_path)
     }
 }
 
@@ -388,5 +446,96 @@ mod tests {
         let result = config.skill_docs_path();
         assert!(result.is_ok());
         assert_eq!(result.unwrap(), PathBuf::from("/absolute/docs"));
+    }
+
+    #[test]
+    fn test_default_backend() {
+        assert_eq!(default_backend(), "simple");
+    }
+
+    #[test]
+    fn test_default_index_path() {
+        assert_eq!(default_index_path(), ".tantivy-index");
+    }
+
+    #[test]
+    fn test_default_snippet_size() {
+        assert_eq!(default_snippet_size(), 200);
+    }
+
+    #[test]
+    fn test_default_fuzzy_distance() {
+        assert_eq!(default_fuzzy_distance(), 2);
+    }
+
+    #[test]
+    fn test_search_config_defaults() {
+        let json = r#"{}"#;
+        let config: SearchConfig = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(config.backend, "simple");
+        assert_eq!(config.index_path, ".tantivy-index");
+        assert!(!config.rebuild_on_startup);
+        assert_eq!(config.snippet_size, 200);
+        assert!(!config.fuzzy_search);
+        assert_eq!(config.fuzzy_distance, 2);
+    }
+
+    #[test]
+    fn test_search_config_custom_values() {
+        let json = r#"{
+            "backend": "tantivy",
+            "index_path": "/custom/path",
+            "rebuild_on_startup": true,
+            "snippet_size": 150,
+            "fuzzy_search": true,
+            "fuzzy_distance": 1
+        }"#;
+        let config: SearchConfig = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(config.backend, "tantivy");
+        assert_eq!(config.index_path, "/custom/path");
+        assert!(config.rebuild_on_startup);
+        assert_eq!(config.snippet_size, 150);
+        assert!(config.fuzzy_search);
+        assert_eq!(config.fuzzy_distance, 1);
+    }
+
+    #[test]
+    fn test_search_config_index_path_absolute() {
+        let config = SearchConfig {
+            backend: "tantivy".to_string(),
+            index_path: "/absolute/index".to_string(),
+            rebuild_on_startup: false,
+            snippet_size: 200,
+            fuzzy_search: false,
+            fuzzy_distance: 2,
+        };
+
+        let result = config.index_path();
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/absolute/index"));
+    }
+
+    #[test]
+    fn test_search_config_index_path_relative() {
+        let config = SearchConfig {
+            backend: "tantivy".to_string(),
+            index_path: "relative/index".to_string(),
+            rebuild_on_startup: false,
+            snippet_size: 200,
+            fuzzy_search: false,
+            fuzzy_distance: 2,
+        };
+
+        let result = config.index_path();
+        // Should either resolve to absolute or error with skill root message
+        match result {
+            Ok(path) => assert!(
+                path.is_absolute(),
+                "Relative path should resolve to absolute"
+            ),
+            Err(e) => assert!(
+                e.to_string().contains("skill root") || e.to_string().contains("Cannot resolve")
+            ),
+        }
     }
 }

@@ -56,3 +56,27 @@ acef-sanchez = "[2012] Acef-Sanchez - An Introduction to Group Theory with appli
 
 [logging]
 level = "info"
+
+[search]
+# Backend selection: "simple" or "tantivy"
+# - "simple": Linear scan (suitable for <500 concepts, no index needed)
+# - "tantivy": Full-text search engine (recommended for 500+ concepts)
+backend = "simple"
+
+# Tantivy index storage (relative to skill root or absolute path)
+index_path = ".tantivy-index"
+
+# Rebuild index on startup (useful for development)
+# Set to true for first run with tantivy, then false for subsequent runs
+rebuild_on_startup = false
+
+# Snippet context size in characters for search results
+snippet_size = 200
+
+# Enable fuzzy search (typo tolerance)
+# When enabled, "haromny" will find "harmony"
+fuzzy_search = false
+
+# Maximum edit distance for fuzzy matching (1-2)
+# Higher values are more permissive but slower
+fuzzy_distance = 2
