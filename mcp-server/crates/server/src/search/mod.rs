@@ -6,7 +6,9 @@
 mod builder;
 mod document;
 mod indexer;
+mod query;
 mod schema;
+mod tantivy_search;
 
 // Public exports for Phase 5+ (index lifecycle)
 #[allow(unused_imports)]
@@ -17,4 +19,8 @@ pub use document::SearchDocument;
 #[allow(unused_imports)]
 pub(crate) use indexer::Indexer;
 #[allow(unused_imports)]
+pub(crate) use query::QueryBuilder;
+#[allow(unused_imports)]
 pub(crate) use schema::SearchSchema;
+#[allow(unused_imports)]
+pub(crate) use tantivy_search::TantivySearch;
