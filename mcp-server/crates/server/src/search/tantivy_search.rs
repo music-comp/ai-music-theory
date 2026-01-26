@@ -3,6 +3,7 @@
 //! This module provides the TantivySearch backend for executing full-text searches
 //! using the Tantivy index.
 
+use async_trait::async_trait;
 use std::path::Path;
 use tantivy::collector::TopDocs;
 use tantivy::schema::Value;
@@ -10,7 +11,7 @@ use tantivy::{Index, ReloadPolicy, TantivyDocument};
 
 use crate::config::SearchConfig;
 use crate::error::{Error, Result};
-use crate::search::{QueryBuilder, SearchSchema};
+use crate::search::{backend::SearchBackend, QueryBuilder, SearchSchema};
 use crate::tools::search::{SearchConceptsParams, SearchResult};
 
 /// Tantivy search backend.
@@ -76,7 +77,10 @@ impl TantivySearch {
             config,
         })
     }
+}
 
+#[async_trait]
+impl SearchBackend for TantivySearch {
     /// Execute a search query.
     ///
     /// Builds a weighted multi-field query, executes it against the index,
@@ -96,8 +100,7 @@ impl TantivySearch {
     /// - Query building fails
     /// - Search execution fails
     /// - Document retrieval fails
-    #[allow(dead_code)]
-    pub fn search(&self, params: &SearchConceptsParams) -> Result<Vec<SearchResult>> {
+    async fn search(&self, params: &SearchConceptsParams) -> Result<Vec<SearchResult>> {
         // Reload reader to see latest commits
         self.reader
             .reload()
@@ -150,7 +153,9 @@ impl TantivySearch {
 
         Ok(results)
     }
+}
 
+impl TantivySearch {
     /// Generate a snippet from a document for a query.
     ///
     /// Searches for the query in description first (more relevant), then content.
@@ -347,8 +352,8 @@ mod tests {
         assert!(result.is_err());
     }
 
-    #[test]
-    fn test_tantivy_search_basic_query() {
+    #[tokio::test]
+    async fn test_tantivy_search_basic_query() {
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         setup_test_index(&temp_dir).expect("Failed to setup index");
 
@@ -369,7 +374,7 @@ mod tests {
             limit: 10,
         };
 
-        let results = backend.search(&params).expect("Search failed");
+        let results = backend.search(&params).await.expect("Search failed");
         eprintln!("Found {} results", results.len());
         if !results.is_empty() {
             eprintln!("First result: {:?}", results[0].title);
@@ -380,8 +385,8 @@ mod tests {
         assert!(results.is_empty() || results[0].title.contains("Triad"));
     }
 
-    #[test]
-    fn test_tantivy_search_executes() {
+    #[tokio::test]
+    async fn test_tantivy_search_executes() {
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         setup_test_index(&temp_dir).expect("Failed to setup index");
 
@@ -407,13 +412,13 @@ mod tests {
             };
 
             // Just verify search executes without error
-            let result = backend.search(&params);
+            let result = backend.search(&params).await;
             assert!(result.is_ok(), "Search for '{}' should not error", query_str);
         }
     }
 
-    #[test]
-    fn test_tantivy_search_with_limit() {
+    #[tokio::test]
+    async fn test_tantivy_search_with_limit() {
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         setup_test_index(&temp_dir).expect("Failed to setup index");
 
@@ -434,12 +439,12 @@ mod tests {
             limit: 1,
         };
 
-        let results = backend.search(&params).expect("Search failed");
+        let results = backend.search(&params).await.expect("Search failed");
         assert!(results.len() <= 1);
     }
 
-    #[test]
-    fn test_tantivy_search_no_results() {
+    #[tokio::test]
+    async fn test_tantivy_search_no_results() {
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         setup_test_index(&temp_dir).expect("Failed to setup index");
 
@@ -460,7 +465,7 @@ mod tests {
             limit: 10,
         };
 
-        let results = backend.search(&params).expect("Search failed");
+        let results = backend.search(&params).await.expect("Search failed");
         assert!(results.is_empty());
     }
 

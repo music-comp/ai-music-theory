@@ -853,6 +853,7 @@ version = "0.1.0"
 name = "music-theory-mcp"
 version = "0.1.0"
 dependencies = [
+ "async-trait",
  "async-walkdir",
  "confyg",
  "dirs 5.0.1",

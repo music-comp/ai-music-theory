@@ -19,6 +19,7 @@ rmcp = { version = "0.14", features = ["server", "transport-io"] }
 
 # Async runtime
 tokio = { version = "1", features = ["full", "fs", "sync"] }
+async-trait = "0.1"
 async-walkdir = "1"
 futures = "0.3"
 

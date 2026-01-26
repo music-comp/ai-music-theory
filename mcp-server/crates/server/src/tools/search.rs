@@ -2,9 +2,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::config::Config;
 use crate::error::Result;
-use crate::metadata::extract_concept_metadata;
-use crate::search::SearchDocument;
-use crate::util::files::{find_all_files, FindOptions};
+use crate::search::create_search_backend;
 
 /// A search result item.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -40,64 +38,19 @@ fn default_limit() -> usize {
 }
 
 /// Search across concept cards for a query.
+///
+/// Uses the configured search backend (simple or tantivy).
 pub async fn search_concepts(
     config: &Config,
     params: SearchConceptsParams,
 ) -> Result<SearchConceptsResponse> {
-    let concept_cards_path = config.paths.concept_cards_path()?;
+    // Create search backend based on configuration
+    let backend = create_search_backend(config).await?;
 
-    if !crate::util::files::exists(&concept_cards_path).await {
-        return Ok(SearchConceptsResponse {
-            results: Vec::new(),
-            total: 0,
-            query: params.query.clone(),
-        });
-    }
-
-    let mut results = Vec::new();
-
-    // Find all markdown files
-    let files = find_all_files(&concept_cards_path, FindOptions::markdown()).await?;
-
-    for file_info in files {
-        let path = &file_info.path;
-
-        // Extract metadata
-        if let Ok(meta) = extract_concept_metadata(&concept_cards_path, path).await {
-            // Build SearchDocument
-            if let Ok(doc) = SearchDocument::from_metadata(meta, path).await {
-                // Check if document matches query
-                if doc.matches_query(&params.query) {
-                    // Extract snippet and calculate relevance
-                    let snippet = doc.extract_snippet(&params.query, 200);
-                    let relevance = doc.relevance(&params.query);
-
-                    results.push(SearchResult {
-                        id: doc.id,
-                        title: doc.title,
-                        category: doc.category,
-                        source: doc.source,
-                        path: doc.path,
-                        snippet,
-                        relevance,
-                    });
-                }
-            }
-        }
-    }
-
-    // Sort by relevance (highest first)
-    // Safety: Use unwrap_or to handle potential NaN values gracefully
-    results.sort_by(|a, b| {
-        b.relevance
-            .partial_cmp(&a.relevance)
-            .unwrap_or(std::cmp::Ordering::Equal)
-    });
+    // Execute search (polymorphic dispatch)
+    let results = backend.search(&params).await?;
 
     let total = results.len();
-
-    // Apply limit
-    results.truncate(params.limit);
 
     Ok(SearchConceptsResponse {
         results,

@@ -14,6 +14,7 @@ path = "src/main.rs"
 [dependencies]
 rmcp = { workspace = true }
 tokio = { workspace = true }
+async-trait = { workspace = true }
 confyg = { workspace = true }
 twyg = { workspace = true }
 log = { workspace = true }

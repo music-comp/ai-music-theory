@@ -71,7 +71,7 @@ impl PathsConfig {
 }
 
 /// Source file locations configuration.
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Deserialize, Default)]
 pub struct SourcesConfig {
     #[serde(default)]
     pub oxford: SourceCategory,
