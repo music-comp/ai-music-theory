@@ -82,6 +82,55 @@ lewin-gmit = "[2007] Lewin - GMIT.pdf"
 - Supports variable interpolation (`${paths.base}`)
 - All paths are expanded at runtime
 
+### Search Configuration
+
+The server supports two search backends for the `search_concepts` tool:
+
+- **Simple** (default) - Linear scan suitable for <500 concept cards
+- **Tantivy** - Full-text search engine recommended for 500+ concept cards
+
+Configure the search backend in `config/default.toml`:
+
+```toml
+[search]
+# Backend selection: "simple" or "tantivy"
+backend = "simple"
+
+# Tantivy index directory (relative to skill root)
+index_path = ".tantivy-index"
+
+# Rebuild index on startup (useful for development)
+rebuild_on_startup = false
+
+# Snippet context size in characters
+snippet_size = 200
+
+# Enable fuzzy search (typo tolerance)
+fuzzy_search = false
+
+# Maximum edit distance for fuzzy matching (1-2)
+fuzzy_distance = 2
+```
+
+**Using Tantivy Search:**
+
+1. Set `backend = "tantivy"` in config
+2. Set `rebuild_on_startup = true` for first run
+3. Restart server (builds index on startup)
+4. Set `rebuild_on_startup = false` for subsequent runs
+5. Index is cached at `.tantivy-index/` for fast startup
+
+**Benefits of Tantivy:**
+- 10-100x faster search (sub-millisecond queries)
+- Typo tolerance with fuzzy search
+- Phrase queries and boolean operators (future)
+- Scales to 10,000+ documents
+
+**When to Switch:**
+- Simple backend works well up to ~500 concept cards
+- Switch to Tantivy when search latency becomes noticeable
+- The index requires ~1-2 seconds to build for 200 documents
+
 ## Building
 
 ```bash

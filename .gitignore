@@ -4,4 +4,5 @@
 /mcp-server/target
 /mcp-server/bin
 /mcp-server/.claude/
+/mcp-server/.tantivy-index
 /assets/images/logo/drafts/
