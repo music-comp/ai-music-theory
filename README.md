@@ -1,13 +1,18 @@
 # AI Music Theory Skill
 
-A comprehensive music theory knowledge base designed for AI assistants, covering Western music theory from fundamentals through advanced mathematical and transformational approaches.
+[![][build-badge]][build]
+[![][tag-badge]][tag]
+
+[![][logo]][logo-large]
+
+*A comprehensive music theory knowledge base designed for AI assistants, covering Western music theory from fundamentals through advanced mathematical and transformational approaches*
 
 ## Overview
 
 This skill provides structured access to music theory concepts spanning:
 
 - **Fundamentals** — notation, scales, intervals, chords, rhythm
-- **Harmony** — diatonic progressions, tonicization, modulation  
+- **Harmony** — diatonic progressions, tonicization, modulation
 - **Counterpoint** — species counterpoint, voice leading, fugue
 - **Form** — phrase structure, binary, ternary, sonata, rondo
 - **Chromaticism** — modal mixture, augmented sixths, neo-Riemannian theory
@@ -81,7 +86,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 {
   "mcpServers": {
     "music-theory": {
-      "command": "/path/to/ai-music-theory/mcp-server/target/release/music-theory-mcp"
+      "command": "/path/to/ai-music-theory/mcp-server/bin/music-theory-mcp"
     }
   }
 }
@@ -120,6 +125,13 @@ The skill uses consistent notation (see `CONVENTIONS.md`):
 
 Content derived from Open Music Theory is CC-BY-SA. Original concept cards and tooling are available under the same license.
 
-## Contributing
+MCP server is covered by the MIT license.
 
-This is an active project focused on building comprehensive AI-accessible music theory resources. The bootstrapping approach means the skill is used to help build more of itself — Claude assists in creating concept cards, identifying gaps, and ensuring cross-references are accurate.
+[//]: ---Named-Links---
+
+[logo]: https://raw.githubusercontent.com/music-comp/ai-music-theory/main/assets/images/logo/v1-y250.png
+[logo-large]: https://raw.githubusercontent.com/music-comp/ai-music-theory/main/assets/images/logo/v1.png
+[build]: https://github.com/music-comp/ai-music-theory/actions/workflows/cicd.yml
+[build-badge]: https://github.com/music-comp/ai-music-theory/actions/workflows/cicd.yml/badge.svg
+[tag-badge]: https://img.shields.io/github/tag/music-comp/ai-music-theory.svg
+[tag]: https://github.com/music-comp/ai-music-theory/tags
