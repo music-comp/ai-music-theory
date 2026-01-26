@@ -270,7 +270,10 @@ mod tests {
         let config = Config::load().expect("Config should load");
         let content = get_resource(&config, URI_SCOPE).expect("Should get scope");
         assert!(!content.is_empty(), "Scope resource should have content");
-        assert!(content.starts_with('#'), "Scope should be valid markdown with heading");
+        assert!(
+            content.starts_with('#'),
+            "Scope should be valid markdown with heading"
+        );
     }
 
     #[test]
@@ -278,14 +281,21 @@ mod tests {
         let config = Config::load().expect("Config should load");
         let content = get_resource(&config, URI_SOURCES).expect("Should get sources");
         assert!(!content.is_empty(), "Sources resource should have content");
-        assert!(content.starts_with('#'), "Sources should be valid markdown with heading");
+        assert!(
+            content.starts_with('#'),
+            "Sources should be valid markdown with heading"
+        );
     }
 
     #[test]
     fn test_get_resource_index() {
         let config = Config::load().expect("Config should load");
         let content = get_resource(&config, URI_INDEX).expect("Should get index");
-        assert!(content.contains("Skill Index") || content.contains("Index") || content.contains("Concepts"));
+        assert!(
+            content.contains("Skill Index")
+                || content.contains("Index")
+                || content.contains("Concepts")
+        );
     }
 
     #[test]

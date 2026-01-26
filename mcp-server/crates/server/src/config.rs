@@ -141,10 +141,12 @@ impl Config {
     pub fn load() -> Result<Self> {
         use crate::util::paths;
 
-        let config_dir = paths::config_dir()
-            .ok_or_else(|| Error::config(
-                format!("Could not locate config directory.\n{}", paths::debug_paths())
-            ))?;
+        let config_dir = paths::config_dir().ok_or_else(|| {
+            Error::config(format!(
+                "Could not locate config directory.\n{}",
+                paths::debug_paths()
+            ))
+        })?;
 
         let mut opts = conf::Options::default();
         opts.add_path(config_dir.to_string_lossy().as_ref());
@@ -175,11 +177,13 @@ fn expand_path(path_str: &str) -> Result<PathBuf> {
 
     // If the path is relative, resolve it against skill_root()
     if path.is_relative() {
-        let skill_root = paths::skill_root()
-            .ok_or_else(|| Error::config(
-                format!("Cannot resolve relative path '{}': skill root not found.\n{}",
-                    path_str, paths::debug_paths())
-            ))?;
+        let skill_root = paths::skill_root().ok_or_else(|| {
+            Error::config(format!(
+                "Cannot resolve relative path '{}': skill root not found.\n{}",
+                path_str,
+                paths::debug_paths()
+            ))
+        })?;
         Ok(skill_root.join(path))
     } else {
         Ok(path)
@@ -245,8 +249,13 @@ mod tests {
         let result = expand_path("test/path");
         // Should either succeed with an absolute path or fail with skill root error
         match result {
-            Ok(path) => assert!(path.is_absolute(), "Relative path should be resolved to absolute"),
-            Err(e) => assert!(e.to_string().contains("skill root") || e.to_string().contains("Cannot resolve")),
+            Ok(path) => assert!(
+                path.is_absolute(),
+                "Relative path should be resolved to absolute"
+            ),
+            Err(e) => assert!(
+                e.to_string().contains("skill root") || e.to_string().contains("Cannot resolve")
+            ),
         }
     }
 
@@ -255,8 +264,13 @@ mod tests {
         // "." should be resolved against skill_root
         let result = expand_path(".");
         match result {
-            Ok(path) => assert!(path.is_absolute(), "Dot path should be resolved to absolute"),
-            Err(e) => assert!(e.to_string().contains("skill root") || e.to_string().contains("Cannot resolve")),
+            Ok(path) => assert!(
+                path.is_absolute(),
+                "Dot path should be resolved to absolute"
+            ),
+            Err(e) => assert!(
+                e.to_string().contains("skill root") || e.to_string().contains("Cannot resolve")
+            ),
         }
     }
 

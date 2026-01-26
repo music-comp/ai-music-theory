@@ -325,7 +325,9 @@ mod tests {
             .await
             .unwrap();
 
-        let found = find_guide_file(&guides_dir, "advanced-harmony").await.unwrap();
+        let found = find_guide_file(&guides_dir, "advanced-harmony")
+            .await
+            .unwrap();
         assert!(found.ends_with("README.md"));
     }
 

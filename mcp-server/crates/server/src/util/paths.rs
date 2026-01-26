@@ -223,16 +223,28 @@ mod tests {
     fn test_expand_tilde_relative_without_tilde() {
         let original = PathBuf::from("relative/path");
         let expanded = expand_tilde(&original);
-        assert_eq!(original, expanded, "Relative path without tilde should not change");
+        assert_eq!(
+            original, expanded,
+            "Relative path without tilde should not change"
+        );
     }
 
     #[test]
     fn test_debug_paths_does_not_panic() {
         let debug_output = debug_paths();
         assert!(!debug_output.is_empty(), "Debug output should not be empty");
-        assert!(debug_output.contains("Binary path:"), "Should contain binary path");
-        assert!(debug_output.contains("Config dir:"), "Should contain config dir");
-        assert!(debug_output.contains("Skill root:"), "Should contain skill root");
+        assert!(
+            debug_output.contains("Binary path:"),
+            "Should contain binary path"
+        );
+        assert!(
+            debug_output.contains("Config dir:"),
+            "Should contain config dir"
+        );
+        assert!(
+            debug_output.contains("Skill root:"),
+            "Should contain skill root"
+        );
     }
 
     #[test]
@@ -280,7 +292,10 @@ mod tests {
     fn test_expand_tilde_tilde_with_slash() {
         let path = expand_tilde("~/");
         if let Some(home) = dirs::home_dir() {
-            assert!(path.starts_with(&home), "~/ should expand to home directory");
+            assert!(
+                path.starts_with(&home),
+                "~/ should expand to home directory"
+            );
         }
     }
 

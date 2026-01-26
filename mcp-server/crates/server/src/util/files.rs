@@ -331,7 +331,9 @@ mod tests {
     #[tokio::test]
     async fn test_find_file_by_id_not_found() {
         let temp = TempDir::new().unwrap();
-        fs::write(temp.path().join("other.md"), "content").await.unwrap();
+        fs::write(temp.path().join("other.md"), "content")
+            .await
+            .unwrap();
 
         let result = find_file_by_id(temp.path(), "nonexistent", FindOptions::markdown()).await;
         assert!(result.is_err());
@@ -368,7 +370,11 @@ mod tests {
         let found = find_file_by_id(
             temp.path(),
             "harmony",
-            FindOptions::markdown().with_patterns(vec!["{id}.md", "{id}/README.md", "{id}/index.md"]),
+            FindOptions::markdown().with_patterns(vec![
+                "{id}.md",
+                "{id}/README.md",
+                "{id}/index.md",
+            ]),
         )
         .await
         .unwrap();
@@ -450,7 +456,9 @@ mod tests {
         let temp = TempDir::new().unwrap();
 
         // Root level
-        fs::write(temp.path().join("root.md"), "root").await.unwrap();
+        fs::write(temp.path().join("root.md"), "root")
+            .await
+            .unwrap();
 
         // Nested
         let subdir = temp.path().join("subdir");
@@ -469,7 +477,9 @@ mod tests {
         let temp = TempDir::new().unwrap();
 
         // Create nested structure
-        fs::write(temp.path().join("root.md"), "root").await.unwrap();
+        fs::write(temp.path().join("root.md"), "root")
+            .await
+            .unwrap();
 
         let level1 = temp.path().join("level1");
         fs::create_dir(&level1).await.unwrap();
@@ -491,9 +501,15 @@ mod tests {
     #[tokio::test]
     async fn test_find_all_files_extension_filter() {
         let temp = TempDir::new().unwrap();
-        fs::write(temp.path().join("doc.md"), "markdown").await.unwrap();
-        fs::write(temp.path().join("note.txt"), "text").await.unwrap();
-        fs::write(temp.path().join("data.json"), "json").await.unwrap();
+        fs::write(temp.path().join("doc.md"), "markdown")
+            .await
+            .unwrap();
+        fs::write(temp.path().join("note.txt"), "text")
+            .await
+            .unwrap();
+        fs::write(temp.path().join("data.json"), "json")
+            .await
+            .unwrap();
 
         let files = find_all_files(temp.path(), FindOptions::markdown())
             .await
@@ -545,7 +561,9 @@ mod tests {
         fs::create_dir(temp.path().join("dir2")).await.unwrap();
 
         // Create files (should be ignored)
-        fs::write(temp.path().join("file1.txt"), "f1").await.unwrap();
+        fs::write(temp.path().join("file1.txt"), "f1")
+            .await
+            .unwrap();
         fs::write(temp.path().join("file2.md"), "f2").await.unwrap();
 
         let dirs = list_subdirectories(temp.path()).await.unwrap();

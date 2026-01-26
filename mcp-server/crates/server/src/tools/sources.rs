@@ -276,7 +276,10 @@ mod tests {
     #[test]
     fn test_detect_format_markdown_default() {
         // Files without recognized extensions default to Markdown
-        assert!(matches!(detect_format("readme.txt"), SourceFormat::Markdown));
+        assert!(matches!(
+            detect_format("readme.txt"),
+            SourceFormat::Markdown
+        ));
         assert!(matches!(detect_format("notes"), SourceFormat::Markdown));
     }
 
@@ -320,7 +323,10 @@ mod tests {
 
     #[test]
     fn test_humanize_source_id_multiple_dashes() {
-        assert_eq!(humanize_source_id("one-two-three-four"), "One Two Three Four");
+        assert_eq!(
+            humanize_source_id("one-two-three-four"),
+            "One Two Three Four"
+        );
     }
 
     #[test]
@@ -358,7 +364,11 @@ mod tests {
             Err(e) => {
                 // Should be "File ID not found" error, not category error
                 let msg = e.to_string();
-                assert!(msg.contains("File ID") || msg.contains("not found") || msg.contains("Invalid path"));
+                assert!(
+                    msg.contains("File ID")
+                        || msg.contains("not found")
+                        || msg.contains("Invalid path")
+                );
             }
         }
     }
@@ -370,10 +380,16 @@ mod tests {
 
         let result = get_source_pdf_path(&config, "general-straus-post-tonal");
         match result {
-            Ok(path) => assert!(path.to_string_lossy().contains("Straus") || path.to_string_lossy().len() > 0),
+            Ok(path) => assert!(
+                path.to_string_lossy().contains("Straus") || path.to_string_lossy().len() > 0
+            ),
             Err(e) => {
                 let msg = e.to_string();
-                assert!(msg.contains("File ID") || msg.contains("not found") || msg.contains("Invalid path"));
+                assert!(
+                    msg.contains("File ID")
+                        || msg.contains("not found")
+                        || msg.contains("Invalid path")
+                );
             }
         }
     }
@@ -388,7 +404,11 @@ mod tests {
             Ok(path) => assert!(path.to_string_lossy().len() > 0),
             Err(e) => {
                 let msg = e.to_string();
-                assert!(msg.contains("File ID") || msg.contains("not found") || msg.contains("Invalid path"));
+                assert!(
+                    msg.contains("File ID")
+                        || msg.contains("not found")
+                        || msg.contains("Invalid path")
+                );
             }
         }
     }
@@ -429,16 +449,14 @@ mod tests {
     #[test]
     fn test_list_sources_response_serialization() {
         let response = ListSourcesResponse {
-            sources: vec![
-                SourceInfo {
-                    id: "test1".to_string(),
-                    title: "Test 1".to_string(),
-                    format: SourceFormat::Pdf,
-                    path: "/path1".to_string(),
-                    chapters: None,
-                    status: SourceStatus::NotConverted,
-                },
-            ],
+            sources: vec![SourceInfo {
+                id: "test1".to_string(),
+                title: "Test 1".to_string(),
+                format: SourceFormat::Pdf,
+                path: "/path1".to_string(),
+                chapters: None,
+                status: SourceStatus::NotConverted,
+            }],
         };
 
         let json = serde_json::to_string(&response).expect("Should serialize");
@@ -469,8 +487,12 @@ mod tests {
         // Create a source directory with markdown files
         let source_dir = temp.path().join("test-source");
         fs::create_dir(&source_dir).await.unwrap();
-        fs::write(source_dir.join("chapter-1.md"), "# Chapter 1").await.unwrap();
-        fs::write(source_dir.join("chapter-2.md"), "# Chapter 2").await.unwrap();
+        fs::write(source_dir.join("chapter-1.md"), "# Chapter 1")
+            .await
+            .unwrap();
+        fs::write(source_dir.join("chapter-2.md"), "# Chapter 2")
+            .await
+            .unwrap();
 
         let sources = scan_converted_sources(temp.path()).await.unwrap();
 
@@ -492,11 +514,15 @@ mod tests {
         // Create multiple source directories
         let source1 = temp.path().join("source-one");
         fs::create_dir(&source1).await.unwrap();
-        fs::write(source1.join("intro.md"), "# Intro").await.unwrap();
+        fs::write(source1.join("intro.md"), "# Intro")
+            .await
+            .unwrap();
 
         let source2 = temp.path().join("source-two");
         fs::create_dir(&source2).await.unwrap();
-        fs::write(source2.join("chapter.md"), "# Chapter").await.unwrap();
+        fs::write(source2.join("chapter.md"), "# Chapter")
+            .await
+            .unwrap();
 
         let sources = scan_converted_sources(temp.path()).await.unwrap();
 
