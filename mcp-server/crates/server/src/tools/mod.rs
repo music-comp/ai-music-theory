@@ -7,7 +7,7 @@ pub mod sources;
 // The rmcp macro system uses these via qualified paths (tools::sources::list_sources, etc.),
 // so they appear unused to clippy but are actually invoked through the macro-generated code.
 #[allow(unused_imports)]
-pub use concepts::{get_concept, list_concepts};
+pub use concepts::{get_concept, list_categories, list_concepts};
 #[allow(unused_imports)]
 pub use guides::{get_guide, list_guides};
 #[allow(unused_imports)]

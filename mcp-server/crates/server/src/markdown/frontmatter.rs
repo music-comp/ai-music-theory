@@ -20,6 +20,18 @@ pub struct Frontmatter {
     pub author: Option<String>,
     /// Publication or modification date
     pub date: Option<String>,
+
+    // Music theory specific fields
+    /// Canonical concept name
+    pub concept: Option<String>,
+    /// Thematic category (fundamentals, harmony, voice-leading, etc.)
+    pub category: Option<String>,
+    /// Source text name (e.g., "Open Music Theory")
+    pub source: Option<String>,
+    /// Chapter or section reference
+    pub chapter: Option<String>,
+    /// Part number
+    pub part: Option<u32>,
 }
 
 /// Extract YAML frontmatter from markdown content.
@@ -96,7 +108,6 @@ pub fn extract_frontmatter(content: &str) -> Result<(Option<Frontmatter>, &str)>
 /// # Returns
 ///
 /// Returns the markdown content without the frontmatter block.
-#[allow(dead_code)]
 pub fn strip_frontmatter(content: &str) -> &str {
     match extract_frontmatter(content) {
         Ok((_, body)) => body,
@@ -197,5 +208,60 @@ Content here"#;
         assert!(fm.tags.is_empty());
         assert_eq!(fm.author, None);
         assert_eq!(fm.date, None);
+        assert_eq!(fm.concept, None);
+        assert_eq!(fm.category, None);
+        assert_eq!(fm.source, None);
+        assert_eq!(fm.chapter, None);
+        assert_eq!(fm.part, None);
+    }
+
+    #[test]
+    fn test_extract_frontmatter_music_theory_fields() {
+        let content = r#"---
+title: "Accidental"
+description: "Musical symbol that alters pitch"
+category: "fundamentals"
+concept: "Accidental"
+source: "Open Music Theory"
+chapter: "Half Steps, Whole Steps, and Accidentals"
+part: 1
+tags: ["pitch", "notation"]
+---
+# Accidental
+
+Content here"#;
+
+        let (fm, body) = extract_frontmatter(content).unwrap();
+        assert!(fm.is_some());
+        let fm = fm.unwrap();
+        assert_eq!(fm.title, Some("Accidental".to_string()));
+        assert_eq!(fm.category, Some("fundamentals".to_string()));
+        assert_eq!(fm.concept, Some("Accidental".to_string()));
+        assert_eq!(fm.source, Some("Open Music Theory".to_string()));
+        assert_eq!(
+            fm.chapter,
+            Some("Half Steps, Whole Steps, and Accidentals".to_string())
+        );
+        assert_eq!(fm.part, Some(1));
+        assert!(body.contains("# Accidental"));
+    }
+
+    #[test]
+    fn test_extract_frontmatter_partial_music_theory_fields() {
+        let content = r#"---
+title: "Test"
+category: "harmony"
+---
+Body"#;
+
+        let (fm, _body) = extract_frontmatter(content).unwrap();
+        assert!(fm.is_some());
+        let fm = fm.unwrap();
+        assert_eq!(fm.title, Some("Test".to_string()));
+        assert_eq!(fm.category, Some("harmony".to_string()));
+        assert_eq!(fm.concept, None);
+        assert_eq!(fm.source, None);
+        assert_eq!(fm.chapter, None);
+        assert_eq!(fm.part, None);
     }
 }

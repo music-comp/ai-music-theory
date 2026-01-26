@@ -1,7 +1,9 @@
 mod config;
 mod error;
 mod markdown;
+mod metadata;
 mod resources;
+mod search;
 mod server;
 mod tools;
 mod util;

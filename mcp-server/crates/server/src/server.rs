@@ -170,6 +170,17 @@ impl MusicTheoryServer {
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
 
+    #[tool(description = "List all distinct concept categories with counts")]
+    async fn list_categories(&self) -> Result<CallToolResult, ErrorData> {
+        let response = tools::concepts::list_categories(&self.config)
+            .await
+            .map_err(|e| e.to_mcp_error("Error listing categories"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
     #[tool(description = "Search concept cards with full-text search and relevance ranking")]
     async fn search_concepts(
         &self,
