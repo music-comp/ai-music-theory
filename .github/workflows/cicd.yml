@@ -84,7 +84,7 @@ jobs:
       if: matrix.mode == 'debug'
       run: |
         cd mcp-server
-        make cicd-lint
+        make lint
 
     - name: Build docs
       if: matrix.mode == 'debug'
