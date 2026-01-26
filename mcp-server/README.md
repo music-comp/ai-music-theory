@@ -56,7 +56,7 @@ For complete step-by-step instructions including configuration, verification, an
 
 ✅ **Fully Functional** - All core features implemented and working
 
-- 8 MCP tools registered and operational
+- 9 MCP tools registered and operational
 - Beautiful structured logging with twyg
 - Configuration management with confyg
 - All tests passing

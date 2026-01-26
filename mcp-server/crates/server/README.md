@@ -12,11 +12,12 @@ A Model Context Protocol (MCP) server that provides access to comprehensive musi
 - ✅ **Configuration management** - confyg for TOML + ENV with path expansion
 - ✅ **Logging** - twyg for beautiful colored output
 - ✅ **Error handling** - Canonical pattern with backtraces (EH-17)
-- ✅ **8 Tools registered and working**:
+- ✅ **9 Tools registered and working**:
   - `list_sources` - List all source materials with metadata
   - `get_source_chapter` - Retrieve specific chapters
   - `get_source_pdf_path` - Get filesystem paths to PDFs/EPUBs
   - `list_concepts` - List concept cards with optional filtering
+  - `list_categories` - List all distinct concept categories with counts
   - `get_concept` - Retrieve specific concepts
   - `search_concepts` - Full-text search with ranking
   - `list_guides` - List topic guides
@@ -26,7 +27,7 @@ A Model Context Protocol (MCP) server that provides access to comprehensive musi
   - `skill://scope` - Topics & objectives
   - `skill://sources` - Bibliography
   - `skill://index` - Complete index
-- ✅ **Test suite** - 13/13 tests passing
+- ✅ **Test suite** - 238/238 tests passing
 - ✅ **MCP Server** - Full ServerHandler with tool routing via macros
 - ✅ **Stdio transport** - Server verified working
 
@@ -162,8 +163,9 @@ Once Claude Desktop restarts:
 
 1. Open a new conversation
 2. Look for the server connection indicator (usually in the UI)
-3. Try using one of the 8 available tools:
+3. Try using one of the 9 available tools:
    - `list_concepts` - List all concept cards
+   - `list_categories` - Browse concepts by category
    - `search_concepts` - Search for specific topics
    - `list_guides` - Browse topic guides
    - `get_source_chapter` - Access source material chapters
@@ -266,7 +268,7 @@ The server provides access to music theory texts including:
 
 1. **Integration Testing**
    - Test with Claude Desktop and other MCP clients
-   - Verify all 8 tools work with real data
+   - Verify all 9 tools work with real data
    - Document usage examples
 
 2. **Resource Registration**
