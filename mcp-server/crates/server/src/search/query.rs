@@ -5,6 +5,7 @@
 
 use tantivy::query::{BooleanQuery, BoostQuery, FuzzyTermQuery, Occur, Query, TermQuery};
 use tantivy::schema::IndexRecordOption;
+use tantivy::tokenizer::{LowerCaser, SimpleTokenizer, Stemmer, TextAnalyzer};
 use tantivy::Term;
 
 use crate::config::SearchConfig;
@@ -130,10 +131,24 @@ impl<'a> QueryBuilder<'a> {
             return Err(Error::search_error("No terms provided".to_string()));
         }
 
-        let query: Box<dyn Query> = if terms.len() == 1 {
+        // Create tokenizer (same as index: lowercase + stem)
+        let mut tokenizer = TextAnalyzer::builder(SimpleTokenizer::default())
+            .filter(LowerCaser)
+            .filter(Stemmer::default())
+            .build();
+
+        // Tokenize all terms
+        let mut tokenized_terms: Vec<String> = Vec::new();
+        for term_str in terms {
+            let mut token_stream = tokenizer.token_stream(term_str);
+            while let Some(token) = token_stream.next() {
+                tokenized_terms.push(token.text.to_string());
+            }
+        }
+
+        let query: Box<dyn Query> = if tokenized_terms.len() == 1 {
             // Single term: use TermQuery or FuzzyTermQuery
-            let term_str = terms[0].to_lowercase();
-            let term = Term::from_field_text(field, &term_str);
+            let term = Term::from_field_text(field, &tokenized_terms[0]);
 
             if self.fuzzy_enabled {
                 Box::new(FuzzyTermQuery::new(term, self.fuzzy_distance, true))
@@ -144,9 +159,8 @@ impl<'a> QueryBuilder<'a> {
             // Multiple terms: use BooleanQuery with Should (OR)
             let mut term_clauses: Vec<(Occur, Box<dyn Query>)> = Vec::new();
 
-            for term_str in terms {
-                let term_lower = term_str.to_lowercase();
-                let term = Term::from_field_text(field, &term_lower);
+            for tokenized_term in tokenized_terms {
+                let term = Term::from_field_text(field, &tokenized_term);
 
                 let term_query: Box<dyn Query> = if self.fuzzy_enabled {
                     Box::new(FuzzyTermQuery::new(term, self.fuzzy_distance, true))

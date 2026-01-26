@@ -20,7 +20,7 @@ pub use document::SearchDocument;
 
 // Internal modules used by search backends
 #[allow(unused_imports)]
-pub(crate) use indexer::Indexer;
+pub use indexer::Indexer;
 #[allow(unused_imports)]
 pub(crate) use query::QueryBuilder;
 #[allow(unused_imports)]
