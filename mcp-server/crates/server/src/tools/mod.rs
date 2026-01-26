@@ -1,5 +1,6 @@
 pub mod concepts;
 pub mod guides;
+pub mod health;
 pub mod search;
 pub mod sources;
 
@@ -10,6 +11,8 @@ pub mod sources;
 pub use concepts::{get_concept, list_categories, list_concepts};
 #[allow(unused_imports)]
 pub use guides::{get_guide, list_guides};
+#[allow(unused_imports)]
+pub use health::get_health;
 #[allow(unused_imports)]
 pub use search::search_concepts;
 #[allow(unused_imports)]

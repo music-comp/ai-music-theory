@@ -222,6 +222,17 @@ impl MusicTheoryServer {
 
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
+
+    #[tool(description = "Get server health and search backend status")]
+    async fn health(&self) -> Result<CallToolResult, ErrorData> {
+        let response = tools::health::get_health(&self.state)
+            .await
+            .map_err(|e| e.to_mcp_error("Error getting health status"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
 }
 
 #[tool_handler]

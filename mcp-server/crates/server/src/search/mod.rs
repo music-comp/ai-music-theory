@@ -11,7 +11,7 @@ mod simple_search;
 #[cfg(feature = "fts")]
 mod builder;
 #[cfg(feature = "fts")]
-mod freshness;
+pub(crate) mod freshness;
 #[cfg(feature = "fts")]
 mod indexer;
 #[cfg(feature = "fts")]

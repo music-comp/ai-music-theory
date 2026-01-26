@@ -392,3 +392,72 @@ async fn test_search_tool_integration() {
     assert!(response.total > 0, "Total should be greater than 0");
     assert_eq!(response.backend, "tantivy", "Should use tantivy backend");
 }
+
+#[tokio::test]
+async fn test_health_tool_with_fts_ready() {
+    use music_theory_mcp::tools::health::get_health;
+
+    let temp_dir = TempDir::new().expect("Failed to create temp dir");
+    let config = create_test_config(&temp_dir, "tantivy", false);
+
+    // Set up test data
+    setup_test_data(&temp_dir);
+
+    // Build index
+    build_index(&config).await.expect("Failed to build index");
+
+    // Create state (should load the index)
+    let state = AppState::new(config).await.expect("Failed to create state");
+
+    // Get health status
+    let health = get_health(&state).await.expect("Failed to get health");
+
+    assert_eq!(health.status, "ok");
+    assert_eq!(health.backend.active, "tantivy", "Should report tantivy as active");
+    assert!(health.backend.fts_enabled, "FTS should be enabled");
+    assert!(health.backend.fts_ready, "FTS should be ready");
+    assert!(health.backend.index_stats.is_some(), "Should have index stats");
+
+    if let Some(stats) = health.backend.index_stats {
+        assert!(stats.doc_count > 0, "Should have indexed documents");
+        assert!(stats.last_indexed.is_some(), "Should have last indexed time");
+    }
+}
+
+#[tokio::test]
+async fn test_health_tool_simple_backend() {
+    use music_theory_mcp::tools::health::get_health;
+
+    let temp_dir = TempDir::new().expect("Failed to create temp dir");
+    let config = create_test_config(&temp_dir, "simple", false);
+
+    setup_test_data(&temp_dir);
+
+    let state = AppState::new(config).await.expect("Failed to create state");
+
+    let health = get_health(&state).await.expect("Failed to get health");
+
+    assert_eq!(health.status, "ok");
+    assert_eq!(health.backend.active, "simple", "Should report simple as active");
+}
+
+#[tokio::test]
+async fn test_health_tool_tantivy_not_ready() {
+    use music_theory_mcp::tools::health::get_health;
+
+    let temp_dir = TempDir::new().expect("Failed to create temp dir");
+    let config = create_test_config(&temp_dir, "tantivy", false);
+
+    setup_test_data(&temp_dir);
+
+    // Create state without building index
+    let state = AppState::new(config).await.expect("Failed to create state");
+
+    let health = get_health(&state).await.expect("Failed to get health");
+
+    assert_eq!(health.status, "ok");
+    assert_eq!(health.backend.active, "simple", "Should fall back to simple");
+    assert!(health.backend.fts_enabled, "FTS should be enabled in config");
+    assert!(!health.backend.fts_ready, "FTS should not be ready");
+    assert!(health.backend.index_stats.is_none(), "Should not have index stats");
+}
