@@ -166,6 +166,8 @@ async fn find_concept_file(base_path: &Path, concept_id: &str) -> Result<PathBuf
 #[cfg(test)]
 mod tests {
     use super::*;
+    use tempfile::TempDir;
+    use tokio::fs;
 
     #[test]
     fn test_extract_category() {
@@ -288,5 +290,215 @@ mod tests {
         let params: ListConceptsParams = serde_json::from_str(json).expect("Should deserialize");
         assert_eq!(params.category, Some("rhythm".to_string()));
         assert_eq!(params.limit, Some(5));
+    }
+
+    #[tokio::test]
+    async fn test_scan_concept_cards() {
+        let temp = TempDir::new().unwrap();
+        let concepts_dir = temp.path().join("concepts");
+        let harmony_dir = concepts_dir.join("harmony");
+        fs::create_dir_all(&harmony_dir).await.unwrap();
+
+        // Create test concept files
+        fs::write(
+            harmony_dir.join("triads.md"),
+            "# Triads\n\nThree-note chords.",
+        )
+        .await
+        .unwrap();
+        fs::write(
+            harmony_dir.join("seventh-chords.md"),
+            "# Seventh Chords\n\nFour-note chords.",
+        )
+        .await
+        .unwrap();
+
+        let concepts = scan_concept_cards(&concepts_dir).await.unwrap();
+        assert_eq!(concepts.len(), 2);
+        assert_eq!(concepts[0].category, "harmony");
+        assert_eq!(concepts[0].id, "seventh-chords");
+        assert_eq!(concepts[0].title, "Seventh Chords");
+        assert_eq!(concepts[1].id, "triads");
+    }
+
+    #[tokio::test]
+    async fn test_extract_title_and_preview_with_frontmatter() {
+        let temp = TempDir::new().unwrap();
+        let file_path = temp.path().join("concept.md");
+        fs::write(
+            &file_path,
+            "---\ntitle: Custom Title\n---\n\n# Heading\n\nFirst paragraph.\n\nSecond paragraph.",
+        )
+        .await
+        .unwrap();
+
+        let (title, preview) = extract_title_and_preview(&file_path).await.unwrap();
+        assert_eq!(title, "Custom Title");
+        assert_eq!(preview, Some("First paragraph.".to_string()));
+    }
+
+    #[tokio::test]
+    async fn test_extract_title_and_preview_with_heading() {
+        let temp = TempDir::new().unwrap();
+        let file_path = temp.path().join("concept.md");
+        fs::write(&file_path, "# Main Heading\n\nPreview text here.")
+            .await
+            .unwrap();
+
+        let (title, preview) = extract_title_and_preview(&file_path).await.unwrap();
+        assert_eq!(title, "Main Heading");
+        assert_eq!(preview, Some("Preview text here.".to_string()));
+    }
+
+    #[tokio::test]
+    async fn test_extract_title_and_preview_fallback_to_filename() {
+        let temp = TempDir::new().unwrap();
+        let file_path = temp.path().join("my-concept.md");
+        // Content without frontmatter or heading - just plain text
+        fs::write(&file_path, "Some plain text content")
+            .await
+            .unwrap();
+
+        let (title, _preview) = extract_title_and_preview(&file_path).await.unwrap();
+        // Title should fall back to filename with dashes replaced by spaces
+        assert_eq!(title, "my concept");
+    }
+
+    #[tokio::test]
+    async fn test_find_concept_file() {
+        let temp = TempDir::new().unwrap();
+        let concepts_dir = temp.path().join("concepts");
+        let harmony_dir = concepts_dir.join("harmony");
+        fs::create_dir_all(&harmony_dir).await.unwrap();
+
+        // Create concept file
+        fs::write(harmony_dir.join("triads.md"), "# Triads")
+            .await
+            .unwrap();
+
+        let found = find_concept_file(&concepts_dir, "triads").await.unwrap();
+        assert!(found.ends_with("triads.md"));
+    }
+
+    #[tokio::test]
+    async fn test_find_concept_file_readme() {
+        let temp = TempDir::new().unwrap();
+        let concepts_dir = temp.path().join("concepts");
+        let triad_dir = concepts_dir.join("triad");
+        fs::create_dir_all(&triad_dir).await.unwrap();
+
+        // Create concept as README.md
+        fs::write(triad_dir.join("README.md"), "# Triad")
+            .await
+            .unwrap();
+
+        let found = find_concept_file(&concepts_dir, "triad").await.unwrap();
+        assert!(found.ends_with("README.md"));
+    }
+
+    #[tokio::test]
+    async fn test_list_concepts_empty_directory() {
+        use crate::config::Config;
+
+        let temp = TempDir::new().unwrap();
+        let concepts_dir = temp.path().join("nonexistent");
+
+        // Create a mock config pointing to nonexistent directory
+        let config = Config::load().unwrap();
+        let mut test_config = config.clone();
+        test_config.paths.concept_cards = concepts_dir.to_string_lossy().to_string();
+
+        let response = list_concepts(&test_config, None).await.unwrap();
+        assert_eq!(response.concepts.len(), 0);
+        assert_eq!(response.total, 0);
+    }
+
+    #[tokio::test]
+    async fn test_list_concepts_with_category_filter() {
+        use crate::config::Config;
+
+        let temp = TempDir::new().unwrap();
+        let concepts_dir = temp.path();
+        let harmony_dir = concepts_dir.join("harmony");
+        let rhythm_dir = concepts_dir.join("rhythm");
+        fs::create_dir_all(&harmony_dir).await.unwrap();
+        fs::create_dir_all(&rhythm_dir).await.unwrap();
+
+        // Create concept files
+        fs::write(harmony_dir.join("triads.md"), "# Triads")
+            .await
+            .unwrap();
+        fs::write(rhythm_dir.join("meter.md"), "# Meter")
+            .await
+            .unwrap();
+
+        let config = Config::load().unwrap();
+        let mut test_config = config.clone();
+        test_config.paths.concept_cards = concepts_dir.to_string_lossy().to_string();
+
+        // Filter by harmony category
+        let params = ListConceptsParams {
+            category: Some("harmony".to_string()),
+            limit: None,
+        };
+        let response = list_concepts(&test_config, Some(params)).await.unwrap();
+        assert_eq!(response.concepts.len(), 1);
+        assert_eq!(response.concepts[0].category, "harmony");
+    }
+
+    #[tokio::test]
+    async fn test_list_concepts_with_limit() {
+        use crate::config::Config;
+
+        let temp = TempDir::new().unwrap();
+        let concepts_dir = temp.path();
+        let harmony_dir = concepts_dir.join("harmony");
+        fs::create_dir_all(&harmony_dir).await.unwrap();
+
+        // Create multiple concept files
+        fs::write(harmony_dir.join("triads.md"), "# Triads")
+            .await
+            .unwrap();
+        fs::write(harmony_dir.join("sevenths.md"), "# Sevenths")
+            .await
+            .unwrap();
+        fs::write(harmony_dir.join("ninths.md"), "# Ninths")
+            .await
+            .unwrap();
+
+        let config = Config::load().unwrap();
+        let mut test_config = config.clone();
+        test_config.paths.concept_cards = concepts_dir.to_string_lossy().to_string();
+
+        // Limit to 2 results
+        let params = ListConceptsParams {
+            category: None,
+            limit: Some(2),
+        };
+        let response = list_concepts(&test_config, Some(params)).await.unwrap();
+        assert_eq!(response.concepts.len(), 2);
+        assert_eq!(response.total, 2);
+    }
+
+    #[tokio::test]
+    async fn test_get_concept() {
+        use crate::config::Config;
+
+        let temp = TempDir::new().unwrap();
+        let concepts_dir = temp.path();
+        let harmony_dir = concepts_dir.join("harmony");
+        fs::create_dir_all(&harmony_dir).await.unwrap();
+
+        let content = "# Triads\n\nThree-note chords.";
+        fs::write(harmony_dir.join("triads.md"), content)
+            .await
+            .unwrap();
+
+        let config = Config::load().unwrap();
+        let mut test_config = config.clone();
+        test_config.paths.concept_cards = concepts_dir.to_string_lossy().to_string();
+
+        let result = get_concept(&test_config, "triads").await.unwrap();
+        assert_eq!(result, content);
     }
 }

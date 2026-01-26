@@ -445,4 +445,113 @@ mod tests {
         assert!(json.contains("sources"));
         assert!(json.contains("test1"));
     }
+
+    #[tokio::test]
+    async fn test_list_sources_no_sources_md_dir() {
+        use crate::config::Config;
+
+        // Load config but sources-md won't exist in temp location
+        let config = Config::load().expect("Config should load");
+
+        // This should return list with unconverted sources from config
+        let result = list_sources(&config).await;
+        assert!(result.is_ok());
+        // Successfully returns sources list (may be empty or contain config sources)
+    }
+
+    #[tokio::test]
+    async fn test_scan_converted_sources() {
+        use tempfile::TempDir;
+        use tokio::fs;
+
+        let temp = TempDir::new().unwrap();
+
+        // Create a source directory with markdown files
+        let source_dir = temp.path().join("test-source");
+        fs::create_dir(&source_dir).await.unwrap();
+        fs::write(source_dir.join("chapter-1.md"), "# Chapter 1").await.unwrap();
+        fs::write(source_dir.join("chapter-2.md"), "# Chapter 2").await.unwrap();
+
+        let sources = scan_converted_sources(temp.path()).await.unwrap();
+
+        assert_eq!(sources.len(), 1);
+        assert_eq!(sources[0].id, "test-source");
+        assert_eq!(sources[0].title, "Test Source");
+        assert_eq!(sources[0].chapters, Some(2));
+        assert!(matches!(sources[0].format, SourceFormat::Markdown));
+        assert!(matches!(sources[0].status, SourceStatus::Converted));
+    }
+
+    #[tokio::test]
+    async fn test_scan_converted_sources_multiple() {
+        use tempfile::TempDir;
+        use tokio::fs;
+
+        let temp = TempDir::new().unwrap();
+
+        // Create multiple source directories
+        let source1 = temp.path().join("source-one");
+        fs::create_dir(&source1).await.unwrap();
+        fs::write(source1.join("intro.md"), "# Intro").await.unwrap();
+
+        let source2 = temp.path().join("source-two");
+        fs::create_dir(&source2).await.unwrap();
+        fs::write(source2.join("chapter.md"), "# Chapter").await.unwrap();
+
+        let sources = scan_converted_sources(temp.path()).await.unwrap();
+
+        assert_eq!(sources.len(), 2);
+    }
+
+    #[tokio::test]
+    async fn test_get_source_chapter_not_found() {
+        use crate::config::Config;
+
+        let config = Config::load().expect("Config should load");
+
+        let result = get_source_chapter(&config, "nonexistent-source", "chapter-1").await;
+        assert!(result.is_err());
+    }
+
+    #[test]
+    fn test_source_format_serialization() {
+        let json = serde_json::to_string(&SourceFormat::Pdf).unwrap();
+        assert_eq!(json, r#""pdf""#);
+
+        let json = serde_json::to_string(&SourceFormat::Epub).unwrap();
+        assert_eq!(json, r#""epub""#);
+
+        let json = serde_json::to_string(&SourceFormat::Xml).unwrap();
+        assert_eq!(json, r#""xml""#);
+
+        let json = serde_json::to_string(&SourceFormat::Markdown).unwrap();
+        assert_eq!(json, r#""markdown""#);
+    }
+
+    #[test]
+    fn test_source_status_serialization() {
+        let json = serde_json::to_string(&SourceStatus::Converted).unwrap();
+        assert_eq!(json, r#""converted""#);
+
+        let json = serde_json::to_string(&SourceStatus::NotConverted).unwrap();
+        assert_eq!(json, r#""not_converted""#);
+    }
+
+    #[test]
+    fn test_list_unconverted_sources() {
+        use crate::config::Config;
+
+        let config = Config::load().expect("Config should load");
+        let sources = list_unconverted_sources(&config).expect("Should list unconverted sources");
+
+        // Should have sources from oxford, general, and papers categories
+        assert!(sources.len() > 0);
+
+        // Check that IDs are properly formatted
+        let has_oxford = sources.iter().any(|s| s.id.starts_with("oxford-"));
+        let has_general = sources.iter().any(|s| s.id.starts_with("general-"));
+        let has_papers = sources.iter().any(|s| s.id.starts_with("papers-"));
+
+        assert!(has_oxford || has_general || has_papers);
+    }
 }

@@ -230,3 +230,138 @@ See the `list_guides` tool for topic-specific guides.
 "#
     .to_string()
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_list_resources() {
+        let resources = list_resources();
+        assert_eq!(resources.len(), 4);
+
+        // Check conventions resource
+        assert_eq!(resources[0].uri, "skill://conventions");
+        assert_eq!(resources[0].name, "Music Theory Conventions");
+        assert_eq!(resources[0].mime_type, "text/markdown");
+
+        // Check scope resource
+        assert_eq!(resources[1].uri, "skill://scope");
+        assert_eq!(resources[1].name, "Skill Scope");
+
+        // Check sources resource
+        assert_eq!(resources[2].uri, "skill://sources");
+        assert_eq!(resources[2].name, "Source Materials");
+
+        // Check index resource
+        assert_eq!(resources[3].uri, "skill://index");
+        assert_eq!(resources[3].name, "Skill Index");
+    }
+
+    #[test]
+    fn test_get_resource_conventions() {
+        let config = Config::load().expect("Config should load");
+        let content = get_resource(&config, URI_CONVENTIONS).expect("Should get conventions");
+        assert!(content.contains("Music Theory Conventions") || content.contains("Notation"));
+    }
+
+    #[test]
+    fn test_get_resource_scope() {
+        let config = Config::load().expect("Config should load");
+        let content = get_resource(&config, URI_SCOPE).expect("Should get scope");
+        assert!(!content.is_empty(), "Scope resource should have content");
+        assert!(content.starts_with('#'), "Scope should be valid markdown with heading");
+    }
+
+    #[test]
+    fn test_get_resource_sources() {
+        let config = Config::load().expect("Config should load");
+        let content = get_resource(&config, URI_SOURCES).expect("Should get sources");
+        assert!(!content.is_empty(), "Sources resource should have content");
+        assert!(content.starts_with('#'), "Sources should be valid markdown with heading");
+    }
+
+    #[test]
+    fn test_get_resource_index() {
+        let config = Config::load().expect("Config should load");
+        let content = get_resource(&config, URI_INDEX).expect("Should get index");
+        assert!(content.contains("Skill Index") || content.contains("Index") || content.contains("Concepts"));
+    }
+
+    #[test]
+    fn test_get_resource_unknown_uri() {
+        let config = Config::load().expect("Config should load");
+        let result = get_resource(&config, "skill://unknown");
+        assert!(result.is_err());
+        assert!(result.unwrap_err().is_not_found());
+    }
+
+    #[test]
+    fn test_default_conventions() {
+        let content = default_conventions();
+        assert!(content.contains("Music Theory Conventions"));
+        assert!(content.contains("Notation"));
+        assert!(content.contains("Scientific pitch notation"));
+        assert!(content.contains("Terminology"));
+    }
+
+    #[test]
+    fn test_default_scope() {
+        let content = default_scope();
+        assert!(content.contains("Music Theory Skill Scope"));
+        assert!(content.contains("Topics Covered"));
+        assert!(content.contains("Learning Objectives"));
+        assert!(content.contains("Fundamentals"));
+        assert!(content.contains("Harmony"));
+    }
+
+    #[test]
+    fn test_default_sources() {
+        let content = default_sources();
+        assert!(content.contains("Source Materials"));
+        assert!(content.contains("Primary Sources"));
+        assert!(content.contains("Lewin"));
+        assert!(content.contains("Tymoczko"));
+    }
+
+    #[test]
+    fn test_default_index() {
+        let content = default_index();
+        assert!(content.contains("Skill Index"));
+        assert!(content.contains("Concepts by Category"));
+        assert!(content.contains("Fundamentals"));
+        assert!(content.contains("Harmony"));
+        assert!(content.contains("Neo-Riemannian Theory"));
+    }
+
+    #[test]
+    fn test_resource_info_serialization() {
+        let resource = ResourceInfo {
+            uri: "skill://test".to_string(),
+            name: "Test Resource".to_string(),
+            description: "A test resource".to_string(),
+            mime_type: "text/markdown".to_string(),
+        };
+
+        let json = serde_json::to_string(&resource).expect("Should serialize");
+        assert!(json.contains("skill://test"));
+        assert!(json.contains("Test Resource"));
+        assert!(json.contains("text/markdown"));
+    }
+
+    #[test]
+    fn test_resource_info_deserialization() {
+        let json = r#"{
+            "uri": "skill://test",
+            "name": "Test",
+            "description": "Desc",
+            "mime_type": "text/plain"
+        }"#;
+
+        let resource: ResourceInfo = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(resource.uri, "skill://test");
+        assert_eq!(resource.name, "Test");
+        assert_eq!(resource.description, "Desc");
+        assert_eq!(resource.mime_type, "text/plain");
+    }
+}

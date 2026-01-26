@@ -327,4 +327,267 @@ mod tests {
         assert!(exists(&file_path).await);
         assert!(!exists(&temp.path().join("nonexistent.md")).await);
     }
+
+    #[tokio::test]
+    async fn test_find_file_by_id_not_found() {
+        let temp = TempDir::new().unwrap();
+        fs::write(temp.path().join("other.md"), "content").await.unwrap();
+
+        let result = find_file_by_id(temp.path(), "nonexistent", FindOptions::markdown()).await;
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("not found"));
+    }
+
+    #[tokio::test]
+    async fn test_find_file_by_id_with_pattern() {
+        let temp = TempDir::new().unwrap();
+        let readme_dir = temp.path().join("pitch-class");
+        fs::create_dir(&readme_dir).await.unwrap();
+        let readme_path = readme_dir.join("README.md");
+        fs::write(&readme_path, "# Pitch Class").await.unwrap();
+
+        let found = find_file_by_id(
+            temp.path(),
+            "pitch-class",
+            FindOptions::markdown().with_patterns(vec!["{id}/README.md"]),
+        )
+        .await
+        .unwrap();
+
+        assert_eq!(found, readme_path);
+    }
+
+    #[tokio::test]
+    async fn test_find_file_by_id_multiple_patterns() {
+        let temp = TempDir::new().unwrap();
+        let index_dir = temp.path().join("harmony");
+        fs::create_dir(&index_dir).await.unwrap();
+        let index_path = index_dir.join("index.md");
+        fs::write(&index_path, "# Harmony").await.unwrap();
+
+        let found = find_file_by_id(
+            temp.path(),
+            "harmony",
+            FindOptions::markdown().with_patterns(vec!["{id}.md", "{id}/README.md", "{id}/index.md"]),
+        )
+        .await
+        .unwrap();
+
+        assert_eq!(found, index_path);
+    }
+
+    #[tokio::test]
+    async fn test_find_file_by_id_underscore_prefix() {
+        let temp = TempDir::new().unwrap();
+        let file_path = temp.path().join("intervals_basic.md");
+        fs::write(&file_path, "# Intervals").await.unwrap();
+
+        let found = find_file_by_id(temp.path(), "intervals", FindOptions::markdown())
+            .await
+            .unwrap();
+
+        assert_eq!(found, file_path);
+    }
+
+    #[tokio::test]
+    async fn test_find_file_by_id_dash_prefix() {
+        let temp = TempDir::new().unwrap();
+        let file_path = temp.path().join("scales-major.md");
+        fs::write(&file_path, "# Major Scales").await.unwrap();
+
+        let found = find_file_by_id(temp.path(), "scales", FindOptions::markdown())
+            .await
+            .unwrap();
+
+        assert_eq!(found, file_path);
+    }
+
+    #[tokio::test]
+    async fn test_find_file_by_id_nested() {
+        let temp = TempDir::new().unwrap();
+        let nested_dir = temp.path().join("category").join("subcategory");
+        fs::create_dir_all(&nested_dir).await.unwrap();
+        let file_path = nested_dir.join("concept.md");
+        fs::write(&file_path, "# Concept").await.unwrap();
+
+        let found = find_file_by_id(temp.path(), "concept", FindOptions::markdown())
+            .await
+            .unwrap();
+
+        assert_eq!(found, file_path);
+    }
+
+    #[tokio::test]
+    async fn test_find_file_by_id_max_depth() {
+        let temp = TempDir::new().unwrap();
+
+        // Create file at depth 1
+        let dir1 = temp.path().join("level1");
+        fs::create_dir(&dir1).await.unwrap();
+        let shallow_file = dir1.join("shallow.md");
+        fs::write(&shallow_file, "shallow").await.unwrap();
+
+        // Create file at depth 3
+        let dir2 = temp.path().join("a").join("b").join("c");
+        fs::create_dir_all(&dir2).await.unwrap();
+        let deep_file = dir2.join("deep.md");
+        fs::write(&deep_file, "deep").await.unwrap();
+
+        // With max_depth=2, should only find shallow file
+        let result = find_file_by_id(
+            temp.path(),
+            "deep",
+            FindOptions::markdown().with_max_depth(2),
+        )
+        .await;
+
+        // Should not find the deep file
+        assert!(result.is_err());
+    }
+
+    #[tokio::test]
+    async fn test_find_all_files_nested() {
+        let temp = TempDir::new().unwrap();
+
+        // Root level
+        fs::write(temp.path().join("root.md"), "root").await.unwrap();
+
+        // Nested
+        let subdir = temp.path().join("subdir");
+        fs::create_dir(&subdir).await.unwrap();
+        fs::write(subdir.join("nested.md"), "nested").await.unwrap();
+
+        let files = find_all_files(temp.path(), FindOptions::markdown())
+            .await
+            .unwrap();
+
+        assert_eq!(files.len(), 2);
+    }
+
+    #[tokio::test]
+    async fn test_find_all_files_max_depth() {
+        let temp = TempDir::new().unwrap();
+
+        // Create nested structure
+        fs::write(temp.path().join("root.md"), "root").await.unwrap();
+
+        let level1 = temp.path().join("level1");
+        fs::create_dir(&level1).await.unwrap();
+        fs::write(level1.join("file1.md"), "l1").await.unwrap();
+
+        let level2 = level1.join("level2");
+        fs::create_dir(&level2).await.unwrap();
+        fs::write(level2.join("file2.md"), "l2").await.unwrap();
+
+        // With max_depth=1, should only find files with path depth <= 1 component
+        // root.md has 1 component, so it matches
+        let files = find_all_files(temp.path(), FindOptions::markdown().with_max_depth(1))
+            .await
+            .unwrap();
+
+        assert_eq!(files.len(), 1); // Only root.md
+    }
+
+    #[tokio::test]
+    async fn test_find_all_files_extension_filter() {
+        let temp = TempDir::new().unwrap();
+        fs::write(temp.path().join("doc.md"), "markdown").await.unwrap();
+        fs::write(temp.path().join("note.txt"), "text").await.unwrap();
+        fs::write(temp.path().join("data.json"), "json").await.unwrap();
+
+        let files = find_all_files(temp.path(), FindOptions::markdown())
+            .await
+            .unwrap();
+
+        assert_eq!(files.len(), 1);
+        assert!(files[0].path.to_string_lossy().contains("doc.md"));
+    }
+
+    #[tokio::test]
+    async fn test_find_all_files_file_info() {
+        let temp = TempDir::new().unwrap();
+        let file_path = temp.path().join("test-file.md");
+        fs::write(&file_path, "content").await.unwrap();
+
+        let files = find_all_files(temp.path(), FindOptions::markdown())
+            .await
+            .unwrap();
+
+        assert_eq!(files.len(), 1);
+        assert_eq!(files[0].stem, "test-file");
+        assert_eq!(files[0].relative_path, PathBuf::from("test-file.md"));
+    }
+
+    #[tokio::test]
+    async fn test_read_file_not_found() {
+        let temp = TempDir::new().unwrap();
+        let nonexistent = temp.path().join("nonexistent.md");
+
+        let result = read_file(&nonexistent).await;
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("nonexistent.md"));
+    }
+
+    #[tokio::test]
+    async fn test_list_subdirectories_empty() {
+        let temp = TempDir::new().unwrap();
+
+        let dirs = list_subdirectories(temp.path()).await.unwrap();
+        assert_eq!(dirs.len(), 0);
+    }
+
+    #[tokio::test]
+    async fn test_list_subdirectories_mixed() {
+        let temp = TempDir::new().unwrap();
+
+        // Create subdirectories
+        fs::create_dir(temp.path().join("dir1")).await.unwrap();
+        fs::create_dir(temp.path().join("dir2")).await.unwrap();
+
+        // Create files (should be ignored)
+        fs::write(temp.path().join("file1.txt"), "f1").await.unwrap();
+        fs::write(temp.path().join("file2.md"), "f2").await.unwrap();
+
+        let dirs = list_subdirectories(temp.path()).await.unwrap();
+        assert_eq!(dirs.len(), 2);
+    }
+
+    #[tokio::test]
+    async fn test_count_files_empty() {
+        let temp = TempDir::new().unwrap();
+
+        let count = count_files(temp.path(), FindOptions::markdown())
+            .await
+            .unwrap();
+
+        assert_eq!(count, 0);
+    }
+
+    #[tokio::test]
+    async fn test_find_options_builder() {
+        let opts = FindOptions::markdown()
+            .with_max_depth(3)
+            .with_patterns(vec!["{id}.md", "{id}/index.md"]);
+
+        assert_eq!(opts.extension, Some("md"));
+        assert_eq!(opts.max_depth, Some(3));
+        assert_eq!(opts.patterns.len(), 2);
+    }
+
+    #[tokio::test]
+    async fn test_find_options_default() {
+        let opts = FindOptions::default();
+        assert!(opts.extension.is_none());
+        assert!(opts.max_depth.is_none());
+        assert!(opts.patterns.is_empty());
+    }
+
+    #[tokio::test]
+    async fn test_exists_directory() {
+        let temp = TempDir::new().unwrap();
+        let dir = temp.path().join("subdir");
+        fs::create_dir(&dir).await.unwrap();
+
+        assert!(exists(&dir).await);
+    }
 }

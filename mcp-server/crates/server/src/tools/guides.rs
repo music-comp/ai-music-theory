@@ -140,6 +140,8 @@ async fn find_guide_file(base_path: &Path, guide_id: &str) -> Result<PathBuf> {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use tempfile::TempDir;
+    use tokio::fs;
 
     #[test]
     fn test_extract_topic() {
@@ -223,5 +225,161 @@ mod tests {
         assert!(json.contains("guides"));
         assert!(json.contains("total"));
         assert!(json.contains("\"total\":1"));
+    }
+
+    #[tokio::test]
+    async fn test_scan_guides() {
+        let temp = TempDir::new().unwrap();
+        let guides_dir = temp.path().join("guides");
+        let harmony_dir = guides_dir.join("harmony");
+        fs::create_dir_all(&harmony_dir).await.unwrap();
+
+        // Create test guide files
+        fs::write(
+            harmony_dir.join("chord-progressions.md"),
+            "# Chord Progressions\n\nGuide to harmonic progressions.",
+        )
+        .await
+        .unwrap();
+        fs::write(
+            harmony_dir.join("voice-leading.md"),
+            "# Voice Leading\n\nGuide to connecting chords.",
+        )
+        .await
+        .unwrap();
+
+        let guides = scan_guides(&guides_dir).await.unwrap();
+        assert_eq!(guides.len(), 2);
+        assert_eq!(guides[0].topic, "harmony");
+        assert_eq!(guides[0].id, "chord-progressions");
+        assert_eq!(guides[0].title, "Chord Progressions");
+    }
+
+    #[tokio::test]
+    async fn test_extract_title_and_description_with_frontmatter() {
+        let temp = TempDir::new().unwrap();
+        let file_path = temp.path().join("guide.md");
+        fs::write(
+            &file_path,
+            "---\ntitle: Custom Guide Title\ndescription: Custom description\n---\n\n# Heading\n\nFirst paragraph.",
+        )
+        .await
+        .unwrap();
+
+        let (title, description) = extract_title_and_description(&file_path).await.unwrap();
+        assert_eq!(title, "Custom Guide Title");
+        assert_eq!(description, Some("Custom description".to_string()));
+    }
+
+    #[tokio::test]
+    async fn test_extract_title_and_description_with_heading() {
+        let temp = TempDir::new().unwrap();
+        let file_path = temp.path().join("guide.md");
+        fs::write(&file_path, "# Main Guide Heading\n\nDescription text.")
+            .await
+            .unwrap();
+
+        let (title, description) = extract_title_and_description(&file_path).await.unwrap();
+        assert_eq!(title, "Main Guide Heading");
+        assert_eq!(description, Some("Description text.".to_string()));
+    }
+
+    #[tokio::test]
+    async fn test_extract_title_and_description_fallback_to_filename() {
+        let temp = TempDir::new().unwrap();
+        let file_path = temp.path().join("my-guide.md");
+        fs::write(&file_path, "Content without heading")
+            .await
+            .unwrap();
+
+        let (title, _description) = extract_title_and_description(&file_path).await.unwrap();
+        assert_eq!(title, "my guide"); // Filename with dashes/underscores replaced
+    }
+
+    #[tokio::test]
+    async fn test_find_guide_file() {
+        let temp = TempDir::new().unwrap();
+        let guides_dir = temp.path().join("guides");
+        let topic_dir = guides_dir.join("harmony");
+        fs::create_dir_all(&topic_dir).await.unwrap();
+
+        // Create guide file
+        fs::write(topic_dir.join("triads.md"), "# Triads Guide")
+            .await
+            .unwrap();
+
+        let found = find_guide_file(&guides_dir, "triads").await.unwrap();
+        assert!(found.ends_with("triads.md"));
+    }
+
+    #[tokio::test]
+    async fn test_find_guide_file_readme() {
+        let temp = TempDir::new().unwrap();
+        let guides_dir = temp.path().join("guides");
+        // Pattern {id}/README.md expects guides/advanced-harmony/README.md
+        let guide_dir = guides_dir.join("advanced-harmony");
+        fs::create_dir_all(&guide_dir).await.unwrap();
+
+        // Create guide as README.md
+        fs::write(guide_dir.join("README.md"), "# Advanced Harmony")
+            .await
+            .unwrap();
+
+        let found = find_guide_file(&guides_dir, "advanced-harmony").await.unwrap();
+        assert!(found.ends_with("README.md"));
+    }
+
+    #[tokio::test]
+    async fn test_find_guide_file_index() {
+        let temp = TempDir::new().unwrap();
+        let guides_dir = temp.path().join("guides");
+        let guide_dir = guides_dir.join("intro");
+        fs::create_dir_all(&guide_dir).await.unwrap();
+
+        // Create guide as index.md
+        fs::write(guide_dir.join("index.md"), "# Introduction")
+            .await
+            .unwrap();
+
+        let found = find_guide_file(&guides_dir, "intro").await.unwrap();
+        assert!(found.ends_with("index.md"));
+    }
+
+    #[tokio::test]
+    async fn test_list_guides_empty_directory() {
+        use crate::config::Config;
+
+        let temp = TempDir::new().unwrap();
+        let guides_dir = temp.path().join("nonexistent");
+
+        let config = Config::load().unwrap();
+        let mut test_config = config.clone();
+        test_config.paths.guides = guides_dir.to_string_lossy().to_string();
+
+        let response = list_guides(&test_config).await.unwrap();
+        assert_eq!(response.guides.len(), 0);
+        assert_eq!(response.total, 0);
+    }
+
+    #[tokio::test]
+    async fn test_get_guide() {
+        use crate::config::Config;
+
+        let temp = TempDir::new().unwrap();
+        let guides_dir = temp.path();
+        let topic_dir = guides_dir.join("harmony");
+        fs::create_dir_all(&topic_dir).await.unwrap();
+
+        let content = "# Triads Guide\n\nA guide about triads.";
+        fs::write(topic_dir.join("triads.md"), content)
+            .await
+            .unwrap();
+
+        let config = Config::load().unwrap();
+        let mut test_config = config.clone();
+        test_config.paths.guides = guides_dir.to_string_lossy().to_string();
+
+        let result = get_guide(&test_config, "triads").await.unwrap();
+        assert_eq!(result, content);
     }
 }
