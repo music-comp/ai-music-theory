@@ -11,14 +11,14 @@ use rmcp::{tool, tool_handler, tool_router};
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 
-use crate::config::Config;
 use crate::resources;
+use crate::state::AppState;
 use crate::tools;
 
 /// Music Theory MCP Server implementation.
 #[derive(Clone)]
 pub struct MusicTheoryServer {
-    pub config: Config,
+    pub state: AppState,
     tool_router: ToolRouter<Self>,
 }
 
@@ -75,7 +75,7 @@ fn serialization_error(e: serde_json::Error) -> ErrorData {
 #[tool_router]
 impl MusicTheoryServer {
     /// Create a new server instance.
-    pub fn new(config: Config) -> Self {
+    pub fn new(state: AppState) -> Self {
         let tool_router = Self::tool_router();
 
         // Log registered tools with structured logging
@@ -90,14 +90,14 @@ impl MusicTheoryServer {
         }
 
         Self {
-            config,
+            state,
             tool_router,
         }
     }
 
     #[tool(description = "List all available source materials with metadata")]
     async fn list_sources(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::sources::list_sources(&self.config)
+        let response = tools::sources::list_sources(&self.state.config)
             .await
             .map_err(|e| e.to_mcp_error("Error listing sources"))?;
 
@@ -112,7 +112,7 @@ impl MusicTheoryServer {
         params: Parameters<GetSourceChapterParams>,
     ) -> Result<CallToolResult, ErrorData> {
         let content = tools::sources::get_source_chapter(
-            &self.config,
+            &self.state.config,
             &params.0.source_id,
             &params.0.chapter,
         )
@@ -127,7 +127,7 @@ impl MusicTheoryServer {
         &self,
         params: Parameters<GetSourcePdfPathParams>,
     ) -> Result<CallToolResult, ErrorData> {
-        let path = tools::sources::get_source_pdf_path(&self.config, &params.0.source_id)
+        let path = tools::sources::get_source_pdf_path(&self.state.config, &params.0.source_id)
             .map_err(|e| e.to_mcp_error("Error getting PDF path"))?;
 
         let path_str = path.to_str().ok_or_else(|| {
@@ -149,7 +149,7 @@ impl MusicTheoryServer {
             limit: params.0.limit,
         };
 
-        let response = tools::concepts::list_concepts(&self.config, Some(filter_params))
+        let response = tools::concepts::list_concepts(&self.state.config, Some(filter_params))
             .await
             .map_err(|e| e.to_mcp_error("Error listing concepts"))?;
 
@@ -163,7 +163,7 @@ impl MusicTheoryServer {
         &self,
         params: Parameters<GetConceptParams>,
     ) -> Result<CallToolResult, ErrorData> {
-        let content = tools::concepts::get_concept(&self.config, &params.0.concept_id)
+        let content = tools::concepts::get_concept(&self.state.config, &params.0.concept_id)
             .await
             .map_err(|e| e.to_mcp_error("Error retrieving concept"))?;
 
@@ -172,7 +172,7 @@ impl MusicTheoryServer {
 
     #[tool(description = "List all distinct concept categories with counts")]
     async fn list_categories(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::concepts::list_categories(&self.config)
+        let response = tools::concepts::list_categories(&self.state.config)
             .await
             .map_err(|e| e.to_mcp_error("Error listing categories"))?;
 
@@ -191,7 +191,7 @@ impl MusicTheoryServer {
             limit: params.0.limit,
         };
 
-        let response = tools::search::search_concepts(&self.config, search_params)
+        let response = tools::search::search_concepts(&self.state, search_params)
             .await
             .map_err(|e| e.to_mcp_error("Error searching concepts"))?;
 
@@ -202,7 +202,7 @@ impl MusicTheoryServer {
 
     #[tool(description = "List all available topic guides")]
     async fn list_guides(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::guides::list_guides(&self.config)
+        let response = tools::guides::list_guides(&self.state.config)
             .await
             .map_err(|e| e.to_mcp_error("Error listing guides"))?;
 
@@ -216,7 +216,7 @@ impl MusicTheoryServer {
         &self,
         params: Parameters<GetGuideParams>,
     ) -> Result<CallToolResult, ErrorData> {
-        let content = tools::guides::get_guide(&self.config, &params.0.guide_id)
+        let content = tools::guides::get_guide(&self.state.config, &params.0.guide_id)
             .await
             .map_err(|e| e.to_mcp_error("Error retrieving guide"))?;
 
@@ -234,9 +234,9 @@ impl ServerHandler for MusicTheoryServer {
                 .enable_resources()
                 .build(),
             server_info: Implementation {
-                name: self.config.server.name.clone(),
+                name: self.state.config.server.name.clone(),
                 title: None,
-                version: self.config.server.version.clone(),
+                version: self.state.config.server.version.clone(),
                 icons: None,
                 website_url: None,
             },
@@ -278,7 +278,7 @@ impl ServerHandler for MusicTheoryServer {
         request: ReadResourceRequestParams,
         _context: RequestContext<RoleServer>,
     ) -> Result<ReadResourceResult, ErrorData> {
-        match resources::get_resource(&self.config, &request.uri) {
+        match resources::get_resource(&self.state.config, &request.uri) {
             Ok(content) => Ok(ReadResourceResult {
                 contents: vec![ResourceContents::text(content, request.uri)],
             }),
@@ -294,6 +294,7 @@ impl ServerHandler for MusicTheoryServer {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::config::Config;
 
     #[test]
     fn test_default_limit() {
@@ -310,19 +311,21 @@ mod tests {
         assert!(error.message.contains("Serialization error"));
     }
 
-    #[test]
-    fn test_new_server() {
+    #[tokio::test]
+    async fn test_new_server() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config.clone());
+        let state = AppState::new(config.clone()).await.unwrap();
+        let server = MusicTheoryServer::new(state.clone());
 
-        assert_eq!(server.config.server.name, config.server.name);
-        assert_eq!(server.config.server.version, config.server.version);
+        assert_eq!(server.state.config.server.name, config.server.name);
+        assert_eq!(server.state.config.server.version, config.server.version);
     }
 
-    #[test]
-    fn test_get_info() {
+    #[tokio::test]
+    async fn test_get_info() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config.clone());
+        let state = AppState::new(config.clone()).await.unwrap();
+        let server = MusicTheoryServer::new(state.clone());
 
         let info = server.get_info();
 
@@ -337,7 +340,8 @@ mod tests {
     #[tokio::test]
     async fn test_list_sources() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config);
+        let state = AppState::new(config).await.unwrap();
+        let server = MusicTheoryServer::new(state);
 
         let result = server.list_sources().await;
 
@@ -348,7 +352,8 @@ mod tests {
     #[tokio::test]
     async fn test_get_source_chapter() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config);
+        let state = AppState::new(config).await.unwrap();
+        let server = MusicTheoryServer::new(state);
 
         let params = Parameters(GetSourceChapterParams {
             source_id: "nonexistent-source".to_string(),
@@ -364,7 +369,8 @@ mod tests {
     #[tokio::test]
     async fn test_get_source_pdf_path() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config);
+        let state = AppState::new(config).await.unwrap();
+        let server = MusicTheoryServer::new(state);
 
         let params = Parameters(GetSourcePdfPathParams {
             source_id: "nonexistent-source".to_string(),
@@ -379,7 +385,8 @@ mod tests {
     #[tokio::test]
     async fn test_list_concepts() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config);
+        let state = AppState::new(config).await.unwrap();
+        let server = MusicTheoryServer::new(state);
 
         let params = Parameters(ListConceptsParams {
             category: None,
@@ -395,7 +402,8 @@ mod tests {
     #[tokio::test]
     async fn test_list_concepts_with_category() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config);
+        let state = AppState::new(config).await.unwrap();
+        let server = MusicTheoryServer::new(state);
 
         let params = Parameters(ListConceptsParams {
             category: Some("harmony".to_string()),
@@ -411,7 +419,8 @@ mod tests {
     #[tokio::test]
     async fn test_list_concepts_with_limit() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config);
+        let state = AppState::new(config).await.unwrap();
+        let server = MusicTheoryServer::new(state);
 
         let params = Parameters(ListConceptsParams {
             category: None,
@@ -427,7 +436,8 @@ mod tests {
     #[tokio::test]
     async fn test_get_concept() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config);
+        let state = AppState::new(config).await.unwrap();
+        let server = MusicTheoryServer::new(state);
 
         let params = Parameters(GetConceptParams {
             concept_id: "nonexistent-concept".to_string(),
@@ -442,7 +452,8 @@ mod tests {
     #[tokio::test]
     async fn test_search_concepts() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config);
+        let state = AppState::new(config).await.unwrap();
+        let server = MusicTheoryServer::new(state);
 
         let params = Parameters(SearchConceptsParams {
             query: "harmony".to_string(),
@@ -458,7 +469,8 @@ mod tests {
     #[tokio::test]
     async fn test_search_concepts_with_limit() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config);
+        let state = AppState::new(config).await.unwrap();
+        let server = MusicTheoryServer::new(state);
 
         let params = Parameters(SearchConceptsParams {
             query: "chord".to_string(),
@@ -474,7 +486,8 @@ mod tests {
     #[tokio::test]
     async fn test_list_guides() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config);
+        let state = AppState::new(config).await.unwrap();
+        let server = MusicTheoryServer::new(state);
 
         let result = server.list_guides().await;
 
@@ -485,7 +498,8 @@ mod tests {
     #[tokio::test]
     async fn test_get_guide() {
         let config = Config::load().unwrap();
-        let server = MusicTheoryServer::new(config);
+        let state = AppState::new(config).await.unwrap();
+        let server = MusicTheoryServer::new(state);
 
         let params = Parameters(GetGuideParams {
             guide_id: "nonexistent-guide".to_string(),

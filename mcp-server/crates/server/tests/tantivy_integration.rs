@@ -6,7 +6,8 @@
 #![cfg(feature = "fts")]
 
 use music_theory_mcp::config::{Config, LoggingConfig, PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
-use music_theory_mcp::search::{build_index, create_search_backend};
+use music_theory_mcp::search::build_index;
+use music_theory_mcp::state::AppState;
 use music_theory_mcp::tools::search::{SearchConceptsParams, search_concepts};
 use std::fs;
 use std::path::PathBuf;
@@ -140,8 +141,8 @@ async fn test_search_returns_relevant_results() {
     // Build index
     build_index(&config).await.expect("Failed to build index");
 
-    // Create backend
-    let backend = create_search_backend(&config).await.expect("Failed to create backend");
+    // Create AppState (which loads the index)
+    let state = AppState::new(config).await.expect("Failed to create state");
 
     // Search for "triads"
     let params = SearchConceptsParams {
@@ -149,7 +150,8 @@ async fn test_search_returns_relevant_results() {
         limit: 10,
     };
 
-    let results = backend.search(&params).await.expect("Search failed");
+    let response = search_concepts(&state, params).await.expect("Search failed");
+    let results = response.results;
 
     // Verify results
     assert!(!results.is_empty(), "Should find results for 'triads'");
@@ -165,7 +167,7 @@ async fn test_search_ranking_by_relevance() {
     let config = create_test_config(&temp_dir, "tantivy", false);
     build_index(&config).await.expect("Failed to build index");
 
-    let backend = create_search_backend(&config).await.expect("Failed to create backend");
+    let state = AppState::new(config).await.expect("Failed to create state");
 
     // Search for "chords" - appears in multiple documents
     let params = SearchConceptsParams {
@@ -173,7 +175,8 @@ async fn test_search_ranking_by_relevance() {
         limit: 10,
     };
 
-    let results = backend.search(&params).await.expect("Search failed");
+    let response = search_concepts(&state, params).await.expect("Search failed");
+    let results = response.results;
 
     // Should find multiple results
     assert!(results.len() >= 2, "Should find multiple results for 'chords'");
@@ -194,7 +197,7 @@ async fn test_fuzzy_search_finds_typos() {
     let config = create_test_config(&temp_dir, "tantivy", true); // Enable fuzzy search
     build_index(&config).await.expect("Failed to build index");
 
-    let backend = create_search_backend(&config).await.expect("Failed to create backend");
+    let state = AppState::new(config).await.expect("Failed to create state");
 
     // Search with typo: "haromny" instead of "harmony"
     let params = SearchConceptsParams {
@@ -202,7 +205,8 @@ async fn test_fuzzy_search_finds_typos() {
         limit: 10,
     };
 
-    let results = backend.search(&params).await.expect("Search failed");
+    let response = search_concepts(&state, params).await.expect("Search failed");
+    let results = response.results;
 
     // Fuzzy search should find "harmony" documents
     assert!(!results.is_empty(), "Fuzzy search should find results despite typo");
@@ -216,21 +220,23 @@ async fn test_backend_switching_simple_to_tantivy() {
 
     // Test with simple backend
     let simple_config = create_test_config(&temp_dir, "simple", false);
-    let simple_backend = create_search_backend(&simple_config).await.expect("Failed to create simple backend");
+    let simple_state = AppState::new(simple_config).await.expect("Failed to create simple state");
 
     let params = SearchConceptsParams {
         query: "voice".to_string(),
         limit: 10,
     };
 
-    let simple_results = simple_backend.search(&params).await.expect("Simple search failed");
+    let simple_response = search_concepts(&simple_state, params.clone()).await.expect("Simple search failed");
+    let simple_results = simple_response.results;
 
     // Build Tantivy index and test
     let tantivy_config = create_test_config(&temp_dir, "tantivy", false);
     build_index(&tantivy_config).await.expect("Failed to build index");
-    let tantivy_backend = create_search_backend(&tantivy_config).await.expect("Failed to create tantivy backend");
+    let tantivy_state = AppState::new(tantivy_config).await.expect("Failed to create tantivy state");
 
-    let tantivy_results = tantivy_backend.search(&params).await.expect("Tantivy search failed");
+    let tantivy_response = search_concepts(&tantivy_state, params).await.expect("Tantivy search failed");
+    let tantivy_results = tantivy_response.results;
 
     // Both backends should find results (may differ in ranking)
     assert!(!simple_results.is_empty(), "Simple backend should find results");
@@ -255,14 +261,15 @@ async fn test_snippet_generation_includes_context() {
     let config = create_test_config(&temp_dir, "tantivy", false);
     build_index(&config).await.expect("Failed to build index");
 
-    let backend = create_search_backend(&config).await.expect("Failed to create backend");
+    let state = AppState::new(config).await.expect("Failed to create state");
 
     let params = SearchConceptsParams {
         query: "parallel".to_string(),
         limit: 10,
     };
 
-    let results = backend.search(&params).await.expect("Search failed");
+    let response = search_concepts(&state, params).await.expect("Search failed");
+    let results = response.results;
 
     assert!(!results.is_empty(), "Should find results for 'parallel'");
 
@@ -280,14 +287,14 @@ async fn test_empty_query_errors_correctly() {
     let config = create_test_config(&temp_dir, "tantivy", false);
     build_index(&config).await.expect("Failed to build index");
 
-    let backend = create_search_backend(&config).await.expect("Failed to create backend");
+    let state = AppState::new(config).await.expect("Failed to create state");
 
     let params = SearchConceptsParams {
         query: "".to_string(),
         limit: 10,
     };
 
-    let result = backend.search(&params).await;
+    let result = search_concepts(&state, params).await;
 
     // Empty query should return an error
     assert!(result.is_err(), "Empty query should return error");
@@ -301,7 +308,7 @@ async fn test_search_with_limit() {
     let config = create_test_config(&temp_dir, "tantivy", false);
     build_index(&config).await.expect("Failed to build index");
 
-    let backend = create_search_backend(&config).await.expect("Failed to create backend");
+    let state = AppState::new(config).await.expect("Failed to create state");
 
     // Search with limit of 1
     let params = SearchConceptsParams {
@@ -309,7 +316,8 @@ async fn test_search_with_limit() {
         limit: 1,
     };
 
-    let results = backend.search(&params).await.expect("Search failed");
+    let response = search_concepts(&state, params).await.expect("Search failed");
+    let results = response.results;
 
     // Should respect limit
     assert!(results.len() <= 1, "Should respect limit parameter");
@@ -351,13 +359,14 @@ async fn test_index_rebuild_clears_old_data() {
     assert_eq!(stats2.indexed, 2, "Should index 2 files after rebuild");
 
     // Search should find both
-    let backend = create_search_backend(&config).await.expect("Failed to create backend");
+    let state = AppState::new(config).await.expect("Failed to create state");
     let params = SearchConceptsParams {
         query: "test".to_string(),
         limit: 10,
     };
 
-    let results = backend.search(&params).await.expect("Search failed");
+    let response = search_concepts(&state, params).await.expect("Search failed");
+    let results = response.results;
     assert_eq!(results.len(), 2, "Should find both documents after rebuild");
 }
 
@@ -370,14 +379,16 @@ async fn test_search_tool_integration() {
     build_index(&config).await.expect("Failed to build index");
 
     // Test the search_concepts tool (full integration)
+    let state = AppState::new(config).await.expect("Failed to create state");
     let params = SearchConceptsParams {
         query: "harmony".to_string(),
         limit: 5,
     };
 
-    let response = search_concepts(&config, params).await.expect("search_concepts failed");
+    let response = search_concepts(&state, params).await.expect("search_concepts failed");
 
     assert!(!response.results.is_empty(), "Should find results");
     assert_eq!(response.query, "harmony");
     assert!(response.total > 0, "Total should be greater than 0");
+    assert_eq!(response.backend, "tantivy", "Should use tantivy backend");
 }

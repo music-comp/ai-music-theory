@@ -10,6 +10,7 @@ pub mod metadata;
 pub mod resources;
 pub mod search;
 pub mod server;
+pub mod state;
 pub mod tools;
 pub mod util;
 
@@ -17,6 +18,7 @@ pub mod util;
 pub use config::Config;
 pub use error::{Error, Result};
 pub use search::{create_search_backend, SearchDocument};
+pub use state::AppState;
 pub use tools::search::{search_concepts, SearchConceptsParams, SearchConceptsResponse, SearchResult};
 
 // FTS-specific re-exports (only when feature enabled)

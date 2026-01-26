@@ -1,8 +1,7 @@
 use serde::{Deserialize, Serialize};
 
-use crate::config::Config;
 use crate::error::Result;
-use crate::search::create_search_backend;
+use crate::state::AppState;
 
 /// A search result item.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -23,10 +22,12 @@ pub struct SearchConceptsResponse {
     pub results: Vec<SearchResult>,
     pub total: usize,
     pub query: String,
+    /// The backend used for this search ("simple" or "tantivy")
+    pub backend: String,
 }
 
 /// Parameters for search_concepts tool.
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Clone, Deserialize)]
 pub struct SearchConceptsParams {
     pub query: String,
     #[serde(default = "default_limit")]
@@ -39,13 +40,15 @@ fn default_limit() -> usize {
 
 /// Search across concept cards for a query.
 ///
-/// Uses the configured search backend (simple or tantivy).
+/// Uses the currently active search backend from AppState.
+/// Returns FTS results if ready, otherwise uses simple search.
 pub async fn search_concepts(
-    config: &Config,
+    state: &AppState,
     params: SearchConceptsParams,
 ) -> Result<SearchConceptsResponse> {
-    // Create search backend based on configuration
-    let backend = create_search_backend(config).await?;
+    // Get active backend from state (FTS if ready, else simple)
+    let backend = state.search_backend();
+    let backend_name = state.active_backend_name();
 
     // Execute search (polymorphic dispatch)
     let results = backend.search(&params).await?;
@@ -56,6 +59,7 @@ pub async fn search_concepts(
         results,
         total,
         query: params.query,
+        backend: backend_name.to_string(),
     })
 }
 
@@ -110,12 +114,14 @@ mod tests {
             results: vec![],
             total: 0,
             query: "test query".to_string(),
+            backend: "simple".to_string(),
         };
 
         let json = serde_json::to_string(&response).expect("Should serialize");
         assert!(json.contains("results"));
         assert!(json.contains("total"));
         assert!(json.contains("test query"));
+        assert!(json.contains("simple"));
     }
 
     #[test]

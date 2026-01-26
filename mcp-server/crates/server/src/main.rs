@@ -5,6 +5,7 @@ mod metadata;
 mod resources;
 mod search;
 mod server;
+mod state;
 mod tools;
 mod util;
 
@@ -12,6 +13,7 @@ use config::Config;
 use error::Result;
 use rmcp::{transport::stdio, ServiceExt};
 use server::MusicTheoryServer;
+use state::AppState;
 
 /// Add context to a configuration error.
 fn config_context(context: &str, error: impl std::fmt::Display) -> error::Error {
@@ -47,6 +49,7 @@ async fn main() -> Result<()> {
     );
 
     // Build Tantivy index if configured (only when fts feature enabled)
+    // TODO: Phase 3 will move this to background async indexing
     #[cfg(feature = "fts")]
     if config.search.backend == "tantivy" && config.search.rebuild_on_startup {
         log::info!("Rebuilding Tantivy index on startup");
@@ -68,9 +71,15 @@ async fn main() -> Result<()> {
         log::info!("Using existing Tantivy index (rebuild_on_startup = false)");
     }
 
+    // Create application state
+    log::info!("Creating application state");
+    let state = AppState::new(config)
+        .await
+        .map_err(|e| io_context("Failed to create application state", e))?;
+
     // Create and run the MCP server with stdio transport
     log::info!(transport = "stdio"; "Starting MCP server");
-    let service = MusicTheoryServer::new(config)
+    let service = MusicTheoryServer::new(state)
         .serve(stdio())
         .await
         .map_err(|e| io_context("Failed to start server", e))?;
