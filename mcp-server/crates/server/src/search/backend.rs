@@ -128,9 +128,16 @@ mod tests {
     #[tokio::test]
     #[cfg(feature = "fts")]
     async fn test_create_search_backend_tantivy_no_index() {
-        let config = test_config("tantivy");
+        use std::env;
+
+        // Use a guaranteed non-existent path in temp directory
+        let nonexistent_path = env::temp_dir().join(format!("nonexistent-index-{}", std::process::id()));
+
+        let mut config = test_config("tantivy");
+        config.search.index_path = nonexistent_path.to_string_lossy().to_string();
+
         let result = create_search_backend(&config).await;
         // Should fail because index doesn't exist
-        assert!(result.is_err());
+        assert!(result.is_err(), "Expected error when index doesn't exist");
     }
 }

@@ -6,7 +6,7 @@
 #![cfg(feature = "fts")]
 
 use music_theory_mcp::config::{
-    Config, LoggingConfig, PathsConfig, SearchConfig, ServerConfig, SourcesConfig,
+    Config, PathsConfig, SearchConfig, ServerConfig, SourcesConfig,
 };
 use music_theory_mcp::search::build_index;
 use music_theory_mcp::state::AppState;
@@ -40,9 +40,12 @@ fn create_test_config(temp_dir: &TempDir, backend: &str, fuzzy: bool) -> Config 
             skill_docs: base_path.to_string_lossy().to_string(),
         },
         sources: SourcesConfig::default(),
-        logging: LoggingConfig {
-            level: "error".to_string(),
-        },
+        logging: twyg::OptsBuilder::new()
+            .level(twyg::LogLevel::Error)
+            .coloured(false)
+            .output(twyg::Output::Stderr)
+            .build()
+            .unwrap(),
         search: SearchConfig {
             backend: backend.to_string(),
             index_path: index_path.to_string_lossy().to_string(),
@@ -461,7 +464,7 @@ async fn test_health_tool_with_fts_ready() {
     let config = create_test_config(&temp_dir, "tantivy", false);
 
     // Set up test data
-    setup_test_data(&temp_dir);
+    setup_test_data(&temp_dir).expect("Failed to setup test data");
 
     // Build index
     build_index(&config).await.expect("Failed to build index");
@@ -500,7 +503,7 @@ async fn test_health_tool_simple_backend() {
     let temp_dir = TempDir::new().expect("Failed to create temp dir");
     let config = create_test_config(&temp_dir, "simple", false);
 
-    setup_test_data(&temp_dir);
+    setup_test_data(&temp_dir).expect("Failed to setup test data");
 
     let state = AppState::new(config).await.expect("Failed to create state");
 
@@ -520,7 +523,7 @@ async fn test_health_tool_tantivy_not_ready() {
     let temp_dir = TempDir::new().expect("Failed to create temp dir");
     let config = create_test_config(&temp_dir, "tantivy", false);
 
-    setup_test_data(&temp_dir);
+    setup_test_data(&temp_dir).expect("Failed to setup test data");
 
     // Create state without building index
     let state = AppState::new(config).await.expect("Failed to create state");
