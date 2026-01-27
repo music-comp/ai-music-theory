@@ -589,4 +589,674 @@ mod tests {
             );
         }
     }
+
+    #[tokio::test]
+    async fn test_handle_command_serve_default() {
+        // Test that handle_command dispatches to serve when no command given
+        let cli = Cli {
+            log_level: None,
+            command: None,
+        };
+
+        // This will try to run the server, which will fail because there's no config file
+        // But that's okay - we're testing the dispatch logic
+        let result = handle_command(cli).await;
+        // Should fail trying to load config (that's expected)
+        assert!(result.is_err());
+    }
+
+    // Note: These tests modify global state (env vars and twyg logging setup)
+    // Run them individually with: cargo test --features fts <test_name> -- --ignored
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    #[ignore = "Modifies global state - run individually"]
+    async fn test_handle_index_command_no_index() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        // Create a test concept card
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        // Create a minimal config file
+        let config_content = format!(
+            r#"
+[server]
+name = "test-server"
+version = "0.1.0"
+
+[paths]
+base = "{}"
+sources_md = "sources-md"
+concept_cards = "{}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            temp_dir.path().display(),
+            concept_cards_path.display(),
+            temp_dir.path().join("test-index").display()
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).expect("Failed to create config dir");
+        let config_path = config_dir.join("default.toml");
+        fs::write(&config_path, config_content).expect("Failed to write config");
+
+        // Set env var to use our test config
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", config_dir);
+
+        // Run index command (force=false, should build since no index exists)
+        let result = handle_index_command(false, None).await;
+
+        // Clean up env var
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        if let Err(ref e) = result {
+            eprintln!("Error: {:?}", e);
+        }
+        assert!(result.is_ok(), "Failed with error: {:?}", result.err());
+    }
+
+    // Note: These tests modify global state (env vars and twyg logging setup)
+    // Run them individually with: cargo test --features fts <test_name> -- --ignored
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    #[ignore = "Modifies global state - run individually"]
+    async fn test_handle_index_command_with_fresh_index() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        let config_content = format!(
+            r#"
+[server]
+name = "test-server"
+version = "0.1.0"
+
+[paths]
+base = "{}"
+sources_md = "sources-md"
+concept_cards = "{}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            temp_dir.path().display(),
+            concept_cards_path.display(),
+            index_path.display()
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).expect("Failed to create config dir");
+        fs::write(config_dir.join("default.toml"), config_content).expect("Failed to write config");
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Build index first
+        build_index(&Config::load().unwrap())
+            .await
+            .expect("Failed to build index");
+
+        // Now try to index again without force - should skip
+        let result = handle_index_command(false, None).await;
+
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    // Note: These tests modify global state (env vars and twyg logging setup)
+    // Run them individually with: cargo test --features fts <test_name> -- --ignored
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    #[ignore = "Modifies global state - run individually"]
+    async fn test_handle_index_command_with_force() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        let config_content = format!(
+            r#"
+[server]
+name = "test-server"
+version = "0.1.0"
+
+[paths]
+base = "{}"
+sources_md = "sources-md"
+concept_cards = "{}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            temp_dir.path().display(),
+            concept_cards_path.display(),
+            index_path.display()
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).expect("Failed to create config dir");
+        fs::write(config_dir.join("default.toml"), config_content).expect("Failed to write config");
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Build with force=true (should always build)
+        let result = handle_index_command(true, None).await;
+
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        if let Err(ref e) = result {
+            eprintln!("test_handle_index_command_with_force error: {}", e);
+        }
+        assert!(result.is_ok(), "Expected Ok, got: {:?}", result.err());
+    }
+
+    // Note: These tests modify global state (env vars and twyg logging setup)
+    // Run them individually with: cargo test --features fts <test_name> -- --ignored
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    #[ignore = "Modifies global state - run individually"]
+    async fn test_handle_status_command_no_index() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let config_content = format!(
+            r#"
+[server]
+name = "test-server"
+version = "0.1.0"
+
+[paths]
+base = "{}"
+sources_md = "sources-md"
+concept_cards = "concept-cards"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            temp_dir.path().display(),
+            temp_dir.path().join("nonexistent-index").display()
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).expect("Failed to create config dir");
+        fs::write(config_dir.join("default.toml"), config_content).expect("Failed to write config");
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Should succeed but report no index
+        let result = handle_status_command(None).await;
+
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    // Note: These tests modify global state (env vars and twyg logging setup)
+    // Run them individually with: cargo test --features fts <test_name> -- --ignored
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    #[ignore = "Modifies global state - run individually"]
+    async fn test_handle_status_command_no_metadata() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+        fs::create_dir_all(&index_path).expect("Failed to create index dir");
+
+        let config_content = format!(
+            r#"
+[server]
+name = "test-server"
+version = "0.1.0"
+
+[paths]
+base = "{}"
+sources_md = "sources-md"
+concept_cards = "concept-cards"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            temp_dir.path().display(),
+            index_path.display()
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).expect("Failed to create config dir");
+        fs::write(config_dir.join("default.toml"), config_content).expect("Failed to write config");
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Should succeed but report no metadata
+        let result = handle_status_command(None).await;
+
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    // Note: These tests modify global state (env vars and twyg logging setup)
+    // Run them individually with: cargo test --features fts <test_name> -- --ignored
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    #[ignore = "Modifies global state - run individually"]
+    async fn test_handle_status_command_with_index() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        let config_content = format!(
+            r#"
+[server]
+name = "test-server"
+version = "0.1.0"
+
+[paths]
+base = "{}"
+sources_md = "sources-md"
+concept_cards = "{}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            temp_dir.path().display(),
+            concept_cards_path.display(),
+            index_path.display()
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).expect("Failed to create config dir");
+        fs::write(config_dir.join("default.toml"), config_content).expect("Failed to write config");
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Build index first
+        build_index(&Config::load().unwrap())
+            .await
+            .expect("Failed to build index");
+
+        // Now check status
+        let result = handle_status_command(None).await;
+
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    // Note: These tests modify global state (env vars and twyg logging setup)
+    // Run them individually with: cargo test --features fts <test_name> -- --ignored
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    #[ignore = "Modifies global state - run individually"]
+    async fn test_handle_status_command_with_stale_index() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        let config_content = format!(
+            r#"
+[server]
+name = "test-server"
+version = "0.1.0"
+
+[paths]
+base = "{}"
+sources_md = "sources-md"
+concept_cards = "{}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            temp_dir.path().display(),
+            concept_cards_path.display(),
+            index_path.display()
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).expect("Failed to create config dir");
+        fs::write(config_dir.join("default.toml"), config_content).expect("Failed to write config");
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Build index
+        build_index(&Config::load().unwrap())
+            .await
+            .expect("Failed to build index");
+
+        // Add a new file to make index stale
+        fs::write(concept_cards_path.join("new.md"), card_content)
+            .expect("Failed to write new card");
+
+        // Check status - should report stale
+        let result = handle_status_command(None).await;
+
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    // Note: These tests modify global state (env vars and twyg logging setup)
+    // Run them individually with: cargo test --features fts <test_name> -- --ignored
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    #[ignore = "Modifies global state - run individually"]
+    async fn test_handle_index_command_with_log_level() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        let config_content = format!(
+            r#"
+[server]
+name = "test-server"
+version = "0.1.0"
+
+[paths]
+base = "{}"
+sources_md = "sources-md"
+concept_cards = "{}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            temp_dir.path().display(),
+            concept_cards_path.display(),
+            temp_dir.path().join("test-index").display()
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).expect("Failed to create config dir");
+        fs::write(config_dir.join("default.toml"), config_content).expect("Failed to write config");
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Test with log level override
+        let result = handle_index_command(false, Some("debug".to_string())).await;
+
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    // Note: These tests modify global state (env vars and twyg logging setup)
+    // Run them individually with: cargo test --features fts <test_name> -- --ignored
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    #[ignore = "Modifies global state - run individually"]
+    async fn test_handle_status_command_with_log_level() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let config_content = format!(
+            r#"
+[server]
+name = "test-server"
+version = "0.1.0"
+
+[paths]
+base = "{}"
+sources_md = "sources-md"
+concept_cards = "concept-cards"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            temp_dir.path().display(),
+            temp_dir.path().join("nonexistent").display()
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).expect("Failed to create config dir");
+        fs::write(config_dir.join("default.toml"), config_content).expect("Failed to write config");
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Test with log level override
+        let result = handle_status_command(Some("trace".to_string())).await;
+
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
 }
