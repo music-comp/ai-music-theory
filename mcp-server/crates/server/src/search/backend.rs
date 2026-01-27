@@ -51,6 +51,7 @@ pub trait SearchBackend: Send + Sync {
 /// Returns `Err` if:
 /// - Backend type is unknown
 /// - Backend initialization fails (e.g., Tantivy index doesn't exist)
+#[allow(dead_code)]
 pub async fn create_search_backend(config: &Config) -> Result<Box<dyn SearchBackend>> {
     match config.search.backend.as_str() {
         #[cfg(feature = "fts")]

@@ -2,8 +2,6 @@
 //!
 //! This module provides the Indexer for adding SearchDocuments to a Tantivy index.
 
-#![cfg(feature = "fts")]
-
 use std::path::Path;
 use tantivy::{Index, IndexWriter, TantivyDocument};
 

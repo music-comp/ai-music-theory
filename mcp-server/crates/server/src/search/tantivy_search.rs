@@ -3,8 +3,6 @@
 //! This module provides the TantivySearch backend for executing full-text searches
 //! using the Tantivy index.
 
-#![cfg(feature = "fts")]
-
 use async_trait::async_trait;
 use std::path::Path;
 use tantivy::collector::TopDocs;

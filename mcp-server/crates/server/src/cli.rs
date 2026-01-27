@@ -2,6 +2,7 @@
 //!
 //! Provides serve/index/status subcommands using clap.
 
+#[cfg(feature = "fts")]
 use std::sync::Arc;
 
 use clap::{Parser, Subcommand};

@@ -3,8 +3,6 @@
 //! This module defines the Tantivy schema mapping from SearchDocument,
 //! with appropriate field types and options for efficient full-text search.
 
-#![cfg(feature = "fts")]
-
 use tantivy::schema::{Field, Schema, TextFieldIndexing, TextOptions, FAST, STORED, STRING};
 use tantivy::tokenizer::TokenizerManager;
 

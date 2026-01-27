@@ -22,6 +22,7 @@ mod schema;
 mod tantivy_search;
 
 // Public exports
+#[allow(unused_imports)]
 pub use backend::SearchBackend;
 pub use document::SearchDocument;
 pub use simple_search::SimpleSearch;

@@ -3,8 +3,6 @@
 //! This module provides QueryBuilder for constructing weighted multi-field queries
 //! that match the relevance scoring used in simple search.
 
-#![cfg(feature = "fts")]
-
 use tantivy::query::{BooleanQuery, BoostQuery, FuzzyTermQuery, Occur, Query, TermQuery};
 use tantivy::schema::IndexRecordOption;
 use tantivy::tokenizer::{LowerCaser, SimpleTokenizer, Stemmer, TextAnalyzer};

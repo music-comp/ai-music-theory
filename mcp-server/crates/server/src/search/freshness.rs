@@ -3,8 +3,6 @@
 //! This module provides metadata tracking to avoid unnecessary index rebuilds.
 //! Uses content hashing (file paths + mtimes) to detect changes.
 
-#![cfg(feature = "fts")]
-
 use std::path::Path;
 use std::time::SystemTime;
 

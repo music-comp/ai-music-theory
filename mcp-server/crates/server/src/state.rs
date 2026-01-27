@@ -3,9 +3,14 @@
 //! This module provides AppState for managing the search backend state,
 //! including FTS readiness tracking and dynamic backend switching.
 
+use std::sync::Arc;
+
+#[cfg(feature = "fts")]
 use std::path::Path;
+#[cfg(feature = "fts")]
 use std::sync::atomic::{AtomicBool, Ordering};
-use std::sync::{Arc, RwLock};
+#[cfg(feature = "fts")]
+use std::sync::RwLock;
 
 use crate::config::Config;
 use crate::error::Result;
@@ -14,6 +19,10 @@ use crate::search::SimpleSearch;
 
 #[cfg(feature = "fts")]
 use crate::search::{build_index, is_index_fresh, TantivySearch};
+
+/// Type alias for FTS backend initialization return type.
+#[cfg(feature = "fts")]
+type FtsBackendInit = (Arc<RwLock<Option<Arc<TantivySearch>>>>, Arc<AtomicBool>);
 
 /// Shared application state.
 ///
@@ -155,9 +164,7 @@ impl AppState {
 /// Returns tuple of (fts_backend, fts_ready) where backend may be None
 /// if index needs to be built.
 #[cfg(feature = "fts")]
-fn initialize_fts_backend(
-    config: &Config,
-) -> Result<(Arc<RwLock<Option<Arc<TantivySearch>>>>, Arc<AtomicBool>)> {
+fn initialize_fts_backend(config: &Config) -> Result<FtsBackendInit> {
     if config.search.backend == "tantivy" {
         let index_path = config.search.index_path()?;
 
