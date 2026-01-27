@@ -6,6 +6,7 @@ This index is automatically generated. Do not edit manually.
 
 | Number | Title | State | Updated |
 |--------|-------|-------|----------|
+| 0006 | Fix Search Quality Issues | Active | 2026-01-27 |
 | 0005 | Tantivy Feature Gating & Async Background Indexing | Active | 2026-01-26 |
 | 0004 | Tantivy Full-Text Search for the MCP Server | Final | 2026-01-26 |
 | 0003 | Fix Category Extraction and Improve Metadata Architecture | Final | 2026-01-26 |
@@ -16,6 +17,7 @@ This index is automatically generated. Do not edit manually.
 
 ### Active
 
+- [0006 - Fix Search Quality Issues](05-active/0006-fix-search-quality-issues.md)
 - [0005 - Tantivy Feature Gating & Async Background Indexing](05-active/0005-tantivy-feature-gating-async-background-indexing.md)
 - [0001 - Open Music Theory Processing Plan](05-active/0001-open-music-theory-processing-plan.md)
 
