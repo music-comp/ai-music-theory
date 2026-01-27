@@ -403,4 +403,463 @@ mod tests {
         state.set_fts_ready(false);
         assert!(!state.is_fts_ready());
     }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_update_fts_backend() {
+        use crate::search::TantivySearch;
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+
+        // Build a minimal index for testing
+        fs::create_dir_all(&index_path).expect("Failed to create index dir");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        // Create a test concept card
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        // Build index
+        let mut config = test_config("tantivy");
+        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+
+        crate::search::build_index(&config)
+            .await
+            .expect("Failed to build index");
+
+        // Create state
+        let state = AppState::new(config.clone())
+            .await
+            .expect("Failed to create state");
+
+        // Load the index we just built
+        let backend =
+            TantivySearch::new(&index_path, config.search.clone()).expect("Failed to load index");
+
+        // Update backend
+        let result = state.update_fts_backend(backend);
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_search_backend_with_fts_ready() {
+        use crate::search::TantivySearch;
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+
+        // Build a minimal index
+        fs::create_dir_all(&index_path).expect("Failed to create index dir");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        let mut config = test_config("tantivy");
+        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+
+        crate::search::build_index(&config)
+            .await
+            .expect("Failed to build index");
+
+        let state = AppState::new(config.clone())
+            .await
+            .expect("Failed to create state");
+
+        // Load and set backend
+        let backend =
+            TantivySearch::new(&index_path, config.search.clone()).expect("Failed to load index");
+        state.update_fts_backend(backend).expect("Failed to update");
+        state.set_fts_ready(true);
+
+        // Now search_backend should return FTS backend
+        let _backend = state.search_backend();
+        assert_eq!(state.active_backend_name(), "tantivy");
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_active_backend_name_with_fts() {
+        let config = test_config("tantivy");
+        let state = AppState::new(config).await.expect("Failed to create state");
+
+        // Initially simple
+        assert_eq!(state.active_backend_name(), "simple");
+
+        // After marking ready
+        state.set_fts_ready(true);
+        assert_eq!(state.active_backend_name(), "tantivy");
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_initialize_fts_with_simple_backend() {
+        let config = test_config("simple");
+        let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
+
+        // Should succeed without doing anything
+        let result = initialize_fts(&state).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_initialize_fts_with_nonexistent_index() {
+        use std::env;
+
+        let mut config = test_config("tantivy");
+        // Use guaranteed non-existent path
+        let nonexistent_path = env::temp_dir().join(format!("nonexistent-{}", std::process::id()));
+        config.search.index_path = nonexistent_path.to_string_lossy().to_string();
+
+        let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
+
+        // Should succeed and start background indexing (though it will fail)
+        let result = initialize_fts(&state).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_index_exists_and_fresh_nonexistent() {
+        use std::env;
+
+        let nonexistent_path = env::temp_dir().join(format!("nonexistent-{}", std::process::id()));
+        let config = test_config("tantivy");
+
+        let result = index_exists_and_fresh(&nonexistent_path, &config).await;
+        assert!(result.is_ok());
+        assert!(!result.unwrap());
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_index_exists_and_fresh_stale() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+
+        fs::create_dir_all(&index_path).expect("Failed to create index dir");
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        // Create old metadata to make index appear stale
+        let metadata = crate::search::freshness::IndexMetadata {
+            doc_count: 1,
+            last_indexed: std::time::SystemTime::now(),
+            content_hash: "old-hash".to_string(),
+        };
+        crate::search::freshness::save_metadata(&index_path, &metadata)
+            .await
+            .expect("Failed to save metadata");
+
+        // Create a new file to make content hash different
+        let card_content = r#"---
+title: New Card
+category: test
+---
+
+# New Card
+
+New content.
+"#;
+        fs::write(concept_cards_path.join("new.md"), card_content).expect("Failed to write card");
+
+        let mut config = test_config("tantivy");
+        config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+
+        let result = index_exists_and_fresh(&index_path, &config).await;
+        assert!(result.is_ok());
+        // Should be false because content hash doesn't match
+        assert!(!result.unwrap());
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_index_exists_and_fresh_error_handling() {
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+
+        // Create index dir but with invalid metadata
+        std::fs::create_dir_all(&index_path).expect("Failed to create index dir");
+        std::fs::write(index_path.join("metadata.json"), "invalid json")
+            .expect("Failed to write invalid metadata");
+
+        let config = test_config("tantivy");
+
+        // Should handle error gracefully and return false
+        let result = index_exists_and_fresh(&index_path, &config).await;
+        assert!(result.is_ok());
+        assert!(!result.unwrap());
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_initialize_fts_backend_with_simple() {
+        let config = test_config("simple");
+        let result = initialize_fts_backend(&config);
+        assert!(result.is_ok());
+
+        let (backend, ready) = result.unwrap();
+        assert!(backend.read().unwrap().is_none());
+        assert!(!ready.load(Ordering::Acquire));
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_initialize_fts_backend_no_index() {
+        use std::env;
+
+        let mut config = test_config("tantivy");
+        let nonexistent_path = env::temp_dir().join(format!("nonexistent-{}", std::process::id()));
+        config.search.index_path = nonexistent_path.to_string_lossy().to_string();
+
+        let result = initialize_fts_backend(&config);
+        assert!(result.is_ok());
+
+        let (backend, ready) = result.unwrap();
+        assert!(backend.read().unwrap().is_none());
+        assert!(!ready.load(Ordering::Acquire));
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_build_fts_index_for_state() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        let mut config = test_config("tantivy");
+        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+
+        let state = AppState::new(config).await.expect("Failed to create state");
+
+        let result = build_fts_index_for_state(&state).await;
+        assert!(result.is_ok());
+
+        let stats = result.unwrap();
+        assert_eq!(stats.indexed, 1);
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_initialize_fts_with_fresh_index() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        let mut config = test_config("tantivy");
+        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+
+        // Build index first
+        crate::search::build_index(&config)
+            .await
+            .expect("Failed to build index");
+
+        // Create state (should load existing index)
+        let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
+
+        // Initialize FTS - should detect fresh index and not start background indexing
+        let result = initialize_fts(&state).await;
+        assert!(result.is_ok());
+        assert!(state.is_fts_ready());
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_index_exists_and_fresh_with_fresh_index() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        let mut config = test_config("tantivy");
+        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+
+        // Build index
+        crate::search::build_index(&config)
+            .await
+            .expect("Failed to build index");
+
+        // Check freshness - should be true
+        let result = index_exists_and_fresh(&index_path, &config).await;
+        assert!(result.is_ok());
+        assert!(result.unwrap());
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_start_background_indexing_success() {
+        use std::fs;
+        use tempfile::TempDir;
+        use tokio::time::{sleep, Duration};
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        let mut config = test_config("tantivy");
+        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+
+        let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
+
+        // Manually call start_background_indexing
+        start_background_indexing(Arc::clone(&state));
+
+        // Give it time to complete
+        sleep(Duration::from_secs(2)).await;
+
+        // Check if FTS became ready
+        assert!(state.is_fts_ready());
+        assert_eq!(state.active_backend_name(), "tantivy");
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_start_background_indexing_failure() {
+        use std::env;
+        use tempfile::TempDir;
+        use tokio::time::{sleep, Duration};
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+
+        let mut config = test_config("tantivy");
+        config.search.index_path = index_path.to_string_lossy().to_string();
+        // Use nonexistent concept cards path to cause indexing failure
+        let nonexistent_path =
+            env::temp_dir().join(format!("nonexistent-cards-{}", std::process::id()));
+        config.paths.concept_cards = nonexistent_path.to_string_lossy().to_string();
+
+        let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
+
+        // Verify initial state
+        assert!(!state.is_fts_ready());
+
+        // Manually call start_background_indexing (will fail due to missing concept cards)
+        start_background_indexing(Arc::clone(&state));
+
+        // Give it time to attempt and fail
+        sleep(Duration::from_millis(500)).await;
+
+        // Should remain not ready since indexing failed
+        assert!(!state.is_fts_ready());
+        assert_eq!(state.active_backend_name(), "simple");
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_search_backend_read_lock_fallback() {
+        // This tests the fallback path when fts_backend.read() succeeds but backend is None
+        let config = test_config("tantivy");
+        let state = AppState::new(config).await.expect("Failed to create state");
+
+        // Set ready but don't actually set a backend
+        state.set_fts_ready(true);
+
+        // Should fall back to simple backend because backend is None
+        let backend = state.search_backend();
+        // Can't easily test the type, but it shouldn't panic
+        drop(backend);
+    }
 }

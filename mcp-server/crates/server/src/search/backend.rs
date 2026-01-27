@@ -131,7 +131,8 @@ mod tests {
         use std::env;
 
         // Use a guaranteed non-existent path in temp directory
-        let nonexistent_path = env::temp_dir().join(format!("nonexistent-index-{}", std::process::id()));
+        let nonexistent_path =
+            env::temp_dir().join(format!("nonexistent-index-{}", std::process::id()));
 
         let mut config = test_config("tantivy");
         config.search.index_path = nonexistent_path.to_string_lossy().to_string();

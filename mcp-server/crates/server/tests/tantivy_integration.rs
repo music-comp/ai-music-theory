@@ -5,9 +5,7 @@
 
 #![cfg(feature = "fts")]
 
-use music_theory_mcp::config::{
-    Config, PathsConfig, SearchConfig, ServerConfig, SourcesConfig,
-};
+use music_theory_mcp::config::{Config, PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
 use music_theory_mcp::search::build_index;
 use music_theory_mcp::state::AppState;
 use music_theory_mcp::tools::search::{search_concepts, SearchConceptsParams};
