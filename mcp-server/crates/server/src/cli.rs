@@ -25,6 +25,10 @@ use crate::search::{build_index, is_index_fresh, IndexMetadata};
                   including source texts, concept cards, and topic guides."
 )]
 pub struct Cli {
+    /// Override log level (trace, debug, info, warn, error)
+    #[arg(long = "log-level", short = 'l', global = true)]
+    pub log_level: Option<String>,
+
     #[command(subcommand)]
     pub command: Option<Commands>,
 }
@@ -61,14 +65,65 @@ pub enum Commands {
 ///
 /// Returns `Err` if command execution fails.
 pub async fn handle_command(cli: Cli) -> Result<()> {
+    let log_level = cli.log_level.clone();
+
     match cli.command.unwrap_or(Commands::Serve) {
-        Commands::Serve => run_server().await,
+        Commands::Serve => run_server(log_level).await,
 
         #[cfg(feature = "fts")]
-        Commands::Index { force } => handle_index_command(force).await,
+        Commands::Index { force } => handle_index_command(force, log_level).await,
 
         #[cfg(feature = "fts")]
-        Commands::Status => handle_status_command().await,
+        Commands::Status => handle_status_command(log_level).await,
+    }
+}
+
+/// Apply log level override if provided.
+///
+/// Since twyg::Opts fields are private, we rebuild the Opts with OptsBuilder
+/// using the current values plus the overridden log level.
+///
+/// # Arguments
+///
+/// * `opts` - Original twyg options from config
+/// * `log_level_override` - Optional log level string to override
+///
+/// # Returns
+///
+/// Returns new twyg::Opts with overridden log level, or original if no override.
+///
+/// # Errors
+///
+/// Returns `Err` if the log level string is invalid.
+fn apply_log_level_override(
+    opts: &twyg::Opts,
+    log_level_override: Option<String>,
+) -> Result<twyg::Opts> {
+    if let Some(level_str) = log_level_override {
+        use twyg::{LogLevel, OptsBuilder};
+
+        // Parse the log level string
+        let level: LogLevel = level_str
+            .parse()
+            .map_err(|_| crate::error::Error::config(format!("Invalid log level: {}", level_str)))?;
+
+        // Rebuild Opts with all existing values except the level
+        OptsBuilder::new()
+            .coloured(opts.coloured())
+            .output(opts.output().clone())
+            .level(level)
+            .report_caller(opts.report_caller())
+            .timestamp_format(opts.timestamp_format().clone())
+            .pad_level(opts.pad_level())
+            .pad_amount(opts.pad_amount())
+            .pad_side(opts.pad_side())
+            .msg_separator(opts.msg_separator())
+            .arrow_char(opts.arrow_char())
+            .colors(opts.colors().clone())
+            .build()
+            .map_err(|e| crate::error::Error::config(format!("Failed to build twyg opts: {}", e)))
+    } else {
+        Ok(opts.clone())
     }
 }
 
@@ -76,14 +131,21 @@ pub async fn handle_command(cli: Cli) -> Result<()> {
 ///
 /// This is the default command when no subcommand is specified.
 /// Performs the same initialization as the original main() function.
-async fn run_server() -> Result<()> {
+///
+/// # Arguments
+///
+/// * `log_level_override` - Optional log level to override config
+async fn run_server(log_level_override: Option<String>) -> Result<()> {
     use rmcp::{transport::stdio, ServiceExt};
 
     // Load configuration
     let config = Config::load()?;
 
+    // Apply log level override if provided
+    let log_opts = apply_log_level_override(&config.logging, log_level_override)?;
+
     // Initialize logging with twyg from config
-    twyg::setup(config.logging.clone())
+    twyg::setup(log_opts)
         .map_err(|e| crate::error::Error::config(format!("Failed to setup logging: {}", e)))?;
 
     log::info!(
@@ -150,12 +212,20 @@ async fn run_server() -> Result<()> {
 ///
 /// Builds the index if it doesn't exist or if --force is specified.
 /// Skips building if index is fresh and --force is not used.
+///
+/// # Arguments
+///
+/// * `force` - Force rebuild even if index is fresh
+/// * `log_level_override` - Optional log level to override config
 #[cfg(feature = "fts")]
-async fn handle_index_command(force: bool) -> Result<()> {
+async fn handle_index_command(force: bool, log_level_override: Option<String>) -> Result<()> {
     let config = Config::load()?;
 
+    // Apply log level override if provided
+    let log_opts = apply_log_level_override(&config.logging, log_level_override)?;
+
     // Initialize logging for CLI output
-    twyg::setup(config.logging.clone())
+    twyg::setup(log_opts)
         .map_err(|e| crate::error::Error::config(format!("Failed to setup logging: {}", e)))?;
 
     let index_path = config.search.index_path()?;
@@ -184,9 +254,19 @@ async fn handle_index_command(force: bool) -> Result<()> {
 ///
 /// Displays index metadata including document count, last indexed time,
 /// and freshness status.
+///
+/// # Arguments
+///
+/// * `log_level_override` - Optional log level to override config
 #[cfg(feature = "fts")]
-async fn handle_status_command() -> Result<()> {
+async fn handle_status_command(log_level_override: Option<String>) -> Result<()> {
     let config = Config::load()?;
+
+    // Apply log level override if provided (for any debug logging)
+    let log_opts = apply_log_level_override(&config.logging, log_level_override)?;
+    twyg::setup(log_opts)
+        .map_err(|e| crate::error::Error::config(format!("Failed to setup logging: {}", e)))?;
+
     let index_path = config.search.index_path()?;
 
     if !index_path.exists() {
@@ -246,12 +326,47 @@ mod tests {
     fn test_cli_parse_no_command() {
         let cli = Cli::parse_from(&["music-theory-mcp"]);
         assert!(cli.command.is_none());
+        assert!(cli.log_level.is_none());
     }
 
     #[test]
     fn test_cli_parse_serve() {
         let cli = Cli::parse_from(&["music-theory-mcp", "serve"]);
         assert!(matches!(cli.command, Some(Commands::Serve)));
+        assert!(cli.log_level.is_none());
+    }
+
+    #[test]
+    fn test_cli_parse_log_level_long() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "--log-level", "debug"]);
+        assert_eq!(cli.log_level, Some("debug".to_string()));
+    }
+
+    #[test]
+    fn test_cli_parse_log_level_short() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "-l", "trace"]);
+        assert_eq!(cli.log_level, Some("trace".to_string()));
+    }
+
+    #[test]
+    fn test_cli_parse_log_level_with_serve() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "--log-level", "warn", "serve"]);
+        assert!(matches!(cli.command, Some(Commands::Serve)));
+        assert_eq!(cli.log_level, Some("warn".to_string()));
+    }
+
+    #[test]
+    fn test_cli_parse_log_level_before_command() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "-l", "error", "serve"]);
+        assert!(matches!(cli.command, Some(Commands::Serve)));
+        assert_eq!(cli.log_level, Some("error".to_string()));
+    }
+
+    #[test]
+    fn test_cli_parse_log_level_after_command() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "serve", "--log-level", "info"]);
+        assert!(matches!(cli.command, Some(Commands::Serve)));
+        assert_eq!(cli.log_level, Some("info".to_string()));
     }
 
     #[test]
@@ -259,6 +374,7 @@ mod tests {
     fn test_cli_parse_index() {
         let cli = Cli::parse_from(&["music-theory-mcp", "index"]);
         assert!(matches!(cli.command, Some(Commands::Index { force: false })));
+        assert!(cli.log_level.is_none());
     }
 
     #[test]
@@ -266,6 +382,7 @@ mod tests {
     fn test_cli_parse_index_force() {
         let cli = Cli::parse_from(&["music-theory-mcp", "index", "--force"]);
         assert!(matches!(cli.command, Some(Commands::Index { force: true })));
+        assert!(cli.log_level.is_none());
     }
 
     #[test]
@@ -273,6 +390,15 @@ mod tests {
     fn test_cli_parse_index_force_short() {
         let cli = Cli::parse_from(&["music-theory-mcp", "index", "-f"]);
         assert!(matches!(cli.command, Some(Commands::Index { force: true })));
+        assert!(cli.log_level.is_none());
+    }
+
+    #[test]
+    #[cfg(feature = "fts")]
+    fn test_cli_parse_index_with_log_level() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "-l", "debug", "index", "--force"]);
+        assert!(matches!(cli.command, Some(Commands::Index { force: true })));
+        assert_eq!(cli.log_level, Some("debug".to_string()));
     }
 
     #[test]
@@ -280,5 +406,88 @@ mod tests {
     fn test_cli_parse_status() {
         let cli = Cli::parse_from(&["music-theory-mcp", "status"]);
         assert!(matches!(cli.command, Some(Commands::Status)));
+        assert!(cli.log_level.is_none());
+    }
+
+    #[test]
+    #[cfg(feature = "fts")]
+    fn test_cli_parse_status_with_log_level() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "--log-level", "trace", "status"]);
+        assert!(matches!(cli.command, Some(Commands::Status)));
+        assert_eq!(cli.log_level, Some("trace".to_string()));
+    }
+
+    #[test]
+    fn test_apply_log_level_override_none() {
+        use twyg::{LogLevel, OptsBuilder, Output};
+
+        let original = OptsBuilder::new()
+            .level(LogLevel::Info)
+            .coloured(true)
+            .output(Output::Stderr)
+            .build()
+            .unwrap();
+
+        let result = apply_log_level_override(&original, None).unwrap();
+        assert_eq!(result.level(), LogLevel::Info);
+    }
+
+    #[test]
+    fn test_apply_log_level_override_some() {
+        use twyg::{LogLevel, OptsBuilder, Output};
+
+        let original = OptsBuilder::new()
+            .level(LogLevel::Info)
+            .coloured(true)
+            .output(Output::Stderr)
+            .build()
+            .unwrap();
+
+        let result = apply_log_level_override(&original, Some("debug".to_string())).unwrap();
+        assert_eq!(result.level(), LogLevel::Debug);
+        // Verify other fields preserved
+        assert_eq!(result.coloured(), original.coloured());
+        assert_eq!(result.output(), original.output());
+    }
+
+    #[test]
+    fn test_apply_log_level_override_invalid() {
+        use twyg::{LogLevel, OptsBuilder, Output};
+
+        let original = OptsBuilder::new()
+            .level(LogLevel::Info)
+            .coloured(true)
+            .output(Output::Stderr)
+            .build()
+            .unwrap();
+
+        let result = apply_log_level_override(&original, Some("invalid".to_string()));
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("Invalid log level"));
+    }
+
+    #[test]
+    fn test_apply_log_level_override_all_levels() {
+        use twyg::{LogLevel, OptsBuilder, Output};
+
+        let original = OptsBuilder::new()
+            .level(LogLevel::Info)
+            .coloured(true)
+            .output(Output::Stderr)
+            .build()
+            .unwrap();
+
+        let levels = vec![
+            ("trace", LogLevel::Trace),
+            ("debug", LogLevel::Debug),
+            ("info", LogLevel::Info),
+            ("warn", LogLevel::Warn),
+            ("error", LogLevel::Error),
+        ];
+
+        for (level_str, expected_level) in levels {
+            let result = apply_log_level_override(&original, Some(level_str.to_string())).unwrap();
+            assert_eq!(result.level(), expected_level, "Failed for level: {}", level_str);
+        }
     }
 }
