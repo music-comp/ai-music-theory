@@ -169,7 +169,8 @@ async fn test_search_returns_relevant_results() {
         query: "triads".to_string(),
         query_mode: None,
         limit: 10,
-        category: None,    };
+        category: None,
+    };
 
     let response = search_concepts(&state, params)
         .await
@@ -200,7 +201,8 @@ async fn test_search_ranking_by_relevance() {
         query: "chords".to_string(),
         query_mode: None,
         limit: 10,
-        category: None,    };
+        category: None,
+    };
 
     let response = search_concepts(&state, params)
         .await
@@ -236,7 +238,8 @@ async fn test_fuzzy_search_finds_typos() {
         query: "haromny".to_string(),
         query_mode: None,
         limit: 10,
-        category: None,    };
+        category: None,
+    };
 
     let response = search_concepts(&state, params)
         .await
@@ -273,7 +276,8 @@ async fn test_backend_switching_simple_to_tantivy() {
         query: "voice".to_string(),
         query_mode: None,
         limit: 10,
-        category: None,    };
+        category: None,
+    };
 
     let simple_response = search_concepts(&simple_state, params.clone())
         .await
@@ -329,7 +333,8 @@ async fn test_snippet_generation_includes_context() {
         query: "parallel".to_string(),
         query_mode: None,
         limit: 10,
-        category: None,    };
+        category: None,
+    };
 
     let response = search_concepts(&state, params)
         .await
@@ -360,7 +365,8 @@ async fn test_empty_query_errors_correctly() {
         query: "".to_string(),
         query_mode: None,
         limit: 10,
-        category: None,    };
+        category: None,
+    };
 
     let result = search_concepts(&state, params).await;
 
@@ -383,7 +389,8 @@ async fn test_search_with_limit() {
         query: "harmony".to_string(),
         query_mode: None,
         limit: 1,
-        category: None,    };
+        category: None,
+    };
 
     let response = search_concepts(&state, params)
         .await
@@ -437,7 +444,8 @@ async fn test_index_rebuild_clears_old_data() {
         query: "test".to_string(),
         query_mode: None,
         limit: 10,
-        category: None,    };
+        category: None,
+    };
 
     let response = search_concepts(&state, params)
         .await
@@ -460,7 +468,8 @@ async fn test_search_tool_integration() {
         query: "harmony".to_string(),
         query_mode: None,
         limit: 5,
-        category: None,    };
+        category: None,
+    };
 
     let response = search_concepts(&state, params)
         .await

@@ -185,7 +185,8 @@ mod tests {
 
     #[test]
     fn test_search_concepts_params_all_fields() {
-        let json = r#"{"query":"suspension","limit":20,"query_mode":"and","category":"voice-leading"}"#;
+        let json =
+            r#"{"query":"suspension","limit":20,"query_mode":"and","category":"voice-leading"}"#;
         let params: SearchConceptsParams = serde_json::from_str(json).expect("Should deserialize");
         assert_eq!(params.query, "suspension");
         assert_eq!(params.limit, 20);

@@ -11,7 +11,6 @@ use stop_words::{get, LANGUAGE};
 
 use crate::config::SearchConfig;
 
-
 /// Stopword filter for preprocessing search queries.
 ///
 /// Removes common English stopwords while preserving domain-specific terms
@@ -333,7 +332,11 @@ mod tests {
         assert!(stopword_set.contains("for"));
 
         // Verify we have a comprehensive list (500+ words)
-        assert!(stopwords.len() > 500, "Expected 500+ stopwords, got {}", stopwords.len());
+        assert!(
+            stopwords.len() > 500,
+            "Expected 500+ stopwords, got {}",
+            stopwords.len()
+        );
     }
 
     #[test]

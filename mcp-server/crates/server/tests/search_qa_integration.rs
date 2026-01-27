@@ -8,9 +8,12 @@
 use music_theory_mcp::config::{Config, QueryMode};
 use music_theory_mcp::state::AppState;
 use music_theory_mcp::tools::search::{search_concepts, SearchConceptsParams};
+
+#[cfg(feature = "fts")]
 use serial_test::serial;
 
 /// Helper to create test config with tantivy backend
+#[cfg(feature = "fts")]
 fn test_config() -> Config {
     let mut config = Config::load().expect("Failed to load config");
     // Force tantivy backend for these tests
@@ -19,6 +22,7 @@ fn test_config() -> Config {
 }
 
 /// Helper to perform search with default settings
+#[cfg(feature = "fts")]
 async fn search_default(
     query: &str,
     limit: usize,
@@ -41,6 +45,7 @@ async fn search_default(
 }
 
 /// Helper to perform search with explicit query mode
+#[cfg(feature = "fts")]
 async fn search_with_mode(
     query: &str,
     limit: usize,
@@ -432,7 +437,8 @@ async fn test_empty_query_error() {
     let params = SearchConceptsParams {
         query: "".to_string(),
         limit: 10,
-        category: None,        query_mode: None,
+        category: None,
+        query_mode: None,
     };
 
     let result = search_concepts(&state, params).await;
@@ -451,7 +457,8 @@ async fn test_whitespace_only_query() {
     let params = SearchConceptsParams {
         query: "   ".to_string(),
         limit: 10,
-        category: None,        query_mode: None,
+        category: None,
+        query_mode: None,
     };
 
     let result = search_concepts(&state, params).await;
@@ -770,7 +777,8 @@ async fn test_backend_is_tantivy() {
     let params = SearchConceptsParams {
         query: "cadence".to_string(),
         limit: 1,
-        category: None,        query_mode: None,
+        category: None,
+        query_mode: None,
     };
 
     let response = search_concepts(&state, params)

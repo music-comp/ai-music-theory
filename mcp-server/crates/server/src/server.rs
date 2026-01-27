@@ -475,7 +475,8 @@ mod tests {
             query: "harmony".to_string(),
             limit: 10,
             query_mode: None,
-            category: None,        });
+            category: None,
+        });
 
         let result = server.search_concepts(params).await;
 
@@ -493,7 +494,8 @@ mod tests {
             query: "chord".to_string(),
             limit: 5,
             query_mode: None,
-            category: None,        });
+            category: None,
+        });
 
         let result = server.search_concepts(params).await;
 
@@ -625,7 +627,8 @@ mod tests {
             query: "test".to_string(),
             limit: 5,
             query_mode: None,
-            category: None,        };
+            category: None,
+        };
         let json = serde_json::to_string(&search_params).unwrap();
         assert!(json.contains("test"));
         assert!(json.contains("5"));

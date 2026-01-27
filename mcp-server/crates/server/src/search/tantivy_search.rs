@@ -517,7 +517,8 @@ mod tests {
             query: "triads".to_string(),
             limit: 10,
             query_mode: None,
-            category: None,        };
+            category: None,
+        };
 
         let results = backend.search(&params).await.expect("Search failed");
         eprintln!("Found {} results", results.len());
@@ -560,7 +561,8 @@ mod tests {
                 query: query_str.to_string(),
                 limit: 10,
                 query_mode: None,
-            category: None,            };
+                category: None,
+            };
 
             // Just verify search executes without error
             let result = backend.search(&params).await;
@@ -598,7 +600,8 @@ mod tests {
             query: "chords".to_string(),
             limit: 1,
             query_mode: None,
-            category: None,        };
+            category: None,
+        };
 
         let results = backend.search(&params).await.expect("Search failed");
         assert!(results.len() <= 1);
@@ -630,7 +633,8 @@ mod tests {
             query: "nonexistent".to_string(),
             limit: 10,
             query_mode: None,
-            category: None,        };
+            category: None,
+        };
 
         let results = backend.search(&params).await.expect("Search failed");
         assert!(results.is_empty());
