@@ -12,22 +12,23 @@ A Model Context Protocol (MCP) server that provides access to comprehensive musi
 - ✅ **Configuration management** - confyg for TOML + ENV with path expansion
 - ✅ **Logging** - twyg for beautiful colored output
 - ✅ **Error handling** - Canonical pattern with backtraces (EH-17)
-- ✅ **9 Tools registered and working**:
+- ✅ **10 Tools registered and working**:
   - `list_sources` - List all source materials with metadata
   - `get_source_chapter` - Retrieve specific chapters
   - `get_source_pdf_path` - Get filesystem paths to PDFs/EPUBs
   - `list_concepts` - List concept cards with optional filtering
   - `list_categories` - List all distinct concept categories with counts
   - `get_concept` - Retrieve specific concepts
-  - `search_concepts` - Full-text search with ranking
+  - `search_concepts` - Full-text search with ranking (includes backend field)
   - `list_guides` - List topic guides
   - `get_guide` - Retrieve specific guides
+  - `health` - Get server health and search backend status
 - ✅ **4 Resources implemented** (ready for registration):
   - `skill://conventions` - Notation conventions
   - `skill://scope` - Topics & objectives
   - `skill://sources` - Bibliography
   - `skill://index` - Complete index
-- ✅ **Test suite** - 238/238 tests passing
+- ✅ **Test suite** - 324+ tests passing (with FTS feature)
 - ✅ **MCP Server** - Full ServerHandler with tool routing via macros
 - ✅ **Stdio transport** - Server verified working
 
@@ -86,63 +87,137 @@ lewin-gmit = "[2007] Lewin - GMIT.pdf"
 
 The server supports two search backends for the `search_concepts` tool:
 
-- **Simple** (default) - Linear scan suitable for <500 concept cards
-- **Tantivy** - Full-text search engine recommended for 500+ concept cards
+- **Simple** (default) - Linear scan, always available, suitable for <500 concept cards
+- **Tantivy** - Full-text search engine, optional feature, recommended for 500+ concept cards
 
 Configure the search backend in `config/default.toml`:
 
 ```toml
 [search]
 # Backend selection: "simple" or "tantivy"
+# Note: "tantivy" requires building with --features fts
 backend = "simple"
 
 # Tantivy index directory (relative to skill root)
 index_path = ".tantivy-index"
 
-# Rebuild index on startup (useful for development)
+# Rebuild index on startup
+# With async background indexing, this is less critical:
+# - false (recommended): Builds only if missing or stale
+# - true: Forces rebuild on every startup
 rebuild_on_startup = false
 
 # Snippet context size in characters
 snippet_size = 200
 
-# Enable fuzzy search (typo tolerance)
+# Enable fuzzy search (typo tolerance, requires --features fts)
 fuzzy_search = false
 
 # Maximum edit distance for fuzzy matching (1-2)
 fuzzy_distance = 2
 ```
 
-**Using Tantivy Search:**
+**Using Tantivy Search (Optional Feature):**
 
-1. Set `backend = "tantivy"` in config
-2. Set `rebuild_on_startup = true` for first run
-3. Restart server (builds index on startup)
-4. Set `rebuild_on_startup = false` for subsequent runs
-5. Index is cached at `.tantivy-index/` for fast startup
+Tantivy is an optional feature that must be enabled at build time:
+
+```bash
+# Build with FTS support
+cargo build --release --features fts
+
+# Or run with FTS support
+cargo run --features fts
+```
+
+**Setting up Tantivy:**
+
+1. Build with `--features fts`
+2. Set `backend = "tantivy"` in config
+3. Build the index using the CLI:
+   ```bash
+   ./target/release/music-theory-mcp index
+   ```
+4. Start the server (index loads instantly):
+   ```bash
+   ./target/release/music-theory-mcp serve
+   # or just: ./target/release/music-theory-mcp
+   ```
+
+**Non-Blocking Indexing:**
+
+The server uses async background indexing:
+- Server starts immediately (<1 second)
+- Index builds in the background if needed
+- Simple search available during indexing
+- Automatic switch to FTS when ready
+- Index freshness checked via content hash (no unnecessary rebuilds)
+
+**CLI Commands:**
+
+```bash
+# Serve (default command)
+music-theory-mcp serve
+
+# Build/rebuild index (with FTS feature)
+music-theory-mcp index
+music-theory-mcp index --force  # Force rebuild even if fresh
+
+# Show index status (with FTS feature)
+music-theory-mcp status
+```
 
 **Benefits of Tantivy:**
 - 10-100x faster search (sub-millisecond queries)
 - Typo tolerance with fuzzy search
 - Phrase queries and boolean operators (future)
 - Scales to 10,000+ documents
+- Background indexing (non-blocking startup)
+- Content hash tracking (avoid unnecessary rebuilds)
 
 **When to Switch:**
 - Simple backend works well up to ~500 concept cards
 - Switch to Tantivy when search latency becomes noticeable
-- The index requires ~1-2 seconds to build for 200 documents
+- The index requires ~1-2 seconds to build for 200 documents (background)
+
+**Search Response Format:**
+
+The `search_concepts` tool now includes a `backend` field indicating which backend served the request:
+
+```json
+{
+  "results": [...],
+  "total": 10,
+  "query": "harmony",
+  "backend": "tantivy"  // or "simple"
+}
+```
 
 ## Building
 
 ```bash
-# Build the project
+# Build without FTS (simple search only, smaller binary)
 cargo build
+cargo build --release
+
+# Build with FTS support (optional Tantivy backend)
+cargo build --features fts
+cargo build --release --features fts
 
 # Run tests
-cargo test
+cargo test                    # Without FTS
+cargo test --features fts     # With FTS
 
 # Run with logging
 RUST_LOG=info cargo run
+RUST_LOG=info cargo run --features fts
 ```
+
+**Binary Size:**
+- Without FTS: ~2.6M (simple search only)
+- With FTS: ~6.3M (both backends available)
+
+**Feature Flags:**
+- `fts` - Enables Tantivy full-text search backend (optional)
 
 ## Using with Claude Desktop
 
@@ -183,7 +258,11 @@ This approach is faster and recommended for regular use:
 
 1. **Build the release binary:**
    ```bash
+   # Without FTS (smaller, simple search only)
    cargo build --release
+
+   # With FTS (full-text search support)
+   cargo build --release --features fts
    ```
 
 2. **Locate your Claude Desktop config file:**
@@ -212,12 +291,29 @@ Once Claude Desktop restarts:
 
 1. Open a new conversation
 2. Look for the server connection indicator (usually in the UI)
-3. Try using one of the 9 available tools:
+3. Try using one of the 10 available tools:
+   - `health` - Check server status and active search backend
    - `list_concepts` - List all concept cards
    - `list_categories` - Browse concepts by category
    - `search_concepts` - Search for specific topics
    - `list_guides` - Browse topic guides
    - `get_source_chapter` - Access source material chapters
+
+**Checking Backend Status:**
+
+Use the `health` tool to verify the server is running and see which search backend is active:
+
+```json
+{
+  "status": "ok",
+  "backend": {
+    "active": "simple",  // or "tantivy" if FTS is ready
+    "fts_enabled": true,  // only if built with --features fts
+    "fts_ready": false,   // only if built with --features fts
+    "index_stats": null   // populated when FTS is ready
+  }
+}
+```
 
 You can also check Claude Desktop's developer console for connection logs.
 
@@ -313,11 +409,78 @@ The server provides access to music theory texts including:
 - Gotham - *Open Music Theory* (2022)
 - Hutchinson - *Music Theory for the 21st-Century Classroom* (2023)
 
+## Architecture
+
+### Feature-Gated Design
+
+The server uses Cargo feature flags for optional functionality:
+
+- **Default build** - Simple search backend, minimal dependencies, 2.6M binary
+- **FTS feature** - Adds Tantivy backend, 6.3M binary, optional
+
+### Application State
+
+The server uses a shared `AppState` struct for managing search backends:
+
+```rust
+pub struct AppState {
+    config: Config,
+    simple_backend: Arc<SimpleSearch>,         // Always available
+    fts_backend: Arc<RwLock<Option<Arc<TantivySearch>>>>,  // Hot-swappable
+    fts_ready: Arc<AtomicBool>,                // Lock-free readiness flag
+}
+```
+
+**Backend Selection:**
+- FTS not ready → Simple backend
+- FTS ready → Tantivy backend
+- Automatic switch when background indexing completes
+
+### Non-Blocking Indexing
+
+The server implements async background indexing:
+
+1. Server starts immediately (<1 second)
+2. Background task checks index freshness (content hash)
+3. If needed, builds/rebuilds index asynchronously
+4. Simple search handles queries during indexing
+5. Automatic switch to FTS when ready
+
+**Index Freshness:**
+- Computes hash of all concept card paths + modification times
+- Stored in `metadata.json` alongside index
+- Avoids unnecessary rebuilds when content unchanged
+
+## CLI Commands
+
+The server provides a CLI for index management (requires `--features fts`):
+
+```bash
+# Start server (default command)
+music-theory-mcp
+music-theory-mcp serve
+
+# Build or rebuild index
+music-theory-mcp index
+music-theory-mcp index --force  # Force rebuild even if fresh
+
+# Show index status and statistics
+music-theory-mcp status
+```
+
+**Example status output:**
+```
+Index Status:
+  Location:     /path/to/.tantivy-index
+  Documents:    187
+  Status:       ✓ Current
+```
+
 ## Next Steps
 
 1. **Integration Testing**
    - Test with Claude Desktop and other MCP clients
-   - Verify all 9 tools work with real data
+   - Verify all 10 tools work with real data
    - Document usage examples
 
 2. **Resource Registration**
@@ -326,9 +489,10 @@ The server provides access to music theory texts including:
    - Test resource delivery
 
 3. **Enhanced Search**
-   - Upgrade to Tantivy for full-text indexing
+   - ✅ Tantivy full-text indexing implemented
+   - ✅ Async background indexing
    - Add relevance tuning
-   - Support advanced query syntax
+   - Support advanced query syntax (phrase queries, boolean operators)
 
 4. **Performance Optimization**
    - Add configuration caching

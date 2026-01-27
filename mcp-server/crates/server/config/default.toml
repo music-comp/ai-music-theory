@@ -59,24 +59,35 @@ level = "info"
 
 [search]
 # Backend selection: "simple" or "tantivy"
-# - "simple": Linear scan (suitable for <500 concepts, no index needed)
-# - "tantivy": Full-text search engine (recommended for 500+ concepts)
+# - "simple": Linear scan (suitable for <500 concepts, no index needed, always available)
+# - "tantivy": Full-text search engine (recommended for 500+ concepts, requires --features fts)
+#
+# Note: "tantivy" requires building the server with --features fts
+# Without the feature flag, "tantivy" will fall back to "simple" backend
 backend = "simple"
 
 # Tantivy index storage (relative to skill root or absolute path)
 index_path = ".tantivy-index"
 
-# Rebuild index on startup (useful for development)
-# Set to true for first run with tantivy, then false for subsequent runs
+# Rebuild index on startup
+# With async background indexing (Phase 3), this setting is less critical:
+# - false (recommended): Index is built only if missing or stale (content hash check)
+# - true: Forces rebuild on every startup (useful for development/testing)
+#
+# The server starts immediately regardless - indexing happens in the background.
+# Use the CLI tool for explicit control: `music-theory-mcp index [--force]`
 rebuild_on_startup = false
 
 # Snippet context size in characters for search results
+# Applies to both backends (simple and tantivy)
 snippet_size = 200
 
 # Enable fuzzy search (typo tolerance)
 # When enabled, "haromny" will find "harmony"
+# Only available with tantivy backend (requires --features fts)
 fuzzy_search = false
 
 # Maximum edit distance for fuzzy matching (1-2)
 # Higher values are more permissive but slower
+# Only applies when fuzzy_search = true
 fuzzy_distance = 2
