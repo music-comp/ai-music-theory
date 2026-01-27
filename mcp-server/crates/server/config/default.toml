@@ -55,7 +55,21 @@ fiore = "[2009] Fiore - Music and Mathematics.pdf"
 acef-sanchez = "[2012] Acef-Sanchez - An Introduction to Group Theory with applications to Mathematical Music Theory.pdf"
 
 [logging]
+# Log level: trace, debug, info, warn, error
 level = "info"
+
+# Enable colored output (default: true)
+# Set to false for plain text logs or when piping to files
+coloured = true
+
+# Optional log file path
+# When set, logs are written to the specified file instead of stderr
+# Leave commented to use stderr (required for MCP protocol compliance)
+# file = "/path/to/music-theory-mcp.log"
+
+# Report caller location (file:line) in log messages (default: false)
+# Useful for debugging but adds overhead
+report_caller = false
 
 [search]
 # Backend selection: "simple" or "tantivy"

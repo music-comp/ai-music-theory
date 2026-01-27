@@ -148,6 +148,9 @@ mod tests {
             sources: SourcesConfig::default(),
             logging: LoggingConfig {
                 level: "info".to_string(),
+                coloured: true,
+                file: None,
+                report_caller: false,
             },
             search: SearchConfig {
                 backend: "tantivy".to_string(),

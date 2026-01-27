@@ -161,7 +161,29 @@ impl SearchConfig {
 /// Logging configuration.
 #[derive(Debug, Clone, Deserialize)]
 pub struct LoggingConfig {
+    /// Log level (trace, debug, info, warn, error)
     pub level: String,
+
+    /// Enable colored output
+    #[serde(default = "default_coloured")]
+    pub coloured: bool,
+
+    /// Optional log file path (writes to file instead of stderr)
+    /// Note: MCP protocol requires stderr for server logs when not using file output
+    #[serde(default)]
+    pub file: Option<String>,
+
+    /// Report caller location (file:line) in log messages
+    #[serde(default = "default_report_caller")]
+    pub report_caller: bool,
+}
+
+fn default_coloured() -> bool {
+    true
+}
+
+fn default_report_caller() -> bool {
+    false
 }
 
 impl LoggingConfig {
@@ -181,13 +203,22 @@ impl LoggingConfig {
             ..Default::default()
         };
 
-        // Build opts using OptsBuilder (MCP requires stderr output)
+        // Determine output destination
+        // MCP protocol requires stderr for server logs (stdout is for MCP protocol messages)
+        // File output is allowed as an alternative
+        let output = match &self.file {
+            Some(path) => Output::file(path),
+            None => Output::Stderr,
+        };
+
+        // Build opts using OptsBuilder
         OptsBuilder::new()
-            .coloured(true)
-            .output(Output::Stderr)
+            .coloured(self.coloured)
+            .output(output)
             .level(level)
             .timestamp_format(TSFormat::Simple)
             .colors(colors)
+            .report_caller(self.report_caller)
             .build()
             .map_err(|e| Error::config(format!("Failed to build twyg opts: {}", e)))
     }
@@ -271,6 +302,9 @@ mod tests {
     fn test_logging_config_to_twyg_valid() {
         let config = LoggingConfig {
             level: "debug".to_string(),
+            coloured: true,
+            file: None,
+            report_caller: false,
         };
         let result = config.to_twyg();
         assert!(result.is_ok(), "Should parse valid log level 'debug'");
@@ -280,6 +314,9 @@ mod tests {
     fn test_logging_config_to_twyg_invalid() {
         let config = LoggingConfig {
             level: "invalid".to_string(),
+            coloured: true,
+            file: None,
+            report_caller: false,
         };
         let result = config.to_twyg();
         assert!(result.is_err(), "Should reject invalid log level");
@@ -295,10 +332,59 @@ mod tests {
         for level in levels {
             let config = LoggingConfig {
                 level: level.to_string(),
+                coloured: true,
+                file: None,
+                report_caller: false,
             };
             let result = config.to_twyg();
             assert!(result.is_ok(), "Should parse valid log level '{}'", level);
         }
+    }
+
+    #[test]
+    fn test_logging_config_defaults() {
+        let json = r#"{"level": "info"}"#;
+        let config: LoggingConfig = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(config.level, "info");
+        assert!(config.coloured, "Should default to true");
+        assert!(config.file.is_none(), "Should default to None");
+        assert!(!config.report_caller, "Should default to false");
+    }
+
+    #[test]
+    fn test_logging_config_with_file() {
+        let config = LoggingConfig {
+            level: "debug".to_string(),
+            coloured: false,
+            file: Some("/tmp/test.log".to_string()),
+            report_caller: true,
+        };
+        let result = config.to_twyg();
+        assert!(result.is_ok(), "Should support file output");
+    }
+
+    #[test]
+    fn test_logging_config_report_caller() {
+        let config = LoggingConfig {
+            level: "trace".to_string(),
+            coloured: true,
+            file: None,
+            report_caller: true,
+        };
+        let result = config.to_twyg();
+        assert!(result.is_ok(), "Should support report_caller");
+    }
+
+    #[test]
+    fn test_logging_config_no_color() {
+        let config = LoggingConfig {
+            level: "warn".to_string(),
+            coloured: false,
+            file: None,
+            report_caller: false,
+        };
+        let result = config.to_twyg();
+        assert!(result.is_ok(), "Should support disabling colors");
     }
 
     #[test]
