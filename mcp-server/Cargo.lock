@@ -955,11 +955,11 @@ checksum = "2195bf6aa996a481483b29d62a7663eed3fe39600c460e323f8ff41e90bdd89b"
 
 [[package]]
 name = "music-theory-design"
-version = "0.2.0"
+version = "0.3.0"
 
 [[package]]
 name = "music-theory-mcp"
-version = "0.2.0"
+version = "0.3.0"
 dependencies = [
  "async-trait",
  "async-walkdir",
