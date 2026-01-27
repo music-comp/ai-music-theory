@@ -19,6 +19,8 @@ mod query;
 #[cfg(feature = "fts")]
 mod schema;
 #[cfg(feature = "fts")]
+mod stopwords;
+#[cfg(feature = "fts")]
 mod tantivy_search;
 
 // Public exports
@@ -30,6 +32,8 @@ pub use simple_search::SimpleSearch;
 // FTS-specific exports (only when feature enabled)
 #[cfg(feature = "fts")]
 pub use builder::{build_index, IndexStats};
+#[cfg(feature = "fts")]
+pub use stopwords::{StopwordFilter, ENGLISH_STOPWORDS};
 #[cfg(feature = "fts")]
 pub use tantivy_search::TantivySearch;
 

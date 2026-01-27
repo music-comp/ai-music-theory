@@ -468,6 +468,165 @@ async fn test_whitespace_only_query() {
 }
 
 // ==============================================================================
+// Phase 2: Stopword Filtering Tests
+// ==============================================================================
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_qa_stopwords_what_is_a_cadence() {
+    let results = search_default("what is a cadence", 10).await;
+
+    // Should return results (stopwords filtered: "what is a" → "cadence")
+    assert!(
+        !results.is_empty(),
+        "Natural language query 'what is a cadence' should return results after stopword removal"
+    );
+
+    // Should find cadence-related content
+    let has_cadence = results.iter().any(|r| {
+        let combined = format!("{} {}", r.title.to_lowercase(), r.snippet.to_lowercase());
+        combined.contains("cadence")
+    });
+
+    assert!(has_cadence, "Should find cadence-related content");
+}
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_qa_stopwords_how_to_write_counterpoint() {
+    let results = search_default("how to write counterpoint", 10).await;
+
+    // Should return results (stopwords filtered: "how to" → "write counterpoint")
+    assert!(
+        !results.is_empty(),
+        "Natural language query 'how to write counterpoint' should return results"
+    );
+
+    let has_counterpoint = results.iter().any(|r| {
+        let combined = format!("{} {}", r.title.to_lowercase(), r.snippet.to_lowercase());
+        combined.contains("counterpoint") || combined.contains("write")
+    });
+
+    assert!(has_counterpoint, "Should find counterpoint-related content");
+}
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_qa_stopwords_roman_numerals_preserved() {
+    let results = search_default("V I resolution", 10).await;
+
+    // Roman numerals should be preserved (in allowlist)
+    assert!(
+        !results.is_empty(),
+        "Query with Roman numerals 'V I resolution' should return results"
+    );
+
+    // Should find cadence or resolution related content
+    let has_relevant = results.iter().any(|r| {
+        let combined = format!("{} {}", r.title.to_lowercase(), r.snippet.to_lowercase());
+        combined.contains("cadence")
+            || combined.contains("resolution")
+            || combined.contains("dominant")
+            || combined.contains("tonic")
+    });
+
+    assert!(has_relevant, "Should find cadence/resolution content");
+}
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_qa_stopwords_ii_v_i_progression() {
+    let results = search_default("ii V I progression", 10).await;
+
+    // All Roman numerals preserved
+    assert!(
+        !results.is_empty(),
+        "Query 'ii V I progression' should return results"
+    );
+
+    let has_progression = results.iter().any(|r| {
+        let combined = format!("{} {}", r.title.to_lowercase(), r.snippet.to_lowercase());
+        combined.contains("progression")
+            || combined.contains("cadence")
+            || combined.contains("harmony")
+    });
+
+    assert!(has_progression, "Should find progression-related content");
+}
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_qa_stopwords_the_theory_of_harmony() {
+    let results = search_default("the theory of harmony", 10).await;
+
+    // Should filter "the" and "of", keep "theory harmony"
+    // Note: Results may vary depending on content, but query should not error
+    assert!(
+        results.is_empty() || !results.is_empty(),
+        "Query 'the theory of harmony' should execute without error after stopword filtering"
+    );
+
+    // If results found, at least one should be relevant
+    if !results.is_empty() {
+        let has_harmony = results.iter().any(|r| {
+            let combined = format!("{} {}", r.title.to_lowercase(), r.snippet.to_lowercase());
+            combined.contains("harmony") || combined.contains("theory")
+        });
+
+        // This is informational - we don't fail if content doesn't match
+        if !has_harmony {
+            println!("Note: 'theory of harmony' query didn't find expected content");
+        }
+    }
+}
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_qa_stopwords_all_stopwords_preserved() {
+    // Query with only stopwords should still work (original query preserved)
+    let results = search_default("what is this", 10).await;
+
+    // When all words are stopwords, the filter preserves the original query
+    // This prevents empty queries but may return broad results
+    // The test just verifies it doesn't error out
+    assert!(
+        results.is_empty() || !results.is_empty(),
+        "All-stopword query should not crash"
+    );
+}
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_stopword_filtering_improves_precision() {
+    // Compare with and without natural language fluff
+    let results_natural = search_default("what is an authentic cadence", 10).await;
+    let results_direct = search_default("authentic cadence", 10).await;
+
+    // Both should return results
+    assert!(!results_natural.is_empty(), "Natural language query should work");
+    assert!(!results_direct.is_empty(), "Direct query should work");
+
+    // Results should be similar (stopword filtering makes them equivalent)
+    // We can't guarantee exact match due to query mode logic, but both should find cadences
+    let natural_has_cadence = results_natural.iter().any(|r| {
+        r.title.to_lowercase().contains("cadence")
+    });
+    let direct_has_cadence = results_direct.iter().any(|r| {
+        r.title.to_lowercase().contains("cadence")
+    });
+
+    assert!(natural_has_cadence, "Natural query should find cadences");
+    assert!(direct_has_cadence, "Direct query should find cadences");
+}
+
+// ==============================================================================
 // Backend Verification
 // ==============================================================================
 

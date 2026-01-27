@@ -71,9 +71,17 @@ impl<'a> QueryBuilder<'a> {
             ));
         }
 
+        // Apply stopword filtering if enabled
+        let filtered_query = if self.config.enable_stopwords {
+            let filter = crate::search::StopwordFilter::new(self.config);
+            filter.filter(query_str)
+        } else {
+            query_str.to_string()
+        };
+
         // For now, treat the entire query as a single term
         // Future enhancement: parse into multiple terms and use phrase queries
-        let terms: Vec<&str> = query_str.split_whitespace().collect();
+        let terms: Vec<&str> = filtered_query.split_whitespace().collect();
 
         if terms.is_empty() {
             return Err(Error::search_error(
