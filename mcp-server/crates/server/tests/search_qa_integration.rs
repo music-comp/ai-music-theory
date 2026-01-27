@@ -6,7 +6,9 @@
 //! Phase 1 Tests: Multi-word query logic improvements
 
 #[cfg(feature = "fts")]
-use music_theory_mcp::config::{Config, PathsConfig, QueryMode, SearchConfig, ServerConfig, SourcesConfig};
+use music_theory_mcp::config::{
+    Config, PathsConfig, QueryMode, SearchConfig, ServerConfig, SourcesConfig,
+};
 #[cfg(feature = "fts")]
 use music_theory_mcp::search::build_index;
 #[cfg(feature = "fts")]
@@ -48,9 +50,18 @@ fn test_config() -> Config {
         },
         paths: PathsConfig {
             base: project_root.to_string_lossy().to_string(),
-            sources_md: project_root.join("sources-md").to_string_lossy().to_string(),
-            concept_cards: project_root.join("concept-cards").to_string_lossy().to_string(),
-            concepts_unified: project_root.join("concepts-unified").to_string_lossy().to_string(),
+            sources_md: project_root
+                .join("sources-md")
+                .to_string_lossy()
+                .to_string(),
+            concept_cards: project_root
+                .join("concept-cards")
+                .to_string_lossy()
+                .to_string(),
+            concepts_unified: project_root
+                .join("concepts-unified")
+                .to_string_lossy()
+                .to_string(),
             guides: project_root.join("guides").to_string_lossy().to_string(),
             skill_docs: project_root.to_string_lossy().to_string(),
         },
@@ -72,7 +83,13 @@ fn test_config() -> Config {
             minimum_match_percent: 0.6,
             enable_stopwords: true,
             custom_stopwords: vec![],
-            stopword_allowlist: vec!["I".to_string(), "V".to_string(), "ii".to_string(), "IV".to_string(), "vi".to_string()],
+            stopword_allowlist: vec![
+                "I".to_string(),
+                "V".to_string(),
+                "ii".to_string(),
+                "IV".to_string(),
+                "vi".to_string(),
+            ],
         },
     }
 }
@@ -83,7 +100,9 @@ async fn ensure_index_built() {
     INDEX_INIT
         .get_or_init(|| async {
             let config = test_config();
-            build_index(&config).await.expect("Failed to build test index");
+            build_index(&config)
+                .await
+                .expect("Failed to build test index");
         })
         .await;
 }
