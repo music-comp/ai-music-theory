@@ -111,9 +111,9 @@ fn apply_log_level_override(
         use twyg::{LogLevel, OptsBuilder};
 
         // Parse the log level string
-        let level: LogLevel = level_str
-            .parse()
-            .map_err(|_| crate::error::Error::config(format!("Invalid log level: {}", level_str)))?;
+        let level: LogLevel = level_str.parse().map_err(|_| {
+            crate::error::Error::config(format!("Invalid log level: {}", level_str))
+        })?;
 
         // Rebuild Opts with all existing values except the level
         OptsBuilder::new()
@@ -218,12 +218,19 @@ async fn run_server(log_level_override: Option<String>, test_mode: bool) -> Resu
                 eprintln!("messages on stdin. It cannot be run interactively in a terminal.\n");
                 eprintln!("Usage:");
                 eprintln!("  • Run through an MCP client (e.g., Claude Desktop)");
-                eprintln!("  • Use the MCP Inspector for testing: npx @modelcontextprotocol/inspector");
-                eprintln!("  • Use --test flag to test signal handling: music-theory-mcp serve --test");
+                eprintln!(
+                    "  • Use the MCP Inspector for testing: npx @modelcontextprotocol/inspector"
+                );
+                eprintln!(
+                    "  • Use --test flag to test signal handling: music-theory-mcp serve --test"
+                );
                 eprintln!("  • See: https://modelcontextprotocol.io/docs/tools/inspector\n");
                 eprintln!("Original error: {}\n", error_str);
 
-                log::error!("MCP initialization failed (likely invalid protocol input): {}", error_str);
+                log::error!(
+                    "MCP initialization failed (likely invalid protocol input): {}",
+                    error_str
+                );
             } else {
                 log::error!("Failed to start MCP server: {}", error_str);
             }
@@ -454,7 +461,10 @@ mod tests {
     #[cfg(feature = "fts")]
     fn test_cli_parse_index() {
         let cli = Cli::parse_from(&["music-theory-mcp", "index"]);
-        assert!(matches!(cli.command, Some(Commands::Index { force: false })));
+        assert!(matches!(
+            cli.command,
+            Some(Commands::Index { force: false })
+        ));
         assert!(cli.log_level.is_none());
     }
 
@@ -544,7 +554,10 @@ mod tests {
 
         let result = apply_log_level_override(&original, Some("invalid".to_string()));
         assert!(result.is_err());
-        assert!(result.unwrap_err().to_string().contains("Invalid log level"));
+        assert!(result
+            .unwrap_err()
+            .to_string()
+            .contains("Invalid log level"));
     }
 
     #[test]
@@ -568,7 +581,12 @@ mod tests {
 
         for (level_str, expected_level) in levels {
             let result = apply_log_level_override(&original, Some(level_str.to_string())).unwrap();
-            assert_eq!(result.level(), expected_level, "Failed for level: {}", level_str);
+            assert_eq!(
+                result.level(),
+                expected_level,
+                "Failed for level: {}",
+                level_str
+            );
         }
     }
 }
