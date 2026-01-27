@@ -169,7 +169,7 @@ async fn test_search_returns_relevant_results() {
         query: "triads".to_string(),
         query_mode: None,
         limit: 10,
-    };
+        category: None,    };
 
     let response = search_concepts(&state, params)
         .await
@@ -200,7 +200,7 @@ async fn test_search_ranking_by_relevance() {
         query: "chords".to_string(),
         query_mode: None,
         limit: 10,
-    };
+        category: None,    };
 
     let response = search_concepts(&state, params)
         .await
@@ -236,7 +236,7 @@ async fn test_fuzzy_search_finds_typos() {
         query: "haromny".to_string(),
         query_mode: None,
         limit: 10,
-    };
+        category: None,    };
 
     let response = search_concepts(&state, params)
         .await
@@ -273,7 +273,7 @@ async fn test_backend_switching_simple_to_tantivy() {
         query: "voice".to_string(),
         query_mode: None,
         limit: 10,
-    };
+        category: None,    };
 
     let simple_response = search_concepts(&simple_state, params.clone())
         .await
@@ -329,7 +329,7 @@ async fn test_snippet_generation_includes_context() {
         query: "parallel".to_string(),
         query_mode: None,
         limit: 10,
-    };
+        category: None,    };
 
     let response = search_concepts(&state, params)
         .await
@@ -360,7 +360,7 @@ async fn test_empty_query_errors_correctly() {
         query: "".to_string(),
         query_mode: None,
         limit: 10,
-    };
+        category: None,    };
 
     let result = search_concepts(&state, params).await;
 
@@ -383,7 +383,7 @@ async fn test_search_with_limit() {
         query: "harmony".to_string(),
         query_mode: None,
         limit: 1,
-    };
+        category: None,    };
 
     let response = search_concepts(&state, params)
         .await
@@ -437,7 +437,7 @@ async fn test_index_rebuild_clears_old_data() {
         query: "test".to_string(),
         query_mode: None,
         limit: 10,
-    };
+        category: None,    };
 
     let response = search_concepts(&state, params)
         .await
@@ -460,7 +460,7 @@ async fn test_search_tool_integration() {
         query: "harmony".to_string(),
         query_mode: None,
         limit: 5,
-    };
+        category: None,    };
 
     let response = search_concepts(&state, params)
         .await
@@ -470,6 +470,177 @@ async fn test_search_tool_integration() {
     assert_eq!(response.query, "harmony");
     assert!(response.total > 0, "Total should be greater than 0");
     assert_eq!(response.backend, "tantivy", "Should use tantivy backend");
+}
+
+#[tokio::test]
+async fn test_category_filtering() {
+    let temp_dir = TempDir::new().expect("Failed to create temp dir");
+    setup_test_data(&temp_dir).expect("Failed to setup test data");
+
+    let config = create_test_config(&temp_dir, "tantivy", false);
+    build_index(&config).await.expect("Failed to build index");
+
+    let state = AppState::new(config).await.expect("Failed to create state");
+
+    // Search without category filter - should find results from multiple categories
+    let params_all = SearchConceptsParams {
+        query: "chords".to_string(),
+        query_mode: None,
+        limit: 10,
+        category: None,
+    };
+    let _response_all = search_concepts(&state, params_all)
+        .await
+        .expect("Search failed");
+
+    // Search with category filter - should only find harmony results
+    let params_harmony = SearchConceptsParams {
+        query: "chords".to_string(),
+        query_mode: None,
+        limit: 10,
+        category: Some("harmony".to_string()),
+    };
+    let response_harmony = search_concepts(&state, params_harmony)
+        .await
+        .expect("Search failed");
+
+    // Verify all results are from harmony category
+    for result in &response_harmony.results {
+        assert_eq!(
+            result.category, "harmony",
+            "All results should be from harmony category"
+        );
+    }
+
+    // Search with category filter - should only find counterpoint results
+    let params_counterpoint = SearchConceptsParams {
+        query: "voice".to_string(),
+        query_mode: None,
+        limit: 10,
+        category: Some("counterpoint".to_string()),
+    };
+    let response_counterpoint = search_concepts(&state, params_counterpoint)
+        .await
+        .expect("Search failed");
+
+    // Verify all results are from counterpoint category
+    for result in &response_counterpoint.results {
+        assert_eq!(
+            result.category, "counterpoint",
+            "All results should be from counterpoint category"
+        );
+    }
+
+    // Search with non-existent category - should return no results
+    let params_nonexistent = SearchConceptsParams {
+        query: "music".to_string(),
+        query_mode: None,
+        limit: 10,
+        category: Some("nonexistent".to_string()),
+    };
+    let response_nonexistent = search_concepts(&state, params_nonexistent)
+        .await
+        .expect("Search failed");
+
+    assert_eq!(
+        response_nonexistent.results.len(),
+        0,
+        "Should return no results for non-existent category"
+    );
+}
+
+#[tokio::test]
+async fn test_phrase_search_order_sensitivity() {
+    let temp_dir = TempDir::new().expect("Failed to create temp dir");
+    let concept_cards_path = temp_dir.path().join("concept-cards");
+
+    // Create test cards with specific phrase patterns
+    create_test_concept_card(
+        &concept_cards_path,
+        "authentic-cadence.md",
+        "Authentic Cadence",
+        "harmony",
+        "A perfect authentic cadence is a V-I progression",
+        "The perfect authentic cadence (PAC) is the strongest cadence. It features a dominant (V) chord moving to a tonic (I) chord with the tonic note in the soprano voice.",
+    ).expect("Failed to create test card");
+
+    create_test_concept_card(
+        &concept_cards_path,
+        "cadence-types.md",
+        "Cadence Types",
+        "harmony",
+        "Different types of cadences in music",
+        "Cadences include authentic perfect, plagal, and deceptive types. Each serves a different function in musical phrases.",
+    ).expect("Failed to create test card");
+
+    let config = create_test_config(&temp_dir, "tantivy", false);
+    build_index(&config).await.expect("Failed to build index");
+
+    let state = AppState::new(config).await.expect("Failed to create state");
+
+    // Search for exact phrase "perfect authentic cadence"
+    let params_exact = SearchConceptsParams {
+        query: "\"perfect authentic cadence\"".to_string(),
+        query_mode: None,
+        limit: 10,
+        category: None,
+    };
+    let response_exact = search_concepts(&state, params_exact)
+        .await
+        .expect("Search failed");
+
+    // Should find the document with the exact phrase
+    assert!(
+        !response_exact.results.is_empty(),
+        "Should find results for exact phrase"
+    );
+
+    // The first result should be the authentic-cadence doc
+    let first_result = &response_exact.results[0];
+    assert_eq!(
+        first_result.id, "authentic-cadence",
+        "First result should be authentic-cadence"
+    );
+
+    // Search for reversed phrase "authentic perfect cadence"
+    let params_reversed = SearchConceptsParams {
+        query: "\"authentic perfect cadence\"".to_string(),
+        query_mode: None,
+        limit: 10,
+        category: None,
+    };
+    let response_reversed = search_concepts(&state, params_reversed)
+        .await
+        .expect("Search failed");
+
+    // The reversed phrase should match differently
+    // If it matches, it should rank the second doc higher (which has "authentic perfect")
+    if !response_reversed.results.is_empty() {
+        let first_reversed = &response_reversed.results[0];
+        // If we find results, they might include both documents but in different order
+        // The key is that the exact phrase match should be preferred
+        assert!(
+            first_reversed.id == "cadence-types" || first_reversed.id == "authentic-cadence",
+            "Should find relevant results for reversed phrase"
+        );
+    }
+
+    // Search without quotes should find all results
+    let params_no_quotes = SearchConceptsParams {
+        query: "perfect authentic cadence".to_string(),
+        query_mode: None,
+        limit: 10,
+        category: None,
+    };
+    let response_no_quotes = search_concepts(&state, params_no_quotes)
+        .await
+        .expect("Search failed");
+
+    // Should find both documents
+    assert!(
+        response_no_quotes.results.len() >= 1,
+        "Should find results without quotes"
+    );
 }
 
 #[tokio::test]

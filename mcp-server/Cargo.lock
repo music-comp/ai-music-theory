@@ -955,11 +955,11 @@ checksum = "2195bf6aa996a481483b29d62a7663eed3fe39600c460e323f8ff41e90bdd89b"
 
 [[package]]
 name = "music-theory-design"
-version = "0.1.0"
+version = "0.2.0"
 
 [[package]]
 name = "music-theory-mcp"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "async-trait",
  "async-walkdir",
@@ -978,6 +978,7 @@ dependencies = [
  "serde_yaml",
  "serial_test",
  "shellexpand",
+ "stop-words",
  "tantivy",
  "tempfile",
  "thiserror 2.0.18",
@@ -1618,6 +1619,15 @@ name = "stable_deref_trait"
 version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6ce2be8dc25455e1f91df71bfa12ad37d7af1092ae736f3a6cd0e37bc7810596"
+
+[[package]]
+name = "stop-words"
+version = "0.8.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3c6a86be9f7fa4559b7339669e72026eb437f5e9c5a85c207fe1033079033a17"
+dependencies = [
+ "serde_json",
+]
 
 [[package]]
 name = "strsim"

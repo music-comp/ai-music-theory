@@ -16,9 +16,12 @@ Version 0.2.0 of the Music Theory MCP Server changes the default search backend 
 - ✅ **Multi-word query support** - Queries like `"fugue subject answer"` now work correctly
 - ✅ **Smart AND/OR logic** - 2 words require both terms, 3+ words use intelligent OR matching
 - ✅ **Stopword filtering** - Natural language queries like `"what is a cadence"` work properly
+  - Now uses industry-standard `stop-words` crate with 500+ comprehensive stopwords
 - ✅ **Phrase search** - Quoted strings like `"perfect authentic cadence"` match exact phrases
 - ✅ **Stemming** - `write`, `writing`, `written` all match the same results
 - ✅ **Relevance ranking** - Better result ordering with BM25 algorithm
+- ✅ **Category filtering** - Scope searches to specific categories: `{"query": "suspension", "category": "voice-leading"}`
+- ✅ **Improved snippets** - All search results now return non-empty, contextual snippets
 
 **Configuration Changes:**
 - Default backend changed from `"simple"` to `"tantivy"` in `config/default.toml`
@@ -211,7 +214,9 @@ custom_stopwords = ["etc", "eg"]
 stopword_allowlist = ["I", "V", "ii", "IV", "vi", "do", "re", "mi"]
 ```
 
-**Default stopwords include:** `a`, `an`, `the`, `is`, `are`, `was`, `were`, `what`, `when`, `where`, `how`, `why`, etc.
+**New in 0.2.0:** Uses industry-standard `stop-words` crate with 500+ comprehensive English stopwords.
+
+**Default stopwords include:** `a`, `an`, `the`, `is`, `are`, `was`, `were`, `what`, `when`, `where`, `how`, `why`, and 500+ more common words.
 
 **Query transformation examples:**
 
@@ -232,6 +237,46 @@ Use double quotes for exact phrase matching:
 ```
 
 **Note:** Stopwords are NOT filtered from phrases to preserve user intent.
+
+### Category Filtering
+
+**New in 0.2.0:** Scope searches to specific categories.
+
+**Usage:**
+
+```json
+{
+  "query": "suspension",
+  "category": "voice-leading"
+}
+```
+
+**Available categories:**
+- `harmony` - Chords, progressions, cadences
+- `counterpoint` - Voice leading, species counterpoint
+- `rhythm` - Meters, time signatures
+- `form` - Musical structures, sections
+- `melody` - Melodic patterns, motifs
+- `analysis` - Analytical techniques
+- `notation` - Musical notation symbols
+
+**Examples:**
+
+```json
+// Search all categories
+{"query": "parallel fifths"}
+
+// Scope to counterpoint only
+{"query": "parallel fifths", "category": "counterpoint"}
+
+// Scope to harmony only
+{"query": "cadence", "category": "harmony"}
+```
+
+**Benefits:**
+- Reduces noise from irrelevant categories
+- Faster, more targeted results
+- Better precision for domain-specific queries
 
 ---
 

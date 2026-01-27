@@ -120,7 +120,28 @@ impl SearchBackend for TantivySearch {
         };
 
         let query_builder = QueryBuilder::new(&self.schema, &config);
-        let query = query_builder.build_query(&params.query)?;
+        let mut query = query_builder.build_query(&params.query)?;
+
+        // Apply category filter if specified
+        if let Some(ref category) = params.category {
+            use tantivy::query::{BooleanQuery, Occur, TermQuery};
+            use tantivy::schema::IndexRecordOption;
+            use tantivy::Term;
+
+            // Create a term query for the category
+            let category_query = TermQuery::new(
+                Term::from_field_text(self.schema.category, category),
+                IndexRecordOption::Basic,
+            );
+
+            // Combine main query with category filter using AND
+            let combined_query = BooleanQuery::new(vec![
+                (Occur::Must, query),
+                (Occur::Must, Box::new(category_query)),
+            ]);
+
+            query = Box::new(combined_query);
+        }
 
         // Execute search
         let top_docs = searcher
@@ -167,8 +188,15 @@ impl SearchBackend for TantivySearch {
 impl TantivySearch {
     /// Generate a snippet from a document for a query.
     ///
-    /// Searches for the query in description first (more relevant), then content.
-    /// Returns a snippet with context around the match.
+    /// Searches for query terms in description first (more relevant), then content.
+    /// Returns a snippet with context around the match. Never returns empty string.
+    ///
+    /// Strategy:
+    /// 1. Try to find exact query or individual terms in description
+    /// 2. Try to find exact query or individual terms in content
+    /// 3. Fall back to first part of description if available
+    /// 4. Fall back to first part of content if available
+    /// 5. Fall back to title as last resort
     ///
     /// # Arguments
     ///
@@ -177,7 +205,7 @@ impl TantivySearch {
     ///
     /// # Returns
     ///
-    /// Returns a snippet string with query context.
+    /// Returns a non-empty snippet string with query context.
     ///
     /// # Errors
     ///
@@ -185,31 +213,111 @@ impl TantivySearch {
     fn generate_snippet(&self, doc: &TantivyDocument, query: &str) -> Result<String> {
         let query_lower = query.to_lowercase();
 
-        // Try description first
-        if let Ok(description) = self.get_text_field(doc, self.schema.description) {
+        // Split query into individual terms for better matching
+        let query_terms: Vec<&str> = query_lower
+            .split_whitespace()
+            .filter(|term| term.len() > 1) // Skip single chars
+            .collect();
+
+        // Get all available text fields
+        let description = self
+            .get_text_field(doc, self.schema.description)
+            .ok()
+            .filter(|s| !s.trim().is_empty());
+        let content = self
+            .get_text_field(doc, self.schema.content)
+            .ok()
+            .filter(|s| !s.trim().is_empty());
+        let title = self
+            .get_text_field(doc, self.schema.title)
+            .ok()
+            .filter(|s| !s.trim().is_empty());
+
+        // Phase 1: Try to find query match in description
+        if let Some(ref desc) = description {
+            // Try exact query match
             if let Some(snippet) =
-                Self::find_snippet_in_text(&description, &query_lower, self.config.snippet_size)
+                Self::find_snippet_in_text(desc, &query_lower, self.config.snippet_size)
             {
                 return Ok(snippet);
             }
-        }
 
-        // Fall back to content
-        if let Ok(content) = self.get_text_field(doc, self.schema.content) {
-            if let Some(snippet) =
-                Self::find_snippet_in_text(&content, &query_lower, self.config.snippet_size)
-            {
-                return Ok(snippet);
+            // Try individual query terms
+            for term in &query_terms {
+                if let Some(snippet) =
+                    Self::find_snippet_in_text(desc, term, self.config.snippet_size)
+                {
+                    return Ok(snippet);
+                }
             }
         }
 
-        // No match - return first part of description or content
-        if let Ok(description) = self.get_text_field(doc, self.schema.description) {
-            Ok(description.chars().take(self.config.snippet_size).collect())
-        } else if let Ok(content) = self.get_text_field(doc, self.schema.content) {
-            Ok(content.chars().take(self.config.snippet_size).collect())
+        // Phase 2: Try to find query match in content
+        if let Some(ref cont) = content {
+            // Try exact query match
+            if let Some(snippet) =
+                Self::find_snippet_in_text(cont, &query_lower, self.config.snippet_size)
+            {
+                return Ok(snippet);
+            }
+
+            // Try individual query terms
+            for term in &query_terms {
+                if let Some(snippet) =
+                    Self::find_snippet_in_text(cont, term, self.config.snippet_size)
+                {
+                    return Ok(snippet);
+                }
+            }
+        }
+
+        // Phase 3: No match found - return first part of available fields
+        if let Some(desc) = description {
+            return Ok(Self::truncate_text(&desc, self.config.snippet_size));
+        }
+
+        if let Some(cont) = content {
+            return Ok(Self::truncate_text(&cont, self.config.snippet_size));
+        }
+
+        if let Some(t) = title {
+            return Ok(Self::truncate_text(&t, self.config.snippet_size));
+        }
+
+        // Absolute fallback (should never happen with valid documents)
+        Ok("[No content available]".to_string())
+    }
+
+    /// Truncate text to a specified length, ensuring non-empty result.
+    ///
+    /// Returns the first `max_chars` characters of text, normalized to remove
+    /// newlines and extra whitespace.
+    ///
+    /// # Arguments
+    ///
+    /// * `text` - The text to truncate
+    /// * `max_chars` - Maximum number of characters to return
+    ///
+    /// # Returns
+    ///
+    /// Returns a non-empty string, or "[No content]" if text is empty.
+    fn truncate_text(text: &str, max_chars: usize) -> String {
+        let trimmed = text.trim();
+        if trimmed.is_empty() {
+            return "[No content]".to_string();
+        }
+
+        let snippet: String = trimmed
+            .chars()
+            .take(max_chars)
+            .map(|ch| if ch == '\n' { ' ' } else { ch })
+            .collect();
+
+        let result = snippet.trim().to_string();
+        if result.is_empty() {
+            "[No content]".to_string()
         } else {
-            Ok(String::new())
+            result
         }
     }
 
@@ -409,7 +517,7 @@ mod tests {
             query: "triads".to_string(),
             limit: 10,
             query_mode: None,
-        };
+            category: None,        };
 
         let results = backend.search(&params).await.expect("Search failed");
         eprintln!("Found {} results", results.len());
@@ -452,7 +560,7 @@ mod tests {
                 query: query_str.to_string(),
                 limit: 10,
                 query_mode: None,
-            };
+            category: None,            };
 
             // Just verify search executes without error
             let result = backend.search(&params).await;
@@ -490,7 +598,7 @@ mod tests {
             query: "chords".to_string(),
             limit: 1,
             query_mode: None,
-        };
+            category: None,        };
 
         let results = backend.search(&params).await.expect("Search failed");
         assert!(results.len() <= 1);
@@ -522,7 +630,7 @@ mod tests {
             query: "nonexistent".to_string(),
             limit: 10,
             query_mode: None,
-        };
+            category: None,        };
 
         let results = backend.search(&params).await.expect("Search failed");
         assert!(results.is_empty());

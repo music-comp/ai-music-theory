@@ -13,7 +13,7 @@ path = "src/main.rs"
 
 [features]
 default = []
-fts = ["dep:tantivy", "dep:regex"]
+fts = ["dep:tantivy", "dep:regex", "dep:stop-words"]
 
 [dependencies]
 rmcp = { workspace = true }
@@ -40,6 +40,7 @@ clap = { workspace = true }
 # Full-text search engine (optional)
 tantivy = { workspace = true, optional = true }
 regex = { workspace = true, optional = true }
+stop-words = { workspace = true, optional = true }
 
 [dev-dependencies]
 tempfile = "3"

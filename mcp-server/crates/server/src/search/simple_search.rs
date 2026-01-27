@@ -64,6 +64,13 @@ impl SearchBackend for SimpleSearch {
                 if let Ok(doc) = SearchDocument::from_metadata(meta, path).await {
                     // Check if document matches query
                     if doc.matches_query(&params.query) {
+                        // Apply category filter if specified
+                        if let Some(ref filter_category) = params.category {
+                            if &doc.category != filter_category {
+                                continue; // Skip documents that don't match category
+                            }
+                        }
+
                         // Extract snippet and calculate relevance
                         let snippet = doc.extract_snippet(&params.query, 200);
                         let relevance = doc.relevance(&params.query);
@@ -155,6 +162,7 @@ mod tests {
             query: "test".to_string(),
             limit: 10,
             query_mode: None,
+            category: None,
         };
 
         let result = backend.search(&params).await;

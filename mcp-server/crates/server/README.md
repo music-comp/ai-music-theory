@@ -96,11 +96,13 @@ The server supports two search backends for the `search_concepts` tool:
 
 ✅ **Multi-word query support** - `"fugue subject answer"` works correctly
 ✅ **Smart AND/OR logic** - 2 words require both, 3+ words use intelligent OR matching
-✅ **Stopword filtering** - `"what is a cadence"` → searches for `"cadence"`
+✅ **Stopword filtering** - `"what is a cadence"` → searches for `"cadence"` (500+ stopwords)
 ✅ **Phrase search** - `"perfect authentic cadence"` matches exact phrase
 ✅ **Stemming** - `write`, `writing`, `written` all match
 ✅ **Relevance ranking** - BM25 algorithm for better result ordering
+✅ **Category filtering** - Scope searches to specific categories (harmony, counterpoint, etc.)
 ✅ **Typo tolerance** - Optional fuzzy search for typo correction
+✅ **Improved snippets** - All results return non-empty, contextual snippets
 
 #### Quick Start with Tantivy
 

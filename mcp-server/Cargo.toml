@@ -6,7 +6,7 @@ members = [
 ]
 
 [workspace.package]
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 authors = ["Duncan McGreggor <oubiwann@gmail.com>"]
 license = "Apache-2.0"
@@ -50,6 +50,7 @@ regex = "1"
 
 # Full-text search (optional)
 tantivy = "0.22"
+stop-words = "0.8"
 
 # CLI parsing
 clap = { version = "4", features = ["derive"] }

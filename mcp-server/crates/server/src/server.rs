@@ -55,6 +55,9 @@ pub struct SearchConceptsParams {
     /// Optional query mode override (smart, and, or, minimum_match)
     #[serde(default)]
     query_mode: Option<crate::config::QueryMode>,
+    /// Optional category filter - only return results from this category
+    #[serde(default)]
+    category: Option<String>,
 }
 
 fn default_limit() -> usize {
@@ -190,6 +193,7 @@ impl MusicTheoryServer {
             query: params.0.query,
             limit: params.0.limit,
             query_mode: params.0.query_mode,
+            category: params.0.category,
         };
 
         let response = tools::search::search_concepts(&self.state, search_params)
@@ -471,7 +475,7 @@ mod tests {
             query: "harmony".to_string(),
             limit: 10,
             query_mode: None,
-        });
+            category: None,        });
 
         let result = server.search_concepts(params).await;
 
@@ -489,7 +493,7 @@ mod tests {
             query: "chord".to_string(),
             limit: 5,
             query_mode: None,
-        });
+            category: None,        });
 
         let result = server.search_concepts(params).await;
 
@@ -621,7 +625,7 @@ mod tests {
             query: "test".to_string(),
             limit: 5,
             query_mode: None,
-        };
+            category: None,        };
         let json = serde_json::to_string(&search_params).unwrap();
         assert!(json.contains("test"));
         assert!(json.contains("5"));

@@ -30,6 +30,7 @@ async fn search_default(
         query: query.to_string(),
         limit,
         query_mode: None, // Use default Smart mode
+        category: None,
     };
 
     let response = search_concepts(&state, params)
@@ -52,6 +53,7 @@ async fn search_with_mode(
         query: query.to_string(),
         limit,
         query_mode: Some(mode),
+        category: None,
     };
 
     let response = search_concepts(&state, params)
@@ -430,7 +432,7 @@ async fn test_empty_query_error() {
     let params = SearchConceptsParams {
         query: "".to_string(),
         limit: 10,
-        query_mode: None,
+        category: None,        query_mode: None,
     };
 
     let result = search_concepts(&state, params).await;
@@ -449,7 +451,7 @@ async fn test_whitespace_only_query() {
     let params = SearchConceptsParams {
         query: "   ".to_string(),
         limit: 10,
-        query_mode: None,
+        category: None,        query_mode: None,
     };
 
     let result = search_concepts(&state, params).await;
@@ -768,7 +770,7 @@ async fn test_backend_is_tantivy() {
     let params = SearchConceptsParams {
         query: "cadence".to_string(),
         limit: 1,
-        query_mode: None,
+        category: None,        query_mode: None,
     };
 
     let response = search_concepts(&state, params)

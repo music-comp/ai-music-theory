@@ -1,6 +1,6 @@
 [server]
 name = "music-theory-skill"
-version = "0.1.0"
+version = "0.2.0"
 
 [paths]
 # Base path for the skill repository (dynamically resolved from binary location)

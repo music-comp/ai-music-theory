@@ -39,6 +39,9 @@ pub struct SearchConceptsParams {
     #[serde(default)]
     #[cfg_attr(not(feature = "fts"), allow(dead_code))]
     pub query_mode: Option<QueryMode>,
+    /// Optional category filter - only return results from this category
+    #[serde(default)]
+    pub category: Option<String>,
 }
 
 fn default_limit() -> usize {
@@ -162,5 +165,31 @@ mod tests {
         let params: SearchConceptsParams = serde_json::from_str(json).expect("Should deserialize");
         assert_eq!(params.query, "harmony");
         assert!(params.query_mode.is_none());
+    }
+
+    #[test]
+    fn test_search_concepts_params_with_category() {
+        let json = r#"{"query":"cadence","category":"harmony"}"#;
+        let params: SearchConceptsParams = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(params.query, "cadence");
+        assert_eq!(params.category, Some("harmony".to_string()));
+    }
+
+    #[test]
+    fn test_search_concepts_params_without_category() {
+        let json = r#"{"query":"cadence"}"#;
+        let params: SearchConceptsParams = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(params.query, "cadence");
+        assert!(params.category.is_none());
+    }
+
+    #[test]
+    fn test_search_concepts_params_all_fields() {
+        let json = r#"{"query":"suspension","limit":20,"query_mode":"and","category":"voice-leading"}"#;
+        let params: SearchConceptsParams = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(params.query, "suspension");
+        assert_eq!(params.limit, 20);
+        assert_eq!(params.query_mode, Some(QueryMode::And));
+        assert_eq!(params.category, Some("voice-leading".to_string()));
     }
 }
