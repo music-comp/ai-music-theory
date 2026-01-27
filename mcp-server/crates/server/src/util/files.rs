@@ -54,13 +54,19 @@ impl FindOptions {
 ///
 /// # Example
 ///
-/// ```rust
+/// ```no_run
+/// # use music_theory_mcp::util::files::{find_file_by_id, FindOptions};
+/// # use std::path::Path;
+/// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
+/// # let concepts_dir = Path::new(".");
 /// let path = find_file_by_id(
 ///     &concepts_dir,
 ///     "pitch-class",
 ///     FindOptions::markdown()
 ///         .with_patterns(vec!["{id}.md", "{id}/README.md"])
 /// ).await?;
+/// # Ok(())
+/// # }
 /// ```
 pub async fn find_file_by_id(base_path: &Path, id: &str, options: FindOptions) -> Result<PathBuf> {
     // Phase 1: Try explicit patterns
@@ -136,11 +142,17 @@ pub struct FileInfo {
 ///
 /// # Example
 ///
-/// ```rust
+/// ```no_run
+/// # use music_theory_mcp::util::files::{find_all_files, FindOptions};
+/// # use std::path::Path;
+/// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
+/// # let sources_dir = Path::new(".");
 /// let files = find_all_files(
 ///     &sources_dir,
 ///     FindOptions::markdown().with_max_depth(2)
 /// ).await?;
+/// # Ok(())
+/// # }
 /// ```
 pub async fn find_all_files(base_path: &Path, options: FindOptions) -> Result<Vec<FileInfo>> {
     let mut files = Vec::new();

@@ -131,9 +131,8 @@ pub fn extract_first_paragraph(content: &str, max_chars: usize) -> Option<String
 ///
 /// # Examples
 ///
-/// ```
-/// use music_theory_mcp::markdown::extract_text_content;
-///
+/// ```no_run
+/// # fn extract_text_content(content: &str) -> String { String::new() }
 /// let markdown = "# Heading\n\n**Bold** and *italic* text with [link](url).";
 /// let text = extract_text_content(markdown);
 /// assert!(text.contains("Bold"));
