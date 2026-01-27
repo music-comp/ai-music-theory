@@ -564,20 +564,30 @@ mod tests {
     }
 
     #[test]
+    #[ignore = "Requires copyrighted PDF source materials not in repository - run manually with --ignored if you have the files"]
     fn test_list_unconverted_sources() {
         use crate::config::Config;
 
+        // This test requires actual copyrighted PDF source files that cannot be
+        // committed to the repository. Developers with these files can run this
+        // test manually using: cargo test -- --ignored
         let config = Config::load().expect("Config should load");
         let sources = list_unconverted_sources(&config).expect("Should list unconverted sources");
 
         // Should have sources from oxford, general, and papers categories
-        assert!(sources.len() > 0);
+        assert!(
+            sources.len() > 0,
+            "Expected unconverted sources to be present"
+        );
 
         // Check that IDs are properly formatted
         let has_oxford = sources.iter().any(|s| s.id.starts_with("oxford-"));
         let has_general = sources.iter().any(|s| s.id.starts_with("general-"));
         let has_papers = sources.iter().any(|s| s.id.starts_with("papers-"));
 
-        assert!(has_oxford || has_general || has_papers);
+        assert!(
+            has_oxford || has_general || has_papers,
+            "Expected at least one source with oxford-/general-/papers- prefix"
+        );
     }
 }

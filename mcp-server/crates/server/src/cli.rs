@@ -282,6 +282,23 @@ async fn run_server(log_level_override: Option<String>, test_mode: bool) -> Resu
     Ok(())
 }
 
+/// Setup logging for CLI commands.
+///
+/// In test mode, logging setup is skipped since the global logger may already be initialized.
+/// In production, this properly initializes the logger with the given options.
+#[cfg(all(feature = "fts", not(test)))]
+fn setup_cli_logging(log_opts: twyg::Opts) -> Result<()> {
+    twyg::setup(log_opts)
+        .map(|_| ()) // Discard Logger return value
+        .map_err(|e| crate::error::Error::config(format!("Failed to setup logging: {}", e)))
+}
+
+#[cfg(all(feature = "fts", test))]
+fn setup_cli_logging(_log_opts: twyg::Opts) -> Result<()> {
+    // In tests, logger may already be initialized - skip to avoid errors
+    Ok(())
+}
+
 /// Handle the index command (build or rebuild FTS index).
 ///
 /// Builds the index if it doesn't exist or if --force is specified.
@@ -299,8 +316,7 @@ async fn handle_index_command(force: bool, log_level_override: Option<String>) -
     let log_opts = apply_log_level_override(&config.logging, log_level_override)?;
 
     // Initialize logging for CLI output
-    twyg::setup(log_opts)
-        .map_err(|e| crate::error::Error::config(format!("Failed to setup logging: {}", e)))?;
+    setup_cli_logging(log_opts)?;
 
     let index_path = config.search.index_path()?;
 
@@ -338,8 +354,7 @@ async fn handle_status_command(log_level_override: Option<String>) -> Result<()>
 
     // Apply log level override if provided (for any debug logging)
     let log_opts = apply_log_level_override(&config.logging, log_level_override)?;
-    twyg::setup(log_opts)
-        .map_err(|e| crate::error::Error::config(format!("Failed to setup logging: {}", e)))?;
+    setup_cli_logging(log_opts)?;
 
     let index_path = config.search.index_path()?;
 
@@ -395,6 +410,8 @@ async fn handle_status_command(log_level_override: Option<String>) -> Result<()>
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[cfg(feature = "fts")]
+    use serial_test::serial;
 
     #[test]
     fn test_cli_parse_no_command() {
@@ -605,11 +622,9 @@ mod tests {
         assert!(result.is_err());
     }
 
-    // Note: These tests modify global state (env vars and twyg logging setup)
-    // Run them individually with: cargo test --features fts <test_name> -- --ignored
     #[tokio::test]
+    #[serial]
     #[cfg(feature = "fts")]
-    #[ignore = "Modifies global state - run individually"]
     async fn test_handle_index_command_no_index() {
         use std::fs;
         use tempfile::TempDir;
@@ -687,11 +702,9 @@ fuzzy_distance = 2
         assert!(result.is_ok(), "Failed with error: {:?}", result.err());
     }
 
-    // Note: These tests modify global state (env vars and twyg logging setup)
-    // Run them individually with: cargo test --features fts <test_name> -- --ignored
     #[tokio::test]
+    #[serial]
     #[cfg(feature = "fts")]
-    #[ignore = "Modifies global state - run individually"]
     async fn test_handle_index_command_with_fresh_index() {
         use std::fs;
         use tempfile::TempDir;
@@ -767,11 +780,9 @@ fuzzy_distance = 2
         assert!(result.is_ok());
     }
 
-    // Note: These tests modify global state (env vars and twyg logging setup)
-    // Run them individually with: cargo test --features fts <test_name> -- --ignored
     #[tokio::test]
+    #[serial]
     #[cfg(feature = "fts")]
-    #[ignore = "Modifies global state - run individually"]
     async fn test_handle_index_command_with_force() {
         use std::fs;
         use tempfile::TempDir;
@@ -845,11 +856,9 @@ fuzzy_distance = 2
         assert!(result.is_ok(), "Expected Ok, got: {:?}", result.err());
     }
 
-    // Note: These tests modify global state (env vars and twyg logging setup)
-    // Run them individually with: cargo test --features fts <test_name> -- --ignored
     #[tokio::test]
+    #[serial]
     #[cfg(feature = "fts")]
-    #[ignore = "Modifies global state - run individually"]
     async fn test_handle_status_command_no_index() {
         use std::fs;
         use tempfile::TempDir;
@@ -903,11 +912,9 @@ fuzzy_distance = 2
         assert!(result.is_ok());
     }
 
-    // Note: These tests modify global state (env vars and twyg logging setup)
-    // Run them individually with: cargo test --features fts <test_name> -- --ignored
     #[tokio::test]
+    #[serial]
     #[cfg(feature = "fts")]
-    #[ignore = "Modifies global state - run individually"]
     async fn test_handle_status_command_no_metadata() {
         use std::fs;
         use tempfile::TempDir;
@@ -964,11 +971,9 @@ fuzzy_distance = 2
         assert!(result.is_ok());
     }
 
-    // Note: These tests modify global state (env vars and twyg logging setup)
-    // Run them individually with: cargo test --features fts <test_name> -- --ignored
     #[tokio::test]
+    #[serial]
     #[cfg(feature = "fts")]
-    #[ignore = "Modifies global state - run individually"]
     async fn test_handle_status_command_with_index() {
         use std::fs;
         use tempfile::TempDir;
@@ -1044,11 +1049,9 @@ fuzzy_distance = 2
         assert!(result.is_ok());
     }
 
-    // Note: These tests modify global state (env vars and twyg logging setup)
-    // Run them individually with: cargo test --features fts <test_name> -- --ignored
     #[tokio::test]
+    #[serial]
     #[cfg(feature = "fts")]
-    #[ignore = "Modifies global state - run individually"]
     async fn test_handle_status_command_with_stale_index() {
         use std::fs;
         use tempfile::TempDir;
@@ -1128,11 +1131,9 @@ fuzzy_distance = 2
         assert!(result.is_ok());
     }
 
-    // Note: These tests modify global state (env vars and twyg logging setup)
-    // Run them individually with: cargo test --features fts <test_name> -- --ignored
     #[tokio::test]
+    #[serial]
     #[cfg(feature = "fts")]
-    #[ignore = "Modifies global state - run individually"]
     async fn test_handle_index_command_with_log_level() {
         use std::fs;
         use tempfile::TempDir;
@@ -1202,11 +1203,9 @@ fuzzy_distance = 2
         assert!(result.is_ok());
     }
 
-    // Note: These tests modify global state (env vars and twyg logging setup)
-    // Run them individually with: cargo test --features fts <test_name> -- --ignored
     #[tokio::test]
+    #[serial]
     #[cfg(feature = "fts")]
-    #[ignore = "Modifies global state - run individually"]
     async fn test_handle_status_command_with_log_level() {
         use std::fs;
         use tempfile::TempDir;
