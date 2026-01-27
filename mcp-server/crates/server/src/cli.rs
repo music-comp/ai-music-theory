@@ -39,7 +39,13 @@ pub struct Cli {
 #[derive(Subcommand)]
 pub enum Commands {
     /// Run the MCP server (default mode)
-    Serve,
+    Serve {
+        /// Test mode: Run without MCP protocol for testing graceful shutdown
+        /// In this mode, the server starts but doesn't accept connections.
+        /// Use Ctrl+C to test signal handling.
+        #[arg(long)]
+        test: bool,
+    },
 
     /// Build or rebuild the full-text search index
     #[cfg(feature = "fts")]
@@ -69,8 +75,8 @@ pub enum Commands {
 pub async fn handle_command(cli: Cli) -> Result<()> {
     let log_level = cli.log_level.clone();
 
-    match cli.command.unwrap_or(Commands::Serve) {
-        Commands::Serve => run_server(log_level).await,
+    match cli.command.unwrap_or(Commands::Serve { test: false }) {
+        Commands::Serve { test } => run_server(log_level, test).await,
 
         #[cfg(feature = "fts")]
         Commands::Index { force } => handle_index_command(force, log_level).await,
@@ -137,7 +143,8 @@ fn apply_log_level_override(
 /// # Arguments
 ///
 /// * `log_level_override` - Optional log level to override config
-async fn run_server(log_level_override: Option<String>) -> Result<()> {
+/// * `test_mode` - If true, runs in test mode without MCP protocol
+async fn run_server(log_level_override: Option<String>, test_mode: bool) -> Result<()> {
     use rmcp::{transport::stdio, ServiceExt};
 
     // Load configuration
@@ -167,15 +174,63 @@ async fn run_server(log_level_override: Option<String>) -> Result<()> {
         crate::state::initialize_fts(&state_arc).await?;
     }
 
-    // Create and run the MCP server with stdio transport
+    if test_mode {
+        // Test mode: Run without MCP protocol for testing signal handling
+        log::info!("Running in TEST MODE (no MCP protocol)");
+        log::info!("Server is running. Press Ctrl+C to test graceful shutdown...");
+
+        // Set up signal handler
+        let (shutdown_tx, shutdown_rx) = tokio::sync::oneshot::channel();
+
+        tokio::spawn(async move {
+            match tokio::signal::ctrl_c().await {
+                Ok(()) => {
+                    log::info!("Received shutdown signal (Ctrl+C), shutting down gracefully...");
+                    let _ = shutdown_tx.send(());
+                }
+                Err(err) => {
+                    log::error!("Failed to listen for shutdown signal: {}", err);
+                }
+            }
+        });
+
+        // Wait for shutdown signal
+        let _ = shutdown_rx.await;
+        log::info!("Server stopped gracefully");
+
+        return Ok(());
+    }
+
+    // Normal mode: Create and run the MCP server with stdio transport
     log::info!(transport = "stdio"; "Starting MCP server");
+    log::info!("Waiting for MCP client initialization handshake...");
+
     let service = MusicTheoryServer::new(state)
         .serve(stdio())
         .await
         .map_err(|e| {
+            // Provide helpful error message for common failure cases
+            let error_str = format!("{:?}", e);
+
+            if error_str.contains("ConnectionClosed") || error_str.contains("initialized") {
+                eprintln!("\n❌ MCP Protocol Error: Failed to complete initialization handshake\n");
+                eprintln!("This server uses the Model Context Protocol (MCP) and expects JSON-RPC");
+                eprintln!("messages on stdin. It cannot be run interactively in a terminal.\n");
+                eprintln!("Usage:");
+                eprintln!("  • Run through an MCP client (e.g., Claude Desktop)");
+                eprintln!("  • Use the MCP Inspector for testing: npx @modelcontextprotocol/inspector");
+                eprintln!("  • Use --test flag to test signal handling: music-theory-mcp serve --test");
+                eprintln!("  • See: https://modelcontextprotocol.io/docs/tools/inspector\n");
+                eprintln!("Original error: {}\n", error_str);
+
+                log::error!("MCP initialization failed (likely invalid protocol input): {}", error_str);
+            } else {
+                log::error!("Failed to start MCP server: {}", error_str);
+            }
+
             crate::error::Error::io(std::io::Error::other(format!(
-                "Failed to start server: {:?}",
-                e
+                "MCP server initialization failed: {}",
+                error_str
             )))
         })?;
 
@@ -344,7 +399,14 @@ mod tests {
     #[test]
     fn test_cli_parse_serve() {
         let cli = Cli::parse_from(&["music-theory-mcp", "serve"]);
-        assert!(matches!(cli.command, Some(Commands::Serve)));
+        assert!(matches!(cli.command, Some(Commands::Serve { test: false })));
+        assert!(cli.log_level.is_none());
+    }
+
+    #[test]
+    fn test_cli_parse_serve_test_mode() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "serve", "--test"]);
+        assert!(matches!(cli.command, Some(Commands::Serve { test: true })));
         assert!(cli.log_level.is_none());
     }
 
@@ -363,22 +425,29 @@ mod tests {
     #[test]
     fn test_cli_parse_log_level_with_serve() {
         let cli = Cli::parse_from(&["music-theory-mcp", "--log-level", "warn", "serve"]);
-        assert!(matches!(cli.command, Some(Commands::Serve)));
+        assert!(matches!(cli.command, Some(Commands::Serve { test: false })));
         assert_eq!(cli.log_level, Some("warn".to_string()));
     }
 
     #[test]
     fn test_cli_parse_log_level_before_command() {
         let cli = Cli::parse_from(&["music-theory-mcp", "-l", "error", "serve"]);
-        assert!(matches!(cli.command, Some(Commands::Serve)));
+        assert!(matches!(cli.command, Some(Commands::Serve { test: false })));
         assert_eq!(cli.log_level, Some("error".to_string()));
     }
 
     #[test]
     fn test_cli_parse_log_level_after_command() {
         let cli = Cli::parse_from(&["music-theory-mcp", "serve", "--log-level", "info"]);
-        assert!(matches!(cli.command, Some(Commands::Serve)));
+        assert!(matches!(cli.command, Some(Commands::Serve { test: false })));
         assert_eq!(cli.log_level, Some("info".to_string()));
+    }
+
+    #[test]
+    fn test_cli_parse_serve_test_with_log_level() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "-l", "debug", "serve", "--test"]);
+        assert!(matches!(cli.command, Some(Commands::Serve { test: true })));
+        assert_eq!(cli.log_level, Some("debug".to_string()));
     }
 
     #[test]
