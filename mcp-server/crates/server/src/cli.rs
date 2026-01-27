@@ -2,6 +2,8 @@
 //!
 //! Provides serve/index/status subcommands using clap.
 
+use std::io::Write;
+
 #[cfg(feature = "fts")]
 use std::sync::Arc;
 
@@ -183,6 +185,10 @@ async fn run_server(log_level_override: Option<String>) -> Result<()> {
         match tokio::signal::ctrl_c().await {
             Ok(()) => {
                 log::info!("Received shutdown signal (Ctrl+C), shutting down gracefully...");
+                // Force flush to ensure message is written before cancellation
+                let _ = std::io::stderr().flush();
+                // Small delay to allow log message to be processed
+                tokio::time::sleep(tokio::time::Duration::from_millis(50)).await;
                 cancel_token.cancel();
             }
             Err(err) => {
@@ -195,9 +201,15 @@ async fn run_server(log_level_override: Option<String>) -> Result<()> {
     match service.waiting().await {
         Ok(reason) => {
             log::info!("Server stopped: {:?}", reason);
+            // Force flush to ensure message is written before exit
+            let _ = std::io::stderr().flush();
+            // Small delay to allow log message to be processed
+            tokio::time::sleep(tokio::time::Duration::from_millis(50)).await;
         }
         Err(e) => {
             log::error!("Server task join error: {:?}", e);
+            let _ = std::io::stderr().flush();
+            tokio::time::sleep(tokio::time::Duration::from_millis(50)).await;
             return Err(crate::error::Error::io(std::io::Error::other(format!(
                 "Server task join error: {:?}",
                 e
