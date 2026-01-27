@@ -24,10 +24,19 @@ pub struct SimpleSearch {
 impl SimpleSearch {
     /// Create a new SimpleSearch backend.
     ///
+    /// **DEPRECATED:** This backend is deprecated and will be removed in version 0.3.0.
+    /// Please migrate to `backend = "tantivy"` for better search quality.
+    /// See MIGRATION.md for migration instructions.
+    ///
     /// # Arguments
     ///
     /// * `config` - Server configuration
     pub fn new(config: Config) -> Self {
+        log::warn!(
+            "SimpleSearch backend is deprecated and will be removed in version 0.3.0. \
+            Please migrate to 'backend = \"tantivy\"' for better search quality. \
+            See MIGRATION.md for instructions."
+        );
         SimpleSearch { config }
     }
 }

@@ -85,99 +85,164 @@ lewin-gmit = "[2007] Lewin - GMIT.pdf"
 
 ### Search Configuration
 
+**Version 0.2.0 Update:** Tantivy is now the default search backend for significantly better search quality!
+
 The server supports two search backends for the `search_concepts` tool:
 
-- **Simple** (default) - Linear scan, always available, suitable for <500 concept cards
-- **Tantivy** - Full-text search engine, optional feature, recommended for 500+ concept cards
+- **Tantivy** (default, recommended) - Full-text search engine with advanced query support
+- **Simple** (deprecated) - Linear scan, will be removed in v0.3.0
 
-Configure the search backend in `config/default.toml`:
+#### Search Quality Features (Tantivy Backend)
+
+✅ **Multi-word query support** - `"fugue subject answer"` works correctly
+✅ **Smart AND/OR logic** - 2 words require both, 3+ words use intelligent OR matching
+✅ **Stopword filtering** - `"what is a cadence"` → searches for `"cadence"`
+✅ **Phrase search** - `"perfect authentic cadence"` matches exact phrase
+✅ **Stemming** - `write`, `writing`, `written` all match
+✅ **Relevance ranking** - BM25 algorithm for better result ordering
+✅ **Typo tolerance** - Optional fuzzy search for typo correction
+
+#### Quick Start with Tantivy
+
+**1. Build with FTS support:**
+
+```bash
+cargo build --release --features fts
+```
+
+**2. Build the search index:**
+
+```bash
+./target/release/music-theory-mcp index
+```
+
+**3. Start the server:**
+
+```bash
+./target/release/music-theory-mcp serve
+```
+
+That's it! The server will use the improved Tantivy backend by default.
+
+#### Configuration
+
+Configure search behavior in `config/default.toml`:
 
 ```toml
 [search]
-# Backend selection: "simple" or "tantivy"
+# Backend selection: "tantivy" (default) or "simple" (deprecated)
 # Note: "tantivy" requires building with --features fts
-backend = "simple"
+backend = "tantivy"
 
 # Tantivy index directory (relative to skill root)
 index_path = ".tantivy-index"
 
 # Rebuild index on startup
-# With async background indexing, this is less critical:
-# - false (recommended): Builds only if missing or stale
-# - true: Forces rebuild on every startup
 rebuild_on_startup = false
 
 # Snippet context size in characters
 snippet_size = 200
 
-# Enable fuzzy search (typo tolerance, requires --features fts)
+# Enable fuzzy search (typo tolerance)
 fuzzy_search = false
-
-# Maximum edit distance for fuzzy matching (1-2)
 fuzzy_distance = 2
+
+# Query mode for multi-word queries
+# - "smart": 2 words = AND, 3+ words = OR with 60% minimum match (recommended)
+# - "and": All terms must be present (strict)
+# - "or": Any term matches (maximum recall)
+# - { minimum_match = 0.75 }: At least N% of terms must match
+query_mode = "smart"
+
+# Minimum match percentage for OR queries with 3+ terms
+minimum_match_percent = 0.6
+
+# Enable stopword filtering for natural language queries
+enable_stopwords = true
+
+# Custom stopwords (beyond default English stopwords)
+custom_stopwords = []
+
+# Domain-specific terms to preserve (never filtered)
+stopword_allowlist = ["I", "V", "ii", "IV", "vi", "vii", "i", "v", "iv", "do", "re", "mi", "fa", "sol", "la", "ti"]
 ```
 
-**Using Tantivy Search (Optional Feature):**
+#### Query Syntax
 
-Tantivy is an optional feature that must be enabled at build time:
+The Tantivy backend supports advanced query syntax:
 
-```bash
-# Build with FTS support
-cargo build --release --features fts
-
-# Or run with FTS support
-cargo run --features fts
+**Basic queries:**
+```
+cadence                    → Single term search
+authentic cadence          → Smart mode: both terms required (AND)
+fugue subject answer       → Smart mode: 2 of 3 terms required (60% minimum)
 ```
 
-**Setting up Tantivy:**
+**Natural language:**
+```
+what is a cadence          → Stopwords filtered: "cadence"
+how to write counterpoint  → Filtered: "write counterpoint"
+V I resolution             → Roman numerals preserved
+```
 
-1. Build with `--features fts`
-2. Set `backend = "tantivy"` in config
-3. Build the index using the CLI:
-   ```bash
-   ./target/release/music-theory-mcp index
-   ```
-4. Start the server (index loads instantly):
-   ```bash
-   ./target/release/music-theory-mcp serve
-   # or just: ./target/release/music-theory-mcp
-   ```
+**Phrase search (exact matching):**
+```
+"perfect authentic cadence"    → Exact phrase
+"leading tone" resolution      → Phrase + additional term
+"V I" "IV V"                   → Multiple phrases (OR)
+```
 
-**Non-Blocking Indexing:**
+**Query Mode Examples:**
 
-The server uses async background indexing:
-- Server starts immediately (<1 second)
-- Index builds in the background if needed
-- Simple search available during indexing
-- Automatic switch to FTS when ready
-- Index freshness checked via content hash (no unnecessary rebuilds)
+| Query | Smart Mode | AND Mode | OR Mode |
+|-------|------------|----------|---------|
+| `authentic cadence` | Both required | Both required | Either matches |
+| `fugue subject answer` | 2 of 3 required (60%) | All 3 required | Any 1 matches |
 
-**CLI Commands:**
+#### CLI Commands
 
 ```bash
-# Serve (default command)
+# Start server (default command)
 music-theory-mcp serve
 
-# Build/rebuild index (with FTS feature)
+# Build or rebuild index (requires --features fts)
 music-theory-mcp index
-music-theory-mcp index --force  # Force rebuild even if fresh
+music-theory-mcp index --force  # Force rebuild
 
-# Show index status (with FTS feature)
+# Show index status
 music-theory-mcp status
 ```
 
-**Benefits of Tantivy:**
-- 10-100x faster search (sub-millisecond queries)
-- Typo tolerance with fuzzy search
-- Phrase queries and boolean operators (future)
-- Scales to 10,000+ documents
-- Background indexing (non-blocking startup)
-- Content hash tracking (avoid unnecessary rebuilds)
+**Example status output:**
+```
+Index Status:
+  Location:     /path/to/.tantivy-index
+  Documents:    200
+  Status:       ✓ Current
+```
 
-**When to Switch:**
-- Simple backend works well up to ~500 concept cards
-- Switch to Tantivy when search latency becomes noticeable
-- The index requires ~1-2 seconds to build for 200 documents (background)
+#### Migration from Simple Backend
+
+If you're upgrading from v0.1.0, see `MIGRATION.md` for detailed migration instructions.
+
+**Quick migration:**
+1. Rebuild with `--features fts`
+2. Run `music-theory-mcp index`
+3. Restart server
+
+**Rollback (temporary):**
+Set `backend = "simple"` in config (shows deprecation warning).
+
+#### Performance Comparison
+
+| Metric | Simple Backend | Tantivy Backend |
+|--------|----------------|-----------------|
+| **Query latency** | ~50-100ms | ~5-20ms |
+| **Memory usage** | ~50MB | ~100-150MB |
+| **Multi-word queries** | ❌ Poor | ✅ Excellent |
+| **Natural language** | ❌ Poor | ✅ Excellent |
+| **Phrase search** | ❌ No | ✅ Yes |
+| **Relevance ranking** | ⚠️ Basic | ✅ BM25 |
 
 **Search Response Format:**
 

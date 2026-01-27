@@ -89,11 +89,13 @@ report_caller = false
 [search]
 # Backend selection: "simple" or "tantivy"
 # - "simple": Linear scan (suitable for <500 concepts, no index needed, always available)
-# - "tantivy": Full-text search engine (recommended for 500+ concepts, requires --features fts)
+# - "tantivy": Full-text search engine (recommended for better search quality, requires --features fts)
 #
+# CHANGED in v0.2.0: tantivy is now the default backend for improved search quality
 # Note: "tantivy" requires building the server with --features fts
 # Without the feature flag, "tantivy" will fall back to "simple" backend
-backend = "simple"
+# To use the legacy simple backend, set: backend = "simple"
+backend = "tantivy"
 
 # Tantivy index storage (relative to skill root or absolute path)
 index_path = ".tantivy-index"
@@ -120,3 +122,32 @@ fuzzy_search = false
 # Higher values are more permissive but slower
 # Only applies when fuzzy_search = true
 fuzzy_distance = 2
+
+# Query mode for multi-word queries (tantivy backend only)
+# - "smart": 2 words = AND (both required), 3+ words = OR with minimum 60% match
+# - "and": All terms must be present (strict matching)
+# - "or": Any term matches (maximum recall)
+# - { minimum_match = 0.75 }: At least N% of terms must match
+# Default: "smart" (recommended for best balance of precision and recall)
+query_mode = "smart"
+
+# Minimum match percentage for OR queries with 3+ terms (0.0 to 1.0)
+# Only applies when query_mode = "smart" or query_mode = { minimum_match = N }
+# Example: 0.6 = 60% of terms must match (2 out of 3, 3 out of 5, etc.)
+minimum_match_percent = 0.6
+
+# Enable stopword filtering for natural language queries
+# When enabled, common words like "what", "is", "a", "the" are filtered
+# before searching, improving results for queries like "what is a cadence"
+# Domain-specific terms (Roman numerals, solfège) are preserved via allowlist
+enable_stopwords = true
+
+# Custom stopwords to add beyond the default English stopwords
+# Use this to filter domain-specific common words if needed
+custom_stopwords = []
+
+# Domain-specific terms to preserve (never filtered as stopwords)
+# Music theory terms that might otherwise be filtered:
+# - Roman numerals: I, V, ii, IV, vi, vii, i, v, iv
+# - Solfège syllables: do, re, mi, fa, sol, la, ti
+stopword_allowlist = ["I", "V", "ii", "IV", "vi", "vii", "i", "v", "iv", "do", "re", "mi", "fa", "sol", "la", "ti"]
