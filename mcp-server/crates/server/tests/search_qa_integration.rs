@@ -5,8 +5,11 @@
 //!
 //! Phase 1 Tests: Multi-word query logic improvements
 
+#[cfg(feature = "fts")]
 use music_theory_mcp::config::{Config, QueryMode};
+#[cfg(feature = "fts")]
 use music_theory_mcp::state::AppState;
+#[cfg(feature = "fts")]
 use music_theory_mcp::tools::search::{search_concepts, SearchConceptsParams};
 
 #[cfg(feature = "fts")]
