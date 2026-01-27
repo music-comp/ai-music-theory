@@ -6,6 +6,8 @@ This index is automatically generated. Do not edit manually.
 
 | Number | Title | State | Updated |
 |--------|-------|-------|----------|
+| 0008 | Graph Database Phase 2 - Query Tools & Algorithms | Under Review | 2026-01-27 |
+| 0007 | Graph Database Phase 1 - Generation & Infrastructure | Under Review | 2026-01-27 |
 | 0006 | Fix Search Quality Issues | Active | 2026-01-27 |
 | 0005 | Tantivy Feature Gating & Async Background Indexing | Active | 2026-01-26 |
 | 0004 | Tantivy Full-Text Search for the MCP Server | Final | 2026-01-26 |
@@ -14,6 +16,11 @@ This index is automatically generated. Do not edit manually.
 | 0001 | Open Music Theory Processing Plan | Active | 2026-01-24 |
 
 ## Documents by State
+
+### Under Review
+
+- [0008 - Graph Database Phase 2 - Query Tools & Algorithms](02-under-review/0008-graph-database-phase-2-query-tools-algorithms.md)
+- [0007 - Graph Database Phase 1 - Generation & Infrastructure](02-under-review/0007-graph-database-phase-1-generation-infrastructure.md)
 
 ### Active
 
