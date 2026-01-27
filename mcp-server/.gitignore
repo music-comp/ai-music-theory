@@ -1,0 +1,6 @@
+# Tantivy search indexes (production and test)
+.tantivy-index/
+.tantivy-index-test/
+
+# Build artifacts
+target/

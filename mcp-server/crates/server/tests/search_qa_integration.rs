@@ -6,7 +6,9 @@
 //! Phase 1 Tests: Multi-word query logic improvements
 
 #[cfg(feature = "fts")]
-use music_theory_mcp::config::{Config, QueryMode};
+use music_theory_mcp::config::{Config, PathsConfig, QueryMode, SearchConfig, ServerConfig, SourcesConfig};
+#[cfg(feature = "fts")]
+use music_theory_mcp::search::build_index;
 #[cfg(feature = "fts")]
 use music_theory_mcp::state::AppState;
 #[cfg(feature = "fts")]
@@ -14,14 +16,76 @@ use music_theory_mcp::tools::search::{search_concepts, SearchConceptsParams};
 
 #[cfg(feature = "fts")]
 use serial_test::serial;
+#[cfg(feature = "fts")]
+use std::path::PathBuf;
+#[cfg(feature = "fts")]
+use tokio::sync::OnceCell;
 
-/// Helper to create test config with tantivy backend
+#[cfg(feature = "fts")]
+static INDEX_INIT: OnceCell<()> = OnceCell::const_new();
+
+/// Helper to create test config with tantivy backend and real concept cards
 #[cfg(feature = "fts")]
 fn test_config() -> Config {
-    let mut config = Config::load().expect("Failed to load config");
-    // Force tantivy backend for these tests
-    config.search.backend = "tantivy".to_string();
-    config
+    // Find the project root (where concept-cards/ lives)
+    // CARGO_MANIFEST_DIR is crates/server
+    // Go up three levels to get to ai-music-theory/ (crates/server -> crates -> mcp-server -> ai-music-theory)
+    let project_root = PathBuf::from(env!("CARGO_MANIFEST_DIR"))
+        .parent()
+        .unwrap()
+        .parent()
+        .unwrap()
+        .parent()
+        .unwrap()
+        .to_path_buf();
+
+    let index_path = project_root.join("mcp-server").join(".tantivy-index-test");
+
+    Config {
+        server: ServerConfig {
+            name: "test-server".to_string(),
+            version: "0.2.0".to_string(),
+        },
+        paths: PathsConfig {
+            base: project_root.to_string_lossy().to_string(),
+            sources_md: project_root.join("sources-md").to_string_lossy().to_string(),
+            concept_cards: project_root.join("concept-cards").to_string_lossy().to_string(),
+            concepts_unified: project_root.join("concepts-unified").to_string_lossy().to_string(),
+            guides: project_root.join("guides").to_string_lossy().to_string(),
+            skill_docs: project_root.to_string_lossy().to_string(),
+        },
+        sources: SourcesConfig::default(),
+        logging: twyg::OptsBuilder::new()
+            .level(twyg::LogLevel::Error)
+            .coloured(false)
+            .output(twyg::Output::Stderr)
+            .build()
+            .unwrap(),
+        search: SearchConfig {
+            backend: "tantivy".to_string(),
+            index_path: index_path.to_string_lossy().to_string(),
+            rebuild_on_startup: false,
+            snippet_size: 200,
+            fuzzy_search: false,
+            fuzzy_distance: 2,
+            query_mode: music_theory_mcp::config::QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec!["I".to_string(), "V".to_string(), "ii".to_string(), "IV".to_string(), "vi".to_string()],
+        },
+    }
+}
+
+/// Ensure index is built before running any tests
+#[cfg(feature = "fts")]
+async fn ensure_index_built() {
+    INDEX_INIT
+        .get_or_init(|| async {
+            let config = test_config();
+            build_index(&config).await.expect("Failed to build test index");
+        })
+        .await;
 }
 
 /// Helper to perform search with default settings
@@ -30,6 +94,8 @@ async fn search_default(
     query: &str,
     limit: usize,
 ) -> Vec<music_theory_mcp::tools::search::SearchResult> {
+    ensure_index_built().await;
+
     let config = test_config();
     let state = AppState::new(config).await.expect("Failed to create state");
 
@@ -54,6 +120,8 @@ async fn search_with_mode(
     limit: usize,
     mode: QueryMode,
 ) -> Vec<music_theory_mcp::tools::search::SearchResult> {
+    ensure_index_built().await;
+
     let config = test_config();
     let state = AppState::new(config).await.expect("Failed to create state");
 
@@ -434,6 +502,8 @@ async fn test_single_term_unchanged() {
 #[serial]
 #[cfg(feature = "fts")]
 async fn test_empty_query_error() {
+    ensure_index_built().await;
+
     let config = test_config();
     let state = AppState::new(config).await.expect("Failed to create state");
 
@@ -454,6 +524,8 @@ async fn test_empty_query_error() {
 #[serial]
 #[cfg(feature = "fts")]
 async fn test_whitespace_only_query() {
+    ensure_index_built().await;
+
     let config = test_config();
     let state = AppState::new(config).await.expect("Failed to create state");
 
@@ -774,6 +846,8 @@ async fn test_phrase_vs_non_phrase() {
 #[serial]
 #[cfg(feature = "fts")]
 async fn test_backend_is_tantivy() {
+    ensure_index_built().await;
+
     let config = test_config();
     let state = AppState::new(config).await.expect("Failed to create state");
 
