@@ -415,61 +415,61 @@ mod tests {
 
     #[test]
     fn test_cli_parse_no_command() {
-        let cli = Cli::parse_from(&["music-theory-mcp"]);
+        let cli = Cli::parse_from(["music-theory-mcp"]);
         assert!(cli.command.is_none());
         assert!(cli.log_level.is_none());
     }
 
     #[test]
     fn test_cli_parse_serve() {
-        let cli = Cli::parse_from(&["music-theory-mcp", "serve"]);
+        let cli = Cli::parse_from(["music-theory-mcp", "serve"]);
         assert!(matches!(cli.command, Some(Commands::Serve { test: false })));
         assert!(cli.log_level.is_none());
     }
 
     #[test]
     fn test_cli_parse_serve_test_mode() {
-        let cli = Cli::parse_from(&["music-theory-mcp", "serve", "--test"]);
+        let cli = Cli::parse_from(["music-theory-mcp", "serve", "--test"]);
         assert!(matches!(cli.command, Some(Commands::Serve { test: true })));
         assert!(cli.log_level.is_none());
     }
 
     #[test]
     fn test_cli_parse_log_level_long() {
-        let cli = Cli::parse_from(&["music-theory-mcp", "--log-level", "debug"]);
+        let cli = Cli::parse_from(["music-theory-mcp", "--log-level", "debug"]);
         assert_eq!(cli.log_level, Some("debug".to_string()));
     }
 
     #[test]
     fn test_cli_parse_log_level_short() {
-        let cli = Cli::parse_from(&["music-theory-mcp", "-l", "trace"]);
+        let cli = Cli::parse_from(["music-theory-mcp", "-l", "trace"]);
         assert_eq!(cli.log_level, Some("trace".to_string()));
     }
 
     #[test]
     fn test_cli_parse_log_level_with_serve() {
-        let cli = Cli::parse_from(&["music-theory-mcp", "--log-level", "warn", "serve"]);
+        let cli = Cli::parse_from(["music-theory-mcp", "--log-level", "warn", "serve"]);
         assert!(matches!(cli.command, Some(Commands::Serve { test: false })));
         assert_eq!(cli.log_level, Some("warn".to_string()));
     }
 
     #[test]
     fn test_cli_parse_log_level_before_command() {
-        let cli = Cli::parse_from(&["music-theory-mcp", "-l", "error", "serve"]);
+        let cli = Cli::parse_from(["music-theory-mcp", "-l", "error", "serve"]);
         assert!(matches!(cli.command, Some(Commands::Serve { test: false })));
         assert_eq!(cli.log_level, Some("error".to_string()));
     }
 
     #[test]
     fn test_cli_parse_log_level_after_command() {
-        let cli = Cli::parse_from(&["music-theory-mcp", "serve", "--log-level", "info"]);
+        let cli = Cli::parse_from(["music-theory-mcp", "serve", "--log-level", "info"]);
         assert!(matches!(cli.command, Some(Commands::Serve { test: false })));
         assert_eq!(cli.log_level, Some("info".to_string()));
     }
 
     #[test]
     fn test_cli_parse_serve_test_with_log_level() {
-        let cli = Cli::parse_from(&["music-theory-mcp", "-l", "debug", "serve", "--test"]);
+        let cli = Cli::parse_from(["music-theory-mcp", "-l", "debug", "serve", "--test"]);
         assert!(matches!(cli.command, Some(Commands::Serve { test: true })));
         assert_eq!(cli.log_level, Some("debug".to_string()));
     }

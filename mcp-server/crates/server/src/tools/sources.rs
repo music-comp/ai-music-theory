@@ -381,7 +381,7 @@ mod tests {
         let result = get_source_pdf_path(&config, "general-straus-post-tonal");
         match result {
             Ok(path) => assert!(
-                path.to_string_lossy().contains("Straus") || path.to_string_lossy().len() > 0
+                path.to_string_lossy().contains("Straus") || !path.to_string_lossy().is_empty()
             ),
             Err(e) => {
                 let msg = e.to_string();
@@ -401,7 +401,7 @@ mod tests {
 
         let result = get_source_pdf_path(&config, "papers-fiore");
         match result {
-            Ok(path) => assert!(path.to_string_lossy().len() > 0),
+            Ok(path) => assert!(!path.to_string_lossy().is_empty()),
             Err(e) => {
                 let msg = e.to_string();
                 assert!(
@@ -576,7 +576,7 @@ mod tests {
 
         // Should have sources from oxford, general, and papers categories
         assert!(
-            sources.len() > 0,
+            !sources.is_empty(),
             "Expected unconverted sources to be present"
         );
 

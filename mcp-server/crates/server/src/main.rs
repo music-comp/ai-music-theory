@@ -28,7 +28,7 @@ mod tests {
     #[test]
     fn test_cli_parse() {
         // Just verify CLI parsing doesn't panic
-        let cli = Cli::parse_from(&["music-theory-mcp"]);
+        let cli = Cli::parse_from(["music-theory-mcp"]);
         assert!(cli.command.is_none());
     }
 

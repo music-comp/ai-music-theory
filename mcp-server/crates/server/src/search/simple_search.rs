@@ -147,7 +147,7 @@ mod tests {
     fn test_simple_search_new() {
         let config = test_config();
         let backend = SimpleSearch::new(config);
-        assert!(std::ptr::addr_of!(backend).is_null() == false);
+        assert!(!std::ptr::addr_of!(backend).is_null());
     }
 
     #[tokio::test]
