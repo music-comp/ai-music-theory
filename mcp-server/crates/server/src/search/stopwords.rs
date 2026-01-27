@@ -262,6 +262,7 @@ impl StopwordFilter {
     /// # Returns
     ///
     /// Returns `true` if the word is a stopword and not allowlisted.
+    #[allow(dead_code)]
     pub fn is_stopword(&self, word: &str) -> bool {
         let word_lower = word.to_lowercase();
         self.stopwords.contains(&word_lower) && !self.allowlist.contains(word)

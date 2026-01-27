@@ -33,6 +33,7 @@ pub use simple_search::SimpleSearch;
 #[cfg(feature = "fts")]
 pub use builder::{build_index, IndexStats};
 #[cfg(feature = "fts")]
+#[allow(unused_imports)]
 pub use stopwords::{StopwordFilter, ENGLISH_STOPWORDS};
 #[cfg(feature = "fts")]
 pub use tantivy_search::TantivySearch;
