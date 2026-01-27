@@ -90,7 +90,7 @@ impl SearchBackend for SimpleSearch {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::config::{LoggingConfig, PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
+    use crate::config::{PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
 
     fn test_config() -> Config {
         Config {
@@ -107,12 +107,13 @@ mod tests {
                 skill_docs: ".".to_string(),
             },
             sources: SourcesConfig::default(),
-            logging: LoggingConfig {
-                level: "info".to_string(),
-                coloured: true,
-                file: None,
-                report_caller: false,
-            },
+            logging: twyg::OptsBuilder::new()
+                .level(twyg::LogLevel::Info)
+                .coloured(true)
+                .output(twyg::Output::Stderr)
+                .report_caller(false)
+                .build()
+                .unwrap(),
             search: SearchConfig {
                 backend: "simple".to_string(),
                 index_path: ".tantivy-index".to_string(),

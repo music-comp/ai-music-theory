@@ -55,21 +55,36 @@ fiore = "[2009] Fiore - Music and Mathematics.pdf"
 acef-sanchez = "[2012] Acef-Sanchez - An Introduction to Group Theory with applications to Mathematical Music Theory.pdf"
 
 [logging]
-# Log level: trace, debug, info, warn, error
+# Log level: trace, debug, info, warn, error (lowercase)
 level = "info"
 
-# Enable colored output (default: true)
-# Set to false for plain text logs or when piping to files
+# Enable colored output
 coloured = true
 
-# Optional log file path
-# When set, logs are written to the specified file instead of stderr
-# Leave commented to use stderr (required for MCP protocol compliance)
-# file = "/path/to/music-theory-mcp.log"
+# Output destination: "stdout", "stderr", or { file = "/path/to/log.log" }
+# MCP protocol requires stderr for server logs (stdout is for MCP messages)
+# Use file output only when redirecting logs to a file
+output = "stderr"
+# Example file output:
+# output = { file = "/path/to/music-theory-mcp.log" }
 
-# Report caller location (file:line) in log messages (default: false)
+# Report caller location (file:line) in log messages
 # Useful for debugging but adds overhead
 report_caller = false
+
+# Optional: Customize timestamp format
+# Defaults to "standard" if not specified
+# Options: "standard", "simple", "timeonly", "rfc3339", or { custom = "%Y-%m-%d %H:%M:%S" }
+# timestamp_format = "simple"
+
+# Optional: Enable level padding for alignment
+# pad_level = true
+# pad_amount = 5
+# pad_side = "right"  # or "left"
+
+# Optional: Customize separators and symbols
+# msg_separator = ": "
+# arrow_char = "▶"
 
 [search]
 # Backend selection: "simple" or "tantivy"

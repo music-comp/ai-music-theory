@@ -13,7 +13,7 @@ pub struct Config {
     pub sources: SourcesConfig,
     // Allow unused - will be used when dynamic log level configuration is implemented
     #[allow(dead_code)]
-    pub logging: LoggingConfig,
+    pub logging: twyg::Opts,
     // Allow unused - will be used when search backends are implemented (Phase 2+)
     #[allow(dead_code)]
     pub search: SearchConfig,
@@ -158,72 +158,6 @@ impl SearchConfig {
     }
 }
 
-/// Logging configuration.
-#[derive(Debug, Clone, Deserialize)]
-pub struct LoggingConfig {
-    /// Log level (trace, debug, info, warn, error)
-    pub level: String,
-
-    /// Enable colored output
-    #[serde(default = "default_coloured")]
-    pub coloured: bool,
-
-    /// Optional log file path (writes to file instead of stderr)
-    /// Note: MCP protocol requires stderr for server logs when not using file output
-    #[serde(default)]
-    pub file: Option<String>,
-
-    /// Report caller location (file:line) in log messages
-    #[serde(default = "default_report_caller")]
-    pub report_caller: bool,
-}
-
-fn default_coloured() -> bool {
-    true
-}
-
-fn default_report_caller() -> bool {
-    false
-}
-
-impl LoggingConfig {
-    /// Convert logging configuration to twyg options.
-    pub fn to_twyg(&self) -> Result<twyg::Opts> {
-        use twyg::{Color, ColorAttribute, Colors, LogLevel, OptsBuilder, Output, TSFormat};
-
-        // Parse level string into LogLevel enum
-        let level: LogLevel = self
-            .level
-            .parse()
-            .map_err(|_| Error::config(format!("Invalid log level: {}", self.level)))?;
-
-        // Configure custom colors for twyg
-        let colors = Colors {
-            timestamp: Some(Color::fg(ColorAttribute::HiBlack)),
-            ..Default::default()
-        };
-
-        // Determine output destination
-        // MCP protocol requires stderr for server logs (stdout is for MCP protocol messages)
-        // File output is allowed as an alternative
-        let output = match &self.file {
-            Some(path) => Output::file(path),
-            None => Output::Stderr,
-        };
-
-        // Build opts using OptsBuilder
-        OptsBuilder::new()
-            .coloured(self.coloured)
-            .output(output)
-            .level(level)
-            .timestamp_format(TSFormat::Simple)
-            .colors(colors)
-            .report_caller(self.report_caller)
-            .build()
-            .map_err(|e| Error::config(format!("Failed to build twyg opts: {}", e)))
-    }
-}
-
 impl Config {
     /// Load configuration from the default location.
     /// Searches for config directory using binary-relative path resolution.
@@ -296,95 +230,6 @@ mod tests {
         let result = expand_path("/absolute/path");
         assert!(result.is_ok());
         assert_eq!(result.unwrap(), PathBuf::from("/absolute/path"));
-    }
-
-    #[test]
-    fn test_logging_config_to_twyg_valid() {
-        let config = LoggingConfig {
-            level: "debug".to_string(),
-            coloured: true,
-            file: None,
-            report_caller: false,
-        };
-        let result = config.to_twyg();
-        assert!(result.is_ok(), "Should parse valid log level 'debug'");
-    }
-
-    #[test]
-    fn test_logging_config_to_twyg_invalid() {
-        let config = LoggingConfig {
-            level: "invalid".to_string(),
-            coloured: true,
-            file: None,
-            report_caller: false,
-        };
-        let result = config.to_twyg();
-        assert!(result.is_err(), "Should reject invalid log level");
-        assert!(result
-            .unwrap_err()
-            .to_string()
-            .contains("Invalid log level"));
-    }
-
-    #[test]
-    fn test_logging_config_to_twyg_all_levels() {
-        let levels = vec!["trace", "debug", "info", "warn", "error"];
-        for level in levels {
-            let config = LoggingConfig {
-                level: level.to_string(),
-                coloured: true,
-                file: None,
-                report_caller: false,
-            };
-            let result = config.to_twyg();
-            assert!(result.is_ok(), "Should parse valid log level '{}'", level);
-        }
-    }
-
-    #[test]
-    fn test_logging_config_defaults() {
-        let json = r#"{"level": "info"}"#;
-        let config: LoggingConfig = serde_json::from_str(json).expect("Should deserialize");
-        assert_eq!(config.level, "info");
-        assert!(config.coloured, "Should default to true");
-        assert!(config.file.is_none(), "Should default to None");
-        assert!(!config.report_caller, "Should default to false");
-    }
-
-    #[test]
-    fn test_logging_config_with_file() {
-        let config = LoggingConfig {
-            level: "debug".to_string(),
-            coloured: false,
-            file: Some("/tmp/test.log".to_string()),
-            report_caller: true,
-        };
-        let result = config.to_twyg();
-        assert!(result.is_ok(), "Should support file output");
-    }
-
-    #[test]
-    fn test_logging_config_report_caller() {
-        let config = LoggingConfig {
-            level: "trace".to_string(),
-            coloured: true,
-            file: None,
-            report_caller: true,
-        };
-        let result = config.to_twyg();
-        assert!(result.is_ok(), "Should support report_caller");
-    }
-
-    #[test]
-    fn test_logging_config_no_color() {
-        let config = LoggingConfig {
-            level: "warn".to_string(),
-            coloured: false,
-            file: None,
-            report_caller: false,
-        };
-        let result = config.to_twyg();
-        assert!(result.is_ok(), "Should support disabling colors");
     }
 
     #[test]

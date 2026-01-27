@@ -83,8 +83,7 @@ async fn run_server() -> Result<()> {
     let config = Config::load()?;
 
     // Initialize logging with twyg from config
-    let log_opts = config.logging.to_twyg()?;
-    twyg::setup(log_opts)
+    twyg::setup(config.logging.clone())
         .map_err(|e| crate::error::Error::config(format!("Failed to setup logging: {}", e)))?;
 
     log::info!(
@@ -156,8 +155,7 @@ async fn handle_index_command(force: bool) -> Result<()> {
     let config = Config::load()?;
 
     // Initialize logging for CLI output
-    let log_opts = config.logging.to_twyg()?;
-    twyg::setup(log_opts)
+    twyg::setup(config.logging.clone())
         .map_err(|e| crate::error::Error::config(format!("Failed to setup logging: {}", e)))?;
 
     let index_path = config.search.index_path()?;
