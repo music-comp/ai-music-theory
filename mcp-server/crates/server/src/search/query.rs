@@ -3,7 +3,7 @@
 //! This module provides QueryBuilder for constructing weighted multi-field queries
 //! that match the relevance scoring used in simple search.
 
-use tantivy::query::{BooleanQuery, BoostQuery, FuzzyTermQuery, Occur, Query, TermQuery};
+use tantivy::query::{BooleanQuery, BoostQuery, FuzzyTermQuery, Occur, PhraseQuery, Query, TermQuery};
 use tantivy::schema::IndexRecordOption;
 use tantivy::tokenizer::{LowerCaser, SimpleTokenizer, Stemmer, TextAnalyzer};
 use tantivy::Term;
@@ -11,6 +11,44 @@ use tantivy::Term;
 use crate::config::SearchConfig;
 use crate::error::{Error, Result};
 use crate::search::SearchSchema;
+
+/// Parse query into phrases and remaining terms.
+///
+/// Extracts quoted phrases from the query string and returns them separately
+/// from the non-quoted terms.
+///
+/// # Arguments
+///
+/// * `query` - The query string to parse
+///
+/// # Returns
+///
+/// Returns a tuple of (phrases, remaining_terms) where:
+/// - `phrases` is a vector of quoted strings (without quotes)
+/// - `remaining_terms` is the query with quoted phrases removed
+fn parse_phrases(query: &str) -> (Vec<String>, String) {
+    #[cfg(feature = "fts")]
+    {
+        use regex::Regex;
+        let phrase_regex = Regex::new(r#""([^"]+)""#).unwrap();
+        let mut phrases = Vec::new();
+
+        for capture in phrase_regex.captures_iter(query) {
+            if let Some(phrase) = capture.get(1) {
+                phrases.push(phrase.as_str().to_string());
+            }
+        }
+
+        // Remove phrases from query to get remaining terms
+        let remaining = phrase_regex.replace_all(query, "").to_string();
+
+        (phrases, remaining)
+    }
+    #[cfg(not(feature = "fts"))]
+    {
+        (vec![], query.to_string())
+    }
+}
 
 /// Query builder for Tantivy search.
 ///
@@ -71,19 +109,22 @@ impl<'a> QueryBuilder<'a> {
             ));
         }
 
-        // Apply stopword filtering if enabled
+        // Parse phrases and terms
+        let (phrases, remaining_query) = parse_phrases(query_str);
+
+        // Apply stopword filtering to remaining terms if enabled
         let filtered_query = if self.config.enable_stopwords {
             let filter = crate::search::StopwordFilter::new(self.config);
-            filter.filter(query_str)
+            filter.filter(&remaining_query)
         } else {
-            query_str.to_string()
+            remaining_query
         };
 
-        // For now, treat the entire query as a single term
-        // Future enhancement: parse into multiple terms and use phrase queries
+        // Split filtered query into terms
         let terms: Vec<&str> = filtered_query.split_whitespace().collect();
 
-        if terms.is_empty() {
+        // Check if we have any searchable content
+        if phrases.is_empty() && terms.is_empty() {
             return Err(Error::search_error(
                 "Query contains no valid terms".to_string(),
             ));
@@ -92,19 +133,42 @@ impl<'a> QueryBuilder<'a> {
         // Create Should (OR) clauses for each field with appropriate boosts
         let mut clauses: Vec<(Occur, Box<dyn Query>)> = Vec::new();
 
-        // Title field (3.0x boost)
-        if let Ok(query) = self.create_field_query(self.schema.title, &terms, 3.0) {
-            clauses.push((Occur::Should, query));
+        // Add phrase queries if present
+        if !phrases.is_empty() {
+            for phrase in &phrases {
+                // Title field (3.0x boost)
+                if let Ok(phrase_query) = self.create_phrase_query(self.schema.title, phrase) {
+                    clauses.push((Occur::Should, Box::new(BoostQuery::new(phrase_query, 3.0))));
+                }
+
+                // Description field (2.0x boost)
+                if let Ok(phrase_query) = self.create_phrase_query(self.schema.description, phrase) {
+                    clauses.push((Occur::Should, Box::new(BoostQuery::new(phrase_query, 2.0))));
+                }
+
+                // Content field (1.0x boost - baseline)
+                if let Ok(phrase_query) = self.create_phrase_query(self.schema.content, phrase) {
+                    clauses.push((Occur::Should, phrase_query));
+                }
+            }
         }
 
-        // Description field (2.0x boost)
-        if let Ok(query) = self.create_field_query(self.schema.description, &terms, 2.0) {
-            clauses.push((Occur::Should, query));
-        }
+        // Add term queries if present
+        if !terms.is_empty() {
+            // Title field (3.0x boost)
+            if let Ok(query) = self.create_field_query(self.schema.title, &terms, 3.0) {
+                clauses.push((Occur::Should, query));
+            }
 
-        // Content field (1.0x boost - baseline)
-        if let Ok(query) = self.create_field_query(self.schema.content, &terms, 1.0) {
-            clauses.push((Occur::Should, query));
+            // Description field (2.0x boost)
+            if let Ok(query) = self.create_field_query(self.schema.description, &terms, 2.0) {
+                clauses.push((Occur::Should, query));
+            }
+
+            // Content field (1.0x boost - baseline)
+            if let Ok(query) = self.create_field_query(self.schema.content, &terms, 1.0) {
+                clauses.push((Occur::Should, query));
+            }
         }
 
         if clauses.is_empty() {
@@ -140,6 +204,52 @@ impl<'a> QueryBuilder<'a> {
                 }
             }
         }
+    }
+
+    /// Create a phrase query for exact phrase matching.
+    ///
+    /// Tokenizes the phrase and creates a PhraseQuery that matches the exact
+    /// sequence of tokens.
+    ///
+    /// # Arguments
+    ///
+    /// * `field` - The field to search
+    /// * `phrase` - The phrase string to match
+    ///
+    /// # Returns
+    ///
+    /// Returns a boxed PhraseQuery for exact matching.
+    ///
+    /// # Errors
+    ///
+    /// Returns `Err` if the phrase contains no valid tokens.
+    fn create_phrase_query(
+        &self,
+        field: tantivy::schema::Field,
+        phrase: &str,
+    ) -> Result<Box<dyn Query>> {
+        // Create tokenizer (same as index: lowercase + stem)
+        let mut tokenizer = TextAnalyzer::builder(SimpleTokenizer::default())
+            .filter(LowerCaser)
+            .filter(Stemmer::default())
+            .build();
+
+        // Tokenize the phrase
+        let mut token_stream = tokenizer.token_stream(phrase);
+        let mut terms = Vec::new();
+
+        while let Some(token) = token_stream.next() {
+            let term = Term::from_field_text(field, &token.text);
+            terms.push(term);
+        }
+
+        if terms.is_empty() {
+            return Err(Error::search_error(
+                "Phrase contains no valid terms".to_string(),
+            ));
+        }
+
+        Ok(Box::new(PhraseQuery::new(terms)))
     }
 
     /// Create a field-specific query with boosting.
@@ -513,6 +623,94 @@ mod tests {
 
         // Three words should use OR logic with minimum match
         let result = builder.build_query("fugue subject answer");
+        assert!(result.is_ok());
+    }
+
+    #[test]
+    fn test_parse_phrases_single() {
+        let (phrases, remaining) = parse_phrases(r#""imperfect consonance""#);
+        assert_eq!(phrases, vec!["imperfect consonance"]);
+        assert_eq!(remaining.trim(), "");
+    }
+
+    #[test]
+    fn test_parse_phrases_mixed() {
+        let (phrases, remaining) = parse_phrases(r#""perfect fifth" and octave"#);
+        assert_eq!(phrases, vec!["perfect fifth"]);
+        assert!(remaining.contains("and octave"));
+    }
+
+    #[test]
+    fn test_parse_phrases_multiple() {
+        let (phrases, remaining) = parse_phrases(r#""leading tone" to "tonic""#);
+        assert_eq!(phrases, vec!["leading tone", "tonic"]);
+        assert!(remaining.contains("to"));
+    }
+
+    #[test]
+    fn test_parse_phrases_no_quotes() {
+        let (phrases, remaining) = parse_phrases("cadence harmony");
+        assert_eq!(phrases, Vec::<String>::new());
+        assert_eq!(remaining, "cadence harmony");
+    }
+
+    #[test]
+    fn test_parse_phrases_empty() {
+        let (phrases, remaining) = parse_phrases("");
+        assert_eq!(phrases, Vec::<String>::new());
+        assert_eq!(remaining, "");
+    }
+
+    #[test]
+    fn test_create_phrase_query() {
+        let schema = SearchSchema::build();
+        let config = test_config();
+        let builder = QueryBuilder::new(&schema, &config);
+
+        let result = builder.create_phrase_query(schema.title, "perfect authentic cadence");
+        assert!(result.is_ok());
+    }
+
+    #[test]
+    fn test_create_phrase_query_empty() {
+        let schema = SearchSchema::build();
+        let config = test_config();
+        let builder = QueryBuilder::new(&schema, &config);
+
+        let result = builder.create_phrase_query(schema.title, "");
+        assert!(result.is_err());
+    }
+
+    #[test]
+    fn test_build_query_with_phrase() {
+        let schema = SearchSchema::build();
+        let config = test_config();
+        let builder = QueryBuilder::new(&schema, &config);
+
+        // Query with quoted phrase
+        let result = builder.build_query(r#""imperfect consonance""#);
+        assert!(result.is_ok());
+    }
+
+    #[test]
+    fn test_build_query_with_phrase_and_terms() {
+        let schema = SearchSchema::build();
+        let config = test_config();
+        let builder = QueryBuilder::new(&schema, &config);
+
+        // Mixed: phrase + regular terms
+        let result = builder.build_query(r#""leading tone" resolution"#);
+        assert!(result.is_ok());
+    }
+
+    #[test]
+    fn test_build_query_with_multiple_phrases() {
+        let schema = SearchSchema::build();
+        let config = test_config();
+        let builder = QueryBuilder::new(&schema, &config);
+
+        // Multiple phrases
+        let result = builder.build_query(r#""perfect cadence" "dominant seventh""#);
         assert!(result.is_ok());
     }
 }

@@ -970,6 +970,7 @@ dependencies = [
  "glob",
  "log",
  "pulldown-cmark",
+ "regex",
  "rmcp",
  "schemars",
  "serde",

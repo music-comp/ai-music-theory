@@ -627,6 +627,133 @@ async fn test_stopword_filtering_improves_precision() {
 }
 
 // ==============================================================================
+// Phase 3: Phrase Search Tests
+// ==============================================================================
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_qa_phrase_search_quoted() {
+    let results = search_default(r#""imperfect consonance""#, 10).await;
+
+    // Should return results for exact phrase match
+    assert!(
+        !results.is_empty(),
+        "Quoted phrase '\"imperfect consonance\"' should return results"
+    );
+
+    // Verify that results contain relevant content
+    let has_relevant = results.iter().any(|r| {
+        let combined = format!("{} {}", r.title.to_lowercase(), r.snippet.to_lowercase());
+        combined.contains("imperfect") || combined.contains("consonance")
+    });
+
+    assert!(
+        has_relevant,
+        "Phrase search should find relevant content"
+    );
+}
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_qa_phrase_search_leading_tone() {
+    let results = search_default(r#""leading tone""#, 10).await;
+
+    assert!(
+        !results.is_empty(),
+        "Quoted phrase '\"leading tone\"' should return results"
+    );
+
+    let has_leading_tone = results.iter().any(|r| {
+        let combined = format!("{} {}", r.title.to_lowercase(), r.snippet.to_lowercase());
+        combined.contains("leading") || combined.contains("tone")
+    });
+
+    assert!(has_leading_tone, "Should find leading tone content");
+}
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_qa_phrase_search_perfect_cadence() {
+    let results = search_default(r#""perfect authentic cadence""#, 10).await;
+
+    assert!(
+        !results.is_empty(),
+        "Quoted phrase '\"perfect authentic cadence\"' should return results"
+    );
+
+    let has_cadence = results.iter().any(|r| {
+        let combined = format!("{} {}", r.title.to_lowercase(), r.snippet.to_lowercase());
+        combined.contains("cadence") || combined.contains("authentic") || combined.contains("perfect")
+    });
+
+    assert!(has_cadence, "Should find cadence-related content");
+}
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_qa_phrase_with_terms() {
+    let results = search_default(r#""leading tone" resolution"#, 10).await;
+
+    // Mix of phrase + regular term should work
+    assert!(
+        !results.is_empty(),
+        "Mixed query '\"leading tone\" resolution' should return results"
+    );
+
+    let has_relevant = results.iter().any(|r| {
+        let combined = format!("{} {}", r.title.to_lowercase(), r.snippet.to_lowercase());
+        combined.contains("leading") || combined.contains("tone") || combined.contains("resolution")
+    });
+
+    assert!(has_relevant, "Should find relevant content for mixed query");
+}
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_qa_phrase_multiple() {
+    let results = search_default(r#""perfect cadence" "dominant seventh""#, 10).await;
+
+    // Multiple phrases should work
+    assert!(
+        !results.is_empty(),
+        "Multiple phrases should return results"
+    );
+
+    let has_relevant = results.iter().any(|r| {
+        let combined = format!("{} {}", r.title.to_lowercase(), r.snippet.to_lowercase());
+        combined.contains("cadence") || combined.contains("dominant") || combined.contains("seventh")
+    });
+
+    assert!(has_relevant, "Should find relevant content for multiple phrases");
+}
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_phrase_vs_non_phrase() {
+    // Compare phrase search vs regular search
+    let results_phrase = search_default(r#""authentic cadence""#, 10).await;
+    let results_regular = search_default("authentic cadence", 10).await;
+
+    // Both should return results
+    assert!(!results_phrase.is_empty(), "Phrase search should work");
+    assert!(!results_regular.is_empty(), "Regular search should work");
+
+    // Phrase search should be more precise (may return fewer but more relevant results)
+    // This is informational - we don't fail on result count differences
+    println!(
+        "Phrase: {} results, Regular: {} results",
+        results_phrase.len(),
+        results_regular.len()
+    );
+}
+
+// ==============================================================================
 // Backend Verification
 // ==============================================================================
 

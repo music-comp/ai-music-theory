@@ -45,6 +45,9 @@ dirs = "5"
 # Error handling
 thiserror = "2"
 
+# Regular expressions
+regex = "1"
+
 # Full-text search (optional)
 tantivy = "0.22"
 
