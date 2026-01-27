@@ -160,6 +160,11 @@ mod tests {
                 snippet_size: 200,
                 fuzzy_search: false,
                 fuzzy_distance: 2,
+                query_mode: crate::config::QueryMode::Smart,
+                minimum_match_percent: 0.6,
+                enable_stopwords: true,
+                custom_stopwords: vec![],
+                stopword_allowlist: vec![],
             },
         }
     }

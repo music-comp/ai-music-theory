@@ -1,5 +1,7 @@
+use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 
+use crate::config::QueryMode;
 use crate::error::Result;
 use crate::state::AppState;
 
@@ -27,11 +29,14 @@ pub struct SearchConceptsResponse {
 }
 
 /// Parameters for search_concepts tool.
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Deserialize, JsonSchema)]
 pub struct SearchConceptsParams {
     pub query: String,
     #[serde(default = "default_limit")]
     pub limit: usize,
+    /// Optional query mode override (smart, and, or, minimum_match)
+    #[serde(default)]
+    pub query_mode: Option<QueryMode>,
 }
 
 fn default_limit() -> usize {
@@ -138,5 +143,22 @@ mod tests {
         let params: SearchConceptsParams = serde_json::from_str(json).expect("Should deserialize");
         assert_eq!(params.query, "harmony");
         assert_eq!(params.limit, 5);
+    }
+
+    #[test]
+    fn test_search_concepts_params_with_query_mode() {
+        let json = r#"{"query":"harmony","query_mode":"and"}"#;
+        let params: SearchConceptsParams = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(params.query, "harmony");
+        assert!(params.query_mode.is_some());
+        assert_eq!(params.query_mode.unwrap(), QueryMode::And);
+    }
+
+    #[test]
+    fn test_search_concepts_params_without_query_mode() {
+        let json = r#"{"query":"harmony"}"#;
+        let params: SearchConceptsParams = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(params.query, "harmony");
+        assert!(params.query_mode.is_none());
     }
 }

@@ -51,6 +51,11 @@ fn create_test_config(temp_dir: &TempDir, backend: &str, fuzzy: bool) -> Config 
             snippet_size: 200,
             fuzzy_search: fuzzy,
             fuzzy_distance: 2,
+            query_mode: music_theory_mcp::config::QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec![],
         },
     }
 }
@@ -162,6 +167,7 @@ async fn test_search_returns_relevant_results() {
     // Search for "triads"
     let params = SearchConceptsParams {
         query: "triads".to_string(),
+        query_mode: None,
         limit: 10,
     };
 
@@ -192,6 +198,7 @@ async fn test_search_ranking_by_relevance() {
     // Search for "chords" - appears in multiple documents
     let params = SearchConceptsParams {
         query: "chords".to_string(),
+        query_mode: None,
         limit: 10,
     };
 
@@ -227,6 +234,7 @@ async fn test_fuzzy_search_finds_typos() {
     // Search with typo: "haromny" instead of "harmony"
     let params = SearchConceptsParams {
         query: "haromny".to_string(),
+        query_mode: None,
         limit: 10,
     };
 
@@ -263,6 +271,7 @@ async fn test_backend_switching_simple_to_tantivy() {
 
     let params = SearchConceptsParams {
         query: "voice".to_string(),
+        query_mode: None,
         limit: 10,
     };
 
@@ -318,6 +327,7 @@ async fn test_snippet_generation_includes_context() {
 
     let params = SearchConceptsParams {
         query: "parallel".to_string(),
+        query_mode: None,
         limit: 10,
     };
 
@@ -348,6 +358,7 @@ async fn test_empty_query_errors_correctly() {
 
     let params = SearchConceptsParams {
         query: "".to_string(),
+        query_mode: None,
         limit: 10,
     };
 
@@ -370,6 +381,7 @@ async fn test_search_with_limit() {
     // Search with limit of 1
     let params = SearchConceptsParams {
         query: "harmony".to_string(),
+        query_mode: None,
         limit: 1,
     };
 
@@ -423,6 +435,7 @@ async fn test_index_rebuild_clears_old_data() {
     let state = AppState::new(config).await.expect("Failed to create state");
     let params = SearchConceptsParams {
         query: "test".to_string(),
+        query_mode: None,
         limit: 10,
     };
 
@@ -445,6 +458,7 @@ async fn test_search_tool_integration() {
     let state = AppState::new(config).await.expect("Failed to create state");
     let params = SearchConceptsParams {
         query: "harmony".to_string(),
+        query_mode: None,
         limit: 5,
     };
 

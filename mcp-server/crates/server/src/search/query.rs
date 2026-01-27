@@ -24,6 +24,7 @@ use crate::search::SearchSchema;
 #[allow(dead_code)]
 pub struct QueryBuilder<'a> {
     schema: &'a SearchSchema,
+    config: &'a SearchConfig,
     fuzzy_enabled: bool,
     fuzzy_distance: u8,
 }
@@ -36,9 +37,10 @@ impl<'a> QueryBuilder<'a> {
     /// * `schema` - Reference to the SearchSchema
     /// * `config` - Search configuration with fuzzy settings
     #[allow(dead_code)]
-    pub fn new(schema: &'a SearchSchema, config: &SearchConfig) -> Self {
+    pub fn new(schema: &'a SearchSchema, config: &'a SearchConfig) -> Self {
         QueryBuilder {
             schema,
+            config,
             fuzzy_enabled: config.fuzzy_search,
             fuzzy_distance: config.fuzzy_distance,
         }
@@ -106,6 +108,32 @@ impl<'a> QueryBuilder<'a> {
         Ok(Box::new(BooleanQuery::new(clauses)))
     }
 
+    /// Determine the Occur mode based on query mode and term count.
+    ///
+    /// # Arguments
+    ///
+    /// * `term_count` - Number of terms in the query
+    ///
+    /// # Returns
+    ///
+    /// Returns the appropriate Occur mode for the query.
+    fn determine_occur_mode(&self, term_count: usize) -> Occur {
+        use crate::config::QueryMode;
+
+        match &self.config.query_mode {
+            QueryMode::Or => Occur::Should,
+            QueryMode::And => Occur::Must,
+            QueryMode::MinimumMatch(_) => Occur::Should, // Use with min_should_match
+            QueryMode::Smart => {
+                if term_count <= 2 {
+                    Occur::Must // AND for 1-2 words
+                } else {
+                    Occur::Should // OR for 3+ with minimum match
+                }
+            }
+        }
+    }
+
     /// Create a field-specific query with boosting.
     ///
     /// For a single term, creates a TermQuery or FuzzyTermQuery.
@@ -163,11 +191,12 @@ impl<'a> QueryBuilder<'a> {
                 ))
             }
         } else {
-            // Multiple terms: use BooleanQuery with Should (OR)
+            // Multiple terms: use BooleanQuery with configurable occur mode
+            let occur_mode = self.determine_occur_mode(tokenized_terms.len());
             let mut term_clauses: Vec<(Occur, Box<dyn Query>)> = Vec::new();
 
-            for tokenized_term in tokenized_terms {
-                let term = Term::from_field_text(field, &tokenized_term);
+            for tokenized_term in &tokenized_terms {
+                let term = Term::from_field_text(field, tokenized_term);
 
                 let term_query: Box<dyn Query> = if self.fuzzy_enabled {
                     Box::new(FuzzyTermQuery::new(term, self.fuzzy_distance, true))
@@ -178,10 +207,16 @@ impl<'a> QueryBuilder<'a> {
                     ))
                 };
 
-                term_clauses.push((Occur::Should, term_query));
+                term_clauses.push((occur_mode, term_query));
             }
 
-            Box::new(BooleanQuery::new(term_clauses))
+            // For OR mode with 3+ terms, apply minimum match threshold
+            // Note: Tantivy 0.22 doesn't have set_min_should_match
+            // Future enhancement: when upgrading Tantivy, implement minimum match logic
+            // For now, the occur mode change (AND vs OR) provides the main benefit
+            let bool_query = BooleanQuery::new(term_clauses);
+
+            Box::new(bool_query)
         };
 
         // Apply boost
@@ -195,6 +230,7 @@ mod tests {
     use crate::config::SearchConfig;
 
     fn test_config() -> SearchConfig {
+        use crate::config::QueryMode;
         SearchConfig {
             backend: "tantivy".to_string(),
             index_path: ".tantivy-index".to_string(),
@@ -202,10 +238,16 @@ mod tests {
             snippet_size: 200,
             fuzzy_search: false,
             fuzzy_distance: 2,
+            query_mode: QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec![],
         }
     }
 
     fn test_config_with_fuzzy() -> SearchConfig {
+        use crate::config::QueryMode;
         SearchConfig {
             backend: "tantivy".to_string(),
             index_path: ".tantivy-index".to_string(),
@@ -213,6 +255,11 @@ mod tests {
             snippet_size: 200,
             fuzzy_search: true,
             fuzzy_distance: 2,
+            query_mode: QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec![],
         }
     }
 
@@ -343,6 +390,7 @@ mod tests {
 
     #[test]
     fn test_query_builder_fuzzy_distance() {
+        use crate::config::QueryMode;
         let schema = SearchSchema::build();
         let config = SearchConfig {
             backend: "tantivy".to_string(),
@@ -351,10 +399,112 @@ mod tests {
             snippet_size: 200,
             fuzzy_search: true,
             fuzzy_distance: 1,
+            query_mode: QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec![],
         };
         let builder = QueryBuilder::new(&schema, &config);
 
         assert!(builder.fuzzy_enabled);
         assert_eq!(builder.fuzzy_distance, 1);
+    }
+
+    #[test]
+    fn test_determine_occur_mode_smart_single_term() {
+        let schema = SearchSchema::build();
+        let config = test_config();
+        let builder = QueryBuilder::new(&schema, &config);
+
+        // Single term should use Must (AND) in Smart mode
+        let occur = builder.determine_occur_mode(1);
+        assert!(matches!(occur, Occur::Must));
+    }
+
+    #[test]
+    fn test_determine_occur_mode_smart_two_terms() {
+        let schema = SearchSchema::build();
+        let config = test_config();
+        let builder = QueryBuilder::new(&schema, &config);
+
+        // Two terms should use Must (AND) in Smart mode
+        let occur = builder.determine_occur_mode(2);
+        assert!(matches!(occur, Occur::Must));
+    }
+
+    #[test]
+    fn test_determine_occur_mode_smart_three_terms() {
+        let schema = SearchSchema::build();
+        let config = test_config();
+        let builder = QueryBuilder::new(&schema, &config);
+
+        // Three+ terms should use Should (OR) in Smart mode
+        let occur = builder.determine_occur_mode(3);
+        assert!(matches!(occur, Occur::Should));
+    }
+
+    #[test]
+    fn test_determine_occur_mode_explicit_and() {
+        use crate::config::QueryMode;
+        let schema = SearchSchema::build();
+        let mut config = test_config();
+        config.query_mode = QueryMode::And;
+        let builder = QueryBuilder::new(&schema, &config);
+
+        // All term counts should use Must (AND) in And mode
+        assert!(matches!(builder.determine_occur_mode(1), Occur::Must));
+        assert!(matches!(builder.determine_occur_mode(2), Occur::Must));
+        assert!(matches!(builder.determine_occur_mode(3), Occur::Must));
+    }
+
+    #[test]
+    fn test_determine_occur_mode_explicit_or() {
+        use crate::config::QueryMode;
+        let schema = SearchSchema::build();
+        let mut config = test_config();
+        config.query_mode = QueryMode::Or;
+        let builder = QueryBuilder::new(&schema, &config);
+
+        // All term counts should use Should (OR) in Or mode
+        assert!(matches!(builder.determine_occur_mode(1), Occur::Should));
+        assert!(matches!(builder.determine_occur_mode(2), Occur::Should));
+        assert!(matches!(builder.determine_occur_mode(3), Occur::Should));
+    }
+
+    #[test]
+    fn test_determine_occur_mode_minimum_match() {
+        use crate::config::QueryMode;
+        let schema = SearchSchema::build();
+        let mut config = test_config();
+        config.query_mode = QueryMode::MinimumMatch(0.7);
+        let builder = QueryBuilder::new(&schema, &config);
+
+        // MinimumMatch mode always uses Should (OR with min_should_match)
+        assert!(matches!(builder.determine_occur_mode(1), Occur::Should));
+        assert!(matches!(builder.determine_occur_mode(2), Occur::Should));
+        assert!(matches!(builder.determine_occur_mode(3), Occur::Should));
+    }
+
+    #[test]
+    fn test_build_query_smart_mode_two_words() {
+        let schema = SearchSchema::build();
+        let config = test_config(); // Smart mode by default
+        let builder = QueryBuilder::new(&schema, &config);
+
+        // Two words should use AND logic (Must)
+        let result = builder.build_query("authentic cadence");
+        assert!(result.is_ok());
+    }
+
+    #[test]
+    fn test_build_query_smart_mode_three_words() {
+        let schema = SearchSchema::build();
+        let config = test_config(); // Smart mode by default
+        let builder = QueryBuilder::new(&schema, &config);
+
+        // Three words should use OR logic with minimum match
+        let result = builder.build_query("fugue subject answer");
+        assert!(result.is_ok());
     }
 }

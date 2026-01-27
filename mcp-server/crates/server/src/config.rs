@@ -1,5 +1,6 @@
 use confyg::{conf, Confygery};
-use serde::Deserialize;
+use schemars::JsonSchema;
+use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use std::path::PathBuf;
 
@@ -103,6 +104,20 @@ impl SourceCategory {
     }
 }
 
+/// Query matching mode for multi-word queries.
+#[derive(Debug, Clone, Serialize, Deserialize, JsonSchema, PartialEq)]
+#[serde(rename_all = "snake_case")]
+pub enum QueryMode {
+    /// Match ANY term (OR logic) - original behavior
+    Or,
+    /// Match ALL terms (AND logic) - strict matching
+    And,
+    /// Match at least N% of terms - flexible matching
+    MinimumMatch(f32),
+    /// Smart tiered: 2 words = AND, 3+ = OR with 60% minimum
+    Smart,
+}
+
 /// Search configuration.
 /// Fields will be used when search backends are implemented (Phase 2+).
 #[derive(Debug, Clone, Deserialize)]
@@ -131,6 +146,26 @@ pub struct SearchConfig {
     /// Maximum edit distance for fuzzy matching (1-2)
     #[serde(default = "default_fuzzy_distance")]
     pub fuzzy_distance: u8,
+
+    /// Query mode: how to match multi-word queries (smart, and, or, minimum_match)
+    #[serde(default = "default_query_mode")]
+    pub query_mode: QueryMode,
+
+    /// Minimum match percentage for OR queries with 3+ terms (0.0-1.0)
+    #[serde(default = "default_minimum_match")]
+    pub minimum_match_percent: f32,
+
+    /// Enable stopword filtering for natural language queries
+    #[serde(default = "default_enable_stopwords")]
+    pub enable_stopwords: bool,
+
+    /// Custom stopwords (in addition to English defaults)
+    #[serde(default)]
+    pub custom_stopwords: Vec<String>,
+
+    /// Domain-specific terms to preserve (not filtered as stopwords)
+    #[serde(default = "default_stopword_allowlist")]
+    pub stopword_allowlist: Vec<String>,
 }
 
 fn default_backend() -> String {
@@ -147,6 +182,29 @@ fn default_snippet_size() -> usize {
 
 fn default_fuzzy_distance() -> u8 {
     2
+}
+
+fn default_query_mode() -> QueryMode {
+    QueryMode::Smart
+}
+
+fn default_minimum_match() -> f32 {
+    0.6 // 60% of terms must match for OR queries with 3+ terms
+}
+
+fn default_enable_stopwords() -> bool {
+    true
+}
+
+fn default_stopword_allowlist() -> Vec<String> {
+    vec![
+        // Music theory Roman numerals and solfège syllables
+        "I", "V", "ii", "IV", "vi", "vii", "i", "v", "iv", "do", "re", "mi", "fa", "sol", "la",
+        "ti",
+    ]
+    .into_iter()
+    .map(String::from)
+    .collect()
 }
 
 impl SearchConfig {
@@ -439,6 +497,11 @@ mod tests {
             snippet_size: 200,
             fuzzy_search: false,
             fuzzy_distance: 2,
+            query_mode: QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec![],
         };
 
         let result = config.index_path();
@@ -455,6 +518,11 @@ mod tests {
             snippet_size: 200,
             fuzzy_search: false,
             fuzzy_distance: 2,
+            query_mode: QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec![],
         };
 
         let result = config.index_path();

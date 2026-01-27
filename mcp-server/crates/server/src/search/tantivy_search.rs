@@ -109,8 +109,17 @@ impl SearchBackend for TantivySearch {
         // Get fresh searcher
         let searcher = self.reader.searcher();
 
-        // Build query
-        let query_builder = QueryBuilder::new(&self.schema, &self.config);
+        // Build query with optional mode override
+        let config = if let Some(ref mode) = params.query_mode {
+            // Clone config and override query_mode
+            let mut config = self.config.clone();
+            config.query_mode = mode.clone();
+            config
+        } else {
+            self.config.clone()
+        };
+
+        let query_builder = QueryBuilder::new(&self.schema, &config);
         let query = query_builder.build_query(&params.query)?;
 
         // Execute search
@@ -340,6 +349,11 @@ mod tests {
             snippet_size: 200,
             fuzzy_search: false,
             fuzzy_distance: 2,
+            query_mode: crate::config::QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec![],
         };
 
         let result = TantivySearch::new(&index_path, config);
@@ -358,6 +372,11 @@ mod tests {
             snippet_size: 200,
             fuzzy_search: false,
             fuzzy_distance: 2,
+            query_mode: crate::config::QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec![],
         };
 
         let result = TantivySearch::new(&index_path, config);
@@ -377,6 +396,11 @@ mod tests {
             snippet_size: 200,
             fuzzy_search: false,
             fuzzy_distance: 2,
+            query_mode: crate::config::QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec![],
         };
 
         let backend = TantivySearch::new(&index_path, config).expect("Failed to create backend");
@@ -384,6 +408,7 @@ mod tests {
         let params = SearchConceptsParams {
             query: "triads".to_string(),
             limit: 10,
+            query_mode: None,
         };
 
         let results = backend.search(&params).await.expect("Search failed");
@@ -410,6 +435,11 @@ mod tests {
             snippet_size: 200,
             fuzzy_search: false,
             fuzzy_distance: 2,
+            query_mode: crate::config::QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec![],
         };
 
         let backend = TantivySearch::new(&index_path, config).expect("Failed to create backend");
@@ -421,6 +451,7 @@ mod tests {
             let params = SearchConceptsParams {
                 query: query_str.to_string(),
                 limit: 10,
+                query_mode: None,
             };
 
             // Just verify search executes without error
@@ -446,6 +477,11 @@ mod tests {
             snippet_size: 200,
             fuzzy_search: false,
             fuzzy_distance: 2,
+            query_mode: crate::config::QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec![],
         };
 
         let backend = TantivySearch::new(&index_path, config).expect("Failed to create backend");
@@ -453,6 +489,7 @@ mod tests {
         let params = SearchConceptsParams {
             query: "chords".to_string(),
             limit: 1,
+            query_mode: None,
         };
 
         let results = backend.search(&params).await.expect("Search failed");
@@ -472,6 +509,11 @@ mod tests {
             snippet_size: 200,
             fuzzy_search: false,
             fuzzy_distance: 2,
+            query_mode: crate::config::QueryMode::Smart,
+            minimum_match_percent: 0.6,
+            enable_stopwords: true,
+            custom_stopwords: vec![],
+            stopword_allowlist: vec![],
         };
 
         let backend = TantivySearch::new(&index_path, config).expect("Failed to create backend");
@@ -479,6 +521,7 @@ mod tests {
         let params = SearchConceptsParams {
             query: "nonexistent".to_string(),
             limit: 10,
+            query_mode: None,
         };
 
         let results = backend.search(&params).await.expect("Search failed");
