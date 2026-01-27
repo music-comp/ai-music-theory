@@ -19,7 +19,10 @@ fn test_config() -> Config {
 }
 
 /// Helper to perform search with default settings
-async fn search_default(query: &str, limit: usize) -> Vec<music_theory_mcp::tools::search::SearchResult> {
+async fn search_default(
+    query: &str,
+    limit: usize,
+) -> Vec<music_theory_mcp::tools::search::SearchResult> {
     let config = test_config();
     let state = AppState::new(config).await.expect("Failed to create state");
 
@@ -105,8 +108,7 @@ async fn test_qa_two_words_dorian_mode() {
 
     // Should find Dorian mode card
     let has_dorian = results.iter().any(|r| {
-        r.title.to_lowercase().contains("dorian")
-            || r.snippet.to_lowercase().contains("dorian")
+        r.title.to_lowercase().contains("dorian") || r.snippet.to_lowercase().contains("dorian")
     });
 
     assert!(has_dorian, "Should find Dorian-related results");
@@ -328,12 +330,7 @@ async fn test_query_mode_explicit_or() {
 #[cfg(feature = "fts")]
 async fn test_query_mode_minimum_match() {
     // Force 70% minimum match for 3 terms (2.1 -> 3 terms required)
-    let results = search_with_mode(
-        "fugue subject answer",
-        10,
-        QueryMode::MinimumMatch(0.7),
-    )
-    .await;
+    let results = search_with_mode("fugue subject answer", 10, QueryMode::MinimumMatch(0.7)).await;
 
     assert!(
         !results.is_empty(),
@@ -384,10 +381,7 @@ async fn test_relevance_ranking_preserved() {
 
     // Verify relevance scores are populated and reasonable
     for result in &results {
-        assert!(
-            result.relevance > 0.0,
-            "Relevance score should be positive"
-        );
+        assert!(result.relevance > 0.0, "Relevance score should be positive");
         assert!(
             result.relevance < 1000.0,
             "Relevance score should be reasonable"
@@ -610,17 +604,20 @@ async fn test_stopword_filtering_improves_precision() {
     let results_direct = search_default("authentic cadence", 10).await;
 
     // Both should return results
-    assert!(!results_natural.is_empty(), "Natural language query should work");
+    assert!(
+        !results_natural.is_empty(),
+        "Natural language query should work"
+    );
     assert!(!results_direct.is_empty(), "Direct query should work");
 
     // Results should be similar (stopword filtering makes them equivalent)
     // We can't guarantee exact match due to query mode logic, but both should find cadences
-    let natural_has_cadence = results_natural.iter().any(|r| {
-        r.title.to_lowercase().contains("cadence")
-    });
-    let direct_has_cadence = results_direct.iter().any(|r| {
-        r.title.to_lowercase().contains("cadence")
-    });
+    let natural_has_cadence = results_natural
+        .iter()
+        .any(|r| r.title.to_lowercase().contains("cadence"));
+    let direct_has_cadence = results_direct
+        .iter()
+        .any(|r| r.title.to_lowercase().contains("cadence"));
 
     assert!(natural_has_cadence, "Natural query should find cadences");
     assert!(direct_has_cadence, "Direct query should find cadences");
@@ -648,10 +645,7 @@ async fn test_qa_phrase_search_quoted() {
         combined.contains("imperfect") || combined.contains("consonance")
     });
 
-    assert!(
-        has_relevant,
-        "Phrase search should find relevant content"
-    );
+    assert!(has_relevant, "Phrase search should find relevant content");
 }
 
 #[tokio::test]
@@ -686,7 +680,9 @@ async fn test_qa_phrase_search_perfect_cadence() {
 
     let has_cadence = results.iter().any(|r| {
         let combined = format!("{} {}", r.title.to_lowercase(), r.snippet.to_lowercase());
-        combined.contains("cadence") || combined.contains("authentic") || combined.contains("perfect")
+        combined.contains("cadence")
+            || combined.contains("authentic")
+            || combined.contains("perfect")
     });
 
     assert!(has_cadence, "Should find cadence-related content");
@@ -726,10 +722,15 @@ async fn test_qa_phrase_multiple() {
 
     let has_relevant = results.iter().any(|r| {
         let combined = format!("{} {}", r.title.to_lowercase(), r.snippet.to_lowercase());
-        combined.contains("cadence") || combined.contains("dominant") || combined.contains("seventh")
+        combined.contains("cadence")
+            || combined.contains("dominant")
+            || combined.contains("seventh")
     });
 
-    assert!(has_relevant, "Should find relevant content for multiple phrases");
+    assert!(
+        has_relevant,
+        "Should find relevant content for multiple phrases"
+    );
 }
 
 #[tokio::test]

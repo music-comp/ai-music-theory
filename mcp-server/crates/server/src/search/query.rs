@@ -3,7 +3,9 @@
 //! This module provides QueryBuilder for constructing weighted multi-field queries
 //! that match the relevance scoring used in simple search.
 
-use tantivy::query::{BooleanQuery, BoostQuery, FuzzyTermQuery, Occur, PhraseQuery, Query, TermQuery};
+use tantivy::query::{
+    BooleanQuery, BoostQuery, FuzzyTermQuery, Occur, PhraseQuery, Query, TermQuery,
+};
 use tantivy::schema::IndexRecordOption;
 use tantivy::tokenizer::{LowerCaser, SimpleTokenizer, Stemmer, TextAnalyzer};
 use tantivy::Term;
@@ -142,7 +144,8 @@ impl<'a> QueryBuilder<'a> {
                 }
 
                 // Description field (2.0x boost)
-                if let Ok(phrase_query) = self.create_phrase_query(self.schema.description, phrase) {
+                if let Ok(phrase_query) = self.create_phrase_query(self.schema.description, phrase)
+                {
                     clauses.push((Occur::Should, Box::new(BoostQuery::new(phrase_query, 2.0))));
                 }
 

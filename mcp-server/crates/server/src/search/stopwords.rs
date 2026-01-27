@@ -13,33 +13,141 @@ use crate::config::SearchConfig;
 /// Based on standard information retrieval stopword lists.
 pub const ENGLISH_STOPWORDS: &[&str] = &[
     // Articles
-    "a", "an", "the",
+    "a",
+    "an",
+    "the",
     // Common verbs
-    "am", "are", "is", "was", "were", "be", "been", "being",
-    "have", "has", "had", "having",
-    "do", "does", "did", "doing",
-    "will", "would", "could", "should", "may", "might", "must", "shall", "can",
+    "am",
+    "are",
+    "is",
+    "was",
+    "were",
+    "be",
+    "been",
+    "being",
+    "have",
+    "has",
+    "had",
+    "having",
+    "do",
+    "does",
+    "did",
+    "doing",
+    "will",
+    "would",
+    "could",
+    "should",
+    "may",
+    "might",
+    "must",
+    "shall",
+    "can",
     // Conjunctions and prepositions
-    "and", "or", "but", "nor", "for", "yet", "so",
-    "as", "at", "by", "for", "from", "in", "into", "of", "on", "to", "with",
-    "about", "above", "after", "against", "along", "among", "around", "before",
-    "behind", "below", "beneath", "beside", "between", "beyond", "during",
-    "except", "since", "through", "throughout", "till", "toward", "under",
-    "until", "up", "upon", "within", "without",
+    "and",
+    "or",
+    "but",
+    "nor",
+    "for",
+    "yet",
+    "so",
+    "as",
+    "at",
+    "by",
+    "for",
+    "from",
+    "in",
+    "into",
+    "of",
+    "on",
+    "to",
+    "with",
+    "about",
+    "above",
+    "after",
+    "against",
+    "along",
+    "among",
+    "around",
+    "before",
+    "behind",
+    "below",
+    "beneath",
+    "beside",
+    "between",
+    "beyond",
+    "during",
+    "except",
+    "since",
+    "through",
+    "throughout",
+    "till",
+    "toward",
+    "under",
+    "until",
+    "up",
+    "upon",
+    "within",
+    "without",
     // Pronouns
-    "i", "me", "my", "myself",
-    "you", "your", "yourself",
-    "he", "him", "his", "himself",
-    "she", "her", "hers", "herself",
-    "it", "its", "itself",
-    "we", "us", "our", "ours", "ourselves",
-    "they", "them", "their", "theirs", "themselves",
+    "i",
+    "me",
+    "my",
+    "myself",
+    "you",
+    "your",
+    "yourself",
+    "he",
+    "him",
+    "his",
+    "himself",
+    "she",
+    "her",
+    "hers",
+    "herself",
+    "it",
+    "its",
+    "itself",
+    "we",
+    "us",
+    "our",
+    "ours",
+    "ourselves",
+    "they",
+    "them",
+    "their",
+    "theirs",
+    "themselves",
     // Question words (useful to filter for natural language queries)
-    "what", "when", "where", "which", "who", "whom", "whose", "why", "how",
+    "what",
+    "when",
+    "where",
+    "which",
+    "who",
+    "whom",
+    "whose",
+    "why",
+    "how",
     // Other common words
-    "all", "any", "both", "each", "few", "more", "most", "no", "not", "other",
-    "some", "such", "than", "that", "these", "this", "those",
-    "if", "then", "there",
+    "all",
+    "any",
+    "both",
+    "each",
+    "few",
+    "more",
+    "most",
+    "no",
+    "not",
+    "other",
+    "some",
+    "such",
+    "than",
+    "that",
+    "these",
+    "this",
+    "those",
+    "if",
+    "then",
+    "there",
 ];
 
 /// Stopword filter for preprocessing search queries.
@@ -65,10 +173,8 @@ impl StopwordFilter {
     /// Returns a StopwordFilter ready to filter queries.
     pub fn new(config: &SearchConfig) -> Self {
         // Build stopwords set (lowercase)
-        let mut stopwords: HashSet<String> = ENGLISH_STOPWORDS
-            .iter()
-            .map(|s| s.to_lowercase())
-            .collect();
+        let mut stopwords: HashSet<String> =
+            ENGLISH_STOPWORDS.iter().map(|s| s.to_lowercase()).collect();
 
         // Add custom stopwords
         for word in &config.custom_stopwords {
@@ -219,7 +325,10 @@ mod tests {
 
         // Roman numerals preserved
         assert_eq!(filter.filter("V I resolution"), "V I resolution");
-        assert_eq!(filter.filter("the ii V I progression"), "ii V I progression");
+        assert_eq!(
+            filter.filter("the ii V I progression"),
+            "ii V I progression"
+        );
 
         // Solfège preserved
         assert_eq!(filter.filter("do re mi"), "do re mi");
@@ -270,8 +379,14 @@ mod tests {
         let config = test_config();
         let filter = StopwordFilter::new(&config);
 
-        assert_eq!(filter.filter("cadence suspension tritone"), "cadence suspension tritone");
-        assert_eq!(filter.filter("fugue subject answer"), "fugue subject answer");
+        assert_eq!(
+            filter.filter("cadence suspension tritone"),
+            "cadence suspension tritone"
+        );
+        assert_eq!(
+            filter.filter("fugue subject answer"),
+            "fugue subject answer"
+        );
     }
 
     #[test]
@@ -312,7 +427,10 @@ mod tests {
 
         assert_eq!(filter.filter("music theory cadence"), "cadence");
         // When all words are stopwords, preserve original query
-        assert_eq!(filter.filter("what is music theory"), "what is music theory");
+        assert_eq!(
+            filter.filter("what is music theory"),
+            "what is music theory"
+        );
     }
 
     #[test]
