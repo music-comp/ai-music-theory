@@ -20,7 +20,9 @@ pub use config::Config;
 pub use error::{Error, Result};
 pub use search::SearchDocument;
 pub use state::AppState;
-pub use tools::search::{search_concepts, SearchConceptsParams, SearchConceptsResponse, SearchResult};
+pub use tools::search::{
+    search_concepts, SearchConceptsParams, SearchConceptsResponse, SearchResult,
+};
 
 // FTS-specific re-exports (only when feature enabled)
 #[cfg(feature = "fts")]

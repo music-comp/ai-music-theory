@@ -89,10 +89,7 @@ impl MusicTheoryServer {
             );
         }
 
-        Self {
-            state,
-            tool_router,
-        }
+        Self { state, tool_router }
     }
 
     #[tool(description = "List all available source materials with metadata")]

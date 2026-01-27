@@ -43,8 +43,7 @@ impl Indexer {
     pub fn new(index_path: &Path) -> Result<Self> {
         // Create directory if needed
         if !index_path.exists() {
-            std::fs::create_dir_all(index_path)
-                .map_err(|e| Error::io_with_path(e, index_path))?;
+            std::fs::create_dir_all(index_path).map_err(|e| Error::io_with_path(e, index_path))?;
         }
 
         // Build schema
@@ -139,9 +138,9 @@ impl Indexer {
     ///
     /// Returns `Err` if the clear or commit fails.
     pub fn clear(&mut self) -> Result<()> {
-        self.writer.delete_all_documents().map_err(|e| {
-            Error::search_error(format!("Failed to delete all documents: {}", e))
-        })?;
+        self.writer
+            .delete_all_documents()
+            .map_err(|e| Error::search_error(format!("Failed to delete all documents: {}", e)))?;
         self.commit()?;
         Ok(())
     }

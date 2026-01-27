@@ -173,7 +173,9 @@ mod tests {
         let concept_cards_path = temp_dir.path().join("concept-cards");
         std::fs::create_dir_all(&concept_cards_path).expect("Failed to create dir");
 
-        let hash = compute_content_hash(&config).await.expect("Hash computation failed");
+        let hash = compute_content_hash(&config)
+            .await
+            .expect("Hash computation failed");
 
         // Empty directory should produce a hash
         assert!(!hash.is_empty());
@@ -191,8 +193,12 @@ mod tests {
         // Create test file
         std::fs::write(concept_cards_path.join("test.md"), "# Test").expect("Failed to write file");
 
-        let hash1 = compute_content_hash(&config).await.expect("Hash computation failed");
-        let hash2 = compute_content_hash(&config).await.expect("Hash computation failed");
+        let hash1 = compute_content_hash(&config)
+            .await
+            .expect("Hash computation failed");
+        let hash2 = compute_content_hash(&config)
+            .await
+            .expect("Hash computation failed");
 
         // Hash should be consistent
         assert_eq!(hash1, hash2);
@@ -209,7 +215,9 @@ mod tests {
 
         // Create initial file and compute hash
         std::fs::write(concept_cards_path.join("test.md"), "# Test").expect("Failed to write file");
-        let hash1 = compute_content_hash(&config).await.expect("Hash computation failed");
+        let hash1 = compute_content_hash(&config)
+            .await
+            .expect("Hash computation failed");
 
         // Save metadata with this hash
         let index_path = temp_dir.path().join("index");
@@ -220,21 +228,30 @@ mod tests {
             last_indexed: SystemTime::now(),
             content_hash: hash1.clone(),
         };
-        save_metadata(&index_path, &metadata).await.expect("Failed to save metadata");
+        save_metadata(&index_path, &metadata)
+            .await
+            .expect("Failed to save metadata");
 
         // Should be fresh
-        assert!(is_index_fresh(&index_path, &config).await.expect("Freshness check failed"));
+        assert!(is_index_fresh(&index_path, &config)
+            .await
+            .expect("Freshness check failed"));
 
         // Add a new file
-        std::fs::write(concept_cards_path.join("test2.md"), "# Test 2").expect("Failed to write file 2");
+        std::fs::write(concept_cards_path.join("test2.md"), "# Test 2")
+            .expect("Failed to write file 2");
 
         // Compute new hash (should be different because of new file)
-        let hash2 = compute_content_hash(&config).await.expect("Hash computation failed");
+        let hash2 = compute_content_hash(&config)
+            .await
+            .expect("Hash computation failed");
 
         // If hashes are the same, skip the assertion (filesystem doesn't support granular mtimes)
         if hash1 != hash2 {
             // Should not be fresh anymore (if filesystem supports it)
-            assert!(!is_index_fresh(&index_path, &config).await.expect("Freshness check failed"));
+            assert!(!is_index_fresh(&index_path, &config)
+                .await
+                .expect("Freshness check failed"));
         }
     }
 
@@ -244,7 +261,9 @@ mod tests {
         let config = test_config(&temp_dir);
         let index_path = temp_dir.path().join("index");
 
-        let is_fresh = is_index_fresh(&index_path, &config).await.expect("Freshness check failed");
+        let is_fresh = is_index_fresh(&index_path, &config)
+            .await
+            .expect("Freshness check failed");
         assert!(!is_fresh, "Should not be fresh without metadata");
     }
 
@@ -260,14 +279,18 @@ mod tests {
             content_hash: "abcdef123456".to_string(),
         };
 
-        save_metadata(&index_path, &metadata).await.expect("Failed to save metadata");
+        save_metadata(&index_path, &metadata)
+            .await
+            .expect("Failed to save metadata");
 
         // Verify file was created
         let metadata_path = index_path.join("metadata.json");
         assert!(metadata_path.exists());
 
         // Load and verify
-        let json = tokio::fs::read_to_string(&metadata_path).await.expect("Failed to read metadata");
+        let json = tokio::fs::read_to_string(&metadata_path)
+            .await
+            .expect("Failed to read metadata");
         let loaded: IndexMetadata = serde_json::from_str(&json).expect("Failed to parse metadata");
 
         assert_eq!(loaded.doc_count, 42);
@@ -283,7 +306,9 @@ mod tests {
         std::fs::create_dir_all(&concept_cards_path).expect("Failed to create dir");
         std::fs::write(concept_cards_path.join("test.md"), "# Test").expect("Failed to write file");
 
-        let current_hash = compute_content_hash(&config).await.expect("Hash computation failed");
+        let current_hash = compute_content_hash(&config)
+            .await
+            .expect("Hash computation failed");
 
         let index_path = temp_dir.path().join("index");
         std::fs::create_dir_all(&index_path).expect("Failed to create index dir");
@@ -294,9 +319,13 @@ mod tests {
             content_hash: current_hash,
         };
 
-        save_metadata(&index_path, &metadata).await.expect("Failed to save metadata");
+        save_metadata(&index_path, &metadata)
+            .await
+            .expect("Failed to save metadata");
 
-        let is_fresh = is_index_fresh(&index_path, &config).await.expect("Freshness check failed");
+        let is_fresh = is_index_fresh(&index_path, &config)
+            .await
+            .expect("Freshness check failed");
         assert!(is_fresh, "Should be fresh with matching hash");
     }
 
@@ -319,9 +348,13 @@ mod tests {
             content_hash: "wrong_hash".to_string(),
         };
 
-        save_metadata(&index_path, &metadata).await.expect("Failed to save metadata");
+        save_metadata(&index_path, &metadata)
+            .await
+            .expect("Failed to save metadata");
 
-        let is_fresh = is_index_fresh(&index_path, &config).await.expect("Freshness check failed");
+        let is_fresh = is_index_fresh(&index_path, &config)
+            .await
+            .expect("Freshness check failed");
         assert!(!is_fresh, "Should not be fresh with different hash");
     }
 }

@@ -64,7 +64,9 @@ impl<'a> QueryBuilder<'a> {
     pub fn build_query(&self, query_str: &str) -> Result<Box<dyn Query>> {
         let query_str = query_str.trim();
         if query_str.is_empty() {
-            return Err(Error::search_error("Query string cannot be empty".to_string()));
+            return Err(Error::search_error(
+                "Query string cannot be empty".to_string(),
+            ));
         }
 
         // For now, treat the entire query as a single term
@@ -72,7 +74,9 @@ impl<'a> QueryBuilder<'a> {
         let terms: Vec<&str> = query_str.split_whitespace().collect();
 
         if terms.is_empty() {
-            return Err(Error::search_error("Query contains no valid terms".to_string()));
+            return Err(Error::search_error(
+                "Query contains no valid terms".to_string(),
+            ));
         }
 
         // Create Should (OR) clauses for each field with appropriate boosts
@@ -153,7 +157,10 @@ impl<'a> QueryBuilder<'a> {
             if self.fuzzy_enabled {
                 Box::new(FuzzyTermQuery::new(term, self.fuzzy_distance, true))
             } else {
-                Box::new(TermQuery::new(term, IndexRecordOption::WithFreqsAndPositions))
+                Box::new(TermQuery::new(
+                    term,
+                    IndexRecordOption::WithFreqsAndPositions,
+                ))
             }
         } else {
             // Multiple terms: use BooleanQuery with Should (OR)
@@ -165,7 +172,10 @@ impl<'a> QueryBuilder<'a> {
                 let term_query: Box<dyn Query> = if self.fuzzy_enabled {
                     Box::new(FuzzyTermQuery::new(term, self.fuzzy_distance, true))
                 } else {
-                    Box::new(TermQuery::new(term, IndexRecordOption::WithFreqsAndPositions))
+                    Box::new(TermQuery::new(
+                        term,
+                        IndexRecordOption::WithFreqsAndPositions,
+                    ))
                 };
 
                 term_clauses.push((Occur::Should, term_query));
@@ -320,9 +330,15 @@ mod tests {
         let terms = vec!["test"];
 
         // All boosts should succeed
-        assert!(builder.create_field_query(schema.title, &terms, 3.0).is_ok());
-        assert!(builder.create_field_query(schema.description, &terms, 2.0).is_ok());
-        assert!(builder.create_field_query(schema.content, &terms, 1.0).is_ok());
+        assert!(builder
+            .create_field_query(schema.title, &terms, 3.0)
+            .is_ok());
+        assert!(builder
+            .create_field_query(schema.description, &terms, 2.0)
+            .is_ok());
+        assert!(builder
+            .create_field_query(schema.content, &terms, 1.0)
+            .is_ok());
     }
 
     #[test]

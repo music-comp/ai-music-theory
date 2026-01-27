@@ -78,35 +78,29 @@ pub async fn build_index(config: &Config) -> Result<IndexStats> {
         let path = &file_info.path;
 
         match extract_concept_metadata(&concept_cards_path, path).await {
-            Ok(meta) => {
-                match SearchDocument::from_metadata(meta, path).await {
-                    Ok(doc) => {
-                        if let Err(e) = indexer.add_document(&doc) {
-                            log::warn!("Failed to index {}: {}", path.display(), e);
-                            errors += 1;
-                        } else {
-                            indexed += 1;
-                            if indexed % 50 == 0 {
-                                log::info!("Indexed {} documents...", indexed);
-                            }
+            Ok(meta) => match SearchDocument::from_metadata(meta, path).await {
+                Ok(doc) => {
+                    if let Err(e) = indexer.add_document(&doc) {
+                        log::warn!("Failed to index {}: {}", path.display(), e);
+                        errors += 1;
+                    } else {
+                        indexed += 1;
+                        if indexed % 50 == 0 {
+                            log::info!("Indexed {} documents...", indexed);
                         }
                     }
-                    Err(e) => {
-                        log::warn!(
-                            "Failed to create SearchDocument for {}: {}",
-                            path.display(),
-                            e
-                        );
-                        errors += 1;
-                    }
                 }
-            }
+                Err(e) => {
+                    log::warn!(
+                        "Failed to create SearchDocument for {}: {}",
+                        path.display(),
+                        e
+                    );
+                    errors += 1;
+                }
+            },
             Err(e) => {
-                log::warn!(
-                    "Failed to extract metadata from {}: {}",
-                    path.display(),
-                    e
-                );
+                log::warn!("Failed to extract metadata from {}: {}", path.display(), e);
                 errors += 1;
             }
         }
@@ -158,10 +152,7 @@ pub async fn build_index(config: &Config) -> Result<IndexStats> {
 ///
 /// Returns `Err` if index operations or file scanning fails.
 #[allow(dead_code)] // Used in tests
-pub async fn build_index_at(
-    index_path: &Path,
-    concept_cards_path: &Path,
-) -> Result<IndexStats> {
+pub async fn build_index_at(index_path: &Path, concept_cards_path: &Path) -> Result<IndexStats> {
     log::info!("Building Tantivy index at: {}", index_path.display());
 
     let mut indexer = Indexer::new(index_path)?;

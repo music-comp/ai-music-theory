@@ -5,10 +5,12 @@
 
 #![cfg(feature = "fts")]
 
-use music_theory_mcp::config::{Config, LoggingConfig, PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
+use music_theory_mcp::config::{
+    Config, LoggingConfig, PathsConfig, SearchConfig, ServerConfig, SourcesConfig,
+};
 use music_theory_mcp::search::build_index;
 use music_theory_mcp::state::AppState;
-use music_theory_mcp::tools::search::{SearchConceptsParams, search_concepts};
+use music_theory_mcp::tools::search::{search_concepts, SearchConceptsParams};
 use std::fs;
 use std::path::PathBuf;
 use tempfile::TempDir;
@@ -26,8 +28,14 @@ fn create_test_config(temp_dir: &TempDir, backend: &str, fuzzy: bool) -> Config 
         paths: PathsConfig {
             base: base_path.to_string_lossy().to_string(),
             sources_md: base_path.join("sources-md").to_string_lossy().to_string(),
-            concept_cards: base_path.join("concept-cards").to_string_lossy().to_string(),
-            concepts_unified: base_path.join("concepts-unified").to_string_lossy().to_string(),
+            concept_cards: base_path
+                .join("concept-cards")
+                .to_string_lossy()
+                .to_string(),
+            concepts_unified: base_path
+                .join("concepts-unified")
+                .to_string_lossy()
+                .to_string(),
             guides: base_path.join("guides").to_string_lossy().to_string(),
             skill_docs: base_path.to_string_lossy().to_string(),
         },
@@ -126,9 +134,15 @@ async fn test_build_index_from_test_data() {
     assert_eq!(stats.errors, 0, "Should have no errors");
 
     // Verify index directory exists
-    let index_path = config.search.index_path().expect("Failed to get index path");
+    let index_path = config
+        .search
+        .index_path()
+        .expect("Failed to get index path");
     assert!(index_path.exists(), "Index directory should exist");
-    assert!(index_path.join("meta.json").exists(), "Index meta.json should exist");
+    assert!(
+        index_path.join("meta.json").exists(),
+        "Index meta.json should exist"
+    );
 }
 
 #[tokio::test]
@@ -150,12 +164,17 @@ async fn test_search_returns_relevant_results() {
         limit: 10,
     };
 
-    let response = search_concepts(&state, params).await.expect("Search failed");
+    let response = search_concepts(&state, params)
+        .await
+        .expect("Search failed");
     let results = response.results;
 
     // Verify results
     assert!(!results.is_empty(), "Should find results for 'triads'");
-    assert_eq!(results[0].title, "Triads", "First result should be Triads card");
+    assert_eq!(
+        results[0].title, "Triads",
+        "First result should be Triads card"
+    );
     assert_eq!(results[0].category, "harmony");
 }
 
@@ -175,11 +194,16 @@ async fn test_search_ranking_by_relevance() {
         limit: 10,
     };
 
-    let response = search_concepts(&state, params).await.expect("Search failed");
+    let response = search_concepts(&state, params)
+        .await
+        .expect("Search failed");
     let results = response.results;
 
     // Should find multiple results
-    assert!(results.len() >= 2, "Should find multiple results for 'chords'");
+    assert!(
+        results.len() >= 2,
+        "Should find multiple results for 'chords'"
+    );
 
     // Results should be sorted by relevance (title match should rank higher)
     // "Seventh Chords" has "Chords" in title, "Triads" only in content
@@ -205,12 +229,20 @@ async fn test_fuzzy_search_finds_typos() {
         limit: 10,
     };
 
-    let response = search_concepts(&state, params).await.expect("Search failed");
+    let response = search_concepts(&state, params)
+        .await
+        .expect("Search failed");
     let results = response.results;
 
     // Fuzzy search should find "harmony" documents
-    assert!(!results.is_empty(), "Fuzzy search should find results despite typo");
-    assert_eq!(results[0].category, "harmony", "Should find harmony category");
+    assert!(
+        !results.is_empty(),
+        "Fuzzy search should find results despite typo"
+    );
+    assert_eq!(
+        results[0].category, "harmony",
+        "Should find harmony category"
+    );
 }
 
 #[tokio::test]
@@ -220,27 +252,43 @@ async fn test_backend_switching_simple_to_tantivy() {
 
     // Test with simple backend
     let simple_config = create_test_config(&temp_dir, "simple", false);
-    let simple_state = AppState::new(simple_config).await.expect("Failed to create simple state");
+    let simple_state = AppState::new(simple_config)
+        .await
+        .expect("Failed to create simple state");
 
     let params = SearchConceptsParams {
         query: "voice".to_string(),
         limit: 10,
     };
 
-    let simple_response = search_concepts(&simple_state, params.clone()).await.expect("Simple search failed");
+    let simple_response = search_concepts(&simple_state, params.clone())
+        .await
+        .expect("Simple search failed");
     let simple_results = simple_response.results;
 
     // Build Tantivy index and test
     let tantivy_config = create_test_config(&temp_dir, "tantivy", false);
-    build_index(&tantivy_config).await.expect("Failed to build index");
-    let tantivy_state = AppState::new(tantivy_config).await.expect("Failed to create tantivy state");
+    build_index(&tantivy_config)
+        .await
+        .expect("Failed to build index");
+    let tantivy_state = AppState::new(tantivy_config)
+        .await
+        .expect("Failed to create tantivy state");
 
-    let tantivy_response = search_concepts(&tantivy_state, params).await.expect("Tantivy search failed");
+    let tantivy_response = search_concepts(&tantivy_state, params)
+        .await
+        .expect("Tantivy search failed");
     let tantivy_results = tantivy_response.results;
 
     // Both backends should find results (may differ in ranking)
-    assert!(!simple_results.is_empty(), "Simple backend should find results");
-    assert!(!tantivy_results.is_empty(), "Tantivy backend should find results");
+    assert!(
+        !simple_results.is_empty(),
+        "Simple backend should find results"
+    );
+    assert!(
+        !tantivy_results.is_empty(),
+        "Tantivy backend should find results"
+    );
 
     // Both should find the "Voice Leading" card
     assert!(
@@ -268,14 +316,18 @@ async fn test_snippet_generation_includes_context() {
         limit: 10,
     };
 
-    let response = search_concepts(&state, params).await.expect("Search failed");
+    let response = search_concepts(&state, params)
+        .await
+        .expect("Search failed");
     let results = response.results;
 
     assert!(!results.is_empty(), "Should find results for 'parallel'");
 
     let result = &results[0];
-    assert!(result.snippet.contains("parallel") || result.snippet.contains("Parallel"),
-        "Snippet should contain the query term");
+    assert!(
+        result.snippet.contains("parallel") || result.snippet.contains("Parallel"),
+        "Snippet should contain the query term"
+    );
     assert!(!result.snippet.is_empty(), "Snippet should not be empty");
 }
 
@@ -316,7 +368,9 @@ async fn test_search_with_limit() {
         limit: 1,
     };
 
-    let response = search_concepts(&state, params).await.expect("Search failed");
+    let response = search_concepts(&state, params)
+        .await
+        .expect("Search failed");
     let results = response.results;
 
     // Should respect limit
@@ -336,7 +390,8 @@ async fn test_index_rebuild_clears_old_data() {
         "test",
         "First test",
         "Content 1",
-    ).expect("Failed to create test file");
+    )
+    .expect("Failed to create test file");
 
     let config = create_test_config(&temp_dir, "tantivy", false);
 
@@ -352,7 +407,8 @@ async fn test_index_rebuild_clears_old_data() {
         "test",
         "Second test",
         "Content 2",
-    ).expect("Failed to create second test file");
+    )
+    .expect("Failed to create second test file");
 
     // Rebuild index
     let stats2 = build_index(&config).await.expect("Failed to rebuild index");
@@ -365,7 +421,9 @@ async fn test_index_rebuild_clears_old_data() {
         limit: 10,
     };
 
-    let response = search_concepts(&state, params).await.expect("Search failed");
+    let response = search_concepts(&state, params)
+        .await
+        .expect("Search failed");
     let results = response.results;
     assert_eq!(results.len(), 2, "Should find both documents after rebuild");
 }
@@ -385,7 +443,9 @@ async fn test_search_tool_integration() {
         limit: 5,
     };
 
-    let response = search_concepts(&state, params).await.expect("search_concepts failed");
+    let response = search_concepts(&state, params)
+        .await
+        .expect("search_concepts failed");
 
     assert!(!response.results.is_empty(), "Should find results");
     assert_eq!(response.query, "harmony");
@@ -413,14 +473,23 @@ async fn test_health_tool_with_fts_ready() {
     let health = get_health(&state).await.expect("Failed to get health");
 
     assert_eq!(health.status, "ok");
-    assert_eq!(health.backend.active, "tantivy", "Should report tantivy as active");
+    assert_eq!(
+        health.backend.active, "tantivy",
+        "Should report tantivy as active"
+    );
     assert!(health.backend.fts_enabled, "FTS should be enabled");
     assert!(health.backend.fts_ready, "FTS should be ready");
-    assert!(health.backend.index_stats.is_some(), "Should have index stats");
+    assert!(
+        health.backend.index_stats.is_some(),
+        "Should have index stats"
+    );
 
     if let Some(stats) = health.backend.index_stats {
         assert!(stats.doc_count > 0, "Should have indexed documents");
-        assert!(stats.last_indexed.is_some(), "Should have last indexed time");
+        assert!(
+            stats.last_indexed.is_some(),
+            "Should have last indexed time"
+        );
     }
 }
 
@@ -438,7 +507,10 @@ async fn test_health_tool_simple_backend() {
     let health = get_health(&state).await.expect("Failed to get health");
 
     assert_eq!(health.status, "ok");
-    assert_eq!(health.backend.active, "simple", "Should report simple as active");
+    assert_eq!(
+        health.backend.active, "simple",
+        "Should report simple as active"
+    );
 }
 
 #[tokio::test]
@@ -456,8 +528,17 @@ async fn test_health_tool_tantivy_not_ready() {
     let health = get_health(&state).await.expect("Failed to get health");
 
     assert_eq!(health.status, "ok");
-    assert_eq!(health.backend.active, "simple", "Should fall back to simple");
-    assert!(health.backend.fts_enabled, "FTS should be enabled in config");
+    assert_eq!(
+        health.backend.active, "simple",
+        "Should fall back to simple"
+    );
+    assert!(
+        health.backend.fts_enabled,
+        "FTS should be enabled in config"
+    );
     assert!(!health.backend.fts_ready, "FTS should not be ready");
-    assert!(health.backend.index_stats.is_none(), "Should not have index stats");
+    assert!(
+        health.backend.index_stats.is_none(),
+        "Should not have index stats"
+    );
 }

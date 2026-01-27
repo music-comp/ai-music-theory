@@ -178,14 +178,18 @@ impl TantivySearch {
 
         // Try description first
         if let Ok(description) = self.get_text_field(doc, self.schema.description) {
-            if let Some(snippet) = Self::find_snippet_in_text(&description, &query_lower, self.config.snippet_size) {
+            if let Some(snippet) =
+                Self::find_snippet_in_text(&description, &query_lower, self.config.snippet_size)
+            {
                 return Ok(snippet);
             }
         }
 
         // Fall back to content
         if let Ok(content) = self.get_text_field(doc, self.schema.content) {
-            if let Some(snippet) = Self::find_snippet_in_text(&content, &query_lower, self.config.snippet_size) {
+            if let Some(snippet) =
+                Self::find_snippet_in_text(&content, &query_lower, self.config.snippet_size)
+            {
                 return Ok(snippet);
             }
         }
@@ -243,7 +247,11 @@ impl TantivySearch {
     }
 
     /// Get a text field value from a document.
-    fn get_text_field(&self, doc: &TantivyDocument, field: tantivy::schema::Field) -> Result<String> {
+    fn get_text_field(
+        &self,
+        doc: &TantivyDocument,
+        field: tantivy::schema::Field,
+    ) -> Result<String> {
         doc.get_first(field)
             .and_then(|v| v.as_str())
             .map(|s| s.to_string())
@@ -256,7 +264,11 @@ impl TantivySearch {
     }
 
     /// Get an optional text field value from a document.
-    fn get_optional_text_field(&self, doc: &TantivyDocument, field: tantivy::schema::Field) -> Option<String> {
+    fn get_optional_text_field(
+        &self,
+        doc: &TantivyDocument,
+        field: tantivy::schema::Field,
+    ) -> Option<String> {
         doc.get_first(field)
             .and_then(|v| v.as_str())
             .map(|s| s.to_string())
@@ -413,7 +425,11 @@ mod tests {
 
             // Just verify search executes without error
             let result = backend.search(&params).await;
-            assert!(result.is_ok(), "Search for '{}' should not error", query_str);
+            assert!(
+                result.is_ok(),
+                "Search for '{}' should not error",
+                query_str
+            );
         }
     }
 

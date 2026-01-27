@@ -215,7 +215,10 @@ fn initialize_fts_backend(config: &Config) -> Result<FtsBackendInit> {
 #[cfg(feature = "fts")]
 pub async fn initialize_fts(state: &Arc<AppState>) -> Result<()> {
     if state.config.search.backend != "tantivy" {
-        log::debug!("FTS not configured (backend={})", state.config.search.backend);
+        log::debug!(
+            "FTS not configured (backend={})",
+            state.config.search.backend
+        );
         return Ok(());
     }
 
@@ -303,9 +306,7 @@ fn start_background_indexing(state: Arc<AppState>) {
 
 /// Build FTS index for the given state (module-level wrapper).
 #[cfg(feature = "fts")]
-async fn build_fts_index_for_state(
-    state: &AppState,
-) -> Result<crate::search::IndexStats> {
+async fn build_fts_index_for_state(state: &AppState) -> Result<crate::search::IndexStats> {
     build_index(&state.config).await
 }
 
