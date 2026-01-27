@@ -591,6 +591,7 @@ mod tests {
     }
 
     #[tokio::test]
+    #[ignore = "Hangs waiting for MCP protocol on stdin - needs mocking"]
     async fn test_handle_command_serve_default() {
         // Test that handle_command dispatches to serve when no command given
         let cli = Cli {
@@ -598,10 +599,9 @@ mod tests {
             command: None,
         };
 
-        // This will try to run the server, which will fail because there's no config file
-        // But that's okay - we're testing the dispatch logic
+        // This will try to run the server, which will hang waiting for stdin
+        // TODO: Mock stdio transport to test this properly
         let result = handle_command(cli).await;
-        // Should fail trying to load config (that's expected)
         assert!(result.is_err());
     }
 
