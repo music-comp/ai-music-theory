@@ -63,11 +63,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Uses `stop-words` 0.8 for comprehensive English stopword lists
 - Index stored in `.tantivy-index/` (configurable)
 - Automatic index rebuilding when content changes detected
-- Backward compatible with simple search backend (deprecated)
+- Backward compatible with simple search backend (remains available as fallback)
 
 ### Breaking Changes
 - **None** - Version 0.2.0 is fully backward compatible with 0.1.0
-- Simple search backend still available but deprecated (will be removed in 0.3.0)
+- Simple search backend remains available as fallback option for users who don't want FTS
 - See MIGRATION.md for migration instructions
 
 ### Documentation
@@ -132,9 +132,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - No code changes required - fully backward compatible
 
 **From simple to tantivy backend:**
-- Simple backend deprecated in 0.2.0
-- Will be removed in 0.3.0
-- Migrate to Tantivy for better search quality and performance
+- Simple backend remains available as fallback option
+- Tantivy recommended for better search quality and performance
+- Simple backend suitable for small collections without FTS setup
 
 ---
 

@@ -90,7 +90,7 @@ lewin-gmit = "[2007] Lewin - GMIT.pdf"
 The server supports two search backends for the `search_concepts` tool:
 
 - **Tantivy** (default, recommended) - Full-text search engine with advanced query support
-- **Simple** (deprecated) - Linear scan, will be removed in v0.3.0
+- **Simple** (fallback) - Linear scan, suitable for small collections without an index
 
 #### Search Quality Features (Tantivy Backend)
 
@@ -132,7 +132,7 @@ Configure search behavior in `config/default.toml`:
 
 ```toml
 [search]
-# Backend selection: "tantivy" (default) or "simple" (deprecated)
+# Backend selection: "tantivy" (default) or "simple" (fallback)
 # Note: "tantivy" requires building with --features fts
 backend = "tantivy"
 
@@ -232,8 +232,8 @@ If you're upgrading from v0.1.0, see `MIGRATION.md` for detailed migration instr
 2. Run `music-theory-mcp index`
 3. Restart server
 
-**Rollback (temporary):**
-Set `backend = "simple"` in config (shows deprecation warning).
+**Fallback option:**
+Set `backend = "simple"` in config (no index required, suitable for smaller collections).
 
 #### Performance Comparison
 

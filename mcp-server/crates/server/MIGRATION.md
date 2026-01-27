@@ -26,7 +26,7 @@ Version 0.2.0 of the Music Theory MCP Server changes the default search backend 
 **Configuration Changes:**
 - Default backend changed from `"simple"` to `"tantivy"` in `config/default.toml`
 - New configuration options for query mode, stopwords, and phrase search
-- SimpleSearch backend marked as deprecated (removal planned for v0.3.0)
+- SimpleSearch backend remains available as a fallback for users who don't want FTS
 
 ### Breaking Changes
 
@@ -141,15 +141,15 @@ All queries should now return relevant results.
 
 ---
 
-**Option B: Keep Simple Backend (Not Recommended)**
+**Option B: Use Simple Backend (Fallback)**
 
-If you need to temporarily stay on the simple backend:
+If you prefer to use the simple backend (no index required):
 
 **1. Update your config file:**
 
 ```toml
 [search]
-backend = "simple"  # Explicitly use legacy backend
+backend = "simple"  # Use simple linear scan backend
 ```
 
 **2. Rebuild and restart:**
@@ -159,14 +159,7 @@ cargo build --release
 ./target/release/music-theory-mcp serve
 ```
 
-**Warning:** You will see deprecation warnings in the logs:
-
-```
-WARN: SimpleSearch backend is deprecated and will be removed in version 0.3.0.
-      Please migrate to 'backend = "tantivy"' for better search quality.
-```
-
-**Migration deadline:** The simple backend will be removed in version 0.3.0 (estimated Q2 2026).
+**Note:** The simple backend is suitable for small to medium collections (<500 documents). For larger collections or better search quality, consider using the Tantivy backend.
 
 ---
 
@@ -449,7 +442,7 @@ A: ~1-5 seconds for 200-500 concept cards.
 A: Only one backend can be active at a time. Switch via configuration.
 
 **Q: What happens if I don't migrate?**
-A: SimpleSearch still works but shows deprecation warnings. It will be removed in v0.3.0.
+A: SimpleSearch remains fully supported as a fallback option. It works well for small to medium collections without requiring an index.
 
 **Q: Do I need to change my MCP client code?**
 A: No, the API is unchanged. Only server-side configuration changes.
