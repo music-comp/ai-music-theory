@@ -27,6 +27,7 @@ pub struct GraphBuilder {
     nodes: Vec<Node>,
     edges: Vec<Edge>,
     node_ids: HashSet<String>,
+    source_title_to_id: HashMap<String, String>,
     warnings: Vec<String>,
 }
 
@@ -37,6 +38,7 @@ impl GraphBuilder {
             nodes: Vec::new(),
             edges: Vec::new(),
             node_ids: HashSet::new(),
+            source_title_to_id: HashMap::new(),
             warnings: Vec::new(),
         }
     }
@@ -146,20 +148,22 @@ impl GraphBuilder {
                 let (author, year) = parse_source_filename(filename);
 
                 // Check if source is converted (exists in sources-md directory)
-                let converted_path = Path::new(&config.paths.base)
-                    .join(&config.paths.sources_md)
-                    .join(&source_id);
+                let sources_md_path = config.paths.sources_md_path()?;
+                let converted_path = sources_md_path.join(&source_id);
                 let is_converted = converted_path.exists() && converted_path.is_dir();
+
+                let title = extract_title_from_filename(filename);
 
                 let node = Node::Source(SourceNode {
                     id: source_id.clone(),
-                    title: extract_title_from_filename(filename),
+                    title: title.clone(),
                     author,
                     year,
                     is_converted,
                 });
 
-                self.node_ids.insert(source_id);
+                self.node_ids.insert(source_id.clone());
+                self.source_title_to_id.insert(title, source_id);
                 self.nodes.push(node);
             }
         }
@@ -169,8 +173,8 @@ impl GraphBuilder {
 
     /// Load concept cards from the configured directory.
     async fn load_concept_cards(&self, config: &Config) -> Result<Vec<ConceptCard>> {
-        let base_path = Path::new(&config.paths.base);
-        let cards_dir = base_path.join(&config.paths.concept_cards);
+        let base_path = config.paths.base_path()?;
+        let cards_dir = config.paths.concept_cards_path()?;
 
         let mut cards = Vec::new();
 
@@ -179,7 +183,7 @@ impl GraphBuilder {
 
         for file_info in file_infos {
             // Extract metadata
-            let metadata = extract_concept_metadata(base_path, &file_info.path).await?;
+            let metadata = extract_concept_metadata(&base_path, &file_info.path).await?;
 
             // Read file content to parse relationships
             let content = std::fs::read_to_string(&file_info.path)
@@ -277,9 +281,16 @@ impl GraphBuilder {
 
     /// Add an "introduces" edge from the source to the concept.
     fn add_introduces_edge(&mut self, card: &ConceptCard) {
-        if self.node_ids.contains(&card.source) {
+        // Try to find source by ID first, then by title
+        let source_id = if self.node_ids.contains(&card.source) {
+            Some(card.source.clone())
+        } else {
+            self.source_title_to_id.get(&card.source).cloned()
+        };
+
+        if let Some(source_id) = source_id {
             self.edges.push(Edge {
-                from: card.source.clone(),
+                from: source_id,
                 to: card.id.clone(),
                 relationship: Relationship::Introduces,
                 weight: 1.0,

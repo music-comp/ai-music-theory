@@ -5,7 +5,7 @@
 
 use std::sync::Arc;
 
-#[cfg(any(feature = "fts", feature = "graph"))]
+#[cfg(feature = "fts")]
 use std::path::Path;
 
 #[cfg(feature = "fts")]
@@ -295,7 +295,7 @@ async fn index_exists_and_fresh(index_path: &Path, config: &Config) -> Result<bo
 /// Returns `Err` if data path resolution fails.
 #[cfg(feature = "graph")]
 pub async fn initialize_graph(state: &Arc<AppState>) -> Result<()> {
-    let data_dir = Path::new(&state.config.paths.base).join("data");
+    let data_dir = state.config.paths.base_path()?.join("data");
     let graph_path = data_dir.join("graphs").join("concept_graph.json");
 
     if !graph_path.exists() {
@@ -307,13 +307,13 @@ pub async fn initialize_graph(state: &Arc<AppState>) -> Result<()> {
     }
 
     log::info!("Starting async graph load");
-    start_graph_loading(Arc::clone(state));
+    start_graph_loading(Arc::clone(state), data_dir);
     Ok(())
 }
 
 /// Start async graph loading task.
 #[cfg(feature = "graph")]
-fn start_graph_loading(state: Arc<AppState>) {
+fn start_graph_loading(state: Arc<AppState>, data_dir: std::path::PathBuf) {
     tokio::spawn(async move {
         // Update state to Loading
         {
@@ -322,8 +322,6 @@ fn start_graph_loading(state: Arc<AppState>) {
         }
 
         log::info!("Loading concept graph");
-
-        let data_dir = Path::new(&state.config.paths.base).join("data");
 
         match crate::graph::load_concept_graph(&data_dir).await {
             Ok(loaded) => {

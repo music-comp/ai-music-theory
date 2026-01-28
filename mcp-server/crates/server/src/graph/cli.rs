@@ -6,8 +6,6 @@
 //! - stats: Show graph statistics
 //! - compile: Rebuild rkyv cache
 
-use std::path::Path;
-
 use crate::config::Config;
 use crate::error::Result;
 
@@ -53,7 +51,7 @@ pub async fn handle_build(config: &Config, dry_run: bool, verbose: bool) -> Resu
     if dry_run {
         println!("\n(dry run - no files written)");
     } else {
-        let data_dir = Path::new(&config.paths.base).join("data");
+        let data_dir = config.paths.base_path()?.join("data");
         save_graph(&graph_data, &data_dir).await?;
 
         println!("\n✓ Wrote concept_graph.json");
@@ -69,7 +67,7 @@ pub async fn handle_build(config: &Config, dry_run: bool, verbose: bool) -> Resu
 ///
 /// * `config` - Server configuration
 pub async fn handle_validate(config: &Config) -> Result<()> {
-    let data_dir = Path::new(&config.paths.base).join("data");
+    let data_dir = config.paths.base_path()?.join("data");
     let graph = load_graph(&data_dir).await?;
 
     println!("Validating concept graph...");
@@ -137,7 +135,7 @@ pub async fn handle_stats(config: &Config) -> Result<()> {
     use super::types::Node;
     use std::collections::HashMap;
 
-    let data_dir = Path::new(&config.paths.base).join("data");
+    let data_dir = config.paths.base_path()?.join("data");
     let json_path = data_dir.join("graphs").join("concept_graph.json");
 
     let content = tokio::fs::read_to_string(&json_path)
@@ -215,7 +213,7 @@ pub async fn handle_stats(config: &Config) -> Result<()> {
 pub async fn handle_compile(config: &Config) -> Result<()> {
     println!("Rebuilding rkyv cache from JSON...");
 
-    let data_dir = Path::new(&config.paths.base).join("data");
+    let data_dir = config.paths.base_path()?.join("data");
     let json_path = data_dir.join("graphs").join("concept_graph.json");
 
     // Load JSON
