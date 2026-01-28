@@ -675,4 +675,283 @@ mod tests {
         let params: GetNodeEdgesParams = serde_json::from_str(json).unwrap();
         assert_eq!(params.direction, "both");
     }
+
+    // Functional tests for graph tools
+    #[cfg(feature = "graph")]
+    mod functional {
+        use super::*;
+        use crate::config::Config;
+        use crate::graph::types::{ConceptNode, Edge, EdgeOrigin, GraphData, Relationship, SourceNode};
+        use crate::graph::LoadedGraph;
+        use crate::state::GraphState;
+        use std::sync::Arc;
+
+        /// Helper to create AppState with a test graph
+        async fn create_test_state() -> Arc<AppState> {
+            // Create test graph data
+            let nodes = vec![
+                Node::Source(SourceNode {
+                    id: "test-source".to_string(),
+                    title: "Test Source".to_string(),
+                    author: "Test Author".to_string(),
+                    year: Some(2024),
+                    is_converted: true,
+                }),
+                Node::Concept(ConceptNode {
+                    id: "concept-a".to_string(),
+                    title: "Concept A".to_string(),
+                    category: "harmony".to_string(),
+                    source_id: "test-source".to_string(),
+                    canonical_id: None,
+                    is_canonical: true,
+                }),
+                Node::Concept(ConceptNode {
+                    id: "concept-b".to_string(),
+                    title: "Concept B".to_string(),
+                    category: "fundamentals".to_string(),
+                    source_id: "test-source".to_string(),
+                    canonical_id: None,
+                    is_canonical: true,
+                }),
+            ];
+
+            let edges = vec![
+                Edge {
+                    from: "test-source".to_string(),
+                    to: "concept-a".to_string(),
+                    relationship: Relationship::Introduces,
+                    weight: 1.0,
+                    origin: EdgeOrigin::Extracted,
+                },
+                Edge {
+                    from: "concept-a".to_string(),
+                    to: "concept-b".to_string(),
+                    relationship: Relationship::Prerequisite,
+                    weight: 1.0,
+                    origin: EdgeOrigin::Extracted,
+                },
+            ];
+
+            let graph_data = GraphData {
+                version: "1.0".to_string(),
+                nodes,
+                edges,
+                metadata: None,
+            };
+
+            // Convert to petgraph and build loaded graph
+            let graph = crate::graph::persistence::to_petgraph(&graph_data);
+
+            // Build node index
+            let mut node_index = std::collections::HashMap::new();
+            for idx in graph.node_indices() {
+                let id = match &graph[idx] {
+                    Node::Concept(c) => c.id.clone(),
+                    Node::Source(s) => s.id.clone(),
+                };
+                node_index.insert(id, idx);
+            }
+
+            // Compute stats
+            let stats = crate::graph::GraphStats {
+                node_count: 3,
+                edge_count: 2,
+                concept_count: 2,
+                source_count: 1,
+            };
+
+            let loaded = LoadedGraph {
+                graph,
+                node_index,
+                loaded_at: chrono::Utc::now(),
+                stats,
+            };
+
+            // Create AppState with default config
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+
+            // Replace graph with loaded test graph
+            {
+                let mut graph_guard = state.graph.write().unwrap();
+                *graph_guard = GraphState::Loaded(loaded);
+            }
+
+            state
+        }
+
+        #[tokio::test]
+        async fn test_graph_status_loaded() {
+            let state = create_test_state().await;
+            let response = graph_status(&state).await.unwrap();
+
+            assert!(response.enabled);
+            assert_eq!(response.status, "loaded");
+            assert!(response.error.is_none());
+            assert!(response.stats.is_some());
+            assert!(response.loaded_at.is_some());
+
+            let stats = response.stats.unwrap();
+            assert_eq!(stats.node_count, 3);
+            assert_eq!(stats.edge_count, 2);
+            assert_eq!(stats.concept_count, 2);
+            assert_eq!(stats.source_count, 1);
+        }
+
+        #[tokio::test]
+        async fn test_graph_status_not_loaded() {
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+
+            let response = graph_status(&state).await.unwrap();
+            assert!(response.enabled);
+            assert_eq!(response.status, "not_loaded");
+            assert!(response.stats.is_none());
+        }
+
+        #[tokio::test]
+        async fn test_graph_stats() {
+            let state = create_test_state().await;
+            let response = graph_stats(&state).await.unwrap();
+
+            assert_eq!(response.nodes.total, 3);
+            assert_eq!(response.nodes.concepts, 2);
+            assert_eq!(response.nodes.sources, 1);
+            assert_eq!(response.edge_count, 2);
+
+            assert_eq!(response.relationships.len(), 2);
+            assert_eq!(response.categories.len(), 2);
+
+            // Verify harmony category exists
+            assert!(response
+                .categories
+                .iter()
+                .any(|c| c.category == "harmony"));
+        }
+
+        #[tokio::test]
+        async fn test_graph_validate() {
+            let state = create_test_state().await;
+            let response = graph_validate(&state).await.unwrap();
+
+            assert!(response.valid);
+            assert_eq!(response.orphan_count, 0);
+            assert_eq!(response.self_loop_count, 0);
+            assert!(response.issues.is_empty());
+        }
+
+        #[tokio::test]
+        async fn test_get_node_concept() {
+            let state = create_test_state().await;
+            let info = get_node(&state, "concept-a").await.unwrap();
+
+            assert_eq!(info.id, "concept-a");
+            assert_eq!(info.node_type, "concept");
+            assert_eq!(info.in_degree, 1);
+            assert_eq!(info.out_degree, 1);
+
+            if let NodeDetails::Concept {
+                title, category, ..
+            } = info.details
+            {
+                assert_eq!(title, "Concept A");
+                assert_eq!(category, "harmony");
+            } else {
+                panic!("Expected Concept node details");
+            }
+        }
+
+        #[tokio::test]
+        async fn test_get_node_source() {
+            let state = create_test_state().await;
+            let info = get_node(&state, "test-source").await.unwrap();
+
+            assert_eq!(info.id, "test-source");
+            assert_eq!(info.node_type, "source");
+            assert_eq!(info.in_degree, 0);
+            assert_eq!(info.out_degree, 1);
+
+            if let NodeDetails::Source {
+                title, author, ..
+            } = info.details
+            {
+                assert_eq!(title, "Test Source");
+                assert_eq!(author, "Test Author");
+            } else {
+                panic!("Expected Source node details");
+            }
+        }
+
+        #[tokio::test]
+        async fn test_get_node_not_found() {
+            let state = create_test_state().await;
+            let result = get_node(&state, "nonexistent").await;
+            assert!(result.is_err());
+            assert!(result.unwrap_err().to_string().contains("not found"));
+        }
+
+        #[tokio::test]
+        async fn test_get_node_edges_both() {
+            let state = create_test_state().await;
+            let response = get_node_edges(&state, "concept-a", "both").await.unwrap();
+
+            assert_eq!(response.node_id, "concept-a");
+            assert_eq!(response.direction, "both");
+            assert_eq!(response.incoming.len(), 1);
+            assert_eq!(response.outgoing.len(), 1);
+
+            assert_eq!(response.incoming[0].from, "test-source");
+            assert_eq!(response.outgoing[0].to, "concept-b");
+        }
+
+        #[tokio::test]
+        async fn test_get_node_edges_incoming() {
+            let state = create_test_state().await;
+            let response = get_node_edges(&state, "concept-a", "incoming")
+                .await
+                .unwrap();
+
+            assert_eq!(response.direction, "incoming");
+            assert_eq!(response.incoming.len(), 1);
+            assert_eq!(response.outgoing.len(), 0);
+        }
+
+        #[tokio::test]
+        async fn test_get_node_edges_outgoing() {
+            let state = create_test_state().await;
+            let response = get_node_edges(&state, "concept-a", "outgoing")
+                .await
+                .unwrap();
+
+            assert_eq!(response.direction, "outgoing");
+            assert_eq!(response.incoming.len(), 0);
+            assert_eq!(response.outgoing.len(), 1);
+        }
+
+        #[tokio::test]
+        async fn test_get_node_edges_not_found() {
+            let state = create_test_state().await;
+            let result = get_node_edges(&state, "nonexistent", "both").await;
+            assert!(result.is_err());
+        }
+
+        #[tokio::test]
+        async fn test_graph_stats_not_loaded() {
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+
+            let result = graph_stats(&state).await;
+            assert!(result.is_err());
+            assert!(result.unwrap_err().to_string().contains("not loaded"));
+        }
+
+        #[tokio::test]
+        async fn test_graph_validate_not_loaded() {
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+
+            let result = graph_validate(&state).await;
+            assert!(result.is_err());
+        }
+    }
 }
