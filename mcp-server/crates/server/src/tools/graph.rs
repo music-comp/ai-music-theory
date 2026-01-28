@@ -576,6 +576,39 @@ pub async fn get_node_edges(
     })
 }
 
+// Non-feature versions that return "not available" errors
+#[cfg(not(feature = "graph"))]
+pub async fn graph_stats(_state: &AppState) -> Result<GraphStatsResponse> {
+    Err(crate::error::Error::config(
+        "Graph feature not enabled in this build".to_string(),
+    ))
+}
+
+#[cfg(not(feature = "graph"))]
+pub async fn graph_validate(_state: &AppState) -> Result<GraphValidateResponse> {
+    Err(crate::error::Error::config(
+        "Graph feature not enabled in this build".to_string(),
+    ))
+}
+
+#[cfg(not(feature = "graph"))]
+pub async fn get_node(_state: &AppState, _node_id: &str) -> Result<NodeInfo> {
+    Err(crate::error::Error::config(
+        "Graph feature not enabled in this build".to_string(),
+    ))
+}
+
+#[cfg(not(feature = "graph"))]
+pub async fn get_node_edges(
+    _state: &AppState,
+    _node_id: &str,
+    _direction: &str,
+) -> Result<NodeEdgesResponse> {
+    Err(crate::error::Error::config(
+        "Graph feature not enabled in this build".to_string(),
+    ))
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

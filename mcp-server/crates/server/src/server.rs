@@ -89,13 +89,11 @@ pub struct GetGuideParams {
     guide_id: String,
 }
 
-#[cfg(feature = "graph")]
 #[derive(Serialize, Deserialize, JsonSchema)]
 pub struct GetNodeParams {
     node_id: String,
 }
 
-#[cfg(feature = "graph")]
 #[derive(Serialize, Deserialize, JsonSchema)]
 pub struct GetNodeEdgesParams {
     node_id: String,
@@ -103,7 +101,6 @@ pub struct GetNodeEdgesParams {
     direction: String,
 }
 
-#[cfg(feature = "graph")]
 fn default_direction() -> String {
     "both".to_string()
 }
@@ -309,7 +306,6 @@ impl MusicTheoryServer {
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
 
-    #[cfg(feature = "graph")]
     #[tool(description = "Get concept graph status and basic statistics")]
     async fn graph_status(&self) -> Result<CallToolResult, ErrorData> {
         let response = tools::graph::graph_status(&self.state)
@@ -321,7 +317,6 @@ impl MusicTheoryServer {
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
 
-    #[cfg(feature = "graph")]
     #[tool(description = "Get detailed concept graph statistics (categories, relationships)")]
     async fn graph_stats(&self) -> Result<CallToolResult, ErrorData> {
         let response = tools::graph::graph_stats(&self.state)
@@ -333,7 +328,6 @@ impl MusicTheoryServer {
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
 
-    #[cfg(feature = "graph")]
     #[tool(description = "Validate concept graph integrity (orphans, self-loops)")]
     async fn graph_validate(&self) -> Result<CallToolResult, ErrorData> {
         let response = tools::graph::graph_validate(&self.state)
@@ -345,7 +339,6 @@ impl MusicTheoryServer {
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
 
-    #[cfg(feature = "graph")]
     #[tool(description = "Get node information by ID with in/out degree counts")]
     async fn get_node(
         &self,
@@ -360,7 +353,6 @@ impl MusicTheoryServer {
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
 
-    #[cfg(feature = "graph")]
     #[tool(description = "Get all edges for a node with optional direction filter")]
     async fn get_node_edges(
         &self,

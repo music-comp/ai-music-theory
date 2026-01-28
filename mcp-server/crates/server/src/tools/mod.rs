@@ -4,7 +4,6 @@ pub mod health;
 pub mod search;
 pub mod sources;
 
-#[cfg(feature = "graph")]
 pub mod graph;
 
 // Tool function exports - Used by server.rs via #[tool] macro expansion.
@@ -20,7 +19,6 @@ pub use health::get_health;
 pub use search::search_concepts;
 #[allow(unused_imports)]
 pub use sources::{get_source_chapter, get_source_pdf_path, list_sources};
-#[cfg(feature = "graph")]
 #[allow(unused_imports)]
 pub use graph::{get_node, get_node_edges, graph_stats, graph_status, graph_validate};
 
