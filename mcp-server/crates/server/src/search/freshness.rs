@@ -85,7 +85,7 @@ pub async fn compute_content_hash(config: &Config) -> Result<String> {
         }
     }
 
-    Ok(format!("{:x}", hasher.finish()))
+    Ok(format!("{:016x}", hasher.finish()))
 }
 
 /// Check if an index is fresh (content hasn't changed and schema matches).
