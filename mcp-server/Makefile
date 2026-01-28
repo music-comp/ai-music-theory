@@ -35,21 +35,29 @@ help:
 	@echo "$(GREEN)Building:$(RESET)"
 	@echo "  $(YELLOW)make build$(RESET)            - Build all binaries (simple search)"
 	@echo "  $(YELLOW)make build-fts$(RESET)        - Build with full-text search feature"
+	@echo "  $(YELLOW)make build-graph$(RESET)      - Build with graph database feature"
+	@echo "  $(YELLOW)make build-fts-graph$(RESET)  - Build with FTS + graph (recommended)"
 	@echo "  $(YELLOW)make build-release$(RESET)    - Build optimized release binaries (simple)"
 	@echo "  $(YELLOW)make build-release-fts$(RESET) - Build optimized release binaries (with FTS)"
-	@echo "  $(YELLOW)make build-both$(RESET)       - Build both configurations in release mode"
+	@echo "  $(YELLOW)make build-release-graph$(RESET) - Build optimized release (with graph)"
+	@echo "  $(YELLOW)make build-release-fts-graph$(RESET) - Build optimized (FTS + graph)"
+	@echo "  $(YELLOW)make build-all$(RESET)        - Build all configurations in release mode"
 	@echo "  $(YELLOW)make build MODE=release$(RESET) - Build with custom mode"
 	@echo ""
 	@echo "$(GREEN)Testing & Quality:$(RESET)"
-	@echo "  $(YELLOW)make test$(RESET)             - Run all tests (without FTS)"
+	@echo "  $(YELLOW)make test$(RESET)             - Run all tests (without features)"
 	@echo "  $(YELLOW)make test-fts$(RESET)         - Run all tests with FTS feature"
-	@echo "  $(YELLOW)make test-all$(RESET)         - Run tests in both configurations"
-	@echo "  $(YELLOW)make lint$(RESET)             - Run clippy and format check (both configs)"
+	@echo "  $(YELLOW)make test-graph$(RESET)       - Run all tests with graph feature"
+	@echo "  $(YELLOW)make test-fts-graph$(RESET)   - Run all tests with FTS + graph"
+	@echo "  $(YELLOW)make test-all$(RESET)         - Run tests in all configurations"
+	@echo "  $(YELLOW)make lint$(RESET)             - Run clippy and format check (all configs)"
 	@echo "  $(YELLOW)make format$(RESET)           - Format all code with rustfmt"
 	@echo "  $(YELLOW)make coverage$(RESET)         - Generate test coverage report"
 	@echo "  $(YELLOW)make check$(RESET)            - Build + lint + test (simple)"
 	@echo "  $(YELLOW)make check-fts$(RESET)        - Build + lint + test (FTS)"
-	@echo "  $(YELLOW)make check-all$(RESET)        - Build + lint + test (both configs)"
+	@echo "  $(YELLOW)make check-graph$(RESET)      - Build + lint + test (graph)"
+	@echo "  $(YELLOW)make check-fts-graph$(RESET)  - Build + lint + test (FTS + graph)"
+	@echo "  $(YELLOW)make check-all$(RESET)        - Build + lint + test (all configs)"
 	@echo ""
 	@echo "$(GREEN)Cleaning:$(RESET)"
 	@echo "  $(YELLOW)make clean$(RESET)            - Clean bin directory"
@@ -59,12 +67,17 @@ help:
 	@echo "  $(YELLOW)make push$(RESET)             - Pushes to Codeberg and Github"
 	@echo "  $(YELLOW)make publish$(RESET)          - WIP: Publishes all crates to crates.io"
 	@echo "  $(YELLOW)make tracked-files$(RESET)    - Save list of tracked files"
-	@echo "  $(YELLOW)make size-compare$(RESET)     - Compare binary sizes (simple vs FTS)"
+	@echo "  $(YELLOW)make size-compare$(RESET)     - Compare binary sizes (all configs)"
 	@echo ""
-	@echo "$(GREEN)CLI Tools (requires FTS):$(RESET)"
+	@echo "$(GREEN)CLI Tools - FTS (requires --features fts):$(RESET)"
 	@echo "  $(YELLOW)make index$(RESET)            - Build FTS index"
 	@echo "  $(YELLOW)make index-force$(RESET)      - Force rebuild FTS index"
-	@echo "  $(YELLOW)make status$(RESET)           - Show FTS index status"
+	@echo "  $(YELLOW)make fts-status$(RESET)       - Show FTS index status"
+	@echo ""
+	@echo "$(GREEN)CLI Tools - Graph (requires --features graph):$(RESET)"
+	@echo "  $(YELLOW)make graph-build$(RESET)      - Build concept graph database"
+	@echo "  $(YELLOW)make graph-validate$(RESET)   - Validate graph integrity"
+	@echo "  $(YELLOW)make graph-stats$(RESET)      - Show graph statistics"
 	@echo ""
 	@echo "$(GREEN)Information:$(RESET)"
 	@echo "  $(YELLOW)make info$(RESET)             - Show build information"
@@ -211,6 +224,86 @@ build-release-fts: clean $(BIN_DIR)
 	@echo "$(GREEN)✓ Release build complete (FTS enabled)$(RESET)"
 	@echo "$(CYAN)→ Optimized binaries in $(BIN_DIR)/$(RESET)"
 
+.PHONY: build-graph
+build-graph: clean $(BIN_DIR)
+	@echo "$(BLUE)Building $(PROJECT_NAME) with graph feature in $(MODE) mode...$(RESET)"
+	@echo "$(CYAN)• Compiling workspace with --features graph...$(RESET)"
+	@if [ "$(MODE)" = "release" ]; then \
+		cargo build --release --features graph; \
+	else \
+		cargo build --features graph; \
+	fi
+	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (with graph)"; \
+		else \
+			echo "  $(YELLOW)⚠$(RESET) $$bin not found, skipping"; \
+		fi; \
+	done
+	@echo "$(GREEN)✓ Build complete (graph enabled)$(RESET)"
+	@echo "$(CYAN)→ Binaries available in $(BIN_DIR)/$(RESET)"
+
+.PHONY: build-release-graph
+build-release-graph: MODE = release
+build-release-graph: TARGET = ./target/$(MODE)
+build-release-graph: clean $(BIN_DIR)
+	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with graph...$(RESET)"
+	@echo "$(CYAN)• Compiling optimized workspace with --features graph...$(RESET)"
+	@cargo build --release --features graph
+	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (with graph, size: $$(du -h $(BIN_DIR)/$$bin | cut -f1))"; \
+		else \
+			echo "  $(YELLOW)⚠$(RESET) $$bin not found, skipping"; \
+		fi; \
+	done
+	@echo "$(GREEN)✓ Release build complete (graph enabled)$(RESET)"
+	@echo "$(CYAN)→ Optimized binaries in $(BIN_DIR)/$(RESET)"
+
+.PHONY: build-fts-graph
+build-fts-graph: clean $(BIN_DIR)
+	@echo "$(BLUE)Building $(PROJECT_NAME) with FTS + graph features in $(MODE) mode...$(RESET)"
+	@echo "$(CYAN)• Compiling workspace with --features fts,graph...$(RESET)"
+	@if [ "$(MODE)" = "release" ]; then \
+		cargo build --release --features fts,graph; \
+	else \
+		cargo build --features fts,graph; \
+	fi
+	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (with FTS + graph)"; \
+		else \
+			echo "  $(YELLOW)⚠$(RESET) $$bin not found, skipping"; \
+		fi; \
+	done
+	@echo "$(GREEN)✓ Build complete (FTS + graph enabled)$(RESET)"
+	@echo "$(CYAN)→ Binaries available in $(BIN_DIR)/$(RESET)"
+
+.PHONY: build-release-fts-graph
+build-release-fts-graph: MODE = release
+build-release-fts-graph: TARGET = ./target/$(MODE)
+build-release-fts-graph: clean $(BIN_DIR)
+	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with FTS + graph...$(RESET)"
+	@echo "$(CYAN)• Compiling optimized workspace with --features fts,graph...$(RESET)"
+	@cargo build --release --features fts,graph
+	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (with FTS + graph, size: $$(du -h $(BIN_DIR)/$$bin | cut -f1))"; \
+		else \
+			echo "  $(YELLOW)⚠$(RESET) $$bin not found, skipping"; \
+		fi; \
+	done
+	@echo "$(GREEN)✓ Release build complete (FTS + graph enabled)$(RESET)"
+	@echo "$(CYAN)→ Optimized binaries in $(BIN_DIR)/$(RESET)"
+
 docs: DOCS_PATH = target/doc/$(PROJECT_NAME)
 docs:
 	@echo "$(BLUE)Building $(PROJECT_NAME) docs...$(RESET)"
@@ -290,24 +383,48 @@ test-fts:
 	@cargo test --features fts --workspace
 	@echo "$(GREEN)✓ All tests passed (FTS enabled)$(RESET)"
 
+.PHONY: test-graph
+test-graph:
+	@echo "$(BLUE)Running tests with graph feature...$(RESET)"
+	@echo "$(CYAN)• Running all workspace tests with --features graph...$(RESET)"
+	@cargo test --features graph --workspace
+	@echo "$(GREEN)✓ All tests passed (graph enabled)$(RESET)"
+
+.PHONY: test-fts-graph
+test-fts-graph:
+	@echo "$(BLUE)Running tests with FTS + graph features...$(RESET)"
+	@echo "$(CYAN)• Running all workspace tests with --features fts,graph...$(RESET)"
+	@cargo test --features fts,graph --workspace
+	@echo "$(GREEN)✓ All tests passed (FTS + graph enabled)$(RESET)"
+
 .PHONY: test-all
 test-all:
-	@echo "$(BLUE)Running tests in both configurations...$(RESET)"
-	@echo "$(CYAN)• Configuration 1: Without FTS$(RESET)"
+	@echo "$(BLUE)Running tests in all configurations...$(RESET)"
+	@echo "$(CYAN)• Configuration 1: Without features$(RESET)"
 	@cargo test --workspace
 	@echo "$(CYAN)• Configuration 2: With FTS$(RESET)"
 	@cargo test --features fts --workspace
-	@echo "$(GREEN)✓ All tests passed in both configurations$(RESET)"
+	@echo "$(CYAN)• Configuration 3: With graph$(RESET)"
+	@cargo test --features graph --workspace
+	@echo "$(CYAN)• Configuration 4: With FTS + graph$(RESET)"
+	@cargo test --features fts,graph --workspace
+	@echo "$(GREEN)✓ All tests passed in all configurations$(RESET)"
 
 .PHONY: lint
 lint:
-	@echo "$(BLUE)Running linter checks (both configurations)...$(RESET)"
-	@echo "$(CYAN)• Running clippy without FTS...$(RESET)"
+	@echo "$(BLUE)Running linter checks (all configurations)...$(RESET)"
+	@echo "$(CYAN)• Running clippy without features...$(RESET)"
 	@cargo clippy --workspace -- -D warnings
-	@echo "$(GREEN)✓ Clippy passed (without FTS)$(RESET)"
+	@echo "$(GREEN)✓ Clippy passed (without features)$(RESET)"
 	@echo "$(CYAN)• Running clippy with FTS...$(RESET)"
 	@cargo clippy --features fts --workspace -- -D warnings
 	@echo "$(GREEN)✓ Clippy passed (with FTS)$(RESET)"
+	@echo "$(CYAN)• Running clippy with graph...$(RESET)"
+	@cargo clippy --features graph --workspace -- -D warnings
+	@echo "$(GREEN)✓ Clippy passed (with graph)$(RESET)"
+	@echo "$(CYAN)• Running clippy with FTS + graph...$(RESET)"
+	@cargo clippy --features fts,graph --workspace -- -D warnings
+	@echo "$(GREEN)✓ Clippy passed (with FTS + graph)$(RESET)"
 	@echo "$(CYAN)• Checking code formatting...$(RESET)"
 	@cargo fmt --all -- --check
 	@echo "$(GREEN)✓ Format check passed$(RESET)"
@@ -321,17 +438,17 @@ format:
 
 .PHONY: coverage
 coverage:
-	@echo "$(BLUE)Generating test coverage report (with FTS)...$(RESET)"
+	@echo "$(BLUE)Generating test coverage report (with all features)...$(RESET)"
 	@echo "$(CYAN)• Running tests with coverage (server crate only)...$(RESET)"
-	@cd crates/server && cargo llvm-cov --features fts
+	@cd crates/server && cargo llvm-cov --features fts,graph
 	@echo "$(GREEN)✓ Coverage report generated$(RESET)"
 	@echo "$(YELLOW)→ For detailed HTML report, run: make coverage-html$(RESET)"
 
 .PHONY: coverage-html
 coverage-html:
-	@echo "$(BLUE)Generating HTML coverage report (with FTS)...$(RESET)"
+	@echo "$(BLUE)Generating HTML coverage report (with all features)...$(RESET)"
 	@echo "$(CYAN)• Running tests with coverage (server crate only)...$(RESET)"
-	@cd crates/server && cargo llvm-cov --html --features fts
+	@cd crates/server && cargo llvm-cov --html --features fts,graph
 	@echo "$(GREEN)✓ HTML coverage report generated$(RESET)"
 	@echo "$(CYAN)→ Report: crates/server/target/llvm-cov/html/index.html$(RESET)"
 
@@ -345,9 +462,35 @@ deps: ensure-binstall
 	@cargo upgrade
 	@echo "$(GREEN)✓ Cargo deps upgraded$(RESET)"
 
+.PHONY: check-graph
+check-graph:
+	@echo "$(BLUE)Running checks for graph configuration...$(RESET)"
+	@echo "$(CYAN)• Building with graph...$(RESET)"
+	@cargo build --features graph
+	@echo "$(CYAN)• Running clippy with graph...$(RESET)"
+	@cargo clippy --features graph --workspace -- -D warnings
+	@echo "$(CYAN)• Running tests with graph...$(RESET)"
+	@cargo test --features graph --workspace
+	@echo ""
+	@echo "$(GREEN)✓ All graph checks passed$(RESET)"
+	@echo ""
+
+.PHONY: check-fts-graph
+check-fts-graph:
+	@echo "$(BLUE)Running checks for FTS + graph configuration...$(RESET)"
+	@echo "$(CYAN)• Building with FTS + graph...$(RESET)"
+	@cargo build --features fts,graph
+	@echo "$(CYAN)• Running clippy with FTS + graph...$(RESET)"
+	@cargo clippy --features fts,graph --workspace -- -D warnings
+	@echo "$(CYAN)• Running tests with FTS + graph...$(RESET)"
+	@cargo test --features fts,graph --workspace
+	@echo ""
+	@echo "$(GREEN)✓ All FTS + graph checks passed$(RESET)"
+	@echo ""
+
 .PHONY: check-all
 check-all:
-	@echo "$(BLUE)Running comprehensive validation (both configurations)...$(RESET)"
+	@echo "$(BLUE)Running comprehensive validation (all configurations)...$(RESET)"
 	@echo ""
 	@echo "$(CYAN)═══ Configuration 1: Simple Search ═══$(RESET)"
 	@$(MAKE) common-checks test
@@ -355,7 +498,13 @@ check-all:
 	@echo "$(CYAN)═══ Configuration 2: With FTS ═══$(RESET)"
 	@$(MAKE) check-fts
 	@echo ""
-	@echo "$(GREEN)✓ Full validation complete (both configurations)$(RESET)"
+	@echo "$(CYAN)═══ Configuration 3: With Graph ═══$(RESET)"
+	@$(MAKE) check-graph
+	@echo ""
+	@echo "$(CYAN)═══ Configuration 4: With FTS + Graph ═══$(RESET)"
+	@$(MAKE) check-fts-graph
+	@echo ""
+	@echo "$(GREEN)✓ Full validation complete (all configurations)$(RESET)"
 	@echo ""
 
 # Utility targets
@@ -376,12 +525,12 @@ push:
 	@git push github main && git push github --tags
 	@echo "$(GREEN)✓ Pushed$(RESET)"
 
-# Build both configurations for comparison
-.PHONY: build-both
-build-both: MODE = release
-build-both: TARGET = ./target/$(MODE)
-build-both: clean $(BIN_DIR)
-	@echo "$(BLUE)Building both configurations in release mode...$(RESET)"
+# Build all configurations for comparison
+.PHONY: build-all
+build-all: MODE = release
+build-all: TARGET = ./target/$(MODE)
+build-all: clean $(BIN_DIR)
+	@echo "$(BLUE)Building all configurations in release mode...$(RESET)"
 	@echo ""
 	@echo "$(CYAN)═══ Configuration 1: Simple Search ═══$(RESET)"
 	@cargo build --release
@@ -403,12 +552,23 @@ build-both: clean $(BIN_DIR)
 		fi; \
 	done
 	@echo ""
-	@echo "$(GREEN)✓ Both configurations built$(RESET)"
+	@echo "$(CYAN)═══ Configuration 3: With FTS + Graph ═══$(RESET)"
+	@cargo build --release --features fts,graph
+	@mkdir -p $(BIN_DIR)/all
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/all/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (FTS + graph, size: $$(du -h $(BIN_DIR)/all/$$bin | cut -f1))"; \
+		fi; \
+	done
+	@echo ""
+	@echo "$(GREEN)✓ All configurations built$(RESET)"
 	@echo "$(CYAN)→ Simple binaries in $(BIN_DIR)/simple/$(RESET)"
 	@echo "$(CYAN)→ FTS binaries in $(BIN_DIR)/fts/$(RESET)"
+	@echo "$(CYAN)→ FTS + graph binaries in $(BIN_DIR)/all/$(RESET)"
 	@echo "$(YELLOW)→ Run 'make size-compare' to see size comparison$(RESET)"
 
-# Compare binary sizes between simple and FTS configurations
+# Compare binary sizes across all configurations
 .PHONY: size-compare
 size-compare:
 	@echo ""
@@ -416,22 +576,26 @@ size-compare:
 	@echo "$(CYAN)║$(RESET) $(BLUE)Binary Size Comparison$(RESET)                                   $(CYAN)║$(RESET)"
 	@echo "$(CYAN)╚══════════════════════════════════════════════════════════╝$(RESET)"
 	@echo ""
-	@if [ ! -d "$(BIN_DIR)/simple" ] || [ ! -d "$(BIN_DIR)/fts" ]; then \
-		echo "$(RED)✗ Build both configurations first:$(RESET) make build-both"; \
+	@if [ ! -d "$(BIN_DIR)/simple" ] || [ ! -d "$(BIN_DIR)/fts" ] || [ ! -d "$(BIN_DIR)/all" ]; then \
+		echo "$(RED)✗ Build all configurations first:$(RESET) make build-all"; \
 		exit 1; \
 	fi
 	@for bin in $(BINARIES); do \
-		if [ -f "$(BIN_DIR)/simple/$$bin" ] && [ -f "$(BIN_DIR)/fts/$$bin" ]; then \
+		if [ -f "$(BIN_DIR)/simple/$$bin" ] && [ -f "$(BIN_DIR)/fts/$$bin" ] && [ -f "$(BIN_DIR)/all/$$bin" ]; then \
 			SIMPLE_SIZE=$$(stat -f%z "$(BIN_DIR)/simple/$$bin" 2>/dev/null || stat -c%s "$(BIN_DIR)/simple/$$bin" 2>/dev/null); \
 			FTS_SIZE=$$(stat -f%z "$(BIN_DIR)/fts/$$bin" 2>/dev/null || stat -c%s "$(BIN_DIR)/fts/$$bin" 2>/dev/null); \
+			ALL_SIZE=$$(stat -f%z "$(BIN_DIR)/all/$$bin" 2>/dev/null || stat -c%s "$(BIN_DIR)/all/$$bin" 2>/dev/null); \
 			SIMPLE_SIZE_MB=$$(echo "scale=1; $$SIMPLE_SIZE / 1024 / 1024" | bc); \
 			FTS_SIZE_MB=$$(echo "scale=1; $$FTS_SIZE / 1024 / 1024" | bc); \
-			DIFF=$$(echo "scale=1; $$FTS_SIZE_MB - $$SIMPLE_SIZE_MB" | bc); \
-			PCT=$$(echo "scale=0; ($$FTS_SIZE - $$SIMPLE_SIZE) * 100 / $$SIMPLE_SIZE" | bc); \
+			ALL_SIZE_MB=$$(echo "scale=1; $$ALL_SIZE / 1024 / 1024" | bc); \
+			FTS_DIFF=$$(echo "scale=1; $$FTS_SIZE_MB - $$SIMPLE_SIZE_MB" | bc); \
+			ALL_DIFF=$$(echo "scale=1; $$ALL_SIZE_MB - $$SIMPLE_SIZE_MB" | bc); \
+			FTS_PCT=$$(echo "scale=0; ($$FTS_SIZE - $$SIMPLE_SIZE) * 100 / $$SIMPLE_SIZE" | bc); \
+			ALL_PCT=$$(echo "scale=0; ($$ALL_SIZE - $$SIMPLE_SIZE) * 100 / $$SIMPLE_SIZE" | bc); \
 			echo "$(GREEN)$$bin:$(RESET)"; \
-			echo "  Simple:  $${SIMPLE_SIZE_MB}M"; \
-			echo "  FTS:     $${FTS_SIZE_MB}M"; \
-			echo "  Diff:    $(YELLOW)+$${DIFF}M (+$${PCT}%)$(RESET)"; \
+			echo "  Simple:      $${SIMPLE_SIZE_MB}M"; \
+			echo "  FTS:         $${FTS_SIZE_MB}M  $(YELLOW)(+$${FTS_DIFF}M, +$${FTS_PCT}%)$(RESET)"; \
+			echo "  FTS + graph: $${ALL_SIZE_MB}M  $(YELLOW)(+$${ALL_DIFF}M, +$${ALL_PCT}%)$(RESET)"; \
 			echo ""; \
 		fi; \
 	done
@@ -457,8 +621,8 @@ index-force:
 	@$(BIN_DIR)/music-theory-mcp index --force
 	@echo "$(GREEN)✓ Index rebuild complete$(RESET)"
 
-.PHONY: status
-status:
+.PHONY: fts-status
+fts-status:
 	@echo "$(BLUE)FTS index status:$(RESET)"
 	@echo ""
 	@if [ ! -f "$(BIN_DIR)/music-theory-mcp" ]; then \
@@ -466,6 +630,51 @@ status:
 		$(MAKE) build-fts MODE=release; \
 	fi
 	@$(BIN_DIR)/music-theory-mcp status
+
+# Backward compatibility alias
+.PHONY: status
+status: fts-status
+
+# Graph CLI tool helpers (require graph feature)
+.PHONY: graph-build
+graph-build:
+	@echo "$(BLUE)Building concept graph database...$(RESET)"
+	@if [ ! -f "$(BIN_DIR)/music-theory-mcp" ]; then \
+		echo "$(YELLOW)→ Building binary with graph feature first...$(RESET)"; \
+		$(MAKE) build-fts-graph MODE=release; \
+	fi
+	@$(BIN_DIR)/music-theory-mcp graph build
+	@echo "$(GREEN)✓ Graph build complete$(RESET)"
+
+.PHONY: graph-build-verbose
+graph-build-verbose:
+	@echo "$(BLUE)Building concept graph database (verbose)...$(RESET)"
+	@if [ ! -f "$(BIN_DIR)/music-theory-mcp" ]; then \
+		echo "$(YELLOW)→ Building binary with graph feature first...$(RESET)"; \
+		$(MAKE) build-fts-graph MODE=release; \
+	fi
+	@$(BIN_DIR)/music-theory-mcp graph build --verbose
+	@echo "$(GREEN)✓ Graph build complete$(RESET)"
+
+.PHONY: graph-validate
+graph-validate:
+	@echo "$(BLUE)Validating concept graph...$(RESET)"
+	@echo ""
+	@if [ ! -f "$(BIN_DIR)/music-theory-mcp" ]; then \
+		echo "$(YELLOW)→ Building binary with graph feature first...$(RESET)"; \
+		$(MAKE) build-fts-graph MODE=release; \
+	fi
+	@$(BIN_DIR)/music-theory-mcp graph validate
+
+.PHONY: graph-stats
+graph-stats:
+	@echo "$(BLUE)Graph statistics:$(RESET)"
+	@echo ""
+	@if [ ! -f "$(BIN_DIR)/music-theory-mcp" ]; then \
+		echo "$(YELLOW)→ Building binary with graph feature first...$(RESET)"; \
+		$(MAKE) build-fts-graph MODE=release; \
+	fi
+	@$(BIN_DIR)/music-theory-mcp graph stats
 
 # Check target for FTS configuration
 .PHONY: check-fts

@@ -2,229 +2,216 @@
 concept: Neapolitan Sixth
 category: harmony
 source: Open Music Theory
-chapter: "Chromatic Harmony: Pre-Dominant Chords"
-part: 4
+chapter: "Neapolitan 6th (♭II6)"
+part: 5
 ---
 
 # Neapolitan Sixth
 
 ## Quick Definition
 
-A chromatic predominant chord built as a major triad on the lowered second scale degree (♭II or ♭^2), almost always appearing in first inversion with the chordal third (♭^4) in the bass—notated as N⁶ or ♭II⁶, consisting of ♭^2-^4-♭^6 in the key (D♭-F-A♭ in C major or minor), functioning as an intensified predominant that resolves to V (or I⁶₄-V), with characteristic voice leading where ♭^4 in the bass descends chromatically to the leading tone ^7, creating an expressive, exotic color particularly common in minor keys throughout the Classical and Romantic periods, named "Neapolitan" from its association with the 18th-century Neapolitan opera school.
+The Neapolitan sixth (♭II6) is a chromatic predominant chord consisting of a major triad built on the lowered second scale degree (ra/lowered-^2), typically found in first inversion, functioning as a dramatic substitute for iio6 and resolving to V with characteristic voice leading where lowered-^2 descends to ^7.
 
 ## Formal Definition
 
-**Neapolitan sixth chord** (N⁶ or ♭II⁶) is a chromatic predominant chord:
+The **Neapolitan sixth** is a chromatic predominant chord:
 
 **Structure**:
-- **Root**: ♭^2 (lowered supertonic)
-- **Third**: ^4 (subdominant) - **in bass** (first inversion)
-- **Fifth**: ♭^6 (lowered submediant)
-- **Major triad** in first inversion
+- Root: lowered-^2 (ra)
+- Third: ^4 (fa) - typically in the BASS (first inversion)
+- Fifth: lowered-^6 (le)
+- Quality: Major triad
 
-**In C major/minor**: D♭-F-A♭ (D♭ major, first inversion)
-- Bass: F (^4)
-- Upper voices: A♭ and D♭
+**In C major/minor**:
+- ♭II = D♭-F-A♭ (D♭ major triad)
+- ♭II6 = D♭-F-A♭ with F in bass (first inversion)
 
-**Function**: Predominant (leads to V or I⁶₄-V)
+**Notation**: N6, N, or ♭II6
 
-**Notation**: N⁶, N, or ♭II⁶
+**Etymology**: Named after the Italian city of Naples (Napoli), though the chord was used throughout Europe in the 18th and 19th centuries, not just in Neapolitan opera.
+
+## Relationship to iio6
+
+The Neapolitan sixth is essentially a chromatic version of the iio6 chord:
+
+| Aspect | iio6 | ♭II6 (Neapolitan) |
+|--------|------|-------------------|
+| Root | ^2 (D in C) | lowered-^2 (D♭ in C) |
+| Third | ^4 (F in C) | ^4 (F in C) |
+| Fifth | lowered-^6 (A♭ in C) | lowered-^6 (A♭ in C) |
+| Quality | Diminished | Major |
+| Bass note | ^4 | ^4 |
+| Effect | Standard predominant | Dramatic predominant |
+
+**To change iio6 to ♭II6**: Simply lower ^2 (re to ra).
 
 ## Voice Leading
 
-**Standard N⁶ → V resolution**:
-```
-N⁶:  F-A♭-D♭   V:  E-G-B
-S:   D♭→  C   →  B   (♭^2 → ^1 → ^7, or ♭^2 directly to ^7)
-A:   A♭→  G        (♭^6 → ^5, resolves down)
-T:   F →  G        (^4 → ^5, or ^4 to E via B)
-B:   F →  E        (^4 → leading tone, chromatic descent)
+**Standard voice leading for ♭II6 → V**:
 
-Bass descends chromatically: F → E (^4 → ^7)
-♭^6 resolves down by half step to ^5
-♭^2 moves to ^1 or ^7
-```
+The key principle: Altered tones continue moving in the direction of their alteration.
+- lowered-^2 was lowered, so it continues DOWNWARD
+- lowered-^2 ultimately resolves to ^7 (the closest member of the dominant triad)
 
-**N⁶ → I⁶₄ → V** (common extension):
+**Direct resolution ♭II6 → V**:
 ```
-N⁶:  F-A♭-D♭   I⁶₄: G-C-E   V:  G-B-D
-                      ↓           ↓
-Bass: F  →  E  →  G  →  G
+♭II6:  F-A♭-D♭    V:   G-B-D
+       ^4-le-ra        ^5-^7-^2
 
-Bass still descends chromatically to E before I⁶₄
-I⁶₄ interpolated before V
-Delays resolution
+Bass: F → G (or F → E → G with passing tone)
+Alto: A♭ → G (lowered-^6 → ^5, descending)
+Soprano: D♭ → B or D (lowered-^2 → ^7 or ^2)
 ```
 
-**Doubling**: Usually double the bass (^4), avoid doubling chromatically altered notes (♭^2, ♭^6)
-
-## Neapolitan in Minor vs. Major
-
-**In minor keys** (more common):
+**With cadential 6/4 (♭II6 → cad.6/4 → V)**:
 ```
-C minor:
-N⁶ = D♭-F-A♭
+♭II6:  F-A♭-D♭    cad.6/4: G-C-E    V:   G-B-D
 
-Diatonic notes in C minor: F is diatonic
-Chromatic notes: D♭ and A♭
-Two chromatic alterations
+Bass: F → G → G (stepwise to ^5, then holds)
+Alto: A♭ → G → G (lowered-^6 → ^5, common tone)
+Soprano: D♭ → C → B (lowered-^2 → ^1 → ^7)
 ```
 
-**In major keys** (less common but valid):
+The resolution lowered-^2 → ^1 → ^7 is characteristic when cad.6/4 intervenes.
+
+## Context and Function
+
+**Function**: Predominant (leads to V or cad.6/4 → V)
+
+**Key preference**: More common in minor keys than major keys
+- In minor: Two chromatic alterations needed (lowered-^2 and lowered-^6)
+- In major: All three notes are chromatic to the key
+- Effect is more dramatic in major because all notes are foreign
+
+**Typical cadential context**:
 ```
-C major:
-N⁶ = D♭-F-A♭
-
-All three notes foreign to C major
-Three chromatic alterations (D♭, F♮ replacing E, A♭)
-More dramatic effect
-```
-
-**Minor keys preferred**: Neapolitan more idiomatic in minor, though appears in major
-
-## Root Position Neapolitan
-
-**♭II** (root position, rare):
-```
-Root: D♭-F-A♭ (D♭ in bass)
-
-Less common than first inversion
-Bass leaps (D♭ → G)
-Weaker voice leading
-Sometimes used for dramatic effect
+...  →  ♭II6  →  V  →  i
+        PD       D     T
 ```
 
-**First inversion (N⁶) strongly preferred** for smooth bass motion
+## Common Progressions
 
-## Harmonic Function
+**Basic progressions**:
+- ♭II6 → V
+- ♭II6 → cad.6/4 → V
+- ♭II6 → viio7/V → V
 
-**Predominant function**:
+**With applied chord viio7/V**:
 ```
-...  N⁶  →  V  →  i
-     PD     D     T
+♭II6  →  viio7/V  →  V
 
-Substitutes for ii° or iv
-More dramatic, chromatic
-Intensified predominant
+The diminished seventh chord intensifies the push toward V
+Creates: ♭II6 → viio7/V → V → i
 ```
 
-**Common progressions**:
-- **i - N⁶ - V - i**: Basic pattern
-- **i - N⁶ - I⁶₄ - V - i**: With cadential six-four
-- **i - iv - N⁶ - V - i**: Predominant expansion
-- **N⁶ - V⁷ - i**: With dominant seventh
+**Predominant expansion**:
+```
+i  →  iv  →  ♭II6  →  V  →  i
+
+Multiple predominants before resolution
+♭II6 as intensified final predominant
+```
+
+## Less Common Uses
+
+**Root position ♭II** (rare):
+- Weakens the smooth bass voice leading
+- Creates larger leap in bass (lowered-^2 to ^5)
+- Used occasionally for special dramatic effect
+
+**Extended tonicization of ♭II**:
+- The Neapolitan can be prolonged through tonicization
+- Can even serve as a temporary key area
+
+**Inverted dominant resolution**:
+- ♭II6 can resolve to V4/2 instead of root-position V
+- Less common but valid
 
 ## Musical Context
 
-Neapolitan sixth serves specific purposes:
-- **Dramatic predominant**: More intense than ii° or iv
-- **Chromatic color**: Exotic, expressive sound
-- **Classical/Romantic idiom**: Common from Mozart through Wagner
-- **Minor key association**: Most common in minor keys
-- **Operatic origins**: Named after Neapolitan opera school
-- **Voice leading efficiency**: ♭^4 → ^7 chromatic descent in bass
-- **Expressive weight**: Marks important cadences
-- **Flat key tendency**: Moves toward flat side of circle
+The Neapolitan sixth serves to:
+- Provide a more dramatic predominant than diatonic options
+- Create chromatic, expressive color at cadences
+- Intensify approaches to important cadential points
+- Add exotic or passionate quality to the harmony
 
-Essential chromatic predominant in common-practice harmony.
+**Historical usage**:
+- Common from Baroque through Romantic periods
+- Associated with operatic expression
+- Particularly idiomatic in minor-key works
 
 ## Examples
 
 ### Basic
 
-**N⁶ in C minor**:
+**♭II6 in C minor**:
 ```
-N⁶:  F-A♭-D♭    (D♭ major, first inversion)
-V:   G-B-D      (dominant)
-i:   C-E♭-G     (tonic minor)
+♭II6: D♭/F (F-A♭-D♭)    V: G-B-D    i: C-E♭-G
 
-Bass: F → E (♭^4 → ^7, chromatic descent)
-A♭ → G (♭^6 → ^5, half step down)
-D♭ → B or C (♭^2 resolves)
+Bass: F → G → C
+      ^4  ^5  ^1
 ```
 
-**Voice leading detail**:
+**With cadential 6/4**:
 ```
-        N⁶       V       i
-S:      D♭  →   C   →   C   (♭2→1→1, or ♭2→7→1)
-A:      A♭  →   G   →   E♭  (♭6→5→♭3)
-T:      F   →   E   →   G   (4→7→5, chromatic bass)
-B:      F   →   E   →   C   (4→7→1)
+♭II6:    cad.6/4:    V:       i:
+D♭/F     C/G         G        Cm
+F-A♭-D♭  G-C-E       G-B-D    C-E♭-G
 
-Chromatic bass motion: F-E
-Smooth upper voice resolutions
+Voice leading in soprano: D♭ → C → B → C
+                         (lowered-^2 → ^1 → ^7 → ^1)
 ```
 
-**With cadential six-four**:
+**With viio7/V**:
 ```
-i  -  N⁶  -  I⁶₄  -  V  -  i
-Cm    D♭/F   Cm/G   G    Cm
+♭II6:    viio7/V:    V:       i:
+D♭/F     F#o7        G        Cm
 
-N⁶ → I⁶₄ → V → i
-Bass: F → E → G → G → C
-```
-
-**In major key** (C major):
-```
-N⁶:  F-A♭-D♭    (three chromatic notes)
-V:   G-B-D
-I:   C-E-G
-
-More dramatic in major
-All Neapolitan notes foreign to key
-```
-
-**Progression example** (C minor):
-```
-mm. 1-4: i - iv - N⁶ - V - i
-         Cm  Fm  D♭/F  G  Cm
-
-N⁶ as dramatic chromatic predominant
-Replaces or follows iv
+Diminished seventh intensifies motion to V
 ```
 
 ### From Repertoire
 
-**Beethoven, "Pathétique" Sonata, I**: Neapolitan sixth in C minor, dramatic effect in development and recapitulation, chromatic intensity.
+**Chopin, Nocturne in F minor, Op. 55, No. 1**:
+- ♭II6 as part of cadential progression
+- Harmonic rhythm: half note
+- Creates characteristic Romantic color
 
-**Mozart, Piano Concerto No. 20, K. 466 (D minor)**: Neapolitan sixths at cadential points, characteristic of Classical minor-key drama.
+**Schubert, "Erlkonig"**:
+- First tonicizes the Neapolitan (uses it as a temporary key)
+- Then uses ♭II6 in standard cadential progression
+- Progression: ♭II6 → viio7/V → V7 → i
+- Demonstrates both extended tonicization and standard use
 
-**Chopin, Preludes and Nocturnes**: Neapolitans in minor-key works, expressive chromatic color, particularly in cadential approaches.
+**Beethoven, Piano Sonata Op. 13 "Pathetique"**:
+- Neapolitan sixth in C minor context
+- Appears at dramatic cadential moments
+- Classic example of the chord in Classical style
 
-**Schubert, "Der Erlkönig"**: Neapolitan sixth in G minor, dramatic harmonic color for text expression.
-
-**Bach, Well-Tempered Clavier, minor-key preludes/fugues**: Pre-Neapolitan name usage, but flattened second degree appears as chromatic predominant.
+**Mozart, Piano Concerto No. 20, K. 466 (D minor)**:
+- Neapolitan sixths at cadential points
+- Characteristic of Classical minor-key drama
 
 ## Related Concepts
 
-- **Prerequisite**: predominant-function, chromatic-alteration, first-inversion, voice-leading
-- **Leads to**: augmented-sixth-chords, chromatic-predominant, altered-chords
-- **See also**: flat-two-chord, Phrygian-II, chromatic-pre-dominant, ii-flat
+- **Prerequisite**: predominant-function, first-inversion, chromatic-harmony, voice-leading
+- **Leads to**: augmented-sixth-chords, chromatic-predominants
+- **See also**: diminished-supertonic, cadential-six-four, applied-chords
 
 ## Common Confusions
 
-- Neapolitan sixth = major triad on ♭^2, **first inversion** (N⁶ or ♭II⁶)
-- Structure: ♭^2-^4-♭^6 (D♭-F-A♭ in C major/minor)
-- First inversion: ^4 in bass (almost always)
-- Function: **Predominant** (leads to V)
-- "Sixth" refers to first inversion (sixth above bass)
-- In C: D♭ major chord (D♭-F-A♭) with F in bass
-- Voice leading: Bass descends chromatically (F → E, ^4 → ^7)
-- ♭^6 resolves down to ^5
-- More common in minor keys (fewer chromatic alterations needed)
-- Works in major keys but more dramatic (all notes foreign)
-- Named after Neapolitan opera school (18th century)
-- Notation: N⁶, N, or ♭II⁶
-- Double the bass (^4), not chromatically altered notes
-- Root position (♭II) much less common
-- Often followed by I⁶₄-V (cadential six-four)
-- Can follow iv (predominant expansion: iv-N⁶-V)
-- Creates flat-side chromatic color
-- Chromatic predominant (not diatonic)
-- Different from ♭VI (borrowed chord, submediant function)
-- Resolves to V, not I directly (predominant function)
+- The "sixth" in "Neapolitan sixth" refers to the INVERSION (first inversion = sixth above bass), not the chord's position in the scale
+- ♭II6 is almost always in first inversion (^4 in bass)
+- The chord is a MAJOR triad (despite having two lowered notes)
+- Function is PREDOMINANT (not dominant or subdominant)
+- lowered-^2 resolves DOWN to ^7 (or through ^1 to ^7 if cad.6/4 intervenes)
+- lowered-^6 resolves DOWN to ^5
+- Double the bass (^4), not the chromatic root or fifth
+- More common in minor keys (where lowered-^6 is already diatonic)
+- Root position (♭II without inversion) exists but is rare
+- Do not confuse with ♭II as a key area (which is an extended tonicization)
 
 ## Source Reference
 
-Open Music Theory, Part IV: "Chromatic Harmony"
-Open Music Theory, Part IV: "Pre-Dominant Chromatic Chords: Neapolitan Sixth"
+Open Music Theory, Part V: "Chromaticism"
+Open Music Theory, Part V: "Neapolitan 6th (♭II6)"

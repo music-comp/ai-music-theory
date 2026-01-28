@@ -2,7 +2,7 @@
 concept: Chromatic Pivot Chord
 category: harmony
 source: Open Music Theory
-chapter: "Chromatic Modulation"
+chapter: "Modal Mixture"
 part: 5
 ---
 
@@ -10,209 +10,170 @@ part: 5
 
 ## Quick Definition
 
-A chord that functions as a pivot between two keys where at least one of its interpretations involves chromatic alteration from the diatonic scale of one or both keys—serving as a bridge between tonalities through reinterpretation of chromatic function rather than through shared diatonic membership, enabling modulations to distantly related keys where no common diatonic chord exists.
+A chromatic pivot chord is a chord that uses modal mixture in one key while also functioning diatonically in a new key, enabling smooth modulations between distantly related keys by providing a harmonic link that belongs to both tonal areas.
 
 ## Formal Definition
 
-**Chromatic pivot chord** is a modulating pivot that involves chromatic alteration:
+**Chromatic pivot chord** (or "borrowed pivot chord") extends the common-chord modulation technique to distantly related keys:
 
-**Definition**: A chord functioning in both old and new keys where:
-- At least one interpretation is chromatic (non-diatonic)
-- Enables modulation to keys lacking common diatonic chords
-- May be chromatic in one key, diatonic in the other
-- May be chromatic in both keys
+**Mechanism**:
+1. A chord in the first key uses modal mixture (borrowed from parallel mode)
+2. That same chord is diatonic in the second key
+3. The chord functions as a pivot between the two keys
 
-**Types of chromatic pivots**:
-1. **Chromatic → Diatonic**: Chromatic in old key, diatonic in new key
-2. **Diatonic → Chromatic**: Diatonic in old key, chromatic in new key
-3. **Chromatic → Chromatic**: Chromatic in both keys
+**Key principle**: Modal mixture creates chromatic alterations that can reinterpreted as diatonic notes in a new, distantly related key.
 
-**Contrast with diatonic pivot**: Common chord modulation uses chords diatonic to both keys
-
-## Types of Chromatic Pivot Chords
-
-**Secondary dominant as pivot**:
+**Formula**:
 ```
-C major: V^7/V (D^7) = chromatic (contains F#)
-         ↓
-G major: V^7 (D^7) = diatonic
-
-D^7 is chromatic in C, diatonic in G
-Most common chromatic pivot type
+Key 1: borrowed chord (modal mixture)
+     = 
+Key 2: diatonic chord
 ```
 
-**Borrowed chord as pivot**:
+## How It Works
+
+**Standard common-chord modulation** (closely related keys):
+- Pivot chord is diatonic in BOTH keys
+- Limited to keys differing by one accidental
+
+**Chromatic pivot chord modulation** (distantly related keys):
+- Pivot chord uses mixture in first key
+- Same chord is diatonic in second key
+- Enables modulation to keys many accidentals apart
+
+## Example: B♭ Major to D♭ Major
+
+This example from Open Music Theory demonstrates the technique:
+
+**Keys involved**:
+- B♭ major and D♭ major (two flats apart, distantly related)
+
+**The pivot**:
 ```
-C major: iv (Fm, borrowed from c minor) = chromatic
-         ↓
-A-flat major: vi (Fm) = diatonic
-
-Borrowed chord becomes diatonic in new key
-```
-
-**Augmented sixth as pivot**:
-```
-C major: Ger+6 (A-flat-C-E-flat-F#) = chromatic
-         ↓
-D-flat major: V^7 (A-flat-C-E-flat-G-flat) = diatonic (enharmonic)
-
-Enharmonic respelling enables pivot
-Ger+6 = V^7 (F# = G-flat)
-```
-
-**Neapolitan as pivot**:
-```
-A minor: N^6 (B-flat/D-F) = chromatic
-         ↓
-D minor: VI (B-flat major) = diatonic
-
-Neapolitan becomes diatonic VI
-```
-
-## Voice Leading Characteristics
-
-**Smooth chromatic motion**:
-```
-C major: I    V^7/V  
-         C    D^7     
-              ↓
-         Chromatic pivot (F# is chromatic in C)
-              ↓
-G major:     V^7    I
-              D^7    G
-
-F# appears as chromatic alteration
-Resolves naturally in new key
+In B♭ major: iv (borrowed from B♭ minor)
+           = E♭-G♭-B♭ (E♭ minor)
+           
+In D♭ major: ii (diatonic)
+           = E♭-G♭-B♭ (E♭ minor)
 ```
 
-**Chromatic approach to pivot**:
-```
-Common tones where possible
-Chromatic voice leading (half steps)
-Avoid augmented melodic intervals
-```
+**The chromatic note**:
+- B♭ major uses la (^6) = G natural
+- Borrowed iv uses le (lowered-^6) = G♭
+- D♭ major has G♭ as its diatonic ^4
 
-## Analytical Notation
-
-**Dual analysis format**:
+**Analysis**:
 ```
-C:  I    IV   V^7/V |
-              ─────
-              V^7/V = V^7
-              ─────
-G:                  | V^7   I
+B♭ major:      I    ...   iv (mixture)
+               B♭         E♭m
 
-Bracket or alignment shows pivot
-Both analyses provided
+               pivot point
+
+D♭ major:                 ii    V    I
+                          E♭m   A♭   D♭
 ```
 
-**Indicating chromatic function**:
-```
-C: V^7/V   (secondary dominant notation)
-   = 
-G: V^7     (primary dominant notation)
+## Voice Leading
 
-Slash notation shows chromatic function
+The chromatic pivot works because:
+1. The borrowed chord is well-prepared in the first key
+2. All voices move smoothly through the pivot
+3. The new key is confirmed by subsequent progression
+
+**Smooth transitions**:
+- Chromatic alterations from mixture become diatonic in new key
+- No abrupt or awkward leaps required
+- Sounds like natural harmonic progression
+
+## Common Chromatic Pivot Relationships
+
+**Major key borrowing iv → minor key using ii**:
+```
+Key 1 (major): iv (borrowed)
+Key 2 (related minor region): ii (diatonic)
+```
+
+**Major key borrowing ♭VI → new major key**:
+```
+Key 1 (major): ♭VI (borrowed)
+Key 2 (major a M3 below): IV (diatonic)
+```
+
+**Major key borrowing ♭VII → new major key**:
+```
+Key 1 (major): ♭VII (borrowed)
+Key 2 (major a m2 below): I (diatonic)
 ```
 
 ## Musical Context
 
-Chromatic pivot chords serve specific purposes:
-- **Distant modulations**: Enable modulation to remote keys
-- **Smooth transitions**: Despite chromatic content
-- **Secondary dominants**: Most common chromatic pivot
-- **Borrowed chords**: Mode mixture creates pivots
-- **Augmented sixths**: Enharmonic pivots to distant keys
-- **Neapolitan**: Pivots via reinterpretation
-- **Romantic idiom**: Expanded use compared to Classical
-- **Expressive modulation**: More dramatic than diatonic pivots
+Chromatic pivot chords enable:
+- **Modulation to distant keys**: Keys not closely related
+- **Smooth transitions**: Despite chromatic distance
+- **Extended tonal relationships**: Beyond simple diatonic pivots
+- **Romantic-era harmonic exploration**: Common technique in 19th-century music
 
-Essential technique for expanding tonal range beyond closely related keys.
+**Compositional advantage**: Makes distant modulations sound natural rather than abrupt.
 
 ## Examples
 
 ### Basic
 
-**V^7/V as chromatic pivot** (C major → G major):
+**B♭ major to D♭ major via chromatic pivot**:
 ```
-C major: I    IV   V^7/V |
-         C    F    D^7   
-                   ↓
-                   V^7/V = V^7 (chromatic pivot)
-                   ↓
-G major:               | V^7   I
-                         D^7   G
-
-D^7 is chromatic in C (contains F#)
-D^7 is diatonic V^7 in G
-Enables smooth modulation C → G
+B♭ major: I - IV - iv - ...
+          B♭  E♭   E♭m
+                    ↓
+                   pivot
+                    ↓
+D♭ major:         ii - V7 - I
+                  E♭m  A♭7  D♭
 ```
 
-**Borrowed iv as pivot** (C major → A-flat major):
-```
-C major: I    iv (borrowed) |
-         C    Fm            
-              ↓
-              iv = vi (chromatic pivot)
-              ↓
-A-flat major:              | vi   IV   V    I
-                             Fm   D-flat E-flat A-flat
+The borrowed iv in B♭ major = diatonic ii in D♭ major.
 
-Fm is chromatic in C (borrowed from c minor)
-Fm is diatonic vi in A-flat major
-Enables distant modulation C → A-flat
+**C major to E♭ major via chromatic pivot**:
+```
+C major:  I - IV - iv - ...
+          C   F    Fm
+                    ↓
+                   pivot
+                    ↓
+E♭ major:         ii - V7 - I
+                  Fm   B♭7  E♭
 ```
 
-**Neapolitan as pivot** (A minor → D minor):
-```
-A minor: i    iv   N^6    |
-         Am   Dm   B-flat/D
-                   ↓
-                   N^6 = VI (chromatic pivot)
-                   ↓
-D minor:                  | VI   V    i
-                            B-flat A    Dm
-
-B-flat is N^6 (chromatic) in A minor
-B-flat is diatonic VI in D minor
-```
+The borrowed iv (Fm) in C major = diatonic ii in E♭ major.
 
 ### From Repertoire
 
-**Beethoven, Piano Sonatas**: Secondary dominant pivots frequent in development sections, V^7/V reinterpreted as V^7 for modulations to dominant.
+**Catalani, "Ebben? Ne andro lontana" from La Wally**:
+- Extended modal mixture facilitates modulation
+- E major shifts to E minor using parallel mode
+- Demonstrates large-scale modal mixture in practice
 
-**Schubert, Lieder and Piano Works**: Borrowed chord pivots, mode mixture chords reinterpreted in new keys for expressive distant modulations.
-
-**Chopin, Ballades and Scherzos**: Neapolitan pivots, N^6 reinterpreted as VI for dramatic key shifts.
-
-**Brahms, Symphonies**: Complex chromatic pivots using borrowed chords and secondary functions.
+**Romantic-era symphonies and operas**:
+- Brahms, Schubert, Wagner use chromatic pivots extensively
+- Enable their characteristic distant modulations
+- Create sense of harmonic adventure
 
 ## Related Concepts
 
-- **Prerequisite**: chromatic-modulation, secondary-dominant, borrowed-chord, augmented-sixth-chords, neapolitan-sixth
-- **Leads to**: enharmonic-modulation, distant-key-modulation, chromatic-voice-leading
-- **See also**: pivot-chord, common-chord-modulation, mode-mixture
+- **Prerequisite**: modal-mixture, borrowed-chord, common-chord-modulation, pivot-chord
+- **Leads to**: distant-modulation, chromatic-modulation, enharmonic-modulation
+- **See also**: modulation, closely-related-keys, chromatic-harmony
 
 ## Common Confusions
 
-- Chromatic pivot = pivot involving chromatic (non-diatonic) chord
-- Different from diatonic pivot (common chord modulation)
-- May be chromatic in one or both keys
-- Most common: Secondary dominant as pivot (V^7/V = V^7)
-- Borrowed chords can serve as chromatic pivots
-- Augmented sixths enable enharmonic chromatic pivots
-- Neapolitan can pivot to keys where it is diatonic
-- Notation shows dual analysis (function in both keys)
-- Chromatic content in one key, may be diatonic in other
-- Enables modulation to distantly related keys
-- Voice leading remains smooth despite chromaticism
-- More flexible than common chord modulation
-- Romantic period expanded chromatic pivot usage
-- Not same as enharmonic modulation (which involves respelling)
-- Secondary dominants most frequent chromatic pivot type
-- Chromatic pivot still provides smooth connection (unlike direct modulation)
+- Chromatic pivot chords use MIXTURE in the first key (not just any chromatic chord)
+- The pivot must be analyzable in BOTH keys (borrowed in one, diatonic in other)
+- This is different from direct/phrase modulation (which has no pivot)
+- This is different from enharmonic modulation (which uses enharmonic respelling)
+- The borrowed chord must sound natural in context before the pivot
+- Not all borrowed chords can serve as chromatic pivots to all keys
+- The technique enables modulation between distantly related keys that share few diatonic chords
 
 ## Source Reference
 
 Open Music Theory, Part V: "Chromaticism"
-Open Music Theory, Part V: "Chromatic Modulation"
+Open Music Theory, Part V: "Modal Mixture"
