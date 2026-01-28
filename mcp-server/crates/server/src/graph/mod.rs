@@ -10,6 +10,7 @@
 //! - **builder**: Builds graph from concept cards
 //! - **persistence**: Saves/loads graph with rkyv caching
 //! - **loader**: Async loading for AppState
+//! - **algorithms**: Graph traversal algorithms (BFS, DFS, etc.)
 //! - **validation**: Graph integrity checks
 //! - **stats**: Statistics computation
 //! - **cli**: CLI command handlers
@@ -19,6 +20,7 @@
 //! This module is feature-gated with `#[cfg(feature = "graph")]` and only compiles
 //! when the `graph` feature is enabled.
 
+pub mod algorithms;
 pub mod builder;
 pub mod cli;
 pub mod loader;
@@ -29,6 +31,10 @@ pub mod types;
 pub mod validation;
 
 // Re-export commonly used types
+pub use algorithms::{
+    bridge_concepts, degree_centrality, dependents, neighborhood, prerequisites_sorted,
+    shortest_path,
+};
 pub use builder::GraphBuilder;
 pub use loader::{load_concept_graph, GraphStats, LoadedGraph};
 pub use parser::{parse_related_concepts, RelatedConcepts};
