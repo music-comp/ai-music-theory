@@ -6,4 +6,5 @@
 /mcp-server/.claude/
 /mcp-server/.tantivy-index
 /.tantivy-index/
+/.tantivy-index-test/
 /assets/images/logo/drafts/
