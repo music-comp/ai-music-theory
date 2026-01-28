@@ -456,4 +456,184 @@ mod tests {
             assert!(!filename_str.ends_with(".tmp"));
         }
     }
+
+    #[tokio::test]
+    async fn test_save_graph_creates_files() {
+        let temp_dir = TempDir::new().unwrap();
+        let graph_data = create_test_graph();
+
+        save_graph(&graph_data, temp_dir.path()).await.unwrap();
+
+        // Verify JSON file exists
+        let json_path = temp_dir.path().join("graphs/concept_graph.json");
+        assert!(json_path.exists());
+
+        // Verify rkyv cache exists
+        let cache_path = temp_dir.path().join(".cache/concept_graph.rkyv");
+        assert!(cache_path.exists());
+
+        // Verify hash file exists
+        let hash_path = temp_dir.path().join(".cache/graph_hash");
+        assert!(hash_path.exists());
+    }
+
+    #[tokio::test]
+    async fn test_save_graph_json_content() {
+        let temp_dir = TempDir::new().unwrap();
+        let graph_data = create_test_graph();
+
+        save_graph(&graph_data, temp_dir.path()).await.unwrap();
+
+        // Read and verify JSON content
+        let json_path = temp_dir.path().join("graphs/concept_graph.json");
+        let json_content = tokio::fs::read_to_string(&json_path).await.unwrap();
+        let loaded: GraphData = serde_json::from_str(&json_content).unwrap();
+
+        assert_eq!(loaded.version, "1.0");
+        assert_eq!(loaded.nodes.len(), 2);
+        assert_eq!(loaded.edges.len(), 1);
+    }
+
+    #[tokio::test]
+    async fn test_load_graph_fresh() {
+        let temp_dir = TempDir::new().unwrap();
+        let graph_data = create_test_graph();
+
+        save_graph(&graph_data, temp_dir.path()).await.unwrap();
+
+        // Load the graph
+        let graph = load_graph(temp_dir.path()).await.unwrap();
+
+        // Verify graph structure
+        assert_eq!(graph.node_count(), 2);
+        assert_eq!(graph.edge_count(), 1);
+    }
+
+    #[tokio::test]
+    async fn test_load_graph_from_cache() {
+        let temp_dir = TempDir::new().unwrap();
+        let graph_data = create_test_graph();
+
+        save_graph(&graph_data, temp_dir.path()).await.unwrap();
+
+        // Load once (builds cache)
+        let _graph1 = load_graph(temp_dir.path()).await.unwrap();
+
+        // Load again (should use cache)
+        let graph2 = load_graph(temp_dir.path()).await.unwrap();
+
+        assert_eq!(graph2.node_count(), 2);
+        assert_eq!(graph2.edge_count(), 1);
+    }
+
+    #[tokio::test]
+    async fn test_load_graph_cache_invalidation() {
+        let temp_dir = TempDir::new().unwrap();
+        let graph_data = create_test_graph();
+
+        save_graph(&graph_data, temp_dir.path()).await.unwrap();
+
+        // Load to build cache
+        let _graph1 = load_graph(temp_dir.path()).await.unwrap();
+
+        // Modify JSON (invalidate cache)
+        let json_path = temp_dir.path().join("graphs/concept_graph.json");
+        let mut modified_data = graph_data.clone();
+        modified_data.version = "2.0".to_string();
+        let json_str = serde_json::to_string_pretty(&modified_data).unwrap();
+        tokio::fs::write(&json_path, json_str).await.unwrap();
+
+        // Load again - should rebuild from JSON
+        let graph2 = load_graph(temp_dir.path()).await.unwrap();
+
+        // Should still work with modified data
+        assert_eq!(graph2.node_count(), 2);
+    }
+
+    #[tokio::test]
+    async fn test_load_graph_missing_file() {
+        let temp_dir = TempDir::new().unwrap();
+
+        // Try to load non-existent graph
+        let result = load_graph(temp_dir.path()).await;
+        assert!(result.is_err());
+    }
+
+    #[tokio::test]
+    async fn test_to_petgraph_conversion() {
+        let graph_data = create_test_graph();
+
+        let graph = to_petgraph(&graph_data);
+
+        // Verify conversion
+        assert_eq!(graph.node_count(), 2);
+        assert_eq!(graph.edge_count(), 1);
+
+        // Verify we can iterate nodes
+        for node_idx in graph.node_indices() {
+            let node = &graph[node_idx];
+            match node {
+                Node::Concept(c) => assert_eq!(c.id, "test-concept"),
+                Node::Source(s) => assert_eq!(s.id, "test-source"),
+            }
+        }
+    }
+
+    #[tokio::test]
+    async fn test_to_petgraph_preserves_edges() {
+        let graph_data = create_test_graph();
+        let graph = to_petgraph(&graph_data);
+
+        // Find edge and verify properties
+        use petgraph::visit::EdgeRef;
+        for edge_ref in graph.edge_references() {
+            let edge = edge_ref.weight();
+            assert_eq!(edge.from, "test-source");
+            assert_eq!(edge.to, "test-concept");
+            assert_eq!(edge.relationship, Relationship::Introduces);
+        }
+    }
+
+    #[tokio::test]
+    async fn test_save_and_load_round_trip() {
+        let temp_dir = TempDir::new().unwrap();
+        let original = create_test_graph();
+
+        // Save
+        save_graph(&original, temp_dir.path()).await.unwrap();
+
+        // Load as graph
+        let graph = load_graph(temp_dir.path()).await.unwrap();
+
+        // Verify structure matches
+        assert_eq!(graph.node_count(), original.nodes.len());
+        assert_eq!(graph.edge_count(), original.edges.len());
+
+        // Verify node IDs are preserved
+        for node_idx in graph.node_indices() {
+            let node = &graph[node_idx];
+            let id = match node {
+                Node::Concept(c) => &c.id,
+                Node::Source(s) => &s.id,
+            };
+            // ID should match one of the original nodes
+            assert!(original.nodes.iter().any(|n| match n {
+                Node::Concept(c) => &c.id == id,
+                Node::Source(s) => &s.id == id,
+            }));
+        }
+    }
+
+    #[tokio::test]
+    async fn test_save_graph_creates_directories() {
+        let temp_dir = TempDir::new().unwrap();
+        let graph_data = create_test_graph();
+
+        // Don't create directories manually
+        save_graph(&graph_data, temp_dir.path()).await.unwrap();
+
+        // Verify directories were created
+        assert!(temp_dir.path().join("graphs").is_dir());
+        assert!(temp_dir.path().join(".cache").is_dir());
+    }
 }
