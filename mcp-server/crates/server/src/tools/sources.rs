@@ -227,9 +227,11 @@ pub async fn list_source_chapters(
 async fn list_chapters_from_index(state: &AppState, source_id: &str) -> Result<Vec<ChapterInfo>> {
     use crate::tools::search::SearchConceptsParams;
 
-    // Search for all source chapters using a common term
+    // Search for all source chapters by searching for the source name itself
+    // Every chapter has the source in its frontmatter, so this will match all
+    let query = humanize_source_id(source_id);
     let params = SearchConceptsParams {
-        query: "chapter".to_string(),
+        query,
         limit: 1000, // Large limit to get all chapters
         query_mode: None,
         category: None,
