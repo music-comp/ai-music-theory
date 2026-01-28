@@ -209,6 +209,13 @@ impl Indexer {
             tantivy_doc.add_text(self.schema.date, date);
         }
 
+        // Content type fields (v0.3.0)
+        tantivy_doc.add_text(self.schema.content_type, &doc.content_type);
+
+        if let Some(section) = &doc.section {
+            tantivy_doc.add_text(self.schema.section, section);
+        }
+
         Ok(tantivy_doc)
     }
 }
@@ -232,6 +239,8 @@ mod tests {
             part: Some(1),
             author: Some("Test Author".to_string()),
             date: Some("2024-01-01".to_string()),
+            content_type: "concept_card".to_string(),
+            section: None,
         }
     }
 
@@ -327,8 +336,8 @@ mod tests {
         let tantivy_doc = result.unwrap();
         let field_values = tantivy_doc.field_values();
 
-        // Should have 12 field values (all fields populated in sample)
-        assert_eq!(field_values.len(), 13); // +2 for two tags
+        // Should have 14 field values (all fields populated in sample + content_type)
+        assert_eq!(field_values.len(), 14); // +2 for two tags, +1 for content_type
     }
 
     #[test]
@@ -350,6 +359,8 @@ mod tests {
             part: None,
             author: None,
             date: None,
+            content_type: "concept_card".to_string(),
+            section: None,
         };
 
         let result = indexer.convert_to_tantivy_doc(&search_doc);
@@ -358,8 +369,8 @@ mod tests {
         let tantivy_doc = result.unwrap();
         let field_values = tantivy_doc.field_values();
 
-        // Should have 6 field values: id, path, category, title, description, content
-        assert_eq!(field_values.len(), 6);
+        // Should have 7 field values: id, path, category, title, description, content, content_type
+        assert_eq!(field_values.len(), 7);
     }
 
     #[test]
@@ -381,6 +392,8 @@ mod tests {
             part: None,
             author: None,
             date: None,
+            content_type: "concept_card".to_string(),
+            section: None,
         };
 
         let result = indexer.convert_to_tantivy_doc(&search_doc);
@@ -389,8 +402,8 @@ mod tests {
         let tantivy_doc = result.unwrap();
         let field_values = tantivy_doc.field_values();
 
-        // Should have 6 base fields + 3 tags = 9
-        assert_eq!(field_values.len(), 9);
+        // Should have 7 base fields (including content_type) + 3 tags = 10
+        assert_eq!(field_values.len(), 10);
     }
 
     #[test]
@@ -413,6 +426,8 @@ mod tests {
             part: None,
             author: None,
             date: None,
+            content_type: "concept_card".to_string(),
+            section: None,
         };
 
         let doc2 = SearchDocument {
@@ -428,6 +443,8 @@ mod tests {
             part: None,
             author: None,
             date: None,
+            content_type: "concept_card".to_string(),
+            section: None,
         };
 
         assert!(indexer.add_document(&doc1).is_ok());

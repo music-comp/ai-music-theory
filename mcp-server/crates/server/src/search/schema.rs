@@ -39,6 +39,10 @@ pub struct SearchSchema {
     pub part: Field,
     pub author: Field,
     pub date: Field,
+
+    // Content type discrimination (v0.3.0)
+    pub content_type: Field, // STRING | FAST | STORED - for filtering by document type
+    pub section: Field,      // STORED - fine-grained location (page numbers, sections)
 }
 
 impl SearchSchema {
@@ -95,6 +99,10 @@ impl SearchSchema {
         let author = schema_builder.add_text_field("author", STORED);
         let date = schema_builder.add_text_field("date", STORED);
 
+        // Content type fields (v0.3.0)
+        let content_type = schema_builder.add_text_field("content_type", STRING | FAST | STORED);
+        let section = schema_builder.add_text_field("section", STORED);
+
         let schema = schema_builder.build();
 
         SearchSchema {
@@ -111,6 +119,8 @@ impl SearchSchema {
             part,
             author,
             date,
+            content_type,
+            section,
         }
     }
 
@@ -144,7 +154,7 @@ mod tests {
     #[test]
     fn test_schema_build_succeeds() {
         let schema = SearchSchema::build();
-        assert_eq!(schema.schema.num_fields(), 12);
+        assert_eq!(schema.schema.num_fields(), 14); // v0.3.0: added content_type and section
     }
 
     #[test]
@@ -276,7 +286,23 @@ mod tests {
     #[test]
     fn test_schema_field_count() {
         let schema = SearchSchema::build();
-        // 2 identity + 3 full-text + 3 facets + 4 metadata = 12 fields
-        assert_eq!(schema.schema.num_fields(), 12);
+        // 2 identity + 3 full-text + 3 facets + 4 metadata + 2 content type = 14 fields
+        assert_eq!(schema.schema.num_fields(), 14);
+    }
+
+    #[test]
+    fn test_schema_has_content_type_field() {
+        let schema = SearchSchema::build();
+        let field_entry = schema.schema.get_field_entry(schema.content_type);
+        assert_eq!(field_entry.name(), "content_type");
+        assert!(field_entry.is_stored());
+    }
+
+    #[test]
+    fn test_schema_has_section_field() {
+        let schema = SearchSchema::build();
+        let field_entry = schema.schema.get_field_entry(schema.section);
+        assert_eq!(field_entry.name(), "section");
+        assert!(field_entry.is_stored());
     }
 }

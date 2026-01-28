@@ -364,6 +364,9 @@ mod tests {
             enable_stopwords: true,
             custom_stopwords: vec![],
             stopword_allowlist: vec![],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         }
     }
 
@@ -381,6 +384,9 @@ mod tests {
             enable_stopwords: true,
             custom_stopwords: vec![],
             stopword_allowlist: vec![],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         }
     }
 
@@ -525,6 +531,9 @@ mod tests {
             enable_stopwords: true,
             custom_stopwords: vec![],
             stopword_allowlist: vec![],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         };
         let builder = QueryBuilder::new(&schema, &config);
 

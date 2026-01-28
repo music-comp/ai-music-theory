@@ -5,7 +5,7 @@
 
 use crate::error::Result;
 use crate::markdown::strip_frontmatter;
-use crate::metadata::ConceptMetadata;
+use crate::metadata::{ConceptMetadata, UniversalMetadata};
 use crate::util::files::read_file;
 use serde::{Deserialize, Serialize};
 use std::path::Path;
@@ -43,6 +43,10 @@ pub struct SearchDocument {
     pub part: Option<u32>,
     pub author: Option<String>,
     pub date: Option<String>,
+
+    // Content type discrimination (v0.3.0)
+    pub content_type: String,     // "concept_card" | "source_chapter" | "unified_concept" | "guide"
+    pub section: Option<String>,  // Fine-grained location: "pp. 23-28" or "Section 2.3"
 }
 
 impl SearchDocument {
@@ -80,6 +84,47 @@ impl SearchDocument {
             part: meta.part,
             author: meta.author,
             date: meta.date,
+            content_type: "concept_card".to_string(), // v0.3.0: backward compatible default
+            section: None,                            // v0.3.0: no section info for concept cards
+        })
+    }
+
+    /// Create a SearchDocument from UniversalMetadata (v0.3.0).
+    ///
+    /// # Arguments
+    ///
+    /// * `meta` - Extracted universal metadata
+    /// * `file_path` - Path to the content file
+    ///
+    /// # Returns
+    ///
+    /// Returns a `SearchDocument` ready for searching.
+    ///
+    /// # Errors
+    ///
+    /// Returns `Err` if the file cannot be read.
+    pub async fn from_universal_metadata(meta: UniversalMetadata, file_path: &Path) -> Result<Self> {
+        // Read full file content
+        let full_content = read_file(file_path).await?;
+
+        // Strip frontmatter from content (we already have metadata)
+        let content = strip_frontmatter(&full_content);
+
+        Ok(SearchDocument {
+            id: meta.id,
+            path: file_path.to_string_lossy().to_string(),
+            category: meta.category,
+            source: meta.source.clone(),
+            tags: meta.tags.clone(),
+            title: meta.title,
+            description: meta.description.unwrap_or_default(),
+            content: content.to_string(),
+            chapter: meta.chapter,
+            part: meta.part,
+            author: meta.author,
+            date: meta.date,
+            content_type: meta.content_type.as_str().to_string(),
+            section: meta.section,
         })
     }
 
@@ -253,6 +298,8 @@ mod tests {
             part: None,
             author: None,
             date: None,
+            content_type: "concept_card".to_string(),
+            section: None,
         }
     }
 
@@ -421,11 +468,15 @@ mod tests {
             "chapter": null,
             "part": null,
             "author": null,
-            "date": null
+            "date": null,
+            "content_type": "concept_card",
+            "section": null
         }"#;
         let doc: SearchDocument = serde_json::from_str(json).expect("Should deserialize");
         assert_eq!(doc.id, "test");
         assert_eq!(doc.title, "Test");
         assert_eq!(doc.category, "harmony");
+        assert_eq!(doc.content_type, "concept_card");
+        assert_eq!(doc.section, None);
     }
 }

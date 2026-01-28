@@ -165,6 +165,9 @@ mod tests {
                 "re".to_string(),
                 "mi".to_string(),
             ],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         }
     }
 

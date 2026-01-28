@@ -412,6 +412,8 @@ mod tests {
             part: None,
             author: None,
             date: None,
+            content_type: "concept_card".to_string(),
+            section: None,
         }
     }
 
@@ -462,6 +464,9 @@ mod tests {
             enable_stopwords: true,
             custom_stopwords: vec![],
             stopword_allowlist: vec![],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         };
 
         let result = TantivySearch::new(&index_path, config);
@@ -485,6 +490,9 @@ mod tests {
             enable_stopwords: true,
             custom_stopwords: vec![],
             stopword_allowlist: vec![],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         };
 
         let result = TantivySearch::new(&index_path, config);
@@ -509,6 +517,9 @@ mod tests {
             enable_stopwords: true,
             custom_stopwords: vec![],
             stopword_allowlist: vec![],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         };
 
         let backend = TantivySearch::new(&index_path, config).expect("Failed to create backend");
@@ -549,6 +560,9 @@ mod tests {
             enable_stopwords: true,
             custom_stopwords: vec![],
             stopword_allowlist: vec![],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         };
 
         let backend = TantivySearch::new(&index_path, config).expect("Failed to create backend");
@@ -592,6 +606,9 @@ mod tests {
             enable_stopwords: true,
             custom_stopwords: vec![],
             stopword_allowlist: vec![],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         };
 
         let backend = TantivySearch::new(&index_path, config).expect("Failed to create backend");
@@ -625,6 +642,9 @@ mod tests {
             enable_stopwords: true,
             custom_stopwords: vec![],
             stopword_allowlist: vec![],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         };
 
         let backend = TantivySearch::new(&index_path, config).expect("Failed to create backend");

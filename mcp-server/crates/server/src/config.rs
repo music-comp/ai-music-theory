@@ -60,6 +60,11 @@ impl PathsConfig {
         expand_path(&self.concept_cards)
     }
 
+    /// Get the concepts unified directory as an absolute PathBuf (v0.3.0).
+    pub fn concepts_unified_path(&self) -> Result<PathBuf> {
+        expand_path(&self.concepts_unified)
+    }
+
     /// Get the guides directory as an absolute PathBuf.
     pub fn guides_path(&self) -> Result<PathBuf> {
         expand_path(&self.guides)
@@ -166,6 +171,19 @@ pub struct SearchConfig {
     /// Domain-specific terms to preserve (not filtered as stopwords)
     #[serde(default = "default_stopword_allowlist")]
     pub stopword_allowlist: Vec<String>,
+
+    // Field-specific relevance boosting (v0.3.0)
+    /// Title field boost multiplier
+    #[serde(default = "default_field_boost_title")]
+    pub field_boost_title: f32,
+
+    /// Description field boost multiplier
+    #[serde(default = "default_field_boost_description")]
+    pub field_boost_description: f32,
+
+    /// Content field boost multiplier
+    #[serde(default = "default_field_boost_content")]
+    pub field_boost_content: f32,
 }
 
 fn default_backend() -> String {
@@ -205,6 +223,18 @@ fn default_stopword_allowlist() -> Vec<String> {
     .into_iter()
     .map(String::from)
     .collect()
+}
+
+fn default_field_boost_title() -> f32 {
+    3.0
+}
+
+fn default_field_boost_description() -> f32 {
+    2.0
+}
+
+fn default_field_boost_content() -> f32 {
+    1.0
 }
 
 impl SearchConfig {
@@ -502,6 +532,9 @@ mod tests {
             enable_stopwords: true,
             custom_stopwords: vec![],
             stopword_allowlist: vec![],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         };
 
         let result = config.index_path();
@@ -523,6 +556,9 @@ mod tests {
             enable_stopwords: true,
             custom_stopwords: vec![],
             stopword_allowlist: vec![],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         };
 
         let result = config.index_path();

@@ -6,4 +6,6 @@
 
 mod extraction;
 
-pub use extraction::{extract_concept_metadata, ConceptMetadata};
+pub use extraction::{
+    extract_concept_metadata, extract_metadata, ConceptMetadata, ContentType, UniversalMetadata,
+};

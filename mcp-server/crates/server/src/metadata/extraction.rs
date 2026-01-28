@@ -10,6 +10,269 @@ use crate::markdown::{extract_first_heading, extract_frontmatter};
 use crate::util::files::read_file;
 use std::path::Path;
 
+/// Content type classification for universal search (v0.3.0).
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ContentType {
+    /// Per-source concept extractions (concept_cards/)
+    ConceptCard,
+    /// Converted source chapters (sources_md/)
+    SourceChapter,
+    /// Synthesized cross-source concepts (concepts_unified/)
+    UnifiedConcept,
+    /// AI-optimized topic guides (guides/)
+    Guide,
+}
+
+impl ContentType {
+    /// Get the string identifier for this content type.
+    pub fn as_str(&self) -> &'static str {
+        match self {
+            ContentType::ConceptCard => "concept_card",
+            ContentType::SourceChapter => "source_chapter",
+            ContentType::UnifiedConcept => "unified_concept",
+            ContentType::Guide => "guide",
+        }
+    }
+}
+
+/// Universal metadata for all content types (v0.3.0).
+///
+/// This struct provides a unified interface for metadata extraction across
+/// all 4 content types: concept_cards, sources_md, concepts_unified, guides.
+#[derive(Debug, Clone)]
+pub struct UniversalMetadata {
+    /// Document ID (derived from filename or frontmatter)
+    pub id: String,
+    /// Document title
+    pub title: String,
+    /// Thematic category
+    pub category: String,
+    /// Content type
+    pub content_type: ContentType,
+    /// Source text name (optional)
+    pub source: Option<String>,
+    /// Chapter or section reference
+    pub chapter: Option<String>,
+    /// Fine-grained location (page numbers, section numbers)
+    pub section: Option<String>,
+    /// Part number
+    pub part: Option<u32>,
+    /// Description or preview text
+    pub description: Option<String>,
+    /// Tags for categorization
+    pub tags: Vec<String>,
+    /// Author name
+    pub author: Option<String>,
+    /// Publication or modification date
+    pub date: Option<String>,
+}
+
+/// Extract metadata from any content type (v0.3.0).
+///
+/// This is the main entry point for metadata extraction. It dispatches to
+/// type-specific extractors based on the content_type parameter.
+///
+/// # Arguments
+///
+/// * `base_path` - Base directory for the content type
+/// * `file_path` - Full path to the content file
+/// * `content_type` - Type of content being extracted
+///
+/// # Returns
+///
+/// Returns `UniversalMetadata` with all available fields populated.
+///
+/// # Errors
+///
+/// Returns `Err` if the file cannot be read or parsed.
+pub async fn extract_metadata(
+    base_path: &Path,
+    file_path: &Path,
+    content_type: ContentType,
+) -> Result<UniversalMetadata> {
+    match content_type {
+        ContentType::ConceptCard => extract_concept_card_metadata(base_path, file_path).await,
+        ContentType::SourceChapter => extract_source_chapter_metadata(base_path, file_path).await,
+        ContentType::UnifiedConcept => extract_unified_concept_metadata(base_path, file_path).await,
+        ContentType::Guide => extract_guide_metadata(base_path, file_path).await,
+    }
+}
+
+/// Extract metadata from a concept card (concept_cards/).
+async fn extract_concept_card_metadata(
+    base_path: &Path,
+    file_path: &Path,
+) -> Result<UniversalMetadata> {
+    let content = read_file(file_path).await?;
+    let (frontmatter, body) = extract_frontmatter(&content)?;
+
+    let id = file_path
+        .file_stem()
+        .and_then(|s| s.to_str())
+        .unwrap_or("unknown")
+        .to_string();
+
+    let title = frontmatter
+        .as_ref()
+        .and_then(|fm| fm.title.clone())
+        .or_else(|| frontmatter.as_ref().and_then(|fm| fm.concept.clone()))
+        .or_else(|| extract_first_heading(body).map(|(_, text)| text))
+        .unwrap_or_else(|| id.replace(['-', '_'], " "));
+
+    let category = frontmatter
+        .as_ref()
+        .and_then(|fm| fm.category.clone())
+        .unwrap_or_else(|| extract_category_from_path(base_path, file_path));
+
+    let fm = frontmatter.unwrap_or_default();
+
+    Ok(UniversalMetadata {
+        id,
+        title,
+        category,
+        content_type: ContentType::ConceptCard,
+        source: fm.source,
+        chapter: fm.chapter,
+        section: None, // Concept cards don't have section information
+        part: fm.part,
+        description: fm.description,
+        tags: fm.tags,
+        author: fm.author,
+        date: fm.date,
+    })
+}
+
+/// Extract metadata from a source chapter (sources_md/).
+async fn extract_source_chapter_metadata(
+    base_path: &Path,
+    file_path: &Path,
+) -> Result<UniversalMetadata> {
+    let content = read_file(file_path).await?;
+    let (frontmatter, body) = extract_frontmatter(&content)?;
+
+    let id = file_path
+        .file_stem()
+        .and_then(|s| s.to_str())
+        .unwrap_or("unknown")
+        .to_string();
+
+    let title = frontmatter
+        .as_ref()
+        .and_then(|fm| fm.title.clone())
+        .or_else(|| frontmatter.as_ref().and_then(|fm| fm.chapter.clone()))
+        .or_else(|| extract_first_heading(body).map(|(_, text)| text))
+        .unwrap_or_else(|| id.replace(['-', '_'], " "));
+
+    // For sources, derive category from first directory component or use frontmatter
+    let category = frontmatter
+        .as_ref()
+        .and_then(|fm| fm.category.clone())
+        .unwrap_or_else(|| extract_category_from_path(base_path, file_path));
+
+    let fm = frontmatter.unwrap_or_default();
+
+    Ok(UniversalMetadata {
+        id,
+        title,
+        category,
+        content_type: ContentType::SourceChapter,
+        source: fm.source,
+        chapter: fm.chapter.clone(),
+        section: fm.chapter, // Use chapter field for section info (e.g., "pp. 23-28")
+        part: fm.part,
+        description: fm.description,
+        tags: fm.tags,
+        author: fm.author,
+        date: fm.date,
+    })
+}
+
+/// Extract metadata from a unified concept (concepts_unified/).
+async fn extract_unified_concept_metadata(
+    base_path: &Path,
+    file_path: &Path,
+) -> Result<UniversalMetadata> {
+    let content = read_file(file_path).await?;
+    let (frontmatter, body) = extract_frontmatter(&content)?;
+
+    let id = file_path
+        .file_stem()
+        .and_then(|s| s.to_str())
+        .unwrap_or("unknown")
+        .to_string();
+
+    let title = frontmatter
+        .as_ref()
+        .and_then(|fm| fm.title.clone())
+        .or_else(|| extract_first_heading(body).map(|(_, text)| text))
+        .unwrap_or_else(|| id.replace(['-', '_'], " "));
+
+    let category = frontmatter
+        .as_ref()
+        .and_then(|fm| fm.category.clone())
+        .unwrap_or_else(|| extract_category_from_path(base_path, file_path));
+
+    let fm = frontmatter.unwrap_or_default();
+
+    // For unified concepts, source might be a comma-separated list
+    let source = fm.source;
+
+    Ok(UniversalMetadata {
+        id,
+        title,
+        category,
+        content_type: ContentType::UnifiedConcept,
+        source,
+        chapter: fm.chapter,
+        section: None, // Unified concepts are synthetic, no section
+        part: fm.part,
+        description: fm.description,
+        tags: fm.tags,
+        author: fm.author,
+        date: fm.date,
+    })
+}
+
+/// Extract metadata from a guide (guides/).
+async fn extract_guide_metadata(base_path: &Path, file_path: &Path) -> Result<UniversalMetadata> {
+    let content = read_file(file_path).await?;
+    let (frontmatter, body) = extract_frontmatter(&content)?;
+
+    let id = file_path
+        .file_stem()
+        .and_then(|s| s.to_str())
+        .unwrap_or("unknown")
+        .to_string();
+
+    let title = frontmatter
+        .as_ref()
+        .and_then(|fm| fm.title.clone())
+        .or_else(|| extract_first_heading(body).map(|(_, text)| text))
+        .unwrap_or_else(|| id.replace(['-', '_'], " "));
+
+    let category = frontmatter
+        .as_ref()
+        .and_then(|fm| fm.category.clone())
+        .unwrap_or_else(|| extract_category_from_path(base_path, file_path));
+
+    let fm = frontmatter.unwrap_or_default();
+
+    Ok(UniversalMetadata {
+        id,
+        title,
+        category,
+        content_type: ContentType::Guide,
+        source: fm.source,
+        chapter: fm.chapter.clone(),
+        section: fm.chapter, // Use chapter field for section references (e.g., "Section 2.3")
+        part: fm.part,
+        description: fm.description,
+        tags: fm.tags,
+        author: fm.author,
+        date: fm.date,
+    })
+}
+
 /// Complete metadata for a concept card.
 ///
 /// This struct captures all metadata fields from a concept card file,
@@ -40,10 +303,8 @@ pub struct ConceptMetadata {
 
 /// Extract all metadata from a concept card file.
 ///
-/// This function follows a clear precedence strategy:
-/// 1. Read frontmatter (primary source for all fields)
-/// 2. Fallback to markdown structure (heading for title)
-/// 3. Derive from filesystem (directory for category, filename for ID)
+/// This function is maintained for backward compatibility and wraps the new
+/// universal metadata extractor.
 ///
 /// # Arguments
 ///
@@ -61,47 +322,19 @@ pub async fn extract_concept_metadata(
     base_path: &Path,
     file_path: &Path,
 ) -> Result<ConceptMetadata> {
-    let content = read_file(file_path).await?;
-    let (frontmatter, body) = extract_frontmatter(&content)?;
-
-    // Extract ID from filename
-    let id = file_path
-        .file_stem()
-        .and_then(|s| s.to_str())
-        .unwrap_or("unknown")
-        .to_string();
-
-    // Title: frontmatter.title OR frontmatter.concept OR heading OR filename
-    let title = frontmatter
-        .as_ref()
-        .and_then(|fm| fm.title.clone())
-        .or_else(|| frontmatter.as_ref().and_then(|fm| fm.concept.clone()))
-        .or_else(|| extract_first_heading(body).map(|(_, text)| text))
-        .unwrap_or_else(|| id.replace(['-', '_'], " "));
-
-    // Category: frontmatter.category OR directory structure
-    let category = frontmatter
-        .as_ref()
-        .and_then(|fm| fm.category.clone())
-        .unwrap_or_else(|| extract_category_from_path(base_path, file_path));
-
-    // Source: frontmatter.source
-    let source = frontmatter.as_ref().and_then(|fm| fm.source.clone());
-
-    // Other fields from frontmatter
-    let fm = frontmatter.unwrap_or_default();
+    let universal = extract_metadata(base_path, file_path, ContentType::ConceptCard).await?;
 
     Ok(ConceptMetadata {
-        id,
-        title,
-        category,
-        source,
-        chapter: fm.chapter,
-        part: fm.part,
-        description: fm.description,
-        tags: fm.tags,
-        author: fm.author,
-        date: fm.date,
+        id: universal.id,
+        title: universal.title,
+        category: universal.category,
+        source: universal.source,
+        chapter: universal.chapter,
+        part: universal.part,
+        description: universal.description,
+        tags: universal.tags,
+        author: universal.author,
+        date: universal.date,
     })
 }
 
