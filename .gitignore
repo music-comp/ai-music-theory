@@ -7,4 +7,5 @@
 /mcp-server/.tantivy-index
 /.tantivy-index/
 /.tantivy-index-test/
+/data
 /assets/images/logo/drafts/
