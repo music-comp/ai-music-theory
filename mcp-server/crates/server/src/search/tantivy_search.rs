@@ -143,6 +143,36 @@ impl SearchBackend for TantivySearch {
             query = Box::new(combined_query);
         }
 
+        // Apply content_types filter if specified (v0.3.0)
+        if let Some(ref content_types) = params.content_types {
+            use tantivy::query::{BooleanQuery, Occur, TermQuery};
+            use tantivy::schema::IndexRecordOption;
+            use tantivy::Term;
+
+            // Create term queries for each requested content type (OR logic)
+            let type_queries: Vec<(Occur, Box<dyn tantivy::query::Query>)> = content_types
+                .iter()
+                .map(|content_type| {
+                    let term_query = TermQuery::new(
+                        Term::from_field_text(self.schema.content_type, content_type),
+                        IndexRecordOption::Basic,
+                    );
+                    (Occur::Should, Box::new(term_query) as Box<dyn tantivy::query::Query>)
+                })
+                .collect();
+
+            // Create OR query for content types
+            let types_filter = BooleanQuery::new(type_queries);
+
+            // Combine main query with content_types filter using AND
+            let combined_query = BooleanQuery::new(vec![
+                (Occur::Must, query),
+                (Occur::Must, Box::new(types_filter)),
+            ]);
+
+            query = Box::new(combined_query);
+        }
+
         // Execute search
         let top_docs = searcher
             .search(&*query, &TopDocs::with_limit(params.limit))
@@ -162,6 +192,8 @@ impl SearchBackend for TantivySearch {
             let category = self.get_text_field(&doc, self.schema.category)?;
             let source = self.get_optional_text_field(&doc, self.schema.source);
             let path = self.get_text_field(&doc, self.schema.path)?;
+            let content_type = self.get_text_field(&doc, self.schema.content_type)?;
+            let section = self.get_optional_text_field(&doc, self.schema.section);
 
             // Generate snippet
             let snippet = self.generate_snippet(&doc, &params.query)?;
@@ -178,6 +210,8 @@ impl SearchBackend for TantivySearch {
                 path,
                 snippet,
                 relevance,
+                content_type,
+                section,
             });
         }
 
@@ -529,6 +563,7 @@ mod tests {
             limit: 10,
             query_mode: None,
             category: None,
+            content_types: None,
         };
 
         let results = backend.search(&params).await.expect("Search failed");
@@ -576,6 +611,7 @@ mod tests {
                 limit: 10,
                 query_mode: None,
                 category: None,
+            content_types: None,
             };
 
             // Just verify search executes without error
@@ -618,6 +654,7 @@ mod tests {
             limit: 1,
             query_mode: None,
             category: None,
+            content_types: None,
         };
 
         let results = backend.search(&params).await.expect("Search failed");
@@ -654,6 +691,7 @@ mod tests {
             limit: 10,
             query_mode: None,
             category: None,
+            content_types: None,
         };
 
         let results = backend.search(&params).await.expect("Search failed");

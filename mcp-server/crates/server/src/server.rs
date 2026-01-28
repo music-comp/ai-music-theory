@@ -58,6 +58,10 @@ pub struct SearchConceptsParams {
     /// Optional category filter - only return results from this category
     #[serde(default)]
     category: Option<String>,
+    /// Optional content type filter (v0.3.0) - only return results of these types
+    /// Valid values: "concept_card", "source_chapter", "unified_concept", "guide"
+    #[serde(default)]
+    content_types: Option<Vec<String>>,
 }
 
 fn default_limit() -> usize {
@@ -194,6 +198,7 @@ impl MusicTheoryServer {
             limit: params.0.limit,
             query_mode: params.0.query_mode,
             category: params.0.category,
+            content_types: params.0.content_types,
         };
 
         let response = tools::search::search_concepts(&self.state, search_params)
@@ -476,6 +481,7 @@ mod tests {
             limit: 10,
             query_mode: None,
             category: None,
+            content_types: None,
         });
 
         let result = server.search_concepts(params).await;
@@ -495,6 +501,7 @@ mod tests {
             limit: 5,
             query_mode: None,
             category: None,
+            content_types: None,
         });
 
         let result = server.search_concepts(params).await;
@@ -628,6 +635,7 @@ mod tests {
             limit: 5,
             query_mode: None,
             category: None,
+            content_types: None,
         };
         let json = serde_json::to_string(&search_params).unwrap();
         assert!(json.contains("test"));

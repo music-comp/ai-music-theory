@@ -16,6 +16,11 @@ pub struct SearchResult {
     pub path: String,
     pub snippet: String,
     pub relevance: f32,
+    /// Content type (v0.3.0): "concept_card" | "source_chapter" | "unified_concept" | "guide"
+    pub content_type: String,
+    /// Fine-grained location (v0.3.0): "pp. 23-28" or "Section 2.3"
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub section: Option<String>,
 }
 
 /// Response for search_concepts tool.
@@ -42,6 +47,11 @@ pub struct SearchConceptsParams {
     /// Optional category filter - only return results from this category
     #[serde(default)]
     pub category: Option<String>,
+    /// Optional content type filter (v0.3.0) - only return results of these types
+    /// Valid values: "concept_card", "source_chapter", "unified_concept", "guide"
+    /// If None, searches all content types
+    #[serde(default)]
+    pub content_types: Option<Vec<String>>,
 }
 
 fn default_limit() -> usize {
@@ -92,12 +102,15 @@ mod tests {
             path: "/path/to/concept.md".to_string(),
             snippet: "This is a test snippet".to_string(),
             relevance: 8.5,
+            content_type: "concept_card".to_string(),
+            section: None,
         };
 
         let json = serde_json::to_string(&result).expect("Should serialize");
         assert!(json.contains("test-concept"));
         assert!(json.contains("Test Concept"));
         assert!(json.contains("Open Music Theory"));
+        assert!(json.contains("concept_card"));
         assert!(json.contains("8.5"));
     }
 
@@ -111,11 +124,15 @@ mod tests {
             path: "/path".to_string(),
             snippet: "snippet".to_string(),
             relevance: 5.0,
+            content_type: "concept_card".to_string(),
+            section: None,
         };
 
         let json = serde_json::to_string(&result).expect("Should serialize");
-        // source: None should be skipped
-        assert!(!json.contains("source"));
+        // source: None and section: None should be skipped
+        assert!(!json.contains("\"source\""));
+        assert!(!json.contains("\"section\""));
+        assert!(json.contains("concept_card"));
     }
 
     #[test]

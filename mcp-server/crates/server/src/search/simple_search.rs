@@ -68,18 +68,27 @@ impl SearchBackend for SimpleSearch {
                             }
                         }
 
+                        // Apply content_types filter if specified (v0.3.0)
+                        if let Some(ref content_types) = params.content_types {
+                            if !content_types.contains(&doc.content_type) {
+                                continue; // Skip documents that don't match any requested type
+                            }
+                        }
+
                         // Extract snippet and calculate relevance
                         let snippet = doc.extract_snippet(&params.query, 200);
                         let relevance = doc.relevance(&params.query);
 
                         results.push(SearchResult {
-                            id: doc.id,
-                            title: doc.title,
-                            category: doc.category,
-                            source: doc.source,
-                            path: doc.path,
+                            id: doc.id.clone(),
+                            title: doc.title.clone(),
+                            category: doc.category.clone(),
+                            source: doc.source.clone(),
+                            path: doc.path.clone(),
                             snippet,
                             relevance,
+                            content_type: doc.content_type.clone(),
+                            section: doc.section.clone(),
                         });
                     }
                 }
@@ -163,6 +172,7 @@ mod tests {
             limit: 10,
             query_mode: None,
             category: None,
+            content_types: None,
         };
 
         let result = backend.search(&params).await;
