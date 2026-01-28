@@ -585,7 +585,6 @@ mod tests {
         let graph = to_petgraph(&graph_data);
 
         // Find edge and verify properties
-        use petgraph::visit::EdgeRef;
         for edge_ref in graph.edge_references() {
             let edge = edge_ref.weight();
             assert_eq!(edge.from, "test-source");
