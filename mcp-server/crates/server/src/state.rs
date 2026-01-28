@@ -689,6 +689,14 @@ Test content.
         let mut config = test_config("tantivy");
         config.search.index_path = index_path.to_string_lossy().to_string();
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+        // Override other paths to point to temp directory (v0.3.0: prevent indexing real content)
+        config.paths.sources_md = temp_dir.path().join("sources-md").to_string_lossy().to_string();
+        config.paths.concepts_unified = temp_dir
+            .path()
+            .join("concepts-unified")
+            .to_string_lossy()
+            .to_string();
+        config.paths.guides = temp_dir.path().join("guides").to_string_lossy().to_string();
 
         let state = AppState::new(config).await.expect("Failed to create state");
 
@@ -696,7 +704,12 @@ Test content.
         assert!(result.is_ok());
 
         let stats = result.unwrap();
+        // v0.3.0: Check total indexed and per-type counts
         assert_eq!(stats.indexed, 1);
+        assert_eq!(stats.concept_cards, 1);
+        assert_eq!(stats.source_chapters, 0);
+        assert_eq!(stats.unified_concepts, 0);
+        assert_eq!(stats.guides, 0);
     }
 
     #[tokio::test]
