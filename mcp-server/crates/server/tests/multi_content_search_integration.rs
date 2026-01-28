@@ -317,8 +317,11 @@ async fn test_search_without_filter_returns_all_types() {
     assert!(response.total >= 3, "Should find at least 3 results");
 
     // Verify we got different content types
-    let mut content_types: Vec<String> =
-        response.results.iter().map(|r| r.content_type.clone()).collect();
+    let mut content_types: Vec<String> = response
+        .results
+        .iter()
+        .map(|r| r.content_type.clone())
+        .collect();
     content_types.sort();
     content_types.dedup();
 
@@ -426,7 +429,10 @@ async fn test_search_with_category_and_content_type_filters() {
             result.content_type, "source_chapter",
             "Should only return source chapters"
         );
-        assert_eq!(result.category, "harmony", "Should only return harmony category");
+        assert_eq!(
+            result.category, "harmony",
+            "Should only return harmony category"
+        );
     }
 }
 
@@ -453,7 +459,9 @@ category: harmony
     let config = create_test_config(&temp_dir).await;
 
     // Build index - should gracefully handle missing directories
-    let stats = build_index(&config).await.expect("Index build should succeed");
+    let stats = build_index(&config)
+        .await
+        .expect("Index build should succeed");
 
     assert_eq!(stats.concept_cards, 1, "Should index 1 concept card");
     assert_eq!(stats.source_chapters, 0, "Should have 0 source chapters");
@@ -488,10 +496,7 @@ async fn test_check_source_availability_indexed() {
     eprintln!("Status: {:?}", response.status);
     eprintln!("Message: {}", response.message);
 
-    assert!(matches!(
-        response.status,
-        AvailabilityStatus::Indexed
-    ));
+    assert!(matches!(response.status, AvailabilityStatus::Indexed));
     assert!(response.searchable);
     assert!(response.text_extracted);
     assert_eq!(response.chapters, Some(2));
@@ -513,10 +518,7 @@ async fn test_check_source_availability_converted_not_indexed() {
         .await
         .expect("Availability check failed");
 
-    assert!(matches!(
-        response.status,
-        AvailabilityStatus::Converted
-    ));
+    assert!(matches!(response.status, AvailabilityStatus::Converted));
     assert!(!response.searchable);
     assert!(response.text_extracted);
     assert_eq!(response.chapters, Some(2));
@@ -535,10 +537,7 @@ async fn test_check_source_availability_unavailable() {
         .await
         .expect("Availability check failed");
 
-    assert!(matches!(
-        response.status,
-        AvailabilityStatus::Unavailable
-    ));
+    assert!(matches!(response.status, AvailabilityStatus::Unavailable));
     assert!(!response.searchable);
     assert!(!response.text_extracted);
     assert!(!response.file_exists);
@@ -667,13 +666,9 @@ async fn test_metadata_extraction_all_content_types() {
 
     // Test guide extraction
     let guide_path = base.join("guides/fundamentals/harmony-basics.md");
-    let guide_meta = extract_metadata(
-        &base.join("guides"),
-        &guide_path,
-        ContentType::Guide,
-    )
-    .await
-    .expect("Guide extraction failed");
+    let guide_meta = extract_metadata(&base.join("guides"), &guide_path, ContentType::Guide)
+        .await
+        .expect("Guide extraction failed");
 
     assert_eq!(guide_meta.title, "Harmony Basics Guide");
     assert_eq!(guide_meta.section, Some("1.0".to_string()));

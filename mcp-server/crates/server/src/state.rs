@@ -395,7 +395,11 @@ mod tests {
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         let mut config = test_config("tantivy");
         // Use temp directory to ensure no existing index
-        config.search.index_path = temp_dir.path().join(".tantivy-index").to_string_lossy().to_string();
+        config.search.index_path = temp_dir
+            .path()
+            .join(".tantivy-index")
+            .to_string_lossy()
+            .to_string();
 
         let state = AppState::new(config).await.expect("Failed to create state");
         // Without existing index, FTS should not be ready
@@ -411,7 +415,11 @@ mod tests {
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         let mut config = test_config("tantivy");
         // Use temp directory to ensure no existing index
-        config.search.index_path = temp_dir.path().join(".tantivy-index").to_string_lossy().to_string();
+        config.search.index_path = temp_dir
+            .path()
+            .join(".tantivy-index")
+            .to_string_lossy()
+            .to_string();
 
         let state = AppState::new(config).await.expect("Failed to create state");
 
@@ -533,7 +541,11 @@ Test content.
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         let mut config = test_config("tantivy");
         // Use temp directory to ensure no existing index
-        config.search.index_path = temp_dir.path().join(".tantivy-index").to_string_lossy().to_string();
+        config.search.index_path = temp_dir
+            .path()
+            .join(".tantivy-index")
+            .to_string_lossy()
+            .to_string();
 
         let state = AppState::new(config).await.expect("Failed to create state");
 
@@ -712,7 +724,11 @@ Test content.
         config.search.index_path = index_path.to_string_lossy().to_string();
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
         // Override other paths to point to temp directory (v0.3.0: prevent indexing real content)
-        config.paths.sources_md = temp_dir.path().join("sources-md").to_string_lossy().to_string();
+        config.paths.sources_md = temp_dir
+            .path()
+            .join("sources-md")
+            .to_string_lossy()
+            .to_string();
         config.paths.concepts_unified = temp_dir
             .path()
             .join("concepts-unified")

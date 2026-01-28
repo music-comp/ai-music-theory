@@ -224,10 +224,7 @@ pub async fn list_source_chapters(
 
 /// List chapters from Tantivy index.
 #[cfg(feature = "fts")]
-async fn list_chapters_from_index(
-    state: &AppState,
-    source_id: &str,
-) -> Result<Vec<ChapterInfo>> {
+async fn list_chapters_from_index(state: &AppState, source_id: &str) -> Result<Vec<ChapterInfo>> {
     use crate::tools::search::SearchConceptsParams;
 
     // Search for all source chapters using a common term
@@ -279,9 +276,7 @@ async fn list_chapters_from_filesystem(
         let path = &file_info.path;
 
         // Extract metadata to get title and section
-        if let Ok(meta) =
-            extract_metadata(&source_path, path, ContentType::SourceChapter).await
-        {
+        if let Ok(meta) = extract_metadata(&source_path, path, ContentType::SourceChapter).await {
             // Generate chapter ID from filename
             let id = path
                 .file_stem()
@@ -326,7 +321,10 @@ async fn check_source_indexed(state: &AppState, source_id: &str) -> Result<bool>
 }
 
 /// Check if source file exists in any configured location.
-async fn check_source_file_exists(config: &Config, source_id: &str) -> (bool, Option<SourceFormat>) {
+async fn check_source_file_exists(
+    config: &Config,
+    source_id: &str,
+) -> (bool, Option<SourceFormat>) {
     // Try to get PDF/EPUB path
     match get_source_pdf_path(config, source_id) {
         Ok(path) => {
@@ -527,10 +525,7 @@ pub async fn get_source_chapter(
 
     // If section filter specified, add a note (future: could extract specific section)
     if let Some(section_ref) = section {
-        content = format!(
-            "# Requested section: {}\n\n{}",
-            section_ref, content
-        );
+        content = format!("# Requested section: {}\n\n{}", section_ref, content);
     }
 
     Ok(content)

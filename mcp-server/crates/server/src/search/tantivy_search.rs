@@ -157,7 +157,10 @@ impl SearchBackend for TantivySearch {
                         Term::from_field_text(self.schema.content_type, content_type),
                         IndexRecordOption::Basic,
                     );
-                    (Occur::Should, Box::new(term_query) as Box<dyn tantivy::query::Query>)
+                    (
+                        Occur::Should,
+                        Box::new(term_query) as Box<dyn tantivy::query::Query>,
+                    )
                 })
                 .collect();
 
@@ -611,7 +614,7 @@ mod tests {
                 limit: 10,
                 query_mode: None,
                 category: None,
-            content_types: None,
+                content_types: None,
             };
 
             // Just verify search executes without error

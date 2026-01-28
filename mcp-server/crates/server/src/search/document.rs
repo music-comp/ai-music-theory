@@ -45,8 +45,8 @@ pub struct SearchDocument {
     pub date: Option<String>,
 
     // Content type discrimination (v0.3.0)
-    pub content_type: String,     // "concept_card" | "source_chapter" | "unified_concept" | "guide"
-    pub section: Option<String>,  // Fine-grained location: "pp. 23-28" or "Section 2.3"
+    pub content_type: String, // "concept_card" | "source_chapter" | "unified_concept" | "guide"
+    pub section: Option<String>, // Fine-grained location: "pp. 23-28" or "Section 2.3"
 }
 
 impl SearchDocument {
@@ -103,7 +103,10 @@ impl SearchDocument {
     /// # Errors
     ///
     /// Returns `Err` if the file cannot be read.
-    pub async fn from_universal_metadata(meta: UniversalMetadata, file_path: &Path) -> Result<Self> {
+    pub async fn from_universal_metadata(
+        meta: UniversalMetadata,
+        file_path: &Path,
+    ) -> Result<Self> {
         // Read full file content
         let full_content = read_file(file_path).await?;
 
