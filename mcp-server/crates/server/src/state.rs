@@ -613,6 +613,7 @@ Test content.
 
         // Create old metadata to make index appear stale
         let metadata = crate::search::freshness::IndexMetadata {
+            schema_version: crate::search::SCHEMA_VERSION,
             doc_count: 1,
             last_indexed: std::time::SystemTime::now(),
             content_hash: "old-hash".to_string(),

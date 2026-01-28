@@ -40,7 +40,9 @@ pub use tantivy_search::TantivySearch;
 
 // Internal FTS modules
 #[cfg(feature = "fts")]
-pub(crate) use freshness::{compute_content_hash, is_index_fresh, save_metadata, IndexMetadata};
+pub(crate) use freshness::{
+    compute_content_hash, is_index_fresh, save_metadata, IndexMetadata, SCHEMA_VERSION,
+};
 #[cfg(feature = "fts")]
 pub(crate) use indexer::Indexer;
 #[cfg(feature = "fts")]

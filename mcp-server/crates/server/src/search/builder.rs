@@ -9,7 +9,9 @@ use std::time::SystemTime;
 use crate::config::Config;
 use crate::error::Result;
 use crate::metadata::{extract_concept_metadata, extract_metadata, ContentType};
-use crate::search::{compute_content_hash, save_metadata, IndexMetadata, Indexer, SearchDocument};
+use crate::search::{
+    compute_content_hash, save_metadata, IndexMetadata, Indexer, SearchDocument, SCHEMA_VERSION,
+};
 use crate::util::files::{exists, find_all_files, FindOptions};
 
 /// Statistics from index building.
@@ -120,6 +122,7 @@ pub async fn build_index(config: &Config) -> Result<IndexStats> {
     // Save metadata for freshness tracking
     let content_hash = compute_content_hash(config).await?;
     let metadata = IndexMetadata {
+        schema_version: SCHEMA_VERSION,
         doc_count: stats.indexed,
         last_indexed: SystemTime::now(),
         content_hash,
