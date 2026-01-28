@@ -1326,4 +1326,80 @@ fuzzy_distance = 2
 
         assert!(result.is_ok());
     }
+
+    #[test]
+    #[cfg(feature = "graph")]
+    fn test_cli_parse_graph_build() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "graph", "build"]);
+        assert!(matches!(cli.command, Some(Commands::Graph(_))));
+        assert!(cli.log_level.is_none());
+    }
+
+    #[test]
+    #[cfg(feature = "graph")]
+    fn test_cli_parse_graph_build_dry_run() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "graph", "build", "--dry-run"]);
+        assert!(matches!(cli.command, Some(Commands::Graph(_))));
+    }
+
+    #[test]
+    #[cfg(feature = "graph")]
+    fn test_cli_parse_graph_build_verbose() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "graph", "build", "--verbose"]);
+        assert!(matches!(cli.command, Some(Commands::Graph(_))));
+    }
+
+    #[test]
+    #[cfg(feature = "graph")]
+    fn test_cli_parse_graph_build_both_flags() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "graph", "build", "--dry-run", "--verbose"]);
+        assert!(matches!(cli.command, Some(Commands::Graph(_))));
+    }
+
+    #[test]
+    #[cfg(feature = "graph")]
+    fn test_cli_parse_graph_build_verbose_short() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "graph", "build", "-v"]);
+        assert!(matches!(cli.command, Some(Commands::Graph(_))));
+    }
+
+    #[test]
+    #[cfg(feature = "graph")]
+    fn test_cli_parse_graph_validate() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "graph", "validate"]);
+        assert!(matches!(cli.command, Some(Commands::Graph(_))));
+        assert!(cli.log_level.is_none());
+    }
+
+    #[test]
+    #[cfg(feature = "graph")]
+    fn test_cli_parse_graph_stats() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "graph", "stats"]);
+        assert!(matches!(cli.command, Some(Commands::Graph(_))));
+        assert!(cli.log_level.is_none());
+    }
+
+    #[test]
+    #[cfg(feature = "graph")]
+    fn test_cli_parse_graph_compile() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "graph", "compile"]);
+        assert!(matches!(cli.command, Some(Commands::Graph(_))));
+        assert!(cli.log_level.is_none());
+    }
+
+    #[test]
+    #[cfg(feature = "graph")]
+    fn test_cli_parse_graph_with_log_level() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "--log-level", "debug", "graph", "build"]);
+        assert!(matches!(cli.command, Some(Commands::Graph(_))));
+        assert_eq!(cli.log_level, Some("debug".to_string()));
+    }
+
+    #[test]
+    #[cfg(feature = "graph")]
+    fn test_cli_parse_graph_log_level_after_command() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "graph", "--log-level", "trace", "stats"]);
+        assert!(matches!(cli.command, Some(Commands::Graph(_))));
+        assert_eq!(cli.log_level, Some("trace".to_string()));
+    }
 }
