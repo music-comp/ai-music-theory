@@ -4,7 +4,7 @@
 
 use std::io::Write;
 
-#[cfg(feature = "fts")]
+#[cfg(any(feature = "fts", feature = "graph"))]
 use std::sync::Arc;
 
 use clap::{Parser, Subcommand};
@@ -58,6 +58,43 @@ pub enum Commands {
     /// Display FTS index status and statistics
     #[cfg(feature = "fts")]
     Status,
+
+    /// Graph database management
+    #[cfg(feature = "graph")]
+    Graph(GraphCommands),
+}
+
+/// Graph subcommands
+#[cfg(feature = "graph")]
+#[derive(Parser)]
+pub struct GraphCommands {
+    #[command(subcommand)]
+    command: GraphSubcommand,
+}
+
+/// Graph command operations
+#[cfg(feature = "graph")]
+#[derive(Subcommand)]
+pub enum GraphSubcommand {
+    /// Build graph from concept cards
+    Build {
+        /// Show what would change without writing
+        #[arg(long)]
+        dry_run: bool,
+
+        /// Show detailed output
+        #[arg(long, short)]
+        verbose: bool,
+    },
+
+    /// Validate graph integrity
+    Validate,
+
+    /// Show graph statistics
+    Stats,
+
+    /// Rebuild rkyv cache from JSON
+    Compile,
 }
 
 /// Handle the CLI command.
@@ -83,6 +120,9 @@ pub async fn handle_command(cli: Cli) -> Result<()> {
 
         #[cfg(feature = "fts")]
         Commands::Status => handle_status_command(log_level).await,
+
+        #[cfg(feature = "graph")]
+        Commands::Graph(graph_cmds) => handle_graph_command(graph_cmds, log_level).await,
     }
 }
 
@@ -172,6 +212,13 @@ async fn run_server(log_level_override: Option<String>, test_mode: bool) -> Resu
     {
         let state_arc = Arc::new(state.clone());
         crate::state::initialize_fts(&state_arc).await?;
+    }
+
+    // Initialize graph (non-blocking - loads asynchronously)
+    #[cfg(feature = "graph")]
+    {
+        let state_arc = Arc::new(state.clone());
+        crate::state::initialize_graph(&state_arc).await?;
     }
 
     if test_mode {
@@ -405,6 +452,30 @@ async fn handle_status_command(log_level_override: Option<String>) -> Result<()>
     }
 
     Ok(())
+}
+
+/// Handle graph subcommands.
+#[cfg(feature = "graph")]
+async fn handle_graph_command(graph_cmds: GraphCommands, log_level_override: Option<String>) -> Result<()> {
+    // Initialize logging before any graph operations
+    let config = Config::load()?;
+    let opts = apply_log_level_override(&config.logging, log_level_override)?;
+    twyg::setup(opts);
+
+    match graph_cmds.command {
+        GraphSubcommand::Build { dry_run, verbose } => {
+            crate::graph::cli::handle_build(&config, dry_run, verbose).await
+        }
+        GraphSubcommand::Validate => {
+            crate::graph::cli::handle_validate(&config).await
+        }
+        GraphSubcommand::Stats => {
+            crate::graph::cli::handle_stats(&config).await
+        }
+        GraphSubcommand::Compile => {
+            crate::graph::cli::handle_compile(&config).await
+        }
+    }
 }
 
 #[cfg(test)]

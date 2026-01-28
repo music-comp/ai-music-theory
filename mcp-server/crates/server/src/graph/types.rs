@@ -3,6 +3,7 @@
 //! This module defines the types used to represent nodes, edges, and relationships
 //! in the music theory concept graph.
 
+use rkyv::{Archive, Deserialize as RkyvDeserialize, Serialize as RkyvSerialize};
 use serde::{Deserialize as SerdeDeserialize, Serialize as SerdeSerialize};
 
 // ============================================================
@@ -11,6 +12,7 @@ use serde::{Deserialize as SerdeDeserialize, Serialize as SerdeSerialize};
 
 /// A node in the concept graph.
 #[derive(Clone, Debug, PartialEq, SerdeSerialize, SerdeDeserialize)]
+#[derive(Archive, RkyvSerialize, RkyvDeserialize)]
 #[serde(tag = "type")]
 pub enum Node {
     /// A concept node (canonical or source-specific)
@@ -21,6 +23,7 @@ pub enum Node {
 
 /// A concept node representing a music theory concept.
 #[derive(Clone, Debug, PartialEq, SerdeSerialize, SerdeDeserialize)]
+#[derive(Archive, RkyvSerialize, RkyvDeserialize)]
 pub struct ConceptNode {
     /// Unique identifier (e.g., "suspension" or "suspension@lewin")
     pub id: String,
@@ -45,6 +48,7 @@ pub struct ConceptNode {
 
 /// A source node representing a book, paper, or textbook.
 #[derive(Clone, Debug, PartialEq, SerdeSerialize, SerdeDeserialize)]
+#[derive(Archive, RkyvSerialize, RkyvDeserialize)]
 pub struct SourceNode {
     /// Unique identifier (e.g., "oxford-lewin-gmit")
     pub id: String,
@@ -70,6 +74,7 @@ pub struct SourceNode {
 
 /// An edge in the concept graph representing a relationship between nodes.
 #[derive(Clone, Debug, PartialEq, SerdeSerialize, SerdeDeserialize)]
+#[derive(Archive, RkyvSerialize, RkyvDeserialize)]
 pub struct Edge {
     /// Source node ID
     pub from: String,
@@ -96,6 +101,7 @@ fn default_weight() -> f32 {
 
 /// Types of relationships between nodes.
 #[derive(Clone, Debug, PartialEq, Eq, Hash, SerdeSerialize, SerdeDeserialize)]
+#[derive(Archive, RkyvSerialize, RkyvDeserialize)]
 #[serde(rename_all = "snake_case")]
 pub enum Relationship {
     // Concept-to-Concept relationships
@@ -121,6 +127,7 @@ pub enum Relationship {
 
 /// How an edge was created.
 #[derive(Clone, Debug, Default, PartialEq, Eq, SerdeSerialize, SerdeDeserialize)]
+#[derive(Archive, RkyvSerialize, RkyvDeserialize)]
 #[serde(rename_all = "snake_case")]
 pub enum EdgeOrigin {
     /// Extracted from concept card "Related Concepts" section
@@ -138,6 +145,7 @@ pub enum EdgeOrigin {
 
 /// Complete graph data for serialization.
 #[derive(Clone, Debug, SerdeSerialize, SerdeDeserialize)]
+#[derive(Archive, RkyvSerialize, RkyvDeserialize)]
 pub struct GraphData {
     /// Schema version
     pub version: String,
@@ -155,6 +163,7 @@ pub struct GraphData {
 
 /// Metadata about the graph build process.
 #[derive(Clone, Debug, SerdeSerialize, SerdeDeserialize)]
+#[derive(Archive, RkyvSerialize, RkyvDeserialize)]
 pub struct GraphMetadata {
     /// ISO 8601 timestamp of when the graph was built
     pub built_at: String,

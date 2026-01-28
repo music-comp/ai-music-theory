@@ -5,11 +5,15 @@
 
 use std::sync::Arc;
 
-#[cfg(feature = "fts")]
+#[cfg(any(feature = "fts", feature = "graph"))]
 use std::path::Path;
+
 #[cfg(feature = "fts")]
 use std::sync::atomic::{AtomicBool, Ordering};
 #[cfg(feature = "fts")]
+use std::sync::RwLock as StdRwLock;
+
+#[cfg(feature = "graph")]
 use std::sync::RwLock;
 
 use crate::config::Config;
@@ -22,7 +26,7 @@ use crate::search::{build_index, is_index_fresh, TantivySearch};
 
 /// Type alias for FTS backend initialization return type.
 #[cfg(feature = "fts")]
-type FtsBackendInit = (Arc<RwLock<Option<Arc<TantivySearch>>>>, Arc<AtomicBool>);
+type FtsBackendInit = (Arc<StdRwLock<Option<Arc<TantivySearch>>>>, Arc<AtomicBool>);
 
 /// Shared application state.
 ///
@@ -38,11 +42,29 @@ pub struct AppState {
 
     /// FTS backend (optional, may be None initially)
     #[cfg(feature = "fts")]
-    fts_backend: Arc<RwLock<Option<Arc<TantivySearch>>>>,
+    fts_backend: Arc<StdRwLock<Option<Arc<TantivySearch>>>>,
 
     /// Whether FTS index is ready for queries
     #[cfg(feature = "fts")]
     fts_ready: Arc<AtomicBool>,
+
+    /// Graph backend (optional)
+    #[cfg(feature = "graph")]
+    pub graph: Arc<RwLock<GraphState>>,
+}
+
+/// State of the concept graph.
+#[cfg(feature = "graph")]
+#[derive(Clone)]
+pub enum GraphState {
+    /// Graph not yet loaded
+    NotLoaded,
+    /// Graph is currently loading
+    Loading,
+    /// Graph loaded successfully
+    Loaded(crate::graph::LoadedGraph),
+    /// Graph failed to load
+    Failed(String),
 }
 
 impl AppState {
@@ -75,6 +97,8 @@ impl AppState {
             fts_backend,
             #[cfg(feature = "fts")]
             fts_ready,
+            #[cfg(feature = "graph")]
+            graph: Arc::new(RwLock::new(GraphState::NotLoaded)),
         })
     }
 
@@ -174,7 +198,7 @@ fn initialize_fts_backend(config: &Config) -> Result<FtsBackendInit> {
                 // Index exists and is loadable
                 log::info!("Loaded existing FTS index from disk");
                 Ok((
-                    Arc::new(RwLock::new(Some(Arc::new(backend)))),
+                    Arc::new(StdRwLock::new(Some(Arc::new(backend)))),
                     Arc::new(AtomicBool::new(true)),
                 ))
             }
@@ -182,7 +206,7 @@ fn initialize_fts_backend(config: &Config) -> Result<FtsBackendInit> {
                 // Index doesn't exist yet - will build in background (Phase 3)
                 log::debug!("FTS index not found: {} (will build if configured)", e);
                 Ok((
-                    Arc::new(RwLock::new(None)),
+                    Arc::new(StdRwLock::new(None)),
                     Arc::new(AtomicBool::new(false)),
                 ))
             }
@@ -190,7 +214,7 @@ fn initialize_fts_backend(config: &Config) -> Result<FtsBackendInit> {
     } else {
         // FTS not configured
         Ok((
-            Arc::new(RwLock::new(None)),
+            Arc::new(StdRwLock::new(None)),
             Arc::new(AtomicBool::new(false)),
         ))
     }
@@ -258,6 +282,67 @@ async fn index_exists_and_fresh(index_path: &Path, config: &Config) -> Result<bo
             Ok(false)
         }
     }
+}
+
+/// Initialize graph backend and start async loading.
+///
+/// # Arguments
+///
+/// * `state` - Shared application state
+///
+/// # Errors
+///
+/// Returns `Err` if data path resolution fails.
+#[cfg(feature = "graph")]
+pub async fn initialize_graph(state: &Arc<AppState>) -> Result<()> {
+    let data_dir = Path::new(&state.config.paths.base).join("data");
+    let graph_path = data_dir.join("graphs").join("concept_graph.json");
+
+    if !graph_path.exists() {
+        log::info!("Concept graph not found at {}. Run `music-theory-mcp graph build` to create it.", graph_path.display());
+        return Ok(());
+    }
+
+    log::info!("Starting async graph load");
+    start_graph_loading(Arc::clone(state));
+    Ok(())
+}
+
+/// Start async graph loading task.
+#[cfg(feature = "graph")]
+fn start_graph_loading(state: Arc<AppState>) {
+    tokio::spawn(async move {
+        // Update state to Loading
+        {
+            let mut guard = state.graph.write().unwrap();
+            *guard = GraphState::Loading;
+        }
+
+        log::info!("Loading concept graph");
+
+        let data_dir = Path::new(&state.config.paths.base).join("data");
+
+        match crate::graph::load_concept_graph(&data_dir).await {
+            Ok(loaded) => {
+                log::info!(
+                    "Concept graph loaded: {} nodes, {} edges ({} concepts, {} sources)",
+                    loaded.stats.node_count,
+                    loaded.stats.edge_count,
+                    loaded.stats.concept_count,
+                    loaded.stats.source_count
+                );
+
+                // Update state to Loaded
+                let mut guard = state.graph.write().unwrap();
+                *guard = GraphState::Loaded(loaded);
+            }
+            Err(e) => {
+                log::error!("Failed to load concept graph: {}", e);
+                let mut guard = state.graph.write().unwrap();
+                *guard = GraphState::Failed(e.to_string());
+            }
+        }
+    });
 }
 
 /// Start background indexing task (module-level function).
