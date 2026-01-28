@@ -90,6 +90,9 @@ fn test_config() -> Config {
                 "IV".to_string(),
                 "vi".to_string(),
             ],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         },
     }
 }
@@ -123,6 +126,7 @@ async fn search_default(
         limit,
         query_mode: None, // Use default Smart mode
         category: None,
+        content_types: None,
     };
 
     let response = search_concepts(&state, params)
@@ -149,6 +153,7 @@ async fn search_with_mode(
         limit,
         query_mode: Some(mode),
         category: None,
+        content_types: None,
     };
 
     let response = search_concepts(&state, params)
@@ -531,6 +536,7 @@ async fn test_empty_query_error() {
         limit: 10,
         category: None,
         query_mode: None,
+        content_types: None,
     };
 
     let result = search_concepts(&state, params).await;
@@ -553,6 +559,7 @@ async fn test_whitespace_only_query() {
         limit: 10,
         category: None,
         query_mode: None,
+        content_types: None,
     };
 
     let result = search_concepts(&state, params).await;
@@ -875,6 +882,7 @@ async fn test_backend_is_tantivy() {
         limit: 1,
         category: None,
         query_mode: None,
+        content_types: None,
     };
 
     let response = search_concepts(&state, params)

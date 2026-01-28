@@ -56,6 +56,9 @@ fn create_test_config(temp_dir: &TempDir, backend: &str, fuzzy: bool) -> Config 
             enable_stopwords: true,
             custom_stopwords: vec![],
             stopword_allowlist: vec![],
+            field_boost_title: 3.0,
+            field_boost_description: 2.0,
+            field_boost_content: 1.0,
         },
     }
 }
@@ -170,6 +173,7 @@ async fn test_search_returns_relevant_results() {
         query_mode: None,
         limit: 10,
         category: None,
+        content_types: None,
     };
 
     let response = search_concepts(&state, params)
@@ -202,6 +206,7 @@ async fn test_search_ranking_by_relevance() {
         query_mode: None,
         limit: 10,
         category: None,
+        content_types: None,
     };
 
     let response = search_concepts(&state, params)
@@ -239,6 +244,7 @@ async fn test_fuzzy_search_finds_typos() {
         query_mode: None,
         limit: 10,
         category: None,
+        content_types: None,
     };
 
     let response = search_concepts(&state, params)
@@ -277,6 +283,7 @@ async fn test_backend_switching_simple_to_tantivy() {
         query_mode: None,
         limit: 10,
         category: None,
+        content_types: None,
     };
 
     let simple_response = search_concepts(&simple_state, params.clone())
@@ -334,6 +341,7 @@ async fn test_snippet_generation_includes_context() {
         query_mode: None,
         limit: 10,
         category: None,
+        content_types: None,
     };
 
     let response = search_concepts(&state, params)
@@ -366,6 +374,7 @@ async fn test_empty_query_errors_correctly() {
         query_mode: None,
         limit: 10,
         category: None,
+        content_types: None,
     };
 
     let result = search_concepts(&state, params).await;
@@ -390,6 +399,7 @@ async fn test_search_with_limit() {
         query_mode: None,
         limit: 1,
         category: None,
+        content_types: None,
     };
 
     let response = search_concepts(&state, params)
@@ -445,6 +455,7 @@ async fn test_index_rebuild_clears_old_data() {
         query_mode: None,
         limit: 10,
         category: None,
+        content_types: None,
     };
 
     let response = search_concepts(&state, params)
@@ -469,6 +480,7 @@ async fn test_search_tool_integration() {
         query_mode: None,
         limit: 5,
         category: None,
+        content_types: None,
     };
 
     let response = search_concepts(&state, params)
@@ -497,6 +509,7 @@ async fn test_category_filtering() {
         query_mode: None,
         limit: 10,
         category: None,
+        content_types: None,
     };
     let _response_all = search_concepts(&state, params_all)
         .await
@@ -508,6 +521,7 @@ async fn test_category_filtering() {
         query_mode: None,
         limit: 10,
         category: Some("harmony".to_string()),
+        content_types: None,
     };
     let response_harmony = search_concepts(&state, params_harmony)
         .await
@@ -527,6 +541,7 @@ async fn test_category_filtering() {
         query_mode: None,
         limit: 10,
         category: Some("counterpoint".to_string()),
+        content_types: None,
     };
     let response_counterpoint = search_concepts(&state, params_counterpoint)
         .await
@@ -546,6 +561,7 @@ async fn test_category_filtering() {
         query_mode: None,
         limit: 10,
         category: Some("nonexistent".to_string()),
+        content_types: None,
     };
     let response_nonexistent = search_concepts(&state, params_nonexistent)
         .await
@@ -593,6 +609,7 @@ async fn test_phrase_search_order_sensitivity() {
         query_mode: None,
         limit: 10,
         category: None,
+        content_types: None,
     };
     let response_exact = search_concepts(&state, params_exact)
         .await
@@ -617,6 +634,7 @@ async fn test_phrase_search_order_sensitivity() {
         query_mode: None,
         limit: 10,
         category: None,
+        content_types: None,
     };
     let response_reversed = search_concepts(&state, params_reversed)
         .await
@@ -640,6 +658,7 @@ async fn test_phrase_search_order_sensitivity() {
         query_mode: None,
         limit: 10,
         category: None,
+        content_types: None,
     };
     let response_no_quotes = search_concepts(&state, params_no_quotes)
         .await
