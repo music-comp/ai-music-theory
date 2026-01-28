@@ -61,6 +61,7 @@ impl PathsConfig {
     }
 
     /// Get the concepts unified directory as an absolute PathBuf (v0.3.0).
+    #[cfg(feature = "fts")]
     pub fn concepts_unified_path(&self) -> Result<PathBuf> {
         expand_path(&self.concepts_unified)
     }

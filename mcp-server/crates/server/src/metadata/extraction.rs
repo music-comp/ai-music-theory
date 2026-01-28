@@ -25,6 +25,7 @@ pub enum ContentType {
 
 impl ContentType {
     /// Get the string identifier for this content type.
+    #[cfg(feature = "fts")]
     pub fn as_str(&self) -> &'static str {
         match self {
             ContentType::ConceptCard => "concept_card",
@@ -47,7 +48,8 @@ pub struct UniversalMetadata {
     pub title: String,
     /// Thematic category
     pub category: String,
-    /// Content type
+    /// Content type (read in FTS code, written always)
+    #[allow(dead_code)]
     pub content_type: ContentType,
     /// Source text name (optional)
     pub source: Option<String>,

@@ -6,6 +6,8 @@
 //! - concepts_unified
 //! - guides
 
+#![cfg(feature = "fts")]
+
 use music_theory_mcp::config::{Config, PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
 use music_theory_mcp::metadata::{extract_metadata, ContentType};
 use music_theory_mcp::search::{build_index, SearchDocument};

@@ -193,8 +193,10 @@ async fn index_content_type(
 
     log::info!("Found {} {:?} files", files_found, content_type);
 
-    let mut stats = IndexStats::default();
-    stats.files_found = files_found;
+    let mut stats = IndexStats {
+        files_found,
+        ..Default::default()
+    };
 
     for file_info in files {
         let path = &file_info.path;
@@ -215,7 +217,7 @@ async fn index_content_type(
                             ContentType::Guide => stats.guides += 1,
                         }
 
-                        if stats.indexed % 50 == 0 {
+                        if stats.indexed.is_multiple_of(50) {
                             log::info!("Indexed {} documents...", stats.indexed);
                         }
                     }

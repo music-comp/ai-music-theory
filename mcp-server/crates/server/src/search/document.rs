@@ -5,7 +5,9 @@
 
 use crate::error::Result;
 use crate::markdown::strip_frontmatter;
-use crate::metadata::{ConceptMetadata, UniversalMetadata};
+use crate::metadata::ConceptMetadata;
+#[cfg(feature = "fts")]
+use crate::metadata::UniversalMetadata;
 use crate::util::files::read_file;
 use serde::{Deserialize, Serialize};
 use std::path::Path;
@@ -103,6 +105,7 @@ impl SearchDocument {
     /// # Errors
     ///
     /// Returns `Err` if the file cannot be read.
+    #[cfg(feature = "fts")]
     pub async fn from_universal_metadata(
         meta: UniversalMetadata,
         file_path: &Path,
