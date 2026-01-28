@@ -7,7 +7,6 @@
 //! - get_concept_neighborhood: Get local subgraph around concept
 
 use serde::{Deserialize, Serialize};
-use std::collections::{HashMap, HashSet, VecDeque};
 
 use crate::error::Result;
 use crate::state::AppState;
@@ -24,6 +23,8 @@ use petgraph::graph::NodeIndex;
 use petgraph::visit::EdgeRef;
 #[cfg(feature = "graph")]
 use petgraph::Direction;
+#[cfg(feature = "graph")]
+use std::collections::{HashMap, HashSet, VecDeque};
 
 // ============================================================================
 // Parameter Types

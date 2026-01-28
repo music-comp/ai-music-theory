@@ -184,6 +184,7 @@ pub struct NodeEdgesResponse {
 /// # Returns
 ///
 /// Returns GraphStatusResponse with current status.
+#[allow(unused_variables)] // state only used when graph feature is enabled
 pub async fn graph_status(state: &AppState) -> Result<GraphStatusResponse> {
     #[cfg(feature = "graph")]
     {
