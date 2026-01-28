@@ -212,28 +212,39 @@ pub fn prerequisites_sorted(
         node: NodeIndex,
         depths: &mut HashMap<NodeIndex, u32>,
         prereq_set: &HashSet<NodeIndex>,
+        visiting: &mut HashSet<NodeIndex>,
     ) -> u32 {
+        // Already computed
         if let Some(&d) = depths.get(&node) {
             return d;
         }
+
+        // Cycle detected - return 0 to break the cycle
+        if visiting.contains(&node) {
+            return 0;
+        }
+
+        visiting.insert(node);
 
         let mut max_prereq_depth = 0;
         for edge in graph.edges_directed(node, Direction::Incoming) {
             if matches!(edge.weight().relationship, Relationship::Prerequisite) {
                 let prereq = edge.source();
                 if prereq_set.contains(&prereq) {
-                    let d = compute_depth(graph, prereq, depths, prereq_set);
+                    let d = compute_depth(graph, prereq, depths, prereq_set, visiting);
                     max_prereq_depth = max_prereq_depth.max(d + 1);
                 }
             }
         }
 
+        visiting.remove(&node);
         depths.insert(node, max_prereq_depth);
         max_prereq_depth
     }
 
+    let mut visiting = HashSet::new();
     for &node in &prereq_list {
-        compute_depth(graph, node, &mut depths, &prereq_set);
+        compute_depth(graph, node, &mut depths, &prereq_set, &mut visiting);
     }
 
     // Sort by depth (concepts with no prerequisites first)
@@ -415,6 +426,7 @@ mod tests {
     use super::*;
     use crate::graph::persistence::to_petgraph;
     use crate::graph::types::{ConceptNode, Edge, EdgeOrigin, GraphData, GraphMetadata};
+    use petgraph::graph::DiGraph;
 
     /// Create a test graph with known structure for algorithm testing.
     ///
@@ -640,5 +652,97 @@ mod tests {
         // and 1 counterpoint concept (voice-leading)
         assert_eq!(conn_harm, 1);
         assert_eq!(conn_count, 1);
+    }
+
+    #[test]
+    fn test_prerequisites_sorted_with_cycle() {
+        // Test that cycles don't cause stack overflow
+        let mut graph = DiGraph::new();
+
+        // Create nodes
+        let a = graph.add_node(Node::Concept(ConceptNode {
+            id: "a".to_string(),
+            title: "Concept A".to_string(),
+            category: "test".to_string(),
+            source_id: "test-source".to_string(),
+            canonical_id: None,
+            is_canonical: true,
+        }));
+
+        let b = graph.add_node(Node::Concept(ConceptNode {
+            id: "b".to_string(),
+            title: "Concept B".to_string(),
+            category: "test".to_string(),
+            source_id: "test-source".to_string(),
+            canonical_id: None,
+            is_canonical: true,
+        }));
+
+        let c = graph.add_node(Node::Concept(ConceptNode {
+            id: "c".to_string(),
+            title: "Concept C".to_string(),
+            category: "test".to_string(),
+            source_id: "test-source".to_string(),
+            canonical_id: None,
+            is_canonical: true,
+        }));
+
+        // Create a cycle: C requires B, B requires A, A requires C
+        graph.add_edge(
+            a,
+            c,
+            Edge {
+                from: "a".to_string(),
+                to: "c".to_string(),
+                relationship: Relationship::Prerequisite,
+                weight: 1.0,
+                origin: EdgeOrigin::Extracted,
+            },
+        );
+
+        graph.add_edge(
+            b,
+            a,
+            Edge {
+                from: "b".to_string(),
+                to: "a".to_string(),
+                relationship: Relationship::Prerequisite,
+                weight: 1.0,
+                origin: EdgeOrigin::Extracted,
+            },
+        );
+
+        graph.add_edge(
+            c,
+            b,
+            Edge {
+                from: "c".to_string(),
+                to: "b".to_string(),
+                relationship: Relationship::Prerequisite,
+                weight: 1.0,
+                origin: EdgeOrigin::Extracted,
+            },
+        );
+
+        // This should not stack overflow despite the cycle
+        let prereqs = prerequisites_sorted(&graph, c, 10);
+
+        // Should find both a and b as prerequisites
+        assert_eq!(prereqs.len(), 2);
+
+        // Verify we got the right nodes (order doesn't matter for cycle case)
+        let ids: Vec<&str> = prereqs
+            .iter()
+            .filter_map(|idx| {
+                if let Node::Concept(c) = &graph[*idx] {
+                    Some(c.id.as_str())
+                } else {
+                    None
+                }
+            })
+            .collect();
+
+        assert!(ids.contains(&"a"));
+        assert!(ids.contains(&"b"));
     }
 }
