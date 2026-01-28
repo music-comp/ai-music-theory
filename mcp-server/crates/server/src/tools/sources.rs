@@ -230,9 +230,9 @@ async fn list_chapters_from_index(
 ) -> Result<Vec<ChapterInfo>> {
     use crate::tools::search::SearchConceptsParams;
 
-    // Search for all documents with content_type = "source_chapter" and matching source
+    // Search for all source chapters using a common term
     let params = SearchConceptsParams {
-        query: source_id.to_string(),
+        query: "chapter".to_string(),
         limit: 1000, // Large limit to get all chapters
         query_mode: None,
         category: None,
@@ -241,8 +241,10 @@ async fn list_chapters_from_index(
 
     let results = state.search_backend().search(&params).await?;
 
+    // Filter by source_id in path and convert to ChapterInfo
     let chapters = results
         .into_iter()
+        .filter(|result| result.path.contains(source_id))
         .map(|result| ChapterInfo {
             id: result.id,
             title: result.title,
@@ -307,17 +309,20 @@ async fn list_chapters_from_filesystem(
 async fn check_source_indexed(state: &AppState, source_id: &str) -> Result<bool> {
     use crate::tools::search::SearchConceptsParams;
 
-    // Search for documents with this source ID and content_type = "source_chapter"
+    // Search for a common term that would appear in source chapters
+    // Use "the" or "a" which are very common words
     let params = SearchConceptsParams {
-        query: source_id.to_string(),
-        limit: 1,
+        query: "chapter".to_string(),
+        limit: 1000,
         query_mode: None,
         category: None,
         content_types: Some(vec!["source_chapter".to_string()]),
     };
 
     let results = state.search_backend().search(&params).await?;
-    Ok(!results.is_empty())
+
+    // Check if any results have the source_id in their path
+    Ok(results.iter().any(|r| r.path.contains(source_id)))
 }
 
 /// Check if source file exists in any configured location.

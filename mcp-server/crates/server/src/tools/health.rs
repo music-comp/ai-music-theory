@@ -257,7 +257,13 @@ mod tests {
     #[tokio::test]
     #[cfg(feature = "fts")]
     async fn test_get_health_tantivy_not_ready() {
-        let config = test_config("tantivy");
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let mut config = test_config("tantivy");
+        // Use temp directory to ensure no existing index
+        config.search.index_path = temp_dir.path().join(".tantivy-index").to_string_lossy().to_string();
+
         let state = AppState::new(config).await.expect("Failed to create state");
 
         let response = get_health(&state).await.expect("Health check failed");
@@ -293,7 +299,13 @@ mod tests {
     #[tokio::test]
     #[cfg(feature = "fts")]
     async fn test_load_index_stats_no_metadata() {
-        let config = test_config("tantivy");
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let mut config = test_config("tantivy");
+        // Use temp directory to avoid picking up leftover metadata
+        config.search.index_path = temp_dir.path().join(".tantivy-index").to_string_lossy().to_string();
+
         let result = load_index_stats(&config).await;
 
         // Should return Ok with empty stats (graceful fallback)

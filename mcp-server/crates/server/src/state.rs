@@ -390,7 +390,13 @@ mod tests {
     #[tokio::test]
     #[cfg(feature = "fts")]
     async fn test_appstate_fts_not_ready_initially() {
-        let config = test_config("tantivy");
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let mut config = test_config("tantivy");
+        // Use temp directory to ensure no existing index
+        config.search.index_path = temp_dir.path().join(".tantivy-index").to_string_lossy().to_string();
+
         let state = AppState::new(config).await.expect("Failed to create state");
         // Without existing index, FTS should not be ready
         assert!(!state.is_fts_ready());
@@ -400,7 +406,13 @@ mod tests {
     #[tokio::test]
     #[cfg(feature = "fts")]
     async fn test_set_fts_ready() {
-        let config = test_config("tantivy");
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let mut config = test_config("tantivy");
+        // Use temp directory to ensure no existing index
+        config.search.index_path = temp_dir.path().join(".tantivy-index").to_string_lossy().to_string();
+
         let state = AppState::new(config).await.expect("Failed to create state");
 
         assert!(!state.is_fts_ready());
@@ -516,7 +528,13 @@ Test content.
     #[tokio::test]
     #[cfg(feature = "fts")]
     async fn test_active_backend_name_with_fts() {
-        let config = test_config("tantivy");
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let mut config = test_config("tantivy");
+        // Use temp directory to ensure no existing index
+        config.search.index_path = temp_dir.path().join(".tantivy-index").to_string_lossy().to_string();
+
         let state = AppState::new(config).await.expect("Failed to create state");
 
         // Initially simple

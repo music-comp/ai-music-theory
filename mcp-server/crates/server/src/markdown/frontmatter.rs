@@ -30,6 +30,8 @@ pub struct Frontmatter {
     pub source: Option<String>,
     /// Chapter or section reference
     pub chapter: Option<String>,
+    /// Section or page range (v0.3.0) - e.g., "pp. 23-28" or "Section 2.3"
+    pub section: Option<String>,
     /// Part number
     pub part: Option<u32>,
 }

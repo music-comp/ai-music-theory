@@ -177,8 +177,8 @@ async fn extract_source_chapter_metadata(
         category,
         content_type: ContentType::SourceChapter,
         source: fm.source,
-        chapter: fm.chapter.clone(),
-        section: fm.chapter, // Use chapter field for section info (e.g., "pp. 23-28")
+        chapter: fm.chapter,
+        section: fm.section, // Section info (e.g., "pp. 23-28")
         part: fm.part,
         description: fm.description,
         tags: fm.tags,
@@ -263,8 +263,8 @@ async fn extract_guide_metadata(base_path: &Path, file_path: &Path) -> Result<Un
         category,
         content_type: ContentType::Guide,
         source: fm.source,
-        chapter: fm.chapter.clone(),
-        section: fm.chapter, // Use chapter field for section references (e.g., "Section 2.3")
+        chapter: fm.chapter,
+        section: fm.section, // Section references (e.g., "Section 2.3")
         part: fm.part,
         description: fm.description,
         tags: fm.tags,
