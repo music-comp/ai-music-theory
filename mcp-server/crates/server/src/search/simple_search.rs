@@ -68,6 +68,13 @@ impl SearchBackend for SimpleSearch {
                             }
                         }
 
+                        // Apply source filter if specified (v0.3.0)
+                        if let Some(ref filter_source) = params.source {
+                            if doc.source.as_ref() != Some(filter_source) {
+                                continue; // Skip documents that don't match source
+                            }
+                        }
+
                         // Apply content_types filter if specified (v0.3.0)
                         if let Some(ref content_types) = params.content_types {
                             if !content_types.contains(&doc.content_type) {
@@ -172,6 +179,7 @@ mod tests {
             limit: 10,
             query_mode: None,
             category: None,
+            source: None,
             content_types: None,
         };
 

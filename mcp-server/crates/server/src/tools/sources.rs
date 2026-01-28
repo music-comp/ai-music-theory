@@ -227,23 +227,23 @@ pub async fn list_source_chapters(
 async fn list_chapters_from_index(state: &AppState, source_id: &str) -> Result<Vec<ChapterInfo>> {
     use crate::tools::search::SearchConceptsParams;
 
-    // Search for all source chapters by searching for the source name itself
-    // Every chapter has the source in its frontmatter, so this will match all
-    let query = humanize_source_id(source_id);
+    // Use a very common word as the query (since we need some query text)
+    // but rely on source and content_type filters to get the right documents
+    // The word "the" appears in almost all documents
     let params = SearchConceptsParams {
-        query,
-        limit: 1000, // Large limit to get all chapters
+        query: "the".to_string(), // Common word that appears in almost all chapters
+        limit: 1000,              // Large limit to get all chapters
         query_mode: None,
         category: None,
+        source: Some(humanize_source_id(source_id)), // Filter by source facet field
         content_types: Some(vec!["source_chapter".to_string()]),
     };
 
     let results = state.search_backend().search(&params).await?;
 
-    // Filter by source_id in path and convert to ChapterInfo
+    // Convert to ChapterInfo (no need to filter by path since source filter handles it)
     let chapters = results
         .into_iter()
-        .filter(|result| result.path.contains(source_id))
         .map(|result| ChapterInfo {
             id: result.id,
             title: result.title,
@@ -313,6 +313,7 @@ async fn check_source_indexed(state: &AppState, source_id: &str) -> Result<bool>
         limit: 1000,
         query_mode: None,
         category: None,
+        source: None,
         content_types: Some(vec!["source_chapter".to_string()]),
     };
 

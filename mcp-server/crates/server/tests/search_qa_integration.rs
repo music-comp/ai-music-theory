@@ -126,6 +126,7 @@ async fn search_default(
         limit,
         query_mode: None, // Use default Smart mode
         category: None,
+        source: None,
         content_types: None,
     };
 
@@ -153,6 +154,7 @@ async fn search_with_mode(
         limit,
         query_mode: Some(mode),
         category: None,
+        source: None,
         content_types: None,
     };
 
@@ -535,6 +537,7 @@ async fn test_empty_query_error() {
         query: "".to_string(),
         limit: 10,
         category: None,
+        source: None,
         query_mode: None,
         content_types: None,
     };
@@ -558,6 +561,7 @@ async fn test_whitespace_only_query() {
         query: "   ".to_string(),
         limit: 10,
         category: None,
+        source: None,
         query_mode: None,
         content_types: None,
     };
@@ -881,6 +885,7 @@ async fn test_backend_is_tantivy() {
         query: "cadence".to_string(),
         limit: 1,
         category: None,
+        source: None,
         query_mode: None,
         content_types: None,
     };

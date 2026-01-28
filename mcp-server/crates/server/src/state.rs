@@ -821,7 +821,11 @@ Test content.
         config.search.index_path = index_path.to_string_lossy().to_string();
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
         // Set other paths to temp dir to avoid indexing real project files
-        config.paths.sources_md = temp_dir.path().join("sources-md").to_string_lossy().to_string();
+        config.paths.sources_md = temp_dir
+            .path()
+            .join("sources-md")
+            .to_string_lossy()
+            .to_string();
         config.paths.concepts_unified = temp_dir
             .path()
             .join("concepts-unified")
@@ -869,7 +873,11 @@ Test content.
         config.search.index_path = index_path.to_string_lossy().to_string();
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
         // Set other paths to temp dir to avoid indexing real project files
-        config.paths.sources_md = temp_dir.path().join("sources-md").to_string_lossy().to_string();
+        config.paths.sources_md = temp_dir
+            .path()
+            .join("sources-md")
+            .to_string_lossy()
+            .to_string();
         config.paths.concepts_unified = temp_dir
             .path()
             .join("concepts-unified")

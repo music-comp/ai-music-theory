@@ -71,6 +71,9 @@ pub struct SearchConceptsParams {
     /// Optional category filter - only return results from this category
     #[serde(default)]
     category: Option<String>,
+    /// Optional source filter - only return results from this source
+    #[serde(default)]
+    source: Option<String>,
     /// Optional content type filter (v0.3.0) - only return results of these types
     /// Valid values: "concept_card", "source_chapter", "unified_concept", "guide"
     #[serde(default)]
@@ -240,6 +243,7 @@ impl MusicTheoryServer {
             limit: params.0.limit,
             query_mode: params.0.query_mode,
             category: params.0.category,
+            source: params.0.source,
             content_types: params.0.content_types,
         };
 
@@ -524,6 +528,7 @@ mod tests {
             limit: 10,
             query_mode: None,
             category: None,
+            source: None,
             content_types: None,
         });
 
@@ -544,6 +549,7 @@ mod tests {
             limit: 5,
             query_mode: None,
             category: None,
+            source: None,
             content_types: None,
         });
 
@@ -679,6 +685,7 @@ mod tests {
             limit: 5,
             query_mode: None,
             category: None,
+            source: None,
             content_types: None,
         };
         let json = serde_json::to_string(&search_params).unwrap();

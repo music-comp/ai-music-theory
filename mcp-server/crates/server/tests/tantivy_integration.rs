@@ -173,6 +173,7 @@ async fn test_search_returns_relevant_results() {
         query_mode: None,
         limit: 10,
         category: None,
+        source: None,
         content_types: None,
     };
 
@@ -206,6 +207,7 @@ async fn test_search_ranking_by_relevance() {
         query_mode: None,
         limit: 10,
         category: None,
+        source: None,
         content_types: None,
     };
 
@@ -244,6 +246,7 @@ async fn test_fuzzy_search_finds_typos() {
         query_mode: None,
         limit: 10,
         category: None,
+        source: None,
         content_types: None,
     };
 
@@ -283,6 +286,7 @@ async fn test_backend_switching_simple_to_tantivy() {
         query_mode: None,
         limit: 10,
         category: None,
+        source: None,
         content_types: None,
     };
 
@@ -341,6 +345,7 @@ async fn test_snippet_generation_includes_context() {
         query_mode: None,
         limit: 10,
         category: None,
+        source: None,
         content_types: None,
     };
 
@@ -374,6 +379,7 @@ async fn test_empty_query_errors_correctly() {
         query_mode: None,
         limit: 10,
         category: None,
+        source: None,
         content_types: None,
     };
 
@@ -399,6 +405,7 @@ async fn test_search_with_limit() {
         query_mode: None,
         limit: 1,
         category: None,
+        source: None,
         content_types: None,
     };
 
@@ -455,6 +462,7 @@ async fn test_index_rebuild_clears_old_data() {
         query_mode: None,
         limit: 10,
         category: None,
+        source: None,
         content_types: None,
     };
 
@@ -480,6 +488,7 @@ async fn test_search_tool_integration() {
         query_mode: None,
         limit: 5,
         category: None,
+        source: None,
         content_types: None,
     };
 
@@ -509,6 +518,7 @@ async fn test_category_filtering() {
         query_mode: None,
         limit: 10,
         category: None,
+        source: None,
         content_types: None,
     };
     let _response_all = search_concepts(&state, params_all)
@@ -521,6 +531,7 @@ async fn test_category_filtering() {
         query_mode: None,
         limit: 10,
         category: Some("harmony".to_string()),
+        source: None,
         content_types: None,
     };
     let response_harmony = search_concepts(&state, params_harmony)
@@ -541,6 +552,7 @@ async fn test_category_filtering() {
         query_mode: None,
         limit: 10,
         category: Some("counterpoint".to_string()),
+        source: None,
         content_types: None,
     };
     let response_counterpoint = search_concepts(&state, params_counterpoint)
@@ -561,6 +573,7 @@ async fn test_category_filtering() {
         query_mode: None,
         limit: 10,
         category: Some("nonexistent".to_string()),
+        source: None,
         content_types: None,
     };
     let response_nonexistent = search_concepts(&state, params_nonexistent)
@@ -609,6 +622,7 @@ async fn test_phrase_search_order_sensitivity() {
         query_mode: None,
         limit: 10,
         category: None,
+        source: None,
         content_types: None,
     };
     let response_exact = search_concepts(&state, params_exact)
@@ -634,6 +648,7 @@ async fn test_phrase_search_order_sensitivity() {
         query_mode: None,
         limit: 10,
         category: None,
+        source: None,
         content_types: None,
     };
     let response_reversed = search_concepts(&state, params_reversed)
@@ -658,6 +673,7 @@ async fn test_phrase_search_order_sensitivity() {
         query_mode: None,
         limit: 10,
         category: None,
+        source: None,
         content_types: None,
     };
     let response_no_quotes = search_concepts(&state, params_no_quotes)

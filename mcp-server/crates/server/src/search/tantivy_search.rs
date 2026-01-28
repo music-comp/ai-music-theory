@@ -143,6 +143,27 @@ impl SearchBackend for TantivySearch {
             query = Box::new(combined_query);
         }
 
+        // Apply source filter if specified (v0.3.0)
+        if let Some(ref source) = params.source {
+            use tantivy::query::{BooleanQuery, Occur, TermQuery};
+            use tantivy::schema::IndexRecordOption;
+            use tantivy::Term;
+
+            // Create a term query for the source facet field
+            let source_query = TermQuery::new(
+                Term::from_field_text(self.schema.source, source),
+                IndexRecordOption::Basic,
+            );
+
+            // Combine main query with source filter using AND
+            let combined_query = BooleanQuery::new(vec![
+                (Occur::Must, query),
+                (Occur::Must, Box::new(source_query)),
+            ]);
+
+            query = Box::new(combined_query);
+        }
+
         // Apply content_types filter if specified (v0.3.0)
         if let Some(ref content_types) = params.content_types {
             use tantivy::query::{BooleanQuery, Occur, TermQuery};
@@ -566,6 +587,7 @@ mod tests {
             limit: 10,
             query_mode: None,
             category: None,
+            source: None,
             content_types: None,
         };
 
@@ -614,6 +636,7 @@ mod tests {
                 limit: 10,
                 query_mode: None,
                 category: None,
+                source: None,
                 content_types: None,
             };
 
@@ -657,6 +680,7 @@ mod tests {
             limit: 1,
             query_mode: None,
             category: None,
+            source: None,
             content_types: None,
         };
 
@@ -694,6 +718,7 @@ mod tests {
             limit: 10,
             query_mode: None,
             category: None,
+            source: None,
             content_types: None,
         };
 

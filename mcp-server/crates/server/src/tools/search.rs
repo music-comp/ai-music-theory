@@ -47,6 +47,9 @@ pub struct SearchConceptsParams {
     /// Optional category filter - only return results from this category
     #[serde(default)]
     pub category: Option<String>,
+    /// Optional source filter - only return results from this source
+    #[serde(default)]
+    pub source: Option<String>,
     /// Optional content type filter (v0.3.0) - only return results of these types
     /// Valid values: "concept_card", "source_chapter", "unified_concept", "guide"
     /// If None, searches all content types

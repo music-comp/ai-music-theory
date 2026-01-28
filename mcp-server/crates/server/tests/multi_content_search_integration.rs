@@ -131,7 +131,7 @@ Triads form the basis of Western tonal harmony."#,
     fs::write(
         sources_md.join("chapter-1-introduction.md"),
         r#"---
-source: Test Source Book
+source: Test Source
 chapter: Chapter 1
 section: pp. 1-15
 category: fundamentals
@@ -158,7 +158,7 @@ Cadences play an important role in establishing tonality."#,
     fs::write(
         sources_md.join("chapter-2-harmony.md"),
         r#"---
-source: Test Source Book
+source: Test Source
 chapter: Chapter 2
 section: pp. 16-30
 category: harmony
@@ -308,6 +308,7 @@ async fn test_search_without_filter_returns_all_types() {
         limit: 10,
         query_mode: None,
         category: None,
+        source: None,
         content_types: None, // No filter - should return all types
     };
 
@@ -350,6 +351,7 @@ async fn test_search_filter_by_content_type() {
         limit: 10,
         query_mode: None,
         category: None,
+        source: None,
         content_types: Some(vec!["concept_card".to_string()]),
     };
 
@@ -384,6 +386,7 @@ async fn test_search_filter_by_multiple_content_types() {
         limit: 10,
         query_mode: None,
         category: None,
+        source: None,
         content_types: Some(vec!["concept_card".to_string(), "guide".to_string()]),
     };
 
@@ -418,6 +421,7 @@ async fn test_search_with_category_and_content_type_filters() {
         limit: 10,
         query_mode: None,
         category: Some("harmony".to_string()),
+        source: None,
         content_types: Some(vec!["source_chapter".to_string()]),
     };
 
@@ -595,6 +599,7 @@ async fn test_cross_content_type_relevance_ranking() {
         limit: 10,
         query_mode: None,
         category: None,
+        source: None,
         content_types: None,
     };
 
