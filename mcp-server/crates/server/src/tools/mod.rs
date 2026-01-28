@@ -16,7 +16,8 @@ pub use concepts::{get_concept, list_categories, list_concepts};
 pub use graph::{get_node, get_node_edges, graph_stats, graph_status, graph_validate};
 #[allow(unused_imports)]
 pub use graph_query::{
-    find_concept_path, get_concept_neighborhood, get_prerequisites, get_related_concepts,
+    find_concept_path, get_central_concepts, get_concept_neighborhood, get_concept_sources,
+    get_concept_variants, get_dependents, get_prerequisites, get_related_concepts,
 };
 #[allow(unused_imports)]
 pub use guides::{get_guide, list_guides};

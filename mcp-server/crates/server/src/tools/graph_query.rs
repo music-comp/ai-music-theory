@@ -104,8 +104,51 @@ fn default_max_nodes() -> u32 {
     30
 }
 
+/// Parameters for get_dependents.
+#[derive(Debug, Serialize, Deserialize)]
+pub struct GetDependentsParams {
+    /// Concept ID to query
+    pub concept_id: String,
+    /// Depth to traverse (default: 2, max: 4)
+    #[serde(default = "default_depth_2")]
+    pub depth: u32,
+}
+
+fn default_depth_2() -> u32 {
+    2
+}
+
+/// Parameters for get_central_concepts.
+#[derive(Debug, Serialize, Deserialize)]
+pub struct GetCentralConceptsParams {
+    /// Optional category filter
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub category: Option<String>,
+    /// Limit number of results (default: 10, max: 25)
+    #[serde(default = "default_limit_10")]
+    pub limit: u32,
+}
+
+fn default_limit_10() -> u32 {
+    10
+}
+
+/// Parameters for get_concept_sources.
+#[derive(Debug, Serialize, Deserialize)]
+pub struct GetConceptSourcesParams {
+    /// Concept ID to query
+    pub concept_id: String,
+}
+
+/// Parameters for get_concept_variants.
+#[derive(Debug, Serialize, Deserialize)]
+pub struct GetConceptVariantsParams {
+    /// Canonical concept ID
+    pub canonical_id: String,
+}
+
 // ============================================================================
-// Tool Implementations
+// Tool Implementations - Must-Have
 // ============================================================================
 
 /// Get related concepts with optional filtering.
@@ -666,6 +709,385 @@ pub async fn get_concept_neighborhood(
 }
 
 // ============================================================================
+// Tool Implementations - Should-Have
+// ============================================================================
+
+/// Get concepts that depend on this concept.
+///
+/// # Arguments
+///
+/// * `state` - Application state
+/// * `params` - Query parameters
+///
+/// # Returns
+///
+/// Returns DependentsResponse with dependent concepts.
+///
+/// # Errors
+///
+/// Returns error if graph is not loaded, node not found, or depth exceeds limit.
+#[cfg(feature = "graph")]
+pub async fn get_dependents(
+    state: &AppState,
+    params: GetDependentsParams,
+) -> Result<DependentsResponse> {
+    // Validate depth
+    if params.depth > 4 {
+        return Err(crate::error::Error::config(
+            "Depth exceeds maximum of 4".to_string(),
+        ));
+    }
+
+    // Get loaded graph
+    let graph_state = state.graph.read().unwrap();
+    let loaded = match &*graph_state {
+        GraphState::Loaded(loaded) => loaded,
+        GraphState::NotLoaded => {
+            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
+        }
+        GraphState::Loading => {
+            return Err(crate::error::Error::not_found_msg(
+                "Graph is currently loading",
+            ))
+        }
+        GraphState::Failed(error) => {
+            return Err(crate::error::Error::config(format!(
+                "Graph failed to load: {}",
+                error
+            )))
+        }
+    };
+
+    // Lookup node
+    let node_idx = loaded.node_index.get(&params.concept_id).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!("Node not found: {}", params.concept_id))
+    })?;
+
+    // Get concept title
+    let concept_title = match &loaded.graph[*node_idx] {
+        Node::Concept(c) => c.title.clone(),
+        Node::Source(s) => s.title.clone(),
+    };
+
+    // Use dependents algorithm
+    let dependent_indices =
+        crate::graph::algorithms::dependents(&loaded.graph, *node_idx, params.depth);
+
+    // Build response
+    let mut dependents = Vec::new();
+
+    for (dependent_idx, distance) in dependent_indices {
+        let node = &loaded.graph[dependent_idx];
+        if let Node::Concept(concept) = node {
+            let node_id = loaded
+                .node_index
+                .iter()
+                .find(|(_, &idx)| idx == dependent_idx)
+                .map(|(id, _)| id.clone())
+                .unwrap_or_default();
+
+            dependents.push(crate::graph::query::DependentConcept {
+                id: node_id,
+                title: concept.title.clone(),
+                category: concept.category.clone(),
+                depth: distance,
+            });
+        }
+    }
+
+    Ok(DependentsResponse {
+        concept_id: params.concept_id,
+        concept_title,
+        total: dependents.len() as u32,
+        dependents,
+    })
+}
+
+/// Get most connected concepts by degree centrality.
+///
+/// # Arguments
+///
+/// * `state` - Application state
+/// * `params` - Query parameters
+///
+/// # Returns
+///
+/// Returns CentralConceptsResponse with most connected concepts.
+///
+/// # Errors
+///
+/// Returns error if graph is not loaded or limit exceeds maximum.
+#[cfg(feature = "graph")]
+pub async fn get_central_concepts(
+    state: &AppState,
+    params: GetCentralConceptsParams,
+) -> Result<CentralConceptsResponse> {
+    // Validate limit
+    if params.limit > 25 {
+        return Err(crate::error::Error::config(
+            "Limit exceeds maximum of 25".to_string(),
+        ));
+    }
+
+    // Get loaded graph
+    let graph_state = state.graph.read().unwrap();
+    let loaded = match &*graph_state {
+        GraphState::Loaded(loaded) => loaded,
+        GraphState::NotLoaded => {
+            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
+        }
+        GraphState::Loading => {
+            return Err(crate::error::Error::not_found_msg(
+                "Graph is currently loading",
+            ))
+        }
+        GraphState::Failed(error) => {
+            return Err(crate::error::Error::config(format!(
+                "Graph failed to load: {}",
+                error
+            )))
+        }
+    };
+
+    // Use degree_centrality algorithm
+    let central_indices = crate::graph::algorithms::degree_centrality(
+        &loaded.graph,
+        params.category.as_deref(),
+    );
+
+    // Build response (limit results)
+    let mut concepts = Vec::new();
+    for (node_idx, degree) in central_indices.iter().take(params.limit as usize) {
+        let node = &loaded.graph[*node_idx];
+        if let Node::Concept(concept) = node {
+            let node_id = loaded
+                .node_index
+                .iter()
+                .find(|(_, &idx)| idx == *node_idx)
+                .map(|(id, _)| id.clone())
+                .unwrap_or_default();
+
+            concepts.push(crate::graph::query::CentralConcept {
+                id: node_id,
+                title: concept.title.clone(),
+                category: concept.category.clone(),
+                connections: *degree,
+            });
+        }
+    }
+
+    Ok(CentralConceptsResponse {
+        category: params.category,
+        total: concepts.len() as u32,
+        concepts,
+    })
+}
+
+/// Get sources that cover a concept.
+///
+/// # Arguments
+///
+/// * `state` - Application state
+/// * `params` - Query parameters
+///
+/// # Returns
+///
+/// Returns ConceptSourcesResponse with source information.
+///
+/// # Errors
+///
+/// Returns error if graph is not loaded or node not found.
+#[cfg(feature = "graph")]
+pub async fn get_concept_sources(
+    state: &AppState,
+    params: GetConceptSourcesParams,
+) -> Result<ConceptSourcesResponse> {
+    // Get loaded graph
+    let graph_state = state.graph.read().unwrap();
+    let loaded = match &*graph_state {
+        GraphState::Loaded(loaded) => loaded,
+        GraphState::NotLoaded => {
+            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
+        }
+        GraphState::Loading => {
+            return Err(crate::error::Error::not_found_msg(
+                "Graph is currently loading",
+            ))
+        }
+        GraphState::Failed(error) => {
+            return Err(crate::error::Error::config(format!(
+                "Graph failed to load: {}",
+                error
+            )))
+        }
+    };
+
+    // Lookup node
+    let node_idx = loaded.node_index.get(&params.concept_id).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!("Node not found: {}", params.concept_id))
+    })?;
+
+    // Get concept title
+    let concept_title = match &loaded.graph[*node_idx] {
+        Node::Concept(c) => c.title.clone(),
+        Node::Source(_) => {
+            return Err(crate::error::Error::config(
+                "Cannot get sources for a source node".to_string(),
+            ))
+        }
+    };
+
+    // Find all incoming edges from Source nodes
+    let mut sources = Vec::new();
+    for edge in loaded
+        .graph
+        .edges_directed(*node_idx, Direction::Incoming)
+    {
+        let source_idx = edge.source();
+        let source_node = &loaded.graph[source_idx];
+
+        if let Node::Source(source) = source_node {
+            // Check if it's Introduces or Covers relationship
+            let relationship = &edge.weight().relationship;
+            if matches!(relationship, Relationship::Introduces | Relationship::Covers) {
+                let source_id = loaded
+                    .node_index
+                    .iter()
+                    .find(|(_, &idx)| idx == source_idx)
+                    .map(|(id, _)| id.clone())
+                    .unwrap_or_default();
+
+                sources.push(crate::graph::query::SourceCoverage {
+                    source_id,
+                    source_title: source.title.clone(),
+                    source_author: source.author.clone(),
+                    relationship: format!("{:?}", relationship),
+                });
+            }
+        }
+    }
+
+    Ok(ConceptSourcesResponse {
+        concept_id: params.concept_id,
+        concept_title,
+        total: sources.len() as u32,
+        sources,
+    })
+}
+
+/// Get variants of a canonical concept across different sources.
+///
+/// # Arguments
+///
+/// * `state` - Application state
+/// * `params` - Query parameters
+///
+/// # Returns
+///
+/// Returns ConceptVariantsResponse with all source-specific variants.
+///
+/// # Errors
+///
+/// Returns error if graph is not loaded or canonical concept not found.
+#[cfg(feature = "graph")]
+pub async fn get_concept_variants(
+    state: &AppState,
+    params: GetConceptVariantsParams,
+) -> Result<ConceptVariantsResponse> {
+    // Get loaded graph
+    let graph_state = state.graph.read().unwrap();
+    let loaded = match &*graph_state {
+        GraphState::Loaded(loaded) => loaded,
+        GraphState::NotLoaded => {
+            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
+        }
+        GraphState::Loading => {
+            return Err(crate::error::Error::not_found_msg(
+                "Graph is currently loading",
+            ))
+        }
+        GraphState::Failed(error) => {
+            return Err(crate::error::Error::config(format!(
+                "Graph failed to load: {}",
+                error
+            )))
+        }
+    };
+
+    // Verify canonical concept exists
+    let canonical_idx = loaded
+        .node_index
+        .get(&params.canonical_id)
+        .ok_or_else(|| {
+            crate::error::Error::not_found_msg(format!(
+                "Canonical concept not found: {}",
+                params.canonical_id
+            ))
+        })?;
+
+    let canonical_title = match &loaded.graph[*canonical_idx] {
+        Node::Concept(c) => {
+            if !c.is_canonical {
+                return Err(crate::error::Error::config(format!(
+                    "Concept {} is not marked as canonical",
+                    params.canonical_id
+                )));
+            }
+            c.title.clone()
+        }
+        Node::Source(_) => {
+            return Err(crate::error::Error::config(
+                "Cannot get variants for a source node".to_string(),
+            ))
+        }
+    };
+
+    // Find all concepts with matching canonical_id
+    let mut variants = Vec::new();
+    for node_idx in loaded.graph.node_indices() {
+        let node = &loaded.graph[node_idx];
+        if let Node::Concept(concept) = node {
+            if let Some(ref canon_id) = concept.canonical_id {
+                if canon_id == &params.canonical_id {
+                    let node_id = loaded
+                        .node_index
+                        .iter()
+                        .find(|(_, &idx)| idx == node_idx)
+                        .map(|(id, _)| id.clone())
+                        .unwrap_or_default();
+
+                    // Get source title
+                    let source_title = if let Some(source_idx) =
+                        loaded.node_index.get(&concept.source_id)
+                    {
+                        match &loaded.graph[*source_idx] {
+                            Node::Source(s) => s.title.clone(),
+                            _ => concept.source_id.clone(), // Fallback to ID
+                        }
+                    } else {
+                        concept.source_id.clone() // Fallback to ID
+                    };
+
+                    variants.push(crate::graph::query::ConceptVariant {
+                        id: node_id,
+                        title: concept.title.clone(),
+                        source_id: concept.source_id.clone(),
+                        source_title,
+                    });
+                }
+            }
+        }
+    }
+
+    Ok(ConceptVariantsResponse {
+        canonical_id: params.canonical_id,
+        canonical_title,
+        total: variants.len() as u32,
+        variants,
+    })
+}
+
+// ============================================================================
 // Helper Functions
 // ============================================================================
 
@@ -707,7 +1129,7 @@ pub async fn get_related_concepts(
     _params: GetRelatedConceptsParams,
 ) -> Result<String> {
     Err(crate::error::Error::config(
-        "Graph feature not enabled. Rebuild with --features graph",
+        "Graph feature not enabled. Rebuild with --features graph".to_string(),
     ))
 }
 
@@ -717,7 +1139,7 @@ pub async fn find_concept_path(
     _params: FindConceptPathParams,
 ) -> Result<String> {
     Err(crate::error::Error::config(
-        "Graph feature not enabled. Rebuild with --features graph",
+        "Graph feature not enabled. Rebuild with --features graph".to_string(),
     ))
 }
 
@@ -727,7 +1149,7 @@ pub async fn get_prerequisites(
     _params: GetPrerequisitesParams,
 ) -> Result<String> {
     Err(crate::error::Error::config(
-        "Graph feature not enabled. Rebuild with --features graph",
+        "Graph feature not enabled. Rebuild with --features graph".to_string(),
     ))
 }
 
@@ -737,7 +1159,47 @@ pub async fn get_concept_neighborhood(
     _params: GetConceptNeighborhoodParams,
 ) -> Result<String> {
     Err(crate::error::Error::config(
-        "Graph feature not enabled. Rebuild with --features graph",
+        "Graph feature not enabled. Rebuild with --features graph".to_string(),
+    ))
+}
+
+#[cfg(not(feature = "graph"))]
+pub async fn get_dependents(
+    _state: &AppState,
+    _params: GetDependentsParams,
+) -> Result<String> {
+    Err(crate::error::Error::config(
+        "Graph feature not enabled. Rebuild with --features graph".to_string(),
+    ))
+}
+
+#[cfg(not(feature = "graph"))]
+pub async fn get_central_concepts(
+    _state: &AppState,
+    _params: GetCentralConceptsParams,
+) -> Result<String> {
+    Err(crate::error::Error::config(
+        "Graph feature not enabled. Rebuild with --features graph".to_string(),
+    ))
+}
+
+#[cfg(not(feature = "graph"))]
+pub async fn get_concept_sources(
+    _state: &AppState,
+    _params: GetConceptSourcesParams,
+) -> Result<String> {
+    Err(crate::error::Error::config(
+        "Graph feature not enabled. Rebuild with --features graph".to_string(),
+    ))
+}
+
+#[cfg(not(feature = "graph"))]
+pub async fn get_concept_variants(
+    _state: &AppState,
+    _params: GetConceptVariantsParams,
+) -> Result<String> {
+    Err(crate::error::Error::config(
+        "Graph feature not enabled. Rebuild with --features graph".to_string(),
     ))
 }
 
@@ -773,5 +1235,34 @@ mod tests {
         let params: GetConceptNeighborhoodParams = serde_json::from_str(json).unwrap();
         assert_eq!(params.radius, 2);
         assert_eq!(params.max_nodes, 30);
+    }
+
+    #[test]
+    fn test_get_dependents_params_default() {
+        let json = r#"{"concept_id": "test"}"#;
+        let params: GetDependentsParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.depth, 2);
+    }
+
+    #[test]
+    fn test_get_central_concepts_params_default() {
+        let json = r#"{}"#;
+        let params: GetCentralConceptsParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.limit, 10);
+        assert!(params.category.is_none());
+    }
+
+    #[test]
+    fn test_get_concept_sources_params() {
+        let json = r#"{"concept_id": "test"}"#;
+        let params: GetConceptSourcesParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.concept_id, "test");
+    }
+
+    #[test]
+    fn test_get_concept_variants_params() {
+        let json = r#"{"canonical_id": "test"}"#;
+        let params: GetConceptVariantsParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.canonical_id, "test");
     }
 }
