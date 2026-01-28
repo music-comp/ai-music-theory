@@ -59,8 +59,11 @@ impl SearchBackend for SimpleSearch {
             if let Ok(meta) = extract_concept_metadata(&concept_cards_path, path).await {
                 // Build SearchDocument
                 if let Ok(doc) = SearchDocument::from_metadata(meta, path).await {
-                    // Check if document matches query
-                    if doc.matches_query(&params.query) {
+                    // Check if document matches query (skip for wildcard queries)
+                    let matches_query = params.query == "*"
+                        || params.query.is_empty()
+                        || doc.matches_query(&params.query);
+                    if matches_query {
                         // Apply category filter if specified
                         if let Some(ref filter_category) = params.category {
                             if &doc.category != filter_category {

@@ -527,14 +527,14 @@ async fn test_single_term_unchanged() {
 #[tokio::test]
 #[serial]
 #[cfg(feature = "fts")]
-async fn test_empty_query_error() {
+async fn test_empty_query_matches_all() {
     ensure_index_built().await;
 
     let config = test_config();
     let state = AppState::new(config).await.expect("Failed to create state");
 
     let params = SearchConceptsParams {
-        query: "".to_string(),
+        query: "".to_string(), // Empty query should match all documents
         limit: 10,
         category: None,
         source: None,
@@ -544,8 +544,47 @@ async fn test_empty_query_error() {
 
     let result = search_concepts(&state, params).await;
 
-    // Empty query should return error
-    assert!(result.is_err(), "Empty query should return an error");
+    // Empty query should succeed and return documents (uses AllQuery)
+    assert!(result.is_ok(), "Empty query should succeed");
+    let response = result.unwrap();
+    assert!(
+        !response.results.is_empty(),
+        "Empty query should return documents"
+    );
+}
+
+#[tokio::test]
+#[serial]
+#[cfg(feature = "fts")]
+async fn test_wildcard_query_matches_all() {
+    ensure_index_built().await;
+
+    let config = test_config();
+    let state = AppState::new(config).await.expect("Failed to create state");
+
+    let params = SearchConceptsParams {
+        query: "*".to_string(), // Wildcard query should match all documents
+        limit: 10,
+        category: None,
+        source: None,
+        query_mode: None,
+        content_types: None,
+    };
+
+    let result = search_concepts(&state, params).await;
+
+    // Wildcard query should succeed and return documents (uses AllQuery)
+    assert!(result.is_ok(), "Wildcard query should succeed");
+    let response = result.unwrap();
+    assert!(
+        !response.results.is_empty(),
+        "Wildcard query should return documents"
+    );
+    assert_eq!(
+        response.total,
+        response.results.len(),
+        "Should return up to limit"
+    );
 }
 
 #[tokio::test]

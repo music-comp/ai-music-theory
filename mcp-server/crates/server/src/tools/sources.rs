@@ -227,23 +227,24 @@ pub async fn list_source_chapters(
 async fn list_chapters_from_index(state: &AppState, source_id: &str) -> Result<Vec<ChapterInfo>> {
     use crate::tools::search::SearchConceptsParams;
 
-    // Use a very common word as the query (since we need some query text)
-    // but rely on source and content_type filters to get the right documents
-    // The word "the" appears in almost all documents
+    // Use wildcard query to match ALL documents, then filter by content_type
+    // We filter by path instead of source facet field to handle chapters
+    // that may have missing or inconsistent source metadata
     let params = SearchConceptsParams {
-        query: "the".to_string(), // Common word that appears in almost all chapters
-        limit: 1000,              // Large limit to get all chapters
+        query: "*".to_string(), // Match all documents (uses AllQuery in Tantivy)
+        limit: 1000,            // Large limit to get all chapters
         query_mode: None,
         category: None,
-        source: Some(humanize_source_id(source_id)), // Filter by source facet field
+        source: None, // Don't filter by source facet - use path filter instead
         content_types: Some(vec!["source_chapter".to_string()]),
     };
 
     let results = state.search_backend().search(&params).await?;
 
-    // Convert to ChapterInfo (no need to filter by path since source filter handles it)
+    // Filter by source_id in path (handles chapters with missing/inconsistent source metadata)
     let chapters = results
         .into_iter()
+        .filter(|result| result.path.contains(source_id))
         .map(|result| ChapterInfo {
             id: result.id,
             title: result.title,

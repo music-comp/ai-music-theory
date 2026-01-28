@@ -900,7 +900,7 @@ Test content.
 
     #[tokio::test]
     #[cfg(feature = "fts")]
-    async fn test_start_background_indexing_failure() {
+    async fn test_start_background_indexing_empty_directory() {
         use std::env;
         use tempfile::TempDir;
         use tokio::time::{sleep, Duration};
@@ -910,7 +910,7 @@ Test content.
 
         let mut config = test_config("tantivy");
         config.search.index_path = index_path.to_string_lossy().to_string();
-        // Use nonexistent concept cards path to cause indexing failure
+        // Use nonexistent concept cards path - graceful degradation should handle this
         let nonexistent_path =
             env::temp_dir().join(format!("nonexistent-cards-{}", std::process::id()));
         config.paths.concept_cards = nonexistent_path.to_string_lossy().to_string();
@@ -920,15 +920,23 @@ Test content.
         // Verify initial state
         assert!(!state.is_fts_ready());
 
-        // Manually call start_background_indexing (will fail due to missing concept cards)
+        // Manually call start_background_indexing (will succeed with 0 documents due to graceful degradation)
         start_background_indexing(Arc::clone(&state));
 
-        // Give it time to attempt and fail
-        sleep(Duration::from_millis(500)).await;
+        // Poll for FTS to become ready (with timeout for CI environments)
+        let mut attempts = 0;
+        while !state.is_fts_ready() && attempts < 40 {
+            sleep(Duration::from_millis(100)).await;
+            attempts += 1;
+        }
 
-        // Should remain not ready since indexing failed
-        assert!(!state.is_fts_ready());
-        assert_eq!(state.active_backend_name(), "simple");
+        // Should become ready even with no documents (graceful degradation feature)
+        assert!(
+            state.is_fts_ready(),
+            "FTS should be ready after indexing empty directories (waited {} ms)",
+            attempts * 100
+        );
+        assert_eq!(state.active_backend_name(), "tantivy");
     }
 
     #[tokio::test]

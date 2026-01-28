@@ -119,8 +119,14 @@ impl SearchBackend for TantivySearch {
             self.config.clone()
         };
 
-        let query_builder = QueryBuilder::new(&self.schema, &config);
-        let mut query = query_builder.build_query(&params.query)?;
+        // Build query - use AllQuery for empty/wildcard queries to match all documents
+        let mut query: Box<dyn tantivy::query::Query> =
+            if params.query.is_empty() || params.query == "*" {
+                Box::new(tantivy::query::AllQuery)
+            } else {
+                let query_builder = QueryBuilder::new(&self.schema, &config);
+                query_builder.build_query(&params.query)?
+            };
 
         // Apply category filter if specified
         if let Some(ref category) = params.category {
