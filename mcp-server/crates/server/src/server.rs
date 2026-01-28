@@ -89,6 +89,25 @@ pub struct GetGuideParams {
     guide_id: String,
 }
 
+#[cfg(feature = "graph")]
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct GetNodeParams {
+    node_id: String,
+}
+
+#[cfg(feature = "graph")]
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct GetNodeEdgesParams {
+    node_id: String,
+    #[serde(default = "default_direction")]
+    direction: String,
+}
+
+#[cfg(feature = "graph")]
+fn default_direction() -> String {
+    "both".to_string()
+}
+
 /// Helper function to create serialization error response.
 fn serialization_error(e: serde_json::Error) -> ErrorData {
     ErrorData::new(
@@ -284,6 +303,73 @@ impl MusicTheoryServer {
         let response = tools::health::get_health(&self.state)
             .await
             .map_err(|e| e.to_mcp_error("Error getting health status"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[cfg(feature = "graph")]
+    #[tool(description = "Get concept graph status and basic statistics")]
+    async fn graph_status(&self) -> Result<CallToolResult, ErrorData> {
+        let response = tools::graph::graph_status(&self.state)
+            .await
+            .map_err(|e| e.to_mcp_error("Error getting graph status"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[cfg(feature = "graph")]
+    #[tool(description = "Get detailed concept graph statistics (categories, relationships)")]
+    async fn graph_stats(&self) -> Result<CallToolResult, ErrorData> {
+        let response = tools::graph::graph_stats(&self.state)
+            .await
+            .map_err(|e| e.to_mcp_error("Error getting graph statistics"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[cfg(feature = "graph")]
+    #[tool(description = "Validate concept graph integrity (orphans, self-loops)")]
+    async fn graph_validate(&self) -> Result<CallToolResult, ErrorData> {
+        let response = tools::graph::graph_validate(&self.state)
+            .await
+            .map_err(|e| e.to_mcp_error("Error validating graph"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[cfg(feature = "graph")]
+    #[tool(description = "Get node information by ID with in/out degree counts")]
+    async fn get_node(
+        &self,
+        params: Parameters<GetNodeParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let response = tools::graph::get_node(&self.state, &params.0.node_id)
+            .await
+            .map_err(|e| e.to_mcp_error("Error getting node"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[cfg(feature = "graph")]
+    #[tool(description = "Get all edges for a node with optional direction filter")]
+    async fn get_node_edges(
+        &self,
+        params: Parameters<GetNodeEdgesParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let response =
+            tools::graph::get_node_edges(&self.state, &params.0.node_id, &params.0.direction)
+                .await
+                .map_err(|e| e.to_mcp_error("Error getting node edges"))?;
 
         let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
 
