@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "edges": [
+    {
+      "from": "example-concept-a",
+      "to": "example-concept-b",
+      "relationship": "RelatesTo",
+      "weight": 0.8,
+      "origin": "Manual"
+    }
+  ],
+  "metadata": {
+    "description": "Manual edge overrides for the concept graph",
+    "note": "Edges defined here will be merged into the graph, overriding any automatically extracted edges with the same from/to nodes"
+  }
+}

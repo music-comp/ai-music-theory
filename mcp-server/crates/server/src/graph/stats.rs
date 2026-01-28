@@ -206,8 +206,10 @@ pub fn compute_all_stats(graph: &ConceptGraph) -> GraphStatistics {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::graph::types::{ConceptNode, Edge, EdgeOrigin, GraphData, Relationship, SourceNode, GraphMetadata};
     use crate::graph::persistence::to_petgraph;
+    use crate::graph::types::{
+        ConceptNode, Edge, EdgeOrigin, GraphData, GraphMetadata, Relationship, SourceNode,
+    };
 
     fn create_test_graph() -> ConceptGraph {
         let concept_a = Node::Concept(ConceptNode {

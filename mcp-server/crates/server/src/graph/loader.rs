@@ -99,9 +99,11 @@ fn compute_graph_stats(graph: &ConceptGraph) -> GraphStats {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use tempfile::TempDir;
-    use crate::graph::types::{ConceptNode, SourceNode, Edge, Relationship, EdgeOrigin, GraphData, GraphMetadata};
     use crate::graph::persistence::save_graph;
+    use crate::graph::types::{
+        ConceptNode, Edge, EdgeOrigin, GraphData, GraphMetadata, Relationship, SourceNode,
+    };
+    use tempfile::TempDir;
 
     async fn create_test_data_dir() -> TempDir {
         let temp_dir = TempDir::new().unwrap();

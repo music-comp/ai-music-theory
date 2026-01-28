@@ -254,9 +254,7 @@ pub async fn graph_stats(state: &AppState) -> Result<GraphStatsResponse> {
     let loaded = match &*graph_state {
         GraphState::Loaded(loaded) => loaded,
         GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph not loaded yet",
-            ))
+            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
         }
         GraphState::Loading => {
             return Err(crate::error::Error::not_found_msg(
@@ -334,9 +332,7 @@ pub async fn graph_validate(state: &AppState) -> Result<GraphValidateResponse> {
     let loaded = match &*graph_state {
         GraphState::Loaded(loaded) => loaded,
         GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph not loaded yet",
-            ))
+            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
         }
         GraphState::Loading => {
             return Err(crate::error::Error::not_found_msg(
@@ -359,8 +355,12 @@ pub async fn graph_validate(state: &AppState) -> Result<GraphValidateResponse> {
 
     // Check for orphan nodes (no incoming or outgoing edges)
     for idx in graph.node_indices() {
-        let in_degree = graph.edges_directed(idx, petgraph::Direction::Incoming).count();
-        let out_degree = graph.edges_directed(idx, petgraph::Direction::Outgoing).count();
+        let in_degree = graph
+            .edges_directed(idx, petgraph::Direction::Incoming)
+            .count();
+        let out_degree = graph
+            .edges_directed(idx, petgraph::Direction::Outgoing)
+            .count();
 
         if in_degree == 0 && out_degree == 0 {
             orphan_count += 1;
@@ -413,9 +413,7 @@ pub async fn get_node(state: &AppState, node_id: &str) -> Result<NodeInfo> {
     let loaded = match &*graph_state {
         GraphState::Loaded(loaded) => loaded,
         GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph not loaded yet",
-            ))
+            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
         }
         GraphState::Loading => {
             return Err(crate::error::Error::not_found_msg(
@@ -430,10 +428,9 @@ pub async fn get_node(state: &AppState, node_id: &str) -> Result<NodeInfo> {
         }
     };
 
-    let node_idx = loaded
-        .node_index
-        .get(node_id)
-        .ok_or_else(|| crate::error::Error::not_found_msg(&format!("Node not found: {}", node_id)))?;
+    let node_idx = loaded.node_index.get(node_id).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!("Node not found: {}", node_id))
+    })?;
 
     let node = &loaded.graph[*node_idx];
     let in_degree = loaded
@@ -501,9 +498,7 @@ pub async fn get_node_edges(
     let loaded = match &*graph_state {
         GraphState::Loaded(loaded) => loaded,
         GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph not loaded yet",
-            ))
+            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
         }
         GraphState::Loading => {
             return Err(crate::error::Error::not_found_msg(
@@ -518,10 +513,9 @@ pub async fn get_node_edges(
         }
     };
 
-    let node_idx = loaded
-        .node_index
-        .get(node_id)
-        .ok_or_else(|| crate::error::Error::not_found_msg(&format!("Node not found: {}", node_id)))?;
+    let node_idx = loaded.node_index.get(node_id).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!("Node not found: {}", node_id))
+    })?;
 
     let mut incoming = Vec::new();
     let mut outgoing = Vec::new();

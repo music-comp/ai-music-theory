@@ -300,8 +300,7 @@ impl GraphBuilder {
     ///
     /// Manual edges override any existing edges with the same (from, to, relationship) tuple.
     fn merge_manual_edges(&mut self, path: &Path) -> Result<()> {
-        let content =
-            std::fs::read_to_string(path).map_err(|e| Error::io_with_path(e, path))?;
+        let content = std::fs::read_to_string(path).map_err(|e| Error::io_with_path(e, path))?;
 
         let manual: ManualEdgesFile = serde_json::from_str(&content)
             .map_err(|e| Error::config(format!("Failed to parse manual_edges.json: {}", e)))?;
@@ -368,7 +367,7 @@ impl GraphBuilder {
 
         // Remove duplicates (in reverse order to preserve indices)
         to_remove.sort_by(|a, b| b.cmp(a));
-        to_remove.dedup();  // Remove any duplicate indices from to_remove list
+        to_remove.dedup(); // Remove any duplicate indices from to_remove list
         for idx in to_remove {
             self.edges.remove(idx);
         }
@@ -495,10 +494,7 @@ mod tests {
             "Open Music Theory"
         );
 
-        assert_eq!(
-            extract_title_from_filename("NoAuthor.pdf"),
-            "NoAuthor"
-        );
+        assert_eq!(extract_title_from_filename("NoAuthor.pdf"), "NoAuthor");
     }
 
     #[test]

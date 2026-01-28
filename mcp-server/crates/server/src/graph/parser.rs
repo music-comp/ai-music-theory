@@ -83,7 +83,11 @@ pub fn parse_related_concepts(markdown: &str) -> Option<RelatedConcepts> {
 /// Find the start position of the "Related Concepts" section.
 fn find_related_concepts_section(markdown: &str) -> Option<usize> {
     // Look for various heading formats
-    for heading in &["## Related Concepts", "##Related Concepts", "## related concepts"] {
+    for heading in &[
+        "## Related Concepts",
+        "##Related Concepts",
+        "## related concepts",
+    ] {
         if let Some(pos) = markdown.find(heading) {
             return Some(pos);
         }
@@ -151,7 +155,7 @@ fn parse_concept_ids(ids_str: &str) -> Vec<String> {
 fn normalize_concept_id(id: &str) -> String {
     id.trim()
         .to_lowercase()
-        .split_whitespace()  // Split on any whitespace, collapsing multiple spaces
+        .split_whitespace() // Split on any whitespace, collapsing multiple spaces
         .collect::<Vec<&str>>()
         .join("-")
 }
@@ -178,7 +182,10 @@ More content.
 "#;
 
         let related = parse_related_concepts(markdown).unwrap();
-        assert_eq!(related.prerequisite, vec!["dissonance", "voice-leading", "non-chord-tone"]);
+        assert_eq!(
+            related.prerequisite,
+            vec!["dissonance", "voice-leading", "non-chord-tone"]
+        );
         assert_eq!(related.leads_to, vec!["retardation", "anticipation"]);
         assert_eq!(related.see_also, vec!["appoggiatura", "passing-tone"]);
         assert_eq!(related.total_count(), 7);

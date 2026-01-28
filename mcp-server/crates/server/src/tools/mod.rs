@@ -12,6 +12,8 @@ pub mod graph;
 #[allow(unused_imports)]
 pub use concepts::{get_concept, list_categories, list_concepts};
 #[allow(unused_imports)]
+pub use graph::{get_node, get_node_edges, graph_stats, graph_status, graph_validate};
+#[allow(unused_imports)]
 pub use guides::{get_guide, list_guides};
 #[allow(unused_imports)]
 pub use health::get_health;
@@ -19,8 +21,6 @@ pub use health::get_health;
 pub use search::search_concepts;
 #[allow(unused_imports)]
 pub use sources::{get_source_chapter, get_source_pdf_path, list_sources};
-#[allow(unused_imports)]
-pub use graph::{get_node, get_node_edges, graph_stats, graph_status, graph_validate};
 
 // Re-export common types for tool implementations
 #[allow(unused_imports)]

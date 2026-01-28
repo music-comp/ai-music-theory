@@ -87,8 +87,10 @@ pub fn validate_graph(graph: &ConceptGraph) -> ValidationResults {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::graph::types::{ConceptNode, Edge, EdgeOrigin, GraphData, Node, Relationship, SourceNode, GraphMetadata};
     use crate::graph::persistence::to_petgraph;
+    use crate::graph::types::{
+        ConceptNode, Edge, EdgeOrigin, GraphData, GraphMetadata, Node, Relationship, SourceNode,
+    };
 
     fn create_test_graph_valid() -> ConceptGraph {
         let concept_a = Node::Concept(ConceptNode {

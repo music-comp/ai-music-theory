@@ -456,7 +456,10 @@ async fn handle_status_command(log_level_override: Option<String>) -> Result<()>
 
 /// Handle graph subcommands.
 #[cfg(feature = "graph")]
-async fn handle_graph_command(graph_cmds: GraphCommands, log_level_override: Option<String>) -> Result<()> {
+async fn handle_graph_command(
+    graph_cmds: GraphCommands,
+    log_level_override: Option<String>,
+) -> Result<()> {
     // Initialize logging before any graph operations
     let config = Config::load()?;
     let opts = apply_log_level_override(&config.logging, log_level_override)?;
@@ -466,15 +469,9 @@ async fn handle_graph_command(graph_cmds: GraphCommands, log_level_override: Opt
         GraphSubcommand::Build { dry_run, verbose } => {
             crate::graph::cli::handle_build(&config, dry_run, verbose).await
         }
-        GraphSubcommand::Validate => {
-            crate::graph::cli::handle_validate(&config).await
-        }
-        GraphSubcommand::Stats => {
-            crate::graph::cli::handle_stats(&config).await
-        }
-        GraphSubcommand::Compile => {
-            crate::graph::cli::handle_compile(&config).await
-        }
+        GraphSubcommand::Validate => crate::graph::cli::handle_validate(&config).await,
+        GraphSubcommand::Stats => crate::graph::cli::handle_stats(&config).await,
+        GraphSubcommand::Compile => crate::graph::cli::handle_compile(&config).await,
     }
 }
 

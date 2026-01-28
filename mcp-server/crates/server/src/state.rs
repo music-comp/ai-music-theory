@@ -299,7 +299,10 @@ pub async fn initialize_graph(state: &Arc<AppState>) -> Result<()> {
     let graph_path = data_dir.join("graphs").join("concept_graph.json");
 
     if !graph_path.exists() {
-        log::info!("Concept graph not found at {}. Run `music-theory-mcp graph build` to create it.", graph_path.display());
+        log::info!(
+            "Concept graph not found at {}. Run `music-theory-mcp graph build` to create it.",
+            graph_path.display()
+        );
         return Ok(());
     }
 

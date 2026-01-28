@@ -2,6 +2,9 @@
 .tantivy-index/
 .tantivy-index-test/
 
+# Graph database cache
+data/.cache/
+
 # Build artifacts
 target/
 *.rlib

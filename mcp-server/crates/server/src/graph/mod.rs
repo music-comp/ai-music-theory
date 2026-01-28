@@ -19,26 +19,26 @@
 //! This module is feature-gated with `#[cfg(feature = "graph")]` and only compiles
 //! when the `graph` feature is enabled.
 
-pub mod types;
-pub mod parser;
 pub mod builder;
-pub mod persistence;
-pub mod loader;
 pub mod cli;
-pub mod validation;
+pub mod loader;
+pub mod parser;
+pub mod persistence;
 pub mod stats;
+pub mod types;
+pub mod validation;
 
 // Re-export commonly used types
-pub use types::{
-    ConceptNode, Edge, EdgeOrigin, GraphData, GraphMetadata, Node, Relationship, SourceNode,
-};
-pub use parser::{parse_related_concepts, RelatedConcepts};
 pub use builder::GraphBuilder;
-pub use persistence::{load_graph, save_graph, to_petgraph, ConceptGraph};
 pub use loader::{load_concept_graph, GraphStats, LoadedGraph};
-pub use validation::{validate_graph, ValidationResults};
+pub use parser::{parse_related_concepts, RelatedConcepts};
+pub use persistence::{load_graph, save_graph, to_petgraph, ConceptGraph};
 pub use stats::{
     compute_all_stats, compute_degree_stats, count_by_category, count_by_relationship,
     count_nodes_by_type, CategoryCount, DegreeStats, GraphStatistics, NodeCounts,
     RelationshipCount,
 };
+pub use types::{
+    ConceptNode, Edge, EdgeOrigin, GraphData, GraphMetadata, Node, Relationship, SourceNode,
+};
+pub use validation::{validate_graph, ValidationResults};

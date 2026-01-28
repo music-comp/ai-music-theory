@@ -80,8 +80,12 @@ pub async fn handle_validate(config: &Config) -> Result<()> {
 
     // Check for orphan nodes (no incoming or outgoing edges)
     for idx in graph.node_indices() {
-        let in_degree = graph.edges_directed(idx, petgraph::Direction::Incoming).count();
-        let out_degree = graph.edges_directed(idx, petgraph::Direction::Outgoing).count();
+        let in_degree = graph
+            .edges_directed(idx, petgraph::Direction::Incoming)
+            .count();
+        let out_degree = graph
+            .edges_directed(idx, petgraph::Direction::Outgoing)
+            .count();
 
         if in_degree == 0 && out_degree == 0 {
             orphan_count += 1;
@@ -97,7 +101,10 @@ pub async fn handle_validate(config: &Config) -> Result<()> {
     }
 
     if orphan_count > 0 {
-        issues.push(format!("Found {} orphan nodes (no relationships)", orphan_count));
+        issues.push(format!(
+            "Found {} orphan nodes (no relationships)",
+            orphan_count
+        ));
     }
 
     if self_loop_count > 0 {
@@ -106,7 +113,11 @@ pub async fn handle_validate(config: &Config) -> Result<()> {
 
     if issues.is_empty() {
         println!("✓ Graph is valid");
-        println!("  {} nodes, {} edges", graph.node_count(), graph.edge_count());
+        println!(
+            "  {} nodes, {} edges",
+            graph.node_count(),
+            graph.edge_count()
+        );
     } else {
         println!("✗ Graph has issues:");
         for issue in &issues {
@@ -123,13 +134,14 @@ pub async fn handle_validate(config: &Config) -> Result<()> {
 ///
 /// * `config` - Server configuration
 pub async fn handle_stats(config: &Config) -> Result<()> {
-    use std::collections::HashMap;
     use super::types::Node;
+    use std::collections::HashMap;
 
     let data_dir = Path::new(&config.paths.base).join("data");
     let json_path = data_dir.join("graphs").join("concept_graph.json");
 
-    let content = tokio::fs::read_to_string(&json_path).await
+    let content = tokio::fs::read_to_string(&json_path)
+        .await
         .map_err(|e| crate::error::Error::io_with_path(e, &json_path))?;
     let graph_data: super::types::GraphData = serde_json::from_str(&content)
         .map_err(|e| crate::error::Error::config(format!("Failed to parse JSON: {}", e)))?;
@@ -207,7 +219,8 @@ pub async fn handle_compile(config: &Config) -> Result<()> {
     let json_path = data_dir.join("graphs").join("concept_graph.json");
 
     // Load JSON
-    let content = tokio::fs::read_to_string(&json_path).await
+    let content = tokio::fs::read_to_string(&json_path)
+        .await
         .map_err(|e| crate::error::Error::io_with_path(e, &json_path))?;
     let graph_data: super::types::GraphData = serde_json::from_str(&content)
         .map_err(|e| crate::error::Error::config(format!("Failed to parse JSON: {}", e)))?;

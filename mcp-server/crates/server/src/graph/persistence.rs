@@ -48,9 +48,11 @@ pub async fn save_graph(graph_data: &GraphData, data_dir: &Path) -> Result<()> {
     let graphs_dir = data_dir.join("graphs");
     let cache_dir = data_dir.join(".cache");
 
-    tokio::fs::create_dir_all(&graphs_dir).await
+    tokio::fs::create_dir_all(&graphs_dir)
+        .await
         .map_err(|e| Error::io_with_path(e, &graphs_dir))?;
-    tokio::fs::create_dir_all(&cache_dir).await
+    tokio::fs::create_dir_all(&cache_dir)
+        .await
         .map_err(|e| Error::io_with_path(e, &cache_dir))?;
 
     // Step 1: Serialize to JSON
@@ -59,7 +61,8 @@ pub async fn save_graph(graph_data: &GraphData, data_dir: &Path) -> Result<()> {
 
     // Step 2: Write JSON (source of truth)
     let json_path = graphs_dir.join("concept_graph.json");
-    tokio::fs::write(&json_path, &json).await
+    tokio::fs::write(&json_path, &json)
+        .await
         .map_err(|e| Error::io_with_path(e, &json_path))?;
 
     log::info!("Wrote graph to {}", json_path.display());
@@ -76,14 +79,17 @@ pub async fn save_graph(graph_data: &GraphData, data_dir: &Path) -> Result<()> {
     let cache_path = cache_dir.join("concept_graph.rkyv");
     let temp_cache = cache_path.with_extension("rkyv.tmp");
 
-    tokio::fs::write(&temp_cache, &rkyv_bytes).await
+    tokio::fs::write(&temp_cache, &rkyv_bytes)
+        .await
         .map_err(|e| Error::io_with_path(e, &temp_cache))?;
-    tokio::fs::rename(&temp_cache, &cache_path).await
+    tokio::fs::rename(&temp_cache, &cache_path)
+        .await
         .map_err(|e| Error::io_with_path(e, &cache_path))?;
 
     // Step 6: Write hash
     let hash_path = cache_dir.join("graph_hash");
-    tokio::fs::write(&hash_path, hash_hex).await
+    tokio::fs::write(&hash_path, hash_hex)
+        .await
         .map_err(|e| Error::io_with_path(e, &hash_path))?;
 
     log::info!("Saved rkyv cache ({} bytes) with hash", rkyv_bytes.len());
@@ -122,12 +128,13 @@ pub async fn load_graph(data_dir: &Path) -> Result<ConceptGraph> {
     // Check if JSON exists
     if !json_path.exists() {
         return Err(Error::not_found_msg(
-            "concept_graph.json not found. Run `music-theory-mcp graph build` first."
+            "concept_graph.json not found. Run `music-theory-mcp graph build` first.",
         ));
     }
 
     // Read JSON and compute hash
-    let json_bytes = tokio::fs::read(&json_path).await
+    let json_bytes = tokio::fs::read(&json_path)
+        .await
         .map_err(|e| Error::io_with_path(e, &json_path))?;
     let current_hash = blake3::hash(&json_bytes);
     let current_hash_hex = current_hash.to_hex().to_string();
@@ -139,8 +146,11 @@ pub async fn load_graph(data_dir: &Path) -> Result<ConceptGraph> {
         log::info!("Graph cache valid, loading via mmap");
         match load_from_rkyv(&cache_path).await {
             Ok(graph) => {
-                log::info!("Loaded graph from cache: {} nodes, {} edges",
-                    graph.node_count(), graph.edge_count());
+                log::info!(
+                    "Loaded graph from cache: {} nodes, {} edges",
+                    graph.node_count(),
+                    graph.edge_count()
+                );
                 return Ok(graph);
             }
             Err(e) => {
@@ -157,8 +167,11 @@ pub async fn load_graph(data_dir: &Path) -> Result<ConceptGraph> {
 
     let graph = to_petgraph(&graph_data);
 
-    log::info!("Loaded graph from JSON: {} nodes, {} edges",
-        graph.node_count(), graph.edge_count());
+    log::info!(
+        "Loaded graph from JSON: {} nodes, {} edges",
+        graph.node_count(),
+        graph.edge_count()
+    );
 
     // Save cache for next time
     if let Err(e) = save_cache(&graph_data, &cache_path, &hash_path, &current_hash_hex).await {
@@ -183,19 +196,13 @@ async fn is_cache_valid(cache_path: &Path, hash_path: &Path, expected_hash: &str
 /// Load graph from rkyv cache using mmap.
 async fn load_from_rkyv(path: &Path) -> Result<ConceptGraph> {
     // Open file (sync operation, but fast)
-    let file = File::open(path)
-        .map_err(|e| Error::io_with_path(e, path))?;
+    let file = File::open(path).map_err(|e| Error::io_with_path(e, path))?;
 
     // Memory-map the file
-    let mmap = unsafe {
-        Mmap::map(&file)
-            .map_err(|e| Error::io(e))?
-    };
+    let mmap = unsafe { Mmap::map(&file).map_err(Error::io)? };
 
     // Access archived data (zero-copy)
-    let archived = unsafe {
-        rkyv::archived_root::<GraphData>(&mmap)
-    };
+    let archived = unsafe { rkyv::archived_root::<GraphData>(&mmap) };
 
     // Convert to petgraph
     Ok(archived_to_petgraph(archived))
@@ -214,13 +221,16 @@ async fn save_cache(
 
     // Write atomically
     let tmp_cache = cache_path.with_extension("rkyv.tmp");
-    tokio::fs::write(&tmp_cache, &bytes).await
+    tokio::fs::write(&tmp_cache, &bytes)
+        .await
         .map_err(|e| Error::io_with_path(e, &tmp_cache))?;
-    tokio::fs::rename(&tmp_cache, cache_path).await
+    tokio::fs::rename(&tmp_cache, cache_path)
+        .await
         .map_err(|e| Error::io_with_path(e, cache_path))?;
 
     // Write hash
-    tokio::fs::write(hash_path, hash).await
+    tokio::fs::write(hash_path, hash)
+        .await
         .map_err(|e| Error::io_with_path(e, hash_path))?;
 
     log::info!("Saved graph cache ({} bytes)", bytes.len());
@@ -244,10 +254,9 @@ pub fn to_petgraph(graph_data: &GraphData) -> ConceptGraph {
 
     // Add edges
     for edge in &graph_data.edges {
-        if let (Some(&from_idx), Some(&to_idx)) = (
-            node_indices.get(&edge.from),
-            node_indices.get(&edge.to),
-        ) {
+        if let (Some(&from_idx), Some(&to_idx)) =
+            (node_indices.get(&edge.from), node_indices.get(&edge.to))
+        {
             graph.add_edge(from_idx, to_idx, edge.clone());
         }
     }
@@ -293,8 +302,8 @@ fn archived_to_petgraph(archived: &rkyv::Archived<GraphData>) -> ConceptGraph {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::graph::types::{ConceptNode, EdgeOrigin, GraphMetadata, Relationship, SourceNode};
     use tempfile::TempDir;
-    use crate::graph::types::{ConceptNode, SourceNode, GraphMetadata, Relationship, EdgeOrigin};
 
     fn create_test_graph() -> GraphData {
         let concept = Node::Concept(ConceptNode {
