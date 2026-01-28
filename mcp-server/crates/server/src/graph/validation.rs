@@ -11,6 +11,7 @@ use super::persistence::ConceptGraph;
 
 /// Validation results.
 #[derive(Clone, Debug)]
+#[allow(dead_code)] // Public API
 pub struct ValidationResults {
     /// List of validation issues found
     pub issues: Vec<String>,
@@ -22,6 +23,7 @@ pub struct ValidationResults {
 
 impl ValidationResults {
     /// Check if the graph is valid (no issues).
+    #[allow(dead_code)] // Public API, used in tools/graph.rs
     pub fn is_valid(&self) -> bool {
         self.issues.is_empty()
     }
@@ -40,6 +42,7 @@ impl ValidationResults {
 /// # Returns
 ///
 /// Returns ValidationResults with issues and counts.
+#[allow(dead_code)] // Public API, used in tools/graph.rs
 pub fn validate_graph(graph: &ConceptGraph) -> ValidationResults {
     let mut issues = Vec::new();
     let mut orphan_count = 0;

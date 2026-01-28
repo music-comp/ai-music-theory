@@ -463,7 +463,7 @@ async fn handle_graph_command(
     // Initialize logging before any graph operations
     let config = Config::load()?;
     let opts = apply_log_level_override(&config.logging, log_level_override)?;
-    twyg::setup(opts);
+    let _ = twyg::setup(opts);
 
     match graph_cmds.command {
         GraphSubcommand::Build { dry_run, verbose } => {

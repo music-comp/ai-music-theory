@@ -33,25 +33,34 @@ pub mod types;
 pub mod validation;
 
 // Re-export commonly used types
+#[allow(unused_imports)] // Public API re-exports
 pub use algorithms::{
     bridge_concepts, degree_centrality, dependents, neighborhood, prerequisites_sorted,
     shortest_path,
 };
+#[allow(unused_imports)]
 pub use builder::GraphBuilder;
+#[allow(unused_imports)]
 pub use loader::{load_concept_graph, GraphStats, LoadedGraph};
+#[allow(unused_imports)]
 pub use parser::{parse_related_concepts, RelatedConcepts};
+#[allow(unused_imports)]
 pub use persistence::{load_graph, save_graph, to_petgraph, ConceptGraph};
+#[allow(unused_imports)]
 pub use query::{
-    BridgeConceptsResponse, CentralConceptsResponse, ConceptPathResponse,
-    ConceptSourcesResponse, ConceptVariantsResponse, DependentsResponse, NeighborhoodResponse,
-    PrerequisitesResponse, RelatedConceptsResponse, SourceCoverageResponse,
+    BridgeConceptsResponse, CentralConceptsResponse, ConceptPathResponse, ConceptSourcesResponse,
+    ConceptVariantsResponse, DependentsResponse, NeighborhoodResponse, PrerequisitesResponse,
+    RelatedConceptsResponse, SourceCoverageResponse,
 };
+#[allow(unused_imports)]
 pub use stats::{
     compute_all_stats, compute_degree_stats, count_by_category, count_by_relationship,
     count_nodes_by_type, CategoryCount, DegreeStats, GraphStatistics, NodeCounts,
     RelationshipCount,
 };
+#[allow(unused_imports)]
 pub use types::{
     ConceptNode, Edge, EdgeOrigin, GraphData, GraphMetadata, Node, Relationship, SourceNode,
 };
+#[allow(unused_imports)]
 pub use validation::{validate_graph, ValidationResults};

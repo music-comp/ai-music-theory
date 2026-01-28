@@ -475,7 +475,9 @@ impl MusicTheoryServer {
     }
 
     // Graph query tools
-    #[tool(description = "Find related concepts with optional relationship and direction filtering")]
+    #[tool(
+        description = "Find related concepts with optional relationship and direction filtering"
+    )]
     async fn get_related_concepts(
         &self,
         params: Parameters<GetRelatedConceptsParams>,

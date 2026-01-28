@@ -6,6 +6,8 @@
 //! - Relationship type distribution
 //! - Degree statistics
 
+#![allow(dead_code)] // Public API, not all functions used yet
+
 use std::collections::HashMap;
 
 use super::persistence::ConceptGraph;

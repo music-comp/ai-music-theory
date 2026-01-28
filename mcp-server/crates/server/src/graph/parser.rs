@@ -21,6 +21,7 @@ impl RelatedConcepts {
     }
 
     /// Get total count of all relationships.
+    #[allow(dead_code)] // Public API method
     pub fn total_count(&self) -> usize {
         self.prerequisite.len() + self.leads_to.len() + self.see_also.len()
     }

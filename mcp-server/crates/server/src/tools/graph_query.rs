@@ -13,9 +13,9 @@ use crate::error::Result;
 use crate::state::AppState;
 
 #[cfg(feature = "graph")]
-use crate::graph::types::{Node, Relationship};
-#[cfg(feature = "graph")]
 use crate::graph::query::*;
+#[cfg(feature = "graph")]
+use crate::graph::types::{Node, Relationship};
 #[cfg(feature = "graph")]
 use crate::state::GraphState;
 #[cfg(feature = "graph")]
@@ -873,10 +873,8 @@ pub async fn get_central_concepts(
     };
 
     // Use degree_centrality algorithm
-    let central_indices = crate::graph::algorithms::degree_centrality(
-        &loaded.graph,
-        params.category.as_deref(),
-    );
+    let central_indices =
+        crate::graph::algorithms::degree_centrality(&loaded.graph, params.category.as_deref());
 
     // Build response (limit results)
     let mut concepts = Vec::new();
@@ -962,17 +960,17 @@ pub async fn get_concept_sources(
 
     // Find all incoming edges from Source nodes
     let mut sources = Vec::new();
-    for edge in loaded
-        .graph
-        .edges_directed(*node_idx, Direction::Incoming)
-    {
+    for edge in loaded.graph.edges_directed(*node_idx, Direction::Incoming) {
         let source_idx = edge.source();
         let source_node = &loaded.graph[source_idx];
 
         if let Node::Source(source) = source_node {
             // Check if it's Introduces or Covers relationship
             let relationship = &edge.weight().relationship;
-            if matches!(relationship, Relationship::Introduces | Relationship::Covers) {
+            if matches!(
+                relationship,
+                Relationship::Introduces | Relationship::Covers
+            ) {
                 let source_id = loaded
                     .node_index
                     .iter()
@@ -1038,15 +1036,12 @@ pub async fn get_concept_variants(
     };
 
     // Verify canonical concept exists
-    let canonical_idx = loaded
-        .node_index
-        .get(&params.canonical_id)
-        .ok_or_else(|| {
-            crate::error::Error::not_found_msg(format!(
-                "Canonical concept not found: {}",
-                params.canonical_id
-            ))
-        })?;
+    let canonical_idx = loaded.node_index.get(&params.canonical_id).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!(
+            "Canonical concept not found: {}",
+            params.canonical_id
+        ))
+    })?;
 
     let canonical_title = match &loaded.graph[*canonical_idx] {
         Node::Concept(c) => {
@@ -1080,16 +1075,15 @@ pub async fn get_concept_variants(
                         .unwrap_or_default();
 
                     // Get source title
-                    let source_title = if let Some(source_idx) =
-                        loaded.node_index.get(&concept.source_id)
-                    {
-                        match &loaded.graph[*source_idx] {
-                            Node::Source(s) => s.title.clone(),
-                            _ => concept.source_id.clone(), // Fallback to ID
-                        }
-                    } else {
-                        concept.source_id.clone() // Fallback to ID
-                    };
+                    let source_title =
+                        if let Some(source_idx) = loaded.node_index.get(&concept.source_id) {
+                            match &loaded.graph[*source_idx] {
+                                Node::Source(s) => s.title.clone(),
+                                _ => concept.source_id.clone(), // Fallback to ID
+                            }
+                        } else {
+                            concept.source_id.clone() // Fallback to ID
+                        };
 
                     variants.push(crate::graph::query::ConceptVariant {
                         id: node_id,
@@ -1258,10 +1252,7 @@ pub async fn get_source_coverage(
     let mut introduces = Vec::new();
     let mut covers = Vec::new();
 
-    for edge in loaded
-        .graph
-        .edges_directed(*node_idx, Direction::Outgoing)
-    {
+    for edge in loaded.graph.edges_directed(*node_idx, Direction::Outgoing) {
         let target_idx = edge.target();
         let target_node = &loaded.graph[target_idx];
 
@@ -1378,10 +1369,7 @@ pub async fn get_concept_neighborhood(
 }
 
 #[cfg(not(feature = "graph"))]
-pub async fn get_dependents(
-    _state: &AppState,
-    _params: GetDependentsParams,
-) -> Result<String> {
+pub async fn get_dependents(_state: &AppState, _params: GetDependentsParams) -> Result<String> {
     Err(crate::error::Error::config(
         "Graph feature not enabled. Rebuild with --features graph".to_string(),
     ))

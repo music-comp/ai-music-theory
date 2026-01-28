@@ -68,8 +68,8 @@ pub fn neighborhood(
         }
 
         for neighbor in graph.neighbors_undirected(node) {
-            if !visited.contains_key(&neighbor) {
-                visited.insert(neighbor, depth + 1);
+            if let std::collections::hash_map::Entry::Vacant(e) = visited.entry(neighbor) {
+                e.insert(depth + 1);
                 queue.push_back((neighbor, depth + 1));
             }
         }
@@ -141,8 +141,8 @@ pub fn shortest_path(
         }
 
         for neighbor in graph.neighbors_undirected(node) {
-            if !parent.contains_key(&neighbor) {
-                parent.insert(neighbor, node);
+            if let std::collections::hash_map::Entry::Vacant(e) = parent.entry(neighbor) {
+                e.insert(node);
                 queue.push_back((neighbor, depth + 1));
             }
         }
@@ -267,11 +267,7 @@ pub fn prerequisites_sorted(
 ///     println!("  {} (depth: {})", dep_idx.index(), depth);
 /// }
 /// ```
-pub fn dependents(
-    graph: &ConceptGraph,
-    node: NodeIndex,
-    max_depth: u32,
-) -> Vec<(NodeIndex, u32)> {
+pub fn dependents(graph: &ConceptGraph, node: NodeIndex, max_depth: u32) -> Vec<(NodeIndex, u32)> {
     let mut result: HashMap<NodeIndex, u32> = HashMap::new();
     let mut stack = vec![(node, 0u32)];
 
@@ -417,10 +413,8 @@ pub fn bridge_concepts(
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::graph::types::{
-        ConceptNode, Edge, EdgeOrigin, GraphData, GraphMetadata,
-    };
     use crate::graph::persistence::to_petgraph;
+    use crate::graph::types::{ConceptNode, Edge, EdgeOrigin, GraphData, GraphMetadata};
 
     /// Create a test graph with known structure for algorithm testing.
     ///

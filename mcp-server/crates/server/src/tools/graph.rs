@@ -148,6 +148,7 @@ pub struct EdgeInfo {
 
 /// Get node edges parameters.
 #[derive(Debug, Serialize, Deserialize)]
+#[allow(dead_code)] // Used in tests and server.rs
 pub struct GetNodeEdgesParams {
     /// Node ID to query
     pub node_id: String,
@@ -156,6 +157,7 @@ pub struct GetNodeEdgesParams {
     pub direction: String,
 }
 
+#[allow(dead_code)] // Used by GetNodeEdgesParams in tests
 fn default_direction() -> String {
     "both".to_string()
 }
