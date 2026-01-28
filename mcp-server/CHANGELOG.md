@@ -5,6 +5,70 @@ All notable changes to the Music Theory AI Skill MCP Server will be documented i
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-01-27
+
+### Added
+
+#### Universal Content Search & Deep Source Material Access
+
+- **Multi-content-type indexing** - Search across ALL content types:
+  - `concept_cards/` - Per-source concept extractions
+  - `sources_md/` - Converted source chapters (PDFs/EPUBs → markdown)
+  - `concepts_unified/` - Cross-source synthesized concepts
+  - `guides/` - AI-optimized topic guides
+- **Content type filtering** - Filter search results by document type:
+  - `content_types: ["concept_card"]` - Search only concept cards
+  - `content_types: ["source_chapter", "guide"]` - Multiple types
+  - No filter searches all content types
+- **Section/page tracking** - Fine-grained location information:
+  - Source chapters: "pp. 23-28" from frontmatter
+  - Guides: "Section 2.3" for navigation
+- **Per-type statistics** - Index metadata now tracks document counts by type
+- **Graceful degradation** - Missing content directories don't cause failures
+
+#### Source Material Diagnostic Tools
+
+- **`check_source_availability` tool** - Check if source is indexed/converted/exists
+  - Returns detailed status: `indexed`, `converted`, `file_exists`, or `unavailable`
+  - Human-readable messages for graceful error handling
+  - Chapter counts for available sources
+- **`list_source_chapters` tool** - List all chapters for a source
+  - Queries index if available, falls back to filesystem
+  - Returns chapter metadata: id, title, section, path
+- **Enhanced `get_source_chapter`** - Added optional `section` parameter
+  - Better error messages when chapter not found
+  - Fine-grained retrieval support
+- **Enhanced `health` tool** - Exposes search configuration for transparency
+  - Field boost multipliers (title: 3.0x, description: 2.0x, content: 1.0x)
+  - Enabled content types
+  - Per-type document counts in index stats
+  - Search settings (stopwords, fuzzy, query mode)
+
+#### Configuration Enhancements
+
+- **Configurable field boosts** - Tune relevance without code changes:
+  - `field_boost_title = 3.0` (default)
+  - `field_boost_description = 2.0` (default)
+  - `field_boost_content = 1.0` (default)
+- **Frontmatter section field** - Added `section` field for page/section tracking
+
+### Changed
+
+- **Schema extended** from 12 to 14 fields:
+  - Added `content_type` (STRING | FAST | STORED) for filtering
+  - Added `section` (STORED) for fine-grained location
+- **Search backend** now indexes all 4 content directories
+- **Index metadata** includes per-type document counts
+- **Search results** include `content_type` and `section` fields
+
+### Technical Details
+
+- **100% backward compatible** - Existing queries work unchanged
+- **409 tests passing** (396 library + 13 integration tests)
+- **Minimal schema changes** - Only 2 new fields added
+- **Type-specific metadata extraction** - Each content type has optimized extractor
+- **Comprehensive test coverage** - ≥95% coverage maintained
+
 ## [0.2.0] - 2026-01-27
 
 ### Added
