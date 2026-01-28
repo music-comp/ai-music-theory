@@ -4,7 +4,9 @@ pub mod health;
 pub mod search;
 pub mod sources;
 
+#[cfg(feature = "graph")]
 pub mod graph;
+#[cfg(feature = "graph")]
 pub mod graph_query;
 
 // Tool function exports - Used by server.rs via #[tool] macro expansion.
@@ -12,8 +14,10 @@ pub mod graph_query;
 // so they appear unused to clippy but are actually invoked through the macro-generated code.
 #[allow(unused_imports)]
 pub use concepts::{get_concept, list_categories, list_concepts};
+#[cfg(feature = "graph")]
 #[allow(unused_imports)]
 pub use graph::{get_node, get_node_edges, graph_stats, graph_status, graph_validate};
+#[cfg(feature = "graph")]
 #[allow(unused_imports)]
 pub use graph_query::{
     find_bridge_concepts, find_concept_path, get_central_concepts, get_concept_neighborhood,

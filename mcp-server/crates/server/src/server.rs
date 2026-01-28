@@ -105,6 +105,112 @@ fn default_direction() -> String {
     "both".to_string()
 }
 
+// Graph query tool parameters
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct GetRelatedConceptsParams {
+    concept_id: String,
+    #[serde(default)]
+    relationship_types: Option<String>,
+    #[serde(default = "default_direction")]
+    direction: String,
+    #[serde(default = "default_depth_1")]
+    depth: u32,
+}
+
+fn default_depth_1() -> u32 {
+    1
+}
+
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct FindConceptPathParams {
+    from_id: String,
+    to_id: String,
+    #[serde(default = "default_depth_5")]
+    max_depth: u32,
+}
+
+fn default_depth_5() -> u32 {
+    5
+}
+
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct GetPrerequisitesParams {
+    concept_id: String,
+    #[serde(default = "default_depth_3")]
+    depth: u32,
+}
+
+fn default_depth_3() -> u32 {
+    3
+}
+
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct GetConceptNeighborhoodParams {
+    concept_id: String,
+    #[serde(default = "default_radius")]
+    radius: u32,
+    #[serde(default = "default_max_nodes")]
+    max_nodes: u32,
+}
+
+fn default_radius() -> u32 {
+    2
+}
+
+fn default_max_nodes() -> u32 {
+    30
+}
+
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct GetDependentsParams {
+    concept_id: String,
+    #[serde(default = "default_depth_2")]
+    depth: u32,
+}
+
+fn default_depth_2() -> u32 {
+    2
+}
+
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct GetCentralConceptsParams {
+    #[serde(default)]
+    category: Option<String>,
+    #[serde(default = "default_limit_10")]
+    limit: u32,
+}
+
+fn default_limit_10() -> u32 {
+    10
+}
+
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct GetConceptSourcesParams {
+    concept_id: String,
+}
+
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct GetConceptVariantsParams {
+    canonical_id: String,
+}
+
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct FindBridgeConceptsParams {
+    category_a: String,
+    category_b: String,
+    #[serde(default = "default_limit_5")]
+    limit: u32,
+}
+
+fn default_limit_5() -> u32 {
+    5
+}
+
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct GetSourceCoverageParams {
+    source_id: String,
+}
+
 /// Helper function to create serialization error response.
 fn serialization_error(e: serde_json::Error) -> ErrorData {
     ErrorData::new(
@@ -362,6 +468,199 @@ impl MusicTheoryServer {
             tools::graph::get_node_edges(&self.state, &params.0.node_id, &params.0.direction)
                 .await
                 .map_err(|e| e.to_mcp_error("Error getting node edges"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    // Graph query tools
+    #[tool(description = "Find related concepts with optional relationship and direction filtering")]
+    async fn get_related_concepts(
+        &self,
+        params: Parameters<GetRelatedConceptsParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let tool_params = tools::graph_query::GetRelatedConceptsParams {
+            concept_id: params.0.concept_id,
+            relationship_types: params.0.relationship_types,
+            direction: params.0.direction,
+            depth: params.0.depth,
+        };
+
+        let response = tools::get_related_concepts(&self.state, tool_params)
+            .await
+            .map_err(|e| e.to_mcp_error("Error getting related concepts"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[tool(description = "Find shortest path between two concepts in the graph")]
+    async fn find_concept_path(
+        &self,
+        params: Parameters<FindConceptPathParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let tool_params = tools::graph_query::FindConceptPathParams {
+            from_id: params.0.from_id,
+            to_id: params.0.to_id,
+            max_depth: params.0.max_depth,
+        };
+
+        let response = tools::find_concept_path(&self.state, tool_params)
+            .await
+            .map_err(|e| e.to_mcp_error("Error finding concept path"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[tool(description = "Get prerequisites for a concept in topological learning order")]
+    async fn get_prerequisites(
+        &self,
+        params: Parameters<GetPrerequisitesParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let tool_params = tools::graph_query::GetPrerequisitesParams {
+            concept_id: params.0.concept_id,
+            depth: params.0.depth,
+        };
+
+        let response = tools::get_prerequisites(&self.state, tool_params)
+            .await
+            .map_err(|e| e.to_mcp_error("Error getting prerequisites"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[tool(description = "Get local neighborhood subgraph around a concept")]
+    async fn get_concept_neighborhood(
+        &self,
+        params: Parameters<GetConceptNeighborhoodParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let tool_params = tools::graph_query::GetConceptNeighborhoodParams {
+            concept_id: params.0.concept_id,
+            radius: params.0.radius,
+            max_nodes: params.0.max_nodes,
+        };
+
+        let response = tools::get_concept_neighborhood(&self.state, tool_params)
+            .await
+            .map_err(|e| e.to_mcp_error("Error getting concept neighborhood"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[tool(description = "Get concepts that depend on this concept as a prerequisite")]
+    async fn get_dependents(
+        &self,
+        params: Parameters<GetDependentsParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let tool_params = tools::graph_query::GetDependentsParams {
+            concept_id: params.0.concept_id,
+            depth: params.0.depth,
+        };
+
+        let response = tools::get_dependents(&self.state, tool_params)
+            .await
+            .map_err(|e| e.to_mcp_error("Error getting dependents"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[tool(description = "Get most connected concepts by degree centrality")]
+    async fn get_central_concepts(
+        &self,
+        params: Parameters<GetCentralConceptsParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let tool_params = tools::graph_query::GetCentralConceptsParams {
+            category: params.0.category,
+            limit: params.0.limit,
+        };
+
+        let response = tools::get_central_concepts(&self.state, tool_params)
+            .await
+            .map_err(|e| e.to_mcp_error("Error getting central concepts"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[tool(description = "Get all sources that introduce or cover a concept")]
+    async fn get_concept_sources(
+        &self,
+        params: Parameters<GetConceptSourcesParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let tool_params = tools::graph_query::GetConceptSourcesParams {
+            concept_id: params.0.concept_id,
+        };
+
+        let response = tools::get_concept_sources(&self.state, tool_params)
+            .await
+            .map_err(|e| e.to_mcp_error("Error getting concept sources"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[tool(description = "Get all source-specific variants of a canonical concept")]
+    async fn get_concept_variants(
+        &self,
+        params: Parameters<GetConceptVariantsParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let tool_params = tools::graph_query::GetConceptVariantsParams {
+            canonical_id: params.0.canonical_id,
+        };
+
+        let response = tools::get_concept_variants(&self.state, tool_params)
+            .await
+            .map_err(|e| e.to_mcp_error("Error getting concept variants"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[tool(description = "Find concepts that bridge two categories by connecting to both")]
+    async fn find_bridge_concepts(
+        &self,
+        params: Parameters<FindBridgeConceptsParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let tool_params = tools::graph_query::FindBridgeConceptsParams {
+            category_a: params.0.category_a,
+            category_b: params.0.category_b,
+            limit: params.0.limit,
+        };
+
+        let response = tools::find_bridge_concepts(&self.state, tool_params)
+            .await
+            .map_err(|e| e.to_mcp_error("Error finding bridge concepts"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[tool(description = "Get all concepts introduced or covered by a source material")]
+    async fn get_source_coverage(
+        &self,
+        params: Parameters<GetSourceCoverageParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let tool_params = tools::graph_query::GetSourceCoverageParams {
+            source_id: params.0.source_id,
+        };
+
+        let response = tools::get_source_coverage(&self.state, tool_params)
+            .await
+            .map_err(|e| e.to_mcp_error("Error getting source coverage"))?;
 
         let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
 
