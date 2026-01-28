@@ -819,6 +819,14 @@ Test content.
         let mut config = test_config("tantivy");
         config.search.index_path = index_path.to_string_lossy().to_string();
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+        // Set other paths to temp dir to avoid indexing real project files
+        config.paths.sources_md = temp_dir.path().join("sources-md").to_string_lossy().to_string();
+        config.paths.concepts_unified = temp_dir
+            .path()
+            .join("concepts-unified")
+            .to_string_lossy()
+            .to_string();
+        config.paths.guides = temp_dir.path().join("guides").to_string_lossy().to_string();
 
         // Build index
         crate::search::build_index(&config)
@@ -859,6 +867,14 @@ Test content.
         let mut config = test_config("tantivy");
         config.search.index_path = index_path.to_string_lossy().to_string();
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+        // Set other paths to temp dir to avoid indexing real project files
+        config.paths.sources_md = temp_dir.path().join("sources-md").to_string_lossy().to_string();
+        config.paths.concepts_unified = temp_dir
+            .path()
+            .join("concepts-unified")
+            .to_string_lossy()
+            .to_string();
+        config.paths.guides = temp_dir.path().join("guides").to_string_lossy().to_string();
 
         let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
 
