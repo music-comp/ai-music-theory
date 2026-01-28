@@ -25,6 +25,8 @@ pub mod builder;
 pub mod persistence;
 pub mod loader;
 pub mod cli;
+pub mod validation;
+pub mod stats;
 
 // Re-export commonly used types
 pub use types::{
@@ -34,3 +36,9 @@ pub use parser::{parse_related_concepts, RelatedConcepts};
 pub use builder::GraphBuilder;
 pub use persistence::{load_graph, save_graph, to_petgraph, ConceptGraph};
 pub use loader::{load_concept_graph, GraphStats, LoadedGraph};
+pub use validation::{validate_graph, ValidationResults};
+pub use stats::{
+    compute_all_stats, compute_degree_stats, count_by_category, count_by_relationship,
+    count_nodes_by_type, CategoryCount, DegreeStats, GraphStatistics, NodeCounts,
+    RelationshipCount,
+};
