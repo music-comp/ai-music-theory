@@ -523,14 +523,79 @@ pub async fn get_source_chapter(
     })?;
 
     // Read the chapter content
-    let mut content = read_file(&chapter_path).await?;
+    let content = read_file(&chapter_path).await?;
 
-    // If section filter specified, add a note (future: could extract specific section)
+    // If section filter specified, extract just that section
     if let Some(section_ref) = section {
-        content = format!("# Requested section: {}\n\n{}", section_ref, content);
+        if let Some(extracted) = extract_section(&content, section_ref) {
+            return Ok(extracted);
+        } else {
+            // Section not found, return full content with note
+            return Ok(format!(
+                "# Note: Section '{}' not found in this chapter\n\n{}",
+                section_ref, content
+            ));
+        }
     }
 
     Ok(content)
+}
+
+/// Extract a section from markdown content by heading name.
+///
+/// Finds a heading matching the section name (case-insensitive) and extracts
+/// all content from that heading until the next heading of the same or higher level.
+///
+/// # Arguments
+///
+/// * `markdown` - The full markdown content
+/// * `section_name` - The heading text to search for (without # prefix)
+///
+/// # Returns
+///
+/// Returns Some(String) with the extracted section content (including the heading),
+/// or None if the section wasn't found.
+fn extract_section(markdown: &str, section_name: &str) -> Option<String> {
+    let section_lower = section_name.to_lowercase();
+    let lines: Vec<&str> = markdown.lines().collect();
+
+    // Find the section heading
+    let mut start_idx = None;
+    let mut heading_level = 0;
+
+    for (idx, line) in lines.iter().enumerate() {
+        let trimmed = line.trim();
+        if trimmed.starts_with('#') {
+            // Extract heading text and level
+            let hash_count = trimmed.chars().take_while(|&c| c == '#').count();
+            let heading_text = trimmed[hash_count..].trim();
+
+            if heading_text.to_lowercase() == section_lower {
+                start_idx = Some(idx);
+                heading_level = hash_count;
+                break;
+            }
+        }
+    }
+
+    let start = start_idx?;
+
+    // Find the end (next heading of same or higher level)
+    let mut end_idx = lines.len();
+    for (idx, line) in lines.iter().enumerate().skip(start + 1) {
+        let trimmed = line.trim();
+        if trimmed.starts_with('#') {
+            let hash_count = trimmed.chars().take_while(|&c| c == '#').count();
+            if hash_count <= heading_level {
+                end_idx = idx;
+                break;
+            }
+        }
+    }
+
+    // Extract the section content
+    let section_lines = &lines[start..end_idx];
+    Some(section_lines.join("\n"))
 }
 
 /// Find a chapter file in the source directory.
@@ -909,5 +974,117 @@ mod tests {
             has_oxford || has_general || has_papers,
             "Expected at least one source with oxford-/general-/papers- prefix"
         );
+    }
+
+    #[test]
+    fn test_extract_section_basic() {
+        let markdown = r#"# Chapter Title
+
+Intro text.
+
+## Section One
+
+Content for section one.
+
+## Section Two
+
+Content for section two.
+
+### Subsection Two-A
+
+Nested content.
+
+## Section Three
+
+Final section.
+"#;
+
+        let result = extract_section(markdown, "Section Two");
+        assert!(result.is_some());
+        let extracted = result.unwrap();
+        assert!(extracted.contains("## Section Two"));
+        assert!(extracted.contains("Content for section two."));
+        assert!(extracted.contains("### Subsection Two-A"));
+        assert!(extracted.contains("Nested content."));
+        assert!(!extracted.contains("Section Three"));
+    }
+
+    #[test]
+    fn test_extract_section_case_insensitive() {
+        let markdown = r#"## Prime Form
+
+Content about prime form.
+
+## Set Class
+
+Content about set class.
+"#;
+
+        let result = extract_section(markdown, "prime form");
+        assert!(result.is_some());
+        let extracted = result.unwrap();
+        assert!(extracted.contains("## Prime Form"));
+        assert!(extracted.contains("Content about prime form."));
+        assert!(!extracted.contains("Set Class"));
+    }
+
+    #[test]
+    fn test_extract_section_not_found() {
+        let markdown = r#"## Section One
+
+Content.
+
+## Section Two
+
+More content.
+"#;
+
+        let result = extract_section(markdown, "Section Three");
+        assert!(result.is_none());
+    }
+
+    #[test]
+    fn test_extract_section_at_end() {
+        let markdown = r#"## Section One
+
+Content one.
+
+## Section Two
+
+Content two at the end.
+"#;
+
+        let result = extract_section(markdown, "Section Two");
+        assert!(result.is_some());
+        let extracted = result.unwrap();
+        assert!(extracted.contains("## Section Two"));
+        assert!(extracted.contains("Content two at the end."));
+    }
+
+    #[test]
+    fn test_extract_section_with_different_levels() {
+        let markdown = r#"# Main Chapter
+
+Intro.
+
+## Section A
+
+Content A.
+
+### Subsection A1
+
+Nested A1.
+
+## Section B
+
+Content B.
+"#;
+
+        let result = extract_section(markdown, "Subsection A1");
+        assert!(result.is_some());
+        let extracted = result.unwrap();
+        assert!(extracted.contains("### Subsection A1"));
+        assert!(extracted.contains("Nested A1."));
+        assert!(!extracted.contains("Section B"));
     }
 }
