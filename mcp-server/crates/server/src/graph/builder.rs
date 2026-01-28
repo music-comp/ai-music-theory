@@ -544,4 +544,389 @@ mod tests {
         assert_eq!(manual.edges[0].relationship, Relationship::Prerequisite);
         assert_eq!(manual.edges[0].weight, Some(0.8));
     }
+
+    #[test]
+    fn test_add_concept_node() {
+        let mut builder = GraphBuilder::new();
+        let card = ConceptCard {
+            id: "test-concept".to_string(),
+            title: "Test Concept".to_string(),
+            category: "harmony".to_string(),
+            source: "test-source".to_string(),
+            related_concepts: None,
+        };
+
+        builder.add_concept_node(&card);
+
+        assert_eq!(builder.nodes.len(), 1);
+        assert!(builder.node_ids.contains("test-concept"));
+
+        match &builder.nodes[0] {
+            Node::Concept(c) => {
+                assert_eq!(c.id, "test-concept");
+                assert_eq!(c.title, "Test Concept");
+                assert_eq!(c.category, "harmony");
+                assert_eq!(c.source_id, "test-source");
+                assert!(c.is_canonical);
+                assert!(c.canonical_id.is_none());
+            }
+            _ => panic!("Expected Concept node"),
+        }
+    }
+
+    #[test]
+    fn test_extract_relationships_prerequisites() {
+        let mut builder = GraphBuilder::new();
+
+        // Add two concept nodes first
+        builder.node_ids.insert("concept-a".to_string());
+        builder.node_ids.insert("concept-b".to_string());
+
+        let card = ConceptCard {
+            id: "concept-b".to_string(),
+            title: "Concept B".to_string(),
+            category: "test".to_string(),
+            source: "test".to_string(),
+            related_concepts: Some(crate::graph::parser::RelatedConcepts {
+                prerequisite: vec!["concept-a".to_string()],
+                leads_to: vec![],
+                see_also: vec![],
+            }),
+        };
+
+        builder.extract_relationships(&card);
+
+        assert_eq!(builder.edges.len(), 1);
+        assert_eq!(builder.edges[0].from, "concept-a");
+        assert_eq!(builder.edges[0].to, "concept-b");
+        assert_eq!(builder.edges[0].relationship, Relationship::Prerequisite);
+        assert_eq!(builder.edges[0].weight, 1.0);
+        assert_eq!(builder.edges[0].origin, EdgeOrigin::Extracted);
+        assert_eq!(builder.warnings.len(), 0);
+    }
+
+    #[test]
+    fn test_extract_relationships_leads_to() {
+        let mut builder = GraphBuilder::new();
+
+        builder.node_ids.insert("concept-a".to_string());
+        builder.node_ids.insert("concept-b".to_string());
+
+        let card = ConceptCard {
+            id: "concept-a".to_string(),
+            title: "Concept A".to_string(),
+            category: "test".to_string(),
+            source: "test".to_string(),
+            related_concepts: Some(crate::graph::parser::RelatedConcepts {
+                prerequisite: vec![],
+                leads_to: vec!["concept-b".to_string()],
+                see_also: vec![],
+            }),
+        };
+
+        builder.extract_relationships(&card);
+
+        assert_eq!(builder.edges.len(), 1);
+        assert_eq!(builder.edges[0].from, "concept-a");
+        assert_eq!(builder.edges[0].to, "concept-b");
+        assert_eq!(builder.edges[0].relationship, Relationship::Prerequisite);
+    }
+
+    #[test]
+    fn test_extract_relationships_see_also() {
+        let mut builder = GraphBuilder::new();
+
+        builder.node_ids.insert("concept-a".to_string());
+        builder.node_ids.insert("concept-b".to_string());
+
+        let card = ConceptCard {
+            id: "concept-a".to_string(),
+            title: "Concept A".to_string(),
+            category: "test".to_string(),
+            source: "test".to_string(),
+            related_concepts: Some(crate::graph::parser::RelatedConcepts {
+                prerequisite: vec![],
+                leads_to: vec![],
+                see_also: vec!["concept-b".to_string()],
+            }),
+        };
+
+        builder.extract_relationships(&card);
+
+        assert_eq!(builder.edges.len(), 1);
+        assert_eq!(builder.edges[0].from, "concept-a");
+        assert_eq!(builder.edges[0].to, "concept-b");
+        assert_eq!(builder.edges[0].relationship, Relationship::RelatesTo);
+        assert_eq!(builder.edges[0].weight, 0.7);
+    }
+
+    #[test]
+    fn test_extract_relationships_unknown_prerequisite_warning() {
+        let mut builder = GraphBuilder::new();
+
+        builder.node_ids.insert("concept-a".to_string());
+
+        let card = ConceptCard {
+            id: "concept-a".to_string(),
+            title: "Concept A".to_string(),
+            category: "test".to_string(),
+            source: "test".to_string(),
+            related_concepts: Some(crate::graph::parser::RelatedConcepts {
+                prerequisite: vec!["unknown-concept".to_string()],
+                leads_to: vec![],
+                see_also: vec![],
+            }),
+        };
+
+        builder.extract_relationships(&card);
+
+        assert_eq!(builder.edges.len(), 0);
+        assert_eq!(builder.warnings.len(), 1);
+        assert!(builder.warnings[0].contains("unknown prerequisite"));
+    }
+
+    #[test]
+    fn test_extract_relationships_no_warning_for_unknown_see_also() {
+        let mut builder = GraphBuilder::new();
+
+        builder.node_ids.insert("concept-a".to_string());
+
+        let card = ConceptCard {
+            id: "concept-a".to_string(),
+            title: "Concept A".to_string(),
+            category: "test".to_string(),
+            source: "test".to_string(),
+            related_concepts: Some(crate::graph::parser::RelatedConcepts {
+                prerequisite: vec![],
+                leads_to: vec![],
+                see_also: vec!["unknown-concept".to_string()],
+            }),
+        };
+
+        builder.extract_relationships(&card);
+
+        // See also doesn't create edges or warnings for unknown references
+        assert_eq!(builder.edges.len(), 0);
+        assert_eq!(builder.warnings.len(), 0);
+    }
+
+    #[test]
+    fn test_add_introduces_edge_by_id() {
+        let mut builder = GraphBuilder::new();
+
+        builder.node_ids.insert("test-source".to_string());
+        builder.node_ids.insert("test-concept".to_string());
+
+        let card = ConceptCard {
+            id: "test-concept".to_string(),
+            title: "Test Concept".to_string(),
+            category: "test".to_string(),
+            source: "test-source".to_string(),
+            related_concepts: None,
+        };
+
+        builder.add_introduces_edge(&card);
+
+        assert_eq!(builder.edges.len(), 1);
+        assert_eq!(builder.edges[0].from, "test-source");
+        assert_eq!(builder.edges[0].to, "test-concept");
+        assert_eq!(builder.edges[0].relationship, Relationship::Introduces);
+        assert_eq!(builder.edges[0].origin, EdgeOrigin::Extracted);
+    }
+
+    #[test]
+    fn test_add_introduces_edge_by_title() {
+        let mut builder = GraphBuilder::new();
+
+        builder.node_ids.insert("test-source".to_string());
+        builder.node_ids.insert("test-concept".to_string());
+        builder
+            .source_title_to_id
+            .insert("Test Source".to_string(), "test-source".to_string());
+
+        let card = ConceptCard {
+            id: "test-concept".to_string(),
+            title: "Test Concept".to_string(),
+            category: "test".to_string(),
+            source: "Test Source".to_string(), // Using title instead of ID
+            related_concepts: None,
+        };
+
+        builder.add_introduces_edge(&card);
+
+        assert_eq!(builder.edges.len(), 1);
+        assert_eq!(builder.edges[0].from, "test-source");
+    }
+
+    #[test]
+    fn test_add_introduces_edge_unknown_source_warning() {
+        let mut builder = GraphBuilder::new();
+
+        builder.node_ids.insert("test-concept".to_string());
+
+        let card = ConceptCard {
+            id: "test-concept".to_string(),
+            title: "Test Concept".to_string(),
+            category: "test".to_string(),
+            source: "unknown-source".to_string(),
+            related_concepts: None,
+        };
+
+        builder.add_introduces_edge(&card);
+
+        assert_eq!(builder.edges.len(), 0);
+        assert_eq!(builder.warnings.len(), 1);
+        assert!(builder.warnings[0].contains("unknown source"));
+    }
+
+    #[test]
+    fn test_add_introduces_edge_unknown_source_no_warning() {
+        let mut builder = GraphBuilder::new();
+
+        builder.node_ids.insert("test-concept".to_string());
+
+        let card = ConceptCard {
+            id: "test-concept".to_string(),
+            title: "Test Concept".to_string(),
+            category: "test".to_string(),
+            source: "unknown".to_string(), // "unknown" doesn't generate warning
+            related_concepts: None,
+        };
+
+        builder.add_introduces_edge(&card);
+
+        assert_eq!(builder.edges.len(), 0);
+        assert_eq!(builder.warnings.len(), 0);
+    }
+
+    #[test]
+    fn test_deduplicate_edges_keeps_higher_weight() {
+        let mut builder = GraphBuilder::new();
+
+        // Add duplicate edges with different weights
+        builder.edges.push(Edge {
+            from: "a".to_string(),
+            to: "b".to_string(),
+            relationship: Relationship::Prerequisite,
+            weight: 0.5,
+            origin: EdgeOrigin::Extracted,
+        });
+
+        builder.edges.push(Edge {
+            from: "a".to_string(),
+            to: "b".to_string(),
+            relationship: Relationship::Prerequisite,
+            weight: 1.0, // Higher weight
+            origin: EdgeOrigin::Manual,
+        });
+
+        builder.deduplicate_edges();
+
+        assert_eq!(builder.edges.len(), 1);
+        assert_eq!(builder.edges[0].weight, 1.0);
+        assert_eq!(builder.edges[0].origin, EdgeOrigin::Manual);
+    }
+
+    #[test]
+    fn test_deduplicate_edges_different_relationships_kept() {
+        let mut builder = GraphBuilder::new();
+
+        // Add edges with same nodes but different relationships
+        builder.edges.push(Edge {
+            from: "a".to_string(),
+            to: "b".to_string(),
+            relationship: Relationship::Prerequisite,
+            weight: 1.0,
+            origin: EdgeOrigin::Extracted,
+        });
+
+        builder.edges.push(Edge {
+            from: "a".to_string(),
+            to: "b".to_string(),
+            relationship: Relationship::RelatesTo,
+            weight: 0.7,
+            origin: EdgeOrigin::Extracted,
+        });
+
+        builder.deduplicate_edges();
+
+        // Both edges should be kept (different relationships)
+        assert_eq!(builder.edges.len(), 2);
+    }
+
+    #[test]
+    fn test_merge_manual_edges() {
+        use tempfile::TempDir;
+
+        let mut builder = GraphBuilder::new();
+
+        // Set up nodes
+        builder.node_ids.insert("concept-a".to_string());
+        builder.node_ids.insert("concept-b".to_string());
+
+        // Add existing edge that will be replaced
+        builder.edges.push(Edge {
+            from: "concept-a".to_string(),
+            to: "concept-b".to_string(),
+            relationship: Relationship::Prerequisite,
+            weight: 1.0,
+            origin: EdgeOrigin::Extracted,
+        });
+
+        // Create manual edges JSON file
+        let temp_dir = TempDir::new().unwrap();
+        let manual_edges_path = temp_dir.path().join("manual_edges.json");
+
+        let manual_json = r#"{
+            "description": "Test manual edges",
+            "edges": [
+                {
+                    "from": "concept-a",
+                    "to": "concept-b",
+                    "relationship": "prerequisite",
+                    "weight": 0.8,
+                    "note": "Manual override"
+                }
+            ]
+        }"#;
+
+        std::fs::write(&manual_edges_path, manual_json).unwrap();
+
+        builder.merge_manual_edges(&manual_edges_path).unwrap();
+
+        // Should have replaced the existing edge
+        assert_eq!(builder.edges.len(), 1);
+        assert_eq!(builder.edges[0].weight, 0.8);
+        assert_eq!(builder.edges[0].origin, EdgeOrigin::Manual);
+    }
+
+    #[test]
+    fn test_merge_manual_edges_unknown_node_warning() {
+        use tempfile::TempDir;
+
+        let mut builder = GraphBuilder::new();
+
+        builder.node_ids.insert("concept-a".to_string());
+
+        let temp_dir = TempDir::new().unwrap();
+        let manual_edges_path = temp_dir.path().join("manual_edges.json");
+
+        let manual_json = r#"{
+            "edges": [
+                {
+                    "from": "concept-a",
+                    "to": "unknown-concept",
+                    "relationship": "prerequisite"
+                }
+            ]
+        }"#;
+
+        std::fs::write(&manual_edges_path, manual_json).unwrap();
+
+        builder.merge_manual_edges(&manual_edges_path).unwrap();
+
+        assert_eq!(builder.edges.len(), 0);
+        assert_eq!(builder.warnings.len(), 1);
+        assert!(builder.warnings[0].contains("unknown 'to' node"));
+    }
 }
