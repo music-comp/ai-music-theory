@@ -418,7 +418,7 @@ pub fn bridge_concepts(
 mod tests {
     use super::*;
     use crate::graph::types::{
-        ConceptNode, Edge, EdgeOrigin, GraphData, GraphMetadata, SourceNode,
+        ConceptNode, Edge, EdgeOrigin, GraphData, GraphMetadata,
     };
     use crate::graph::persistence::to_petgraph;
 

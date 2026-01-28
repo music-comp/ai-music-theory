@@ -11,6 +11,7 @@
 //! - **persistence**: Saves/loads graph with rkyv caching
 //! - **loader**: Async loading for AppState
 //! - **algorithms**: Graph traversal algorithms (BFS, DFS, etc.)
+//! - **query**: Response types for MCP query tools
 //! - **validation**: Graph integrity checks
 //! - **stats**: Statistics computation
 //! - **cli**: CLI command handlers
@@ -26,6 +27,7 @@ pub mod cli;
 pub mod loader;
 pub mod parser;
 pub mod persistence;
+pub mod query;
 pub mod stats;
 pub mod types;
 pub mod validation;
@@ -39,6 +41,11 @@ pub use builder::GraphBuilder;
 pub use loader::{load_concept_graph, GraphStats, LoadedGraph};
 pub use parser::{parse_related_concepts, RelatedConcepts};
 pub use persistence::{load_graph, save_graph, to_petgraph, ConceptGraph};
+pub use query::{
+    BridgeConceptsResponse, CentralConceptsResponse, ConceptPathResponse,
+    ConceptSourcesResponse, ConceptVariantsResponse, DependentsResponse, NeighborhoodResponse,
+    PrerequisitesResponse, RelatedConceptsResponse, SourceCoverageResponse,
+};
 pub use stats::{
     compute_all_stats, compute_degree_stats, count_by_category, count_by_relationship,
     count_nodes_by_type, CategoryCount, DegreeStats, GraphStatistics, NodeCounts,
