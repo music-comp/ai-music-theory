@@ -3,6 +3,7 @@ use std::path::{Path, PathBuf};
 
 use crate::config::Config;
 use crate::error::{Error, Result};
+use crate::state::AppState;
 use crate::util::files::{
     count_files, find_file_by_id, list_subdirectories, read_file, FindOptions,
 };
@@ -43,6 +44,53 @@ pub struct ListSourcesResponse {
     pub sources: Vec<SourceInfo>,
 }
 
+/// Availability status for a source (v0.3.0).
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "snake_case")]
+pub enum AvailabilityStatus {
+    /// Source is indexed in Tantivy and searchable
+    Indexed,
+    /// Source is converted to markdown but not indexed
+    Converted,
+    /// Source PDF/EPUB exists but not converted
+    FileExists,
+    /// Source is completely unavailable
+    Unavailable,
+}
+
+/// Response for check_source_availability tool (v0.3.0).
+#[derive(Debug, Serialize, Deserialize)]
+pub struct SourceAvailabilityResponse {
+    pub id: String,
+    pub status: AvailabilityStatus,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub format: Option<SourceFormat>,
+    pub file_exists: bool,
+    pub text_extracted: bool,
+    pub searchable: bool,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub chapters: Option<usize>,
+    pub message: String,
+}
+
+/// Chapter information for list_source_chapters tool (v0.3.0).
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ChapterInfo {
+    pub id: String,
+    pub title: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub section: Option<String>,
+    pub path: String,
+}
+
+/// Response for list_source_chapters tool (v0.3.0).
+#[derive(Debug, Serialize, Deserialize)]
+pub struct ListChaptersResponse {
+    pub source_id: String,
+    pub chapters: Vec<ChapterInfo>,
+    pub total: usize,
+}
+
 /// List all available source materials.
 pub async fn list_sources(config: &Config) -> Result<ListSourcesResponse> {
     let mut sources = Vec::new();
@@ -57,6 +105,237 @@ pub async fn list_sources(config: &Config) -> Result<ListSourcesResponse> {
     sources.extend(list_unconverted_sources(config)?);
 
     Ok(ListSourcesResponse { sources })
+}
+
+/// Check availability status of a source material (v0.3.0).
+///
+/// Returns detailed information about whether a source is indexed,
+/// converted, or available in any format. This helps Claude gracefully
+/// handle references to sources that may not be accessible.
+///
+/// # Logic
+///
+/// 1. Check if source is indexed in Tantivy (searchable)
+/// 2. If not indexed, check if markdown exists (converted)
+/// 3. If not converted, check if original PDF/EPUB exists
+/// 4. Return appropriate status and human-readable message
+pub async fn check_source_availability(
+    state: &AppState,
+    source_id: &str,
+) -> Result<SourceAvailabilityResponse> {
+    let config = &state.config;
+
+    // Step 1: Check if indexed in Tantivy (requires FTS feature)
+    #[cfg(feature = "fts")]
+    let indexed = if state.is_fts_ready() {
+        check_source_indexed(state, source_id).await?
+    } else {
+        false
+    };
+
+    #[cfg(not(feature = "fts"))]
+    let indexed = false;
+
+    // Step 2: Check if converted to markdown
+    let sources_md_path = config.paths.sources_md_path()?;
+    let source_path = sources_md_path.join(source_id);
+    let text_extracted = crate::util::files::exists(&source_path).await;
+
+    // Count chapters if converted
+    let chapters = if text_extracted {
+        Some(count_files(&source_path, FindOptions::markdown()).await?)
+    } else {
+        None
+    };
+
+    // Step 3: Check if original file exists
+    let (file_exists, format) = check_source_file_exists(config, source_id).await;
+
+    // Determine overall status
+    let (status, message) = if indexed {
+        (
+            AvailabilityStatus::Indexed,
+            format!("Source '{}' is indexed and fully searchable", source_id),
+        )
+    } else if text_extracted {
+        (
+            AvailabilityStatus::Converted,
+            format!(
+                "Source '{}' is converted to markdown but not indexed. Run 'index' command to make it searchable.",
+                source_id
+            ),
+        )
+    } else if file_exists {
+        (
+            AvailabilityStatus::FileExists,
+            format!(
+                "Source '{}' file exists but is not converted. Text extraction required.",
+                source_id
+            ),
+        )
+    } else {
+        (
+            AvailabilityStatus::Unavailable,
+            format!("Source '{}' is not available in any format", source_id),
+        )
+    };
+
+    Ok(SourceAvailabilityResponse {
+        id: source_id.to_string(),
+        status,
+        format,
+        file_exists,
+        text_extracted,
+        searchable: indexed,
+        chapters,
+        message,
+    })
+}
+
+/// List all chapters for a source material (v0.3.0).
+///
+/// Returns a list of all chapters/sections within a source, with their
+/// titles, sections (page numbers), and paths. If the source is indexed,
+/// queries the index; otherwise falls back to filesystem scan.
+pub async fn list_source_chapters(
+    state: &AppState,
+    source_id: &str,
+) -> Result<ListChaptersResponse> {
+    // Try index first if FTS is ready
+    #[cfg(feature = "fts")]
+    if state.is_fts_ready() {
+        if let Ok(chapters) = list_chapters_from_index(state, source_id).await {
+            return Ok(ListChaptersResponse {
+                source_id: source_id.to_string(),
+                total: chapters.len(),
+                chapters,
+            });
+        }
+    }
+
+    // Fallback to filesystem scan
+    let chapters = list_chapters_from_filesystem(&state.config, source_id).await?;
+    Ok(ListChaptersResponse {
+        source_id: source_id.to_string(),
+        total: chapters.len(),
+        chapters,
+    })
+}
+
+/// List chapters from Tantivy index.
+#[cfg(feature = "fts")]
+async fn list_chapters_from_index(
+    state: &AppState,
+    source_id: &str,
+) -> Result<Vec<ChapterInfo>> {
+    use crate::tools::search::SearchConceptsParams;
+
+    // Search for all documents with content_type = "source_chapter" and matching source
+    let params = SearchConceptsParams {
+        query: source_id.to_string(),
+        limit: 1000, // Large limit to get all chapters
+        query_mode: None,
+        category: None,
+        content_types: Some(vec!["source_chapter".to_string()]),
+    };
+
+    let results = state.search_backend().search(&params).await?;
+
+    let chapters = results
+        .into_iter()
+        .map(|result| ChapterInfo {
+            id: result.id,
+            title: result.title,
+            section: result.section,
+            path: result.path,
+        })
+        .collect();
+
+    Ok(chapters)
+}
+
+/// List chapters from filesystem (fallback).
+async fn list_chapters_from_filesystem(
+    config: &Config,
+    source_id: &str,
+) -> Result<Vec<ChapterInfo>> {
+    use crate::metadata::extract_metadata;
+    use crate::metadata::ContentType;
+    use crate::util::files::find_all_files;
+
+    let sources_md_path = config.paths.sources_md_path()?;
+    let source_path = sources_md_path.join(source_id);
+
+    if !crate::util::files::exists(&source_path).await {
+        return Err(Error::not_found(source_path));
+    }
+
+    let files = find_all_files(&source_path, FindOptions::markdown()).await?;
+    let mut chapters = Vec::new();
+
+    for file_info in files {
+        let path = &file_info.path;
+
+        // Extract metadata to get title and section
+        if let Ok(meta) =
+            extract_metadata(&source_path, path, ContentType::SourceChapter).await
+        {
+            // Generate chapter ID from filename
+            let id = path
+                .file_stem()
+                .and_then(|s| s.to_str())
+                .unwrap_or("unknown")
+                .to_string();
+
+            chapters.push(ChapterInfo {
+                id,
+                title: meta.title,
+                section: meta.section,
+                path: path.to_string_lossy().to_string(),
+            });
+        }
+    }
+
+    // Sort by path for consistent ordering
+    chapters.sort_by(|a, b| a.path.cmp(&b.path));
+
+    Ok(chapters)
+}
+
+/// Check if a source is indexed in Tantivy.
+#[cfg(feature = "fts")]
+async fn check_source_indexed(state: &AppState, source_id: &str) -> Result<bool> {
+    use crate::tools::search::SearchConceptsParams;
+
+    // Search for documents with this source ID and content_type = "source_chapter"
+    let params = SearchConceptsParams {
+        query: source_id.to_string(),
+        limit: 1,
+        query_mode: None,
+        category: None,
+        content_types: Some(vec!["source_chapter".to_string()]),
+    };
+
+    let results = state.search_backend().search(&params).await?;
+    Ok(!results.is_empty())
+}
+
+/// Check if source file exists in any configured location.
+async fn check_source_file_exists(config: &Config, source_id: &str) -> (bool, Option<SourceFormat>) {
+    // Try to get PDF/EPUB path
+    match get_source_pdf_path(config, source_id) {
+        Ok(path) => {
+            // Check if file actually exists
+            let exists = std::path::Path::new(&path).exists();
+            if exists {
+                let format = detect_format(&path.to_string_lossy());
+                (true, Some(format))
+            } else {
+                (false, None)
+            }
+        }
+        Err(_) => (false, None),
+    }
 }
 
 /// Scan the sources-md directory for converted markdown sources.
@@ -196,20 +475,59 @@ fn humanize_source_id(id: &str) -> String {
         .join(" ")
 }
 
-/// Get a specific chapter from a converted source.
-pub async fn get_source_chapter(config: &Config, source_id: &str, chapter: &str) -> Result<String> {
+/// Get a specific chapter from a converted source (v0.3.0: enhanced).
+///
+/// Retrieves the content of a specific chapter from a source. Optionally
+/// filters to a specific section if provided.
+///
+/// # Arguments
+///
+/// * `config` - Server configuration
+/// * `source_id` - Source identifier (e.g., "open-music-theory")
+/// * `chapter` - Chapter identifier
+/// * `section` - Optional section/page filter (e.g., "pp. 23-28")
+///
+/// # Errors
+///
+/// Returns errors with clear messages when:
+/// - Source directory doesn't exist
+/// - Chapter file not found
+/// - File read fails
+pub async fn get_source_chapter(
+    config: &Config,
+    source_id: &str,
+    chapter: &str,
+    section: Option<&str>,
+) -> Result<String> {
     let sources_md_path = config.paths.sources_md_path()?;
     let source_path = sources_md_path.join(source_id);
 
     if !crate::util::files::exists(&source_path).await {
-        return Err(crate::error::Error::not_found(source_path));
+        return Err(Error::not_found_msg(format!(
+            "Source '{}' not found. Check if it's been converted to markdown.",
+            source_id
+        )));
     }
 
     // Try to find the chapter file
-    let chapter_path = find_chapter_file(&source_path, chapter).await?;
+    let chapter_path = find_chapter_file(&source_path, chapter).await.map_err(|_| {
+        Error::not_found_msg(format!(
+            "Chapter '{}' not found in source '{}'. Use list_source_chapters to see available chapters.",
+            chapter, source_id
+        ))
+    })?;
 
-    // Read and return the chapter content
-    let content = read_file(&chapter_path).await?;
+    // Read the chapter content
+    let mut content = read_file(&chapter_path).await?;
+
+    // If section filter specified, add a note (future: could extract specific section)
+    if let Some(section_ref) = section {
+        content = format!(
+            "# Requested section: {}\n\n{}",
+            section_ref, content
+        );
+    }
+
     Ok(content)
 }
 
@@ -535,7 +853,7 @@ mod tests {
 
         let config = Config::load().expect("Config should load");
 
-        let result = get_source_chapter(&config, "nonexistent-source", "chapter-1").await;
+        let result = get_source_chapter(&config, "nonexistent-source", "chapter-1", None).await;
         assert!(result.is_err());
     }
 

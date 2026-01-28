@@ -123,6 +123,10 @@ pub async fn build_index(config: &Config) -> Result<IndexStats> {
         doc_count: stats.indexed,
         last_indexed: SystemTime::now(),
         content_hash,
+        concept_cards: stats.concept_cards,
+        source_chapters: stats.source_chapters,
+        unified_concepts: stats.unified_concepts,
+        guides: stats.guides,
     };
     save_metadata(&index_path, &metadata).await?;
 

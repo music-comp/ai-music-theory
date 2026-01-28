@@ -586,6 +586,10 @@ Test content.
             doc_count: 1,
             last_indexed: std::time::SystemTime::now(),
             content_hash: "old-hash".to_string(),
+            concept_cards: 1,
+            source_chapters: 0,
+            unified_concepts: 0,
+            guides: 0,
         };
         crate::search::freshness::save_metadata(&index_path, &metadata)
             .await

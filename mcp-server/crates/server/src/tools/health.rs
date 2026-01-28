@@ -15,6 +15,9 @@ pub struct HealthResponse {
     pub status: String,
     /// Backend status information
     pub backend: BackendStatus,
+    /// Search configuration (v0.3.0)
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub search_config: Option<SearchConfigInfo>,
 }
 
 /// Search backend status information.
@@ -46,6 +49,41 @@ pub struct IndexStats {
     /// When the index was last built
     #[serde(skip_serializing_if = "Option::is_none")]
     pub last_indexed: Option<String>,
+    /// Per-type document counts (v0.3.0)
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub concept_cards: Option<usize>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub source_chapters: Option<usize>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub unified_concepts: Option<usize>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub guides: Option<usize>,
+}
+
+/// Search configuration information (v0.3.0).
+#[derive(Debug, Serialize, Deserialize)]
+pub struct SearchConfigInfo {
+    /// Field boost multipliers
+    pub field_boosts: FieldBoosts,
+    /// Whether stopword filtering is enabled
+    pub stopwords_enabled: bool,
+    /// Whether fuzzy search is enabled
+    pub fuzzy_search: bool,
+    /// Query mode (smart, and, or, minimum_match)
+    pub query_mode: String,
+    /// Content types that are indexed
+    pub content_types_indexed: Vec<String>,
+}
+
+/// Field boost multipliers (v0.3.0).
+#[derive(Debug, Serialize, Deserialize)]
+pub struct FieldBoosts {
+    /// Title field boost (default: 3.0)
+    pub title: f32,
+    /// Description field boost (default: 2.0)
+    pub description: f32,
+    /// Content field boost (default: 1.0)
+    pub content: f32,
 }
 
 /// Get server health and status information.
@@ -79,6 +117,24 @@ pub async fn get_health(state: &AppState) -> Result<HealthResponse> {
         (enabled, ready, stats)
     };
 
+    // Build search configuration info (v0.3.0)
+    let search_config = Some(SearchConfigInfo {
+        field_boosts: FieldBoosts {
+            title: state.config.search.field_boost_title,
+            description: state.config.search.field_boost_description,
+            content: state.config.search.field_boost_content,
+        },
+        stopwords_enabled: state.config.search.enable_stopwords,
+        fuzzy_search: state.config.search.fuzzy_search,
+        query_mode: format!("{:?}", state.config.search.query_mode).to_lowercase(),
+        content_types_indexed: vec![
+            "concept_card".to_string(),
+            "source_chapter".to_string(),
+            "unified_concept".to_string(),
+            "guide".to_string(),
+        ],
+    });
+
     Ok(HealthResponse {
         status: "ok".to_string(),
         backend: BackendStatus {
@@ -90,6 +146,7 @@ pub async fn get_health(state: &AppState) -> Result<HealthResponse> {
             #[cfg(feature = "fts")]
             index_stats,
         },
+        search_config,
     })
 }
 
@@ -121,6 +178,10 @@ async fn load_index_stats(config: &crate::config::Config) -> Result<IndexStats> 
             return Ok(IndexStats {
                 doc_count: metadata.doc_count,
                 last_indexed: Some(format!("{:?}", metadata.last_indexed)),
+                concept_cards: Some(metadata.concept_cards),
+                source_chapters: Some(metadata.source_chapters),
+                unified_concepts: Some(metadata.unified_concepts),
+                guides: Some(metadata.guides),
             });
         }
     }
@@ -129,6 +190,10 @@ async fn load_index_stats(config: &crate::config::Config) -> Result<IndexStats> 
     Ok(IndexStats {
         doc_count: 0,
         last_indexed: None,
+        concept_cards: None,
+        source_chapters: None,
+        unified_concepts: None,
+        guides: None,
     })
 }
 
@@ -217,6 +282,7 @@ mod tests {
                 #[cfg(feature = "fts")]
                 index_stats: None,
             },
+            search_config: None,
         };
 
         let json = serde_json::to_string(&response).expect("Serialization failed");

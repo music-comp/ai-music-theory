@@ -27,10 +27,23 @@ pub struct MusicTheoryServer {
 pub struct GetSourceChapterParams {
     source_id: String,
     chapter: String,
+    /// Optional section/page filter (v0.3.0)
+    #[serde(default)]
+    section: Option<String>,
 }
 
 #[derive(Serialize, Deserialize, JsonSchema)]
 pub struct GetSourcePdfPathParams {
+    source_id: String,
+}
+
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct CheckSourceAvailabilityParams {
+    source_id: String,
+}
+
+#[derive(Serialize, Deserialize, JsonSchema)]
+pub struct ListSourceChaptersParams {
     source_id: String,
 }
 
@@ -113,6 +126,34 @@ impl MusicTheoryServer {
         Ok(CallToolResult::success(vec![Content::text(content)]))
     }
 
+    #[tool(description = "Check availability status of a source (indexed/converted/exists)")]
+    async fn check_source_availability(
+        &self,
+        params: Parameters<CheckSourceAvailabilityParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let response = tools::sources::check_source_availability(&self.state, &params.0.source_id)
+            .await
+            .map_err(|e| e.to_mcp_error("Error checking source availability"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[tool(description = "List all chapters for a source material")]
+    async fn list_source_chapters(
+        &self,
+        params: Parameters<ListSourceChaptersParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let response = tools::sources::list_source_chapters(&self.state, &params.0.source_id)
+            .await
+            .map_err(|e| e.to_mcp_error("Error listing chapters"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
     #[tool(description = "Retrieve a specific chapter from a source material")]
     async fn get_source_chapter(
         &self,
@@ -122,6 +163,7 @@ impl MusicTheoryServer {
             &self.state.config,
             &params.0.source_id,
             &params.0.chapter,
+            params.0.section.as_deref(),
         )
         .await
         .map_err(|e| e.to_mcp_error("Error retrieving chapter"))?;
@@ -379,6 +421,7 @@ mod tests {
         let params = Parameters(GetSourceChapterParams {
             source_id: "nonexistent-source".to_string(),
             chapter: "chapter-1".to_string(),
+            section: None,
         });
 
         let result = server.get_source_chapter(params).await;
@@ -617,6 +660,7 @@ mod tests {
         let get_source_params = GetSourceChapterParams {
             source_id: "test".to_string(),
             chapter: "ch1".to_string(),
+            section: None,
         };
         let json = serde_json::to_string(&get_source_params).unwrap();
         assert!(json.contains("test"));

@@ -22,6 +22,15 @@ pub struct IndexMetadata {
     pub last_indexed: SystemTime,
     /// Hash of all concept card file paths and modification times
     pub content_hash: String,
+    /// Per-type document counts (v0.3.0)
+    #[serde(default)]
+    pub concept_cards: usize,
+    #[serde(default)]
+    pub source_chapters: usize,
+    #[serde(default)]
+    pub unified_concepts: usize,
+    #[serde(default)]
+    pub guides: usize,
 }
 
 /// Compute a content hash from all concept card files.
@@ -235,6 +244,10 @@ mod tests {
             doc_count: 1,
             last_indexed: SystemTime::now(),
             content_hash: hash1.clone(),
+            concept_cards: 1,
+            source_chapters: 0,
+            unified_concepts: 0,
+            guides: 0,
         };
         save_metadata(&index_path, &metadata)
             .await
@@ -285,6 +298,10 @@ mod tests {
             doc_count: 42,
             last_indexed: SystemTime::now(),
             content_hash: "abcdef123456".to_string(),
+            concept_cards: 30,
+            source_chapters: 10,
+            unified_concepts: 1,
+            guides: 1,
         };
 
         save_metadata(&index_path, &metadata)
@@ -325,6 +342,10 @@ mod tests {
             doc_count: 1,
             last_indexed: SystemTime::now(),
             content_hash: current_hash,
+            concept_cards: 1,
+            source_chapters: 0,
+            unified_concepts: 0,
+            guides: 0,
         };
 
         save_metadata(&index_path, &metadata)
@@ -354,6 +375,10 @@ mod tests {
             doc_count: 1,
             last_indexed: SystemTime::now(),
             content_hash: "wrong_hash".to_string(),
+            concept_cards: 1,
+            source_chapters: 0,
+            unified_concepts: 0,
+            guides: 0,
         };
 
         save_metadata(&index_path, &metadata)
