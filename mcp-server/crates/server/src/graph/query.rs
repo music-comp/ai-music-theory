@@ -82,8 +82,10 @@ pub struct PathNode {
     pub id: String,
     /// Node title
     pub title: String,
-    /// Node category
-    pub category: String,
+    /// Node category (for concepts)
+    pub category: Option<String>,
+    /// Step number in path (0-indexed)
+    pub step: u32,
 }
 
 /// An edge in a path.
@@ -95,6 +97,8 @@ pub struct PathEdge {
     pub to: String,
     /// Relationship type
     pub relationship: String,
+    /// Step number in path (0-indexed, connecting step N to N+1)
+    pub step: u32,
 }
 
 // ============================================================================
@@ -157,10 +161,14 @@ pub struct NeighborhoodNode {
     pub id: String,
     /// Node title
     pub title: String,
-    /// Node category
-    pub category: String,
+    /// Node type ("concept" or "source")
+    pub node_type: String,
+    /// Node category (for concepts)
+    pub category: Option<String>,
     /// Distance from center (in hops)
     pub distance: u32,
+    /// Whether this is the center node
+    pub is_center: bool,
 }
 
 /// An edge in a neighborhood.
@@ -400,18 +408,21 @@ mod tests {
                 PathNode {
                     id: "interval".to_string(),
                     title: "Interval".to_string(),
-                    category: "fundamentals".to_string(),
+                    category: Some("fundamentals".to_string()),
+                    step: 0,
                 },
                 PathNode {
                     id: "seventh-chord".to_string(),
                     title: "Seventh Chord".to_string(),
-                    category: "harmony".to_string(),
+                    category: Some("harmony".to_string()),
+                    step: 1,
                 },
             ],
             edges: vec![PathEdge {
                 from: "interval".to_string(),
                 to: "seventh-chord".to_string(),
                 relationship: "Prerequisite".to_string(),
+                step: 0,
             }],
         };
 
@@ -451,8 +462,10 @@ mod tests {
             nodes: vec![NeighborhoodNode {
                 id: "interval".to_string(),
                 title: "Interval".to_string(),
-                category: "fundamentals".to_string(),
+                node_type: "concept".to_string(),
+                category: Some("fundamentals".to_string()),
                 distance: 1,
+                is_center: false,
             }],
             edges: vec![NeighborhoodEdge {
                 from: "interval".to_string(),

@@ -5,6 +5,7 @@ pub mod search;
 pub mod sources;
 
 pub mod graph;
+pub mod graph_query;
 
 // Tool function exports - Used by server.rs via #[tool] macro expansion.
 // The rmcp macro system uses these via qualified paths (tools::sources::list_sources, etc.),
@@ -13,6 +14,10 @@ pub mod graph;
 pub use concepts::{get_concept, list_categories, list_concepts};
 #[allow(unused_imports)]
 pub use graph::{get_node, get_node_edges, graph_stats, graph_status, graph_validate};
+#[allow(unused_imports)]
+pub use graph_query::{
+    find_concept_path, get_concept_neighborhood, get_prerequisites, get_related_concepts,
+};
 #[allow(unused_imports)]
 pub use guides::{get_guide, list_guides};
 #[allow(unused_imports)]
