@@ -14,7 +14,7 @@ use crate::config::Config;
 use crate::error::Result;
 
 /// Current schema version (increment when schema changes)
-pub(crate) const SCHEMA_VERSION: u32 = 2; // v0.3.0: added content_type and section fields
+pub(crate) const SCHEMA_VERSION: u32 = 3; // v0.3.0: added content_type and section fields, changed part from u64 to text
 
 /// Index metadata stored alongside the Tantivy index.
 #[derive(Debug, Serialize, Deserialize)]

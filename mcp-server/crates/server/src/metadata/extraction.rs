@@ -57,8 +57,8 @@ pub struct UniversalMetadata {
     pub chapter: Option<String>,
     /// Fine-grained location (page numbers, section numbers)
     pub section: Option<String>,
-    /// Part number
-    pub part: Option<u32>,
+    /// Part number or name (e.g., "1", "V. Chromaticism", "Workbook")
+    pub part: Option<String>,
     /// Description or preview text
     pub description: Option<String>,
     /// Tags for categorization
@@ -291,8 +291,8 @@ pub struct ConceptMetadata {
     pub source: Option<String>,
     /// Chapter or section reference
     pub chapter: Option<String>,
-    /// Part number
-    pub part: Option<u32>,
+    /// Part number or name (e.g., "1", "V. Chromaticism", "Workbook")
+    pub part: Option<String>,
     /// Description or preview text
     pub description: Option<String>,
     /// Tags for categorization
@@ -439,7 +439,7 @@ Content here"#;
             meta.chapter,
             Some("Half Steps, Whole Steps, and Accidentals".to_string())
         );
-        assert_eq!(meta.part, Some(1));
+        assert_eq!(meta.part, Some("1".to_string()));
         assert_eq!(
             meta.description,
             Some("Musical symbol that alters pitch".to_string())

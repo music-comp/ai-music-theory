@@ -197,8 +197,8 @@ impl Indexer {
             tantivy_doc.add_text(self.schema.chapter, chapter);
         }
 
-        if let Some(part) = doc.part {
-            tantivy_doc.add_u64(self.schema.part, part as u64);
+        if let Some(part) = &doc.part {
+            tantivy_doc.add_text(self.schema.part, part);
         }
 
         if let Some(author) = &doc.author {
@@ -236,7 +236,7 @@ mod tests {
             description: "An introduction to triads and seventh chords".to_string(),
             content: "Triads are three-note chords...".to_string(),
             chapter: Some("Chapter 3".to_string()),
-            part: Some(1),
+            part: Some("1".to_string()),
             author: Some("Test Author".to_string()),
             date: Some("2024-01-01".to_string()),
             content_type: "concept_card".to_string(),

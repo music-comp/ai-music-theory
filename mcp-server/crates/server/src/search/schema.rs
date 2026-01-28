@@ -95,7 +95,7 @@ impl SearchSchema {
 
         // Structured metadata (stored only)
         let chapter = schema_builder.add_text_field("chapter", STORED);
-        let part = schema_builder.add_u64_field("part", STORED);
+        let part = schema_builder.add_text_field("part", STORED); // Changed from u64 to text to support Roman numerals
         let author = schema_builder.add_text_field("author", STORED);
         let date = schema_builder.add_text_field("date", STORED);
 

@@ -32,8 +32,8 @@ pub struct Frontmatter {
     pub chapter: Option<String>,
     /// Section or page range (v0.3.0) - e.g., "pp. 23-28" or "Section 2.3"
     pub section: Option<String>,
-    /// Part number
-    pub part: Option<u32>,
+    /// Part number or name (e.g., "1", "V. Chromaticism", "Workbook")
+    pub part: Option<String>,
 }
 
 /// Extract YAML frontmatter from markdown content.
@@ -244,7 +244,7 @@ Content here"#;
             fm.chapter,
             Some("Half Steps, Whole Steps, and Accidentals".to_string())
         );
-        assert_eq!(fm.part, Some(1));
+        assert_eq!(fm.part, Some("1".to_string()));
         assert!(body.contains("# Accidental"));
     }
 

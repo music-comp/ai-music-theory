@@ -42,7 +42,7 @@ pub struct SearchDocument {
 
     // Structured metadata (stored but not full-text indexed)
     pub chapter: Option<String>,
-    pub part: Option<u32>,
+    pub part: Option<String>, // Part name/number (e.g., "V. Chromaticism", "1")
     pub author: Option<String>,
     pub date: Option<String>,
 
