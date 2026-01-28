@@ -6,6 +6,8 @@
 pub mod cli;
 pub mod config;
 pub mod error;
+#[cfg(feature = "graph")]
+pub mod graph;
 pub mod markdown;
 pub mod metadata;
 pub mod resources;
