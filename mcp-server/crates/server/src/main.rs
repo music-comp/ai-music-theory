@@ -1,6 +1,8 @@
 mod cli;
 mod config;
 mod error;
+#[cfg(feature = "graph")]
+mod graph;
 mod markdown;
 mod metadata;
 mod resources;
