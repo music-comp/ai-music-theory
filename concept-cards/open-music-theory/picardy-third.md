@@ -2,123 +2,86 @@
 concept: Picardy Third
 category: harmony
 source: Open Music Theory
-chapter: "Cadences and Modal Mixture"
-part: 4
+chapter: "Modal Mixture"
+part: 5
 ---
 
 # Picardy Third
 
 ## Quick Definition
 
-The practice of ending a minor-key composition or section with a major tonic triad instead of the expected minor tonic—achieved by raising the third of the final chord from minor to major (e.g., ending A minor with A-C#-E instead of A-C-E), notated as a major I chord in a minor key context, creating a brightened, conclusive, and often triumphant final sonority, named "Picardy third" (tierce de Picardie in French) after the Picardy region of France, common throughout the Baroque and Renaissance periods, and occasionally used in later periods for special expressive effect or historical reference.
+The Picardy third is the practice of ending a minor-key piece or section with a major tonic chord, borrowing the raised third (^3) from the parallel major to transform the expected minor tonic (i) into a major tonic (I), creating a brightened, conclusive final sonority.
 
 ## Formal Definition
 
-**Picardy third** (tierce de Picardie) is the major tonic triad used as the final chord of a minor-key work or section.
-
-**Process**: Raise ^3 from minor to major in final tonic chord
+The **Picardy third** (tierce de Picardie) represents the reverse of typical modal mixture: minor keys borrowing from parallel major.
 
 **Structure**:
-- **Expected**: i (minor tonic) = ^1-♭^3-^5
-- **Picardy**: I (major tonic) = ^1-^3-^5
-- **Change**: ♭^3 → ^3 (raised third)
+- Expected final chord: i (minor tonic) = ^1-lowered-^3-^5
+- Picardy third: I (major tonic) = ^1-^3-^5
+- Changed note: lowered-^3 → ^3 (minor third raised to major third)
 
-**Context**: Only at final cadence (not throughout piece)
+**In A minor**:
+- Expected: A-C-E (A minor)
+- Picardy: A-C#-E (A major)
 
-**Effect**: Brightens ending, creates conclusive sonority, historical convention
-
-**Notation**: Major I chord in minor key, or I(♮3) to show raised third
-
-## Voice Leading
-
-**Standard Picardy third**:
-```
-V:  E-G#-B    I:  A-C#-E  (Picardy third)
-    ↓  ↓  ↓       ↓  ↓  ↓
-    E→ A       (^5 → ^1, bass)
-    G#→ C#     (^7 → ^3, raised third!)
-    B→ E       (^2 → ^5)
-
-Leading tone (G#) resolves to MAJOR third (C#)
-Creates bright, conclusive ending
-```
-
-**Not raised throughout**:
-```
-Throughout piece: A minor (i, iv, V, etc.)
-Only final chord: A major (I with Picardy third)
-
-Not a modulation to major
-Single brightened final chord
-```
-
-**Doubling**: Often double the root, avoid doubling the raised third (to emphasize brightness)
+**Characteristics**:
+- Only used at the final cadence
+- Brightens the ending of minor-key works
+- Historical convention from Renaissance and Baroque periods
+- The name "Picardy" refers to a region in France, though the origin is unclear
 
 ## Historical Context
 
-**Common in**:
-- **Renaissance** (15th-16th centuries): Standard practice
-- **Baroque** (17th-18th centuries): Nearly universal in minor-key works
-- **Bach chorales**: Frequent final Picardy thirds
-- **Early music**: Expected convention
+**Renaissance and Baroque (16th-17th centuries)**:
+- Standard practice for ending minor-key works
+- Major third considered more acoustically "perfect"
+- Final chord needed to be as consonant as possible
+- Nearly universal in Bach chorales and Baroque works
 
-**Less common in**:
-- **Classical period** (late 18th century): Still used but less automatic
-- **Romantic period** (19th century): Occasional, often for effect
-- **20th century+**: Rare, used for historical reference
+**Classical period (18th century)**:
+- Still used but becoming less automatic
+- Composers began favoring minor endings for expressive reasons
 
-**Why used historically?**: Major third acoustically more consonant, final chord "purer," theoretical/acoustic preference
+**Romantic period and beyond (19th century-present)**:
+- Occasional use for special effect
+- Minor endings became the norm for minor-key works
+- Picardy third can evoke historical or nostalgic quality
 
-## Picardy Third vs. Modulation
+## Voice Leading
 
-**Picardy third**:
+**Standard Picardy third resolution**:
 ```
-Entire piece in A minor
-Final chord: A major (only this chord)
+V:  E-G#-B    I:  A-C#-E  (Picardy)
 
-Not a key change
-Single brightened chord
-```
-
-**Modulation to relative major**:
-```
-Piece begins A minor
-Modulates to C major
-Ends in C major (tonic of new key)
-
-Key actually changes
-Multiple chords confirm new key
-Different tonal center
+G# → C# (leading tone resolves UP to major third)
+B → A or E (resolves to root or fifth)
+E → A (bass motion ^5 → ^1)
 ```
 
-**Key distinction**: Picardy third is one chord, not key change
+The key difference from normal V-i: the leading tone resolves to a MAJOR third rather than minor third.
 
-## Musical Effect
-
-**Creates**:
-- **Brightness**: Sudden shift from dark to light
-- **Conclusiveness**: Major triad more stable/final
-- **Uplift**: Emotional lift at ending
-- **Historical flavor**: Baroque/Renaissance sound
-- **Surprise**: Unexpected major sonority
-- **Triumph**: Can suggest victory or resolution
-
-**Contrast with**:
-- **Minor ending**: Darker, more ambiguous, modern
-- **Picardy ending**: Brighter, more conclusive, historical
+**Comparison**:
+```
+Minor ending:  V (E-G#-B) → i (A-C-E)
+               G# → A (leading tone to root, or inner voice)
+               
+Picardy:       V (E-G#-B) → I (A-C#-E)
+               G# → C# or A (leading tone to major third or root)
+```
 
 ## Musical Context
 
-Picardy third serves specific purposes:
-- **Final cadence**: Only at very end of work/section
-- **Historical convention**: Expected in Baroque minor-key works
-- **Acoustic preference**: Major triad more consonant
-- **Theoretical basis**: Pure intervals (major third + perfect fifth)
-- **Expressive brightening**: Lifts darkness at conclusion
-- **Not modern convention**: Contemporary music often prefers minor ending
-- **Nostalgic effect**: Modern use references historical practice
+**Effects of Picardy third**:
+- Creates sense of resolution and light after minor-key darkness
+- Adds conclusiveness (major triad more stable)
+- Evokes historical style (Renaissance/Baroque)
+- Can suggest triumph, hope, or transcendence
 
-Essential knowledge for Baroque performance and historical understanding.
+**When NOT to use**:
+- Picardy is ONLY for final cadences
+- Using major tonic throughout would be modulation to parallel major, not Picardy third
+- Mid-phrase major tonics in minor keys are better analyzed as tonicization or mode change
 
 ## Examples
 
@@ -127,98 +90,68 @@ Essential knowledge for Baroque performance and historical understanding.
 **Picardy third in A minor**:
 ```
 Final cadence:
-V:  E-G#-B    I:  A-C#-E  (Picardy third)
+iv - V - I (Picardy)
+Dm - E - A major
 
-Expected: A-C-E (minor i)
-Actual: A-C#-E (major I, Picardy third)
-
-C raised to C# for final chord only
+Expected: A minor (A-C-E)
+Actual: A major (A-C#-E)
 ```
 
 **Voice leading**:
 ```
         V       I (Picardy)
-S:      B   →   C#      (^2 → ^3, major third)
-A:      G#  →   A       (^7 → ^1)
-T:      E   →   E       (^5 → ^5, common tone)
-B:      E   →   A       (^5 → ^1, bass)
-
-G# resolves to C# (major third)
-Bright, conclusive ending
+S:      B   →   C#  (raised third!)
+A:      G#  →   A
+T:      E   →   E   (common tone)
+B:      E   →   A
 ```
 
-**Not used throughout**:
+**Comparison with minor ending**:
 ```
-Phrase: i - iv - V - I (Picardy)
-        Am  Dm  E   A major
+Without Picardy:  iv - V - i
+                  Dm - E - Am
 
-Only final chord is major
-Rest of piece remains A minor
-```
-
-**Bach chorale cadence**:
-```
-Final progression: iv - V - I (Picardy)
-                   Dm  E   A major
-
-Picardy third standard in Bach chorales
-Creates bright, conclusive ending
-```
-
-**Comparison**:
-```
-Without Picardy: i - iv - V - i
-                 Am  Dm  E   Am (minor ending)
-
-With Picardy:    i - iv - V - I
-                 Am  Dm  E   A major (brightened)
-
-Picardy version more conclusive, brighter
+With Picardy:     iv - V - I
+                  Dm - E - A major
 ```
 
 ### From Repertoire
 
-**Bach, Well-Tempered Clavier, minor-key preludes/fugues**: Picardy thirds nearly universal, brightens final cadences of minor-key fugues.
+**J.S. Bach, Well-Tempered Clavier (minor-key fugues)**:
+- Nearly all minor-key fugues end with Picardy third
+- Standard Baroque practice
 
-**Handel, "Messiah" and operas**: Picardy thirds in minor-key movements, Baroque convention creates conclusive endings.
+**Bach Chorales**:
+- Minor-key chorales consistently end on major tonic
+- Expected convention in Lutheran hymn tradition
 
-**Vivaldi, Concerti in minor keys**: Final movements often end with Picardy third, brightened conclusion standard.
+**Handel, Messiah (minor-key movements)**:
+- Picardy thirds at ends of minor sections
+- Part of Baroque oratorio tradition
 
-**Bach, Chorales in minor keys**: Almost all end with Picardy third, expected practice in Lutheran chorale harmonizations.
-
-**Corelli, Trio Sonatas**: Minor-key movements conclude with major tonic (Picardy), Baroque chamber music convention.
-
-**Modern use** (Romantic/20th century): Occasional, often for nostalgic or historical effect, less automatic than Baroque period.
+**Later usage (Romantic period)**:
+- Brahms occasionally uses Picardy third for historical effect
+- Mahler employs it for transcendent endings
+- Creates nostalgic or spiritual quality
 
 ## Related Concepts
 
-- **Prerequisite**: minor-key, major-triad, tonic-chord, cadence, mode-mixture
-- **Leads to**: modal-alteration, tierce-de-Picardie, historical-performance-practice
-- **See also**: major-minor-third, final-cadence, Baroque-convention, mode-mixture
+- **Prerequisite**: modal-mixture, minor-key, major-triad, final-cadence
+- **Leads to**: baroque-performance-practice, historical-conventions
+- **See also**: borrowed-chord, parallel-keys, authentic-cadence
 
 ## Common Confusions
 
-- Picardy third = major tonic triad ending minor-key work
-- Also called "tierce de Picardie" (French: "third of Picardy")
-- Raises ^3 from minor to major (♭^3 → ^3) in final chord only
-- In A minor: final chord A major (A-C#-E) instead of A minor (A-C-E)
-- Only at final cadence (not throughout piece)
-- Not a modulation to relative major (single chord, not key change)
-- Historical convention (Renaissance, Baroque, early Classical)
-- Nearly universal in Baroque minor-key works (Bach, Handel, Vivaldi)
-- Creates bright, conclusive ending
-- Major triad acoustically more consonant (historical preference)
-- Less common in Romantic/modern periods (minor endings preferred)
-- Modern use often for historical reference or special effect
-- Leading tone resolves to major third (G#→C# in A minor)
-- Often double root, avoid doubling raised third
-- "Picardy" = region of France (origin of name unclear)
-- Not used in middle of piece (only final chord)
-- Different from mode mixture throughout piece
-- Baroque performance practice essential knowledge
-- Creates sense of triumph or uplift at ending
+- Picardy third is the ONLY common use of modal mixture in minor keys (major borrowing from minor is much more common than vice versa)
+- Only applies at FINAL cadences, not throughout a piece
+- Named after Picardy region of France, but origin of the name is unknown
+- Do not confuse with modulation to parallel major (Picardy is just one chord)
+- The technique faded in popularity after the Baroque era
+- In Roman numeral analysis: final chord is labeled "I" not "i" in minor-key context
+- Modern listeners may find Picardy thirds surprising; historical audiences expected them
+- The raised ^3 (e.g., C# in A minor) is called the "Picardy third" itself
 
 ## Source Reference
 
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Cadences and Historical Conventions"
+Open Music Theory, Part V: "Chromaticism"
+Open Music Theory, Part V: "Modal Mixture"

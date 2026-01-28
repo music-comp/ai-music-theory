@@ -56,12 +56,14 @@ For complete step-by-step instructions including configuration, verification, an
 
 ✅ **Fully Functional** - All core features implemented and working
 
-- 9 MCP tools registered and operational
+- **25 MCP tools** registered and operational (10 base + 15 graph)
+- **Graph database** for exploring concept relationships (v0.3.0)
+- **Full-text search** with Tantivy backend (v0.2.0)
 - Beautiful structured logging with twyg
 - Configuration management with confyg
-- All tests passing
+- 360+ tests passing
 
-See [`crates/server/STATUS.md`](crates/server/STATUS.md) for detailed status.
+See [`crates/server/STATUS.md`](crates/server/STATUS.md) for detailed status and [`crates/server/README.md`](crates/server/README.md) for complete documentation.
 
 ## Dependencies
 
@@ -71,6 +73,9 @@ This workspace uses the following key dependencies:
 - **confyg 0.3** - TOML + ENV configuration
 - **twyg 0.6** - Beautiful colored logging
 - **tokio** - Async runtime
+- **tantivy 0.22** - Full-text search engine (optional, with `fts` feature)
+- **petgraph 0.6** - Graph data structures and algorithms (optional, with `graph` feature)
+- **rkyv 0.8** - Zero-copy deserialization for graph caching (optional, with `graph` feature)
 
 See the workspace `Cargo.toml` for the complete dependency list.
 
