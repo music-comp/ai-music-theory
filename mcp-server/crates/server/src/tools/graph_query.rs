@@ -147,6 +147,29 @@ pub struct GetConceptVariantsParams {
     pub canonical_id: String,
 }
 
+/// Parameters for find_bridge_concepts.
+#[derive(Debug, Serialize, Deserialize)]
+pub struct FindBridgeConceptsParams {
+    /// First category
+    pub category_a: String,
+    /// Second category
+    pub category_b: String,
+    /// Limit number of results (default: 5, max: 15)
+    #[serde(default = "default_limit_5")]
+    pub limit: u32,
+}
+
+fn default_limit_5() -> u32 {
+    5
+}
+
+/// Parameters for get_source_coverage.
+#[derive(Debug, Serialize, Deserialize)]
+pub struct GetSourceCoverageParams {
+    /// Source ID to query
+    pub source_id: String,
+}
+
 // ============================================================================
 // Tool Implementations - Must-Have
 // ============================================================================
@@ -1088,6 +1111,197 @@ pub async fn get_concept_variants(
 }
 
 // ============================================================================
+// Tool Implementations - Nice-to-Have
+// ============================================================================
+
+/// Find concepts that bridge two categories.
+///
+/// # Arguments
+///
+/// * `state` - Application state
+/// * `params` - Query parameters
+///
+/// # Returns
+///
+/// Returns BridgeConceptsResponse with bridge concepts sorted by score.
+///
+/// # Errors
+///
+/// Returns error if graph is not loaded or limit exceeds maximum.
+#[cfg(feature = "graph")]
+pub async fn find_bridge_concepts(
+    state: &AppState,
+    params: FindBridgeConceptsParams,
+) -> Result<BridgeConceptsResponse> {
+    // Validate limit
+    if params.limit > 15 {
+        return Err(crate::error::Error::config(
+            "Limit exceeds maximum of 15".to_string(),
+        ));
+    }
+
+    // Get loaded graph
+    let graph_state = state.graph.read().unwrap();
+    let loaded = match &*graph_state {
+        GraphState::Loaded(loaded) => loaded,
+        GraphState::NotLoaded => {
+            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
+        }
+        GraphState::Loading => {
+            return Err(crate::error::Error::not_found_msg(
+                "Graph is currently loading",
+            ))
+        }
+        GraphState::Failed(error) => {
+            return Err(crate::error::Error::config(format!(
+                "Graph failed to load: {}",
+                error
+            )))
+        }
+    };
+
+    // Use bridge_concepts algorithm
+    let bridge_indices = crate::graph::algorithms::bridge_concepts(
+        &loaded.graph,
+        &params.category_a,
+        &params.category_b,
+    );
+
+    // Build response (limit results)
+    let mut bridges = Vec::new();
+    for (node_idx, connections_a, connections_b, score) in
+        bridge_indices.iter().take(params.limit as usize)
+    {
+        let node = &loaded.graph[*node_idx];
+        if let Node::Concept(concept) = node {
+            let node_id = loaded
+                .node_index
+                .iter()
+                .find(|(_, &idx)| idx == *node_idx)
+                .map(|(id, _)| id.clone())
+                .unwrap_or_default();
+
+            bridges.push(crate::graph::query::BridgeConcept {
+                id: node_id,
+                title: concept.title.clone(),
+                category: concept.category.clone(),
+                connections_to_a: *connections_a,
+                connections_to_b: *connections_b,
+                bridge_score: *score,
+            });
+        }
+    }
+
+    Ok(BridgeConceptsResponse {
+        category_a: params.category_a,
+        category_b: params.category_b,
+        total: bridges.len() as u32,
+        bridges,
+    })
+}
+
+/// Get coverage information for a source.
+///
+/// # Arguments
+///
+/// * `state` - Application state
+/// * `params` - Query parameters
+///
+/// # Returns
+///
+/// Returns SourceCoverageResponse with concepts covered by this source.
+///
+/// # Errors
+///
+/// Returns error if graph is not loaded or source not found.
+#[cfg(feature = "graph")]
+pub async fn get_source_coverage(
+    state: &AppState,
+    params: GetSourceCoverageParams,
+) -> Result<SourceCoverageResponse> {
+    // Get loaded graph
+    let graph_state = state.graph.read().unwrap();
+    let loaded = match &*graph_state {
+        GraphState::Loaded(loaded) => loaded,
+        GraphState::NotLoaded => {
+            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
+        }
+        GraphState::Loading => {
+            return Err(crate::error::Error::not_found_msg(
+                "Graph is currently loading",
+            ))
+        }
+        GraphState::Failed(error) => {
+            return Err(crate::error::Error::config(format!(
+                "Graph failed to load: {}",
+                error
+            )))
+        }
+    };
+
+    // Lookup node
+    let node_idx = loaded.node_index.get(&params.source_id).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!("Node not found: {}", params.source_id))
+    })?;
+
+    // Verify it's a source node
+    let (source_title, source_author) = match &loaded.graph[*node_idx] {
+        Node::Source(s) => (s.title.clone(), s.author.clone()),
+        Node::Concept(_) => {
+            return Err(crate::error::Error::config(
+                "Cannot get coverage for a concept node".to_string(),
+            ))
+        }
+    };
+
+    // Find all outgoing edges to concepts
+    let mut introduces = Vec::new();
+    let mut covers = Vec::new();
+
+    for edge in loaded
+        .graph
+        .edges_directed(*node_idx, Direction::Outgoing)
+    {
+        let target_idx = edge.target();
+        let target_node = &loaded.graph[target_idx];
+
+        if let Node::Concept(concept) = target_node {
+            let concept_id = loaded
+                .node_index
+                .iter()
+                .find(|(_, &idx)| idx == target_idx)
+                .map(|(id, _)| id.clone())
+                .unwrap_or_default();
+
+            let concept_brief = crate::graph::query::ConceptBrief {
+                id: concept_id,
+                title: concept.title.clone(),
+                category: concept.category.clone(),
+            };
+
+            match edge.weight().relationship {
+                Relationship::Introduces => introduces.push(concept_brief),
+                Relationship::Covers => covers.push(concept_brief),
+                _ => {} // Ignore other relationship types
+            }
+        }
+    }
+
+    let total_concepts = (introduces.len() + covers.len()) as u32;
+
+    Ok(SourceCoverageResponse {
+        source_id: params.source_id,
+        source_title,
+        source_author,
+        total_concepts,
+        introduces_count: introduces.len() as u32,
+        covers_count: covers.len() as u32,
+        introduces,
+        covers,
+    })
+}
+
+// ============================================================================
 // Helper Functions
 // ============================================================================
 
@@ -1203,6 +1417,26 @@ pub async fn get_concept_variants(
     ))
 }
 
+#[cfg(not(feature = "graph"))]
+pub async fn find_bridge_concepts(
+    _state: &AppState,
+    _params: FindBridgeConceptsParams,
+) -> Result<String> {
+    Err(crate::error::Error::config(
+        "Graph feature not enabled. Rebuild with --features graph".to_string(),
+    ))
+}
+
+#[cfg(not(feature = "graph"))]
+pub async fn get_source_coverage(
+    _state: &AppState,
+    _params: GetSourceCoverageParams,
+) -> Result<String> {
+    Err(crate::error::Error::config(
+        "Graph feature not enabled. Rebuild with --features graph".to_string(),
+    ))
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -1264,5 +1498,21 @@ mod tests {
         let json = r#"{"canonical_id": "test"}"#;
         let params: GetConceptVariantsParams = serde_json::from_str(json).unwrap();
         assert_eq!(params.canonical_id, "test");
+    }
+
+    #[test]
+    fn test_find_bridge_concepts_params_default() {
+        let json = r#"{"category_a": "harmony", "category_b": "counterpoint"}"#;
+        let params: FindBridgeConceptsParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.limit, 5);
+        assert_eq!(params.category_a, "harmony");
+        assert_eq!(params.category_b, "counterpoint");
+    }
+
+    #[test]
+    fn test_get_source_coverage_params() {
+        let json = r#"{"source_id": "test-source"}"#;
+        let params: GetSourceCoverageParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.source_id, "test-source");
     }
 }
