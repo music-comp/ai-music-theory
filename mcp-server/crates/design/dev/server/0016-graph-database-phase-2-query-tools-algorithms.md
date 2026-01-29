@@ -1,4 +1,4 @@
-# Graph Database Phase 2 - Query Tools & Algorithms - Implementation Plan
+# Graph Database Phase 2 - Query Tools & Algorithms
 
 ## Overview
 
@@ -10,6 +10,7 @@ Implement graph traversal algorithms and 10 new MCP query tools that enable Clau
 ## Architecture
 
 ### Module Structure
+
 ```
 crates/server/src/graph/
 ├── algorithms.rs         # NEW - Core traversal algorithms
@@ -74,6 +75,7 @@ crates/server/src/tools/
    - Returns `Vec<(NodeIndex, u32, u32, f32)>` sorted by score
 
 **Tests (6 tests):**
+
 - Build small test graph with known structure
 - Test shortest_path finds correct path length
 - Test prerequisites_sorted returns correct order
@@ -82,6 +84,7 @@ crates/server/src/tools/
 - Test bridge_concepts with two categories
 
 **Integration with Phase 1:**
+
 - Uses `ConceptGraph` type from persistence.rs
 - Uses `Node`, `Edge`, `Relationship` from types.rs
 - Operates on petgraph DiGraph API
@@ -107,11 +110,13 @@ crates/server/src/tools/
 10. **SourceCoverageResponse** - What a source covers
 
 Each response type includes:
+
 - Top-level metadata (counts, IDs, titles)
 - List of result structs with node details (id, title, category)
 - Additional fields specific to query type (distance, depth, score, etc.)
 
 **Tests (10 serialization tests):**
+
 - One test per response type verifying JSON structure
 - Verify all fields present in serialized output
 - Test with sample data
@@ -149,6 +154,7 @@ Each response type includes:
    - Validation: radius ≤ 3, max_nodes ≤ 50
 
 **Common patterns:**
+
 - All tools check GraphState::Loaded
 - Use loaded.node_index for fast ID lookups
 - Convert NodeIndex back to ID for responses
@@ -156,6 +162,7 @@ Each response type includes:
 - Handle "not found" errors gracefully
 
 **Tests (8 tests):**
+
 - 4 unit tests: one per tool with mock graph
 - 4 integration tests: one per tool with actual data
 
@@ -165,32 +172,33 @@ Each response type includes:
 
 **Add to `crates/server/src/tools/graph_query.rs`:**
 
-5. **`get_dependents`**
+1. **`get_dependents`**
    - Parameters: concept_id, depth (default 2, max 4)
    - Algorithm: `dependents()` from algorithms.rs
    - Response: DependentsResponse
    - Validation: depth ≤ 4
 
-6. **`get_central_concepts`**
+2. **`get_central_concepts`**
    - Parameters: category (optional), limit (default 10, max 25)
    - Algorithm: `degree_centrality()` from algorithms.rs
    - Response: CentralConceptsResponse
    - Validation: limit ≤ 25
 
-7. **`get_concept_sources`**
+3. **`get_concept_sources`**
    - Parameters: concept_id
    - Algorithm: Find all edges from Source nodes to this concept
    - Filter by Relationship::Introduces or Relationship::Covers
    - Response: ConceptSourcesResponse
    - Validation: concept exists
 
-8. **`get_concept_variants`**
+4. **`get_concept_variants`**
    - Parameters: canonical_id
    - Algorithm: Find all Concept nodes where canonical_id matches
    - Response: ConceptVariantsResponse
    - Validation: canonical concept exists
 
 **Tests (8 tests):**
+
 - 4 unit tests: one per tool
 - 4 integration tests: one per tool
 
@@ -200,13 +208,13 @@ Each response type includes:
 
 **Add to `crates/server/src/tools/graph_query.rs`:**
 
-9. **`find_bridge_concepts`**
+1. **`find_bridge_concepts`**
    - Parameters: category_a, category_b, limit (default 5, max 15)
    - Algorithm: `bridge_concepts()` from algorithms.rs
    - Response: BridgeConceptsResponse
    - Validation: limit ≤ 15, categories exist
 
-10. **`get_source_coverage`**
+2. **`get_source_coverage`**
     - Parameters: source_id
     - Algorithm: Find all outgoing edges from source node
     - Group by Relationship::Introduces vs Covers
@@ -214,6 +222,7 @@ Each response type includes:
     - Validation: source exists
 
 **Tests (4 tests):**
+
 - 2 unit tests: one per tool
 - 2 integration tests: one per tool
 
@@ -222,11 +231,13 @@ Each response type includes:
 ### Phase 6: MCP Server Integration (2 hours)
 
 **Files to modify:**
+
 - `crates/server/src/tools/mod.rs` - Add graph_query module
 - `crates/server/src/server.rs` - Register 10 new tools
 - `crates/server/src/graph/mod.rs` - Export algorithms and query modules
 
 **Parameter types for server.rs:**
+
 ```rust
 // Must-have tools
 pub struct GetRelatedConceptsParams { ... }
@@ -246,6 +257,7 @@ pub struct GetSourceCoverageParams { ... }
 ```
 
 **Tool registration:**
+
 - Follow existing pattern from graph tools (Phase 1)
 - Each tool gets `#[tool(description = "...")]` attribute
 - Handle Parameters<T> unwrapping
@@ -253,11 +265,13 @@ pub struct GetSourceCoverageParams { ... }
 - Return `CallToolResult::success(vec![Content::text(json)])`
 
 **Feature gating:**
+
 - All query tools always compiled (like Phase 1 tools)
 - Return "feature not enabled" errors when graph disabled
 - Ensures tool_router macro works without feature
 
 **Tests:**
+
 - Verify all 10 tools register correctly
 - Verify tool descriptions are clear
 - Verify parameter schemas work with inspector
@@ -267,6 +281,7 @@ pub struct GetSourceCoverageParams { ... }
 ### Phase 7: Documentation & Polish (1-2 hours)
 
 **Tasks:**
+
 1. Add comprehensive doc comments to all public functions
 2. Add module-level docs to algorithms.rs and query.rs
 3. Verify all tests pass (≥95% coverage target)
@@ -275,6 +290,7 @@ pub struct GetSourceCoverageParams { ... }
 6. Update tool descriptions for clarity
 
 **Documentation checklist:**
+
 - [ ] algorithms.rs has module docs explaining each algorithm
 - [ ] All public functions have doc comments with examples
 - [ ] query.rs has module docs explaining response types
@@ -282,6 +298,7 @@ pub struct GetSourceCoverageParams { ... }
 - [ ] Tool descriptions are clear and concise
 
 **Quality checklist:**
+
 - [ ] cargo test --features graph --lib passes
 - [ ] cargo test --lib passes without graph feature
 - [ ] cargo clippy --features graph --lib clean
@@ -296,16 +313,19 @@ pub struct GetSourceCoverageParams { ... }
 ### Algorithm Design Decisions
 
 **BFS vs DFS:**
+
 - Use BFS for shortest paths (breadth-first finds shortest)
 - Use DFS for prerequisite chains (depth-first follows dependencies)
 - Both respect max_depth to prevent infinite recursion
 
 **Undirected vs Directed:**
+
 - `neighborhood()` and `shortest_path()` use undirected (both directions)
 - `prerequisites_sorted()` and `dependents()` use directed (specific edge direction)
 - petgraph provides both: `neighbors_undirected()` and `edges_directed()`
 
 **Performance Limits:**
+
 - All tools have max_depth/max_nodes limits
 - Prevents expensive queries on large graphs
 - Design doc specifies limits (e.g., max_depth=8, max_nodes=50)
@@ -313,6 +333,7 @@ pub struct GetSourceCoverageParams { ... }
 ### Response Building Pattern
 
 For each tool:
+
 1. Validate parameters (depth limits, node exists)
 2. Get LoadedGraph from AppState
 3. Lookup NodeIndex using loaded.node_index
@@ -325,11 +346,13 @@ For each tool:
 ### Relationship Filtering
 
 **For `get_related_concepts`:**
+
 - Parse `relationship_types` CSV: "prerequisite,relates_to,extends"
 - Map to `HashSet<Relationship>` for fast lookup
 - Filter edges: `filter(|e| relationship_set.contains(&e.weight().relationship))`
 
 **Direction filtering:**
+
 - "incoming": Only edges where this node is target
 - "outgoing": Only edges where this node is source
 - "both" (default): All edges connected to node
@@ -337,12 +360,14 @@ For each tool:
 ### Error Handling
 
 **Common errors:**
+
 - Graph not loaded → "Graph not loaded yet"
 - Node not found → "Node not found: {id}"
 - Invalid depth → "Depth exceeds maximum of {max}"
 - Path not found → `found: false` in response (not an error)
 
 **Error propagation:**
+
 - Use `?` operator for Result propagation
 - Convert to MCP errors with `.to_mcp_error(context)`
 - Provide helpful context in error messages
@@ -350,11 +375,13 @@ For each tool:
 ## Critical Files
 
 ### Files to Create
+
 1. `/Users/oubiwann/lab/music-comp/ai-music-theory/mcp-server/crates/server/src/graph/algorithms.rs`
 2. `/Users/oubiwann/lab/music-comp/ai-music-theory/mcp-server/crates/server/src/graph/query.rs`
 3. `/Users/oubiwann/lab/music-comp/ai-music-theory/mcp-server/crates/server/src/tools/graph_query.rs`
 
 ### Files to Modify
+
 1. `/Users/oubiwann/lab/music-comp/ai-music-theory/mcp-server/crates/server/src/graph/mod.rs` - Add algorithms and query modules
 2. `/Users/oubiwann/lab/music-comp/ai-music-theory/mcp-server/crates/server/src/tools/mod.rs` - Add graph_query module
 3. `/Users/oubiwann/lab/music-comp/ai-music-theory/mcp-server/crates/server/src/server.rs` - Register 10 new tools with parameters
@@ -364,17 +391,20 @@ For each tool:
 ### Unit Tests (30+ tests)
 
 **algorithms.rs tests (6):**
+
 - Build small test graph with known structure (4-5 nodes)
 - Test each algorithm function independently
 - Verify correct results on known input
 - Test edge cases (no path, empty neighborhood, etc.)
 
 **query.rs tests (10):**
+
 - One serialization test per response type
 - Verify JSON structure matches expectations
 - Test with realistic sample data
 
 **graph_query.rs tests (14+):**
+
 - One unit test per tool (10 tools)
 - Mock graph with controlled structure
 - Verify response format and data
@@ -383,6 +413,7 @@ For each tool:
 ### Integration Tests (10)
 
 **Tool integration tests:**
+
 - One test per tool using real graph data
 - Test with actual concept IDs from test fixtures
 - Verify end-to-end: parameters → algorithm → response
@@ -393,6 +424,7 @@ For each tool:
 After implementation:
 
 **Build & Test:**
+
 - [ ] `cargo test --features graph --lib` - All tests pass
 - [ ] `cargo test --lib` - Tests pass without graph feature
 - [ ] `cargo clippy --features graph --lib` - No warnings
@@ -400,11 +432,13 @@ After implementation:
 - [ ] Test coverage ≥95%
 
 **Functional Verification:**
+
 - [ ] Build test graph: `cargo run --features graph --bin music-theory-mcp graph build`
 - [ ] Start server: `cargo run --features graph --bin music-theory-mcp serve`
 - [ ] Test via inspector: `npx @modelcontextprotocol/inspector target/debug/music-theory-mcp`
 
 **MCP Tool Testing:**
+
 1. **get_related_concepts** - Find relationships for a concept
 2. **find_concept_path** - Path between two concepts
 3. **get_prerequisites** - Prerequisites for a concept
@@ -417,6 +451,7 @@ After implementation:
 10. **get_source_coverage** - What does source cover?
 
 **Performance:**
+
 - [ ] All queries complete in < 100ms on typical graph (200 nodes)
 - [ ] No queries hang or timeout
 - [ ] Memory usage reasonable (< 100MB)
@@ -424,6 +459,7 @@ After implementation:
 ## Success Criteria
 
 ### Must Have (Phase 2 Complete)
+
 - [ ] 6 core algorithms implemented and tested
 - [ ] 4 must-have tools working: related, path, prerequisites, neighborhood
 - [ ] All tools validate parameters (depth limits, node existence)
@@ -432,12 +468,14 @@ After implementation:
 - [ ] Integration with MCP inspector successful
 
 ### Should Have
+
 - [ ] 4 should-have tools working: dependents, central, sources, variants
 - [ ] All 10 tools accessible via MCP
 - [ ] Comprehensive test coverage (≥95%)
 - [ ] Clean clippy and fmt
 
 ### Nice to Have
+
 - [ ] 2 nice-to-have tools working: bridge_concepts, source_coverage
 - [ ] Performance < 100ms for typical queries
 - [ ] Clear, helpful error messages
@@ -457,6 +495,7 @@ After implementation:
 ## Dependencies
 
 All dependencies already satisfied from Phase 1:
+
 - petgraph 0.6 - Graph algorithms
 - serde/serde_json - Serialization
 - tokio - Async runtime
