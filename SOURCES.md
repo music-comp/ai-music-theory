@@ -10,7 +10,8 @@ priorities, processing status, and notes on what each contributes.
 ## Core Texts (In Processing Order)
 
 ### 1. Open Music Theory (FOUNDATION)
-- **Citation**: Gotham, M. et al. (2022). *Open Music Theory*. 
+
+- **Citation**: Gotham, M. et al. (2022). *Open Music Theory*.
 - **Path**: `~/Dropbox/Apps/General Books/Music/[2022] Gotham - Open Music Theory.pdf`
 - **Also Available**: XML version (original format)
 - **Pages**: 1297
@@ -19,12 +20,14 @@ priorities, processing status, and notes on what each contributes.
 - **Priority**: #1 — PROCESS FIRST
 
 **Why First?**
+
 - Establishes baseline terminology Claude needs
 - Pedagogical orientation (explains concepts clearly)
 - CC-licensed = low stakes for experimentation
 - Large but comprehensive = thorough grounding
 
 **Key Content**:
+
 - Fundamentals (pitch, intervals, scales, chords)
 - Diatonic harmony and voice leading
 - Form and analysis
@@ -32,6 +35,7 @@ priorities, processing status, and notes on what each contributes.
 - Species counterpoint
 
 **Processing Notes**:
+
 - Large file — process in sections
 - XML version may be cleaner for extraction
 - Focus on chapters covering fundamentals first
@@ -40,6 +44,7 @@ priorities, processing status, and notes on what each contributes.
 ---
 
 ### 2. Lewin - Generalized Musical Intervals and Transformations
+
 - **Citation**: Lewin, D. (2007). *GMIT* (Revised Edition). Oxford University Press.
 - **Path**: `~/Dropbox/Apps/Oxford University Press/[2007] Lewin - Generalized Musical Intervals and Transformations - Revised Edition.pdf`
 - **Pages**: 290
@@ -47,17 +52,20 @@ priorities, processing status, and notes on what each contributes.
 - **Priority**: #2 — FOUNDATIONAL THEORY
 
 **Why Important?**
+
 - Defines GIS (Generalized Interval System)
 - Establishes "transformational attitude"
 - Foundation for all subsequent mathematical music theory
 
 **Key Content**:
+
 - GIS definition and examples
-- Interval-preserving operations  
+- Interval-preserving operations
 - Simply transitive group actions
 - Transformation graphs and networks
 
 **Processing Notes**:
+
 - **LEWIN PROTOCOL APPLIES** (see PIPELINE.md §2)
 - Mathematical density requires careful validation
 - OCR quality verified as good (marker handles it)
@@ -66,6 +74,7 @@ priorities, processing status, and notes on what each contributes.
 ---
 
 ### 3. Tymoczko - A Geometry of Music
+
 - **Citation**: Tymoczko, D. (2011). *A Geometry of Music*. Oxford University Press.
 - **Path**: `~/Dropbox/Apps/Oxford University Press/[2011] Tymoczko - A Geometry of Music.pdf`
 - **Pages**: 469
@@ -73,12 +82,14 @@ priorities, processing status, and notes on what each contributes.
 - **Priority**: #3
 
 **Why Important?**
+
 - Voice-leading as geometric paths
 - Chord spaces as orbifolds (T^n/S_n)
 - "Extended common practice" framework
 - Bridges math and composition
 
 **Key Content**:
+
 - Voice-leading geometry
 - Chord space construction
 - Efficient voice leading
@@ -86,6 +97,7 @@ priorities, processing status, and notes on what each contributes.
 - Five components of tonality
 
 **Processing Notes**:
+
 - Dense mathematical content
 - Many diagrams (may need description)
 - Complements Lewin but different approach
@@ -93,6 +105,7 @@ priorities, processing status, and notes on what each contributes.
 ---
 
 ### 4. Tymoczko - Tonality: An Owner's Manual (CROWN JEWEL)
+
 - **Citation**: Tymoczko, D. (2023). *Tonality: An Owner's Manual*. Oxford University Press.
 - **Path**: `~/Dropbox/Apps/Oxford University Press/[2023] Tymoczko - Tonality - An Owners Manual.epub`
 - **Format**: EPUB (use pandoc)
@@ -101,12 +114,14 @@ priorities, processing status, and notes on what each contributes.
 - **Priority**: #1 for advanced content (but requires #3 first)
 
 **Why Important?**
+
 - Most mature statement of Tymoczko's theory
 - Refines and extends *Geometry of Music*
 - More compositional applications
 - Hints at categorical/homotopical extensions
 
 **Processing Notes**:
+
 - EPUB format — pandoc conversion
 - Verify mathematical notation survives conversion
 - May need post-processing for formulas
@@ -114,6 +129,7 @@ priorities, processing status, and notes on what each contributes.
 ---
 
 ### 5. Cohn - Audacious Euphony
+
 - **Citation**: Cohn, R. (2012). *Audacious Euphony*. Oxford University Press.
 - **Path**: `~/Dropbox/Apps/Oxford University Press/[2012] Cohn - Audacious Euphony.pdf`
 - **Pages**: 256
@@ -121,18 +137,21 @@ priorities, processing status, and notes on what each contributes.
 - **Priority**: #5
 
 **Why Important?**
+
 - Neo-Riemannian theory definitive treatment
 - P, L, R operations
 - Hexatonic systems
 - Bridges 19th-century chromaticism and modern theory
 
 **Key Content**:
+
 - PLR group and its structure
 - Hexatonic poles
 - Tonnetz and its geometry
 - Analyses of Wagner, Brahms, etc.
 
 **Processing Notes**:
+
 - More accessible than Lewin
 - Good musical examples
 
@@ -147,21 +166,23 @@ different approaches is worth the payoff.
 ---
 
 ### 6. Gollin - Oxford Handbook of Neo-Riemannian Music Theories
+
 - **Citation**: Gollin, E. & Rehding, A. (2012). Oxford University Press.
 - **Path**: `~/Dropbox/Apps/Oxford University Press/[2012] Gollin - The Oxford Handbook of Neo-Riemannian Music Theories.pdf`
 - **Pages**: 624
 - **Status**: [ ] Not started
 - **Priority**: Reference (consult for specific Neo-Riemannian topics)
 
-**Purpose**: Comprehensive reference for Neo-Riemannian approaches. Multiple 
+**Purpose**: Comprehensive reference for Neo-Riemannian approaches. Multiple
 authors provide varied perspectives. Use to supplement Cohn, not replace.
 
-**Unique Contribution**: Historical context, alternative formalizations, 
+**Unique Contribution**: Historical context, alternative formalizations,
 applications to specific repertoires that Cohn doesn't cover.
 
 ---
 
 ### 7. Straus - Introduction to Post-Tonal Theory
+
 - **Citation**: Straus, J. (2016). *Introduction to Post-Tonal Theory* (4th ed.). Norton.
 - **Path**: `~/Dropbox/Apps/General Books/Music/[2016] Straus - Introduction to Post-Tonal Theory - 4th Edition.pdf`
 - **Pages**: 413
@@ -172,12 +193,14 @@ applications to specific repertoires that Cohn doesn't cover.
 pedagogy that complements Lewin's more advanced treatment.
 
 **Unique Contribution**:
+
 - Definitive set class terminology and notation
 - Comprehensive twelve-tone technique coverage
 - Atonal analysis methods with worked examples
 - Bridges OMT's introduction to Lewin's abstractions
 
-**Harmonization Notes**: 
+**Harmonization Notes**:
+
 - Use Straus for *terminology and basic operations*
 - Use Lewin for *transformational perspective on same material*
 - Straus provides the "what", Lewin provides the "why it's a GIS"
@@ -185,6 +208,7 @@ pedagogy that complements Lewin's more advanced treatment.
 ---
 
 ### 8. Wright - Mathematics and Music
+
 - **Citation**: Wright, D. (2009). *Mathematics and Music*. AMS.
 - **Path**: `~/Dropbox/Apps/General Books/Music/[2009] Wright - Mathematics and Music.pdf`
 - **Pages**: 176
@@ -195,6 +219,7 @@ pedagogy that complements Lewin's more advanced treatment.
 Written by a mathematician for a general audience.
 
 **Unique Contribution**:
+
 - Explicit group theory fundamentals *in musical context*
 - Tuning systems and temperament (historical and mathematical)
 - Acoustics foundations (overtone series, consonance)
@@ -202,6 +227,7 @@ Written by a mathematician for a general audience.
 - Rhythm and meter mathematically formalized
 
 **Harmonization Notes**:
+
 - Complements the abstract-algebra-topology skill
 - Provides musical motivation for mathematical structures
 - Good source for "why does Z₁₂ matter musically?"
@@ -210,7 +236,8 @@ Written by a mathematician for a general audience.
 ---
 
 ### 9. Hutchinson - Music Theory for the 21st-Century Classroom
-- **Citation**: Hutchinson, R. (2023). 
+
+- **Citation**: Hutchinson, R. (2023).
 - **Path**: `~/Dropbox/Apps/General Books/Music/[2023] Hutchinson - Music Theory for the 21st-Century Classroom.epub`
 - **Format**: EPUB (use pandoc)
 - **Pages**: ~484
@@ -221,12 +248,14 @@ Written by a mathematician for a general audience.
 practice and terminology in academic settings.
 
 **Unique Contribution**:
+
 - Most recent pedagogical consensus (2023)
 - May include updated terminology/approaches
 - Likely addresses contemporary music more than older texts
 - Good for "how is this taught now?" perspective
 
 **Harmonization Notes**:
+
 - Cross-reference with OMT for terminology alignment
 - Note any terminology drift from older sources
 - Useful for pedagogical framing in guides
@@ -234,7 +263,8 @@ practice and terminology in academic settings.
 ---
 
 ### 10. Carter - Music Theory: From Absolute Beginner to Expert
-- **Citation**: Carter (2016). 
+
+- **Citation**: Carter (2016).
 - **Path**: `~/Dropbox/Apps/General Books/Music/[2016] Carter - Music Theory - From Absolute Beginner to Expert.pdf`
 - **Pages**: 22 (audio book companion)
 - **Status**: [ ] Not started
@@ -244,11 +274,13 @@ practice and terminology in academic settings.
 complete novices need explained.
 
 **Unique Contribution**:
+
 - Shows the "explain like I'm five" level
 - Good for testing if our explanations are too jargon-heavy
 - Accessibility check: can we explain X at this level if needed?
 
 **Harmonization Notes**:
+
 - Not a source of content, but a calibration tool
 - If Carter explains something, our "simple" explanation should be at least
   that accessible when requested
@@ -277,6 +309,7 @@ live.
 ## Papers
 
 ### 10. Papadopoulos - Mathematics and Group Theory in Music
+
 - **Citation**: Papadopoulos, A. (2014).
 - **Path**: `~/Dropbox/Apps/Papers/Music Theory/[2014] Papadopoulos - Mathematics and group theory in music/`
 - **Formats**: LaTeX source (.tex) AND PDF
@@ -285,18 +318,21 @@ live.
 - **Priority**: High value, low effort
 
 **Why Important?**
+
 - Explicit group theory → Messiaen connection
 - Modes of limited transposition formalized
 - Non-retrogradable rhythms as symmetry
 - Bridges our Messiaen companion work
 
 **Processing Notes**:
+
 - LaTeX source available = clean extraction
 - Short = easy to process completely
 
 ---
 
 ### 11. Fiore - Music and Mathematics
+
 - **Citation**: Fiore, T. (2009).
 - **Path**: `~/Dropbox/Apps/Papers/Music Theory/[2009] Fiore - Music and Mathematics.pdf`
 - **Pages**: 36
@@ -306,6 +342,7 @@ live.
 ---
 
 ### 12. Acef-Sanchez - Group Theory with Musical Applications
+
 - **Citation**: Acef-Sanchez et al. (2012).
 - **Path**: `~/Dropbox/Apps/Papers/Music Theory/[2012] Acef-Sanchez - An Introduction to Group Theory with applications to Mathematical Music Theory.pdf`
 - **Pages**: 142
@@ -317,6 +354,7 @@ live.
 ## Special Source: Messiaen
 
 ### 13. Messiaen - Technique of My Musical Language
+
 - **Citation**: Messiaen, O. (1944). *Technique de mon langage musical*.
 - **Path**: `~/Dropbox/Apps/General Books/Music/[1944] Messiaen - The Technique of My Musical Language.pdf`
 - **Pages**: ~100
@@ -324,6 +362,7 @@ live.
 - **Priority**: BONUS — connects to Messiaen Companion project
 
 **Relationship to Project**:
+
 - Source text for the Messiaen Companion we built
 - Modes of limited transposition defined here
 - Non-retrogradable rhythms explained
@@ -334,12 +373,15 @@ live.
 ## Validation Materials
 
 ### Claude Discussion Transcripts
+
 Located in user's archives. ~144KB total across two sessions.
 
 **The Mathematics of Scale Structure** (~32KB)
+
 - Parts I-VII covering scale theory, group theory, "why twelve"
 
 **Generator-Induced Harmony** (~112KB)
+
 - Parts I-IX covering quartal/quintal harmony, compositional applications
 
 **Purpose**: Validation test cases. If the skill can support recreating these
@@ -364,9 +406,10 @@ journeys, it's working.
 ## Explicitly Excluded
 
 ### Mazzola - The Topos of Music
+
 - **Why Excluded**: Per Tymoczko's documented critique
   - Weak arguments
-  - Mathematical contradictions  
+  - Mathematical contradictions
   - Failed predictions
   - Overly complex without musical payoff
 - **Policy**: May reference individual concepts where well-founded, but do not
