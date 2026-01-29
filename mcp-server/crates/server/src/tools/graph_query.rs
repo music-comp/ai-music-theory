@@ -1510,7 +1510,9 @@ mod tests {
     mod functional {
         use super::*;
         use crate::config::Config;
-        use crate::graph::types::{ConceptNode, Edge, EdgeOrigin, GraphData, Relationship, SourceNode};
+        use crate::graph::types::{
+            ConceptNode, Edge, EdgeOrigin, GraphData, Relationship, SourceNode,
+        };
         use crate::graph::LoadedGraph;
         use crate::state::{AppState, GraphState};
         use std::sync::Arc;

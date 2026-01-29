@@ -681,7 +681,9 @@ mod tests {
     mod functional {
         use super::*;
         use crate::config::Config;
-        use crate::graph::types::{ConceptNode, Edge, EdgeOrigin, GraphData, Relationship, SourceNode};
+        use crate::graph::types::{
+            ConceptNode, Edge, EdgeOrigin, GraphData, Relationship, SourceNode,
+        };
         use crate::graph::LoadedGraph;
         use crate::state::GraphState;
         use std::sync::Arc;
@@ -823,10 +825,7 @@ mod tests {
             assert_eq!(response.categories.len(), 2);
 
             // Verify harmony category exists
-            assert!(response
-                .categories
-                .iter()
-                .any(|c| c.category == "harmony"));
+            assert!(response.categories.iter().any(|c| c.category == "harmony"));
         }
 
         #[tokio::test]
@@ -871,10 +870,7 @@ mod tests {
             assert_eq!(info.in_degree, 0);
             assert_eq!(info.out_degree, 1);
 
-            if let NodeDetails::Source {
-                title, author, ..
-            } = info.details
-            {
+            if let NodeDetails::Source { title, author, .. } = info.details {
                 assert_eq!(title, "Test Source");
                 assert_eq!(author, "Test Author");
             } else {

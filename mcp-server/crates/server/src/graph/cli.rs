@@ -236,7 +236,9 @@ pub async fn handle_compile(config: &Config) -> Result<()> {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::graph::types::{ConceptNode, Edge, EdgeOrigin, GraphData, Node, Relationship, SourceNode};
+    use crate::graph::types::{
+        ConceptNode, Edge, EdgeOrigin, GraphData, Node, Relationship, SourceNode,
+    };
     use tempfile::TempDir;
 
     /// Create a test config pointing to a temporary directory with concept cards
@@ -265,14 +267,18 @@ source: test-source
         std::fs::write(cards_dir.join("test-concept.md"), card_content).unwrap();
 
         // Create sources-md directory (for conversion check)
-        let sources_md = temp_dir.path().join("sources-md").join("general-test-source");
+        let sources_md = temp_dir
+            .path()
+            .join("sources-md")
+            .join("general-test-source");
         std::fs::create_dir_all(&sources_md).unwrap();
 
         // Create a basic config.toml
         let config_dir = temp_dir.path().join("config");
         std::fs::create_dir_all(&config_dir).unwrap();
 
-        let config_content = format!(r#"
+        let config_content = format!(
+            r#"
 [server]
 name = "test-server"
 version = "0.1.0"
@@ -305,7 +311,9 @@ output = "stderr"
 
 [search]
 backend = "simple"
-"#, temp_dir.path().display());
+"#,
+            temp_dir.path().display()
+        );
 
         std::fs::write(config_dir.join("default.toml"), config_content).unwrap();
 

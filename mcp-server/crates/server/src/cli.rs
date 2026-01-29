@@ -1352,7 +1352,13 @@ fuzzy_distance = 2
     #[test]
     #[cfg(feature = "graph")]
     fn test_cli_parse_graph_build_both_flags() {
-        let cli = Cli::parse_from(&["music-theory-mcp", "graph", "build", "--dry-run", "--verbose"]);
+        let cli = Cli::parse_from(&[
+            "music-theory-mcp",
+            "graph",
+            "build",
+            "--dry-run",
+            "--verbose",
+        ]);
         assert!(matches!(cli.command, Some(Commands::Graph(_))));
     }
 
