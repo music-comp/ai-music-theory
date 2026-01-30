@@ -22,4 +22,8 @@ scripts/process-pdf.sh \
   ~/Dropbox/Apps/Oxford\ University\ Press/\[2012]\ Gollin\ -\ The\ Oxford\ Handbook\ of\ Neo-Riemannian\ Music\ Theories.pdf \
   sources-md/neo-riemannian-handbook/
 
+scripts/process-pdf.sh \
+  ~/Dropbox/Apps/Oxford\ University\ Press/\[1998]\ Author\ -\ Classical\ Form\ -\ A\ Theory\ of\ Formal\ Functions\ for\ the\ Instrumental\ Music\ of\ Haydn,\ Mozart\ and\ Beethoven.pdf \
+  sources-md/classical-form/
+
 EXAMPLES
