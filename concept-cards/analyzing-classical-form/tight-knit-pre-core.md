@@ -1,0 +1,43 @@
+---
+title: Tight-knit Pre-core
+category: Sonata Form
+tags:
+  - development
+  - pre-core
+  - tight-knit
+  - phrase-structure
+related:
+  - pre-core
+  - pre-core-phrase-structure
+  - main-theme
+pdf_page: 466
+book: "Analyzing Classical Form"
+chapter: 13
+---
+
+# Tight-knit Pre-core
+
+A pre-core structured as a relatively tight-knit thematic unit.
+
+## Form Types
+
+May take the form of:
+- Sentence
+- Period
+- Hybrid
+
+## Relationship to Main Theme
+
+- By virtue of placement at beginning of development, analogous to a main theme
+- Often based on material from actual main theme of exposition
+- Formal organization usually somewhat looser than the main theme
+
+## Key Difference from Main Theme
+
+The essential difference is tonal:
+- Main theme: Resides in home key
+- Tight-knit pre-core: Either continues subordinate key or is set in development key
+
+## Composer Tendencies
+
+Particularly common in Mozart, but also appears in Haydn and Beethoven now and then. Mozart more than others tends to begin development sections with tight-knit pre-cores.
