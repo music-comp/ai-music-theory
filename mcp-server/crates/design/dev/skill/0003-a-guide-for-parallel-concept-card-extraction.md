@@ -1,186 +1,254 @@
-# Claude Code Prompt: OMT Concept Card Extraction
+# A Guide for Parallel Concept Card Extraction
 
-## Context
+This guide documents how to extract concept cards from primary sources that have been converted from PDF, LaTeX, or EPUB formats to Markdown, using Claude Code with Opus agents.
 
-You are helping build a comprehensive music theory skill for AI assistants. We've extracted 123 chapters from Open Music Theory into markdown files. Your job is to create **concept cards** — concise, structured reference documents for individual concepts.
+## Prerequisites
 
-## Project Location
+### 1. Environment Setup
+
+- **Claude Code** installed and configured
+- **Source files** must be in place, e.g.:
+  - `sources-md/<source-slug>/*.md` (chapters, sections, etc.)
+- **Output directory** ready:
+  - `concept-cards/<source-slug>/` (will be created if needed)
+
+### 2. Directory Structure
+
+Your project should have this overall structure (note that the chapter file names are given just as an example -- each source will have different chapters/markdown file names):
 
 ```
-~/lab/music-comp/ai-music-theory/
-├── sources-md/open-music-theory/    # Source chapters (123 files)
-├── concept-cards/                    # Output location for cards
-│   └── open-music-theory/           # Create this subdirectory
-├── CONVENTIONS.md                    # Notation standards (READ THIS FIRST)
-├── SCOPE.md                         # Project scope and goals
-└── PIPELINE.md                      # Overall process documentation
+skill-project-root/
+├── sources-md/
+│   └── <source-slug>/
+│        ├── 00-frontmatter.md
+│        ├── 01-basic-concepts.md
+│        ├── 02-major-scales-and-key-signatures.md
+│        └── ... (through 39-colophon.md)
+└── concept-cards/
+    └── <source-slug>/
+        └── (concept cards will be created here)
 ```
 
-## Your Task
+### 3. Model Requirements
 
-Process OMT chapters sequentially, extracting concept cards. Start with Part 01 (Fundamentals).
+The extraction uses **Opus agents** (claude-opus-4-5) for high-quality concept extraction. Ensure your Claude Code instance has access to Opus models.
 
-### Step 1: Read the conventions
+---
 
-```bash
-cat ~/lab/music-comp/ai-music-theory/CONVENTIONS.md
+## Context Prepration
+
+You, the primary Claude Code instance, should be using the Opus Model. You need to analyse the text of the given text (the path to that text will follow the template form of `sources-md/<source-slug>`) by reading and categorising, and performing a high-level first-appoximation inventory of concepts and estimating the number of concept cards that will be necessary to cover the material presented in each chapter.
+
+In this phase you will identify and record the following:
+
+- The full title of the text being processed
+- The author or authors of the text being processed
+- The number of chapters to be processed
+- The full title of each chapter
+- The full list of concepts covered by each chapter
+- How many concepts are covered in each chapter
+- A higher-level of analysis, identifying the major categories of the book based upon the total list of concepts covered
+- The identification of the major category for each concept
+- You will identify important notes for each chapter
+
+Once you have those estimates, you will split the concepts into five sensible, sequential (by chapter order) groups. Each group of concepts will then be given to a dedicated agent that will perform the actual extraction, following the prompt below. You will need to provide a term or short phrase that summarises the chapter grouping for each agent.
+
+## Agent Prompts
+
+Launch all 5 agents **in parallel** using a single message with multiple Task tool calls. The templates below have the following fields which you will need to replace when you deliver each of the agents with thier own prompt.
+
+Variables:
+
+- <SourceTitle>: the full title of the text (paper, book, repository, etc.) in question
+- <SourceSlug>: the short, hyphenated, ASCII-only name for the title (used in directory names, metadata, etc., for internal use)
+- <N>: agent index, starting at 1 (valid values: 1, 2, 3, 4, 5)
+- <ChStart>: the starting chapter number for an agent
+- <ChEnd>: the ending chapter number for an agent
+- <ChGroupName>: the term or short phrase that summarises the chapter grouping for the given agent; this term represents a generalisation/grouping of the structure of the book, aligned with the percieved intent of its authors/publishers; this term is orthoganal to the analysis-derived category mentioned above
+- <ChapterTitle>: Each markdown file that represents a division of the text (e.g., chapter or title -- the term we use here to apply to any type of division is "chapter") will have a long form; this long form is the chapter title; note that this variable only makes sense in the context of a specific chapter, and doesn't apply in any context outside a specific chapter
+- <ChapterSlug>: Each markdown file that represents a division of the text will be of the form <ChapterSlug>.md; note that this variable only makes sense in the context of a specific chapter, and doesn't apply in any context outside a specific chapter
+- <EstimatedCardRangeTotal>: Each agent will have an estimated range for the total number of cards its work is expected to create; this is that range
+- <EstimatedCardRangeCh>: You will have created an estimate of the total number of cards each chapter is expected to generate; this is that estimated range; note that this variable only makes sense in the context of a specific chapter, and doesn't apply in any context outside a specific chapter
+- <ListOfConcepts>: Each chapter will have a list of concepts associated with itm with each concept getting a card; this variable is that list of concepts; note that this variable only makes sense in the context of a specific chapter, and doesn't apply in any context outside a specific chapter
+- <ImportantNotes>: For each chapter, you will have already recorded important notes; these need to be assembled, de-duped, and prepared for agaent based upon the complete set of chapters that agent will be responsible for; <ImportantNotes> is that processed list
+
+Checks you need to perform:
+
+- look at each group of chapters (Agent<N>, <ChStart>,<ChEnd> ...) and ensure that:
+
+  - every chapter has been assigned to an agent
+  - there are no gaps between ranges
+  - there are no chapters unassigned
+  - chapter assignments are as balanced as possible on total estimated concept cards for the given groups of chapters
+
+### Agent <N>: <ChGroupName> (Chapters <ChStart>-<ChEnd>)
+
+**Description:** "Extract <ChGroupName> cards Ch <ChStart>-<ChEnd>"
+
+**Prompt:**
+
 ```
+Extract concept cards from "<SourceTitle>" Chapters <ChStart>-<ChEnd> (<ChGroupName> tier).
 
-This establishes notation standards you MUST follow (pitch class integers, interval notation, etc.)
+**Your scope**: Chapters <ChStart>-<ChEnd>
+- Ch <ChStart>: <ChapterTitle>
+- ...
+- ...
+- Ch <ChEnd>: <ChapterTitle>
 
-### Step 2: Create output directory
+**Target**: ~<EstimatedCardRange> concept cards
 
-```bash
-mkdir -p ~/lab/music-comp/ai-music-theory/concept-cards/open-music-theory
-```
+**Source files**: Read from `sources-md/<SourceSlug>/*.md`
 
-### Step 3: Process chapters in order
+**Output directory**: `concept-cards/<SourceSlug>/`
 
-Start with `01-01-introduction-to-western-musical-notation.md` and work through Part 01.
+**File Structure**: Each concept card will have the following structure:
+  - YAML front matter for metadata
+  - Markdown content
+  - a filename using the contept + the .md file extension
+  - files should have descriptive names without numerical prefixes:
+     - ✅ `pitch.md`, `staff.md`, `major-scale.md`
+     - ❌ `001-pitch.md`, `002-staff.md` (do NOT use numbered prefixes)
 
-For each chapter:
-
-1. Read the chapter
-2. Identify extractable concepts (some chapters may have multiple, some may have none)
-3. Create a concept card for each concept
-
-### Concept Card Template
+**File Template**:
 
 ```markdown
 ---
 concept: [Concept Name]
-category: [fundamentals|harmony|counterpoint|form|chromaticism|post-tonal|serial|rhythm]
-source: Open Music Theory
-chapter: "[Chapter Title]"
-part: [Part Number]
+category: [theory/technique/analysis/form]
+source: <SourceTitle>
+chapter: "[Full Chapter Title]"
+unit: [1 or 2]
+authors: [author], ...
 ---
 
-# [Concept Name]
+# Quick Definition
+[1-2 sentence accessible definition]
 
-## Quick Definition
-[1-2 sentence definition a working musician would give]
+# Formal Definition
+[Precise technical definition]
 
-## Formal Definition
-[Precise definition, using CONVENTIONS.md notation where applicable]
+# Construction/Recognition
+[How to build it or identify it - if applicable]
 
-## Musical Context
-[Where this appears in real music, what it sounds like, why it matters]
+# Musical Context
+[When/where it appears, typical usage]
 
-## Examples
+# Examples
+[Specific musical examples from the chapter]
 
-### Basic
-[Simple example]
+# Related Concepts
+- [List related concepts]
 
-### From Repertoire
-[Real music example if mentioned in source]
+# Common Confusions
+[What students commonly mix up]
 
-## Related Concepts
-- **Prerequisite**: [concepts needed to understand this one]
-- **Leads to**: [more advanced concepts this enables]
-- **See also**: [related concepts at same level]
-
-## Common Confusions
-[What this is NOT, typical mistakes]
-
-## Source Reference
-Open Music Theory, Part [X], Chapter [Y]: "[Chapter Title]"
+# Source Reference
+Chapter X: [Title], Unit X, pages/sections as referenced
 ```
 
-### Filename Convention
+**Key concepts to extract** (estimated):
+
+- Ch <ChStart>: <ListOfConcepts> (~<EstimatedCardRangeCh> cards)
+...
+...
+- Ch <ChEnd>:  <ListOfConcepts> (~<EstimatedCardRangeCh> cards)
+
+**Important notes**:
+
+<ImportantNotes>
+
+Create all concept card files directly. Work systematically through each chapter.
 
 ```
-{concept-name-slugified}.md
-```
 
-Examples:
+**Model:** opus
 
-- `pitch.md`
-- `interval.md`
-- `major-scale.md`
-- `pitch-class.md`
-- `interval-class.md`
+---
 
-### What to Extract
 
-**DO extract** as separate concept cards:
+## Expected Output
 
-- Core definitions (pitch, interval, scale, chord, etc.)
-- Named structures (major scale, minor scale, triad types, etc.)
-- Operations (transposition, inversion, etc.)
-- Analytical concepts (roman numerals, figured bass, etc.)
+### File Creation
 
-**DON'T extract** as separate cards:
+Each agent will create `.md` files in `concept-cards/<SourceSlug>/`
 
-- Procedural instructions ("how to sight-sing")
-- Historical context (unless it's a named concept)
-- Exercise instructions
-- Navigation/UI artifacts from conversion
+### File Naming
 
-### Handling Multiple Concepts per Chapter
+Files should have descriptive names without numerical prefixes:
 
-Some chapters cover multiple concepts. For example, `01-16-intervals.md` covers:
+- ✅ `pitch.md`, `staff.md`, `major-scale.md`
+- ❌ `001-pitch.md`, `002-staff.md` (do NOT use numbered prefixes)
 
-- Interval (general concept)
-- Melodic vs harmonic intervals
-- Interval size
-- Interval quality (perfect, major, minor, augmented, diminished)
-- Simple vs compound intervals
-- Interval inversion
-- Consonance and dissonance
+### Post-Processing
 
-Create separate cards for each substantial concept. Use judgment — some distinctions (melodic vs harmonic) might be subsections within `interval.md` rather than separate cards.
+After agents complete:
 
-### Cleaning Up Source Content
+1. **Ensure naming consistency** (and file extension consistency); for example, some agents may create .yaml instead of .md:
 
-The source files contain some artifacts:
+   ```bash
+   cd concept-cards/21st-century-classroom
+   for file in *.yaml; do mv "$file" "${file%.yaml}.md"; done
+   ```
 
-- `[pb_glossary id="..."]term[/pb_glossary]` — strip the shortcode, keep the term
-- `Example 1.` references — note as `[Example: description]`
-- Broken links — just note the intended reference
+1. **Remove numerical prefixes** if present:
 
-### Progress Tracking
+   ```bash
+   for file in [0-9][0-9][0-9]-*.md; do
+     newname="${file#[0-9][0-9][0-9]-}"
+     if [ -f "$newname" ]; then
+       newname="${newname%.md}-1.md"
+     fi
+     mv "$file" "$newname"
+   done
+   ```
 
-After processing each chapter, output:
+2. **Verify count:**
 
-```
-Processed: 01-01-introduction-to-western-musical-notation.md
-  Created: [list of concept cards created, or "No extractable concepts"]
-```
+   ```bash
+   ls -1 *.md | wc -l
+   # Should show a total within the expected range of <EstimatedCardRangeTotal>
+   ```
 
-## Starting Point
+---
 
-Begin with Part 01, Chapters 01-01 through 01-21. These establish the foundational vocabulary.
+## Troubleshooting
 
-Key concepts to expect in Part 01:
+### Issue: Agents create files in wrong location
 
-- Staff, clef, ledger lines
-- Note names, octave designation (ASPN)
-- Accidentals (sharp, flat, natural)
-- Half step, whole step
-- Rhythm values (whole, half, quarter, etc.)
-- Meter (simple, compound)
-- Scale (major, minor)
-- Scale degree
-- Key signature
-- Mode
-- Interval (size, quality)
-- Triad (major, minor, augmented, diminished)
-- Seventh chord (types)
-- Inversion
-- Figured bass
-- Roman numeral
-- Texture (monophonic, homophonic, polyphonic)
+**Solution:** Check that agents are reading from correct source path. The prompts specify relative paths from project root.
 
-## Quality Checks
+### Issue: Duplicate concepts
 
-Before saving each card, verify:
+**Solution:** Agents work on separate chapter ranges with no overlap. If duplicates appear, check that chapters weren't assigned to multiple agents.
 
-1. Uses CONVENTIONS.md notation correctly
-2. Formal definition is precise
-3. Has at least one example
-4. Related concepts are accurate
-5. No leftover HTML/shortcode artifacts
+### Issue: Wrong file extensions (.yaml instead of .md)
 
-## Let's Begin
+**Solution:** Run the post-processing command above to rename all .yaml to .md
 
-Start by reading CONVENTIONS.md, then process 01-01. Show me the first few concept cards you create so we can calibrate before you continue through the rest of Part 01.
+### Issue: Agent runs out of context
+
+**Solution:** Opus has large context windows, but if an agent fails, you can resume it using its agent ID or re-run just that agent's chapters.
+
+---
+
+## Performance Notes
+
+- **Parallel execution:** All 5 agents should run simultaneously for maximum efficiency
+- **Expected runtime:** 15-30 minutes total (depends on machine and API latency)
+- **Cost consideration:** Using Opus for all agents will be more expensive than using Sonnet, but produces higher quality concept cards
+- **Alternative:** If cost is a concern, use Sonnet instead of Opus by changing `model: "sonnet"` in the Task calls
+
+---
+
+## Quality Verification
+
+After extraction completes, spot-check a few cards from each tier.
+
+Verify each card has:
+
+- ✅ Complete YAML frontmatter
+- ✅ All required sections (Quick Definition, Formal Definition, etc.)
+- ✅ Proper use of caret notation (^1, ^2, ^3)
+- ✅ Specific examples from the source text
+- ✅ Accurate source references
