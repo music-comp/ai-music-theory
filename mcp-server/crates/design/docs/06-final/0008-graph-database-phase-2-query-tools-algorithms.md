@@ -5,8 +5,8 @@ author: "String,"
 component: All
 tags: [change-me]
 created: 2026-01-27
-updated: 2026-01-27
-state: Under Review
+updated: 2026-02-03
+state: Final
 supersedes: null
 superseded-by: null
 version: 1.0
