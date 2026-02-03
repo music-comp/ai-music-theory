@@ -1,5 +1,5 @@
 ---
-concept: Kurth's Absolute Progressions
+concept: "Kurth's Absolute Progressions"
 category: historical
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Mapping the Triadic Universe"

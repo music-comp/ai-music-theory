@@ -1,5 +1,5 @@
 ---
-concept: Folkloristische Tonalitätsstudien (Folk Music Studies)
+concept: "Folkloristische Tonalitätsstudien (Folk Music Studies)"
 category: history
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Folkloristische Tonalitätsstudien (Ch. 4)"

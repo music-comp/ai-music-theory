@@ -1,5 +1,5 @@
 ---
-concept: Hindemith's Chromatic Space Construction
+concept: "Hindemith's Chromatic Space Construction"
 category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory"

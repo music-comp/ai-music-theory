@@ -1,7 +1,7 @@
 ---
 concept: Syncopation in Twentieth-Century Harmony
 category: technique
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Timing and Dynamics"
 chapter_number: 10
 pdf_page: 211

@@ -1,7 +1,7 @@
 ---
 concept: Scale-Chord Relationship in Extended Tertian Harmony
 category: theory
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Chords by Thirds"
 chapter_number: 3
 pdf_page: 65

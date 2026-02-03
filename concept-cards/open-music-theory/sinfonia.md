@@ -1,5 +1,5 @@
 ---
-concept: Sinfonia (Baroque Keyboard)
+concept: "Sinfonia (Baroque Keyboard)"
 category: counterpoint
 source: Open Music Theory
 chapter: "High Baroque Keyboard Forms"

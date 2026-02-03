@@ -1,5 +1,5 @@
 ---
-concept: Mode Mixture (Jazz)
+concept: "Mode Mixture (Jazz)"
 category: harmony
 source: Open Music Theory
 chapter: "Substitutions"

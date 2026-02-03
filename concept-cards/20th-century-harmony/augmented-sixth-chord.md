@@ -1,7 +1,7 @@
 ---
 concept: Augmented Sixth Chord
 category: chord-construction
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Added-Note Chords"
 chapter_number: 5
 pdf_page: 108

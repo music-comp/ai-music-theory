@@ -1,5 +1,5 @@
 ---
-concept: Vogler's Hexatonic Anticipation
+concept: "Vogler's Hexatonic Anticipation"
 category: historical
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Reciprocity"

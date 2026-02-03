@@ -1,5 +1,5 @@
 ---
-concept: Klumpenhouwer Networks (K-nets)
+concept: "Klumpenhouwer Networks (K-nets)"
 category: transformation/analysis
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Defense of Harmonic Dualism"

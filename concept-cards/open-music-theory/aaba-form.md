@@ -1,5 +1,5 @@
 ---
-concept: AABA Form (32-Bar Song Form)
+concept: "AABA Form (32-Bar Song Form)"
 category: form
 source: Open Music Theory
 chapter: "AABA Form and Strophic Form"

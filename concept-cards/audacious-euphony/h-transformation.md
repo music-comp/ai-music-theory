@@ -1,5 +1,5 @@
 ---
-concept: H Transformation (Hexatonic Pole)
+concept: "H Transformation (Hexatonic Pole)"
 category: transformation
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Hexatonic Cycles"

@@ -1,5 +1,5 @@
 ---
-concept: Z-Forms (Z1, Z2, Z3)
+concept: "Z-Forms (Z1, Z2, Z3)"
 category: analysis
 source: Generalized Musical Intervals and Transformations
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"

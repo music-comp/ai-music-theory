@@ -1,7 +1,7 @@
 ---
 concept: Authentic vs. Plagal N/R Direction
 category: analysis
-source: Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature
+source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Weitzmann Regions"
 chapter_number: 4
 pdf_page: 77

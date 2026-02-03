@@ -1,5 +1,5 @@
 ---
-concept: Schritt/Wechsel System (S/W System)
+concept: "Schritt/Wechsel System (S/W System)"
 tier: 2
 category: transformational-theory
 sources:

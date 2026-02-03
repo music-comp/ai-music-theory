@@ -1,5 +1,5 @@
 ---
-concept: Klangvertretung (Tone Representation)
+concept: "Klangvertretung (Tone Representation)"
 category: harmony
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Riemann's Legacy (Ch. 1), The Nature of Harmony (Ch. 2), Tonal Function (Ch. 3)"

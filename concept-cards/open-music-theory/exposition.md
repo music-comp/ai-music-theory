@@ -1,5 +1,5 @@
 ---
-concept: Exposition (Sonata Form)
+concept: "Exposition (Sonata Form)"
 category: form
 source: Open Music Theory
 chapter: "Sonata Form"

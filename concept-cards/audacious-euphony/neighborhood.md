@@ -1,7 +1,7 @@
 ---
 concept: Neighborhood
 category: spatial-model
-source: Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature
+source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
 pdf_page: 129

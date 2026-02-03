@@ -1,5 +1,5 @@
 ---
-concept: Inversion (Ixy Notation)
+concept: "Inversion (Ixy Notation)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Pitch-Class Sets"

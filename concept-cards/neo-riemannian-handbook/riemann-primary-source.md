@@ -1,5 +1,5 @@
 ---
-concept: Riemann's "Das Problem" - Primary Source
+concept: 'Riemann''s "Das Problem" - Primary Source'
 category: primary-source/history
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "The Problem of Harmonic Dualism"

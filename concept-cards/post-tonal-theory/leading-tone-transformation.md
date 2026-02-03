@@ -1,5 +1,5 @@
 ---
-concept: L (Leading-Tone Transformation)
+concept: "L (Leading-Tone Transformation)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Motive, Voice Leading, and Harmony"

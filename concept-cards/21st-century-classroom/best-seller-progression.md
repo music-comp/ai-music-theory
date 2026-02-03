@@ -1,5 +1,5 @@
 ---
-concept: Best-Seller Progression (I-V-vi-IV)
+concept: "Best-Seller Progression (I-V-vi-IV)"
 category: theory
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 9: Harmonic Progression and Harmonic Function"

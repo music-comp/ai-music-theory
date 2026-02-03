@@ -1,5 +1,5 @@
 ---
-concept: Transposition (Twelve-Tone)
+concept: "Transposition (Twelve-Tone)"
 category: technique
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Basic Concepts of Twelve-Tone Music"

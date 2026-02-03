@@ -1,5 +1,5 @@
 ---
-concept: Transposition (Tn)
+concept: "Transposition (Tn)"
 category: theory
 source: Open Music Theory
 chapter: "Pitch-Class Sets, Normal Order, and Transformations"

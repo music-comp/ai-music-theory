@@ -1,5 +1,5 @@
 ---
-concept: LP-Cycle (Hexatonic System)
+concept: "LP-Cycle (Hexatonic System)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Motive, Voice Leading, and Harmony"

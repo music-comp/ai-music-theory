@@ -1,5 +1,5 @@
 ---
-concept: Zarlino's Istitutioni Harmoniche
+concept: "Zarlino's Istitutioni Harmoniche"
 category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory"

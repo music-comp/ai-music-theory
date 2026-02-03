@@ -1,5 +1,5 @@
 ---
-concept: Toroidal Tonnetz (Conforming Tonnetz)
+concept: "Toroidal Tonnetz (Conforming Tonnetz)"
 tier: 3
 category: geometric-models
 sources:

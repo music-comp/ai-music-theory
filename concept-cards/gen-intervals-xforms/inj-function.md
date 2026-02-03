@@ -1,5 +1,5 @@
 ---
-concept: INJ (Injection Function)
+concept: "INJ (Injection Function)"
 category: mathematical-foundation
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Set Theory (2): The Injection Function"

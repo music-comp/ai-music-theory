@@ -1,5 +1,5 @@
 ---
-concept: Minor Subdominant (iv)
+concept: "Minor Subdominant (iv)"
 category: harmony
 source: Open Music Theory
 chapter: "Modal Mixture"

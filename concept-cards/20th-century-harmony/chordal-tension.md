@@ -1,7 +1,7 @@
 ---
 concept: Chordal Tension
 category: chord-construction
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Intervals"
 chapter_number: 1
 pdf_page: 12

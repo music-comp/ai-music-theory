@@ -1,7 +1,7 @@
 ---
 concept: Melodic Direction of Harmony
 category: technique
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Harmonic Direction"
 chapter_number: 9
 pdf_page: 181

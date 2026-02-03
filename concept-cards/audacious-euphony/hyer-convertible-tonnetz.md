@@ -1,5 +1,5 @@
 ---
-concept: Hyer's Convertible Tonnetz
+concept: "Hyer's Convertible Tonnetz"
 category: historical
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Syntactic Interaction and the Convertible Tonnetz"

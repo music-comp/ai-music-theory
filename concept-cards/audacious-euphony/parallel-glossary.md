@@ -1,5 +1,5 @@
 ---
-concept: Parallel (P) - Glossary Definition
+concept: "Parallel (P) - Glossary Definition"
 category: transformation
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Glossary"

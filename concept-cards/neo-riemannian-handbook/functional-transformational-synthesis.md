@@ -1,5 +1,5 @@
 ---
-concept: Functional vs. Transformational Paradigms (Synthesis)
+concept: "Functional vs. Transformational Paradigms (Synthesis)"
 category: comparative-frameworks
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapters 18-20 (Synthesis)"

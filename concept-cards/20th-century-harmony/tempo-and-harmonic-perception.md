@@ -1,7 +1,7 @@
 ---
 concept: Tempo and Harmonic Perception
 category: theory
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Timing and Dynamics"
 chapter_number: 10
 pdf_page: 211

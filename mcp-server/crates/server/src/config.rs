@@ -89,12 +89,16 @@ pub struct SourcesConfig {
 }
 
 /// A category of source files.
-#[derive(Debug, Clone, Default, Deserialize)]
+#[derive(Debug, Clone, Default, Deserialize, Serialize)]
 pub struct SourceCategory {
     #[serde(default)]
     pub path: String,
     #[serde(default)]
     pub files: HashMap<String, String>,
+    /// Aliases for source titles (file_id -> alternate titles).
+    /// Used to match concept card references that differ from extracted filenames.
+    #[serde(default)]
+    pub aliases: HashMap<String, Vec<String>>,
 }
 
 impl SourceCategory {
@@ -360,6 +364,7 @@ mod tests {
         let category = SourceCategory {
             path: "/test/path".to_string(),
             files,
+            aliases: HashMap::new(),
         };
 
         let result = category.file_path("test-file");
@@ -373,6 +378,7 @@ mod tests {
         let category = SourceCategory {
             path: "/test/path".to_string(),
             files: HashMap::new(),
+            aliases: HashMap::new(),
         };
 
         let result = category.file_path("nonexistent");
@@ -386,6 +392,7 @@ mod tests {
         let category = SourceCategory::default();
         assert_eq!(category.path, "");
         assert!(category.files.is_empty());
+        assert!(category.aliases.is_empty());
     }
 
     #[test]

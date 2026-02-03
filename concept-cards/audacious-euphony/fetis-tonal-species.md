@@ -1,5 +1,5 @@
 ---
-concept: Fetis's Tonal Species
+concept: "Fetis's Tonal Species"
 category: historical
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Mapping the Triadic Universe"

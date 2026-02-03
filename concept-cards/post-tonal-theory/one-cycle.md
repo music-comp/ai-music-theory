@@ -1,5 +1,5 @@
 ---
-concept: One-Cycle (C1)
+concept: "One-Cycle (C1)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Motive, Voice Leading, and Harmony"

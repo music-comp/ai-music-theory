@@ -1,5 +1,5 @@
 ---
-concept: Tonvorstellungen (Tone Imaginations)
+concept: "Tonvorstellungen (Tone Imaginations)"
 category: theory/psychology
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "The Problem of Harmonic Dualism"

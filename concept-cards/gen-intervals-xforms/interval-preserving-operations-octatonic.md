@@ -1,5 +1,5 @@
 ---
-concept: Interval-Preserving Operations (Octatonic)
+concept: "Interval-Preserving Operations (Octatonic)"
 category: mathematical-foundation
 source: Generalized Musical Intervals and Transformations
 chapter: "Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"

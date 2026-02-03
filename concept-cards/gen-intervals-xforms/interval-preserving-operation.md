@@ -1,5 +1,5 @@
 ---
-concept: Interval-Preserving Operation (Pi)
+concept: "Interval-Preserving Operation (Pi)"
 category: transformation
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Interval Systems (2): Formal Features"

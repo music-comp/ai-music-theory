@@ -1,7 +1,7 @@
 ---
 concept: Dissonant Tone in Secundal Harmony
 category: theory
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Chords by Seconds"
 chapter_number: 6
 pdf_page: 120

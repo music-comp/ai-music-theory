@@ -1,5 +1,5 @@
 ---
-concept: Set Theory (Music)
+concept: "Set Theory (Music)"
 category: analysis
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 33: Set Theory"

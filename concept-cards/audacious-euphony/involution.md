@@ -1,5 +1,5 @@
 ---
-concept: Involution (Transformation Property)
+concept: "Involution (Transformation Property)"
 category: transformation
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Hexatonic Cycles"

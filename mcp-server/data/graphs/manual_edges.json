@@ -4,7 +4,7 @@
     {
       "from": "example-concept-a",
       "to": "example-concept-b",
-      "relationship": "RelatesTo",
+      "relationship": "relates_to",
       "weight": 0.8,
       "origin": "Manual"
     }

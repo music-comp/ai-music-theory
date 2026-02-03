@@ -1,5 +1,5 @@
 ---
-concept: Fetis's Law of Uniformity
+concept: "Fetis's Law of Uniformity"
 category: historical
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Syntactic Interaction and the Convertible Tonnetz"

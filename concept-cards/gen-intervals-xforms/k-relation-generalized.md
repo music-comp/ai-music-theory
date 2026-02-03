@@ -1,5 +1,5 @@
 ---
-concept: K and Kh Relations (Generalized)
+concept: "K and Kh Relations (Generalized)"
 category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Set Theory (2): The Injection Function"

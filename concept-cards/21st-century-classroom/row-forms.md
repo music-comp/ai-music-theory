@@ -1,5 +1,5 @@
 ---
-concept: Row Forms (P, R, I, RI)
+concept: "Row Forms (P, R, I, RI)"
 category: technique
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 34: Serialism"

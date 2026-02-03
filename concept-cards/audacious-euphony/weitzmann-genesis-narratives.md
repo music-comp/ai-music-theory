@@ -1,5 +1,5 @@
 ---
-concept: Weitzmann's Three Genesis Narratives
+concept: "Weitzmann's Three Genesis Narratives"
 category: historical
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Reciprocity"

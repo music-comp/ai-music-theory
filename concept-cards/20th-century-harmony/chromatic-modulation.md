@@ -1,7 +1,7 @@
 ---
 concept: Chromatic Modulation
 category: technique
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Key Centers"
 chapter_number: 12
 pdf_page: 247

@@ -1,5 +1,5 @@
 ---
-concept: Bridge (Fugue)
+concept: "Bridge (Fugue)"
 category: form
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 30: Introduction to Counterpoint"

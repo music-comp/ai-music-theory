@@ -1,5 +1,5 @@
 ---
-concept: Oettingen's Harmoniesystem
+concept: "Oettingen's Harmoniesystem"
 tier: 2
 category: historical-foundations
 sources:

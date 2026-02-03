@@ -1,5 +1,5 @@
 ---
-concept: Augmented Triad (Historical Emergence)
+concept: "Augmented Triad (Historical Emergence)"
 category: historical
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Reciprocity"

@@ -1,5 +1,5 @@
 ---
-concept: Fifth Species Counterpoint (Florid)
+concept: "Fifth Species Counterpoint (Florid)"
 category: technique
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 30: Introduction to Counterpoint"

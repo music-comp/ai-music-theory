@@ -1,5 +1,5 @@
 ---
-concept: Generalized Weitzmann Region (GWR)
+concept: "Generalized Weitzmann Region (GWR)"
 category: spatial-model
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Glossary"

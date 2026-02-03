@@ -1,7 +1,7 @@
 ---
 concept: Tritone Resolution in Quartal Harmony
 category: technique
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Chords by Fourths"
 chapter_number: 4
 pdf_page: 92

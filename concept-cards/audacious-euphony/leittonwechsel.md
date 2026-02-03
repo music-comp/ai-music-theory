@@ -1,5 +1,5 @@
 ---
-concept: Leittonwechsel (L)
+concept: "Leittonwechsel (L)"
 category: transformation
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Glossary"

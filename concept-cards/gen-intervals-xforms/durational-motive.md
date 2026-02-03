@@ -1,5 +1,5 @@
 ---
-concept: Durational Motive (DM)
+concept: "Durational Motive (DM)"
 category: analysis
 source: Generalized Musical Intervals and Transformations
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"

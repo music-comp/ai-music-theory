@@ -1,5 +1,5 @@
 ---
-concept: Inversion (In)
+concept: "Inversion (In)"
 category: theory
 source: Open Music Theory
 chapter: "Pitch-Class Sets, Normal Order, and Transformations"

@@ -1,5 +1,5 @@
 ---
-concept: Inversion (In)
+concept: "Inversion (In)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Pitch-Class Sets"

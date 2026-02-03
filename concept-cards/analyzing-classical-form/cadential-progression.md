@@ -1,7 +1,7 @@
 ---
 concept: Cadential Progression
 category: harmonic-concept
-source: Analyzing Classical Form: An Approach for the Classroom
+source: "Analyzing Classical Form: An Approach for the Classroom"
 chapter: "A Review of Harmony"
 chapter_number: 1
 pdf_page: 23

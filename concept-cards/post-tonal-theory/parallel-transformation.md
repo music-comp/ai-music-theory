@@ -1,5 +1,5 @@
 ---
-concept: P (Parallel Transformation)
+concept: "P (Parallel Transformation)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Motive, Voice Leading, and Harmony"

@@ -1,5 +1,5 @@
 ---
-concept: Neo-Riemannian Operations (Complete System)
+concept: "Neo-Riemannian Operations (Complete System)"
 tier: 3
 category: transformational-theory
 sources:

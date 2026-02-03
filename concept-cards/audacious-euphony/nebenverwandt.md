@@ -1,5 +1,5 @@
 ---
-concept: Nebenverwandt (Adjacency Relation)
+concept: "Nebenverwandt (Adjacency Relation)"
 category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Reciprocity"

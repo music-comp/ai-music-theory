@@ -1,5 +1,5 @@
 ---
-concept: Transposition Numbers (Rows)
+concept: "Transposition Numbers (Rows)"
 category: technique
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 34: Serialism"

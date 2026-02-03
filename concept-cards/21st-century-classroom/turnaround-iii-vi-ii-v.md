@@ -1,5 +1,5 @@
 ---
-concept: Turnaround (iii-vi-ii-V)
+concept: "Turnaround (iii-vi-ii-V)"
 category: theory
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 31: Introduction to Jazz Theory"

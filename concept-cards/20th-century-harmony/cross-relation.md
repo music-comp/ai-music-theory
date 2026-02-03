@@ -1,7 +1,7 @@
 ---
 concept: Cross Relation
 category: harmonic-device
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Embellishment and Transformation"
 chapter_number: 11
 pdf_page: 229

@@ -1,5 +1,5 @@
 ---
-concept: 1950s Progression (I-vi-IV-V)
+concept: "1950s Progression (I-vi-IV-V)"
 category: theory
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 9: Harmonic Progression and Harmonic Function"

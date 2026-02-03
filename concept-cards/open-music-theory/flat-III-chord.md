@@ -1,5 +1,5 @@
 ---
-concept: Flat Mediant (♭III)
+concept: "Flat Mediant (♭III)"
 category: harmony
 source: Open Music Theory
 chapter: "Modal Mixture"

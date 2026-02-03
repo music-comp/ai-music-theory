@@ -1,5 +1,5 @@
 ---
-concept: Perfect Authentic Cadence (PAC)
+concept: "Perfect Authentic Cadence (PAC)"
 category: theory
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 13: Phrases in Combination"

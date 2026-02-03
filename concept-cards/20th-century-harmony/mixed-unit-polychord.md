@@ -1,7 +1,7 @@
 ---
 concept: Mixed-Unit Polychord
 category: chord-construction
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Polychords"
 chapter_number: 7
 pdf_page: 134

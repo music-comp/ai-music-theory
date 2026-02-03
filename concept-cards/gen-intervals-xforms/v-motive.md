@@ -1,5 +1,5 @@
 ---
-concept: V Motive (Variable Motive)
+concept: "V Motive (Variable Motive)"
 category: analysis
 source: Generalized Musical Intervals and Transformations
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"

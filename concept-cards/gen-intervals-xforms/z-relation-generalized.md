@@ -1,5 +1,5 @@
 ---
-concept: Z-Relation (Generalized)
+concept: "Z-Relation (Generalized)"
 category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions"

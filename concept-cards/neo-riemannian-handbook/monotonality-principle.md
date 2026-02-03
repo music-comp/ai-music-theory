@@ -1,5 +1,5 @@
 ---
-concept: Riemann's Monotonality Principle
+concept: "Riemann's Monotonality Principle"
 category: analytical-methodology
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapter 18: Riemannian and Neo-Riemannian Analysis"

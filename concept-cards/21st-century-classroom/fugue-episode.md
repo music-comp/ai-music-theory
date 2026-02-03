@@ -1,5 +1,5 @@
 ---
-concept: Episode (Fugue)
+concept: "Episode (Fugue)"
 category: form
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 30: Introduction to Counterpoint"

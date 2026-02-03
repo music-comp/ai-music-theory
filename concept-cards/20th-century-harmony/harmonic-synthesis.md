@@ -1,7 +1,7 @@
 ---
 concept: Harmonic Synthesis
 category: theory
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Harmonic Synthesis"
 chapter_number: 13
 pdf_page: 270

@@ -1,7 +1,7 @@
 ---
-concept: Fruhling Analysis (Strauss)
+concept: "Fruhling Analysis (Strauss)"
 category: analysis
-source: Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature
+source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Weitzmann Regions"
 chapter_number: 4
 pdf_page: 77

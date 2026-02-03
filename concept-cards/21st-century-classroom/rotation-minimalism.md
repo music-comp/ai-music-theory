@@ -1,5 +1,5 @@
 ---
-concept: Rotation (Minimalism)
+concept: "Rotation (Minimalism)"
 category: technique
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 35: Minimalism"

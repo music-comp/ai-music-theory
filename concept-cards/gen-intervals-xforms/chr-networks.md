@@ -1,5 +1,5 @@
 ---
-concept: CHR Networks (Chromatic Networks)
+concept: "CHR Networks (Chromatic Networks)"
 category: technique
 source: Generalized Musical Intervals and Transformations
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"

@@ -1,7 +1,7 @@
 ---
 concept: Tristan Genus
 category: theory
-source: Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature
+source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Dissonance"
 chapter_number: 7
 pdf_page: 156

@@ -1,5 +1,5 @@
 ---
-concept: L' and R' (Obverse Transformations)
+concept: "L' and R' (Obverse Transformations)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Motive, Voice Leading, and Harmony"

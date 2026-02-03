@@ -8,6 +8,7 @@ mod metadata;
 mod resources;
 mod search;
 mod server;
+mod sources;
 mod state;
 mod tools;
 mod util;

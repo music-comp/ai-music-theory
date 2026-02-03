@@ -1,5 +1,5 @@
 ---
-concept: Leittonwechsel / Leading-Tone Change (L)
+concept: "Leittonwechsel / Leading-Tone Change (L)"
 category: transformation
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapters 6-8"

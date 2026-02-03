@@ -1,5 +1,5 @@
 ---
-concept: Voice Leading (3-7 Paradigm)
+concept: "Voice Leading (3-7 Paradigm)"
 category: harmony
 source: Open Music Theory
 chapter: "Jazz Voicings"

@@ -1,5 +1,5 @@
 ---
-concept: Weitzmann's Der ubermassige Dreiklang
+concept: "Weitzmann's Der ubermassige Dreiklang"
 category: historical
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Reciprocity"

@@ -1,5 +1,5 @@
 ---
-concept: Tonnetz (Glossary Definition)
+concept: "Tonnetz (Glossary Definition)"
 category: spatial-model
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Glossary"

@@ -1,5 +1,5 @@
 ---
-concept: Chord Symbols (Jazz)
+concept: "Chord Symbols (Jazz)"
 category: notation
 source: Open Music Theory
 chapter: "Chord Symbols"

@@ -1,5 +1,5 @@
 ---
-concept: Phrasing Theory (Riemann's Contribution)
+concept: "Phrasing Theory (Riemann's Contribution)"
 category: theory
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Riemann's Legacy (Ch. 1)"

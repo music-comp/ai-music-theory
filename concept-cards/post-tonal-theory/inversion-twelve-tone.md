@@ -1,5 +1,5 @@
 ---
-concept: Inversion (Twelve-Tone)
+concept: "Inversion (Twelve-Tone)"
 category: technique
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Basic Concepts of Twelve-Tone Music"

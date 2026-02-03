@@ -1,5 +1,5 @@
 ---
-concept: Contour Segment (CSEG)
+concept: "Contour Segment (CSEG)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Some Additional Properties and Relationships"

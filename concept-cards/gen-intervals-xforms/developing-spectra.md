@@ -1,5 +1,5 @@
 ---
-concept: Developing Spectra (DVSP)
+concept: "Developing Spectra (DVSP)"
 category: analysis
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"

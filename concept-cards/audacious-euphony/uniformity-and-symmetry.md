@@ -1,5 +1,5 @@
 ---
-concept: Uniformity and Symmetry (Fetis)
+concept: "Uniformity and Symmetry (Fetis)"
 category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Reciprocity"

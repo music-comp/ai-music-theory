@@ -1,5 +1,5 @@
 ---
-concept: Three-Cycle (C3)
+concept: "Three-Cycle (C3)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Motive, Voice Leading, and Harmony"

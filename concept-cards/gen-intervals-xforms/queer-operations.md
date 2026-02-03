@@ -1,5 +1,5 @@
 ---
-concept: Queer Operations (Q3 and Q9)
+concept: "Queer Operations (Q3 and Q9)"
 category: transformation
 source: Generalized Musical Intervals and Transformations
 chapter: "Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"

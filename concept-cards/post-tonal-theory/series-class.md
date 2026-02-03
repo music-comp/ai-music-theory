@@ -1,5 +1,5 @@
 ---
-concept: Series Class (Row Class)
+concept: "Series Class (Row Class)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Basic Concepts of Twelve-Tone Music"

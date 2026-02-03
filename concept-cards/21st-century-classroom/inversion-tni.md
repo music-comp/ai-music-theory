@@ -1,5 +1,5 @@
 ---
-concept: Inversion (TnI)
+concept: "Inversion (TnI)"
 category: technique
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 33: Set Theory"

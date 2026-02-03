@@ -1,5 +1,5 @@
 ---
-concept: Reference Point (ref)
+concept: "Reference Point (ref)"
 category: mathematical-foundation
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Interval Systems (2): Formal Features"

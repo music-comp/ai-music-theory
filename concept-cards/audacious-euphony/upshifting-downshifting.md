@@ -1,7 +1,7 @@
 ---
 concept: Upshifting and Downshifting
 category: theory
-source: Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature
+source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "A Unified Model of Triadic Voice-Leading Space"
 chapter_number: 5
 pdf_page: 101

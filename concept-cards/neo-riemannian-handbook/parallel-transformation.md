@@ -1,5 +1,5 @@
 ---
-concept: Parallel Transformation (P)
+concept: "Parallel Transformation (P)"
 category: transformation
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapters 6-8"

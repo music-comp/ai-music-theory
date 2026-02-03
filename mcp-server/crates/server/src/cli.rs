@@ -12,6 +12,7 @@ use clap::{Parser, Subcommand};
 use crate::config::Config;
 use crate::error::Result;
 use crate::server::MusicTheoryServer;
+use crate::sources::cli::SourcesCommands;
 use crate::state::AppState;
 
 #[cfg(feature = "fts")]
@@ -62,6 +63,9 @@ pub enum Commands {
     /// Graph database management
     #[cfg(feature = "graph")]
     Graph(GraphCommands),
+
+    /// Source management (scan, validate, aliases)
+    Sources(SourcesCommands),
 }
 
 /// Graph subcommands
@@ -123,6 +127,10 @@ pub async fn handle_command(cli: Cli) -> Result<()> {
 
         #[cfg(feature = "graph")]
         Commands::Graph(graph_cmds) => handle_graph_command(graph_cmds, log_level).await,
+
+        Commands::Sources(sources_cmds) => {
+            crate::sources::cli::handle_sources_command(sources_cmds, log_level).await
+        }
     }
 }
 
@@ -1407,5 +1415,112 @@ fuzzy_distance = 2
         let cli = Cli::parse_from(&["music-theory-mcp", "graph", "--log-level", "trace", "stats"]);
         assert!(matches!(cli.command, Some(Commands::Graph(_))));
         assert_eq!(cli.log_level, Some("trace".to_string()));
+    }
+
+    // Sources command tests
+
+    #[test]
+    fn test_cli_parse_sources_scan() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "sources", "scan"]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+        assert!(cli.log_level.is_none());
+    }
+
+    #[test]
+    fn test_cli_parse_sources_scan_with_json() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "sources", "scan", "--output", "json"]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+    }
+
+    #[test]
+    fn test_cli_parse_sources_scan_show_cards() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "sources", "scan", "--show-cards"]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+    }
+
+    #[test]
+    fn test_cli_parse_sources_validate() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "sources", "validate"]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+        assert!(cli.log_level.is_none());
+    }
+
+    #[test]
+    fn test_cli_parse_sources_validate_with_mode() {
+        let cli =
+            Cli::parse_from(&["music-theory-mcp", "sources", "validate", "--mode", "cards-config"]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+    }
+
+    #[test]
+    fn test_cli_parse_sources_validate_suggest_matches() {
+        let cli =
+            Cli::parse_from(&["music-theory-mcp", "sources", "validate", "--suggest-matches"]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+    }
+
+    #[test]
+    fn test_cli_parse_sources_validate_with_threshold() {
+        let cli = Cli::parse_from(&[
+            "music-theory-mcp",
+            "sources",
+            "validate",
+            "--suggest-matches",
+            "--threshold",
+            "0.8",
+        ]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+    }
+
+    #[test]
+    fn test_cli_parse_sources_validate_json() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "sources", "validate", "--json"]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+    }
+
+    #[test]
+    fn test_cli_parse_sources_alias_list() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "sources", "alias", "list"]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+    }
+
+    #[test]
+    fn test_cli_parse_sources_alias_list_json() {
+        let cli = Cli::parse_from(&["music-theory-mcp", "sources", "alias", "list", "--json"]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+    }
+
+    #[test]
+    fn test_cli_parse_sources_alias_add() {
+        let cli = Cli::parse_from(&[
+            "music-theory-mcp",
+            "sources",
+            "alias",
+            "add",
+            "general-persichetti",
+            "20th Century Harmony",
+        ]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+    }
+
+    #[test]
+    fn test_cli_parse_sources_alias_remove() {
+        let cli = Cli::parse_from(&[
+            "music-theory-mcp",
+            "sources",
+            "alias",
+            "remove",
+            "general-persichetti",
+            "20th Century Harmony",
+        ]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+    }
+
+    #[test]
+    fn test_cli_parse_sources_with_log_level() {
+        let cli =
+            Cli::parse_from(&["music-theory-mcp", "--log-level", "debug", "sources", "scan"]);
+        assert!(matches!(cli.command, Some(Commands::Sources(_))));
+        assert_eq!(cli.log_level, Some("debug".to_string()));
     }
 }

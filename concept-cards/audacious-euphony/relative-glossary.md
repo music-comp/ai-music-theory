@@ -1,5 +1,5 @@
 ---
-concept: Relative (R) - Glossary Definition
+concept: "Relative (R) - Glossary Definition"
 category: transformation
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Glossary"

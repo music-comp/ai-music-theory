@@ -1,5 +1,5 @@
 ---
-concept: Transposition (Tn)
+concept: "Transposition (Tn)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Pitch-Class Sets"

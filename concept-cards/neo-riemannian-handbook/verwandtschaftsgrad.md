@@ -1,5 +1,5 @@
 ---
-concept: Verwandtschaftsgrad (Degree of Relatedness)
+concept: "Verwandtschaftsgrad (Degree of Relatedness)"
 tier: 3
 category: distance-metrics
 sources:

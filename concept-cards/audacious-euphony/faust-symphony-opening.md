@@ -1,5 +1,5 @@
 ---
-concept: Faust Symphony Opening (Liszt)
+concept: "Faust Symphony Opening (Liszt)"
 category: analysis
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Reciprocity"

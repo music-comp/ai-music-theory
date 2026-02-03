@@ -1,5 +1,5 @@
 ---
-concept: Flat Submediant (♭VI)
+concept: "Flat Submediant (♭VI)"
 category: harmony
 source: Open Music Theory
 chapter: "Modal Mixture"

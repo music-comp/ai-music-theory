@@ -1,7 +1,7 @@
 ---
 concept: Building Tone
 category: theory
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Compound and Mirror Harmony"
 chapter_number: 8
 pdf_page: 162

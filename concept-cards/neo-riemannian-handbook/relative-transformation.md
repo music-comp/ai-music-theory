@@ -1,5 +1,5 @@
 ---
-concept: Relative Transformation (R)
+concept: "Relative Transformation (R)"
 category: transformation
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapters 6-8"

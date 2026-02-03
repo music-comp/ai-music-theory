@@ -1,5 +1,5 @@
 ---
-concept: Seitenwechsel (Mode Exchange)
+concept: "Seitenwechsel (Mode Exchange)"
 tier: 3
 category: transformational-theory
 sources:

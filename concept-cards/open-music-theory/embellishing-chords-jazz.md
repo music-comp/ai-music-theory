@@ -1,5 +1,5 @@
 ---
-concept: Embellishing Chords (Jazz)
+concept: "Embellishing Chords (Jazz)"
 category: harmony
 source: Open Music Theory
 chapter: "Embellishing Chords"

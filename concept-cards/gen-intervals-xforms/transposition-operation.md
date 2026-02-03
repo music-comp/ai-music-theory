@@ -1,5 +1,5 @@
 ---
-concept: Transposition Operation (Ti)
+concept: "Transposition Operation (Ti)"
 category: transformation
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Interval Systems (2): Formal Features"

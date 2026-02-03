@@ -1,5 +1,5 @@
 ---
-concept: Triads' Second Nature
+concept: "Triads' Second Nature"
 category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Introduction"

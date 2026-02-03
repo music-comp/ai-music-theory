@@ -1,5 +1,5 @@
 ---
-concept: IFUNC (Interval Function)
+concept: "IFUNC (Interval Function)"
 category: mathematical-foundation
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions"

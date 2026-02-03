@@ -1,5 +1,5 @@
 ---
-concept: Doppelklänge (Double Sounds)
+concept: "Doppelklänge (Double Sounds)"
 tier: 3
 category: Riemann-original
 sources:

@@ -1,5 +1,5 @@
 ---
-concept: Harmonieschritte (Harmonic Steps)
+concept: "Harmonieschritte (Harmonic Steps)"
 tier: 3
 category: Riemann-original
 sources:

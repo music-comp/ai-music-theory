@@ -13,6 +13,7 @@ pub mod metadata;
 pub mod resources;
 pub mod search;
 pub mod server;
+pub mod sources;
 pub mod state;
 pub mod tools;
 pub mod util;

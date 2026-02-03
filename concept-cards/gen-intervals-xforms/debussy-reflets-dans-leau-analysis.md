@@ -1,5 +1,5 @@
 ---
-concept: Debussy Reflets dans l'eau Analysis
+concept: "Debussy Reflets dans l'eau Analysis"
 category: analysis
 source: Generalized Musical Intervals and Transformations
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"

@@ -30,21 +30,30 @@ skill_docs = "."
 path = "~/Dropbox/Apps/Oxford University Press"
 
 [sources.oxford.files]
-lewin-gmit = "[2007] Lewin - Generalized Musical Intervals and Transformations - Revised Edition.pdf"
-tymoczko-geometry = "[2011] Tymoczko - A Geometry of Music - Harmony and Counterpoint in the Extended Common Practice.pdf"
+lewin-gmit = "[2007] Lewin - Generalized Musical Intervals and Transformations.pdf"
+tymoczko-geometry = "[2011] Tymoczko - A Geometry of Music.pdf"
 tymoczko-tonality = "[2023] Tymoczko - Tonality - An Owners Manual.epub"
-cohn-audacious = "[2012] Cohn - Audacious Euphony - Chromaticism and the Triad's Second Nature.pdf"
-gollin-handbook = "[2012] Gollin - The Oxford Handbook of Neo-Riemannian Music Theories.pdf"
+cohn-audacious = "[2012] Cohn - Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature.pdf"
+gollin-handbook = "[2012] Gollin - Oxford Handbook of Neo-Riemannian Music Theories.pdf"
+
+[sources.oxford.aliases]
+gollin-handbook = ["The Oxford Handbook of Neo-Riemannian Music Theories"]
 
 [sources.general]
 path = "~/Dropbox/Apps/General Books/Music"
 
 [sources.general.files]
 open-music-theory = "[2022] Gotham - Open Music Theory.xml"
-straus-post-tonal = "[2016] Straus - Introduction to Post-Tonal Theory - 4th Edition.pdf"
+straus-post-tonal = "[2016] Straus - Introduction to Post-Tonal Theory (Fifth Edition).pdf"
 wright-math-music = "[2009] Wright - Mathematics and Music.pdf"
 hutchinson-21c = "[2023] Hutchinson - Music Theory for the 21st-Century Classroom.epub"
 messiaen-technique = "[1944] Messiaen - The Technique of My Musical Language.pdf"
+persichetti-20th-century = "[1961] Persichetti - Twentieth-Century Harmony: Creative Aspects and Practice.pdf"
+caplin-classical-form = "[2013] Caplin - Analyzing Classical Form: An Approach for the Classroom.pdf"
+
+[sources.general.aliases]
+persichetti-20th-century = ["Twentieth-Century Harmony"]
+caplin-classical-form = ["Analyzing Classical Form (Caplin)"]
 
 [sources.papers]
 path = "~/Dropbox/Apps/Papers/Music Theory"

@@ -1,7 +1,7 @@
 ---
 concept: Tonnetz Weitzmann Representation
 category: spatial-model
-source: Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature
+source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Weitzmann Regions"
 chapter_number: 4
 pdf_page: 77

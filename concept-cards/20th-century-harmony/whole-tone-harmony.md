@@ -1,7 +1,7 @@
 ---
 concept: Whole-Tone Harmony
 category: harmonic-device
-source: Twentieth-Century Harmony: Creative Aspects and Practice
+source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Scale Materials"
 chapter_number: 2
 pdf_page: 30

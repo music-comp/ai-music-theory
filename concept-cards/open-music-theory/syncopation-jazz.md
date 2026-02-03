@@ -1,5 +1,5 @@
 ---
-concept: Syncopation (Jazz)
+concept: "Syncopation (Jazz)"
 category: rhythm
 source: Open Music Theory
 chapter: "Swing Rhythms"

@@ -1,5 +1,5 @@
 ---
-concept: Non-Chord Tones (Overview)
+concept: "Non-Chord Tones (Overview)"
 category: theory
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 10: Non-Chord Tones"

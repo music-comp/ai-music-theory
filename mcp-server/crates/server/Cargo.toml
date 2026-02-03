@@ -39,6 +39,10 @@ dirs = { workspace = true }
 # CLI parsing
 clap = { workspace = true }
 
+# Source management
+strsim = { workspace = true }
+toml_edit = { workspace = true }
+
 # Full-text search engine (optional)
 tantivy = { workspace = true, optional = true }
 regex = { workspace = true, optional = true }

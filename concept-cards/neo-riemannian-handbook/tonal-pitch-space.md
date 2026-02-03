@@ -1,5 +1,5 @@
 ---
-concept: Lerdahl's Tonal Pitch Space
+concept: "Lerdahl's Tonal Pitch Space"
 tier: 3
 category: comparison-model
 sources:

@@ -1,5 +1,5 @@
 ---
-concept: Pitch Motive (PM)
+concept: "Pitch Motive (PM)"
 category: analysis
 source: Generalized Musical Intervals and Transformations
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"

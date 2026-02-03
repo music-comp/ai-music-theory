@@ -1,5 +1,5 @@
 ---
-concept: Flat Subtonic (♭VII)
+concept: "Flat Subtonic (♭VII)"
 category: harmony
 source: Open Music Theory
 chapter: "Modal Mixture"

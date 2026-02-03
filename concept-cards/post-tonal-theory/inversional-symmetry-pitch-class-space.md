@@ -1,5 +1,5 @@
 ---
-concept: Inversional Symmetry in Pitch-Class Space (Axis of Symmetry)
+concept: "Inversional Symmetry in Pitch-Class Space (Axis of Symmetry)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Centricity and Referential Pitch Collections"

@@ -1,5 +1,5 @@
 ---
-concept: American Standard Pitch Notation (ASPN)
+concept: "American Standard Pitch Notation (ASPN)"
 category: fundamentals
 source: Open Music Theory
 chapter: "American Standard Pitch Notation (ASPN)"

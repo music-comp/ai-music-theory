@@ -1,5 +1,5 @@
 ---
-concept: Consonant Weak-Beat Patterns (Second Species)
+concept: "Consonant Weak-Beat Patterns (Second Species)"
 category: counterpoint
 source: Open Music Theory
 chapter: "Second-Species Counterpoint"

@@ -1,5 +1,5 @@
 ---
-concept: Six-Cycle (C6)
+concept: "Six-Cycle (C6)"
 category: theory
 source: Introduction to Post-Tonal Theory (Fifth Edition)
 chapter: "Motive, Voice Leading, and Harmony"

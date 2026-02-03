@@ -1,5 +1,5 @@
 ---
-concept: Slide (S) - Glossary Definition
+concept: "Slide (S) - Glossary Definition"
 category: transformation
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Glossary"

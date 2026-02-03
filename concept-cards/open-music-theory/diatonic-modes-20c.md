@@ -1,5 +1,5 @@
 ---
-concept: Diatonic Modes (20th Century)
+concept: "Diatonic Modes (20th Century)"
 category: collections
 source: Open Music Theory
 chapter: "Diatonic Modes"

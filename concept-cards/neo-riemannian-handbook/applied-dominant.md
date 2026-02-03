@@ -1,5 +1,5 @@
 ---
-concept: Applied Dominant (Zwischendominant)
+concept: "Applied Dominant (Zwischendominant)"
 category: harmony
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Riemann's Legacy (Ch. 1)"
