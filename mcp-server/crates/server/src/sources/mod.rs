@@ -14,9 +14,3 @@ pub mod validator;
 
 // Re-export commonly used types
 pub use resolver::SourceResolver;
-pub use scanner::{scan_concept_cards, scan_concept_cards_with_stats, ScanStats};
-pub use types::{
-    MissingFile, MissingSource, ResolutionMethod, SourceReference, SourceSuggestion,
-    ValidationReport, ValidationStats,
-};
-pub use validator::validate_sources;

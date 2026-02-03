@@ -112,6 +112,7 @@ impl SourceResolver {
     }
 
     /// Get all titles mapped to IDs.
+    #[allow(dead_code)] // Public API method for introspection
     pub fn titles(&self) -> impl Iterator<Item = (&String, &String)> {
         self.title_to_id.iter()
     }
