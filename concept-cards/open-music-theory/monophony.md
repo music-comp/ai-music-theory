@@ -60,9 +60,8 @@ The exposure of monophonic texture demands high musical skill—there's no harmo
 
 ## Related Concepts
 
-- **Prerequisite**: melody, pitch, rhythm, texture
-- **Leads to**: heterophony, homophony, unison, octave-doubling
-- **See also**: a-cappella, solo, melody, line
+- **Prerequisite**: pitch, rhythm, texture
+- **Leads to**: heterophony, homophony
 
 ## Common Confusions
 

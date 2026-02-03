@@ -71,9 +71,8 @@ Brahms shifts "bleich" to receive primary accent rather than "kalt" ("Wenn ich b
 
 ## Related Concepts
 
-- **Prerequisite**: meter, accent, prosody, song, text-setting
-- **Leads to**: metric-freedom, expressed-meter, metric-reinterpretation
-- **See also**: modified-strophic-form, verbal-accent, word-painting
+- **Prerequisite**: meter
+- **Leads to**: metric-freedom, expressed-meter
 
 ## Common Confusions
 

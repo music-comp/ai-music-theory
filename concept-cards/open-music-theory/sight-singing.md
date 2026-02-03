@@ -73,8 +73,7 @@ Sight-singing exercises from textbooks like Ottman's "Music for Sight Singing" o
 ## Related Concepts
 
 - **Prerequisite**: pitch, staff, clef, key-signature, rhythm, solfege, scale-degree
-- **Leads to**: dictation, audiation, score-reading, musicianship
-- **See also**: sight-counting, solmization, conducting, ear-training
+- **Leads to**: dictation
 
 ## Common Confusions
 

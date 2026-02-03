@@ -51,9 +51,9 @@ The opening of Beethoven's Fifth Symphony has an iconic rhythm: three short note
 
 ## Related Concepts
 
-- **Prerequisite**: note, time, duration
-- **Leads to**: meter, tempo, note-values, rest-values, beat, rhythmic-pattern
-- **See also**: syncopation, pulse, subdivision, polyrhythm
+- **Prerequisite**: note, tie
+- **Leads to**: meter, tempo, note-values, rest-values, beat
+- **See also**: syncopation, polyrhythm
 
 ## Common Confusions
 

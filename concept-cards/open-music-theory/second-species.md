@@ -126,9 +126,9 @@ Fux's _Gradus ad Parnassum_ Part I, second-species exercises. Mozart and Haydn n
 
 ## Related Concepts
 
-- **Prerequisite**: first-species, passing-tone, consonance, dissonance, strong-weak-beats
-- **Leads to**: third-species, consonant-passing-tone, substitution, skipped-passing-tone, interval-subdivision, change-of-register, delay-of-melodic-progression
-- **See also**: species-counterpoint, metric-hierarchy, non-harmonic-tones
+- **Prerequisite**: first-species, passing-tone, consonance, dissonance
+- **Leads to**: third-species
+- **See also**: species-counterpoint, nonharmonic-tones
 
 ## Common Confusions
 

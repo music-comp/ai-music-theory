@@ -146,9 +146,9 @@ Partial ordering:
 
 ## Related Concepts
 
-- **Prerequisite**: twelve-tone-row, aggregate, discrete-segments
-- **Leads to**: total-serialism, combinatoriality, set-theory
-- **See also**: derived-row, row-properties, Babbitt
+- **Prerequisite**: twelve-tone-row, aggregate
+- **Leads to**: total-serialism, combinatoriality
+- **See also**: derived-row
 
 ## Common Confusions
 

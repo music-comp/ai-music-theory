@@ -50,9 +50,9 @@ Jazz lead sheets like "Autumn Leaves" or "All the Things You Are" use chord symb
 
 ## Related Concepts
 
-- **Prerequisite**: triad, seventh-chord, root, chord-quality, inversion
-- **Leads to**: jazz-extensions, jazz-voicings, lead-sheet
-- **See also**: roman-numerals, figured-bass, slash-chord
+- **Prerequisite**: triad, seventh-chord, chord-quality, inversion
+- **Leads to**: jazz-extensions, jazz-voicings
+- **See also**: figured-bass
 
 ## Common Confusions
 

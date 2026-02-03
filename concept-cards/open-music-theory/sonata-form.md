@@ -188,9 +188,9 @@ Often emphasized with HC cadence, then caesura
 
 ## Related Concepts
 
-- **Prerequisite**: binary-form, phrase, period, sentence, cadence, modulation, development-techniques, key-relationships
-- **Leads to**: sonata-rondo, theme-and-variations, development-section, recapitulation, coda, formal-functions
-- **See also**: exposition, retransition, tonal-plan, thematic-contrast, cyclic-form
+- **Prerequisite**: binary-form, phrase, period, sentence, cadence, modulation, key-relationships
+- **Leads to**: sonata-rondo, theme-and-variations, development-section, recapitulation
+- **See also**: exposition, retransition
 
 ## Common Confusions
 

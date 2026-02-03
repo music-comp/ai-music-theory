@@ -91,7 +91,7 @@ Cardinality: 4 (a tetrachord)
 ## Related Concepts
 
 - **Prerequisite**: pitch-class, integer-notation, interval-class
-- **Leads to**: normal-order, prime-form, set-class, transposition-Tn, inversion-In
+- **Leads to**: normal-order, prime-form, set-class, transposition-tn, inversion-in
 - **See also**: interval-vector, cardinality, segmentation
 
 ## Common Confusions

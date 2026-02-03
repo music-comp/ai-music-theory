@@ -194,9 +194,9 @@ Diminished seventh intensifies motion to V
 
 ## Related Concepts
 
-- **Prerequisite**: predominant-function, first-inversion, chromatic-harmony, voice-leading
-- **Leads to**: augmented-sixth-chords, chromatic-predominants
-- **See also**: diminished-supertonic, cadential-six-four, applied-chords
+- **Prerequisite**: pre-dominant-function, chromatic-harmony, voice-leading
+- **Leads to**: augmented-sixth-chords, chromatic-pre-dominants
+- **See also**: cadential-six-four, applied-chord
 
 ## Common Confusions
 

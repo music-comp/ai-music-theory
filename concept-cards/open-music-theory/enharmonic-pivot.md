@@ -222,9 +222,9 @@ Major third relationships
 
 ## Related Concepts
 
-- **Prerequisite**: enharmonic-equivalence, German-augmented-sixth, diminished-seventh-chord, augmented-triad
-- **Leads to**: enharmonic-modulation, chromatic-modulation, distant-modulation
-- **See also**: pivot-chord, diminished-seventh-pivot, Romantic-harmony
+- **Prerequisite**: enharmonic-equivalence, german-augmented-sixth, diminished-seventh-chord, augmented-triad
+- **Leads to**: enharmonic-modulation, chromatic-modulation, direct-modulation
+- **See also**: pivot-chord, diminished-seventh-pivot
 
 ## Common Confusions
 

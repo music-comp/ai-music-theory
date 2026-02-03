@@ -227,9 +227,9 @@ Direction of resolution is key difference
 
 ## Related Concepts
 
-- **Prerequisite**: suspension, non-chord-tone, voice-leading, strong-weak-beat, preparation-resolution
-- **Leads to**: embellishing-tones, non-harmonic-tones, dissonance-treatment
-- **See also**: suspension, 7-8-resolution, upward-resolution, leading-tone-resolution
+- **Prerequisite**: suspension, voice-leading
+- **Leads to**: nonharmonic-tones
+- **See also**: suspension
 
 ## Common Confusions
 

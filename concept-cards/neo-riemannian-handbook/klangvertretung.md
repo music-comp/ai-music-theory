@@ -127,8 +127,8 @@ Neo-Riemannian theory largely abandons Klangvertretung's hierarchical dimension,
 ## Related Concepts
 
 - **Prerequisites**: Klang, harmonic-function, consonance, dissonance
-- **Leads to**: Parallelklang, Leittonwechselklang, Scheinkonsonanz, modulation
-- **See also**: Stellvertreter, apparent-consonance, Tonvorstellung
+- **Leads to**: leittonwechsel, modulation
+- **See also**: tonvorstellung
 
 ## Common Confusions
 

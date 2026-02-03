@@ -146,7 +146,7 @@ Matrix shows only 12 distinct forms!
 ## Related Concepts
 
 - **Prerequisite**: twelve-tone-row, row-operations, pitch-class
-- **Leads to**: naming-conventions, invariance, combinatoriality
+- **Leads to**: row-naming-conventions, invariants, combinatoriality
 - **See also**: transposition, inversion, row-class
 
 ## Common Confusions

@@ -204,9 +204,8 @@ Introduction suggests drama and mood of opera
 
 ## Related Concepts
 
-- **Prerequisite**: tempo, exposition, sonata-form, harmonic-preparation, tonic-dominant, formal-function
-- **Leads to**: transition, retransition, slow-movement, formal-articulation
-- **See also**: prelude, overture, in-medias-res, motto-opening
+- **Prerequisite**: tempo, exposition, sonata-form
+- **Leads to**: transition, retransition
 
 ## Common Confusions
 

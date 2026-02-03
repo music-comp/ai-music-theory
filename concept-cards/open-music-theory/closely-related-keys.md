@@ -232,9 +232,9 @@ Requires chromatic or enharmonic modulation
 
 ## Related Concepts
 
-- **Prerequisite**: key-signature, modulation, relative-major-minor, dominant, subdominant
-- **Leads to**: distant-keys, key-relationship, common-chord-modulation, tonal-plan
-- **See also**: one-accidental-difference, fifth-relationships, relative-keys
+- **Prerequisite**: key-signature, modulation, relative-major-minor
+- **Leads to**: key-relationships, common-chord-modulation
+- **See also**: relative-keys
 
 ## Common Confusions
 

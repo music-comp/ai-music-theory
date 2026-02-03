@@ -245,9 +245,9 @@ Prolongs dominant
 
 ## Related Concepts
 
-- **Prerequisite**: neighbor-tone, common-tone-chords, chromatic-voice-leading
+- **Prerequisite**: neighbor-tone, common-tone-chords, chromatic-voice-motion
 - **Leads to**: common-tone-diminished-seventh, common-tone-augmented-sixth
-- **See also**: embellishing-chord, prolongation, non-harmonic-tone
+- **See also**: tonic-prolongation
 
 ## Common Confusions
 

@@ -156,9 +156,9 @@ The hexachord bridges:
 
 ## Related Concepts
 
-- **Prerequisite**: hexachord, set-class, combinatoriality
-- **Leads to**: hexatonic-collection, neo-riemannian-theory, all-combinatorial
-- **See also**: derived-row, triadic-post-tonality, row-properties
+- **Prerequisite**: set-class, combinatoriality
+- **Leads to**: hexatonic-collection, neo-riemannian-theory, i-combinatoriality
+- **See also**: derived-row, triadic-post-tonality
 
 ## Common Confusions
 

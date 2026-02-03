@@ -110,7 +110,7 @@ to work over various modal harmonies.
 ## Related Concepts
 
 - **Prerequisite**: interval, scale, major-scale
-- **Leads to**: modal-ambiguity, pandiatonicism, collection-theory
+- **Leads to**: pandiatonicism
 - **See also**: diatonic-modes, whole-tone-collection, octatonic-collection
 
 ## Common Confusions

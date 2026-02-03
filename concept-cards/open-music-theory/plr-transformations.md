@@ -222,7 +222,7 @@ Returns to starting chord after 6 steps
 
 ## Related Concepts
 
-- **Prerequisite**: triad, major-minor-mode, common-tone, voice-leading
+- **Prerequisite**: triad, common-tones, voice-leading
 - **Leads to**: neo-riemannian-cycles, tonnetz, transformational-theory
 - **See also**: neo-riemannian-theory, secondary-neo-riemannian-transformations, parsimonious-voice-leading
 

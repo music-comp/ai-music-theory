@@ -226,9 +226,8 @@ Different function despite similar sound
 
 ## Related Concepts
 
-- **Prerequisite**: fully-diminished-seventh, common-tone, chromatic-voice-leading, prolongation
-- **Leads to**: chromatic-embellishment, non-functional-diminished, chromatic-prolongation
-- **See also**: neighbor-diminished-seventh, passing-diminished-seventh, embellishing-chord
+- **Prerequisite**: fully-diminished-seventh-chord, common-tones, chromatic-voice-motion, tonic-prolongation
+- **Leads to**: harmonic-embellishment, chromatic-modulation
 
 ## Common Confusions
 

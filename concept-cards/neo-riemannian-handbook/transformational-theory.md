@@ -125,9 +125,9 @@ All triadic transformations can be expressed as combinations of P, L, R:
 
 ## Related Concepts
 
-- **Prerequisite**: group-theory-basics, transposition, inversion
-- **Leads to**: neo-riemannian-analysis, klumpenhouwer-networks, voice-leading-spaces
-- **See also**: schritte-wechsel, gis-theory, lewin-intervals
+- **Prerequisite**: transposition, inversion
+- **Leads to**: klumpenhouwer-networks, voice-leading-zones
+- **See also**: schritte-wechsel
 
 ## Common Confusions
 

@@ -118,8 +118,8 @@ Some theorists (Halm, Louis, Kurth, Schmitz, Rögely, Eycken) showed "considerab
 ## Related Concepts
 
 - **Prerequisites**: harmonic-function, dominant, tonicization, modulation
-- **Leads to**: chromatic-harmony, prolongation, secondary-function
-- **See also**: Klangvertretung, Zwischenharmonie, pivot-chord
+- **Leads to**: chromatic-harmony, tonic-prolongation
+- **See also**: klangvertretung, pivot-chord
 
 ## Common Confusions
 

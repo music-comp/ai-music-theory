@@ -45,9 +45,9 @@ The opening of Beethoven's "Für Elise" features prominent half-step motion (E-D
 
 ## Related Concepts
 
-- **Prerequisite**: pitch, interval, keyboard
+- **Prerequisite**: pitch, interval
 - **Leads to**: whole-step, chromatic-scale, accidental, enharmonic-equivalence, semitone
-- **See also**: interval-class, scale, tendency-tone, leading-tone
+- **See also**: interval-class, scale, leading-tone
 
 ## Common Confusions
 

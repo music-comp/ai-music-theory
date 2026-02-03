@@ -69,9 +69,8 @@ Beethoven's dramatic contrasts: sudden _sforzando_ accents, extended crescendos.
 
 ## Related Concepts
 
-- **Prerequisite**: staff, notation, performance-practice
-- **Leads to**: articulation, expression, phrasing, interpretation
-- **See also**: crescendo, decrescendo, accent, sforzando, hairpin
+- **Prerequisite**: staff, rotation
+- **Leads to**: articulation, interpolation
 
 ## Common Confusions
 

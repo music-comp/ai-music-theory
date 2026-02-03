@@ -165,9 +165,8 @@ Transcription:
 
 ## Related Concepts
 
-- **Prerequisite**: orchestration, piano-idiom, instrumentation, arrangement
-- **Leads to**: timbral-variation, texture-redistribution, orchestral-thinking
-- **See also**: doublings, dovetailing, attack-sustain-effect
+- **Leads to**: texture-redistribution
+- **See also**: dovetailing, attack-sustain-effect
 
 ## Common Confusions
 

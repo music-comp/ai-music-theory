@@ -209,9 +209,8 @@ Transition creates maximum contrast before S
 
 ## Related Concepts
 
-- **Prerequisite**: sonata-form, modulation, sequence, primary-theme, secondary-theme, medial-caesura, half-cadence
-- **Leads to**: retransition, development, exposition, recapitulation, formal-functions
-- **See also**: bridge, connecting-passage, modulatory-section
+- **Prerequisite**: sonata-form, modulation, sequence, coda-theme, medial-caesura, half-cadence
+- **Leads to**: retransition, development-keys, exposition, recapitulation
 
 ## Common Confusions
 

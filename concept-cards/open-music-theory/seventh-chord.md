@@ -71,9 +71,9 @@ The V7 chord (major-minor seventh on ^5) is ubiquitous in classical music. Jazz 
 
 ## Related Concepts
 
-- **Prerequisite**: triad, interval-quality, seventh (interval), chord
-- **Leads to**: dominant-seventh, half-diminished, fully-diminished, chord-extensions, ninth-chord
-- **See also**: chord-symbol, voice-leading, resolution, tendency-tone
+- **Prerequisite**: triad, interval-quality, chord
+- **Leads to**: dominant-seventh-chord, chordal-tension, ninth-chords
+- **See also**: voice-leading
 
 ## Common Confusions
 

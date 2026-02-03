@@ -75,9 +75,9 @@ Mozart Piano Sonata K. 545: melody in right hand, alberti bass in left. Schubert
 
 ## Related Concepts
 
-- **Prerequisite**: texture, homophony, melody, harmony, accompaniment-pattern
-- **Leads to**: alberti-bass, arpeggio, song-form, solo-instrumental
-- **See also**: homorhythm, homophony, monophony, melody, harmonic-support
+- **Prerequisite**: texture, homophony
+- **Leads to**: alberti-bass, sonata-form
+- **See also**: homorhythm, homophony, monophony
 
 ## Common Confusions
 

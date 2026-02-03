@@ -65,9 +65,9 @@ The melody of "Twinkle, Twinkle Little Star" in C major: ^1-^1-^5-^5-^6-^6-^5...
 
 ## Related Concepts
 
-- **Prerequisite**: scale, major-scale, tonic
-- **Leads to**: solfège, roman-numerals, harmonic-function, tendency-tone, tonicization
-- **See also**: movable-do, figured-bass, lead-sheet-symbol
+- **Prerequisite**: scale, major-scale
+- **Leads to**: solfege, harmonic-function, tonicization
+- **See also**: figured-bass
 
 ## Common Confusions
 

@@ -109,8 +109,8 @@ Fux's _Gradus ad Parnassum_ Part I provides complete first-species exercises in 
 
 ## Related Concepts
 
-- **Prerequisite**: cantus-firmus, species-counterpoint, consonance, dissonance, contrary-motion, parallel-motion, perfect-consonance, imperfect-consonance
-- **Leads to**: second-species, clausula-vera, voice-independence, harmonic-interval
+- **Prerequisite**: cantus-firmus, species-counterpoint, consonance, dissonance, contrary-motion, parallel-motion, perfect-imperfect-consonances
+- **Leads to**: second-species, clausula-vera, harmonic-interval
 - **See also**: counterpoint, voice-overlap, voice-crossing, direct-fifths-octaves
 
 ## Common Confusions

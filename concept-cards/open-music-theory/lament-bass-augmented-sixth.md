@@ -210,8 +210,8 @@ A6 resolution more dramatic (half step above ^5)
 ## Related Concepts
 
 - **Prerequisite**: augmented-sixth-chords, phrygian-half-cadence, ground-bass
-- **Leads to**: chromatic-bass-lines, predominant-prolongation
-- **See also**: descending-tetrachord, minor-subdominant, baroque-lament-topic
+- **Leads to**: dominant-prolongation
+- **See also**: minor-subdominant
 
 ## Common Confusions
 

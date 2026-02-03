@@ -85,9 +85,9 @@ Passing tones are among the most common non-chord tones in all tonal music style
 
 ## Related Concepts
 
-- **Prerequisite**: stepwise-motion, chord-tone, non-chord-tone, consonance, dissonance
-- **Leads to**: neighbor-tone, escape-tone, appoggiatura, embellishment, diminution
-- **See also**: species-counterpoint, voice-leading, melodic-embellishment
+- **Prerequisite**: consonance, dissonance
+- **Leads to**: neighbor-tone, escape-tone, appoggiatura
+- **See also**: species-counterpoint, voice-leading, harmonic-embellishment
 
 ## Common Confusions
 

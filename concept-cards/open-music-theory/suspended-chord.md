@@ -52,9 +52,9 @@ Sus chords are common in modal jazz (Miles Davis's "So What" era), contemporary 
 
 ## Related Concepts
 
-- **Prerequisite**: triad, chord-quality, fourth, second
-- **Leads to**: modal-harmony, quartal-harmony, chord-resolution
-- **See also**: chord-symbols-jazz, add-chord, power-chord
+- **Prerequisite**: triad, chord-quality
+- **Leads to**: quartal-harmony, ct-chord-resolution
+- **See also**: chord-symbols-jazz
 
 ## Common Confusions
 

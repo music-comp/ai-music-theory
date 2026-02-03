@@ -249,9 +249,9 @@ Tonicizes V
 
 ## Related Concepts
 
-- **Prerequisite**: leading-tone, diminished-triad, dominant-function, voice-leading, tendency-tone
-- **Leads to**: secondary-leading-tone, tonic-prolongation, dominant-substitute, diminished-seventh
-- **See also**: vii-dim-chord, fully-diminished-seventh, half-diminished-seventh, V7-substitute
+- **Prerequisite**: leading-tone, diminished-triad, dominant-function, voice-leading
+- **Leads to**: secondary-leading-tone-chord, tonic-prolongation, half-diminished-seventh
+- **See also**: fully-diminished-seventh-chord, half-diminished-seventh
 
 ## Common Confusions
 

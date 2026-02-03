@@ -46,9 +46,9 @@ The pattern: long-short, long-short, long-short...
 
 ## Related Concepts
 
-- **Prerequisite**: eighth-note, beat, tempo, meter
-- **Leads to**: backbeat, jazz-phrasing, triplet-feel
-- **See also**: straight-eighths, syncopation, groove
+- **Prerequisite**: beat, tempo, meter
+- **Leads to**: backbeat
+- **See also**: syncopation
 
 ## Common Confusions
 

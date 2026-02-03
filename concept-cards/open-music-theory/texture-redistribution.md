@@ -188,9 +188,8 @@ One pitch across four rhythmic levels
 
 ## Related Concepts
 
-- **Prerequisite**: orchestration, texture, voice-leading, instrumentation
-- **Leads to**: timbral-variation, arrangement, transcription-techniques
-- **See also**: doublings, dovetailing, piano-to-orchestra-transcription
+- **Prerequisite**: texture, voice-leading
+- **See also**: dovetailing, piano-to-orchestra-transcription
 
 ## Common Confusions
 

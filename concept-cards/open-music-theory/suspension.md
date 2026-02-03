@@ -232,9 +232,9 @@ Upward resolution = retardation
 
 ## Related Concepts
 
-- **Prerequisite**: consonance-dissonance, non-chord-tone, voice-leading, strong-weak-beat, preparation-resolution
-- **Leads to**: retardation, chain-of-suspensions, embellishing-tones, non-harmonic-tones
-- **See also**: passing-tone, neighbor-tone, anticipation, appoggiatura, accented-dissonance
+- **Prerequisite**: consonance-dissonance, voice-leading
+- **Leads to**: retardation, nonharmonic-tones
+- **See also**: passing-tone, neighbor-tone, anticipation, appoggiatura
 
 ## Common Confusions
 

@@ -71,9 +71,9 @@ Polyphonic writing demands high compositional skill: each line must be melodical
 
 ## Related Concepts
 
-- **Prerequisite**: texture, melody, independent-voice, rhythm
-- **Leads to**: counterpoint, fugue, canon, imitation, voice-leading, species-counterpoint
-- **See also**: homophony, contrapuntal, horizontal-writing, linear
+- **Prerequisite**: texture, rhythm
+- **Leads to**: counterpoint, fugue, canzona, imitation, voice-leading, species-counterpoint
+- **See also**: homophony
 
 ## Common Confusions
 

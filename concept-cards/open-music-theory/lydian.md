@@ -64,8 +64,8 @@ The raised ^4 is the defining characteristic distinguishing Lydian from Ionian (
 ## Related Concepts
 
 - **Prerequisite**: scale, mode, major-scale, whole-step, half-step
-- **Leads to**: modal-mixture, jazz-harmony, film-scoring, modal-interchange
-- **See also**: ionian, mixolydian, diatonic-modes, modal-brightness, augmented-fourth
+- **Leads to**: modal-mixture, modal-interchange
+- **See also**: ionian, mixolydian, diatonic-modes
 
 ## Common Confusions
 

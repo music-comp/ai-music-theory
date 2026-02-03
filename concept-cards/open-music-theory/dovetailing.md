@@ -163,9 +163,8 @@ Rhythm created by entries
 
 ## Related Concepts
 
-- **Prerequisite**: orchestration, instrumentation, phrasing, rhythm
-- **Leads to**: orchestral-texture, seamless-lines, rhythmic-articulation
-- **See also**: antiphony, doublings, breath-management
+- **Prerequisite**: rhythm
+- **See also**: antiphony
 
 ## Common Confusions
 

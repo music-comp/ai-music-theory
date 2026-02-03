@@ -136,8 +136,7 @@ With Picardy:     iv - V - I
 
 ## Related Concepts
 
-- **Prerequisite**: modal-mixture, minor-key, major-triad, final-cadence
-- **Leads to**: baroque-performance-practice, historical-conventions
+- **Prerequisite**: modal-mixture, major-triad, serial-cadence
 - **See also**: borrowed-chord, parallel-keys, authentic-cadence
 
 ## Common Confusions

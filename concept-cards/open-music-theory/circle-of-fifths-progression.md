@@ -243,9 +243,8 @@ Complete cycle
 
 ## Related Concepts
 
-- **Prerequisite**: root-motion, perfect-fifth, chord-progression, harmonic-function, voice-leading
-- **Leads to**: sequence, harmonic-sequence, jazz-harmony, functional-progression
-- **See also**: descending-fifths, ii-V-I, circle-of-fifths (the diagram/key relationships)
+- **Prerequisite**: root-motion, perfect-fourth, harmonic-function, voice-leading
+- **Leads to**: sequence, harmonic-sequence, sequential-progression
 
 ## Common Confusions
 

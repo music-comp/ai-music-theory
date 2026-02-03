@@ -90,9 +90,9 @@ Bach chorales exemplify SATB style (371 chorales standard teaching material). Ha
 
 ## Related Concepts
 
-- **Prerequisite**: chord, triad, seventh-chord, voice, harmony
-- **Leads to**: voice-leading, part-writing, chorale-style, four-part-harmony
-- **See also**: soprano, alto, tenor, bass, doubling, voice-crossing, spacing
+- **Prerequisite**: chord, triad, seventh-chord
+- **Leads to**: voice-leading
+- **See also**: voice-crossing
 
 ## Common Confusions
 

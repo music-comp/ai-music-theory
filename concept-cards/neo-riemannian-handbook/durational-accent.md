@@ -82,8 +82,8 @@ The long value now follows the bar line.
 
 ## Related Concepts
 
-- **Prerequisite**: accent, rhythm, note-value, metric-hierarchy
-- **Leads to**: expressed-meter, agogic-accent, metric-analysis
+- **Prerequisite**: rhythm, note-values
+- **Leads to**: expressed-meter
 - **See also**: harmoniewirkung, schlusswirkung, syncopation
 
 ## Common Confusions

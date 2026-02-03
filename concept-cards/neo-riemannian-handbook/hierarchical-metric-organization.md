@@ -89,8 +89,8 @@ The repeated 3-4 and 5-6 extend without disturbing the underlying prototype.
 
 ## Related Concepts
 
-- **Prerequisite**: meter, hypermeter, phrase, period, accent
-- **Leads to**: phrase-expansion, metric-irregularity, formal-analysis
+- **Prerequisite**: meter, hypermeter, phrase, period
+- **Leads to**: phrase-expansion
 - **See also**: auftakttheorie, expressed-meter, schlusswirkung
 
 ## Common Confusions

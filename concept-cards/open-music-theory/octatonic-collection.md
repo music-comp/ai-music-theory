@@ -115,8 +115,8 @@ Find any half step in the scale:
 
 ## Related Concepts
 
-- **Prerequisite**: diminished-seventh-chord, minor-third, half-step, whole-step
-- **Leads to**: modes-of-limited-transposition, distance-model, collection-theory
+- **Prerequisite**: diminished-seventh-chord, minor-triad, half-step, whole-step
+- **Leads to**: modes-of-limited-transposition, distance-model
 - **See also**: whole-tone-collection, hexatonic-collection, transpositional-symmetry
 
 ## Common Confusions

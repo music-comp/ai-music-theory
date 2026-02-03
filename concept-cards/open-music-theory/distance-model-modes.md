@@ -105,8 +105,8 @@ This is the diminished 7th chord reframed
 ## Related Concepts
 
 - **Prerequisite**: interval, semitone, octatonic-collection, hexatonic-collection
-- **Leads to**: modes-of-limited-transposition, collection-theory, bartok-analysis
-- **See also**: transpositional-symmetry, z-cell, pitch-class-set
+- **Leads to**: modes-of-limited-transposition
+- **See also**: transpositional-symmetry, pitch-class-set
 
 ## Common Confusions
 

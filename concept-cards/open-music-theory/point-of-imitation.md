@@ -165,9 +165,8 @@ Spacing need not be regular (unlike strict canon)
 
 ## Related Concepts
 
-- **Prerequisite**: imitation, counterpoint, polyphony, renaissance-style, vocal-polyphony, successive-entry
-- **Leads to**: motet, madrigal, fugal-exposition, ricercar, canon
-- **See also**: 16th-century-style, imitative-counterpoint, text-setting
+- **Prerequisite**: imitation, counterpoint, polyphony
+- **Leads to**: fugal-exposition, ricercar, canzona
 
 ## Common Confusions
 

@@ -74,9 +74,9 @@ Riemann: mm. 3-4 receive accent as "answer" to mm. 1-2
 
 ## Related Concepts
 
-- **Prerequisite**: motive, melodic-contour, repetition, imitation, inversion
-- **Leads to**: expressed-meter, phrase-rhythm, metric-analysis
-- **See also**: harmoniewirkung, sequence, motivic-development
+- **Prerequisite**: motive, imitation, inversion
+- **Leads to**: expressed-meter
+- **See also**: harmoniewirkung, sequence
 
 ## Common Confusions
 

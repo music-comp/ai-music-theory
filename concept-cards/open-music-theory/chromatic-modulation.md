@@ -232,9 +232,9 @@ Enables distant modulation C → F#
 
 ## Related Concepts
 
-- **Prerequisite**: chromatic-harmony, secondary-dominant, modulation, augmented-sixth, Neapolitan-sixth
-- **Leads to**: enharmonic-modulation, direct-modulation, chromatic-mediant-modulation
-- **See also**: common-chord-modulation, pivot-chord, distant-key-relationship
+- **Prerequisite**: chromatic-harmony, secondary-dominant, modulation, augmented-sixth-chord, neapolitan-sixth
+- **Leads to**: enharmonic-modulation, direct-modulation, chromatic-modulation
+- **See also**: common-chord-modulation, pivot-chord
 
 ## Common Confusions
 

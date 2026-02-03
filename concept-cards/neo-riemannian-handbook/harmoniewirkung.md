@@ -76,9 +76,8 @@ When tonic continues into measure 5, the entire four-measure unit shows Harmonie
 
 ## Related Concepts
 
-- **Prerequisite**: harmonic-function, tonic, dominant, subdominant, harmonic-rhythm
-- **Leads to**: expressed-meter, schlusswirkung, metric-analysis, auftakttheorie
-- **See also**: initial-accent, harmonic-change, metric-weight
+- **Prerequisite**: harmonic-function, harmonic-rhythm
+- **Leads to**: expressed-meter, schlusswirkung, auftakttheorie
 
 ## Common Confusions
 

@@ -64,9 +64,8 @@ Binary form dances (minuets, gavottes): ||: A :||: B :|| structure. Chopin mazur
 
 ## Related Concepts
 
-- **Prerequisite**: measure, barline, form, section
-- **Leads to**: musical-form, binary-form, ternary-form, da-capo, coda
-- **See also**: first-ending, second-ending, D.C., D.S., fine, coda-sign
+- **Prerequisite**: measure
+- **Leads to**: binary-form, ternary-form, da-capo
 
 ## Common Confusions
 

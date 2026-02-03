@@ -239,9 +239,9 @@ Part of the sonata's tragic character
 
 ## Related Concepts
 
-- **Prerequisite**: neapolitan-sixth, neapolitan-voice-leading, predominant-function
-- **Leads to**: chromatic-cadential-progressions, applied-chords
-- **See also**: cadential-six-four, augmented-sixth-chords, dominant-approach
+- **Prerequisite**: neapolitan-sixth, neapolitan-voice-leading, pre-dominant-function
+- **Leads to**: complete-cadential-progression, applied-chord
+- **See also**: cadential-six-four, augmented-sixth-chords
 
 ## Common Confusions
 

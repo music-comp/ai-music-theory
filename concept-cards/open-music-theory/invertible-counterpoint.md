@@ -173,9 +173,8 @@ All six permutations possible if designed as triple counterpoint
 
 ## Related Concepts
 
-- **Prerequisite**: counterpoint, voice-leading, interval, consonance-dissonance, fugue, two-voice-counterpoint
-- **Leads to**: double-fugue, triple-fugue, canon, multiple-counterpoint, stretto
-- **See also**: contrapuntal-transformation, fugal-technique, developmental-techniques
+- **Prerequisite**: counterpoint, voice-leading, interval, consonance-dissonance, fugue
+- **Leads to**: canzona, stretto
 
 ## Common Confusions
 

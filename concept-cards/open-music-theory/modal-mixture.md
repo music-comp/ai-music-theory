@@ -123,7 +123,7 @@ The A♭ (lowered-^6) borrowed from C minor creates the half-diminished quality.
 
 ## Related Concepts
 
-- **Prerequisite**: parallel-keys, major-scale, minor-scale, roman-numerals, chord-quality
+- **Prerequisite**: parallel-keys, major-scale, minor-scale, chord-quality
 - **Leads to**: chromatic-modulation, picardy-third, chromatic-pivot-chord
 - **See also**: borrowed-chords, mode, parallel-keys
 

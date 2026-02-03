@@ -117,9 +117,9 @@ This metaphor shift enabled:
 
 ## Related Concepts
 
-- **Prerequisite**: Tonnetz, Oettingens-Harmoniesystem, just-intonation
-- **Leads to**: Tonvorstellung, path-derivation, transformational-theory
-- **See also**: enharmonic-equivalence, Verwandtschaftsgrad
+- **Prerequisite**: tonnetz, oettingens-harmoniesystem
+- **Leads to**: tonvorstellung, transformational-theory
+- **See also**: enharmonic-equivalence, verwandtschaftsgrad
 
 ## Common Confusions
 

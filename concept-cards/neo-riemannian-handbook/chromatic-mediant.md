@@ -68,9 +68,9 @@ Riemann explicitly cited chromatic mediants as exemplifying *Tonalitat* (expande
 
 ## Related Concepts
 
-- **Prerequisite**: triad, tonic, mediant, chromatic-harmony, voice-leading
-- **Leads to**: hexatonic-system, major-third-cycle, tonnetz, chromatic-tonality
-- **See also**: harmonic-function, neo-riemannian-transformations, PL-cycle
+- **Prerequisite**: triad, chromatic-harmony, voice-leading
+- **Leads to**: hexatonic-system, tonnetz, chromatic-tonality
+- **See also**: harmonic-function, secondary-neo-riemannian-transformations, plr-cycle
 
 ## Common Confusions
 

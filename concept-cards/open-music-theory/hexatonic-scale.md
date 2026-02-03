@@ -272,9 +272,9 @@ Any two augmented triads a semitone apart generate a hexatonic collection
 
 ## Related Concepts
 
-- **Prerequisite**: augmented-triad, semitone, minor-third, major-third
-- **Leads to**: neo-riemannian-theory, PL-cycle, modes-of-limited-transposition, parsimonious-voice-leading
-- **See also**: equal-divisions-of-the-octave, octatonic-scale, whole-tone-scale, symmetrical-collection
+- **Prerequisite**: augmented-triad, semitone, minor-triad, major-triad
+- **Leads to**: neo-riemannian-theory, plr-cycle, modes-of-limited-transposition, parsimonious-voice-leading
+- **See also**: equal-divisions-of-the-octave, octatonic-scale, whole-tone-scale
 
 ## Common Confusions
 

@@ -262,9 +262,8 @@ Then dominant and resolution
 
 ## Related Concepts
 
-- **Prerequisite**: tonic-function, voice-leading, first-inversion, passing-motion, neighbor-motion
-- **Leads to**: phrase-model, harmonic-hierarchy, structural-levels, predominant-function
-- **See also**: tonic-expansion, embellishing-harmony, prolongational-analysis, Schenkerian-analysis
+- **Prerequisite**: tonic-function, voice-leading, passing-motion, neighbor-motion
+- **Leads to**: pre-dominant-function
 
 ## Common Confusions
 

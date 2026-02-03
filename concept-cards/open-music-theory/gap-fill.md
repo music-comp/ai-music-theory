@@ -89,9 +89,8 @@ Gap fill serves important melodic functions:
 
 ## Related Concepts
 
-- **Prerequisite**: melodic-interval, leap, stepwise-motion, conjunct-motion, disjunct-motion
-- **Leads to**: melodic-contour, arch-shape, tessitura, voice-leading-principles
-- **See also**: contrary-motion, regression-to-mean, species-counterpoint, 16th-century-counterpoint
+- **Prerequisite**: melodic-interval
+- **See also**: contrary-motion, species-counterpoint
 
 ## Common Confusions
 

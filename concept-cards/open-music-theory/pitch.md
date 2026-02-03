@@ -40,8 +40,7 @@ Any melody consists of a sequence of pitches over time. The opening of Beethoven
 
 ## Related Concepts
 
-- **Prerequisite**: None (foundational concept)
-- **Leads to**: interval, scale, chord, melody, harmony
+- **Leads to**: interval, scale, chord
 - **See also**: pitch-class, octave-equivalence, staff, clef, note
 
 ## Common Confusions

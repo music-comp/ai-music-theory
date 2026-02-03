@@ -253,7 +253,7 @@ Creates kaleidoscopic, centerless progression
 
 ## Related Concepts
 
-- **Prerequisite**: minor-third, diminished-seventh-chord, enharmonic-equivalence
+- **Prerequisite**: minor-triad, diminished-seventh-chord, enharmonic-equivalence
 - **Leads to**: octatonic-scale, enharmonic-modulation, chromatic-harmony
 - **See also**: equal-divisions-of-the-octave, tritone-division, symmetrical-pitch-collection
 

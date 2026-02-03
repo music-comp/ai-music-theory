@@ -130,9 +130,9 @@ Both: Descending character, mediant emphasis, variation potential
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, opening-gambit, ground-bass, descending-bass, scale-degree, submediant
-- **Leads to**: meyer, pastorella, jupiter, renaissance-grounds, variation-forms
-- **See also**: ground-bass, ostinato, descending-tetrachord, historical-schemas
+- **Prerequisite**: galant-schema, ground-bass, scale-degree
+- **Leads to**: meter
+- **See also**: ground-bass, ostinato
 
 ## Common Confusions
 

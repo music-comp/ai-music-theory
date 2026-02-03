@@ -210,7 +210,7 @@ New interpretation becomes clear at resolution
 ## Related Concepts
 
 - **Prerequisite**: diminished-seventh-chord, diminished-seventh-symmetry, enharmonic-modulation, pivot-chord
-- **Leads to**: multiple-diminished-seventh-resolutions, chromatic-modulation, distant-modulation
+- **Leads to**: multiple-diminished-seventh-resolutions, chromatic-modulation, direct-modulation
 - **See also**: enharmonic-equivalence, leading-tone-chord, applied-chord
 
 ## Common Confusions

@@ -60,8 +60,8 @@ Most Classical-period melodies use primarily notes from a single major or minor 
 ## Related Concepts
 
 - **Prerequisite**: pitch, half-step, whole-step, octave-equivalence
-- **Leads to**: major-scale, minor-scale, mode, chromatic-scale, key, tonic, scale-degree
-- **See also**: collection, pitch-class-set, tonality, key-signature
+- **Leads to**: major-scale, minor-scale, mode, chromatic-scale, scale-degree
+- **See also**: pitch-class-set, tonality, key-signature
 
 ## Common Confusions
 

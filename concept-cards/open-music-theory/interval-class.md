@@ -97,7 +97,7 @@ On the clock face, IC = shorter arc between two points:
 
 - **Prerequisite**: pitch-class, ordered-pitch-class-interval, semitone
 - **Leads to**: interval-vector, set-class, z-relation
-- **See also**: interval-types-integer, clock-face-representation, interval-class-content
+- **See also**: interval-types-integer, interval-class-content
 
 ## Common Confusions
 

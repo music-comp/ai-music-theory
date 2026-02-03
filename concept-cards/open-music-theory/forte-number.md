@@ -107,8 +107,8 @@ Larger sets:
 ## Related Concepts
 
 - **Prerequisite**: set-class, prime-form, interval-vector
-- **Leads to**: set-class-table, z-relation
-- **See also**: cardinality, allen-forte, the-structure-of-atonal-music
+- **Leads to**: z-relation
+- **See also**: cardinality
 
 ## Common Confusions
 

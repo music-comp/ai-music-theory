@@ -211,9 +211,9 @@ Rotate to any starting point = same chord
 
 ## Related Concepts
 
-- **Prerequisite**: diminished-seventh-chord, minor-third, enharmonic-equivalence, interval-symmetry
+- **Prerequisite**: diminished-seventh-chord, minor-triad, enharmonic-equivalence, inversional-symmetry
 - **Leads to**: enharmonic-modulation, diminished-seventh-pivot, omnibus-progression
-- **See also**: augmented-triad-symmetry, equal-division, chromatic-sequence
+- **See also**: augmented-triad-symmetry, chromatic-sequence
 
 ## Common Confusions
 

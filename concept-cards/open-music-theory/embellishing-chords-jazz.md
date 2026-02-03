@@ -51,8 +51,7 @@ With applied ii-V: The C7 chord is embellished by adding Gm7 before it, creating
 
 ## Related Concepts
 
-- **Prerequisite**: applied-chord, ii-v-i-progression, chord-progression
-- **Leads to**: jazz-reharmonization, chord-substitution, arranging
+- **Prerequisite**: applied-chord, ii-v-i-progression
 - **See also**: common-tone-diminished-seventh, passing-chord, neighboring-chord
 
 ## Common Confusions

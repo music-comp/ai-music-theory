@@ -160,9 +160,9 @@ E♭ → G in bass (chromatic mediant relationship)
 
 ## Related Concepts
 
-- **Prerequisite**: mediant, modal-mixture, borrowed-chord, parallel-keys
-- **Leads to**: chromatic-mediant, chromatic-third-relations
-- **See also**: flat-VI-chord, flat-VII-chord, chromatic-harmony
+- **Prerequisite**: modal-mixture, borrowed-chord, parallel-keys
+- **Leads to**: chromatic-mediant, chromatic-third-relation
+- **See also**: chromatic-harmony
 
 ## Common Confusions
 

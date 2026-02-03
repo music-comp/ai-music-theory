@@ -66,9 +66,9 @@ The bass line in Pachelbel's Canon uses primarily root position and first invers
 
 ## Related Concepts
 
-- **Prerequisite**: triad, seventh-chord, bass-voice, chord
-- **Leads to**: root-position, first-inversion, second-inversion, third-inversion, figured-bass, voice-leading
-- **See also**: chord-symbol, bass-line, harmonic-function
+- **Prerequisite**: triad, seventh-chord, chord
+- **Leads to**: root-motion, triad-inversions, figured-bass, voice-leading
+- **See also**: harmonic-function
 
 ## Common Confusions
 

@@ -192,8 +192,6 @@ But shows tendency toward parameter control
 ## Related Concepts
 
 - **Prerequisite**: twelve-tone-row, serialism, row-operations
-- **Leads to**: post-serial-music, aleatoric-music, electronic-music
-- **See also**: Darmstadt, Babbitt, Boulez, Stockhausen
 
 ## Common Confusions
 

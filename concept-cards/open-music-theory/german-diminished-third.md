@@ -179,9 +179,9 @@ Bass:     C   F#      G   C
 
 ## Related Concepts
 
-- **Prerequisite**: german-sixth, diminished-third-interval, voice-leading-inversion
-- **Leads to**: chromatic-bass-lines, applied-diminished-seventh
-- **See also**: vii-diminished-seventh, predominant-function, chromatic-approach
+- **Prerequisite**: german-sixth, voice-leading-definition
+- **Leads to**: half-diminished-seventh
+- **See also**: pre-dominant-function
 
 ## Common Confusions
 

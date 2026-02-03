@@ -168,9 +168,8 @@ became foundation of post-war avant-garde
 
 ## Related Concepts
 
-- **Prerequisite**: tonality, atonality, chromaticism
+- **Prerequisite**: tonality, atonality
 - **Leads to**: twelve-tone-row, serialism, total-serialism
-- **See also**: expressionism, Schoenberg, Webern, Berg
 
 ## Common Confusions
 

@@ -112,9 +112,9 @@ Cadences emphasize dominant → tonic motion. Pre-dominant chords (subdominant) 
 
 ## Related Concepts
 
-- **Prerequisite**: scale, scale-degree, major-scale, minor-scale, tonic
-- **Leads to**: roman-numeral-analysis, harmonic-function, tendency-tones, cadence
-- **See also**: solfege, tonic-triad, dominant-seventh, functional-harmony
+- **Prerequisite**: scale, scale-degree, major-scale, minor-scale
+- **Leads to**: roman-numeral-analysis, harmonic-function, cadence
+- **See also**: solfege, dominant-seventh-chord
 
 ## Common Confusions
 

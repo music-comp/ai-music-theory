@@ -172,9 +172,9 @@ Period ends with PAC (complete closure)
 
 ## Related Concepts
 
-- **Prerequisite**: cadence, dominant, tonic, V-I-progression, root-position, voice-leading
-- **Leads to**: half-cadence, deceptive-cadence, plagal-cadence, phrase-structure, period
-- **See also**: perfect-cadence, imperfect-cadence, formal-closure, essential-expositional-closure
+- **Prerequisite**: cadence, ii-v-i-progression, root-motion, voice-leading
+- **Leads to**: half-cadence, deceptive-cadence, plagal-cadence, srdc-phrase-structure, period
+- **See also**: essential-expositional-closure
 
 ## Common Confusions
 

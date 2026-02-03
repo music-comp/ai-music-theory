@@ -200,9 +200,9 @@ Fast section begins with resolution
 
 ## Related Concepts
 
-- **Prerequisite**: half-cadence, minor-key, iv-chord, first-inversion, Phrygian-mode
-- **Leads to**: minor-key-cadences, Baroque-cadence-types, modal-cadence
-- **See also**: iv6-V, la-in-bass, chromatic-bass-descent, Phrygian-cadence
+- **Prerequisite**: half-cadence, pivot-chord
+- **Leads to**: basic-cadence-types, half-cadence
+- **See also**: phrygian-cadence
 
 ## Common Confusions
 

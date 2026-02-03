@@ -82,7 +82,7 @@ Function: ...6   7   8=1   2   3   4   5   6   7   8
 ## Related Concepts
 
 - **Prerequisite**: period, phrase, hierarchical-metric-organization, auftakttheorie
-- **Leads to**: phrase-expansion, formal-analysis, metric-analysis
+- **Leads to**: phrase-expansion
 - **See also**: schlusswirkung, harmoniewirkung, vorhang
 
 ## Common Confusions

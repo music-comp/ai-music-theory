@@ -109,8 +109,8 @@ Twelve-tone music fully embraces inversional equivalence through inversionally r
 ## Related Concepts
 
 - **Prerequisite**: transposition, pitch-space, voice-leading
-- **Leads to**: neo-riemannian-transformations, set-theory, twelve-tone-theory
-- **See also**: harmonic-dualism, voice-leading-efficiency, contrapuntal-dualism
+- **Leads to**: secondary-neo-riemannian-transformations
+- **See also**: harmonic-dualism, voice-leading-efficiency
 
 ## Common Confusions
 

@@ -68,9 +68,9 @@ Approaching a perfect octave:
 
 ## Related Concepts
 
-- **Prerequisite**: voice, melody, interval, motion
-- **Leads to**: voice-leading, voice-independence, parallel-motion, similar-motion, oblique-motion
-- **See also**: counterpoint, species-counterpoint, independence
+- **Prerequisite**: interval
+- **Leads to**: voice-leading, parallel-motion, similar-motion, oblique-motion
+- **See also**: counterpoint, species-counterpoint
 
 ## Common Confusions
 

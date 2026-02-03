@@ -136,9 +136,9 @@ The seam helps visualize:
 
 ## Related Concepts
 
-- **Prerequisite**: just-intonation, Tonnetz, equal-temperament
+- **Prerequisite**: tonnetz
 - **Leads to**: enharmonic-equivalence, regional-space
-- **See also**: Oettingens-Harmoniesystem, Buchstabentonschrift
+- **See also**: oettingens-harmoniesystem
 
 ## Common Confusions
 

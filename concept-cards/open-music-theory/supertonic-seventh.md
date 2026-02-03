@@ -212,9 +212,9 @@ Both lead to V⁷
 
 ## Related Concepts
 
-- **Prerequisite**: supertonic, seventh-chord, predominant-function, voice-leading, resolution
-- **Leads to**: predominant-expansion, circle-of-fifths, seventh-chord-progressions
-- **See also**: dominant-seventh-chord, subdominant, ii-chord, mm7-chord
+- **Prerequisite**: seventh-chord, pre-dominant-function, voice-leading
+- **Leads to**: circle-of-fifths, seventh-chord-resolution
+- **See also**: dominant-seventh-chord
 
 ## Common Confusions
 

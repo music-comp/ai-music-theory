@@ -117,9 +117,9 @@ The C major second subject relates to A minor tonic by R:
 
 ## Related Concepts
 
-- **Prerequisite**: relative-keys, triad, diatonic-scale
-- **Leads to**: function-theory, tonnetz, neo-riemannian-analysis
-- **See also**: parallel-transformation, leittonwechsel, scheinkonsonanzen
+- **Prerequisite**: relative-keys, triad, hexatonic-scale
+- **Leads to**: tonnetz
+- **See also**: parallel-transformation, leittonwechsel
 
 ## Common Confusions
 

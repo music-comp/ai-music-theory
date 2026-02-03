@@ -173,8 +173,8 @@ AVOID:
 ## Related Concepts
 
 - **Prerequisite**: twelve-tone-row, row-matrix, row-operations
-- **Leads to**: serialism-history, total-serialism, compositional-practice
-- **See also**: set-theory-analysis, form-analysis, motivic-analysis
+- **Leads to**: total-serialism
+- **See also**: set-theory-analysis
 
 ## Common Confusions
 

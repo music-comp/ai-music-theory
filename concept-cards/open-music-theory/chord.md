@@ -71,9 +71,9 @@ Bach chorales: four-voice triads and seventh chords in functional progressions. 
 
 ## Related Concepts
 
-- **Prerequisite**: pitch-class, harmonic-interval, simultaneity
-- **Leads to**: triad, seventh-chord, chord-progression, harmony, voice-leading
-- **See also**: chord-quality, chord-inversion, chord-symbol, tertian-harmony
+- **Prerequisite**: pitch-class, harmonic-interval
+- **Leads to**: triad, seventh-chord, voice-leading
+- **See also**: chord-quality, ninth-chord-inversion, serial-harmony
 
 ## Common Confusions
 

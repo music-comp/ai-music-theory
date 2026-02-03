@@ -182,9 +182,8 @@ Fux's _Gradus ad Parnassum_ second-species exercises demonstrate all seven patte
 
 ## Related Concepts
 
-- **Prerequisite**: second-species, consonance, passing-tone, stepwise-motion, leap
-- **Leads to**: third-species, embellishment, melodic-variety, non-harmonic-tones
-- **See also**: dissonant-passing-tone, weak-beat-treatment, voice-leading-patterns
+- **Prerequisite**: second-species, consonance, passing-tone
+- **Leads to**: third-species, nonharmonic-tones
 
 ## Common Confusions
 

@@ -219,9 +219,9 @@ Classic minor-key cadence
 
 ## Related Concepts
 
-- **Prerequisite**: seventh-chord, diminished-triad, predominant-function, minor-key, voice-leading
-- **Leads to**: jazz-harmony, ii-V-i-minor, diminished-seventh-chord
-- **See also**: fully-diminished-seventh, m7♭5-chord, supertonic-seventh-minor
+- **Prerequisite**: seventh-chord, diminished-triad, pre-dominant-function, voice-leading
+- **Leads to**: diminished-seventh-chord
+- **See also**: fully-diminished-seventh-chord
 
 ## Common Confusions
 

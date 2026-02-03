@@ -79,9 +79,9 @@ Chopin's "Minute Waltz" uses rapid sixteenth notes. Bach's Preludes often featur
 
 ## Related Concepts
 
-- **Prerequisite**: note, notehead, stem, flag, beam, rhythm
+- **Prerequisite**: note, rhythm
 - **Leads to**: rest-values, dot, tie, meter, beat, tempo
-- **See also**: duration, hierarchical-values, beaming, tuplet
+- **See also**: tuplet
 
 ## Common Confusions
 

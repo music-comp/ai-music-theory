@@ -64,9 +64,9 @@ Soprano vocal range typically extends from C4 to C6. Tenor range typically A2 to
 
 ## Related Concepts
 
-- **Prerequisite**: pitch, octave, octave-equivalence, staff
-- **Leads to**: pitch-class, frequency, scientific-pitch, transposition
-- **See also**: middle-c, octave-designation, enharmonic-equivalence
+- **Prerequisite**: pitch, octave-equivalence, staff
+- **Leads to**: pitch-class, transposition
+- **See also**: middle-c, enharmonic-equivalence
 
 ## Common Confusions
 

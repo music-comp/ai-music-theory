@@ -175,9 +175,9 @@ End overwhelming
 
 ## Related Concepts
 
-- **Prerequisite**: orchestral-crescendo, timbre, acoustics, spectral-content
-- **Leads to**: spectral-orchestration, timbral-nuance, dramatic-building
-- **See also**: dynamics, instrumentation, muted-instruments
+- **Prerequisite**: orchestral-crescendo
+- **Leads to**: timbral-cadence
+- **See also**: dynamics
 
 ## Common Confusions
 

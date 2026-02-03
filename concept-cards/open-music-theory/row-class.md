@@ -157,7 +157,7 @@ Row forms can:
 
 - **Prerequisite**: twelve-tone-row, row-operations, transposition
 - **Leads to**: row-matrix, row-symmetry, twelve-tone-analysis
-- **See also**: invariance, combinatoriality
+- **See also**: invariants, combinatoriality
 
 ## Common Confusions
 

@@ -144,9 +144,9 @@ Ascending line increases tension toward cadence
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, pre-cadential, subdominant-prolongation, chromatic-voice-leading, half-cadence, secondary-dominant
-- **Leads to**: converging-cadence, fa-fi-sol-cadence, prolongation-techniques
-- **See also**: pedal-point, bass-pedal, delayed-resolution, chromatic-approach
+- **Prerequisite**: galant-schema, dominant-prolongation, chromatic-voice-motion, half-cadence, secondary-dominant
+- **Leads to**: converging-cadence-schema
+- **See also**: pedal-point
 
 ## Common Confusions
 

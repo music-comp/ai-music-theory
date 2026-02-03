@@ -248,9 +248,9 @@ No pivot needed
 
 ## Related Concepts
 
-- **Prerequisite**: modulation, phrase-boundary, cadence, tonal-center, key-change
-- **Leads to**: abrupt-modulation, phrase-modulation, sectional-modulation
-- **See also**: common-chord-modulation, pivot-chord, formal-boundary, truck-driver-modulation
+- **Prerequisite**: modulation, cadence, tonal-center
+- **Leads to**: area-modulation, area-modulation, sequential-modulation
+- **See also**: common-chord-modulation, pivot-chord
 
 ## Common Confusions
 

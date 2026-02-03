@@ -272,9 +272,9 @@ Creates descending sequence of keys
 
 ## Related Concepts
 
-- **Prerequisite**: secondary-dominant, harmonic-function, chromatic-voice-leading
+- **Prerequisite**: secondary-dominant, harmonic-function, chromatic-voice-motion
 - **Leads to**: chromatic-sequence, extended-tonicization
-- **See also**: deceptive-cadence, harmonic-substitution, applied-chord
+- **See also**: deceptive-cadence, applied-chord
 
 ## Common Confusions
 

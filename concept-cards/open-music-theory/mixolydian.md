@@ -64,8 +64,8 @@ The Beatles' "Norwegian Wood" uses Mixolydian mode. Traditional Irish and Scotti
 ## Related Concepts
 
 - **Prerequisite**: scale, mode, major-scale, whole-step, half-step
-- **Leads to**: modal-jazz, folk-music, blues-scale, dominant-seventh-chord
-- **See also**: ionian, dorian, diatonic-modes, modal-brightness, subtonic
+- **Leads to**: blues-scale, dominant-seventh-chord
+- **See also**: ionian, dorian, diatonic-modes, subtonic
 
 ## Common Confusions
 

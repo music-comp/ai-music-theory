@@ -108,9 +108,9 @@ These are **geometric duals**: labels of one graph become nodes of the other.
 
 ## Related Concepts
 
-- **Prerequisite**: triad, interval, just-intonation, equal-temperament
-- **Leads to**: PLR-transformations, hexatonic-systems, voice-leading-graph, regional-space
-- **See also**: Oettingens-Harmoniesystem, enharmonic-equivalence, tonal-pitch-space
+- **Prerequisite**: triad, interval
+- **Leads to**: plr-transformations, hexatonic-systems, voice-leading-graph, regional-space
+- **See also**: oettingens-harmoniesystem, enharmonic-equivalence, tonal-pitch-space
 
 ## Common Confusions
 

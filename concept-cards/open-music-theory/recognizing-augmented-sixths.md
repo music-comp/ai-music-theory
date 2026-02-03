@@ -227,9 +227,9 @@ Analysis practice in:
 
 ## Related Concepts
 
-- **Prerequisite**: augmented-sixth-chords, scale-degree-identification, harmonic-analysis
+- **Prerequisite**: augmented-sixth-chords
 - **Leads to**: italian-sixth, french-sixth, german-sixth
-- **See also**: interval-recognition, chord-identification, predominant-function
+- **See also**: pre-dominant-function
 
 ## Common Confusions
 

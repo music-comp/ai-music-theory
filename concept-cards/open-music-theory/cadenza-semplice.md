@@ -149,9 +149,9 @@ Semplice = galant realization of this progression
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, authentic-cadence, pre-dominant, dominant, tonic, scale-degree
-- **Leads to**: cadenza-composta, cadenza-doppia, expanded-cadences
-- **See also**: ii-V-I-progression, standard-cadence, phrase-closure
+- **Prerequisite**: galant-schema, authentic-cadence, scale-degree
+- **Leads to**: cadenza-composta, evaded-cadence
+- **See also**: ii-v-i-progression
 
 ## Common Confusions
 

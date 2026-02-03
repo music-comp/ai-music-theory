@@ -102,9 +102,9 @@ The subject serves crucial structural and expressive functions:
 
 ## Related Concepts
 
-- **Prerequisite**: melody, theme, motive, tonality, key, cadence
-- **Leads to**: answer, countersubject, exposition, episode, stretto, inversion, augmentation, diminution
-- **See also**: fugue, kopfmotiv, fortspinnung, head-motive, imitation
+- **Prerequisite**: motive, tonality, cadence
+- **Leads to**: countersubject, exposition, stretto, inversion, fragmentation
+- **See also**: fugue, imitation
 
 ## Common Confusions
 

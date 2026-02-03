@@ -95,9 +95,8 @@ Active: The entire progression aims at the final tonic resolution
 
 ## Related Concepts
 
-- **Prerequisite**: listening, cognition, musical-aesthetics
-- **Leads to**: auftakttheorie, schlusswirkung, goal-directed-motion
-- **See also**: expressed-meter, harmonic-function, musical-logic
+- **Leads to**: auftakttheorie, schlusswirkung
+- **See also**: expressed-meter, harmonic-function
 
 ## Common Confusions
 

@@ -104,8 +104,7 @@ B-D-F in C major:
 ## Related Concepts
 
 - **Prerequisite**: overtone-series, undertone-series, klang
-- **Leads to**: characteristic-dissonances, function-theory, resolution
-- **See also**: tonvorstellungen, klang-representation, helmholtz-critique
+- **See also**: tonvorstellungen, klang-representation
 
 ## Common Confusions
 

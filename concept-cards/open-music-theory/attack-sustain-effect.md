@@ -187,9 +187,9 @@ Through dynamic contrast
 
 ## Related Concepts
 
-- **Prerequisite**: orchestration, articulation, timbre, acoustics
-- **Leads to**: subtle-color-changes, timbral-nuance, orchestral-texture
-- **See also**: doublings, pizzicato, harp-writing, dynamics
+- **Prerequisite**: articulation
+- **Leads to**: timbral-cadence
+- **See also**: dynamics
 
 ## Common Confusions
 

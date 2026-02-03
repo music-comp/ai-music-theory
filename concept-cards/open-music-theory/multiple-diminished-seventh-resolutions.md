@@ -228,7 +228,7 @@ Creates tension through ambiguity
 
 - **Prerequisite**: diminished-seventh-chord, diminished-seventh-symmetry, enharmonic-equivalence, leading-tone
 - **Leads to**: diminished-seventh-pivot, enharmonic-modulation, omnibus-progression
-- **See also**: tendency-tone, chromatic-modulation, chromatic-harmony
+- **See also**: chromatic-modulation, chromatic-harmony
 
 ## Common Confusions
 

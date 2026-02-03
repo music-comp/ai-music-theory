@@ -63,8 +63,8 @@ Melodic intervals shape melodic contour and character:
 ## Related Concepts
 
 - **Prerequisite**: pitch, interval, staff, note
-- **Leads to**: melody, melodic-contour, voice-leading, stepwise-motion, leap
-- **See also**: harmonic-interval, interval-size, interval-quality, conjunct-motion, disjunct-motion
+- **Leads to**: voice-leading
+- **See also**: harmonic-interval, intervals, interval-quality
 
 ## Common Confusions
 

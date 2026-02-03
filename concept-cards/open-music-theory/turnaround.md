@@ -48,9 +48,9 @@ Turnarounds appear at the end of virtually every jazz standard's form. "Rhythm C
 
 ## Related Concepts
 
-- **Prerequisite**: ii-v-i-progression, applied-chord, phrase-structure
-- **Leads to**: tritone-substitution, jazz-reharmonization, tag-ending
-- **See also**: cadence, form-in-jazz, rhythm-changes
+- **Prerequisite**: ii-v-i-progression, applied-chord, srdc-phrase-structure
+- **Leads to**: tritone-substitution
+- **See also**: cadence
 
 ## Common Confusions
 

@@ -110,9 +110,9 @@ Both partition the 24 triads but with different cyclic structures.
 
 ## Related Concepts
 
-- **Prerequisite**: PLR-transformations, parsimonious-trichords, augmented-triad
+- **Prerequisite**: plr-transformations, parsimonious-trichords, augmented-triad
 - **Leads to**: maximally-smooth-cycles, chromatic-transformation-networks
-- **See also**: octatonic-systems, hexatonic-collection, Weitzmann-augmented-triad
+- **See also**: octatonic-systems, hexatonic-collection
 
 ## Common Confusions
 

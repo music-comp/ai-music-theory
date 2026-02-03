@@ -145,8 +145,7 @@ Wason and Marvin's standard translation "imagination of tone" captures creative/
 ## Related Concepts
 
 - **Prerequisites**: Empfindung, psychology, Klang
-- **Leads to**: harmonic-function, musical-logic, phenomenology
-- **See also**: Tonphantasie, Helmholtz, Frege
+- **Leads to**: harmonic-function
 
 ## Common Confusions
 

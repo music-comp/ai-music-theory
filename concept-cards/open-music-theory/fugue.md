@@ -97,9 +97,9 @@ The fugue serves as the pinnacle of Baroque contrapuntal technique:
 
 ## Related Concepts
 
-- **Prerequisite**: counterpoint, imitation, voice, subject, answer, transposition, modulation
-- **Leads to**: exposition, countersubject, episode, stretto, inversion, augmentation, diminution, retrograde
-- **See also**: invention, canon, ricercar, toccata, high-baroque, species-counterpoint
+- **Prerequisite**: counterpoint, imitation, transposition, modulation
+- **Leads to**: exposition, countersubject, stretto, inversion, fragmentation, retrograde
+- **See also**: canzona, ricercar, toccata, species-counterpoint
 
 ## Common Confusions
 

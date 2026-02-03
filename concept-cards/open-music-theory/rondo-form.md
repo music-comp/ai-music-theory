@@ -215,8 +215,8 @@ Character contrast as important as tonal contrast
 ## Related Concepts
 
 - **Prerequisite**: phrase, period, sentence, binary-form, ternary-form, modulation, key-relationships, cadence
-- **Leads to**: sonata-rondo, theme-and-variations, ritornello-form, compound-forms
-- **See also**: refrain, episode, retransition, finale-forms, dance-forms
+- **Leads to**: sonata-rondo, theme-and-variations, ritornello
+- **See also**: refrain, retransition
 
 ## Common Confusions
 

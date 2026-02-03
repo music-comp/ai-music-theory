@@ -147,9 +147,9 @@ timbrally varied melodic presentation
 
 ## Related Concepts
 
-- **Prerequisite**: orchestration, timbre, twelve-tone-row
-- **Leads to**: pointillism, total-serialism, spectral-music
-- **See also**: texture, instrumentation, second-viennese-school
+- **Prerequisite**: twelve-tone-row
+- **Leads to**: total-serialism
+- **See also**: texture, second-viennese-school
 
 ## Common Confusions
 

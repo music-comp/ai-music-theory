@@ -57,9 +57,9 @@ Most traditional blues lyrics follow this pattern, though variations exist (ABC,
 
 ## Related Concepts
 
-- **Prerequisite**: 12-bar-blues, phrase-structure, verse
-- **Leads to**: blues-lyrics, songwriting, verse-chorus-form
-- **See also**: call-and-response, repetition, blues-poetry
+- **Prerequisite**: 12-bar-blues, srdc-phrase-structure
+- **Leads to**: unison-writing, verse-chorus-form
+- **See also**: call-and-response
 
 ## Common Confusions
 

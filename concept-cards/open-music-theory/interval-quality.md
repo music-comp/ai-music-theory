@@ -69,7 +69,7 @@ Augmented fourth/tritone: "The Simpsons" theme, "Maria" from West Side Story
 ## Related Concepts
 
 - **Prerequisite**: interval, half-step, major-scale, generic-interval
-- **Leads to**: consonance-dissonance, chord-quality, augmented-interval, diminished-interval, major-third, minor-third, perfect-fifth
+- **Leads to**: consonance-dissonance, chord-quality, major-triad, minor-triad, perfect-fourth
 - **See also**: interval-inversion, semitone, chromatic-alteration
 
 ## Common Confusions

@@ -153,9 +153,8 @@ Matched timbral qualities produce unified sound
 
 ## Related Concepts
 
-- **Prerequisite**: instrumentation, voice-leading, register, chord-voicing
-- **Leads to**: orchestral-texture, timbral-contrast, doublings
-- **See also**: orchestral-spacing, tessitura, instrumental-balance
+- **Prerequisite**: voice-leading
+- **See also**: orchestral-spacing
 
 ## Common Confusions
 

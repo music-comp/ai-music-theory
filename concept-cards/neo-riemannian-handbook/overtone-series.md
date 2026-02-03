@@ -83,9 +83,9 @@ In a two-voice passage in G minor with Eb-G (example in Riemann's text):
 
 ## Related Concepts
 
-- **Prerequisite**: acoustics, frequency, consonance
-- **Leads to**: undertone-series, harmonic-dualism, combination-tones
-- **See also**: klang, klang-representation, just-intonation
+- **Prerequisite**: consonance
+- **Leads to**: undertone-series, harmonic-dualism, combination-cycles
+- **See also**: klang, klang-representation
 
 ## Common Confusions
 

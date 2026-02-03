@@ -193,9 +193,9 @@ More color, still subdominant function
 
 ## Related Concepts
 
-- **Prerequisite**: cadence, subdominant, IV-chord, I-chord, harmonic-function, hymn
-- **Leads to**: post-cadential-extension, amen-cadence, subdominant-function
-- **See also**: authentic-cadence, modal-cadence, renaissance-cadence
+- **Prerequisite**: cadence, pivot-chord, chord, harmonic-function
+- **Leads to**: cadential-extension, dominant-function
+- **See also**: authentic-cadence, half-cadence
 
 ## Common Confusions
 

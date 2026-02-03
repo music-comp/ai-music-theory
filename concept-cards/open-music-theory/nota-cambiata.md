@@ -128,8 +128,8 @@ The nota cambiata is primarily a pedagogical figure from species counterpoint:
 
 ## Related Concepts
 
-- **Prerequisite**: third-species, dissonance, passing-tone, stepwise-motion, leap
-- **Leads to**: free-counterpoint, melodic-figures, renaissance-counterpoint
+- **Prerequisite**: third-species, dissonance, passing-tone
+- **Leads to**: free-counterpoint
 - **See also**: double-neighbor, escape-tone, changing-tones
 
 ## Common Confusions

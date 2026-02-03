@@ -124,8 +124,8 @@ Possible reasons for decline:
 ## Related Concepts
 
 - **Prerequisites**: meter, phrase, period, sentence
-- **Leads to**: form, metric-hierarchy, hypermeter
-- **See also**: harmonic-function, musical-logic, performance-practice
+- **Leads to**: hypermeter
+- **See also**: harmonic-function
 
 ## Common Confusions
 

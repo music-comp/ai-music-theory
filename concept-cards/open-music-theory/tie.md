@@ -56,9 +56,9 @@ The opening of "The Star-Spangled Banner" uses a tie to create anticipation: the
 
 ## Related Concepts
 
-- **Prerequisite**: note, rhythm, duration, pitch
-- **Leads to**: syncopation, suspension, anticipation, barline
-- **See also**: dot, slur, legato, articulation
+- **Prerequisite**: note, rhythm, pitch
+- **Leads to**: syncopation, suspension, anticipation
+- **See also**: dot, articulation
 
 ## Common Confusions
 

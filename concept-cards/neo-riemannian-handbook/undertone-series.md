@@ -112,9 +112,9 @@ These series do not require verification by way of acoustical phenomena."
 
 ## Related Concepts
 
-- **Prerequisite**: overtone-series, frequency, wavelength
+- **Prerequisite**: overtone-series
 - **Leads to**: harmonic-dualism, klang, tonvorstellungen
-- **See also**: phonic-overtone, tonic-fundamental, minor-root-problem
+- **See also**: minor-root-problem
 
 ## Common Confusions
 

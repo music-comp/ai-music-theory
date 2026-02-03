@@ -184,8 +184,8 @@ Dramatic chromatic approach to cadence
 ## Related Concepts
 
 - **Prerequisite**: augmented-sixth-chords, italian-sixth, french-sixth, cadential-six-four
-- **Leads to**: german-diminished-third, chromatic-modulation, enharmonic-reinterpretation
-- **See also**: dominant-seventh, parallel-fifths, predominant-prolongation
+- **Leads to**: german-diminished-third, chromatic-modulation
+- **See also**: dominant-seventh-chord, parallel-fifths, dominant-prolongation
 
 ## Common Confusions
 

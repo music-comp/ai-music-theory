@@ -69,9 +69,9 @@ Beethoven's Fifth Symphony uses dramatic rests to create tension. Jazz musicians
 
 ## Related Concepts
 
-- **Prerequisite**: note-values, rhythm, duration, silence
+- **Prerequisite**: note-values, rhythm
 - **Leads to**: meter, anacrusis, syncopation, phrase, articulation
-- **See also**: dot, multi-measure-rest, fermata
+- **See also**: dot, fermata
 
 ## Common Confusions
 

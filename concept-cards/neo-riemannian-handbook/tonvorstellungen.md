@@ -102,8 +102,7 @@ Stumpf's fusion theory cannot explain this. Riemann's answer: The mind cannot as
 ## Related Concepts
 
 - **Prerequisite**: harmonic-dualism, klang, consonance-dissonance
-- **Leads to**: klang-representation, function-theory, active-listening
-- **See also**: tonempfindungen, tone-psychology, gestalt
+- **Leads to**: klang-representation
 
 ## Common Confusions
 

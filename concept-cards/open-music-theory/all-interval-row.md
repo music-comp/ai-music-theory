@@ -129,9 +129,9 @@ When analyzing, check:
 
 ## Related Concepts
 
-- **Prerequisite**: twelve-tone-row, interval-class, overlapping-segments
-- **Leads to**: row-properties, derived-row, all-trichord-row
-- **See also**: interval-vector, chromatic-wedge
+- **Prerequisite**: twelve-tone-row, interval-class
+- **Leads to**: derived-row, all-trichord-row
+- **See also**: interval-vector
 
 ## Common Confusions
 

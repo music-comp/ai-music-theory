@@ -231,8 +231,8 @@ Actually smoother than G7 to C!
 
 ## Related Concepts
 
-- **Prerequisite**: interval, augmented-fourth, diminished-fifth, dominant-seventh
-- **Leads to**: tritone-substitution, bartok-axis-system, polytonality
+- **Prerequisite**: interval, dominant-seventh-chord
+- **Leads to**: tritone-substitution, polytonality
 - **See also**: equal-divisions-of-the-octave, symmetrical-pitch-collection, diminished-seventh-chord
 
 ## Common Confusions

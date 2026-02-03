@@ -250,8 +250,8 @@ G -> G, C -> B, E -> D, G -> G
 ## Related Concepts
 
 - **Prerequisite**: augmented-sixth-chords, voice-leading, contrary-motion
-- **Leads to**: chromatic-voice-leading, cadential-intensification
-- **See also**: parallel-fifth-avoidance, cadential-six-four, predominant-to-dominant
+- **Leads to**: chromatic-voice-motion
+- **See also**: cadential-six-four
 
 ## Common Confusions
 

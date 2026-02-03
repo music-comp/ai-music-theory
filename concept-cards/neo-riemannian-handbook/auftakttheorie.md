@@ -82,9 +82,8 @@ Every level shows the same upbeat-to-downbeat pattern.
 
 ## Related Concepts
 
-- **Prerequisite**: meter, hypermeter, accent, upbeat, downbeat, phrase
-- **Leads to**: expressed-meter, schlusswirkung, harmoniewirkung, metric-hierarchy
-- **See also**: period-structure, phrase-rhythm, metric-prototype
+- **Prerequisite**: meter, hypermeter, beat, phrase
+- **Leads to**: expressed-meter, schlusswirkung, harmoniewirkung
 
 ## Common Confusions
 

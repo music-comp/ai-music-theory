@@ -171,8 +171,8 @@ Twelve-tone technique doesn't dictate:
 ## Related Concepts
 
 - **Prerequisite**: twelve-tone-row, triad, tonality
-- **Leads to**: twelve-tone-composition, Berg, post-tonal-harmony
-- **See also**: second-viennese-school, neo-tonality, jazz-harmony
+- **Leads to**: twelve-tone-composition, post-tonal-theory
+- **See also**: second-viennese-school
 
 ## Common Confusions
 

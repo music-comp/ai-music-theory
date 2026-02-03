@@ -131,9 +131,9 @@ Mozart, Haydn: Use direct fifths/octaves at cadences, mitigated by stepwise moti
 
 ## Related Concepts
 
-- **Prerequisite**: perfect-consonance, similar-motion, parallel-motion, voice-leading, fifth, octave
-- **Leads to**: parallel-fifths-octaves, voice-independence, contrary-motion-preference
-- **See also**: species-counterpoint, first-species, hidden-parallelism, cadence
+- **Prerequisite**: similar-motion, parallel-motion, voice-leading
+- **Leads to**: parallel-fifths-octaves
+- **See also**: species-counterpoint, first-species, cadence
 
 ## Common Confusions
 

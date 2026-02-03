@@ -167,9 +167,7 @@ Warm, unified accompaniment sound
 
 ## Related Concepts
 
-- **Prerequisite**: instrumentation, orchestral-blend, register, balance
-- **Leads to**: orchestral-texture, timbral-contrast, color-changes
-- **See also**: tessitura, voicing, instrumental-range
+- **Prerequisite**: orchestral-blend
 
 ## Common Confusions
 

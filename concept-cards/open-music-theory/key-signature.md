@@ -58,9 +58,9 @@ Beethoven's Fifth Symphony is in C minor (three flats: B♭, E♭, A♭). Mozart
 
 ## Related Concepts
 
-- **Prerequisite**: major-scale, accidental, clef, sharp, flat
+- **Prerequisite**: major-scale, accidental, clef
 - **Leads to**: circle-of-fifths, relative-major-minor, transposition, modulation
-- **See also**: tonic, key, tonality, mode
+- **See also**: tonality, mode
 
 ## Common Confusions
 

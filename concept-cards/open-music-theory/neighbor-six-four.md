@@ -246,9 +246,9 @@ Returns to I
 
 ## Related Concepts
 
-- **Prerequisite**: second-inversion, neighbor-tone, pedal-tone, I-chord, weak-beat
-- **Leads to**: cadential-six-four, passing-six-four, arpeggiating-six-four, prolongation
-- **See also**: pedal-six-four, neighbor-motion, embellishing-six-four, auxiliary-six-four
+- **Prerequisite**: neighbor-tone, chord
+- **Leads to**: cadential-six-four, passing-six-four, tonic-prolongation
+- **See also**: neighbor-motion
 
 ## Common Confusions
 

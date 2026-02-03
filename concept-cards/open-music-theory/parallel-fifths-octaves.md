@@ -210,9 +210,9 @@ Not parallel (contrary motion), acceptable
 
 ## Related Concepts
 
-- **Prerequisite**: voice-leading, perfect-intervals, interval-quality, SATB, parallel-motion
-- **Leads to**: voice-leading-errors, contrary-motion, oblique-motion, chorale-writing
-- **See also**: hidden-fifths-octaves, direct-fifths-octaves, voice-independence
+- **Prerequisite**: voice-leading, perfect-intervals, interval-quality, satb, parallel-motion
+- **Leads to**: voice-leading-work, contrary-motion, oblique-motion
+- **See also**: direct-fifths-octaves
 
 ## Common Confusions
 

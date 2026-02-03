@@ -125,9 +125,9 @@ The Doppelklänge principle enables neo-Riemannian analysis of:
 
 ## Related Concepts
 
-- **Prerequisite**: Klang, seventh-chord, voice-leading, parsimonious-trichords
-- **Leads to**: chromatic-transformation-networks, DOUTH2, set-class
-- **See also**: hexatonic-systems, neo-Riemannian-operations
+- **Prerequisite**: klang, seventh-chord, voice-leading, parsimonious-trichords
+- **Leads to**: chromatic-transformation-networks, set-class
+- **See also**: hexatonic-systems, neo-riemannian-operations
 
 ## Common Confusions
 

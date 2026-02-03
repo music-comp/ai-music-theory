@@ -104,9 +104,9 @@ Ternary form serves important structural functions:
 
 ## Related Concepts
 
-- **Prerequisite**: phrase, section, binary-form, modulation, contrast, repetition
-- **Leads to**: compound-ternary, minuet-and-trio, scherzo-and-trio, da-capo-aria
-- **See also**: ABA-form, simple-ternary, composite-form, rounded-binary
+- **Prerequisite**: phrase, binary-form, modulation
+- **Leads to**: compound-ternary
+- **See also**: rounded-binary
 
 ## Common Confusions
 

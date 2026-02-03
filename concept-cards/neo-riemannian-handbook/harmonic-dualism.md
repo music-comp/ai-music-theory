@@ -91,7 +91,7 @@ In Brahms's Clarinet Trio Op. 114:
 ## Related Concepts
 
 - **Prerequisite**: overtone-series, undertone-series, consonance-dissonance
-- **Leads to**: klang-representation, function-theory, neo-riemannian-transformations
+- **Leads to**: klang-representation, secondary-neo-riemannian-transformations
 - **See also**: tonvorstellungen, inversional-symmetry, voice-leading
 
 ## Common Confusions

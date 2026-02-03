@@ -132,9 +132,8 @@ Many Classical-era themes build on Meyer framework, though with personal variati
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, scale-degree, roman-numeral-analysis, figured-bass, meter, tonic-dominant
-- **Leads to**: prinner, pastorella, jupiter, aprile, opening-gambit, question-answer-phrase
-- **See also**: galant-style, partimento, schema-prototypes, improvisation-patterns
+- **Prerequisite**: galant-schema, scale-degree, roman-numeral-analysis, figured-bass, meter
+- **See also**: partimento
 
 ## Common Confusions
 

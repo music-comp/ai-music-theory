@@ -98,8 +98,8 @@ Pandiatonic: D-F-A-C-E-G chord held without any pitch
 
 ## Related Concepts
 
-- **Prerequisite**: diatonic-collection, major-scale, triads, seventh-chords
-- **Leads to**: added-note-chords, extended-tertian-harmony, 20th-century-harmony
+- **Prerequisite**: diatonic-collection, major-scale, triad, seventh-chord
+- **Leads to**: added-note-chord, extended-tertian-harmony
 - **See also**: diatonic-modes-20c, static-harmony, ostinato
 
 ## Common Confusions

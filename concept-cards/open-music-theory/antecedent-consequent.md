@@ -187,9 +187,9 @@ HC creates expectation; PAC fulfills expectation
 
 ## Related Concepts
 
-- **Prerequisite**: phrase, cadence, half-cadence, authentic-cadence, period, melodic-structure
-- **Leads to**: parallel-period, contrasting-period, sentence, compound-period, phrase-expansion
-- **See also**: period, question-answer, phrase-pairing, cadential-structure
+- **Prerequisite**: phrase, cadence, half-cadence, authentic-cadence, period
+- **Leads to**: parallel-period, parallel-contrasting-period, sentence, compound-period, phrase-expansion
+- **See also**: period
 
 ## Common Confusions
 

@@ -87,9 +87,9 @@ Parallel imperfect consonances (thirds, sixths) are acceptable because they main
 
 ## Related Concepts
 
-- **Prerequisite**: voice, interval, motion, consonance
-- **Leads to**: contrary-motion, similar-motion, voice-leading, parallel-fifths, parallel-octaves
-- **See also**: counterpoint, independence, tonal-fusion
+- **Prerequisite**: interval, consonance
+- **Leads to**: contrary-motion, similar-motion, voice-leading, parallel-fifths, parallel-fifths-octaves
+- **See also**: counterpoint
 
 ## Common Confusions
 

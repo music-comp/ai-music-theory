@@ -48,7 +48,6 @@ Piano music uses two staves simultaneously (the grand staff), orchestral scores 
 
 ## Related Concepts
 
-- **Prerequisite**: None (foundational concept)
 - **Leads to**: clef, note, ledger-lines, grand-staff
 - **See also**: pitch, rhythm
 

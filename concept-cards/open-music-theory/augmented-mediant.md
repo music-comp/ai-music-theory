@@ -245,9 +245,9 @@ Raised ^7 creates augmented quality
 
 ## Related Concepts
 
-- **Prerequisite**: harmonic-minor-scale, augmented-triad, mediant, leading-tone
-- **Leads to**: augmented-triad-symmetry, chromatic-mediant, minor-key-harmony
-- **See also**: III, relative-major, augmented-triad-voice-leading
+- **Prerequisite**: harmonic-minor-scale, augmented-triad, leading-tone
+- **Leads to**: augmented-triad-symmetry, chromatic-mediant
+- **See also**: augmented-triad-voice-leading
 
 ## Common Confusions
 

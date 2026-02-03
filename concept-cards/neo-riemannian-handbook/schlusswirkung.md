@@ -82,8 +82,8 @@ The tonic resolution is the goal of the entire period structure.
 ## Related Concepts
 
 - **Prerequisite**: cadence, authentic-cadence, half-cadence, phrase, harmonic-function
-- **Leads to**: auftakttheorie, expressed-meter, period-structure, metric-hierarchy
-- **See also**: harmoniewirkung, closure, formal-function
+- **Leads to**: auftakttheorie, expressed-meter
+- **See also**: harmoniewirkung
 
 ## Common Confusions
 

@@ -139,7 +139,7 @@ The Berlin school (Stumpf, Hornbostel) challenged universal tonality claims:
 
 - **Prerequisites**: scale, key, tonic, dominant, subdominant
 - **Leads to**: harmonic-function, modulation, chromatic-harmony
-- **See also**: mode, Klangvertretung, Tonvorstellung
+- **See also**: mode, klangvertretung, tonvorstellung
 
 ## Common Confusions
 

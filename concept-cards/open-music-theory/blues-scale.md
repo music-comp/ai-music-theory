@@ -61,9 +61,9 @@ Blues scale is ubiquitous in rock guitar solos, R&B melodies, and jazz improvisa
 
 ## Related Concepts
 
-- **Prerequisite**: pentatonic-scale, minor-pentatonic, interval
-- **Leads to**: blue-notes, blues-improvisation, jazz-improvisation
-- **See also**: 12-bar-blues, blues-harmony, mode
+- **Prerequisite**: pentatonic-scale, interval
+- **Leads to**: blue-notes
+- **See also**: 12-bar-blues, mode
 
 ## Common Confusions
 

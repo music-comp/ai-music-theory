@@ -66,9 +66,9 @@ Mozart's piano concertos: caesura after cadenza before orchestra re-entry. Beeth
 
 ## Related Concepts
 
-- **Prerequisite**: phrase, rest, silence, form
-- **Leads to**: phrase-structure, musical-form, dramatic-effect, sectional-division
-- **See also**: fermata, breath-mark, grand-pause, cutoff
+- **Prerequisite**: phrase, rests
+- **Leads to**: srdc-phrase-structure
+- **See also**: fermata
 
 ## Common Confusions
 

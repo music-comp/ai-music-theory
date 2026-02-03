@@ -63,9 +63,9 @@ Most Western music is organized in measures. Beethoven's Fifth Symphony: four-me
 
 ## Related Concepts
 
-- **Prerequisite**: beat, meter, time-signature, bar-line
-- **Leads to**: phrase, hypermeter, downbeat, anacrusis, formal-structure
-- **See also**: bar, bar-line, double-bar, time-signature
+- **Prerequisite**: beat, meter, time-signature
+- **Leads to**: phrase, hypermeter, anacrusis
+- **See also**: time-signature
 
 ## Common Confusions
 

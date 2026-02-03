@@ -180,9 +180,8 @@ All preserve pitch sequence and proportional relationships
 
 ## Related Concepts
 
-- **Prerequisite**: fugue, fugue-subject, counterpoint, rhythmic-transformation, proportional-rhythm
-- **Leads to**: stretto, invertible-counterpoint, multiple-counterpoint, rhythmic-canon
-- **See also**: fugal-development, contrapuntal-devices, transformation-techniques
+- **Prerequisite**: fugue, fugue-subject, counterpoint, thematic-transformation
+- **Leads to**: stretto, invertible-counterpoint
 
 ## Common Confusions
 

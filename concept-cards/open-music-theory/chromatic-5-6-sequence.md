@@ -142,8 +142,8 @@ Strong-beat harmonies outline whole-tone scale
 
 ## Related Concepts
 
-- **Prerequisite**: diatonic-5-6-sequence, secondary-dominant, voice-leading
-- **Leads to**: whole-tone-harmony, distant-modulation, chromatic-bass
+- **Prerequisite**: secondary-dominant, voice-leading
+- **Leads to**: whole-tone-harmony, direct-modulation
 - **See also**: chromatic-sequence, descending-fifths-chromatic-sequence, parallel-chromatic-sequence
 
 ## Common Confusions

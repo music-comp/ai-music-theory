@@ -72,8 +72,8 @@ Dissonant vs. consonant:
 ## Related Concepts
 
 - **Prerequisite**: interval, interval-quality, consonance, harmonic-interval
-- **Leads to**: resolution, suspension, passing-tone, neighbor-tone, appoggiatura, preparation
-- **See also**: tension, stability, voice-leading, non-chord-tone
+- **Leads to**: suspension, passing-tone, neighbor-tone, appoggiatura, retardation
+- **See also**: voice-leading
 
 ## Common Confusions
 

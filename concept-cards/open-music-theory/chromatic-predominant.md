@@ -166,7 +166,7 @@ Two chromatic predominants intensify cadence
 
 ## Related Concepts
 
-- **Prerequisite**: predominant-function, neapolitan-sixth, modal-mixture, voice-leading
+- **Prerequisite**: pre-dominant-function, neapolitan-sixth, modal-mixture, voice-leading
 - **Leads to**: augmented-sixth-chords, chromatic-harmony
 - **See also**: borrowed-chord, minor-subdominant, cadential-progression
 

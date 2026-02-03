@@ -73,7 +73,7 @@ Species counterpoint is pedagogical, not repertoire-based. However, the principl
 
 - **Prerequisite**: counterpoint, cantus-firmus, interval, consonance-dissonance
 - **Leads to**: first-species, second-species, third-species, fourth-species, fifth-species, fugue, free-counterpoint
-- **See also**: voice-leading, gradus-ad-parnassum, fux, pedagogical-counterpoint
+- **See also**: voice-leading
 
 ## Common Confusions
 

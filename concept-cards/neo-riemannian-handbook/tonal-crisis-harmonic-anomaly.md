@@ -111,9 +111,9 @@ Rings's phenomenological approach seeks to restore the sense of crisis:
 
 ## Related Concepts
 
-- **Prerequisite**: Functional analysis, voice-leading efficiency
-- **Leads to**: Analytical values, phenomenological approach
-- **See also**: Garden of Eden metaphor, monotonality principle
+- **Prerequisite**: voice-leading-efficiency
+- **Leads to**: analytical-levels
+- **See also**: garden-of-eden-metaphor, monotonality-principle
 
 ## Critical Insight
 

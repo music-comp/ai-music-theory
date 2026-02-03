@@ -113,7 +113,6 @@ But both can be read as either immanent (about structure) or esthesic (about exp
 
 - **Components**: Analytical values, monotonality, voice-leading efficiency
 - **Applications**: Tonal intention, contextual analysis, discharge functions
-- **See also**: Objects/transformations dichotomy, absolute progression
 
 ## Key Insight
 

@@ -234,9 +234,9 @@ Very expressive cadence
 
 ## Related Concepts
 
-- **Prerequisite**: parallel-major-minor, diatonic-harmony, chromatic-alteration, scale-degrees
+- **Prerequisite**: parallel-major-minor, pentatonic-harmony, chromatic-alteration, scale-degree
 - **Leads to**: chromatic-harmony, borrowed-chords, chromatic-mediant, picardy-third
-- **See also**: modal-interchange, parallel-mode, mixture-chords, modal-borrowing
+- **See also**: modal-interchange, modal-borrowing
 
 ## Common Confusions
 

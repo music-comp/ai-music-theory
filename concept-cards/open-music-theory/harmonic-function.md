@@ -183,9 +183,9 @@ vi substitutes for I (deceptive), requires continuation
 
 ## Related Concepts
 
-- **Prerequisite**: roman-numeral-analysis, triad, scale-degree, chord-progression, cadence
-- **Leads to**: voice-leading, cadence-types, circle-of-fifths, harmonic-rhythm
-- **See also**: tonic-dominant-relationship, predominant-function, functional-harmony
+- **Prerequisite**: roman-numeral-analysis, triad, scale-degree, cadence
+- **Leads to**: voice-leading, basic-cadence-types, circle-of-fifths, harmonic-rhythm
+- **See also**: pre-dominant-function
 
 ## Common Confusions
 

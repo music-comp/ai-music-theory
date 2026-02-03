@@ -135,7 +135,7 @@ Webern exploits this invariance:
 ## Related Concepts
 
 - **Prerequisite**: twelve-tone-row, row-operations, transposition
-- **Leads to**: combinatoriality, row-properties, twelve-tone-analysis
+- **Leads to**: combinatoriality, twelve-tone-analysis
 - **See also**: derived-row, set-class, pitch-class-set
 
 ## Common Confusions

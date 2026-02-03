@@ -58,9 +58,8 @@ Call and response appears in gospel music, jazz (trading fours/eights), and many
 
 ## Related Concepts
 
-- **Prerequisite**: blues-form, phrase-structure, 12-bar-blues
-- **Leads to**: trading-fours, jazz-conversation, gospel-music
-- **See also**: antecedent-consequent, aab-form, blues-lyrics
+- **Prerequisite**: srdc-phrase-structure, 12-bar-blues
+- **See also**: antecedent-consequent
 
 ## Common Confusions
 

@@ -251,9 +251,9 @@ Same function, different quality
 
 ## Related Concepts
 
-- **Prerequisite**: secondary-dominant, dominant-function, chromatic-alteration, leading-tone, V-I-progression
-- **Leads to**: secondary-leading-tone, applied-chord, extended-tonicization, modulation
-- **See also**: temporary-tonic, chromatic-harmony, secondary-function, slash-notation
+- **Prerequisite**: secondary-dominant, dominant-function, chromatic-alteration, leading-tone, ii-v-i-progression
+- **Leads to**: secondary-leading-tone-chord, applied-chord, extended-tonicization, modulation
+- **See also**: chromatic-harmony
 
 ## Common Confusions
 

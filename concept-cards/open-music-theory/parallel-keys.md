@@ -70,9 +70,9 @@ Beethoven's Symphony No. 5: famously moves from C minor to C major (parallel key
 
 ## Related Concepts
 
-- **Prerequisite**: major-scale, minor-scale, key-signature, tonic
+- **Prerequisite**: major-scale, minor-scale, key-signature
 - **Leads to**: modal-mixture, borrowed-chords, picardy-third, mode
-- **See also**: relative-keys, mode, tonic, key-signature, modal-interchange
+- **See also**: relative-keys, mode, key-signature, modal-interchange
 
 ## Common Confusions
 

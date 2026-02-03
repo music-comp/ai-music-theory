@@ -158,8 +158,8 @@ Multidimensional Tonnetze remain an active area of theoretical research.
 
 ## Related Concepts
 
-- **Prerequisite**: Tonnetz, equal-temperament, enharmonic-equivalence
-- **Leads to**: hexatonic-systems, PLR-transformations
+- **Prerequisite**: tonnetz, enharmonic-equivalence
+- **Leads to**: hexatonic-systems, plr-transformations
 - **See also**: voice-leading-graph, regional-space
 
 ## Common Confusions

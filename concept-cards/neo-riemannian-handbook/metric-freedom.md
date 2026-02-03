@@ -78,8 +78,8 @@ Riemann argues both sections conform to an underlying eight-measure periodic str
 
 ## Related Concepts
 
-- **Prerequisite**: meter, text-setting, phrase-rhythm, modified-strophic-form
-- **Leads to**: metric-reinterpretation, declamation, performance-practice
+- **Prerequisite**: meter
+- **Leads to**: text-declamation
 - **See also**: expressed-meter, auftakttheorie, normative-analysis
 
 ## Common Confusions

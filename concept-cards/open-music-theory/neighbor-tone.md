@@ -234,9 +234,8 @@ Upper neighbors throughout
 
 ## Related Concepts
 
-- **Prerequisite**: non-chord-tone, stepwise-motion, chord-tone, weak-beat, embellishment
-- **Leads to**: double-neighbor, chromatic-neighbor, accented-neighbor, melodic-embellishment
-- **See also**: passing-tone, escape-tone, appoggiatura, auxiliary-note, changing-tone
+- **Leads to**: double-neighbor, harmonic-embellishment
+- **See also**: passing-tone, escape-tone, appoggiatura
 
 ## Common Confusions
 

@@ -73,9 +73,9 @@ Bach's fugues often use melodic inversion (subject inverted becomes countersubje
 
 ## Related Concepts
 
-- **Prerequisite**: interval, interval-size, interval-quality, octave
-- **Leads to**: melodic-inversion, pitch-class-inversion, complementary-intervals
-- **See also**: chord-inversion, octave-equivalence, complement
+- **Prerequisite**: interval, intervals, interval-quality
+- **Leads to**: harmonic-inversion, complementary-intervals
+- **See also**: ninth-chord-inversion, octave-equivalence
 
 ## Common Confusions
 

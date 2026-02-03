@@ -65,9 +65,9 @@ Ragtime (Scott Joplin): pervasive syncopation in right hand against steady left-
 
 ## Related Concepts
 
-- **Prerequisite**: beat, meter, accent, downbeat, weak-beat, off-beat
-- **Leads to**: cross-rhythm, polyrhythm, hemiola, swing, clave
-- **See also**: tie, anticipation, suspension, off-beat-accent
+- **Prerequisite**: beat, meter
+- **Leads to**: polyrhythm
+- **See also**: tie, anticipation, suspension
 
 ## Common Confusions
 

@@ -151,8 +151,8 @@ After three half-steps, returns to same triad
 
 ## Related Concepts
 
-- **Prerequisite**: chord-inversion, first-inversion, dominant-seventh, augmented-triad
-- **Leads to**: planing, impressionism, non-functional-harmony
+- **Prerequisite**: ninth-chord-inversion, dominant-seventh-chord, augmented-triad
+- **Leads to**: impressionism
 - **See also**: chromatic-sequence, parallel-fifths, voice-leading
 
 ## Common Confusions

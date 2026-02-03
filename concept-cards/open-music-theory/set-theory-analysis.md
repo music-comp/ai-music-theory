@@ -104,9 +104,9 @@ Questions to pursue:
 
 ## Related Concepts
 
-- **Prerequisite**: pitch-class-set, set-class, transposition-Tn, inversion-In, segmentation
-- **Leads to**: twelve-tone-analysis, musical-interpretation
-- **See also**: interval-vector, prime-form, forte-number, superset
+- **Prerequisite**: pitch-class-set, set-class, transposition-tn, inversion-in, segmentation
+- **Leads to**: twelve-tone-analysis
+- **See also**: interval-vector, prime-form, forte-number
 
 ## Common Confusions
 

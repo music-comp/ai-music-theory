@@ -80,8 +80,8 @@ Oblique motion is especially useful in multivoice textures where maintaining one
 
 ## Related Concepts
 
-- **Prerequisite**: voice, motion, interval, sustained-tone
-- **Leads to**: pedal-tone, suspension, common-tone, drone, voice-leading
+- **Prerequisite**: interval
+- **Leads to**: suspension, common-tones, voice-leading
 - **See also**: contrary-motion, parallel-motion, similar-motion, counterpoint
 
 ## Common Confusions

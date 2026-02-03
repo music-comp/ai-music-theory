@@ -68,8 +68,8 @@ Movable do emphasizes the functional relationships between pitches in tonal musi
 ## Related Concepts
 
 - **Prerequisite**: scale, scale-degree, major-scale, minor-scale
-- **Leads to**: sight-singing, ear-training, melodic-dictation, functional-harmony
-- **See also**: scale-degree-names, movable-do, fixed-do, solmization
+- **Leads to**: sight-singing, melodic-alteration
+- **See also**: scale-degree-names
 
 ## Common Confusions
 

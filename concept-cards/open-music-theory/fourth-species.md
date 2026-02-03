@@ -97,7 +97,7 @@ Fourth species is pedagogical, but suspensions appear everywhere in tonal music:
 ## Related Concepts
 
 - **Prerequisite**: species-counterpoint, third-species, consonance, dissonance, oblique-motion, syncopation
-- **Leads to**: fifth-species, suspension, preparation-suspension-resolution, accented-dissonance, tonal-harmony
+- **Leads to**: fifth-species, suspension
 - **See also**: cadential-six-four, suspended-chord, syncopation
 
 ## Common Confusions

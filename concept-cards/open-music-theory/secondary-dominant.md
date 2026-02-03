@@ -214,9 +214,9 @@ Sequence of tonicizations
 
 ## Related Concepts
 
-- **Prerequisite**: dominant-seventh-chord, V-I-progression, tonicization, chromatic-alteration, voice-leading
+- **Prerequisite**: dominant-seventh-chord, ii-v-i-progression, tonicization, chromatic-alteration, voice-leading
 - **Leads to**: applied-chord, modulation, chromatic-harmony, tonicization-vs-modulation
-- **See also**: secondary-leading-tone, applied-dominant, temporary-tonic
+- **See also**: secondary-leading-tone-chord, applied-dominant
 
 ## Common Confusions
 

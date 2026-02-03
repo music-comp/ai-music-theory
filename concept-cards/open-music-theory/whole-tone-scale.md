@@ -204,9 +204,9 @@ Does the passage contain C# AND D#?
 
 ## Related Concepts
 
-- **Prerequisite**: major-second, chromatic-scale, interval
+- **Prerequisite**: chromatic-scale, interval
 - **Leads to**: impressionism, modes-of-limited-transposition, augmented-triad
-- **See also**: equal-divisions-of-the-octave, octatonic-scale, hexatonic-scale, symmetrical-collection
+- **See also**: equal-divisions-of-the-octave, octatonic-scale, hexatonic-scale
 
 ## Common Confusions
 

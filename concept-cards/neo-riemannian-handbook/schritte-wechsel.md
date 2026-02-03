@@ -148,8 +148,8 @@ g+ --Seitenwechselschritt--> c+
 ## Related Concepts
 
 - **Prerequisite**: triadic-transformation, harmonic-dualism, klang
-- **Leads to**: plr-transformations, neo-riemannian-analysis, function-theory
-- **See also**: quintschritt, terzschritt, leittonwechsel
+- **Leads to**: plr-transformations
+- **See also**: leittonwechsel
 
 ## Common Confusions
 

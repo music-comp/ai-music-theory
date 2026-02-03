@@ -120,8 +120,7 @@ C-E-G# cannot be assigned a single Klang-representation:
 ## Related Concepts
 
 - **Prerequisite**: triad, consonance-dissonance, tonvorstellungen
-- **Leads to**: function-theory, harmonic-hearing, implied-harmony
-- **See also**: klang, grundton, scheinkonsonanz
+- **See also**: klang
 
 ## Common Confusions
 

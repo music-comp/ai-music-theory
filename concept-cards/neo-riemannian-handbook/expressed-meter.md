@@ -73,9 +73,9 @@ The half note receives expressed accent through durational differentiation.
 
 ## Related Concepts
 
-- **Prerequisite**: meter, accent, notation, bar-line, time-signature
-- **Leads to**: harmoniewirkung, schlusswirkung, auftakttheorie, metric-reinterpretation
-- **See also**: hypermeter, phrase-rhythm, metric-analysis
+- **Prerequisite**: meter, rotation, time-signature
+- **Leads to**: harmoniewirkung, schlusswirkung, auftakttheorie
+- **See also**: hypermeter
 
 ## Common Confusions
 

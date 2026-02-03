@@ -199,9 +199,9 @@ Common tone held = smooth voice leading
 
 ## Related Concepts
 
-- **Prerequisite**: triad, chord-progression, SATB, voice-ranges, contrary-motion, parallel-motion
-- **Leads to**: chorale-writing, four-part-harmony, part-writing, counterpoint
-- **See also**: parallel-fifths-octaves, tendency-tones, voice-independence, smooth-voice-leading
+- **Prerequisite**: triad, satb, voice-ranges, contrary-motion, parallel-motion
+- **Leads to**: counterpoint
+- **See also**: parallel-fifths-octaves
 
 ## Common Confusions
 

@@ -112,7 +112,7 @@ Parsimonious behavior is possible for any set class that:
 
 - **Prerequisite**: triad, voice-leading, set-class, interval
 - **Leads to**: hexatonic-systems, maximally-smooth-cycles, voice-leading-graph
-- **See also**: PLR-transformations, Tonnetz, common-tones
+- **See also**: plr-transformations, tonnetz, common-tones
 
 ## Common Confusions
 

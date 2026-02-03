@@ -177,9 +177,9 @@ Period structure: HC answered by PAC
 
 ## Related Concepts
 
-- **Prerequisite**: cadence, dominant, phrase, period, antecedent-consequent, V-chord
-- **Leads to**: authentic-cadence, medial-caesura, phrase-structure, period-form
-- **See also**: incomplete-cadence, phrygian-cadence, dominant-arrival
+- **Prerequisite**: cadence, phrase, period, antecedent-consequent, chord
+- **Leads to**: authentic-cadence, medial-caesura, srdc-phrase-structure
+- **See also**: phrygian-cadence, dominant-arrival
 
 ## Common Confusions
 

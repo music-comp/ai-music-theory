@@ -122,8 +122,8 @@ HEX3,4: {3, 4, 7, 8, 11, 0} - contains Eb, G, B major
 
 ## Related Concepts
 
-- **Prerequisite**: augmented-triad, minor-third, semitone
-- **Leads to**: neo-riemannian-theory, parsimonious-voice-leading, collection-theory
+- **Prerequisite**: augmented-triad, minor-triad, semitone
+- **Leads to**: neo-riemannian-theory, parsimonious-voice-leading
 - **See also**: whole-tone-collection, octatonic-collection, distance-model
 
 ## Common Confusions

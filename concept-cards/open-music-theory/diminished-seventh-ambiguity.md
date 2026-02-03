@@ -214,9 +214,9 @@ No clear tonal center
 
 ## Related Concepts
 
-- **Prerequisite**: diminished-seventh-chord, diminished-seventh-symmetry, tonality, functional-harmony
-- **Leads to**: floating-tonality, atonality-precursors, Wagnerian-chromaticism
-- **See also**: tonal-ambiguity, chromatic-harmony, enharmonic-equivalence
+- **Prerequisite**: diminished-seventh-chord, diminished-seventh-symmetry, tonality
+- **Leads to**: shifting-tonality
+- **See also**: tonal-ambiguity-in-pop, chromatic-harmony, enharmonic-equivalence
 
 ## Common Confusions
 

@@ -160,9 +160,9 @@ Babbitt           Schoenberg     Berg, Britten
 
 ## Related Concepts
 
-- **Prerequisite**: twelve-tone-row, ordered-set, pitch-class
+- **Prerequisite**: twelve-tone-row, pitch-class
 - **Leads to**: total-serialism, row-operations, combinatoriality
-- **See also**: atonality, Second-Viennese-School, post-tonal
+- **See also**: atonality, second-viennese-school
 
 ## Common Confusions
 

@@ -194,9 +194,9 @@ Requires Bb to avoid tritone F-B
 
 ## Related Concepts
 
-- **Prerequisite**: hexachord, solmization, mode, tritone, cadence, renaissance-style, leading-tone, voice-leading
-- **Leads to**: musica-recta, hexachord-mutation, historical-performance-practice, editorial-practice
-- **See also**: accidental, chromatic-alteration, picardy-third, subsemitonium
+- **Prerequisite**: mode, tritone, cadence, leading-tone, voice-leading
+- **Leads to**: musica-ficta, hexachord-rotation
+- **See also**: accidental, chromatic-alteration, picardy-third
 
 ## Common Confusions
 

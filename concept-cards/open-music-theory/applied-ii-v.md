@@ -52,8 +52,8 @@ In C major, tonicizing the ii chord (Dm):
 ## Related Concepts
 
 - **Prerequisite**: ii-v-i-progression, tonicization, applied-chord
-- **Leads to**: turnaround, ii-v-space, jazz-reharmonization
-- **See also**: secondary-dominant, key-center, modulation
+- **Leads to**: turnaround
+- **See also**: secondary-dominant, modulation
 
 ## Common Confusions
 

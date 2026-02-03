@@ -66,8 +66,7 @@ Traditional Spanish flamenco music uses Phrygian mode (often E Phrygian). Metall
 ## Related Concepts
 
 - **Prerequisite**: scale, mode, minor-scale, whole-step, half-step
-- **Leads to**: flamenco-music, modal-metal, exotic-scales, spanish-music
-- **See also**: aeolian, dorian, locrian, diatonic-modes, modal-brightness
+- **See also**: aeolian, dorian, locrian, diatonic-modes
 
 ## Common Confusions
 

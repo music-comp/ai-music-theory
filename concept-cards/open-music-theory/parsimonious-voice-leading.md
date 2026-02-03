@@ -179,9 +179,9 @@ Functional, but not parsimonious
 
 ## Related Concepts
 
-- **Prerequisite**: voice-leading, half-step, whole-step, common-tone
+- **Prerequisite**: voice-leading, half-step, whole-step, common-tones
 - **Leads to**: neo-riemannian-theory, plr-transformations, tonnetz
-- **See also**: smooth-voice-leading, minimal-motion, cube-dance
+- **See also**: cube-dance
 
 ## Common Confusions
 

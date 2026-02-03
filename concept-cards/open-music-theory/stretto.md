@@ -146,9 +146,9 @@ Voice 2:       C-D-E-F-G (3-beat separation, but still overlaps)
 
 ## Related Concepts
 
-- **Prerequisite**: fugue, fugue-subject, imitation, fugal-exposition, counterpoint, voice-independence
-- **Leads to**: canon, invertible-counterpoint, double-fugue, augmentation-diminution
-- **See also**: fugal-episode, development-techniques, contrapuntal-devices
+- **Prerequisite**: fugue, fugue-subject, imitation, fugal-exposition, counterpoint
+- **Leads to**: canzona, invertible-counterpoint, augmentation-diminution
+- **See also**: fugal-episode
 
 ## Common Confusions
 

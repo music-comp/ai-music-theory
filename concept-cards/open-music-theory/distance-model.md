@@ -230,8 +230,8 @@ This is the hexatonic collection, model 1:3
 
 ## Related Concepts
 
-- **Prerequisite**: interval, semitone, pitch-collection
-- **Leads to**: octatonic-scale, hexatonic-scale, bartok-axis-system
+- **Prerequisite**: interval, semitone, diatonic-collection
+- **Leads to**: octatonic-scale, hexatonic-scale
 - **See also**: equal-divisions-of-the-octave, symmetrical-pitch-collection, modes-of-limited-transposition
 
 ## Common Confusions

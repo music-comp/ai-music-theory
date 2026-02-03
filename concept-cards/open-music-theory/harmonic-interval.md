@@ -64,9 +64,9 @@ Gregorian chant uses harmonic perfect fifths and octaves (organum). Bach chorale
 
 ## Related Concepts
 
-- **Prerequisite**: pitch, interval, staff, simultaneous-sound
-- **Leads to**: chord, harmony, consonance, dissonance, triad, seventh-chord
-- **See also**: melodic-interval, interval-size, interval-quality, vertical-sonority
+- **Prerequisite**: pitch, interval, staff, simultaneous-ncts
+- **Leads to**: chord, consonance, dissonance, triad, seventh-chord
+- **See also**: melodic-interval, intervals, interval-quality
 
 ## Common Confusions
 

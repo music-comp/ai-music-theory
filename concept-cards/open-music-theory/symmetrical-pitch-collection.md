@@ -216,7 +216,7 @@ Every note has IDENTICAL intervallic context
 ## Related Concepts
 
 - **Prerequisite**: pitch-class, transposition, inversion, interval
-- **Leads to**: modes-of-limited-transposition, set-theory, post-tonal-analysis
+- **Leads to**: modes-of-limited-transposition
 - **See also**: whole-tone-scale, octatonic-scale, hexatonic-scale, equal-divisions-of-the-octave
 
 ## Common Confusions

@@ -142,9 +142,9 @@ Cadences articulate structural divisions
 
 ## Related Concepts
 
-- **Prerequisite**: keyboard-technique, improvisation, virtuosity, fugue, idiomatic-writing, sectional-form
-- **Leads to**: prelude, fantasia, free-composition, keyboard-virtuosity
-- **See also**: ricercar, fantasia, prelude-and-fugue, organ-literature
+- **Prerequisite**: fugue
+- **Leads to**: fantasia
+- **See also**: ricercar, fantasia
 
 ## Common Confusions
 

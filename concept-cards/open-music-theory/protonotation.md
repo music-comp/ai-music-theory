@@ -83,9 +83,9 @@ Aural skills textbooks teach protonotation as standard dictation methodology. Mu
 
 ## Related Concepts
 
-- **Prerequisite**: dictation, rhythm, pitch, meter, beats
-- **Leads to**: staff-notation, transcription, rhythmic-dictation, melodic-dictation
-- **See also**: dot-grid, slash-notation, contour-lines, sight-singing
+- **Prerequisite**: dictation, rhythm, pitch, meter, beat
+- **Leads to**: transition, melodic-alteration
+- **See also**: sight-singing
 
 ## Common Confusions
 

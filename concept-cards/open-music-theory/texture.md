@@ -63,9 +63,9 @@ Texture affects perception: thick textures sound full and complex; thin textures
 
 ## Related Concepts
 
-- **Prerequisite**: melody, harmony, rhythm, voice
+- **Prerequisite**: rhythm
 - **Leads to**: monophony, heterophony, homophony, polyphony, homorhythm, melody-and-accompaniment, counterpoint
-- **See also**: orchestration, voicing, voice-leading, arrangement, density
+- **See also**: voice-leading
 
 ## Common Confusions
 

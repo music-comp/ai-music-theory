@@ -252,9 +252,9 @@ Connects I to vi smoothly
 
 ## Related Concepts
 
-- **Prerequisite**: augmented-triad, voice-leading, tendency-tone, chromatic-voice-leading
-- **Leads to**: neo-Riemannian-theory, parsimonious-voice-leading, chromatic-mediant-relation
-- **See also**: V+, augmented-triad-symmetry, common-tone-augmented-sixth
+- **Prerequisite**: augmented-triad, voice-leading, chromatic-voice-motion
+- **Leads to**: neo-riemannian-theory, parsimonious-voice-leading, chromatic-third-relation
+- **See also**: augmented-triad-symmetry, common-tone-augmented-sixth
 
 ## Common Confusions
 

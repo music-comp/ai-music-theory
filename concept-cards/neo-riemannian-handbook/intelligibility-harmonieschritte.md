@@ -140,9 +140,9 @@ Neo-Riemannian theory represents:
 
 ## Related Concepts
 
-- **Prerequisite**: Harmonieschritte, Schritt-Wechsel-system
-- **Leads to**: neo-Riemannian-operations, combinatorial-group-theory
-- **See also**: Verwandtschaftsgrad, function-theory
+- **Prerequisite**: harmonieschritte, schritt-wechsel-system
+- **Leads to**: neo-riemannian-operations, combinatorial-group-theory
+- **See also**: verwandtschaftsgrad
 
 ## Common Confusions
 

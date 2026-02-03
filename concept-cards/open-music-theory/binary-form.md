@@ -89,9 +89,9 @@ Binary form served important structural functions:
 
 ## Related Concepts
 
-- **Prerequisite**: phrase, cadence, reprise, modulation, home-key
-- **Leads to**: ternary-form, compound-ternary, sonata-form, dance-forms
-- **See also**: rounded-binary, simple-binary, balanced-binary, minuet, trio
+- **Prerequisite**: phrase, cadence, modulation, home-key
+- **Leads to**: ternary-form, compound-ternary, sonata-form
+- **See also**: rounded-binary, simple-binary, balanced-binary, trio
 
 ## Common Confusions
 

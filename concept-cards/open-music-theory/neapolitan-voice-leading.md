@@ -164,9 +164,9 @@ Smoother soprano line
 
 ## Related Concepts
 
-- **Prerequisite**: neapolitan-sixth, voice-leading, chromatic-resolution
-- **Leads to**: chromatic-voice-leading, cadential-approaches
-- **See also**: altered-tone-resolution, cadential-six-four
+- **Prerequisite**: neapolitan-sixth, voice-leading, chromatic-modulation
+- **Leads to**: chromatic-voice-motion
+- **See also**: cadential-six-four
 
 ## Common Confusions
 

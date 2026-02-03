@@ -107,8 +107,8 @@ degrees of freedom to create structurally different arrangements.
 ## Related Concepts
 
 - **Prerequisite**: interval-vector, set-class, prime-form
-- **Leads to**: complement, hexachordal-combinatoriality, all-interval-tetrachord
-- **See also**: forte-number, set-class-table
+- **Leads to**: hexachordal-combinatoriality, all-interval-tetrachords
+- **See also**: forte-number
 
 ## Common Confusions
 

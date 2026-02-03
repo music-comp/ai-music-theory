@@ -165,8 +165,6 @@ The study belongs to broader debates about:
 ## Related Concepts
 
 - **Prerequisites**: pentatonicism, tetrachord, diatonic-scale, tonality
-- **Leads to**: comparative-musicology, melodic-analysis, scalar-theory
-- **See also**: mese, pien, pyknon, Helmholtz, Stumpf
 
 ## Common Confusions
 

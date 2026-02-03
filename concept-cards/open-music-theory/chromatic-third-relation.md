@@ -203,9 +203,9 @@ Confirmed by cadence in new key
 
 ## Related Concepts
 
-- **Prerequisite**: mediant, chord-quality, common-tone, voice-leading, chromatic-modulation
-- **Leads to**: chromatic-sequence, planing, neo-Riemannian-theory, hexatonic-system
-- **See also**: chromatic-mediant, direct-modulation, parallel-voice-motion
+- **Prerequisite**: chord-quality, common-tones, voice-leading, chromatic-modulation
+- **Leads to**: chromatic-sequence, neo-riemannian-theory, hexatonic-system
+- **See also**: chromatic-mediant, direct-modulation
 
 ## Common Confusions
 

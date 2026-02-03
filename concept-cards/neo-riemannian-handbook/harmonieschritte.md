@@ -141,9 +141,9 @@ In later editions (Handbuch), Riemann emphasized functional contexts for each Sc
 
 ## Related Concepts
 
-- **Prerequisite**: Klang, triad, root-interval, harmonic-dualism
-- **Leads to**: neo-Riemannian-operations, Schritt-Wechsel-system, PLR-transformations
-- **See also**: function-theory, Tonalität, combinatorial-group-theory
+- **Prerequisite**: klang, triad, tch-interval, harmonic-dualism
+- **Leads to**: neo-riemannian-operations, schritt-wechsel-system, plr-transformations
+- **See also**: combinatorial-group-theory
 
 ## Source References
 

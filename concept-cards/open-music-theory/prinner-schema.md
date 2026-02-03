@@ -142,9 +142,9 @@ Adds dominant seventh before final tonic
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, parallel-tenths, suspension, descending-bass, scale-degree, subdominant
-- **Leads to**: meyer, romanesca, closing-gesture, modulation-technique, schema-combination
-- **See also**: 7-6-suspension, partimento, galant-style, parallel-voice-leading
+- **Prerequisite**: galant-schema, parallel-fifths, suspension, scale-degree
+- **Leads to**: meter
+- **See also**: partimento
 
 ## Common Confusions
 

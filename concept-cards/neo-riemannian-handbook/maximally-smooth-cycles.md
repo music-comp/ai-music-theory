@@ -118,9 +118,9 @@ If we define distance as total semitone motion:
 
 ## Related Concepts
 
-- **Prerequisite**: parsimonious-trichords, PLR-transformations, voice-leading
+- **Prerequisite**: parsimonious-trichords, plr-transformations, voice-leading
 - **Leads to**: hexatonic-systems, voice-leading-graph, chromatic-transformation-networks
-- **See also**: Tonnetz, octatonic-systems
+- **See also**: tonnetz, octatonic-systems
 
 ## Common Confusions
 

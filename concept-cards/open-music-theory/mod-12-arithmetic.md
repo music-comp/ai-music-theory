@@ -99,8 +99,8 @@ A (9) transposed up by T5:
 ## Related Concepts
 
 - **Prerequisite**: integer-notation, pitch-class
-- **Leads to**: transposition-Tn, inversion-In, interval-class
-- **See also**: clock-face-representation, pitch-class-set, complement
+- **Leads to**: transposition-tn, inversion-in, interval-class
+- **See also**: pitch-class-set
 
 ## Common Confusions
 

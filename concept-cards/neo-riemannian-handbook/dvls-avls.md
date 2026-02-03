@@ -140,8 +140,8 @@ Extremely efficient for a four-note chord transformation.
 ## Related Concepts
 
 - **Prerequisite**: voice-leading, interval, semitone
-- **Leads to**: voice-leading-spaces, geometric-music-theory, chord-distance
-- **See also**: voice-leading-efficiency, parsimonious-motion, inversional-symmetry
+- **Leads to**: voice-leading-zones
+- **See also**: voice-leading-efficiency, inversional-symmetry
 
 ## Common Confusions
 

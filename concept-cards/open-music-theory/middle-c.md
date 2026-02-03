@@ -56,9 +56,9 @@ Middle C is the starting note of many beginning piano pieces. Mozart's "Sonata f
 
 ## Related Concepts
 
-- **Prerequisite**: pitch, grand-staff, piano-keyboard, ASPN
-- **Leads to**: octave-equivalence, pitch-designation, clef-reading
-- **See also**: C4, ledger-lines, treble-clef, bass-clef
+- **Prerequisite**: pitch, grand-staff, piano-keyboard, aspn
+- **Leads to**: octave-equivalence
+- **See also**: ledger-lines, treble-clef, bass-clef
 
 ## Common Confusions
 

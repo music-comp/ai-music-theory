@@ -138,9 +138,9 @@ Principle remains: static bass, ascending melody
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, dominant-pedal, pedal-point, dominant-prolongation, scale-degree
-- **Leads to**: dominant-preparation, retransition, formal-articulation, bridge-passage
-- **See also**: fonte, monte, standing-on-the-dominant, dominant-arrival
+- **Prerequisite**: galant-schema, pedal-point, dominant-prolongation, scale-degree
+- **Leads to**: retransition
+- **See also**: standing-on-the-dominant, dominant-arrival
 
 ## Common Confusions
 

@@ -114,7 +114,7 @@ Both reveal the open, non-triadic quality without imposing tonal labels.
 
 - **Prerequisite**: pitch, pitch-class, semitone, integer-notation
 - **Leads to**: interval-vector, pitch-class-set, normal-order
-- **See also**: clock-face-representation, mod-12-arithmetic, interval-class-content
+- **See also**: mod-12-arithmetic, interval-class-content
 
 ## Common Confusions
 

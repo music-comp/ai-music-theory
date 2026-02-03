@@ -75,9 +75,9 @@ pc 11: B, Cb, Ax
 
 ## Related Concepts
 
-- **Prerequisite**: octave, enharmonic-equivalence, chromatic-scale
-- **Leads to**: integer-notation, pitch-class-set, interval-class, set-theory
-- **See also**: mod-12-arithmetic, transposition, normal-order, clock-face-representation
+- **Prerequisite**: enharmonic-equivalence, chromatic-scale
+- **Leads to**: integer-notation, pitch-class-set, interval-class
+- **See also**: mod-12-arithmetic, transposition, normal-order
 
 ## Common Confusions
 

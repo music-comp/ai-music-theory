@@ -110,9 +110,8 @@ Bach occasionally uses voice overlap in fugues when melodic integrity demands it
 
 ## Related Concepts
 
-- **Prerequisite**: voice, part-writing, melodic-line, voice-independence
-- **Leads to**: voice-crossing, voice-leading, linear-independence, counterpoint
-- **See also**: species-counterpoint, first-species, range, melodic-integrity
+- **Leads to**: voice-crossing, voice-leading, counterpoint
+- **See also**: species-counterpoint, first-species
 
 ## Common Confusions
 

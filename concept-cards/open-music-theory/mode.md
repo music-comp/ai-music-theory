@@ -71,8 +71,8 @@ C Locrian: C-D♭-E♭-F-G♭-A♭-B♭-C
 ## Related Concepts
 
 - **Prerequisite**: scale, major-scale, minor-scale, half-step, whole-step, scale-degree
-- **Leads to**: dorian, phrygian, lydian, mixolydian, aeolian, locrian, ionian, modal-interchange, modal-jazz
-- **See also**: church-modes, parallel-relationship, relative-relationship, tonality
+- **Leads to**: dorian, phrygian, lydian, mixolydian, aeolian, locrian, ionian, modal-interchange
+- **See also**: tonality
 
 ## Common Confusions
 

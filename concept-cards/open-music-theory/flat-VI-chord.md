@@ -173,9 +173,9 @@ Common in rock, creates modal sound
 
 ## Related Concepts
 
-- **Prerequisite**: submediant, modal-mixture, borrowed-chord, parallel-keys
-- **Leads to**: chromatic-mediant, chromatic-bass-line, rock-harmony
-- **See also**: flat-VII-chord, minor-subdominant, chromatic-harmony
+- **Prerequisite**: modal-mixture, borrowed-chord, parallel-keys
+- **Leads to**: chromatic-mediant
+- **See also**: minor-subdominant, chromatic-harmony
 
 ## Common Confusions
 

@@ -187,9 +187,9 @@ I⁶₄ metrically accented, creates suspension effect
 
 ## Related Concepts
 
-- **Prerequisite**: second-inversion, I-chord, V-chord, cadence, dominant-function, voice-leading
-- **Leads to**: authentic-cadence, dominant-preparation, suspension, embellishing-tones
-- **See also**: passing-six-four, pedal-six-four, arpeggiating-six-four, cadential-formula
+- **Prerequisite**: chord, chord, cadence, dominant-function, voice-leading
+- **Leads to**: authentic-cadence, suspension
+- **See also**: passing-six-four
 
 ## Common Confusions
 

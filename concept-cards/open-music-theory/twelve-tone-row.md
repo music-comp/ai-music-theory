@@ -120,9 +120,9 @@ Row unfolds gradually with free repetition—demonstrates flexible approach to t
 
 ## Related Concepts
 
-- **Prerequisite**: pitch-class, interval-class, set-theory-basics
+- **Prerequisite**: pitch-class, interval-class, set-theory-analysis
 - **Leads to**: row-matrix, row-operations, combinatoriality
-- **See also**: serialism, derived-row, row-properties
+- **See also**: serialism, derived-row
 
 ## Common Confusions
 

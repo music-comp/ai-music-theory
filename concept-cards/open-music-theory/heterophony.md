@@ -68,9 +68,9 @@ Irish traditional music: fiddle and flute play variations of the same reel simul
 
 ## Related Concepts
 
-- **Prerequisite**: melody, texture, variation, ornamentation
-- **Leads to**: polyphony, improvisation, oral-tradition, variation-technique
-- **See also**: monophony, homophony, unison, compound-melody
+- **Prerequisite**: texture, fragmentation
+- **Leads to**: polyphony
+- **See also**: monophony, homophony
 
 ## Common Confusions
 

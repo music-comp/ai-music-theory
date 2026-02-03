@@ -51,9 +51,8 @@ Blue notes are heard in virtually all authentic blues performances, as well as i
 
 ## Related Concepts
 
-- **Prerequisite**: blues-scale, scale-degree, chord-tone
-- **Leads to**: blues-expression, pitch-bending, vocal-blues
-- **See also**: 12-bar-blues, microtonal, inflection
+- **Prerequisite**: blues-scale, scale-degree
+- **See also**: 12-bar-blues
 
 ## Common Confusions
 

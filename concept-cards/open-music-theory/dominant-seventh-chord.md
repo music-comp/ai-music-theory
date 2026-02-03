@@ -177,9 +177,9 @@ Classic T-PD-D-T with V⁷
 
 ## Related Concepts
 
-- **Prerequisite**: dominant, V-chord, seventh-chord, leading-tone, tendency-tone, resolution
-- **Leads to**: secondary-dominant, diminished-seventh, dominant-preparation, cadential-six-four
-- **See also**: Mm7-chord, authentic-cadence, harmonic-function, V-I-progression
+- **Prerequisite**: chord, seventh-chord, leading-tone
+- **Leads to**: secondary-dominant, half-diminished-seventh, cadential-six-four
+- **See also**: authentic-cadence, harmonic-function, ii-v-i-progression
 
 ## Common Confusions
 

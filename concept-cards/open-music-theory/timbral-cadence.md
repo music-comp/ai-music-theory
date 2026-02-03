@@ -157,9 +157,8 @@ Color recurrence signals formal return
 
 ## Related Concepts
 
-- **Prerequisite**: cadence, phrase-structure, orchestration, instrumentation
-- **Leads to**: subtle-color-changes, structural-articulation, holding-back-timbre
-- **See also**: authentic-cadence, form, orchestral-texture
+- **Prerequisite**: cadence, srdc-phrase-structure
+- **See also**: authentic-cadence
 
 ## Common Confusions
 

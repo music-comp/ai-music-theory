@@ -139,9 +139,9 @@ Unlike hexatonic (a compact region), octatonic:
 
 ## Related Concepts
 
-- **Prerequisite**: PLR-transformations, parsimonious-trichords
+- **Prerequisite**: plr-transformations, parsimonious-trichords
 - **Leads to**: chromatic-transformation-networks, hexatonic-systems
-- **See also**: octatonic-scale, symmetrical-divisions
+- **See also**: octatonic-scale
 
 ## Common Confusions
 

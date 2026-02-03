@@ -118,7 +118,7 @@ Interval vector: <0,6,0,6,0,3>
 ## Related Concepts
 
 - **Prerequisite**: interval-class, pitch-class-set, set-class
-- **Leads to**: z-relation, set-class-table, sonic-character
+- **Leads to**: z-relation, rondo-character
 - **See also**: prime-form, forte-number, cardinality
 
 ## Common Confusions

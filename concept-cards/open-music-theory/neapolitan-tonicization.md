@@ -187,9 +187,8 @@ Demonstrates both extended and local Neapolitan use
 
 ## Related Concepts
 
-- **Prerequisite**: neapolitan-sixth, tonicization, applied-chords
-- **Leads to**: chromatic-key-areas, extended-chromaticism
-- **See also**: neapolitan-progressions, secondary-dominants
+- **Prerequisite**: neapolitan-sixth, tonicization, applied-chord
+- **See also**: neapolitan-progressions
 
 ## Common Confusions
 

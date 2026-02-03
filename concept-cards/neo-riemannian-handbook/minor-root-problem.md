@@ -117,8 +117,7 @@ The E# overtones (fifth partial of A) are "paralyzed" by the chord tone E.
 ## Related Concepts
 
 - **Prerequisite**: harmonic-dualism, overtone-series, undertone-series
-- **Leads to**: klang-representation, voicing-principles, cadence
-- **See also**: grundton, prime-note, acoustic-justification
+- **Leads to**: klang-representation, cadence
 
 ## Common Confusions
 

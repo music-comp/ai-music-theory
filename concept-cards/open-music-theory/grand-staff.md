@@ -50,8 +50,7 @@ All piano music from Beethoven sonatas to contemporary jazz charts uses the gran
 ## Related Concepts
 
 - **Prerequisite**: staff, treble-clef, bass-clef, ledger-lines
-- **Leads to**: keyboard, piano-technique, score-reading
-- **See also**: middle-c, range, brace
+- **See also**: middle-c
 
 ## Common Confusions
 

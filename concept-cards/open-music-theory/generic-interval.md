@@ -53,9 +53,9 @@ The opening melody of "Twinkle, Twinkle Little Star" moves from C to C (unison/p
 
 ## Related Concepts
 
-- **Prerequisite**: pitch, letter-names, staff
-- **Leads to**: interval-quality, specific-intervals (major-third, perfect-fifth, etc.), melodic-interval, harmonic-interval
-- **See also**: scale-degree, chord-inversion
+- **Prerequisite**: pitch, staff
+- **Leads to**: interval-quality, perfect-fourth, melodic-interval, harmonic-interval
+- **See also**: scale-degree, ninth-chord-inversion
 
 ## Common Confusions
 

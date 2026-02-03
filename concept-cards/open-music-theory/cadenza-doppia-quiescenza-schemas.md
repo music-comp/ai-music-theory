@@ -198,8 +198,8 @@ Doppia provides strong cadence, Quiescenza decorates arrival
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, pedal-point, dominant-pedal, tonic-pedal, suspension-chain, authentic-cadence
-- **Leads to**: cadential-prolongation, post-cadential-gestures, pedal-techniques
+- **Prerequisite**: galant-schema, pedal-point, authentic-cadence
+- **Leads to**: cadential-vs-prolongational-axiom
 - **See also**: cadenza-composta, dominant-prolongation, tonic-prolongation
 
 ## Common Confusions

@@ -80,9 +80,8 @@ Riemann's key departures from Oettingen:
 
 ## Related Concepts
 
-- **Prerequisite**: just-intonation, overtone-series, harmonic-dualism, consonance
-- **Leads to**: Tonnetz, Riemannian-dualism, syntonic-comma, Klang
-- **See also**: tonicity, phonicity, enharmonic-diesis, Buchstabentonschrift
+- **Prerequisite**: overtone-series, harmonic-dualism, consonance
+- **Leads to**: tonnetz, klang
 
 ## Source References
 

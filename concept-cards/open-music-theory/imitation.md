@@ -89,9 +89,9 @@ Imitation serves crucial structural and expressive functions:
 
 ## Related Concepts
 
-- **Prerequisite**: melody, voice, interval, counterpoint, texture
-- **Leads to**: point-of-imitation, canon, fugue, tonal-answer, real-answer, stretto
-- **See also**: polyphony, 16th-century-counterpoint, motet, invention
+- **Prerequisite**: interval, counterpoint, texture
+- **Leads to**: point-of-imitation, canzona, fugue, real-tonal-answer, stretto
+- **See also**: polyphony
 
 ## Common Confusions
 

@@ -76,9 +76,9 @@ Many pieces begin in a minor key and end in the relative major (or vice versa). 
 
 ## Related Concepts
 
-- **Prerequisite**: major-scale, minor-scale, key-signature, tonic
-- **Leads to**: modulation, key-identification, circle-of-fifths, mode
-- **See also**: parallel-keys, aeolian-mode, ionian-mode, natural-minor
+- **Prerequisite**: major-scale, minor-scale, key-signature
+- **Leads to**: modulation, circle-of-fifths, mode
+- **See also**: parallel-keys, natural-minor-scale
 
 ## Common Confusions
 

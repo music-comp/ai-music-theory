@@ -160,7 +160,7 @@ The borrowed iv (Fm) in C major = diatonic ii in E♭ major.
 ## Related Concepts
 
 - **Prerequisite**: modal-mixture, borrowed-chord, common-chord-modulation, pivot-chord
-- **Leads to**: distant-modulation, chromatic-modulation, enharmonic-modulation
+- **Leads to**: direct-modulation, chromatic-modulation, enharmonic-modulation
 - **See also**: modulation, closely-related-keys, chromatic-harmony
 
 ## Common Confusions

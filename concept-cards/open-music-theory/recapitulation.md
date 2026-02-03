@@ -225,9 +225,9 @@ Beethoven often expands recap beyond exposition
 
 ## Related Concepts
 
-- **Prerequisite**: sonata-form, exposition, development, tonic-dominant, tonal-resolution, essential-structural-closure
-- **Leads to**: coda, tonal-closure, formal-resolution, sonata-principle
-- **See also**: return, retransition, thematic-return, home-key
+- **Prerequisite**: sonata-form, exposition, development-keys, essential-sonata-closure
+- **Leads to**: sonata-principle
+- **See also**: retransition, home-key
 
 ## Common Confusions
 

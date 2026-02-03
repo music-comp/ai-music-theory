@@ -212,9 +212,9 @@ Full bass section at climax
 
 ## Related Concepts
 
-- **Prerequisite**: orchestration, instrumentation, bass-register, dynamics
-- **Leads to**: orchestral-crescendo, timbral-variation, texture-redistribution
-- **See also**: doublings, pedal-point, timpani-writing
+- **Prerequisite**: dynamics
+- **Leads to**: orchestral-crescendo, texture-redistribution
+- **See also**: pedal-point
 
 ## Common Confusions
 

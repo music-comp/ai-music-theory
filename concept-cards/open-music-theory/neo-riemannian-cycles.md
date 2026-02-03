@@ -242,7 +242,7 @@ Six triads before returning
 ## Related Concepts
 
 - **Prerequisite**: plr-transformations, neo-riemannian-theory, hexatonic-scale, octatonic-scale
-- **Leads to**: cube-dance, weitzmann-region, film-music-harmony
+- **Leads to**: cube-dance, weitzmann-region
 - **See also**: tonnetz, transformational-theory, parsimonious-voice-leading
 
 ## Common Confusions

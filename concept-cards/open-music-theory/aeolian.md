@@ -67,8 +67,8 @@ When analyzing modal music, "Aeolian" distinguishes the mode from functional min
 ## Related Concepts
 
 - **Prerequisite**: scale, mode, minor-scale, whole-step, half-step
-- **Leads to**: natural-minor, harmonic-minor, melodic-minor, relative-minor
-- **See also**: dorian, phrygian, ionian, diatonic-modes, modal-brightness
+- **Leads to**: natural-minor-scale, harmonic-minor-scale, melodic-minor-scale, relative-major-minor
+- **See also**: dorian, phrygian, ionian, diatonic-modes
 
 ## Common Confusions
 

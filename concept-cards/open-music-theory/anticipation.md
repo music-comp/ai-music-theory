@@ -198,9 +198,9 @@ Arrives before downbeat
 
 ## Related Concepts
 
-- **Prerequisite**: non-chord-tone, consonance-dissonance, weak-beat, stepwise-motion, cadence
-- **Leads to**: embellishing-tones, non-harmonic-tones, melodic-embellishment
-- **See also**: suspension, passing-tone, neighbor-tone, escape-tone, weak-beat-dissonance
+- **Prerequisite**: consonance-dissonance, cadence
+- **Leads to**: nonharmonic-tones, harmonic-embellishment
+- **See also**: suspension, passing-tone, neighbor-tone, escape-tone
 
 ## Common Confusions
 

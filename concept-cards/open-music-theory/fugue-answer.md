@@ -105,9 +105,9 @@ The answer serves crucial structural functions in the fugue:
 
 ## Related Concepts
 
-- **Prerequisite**: fugue, subject, transposition, tonic, dominant, perfect-fifth, modulation
-- **Leads to**: real-answer, tonal-answer, exposition, countersubject, episode
-- **See also**: imitation, key-relationship, baroque-tonality
+- **Prerequisite**: fugue, transposition, perfect-fourth, modulation
+- **Leads to**: real-tonal-answer, exposition, countersubject
+- **See also**: imitation, key-relationships
 
 ## Common Confusions
 

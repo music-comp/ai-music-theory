@@ -94,9 +94,9 @@ Cohn suggests that in regionally indeterminate passages:
 
 ## Related Concepts
 
-- **Prerequisite**: equal-temperament, just-intonation, Tonnetz
-- **Leads to**: hexatonic-systems, conforming-Tonnetz, enharmonic-reinterpretation
-- **See also**: syntonic-comma, Mehrdeutigkeit, tonal-pitch-space
+- **Prerequisite**: tonnetz
+- **Leads to**: hexatonic-systems
+- **See also**: mehrdeutigkeit, tonal-pitch-space
 
 ## Common Confusions
 

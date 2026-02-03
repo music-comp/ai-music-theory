@@ -195,9 +195,9 @@ V13:   G - B - F - E     →  C - C - E - C    (13th down by 3rd)
 
 ## Related Concepts
 
-- **Prerequisite**: dominant-seventh-chord, chord-extension, voice-leading, tertian-harmony
-- **Leads to**: jazz-voicing, impressionist-harmony, post-tonal-harmony
-- **See also**: altered-dominant-chord, added-tone-chord, sus-chord
+- **Prerequisite**: dominant-seventh-chord, chordal-tension, voice-leading, serial-harmony
+- **Leads to**: jazz-voicings, post-tonal-theory
+- **See also**: altered-dominant-chord
 
 ## Common Confusions
 

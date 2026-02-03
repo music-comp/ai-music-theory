@@ -230,9 +230,8 @@ Brief dominant pedal intensifies cadence
 
 ## Related Concepts
 
-- **Prerequisite**: non-chord-tone, bass-voice, consonance-dissonance, sustained-note, harmony
-- **Leads to**: prolongation, harmonic-stasis, organum, drone, bass-pedal
-- **See also**: tonic-pedal, dominant-pedal, inverted-pedal, organ-point
+- **Prerequisite**: consonance-dissonance
+- **Leads to**: tonic-prolongation, harmonic-synthesis
 
 ## Common Confusions
 

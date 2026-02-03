@@ -215,9 +215,8 @@ Creates rhythmic interest
 
 ## Related Concepts
 
-- **Prerequisite**: chord-progression, harmonic-function, phrase-structure, meter, rhythm
-- **Leads to**: phrase-rhythm, hypermeter, cadential-formula, formal-function
-- **See also**: melodic-rhythm, surface-rhythm, structural-levels, pacing
+- **Prerequisite**: harmonic-function, srdc-phrase-structure, meter, rhythm
+- **Leads to**: hypermeter
 
 ## Common Confusions
 

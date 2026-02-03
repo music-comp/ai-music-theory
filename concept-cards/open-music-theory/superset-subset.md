@@ -100,8 +100,8 @@ Is (037) an abstract subset of (013568T)?
 ## Related Concepts
 
 - **Prerequisite**: pitch-class-set, set-class
-- **Leads to**: collection-analysis, motivic-analysis, inclusion-relation
-- **See also**: complement, aggregate, segmentation
+- **Leads to**: collection-analysis, inclusion-lattice
+- **See also**: aggregate, segmentation
 
 ## Common Confusions
 

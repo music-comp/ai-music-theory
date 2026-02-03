@@ -159,9 +159,8 @@ Networks embody what Riemann feared:
 
 ## Related Concepts
 
-- **Prerequisite**: PLR-transformations, neo-Riemannian-operations, Tonnetz
-- **Leads to**: motivic-analysis, formal-analysis
-- **See also**: hexatonic-systems, Schritt-Wechsel-system
+- **Prerequisite**: plr-transformations, neo-riemannian-operations, tonnetz
+- **See also**: hexatonic-systems, schritt-wechsel-system
 
 ## Common Confusions
 

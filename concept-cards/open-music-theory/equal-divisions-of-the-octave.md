@@ -167,7 +167,7 @@ Creates "uncanny" chromatic effect
 
 - **Prerequisite**: chromatic-scale, interval, enharmonic-equivalence
 - **Leads to**: whole-tone-scale, octatonic-scale, hexatonic-scale, modes-of-limited-transposition
-- **See also**: symmetrical-chord, interval-cycle, transpositional-equivalence, neo-riemannian-theory
+- **See also**: interval-cycle, transpositional-equivalence, neo-riemannian-theory
 
 ## Common Confusions
 

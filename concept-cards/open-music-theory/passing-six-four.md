@@ -207,9 +207,8 @@ Prolongs tonic
 
 ## Related Concepts
 
-- **Prerequisite**: second-inversion, passing-tone, I-chord, weak-beat, voice-leading
-- **Leads to**: cadential-six-four, neighbor-six-four, arpeggiating-six-four, prolongation
-- **See also**: passing-bass, I64-chord, embellishing-six-four, linear-bass
+- **Prerequisite**: passing-tone, chord, voice-leading
+- **Leads to**: cadential-six-four, neighbor-six-four, tonic-prolongation
 
 ## Common Confusions
 

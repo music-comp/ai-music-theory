@@ -105,9 +105,9 @@ These are "not merely missteps on the path, or straw men to be knocked down."
 
 ## Related Concepts
 
-- **Prerequisite**: Neo-Riemannian transformations, voice-leading sums
-- **Leads to**: Transformational networks, analytical incompleteness
-- **See also**: Analytical values and paradigms, epistemological openness
+- **Prerequisite**: secondary-neo-riemannian-transformations, voice-leading
+- **Leads to**: transformational-theory
+- **See also**: analytical-values-paradigms
 
 ## Critical Distinction
 

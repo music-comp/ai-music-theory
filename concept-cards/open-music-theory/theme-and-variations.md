@@ -203,9 +203,9 @@ Character: triumphant conclusion
 
 ## Related Concepts
 
-- **Prerequisite**: phrase, period, sentence, binary-form, harmonic-progression, ornamentation, texture, mode
-- **Leads to**: ground-bass, chaconne-passacaglia, development-techniques, transformation
-- **See also**: continuous-variations, double-variations, free-variations, character-piece
+- **Prerequisite**: phrase, period, sentence, binary-form, harmonic-progression, fragmentation, texture, mode
+- **Leads to**: ground-bass, chaconne-passacaglia, transformation
+- **See also**: double-variations
 
 ## Common Confusions
 

@@ -151,7 +151,6 @@ These allow contrapuntal voice-leading to explain apparent harmonic changes with
 
 - **Prerequisites**: tonality, harmonic-function, applied-dominant, key
 - **Leads to**: chromatic-harmony, pivot-chord, tonicization
-- **See also**: Zwischenharmonie, Verwandtschaft, functional-analysis
 
 ## Common Confusions
 

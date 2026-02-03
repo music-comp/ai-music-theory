@@ -172,9 +172,8 @@ Harmonic adventure typical of fantasia
 
 ## Related Concepts
 
-- **Prerequisite**: keyboard-technique, improvisation, modulation, textural-variety, formal-freedom, expressive-performance
-- **Leads to**: prelude, toccata, free-composition, romantic-character-piece, impromptu
-- **See also**: capriccio, rhapsody, impromptu, prelude-and-fugue
+- **Prerequisite**: modulation
+- **Leads to**: toccata
 
 ## Common Confusions
 

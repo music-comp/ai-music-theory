@@ -92,7 +92,7 @@ PC int: 4  - 5  - 8  - 9  - 0
 
 - **Prerequisite**: pitch-class, enharmonic-equivalence, mod-12-arithmetic
 - **Leads to**: pitch-class-set, ordered-pitch-class-interval, transposition-operation, inversion-operation
-- **See also**: clock-face-representation, normal-order, interval-class
+- **See also**: normal-order, interval-class
 
 ## Common Confusions
 

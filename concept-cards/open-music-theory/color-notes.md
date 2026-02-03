@@ -106,8 +106,7 @@ In C Lydian (color note F#):
 ## Related Concepts
 
 - **Prerequisite**: diatonic-modes, scale-degree, major-scale, natural-minor-scale
-- **Leads to**: modal-identification, modal-composition, modal-jazz
-- **See also**: mode-mixture, chord-scale-theory, modal-brightness
+- **See also**: mode-mixture, chord-scale-theory
 
 ## Common Confusions
 

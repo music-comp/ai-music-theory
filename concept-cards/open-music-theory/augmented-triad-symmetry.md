@@ -230,9 +230,9 @@ Rotate 4 semitones = same chord, different spelling
 
 ## Related Concepts
 
-- **Prerequisite**: augmented-triad, major-third, symmetry, enharmonic-equivalence
-- **Leads to**: whole-tone-scale, neo-Riemannian-theory, hexatonic-system
-- **See also**: diminished-seventh-symmetry, equal-division, voice-leading-parsimony
+- **Prerequisite**: augmented-triad, major-triad, row-symmetry, enharmonic-equivalence
+- **Leads to**: whole-tone-scale, neo-riemannian-theory, hexatonic-system
+- **See also**: diminished-seventh-symmetry
 
 ## Common Confusions
 

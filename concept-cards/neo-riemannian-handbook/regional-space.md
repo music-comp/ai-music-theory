@@ -135,9 +135,9 @@ Each region is "held in place" by its syntonic seams:
 
 ## Related Concepts
 
-- **Prerequisite**: Tonnetz, diatonic-scale, key, modulation
-- **Leads to**: key-distance, chromatic-transformation-networks
-- **See also**: tonal-pitch-space, Verwandtschaftsgrad
+- **Prerequisite**: tonnetz, hexatonic-scale, modulation
+- **Leads to**: chromatic-transformation-networks
+- **See also**: tonal-pitch-space, verwandtschaftsgrad
 
 ## Common Confusions
 

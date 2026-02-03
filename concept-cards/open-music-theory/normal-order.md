@@ -105,8 +105,8 @@ Normal order: [3, 4, 7]
 ## Related Concepts
 
 - **Prerequisite**: pitch-class-set, integer-notation, mod-12-arithmetic
-- **Leads to**: prime-form, set-class, transposition-Tn, inversion-In
-- **See also**: clock-face-representation, interval-vector
+- **Leads to**: prime-form, set-class, transposition-tn, inversion-in
+- **See also**: interval-vector
 
 ## Common Confusions
 

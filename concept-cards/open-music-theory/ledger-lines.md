@@ -47,8 +47,8 @@ Piano music frequently uses ledger lines, especially middle C (which appears on 
 ## Related Concepts
 
 - **Prerequisite**: staff, clef, pitch
-- **Leads to**: grand-staff, range, tessitura
-- **See also**: middle-c, octave
+- **Leads to**: grand-staff
+- **See also**: middle-c
 
 ## Common Confusions
 

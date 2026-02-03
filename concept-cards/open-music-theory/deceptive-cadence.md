@@ -180,9 +180,9 @@ Extends harmonic tension significantly
 
 ## Related Concepts
 
-- **Prerequisite**: cadence, dominant, tonic, submediant, V-I-progression, authentic-cadence
-- **Leads to**: phrase-extension, harmonic-surprise, interrupted-cadence, chromatic-harmony
-- **See also**: false-cadence, avoided-cadence, evaded-cadence, vi-chord-function
+- **Prerequisite**: cadence, ii-v-i-progression, authentic-cadence
+- **Leads to**: phrase-extension, chromatic-harmony
+- **See also**: evaded-cadence, evaded-cadence
 
 ## Common Confusions
 

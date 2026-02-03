@@ -155,8 +155,8 @@ Ab - D - F# - C  →  G - D - G - B (G major = V in C)
 ## Related Concepts
 
 - **Prerequisite**: dominant-function, chromatic-alteration, augmented-triad, voice-leading
-- **Leads to**: french-augmented-sixth, enharmonic-modulation, jazz-altered-dominant
-- **See also**: augmented-sixth-chord, symmetrical-chord, extended-dominant
+- **Leads to**: french-augmented-sixth, enharmonic-modulation
+- **See also**: augmented-sixth-chord
 
 ## Common Confusions
 

@@ -140,7 +140,7 @@ When reading analysis, always check:
 
 - **Prerequisite**: twelve-tone-row, row-operations, pitch-class
 - **Leads to**: row-matrix, twelve-tone-analysis
-- **See also**: transposition, fixed-do-moveable-do
+- **See also**: transposition
 
 ## Common Confusions
 

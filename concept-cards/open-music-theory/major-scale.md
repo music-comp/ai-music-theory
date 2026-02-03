@@ -57,8 +57,8 @@ All follow the same W-W-H-W-W-W-H pattern.
 
 ## Related Concepts
 
-- **Prerequisite**: scale, half-step, whole-step, pitch, octave
-- **Leads to**: key-signature, scale-degree, tonic, major-key, diatonic, solfège
+- **Prerequisite**: scale, half-step, whole-step, pitch
+- **Leads to**: key-signature, scale-degree, diatonicity, solfege
 - **See also**: minor-scale, mode, tonality, chord
 
 ## Common Confusions

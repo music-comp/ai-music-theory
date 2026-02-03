@@ -157,8 +157,8 @@ Webern structures piece around this:
 ## Related Concepts
 
 - **Prerequisite**: twelve-tone-row, row-operations, row-matrix
-- **Leads to**: twelve-tone-analysis, webern-analysis, row-properties
-- **See also**: derived-row, palindrome, invariance
+- **Leads to**: twelve-tone-analysis, webern-op7-analysis
+- **See also**: derived-row, invariants
 
 ## Common Confusions
 

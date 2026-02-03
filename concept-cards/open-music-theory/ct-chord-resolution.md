@@ -247,7 +247,7 @@ Embellishes dominant harmony
 ## Related Concepts
 
 - **Prerequisite**: common-tone-chords, neighbor-tone, voice-leading
-- **Leads to**: prolongation-techniques, chromatic-embellishment
+- **Leads to**: harmonic-embellishment
 - **See also**: common-tone-diminished-seventh, common-tone-augmented-sixth
 
 ## Common Confusions

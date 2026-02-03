@@ -153,9 +153,9 @@ Total subject = 8 measures with clear internal organization
 
 ## Related Concepts
 
-- **Prerequisite**: fugue-subject, theme, motive, sequence, cadence, baroque-style
-- **Leads to**: thematic-development, fugal-exposition, episode-construction, baroque-form
-- **See also**: sentence-structure, period-structure, ritornello-form, subject-analysis
+- **Prerequisite**: fugue-subject, motive, sequence, cadence
+- **Leads to**: terminal-development, fugal-exposition
+- **See also**: ritornello
 
 ## Common Confusions
 

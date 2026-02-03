@@ -80,9 +80,9 @@ The question: "Might the resulting unified theory be massive and overbuilt relat
 
 ## Related Concepts
 
-- **Prerequisite**: Neo-Riemannian transformations, Riemann's function theory
-- **Leads to**: Harrisonian functional system, sensuous-functional analysis
-- **See also**: Analytical values and paradigms, tonal intention
+- **Prerequisite**: secondary-neo-riemannian-transformations
+- **Leads to**: harrisonian-functional-discharge
+- **See also**: analytical-values-paradigms
 
 ## The Pinocchio Alternative
 

@@ -268,9 +268,8 @@ Shows non-chord tone pattern
 
 ## Related Concepts
 
-- **Prerequisite**: intervals, triad, seventh-chord, inversion, bass-voice, chord-construction
-- **Leads to**: continuo-realization, thoroughbass, harmonic-analysis, chord-inversion-identification
-- **See also**: Roman-numeral-analysis, basso-continuo, figured-bass-realization, interval-notation
+- **Prerequisite**: intervals, triad, seventh-chord, inversion, tetrachord-construction
+- **See also**: roman-numeral-analysis
 
 ## Common Confusions
 

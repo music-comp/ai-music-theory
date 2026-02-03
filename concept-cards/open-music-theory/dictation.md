@@ -79,9 +79,9 @@ Aural skills classes use recorded examples for dictation. Jazz musicians transcr
 
 ## Related Concepts
 
-- **Prerequisite**: pitch, rhythm, staff-notation, solfege, scale-degree, meter
-- **Leads to**: transcription, arrangement, composition, aural-analysis
-- **See also**: sight-singing, protonotation, ear-training, audiation
+- **Prerequisite**: pitch, rhythm, solfege, scale-degree, meter
+- **Leads to**: transition
+- **See also**: sight-singing, protonotation
 
 ## Common Confusions
 

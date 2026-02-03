@@ -240,9 +240,9 @@ Minimal retransition, direct preparation
 
 ## Related Concepts
 
-- **Prerequisite**: development-section, recapitulation, dominant, pedal-point, sonata-form, formal-functions
-- **Leads to**: recapitulation-return, dominant-prolongation, formal-articulation
-- **See also**: transition, dominant-preparation, standing-on-the-dominant, formal-boundary
+- **Prerequisite**: development-section, recapitulation, pedal-point, sonata-form
+- **Leads to**: recapitulation-section, dominant-prolongation
+- **See also**: transition, standing-on-the-dominant
 
 ## Common Confusions
 

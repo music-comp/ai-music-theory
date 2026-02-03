@@ -65,8 +65,7 @@ The raised ^6 is the defining characteristic distinguishing Dorian from Aeolian 
 ## Related Concepts
 
 - **Prerequisite**: scale, mode, minor-scale, whole-step, half-step
-- **Leads to**: modal-jazz, folk-music, medieval-music, modal-harmony
-- **See also**: aeolian, phrygian, mixolydian, diatonic-modes, modal-brightness
+- **See also**: aeolian, phrygian, mixolydian, diatonic-modes
 
 ## Common Confusions
 

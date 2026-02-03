@@ -178,9 +178,9 @@ Any of these schemas could open a galant theme; choice depends on desired charac
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, meyer-schema, opening-gambit, tonic-frame, scale-degree
-- **Leads to**: schema-substitution, melodic-variety, thematic-construction
-- **See also**: romanesca, prinner, continuation-schemas
+- **Prerequisite**: galant-schema, meyer-schema, scale-degree
+- **Leads to**: thematic-conception
+- **See also**: continuation-phrase
 
 ## Common Confusions
 

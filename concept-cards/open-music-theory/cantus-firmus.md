@@ -71,9 +71,9 @@ This exhibits: stepwise motion, small leaps, single climax (G), ^2–^1 cadence,
 
 ## Related Concepts
 
-- **Prerequisite**: melody, scale-degree, stepwise-motion, leap, consonance
-- **Leads to**: species-counterpoint, counterpoint, polyphony, chorale-prelude
-- **See also**: tenor-voice, fixed-melody, ground-bass, ostinato
+- **Prerequisite**: scale-degree, consonance
+- **Leads to**: species-counterpoint, counterpoint, polyphony
+- **See also**: ground-bass, ostinato
 
 ## Common Confusions
 

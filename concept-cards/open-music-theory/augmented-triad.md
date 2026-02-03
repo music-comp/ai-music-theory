@@ -215,9 +215,9 @@ Smooth chromatic connection I to IV
 
 ## Related Concepts
 
-- **Prerequisite**: triad, major-third, augmented-fifth, chord-quality
-- **Leads to**: augmented-triad-symmetry, V+, whole-tone-scale
-- **See also**: diminished-triad, altered-dominant, chromatic-harmony
+- **Prerequisite**: triad, major-triad, chord-quality
+- **Leads to**: augmented-triad-symmetry, whole-tone-scale
+- **See also**: diminished-triad, altered-dominant-chord, chromatic-harmony
 
 ## Common Confusions
 

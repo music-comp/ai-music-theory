@@ -141,9 +141,9 @@ New row "derived from" the subsegment
 
 ## Related Concepts
 
-- **Prerequisite**: twelve-tone-row, set-class, discrete-segments
-- **Leads to**: combinatoriality, invariance, row-properties
-- **See also**: trichord, tetrachord, pitch-class-set
+- **Prerequisite**: twelve-tone-row, set-class
+- **Leads to**: combinatoriality, invariants
+- **See also**: tetrachord, pitch-class-set
 
 ## Common Confusions
 

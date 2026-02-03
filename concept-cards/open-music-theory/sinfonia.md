@@ -147,9 +147,9 @@ Binary structure provides formal clarity
 
 ## Related Concepts
 
-- **Prerequisite**: invention, counterpoint, three-voice-writing, imitation, fugue, keyboard-technique, binary-form
-- **Leads to**: fugue, trio-sonata, three-part-counterpoint, prelude-and-fugue
-- **See also**: two-part-invention, ricercar, free-counterpoint, keyboard-pedagogy
+- **Prerequisite**: counterpoint, imitation, fugue, binary-form
+- **Leads to**: fugue, free-counterpoint
+- **See also**: ricercar, free-counterpoint
 
 ## Common Confusions
 

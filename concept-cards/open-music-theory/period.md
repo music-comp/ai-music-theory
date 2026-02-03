@@ -118,9 +118,9 @@ The period is a fundamental formal archetype:
 
 ## Related Concepts
 
-- **Prerequisite**: phrase, cadence, basic-idea, contrasting-idea, antecedent, consequent
-- **Leads to**: compound-period, double-period, modulating-period, contrasting-period
-- **See also**: sentence, repeated-phrase, hybrid-forms
+- **Prerequisite**: phrase, cadence, basic-idea, contrasting-idea
+- **Leads to**: compound-period, double-period, modulating-period, parallel-contrasting-period
+- **See also**: sentence
 
 ## Common Confusions
 

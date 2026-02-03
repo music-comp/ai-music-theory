@@ -112,9 +112,9 @@ Step 4: Compare
 
 ## Related Concepts
 
-- **Prerequisite**: normal-order, transposition-Tn, inversion-In, set-class
-- **Leads to**: forte-number, set-class-table, interval-vector
-- **See also**: cardinality, z-relation, complement
+- **Prerequisite**: normal-order, transposition-tn, inversion-in, set-class
+- **Leads to**: forte-number, interval-vector
+- **See also**: cardinality, z-relation
 
 ## Common Confusions
 

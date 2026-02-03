@@ -181,7 +181,7 @@ Both D♭ and A♭ are foreign
 ## Related Concepts
 
 - **Prerequisite**: neapolitan-sixth, natural-minor-scale, chromatic-harmony
-- **Leads to**: chromatic-predominant, mode-mixture-in-context
+- **Leads to**: chromatic-predominant
 - **See also**: modal-mixture, parallel-keys
 
 ## Common Confusions

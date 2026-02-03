@@ -127,9 +127,8 @@ This progression enacts the subdominant-side exploration.
 
 ## Related Concepts
 
-- **Prerequisite**: harmonic-dualism, sonata-form, function-theory
-- **Leads to**: formal-analysis, harmonic-rhythm, tonal-plan
-- **See also**: hauptmann-dialectic, triad-of-triads, scheinkonsonanz
+- **Prerequisite**: harmonic-dualism, sonata-form
+- **Leads to**: harmonic-rhythm
 
 ## Common Confusions
 

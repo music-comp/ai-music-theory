@@ -250,7 +250,7 @@ Creates descending chromatic bass
 
 - **Prerequisite**: leading-tone, dominant-function, applied-chord
 - **Leads to**: harmonic-elision, raised-root-elision, chromatic-sequence
-- **See also**: deceptive-resolution, secondary-dominant, harmonic-surprise
+- **See also**: deceptive-resolution, secondary-dominant
 
 ## Common Confusions
 

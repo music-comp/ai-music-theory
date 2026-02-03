@@ -92,9 +92,8 @@ Riemann's functional analysis casts the passage as **syntactically normative** (
 
 ## Related Concepts
 
-- **Prerequisite**: Riemannian function theory, neo-Riemannian transformations
-- **Leads to**: Phenomenological approach to analysis, intentional paths
-- **See also**: Monotonality principle, Garden of Eden metaphor, tonal crisis
+- **Prerequisite**: secondary-neo-riemannian-transformations
+- **See also**: monotonality-principle, garden-of-eden-metaphor
 
 ## Critical Insight
 

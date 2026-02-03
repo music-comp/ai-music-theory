@@ -100,8 +100,8 @@ T11: up a major seventh (= down a m2)
 ## Related Concepts
 
 - **Prerequisite**: pitch-class-set, integer-notation, mod-12-arithmetic, normal-order
-- **Leads to**: set-class, prime-form, Tn/In-equivalence, twelve-tone-operations
-- **See also**: inversion-In, interval-preservation, index-number
+- **Leads to**: set-class, prime-form, twelve-tone-series
+- **See also**: inversion-in, index-number
 
 ## Common Confusions
 

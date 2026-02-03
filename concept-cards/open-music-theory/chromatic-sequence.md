@@ -218,8 +218,8 @@ Continuous chromatic descent
 ## Related Concepts
 
 - **Prerequisite**: sequence, secondary-dominant, chromatic-modulation, circle-of-fifths
-- **Leads to**: equal-division, omnibus-progression, development-section-techniques
-- **See also**: diatonic-sequence, chromatic-third-relation, applied-chord
+- **Leads to**: omnibus-progression
+- **See also**: chromatic-third-relation, applied-chord
 
 ## Common Confusions
 

@@ -194,9 +194,8 @@ Tonic pedal creates stasis, certainty of closure
 
 ## Related Concepts
 
-- **Prerequisite**: cadence, formal-section, exposition, recapitulation, development, tonic-dominant, pedal-point
-- **Leads to**: formal-functions, closing-zone, retransition, formal-expansion
-- **See also**: closing-theme, terminal-climax, peroration
+- **Prerequisite**: cadence, exposition, recapitulation, development-keys, pedal-point
+- **Leads to**: retransition
 
 ## Common Confusions
 

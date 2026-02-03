@@ -75,7 +75,6 @@ Each tonic arrival creates another cadential confirmation.
 ## Related Concepts
 
 - **Prerequisite**: period, phrase, periodic-function, cadence, hierarchical-metric-organization
-- **Leads to**: formal-analysis, compositional-development, dramatic-timing
 - **See also**: schlusswirkung, vorhang, auftakttheorie
 
 ## Common Confusions

@@ -50,9 +50,9 @@ In "The Stars and Stripes Forever" (march), the steady beat is very obvious, mak
 
 ## Related Concepts
 
-- **Prerequisite**: rhythm, pulse, time
-- **Leads to**: meter, time-signature, tempo, subdivision, downbeat, upbeat
-- **See also**: measure, bar-line, tactus, pulse
+- **Prerequisite**: rhythm, tie
+- **Leads to**: meter, time-signature, tempo, beat
+- **See also**: measure
 
 ## Common Confusions
 

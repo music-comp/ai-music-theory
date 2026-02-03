@@ -69,9 +69,8 @@ Mozart's piano sonatas use delicate staccato for lightness. Chopin's nocturnes f
 
 ## Related Concepts
 
-- **Prerequisite**: note, duration, performance-practice
-- **Leads to**: phrasing, expression, bowing, tonguing, style-period
-- **See also**: legato, staccato, slur, accent, dynamics, tenuto
+- **Prerequisite**: note
+- **See also**: dynamics
 
 ## Common Confusions
 

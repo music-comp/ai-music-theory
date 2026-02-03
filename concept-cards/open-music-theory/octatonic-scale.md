@@ -221,9 +221,9 @@ Em and Bbm (tritone apart)
 
 ## Related Concepts
 
-- **Prerequisite**: half-step, whole-step, diminished-seventh-chord, minor-third
+- **Prerequisite**: half-step, whole-step, diminished-seventh-chord, minor-triad
 - **Leads to**: modes-of-limited-transposition, distance-model, neo-riemannian-theory
-- **See also**: equal-divisions-of-the-octave, whole-tone-scale, hexatonic-scale, symmetrical-collection
+- **See also**: equal-divisions-of-the-octave, whole-tone-scale, hexatonic-scale
 
 ## Common Confusions
 

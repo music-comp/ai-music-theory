@@ -202,9 +202,8 @@ Individual colors highlighted
 
 ## Related Concepts
 
-- **Prerequisite**: register, voice-leading, chord-voicing, close-and-open-position
-- **Leads to**: orchestral-blend, orchestral-texture, timbral-contrast
-- **See also**: tessitura, doublings, instrumental-range
+- **Prerequisite**: voice-leading
+- **Leads to**: orchestral-blend
 
 ## Common Confusions
 

@@ -111,9 +111,9 @@ Textbooks and analyses regularly use segmentation to demonstrate:
 
 ## Related Concepts
 
-- **Prerequisite**: phrase, idea, cadence, motive, formal-hierarchy
-- **Leads to**: phrase-analysis, formal-analysis, period, sentence, phrase-expansion
-- **See also**: bracketing, phrase-structure, idea-level, musical-form
+- **Prerequisite**: phrase, cadence, motive
+- **Leads to**: period, sentence, phrase-expansion
+- **See also**: srdc-phrase-structure
 
 ## Common Confusions
 

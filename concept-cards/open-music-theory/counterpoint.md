@@ -61,9 +61,9 @@ Each line is melodically coherent and creates consonant harmonies when combined.
 
 ## Related Concepts
 
-- **Prerequisite**: melody, interval, consonance-dissonance, voice, independence
-- **Leads to**: species-counterpoint, fugue, canon, imitation, voice-leading, invertible-counterpoint
-- **See also**: polyphony, texture, horizontal-writing, linear-analysis
+- **Prerequisite**: interval, consonance-dissonance
+- **Leads to**: species-counterpoint, fugue, canzona, imitation, voice-leading, invertible-counterpoint
+- **See also**: polyphony, texture
 
 ## Common Confusions
 

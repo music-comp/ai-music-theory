@@ -62,8 +62,8 @@ Bach's Toccata and Fugue in D minor, Beethoven's "Moonlight" Sonata (C♯ minor)
 ## Related Concepts
 
 - **Prerequisite**: scale, major-scale, half-step, whole-step, scale-degree
-- **Leads to**: natural-minor, harmonic-minor, melodic-minor, minor-key, relative-major-minor, parallel-major-minor
-- **See also**: mode, leading-tone, subtonic, tendency-tone
+- **Leads to**: natural-minor-scale, harmonic-minor-scale, melodic-minor-scale, relative-major-minor, parallel-major-minor
+- **See also**: mode, leading-tone, subtonic
 
 ## Common Confusions
 

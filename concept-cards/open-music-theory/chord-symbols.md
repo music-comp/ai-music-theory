@@ -82,8 +82,7 @@ Jazz fake books: "Autumn Leaves" (Cmi7, F7, B♭maj7, E♭maj7, Aø7, D7, Gmi7).
 
 ## Related Concepts
 
-- **Prerequisite**: chord, triad, seventh-chord, root, inversion
-- **Leads to**: lead-sheet, jazz-harmony, chord-voicing, comping
+- **Prerequisite**: chord, triad, seventh-chord, inversion
 - **See also**: figured-bass, roman-numeral-analysis, slash-chords
 
 ## Common Confusions

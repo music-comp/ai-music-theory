@@ -144,9 +144,9 @@ Many analysts use both:
 
 ## Related Concepts
 
-- **Prerequisite**: Harmonieschritte, PLR-transformations, group-theory
-- **Leads to**: neo-Riemannian-operations, chromatic-transformation-networks
-- **See also**: Klang, harmonic-dualism, root-interval
+- **Prerequisite**: harmonieschritte, plr-transformations
+- **Leads to**: neo-riemannian-operations, chromatic-transformation-networks
+- **See also**: klang, harmonic-dualism, tch-interval
 
 ## Common Confusions
 

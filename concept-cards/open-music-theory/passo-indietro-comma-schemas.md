@@ -185,9 +185,8 @@ Passo Indietro can lead to Prinner continuation
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, pre-cadential, dominant-seventh-inversions, first-inversion-tonic, voice-exchange
-- **Leads to**: prinner, expanded-cadences, inverted-dominants
-- **See also**: two-stage-schemas, brief-cadential-formulas, voice-exchange-patterns
+- **Prerequisite**: galant-schema
+- **Leads to**: evaded-cadence
 
 ## Common Confusions
 

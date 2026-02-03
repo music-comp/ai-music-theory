@@ -64,9 +64,9 @@ This progression exemplifies *Tonalitat* by juxtaposing the tonic with its two m
 
 ## Related Concepts
 
-- **Prerequisite**: tonality, key, chromatic-harmony, harmonic-function
-- **Leads to**: chromatic-mediant, tonnetz-key-flips, extended-tonality
-- **See also**: functional-harmony, neo-riemannian-theory, hexatonic-system
+- **Prerequisite**: tonality, chromatic-harmony, harmonic-function
+- **Leads to**: chromatic-mediant
+- **See also**: neo-riemannian-theory, hexatonic-system
 
 ## Common Confusions
 

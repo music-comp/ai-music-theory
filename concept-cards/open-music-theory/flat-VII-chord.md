@@ -164,8 +164,7 @@ Mixes borrowed chords with diatonic V
 ## Related Concepts
 
 - **Prerequisite**: subtonic, modal-mixture, borrowed-chord, mixolydian
-- **Leads to**: rock-harmony, modal-harmony, double-plagal-progression
-- **See also**: flat-VI-chord, minor-subdominant, modal-interchange
+- **See also**: minor-subdominant, modal-interchange
 
 ## Common Confusions
 

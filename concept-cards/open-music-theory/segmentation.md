@@ -97,9 +97,9 @@ statistically inevitable but musically empty.
 
 ## Related Concepts
 
-- **Prerequisite**: pitch-class-set, set-class, musical-analysis
-- **Leads to**: set-relationships, motivic-analysis, analytical-interpretation
-- **See also**: normal-order, prime-form, superset
+- **Prerequisite**: pitch-class-set, set-class
+- **Leads to**: key-relationships
+- **See also**: normal-order, prime-form
 
 ## Common Confusions
 

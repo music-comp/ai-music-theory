@@ -116,8 +116,8 @@ Major triads have NO transpositional symmetry
 
 ## Related Concepts
 
-- **Prerequisite**: transposition-Tn, pitch-class-set, interval-class
-- **Leads to**: modes-of-limited-transposition, inversional-symmetry, collection-theory
+- **Prerequisite**: transposition-tn, pitch-class-set, interval-class
+- **Leads to**: modes-of-limited-transposition, inversional-symmetry
 - **See also**: whole-tone-collection, octatonic-collection, hexatonic-collection
 
 ## Common Confusions

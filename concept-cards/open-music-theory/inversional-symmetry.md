@@ -106,9 +106,8 @@ The tritone divides the octave in half, creating maximum symmetry
 
 ## Related Concepts
 
-- **Prerequisite**: inversion-In, pitch-class-set, interval-class
-- **Leads to**: twelve-tone-symmetry, axis-system, mirror-structure
-- **See also**: transpositional-symmetry, wedge-motion, bartok-analysis
+- **Prerequisite**: inversion-in, pitch-class-set, interval-class
+- **See also**: transpositional-symmetry
 
 ## Common Confusions
 

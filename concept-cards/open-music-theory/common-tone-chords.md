@@ -253,8 +253,8 @@ Prolongs dominant
 ## Related Concepts
 
 - **Prerequisite**: common-tone-diminished-seventh, german-sixth, neighbor-tone
-- **Leads to**: chromatic-prolongation, non-functional-harmony
-- **See also**: embellishing-chord, chromatic-voice-leading, pedal-point
+- **Leads to**: chromatic-modulation
+- **See also**: chromatic-voice-motion, pedal-point
 
 ## Common Confusions
 

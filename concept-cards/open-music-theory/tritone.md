@@ -65,9 +65,9 @@ Opening of "The Simpsons" theme (F-B tritone). Wagner's "Tristan und Isolde" ope
 
 ## Related Concepts
 
-- **Prerequisite**: interval, augmented-fourth, diminished-fifth, semitone
-- **Leads to**: dominant-seventh, diminished-seventh, tritone-substitution, locrian-mode
-- **See also**: dissonance, resolution, functional-harmony, interval-class
+- **Prerequisite**: interval, semitone
+- **Leads to**: dominant-seventh-chord, half-diminished-seventh, tritone-substitution, locrian-mode
+- **See also**: dissonance, interval-class
 
 ## Common Confusions
 

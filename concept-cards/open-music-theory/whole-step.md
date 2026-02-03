@@ -46,8 +46,8 @@ The beginning of "Happy Birthday" moves up a whole step (from G to A in the key 
 
 ## Related Concepts
 
-- **Prerequisite**: pitch, interval, half-step, keyboard
-- **Leads to**: major-second, whole-tone-scale, diatonic-scale, major-scale
+- **Prerequisite**: pitch, interval, half-step
+- **Leads to**: whole-tone-scale, hexatonic-scale, major-scale
 - **See also**: interval-quality, scale-degree, melodic-interval
 
 ## Common Confusions

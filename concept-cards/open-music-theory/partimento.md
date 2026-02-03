@@ -111,9 +111,9 @@ Partimento was central to musical education in the 18th century:
 
 ## Related Concepts
 
-- **Prerequisite**: figured-bass, bass-line, harmony, voice-leading, keyboard-skills
-- **Leads to**: galant-schema, rule-of-the-octave, improvisation, composition, thoroughbass
-- **See also**: basso-continuo, figured-bass-realization, neapolitan-school, fenaroli, durante
+- **Prerequisite**: figured-bass, voice-leading
+- **Leads to**: galant-schema, rule-of-the-octave
+- **See also**: neapolitan-chord
 
 ## Common Confusions
 

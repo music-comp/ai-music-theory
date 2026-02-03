@@ -79,9 +79,8 @@ Beethoven's Symphony No. 5: _Allegro con brio_ (fast with vigor). Chopin's Noctu
 
 ## Related Concepts
 
-- **Prerequisite**: beat, meter, rhythm, duration
-- **Leads to**: metronome, expression, character, style-period, agogic-accent
-- **See also**: ritardando, accelerando, rubato, fermata
+- **Prerequisite**: beat, meter, rhythm
+- **See also**: fermata
 
 ## Common Confusions
 

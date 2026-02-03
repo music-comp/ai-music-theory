@@ -52,8 +52,7 @@ Turnaround with tritone subs:
 ## Related Concepts
 
 - **Prerequisite**: dominant-seventh-chord, tritone, ii-v-i-progression
-- **Leads to**: chromatic-bass-line, jazz-reharmonization, bebop-harmony
-- **See also**: turnaround, applied-chord, chord-substitution
+- **See also**: turnaround, applied-chord
 
 ## Common Confusions
 

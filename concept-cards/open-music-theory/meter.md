@@ -61,9 +61,9 @@ Compound duple: Many folk songs and hymns (6/8)
 
 ## Related Concepts
 
-- **Prerequisite**: beat, rhythm, pulse
-- **Leads to**: time-signature, simple-meter, compound-meter, duple-meter, triple-meter, quadruple-meter, measure, downbeat
-- **See also**: tempo, accent, syncopation, hypermeter
+- **Prerequisite**: beat, rhythm
+- **Leads to**: time-signature, simple-meter, compound-meter, simple-meter, measure
+- **See also**: tempo, syncopation, hypermeter
 
 ## Common Confusions
 

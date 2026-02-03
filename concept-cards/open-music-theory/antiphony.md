@@ -154,9 +154,8 @@ Question-answer relationship
 
 ## Related Concepts
 
-- **Prerequisite**: orchestration, instrumentation, form, phrase
-- **Leads to**: orchestral-crescendo, dovetailing, timbral-contrast
-- **See also**: tutti, orchestral-texture, formal-articulation
+- **Prerequisite**: phrase
+- **Leads to**: orchestral-crescendo, dovetailing
 
 ## Common Confusions
 

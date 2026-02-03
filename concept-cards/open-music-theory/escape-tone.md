@@ -218,8 +218,7 @@ Leaps to E
 
 ## Related Concepts
 
-- **Prerequisite**: non-chord-tone, stepwise-motion, leap, weak-beat, chord-tone
-- **Leads to**: melodic-embellishment, non-harmonic-tones, échappée
+- **Leads to**: harmonic-embellishment, nonharmonic-tones
 - **See also**: appoggiatura, passing-tone, neighbor-tone, anticipation, incomplete-neighbor
 
 ## Common Confusions

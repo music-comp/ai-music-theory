@@ -125,8 +125,8 @@ Analysis:    I      IV⁶    V⁶     I
 ## Related Concepts
 
 - **Prerequisite**: triad, scale-degree, major-scale, minor-scale, chord-quality, figured-bass
-- **Leads to**: harmonic-function, chord-progression, harmonic-analysis
-- **See also**: figured-bass, functional-analysis, scale-degree-analysis
+- **Leads to**: harmonic-function
+- **See also**: figured-bass
 
 ## Common Confusions
 

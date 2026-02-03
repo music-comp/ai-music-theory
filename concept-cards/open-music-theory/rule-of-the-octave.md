@@ -100,9 +100,8 @@ The Rule was so fundamental that composers internalized it, making its influence
 
 ## Related Concepts
 
-- **Prerequisite**: scale, bass-line, figured-bass, harmony, voice-leading, chord-inversion
-- **Leads to**: partimento, galant-schema, figured-bass-realization, sequential-harmonization
-- **See also**: regola-dell-ottava, fenaroli, continuo, thoroughbass
+- **Prerequisite**: scale, figured-bass, voice-leading, ninth-chord-inversion
+- **Leads to**: partimento, galant-schema, sequential-modulation
 
 ## Common Confusions
 

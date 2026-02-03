@@ -170,9 +170,8 @@ Rhythmic complexity adds urgency
 
 ## Related Concepts
 
-- **Prerequisite**: orchestration, dynamics, register, instrumentation
-- **Leads to**: timbral-contrast, climax, formal-articulation
-- **See also**: antiphony, holding-back-timbre, orchestral-texture
+- **Prerequisite**: dynamics
+- **See also**: antiphony
 
 ## Common Confusions
 

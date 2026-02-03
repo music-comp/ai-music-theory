@@ -137,9 +137,9 @@ Meyer uses pattern once in unified progression
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, sequence, tonicization, cycle-of-fifths, scale-degree, modular-repetition
-- **Leads to**: monte, sequential-technique, continuation-schemas, transition-patterns
-- **See also**: meyer, descending-fifths-progression, fa-mi-pattern, riepel-schemas
+- **Prerequisite**: galant-schema, sequence, tonicization, circle-of-fifths, scale-degree
+- **Leads to**: continuation-phrase
+- **See also**: meter
 
 ## Common Confusions
 

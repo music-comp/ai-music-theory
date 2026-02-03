@@ -167,8 +167,7 @@ This synchronic approach ignored cultural specificity in favor of structural uni
 ## Related Concepts
 
 - **Prerequisites**: interval, perfect-fourth, scale, pentatonicism
-- **Leads to**: mode, diatonic-scale, mese, pien, hexachord
-- **See also**: genera, Greek-music-theory, species
+- **Leads to**: mode, hexatonic-scale
 
 ## Common Confusions
 

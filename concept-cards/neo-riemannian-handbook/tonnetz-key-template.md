@@ -75,9 +75,9 @@ common-tone retention and minimal pitch-class change.
 
 ## Related Concepts
 
-- **Prerequisite**: tonnetz, diatonic-scale, key, chromatic-mediant
+- **Prerequisite**: tonnetz, hexatonic-scale, chromatic-mediant
 - **Leads to**: key-relationships, modulation, chromatic-tonality
-- **See also**: neo-riemannian-transformations, PLR-operations, common-tone-theory
+- **See also**: secondary-neo-riemannian-transformations
 
 ## Common Confusions
 

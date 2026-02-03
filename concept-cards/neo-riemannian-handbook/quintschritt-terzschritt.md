@@ -145,9 +145,9 @@ For A minor (generates down):
 
 ## Related Concepts
 
-- **Prerequisite**: Harmonieschritte, Klang, harmonic-dualism
-- **Leads to**: Schritt-Wechsel-system, combinatorial-group-theory
-- **See also**: Tonnetz, PLR-transformations
+- **Prerequisite**: harmonieschritte, klang, harmonic-dualism
+- **Leads to**: schritt-wechsel-system, combinatorial-group-theory
+- **See also**: tonnetz, plr-transformations
 
 ## Common Confusions
 

@@ -116,9 +116,9 @@ The sentence is a fundamental phrase archetype in Classical music:
 
 ## Related Concepts
 
-- **Prerequisite**: phrase, basic-idea, cadence, presentation, continuation, harmonic-rhythm
-- **Leads to**: period, compound-period, hybrid-forms, phrase-expansion
-- **See also**: fragmentation, sequence, archetypal-form, sentential
+- **Prerequisite**: phrase, basic-idea, cadence, row-presentation, harmonic-rhythm
+- **Leads to**: period, compound-period, phrase-expansion
+- **See also**: fragmentation, sequence
 
 ## Common Confusions
 

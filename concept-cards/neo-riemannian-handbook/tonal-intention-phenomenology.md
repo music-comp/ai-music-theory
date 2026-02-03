@@ -101,9 +101,8 @@ But the approach provides "hooks" for our aural sensations to interact with the 
 
 ## Related Concepts
 
-- **Prerequisite**: Riemann's function theory, LRP transformations
-- **Leads to**: Integrated analytical approaches
-- **See also**: Analytical values and paradigms, monotonality principle
+- **Prerequisite**: plr-transformations
+- **See also**: analytical-values-paradigms, monotonality-principle
 
 ## Methodological Significance
 

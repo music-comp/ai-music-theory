@@ -195,7 +195,7 @@ Closed loop after 6 transformations
 
 - **Prerequisite**: triad, interval, neo-riemannian-theory, plr-transformations
 - **Leads to**: neo-riemannian-cycles, weitzmann-region, cube-dance
-- **See also**: pitch-space, transformational-theory, voice-leading-geometry
+- **See also**: pitch-space, transformational-theory, voice-leading-offset
 
 ## Common Confusions
 

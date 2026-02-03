@@ -67,9 +67,8 @@ Common compound meters:
 
 ## Related Concepts
 
-- **Prerequisite**: meter, beat, time-signature, subdivision
-- **Leads to**: compound-duple, compound-triple, compound-quadruple, dotted-rhythms, hemiola
-- **See also**: simple-meter, triple-subdivision, beat-division
+- **Prerequisite**: meter, beat, time-signature
+- **See also**: simple-meter
 
 ## Common Confusions
 

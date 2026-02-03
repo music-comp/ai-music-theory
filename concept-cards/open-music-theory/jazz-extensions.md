@@ -53,8 +53,8 @@ Not all implied extensions are necessarily played; performers choose which tones
 ## Related Concepts
 
 - **Prerequisite**: seventh-chord, chord-symbols-jazz, interval, compound-interval
-- **Leads to**: jazz-voicings, altered-dominant, chord-scale-theory
-- **See also**: added-tone-chord, chord-quality, upper-structure
+- **Leads to**: jazz-voicings, altered-dominant-chord, chord-scale-theory
+- **See also**: chord-quality
 
 ## Common Confusions
 

@@ -167,9 +167,9 @@ Final section recalls opening, provides unity
 
 ## Related Concepts
 
-- **Prerequisite**: imitation, fugue, sectional-form, instrumental-music, counterpoint, chanson
-- **Leads to**: fugue, sonata-da-chiesa, trio-sonata, sectional-variation
-- **See also**: ricercar, fantasia, capriccio, french-chanson, polychoral-style
+- **Prerequisite**: imitation, fugue, counterpoint
+- **Leads to**: fugue
+- **See also**: ricercar, fantasia
 
 ## Common Confusions
 

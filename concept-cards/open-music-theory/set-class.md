@@ -99,9 +99,9 @@ Different set classes, different interval content, different sonic "color"
 
 ## Related Concepts
 
-- **Prerequisite**: pitch-class-set, transposition-Tn, inversion-In, interval-class
+- **Prerequisite**: pitch-class-set, transposition-tn, inversion-in, interval-class
 - **Leads to**: prime-form, interval-vector, forte-number, z-relation
-- **See also**: normal-order, cardinality, set-class-table
+- **See also**: normal-order, cardinality
 
 ## Common Confusions
 

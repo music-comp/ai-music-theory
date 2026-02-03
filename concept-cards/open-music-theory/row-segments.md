@@ -167,7 +167,7 @@ Discrete analysis might show different patterns
 
 - **Prerequisite**: twelve-tone-row, interval, set-class
 - **Leads to**: derived-row, all-interval-row, combinatoriality
-- **See also**: hexachord, tetrachord, trichord
+- **See also**: tetrachord
 
 ## Common Confusions
 

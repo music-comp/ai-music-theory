@@ -73,8 +73,7 @@ The *Vorhang* and period combination repeats, with Period II extended.
 ## Related Concepts
 
 - **Prerequisite**: period, periodic-function, introduction, phrase
-- **Leads to**: formal-analysis, thematic-design, opening-strategies
-- **See also**: auftakttheorie, schlusswirkung, modern-theme
+- **See also**: auftakttheorie, schlusswirkung
 
 ## Common Confusions
 

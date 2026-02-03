@@ -156,9 +156,8 @@ Classic Protestant hymn structure
 
 ## Related Concepts
 
-- **Prerequisite**: phrase, period, verse, stanza, melody, harmonic-progression
-- **Leads to**: modified-strophic, verse-chorus-form, through-composed, song-forms
-- **See also**: folk-song, hymn, ballad, art-song, lied
+- **Prerequisite**: phrase, period, harmonic-progression
+- **Leads to**: verse-chorus-form, through-composed
 
 ## Common Confusions
 

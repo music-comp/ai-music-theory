@@ -64,9 +64,9 @@ In 3/4 time with anacrusis:
 
 ## Related Concepts
 
-- **Prerequisite**: beat, measure, downbeat, upbeat, meter
-- **Leads to**: phrase-structure, phrasing, upbeat-character
-- **See also**: pickup-measure, incomplete-measure, upbeat
+- **Prerequisite**: beat, measure, beat, meter
+- **Leads to**: srdc-phrase-structure
+- **See also**: beat
 
 ## Common Confusions
 

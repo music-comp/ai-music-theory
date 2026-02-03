@@ -115,8 +115,7 @@ The analysis shows trajectory from ambiguity to clarity and back.
 ## Related Concepts
 
 - **Prerequisite**: diatonic-modes-20c, whole-tone-collection, octatonic-collection, pentatonic-collection
-- **Leads to**: modal-analysis, formal-analysis, interpretive-analysis
-- **See also**: set-theory-analysis, color-notes, pitch-class-center
+- **See also**: set-theory-analysis, color-notes
 
 ## Common Confusions
 

@@ -76,9 +76,9 @@ The boundary-crossing that terrified Riemann becomes analytically **productive**
 
 ## Related Concepts
 
-- **Prerequisite**: Monotonality principle, function theory
-- **Leads to**: Analytical values and paradigms, tonal crisis
-- **See also**: Chromatic force, voice-leading efficiency
+- **Prerequisite**: monotonality-principle
+- **Leads to**: analytical-values-paradigms
+- **See also**: voice-leading-efficiency
 
 ## Methodological Significance
 

@@ -189,7 +189,7 @@ Uses two augmented "portals" to traverse from cube 1 to cube 3
 ## Related Concepts
 
 - **Prerequisite**: neo-riemannian-cycles, plr-transformations, weitzmann-region, augmented-triad
-- **Leads to**: hexatonic-system, voice-leading-geometry, transformational-analysis
+- **Leads to**: hexatonic-system, voice-leading-offset
 - **See also**: tonnetz, neo-riemannian-theory, parsimonious-voice-leading
 
 ## Common Confusions

@@ -48,8 +48,8 @@ The opening of "Twinkle, Twinkle Little Star" uses quarter notes and half notes 
 ## Related Concepts
 
 - **Prerequisite**: staff, pitch, rhythm
-- **Leads to**: rhythmic-values, interval, melody, chord
-- **See also**: notehead, stem, beam, flag, rest
+- **Leads to**: interval, chord
+- **See also**: rests
 
 ## Common Confusions
 

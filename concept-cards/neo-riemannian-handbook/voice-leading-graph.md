@@ -131,9 +131,7 @@ As voice-leading distance decreases toward zero:
 
 ## Related Concepts
 
-- **Prerequisite**: voice-leading, Tonnetz, parsimonious-trichords
-- **Leads to**: orbifold-geometry, maximal-smoothness
-- **See also**: DOUTH2, Tymoczko-geometry, chord-space
+- **Prerequisite**: voice-leading, tonnetz, parsimonious-trichords
 
 ## Common Confusions
 

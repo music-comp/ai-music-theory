@@ -193,7 +193,7 @@ Rich chromatic color
 ## Related Concepts
 
 - **Prerequisite**: modal-mixture, parallel-keys, scale-degree
-- **Leads to**: borrowed-chord, chromatic-voice-leading
+- **Leads to**: borrowed-chord, chromatic-voice-motion
 - **See also**: solfege, natural-minor-scale
 
 ## Common Confusions

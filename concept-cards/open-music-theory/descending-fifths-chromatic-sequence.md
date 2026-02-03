@@ -129,9 +129,9 @@ This exchange continues through entire sequence
 
 ## Related Concepts
 
-- **Prerequisite**: descending-fifths-sequence, dominant-seventh-chord, elided-resolution
-- **Leads to**: whole-tone-scale, tonal-ambiguity, jazz-harmony
-- **See also**: chromatic-sequence, ascending-chromatic-5-6-sequence, circle-of-fifths
+- **Prerequisite**: descending-fifth-sequence, dominant-seventh-chord, elided-resolution
+- **Leads to**: whole-tone-scale, tonal-ambiguity-in-pop
+- **See also**: chromatic-sequence, circle-of-fifths
 
 ## Common Confusions
 

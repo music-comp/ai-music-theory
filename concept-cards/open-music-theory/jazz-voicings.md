@@ -55,9 +55,8 @@ Bill Evans revolutionized jazz piano voicings with his use of close-position cho
 
 ## Related Concepts
 
-- **Prerequisite**: chord-symbols-jazz, jazz-extensions, register, spacing
-- **Leads to**: voice-leading-3-7, drop-voicings, rootless-voicings
-- **See also**: harmonic-series, doubling, chord-texture
+- **Prerequisite**: chord-symbols-jazz, jazz-extensions
+- **Leads to**: voice-leading
 
 ## Common Confusions
 

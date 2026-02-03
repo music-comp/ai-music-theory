@@ -134,9 +134,9 @@ Darker approach to dominant
 
 ## Related Concepts
 
-- **Prerequisite**: subdominant, modal-mixture, borrowed-chord, chord-quality
-- **Leads to**: chromatic-plagal-cadence, chromatic-voice-leading
-- **See also**: borrowed-chord, flat-VI-chord, mode-mixture
+- **Prerequisite**: modal-mixture, borrowed-chord, chord-quality
+- **Leads to**: chromatic-voice-motion
+- **See also**: borrowed-chord, mode-mixture
 
 ## Common Confusions
 

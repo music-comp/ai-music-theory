@@ -126,7 +126,7 @@ The evolution shows:
 ## Related Concepts
 
 - **Prerequisite**: harmonic-dualism, overtone-series, undertone-series
-- **Leads to**: neo-riemannian-theory, transformational-theory, voice-leading-spaces
+- **Leads to**: neo-riemannian-theory, transformational-theory, voice-leading-zones
 - **See also**: tonvorstellungen, klang-representation, inversional-symmetry
 
 ## Source Reference

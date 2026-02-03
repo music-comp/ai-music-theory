@@ -73,8 +73,8 @@ Simple duple: Sousa's "Stars and Stripes Forever" (2/4), most marches. Simple tr
 ## Related Concepts
 
 - **Prerequisite**: beat, meter, time-signature, note-values
-- **Leads to**: compound-meter, duple-meter, triple-meter, quadruple-meter, beat-division
-- **See also**: measure, bar-line, downbeat, conducting-pattern
+- **Leads to**: compound-meter, simple-meter
+- **See also**: measure
 
 ## Common Confusions
 

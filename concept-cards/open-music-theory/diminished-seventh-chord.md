@@ -224,9 +224,9 @@ Each resolves smoothly
 
 ## Related Concepts
 
-- **Prerequisite**: diminished-triad, seventh-chord, leading-tone, dominant-function, tendency-tone
+- **Prerequisite**: diminished-triad, seventh-chord, leading-tone, dominant-function
 - **Leads to**: enharmonic-modulation, chromatic-harmony, half-diminished-seventh
-- **See also**: dominant-seventh-chord, vii°-chord, fully-diminished-seventh, symmetrical-chord
+- **See also**: dominant-seventh-chord, fully-diminished-seventh-chord
 
 ## Common Confusions
 

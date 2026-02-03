@@ -208,9 +208,9 @@ CT+6:      I - CT+6 - I
 
 ## Related Concepts
 
-- **Prerequisite**: augmented-sixth-chords, common-tone, chromatic-voice-leading, prolongation
-- **Leads to**: chromatic-embellishment, non-functional-harmony, chromatic-prolongation
-- **See also**: common-tone-diminished-seventh, German-augmented-sixth, chromatic-neighbor
+- **Prerequisite**: augmented-sixth-chords, common-tones, chromatic-voice-motion, tonic-prolongation
+- **Leads to**: harmonic-embellishment, chromatic-modulation
+- **See also**: common-tone-diminished-seventh, german-augmented-sixth
 
 ## Common Confusions
 

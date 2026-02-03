@@ -57,7 +57,7 @@ Pianists use the keyboard's visual pattern to navigate music quickly. Beethoven'
 
 - **Prerequisite**: pitch, octave-equivalence, half-step
 - **Leads to**: grand-staff, middle-c, interval, chord, scale
-- **See also**: ASPN, white-keys, black-keys, enharmonic-equivalence
+- **See also**: aspn, enharmonic-equivalence
 
 ## Common Confusions
 

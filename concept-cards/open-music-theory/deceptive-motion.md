@@ -234,9 +234,9 @@ Eventually resolves to I
 
 ## Related Concepts
 
-- **Prerequisite**: V-vi-progression, deceptive-cadence, phrase-structure, predominant-function, voice-leading
-- **Leads to**: phrase-expansion, predominant-expansion, mid-phrase-function, avoided-cadence
-- **See also**: deceptive-progression, la-in-bass, interrupted-phrase, phrase-extension
+- **Prerequisite**: ii-v-i-progression, deceptive-cadence, srdc-phrase-structure, pre-dominant-function, voice-leading
+- **Leads to**: phrase-expansion, evaded-cadence
+- **See also**: phrase-extension
 
 ## Common Confusions
 

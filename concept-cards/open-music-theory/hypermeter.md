@@ -67,9 +67,9 @@ Beethoven's Symphony No. 9, "Scherzo": clear four-measure hypermetrical groups a
 
 ## Related Concepts
 
-- **Prerequisite**: measure, beat, meter, accent, phrase
-- **Leads to**: phrase-structure, formal-analysis, periodic-structure
-- **See also**: phrase, period, metrical-hierarchy
+- **Prerequisite**: measure, beat, meter, phrase
+- **Leads to**: srdc-phrase-structure
+- **See also**: phrase, period
 
 ## Common Confusions
 

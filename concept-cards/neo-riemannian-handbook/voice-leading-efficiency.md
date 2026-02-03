@@ -105,8 +105,8 @@ Multiple efficient resolutions possible.
 ## Related Concepts
 
 - **Prerequisite**: voice-leading, counterpoint, chromatic-harmony
-- **Leads to**: neo-riemannian-transformations, hexatonic-systems, tonnetz
-- **See also**: inversional-symmetry, second-practice, chromatic-tonality
+- **Leads to**: secondary-neo-riemannian-transformations, hexatonic-systems, tonnetz
+- **See also**: inversional-symmetry, chromatic-tonality
 
 ## Common Confusions
 

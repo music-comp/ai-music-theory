@@ -228,9 +228,9 @@ vi becomes i
 
 ## Related Concepts
 
-- **Prerequisite**: modulation, tonicization, closely-related-keys, cadence, Roman-numeral-analysis
+- **Prerequisite**: modulation, tonicization, closely-related-keys, cadence, roman-numeral-analysis
 - **Leads to**: chromatic-modulation, direct-modulation, sequential-modulation, enharmonic-modulation
-- **See also**: pivot-chord, key-relationship, diatonic-modulation, smooth-modulation
+- **See also**: pivot-chord, key-relationships
 
 ## Common Confusions
 

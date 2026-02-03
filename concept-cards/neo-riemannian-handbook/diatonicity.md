@@ -166,8 +166,8 @@ Riemann's claims about diatonic universality are:
 ## Related Concepts
 
 - **Prerequisites**: scale, interval, tetrachord, pentatonicism
-- **Leads to**: tonality, mode, harmonic-function, chromaticism
-- **See also**: leading-tone, major-minor-system, mixture
+- **Leads to**: tonality, mode, harmonic-function
+- **See also**: leading-tone
 
 ## Common Confusions
 

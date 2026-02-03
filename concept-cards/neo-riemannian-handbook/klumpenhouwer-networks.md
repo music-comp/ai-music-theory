@@ -129,8 +129,8 @@ The same structural relationships at different levels.
 ## Related Concepts
 
 - **Prerequisite**: pitch-class, transposition, inversion, transformation
-- **Leads to**: transformational-theory, network-analysis, neo-riemannian-theory
-- **See also**: lewin-transformations, schritte-wechsel, harmonic-dualism
+- **Leads to**: transformational-theory, neo-riemannian-theory
+- **See also**: schritte-wechsel, harmonic-dualism
 
 ## Common Confusions
 

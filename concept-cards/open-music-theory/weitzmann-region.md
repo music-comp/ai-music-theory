@@ -197,7 +197,7 @@ The augmented triad "fills in" the R transformation
 
 - **Prerequisite**: augmented-triad, neo-riemannian-theory, plr-transformations
 - **Leads to**: cube-dance, enharmonic-modulation, chromatic-mediant
-- **See also**: neo-riemannian-cycles, secondary-neo-riemannian-transformations, symmetrical-chord
+- **See also**: neo-riemannian-cycles, secondary-neo-riemannian-transformations
 
 ## Common Confusions
 

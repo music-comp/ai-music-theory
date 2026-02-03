@@ -77,7 +77,6 @@ Hymns: "Amazing Grace," "A Mighty Fortress Is Our God." Chorales: Bach's four-pa
 ## Related Concepts
 
 - **Prerequisite**: texture, homophony, rhythm, chord, satb
-- **Leads to**: chorale-style, block-chords, hymn-texture, part-writing
 - **See also**: melody-and-accompaniment, homophony, monophony, texture
 
 ## Common Confusions

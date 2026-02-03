@@ -195,7 +195,7 @@ Also visits all 12 roots, but with fifth relationships
 ## Related Concepts
 
 - **Prerequisite**: semitone, interval, pitch-class
-- **Leads to**: twelve-tone-technique, atonality, total-chromaticism
+- **Leads to**: twelve-tone-technique, atonality
 - **See also**: equal-divisions-of-the-octave, whole-tone-scale, interval-cycle
 
 ## Common Confusions

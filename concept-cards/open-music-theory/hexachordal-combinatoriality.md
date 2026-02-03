@@ -147,9 +147,9 @@ Properties:
 
 ## Related Concepts
 
-- **Prerequisite**: twelve-tone-row, hexachord, complement, set-class
-- **Leads to**: aggregate, total-serialism, twelve-tone-counterpoint
-- **See also**: derived-row, segmental-invariance, row-properties
+- **Prerequisite**: twelve-tone-row, set-class
+- **Leads to**: aggregate, total-serialism
+- **See also**: derived-row, segmental-invariance
 
 ## Common Confusions
 

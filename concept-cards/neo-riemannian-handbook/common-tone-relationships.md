@@ -134,8 +134,8 @@ Modern theory foregrounds common tones:
 ## Related Concepts
 
 - **Prerequisite**: triad, pitch-class, voice-leading
-- **Leads to**: PLR-transformations, Klangvertretung, parsimonious-trichords
-- **See also**: chromatic-transformation-networks, Tonnetz
+- **Leads to**: plr-transformations, klangvertretung, parsimonious-trichords
+- **See also**: chromatic-transformation-networks, tonnetz
 
 ## Common Confusions
 

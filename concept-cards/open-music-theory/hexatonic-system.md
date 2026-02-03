@@ -178,7 +178,7 @@ Perfect for magical, mysterious, or otherworldly scenes
 ## Related Concepts
 
 - **Prerequisite**: neo-riemannian-cycles, plr-transformations, hexatonic-scale
-- **Leads to**: cube-dance, secondary-neo-riemannian-transformations (H)
+- **Leads to**: cube-dance, secondary-neo-riemannian-transformations
 - **See also**: neo-riemannian-theory, tonnetz, parsimonious-voice-leading
 
 ## Common Confusions

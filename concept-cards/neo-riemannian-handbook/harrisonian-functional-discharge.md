@@ -99,9 +99,9 @@ Measures 37-42 involve Db discharge/charge patterns:
 
 ## Related Concepts
 
-- **Prerequisite**: Riemann's function theory, neo-Riemannian operations
-- **Leads to**: Extended tonal harmony, altered dominants
-- **See also**: Objects and transformations dichotomy, Weitzmann regions
+- **Prerequisite**: neo-riemannian-operations
+- **Leads to**: extended-tertian-harmony, altered-dominant-chord
+- **See also**: weitzmann-region
 
 ## Methodological Significance
 

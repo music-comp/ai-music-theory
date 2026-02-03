@@ -147,9 +147,7 @@ Both use fa-fi-sol, but Indugio delays with repetition first
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, half-cadence, chromatic-voice-leading, contrary-motion, secondary-dominant, pre-dominant
-- **Leads to**: indugio, fa-fi-sol-progression, chromatic-approach-chords
-- **See also**: half-cadence-types, chromatic-bass, converging-motion
+- **Prerequisite**: galant-schema, half-cadence, chromatic-voice-motion, contrary-motion, secondary-dominant
 
 ## Common Confusions
 

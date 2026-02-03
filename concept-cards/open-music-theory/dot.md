@@ -55,9 +55,9 @@ The "Marseillaise" (French national anthem) features prominent dotted rhythms. B
 
 ## Related Concepts
 
-- **Prerequisite**: note, rest, rhythm, duration
-- **Leads to**: compound-meter, dotted-rhythm, syncopation
-- **See also**: tie, note-values, augmentation, triplet
+- **Prerequisite**: note, rests, rhythm
+- **Leads to**: compound-meter, syncopation
+- **See also**: tie, note-values, fragmentation
 
 ## Common Confusions
 

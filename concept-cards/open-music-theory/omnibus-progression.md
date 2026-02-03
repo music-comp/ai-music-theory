@@ -155,9 +155,9 @@ Full octave: G7 → B7 → Eb7 → G7 (returns after 4 cycles)
 
 ## Related Concepts
 
-- **Prerequisite**: dominant-seventh-chord, voice-exchange, chromatic-voice-leading, prolongation
+- **Prerequisite**: dominant-seventh-chord, chromatic-voice-motion, tonic-prolongation
 - **Leads to**: chromatic-modulation, dominant-prolongation, chromatic-sequence
-- **See also**: augmented-sixth-chord, linear-intervallic-pattern, contrary-motion
+- **See also**: augmented-sixth-chord, contrary-motion
 
 ## Common Confusions
 

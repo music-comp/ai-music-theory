@@ -115,9 +115,8 @@ Motives serve crucial structural and expressive functions:
 
 ## Related Concepts
 
-- **Prerequisite**: melody, rhythm, pitch, interval, musical-pattern
-- **Leads to**: idea, phrase, theme, leitmotif, developing-variation, motivic-development
-- **See also**: motif, subject, cell, figure, gesture
+- **Prerequisite**: rhythm, pitch, interval
+- **Leads to**: phrase
 
 ## Common Confusions
 

@@ -114,9 +114,9 @@ Index number = 8, so B = I8(A)
 
 ## Related Concepts
 
-- **Prerequisite**: pitch-class-set, integer-notation, mod-12-arithmetic, transposition-Tn
-- **Leads to**: set-class, prime-form, Tn/In-equivalence, index-number, inversional-symmetry
-- **See also**: normal-order, interval-vector, twelve-tone-operations
+- **Prerequisite**: pitch-class-set, integer-notation, mod-12-arithmetic, transposition-tn
+- **Leads to**: set-class, prime-form, index-number, inversional-symmetry
+- **See also**: normal-order, interval-vector, twelve-tone-series
 
 ## Common Confusions
 

@@ -89,9 +89,8 @@ The **contrary motion** marks the return from chromatic voice-leading space to f
 
 ## Related Concepts
 
-- **Prerequisite**: Common-tone relationships, semitone voice-leading
-- **Leads to**: Weitzmann regions, hexatonic systems, Tonnetz
-- **See also**: Monotonality principle (contrast), tonal crisis
+- **Prerequisite**: common-tone-relationships
+- **Leads to**: weitzmann-region, hexatonic-systems, tonnetz
 
 ## Methodological Significance
 

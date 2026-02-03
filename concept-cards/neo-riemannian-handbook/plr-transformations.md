@@ -124,8 +124,8 @@ David Kopp argued that PLR compounds for fifth relations (LR for dominant) misre
 ## Related Concepts
 
 - **Prerequisite**: triad, interval, voice-leading, common-tones
-- **Leads to**: hexatonic-systems, Tonnetz, neo-Riemannian-operations, maximally-smooth-cycles
-- **See also**: Harmonieschritte, Schritt-Wechsel-system, chromatic-transformation-networks
+- **Leads to**: hexatonic-systems, tonnetz, neo-riemannian-operations, maximally-smooth-cycles
+- **See also**: harmonieschritte, schritt-wechsel-system, chromatic-transformation-networks
 
 ## Common Confusions
 

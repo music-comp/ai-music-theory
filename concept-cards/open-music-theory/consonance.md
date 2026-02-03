@@ -75,8 +75,8 @@ Dissonant intervals (for contrast):
 ## Related Concepts
 
 - **Prerequisite**: interval, interval-quality, harmonic-interval
-- **Leads to**: perfect-consonance, imperfect-consonance, dissonance, resolution, stability
-- **See also**: tonal-fusion, stability, cadence, harmonic-rhythm
+- **Leads to**: perfect-imperfect-consonances, dissonance
+- **See also**: cadence, harmonic-rhythm
 
 ## Common Confusions
 

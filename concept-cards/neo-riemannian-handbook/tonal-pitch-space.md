@@ -128,9 +128,9 @@ Some analysts use:
 
 ## Related Concepts
 
-- **Prerequisite**: Tonnetz, key-distance, voice-leading
-- **Leads to**: regional-space, tonal-hierarchy
-- **See also**: prolongation, Schenkerian-analysis, pitch-space-theory
+- **Prerequisite**: tonnetz, voice-leading
+- **Leads to**: regional-space
+- **See also**: tonic-prolongation
 
 ## Common Confusions
 

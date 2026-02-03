@@ -148,9 +148,9 @@ Neo-Riemannian solution: Embrace structural logic.
 
 ## Related Concepts
 
-- **Prerequisite**: group-theory, Harmonieschritte, PLR-transformations
-- **Leads to**: Schritt-Wechsel-system, neo-Riemannian-operations
-- **See also**: Tonnetz, Cayley-graph, word-length
+- **Prerequisite**: harmonieschritte, plr-transformations
+- **Leads to**: schritt-wechsel-system, neo-riemannian-operations
+- **See also**: tonnetz
 
 ## Common Confusions
 

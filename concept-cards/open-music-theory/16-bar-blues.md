@@ -52,9 +52,9 @@ In C:
 
 ## Related Concepts
 
-- **Prerequisite**: 12-bar-blues, form, phrase-structure
-- **Leads to**: blues-variations, rock-forms
-- **See also**: blues-harmony, turnaround, dominant-seventh-chord
+- **Prerequisite**: 12-bar-blues, srdc-phrase-structure
+- **Leads to**: double-variations, row-forms
+- **See also**: turnaround, dominant-seventh-chord
 
 ## Common Confusions
 

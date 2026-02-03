@@ -74,9 +74,8 @@ Chopin's nocturnes and ballades: extensive triplet figuration against duple acco
 
 ## Related Concepts
 
-- **Prerequisite**: beat, beat-division, simple-meter, compound-meter, note-values
-- **Leads to**: cross-rhythm, polyrhythm, hemiola, metric-modulation
-- **See also**: triplet, duplet, borrowed-division
+- **Prerequisite**: beat, simple-meter, compound-meter, note-values
+- **Leads to**: polyrhythm, chromatic-modulation
 
 ## Common Confusions
 

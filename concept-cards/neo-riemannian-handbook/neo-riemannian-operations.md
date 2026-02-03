@@ -141,9 +141,9 @@ Riemann's Doppelklänge (double sounds) extend operations to:
 
 ## Related Concepts
 
-- **Prerequisite**: PLR-transformations, Harmonieschritte, group-theory
+- **Prerequisite**: plr-transformations, harmonieschritte
 - **Leads to**: chromatic-transformation-networks, hexatonic-systems
-- **See also**: Schritt-Wechsel-system, dualism, contextual-operations
+- **See also**: schritt-wechsel-system
 
 ## Common Confusions
 

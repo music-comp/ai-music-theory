@@ -118,9 +118,9 @@ May also appear as: C - D - E - Gb - G - A - Bb
 
 ## Related Concepts
 
-- **Prerequisite**: harmonic-series, lydian, mixolydian, scale-degree
-- **Leads to**: spectral-music, overtone-composition, collection-theory
-- **See also**: lydian-dominant, dominant-seventh-chord, overtone-series
+- **Prerequisite**: lydian, mixolydian, scale-degree
+- **Leads to**: twelve-tone-composition
+- **See also**: dominant-seventh-chord, overtone-series
 
 ## Common Confusions
 

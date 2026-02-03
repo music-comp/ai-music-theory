@@ -203,9 +203,9 @@ Contrapuntal development technique
 
 ## Related Concepts
 
-- **Prerequisite**: sonata-form, exposition, recapitulation, fragmentation, sequence, modulation, retransition, dominant-pedal
-- **Leads to**: recapitulation, retransition, tonal-instability, thematic-transformation
-- **See also**: working-out, durchfuhrung, motivic-development, fugal-episode
+- **Prerequisite**: sonata-form, exposition, recapitulation, fragmentation, sequence, modulation, retransition
+- **Leads to**: recapitulation, retransition, tonal-multistability, thematic-transformation
+- **See also**: durchfuhrung, fugal-episode
 
 ## Common Confusions
 

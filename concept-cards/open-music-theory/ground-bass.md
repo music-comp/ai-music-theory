@@ -105,9 +105,8 @@ Ground bass has been an enduringly popular compositional constraint:
 
 ## Related Concepts
 
-- **Prerequisite**: bass-line, variation, ostinato, harmonic-progression, voice-leading
-- **Leads to**: chaconne, passacaglia, lament-bass, folia, variation-form, ostinato
-- **See also**: basso-ostinato, continuous-variations, baroque-variations
+- **Prerequisite**: ostinato, harmonic-progression, voice-leading
+- **Leads to**: ostinato
 
 ## Common Confusions
 

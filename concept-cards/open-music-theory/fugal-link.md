@@ -160,8 +160,8 @@ Episode = extended development
 ## Related Concepts
 
 - **Prerequisite**: fugal-exposition, fugue-subject, fugue-answer, sequence, motive
-- **Leads to**: fugal-episode, middle-entries, stretto, fugue-structure
-- **See also**: transitional-passage, hypermetric-variation, dovetailing, phrase-overlap
+- **Leads to**: fugal-episode, stretto
+- **See also**: dovetailing
 
 ## Common Confusions
 

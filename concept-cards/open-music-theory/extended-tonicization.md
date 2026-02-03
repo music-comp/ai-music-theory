@@ -233,8 +233,7 @@ Development technique
 ## Related Concepts
 
 - **Prerequisite**: tonicization, applied-chord, modulation, secondary-dominant, chromatic-harmony
-- **Leads to**: modulation, gray-area-analysis, development-techniques, chromatic-prolongation
-- **See also**: prolonged-tonicization, multi-chord-tonicization, quasi-modulation
+- **Leads to**: modulation, chromatic-modulation
 
 ## Common Confusions
 

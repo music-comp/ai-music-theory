@@ -172,8 +172,8 @@ D in Fr+6 becomes D in V (common tone)
 ## Related Concepts
 
 - **Prerequisite**: augmented-sixth-chords, italian-sixth, whole-tone-collection
-- **Leads to**: german-sixth, chromatic-cadence, whole-tone-scale
-- **See also**: predominant-prolongation, common-tone-voice-leading, tritone
+- **Leads to**: german-sixth, chromatic-scale, whole-tone-scale
+- **See also**: dominant-prolongation, tritone
 
 ## Common Confusions
 

@@ -130,8 +130,8 @@ Modern neo-Riemannian theory largely *jettisons* functional thinking in favor of
 ## Related Concepts
 
 - **Prerequisites**: Klang, tonality, cadence, dominant, subdominant, tonic
-- **Leads to**: Klangvertretung, applied-dominant, modulation, Parallelklang
-- **See also**: scale-degree-theory, fundamental-bass, Stufentheorie
+- **Leads to**: klangvertretung, applied-dominant, modulation
+- **See also**: stufentheorie
 
 ## Common Confusions
 

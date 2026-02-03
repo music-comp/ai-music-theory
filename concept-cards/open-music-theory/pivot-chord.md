@@ -270,9 +270,9 @@ Chromatic pivot
 
 ## Related Concepts
 
-- **Prerequisite**: modulation, Roman-numeral-analysis, closely-related-keys, voice-leading
-- **Leads to**: common-chord-modulation, chromatic-modulation, enharmonic-modulation, modulation-analysis
-- **See also**: common-chord, dual-function, key-relationship, smooth-modulation
+- **Prerequisite**: modulation, roman-numeral-analysis, closely-related-keys, voice-leading
+- **Leads to**: common-chord-modulation, chromatic-modulation, enharmonic-modulation
+- **See also**: key-relationships
 
 ## Common Confusions
 

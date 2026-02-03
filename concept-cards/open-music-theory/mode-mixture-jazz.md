@@ -51,8 +51,8 @@ The Dm7b5 and G7(b9) both contain Ab (le), borrowed from C minor.
 ## Related Concepts
 
 - **Prerequisite**: parallel-major-minor, borrowed-chord, scale-degree
-- **Leads to**: jazz-reharmonization, chromatic-harmony
-- **See also**: tritone-substitution, chord-substitution, minor-mode
+- **Leads to**: chromatic-harmony
+- **See also**: tritone-substitution
 
 ## Common Confusions
 

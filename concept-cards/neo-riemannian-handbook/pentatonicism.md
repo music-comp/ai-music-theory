@@ -165,8 +165,8 @@ Yet the study marks a significant methodological moment:
 ## Related Concepts
 
 - **Prerequisites**: scale, interval, fifth, tetrachord
-- **Leads to**: diatonic-scale, tetrachordal-structure, mese, pien
-- **See also**: comparative-musicology, Helmholtz, mode
+- **Leads to**: hexatonic-scale, tetrachordal-structure
+- **See also**: mode
 
 ## Common Confusions
 

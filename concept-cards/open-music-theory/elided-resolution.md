@@ -138,9 +138,9 @@ Pattern continues through the cycle
 
 ## Related Concepts
 
-- **Prerequisite**: dominant-seventh-chord, voice-leading, resolution, leading-tone
-- **Leads to**: chromatic-sequence, extended-dominant-chains, jazz-harmony
-- **See also**: descending-fifths-sequence, interlocking-sevenths, continuous-modulation
+- **Prerequisite**: dominant-seventh-chord, voice-leading, leading-tone
+- **Leads to**: chromatic-sequence, extended-dominant-chord
+- **See also**: descending-fifth-sequence
 
 ## Common Confusions
 

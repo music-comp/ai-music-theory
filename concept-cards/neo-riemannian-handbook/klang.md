@@ -95,8 +95,8 @@ Most post-Riemann function theorists adopted "monistic" variants:
 ## Related Concepts
 
 - **Prerequisites**: overtone-series, consonance, triad, interval
-- **Leads to**: harmonic-function, Klangvertretung, Tonvorstellung, modulation
-- **See also**: dualism, Oberklang, Unterklang, Parallelklang, Leittonwechselklang
+- **Leads to**: harmonic-function, klangvertretung, tonvorstellung, modulation
+- **See also**: leittonwechsel
 
 ## Common Confusions
 

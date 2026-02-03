@@ -110,9 +110,8 @@ Ostinato serves crucial structural and expressive functions:
 
 ## Related Concepts
 
-- **Prerequisite**: repetition, pattern, melodic-figure, rhythmic-pattern
-- **Leads to**: ground-bass, chaconne, passacaglia, riff, loop, pedal-point, drone
-- **See also**: basso-ostinato, minimalism, variation-form, vamp
+- **Leads to**: ground-bass, pedal-point
+- **See also**: minimalism
 
 ## Common Confusions
 

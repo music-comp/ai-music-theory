@@ -265,8 +265,8 @@ D -> D# -> E (bass could show this)
 ## Related Concepts
 
 - **Prerequisite**: harmonic-elision, leading-tone-elision, applied-chord
-- **Leads to**: ascending-sequence, chromatic-modulation
-- **See also**: secondary-dominant, harmonic-surprise, tonal-redirection
+- **Leads to**: ascending-fifth-sequence, chromatic-modulation
+- **See also**: secondary-dominant
 
 ## Common Confusions
 

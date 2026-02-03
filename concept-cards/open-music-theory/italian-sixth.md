@@ -123,9 +123,9 @@ Prepares half cadence
 
 ## Related Concepts
 
-- **Prerequisite**: augmented-sixth-chords, predominant-function, chromatic-voice-leading
-- **Leads to**: french-sixth, german-sixth, chromatic-cadence
-- **See also**: augmented-interval, predominant-prolongation, half-cadence
+- **Prerequisite**: augmented-sixth-chords, pre-dominant-function, chromatic-voice-motion
+- **Leads to**: french-sixth, german-sixth, chromatic-scale
+- **See also**: dominant-prolongation, half-cadence
 
 ## Common Confusions
 

@@ -257,9 +257,9 @@ Less common than V7/x chain
 
 ## Related Concepts
 
-- **Prerequisite**: secondary-dominant, tonicization, leading-tone-chord, diminished-seventh, chromatic-alteration
-- **Leads to**: applied-chord, chromatic-tonicization, tonicization-techniques
-- **See also**: vii-dim-of-x, applied-leading-tone, chromatic-harmony
+- **Prerequisite**: secondary-dominant, tonicization, leading-tone-chord, half-diminished-seventh, chromatic-alteration
+- **Leads to**: applied-chord
+- **See also**: chromatic-harmony
 
 ## Common Confusions
 

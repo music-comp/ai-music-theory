@@ -142,9 +142,9 @@ I6 invites continuation to stronger tonic resolution
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, pre-cadential, alternating-harmony, contrary-motion, tonic-dominant, first-inversion
-- **Leads to**: authentic-cadence, cadenza-semplice, partimento-tradition, neapolitan-school
-- **See also**: pre-cadential-schemas, alternating-bass, delayed-resolution, partimento
+- **Prerequisite**: galant-schema, contrary-motion
+- **Leads to**: authentic-cadence, cadenza-semplice, neapolitan-chord
+- **See also**: partimento
 
 ## Common Confusions
 

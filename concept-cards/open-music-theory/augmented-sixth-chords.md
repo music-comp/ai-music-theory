@@ -224,9 +224,9 @@ Leads through I⁶₄ to V
 
 ## Related Concepts
 
-- **Prerequisite**: predominant-function, chromatic-alteration, augmented-interval, voice-leading
-- **Leads to**: chromatic-predominant, altered-chords, enharmonic-reinterpretation
-- **See also**: Neapolitan-sixth, chromatic-pre-dominant, doubly-augmented-fourth
+- **Prerequisite**: pre-dominant-function, chromatic-alteration, voice-leading
+- **Leads to**: chromatic-predominant
+- **See also**: neapolitan-sixth
 
 ## Common Confusions
 

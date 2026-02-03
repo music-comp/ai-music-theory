@@ -112,9 +112,8 @@ These cases correlate with **Kurthian absolute progressions** rather than genera
 
 ## Related Concepts
 
-- **Prerequisite**: L/P/R transformations, Riemann's alteration concept
-- **Leads to**: Analysis of modal/neomodal music
-- **See also**: Analytical values, objects and transformations dichotomy
+- **Prerequisite**: plr-transformations
+- **See also**: analytical-levels
 
 ## Critical Insight
 

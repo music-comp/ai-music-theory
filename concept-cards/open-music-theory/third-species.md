@@ -89,7 +89,6 @@ Third species is pedagogical, but the techniques appear in:
 
 - **Prerequisite**: species-counterpoint, second-species, passing-tone, consonance, dissonance
 - **Leads to**: fourth-species, fifth-species, neighbor-tone, double-neighbor, nota-cambiata
-- **See also**: embellishment, melodic-ornamentation, metrical-hierarchy
 
 ## Common Confusions
 

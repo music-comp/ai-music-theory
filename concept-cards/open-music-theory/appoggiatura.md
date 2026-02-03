@@ -207,9 +207,9 @@ Unusual but valid
 
 ## Related Concepts
 
-- **Prerequisite**: non-chord-tone, leap, consonance-dissonance, strong-beat, stepwise-resolution
-- **Leads to**: accented-dissonance, melodic-embellishment, expressive-dissonance
-- **See also**: suspension, escape-tone, neighbor-tone, anticipation, grace-note
+- **Prerequisite**: consonance-dissonance
+- **Leads to**: harmonic-embellishment
+- **See also**: suspension, escape-tone, neighbor-tone, anticipation
 
 ## Common Confusions
 

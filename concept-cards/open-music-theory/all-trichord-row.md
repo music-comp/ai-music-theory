@@ -163,8 +163,8 @@ Opportunity:
 
 ## Related Concepts
 
-- **Prerequisite**: twelve-tone-row, trichord, set-class
-- **Leads to**: twelve-tone-composition, row-properties
+- **Prerequisite**: twelve-tone-row, set-class
+- **Leads to**: twelve-tone-composition
 - **See also**: all-interval-row, derived-row, combinatoriality
 
 ## Common Confusions

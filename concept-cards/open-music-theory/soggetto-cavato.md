@@ -171,9 +171,9 @@ Hexachord mutation creates more varied melody
 
 ## Related Concepts
 
-- **Prerequisite**: solmization, hexachord, solmization-syllables, cantus-firmus, imitation, point-of-imitation
-- **Leads to**: symbolic-composition, musical-cryptography, text-music-relationships, isorhythm
-- **See also**: cantus-firmus-technique, cyclic-mass, motto-mass, renaissance-composition
+- **Prerequisite**: cantus-firmus, imitation, point-of-imitation
+- **Leads to**: isorhythm
+- **See also**: cyclic-sets
 
 ## Common Confusions
 

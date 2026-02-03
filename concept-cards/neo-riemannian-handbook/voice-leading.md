@@ -99,8 +99,8 @@ These quantify "efficiency" precisely.
 
 ## Related Concepts
 
-- **Prerequisite**: counterpoint, chord-progression, pitch-space
-- **Leads to**: voice-leading-efficiency, parsimonious-motion, neo-riemannian-transformations
+- **Prerequisite**: counterpoint, pitch-space
+- **Leads to**: voice-leading-efficiency, secondary-neo-riemannian-transformations
 - **See also**: inversional-symmetry, tonnetz, chromatic-harmony
 
 ## Common Confusions

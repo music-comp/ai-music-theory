@@ -66,9 +66,9 @@ The opening chord of Beethoven's "Ode to Joy" is a D major triad. The first chor
 
 ## Related Concepts
 
-- **Prerequisite**: interval, interval-quality, third, fifth, chord
-- **Leads to**: major-triad, minor-triad, diminished-triad, augmented-triad, chord-progression, root-position, inversion, seventh-chord
-- **See also**: chord-symbol, harmonic-function, consonance-dissonance
+- **Prerequisite**: interval, interval-quality, chord
+- **Leads to**: major-triad, minor-triad, diminished-triad, augmented-triad, root-motion, inversion, seventh-chord
+- **See also**: harmonic-function, consonance-dissonance
 
 ## Common Confusions
 

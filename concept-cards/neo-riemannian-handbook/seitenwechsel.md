@@ -128,9 +128,9 @@ Repeated Seitenwechsel:
 
 ## Related Concepts
 
-- **Prerequisite**: Klang, harmonic-dualism, PLR-transformations
-- **Leads to**: Schritt-Wechsel-system, mode-mixture
-- **See also**: parallel-keys, minor-mode
+- **Prerequisite**: klang, harmonic-dualism, plr-transformations
+- **Leads to**: schritt-wechsel-system, mode-mixture
+- **See also**: parallel-keys
 
 ## Common Confusions
 

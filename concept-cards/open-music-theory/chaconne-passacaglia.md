@@ -123,9 +123,8 @@ Creates dynamic trajectory through texture
 
 ## Related Concepts
 
-- **Prerequisite**: ground-bass, ostinato, variation-form, baroque-style, triple-meter, figured-bass
-- **Leads to**: continuous-variation, harmonic-progression-cycles, jazz-changes, loop-based-composition
-- **See also**: passacaglia, chaconne, strophic-bass, folia, romanesca-bass
+- **Prerequisite**: ground-bass, ostinato, simple-meter, figured-bass
+- **Leads to**: harmonic-progression
 
 ## Common Confusions
 

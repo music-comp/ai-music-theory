@@ -111,7 +111,7 @@ Aeolian:    A-B-C-D-E-F-G (final on A)
 ## Related Concepts
 
 - **Prerequisite**: major-scale, natural-minor-scale, scale-degree
-- **Leads to**: modal-analysis, pandiatonicism, collection-theory
+- **Leads to**: pandiatonicism
 - **See also**: pentatonic-collection, whole-tone-collection, octatonic-collection
 
 ## Common Confusions

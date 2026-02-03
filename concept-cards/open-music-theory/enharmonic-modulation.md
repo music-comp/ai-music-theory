@@ -254,9 +254,9 @@ Sudden shift to D♭ via enharmonic pivot
 
 ## Related Concepts
 
-- **Prerequisite**: enharmonic-equivalence, German-augmented-sixth, diminished-seventh, equal-temperament
-- **Leads to**: chromatic-modulation, distant-modulation, late-Romantic-harmony
-- **See also**: respelling, pivot-chord, augmented-sixth-chords, diminished-seventh-symmetry
+- **Prerequisite**: enharmonic-equivalence, german-augmented-sixth, half-diminished-seventh
+- **Leads to**: chromatic-modulation, direct-modulation
+- **See also**: pivot-chord, augmented-sixth-chords, diminished-seventh-symmetry
 
 ## Common Confusions
 

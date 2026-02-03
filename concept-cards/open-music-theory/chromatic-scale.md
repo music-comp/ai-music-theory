@@ -66,9 +66,9 @@ Chromatic passages appear in:
 
 ## Related Concepts
 
-- **Prerequisite**: half-step, pitch, octave, scale
-- **Leads to**: chromaticism, chromatic-harmony, passing-tone, neighbor-tone, atonal, twelve-tone, serial-music
-- **See also**: diatonic, altered-chord, modulation, voice-leading
+- **Prerequisite**: half-step, pitch, scale
+- **Leads to**: chromatic-harmony, passing-tone, neighbor-tone, atonality, twelve-tone-row
+- **See also**: diatonicity, modulation, voice-leading
 
 ## Common Confusions
 

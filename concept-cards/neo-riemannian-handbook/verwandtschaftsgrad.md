@@ -136,9 +136,9 @@ The concept anticipates:
 
 ## Related Concepts
 
-- **Prerequisite**: Tonnetz, Harmonieschritte, just-intonation
+- **Prerequisite**: tonnetz, harmonieschritte
 - **Leads to**: tonal-pitch-space, voice-leading-graph
-- **See also**: key-distance, combinatorial-group-theory
+- **See also**: combinatorial-group-theory
 
 ## Common Confusions
 

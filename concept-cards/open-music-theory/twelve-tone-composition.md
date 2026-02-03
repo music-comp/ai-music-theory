@@ -180,8 +180,8 @@ Demonstrates: Multiple approaches in single piece
 
 ## Related Concepts
 
-- **Prerequisite**: twelve-tone-row, row-operations, row-properties
-- **Leads to**: total-serialism, compositional-process
+- **Prerequisite**: twelve-tone-row, row-operations
+- **Leads to**: total-serialism, compositional-resources
 - **See also**: combinatoriality, derived-row, fugue
 
 ## Common Confusions

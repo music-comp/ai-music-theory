@@ -82,9 +82,9 @@ Actually, that's parallel! Let me fix:
 
 ## Related Concepts
 
-- **Prerequisite**: voice, interval, motion, direction
-- **Leads to**: direct-fifths, hidden-octaves, voice-leading, parallel-motion, contrary-motion
-- **See also**: counterpoint, independence, voice-leading-rules
+- **Prerequisite**: interval
+- **Leads to**: voice-leading, parallel-motion, contrary-motion
+- **See also**: counterpoint
 
 ## Common Confusions
 

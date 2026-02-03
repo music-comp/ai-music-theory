@@ -108,8 +108,8 @@ The final A major is the P-transform of the tonic A minor.
 
 ## Related Concepts
 
-- **Prerequisite**: triad, major-minor-relationship, semitone
-- **Leads to**: plr-group, neo-riemannian-analysis, hexatonic-systems
+- **Prerequisite**: triad, semitone
+- **Leads to**: hexatonic-systems
 - **See also**: relative-transformation, leittonwechsel, voice-leading-efficiency
 
 ## Common Confusions

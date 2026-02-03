@@ -72,9 +72,9 @@ Chopin's piano music uses compound intervals (tenths in left hand) for wide voic
 
 ## Related Concepts
 
-- **Prerequisite**: interval, octave, interval-size, interval-quality
-- **Leads to**: extended-harmony, jazz-chords, voicing, chord-extensions
-- **See also**: octave-equivalence, ninth-chord, eleventh-chord, thirteenth-chord
+- **Prerequisite**: interval, intervals, interval-quality
+- **Leads to**: extended-tertian-harmony, chordal-tension
+- **See also**: octave-equivalence, ninth-chords
 
 ## Common Confusions
 

@@ -43,9 +43,9 @@ Carla Bley's "Donkey" (1976) demonstrates syncopation created through rests and 
 
 ## Related Concepts
 
-- **Prerequisite**: beat, meter, accent, off-beat, tie, rest
-- **Leads to**: jazz-phrasing, rhythmic-displacement, anticipation
-- **See also**: backbeat, swing-eighths, hemiola
+- **Prerequisite**: beat, meter, tie, rests
+- **Leads to**: anticipation
+- **See also**: backbeat, swing-eighths
 
 ## Common Confusions
 

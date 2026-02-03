@@ -142,9 +142,9 @@ Characteristic of Bach keyboard works
 
 ## Related Concepts
 
-- **Prerequisite**: species-counterpoint, first-species, second-species, third-species, fourth-species, fifth-species, voice-leading, dissonance-treatment
-- **Leads to**: fugue, invention, two-part-writing, three-part-writing, chorale-writing, polyphonic-composition
-- **See also**: chromatic-voice-leading, idiomatic-writing, harmonic-counterpoint
+- **Prerequisite**: species-counterpoint, first-species, second-species, third-species, fourth-species, fifth-species, voice-leading
+- **Leads to**: fugue, two-part-transition
+- **See also**: chromatic-voice-motion
 
 ## Common Confusions
 

@@ -150,9 +150,9 @@ Like bar or phrase in tonal music
 
 ## Related Concepts
 
-- **Prerequisite**: twelve-tone-row, pitch-class, complement
+- **Prerequisite**: twelve-tone-row, pitch-class
 - **Leads to**: combinatoriality, total-serialism, twelve-tone-analysis
-- **See also**: hexachord, row-class, Babbitt
+- **See also**: row-class
 
 ## Common Confusions
 

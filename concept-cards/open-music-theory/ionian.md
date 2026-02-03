@@ -66,7 +66,7 @@ When analyzing modal music, "Ionian" distinguishes the mode from functional majo
 ## Related Concepts
 
 - **Prerequisite**: scale, mode, major-scale, whole-step, half-step
-- **Leads to**: functional-harmony, tonal-music, key-signature, major-key
+- **Leads to**: post-tonal-music, key-signature
 - **See also**: lydian, mixolydian, major-scale, diatonic-modes, aeolian
 
 ## Common Confusions

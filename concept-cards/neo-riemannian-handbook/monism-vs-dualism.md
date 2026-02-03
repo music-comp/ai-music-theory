@@ -153,8 +153,6 @@ Modern neo-Riemannian theory sidesteps the debate entirely:
 ## Related Concepts
 
 - **Prerequisites**: Klang, overtone-series, undertone-series, harmonic-function
-- **Leads to**: Klangschluessel, parallel-chord, function-symbols
-- **See also**: Hauptmann, Oettingen, Capellen
 
 ## Common Confusions
 

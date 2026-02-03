@@ -57,9 +57,9 @@ In C:
 
 ## Related Concepts
 
-- **Prerequisite**: dominant-seventh-chord, form, phrase, tonic-subdominant-dominant
+- **Prerequisite**: dominant-seventh-chord, phrase
 - **Leads to**: jazz-blues, minor-blues, 16-bar-blues, blues-scale
-- **See also**: turnaround, plagal-cadence, blues-harmony
+- **See also**: turnaround, plagal-cadence
 
 ## Common Confusions
 

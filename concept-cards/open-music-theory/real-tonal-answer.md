@@ -148,9 +148,9 @@ Only first note adjusted (^5 → ^1), rest follows real transposition
 
 ## Related Concepts
 
-- **Prerequisite**: fugue, fugue-subject, fugue-answer, transposition, scale-degree, modulation, tonic-dominant-relationship
-- **Leads to**: fugal-exposition, countersubject, tonal-fugue-structure
-- **See also**: perfect-fifth, perfect-fourth, subject-answer-relationship, invertible-counterpoint
+- **Prerequisite**: fugue, fugue-subject, fugue-answer, transposition, scale-degree, modulation
+- **Leads to**: fugal-exposition, countersubject
+- **See also**: perfect-fourth, perfect-fourth, invertible-counterpoint
 
 ## Common Confusions
 

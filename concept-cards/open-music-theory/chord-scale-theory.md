@@ -59,8 +59,7 @@ All three scales contain the same pitches (C major), but each starts on the chor
 ## Related Concepts
 
 - **Prerequisite**: diatonic-modes, ii-v-i-progression, seventh-chord
-- **Leads to**: modal-jazz, altered-scales, jazz-improvisation
-- **See also**: parent-scale, chord-tone, extension
+- **See also**: extension
 
 ## Common Confusions
 

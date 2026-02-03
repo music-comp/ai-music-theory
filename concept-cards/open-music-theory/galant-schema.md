@@ -123,9 +123,9 @@ Schemas provided the structural foundation that these composers then embellished
 
 ## Related Concepts
 
-- **Prerequisite**: melody, bass-line, figured-bass, harmony, meter, phrase, cadence
-- **Leads to**: meyer, prinner, romanesca, fonte, monte, ponte, partimento, rule-of-the-octave
-- **See also**: galant-style, classical-period, phrase-structure, 18th-century-composition
+- **Prerequisite**: figured-bass, meter, phrase, cadence
+- **Leads to**: meter, partimento, rule-of-the-octave
+- **See also**: srdc-phrase-structure
 
 ## Common Confusions
 

@@ -112,7 +112,7 @@ Same collection, different starting point!
 ## Related Concepts
 
 - **Prerequisite**: interval, scale, augmented-triad
-- **Leads to**: transpositional-symmetry, collection-theory, modes-of-limited-transposition
+- **Leads to**: transpositional-symmetry, modes-of-limited-transposition
 - **See also**: octatonic-collection, hexatonic-collection, pentatonic-collection
 
 ## Common Confusions

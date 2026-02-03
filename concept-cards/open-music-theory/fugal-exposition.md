@@ -123,9 +123,8 @@ The exposition serves crucial structural and expressive functions:
 
 ## Related Concepts
 
-- **Prerequisite**: fugue, subject, answer, voice, countersubject, tonic, dominant
-- **Leads to**: episode, middle-entry, stretto, counter-exposition, development-section
-- **See also**: fugal-structure, link, redundant-entry, voice-order
+- **Prerequisite**: fugue, countersubject
+- **Leads to**: stretto, double-exposition, development-section
 
 ## Common Confusions
 

@@ -114,8 +114,7 @@ The translation updates Helmholtz notation to ASA (C4 = middle C) and supplies p
 ## Related Concepts
 
 - **Prerequisite**: harmonic-dualism, overtone-series, undertone-series
-- **Leads to**: tonvorstellungen, klang-representation, psychological-foundation
-- **See also**: capellen-critique, belinfante-critique, function-theory
+- **Leads to**: tonvorstellungen, klang-representation
 
 ## Source Reference
 

@@ -71,9 +71,8 @@ Neo-Riemannian analysts note that strict adherence to monotonality:
 
 ## Related Concepts
 
-- **Prerequisite**: Tonal function (T, D, S), tonic
-- **Leads to**: Garden of Eden metaphor, analytical values
-- **See also**: Schenker's Ursatz, prolongation, structural levels
+- **Leads to**: garden-of-eden-metaphor, analytical-levels
+- **See also**: tonic-prolongation
 
 ## Methodological Implications
 

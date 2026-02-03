@@ -221,9 +221,9 @@ Distance: Half step (C to Db)
 
 ## Related Concepts
 
-- **Prerequisite**: german-sixth, dominant-seventh, enharmonic-equivalence
-- **Leads to**: chromatic-modulation, enharmonic-reinterpretation
-- **See also**: pivot-chord-modulation, distant-modulation, tonal-ambiguity
+- **Prerequisite**: german-sixth, dominant-seventh-chord, enharmonic-equivalence
+- **Leads to**: chromatic-modulation
+- **See also**: direct-modulation, tonal-ambiguity-in-pop
 
 ## Common Confusions
 

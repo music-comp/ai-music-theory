@@ -174,9 +174,8 @@ Creates arch without strict ABA form
 
 ## Related Concepts
 
-- **Prerequisite**: phrase, verse, stanza, text-setting, word-painting, strophic-form, modified-strophic
-- **Leads to**: song-cycle, opera-scene, cantata, thematic-transformation
-- **See also**: art-song, lied, melodie, ballad, dramatic-music
+- **Prerequisite**: phrase, strophic-form
+- **Leads to**: one-cycle, thematic-transformation
 
 ## Common Confusions
 

@@ -144,9 +144,8 @@ Complementary functions (build vs. release tension)
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, sequence, tonicization, ascending-sequence, chromatic-alteration, scale-degree
-- **Leads to**: fonte, sequential-technique, pre-dominant-function, half-cadence
-- **See also**: ascending-fifths, modular-sequence, riepel-schemas, intensification-patterns
+- **Prerequisite**: galant-schema, sequence, tonicization, ascending-fifth-sequence, chromatic-alteration, scale-degree
+- **Leads to**: pre-dominant-function, half-cadence
 
 ## Common Confusions
 

@@ -91,8 +91,8 @@ Fifth species resembles actual contrapuntal music:
 ## Related Concepts
 
 - **Prerequisite**: species-counterpoint, first-species, second-species, third-species, fourth-species, suspension, passing-tone, neighbor-tone
-- **Leads to**: free-counterpoint, fugue, invention, diminution, embellishment, two-part-counterpoint
-- **See also**: anticipation, turn, florid-counterpoint, gradus-ad-parnassum
+- **Leads to**: free-counterpoint, fugue
+- **See also**: anticipation
 
 ## Common Confusions
 

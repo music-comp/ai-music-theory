@@ -224,8 +224,8 @@ Same harmonic function, different color
 ## Related Concepts
 
 - **Prerequisite**: dominant-function, dominant-seventh-chord, augmented-triad, chromatic-alteration
-- **Leads to**: altered-dominant, chromatic-dominant, augmented-triad-voice-leading
-- **See also**: secondary-dominant, V7, leading-tone
+- **Leads to**: altered-dominant-chord, chromatic-predominant, augmented-triad-voice-leading
+- **See also**: secondary-dominant, leading-tone
 
 ## Common Confusions
 

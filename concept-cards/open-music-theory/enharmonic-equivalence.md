@@ -59,7 +59,7 @@ In Beethoven's "Moonlight Sonata" (C♯ minor), all the sharps could theoretical
 ## Related Concepts
 
 - **Prerequisite**: pitch, pitch-class, accidental, half-step
-- **Leads to**: equal-temperament, circle-of-fifths, modulation, respelling
+- **Leads to**: circle-of-fifths, modulation
 - **See also**: octave-equivalence, chromatic-scale, key-signature
 
 ## Common Confusions

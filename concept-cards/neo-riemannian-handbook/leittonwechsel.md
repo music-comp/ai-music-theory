@@ -120,9 +120,9 @@ Actually: The voice leading (G#-B-D#) -> (G-B-E) is an instance of LP
 
 ## Related Concepts
 
-- **Prerequisite**: leading-tone, triad, chromatic-motion
-- **Leads to**: hexatonic-systems, neo-riemannian-analysis, chromatic-third-relations
-- **See also**: parallel-transformation, relative-transformation, terzschritt
+- **Prerequisite**: leading-tone, triad, chromatic-modulation
+- **Leads to**: hexatonic-systems, chromatic-third-relation
+- **See also**: parallel-transformation, relative-transformation
 
 ## Common Confusions
 

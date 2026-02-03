@@ -150,8 +150,8 @@ P and I relationship clearly
 ## Related Concepts
 
 - **Prerequisite**: twelve-tone-row, interval, transposition
-- **Leads to**: row-matrix, naming-conventions, row-properties
-- **See also**: canon, inversion, retrograde, combinatoriality
+- **Leads to**: row-matrix, row-naming-conventions
+- **See also**: canzona, inversion, retrograde, combinatoriality
 
 ## Common Confusions
 

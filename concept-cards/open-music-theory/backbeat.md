@@ -44,9 +44,8 @@ The backbeat is ubiquitous in jazz from the swing era onward. It is particularly
 
 ## Related Concepts
 
-- **Prerequisite**: beat, meter, accent, quadruple-meter
-- **Leads to**: swing-drum-pattern, groove, jazz-feel
-- **See also**: swing-eighths, syncopation, off-beat
+- **Prerequisite**: beat, meter
+- **See also**: swing-eighths, syncopation
 
 ## Common Confusions
 

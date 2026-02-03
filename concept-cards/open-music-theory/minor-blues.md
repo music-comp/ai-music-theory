@@ -57,9 +57,9 @@ In C minor:
 
 ## Related Concepts
 
-- **Prerequisite**: 12-bar-blues, minor-key, ii-v-i-progression
-- **Leads to**: jazz-blues, modal-blues
-- **See also**: half-diminished-chord, plagal-cadence, blues-variations
+- **Prerequisite**: 12-bar-blues, ii-v-i-progression
+- **Leads to**: jazz-blues
+- **See also**: plagal-cadence, double-variations
 
 ## Common Confusions
 

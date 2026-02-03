@@ -236,8 +236,7 @@ Umbrella term
 ## Related Concepts
 
 - **Prerequisite**: secondary-dominant, tonicization, chromatic-alteration, dominant-function, leading-tone
-- **Leads to**: secondary-leading-tone, extended-tonicization, chromatic-harmony, tonicization-chain
-- **See also**: secondary-chord, slash-notation, V-of-x, chromatic-tonicization
+- **Leads to**: secondary-leading-tone-chord, extended-tonicization, chromatic-harmony, tonicization
 
 ## Common Confusions
 

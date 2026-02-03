@@ -62,8 +62,8 @@ In C:
 ## Related Concepts
 
 - **Prerequisite**: 12-bar-blues, ii-v-i-progression, turnaround
-- **Leads to**: bebop-blues, blues-variations, jazz-standards
-- **See also**: applied-ii-v, chord-substitution, blues-harmony
+- **Leads to**: double-variations
+- **See also**: applied-ii-v
 
 ## Common Confusions
 

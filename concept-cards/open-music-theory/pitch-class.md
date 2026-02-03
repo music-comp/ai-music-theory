@@ -54,7 +54,7 @@ In Schoenberg's twelve-tone works, a tone row uses each of the twelve pitch clas
 ## Related Concepts
 
 - **Prerequisite**: pitch, octave-equivalence, enharmonic-equivalence
-- **Leads to**: pitch-class-set, twelve-tone-theory, set-theory, interval-class
+- **Leads to**: pitch-class-set, interval-class
 - **See also**: integer-notation, mod-12-arithmetic, transposition, inversion
 
 ## Common Confusions

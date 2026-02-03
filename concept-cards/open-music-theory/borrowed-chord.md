@@ -149,9 +149,9 @@ Modal, "mixolydian" flavor
 
 ## Related Concepts
 
-- **Prerequisite**: modal-mixture, parallel-keys, chord-quality, roman-numerals
+- **Prerequisite**: modal-mixture, parallel-keys, chord-quality
 - **Leads to**: chromatic-harmony, chromatic-mediant, chromatic-pivot-chord
-- **See also**: mode, iv-chord, flat-VI-chord, flat-VII-chord
+- **See also**: mode, pivot-chord
 
 ## Common Confusions
 

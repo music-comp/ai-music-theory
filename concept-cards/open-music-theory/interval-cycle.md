@@ -233,8 +233,8 @@ This is OCT0,1 (the octatonic collection)
 ## Related Concepts
 
 - **Prerequisite**: interval, pitch-class, semitone, octave-equivalence
-- **Leads to**: whole-tone-scale, octatonic-scale, hexatonic-scale, axis-system
-- **See also**: equal-divisions-of-the-octave, circle-of-fifths, symmetrical-collection
+- **Leads to**: whole-tone-scale, octatonic-scale, hexatonic-scale
+- **See also**: equal-divisions-of-the-octave, circle-of-fifths
 
 ## Common Confusions
 

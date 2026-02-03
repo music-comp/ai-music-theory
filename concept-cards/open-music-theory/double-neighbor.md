@@ -92,9 +92,8 @@ Double neighbors appear in various guises:
 
 ## Related Concepts
 
-- **Prerequisite**: neighbor-tone, chord-tone, stepwise-motion, consonance, dissonance
-- **Leads to**: turn, mordent, trill, embellishment, chromatic-enclosure
-- **See also**: third-species, passing-tone, melodic-ornamentation
+- **Prerequisite**: neighbor-tone, consonance, dissonance
+- **See also**: third-species, passing-tone
 
 ## Common Confusions
 

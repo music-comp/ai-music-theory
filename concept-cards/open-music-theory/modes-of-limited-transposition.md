@@ -252,8 +252,7 @@ The internal symmetry (period of 3 semitones) means:
 
 ## Related Concepts
 
-- **Prerequisite**: transposition, pitch-class, interval-pattern, symmetry
-- **Leads to**: post-tonal-analysis, set-theory, spectral-music
+- **Prerequisite**: transposition, pitch-class, row-symmetry
 - **See also**: whole-tone-scale, octatonic-scale, symmetrical-pitch-collection, equal-divisions-of-the-octave
 
 ## Common Confusions

@@ -137,8 +137,8 @@ Episode: Fragment of subject (3-4 notes) sequenced through all voices
 ## Related Concepts
 
 - **Prerequisite**: fugue, fugue-subject, sequence, motive, modulation, countersubject
-- **Leads to**: fugal-development, stretto, middle-entries, fugue-form
-- **See also**: transition, sequential-passage, motivic-development, retransition
+- **Leads to**: stretto
+- **See also**: transition, retransition
 
 ## Common Confusions
 

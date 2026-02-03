@@ -144,9 +144,9 @@ Stepwise through pre-dominant to dominant, then leap to tonic
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, cadential-six-four, authentic-cadence, pre-dominant, dominant-seventh, scale-degree
-- **Leads to**: cadenza-semplice, cadenza-doppia, expanded-cadence, formal-closure
-- **See also**: cadential-schema, ii-V-I-progression, six-four-chord-types
+- **Prerequisite**: galant-schema, cadential-six-four, authentic-cadence, dominant-seventh-chord, scale-degree
+- **Leads to**: cadenza-semplice, evaded-cadence
+- **See also**: ii-v-i-progression, six-four-chord-types
 
 ## Common Confusions
 

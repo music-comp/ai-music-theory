@@ -55,7 +55,7 @@ Piano music uses both treble and bass clefs (grand staff). Orchestral scores use
 
 - **Prerequisite**: staff, pitch
 - **Leads to**: treble-clef, bass-clef, alto-clef, tenor-clef, grand-staff, ledger-lines
-- **See also**: range, transposition
+- **See also**: transposition
 
 ## Common Confusions
 

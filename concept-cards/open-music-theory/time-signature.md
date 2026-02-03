@@ -62,8 +62,8 @@ Same rhythm, different time signatures:
 ## Related Concepts
 
 - **Prerequisite**: meter, beat, measure, note-values
-- **Leads to**: simple-meter, compound-meter, beat-unit, counting, beaming
-- **See also**: tempo, barline, conducting-pattern
+- **Leads to**: simple-meter, compound-meter
+- **See also**: tempo
 
 ## Common Confusions
 

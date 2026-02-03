@@ -209,9 +209,9 @@ Expanded secondary area (Romantic tendency)
 
 ## Related Concepts
 
-- **Prerequisite**: sonata-form, primary-theme, secondary-theme, transition, modulation, medial-caesura, tonic-dominant
-- **Leads to**: development, recapitulation, formal-functions, tonal-structure
-- **See also**: exposition-repeat, monothematic-exposition, two-key-scheme
+- **Prerequisite**: sonata-form, coda-theme, transition, modulation, medial-caesura
+- **Leads to**: development-keys, recapitulation
+- **See also**: monothematic-exposition
 
 ## Common Confusions
 

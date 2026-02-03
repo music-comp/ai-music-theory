@@ -54,8 +54,7 @@ This paradigm applies to countless jazz standards. Any tune with ii-V-I progress
 ## Related Concepts
 
 - **Prerequisite**: jazz-voicings, seventh-chord, voice-leading
-- **Leads to**: comping, chord-melody, jazz-arranging
-- **See also**: common-tone, step-motion, ii-v-i-progression
+- **See also**: common-tones, ii-v-i-progression
 
 ## Common Confusions
 

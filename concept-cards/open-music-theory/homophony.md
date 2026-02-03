@@ -69,9 +69,9 @@ The melody-and-accompaniment subtype is especially dominant in tonal music, wher
 
 ## Related Concepts
 
-- **Prerequisite**: texture, melody, harmony, chord, rhythm
-- **Leads to**: homorhythm, melody-and-accompaniment, vertical-harmony, chord-progression
-- **See also**: block-chords, accompaniment, primary-melody, harmonic-rhythm
+- **Prerequisite**: texture, chord, rhythm
+- **Leads to**: homorhythm, melody-and-accompaniment, serial-harmony
+- **See also**: harmonic-rhythm
 
 ## Common Confusions
 

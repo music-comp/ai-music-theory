@@ -76,9 +76,9 @@ Bach's fugues occasionally feature voice crossings when subjects demand independ
 
 ## Related Concepts
 
-- **Prerequisite**: satb, voice, part-writing, soprano, alto, tenor, bass
-- **Leads to**: voice-leading, linear-independence, counterpoint
-- **See also**: voice-overlap, range, spacing, part-writing-rules
+- **Prerequisite**: satb
+- **Leads to**: voice-leading, counterpoint
+- **See also**: voice-overlap
 
 ## Common Confusions
 

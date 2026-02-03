@@ -68,8 +68,8 @@ Björk's "Army of Me" (intro) uses Locrian. Metallica occasionally uses Locrian 
 ## Related Concepts
 
 - **Prerequisite**: scale, mode, minor-scale, whole-step, half-step, tritone
-- **Leads to**: diminished-harmony, experimental-music, modal-jazz, chromatic-harmony
-- **See also**: phrygian, aeolian, diatonic-modes, modal-brightness, diminished-fifth
+- **Leads to**: chromatic-harmony
+- **See also**: phrygian, aeolian, diatonic-modes
 
 ## Common Confusions
 

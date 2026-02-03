@@ -155,9 +155,9 @@ Deceptive cadence typically followed by authentic cadence for true closure
 
 ## Related Concepts
 
-- **Prerequisite**: galant-schema, authentic-cadence, cadenza-semplice, submediant, first-inversion, pre-cadential
-- **Leads to**: phrase-extension, incomplete-cadence, cadential-evasion, formal-expansion
-- **See also**: half-cadence, interrupted-cadence, false-cadence
+- **Prerequisite**: galant-schema, authentic-cadence, cadenza-semplice
+- **Leads to**: phrase-extension, cadential-deviations
+- **See also**: half-cadence
 
 ## Common Confusions
 

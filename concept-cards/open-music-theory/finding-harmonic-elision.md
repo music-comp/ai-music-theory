@@ -249,7 +249,7 @@ Label: V7 -> V7/ii (RR elision) -> ii -> V7 -> I
 ## Related Concepts
 
 - **Prerequisite**: harmonic-elision, leading-tone-elision, raised-root-elision
-- **Leads to**: chromatic-analysis, development-section-analysis
+- **Leads to**: development-section-analysis-challenges
 - **See also**: roman-numeral-analysis, secondary-dominant, harmonic-sequence
 
 ## Common Confusions

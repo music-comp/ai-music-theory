@@ -46,9 +46,9 @@ When a choir has sopranos and altos sing "the same melody," they typically sing 
 
 ## Related Concepts
 
-- **Prerequisite**: pitch, frequency
-- **Leads to**: pitch-class, octave, scale-degree, letter-names
-- **See also**: interval, consonance, keyboard
+- **Prerequisite**: pitch
+- **Leads to**: pitch-class, scale-degree
+- **See also**: interval, consonance
 
 ## Common Confusions
 

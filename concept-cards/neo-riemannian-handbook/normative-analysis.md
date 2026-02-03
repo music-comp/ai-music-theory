@@ -81,8 +81,8 @@ The repeated 3-4 is an expansion measured against the 8-measure norm.
 
 ## Related Concepts
 
-- **Prerequisite**: period, phrase, meter, formal-analysis
-- **Leads to**: modified-strophic-form, compositional-development, phrase-expansion
+- **Prerequisite**: period, phrase, meter
+- **Leads to**: phrase-expansion
 - **See also**: auftakttheorie, hierarchical-metric-organization, expressed-meter
 
 ## Common Confusions

@@ -149,8 +149,8 @@ Fux _Gradus ad Parnassum_ exercises: Begin/end with perfect consonances, predomi
 ## Related Concepts
 
 - **Prerequisite**: consonance, interval, interval-quality, voice-leading, species-counterpoint
-- **Leads to**: parallel-fifths-octaves, direct-fifths-octaves, cadence, tendency-tones
-- **See also**: dissonance, tonal-fusion, voice-independence, acoustic-intervals
+- **Leads to**: parallel-fifths-octaves, direct-fifths-octaves, cadence
+- **See also**: dissonance
 
 ## Common Confusions
 

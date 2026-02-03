@@ -62,9 +62,9 @@ Bach chorales: fermatas mark ends of phrases for congregational breathing. Beeth
 
 ## Related Concepts
 
-- **Prerequisite**: note, rest, duration, phrase
-- **Leads to**: cadence, phrase-structure, rubato, expression, conducting
-- **See also**: caesura, pause, tenuto, breath-mark, ritardando
+- **Prerequisite**: note, rests, phrase
+- **Leads to**: cadence, srdc-phrase-structure
+- **See also**: caesura
 
 ## Common Confusions
 

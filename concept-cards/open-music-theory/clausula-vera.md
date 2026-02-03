@@ -142,9 +142,9 @@ All of Fux's exercises in _Gradus ad Parnassum_ end with clausula vera. Renaissa
 
 ## Related Concepts
 
-- **Prerequisite**: contrary-motion, stepwise-motion, scale-degree, cadence, leading-tone
-- **Leads to**: authentic-cadence, perfect-authentic-cadence, voice-leading-principles
-- **See also**: species-counterpoint, first-species, penultimate, resolution, tonic
+- **Prerequisite**: contrary-motion, scale-degree, cadence, leading-tone
+- **Leads to**: authentic-cadence, perfect-authentic-cadence
+- **See also**: species-counterpoint, first-species
 
 ## Common Confusions
 

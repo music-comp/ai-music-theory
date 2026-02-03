@@ -112,9 +112,9 @@ Phrases are fundamental units of musical form:
 
 ## Related Concepts
 
-- **Prerequisite**: melody, cadence, meter, harmonic-progression, closure
-- **Leads to**: period, sentence, antecedent-consequent, theme, section, phrase-expansion
-- **See also**: idea, subphrase, phrase-rhythm, phrasing, segmentation-analysis
+- **Prerequisite**: cadence, meter, harmonic-progression
+- **Leads to**: period, sentence, antecedent-consequent, phrase-expansion
+- **See also**: subphrase, segmentation-analysis
 
 ## Common Confusions
 

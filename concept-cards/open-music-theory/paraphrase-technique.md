@@ -141,9 +141,8 @@ Paraphrase integrates melody into all voices
 
 ## Related Concepts
 
-- **Prerequisite**: plainchant, cantus-firmus, embellishment, imitation, renaissance-style, ornamentation
-- **Leads to**: parody-mass, cantus-firmus-technique, cyclic-mass, melodic-elaboration
-- **See also**: borrowed-material, melodic-variation, through-composition
+- **Prerequisite**: cantus-firmus, imitation, fragmentation
+- **Leads to**: cyclic-sets, melodic-alteration
 
 ## Common Confusions
 

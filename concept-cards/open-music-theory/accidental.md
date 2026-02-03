@@ -56,8 +56,7 @@ Bach's chromatic passages use frequent accidentals. In Chopin's works, accidenta
 ## Related Concepts
 
 - **Prerequisite**: pitch, half-step, whole-step, staff, note
-- **Leads to**: enharmonic-equivalence, chromaticism, key-signature, modulation
-- **See also**: sharp, flat, natural, alteration, inflection
+- **Leads to**: enharmonic-equivalence, key-signature, modulation
 
 ## Common Confusions
 

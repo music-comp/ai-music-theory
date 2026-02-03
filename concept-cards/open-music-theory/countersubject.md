@@ -107,9 +107,9 @@ The countersubject serves crucial functions in fugal structure:
 
 ## Related Concepts
 
-- **Prerequisite**: fugue, subject, answer, counterpoint, invertible-counterpoint, voice-leading
-- **Leads to**: double-counterpoint, triple-counterpoint, free-counterpoint, episode
-- **See also**: exposition, fugal-structure, complementary-rhythm
+- **Prerequisite**: fugue, counterpoint, invertible-counterpoint, voice-leading
+- **Leads to**: free-counterpoint, free-counterpoint
+- **See also**: exposition
 
 ## Common Confusions
 

@@ -156,9 +156,8 @@ Contemplative, scholarly character
 
 ## Related Concepts
 
-- **Prerequisite**: fugue, imitation, counterpoint, contrapuntal-devices, augmentation-diminution, inversion, stretto
-- **Leads to**: art-of-fugue, learned-style, contrapuntal-mastery, double-fugue, triple-fugue
-- **See also**: toccata, fantasia, canzona, motet-style, point-of-imitation
+- **Prerequisite**: fugue, imitation, counterpoint, augmentation-diminution, inversion, stretto
+- **See also**: toccata, fantasia, canzona, point-of-imitation
 
 ## Common Confusions
 
