@@ -226,15 +226,17 @@ async fn handle_validate(
                     "sample_card_ids": m.sample_card_ids,
                 });
                 if !m.suggestions.is_empty() {
-                    obj["suggestions"] = serde_json::json!(
-                        m.suggestions.iter().map(|s| {
+                    obj["suggestions"] = serde_json::json!(m
+                        .suggestions
+                        .iter()
+                        .map(|s| {
                             serde_json::json!({
                                 "config_id": s.config_id,
                                 "title": s.title,
                                 "similarity": s.similarity,
                             })
-                        }).collect::<Vec<_>>()
-                    );
+                        })
+                        .collect::<Vec<_>>());
                 }
                 obj
             })
@@ -283,7 +285,10 @@ async fn handle_validate(
             "  Unique sources found:   {}",
             report.stats.unique_sources_found
         );
-        println!("  Sources resolved:       {}", report.stats.sources_resolved);
+        println!(
+            "  Sources resolved:       {}",
+            report.stats.sources_resolved
+        );
         println!(
             "  Sources in config:      {}",
             report.stats.sources_in_config
@@ -299,15 +304,9 @@ async fn handle_validate(
             );
             println!("{:-<60}", "");
             for missing in &report.missing_from_config {
-                println!(
-                    "  \"{}\" ({} cards)",
-                    missing.title, missing.card_count
-                );
+                println!("  \"{}\" ({} cards)", missing.title, missing.card_count);
                 if !missing.sample_card_ids.is_empty() {
-                    println!(
-                        "    Sample cards: {}",
-                        missing.sample_card_ids.join(", ")
-                    );
+                    println!("    Sample cards: {}", missing.sample_card_ids.join(", "));
                 }
                 if !missing.suggestions.is_empty() {
                     println!("    Suggestions:");
@@ -357,9 +356,7 @@ async fn handle_validate(
 async fn handle_alias(config: &Config, alias_cmds: AliasCommands) -> Result<()> {
     match alias_cmds.command {
         AliasSubcommand::List { json } => handle_alias_list(config, json).await,
-        AliasSubcommand::Add { source_id, alias } => {
-            handle_alias_add(&source_id, &alias).await
-        }
+        AliasSubcommand::Add { source_id, alias } => handle_alias_add(&source_id, &alias).await,
         AliasSubcommand::Remove { source_id, alias } => {
             handle_alias_remove(&source_id, &alias).await
         }
@@ -443,7 +440,9 @@ async fn handle_alias_add(source_id: &str, alias: &str) -> Result<()> {
     let category_table = sources
         .get_mut(category)
         .and_then(|c| c.as_table_mut())
-        .ok_or_else(|| Error::config(format!("Missing [sources.{}] section in config", category)))?;
+        .ok_or_else(|| {
+            Error::config(format!("Missing [sources.{}] section in config", category))
+        })?;
 
     // Ensure aliases table exists
     if !category_table.contains_key("aliases") {
@@ -520,9 +519,14 @@ async fn handle_alias_remove(source_id: &str, alias: &str) -> Result<()> {
     let category_table = sources
         .get_mut(category)
         .and_then(|c| c.as_table_mut())
-        .ok_or_else(|| Error::config(format!("Missing [sources.{}] section in config", category)))?;
+        .ok_or_else(|| {
+            Error::config(format!("Missing [sources.{}] section in config", category))
+        })?;
 
-    let aliases_table = match category_table.get_mut("aliases").and_then(|a| a.as_table_mut()) {
+    let aliases_table = match category_table
+        .get_mut("aliases")
+        .and_then(|a| a.as_table_mut())
+    {
         Some(t) => t,
         None => {
             println!("No aliases configured for category '{}'", category);
@@ -530,7 +534,10 @@ async fn handle_alias_remove(source_id: &str, alias: &str) -> Result<()> {
         }
     };
 
-    let alias_array = match aliases_table.get_mut(file_id).and_then(|a| a.as_array_mut()) {
+    let alias_array = match aliases_table
+        .get_mut(file_id)
+        .and_then(|a| a.as_array_mut())
+    {
         Some(a) => a,
         None => {
             println!("No aliases configured for {}", source_id);

@@ -42,7 +42,9 @@ impl SourceResolver {
                 let title = extract_title_from_filename(filename);
 
                 resolver.known_ids.insert(source_id.clone());
-                resolver.title_to_id.insert(title.clone(), source_id.clone());
+                resolver
+                    .title_to_id
+                    .insert(title.clone(), source_id.clone());
                 resolver.id_to_title.insert(source_id.clone(), title);
 
                 // Add aliases
@@ -145,8 +147,7 @@ mod tests {
 
     #[test]
     fn test_extract_title_from_filename_standard() {
-        let title =
-            extract_title_from_filename("[2011] Tymoczko - A Geometry of Music.pdf");
+        let title = extract_title_from_filename("[2011] Tymoczko - A Geometry of Music.pdf");
         assert_eq!(title, "A Geometry of Music");
     }
 
@@ -155,7 +156,10 @@ mod tests {
         let title = extract_title_from_filename(
             "[1961] Persichetti - Twentieth-Century Harmony: Creative Aspects and Practice.pdf",
         );
-        assert_eq!(title, "Twentieth-Century Harmony: Creative Aspects and Practice");
+        assert_eq!(
+            title,
+            "Twentieth-Century Harmony: Creative Aspects and Practice"
+        );
     }
 
     #[test]
@@ -236,7 +240,10 @@ mod tests {
         );
 
         let mut aliases = HashMap::new();
-        aliases.insert("test-source".to_string(), vec!["Alternate Name".to_string()]);
+        aliases.insert(
+            "test-source".to_string(),
+            vec!["Alternate Name".to_string()],
+        );
 
         SourcesConfig {
             oxford: crate::config::SourceCategory::default(),

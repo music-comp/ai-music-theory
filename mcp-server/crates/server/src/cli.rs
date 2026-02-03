@@ -1447,15 +1447,24 @@ fuzzy_distance = 2
 
     #[test]
     fn test_cli_parse_sources_validate_with_mode() {
-        let cli =
-            Cli::parse_from(&["music-theory-mcp", "sources", "validate", "--mode", "cards-config"]);
+        let cli = Cli::parse_from(&[
+            "music-theory-mcp",
+            "sources",
+            "validate",
+            "--mode",
+            "cards-config",
+        ]);
         assert!(matches!(cli.command, Some(Commands::Sources(_))));
     }
 
     #[test]
     fn test_cli_parse_sources_validate_suggest_matches() {
-        let cli =
-            Cli::parse_from(&["music-theory-mcp", "sources", "validate", "--suggest-matches"]);
+        let cli = Cli::parse_from(&[
+            "music-theory-mcp",
+            "sources",
+            "validate",
+            "--suggest-matches",
+        ]);
         assert!(matches!(cli.command, Some(Commands::Sources(_))));
     }
 
@@ -1518,8 +1527,13 @@ fuzzy_distance = 2
 
     #[test]
     fn test_cli_parse_sources_with_log_level() {
-        let cli =
-            Cli::parse_from(&["music-theory-mcp", "--log-level", "debug", "sources", "scan"]);
+        let cli = Cli::parse_from(&[
+            "music-theory-mcp",
+            "--log-level",
+            "debug",
+            "sources",
+            "scan",
+        ]);
         assert!(matches!(cli.command, Some(Commands::Sources(_))));
         assert_eq!(cli.log_level, Some("debug".to_string()));
     }

@@ -103,8 +103,7 @@ pub async fn validate_sources(
         || mode == ValidationMode::CardsFilesystem
     {
         let missing_files = check_filesystem(config).await?;
-        report.stats.sources_on_disk =
-            report.stats.sources_in_config - missing_files.len();
+        report.stats.sources_on_disk = report.stats.sources_in_config - missing_files.len();
         report.stats.missing_from_disk = missing_files.len();
         report.missing_from_filesystem = missing_files;
     }
@@ -247,7 +246,9 @@ Content"#,
     async fn create_source_file(temp_dir: &TempDir, filename: &str) {
         let dir = temp_dir.path().join("sources");
         fs::create_dir_all(&dir).await.unwrap();
-        fs::write(dir.join(filename), "dummy content").await.unwrap();
+        fs::write(dir.join(filename), "dummy content")
+            .await
+            .unwrap();
     }
 
     #[tokio::test]
