@@ -15,6 +15,7 @@ use std::time::Instant;
 use crate::config::Config;
 use crate::error::{Error, Result};
 use crate::metadata::extract_concept_metadata;
+use crate::sources::SourceResolver;
 use crate::util::files::{find_all_files, FindOptions};
 
 use super::parser::parse_related_concepts;
@@ -27,7 +28,8 @@ pub struct GraphBuilder {
     nodes: Vec<Node>,
     edges: Vec<Edge>,
     node_ids: HashSet<String>,
-    source_title_to_id: HashMap<String, String>,
+    /// Resolver for source references (supports aliases and fuzzy matching)
+    resolver: Option<SourceResolver>,
     warnings: Vec<String>,
 }
 
@@ -38,7 +40,7 @@ impl GraphBuilder {
             nodes: Vec::new(),
             edges: Vec::new(),
             node_ids: HashSet::new(),
-            source_title_to_id: HashMap::new(),
+            resolver: None,
             warnings: Vec::new(),
         }
     }
@@ -135,6 +137,9 @@ impl GraphBuilder {
 
     /// Add source nodes from configuration.
     fn add_source_nodes(&mut self, config: &Config) -> Result<()> {
+        // Create the source resolver (handles titles, aliases, fuzzy matching)
+        self.resolver = Some(SourceResolver::from_config(&config.sources));
+
         // Process each source category (oxford, general, papers)
         for (category, source_cat) in [
             ("oxford", &config.sources.oxford),
@@ -163,7 +168,6 @@ impl GraphBuilder {
                 });
 
                 self.node_ids.insert(source_id.clone());
-                self.source_title_to_id.insert(title, source_id);
                 self.nodes.push(node);
             }
         }
@@ -281,11 +285,17 @@ impl GraphBuilder {
 
     /// Add an "introduces" edge from the source to the concept.
     fn add_introduces_edge(&mut self, card: &ConceptCard) {
-        // Try to find source by ID first, then by title
-        let source_id = if self.node_ids.contains(&card.source) {
-            Some(card.source.clone())
+        // Use the resolver to find source (supports direct ID, title, and aliases)
+        let source_id = if let Some(resolver) = &self.resolver {
+            let (resolved_id, _method) = resolver.resolve(&card.source);
+            resolved_id
         } else {
-            self.source_title_to_id.get(&card.source).cloned()
+            // Fallback: check node_ids directly (should not happen in normal use)
+            if self.node_ids.contains(&card.source) {
+                Some(card.source.clone())
+            } else {
+                None
+            }
         };
 
         if let Some(source_id) = source_id {
@@ -714,21 +724,25 @@ mod tests {
     fn test_add_introduces_edge_by_id() {
         let mut builder = GraphBuilder::new();
 
-        builder.node_ids.insert("test-source".to_string());
+        builder.node_ids.insert("general-test-source".to_string());
         builder.node_ids.insert("test-concept".to_string());
+
+        // Create a resolver with a test source
+        let config = create_test_sources_config();
+        builder.resolver = Some(crate::sources::SourceResolver::from_config(&config));
 
         let card = ConceptCard {
             id: "test-concept".to_string(),
             title: "Test Concept".to_string(),
             category: "test".to_string(),
-            source: "test-source".to_string(),
+            source: "general-test-source".to_string(), // Using direct source ID
             related_concepts: None,
         };
 
         builder.add_introduces_edge(&card);
 
         assert_eq!(builder.edges.len(), 1);
-        assert_eq!(builder.edges[0].from, "test-source");
+        assert_eq!(builder.edges[0].from, "general-test-source");
         assert_eq!(builder.edges[0].to, "test-concept");
         assert_eq!(builder.edges[0].relationship, Relationship::Introduces);
         assert_eq!(builder.edges[0].origin, EdgeOrigin::Extracted);
@@ -738,24 +752,25 @@ mod tests {
     fn test_add_introduces_edge_by_title() {
         let mut builder = GraphBuilder::new();
 
-        builder.node_ids.insert("test-source".to_string());
+        builder.node_ids.insert("general-test-source".to_string());
         builder.node_ids.insert("test-concept".to_string());
-        builder
-            .source_title_to_id
-            .insert("Test Source".to_string(), "test-source".to_string());
+
+        // Create a resolver with a test source
+        let config = create_test_sources_config();
+        builder.resolver = Some(crate::sources::SourceResolver::from_config(&config));
 
         let card = ConceptCard {
             id: "test-concept".to_string(),
             title: "Test Concept".to_string(),
             category: "test".to_string(),
-            source: "Test Source".to_string(), // Using title instead of ID
+            source: "Test Title".to_string(), // Using title instead of ID
             related_concepts: None,
         };
 
         builder.add_introduces_edge(&card);
 
         assert_eq!(builder.edges.len(), 1);
-        assert_eq!(builder.edges[0].from, "test-source");
+        assert_eq!(builder.edges[0].from, "general-test-source");
     }
 
     #[test]
@@ -764,11 +779,15 @@ mod tests {
 
         builder.node_ids.insert("test-concept".to_string());
 
+        // Create a resolver with a test source (but we'll reference an unknown one)
+        let config = create_test_sources_config();
+        builder.resolver = Some(crate::sources::SourceResolver::from_config(&config));
+
         let card = ConceptCard {
             id: "test-concept".to_string(),
             title: "Test Concept".to_string(),
             category: "test".to_string(),
-            source: "unknown-source".to_string(),
+            source: "unknown-source".to_string(), // Not in resolver
             related_concepts: None,
         };
 
@@ -784,6 +803,10 @@ mod tests {
         let mut builder = GraphBuilder::new();
 
         builder.node_ids.insert("test-concept".to_string());
+
+        // Create a resolver
+        let config = create_test_sources_config();
+        builder.resolver = Some(crate::sources::SourceResolver::from_config(&config));
 
         let card = ConceptCard {
             id: "test-concept".to_string(),
@@ -928,5 +951,57 @@ mod tests {
         assert_eq!(builder.edges.len(), 0);
         assert_eq!(builder.warnings.len(), 1);
         assert!(builder.warnings[0].contains("unknown 'to' node"));
+    }
+
+    #[test]
+    fn test_add_introduces_edge_by_alias() {
+        let mut builder = GraphBuilder::new();
+
+        builder.node_ids.insert("general-test-source".to_string());
+        builder.node_ids.insert("test-concept".to_string());
+
+        // Create a resolver with a test source and alias
+        let config = create_test_sources_config();
+        builder.resolver = Some(crate::sources::SourceResolver::from_config(&config));
+
+        let card = ConceptCard {
+            id: "test-concept".to_string(),
+            title: "Test Concept".to_string(),
+            category: "test".to_string(),
+            source: "Alternate Name".to_string(), // Using alias
+            related_concepts: None,
+        };
+
+        builder.add_introduces_edge(&card);
+
+        assert_eq!(builder.edges.len(), 1);
+        assert_eq!(builder.edges[0].from, "general-test-source");
+    }
+
+    /// Create a test SourcesConfig for graph builder tests.
+    fn create_test_sources_config() -> crate::config::SourcesConfig {
+        use std::collections::HashMap;
+
+        let mut files = HashMap::new();
+        files.insert(
+            "test-source".to_string(),
+            "[2020] Author - Test Title.pdf".to_string(),
+        );
+
+        let mut aliases = HashMap::new();
+        aliases.insert(
+            "test-source".to_string(),
+            vec!["Alternate Name".to_string()],
+        );
+
+        crate::config::SourcesConfig {
+            oxford: crate::config::SourceCategory::default(),
+            general: crate::config::SourceCategory {
+                path: "/test".to_string(),
+                files,
+                aliases,
+            },
+            papers: crate::config::SourceCategory::default(),
+        }
     }
 }
