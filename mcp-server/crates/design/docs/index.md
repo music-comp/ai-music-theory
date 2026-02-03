@@ -6,6 +6,7 @@ This index is automatically generated. Do not edit manually.
 
 | Number | Title | State | Updated |
 |--------|-------|-------|----------|
+| 0012 | Fabryk Extraction Audit: Amendment & Refinements | Final | 2026-02-03 |
 | 0011 | A Guide for Parallel Concept Card Extraction | Active | 2026-02-03 |
 | 0010 | A Guide to Prepare PDF-Converted Source for Indexing and Concept Extraction | Active | 2026-02-03 |
 | 0009 | Fabryk Extraction Audit: Music Theory MCP Server | Active | 2026-02-03 |
@@ -29,6 +30,7 @@ This index is automatically generated. Do not edit manually.
 
 ### Final
 
+- [0012 - Fabryk Extraction Audit: Amendment & Refinements](06-final/0012-fabryk-extraction-audit-amendment-refinements.md)
 - [0008 - Graph Database Phase 2 - Query Tools & Algorithms](06-final/0008-graph-database-phase-2-query-tools-algorithms.md)
 - [0007 - Graph Database Phase 1 - Generation & Infrastructure](06-final/0007-graph-database-phase-1-generation-infrastructure.md)
 - [0006 - Fix Search Quality Issues](06-final/0006-fix-search-quality-issues.md)
