@@ -23,7 +23,7 @@ scripts/process-pdf.sh \
   sources-md/neo-riemannian-handbook/
 
 scripts/process-pdf.sh \
-  ~/Dropbox/Apps/Oxford\ University\ Press/\[1998]\ Author\ -\ Classical\ Form\ -\ A\ Theory\ of\ Formal\ Functions\ for\ the\ Instrumental\ Music\ of\ Haydn,\ Mozart\ and\ Beethoven.pdf \
-  sources-md/classical-form/
+  ~/Dropbox/Apps/Oxford\ University\ Press/\[2013]\ Caplin\ -\ Analyzing\ Classical\ Form\ -\ An\ Approach\ for\ the\ Classroom.pdf  \
+  sources-md/analyzing-classical-form/
 
 EXAMPLES
