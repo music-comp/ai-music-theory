@@ -6,6 +6,7 @@ This index is automatically generated. Do not edit manually.
 
 | Number | Title | State | Updated |
 |--------|-------|-------|----------|
+| 0013 | Fabryk Extraction: Project Plan Overview | Active | 2026-02-03 |
 | 0012 | Fabryk Extraction Audit: Amendment & Refinements | Final | 2026-02-03 |
 | 0011 | A Guide for Parallel Concept Card Extraction | Active | 2026-02-03 |
 | 0010 | A Guide to Prepare PDF-Converted Source for Indexing and Concept Extraction | Active | 2026-02-03 |
@@ -23,6 +24,7 @@ This index is automatically generated. Do not edit manually.
 
 ### Active
 
+- [0013 - Fabryk Extraction: Project Plan Overview](05-active/0013-fabryk-extraction-project-plan-overview.md)
 - [0011 - A Guide for Parallel Concept Card Extraction](05-active/0011-a-guide-for-parallel-concept-card-extraction.md)
 - [0010 - A Guide to Prepare PDF-Converted Source for Indexing and Concept Extraction](05-active/0010-a-guide-to-prepare-pdf-converted-source-for-indexing-and-concept-extraction.md)
 - [0009 - Fabryk Extraction Audit: Music Theory MCP Server](05-active/0009-fabryk-extraction-audit-music-theory-mcp-server.md)
