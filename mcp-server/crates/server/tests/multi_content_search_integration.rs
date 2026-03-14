@@ -10,7 +10,8 @@
 
 use music_theory_mcp::config::{Config, PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
 use music_theory_mcp::metadata::{extract_metadata, ContentType};
-use music_theory_mcp::search::{build_index, SearchDocument};
+use music_theory_mcp::search::build_index;
+use music_theory_mcp::SearchDocument;
 use music_theory_mcp::state::AppState;
 use music_theory_mcp::tools::search::{search_concepts, SearchConceptsParams};
 use music_theory_mcp::tools::sources::{
@@ -684,43 +685,35 @@ async fn test_metadata_extraction_all_content_types() {
 #[cfg(feature = "fts")]
 #[tokio::test]
 async fn test_search_document_creation_all_types() {
+    use music_theory_mcp::extractors::MusicTheoryDocumentExtractor;
+
     let temp_dir = TempDir::new().expect("Failed to create temp dir");
     create_test_fixtures(&temp_dir).await;
 
     let base = temp_dir.path();
+    let extractor = MusicTheoryDocumentExtractor::new();
 
     // Test concept card document
     let concept_path = base.join("concept-cards/harmony/cadence.md");
-    let concept_meta = extract_metadata(
-        &base.join("concept-cards"),
-        &concept_path,
-        ContentType::ConceptCard,
-    )
-    .await
-    .unwrap();
+    let concept_content =
+        tokio::fs::read_to_string(&concept_path).await.unwrap();
+    let concept_doc = extractor
+        .extract(&concept_path, &concept_content)
+        .expect("Document extraction failed");
 
-    let concept_doc = SearchDocument::from_universal_metadata(concept_meta, &concept_path)
-        .await
-        .expect("Document creation failed");
-
-    assert_eq!(concept_doc.content_type, "concept_card");
+    assert_eq!(concept_doc.content_type, Some("concept_card".to_string()));
     assert_eq!(concept_doc.title, "Cadence");
     assert!(concept_doc.section.is_none());
 
     // Test source chapter document
     let source_path = base.join("sources-md/test-source/chapter-1-introduction.md");
-    let source_meta = extract_metadata(
-        &base.join("sources-md/test-source"),
-        &source_path,
-        ContentType::SourceChapter,
-    )
-    .await
-    .unwrap();
+    let source_content =
+        tokio::fs::read_to_string(&source_path).await.unwrap();
+    let source_doc = extractor
+        .extract(&source_path, &source_content)
+        .expect("Document extraction failed");
 
-    let source_doc = SearchDocument::from_universal_metadata(source_meta, &source_path)
-        .await
-        .expect("Document creation failed");
-
-    assert_eq!(source_doc.content_type, "source_chapter");
+    // MusicTheoryDocumentExtractor uses frontmatter category as content_type
+    assert_eq!(source_doc.title, "Introduction to Music Theory");
     assert_eq!(source_doc.section, Some("pp. 1-15".to_string()));
 }

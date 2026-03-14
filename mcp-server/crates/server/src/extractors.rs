@@ -97,8 +97,9 @@ impl MusicTheoryDocumentExtractor {
             builder = builder.tags(fm.tags.clone());
         }
 
-        // Content type is always "concept" for concept cards.
-        builder = builder.content_type("concept");
+        // Determine content type from the file path.
+        let content_type = Self::detect_content_type(path);
+        builder = builder.content_type(&content_type);
 
         Some(builder.build())
     }
@@ -106,6 +107,33 @@ impl MusicTheoryDocumentExtractor {
     /// File extensions this extractor supports (without dots).
     pub fn supported_extensions(&self) -> &[&str] {
         &["md"]
+    }
+
+    /// Detect the content type from the file path.
+    ///
+    /// Looks at ancestor directory names to determine whether the file is a
+    /// concept card, source chapter, unified concept, or guide.
+    fn detect_content_type(path: &Path) -> String {
+        // Walk ancestor components looking for known directory names.
+        for component in path.components().rev() {
+            if let std::path::Component::Normal(name) = component {
+                let name = name.to_string_lossy();
+                if name.starts_with("concept-cards") || name.starts_with("concept_cards") {
+                    return "concept_card".to_string();
+                }
+                if name.starts_with("sources-md") || name.starts_with("sources_md") {
+                    return "source_chapter".to_string();
+                }
+                if name.starts_with("concepts-unified") || name.starts_with("concepts_unified") {
+                    return "unified_concept".to_string();
+                }
+                if name == "guides" {
+                    return "guide".to_string();
+                }
+            }
+        }
+        // Default fallback
+        "concept_card".to_string()
     }
 
     /// Check if this extractor supports the given file extension.
@@ -441,7 +469,7 @@ mod tests {
     #[test]
     fn test_document_extractor_full_frontmatter() {
         let extractor = MusicTheoryDocumentExtractor::new();
-        let path = PathBuf::from("/content/harmony/major-triad.md");
+        let path = PathBuf::from("/content/concept-cards/harmony/major-triad.md");
         let content = r#"---
 title: "Major Triad"
 description: "A three-note chord built on major and minor thirds"
@@ -476,7 +504,7 @@ The major triad consists of a root, major third, and perfect fifth."#;
         assert_eq!(doc.part, Some("II".to_string()));
         assert_eq!(doc.section, Some("pp. 45-52".to_string()));
         assert_eq!(doc.tags, vec!["chord", "fundamentals"]);
-        assert_eq!(doc.content_type, Some("concept".to_string()));
+        assert_eq!(doc.content_type, Some("concept_card".to_string()));
         assert!(doc.content.contains("major triad consists of"));
     }
 

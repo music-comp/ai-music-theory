@@ -152,7 +152,7 @@ pub async fn get_health(state: &AppState) -> Result<HealthResponse> {
 
 /// Load index statistics from metadata.
 ///
-/// Reads the metadata.json file from the index directory and extracts
+/// Reads the fabryk-fts metadata from the index directory and extracts
 /// document count and last indexed time.
 ///
 /// # Arguments
@@ -168,22 +168,21 @@ pub async fn get_health(state: &AppState) -> Result<HealthResponse> {
 /// Returns `Err` if metadata cannot be read or parsed.
 #[cfg(feature = "fts")]
 async fn load_index_stats(config: &crate::config::Config) -> Result<IndexStats> {
-    use crate::search::freshness::IndexMetadata;
+    use crate::search::IndexMetadata;
 
     let index_path = config.search.index_path()?;
-    let metadata_path = index_path.join("metadata.json");
 
-    if let Ok(json) = tokio::fs::read_to_string(&metadata_path).await {
-        if let Ok(metadata) = serde_json::from_str::<IndexMetadata>(&json) {
-            return Ok(IndexStats {
-                doc_count: metadata.doc_count,
-                last_indexed: Some(format!("{:?}", metadata.last_indexed)),
-                concept_cards: Some(metadata.concept_cards),
-                source_chapters: Some(metadata.source_chapters),
-                unified_concepts: Some(metadata.unified_concepts),
-                guides: Some(metadata.guides),
-            });
-        }
+    if let Ok(Some(metadata)) = IndexMetadata::load(&index_path) {
+        return Ok(IndexStats {
+            doc_count: metadata.doc_count(),
+            last_indexed: Some(metadata.indexed_at_display()),
+            // fabryk's IndexMetadata doesn't track per-type counts;
+            // report all as concept_cards for backward compatibility
+            concept_cards: Some(metadata.doc_count()),
+            source_chapters: Some(0),
+            unified_concepts: Some(0),
+            guides: Some(0),
+        });
     }
 
     // If metadata can't be loaded, return minimal stats

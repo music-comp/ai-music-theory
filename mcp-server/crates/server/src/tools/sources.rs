@@ -225,31 +225,36 @@ pub async fn list_source_chapters(
 /// List chapters from Tantivy index.
 #[cfg(feature = "fts")]
 async fn list_chapters_from_index(state: &AppState, source_id: &str) -> Result<Vec<ChapterInfo>> {
-    use crate::tools::search::SearchConceptsParams;
-
     // Use wildcard query to match ALL documents, then filter by content_type
     // We filter by path instead of source facet field to handle chapters
     // that may have missing or inconsistent source metadata
-    let params = SearchConceptsParams {
+    let params = crate::search::SearchParams {
         query: "*".to_string(), // Match all documents (uses AllQuery in Tantivy)
-        limit: 1000,            // Large limit to get all chapters
-        query_mode: None,
+        limit: Some(1000),      // Large limit to get all chapters
         category: None,
         source: None, // Don't filter by source facet - use path filter instead
         content_types: Some(vec!["source_chapter".to_string()]),
+        query_mode: None,
+        snippet_length: None,
     };
 
-    let results = state.search_backend().search(&params).await?;
+    let results = state.search_backend().search(params).await?;
 
     // Filter by source_id in path (handles chapters with missing/inconsistent source metadata)
     let chapters = results
+        .items
         .into_iter()
-        .filter(|result| result.path.contains(source_id))
+        .filter(|result| {
+            result
+                .path
+                .as_ref()
+                .is_some_and(|p| p.contains(source_id))
+        })
         .map(|result| ChapterInfo {
             id: result.id,
             title: result.title,
             section: result.section,
-            path: result.path,
+            path: result.path.unwrap_or_default(),
         })
         .collect();
 
@@ -305,23 +310,24 @@ async fn list_chapters_from_filesystem(
 /// Check if a source is indexed in Tantivy.
 #[cfg(feature = "fts")]
 async fn check_source_indexed(state: &AppState, source_id: &str) -> Result<bool> {
-    use crate::tools::search::SearchConceptsParams;
-
     // Search for a common term that would appear in source chapters
-    // Use "the" or "a" which are very common words
-    let params = SearchConceptsParams {
+    let params = crate::search::SearchParams {
         query: "chapter".to_string(),
-        limit: 1000,
-        query_mode: None,
+        limit: Some(1000),
         category: None,
         source: None,
         content_types: Some(vec!["source_chapter".to_string()]),
+        query_mode: None,
+        snippet_length: None,
     };
 
-    let results = state.search_backend().search(&params).await?;
+    let results = state.search_backend().search(params).await?;
 
     // Check if any results have the source_id in their path
-    Ok(results.iter().any(|r| r.path.contains(source_id)))
+    Ok(results
+        .items
+        .iter()
+        .any(|r| r.path.as_ref().is_some_and(|p| p.contains(source_id))))
 }
 
 /// Check if source file exists in any configured location.

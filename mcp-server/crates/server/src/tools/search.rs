@@ -3,6 +3,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::config::QueryMode;
 use crate::error::Result;
+use crate::search::SearchParams;
 use crate::state::AppState;
 
 /// A search result item.
@@ -65,16 +66,60 @@ fn default_limit() -> usize {
 ///
 /// Uses the currently active search backend from AppState.
 /// Returns FTS results if ready, otherwise uses simple search.
+///
+/// Converts between the project's MCP-contract types (`SearchConceptsParams`,
+/// `SearchResult`) and fabryk's types (`SearchParams`, `fabryk::fts::SearchResult`).
 pub async fn search_concepts(
     state: &AppState,
     params: SearchConceptsParams,
 ) -> Result<SearchConceptsResponse> {
+    // Reject whitespace-only queries (but allow empty string as wildcard/match-all)
+    if !params.query.is_empty() && params.query.trim().is_empty() {
+        return Err(crate::error::Error::operation(
+            "Query must not be whitespace-only".to_string(),
+        ));
+    }
+
     // Get active backend from state (FTS if ready, else simple)
     let backend = state.search_backend();
     let backend_name = state.active_backend_name();
 
-    // Execute search (polymorphic dispatch)
-    let results = backend.search(&params).await?;
+    // Convert project params -> fabryk SearchParams
+    let fabryk_params = SearchParams {
+        query: params.query.clone(),
+        limit: Some(params.limit),
+        category: params.category.clone(),
+        source: params.source.clone(),
+        content_types: params.content_types.clone(),
+        query_mode: params
+            .query_mode
+            .as_ref()
+            .map(crate::search::to_fabryk_query_mode),
+        snippet_length: None,
+    };
+
+    // Execute search via fabryk's SearchBackend trait (owned params)
+    let fabryk_results = backend
+        .search(fabryk_params)
+        .await
+        .map_err(|e| crate::error::Error::operation(e.to_string()))?;
+
+    // Convert fabryk SearchResult -> project SearchResult
+    let results: Vec<SearchResult> = fabryk_results
+        .items
+        .into_iter()
+        .map(|r| SearchResult {
+            id: r.id,
+            title: r.title,
+            category: r.category,
+            source: r.source,
+            path: r.path.unwrap_or_default(),
+            snippet: r.snippet.unwrap_or_default(),
+            relevance: r.relevance,
+            content_type: r.content_type.unwrap_or_else(|| "concept_card".to_string()),
+            section: r.section,
+        })
+        .collect();
 
     let total = results.len();
 

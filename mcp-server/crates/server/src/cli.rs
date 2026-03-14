@@ -420,32 +420,23 @@ async fn handle_status_command(log_level_override: Option<String>) -> Result<()>
         return Ok(());
     }
 
-    // Load metadata
-    let metadata_path = index_path.join("metadata.json");
-    if !metadata_path.exists() {
+    // Load metadata using fabryk's IndexMetadata via our adapter
+    let metadata = IndexMetadata::load(&index_path)?;
+    if metadata.is_none() {
         println!("✓ Index exists but no metadata found");
         println!("  Location: {}", index_path.display());
         println!("  This may be an old index. Run 'music-theory-mcp index --force' to rebuild.");
         return Ok(());
     }
-
-    let json = tokio::fs::read_to_string(&metadata_path).await?;
-    let metadata: IndexMetadata = serde_json::from_str(&json)?;
+    let metadata = metadata.unwrap();
 
     // Check freshness
     let is_fresh = is_index_fresh(&index_path, &config).await?;
 
     println!("Index Status:");
     println!("  Location:     {}", index_path.display());
-    println!("  Documents:    {}", metadata.doc_count);
-    println!(
-        "  Last indexed: {:?}",
-        metadata
-            .last_indexed
-            .duration_since(std::time::SystemTime::UNIX_EPOCH)
-            .map(|d| format!("{} seconds ago", d.as_secs()))
-            .unwrap_or_else(|_| "unknown".to_string())
-    );
+    println!("  Documents:    {}", metadata.doc_count());
+    println!("  Last indexed: {}", metadata.indexed_at_display());
     println!(
         "  Status:       {}",
         if is_fresh {

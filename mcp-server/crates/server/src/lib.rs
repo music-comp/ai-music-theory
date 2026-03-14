@@ -23,7 +23,7 @@ pub mod util;
 // Re-export commonly used types
 pub use config::Config;
 pub use error::{Error, Result};
-pub use search::SearchDocument;
+pub use fabryk::fts::SearchDocument;
 pub use state::AppState;
 pub use tools::search::{
     search_concepts, SearchConceptsParams, SearchConceptsResponse, SearchResult,

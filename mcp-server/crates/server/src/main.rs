@@ -1,6 +1,8 @@
 mod cli;
 mod config;
+mod content;
 mod error;
+mod extractors;
 #[cfg(feature = "graph")]
 mod graph;
 mod markdown;

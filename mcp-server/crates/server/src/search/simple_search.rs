@@ -1,22 +1,28 @@
-//! Simple search backend (linear scan).
+//! Simple search backend (linear scan) implementing fabryk's SearchBackend trait.
 //!
-//! This module provides SimpleSearch, a linear scan search backend
-//! that preserves the original simple search functionality.
+//! This module provides `SimpleSearch`, a linear scan search backend that preserves
+//! the original simple search functionality. It uses fabryk's `SearchDocument`
+//! methods (`matches_query`, `relevance`, `extract_snippet`) for matching and
+//! ranking, and returns results through fabryk's `SearchBackend` trait interface.
 
 use async_trait::async_trait;
 
+use fabryk::fts::{
+    SearchBackend, SearchParams, SearchResult as FabrykSearchResult, SearchResults,
+};
+
 use crate::config::Config;
-use crate::error::Result;
-use crate::metadata::extract_concept_metadata;
-use crate::search::{backend::SearchBackend, SearchDocument};
-use crate::tools::search::{SearchConceptsParams, SearchResult};
+use crate::extractors::MusicTheoryDocumentExtractor;
 use crate::util::files::{find_all_files, FindOptions};
 
 /// Simple search backend using linear scan.
 ///
-/// This backend scans all concept cards sequentially, checking each
-/// for query matches. It's suitable for small to medium collections
-/// (<500 documents) and requires no index.
+/// This backend scans all concept card files sequentially, parsing each with
+/// `MusicTheoryDocumentExtractor` and using fabryk `SearchDocument` methods
+/// for matching and relevance scoring.
+///
+/// It is suitable for small to medium collections (<500 documents) and
+/// requires no index.
 pub struct SimpleSearch {
     config: Config,
 }
@@ -40,69 +46,89 @@ impl SimpleSearch {
 
 #[async_trait]
 impl SearchBackend for SimpleSearch {
-    async fn search(&self, params: &SearchConceptsParams) -> Result<Vec<SearchResult>> {
-        let concept_cards_path = self.config.paths.concept_cards_path()?;
+    async fn search(&self, params: SearchParams) -> fabryk::core::Result<SearchResults> {
+        let concept_cards_path = self
+            .config
+            .paths
+            .concept_cards_path()
+            .map_err(|e| fabryk::core::Error::config(e.to_string()))?;
 
         if !crate::util::files::exists(&concept_cards_path).await {
-            return Ok(Vec::new());
+            return Ok(SearchResults::empty(self.name()));
         }
+
+        let extractor = MusicTheoryDocumentExtractor::new();
+        let snippet_length = params.snippet_length.unwrap_or(200);
+        let limit = params.limit.unwrap_or(10);
 
         let mut results = Vec::new();
 
         // Find all markdown files
-        let files = find_all_files(&concept_cards_path, FindOptions::markdown()).await?;
+        let files = find_all_files(&concept_cards_path, FindOptions::markdown())
+            .await
+            .map_err(|e| fabryk::core::Error::operation(e.to_string()))?;
 
         for file_info in files {
             let path = &file_info.path;
 
-            // Extract metadata
-            if let Ok(meta) = extract_concept_metadata(&concept_cards_path, path).await {
-                // Build SearchDocument
-                if let Ok(doc) = SearchDocument::from_metadata(meta, path).await {
-                    // Check if document matches query (skip for wildcard queries)
-                    let matches_query = params.query == "*"
-                        || params.query.is_empty()
-                        || doc.matches_query(&params.query);
-                    if matches_query {
-                        // Apply category filter if specified
-                        if let Some(ref filter_category) = params.category {
-                            if &doc.category != filter_category {
-                                continue; // Skip documents that don't match category
-                            }
-                        }
+            // Read file content
+            let content = match crate::util::files::read_file(path).await {
+                Ok(c) => c,
+                Err(_) => continue,
+            };
 
-                        // Apply source filter if specified (v0.3.0)
-                        if let Some(ref filter_source) = params.source {
-                            if doc.source.as_ref() != Some(filter_source) {
-                                continue; // Skip documents that don't match source
-                            }
-                        }
+            // Extract SearchDocument using the MusicTheoryDocumentExtractor
+            let doc = match extractor.extract(path, &content) {
+                Some(d) => d,
+                None => continue,
+            };
 
-                        // Apply content_types filter if specified (v0.3.0)
-                        if let Some(ref content_types) = params.content_types {
-                            if !content_types.contains(&doc.content_type) {
-                                continue; // Skip documents that don't match any requested type
-                            }
-                        }
+            // Check if document matches query (skip for wildcard queries)
+            if !doc.matches_query(&params.query) {
+                continue;
+            }
 
-                        // Extract snippet and calculate relevance
-                        let snippet = doc.extract_snippet(&params.query, 200);
-                        let relevance = doc.relevance(&params.query);
-
-                        results.push(SearchResult {
-                            id: doc.id.clone(),
-                            title: doc.title.clone(),
-                            category: doc.category.clone(),
-                            source: doc.source.clone(),
-                            path: doc.path.clone(),
-                            snippet,
-                            relevance,
-                            content_type: doc.content_type.clone(),
-                            section: doc.section.clone(),
-                        });
-                    }
+            // Apply category filter
+            if let Some(ref filter_category) = params.category {
+                if !doc.matches_category(filter_category) {
+                    continue;
                 }
             }
+
+            // Apply source filter
+            if let Some(ref filter_source) = params.source {
+                if !doc.matches_source(filter_source) {
+                    continue;
+                }
+            }
+
+            // Apply content_types filter
+            if let Some(ref content_types) = params.content_types {
+                let matches_any = content_types
+                    .iter()
+                    .any(|ct| doc.matches_content_type(ct));
+                if !matches_any {
+                    continue;
+                }
+            }
+
+            // Calculate relevance and extract snippet
+            let relevance = doc.relevance(&params.query);
+            let snippet = doc.extract_snippet(&params.query, snippet_length);
+
+            results.push(FabrykSearchResult {
+                id: doc.id.clone(),
+                title: doc.title.clone(),
+                description: doc.description.clone(),
+                category: doc.category.clone(),
+                source: doc.source.clone(),
+                path: Some(doc.path.clone()),
+                snippet,
+                relevance,
+                content_type: doc.content_type.clone(),
+                section: doc.section.clone(),
+                chapter: doc.chapter.clone(),
+            });
         }
 
         // Sort by relevance (highest first)
@@ -113,9 +139,19 @@ impl SearchBackend for SimpleSearch {
         });
 
         // Apply limit
-        results.truncate(params.limit);
+        results.truncate(limit);
 
-        Ok(results)
+        let total = results.len();
+
+        Ok(SearchResults {
+            items: results,
+            total,
+            backend: self.name().to_string(),
+        })
+    }
+
+    fn name(&self) -> &str {
+        "simple"
     }
 }
 
@@ -169,7 +205,7 @@ mod tests {
     fn test_simple_search_new() {
         let config = test_config();
         let backend = SimpleSearch::new(config);
-        assert!(!std::ptr::addr_of!(backend).is_null());
+        assert_eq!(backend.name(), "simple");
     }
 
     #[tokio::test]
@@ -177,18 +213,21 @@ mod tests {
         let config = test_config();
         let backend = SimpleSearch::new(config);
 
-        let params = SearchConceptsParams {
+        let params = SearchParams {
             query: "test".to_string(),
-            limit: 10,
-            query_mode: None,
-            category: None,
-            source: None,
-            content_types: None,
+            limit: Some(10),
+            ..Default::default()
         };
 
-        let result = backend.search(&params).await;
+        let result = backend.search(params).await;
         assert!(result.is_ok());
         // Just verify search executes without error
-        // Results may or may not be empty depending on actual directory content
+    }
+
+    #[tokio::test]
+    async fn test_simple_search_is_ready() {
+        let config = test_config();
+        let backend = SimpleSearch::new(config);
+        assert!(backend.is_ready());
     }
 }

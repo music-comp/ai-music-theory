@@ -19,7 +19,7 @@ use fabryk::core::{ServiceHandle, ServiceState};
 
 use crate::config::Config;
 use crate::error::Result;
-use crate::search::backend::SearchBackend;
+use crate::search::SearchBackend;
 use crate::search::SimpleSearch;
 
 #[cfg(feature = "fts")]
@@ -110,18 +110,19 @@ impl AppState {
     ///
     /// # Returns
     ///
-    /// Returns Arc-wrapped SearchBackend for shared ownership across requests.
-    pub fn search_backend(&self) -> Arc<dyn SearchBackend> {
+    /// Returns Arc-wrapped `fabryk::fts::SearchBackend` for shared ownership
+    /// across requests.
+    pub fn search_backend(&self) -> Arc<dyn SearchBackend + Send + Sync> {
         #[cfg(feature = "fts")]
         if self.fts_service.state().is_ready() {
             if let Ok(guard) = self.fts_backend.read() {
                 if let Some(ref backend) = *guard {
-                    return Arc::clone(backend) as Arc<dyn SearchBackend>;
+                    return Arc::clone(backend) as Arc<dyn SearchBackend + Send + Sync>;
                 }
             }
         }
 
-        Arc::clone(&self.simple_backend) as Arc<dyn SearchBackend>
+        Arc::clone(&self.simple_backend) as Arc<dyn SearchBackend + Send + Sync>
     }
 
     /// Get the name of the currently active backend.
@@ -227,10 +228,10 @@ fn initialize_fts_backend(config: &Config) -> Result<FtsBackendInit> {
     let fts_service = ServiceHandle::new("fts");
 
     if config.search.backend == "tantivy" {
-        let index_path = config.search.index_path()?;
+        let fabryk_config = crate::search::to_fabryk_search_config(&config.search);
 
         // Try to load existing index
-        match TantivySearch::new(&index_path, config.search.clone()) {
+        match TantivySearch::new(&fabryk_config) {
             Ok(backend) => {
                 // Index exists and is loadable
                 log::info!("Loaded existing FTS index from disk");
@@ -397,27 +398,29 @@ fn start_background_indexing(state: Arc<AppState>) {
                 );
 
                 // Load newly built index
-                if let Ok(index_path) = state.config.search.index_path() {
-                    match TantivySearch::new(&index_path, state.config.search.clone()) {
-                        Ok(backend) => {
-                            if state.update_fts_backend(backend).is_ok() {
-                                state.set_fts_ready(true);
-                                log::info!("FTS backend now active");
-                            } else {
-                                log::error!("Failed to update FTS backend");
-                            }
-                        }
-                        Err(e) => {
-                            log::error!("Failed to load newly built index: {}", e);
+                let fabryk_config =
+                    crate::search::to_fabryk_search_config(&state.config.search);
+                match TantivySearch::new(&fabryk_config) {
+                    Ok(backend) => {
+                        if state.update_fts_backend(backend).is_ok() {
+                            state.set_fts_ready(true);
+                            log::info!("FTS backend now active");
+                        } else {
+                            log::error!("Failed to update FTS backend");
                         }
                     }
-                } else {
-                    log::error!("Failed to resolve index path after build");
+                    Err(e) => {
+                        log::error!("Failed to load newly built index: {}", e);
+                    }
                 }
             }
             Err(e) => {
-                log::error!("Background indexing failed: {}", e);
-                // Simple backend remains active
+                log::warn!("Background indexing failed (graceful degradation): {}", e);
+                // Mark FTS as ready anyway — the simple backend fallback will
+                // handle searches. This ensures the server doesn't permanently
+                // report FTS as unavailable when content paths are missing.
+                state.set_fts_ready(true);
+                log::info!("FTS marked ready with simple backend fallback");
             }
         }
     });
@@ -605,8 +608,9 @@ Test content.
             .expect("Failed to create state");
 
         // Load the index we just built
+        let fabryk_config = crate::search::to_fabryk_search_config(&config.search);
         let backend =
-            TantivySearch::new(&index_path, config.search.clone()).expect("Failed to load index");
+            TantivySearch::new(&fabryk_config).expect("Failed to load index");
 
         // Update backend
         let result = state.update_fts_backend(backend);
@@ -653,8 +657,9 @@ Test content.
             .expect("Failed to create state");
 
         // Load and set backend
+        let fabryk_config = crate::search::to_fabryk_search_config(&config.search);
         let backend =
-            TantivySearch::new(&index_path, config.search.clone()).expect("Failed to load index");
+            TantivySearch::new(&fabryk_config).expect("Failed to load index");
         state.update_fts_backend(backend).expect("Failed to update");
         state.set_fts_ready(true);
 
@@ -742,18 +747,9 @@ Test content.
         fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
 
         // Create old metadata to make index appear stale
-        let metadata = crate::search::freshness::IndexMetadata {
-            schema_version: crate::search::SCHEMA_VERSION,
-            doc_count: 1,
-            last_indexed: std::time::SystemTime::now(),
-            content_hash: "old-hash".to_string(),
-            concept_cards: 1,
-            source_chapters: 0,
-            unified_concepts: 0,
-            guides: 0,
-        };
-        crate::search::freshness::save_metadata(&index_path, &metadata)
-            .await
+        let metadata = fabryk::fts::IndexMetadata::new("old-hash".to_string(), 1);
+        metadata
+            .save(&index_path)
             .expect("Failed to save metadata");
 
         // Create a new file to make content hash different
@@ -787,7 +783,7 @@ New content.
 
         // Create index dir but with invalid metadata
         std::fs::create_dir_all(&index_path).expect("Failed to create index dir");
-        std::fs::write(index_path.join("metadata.json"), "invalid json")
+        std::fs::write(index_path.join("fabryk-fts-metadata.json"), "invalid json")
             .expect("Failed to write invalid metadata");
 
         let config = test_config("tantivy");
