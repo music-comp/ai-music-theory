@@ -29,7 +29,7 @@ The structure-syntax connection:
 Quote from Steve Reich's Writings about Music (p. 58):
 "Material may suggest what process it should be run through (content suggests form), and processes may suggest what sort of material should be run through them (form suggests content)."
 
-# Musical Context/Application
+# Musical Context
 This principle responds to Daniel Harrison's critique that transformational theory treats objects as "inert and without tendency" (p. 57). By showing that triadic structure generates pan-triadic syntax, Cohn demonstrates that the transformational approach is not arbitrary but emerges from the object's inherent properties.
 
 # Examples

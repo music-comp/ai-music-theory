@@ -31,7 +31,7 @@ Why these substitutions work:
 - Near-evenness: Single semitonal displacement preserves chord type
 - The e minor to E major substitution reduces voice-leading work while maintaining harmonic consistency
 
-# Musical Context/Application
+# Musical Context
 Standard explanation (modal borrowing/mixture) has three limitations:
 1. **Presumptuous**: Assumes parallel major/minor scales already exist
 2. **Unparsimonious**: Borrows three tones to use only one

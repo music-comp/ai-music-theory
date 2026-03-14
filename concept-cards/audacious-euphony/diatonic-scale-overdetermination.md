@@ -32,7 +32,7 @@ Parallel to triadic overdetermination:
 - Scale: Fifth-generation AND modulatory variety
 - Both are homophonous diamorphs between acoustic and structural systems
 
-# Musical Context/Application
+# Musical Context
 The diatonic scale's overdetermination "played a central role in the new modulatory system of early-eighteenth-century harmonic tonality, just as the consonant triad's overdetermination played a central role in the early nineteenth century's discovery of an alternative to it."
 
 The scale was preadapted for modulatory function:

@@ -29,7 +29,7 @@ Voice-leading action:
 N requires 2 units of voice-leading work (two semitone motions in contrary direction).
 N is the L-inverse (L'): its semitonally moving and stationary voices swap those of L.
 
-# Musical Context/Application
+# Musical Context
 The nebenverwandt relationship connects a major tonic to its minor subdominant (or minor tonic to major dominant). This classical progression underlies authentic cadential patterns. Weitzmann used the term to describe key relationships; his student Oettingen later interpreted it transformationally. The N/R alternation generates the complete Weitzmann region cycle.
 
 # Examples

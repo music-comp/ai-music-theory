@@ -33,7 +33,7 @@ Rotation pattern:
 - Third hypermeasure: B → C → C (disrupted, A omitted)
 - Fourth hypermeasure: A → A → A (dominance of previously missing module)
 
-# Musical Context/Application
+# Musical Context
 Thematic rotation serves analytical purposes:
 - Tracking formal organization independent of key
 - Understanding how composers create variety within unity

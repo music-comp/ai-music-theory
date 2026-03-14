@@ -2,9 +2,9 @@
 concept: Pan-Triadic - Glossary Definition
 category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Introduction"
+chapter_number: 0
+pdf_page: 9
 unit: null
 authors: Richard Cohn
 ---
@@ -27,7 +27,7 @@ Pan-triadic vs. diatonic syntax:
 - Pan-triadic: Triads related through voice-leading parsimony and transformational chains
 - The double syntax hypothesis: Both can coexist in the same composition
 
-# Musical Context/Application
+# Musical Context
 Pan-triadic describes the repertoire and analytical approach central to Audacious Euphony:
 - 19th-century chromatic practice (Schubert, Liszt, Wagner, Brahms)
 - Passages that "cruise from triad to triad through pan-triadic space"

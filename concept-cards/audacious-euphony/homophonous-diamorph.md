@@ -29,7 +29,7 @@ The role of overdetermination:
 - Multiple satisfying conditions simultaneously: acoustic and voice-leading
 - "The entire process is cognitively opaque, transacted beneath the horizon of awareness"
 
-# Musical Context/Application
+# Musical Context
 The triad as homophonous diamorph explains:
 - Why syntactic transitions feel smooth rather than jarring
 - How the same chord can participate in diatonic function and chromatic transformation

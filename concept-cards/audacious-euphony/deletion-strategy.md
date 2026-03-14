@@ -38,7 +38,7 @@ Schenkerian notation:
 - Dissonances appear as unstemmed passing/neighbor tones or are omitted
 - Linear strands connect consonances across intervening dissonances
 
-# Musical Context/Application
+# Musical Context
 Deletion is useful when:
 - Focusing on large-scale tonal structure
 - Dissonances function as passing or embellishing harmonies

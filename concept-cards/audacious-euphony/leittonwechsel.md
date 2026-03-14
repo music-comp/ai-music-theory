@@ -2,9 +2,9 @@
 concept: "Leittonwechsel (L)"
 category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Hexatonic Cycles"
+chapter_number: 2
+pdf_page: 35
 unit: null
 authors: Richard Cohn
 ---
@@ -34,7 +34,7 @@ Properties:
 - Preserves minor third dyad
 - Member of H-group transformations
 
-# Musical Context/Application
+# Musical Context
 The L transformation:
 - Connects relative major/minor from the perspective of the minor mode (c minor's relative is Eb major, reached by L)
 - Creates smooth voice leading with maximum common-tone retention

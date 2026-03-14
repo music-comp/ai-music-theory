@@ -31,7 +31,7 @@ Cube Dance advantages:
 - Trims away atomic pitch-class level for cleaner geometry
 - Wraps more easily into cycles
 
-# Musical Context/Application
+# Musical Context
 Cohn uses both representations throughout the book, choosing based on analytical needs. Cube Dance is preferred when surfaces are exclusively triadic and cyclic closure matters more than pitch-class tracking. Tonnetz is preferred for passages with non-triadic harmonies, when tracking specific pitch classes, and for maintaining historical connections.
 
 # Examples

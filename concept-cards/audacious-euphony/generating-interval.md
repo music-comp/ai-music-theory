@@ -2,9 +2,9 @@
 concept: Generating Interval
 category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Hexatonic Cycles"
+chapter_number: 2
+pdf_page: 35
 unit: null
 authors: Richard Cohn
 ---
@@ -27,7 +27,7 @@ Examples:
 - Perfect fifth (i=7): generates all 12 pitch classes, but the first 7 form the diatonic scale
 - Tritone (i=6): generates 2-note tritone (12/6 = 2)
 
-# Musical Context/Application
+# Musical Context
 The concept of generating intervals:
 - Explains the internal structure of scales and chords
 - Connects to theories of scale formation (Carey-Clampitt, Clough-Douthett)

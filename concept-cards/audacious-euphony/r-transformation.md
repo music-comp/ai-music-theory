@@ -28,7 +28,7 @@ Mathematically: R inverts around the dyad shared by both triads.
 
 As a Weitzmann-group transformation, R preserves Weitzmann region and shifts hexatonic region.
 
-# Musical Context/Application
+# Musical Context
 R is one of the classical normative transformations, connecting major and minor keys in traditional tonal practice. In Weitzmann's conception, relative is one of the two fundamental relations (along with nebenverwandt) that structure each region. The R/N alternation generates complete Weitzmann regions as cycles.
 
 # Examples

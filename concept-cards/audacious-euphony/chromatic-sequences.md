@@ -29,7 +29,7 @@ Rare/undiscovered: P/S, H/S
 
 Three semitones of voice-leading work can be conceived as combining two parsimonious transformations (one H, one W).
 
-# Musical Context/Application
+# Musical Context
 The 18th century's earliest chromatic sequences use classically normative combinations (L/R, L/N, P/R, P/N). Schubert and Liszt expand the repertoire to include maverick combinations involving S or H. The sequences enable circumnavigation of the triadic universe while maintaining parsimonious voice leading.
 
 # Examples

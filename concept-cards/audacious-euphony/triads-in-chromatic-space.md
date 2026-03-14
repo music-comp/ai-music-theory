@@ -28,7 +28,7 @@ Triads are positioned by:
 - Their common-tone connections
 - Their relation to perfectly even divisions (augmented triads)
 
-# Musical Context/Application
+# Musical Context
 Viewing triads in chromatic space:
 - Cuts against classical theory's diatonic privilege
 - Enables systematic analysis of passages that resist diatonic interpretation

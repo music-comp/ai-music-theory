@@ -2,9 +2,9 @@
 concept: "Parallel (P) - Glossary Definition"
 category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Hexatonic Cycles"
+chapter_number: 2
+pdf_page: 35
 unit: null
 authors: Richard Cohn
 ---
@@ -29,7 +29,7 @@ Algebraic properties:
 - P preserves hexatonic region membership
 - P combined with L generates hexatonic cycles
 
-# Musical Context/Application
+# Musical Context
 P is the most familiar of the Neo-Riemannian transformations, corresponding to the traditional concept of mode mixture or modal mutation. In tonal music, P typically connects a triad with its parallel major or minor. In chromatic/pan-triadic contexts, P participates in hexatonic cycles (alternating with L) and can serve as part of longer transformational chains.
 
 # Examples

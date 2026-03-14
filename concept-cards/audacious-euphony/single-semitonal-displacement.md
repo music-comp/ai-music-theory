@@ -22,7 +22,7 @@ In a progression between two consonant triads, single semitonal displacement occ
 - The displacement may be chromatic (as in P: E to Eb) or diatonic (as in L: G to G# between C major and c# minor)
 - Total semitonal displacement in a hexatonic cycle progression of n steps = n semitones
 
-# Musical Context/Application
+# Musical Context
 Single semitonal displacement is the basic building block of hexatonic progressions. When composers chain together transformations that each involve single semitonal displacement, they create the smooth, hypnotic voice-leading characteristic of pan-triadic harmony. This minimal motion allows for maximal harmonic change (from major to minor or vice versa) with minimal melodic disruption.
 
 # Examples

@@ -24,7 +24,7 @@ The distinction between circular and planar interpretations is equivalent to Har
 
 Hyer's geometry differs from Lewin's prophecy only in producing a plane rather than Mobius strip; Cohn suggests imagining Hyer's plane closed into a loop with half-twist to complete Lewin's vision.
 
-# Musical Context/Application
+# Musical Context
 Hyer's model captures the contingent nature of tonal hearing:
 - The same progression can be heard as tonal (planar) or pan-triadic (cylindrical)
 - The structure cannot be inferred from a single triad or direct relation

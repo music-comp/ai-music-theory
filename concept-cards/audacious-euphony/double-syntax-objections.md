@@ -30,7 +30,7 @@ Cohn's three-part response:
 
 3. **Historical framework**: Double syntax provides the only plausible account of how music of the age of Mozart became music of the age of Webern. The alternative - tabula rasa emergence - is "inconsistent with everything else we know about historical process and human cognition."
 
-# Musical Context/Application
+# Musical Context
 The objections reflect postwar music theory's commitment to organic unity:
 - "Although that metaphor has become epistemically and historically bracketed in the last twenty years... I suspect that it nonetheless continues to subliminally work on the instinctive sensibilities of music theorists"
 

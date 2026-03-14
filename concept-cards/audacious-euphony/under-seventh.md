@@ -32,7 +32,7 @@ Voice-leading behavior:
 - This mirrors the over-seventh's downward resolution
 - Creates plagal voice-leading symmetrical to authentic voice-leading
 
-# Musical Context/Application
+# Musical Context
 The under-seventh interpretation is supported when:
 - The "seventh" does not resolve; the "root" does
 - The minor triad is perceptually/functionally primary

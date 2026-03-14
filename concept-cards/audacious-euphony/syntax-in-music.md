@@ -34,7 +34,7 @@ Different syntaxes (Fetis's "laws of tonality" vs. "uniformity"; diatonic vs. pa
 - Different expectations about dissonance treatment
 - Different modes of musical cognition
 
-# Musical Context/Application
+# Musical Context
 The concept of multiple coexisting syntaxes helps explain:
 - How passages can be coherent by one criterion and incoherent by another
 - Why some progressions "go down easy" and others "go down hard"

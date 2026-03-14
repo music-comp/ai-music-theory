@@ -32,7 +32,7 @@ J.S. Bach's version:
 - Major triad followed by hexatonic pole, then transposed by T2
 - Rotates through all twelve zones in two statements
 
-# Musical Context/Application
+# Musical Context
 This complex became a trope of disjunction in the long nineteenth century, appearing in Mozart, Chopin, Schumann, Wagner, Debussy, Elgar, and others. It represents maximum triadic disjunction with aggregate completion. Under permutation, the same complex appears in different orderings across the repertoire.
 
 # Examples

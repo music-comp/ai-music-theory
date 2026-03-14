@@ -31,7 +31,7 @@ Forces that halt plagal drift:
 
 Once halted, the "spring" of diatonic syntax can reload and relock into tonal position.
 
-# Musical Context/Application
+# Musical Context
 Plagal drift contrasts with dominant-ward drift:
 - Rightward L/R motion also possible but less characteristic of Romantic practice
 - Plagal emphasis reflects 19th-century compositional taste

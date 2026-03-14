@@ -25,7 +25,7 @@ Structural features producing the trance state:
 
 Comparison to African musical traditions: "Hexatonic cycles embed a hocket canon that projects a 3:2 phasing" similar to patterns associated with spirit possession and trance (p. 44).
 
-# Musical Context/Application
+# Musical Context
 The hexatonic trance helps explain the "semantic charge" of chromatic progressions by major third and their association with "altered and unstable mental states." The effect is not purely conventional but arises from the paradoxical nature of the progressions themselves: simultaneous contrary motion that confounds the consonance/dissonance binary.
 
 # Examples

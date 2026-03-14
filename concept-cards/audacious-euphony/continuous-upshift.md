@@ -27,7 +27,7 @@ Measurement: Track the sum of pitch classes in successive triads; consistent inc
 
 Complete rotation = movement through all voice-leading zones (12 semitones of aggregate motion).
 
-# Musical Context/Application
+# Musical Context
 Continuous upshift serves several compositional purposes:
 - Creating developmental energy and tension
 - Building momentum toward climactic arrivals

@@ -25,7 +25,7 @@ The common-tone metric can produce different proximity judgments than the diaton
 - C major to d minor: diatonically close (both in C major scale), but 0 common tones
 - C major to E major: diatonically distant (no shared scale), but 1 common tone
 
-# Musical Context/Application
+# Musical Context
 The common-tone approach was dominant in 19th-century harmonic theory:
 - Galeazzi (1796): rated C-E as "regular and good" (1 common tone) while C-d was "very irregular and poor" (0 common tones)
 - Krause (1827): "most closely related consonant triads are those that have two notes in common"

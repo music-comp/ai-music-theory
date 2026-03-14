@@ -32,7 +32,7 @@ Table 7.3 shows:
 
 Complete circumnavigation requires passing through all odd zones (1, 3, 5, 7, 9, 11).
 
-# Musical Context/Application
+# Musical Context
 Circumnavigation appears in:
 - Sequential passages dominated by seventh chords
 - Extended chromatic passages with directed voice leading

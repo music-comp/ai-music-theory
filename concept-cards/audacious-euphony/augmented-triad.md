@@ -2,9 +2,9 @@
 concept: Augmented Triad
 category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Hexatonic Cycles"
+chapter_number: 2
+pdf_page: 35
 unit: null
 authors: Richard Cohn
 ---
@@ -26,7 +26,7 @@ Relation to consonant triads:
 - Each augmented triad generates a Weitzmann region of 6 consonant triads
 - Augmented triads are the "perfectly even" chords from which consonant triads ("nearly even") minimally deviate
 
-# Musical Context/Application
+# Musical Context
 Augmented triads serve as:
 - Pivots between hexatonic cycles (the "centers" around which consonant triads orbit)
 - Structural nodes in the Cube Dance graph

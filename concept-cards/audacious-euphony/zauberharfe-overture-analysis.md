@@ -32,7 +32,7 @@ On Tonnetz (Figure 5.5):
 - Each hexatonic strip = tread; each augmented triad = riser
 - Downward direction consistent with downward voice leading
 
-# Musical Context/Application
+# Musical Context
 This passage demonstrates how Cube Dance models progressions that cross regional boundaries. The analysis reveals the modulatory progression's semitonal logic, its arc of motion, and its consistent downshifting. The comparison between Cube Dance and Tonnetz representations shows each model's strengths.
 
 # Examples

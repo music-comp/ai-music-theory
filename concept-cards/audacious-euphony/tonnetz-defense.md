@@ -32,7 +32,7 @@ The tradeoff:
 - Tonnetz: historical, pitch-class tracking, but Bering Strait distortion
 - Cube Dance: trimmer, geometrically flexible, wraps into cycle easily
 
-# Musical Context/Application
+# Musical Context
 Both representations have their uses. Cohn uses the Tonnetz when surfaces are not exclusively triadic, when tracking pitch classes matters, and for historical connection. Fused-triad graphs (like Cube Dance) are preferred when surfaces are exclusively triadic and cyclic closure is more important than pitch-class tracking.
 
 # Examples

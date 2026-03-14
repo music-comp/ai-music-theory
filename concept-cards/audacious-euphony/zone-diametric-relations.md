@@ -30,7 +30,7 @@ Mahler's characterization:
 - "As though it had fallen from heaven"
 - "As though it had come from another world"
 
-# Musical Context/Application
+# Musical Context
 Zone-diametric relations represent maximal disjunction in the triadic universe. Composers seeking the effect of remoteness, unreachability, or otherworldliness could identify zone-diametric triads systematically rather than through "vain groping" (Mahler's phrase). The model provides precision to Romantic aesthetics of the remote.
 
 # Examples

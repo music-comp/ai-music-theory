@@ -29,7 +29,7 @@ Application by chord type:
 
 The crucial condition: the dissonant chord must contain exactly one consonant triad as a subset.
 
-# Musical Context/Application
+# Musical Context
 Reduction is appropriate when:
 - The dissonant tone functions as supplementary color
 - The consonant subset is perceptually or functionally primary

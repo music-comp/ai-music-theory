@@ -27,7 +27,7 @@ A return script is fulfilled not only by literal reversal but also by a progress
 - Same-group transformations (e.g., P for L within Hexatonic class)
 - Same-sum triads (triads sharing a voice-leading zone)
 
-# Musical Context/Application
+# Musical Context
 The departure-return script provides a pan-triadic alternative to classical tonal frameworks. It allows:
 - Coherent large-scale structure without strict diatonic constraints
 - Functional coherence through voice-leading logic rather than root relationships

@@ -27,7 +27,7 @@ Schenker's implicit acceptance:
 - These "cannot be reconciled to his pronouncements elsewhere that only consonant harmonies are susceptible to composing out"
 - Nevertheless, "Schenker found dissonant prolongations aurally and conceptually plausible, even if they 'prolong' an idea that dissonates with the fundaments of tonality" (p. 63)
 
-# Musical Context/Application
+# Musical Context
 Dissonant prolongation allows analysts to make sense of chromatic passages where consonant triads seem to orbit around an augmented triad. The concept challenges strict Schenkerian assumptions while extending prolongational thinking to chromatic repertoire.
 
 # Examples

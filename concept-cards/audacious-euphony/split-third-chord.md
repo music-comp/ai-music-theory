@@ -41,7 +41,7 @@ Voice-leading relationships:
 - Shares two common tones with both generating triads
 - Can mediate between hexatonic poles
 
-# Musical Context/Application
+# Musical Context
 The split-third chord:
 - Is rare in common-practice music but prominent in early twentieth century
 - Appears in Bartok as a characteristic sonority

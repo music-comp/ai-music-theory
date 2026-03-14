@@ -29,7 +29,7 @@ Transformational motive:
 
 Bass pitches: C, Ab, B, E, G, Eb = whole-tone collection
 
-# Musical Context/Application
+# Musical Context
 Composed near the end of Strauss's life (nearly two centuries after C.P.E. Bach's f minor Sonata), "Fruhling" demonstrates the continued relevance of Weitzmann regions in post-Romantic practice. The nonsequential exploration reflects Strauss's characteristically restless harmonic language while maintaining coherent voice-leading structure.
 
 # Examples

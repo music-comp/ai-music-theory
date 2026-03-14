@@ -23,7 +23,7 @@ Pan-triadic syntax emerges from properties intrinsic to consonant triads themsel
 
 These relationships operate independently of root-interval logic or diatonic scale membership.
 
-# Musical Context/Application
+# Musical Context
 Pan-triadic syntax characterizes passages in 19th-century music where triads progress according to voice-leading proximity rather than diatonic function. Such passages often appear in:
 - Transitional or developmental sections
 - Music associated with the supernatural, magical, or uncanny

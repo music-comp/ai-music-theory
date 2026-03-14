@@ -29,7 +29,7 @@ Examples of hexatonic pole pairs:
 - Ab major and e minor (Northern system)
 - Db major and a minor (Southern system)
 
-# Musical Context/Application
+# Musical Context
 The hexatonic pole relationship creates a distinctive paradox: maximum harmonic "distance" (no common tones, mode change) achieved through minimal melodic motion (semitones in all voices). This paradox makes hexatonic poles particularly effective for depicting liminal or uncanny states in Romantic music - moments of transformation, death, or supernatural occurrence.
 
 # Examples

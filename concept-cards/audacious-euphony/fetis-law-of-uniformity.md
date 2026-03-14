@@ -29,7 +29,7 @@ What enables sequential motion:
 
 The law of uniformity works with near-evenness as a "silent partner" enabling smooth sequential progressions.
 
-# Musical Context/Application
+# Musical Context
 Fetis's law explains why:
 - Diatonic sequences can traverse remote tonal regions without jarring discontinuity
 - The L/R chain can function as a "greased racing oval" when sequential repetition neutralizes tonal gravity

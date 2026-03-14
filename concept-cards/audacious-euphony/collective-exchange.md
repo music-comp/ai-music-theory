@@ -36,7 +36,7 @@ For nearly even hexachords (generalized):
 - 1 voice moves in the opposite direction
 - Combined tones = chromatic aggregate (12 notes)
 
-# Musical Context/Application
+# Musical Context
 Karg-Elert's identification of the affinity between hexatonic and octatonic poles was historically prescient, recognizing a structural parallel that Cohn formalizes through the generalized Weitzmann region framework. Both types of collective exchange produce the "maverick" transformation within their respective bridging regions -- the transformation with maximum voice-leading distance that nonetheless maintains the semitonal character of the system.
 
 The collective exchange is the only bridging transformation that moves all voices rather than holding some stationary.

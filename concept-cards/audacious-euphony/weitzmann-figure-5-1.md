@@ -24,7 +24,7 @@ Features of the figure:
 
 Pruning redundancies leaves 24 highlighted triads = complete consonant triadic universe.
 
-# Musical Context/Application
+# Musical Context
 Although Weitzmann had nothing further to say about this figure, Cohn identifies its latent properties: the directional consistency enabling upshift/downshift tracking, the hexatonic regions emerging from the layout, and the cyclic structure implicit in the figure. These observations underlie the construction of Cube Dance and the unified model.
 
 # Examples

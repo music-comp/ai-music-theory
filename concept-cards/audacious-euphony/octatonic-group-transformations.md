@@ -36,7 +36,7 @@ Comparison to hexatonic transformations:
 
 This is why triads have special voice-leading properties: only for n=3 do bridging transformations involve minimal (single-voice) motion.
 
-# Musical Context/Application
+# Musical Context
 Octatonic-group transformations enable:
 - Movement between Boretz regions (modulation in tetrachordal space)
 - Directed voice-leading trajectories through 4-Cube Trio

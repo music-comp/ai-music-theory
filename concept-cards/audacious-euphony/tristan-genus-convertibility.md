@@ -26,7 +26,7 @@ The metaphorical conduit:
 - "In order to imagine this participation, we need only contemplate the triadic case and boot it through the metaphorical conduit"
 - The process is parallel even if the geometric representation differs
 
-# Musical Context/Application
+# Musical Context
 Examples from earlier chapters demonstrate convertibility:
 - Brunnhilde's Immolation: C#7 chords "hearken to their appellative properties after ignoring them for some measures" (p. 157)
 - Chopin e minor Prelude: G# "awakened from its omnitonal haze by the whole-step motion in the bass... remembers its monotonal responsibilities" (p. 162)

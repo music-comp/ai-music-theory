@@ -34,7 +34,7 @@ Voice-leading properties:
 
 Set-class: 4-27, prime form [0258]
 
-# Musical Context/Application
+# Musical Context
 The Tristan genus enables analysis of:
 - Post-Tristan chromatic music dominated by seventh chords
 - Passages where V7 and ø7 chords connect parsimoniously

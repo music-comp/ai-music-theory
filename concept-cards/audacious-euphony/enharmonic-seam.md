@@ -27,7 +27,7 @@ The seam exists because:
 - The common third must be respelled when S is traversed
 - No notation can maintain consonance and diatonic consistency for both triads
 
-# Musical Context/Application
+# Musical Context
 The expansion from four-chord double-agent complexes to six-chord N/R cycles can be understood as an incremental historical process moving from Classical diatonic tonality into symmetric chromatic space. The four-chord complex may avoid the seam; the complete cycle cannot. This progression maps the development from C.P.E. Bach through Schubert.
 
 # Examples

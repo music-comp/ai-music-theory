@@ -26,7 +26,7 @@ The preadaptation claim is stronger than McCreless's formulation:
 - McCreless: "structural semitone relations," directed linear motion, sequential transposition are preadapted
 - Cohn: These phenomena arise only after chromatic supplementation; the triad itself is the preadapted structure, "fully native to a nonchromaticized diatonic space"
 
-# Musical Context/Application
+# Musical Context
 Preadaptation provides a mechanism for the soft revolution:
 - Composers did not invent a new harmonic language from scratch
 - They discovered latent properties of familiar sounds (consonant triads)

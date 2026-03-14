@@ -36,7 +36,7 @@ Voice-leading trajectory:
 Example sequence: e- → B+ → f- → C+ → f#- → C#+ → g- ...
 (Each minor triad ascends by semitone from the previous)
 
-# Musical Context/Application
+# Musical Context
 N/L chains serve compositional purposes:
 - Creating directed chromatic motion
 - Building developmental energy through upshifting

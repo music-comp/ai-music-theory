@@ -26,7 +26,7 @@ Directional convention:
 - Clockwise motion = upshifting (voices move up net)
 - Counterclockwise motion = downshifting (voices move down net)
 
-# Musical Context/Application
+# Musical Context
 Cube Dance unifies hexatonic and Weitzmann structures into a single connected space. For the hexatonic mariner, Weitzmann regions form bridges; for the Weitzmann landlubber, hexatonic regions are rivers to cross. The graph enables modeling progressions that move between regions, which is the typical case in 19th-century chromatic practice.
 
 # Examples

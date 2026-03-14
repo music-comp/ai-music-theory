@@ -28,7 +28,7 @@ Chromatic sequences governed by uniformity:
 - Are "extratonal" in Kurth's sense
 - Derive coherence from repetition, not function
 
-# Musical Context/Application
+# Musical Context
 The law of uniformity helps explain:
 - How sequences function in classical and romantic music
 - Why chromatic sequences are perceived as coherent despite tonal irregularity

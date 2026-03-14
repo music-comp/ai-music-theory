@@ -23,7 +23,7 @@ Brian Hyer's (1989) chromatic Tonnetz positions each consonant triad as a point 
 - Chromatic distance is measured in semitones, not diatonic scale degrees
 - The "functional 'significance' of a triad" is dispersed among all harmonies; "there is no one triad that forms a tonic for the group as a whole" (Hyer 1995, 127)
 
-# Musical Context/Application
+# Musical Context
 The chromatic Tonnetz is appropriate when:
 - Music traverses pan-triadic progressions without establishing clear tonal centers
 - Sequences or chains move through chromatic space via parsimonious voice leading

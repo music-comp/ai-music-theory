@@ -32,7 +32,7 @@ Sources of the uncanny effect:
 - The progressions "go somewhere" harmonically while "going nowhere" melodically
 - Local fluctuation underlies global stasis
 
-# Musical Context/Application
+# Musical Context
 In Peircean terms, hexatonic progressions are "icons rather than symbols of altered or destabilized mental states" (p. 42). The semiotic relationship is motivated, not arbitrary, making these progressions particularly effective for depicting uncanny subject matter.
 
 # Examples

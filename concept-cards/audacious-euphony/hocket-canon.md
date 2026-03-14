@@ -28,7 +28,7 @@ The three voices combine canonically:
 - Voice 2: sustains, displaces at beat 5 (= beat 3 + 2)
 - Voice 3: sustains, displaces at beat 7 (= beat 5 + 2)
 
-# Musical Context/Application
+# Musical Context
 Cohn notes a speculative connection between this structural feature and African musical traditions associated with spirit possession and trance: "A small cluster of features line up suggestively... Hexatonic cycles embed a hocket canon that projects a 3:2 phasing. This particular combination of attributes is likewise identified with African musical traditions associated with spirit possession and trance" (pp. 43-44).
 
 # Examples

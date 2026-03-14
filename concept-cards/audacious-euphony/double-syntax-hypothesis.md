@@ -24,7 +24,7 @@ The hypothesis addresses the cognitive challenge posed by music that:
 
 The analogy is to Fetis's model of his four "tonal species," where the best composers know how to combine distinct syntactic principles in a single work.
 
-# Musical Context/Application
+# Musical Context
 The double syntax hypothesis responds to objections that:
 - High-value music cannot partake of two systemic modes of organization
 - Listeners cannot shift between syntaxes rapidly

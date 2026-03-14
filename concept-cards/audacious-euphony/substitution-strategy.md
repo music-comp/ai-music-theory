@@ -33,7 +33,7 @@ Example with B-D-F-G# diminished seventh:
 
 This reverses Rameau's arrow: the symmetrical chord (diminished seventh) is primary, generating the asymmetrical ones (V7, ø7) through displacement.
 
-# Musical Context/Application
+# Musical Context
 Substitution is appropriate when:
 - Dissonant chords move parsimoniously among themselves
 - Diatonic/tonal coherence is suspended

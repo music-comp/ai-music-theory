@@ -35,7 +35,7 @@ Voice-leading within hexachordal GWR:
 - Any two chords are 2 voice-leading units apart (as always)
 - Bridging would require n-2 = 4 moving voices (very unparsimonious)
 
-# Musical Context/Application
+# Musical Context
 Scriabin's mystic chord exemplifies:
 - The extension of nearly even chord concepts beyond triads and seventh chords
 - The practical limits of voice-leading parsimony theory

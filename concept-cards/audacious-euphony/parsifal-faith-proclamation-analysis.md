@@ -31,7 +31,7 @@ Forces halting the drift:
 3. Accented dissonance: F-half-dim-7 as subdominant with characteristic dominant dissonance
 4. eb minor's encapsulation clinched by flanking with syntonic images
 
-# Musical Context/Application
+# Musical Context
 The hermeneutic extension: "Stopping the flow" resonates with Parsifal's central event - healing Amfortas's bleeding wound. eb minor appears in the presentation phrase (gray triangle in Figure 8.11) where its three double-common-tone associates are sounded in turn. The music "perambulates about eb minor without knowing how to respond to it, just as the goose-headed Parsifal cluelessly gawked at the Communion service in act 1." Only after an aimless journey does Parsifal "stumble back upon that eb minor thing in act 3, recognize its value, and use it to stanch the plagal drift."
 
 Following the eb minor cadence, the plagal flow temporarily reverses (Cb major Grail theme at m. 56) but then devolves into even more extended drift to the chromatically tortured reprise at m. 79.

@@ -37,7 +37,7 @@ Transformations labeled on edges:
 - **S6**: stationary tritone, moving perfect fifth
 - **R***: one voice moves by whole step
 
-# Musical Context/Application
+# Musical Context
 The Boretz spider enables:
 - Visualizing motion within a single Boretz region
 - Understanding balanced (oscillating) vs. directed voice leading

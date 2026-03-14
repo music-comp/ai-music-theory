@@ -35,7 +35,7 @@ Voice-leading zones:
 - Balanced oscillation between zones 3 and 1 through first five chords
 - Modulation to new region at chord 6
 
-# Musical Context/Application
+# Musical Context
 The analysis demonstrates:
 - How seventh chords can be analyzed without functional theory
 - The "virtual presence" of diminished seventh chords

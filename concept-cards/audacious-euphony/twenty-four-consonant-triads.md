@@ -29,7 +29,7 @@ The 24 triads form:
 
 All 24 triads can be generated from any single triad by combinations of the basic transformations P, L, and R.
 
-# Musical Context/Application
+# Musical Context
 The 24 consonant triads serve as:
 - The complete "lexicon" of pan-triadic harmony
 - Nodes in geometric representations (Tonnetz, Cube Dance)

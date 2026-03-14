@@ -35,7 +35,7 @@ Bridging between GWRs:
 - Would involve n-2 = 4 moving voices (far less parsimonious than triads or tetrachords)
 - This explains why hexachordal GWRs are less musically useful than triadic ones
 
-# Musical Context/Application
+# Musical Context
 The analysis shows:
 - How Scriabin's late harmonic language can be understood through voice-leading parsimony
 - The limits of extending nearly even chord systems to larger cardinalities

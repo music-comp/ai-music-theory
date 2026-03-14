@@ -30,7 +30,7 @@ Properties:
 - Distance measurable in voice-leading units
 - Patterns recognizable (sequences, cycles, substitutions)
 
-# Musical Context/Application
+# Musical Context
 The unified model enables analysis of typical 19th-century chromatic passages that cross regional boundaries. Individual hexatonic or Weitzmann regions are like legs hopping in place; their collaboration enables perambulation through the complete triadic universe.
 
 # Examples

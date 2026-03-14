@@ -36,7 +36,7 @@ Generalization:
 - HWH covers 27 specific transformation combinations (3 x 3 x 3)
 - HWHW covers 81 specific transformation combinations (3^4)
 
-# Musical Context/Application
+# Musical Context
 The transformation class concept consolidates statements about voice-leading that would otherwise require enumerating many specific cases. The consolidation parallels numerical claims like "odd + odd = even" which summarize infinite specific cases in one statement.
 
 # Examples

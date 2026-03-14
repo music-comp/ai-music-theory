@@ -28,7 +28,7 @@ Inverted suspension figure:
 
 The metric positions are preserved (dissonance still falls on strong beat expectations), but the chord types are swapped.
 
-# Musical Context/Application
+# Musical Context
 The Faust opening represents an extreme case of consonance/dissonance reciprocity, where the expected hierarchy is explicitly and systematically inverted. This "famous and explicit invert[sion] of the values classically accorded these sonorities" (p. 69) became influential for later chromatic composers.
 
 # Examples

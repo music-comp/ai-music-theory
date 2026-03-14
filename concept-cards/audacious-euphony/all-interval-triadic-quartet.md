@@ -35,7 +35,7 @@ Example [0137]:
 - Zones: {7, 8, 1, 5}
 - Prime form: [0137]
 
-# Musical Context/Application
+# Musical Context
 These quartets achieve maximum entropy within the triadic system, with pairwise intervals distributed across all six classes. The concept connects atonal pitch-class theory (all-interval tetrachords) with triadic voice-leading analysis, suggesting that poststructural approaches to 19th-century analysis can be undergirded by systematic theory.
 
 # Examples

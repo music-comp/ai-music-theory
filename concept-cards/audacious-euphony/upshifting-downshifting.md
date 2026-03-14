@@ -26,7 +26,7 @@ Voice-leading balance:
 
 The correlation between graphic direction and voice-leading direction makes Cube Dance intuitive for tracking trajectories.
 
-# Musical Context/Application
+# Musical Context
 The consistent directional correlation on Cube Dance allows analysts to track voice-leading trajectories visually. Sequences that move systematically around the graph maintain consistent upshift or downshift character. The Tonnetz reverses this intuition (rightward = downshifting), which Cohn retains for historical reasons.
 
 # Examples

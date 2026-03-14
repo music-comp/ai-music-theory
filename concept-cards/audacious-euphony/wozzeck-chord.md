@@ -35,7 +35,7 @@ Voice-leading:
 - 2 units to any other chord in the same GWR
 - Bridging between GWRs would require 4 moving voices
 
-# Musical Context/Application
+# Musical Context
 The Wozzeck chord:
 - Appears prominently in Berg's expressionist opera
 - Relates to the mystic chord as major relates to minor, or V7 to ø7

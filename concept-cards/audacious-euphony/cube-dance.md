@@ -2,9 +2,9 @@
 concept: Cube Dance
 category: analysis
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "A Unified Model of Triadic Voice-Leading Space"
+chapter_number: 5
+pdf_page: 101
 unit: null
 authors: Richard Cohn
 ---
@@ -29,7 +29,7 @@ The graph can be viewed as:
 - A unified representation of hexatonic and Weitzmann organization
 - The minimal voice-leading network for consonant triads
 
-# Musical Context/Application
+# Musical Context
 The Cube Dance enables visualization of:
 - Single-semitone voice-leading paths between any two triads
 - The relationship between hexatonic cycles and Weitzmann regions

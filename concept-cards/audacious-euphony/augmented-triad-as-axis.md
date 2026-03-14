@@ -25,7 +25,7 @@ Geometric representation (Figures 2.15-2.17):
 The two augmented triads bounding a Tonnetz strip (p. 51-52):
 "When triadic progressions are pursuing the logic of smooth voice leading rather than that of acoustic consonance, augmented triads play a central role in their syntax, even when occluded from the music's surface and hence not directly accessible to perception."
 
-# Musical Context/Application
+# Musical Context
 The augmented triad's role is analogous to that of the harmonic series in diatonic syntax: "the concealed noumenon that gives rise to the revealed phenomenon" (p. 56). Even when no augmented triad appears in a passage, the smooth voice leading is governed by the geometry centered on the augmented triad.
 
 # Examples

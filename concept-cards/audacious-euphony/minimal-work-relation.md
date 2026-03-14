@@ -22,7 +22,7 @@ The minimal-work relation defines triadic proximity based on voice-leading econo
 - Example: c minor connects to C major and Ab major
 - Voice-leading work = 1 semitone total displacement
 
-# Musical Context/Application
+# Musical Context
 The minimal-work relation provides the foundation for understanding hexatonic cycles and pan-triadic progressions. It offers an alternative to root-based harmonic theory, where triadic relationships are measured by voice-leading efficiency rather than acoustic consonance or functional harmony. This approach is particularly useful for analyzing chromatic music of the nineteenth century where traditional tonal explanations prove inadequate.
 
 # Examples

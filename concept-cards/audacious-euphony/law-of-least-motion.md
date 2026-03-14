@@ -27,7 +27,7 @@ These diverge in certain cases:
 
 When voice-leading proximity determines chord selection, the metrics diverge.
 
-# Musical Context/Application
+# Musical Context
 The law of least motion works well for:
 - Connecting pre-selected harmonies (thoroughbass practice)
 - Classical voice-leading pedagogy

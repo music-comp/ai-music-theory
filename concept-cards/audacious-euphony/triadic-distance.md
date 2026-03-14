@@ -34,7 +34,7 @@ The metrics can conflict:
 - C major to c minor: root-identical (0 fifths), common-tone close (2), voice-leading close (1)
 - C major to E major: root-distant (4 fifths), common-tone medium (1), voice-leading close (2)
 
-# Musical Context/Application
+# Musical Context
 Understanding multiple distance metrics helps explain:
 - Why 19th-century music sounds coherent despite violating diatonic expectations
 - How composers created effects of both continuity and surprise

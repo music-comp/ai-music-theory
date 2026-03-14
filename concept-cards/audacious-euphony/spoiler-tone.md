@@ -36,7 +36,7 @@ Resolution behavior:
 - Cross-species progressions: spoiler resolves, new spoiler emerges on opposite side
 - Same-species progressions: spoiler resolves, new spoiler emerges on same side
 
-# Musical Context/Application
+# Musical Context
 The spoiler concept illuminates:
 - Voice-leading within Boretz regions
 - How Tristan-genus chords relate to their central diminished seventh

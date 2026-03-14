@@ -29,7 +29,7 @@ Examples of balanced transformation pairs:
 
 Voice-leading zone tracking: zones oscillate (e.g., 5 → 8 → 5 → 8) rather than progress (5 → 8 → 11 → 2).
 
-# Musical Context/Application
+# Musical Context
 Balanced voice leading serves compositional purposes including:
 - Prolonging a harmonic region without directional motion
 - Creating tension through oscillation rather than progress

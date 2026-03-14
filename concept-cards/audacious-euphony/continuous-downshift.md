@@ -32,7 +32,7 @@ In the downshift/upshift duality:
 - Downshifting may correlate with authentic (dominant-ward) motion
 - The relationship emerges from: pitch motion exists on a linear continuum; pitch-class motion exists on a cyclical continuum; motion along either can occur in two opposite directions
 
-# Musical Context/Application
+# Musical Context
 Continuous downshift serves several compositional purposes:
 - Creating sense of departure from tonic
 - Building toward structural dominants

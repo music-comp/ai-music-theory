@@ -30,7 +30,7 @@ Conventions:
 - Multiples of three in special typeface (adjacent to augmented triads)
 - All numbers underlined to distinguish from other uses
 
-# Musical Context/Application
+# Musical Context
 The clock-face model leverages familiar intuitions about time-reckoning to understand voice-leading zones. The isomorphism with pitch-class integers means that voice-leading operations parallel pitch-class operations, enabling transfer of knowledge from atonal theory.
 
 # Examples

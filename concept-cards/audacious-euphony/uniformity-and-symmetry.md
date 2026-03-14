@@ -34,7 +34,7 @@ This duality is formulated by later theorists as:
 - Diatony versus repetition (Schenker 1954 [1906])
 - Magnetism versus inertia (Larson 1994)
 
-# Musical Context/Application
+# Musical Context
 Uniformity and symmetry explain how chromatic sequences (like hexatonic cycles) can suspend normal tonal expectations. The systematic repetition creates its own logic that overrides the default hierarchies of diatonic tonality.
 
 # Examples

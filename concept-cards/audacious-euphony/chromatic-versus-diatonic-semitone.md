@@ -29,7 +29,7 @@ Examples:
 
 The distinction affects enharmonic spelling and relates to classical diatonic expectations about interval relationships.
 
-# Musical Context/Application
+# Musical Context
 The distinction between chromatic and diatonic semitones connects to deeper questions about diatonic interpretation. By default, "the classically conditioned ear interprets a two-semitone interval as a major second rather than a diminished third" (Agmon 1986). Similarly, "a single semitone [is heard] as a change of diatonic degree, rather than as a chromatic inflection of an invariant degree" (p. 41).
 
 # Examples

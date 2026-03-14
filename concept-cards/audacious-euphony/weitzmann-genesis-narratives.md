@@ -36,7 +36,7 @@ The three narratives:
 - Each augmented triad is placed at center of six-triad cluster
 - Inverts the direction of the second narrative
 
-# Musical Context/Application
+# Musical Context
 The three narratives represent different levels of explanation and different directions of theoretical priority. Weitzmann maintains the moment-to-moment priority of consonance (narrative 1) while acknowledging the systematic priority of the augmented triad (narrative 3). This dual perspective anticipates modern understanding of the augmented triad's structural role.
 
 # Examples

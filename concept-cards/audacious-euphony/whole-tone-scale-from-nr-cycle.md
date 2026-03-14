@@ -24,7 +24,7 @@ Example N/R cycle with sevenths:
 
 The bass motion through the cycle permutes one whole-tone collection; upper voices permute the other.
 
-# Musical Context/Application
+# Musical Context
 Schubert exploited this property in several compositions. The whole-tone content connects Weitzmann regions to the broader 19th-century interest in whole-tone harmony (later developed by Debussy and others). The suspension chains create characteristic chromatic tensions resolving by minor third.
 
 # Examples

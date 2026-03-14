@@ -34,7 +34,7 @@ Major triads preceded by major dominants, whose agents discharge upward
 N/P plagal direction:
 Major tonics preceded by minor subdominants, whose agents discharge downward
 
-# Musical Context/Application
+# Musical Context
 The L/R chain became central to Moritz Hauptmann's tonal space conception (1888 [1853]). Beethoven's Ninth Symphony Scherzo nearly circumnavigates the entire cycle (19 triads from C major to A major). Brahms's D major Symphony first movement uses the L/R chain in its subordinate theme liquidation.
 
 # Examples

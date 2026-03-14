@@ -2,9 +2,9 @@
 concept: H-Group Transformations
 category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Hexatonic Cycles"
+chapter_number: 2
+pdf_page: 35
 unit: null
 authors: Richard Cohn
 ---
@@ -34,7 +34,7 @@ Properties:
 
 The H-group generates the six triads of any hexatonic region from any starting triad.
 
-# Musical Context/Application
+# Musical Context
 H-group transformations:
 - Define the "horizontal" (hexatonic) dimension of triadic space
 - Complement W-group transformations (which preserve Weitzmann regions)

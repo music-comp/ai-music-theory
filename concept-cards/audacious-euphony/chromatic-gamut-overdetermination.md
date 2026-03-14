@@ -36,7 +36,7 @@ Without perfectly even divisions:
 - No Boretz regions (no diminished seventh chords)
 - All nearly even chords would form single exhaustive cycles
 
-# Musical Context/Application
+# Musical Context
 The chromatic gamut's overdetermination is the second level enabling 19th-century chromatic syntax:
 
 Level 1: Triads are preadapted as voice-leading optimizers by near-evenness

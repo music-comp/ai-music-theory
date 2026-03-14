@@ -32,7 +32,7 @@ Relationship to distance in hexatonic cycle:
 
 Note: Zero common tones does NOT mean no pitch-class relationship; hexatonic poles share all 6 pitch classes of their hexatonic collection, just not simultaneously.
 
-# Musical Context/Application
+# Musical Context
 Common-tone retention is one measure of harmonic continuity. High common-tone retention produces smooth, connected progressions; low retention produces more dramatic or disjunct effects. The paradox of hexatonic poles is that they have maximum pitch-class overlap (sharing all 6 pitch classes of the collection) but zero common tones.
 
 # Examples

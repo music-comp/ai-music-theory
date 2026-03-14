@@ -39,7 +39,7 @@ Voice-leading zone behavior:
 - Cross-species: zones alternate (e.g., 3 → 1 → 3)
 - Same-species: zones alternate with contrary voice leading
 
-# Musical Context/Application
+# Musical Context
 Boretz-group transformations characterize:
 - The Tristan Prelude opening (alternating upshift and downshift)
 - Any progression oscillating within a single Boretz region

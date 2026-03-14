@@ -29,7 +29,7 @@ Examples:
 
 Note: LP on a major triad produces the same result as PL on a major triad (both yield E major from C major), but the intermediate triad differs (e minor vs. c minor).
 
-# Musical Context/Application
+# Musical Context
 LP/PL transformations appear frequently in nineteenth-century chromatic music as "chromatic mediant" relations or major-third transpositions. They play a crucial role in hexatonic cycles, connecting same-mode triads that are two steps apart in the cycle. The transformation is particularly associated with seamless modulation by major third.
 
 # Examples

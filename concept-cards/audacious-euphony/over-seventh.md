@@ -39,7 +39,7 @@ Symmetry with under-seventh:
 - Over-seventh: added above major triad, resolves down (authentic)
 - Under-seventh: added below minor triad, resolves up (plagal)
 
-# Musical Context/Application
+# Musical Context
 The over-seventh is the normative case in tonal theory:
 - Dominant function chords
 - Applied dominants (secondary dominants)

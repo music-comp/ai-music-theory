@@ -29,7 +29,7 @@ Combines nebenverwandt chords (e.g., f minor and C major) into a pentachord F-Ab
 
 Table 3.1 shows Weitzmann's grouping of all 24 consonant triads as displacements of four augmented triads.
 
-# Musical Context/Application
+# Musical Context
 Weitzmann's treatise provides the historical foundation for understanding augmented triads as structural generators rather than mere passing dissonances. His figure 3.9 (translated in the text) prefigures the modern understanding of hexatonic systems, with each augmented triad at the center of a six-triad cluster.
 
 # Examples

@@ -29,7 +29,7 @@ Voice-leading comparison:
 
 The text notes: "Under least-motion voice leading, recursive transposition by any interval other than major third generates uniformly directed voice leading" (p. 37).
 
-# Musical Context/Application
+# Musical Context
 Contrary motion in hexatonic progressions creates the sensation of harmonic change without net melodic direction - voices rise and fall but the overall pitch center remains stable. This property underlies both the syntactic role of major-third relations in pan-triadic progressions and their semiotic association with supernatural and altered states.
 
 # Examples

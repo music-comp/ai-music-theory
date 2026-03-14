@@ -2,9 +2,9 @@
 concept: Hexatonic Region
 category: analysis
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Hexatonic Cycles"
+chapter_number: 2
+pdf_page: 35
 unit: null
 authors: Richard Cohn
 ---
@@ -28,7 +28,7 @@ Properties:
 - Minor triads are related by T4
 - Every pair of triads in a region shares membership in the same hexatonic scale
 
-# Musical Context/Application
+# Musical Context
 Hexatonic regions provide:
 - A natural grouping of triads by voice-leading proximity
 - The domain for H-group transformations (L, P, H)

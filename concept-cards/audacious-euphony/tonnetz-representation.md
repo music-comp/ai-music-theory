@@ -32,7 +32,7 @@ Hexatonic strips on the Tonnetz:
 
 Historical note: "The Tonnetz was first presented by Leonhard Euler in 1739. It was revived by German harmonic theorists in the second half of the nineteenth century" (p. 47).
 
-# Musical Context/Application
+# Musical Context
 Tonnetz representations make voice-leading relationships visually apparent. The P transformation appears as vertical motion (perpendicular to the fifth axis), while L transformation appears as diagonal motion. The graphs reveal how hexatonic cycles trace paths through strips bounded by augmented triads.
 
 # Examples

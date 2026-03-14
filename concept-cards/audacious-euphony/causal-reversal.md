@@ -31,7 +31,7 @@ The garment analogy:
 
 "These reversals are insidious; they float below the threshold of consciousness unless one exerts some effort through analysis."
 
-# Musical Context/Application
+# Musical Context
 Causal reversal helps explain why:
 - Double syntax encounters deep resistance (it suggests fundamental reorientation)
 - Switching between syntaxes can nonetheless feel seamless (reversal is opaque)

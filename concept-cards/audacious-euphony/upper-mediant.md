@@ -35,7 +35,7 @@ In voice-leading terms:
 - Sequential presentation of upper mediants creates upshifting patterns
 - Upper mediants may be presented in upshifting order through a movement
 
-# Musical Context/Application
+# Musical Context
 Upper mediants serve structural functions including:
 - Replacing dominant as secondary key area
 - Providing colorful tonal contrast

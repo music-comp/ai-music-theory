@@ -29,7 +29,7 @@ Types of musical maps used for triadic relations:
 
 Advantages over algebraic models: visual accessibility, exploratory potential, capacity to represent parallel paths and alternative routes.
 
-# Musical Context/Application
+# Musical Context
 Musical maps invite questions central to composition and analysis:
 - "How many ways are there to connect these two chords?"
 - "What chord stands halfway between these two?"

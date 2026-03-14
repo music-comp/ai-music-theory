@@ -28,7 +28,7 @@ Example demonstrating equivalence (p. 50):
 
 This equivalence "neutralizes" objections that LP should not be called the same transformation when it moves roots in opposite directions.
 
-# Musical Context/Application
+# Musical Context
 Voice-leading equivalence allows analysts to identify structurally similar progressions that might look different on the page or sound different in tonal context. The Strauss example demonstrates how composers can exploit this equivalence for thematic connection across passages in different modes.
 
 # Examples

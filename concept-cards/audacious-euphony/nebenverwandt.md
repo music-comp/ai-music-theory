@@ -30,7 +30,7 @@ Example: C major (C-E-G) and f minor (F-Ab-C)
 
 Daniel Harrison's term "agents" (1994) refers to the thirds of triads, which carry the most tension in functional harmony.
 
-# Musical Context/Application
+# Musical Context
 The nebenverwandt relation creates a reciprocal tension that neither triad can definitively resolve. This makes it useful for creating ambiguity or for passages that oscillate between two tonal centers without settling on either.
 
 # Examples

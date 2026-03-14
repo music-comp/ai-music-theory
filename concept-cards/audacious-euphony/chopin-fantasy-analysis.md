@@ -32,7 +32,7 @@ Pitch-retention neighborhood:
 - The internal six triads constitute and exhaust a hexagon about Bb
 - Figure 5.20 shows the hexagon on Tonnetz
 
-# Musical Context/Application
+# Musical Context
 This passage differs from other N-for-R substitutions because N is interpolated between W-group operations, not between H-group operations. The effect is temporary retreat rather than continued advance. The passage also demonstrates the pitch-retention neighborhood concept anticipated in Chapter 6.
 
 # Examples

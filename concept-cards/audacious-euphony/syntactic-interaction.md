@@ -26,7 +26,7 @@ Key mechanisms of interaction:
 3. Cadential processes that erect/dissolve diatonic walls
 4. Rings arrows that can be activated or deactivated depending on context
 
-# Musical Context/Application
+# Musical Context
 Ernst Kurth's observation serves as epigraph: "Everywhere, Romanticism exploits the ability to hear one and the same phenomenon in two and more ways; it is fond of this coexistence and its indefiniteness."
 
 Syntactic interaction is necessary because:

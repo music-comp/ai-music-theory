@@ -28,7 +28,7 @@ The root-interval approach assumes:
 
 This approach aligns with the diatonic distance measure, since triads close on the circle of fifths tend to share diatonic collections.
 
-# Musical Context/Application
+# Musical Context
 The root-interval approach:
 - Underlies Roman numeral analysis (I-V is a "strong" progression)
 - Motivates circle-of-fifths sequences as normative

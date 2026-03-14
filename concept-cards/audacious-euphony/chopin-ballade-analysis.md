@@ -32,7 +32,7 @@ Figure 5.17 shows:
 - Two northeast-jogging file transfers (N-for-R substitutions)
 - Combined: 16 stations saved while preserving downshift trajectory
 
-# Musical Context/Application
+# Musical Context
 The analysis demonstrates how antipodal (tritone) progressions can be conceived as continuation of trajectory around the back of chromatic space rather than as reversal. Schenker (1954 [1906]) ventured a similar reading of this passage. The two substitutions enable the tonal plan's tritone relationships without abandoning the parsimonious voice-leading logic.
 
 # Examples

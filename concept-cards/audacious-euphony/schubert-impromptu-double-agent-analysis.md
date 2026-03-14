@@ -29,7 +29,7 @@ Gb Impromptu (No. 3) coda:
 - cb minor -> Ebb major (relative) -> augmented sixth function -> Gb major
 - Second phrase extends to g minor via D major dominant
 
-# Musical Context/Application
+# Musical Context
 These analyses demonstrate that the double-agent complex can in principle center around any of its four constituent triads, not just the interior minor. The two Impromptus have been linked in other analytical contexts (Fisk 2001), and their codas reveal complementary approaches to the same chromatic structure.
 
 # Examples

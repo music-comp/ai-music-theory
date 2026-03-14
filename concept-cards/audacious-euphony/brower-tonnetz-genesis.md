@@ -28,7 +28,7 @@ Final closure: Accepting pseudo-fifth (B-F) creates Mobius strip topology
 
 Brower's distinction between pure and flexible tuning recasts as tension between acoustic consonance and melodic proximity - "the tension that has been central to this book from the outset."
 
-# Musical Context/Application
+# Musical Context
 The genesis narrative reveals:
 - Near-evenness of diatonic triads in 7-tone space ensures any two species are step-connected
 - Acoustic properties and voice-leading properties are inseparable ("overdetermined diatonic triad")

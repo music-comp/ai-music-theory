@@ -29,7 +29,7 @@ Conditions leading to indeterminacy:
 
 Measure of indeterminacy: For n triads, count pairs sharing membership in some diatonic collection. Lower counts indicate greater indeterminacy.
 
-# Musical Context/Application
+# Musical Context
 Diatonic indeterminacy characterizes many 19th-century chromatic passages:
 - Fetis (1844): "omnitonality" involves "multiplicity, or even the universality of the keys"
 - Kurth (1920): "absolute progressions" bring about "total disruption of the original embracing tonal unity"

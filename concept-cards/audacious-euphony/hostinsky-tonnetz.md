@@ -34,7 +34,7 @@ The diagonal positioning allows:
 - Diagonal axes: major and minor thirds
 - Triangular triads: adjacency represents voice-leading proximity
 
-# Musical Context/Application
+# Musical Context
 The Hostinsky Tonnetz provides a visualization framework for:
 - Understanding pitch-class neighborhoods
 - Tracking accumulation of pitch classes and dyads

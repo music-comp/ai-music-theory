@@ -28,7 +28,7 @@ Additional transformations:
 
 These transformations are "involutions" - applying the same transformation twice returns to the starting triad.
 
-# Musical Context/Application
+# Musical Context
 Neo-Riemannian theory provides:
 - A vocabulary for describing chromatic triadic progressions
 - Analytical tools for passages that resist traditional Roman numeral analysis

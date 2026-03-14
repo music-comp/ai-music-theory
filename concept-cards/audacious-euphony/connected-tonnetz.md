@@ -27,7 +27,7 @@ Topological structure:
 - Top and bottom edges are identified
 - Gluing these creates a torus (doughnut shape)
 
-# Musical Context/Application
+# Musical Context
 The connected Tonnetz enables analysis of passages that cross regional boundaries, which is the typical case in 19th-century chromatic music. Figure 5.6 shows how the Tonnetz can be assembled from the four Weitzmann regions, with broken edges indicating where corresponding points are glued together.
 
 # Examples

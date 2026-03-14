@@ -31,7 +31,7 @@ Figure 3.7 - Augmented triad as structural:
 
 Structural observation: "Each of the minor triads sounded in the opening segment results from displacement of a component of the augmented triad."
 
-# Musical Context/Application
+# Musical Context
 Antar represents a subtler approach to consonance/dissonance reciprocity than Faust. Rather than explicitly inverting the hierarchy, Rimsky-Korsakov creates a situation where both interpretations (consonant triads governing vs. augmented triad governing) are analytically viable.
 
 # Examples

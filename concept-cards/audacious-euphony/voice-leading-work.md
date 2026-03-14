@@ -2,9 +2,9 @@
 concept: Voice-Leading Work
 category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Mapping the Triadic Universe"
+chapter_number: 1
+pdf_page: 19
 unit: null
 authors: Richard Cohn
 ---
@@ -32,7 +32,7 @@ Examples:
 - C major to f minor (N): E to F, G to Ab = 2 units
 - C major to Ab major: C to C, E to Eb, G to Ab = 2 units
 
-# Musical Context/Application
+# Musical Context
 Voice-leading work provides:
 - A finer metric than common-tone counting (6 values vs. 3)
 - The basis for defining single semitonal displacement

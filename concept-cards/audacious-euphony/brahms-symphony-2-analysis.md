@@ -31,7 +31,7 @@ Tonnetz representation (Figure 5.10):
 - Leftward drift along horizontal axis
 - Animated version available at Web animation 5.10
 
-# Musical Context/Application
+# Musical Context
 The analysis demonstrates how d minor brings closure to an L/R chain initiated from f# minor by returning to the original radius on Cube Dance. This "closure through return" is visually explicit on Cube Dance but requires counting on the Tonnetz. The passage exemplifies extended chromatic sequence with systematic voice-leading logic.
 
 # Examples

@@ -37,7 +37,7 @@ Lexical vs. syntactic change:
 
 Point of no easy return: "Once composers begin to use [0148]-type chords in a hexatonic context, or [0146]-type chords in an octatonic one, the imposition of a diatonic cadence often sounds like the grinding of gears that Smith describes."
 
-# Musical Context/Application
+# Musical Context
 The staging explains:
 - Why Schubert sounds "tonal" though exploiting chromatic syntax (Stage 1)
 - Why Wagner sounds more distant (Stage 2)

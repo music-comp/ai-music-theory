@@ -2,9 +2,9 @@
 concept: "Slide (S) - Glossary Definition"
 category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Weitzmann Regions"
+chapter_number: 4
+pdf_page: 77
 unit: null
 authors: Richard Cohn
 ---
@@ -29,7 +29,7 @@ Algebraic properties:
 - S preserves Weitzmann region membership
 - LP = S (the compound of L and P equals S)
 
-# Musical Context/Application
+# Musical Context
 S is characteristic of Romantic chromaticism, particularly favored by Schubert. It produces the most distant-sounding of the common-tone relationships, connecting triads whose roots are a semitone apart. On the Tonnetz, S appears as diagonal motion across the augmented triad at the center of a Weitzmann region. The identity LP = S shows how slide relations arise from hexatonic cycles.
 
 # Examples

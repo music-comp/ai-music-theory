@@ -28,7 +28,7 @@ Tonal ambiguity:
 - e minor: suggested by B open fifth as half cadence
 - B major: activated when second phrase omitted
 
-# Musical Context/Application
+# Musical Context
 The Tarnhelm's permuted double-agent complex enables Wagner to exploit tonal ambiguity for dramatic purposes. The magic helmet transforms appearances, and the music's tonal instability mirrors this function. Wagner often adds an under-seventh F to the initial triad, resolving as augmented sixth to B major, further complicating tonal orientation.
 
 # Examples

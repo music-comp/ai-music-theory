@@ -2,9 +2,9 @@
 concept: Boretz Region
 category: analysis
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Dissonance"
+chapter_number: 7
+pdf_page: 156
 unit: null
 authors: Richard Cohn
 ---
@@ -27,7 +27,7 @@ For the dim7 {C, Eb, F#, A}:
 
 The Boretz region generalizes the Weitzmann region concept to four-note chords.
 
-# Musical Context/Application
+# Musical Context
 Boretz regions:
 - Extend pan-triadic voice-leading models to seventh chords
 - Help analyze chromatic seventh-chord progressions in late 19th-century music

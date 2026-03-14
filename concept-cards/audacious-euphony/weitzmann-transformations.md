@@ -32,7 +32,7 @@ All three transformations:
 - Shift hexatonic region
 - Require 2 units of voice-leading work
 
-# Musical Context/Application
+# Musical Context
 R and N have classical syntactic origins (relative key relations, dominant-tonic). S emerged prominently only with Schubert. Weitzmann himself conceived of nebenverwandt and relative as bilateral key relations; the transformational conception was developed by Oettingen (1866) and later theorists. The three transformations partition the five possible progressions from any triad to others in its Weitzmann region (the sixth triad being the starting point).
 
 # Examples

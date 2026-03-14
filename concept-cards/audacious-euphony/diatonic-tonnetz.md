@@ -22,7 +22,7 @@ The diatonic Tonnetz is generated in stages from a seed node, retracing the hist
 - Stage 4: The chain of fifths closes into a circuit via the pseudo-fifth (B-F), creating a Mobius strip
 - The resulting parallelogram encapsulates the diatonic collection, activating the internal dynamics of tonal syntax
 
-# Musical Context/Application
+# Musical Context
 Under classical tonality, only the central triads of the parallelogram (sheltered from unstable corners) can serve as tonic. The standard T-S-D-T progression maps onto the Tonnetz as two leftward arrows (T to S, D to T) connected by a longer rightward arrow (S to D). The Mobius strip interpretation allows subdominant to connect to dominant around the backside, rather than "overshooting" across the plane. Motion leftward (D-T-S) corresponds to upshifting voice leading; motion rightward corresponds to downshifting.
 
 # Examples

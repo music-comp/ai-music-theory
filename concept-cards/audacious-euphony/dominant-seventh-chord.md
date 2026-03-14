@@ -37,7 +37,7 @@ Voice-leading properties:
 - Contrary semitonal motion to same-species chords (other V7s in region)
 - Mixed motion to opposite-species chords (ø7s in region)
 
-# Musical Context/Application
+# Musical Context
 In Tristan-genus analysis, dominant seventh chords:
 - Function as voice-leading entities, not necessarily as dominants
 - Connect parsimoniously to other Tristan-genus chords

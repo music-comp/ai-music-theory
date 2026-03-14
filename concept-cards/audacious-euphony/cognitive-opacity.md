@@ -29,7 +29,7 @@ Musical manifestations:
 
 "A cunning composer or crafty performer knows how to take advantage of the opacity of causal reversal, to flip the arrow of causality without rocking a listener's boat."
 
-# Musical Context/Application
+# Musical Context
 Cognitive opacity addresses objections to double syntax:
 - Dahlhaus (1967): "The supposition that the musical hearing switches between tonal and non-tonal apprehension during a composition or a phrase would be problematic"
 - Lerdahl (2001): Switching between systems is "implausible as a psychological position"

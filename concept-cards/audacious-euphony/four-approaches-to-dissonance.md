@@ -38,7 +38,7 @@ The **four approaches to dissonance** are strategies for theoretically accountin
 - Minor seventh = R-related triads combined
 - Split-third chord = P-related triads combined (alpha sonority)
 
-# Musical Context/Application
+# Musical Context
 These strategies serve different analytical purposes:
 - **Deletion**: Focus on large-scale triadic/tonal structure
 - **Reduction**: Maintain triadic framework while acknowledging dissonance

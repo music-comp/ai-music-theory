@@ -29,7 +29,7 @@ The musical parallel:
 
 Evidence suggests listeners adjust as smoothly as speakers: "If the Alsatian office worker is code-switching rapidly in an effective conversation, it is likely that her interlocutor is receiving her switches with as few hitches as she has in creating them."
 
-# Musical Context/Application
+# Musical Context
 Code switching provides a model for:
 - Moving between diatonic encapsulation and chromatic navigation
 - Understanding how the same triad can function in both syntaxes

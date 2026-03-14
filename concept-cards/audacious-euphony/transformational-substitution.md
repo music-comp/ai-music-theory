@@ -30,7 +30,7 @@ Effect on sequences:
 - Chain of 24 triads reduced by 8 or 16 stations per substitution
 - Voice-leading trajectory (clockwise/counterclockwise) preserved
 
-# Musical Context/Application
+# Musical Context
 Substitutions introduce variety to sequential patterns and provide shortcuts to otherwise remote tonal goals. A composer circumnavigating the triadic universe can break strict sequence while maintaining voice-leading coherence. The technique appears extensively in 19th-century chromatic music.
 
 # Examples

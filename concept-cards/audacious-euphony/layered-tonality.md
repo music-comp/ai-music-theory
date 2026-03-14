@@ -27,7 +27,7 @@ Characteristic features:
 - Local cadences confirm each station as a tonic
 - The succession of tonics follows chromatic logic
 
-# Musical Context/Application
+# Musical Context
 Layered tonality describes the analytical situation in many chronologically early hexatonic examples (late 18th/early 19th century), where composers embed pan-triadic progressions within a diatonic framework. This creates the characteristic sound of "Romantic chromaticism" - locally tonal, globally tonal, but chromatically adventurous at the level of modulation.
 
 # Examples

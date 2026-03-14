@@ -24,7 +24,7 @@ Rings arrows, adapted from David Lewin's DOM and SUBD transformations, accompany
 
 Rings writes that his dimensions "mark out a unified space in which we can map progressions that exploit both the triad's tonal-gravitational properties and its triadic-transformational potential, without privileging one at the expense of the other" (2007, 52).
 
-# Musical Context/Application
+# Musical Context
 Rings arrows activate when:
 - Music operates within an encapsulated diatonic space
 - Cadential progressions confirm tonal centers

@@ -28,7 +28,7 @@ Example loop order: P-R-L-P-R-L (or any permutation repeated)
 For a neighborhood centered on C:
 - Starting from C major: C major → c minor (P) → Eb major (R) → eb minor (L) → Gb major (P) → gb minor (R) → returns via (L)
 
-# Musical Context/Application
+# Musical Context
 Pitch retention loops serve as compositional strategies for:
 - Creating coherent chromatic progressions while maintaining audible continuity
 - Exploring a neighborhood systematically rather than randomly

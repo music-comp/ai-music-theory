@@ -33,7 +33,7 @@ Relationship to balanced voice leading:
 - Net voice-leading motion: none (voices cancel)
 - LP and PL are mutual inverses on the hexatonic cycle
 
-# Musical Context/Application
+# Musical Context
 E-class transformations create the connections between T4-related triads within Cube Dance radii. They represent the zero point of the voice-leading distance scale for mode-changing operations. The identity E is included for completeness and closure of the class structure.
 
 # Examples

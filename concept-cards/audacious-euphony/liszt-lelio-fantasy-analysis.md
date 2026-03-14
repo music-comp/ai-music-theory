@@ -34,7 +34,7 @@ Tonnetz representation (Figure 5.22):
 - Jog at substitution point
 - Cyclic closure disguised (requires recognizing enharmonic equivalence)
 
-# Musical Context/Application
+# Musical Context
 This analysis demonstrates Cube Dance's superiority for showing cyclic closure and voice-leading trajectory, while Tonnetz better reveals the sequential nature of triadic choices. The comparison illustrates when each representational tool is preferable.
 
 # Examples

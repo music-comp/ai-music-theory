@@ -2,9 +2,9 @@
 concept: Consonant Triad
 category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Mapping the Triadic Universe"
+chapter_number: 1
+pdf_page: 19
 unit: null
 authors: Richard Cohn
 ---
@@ -30,7 +30,7 @@ Notation in the book:
 - Major: uppercase (C, G, Eb) or plus sign (C+)
 - Minor: lowercase (c, g, eb) or minus sign (c-)
 
-# Musical Context/Application
+# Musical Context
 Consonant triads serve as:
 - The exclusive harmonic vocabulary of pan-triadic passages
 - Nodes in all geometric representations (Tonnetz, Cube Dance)

@@ -23,7 +23,7 @@ The Mobius strip topology of the diatonic Tonnetz results from two stages of clo
 - The seven diatonic triads form a continuous series of diatonic mediants (Agmon 1995)
 - Rightward arrow (S to D) continues uniformly around the backside rather than reversing across the plane
 
-# Musical Context/Application
+# Musical Context
 The Mobius interpretation affects how we understand T-S-D-T:
 - Planar conception: Subdominant to dominant involves "overshooting" reversal across the plane
 - Mobius conception: Motion continues uniformly around the backside in same direction

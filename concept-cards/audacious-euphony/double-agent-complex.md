@@ -28,7 +28,7 @@ The double agent: Bb/Cb (or A#/Bb in other contexts)
 
 Transformational chain: N - R - N, with S connecting the outer triads enharmonically.
 
-# Musical Context/Application
+# Musical Context
 Daniel Harrison's concept of melodic "agency" (major thirds strive upward, minor thirds press downward) intensifies when thirds are chromatic inflections. The double-agent complex redirects this energy through enharmonic transformation, a technique Vogler classified as a principal genus of Mehrdeutigkeit. The complex appears in remarkably varied permutations and tonal contexts throughout 19th-century music.
 
 # Examples

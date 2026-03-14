@@ -2,9 +2,9 @@
 concept: Perfectly Even - Glossary Definition
 category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Hexatonic Cycles"
+chapter_number: 2
+pdf_page: 35
 unit: null
 authors: Richard Cohn
 ---
@@ -29,7 +29,7 @@ Role in Neo-Riemannian theory:
 - They serve as "switching stations" between transformational regions
 - Nearly even chords are defined as minimal perturbations of perfectly even chords
 
-# Musical Context/Application
+# Musical Context
 Perfectly even chords are structurally central but traditionally considered unstable:
 - Augmented triads require resolution in tonal contexts
 - Diminished seventh chords are "omnitonic" (no clear root)

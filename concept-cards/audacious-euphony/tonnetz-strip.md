@@ -31,7 +31,7 @@ Motion within the strip:
 - P transformation = vertical motion (perpendicular to fifth axis)
 - L transformation = diagonal motion (120 degrees)
 
-# Musical Context/Application
+# Musical Context
 Tonnetz strips provide a visual representation of hexatonic passages that reveals both the voice-leading paths and the constraining role of augmented triads. The strip format is particularly useful for tracking progressions through a hexatonic system and identifying the transformational operations used.
 
 # Examples

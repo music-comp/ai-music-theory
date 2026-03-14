@@ -34,7 +34,7 @@ Relationship:
 - 24 total Tristan-genus chords (12 V7 + 12 ø7)
 - This mirrors: each augmented triad generates 6 nearly even trichords (3 major + 3 minor)
 
-# Musical Context/Application
+# Musical Context
 Nearly even tetrachords share the voice-leading efficiency of nearly even trichords because:
 - They cluster around perfectly even cores
 - Any two in the same region are exactly 2 voice-leading units apart

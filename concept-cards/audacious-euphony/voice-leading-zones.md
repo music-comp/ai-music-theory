@@ -30,7 +30,7 @@ Voice-leading distance:
 - Distance = |zone1 - zone2| (mod 12)
 - d minor (zone 4) to G major (zone 8): |8-4| = 4 units
 
-# Musical Context/Application
+# Musical Context
 Zone equivalence underlies transformational substitution: T4-related triads can substitute for each other in fulfilling voice-leading trajectories without changing the overall motion. The zone system enables tracking voice-leading paths at an abstract level, independent of specific triadic choices.
 
 # Examples

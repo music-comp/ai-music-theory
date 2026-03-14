@@ -31,7 +31,7 @@ Relation to L and P:
 - H = LP = PL (both orderings produce the same result)
 - H connects triads at maximum distance within a hexatonic system
 
-# Musical Context/Application
+# Musical Context
 The H transformation, named by Clifton Callender (1994), depicts maximal harmonic distance within a hexatonic system. In nineteenth-century music, hexatonic poles frequently accompany depictions of uncanny, supernatural, or liminal phenomena - death, transformation, magic. The progression's power derives from the paradox of maximum voice-leading activity (three simultaneous semitones) producing maximum consonance-category ambiguity.
 
 # Examples

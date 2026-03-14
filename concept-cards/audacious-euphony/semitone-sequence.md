@@ -31,7 +31,7 @@ S/P example (Liszt Il Penseroso):
 Gb major --(S)--> f# minor --(P)--> F# major --(S)--> f minor --(P)--> F major ...
 Executes complete Cube Dance tour, connecting PL-related Gb major and D major elliptically.
 
-# Musical Context/Application
+# Musical Context
 The ascending N/L progression appears frequently, including in extended passages. The descending version was used by Rameau for expressive effect. S/P chains are rarer but execute striking complete tours of Cube Dance, as in Liszt's Il Penseroso where Gb major reaches D major through eight intermediate triads.
 
 # Examples

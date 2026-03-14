@@ -26,7 +26,7 @@ Key characteristics:
 
 The practice represents a gradual shift in the balance between two available syntactic systems rather than the abandonment of one for the other.
 
-# Musical Context/Application
+# Musical Context
 Chromatic progressions in this repertoire frequently associate with:
 - The supernatural and uncanny (magic sleep, enchantment, otherworldly realms)
 - Altered psychological states (dreams, meditation, transcendence)

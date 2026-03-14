@@ -31,7 +31,7 @@ Maximum entropy (all-interval triadic quartets):
 - Pairs distributed across all six interval classes
 - Example: {g minor, Eb major, A major, d minor} = zones {7, 8, 2, 4} = [0146]
 
-# Musical Context/Application
+# Musical Context
 The model enables systematic identification of disjunction and entropy without abandoning voice-leading foundations. Romantic aesthetics' fascination with the remote and unattainable can be modeled precisely. Atonal pitch-class theory's all-interval tetrachords find application in triadic contexts.
 
 # Examples

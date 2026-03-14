@@ -31,7 +31,7 @@ In Brahms's Second Symphony analysis:
 - Twelve-bar hypermeasure: established by thematic/textural module rotation (A → B → C)
 - Hypermetric ambiguity: overlapping interpretations at phrase boundaries
 
-# Musical Context/Application
+# Musical Context
 Hypermetric analysis is essential for understanding:
 - How harmonic events align with metric structure
 - The pacing of voice-leading zone changes

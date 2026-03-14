@@ -27,7 +27,7 @@ By contrast, **opposite-species** connections (V7 to half-diminished) involve ei
 - Two semitones distributed between two different voices (similar motion)
 - A single voice moving by whole step (**R**\*)
 
-# Musical Context/Application
+# Musical Context
 Contrary motion within Boretz regions produces balanced oscillation without net directional shift. This is musically useful for creating harmonic variety without progressive motion -- the passage oscillates between two adjacent voice-leading zones. The Tristan Prelude opening exemplifies this: the first five chords alternate between zones 3 and 1, balancing about the central diminished seventh chord.
 
 For circumnavigation of 4-Cube Trio (directed motion through all voice-leading zones), one must use the transpositional values absent from the diminished seventh chord (T1, T2, T4, T5), which produce similar motion rather than contrary motion.

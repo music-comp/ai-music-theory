@@ -23,7 +23,7 @@ Example in c minor:
 
 The three chords form an unordered space by the late 18th century, as C.P.E. Bach noted that direct motion from C major to E major is possible for "anyone who knows that E is the dominant of a [minor] and that a minor is very closely related to C major."
 
-# Musical Context/Application
+# Musical Context
 This complex appears frequently in Classical practice, often at the middleground level (structural pillars) rather than as direct successions. The relative major divides the motion from minor tonic to major dominant in typical cases. Alternatively, the order can be exchanged: minor tonic to major dominant via N, then disjunction to relative major at faster tempo.
 
 # Examples

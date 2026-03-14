@@ -34,7 +34,7 @@ Metaphors for encapsulation:
 - Sprouting landing gear and coming within view of a planet
 - Exiting freeway and entering fortified village or gated community
 
-# Musical Context/Application
+# Musical Context
 Encapsulation is dynamic and contingent:
 - Walls can be erected through cadential confirmation
 - Walls dissolve during sequential or chain progressions

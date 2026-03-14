@@ -29,7 +29,7 @@ Tonnetz representation:
 - 45° fault line shows orthogonal cut against major-third regions
 - Jog transfers between parallel alleys
 
-# Musical Context/Application
+# Musical Context
 N-for-R substitution is the most common transformational substitution in 19th-century chromatic music. It enables composers to reach remote tonal goals while maintaining parsimonious voice leading and avoiding the mechanical quality of extended strict sequences.
 
 # Examples

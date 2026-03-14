@@ -2,9 +2,9 @@
 concept: "Tonnetz (Glossary Definition)"
 category: analysis
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Hexatonic Cycles"
+chapter_number: 2
+pdf_page: 35
 unit: null
 authors: Richard Cohn
 ---
@@ -28,7 +28,7 @@ Topological properties:
 
 The Tonnetz can be converted between diatonic and chromatic interpretations (see Convertible Tonnetz).
 
-# Musical Context/Application
+# Musical Context
 The Tonnetz serves as the primary spatial model in Audacious Euphony for representing:
 - Triadic transformations (L, P, R, N, S, H appear as edge-flips or reflections)
 - Hexatonic regions (vertical strips bounded by augmented triads)

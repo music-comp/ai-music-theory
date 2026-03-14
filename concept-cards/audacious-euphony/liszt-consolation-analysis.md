@@ -31,7 +31,7 @@ Second sentence (Figure 8.9, six stroboscopic snapshots):
 5. A minor encapsulated with full diatonic resources
 6. Return to Db major via major-third division
 
-# Musical Context/Application
+# Musical Context
 The dual role of each hexatonic station:
 - As voice-leading object in Db hexatonic space
 - As acoustic object in its own local diatonic space

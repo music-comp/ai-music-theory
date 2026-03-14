@@ -34,7 +34,7 @@ Correction from Table 3.1: The CEG# augmented triad connects to:
 
 These six triads constitute one hexatonic system.
 
-# Musical Context/Application
+# Musical Context
 Mehrdeutigkeit enables the augmented triad to function as a "pivot" or "switching station" between distantly related keys. A single augmented triad can connect to six different consonant triads via single semitonal voice leading, making it a powerful tool for modulation and chromatic sequence.
 
 # Examples

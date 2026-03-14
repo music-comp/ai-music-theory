@@ -40,7 +40,7 @@ Combination with W-group generates chromatic sequences:
 
 The H-class maps any consonant triad in zone X to zone X +/- 1.
 
-# Musical Context/Application
+# Musical Context
 The H-group/W-group distinction is fundamental to chromatic sequences. Alternating one H-group and one W-group transformation generates all odd-transposition sequences. The H-group's maverick member (H) parallels the W-group's maverick (S), both lacking classical syntactic basis but appearing in 19th-century chromatic practice.
 
 # Examples

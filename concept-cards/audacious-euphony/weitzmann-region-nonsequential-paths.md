@@ -22,7 +22,7 @@ In a Weitzmann region, any path through the six triads requires the same total v
 
 The "flat terrain" allows compositional freedom in ordering regional triads.
 
-# Musical Context/Application
+# Musical Context
 Nonsequential paths became increasingly common as composers moved beyond the Classical syntactic routines that favored N/R ordering. Wagner and Strauss exploited this freedom extensively, creating progressions that explore regions without following predictable cyclic patterns.
 
 # Examples

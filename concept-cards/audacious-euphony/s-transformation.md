@@ -30,7 +30,7 @@ Voice-leading action:
 S requires 2 units of voice-leading work.
 S-related triads share no membership in a diatonic scale, giving S its maverick status.
 
-# Musical Context/Application
+# Musical Context
 S lacks classical syntactic normality because S-related triads share no diatonic scale. In the 18th century, S-related triads typically substituted for one another rather than juxtaposing directly. Schubert pioneered direct S progressions, which became more frequent in Liszt, Wagner, and Prokofiev. S has become a staple of film music. S retains "maverick status" within the Weitzmann group, similar to H within the hexatonic group.
 
 # Examples

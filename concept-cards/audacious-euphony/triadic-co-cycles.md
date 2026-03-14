@@ -30,7 +30,7 @@ For any major triad (e.g., C major), its co-cyclic partners are:
 
 Non-co-cyclic triads require different transformations (like R) to connect.
 
-# Musical Context/Application
+# Musical Context
 The co-cyclic relationship determines the voice-leading possibilities within a hexatonic system. Progressions that remain co-cyclic maintain the characteristic smooth voice leading of hexatonic progressions; leaving the co-cyclic group requires larger voice-leading work and typically introduces pitches outside the hexatonic collection.
 
 # Examples

@@ -30,7 +30,7 @@ The two "forms" of the triad:
 
 Tymoczko's Deist parable (p. 59-60): If God offered a suitcase of chords optimized for either voice-leading efficiency OR acoustic consonance, "he would hand you the very same chords, no matter which choice you made."
 
-# Musical Context/Application
+# Musical Context
 The homophonous diamorph concept explains why triadic music can operate in two different syntactic modes - diatonic (consonance-based) and pan-triadic (voice-leading-based) - while using the same sonic objects. The transformation between these modes typically occurs "well beneath the threshold of awareness," like the multiple functions of human organs (eating, talking, breathing with the mouth).
 
 # Examples

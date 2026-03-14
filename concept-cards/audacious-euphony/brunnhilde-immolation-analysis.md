@@ -35,7 +35,7 @@ Unlike Tristan:
 - The octatonic bridge (C#ø7 → C#7) sustains double-semitone voice leading
 - Rather than the single-voice whole-step motion of Tristan
 
-# Musical Context/Application
+# Musical Context
 The analysis shows:
 - Tristan-genus techniques operating across Wagner's later works
 - Systematic relationships between Tristan and Ring cycle

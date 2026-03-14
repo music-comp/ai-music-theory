@@ -2,9 +2,9 @@
 concept: 4-Cube Trio
 category: analysis
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Dissonance"
+chapter_number: 7
+pdf_page: 156
 unit: null
 authors: Richard Cohn
 ---
@@ -27,7 +27,7 @@ Edges connect chords differing by one semitone in one voice:
 - Each Tristan-genus chord connects to diminished sevenths (its Boretz region center)
 - Analogous to how consonant triads connect to augmented triads in Cube Dance
 
-# Musical Context/Application
+# Musical Context
 The 4-Cube Trio enables:
 - Visualization of seventh-chord voice-leading networks
 - Analysis of chromatic seventh-chord progressions (late Wagner, Liszt, early Schoenberg)

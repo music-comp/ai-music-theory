@@ -37,7 +37,7 @@ Voice-leading properties:
 - Contrary semitonal motion to same-species chords (other ø7s in region)
 - Mixed motion to opposite-species chords (V7s in region)
 
-# Musical Context/Application
+# Musical Context
 Half-diminished seventh chords in Cohn's analysis:
 - May be heard as minor triads with under-sevenths (reduction strategy)
 - Function as voice-leading entities in Tristan-genus progressions

@@ -29,7 +29,7 @@ Zone behavior:
 - **Circumnavigation**: systematically tours all six odd zones
 - **Even zones**: engaged by diminished sevenths, minor sevenths, French sixths
 
-# Musical Context/Application
+# Musical Context
 Voice-leading zones enable tracking the directional trajectory of Tristan-genus progressions. In the Tristan Prelude opening, the first five chords alternate between zones 3 and 1, balancing about the B-D-F-G# diminished seventh chord (whose integers sum to 2). When the sixth chord enters zone 5, it signals interregional modulation.
 
 Zone analysis reveals whether a passage is balanced (oscillating between adjacent zones) or directed (systematically upshifting or downshifting through the zones), analogous to the triadic case but operating independently.

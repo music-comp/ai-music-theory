@@ -30,7 +30,7 @@ Historical development timeline:
 
 1853 (Weitzmann): Full treatise advocating emancipation, comparing augmented triad to a "serf" deserving "an abiding place in the kingdom of tones."
 
-# Musical Context/Application
+# Musical Context
 The historical trajectory shows the augmented triad moving from regulated dissonance to expressive resource. By the late nineteenth century, some composers (Brahms, Wagner, Liszt, Wolf) featured augmented triads as motivic emblems or incorporated them into their normative sonic vocabulary.
 
 # Examples

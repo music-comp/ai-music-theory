@@ -31,7 +31,7 @@ Recognition features:
 - No net upshift or downshift (balanced)
 - Chromaticized voice exchanges may embellish the progression
 
-# Musical Context/Application
+# Musical Context
 The omnibus arises already in the eighteenth century and was extensively elaborated by nineteenth-century composers. When embellished by chromaticized voice exchanges, it becomes known as the "omnibus" or "devil's mill." The progression shares anomalous features with triadic major-third transpositions: just as major thirds divide the octave into as many equal parts as a triad has notes (producing contrary motion in triadic progressions), minor thirds divide the octave into as many parts as a seventh chord has notes.
 
 # Examples

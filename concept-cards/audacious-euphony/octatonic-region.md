@@ -34,7 +34,7 @@ Voice-leading within octatonic region:
 - Transformations involve 2 voices moving by semitone (n-2 where n=4)
 - Less parsimonious than hexatonic bridges (which involve only 1 moving voice)
 
-# Musical Context/Application
+# Musical Context
 Octatonic regions enable:
 - Movement between Boretz regions (modulation in tetrachordal space)
 - Directed voice-leading trajectories (upshift or downshift)

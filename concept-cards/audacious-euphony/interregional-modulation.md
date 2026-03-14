@@ -36,7 +36,7 @@ Markers of interregional modulation:
 - Entry into previously unvisited voice-leading zone
 - Rhetorically marked moments in the music
 
-# Musical Context/Application
+# Musical Context
 Interregional modulation serves:
 - Large-scale structural articulation
 - Creation of directed harmonic trajectories

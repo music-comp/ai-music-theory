@@ -24,7 +24,7 @@ The second nature of triads relates to their geometric properties in pitch-class
 
 The mathematical formulation: a consonant triad divides 12 semitones into intervals of 3, 4, and 5 semitones (or 4, 3, and 5 for minor), approaching but not achieving the perfect evenness of 4, 4, and 4 (augmented triad).
 
-# Musical Context/Application
+# Musical Context
 Understanding triads' second nature allows analysts and composers to:
 - Recognize coherence in passages that seem "irrational" from a diatonic perspective
 - Appreciate how 19th-century composers exploited voice-leading properties systematically

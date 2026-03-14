@@ -43,7 +43,7 @@ Comparison with hexatonic pole:
 - Octatonic pole: n-1 voices one direction, 1 voice opposite (3+1 for tetrachords)
 - Both exhaust their eponymous scale's content
 
-# Musical Context/Application
+# Musical Context
 The octatonic pole serves as:
 - A "maverick" transformation within the octatonic bridging region
 - Maximum voice-leading distance within an octatonic collection

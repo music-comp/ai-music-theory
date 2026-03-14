@@ -26,7 +26,7 @@ The switching station model:
 
 In all cases, the augmented triad provides the structural rationale for why these particular consonant triads group together.
 
-# Musical Context/Application
+# Musical Context
 The switching station concept explains passages where a diverse collection of consonant triads lacks unified diatonic explanation. Rather than forcing diatonic analysis, the analyst can recognize that these triads cohere through their shared relationship to an augmented triad that may or may not be explicit in the music.
 
 # Examples

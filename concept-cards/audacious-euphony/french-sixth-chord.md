@@ -38,7 +38,7 @@ Voice-leading zones:
 - Even-numbered zones (like minor sevenths and diminished sevenths)
 - Connect Tristan-genus chords in odd zones
 
-# Musical Context/Application
+# Musical Context
 French sixth chords in the tetrachordal system:
 - Provide alternative bridges between Boretz regions
 - Can be engaged or bypassed in circumnavigation

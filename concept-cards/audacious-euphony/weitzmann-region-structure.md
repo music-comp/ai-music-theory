@@ -23,7 +23,7 @@ Voice-leading connections within a Weitzmann region:
 - Major to slide-related minor (e.g., C to c#): 2 units, two voices move by semitone (S)
 - All cross-modal progressions shift the center of balance by two units
 
-# Musical Context/Application
+# Musical Context
 The flat structure contrasts with hexatonic regions where distance correlates with voice-leading work. In a Weitzmann region, the augmented triad functions like a hallway connecting rooms, or the body of a "water bug" with six consonant triad "feet." Composers may treat the augmented triad as a marked waypoint, a transient passage, or an imperceptible bridge.
 
 # Examples

@@ -30,7 +30,7 @@ Without the 12-gamut's divisibility:
 - No hexatonic or Weitzmann regions
 - All nearly even chords would form single exhaustive cycles
 
-# Musical Context/Application
+# Musical Context
 Overdetermination explains:
 - Why the same triads serve in both syntaxes (shared lexicon)
 - Why transitions between syntaxes can be smooth (homophonous diamorphs)

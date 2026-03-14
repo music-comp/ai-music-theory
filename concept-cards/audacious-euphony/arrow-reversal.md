@@ -31,7 +31,7 @@ The pivot point is the triad (3), which exists in both systems. The lock is the 
 
 Reloading the spring requires "diatonic reconstitution" and "cadential labor" to lock it back into tonic-oriented position.
 
-# Musical Context/Application
+# Musical Context
 Arrow reversal explains why double syntax encounters "such a deep vein of resistance":
 - Advocates suggest not just modal exchange but "all of the relations of subordination, causality, and orientation undergo a reversal"
 - "It is as if at one moment the person wears the garment and at the next the garment wears the person"

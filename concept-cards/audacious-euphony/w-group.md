@@ -37,7 +37,7 @@ Combination with H-group generates chromatic sequences:
 | P | T3 | T5 | T1 |
 | H | T1 | T3 | T5 |
 
-# Musical Context/Application
+# Musical Context
 The W-group/H-group distinction is fundamental to understanding chromatic sequences in 19th-century music. Any chromatic sequence results from alternating one H-group and one W-group transformation. The W-group contains two classically normative transformations (R, N) and one maverick (S), parallel to the H-group's structure (L, P normative; H maverick).
 
 # Examples

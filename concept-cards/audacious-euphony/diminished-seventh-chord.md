@@ -2,9 +2,9 @@
 concept: Diminished Seventh Chord
 category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Dissonance"
+chapter_number: 7
+pdf_page: 156
 unit: null
 authors: Richard Cohn
 ---
@@ -26,7 +26,7 @@ Relation to Tristan-genus chords:
 - Each diminished seventh generates a Boretz region of 8 Tristan-genus chords
 - The diminished seventh plays the same structural role for seventh chords that augmented triads play for triads
 
-# Musical Context/Application
+# Musical Context
 Diminished seventh chords:
 - Function as structural pivots in seventh-chord voice-leading space
 - Enable analysis of chromatic seventh-chord passages

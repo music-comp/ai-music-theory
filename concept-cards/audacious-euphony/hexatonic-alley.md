@@ -28,7 +28,7 @@ Relation to convertible Tonnetz:
 - Each station can be locally tonicized, creating temporary diatonic encapsulation
 - The alley can be traversed partially or completely
 
-# Musical Context/Application
+# Musical Context
 In the Liszt Consolation analysis (Figure 8.9):
 - The hexatonic alley sprouts from f minor in the second sentence
 - Progressive ascent: f minor - F major - a minor - A major

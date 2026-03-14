@@ -2,9 +2,9 @@
 concept: "Generalized Weitzmann Region (GWR)"
 category: analysis
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Dissonance"
+chapter_number: 7
+pdf_page: 156
 unit: null
 authors: Richard Cohn
 ---
@@ -28,7 +28,7 @@ Instances:
 
 The GWR structure generalizes the voice-leading organization principle to any chord size.
 
-# Musical Context/Application
+# Musical Context
 The GWR framework demonstrates that:
 - The voice-leading organization of pan-triadic syntax is not specific to triads
 - The same structural principle operates for seventh chords and potentially larger chords

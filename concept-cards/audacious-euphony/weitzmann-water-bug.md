@@ -26,7 +26,7 @@ Journey types:
 - Directly opposite (e.g., C to a via R): Two stages through body
 - Across at angle (e.g., C to f via N): Two stages through body
 
-# Musical Context/Application
+# Musical Context
 The metaphor helps visualize why all Weitzmann transformations require equivalent voice-leading work. Like traveling between any two feet on a bug, one must always go through the body (augmented triad). This contrasts with hexatonic cycles where adjacent triads connect directly without passing through an intermediary.
 
 # Examples

@@ -27,7 +27,7 @@ Key distinction from Neo-Riemannian transformations:
 
 According to Lewin's definition: "G major is not the dominant of C minor, even though musicians frequently refer to that relation in those terms" - DOM preserves mode.
 
-# Musical Context/Application
+# Musical Context
 Lewin proposed dividing DOM into two MED (mediant) transformations, each taking the root down a diatonic third. Inversely, SUBD divides into two SUBM (submediant) transformations. This creates potential for modeling third relations within a tonal framework.
 
 However, integrating mediants into Rings's model creates complications:

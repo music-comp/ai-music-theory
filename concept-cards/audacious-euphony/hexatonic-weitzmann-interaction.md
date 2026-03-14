@@ -29,7 +29,7 @@ Figure-ground relationship:
 - For hexatonic mariner: Weitzmann regions are bridges
 - For Weitzmann landlubber: hexatonic regions are rivers to cross
 
-# Musical Context/Application
+# Musical Context
 The interaction validates the aphorism "any chord can go to any other chord" while providing a method for evaluating voice-leading distance, recognizing motion patterns, and judging coherence. The unified system enables analysis of chromatic sequences that move between adjacent regions.
 
 # Examples

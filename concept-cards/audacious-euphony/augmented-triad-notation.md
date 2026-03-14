@@ -29,7 +29,7 @@ Only 4 distinct augmented triads exist:
 
 Each augmented triad can resolve to 6 different consonant triads via single semitone.
 
-# Musical Context/Application
+# Musical Context
 The notational ambiguity of augmented triads reflects their functional ambiguity. Composers' manuscript revisions often show struggles with spelling, as seen in Wagner's sketches for the Tarnhelm motive.
 
 # Examples

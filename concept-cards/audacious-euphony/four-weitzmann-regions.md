@@ -28,7 +28,7 @@ Each region contains:
 The four augmented triads themselves form a T4 cycle:
 CEG# -> C#FA -> DGbBb -> EbGB -> CEG#
 
-# Musical Context/Application
+# Musical Context
 The four regions create a partition of triadic space complementary to the four hexatonic regions. Where hexatonic regions preserve common tones maximally within modal pairs (same root or T4 roots), Weitzmann regions pair triads with roots an odd number of semitones apart. Composers could explore one region thoroughly or move between adjacent regions.
 
 # Examples

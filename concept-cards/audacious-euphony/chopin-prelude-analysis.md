@@ -35,7 +35,7 @@ Path on 4-Cube Trio:
 - Engages minor seventh and diminished seventh bridging chords
 - Returns to tonal frame at structural points
 
-# Musical Context/Application
+# Musical Context
 The analysis illustrates:
 - How diatonic framing coexists with chromatic voice leading
 - Multiple valid analytical perspectives on the same passage

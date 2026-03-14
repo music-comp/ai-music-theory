@@ -31,7 +31,7 @@ Examples:
 - L(e minor) = C major: (E, G, B) -> (E, G, C); B ascends to C
 - L(Ab major) = c minor: (Ab, C, Eb) -> (G, C, Eb); Ab descends to G
 
-# Musical Context/Application
+# Musical Context
 The L transformation, named after the German Leittonwechsel (leading-tone exchange), was identified by Arthur von Oettingen in 1866 and developed by Hugo Riemann. In hexatonic cycles, L alternates with P to generate smooth chromatic progressions. The term reflects the traditional leading-tone relationship, as each triad contains the other's leading tone.
 
 # Examples

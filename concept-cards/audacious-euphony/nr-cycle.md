@@ -22,7 +22,7 @@ C major --(N)--> f minor --(R)--> Ab major --(N)--> db minor --(R)--> E major --
 Alternative direction (counterclockwise/plagal):
 C major --(R)--> a minor --(N)--> E major --(R)--> db/c# minor --(N)--> Ab major --(R)--> f minor --(N)--> C major
 
-# Musical Context/Application
+# Musical Context
 Complete N/R cycles appear in at least four Schubert instrumental works, typically in the "authentic" direction (clockwise) with major triads as local tonics and minor triads as subdominants. Liszt uses both directions: authentic in the Faust Symphony, plagal in "O Lieb, so lang du lieben kannst" and the "Vision" etude. The cycle produces whole-tone scales in the bass/treble when dominant sevenths are attached.
 
 # Examples

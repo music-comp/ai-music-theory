@@ -34,7 +34,7 @@ For a central pitch class C:
 
 Each of the six surrounding tones generates its own overlapping neighborhood, creating a network that extends outward indefinitely on the Tonnetz.
 
-# Musical Context/Application
+# Musical Context
 Neighborhoods provide an organizational framework for understanding music that features kaleidoscopic pan-triadic harmonizations of a static pitch. This technique is documented in:
 - Italian opera (antecedent to Central European developments)
 - German Lieder exploiting programmatic effects

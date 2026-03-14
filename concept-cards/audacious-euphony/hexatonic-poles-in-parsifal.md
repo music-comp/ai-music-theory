@@ -34,7 +34,7 @@ When embedded in dissonance:
 - The embedded triads may form hexatonic poles
 - Characteristic semitonal motion preserved despite dissonant context
 
-# Musical Context/Application
+# Musical Context
 Parsifal's hexatonic pole network creates motivic unity across:
 - **Communion theme**: First chromatic progression (Ab major → e minor, m. 28)
 - **Grail distortion**: Final chromatic progression (18 measures before end)

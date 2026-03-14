@@ -38,7 +38,7 @@ The Four Systems:
 - Minor triads: eb, g, b
 - Augmented triad at center: Eb-G-B
 
-# Musical Context/Application
+# Musical Context
 The four hexatonic systems provide a framework for analyzing chromatic progressions that operate outside diatonic tonality. When a passage remains within a single hexatonic system, it creates a characteristic tonal suspension or "trance" state. Transitions between systems represent significant harmonic events that can be tracked analytically.
 
 # Examples

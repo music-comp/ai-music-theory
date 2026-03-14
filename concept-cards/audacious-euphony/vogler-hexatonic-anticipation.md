@@ -26,7 +26,7 @@ The progression demonstrates:
 - Each spelling (C-E-G#, E-G#-B#, Ab-C-E) leads to a different minor tonic
 - The succession of tonics forms a hexatonic cycle
 
-# Musical Context/Application
+# Musical Context
 Vogler's treatise provides the theoretical foundation that Schubert and other early Romantic composers would exploit compositionally. The lineage from Vogler to Schubert has been speculatively traced by scholars, as Vogler was a "peripatetic, ambitious, and charismatic personality who lived in Vienna from 1802 to 1805" and later taught Weber and Meyerbeer.
 
 # Examples

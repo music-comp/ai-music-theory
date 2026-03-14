@@ -33,7 +33,7 @@ Reciprocal leading-tone energies divided between the agents (upward-pressing E f
 5. Consonant/augmented triad:
 The case explored in Chapter 3, where augmented triads can function as structural centers around which consonant triads are organized.
 
-# Musical Context/Application
+# Musical Context
 Consonance/dissonance reciprocity opens compositional possibilities that classical theory does not accommodate. Passages can be organized around dissonant harmonies (like augmented triads) that never sound as surface verticalities but nonetheless govern the progression's logic.
 
 # Examples

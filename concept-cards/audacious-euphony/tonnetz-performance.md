@@ -30,7 +30,7 @@ Tonnetz performance involves choices about:
 
 The same harmonic data can support multiple well-formed Tonnetz performances, just as the same score supports multiple well-formed musical performances.
 
-# Musical Context/Application
+# Musical Context
 Tonnetz performance illustrates:
 - The interpretive nature of analysis
 - Multiple valid readings of the same data

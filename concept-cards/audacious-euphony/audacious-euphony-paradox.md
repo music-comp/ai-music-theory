@@ -26,7 +26,7 @@ For Riemann's example progression:
 
 The paradox reveals that two distinct systems for measuring triadic distance produce contradictory judgments, and both judgments are "correct" within their respective frameworks.
 
-# Musical Context/Application
+# Musical Context
 The paradox reflects the aesthetic experience of 19th-century chromatic music:
 - Such progressions "excited the Romantic imagination" precisely because they confounded expectations
 - They are affiliated with altered realities: magic, dreams, the supernatural, the sublime

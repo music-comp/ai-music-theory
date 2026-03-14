@@ -25,7 +25,7 @@ Properties of voice-leading zones:
 
 Analogy from the text (p. 45): "Like a walker or a waterfall, the incessant local fluctuations are underlain by a global stasis."
 
-# Musical Context/Application
+# Musical Context
 Voice-leading zones provide a way to describe large-scale coherence in pan-triadic passages without invoking tonal hierarchy. A passage that remains within a single hexatonic system is "prolonging" its voice-leading zone, even though no single triad functions as tonic. This concept becomes central in Chapter 5, where it is developed more fully.
 
 # Examples

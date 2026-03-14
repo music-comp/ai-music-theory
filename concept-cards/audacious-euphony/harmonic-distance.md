@@ -34,7 +34,7 @@ Example: C major to E major
 - Common-tone: 1 (share E)
 - Voice-leading: 2 units (C stays, E stays, G moves to G#)
 
-# Musical Context/Application
+# Musical Context
 Riemann's 1909 description of triads as "closely related" despite sharing only 3 of 7 scale tones reveals a conception of harmonic distance different from modern textbooks. The historical shift in how theorists calculated harmonic distance reflects changing compositional practice:
 - 18th century: diatonic distance paramount
 - 19th century: common-tone and voice-leading distance increasingly valued

@@ -29,7 +29,7 @@ Recursive extensions along L/R chain:
 
 The chain extends to 24 stations before replication occurs.
 
-# Musical Context/Application
+# Musical Context
 Three modes of L/R chain navigation:
 1. **Locking migrations**: Each station cadentially confirmed (classical development sections)
 2. **Sliding surveillance**: Window slows to inspect each station but alights at none (Bach d minor Toccata BWV 913)

@@ -35,7 +35,7 @@ Zone 1 structuring:
 - Db7 at m. 39, beat 3 (breaks sequence, triggers reprise)
 - E7 at m. 5 of reprise (triggers dream fantasy in A major)
 
-# Musical Context/Application
+# Musical Context
 The analysis demonstrates:
 - How transformation-class substitutions work in tetrachordal space
 - The parallel between Mazurka Op. 68/4 and Prelude Op. 28/4

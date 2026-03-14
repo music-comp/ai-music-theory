@@ -30,7 +30,7 @@ Voice-leading comparison (from C major):
 | Eb major | T3 (m3 up) | C->Bb (down) | E->Eb (down) | G->G (hold) | Uniform |
 | F major | T5 (P4 up) | C->C (hold) | E->F (up) | G->A (up) | Uniform |
 
-# Musical Context/Application
+# Musical Context
 This property explains why major-third cycles (hexatonic cycles) have distinctive voice-leading characteristics that set them apart from minor-third cycles (octatonic systems) and other chromatic sequences. The balanced voice leading contributes to the "floating" quality of hexatonic progressions.
 
 # Examples

@@ -32,7 +32,7 @@ Octatonic connection:
 Parallel structure:
 - L/P : hexatonic :: P/R : octatonic
 
-# Musical Context/Application
+# Musical Context
 The P/R sequence appears in Schubert's Zauberharfe Overture (analyzed earlier). N/H sequences appear in Schubert's Drei Klavierstucke no. 2 and later in Liszt's Malediction, Rimsky-Korsakov's Skazka, and Bruckner's "Ecce Sacerdos." S/L sequences appear in Liszt's Lelio Fantasy and Schubert's Ab major Mass Sanctus.
 
 # Examples

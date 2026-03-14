@@ -31,7 +31,7 @@ Discrepancies:
 - But C major to f minor involves less voice-leading work
 - These discrepancies become more acute in generalized n-note universes
 
-# Musical Context/Application
+# Musical Context
 Tymoczko advocates for voice-leading measures over Tonnetz distance for generality and intuitive satisfaction. However, Cohn argues for retaining the Tonnetz for several reasons: historical connections, individual pitch-class tracking, directional axis consistency, and tuning explorations.
 
 # Examples

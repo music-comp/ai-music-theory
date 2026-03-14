@@ -2,9 +2,9 @@
 concept: Idealized Voice Leading
 category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Mapping the Triadic Universe"
+chapter_number: 1
+pdf_page: 19
 unit: null
 authors: Richard Cohn
 ---
@@ -31,7 +31,7 @@ Example: C major {C, E, G} to F major {F, A, C}
 - Idealized: (C, C), (E, F), (G, A) = 0 + 1 + 2 = 3 units work
 - Not (C, F), (E, A), (G, C) = 5 + 5 + 5 = 15 units (not minimal)
 
-# Musical Context/Application
+# Musical Context
 Idealized voice leading:
 - Provides a standard for measuring triadic distance
 - Abstracts from compositional texture to reveal underlying proximity

@@ -25,7 +25,7 @@ Evolutionary stages of the soft revolution:
 
 Key mechanism: The consonant triad is "preadapted" for chromatic syntax by its near-evenness, which manifests in both diatonic 7-space and chromatic 12-space.
 
-# Musical Context/Application
+# Musical Context
 The soft revolution provides a framework for:
 - Understanding how Webern's atonality emerged from Schubert's tonality
 - Avoiding false dichotomies between "tonal" and "atonal" periods

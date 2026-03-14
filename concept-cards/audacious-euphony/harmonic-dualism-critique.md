@@ -26,7 +26,7 @@ Three objections to dualist transformation theory (from critics like Kopp and Ty
 
 Cohn's response: "All three objections are neutralized by an appeal to voice leading, a dimension of experience that is, in principle, independent of root motion" (p. 50).
 
-# Musical Context/Application
+# Musical Context
 Understanding the critique of harmonic dualism helps clarify what IS and IS NOT being claimed by Neo-Riemannian theory. The transformational apparatus can be detached from its historical origins, just as "music theorists identify Schenkerian prolongations and progressions without fear that they will be suspected of subscribing to the ideas of German racial superiority in support of which those ideas were evidently conceived" (p. 56).
 
 # Examples

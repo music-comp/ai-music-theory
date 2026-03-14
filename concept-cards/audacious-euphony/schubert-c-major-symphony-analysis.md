@@ -29,7 +29,7 @@ Voice-leading perspective (Figure 9.2b):
 - d minor to G major (m. 141): Larger strides in voice-leading space
 - "What we initially conceived as tunneling into diatonic/tonal darkness becomes... a transient emergence into the hexatonic light"
 
-# Musical Context/Application
+# Musical Context
 The central claim: "These two incommensurate ways of measuring triadic distance emerge respectively from two independent properties of consonant triads."
 
 Listening in terms of C major (chromatic obscurity, enharmonic crevice, reemergence): Hearing in terms of acoustic consonance, root relations to C major

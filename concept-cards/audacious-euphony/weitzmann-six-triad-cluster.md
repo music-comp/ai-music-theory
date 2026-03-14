@@ -30,7 +30,7 @@ Per Table 3.1, the four clusters:
 3. {D, F#, A#} generates: D major, Gb major, Bb major, b minor, eb minor, g minor
 4. {Eb, G, B} generates: Eb major, G major, B major, c minor, e minor, g# minor
 
-# Musical Context/Application
+# Musical Context
 Weitzmann's diagram represents the first systematic visualization of what would later be called hexatonic systems. It shows that all 24 consonant triads can be organized around the four augmented triads, with each consonant triad belonging to exactly one cluster (inner ring) or two clusters (outer ring via parallel relation).
 
 # Examples

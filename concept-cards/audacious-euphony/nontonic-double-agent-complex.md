@@ -26,7 +26,7 @@ But the interior triads may be:
 - Development section harmonies
 - Mediant relationships to the global tonic
 
-# Musical Context/Application
+# Musical Context
 Nontonic double-agent complexes demonstrate the chromatic structure's flexibility and autonomy. Rather than being tied to tonic function, the complex can appear wherever its voice-leading properties serve compositional purposes. This extends the complex beyond its Classical syntactic origins.
 
 # Examples

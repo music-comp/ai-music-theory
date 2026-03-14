@@ -30,7 +30,7 @@ Key property: Each symmetric division produces collections that are:
 - Unable to voice-lead smoothly to another instance of the same type
 - Potentially ambiguous in root or tonal orientation
 
-# Musical Context/Application
+# Musical Context
 Symmetric divisions play a central role in late-Romantic and early-modern harmony. The augmented triad's symmetric division generates hexatonic systems; the diminished seventh's symmetry underlies octatonic collections and the "Weitzmann regions" discussed in Chapter 4. These symmetric structures provide frameworks for organizing non-diatonic chromatic progressions.
 
 # Examples

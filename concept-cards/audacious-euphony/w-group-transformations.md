@@ -2,9 +2,9 @@
 concept: W-Group Transformations
 category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Weitzmann Regions"
+chapter_number: 4
+pdf_page: 77
 unit: null
 authors: Richard Cohn
 ---
@@ -30,7 +30,7 @@ Properties:
 - All connect triads that share the same Weitzmann region
 - Complement the H-group transformations (L, P, H)
 
-# Musical Context/Application
+# Musical Context
 W-group transformations produce the characteristic progressions of Weitzmann regions, often associated with 19th-century chromatic practice. While H-group transformations (L, P, H) keep triads within hexatonic regions, W-group transformations cross hexatonic boundaries while remaining within a single Weitzmann region. The Weitzmann region's six triads (three major, three minor) can be traversed entirely through W-group transformations.
 
 # Examples

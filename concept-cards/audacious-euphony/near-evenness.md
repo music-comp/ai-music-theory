@@ -28,7 +28,7 @@ Correction per the text (p. 52-53):
 
 Figure 2.15: A circle intersecting the vertices of an equilateral triangle shows how C major is generated from C-E-G# augmented by moving G# down to G.
 
-# Musical Context/Application
+# Musical Context
 Near evenness explains WHY consonant triads can voice-lead so smoothly to each other. Cohn argues: "Th e role of near evenness, with respect to the participation of triads in hexatonic progressions, is thus analogous to that of consonance, with respect to their participation in diatonic ones" (p. 56). The augmented triad functions as the "invisible axis about which pan-triadic progressions spin" (p. 52).
 
 # Examples

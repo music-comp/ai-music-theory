@@ -30,7 +30,7 @@ Fetis's framework proposes:
 
 This implies that classical tonality ("transitonality") is not the only legitimate syntax and that listeners can switch between syntactic modes.
 
-# Musical Context/Application
+# Musical Context
 Fetis's model provides historical precedent for understanding:
 - How 19th-century music combines different organizational principles
 - Why chromatic passages need not be forced into diatonic categories

@@ -31,7 +31,7 @@ Cognitive shortcut:
 - Other augmented triads at zones 3, 6, 9 (ascending by semitone)
 - Consonant triad zone = which augmented it displaces, adjusted for direction
 
-# Musical Context/Application
+# Musical Context
 The pitch-class sum provides a musically meaningful way to determine zones without memorization. Since consonant triads displace augmented triads by one semitone, knowing the four augmented positions (0, 3, 6, 9) and whether the consonant triad upshifts or downshifts from its adjacent augmented determines its zone.
 
 # Examples

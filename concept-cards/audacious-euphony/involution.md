@@ -33,7 +33,7 @@ Involution property arises from mode-switching:
 - Any transformation that switches mode (major to minor or vice versa) is necessarily an involution
 - Switching mode twice returns to original mode
 
-# Musical Context/Application
+# Musical Context
 The involution property means that each of P, L, and H defines a symmetric relationship between triads: if C major is the P-partner of c minor, then c minor is equally the P-partner of C major. There is no directionality inherent in these relations; either triad can be the "source" or "target."
 
 # Examples

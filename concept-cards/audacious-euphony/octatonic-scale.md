@@ -36,7 +36,7 @@ Relationship to Boretz regions:
 - The collection contains all tones of an octatonic pole pair
 - Minor seventh and French sixth chords also inhabit octatonic collections
 
-# Musical Context/Application
+# Musical Context
 In Cohn's tetrachordal system, octatonic scales:
 - Define the pitch content of octatonic bridging regions
 - Provide macroharmony for transformations between Boretz regions

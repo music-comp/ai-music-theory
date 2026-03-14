@@ -28,7 +28,7 @@ Examples:
 
 The maximum voice-leading work between consonant triads is 6 units; the minimum (excluding identity) is 1 unit.
 
-# Musical Context/Application
+# Musical Context
 The voice-leading approach:
 - Has ancient roots: Marchettus of Padua (early 14th c.) articulated "closest approach" preference for semitonal voice leading
 - Zarlino (1558): preferred minor third to unison because minor third "is closer"

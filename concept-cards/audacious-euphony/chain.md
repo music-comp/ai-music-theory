@@ -2,9 +2,9 @@
 concept: Chain
 category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "A Unified Model of Triadic Voice-Leading Space"
+chapter_number: 5
+pdf_page: 101
 unit: null
 authors: Richard Cohn
 ---
@@ -29,7 +29,7 @@ Chain length depends on the combined effect of the transformations:
 - LR/RL chains: 8 triads
 - PR/RP chains: 8 triads
 
-# Musical Context/Application
+# Musical Context
 Chains appear in 19th-century music as:
 - Sequential passages with regular transformational patterns
 - Explorations of hexatonic or other cyclic structures

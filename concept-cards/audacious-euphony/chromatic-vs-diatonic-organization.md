@@ -30,7 +30,7 @@ Example: C major to E major
 - Diatonically: distant (no shared diatonic collection)
 - Chromatically: close (one voice moves by semitone: G to G#)
 
-# Musical Context/Application
+# Musical Context
 The distinction becomes crucial for analyzing 19th-century music where:
 - Passages may be locally diatonic but globally chromatic
 - Triadic successions "make sense" by voice-leading criteria while "defying definition" in diatonic terms

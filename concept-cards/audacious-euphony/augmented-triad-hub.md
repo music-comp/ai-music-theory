@@ -32,7 +32,7 @@ Transitional function:
 - Moving from hexatonic to hexatonic requires passing through (or near) an augmented hub
 - Moving from Weitzmann to Weitzmann requires traversing hexatonic "rivers"
 
-# Musical Context/Application
+# Musical Context
 The augmented triads' hub function explains their structural importance in 19th-century chromatic practice even when they're not prolonged. In Schubert's Zauberharfe Overture, transient augmented triads mark the transitions between regional harmonies. Weitzmann's 1853 treatise was precisely about the augmented triad's central organizing role.
 
 # Examples

@@ -28,7 +28,7 @@ Example from Schubert Bb Sonata:
 
 Mathematically, essential enharmonicism reflects the incommensurability between the cyclic chromatic space (mod 12) and the linear/spiral structure of diatonic logic.
 
-# Musical Context/Application
+# Musical Context
 Essential enharmonicism:
 - Signals the limits of diatonic explanation
 - Creates paradoxes that resist consistent scale-degree assignment

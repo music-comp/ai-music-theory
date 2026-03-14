@@ -31,7 +31,7 @@ Examples:
 - P(c minor) = C major: (C, Eb, G) -> (C, E, G)
 - P(F# major) = f# minor: (F#, A#, C#) -> (F#, A, C#)
 
-# Musical Context/Application
+# Musical Context
 P transformations are ubiquitous in tonal music as mode mixture or modal mutation. In hexatonic progressions, P alternates with L to generate the complete cycle. The P transformation produces a chromatic semitone (same letter name) on the Tonnetz, appearing as vertical motion in the standard angled format.
 
 # Examples

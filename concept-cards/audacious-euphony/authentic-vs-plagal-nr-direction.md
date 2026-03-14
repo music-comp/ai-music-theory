@@ -28,7 +28,7 @@ C major <- a minor (tonic) <- E major (dominant) <- c# minor (tonic) <- ...
 
 In authentic direction with sevenths, whole-tone scales emerge in treble register.
 
-# Musical Context/Application
+# Musical Context
 Schubert consistently uses the authentic direction in his N/R cycles. Liszt explores both directions: authentic in the Faust Symphony, plagal in "O Lieb, so lang du lieben kannst" (Liebestraum No. 3) and the "Vision" etude. The plagal direction reverses the traditional dominant-tonic hierarchy.
 
 # Examples

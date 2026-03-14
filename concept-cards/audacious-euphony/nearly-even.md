@@ -2,9 +2,9 @@
 concept: Nearly Even
 category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Hexatonic Cycles"
+chapter_number: 2
+pdf_page: 35
 unit: null
 authors: Richard Cohn
 ---
@@ -28,7 +28,7 @@ For seventh chords (n=4):
 - Perfectly even: 12/4 = 3, so intervals of 3+3+3+3 (diminished seventh)
 - Nearly even: intervals close to 3+3+3+3 (Tristan-genus: dominant and half-diminished sevenths)
 
-# Musical Context/Application
+# Musical Context
 Near-evenness explains:
 - Why consonant triads are a single semitone from augmented triads
 - Why Tristan-genus chords are a single semitone from diminished sevenths

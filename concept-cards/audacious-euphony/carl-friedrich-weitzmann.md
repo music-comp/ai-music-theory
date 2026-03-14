@@ -24,7 +24,7 @@ Weitzmann's key contributions:
 
 Weitzmann did not explicitly close the N/R chain into a cycle, as his interest was in regional contents rather than internal structure.
 
-# Musical Context/Application
+# Musical Context
 Weitzmann's teacher Hauptmann defined the nebenverwandt relation as inversion about the tone participating in both the major third and perfect fifth. Weitzmann adapted this for key relationships. The transformational interpretation came later through Oettingen and subsequent theorists. Cohn names the regions after Weitzmann to honor this foundational contribution.
 
 # Examples

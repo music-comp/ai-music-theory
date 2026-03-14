@@ -2,9 +2,9 @@
 concept: "Relative (R) - Glossary Definition"
 category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "Weitzmann Regions"
+chapter_number: 4
+pdf_page: 77
 unit: null
 authors: Richard Cohn
 ---
@@ -29,7 +29,7 @@ Algebraic properties:
 - R preserves Weitzmann region membership
 - R combined with L generates the L/R chain (24 triads)
 
-# Musical Context/Application
+# Musical Context
 R corresponds to the traditional relative major/minor relationship and is the most familiar W-group transformation. In tonal music, R connects closely related keys (C major and a minor share the same key signature). In pan-triadic contexts, R participates in L/R chains that traverse all 24 consonant triads through modally alternating mediant relations.
 
 # Examples

@@ -26,7 +26,7 @@ Key property: A perfectly even chord is invariant under inversion about any axis
 
 From Figure 2.17(a): When a trichord is perfectly even (augmented triad), "the axis that reflects C and E into each other also reflects G# into itself. Consequently, the perfectly even augmented triad cannot be distinguished from its reflection, and the transformation is a phantom."
 
-# Musical Context/Application
+# Musical Context
 Perfectly even chords cannot voice-lead to themselves by single semitone because any single-semitone displacement produces a different chord type. They serve as the "parent" structures from which nearly even chords (like consonant triads) are derived. The perfectly even augmented triad is the axis around which hexatonic systems are organized.
 
 # Examples

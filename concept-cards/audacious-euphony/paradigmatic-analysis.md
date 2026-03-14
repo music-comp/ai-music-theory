@@ -32,7 +32,7 @@ For voice-leading analysis:
 - Concrete realizations show specific transformations (N, L, P, H, S)
 - Zone numbers track voice-leading position
 
-# Musical Context/Application
+# Musical Context
 Paradigmatic analysis is useful for:
 - Comparing strophic variations in song settings
 - Revealing substitutional logic in development sections

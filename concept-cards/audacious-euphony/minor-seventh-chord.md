@@ -36,7 +36,7 @@ Generation by combination:
 - D minor (D-F-A) + F major (F-A-C) = D-F-A-C (Dm7)
 - The two triads share the F-A edge (major third)
 
-# Musical Context/Application
+# Musical Context
 Minor seventh chords in 4-Cube Trio:
 - Provide stepwise connections between Tristan-genus chords
 - Enable continuous voice-leading paths through even zones

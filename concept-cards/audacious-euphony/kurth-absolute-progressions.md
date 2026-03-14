@@ -25,7 +25,7 @@ Characteristics of absolute progressions:
 
 Kurth discovered that chromatic sequences, like Fetis's diatonic ones, operate by the logic of repetition, not tonal attraction.
 
-# Musical Context/Application
+# Musical Context
 Kurth's work (primarily on Wagner's Tristan) became foundational for German musicology:
 - Established that consonant triads and occasional cadences do not automatically justify tonal interpretation
 - Recognized that multiple syntactic principles can operate within a single composition

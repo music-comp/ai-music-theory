@@ -26,7 +26,7 @@ Net result: e minor to Eb major = S
 
 The compound paths both route through the relative major/minor, breaking S into classically normative steps.
 
-# Musical Context/Application
+# Musical Context
 This identity reveals the hidden structure in passages that appear to move directly by S. The decomposition through R and LP/PL shows how S connects to Classical syntax even though S-related triads share no diatonic scale. The identity serves as a motivic signature in Strauss's "Fruhling."
 
 # Examples

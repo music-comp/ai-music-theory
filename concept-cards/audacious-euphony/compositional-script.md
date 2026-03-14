@@ -33,7 +33,7 @@ Scripts differ from sequences in allowing:
 - Flexible transformation substitutions within classes
 - Same-zone triadic substitutions
 
-# Musical Context/Application
+# Musical Context
 Compositional scripts represent how composers created structural coherence in chromatic music without strict adherence to:
 - Diatonic scale-degree relationships
 - Traditional modulatory schemes

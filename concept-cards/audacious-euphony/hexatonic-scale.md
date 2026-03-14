@@ -35,7 +35,7 @@ Pitch-class content for each hexatonic system:
 - Eastern: {D, F#, Bb} + neighbors = {Db, D, F, F#, A, Bb}
 - Western: {Eb, G, B} + neighbors = {D, Eb, Gb, G, Bb, B}
 
-# Musical Context/Application
+# Musical Context
 The hexatonic scale provides the pitch-class pool for passages that remain within a single hexatonic system. When a composer uses only these six notes, the music enters the "hexatonic trance" state of suspended tonality. The scale's symmetry (invariant under T4) reflects the symmetric structure of the hexatonic cycle itself.
 
 # Examples

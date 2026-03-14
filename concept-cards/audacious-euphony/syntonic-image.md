@@ -24,7 +24,7 @@ A syntonic image is the relation between two tones separated by a syntonic comma
 
 When the acoustic identity of the two tones at syntonic-image positions is recognized, "it is a small step to honor their unification in conception, leading to a more conjunct relation between subdominant and dominant."
 
-# Musical Context/Application
+# Musical Context
 Syntonic images play structural roles in:
 - Defining the boundaries of diatonic regions on the Tonnetz
 - Establishing the relationship between subdominant and dominant (sharing D in C major)

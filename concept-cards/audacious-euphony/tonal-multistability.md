@@ -24,7 +24,7 @@ Sources of tonal multistability in hexatonic progressions:
 
 Comparison to African rhythm: "Hexatonic progressions resemble the so-called 'standard' bell pattern (variously called bembe and gagokoe) of West Africa or the Caribbean, whose temporal 'tonic' (i.e., downbeat) can occur at several points along the cycle. The cycle itself is neutral with respect to these bestowals and is in this sense multistable" (Pressing 1983).
 
-# Musical Context/Application
+# Musical Context
 Tonal multistability contributes to the "hexatonic trance" effect and the association of these progressions with altered or uncanny states. The lack of clear tonal orientation creates a sense of suspension or floating, which composers exploit for expressive purposes.
 
 # Examples

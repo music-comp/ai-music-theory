@@ -32,7 +32,7 @@ The pattern creates:
 - Characteristic "rocking" or "galloping" feel
 - Recognition across different melodic contexts
 
-# Musical Context/Application
+# Musical Context
 The choriambus serves analytical purposes:
 - Identifying thematic relationships across development sections
 - Understanding motivic unity beneath surface variety

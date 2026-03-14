@@ -2,9 +2,9 @@
 concept: Downshift Voice Leading
 category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Glossary"
-chapter_number: "Glossary"
-pdf_page: 229
+chapter: "A Unified Model of Triadic Voice-Leading Space"
+chapter_number: 5
+pdf_page: 101
 unit: null
 authors: Richard Cohn
 ---
@@ -29,7 +29,7 @@ Downshift voice leading characterizes:
 - P transformations from major to minor triads
 - Certain sequential patterns with consistent descending motion
 
-# Musical Context/Application
+# Musical Context
 The distinction between upshift and downshift:
 - Relates to Riemann's harmonic dualism (major vs. minor as "up" vs. "down")
 - Affects perceived directionality of progressions

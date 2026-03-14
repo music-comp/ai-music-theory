@@ -22,7 +22,7 @@ Example: Bb/A# as double agent
 
 The respelling occurs across the S-relationship that connects exterior triads of a double-agent complex. Acoustically identical, the pitch changes its functional trajectory based on harmonic context.
 
-# Musical Context/Application
+# Musical Context
 Lewin's Cold War allegory illustrates the concept vividly: the pitch enters "wearing a cloak" as one spelling, then reveals itself as the other. The redirection of energized tones through enharmonic transformation is a principal technique of 19th-century chromaticism, extending from diminished seventh reinterpretations to consonant triadic contexts.
 
 # Examples

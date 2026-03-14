@@ -29,7 +29,7 @@ On the expanded Tonnetz (Figure 4.6c):
 - All Weitzmann transformations visually require two steps through the augmented region
 - Voice-leading distances align with fused-triad graphs
 
-# Musical Context/Application
+# Musical Context
 The representation choice reflects theoretical priorities. The uninflected Tonnetz privileges common-tone counting (where R joins L and P at first rank). The expanded version privileges voice-leading work (where R joins N and S at second rank). The expanded Tonnetz also relates to the hallway metaphor where the augmented triad is a space to be traversed.
 
 # Examples

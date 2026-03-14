@@ -25,7 +25,7 @@ What LP on major shares with LP on minor:
 - The root moves in opposite directions, but the voice-leading GESTURE is the same
 - This equivalence is captured by melodic dualism, not harmonic dualism
 
-# Musical Context/Application
+# Musical Context
 Melodic dualism allows analysts to use triadic transformations without subscribing to the discredited harmonic dualism of Oettingen and Riemann. The theoretical apparatus can stand on its own, grounded in voice-leading behavior rather than metaphysical claims about harmonic generation.
 
 # Examples

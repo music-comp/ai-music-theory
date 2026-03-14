@@ -27,7 +27,7 @@ This creates a symmetric force field:
 
 Harrison 1994 elaborates: "The conception originates in dualist thinking but was sensible enough that it was taken up by theorists with no commitment to dualism, such as Louis and Thuille [1913], Kurth 1923, and Lorenz 1933."
 
-# Musical Context/Application
+# Musical Context
 The bidirectional leading tone contributes to the tonal indeterminacy of Leittonwechsel relations. When C major and e minor are juxtaposed without clear contextual cues, the semitone between B and C "projects an unstable force field that pulls simultaneously in both directions" (p. 64).
 
 # Examples

@@ -32,7 +32,7 @@ Middleground hearing (Figure 8.13b):
 - Bb discharges as leading tone to Cb-qua-B major
 - Similar pattern: B minor through substitution, retention loop around F#, overshoot to C major
 
-# Musical Context/Application
+# Musical Context
 From C major standpoint, the entire chromatic episode fulfills dominant function, with the "entire alley acquiring the function of its most diatonic member." By extension, pitch retention loops visit double-dominant region. But functional reduction is not mandatory; voice-leading zones provide alternative:
 - C major to eb minor: downshift
 - Hexatonic alley: balanced about fulcrum

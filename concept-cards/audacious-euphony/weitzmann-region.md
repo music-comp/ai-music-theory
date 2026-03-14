@@ -24,7 +24,7 @@ Each Weitzmann region:
 - Minor triads are related to each other by major third (T4)
 - Cross-modal connections involve whole-step motion in one voice, or two voices moving by semitone
 
-# Musical Context/Application
+# Musical Context
 Weitzmann regions pair triads whose roots lie an odd number of semitones apart, contrasting with hexatonic regions which pair triads with same roots or roots four semitones apart. The augmented triad serves as a hub through which all intra-regional progressions are routed. Composers from C.P.E. Bach (1763) to Richard Strauss (1949) explored Weitzmann regions with increasing thoroughness.
 
 # Examples

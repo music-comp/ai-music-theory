@@ -21,7 +21,7 @@ B major --(N)--> e minor --(R)--> G major --(N)--> c minor --(R)--> Eb major
 
 This chain traverses from B major to Eb major (S-related), connecting through intermediate triads. Adding one more N transformation would complete the cycle back to B major (respelled enharmonically).
 
-# Musical Context/Application
+# Musical Context
 Expanded N/R chains appear in late 18th-century music as composers began exploring beyond the core i-III-V# complex. They embed a double-agent complex within a larger chromatic trajectory, creating incrementally more chromatic progressions that anticipate Schubert's complete N/R cycles.
 
 # Examples

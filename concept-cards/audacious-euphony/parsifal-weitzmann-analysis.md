@@ -24,7 +24,7 @@ Resolution: augmented sixth on G major -> F# major (dominant of b minor)
 This ordering groups triads by mode rather than following N/R cyclic order.
 All six regional triads appear, exhausting the Weitzmann region.
 
-# Musical Context/Application
+# Musical Context
 The passage demonstrates that Weitzmann regions need not be explored sequentially. Wagner groups triads by mode (all minor, then all major), creating a different effect from the N/R chain. The augmented sixth on G major provides the transition back to b minor's dominant, reintegrating the chromatic exploration into the larger tonal plan.
 
 # Examples

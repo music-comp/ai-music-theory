@@ -28,7 +28,7 @@ Transformational structure:
 - S (with enharmonic double agent C/B#) to dominant
 - Restoration of relative major in second phrase
 
-# Musical Context/Application
+# Musical Context
 "Il Penseroso" precedes the Tarnhelm by a decade, establishing the LP-opening variant of the double-agent complex. The composition demonstrates how the complex can be distributed across phrases, with the relative major restored later rather than appearing in its canonical position. The meditation on Michelangelo's sculpture suits the harmonic introspection.
 
 # Examples

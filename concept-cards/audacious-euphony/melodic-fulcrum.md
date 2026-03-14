@@ -38,7 +38,7 @@ Two students replicate C-E starting on E:
 - One responds E-G (tempered to diatonic, consonant triad)
 The G/G# fulcrum balances uniformity against diatonicity.
 
-# Musical Context/Application
+# Musical Context
 Composers of the nineteenth century treated melodic fulcrums as sites for motivic play, highlighting the tension between diatonic and chromatic interpretations. Extended passages may oscillate around a fulcrum, keeping both harmonic interpretations in play.
 
 # Examples

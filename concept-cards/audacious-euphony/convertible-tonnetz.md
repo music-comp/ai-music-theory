@@ -27,7 +27,7 @@ Conceptual images:
 - Landing aircraft: Sprouting landing gear as diatonic space comes into view
 - Sealed capsules bobbing on pan-triadic sea: Interior activates tonal tensions; exterior tethered by voice-leading forces
 
-# Musical Context/Application
+# Musical Context
 The convertible Tonnetz models passages where:
 - Music alternates between sequential/chromatic and cadential/diatonic organization
 - Tonicizations provide local diatonic capsules within larger chromatic journeys
