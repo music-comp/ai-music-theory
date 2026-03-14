@@ -58,7 +58,7 @@ clap = { version = "4", features = ["derive"] }
 
 # Source management
 strsim = "0.11"
-toml_edit = "0.22"
+toml_edit = { version = "0.22", features = ["serde"] }
 
 # Graph database (optional)
 petgraph = "0.6"

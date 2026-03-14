@@ -1,4 +1,5 @@
 use confyg::{conf, Confygery};
+use fabryk::core::{ConfigManager, ConfigProvider};
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
@@ -7,7 +8,8 @@ use std::path::PathBuf;
 use crate::error::{Error, Result};
 
 /// Main configuration structure for the MCP server.
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(default)]
 pub struct Config {
     pub server: ServerConfig,
     pub paths: PathsConfig,
@@ -21,14 +23,16 @@ pub struct Config {
 }
 
 /// Server configuration.
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(default)]
 pub struct ServerConfig {
     pub name: String,
     pub version: String,
 }
 
 /// Paths configuration with variable expansion.
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(default)]
 pub struct PathsConfig {
     // Used by serde deserialization and accessed via base_path()
     #[allow(dead_code)]
@@ -78,7 +82,7 @@ impl PathsConfig {
 }
 
 /// Source file locations configuration.
-#[derive(Debug, Clone, Deserialize, Default)]
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
 pub struct SourcesConfig {
     #[serde(default)]
     pub oxford: SourceCategory,
@@ -130,7 +134,8 @@ pub enum QueryMode {
 
 /// Search configuration.
 /// Fields will be used when search backends are implemented (Phase 2+).
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(default)]
 #[allow(dead_code)]
 pub struct SearchConfig {
     /// Backend selection: "simple" or "tantivy"
@@ -242,6 +247,27 @@ fn default_field_boost_content() -> f32 {
     1.0
 }
 
+impl Default for SearchConfig {
+    fn default() -> Self {
+        Self {
+            backend: default_backend(),
+            index_path: default_index_path(),
+            rebuild_on_startup: false,
+            snippet_size: default_snippet_size(),
+            fuzzy_search: false,
+            fuzzy_distance: default_fuzzy_distance(),
+            query_mode: default_query_mode(),
+            minimum_match_percent: default_minimum_match(),
+            enable_stopwords: default_enable_stopwords(),
+            custom_stopwords: vec![],
+            stopword_allowlist: default_stopword_allowlist(),
+            field_boost_title: default_field_boost_title(),
+            field_boost_description: default_field_boost_description(),
+            field_boost_content: default_field_boost_content(),
+        }
+    }
+}
+
 impl SearchConfig {
     /// Get the index path as an absolute PathBuf.
     /// Will be used when search backends are implemented (Phase 2+).
@@ -277,6 +303,179 @@ impl Config {
             .map_err(|e| Error::config(format!("Failed to build config: {}", e)))?;
 
         Ok(config)
+    }
+}
+
+impl Default for Config {
+    fn default() -> Self {
+        Self {
+            server: ServerConfig::default(),
+            paths: PathsConfig::default(),
+            sources: SourcesConfig::default(),
+            logging: twyg::Opts::default(),
+            search: SearchConfig::default(),
+        }
+    }
+}
+
+impl Default for ServerConfig {
+    fn default() -> Self {
+        Self {
+            name: "music-theory-skill".to_string(),
+            version: env!("CARGO_PKG_VERSION").to_string(),
+        }
+    }
+}
+
+impl Default for PathsConfig {
+    fn default() -> Self {
+        Self {
+            base: ".".to_string(),
+            sources_md: "sources-md".to_string(),
+            concept_cards: "concept-cards".to_string(),
+            concepts_unified: "concepts-unified".to_string(),
+            guides: "guides".to_string(),
+            skill_docs: ".".to_string(),
+        }
+    }
+}
+
+// ============================================================================
+// Fabryk ConfigProvider implementation
+// ============================================================================
+
+impl ConfigProvider for Config {
+    fn project_name(&self) -> &str {
+        &self.server.name
+    }
+
+    fn base_path(&self) -> fabryk::core::Result<PathBuf> {
+        expand_path(&self.paths.base).map_err(|e| fabryk::core::Error::config(e.to_string()))
+    }
+
+    fn content_path(&self, content_type: &str) -> fabryk::core::Result<PathBuf> {
+        let result = match content_type {
+            "concept_cards" => expand_path(&self.paths.concept_cards),
+            "sources_md" => expand_path(&self.paths.sources_md),
+            "concepts_unified" => expand_path(&self.paths.concepts_unified),
+            "guides" => expand_path(&self.paths.guides),
+            "skill_docs" => expand_path(&self.paths.skill_docs),
+            _ => Err(Error::config(format!(
+                "Unknown content type: {}",
+                content_type
+            ))),
+        };
+        result.map_err(|e| fabryk::core::Error::config(e.to_string()))
+    }
+
+    fn cache_path(&self, cache_type: &str) -> fabryk::core::Result<PathBuf> {
+        let base = self.base_path()?;
+        match cache_type {
+            "fts" => {
+                // Use configured index path if set, otherwise default
+                expand_path(&self.search.index_path)
+                    .map_err(|e| fabryk::core::Error::config(e.to_string()))
+            }
+            "graph" => Ok(base.join("data").join("graphs")),
+            "vector" => Ok(base.join(".cache").join("vector")),
+            _ => Ok(base.join(".cache").join(cache_type)),
+        }
+    }
+}
+
+// ============================================================================
+// Fabryk ConfigManager implementation
+// ============================================================================
+
+impl ConfigManager for Config {
+    fn load(config_path: Option<&str>) -> fabryk::core::Result<Self> {
+        let resolved = config_path
+            .map(PathBuf::from)
+            .or_else(|| Self::resolve_config_path(None));
+
+        if let Some(path) = resolved {
+            let path_str = path.to_string_lossy().to_string();
+            let mut opts = conf::Options::default();
+            opts.add_path(&path_str);
+
+            let config: Config = Confygery::new()
+                .map_err(|e| fabryk::core::Error::config(format!("config init: {e}")))?
+                .with_opts(opts)
+                .map_err(|e| fabryk::core::Error::config(format!("config opts: {e}")))?
+                .add_file("default.toml")
+                .map_err(|e| fabryk::core::Error::config(format!("config file: {e}")))?
+                .build()
+                .map_err(|e| fabryk::core::Error::config(format!("config build: {e}")))?;
+
+            Ok(config)
+        } else {
+            Ok(Self::default())
+        }
+    }
+
+    fn resolve_config_path(explicit: Option<&str>) -> Option<PathBuf> {
+        if let Some(path) = explicit {
+            return Some(PathBuf::from(path));
+        }
+
+        // Check env var
+        if let Ok(path) = std::env::var("MUSIC_THEORY_CONFIG_DIR") {
+            let expanded = crate::util::paths::expand_tilde(&path);
+            if expanded.join("default.toml").exists() {
+                return Some(expanded);
+            }
+        }
+
+        // Fall back to util::paths resolution
+        crate::util::paths::config_dir()
+    }
+
+    fn default_config_path() -> Option<PathBuf> {
+        dirs::config_dir().map(|d| d.join("music-theory-skill").join("config.toml"))
+    }
+
+    fn project_name() -> &'static str {
+        "music-theory-skill"
+    }
+
+    fn to_toml_string(&self) -> fabryk::core::Result<String> {
+        toml_edit::ser::to_string_pretty(self)
+            .map_err(|e| fabryk::core::Error::config(e.to_string()))
+    }
+
+    fn to_env_vars(&self) -> fabryk::core::Result<Vec<(String, String)>> {
+        let value: toml_edit::DocumentMut = self
+            .to_toml_string()?
+            .parse()
+            .map_err(|e: toml_edit::TomlError| fabryk::core::Error::config(e.to_string()))?;
+        let mut vars = Vec::new();
+        flatten_toml_table(value.as_table(), "MUSIC_THEORY", &mut vars);
+        Ok(vars)
+    }
+}
+
+/// Recursively flatten a TOML table into `KEY=value` pairs.
+fn flatten_toml_table(
+    table: &toml_edit::Table,
+    prefix: &str,
+    out: &mut Vec<(String, String)>,
+) {
+    for (key, item) in table.iter() {
+        let env_key = format!("{}_{}", prefix, key.to_uppercase());
+        match item {
+            toml_edit::Item::Table(t) => flatten_toml_table(t, &env_key, out),
+            toml_edit::Item::Value(v) => {
+                let s = match v {
+                    toml_edit::Value::String(s) => s.value().to_string(),
+                    other => other.to_string(),
+                };
+                out.push((env_key, s));
+            }
+            toml_edit::Item::ArrayOfTables(arr) => {
+                out.push((env_key, format!("{arr}")));
+            }
+            toml_edit::Item::None => {}
+        }
     }
 }
 
