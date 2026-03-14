@@ -5,7 +5,9 @@
 
 pub mod cli;
 pub mod config;
+pub mod content;
 pub mod error;
+pub mod extractors;
 #[cfg(feature = "graph")]
 pub mod graph;
 pub mod markdown;
