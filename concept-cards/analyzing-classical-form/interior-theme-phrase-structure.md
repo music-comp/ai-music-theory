@@ -1,20 +1,12 @@
 ---
-title: "Interior Theme Phrase Structure"
-card_type: concept
-concept_type: analytical-method
+concept: "Interior Theme Phrase Structure"
 chapter_number: 17
 pdf_page: 598
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - interior-theme
-  - phrase-structure
-  - small-ternary
-  - formal-distortion
-related_cards:
-  - interior-theme
-  - small-ternary
-  - truncated-small-ternary
-  - contrasting-middle
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Basic Model

@@ -1,17 +1,12 @@
 ---
-title: Modulating Sentence
-category: Theme Types
-tags:
-  - sentence
-  - modulation
-  - subordinate-key
-  - continuation-phrase
-related_concepts:
-  - sentence
-  - modulation
-  - subordinate-key
-  - dominant-region
+concept: Modulating Sentence
+category: form
 pdf_page: 88
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Modulating Sentence

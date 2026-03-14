@@ -1,20 +1,12 @@
 ---
-title: "Contrasting Middle (B Section) in Minuet"
-card_type: concept
-concept_type: formal-unit
+concept: "Contrasting Middle (B Section) in Minuet"
 chapter_number: 18
 pdf_page: 643
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - contrasting-middle
-  - b-section
-  - minuet-form
-  - development
-related_cards:
-  - minuet-form
-  - contrasting-middle
-  - interpolated-episode
-  - false-recapitulation
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

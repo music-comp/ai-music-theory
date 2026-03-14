@@ -1,17 +1,12 @@
 ---
-title: Period Structure Overview
-category: Analytical Methods
-tags:
-  - period
-  - structural-overview
-  - antecedent
-  - consequent
-related_concepts:
-  - period
-  - antecedent-phrase
-  - consequent-phrase
-  - cadential-differentiation
+concept: Period Structure Overview
+category: analysis
 pdf_page: 95
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Period Structure Overview

@@ -1,17 +1,12 @@
 ---
-title: Cadential Extension
-category: Compositional Techniques
-tags:
-  - cadential-extension
-  - cadential-deviation
-  - phrase-extension
-  - closure
-related_concepts:
-  - cadential-deviations
-  - phrase-extension
-  - deceptive-cadence
-  - evaded-cadence
+concept: Cadential Extension
+category: technique
 pdf_page: 164
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Cadential Extension

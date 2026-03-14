@@ -1,6 +1,6 @@
 ---
 concept: Minor-Major Polychord
-category: chord-construction
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Polychords"
 chapter_number: 7

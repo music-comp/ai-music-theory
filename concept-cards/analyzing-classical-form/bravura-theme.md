@@ -1,19 +1,12 @@
 ---
-title: "Bravura Theme"
-card_type: concept
-concept_type: compositional-device
+concept: "Bravura Theme"
 chapter_number: 20
 pdf_page: 710
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - bravura-theme
-  - concerto-form
-  - virtuosity
-  - subordinate-theme
-related_cards:
-  - solo-exposition
-  - expanded-cadential-progression
-  - subordinate-theme
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

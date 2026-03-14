@@ -1,18 +1,12 @@
 ---
-title: Sentence
-category: Theme Types
-tags:
-  - sentence
-  - theme-type
-  - formal-structure
-  - eight-measure
-  - classical-form
-related_concepts:
-  - presentation-phrase
-  - continuation-phrase
-  - basic-idea
-  - cadential-function
+concept: Sentence
+category: form
 pdf_page: 55
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Sentence

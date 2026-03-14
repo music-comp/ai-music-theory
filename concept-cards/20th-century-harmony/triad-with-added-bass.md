@@ -1,6 +1,6 @@
 ---
 concept: Triad with Added Bass
-category: chord-construction
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Added-Note Chords"
 chapter_number: 5

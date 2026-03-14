@@ -1,19 +1,12 @@
 ---
-title: "Dynamic Curve"
-card_type: concept
-concept_type: analytical-concept
-chapter_number: Glossary
+concept: "Dynamic Curve"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - dynamic-curve
-  - progressive-dynamic
-  - recessive-dynamic
-  - formal-shape
-related_cards:
-  - progressive-dynamic
-  - recessive-dynamic
-  - coda
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

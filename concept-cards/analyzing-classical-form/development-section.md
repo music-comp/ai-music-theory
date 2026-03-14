@@ -1,20 +1,12 @@
 ---
-title: Development Section
-category: Sonata Form
-tags:
-  - development
-  - sonata-form
-  - tonal-instability
-  - formal-section
-related:
-  - core
-  - pre-core
-  - retransition
-  - exposition
-  - recapitulation
+concept: Development Section
+category: form
 pdf_page: 442
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Development Section

@@ -1,11 +1,12 @@
 ---
-title: Expansion of Initial Tonic in ECP
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Expansion of Initial Tonic in ECP
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 397
-tags: [subordinate-theme, ecp, tonic-expansion, i6]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Expansion of Initial Tonic in ECP

@@ -1,20 +1,12 @@
 ---
-title: "Subordinate Theme Differences in Rondo"
-card_type: concept
-concept_type: analytical-method
+concept: "Subordinate Theme Differences in Rondo"
 chapter_number: 19
 pdf_page: 673
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - subordinate-theme
-  - rondo
-  - tonal-conflict
-  - compression
-related_cards:
-  - subordinate-theme-complex
-  - subordinate-theme
-  - five-part-rondo
-  - sonata-rondo
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Key Differences from Sonata

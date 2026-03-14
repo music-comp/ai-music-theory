@@ -6,6 +6,7 @@ chapter: "The Origins of Functional Tonality"
 chapter_number: 6
 pdf_page: 257
 authors: "Dmitri Tymoczko"
+unit: null
 ---
 
 # Quick Definition

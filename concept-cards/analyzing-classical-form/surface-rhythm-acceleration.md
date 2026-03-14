@@ -1,15 +1,12 @@
 ---
-title: Surface Rhythm Acceleration
-category: Compositional Techniques
-tags:
-  - rhythm
-  - continuation-function
-  - surface-rhythm
-related_concepts:
-  - continuation-phrase
-  - harmonic-acceleration
-  - fragmentation
+concept: Surface Rhythm Acceleration
+category: technique
 pdf_page: 75
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Surface Rhythm Acceleration

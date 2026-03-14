@@ -1,17 +1,12 @@
 ---
-title: Sentence vs. Period Comparison
-category: Analytical Methods
-tags:
-  - sentence
-  - period
-  - comparison
-  - theme-types
-related_concepts:
-  - sentence
-  - period
-  - basic-idea
-  - cadence
+concept: Sentence vs. Period Comparison
+category: analysis
 pdf_page: 114
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Sentence vs. Period Comparison

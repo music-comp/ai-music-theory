@@ -1,10 +1,12 @@
 ---
 concept: Voice Leading
-category: theory/counterpoint
+category: theory
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapters 6-8 (Klumpenhouwer, Rehding, Tymoczko)"
-part: 2
 authors: "Henry Klumpenhouwer, Alexander Rehding, Dmitri Tymoczko"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Voice Leading

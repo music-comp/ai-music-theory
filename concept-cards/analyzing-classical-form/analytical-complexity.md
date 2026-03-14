@@ -1,16 +1,12 @@
 ---
-title: Analytical Complexity
-category: Analytical Methods
-tags:
-  - analysis
-  - ambiguity
-  - interpretation
-  - classical-form
-related_concepts:
-  - phrase-ambiguity
-  - formal-function
-  - multiple-interpretations
+concept: Analytical Complexity
+category: analysis
 pdf_page: 139
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Analytical Complexity

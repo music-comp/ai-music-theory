@@ -1,9 +1,12 @@
 ---
 concept: Singer/Songwriter Schema
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Four-Chord Schemas"
-part: 7
+pdf_page: null
+chapter_number: 7
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 ## Quick Definition

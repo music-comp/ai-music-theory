@@ -3,8 +3,10 @@ concept: "Phrasing Theory (Riemann's Contribution)"
 category: theory
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Riemann's Legacy (Ch. 1)"
-part: 1
 authors: "Ludwig Holtmeier"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Phrasing Theory (Riemann's Contribution)

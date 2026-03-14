@@ -1,18 +1,12 @@
 ---
-title: Small Binary Form in Slow Introduction
-category: Sonata Form
-tags:
-  - slow-introduction
-  - small-binary
-  - formal-organization
-  - phrase-structure
-related:
-  - slow-introduction-phrase-structure
-  - small-binary
-  - bipartite-form
+concept: Small Binary Form in Slow Introduction
+category: form
 pdf_page: 580
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Small Binary Form in Slow Introduction

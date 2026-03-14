@@ -1,6 +1,6 @@
 ---
 concept: FLIPEND Transformation
-category: transformation
+category: technique
 source: Generalized Musical Intervals and Transformations
 chapter: "Transformation Graphs and Networks (2): Non-Intervallic Transformations"
 chapter_number: 8

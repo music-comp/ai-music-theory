@@ -1,13 +1,12 @@
 ---
 concept: Tonnetz / Tone Network
-tier: 2
-category: spatial-representations
-sources:
-  - Ch 9 (Gollin): Tonnetz from Acoustic to Metaphorical
-  - Ch 10 (Clark): Klangvertretung & Tone Representation
-  - Ch 11 (Cohn): Tonnetz as Analytical Apparatus
-  - Ch 13 (Gollin): Doppelklange & Transformational Analysis
-part: 3
+category: analysis
+pdf_page: null
+chapter_number: null
+unit: null
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+chapter: "Tonnetz from Acoustic to Metaphorical"
+authors: "Gollin"
 ---
 
 # Tonnetz (Tone Network)

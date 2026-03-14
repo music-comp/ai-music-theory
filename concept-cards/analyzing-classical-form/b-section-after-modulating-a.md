@@ -1,19 +1,12 @@
 ---
-title: "B Section After Modulating A Section"
-card_type: concept
-concept_type: analytical-method
+concept: "B Section After Modulating A Section"
 chapter_number: 18
 pdf_page: 643
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - contrasting-middle
-  - b-section
-  - minuet-form
-  - development
-related_cards:
-  - minuet-contrasting-middle
-  - minuet-exposition-a-section
-  - standing-on-dominant
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Context

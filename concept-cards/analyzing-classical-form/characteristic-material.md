@@ -1,19 +1,12 @@
 ---
-title: "Characteristic vs. Conventional Material"
-card_type: concept
-concept_type: analytical-concept
-chapter_number: Glossary
+concept: "Characteristic vs. Conventional Material"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - characteristic-material
-  - conventional-material
-  - melody
-  - style
-related_cards:
-  - basic-idea
-  - liquidation
-  - alberti-bass
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definitions

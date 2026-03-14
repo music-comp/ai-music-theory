@@ -1,11 +1,12 @@
 ---
-title: Beginning with Standing on the Dominant
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Beginning with Standing on the Dominant
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 415
-tags: [subordinate-theme, standing-on-dominant, transition, boundary]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Beginning with Standing on the Dominant

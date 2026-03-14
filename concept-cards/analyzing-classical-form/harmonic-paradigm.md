@@ -1,6 +1,6 @@
 ---
 concept: Harmonic Paradigm
-category: analytical-concept
+category: analysis
 source: "Analyzing Classical Form: An Approach for the Classroom"
 chapter: "A Review of Harmony"
 chapter_number: 1

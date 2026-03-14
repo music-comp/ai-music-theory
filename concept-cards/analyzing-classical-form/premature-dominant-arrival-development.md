@@ -1,18 +1,12 @@
 ---
-title: Premature Dominant Arrival in Development
-category: Sonata Form
-tags:
-  - development
-  - dominant-arrival
-  - harmonic-goal
-  - core
-related:
-  - core-concluding-function
-  - standing-on-dominant-development
-  - dominant-arrival
+concept: Premature Dominant Arrival in Development
+category: form
 pdf_page: 453
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Premature Dominant Arrival in Development

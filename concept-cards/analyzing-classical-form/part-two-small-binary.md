@@ -1,17 +1,12 @@
 ---
-title: Part 2 - Small Binary
-category: Formal Units
-tags:
-  - part-two
-  - small-binary
-  - contrasting-middle
-  - continuation
-related_concepts:
-  - small-binary
-  - part-one-small-binary
-  - contrasting-middle
-  - new-consequent
+concept: Part 2 - Small Binary
+category: form
 pdf_page: 261
+chapter_number: 8
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Binary"
 ---
 
 # Part 2 - Small Binary

@@ -1,19 +1,12 @@
 ---
-title: "Rondo vs. Sonata: Historical Origins"
-card_type: concept
-concept_type: historical
+concept: "Rondo vs. Sonata: Historical Origins"
 chapter_number: 19
 pdf_page: 667
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - rondo
-  - sonata
-  - baroque
-  - historical-background
-related_cards:
-  - rondo-forms-overview
-  - sonata-form
-  - binary-form
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Different Origins

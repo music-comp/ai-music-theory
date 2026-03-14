@@ -1,17 +1,12 @@
 ---
-title: Dominant Prolongation vs. Tonic Prolongation
-category: Harmonic Concepts
-tags:
-  - dominant-prolongation
-  - tonic-prolongation
-  - harmonic-analysis
-  - alternating-harmonies
-related_concepts:
-  - tonic-prolongation
-  - dominant-prolongation
-  - standing-on-the-dominant
-  - contrasting-middle
+concept: Dominant Prolongation vs. Tonic Prolongation
+category: theory
 pdf_page: 244
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Dominant Prolongation vs. Tonic Prolongation

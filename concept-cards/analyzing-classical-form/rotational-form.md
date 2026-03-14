@@ -1,17 +1,12 @@
 ---
-title: Rotational Form
-category: Sonata Form
-tags:
-  - development
-  - formal-organization
-  - haydn
-  - hepokoski-darcy
-related:
-  - development-melodic-motivic-material
-  - development-composer-differences
+concept: Rotational Form
+category: form
 pdf_page: 450
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Rotational Form

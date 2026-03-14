@@ -1,19 +1,12 @@
 ---
-title: "Drum Bass"
-card_type: concept
-concept_type: texture
-chapter_number: Glossary
+concept: "Drum Bass"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - drum-bass
-  - accompaniment
-  - repeated-chords
-  - conventional-material
-related_cards:
-  - alberti-bass
-  - murky-bass
-  - conventional-material
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

@@ -1,17 +1,12 @@
 ---
-title: Postcadential Standing on the Dominant
-category: Formal Functions
-tags:
-  - standing-on-dominant
-  - postcadential
-  - half-cadence
-  - recapitulation-preparation
-related_concepts:
-  - standing-on-the-dominant
-  - half-cadence
-  - contrasting-middle
-  - textural-dissolution
+concept: Postcadential Standing on the Dominant
+category: form
 pdf_page: 235
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Postcadential Standing on the Dominant

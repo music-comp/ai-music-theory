@@ -1,19 +1,12 @@
 ---
-title: "Concerto Transition Principles"
-card_type: concept
-concept_type: analytical-method
+concept: "Concerto Transition Principles"
 chapter_number: 20
 pdf_page: 708
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - transition
-  - concerto-form
-  - solo-exposition
-  - material-distribution
-related_cards:
-  - solo-exposition
-  - opening-ritornello
-  - alternative-main-theme
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Two Guiding Principles

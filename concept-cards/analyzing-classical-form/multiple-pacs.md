@@ -1,11 +1,12 @@
 ---
-title: Multiple PACs in Subordinate-Theme Group
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Multiple PACs in Subordinate-Theme Group
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 409
-tags: [subordinate-theme, pac, multiple-cadences, syntactical]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Multiple PACs in Subordinate-Theme Group

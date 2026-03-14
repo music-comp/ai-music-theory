@@ -1,6 +1,6 @@
 ---
 concept: Four-Plus-Third Chord
-category: chord-construction
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Compound and Mirror Harmony"
 chapter_number: 8

@@ -1,17 +1,12 @@
 ---
-title: Statement-Response Repetition
-category: Compositional Techniques
-tags:
-  - repetition
-  - presentation-phrase
-  - tonic-version
-  - dominant-version
-related_concepts:
-  - basic-idea
-  - exact-repetition
-  - sequential-repetition
-  - presentation-phrase
+concept: Statement-Response Repetition
+category: technique
 pdf_page: 64
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Statement-Response Repetition

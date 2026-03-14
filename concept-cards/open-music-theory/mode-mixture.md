@@ -1,9 +1,12 @@
 ---
 concept: Mode Mixture
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Chromatic Harmony: Mode Mixture and Borrowed Chords"
-part: 4
+pdf_page: null
+chapter_number: 4
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Mode Mixture

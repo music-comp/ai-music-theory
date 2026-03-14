@@ -1,9 +1,12 @@
 ---
 concept: Blues Scale
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Blues Melodies and the Blues Scale"
-part: 6
+pdf_page: null
+chapter_number: 6
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Blues Scale

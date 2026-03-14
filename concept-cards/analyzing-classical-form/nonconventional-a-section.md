@@ -1,17 +1,12 @@
 ---
-title: Nonconventional A Section
-category: Formal Units
-tags:
-  - nonconventional
-  - A-section
-  - exposition
-  - small-ternary
-related_concepts:
-  - exposition-small-ternary
-  - sentence
-  - period
-  - hybrid-themes
+concept: Nonconventional A Section
+category: form
 pdf_page: 228
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Nonconventional A Section

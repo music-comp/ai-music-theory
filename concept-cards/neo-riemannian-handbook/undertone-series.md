@@ -1,10 +1,12 @@
 ---
 concept: Undertone Series / Dual Series
-category: acoustics/theory
+category: theory
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "The Problem of Harmonic Dualism"
-part: 2
 authors: "Ian Bent (translator), Hugo Riemann (original)"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Undertone Series / Dual Series

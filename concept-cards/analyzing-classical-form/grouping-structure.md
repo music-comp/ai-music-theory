@@ -1,17 +1,12 @@
 ---
-title: Grouping Structure
-category: Theoretical Concepts
-tags:
-  - grouping-structure
-  - phrase-structure
-  - formal-hierarchy
-  - unit-size
-related_concepts:
-  - fragmentation
-  - symmetry
-  - phrase
-  - formal-function
+concept: Grouping Structure
+category: theory
 pdf_page: 70
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Grouping Structure

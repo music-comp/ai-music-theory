@@ -1,20 +1,12 @@
 ---
-title: "Coda in Rondo Forms"
-card_type: concept
-concept_type: compositional-device
+concept: "Coda in Rondo Forms"
 chapter_number: 19
 pdf_page: 682
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - coda
-  - rondo
-  - sonata-rondo
-  - final-refrain
-related_cards:
-  - five-part-rondo
-  - sonata-rondo
-  - coda
-  - refrain
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Coda in Five-Part Rondo

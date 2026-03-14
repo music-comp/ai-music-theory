@@ -1,16 +1,12 @@
 ---
-title: Small Ternary Structure Overview
-category: Analytical Methods
-tags:
-  - small-ternary
-  - structural-overview
-  - ABA-form
-related_concepts:
-  - small-ternary
-  - exposition-small-ternary
-  - contrasting-middle
-  - recapitulation-small-ternary
+concept: Small Ternary Structure Overview
+category: analysis
 pdf_page: 217
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Small Ternary Structure Overview

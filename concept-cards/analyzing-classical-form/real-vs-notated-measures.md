@@ -1,16 +1,12 @@
 ---
-title: Real vs. Notated Measures
-category: Analytical Methods
-tags:
-  - hypermeter
-  - notation
-  - tempo
-  - compound-meter
-related_concepts:
-  - sentence
-  - period
-  - compound-themes
+concept: Real vs. Notated Measures
+category: analysis
 pdf_page: 85
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Real vs. Notated Measures

@@ -1,11 +1,12 @@
 ---
-title: Obscured Boundary Between Transition and Subordinate Theme
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Obscured Boundary Between Transition and Subordinate Theme
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 422
-tags: [transition, subordinate-theme, boundary, ambiguity]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Obscured Boundary Between Transition and Subordinate Theme

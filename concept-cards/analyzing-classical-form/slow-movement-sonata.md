@@ -1,20 +1,12 @@
 ---
-title: "Slow-Movement Sonata Form"
-card_type: concept
-concept_type: form
+concept: "Slow-Movement Sonata Form"
 chapter_number: 17
 pdf_page: 612
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - slow-movement
-  - sonata-form
-  - formal-compression
-  - transition-subordinate-fusion
-related_cards:
-  - sonata-form
-  - transition
-  - subordinate-theme
-  - form-functional-fusion
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

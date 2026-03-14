@@ -1,11 +1,12 @@
 ---
-title: Elision in Subordinate-Theme Group
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Elision in Subordinate-Theme Group
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 404
-tags: [subordinate-theme, elision, boundary-process, pac]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Elision in Subordinate-Theme Group

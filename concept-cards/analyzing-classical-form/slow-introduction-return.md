@@ -1,18 +1,12 @@
 ---
-title: Slow Introduction Material Returns
-category: Sonata Form
-tags:
-  - slow-introduction
-  - coda
-  - thematic-return
-  - cyclical-form
-related:
-  - slow-introduction-section
-  - coda-section
-  - compensatory-functions-coda
+concept: Slow Introduction Material Returns
+category: form
 pdf_page: 577
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Slow Introduction Material Returns

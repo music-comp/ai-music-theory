@@ -1,17 +1,12 @@
 ---
-title: Ornamental Changes in Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - ornamentation
-  - variation
-  - expression
-related:
-  - analyzing-recapitulation
-  - structural-changes-recapitulation
+concept: Ornamental Changes in Recapitulation
+category: form
 pdf_page: 498
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Ornamental Changes in Recapitulation

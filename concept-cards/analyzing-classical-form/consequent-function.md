@@ -1,17 +1,12 @@
 ---
-title: Consequent Function
-category: Formal Functions
-tags:
-  - consequent
-  - formal-function
-  - concluding-function
-  - period
-related_concepts:
-  - consequent-phrase
-  - period
-  - antecedent-function
-  - cadential-function
+concept: Consequent Function
+category: form
 pdf_page: 97
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Consequent Function

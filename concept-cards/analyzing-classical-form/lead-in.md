@@ -1,17 +1,12 @@
 ---
-title: Lead-in
-category: Compositional Techniques
-tags:
-  - lead-in
-  - boundary-process
-  - phrase-connection
-  - rhythmic-continuity
-related_concepts:
-  - elision
-  - antecedent-phrase
-  - consequent-phrase
-  - period
+concept: Lead-in
+category: technique
 pdf_page: 108
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Lead-in

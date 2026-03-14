@@ -4,7 +4,9 @@ category: theory
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 31: Introduction to Jazz Theory"
 unit: 11
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 31
 ---
 
 # Quick Definition

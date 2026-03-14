@@ -6,6 +6,7 @@ chapter: "Timbre and Periodic Functions"
 chapter_number: 10
 pdf_page: 118
 authors: "David Wright"
+unit: null
 ---
 
 # Quick Definition

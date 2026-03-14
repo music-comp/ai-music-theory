@@ -1,20 +1,12 @@
 ---
-title: "Subordinate-Key Ritornello"
-card_type: concept
-concept_type: formal-unit
+concept: "Subordinate-Key Ritornello"
 chapter_number: 20
 pdf_page: 698
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - subordinate-key-ritornello
-  - concerto-form
-  - closing-section
-  - orchestral
-related_cards:
-  - concerto-form
-  - solo-exposition
-  - closing-ritornello
-  - ritornello
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

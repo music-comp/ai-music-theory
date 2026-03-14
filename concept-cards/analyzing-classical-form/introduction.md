@@ -1,15 +1,12 @@
 ---
-title: Introduction (Thematic)
-category: Formal Functions
-tags:
-  - introduction
-  - framing-function
-  - before-the-beginning
-related_concepts:
-  - framing-functions
-  - closing-section
-  - theme
+concept: Introduction (Thematic)
+category: form
 pdf_page: 167
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Introduction (Thematic)

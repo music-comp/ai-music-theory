@@ -1,11 +1,12 @@
 ---
-title: False Closing Section in Subordinate Theme
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: False Closing Section in Subordinate Theme
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 411
-tags: [subordinate-theme, false-closing-section, codetta, presentation]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## False Closing Section in Subordinate Theme

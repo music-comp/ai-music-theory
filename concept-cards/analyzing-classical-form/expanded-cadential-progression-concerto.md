@@ -1,19 +1,12 @@
 ---
-title: "Expanded Cadential Progressions in Concerto"
-card_type: concept
-concept_type: stylistic
+concept: "Expanded Cadential Progressions in Concerto"
 chapter_number: 20
 pdf_page: 710
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - expanded-cadential-progression
-  - concerto-form
-  - virtuosity
-  - cadential-trill
-related_cards:
-  - bravura-theme
-  - solo-exposition
-  - subordinate-theme
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Hallmark of Concerto Style

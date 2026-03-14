@@ -1,17 +1,12 @@
 ---
-title: Analyzing Fragmentation
-category: Analytical Methods
-tags:
-  - fragmentation
-  - analysis
-  - grouping-structure
-  - continuation
-related_concepts:
-  - fragmentation
-  - continuation-phrase
-  - compound-presentation
-  - model-sequence-technique
+concept: Analyzing Fragmentation
+category: analysis
 pdf_page: 201
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Analyzing Fragmentation

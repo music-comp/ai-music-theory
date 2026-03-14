@@ -1,17 +1,12 @@
 ---
-title: Sentential Antecedent (Mini-Sentence)
-category: Formal Units
-tags:
-  - sentential-antecedent
-  - mini-sentence
-  - period
-  - presentation-function
-related_concepts:
-  - antecedent-phrase
-  - sentence
-  - period
-  - small-presentation
+concept: Sentential Antecedent (Mini-Sentence)
+category: form
 pdf_page: 110
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Sentential Antecedent (Mini-Sentence)

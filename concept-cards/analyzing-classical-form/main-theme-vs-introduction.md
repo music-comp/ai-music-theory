@@ -1,11 +1,12 @@
 ---
-title: Main Theme vs. Introduction
-chapter: 10
-section: "Exposition (I): Main Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Main Theme vs. Introduction
+chapter: "Exposition I: Main Theme"
+source: "Analyzing Classical Form"
 pdf_page: 323
-tags: [main-theme, introduction, formal-function, ambiguity]
+chapter_number: 10
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Main Theme vs. Introduction

@@ -1,9 +1,12 @@
 ---
 concept: "Diatonic Modes (20th Century)"
-category: collections
+category: theory
 source: Open Music Theory
 chapter: "Diatonic Modes"
-part: 8
+pdf_page: null
+chapter_number: 8
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Diatonic Modes (20th Century)

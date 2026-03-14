@@ -1,16 +1,12 @@
 ---
-title: Suffix
-category: Formal Functions
-tags:
-  - suffix
-  - framing-function
-  - postcadential
-  - closing
-related_concepts:
-  - codetta
-  - closing-section
-  - framing-functions
+concept: Suffix
+category: form
 pdf_page: 171
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Suffix

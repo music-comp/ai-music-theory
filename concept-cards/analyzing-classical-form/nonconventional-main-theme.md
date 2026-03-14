@@ -1,11 +1,12 @@
 ---
-title: Nonconventional Main Theme Types
-chapter: 10
-section: "Exposition (I): Main Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Nonconventional Main Theme Types
+chapter: "Exposition I: Main Theme"
+source: "Analyzing Classical Form"
 pdf_page: 310
-tags: [main-theme, nonconventional, formal-organization, theme-types]
+chapter_number: 10
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Nonconventional Main Theme Types

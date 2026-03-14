@@ -1,17 +1,12 @@
 ---
-title: Compound Themes
-category: Theme Types
-tags:
-  - compound-theme
-  - sixteen-measure
-  - compound-period
-  - compound-sentence
-related_concepts:
-  - compound-period
-  - compound-sentence
-  - simple-themes
-  - compound-antecedent
+concept: Compound Themes
+category: form
 pdf_page: 188
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Compound Themes

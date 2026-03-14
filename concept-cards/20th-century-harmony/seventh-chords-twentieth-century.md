@@ -1,6 +1,6 @@
 ---
 concept: Seventh Chords in Twentieth-Century Harmony
-category: chord-construction
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Chords by Thirds"
 chapter_number: 3

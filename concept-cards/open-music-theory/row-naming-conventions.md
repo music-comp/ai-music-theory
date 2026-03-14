@@ -3,7 +3,10 @@ concept: Row Naming Conventions
 category: theory
 source: Open Music Theory
 chapter: "Naming Conventions for Rows"
-part: 9
+pdf_page: null
+chapter_number: 9
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Row Naming Conventions

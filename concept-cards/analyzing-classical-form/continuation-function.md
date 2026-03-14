@@ -1,17 +1,12 @@
 ---
-title: Continuation Function
-category: Formal Functions
-tags:
-  - continuation
-  - formal-function
-  - medial-function
-  - temporal-function
-related_concepts:
-  - continuation-phrase
-  - fragmentation
-  - harmonic-acceleration
-  - presentation-function
+concept: Continuation Function
+category: form
 pdf_page: 69
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Continuation Function

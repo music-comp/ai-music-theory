@@ -6,6 +6,7 @@ chapter: "Chromatic Scales"
 chapter_number: 6
 pdf_page: 74
 authors: "David Wright"
+unit: null
 ---
 
 # Quick Definition

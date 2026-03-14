@@ -1,17 +1,12 @@
 ---
-title: Phrase Extension
-category: Compositional Techniques
-tags:
-  - extension
-  - phrase-deviation
-  - postcadential
-  - additional-material
-related_concepts:
-  - phrase-deviations
-  - phrase-compression
-  - internal-expansion
-  - continuation-phrase
+concept: Phrase Extension
+category: technique
 pdf_page: 144
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Phrase Extension

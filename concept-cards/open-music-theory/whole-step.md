@@ -1,9 +1,12 @@
 ---
 concept: Whole Step
-category: fundamentals
+category: theory
 source: Open Music Theory
 chapter: "Half Steps, Whole Steps, and Accidentals"
-part: 1
+pdf_page: null
+chapter_number: 1
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Whole Step

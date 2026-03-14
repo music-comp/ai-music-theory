@@ -1,11 +1,12 @@
 ---
-title: Loosely Organized Main Theme
-chapter: 10
-section: "Exposition (I): Main Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Loosely Organized Main Theme
+chapter: "Exposition I: Main Theme"
+source: "Analyzing Classical Form"
 pdf_page: 318
-tags: [main-theme, loose-organization, subordinate-theme-like, nonconventional]
+chapter_number: 10
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Loosely Organized Main Theme

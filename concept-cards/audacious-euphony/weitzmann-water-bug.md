@@ -1,6 +1,6 @@
 ---
 concept: Weitzmann Water Bug
-category: spatial-model
+category: analysis
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Weitzmann Regions"
 chapter_number: 4

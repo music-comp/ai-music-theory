@@ -1,18 +1,12 @@
 ---
-title: Pseudo-core
-category: Sonata Form
-tags:
-  - development
-  - core-substitute
-  - formal-organization
-  - haydn
-related:
-  - core
-  - development-without-core
-  - sturm-und-drang
+concept: Pseudo-core
+category: form
 pdf_page: 473
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Pseudo-core

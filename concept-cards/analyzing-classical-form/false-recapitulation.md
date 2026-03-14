@@ -1,18 +1,12 @@
 ---
-title: False Recapitulation
-category: Sonata Form
-tags:
-  - development
-  - recapitulation
-  - formal-deception
-  - retransition
-related:
-  - retransition
-  - recapitulation
-  - main-theme
+concept: False Recapitulation
+category: form
 pdf_page: 471
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # False Recapitulation

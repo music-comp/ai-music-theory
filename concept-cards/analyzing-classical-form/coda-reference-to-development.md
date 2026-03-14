@@ -1,18 +1,12 @@
 ---
-title: Reference to Development Section in Coda
-category: Sonata Form
-tags:
-  - coda
-  - development
-  - compensatory-function
-  - thematic-reference
-related:
-  - compensatory-functions-coda
-  - development-section
-  - terminal-development
+concept: Reference to Development Section in Coda
+category: form
 pdf_page: 562
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Reference to Development Section in Coda

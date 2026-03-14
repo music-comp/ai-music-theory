@@ -1,10 +1,12 @@
 ---
 concept: "Verwandtschaftsgrad (Degree of Relatedness)"
-tier: 3
-category: distance-metrics
-sources:
-  - Ch 9 (Gollin): Tonnetz from Acoustic to Metaphorical
-part: 3
+category: theory
+pdf_page: null
+chapter_number: null
+unit: null
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+chapter: "Tonnetz from Acoustic to Metaphorical"
+authors: "Gollin"
 ---
 
 # Verwandtschaftsgrad (Degree of Relatedness)

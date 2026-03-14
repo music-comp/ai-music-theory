@@ -1,9 +1,12 @@
 ---
 concept: Enharmonic Modulation
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Modulation Techniques"
-part: 4
+pdf_page: null
+chapter_number: 4
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Enharmonic Modulation

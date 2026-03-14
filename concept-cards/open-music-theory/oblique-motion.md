@@ -1,9 +1,12 @@
 ---
 concept: Oblique Motion
-category: voice-leading
+category: theory
 source: Open Music Theory
 chapter: "Introduction to Species Counterpoint"
-part: 2
+pdf_page: null
+chapter_number: 2
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Oblique Motion

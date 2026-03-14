@@ -1,18 +1,12 @@
 ---
-title: Compensatory Functions of Coda
-category: Sonata Form
-tags:
-  - coda
-  - compensatory-function
-  - formal-completion
-  - compositional-logic
-related:
-  - coda-section
-  - coda-theme
-  - recapitulation-section
+concept: Compensatory Functions of Coda
+category: form
 pdf_page: 560
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Compensatory Functions of Coda

@@ -1,11 +1,12 @@
 ---
-title: Large-Scale Tonal Structure in Sonata Form
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Large-Scale Tonal Structure in Sonata Form
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 285
-tags: [sonata-form, tonal-structure, key-relationships, harmonic-structure]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Large-Scale Tonal Structure in Sonata Form

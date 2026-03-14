@@ -1,17 +1,12 @@
 ---
-title: Compound Basic Idea + Consequent (Hybrid Type 4)
-category: Theme Types
-tags:
-  - hybrid
-  - compound-basic-idea
-  - consequent
-  - theme-type
-related_concepts:
-  - hybrid-themes
-  - compound-basic-idea
-  - consequent-phrase
-  - period
+concept: Compound Basic Idea + Consequent (Hybrid Type 4)
+category: form
 pdf_page: 124
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Compound Basic Idea + Consequent (Hybrid Type 4)

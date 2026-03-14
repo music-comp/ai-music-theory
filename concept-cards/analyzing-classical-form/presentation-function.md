@@ -1,17 +1,12 @@
 ---
-title: Presentation Function
-category: Formal Functions
-tags:
-  - presentation
-  - formal-function
-  - initiating-function
-  - temporal-function
-related_concepts:
-  - presentation-phrase
-  - basic-idea
-  - sentence
-  - tonic-prolongation
+concept: Presentation Function
+category: form
 pdf_page: 68
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Presentation Function

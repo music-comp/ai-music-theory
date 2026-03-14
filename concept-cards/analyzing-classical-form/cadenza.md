@@ -1,19 +1,12 @@
 ---
-title: "Cadenza"
-card_type: concept
-concept_type: compositional-device
+concept: "Cadenza"
 chapter_number: 20
 pdf_page: 700
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - cadenza
-  - concerto-form
-  - improvisation
-  - virtuosity
-related_cards:
-  - closing-ritornello
-  - concerto-form
-  - cadential-six-four
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

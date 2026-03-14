@@ -1,11 +1,12 @@
 ---
-title: Eight-Measure Nonconventional Themes
-chapter: 10
-section: "Exposition (I): Main Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Eight-Measure Nonconventional Themes
+chapter: "Exposition I: Main Theme"
+source: "Analyzing Classical Form"
 pdf_page: 311
-tags: [main-theme, nonconventional, eight-measures, asymmetrical]
+chapter_number: 10
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Eight-Measure Nonconventional Themes

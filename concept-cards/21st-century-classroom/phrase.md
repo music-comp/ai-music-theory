@@ -4,7 +4,9 @@ category: form
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 11: Melodic Analysis"
 unit: 2
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 11
 ---
 
 # Quick Definition

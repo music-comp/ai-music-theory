@@ -1,18 +1,12 @@
 ---
-title: Tonal Adjustment
-category: Sonata Form
-tags:
-  - recapitulation
-  - transition
-  - modulation
-  - harmonic-organization
-related:
-  - recapitulation-transition
-  - flat-side-regions
-  - subdominant-region
+concept: Tonal Adjustment
+category: form
 pdf_page: 500
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Tonal Adjustment

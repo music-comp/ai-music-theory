@@ -1,18 +1,12 @@
 ---
-title: Erwin Ratz and the Core Concept
-category: Theoretical Background
-tags:
-  - core
-  - erwin-ratz
-  - theoretical-history
-  - terminology
-related:
-  - core
-  - pre-core-core-technique
-  - development-section
+concept: Erwin Ratz and the Core Concept
+category: theory
 pdf_page: 451
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Erwin Ratz and the Core Concept

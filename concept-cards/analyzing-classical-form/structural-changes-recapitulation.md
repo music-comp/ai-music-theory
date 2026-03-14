@@ -1,17 +1,12 @@
 ---
-title: Structural Changes in Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - structural-changes
-  - formal-modification
-related:
-  - recapitulation-section
-  - analyzing-recapitulation
-  - ornamental-changes
+concept: Structural Changes in Recapitulation
+category: form
 pdf_page: 499
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Structural Changes in Recapitulation

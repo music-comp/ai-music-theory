@@ -1,20 +1,12 @@
 ---
-title: "Alternative Main Theme"
-card_type: concept
-concept_type: compositional-device
+concept: "Alternative Main Theme"
 chapter_number: 20
 pdf_page: 707
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - alternative-main-theme
-  - concerto-form
-  - solo-exposition
-  - idiomatic-writing
-related_cards:
-  - solo-exposition
-  - concerto-form
-  - opening-ritornello
-  - solo-recapitulation
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

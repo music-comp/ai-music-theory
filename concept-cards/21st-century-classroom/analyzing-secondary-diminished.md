@@ -4,7 +4,9 @@ category: analysis
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 18: Secondary Diminished Chords"
 unit: 4
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 18
 ---
 
 # Quick Definition

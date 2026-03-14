@@ -1,19 +1,12 @@
 ---
-title: "Coda in Minuet Form"
-card_type: concept
-concept_type: compositional-device
+concept: "Coda in Minuet Form"
 chapter_number: 18
 pdf_page: 649
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - coda
-  - minuet-form
-  - closing-section
-  - recapitulation
-related_cards:
-  - minuet-recapitulation
-  - coda
-  - minuet-trio-form
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Two Types of Coda

@@ -1,16 +1,12 @@
 ---
-title: Formal Analysis Workflow
-category: Analytical Methods
-tags:
-  - analysis
-  - workflow
-  - methodology
-  - formal-analysis
-related_concepts:
-  - analytical-complexity
-  - theme-types
-  - formal-function
+concept: Formal Analysis Workflow
+category: analysis
 pdf_page: 55
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Formal Analysis Workflow

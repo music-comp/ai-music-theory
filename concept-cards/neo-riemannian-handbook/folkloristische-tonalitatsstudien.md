@@ -1,10 +1,12 @@
 ---
 concept: "Folkloristische Tonalitätsstudien (Folk Music Studies)"
-category: history
+category: theory
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Folkloristische Tonalitätsstudien (Ch. 4)"
-part: 1
 authors: "Matthew Gelbart, Alexander Rehding"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Folkloristische Tonalitätsstudien (Folk Music Studies)

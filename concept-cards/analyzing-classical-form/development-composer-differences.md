@@ -1,19 +1,12 @@
 ---
-title: Development Section Composer Differences
-category: Sonata Form
-tags:
-  - development
-  - haydn
-  - mozart
-  - beethoven
-  - compositional-style
-related:
-  - core
-  - pre-core
-  - development-without-core
+concept: Development Section Composer Differences
+category: form
 pdf_page: 480
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Development Section Composer Differences

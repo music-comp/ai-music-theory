@@ -1,18 +1,12 @@
 ---
-title: Introduction Ending Not on Dominant
-category: Sonata Form
-tags:
-  - slow-introduction
-  - harmonic-goal
-  - pre-dominant
-  - unusual-endings
-related:
-  - slow-introduction-tonal-organization
-  - pre-dominant-function
-  - subdominant
+concept: Introduction Ending Not on Dominant
+category: form
 pdf_page: 581
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Introduction Ending Not on Dominant

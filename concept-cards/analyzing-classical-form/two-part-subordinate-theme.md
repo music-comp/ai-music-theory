@@ -1,11 +1,12 @@
 ---
-title: Two-Part Subordinate Theme
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Two-Part Subordinate Theme
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 402
-tags: [subordinate-theme, two-part, internal-hc, presentation]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Two-Part Subordinate Theme

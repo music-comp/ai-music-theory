@@ -1,17 +1,12 @@
 ---
-title: Motive
-category: Formal Units
-tags:
-  - motive
-  - melodic-unit
-  - basic-idea
-  - development
-related_concepts:
-  - basic-idea
-  - fragmentation
-  - liquidation
-  - motivic-development
+concept: Motive
+category: form
 pdf_page: 60
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Motive

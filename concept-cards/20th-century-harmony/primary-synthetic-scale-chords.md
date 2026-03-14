@@ -1,6 +1,6 @@
 ---
 concept: Primary Synthetic Scale Chords
-category: chord-construction
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Scale Materials"
 chapter_number: 2

@@ -1,11 +1,12 @@
 ---
-title: Elision Between Main Theme and Transition
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Elision Between Main Theme and Transition
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 338
-tags: [elision, boundary-process, main-theme, transition]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Elision Between Main Theme and Transition

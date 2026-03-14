@@ -3,8 +3,10 @@ concept: "Tonvorstellung (Tone Imagination/Representation)"
 category: theory
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "The Nature of Harmony (Ch. 2), Tonal Function (Ch. 3)"
-part: 1
 authors: "Benjamin Steege, Brian Hyer"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Tonvorstellung (Tone Imagination/Representation)

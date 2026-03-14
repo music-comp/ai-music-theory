@@ -1,17 +1,12 @@
 ---
-title: Compound Period
-category: Theme Types
-tags:
-  - compound-period
-  - sixteen-measure
-  - compound-antecedent
-  - compound-consequent
-related_concepts:
-  - compound-themes
-  - compound-antecedent
-  - compound-consequent
-  - period
+concept: Compound Period
+category: form
 pdf_page: 188
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Compound Period

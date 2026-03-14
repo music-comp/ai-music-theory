@@ -1,9 +1,12 @@
 ---
 concept: Chord Symbols
-category: fundamentals
+category: theory
 source: Open Music Theory
 chapter: "Triads"
-part: 1
+pdf_page: null
+chapter_number: 1
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Chord Symbols

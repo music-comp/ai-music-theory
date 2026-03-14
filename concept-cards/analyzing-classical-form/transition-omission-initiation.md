@@ -1,11 +1,12 @@
 ---
-title: Transition Omission of Initiating Function
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Transition Omission of Initiating Function
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 347
-tags: [transition, initiation, continuation, model-sequence]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Transition Omission of Initiating Function

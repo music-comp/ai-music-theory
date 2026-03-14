@@ -1,17 +1,12 @@
 ---
-title: Part 1 - Small Binary
-category: Formal Units
-tags:
-  - part-one
-  - small-binary
-  - A-section-analog
-  - cadential-options
-related_concepts:
-  - small-binary
-  - part-two-small-binary
-  - exposition-small-ternary
-  - failed-consequent
+concept: Part 1 - Small Binary
+category: form
 pdf_page: 261
+chapter_number: 8
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Binary"
 ---
 
 # Part 1 - Small Binary

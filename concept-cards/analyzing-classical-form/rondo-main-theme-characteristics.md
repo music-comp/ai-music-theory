@@ -1,20 +1,12 @@
 ---
-title: "Rondo Main Theme Characteristics"
-card_type: concept
-concept_type: analytical-method
+concept: "Rondo Main Theme Characteristics"
 chapter_number: 19
 pdf_page: 672
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - main-theme
-  - rondo
-  - refrain
-  - tight-knit
-related_cards:
-  - refrain
-  - main-theme
-  - sentence
-  - period
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## General Principle

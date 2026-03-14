@@ -1,19 +1,12 @@
 ---
-title: "Binary Minuet Form"
-card_type: concept
-concept_type: form
+concept: "Binary Minuet Form"
 chapter_number: 18
 pdf_page: 653
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - binary-minuet
-  - small-binary
-  - no-recapitulation
-  - compensatory-function
-related_cards:
-  - minuet-form
-  - small-binary
-  - minuet-trio-form
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

@@ -1,9 +1,12 @@
 ---
 concept: Harmonic Function
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Harmonic Function"
-part: 4
+pdf_page: null
+chapter_number: 4
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Harmonic Function

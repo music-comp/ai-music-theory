@@ -1,9 +1,12 @@
 ---
 concept: Articulation
-category: fundamentals
+category: theory
 source: Open Music Theory
 chapter: "Other Aspects of Notation"
-part: 1
+pdf_page: null
+chapter_number: 1
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Articulation

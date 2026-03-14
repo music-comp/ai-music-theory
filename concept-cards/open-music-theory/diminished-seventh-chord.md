@@ -1,9 +1,12 @@
 ---
 concept: Diminished Seventh Chord
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Seventh Chords and Dominant Function"
-part: 4
+pdf_page: null
+chapter_number: 4
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Diminished Seventh Chord

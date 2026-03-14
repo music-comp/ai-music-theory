@@ -6,6 +6,7 @@ chapter: "The Rational Numbers As Musical Intervals"
 chapter_number: 11
 pdf_page: 138
 authors: "David Wright"
+unit: null
 ---
 
 # Quick Definition

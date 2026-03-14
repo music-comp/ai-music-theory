@@ -6,6 +6,7 @@ chapter: "Functional Progressions"
 chapter_number: 7
 pdf_page: 311
 authors: "Dmitri Tymoczko"
+unit: null
 ---
 
 # Quick Definition

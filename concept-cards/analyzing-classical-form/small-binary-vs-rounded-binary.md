@@ -1,17 +1,12 @@
 ---
-title: Small Binary vs. Rounded Binary Comparison
-category: Analytical Methods
-tags:
-  - small-binary
-  - rounded-binary
-  - comparison
-  - distinction
-related_concepts:
-  - small-binary
-  - rounded-binary
-  - small-ternary
-  - recapitulation
+concept: Small Binary vs. Rounded Binary Comparison
+category: analysis
 pdf_page: 262
+chapter_number: 8
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Binary"
 ---
 
 # Small Binary vs. Rounded Binary Comparison

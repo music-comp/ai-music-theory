@@ -1,11 +1,12 @@
 ---
-title: Medial Caesura
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Medial Caesura
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 332
-tags: [transition, medial-caesura, gap, subordinate-theme, hepokoski-darcy]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Medial Caesura

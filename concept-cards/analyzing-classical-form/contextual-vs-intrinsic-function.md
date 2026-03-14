@@ -1,18 +1,12 @@
 ---
-title: "Contextual vs. Intrinsic Formal Function"
-card_type: concept
-concept_type: analytical-concept
-chapter_number: Glossary
+concept: "Contextual vs. Intrinsic Formal Function"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - contextual-function
-  - intrinsic-function
-  - formal-function
-  - analysis
-related_cards:
-  - formal-function
-  - retrospective-reinterpretation
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definitions

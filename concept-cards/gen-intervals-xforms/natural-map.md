@@ -1,6 +1,6 @@
 ---
 concept: Natural Map
-category: mathematical-foundation
+category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Mathematical Preliminaries"
 chapter_number: 1

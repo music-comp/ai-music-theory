@@ -1,20 +1,12 @@
 ---
-title: "Coda in Theme and Variations"
-card_type: concept
-concept_type: compositional-device
+concept: "Coda in Theme and Variations"
 chapter_number: 17
 pdf_page: 611
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - coda
-  - theme-and-variations
-  - formal-symmetry
-  - cadential-expansion
-related_cards:
-  - theme-and-variations
-  - coda
-  - closing-section
-  - compensatory-function
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

@@ -1,6 +1,6 @@
 ---
 concept: Left vs. Right Group Operations
-category: mathematical-foundation
+category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
 chapter_number: 4

@@ -1,19 +1,12 @@
 ---
-title: "Trio"
-card_type: concept
-concept_type: formal-unit
+concept: "Trio"
 chapter_number: 18
 pdf_page: 650
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - trio
-  - minuet-trio
-  - contrast
-  - simplification
-related_cards:
-  - minuet-trio-form
-  - minuet-form
-  - da-capo
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

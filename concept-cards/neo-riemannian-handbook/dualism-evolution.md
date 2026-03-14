@@ -1,10 +1,12 @@
 ---
 concept: Evolution of Harmonic Dualism
-category: history/theory
+category: theory
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapters 5-8"
-part: 2
 authors: "Ian Bent, Henry Klumpenhouwer, Alexander Rehding, Dmitri Tymoczko"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Evolution of Harmonic Dualism: Acoustic to Psychological to Mathematical

@@ -1,11 +1,12 @@
 ---
-title: Historical Background of Sonata Form Theory
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Historical Background of Sonata Form Theory
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 284
-tags: [history, sonata-form, theory, treatises]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Historical Background of Sonata Form Theory

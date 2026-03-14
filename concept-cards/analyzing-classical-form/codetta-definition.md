@@ -1,11 +1,12 @@
 ---
-title: Codetta Definition and Structure
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Codetta Definition and Structure
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 410
-tags: [codetta, closing-section, postcadential, tonic-prolongation]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Codetta Definition and Structure

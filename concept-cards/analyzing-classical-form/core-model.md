@@ -1,18 +1,12 @@
 ---
-title: Core Model
-category: Sonata Form
-tags:
-  - development
-  - model-sequence
-  - core
-  - phrase-structure
-related:
-  - core
-  - sequence-in-core
-  - fragmentation
+concept: Core Model
+category: form
 pdf_page: 452
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Core Model

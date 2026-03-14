@@ -1,18 +1,12 @@
 ---
-title: Coda Theme
-category: Sonata Form
-tags:
-  - coda
-  - thematic-unit
-  - formal-organization
-  - loosening-devices
-related:
-  - coda-section
-  - subordinate-theme
-  - coda-vs-codetta
+concept: Coda Theme
+category: form
 pdf_page: 542
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Coda Theme

@@ -1,20 +1,12 @@
 ---
-title: "Composer Differences in Rondo Forms"
-card_type: concept
-concept_type: stylistic
+concept: "Composer Differences in Rondo Forms"
 chapter_number: 19
 pdf_page: 686
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - haydn
-  - mozart
-  - beethoven
-  - rondo
-related_cards:
-  - five-part-rondo
-  - sonata-rondo
-  - interior-theme-rondo
-  - double-region-couplet
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Haydn

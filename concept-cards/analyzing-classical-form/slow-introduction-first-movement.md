@@ -1,17 +1,12 @@
 ---
-title: Slow Introduction in First Movement
-category: Sonata Form
-tags:
-  - slow-introduction
-  - first-movement
-  - symphony
-  - instrumental-cycle
-related:
-  - slow-introduction-section
-  - sonata-form
+concept: Slow Introduction in First Movement
+category: form
 pdf_page: 577
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Slow Introduction in First Movement

@@ -1,18 +1,12 @@
 ---
-title: Core Historical Evolution
-category: Sonata Form
-tags:
-  - development
-  - core
-  - historical-perspective
-  - cadential-practice
-related:
-  - core
-  - core-concluding-function
-  - development-keys
+concept: Core Historical Evolution
+category: form
 pdf_page: 453
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Core Historical Evolution

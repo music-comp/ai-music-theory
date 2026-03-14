@@ -1,17 +1,12 @@
 ---
-title: Small Binary Without Contrasting Middle
-category: Formal Units
-tags:
-  - small-binary
-  - no-B-section
-  - part-two
-  - loose-sentence
-related_concepts:
-  - small-binary
-  - part-two-small-binary
-  - contrasting-middle
-  - continuation-function
+concept: Small Binary Without Contrasting Middle
+category: form
 pdf_page: 274
+chapter_number: 8
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Binary"
 ---
 
 # Small Binary Without Contrasting Middle

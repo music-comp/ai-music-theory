@@ -1,18 +1,12 @@
 ---
-title: Final Dominant of Development
-category: Sonata Form
-tags:
-  - development
-  - dominant
-  - recapitulation
-  - harmonic-function
-related:
-  - standing-on-dominant-development
-  - recapitulation-section
-  - double-return
+concept: Final Dominant of Development
+category: form
 pdf_page: 499
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Final Dominant of Development

@@ -1,16 +1,12 @@
 ---
-title: Perfect Authentic Cadence Conditions
-category: Cadences
-tags:
-  - PAC
-  - perfect-authentic-cadence
-  - cadential-conditions
-  - soprano
-related_concepts:
-  - basic-cadence-types
-  - cadential-progression
-  - strong-cadential-closure
+concept: Perfect Authentic Cadence Conditions
+category: theory
 pdf_page: 79
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Perfect Authentic Cadence Conditions

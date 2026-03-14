@@ -1,13 +1,12 @@
 ---
 concept: PLR Transformations
-tier: 2
-category: transformational-theory
-sources:
-  - Ch 10 (Clark): Klangvertretung & Tone Representation
-  - Ch 11 (Cohn): Tonnetz as Analytical Apparatus
-  - Ch 12 (Engebretsen): Harmonieschritte & Neo-Riemannian Appropriations
-  - Ch 13 (Gollin): Doppelklänge & Transformational Analysis
-part: 3
+category: technique
+pdf_page: null
+chapter_number: null
+unit: null
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+chapter: "Klangvertretung & Tone Representation"
+authors: "Clark"
 ---
 
 # PLR Transformations

@@ -1,6 +1,6 @@
 ---
 concept: "P Transformation (Parallel)"
-category: transformation
+category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Hexatonic Cycles"
 chapter_number: 2

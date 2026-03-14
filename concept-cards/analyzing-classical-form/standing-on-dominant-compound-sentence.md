@@ -1,17 +1,12 @@
 ---
-title: Standing on the Dominant (Compound Sentence)
-category: Formal Functions
-tags:
-  - standing-on-dominant
-  - compound-sentence
-  - half-cadence
-  - dominant-prolongation
-related_concepts:
-  - standing-on-the-dominant
-  - compound-sentence
-  - half-cadence
-  - compressed-continuation
+concept: Standing on the Dominant (Compound Sentence)
+category: form
 pdf_page: 204
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Standing on the Dominant (Compound Sentence)

@@ -1,17 +1,12 @@
 ---
-title: Standing on the Dominant (Contrasting Middle)
-category: Formal Functions
-tags:
-  - standing-on-dominant
-  - contrasting-middle
-  - B-section
-  - dominant-prolongation
-related_concepts:
-  - contrasting-middle
-  - dominant-prolongation
-  - small-ternary
-  - dominant-arrival
+concept: Standing on the Dominant (Contrasting Middle)
+category: form
 pdf_page: 232
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Standing on the Dominant (Contrasting Middle)

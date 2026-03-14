@@ -1,18 +1,12 @@
 ---
-title: Fusion of Main Theme and Transition
-category: Sonata Form
-tags:
-  - recapitulation
-  - main-theme
-  - transition
-  - formal-compression
-related:
-  - structural-changes-recapitulation
-  - deletion-home-key-cadence
-  - recapitulation-transition
+concept: Fusion of Main Theme and Transition
+category: form
 pdf_page: 524
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Fusion of Main Theme and Transition

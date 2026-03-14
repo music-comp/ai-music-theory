@@ -1,11 +1,12 @@
 ---
-title: The Performer's Role in Formal Articulation
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: The Performer's Role in Formal Articulation
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 394
-tags: [performance, interpretation, cadence, ambiguity]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## The Performer's Role in Formal Articulation

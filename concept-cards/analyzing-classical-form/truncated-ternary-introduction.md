@@ -1,18 +1,12 @@
 ---
-title: Truncated Ternary in Slow Introduction
-category: Sonata Form
-tags:
-  - slow-introduction
-  - small-ternary
-  - truncation
-  - formal-organization
-related:
-  - slow-introduction-phrase-structure
-  - small-ternary
-  - standing-on-dominant
+concept: Truncated Ternary in Slow Introduction
+category: form
 pdf_page: 576
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Truncated Ternary in Slow Introduction

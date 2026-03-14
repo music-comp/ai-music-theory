@@ -1,11 +1,12 @@
 ---
-title: "One More Time" Technique
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: "One More Time" Technique
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 389
-tags: [subordinate-theme, one-more-time, evaded-cadence, cadential-extension]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## "One More Time" Technique

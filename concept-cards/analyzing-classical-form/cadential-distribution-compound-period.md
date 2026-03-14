@@ -1,16 +1,12 @@
 ---
-title: Cadential Distribution in Compound Period
-category: Analytical Methods
-tags:
-  - cadential-distribution
-  - compound-period
-  - multiple-cadences
-  - antecedent-plus-continuation
-related_concepts:
-  - compound-period
-  - compound-antecedent
-  - reinterpreted-half-cadence
+concept: Cadential Distribution in Compound Period
+category: analysis
 pdf_page: 206
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Cadential Distribution in Compound Period

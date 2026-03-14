@@ -1,17 +1,12 @@
 ---
-title: Deletion of Home-key Cadence
-category: Sonata Form
-tags:
-  - recapitulation
-  - main-theme
-  - cadence
-  - structural-changes
-related:
-  - structural-changes-recapitulation
-  - recapitulation-main-theme
+concept: Deletion of Home-key Cadence
+category: form
 pdf_page: 508
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Deletion of Home-key Cadence

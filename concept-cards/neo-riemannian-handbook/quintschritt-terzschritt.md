@@ -1,10 +1,12 @@
 ---
 concept: Quintschritt and Terzschritt
-tier: 3
-category: transformational-theory
-sources:
-  - Ch 12 (Engebretsen): Harmonieschritte & Neo-Riemannian Appropriations
-part: 3
+category: technique
+pdf_page: null
+chapter_number: null
+unit: null
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+chapter: "Harmonieschritte & Neo-Riemannian Appropriations"
+authors: "Engebretsen"
 ---
 
 # Quintschritt and Terzschritt

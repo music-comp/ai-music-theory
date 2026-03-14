@@ -1,17 +1,12 @@
 ---
-title: Sentence Structure Overview
-category: Analytical Methods
-tags:
-  - sentence
-  - structural-overview
-  - presentation
-  - continuation
-related_concepts:
-  - sentence
-  - presentation-phrase
-  - continuation-phrase
-  - formal-function
+concept: Sentence Structure Overview
+category: analysis
 pdf_page: 55
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Sentence Structure Overview

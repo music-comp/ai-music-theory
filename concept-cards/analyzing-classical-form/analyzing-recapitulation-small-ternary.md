@@ -1,17 +1,12 @@
 ---
-title: Analyzing Recapitulation (Small Ternary)
-category: Analytical Methods
-tags:
-  - recapitulation
-  - analysis
-  - comparison
-  - small-ternary
-related_concepts:
-  - recapitulation-small-ternary
-  - ornamental-vs-structural-changes
-  - tonal-adjustment
-  - compressed-recapitulation
+concept: Analyzing Recapitulation (Small Ternary)
+category: analysis
 pdf_page: 236
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Analyzing Recapitulation (Small Ternary)

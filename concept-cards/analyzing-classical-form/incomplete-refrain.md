@@ -1,19 +1,12 @@
 ---
-title: "Incomplete Refrain"
-card_type: concept
-concept_type: compositional-device
+concept: "Incomplete Refrain"
 chapter_number: 19
 pdf_page: 677
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - incomplete-refrain
-  - rondo
-  - open-ending
-  - modulation
-related_cards:
-  - refrain
-  - returns-of-main-theme
-  - abridged-refrain
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

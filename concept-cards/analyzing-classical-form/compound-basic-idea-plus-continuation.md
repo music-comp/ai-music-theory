@@ -1,17 +1,12 @@
 ---
-title: Compound Basic Idea + Continuation (Hybrid Type 3)
-category: Theme Types
-tags:
-  - hybrid
-  - compound-basic-idea
-  - continuation
-  - theme-type
-related_concepts:
-  - hybrid-themes
-  - compound-basic-idea
-  - continuation-phrase
-  - sentence
+concept: Compound Basic Idea + Continuation (Hybrid Type 3)
+category: form
 pdf_page: 123
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Compound Basic Idea + Continuation (Hybrid Type 3)

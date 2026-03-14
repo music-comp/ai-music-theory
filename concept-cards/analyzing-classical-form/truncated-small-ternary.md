@@ -1,20 +1,12 @@
 ---
-title: "Truncated Small Ternary"
-card_type: concept
-concept_type: formal-deviation
+concept: "Truncated Small Ternary"
 chapter_number: 17
 pdf_page: 589
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - truncated-form
-  - small-ternary
-  - interior-theme
-  - formal-deviation
-related_cards:
-  - interior-theme
-  - small-ternary
-  - contrasting-middle
-  - large-ternary-form
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

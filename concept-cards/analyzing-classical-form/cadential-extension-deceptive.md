@@ -1,11 +1,12 @@
 ---
-title: Cadential Extension - Deceptive Cadence
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Cadential Extension - Deceptive Cadence
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 386
-tags: [subordinate-theme, cadential-extension, deceptive-cadence]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Cadential Extension - Deceptive Cadence

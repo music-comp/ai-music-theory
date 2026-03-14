@@ -1,20 +1,12 @@
 ---
-title: "Main Theme in Large Ternary"
-card_type: concept
-concept_type: thematic-function
+concept: "Main Theme in Large Ternary"
 chapter_number: 17
 pdf_page: 588
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - main-theme
-  - large-ternary
-  - small-ternary
-  - home-key
-related_cards:
-  - large-ternary-form
-  - small-ternary
-  - small-binary
-  - interior-theme
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

@@ -1,20 +1,12 @@
 ---
-title: "Coda in Large Ternary Form"
-card_type: concept
-concept_type: compositional-device
+concept: "Coda in Large Ternary Form"
 chapter_number: 17
 pdf_page: 606
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - coda
-  - large-ternary
-  - compensatory-function
-  - closing-section
-related_cards:
-  - large-ternary-form
-  - interior-theme
-  - coda
-  - compensatory-function
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

@@ -1,20 +1,12 @@
 ---
-title: "Rondo Forms Overview"
-card_type: concept
-concept_type: form
+concept: "Rondo Forms Overview"
 chapter_number: 19
 pdf_page: 664
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - rondo
-  - refrain
-  - couplet
-  - alternation
-related_cards:
-  - five-part-rondo
-  - sonata-rondo
-  - refrain
-  - couplet
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

@@ -1,18 +1,12 @@
 ---
-title: Transition-like Core Substitute
-category: Sonata Form
-tags:
-  - development
-  - core-substitute
-  - transition
-  - modulation
-related:
-  - development-without-core
-  - pseudo-core
-  - transition
+concept: Transition-like Core Substitute
+category: form
 pdf_page: 474
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Transition-like Core Substitute

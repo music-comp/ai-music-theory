@@ -1,20 +1,12 @@
 ---
-title: "Small Binary in Variation Themes"
-card_type: concept
-concept_type: principle
+concept: "Small Binary in Variation Themes"
 chapter_number: 17
 pdf_page: 592
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - small-binary
-  - theme-and-variations
-  - basic-idea
-  - theme-construction
-related_cards:
-  - theme-and-variations
-  - small-binary
-  - small-ternary
-  - basic-idea
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Observation

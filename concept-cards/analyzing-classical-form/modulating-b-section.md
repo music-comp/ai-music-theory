@@ -1,17 +1,12 @@
 ---
-title: Modulating B Section
-category: Formal Units
-tags:
-  - modulating-B
-  - contrasting-middle
-  - retransition
-  - subordinate-key
-related_concepts:
-  - contrasting-middle
-  - retransition
-  - subordinate-key
-  - small-ternary
+concept: Modulating B Section
+category: form
 pdf_page: 245
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Modulating B Section

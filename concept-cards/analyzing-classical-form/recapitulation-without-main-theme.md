@@ -1,18 +1,12 @@
 ---
-title: Recapitulation Without Main Theme Opening
-category: Sonata Form
-tags:
-  - recapitulation
-  - main-theme
-  - formal-deviation
-  - small-binary
-related:
-  - reversed-recapitulation
-  - double-return
-  - small-binary
+concept: Recapitulation Without Main Theme Opening
+category: form
 pdf_page: 526
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Recapitulation Without Main Theme Opening

@@ -1,6 +1,6 @@
 ---
 concept: N/R Cycle
-category: transformation
+category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Weitzmann Regions"
 chapter_number: 4

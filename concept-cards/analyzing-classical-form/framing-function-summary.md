@@ -1,17 +1,12 @@
 ---
-title: Framing Function Summary
-category: Formal Functions
-tags:
-  - framing-function
-  - introduction
-  - closing-section
-  - codetta
-related_concepts:
-  - framing-functions
-  - introduction
-  - closing-section
-  - codetta
+concept: Framing Function Summary
+category: form
 pdf_page: 167
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Framing Function Summary

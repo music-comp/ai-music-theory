@@ -1,9 +1,12 @@
 ---
 concept: ii-V-I Progression
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "ii-V-I"
-part: 6
+pdf_page: null
+chapter_number: 6
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # ii-V-I Progression

@@ -1,6 +1,6 @@
 ---
 concept: Chord Doubling
-category: chord-construction
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Intervals"
 chapter_number: 1

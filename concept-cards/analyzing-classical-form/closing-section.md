@@ -1,17 +1,12 @@
 ---
-title: Closing Section
-category: Formal Functions
-tags:
-  - closing-section
-  - framing-function
-  - after-the-end
-  - codetta
-related_concepts:
-  - framing-functions
-  - codetta
-  - PAC
-  - postcadential
+concept: Closing Section
+category: form
 pdf_page: 168
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Closing Section

@@ -1,11 +1,12 @@
 ---
-title: Tonic Pedal and Fanfare Themes
-chapter: 10
-section: "Exposition (I): Main Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Tonic Pedal and Fanfare Themes
+chapter: "Exposition I: Main Theme"
+source: "Analyzing Classical Form"
 pdf_page: 314
-tags: [main-theme, tonic-pedal, fanfare, symphony, nonconventional]
+chapter_number: 10
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Tonic Pedal and Fanfare Themes

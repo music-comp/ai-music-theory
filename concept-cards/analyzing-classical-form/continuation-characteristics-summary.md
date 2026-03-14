@@ -1,17 +1,12 @@
 ---
-title: Continuation Characteristics Summary
-category: Formal Functions
-tags:
-  - continuation
-  - fragmentation
-  - harmonic-acceleration
-  - characteristics
-related_concepts:
-  - continuation-function
-  - continuation-phrase
-  - fragmentation
-  - harmonic-acceleration
+concept: Continuation Characteristics Summary
+category: form
 pdf_page: 72
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Continuation Characteristics Summary

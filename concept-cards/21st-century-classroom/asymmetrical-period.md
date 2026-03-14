@@ -4,7 +4,9 @@ category: form
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 13: Phrases in Combination"
 unit: 3
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 13
 ---
 
 # Quick Definition

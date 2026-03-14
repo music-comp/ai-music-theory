@@ -1,11 +1,12 @@
 ---
-title: Main Theme as Small Ternary
-chapter: 10
-section: "Exposition (I): Main Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Main Theme as Small Ternary
+chapter: "Exposition I: Main Theme"
+source: "Analyzing Classical Form"
 pdf_page: 309
-tags: [main-theme, small-ternary, theme-types, relatively-uncommon]
+chapter_number: 10
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Main Theme as Small Ternary

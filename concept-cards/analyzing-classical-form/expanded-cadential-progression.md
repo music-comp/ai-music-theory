@@ -1,16 +1,12 @@
 ---
-title: Expanded Cadential Progression
-category: Harmonic Concepts
-tags:
-  - cadential-progression
-  - ECP
-  - harmonic-expansion
-  - cadential-function
-related_concepts:
-  - cadential-function
-  - continuation-becomes-cadential
-  - cadential-progression
+concept: Expanded Cadential Progression
+category: theory
 pdf_page: 82
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Expanded Cadential Progression (ECP)

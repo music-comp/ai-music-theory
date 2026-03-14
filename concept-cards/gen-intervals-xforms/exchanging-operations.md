@@ -1,6 +1,6 @@
 ---
 concept: "Exchanging Operations (X1, X2, X4, X5)"
-category: transformation
+category: technique
 source: Generalized Musical Intervals and Transformations
 chapter: "Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
 chapter_number: B

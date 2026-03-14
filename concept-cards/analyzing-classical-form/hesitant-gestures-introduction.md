@@ -1,18 +1,12 @@
 ---
-title: Hesitant Gestures in Slow Introduction
-category: Sonata Form
-tags:
-  - slow-introduction
-  - affect
-  - rhythm
-  - anticipation
-related:
-  - slow-introduction-affect
-  - slow-introduction-section
-  - french-overture-style
+concept: Hesitant Gestures in Slow Introduction
+category: form
 pdf_page: 577
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Hesitant Gestures in Slow Introduction

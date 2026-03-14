@@ -1,10 +1,12 @@
 ---
 concept: Vorhang
-category: metric-theory
+category: theory
 source: The Oxford Handbook of Neo-Riemannian Music Theories
-author: Scott Burnham
+authors: Scott Burnham
 chapter: "Ch 16: Harmony and Meter in Beethoven Sonatas"
-part: 5
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Vorhang

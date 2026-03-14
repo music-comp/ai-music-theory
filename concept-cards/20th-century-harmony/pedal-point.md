@@ -1,6 +1,6 @@
 ---
 concept: Pedal Point
-category: harmonic-device
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Embellishment and Transformation"
 chapter_number: 11

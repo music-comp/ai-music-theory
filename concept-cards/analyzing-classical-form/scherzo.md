@@ -1,20 +1,12 @@
 ---
-title: "Scherzo"
-card_type: concept
-concept_type: style
+concept: "Scherzo"
 chapter_number: 18
 pdf_page: 629
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - scherzo
-  - minuet-variant
-  - fast-tempo
-  - haydn
-  - beethoven
-related_cards:
-  - minuet-style
-  - minuet-form
-  - minuet-trio-form
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

@@ -1,16 +1,12 @@
 ---
-title: Abandoned Cadence
-category: Cadences
-tags:
-  - abandoned-cadence
-  - cadential-deviation
-  - incomplete-cadence
-related_concepts:
-  - cadential-deviations
-  - evaded-cadence
-  - deceptive-cadence
-  - cadential-progression
+concept: Abandoned Cadence
+category: theory
 pdf_page: 162
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Abandoned Cadence

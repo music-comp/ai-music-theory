@@ -1,18 +1,12 @@
 ---
-title: Slow Introduction Motivic Material
-category: Sonata Form
-tags:
-  - slow-introduction
-  - motivic-material
-  - thematic-connection
-  - beethoven
-related:
-  - slow-introduction-section
-  - main-theme
-  - basic-idea
+concept: Slow Introduction Motivic Material
+category: form
 pdf_page: 578
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Slow Introduction Motivic Material

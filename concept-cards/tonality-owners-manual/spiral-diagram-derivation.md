@@ -6,6 +6,7 @@ chapter: "Appendix 2: Deriving the Spiral Diagrams"
 chapter_number: null
 pdf_page: 545
 authors: "Dmitri Tymoczko"
+unit: null
 ---
 
 # Quick Definition

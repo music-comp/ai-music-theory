@@ -1,20 +1,12 @@
 ---
-title: "Abridged Refrain"
-card_type: concept
-concept_type: compositional-device
+concept: "Abridged Refrain"
 chapter_number: 19
 pdf_page: 677
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - abridged-refrain
-  - rondo
-  - small-ternary
-  - formal-shortening
-related_cards:
-  - refrain
-  - returns-of-main-theme
-  - incomplete-refrain
-  - small-ternary
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

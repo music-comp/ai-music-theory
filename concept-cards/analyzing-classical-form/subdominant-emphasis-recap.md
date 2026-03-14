@@ -1,11 +1,12 @@
 ---
-title: Subdominant Emphasis in Recapitulation
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Subdominant Emphasis in Recapitulation
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 302
-tags: [recapitulation, subdominant, transition, tonal-adjustment]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Subdominant Emphasis in Recapitulation

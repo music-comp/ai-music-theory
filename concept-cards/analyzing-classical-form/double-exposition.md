@@ -1,20 +1,12 @@
 ---
-title: "Double Exposition"
-card_type: concept
-concept_type: analytical-concept
+concept: "Double Exposition"
 chapter_number: 20
 pdf_page: 704
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - double-exposition
-  - concerto-form
-  - ritornello
-  - rotation
-related_cards:
-  - concerto-form
-  - opening-ritornello
-  - solo-exposition
-  - solo-recapitulation
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

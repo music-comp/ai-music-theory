@@ -1,17 +1,12 @@
 ---
-title: Closing Section (Small Ternary A Section)
-category: Formal Functions
-tags:
-  - closing-section
-  - A-section
-  - codetta
-  - small-ternary
-related_concepts:
-  - closing-section
-  - codetta
-  - exposition-small-ternary
-  - framing-functions
+concept: Closing Section (Small Ternary A Section)
+category: form
 pdf_page: 229
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Closing Section (Small Ternary A Section)

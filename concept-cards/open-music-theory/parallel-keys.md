@@ -1,9 +1,12 @@
 ---
 concept: Parallel Keys
-category: fundamentals
+category: theory
 source: Open Music Theory
 chapter: "Minor Scales, Scale Degrees, and Key Signatures"
-part: 1
+pdf_page: null
+chapter_number: 1
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Parallel Keys

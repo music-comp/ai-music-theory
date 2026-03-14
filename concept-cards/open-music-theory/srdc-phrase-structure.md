@@ -3,7 +3,10 @@ concept: SRDC Phrase Structure
 category: form
 source: Open Music Theory
 chapter: "Melody and Phrasing"
-part: 7
+pdf_page: null
+chapter_number: 7
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 ## Quick Definition

@@ -3,7 +3,10 @@ concept: Total Serialism
 category: theory
 source: Open Music Theory
 chapter: "History and Context of Serialism"
-part: 9
+pdf_page: null
+chapter_number: 9
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Total Serialism

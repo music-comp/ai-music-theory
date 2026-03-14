@@ -1,18 +1,12 @@
 ---
-title: Multiple Coda Themes
-category: Sonata Form
-tags:
-  - coda
-  - coda-theme
-  - formal-organization
-  - large-scale
-related:
-  - coda-theme
-  - coda-section
-  - coda-phrase-structure
+concept: Multiple Coda Themes
+category: form
 pdf_page: 552
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Multiple Coda Themes

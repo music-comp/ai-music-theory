@@ -1,16 +1,12 @@
 ---
-title: Tonic Prolongation
-category: Harmonic Concepts
-tags:
-  - tonic
-  - prolongation
-  - presentation-phrase
-  - harmonic-progression
-related_concepts:
-  - presentation-phrase
-  - dominant-prolongation
-  - cadential-progression
+concept: Tonic Prolongation
+category: theory
 pdf_page: 67
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Tonic Prolongation

@@ -1,9 +1,12 @@
 ---
 concept: Omnibus Progression
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "The Omnibus Progression"
-part: 5
+pdf_page: null
+chapter_number: 5
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Omnibus Progression

@@ -1,17 +1,12 @@
 ---
-title: Period
-category: Theme Types
-tags:
-  - period
-  - theme-type
-  - antecedent-consequent
-  - eight-measure
-related_concepts:
-  - antecedent-phrase
-  - consequent-phrase
-  - sentence
-  - cadential-differentiation
+concept: Period
+category: form
 pdf_page: 95
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Period

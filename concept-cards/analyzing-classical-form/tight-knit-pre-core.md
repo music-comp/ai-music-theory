@@ -1,18 +1,12 @@
 ---
-title: Tight-knit Pre-core
-category: Sonata Form
-tags:
-  - development
-  - pre-core
-  - tight-knit
-  - phrase-structure
-related:
-  - pre-core
-  - pre-core-phrase-structure
-  - main-theme
+concept: Tight-knit Pre-core
+category: form
 pdf_page: 466
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Tight-knit Pre-core

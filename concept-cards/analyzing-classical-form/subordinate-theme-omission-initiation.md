@@ -1,11 +1,12 @@
 ---
-title: Subordinate Theme - Omission of Initiating Function
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Subordinate Theme - Omission of Initiating Function
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 412
-tags: [subordinate-theme, initiation, continuation, cadential, loosening]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Subordinate Theme - Omission of Initiating Function

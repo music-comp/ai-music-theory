@@ -1,19 +1,12 @@
 ---
-title: "Transition and Subordinate Theme Functions in Minuet"
-card_type: concept
-concept_type: thematic-function
+concept: "Transition and Subordinate Theme Functions in Minuet"
 chapter_number: 18
 pdf_page: 637
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - transition
-  - subordinate-theme
-  - minuet-form
-  - thematic-function
-related_cards:
-  - main-theme-function-minuet
-  - transition-subordinate-fusion
-  - minuet-exposition-a-section
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Subordinate-Theme Function

@@ -1,11 +1,12 @@
 ---
-title: Intrinsic vs. Contextual Functionality
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Intrinsic vs. Contextual Functionality
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 412
-tags: [formal-function, intrinsic, contextual, theory]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Intrinsic vs. Contextual Functionality

@@ -1,20 +1,12 @@
 ---
-title: "Minuet/Trio Form"
-card_type: concept
-concept_type: form
+concept: "Minuet/Trio Form"
 chapter_number: 18
 pdf_page: 629
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - minuet-trio
-  - full-movement-form
-  - da-capo
-  - tripartite-form
-related_cards:
-  - minuet-form
-  - trio
-  - da-capo
-  - small-ternary
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

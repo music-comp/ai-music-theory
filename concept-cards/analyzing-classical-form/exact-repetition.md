@@ -1,16 +1,12 @@
 ---
-title: Exact Repetition
-category: Compositional Techniques
-tags:
-  - repetition
-  - presentation-phrase
-  - harmonic-support
-related_concepts:
-  - basic-idea
-  - statement-response-repetition
-  - sequential-repetition
-  - presentation-phrase
+concept: Exact Repetition
+category: technique
 pdf_page: 63
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Exact Repetition

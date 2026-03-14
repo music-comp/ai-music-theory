@@ -4,7 +4,9 @@ category: analysis
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 17: Secondary Dominant Chords"
 unit: 4
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 17
 ---
 
 # Quick Definition

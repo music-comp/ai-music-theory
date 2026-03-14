@@ -1,10 +1,12 @@
 ---
 concept: Combinatorial Group Theory in Harmony
-tier: 3
-category: mathematical-foundations
-sources:
-  - Ch 12 (Engebretsen): Harmonieschritte & Neo-Riemannian Appropriations
-part: 3
+category: theory
+pdf_page: null
+chapter_number: null
+unit: null
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+chapter: "Harmonieschritte & Neo-Riemannian Appropriations"
+authors: "Engebretsen"
 ---
 
 # Combinatorial Group Theory in Harmony

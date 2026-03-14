@@ -1,18 +1,12 @@
 ---
-title: Formal Rotation in Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - rotation
-  - formal-organization
-  - hepokoski-darcy
-related:
-  - rotational-form
-  - thematic-functions-recapitulation
-  - recapitulation-section
+concept: Formal Rotation in Recapitulation
+category: form
 pdf_page: 505
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Formal Rotation in Recapitulation

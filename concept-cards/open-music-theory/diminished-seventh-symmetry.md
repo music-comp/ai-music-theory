@@ -1,9 +1,12 @@
 ---
 concept: Diminished Seventh Symmetry
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Reinterpreting Diminished Seventh Chords"
-part: 5
+pdf_page: null
+chapter_number: 5
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Diminished Seventh Symmetry

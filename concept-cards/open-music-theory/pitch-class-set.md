@@ -3,7 +3,10 @@ concept: Pitch-Class Set
 category: theory
 source: Open Music Theory
 chapter: "Pitch-Class Sets, Normal Order, and Transformations"
-part: 8
+pdf_page: null
+chapter_number: 8
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Pitch-Class Set

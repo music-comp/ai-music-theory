@@ -1,18 +1,12 @@
 ---
-title: Closing Section in Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - closing-section
-  - codetta
-  - formal-completion
-related:
-  - recapitulation-subordinate-theme
-  - coda-section
-  - closing-section
+concept: Closing Section in Recapitulation
+category: form
 pdf_page: 521
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Closing Section in Recapitulation

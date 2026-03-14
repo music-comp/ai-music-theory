@@ -1,21 +1,12 @@
 ---
-title: "Minore and Maggiore"
-card_type: concept
-concept_type: compositional-device
+concept: "Minore and Maggiore"
 chapter_number: 17
 pdf_page: 587
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - minore
-  - maggiore
-  - modal-contrast
-  - variations
-  - interior-theme
-related_cards:
-  - interior-theme
-  - theme-and-variations
-  - large-ternary-form
-  - modal-shift
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

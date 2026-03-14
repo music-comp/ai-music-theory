@@ -1,11 +1,12 @@
 ---
-title: Aesthetic Effects of Cadential Extension
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Aesthetic Effects of Cadential Extension
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 395
-tags: [subordinate-theme, cadential-extension, aesthetic, dramatic]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Aesthetic Effects of Cadential Extension

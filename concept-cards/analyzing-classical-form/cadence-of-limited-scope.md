@@ -1,19 +1,12 @@
 ---
-title: "Cadence of Limited Scope"
-card_type: concept
-concept_type: cadential-type
-chapter_number: Glossary
+concept: "Cadence of Limited Scope"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - cadence
-  - limited-scope
-  - codetta
-  - local-closure
-related_cards:
-  - authentic-cadence
-  - closing-section
-  - codetta
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

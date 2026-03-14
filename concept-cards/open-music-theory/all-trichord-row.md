@@ -3,7 +3,10 @@ concept: All-Trichord Row
 category: theory
 source: Open Music Theory
 chapter: "Composing with Twelve Tones"
-part: 9
+pdf_page: null
+chapter_number: 9
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # All-Trichord Row

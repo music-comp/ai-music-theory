@@ -1,18 +1,12 @@
 ---
-title: Internal Dominant Arrival in Coda
-category: Sonata Form
-tags:
-  - coda
-  - dominant-arrival
-  - phrase-structure
-  - coda-theme
-related:
-  - coda-phrase-structure
-  - coda-theme
-  - premature-dominant-arrival
+concept: Internal Dominant Arrival in Coda
+category: form
 pdf_page: 552
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Internal Dominant Arrival in Coda

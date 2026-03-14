@@ -1,10 +1,12 @@
 ---
 concept: 'Riemann''s "Das Problem" - Primary Source'
-category: primary-source/history
+category: theory
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "The Problem of Harmonic Dualism"
-part: 2
 authors: "Ian Bent (translator), Hugo Riemann (original author, 1905)"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Riemann's "Das Problem des harmonischen Dualismus" - Primary Source

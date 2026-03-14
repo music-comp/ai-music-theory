@@ -1,20 +1,12 @@
 ---
-title: "Recapitulation Without Prior Development"
-card_type: concept
-concept_type: theoretical-issue
+concept: "Recapitulation Without Prior Development"
 chapter_number: 17
 pdf_page: 594
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - recapitulation
-  - sonata-without-development
-  - return-vs-repetition
-  - formal-function
-related_cards:
-  - sonata-without-development
-  - recapitulation
-  - return
-  - repetition
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## The Theoretical Problem

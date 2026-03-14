@@ -1,17 +1,12 @@
 ---
-title: Cadence Classification
-category: Cadences
-tags:
-  - cadence
-  - PAC
-  - IAC
-  - HC
-  - classification
-related_concepts:
-  - basic-cadence-types
-  - cadential-strength
-  - cadential-progression
+concept: Cadence Classification
+category: theory
 pdf_page: 78
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Cadence Classification

@@ -1,17 +1,12 @@
 ---
-title: Model-Sequence Technique
-category: Compositional Techniques
-tags:
-  - sequence
-  - continuation-function
-  - repetition
-  - harmonic-destabilization
-related_concepts:
-  - sequential-repetition
-  - sequential-progression
-  - continuation-phrase
-  - fragmentation
+concept: Model-Sequence Technique
+category: technique
 pdf_page: 76
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Model-Sequence Technique

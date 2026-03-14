@@ -1,6 +1,6 @@
 ---
 concept: Time-Span Inversion
-category: transformation
+category: technique
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
 chapter_number: 4

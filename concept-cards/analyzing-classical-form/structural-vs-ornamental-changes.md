@@ -1,11 +1,12 @@
 ---
-title: Structural vs. Ornamental Changes
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Structural vs. Ornamental Changes
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 302
-tags: [recapitulation, structural-change, ornamental-change, analysis]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Structural vs. Ornamental Changes

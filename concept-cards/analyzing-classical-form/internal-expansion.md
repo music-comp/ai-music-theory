@@ -1,15 +1,12 @@
 ---
-title: Internal Expansion
-category: Compositional Techniques
-tags:
-  - internal-expansion
-  - phrase-deviation
-  - embedded-material
-related_concepts:
-  - phrase-deviations
-  - phrase-extension
-  - interpolation
+concept: Internal Expansion
+category: technique
 pdf_page: 150
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Internal Expansion

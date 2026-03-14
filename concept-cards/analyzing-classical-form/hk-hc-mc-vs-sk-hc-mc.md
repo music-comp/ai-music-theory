@@ -1,11 +1,12 @@
 ---
-title: I:HC MC vs. V:HC MC
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: I:HC MC vs. V:HC MC
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 331
-tags: [transition, half-cadence, medial-caesura, modulation]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## I:HC MC vs. V:HC MC

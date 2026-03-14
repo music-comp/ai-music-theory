@@ -1,17 +1,12 @@
 ---
-title: Looser Sentential Structure (Contrasting Middle)
-category: Formal Units
-tags:
-  - sentential
-  - contrasting-middle
-  - loose-organization
-  - B-section
-related_concepts:
-  - contrasting-middle
-  - sentence
-  - tight-knit-vs-loose
-  - sequential-progression
+concept: Looser Sentential Structure (Contrasting Middle)
+category: form
 pdf_page: 234
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Looser Sentential Structure (Contrasting Middle)

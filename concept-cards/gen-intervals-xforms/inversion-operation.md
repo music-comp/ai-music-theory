@@ -1,6 +1,6 @@
 ---
 concept: "Inversion Operation (I_u^v)"
-category: transformation
+category: technique
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Interval Systems (2): Formal Features"
 chapter_number: 3

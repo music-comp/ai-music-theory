@@ -3,7 +3,10 @@ concept: Pitch vs Pitch Class
 category: theory
 source: Open Music Theory
 chapter: "Pitch and Pitch Class"
-part: 8
+pdf_page: null
+chapter_number: 8
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Pitch vs Pitch Class

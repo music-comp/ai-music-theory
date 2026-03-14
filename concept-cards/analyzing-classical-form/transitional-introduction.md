@@ -1,17 +1,12 @@
 ---
-title: Transitional Introduction
-category: Sonata Form
-tags:
-  - development
-  - introduction
-  - transition
-  - dominant-prolongation
-related:
-  - pre-core
-  - development-tonal-organization
+concept: Transitional Introduction
+category: form
 pdf_page: 481
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Transitional Introduction

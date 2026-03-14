@@ -3,7 +3,10 @@ concept: Antecedent-Consequent
 category: form
 source: Open Music Theory
 chapter: "Phrase Structure and Period"
-part: 3
+pdf_page: null
+chapter_number: 3
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Antecedent-Consequent

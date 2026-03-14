@@ -1,17 +1,12 @@
 ---
-title: Hybrid Relation to Sentence and Period
-category: Analytical Methods
-tags:
-  - hybrid
-  - sentence
-  - period
-  - formal-spectrum
-related_concepts:
-  - hybrid-themes
-  - sentence
-  - period
-  - basic-idea
+concept: Hybrid Relation to Sentence and Period
+category: analysis
 pdf_page: 132
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Hybrid Relation to Sentence and Period

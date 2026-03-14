@@ -1,19 +1,12 @@
 ---
-title: "Rotation"
-card_type: concept
-concept_type: analytical-concept
-chapter_number: Glossary
+concept: "Rotation"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - rotation
-  - recapitulation
-  - ordering
-  - formal-structure
-related_cards:
-  - recapitulation
-  - exposition
-  - double-exposition
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

@@ -1,9 +1,12 @@
 ---
 concept: Augmented Triad Symmetry
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Augmented Options"
-part: 5
+pdf_page: null
+chapter_number: 5
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Augmented Triad Symmetry

@@ -1,6 +1,6 @@
 ---
 concept: Simply Transitive Group
-category: mathematical-foundation
+category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Transformation Graphs and Networks (1): Intervals and Transpositions"
 chapter_number: 7

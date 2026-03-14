@@ -1,18 +1,12 @@
 ---
-title: Subordinate Themelike Core Substitute
-category: Sonata Form
-tags:
-  - development
-  - core-substitute
-  - subordinate-theme
-  - loosening-devices
-related:
-  - development-without-core
-  - pseudo-core
-  - subordinate-theme
+concept: Subordinate Themelike Core Substitute
+category: form
 pdf_page: 479
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Subordinate Themelike Core Substitute

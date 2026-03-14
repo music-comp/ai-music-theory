@@ -3,7 +3,10 @@ concept: Fugal Exposition
 category: form
 source: Open Music Theory
 chapter: "High Baroque Fugal Exposition"
-part: 2
+pdf_page: null
+chapter_number: 2
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Fugal Exposition

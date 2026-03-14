@@ -1,18 +1,12 @@
 ---
-title: Sonata Principle
-category: Sonata Form
-tags:
-  - recapitulation
-  - subordinate-theme
-  - tonal-adjustment
-  - theoretical-concept
-related:
-  - recapitulation-subordinate-theme
-  - tonal-adjustment
-  - hepokoski-darcy
+concept: Sonata Principle
+category: form
 pdf_page: 501
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Sonata Principle

@@ -1,16 +1,12 @@
 ---
-title: Annotating Cadences
-category: Analytical Methods
-tags:
-  - cadence
-  - analysis
-  - annotation
-  - cadential-arrival
-related_concepts:
-  - basic-cadence-types
-  - cadential-progression
-  - cadential-function
+concept: Annotating Cadences
+category: analysis
 pdf_page: 80
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Annotating Cadences

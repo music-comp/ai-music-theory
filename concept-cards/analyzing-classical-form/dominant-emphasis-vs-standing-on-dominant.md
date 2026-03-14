@@ -1,16 +1,12 @@
 ---
-title: Dominant Emphasis vs. Standing on Dominant
-category: Analytical Methods
-tags:
-  - dominant-emphasis
-  - standing-on-dominant
-  - tonic-prolongation
-  - harmonic-analysis
-related_concepts:
-  - standing-on-dominant-contrasting-middle
-  - dominant-prolongation
-  - contrasting-middle
+concept: Dominant Emphasis vs. Standing on Dominant
+category: analysis
 pdf_page: 243
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Dominant Emphasis vs. Standing on Dominant

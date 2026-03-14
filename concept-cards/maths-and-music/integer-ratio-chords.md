@@ -6,6 +6,7 @@ chapter: "The Integers as Intervals"
 chapter_number: 9
 pdf_page: 110
 authors: "David Wright"
+unit: null
 ---
 
 # Quick Definition

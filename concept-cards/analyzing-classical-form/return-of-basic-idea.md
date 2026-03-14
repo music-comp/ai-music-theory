@@ -1,17 +1,12 @@
 ---
-title: Return of the Basic Idea
-category: Compositional Techniques
-tags:
-  - return
-  - basic-idea
-  - consequent
-  - restatement
-related_concepts:
-  - consequent-phrase
-  - period
-  - exact-repetition
-  - statement-response-repetition
+concept: Return of the Basic Idea
+category: technique
 pdf_page: 102
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Return of the Basic Idea

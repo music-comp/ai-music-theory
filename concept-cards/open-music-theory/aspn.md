@@ -1,9 +1,12 @@
 ---
 concept: "American Standard Pitch Notation (ASPN)"
-category: fundamentals
+category: theory
 source: Open Music Theory
 chapter: "American Standard Pitch Notation (ASPN)"
-part: 1
+pdf_page: null
+chapter_number: 1
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # American Standard Pitch Notation (ASPN)

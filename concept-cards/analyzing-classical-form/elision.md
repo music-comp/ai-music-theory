@@ -1,17 +1,12 @@
 ---
-title: Elision
-category: Compositional Techniques
-tags:
-  - elision
-  - boundary-process
-  - phrase-overlap
-  - formal-continuity
-related_concepts:
-  - lead-in
-  - melodic-overlap
-  - cadence
-  - phrase-structure
+concept: Elision
+category: technique
 pdf_page: 108
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Elision

@@ -1,18 +1,12 @@
 ---
-title: French Overture Style
-category: Historical Background
-tags:
-  - french-overture
-  - baroque
-  - slow-introduction
-  - style
-related:
-  - slow-introduction-affect
-  - slow-introduction-section
-  - fanfare
+concept: French Overture Style
+category: theory
 pdf_page: 578
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # French Overture Style

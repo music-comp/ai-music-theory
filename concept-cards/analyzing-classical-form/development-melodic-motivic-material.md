@@ -1,18 +1,12 @@
 ---
-title: Development Melodic-Motivic Material
-category: Sonata Form
-tags:
-  - development
-  - motivic-material
-  - thematic-transformation
-  - new-material
-related:
-  - core
-  - pre-core
-  - rotational-form
+concept: Development Melodic-Motivic Material
+category: form
 pdf_page: 450
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Development Melodic-Motivic Material

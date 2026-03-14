@@ -1,18 +1,12 @@
 ---
-title: Content vs. Function in Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - formal-function
-  - content
-  - analytical-method
-related:
-  - thematic-functions-recapitulation
-  - reversed-recapitulation
-  - recapitulation-formal-rotation
+concept: Content vs. Function in Recapitulation
+category: form
 pdf_page: 531
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Content vs. Function in Recapitulation

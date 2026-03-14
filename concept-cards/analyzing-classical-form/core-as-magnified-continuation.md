@@ -1,18 +1,12 @@
 ---
-title: Core as Magnified Continuation
-category: Sonata Form
-tags:
-  - development
-  - core
-  - continuation
-  - formal-function
-related:
-  - core
-  - continuation-phrase
-  - pre-core
+concept: Core as Magnified Continuation
+category: form
 pdf_page: 451
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Core as Magnified Continuation

@@ -1,20 +1,12 @@
 ---
-title: "Extensions and Interpolations in Variations"
-card_type: concept
-concept_type: compositional-device
+concept: "Extensions and Interpolations in Variations"
 chapter_number: 17
 pdf_page: 609
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - extension
-  - interpolation
-  - theme-and-variations
-  - formal-deviation
-related_cards:
-  - theme-and-variations
-  - extension
-  - interpolation
-  - coda-variations
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

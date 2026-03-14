@@ -1,17 +1,12 @@
 ---
-title: Statement vs. Response (Compound Presentation)
-category: Analytical Methods
-tags:
-  - statement-response
-  - compound-presentation
-  - antecedent-consequent-confusion
-  - tonic-prolongation
-related_concepts:
-  - compound-presentation
-  - statement-response-repetition
-  - compound-period
-  - tonic-prolongation
+concept: Statement vs. Response (Compound Presentation)
+category: analysis
 pdf_page: 200
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Statement vs. Response (Compound Presentation)

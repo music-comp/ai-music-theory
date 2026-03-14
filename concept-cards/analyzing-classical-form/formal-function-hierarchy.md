@@ -1,11 +1,12 @@
 ---
-title: Hierarchy of Formal Functions
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Hierarchy of Formal Functions
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 288
-tags: [formal-functions, phrase-functions, thematic-functions, hierarchy]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Hierarchy of Formal Functions

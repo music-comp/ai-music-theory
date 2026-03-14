@@ -1,18 +1,12 @@
 ---
-title: Recapitulation Section
-category: Sonata Form
-tags:
-  - recapitulation
-  - sonata-form
-  - tonal-resolution
-  - formal-section
-related:
-  - exposition
-  - development-section
-  - double-return
+concept: Recapitulation Section
+category: form
 pdf_page: 497
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Recapitulation Section

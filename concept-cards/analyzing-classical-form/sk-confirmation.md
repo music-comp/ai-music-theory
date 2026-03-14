@@ -1,11 +1,12 @@
 ---
-title: Subordinate Key Confirmation
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Subordinate Key Confirmation
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 375
-tags: [subordinate-theme, subordinate-key, pac, confirmation]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Subordinate Key Confirmation

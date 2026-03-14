@@ -1,18 +1,12 @@
 ---
-title: Crux
-category: Sonata Form
-tags:
-  - recapitulation
-  - transition
-  - structural-change
-  - tonal-adjustment
-related:
-  - tonal-adjustment
-  - recapitulation-transition
-  - structural-changes-recapitulation
+concept: Crux
+category: form
 pdf_page: 500
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Crux

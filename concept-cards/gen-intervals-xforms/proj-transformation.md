@@ -1,6 +1,6 @@
 ---
 concept: PROJ Transformation
-category: transformation
+category: technique
 source: Generalized Musical Intervals and Transformations
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9

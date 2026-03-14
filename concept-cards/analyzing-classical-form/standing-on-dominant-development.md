@@ -1,18 +1,12 @@
 ---
-title: Standing on the Dominant (Development)
-category: Sonata Form
-tags:
-  - development
-  - dominant-prolongation
-  - standing-on-dominant
-  - postcadential
-related:
-  - core
-  - retransition
-  - recapitulation
+concept: Standing on the Dominant (Development)
+category: form
 pdf_page: 453
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Standing on the Dominant (Development)

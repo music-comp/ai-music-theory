@@ -1,9 +1,12 @@
 ---
 concept: Symmetrical Pitch Collection
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Equal Divisions of the Octave"
-part: 5
+pdf_page: null
+chapter_number: 5
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Symmetrical Pitch Collection

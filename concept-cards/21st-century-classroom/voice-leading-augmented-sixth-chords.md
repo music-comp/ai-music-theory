@@ -4,7 +4,9 @@ category: technique
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 29: Voice Leading Chromatic Harmonies"
 unit: 9
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 29
 ---
 
 # Quick Definition

@@ -1,17 +1,12 @@
 ---
-title: Labeling Themes by Phrase Functions
-category: Analytical Methods
-tags:
-  - phrase-function
-  - theme-type
-  - temporal-function
-  - formal-syntax
-related_concepts:
-  - sentence
-  - period
-  - hybrid-themes
-  - formal-function
+concept: Labeling Themes by Phrase Functions
+category: analysis
 pdf_page: 125
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Labeling Themes by Phrase Functions

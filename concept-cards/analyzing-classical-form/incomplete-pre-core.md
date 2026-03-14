@@ -1,18 +1,12 @@
 ---
-title: Incomplete Pre-core
-category: Sonata Form
-tags:
-  - development
-  - pre-core
-  - incomplete-unit
-  - phrase-structure
-related:
-  - pre-core
-  - pre-core-phrase-structure
-  - incomplete-thematic-unit
+concept: Incomplete Pre-core
+category: form
 pdf_page: 467
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Incomplete Pre-core

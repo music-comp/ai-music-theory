@@ -1,11 +1,12 @@
 ---
-title: Liquidation in Transition
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Liquidation in Transition
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 350
-tags: [transition, liquidation, standing-on-dominant, motives]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Liquidation in Transition

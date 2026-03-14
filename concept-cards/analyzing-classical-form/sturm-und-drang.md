@@ -1,18 +1,12 @@
 ---
-title: Sturm und Drang
-category: Style and Expression
-tags:
-  - development
-  - core
-  - emotional-character
-  - style
-related:
-  - core
-  - pseudo-core
-  - development-section
+concept: Sturm und Drang
+category: analysis
 pdf_page: 444
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Sturm und Drang

@@ -1,6 +1,6 @@
 ---
 concept: E-Class Transformations
-category: transformation
+category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "A Unified Model of Triadic Voice-Leading Space"
 chapter_number: 5

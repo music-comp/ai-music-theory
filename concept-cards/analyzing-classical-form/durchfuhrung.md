@@ -1,17 +1,12 @@
 ---
-title: Durchfuhrung
-category: Terminology
-tags:
-  - development
-  - german-terminology
-  - motivic-development
-  - formal-section
-related:
-  - development-section
-  - development-melodic-motivic-material
+concept: Durchfuhrung
+category: theory
 pdf_page: 451
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Durchfuhrung

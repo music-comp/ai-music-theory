@@ -1,18 +1,12 @@
 ---
-title: Restoration of Deleted Material in Coda
-category: Sonata Form
-tags:
-  - coda
-  - compensatory-function
-  - recapitulation
-  - deleted-material
-related:
-  - compensatory-functions-coda
-  - structural-changes-recapitulation
-  - sonata-principle
+concept: Restoration of Deleted Material in Coda
+category: form
 pdf_page: 561
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Restoration of Deleted Material in Coda

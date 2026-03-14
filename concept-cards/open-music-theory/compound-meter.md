@@ -1,9 +1,12 @@
 ---
 concept: Compound Meter
-category: fundamentals
+category: theory
 source: Open Music Theory
 chapter: "Compound Meter and Time Signatures"
-part: 1
+pdf_page: null
+chapter_number: 1
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Compound Meter

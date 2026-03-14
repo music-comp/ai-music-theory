@@ -1,17 +1,12 @@
 ---
-title: Antecedent Phrase
-category: Formal Units
-tags:
-  - antecedent
-  - phrase
-  - formal-function
-  - weak-cadence
-related_concepts:
-  - period
-  - consequent-phrase
-  - basic-idea
-  - contrasting-idea
+concept: Antecedent Phrase
+category: form
 pdf_page: 96
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Antecedent Phrase

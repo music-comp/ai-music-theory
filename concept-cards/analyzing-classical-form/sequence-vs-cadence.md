@@ -1,11 +1,12 @@
 ---
-title: Sequence vs. Cadence
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Sequence vs. Cadence
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 356
-tags: [sequence, cadence, distinction, transition]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Sequence vs. Cadence

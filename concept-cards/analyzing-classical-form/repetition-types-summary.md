@@ -1,17 +1,12 @@
 ---
-title: Repetition Types Summary
-category: Compositional Techniques
-tags:
-  - repetition
-  - exact-repetition
-  - statement-response
-  - sequential-repetition
-related_concepts:
-  - exact-repetition
-  - statement-response-repetition
-  - sequential-repetition
-  - presentation-phrase
+concept: Repetition Types Summary
+category: technique
 pdf_page: 63
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Repetition Types Summary

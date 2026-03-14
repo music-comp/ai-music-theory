@@ -1,11 +1,12 @@
 ---
-title: Modal Shift in Subordinate Theme
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Modal Shift in Subordinate Theme
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 419
-tags: [subordinate-theme, modal-shift, major-minor, loosening]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Modal Shift in Subordinate Theme

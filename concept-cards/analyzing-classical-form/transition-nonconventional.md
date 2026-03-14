@@ -1,11 +1,12 @@
 ---
-title: Transition Nonconventional Organization
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Transition Nonconventional Organization
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 346
-tags: [transition, nonconventional, formal-organization, hybrid]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Transition Nonconventional Organization

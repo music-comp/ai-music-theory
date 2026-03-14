@@ -1,9 +1,12 @@
 ---
 concept: Extended Tonicization
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Tonicization and Modulation"
-part: 4
+pdf_page: null
+chapter_number: 4
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Extended Tonicization

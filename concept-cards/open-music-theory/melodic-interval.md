@@ -1,9 +1,12 @@
 ---
 concept: Melodic Interval
-category: fundamentals
+category: theory
 source: Open Music Theory
 chapter: "Intervals"
-part: 1
+pdf_page: null
+chapter_number: 1
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Melodic Interval

@@ -1,18 +1,12 @@
 ---
-title: Multiple Pre-core
-category: Sonata Form
-tags:
-  - development
-  - pre-core
-  - phrase-structure
-  - formal-organization
-related:
-  - pre-core
-  - incomplete-pre-core
-  - core
+concept: Multiple Pre-core
+category: form
 pdf_page: 468
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Multiple Pre-core

@@ -4,7 +4,9 @@ category: theory
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 27: Voice Leading Seventh Chords"
 unit: 9
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 27
 ---
 
 # Quick Definition

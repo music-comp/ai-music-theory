@@ -1,19 +1,12 @@
 ---
-title: "Direct Modulation"
-card_type: concept
-concept_type: harmonic-process
-chapter_number: Glossary
+concept: "Direct Modulation"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - direct-modulation
-  - modulation
-  - key-change
-  - transition
-related_cards:
-  - pivot-chord-modulation
-  - modulation
-  - transition
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

@@ -1,9 +1,12 @@
 ---
 concept: Chord-Scale Theory
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Chord-Scale Theory"
-part: 6
+pdf_page: null
+chapter_number: 6
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Chord-Scale Theory

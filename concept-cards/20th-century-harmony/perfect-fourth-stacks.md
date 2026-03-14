@@ -1,6 +1,6 @@
 ---
 concept: Perfect Fourth Stacks
-category: chord-construction
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Chords by Fourths"
 chapter_number: 4

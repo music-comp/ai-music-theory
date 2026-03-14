@@ -1,16 +1,12 @@
 ---
-title: Ornamental vs. Structural Changes
-category: Analytical Methods
-tags:
-  - ornamental-change
-  - structural-change
-  - recapitulation
-  - analysis
-related_concepts:
-  - recapitulation-small-ternary
-  - tonal-adjustment
-  - variation
+concept: Ornamental vs. Structural Changes
+category: analysis
 pdf_page: 236
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Ornamental vs. Structural Changes

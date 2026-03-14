@@ -1,10 +1,12 @@
 ---
 concept: "Riemann's Monotonality Principle"
-category: analytical-methodology
+category: analysis
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapter 18: Riemannian and Neo-Riemannian Analysis"
-author: Steven Rings
-part: 6
+authors: Steven Rings
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Riemann's Monotonality Principle

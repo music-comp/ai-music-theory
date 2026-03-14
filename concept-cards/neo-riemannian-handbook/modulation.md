@@ -1,10 +1,12 @@
 ---
 concept: Modulation / Harmonic Progression
-category: harmony
+category: theory
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Riemann's Legacy (Ch. 1), The Nature of Harmony (Ch. 2)"
-part: 1
 authors: "Ludwig Holtmeier, Benjamin Steege"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Modulation / Harmonic Progression

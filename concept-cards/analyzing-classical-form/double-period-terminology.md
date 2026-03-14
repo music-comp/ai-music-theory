@@ -1,17 +1,12 @@
 ---
-title: Double Period (Terminology Issue)
-category: Theoretical Concepts
-tags:
-  - double-period
-  - compound-period
-  - terminology
-  - historical
-related_concepts:
-  - compound-period
-  - period
-  - compound-antecedent
-  - compound-consequent
+concept: Double Period (Terminology Issue)
+category: theory
 pdf_page: 189
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Double Period (Terminology Issue)

@@ -1,6 +1,6 @@
 ---
 concept: Circle of Fifths
-category: harmonic-concept
+category: theory
 source: "Analyzing Classical Form: An Approach for the Classroom"
 chapter: "A Review of Harmony"
 chapter_number: 1

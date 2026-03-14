@@ -1,16 +1,12 @@
 ---
-title: Hybrid Theme Structure Overview
-category: Analytical Methods
-tags:
-  - hybrid
-  - structural-overview
-  - sentence-period-combination
-related_concepts:
-  - hybrid-themes
-  - antecedent-plus-continuation
-  - compound-basic-idea
-  - antecedent-plus-cadential
+concept: Hybrid Theme Structure Overview
+category: analysis
 pdf_page: 121
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Hybrid Theme Structure Overview

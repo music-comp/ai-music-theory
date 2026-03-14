@@ -1,11 +1,12 @@
 ---
-title: Closing Section After Main Theme
-chapter: 10
-section: "Exposition (I): Main Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Closing Section After Main Theme
+chapter: "Exposition I: Main Theme"
+source: "Analyzing Classical Form"
 pdf_page: 308
-tags: [main-theme, closing-section, codetta, pac]
+chapter_number: 10
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Closing Section After Main Theme

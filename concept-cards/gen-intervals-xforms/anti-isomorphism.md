@@ -1,6 +1,6 @@
 ---
 concept: Anti-Isomorphism
-category: mathematical-foundation
+category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Interval Systems (2): Formal Features"
 chapter_number: 3

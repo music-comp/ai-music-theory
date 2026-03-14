@@ -1,18 +1,12 @@
 ---
-title: Expanded Cadential Area in Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - subordinate-theme
-  - cadential-area
-  - expansion
-related:
-  - essential-sonata-closure
-  - structural-changes-recapitulation
-  - expanded-cadential-progression
+concept: Expanded Cadential Area in Recapitulation
+category: form
 pdf_page: 501
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Expanded Cadential Area in Recapitulation

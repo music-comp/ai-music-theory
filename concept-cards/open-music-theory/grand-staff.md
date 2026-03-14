@@ -1,9 +1,12 @@
 ---
 concept: Grand Staff
-category: fundamentals
+category: theory
 source: Open Music Theory
 chapter: "The Keyboard and the Grand Staff"
-part: 1
+pdf_page: null
+chapter_number: 1
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Grand Staff

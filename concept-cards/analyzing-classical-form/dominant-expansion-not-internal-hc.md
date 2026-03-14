@@ -1,11 +1,12 @@
 ---
-title: Dominant Expansion vs. Internal HC
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Dominant Expansion vs. Internal HC
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 403
-tags: [subordinate-theme, dominant, internal-hc, prolongation]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Dominant Expansion vs. Internal HC

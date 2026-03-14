@@ -1,19 +1,12 @@
 ---
-title: "Recessive Dynamic"
-card_type: concept
-concept_type: analytical-concept
-chapter_number: Glossary
+concept: "Recessive Dynamic"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - recessive-dynamic
-  - dynamic-curve
-  - closing
-  - release
-related_cards:
-  - progressive-dynamic
-  - dynamic-curve
-  - closing-section
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

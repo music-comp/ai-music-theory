@@ -1,19 +1,12 @@
 ---
-title: "Phrygian Cadence"
-card_type: concept
-concept_type: cadential-type
-chapter_number: Glossary
+concept: "Phrygian Cadence"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - phrygian-cadence
-  - half-cadence
-  - bass-motion
-  - minor-mode
-related_cards:
-  - half-cadence
-  - authentic-cadence
-  - galant-cadence
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

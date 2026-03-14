@@ -1,18 +1,12 @@
 ---
-title: Elided Cadence at End of Introduction
-category: Sonata Form
-tags:
-  - slow-introduction
-  - elision
-  - cadence
-  - exposition
-related:
-  - slow-introduction-section
-  - slow-introduction-tonal-organization
-  - main-theme
+concept: Elided Cadence at End of Introduction
+category: form
 pdf_page: 578
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Elided Cadence at End of Introduction

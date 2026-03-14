@@ -1,19 +1,12 @@
 ---
-title: "Expansion in A' Section of Minuet"
-card_type: concept
-concept_type: principle
+concept: "Expansion in A' Section of Minuet"
 chapter_number: 18
 pdf_page: 647
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - recapitulation
-  - expansion
-  - minuet-form
-  - tonal-balance
-related_cards:
-  - minuet-recapitulation
-  - subordinate-theme
-  - deceptive-cadence
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Tendency

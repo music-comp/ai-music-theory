@@ -1,11 +1,12 @@
 ---
-title: Nonmodulating Transition
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Nonmodulating Transition
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 331
-tags: [transition, home-key, half-cadence, dominant]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Nonmodulating Transition

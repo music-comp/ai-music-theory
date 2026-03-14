@@ -1,18 +1,12 @@
 ---
-title: Development Tonal Organization
-category: Sonata Form
-tags:
-  - development
-  - tonal-organization
-  - key-relationships
-  - modulation
-related:
-  - development-keys
-  - minor-mode-regions
-  - subordinate-key
+concept: Development Tonal Organization
+category: form
 pdf_page: 443
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Development Tonal Organization

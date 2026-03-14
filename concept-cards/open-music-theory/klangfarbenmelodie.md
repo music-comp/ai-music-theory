@@ -1,9 +1,12 @@
 ---
 concept: Klangfarbenmelodie
-category: composition
+category: technique
 source: Open Music Theory
 chapter: "Analysis Examples - Webern Op. 21 and 24"
-part: 9
+pdf_page: null
+chapter_number: 9
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Klangfarbenmelodie

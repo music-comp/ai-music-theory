@@ -1,10 +1,12 @@
 ---
 concept: Absolute Progression and Modal Chromaticism
-category: analytical-methodology
+category: analysis
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapter 20: Objects, Transformations, and Tonal Meaning"
-author: Daniel Harrison
-part: 6
+authors: Daniel Harrison
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Absolute Progression and Modal Chromaticism

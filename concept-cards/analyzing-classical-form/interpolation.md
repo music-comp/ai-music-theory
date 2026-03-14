@@ -1,16 +1,12 @@
 ---
-title: Interpolation
-category: Compositional Techniques
-tags:
-  - interpolation
-  - phrase-deviation
-  - parenthetical
-  - disruption
-related_concepts:
-  - phrase-deviations
-  - internal-expansion
-  - phrase-extension
+concept: Interpolation
+category: technique
 pdf_page: 152
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Interpolation

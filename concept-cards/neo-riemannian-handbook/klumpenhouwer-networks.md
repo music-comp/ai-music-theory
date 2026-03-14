@@ -1,10 +1,12 @@
 ---
 concept: "Klumpenhouwer Networks (K-nets)"
-category: transformation/analysis
+category: analysis
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Defense of Harmonic Dualism"
-part: 2
 authors: "Henry Klumpenhouwer"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Klumpenhouwer Networks (K-nets)

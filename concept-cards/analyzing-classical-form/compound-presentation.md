@@ -1,17 +1,12 @@
 ---
-title: Compound Presentation
-category: Formal Units
-tags:
-  - compound-presentation
-  - compound-sentence
-  - eight-measure
-  - tonic-prolongation
-related_concepts:
-  - compound-sentence
-  - compound-basic-idea
-  - presentation-phrase
-  - statement-response-repetition
+concept: Compound Presentation
+category: form
 pdf_page: 192
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Compound Presentation

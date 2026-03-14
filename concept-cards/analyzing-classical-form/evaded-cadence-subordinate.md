@@ -1,11 +1,12 @@
 ---
-title: Evaded Cadence in Subordinate Theme
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Evaded Cadence in Subordinate Theme
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 388
-tags: [subordinate-theme, evaded-cadence, cadential-extension, dramatic]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Evaded Cadence in Subordinate Theme

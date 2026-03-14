@@ -1,18 +1,12 @@
 ---
-title: Beginning the Pre-core
-category: Sonata Form
-tags:
-  - development
-  - pre-core
-  - melodic-material
-  - motivic-sources
-related:
-  - pre-core
-  - main-theme-basic-idea
-  - closing-section
+concept: Beginning the Pre-core
+category: form
 pdf_page: 463
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Beginning the Pre-core

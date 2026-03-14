@@ -1,16 +1,12 @@
 ---
-title: Strong Cadential Closure
-category: Cadences
-tags:
-  - cadence
-  - strong-cadence
-  - PAC
-  - consequent
-related_concepts:
-  - consequent-phrase
-  - perfect-authentic-cadence
-  - cadential-differentiation
+concept: Strong Cadential Closure
+category: theory
 pdf_page: 105
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Strong Cadential Closure

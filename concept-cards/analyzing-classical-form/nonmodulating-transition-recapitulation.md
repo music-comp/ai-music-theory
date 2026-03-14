@@ -1,18 +1,12 @@
 ---
-title: Nonmodulating Transition in Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - transition
-  - nonmodulating
-  - structural-changes
-related:
-  - tonal-adjustment
-  - recapitulation-transition
-  - flat-side-regions-recapitulation
+concept: Nonmodulating Transition in Recapitulation
+category: form
 pdf_page: 511
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Nonmodulating Transition in Recapitulation

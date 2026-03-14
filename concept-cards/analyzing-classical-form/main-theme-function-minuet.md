@@ -1,19 +1,12 @@
 ---
-title: "Main Theme Function in Minuet"
-card_type: concept
-concept_type: thematic-function
+concept: "Main Theme Function in Minuet"
 chapter_number: 18
 pdf_page: 636
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - main-theme
-  - minuet-form
-  - thematic-function
-  - home-key
-related_cards:
-  - minuet-exposition-a-section
-  - early-authentic-cadence
-  - transition-function-minuet
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

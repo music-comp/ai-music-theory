@@ -1,18 +1,12 @@
 ---
-title: Development Section Analysis Challenges
-category: Analytical Method
-tags:
-  - development
-  - analysis
-  - methodology
-  - flexibility
-related:
-  - analyzing-development-section
-  - development-without-core
-  - core
+concept: Development Section Analysis Challenges
+category: analysis
 pdf_page: 484
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Development Section Analysis Challenges

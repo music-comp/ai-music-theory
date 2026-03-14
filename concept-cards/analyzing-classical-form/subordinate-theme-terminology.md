@@ -1,11 +1,12 @@
 ---
-title: Subordinate Theme Terminology
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Subordinate Theme Terminology
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 376
-tags: [subordinate-theme, terminology, second-theme, nomenclature]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Subordinate Theme Terminology

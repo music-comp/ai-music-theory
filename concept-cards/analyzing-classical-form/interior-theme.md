@@ -1,20 +1,12 @@
 ---
-title: "Interior Theme"
-card_type: concept
-concept_type: thematic-function
+concept: "Interior Theme"
 chapter_number: 17
 pdf_page: 587
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - interior-theme
-  - large-ternary
-  - minore
-  - contrast
-related_cards:
-  - large-ternary-form
-  - main-theme
-  - minore
-  - truncated-small-ternary
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

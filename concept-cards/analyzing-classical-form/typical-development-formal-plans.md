@@ -1,18 +1,12 @@
 ---
-title: Typical Development Formal Plans
-category: Sonata Form
-tags:
-  - development
-  - formal-organization
-  - structural-plans
-related:
-  - core
-  - pre-core
-  - retransition
-  - multiple-cores
+concept: Typical Development Formal Plans
+category: form
 pdf_page: 445
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Typical Development Formal Plans

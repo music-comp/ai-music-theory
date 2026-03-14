@@ -1,10 +1,12 @@
 ---
 concept: "Functional vs. Transformational Paradigms (Synthesis)"
-category: comparative-frameworks
+category: analysis
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapters 18-20 (Synthesis)"
-author: Rings, Cook, Harrison
-part: 6
+authors: Rings, Cook, Harrison
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Functional vs. Transformational Paradigms (Synthesis)

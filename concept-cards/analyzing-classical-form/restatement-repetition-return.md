@@ -1,17 +1,12 @@
 ---
-title: Restatement, Repetition, Return
-category: Theoretical Concepts
-tags:
-  - restatement
-  - repetition
-  - return
-  - terminology
-related_concepts:
-  - basic-idea
-  - presentation-phrase
-  - consequent-phrase
-  - period
+concept: Restatement, Repetition, Return
+category: theory
 pdf_page: 105
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Restatement, Repetition, Return

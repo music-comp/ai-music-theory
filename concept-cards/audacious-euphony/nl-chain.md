@@ -1,6 +1,6 @@
 ---
 concept: N/L Chain
-category: transformation
+category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6

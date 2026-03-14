@@ -1,11 +1,12 @@
 ---
-title: Transition Loosening Devices
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Transition Loosening Devices
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 331
-tags: [transition, loosening, formal-organization, instability]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Transition Loosening Devices

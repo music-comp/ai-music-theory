@@ -1,20 +1,12 @@
 ---
-title: "Aesthetic Goals of Concerto Form"
-card_type: concept
-concept_type: principle
+concept: "Aesthetic Goals of Concerto Form"
 chapter_number: 20
 pdf_page: 695
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - concerto-form
-  - solo-orchestra
-  - balance
-  - dramatic-tension
-related_cards:
-  - concerto-form
-  - opening-ritornello
-  - cadenza
-  - solo-exposition
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## The Central Challenge

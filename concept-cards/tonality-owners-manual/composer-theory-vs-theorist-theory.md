@@ -6,6 +6,7 @@ chapter: "Implicit Musical Knowledge"
 chapter_number: 1
 pdf_page: 1
 authors: "Dmitri Tymoczko"
+unit: null
 ---
 
 # Quick Definition

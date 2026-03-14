@@ -1,11 +1,12 @@
 ---
 concept: "Schritt/Wechsel System (S/W System)"
-tier: 2
-category: transformational-theory
-sources:
-  - Ch 12 (Engebretsen): Harmonieschritte & Neo-Riemannian Appropriations
-  - Ch 13 (Gollin): Doppelklänge & Transformational Analysis
-part: 3
+category: technique
+pdf_page: null
+chapter_number: null
+unit: null
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+chapter: "Harmonieschritte & Neo-Riemannian Appropriations"
+authors: "Engebretsen"
 ---
 
 # Schritt/Wechsel System (S/W System)

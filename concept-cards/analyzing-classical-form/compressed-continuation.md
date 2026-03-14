@@ -1,17 +1,12 @@
 ---
-title: Compressed Continuation (Compound Sentence)
-category: Compositional Techniques
-tags:
-  - compressed-continuation
-  - compound-sentence
-  - phrase-compression
-  - symmetry
-related_concepts:
-  - compound-sentence
-  - phrase-compression
-  - continuation-phrase
-  - expanded-cadential-progression
+concept: Compressed Continuation (Compound Sentence)
+category: technique
 pdf_page: 202
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Compressed Continuation (Compound Sentence)

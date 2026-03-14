@@ -1,6 +1,6 @@
 ---
 concept: INJ for Measure Spaces
-category: mathematical-foundation
+category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6

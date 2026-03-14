@@ -3,7 +3,10 @@ concept: Call and Response
 category: form
 source: Open Music Theory
 chapter: "Blues Melodies and the Blues Scale"
-part: 6
+pdf_page: null
+chapter_number: 6
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Call and Response

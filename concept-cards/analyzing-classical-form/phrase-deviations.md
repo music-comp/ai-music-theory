@@ -1,17 +1,12 @@
 ---
-title: Phrase Deviations
-category: Compositional Techniques
-tags:
-  - phrase-deviation
-  - extension
-  - compression
-  - internal-expansion
-related_concepts:
-  - phrase-extension
-  - phrase-compression
-  - internal-expansion
-  - interpolation
+concept: Phrase Deviations
+category: technique
 pdf_page: 143
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Phrase Deviations

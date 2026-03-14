@@ -1,18 +1,12 @@
 ---
-title: Analyzing a Recapitulation
-category: Analytical Method
-tags:
-  - recapitulation
-  - analysis
-  - methodology
-  - comparison
-related:
-  - recapitulation-section
-  - structural-changes
-  - ornamental-changes
+concept: Analyzing a Recapitulation
+category: analysis
 pdf_page: 498
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Analyzing a Recapitulation

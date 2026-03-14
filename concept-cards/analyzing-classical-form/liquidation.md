@@ -1,16 +1,12 @@
 ---
-title: Liquidation
-category: Compositional Techniques
-tags:
-  - liquidation
-  - motivic-development
-  - cadential-function
-related_concepts:
-  - cadential-idea
-  - cadential-function
-  - basic-idea
-  - motive
+concept: Liquidation
+category: technique
 pdf_page: 78
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Liquidation

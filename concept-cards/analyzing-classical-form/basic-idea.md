@@ -1,17 +1,12 @@
 ---
-title: Basic Idea
-category: Formal Units
-tags:
-  - basic-idea
-  - melodic-unit
-  - formal-function
-  - initiating-function
-related_concepts:
-  - sentence
-  - period
-  - presentation-phrase
-  - motive
+concept: Basic Idea
+category: form
 pdf_page: 60
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Basic Idea

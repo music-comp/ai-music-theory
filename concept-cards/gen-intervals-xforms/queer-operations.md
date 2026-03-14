@@ -1,6 +1,6 @@
 ---
 concept: "Queer Operations (Q3 and Q9)"
-category: transformation
+category: technique
 source: Generalized Musical Intervals and Transformations
 chapter: "Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
 chapter_number: B

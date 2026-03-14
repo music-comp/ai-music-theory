@@ -1,6 +1,6 @@
 ---
 concept: Percussive Compound Chord
-category: harmonic-device
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Compound and Mirror Harmony"
 chapter_number: 8

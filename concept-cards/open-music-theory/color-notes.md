@@ -1,9 +1,12 @@
 ---
 concept: Color Notes
-category: collections
+category: theory
 source: Open Music Theory
 chapter: "Diatonic Modes"
-part: 8
+pdf_page: null
+chapter_number: 8
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Color Notes

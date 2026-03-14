@@ -1,11 +1,12 @@
 ---
-title: Tight-Knit vs. Loose Organization
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Tight-Knit vs. Loose Organization
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 286
-tags: [tight-knit, loose, formal-organization, phrase-structure]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Tight-Knit vs. Loose Organization

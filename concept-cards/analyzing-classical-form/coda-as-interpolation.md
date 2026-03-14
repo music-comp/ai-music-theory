@@ -1,18 +1,12 @@
 ---
-title: Coda as Interpolation
-category: Sonata Form
-tags:
-  - coda
-  - interpolation
-  - formal-ambiguity
-  - haydn
-related:
-  - coda-section
-  - coda-restoration-deleted-material
-  - coda-closing-section
+concept: Coda as Interpolation
+category: form
 pdf_page: 559
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Coda as Interpolation

@@ -1,19 +1,12 @@
 ---
-title: "Closing Section in Minuet"
-card_type: concept
-concept_type: compositional-device
+concept: "Closing Section in Minuet"
 chapter_number: 18
 pdf_page: 637
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - closing-section
-  - minuet-form
-  - codetta
-  - scherzo
-related_cards:
-  - minuet-exposition-a-section
-  - coda-minuet
-  - minuet-recapitulation
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

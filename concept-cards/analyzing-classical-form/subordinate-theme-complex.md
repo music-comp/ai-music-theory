@@ -1,20 +1,12 @@
 ---
-title: "Subordinate-Theme Complex"
-card_type: concept
-concept_type: formal-unit
+concept: "Subordinate-Theme Complex"
 chapter_number: 19
 pdf_page: 673
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - subordinate-theme-complex
-  - rondo
-  - transition
-  - retransition
-related_cards:
-  - couplet
-  - five-part-rondo
-  - sonata-rondo
-  - transition
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

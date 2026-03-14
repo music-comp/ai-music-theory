@@ -1,17 +1,12 @@
 ---
-title: Failed Consequent
-category: Formal Units
-tags:
-  - failed-consequent
-  - small-binary
-  - weak-cadence
-  - nonconventional
-related_concepts:
-  - consequent-phrase
-  - part-one-small-binary
-  - antecedent-phrase
-  - period
+concept: Failed Consequent
+category: form
 pdf_page: 265
+chapter_number: 8
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Binary"
 ---
 
 # Failed Consequent

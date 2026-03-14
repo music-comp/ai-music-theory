@@ -1,19 +1,12 @@
 ---
-title: "Minuet Style"
-card_type: concept
-concept_type: style
+concept: "Minuet Style"
 chapter_number: 18
 pdf_page: 629
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - minuet
-  - dance-type
-  - triple-meter
-  - baroque-origins
-related_cards:
-  - minuet-form
-  - minuet-trio-form
-  - scherzo
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

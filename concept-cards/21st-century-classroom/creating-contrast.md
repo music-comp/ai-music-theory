@@ -4,7 +4,9 @@ category: technique
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 15: Creating Contrast Between Sections"
 unit: 3
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 15
 ---
 
 # Quick Definition

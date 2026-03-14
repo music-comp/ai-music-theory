@@ -1,11 +1,12 @@
 ---
-title: Comparing Recapitulation to Exposition
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Comparing Recapitulation to Exposition
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 302
-tags: [recapitulation, exposition, comparison, analysis]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Comparing Recapitulation to Exposition

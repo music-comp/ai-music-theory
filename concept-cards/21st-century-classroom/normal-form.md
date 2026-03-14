@@ -4,7 +4,9 @@ category: analysis
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 33: Set Theory"
 unit: 12
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 33
 ---
 
 # Quick Definition

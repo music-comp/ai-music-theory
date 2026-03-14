@@ -1,11 +1,12 @@
 ---
-title: Where Does the Transition End?
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Where Does the Transition End?
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 353
-tags: [transition, ending, formal-boundaries, analysis]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Where Does the Transition End?

@@ -1,17 +1,12 @@
 ---
-title: Parallel Period
-category: Theme Types
-tags:
-  - parallel-period
-  - period
-  - return
-  - basic-idea
-related_concepts:
-  - period
-  - contrasting-period
-  - return-of-basic-idea
-  - consequent-phrase
+concept: Parallel Period
+category: form
 pdf_page: 107
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Parallel Period

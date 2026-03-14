@@ -1,9 +1,12 @@
 ---
 concept: Leading-Tone Chord
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Dominant Function and Prolongation"
-part: 4
+pdf_page: null
+chapter_number: 4
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Leading-Tone Chord

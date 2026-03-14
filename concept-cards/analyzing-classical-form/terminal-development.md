@@ -1,18 +1,12 @@
 ---
-title: Terminal Development
-category: Sonata Form
-tags:
-  - coda
-  - development
-  - beethoven
-  - theoretical-concept
-related:
-  - coda-reference-to-development
-  - coda-section
-  - development-section
+concept: Terminal Development
+category: form
 pdf_page: 562
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Terminal Development

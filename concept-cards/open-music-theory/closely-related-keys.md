@@ -1,9 +1,12 @@
 ---
 concept: Closely Related Keys
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Modulation and Key Relationships"
-part: 4
+pdf_page: null
+chapter_number: 4
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Closely Related Keys

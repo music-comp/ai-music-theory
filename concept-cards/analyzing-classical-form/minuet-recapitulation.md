@@ -1,19 +1,12 @@
 ---
-title: "Recapitulation (A' Section) in Minuet"
-card_type: concept
-concept_type: formal-unit
+concept: "Recapitulation (A' Section) in Minuet"
 chapter_number: 18
 pdf_page: 646
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - recapitulation
-  - minuet-form
-  - expansion
-  - deceptive-cadence
-related_cards:
-  - minuet-form
-  - minuet-exposition-a-section
-  - deceptive-cadence
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

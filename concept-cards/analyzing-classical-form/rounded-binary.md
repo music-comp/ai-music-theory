@@ -1,17 +1,12 @@
 ---
-title: Rounded Binary
-category: Theme Types
-tags:
-  - rounded-binary
-  - small-ternary
-  - repeat-signs
-  - two-part-form
-related_concepts:
-  - small-ternary
-  - small-binary
-  - exposition-small-ternary
-  - recapitulation-small-ternary
+concept: Rounded Binary
+category: form
 pdf_page: 218
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Rounded Binary

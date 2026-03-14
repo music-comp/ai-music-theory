@@ -1,20 +1,12 @@
 ---
-title: "Closing Ritornello"
-card_type: concept
-concept_type: formal-unit
+concept: "Closing Ritornello"
 chapter_number: 20
 pdf_page: 717
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - closing-ritornello
-  - concerto-form
-  - cadenza
-  - frame
-related_cards:
-  - concerto-form
-  - opening-ritornello
-  - cadenza
-  - subordinate-key-ritornello
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

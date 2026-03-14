@@ -1,19 +1,12 @@
 ---
-title: "Formal Associations of Ritornello Material"
-card_type: concept
-concept_type: principle
+concept: "Formal Associations of Ritornello Material"
 chapter_number: 20
 pdf_page: 705
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - ritornello
-  - formal-function
-  - material-distribution
-  - concerto-form
-related_cards:
-  - opening-ritornello
-  - solo-exposition
-  - solo-recapitulation
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## The Opening Ritornello's Role

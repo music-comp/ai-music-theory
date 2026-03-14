@@ -1,18 +1,12 @@
 ---
-title: Ascending Stepwise Sequence in Coda
-category: Sonata Form
-tags:
-  - coda
-  - sequence
-  - ascending
-  - emotional-intensity
-related:
-  - coda-section
-  - coda-phrase-structure
-  - model-sequence-technique
+concept: Ascending Stepwise Sequence in Coda
+category: form
 pdf_page: 542
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Ascending Stepwise Sequence in Coda

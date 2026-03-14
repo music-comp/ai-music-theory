@@ -1,11 +1,12 @@
 ---
-title: Dominant Arrival
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Dominant Arrival
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 353
-tags: [dominant-arrival, half-cadence, transition, closure]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Dominant Arrival

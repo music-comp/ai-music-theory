@@ -6,6 +6,7 @@ chapter: "Repetition"
 chapter_number: 4
 pdf_page: 155
 authors: "Dmitri Tymoczko"
+unit: null
 ---
 
 # Quick Definition

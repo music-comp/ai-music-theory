@@ -1,18 +1,12 @@
 ---
-title: Recapitulation Harmonic-Tonal Organization
-category: Sonata Form
-tags:
-  - recapitulation
-  - tonal-organization
-  - home-key
-  - flat-side-regions
-related:
-  - recapitulation-section
-  - tonal-adjustment
-  - subordinate-theme
+concept: Recapitulation Harmonic-Tonal Organization
+category: form
 pdf_page: 498
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Recapitulation Harmonic-Tonal Organization

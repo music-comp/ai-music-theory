@@ -1,11 +1,12 @@
 ---
-title: Sentential Grouping Structures
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Sentential Grouping Structures
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 299
-tags: [sentence, grouping-structure, formal-organization, core]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Sentential Grouping Structures

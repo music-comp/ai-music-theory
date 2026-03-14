@@ -1,18 +1,12 @@
 ---
-title: Recollection of Main-theme Ideas in Coda
-category: Sonata Form
-tags:
-  - coda
-  - main-theme
-  - compensatory-function
-  - circular-form
-related:
-  - compensatory-functions-coda
-  - main-theme
-  - coda-theme
+concept: Recollection of Main-theme Ideas in Coda
+category: form
 pdf_page: 560
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Recollection of Main-theme Ideas in Coda

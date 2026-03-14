@@ -1,9 +1,12 @@
 ---
 concept: Augmented Sixth Chords
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Chromatic Harmony: Pre-Dominant Chords"
-part: 4
+pdf_page: null
+chapter_number: 4
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Augmented Sixth Chords

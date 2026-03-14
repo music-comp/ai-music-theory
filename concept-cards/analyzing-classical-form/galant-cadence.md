@@ -1,19 +1,12 @@
 ---
-title: "Galant Cadence"
-card_type: concept
-concept_type: cadential-type
-chapter_number: Glossary
+concept: "Galant Cadence"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - galant-cadence
-  - cadence
-  - scalar-descent
-  - style
-related_cards:
-  - authentic-cadence
-  - half-cadence
-  - phrygian-cadence
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

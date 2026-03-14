@@ -1,17 +1,12 @@
 ---
-title: Codetta
-category: Formal Functions
-tags:
-  - codetta
-  - framing-function
-  - postcadential
-  - closing
-related_concepts:
-  - closing-section
-  - framing-functions
-  - PAC
-  - coda
+concept: Codetta
+category: form
 pdf_page: 169
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Codetta

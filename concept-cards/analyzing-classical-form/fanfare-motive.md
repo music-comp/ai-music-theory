@@ -1,18 +1,12 @@
 ---
-title: Fanfare Motive
-category: Sonata Form
-tags:
-  - slow-introduction
-  - fanfare
-  - motive
-  - style
-related:
-  - slow-introduction-affect
-  - french-overture-style
-  - basic-idea
+concept: Fanfare Motive
+category: form
 pdf_page: 579
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Fanfare Motive

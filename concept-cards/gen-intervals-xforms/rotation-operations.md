@@ -1,6 +1,6 @@
 ---
 concept: "Rotation Operations (RO, R3, R6, R9)"
-category: transformation
+category: technique
 source: Generalized Musical Intervals and Transformations
 chapter: "Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
 chapter_number: B

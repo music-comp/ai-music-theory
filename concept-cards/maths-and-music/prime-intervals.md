@@ -6,6 +6,7 @@ chapter: "Algebraic Properties of the Integers"
 chapter_number: 8
 pdf_page: 100
 authors: "David Wright"
+unit: null
 ---
 
 # Quick Definition

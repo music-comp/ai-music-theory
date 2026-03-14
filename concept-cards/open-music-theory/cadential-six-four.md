@@ -1,9 +1,12 @@
 ---
 concept: Cadential Six-Four
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "The Cadential Six-Four"
-part: 4
+pdf_page: null
+chapter_number: 4
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Cadential Six-Four

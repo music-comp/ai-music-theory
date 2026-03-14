@@ -1,20 +1,12 @@
 ---
-title: "Dramatic Element in Rondo Forms"
-card_type: concept
-concept_type: principle
+concept: "Dramatic Element in Rondo Forms"
 chapter_number: 19
 pdf_page: 675
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - rondo
-  - drama
-  - retransition
-  - return
-related_cards:
-  - rondo-forms-overview
-  - refrain
-  - retransition
-  - subordinate-theme-complex
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## General Character

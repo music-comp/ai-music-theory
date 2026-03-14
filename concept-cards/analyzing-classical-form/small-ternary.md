@@ -1,17 +1,12 @@
 ---
-title: Small Ternary
-category: Theme Types
-tags:
-  - small-ternary
-  - ternary-form
-  - ABA-form
-  - rounded-binary
-related_concepts:
-  - rounded-binary
-  - exposition-small-ternary
-  - contrasting-middle
-  - recapitulation-small-ternary
+concept: Small Ternary
+category: form
 pdf_page: 217
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Small Ternary

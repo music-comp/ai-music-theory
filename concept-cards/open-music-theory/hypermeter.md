@@ -1,9 +1,12 @@
 ---
 concept: Hypermeter
-category: fundamentals
+category: theory
 source: Open Music Theory
 chapter: "Other Rhythmic Essentials"
-part: 1
+pdf_page: null
+chapter_number: 1
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Hypermeter

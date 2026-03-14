@@ -1,9 +1,12 @@
 ---
 concept: Prinner Schema
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Galant Schemas"
-part: 2
+pdf_page: null
+chapter_number: 2
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Prinner Schema

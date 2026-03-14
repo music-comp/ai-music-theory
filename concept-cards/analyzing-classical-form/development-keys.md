@@ -1,11 +1,12 @@
 ---
-title: Development Keys (DK)
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Development Keys (DK)
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 285
-tags: [sonata-form, development, key-relationships, tonal-structure]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Development Keys (DK)

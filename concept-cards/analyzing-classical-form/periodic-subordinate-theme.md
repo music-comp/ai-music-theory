@@ -1,11 +1,12 @@
 ---
-title: Periodic Organization in Subordinate Theme
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Periodic Organization in Subordinate Theme
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 377
-tags: [subordinate-theme, period, antecedent-consequent, rare]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Periodic Organization in Subordinate Theme

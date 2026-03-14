@@ -1,9 +1,12 @@
 ---
 concept: First Species Counterpoint
-category: counterpoint
+category: theory
 source: Open Music Theory
 chapter: "First-Species Counterpoint"
-part: 2
+pdf_page: null
+chapter_number: 2
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # First Species Counterpoint

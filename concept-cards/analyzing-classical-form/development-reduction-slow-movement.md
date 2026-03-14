@@ -1,20 +1,12 @@
 ---
-title: "Development Reduction in Slow Movements"
-card_type: concept
-concept_type: compositional-device
+concept: "Development Reduction in Slow Movements"
 chapter_number: 17
 pdf_page: 615
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - development
-  - slow-movement
-  - formal-compression
-  - contrasting-middle
-related_cards:
-  - slow-movement-sonata
-  - development
-  - core
-  - contrasting-middle
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

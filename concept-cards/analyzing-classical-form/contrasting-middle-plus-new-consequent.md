@@ -1,16 +1,12 @@
 ---
-title: Contrasting Middle + New Consequent (Small Binary)
-category: Formal Units
-tags:
-  - contrasting-middle
-  - new-consequent
-  - small-binary
-  - part-two
-related_concepts:
-  - part-two-small-binary
-  - contrasting-middle
-  - consequent-phrase
+concept: Contrasting Middle + New Consequent (Small Binary)
+category: form
 pdf_page: 272
+chapter_number: 8
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Binary"
 ---
 
 # Contrasting Middle + New Consequent (Small Binary)

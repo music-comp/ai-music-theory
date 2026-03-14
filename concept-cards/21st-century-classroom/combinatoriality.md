@@ -4,7 +4,9 @@ category: technique
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 34: Serialism"
 unit: 12
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 34
 ---
 
 # Quick Definition

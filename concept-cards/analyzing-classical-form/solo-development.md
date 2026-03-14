@@ -1,20 +1,12 @@
 ---
-title: "Solo Development"
-card_type: concept
-concept_type: formal-unit
+concept: "Solo Development"
 chapter_number: 20
 pdf_page: 713
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - solo-development
-  - concerto-form
-  - virtuosity
-  - passage-work
-related_cards:
-  - concerto-form
-  - development
-  - subordinate-key-ritornello
-  - solo-recapitulation
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

@@ -4,7 +4,9 @@ category: form
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 30: Introduction to Counterpoint"
 unit: 10
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 30
 ---
 
 # Quick Definition

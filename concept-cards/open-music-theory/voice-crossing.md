@@ -1,9 +1,12 @@
 ---
 concept: Voice Crossing
-category: fundamentals
+category: theory
 source: Open Music Theory
 chapter: "Roman Numerals and SATB Chord Construction"
-part: 1
+pdf_page: null
+chapter_number: 1
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Voice Crossing

@@ -1,19 +1,12 @@
 ---
-title: "Retrospective Reinterpretation"
-card_type: concept
-concept_type: analytical-concept
-chapter_number: Glossary
+concept: "Retrospective Reinterpretation"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - retrospective-reinterpretation
-  - formal-function
-  - analysis
-  - becomes
-related_cards:
-  - contextual-vs-intrinsic-function
-  - false-closing-section
-  - continuation
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

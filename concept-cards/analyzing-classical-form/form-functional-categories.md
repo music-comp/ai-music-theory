@@ -1,17 +1,12 @@
 ---
-title: Form-Functional Categories
-category: Theoretical Concepts
-tags:
-  - formal-function
-  - temporal-function
-  - beginning-middle-end
-  - hierarchy
-related_concepts:
-  - formal-function
-  - presentation-function
-  - continuation-function
-  - cadential-function
+concept: Form-Functional Categories
+category: theory
 pdf_page: 125
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Form-Functional Categories

@@ -1,6 +1,6 @@
 ---
 concept: Carl Friedrich Weitzmann
-category: historical
+category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Weitzmann Regions"
 chapter_number: 4

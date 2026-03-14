@@ -6,6 +6,7 @@ chapter: "Octave Identification and Modular Arithmetic"
 chapter_number: 7
 pdf_page: 82
 authors: "David Wright"
+unit: null
 ---
 
 # Quick Definition

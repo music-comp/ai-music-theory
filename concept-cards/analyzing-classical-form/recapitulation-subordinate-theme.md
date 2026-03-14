@@ -1,11 +1,12 @@
 ---
-title: Recapitulation Subordinate Theme
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Recapitulation Subordinate Theme
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 303
-tags: [recapitulation, subordinate-theme, transposition, tonal-resolution]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Recapitulation Subordinate Theme

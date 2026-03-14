@@ -1,10 +1,12 @@
 ---
 concept: Chromatic Mediant
-category: harmonic-relations
+category: theory
 source: The Oxford Handbook of Neo-Riemannian Music Theories
-author: David Kopp
+authors: David Kopp
 chapter: "Ch 14: Key and Function in Chromatic/Relational Harmonic Systems"
-part: 4
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Chromatic Mediant

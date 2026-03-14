@@ -1,6 +1,6 @@
 ---
 concept: Whole-Tone Scale
-category: scale-system
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Scale Materials"
 chapter_number: 2

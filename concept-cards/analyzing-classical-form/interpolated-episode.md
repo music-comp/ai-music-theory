@@ -1,19 +1,12 @@
 ---
-title: "Interpolated Episode"
-card_type: concept
-concept_type: compositional-device
+concept: "Interpolated Episode"
 chapter_number: 18
 pdf_page: 643
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - interpolated-episode
-  - minuet-form
-  - new-material
-  - remote-key
-related_cards:
-  - minuet-contrasting-middle
-  - minuet-recapitulation
-  - interpolation
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

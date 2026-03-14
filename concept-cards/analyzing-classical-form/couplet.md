@@ -1,20 +1,12 @@
 ---
-title: "Rondo Couplet"
-card_type: concept
-concept_type: thematic-function
+concept: "Rondo Couplet"
 chapter_number: 19
 pdf_page: 665
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - couplet
-  - rondo
-  - episode
-  - contrast
-related_cards:
-  - rondo-forms-overview
-  - subordinate-theme-complex
-  - interior-theme
-  - refrain
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

@@ -1,19 +1,12 @@
 ---
-title: "Flat-Side Regions"
-card_type: concept
-concept_type: harmonic-concept
-chapter_number: Glossary
+concept: "Flat-Side Regions"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - flat-side
-  - tonal-regions
-  - secondary-development
-  - modulation
-related_cards:
-  - secondary-development-recapitulation
-  - development
-  - development-key
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

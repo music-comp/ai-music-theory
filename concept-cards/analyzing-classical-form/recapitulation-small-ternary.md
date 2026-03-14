@@ -1,17 +1,12 @@
 ---
-title: Recapitulation (A' Section) - Small Ternary
-category: Formal Functions
-tags:
-  - recapitulation
-  - A-prime
-  - small-ternary
-  - return
-related_concepts:
-  - small-ternary
-  - exposition-small-ternary
-  - contrasting-middle
-  - tonal-adjustment
+concept: Recapitulation (A' Section) - Small Ternary
+category: form
 pdf_page: 219
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Recapitulation (A' Section) - Small Ternary

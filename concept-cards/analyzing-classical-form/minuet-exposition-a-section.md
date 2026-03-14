@@ -1,20 +1,12 @@
 ---
-title: "Minuet Exposition (A Section)"
-card_type: concept
-concept_type: formal-unit
+concept: "Minuet Exposition (A Section)"
 chapter_number: 18
 pdf_page: 635
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - minuet-form
-  - exposition
-  - a-section
-  - thematic-function
-related_cards:
-  - minuet-form
-  - main-theme-function-minuet
-  - early-authentic-cadence
-  - transition-subordinate-fusion
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

@@ -1,17 +1,12 @@
 ---
-title: Exposition (A Section) - Small Ternary
-category: Formal Functions
-tags:
-  - exposition
-  - A-section
-  - small-ternary
-  - tight-knit
-related_concepts:
-  - small-ternary
-  - contrasting-middle
-  - recapitulation-small-ternary
-  - tonic-emphasis
+concept: Exposition (A Section) - Small Ternary
+category: form
 pdf_page: 218
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Exposition (A Section) - Small Ternary

@@ -1,9 +1,12 @@
 ---
 concept: Musica Ficta
-category: counterpoint
+category: theory
 source: Open Music Theory
 chapter: "16th-Century Contrapuntal Style"
-part: 2
+pdf_page: null
+chapter_number: 2
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Musica Ficta

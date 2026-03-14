@@ -1,19 +1,12 @@
 ---
-title: "Subordinate Key in Minuet Form"
-card_type: concept
-concept_type: principle
+concept: "Subordinate Key in Minuet Form"
 chapter_number: 18
 pdf_page: 635
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - subordinate-key
-  - minuet-form
-  - tonal-contrast
-  - modulation
-related_cards:
-  - minuet-form
-  - minuet-exposition-a-section
-  - small-ternary
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Importance in Minuet Form

@@ -1,18 +1,12 @@
 ---
-title: Register Adjustment in Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - subordinate-theme
-  - register
-  - transposition
-related:
-  - tonal-adjustment
-  - recapitulation-subordinate-theme
-  - ornamental-changes
+concept: Register Adjustment in Recapitulation
+category: form
 pdf_page: 503
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Register Adjustment in Recapitulation

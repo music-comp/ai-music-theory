@@ -1,20 +1,12 @@
 ---
-title: "Five-Part Rondo"
-card_type: concept
-concept_type: form
+concept: "Five-Part Rondo"
 chapter_number: 19
 pdf_page: 664
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - five-part-rondo
-  - ABACA
-  - slow-movement
-  - interior-theme
-related_cards:
-  - rondo-forms-overview
-  - refrain
-  - couplet
-  - subordinate-theme-complex
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

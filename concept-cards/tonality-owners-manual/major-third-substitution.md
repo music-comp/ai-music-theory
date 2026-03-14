@@ -6,6 +6,7 @@ chapter: "Rock Logic"
 chapter_number: 2
 pdf_page: 47
 authors: "Dmitri Tymoczko"
+unit: null
 ---
 
 # Quick Definition

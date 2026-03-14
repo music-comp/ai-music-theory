@@ -1,10 +1,12 @@
 ---
 concept: Dualistic Forms in Music
-category: form/analysis
+category: analysis
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Dualistic Forms"
-part: 2
 authors: "Alexander Rehding"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Dualistic Forms in Music

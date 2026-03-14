@@ -1,20 +1,12 @@
 ---
-title: "Rondo Refrain"
-card_type: concept
-concept_type: thematic-function
+concept: "Rondo Refrain"
 chapter_number: 19
 pdf_page: 665
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - refrain
-  - rondo
-  - main-theme
-  - periodic-form
-related_cards:
-  - rondo-forms-overview
-  - five-part-rondo
-  - sonata-rondo
-  - returns-of-main-theme
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

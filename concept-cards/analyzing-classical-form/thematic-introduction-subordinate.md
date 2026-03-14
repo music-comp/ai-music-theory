@@ -1,11 +1,12 @@
 ---
-title: Thematic Introduction to Subordinate Theme
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Thematic Introduction to Subordinate Theme
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 422
-tags: [subordinate-theme, thematic-introduction, preparation, anacrusis]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Thematic Introduction to Subordinate Theme

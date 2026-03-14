@@ -1,15 +1,12 @@
 ---
-title: Harmonic Acceleration
-category: Compositional Techniques
-tags:
-  - harmonic-rhythm
-  - continuation-function
-  - harmonic-acceleration
-related_concepts:
-  - continuation-phrase
-  - fragmentation
-  - surface-rhythm
+concept: Harmonic Acceleration
+category: technique
 pdf_page: 73
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Harmonic Acceleration

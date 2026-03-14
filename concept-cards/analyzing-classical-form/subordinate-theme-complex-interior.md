@@ -1,20 +1,12 @@
 ---
-title: "Interior Theme as Subordinate-Theme Complex"
-card_type: concept
-concept_type: formal-type
+concept: "Interior Theme as Subordinate-Theme Complex"
 chapter_number: 17
 pdf_page: 604
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - interior-theme
-  - subordinate-theme-complex
-  - large-ternary
-  - minore
-related_cards:
-  - interior-theme
-  - subordinate-theme
-  - transition
-  - retransition
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

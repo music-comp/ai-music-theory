@@ -1,19 +1,12 @@
 ---
-title: "Double-Region Couplet"
-card_type: concept
-concept_type: formal-type
+concept: "Double-Region Couplet"
 chapter_number: 19
 pdf_page: 683
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - double-region-couplet
-  - mozart
-  - sonata-rondo
-  - submediant
-related_cards:
-  - sonata-rondo
-  - couplet
-  - interior-theme-rondo
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

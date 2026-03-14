@@ -1,16 +1,12 @@
 ---
-title: Fragmentation
-category: Compositional Techniques
-tags:
-  - fragmentation
-  - grouping-structure
-  - continuation-function
-  - phrase-structure
-related_concepts:
-  - continuation-phrase
-  - continuation-function
-  - model-sequence-technique
+concept: Fragmentation
+category: technique
 pdf_page: 70
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Fragmentation

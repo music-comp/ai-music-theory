@@ -1,17 +1,12 @@
 ---
-title: Characteristic vs. Conventional Melody
-category: Theoretical Concepts
-tags:
-  - characteristic-melody
-  - conventional-melody
-  - basic-idea
-  - cadential-material
-related_concepts:
-  - basic-idea
-  - cadential-idea
-  - liquidation
-  - melodic-content
+concept: Characteristic vs. Conventional Melody
+category: theory
 pdf_page: 78
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Characteristic vs. Conventional Melody

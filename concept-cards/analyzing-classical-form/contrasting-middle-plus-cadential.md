@@ -1,16 +1,12 @@
 ---
-title: Contrasting Middle + Cadential (Small Binary)
-category: Formal Units
-tags:
-  - contrasting-middle
-  - cadential
-  - small-binary
-  - ECP
-related_concepts:
-  - part-two-small-binary
-  - contrasting-middle
-  - expanded-cadential-progression
+concept: Contrasting Middle + Cadential (Small Binary)
+category: form
 pdf_page: 270
+chapter_number: 8
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Binary"
 ---
 
 # Contrasting Middle + Cadential (Small Binary)

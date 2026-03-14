@@ -1,6 +1,6 @@
 ---
 concept: GIS Condition B
-category: mathematical-foundation
+category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Interval Systems (1): Preliminary Examples and Definition"
 chapter_number: 2

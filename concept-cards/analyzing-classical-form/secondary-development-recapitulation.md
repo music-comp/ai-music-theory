@@ -1,20 +1,12 @@
 ---
-title: "Secondary Development in Recapitulation"
-card_type: concept
-concept_type: compositional-device
+concept: "Secondary Development in Recapitulation"
 chapter_number: 17
 pdf_page: 594
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - secondary-development
-  - recapitulation
-  - sonata-without-development
-  - developmental-technique
-related_cards:
-  - sonata-without-development
-  - recapitulation
-  - development
-  - model-sequence-technique
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

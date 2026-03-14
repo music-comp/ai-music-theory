@@ -1,11 +1,12 @@
 ---
-title: Two-Part Transition
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Two-Part Transition
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 361
-tags: [transition, two-part, modulation, home-key]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Two-Part Transition

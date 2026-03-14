@@ -1,20 +1,12 @@
 ---
-title: "First Hearing of Refrain 2"
-card_type: concept
-concept_type: analytical-issue
+concept: "First Hearing of Refrain 2"
 chapter_number: 19
 pdf_page: 678
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - refrain
-  - formal-ambiguity
-  - first-hearing
-  - rondo
-related_cards:
-  - refrain
-  - returns-of-main-theme
-  - sonata-without-development
-  - large-ternary-form
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## The Interpretive Problem

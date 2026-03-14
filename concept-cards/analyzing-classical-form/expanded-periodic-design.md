@@ -1,11 +1,12 @@
 ---
-title: Expanded Periodic Design
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Expanded Periodic Design
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 417
-tags: [subordinate-theme, period, consequent-expansion, antecedent]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Expanded Periodic Design

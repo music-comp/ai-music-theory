@@ -1,18 +1,12 @@
 ---
-title: Deletion Due to Development Use
-category: Sonata Form
-tags:
-  - recapitulation
-  - development
-  - deletion
-  - structural-changes
-related:
-  - influence-of-development-on-recapitulation
-  - structural-changes-recapitulation
-  - deletion-thematic-restatements
+concept: Deletion Due to Development Use
+category: form
 pdf_page: 521
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Deletion Due to Development Use

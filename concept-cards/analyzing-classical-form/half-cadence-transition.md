@@ -1,11 +1,12 @@
 ---
-title: Half Cadence in Transition
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Half Cadence in Transition
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 350
-tags: [half-cadence, transition, dominant, pre-dominant]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Half Cadence in Transition

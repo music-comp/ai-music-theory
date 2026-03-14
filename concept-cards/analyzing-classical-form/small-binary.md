@@ -1,17 +1,12 @@
 ---
-title: Small Binary
-category: Theme Types
-tags:
-  - small-binary
-  - binary-form
-  - two-part
-  - no-recapitulation
-related_concepts:
-  - rounded-binary
-  - small-ternary
-  - variations-theme
-  - part-one-small-binary
+concept: Small Binary
+category: form
 pdf_page: 260
+chapter_number: 8
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Binary"
 ---
 
 # Small Binary

@@ -1,19 +1,12 @@
 ---
-title: "Variation Finale"
-card_type: concept
-concept_type: compositional-device
+concept: "Variation Finale"
 chapter_number: 17
 pdf_page: 592
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - theme-and-variations
-  - finale
-  - tempo-change
-  - formal-culmination
-related_cards:
-  - theme-and-variations
-  - coda-variations
-  - extensions-interpolations-variations
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

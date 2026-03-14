@@ -1,18 +1,12 @@
 ---
-title: Modal Shift in Coda
-category: Sonata Form
-tags:
-  - coda
-  - modal-shift
-  - minor-mode
-  - expressive-device
-related:
-  - coda-phrase-structure
-  - coda-theme
-  - modal-borrowing
+concept: Modal Shift in Coda
+category: form
 pdf_page: 552
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Modal Shift in Coda

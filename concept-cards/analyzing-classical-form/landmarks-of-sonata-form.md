@@ -1,11 +1,12 @@
 ---
-title: Landmarks of Sonata Form
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Landmarks of Sonata Form
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 284
-tags: [sonata-form, formal-analysis, landmarks, boundaries]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Landmarks of Sonata Form

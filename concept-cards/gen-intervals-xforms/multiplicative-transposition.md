@@ -1,6 +1,6 @@
 ---
 concept: Multiplicative Transposition
-category: mathematical-foundation
+category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10

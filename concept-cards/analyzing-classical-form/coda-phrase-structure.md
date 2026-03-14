@@ -1,18 +1,12 @@
 ---
-title: Phrase-structural Organization of Coda
-category: Sonata Form
-tags:
-  - coda
-  - phrase-structure
-  - coda-theme
-  - formal-organization
-related:
-  - coda-theme
-  - subordinate-theme
-  - loosening-devices
+concept: Phrase-structural Organization of Coda
+category: form
 pdf_page: 551
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Phrase-structural Organization of Coda

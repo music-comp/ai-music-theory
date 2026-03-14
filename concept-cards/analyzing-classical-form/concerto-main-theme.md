@@ -1,19 +1,12 @@
 ---
-title: "Concerto Main Theme"
-card_type: concept
-concept_type: thematic-function
+concept: "Concerto Main Theme"
 chapter_number: 20
 pdf_page: 703
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - main-theme
-  - concerto-form
-  - compound-sentence
-  - tight-knit
-related_cards:
-  - opening-ritornello
-  - solo-exposition
-  - alternative-main-theme
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

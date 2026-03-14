@@ -1,11 +1,12 @@
 ---
-title: Subordinate Theme Overview
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Subordinate Theme Overview
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 290
-tags: [subordinate-theme, exposition, loose-organization, cadential-closure]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Subordinate Theme Overview

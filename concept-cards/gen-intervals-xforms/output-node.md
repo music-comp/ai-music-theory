@@ -1,6 +1,6 @@
 ---
 concept: Output Node
-category: mathematical-foundation
+category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9

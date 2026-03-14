@@ -1,17 +1,12 @@
 ---
-title: Phrase Function vs. Grouping Structure
-category: Theoretical Concepts
-tags:
-  - phrase-function
-  - grouping-structure
-  - formal-function
-  - terminology
-related_concepts:
-  - grouping-structure
-  - formal-function
-  - presentation-phrase
-  - continuation-phrase
+concept: Phrase Function vs. Grouping Structure
+category: theory
 pdf_page: 68
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Phrase Function vs. Grouping Structure

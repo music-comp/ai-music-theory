@@ -1,11 +1,12 @@
 ---
-title: Beginning with Cadential Function
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Beginning with Cadential Function
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 414
-tags: [subordinate-theme, cadential, ecp, initiation]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Beginning with Cadential Function

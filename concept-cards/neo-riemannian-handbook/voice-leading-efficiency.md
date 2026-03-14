@@ -1,10 +1,12 @@
 ---
 concept: Voice-Leading Efficiency / Parsimonious Motion
-category: theory/counterpoint
+category: theory
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Inversional Symmetry and Voice Leading"
-part: 2
 authors: "Dmitri Tymoczko"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Voice-Leading Efficiency / Parsimonious Motion

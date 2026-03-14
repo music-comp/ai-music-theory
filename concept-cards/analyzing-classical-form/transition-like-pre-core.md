@@ -1,18 +1,12 @@
 ---
-title: Transition-like Pre-core
-category: Sonata Form
-tags:
-  - development
-  - pre-core
-  - transition
-  - modulation
-related:
-  - pre-core
-  - pre-core-phrase-structure
-  - transition
+concept: Transition-like Pre-core
+category: form
 pdf_page: 467
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Transition-like Pre-core

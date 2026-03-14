@@ -1,6 +1,6 @@
 ---
 concept: "Vogler's Hexatonic Anticipation"
-category: historical
+category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Reciprocity"
 chapter_number: 3

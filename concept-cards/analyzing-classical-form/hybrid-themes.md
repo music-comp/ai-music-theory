@@ -1,16 +1,12 @@
 ---
-title: Hybrid Themes
-category: Theme Types
-tags:
-  - hybrid
-  - theme-type
-  - sentence-period-combination
-related_concepts:
-  - sentence
-  - period
-  - compound-basic-idea
-  - antecedent-phrase
+concept: Hybrid Themes
+category: form
 pdf_page: 121
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Hybrid Themes

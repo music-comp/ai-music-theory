@@ -1,11 +1,12 @@
 ---
-title: Subordinate Theme Basics
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Subordinate Theme Basics
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 375
-tags: [subordinate-theme, exposition, loose-organization, pac]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Subordinate Theme Basics

@@ -4,7 +4,9 @@ category: theory
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 16: Figured Bass"
 unit: 4
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 16
 ---
 
 # Quick Definition

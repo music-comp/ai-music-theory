@@ -1,16 +1,12 @@
 ---
-title: Textural Dissolution
-category: Compositional Techniques
-tags:
-  - textural-dissolution
-  - standing-on-dominant
-  - texture
-  - recapitulation-preparation
-related_concepts:
-  - postcadential-standing-on-dominant
-  - contrasting-middle
-  - recapitulation-small-ternary
+concept: Textural Dissolution
+category: technique
 pdf_page: 235
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Textural Dissolution

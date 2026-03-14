@@ -1,6 +1,6 @@
 ---
 concept: Evolutionary Stages of Chromatic Syntax
-category: historical
+category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Double Syntax and the Soft Revolution"
 chapter_number: 9

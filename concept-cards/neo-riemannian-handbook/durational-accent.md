@@ -1,10 +1,12 @@
 ---
 concept: Durational Accent
-category: metric-theory
+category: theory
 source: The Oxford Handbook of Neo-Riemannian Music Theories
-author: William E. Caplin
+authors: William E. Caplin
 chapter: "Ch 15: Riemann's Theories of Rhythm and Meter"
-part: 5
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Durational Accent

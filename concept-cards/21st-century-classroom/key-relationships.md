@@ -4,7 +4,9 @@ category: theory
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 22: Modulation"
 unit: 7
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 22
 ---
 
 # Quick Definition

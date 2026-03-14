@@ -1,19 +1,12 @@
 ---
-title: "Da Capo"
-card_type: concept
-concept_type: formal-unit
+concept: "Da Capo"
 chapter_number: 18
 pdf_page: 630
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - da-capo
-  - minuet-trio
-  - return
-  - baroque-practice
-related_cards:
-  - minuet-trio-form
-  - minuet-form
-  - trio
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

@@ -1,9 +1,12 @@
 ---
 concept: Neighbor-Tone Derivation of Common-Tone Chords
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Common-Tone Chords (CTo7 & CT+6)"
-part: 5
+pdf_page: null
+chapter_number: 5
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Neighbor-Tone Derivation of Common-Tone Chords

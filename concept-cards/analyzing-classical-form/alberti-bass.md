@@ -1,11 +1,12 @@
 ---
-title: Conventional Accompanimental Patterns
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Conventional Accompanimental Patterns
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 337
-tags: [accompaniment, alberti-bass, drum-bass, murky-bass]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Conventional Accompanimental Patterns

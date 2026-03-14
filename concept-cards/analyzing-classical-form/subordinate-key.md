@@ -1,11 +1,12 @@
 ---
-title: Subordinate Key (SK)
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Subordinate Key (SK)
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 285
-tags: [sonata-form, tonal-structure, key-relationships, subordinate-key]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Subordinate Key (SK)

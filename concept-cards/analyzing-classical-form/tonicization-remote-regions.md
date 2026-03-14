@@ -1,11 +1,12 @@
 ---
-title: Tonicization of Remote Regions
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Tonicization of Remote Regions
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 419
-tags: [subordinate-theme, tonicization, remote-keys, loosening]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Tonicization of Remote Regions

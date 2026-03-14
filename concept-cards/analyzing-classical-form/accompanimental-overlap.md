@@ -1,11 +1,12 @@
 ---
-title: Accompanimental Overlap
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Accompanimental Overlap
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 337
-tags: [boundary-process, accompaniment, overlap, transition]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Accompanimental Overlap

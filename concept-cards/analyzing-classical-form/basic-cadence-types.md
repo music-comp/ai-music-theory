@@ -1,18 +1,12 @@
 ---
-title: Basic Cadence Types
-category: Cadences
-tags:
-  - cadence
-  - PAC
-  - IAC
-  - HC
-  - cadential-closure
-related_concepts:
-  - perfect-authentic-cadence
-  - imperfect-authentic-cadence
-  - half-cadence
-  - cadential-progression
+concept: Basic Cadence Types
+category: theory
 pdf_page: 78
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Basic Cadence Types

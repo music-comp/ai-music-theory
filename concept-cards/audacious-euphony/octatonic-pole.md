@@ -1,6 +1,6 @@
 ---
 concept: Octatonic Pole
-category: transformation
+category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Dissonance"
 chapter_number: 7

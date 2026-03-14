@@ -1,17 +1,12 @@
 ---
-title: Simple Themes
-category: Theme Types
-tags:
-  - simple-theme
-  - eight-measure
-  - sentence
-  - period
-related_concepts:
-  - sentence
-  - period
-  - hybrid-themes
-  - compound-themes
+concept: Simple Themes
+category: form
 pdf_page: 188
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Simple Themes

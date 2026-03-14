@@ -1,9 +1,12 @@
 ---
 concept: Antiphony
-category: orchestration
+category: theory
 source: Open Music Theory
 chapter: "Core Principles of Orchestration"
-part: 10
+pdf_page: null
+chapter_number: 10
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Antiphony

@@ -1,17 +1,12 @@
 ---
-title: Motivic Development in Recapitulation
-category: Compositional Techniques
-tags:
-  - motivic-development
-  - recapitulation
-  - A-prime
-  - expansion
-related_concepts:
-  - expanded-recapitulation
-  - recapitulation-small-ternary
-  - contrasting-middle
-  - model-sequence-technique
+concept: Motivic Development in Recapitulation
+category: technique
 pdf_page: 241
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Motivic Development in Recapitulation

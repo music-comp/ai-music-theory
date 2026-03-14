@@ -1,18 +1,12 @@
 ---
-title: Development vs. Contrasting Middle
-category: Sonata Form
-tags:
-  - development
-  - contrasting-middle
-  - small-ternary
-  - formal-comparison
-related:
-  - development-section
-  - contrasting-middle
-  - small-ternary
+concept: Development vs. Contrasting Middle
+category: form
 pdf_page: 442
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Development vs. Contrasting Middle

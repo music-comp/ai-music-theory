@@ -1,11 +1,12 @@
 ---
-title: Beginning with Continuation Function
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Beginning with Continuation Function
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 413
-tags: [subordinate-theme, continuation, model-sequence, initiation]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Beginning with Continuation Function

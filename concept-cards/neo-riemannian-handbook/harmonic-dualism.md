@@ -1,10 +1,12 @@
 ---
 concept: Harmonic Dualism
-category: harmony/theory
+category: theory
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapters 5-8 (Bent, Klumpenhouwer, Rehding, Tymoczko)"
-part: 2
 authors: "Ian Bent, Henry Klumpenhouwer, Alexander Rehding, Dmitri Tymoczko"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Harmonic Dualism

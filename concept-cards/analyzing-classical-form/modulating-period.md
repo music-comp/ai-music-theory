@@ -1,17 +1,12 @@
 ---
-title: Modulating Period
-category: Theme Types
-tags:
-  - period
-  - modulation
-  - subordinate-key
-  - consequent
-related_concepts:
-  - period
-  - modulation
-  - cadential-strength
-  - PAC
+concept: Modulating Period
+category: form
 pdf_page: 112
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Modulating Period

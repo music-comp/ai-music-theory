@@ -1,20 +1,12 @@
 ---
-title: "Minuet/Trio Form: Functional Relations"
-card_type: concept
-concept_type: analytical-issue
+concept: "Minuet/Trio Form: Functional Relations"
 chapter_number: 18
 pdf_page: 655
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - minuet-trio
-  - formal-function
-  - large-ternary
-  - ternary-structure
-related_cards:
-  - minuet-trio-form
-  - large-ternary-form
-  - small-ternary
-  - trio
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Ternary Appearance

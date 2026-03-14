@@ -1,16 +1,12 @@
 ---
-title: Tight-Knit vs. Loose Organization
-category: Theoretical Concepts
-tags:
-  - tight-knit
-  - loose
-  - formal-organization
-  - stability
-related_concepts:
-  - exposition-small-ternary
-  - contrasting-middle
-  - formal-function
+concept: Tight-Knit vs. Loose Organization
+category: theory
 pdf_page: 225
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Tight-Knit vs. Loose Organization

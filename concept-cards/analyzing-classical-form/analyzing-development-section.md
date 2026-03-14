@@ -1,19 +1,12 @@
 ---
-title: Analyzing a Development Section
-category: Analytical Method
-tags:
-  - development
-  - analysis
-  - methodology
-  - core
-  - pre-core
-related:
-  - core
-  - pre-core
-  - pre-core-core-technique
+concept: Analyzing a Development Section
+category: analysis
 pdf_page: 448
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Analyzing a Development Section

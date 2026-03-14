@@ -1,17 +1,12 @@
 ---
-title: Half Cadence Conditions
-category: Cadences
-tags:
-  - half-cadence
-  - HC
-  - dominant
-  - cadential-conditions
-related_concepts:
-  - half-cadence
-  - dominant-arrival
-  - cadential-progression
-  - standing-on-the-dominant
+concept: Half Cadence Conditions
+category: theory
 pdf_page: 166
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Half Cadence Conditions

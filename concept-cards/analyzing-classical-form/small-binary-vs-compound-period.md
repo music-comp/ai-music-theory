@@ -1,17 +1,12 @@
 ---
-title: Small Binary vs. Compound Period
-category: Analytical Methods
-tags:
-  - small-binary
-  - compound-period
-  - distinction
-  - repetition
-related_concepts:
-  - small-binary
-  - compound-period
-  - compound-antecedent
-  - part-one-small-binary
+concept: Small Binary vs. Compound Period
+category: analysis
 pdf_page: 267
+chapter_number: 8
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Binary"
 ---
 
 # Small Binary vs. Compound Period

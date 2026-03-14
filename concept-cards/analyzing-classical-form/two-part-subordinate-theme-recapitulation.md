@@ -1,18 +1,12 @@
 ---
-title: Two-Part Subordinate Theme in Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - subordinate-theme
-  - two-part-theme
-  - structural-changes
-related:
-  - recapitulation-subordinate-theme
-  - two-part-subordinate-theme
-  - internal-half-cadence
+concept: Two-Part Subordinate Theme in Recapitulation
+category: form
 pdf_page: 519
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Two-Part Subordinate Theme in Recapitulation

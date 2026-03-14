@@ -1,10 +1,12 @@
 ---
 concept: Contextual Harmony and Context-Sensitive Analysis
-category: analytical-methodology
+category: analysis
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapter 19: Chromatic Music and Analytical Frameworks"
-author: Robert C. Cook
-part: 6
+authors: Robert C. Cook
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Contextual Harmony and Context-Sensitive Analysis

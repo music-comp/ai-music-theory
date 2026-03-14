@@ -6,6 +6,7 @@ chapter: "Prelude: Functional and Scale-Degree Analysis"
 chapter_number: null
 pdf_page: 253
 authors: "Dmitri Tymoczko"
+unit: null
 ---
 
 # Quick Definition

@@ -1,11 +1,12 @@
 ---
-title: False Closing Section
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: False Closing Section
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 342
-tags: [transition, false-closing-section, codetta, presentation]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## False Closing Section

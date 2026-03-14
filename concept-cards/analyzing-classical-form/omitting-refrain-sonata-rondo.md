@@ -1,19 +1,12 @@
 ---
-title: "Omitting a Refrain in Sonata-Rondo"
-card_type: concept
-concept_type: compositional-device
+concept: "Omitting a Refrain in Sonata-Rondo"
 chapter_number: 19
 pdf_page: 683
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - sonata-rondo
-  - refrain
-  - omission
-  - mozart
-related_cards:
-  - sonata-rondo
-  - refrain
-  - coda-rondo
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Rationale

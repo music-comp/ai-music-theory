@@ -1,16 +1,12 @@
 ---
-title: Sequential Return of Basic Idea
-category: Compositional Techniques
-tags:
-  - sequential-return
-  - basic-idea
-  - consequent
-  - destabilization
-related_concepts:
-  - return-of-basic-idea
-  - sequential-repetition
-  - consequent-phrase
+concept: Sequential Return of Basic Idea
+category: technique
 pdf_page: 102
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Sequential Return of Basic Idea

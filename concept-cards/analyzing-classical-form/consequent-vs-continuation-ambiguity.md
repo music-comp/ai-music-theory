@@ -1,17 +1,12 @@
 ---
-title: Consequent vs. Continuation Ambiguity
-category: Analytical Methods
-tags:
-  - consequent
-  - continuation
-  - phrase-ambiguity
-  - analysis
-related_concepts:
-  - consequent-phrase
-  - continuation-phrase
-  - return-of-basic-idea
-  - fragmentation
+concept: Consequent vs. Continuation Ambiguity
+category: analysis
 pdf_page: 135
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Consequent vs. Continuation Ambiguity

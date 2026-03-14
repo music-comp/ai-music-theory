@@ -1,10 +1,12 @@
 ---
 concept: Transformational Theory / Group Theory Foundations
-category: theory/transformation
+category: technique
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Chapters 6-8"
-part: 2
 authors: "Henry Klumpenhouwer, Alexander Rehding, Dmitri Tymoczko"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Transformational Theory / Group Theory Foundations

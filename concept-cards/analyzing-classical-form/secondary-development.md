@@ -1,18 +1,12 @@
 ---
-title: Secondary Development
-category: Sonata Form
-tags:
-  - recapitulation
-  - model-sequence
-  - motivic-development
-  - charles-rosen
-related:
-  - structural-changes-recapitulation
-  - tonal-adjustment
-  - model-sequence-technique
+concept: Secondary Development
+category: form
 pdf_page: 507
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Secondary Development

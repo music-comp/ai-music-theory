@@ -1,20 +1,12 @@
 ---
-title: "Ritornello"
-card_type: concept
-concept_type: formal-unit
+concept: "Ritornello"
 chapter_number: 20
 pdf_page: 694
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - ritornello
-  - concerto-form
-  - orchestral
-  - tutti
-related_cards:
-  - concerto-form
-  - opening-ritornello
-  - subordinate-key-ritornello
-  - closing-ritornello
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

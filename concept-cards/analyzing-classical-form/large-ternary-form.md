@@ -1,20 +1,12 @@
 ---
-title: "Large Ternary Form"
-card_type: concept
-concept_type: form
+concept: "Large Ternary Form"
 chapter_number: 17
 pdf_page: 587
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - slow-movement-forms
-  - ternary-form
-  - full-movement-form
-  - ABA-form
-related_cards:
-  - small-ternary
-  - interior-theme
-  - main-theme
-  - minore
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

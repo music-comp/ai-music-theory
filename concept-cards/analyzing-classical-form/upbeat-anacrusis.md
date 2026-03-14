@@ -1,16 +1,12 @@
 ---
-title: Upbeat (Anacrusis)
-category: Compositional Techniques
-tags:
-  - upbeat
-  - anacrusis
-  - basic-idea
-  - phrase-boundaries
-related_concepts:
-  - basic-idea
-  - phrase-structure
-  - meter
+concept: Upbeat (Anacrusis)
+category: technique
 pdf_page: 60
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Upbeat (Anacrusis)

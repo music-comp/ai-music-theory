@@ -1,17 +1,12 @@
 ---
-title: Contrasting Middle + Further Dominant Prolongation (Small Binary)
-category: Formal Units
-tags:
-  - contrasting-middle
-  - dominant-prolongation
-  - small-binary
-  - deceptive-resolution
-related_concepts:
-  - part-two-small-binary
-  - contrasting-middle
-  - dominant-prolongation
-  - vi-chord
+concept: Contrasting Middle + Further Dominant Prolongation (Small Binary)
+category: form
 pdf_page: 273
+chapter_number: 8
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Binary"
 ---
 
 # Contrasting Middle + Further Dominant Prolongation (Small Binary)

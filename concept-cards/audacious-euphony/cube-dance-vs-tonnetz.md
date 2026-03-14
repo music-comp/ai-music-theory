@@ -1,6 +1,6 @@
 ---
 concept: Cube Dance vs. Tonnetz
-category: spatial-model
+category: analysis
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "A Unified Model of Triadic Voice-Leading Space"
 chapter_number: 5

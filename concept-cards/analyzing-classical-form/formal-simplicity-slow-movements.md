@@ -1,20 +1,12 @@
 ---
-title: "Formal Simplicity in Slow Movements"
-card_type: concept
-concept_type: principle
+concept: "Formal Simplicity in Slow Movements"
 chapter_number: 17
 pdf_page: 587
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - slow-movement
-  - formal-organization
-  - movement-length
-  - formal-complexity
-related_cards:
-  - large-ternary-form
-  - theme-and-variations
-  - sonata-without-development
-  - five-part-rondo
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Principle

@@ -1,18 +1,12 @@
 ---
-title: Shaping a New Dynamic Curve in Coda
-category: Sonata Form
-tags:
-  - coda
-  - dynamics
-  - compensatory-function
-  - expression
-related:
-  - compensatory-functions-coda
-  - beethoven
-  - closing-section
+concept: Shaping a New Dynamic Curve in Coda
+category: form
 pdf_page: 563
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Shaping a New Dynamic Curve in Coda

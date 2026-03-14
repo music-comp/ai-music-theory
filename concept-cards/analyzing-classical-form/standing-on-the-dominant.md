@@ -1,11 +1,12 @@
 ---
-title: Standing on the Dominant
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Standing on the Dominant
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 351
-tags: [standing-on-dominant, transition, dominant-prolongation, postcadential]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Standing on the Dominant

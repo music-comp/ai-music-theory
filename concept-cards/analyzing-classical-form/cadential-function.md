@@ -1,17 +1,12 @@
 ---
-title: Cadential Function
-category: Formal Functions
-tags:
-  - cadential
-  - formal-function
-  - concluding-function
-  - cadence
-related_concepts:
-  - continuation-phrase
-  - cadential-idea
-  - cadential-progression
-  - liquidation
+concept: Cadential Function
+category: form
 pdf_page: 77
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Cadential Function

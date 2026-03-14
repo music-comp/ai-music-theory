@@ -1,18 +1,12 @@
 ---
-title: Slow Introduction Tonal Organization
-category: Sonata Form
-tags:
-  - slow-introduction
-  - tonal-organization
-  - dominant
-  - home-key
-related:
-  - slow-introduction-section
-  - standing-on-dominant
-  - half-cadence
+concept: Slow Introduction Tonal Organization
+category: form
 pdf_page: 578
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Slow Introduction Tonal Organization

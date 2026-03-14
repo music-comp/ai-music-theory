@@ -1,18 +1,12 @@
 ---
-title: Slow Introduction Section
-category: Sonata Form
-tags:
-  - slow-introduction
-  - sonata-form
-  - before-the-beginning
-  - formal-section
-related:
-  - exposition
-  - thematic-introduction
-  - framing-function
+concept: Slow Introduction Section
+category: form
 pdf_page: 573
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Slow Introduction Section

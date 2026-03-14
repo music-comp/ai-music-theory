@@ -1,6 +1,6 @@
 ---
 concept: "Weitzmann's Six-Triad Cluster"
-category: spatial-model
+category: analysis
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Reciprocity"
 chapter_number: 3

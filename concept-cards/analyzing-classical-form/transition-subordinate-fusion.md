@@ -1,21 +1,12 @@
 ---
-title: "Transition/Subordinate-Theme Fusion"
-card_type: concept
-concept_type: compositional-device
+concept: "Transition/Subordinate-Theme Fusion"
 chapter_number: 17
 pdf_page: 612
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - fusion
-  - transition
-  - subordinate-theme
-  - slow-movement
-  - form-compression
-related_cards:
-  - slow-movement-sonata
-  - transition
-  - subordinate-theme
-  - form-functional-fusion
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

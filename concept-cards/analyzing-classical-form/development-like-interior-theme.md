@@ -1,20 +1,12 @@
 ---
-title: "Development-like Interior Theme"
-card_type: concept
-concept_type: formal-type
+concept: "Development-like Interior Theme"
 chapter_number: 17
 pdf_page: 604
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - interior-theme
-  - development
-  - large-ternary
-  - model-sequence
-related_cards:
-  - interior-theme
-  - large-ternary-form
-  - developmental-core
-  - model-sequence-technique
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

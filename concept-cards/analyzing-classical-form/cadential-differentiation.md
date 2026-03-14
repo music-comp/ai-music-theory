@@ -1,17 +1,12 @@
 ---
-title: Cadential Differentiation
-category: Theoretical Concepts
-tags:
-  - cadential-differentiation
-  - period
-  - weak-to-strong
-  - cadential-strength
-related_concepts:
-  - period
-  - antecedent-phrase
-  - consequent-phrase
-  - cadential-strength
+concept: Cadential Differentiation
+category: theory
 pdf_page: 96
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Cadential Differentiation

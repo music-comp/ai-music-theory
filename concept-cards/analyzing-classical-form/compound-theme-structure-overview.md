@@ -1,15 +1,12 @@
 ---
-title: Compound Theme Structure Overview
-category: Analytical Methods
-tags:
-  - compound-theme
-  - structural-overview
-  - sixteen-measure
-related_concepts:
-  - compound-period
-  - compound-sentence
-  - compound-themes
+concept: Compound Theme Structure Overview
+category: analysis
 pdf_page: 188
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Compound Theme Structure Overview

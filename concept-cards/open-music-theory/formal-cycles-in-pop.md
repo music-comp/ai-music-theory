@@ -3,7 +3,10 @@ concept: Formal Cycles in Pop Music
 category: form
 source: Open Music Theory
 chapter: "Verse-Chorus Form"
-part: 7
+pdf_page: null
+chapter_number: 7
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 ## Quick Definition

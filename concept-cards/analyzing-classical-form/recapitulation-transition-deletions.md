@@ -1,18 +1,12 @@
 ---
-title: Transition Deletions and Compressions
-category: Sonata Form
-tags:
-  - recapitulation
-  - transition
-  - structural-changes
-  - formal-compression
-related:
-  - structural-changes-recapitulation
-  - tonal-adjustment
-  - recapitulation-transition
+concept: Transition Deletions and Compressions
+category: form
 pdf_page: 511
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Transition Deletions and Compressions

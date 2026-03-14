@@ -1,20 +1,12 @@
 ---
-title: "Double Variations Form"
-card_type: concept
-concept_type: form
+concept: "Double Variations Form"
 chapter_number: 17
 pdf_page: 591
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - double-variations
-  - alternating-variations
-  - theme-and-variations
-  - haydn
-related_cards:
-  - theme-and-variations
-  - minore-maggiore
-  - small-ternary
-  - small-binary
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

@@ -1,9 +1,12 @@
 ---
 concept: Piano-to-Orchestra Transcription
-category: orchestration
+category: theory
 source: Open Music Theory
 chapter: "Transcription from Piano"
-part: 10
+pdf_page: null
+chapter_number: 10
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Piano-to-Orchestra Transcription

@@ -1,17 +1,12 @@
 ---
-title: Sequential Repetition
-category: Compositional Techniques
-tags:
-  - repetition
-  - sequence
-  - model-sequence
-  - presentation-phrase
-related_concepts:
-  - basic-idea
-  - exact-repetition
-  - statement-response-repetition
-  - model-sequence-technique
+concept: Sequential Repetition
+category: technique
 pdf_page: 66
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Sequential Repetition

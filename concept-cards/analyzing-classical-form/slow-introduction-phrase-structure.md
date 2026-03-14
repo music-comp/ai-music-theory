@@ -1,18 +1,12 @@
 ---
-title: Slow Introduction Phrase Structure
-category: Sonata Form
-tags:
-  - slow-introduction
-  - phrase-structure
-  - formal-organization
-  - loosening
-related:
-  - slow-introduction-section
-  - bipartite-form
-  - tripartite-form
+concept: Slow Introduction Phrase Structure
+category: form
 pdf_page: 578
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Slow Introduction Phrase Structure

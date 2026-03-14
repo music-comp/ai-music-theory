@@ -1,17 +1,12 @@
 ---
-title: Antecedent + Cadential (Hybrid Type 2)
-category: Theme Types
-tags:
-  - hybrid
-  - antecedent
-  - cadential
-  - expanded-cadential-progression
-related_concepts:
-  - hybrid-themes
-  - antecedent-phrase
-  - cadential-function
-  - expanded-cadential-progression
+concept: Antecedent + Cadential (Hybrid Type 2)
+category: form
 pdf_page: 123
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Antecedent + Cadential (Hybrid Type 2)

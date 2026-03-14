@@ -4,7 +4,9 @@ category: analysis
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 21: Augmented Sixth Chords"
 unit: 6
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 21
 ---
 
 # Quick Definition

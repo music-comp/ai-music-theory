@@ -1,18 +1,12 @@
 ---
-title: Influence of Development on Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - development
-  - structural-changes
-  - compositional-logic
-related:
-  - structural-changes-recapitulation
-  - development-section
-  - secondary-development
+concept: Influence of Development on Recapitulation
+category: form
 pdf_page: 521
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Influence of Development on Recapitulation

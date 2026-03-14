@@ -6,6 +6,7 @@ chapter: "Prelude: Sequence and Function"
 chapter_number: null
 pdf_page: 151
 authors: "Dmitri Tymoczko"
+unit: null
 ---
 
 # Quick Definition

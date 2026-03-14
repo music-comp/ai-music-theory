@@ -1,17 +1,12 @@
 ---
-title: Expanded Recapitulation
-category: Compositional Techniques
-tags:
-  - expanded-recapitulation
-  - A-prime
-  - small-ternary
-  - motivic-development
-related_concepts:
-  - recapitulation-small-ternary
-  - phrase-extension
-  - motivic-development
-  - internal-expansion
+concept: Expanded Recapitulation
+category: technique
 pdf_page: 241
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Expanded Recapitulation

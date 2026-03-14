@@ -1,20 +1,12 @@
 ---
-title: "Solo Exposition"
-card_type: concept
-concept_type: formal-unit
+concept: "Solo Exposition"
 chapter_number: 20
 pdf_page: 706
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - solo-exposition
-  - concerto-form
-  - alternative-main-theme
-  - virtuosity
-related_cards:
-  - concerto-form
-  - opening-ritornello
-  - bravura-theme
-  - double-exposition
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

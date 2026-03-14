@@ -1,18 +1,12 @@
 ---
-title: Coda Closing Section
-category: Sonata Form
-tags:
-  - coda
-  - closing-section
-  - codetta
-  - formal-organization
-related:
-  - coda-section
-  - coda-theme
-  - closing-section
+concept: Coda Closing Section
+category: form
 pdf_page: 559
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Coda Closing Section

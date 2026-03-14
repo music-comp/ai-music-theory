@@ -1,20 +1,12 @@
 ---
-title: "Retransition in Sonata Without Development"
-card_type: concept
-concept_type: compositional-device
+concept: "Retransition in Sonata Without Development"
 chapter_number: 17
 pdf_page: 593
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - retransition
-  - sonata-without-development
-  - dominant-preparation
-  - smooth-connection
-related_cards:
-  - sonata-without-development
-  - retransition
-  - exposition
-  - recapitulation
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

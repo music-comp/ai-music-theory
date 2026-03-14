@@ -1,11 +1,12 @@
 ---
-title: Abandoned Cadence in Subordinate Theme
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Abandoned Cadence in Subordinate Theme
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 395
-tags: [subordinate-theme, abandoned-cadence, cadential-deviation, loosening]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Abandoned Cadence in Subordinate Theme

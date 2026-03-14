@@ -1,6 +1,6 @@
 ---
 concept: "SNDW (Sandwich Function)"
-category: mathematical-foundation
+category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions"
 chapter_number: 5

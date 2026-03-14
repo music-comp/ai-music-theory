@@ -1,17 +1,12 @@
 ---
-title: Cadential Idea
-category: Formal Units
-tags:
-  - cadential-idea
-  - formal-unit
-  - cadential-function
-  - liquidation
-related_concepts:
-  - cadential-function
-  - continuation-phrase
-  - cadential-progression
-  - basic-idea
+concept: Cadential Idea
+category: form
 pdf_page: 77
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Cadential Idea

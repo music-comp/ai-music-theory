@@ -1,18 +1,12 @@
 ---
-title: Pre-core Phrase Structure
-category: Sonata Form
-tags:
-  - development
-  - pre-core
-  - phrase-structure
-  - formal-organization
-related:
-  - pre-core
-  - complete-thematic-unit
-  - incomplete-thematic-unit
+concept: Pre-core Phrase Structure
+category: form
 pdf_page: 465
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Pre-core Phrase Structure

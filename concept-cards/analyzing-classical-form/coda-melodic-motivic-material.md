@@ -1,18 +1,12 @@
 ---
-title: Melodic-Motivic Material of Coda
-category: Sonata Form
-tags:
-  - coda
-  - melodic-material
-  - new-material
-  - aesthetic-goals
-related:
-  - coda-section
-  - coda-theme
-  - compensatory-functions-coda
+concept: Melodic-Motivic Material of Coda
+category: form
 pdf_page: 548
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Melodic-Motivic Material of Coda

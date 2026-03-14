@@ -1,11 +1,12 @@
 ---
-title: Essential Expositional Closure (EEC)
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Essential Expositional Closure (EEC)
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 409
-tags: [subordinate-theme, eec, pac, hepokoski-darcy]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Essential Expositional Closure (EEC)

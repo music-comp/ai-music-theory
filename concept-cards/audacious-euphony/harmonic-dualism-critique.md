@@ -1,6 +1,6 @@
 ---
 concept: "Harmonic Dualism (Critique)"
-category: historical
+category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Hexatonic Cycles"
 chapter_number: 2

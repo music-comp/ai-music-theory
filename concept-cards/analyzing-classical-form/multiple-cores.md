@@ -1,18 +1,12 @@
 ---
-title: Multiple Cores
-category: Sonata Form
-tags:
-  - development
-  - core
-  - large-scale-form
-  - beethoven
-related:
-  - core
-  - development-keys
-  - retransition
+concept: Multiple Cores
+category: form
 pdf_page: 445
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Multiple Cores

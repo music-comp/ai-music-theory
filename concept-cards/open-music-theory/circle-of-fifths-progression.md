@@ -1,9 +1,12 @@
 ---
 concept: Circle of Fifths Progression
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Common Harmonic Progressions"
-part: 4
+pdf_page: null
+chapter_number: 4
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Circle of Fifths Progression

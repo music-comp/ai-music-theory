@@ -1,18 +1,12 @@
 ---
-title: Core Concluding Function
-category: Sonata Form
-tags:
-  - development
-  - core
-  - half-cadence
-  - dominant-arrival
-related:
-  - core
-  - standing-on-dominant
-  - development-keys
+concept: Core Concluding Function
+category: form
 pdf_page: 453
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Core Concluding Function

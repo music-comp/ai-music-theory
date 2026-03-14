@@ -1,18 +1,12 @@
 ---
-title: Reversed Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - main-theme
-  - subordinate-theme
-  - formal-deviation
-related:
-  - recapitulation-without-main-theme
-  - haydn
-  - formal-function
+concept: Reversed Recapitulation
+category: form
 pdf_page: 531
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Reversed Recapitulation

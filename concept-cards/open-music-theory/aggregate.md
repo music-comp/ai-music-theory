@@ -3,7 +3,10 @@ concept: Aggregate
 category: theory
 source: Open Music Theory
 chapter: "Row Properties"
-part: 9
+pdf_page: null
+chapter_number: 9
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Aggregate

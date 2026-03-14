@@ -1,16 +1,12 @@
 ---
-title: End vs. Stop
-category: Theoretical Concepts
-tags:
-  - cadence
-  - formal-closure
-  - rhythm
-  - terminology
-related_concepts:
-  - cadence
-  - half-cadence
-  - rhythmic-continuity
+concept: End vs. Stop
+category: theory
 pdf_page: 110
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # End vs. Stop

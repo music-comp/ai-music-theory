@@ -1,6 +1,6 @@
 ---
 concept: Cluster Types
-category: chord-construction
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Chords by Seconds"
 chapter_number: 6

@@ -1,11 +1,12 @@
 ---
 concept: Maximally Smooth Cycles
-tier: 3
-category: voice-leading-theory
-sources:
-  - Ch 11 (Cohn): Tonnetz as Analytical Apparatus
-  - Ch 13 (Gollin): Doppelklänge & Transformational Analysis
-part: 3
+category: theory
+pdf_page: null
+chapter_number: null
+unit: null
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+chapter: "Tonnetz as Analytical Apparatus"
+authors: "Cohn"
 ---
 
 # Maximally Smooth Cycles

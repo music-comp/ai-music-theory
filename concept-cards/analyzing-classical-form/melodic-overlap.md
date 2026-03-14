@@ -1,19 +1,12 @@
 ---
-title: "Melodic Overlap"
-card_type: concept
-concept_type: boundary-process
-chapter_number: Glossary
+concept: "Melodic Overlap"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - melodic-overlap
-  - boundary-process
-  - continuity
-  - phrase-connection
-related_cards:
-  - elision
-  - accompanimental-overlap
-  - lead-in
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

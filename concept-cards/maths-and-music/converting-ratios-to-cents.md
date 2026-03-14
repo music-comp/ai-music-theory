@@ -6,6 +6,7 @@ chapter: "Logarithms and Musical Intervals"
 chapter_number: 5
 pdf_page: 66
 authors: "David Wright"
+unit: null
 ---
 
 # Quick Definition

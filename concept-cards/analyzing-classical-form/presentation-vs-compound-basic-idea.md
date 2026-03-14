@@ -1,17 +1,12 @@
 ---
-title: Presentation vs. Compound Basic Idea
-category: Analytical Methods
-tags:
-  - presentation
-  - compound-basic-idea
-  - phrase-ambiguity
-  - analysis
-related_concepts:
-  - presentation-phrase
-  - compound-basic-idea
-  - basic-idea
-  - repetition
+concept: Presentation vs. Compound Basic Idea
+category: analysis
 pdf_page: 133
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Presentation vs. Compound Basic Idea

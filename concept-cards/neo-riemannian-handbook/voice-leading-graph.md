@@ -1,11 +1,12 @@
 ---
 concept: Voice-Leading Graph / Voice Leadability
-tier: 3
-category: geometric-models
-sources:
-  - Ch 11 (Cohn): Tonnetz as Analytical Apparatus
-  - Ch 13 (Gollin): Doppelklänge & Transformational Analysis
-part: 3
+category: theory
+pdf_page: null
+chapter_number: null
+unit: null
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+chapter: "Tonnetz as Analytical Apparatus"
+authors: "Cohn"
 ---
 
 # Voice-Leading Graph / Voice Leadability

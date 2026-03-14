@@ -1,18 +1,12 @@
 ---
-title: Recapitulation as Goal vs. Rebeginning
-category: Sonata Form
-tags:
-  - recapitulation
-  - formal-function
-  - beethoven
-  - aesthetics
-related:
-  - recapitulation-section
-  - double-return
-  - essential-sonata-closure
+concept: Recapitulation as Goal vs. Rebeginning
+category: form
 pdf_page: 499
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Recapitulation as Goal vs. Rebeginning

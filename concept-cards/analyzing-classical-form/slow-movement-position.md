@@ -1,19 +1,12 @@
 ---
-title: "Slow Movement Position and Key"
-card_type: concept
-concept_type: principle
+concept: "Slow Movement Position and Key"
 chapter_number: 17
 pdf_page: 587
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - slow-movement
-  - instrumental-cycle
-  - tonal-plan
-  - subdominant
-related_cards:
-  - formal-simplicity-slow-movements
-  - large-ternary-form
-  - modal-shift
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Position in Cycle

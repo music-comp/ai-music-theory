@@ -1,20 +1,12 @@
 ---
-title: "Loose Organization"
-card_type: concept
-concept_type: analytical-concept
-chapter_number: Glossary
+concept: "Loose Organization"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - loose
-  - tight-knit
-  - formal-organization
-  - subordinate-theme
-related_cards:
-  - tight-knit-organization
-  - subordinate-theme
-  - development
-  - transition
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

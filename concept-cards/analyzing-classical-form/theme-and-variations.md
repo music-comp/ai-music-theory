@@ -1,20 +1,12 @@
 ---
-title: "Theme and Variations"
-card_type: concept
-concept_type: form
+concept: "Theme and Variations"
 chapter_number: 17
 pdf_page: 591
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - theme-and-variations
-  - variation-form
-  - full-movement-form
-  - slow-movement
-related_cards:
-  - small-ternary
-  - small-binary
-  - minore-maggiore
-  - coda
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

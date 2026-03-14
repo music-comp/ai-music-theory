@@ -1,17 +1,12 @@
 ---
-title: Contrasting Idea Characteristics
-category: Formal Units
-tags:
-  - contrasting-idea
-  - antecedent
-  - continuation-traits
-  - cadential-progression
-related_concepts:
-  - contrasting-idea
-  - basic-idea
-  - antecedent-phrase
-  - continuation-function
+concept: Contrasting Idea Characteristics
+category: form
 pdf_page: 99
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Contrasting Idea Characteristics

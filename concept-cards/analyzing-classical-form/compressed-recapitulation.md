@@ -1,17 +1,12 @@
 ---
-title: Compressed Recapitulation
-category: Compositional Techniques
-tags:
-  - compressed-recapitulation
-  - A-prime
-  - small-ternary
-  - consequent-phrase
-related_concepts:
-  - recapitulation-small-ternary
-  - phrase-compression
-  - consequent-phrase
-  - functional-redundancy
+concept: Compressed Recapitulation
+category: technique
 pdf_page: 239
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Compressed Recapitulation

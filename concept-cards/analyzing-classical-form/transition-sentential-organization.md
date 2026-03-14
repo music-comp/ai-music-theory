@@ -1,11 +1,12 @@
 ---
-title: Transition Sentential Organization
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Transition Sentential Organization
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 346
-tags: [transition, sentential, sentence, loose-organization]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Transition Sentential Organization

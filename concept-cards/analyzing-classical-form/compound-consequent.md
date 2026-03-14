@@ -1,17 +1,12 @@
 ---
-title: Compound Consequent
-category: Formal Units
-tags:
-  - compound-consequent
-  - compound-period
-  - eight-measure
-  - PAC
-related_concepts:
-  - compound-period
-  - compound-antecedent
-  - consequent-phrase
-  - expanded-cadential-progression
+concept: Compound Consequent
+category: form
 pdf_page: 189
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Compound Consequent

@@ -1,18 +1,12 @@
 ---
-title: Slow Introduction Style and Affect
-category: Sonata Form
-tags:
-  - slow-introduction
-  - affect
-  - style
-  - expression
-related:
-  - slow-introduction-section
-  - french-overture
-  - fanfare
+concept: Slow Introduction Style and Affect
+category: form
 pdf_page: 577
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Slow Introduction Style and Affect

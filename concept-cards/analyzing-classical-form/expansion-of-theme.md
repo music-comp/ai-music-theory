@@ -1,17 +1,12 @@
 ---
-title: Expansion of Theme
-category: Compositional Techniques
-tags:
-  - expansion
-  - theme
-  - phrase-deviation
-  - total-length
-related_concepts:
-  - phrase-extension
-  - internal-expansion
-  - phrase-compression
-  - thematic-structure
+concept: Expansion of Theme
+category: technique
 pdf_page: 156
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Expansion of Theme

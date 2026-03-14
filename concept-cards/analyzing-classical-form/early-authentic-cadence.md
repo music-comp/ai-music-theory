@@ -1,19 +1,12 @@
 ---
-title: "Early Authentic Cadence"
-card_type: concept
-concept_type: compositional-device
+concept: "Early Authentic Cadence"
 chapter_number: 18
 pdf_page: 636
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - early-cadence
-  - minuet-form
-  - main-theme-function
-  - cadence
-related_cards:
-  - minuet-exposition-a-section
-  - main-theme-function-minuet
-  - small-ternary
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

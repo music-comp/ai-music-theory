@@ -1,6 +1,6 @@
 ---
 concept: Nineteenth-Century Harmonic Practice
-category: historical
+category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Introduction"
 chapter_number: 0

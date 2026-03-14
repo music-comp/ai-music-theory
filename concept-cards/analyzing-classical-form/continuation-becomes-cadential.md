@@ -1,17 +1,12 @@
 ---
-title: Continuation Becomes Cadential
-category: Formal Functions
-tags:
-  - continuation
-  - cadential
-  - retrospective-reinterpretation
-  - expanded-cadential-progression
-related_concepts:
-  - continuation-phrase
-  - cadential-function
-  - expanded-cadential-progression
-  - form-functional-fusion
+concept: Continuation Becomes Cadential
+category: form
 pdf_page: 82
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Continuation Becomes Cadential (Continuation⇒Cadential)

@@ -1,11 +1,12 @@
 ---
-title: Transition Basics
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Transition Basics
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 330
-tags: [transition, exposition, modulation, medial-function]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Transition Basics

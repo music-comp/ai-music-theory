@@ -1,11 +1,12 @@
 ---
-title: Premature Dominant Arrival
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Premature Dominant Arrival
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 355
-tags: [dominant-arrival, premature, coordination, half-cadence]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Premature Dominant Arrival

@@ -1,11 +1,12 @@
 ---
-title: Omission of Initiating Function
-chapter: 10
-section: "Exposition (I): Main Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Omission of Initiating Function
+chapter: "Exposition I: Main Theme"
+source: "Analyzing Classical Form"
 pdf_page: 315
-tags: [main-theme, initiating-function, nonconventional, continuation]
+chapter_number: 10
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Omission of Initiating Function

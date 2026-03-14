@@ -1,9 +1,12 @@
 ---
 concept: Phrygian Half Cadence
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Cadences in Minor Keys"
-part: 4
+pdf_page: null
+chapter_number: 4
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Phrygian Half Cadence

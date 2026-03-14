@@ -1,20 +1,12 @@
 ---
-title: "Opening Ritornello"
-card_type: concept
-concept_type: formal-unit
+concept: "Opening Ritornello"
 chapter_number: 20
 pdf_page: 696
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - opening-ritornello
-  - concerto-form
-  - exposition
-  - home-key
-related_cards:
-  - concerto-form
-  - solo-exposition
-  - ritornello
-  - subordinate-theme
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

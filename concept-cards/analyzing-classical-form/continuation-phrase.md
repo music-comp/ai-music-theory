@@ -1,17 +1,12 @@
 ---
-title: Continuation Phrase
-category: Formal Units
-tags:
-  - continuation
-  - phrase
-  - formal-function
-  - medial-function
-related_concepts:
-  - sentence
-  - fragmentation
-  - harmonic-acceleration
-  - cadential-function
+concept: Continuation Phrase
+category: form
 pdf_page: 72
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Continuation Phrase

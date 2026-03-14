@@ -1,11 +1,12 @@
 ---
-title: Presentation Loosening - Full Phrase Repetition
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Presentation Loosening - Full Phrase Repetition
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 383
-tags: [subordinate-theme, presentation, repetition, loosening]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Presentation Loosening - Full Phrase Repetition

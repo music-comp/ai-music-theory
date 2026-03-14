@@ -1,6 +1,6 @@
 ---
 concept: DOM and SUBD Transformations
-category: transformation
+category: technique
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Syntactic Interaction and the Convertible Tonnetz"
 chapter_number: 8

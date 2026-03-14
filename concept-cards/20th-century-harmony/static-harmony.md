@@ -1,6 +1,6 @@
 ---
 concept: Static Harmony
-category: harmonic-device
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Timing and Dynamics"
 chapter_number: 10

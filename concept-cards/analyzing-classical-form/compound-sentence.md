@@ -1,17 +1,12 @@
 ---
-title: Compound Sentence
-category: Theme Types
-tags:
-  - compound-sentence
-  - sixteen-measure
-  - compound-presentation
-  - continuation
-related_concepts:
-  - compound-themes
-  - compound-presentation
-  - sentence
-  - continuation-phrase
+concept: Compound Sentence
+category: form
 pdf_page: 190
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Compound Sentence

@@ -1,11 +1,12 @@
 ---
-title: Large-Scale Presentation
-chapter: 10
-section: "Exposition (I): Main Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Large-Scale Presentation
+chapter: "Exposition I: Main Theme"
+source: "Analyzing Classical Form"
 pdf_page: 316
-tags: [main-theme, presentation, beethoven, large-scale, compound]
+chapter_number: 10
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Large-Scale Presentation

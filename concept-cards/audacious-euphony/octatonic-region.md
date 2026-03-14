@@ -1,6 +1,6 @@
 ---
 concept: Octatonic Region
-category: spatial-model
+category: analysis
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Dissonance"
 chapter_number: 7

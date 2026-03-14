@@ -1,17 +1,12 @@
 ---
-title: Reinterpreted Half Cadence
-category: Cadences
-tags:
-  - reinterpreted-HC
-  - modulation
-  - antecedent
-  - retrospective-reinterpretation
-related_concepts:
-  - half-cadence
-  - antecedent-phrase
-  - compound-period
-  - PAC
+concept: Reinterpreted Half Cadence
+category: theory
 pdf_page: 112
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Reinterpreted Half Cadence

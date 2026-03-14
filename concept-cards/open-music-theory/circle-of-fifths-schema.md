@@ -1,9 +1,12 @@
 ---
 concept: Circle-of-Fifths Schema
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Classical Schemas (in a Pop Context)"
-part: 7
+pdf_page: null
+chapter_number: 7
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 ## Quick Definition

@@ -1,10 +1,12 @@
 ---
 concept: DVLS / AVLS Measurements
-category: theory/analysis
+category: analysis
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Inversional Symmetry and Voice Leading"
-part: 2
 authors: "Dmitri Tymoczko"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # DVLS / AVLS Measurements

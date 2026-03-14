@@ -1,20 +1,12 @@
 ---
-title: "Contrast as Intensity"
-card_type: concept
-concept_type: principle
+concept: "Contrast as Intensity"
 chapter_number: 18
 pdf_page: 650
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - contrast
-  - intensity
-  - formal-function
-  - trio-exception
-related_cards:
-  - trio
-  - contrasting-middle
-  - continuation
-  - development
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## General Principle

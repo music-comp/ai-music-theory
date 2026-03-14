@@ -1,19 +1,12 @@
 ---
-title: "Murky Bass"
-card_type: concept
-concept_type: texture
-chapter_number: Glossary
+concept: "Murky Bass"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - murky-bass
-  - accompaniment
-  - broken-octaves
-  - conventional-material
-related_cards:
-  - alberti-bass
-  - drum-bass
-  - conventional-material
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

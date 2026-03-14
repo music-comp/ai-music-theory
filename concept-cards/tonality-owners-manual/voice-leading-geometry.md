@@ -6,6 +6,7 @@ chapter: "Appendix 1: Fundamentals"
 chapter_number: null
 pdf_page: 533
 authors: "Dmitri Tymoczko"
+unit: null
 ---
 
 # Quick Definition

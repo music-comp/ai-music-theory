@@ -1,17 +1,12 @@
 ---
-title: Cadential Deviations
-category: Cadences
-tags:
-  - cadential-deviation
-  - deceptive-cadence
-  - evaded-cadence
-  - abandoned-cadence
-related_concepts:
-  - deceptive-cadence
-  - evaded-cadence
-  - abandoned-cadence
-  - cadential-extension
+concept: Cadential Deviations
+category: theory
 pdf_page: 158
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Cadential Deviations

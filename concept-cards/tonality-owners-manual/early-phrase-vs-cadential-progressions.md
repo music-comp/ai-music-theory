@@ -6,6 +6,7 @@ chapter: "Heterogeneous Hierarchy"
 chapter_number: 9
 pdf_page: 407
 authors: "Dmitri Tymoczko"
+unit: null
 ---
 
 # Quick Definition

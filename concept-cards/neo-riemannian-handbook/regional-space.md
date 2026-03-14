@@ -1,10 +1,12 @@
 ---
 concept: Regional Space
-tier: 3
-category: spatial-representations
-sources:
-  - Ch 11 (Cohn): Tonnetz as Analytical Apparatus
-part: 3
+category: analysis
+pdf_page: null
+chapter_number: null
+unit: null
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+chapter: "Tonnetz as Analytical Apparatus"
+authors: "Cohn"
 ---
 
 # Regional Space

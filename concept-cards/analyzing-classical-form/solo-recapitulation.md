@@ -1,20 +1,12 @@
 ---
-title: "Solo Recapitulation"
-card_type: concept
-concept_type: formal-unit
+concept: "Solo Recapitulation"
 chapter_number: 20
 pdf_page: 714
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - solo-recapitulation
-  - concerto-form
-  - double-exposition
-  - tonal-resolution
-related_cards:
-  - concerto-form
-  - recapitulation
-  - opening-ritornello
-  - solo-exposition
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

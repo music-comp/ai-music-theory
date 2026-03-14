@@ -1,11 +1,12 @@
 ---
-title: Transition Closure
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Transition Closure
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 350
-tags: [transition, closure, half-cadence, dominant-arrival]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Transition Closure

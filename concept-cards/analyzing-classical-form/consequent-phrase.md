@@ -1,17 +1,12 @@
 ---
-title: Consequent Phrase
-category: Formal Units
-tags:
-  - consequent
-  - phrase
-  - formal-function
-  - strong-cadence
-related_concepts:
-  - period
-  - antecedent-phrase
-  - return-of-basic-idea
-  - PAC
+concept: Consequent Phrase
+category: form
 pdf_page: 96
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Consequent Phrase

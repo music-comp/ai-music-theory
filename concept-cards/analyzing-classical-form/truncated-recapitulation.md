@@ -1,20 +1,12 @@
 ---
-title: "Truncated Recapitulation"
-card_type: concept
-concept_type: formal-deviation
+concept: "Truncated Recapitulation"
 chapter_number: 17
 pdf_page: 617
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - truncated-recapitulation
-  - sonata-without-development
-  - recapitulation
-  - formal-deviation
-related_cards:
-  - sonata-without-development
-  - large-ternary-form
-  - recapitulation
-  - main-theme
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

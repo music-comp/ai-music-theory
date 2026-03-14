@@ -1,9 +1,12 @@
 ---
 concept: Time Signature
-category: fundamentals
+category: theory
 source: Open Music Theory
 chapter: "Simple Meter and Time Signatures"
-part: 1
+pdf_page: null
+chapter_number: 1
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Time Signature

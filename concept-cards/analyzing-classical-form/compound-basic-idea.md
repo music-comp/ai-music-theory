@@ -1,17 +1,12 @@
 ---
-title: Compound Basic Idea
-category: Formal Units
-tags:
-  - compound-basic-idea
-  - phrase
-  - formal-function
-  - no-cadence
-related_concepts:
-  - basic-idea
-  - contrasting-idea
-  - antecedent-phrase
-  - presentation-phrase
+concept: Compound Basic Idea
+category: form
 pdf_page: 129
+chapter_number: 4
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Hybrid Themes"
 ---
 
 # Compound Basic Idea

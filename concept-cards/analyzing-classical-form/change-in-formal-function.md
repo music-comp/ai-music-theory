@@ -1,17 +1,12 @@
 ---
-title: Change in Formal Function (Recapitulation)
-category: Compositional Techniques
-tags:
-  - formal-function-change
-  - recapitulation
-  - compression
-  - expansion
-related_concepts:
-  - recapitulation-small-ternary
-  - compressed-recapitulation
-  - expanded-recapitulation
-  - continuation-phrase
+concept: Change in Formal Function (Recapitulation)
+category: technique
 pdf_page: 248
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Change in Formal Function (Recapitulation)

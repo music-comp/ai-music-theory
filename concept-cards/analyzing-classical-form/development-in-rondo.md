@@ -1,20 +1,12 @@
 ---
-title: "Development in Sonata-Rondo"
-card_type: concept
-concept_type: formal-unit
+concept: "Development in Sonata-Rondo"
 chapter_number: 19
 pdf_page: 678
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - development
-  - sonata-rondo
-  - couplet
-  - pre-core
-related_cards:
-  - sonata-rondo
-  - couplet
-  - development
-  - false-recapitulation
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

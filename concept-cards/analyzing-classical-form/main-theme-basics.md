@@ -1,11 +1,12 @@
 ---
-title: Main Theme Basics
-chapter: 10
-section: "Exposition (I): Main Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Main Theme Basics
+chapter: "Exposition I: Main Theme"
+source: "Analyzing Classical Form"
 pdf_page: 308
-tags: [main-theme, exposition, tight-knit, tonal-stability]
+chapter_number: 10
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Main Theme Basics

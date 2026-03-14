@@ -1,18 +1,12 @@
 ---
-title: Flat-side Regions in Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - tonal-regions
-  - harmonic-variety
-  - modal-mixture
-related:
-  - tonal-adjustment
-  - recapitulation-harmonic-tonal-organization
-  - purple-patches
+concept: Flat-side Regions in Recapitulation
+category: form
 pdf_page: 508
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Flat-side Regions in Recapitulation

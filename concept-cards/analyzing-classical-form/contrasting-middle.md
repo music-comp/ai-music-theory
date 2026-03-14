@@ -1,17 +1,12 @@
 ---
-title: Contrasting Middle (B Section)
-category: Formal Functions
-tags:
-  - contrasting-middle
-  - B-section
-  - small-ternary
-  - loose-organization
-related_concepts:
-  - small-ternary
-  - exposition-small-ternary
-  - recapitulation-small-ternary
-  - dominant-emphasis
+concept: Contrasting Middle (B Section)
+category: form
 pdf_page: 219
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Contrasting Middle (B Section)

@@ -1,10 +1,12 @@
 ---
 concept: Problem of Minor Chord Root
-category: theory/controversy
+category: theory
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "The Problem of Harmonic Dualism"
-part: 2
 authors: "Ian Bent (translator), Hugo Riemann (original)"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Problem of Minor Chord Root (Dualism Controversy)

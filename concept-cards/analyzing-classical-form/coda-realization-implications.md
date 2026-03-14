@@ -1,18 +1,12 @@
 ---
-title: Realization of Unrealized Implications in Coda
-category: Sonata Form
-tags:
-  - coda
-  - implications
-  - compensatory-function
-  - compositional-logic
-related:
-  - compensatory-functions-coda
-  - main-theme
-  - problem-resolution
+concept: Realization of Unrealized Implications in Coda
+category: form
 pdf_page: 565
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Realization of Unrealized Implications in Coda

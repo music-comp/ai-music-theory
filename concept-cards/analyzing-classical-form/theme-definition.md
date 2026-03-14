@@ -1,16 +1,12 @@
 ---
-title: Theme (Definition)
-category: Theoretical Concepts
-tags:
-  - theme
-  - terminology
-  - formal-unit
-related_concepts:
-  - sentence
-  - period
-  - basic-idea
-  - cadence
+concept: Theme (Definition)
+category: theory
 pdf_page: 55
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Theme (Definition)

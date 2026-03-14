@@ -1,17 +1,12 @@
 ---
-title: Formal Type vs. Formal Function
-category: Theoretical Concepts
-tags:
-  - formal-type
-  - formal-function
-  - theme-type
-  - terminology
-related_concepts:
-  - sentence
-  - period
-  - presentation-function
-  - antecedent-phrase
+concept: Formal Type vs. Formal Function
+category: theory
 pdf_page: 95
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Formal Type vs. Formal Function

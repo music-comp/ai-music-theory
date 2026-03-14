@@ -1,17 +1,12 @@
 ---
-title: Continuation Phrase (Contrasting Middle)
-category: Formal Functions
-tags:
-  - continuation
-  - contrasting-middle
-  - B-section
-  - model-sequence
-related_concepts:
-  - contrasting-middle
-  - continuation-phrase
-  - model-sequence-technique
-  - half-cadence
+concept: Continuation Phrase (Contrasting Middle)
+category: form
 pdf_page: 233
+chapter_number: 7
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Ternary (Rounded Binary)"
 ---
 
 # Continuation Phrase (Contrasting Middle)

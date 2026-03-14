@@ -3,7 +3,10 @@ concept: Twelve-Tone Row
 category: theory
 source: Open Music Theory
 chapter: "Basics of Twelve-Tone Theory"
-part: 9
+pdf_page: null
+chapter_number: 9
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Twelve-Tone Row

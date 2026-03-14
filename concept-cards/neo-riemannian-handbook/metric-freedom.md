@@ -1,10 +1,12 @@
 ---
 concept: Metric Freedom
-category: metric-theory
+category: theory
 source: The Oxford Handbook of Neo-Riemannian Music Theories
-author: Paul Berry
+authors: Paul Berry
 chapter: "Ch 17: Metric Freedoms in Brahms's Songs"
-part: 5
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Metric Freedom

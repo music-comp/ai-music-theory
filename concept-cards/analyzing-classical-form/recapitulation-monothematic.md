@@ -1,18 +1,12 @@
 ---
-title: Recapitulation of Monothematic Exposition
-category: Sonata Form
-tags:
-  - recapitulation
-  - monothematic
-  - subordinate-theme
-  - haydn
-related:
-  - monothematic-exposition
-  - recapitulation-subordinate-theme
-  - structural-changes-recapitulation
+concept: Recapitulation of Monothematic Exposition
+category: form
 pdf_page: 517
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Recapitulation of Monothematic Exposition

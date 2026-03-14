@@ -1,19 +1,12 @@
 ---
-title: "Closing Ritornello vs. Coda"
-card_type: concept
-concept_type: analytical-issue
+concept: "Closing Ritornello vs. Coda"
 chapter_number: 20
 pdf_page: 717
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - closing-ritornello
-  - coda
-  - concerto-form
-  - formal-function
-related_cards:
-  - closing-ritornello
-  - coda
-  - concerto-form
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## The Question

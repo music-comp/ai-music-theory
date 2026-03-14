@@ -3,7 +3,10 @@ concept: Set Class
 category: theory
 source: Open Music Theory
 chapter: "Set Class and Prime Form"
-part: 8
+pdf_page: null
+chapter_number: 8
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Set Class

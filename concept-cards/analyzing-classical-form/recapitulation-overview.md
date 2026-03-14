@@ -1,11 +1,12 @@
 ---
-title: Recapitulation Overview
-chapter: 9
-section: "Sonata Form: An Overview"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Recapitulation Overview
+chapter: "Sonata Form: An Overview"
+source: "Analyzing Classical Form"
 pdf_page: 301
-tags: [recapitulation, sonata-form, tonal-resolution, formal-structure]
+chapter_number: 9
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Recapitulation Overview

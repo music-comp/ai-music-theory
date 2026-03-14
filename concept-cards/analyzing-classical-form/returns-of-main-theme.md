@@ -1,19 +1,12 @@
 ---
-title: "Returns of Main Theme in Rondo"
-card_type: concept
-concept_type: compositional-device
+concept: "Returns of Main Theme in Rondo"
 chapter_number: 19
 pdf_page: 677
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - refrain
-  - return
-  - rondo
-  - abridged-refrain
-related_cards:
-  - refrain
-  - rondo-forms-overview
-  - incomplete-refrain
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

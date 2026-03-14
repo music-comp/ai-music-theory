@@ -1,9 +1,12 @@
 ---
 concept: Acoustic Collection
-category: collections
+category: theory
 source: Open Music Theory
 chapter: "Collections"
-part: 8
+pdf_page: null
+chapter_number: 8
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Acoustic Collection

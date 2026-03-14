@@ -1,11 +1,12 @@
 ---
-title: Modal Shift in Transition
-chapter: 11
-section: "Exposition (II): Transition"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Modal Shift in Transition
+chapter: "Exposition II: Transition"
+source: "Analyzing Classical Form"
 pdf_page: 350
-tags: [transition, modal-shift, loosening, chromaticism]
+chapter_number: 11
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Modal Shift in Transition

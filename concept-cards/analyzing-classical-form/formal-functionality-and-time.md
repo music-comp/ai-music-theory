@@ -1,15 +1,12 @@
 ---
-title: Formal Functionality and Musical Time
-category: Theoretical Concepts
-tags:
-  - formal-function
-  - temporal-function
-  - beginning-middle-end
-related_concepts:
-  - presentation-function
-  - continuation-function
-  - cadential-function
+concept: Formal Functionality and Musical Time
+category: theory
 pdf_page: 69
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Formal Functionality and Musical Time

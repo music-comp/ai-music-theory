@@ -1,18 +1,12 @@
 ---
-title: Essential Sonata Closure
-category: Sonata Form
-tags:
-  - recapitulation
-  - subordinate-theme
-  - cadence
-  - tonal-resolution
-related:
-  - sonata-principle
-  - recapitulation-subordinate-theme
-  - pac
+concept: Essential Sonata Closure
+category: form
 pdf_page: 501
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Essential Sonata Closure

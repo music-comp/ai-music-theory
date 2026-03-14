@@ -1,20 +1,12 @@
 ---
-title: "Trio Structural Dependence"
-card_type: concept
-concept_type: compositional-device
+concept: "Trio Structural Dependence"
 chapter_number: 18
 pdf_page: 651
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - trio
-  - structural-dependence
-  - incomplete-form
-  - truncated-trio
-related_cards:
-  - trio
-  - minuet-trio-form
-  - interior-theme
-  - da-capo
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

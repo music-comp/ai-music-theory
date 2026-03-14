@@ -1,6 +1,6 @@
 ---
 concept: "Brower's Tonnetz Genesis"
-category: historical
+category: theory
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 chapter: "Syntactic Interaction and the Convertible Tonnetz"
 chapter_number: 8

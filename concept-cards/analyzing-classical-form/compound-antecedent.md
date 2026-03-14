@@ -1,17 +1,12 @@
 ---
-title: Compound Antecedent
-category: Formal Units
-tags:
-  - compound-antecedent
-  - compound-period
-  - eight-measure
-  - weak-cadence
-related_concepts:
-  - compound-period
-  - compound-consequent
-  - antecedent-phrase
-  - sentence
+concept: Compound Antecedent
+category: form
 pdf_page: 188
+chapter_number: 6
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Compound Themes"
 ---
 
 # Compound Antecedent

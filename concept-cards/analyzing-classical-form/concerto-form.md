@@ -1,20 +1,12 @@
 ---
-title: "Concerto Form"
-card_type: concept
-concept_type: form
+concept: "Concerto Form"
 chapter_number: 20
 pdf_page: 694
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - concerto-form
-  - ritornello
-  - solo
-  - first-movement
-related_cards:
-  - opening-ritornello
-  - solo-exposition
-  - solo-development
-  - solo-recapitulation
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

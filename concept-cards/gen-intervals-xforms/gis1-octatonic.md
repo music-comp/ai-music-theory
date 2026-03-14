@@ -1,6 +1,6 @@
 ---
 concept: "GIS1 (Octatonic GIS with STRANS1)"
-category: mathematical-foundation
+category: theory
 source: Generalized Musical Intervals and Transformations
 chapter: "Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
 chapter_number: B

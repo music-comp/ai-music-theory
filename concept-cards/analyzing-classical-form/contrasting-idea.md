@@ -1,17 +1,12 @@
 ---
-title: Contrasting Idea
-category: Formal Units
-tags:
-  - contrasting-idea
-  - formal-unit
-  - period
-  - antecedent
-related_concepts:
-  - basic-idea
-  - antecedent-phrase
-  - cadential-idea
-  - continuation-function
+concept: Contrasting Idea
+category: form
 pdf_page: 99
+chapter_number: 3
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Period"
 ---
 
 # Contrasting Idea

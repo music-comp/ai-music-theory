@@ -1,18 +1,12 @@
 ---
-title: Dotted Rhythms in Slow Introduction
-category: Sonata Form
-tags:
-  - slow-introduction
-  - rhythm
-  - french-overture
-  - style
-related:
-  - slow-introduction-affect
-  - french-overture-style
-  - fanfare-motive
+concept: Dotted Rhythms in Slow Introduction
+category: form
 pdf_page: 577
-book: "Analyzing Classical Form"
-chapter: 16
+source: "Analyzing Classical Form"
+chapter: "Slow Introduction"
+chapter_number: 16
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Dotted Rhythms in Slow Introduction

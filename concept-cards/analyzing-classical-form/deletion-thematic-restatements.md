@@ -1,17 +1,12 @@
 ---
-title: Deletion of Thematic Restatements
-category: Sonata Form
-tags:
-  - recapitulation
-  - main-theme
-  - structural-changes
-  - formal-compression
-related:
-  - structural-changes-recapitulation
-  - recapitulation-main-theme
+concept: Deletion of Thematic Restatements
+category: form
 pdf_page: 507
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Deletion of Thematic Restatements

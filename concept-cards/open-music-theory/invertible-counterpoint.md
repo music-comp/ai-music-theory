@@ -1,9 +1,12 @@
 ---
 concept: Invertible Counterpoint
-category: counterpoint
+category: theory
 source: Open Music Theory
 chapter: "Advanced Contrapuntal Techniques"
-part: 2
+pdf_page: null
+chapter_number: 2
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Invertible Counterpoint

@@ -1,9 +1,12 @@
 ---
 concept: German Diminished Third
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Augmented Sixth Chords"
-part: 5
+pdf_page: null
+chapter_number: 5
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # German Diminished Third

@@ -1,9 +1,12 @@
 ---
 concept: Voice Leading
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Voice Leading in Four-Part Harmony"
-part: 4
+pdf_page: null
+chapter_number: 4
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Voice Leading

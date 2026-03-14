@@ -1,20 +1,12 @@
 ---
-title: "Sonata Without Development"
-card_type: concept
-concept_type: form
+concept: "Sonata Without Development"
 chapter_number: 17
 pdf_page: 593
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - sonata-without-development
-  - slow-movement
-  - bipartite-form
-  - type-1-sonata
-related_cards:
-  - sonata-form
-  - exposition
-  - recapitulation
-  - retransition
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

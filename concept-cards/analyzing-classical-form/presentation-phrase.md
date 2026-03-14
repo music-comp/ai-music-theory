@@ -1,17 +1,12 @@
 ---
-title: Presentation Phrase
-category: Formal Units
-tags:
-  - presentation
-  - phrase
-  - formal-function
-  - tonic-prolongation
-related_concepts:
-  - sentence
-  - basic-idea
-  - exact-repetition
-  - statement-response
+concept: Presentation Phrase
+category: form
 pdf_page: 64
+chapter_number: 2
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Sentence"
 ---
 
 # Presentation Phrase

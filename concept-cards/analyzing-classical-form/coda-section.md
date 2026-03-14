@@ -1,18 +1,12 @@
 ---
-title: Coda Section
-category: Sonata Form
-tags:
-  - coda
-  - sonata-form
-  - after-the-end
-  - formal-section
-related:
-  - recapitulation-section
-  - coda-theme
-  - compensatory-functions
+concept: Coda Section
+category: form
 pdf_page: 541
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Coda Section

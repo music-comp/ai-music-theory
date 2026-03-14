@@ -1,18 +1,12 @@
 ---
-title: Retransition to Subdominant (Coda)
-category: Sonata Form
-tags:
-  - coda
-  - retransition
-  - subdominant
-  - recapitulation
-related:
-  - coda-section
-  - start-of-coda
-  - closing-section
+concept: Retransition to Subdominant (Coda)
+category: form
 pdf_page: 521
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Retransition to Subdominant (Coda)

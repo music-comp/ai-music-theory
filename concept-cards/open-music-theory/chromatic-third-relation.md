@@ -1,9 +1,12 @@
 ---
 concept: Chromatic Third Relation
-category: harmony
+category: theory
 source: Open Music Theory
 chapter: "Chromatic Modulation"
-part: 5
+pdf_page: null
+chapter_number: 5
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Chromatic Third Relation

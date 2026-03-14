@@ -1,15 +1,12 @@
 ---
-title: Phrase Compression
-category: Compositional Techniques
-tags:
-  - compression
-  - phrase-deviation
-  - shortened-phrase
-related_concepts:
-  - phrase-deviations
-  - phrase-extension
-  - internal-expansion
+concept: Phrase Compression
+category: technique
 pdf_page: 148
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Phrase Compression

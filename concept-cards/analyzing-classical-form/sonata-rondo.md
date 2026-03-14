@@ -1,20 +1,12 @@
 ---
-title: "Sonata-Rondo"
-card_type: concept
-concept_type: form
+concept: "Sonata-Rondo"
 chapter_number: 19
 pdf_page: 666
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - sonata-rondo
-  - ABACABA
-  - finale
-  - hybrid-form
-related_cards:
-  - rondo-forms-overview
-  - five-part-rondo
-  - sonata-form
-  - development
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

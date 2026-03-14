@@ -1,10 +1,12 @@
 ---
 concept: Schritte and Wechsel
-category: transformation
+category: technique
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Defense of Harmonic Dualism"
-part: 2
 authors: "Henry Klumpenhouwer"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Schritte and Wechsel

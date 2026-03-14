@@ -1,6 +1,6 @@
 ---
 concept: Binding Chords
-category: harmonic-device
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Harmonic Direction"
 chapter_number: 9

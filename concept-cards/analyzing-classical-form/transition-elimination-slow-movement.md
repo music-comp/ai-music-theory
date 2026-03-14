@@ -1,20 +1,12 @@
 ---
-title: "Elimination of Transition in Slow Movements"
-card_type: concept
-concept_type: compositional-device
+concept: "Elimination of Transition in Slow Movements"
 chapter_number: 17
 pdf_page: 614
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - transition
-  - slow-movement
-  - formal-compression
-  - direct-modulation
-related_cards:
-  - slow-movement-sonata
-  - transition
-  - subordinate-theme
-  - standing-on-dominant
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

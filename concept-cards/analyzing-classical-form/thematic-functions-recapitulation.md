@@ -1,19 +1,12 @@
 ---
-title: Thematic Functions in Recapitulation
-category: Sonata Form
-tags:
-  - recapitulation
-  - formal-function
-  - main-theme
-  - transition
-  - subordinate-theme
-related:
-  - recapitulation-section
-  - rotational-form
-  - structural-changes-recapitulation
+concept: Thematic Functions in Recapitulation
+category: form
 pdf_page: 505
-book: "Analyzing Classical Form"
-chapter: 14
+source: "Analyzing Classical Form"
+chapter: "Recapitulation"
+chapter_number: 14
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Thematic Functions in Recapitulation

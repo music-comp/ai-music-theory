@@ -1,20 +1,12 @@
 ---
-title: "Interior Theme Tonal Regions"
-card_type: concept
-concept_type: analytical-method
+concept: "Interior Theme Tonal Regions"
 chapter_number: 17
 pdf_page: 598
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - interior-theme
-  - tonal-regions
-  - minore
-  - submediant
-related_cards:
-  - interior-theme
-  - minore-maggiore
-  - large-ternary-form
-  - subordinate-key
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Primary Tonal Options

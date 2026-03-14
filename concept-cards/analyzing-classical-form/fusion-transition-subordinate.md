@@ -1,11 +1,12 @@
 ---
-title: Fusion of Transition and Subordinate Theme
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Fusion of Transition and Subordinate Theme
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 426
-tags: [transition, subordinate-theme, fusion, formal-ambiguity]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Fusion of Transition and Subordinate Theme

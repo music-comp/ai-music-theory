@@ -1,11 +1,12 @@
 ---
-title: To Begin Before Having Ended
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: To Begin Before Having Ended
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 402
-tags: [transition, subordinate-theme, formal-syntax, ambiguity]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## To Begin Before Having Ended

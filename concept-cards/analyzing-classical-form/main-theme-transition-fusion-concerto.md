@@ -1,19 +1,12 @@
 ---
-title: "Main-Theme/Transition Fusion in Concerto"
-card_type: concept
-concept_type: compositional-device
+concept: "Main-Theme/Transition Fusion in Concerto"
 chapter_number: 20
 pdf_page: 704
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - fusion
-  - main-theme
-  - transition
-  - opening-ritornello
-related_cards:
-  - opening-ritornello
-  - form-functional-fusion
-  - concerto-form
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Concerto Form"
 ---
 
 ## Definition

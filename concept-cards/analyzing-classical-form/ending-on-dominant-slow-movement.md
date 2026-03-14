@@ -1,20 +1,12 @@
 ---
-title: "Ending a Slow Movement on Dominant"
-card_type: concept
-concept_type: compositional-device
+concept: "Ending a Slow Movement on Dominant"
 chapter_number: 17
 pdf_page: 617
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - slow-movement
-  - dominant-ending
-  - baroque-practice
-  - movement-connection
-related_cards:
-  - half-cadence
-  - dominant-arrival
-  - slow-introduction
-  - deceptive-cadence
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

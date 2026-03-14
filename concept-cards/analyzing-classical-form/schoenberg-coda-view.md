@@ -1,17 +1,12 @@
 ---
-title: Schoenberg's View of the Coda
-category: Theoretical Background
-tags:
-  - coda
-  - schoenberg
-  - theoretical-history
-  - after-the-end
-related:
-  - coda-section
-  - compensatory-functions-coda
+concept: Schoenberg's View of the Coda
+category: theory
 pdf_page: 541
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Schoenberg's View of the Coda

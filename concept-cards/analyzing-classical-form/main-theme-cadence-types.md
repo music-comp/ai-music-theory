@@ -1,11 +1,12 @@
 ---
-title: Main Theme Cadence Types
-chapter: 10
-section: "Exposition (I): Main Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Main Theme Cadence Types
+chapter: "Exposition I: Main Theme"
+source: "Analyzing Classical Form"
 pdf_page: 308
-tags: [main-theme, cadence, pac, hc, iac]
+chapter_number: 10
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Main Theme Cadence Types

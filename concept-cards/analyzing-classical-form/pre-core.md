@@ -1,18 +1,12 @@
 ---
-title: Pre-core
-category: Sonata Form
-tags:
-  - development
-  - pre-core
-  - phrase-structure
-  - formal-function
-related:
-  - core
-  - pre-core-core-technique
-  - transitional-introduction
+concept: Pre-core
+category: form
 pdf_page: 444
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Pre-core

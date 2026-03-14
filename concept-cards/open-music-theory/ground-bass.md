@@ -3,7 +3,10 @@ concept: Ground Bass
 category: form
 source: Open Music Theory
 chapter: "Ground Bass"
-part: 2
+pdf_page: null
+chapter_number: 2
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Ground Bass

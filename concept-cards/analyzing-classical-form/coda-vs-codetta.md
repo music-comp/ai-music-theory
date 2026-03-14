@@ -1,18 +1,12 @@
 ---
-title: Coda vs. Codetta
-category: Sonata Form
-tags:
-  - coda
-  - codetta
-  - terminology
-  - hierarchical-levels
-related:
-  - coda-section
-  - closing-section
-  - coda-theme
+concept: Coda vs. Codetta
+category: form
 pdf_page: 542
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Coda vs. Codetta

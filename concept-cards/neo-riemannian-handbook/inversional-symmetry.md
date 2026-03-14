@@ -1,10 +1,12 @@
 ---
 concept: Inversional Symmetry / Symmetry Operations
-category: theory/transformation
+category: technique
 source: Oxford Handbook of Neo-Riemannian Music Theories
 chapter: "Inversional Symmetry and Voice Leading"
-part: 2
 authors: "Dmitri Tymoczko"
+pdf_page: null
+chapter_number: null
+unit: null
 ---
 
 # Inversional Symmetry / Symmetry Operations

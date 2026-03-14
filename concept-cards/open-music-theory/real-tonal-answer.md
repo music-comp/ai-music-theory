@@ -1,9 +1,12 @@
 ---
 concept: Real Answer and Tonal Answer
-category: counterpoint
+category: theory
 source: Open Music Theory
 chapter: "High Baroque Fugal Exposition"
-part: 2
+pdf_page: null
+chapter_number: 2
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Real Answer and Tonal Answer

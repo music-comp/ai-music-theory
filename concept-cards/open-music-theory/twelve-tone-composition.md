@@ -1,9 +1,12 @@
 ---
 concept: Twelve-Tone Composition
-category: composition
+category: technique
 source: Open Music Theory
 chapter: "Composing with Twelve Tones"
-part: 9
+pdf_page: null
+chapter_number: 9
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Twelve-Tone Composition

@@ -1,19 +1,12 @@
 ---
-title: "Rhythmic Acceleration in Variations"
-card_type: concept
-concept_type: compositional-device
+concept: "Rhythmic Acceleration in Variations"
 chapter_number: 17
 pdf_page: 592
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - theme-and-variations
-  - rhythm
-  - variation-technique
-  - formal-progression
-related_cards:
-  - theme-and-variations
-  - variation-finale
-  - progressive-dynamic
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Slow-Movement Forms"
 ---
 
 ## Definition

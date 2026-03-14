@@ -1,11 +1,12 @@
 ---
-title: Resumption After Internal HC
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Resumption After Internal HC
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 399
-tags: [subordinate-theme, internal-hc, continuation, cadential]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Resumption After Internal HC

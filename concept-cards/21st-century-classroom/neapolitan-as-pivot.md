@@ -4,7 +4,9 @@ category: technique
 source: Music Theory for the 21st-Century Classroom
 chapter: "Chapter 20: The Neapolitan Chord"
 unit: 6
-author: Robert Hutchinson
+authors: Robert Hutchinson
+pdf_page: null
+chapter_number: 20
 ---
 
 # Quick Definition

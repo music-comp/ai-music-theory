@@ -6,6 +6,7 @@ chapter: "Tuning The Scale To Obtain Rational Intervals"
 chapter_number: 12
 pdf_page: 152
 authors: "David Wright"
+unit: null
 ---
 
 # Quick Definition

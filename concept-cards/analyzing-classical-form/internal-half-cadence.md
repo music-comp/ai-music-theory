@@ -1,11 +1,12 @@
 ---
-title: Internal Half Cadence
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: Internal Half Cadence
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 398
-tags: [subordinate-theme, internal-hc, half-cadence, dominant-arrival]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## Internal Half Cadence

@@ -1,11 +1,12 @@
 ---
-title: "Masculine" vs. "Feminine" Themes
-chapter: 12
-section: "Exposition (III): Subordinate Theme"
-book: "Analyzing Classical Form"
-source_pdf: "Analyzing Classical Form - Caplin"
+concept: "Masculine" vs. "Feminine" Themes
+chapter: "Exposition III: Subordinate Theme"
+source: "Analyzing Classical Form"
 pdf_page: 380
-tags: [subordinate-theme, main-theme, gender, aesthetic, marx]
+chapter_number: 12
+unit: null
+authors: "William E. Caplin"
+category: analysis
 ---
 
 ## "Masculine" vs. "Feminine" Themes

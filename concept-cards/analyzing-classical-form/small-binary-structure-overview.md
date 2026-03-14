@@ -1,16 +1,12 @@
 ---
-title: Small Binary Structure Overview
-category: Analytical Methods
-tags:
-  - small-binary
-  - structural-overview
-  - two-part-form
-related_concepts:
-  - small-binary
-  - part-one-small-binary
-  - part-two-small-binary
-  - rounded-binary
+concept: Small Binary Structure Overview
+category: analysis
 pdf_page: 260
+chapter_number: 8
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Binary"
 ---
 
 # Small Binary Structure Overview

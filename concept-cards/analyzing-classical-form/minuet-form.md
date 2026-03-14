@@ -1,20 +1,12 @@
 ---
-title: "Minuet Form"
-card_type: concept
-concept_type: form
+concept: "Minuet Form"
 chapter_number: 18
 pdf_page: 631
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - minuet-form
-  - small-ternary
-  - rounded-binary
-  - thematic-function
-related_cards:
-  - minuet-trio-form
-  - small-ternary
-  - exposition-a-section
-  - contrasting-middle
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Minuet/Trio Form"
 ---
 
 ## Definition

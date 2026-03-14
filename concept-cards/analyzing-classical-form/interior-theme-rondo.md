@@ -1,20 +1,12 @@
 ---
-title: "Interior Theme in Rondo"
-card_type: concept
-concept_type: thematic-function
+concept: "Interior Theme in Rondo"
 chapter_number: 19
 pdf_page: 675
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - interior-theme
-  - rondo
-  - couplet
-  - minore
-related_cards:
-  - interior-theme
-  - couplet
-  - five-part-rondo
-  - large-ternary-form
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

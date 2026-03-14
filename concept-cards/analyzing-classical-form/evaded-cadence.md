@@ -1,17 +1,12 @@
 ---
-title: Evaded Cadence
-category: Cadences
-tags:
-  - evaded-cadence
-  - cadential-deviation
-  - one-more-time
-  - formal-restart
-related_concepts:
-  - cadential-deviations
-  - deceptive-cadence
-  - abandoned-cadence
-  - cadential-extension
+concept: Evaded Cadence
+category: theory
 pdf_page: 160
+chapter_number: 5
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
 ---
 
 # Evaded Cadence

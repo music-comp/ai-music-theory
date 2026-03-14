@@ -1,6 +1,6 @@
 ---
 concept: Mild and Sharp Textures
-category: harmonic-device
+category: theory
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 chapter: "Added-Note Chords"
 chapter_number: 5

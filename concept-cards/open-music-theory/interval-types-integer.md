@@ -3,7 +3,10 @@ concept: Interval Types in Integer Notation
 category: theory
 source: Open Music Theory
 chapter: "Intervals in Integer Notation"
-part: 8
+pdf_page: null
+chapter_number: 8
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Interval Types in Integer Notation

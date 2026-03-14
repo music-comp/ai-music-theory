@@ -1,9 +1,12 @@
 ---
 concept: Ionian Mode
-category: fundamentals
+category: theory
 source: Open Music Theory
 chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
-part: 1
+pdf_page: null
+chapter_number: 1
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Ionian Mode

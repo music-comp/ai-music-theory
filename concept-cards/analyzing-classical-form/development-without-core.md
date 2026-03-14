@@ -1,18 +1,12 @@
 ---
-title: Development Without Core
-category: Sonata Form
-tags:
-  - development
-  - haydn
-  - core-substitute
-  - formal-organization
-related:
-  - core
-  - pseudo-core
-  - transition-like-unit
+concept: Development Without Core
+category: form
 pdf_page: 472
-book: "Analyzing Classical Form"
-chapter: 13
+source: "Analyzing Classical Form"
+chapter: "Development"
+chapter_number: 13
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Development Without Core

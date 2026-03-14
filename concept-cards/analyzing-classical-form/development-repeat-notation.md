@@ -1,18 +1,12 @@
 ---
-title: Development-Recapitulation Repeat
-category: Sonata Form
-tags:
-  - sonata-form
-  - repeat
-  - notation
-  - performance-practice
-related:
-  - development-section
-  - recapitulation-section
-  - coda-section
+concept: Development-Recapitulation Repeat
+category: form
 pdf_page: 549
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Development-Recapitulation Repeat

@@ -1,18 +1,12 @@
 ---
-title: Start of the Coda
-category: Sonata Form
-tags:
-  - coda
-  - formal-boundaries
-  - analysis
-  - recapitulation
-related:
-  - coda-section
-  - recapitulation-section
-  - closing-section
+concept: Start of the Coda
+category: form
 pdf_page: 548
-book: "Analyzing Classical Form"
-chapter: 15
+source: "Analyzing Classical Form"
+chapter: "Coda"
+chapter_number: 15
+unit: null
+authors: "William E. Caplin"
 ---
 
 # Start of the Coda

@@ -3,7 +3,10 @@ concept: Segmentation
 category: analysis
 source: Open Music Theory
 chapter: "Analyzing with Set Theory (or not!)"
-part: 8
+pdf_page: null
+chapter_number: 8
+unit: null
+authors: "Open Music Theory contributors"
 ---
 
 # Segmentation

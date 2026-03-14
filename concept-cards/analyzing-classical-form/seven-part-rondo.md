@@ -1,19 +1,12 @@
 ---
-title: "Seven-Part Rondo"
-card_type: concept
-concept_type: form
+concept: "Seven-Part Rondo"
 chapter_number: 19
 pdf_page: 686
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - seven-part-rondo
-  - ABACADA
-  - rondo-enlargement
-  - interior-theme
-related_cards:
-  - five-part-rondo
-  - sonata-rondo
-  - rondo-forms-overview
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Rondo Forms"
 ---
 
 ## Definition

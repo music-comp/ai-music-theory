@@ -1,20 +1,12 @@
 ---
-title: "Standing on the Dominant"
-card_type: concept
-concept_type: formal-unit
-chapter_number: Glossary
+concept: "Standing on the Dominant"
+chapter_number: null
 pdf_page: 725
 source: "Analyzing Classical Form (Caplin)"
-tags:
-  - standing-on-dominant
-  - dominant-prolongation
-  - postcadential
-  - retransition
-related_cards:
-  - half-cadence
-  - dominant-arrival
-  - retransition
-  - contrasting-middle
+unit: null
+authors: "William E. Caplin"
+category: analysis
+chapter: "Glossary"
 ---
 
 ## Definition

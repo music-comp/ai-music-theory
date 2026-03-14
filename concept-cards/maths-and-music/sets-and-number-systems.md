@@ -6,6 +6,7 @@ chapter: "Basic Mathematical and Musical Concepts"
 chapter_number: 1
 pdf_page: 14
 authors: "David Wright"
+unit: null
 ---
 
 # Quick Definition

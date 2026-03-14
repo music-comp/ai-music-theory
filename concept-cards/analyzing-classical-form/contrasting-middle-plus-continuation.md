@@ -1,16 +1,12 @@
 ---
-title: Contrasting Middle + Continuation (Small Binary)
-category: Formal Units
-tags:
-  - contrasting-middle
-  - continuation
-  - small-binary
-  - part-two
-related_concepts:
-  - part-two-small-binary
-  - contrasting-middle
-  - continuation-phrase
+concept: Contrasting Middle + Continuation (Small Binary)
+category: form
 pdf_page: 268
+chapter_number: 8
+unit: null
+authors: "William E. Caplin"
+source: "Analyzing Classical Form"
+chapter: "The Small Binary"
 ---
 
 # Contrasting Middle + Continuation (Small Binary)
