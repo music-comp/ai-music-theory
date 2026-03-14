@@ -38,6 +38,29 @@ pub struct BackendStatus {
     #[cfg(feature = "fts")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub index_stats: Option<IndexStats>,
+
+    /// Whether vector feature is enabled
+    #[cfg(feature = "vector")]
+    pub vector_enabled: bool,
+
+    /// Whether vector backend is ready for queries
+    #[cfg(feature = "vector")]
+    pub vector_ready: bool,
+
+    /// Vector index statistics (if vector is ready)
+    #[cfg(feature = "vector")]
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub vector_stats: Option<VectorStats>,
+}
+
+/// Vector index statistics.
+#[cfg(feature = "vector")]
+#[derive(Debug, Serialize, Deserialize)]
+pub struct VectorStats {
+    /// Number of documents in the vector index
+    pub document_count: usize,
+    /// Backend name ("simple" or "lancedb")
+    pub backend: String,
 }
 
 /// FTS index statistics.
@@ -117,6 +140,26 @@ pub async fn get_health(state: &AppState) -> Result<HealthResponse> {
         (enabled, ready, stats)
     };
 
+    #[cfg(feature = "vector")]
+    let (vector_enabled, vector_ready, vector_stats) = {
+        let enabled = true;
+        let ready = state.is_vector_ready();
+        let stats = if ready {
+            use fabryk::vector::VectorBackend;
+            if let Ok(guard) = state.vector_backend.read() {
+                guard.as_ref().map(|b| VectorStats {
+                    document_count: b.document_count().unwrap_or(0),
+                    backend: b.name().to_string(),
+                })
+            } else {
+                None
+            }
+        } else {
+            None
+        };
+        (enabled, ready, stats)
+    };
+
     // Build search configuration info (v0.3.0)
     let search_config = Some(SearchConfigInfo {
         field_boosts: FieldBoosts {
@@ -145,6 +188,12 @@ pub async fn get_health(state: &AppState) -> Result<HealthResponse> {
             fts_ready,
             #[cfg(feature = "fts")]
             index_stats,
+            #[cfg(feature = "vector")]
+            vector_enabled,
+            #[cfg(feature = "vector")]
+            vector_ready,
+            #[cfg(feature = "vector")]
+            vector_stats,
         },
         search_config,
     })
@@ -290,6 +339,12 @@ mod tests {
                 fts_ready: false,
                 #[cfg(feature = "fts")]
                 index_stats: None,
+                #[cfg(feature = "vector")]
+                vector_enabled: false,
+                #[cfg(feature = "vector")]
+                vector_ready: false,
+                #[cfg(feature = "vector")]
+                vector_stats: None,
             },
             search_config: None,
         };

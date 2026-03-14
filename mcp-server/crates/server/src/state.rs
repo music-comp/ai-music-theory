@@ -12,7 +12,7 @@ use std::path::Path;
 #[cfg(feature = "fts")]
 use std::sync::RwLock as StdRwLock;
 
-#[cfg(feature = "graph")]
+#[cfg(any(feature = "graph", feature = "vector"))]
 use std::sync::RwLock;
 
 use fabryk::core::{ServiceHandle, ServiceState};
@@ -61,8 +61,13 @@ pub struct AppState {
     #[cfg(feature = "graph")]
     pub graph_data: Arc<RwLock<Option<crate::graph::LoadedGraph>>>,
 
-    /// Vector service lifecycle handle (placeholder for M7)
+    /// Vector service lifecycle handle
+    #[cfg(feature = "vector")]
     pub vector_service: ServiceHandle,
+
+    /// Vector backend (populated when `vector_service` reaches `Ready`)
+    #[cfg(feature = "vector")]
+    pub vector_backend: Arc<RwLock<Option<Arc<dyn fabryk::vector::VectorBackend>>>>,
 }
 
 impl AppState {
@@ -99,7 +104,10 @@ impl AppState {
             graph_service: ServiceHandle::new("graph"),
             #[cfg(feature = "graph")]
             graph_data: Arc::new(RwLock::new(None)),
+            #[cfg(feature = "vector")]
             vector_service: ServiceHandle::new("vector"),
+            #[cfg(feature = "vector")]
+            vector_backend: Arc::new(RwLock::new(None)),
         })
     }
 
@@ -206,6 +214,84 @@ impl AppState {
             };
         }
         let guard = self.graph_data.read().unwrap();
+        Ok(guard)
+    }
+
+    /// Check if the vector index is ready for queries.
+    ///
+    /// # Returns
+    ///
+    /// Returns true if the vector service is in the `Ready` state.
+    #[cfg(feature = "vector")]
+    pub fn is_vector_ready(&self) -> bool {
+        self.vector_service.state().is_ready()
+    }
+
+    /// Mark the vector service as ready or stopped.
+    ///
+    /// Used by background vector building to signal when the index
+    /// becomes available.
+    #[cfg(feature = "vector")]
+    pub(crate) fn set_vector_ready(&self, ready: bool) {
+        if ready {
+            self.vector_service.set_state(ServiceState::Ready);
+        } else {
+            self.vector_service.set_state(ServiceState::Stopped);
+        }
+    }
+
+    /// Update the vector backend after background index building completes.
+    ///
+    /// # Arguments
+    ///
+    /// * `backend` - The newly built vector backend
+    ///
+    /// # Errors
+    ///
+    /// Returns `Err` if the write lock cannot be acquired.
+    #[cfg(feature = "vector")]
+    pub(crate) fn update_vector_backend(
+        &self,
+        backend: Arc<dyn fabryk::vector::VectorBackend>,
+    ) -> Result<()> {
+        let mut guard = self
+            .vector_backend
+            .write()
+            .map_err(|_| {
+                crate::error::Error::config(
+                    "Failed to acquire vector write lock".to_string(),
+                )
+            })?;
+        *guard = Some(backend);
+        Ok(())
+    }
+
+    /// Acquire a read-guard on the vector backend, returning an appropriate
+    /// error if the vector service is not in the `Ready` state.
+    ///
+    /// # Errors
+    ///
+    /// Returns an error describing the current service state (not built,
+    /// building, or failed).
+    #[cfg(feature = "vector")]
+    pub fn require_vector(
+        &self,
+    ) -> Result<std::sync::RwLockReadGuard<'_, Option<Arc<dyn fabryk::vector::VectorBackend>>>> {
+        let svc_state = self.vector_service.state();
+        if !svc_state.is_ready() {
+            return match svc_state {
+                ServiceState::Starting => Err(crate::error::Error::not_found_msg(
+                    "Vector index is currently building",
+                )),
+                ServiceState::Failed(msg) => Err(crate::error::Error::config(format!(
+                    "Vector index failed to build: {msg}"
+                ))),
+                _ => Err(crate::error::Error::not_found_msg(
+                    "Vector index not built yet",
+                )),
+            };
+        }
+        let guard = self.vector_backend.read().unwrap();
         Ok(guard)
     }
 }
@@ -432,6 +518,147 @@ async fn build_fts_index_for_state(state: &AppState) -> Result<crate::search::In
     build_index(&state.config).await
 }
 
+/// Initialize the vector search backend and start background index building.
+///
+/// Resolves the cache directory from the configured base path and spawns
+/// an async task that discovers content, embeds it, and populates the
+/// in-memory vector backend.
+///
+/// # Arguments
+///
+/// * `state` - Shared application state
+///
+/// # Errors
+///
+/// Returns `Err` if the base path cannot be resolved.
+#[cfg(feature = "vector")]
+pub async fn initialize_vector(state: &Arc<AppState>) -> Result<()> {
+    let base = state.config.paths.base_path()?;
+    let cache_dir = base.join(".cache").join("vector");
+
+    log::info!("Starting background vector index build");
+    start_vector_building(Arc::clone(state), cache_dir);
+    Ok(())
+}
+
+/// Spawn an async task that builds the vector index and stores the result.
+#[cfg(feature = "vector")]
+fn start_vector_building(state: Arc<AppState>, cache_dir: std::path::PathBuf) {
+    tokio::spawn(async move {
+        state.vector_service.set_state(ServiceState::Starting);
+
+        match build_vector_index(&state.config, &cache_dir).await {
+            Ok(backend) => {
+                use fabryk::vector::VectorBackend;
+                let doc_count = backend.document_count().unwrap_or(0);
+                let backend_arc: Arc<dyn fabryk::vector::VectorBackend> = Arc::new(backend);
+                if state.update_vector_backend(backend_arc).is_ok() {
+                    state.set_vector_ready(true);
+                    log::info!(documents = doc_count; "Vector index ready");
+                } else {
+                    log::error!("Failed to store vector backend");
+                    state.vector_service.set_state(ServiceState::Failed(
+                        "Failed to store backend".to_string(),
+                    ));
+                }
+            }
+            Err(e) => {
+                log::warn!("Vector index build failed (graceful degradation): {}", e);
+                state
+                    .vector_service
+                    .set_state(ServiceState::Failed(e.to_string()));
+            }
+        }
+    });
+}
+
+/// Build the vector index from all configured content directories.
+///
+/// Iterates over concept cards, source documents, unified concepts, and
+/// guides directories. The first directory that exists seeds the backend;
+/// subsequent directories append into it. Returns an error only when no
+/// content directories exist at all.
+#[cfg(feature = "vector")]
+async fn build_vector_index(
+    config: &Config,
+    cache_dir: &std::path::Path,
+) -> std::result::Result<
+    fabryk::vector::SimpleVectorBackend,
+    Box<dyn std::error::Error + Send + Sync>,
+> {
+    use crate::extractors::MusicTheoryVectorExtractor;
+    use fabryk::vector::builder::ErrorHandling;
+    use fabryk::vector::{EmbeddingProvider, FastEmbedProvider, VectorBackend, VectorIndexBuilder};
+
+    // Ensure cache directory exists
+    tokio::fs::create_dir_all(cache_dir).await?;
+    let cache_file = cache_dir.join("vector-cache.json");
+
+    // Create embedding provider
+    let provider: Arc<dyn EmbeddingProvider> =
+        Arc::new(FastEmbedProvider::new("bge-small-en-v1.5", None)?);
+
+    // Resolve content directories
+    let base = config.paths.base_path().map_err(|e| e.to_string())?;
+    let content_dirs = [
+        (base.join(&config.paths.concept_cards), "concept_cards"),
+        (base.join(&config.paths.sources_md), "sources_md"),
+        (base.join(&config.paths.concepts_unified), "concepts_unified"),
+        (base.join(&config.paths.guides), "guides"),
+    ];
+
+    let mut backend: Option<fabryk::vector::SimpleVectorBackend> = None;
+    let mut total_docs = 0usize;
+
+    for (content_path, label) in &content_dirs {
+        if !content_path.exists() {
+            log::debug!("Vector: skipping {} (not found)", label);
+            continue;
+        }
+
+        let extractor = MusicTheoryVectorExtractor::new();
+        let builder = VectorIndexBuilder::new(extractor)
+            .with_content_path(content_path)
+            .with_embedding_provider(Arc::clone(&provider))
+            .with_error_handling(ErrorHandling::Skip);
+
+        match &mut backend {
+            None => {
+                // First directory: build with cache
+                let b = builder.with_cache_path(&cache_file);
+                let (new_backend, stats) = b.build().await?;
+                log::info!(
+                    "Vector: indexed {} from {} ({} errors)",
+                    stats.documents_indexed,
+                    label,
+                    stats.errors.len()
+                );
+                total_docs += stats.documents_indexed;
+                backend = Some(new_backend);
+            }
+            Some(ref mut existing) => {
+                // Subsequent directories: append
+                let stats = builder.build_append(existing).await?;
+                log::info!(
+                    "Vector: indexed {} from {} ({} errors)",
+                    stats.documents_indexed,
+                    label,
+                    stats.errors.len()
+                );
+                total_docs += stats.documents_indexed;
+            }
+        }
+    }
+
+    match backend {
+        Some(b) => {
+            log::info!("Vector index complete: {} total documents", total_docs);
+            Ok(b)
+        }
+        None => Err("No content directories found for vector indexing".into()),
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -510,11 +737,13 @@ mod tests {
     }
 
     #[tokio::test]
+    #[cfg(feature = "vector")]
     async fn test_vector_service_initial_state() {
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
         assert_eq!(state.vector_service.state(), ServiceState::Stopped);
         assert_eq!(state.vector_service.name(), "vector");
+        assert!(state.vector_backend.read().unwrap().is_none());
     }
 
     #[tokio::test]
@@ -1131,5 +1360,54 @@ Test content.
         let result = state.require_graph();
         assert!(result.is_err());
         assert!(result.unwrap_err().to_string().contains("disk full"));
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "vector")]
+    async fn test_is_vector_ready() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+        assert!(!state.is_vector_ready());
+        state.set_vector_ready(true);
+        assert!(state.is_vector_ready());
+        state.set_vector_ready(false);
+        assert!(!state.is_vector_ready());
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "vector")]
+    async fn test_require_vector_not_ready() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+        let result = state.require_vector();
+        assert!(result.is_err());
+        let err = result.err().unwrap();
+        assert!(err.to_string().contains("not built"));
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "vector")]
+    async fn test_require_vector_loading() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+        state.vector_service.set_state(ServiceState::Starting);
+        let result = state.require_vector();
+        assert!(result.is_err());
+        let err = result.err().unwrap();
+        assert!(err.to_string().contains("building"));
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "vector")]
+    async fn test_require_vector_failed() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+        state
+            .vector_service
+            .set_state(ServiceState::Failed("out of memory".to_string()));
+        let result = state.require_vector();
+        assert!(result.is_err());
+        let err = result.err().unwrap();
+        assert!(err.to_string().contains("out of memory"));
     }
 }

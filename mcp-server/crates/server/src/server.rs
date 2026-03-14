@@ -86,6 +86,28 @@ fn default_limit() -> usize {
 }
 
 #[derive(Serialize, Deserialize, JsonSchema)]
+pub struct SemanticSearchToolParams {
+    /// Natural language search query
+    query: String,
+    /// Search mode: "vector", "keyword", or "hybrid" (default)
+    #[serde(default = "default_hybrid_mode")]
+    mode: tools::semantic::SearchMode,
+    /// Optional category filter
+    #[serde(default)]
+    category: Option<String>,
+    /// Optional source filter
+    #[serde(default)]
+    source: Option<String>,
+    /// Maximum results (default: 10)
+    #[serde(default = "default_limit")]
+    limit: usize,
+}
+
+fn default_hybrid_mode() -> tools::semantic::SearchMode {
+    tools::semantic::SearchMode::Hybrid
+}
+
+#[derive(Serialize, Deserialize, JsonSchema)]
 pub struct GetGuideParams {
     guide_id: String,
 }
@@ -373,6 +395,28 @@ impl MusicTheoryServer {
         let response = tools::search::search_concepts(&self.state, search_params)
             .await
             .map_err(|e| e.to_mcp_error("Error searching concepts"))?;
+
+        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
+
+        Ok(CallToolResult::success(vec![Content::text(content)]))
+    }
+
+    #[tool(description = "Semantic search using vector embeddings, keyword search, or hybrid mode (vector+keyword via reciprocal rank fusion)")]
+    async fn semantic_search(
+        &self,
+        params: Parameters<SemanticSearchToolParams>,
+    ) -> Result<CallToolResult, ErrorData> {
+        let tool_params = tools::semantic::SemanticSearchParams {
+            query: params.0.query,
+            mode: params.0.mode,
+            category: params.0.category,
+            source: params.0.source,
+            limit: params.0.limit,
+        };
+
+        let response = tools::semantic::semantic_search(&self.state, tool_params)
+            .await
+            .map_err(|e| e.to_mcp_error("Error in semantic search"))?;
 
         let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
 

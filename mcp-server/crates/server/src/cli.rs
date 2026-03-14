@@ -4,7 +4,7 @@
 
 use std::io::Write;
 
-#[cfg(any(feature = "fts", feature = "graph"))]
+#[cfg(any(feature = "fts", feature = "graph", feature = "vector"))]
 use std::sync::Arc;
 
 use clap::{Parser, Subcommand};
@@ -64,6 +64,10 @@ pub enum Commands {
     #[cfg(feature = "graph")]
     Graph(GraphCommands),
 
+    /// Vector index management
+    #[cfg(feature = "vector")]
+    Vectordb(VectordbCommands),
+
     /// Source management (scan, validate, aliases)
     Sources(SourcesCommands),
 }
@@ -101,6 +105,29 @@ pub enum GraphSubcommand {
     Compile,
 }
 
+/// Vector database subcommands
+#[cfg(feature = "vector")]
+#[derive(Parser)]
+pub struct VectordbCommands {
+    #[command(subcommand)]
+    command: VectordbSubcommand,
+}
+
+/// Vector database command operations
+#[cfg(feature = "vector")]
+#[derive(Subcommand)]
+pub enum VectordbSubcommand {
+    /// Build vector index from content
+    Build {
+        /// Force rebuild even if cache is current
+        #[arg(long, short)]
+        force: bool,
+    },
+
+    /// Show vector index status
+    Status,
+}
+
 /// Handle the CLI command.
 ///
 /// Dispatches to the appropriate handler based on the command.
@@ -127,6 +154,9 @@ pub async fn handle_command(cli: Cli) -> Result<()> {
 
         #[cfg(feature = "graph")]
         Commands::Graph(graph_cmds) => handle_graph_command(graph_cmds, log_level).await,
+
+        #[cfg(feature = "vector")]
+        Commands::Vectordb(vector_cmds) => handle_vectordb_command(vector_cmds, log_level).await,
 
         Commands::Sources(sources_cmds) => {
             crate::sources::cli::handle_sources_command(sources_cmds, log_level).await
@@ -227,6 +257,13 @@ async fn run_server(log_level_override: Option<String>, test_mode: bool) -> Resu
     {
         let state_arc = Arc::new(state.clone());
         crate::state::initialize_graph(&state_arc).await?;
+    }
+
+    // Initialize vector index (non-blocking - builds asynchronously)
+    #[cfg(feature = "vector")]
+    {
+        let state_arc = Arc::new(state.clone());
+        crate::state::initialize_vector(&state_arc).await?;
     }
 
     if test_mode {
@@ -471,6 +508,125 @@ async fn handle_graph_command(
         GraphSubcommand::Validate => crate::graph::handle_validate(&config).await,
         GraphSubcommand::Stats => crate::graph::handle_stats(&config).await,
         GraphSubcommand::Compile => crate::graph::handle_compile(&config).await,
+    }
+}
+
+/// Handle vectordb subcommand.
+#[cfg(feature = "vector")]
+async fn handle_vectordb_command(
+    vector_cmds: VectordbCommands,
+    log_level_override: Option<String>,
+) -> Result<()> {
+    use std::sync::Arc;
+
+    use crate::extractors::MusicTheoryVectorExtractor;
+    use fabryk::vector::{EmbeddingProvider, FastEmbedProvider, VectorBackend, VectorIndexBuilder};
+
+    let config = Config::load()?;
+    let opts = apply_log_level_override(&config.logging, log_level_override)?;
+    let _ = twyg::setup(opts);
+
+    match vector_cmds.command {
+        VectordbSubcommand::Build { force } => {
+            let base = config.paths.base_path()?;
+            let cache_dir = base.join(".cache").join("vector");
+            std::fs::create_dir_all(&cache_dir).map_err(|e| {
+                crate::error::Error::io(e)
+            })?;
+            let cache_file = cache_dir.join("vector-cache.json");
+
+            if force {
+                // Remove cache to force rebuild
+                if cache_file.exists() {
+                    let _ = std::fs::remove_file(&cache_file);
+                    println!("Removed existing cache");
+                }
+            }
+
+            println!("Creating embedding provider (bge-small-en-v1.5)...");
+            let provider: Arc<dyn EmbeddingProvider> =
+                Arc::new(FastEmbedProvider::new("bge-small-en-v1.5", None).map_err(|e| {
+                    crate::error::Error::operation(format!("Failed to create embedding provider: {e}"))
+                })?);
+
+            let content_dirs = [
+                (base.join(&config.paths.concept_cards), "concept_cards"),
+                (base.join(&config.paths.sources_md), "sources_md"),
+                (base.join(&config.paths.concepts_unified), "concepts_unified"),
+                (base.join(&config.paths.guides), "guides"),
+            ];
+
+            let mut backend: Option<fabryk::vector::SimpleVectorBackend> = None;
+            let mut total_docs = 0usize;
+
+            for (content_path, label) in &content_dirs {
+                if !content_path.exists() {
+                    println!("  Skipping {} (not found)", label);
+                    continue;
+                }
+
+                let extractor = MusicTheoryVectorExtractor::new();
+                let builder = VectorIndexBuilder::new(extractor)
+                    .with_content_path(content_path)
+                    .with_embedding_provider(Arc::clone(&provider))
+                    .with_error_handling(fabryk::vector::builder::ErrorHandling::Collect);
+
+                match &mut backend {
+                    None => {
+                        let b = builder.with_cache_path(&cache_file);
+                        let (new_backend, stats) = b.build().await.map_err(|e| {
+                            crate::error::Error::operation(format!("Vector build failed: {e}"))
+                        })?;
+                        println!(
+                            "  {}: {} docs indexed ({} errors)",
+                            label,
+                            stats.documents_indexed,
+                            stats.errors.len()
+                        );
+                        for err in &stats.errors {
+                            eprintln!("    Error: {} - {}", err.file.display(), err.message);
+                        }
+                        total_docs += stats.documents_indexed;
+                        backend = Some(new_backend);
+                    }
+                    Some(ref mut existing) => {
+                        let stats = builder.build_append(existing).await.map_err(|e| {
+                            crate::error::Error::operation(format!("Vector append failed: {e}"))
+                        })?;
+                        println!(
+                            "  {}: {} docs indexed ({} errors)",
+                            label,
+                            stats.documents_indexed,
+                            stats.errors.len()
+                        );
+                        for err in &stats.errors {
+                            eprintln!("    Error: {} - {}", err.file.display(), err.message);
+                        }
+                        total_docs += stats.documents_indexed;
+                    }
+                }
+            }
+
+            println!("\nVector index complete: {} total documents", total_docs);
+            Ok(())
+        }
+        VectordbSubcommand::Status => {
+            let base = config.paths.base_path()?;
+            let cache_file = base.join(".cache").join("vector").join("vector-cache.json");
+
+            if cache_file.exists() {
+                println!("Vector cache: {}", cache_file.display());
+                // Try to get metadata from cache file size
+                if let Ok(meta) = std::fs::metadata(&cache_file) {
+                    println!("  Cache size: {} KB", meta.len() / 1024);
+                }
+                println!("  Status: cached");
+            } else {
+                println!("Vector cache: not built");
+                println!("  Run `music-theory-mcp vectordb build` to create the index");
+            }
+            Ok(())
+        }
     }
 }
 
