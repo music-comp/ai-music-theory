@@ -13,7 +13,10 @@ use crate::error::Result;
 use crate::state::AppState;
 
 #[cfg(feature = "graph")]
-use crate::graph::types::Node;
+use crate::graph::{
+    from_fabryk_relationship, is_concept_node, is_source_node, node_category, node_id, node_title,
+    source_author, source_is_converted, source_year, validate_graph,
+};
 #[cfg(feature = "graph")]
 use fabryk::core::ServiceState;
 #[cfg(feature = "graph")]
@@ -260,12 +263,10 @@ pub async fn graph_stats(state: &AppState) -> Result<GraphStatsResponse> {
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    let graph = &loaded.graph;
-
     // Count by relationship type
     let mut rel_counts: HashMap<String, usize> = HashMap::new();
-    for edge in graph.edge_references() {
-        let rel_name = format!("{:?}", edge.weight().relationship);
+    for edge in loaded.data.graph.edge_references() {
+        let rel_name = from_fabryk_relationship(&edge.weight().relationship);
         *rel_counts.entry(rel_name).or_insert(0) += 1;
     }
 
@@ -280,9 +281,10 @@ pub async fn graph_stats(state: &AppState) -> Result<GraphStatsResponse> {
 
     // Count by category
     let mut category_counts: HashMap<String, usize> = HashMap::new();
-    for node in graph.node_weights() {
-        if let Node::Concept(c) = node {
-            *category_counts.entry(c.category.clone()).or_insert(0) += 1;
+    for node in loaded.data.iter_nodes() {
+        if is_concept_node(node) {
+            let cat = node_category(node).to_string();
+            *category_counts.entry(cat).or_insert(0) += 1;
         }
     }
 
@@ -322,46 +324,24 @@ pub async fn graph_validate(state: &AppState) -> Result<GraphValidateResponse> {
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    let graph = &loaded.graph;
+    let result = validate_graph(&loaded.data);
 
     let mut issues = Vec::new();
     let mut orphan_count = 0;
     let mut self_loop_count = 0;
 
-    // Check for orphan nodes (no incoming or outgoing edges)
-    for idx in graph.node_indices() {
-        let in_degree = graph
-            .edges_directed(idx, petgraph::Direction::Incoming)
-            .count();
-        let out_degree = graph
-            .edges_directed(idx, petgraph::Direction::Outgoing)
-            .count();
-
-        if in_degree == 0 && out_degree == 0 {
-            orphan_count += 1;
+    // Extract orphan and self-loop counts from validation issues
+    for issue in result.errors.iter().chain(result.warnings.iter()) {
+        if issue.code.contains("orphan") {
+            orphan_count = issue.nodes.len();
+        } else if issue.code.contains("self_loop") || issue.code.contains("self-loop") {
+            self_loop_count = issue.edges.len().max(1);
         }
-    }
-
-    // Check for self-loops
-    for edge in graph.edge_references() {
-        if edge.source() == edge.target() {
-            self_loop_count += 1;
-        }
-    }
-
-    if orphan_count > 0 {
-        issues.push(format!(
-            "Found {} orphan nodes (no relationships)",
-            orphan_count
-        ));
-    }
-
-    if self_loop_count > 0 {
-        issues.push(format!("Found {} self-loops", self_loop_count));
+        issues.push(format!("[{}] {}", issue.code, issue.message));
     }
 
     Ok(GraphValidateResponse {
-        valid: issues.is_empty(),
+        valid: result.valid && issues.is_empty(),
         issues,
         orphan_count,
         self_loop_count,
@@ -383,49 +363,66 @@ pub async fn graph_validate(state: &AppState) -> Result<GraphValidateResponse> {
 ///
 /// Returns error if graph is not loaded or node not found.
 #[cfg(feature = "graph")]
-pub async fn get_node(state: &AppState, node_id: &str) -> Result<NodeInfo> {
+pub async fn get_node(state: &AppState, node_id_param: &str) -> Result<NodeInfo> {
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    let node_idx = loaded.node_index.get(node_id).ok_or_else(|| {
-        crate::error::Error::not_found_msg(format!("Node not found: {}", node_id))
+    let node = loaded.data.get_node(node_id_param).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!("Node not found: {}", node_id_param))
     })?;
 
-    let node = &loaded.graph[*node_idx];
+    let idx = loaded.data.get_index(node_id_param).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!("Node index not found: {}", node_id_param))
+    })?;
+
     let in_degree = loaded
+        .data
         .graph
-        .edges_directed(*node_idx, petgraph::Direction::Incoming)
+        .edges_directed(idx, petgraph::Direction::Incoming)
         .count();
     let out_degree = loaded
+        .data
         .graph
-        .edges_directed(*node_idx, petgraph::Direction::Outgoing)
+        .edges_directed(idx, petgraph::Direction::Outgoing)
         .count();
 
-    let (node_type, details) = match node {
-        Node::Concept(c) => (
+    let (ntype, details) = if is_concept_node(node) {
+        (
             "concept".to_string(),
             NodeDetails::Concept {
-                title: c.title.clone(),
-                category: c.category.clone(),
-                source_id: c.source_id.clone(),
-                canonical_id: c.canonical_id.clone(),
-                is_canonical: c.is_canonical,
+                title: node_title(node).to_string(),
+                category: node_category(node).to_string(),
+                source_id: node.source_id.clone().unwrap_or_default(),
+                canonical_id: node.canonical_id.clone(),
+                is_canonical: node.is_canonical,
             },
-        ),
-        Node::Source(s) => (
+        )
+    } else if is_source_node(node) {
+        (
             "source".to_string(),
             NodeDetails::Source {
-                title: s.title.clone(),
-                author: s.author.clone(),
-                year: s.year,
-                is_converted: s.is_converted,
+                title: node_title(node).to_string(),
+                author: source_author(node).to_string(),
+                year: source_year(node),
+                is_converted: source_is_converted(node),
             },
-        ),
+        )
+    } else {
+        (
+            "unknown".to_string(),
+            NodeDetails::Concept {
+                title: node_title(node).to_string(),
+                category: node_category(node).to_string(),
+                source_id: node.source_id.clone().unwrap_or_default(),
+                canonical_id: node.canonical_id.clone(),
+                is_canonical: node.is_canonical,
+            },
+        )
     };
 
     Ok(NodeInfo {
-        id: node_id.to_string(),
-        node_type,
+        id: node_id_param.to_string(),
+        node_type: ntype,
         details,
         in_degree,
         out_degree,
@@ -450,14 +447,14 @@ pub async fn get_node(state: &AppState, node_id: &str) -> Result<NodeInfo> {
 #[cfg(feature = "graph")]
 pub async fn get_node_edges(
     state: &AppState,
-    node_id: &str,
+    node_id_param: &str,
     direction: &str,
 ) -> Result<NodeEdgesResponse> {
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    let node_idx = loaded.node_index.get(node_id).ok_or_else(|| {
-        crate::error::Error::not_found_msg(format!("Node not found: {}", node_id))
+    let idx = loaded.data.get_index(node_id_param).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!("Node not found: {}", node_id_param))
     })?;
 
     let mut incoming = Vec::new();
@@ -465,19 +462,16 @@ pub async fn get_node_edges(
 
     if direction == "incoming" || direction == "both" {
         for edge in loaded
+            .data
             .graph
-            .edges_directed(*node_idx, petgraph::Direction::Incoming)
+            .edges_directed(idx, petgraph::Direction::Incoming)
         {
-            let from_node = &loaded.graph[edge.source()];
-            let from_id = match from_node {
-                Node::Concept(c) => c.id.clone(),
-                Node::Source(s) => s.id.clone(),
-            };
+            let from_node = &loaded.data.graph[edge.source()];
 
             incoming.push(EdgeInfo {
-                from: from_id,
-                to: node_id.to_string(),
-                relationship: format!("{:?}", edge.weight().relationship),
+                from: node_id(from_node).to_string(),
+                to: node_id_param.to_string(),
+                relationship: from_fabryk_relationship(&edge.weight().relationship),
                 weight: edge.weight().weight,
                 origin: format!("{:?}", edge.weight().origin),
             });
@@ -486,19 +480,16 @@ pub async fn get_node_edges(
 
     if direction == "outgoing" || direction == "both" {
         for edge in loaded
+            .data
             .graph
-            .edges_directed(*node_idx, petgraph::Direction::Outgoing)
+            .edges_directed(idx, petgraph::Direction::Outgoing)
         {
-            let to_node = &loaded.graph[edge.target()];
-            let to_id = match to_node {
-                Node::Concept(c) => c.id.clone(),
-                Node::Source(s) => s.id.clone(),
-            };
+            let to_node = &loaded.data.graph[edge.target()];
 
             outgoing.push(EdgeInfo {
-                from: node_id.to_string(),
-                to: to_id,
-                relationship: format!("{:?}", edge.weight().relationship),
+                from: node_id_param.to_string(),
+                to: node_id(to_node).to_string(),
+                relationship: from_fabryk_relationship(&edge.weight().relationship),
                 weight: edge.weight().weight,
                 origin: format!("{:?}", edge.weight().origin),
             });
@@ -506,7 +497,7 @@ pub async fn get_node_edges(
     }
 
     Ok(NodeEdgesResponse {
-        node_id: node_id.to_string(),
+        node_id: node_id_param.to_string(),
         direction: direction.to_string(),
         incoming,
         outgoing,
@@ -621,81 +612,51 @@ mod tests {
     mod functional {
         use super::*;
         use crate::config::Config;
-        use crate::graph::types::{
-            ConceptNode, Edge, EdgeOrigin, GraphData, Relationship, SourceNode,
-        };
-        use crate::graph::LoadedGraph;
+        use crate::graph::{GraphStats, LoadedGraph};
         use fabryk::core::ServiceState;
+        use fabryk::graph::{Edge, Node, NodeType, Relationship};
         use std::sync::Arc;
 
         /// Helper to create AppState with a test graph
         async fn create_test_state() -> Arc<AppState> {
-            // Create test graph data
-            let nodes = vec![
-                Node::Source(SourceNode {
-                    id: "test-source".to_string(),
-                    title: "Test Source".to_string(),
-                    author: "Test Author".to_string(),
-                    year: Some(2024),
-                    is_converted: true,
-                }),
-                Node::Concept(ConceptNode {
-                    id: "concept-a".to_string(),
-                    title: "Concept A".to_string(),
-                    category: "harmony".to_string(),
-                    source_id: "test-source".to_string(),
-                    canonical_id: None,
-                    is_canonical: true,
-                }),
-                Node::Concept(ConceptNode {
-                    id: "concept-b".to_string(),
-                    title: "Concept B".to_string(),
-                    category: "fundamentals".to_string(),
-                    source_id: "test-source".to_string(),
-                    canonical_id: None,
-                    is_canonical: true,
-                }),
-            ];
+            let mut data = fabryk::graph::GraphData::new();
 
-            let edges = vec![
-                Edge {
-                    from: "test-source".to_string(),
-                    to: "concept-a".to_string(),
-                    relationship: Relationship::Introduces,
-                    weight: 1.0,
-                    origin: EdgeOrigin::Extracted,
-                },
-                Edge {
-                    from: "concept-a".to_string(),
-                    to: "concept-b".to_string(),
-                    relationship: Relationship::Prerequisite,
-                    weight: 1.0,
-                    origin: EdgeOrigin::Extracted,
-                },
-            ];
+            // Source node
+            data.add_node(
+                Node::new("test-source", "Test Source")
+                    .with_node_type(NodeType::Custom("source".to_string()))
+                    .with_metadata("author", serde_json::json!("Test Author"))
+                    .with_metadata("year", serde_json::json!(2024))
+                    .with_metadata("is_converted", serde_json::json!(true)),
+            );
 
-            let graph_data = GraphData {
-                version: "1.0".to_string(),
-                nodes,
-                edges,
-                metadata: None,
-            };
+            // Concept nodes
+            data.add_node(
+                Node::new("concept-a", "Concept A")
+                    .with_category("harmony")
+                    .with_source("test-source"),
+            );
+            data.add_node(
+                Node::new("concept-b", "Concept B")
+                    .with_category("fundamentals")
+                    .with_source("test-source"),
+            );
 
-            // Convert to petgraph and build loaded graph
-            let graph = crate::graph::persistence::to_petgraph(&graph_data);
+            // Edges
+            data.add_edge(Edge::new(
+                "test-source",
+                "concept-a",
+                Relationship::Introduces,
+            ))
+            .expect("edge");
+            data.add_edge(Edge::new(
+                "concept-a",
+                "concept-b",
+                Relationship::Prerequisite,
+            ))
+            .expect("edge");
 
-            // Build node index
-            let mut node_index = std::collections::HashMap::new();
-            for idx in graph.node_indices() {
-                let id = match &graph[idx] {
-                    Node::Concept(c) => c.id.clone(),
-                    Node::Source(s) => s.id.clone(),
-                };
-                node_index.insert(id, idx);
-            }
-
-            // Compute stats
-            let stats = crate::graph::GraphStats {
+            let stats = GraphStats {
                 node_count: 3,
                 edge_count: 2,
                 concept_count: 2,
@@ -703,8 +664,7 @@ mod tests {
             };
 
             let loaded = LoadedGraph {
-                graph,
-                node_index,
+                data,
                 loaded_at: chrono::Utc::now(),
                 stats,
             };

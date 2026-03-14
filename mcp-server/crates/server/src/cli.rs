@@ -466,11 +466,11 @@ async fn handle_graph_command(
 
     match graph_cmds.command {
         GraphSubcommand::Build { dry_run, verbose } => {
-            crate::graph::cli::handle_build(&config, dry_run, verbose).await
+            crate::graph::handle_build(&config, dry_run, verbose).await
         }
-        GraphSubcommand::Validate => crate::graph::cli::handle_validate(&config).await,
-        GraphSubcommand::Stats => crate::graph::cli::handle_stats(&config).await,
-        GraphSubcommand::Compile => crate::graph::cli::handle_compile(&config).await,
+        GraphSubcommand::Validate => crate::graph::handle_validate(&config).await,
+        GraphSubcommand::Stats => crate::graph::handle_stats(&config).await,
+        GraphSubcommand::Compile => crate::graph::handle_compile(&config).await,
     }
 }
 

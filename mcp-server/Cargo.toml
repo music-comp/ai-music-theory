@@ -61,7 +61,7 @@ strsim = "0.11"
 toml_edit = { version = "0.22", features = ["serde"] }
 
 # Graph database (optional)
-petgraph = "0.6"
+petgraph = "0.8"
 rkyv = { version = "0.7", features = ["validation"] }
 memmap2 = "0.9"
 blake3 = "1.5"

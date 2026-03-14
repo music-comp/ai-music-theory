@@ -3,18 +3,8 @@
 //! This module defines the response structures for all graph query tools.
 //! All types implement Serialize and Deserialize for JSON encoding.
 //!
-//! ## Response Types
-//!
-//! - **RelatedConceptsResponse** - Related concepts with filtering
-//! - **ConceptPathResponse** - Shortest path between concepts
-//! - **PrerequisitesResponse** - Prerequisites in learning order
-//! - **NeighborhoodResponse** - Local subgraph around concept
-//! - **DependentsResponse** - Concepts that depend on this
-//! - **CentralConceptsResponse** - Most connected concepts
-//! - **ConceptSourcesResponse** - Sources covering a concept
-//! - **ConceptVariantsResponse** - Source-specific variants
-//! - **BridgeConceptsResponse** - Cross-category connectors
-//! - **SourceCoverageResponse** - What a source covers
+//! These types form the MCP API contract and must preserve exact JSON field
+//! names across migrations.
 
 use serde::{Deserialize, Serialize};
 

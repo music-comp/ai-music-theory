@@ -14,9 +14,11 @@ use crate::state::AppState;
 #[cfg(feature = "graph")]
 use crate::graph::query::*;
 #[cfg(feature = "graph")]
-use crate::graph::types::{Node, Relationship};
-#[cfg(feature = "graph")]
-use petgraph::graph::NodeIndex;
+use crate::graph::{
+    from_fabryk_relationship, is_concept_node, is_source_node, neighborhood, node_category,
+    node_title, prerequisites_sorted, shortest_path, source_author,
+    FabrykRelationship,
+};
 #[cfg(feature = "graph")]
 use petgraph::visit::EdgeRef;
 #[cfg(feature = "graph")]
@@ -203,34 +205,31 @@ pub async fn get_related_concepts(
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    // Lookup node
-    let node_idx = loaded.node_index.get(&params.concept_id).ok_or_else(|| {
+    // Verify node exists
+    loaded.data.get_node(&params.concept_id).ok_or_else(|| {
         crate::error::Error::not_found_msg(format!("Node not found: {}", params.concept_id))
     })?;
 
+    let start_idx = loaded.data.get_index(&params.concept_id).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!("Node index not found: {}", params.concept_id))
+    })?;
+
     // Parse relationship types filter
-    let relationship_filter: Option<HashSet<Relationship>> =
+    let relationship_filter: Option<HashSet<FabrykRelationship>> =
         params.relationship_types.map(|types_str| {
             types_str
                 .split(',')
-                .filter_map(|s| match s.trim().to_lowercase().as_str() {
-                    "prerequisite" => Some(Relationship::Prerequisite),
-                    "relates_to" | "relatesto" => Some(Relationship::RelatesTo),
-                    "extends" => Some(Relationship::Extends),
-                    "introduces" => Some(Relationship::Introduces),
-                    "covers" => Some(Relationship::Covers),
-                    _ => None,
-                })
+                .map(|s| crate::graph::to_fabryk_relationship(s.trim()))
                 .collect()
         });
 
     // BFS traversal
-    let mut queue: VecDeque<(NodeIndex, u32)> = VecDeque::new();
-    let mut visited: HashMap<NodeIndex, u32> = HashMap::new();
+    let mut queue: VecDeque<(petgraph::graph::NodeIndex, u32)> = VecDeque::new();
+    let mut visited: HashMap<petgraph::graph::NodeIndex, u32> = HashMap::new();
     let mut related: Vec<RelatedConcept> = Vec::new();
 
-    queue.push_back((*node_idx, 0));
-    visited.insert(*node_idx, 0);
+    queue.push_back((start_idx, 0));
+    visited.insert(start_idx, 0);
 
     while let Some((current_idx, current_depth)) = queue.pop_front() {
         if current_depth >= params.depth {
@@ -240,21 +239,25 @@ pub async fn get_related_concepts(
         // Determine which edges to traverse
         let edges: Vec<_> = match params.direction.as_str() {
             "incoming" => loaded
+                .data
                 .graph
                 .edges_directed(current_idx, Direction::Incoming)
                 .collect(),
             "outgoing" => loaded
+                .data
                 .graph
                 .edges_directed(current_idx, Direction::Outgoing)
                 .collect(),
             _ => {
                 // "both"
                 let mut edges = loaded
+                    .data
                     .graph
                     .edges_directed(current_idx, Direction::Incoming)
                     .collect::<Vec<_>>();
                 edges.extend(
                     loaded
+                        .data
                         .graph
                         .edges_directed(current_idx, Direction::Outgoing),
                 );
@@ -290,26 +293,18 @@ pub async fn get_related_concepts(
             queue.push_back((neighbor_idx, current_depth + 1));
 
             // Skip the starting node itself
-            if neighbor_idx == *node_idx {
+            if neighbor_idx == start_idx {
                 continue;
             }
 
             // Extract node details
-            let neighbor_node = &loaded.graph[neighbor_idx];
-            if let Node::Concept(concept) = neighbor_node {
-                // Find the node ID from the reverse index
-                let neighbor_id = loaded
-                    .node_index
-                    .iter()
-                    .find(|(_, &idx)| idx == neighbor_idx)
-                    .map(|(id, _)| id.clone())
-                    .unwrap_or_default();
-
+            let neighbor_node = &loaded.data.graph[neighbor_idx];
+            if is_concept_node(neighbor_node) {
                 related.push(RelatedConcept {
-                    id: neighbor_id,
-                    title: concept.title.clone(),
-                    category: concept.category.clone(),
-                    relationship: format!("{:?}", edge_weight.relationship),
+                    id: neighbor_node.id.clone(),
+                    title: node_title(neighbor_node).to_string(),
+                    category: node_category(neighbor_node).to_string(),
+                    relationship: from_fabryk_relationship(&edge_weight.relationship),
                     direction: direction.to_string(),
                     weight: edge_weight.weight,
                     distance: current_depth + 1,
@@ -356,107 +351,65 @@ pub async fn find_concept_path(
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    // Lookup nodes
-    let from_idx = loaded.node_index.get(&params.from_id).ok_or_else(|| {
+    // Verify nodes exist
+    loaded.data.get_node(&params.from_id).ok_or_else(|| {
         crate::error::Error::not_found_msg(format!("Node not found: {}", params.from_id))
     })?;
-    let to_idx = loaded.node_index.get(&params.to_id).ok_or_else(|| {
+    loaded.data.get_node(&params.to_id).ok_or_else(|| {
         crate::error::Error::not_found_msg(format!("Node not found: {}", params.to_id))
     })?;
 
-    // Use shortest_path algorithm
-    let path_result = crate::graph::algorithms::shortest_path(
-        &loaded.graph,
-        *from_idx,
-        *to_idx,
-        params.max_depth,
-    );
+    // Use fabryk shortest_path algorithm
+    let path_result = shortest_path(&loaded.data, &params.from_id, &params.to_id)
+        .map_err(|e| crate::error::Error::operation(format!("Path search failed: {}", e)))?;
 
-    match path_result {
-        Some(path_indices) => {
-            // Build response with full path details
-            let mut nodes = Vec::new();
-            let mut edges = Vec::new();
+    if path_result.found {
+        let mut nodes = Vec::new();
+        let mut edges = Vec::new();
 
-            // Build node list
-            for (i, &node_idx) in path_indices.iter().enumerate() {
-                let node = &loaded.graph[node_idx];
-                let node_id = loaded
-                    .node_index
-                    .iter()
-                    .find(|(_, &idx)| idx == node_idx)
-                    .map(|(id, _)| id.clone())
-                    .unwrap_or_default();
+        // Build node list from PathResult
+        for (i, node) in path_result.path.iter().enumerate() {
+            let category = if is_concept_node(node) {
+                Some(node_category(node).to_string())
+            } else {
+                None
+            };
 
-                let (title, category) = match node {
-                    Node::Concept(c) => (c.title.clone(), Some(c.category.clone())),
-                    Node::Source(s) => (s.title.clone(), None),
-                };
-
-                nodes.push(crate::graph::query::PathNode {
-                    id: node_id,
-                    title,
-                    category,
-                    step: i as u32,
-                });
-            }
-
-            // Build edge list
-            for i in 0..(path_indices.len() - 1) {
-                let from_idx = path_indices[i];
-                let to_idx = path_indices[i + 1];
-
-                // Find the edge between these nodes (check both directions)
-                if let Some(edge) = loaded
-                    .graph
-                    .edges_directed(from_idx, Direction::Outgoing)
-                    .find(|e| e.target() == to_idx)
-                    .or_else(|| {
-                        loaded
-                            .graph
-                            .edges_directed(from_idx, Direction::Incoming)
-                            .find(|e| e.source() == to_idx)
-                    })
-                {
-                    let from_id = loaded
-                        .node_index
-                        .iter()
-                        .find(|(_, &idx)| idx == from_idx)
-                        .map(|(id, _)| id.clone())
-                        .unwrap_or_default();
-                    let to_id = loaded
-                        .node_index
-                        .iter()
-                        .find(|(_, &idx)| idx == to_idx)
-                        .map(|(id, _)| id.clone())
-                        .unwrap_or_default();
-
-                    edges.push(crate::graph::query::PathEdge {
-                        from: from_id,
-                        to: to_id,
-                        relationship: format!("{:?}", edge.weight().relationship),
-                        step: i as u32,
-                    });
-                }
-            }
-
-            Ok(ConceptPathResponse {
-                from: params.from_id,
-                to: params.to_id,
-                found: true,
-                path_length: (path_indices.len() - 1) as u32,
-                nodes,
-                edges,
-            })
+            nodes.push(crate::graph::query::PathNode {
+                id: node.id.clone(),
+                title: node_title(node).to_string(),
+                category,
+                step: i as u32,
+            });
         }
-        None => Ok(ConceptPathResponse {
+
+        // Build edge list from PathResult
+        for (i, edge) in path_result.edges.iter().enumerate() {
+            edges.push(crate::graph::query::PathEdge {
+                from: edge.from.clone(),
+                to: edge.to.clone(),
+                relationship: from_fabryk_relationship(&edge.relationship),
+                step: i as u32,
+            });
+        }
+
+        Ok(ConceptPathResponse {
+            from: params.from_id,
+            to: params.to_id,
+            found: true,
+            path_length: path_result.edges.len() as u32,
+            nodes,
+            edges,
+        })
+    } else {
+        Ok(ConceptPathResponse {
             from: params.from_id,
             to: params.to_id,
             found: false,
             path_length: 0,
             nodes: Vec::new(),
             edges: Vec::new(),
-        }),
+        })
     }
 }
 
@@ -490,44 +443,29 @@ pub async fn get_prerequisites(
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    // Lookup node
-    let node_idx = loaded.node_index.get(&params.concept_id).ok_or_else(|| {
+    // Verify node exists and get title
+    let target_node = loaded.data.get_node(&params.concept_id).ok_or_else(|| {
         crate::error::Error::not_found_msg(format!("Node not found: {}", params.concept_id))
     })?;
+    let concept_title = node_title(target_node).to_string();
 
-    // Get concept title
-    let concept_title = match &loaded.graph[*node_idx] {
-        Node::Concept(c) => c.title.clone(),
-        Node::Source(s) => s.title.clone(),
-    };
-
-    // Use prerequisites_sorted algorithm
-    let prereq_indices =
-        crate::graph::algorithms::prerequisites_sorted(&loaded.graph, *node_idx, params.depth);
+    // Use fabryk prerequisites_sorted algorithm
+    let prereq_result = prerequisites_sorted(&loaded.data, &params.concept_id)
+        .map_err(|e| crate::error::Error::operation(format!("Prerequisites failed: {}", e)))?;
 
     // Build response
     let mut prerequisites = Vec::new();
     let mut learning_order = Vec::new();
 
-    for prereq_idx in prereq_indices {
-        let node = &loaded.graph[prereq_idx];
-        if let Node::Concept(concept) = node {
-            let node_id = loaded
-                .node_index
-                .iter()
-                .find(|(_, &idx)| idx == prereq_idx)
-                .map(|(id, _)| id.clone())
-                .unwrap_or_default();
-
-            // Calculate depth (distance from target)
-            let depth = calculate_prereq_depth(&loaded.graph, *node_idx, prereq_idx);
-
-            learning_order.push(node_id.clone());
+    for (i, node) in prereq_result.ordered.iter().enumerate() {
+        if is_concept_node(node) {
+            learning_order.push(node.id.clone());
             prerequisites.push(crate::graph::query::PrerequisiteConcept {
-                id: node_id,
-                title: concept.title.clone(),
-                category: concept.category.clone(),
-                depth,
+                id: node.id.clone(),
+                title: node_title(node).to_string(),
+                category: node_category(node).to_string(),
+                // Use index as approximate depth (topo-sorted, so lower index = deeper prereq)
+                depth: i as u32,
             });
         }
     }
@@ -576,83 +514,74 @@ pub async fn get_concept_neighborhood(
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    // Lookup node
-    let node_idx = loaded.node_index.get(&params.concept_id).ok_or_else(|| {
+    // Verify node exists
+    loaded.data.get_node(&params.concept_id).ok_or_else(|| {
         crate::error::Error::not_found_msg(format!("Node not found: {}", params.concept_id))
     })?;
 
-    // Use neighborhood algorithm
-    let neighborhood_nodes = crate::graph::algorithms::neighborhood(
-        &loaded.graph,
-        *node_idx,
-        params.radius,
-        Some(params.max_nodes),
-    );
+    // Use fabryk neighborhood algorithm
+    let result = neighborhood(&loaded.data, &params.concept_id, params.radius as usize, None)
+        .map_err(|e| crate::error::Error::operation(format!("Neighborhood failed: {}", e)))?;
 
-    // Collect nodes
+    // Collect nodes: center + neighbors
     let mut nodes = Vec::new();
-    let mut node_set: HashSet<NodeIndex> = HashSet::new();
+    let mut node_ids_in_neighborhood: HashSet<String> = HashSet::new();
 
-    for (neighbor_idx, distance) in neighborhood_nodes {
-        node_set.insert(neighbor_idx);
-        let node = &loaded.graph[neighbor_idx];
-        let node_id = loaded
-            .node_index
-            .iter()
-            .find(|(_, &idx)| idx == neighbor_idx)
-            .map(|(id, _)| id.clone())
-            .unwrap_or_default();
+    // Add center node
+    node_ids_in_neighborhood.insert(result.center.id.clone());
+    let center_type = if is_concept_node(&result.center) {
+        "concept"
+    } else {
+        "source"
+    };
+    let center_cat = if is_concept_node(&result.center) {
+        Some(node_category(&result.center).to_string())
+    } else {
+        None
+    };
+    nodes.push(crate::graph::query::NeighborhoodNode {
+        id: result.center.id.clone(),
+        title: node_title(&result.center).to_string(),
+        node_type: center_type.to_string(),
+        category: center_cat,
+        distance: 0,
+        is_center: true,
+    });
 
-        let is_center = neighbor_idx == *node_idx;
+    // Add neighbor nodes (up to max_nodes - 1 since center takes one slot)
+    for node in result.nodes.iter().take((params.max_nodes as usize).saturating_sub(1)) {
+        node_ids_in_neighborhood.insert(node.id.clone());
+        let distance = result.distances.get(&node.id).copied().unwrap_or(1) as u32;
 
-        match node {
-            Node::Concept(c) => {
-                nodes.push(crate::graph::query::NeighborhoodNode {
-                    id: node_id,
-                    title: c.title.clone(),
-                    node_type: "concept".to_string(),
-                    category: Some(c.category.clone()),
-                    distance,
-                    is_center,
-                });
-            }
-            Node::Source(s) => {
-                nodes.push(crate::graph::query::NeighborhoodNode {
-                    id: node_id,
-                    title: s.title.clone(),
-                    node_type: "source".to_string(),
-                    category: None,
-                    distance,
-                    is_center,
-                });
-            }
-        }
+        let (ntype, category) = if is_concept_node(node) {
+            ("concept", Some(node_category(node).to_string()))
+        } else if is_source_node(node) {
+            ("source", None)
+        } else {
+            ("unknown", None)
+        };
+
+        nodes.push(crate::graph::query::NeighborhoodNode {
+            id: node.id.clone(),
+            title: node_title(node).to_string(),
+            node_type: ntype.to_string(),
+            category,
+            distance,
+            is_center: false,
+        });
     }
 
     // Collect edges between nodes in the neighborhood
     let mut edges = Vec::new();
-    for &node_idx in &node_set {
-        for edge in loaded.graph.edges_directed(node_idx, Direction::Outgoing) {
-            if node_set.contains(&edge.target()) {
-                let from_id = loaded
-                    .node_index
-                    .iter()
-                    .find(|(_, &idx)| idx == node_idx)
-                    .map(|(id, _)| id.clone())
-                    .unwrap_or_default();
-                let to_id = loaded
-                    .node_index
-                    .iter()
-                    .find(|(_, &idx)| idx == edge.target())
-                    .map(|(id, _)| id.clone())
-                    .unwrap_or_default();
-
-                edges.push(crate::graph::query::NeighborhoodEdge {
-                    from: from_id,
-                    to: to_id,
-                    relationship: format!("{:?}", edge.weight().relationship),
-                });
-            }
+    for edge in &result.edges {
+        if node_ids_in_neighborhood.contains(&edge.from)
+            && node_ids_in_neighborhood.contains(&edge.to)
+        {
+            edges.push(crate::graph::query::NeighborhoodEdge {
+                from: edge.from.clone(),
+                to: edge.to.clone(),
+                relationship: from_fabryk_relationship(&edge.relationship),
+            });
         }
     }
 
@@ -700,40 +629,58 @@ pub async fn get_dependents(
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    // Lookup node
-    let node_idx = loaded.node_index.get(&params.concept_id).ok_or_else(|| {
+    // Verify node exists and get title
+    let target_node = loaded.data.get_node(&params.concept_id).ok_or_else(|| {
         crate::error::Error::not_found_msg(format!("Node not found: {}", params.concept_id))
     })?;
+    let concept_title = node_title(target_node).to_string();
 
-    // Get concept title
-    let concept_title = match &loaded.graph[*node_idx] {
-        Node::Concept(c) => c.title.clone(),
-        Node::Source(s) => s.title.clone(),
-    };
+    let start_idx = loaded.data.get_index(&params.concept_id).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!(
+            "Node index not found: {}",
+            params.concept_id
+        ))
+    })?;
 
-    // Use dependents algorithm
-    let dependent_indices =
-        crate::graph::algorithms::dependents(&loaded.graph, *node_idx, params.depth);
-
-    // Build response
+    // BFS forward through incoming Prerequisite edges to find dependents
+    // (nodes that have this concept as a prerequisite)
+    let mut queue: VecDeque<(petgraph::graph::NodeIndex, u32)> = VecDeque::new();
+    let mut visited: HashSet<petgraph::graph::NodeIndex> = HashSet::new();
     let mut dependents = Vec::new();
 
-    for (dependent_idx, distance) in dependent_indices {
-        let node = &loaded.graph[dependent_idx];
-        if let Node::Concept(concept) = node {
-            let node_id = loaded
-                .node_index
-                .iter()
-                .find(|(_, &idx)| idx == dependent_idx)
-                .map(|(id, _)| id.clone())
-                .unwrap_or_default();
+    queue.push_back((start_idx, 0));
+    visited.insert(start_idx);
 
-            dependents.push(crate::graph::query::DependentConcept {
-                id: node_id,
-                title: concept.title.clone(),
-                category: concept.category.clone(),
-                depth: distance,
-            });
+    while let Some((current_idx, current_depth)) = queue.pop_front() {
+        if current_depth >= params.depth {
+            continue;
+        }
+
+        // Follow outgoing Prerequisite edges (nodes that depend on current)
+        // Edge convention: from=prerequisite, to=dependent
+        for edge in loaded
+            .data
+            .graph
+            .edges_directed(current_idx, Direction::Outgoing)
+        {
+            if matches!(
+                edge.weight().relationship,
+                FabrykRelationship::Prerequisite
+            ) {
+                let dep_idx = edge.target();
+                if visited.insert(dep_idx) {
+                    let dep_node = &loaded.data.graph[dep_idx];
+                    if is_concept_node(dep_node) {
+                        dependents.push(crate::graph::query::DependentConcept {
+                            id: dep_node.id.clone(),
+                            title: node_title(dep_node).to_string(),
+                            category: node_category(dep_node).to_string(),
+                            depth: current_depth + 1,
+                        });
+                    }
+                    queue.push_back((dep_idx, current_depth + 1));
+                }
+            }
         }
     }
 
@@ -775,27 +722,34 @@ pub async fn get_central_concepts(
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    // Use degree_centrality algorithm
-    let central_indices =
-        crate::graph::algorithms::degree_centrality(&loaded.graph, params.category.as_deref());
+    // Use fabryk calculate_centrality algorithm
+    let centrality_scores = crate::graph::calculate_centrality(&loaded.data);
 
-    // Build response (limit results)
+    // Build response: filter by category, filter concept nodes only, limit results
     let mut concepts = Vec::new();
-    for (node_idx, degree) in central_indices.iter().take(params.limit as usize) {
-        let node = &loaded.graph[*node_idx];
-        if let Node::Concept(concept) = node {
-            let node_id = loaded
-                .node_index
-                .iter()
-                .find(|(_, &idx)| idx == *node_idx)
-                .map(|(id, _)| id.clone())
-                .unwrap_or_default();
+    for score in centrality_scores.iter() {
+        if concepts.len() >= params.limit as usize {
+            break;
+        }
+        if let Some(node) = loaded.data.get_node(&score.node_id) {
+            if !is_concept_node(node) {
+                continue;
+            }
+            // Apply category filter if provided
+            if let Some(ref cat_filter) = params.category {
+                if node_category(node) != cat_filter.as_str() {
+                    continue;
+                }
+            }
+            // Calculate raw connection count from centrality score
+            let n = loaded.data.node_count() as f32;
+            let connections = (score.degree * 2.0 * (n - 1.0)).round() as u32;
 
             concepts.push(crate::graph::query::CentralConcept {
-                id: node_id,
-                title: concept.title.clone(),
-                category: concept.category.clone(),
-                connections: *degree,
+                id: node.id.clone(),
+                title: node_title(node).to_string(),
+                category: node_category(node).to_string(),
+                connections,
             });
         }
     }
@@ -830,46 +784,40 @@ pub async fn get_concept_sources(
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    // Lookup node
-    let node_idx = loaded.node_index.get(&params.concept_id).ok_or_else(|| {
+    // Verify node exists and is a concept
+    let target_node = loaded.data.get_node(&params.concept_id).ok_or_else(|| {
         crate::error::Error::not_found_msg(format!("Node not found: {}", params.concept_id))
     })?;
+    if is_source_node(target_node) {
+        return Err(crate::error::Error::config(
+            "Cannot get sources for a source node".to_string(),
+        ));
+    }
+    let concept_title = node_title(target_node).to_string();
 
-    // Get concept title
-    let concept_title = match &loaded.graph[*node_idx] {
-        Node::Concept(c) => c.title.clone(),
-        Node::Source(_) => {
-            return Err(crate::error::Error::config(
-                "Cannot get sources for a source node".to_string(),
-            ))
-        }
-    };
+    let idx = loaded.data.get_index(&params.concept_id).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!(
+            "Node index not found: {}",
+            params.concept_id
+        ))
+    })?;
 
     // Find all incoming edges from Source nodes
     let mut sources = Vec::new();
-    for edge in loaded.graph.edges_directed(*node_idx, Direction::Incoming) {
-        let source_idx = edge.source();
-        let source_node = &loaded.graph[source_idx];
+    for edge in loaded.data.graph.edges_directed(idx, Direction::Incoming) {
+        let source_node = &loaded.data.graph[edge.source()];
 
-        if let Node::Source(source) = source_node {
-            // Check if it's Introduces or Covers relationship
+        if is_source_node(source_node) {
             let relationship = &edge.weight().relationship;
             if matches!(
                 relationship,
-                Relationship::Introduces | Relationship::Covers
+                FabrykRelationship::Introduces | FabrykRelationship::Covers
             ) {
-                let source_id = loaded
-                    .node_index
-                    .iter()
-                    .find(|(_, &idx)| idx == source_idx)
-                    .map(|(id, _)| id.clone())
-                    .unwrap_or_default();
-
                 sources.push(crate::graph::query::SourceCoverage {
-                    source_id,
-                    source_title: source.title.clone(),
-                    source_author: source.author.clone(),
-                    relationship: format!("{:?}", relationship),
+                    source_id: source_node.id.clone(),
+                    source_title: node_title(source_node).to_string(),
+                    source_author: source_author(source_node).to_string(),
+                    relationship: from_fabryk_relationship(relationship),
                 });
             }
         }
@@ -907,62 +855,48 @@ pub async fn get_concept_variants(
     let loaded = guard.as_ref().unwrap();
 
     // Verify canonical concept exists
-    let canonical_idx = loaded.node_index.get(&params.canonical_id).ok_or_else(|| {
+    let canonical_node = loaded.data.get_node(&params.canonical_id).ok_or_else(|| {
         crate::error::Error::not_found_msg(format!(
             "Canonical concept not found: {}",
             params.canonical_id
         ))
     })?;
 
-    let canonical_title = match &loaded.graph[*canonical_idx] {
-        Node::Concept(c) => {
-            if !c.is_canonical {
-                return Err(crate::error::Error::config(format!(
-                    "Concept {} is not marked as canonical",
-                    params.canonical_id
-                )));
-            }
-            c.title.clone()
-        }
-        Node::Source(_) => {
-            return Err(crate::error::Error::config(
-                "Cannot get variants for a source node".to_string(),
-            ))
-        }
-    };
+    if is_source_node(canonical_node) {
+        return Err(crate::error::Error::config(
+            "Cannot get variants for a source node".to_string(),
+        ));
+    }
+    if !canonical_node.is_canonical {
+        return Err(crate::error::Error::config(format!(
+            "Concept {} is not marked as canonical",
+            params.canonical_id
+        )));
+    }
+    let canonical_title = node_title(canonical_node).to_string();
 
     // Find all concepts with matching canonical_id
     let mut variants = Vec::new();
-    for node_idx in loaded.graph.node_indices() {
-        let node = &loaded.graph[node_idx];
-        if let Node::Concept(concept) = node {
-            if let Some(ref canon_id) = concept.canonical_id {
-                if canon_id == &params.canonical_id {
-                    let node_id = loaded
-                        .node_index
-                        .iter()
-                        .find(|(_, &idx)| idx == node_idx)
-                        .map(|(id, _)| id.clone())
-                        .unwrap_or_default();
+    for node in loaded.data.iter_nodes() {
+        if !is_concept_node(node) {
+            continue;
+        }
+        if let Some(ref canon_id) = node.canonical_id {
+            if canon_id == &params.canonical_id {
+                // Get source title
+                let source_id = node.source_id.clone().unwrap_or_default();
+                let source_title_str = if let Some(src_node) = loaded.data.get_node(&source_id) {
+                    node_title(src_node).to_string()
+                } else {
+                    source_id.clone() // Fallback to ID
+                };
 
-                    // Get source title
-                    let source_title =
-                        if let Some(source_idx) = loaded.node_index.get(&concept.source_id) {
-                            match &loaded.graph[*source_idx] {
-                                Node::Source(s) => s.title.clone(),
-                                _ => concept.source_id.clone(), // Fallback to ID
-                            }
-                        } else {
-                            concept.source_id.clone() // Fallback to ID
-                        };
-
-                    variants.push(crate::graph::query::ConceptVariant {
-                        id: node_id,
-                        title: concept.title.clone(),
-                        source_id: concept.source_id.clone(),
-                        source_title,
-                    });
-                }
+                variants.push(crate::graph::query::ConceptVariant {
+                    id: node.id.clone(),
+                    title: node_title(node).to_string(),
+                    source_id,
+                    source_title: source_title_str,
+                });
             }
         }
     }
@@ -1009,37 +943,60 @@ pub async fn find_bridge_concepts(
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    // Use bridge_concepts algorithm
-    let bridge_indices = crate::graph::algorithms::bridge_concepts(
-        &loaded.graph,
-        &params.category_a,
-        &params.category_b,
-    );
+    // Use fabryk find_bridges algorithm (returns nodes sorted by bridge score)
+    let bridge_nodes =
+        crate::graph::find_bridges(&loaded.data, params.limit as usize * 3);
 
-    // Build response (limit results)
+    // Filter and score by the two target categories
     let mut bridges = Vec::new();
-    for (node_idx, connections_a, connections_b, score) in
-        bridge_indices.iter().take(params.limit as usize)
-    {
-        let node = &loaded.graph[*node_idx];
-        if let Node::Concept(concept) = node {
-            let node_id = loaded
-                .node_index
-                .iter()
-                .find(|(_, &idx)| idx == *node_idx)
-                .map(|(id, _)| id.clone())
-                .unwrap_or_default();
+    for node in &bridge_nodes {
+        if bridges.len() >= params.limit as usize {
+            break;
+        }
+        if !is_concept_node(node) {
+            continue;
+        }
 
+        // Count connections to each target category
+        let idx = match loaded.data.get_index(&node.id) {
+            Some(i) => i,
+            None => continue,
+        };
+        let mut connections_a: u32 = 0;
+        let mut connections_b: u32 = 0;
+
+        for edge_ref in loaded.data.graph.edges(idx) {
+            let neighbor = &loaded.data.graph[edge_ref.target()];
+            let cat = node_category(neighbor);
+            if cat == params.category_a {
+                connections_a += 1;
+            }
+            if cat == params.category_b {
+                connections_b += 1;
+            }
+        }
+
+        // Only include if it connects both categories
+        if connections_a > 0 && connections_b > 0 {
+            let bridge_score = (connections_a as f32 * connections_b as f32).sqrt();
             bridges.push(crate::graph::query::BridgeConcept {
-                id: node_id,
-                title: concept.title.clone(),
-                category: concept.category.clone(),
-                connections_to_a: *connections_a,
-                connections_to_b: *connections_b,
-                bridge_score: *score,
+                id: node.id.clone(),
+                title: node_title(node).to_string(),
+                category: node_category(node).to_string(),
+                connections_to_a: connections_a,
+                connections_to_b: connections_b,
+                bridge_score,
             });
         }
     }
+
+    // Sort by bridge score descending
+    bridges.sort_by(|a, b| {
+        b.bridge_score
+            .partial_cmp(&a.bridge_score)
+            .unwrap_or(std::cmp::Ordering::Equal)
+    });
+    bridges.truncate(params.limit as usize);
 
     Ok(BridgeConceptsResponse {
         category_a: params.category_a,
@@ -1072,46 +1029,42 @@ pub async fn get_source_coverage(
     let guard = state.require_graph()?;
     let loaded = guard.as_ref().unwrap();
 
-    // Lookup node
-    let node_idx = loaded.node_index.get(&params.source_id).ok_or_else(|| {
+    // Verify node exists and is a source
+    let source_node = loaded.data.get_node(&params.source_id).ok_or_else(|| {
         crate::error::Error::not_found_msg(format!("Node not found: {}", params.source_id))
     })?;
+    if !is_source_node(source_node) {
+        return Err(crate::error::Error::config(
+            "Cannot get coverage for a concept node".to_string(),
+        ));
+    }
+    let src_title = node_title(source_node).to_string();
+    let src_author = source_author(source_node).to_string();
 
-    // Verify it's a source node
-    let (source_title, source_author) = match &loaded.graph[*node_idx] {
-        Node::Source(s) => (s.title.clone(), s.author.clone()),
-        Node::Concept(_) => {
-            return Err(crate::error::Error::config(
-                "Cannot get coverage for a concept node".to_string(),
-            ))
-        }
-    };
+    let idx = loaded.data.get_index(&params.source_id).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!(
+            "Node index not found: {}",
+            params.source_id
+        ))
+    })?;
 
     // Find all outgoing edges to concepts
     let mut introduces = Vec::new();
     let mut covers = Vec::new();
 
-    for edge in loaded.graph.edges_directed(*node_idx, Direction::Outgoing) {
-        let target_idx = edge.target();
-        let target_node = &loaded.graph[target_idx];
+    for edge in loaded.data.graph.edges_directed(idx, Direction::Outgoing) {
+        let target_node = &loaded.data.graph[edge.target()];
 
-        if let Node::Concept(concept) = target_node {
-            let concept_id = loaded
-                .node_index
-                .iter()
-                .find(|(_, &idx)| idx == target_idx)
-                .map(|(id, _)| id.clone())
-                .unwrap_or_default();
-
+        if is_concept_node(target_node) {
             let concept_brief = crate::graph::query::ConceptBrief {
-                id: concept_id,
-                title: concept.title.clone(),
-                category: concept.category.clone(),
+                id: target_node.id.clone(),
+                title: node_title(target_node).to_string(),
+                category: node_category(target_node).to_string(),
             };
 
             match edge.weight().relationship {
-                Relationship::Introduces => introduces.push(concept_brief),
-                Relationship::Covers => covers.push(concept_brief),
+                FabrykRelationship::Introduces => introduces.push(concept_brief),
+                FabrykRelationship::Covers => covers.push(concept_brief),
                 _ => {} // Ignore other relationship types
             }
         }
@@ -1121,8 +1074,8 @@ pub async fn get_source_coverage(
 
     Ok(SourceCoverageResponse {
         source_id: params.source_id,
-        source_title,
-        source_author,
+        source_title: src_title,
+        source_author: src_author,
         total_concepts,
         introduces_count: introduces.len() as u32,
         covers_count: covers.len() as u32,
@@ -1135,37 +1088,7 @@ pub async fn get_source_coverage(
 // Helper Functions
 // ============================================================================
 
-/// Calculate prerequisite depth using BFS.
-#[cfg(feature = "graph")]
-fn calculate_prereq_depth(
-    graph: &crate::graph::ConceptGraph,
-    target: NodeIndex,
-    prereq: NodeIndex,
-) -> u32 {
-    let mut queue: VecDeque<(NodeIndex, u32)> = VecDeque::new();
-    let mut visited: HashSet<NodeIndex> = HashSet::new();
-
-    queue.push_back((prereq, 0));
-    visited.insert(prereq);
-
-    while let Some((current, depth)) = queue.pop_front() {
-        if current == target {
-            return depth;
-        }
-
-        // Follow outgoing Prerequisite edges
-        for edge in graph.edges_directed(current, Direction::Outgoing) {
-            if matches!(edge.weight().relationship, Relationship::Prerequisite) {
-                let neighbor = edge.target();
-                if visited.insert(neighbor) {
-                    queue.push_back((neighbor, depth + 1));
-                }
-            }
-        }
-    }
-
-    0 // Shouldn't reach here if prereq is actually a prerequisite
-}
+// Helper functions have been replaced by fabryk algorithm calls.
 
 #[cfg(not(feature = "graph"))]
 pub async fn get_related_concepts(
@@ -1348,113 +1271,74 @@ mod tests {
     mod functional {
         use super::*;
         use crate::config::Config;
-        use crate::graph::types::{
-            ConceptNode, Edge, EdgeOrigin, GraphData, Relationship, SourceNode,
-        };
-        use crate::graph::LoadedGraph;
+        use crate::graph::{GraphStats, LoadedGraph};
         use crate::state::AppState;
         use fabryk::core::ServiceState;
+        use fabryk::graph::{Edge, Node, NodeType, Relationship};
         use std::sync::Arc;
 
         /// Helper to create AppState with a test graph for query testing
         async fn create_query_test_state() -> Arc<AppState> {
-            // Create more comprehensive test graph for queries
-            let nodes = vec![
-                Node::Source(SourceNode {
-                    id: "source-1".to_string(),
-                    title: "Source One".to_string(),
-                    author: "Author".to_string(),
-                    year: Some(2024),
-                    is_converted: true,
-                }),
-                Node::Concept(ConceptNode {
-                    id: "concept-a".to_string(),
-                    title: "Concept A".to_string(),
-                    category: "harmony".to_string(),
-                    source_id: "source-1".to_string(),
-                    canonical_id: None,
-                    is_canonical: true,
-                }),
-                Node::Concept(ConceptNode {
-                    id: "concept-b".to_string(),
-                    title: "Concept B".to_string(),
-                    category: "harmony".to_string(),
-                    source_id: "source-1".to_string(),
-                    canonical_id: None,
-                    is_canonical: true,
-                }),
-                Node::Concept(ConceptNode {
-                    id: "concept-c".to_string(),
-                    title: "Concept C".to_string(),
-                    category: "fundamentals".to_string(),
-                    source_id: "source-1".to_string(),
-                    canonical_id: None,
-                    is_canonical: true,
-                }),
-                Node::Concept(ConceptNode {
-                    id: "concept-d".to_string(),
-                    title: "Concept D".to_string(),
-                    category: "fundamentals".to_string(),
-                    source_id: "source-1".to_string(),
-                    canonical_id: None,
-                    is_canonical: true,
-                }),
-            ];
+            let mut data = fabryk::graph::GraphData::new();
 
-            let edges = vec![
-                // Source introduces concepts
-                Edge {
-                    from: "source-1".to_string(),
-                    to: "concept-a".to_string(),
-                    relationship: Relationship::Introduces,
-                    weight: 1.0,
-                    origin: EdgeOrigin::Extracted,
-                },
-                // Prerequisite chain: C -> B -> A
-                Edge {
-                    from: "concept-c".to_string(),
-                    to: "concept-b".to_string(),
-                    relationship: Relationship::Prerequisite,
-                    weight: 1.0,
-                    origin: EdgeOrigin::Extracted,
-                },
-                Edge {
-                    from: "concept-b".to_string(),
-                    to: "concept-a".to_string(),
-                    relationship: Relationship::Prerequisite,
-                    weight: 1.0,
-                    origin: EdgeOrigin::Extracted,
-                },
-                // RelatesTo edges
-                Edge {
-                    from: "concept-a".to_string(),
-                    to: "concept-d".to_string(),
-                    relationship: Relationship::RelatesTo,
-                    weight: 0.7,
-                    origin: EdgeOrigin::Extracted,
-                },
-            ];
+            // Source node
+            data.add_node(
+                Node::new("source-1", "Source One")
+                    .with_node_type(NodeType::Custom("source".to_string()))
+                    .with_metadata("author", serde_json::json!("Author"))
+                    .with_metadata("year", serde_json::json!(2024))
+                    .with_metadata("is_converted", serde_json::json!(true)),
+            );
 
-            let graph_data = GraphData {
-                version: "1.0".to_string(),
-                nodes,
-                edges,
-                metadata: None,
-            };
+            // Concept nodes
+            data.add_node(
+                Node::new("concept-a", "Concept A")
+                    .with_category("harmony")
+                    .with_source("source-1"),
+            );
+            data.add_node(
+                Node::new("concept-b", "Concept B")
+                    .with_category("harmony")
+                    .with_source("source-1"),
+            );
+            data.add_node(
+                Node::new("concept-c", "Concept C")
+                    .with_category("fundamentals")
+                    .with_source("source-1"),
+            );
+            data.add_node(
+                Node::new("concept-d", "Concept D")
+                    .with_category("fundamentals")
+                    .with_source("source-1"),
+            );
 
-            // Convert to petgraph and build loaded graph
-            let graph = crate::graph::persistence::to_petgraph(&graph_data);
+            // Edges
+            data.add_edge(Edge::new(
+                "source-1",
+                "concept-a",
+                Relationship::Introduces,
+            ))
+            .expect("edge");
+            data.add_edge(Edge::new(
+                "concept-c",
+                "concept-b",
+                Relationship::Prerequisite,
+            ))
+            .expect("edge");
+            data.add_edge(Edge::new(
+                "concept-b",
+                "concept-a",
+                Relationship::Prerequisite,
+            ))
+            .expect("edge");
+            data.add_edge(Edge::new(
+                "concept-a",
+                "concept-d",
+                Relationship::RelatesTo,
+            ))
+            .expect("edge");
 
-            let mut node_index = std::collections::HashMap::new();
-            for idx in graph.node_indices() {
-                let id = match &graph[idx] {
-                    Node::Concept(c) => c.id.clone(),
-                    Node::Source(s) => s.id.clone(),
-                };
-                node_index.insert(id, idx);
-            }
-
-            let stats = crate::graph::GraphStats {
+            let stats = GraphStats {
                 node_count: 5,
                 edge_count: 4,
                 concept_count: 4,
@@ -1462,8 +1346,7 @@ mod tests {
             };
 
             let loaded = LoadedGraph {
-                graph,
-                node_index,
+                data,
                 loaded_at: chrono::Utc::now(),
                 stats,
             };
