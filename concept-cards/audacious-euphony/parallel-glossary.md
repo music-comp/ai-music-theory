@@ -15,7 +15,7 @@ The relation between two consonant triads that share a root, for example C major
 # Formal Definition
 P (Parallel) is defined in the Glossary as "the relation between two consonant triads that share a root, for example, C major and c minor; or the transformation that produces one of these triads from the other." The transformation is an involution (P(P(X)) = X), involves one semitone of voice-leading work (the third moves by chromatic semitone), and preserves two common tones (root and fifth). P is one of the three H-group transformations that map triads within hexatonic regions.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Transformation specification:
 - Input: Consonant triad
 - Output: Consonant triad of opposite mode sharing same root

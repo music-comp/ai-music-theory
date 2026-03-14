@@ -19,7 +19,7 @@ Transformational substitution operates on two levels:
 
 This maintains voice-leading trajectory while varying the specific triads or transformations. On Cube Dance, substitution continues directional motion but traverses different nodes. On Tonnetz, vectors maintain angle but crooks shift position.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Substitution principles:
 - T4-related triads are zone-equivalent and can substitute freely
 - H-group transformations (L, P, H) can substitute for each other

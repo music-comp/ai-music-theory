@@ -15,7 +15,7 @@ The H (Hexatonic pole) transformation connects two triads diametrically opposite
 # Formal Definition
 H is the compound transformation LP = PL, connecting triads that are three positions apart in a hexatonic cycle. It maps a major triad to the minor triad whose root is a major third plus a semitone above (or equivalently, a minor sixth below), and vice versa. As a mode-switching operation, H is an involution: H(H(X)) = X.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Voice-leading specification:
 - All three voices move by semitone simultaneously
 - Two voices move in one direction, one in the opposite (contrary motion)

@@ -15,7 +15,7 @@ Cohn's innovation that allows the Tonnetz to switch between diatonic and chromat
 # Formal Definition
 The convertible Tonnetz is a geometric representation that can change shape in response to how a listener hears relations among triadic objects. When triads collaborate to define a tonic, diatonic walls are erected (encapsulation), activating classical syntax with its semantic forces (gravity, attraction, leading). When triads move without establishing a tonic, the walls dissolve, and motion is governed by voice-leading parsimony on the open chromatic plane. The conversion between states is fluid; "at any moment, one may brake on a subdominant, reverse into a dominant seventh along the curb, pull forward to a tonic, and kill the engine."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 - Diatonic mode: Parallelogram encapsulation, Rings arrows active, syntonic images define tonal boundaries
 - Chromatic mode: Open plane or cylinder, voice-leading distances govern, hexatonic and Weitzmann alleys active
 - Switching mechanism: Cadential confirmation erects diatonic walls; sequential or chain progressions dissolve them

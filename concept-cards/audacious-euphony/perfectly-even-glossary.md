@@ -15,7 +15,7 @@ A collection of tones that divides the octave into equal parts, such as the augm
 # Formal Definition
 Perfectly even is defined in the Glossary as "a collection of tones that divides the octave into equal parts." In twelve-tone equal temperament, perfectly even collections are possible only for cardinalities that divide 12 evenly: 2 (tritone), 3 (augmented triad), 4 (diminished seventh chord), and 6 (whole-tone scale). Perfectly even chords serve as axes or centers for the regions that organize nearly even chords: augmented triads center hexatonic and Weitzmann regions; diminished seventh chords center octatonic and Boretz regions.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Perfectly even chords in 12-tone space:
 - Cardinality 2: Tritone (6+6 semitones) - 6 instances
 - Cardinality 3: Augmented triad (4+4+4 semitones) - 4 instances

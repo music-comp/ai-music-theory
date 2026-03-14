@@ -15,7 +15,7 @@ Extensions of the diatonic Tonnetz along the vertical (third) axis, arising thro
 # Formal Definition
 Vertical extensions occur when a semitone substitutes for a whole tone in the diatonic scale, a principle articulated by Marchettus of Padua in the early fourteenth century. The substitution of G-sharp for G-natural in A minor converts the minor dominant (e minor) to major dominant (E major), the nebenverwandt of the minor tonic. Dually, the substitution of A-flat for A-natural in C major converts the major subdominant (F major) to minor subdominant (f minor), the nebenverwandt of the major tonic. These substitutions are located on the Tonnetz directly above (sharpward) or below (flatward) the diatonic pitch they replace.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 In A minor (Figure 8.8a):
 - G-sharp replaces G-natural on dominant side
 - e minor (east of tonic) becomes E major (northeast of tonic)

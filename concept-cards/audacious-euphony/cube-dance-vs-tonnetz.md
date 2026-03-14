@@ -15,7 +15,7 @@ Comparison of two essentially equivalent but heuristically different representat
 # Formal Definition
 Cube Dance and Tonnetz both represent the twenty-four consonant triads and four augmented triads under single semitonal displacement. Cube Dance is a "true" model of voice-leading distance without distortion. The Tonnetz suffers from Bering Strait distortion (left/right and top/bottom edges must be mentally glued) but provides other analytical benefits.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Tonnetz advantages:
 - More compact representation
 - Shows individual pitch classes (not fused into triads)

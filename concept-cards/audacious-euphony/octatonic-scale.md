@@ -20,7 +20,7 @@ The **octatonic scale** (also called the diminished scale) is an eight-note coll
 
 The scale provides the pitch content for octatonic regions and octatonic transformations in the Tristan-genus voice-leading system.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Scale structure:
 - Interval pattern: H-W-H-W-H-W-H-W (or W-H-W-H-W-H-W-H)
 - Pitch classes: 8 of 12 total

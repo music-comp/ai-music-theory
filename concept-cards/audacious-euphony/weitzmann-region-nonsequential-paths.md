@@ -15,7 +15,7 @@ Paths through a Weitzmann region that do not follow cyclic or sequential pattern
 # Formal Definition
 Because Weitzmann regions are flat terrains (all pairs 2 voice-leading units apart), not all progressions through them will be sequential or cyclic. The N/R cycle is one possible ordering, but the region's structure permits many other trajectories. Composers can explore regions through nonsequential paths that take advantage of the uniform voice-leading distances.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 In a Weitzmann region, any path through the six triads requires the same total voice-leading work if visiting each triad once:
 - Sequential path (N/R cycle): 6 triads, 10 units total
 - Nonsequential path: Same 6 triads, same total work, different order

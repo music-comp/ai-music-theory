@@ -15,7 +15,7 @@ The uncanny semiotics of hexatonic progressions refers to the association of chr
 # Formal Definition
 Hexatonic progressions (especially hexatonic poles and LP/PL transformations) "frequently depict sublime, supernatural, or exotic phenomena" (p. 40) in Romantic music and film scores. Cohn argues this association is not arbitrary but iconic: the progressions signify altered states through a "homology between the signifying progression and the signified affect" (p. 42). The paradox of contrary motion producing consonance/dissonance ambiguity mirrors the psychological uncanny - "breakdowns in the division between otherwise securely demarcated categories, prototypically the boundary between reality and illusion, or life and death" (p. 42).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Sources of the uncanny effect:
 
 1. Consonance/dissonance ambiguity:

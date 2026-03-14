@@ -23,7 +23,7 @@ Standard structure: major triad with minor seventh above root (e.g., G-B-D-F)
 
 In Cohn's framework: nearly even tetrachord, member of Boretz region
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Interval structure:
 - Standard view: [4, 3, 3, 2] (M3 + m3 + m3 + M2)
 - Cohn's view: diminished seventh with one tone lowered

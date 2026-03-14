@@ -15,7 +15,7 @@ The relation between two consonant triads that share a major-third dyad, for exa
 # Formal Definition
 R (Relative) is defined in the Glossary as "the relation between two consonant triads that share a major-third dyad, for example, C major and a minor; or the transformation that produces one of these triads from the other." The transformation is an involution, involves two semitones of voice-leading work (root moves by minor third in one direction, fifth moves by whole tone in the other), and preserves two common tones (the major-third dyad). R is one of the three W-group transformations that map triads within Weitzmann regions.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Transformation specification:
 - Input: Consonant triad
 - Output: Consonant triad sharing major-third dyad

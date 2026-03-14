@@ -15,7 +15,7 @@ Enharmonic conversion that is compositionally necessary (not merely notational c
 # Formal Definition
 Essential enharmonicism is distinguished from notational enharmonicism (when a composer uses sharps instead of flats for readability). In essential enharmonicism, the composer has no choice but to convert between sharps and flats to retain global diatonic logic. The exact point of conversion is pragmatically arbitrary; phenomenologically, such conversion "happens everywhere and nowhere," distributed evenly across all possible moments when it could occur. When enharmonically paired pitch classes are directly juxtaposed, the ear cannot avoid identifying them as the same tone, causing scale-degree splitting that destabilizes the diatonic collection and its tonic.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Essential enharmonicism arises when:
 - A progression returns to its starting point
 - But the diatonic accounting produces a different "address" (e.g., Bb becomes Cbb)

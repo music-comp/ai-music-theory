@@ -15,7 +15,7 @@ Lewin's transformations representing dominant and subdominant relations: DOM (eq
 # Formal Definition
 David Lewin (1982, 1987) defined DOM as equivalent to T5: the source chord "becomes the dominant of" the target chord. SUBD, its inverse, is equivalent to T7 = T-5: the source chord "becomes the subdominant of" the target chord. These transformations capture not only the syntactic flow of tonal harmony but also the semantic charge associated with classical tonality - the forces of summoning, leading, gravity, magnetism, attraction, and desire. The single-headed arrows in Rings's model indicate these transformations work in only one direction; they are not involutions.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 - DOM: T5 (root descends by fifth / ascends by fourth)
   - C major DOM yields F major (C major "becomes dominant of" F major)
 - SUBD: T7 = T-5 (root ascends by fifth)

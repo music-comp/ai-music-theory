@@ -15,7 +15,7 @@ Any composition, or segment thereof, that consists exclusively or predominantly 
 # Formal Definition
 Pan-triadic is defined in the Glossary as "any composition, or segment thereof, that consists exclusively or predominately of major or minor triads without determining a tonal center." The term captures the phenomenon at the heart of Audacious Euphony: chromatic progressions using familiar consonant triads that resist functional-tonal analysis. Pan-triadic syntax operates alongside (and sometimes instead of) diatonic syntax, organizing triads by voice-leading parsimony rather than root relationships to a tonic.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Characteristics of pan-triadic passages:
 - Harmonic vocabulary: Major and minor triads (24 total)
 - Organizational principle: Voice-leading efficiency, not tonal function

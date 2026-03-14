@@ -21,7 +21,7 @@ Objections to double syntax come in two forms:
 
 The convergence of these objections across three distinct intellectual traditions suggests double syntax "touches a broad cultural nerve."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Cohn's three-part response:
 
 1. **Bilingualism evidence**: Smith's appeal to "rigidly discrete, autonomous" languages is empirically false. Most humans "alternate between different linguistic varieties at the drop of a hat" (Gardner-Chloros 2009). Code switching occurs beneath awareness; speakers are "surprised at their own performance if you play it back to them."

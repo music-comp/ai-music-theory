@@ -21,7 +21,7 @@ The **Chopin Mazurka analysis** examines how transformation-class substitutions 
 
 Tymoczko (2011b) suggests the Mazurka is "a virtual rewriting" of the e minor Prelude, both exploring systematic seventh-chord descent.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Transformation patterns (mm. 33-40):
 - Mm. 33-37: T5 chain of dominant seventh chords
 - Local alternation: S2 and S3(4)

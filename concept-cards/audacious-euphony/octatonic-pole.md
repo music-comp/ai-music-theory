@@ -24,7 +24,7 @@ The transformation involves:
 
 Sigfrid Karg-Elert (1930) identified the affinity between hexatonic and octatonic poles, calling both *Kollektivwechsel* ("collective exchange").
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Voice-leading structure:
 - Total displacement: 4 semitones
 - Distribution: 3 voices one direction, 1 voice opposite direction

@@ -15,7 +15,7 @@ Fetis's observation that sequential passages neutralize the appellative (tonic-s
 # Formal Definition
 Francois-Joseph Fetis (2008 [1844]) identified that certain segments of diatonic music force acoustic properties into remission and tame the semantic power of tonal attraction. What alerted Fetis to the special nature of sequential moments was the behavior of the pseudo-fifth (tritone), whose "appellative powers are neutralized by the 'symmetry of movement and succession.'" In such passages, "the specific identities of intervals dissolve into their generic categories, and the contours of the Mobius strip disindividuate into a strangely shaped, greased racing oval."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 What the law of uniformity suspends:
 - Appellative power of tritone (leading-tone tendency)
 - Specific interval identities (all become generic categories)

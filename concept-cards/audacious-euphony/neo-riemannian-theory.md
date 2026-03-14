@@ -15,7 +15,7 @@ An analytical approach to triadic harmony that uses transformational labels (P, 
 # Formal Definition
 Neo-Riemannian theory is an analytical framework that originated with David Lewin's interpretation of Hugo Riemann's harmonic theories. It employs transformational labels to describe moves between consonant triads, emphasizing relationships based on common tones and voice-leading proximity rather than root motion or diatonic function. The approach has been developed and generalized by subsequent theorists including Cohn, Hyer, Hook, and others, though its precise domain has never been stable.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Core transformations in neo-Riemannian theory:
 - P (Parallel): C major <-> c minor (same root, change mode)
 - L (Leittonwechsel): C major <-> e minor (shared minor third dyad)

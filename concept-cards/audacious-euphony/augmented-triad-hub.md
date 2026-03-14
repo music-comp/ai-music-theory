@@ -15,7 +15,7 @@ The four augmented triads function as connection points between hexatonic and We
 # Formal Definition
 Each augmented triad serves as a hub connecting its six-triad Weitzmann region to two adjacent hexatonic regions. On Cube Dance, the four augmented triads occupy the cardinal points (12:00, 3:00, 6:00, 9:00 positions), with consonant triads arranged between them. The augmented triads enable transitions between regions, serving as bridges for hexatonic mariners and river-crossings for Weitzmann landlubbers.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Hub structure:
 - Each augmented triad connects to 6 consonant triads (its Weitzmann region)
 - Those 6 triads are divided between 2 adjacent hexatonic regions

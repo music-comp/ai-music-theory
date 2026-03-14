@@ -24,7 +24,7 @@ The over-seventh behaves according to standard voice-leading expectations:
 - Creates characteristic dominant-to-tonic motion
 - The triad remains the structural core
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Standard generation:
 - Major triad built upward from root: G → B → D
 - Over-seventh added a minor seventh above root: G → F

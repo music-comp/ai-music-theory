@@ -15,7 +15,7 @@ The geometric shape of the diatonic Tonnetz when the pseudo-fifth (B-F) is accep
 # Formal Definition
 The Mobius strip topology of the diatonic Tonnetz results from two stages of closure. First, syntonic images at the remote corners of the diatonic parallelogram are identified. Second, the pseudo-fifth (B-F tritone) is accepted as if it were a perfect fifth. This second closure involves fixing the DF edge, folding the BD edge so that B comes alongside F, creating a locally closed triangle representing the diminished BDF triad and globally closing the chain of triangles into a loop. Because the front side of one end attaches to the back side of the opposite end, the parallelogram transforms into a Mobius strip. Lewin (1984) prophesied this geometry: the two spaces "may coexist locally without apparent conflict; in this way the surface of a Mobius strip would locally resemble the surface of a cylinder to an ant who had not fully explored the global logic of the space."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 - First closure: Syntonic comma identification (81:80 treated as unison)
 - Second closure: Pseudo-fifth acceptance (tritone B-F treated as perfect fifth)
 - Geometric operation: Half-twist when gluing opposite ends

@@ -15,7 +15,7 @@ Analysis of a passage from Parsifal Act 1 showing nonsequential exploration of a
 # Formal Definition
 In Parsifal Act 1 (mm. 404-13), Wagner presents all six triads of a Weitzmann region nonsequentially, demonstrating that the flat-terrain structure permits any ordering. The passage is locally in b minor (minor dominant within an e minor section). Subdominant e minor spins into its Weitzmann region by sounding all three minor triads, then all three major triads, before an augmented sixth resolves to F# major dominant.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Progression (e minor Weitzmann region, centered on GBEb):
 Minor triads: e minor -> c minor -> ab/g# minor (in succession)
 Major triads: G major -> Eb major -> B major (in succession)

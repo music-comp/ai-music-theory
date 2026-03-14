@@ -24,7 +24,7 @@ The four upper mediant triads (for a C tonic) are:
 - Eb major (chromatic mediant)
 - Eb minor (mixture mediant)
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Upper mediants relate to tonic through:
 - Root motion by third (major or minor)
 - Voice-leading connections (often involving common tones)

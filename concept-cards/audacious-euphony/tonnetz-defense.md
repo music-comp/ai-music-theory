@@ -21,7 +21,7 @@ Cohn offers six reasons to continue using the Tonnetz rather than replacing it w
 5. The Tonnetz maintains contact with historical modes of thought
 6. Historical origins in tuning allow exploration of the triad's two forms and two syntaxes
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The Tonnetz advantages over fused-triad graphs:
 - Atomic pitch-class level maintained (not fused into triads)
 - Directional axes consistent across the entire space

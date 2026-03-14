@@ -15,7 +15,7 @@ An involution is a transformation that "undoes itself" when applied twice consec
 # Formal Definition
 In mathematical terms, an involution is a function that is its own inverse. For triadic transformations, this means applying the same transformation twice returns to the original triad. The P, L, and H transformations are all involutions because they each switch the mode of a triad: major becomes minor, and applying the same transformation again returns minor to major.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Definition: A transformation T is an involution if T(T(X)) = X for all X.
 
 Hexatonic involutions:

@@ -15,7 +15,7 @@ The optimal pairing of tones between two chords that minimizes total voice-leadi
 # Formal Definition
 Idealized voice leading refers to the ordered dyads between two chords when their tones are paired one-to-one to minimize total voice-leading work (aggregate semitonal displacement). The idealized voice leading from C major to F major is (C, C), (E, F), (G, A), regardless of how those chords are registrally realized or how actual instruments or singers move between their constituent tones. The concept treats voice leading in pitch-class space rather than pitch space, allowing comparison of triadic connections independent of compositional texture.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For chords X = {x1, x2, x3} and Y = {y1, y2, y3}:
 - Find the permutation of Y that minimizes Σ|xi - yi| (mod 12, taking smaller direction)
 - This permutation defines the idealized voice leading

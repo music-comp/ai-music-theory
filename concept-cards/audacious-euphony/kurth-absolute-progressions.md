@@ -15,7 +15,7 @@ Ernst Kurth's concept of chromatic progressions, particularly those involving th
 # Formal Definition
 Ernst Kurth (1920) proposed that many chromatic progressions, particularly those involving root relations by third, introduce "rifts, wedges, and fissures into the fabric of tonality." The identity and function of these chords are found in their internal structure and immediate local connections to antecedents and successors, not in their relation to a governing tonic. When concatenated with sufficient intensity and persistence, such "absolute progressions" bring about "the total disruption of the original embracing tonal unity." Their relation to the tonal pillars that bound them is not tonally determined - they are "extratonal."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Characteristics of absolute progressions:
 - Root relations by third (major or minor)
 - Identity derived from internal chord structure

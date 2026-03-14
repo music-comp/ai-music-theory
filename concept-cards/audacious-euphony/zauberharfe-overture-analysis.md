@@ -15,7 +15,7 @@ Analysis of Schubert's Die Zauberharfe/Rosamunde Overture (1821) demonstrating c
 # Formal Definition
 The Adagio opening of Schubert's Zauberharfe Overture presents a paradigmatic example of crossing boundaries between hexatonic and Weitzmann regions. After an eight-measure fanfare and antecedent/consequent in c minor/Eb major, Schubert pulsates on Eb major, drops to eb minor, slips through transient augmented triads, and cadences in Gb major. This pattern repeats twice in T4 transposition before deceptive motion to Ab major prepares the C major Allegro.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Progression:
 - c minor -> Eb major (consequent) -> eb minor (pulsation)
 - Through transient FAC# (augmented) -> cadence in Gb major

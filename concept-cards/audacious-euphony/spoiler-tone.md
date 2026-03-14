@@ -21,7 +21,7 @@ For any Tristan-genus chord:
 
 When the spoiler "resolves" back into the diminished seventh, a different pitch must become the new spoiler to maintain the Tristan-genus character.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Spoiler identification:
 - Take any V7 or ø7 chord
 - Identify the three pitches that belong to a diminished seventh chord

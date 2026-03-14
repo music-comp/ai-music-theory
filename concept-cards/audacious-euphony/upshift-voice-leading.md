@@ -15,7 +15,7 @@ Voice leading in which all moving voices proceed upward under idealized voice le
 # Formal Definition
 Upshift voice leading occurs when, under idealized voice leading, all voices that move between two chords proceed in the ascending direction. Stationary voices (common tones) are permissible, but no voice moves downward. This contrasts with downshift voice leading (all movement downward) and balanced voice leading (some voices up, some down). The direction of voice motion has been connected to discussions of harmonic dualism and the phenomenology of major/minor contrast.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For a connection from triad X to triad Y:
 - Sum of directed voice-leading intervals >= 0
 - Each moving voice moves by a positive (ascending) interval

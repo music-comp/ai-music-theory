@@ -21,7 +21,7 @@ Fetis (1832, 1844) divided tonality into four species representing stages of his
 
 Each species has its own syntactic principles and affective properties.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Fetis's framework proposes:
 - Each species defines a distinct mode of tonal organization
 - Later species do not supplant earlier ones - they are cumulative

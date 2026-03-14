@@ -15,7 +15,7 @@ A nearly even three-tone chord, either major or minor, that constitutes the prim
 # Formal Definition
 A consonant triad (equivalent to "harmonic triad"; German: *Klang*) is a three-note chord that divides the octave nearly evenly, consisting of a major third and a minor third (in either order). The 24 consonant triads - 12 major and 12 minor - are the central harmonic objects of *Audacious Euphony*. They possess two distinct "natures": acoustic consonance (generating classical diatonic syntax) and near-evenness (generating pan-triadic syntax). Throughout the book, "triad" in its unmodified form refers restrictively to consonant triads.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure:
 - Major triad: root + M3 (4 semitones) + m3 (3 semitones) = 0, 4, 7
 - Minor triad: root + m3 (3 semitones) + M3 (4 semitones) = 0, 3, 7

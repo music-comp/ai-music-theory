@@ -15,7 +15,7 @@ Two tones that differ by a syntonic comma in just intonation, occupying the remo
 # Formal Definition
 A syntonic image is the relation between two tones separated by a syntonic comma (81:80, slightly larger than one-fifth of an equally tempered semitone). One tone is typically two 3:2 perfect fifths (minus an octave) above the tonic (3/2 x 3/2 x 1/2 = 9/8), while the other is a 4:3 perfect fourth minus a 6:5 minor third above the tonic (4/3 / 6/5 = 10/9). On the diatonic Tonnetz parallelogram, syntonic images occupy the remote corners. Accepting their identity creates the first stage of systemic closure, allowing the diatonic collection to form a closed figure rather than an infinitely extending lattice.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 - Syntonic comma: 81:80 ratio (approximately 21.5 cents)
 - Example in C major: The D derived from two ascending fifths (C-G-D) versus the D derived as the Pythagorean ditonic comma adjustment
 - Location: Remote corners of the diatonic parallelogram

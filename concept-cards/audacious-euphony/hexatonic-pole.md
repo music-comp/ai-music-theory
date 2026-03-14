@@ -15,7 +15,7 @@ A hexatonic pole is a triad diametrically opposite another in a hexatonic cycle,
 # Formal Definition
 Within a hexatonic cycle of six triads, any two triads three positions apart are hexatonic poles of each other. These triads are of opposite mode (one major, one minor), share zero common tones, yet together exhaust the six pitch classes of their hexatonic scale. The hexatonic pole relationship represents maximum distance within a hexatonic system while maintaining minimal voice-leading work (three semitones total).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Properties of hexatonic poles:
 - Cyclic distance: 3 positions apart in hexatonic cycle
 - Common tones: 0

@@ -15,7 +15,7 @@ A four-triad subset of a Weitzmann region featuring a pair of R-related triads (
 # Formal Definition
 A double-agent complex consists of four triads from a Weitzmann region arranged as a contiguous N/R chain segment. The interior pair are R-related (relative major/minor), and the exterior pair are N-related to the interior triads. The exterior triads are S-related to each other, but their common third is spelled enharmonically differently, creating a "double agent" that changes its apparent function from upward-pressing to downward-pressing (or vice versa).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure (e.g., around c minor/Eb major):
 - G major (exterior, N of c minor)
 - c minor (interior)

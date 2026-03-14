@@ -15,7 +15,7 @@ Melodic dualism is the fundamental principle that melodic motion proceeds in two
 # Formal Definition
 Cohn proposes melodic dualism as an alternative foundation for understanding the structural equality of major and minor triads in transformational theory. Rather than deriving this equality from metaphysical claims about overtones and undertones (harmonic dualism), melodic dualism derives it from the simple observation that "melodic motion proceeds in two opposite directions" and that "directed motions of equivalent magnitude but not equivalent direction" can be granted equivalent status.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The connection between melodic dualism and triadic transformations:
 
 "Major and minor triads constitute a fundamental and coherent class of objects not because they are related to each other by inversion about an axis. They are related because they share the property of near evenness, and degree of evenness is invariant under inversion. Their inversional relation is a consequence of the capacity of the tones of an augmented triad to be semitonally perturbed in two directions, up and down." (p. 57)

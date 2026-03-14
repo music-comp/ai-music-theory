@@ -21,7 +21,7 @@ The four octatonic-group transformations are:
 3. **S5**: Stationary interval-class 5 dyad, two voices move by semitone
 4. **Octatonic pole**: All four voices move (3+1 contrary pattern)
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Voice-leading characteristics:
 - S2, S4, S5: 2 voices move by semitone (n-2 where n=4)
 - Octatonic pole: 4 voices move (3 in one direction, 1 in opposite)

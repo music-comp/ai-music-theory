@@ -15,7 +15,7 @@ The internal organization of a Weitzmann region as a flat, uniform space where a
 # Formal Definition
 A Weitzmann region is structurally a "flat terrain" rather than a graded cycle. All pairs of triads within a region require exactly two units of voice-leading work. The triads can be cyclically ordered in several ways (via N/R alternation), but no ordering is more natural than others from voice-leading perspective. The augmented triad serves as a central hub routing all progressions.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Voice-leading connections within a Weitzmann region:
 - Major to major (e.g., C to E): 2 units, via augmented triad (LP or PL)
 - Major to relative minor (e.g., C to a): 2 units, one voice moves whole step (R)

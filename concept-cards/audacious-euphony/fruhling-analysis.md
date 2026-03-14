@@ -15,7 +15,7 @@ Analysis of Richard Strauss's "Fruhling" (1949) showing how an opening stanza ex
 # Formal Definition
 "Fruhling" from Strauss's Orchesterlieder (1949) organizes its first stanza around a Weitzmann region (GBEb center), traversed nonsequentially. The transformational signature R + LP = S appears at the opening, is retrograded at the stanza's close, fragmented in the interlude, and inverted at the second stanza's opening. The bass pitches form a whole-tone collection, and the passage features two enharmonic transformations.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Opening stanza path through GBEb region:
 - c minor -> ab minor (LP) -> B major (R): exhausts half of region
 - [A major, Bb major intervene outside region]

@@ -21,7 +21,7 @@ The four Boretz-group transformations are:
 3. **S6**: Stationary tritone (interval-class 6), moving perfect fifth dyad
 4. **R***: Single voice moves by whole step (analogous to triadic R)
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Labeling convention (Childs 1998):
 - "S" = Similar motion (both moving voices in same direction)
 - Superscripts indicate interval classes of stationary and moving dyads

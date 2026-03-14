@@ -15,7 +15,7 @@ Carl Friedrich Weitzmann's 1853 monograph "Der ubermassige Dreiklang" (The Augme
 # Formal Definition
 Weitzmann's treatise presents three "genesis narratives" for the augmented triad, moving from its local emergence in specific progressions, to its systematic position relative to keys, to its generative role in producing consonant triads. The treatise advocates for "granting [the augmented triad] an abiding place in the kingdom of tones" and explores its potential for enharmonic reinterpretation and voice-leading connection to consonant triads.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Weitzmann's three genesis narratives (using entstehen/Entstehung):
 
 1. Chapter 2 - "Preparation, Origin, and Introduction":

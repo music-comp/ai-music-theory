@@ -15,7 +15,7 @@ The complementary relationship between hexatonic and Weitzmann regions that enab
 # Formal Definition
 Hexatonic and Weitzmann regions are closed, mutually disconnected systems (mathematically, groups) when considered independently. Their interaction enables motion across the entire triadic universe. Weitzmann and hexatonic transformations gain the power of perambulation in collaboration, like a right and left leg hopping in place separately but walking together.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Complementary properties:
 - Hexatonic regions: preserved by H-group (L, P, H); shifted by W-group (R, N, S)
 - Weitzmann regions: preserved by W-group (R, N, S); shifted by H-group (L, P, H)

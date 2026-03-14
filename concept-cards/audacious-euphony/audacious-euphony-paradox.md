@@ -15,7 +15,7 @@ The paradox that chromatic triadic progressions can be simultaneously "audacious
 # Formal Definition
 The audacious euphony paradox, derived from Hugo Riemann's 1909 description of a chromatic progression as "audaciously but effectively and euphoniously" constructed, identifies the central tension in 19th-century chromatic harmony. From a diatonic/classical perspective, such progressions confound expectations and appear irrational. Yet from a voice-leading perspective, the same progressions exhibit close relations and smooth connections. The paradox dissolves when one recognizes that the progressions operate according to a different syntax than classical diatonic tonality.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The paradox arises from conflicting proximity metrics:
 - By diatonic metric: triads are distant (few shared scale tones)
 - By voice-leading metric: triads are close (minimal semitonal displacement)

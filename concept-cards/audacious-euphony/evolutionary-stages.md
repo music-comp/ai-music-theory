@@ -23,7 +23,7 @@ The soft revolution proceeded through identifiable stages, each exploiting prope
 
 **Stage 4 - Atonal absorption**: Hexatonic and octatonic scales are absorbed into broader atonality. Chords and scales become sets and set classes of Second-Viennese-School atonality, taking meaning directly from the chromatic 12-gamut.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Arrow of orientation across stages:
 - Stage 1: Arrow temporarily flips within diatonic context, then returns
 - Stages 2-4: Arrow remains "sprung," pointing from smaller to larger cardinalities

@@ -19,7 +19,7 @@ An octatonic region is a bridging structure between adjacent Boretz regions, con
 
 The eight chords draw their tones exclusively from one of the three octatonic scales.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure:
 - 4 half-diminished chords from Boretz region N (e.g., Bø7, Dø7, Fø7, G#ø7)
 - 4 dominant seventh chords from Boretz region N+1 with same roots (B7, D7, F7, G#7)

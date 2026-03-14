@@ -15,7 +15,7 @@ Symmetric division of the octave refers to dividing the twelve semitones into eq
 # Formal Definition
 When the chromatic octave (12 semitones) is divided into n equal parts, where n is a divisor of 12, the result is a symmetric collection that is invariant under transposition by 12/n semitones. These collections have special voice-leading properties: because they lack intervallic variety, they cannot voice-lead to other instances of the same collection type via single semitonal displacement. They serve as the "axes" around which nearly even chords (like consonant triads) rotate.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Symmetric divisions of 12:
 | Divisor | Interval | Collection | Transpositions |
 |---------|----------|------------|----------------|

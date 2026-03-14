@@ -15,7 +15,7 @@ A syntactic system governing progressions of major and minor triads that operate
 # Formal Definition
 Pan-triadic syntax refers to the organizational principles governing chromatic progressions of consonant triads that do not establish or require reference to a diatonic tonal center. The term, first used by Evan Copley (1991), designates music that uses fundamental materials of tonality (triads) in tonally indeterminate ways. It is the obverse of "pan-diatonic" (Slonimsky 1937): pan-diatonic music uses diatonic scales without triads, while pan-triadic music uses triads without diatonic scales.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Pan-triadic syntax emerges from properties intrinsic to consonant triads themselves, specifically their voice-leading characteristics in chromatic space. The 24 consonant triads (12 major + 12 minor) form a complete universe of harmonic objects whose relationships are determined by:
 - Common-tone retention between triads
 - Minimal voice-leading work (semitonal displacement)

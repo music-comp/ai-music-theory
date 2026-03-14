@@ -15,7 +15,7 @@ The phenomenon whereby syntactic switching or causal reversal in music occurs be
 # Formal Definition
 Cognitive opacity describes the sub-threshold nature of processes involved in double syntax. Drawing on bilingualism research, Cohn notes that code switchers are "on the whole not very aware of their code-switching behaviour, and tend to be surprised at their own performance if you play it back to them" (Gardner-Chloros 2009, 121). Similarly, musical transitions between diatonic and chromatic syntax, or reversals of causal/hierarchical direction, may transpire "beneath the horizon of awareness." This opacity explains why listeners do not experience the "grinding of gears" that Smith (1986) feared would accompany syntactic switching.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Evidence for cognitive opacity in non-musical domains:
 1. Bilingual code switching: 15+ switches in rapid speech without interrupting flow
 2. Garment functions: Wearing clothes for warmth, concealment, or adornment feels like "a unitary act" despite distinct purposes

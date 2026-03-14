@@ -21,7 +21,7 @@ A **neighborhood** is a complex of tones and triads organized around a central p
 
 The term derives from Igor Popovic (1992), building on Ottokar Hostinsky's 1879 *Tonschema* from *Die Lehre von den musikalischen Klängen*.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For a central pitch class C:
 - The six consonant tones are: E, G, A, Ab/G#, Eb, and one more completing the hexagonal pattern
 - The six triads containing C are:

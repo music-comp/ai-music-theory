@@ -15,7 +15,7 @@ The evolutionary concept (appropriated from Stephen Jay Gould via Patrick McCrel
 # Formal Definition
 Preadaptation, in evolutionary biology, "asserts that a structure can change its function radically without altering its form as much. We can bridge the limbo of intermediate stages by arguing for a retention of old functions while new ones are developing" (Gould 1977). McCreless (1996) suggests that classical tonality is preadapted to chromatic space. Cohn identifies the specific preadapted structure: the consonant triad, whose near-evenness in chromatic 12-space enables voice-leading optimization even though the triad originally arose through acoustic consonance optimization. The triad "knew nothing" of its future chromatic role, just as fish jaws "were well designed for their respiratory role; they had been selected for this alone and 'knew' nothing of any future function."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 What enables the triad's preadaptation:
 1. Near-evenness in diatonic 7-space: Triads are step-connected (Agmon 1991)
 2. Near-evenness in chromatic 12-space: Triads minimize voice-leading work between types

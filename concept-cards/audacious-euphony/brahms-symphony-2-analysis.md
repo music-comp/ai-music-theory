@@ -15,7 +15,7 @@ Analysis of Brahms's D major Symphony first movement (mm. 102-18) showing an L/R
 # Formal Definition
 The passage presents the liquidating consequent of the f# minor subordinate theme, preparing arrival of the dominant. An L/R chain exits the f# minor diatonic system at G-natural, with subsequent C-natural and F-natural creating chromatic alterations of root and fifth. The sequence terminates after nine stations at d minor, which provides closure by returning to the original radius on Cube Dance.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 L/R chain:
 f# minor --(L)--> A major --(R)--> a minor --(L)--> C major --(R)--> c minor --(L)--> Eb major --(R)--> eb minor --(L)--> Gb major --(R)--> gb/f# minor...
 

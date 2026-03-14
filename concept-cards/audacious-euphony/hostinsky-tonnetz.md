@@ -21,7 +21,7 @@ The diagram grows from a central pitch class:
 3. The hexagons and radii together form six triangles representing the six triads containing the central pitch
 4. Each of the six surrounding tones generates its own neighborhood, with overlapping hexagons extending outward
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure of the Hostinsky Tonnetz:
 - Central node: any pitch class (e.g., C)
 - First tier: six consonant pitch classes (thirds and fifths above/below)

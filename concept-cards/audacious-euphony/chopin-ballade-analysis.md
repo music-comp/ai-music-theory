@@ -15,7 +15,7 @@ Analysis of Chopin's g minor Ballade showing two N-for-R substitutions that enab
 # Formal Definition
 The extended Eb major prolongation in Chopin's Ballade is dominated by a famous earworm sounded in Eb major (m. 68), A major (m. 106), and again Eb major (m. 167). The two tritone modulations are achieved through downshifting L/R chains with N-for-R substitutions that expedite the return to Eb major by saving sixteen stations total.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 First modulation (Eb -> A):
 - Eb major downshifts through L/R chain (mm. 90-93)
 - Terminates at d minor (subdominant of A)

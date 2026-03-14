@@ -20,7 +20,7 @@ Interregional modulation is movement between Boretz regions via octatonic transf
 
 In Boretz's Tristan Prelude analysis, interregional modulation provides the harmonic scaffold of the Prelude, marking large-scale structural articulations.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Within a Boretz region:
 - All chords are displacements of one diminished seventh
 - Zone alternation is limited (e.g., 3 ↔ 1 for region III)

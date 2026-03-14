@@ -15,7 +15,7 @@ Analysis of Chopin's f minor Fantasy transition (mm. 43-68) showing an N interpo
 # Formal Definition
 The transition from the opening Lento to the agitato core features upward-arpeggiated triads with inverse cambiatas. An antecedent phrase downshifts through six L/R chain links, connecting f minor to Bb major. The goal triad acquires a seventh and resolves across the fermata to its nebenverwandt, eb minor, from which a consequent phrase L/R-chains back to tonic f minor. The N interpolation temporarily reverses direction.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Antecedent phrase:
 f minor --(L/R chain x 6)--> Bb major --(N)--> eb minor
 

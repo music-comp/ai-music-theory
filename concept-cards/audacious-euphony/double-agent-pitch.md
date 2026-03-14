@@ -15,7 +15,7 @@ A pitch whose enharmonic respelling redirects its melodic energy from upward-pre
 # Formal Definition
 A double agent is a pitch that functions as a triadic third in two different harmonic contexts within a double-agent complex. In one context it is spelled as a leading tone pressing upward; in the other it is spelled as a flatted scale degree pressing downward. The enharmonic identity masks the inversion of melodic tendency. This concept draws on Daniel Harrison's theory of agency and Vogler's concept of Mehrdeutigkeit (multiple meaning).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Example: Bb/A# as double agent
 - As Bb (third of g minor): presses downward toward A
 - As A# (third of F# major): presses upward toward B

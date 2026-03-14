@@ -15,7 +15,7 @@ The chromatic semitone connects tones of the same letter name (E-Eb), while the 
 # Formal Definition
 In hexatonic voice leading, the two types of semitonal motion correlate with different transformations: the P transformation produces a chromatic semitone (preserving letter name, e.g., E to Eb), while the L transformation produces a diatonic semitone (changing letter name, e.g., C to B). On the Tonnetz, these appear as different planar angles: P moves vertically (0 degrees from horizontal), while L moves diagonally (120 degrees).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Table 2.1 (p. 48) summarizes:
 
 | Name | Symbol | Root motion | Common dyad | Semitonal species | Planar angle on Tonnetz |

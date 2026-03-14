@@ -15,7 +15,7 @@ Voice-leading equivalence holds when two progressions share the same voice-leadi
 # Formal Definition
 Two triadic progressions are voice-leading equivalent when the behavior of each individual voice is the same: corresponding voices move in the same direction by the same interval, or hold the same common tones. This equivalence is independent of root motion direction. LP on a major triad (roots move up by major third) and LP on a minor triad (roots move down by major third) are voice-leading equivalent because both expand a perfect fifth to a major sixth via contrary semitonal motion.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Voice-leading equivalence classes:
 - LP and PL on any triad: one tone holds, fifth expands to sixth (or contracts)
 - P on major = P on minor: fifth holds, third moves by chromatic semitone

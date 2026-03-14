@@ -15,7 +15,7 @@ A perfectly even chord divides the octave into exactly equal parts, such as the 
 # Formal Definition
 A chord is perfectly even when all its constituent intervals (between adjacent pitch classes when arranged around the octave) are identical. In 12-tone equal temperament, this is possible only when the number of notes evenly divides 12: dyads (tritone = 2 notes, dividing into 2 parts of 6 semitones), trichords (augmented triad = 3 notes, dividing into 3 parts of 4 semitones), tetrachords (diminished seventh = 4 notes, dividing into 4 parts of 3 semitones), and hexachords (whole-tone scale = 6 notes, dividing into 6 parts of 2 semitones).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Perfectly even chords in 12-TET:
 - 2 notes: tritone (C-F#), interval pattern [6-6]
 - 3 notes: augmented triad (C-E-G#), pattern [4-4-4]

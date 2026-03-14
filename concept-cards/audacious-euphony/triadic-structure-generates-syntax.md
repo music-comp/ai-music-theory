@@ -15,7 +15,7 @@ The principle that the internal properties of consonant triads (their near evenn
 # Formal Definition
 Cohn argues that "one of the most enduring features of classical tonal theory is its capacity to generate syntax from the phonological properties of its constituent objects" (p. 57). He extends this principle to pan-triadic harmony: near evenness generates pan-triadic syntax just as consonance generates diatonic syntax. The triad is not a passive object acted upon by external transformations; its internal structure determines which transformations are possible and natural.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The structure-syntax connection:
 
 1. For diatonic tonality:

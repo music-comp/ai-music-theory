@@ -20,7 +20,7 @@ The **Boretz spider** is a geometric representation of voice leading within a Bo
 
 The spider is analogous to the Weitzmann water bug, which represents the six triads of a Weitzmann region.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Spider structure:
 - 8 peripheral nodes (4 V7, 4 half-diminished)
 - Central node (diminished seventh, may be virtual)

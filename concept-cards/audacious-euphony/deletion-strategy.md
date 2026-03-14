@@ -24,7 +24,7 @@ Historical origins:
 - Related to Rameau's theory of imputed dissonance (only tonics are truly consonant)
 - Systematized in Schenker's graphs (only consonances prolong)
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Deletion operates by:
 1. Identifying structural consonant triads
 2. Removing intervening dissonances from the analytical representation

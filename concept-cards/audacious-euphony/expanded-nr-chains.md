@@ -15,7 +15,7 @@ Five-element N/R chains that extend the four-chord double-agent complex toward t
 # Formal Definition
 Expanded N/R chains are segments of five consecutive triads from an N/R cycle, extending the four-triad double-agent complex by one additional transformation. These chains necessarily involve enharmonic crossing (like the full six-triad cycle) and represent a historical middle ground between the four-chord complex that "teases" the enharmonic seam and the complete cycle that "plunges through" it.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Example five-chord chain:
 B major --(N)--> e minor --(R)--> G major --(N)--> c minor --(R)--> Eb major
 

@@ -19,7 +19,7 @@ A nearly even tetrachord is a four-note chord that minimally deviates from the p
 
 Together, these two species constitute the **Tristan genus**, a tetrachordal system analogous to the system of consonant triads (which are nearly even trichords).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Perfectly even tetrachord: diminished seventh [0369]
 - Divides octave into four equal parts (minor thirds)
 - Three distinct diminished seventh chords exist

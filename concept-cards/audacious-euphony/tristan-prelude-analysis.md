@@ -21,7 +21,7 @@ The **Tristan Prelude analysis** applies Boretz's observations systematically:
 
 This analysis establishes the paradigm for understanding Tristan-genus progressions without tonal/functional frameworks.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Chord-by-chord analysis:
 1. Fø7 (F-A-B-D#): spoiler D# (above D)
 2. E7 (E-G#-B-D): spoiler E (below F)

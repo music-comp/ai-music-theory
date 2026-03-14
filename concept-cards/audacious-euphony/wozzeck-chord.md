@@ -19,7 +19,7 @@ The **Wozzeck chord** (featured in Berg's opera of the same name; see Perle 1967
 
 The Wozzeck chord relates to its whole-tone "core" in the same way that major triads relate to augmented triads, or dominant seventh chords relate to diminished seventh chords - through downward semitonal displacement.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Relationship to mystic chord:
 - Both are set-class 6-34
 - Related by inversion (like major/minor triads, like V7/ø7)

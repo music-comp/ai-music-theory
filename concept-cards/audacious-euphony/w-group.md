@@ -24,7 +24,7 @@ All W-group transformations:
 - Shift hexatonic region membership
 - Change mode (major to minor or vice versa)
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 W-group properties:
 - Closed under combination: any sequence of W-group operations remains in same Weitzmann region
 - Complementary to H-group: alternating W and H moves between adjacent regions

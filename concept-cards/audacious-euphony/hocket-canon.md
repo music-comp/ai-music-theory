@@ -15,7 +15,7 @@ Hexatonic cycles embed a hocket canon structure where three voices enter canonic
 # Formal Definition
 When a hexatonic cycle progresses incrementally through its six triads, each of the three voices holds its pitch for three beats, then displaces by semitone to a new pitch sustained for three more beats before returning to the original. This creates a hocket canon - "a structure familiar to music historians from the caccia of late-medieval polyphony" (Bukofzer 1940). The interlocking of duple and triple periodicities forms a 3:2 phasing (polyrhythm, grouping dissonance, hemiola).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure of the hocket canon:
 - Each voice: 3 beats on pitch A, semitone to pitch B, 3 beats on B, semitone back to A
 - Voice periodicity: 6 beats (3 up + 3 down)

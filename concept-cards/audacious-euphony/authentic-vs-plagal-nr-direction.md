@@ -19,7 +19,7 @@ N/R cycles can be traversed in two directions:
 
 The direction determines functional interpretation and affects whether dominant sevenths are attached to major triads (authentic) or other configurations.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Authentic direction example (from C major):
 C major (tonic) -> f minor (subdominant) -> Ab major (tonic) -> db minor (subdominant) -> ...
 

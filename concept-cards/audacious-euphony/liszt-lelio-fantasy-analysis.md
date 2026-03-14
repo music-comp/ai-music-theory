@@ -15,7 +15,7 @@ Analysis of Liszt's Grande fantaisie symphonique (Lelio Fantasy, 1834) showing N
 # Formal Definition
 Measures 379-429 feature an oboe melody transposed successively upward by semitone. The underlying harmonies execute an N/L chain segment from Db major to E major. At the expected N transformation from E major to a minor, the chain substitutes R, going to C major instead. From C major, the N/L chain resumes and arrives not at the expected F major but at tonic Db major, demonstrating cyclic closure.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 N/L chain with R-for-N substitution:
 Db major --(N/L)--> ... --(N/L)--> E major --(R, not N)--> C major --(N/L)--> ... --(N/L)--> Db major
 

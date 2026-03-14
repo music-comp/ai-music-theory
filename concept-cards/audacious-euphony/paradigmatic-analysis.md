@@ -20,7 +20,7 @@ Paradigmatic analysis is an analytical method that aligns related musical passag
 
 The method derives from semiotic analysis in linguistics, adapted for musical structure.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 In paradigmatic presentation:
 - Rows represent individual passages or phrases
 - Columns align structurally equivalent positions

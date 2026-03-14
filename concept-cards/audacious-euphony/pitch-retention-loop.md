@@ -17,7 +17,7 @@ A **pitch retention loop** is a progression that makes a cyclical tour of a pitc
 
 The loop maintains continuity through retention of the central pitch class while exploring all triadic possibilities within that neighborhood.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Starting from any triad containing the central pitch class, a pitch retention loop proceeds through transformations that:
 1. Always preserve at least one common tone (the neighborhood's central pitch)
 2. Use P, R, and L transformations in a fixed order

@@ -20,7 +20,7 @@ Perfect-fifth (T5/T7) sequences result from three H/W combinations:
 
 The L/R chain is too long to circumnavigate in a single gesture (24 stations), but extended passages traverse significant portions. The sequence was recognized as a modulation map by Werckmeister (1698) and as harmonic progression by Vogler (1778) and Langle (1797).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 L/R example (upshifting):
 f# minor --(L)--> A major --(R)--> f# minor ... wait, that closes too soon.
 

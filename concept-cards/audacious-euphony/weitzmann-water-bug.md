@@ -15,7 +15,7 @@ A visual metaphor depicting a Weitzmann region as a water bug with an augmented-
 # Formal Definition
 The water bug metaphor (Figure 4.1a) represents the structure of a Weitzmann region graphically. The augmented triad forms the body, and six consonant triads form the feet/legs. The three major triads appear on one side, the three minor triads on the other. All journeys between feet are routed through the body, emphasizing that every intra-regional progression passes through the augmented triad hub.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Water bug anatomy:
 - Body: Augmented triad (e.g., CEG#)
 - Left legs: Three minor triads (e.g., a, c#, f)

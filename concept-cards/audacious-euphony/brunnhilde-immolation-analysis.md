@@ -19,7 +19,7 @@ The **Brunnhilde Immolation analysis** (after Lewin 1996) shows that the opening
 3. Eventual octatonic bridging to a new region
 4. Sustained double-semitone voice leading throughout
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Progression structure:
 - Beginning at tempo change (p. 318 Schirmer score)
 - Alternating V7 and ø7 in E-G-A#-C# Boretz region

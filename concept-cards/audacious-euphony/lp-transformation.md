@@ -15,7 +15,7 @@ LP (or PL) is a compound transformation that moves between same-mode triads whos
 # Formal Definition
 LP connects triads of the same mode by combining the L and P transformations. Despite its compound name, LP can be understood as a unitary Gestalt - a single transformation that transposes a major triad up by major third or a minor triad down by major third, while producing characteristic voice-leading: the perfect fifth expands to a major sixth (or contracts from major sixth to perfect fifth for PL).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Voice-leading specification for LP:
 - For major triads: root descends by semitone, fifth ascends by semitone, third held
 - For minor triads: root ascends by semitone, fifth descends by semitone, third held

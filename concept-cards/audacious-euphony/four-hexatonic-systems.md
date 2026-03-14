@@ -15,7 +15,7 @@ The four hexatonic systems are distinct, non-overlapping groups of six triads ea
 # Formal Definition
 Each hexatonic system contains six consonant triads whose roots form two interlocking augmented triads, one for the three major triads and one for the three minor triads. The systems are closed under P and L transformations, meaning any sequence of these operations on a triad within a system produces another triad in the same system. Movement between systems requires different transformations (such as R).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The Four Systems:
 
 **Northern System** (C-E-Ab roots):

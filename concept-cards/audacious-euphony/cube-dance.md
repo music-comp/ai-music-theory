@@ -15,7 +15,7 @@ A connected graph representing the 24 consonant triads and 4 augmented triads, w
 # Formal Definition
 The Cube Dance is a geometric representation whose nodes comprise the 24 consonant triads and the 4 augmented triads (28 nodes total). Edges connect pairs of triads related by single semitonal displacement - that is, triads differing by exactly one semitone in one voice under idealized voice leading. The graph visualizes the voice-leading proximities central to pan-triadic syntax. Its name derives from its visual appearance, which resembles cubes connected in a dancing configuration.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure:
 - 28 nodes: 24 consonant triads + 4 augmented triads
 - Edges connect triads with voice-leading distance of 1 semitone

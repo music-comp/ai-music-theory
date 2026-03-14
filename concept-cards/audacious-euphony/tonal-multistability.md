@@ -15,7 +15,7 @@ Tonal multistability describes the condition of hexatonic progressions where mul
 # Formal Definition
 In hexatonic progressions, "each triad contains the other's leading tone and hence signifies the other as tonic, like the Escher hands drawing each other's sleeves" (p. 43). Because hexatonic cycles "abjure the cadential resources of classical tonality, such as fifth-related roots, dissonances, and diatonic coordination," a composer "can suggest one of its constituent triads as a tonic 'factitiously by virtue of its recurrence' but can secure it only by recruiting external syntactic routines" (p. 43). The six triads are equally likely recipients of rhetorical emphasis; the progression itself is neutral.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Sources of tonal multistability in hexatonic progressions:
 - No fifth-related root progressions (no authentic cadences)
 - No dissonance resolution (no dominant-tonic drive)

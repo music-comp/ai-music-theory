@@ -15,7 +15,7 @@ In pan-triadic harmony, augmented triads function as invisible central axes arou
 # Formal Definition
 Cohn's central theoretical claim is that "the capacity for minimal voice leading between chords of a single type is a special property of consonant triads, resulting from their status as minimal perturbations of perfectly even augmented triads" (p. 36). Each hexatonic system has an augmented triad at its center, and all six consonant triads in that system are single-semitone displacements of that augmented triad. The augmented triad thus "generates" the hexatonic system.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Geometric representation (Figures 2.15-2.17):
 - A circle with vertices of an equilateral triangle represents the augmented triad
 - Each vertex is flanked by two positions (one semitone up, one down) representing consonant triads

@@ -15,7 +15,7 @@ The intertwining of diatonic and chromatic syntaxes in 19th-century music, where
 # Formal Definition
 Syntactic interaction describes how the two syntaxes governing consonant triads - classical diatonic tonality (based on acoustic consonance and root relations) and pan-triadic chromaticism (based on voice-leading parsimony and near-evenness) - interpenetrate in compositional practice. As Steven Rings emphasized, a model of syntactic interaction "must do more than dump transformational labels into the same cage with Roman numerals or Schenkerian representations; it needs to study how they get along within those confines" (2007, 34). Without such modeling, "the theoretical divide is thus reified in analytical practice, resulting in a curiously bifocal view of chromatic harmony, one in which the triad seems not so much 'overdetermined' as dichotomous."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The challenge is to model intertwining without collapsing:
 - Classical tonality: Triads organized by acoustic consonance, root-indexing, T-S-D-T functions, Rings arrows (semantic forces of gravity, attraction, leading)
 - Pan-triadic chromaticism: Triads organized by voice-leading work, L/P/R transformations, hexatonic and Weitzmann regions

@@ -15,7 +15,7 @@ The augmented triad presents inherent notational challenges due to enharmonic eq
 # Formal Definition
 Because the augmented triad divides the octave into three equal parts, each of its tones is equidistant from the others. This symmetry means that any of the three tones can function as "root," and the chord can be spelled three different ways (e.g., C-E-G#, E-G#-B#, Ab-C-E). In chromatic passages, composers must choose spellings that reflect local harmonic function, but the choices may conflict with one another or with the passage's overall tonal direction.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Enharmonic equivalences for one augmented triad:
 - C-E-G# (root C, or V of a minor)
 - E-G#-B# (root E, or V of c# minor) - B# = C

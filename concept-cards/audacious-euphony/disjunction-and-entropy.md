@@ -15,7 +15,7 @@ The capacity of the pan-triadic model to represent not only conjunct voice leadi
 # Formal Definition
 While the pan-triadic model privileges conjunct voice leading, it also provides tools for modeling disjunction. Maximal disjunction places triads in zone-diametric positions (6 zones apart, achieved by T2 or T6 transposition). Maximum entropy distributes triadic pairs evenly across all interval classes, achieved when voice-leading zones form an all-interval tetrachord.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Maximal disjunction:
 - Zone-diametric triads: separated by 6 units (maximum voice-leading distance)
 - Achieved by tritone (T6) or whole-step (T2) transposition

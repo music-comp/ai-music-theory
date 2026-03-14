@@ -15,7 +15,7 @@ A graph created by Jack Douthett (1992) that represents all twenty-four consonan
 # Formal Definition
 Cube Dance is a "true" model of voice-leading distance between triads where "every distance can be interpreted as representing voice-leading size" (Tymoczko 2009b). The graph contains four hexatonic cycles (portrayed by unbroken-line circuits) and four Weitzmann regions (portrayed by broken-line "water bugs"). The augmented triads occupy cardinal points, with major triads counterclockwise and minor triads clockwise from each augmented center.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure:
 - 24 consonant triads + 4 augmented triads = 28 nodes
 - Hexatonic cycles: 4 circuits of 6 triads each (unbroken lines)

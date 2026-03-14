@@ -17,7 +17,7 @@ A homophonous diamorph (from Muysken's "congruent lexicalization") is a cognate 
 
 In music, the consonant triad is the paradigmatic homophonous diamorph: identical sound, dual syntactic function. As acoustic consonance, it functions within diatonic tonality's hierarchies. As nearly even chord, it functions within chromatic voice-leading space. The triad's ability to operate in both systems smooths transitions between them.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Properties making the triad a homophonous diamorph:
 1. Identical sonic surface in both syntactic interpretations
 2. Distinct functional meanings: root-indexing consonance vs. voice-leading optimizer

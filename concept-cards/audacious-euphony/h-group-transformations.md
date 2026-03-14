@@ -20,7 +20,7 @@ H-group transformations are the three triadic transformations that preserve hexa
 
 These transformations generate all movements within a hexatonic region.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For any consonant triad X in hexatonic region R:
 - L(X), P(X), and H(X) all remain in R
 - L(X) and P(X) share the Weitzmann region of X

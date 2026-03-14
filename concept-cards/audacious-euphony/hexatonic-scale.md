@@ -15,7 +15,7 @@ The hexatonic scale is a six-note collection alternating semitone and minor thir
 # Formal Definition
 Ordered linearly within an octave, the six tones engaged by a hexatonic cycle form a hexatonic scale with the interval pattern [1-3-1-3-1-3] (semitone, minor third, alternating). The collection is pitch-class set 6-20 [014589] and has a high degree of symmetry, being invariant under transposition by major third (T4).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Interval structure (in semitones): 1-3-1-3-1-3
 Example (C hexatonic): C - Db - E - F - Ab - A - [C]
 Or equivalently: C - E - F - Ab - A - C - [E]...

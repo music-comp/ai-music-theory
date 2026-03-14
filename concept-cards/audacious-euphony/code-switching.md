@@ -15,7 +15,7 @@ The linguistic phenomenon of alternating between different languages or linguist
 # Formal Definition
 Code switching is a term from linguistics referring to the ability "to alternate between different linguistic varieties at the drop of a hat, and to make use of several simultaneously when it suits them to do so" (Gardner-Chloros 2009). In music, code switching describes how listeners shift between organizing triadic progressions according to diatonic functional syntax and chromatic transformational syntax. The linguistic evidence challenges Smith's (1986) objection that music cannot operate under multiple syntaxes because languages are "rigidly discrete, autonomous systems." Research shows most people routinely coprocess languages, and the behavior often occurs beneath conscious awareness.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Key findings from bilingualism research relevant to music:
 1. Speakers routinely switch 15+ times in rapid speech without interrupting flow
 2. Switching behavior is largely unconscious; speakers are surprised by playback

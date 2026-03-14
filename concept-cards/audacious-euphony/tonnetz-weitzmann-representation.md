@@ -18,7 +18,7 @@ A Weitzmann region can be depicted on the Tonnetz in three ways (Figure 4.6):
 (b) Tonnetz with arrows: Transformational arrows show the five progressions from C major, four passing through vertices, one (R) crossing an edge
 (c) Expanded parallelogram: The augmented triad becomes a two-dimensional polygon with area, making all voice-leading distances "true"
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 On the uninflected Tonnetz:
 - R appears to cover the same distance as L and P (edge-crossing)
 - N and S pass through vertices (corners)

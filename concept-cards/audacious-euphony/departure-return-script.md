@@ -17,7 +17,7 @@ The **departure → return** script is a fundamental template of musical form wh
 
 Once fifth relations lose their prototypical status, the specific case of I → V → I is absorbed into the general case of downshift/upshift complementarity. A departure → return script can be fulfilled by any triadic progression whose voices move in a uniform direction, with return realized by a progression moving through the same voice-leading zones in reverse order.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The script operates on multiple levels:
 1. **Classical prototype**: Tonic → Dominant → Tonic (zones move down then up)
 2. **Generalized form**: Any uniform downshift followed by compensatory upshift

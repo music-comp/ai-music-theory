@@ -15,7 +15,7 @@ An unordered collection of six consonant triads comprising the members of a hexa
 # Formal Definition
 A hexatonic region is an unordered set containing the six consonant triads that form a hexatonic cycle. Unlike the cycle (which specifies an ordering), the region treats these triads as an unordered collection. Each hexatonic region contains three major triads (related by major third transposition) and three minor triads (also related by major third transposition). The pitch classes of all six triads combine to form the hexatonic scale. There are four hexatonic regions, partitioning the 24 consonant triads.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The four hexatonic regions:
 1. Northern: {C, c, E, e, Ab, ab} - pitch classes {C, Db, E, G, Ab, B}
 2. Eastern: {Db, db, F, f, A, a} - pitch classes {Db, D, F, Ab, A, C}

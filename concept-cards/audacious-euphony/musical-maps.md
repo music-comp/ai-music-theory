@@ -15,7 +15,7 @@ Geometric and graphical representations of musical space that reflect proximity 
 # Formal Definition
 Musical maps are geometric models of pitch space that have been used for some 1,500 years. When structural and psychological conditions align, a map can draw together a family of pairwise distance assessments and represent syntactic judgments (conjunct vs. disjunct, normal vs. unusual). Good musical maps serve as stages for "imaginative performances" - like geographical maps for a child with a toy car - illuminating compositional decisions as selections from a finite menu and inviting analytical questions about paths, steps, leaps, and embellishments.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Requirements for effective musical maps:
 - Spatial distance reflects psychological proximity
 - Number of dimensions manageable (preferably 2-3)

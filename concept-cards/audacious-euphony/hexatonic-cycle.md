@@ -15,7 +15,7 @@ A hexatonic cycle is a closed chain of six consonant triads connected by single 
 # Formal Definition
 Beginning with any consonant triad and connecting it to triads via the minimal-work relation, one generates a chain of alternating major and minor triads. This chain closes into a cycle after six triads when the seventh triad would be enharmonically equivalent to the first. The four hexatonic cycles partition all twenty-four consonant triads into four groups of six, with no overlap between cycles.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure of a hexatonic cycle (starting from C major):
 - C major - c minor - Ab major - ab minor - E major - e minor - [C major]
 

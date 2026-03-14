@@ -15,7 +15,7 @@ A collection of eight Tristan-genus chords (four half-diminished seventh chords 
 # Formal Definition
 A Boretz region is the seventh-chord analogue of a Weitzmann region. It comprises eight Tristan-genus chords - four half-diminished sevenths and four dominant sevenths - each of which relates to a single central diminished seventh chord by single semitonal displacement. Just as Weitzmann regions organize consonant triads around augmented triads, Boretz regions organize Tristan-genus chords around diminished seventh chords. There are 3 Boretz regions (corresponding to the 3 diminished seventh chords).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure of a Boretz region:
 - Central diminished seventh chord (e.g., {C, Eb, F#, A})
 - 4 half-diminished sevenths: each formed by raising one note of the dim7 by semitone

@@ -15,7 +15,7 @@ The extension of convertibility from triads to Tristan-genus seventh chords (dom
 # Formal Definition
 Although the convertible Tonnetz is specific to the nearly even trichord, the process of convertibility is also pertinent to the Tristan genus (dominant seventh and half-diminished seventh chords). These tetrachords are nearly even in chromatic 12-space and participate both in pan-triadic voice-leading and in classical tonal syntax. The dimensional limitations of the Tonnetz prevent direct translation from trichordal to tetrachordal cases, but this is a "heuristic barrier, not an ontological one." If Tristan-genus chords could be assigned distinct Tonnetz locations, or if their position on Gollin's (1998) tetrahedron were legible on the planar page, their participation in voice-leading systems and potential for diatonic reversion could be traced as in the triadic case.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Properties enabling convertibility:
 - Nearly even status: Tristan-genus chords minimally perturb the diminished seventh chord
 - Parsimonious voice leading: Single semitonal displacement between related chords

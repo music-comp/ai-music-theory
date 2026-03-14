@@ -15,7 +15,7 @@ Nebenverwandt (translated as "adjacency relation" by Saslaw) is Weitzmann's term
 # Formal Definition
 The nebenverwandt relation pairs triads whose reciprocal leading-tone energies are divided between their "agents" (the thirds). In the C major / f minor pair: E (the third of C major) presses upward as the borrowed leading tone from f minor's parallel major (F major), while Ab (the third of f minor) presses downward as the borrowed leading tone from C major's parallel minor (c minor). This creates a bidirectional tension that neither triad can resolve without the other.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Properties of nebenverwandt pairs:
 - Triads are of opposite mode
 - Related by minor third (or major sixth)

@@ -21,7 +21,7 @@ In Dvorak's "New World" Symphony, the choriambus links:
 
 These themes are also related by contour inversion, creating both rhythmic and melodic connections across the development.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Choriambic rhythm:
 - Pattern: LONG - short - short - LONG
 - Metric notation: ♩ ♪♪ ♩ or equivalents

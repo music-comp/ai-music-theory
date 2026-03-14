@@ -15,7 +15,7 @@ Cohn's term (adapted from de la Motte) for the gradual, non-disruptive nature of
 # Formal Definition
 The soft revolution describes the historical process by which pan-triadic chromatic syntax developed from within diatonic tonality. Unlike narratives of revolutionary break (whether located at Tristan, Op. 11, or elsewhere), the soft revolution emphasizes continuity: "In the age of Mozart, musical pitches are primarily organized by diatonic tonality. In the age of Webern, there exists some species of music whose tones are organized in some other way." Rather than a sudden rupture, the transition occurred through incremental stages exploiting the triad's double nature. De la Motte's formulation: "In this music of Schubert, so gorgeous and so tonally secure to the foregrounded ear, the position of the tonic as functional center is placed into question for the first time, like a soft revolution."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Evolutionary stages of the soft revolution:
 1. **Diatonic sequence**: Triads exercise voice-leading capacity within diatonic space (Fetis's "law of uniformity")
 2. **Chromatic triadic syntax**: Same capacity exercised in chromatic 12-space with greater parsimony

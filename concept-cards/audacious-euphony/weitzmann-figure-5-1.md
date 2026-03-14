@@ -15,7 +15,7 @@ The foundational diagram from Weitzmann's 1853 treatise showing how each augment
 # Formal Definition
 Figure 5.1 reproduces Weitzmann's original figure (from Der ubermassige Dreiklang, 1853) with analytical overlay. The figure shows each of four augmented triads surrounded by its related consonant triads: the first tier (six triads reachable by one semitone displacement, constituting the Weitzmann region) highlighted, and the second tier (triads reachable by two semitone displacements in the same direction).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Features of the figure:
 1. Directional consistency: triads displacing augmented downward are left, upward are right
 2. Redundancy: each consonant cluster appears twice (right of one augmented = left of next)

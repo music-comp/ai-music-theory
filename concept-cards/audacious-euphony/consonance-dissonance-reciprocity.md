@@ -15,7 +15,7 @@ Consonance/dissonance reciprocity describes the condition where the normally asy
 # Formal Definition
 In classical tonality, consonant harmonies provide the stable framework within which dissonant harmonies operate - the relationship is "diodic" (one-directional). However, as Robert P. Morgan showed in "Dissonant Prolongation" (1976), there are situations where these priorities reverse and "consonant triads subordinate to dissonant ones, not only locally but across spans of significant duration" (p. 64). The relation between consonance and dissonance thus becomes "fluid in principle," opening "a compositional dynamic, where a terrain of fixed relations is transformed into a site for negotiation."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Types of reciprocity identified in 19th-century theory:
 
 1. Fifth-related triads (Sechter 1853, following Kirnberger):

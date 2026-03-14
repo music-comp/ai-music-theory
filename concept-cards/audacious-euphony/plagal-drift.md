@@ -15,7 +15,7 @@ Extended motion through the L/R chain in the flatward (leftward) direction, crea
 # Formal Definition
 Plagal drift describes motion through the L/R chain where triads progress leftward on the Tonnetz (flatward in key signature terms), executing a perpetual downshift in voice-leading space. Unlike a diatonic plagal cadence (IV-I), plagal drift extends the subdominant-ward motion beyond any single key, creating a chain "that can be arrested at any point or can just as easily go on in perpetuity" (Mitchell 1962). The drift represents suspended tonal syntax: the triads are diatonic materials operating under voice-leading logic rather than functional logic.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Characteristics:
 - Direction: Leftward on Tonnetz (flatward, subdominant-ward)
 - Voice leading: Perpetual downshift (all moving voices descend)

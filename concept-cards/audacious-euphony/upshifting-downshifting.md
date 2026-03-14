@@ -15,7 +15,7 @@ Terms from Lewin (1998) describing directed voice leading where more voices move
 # Formal Definition
 Upshifting describes voice leading where, in the transition from one chord to the next, more voices move up than down. Downshifting is the reverse: more voices move down than up. The terms apply to register-specific pitch sets (like <C4, E4, G4> to <C4, F4, A4>) or to pitch-class sets under idealized voice leading (like C major to F major).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 On Cube Dance and Figure 5.1:
 - Rightward/clockwise motion = upshifting
 - Leftward/counterclockwise motion = downshifting

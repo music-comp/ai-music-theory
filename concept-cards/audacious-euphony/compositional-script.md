@@ -20,7 +20,7 @@ Cohn identifies three principal scripts:
 2. **Departure → return**: Using novel resources to define a route, destination, and nature of reversal
 3. **Continuous upshift**: A variation on classical tropes like the Mannheim Rocket and Sturm und Drang developmental cores
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Scripts operate through:
 - Voice-leading zone trajectories (tracking sums of pitch classes)
 - Transformation sequences (P, R, L, N, S, H combinations)

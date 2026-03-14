@@ -19,7 +19,7 @@ Tetrachordal circumnavigation is movement through all voice-leading zones of the
 
 The 4-Cube Trio graph can be circumnavigated just as Cube Dance can, though the transpositional values that enable directed motion differ from the triadic case.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Conditions for circumnavigation:
 - Transpositional values by minor third (T3) or tritone (T6) produce balanced motion
 - Other values (T1, T2, T4, T5) produce directed upshift or downshift

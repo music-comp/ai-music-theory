@@ -20,7 +20,7 @@ Figure 4.7 compares three distance metrics for the twenty-three types of triadic
 
 Voice-leading work creates the most categories and distributes pairings most evenly.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Distribution of 23 triadic pairings:
 - Common tones: 3 categories (0, 1, 2 common tones)
 - Tonnetz distance: Varies based on edge-traversals

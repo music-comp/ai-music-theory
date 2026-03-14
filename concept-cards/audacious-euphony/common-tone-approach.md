@@ -15,7 +15,7 @@ A method for calculating triadic distance based on the number of pitch classes s
 # Formal Definition
 The common-tone approach measures triadic proximity by the cardinality of pitch-class intersection between two triads. Two consonant triads can share 0, 1, or 2 pitch classes (they cannot share all 3 without being identical). Under this approach, triads sharing 2 tones are most closely related, those sharing 1 tone are intermediate, and those sharing 0 tones are most distant. This metric operates independently of diatonic collection membership or root relations.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For triads X and Y:
 - |X ∩ Y| = 2: closest (e.g., C major {C, E, G} and a minor {A, C, E} share C and E)
 - |X ∩ Y| = 1: intermediate (e.g., C major and E major share E)

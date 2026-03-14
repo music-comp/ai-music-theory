@@ -15,7 +15,7 @@ Two fundamentally different ways of organizing triadic harmony: diatonic organiz
 # Formal Definition
 Diatonic organization governs classical tonality, measuring triadic proximity by mutual membership in diatonic collections (sharing at least 6 of 7 scale tones) and interpreting chromatic harmonies as transformations of underlying diatonic ones. Chromatic organization, by contrast, measures triadic proximity by voice-leading work and common-tone retention within the chromatic collection of twelve pitch classes. The two systems generate different proximity judgments: triads closely related diatonically may be distant chromatically, and vice versa.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Diatonic measurement:
 - Distance based on shared scale membership
 - Close relation = triads whose keys share 6+ of 7 tones

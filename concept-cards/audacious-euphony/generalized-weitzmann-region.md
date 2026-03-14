@@ -15,7 +15,7 @@ A collection of all nearly even chords related to a single perfectly even chord 
 # Formal Definition
 A Generalized Weitzmann Region (GWR) consists of all nearly even chords of cardinality n that are related to a single perfectly even chord of cardinality n by single semitonal displacement. The concept abstracts the common structure underlying both Weitzmann regions (where 6 consonant triads surround an augmented triad) and Boretz regions (where 8 Tristan-genus chords surround a diminished seventh chord). The GWR framework allows extension to chords of any size.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For a perfectly even chord P of cardinality n:
 - GWR(P) = all chords X such that:
   - |X| = n (X has same number of notes as P)

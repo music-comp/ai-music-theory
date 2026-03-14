@@ -15,7 +15,7 @@ The metaphor describing how the direction of hierarchical subordination reverses
 # Formal Definition
 Arrow reversal captures the fundamental difference between diatonic and chromatic syntaxes. In diatonic syntax: chromatic (12+) -> diatonic (7) -> triad (3) -> tonic (1), where arrows indicate "takes its meaning from," "is oriented toward," or "functions with respect to." In chromatic syntax: chromatic (12) <- triad (3) <- tone (1), where arrows flip direction. The mechanism: "It is as if the arrow that initially points from chromatic (12+) to tonic (1) is attached to the system at the point of the triad (3), where it rests on a spring-loaded pivot and is locked into position by the diatonic (7). When the diatonic lock is released, the spring uncoils and the direction of the arrow instantly reverses."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Diatonic syntax:
 - Individual chromatic tones -> diatonic scale tones
 - Diatonic tones -> triadic members

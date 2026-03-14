@@ -15,7 +15,7 @@ Voice leading in which all moving voices proceed downward under idealized voice 
 # Formal Definition
 Downshift voice leading occurs when, under idealized voice leading, all voices that move between two chords proceed in the descending direction. Stationary voices (common tones) are permissible, but no voice moves upward. This contrasts with upshift voice leading (all movement upward) and balanced voice leading (some voices up, some down). The direction of voice motion connects to Harrison's (1994) discussion of harmonic dualism.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For a connection from triad X to triad Y:
 - Sum of directed voice-leading intervals <= 0
 - Each moving voice moves by a negative (descending) interval

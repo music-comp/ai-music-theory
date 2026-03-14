@@ -15,7 +15,7 @@ Triadic relationships where the voice-leading zones are maximally distant (6 zon
 # Formal Definition
 Zone-diametric relations occur between triads whose voice-leading zones differ by 6 (the maximum possible distance modulo 12). On the clock-face representation, these triads occupy opposite positions. Zone-diametric transposition can be achieved by T2 (whole step) or T6 (tritone), representing maximum voice-leading distance for triadic motion.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Zone-diametric transpositions:
 - T2 (whole step): 6 voice-leading units
 - T6 (tritone): 6 voice-leading units

@@ -15,7 +15,7 @@ The relation between two consonant triads that share a minor-third dyad (e.g., C
 # Formal Definition
 The Leittonwechsel (German: "leading-tone exchange"), abbreviated L, describes both a relation and a transformation between consonant triads. Two triads stand in L relation when they share two pitch classes forming a minor third. For a major triad, L transforms it to the minor triad a major third above its root (C major to e minor); for a minor triad, L transforms it to the major triad a major third below its root (e minor to C major). The transformation involves single semitonal displacement and is an involution (applying L twice returns to the starting triad).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For major triad with root r:
 - L(r+) = (r+4)- (minor triad with root a major third higher)
 - Example: L(C+) = e- (C major to e minor)

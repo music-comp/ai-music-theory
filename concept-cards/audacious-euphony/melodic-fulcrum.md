@@ -15,7 +15,7 @@ A melodic fulcrum is a pitch position that mediates between two diatonic interpr
 # Formal Definition
 When two harmonic interpretations depend on the position of a single pitch (whether it is natural or chromatically altered), that pitch position functions as a melodic fulcrum. The fulcrum represents the point where diatonic logic (conforming to a scale) and chromatic logic (uniform transposition) diverge. Composers can treat this fulcrum as a site for motivic play, emphasizing the tension between the two interpretations.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Examples of melodic fulcrums:
 
 1. Dominant fifth vs. augmented fifth:

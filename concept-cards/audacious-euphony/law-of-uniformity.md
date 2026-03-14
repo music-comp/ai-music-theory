@@ -15,7 +15,7 @@ Fetis's principle that sequential patterns suspend tonal syntax, with the mind's
 # Formal Definition
 The "law of uniformity" (Fetis 1844) describes how sequences create a distinct cognitive mode separate from tonal expectation. When a sequence is recognized, the "law of tonality" is placed in abeyance as cognition submits to the law of uniformity. As Fetis wrote, "The mind, absorbed in the contemplation of the progressive series, momentarily loses the feeling of tonality, and regains it only at the final cadence, where the normal order is reestablished." This principle applies to both diatonic and chromatic sequences.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The law of uniformity operates when:
 - A pattern of harmonic motion is established (minimum 2 iterations)
 - The pattern creates expectation of continuation

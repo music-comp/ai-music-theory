@@ -15,7 +15,7 @@ A four-chord complex combining two zone-diametric triads with their hexatonic po
 # Formal Definition
 The hexatonic-pole disjunction complex pairs two zone-diametric triads (related by T2 or T6) with their respective hexatonic poles. The resulting four triads share no pitch classes and together use all twelve tones. This complex uniquely achieves aggregate completion through consonant triads while maintaining systematic voice-leading structure.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure:
 - Two zone-diametric major (or minor) triads: e.g., C major and D major (T2)
 - Their hexatonic poles: e minor and eb minor

@@ -15,7 +15,7 @@ A perfectly even three-note chord that divides the octave into three equal parts
 # Formal Definition
 An augmented triad is a three-note chord consisting of two stacked major thirds, dividing the 12-semitone octave into three equal parts of 4 semitones each. Because 12 divides evenly by 3, there are only 4 distinct augmented triads (under enharmonic equivalence): {C, E, G#}, {Db, F, A}, {D, F#, A#}, {Eb, G, B}. Each augmented triad is "perfectly even" - maximally symmetric within the chromatic universe. Augmented triads play a central structural role in pan-triadic syntax even when absent from the musical surface.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure: 4 + 4 + 4 semitones (major third + major third + major third)
 - Pitch-class set: [0, 4, 8] or any transposition
 - Only 4 distinct forms exist (T0, T1, T2, T3)

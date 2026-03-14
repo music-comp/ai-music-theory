@@ -15,7 +15,7 @@ The voice-leading principle that voices should move by minimal intervals, holdin
 # Formal Definition
 The "law of least motion" is a voice-leading prescription decreeing that voices should move by minimal intervals while holding common tones in the same voice. As a thoroughbass principle dating at least to Charles Masson's 1694 treatise, it assumes that harmony is primary and voice leading secondary - one first selects chords, then considers how most economically to join them. Under this assumption, maximum common-tone preservation entails minimal voice-leading work. However, if voice-leading metrics serve as a primary determinant for selecting harmonies, the two criteria can produce conflicting proximity judgments.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The law conflates two distinct metrics:
 1. Common-tone retention: maximize shared pitch classes (0, 1, or 2)
 2. Voice-leading work: minimize total semitonal displacement

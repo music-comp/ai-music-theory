@@ -20,7 +20,7 @@ Weitzmann transformations are the three operations that preserve Weitzmann regio
 
 All three require exactly 2 voice-leading units, placing them at the second rank of parsimony (after L and P at 1 unit). Together they form the W-group, complementary to the H-group (L, P, H).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Voice-leading characteristics:
 - R: 1 voice moves by whole step (2 semitones), 2 voices stationary
 - N: 2 voices move by semitone in contrary motion, 1 voice stationary

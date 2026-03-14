@@ -20,7 +20,7 @@ E-class transformations are those that preserve voice-leading zone, neither upsh
 
 These transformations shift the zone by 0, connecting T4-related triads (LP, PL) or a triad to itself (E). The E-class complements H-class (+/-1 zone) and W-class (+/-2 zones).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 E-class operations:
 - LP: C major -> e minor -> E major (zone 11 -> zone 11)
 - PL: C major -> c minor -> Ab major (zone 11 -> zone 11)

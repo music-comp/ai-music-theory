@@ -15,7 +15,7 @@ Brian Hyer's (1989) model of the Tonnetz as a geometry capable of changing shape
 # Formal Definition
 Hyer's 1989 dissertation developed a geometry capable of simultaneously modeling both of Lewin's spaces (Riemannian tonal space and scale-degree space) while situating each object and relation in a unique location. Each triad is positioned as a point connected to its L, P, and R associates, as well as to its modally matched fifth. The Tonnetz models chromatic space by identifying enharmonically and syntonically equivalent points. When triads are heard to collaborate in defining a tonic, "the glue loses its bond" - the Tonnetz decircularizes, extending its axes in all directions and "imposing a sense of perspective on the surrounding terrain, a point of view from which all the other triads appear to be near, more or less remote, or over the horizon." Inversely, when it becomes strained to hear triads in relation to a tonic, "the circularized form of the lattice comes back into play."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Two states:
 1. **Circular/cylindrical** (pan-triadic): Enharmonic and syntonic points identified; "functional 'significance' of a triad dispersed among harmonic consonances"; "no one triad that forms a tonic for the group as a whole"
 2. **Planar/extended** (tonal): Glue loses bond; axes extend in all directions; perspective imposed; triads measured by relation to tonic

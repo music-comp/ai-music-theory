@@ -15,7 +15,7 @@ Single semitonal displacement is the movement of exactly one voice by exactly on
 # Formal Definition
 In a progression between two consonant triads, single semitonal displacement occurs when one and only one pitch class changes, and that change is by one semitone (a half step). The resulting progression preserves two common tones and produces the smallest possible measurable change in pitch content. This is the defining characteristic of the L and P transformations.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 - Voice-leading work = 1 (one voice moves one semitone)
 - Common tones retained = 2
 - Connecting triads must be of opposite mode

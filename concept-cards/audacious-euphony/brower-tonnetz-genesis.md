@@ -15,7 +15,7 @@ Candace Brower's (2008) model generating the diatonic Tonnetz in stages from a s
 # Formal Definition
 Rather than accepting the Tonnetz as a space given all at once, Brower generates it in stages from a seed node. Her stages roughly retrace the development of pitch systems across historical time and explore the interplay of forces that precipitate and shape this development. She recognizes a centrifugal force operating on purely tuned triads, transposing them by purely tuned intervals, balanced by a centripetal force relying on psychophysiological propensity to ignore sub-threshold pitch differences, treating similarity as equivalence and inducing systemic closure through symmetric completion. This tale is "a variation on Plato's allegory of musical forces whose reconciliation provides a model for the ideal civic society."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Stage 1 (Figure 8.4a): C major transposed by perfect fifth yields F major (left) and G major (right); neighboring triads share single point
 
 Stage 2 (Figure 8.4b): E's fifth relations with A and B close local triangles, creating trapezoid periphery

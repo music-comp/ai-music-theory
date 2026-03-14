@@ -21,7 +21,7 @@ Rotation involves:
 3. Coordination with hypermetric structure
 4. Disruption or modification as a developmental technique
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 In Brahms's Second Symphony (mm. 246-302):
 - **Module A**: Dyadic figure from opening theme, heterophonic, double hemiola
 - **Module B**: Metrically malleable violin theme with tremolo accompaniment

@@ -15,7 +15,7 @@ In nineteenth-century German theory, the leading tone (Leitton) was understood a
 # Formal Definition
 The modern conception of leading tone is restricted to the relationship between a tonic and its semitonal lower neighbor (7 resolving to 8). For German theorists of the mid-nineteenth century, however, "this relationship captured only one half of a duality: Leitton applies equally to the relationship of dominant and its semitonal upper neighbor" (p. 64). When C major and e minor are juxtaposed (Leittonwechsel), "the attraction of C to B (as 6-5 in e minor) is as strong as that of B to C (as 7-8 in C major)."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The bidirectional relationship:
 - Upward: B -> C (leading tone to tonic in C major)
 - Downward: C -> B (upper neighbor to dominant in e minor)

@@ -21,7 +21,7 @@ N maps:
 - A major triad to the minor triad a perfect fifth below its root (e.g., C major to f minor)
 - A minor triad to the major triad a perfect fifth above its fifth (e.g., f minor to C major)
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Voice-leading action:
 - C major {CEG} -> f minor {FAbC}: E moves down to F (semitone), G moves up to Ab (semitone), C retained
 - f minor {FAbC} -> C major {CEG}: F moves up to E, Ab moves down to G, C retained

@@ -15,7 +15,7 @@ Georg Vogler's 1802 Handbuch zur Harmonielehre was the first treatise to explore
 # Formal Definition
 Vogler (1749-1814) recognized that the augmented triad "appears to consist of three similar major thirds" and can be "multiply interpreted as a III chord in three different keys." His Handbuch includes a progression (Figure 3.1) whose anacrusis/downbeat combinations form a hexatonic cycle, with the CEG# augmented triad acting "successively as dominant of each triad on the following beat." This 1802 treatise represents the first theoretical acknowledgment of what would later be understood as hexatonic structure.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Vogler's key observations:
 1. The augmented triad's symmetric structure: "three similar major thirds"
 2. Its normative position: "third scale degree of harmonic minor"

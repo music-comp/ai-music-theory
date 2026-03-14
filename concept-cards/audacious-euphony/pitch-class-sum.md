@@ -15,7 +15,7 @@ The sum of a chord's pitch classes modulo 12, which determines its voice-leading
 # Formal Definition
 The pitch-class sum of a chord is computed by adding the integer values of its constituent pitch classes and taking the result modulo 12. This sum determines the chord's voice-leading zone. Pitch-class sums were first explored by Babbitt (2003, originally 1972) in a different context; their relevance to voice-leading zones was suggested by Jack Douthett.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Calculation method:
 - Assign integers to pitch classes: C=0, C#=1, D=2, ..., B=11
 - Sum the pitch classes

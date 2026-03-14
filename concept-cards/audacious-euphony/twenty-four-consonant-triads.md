@@ -15,7 +15,7 @@ The complete universe of consonant triads in twelve-tone equal temperament: 12 m
 # Formal Definition
 The 24 consonant triads comprise 12 major triads (C, C#/Db, D, D#/Eb, E, F, F#/Gb, G, G#/Ab, A, A#/Bb, B) and 12 minor triads (c, c#/db, d, d#/eb, e, f, f#/gb, g, g#/ab, a, a#/bb, b). In Cohn's notation, major triads are indicated by uppercase letters (often with a plus sign: C+) and minor triads by lowercase (often with a minus sign: c-). These 24 triads constitute the complete space of triadic harmony in the twelve-tone equal-tempered system.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Each consonant triad:
 - Contains exactly 3 distinct pitch classes
 - Spans intervals of major third (4 semitones) and minor third (3 semitones)

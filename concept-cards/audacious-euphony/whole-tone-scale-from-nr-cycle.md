@@ -15,7 +15,7 @@ When dominant sevenths are attached to major triads in an N/R cycle, complementa
 # Formal Definition
 In an N/R cycle with dominant sevenths attached to major triads, the addition of sevenths puts all twelve pitch classes in play. The treble register chains pungent minor-second suspensions with minor-third resolutions, tracing one whole-tone scale. The bass traces the complementary whole-tone scale. This phenomenon makes explicit the whole-tone scalar content latent in Weitzmann regions.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Example N/R cycle with sevenths:
 - C7 -> f minor -> Ab7 -> db minor -> E7 -> a minor -> C7
 - Seventh degrees: Bb, Gb, D form one whole-tone scale segment

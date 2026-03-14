@@ -15,7 +15,7 @@ The opening of Liszt's Faust Symphony (1854) explicitly inverts the classical co
 # Formal Definition
 The Faust opening presents "two slow rotations through three segments of material" (p. 69), with augmented triads dominating. The passage draws exclusively on two augmented triads (CEG# and FAC#) combining to form a hexatonic collection. Four boxed figures in the score show a suspension figure where "consonance and dissonance [are] inverted with respect to formal function (but not metric location): the position of preparation and resolution is occupied by dissonant augmented triads; that of the suspension, by consonant minor triads" (Morgan 1976).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure of the opening (Figure 3.4):
 - Two rotations through three segments (A, B, C)
 - Each segment approximately four measures

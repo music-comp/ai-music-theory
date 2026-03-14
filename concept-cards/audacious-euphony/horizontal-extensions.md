@@ -15,7 +15,7 @@ Extensions of the diatonic Tonnetz along the fifth axis, allowing modulation to 
 # Formal Definition
 Horizontal extensions arise when the chain of perfect fifths is extended outside the diatonic parallelogram, a process historically begun in Renaissance modality and compounded over centuries (Lowinsky 1946, 1989). Under classical tonality, limited mobility along these tracks embeds the diatonic capsule into a larger "modulatory" shell. Sharps to the right and flats to the left temporarily displace diatonic letter-name equivalents, shifting the parallelogram horizontally. With each shift comes a new pair of syntonic images, new potential tonics, and reversal of Rings arrows and their syntactic and semantic forces.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Close modulation:
 - Shifts limited to single degree on either side of tonic
 - Each shift creates new syntonic images

@@ -21,7 +21,7 @@ Tetrachordal sequential templates are recurring patterns of seventh-chord progre
 
 These templates can be varied through transformation-class substitutions while maintaining voice-leading trajectory.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Template characteristics:
 
 **Figure 7.8(a) - T3 sequence**:

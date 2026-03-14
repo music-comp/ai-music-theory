@@ -15,7 +15,7 @@ Near evenness is the property of chords that are minimal perturbations of perfec
 # Formal Definition
 A chord is nearly even if it can be formed by displacing one or more tones of a perfectly even chord by the smallest possible amount (one semitone). Consonant triads are nearly even because they are single-semitone displacements of augmented triads: major triads result from displacing one tone of an augmented triad downward by semitone; minor triads from displacing one tone upward. This property, named by Dmitri Tymoczko, underlies the capacity of triads to connect via minimal voice leading.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The perfectly even augmented triad divides the 12-semitone octave into three equal parts (0, 4, 8). Near-even triads are formed by semitonal displacement:
 
 - C-E-G# (augmented, perfectly even)

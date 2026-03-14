@@ -15,7 +15,7 @@ A collection of tones distributed as evenly as possible within the octave withou
 # Formal Definition
 A nearly even collection distributes its pitch classes as evenly as possible around the chromatic circle without achieving perfect evenness. For three-note chords in 12-tone equal temperament, perfectly even would be 4+4+4 semitones (augmented triad); nearly even is 3+4+5 or 4+3+5 semitones (consonant triads). The concept, developed in work by Clough, Douthett, and others, identifies a structural property that distinguishes consonant triads from other trichords and underlies their unique voice-leading properties.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For a chord of n notes in a chromatic universe of c pitch classes:
 - Perfectly even: all adjacent intervals equal c/n
 - Nearly even: intervals are as close to c/n as possible given that c/n is not an integer

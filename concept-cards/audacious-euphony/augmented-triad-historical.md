@@ -15,7 +15,7 @@ The augmented triad emerged gradually as an accepted harmony from the 17th throu
 # Formal Definition
 The historical emergence of the augmented triad traces its transformation from a marginalized, "harsh harmony" (Sorge 1745) to a recognized primary sonority with compositional potential. Key figures include Georg Andreas Sorge (first to recognize it as a primary harmony, 1745), French theorists of the 1770s (accepted it as fundamental), Georg Vogler (explored its enharmonic reinterpretation, 1802), and Carl Friedrich Weitzmann (advocated for its emancipation, 1853).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Historical development timeline:
 
 1636 (France): Augmented triad appears when dominant fifth is displaced up by diatonic semitone. Figured bass treatises instruct that +5 be rendered with seventh or ninth.

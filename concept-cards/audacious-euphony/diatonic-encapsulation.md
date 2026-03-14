@@ -15,7 +15,7 @@ The process by which a diatonic collection becomes a bounded microecological spa
 # Formal Definition
 Diatonic encapsulation occurs when the diatonic collection is represented as a parallelogram on the Tonnetz whose interior is tiled into six consonant triads. The parallelogram "encapsulates its contents into a microecological hothouse, activating the internal dynamics signified by Rings arrows." Within this encapsulated space, triads are hierarchized, intuitions about context-free proximity arise, syntax governs component ordering, and semantics (energy, gravity, attraction, magnetism, desire, leading, return, finality) become active. The blank ear takes a triad as metonym for a diatonic system, provisionally situating it inside its appropriate parallelogram, with standard confirmation through T-S-D-T progression.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Conditions for encapsulation:
 - Syntonic images identified at remote corners of parallelogram
 - Six consonant triads tile the interior (three major, three minor under classical tonality)

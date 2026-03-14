@@ -15,7 +15,7 @@ A connected graph representing the voice-leading relationships among Tristan-gen
 # Formal Definition
 The 4-Cube Trio is a geometric representation whose nodes comprise the 24 Tristan-genus chords (12 half-diminished sevenths + 12 dominant sevenths), the 3 diminished seventh chords, 6 French sixth chords, and 12 minor seventh chords. Edges connect chords related by single semitonal displacement. The graph extends the Cube Dance concept to four-note chords, providing a unified representation of voice-leading space for seventh chords.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure:
 - 24 Tristan-genus nodes (12 half-dim7 + 12 dom7)
 - 3 diminished seventh chord nodes (perfectly even)

@@ -15,7 +15,7 @@ The L (Leittonwechsel or Leading-tone exchange) transformation connects a triad 
 # Formal Definition
 L is an involutory transformation that maps major triads to minor triads (and vice versa) whose roots are a major third apart. The transformation preserves the minor-third dyad and displaces the remaining tone by diatonic semitone. For major triads, the root descends to become the fifth of the resulting minor triad; for minor triads, the fifth ascends to become the root of the resulting major triad.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Voice-leading specification:
 - For major to minor: root moves down by semitone; third and fifth held
 - For minor to major: fifth moves up by semitone; root and third held

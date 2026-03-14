@@ -25,7 +25,7 @@ All H-group transformations:
 
 L and P require 1 unit of voice-leading work; H requires 3 units.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 H-group properties:
 - Closed under combination within hexatonic region
 - Each H-group transformation shifts voice-leading zone by 1

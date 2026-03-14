@@ -15,7 +15,7 @@ The opening of Rimsky-Korsakov's Symphony No. 2 "Antar" (1868) balances consonan
 # Formal Definition
 The Antar opening, likely modeled on Liszt's Faust, consists of two rotations through three segments. Unlike Faust's explicit inversion of consonance/dissonance hierarchy, Antar "balances an exquisitely fine point between its terms" (p. 70). The passage is "stricter than Faust in its hexatonicism - the passage contains not a single pitch foreign to the collection - [yet] its augmented triads are less apparent" (p. 70). The analysis can privilege either the consonant triads or the augmented triad as structural.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Two analytical interpretations (Figures 3.6 and 3.7):
 
 Figure 3.6 - Consonant triads as structural:

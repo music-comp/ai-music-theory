@@ -19,7 +19,7 @@ The four Weitzmann regions exhaust the twenty-four consonant triads with no over
 3. Region centered on DGbBb (D+): {D, Gb/F#, Bb, b, eb/d#, g}
 4. Region centered on EbGB (Eb+): {Eb, G, B, c, e, g#/ab}
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Each region contains:
 - 3 major triads related by T4 (major third transposition)
 - 3 minor triads related by T4

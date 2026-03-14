@@ -15,7 +15,7 @@ The hypothesis that the human mind can organize musical patterns simultaneously 
 # Formal Definition
 The double syntax hypothesis proposes that listeners and analysts can process music according to multiple organizational principles operating at different structural levels or in rapid alternation. In the context of 19th-century triadic music, this means recognizing that classical diatonic syntax and pan-triadic (chromatic) syntax can coexist within a single composition, with the mind capable of switching between them "quasi-instantaneously" or "multitasking" between them.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The hypothesis addresses the cognitive challenge posed by music that:
 - Is locally diatonic but globally chromatic (or vice versa)
 - Contains passages organized by voice-leading proximity nested within diatonic frameworks

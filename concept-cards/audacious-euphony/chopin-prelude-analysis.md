@@ -21,7 +21,7 @@ The **Chopin Prelude analysis** models the e minor Prelude's first phrase as a c
 
 The prelude serves as an extended case study for tetrachordal voice-leading theory.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure of the first phrase:
 - Total descent: 15 semitones (4 per lower voice, 3 in cantus)
 - Three segments with different pacing:

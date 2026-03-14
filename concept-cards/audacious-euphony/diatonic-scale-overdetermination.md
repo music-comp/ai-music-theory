@@ -15,7 +15,7 @@ The diatonic scale, like the consonant triad, is doubly determined: arising thro
 # Formal Definition
 The diatonic scale "evidently originated at a moment when modulation was inconceivable," yet once equal-tempered chromatic space arose, it had properties that "proved both unique and functionally powerful." Milton Babbitt (2003[1965]) observed: "The major scale is a maximal structure possessing [the property of unique multiplicity] in the usual equal-tempered division of the octave." Unique multiplicity means each interval class appears a different number of times: six perfect fourths, five whole steps, four minor thirds, etc. This ensures maximum diversity of common tones under transposition - for any diatonic collection, there exists another sharing n tones with it, where n ranges from 2 to 6.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Acoustic origin:
 - Fifth-generated scale: F-C-G-D-A-E-B
 - Arose through Pythagorean tuning considerations

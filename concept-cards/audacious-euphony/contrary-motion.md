@@ -15,7 +15,7 @@ Contrary motion in hexatonic progressions refers to the unique property of major
 # Formal Definition
 Contrary motion describes voice leading where voices move in opposite directions simultaneously. Among triadic transpositions, contrary motion "inheres exclusively to triads that are transpositionally related by major third" (T4 or T8). This is because the major third divides the octave into as many equal parts as the triad has notes (three), creating balanced voice leading where upward and downward motion cancel out.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Mathematical basis:
 - Major third = 4 semitones
 - Three major thirds = 12 semitones = octave

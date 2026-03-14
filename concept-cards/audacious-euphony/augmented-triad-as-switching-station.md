@@ -15,7 +15,7 @@ The augmented triad functions as a "switching station" through which consonant t
 # Formal Definition
 When a passage contains consonant triads that cannot be explained by a single diatonic framework, their coherence may derive from their shared status as single semitonal displacements of one augmented triad. The augmented triad functions as a conceptual center - a "switching station" - whether or not it sounds as a surface harmony. This role is analogous to the center of a circle orienting a set of dancers, "whether marked by a pole, a hole, or the imagination of the dancers" (p. 74).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The switching station model:
 - One augmented triad connects to six consonant triads (3 major, 3 minor) via single semitone
 - Consonant triads in the same hexatonic system share this connection

@@ -15,7 +15,7 @@ Harmonic dualism is the discredited nineteenth-century theory that major and min
 # Formal Definition
 Harmonic dualism, developed by Arthur von Oettingen and Hugo Riemann, posits that major and minor triads are metaphysically or physically equivalent structures, one generated upward from a fundamental (major) and one generated downward (minor). Critics note that this theory relies on "obsolete metaphysics" and "apocryphal physics" (p. 50), since undertone series do not occur naturally. Cohn argues that the structural equality of major and minor triads in transformational theory need not rest on this discredited foundation.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Three objections to dualist transformation theory (from critics like Kopp and Tymoczko):
 
 1. LP on major moves roots UP by major third; LP on minor moves roots DOWN by major third - this violates the intuition that equivalent progressions should move roots in the same direction

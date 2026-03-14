@@ -15,7 +15,7 @@ A bounded path through pan-triadic space connecting triads in a hexatonic cycle 
 # Formal Definition
 The hexatonic alley is the L/P chain connecting the six triads of a hexatonic region. On the convertible Tonnetz, it represents a bounded corridor for chromatic motion, distinct from the unbounded L/R chain that extends horizontally. Within the hexatonic alley, voice-leading work is minimal (single semitonal displacement between adjacent triads), and the balanced voice leading temporarily suspends the directional upshift or downshift that characterizes motion toward or away from tonic. The alley provides a controlled path through chromatic space that can intersect with diatonic encapsulations at any of its stations.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure:
 - Six triads connected by alternating L and P transformations
 - Path: C - c - Ab - ab - E - e - C (example)

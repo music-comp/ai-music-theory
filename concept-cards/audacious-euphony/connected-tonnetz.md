@@ -15,7 +15,7 @@ A Tonnetz representation that conjoins adjacent hexatonic systems at their share
 # Formal Definition
 The connected Tonnetz (Figure 5.5) expands and unites the hexatonic and Weitzmann segments presented in earlier chapters. Perfect fifths rise to the right, major thirds rise toward the northeast, and minor thirds "rise" toward the southeast. Major triads are up-tipped triangles; minor triads are down-tipped. Adjacent hexatonic systems are conjoined at shared major-third axes.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Two interpretations of major-third axes:
 1. As boundaries: Tonnetz is a relation graph of 24 triads under maximal pitch-class intersection (adjacent triads share 2 tones)
 2. As locations: Each axis represents an augmented triad, and Tonnetz becomes a model of 28 objects (24 consonant + 4 augmented) under single semitonal displacement

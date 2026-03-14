@@ -15,7 +15,7 @@ Cohn's analysis of Wagner's Faith Proclamation (Parsifal act 1 Prelude, mm. 45-5
 # Formal Definition
 The Faith Proclamation is structured as a sentence. The basic idea, beginning on Ab major, is transposed up a minor third to Cb major. The presentation segments can be heard as half-cadential (tonic to dominant per Lewin and Lerdahl) or as plagal (subdominant to tonic). Cohn supports the plagal hearing based on: (1) global role of plagal cadences in Parsifal's tonal logic; (2) local context following Dresden Amen's plagal extension to Eb major; (3) associative connection to Spear motive (mm. 4-6). The relationship between Ab major and Eb major is ultimately underdetermined - a "Hauptmannian antithesis without synthesis."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Sentence structure:
 - Basic idea: Ab major - Eb major (underdetermined: T-D or S-T?)
 - Repetition: Cb major - Ebb/D major (minor third transposition)

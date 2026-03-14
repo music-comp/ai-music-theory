@@ -15,7 +15,7 @@ Layered tonality describes music that is classically tonal at both the most glob
 # Formal Definition
 Ramon Satyendra's (1992) concept of layered tonality describes a common situation in nineteenth-century chromatic music where different structural levels operate according to different syntactic principles. The foreground and background may be diatonically tonal, while the middleground (the succession of local key areas) follows pan-triadic or chromatic logic. The essential enharmonic transformation required by hexatonic cycles is symptomatic of this layered condition.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure of layered tonality:
 - Background level: Tonal (clear global tonic)
 - Middleground level: Chromatic (hexatonic or pan-triadic)

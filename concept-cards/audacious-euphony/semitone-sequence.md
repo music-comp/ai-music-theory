@@ -20,7 +20,7 @@ Semitone (T1/T11) sequences result from three H/W combinations:
 
 The N/L chain was modeled by Rameau in famously expressive operatic passages and catalogued by Langle (1797) in both directions. S/P chains connect PL-related triads through complete Cube Dance circumnavigation.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 N/L ascending example:
 C major --(N)--> f minor --(L)--> Ab major --(N)--> db minor --(L)--> E major ...
 

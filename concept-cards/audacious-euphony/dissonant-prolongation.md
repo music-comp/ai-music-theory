@@ -15,7 +15,7 @@ Dissonant prolongation occurs when a dissonant harmony (such as an augmented tri
 # Formal Definition
 Robert P. Morgan's concept of "dissonant prolongation" (1976) describes situations where "consonant triads subordinate to dissonant ones, not only locally but across spans of significant duration." This reverses the classical assumption that only consonant harmonies can be prolonged (the basis of Schenkerian analysis). In such passages, the augmented triad may function as the "controlling harmony" even though "the score contains no vertical slice or contiguous patch, even an egregiously gerrymandered one, to be circled and labeled as a 'controlling harmony'" (p. 63).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Conditions for dissonant prolongation:
 1. A dissonant harmony (e.g., augmented triad) provides structural coherence
 2. Consonant triads function as elaborations or passing chords

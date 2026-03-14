@@ -21,7 +21,7 @@ The **French sixth chord** is a four-note chord containing two interlocking trit
 
 There are six distinct French sixth chords in the chromatic universe.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure:
 - Two tritones a whole step apart (e.g., C-F# and D-G#)
 - Interval content: [0, 2, 6, 8] or M2 + A4 + M2 arrangement

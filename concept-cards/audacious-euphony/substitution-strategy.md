@@ -21,7 +21,7 @@ The substitution strategy treats dissonant chords as semitonal displacements of 
 4. **Schenkerian pedagogy**: Dissonances substitute for their resolutions
 5. **Boretz (1972)**: Dominant and half-diminished sevenths = displacements of diminished seventh (Cohn's approach)
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Cohn develops substitution following Boretz:
 - Take a fully diminished seventh chord (perfectly even tetrachord)
 - Displace one tone downward by semitone → dominant seventh chord

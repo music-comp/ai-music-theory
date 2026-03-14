@@ -15,7 +15,7 @@ Cohn's summary analysis of Schubert's C major Symphony Scherzo (mm. 93-153) demo
 # Formal Definition
 The passage begins at m. 93 with a waltz fragment presented first in the dominant, then in the tonic, and ends with a dominant prolongation preceding the Scherzo's reprise at m. 153. Its interior (from m. 109) forms a "chromatic tunnel" that recedes from C major in stages, loses contact with it entirely as hypermeter broadens to six-bar units at m. 117, and gradually reattunes to C major as four-bar units are restored at m. 141. The analysis receives two Tonnetz representations: Figure 9.2(a) maintains diatonic encapsulation around C major; Figure 9.2(b) focuses on voice-leading efficiency without encapsulation.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Diatonic perspective (Figure 9.2a):
 - Ab and Db neighbors (mm. 109-110) receive harmonic support from f minor (m. 113) and Db major (m. 117)
 - Phrygian mixture or nebenverwandt tonicization of f minor

@@ -15,7 +15,7 @@ A perfectly even four-note chord that divides the octave into four equal parts (
 # Formal Definition
 A diminished seventh chord is a four-note chord consisting of stacked minor thirds, dividing the 12-semitone octave into four equal parts of 3 semitones each. Because 12 divides evenly by 4, there are only 3 distinct diminished seventh chords (under enharmonic equivalence): {C, Eb, F#, A}, {Db, E, G, Bb}, {D, F, Ab, B}. Like augmented triads among three-note chords, diminished seventh chords are "perfectly even" four-note chords that serve as structural centers for voice-leading networks.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure: 3 + 3 + 3 + 3 semitones (four minor thirds)
 - Pitch-class set: [0, 3, 6, 9] or transpositions
 - Only 3 distinct forms exist (T0, T1, T2)

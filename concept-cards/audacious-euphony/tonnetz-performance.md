@@ -21,7 +21,7 @@ Two Tonnetz representations of the same passage constitute two "performances" up
 - Each draws breaths at different articulation points
 - Each suggests different analytical interpretations
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Tonnetz performance involves choices about:
 1. **Connection**: Which triads to connect with arrows
 2. **Grouping**: How to segment the progression into phrases or regions

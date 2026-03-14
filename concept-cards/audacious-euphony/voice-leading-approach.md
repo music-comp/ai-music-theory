@@ -15,7 +15,7 @@ A method for calculating triadic distance based on the total semitonal displacem
 # Formal Definition
 The voice-leading approach measures triadic proximity by summing the absolute value of semitonal motion in each voice when triads are connected by idealized voice leading. This metric attends not only to the number of moving voices but also to the distance each voice travels. A unit of "voice-leading work" is defined as the motion of one voice by one semitone. The approach assumes octave equivalence and pairs chord tones one-to-one to minimize total displacement.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For triads X and Y with pitch classes {x1, x2, x3} and {y1, y2, y3}:
 Voice-leading work = min(|x1-y1| + |x2-y2| + |x3-y3|) over all pairings
 

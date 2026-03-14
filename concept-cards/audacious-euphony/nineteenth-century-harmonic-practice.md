@@ -15,7 +15,7 @@ The harmonic language of the "long nineteenth century" (roughly 1780s-1910s) cha
 # Formal Definition
 Nineteenth-century harmonic practice encompasses the repertoire from late Mozart and Haydn through early Schoenberg, during which composers increasingly exploited the voice-leading properties of consonant triads to create progressions that operate by chromatic rather than purely diatonic logic. This practice involves the coexistence of classical diatonic syntax with pan-triadic (chromatic) syntax, sometimes alternating, sometimes overlaid. The characteristic sound involves chromatic third relations, enharmonic pivots, and sequential patterns that traverse the chromatic universe.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Key characteristics:
 - Root motion increasingly by thirds (major and minor) rather than exclusively by fifths
 - Exploitation of common tones between chromatically distant triads

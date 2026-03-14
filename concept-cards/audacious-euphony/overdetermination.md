@@ -15,7 +15,7 @@ The condition where musical elements (especially the consonant triad) satisfy th
 # Formal Definition
 Overdetermination occurs when a musical structure is "dually determined" - optimizing independent properties that happen to coincide. The consonant triad is overdetermined because it uniquely optimizes both acoustic consonance (through just-intonation ratios of its constituent intervals) and voice-leading parsimony (through its near-evenness in chromatic 12-space). This overdetermination is not accidental but reflects deep mathematical relationships. Without overdetermination, the same triads could not serve in both diatonic functional and chromatic transformational syntaxes, and the soft revolution would have required lexical as well as syntactic change.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Levels of overdetermination in Western music:
 
 1. **The consonant triad**: Optimizes acoustic consonance AND voice-leading parsimony

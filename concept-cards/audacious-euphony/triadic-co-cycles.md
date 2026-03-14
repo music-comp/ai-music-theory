@@ -15,7 +15,7 @@ Co-cyclic triads are triads that belong to the same hexatonic cycle, meaning the
 # Formal Definition
 Two triads are co-cyclic if they belong to the same hexatonic system. This occurs when their roots are the same or are separated by four semitones (major third). All six triads in a hexatonic cycle are mutually co-cyclic. The co-cyclic relationship determines which triads can be connected by P and L transformations (or their compounds) without leaving the hexatonic system.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Co-cyclic criteria:
 - Same root: e.g., C major and c minor
 - Roots 4 semitones apart: e.g., C major and E major, C major and Ab major

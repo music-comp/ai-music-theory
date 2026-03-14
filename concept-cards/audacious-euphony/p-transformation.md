@@ -15,7 +15,7 @@ The P (Parallel) transformation converts a major triad to its parallel minor or 
 # Formal Definition
 P is an involutory transformation (applying it twice returns to the original triad) that maps each consonant triad to the triad of opposite mode sharing the same root. The transformation preserves the perfect fifth dyad (root and fifth) and displaces the third by chromatic semitone: major third becomes minor third (e.g., E to Eb) or minor third becomes major third (e.g., Eb to E).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Voice-leading specification:
 - Root: held as common tone
 - Third: moves by chromatic semitone (down for major-to-minor, up for minor-to-major)

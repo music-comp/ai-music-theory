@@ -15,7 +15,7 @@ The transformational identity showing that S (Slide) can be decomposed into R (R
 # Formal Definition
 The identity R + LP = S states that the S transformation (connecting triads whose roots differ by semitone with opposite mode) can be achieved by combining R with a hexatonic compound (LP or PL). This decomposition shows how the maverick S relates to more normative transformations. The identity also appears retrograded (R + PL = S) and can be inverted in direction.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Forward direction:
 c minor --(R)--> Eb major --(LP)--> B major
 Net result: c minor to B major = S

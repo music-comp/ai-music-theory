@@ -15,7 +15,7 @@ Mehrdeutigkeit (multiple meaning) is the property of augmented triads whereby ea
 # Formal Definition
 Because the augmented triad divides the octave into three equal parts and is spelled differently depending on harmonic context, any augmented triad can be interpreted as belonging to multiple keys. Vogler noted that each augmented triad "can be multiply interpreted as a III chord in three different keys" (as the mediant of three different minor keys). Weitzmann later expanded this to show each augmented triad connecting to six different keys (three major and three minor).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Enharmonic interpretations of C-E-G# (and equivalents):
 
 As III of minor keys:

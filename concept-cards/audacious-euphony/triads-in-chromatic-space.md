@@ -15,7 +15,7 @@ The conceptualization of consonant triads as objects within twelve-tone chromati
 # Formal Definition
 Viewing triads in chromatic space means measuring distances and relationships against the chromatic collection of 12 pitch classes rather than against 7-note diatonic collections. This perspective declines to interpret triads primarily in terms of the number of diatonic degrees separating their roots from some tonic. Instead, triadic proximity is assessed by common-tone retention and voice-leading work within the chromatic universe. This approach, developed from post-tonal set theory, provides systematic tools for exploring properties and relations of chords within the chromatic universe.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 In chromatic space:
 - Distance is measured in semitones (the minimal unit)
 - All 12 pitch classes are equidistant from their chromatic neighbors

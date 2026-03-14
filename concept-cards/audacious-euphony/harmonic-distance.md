@@ -20,7 +20,7 @@ Harmonic distance refers to the degree of relatedness between two triads or keys
 
 These methods produce different, sometimes contradictory, proximity judgments, revealing that "harmonic distance" is not a single fixed property but depends on the criteria applied.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For any two triads X and Y:
 
 Diatonic distance: Count how many diatonic collections contain both X and Y. Closer = more shared collections.

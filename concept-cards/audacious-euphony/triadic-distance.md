@@ -20,7 +20,7 @@ Triadic distance quantifies the proximity or remoteness between two consonant tr
 
 These metrics are not equivalent and can produce contradictory proximity judgments. The classical tradition privileges root-interval (and implicitly diatonic) distance, while 19th-century theory increasingly valued common-tone and voice-leading metrics.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For triads X and Y:
 
 | Metric | Formula | Range |

@@ -15,7 +15,7 @@ German music theorist (1808-1880) who first described the six-triad groups now c
 # Formal Definition
 Carl Friedrich Weitzmann was a student of Moritz Hauptmann who published "Der ubermassige Dreiklang" (The Augmented Triad) in 1853. In this work, he described the relationship between augmented triads and the consonant triads that can be derived from them by single-semitone displacement. Although Weitzmann conceived of nebenverwandt and relative as bilateral key relations (not transformations), his work provided the foundation for later transformational interpretations by Oettingen (1866) and 20th-century theorists.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Weitzmann's key contributions:
 - Identified four augmented triads as organizing structures
 - Described first-order relations: 6 triads reachable by one-semitone displacement

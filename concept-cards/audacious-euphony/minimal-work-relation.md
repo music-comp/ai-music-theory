@@ -15,7 +15,7 @@ Two triads are in the minimal-work relation if motion between them involves the 
 # Formal Definition
 The minimal-work relation defines triadic proximity based on voice-leading economy rather than root relationships or diatonic function. Two triads satisfy this relation when exactly one voice moves by exactly one semitone while the other two voices remain stationary as common tones. This relation only connects triads of opposite mode (major to minor or minor to major).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 - Each major triad connects to exactly two minor triads via minimal work: its parallel minor and the minor triad whose root lies four semitones above it
 - Example: C major connects to c minor (parallel) and e minor (root four semitones above C)
 - Reciprocally, each minor triad connects to its parallel major and the major triad whose root lies four semitones below

@@ -19,7 +19,7 @@ R (Relative) is a triadic transformation that maps:
 
 R preserves the two tones common to both triads and moves the third voice by whole step (2 semitones). It is the only common-tone-maximizing transformation that requires 2 units of voice-leading work (compared to L and P which require 1 unit each).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Voice-leading action:
 - C major {CEG} -> a minor {ACE}: G moves down to A (whole step), C and E retained
 - a minor {ACE} -> C major {CEG}: A moves up to G (whole step), C and E retained

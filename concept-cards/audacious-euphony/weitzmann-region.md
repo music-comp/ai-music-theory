@@ -15,7 +15,7 @@ A six-triad group centered on an augmented triad, containing three major and thr
 # Formal Definition
 A Weitzmann region is one of four collections of six consonant triads that can be reached by displacing one tone of an augmented triad by one semitone. Each region contains three major triads whose roots form an augmented triad and three minor triads whose roots form another augmented triad. Unlike hexatonic regions, Weitzmann regions are flat, uniform spaces where all triadic pairs are equidistant (two semitones of voice-leading work).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Each Weitzmann region:
 - Contains 6 consonant triads (3 major, 3 minor)
 - Is centered on one of four augmented triads (CEG#, C#FA, DGbBb, EbGB)

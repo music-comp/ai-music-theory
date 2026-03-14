@@ -20,7 +20,7 @@ Cohn uses "syntax" in three related senses:
 
 It is at this third, most abstract level that different "syntaxes" (diatonic, pan-triadic) can be distinguished.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Musical syntax encompasses:
 - What sequences of chords are "grammatical" (normative, expected)
 - What sequences are "ungrammatical" (aberrant, surprising)

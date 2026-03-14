@@ -23,7 +23,7 @@ Standard structure: minor triad with minor seventh above root, or equivalently, 
 
 Alternative analysis (dualist): minor triad with under-seventh (D-F-A with B below)
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Interval structure:
 - Standard view: [3, 3, 4, 2] (m3 + m3 + M3 + M2)
 - Cohn's view: diminished seventh with one tone raised

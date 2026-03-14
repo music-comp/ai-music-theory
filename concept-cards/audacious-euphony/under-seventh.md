@@ -21,7 +21,7 @@ For the chord B-D-F-A (typically labeled B half-diminished seventh):
 
 The under-seventh is generated downward from the triad's "root" (which dualists consider the fifth), symmetrical to the over-seventh generated upward from a major triad.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Dualist generation:
 - Minor triad generated downward from its fifth: A → F → D (d minor)
 - Under-seventh added a major second below the dualist root: D → B

@@ -15,7 +15,7 @@ Common-tone retention refers to the number of pitch classes shared between succe
 # Formal Definition
 When two triads progress from one to another, some pitch classes may be held in common while others change. The number of common tones is inversely related to voice-leading work: maximal common-tone retention (2 tones) correlates with minimal voice-leading work (1 semitone), and vice versa. In hexatonic systems, L and P each retain 2 common tones, LP retains 1 common tone, and H (hexatonic pole) retains 0 common tones.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Common tones in hexatonic transformations:
 
 | Transformation | Common tones | Voice-leading work | Dyad retained |

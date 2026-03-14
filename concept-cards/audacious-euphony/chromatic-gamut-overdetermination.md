@@ -15,7 +15,7 @@ The twelve-element equal-tempered chromatic gamut is doubly determined: arising 
 # Formal Definition
 The chromatic collection has twelve elements through "an arithmetic fortuity: it is when m = 12 that 3^m suitably approximates 2^n for some value of n." Projecting along the chain of just fifths, the twelfth generation achieves pseudo-closure (the Pythagorean comma), halting the proliferation of tones. Once temperament distributes the twelve tones equally, another property emerges as stylistically determinant: "twelve is an abundant number, divisible by 2, 3, 4, and 6, that is, by every nonunit interval besides its just-fifth generator." This divisibility enables whole-tone scales, augmented triads, and diminished seventh chords - the perfectly even structures that anchor hexatonic and Weitzmann regions.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Acoustic origin (Pythagorean closure):
 - 3^12 = 531,441
 - 2^19 = 524,288

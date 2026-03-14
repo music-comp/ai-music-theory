@@ -15,7 +15,7 @@ The hexatonic trance is an analytical concept describing the hypnotic, suspended
 # Formal Definition
 When a musical passage confines itself to the six triads of a single hexatonic system, it enters a state of "hexatonic trance" characterized by: (1) absence of fifth-related roots, (2) absence of dissonance requiring resolution, (3) absence of diatonic coordination, and (4) equal potential for any constituent triad to serve as tonic. The progression is "neutral with respect to its potential tonics" and achieves stability only through external rhetorical means (first, last, loudest, longest) or by recruitment of external syntactic resources.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structural features producing the trance state:
 - 3:2 phasing (triple periodicity within voices, duple periodicity between them)
 - Hocket canon structure (voices enter canonically at two-beat intervals)

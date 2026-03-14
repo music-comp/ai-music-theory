@@ -20,7 +20,7 @@ Having established voice-leading zones for triads, analogous equivalence classes
 
 These classes enable systematic description of voice-leading trajectories independent of specific transformation choices.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Class properties:
 - H-class: shifts zone by 1, preserves Weitzmann region
 - W-class: shifts zone by 2, preserves hexatonic region

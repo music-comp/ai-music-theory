@@ -22,7 +22,7 @@ Downshifting is associated with:
 
 The concept represents one pole of the fundamental voice-leading duality (down/up) that Cohn argues can replace or supplement the Riemannian duality of subdominant/dominant.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Continuous downshift involves:
 1. Progressive motion through voice-leading zones in descending order (e.g., 10 → 7 → 5 → 2 → ...)
 2. Aggregate voice motion predominantly downward

@@ -15,7 +15,7 @@ A Tonnetz strip is a bounded region of the Tonnetz representing one hexatonic sy
 # Formal Definition
 When a hexatonic system is represented on the Tonnetz, it forms a vertical strip whose external boundaries are formed by two augmented triads. The strip's interior is tiled with triangles representing the six consonant triads of the system. Movement through the strip (either vertically for P transformations or diagonally for L transformations) traces the hexatonic cycle. The strip format suffers from a "Bering Strait flaw" where identical tones appear at top and bottom, masking the cylindrical topology.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure of a Tonnetz strip:
 - Left boundary: One augmented triad (e.g., C-E-G#)
 - Right boundary: Adjacent augmented triad (e.g., Db-F-A... wait, this is wrong)

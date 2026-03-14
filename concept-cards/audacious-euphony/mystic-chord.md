@@ -19,7 +19,7 @@ The **mystic chord** (Scriabin's "chord of the pleroma") is a nearly even hexach
 
 The mystic chord relates to its whole-tone "core" in the same way that minor triads relate to augmented triads, or half-diminished seventh chords relate to diminished seventh chords - through upward semitonal displacement.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure:
 - Whole-tone scale: perfectly even, divides octave into six equal parts
 - Mystic chord: one tone raised by semitone from whole-tone

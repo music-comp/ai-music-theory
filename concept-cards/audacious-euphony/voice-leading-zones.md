@@ -15,7 +15,7 @@ Twelve equivalence classes of trichords that share a center of balance, allowing
 # Formal Definition
 Voice-leading zones are equivalence classes of trichords with the capacity to share a center of balance. Consonant triads share a zone if they are transpositionally related by major third (T4). The twenty-four consonant triads partition into eight zones; the four augmented triads occupy the remaining four zones, for twelve zones total. On Cube Dance, zone-equivalent triads occupy the same radius.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Zone structure:
 - 8 zones for consonant triads (3 triads per zone, T4-related)
 - 4 zones for augmented triads (1 triad per zone)

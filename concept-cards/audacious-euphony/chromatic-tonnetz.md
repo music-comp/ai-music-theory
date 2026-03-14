@@ -15,7 +15,7 @@ The standard Neo-Riemannian Tonnetz optimized for chromatic relationships, where
 # Formal Definition
 Brian Hyer's (1989) chromatic Tonnetz positions each consonant triad as a point connected to its L, P, and R associates, as well as directly to its modally matched fifth. The Tonnetz models chromatic space by identifying enharmonically and syntonically equivalent points at opposite ends of the plane. Each such dimensional folding individually creates a cylinder. When a listener no longer hears triads in relation to a specific tonic, "the circularized form of the lattice comes back into play" (Hyer 1989, 215), and the triadic relations are measured in generic semitones rather than scale degrees.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 - Each triad occupies a unique position, connected to neighbors by L, P, R, and fifth relations
 - Enharmonic identification: Db = C#, Gb = F#, etc.
 - Syntonic identification: Two tones differing by syntonic comma (81:80) are treated as identical

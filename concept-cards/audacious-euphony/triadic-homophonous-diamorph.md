@@ -15,7 +15,7 @@ The triad is a homophonous diamorph: a single sound with two distinct forms - it
 # Formal Definition
 Borrowing from linguistic code-switching theory, Cohn describes the triad as a "homophonous diamorph" - one sound, two forms (p. 59). The triad's dual nature means that "there are two distinct, independent reasons for selecting major and minor triads as primary structures on which to build a musical syntax" (p. 59): acoustic consonance and near evenness. This dual potential constitutes a case of overdetermination, where multiple independent factors converge on the same object.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The two "forms" of the triad:
 
 1. As consonant object:

@@ -15,7 +15,7 @@ Weitzmann's 1853 treatise presents three genesis narratives (Entstehung) for the
 # Formal Definition
 Weitzmann uses the verb entstehen (arise/generate) and noun Entstehung (origin/generation) to describe three different relationships between augmented and consonant triads. The first narrative concerns compositional emergence at specific moments; the second concerns systematic position in the tonal universe; the third inverts the second to show augmented triads as sources from which consonant triads are derived.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The three narratives:
 
 1. Chapter 2 - "Preparation, Origin, and Introduction":

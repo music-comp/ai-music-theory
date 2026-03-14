@@ -20,7 +20,7 @@ Hypermeter is the organization of music into regular groupings of measures that 
 
 Cohn uses the term "measure" (in quotes) to refer to hypermetric units when the notated measure is too small to capture the relevant metric structure.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Hypermetric analysis involves:
 1. Identifying the hypermetric unit (e.g., four-bar groups)
 2. Tracking events at hypermetric downbeats

@@ -15,7 +15,7 @@ The Tonnetz is a planar graph representing pitch-class relationships where point
 # Formal Definition
 The Tonnetz ("tonal network" in German) is a two-dimensional lattice that coordinates axes representing consonant interval classes. In the angled format used throughout Cohn's book: perfect fifths rise left to right along the horizontal axis, minor thirds rise from northwest to southeast, and major thirds rise from southwest to northeast. Triads appear as triangles (major pointing up, minor pointing down), and transformations appear as reflections or edge-flips on the grid.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structural properties:
 - Points = individual pitch classes
 - Edges = consonant dyads (perfect fifth, major third, minor third)

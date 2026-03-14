@@ -15,7 +15,7 @@ A three-triad core progression (minor tonic, relative major, major dominant) tha
 # Formal Definition
 The i-III-V# complex consists of minor tonic, its relative major (III), and its major dominant (V#). In transformational terms, N is executed by combining R with LP: the relative major divides the motion from minor tonic to major dominant. This three-chord complex forms the kernel from which the four-chord double-agent complex and eventually the six-chord Weitzmann region expand.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Example in c minor:
 - c minor (i) -> Eb major (III) -> G major (V#)
 - Transformational path: R from c minor to Eb major, LP from Eb major to G major

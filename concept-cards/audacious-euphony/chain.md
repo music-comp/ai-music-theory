@@ -15,7 +15,7 @@ A series of triads derived by alternating two distinct triadic transformations, 
 # Formal Definition
 A chain is a sequence of consonant triads produced by alternately applying two different triadic transformations. For example, an LP chain alternates the Leittonwechsel (L) and Parallel (P) transformations: C - e - E - g# - G# - c - ... Chains generate cyclic patterns that traverse portions of the triadic universe in regular fashion. The properties of a chain depend on which two transformations are alternated and can produce cycles of various lengths.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Chain notation: XY chain, where X and Y are transformations
 
 Common chains:

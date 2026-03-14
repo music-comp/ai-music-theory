@@ -15,7 +15,7 @@ The property of consonant triads that enables them to form coherent progressions
 # Formal Definition
 The "second nature" of consonant triads refers to a structural property, distinct from their acoustic consonance (their "first nature"), that underlies pan-triadic syntax. While triads' first nature derives from the harmonic series and generates classical diatonic tonality, their second nature emerges from their status as "nearly even" divisions of the chromatic octave. This second property is equally rare among chord types and equally generative of syntactic organization.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The second nature of triads relates to their geometric properties in pitch-class space:
 - Consonant triads are "nearly even" three-note chords - distributed as evenly as possible without being perfectly even
 - This near-evenness positions them optimally for minimal voice-leading connections

@@ -15,7 +15,7 @@ The state in which a succession of triads cannot be unambiguously assigned to a 
 # Formal Definition
 Diatonic indeterminacy occurs when a triadic progression fails to establish a clear diatonic framework. By default, an isolated major or minor triad signals tonic status of its root (as Gottfried Weber described). However, this tonic status requires confirmation through the remaining tones of its associated diatonic collection, local cadences, and structural repetition. When triads proliferate without such confirmation, or when enharmonic contradictions arise, their diatonic identities remain undetermined. The triads then constitute "tubs floating on their own bottoms" - internally coherent but relationally random from a diatonic perspective.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Conditions for diatonic determinacy:
 - Triads align with a single diatonic collection (7 pc's)
 - A tonic is established through cadential confirmation

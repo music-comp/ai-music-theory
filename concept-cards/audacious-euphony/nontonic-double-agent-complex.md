@@ -15,7 +15,7 @@ Double-agent complexes that appear in passages where none of the four constituen
 # Formal Definition
 A nontonic double-agent complex occurs when the four-triad structure appears in a musical passage without any of its members functioning as the composition's tonic. This demonstrates that the double-agent complex is a chromatic voice-leading structure that can operate at various tonal levels, not just around tonic. The complex can center on local tonics that are remote from the global tonic.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The complex retains its structure:
 - Two R-related interior triads (local tonics in the passage)
 - Two N-related exterior triads (flanking the interior pair)

@@ -20,7 +20,7 @@ The **four approaches to dissonance** are strategies for theoretically accountin
 3. **Substitution**: Treating the dissonance as a chromatic displacement of a simpler harmony
 4. **Combination**: Generating dissonances from the union of two triads
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 **Deletion**: Used in modulatory theory (keys = triads) and Schenkerian analysis (only consonances prolong)
 
 **Reduction**:

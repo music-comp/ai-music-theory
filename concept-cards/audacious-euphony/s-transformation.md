@@ -22,7 +22,7 @@ S is characterized by:
 - Two voices moving by semitone in parallel motion
 - Modal change (major to minor or vice versa)
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Voice-leading action:
 - C major {CEG} -> c# minor {C#EG#}: C moves up to C# (semitone), G moves up to G# (semitone), E retained
 - c# minor {C#EG#} -> C major {CEG}: C# moves down to C, G# moves down to G, E retained

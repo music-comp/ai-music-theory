@@ -15,7 +15,7 @@ A method for calculating triadic distance based on the interval between the root
 # Formal Definition
 The root-interval approach measures harmonic proximity according to the distance between triadic roots, typically using the circle of fifths as the metric. Triads whose roots are close on the circle of fifths (e.g., C major and G major, separated by one fifth) are considered closely related; those whose roots are distant (e.g., C major and F# major, separated by six fifths) are considered remote. This approach underlies the classical conception of key relations inherited from 18th-century theory.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Distance between roots measured in fifths:
 - Adjacent on circle of fifths: 1 fifth apart (C-G, C-F)
 - Two steps: 2 fifths apart (C-D, C-Bb)

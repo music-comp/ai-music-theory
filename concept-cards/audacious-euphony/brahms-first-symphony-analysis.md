@@ -15,7 +15,7 @@ Cohn's analysis of the recapitulation opening in Brahms's First Symphony finale 
 # Formal Definition
 The passage presents the principal theme in C major (mm. 186-200), diverted into a chromatic episode at m. 204, and presented again in C major counterstatement at m. 220. Both episode phrases begin with partial thematic statements (Eb major at m. 204, B major at m. 212) followed by four-measure liquidations in horns and pizzicato strings. Two Tonnetz analyses are provided: Figure 8.13(a) tracks the surface harmony crawling "fairly low to the ground"; Figure 8.13(b) proposes a middleground hearing oriented to C major throughout, organizing harmonies about an L/P (hexatonic) chain.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Surface analysis (Figure 8.13a):
 - C major (mm. 186-200) inflected by two chromatic tones
 - Flatward inflections coalesce around Eb major at m. 204

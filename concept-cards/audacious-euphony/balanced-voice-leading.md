@@ -17,7 +17,7 @@ Balanced voice leading occurs when upward and downward voice motion offset each 
 
 In balanced progressions, the aggregate voice-leading displacement over the passage sums to zero or near-zero, creating local motion without large-scale trajectory.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Balanced voice leading results from:
 1. Alternating upshifting and downshifting transformations
 2. Motion within a Weitzmann region (toggling around an augmented triad)

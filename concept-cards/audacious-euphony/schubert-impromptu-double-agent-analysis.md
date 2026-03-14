@@ -15,7 +15,7 @@ Analysis of the codas from Schubert's Impromptus Op. 90 Nos. 2 and 3 (1828) show
 # Formal Definition
 The codas of Schubert's Eb and Gb Impromptus demonstrate the tonal adaptability of the double-agent complex by centering on exterior triads rather than the canonical interior position. In the Eb Impromptu, b minor (exterior) is tonicized through LP transposition across a caesura. In the Gb Impromptu, Gb major (exterior) serves as tonic, with the double-agent complex approached from the opposite side.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Eb Impromptu (No. 2) coda:
 - B minor interior section replicated at coda start
 - i-V antecedent in b minor answered by V-i in eb minor

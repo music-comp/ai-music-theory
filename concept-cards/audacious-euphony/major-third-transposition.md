@@ -15,7 +15,7 @@ Major-third transposition (T4 or T8) is the only interval of transposition that 
 # Formal Definition
 When a triad is transposed by major third (4 semitones) or its complement (8 semitones), the resulting voice leading is uniquely balanced: one voice ascends, one descends, and one remains stationary. This is because "it divides the octave into as many equal parts as the triad has notes" (p. 38). Transposition by any other interval produces uniform voice leading where all moving voices move in the same direction.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Mathematical basis:
 - Octave = 12 semitones
 - Triad = 3 notes

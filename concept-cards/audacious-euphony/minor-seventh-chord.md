@@ -21,7 +21,7 @@ The **minor seventh chord** plays two distinct roles in Cohn's framework:
 
 The twelve minor seventh chords appear as triangular nodes at the 12:00, 4:00, and 8:00 positions of 4-Cube Trio.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure:
 - Minor triad + minor seventh above root (m3 + P5 + m7)
 - Or: union of R-related triads sharing major-third edge

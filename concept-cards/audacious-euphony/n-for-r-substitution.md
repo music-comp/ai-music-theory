@@ -15,7 +15,7 @@ A specific transformational substitution where N replaces R within an L/R chain,
 # Formal Definition
 N-for-R substitution occurs when a chromatic L/R chain replaces an R transformation with N. Since both R and N belong to the W-group, the substitution maintains the overall voice-leading trajectory while changing which specific triad follows. The substitution shifts the progression to a different "file" (parallel L/R chains related by T4), reducing the distance to the target triad.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Effect on L/R chain:
 - Standard L/R: major -> submediant minor -> mediant major -> ...
 - With N-for-R: major -> subdominant minor -> (continues L/R from new position)

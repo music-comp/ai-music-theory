@@ -15,7 +15,7 @@ The boundary between diatonic spellings where enharmonic equivalence must be inv
 # Formal Definition
 The enharmonic seam is the point in chromatic space where a pitch must be respelled enharmonically to maintain locally consonant and diatonic connections. In Weitzmann regions, the seam appears at the S-related exterior triads of a double-agent complex. The four-chord complex may tease the seam (avoiding direct enharmonic contact), while the five- or six-chord N/R chain necessarily plunges through it.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Example seam in Bb minor context:
 - Gb major contains Bbb (minor third)
 - F major contains A (major third)

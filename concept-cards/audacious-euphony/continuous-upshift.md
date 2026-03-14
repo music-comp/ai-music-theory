@@ -17,7 +17,7 @@ Continuous upshift is a compositional script where voice leading consistently mo
 
 This script is a variation on classical tropes such as the Mannheim Rocket (in nuce) and Sturm und Drang developmental cores (in elaboration). It creates mounting tension and energy characteristic of development sections.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Continuous upshift involves:
 1. Progressive motion through voice-leading zones in ascending order (e.g., 2 → 5 → 8 → 11 → 2 → ...)
 2. Aggregate voice motion predominantly upward

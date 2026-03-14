@@ -15,7 +15,7 @@ Fetis's concepts of uniformity and symmetry describe the forces that can overrid
 # Formal Definition
 Francois-Joseph Fetis identified uniformity and symmetry as compositional resources that can "override the forces of tonality." In a sequence, "the succession and... movement fix the attention of the mind, which holds on to the form so strongly that any irregularity of tonality is not noticed" (Fetis 2008 [1844]). The listener's attention is "diverted from the feeling of tonality by symmetry of movement and succession," allowing dissonances to behave like consonances and chromatic progressions to escape diatonic gravity.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Two types of sequence distinguished:
 
 1. Diatonic sequence:

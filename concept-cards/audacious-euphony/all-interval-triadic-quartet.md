@@ -15,7 +15,7 @@ A quartet of triads whose voice-leading zones form an all-interval tetrachord, d
 # Formal Definition
 An all-interval triadic quartet is an ensemble of four triads whose voice-leading zones are homologous to one of the two all-interval tetrachords: prime form [0146] or [0137]. Since the eight consonant-triad zones have octatonic structure, and all-interval tetrachords are octatonic subsets, such quartets exist within the consonant triadic system. The quartets achieve maximum variety along the conjunct/disjunct spectrum.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 All-interval tetrachord types (Morris 1990):
 - Any nonintersecting union of a tritone with a minor third
 - Prime forms: [0146] and [0137]

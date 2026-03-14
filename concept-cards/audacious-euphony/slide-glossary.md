@@ -15,7 +15,7 @@ The relation between two consonant triads that share a common third, for example
 # Formal Definition
 S (Slide) is defined in the Glossary as "the relation between two consonant triads that share a common third, for example, C major and c# minor; or the transformation that produces one of these triads from the other." The transformation is an involution, involves two semitones of voice-leading work (root and fifth both move by semitone in the same direction), and preserves two common tones (the third). S is one of the three W-group transformations that map triads within Weitzmann regions. The name "slide" captures the visual effect on the Tonnetz: the perfect-fifth dyad "slides" by semitone while the third is retained.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Transformation specification:
 - Input: Consonant triad
 - Output: Consonant triad sharing the third (enharmonically)

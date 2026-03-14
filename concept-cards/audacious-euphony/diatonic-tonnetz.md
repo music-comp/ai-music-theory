@@ -15,7 +15,7 @@ A geometric representation of pitch relations optimized for diatonic relationshi
 # Formal Definition
 The diatonic Tonnetz is generated in stages from a seed node, retracing the historical development of pitch systems. A purely tuned triad (e.g., C major) is transposed by its most acoustically powerful interval (the perfect fifth), yielding adjacent triads (F major to the left, G major to the right). The resulting seven-tone figure forms a parallelogram whose interior is tiled into six consonant triads. The parallelogram achieves closure by accepting syntonic images (tones differing by a syntonic comma) as identical, creating a Mobius strip topology through the folding required to close the chain of fifths via the pseudo-fifth (B-F).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 - Stage 1: Seed triad (C major) transposed by perfect fifth creates F-C-G horizontal axis
 - Stage 2: Minor triads arise through acoustic potential of unshared tones (E's fifth relations with A and B)
 - Stage 3: Closure occurs when syntonic images are identified (the two D tones differing by syntonic comma)

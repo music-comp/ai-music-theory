@@ -15,7 +15,7 @@ Analysis of Liszt's "Il Penseroso" (c. 1840) showing a double-agent complex vari
 # Formal Definition
 Liszt's "Il Penseroso" from the Annees de pelerinage (vol. 2) presents a double-agent complex that initially omits the relative major. The first phrase opens with LP progression (like the Tarnhelm), then proceeds via S transformation (C respelled as B#) from a minor with under-seventh to dominant G# major. The second phrase exercises the subdominant potential of a minor, ending by tonicizing the relative major (E major/e minor) as open fifth.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 First phrase:
 c# minor -> (LP) -> a minor[7] -> (S with enharmonic C/B#) -> G# major
 

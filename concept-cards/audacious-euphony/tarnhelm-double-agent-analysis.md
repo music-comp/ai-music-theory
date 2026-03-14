@@ -15,7 +15,7 @@ An analysis of Wagner's Tarnhelm motive showing how its double-agent complex per
 # Formal Definition
 The Tarnhelm motive from Das Rheingold (1853) presents a double-agent complex with permuted order: the relative major (e minor's relative to G major) follows rather than precedes its minor subdominant (a minor). This produces a direct LP progression from g# minor to e minor, creating the uncanny effect of hexatonic polar opposition and destabilizing g# minor's tonic status.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Standard double-agent ordering:
 g# minor -> B major -> e minor -> a minor (N-R-N)
 

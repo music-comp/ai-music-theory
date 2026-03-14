@@ -15,7 +15,7 @@ Weitzmann's six-triad cluster is a graphical representation (Figure 3.9 in the t
 # Formal Definition
 In Weitzmann's 1853 treatise, Figure 3.9 presents each augmented triad "at the center of a cluster of consonant triads; major and minor triads are indicated by large- and small-case roots, respectively." The triads "placed immediately next to the augmented triad are attained through the half-step progression of one of their voices; the [chords] further away [are attained] through the half-step progression of two of their voices" (p. 75-76). This diagram anticipates the modern understanding of hexatonic systems.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Structure of each cluster:
 - Center: One augmented triad
 - Inner ring (1 semitone away): 6 consonant triads (3 major, 3 minor)

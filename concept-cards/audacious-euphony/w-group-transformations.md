@@ -15,7 +15,7 @@ Any transformation that maps a consonant triad within its Weitzmann region and o
 # Formal Definition
 W-group transformations are the set of three transformations that connect triads sharing membership in the same Weitzmann region while belonging to different hexatonic regions. Each W-group transformation involves motion through or around an augmented triad that serves as the center of the Weitzmann region. The three W-group transformations are: R (Relative), which connects triads sharing a major-third dyad (e.g., C major and a minor); N (Nebenverwandt), which connects a major triad with the minor triad whose root is a perfect fourth above (e.g., C major and f minor); and S (Slide), which connects triads sharing a common third (e.g., C major and c# minor).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 The three W-group transformations:
 - R (Relative): Preserves major-third dyad; moves root by minor third
   - C major <-> a minor: (C, E, G) <-> (A, C, E)

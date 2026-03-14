@@ -15,7 +15,7 @@ A graph whose nodes are pitch classes and whose edges represent consonant interv
 # Formal Definition
 The Tonnetz (German: "tonal network") is a graph whose nodes are pitch classes and whose edges represent consonant intervals (perfect fifth, major third, minor third). In the standard format used by Cohn, the axes are angled so that perfect fifths run horizontally, major thirds run diagonally from southwest to northeast, and minor thirds run diagonally from northwest to southeast. Consonant triads appear as triangles (major pointing up, minor pointing down). The Tonnetz was first presented by Leonhard Euler in 1739 and revived by German harmonic theorists in the second half of the nineteenth century.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Basic structure:
 - Nodes: 12 pitch classes (with enharmonic identification)
 - Edges: Consonant dyads (P5, M3, m3)

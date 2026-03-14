@@ -15,7 +15,7 @@ The sum of the magnitude of all voice motions between two chords connected by id
 # Formal Definition
 Voice-leading work quantifies the total semitonal displacement required to transform one chord into another under idealized voice leading. A unit of voice-leading work equals the motion of one voice by one semitone. The work between two chords is calculated by summing the absolute values of all voice motions when tones are optimally paired. For consonant triads, voice-leading work ranges from 1 to 6 semitones, with lower values indicating closer voice-leading proximity.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For triads X = {x1, x2, x3} and Y = {y1, y2, y3} with optimal pairing:
 Voice-leading work = |x1 - y1| + |x2 - y2| + |x3 - y3|
 

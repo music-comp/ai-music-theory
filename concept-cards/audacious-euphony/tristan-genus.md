@@ -21,7 +21,7 @@ The **Tristan genus** comprises the twenty-four dominant seventh (V7) and half-d
 
 The term references Wagner's *Tristan und Isolde*, which "blew open the gates to a compositional field cohabited by V7 and ø7 chords whose interactions were disciplined neither by tonality nor by patterned sequential repetition."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Nearly even tetrachord structure:
 - Diminished seventh: interval content [3,3,3,3] (perfectly even)
 - Dominant seventh: interval content [4,3,3,2] (nearly even)

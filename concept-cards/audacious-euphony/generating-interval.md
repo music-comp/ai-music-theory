@@ -15,7 +15,7 @@ An interval that forms a chord or scale by recursive (repeated) application, suc
 # Formal Definition
 A generating interval is an interval that, when applied recursively, produces a particular chord or scale. Starting from any pitch class and repeatedly adding the generating interval produces the complete collection. For example, the whole tone (2 semitones) generates the whole-tone scale: C + 2 = D + 2 = E + 2 = F# + 2 = G# + 2 = A# + 2 = C. Similarly, the perfect fifth (7 semitones) generates the diatonic scale (and, extended further, the chromatic scale).
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 For an interval i (measured in semitones) to generate a scale of n distinct pitch classes:
 - The interval must divide 12 (the chromatic octave) into n equal or near-equal parts
 - Mathematically: gcd(i, 12) determines the cycle length

@@ -15,7 +15,7 @@ The complete model of the triadic universe combining hexatonic regions (from Cha
 # Formal Definition
 The unified triadic space integrates the four hexatonic regions and four Weitzmann regions into a connected system represented by Cube Dance or the connected Tonnetz. This unified model makes good on the aphorism "any chord can go to any other chord" while providing a method for evaluating voice-leading distance, recognizing motion patterns, and judging progression coherence based on voice-leading properties.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Unification principles:
 - Hexatonic regions: connected internally by H-group (L, P, H)
 - Weitzmann regions: connected internally by W-group (R, N, S)

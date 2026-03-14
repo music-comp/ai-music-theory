@@ -17,7 +17,7 @@ Causal reversal describes the flip in hierarchical relationships that accompanie
 
 Crucially, causal reversal can be cognitively opaque - occurring beneath conscious awareness. Evidence from quotidian experience: "On Tuesday, you drive your car to town for a tune-up. On Wednesday, you drive your car to town so that you can get your hair cut. In the first case, you take the car... In the second case, the car takes you... Yet, from a cognitive standpoint, one hardly notices the difference."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Musical manifestations of causal reversal:
 - G is neighbor to Ab -> Ab is neighbor to G (Parsifal opening)
 - Eb major is dominant of Ab -> Ab major is subdominant of Eb

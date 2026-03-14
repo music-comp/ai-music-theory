@@ -21,7 +21,7 @@ Hexatonic poles appear in Parsifal:
 3. Embedded within dissonant formations (V7 and ø7 chords)
 4. As motivic connections across the opera's Leitmotif network
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Hexatonic pole characteristics:
 - Three voices move by semitone in contrary motion
 - Root moves to raised seventh degree (descending)

@@ -20,7 +20,7 @@ Cohn's **Scriabin analysis** applies the generalized Weitzmann region (GWR) conc
 
 This analysis demonstrates that voice-leading parsimony principles extend beyond triads and Tristan-genus chords to larger chord cardinalities, though with diminishing returns in efficiency.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Nearly even hexachords:
 - Perfectly even six-note chord: whole-tone scale (two exist)
 - Nearly even: single semitonal displacement of whole-tone scale

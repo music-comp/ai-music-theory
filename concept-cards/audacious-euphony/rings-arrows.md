@@ -15,7 +15,7 @@ Directional arrows in Steven Rings's model representing the syntactic flow and s
 # Formal Definition
 Rings arrows, adapted from David Lewin's DOM and SUBD transformations, accompany the vertical (tonal-functional) axis of Rings's 2007 model. DOM (equivalent to T5) indicates the source chord "becomes the dominant of" the target; SUBD (T7) indicates "becomes the subdominant of." The arrows are single-headed because these transformations work in a single direction - they are not their own inverses. Rings emphasizes that these transformations capture not only syntactic flow but also the "semantic charge" of classical tonality, roughly standing for "summoning, leading, gravity, magnetism, attraction, desire."
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 - DOM: T5 transposition (root motion down by fifth or up by fourth)
 - SUBD: T7 = T-5 transposition (root motion up by fifth)
 - Single-headed arrows: Not involutions like L, P, R

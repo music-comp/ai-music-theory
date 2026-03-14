@@ -15,7 +15,7 @@ A voice-leading zone is a region of triadic voice-leading space where the center
 # Formal Definition
 When triads progress through a hexatonic cycle, the center of balance (a kind of weighted pitch center) "toggles back and forth between two pitches separated by one-third of a semitone" (p. 45). This near-stasis "coalesces around the prolongation not of a tonic, in any standard construal of the term, but rather of a zone of voice-leading space (or voice-leading zone)" (p. 45). The concept provides an alternative to tonic-based prolongation for understanding large-scale coherence in chromatic music.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Properties of voice-leading zones:
 - Defined by balanced voice leading (aggregate upward motion = aggregate downward motion)
 - Each hexatonic system occupies one voice-leading zone

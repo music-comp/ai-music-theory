@@ -22,7 +22,7 @@ The chain produces:
 - Intervening major triads functioning as dominants
 - Consistent voice-leading trajectory (upshift or downshift depending on direction)
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 N/L chain structure:
 - Minor → Major (N): Weitzmann-class transformation
 - Major → Minor (L): Hexatonic-class transformation

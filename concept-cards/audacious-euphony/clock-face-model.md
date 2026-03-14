@@ -15,7 +15,7 @@ A representation of the twelve voice-leading zones as stations on a clock face (
 # Formal Definition
 The clock-face model (Figure 5.24) superimposes a modified clock face over Cube Dance, labeling each voice-leading zone with numbers 0-11. Zone labels correspond to pitch-class sums modulo 12. The assignment enables voice-leading distance to be computed as subtraction modulo 12, tapping into intuitions about number structure.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 Zone assignments:
 - Augmented triads at multiples of 3: zones 0, 3, 6, 9
 - Consonant triads in remaining zones: 1, 2, 4, 5, 7, 8, 10, 11

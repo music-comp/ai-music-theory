@@ -15,7 +15,7 @@ Cohn's extended analysis of Liszt's Consolation no. 3 in Db major demonstrating 
 # Formal Definition
 The Consolation consists of two sentences, both whose presentation phrases cadence in f minor. The initial sentence classically continues through ii6 to a perfect cadence in Db major (expanded cadential progression). The second sentence continues instead to a cadence in A minor, after which a second continuation returns to Db major, completing a major-third division. The analysis tracks: (1) diatonic progressions through T-S-D-T on the first sentence; (2) the sprouting of a hexatonic alley from the second sentence; (3) the progressive ascent through hexatonic stations, each locally tonicized while participating in pan-triadic voice-leading.
 
-# Musical/Mathematical Formulation
+# Construction/Recognition
 First sentence (Figures 8.7a-e):
 - Opening (mm. 1-3): Db major arpeggiated; diatonic collection inferred
 - Basic idea (mm. 3-6): T-S-D-T paradigm with subdominant interpretation of {G, Bb, Db, F} chord
