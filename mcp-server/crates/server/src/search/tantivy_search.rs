@@ -50,7 +50,7 @@ impl TantivySearch {
     pub fn new(index_path: &Path, config: SearchConfig) -> Result<Self> {
         // Open existing index
         let index = Index::open_in_dir(index_path).map_err(|e| {
-            Error::search_error(format!(
+            Error::operation(format!(
                 "Failed to open Tantivy index at {}: {}",
                 index_path.display(),
                 e
@@ -68,7 +68,7 @@ impl TantivySearch {
             .reader_builder()
             .reload_policy(ReloadPolicy::OnCommitWithDelay)
             .try_into()
-            .map_err(|e| Error::search_error(format!("Failed to create index reader: {}", e)))?;
+            .map_err(|e| Error::operation(format!("Failed to create index reader: {}", e)))?;
 
         Ok(TantivySearch {
             index,
@@ -104,7 +104,7 @@ impl SearchBackend for TantivySearch {
         // Reload reader to see latest commits
         self.reader
             .reload()
-            .map_err(|e| Error::search_error(format!("Failed to reload reader: {}", e)))?;
+            .map_err(|e| Error::operation(format!("Failed to reload reader: {}", e)))?;
 
         // Get fresh searcher
         let searcher = self.reader.searcher();
@@ -206,7 +206,7 @@ impl SearchBackend for TantivySearch {
         // Execute search
         let top_docs = searcher
             .search(&*query, &TopDocs::with_limit(params.limit))
-            .map_err(|e| Error::search_error(format!("Search execution failed: {}", e)))?;
+            .map_err(|e| Error::operation(format!("Search execution failed: {}", e)))?;
 
         // Convert to SearchResults
         let mut results = Vec::new();
@@ -214,7 +214,7 @@ impl SearchBackend for TantivySearch {
         for (_score, doc_address) in top_docs {
             let doc = searcher
                 .doc(doc_address)
-                .map_err(|e| Error::search_error(format!("Failed to retrieve document: {}", e)))?;
+                .map_err(|e| Error::operation(format!("Failed to retrieve document: {}", e)))?;
 
             // Extract fields
             let id = self.get_text_field(&doc, self.schema.id)?;
@@ -437,7 +437,7 @@ impl TantivySearch {
             .and_then(|v| v.as_str())
             .map(|s| s.to_string())
             .ok_or_else(|| {
-                Error::search_error(format!(
+                Error::operation(format!(
                     "Field '{}' not found or not a string",
                     self.schema.schema.get_field_name(field)
                 ))

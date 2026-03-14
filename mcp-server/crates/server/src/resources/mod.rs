@@ -84,7 +84,7 @@ pub fn get_resource(config: &Config, uri: &str) -> Result<String> {
             fs::read_to_string(path).unwrap_or_else(|_| default_index())
         }
         _ => {
-            return Err(crate::error::Error::not_found(std::path::PathBuf::from(
+            return Err(crate::error::Error::file_not_found(std::path::PathBuf::from(
                 uri,
             )))
         }

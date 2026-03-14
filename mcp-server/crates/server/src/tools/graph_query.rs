@@ -16,8 +16,6 @@ use crate::graph::query::*;
 #[cfg(feature = "graph")]
 use crate::graph::types::{Node, Relationship};
 #[cfg(feature = "graph")]
-use crate::state::GraphState;
-#[cfg(feature = "graph")]
 use petgraph::graph::NodeIndex;
 #[cfg(feature = "graph")]
 use petgraph::visit::EdgeRef;
@@ -202,24 +200,8 @@ pub async fn get_related_concepts(
     }
 
     // Get loaded graph
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     // Lookup node
     let node_idx = loaded.node_index.get(&params.concept_id).ok_or_else(|| {
@@ -371,24 +353,8 @@ pub async fn find_concept_path(
     }
 
     // Get loaded graph
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     // Lookup nodes
     let from_idx = loaded.node_index.get(&params.from_id).ok_or_else(|| {
@@ -521,24 +487,8 @@ pub async fn get_prerequisites(
     }
 
     // Get loaded graph
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     // Lookup node
     let node_idx = loaded.node_index.get(&params.concept_id).ok_or_else(|| {
@@ -623,24 +573,8 @@ pub async fn get_concept_neighborhood(
     }
 
     // Get loaded graph
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     // Lookup node
     let node_idx = loaded.node_index.get(&params.concept_id).ok_or_else(|| {
@@ -763,24 +697,8 @@ pub async fn get_dependents(
     }
 
     // Get loaded graph
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     // Lookup node
     let node_idx = loaded.node_index.get(&params.concept_id).ok_or_else(|| {
@@ -854,24 +772,8 @@ pub async fn get_central_concepts(
     }
 
     // Get loaded graph
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     // Use degree_centrality algorithm
     let central_indices =
@@ -925,24 +827,8 @@ pub async fn get_concept_sources(
     params: GetConceptSourcesParams,
 ) -> Result<ConceptSourcesResponse> {
     // Get loaded graph
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     // Lookup node
     let node_idx = loaded.node_index.get(&params.concept_id).ok_or_else(|| {
@@ -1017,24 +903,8 @@ pub async fn get_concept_variants(
     params: GetConceptVariantsParams,
 ) -> Result<ConceptVariantsResponse> {
     // Get loaded graph
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     // Verify canonical concept exists
     let canonical_idx = loaded.node_index.get(&params.canonical_id).ok_or_else(|| {
@@ -1136,24 +1006,8 @@ pub async fn find_bridge_concepts(
     }
 
     // Get loaded graph
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     // Use bridge_concepts algorithm
     let bridge_indices = crate::graph::algorithms::bridge_concepts(
@@ -1215,24 +1069,8 @@ pub async fn get_source_coverage(
     params: GetSourceCoverageParams,
 ) -> Result<SourceCoverageResponse> {
     // Get loaded graph
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     // Lookup node
     let node_idx = loaded.node_index.get(&params.source_id).ok_or_else(|| {
@@ -1514,7 +1352,8 @@ mod tests {
             ConceptNode, Edge, EdgeOrigin, GraphData, Relationship, SourceNode,
         };
         use crate::graph::LoadedGraph;
-        use crate::state::{AppState, GraphState};
+        use crate::state::AppState;
+        use fabryk::core::ServiceState;
         use std::sync::Arc;
 
         /// Helper to create AppState with a test graph for query testing
@@ -1633,9 +1472,10 @@ mod tests {
             let state = Arc::new(AppState::new(config).await.unwrap());
 
             {
-                let mut graph_guard = state.graph.write().unwrap();
-                *graph_guard = GraphState::Loaded(loaded);
+                let mut graph_guard = state.graph_data.write().unwrap();
+                *graph_guard = Some(loaded);
             }
+            state.graph_service.set_state(ServiceState::Ready);
 
             state
         }

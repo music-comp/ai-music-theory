@@ -106,7 +106,7 @@ impl<'a> QueryBuilder<'a> {
     pub fn build_query(&self, query_str: &str) -> Result<Box<dyn Query>> {
         let query_str = query_str.trim();
         if query_str.is_empty() {
-            return Err(Error::search_error(
+            return Err(Error::operation(
                 "Query string cannot be empty".to_string(),
             ));
         }
@@ -127,7 +127,7 @@ impl<'a> QueryBuilder<'a> {
 
         // Check if we have any searchable content
         if phrases.is_empty() && terms.is_empty() {
-            return Err(Error::search_error(
+            return Err(Error::operation(
                 "Query contains no valid terms".to_string(),
             ));
         }
@@ -175,7 +175,7 @@ impl<'a> QueryBuilder<'a> {
         }
 
         if clauses.is_empty() {
-            return Err(Error::search_error(
+            return Err(Error::operation(
                 "Failed to create any field queries".to_string(),
             ));
         }
@@ -247,7 +247,7 @@ impl<'a> QueryBuilder<'a> {
         }
 
         if terms.is_empty() {
-            return Err(Error::search_error(
+            return Err(Error::operation(
                 "Phrase contains no valid terms".to_string(),
             ));
         }
@@ -281,7 +281,7 @@ impl<'a> QueryBuilder<'a> {
         boost: f32,
     ) -> Result<Box<dyn Query>> {
         if terms.is_empty() {
-            return Err(Error::search_error("No terms provided".to_string()));
+            return Err(Error::operation("No terms provided".to_string()));
         }
 
         // Create tokenizer (same as index: lowercase + stem)

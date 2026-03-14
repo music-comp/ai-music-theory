@@ -350,11 +350,11 @@ impl ConfigProvider for Config {
     }
 
     fn base_path(&self) -> fabryk::core::Result<PathBuf> {
-        expand_path(&self.paths.base).map_err(|e| fabryk::core::Error::config(e.to_string()))
+        expand_path(&self.paths.base)
     }
 
     fn content_path(&self, content_type: &str) -> fabryk::core::Result<PathBuf> {
-        let result = match content_type {
+        match content_type {
             "concept_cards" => expand_path(&self.paths.concept_cards),
             "sources_md" => expand_path(&self.paths.sources_md),
             "concepts_unified" => expand_path(&self.paths.concepts_unified),
@@ -364,18 +364,13 @@ impl ConfigProvider for Config {
                 "Unknown content type: {}",
                 content_type
             ))),
-        };
-        result.map_err(|e| fabryk::core::Error::config(e.to_string()))
+        }
     }
 
     fn cache_path(&self, cache_type: &str) -> fabryk::core::Result<PathBuf> {
         let base = self.base_path()?;
         match cache_type {
-            "fts" => {
-                // Use configured index path if set, otherwise default
-                expand_path(&self.search.index_path)
-                    .map_err(|e| fabryk::core::Error::config(e.to_string()))
-            }
+            "fts" => expand_path(&self.search.index_path),
             "graph" => Ok(base.join("data").join("graphs")),
             "vector" => Ok(base.join(".cache").join("vector")),
             _ => Ok(base.join(".cache").join(cache_type)),
@@ -399,13 +394,13 @@ impl ConfigManager for Config {
             opts.add_path(&path_str);
 
             let config: Config = Confygery::new()
-                .map_err(|e| fabryk::core::Error::config(format!("config init: {e}")))?
+                .map_err(|e| Error::config(format!("config init: {e}")))?
                 .with_opts(opts)
-                .map_err(|e| fabryk::core::Error::config(format!("config opts: {e}")))?
+                .map_err(|e| Error::config(format!("config opts: {e}")))?
                 .add_file("default.toml")
-                .map_err(|e| fabryk::core::Error::config(format!("config file: {e}")))?
+                .map_err(|e| Error::config(format!("config file: {e}")))?
                 .build()
-                .map_err(|e| fabryk::core::Error::config(format!("config build: {e}")))?;
+                .map_err(|e| Error::config(format!("config build: {e}")))?;
 
             Ok(config)
         } else {
@@ -440,14 +435,14 @@ impl ConfigManager for Config {
 
     fn to_toml_string(&self) -> fabryk::core::Result<String> {
         toml_edit::ser::to_string_pretty(self)
-            .map_err(|e| fabryk::core::Error::config(e.to_string()))
+            .map_err(|e| Error::config(e.to_string()))
     }
 
     fn to_env_vars(&self) -> fabryk::core::Result<Vec<(String, String)>> {
         let value: toml_edit::DocumentMut = self
             .to_toml_string()?
             .parse()
-            .map_err(|e: toml_edit::TomlError| fabryk::core::Error::config(e.to_string()))?;
+            .map_err(|e: toml_edit::TomlError| Error::config(e.to_string()))?;
         let mut vars = Vec::new();
         flatten_toml_table(value.as_table(), "MUSIC_THEORY", &mut vars);
         Ok(vars)

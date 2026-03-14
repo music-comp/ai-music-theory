@@ -2,6 +2,7 @@
 //!
 //! This module provides AppState for managing the search backend state,
 //! including FTS readiness tracking and dynamic backend switching.
+//! Service lifecycle is tracked via `fabryk::core::ServiceHandle`.
 
 use std::sync::Arc;
 
@@ -9,12 +10,12 @@ use std::sync::Arc;
 use std::path::Path;
 
 #[cfg(feature = "fts")]
-use std::sync::atomic::{AtomicBool, Ordering};
-#[cfg(feature = "fts")]
 use std::sync::RwLock as StdRwLock;
 
 #[cfg(feature = "graph")]
 use std::sync::RwLock;
+
+use fabryk::core::{ServiceHandle, ServiceState};
 
 use crate::config::Config;
 use crate::error::Result;
@@ -26,12 +27,16 @@ use crate::search::{build_index, is_index_fresh, TantivySearch};
 
 /// Type alias for FTS backend initialization return type.
 #[cfg(feature = "fts")]
-type FtsBackendInit = (Arc<StdRwLock<Option<Arc<TantivySearch>>>>, Arc<AtomicBool>);
+type FtsBackendInit = (Arc<StdRwLock<Option<Arc<TantivySearch>>>>, ServiceHandle);
 
 /// Shared application state.
 ///
 /// Manages search backends and FTS readiness. Cloneable for sharing across
 /// request handlers via Arc-wrapped internals.
+///
+/// Service lifecycle is tracked via [`ServiceHandle`] instances rather than
+/// raw `AtomicBool` / enum state. Each service handle provides state
+/// observation, subscription, and audit-trail capabilities.
 #[derive(Clone)]
 pub struct AppState {
     /// Configuration
@@ -44,27 +49,20 @@ pub struct AppState {
     #[cfg(feature = "fts")]
     fts_backend: Arc<StdRwLock<Option<Arc<TantivySearch>>>>,
 
-    /// Whether FTS index is ready for queries
+    /// FTS service lifecycle handle
     #[cfg(feature = "fts")]
-    fts_ready: Arc<AtomicBool>,
+    pub fts_service: ServiceHandle,
 
-    /// Graph backend (optional)
+    /// Graph service lifecycle handle
     #[cfg(feature = "graph")]
-    pub graph: Arc<RwLock<GraphState>>,
-}
+    pub graph_service: ServiceHandle,
 
-/// State of the concept graph.
-#[cfg(feature = "graph")]
-#[derive(Clone)]
-pub enum GraphState {
-    /// Graph not yet loaded
-    NotLoaded,
-    /// Graph is currently loading
-    Loading,
-    /// Graph loaded successfully
-    Loaded(crate::graph::LoadedGraph),
-    /// Graph failed to load
-    Failed(String),
+    /// Graph data (populated when `graph_service` reaches `Ready`)
+    #[cfg(feature = "graph")]
+    pub graph_data: Arc<RwLock<Option<crate::graph::LoadedGraph>>>,
+
+    /// Vector service lifecycle handle (placeholder for M7)
+    pub vector_service: ServiceHandle,
 }
 
 impl AppState {
@@ -88,7 +86,7 @@ impl AppState {
         let simple_backend = Arc::new(SimpleSearch::new(config.clone()));
 
         #[cfg(feature = "fts")]
-        let (fts_backend, fts_ready) = initialize_fts_backend(&config)?;
+        let (fts_backend, fts_service) = initialize_fts_backend(&config)?;
 
         Ok(Self {
             config,
@@ -96,9 +94,12 @@ impl AppState {
             #[cfg(feature = "fts")]
             fts_backend,
             #[cfg(feature = "fts")]
-            fts_ready,
+            fts_service,
             #[cfg(feature = "graph")]
-            graph: Arc::new(RwLock::new(GraphState::NotLoaded)),
+            graph_service: ServiceHandle::new("graph"),
+            #[cfg(feature = "graph")]
+            graph_data: Arc::new(RwLock::new(None)),
+            vector_service: ServiceHandle::new("vector"),
         })
     }
 
@@ -112,7 +113,7 @@ impl AppState {
     /// Returns Arc-wrapped SearchBackend for shared ownership across requests.
     pub fn search_backend(&self) -> Arc<dyn SearchBackend> {
         #[cfg(feature = "fts")]
-        if self.fts_ready.load(Ordering::Acquire) {
+        if self.fts_service.state().is_ready() {
             if let Ok(guard) = self.fts_backend.read() {
                 if let Some(ref backend) = *guard {
                     return Arc::clone(backend) as Arc<dyn SearchBackend>;
@@ -130,7 +131,7 @@ impl AppState {
     /// Returns "tantivy" if FTS is ready, otherwise "simple".
     pub fn active_backend_name(&self) -> &'static str {
         #[cfg(feature = "fts")]
-        if self.fts_ready.load(Ordering::Acquire) {
+        if self.fts_service.state().is_ready() {
             return "tantivy";
         }
         "simple"
@@ -143,7 +144,7 @@ impl AppState {
     /// Returns true if FTS backend is initialized and ready for queries.
     #[cfg(feature = "fts")]
     pub fn is_fts_ready(&self) -> bool {
-        self.fts_ready.load(Ordering::Acquire)
+        self.fts_service.state().is_ready()
     }
 
     /// Mark FTS as ready or not ready (internal use).
@@ -151,7 +152,11 @@ impl AppState {
     /// Used by background indexing to signal when FTS becomes available.
     #[cfg(feature = "fts")]
     pub(crate) fn set_fts_ready(&self, ready: bool) {
-        self.fts_ready.store(ready, Ordering::Release);
+        if ready {
+            self.fts_service.set_state(ServiceState::Ready);
+        } else {
+            self.fts_service.set_state(ServiceState::Stopped);
+        }
     }
 
     /// Update the FTS backend after background indexing completes.
@@ -172,6 +177,36 @@ impl AppState {
         *guard = Some(Arc::new(backend));
         Ok(())
     }
+
+    /// Acquire the loaded graph data, returning an appropriate error if the
+    /// graph service is not in the `Ready` state.
+    ///
+    /// Callers receive a `RwLockReadGuard` that borrows `Option<LoadedGraph>`.
+    /// When the service is `Ready` the `Option` is guaranteed to be `Some`.
+    ///
+    /// # Errors
+    ///
+    /// Returns an error describing the current service state (not loaded,
+    /// loading, or failed).
+    #[cfg(feature = "graph")]
+    pub fn require_graph(
+        &self,
+    ) -> Result<std::sync::RwLockReadGuard<'_, Option<crate::graph::LoadedGraph>>> {
+        let svc_state = self.graph_service.state();
+        if !svc_state.is_ready() {
+            return match svc_state {
+                ServiceState::Starting => {
+                    Err(crate::error::Error::not_found_msg("Graph is currently loading"))
+                }
+                ServiceState::Failed(msg) => {
+                    Err(crate::error::Error::config(format!("Graph failed to load: {msg}")))
+                }
+                _ => Err(crate::error::Error::not_found_msg("Graph not loaded yet")),
+            };
+        }
+        let guard = self.graph_data.read().unwrap();
+        Ok(guard)
+    }
 }
 
 /// Initialize FTS backend on startup (module-level function).
@@ -185,10 +220,12 @@ impl AppState {
 ///
 /// # Returns
 ///
-/// Returns tuple of (fts_backend, fts_ready) where backend may be None
+/// Returns tuple of (fts_backend, fts_service) where backend may be None
 /// if index needs to be built.
 #[cfg(feature = "fts")]
 fn initialize_fts_backend(config: &Config) -> Result<FtsBackendInit> {
+    let fts_service = ServiceHandle::new("fts");
+
     if config.search.backend == "tantivy" {
         let index_path = config.search.index_path()?;
 
@@ -197,26 +234,21 @@ fn initialize_fts_backend(config: &Config) -> Result<FtsBackendInit> {
             Ok(backend) => {
                 // Index exists and is loadable
                 log::info!("Loaded existing FTS index from disk");
+                fts_service.set_state(ServiceState::Ready);
                 Ok((
                     Arc::new(StdRwLock::new(Some(Arc::new(backend)))),
-                    Arc::new(AtomicBool::new(true)),
+                    fts_service,
                 ))
             }
             Err(e) => {
                 // Index doesn't exist yet - will build in background (Phase 3)
                 log::debug!("FTS index not found: {} (will build if configured)", e);
-                Ok((
-                    Arc::new(StdRwLock::new(None)),
-                    Arc::new(AtomicBool::new(false)),
-                ))
+                Ok((Arc::new(StdRwLock::new(None)), fts_service))
             }
         }
     } else {
         // FTS not configured
-        Ok((
-            Arc::new(StdRwLock::new(None)),
-            Arc::new(AtomicBool::new(false)),
-        ))
+        Ok((Arc::new(StdRwLock::new(None)), fts_service))
     }
 }
 
@@ -315,11 +347,8 @@ pub async fn initialize_graph(state: &Arc<AppState>) -> Result<()> {
 #[cfg(feature = "graph")]
 fn start_graph_loading(state: Arc<AppState>, data_dir: std::path::PathBuf) {
     tokio::spawn(async move {
-        // Update state to Loading
-        {
-            let mut guard = state.graph.write().unwrap();
-            *guard = GraphState::Loading;
-        }
+        // Update state to Starting
+        state.graph_service.set_state(ServiceState::Starting);
 
         log::info!("Loading concept graph");
 
@@ -333,14 +362,18 @@ fn start_graph_loading(state: Arc<AppState>, data_dir: std::path::PathBuf) {
                     loaded.stats.source_count
                 );
 
-                // Update state to Loaded
-                let mut guard = state.graph.write().unwrap();
-                *guard = GraphState::Loaded(loaded);
+                // Store graph data and mark service ready
+                {
+                    let mut guard = state.graph_data.write().unwrap();
+                    *guard = Some(loaded);
+                }
+                state.graph_service.set_state(ServiceState::Ready);
             }
             Err(e) => {
                 log::error!("Failed to load concept graph: {}", e);
-                let mut guard = state.graph.write().unwrap();
-                *guard = GraphState::Failed(e.to_string());
+                state
+                    .graph_service
+                    .set_state(ServiceState::Failed(e.to_string()));
             }
         }
     });
@@ -474,6 +507,14 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn test_vector_service_initial_state() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+        assert_eq!(state.vector_service.state(), ServiceState::Stopped);
+        assert_eq!(state.vector_service.name(), "vector");
+    }
+
+    #[tokio::test]
     #[cfg(feature = "fts")]
     async fn test_appstate_fts_not_ready_initially() {
         use tempfile::TempDir;
@@ -490,6 +531,7 @@ mod tests {
         let state = AppState::new(config).await.expect("Failed to create state");
         // Without existing index, FTS should not be ready
         assert!(!state.is_fts_ready());
+        assert_eq!(state.fts_service.state(), ServiceState::Stopped);
         assert_eq!(state.active_backend_name(), "simple");
     }
 
@@ -513,9 +555,11 @@ mod tests {
 
         state.set_fts_ready(true);
         assert!(state.is_fts_ready());
+        assert_eq!(state.fts_service.state(), ServiceState::Ready);
 
         state.set_fts_ready(false);
         assert!(!state.is_fts_ready());
+        assert_eq!(state.fts_service.state(), ServiceState::Stopped);
     }
 
     #[tokio::test]
@@ -761,9 +805,9 @@ New content.
         let result = initialize_fts_backend(&config);
         assert!(result.is_ok());
 
-        let (backend, ready) = result.unwrap();
+        let (backend, fts_service) = result.unwrap();
         assert!(backend.read().unwrap().is_none());
-        assert!(!ready.load(Ordering::Acquire));
+        assert!(!fts_service.state().is_ready());
     }
 
     #[tokio::test]
@@ -778,9 +822,9 @@ New content.
         let result = initialize_fts_backend(&config);
         assert!(result.is_ok());
 
-        let (backend, ready) = result.unwrap();
+        let (backend, fts_service) = result.unwrap();
         assert!(backend.read().unwrap().is_none());
-        assert!(!ready.load(Ordering::Acquire));
+        assert!(!fts_service.state().is_ready());
     }
 
     #[tokio::test]
@@ -1039,5 +1083,57 @@ Test content.
         let backend = state.search_backend();
         // Can't easily test the type, but it shouldn't panic
         drop(backend);
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_fts_service_handle_name() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+        assert_eq!(state.fts_service.name(), "fts");
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "graph")]
+    async fn test_graph_service_initial_state() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+        assert_eq!(state.graph_service.state(), ServiceState::Stopped);
+        assert_eq!(state.graph_service.name(), "graph");
+        assert!(state.graph_data.read().unwrap().is_none());
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "graph")]
+    async fn test_require_graph_not_loaded() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+        let result = state.require_graph();
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("not loaded"));
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "graph")]
+    async fn test_require_graph_loading() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+        state.graph_service.set_state(ServiceState::Starting);
+        let result = state.require_graph();
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("loading"));
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "graph")]
+    async fn test_require_graph_failed() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+        state
+            .graph_service
+            .set_state(ServiceState::Failed("disk full".to_string()));
+        let result = state.require_graph();
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("disk full"));
     }
 }

@@ -52,7 +52,7 @@ impl Indexer {
         // Try to open existing index, or create new one
         let index = if index_path.join("meta.json").exists() {
             Index::open_in_dir(index_path).map_err(|e| {
-                Error::search_error(format!(
+                Error::operation(format!(
                     "Failed to open existing index at {}: {}",
                     index_path.display(),
                     e
@@ -60,7 +60,7 @@ impl Indexer {
             })?
         } else {
             Index::create_in_dir(index_path, schema.schema.clone()).map_err(|e| {
-                Error::search_error(format!(
+                Error::operation(format!(
                     "Failed to create new index at {}: {}",
                     index_path.display(),
                     e
@@ -74,7 +74,7 @@ impl Indexer {
         // Create writer with 50MB buffer
         let writer = index
             .writer(50_000_000)
-            .map_err(|e| Error::search_error(format!("Failed to create index writer: {}", e)))?;
+            .map_err(|e| Error::operation(format!("Failed to create index writer: {}", e)))?;
 
         Ok(Indexer {
             schema,
@@ -103,7 +103,7 @@ impl Indexer {
         let tantivy_doc = self.convert_to_tantivy_doc(doc)?;
         self.writer
             .add_document(tantivy_doc)
-            .map_err(|e| Error::search_error(format!("Failed to add document to index: {}", e)))?;
+            .map_err(|e| Error::operation(format!("Failed to add document to index: {}", e)))?;
         Ok(())
     }
 
@@ -122,7 +122,7 @@ impl Indexer {
     pub fn commit(&mut self) -> Result<()> {
         self.writer
             .commit()
-            .map_err(|e| Error::search_error(format!("Failed to commit index: {}", e)))?;
+            .map_err(|e| Error::operation(format!("Failed to commit index: {}", e)))?;
         Ok(())
     }
 
@@ -140,7 +140,7 @@ impl Indexer {
     pub fn clear(&mut self) -> Result<()> {
         self.writer
             .delete_all_documents()
-            .map_err(|e| Error::search_error(format!("Failed to delete all documents: {}", e)))?;
+            .map_err(|e| Error::operation(format!("Failed to delete all documents: {}", e)))?;
         self.commit()?;
         Ok(())
     }

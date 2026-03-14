@@ -269,7 +269,7 @@ async fn list_chapters_from_filesystem(
     let source_path = sources_md_path.join(source_id);
 
     if !crate::util::files::exists(&source_path).await {
-        return Err(Error::not_found(source_path));
+        return Err(Error::file_not_found(source_path));
     }
 
     let files = find_all_files(&source_path, FindOptions::markdown()).await?;

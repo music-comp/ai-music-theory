@@ -11,6 +11,7 @@ use rmcp::{tool, tool_handler, tool_router};
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 
+use crate::error::McpErrorContextExt;
 use crate::resources;
 use crate::state::AppState;
 use crate::tools;

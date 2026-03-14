@@ -15,7 +15,7 @@ use crate::state::AppState;
 #[cfg(feature = "graph")]
 use crate::graph::types::Node;
 #[cfg(feature = "graph")]
-use crate::state::GraphState;
+use fabryk::core::ServiceState;
 #[cfg(feature = "graph")]
 use petgraph::visit::EdgeRef;
 
@@ -188,38 +188,42 @@ pub struct NodeEdgesResponse {
 pub async fn graph_status(state: &AppState) -> Result<GraphStatusResponse> {
     #[cfg(feature = "graph")]
     {
-        let graph_state = state.graph.read().unwrap();
-        match &*graph_state {
-            GraphState::NotLoaded => Ok(GraphStatusResponse {
-                enabled: true,
-                status: "not_loaded".to_string(),
-                error: None,
-                stats: None,
-                loaded_at: None,
-            }),
-            GraphState::Loading => Ok(GraphStatusResponse {
+        let svc_state = state.graph_service.state();
+        match svc_state {
+            ServiceState::Ready => {
+                let guard = state.graph_data.read().unwrap();
+                let loaded = guard.as_ref().unwrap();
+                Ok(GraphStatusResponse {
+                    enabled: true,
+                    status: "loaded".to_string(),
+                    error: None,
+                    stats: Some(BasicGraphStats {
+                        node_count: loaded.stats.node_count,
+                        edge_count: loaded.stats.edge_count,
+                        concept_count: loaded.stats.concept_count,
+                        source_count: loaded.stats.source_count,
+                    }),
+                    loaded_at: Some(loaded.loaded_at.to_rfc3339()),
+                })
+            }
+            ServiceState::Starting => Ok(GraphStatusResponse {
                 enabled: true,
                 status: "loading".to_string(),
                 error: None,
                 stats: None,
                 loaded_at: None,
             }),
-            GraphState::Loaded(loaded) => Ok(GraphStatusResponse {
-                enabled: true,
-                status: "loaded".to_string(),
-                error: None,
-                stats: Some(BasicGraphStats {
-                    node_count: loaded.stats.node_count,
-                    edge_count: loaded.stats.edge_count,
-                    concept_count: loaded.stats.concept_count,
-                    source_count: loaded.stats.source_count,
-                }),
-                loaded_at: Some(loaded.loaded_at.to_rfc3339()),
-            }),
-            GraphState::Failed(error) => Ok(GraphStatusResponse {
+            ServiceState::Failed(msg) => Ok(GraphStatusResponse {
                 enabled: true,
                 status: "failed".to_string(),
-                error: Some(error.clone()),
+                error: Some(msg),
+                stats: None,
+                loaded_at: None,
+            }),
+            _ => Ok(GraphStatusResponse {
+                enabled: true,
+                status: "not_loaded".to_string(),
+                error: None,
                 stats: None,
                 loaded_at: None,
             }),
@@ -253,24 +257,8 @@ pub async fn graph_status(state: &AppState) -> Result<GraphStatusResponse> {
 pub async fn graph_stats(state: &AppState) -> Result<GraphStatsResponse> {
     use std::collections::HashMap;
 
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     let graph = &loaded.graph;
 
@@ -331,24 +319,8 @@ pub async fn graph_stats(state: &AppState) -> Result<GraphStatsResponse> {
 /// Returns error if graph is not loaded.
 #[cfg(feature = "graph")]
 pub async fn graph_validate(state: &AppState) -> Result<GraphValidateResponse> {
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     let graph = &loaded.graph;
 
@@ -412,24 +384,8 @@ pub async fn graph_validate(state: &AppState) -> Result<GraphValidateResponse> {
 /// Returns error if graph is not loaded or node not found.
 #[cfg(feature = "graph")]
 pub async fn get_node(state: &AppState, node_id: &str) -> Result<NodeInfo> {
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     let node_idx = loaded.node_index.get(node_id).ok_or_else(|| {
         crate::error::Error::not_found_msg(format!("Node not found: {}", node_id))
@@ -497,24 +453,8 @@ pub async fn get_node_edges(
     node_id: &str,
     direction: &str,
 ) -> Result<NodeEdgesResponse> {
-    let graph_state = state.graph.read().unwrap();
-    let loaded = match &*graph_state {
-        GraphState::Loaded(loaded) => loaded,
-        GraphState::NotLoaded => {
-            return Err(crate::error::Error::not_found_msg("Graph not loaded yet"))
-        }
-        GraphState::Loading => {
-            return Err(crate::error::Error::not_found_msg(
-                "Graph is currently loading",
-            ))
-        }
-        GraphState::Failed(error) => {
-            return Err(crate::error::Error::config(format!(
-                "Graph failed to load: {}",
-                error
-            )))
-        }
-    };
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
 
     let node_idx = loaded.node_index.get(node_id).ok_or_else(|| {
         crate::error::Error::not_found_msg(format!("Node not found: {}", node_id))
@@ -685,7 +625,7 @@ mod tests {
             ConceptNode, Edge, EdgeOrigin, GraphData, Relationship, SourceNode,
         };
         use crate::graph::LoadedGraph;
-        use crate::state::GraphState;
+        use fabryk::core::ServiceState;
         use std::sync::Arc;
 
         /// Helper to create AppState with a test graph
@@ -773,11 +713,12 @@ mod tests {
             let config = Config::load().unwrap();
             let state = Arc::new(AppState::new(config).await.unwrap());
 
-            // Replace graph with loaded test graph
+            // Store graph data and mark service ready
             {
-                let mut graph_guard = state.graph.write().unwrap();
-                *graph_guard = GraphState::Loaded(loaded);
+                let mut graph_guard = state.graph_data.write().unwrap();
+                *graph_guard = Some(loaded);
             }
+            state.graph_service.set_state(ServiceState::Ready);
 
             state
         }

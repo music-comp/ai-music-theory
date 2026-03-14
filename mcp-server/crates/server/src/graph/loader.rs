@@ -23,7 +23,7 @@ pub struct GraphStats {
 }
 
 /// Loaded graph with metadata and indices.
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct LoadedGraph {
     pub graph: ConceptGraph,
     pub node_index: HashMap<String, NodeIndex>,
