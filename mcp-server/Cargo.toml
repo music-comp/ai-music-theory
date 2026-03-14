@@ -39,7 +39,8 @@ schemars = "1.2"
 glob = "0.3"
 shellexpand = "3.1"
 pulldown-cmark = "0.9"
-serde_yaml = "0.9"  # For frontmatter parsing
+serde_yaml = "0.9"  # For frontmatter parsing (kept for existing code)
+yaml_serde = "0.10"  # Fabryk-compatible YAML (replaces serde_yaml in future)
 dirs = "5"
 
 # Error handling
@@ -65,6 +66,11 @@ rkyv = { version = "0.7", features = ["validation"] }
 memmap2 = "0.9"
 blake3 = "1.5"
 chrono = { version = "0.4", features = ["serde"] }
+
+# Fabryk framework (umbrella crates pull in sub-crates transitively)
+fabryk = { path = "../../../oxur/ecl/crates/fabryk" }
+fabryk-mcp = { path = "../../../oxur/ecl/crates/fabryk-mcp" }
+fabryk-cli = { path = "../../../oxur/ecl/crates/fabryk-cli" }
 
 [profile.dev]
 opt-level = 0

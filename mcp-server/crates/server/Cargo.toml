@@ -13,9 +13,10 @@ path = "src/main.rs"
 
 [features]
 default = []
-fts = ["dep:tantivy", "dep:regex", "dep:stop-words"]
-graph = ["dep:petgraph", "dep:rkyv", "dep:memmap2", "dep:blake3", "dep:chrono"]
-full = ["fts", "graph"]
+fts = ["dep:tantivy", "dep:regex", "dep:stop-words", "fabryk/fts-tantivy", "fabryk-mcp/fts-tantivy"]
+graph = ["dep:petgraph", "dep:rkyv", "dep:memmap2", "dep:blake3", "dep:chrono", "fabryk/graph-rkyv-cache", "fabryk-mcp/graph-rkyv-cache"]
+vector = ["fabryk/vector-lancedb", "fabryk/vector-fastembed"]
+full = ["fts", "graph", "vector"]
 
 [dependencies]
 rmcp = { workspace = true }
@@ -33,6 +34,7 @@ glob = { workspace = true }
 shellexpand = { workspace = true }
 pulldown-cmark = { workspace = true }
 serde_yaml = { workspace = true }
+yaml_serde = { workspace = true }
 thiserror = { workspace = true }
 dirs = { workspace = true }
 
@@ -42,6 +44,11 @@ clap = { workspace = true }
 # Source management
 strsim = { workspace = true }
 toml_edit = { workspace = true }
+
+# Fabryk framework (umbrella crates re-export sub-crates)
+fabryk = { workspace = true }
+fabryk-mcp = { workspace = true }
+fabryk-cli = { workspace = true }
 
 # Full-text search engine (optional)
 tantivy = { workspace = true, optional = true }
