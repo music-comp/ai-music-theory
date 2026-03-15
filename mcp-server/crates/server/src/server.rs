@@ -1,82 +1,125 @@
-use rmcp::handler::server::tool::ToolRouter;
-use rmcp::handler::server::wrapper::Parameters;
-use rmcp::handler::server::ServerHandler;
-use rmcp::model::{
-    AnnotateAble, CallToolResult, Content, ErrorCode, ErrorData, Implementation,
-    ListResourcesResult, PaginatedRequestParams, RawResource, ReadResourceRequestParams,
-    ReadResourceResult, ResourceContents, ServerCapabilities, ServerInfo,
-};
-use rmcp::service::{RequestContext, RoleServer};
-use rmcp::{tool, tool_handler, tool_router};
-use schemars::JsonSchema;
-use serde::{Deserialize, Serialize};
+//! Music Theory MCP Server — registry-based implementation.
+//!
+//! Replaces the monolithic `#[tool_router]` approach with composable
+//! [`ToolRegistry`] implementations grouped by domain, served by
+//! [`FabrykMcpServer`].
 
+use serde::Deserialize;
+use serde_json::{Value, json};
+
+use fabryk_mcp::{
+    CompositeRegistry, FabrykMcpServer, ResourceFuture, ResourceRegistry, ToolRegistry, ToolResult,
+    model::{
+        AnnotateAble, CallToolResult, Content, ErrorCode, ErrorData, RawResource, Resource,
+        ResourceContents, Tool,
+    },
+};
+
+use crate::config::Config;
 use crate::error::McpErrorContextExt;
 use crate::resources;
 use crate::state::AppState;
 use crate::tools;
 
-/// Music Theory MCP Server implementation.
-#[derive(Clone)]
-pub struct MusicTheoryServer {
-    pub state: AppState,
-    tool_router: ToolRouter<Self>,
+// ============================================================================
+// Helper functions
+// ============================================================================
+
+/// Convert a JSON value to the `Map<String, Value>` that `Tool::new` expects.
+fn json_schema(value: Value) -> serde_json::Map<String, Value> {
+    match value {
+        Value::Object(map) => map,
+        _ => serde_json::Map::new(),
+    }
 }
 
-// Parameter types for tools
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetSourceChapterParams {
-    source_id: String,
-    chapter: String,
-    /// Optional section/page filter (v0.3.0)
-    #[serde(default)]
-    section: Option<String>,
+/// Convenience wrapper to build a `Tool` with an input schema.
+fn make_tool(name: &str, description: &str, schema: Value) -> Tool {
+    Tool::new(name.to_string(), description.to_string(), json_schema(schema))
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetSourcePdfPathParams {
-    source_id: String,
+/// Convenience wrapper to build a `Tool` with no parameters.
+fn make_tool_no_params(name: &str, description: &str) -> Tool {
+    Tool::new(
+        name.to_string(),
+        description.to_string(),
+        json_schema(json!({"type": "object"})),
+    )
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct CheckSourceAvailabilityParams {
-    source_id: String,
+/// Serialize a value to pretty JSON and wrap it in a successful `CallToolResult`.
+fn serialize_response<T: serde::Serialize>(value: &T) -> Result<CallToolResult, ErrorData> {
+    let json = serde_json::to_string_pretty(value).map_err(|e| {
+        ErrorData::new(
+            ErrorCode::INTERNAL_ERROR,
+            format!("Serialization error: {}", e),
+            None,
+        )
+    })?;
+    Ok(CallToolResult::success(vec![Content::text(json)]))
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct ListSourceChaptersParams {
-    source_id: String,
+/// Convert a project error to an MCP `ErrorData` using the `McpErrorContextExt` trait.
+fn to_mcp_error(e: crate::error::Error, context: &str) -> ErrorData {
+    e.to_mcp_error(context)
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct ListConceptsParams {
+// ============================================================================
+// Argument types (deserialized from MCP tool call arguments)
+// ============================================================================
+
+#[derive(Deserialize)]
+struct ListConceptsArgs {
     #[serde(default)]
     category: Option<String>,
     #[serde(default)]
     limit: Option<usize>,
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetConceptParams {
+#[derive(Deserialize)]
+struct GetConceptArgs {
     concept_id: String,
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct SearchConceptsParams {
+#[derive(Deserialize)]
+struct GetGuideArgs {
+    guide_id: String,
+}
+
+#[derive(Deserialize)]
+struct ListSourceChaptersArgs {
+    source_id: String,
+}
+
+#[derive(Deserialize)]
+struct CheckSourceAvailabilityArgs {
+    source_id: String,
+}
+
+#[derive(Deserialize)]
+struct GetSourceChapterArgs {
+    source_id: String,
+    chapter: String,
+    #[serde(default)]
+    section: Option<String>,
+}
+
+#[derive(Deserialize)]
+struct GetSourcePdfPathArgs {
+    source_id: String,
+}
+
+#[derive(Deserialize)]
+struct SearchConceptsArgs {
     query: String,
     #[serde(default = "default_limit")]
     limit: usize,
-    /// Optional query mode override (smart, and, or, minimum_match)
     #[serde(default)]
     query_mode: Option<crate::config::QueryMode>,
-    /// Optional category filter - only return results from this category
     #[serde(default)]
     category: Option<String>,
-    /// Optional source filter - only return results from this source
     #[serde(default)]
     source: Option<String>,
-    /// Optional content type filter (v0.3.0) - only return results of these types
-    /// Valid values: "concept_card", "source_chapter", "unified_concept", "guide"
     #[serde(default)]
     content_types: Option<Vec<String>>,
 }
@@ -85,20 +128,15 @@ fn default_limit() -> usize {
     10
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct SemanticSearchToolParams {
-    /// Natural language search query
+#[derive(Deserialize)]
+struct SemanticSearchArgs {
     query: String,
-    /// Search mode: "vector", "keyword", or "hybrid" (default)
     #[serde(default = "default_hybrid_mode")]
     mode: tools::semantic::SearchMode,
-    /// Optional category filter
     #[serde(default)]
     category: Option<String>,
-    /// Optional source filter
     #[serde(default)]
     source: Option<String>,
-    /// Maximum results (default: 10)
     #[serde(default = "default_limit")]
     limit: usize,
 }
@@ -107,18 +145,13 @@ fn default_hybrid_mode() -> tools::semantic::SearchMode {
     tools::semantic::SearchMode::Hybrid
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetGuideParams {
-    guide_id: String,
-}
-
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetNodeParams {
+#[derive(Deserialize)]
+struct GetNodeArgs {
     node_id: String,
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetNodeEdgesParams {
+#[derive(Deserialize)]
+struct GetNodeEdgesArgs {
     node_id: String,
     #[serde(default = "default_direction")]
     direction: String,
@@ -128,9 +161,8 @@ fn default_direction() -> String {
     "both".to_string()
 }
 
-// Graph query tool parameters
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetRelatedConceptsParams {
+#[derive(Deserialize)]
+struct GetRelatedConceptsArgs {
     concept_id: String,
     #[serde(default)]
     relationship_types: Option<String>,
@@ -144,8 +176,8 @@ fn default_depth_1() -> u32 {
     1
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct FindConceptPathParams {
+#[derive(Deserialize)]
+struct FindConceptPathArgs {
     from_id: String,
     to_id: String,
     #[serde(default = "default_depth_5")]
@@ -156,8 +188,8 @@ fn default_depth_5() -> u32 {
     5
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetPrerequisitesParams {
+#[derive(Deserialize)]
+struct GetPrerequisitesArgs {
     concept_id: String,
     #[serde(default = "default_depth_3")]
     depth: u32,
@@ -167,8 +199,8 @@ fn default_depth_3() -> u32 {
     3
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetConceptNeighborhoodParams {
+#[derive(Deserialize)]
+struct GetConceptNeighborhoodArgs {
     concept_id: String,
     #[serde(default = "default_radius")]
     radius: u32,
@@ -184,8 +216,8 @@ fn default_max_nodes() -> u32 {
     30
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetDependentsParams {
+#[derive(Deserialize)]
+struct GetDependentsArgs {
     concept_id: String,
     #[serde(default = "default_depth_2")]
     depth: u32,
@@ -195,8 +227,8 @@ fn default_depth_2() -> u32 {
     2
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetCentralConceptsParams {
+#[derive(Deserialize)]
+struct GetCentralConceptsArgs {
     #[serde(default)]
     category: Option<String>,
     #[serde(default = "default_limit_10")]
@@ -207,18 +239,18 @@ fn default_limit_10() -> u32 {
     10
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetConceptSourcesParams {
+#[derive(Deserialize)]
+struct GetConceptSourcesArgs {
     concept_id: String,
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetConceptVariantsParams {
+#[derive(Deserialize)]
+struct GetConceptVariantsArgs {
     canonical_id: String,
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct FindBridgeConceptsParams {
+#[derive(Deserialize)]
+struct FindBridgeConceptsArgs {
     category_a: String,
     category_b: String,
     #[serde(default = "default_limit_5")]
@@ -229,522 +261,1116 @@ fn default_limit_5() -> u32 {
     5
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
-pub struct GetSourceCoverageParams {
+#[derive(Deserialize)]
+struct GetSourceCoverageArgs {
     source_id: String,
 }
 
-/// Helper function to create serialization error response.
-fn serialization_error(e: serde_json::Error) -> ErrorData {
-    ErrorData::new(
-        ErrorCode::INTERNAL_ERROR,
-        format!("Serialization error: {}", e),
-        None,
-    )
+// ============================================================================
+// ConceptToolsRegistry (3 tools)
+// ============================================================================
+
+struct ConceptToolsRegistry {
+    config: Config,
 }
 
-#[tool_router]
-impl MusicTheoryServer {
-    /// Create a new server instance.
-    pub fn new(state: AppState) -> Self {
-        let tool_router = Self::tool_router();
-
-        // Log registered tools with structured logging
-        let tools = tool_router.list_all();
-        log::info!(count = tools.len(); "Registered tools");
-        for tool in tools {
-            log::info!(
-                tool = &*tool.name,
-                description = tool.description.as_deref().unwrap_or("");
-                "Tool available"
-            );
-        }
-
-        Self { state, tool_router }
-    }
-
-    #[tool(description = "List all available source materials with metadata")]
-    async fn list_sources(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::sources::list_sources(&self.state.config)
-            .await
-            .map_err(|e| e.to_mcp_error("Error listing sources"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Check availability status of a source (indexed/converted/exists)")]
-    async fn check_source_availability(
-        &self,
-        params: Parameters<CheckSourceAvailabilityParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let response = tools::sources::check_source_availability(&self.state, &params.0.source_id)
-            .await
-            .map_err(|e| e.to_mcp_error("Error checking source availability"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "List all chapters for a source material")]
-    async fn list_source_chapters(
-        &self,
-        params: Parameters<ListSourceChaptersParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let response = tools::sources::list_source_chapters(&self.state, &params.0.source_id)
-            .await
-            .map_err(|e| e.to_mcp_error("Error listing chapters"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Retrieve a specific chapter from a source material")]
-    async fn get_source_chapter(
-        &self,
-        params: Parameters<GetSourceChapterParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let content = tools::sources::get_source_chapter(
-            &self.state.config,
-            &params.0.source_id,
-            &params.0.chapter,
-            params.0.section.as_deref(),
-        )
-        .await
-        .map_err(|e| e.to_mcp_error("Error retrieving chapter"))?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get filesystem path to original PDF/EPUB for a source")]
-    async fn get_source_pdf_path(
-        &self,
-        params: Parameters<GetSourcePdfPathParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let path = tools::sources::get_source_pdf_path(&self.state.config, &params.0.source_id)
-            .map_err(|e| e.to_mcp_error("Error getting PDF path"))?;
-
-        let path_str = path.to_str().ok_or_else(|| {
-            ErrorData::new(ErrorCode::INTERNAL_ERROR, "Invalid UTF-8 in path", None)
-        })?;
-
-        Ok(CallToolResult::success(vec![Content::text(
-            path_str.to_string(),
-        )]))
-    }
-
-    #[tool(description = "List concept cards with optional category filtering")]
-    async fn list_concepts(
-        &self,
-        params: Parameters<ListConceptsParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let filter_params = tools::concepts::ListConceptsParams {
-            category: params.0.category,
-            limit: params.0.limit,
-        };
-
-        let response = tools::concepts::list_concepts(&self.state.config, Some(filter_params))
-            .await
-            .map_err(|e| e.to_mcp_error("Error listing concepts"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Retrieve a specific concept card")]
-    async fn get_concept(
-        &self,
-        params: Parameters<GetConceptParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let content = tools::concepts::get_concept(&self.state.config, &params.0.concept_id)
-            .await
-            .map_err(|e| e.to_mcp_error("Error retrieving concept"))?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "List all distinct concept categories with counts")]
-    async fn list_categories(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::concepts::list_categories(&self.state.config)
-            .await
-            .map_err(|e| e.to_mcp_error("Error listing categories"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Search concept cards with full-text search and relevance ranking")]
-    async fn search_concepts(
-        &self,
-        params: Parameters<SearchConceptsParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let search_params = tools::search::SearchConceptsParams {
-            query: params.0.query,
-            limit: params.0.limit,
-            query_mode: params.0.query_mode,
-            category: params.0.category,
-            source: params.0.source,
-            content_types: params.0.content_types,
-        };
-
-        let response = tools::search::search_concepts(&self.state, search_params)
-            .await
-            .map_err(|e| e.to_mcp_error("Error searching concepts"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Semantic search using vector embeddings, keyword search, or hybrid mode (vector+keyword via reciprocal rank fusion)")]
-    async fn semantic_search(
-        &self,
-        params: Parameters<SemanticSearchToolParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let tool_params = tools::semantic::SemanticSearchParams {
-            query: params.0.query,
-            mode: params.0.mode,
-            category: params.0.category,
-            source: params.0.source,
-            limit: params.0.limit,
-        };
-
-        let response = tools::semantic::semantic_search(&self.state, tool_params)
-            .await
-            .map_err(|e| e.to_mcp_error("Error in semantic search"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "List all available topic guides")]
-    async fn list_guides(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::guides::list_guides(&self.state.config)
-            .await
-            .map_err(|e| e.to_mcp_error("Error listing guides"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Retrieve a specific topic guide")]
-    async fn get_guide(
-        &self,
-        params: Parameters<GetGuideParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let content = tools::guides::get_guide(&self.state.config, &params.0.guide_id)
-            .await
-            .map_err(|e| e.to_mcp_error("Error retrieving guide"))?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get server health and search backend status")]
-    async fn health(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::health::get_health(&self.state)
-            .await
-            .map_err(|e| e.to_mcp_error("Error getting health status"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get concept graph status and basic statistics")]
-    async fn graph_status(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::graph::graph_status(&self.state)
-            .await
-            .map_err(|e| e.to_mcp_error("Error getting graph status"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get detailed concept graph statistics (categories, relationships)")]
-    async fn graph_stats(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::graph::graph_stats(&self.state)
-            .await
-            .map_err(|e| e.to_mcp_error("Error getting graph statistics"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Validate concept graph integrity (orphans, self-loops)")]
-    async fn graph_validate(&self) -> Result<CallToolResult, ErrorData> {
-        let response = tools::graph::graph_validate(&self.state)
-            .await
-            .map_err(|e| e.to_mcp_error("Error validating graph"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get node information by ID with in/out degree counts")]
-    async fn get_node(
-        &self,
-        params: Parameters<GetNodeParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let response = tools::graph::get_node(&self.state, &params.0.node_id)
-            .await
-            .map_err(|e| e.to_mcp_error("Error getting node"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get all edges for a node with optional direction filter")]
-    async fn get_node_edges(
-        &self,
-        params: Parameters<GetNodeEdgesParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let response =
-            tools::graph::get_node_edges(&self.state, &params.0.node_id, &params.0.direction)
-                .await
-                .map_err(|e| e.to_mcp_error("Error getting node edges"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    // Graph query tools
-    #[tool(
-        description = "Find related concepts with optional relationship and direction filtering"
-    )]
-    async fn get_related_concepts(
-        &self,
-        params: Parameters<GetRelatedConceptsParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let tool_params = tools::graph_query::GetRelatedConceptsParams {
-            concept_id: params.0.concept_id,
-            relationship_types: params.0.relationship_types,
-            direction: params.0.direction,
-            depth: params.0.depth,
-        };
-
-        let response = tools::get_related_concepts(&self.state, tool_params)
-            .await
-            .map_err(|e| e.to_mcp_error("Error getting related concepts"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Find shortest path between two concepts in the graph")]
-    async fn find_concept_path(
-        &self,
-        params: Parameters<FindConceptPathParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let tool_params = tools::graph_query::FindConceptPathParams {
-            from_id: params.0.from_id,
-            to_id: params.0.to_id,
-            max_depth: params.0.max_depth,
-        };
-
-        let response = tools::find_concept_path(&self.state, tool_params)
-            .await
-            .map_err(|e| e.to_mcp_error("Error finding concept path"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get prerequisites for a concept in topological learning order")]
-    async fn get_prerequisites(
-        &self,
-        params: Parameters<GetPrerequisitesParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let tool_params = tools::graph_query::GetPrerequisitesParams {
-            concept_id: params.0.concept_id,
-            depth: params.0.depth,
-        };
-
-        let response = tools::get_prerequisites(&self.state, tool_params)
-            .await
-            .map_err(|e| e.to_mcp_error("Error getting prerequisites"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get local neighborhood subgraph around a concept")]
-    async fn get_concept_neighborhood(
-        &self,
-        params: Parameters<GetConceptNeighborhoodParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let tool_params = tools::graph_query::GetConceptNeighborhoodParams {
-            concept_id: params.0.concept_id,
-            radius: params.0.radius,
-            max_nodes: params.0.max_nodes,
-        };
-
-        let response = tools::get_concept_neighborhood(&self.state, tool_params)
-            .await
-            .map_err(|e| e.to_mcp_error("Error getting concept neighborhood"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get concepts that depend on this concept as a prerequisite")]
-    async fn get_dependents(
-        &self,
-        params: Parameters<GetDependentsParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let tool_params = tools::graph_query::GetDependentsParams {
-            concept_id: params.0.concept_id,
-            depth: params.0.depth,
-        };
-
-        let response = tools::get_dependents(&self.state, tool_params)
-            .await
-            .map_err(|e| e.to_mcp_error("Error getting dependents"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get most connected concepts by degree centrality")]
-    async fn get_central_concepts(
-        &self,
-        params: Parameters<GetCentralConceptsParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let tool_params = tools::graph_query::GetCentralConceptsParams {
-            category: params.0.category,
-            limit: params.0.limit,
-        };
-
-        let response = tools::get_central_concepts(&self.state, tool_params)
-            .await
-            .map_err(|e| e.to_mcp_error("Error getting central concepts"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get all sources that introduce or cover a concept")]
-    async fn get_concept_sources(
-        &self,
-        params: Parameters<GetConceptSourcesParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let tool_params = tools::graph_query::GetConceptSourcesParams {
-            concept_id: params.0.concept_id,
-        };
-
-        let response = tools::get_concept_sources(&self.state, tool_params)
-            .await
-            .map_err(|e| e.to_mcp_error("Error getting concept sources"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get all source-specific variants of a canonical concept")]
-    async fn get_concept_variants(
-        &self,
-        params: Parameters<GetConceptVariantsParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let tool_params = tools::graph_query::GetConceptVariantsParams {
-            canonical_id: params.0.canonical_id,
-        };
-
-        let response = tools::get_concept_variants(&self.state, tool_params)
-            .await
-            .map_err(|e| e.to_mcp_error("Error getting concept variants"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Find concepts that bridge two categories by connecting to both")]
-    async fn find_bridge_concepts(
-        &self,
-        params: Parameters<FindBridgeConceptsParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let tool_params = tools::graph_query::FindBridgeConceptsParams {
-            category_a: params.0.category_a,
-            category_b: params.0.category_b,
-            limit: params.0.limit,
-        };
-
-        let response = tools::find_bridge_concepts(&self.state, tool_params)
-            .await
-            .map_err(|e| e.to_mcp_error("Error finding bridge concepts"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
-    }
-
-    #[tool(description = "Get all concepts introduced or covered by a source material")]
-    async fn get_source_coverage(
-        &self,
-        params: Parameters<GetSourceCoverageParams>,
-    ) -> Result<CallToolResult, ErrorData> {
-        let tool_params = tools::graph_query::GetSourceCoverageParams {
-            source_id: params.0.source_id,
-        };
-
-        let response = tools::get_source_coverage(&self.state, tool_params)
-            .await
-            .map_err(|e| e.to_mcp_error("Error getting source coverage"))?;
-
-        let content = serde_json::to_string_pretty(&response).map_err(serialization_error)?;
-
-        Ok(CallToolResult::success(vec![Content::text(content)]))
+impl ConceptToolsRegistry {
+    fn new(config: Config) -> Self {
+        Self { config }
     }
 }
 
-#[tool_handler]
-impl ServerHandler for MusicTheoryServer {
-    fn get_info(&self) -> ServerInfo {
-        ServerInfo {
-            protocol_version: Default::default(),
-            capabilities: ServerCapabilities::builder()
-                .enable_tools()
-                .enable_resources()
-                .build(),
-            server_info: Implementation {
-                name: self.state.config.server.name.clone(),
-                title: None,
-                version: self.state.config.server.version.clone(),
-                icons: None,
-                website_url: None,
-            },
-            instructions: Some(
-                "Music Theory AI Skill - Access comprehensive music theory materials \
-                 including source texts, concept cards, and topic guides."
-                    .to_string(),
+impl ToolRegistry for ConceptToolsRegistry {
+    fn tools(&self) -> Vec<Tool> {
+        vec![
+            make_tool(
+                "list_concepts",
+                "List concept cards with optional category filtering",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "category": {
+                            "type": "string",
+                            "description": "Filter by category"
+                        },
+                        "limit": {
+                            "type": "integer",
+                            "description": "Maximum results"
+                        }
+                    }
+                }),
             ),
-        }
+            make_tool(
+                "get_concept",
+                "Retrieve a specific concept card",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "concept_id": {
+                            "type": "string",
+                            "description": "Concept identifier"
+                        }
+                    },
+                    "required": ["concept_id"]
+                }),
+            ),
+            make_tool_no_params(
+                "list_categories",
+                "List all distinct concept categories with counts",
+            ),
+        ]
     }
 
-    async fn list_resources(
-        &self,
-        _request: Option<PaginatedRequestParams>,
-        _context: RequestContext<RoleServer>,
-    ) -> Result<ListResourcesResult, ErrorData> {
-        let resources = resources::list_resources()
+    fn call(&self, name: &str, args: Value) -> Option<ToolResult> {
+        let config = self.config.clone();
+
+        if name == "list_concepts" {
+            return Some(Box::pin(async move {
+                let args: ListConceptsArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
+                let params = tools::concepts::ListConceptsParams {
+                    category: args.category,
+                    limit: args.limit,
+                };
+                let response = tools::concepts::list_concepts(&config, Some(params))
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error listing concepts"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_concept" {
+            return Some(Box::pin(async move {
+                let args: GetConceptArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
+                let content = tools::concepts::get_concept(&config, &args.concept_id)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error retrieving concept"))?;
+                Ok(CallToolResult::success(vec![Content::text(content)]))
+            }));
+        }
+
+        if name == "list_categories" {
+            return Some(Box::pin(async move {
+                let response = tools::concepts::list_categories(&config)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error listing categories"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        None
+    }
+}
+
+// ============================================================================
+// GuideToolsRegistry (2 tools)
+// ============================================================================
+
+struct GuideToolsRegistry {
+    config: Config,
+}
+
+impl GuideToolsRegistry {
+    fn new(config: Config) -> Self {
+        Self { config }
+    }
+}
+
+impl ToolRegistry for GuideToolsRegistry {
+    fn tools(&self) -> Vec<Tool> {
+        vec![
+            make_tool_no_params("list_guides", "List all available topic guides"),
+            make_tool(
+                "get_guide",
+                "Retrieve a specific topic guide",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "guide_id": {
+                            "type": "string",
+                            "description": "Guide identifier"
+                        }
+                    },
+                    "required": ["guide_id"]
+                }),
+            ),
+        ]
+    }
+
+    fn call(&self, name: &str, args: Value) -> Option<ToolResult> {
+        let config = self.config.clone();
+
+        if name == "list_guides" {
+            return Some(Box::pin(async move {
+                let response = tools::guides::list_guides(&config)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error listing guides"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_guide" {
+            return Some(Box::pin(async move {
+                let args: GetGuideArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
+                let content = tools::guides::get_guide(&config, &args.guide_id)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error retrieving guide"))?;
+                Ok(CallToolResult::success(vec![Content::text(content)]))
+            }));
+        }
+
+        None
+    }
+}
+
+// ============================================================================
+// SourceToolsRegistry (5 tools)
+// ============================================================================
+
+struct SourceToolsRegistry {
+    state: AppState,
+}
+
+impl SourceToolsRegistry {
+    fn new(state: AppState) -> Self {
+        Self { state }
+    }
+}
+
+impl ToolRegistry for SourceToolsRegistry {
+    fn tools(&self) -> Vec<Tool> {
+        vec![
+            make_tool_no_params(
+                "list_sources",
+                "List all available source materials with metadata",
+            ),
+            make_tool(
+                "check_source_availability",
+                "Check availability status of a source (indexed/converted/exists)",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "source_id": {
+                            "type": "string",
+                            "description": "Source identifier"
+                        }
+                    },
+                    "required": ["source_id"]
+                }),
+            ),
+            make_tool(
+                "list_source_chapters",
+                "List all chapters for a source material",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "source_id": {
+                            "type": "string",
+                            "description": "Source identifier"
+                        }
+                    },
+                    "required": ["source_id"]
+                }),
+            ),
+            make_tool(
+                "get_source_chapter",
+                "Retrieve a specific chapter from a source material",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "source_id": {
+                            "type": "string",
+                            "description": "Source identifier"
+                        },
+                        "chapter": {
+                            "type": "string",
+                            "description": "Chapter identifier"
+                        },
+                        "section": {
+                            "type": "string",
+                            "description": "Optional section/page filter (v0.3.0)"
+                        }
+                    },
+                    "required": ["source_id", "chapter"]
+                }),
+            ),
+            make_tool(
+                "get_source_pdf_path",
+                "Get filesystem path to original PDF/EPUB for a source",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "source_id": {
+                            "type": "string",
+                            "description": "Source identifier"
+                        }
+                    },
+                    "required": ["source_id"]
+                }),
+            ),
+        ]
+    }
+
+    fn call(&self, name: &str, args: Value) -> Option<ToolResult> {
+        let state = self.state.clone();
+
+        if name == "list_sources" {
+            return Some(Box::pin(async move {
+                let response = tools::sources::list_sources(&state.config)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error listing sources"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "check_source_availability" {
+            return Some(Box::pin(async move {
+                let args: CheckSourceAvailabilityArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response =
+                    tools::sources::check_source_availability(&state, &args.source_id)
+                        .await
+                        .map_err(|e| {
+                            to_mcp_error(e, "Error checking source availability")
+                        })?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "list_source_chapters" {
+            return Some(Box::pin(async move {
+                let args: ListSourceChaptersArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response =
+                    tools::sources::list_source_chapters(&state, &args.source_id)
+                        .await
+                        .map_err(|e| to_mcp_error(e, "Error listing chapters"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_source_chapter" {
+            return Some(Box::pin(async move {
+                let args: GetSourceChapterArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let content = tools::sources::get_source_chapter(
+                    &state.config,
+                    &args.source_id,
+                    &args.chapter,
+                    args.section.as_deref(),
+                )
+                .await
+                .map_err(|e| to_mcp_error(e, "Error retrieving chapter"))?;
+                Ok(CallToolResult::success(vec![Content::text(content)]))
+            }));
+        }
+
+        if name == "get_source_pdf_path" {
+            return Some(Box::pin(async move {
+                let args: GetSourcePdfPathArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let path =
+                    tools::sources::get_source_pdf_path(&state.config, &args.source_id)
+                        .map_err(|e| to_mcp_error(e, "Error getting PDF path"))?;
+                let path_str = path.to_str().ok_or_else(|| {
+                    ErrorData::new(ErrorCode::INTERNAL_ERROR, "Invalid UTF-8 in path", None)
+                })?;
+                Ok(CallToolResult::success(vec![Content::text(
+                    path_str.to_string(),
+                )]))
+            }));
+        }
+
+        None
+    }
+}
+
+// ============================================================================
+// SearchToolsRegistry (2 tools)
+// ============================================================================
+
+struct SearchToolsRegistry {
+    state: AppState,
+}
+
+impl SearchToolsRegistry {
+    fn new(state: AppState) -> Self {
+        Self { state }
+    }
+}
+
+impl ToolRegistry for SearchToolsRegistry {
+    fn tools(&self) -> Vec<Tool> {
+        vec![
+            make_tool(
+                "search_concepts",
+                "Search concept cards with full-text search and relevance ranking",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "query": {
+                            "type": "string",
+                            "description": "Search query"
+                        },
+                        "limit": {
+                            "type": "integer",
+                            "description": "Maximum results (default: 10)",
+                            "default": 10
+                        },
+                        "query_mode": {
+                            "type": "string",
+                            "description": "Optional query mode override (smart, and, or, minimum_match)",
+                            "enum": ["smart", "and", "or", "minimum_match"]
+                        },
+                        "category": {
+                            "type": "string",
+                            "description": "Optional category filter - only return results from this category"
+                        },
+                        "source": {
+                            "type": "string",
+                            "description": "Optional source filter - only return results from this source"
+                        },
+                        "content_types": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "description": "Optional content type filter (concept_card, source_chapter, unified_concept, guide)"
+                        }
+                    },
+                    "required": ["query"]
+                }),
+            ),
+            make_tool(
+                "semantic_search",
+                "Semantic search using vector embeddings, keyword search, or hybrid mode (vector+keyword via reciprocal rank fusion)",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "query": {
+                            "type": "string",
+                            "description": "Natural language search query"
+                        },
+                        "mode": {
+                            "type": "string",
+                            "description": "Search mode: \"vector\", \"keyword\", or \"hybrid\" (default)",
+                            "enum": ["vector", "keyword", "hybrid"],
+                            "default": "hybrid"
+                        },
+                        "category": {
+                            "type": "string",
+                            "description": "Optional category filter"
+                        },
+                        "source": {
+                            "type": "string",
+                            "description": "Optional source filter"
+                        },
+                        "limit": {
+                            "type": "integer",
+                            "description": "Maximum results (default: 10)",
+                            "default": 10
+                        }
+                    },
+                    "required": ["query"]
+                }),
+            ),
+        ]
+    }
+
+    fn call(&self, name: &str, args: Value) -> Option<ToolResult> {
+        let state = self.state.clone();
+
+        if name == "search_concepts" {
+            return Some(Box::pin(async move {
+                let args: SearchConceptsArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
+                let search_params = tools::search::SearchConceptsParams {
+                    query: args.query,
+                    limit: args.limit,
+                    query_mode: args.query_mode,
+                    category: args.category,
+                    source: args.source,
+                    content_types: args.content_types,
+                };
+                let response = tools::search::search_concepts(&state, search_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error searching concepts"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "semantic_search" {
+            return Some(Box::pin(async move {
+                let args: SemanticSearchArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
+                let tool_params = tools::semantic::SemanticSearchParams {
+                    query: args.query,
+                    mode: args.mode,
+                    category: args.category,
+                    source: args.source,
+                    limit: args.limit,
+                };
+                let response = tools::semantic::semantic_search(&state, tool_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error in semantic search"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        None
+    }
+}
+
+// ============================================================================
+// GraphToolsRegistry (15 tools)
+// ============================================================================
+
+struct GraphToolsRegistry {
+    state: AppState,
+}
+
+impl GraphToolsRegistry {
+    fn new(state: AppState) -> Self {
+        Self { state }
+    }
+}
+
+impl ToolRegistry for GraphToolsRegistry {
+    fn tools(&self) -> Vec<Tool> {
+        vec![
+            // Core graph tools
+            make_tool_no_params(
+                "graph_status",
+                "Get concept graph status and basic statistics",
+            ),
+            make_tool_no_params(
+                "graph_stats",
+                "Get detailed concept graph statistics (categories, relationships)",
+            ),
+            make_tool_no_params(
+                "graph_validate",
+                "Validate concept graph integrity (orphans, self-loops)",
+            ),
+            make_tool(
+                "get_node",
+                "Get node information by ID with in/out degree counts",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "node_id": {
+                            "type": "string",
+                            "description": "Node identifier"
+                        }
+                    },
+                    "required": ["node_id"]
+                }),
+            ),
+            make_tool(
+                "get_node_edges",
+                "Get all edges for a node with optional direction filter",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "node_id": {
+                            "type": "string",
+                            "description": "Node identifier"
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Direction filter: incoming, outgoing, both (default: both)",
+                            "enum": ["incoming", "outgoing", "both"],
+                            "default": "both"
+                        }
+                    },
+                    "required": ["node_id"]
+                }),
+            ),
+            // Graph query tools
+            make_tool(
+                "get_related_concepts",
+                "Find related concepts with optional relationship and direction filtering",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "concept_id": {
+                            "type": "string",
+                            "description": "Concept identifier"
+                        },
+                        "relationship_types": {
+                            "type": "string",
+                            "description": "Optional relationship types filter (comma-separated: \"prerequisite,relates_to\")"
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Direction filter: incoming, outgoing, both (default: both)",
+                            "enum": ["incoming", "outgoing", "both"],
+                            "default": "both"
+                        },
+                        "depth": {
+                            "type": "integer",
+                            "description": "Depth to traverse (default: 1, max: 3)",
+                            "default": 1
+                        }
+                    },
+                    "required": ["concept_id"]
+                }),
+            ),
+            make_tool(
+                "find_concept_path",
+                "Find shortest path between two concepts in the graph",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "from_id": {
+                            "type": "string",
+                            "description": "Starting concept ID"
+                        },
+                        "to_id": {
+                            "type": "string",
+                            "description": "Ending concept ID"
+                        },
+                        "max_depth": {
+                            "type": "integer",
+                            "description": "Maximum depth to search (default: 5, max: 8)",
+                            "default": 5
+                        }
+                    },
+                    "required": ["from_id", "to_id"]
+                }),
+            ),
+            make_tool(
+                "get_prerequisites",
+                "Get prerequisites for a concept in topological learning order",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "concept_id": {
+                            "type": "string",
+                            "description": "Concept identifier"
+                        },
+                        "depth": {
+                            "type": "integer",
+                            "description": "Depth to traverse (default: 3, max: 5)",
+                            "default": 3
+                        }
+                    },
+                    "required": ["concept_id"]
+                }),
+            ),
+            make_tool(
+                "get_concept_neighborhood",
+                "Get local neighborhood subgraph around a concept",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "concept_id": {
+                            "type": "string",
+                            "description": "Concept identifier"
+                        },
+                        "radius": {
+                            "type": "integer",
+                            "description": "Radius in hops (default: 2, max: 3)",
+                            "default": 2
+                        },
+                        "max_nodes": {
+                            "type": "integer",
+                            "description": "Maximum nodes to return (default: 30, max: 50)",
+                            "default": 30
+                        }
+                    },
+                    "required": ["concept_id"]
+                }),
+            ),
+            make_tool(
+                "get_dependents",
+                "Get concepts that depend on this concept as a prerequisite",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "concept_id": {
+                            "type": "string",
+                            "description": "Concept identifier"
+                        },
+                        "depth": {
+                            "type": "integer",
+                            "description": "Depth to traverse (default: 2, max: 4)",
+                            "default": 2
+                        }
+                    },
+                    "required": ["concept_id"]
+                }),
+            ),
+            make_tool(
+                "get_central_concepts",
+                "Get most connected concepts by degree centrality",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "category": {
+                            "type": "string",
+                            "description": "Optional category filter"
+                        },
+                        "limit": {
+                            "type": "integer",
+                            "description": "Limit number of results (default: 10, max: 25)",
+                            "default": 10
+                        }
+                    }
+                }),
+            ),
+            make_tool(
+                "get_concept_sources",
+                "Get all sources that introduce or cover a concept",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "concept_id": {
+                            "type": "string",
+                            "description": "Concept identifier"
+                        }
+                    },
+                    "required": ["concept_id"]
+                }),
+            ),
+            make_tool(
+                "get_concept_variants",
+                "Get all source-specific variants of a canonical concept",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "canonical_id": {
+                            "type": "string",
+                            "description": "Canonical concept identifier"
+                        }
+                    },
+                    "required": ["canonical_id"]
+                }),
+            ),
+            make_tool(
+                "find_bridge_concepts",
+                "Find concepts that bridge two categories by connecting to both",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "category_a": {
+                            "type": "string",
+                            "description": "First category"
+                        },
+                        "category_b": {
+                            "type": "string",
+                            "description": "Second category"
+                        },
+                        "limit": {
+                            "type": "integer",
+                            "description": "Limit number of results (default: 5, max: 15)",
+                            "default": 5
+                        }
+                    },
+                    "required": ["category_a", "category_b"]
+                }),
+            ),
+            make_tool(
+                "get_source_coverage",
+                "Get all concepts introduced or covered by a source material",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "source_id": {
+                            "type": "string",
+                            "description": "Source identifier"
+                        }
+                    },
+                    "required": ["source_id"]
+                }),
+            ),
+        ]
+    }
+
+    fn call(&self, name: &str, args: Value) -> Option<ToolResult> {
+        let state = self.state.clone();
+
+        // --- Core graph tools ---
+
+        if name == "graph_status" {
+            return Some(Box::pin(async move {
+                let response = tools::graph::graph_status(&state)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting graph status"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "graph_stats" {
+            return Some(Box::pin(async move {
+                let response = tools::graph::graph_stats(&state)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting graph statistics"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "graph_validate" {
+            return Some(Box::pin(async move {
+                let response = tools::graph::graph_validate(&state)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error validating graph"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_node" {
+            return Some(Box::pin(async move {
+                let args: GetNodeArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
+                let response = tools::graph::get_node(&state, &args.node_id)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting node"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_node_edges" {
+            return Some(Box::pin(async move {
+                let args: GetNodeEdgesArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
+                let response =
+                    tools::graph::get_node_edges(&state, &args.node_id, &args.direction)
+                        .await
+                        .map_err(|e| to_mcp_error(e, "Error getting node edges"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        // --- Graph query tools ---
+
+        if name == "get_related_concepts" {
+            return Some(Box::pin(async move {
+                let args: GetRelatedConceptsArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let tool_params = tools::graph_query::GetRelatedConceptsParams {
+                    concept_id: args.concept_id,
+                    relationship_types: args.relationship_types,
+                    direction: args.direction,
+                    depth: args.depth,
+                };
+                let response = tools::get_related_concepts(&state, tool_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting related concepts"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "find_concept_path" {
+            return Some(Box::pin(async move {
+                let args: FindConceptPathArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let tool_params = tools::graph_query::FindConceptPathParams {
+                    from_id: args.from_id,
+                    to_id: args.to_id,
+                    max_depth: args.max_depth,
+                };
+                let response = tools::find_concept_path(&state, tool_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error finding concept path"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_prerequisites" {
+            return Some(Box::pin(async move {
+                let args: GetPrerequisitesArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let tool_params = tools::graph_query::GetPrerequisitesParams {
+                    concept_id: args.concept_id,
+                    depth: args.depth,
+                };
+                let response = tools::get_prerequisites(&state, tool_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting prerequisites"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_concept_neighborhood" {
+            return Some(Box::pin(async move {
+                let args: GetConceptNeighborhoodArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let tool_params = tools::graph_query::GetConceptNeighborhoodParams {
+                    concept_id: args.concept_id,
+                    radius: args.radius,
+                    max_nodes: args.max_nodes,
+                };
+                let response = tools::get_concept_neighborhood(&state, tool_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting concept neighborhood"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_dependents" {
+            return Some(Box::pin(async move {
+                let args: GetDependentsArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
+                let tool_params = tools::graph_query::GetDependentsParams {
+                    concept_id: args.concept_id,
+                    depth: args.depth,
+                };
+                let response = tools::get_dependents(&state, tool_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting dependents"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_central_concepts" {
+            return Some(Box::pin(async move {
+                let args: GetCentralConceptsArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let tool_params = tools::graph_query::GetCentralConceptsParams {
+                    category: args.category,
+                    limit: args.limit,
+                };
+                let response = tools::get_central_concepts(&state, tool_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting central concepts"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_concept_sources" {
+            return Some(Box::pin(async move {
+                let args: GetConceptSourcesArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let tool_params = tools::graph_query::GetConceptSourcesParams {
+                    concept_id: args.concept_id,
+                };
+                let response = tools::get_concept_sources(&state, tool_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting concept sources"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_concept_variants" {
+            return Some(Box::pin(async move {
+                let args: GetConceptVariantsArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let tool_params = tools::graph_query::GetConceptVariantsParams {
+                    canonical_id: args.canonical_id,
+                };
+                let response = tools::get_concept_variants(&state, tool_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting concept variants"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "find_bridge_concepts" {
+            return Some(Box::pin(async move {
+                let args: FindBridgeConceptsArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let tool_params = tools::graph_query::FindBridgeConceptsParams {
+                    category_a: args.category_a,
+                    category_b: args.category_b,
+                    limit: args.limit,
+                };
+                let response = tools::find_bridge_concepts(&state, tool_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error finding bridge concepts"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_source_coverage" {
+            return Some(Box::pin(async move {
+                let args: GetSourceCoverageArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let tool_params = tools::graph_query::GetSourceCoverageParams {
+                    source_id: args.source_id,
+                };
+                let response = tools::get_source_coverage(&state, tool_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting source coverage"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        None
+    }
+}
+
+// ============================================================================
+// HealthToolsRegistry (1 tool)
+// ============================================================================
+
+struct HealthToolsRegistry {
+    state: AppState,
+}
+
+impl HealthToolsRegistry {
+    fn new(state: AppState) -> Self {
+        Self { state }
+    }
+}
+
+impl ToolRegistry for HealthToolsRegistry {
+    fn tools(&self) -> Vec<Tool> {
+        vec![make_tool_no_params(
+            "health",
+            "Get server health and search backend status",
+        )]
+    }
+
+    fn call(&self, name: &str, _args: Value) -> Option<ToolResult> {
+        if name != "health" {
+            return None;
+        }
+
+        let state = self.state.clone();
+        Some(Box::pin(async move {
+            let response = tools::health::get_health(&state)
+                .await
+                .map_err(|e| to_mcp_error(e, "Error getting health status"))?;
+            serialize_response(&response)
+        }))
+    }
+}
+
+// ============================================================================
+// MusicTheoryResources (ResourceRegistry implementation)
+// ============================================================================
+
+struct MusicTheoryResources {
+    config: Config,
+}
+
+impl MusicTheoryResources {
+    fn new(config: Config) -> Self {
+        Self { config }
+    }
+}
+
+impl ResourceRegistry for MusicTheoryResources {
+    fn resources(&self) -> Vec<Resource> {
+        resources::list_resources()
             .into_iter()
             .map(|info| {
                 RawResource {
@@ -759,28 +1385,77 @@ impl ServerHandler for MusicTheoryServer {
                 }
                 .no_annotation()
             })
-            .collect();
-
-        Ok(ListResourcesResult::with_all_items(resources))
+            .collect()
     }
 
-    async fn read_resource(
-        &self,
-        request: ReadResourceRequestParams,
-        _context: RequestContext<RoleServer>,
-    ) -> Result<ReadResourceResult, ErrorData> {
-        match resources::get_resource(&self.state.config, &request.uri) {
-            Ok(content) => Ok(ReadResourceResult {
-                contents: vec![ResourceContents::text(content, request.uri)],
-            }),
-            Err(_) => Err(ErrorData::new(
-                ErrorCode::RESOURCE_NOT_FOUND,
-                format!("Resource not found: {}", request.uri),
-                None,
-            )),
+    fn read(&self, uri: &str) -> Option<ResourceFuture> {
+        // Clone values needed for the async block
+        let config = self.config.clone();
+        let uri_owned = uri.to_string();
+
+        // Check if this URI is one we handle before creating the future
+        let known_uris = [
+            "skill://conventions",
+            "skill://scope",
+            "skill://sources",
+            "skill://index",
+        ];
+        if !known_uris.contains(&uri) {
+            return None;
         }
+
+        Some(Box::pin(async move {
+            match resources::get_resource(&config, &uri_owned) {
+                Ok(content) => Ok(vec![ResourceContents::text(content, uri_owned)]),
+                Err(_) => Err(ErrorData::new(
+                    ErrorCode::RESOURCE_NOT_FOUND,
+                    format!("Resource not found: {}", uri_owned),
+                    None,
+                )),
+            }
+        }))
     }
 }
+
+// ============================================================================
+// Server builder
+// ============================================================================
+
+/// Build the Music Theory MCP server from application state.
+///
+/// Composes domain-specific tool registries and resources into a single
+/// [`FabrykMcpServer`] ready for stdio or HTTP transport.
+pub fn build_server(state: AppState) -> FabrykMcpServer {
+    let concept_tools = ConceptToolsRegistry::new(state.config.clone());
+    let guide_tools = GuideToolsRegistry::new(state.config.clone());
+    let source_tools = SourceToolsRegistry::new(state.clone());
+    let search_tools = SearchToolsRegistry::new(state.clone());
+    let graph_tools = GraphToolsRegistry::new(state.clone());
+    let health_tools = HealthToolsRegistry::new(state.clone());
+
+    let registry = CompositeRegistry::new()
+        .add(concept_tools)
+        .add(guide_tools)
+        .add(source_tools)
+        .add(search_tools)
+        .add(graph_tools)
+        .add(health_tools);
+
+    let resources = MusicTheoryResources::new(state.config.clone());
+
+    FabrykMcpServer::new(registry)
+        .with_name(&state.config.server.name)
+        .with_version(&state.config.server.version)
+        .with_description(
+            "Music Theory AI Skill - Access comprehensive music theory materials \
+             including source texts, concept cards, and topic guides.",
+        )
+        .with_resources(resources)
+}
+
+// ============================================================================
+// Tests
+// ============================================================================
 
 #[cfg(test)]
 mod tests {
@@ -793,234 +1468,350 @@ mod tests {
     }
 
     #[test]
-    fn test_serialization_error() {
-        // Test the helper function
-        let json_err = serde_json::from_str::<String>("not valid json").unwrap_err();
-        let error = serialization_error(json_err);
+    fn test_default_direction() {
+        assert_eq!(default_direction(), "both");
+    }
 
-        assert_eq!(error.code, ErrorCode::INTERNAL_ERROR);
-        assert!(error.message.contains("Serialization error"));
+    #[test]
+    fn test_default_depth_values() {
+        assert_eq!(default_depth_1(), 1);
+        assert_eq!(default_depth_2(), 2);
+        assert_eq!(default_depth_3(), 3);
+        assert_eq!(default_depth_5(), 5);
+    }
+
+    #[test]
+    fn test_default_neighborhood_values() {
+        assert_eq!(default_radius(), 2);
+        assert_eq!(default_max_nodes(), 30);
+    }
+
+    #[test]
+    fn test_default_limit_values() {
+        assert_eq!(default_limit_5(), 5);
+        assert_eq!(default_limit_10(), 10);
+    }
+
+    #[test]
+    fn test_serialize_response() {
+        let data = serde_json::json!({"key": "value"});
+        let result = serialize_response(&data);
+        assert!(result.is_ok());
+        let call_result = result.unwrap();
+        assert_eq!(call_result.is_error, Some(false));
+    }
+
+    #[test]
+    fn test_json_schema_with_object() {
+        let schema = json!({"type": "object", "properties": {}});
+        let map = json_schema(schema);
+        assert!(map.contains_key("type"));
+    }
+
+    #[test]
+    fn test_json_schema_with_non_object() {
+        let schema = json!("not an object");
+        let map = json_schema(schema);
+        assert!(map.is_empty());
+    }
+
+    #[test]
+    fn test_make_tool() {
+        let tool = make_tool(
+            "test_tool",
+            "A test tool",
+            json!({"type": "object"}),
+        );
+        assert_eq!(tool.name, "test_tool");
+        assert_eq!(tool.description.as_deref(), Some("A test tool"));
+    }
+
+    #[test]
+    fn test_make_tool_no_params() {
+        let tool = make_tool_no_params("test_tool", "A test tool");
+        assert_eq!(tool.name, "test_tool");
+    }
+
+    // --- Registry tool counts ---
+
+    #[test]
+    fn test_concept_tools_registry_tool_count() {
+        let config = Config::load().unwrap();
+        let registry = ConceptToolsRegistry::new(config);
+        assert_eq!(registry.tools().len(), 3);
+    }
+
+    #[test]
+    fn test_guide_tools_registry_tool_count() {
+        let config = Config::load().unwrap();
+        let registry = GuideToolsRegistry::new(config);
+        assert_eq!(registry.tools().len(), 2);
     }
 
     #[tokio::test]
-    async fn test_new_server() {
+    async fn test_source_tools_registry_tool_count() {
+        let config = Config::load().unwrap();
+        let state = AppState::new(config).await.unwrap();
+        let registry = SourceToolsRegistry::new(state);
+        assert_eq!(registry.tools().len(), 5);
+    }
+
+    #[tokio::test]
+    async fn test_search_tools_registry_tool_count() {
+        let config = Config::load().unwrap();
+        let state = AppState::new(config).await.unwrap();
+        let registry = SearchToolsRegistry::new(state);
+        assert_eq!(registry.tools().len(), 2);
+    }
+
+    #[tokio::test]
+    async fn test_graph_tools_registry_tool_count() {
+        let config = Config::load().unwrap();
+        let state = AppState::new(config).await.unwrap();
+        let registry = GraphToolsRegistry::new(state);
+        assert_eq!(registry.tools().len(), 15);
+    }
+
+    #[tokio::test]
+    async fn test_health_tools_registry_tool_count() {
+        let config = Config::load().unwrap();
+        let state = AppState::new(config).await.unwrap();
+        let registry = HealthToolsRegistry::new(state);
+        assert_eq!(registry.tools().len(), 1);
+    }
+
+    // --- Build server ---
+
+    #[tokio::test]
+    async fn test_build_server() {
         let config = Config::load().unwrap();
         let state = AppState::new(config.clone()).await.unwrap();
-        let server = MusicTheoryServer::new(state.clone());
+        let server = build_server(state);
 
-        assert_eq!(server.state.config.server.name, config.server.name);
-        assert_eq!(server.state.config.server.version, config.server.version);
+        assert_eq!(server.config().name, config.server.name);
+        assert_eq!(server.config().version, config.server.version);
+        assert!(server
+            .config()
+            .description
+            .as_ref()
+            .unwrap()
+            .contains("Music Theory AI Skill"));
     }
 
     #[tokio::test]
-    async fn test_get_info() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config.clone()).await.unwrap();
-        let server = MusicTheoryServer::new(state.clone());
-
-        let info = server.get_info();
-
-        assert_eq!(info.server_info.name, config.server.name);
-        assert_eq!(info.server_info.version, config.server.version);
-        assert!(info.instructions.is_some());
-        assert!(info.instructions.unwrap().contains("Music Theory AI Skill"));
-        assert!(info.capabilities.tools.is_some());
-        assert!(info.capabilities.resources.is_some());
-    }
-
-    #[tokio::test]
-    async fn test_list_sources() {
+    async fn test_build_server_total_tool_count() {
         let config = Config::load().unwrap();
         let state = AppState::new(config).await.unwrap();
-        let server = MusicTheoryServer::new(state);
+        let server = build_server(state);
 
-        let result = server.list_sources().await;
-
-        // Should return a result (success or error is OK, we just test it doesn't panic)
-        assert!(result.is_ok() || result.is_err());
+        // 3 concept + 2 guide + 5 source + 2 search + 15 graph + 1 health = 28
+        assert_eq!(server.registry().tool_count(), 28);
     }
 
     #[tokio::test]
-    async fn test_get_source_chapter() {
+    async fn test_build_server_has_all_tools() {
         let config = Config::load().unwrap();
         let state = AppState::new(config).await.unwrap();
-        let server = MusicTheoryServer::new(state);
+        let server = build_server(state);
+        let registry = server.registry();
 
-        let params = Parameters(GetSourceChapterParams {
-            source_id: "nonexistent-source".to_string(),
-            chapter: "chapter-1".to_string(),
-            section: None,
-        });
+        let expected_tools = [
+            "list_concepts",
+            "get_concept",
+            "list_categories",
+            "list_guides",
+            "get_guide",
+            "list_sources",
+            "check_source_availability",
+            "list_source_chapters",
+            "get_source_chapter",
+            "get_source_pdf_path",
+            "search_concepts",
+            "semantic_search",
+            "health",
+            "graph_status",
+            "graph_stats",
+            "graph_validate",
+            "get_node",
+            "get_node_edges",
+            "get_related_concepts",
+            "find_concept_path",
+            "get_prerequisites",
+            "get_concept_neighborhood",
+            "get_dependents",
+            "get_central_concepts",
+            "get_concept_sources",
+            "get_concept_variants",
+            "find_bridge_concepts",
+            "get_source_coverage",
+        ];
 
-        let result = server.get_source_chapter(params).await;
+        for tool_name in &expected_tools {
+            assert!(
+                registry.has_tool(tool_name),
+                "Missing tool: {}",
+                tool_name
+            );
+        }
+    }
 
-        // Should return a result (error expected for nonexistent source, but we test the code path)
-        assert!(result.is_ok() || result.is_err());
+    // --- Argument deserialization ---
+
+    #[test]
+    fn test_list_concepts_args_deserialization() {
+        let json = r#"{"category":"harmony","limit":10}"#;
+        let args: ListConceptsArgs = serde_json::from_str(json).unwrap();
+        assert_eq!(args.category, Some("harmony".to_string()));
+        assert_eq!(args.limit, Some(10));
+    }
+
+    #[test]
+    fn test_list_concepts_args_defaults() {
+        let json = r#"{}"#;
+        let args: ListConceptsArgs = serde_json::from_str(json).unwrap();
+        assert!(args.category.is_none());
+        assert!(args.limit.is_none());
+    }
+
+    #[test]
+    fn test_search_concepts_args_deserialization() {
+        let json = r#"{"query":"harmony"}"#;
+        let args: SearchConceptsArgs = serde_json::from_str(json).unwrap();
+        assert_eq!(args.query, "harmony");
+        assert_eq!(args.limit, 10); // default
+    }
+
+    #[test]
+    fn test_search_concepts_args_with_limit() {
+        let json = r#"{"query":"chord","limit":5}"#;
+        let args: SearchConceptsArgs = serde_json::from_str(json).unwrap();
+        assert_eq!(args.query, "chord");
+        assert_eq!(args.limit, 5);
+    }
+
+    #[test]
+    fn test_get_source_chapter_args_deserialization() {
+        let json = r#"{"source_id":"test","chapter":"ch1"}"#;
+        let args: GetSourceChapterArgs = serde_json::from_str(json).unwrap();
+        assert_eq!(args.source_id, "test");
+        assert_eq!(args.chapter, "ch1");
+        assert!(args.section.is_none());
+    }
+
+    #[test]
+    fn test_get_source_chapter_args_with_section() {
+        let json = r#"{"source_id":"test","chapter":"ch1","section":"pp. 23-28"}"#;
+        let args: GetSourceChapterArgs = serde_json::from_str(json).unwrap();
+        assert_eq!(args.section, Some("pp. 23-28".to_string()));
+    }
+
+    #[test]
+    fn test_get_related_concepts_args_defaults() {
+        let json = r#"{"concept_id":"test"}"#;
+        let args: GetRelatedConceptsArgs = serde_json::from_str(json).unwrap();
+        assert_eq!(args.concept_id, "test");
+        assert_eq!(args.direction, "both");
+        assert_eq!(args.depth, 1);
+        assert!(args.relationship_types.is_none());
+    }
+
+    #[test]
+    fn test_find_concept_path_args_defaults() {
+        let json = r#"{"from_id":"a","to_id":"b"}"#;
+        let args: FindConceptPathArgs = serde_json::from_str(json).unwrap();
+        assert_eq!(args.from_id, "a");
+        assert_eq!(args.to_id, "b");
+        assert_eq!(args.max_depth, 5);
+    }
+
+    #[test]
+    fn test_get_concept_neighborhood_args_defaults() {
+        let json = r#"{"concept_id":"test"}"#;
+        let args: GetConceptNeighborhoodArgs = serde_json::from_str(json).unwrap();
+        assert_eq!(args.concept_id, "test");
+        assert_eq!(args.radius, 2);
+        assert_eq!(args.max_nodes, 30);
+    }
+
+    #[test]
+    fn test_find_bridge_concepts_args_defaults() {
+        let json = r#"{"category_a":"harmony","category_b":"rhythm"}"#;
+        let args: FindBridgeConceptsArgs = serde_json::from_str(json).unwrap();
+        assert_eq!(args.category_a, "harmony");
+        assert_eq!(args.category_b, "rhythm");
+        assert_eq!(args.limit, 5);
+    }
+
+    #[test]
+    fn test_semantic_search_args_defaults() {
+        let json = r#"{"query":"test"}"#;
+        let args: SemanticSearchArgs = serde_json::from_str(json).unwrap();
+        assert_eq!(args.query, "test");
+        assert_eq!(args.mode, tools::semantic::SearchMode::Hybrid);
+        assert_eq!(args.limit, 10);
+        assert!(args.category.is_none());
+        assert!(args.source.is_none());
+    }
+
+    // --- Resource registry ---
+
+    #[test]
+    fn test_music_theory_resources_list() {
+        let config = Config::load().unwrap();
+        let resources = MusicTheoryResources::new(config);
+        let list = resources.resources();
+        assert_eq!(list.len(), 4);
+    }
+
+    #[test]
+    fn test_music_theory_resources_read_known() {
+        let config = Config::load().unwrap();
+        let resources = MusicTheoryResources::new(config);
+        assert!(resources.read("skill://conventions").is_some());
+        assert!(resources.read("skill://scope").is_some());
+        assert!(resources.read("skill://sources").is_some());
+        assert!(resources.read("skill://index").is_some());
+    }
+
+    #[test]
+    fn test_music_theory_resources_read_unknown() {
+        let config = Config::load().unwrap();
+        let resources = MusicTheoryResources::new(config);
+        assert!(resources.read("skill://nonexistent").is_none());
+    }
+
+    // --- Tool call dispatch ---
+
+    #[test]
+    fn test_concept_registry_unknown_tool_returns_none() {
+        let config = Config::load().unwrap();
+        let registry = ConceptToolsRegistry::new(config);
+        assert!(registry.call("nonexistent", json!({})).is_none());
+    }
+
+    #[test]
+    fn test_guide_registry_unknown_tool_returns_none() {
+        let config = Config::load().unwrap();
+        let registry = GuideToolsRegistry::new(config);
+        assert!(registry.call("nonexistent", json!({})).is_none());
     }
 
     #[tokio::test]
-    async fn test_get_source_pdf_path() {
+    async fn test_health_registry_unknown_tool_returns_none() {
         let config = Config::load().unwrap();
         let state = AppState::new(config).await.unwrap();
-        let server = MusicTheoryServer::new(state);
-
-        let params = Parameters(GetSourcePdfPathParams {
-            source_id: "nonexistent-source".to_string(),
-        });
-
-        let result = server.get_source_pdf_path(params).await;
-
-        // Should return a result (testing code path, not data availability)
-        assert!(result.is_ok() || result.is_err());
+        let registry = HealthToolsRegistry::new(state);
+        assert!(registry.call("nonexistent", json!({})).is_none());
     }
 
-    #[tokio::test]
-    async fn test_list_concepts() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config).await.unwrap();
-        let server = MusicTheoryServer::new(state);
+    // --- Resource content tests (directly via resources module) ---
 
-        let params = Parameters(ListConceptsParams {
-            category: None,
-            limit: None,
-        });
-
-        let result = server.list_concepts(params).await;
-
-        // Should return a result (testing code path)
-        assert!(result.is_ok() || result.is_err());
-    }
-
-    #[tokio::test]
-    async fn test_list_concepts_with_category() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config).await.unwrap();
-        let server = MusicTheoryServer::new(state);
-
-        let params = Parameters(ListConceptsParams {
-            category: Some("harmony".to_string()),
-            limit: None,
-        });
-
-        let result = server.list_concepts(params).await;
-
-        // Should return a result
-        assert!(result.is_ok() || result.is_err());
-    }
-
-    #[tokio::test]
-    async fn test_list_concepts_with_limit() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config).await.unwrap();
-        let server = MusicTheoryServer::new(state);
-
-        let params = Parameters(ListConceptsParams {
-            category: None,
-            limit: Some(5),
-        });
-
-        let result = server.list_concepts(params).await;
-
-        // Should return a result
-        assert!(result.is_ok() || result.is_err());
-    }
-
-    #[tokio::test]
-    async fn test_get_concept() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config).await.unwrap();
-        let server = MusicTheoryServer::new(state);
-
-        let params = Parameters(GetConceptParams {
-            concept_id: "nonexistent-concept".to_string(),
-        });
-
-        let result = server.get_concept(params).await;
-
-        // Should return a result (testing code path)
-        assert!(result.is_ok() || result.is_err());
-    }
-
-    #[tokio::test]
-    async fn test_search_concepts() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config).await.unwrap();
-        let server = MusicTheoryServer::new(state);
-
-        let params = Parameters(SearchConceptsParams {
-            query: "harmony".to_string(),
-            limit: 10,
-            query_mode: None,
-            category: None,
-            source: None,
-            content_types: None,
-        });
-
-        let result = server.search_concepts(params).await;
-
-        // Should return a result
-        assert!(result.is_ok() || result.is_err());
-    }
-
-    #[tokio::test]
-    async fn test_search_concepts_with_limit() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config).await.unwrap();
-        let server = MusicTheoryServer::new(state);
-
-        let params = Parameters(SearchConceptsParams {
-            query: "chord".to_string(),
-            limit: 5,
-            query_mode: None,
-            category: None,
-            source: None,
-            content_types: None,
-        });
-
-        let result = server.search_concepts(params).await;
-
-        // Should return a result
-        assert!(result.is_ok() || result.is_err());
-    }
-
-    #[tokio::test]
-    async fn test_list_guides() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config).await.unwrap();
-        let server = MusicTheoryServer::new(state);
-
-        let result = server.list_guides().await;
-
-        // Should return a result
-        assert!(result.is_ok() || result.is_err());
-    }
-
-    #[tokio::test]
-    async fn test_get_guide() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config).await.unwrap();
-        let server = MusicTheoryServer::new(state);
-
-        let params = Parameters(GetGuideParams {
-            guide_id: "nonexistent-guide".to_string(),
-        });
-
-        let result = server.get_guide(params).await;
-
-        // Should return a result (testing code path)
-        assert!(result.is_ok() || result.is_err());
-    }
-
-    #[tokio::test]
-    async fn test_list_resources_directly() {
-        // Test the resources module directly, avoiding MCP framework types
+    #[test]
+    fn test_list_resources_directly() {
         let resources = resources::list_resources();
-
         assert!(!resources.is_empty());
-        // Should have 4 resources (conventions, scope, sources, index)
         assert_eq!(resources.len(), 4);
 
-        // Verify resource structure
         let first_resource = &resources[0];
         assert!(first_resource.uri.starts_with("skill://"));
         assert!(!first_resource.name.is_empty());
@@ -1031,9 +1822,7 @@ mod tests {
     #[test]
     fn test_read_resource_conventions() {
         let config = Config::load().unwrap();
-
         let result = resources::get_resource(&config, "skill://conventions");
-
         assert!(result.is_ok());
         let content = result.unwrap();
         assert!(!content.is_empty());
@@ -1043,9 +1832,7 @@ mod tests {
     #[test]
     fn test_read_resource_scope() {
         let config = Config::load().unwrap();
-
         let result = resources::get_resource(&config, "skill://scope");
-
         assert!(result.is_ok());
         let content = result.unwrap();
         assert!(!content.is_empty());
@@ -1054,9 +1841,7 @@ mod tests {
     #[test]
     fn test_read_resource_sources() {
         let config = Config::load().unwrap();
-
         let result = resources::get_resource(&config, "skill://sources");
-
         assert!(result.is_ok());
         let content = result.unwrap();
         assert!(!content.is_empty());
@@ -1065,9 +1850,7 @@ mod tests {
     #[test]
     fn test_read_resource_index() {
         let config = Config::load().unwrap();
-
         let result = resources::get_resource(&config, "skill://index");
-
         assert!(result.is_ok());
         let content = result.unwrap();
         assert!(!content.is_empty());
@@ -1076,72 +1859,9 @@ mod tests {
     #[test]
     fn test_read_resource_not_found() {
         let config = Config::load().unwrap();
-
         let result = resources::get_resource(&config, "skill://nonexistent");
-
         assert!(result.is_err());
         let error = result.unwrap_err();
         assert!(error.is_not_found());
-    }
-
-    #[test]
-    fn test_parameter_types_serialization() {
-        // Test that parameter types can be serialized/deserialized
-        let get_source_params = GetSourceChapterParams {
-            source_id: "test".to_string(),
-            chapter: "ch1".to_string(),
-            section: None,
-        };
-        let json = serde_json::to_string(&get_source_params).unwrap();
-        assert!(json.contains("test"));
-        assert!(json.contains("ch1"));
-
-        let list_params = ListConceptsParams {
-            category: Some("harmony".to_string()),
-            limit: Some(10),
-        };
-        let json = serde_json::to_string(&list_params).unwrap();
-        assert!(json.contains("harmony"));
-        assert!(json.contains("10"));
-
-        let search_params = SearchConceptsParams {
-            query: "test".to_string(),
-            limit: 5,
-            query_mode: None,
-            category: None,
-            source: None,
-            content_types: None,
-        };
-        let json = serde_json::to_string(&search_params).unwrap();
-        assert!(json.contains("test"));
-        assert!(json.contains("5"));
-    }
-
-    #[test]
-    fn test_parameter_types_deserialization() {
-        // Test that parameter types can be deserialized from JSON
-        let json = r#"{"source_id":"test","chapter":"ch1"}"#;
-        let params: GetSourceChapterParams = serde_json::from_str(json).unwrap();
-        assert_eq!(params.source_id, "test");
-        assert_eq!(params.chapter, "ch1");
-
-        let json = r#"{"category":"harmony","limit":10}"#;
-        let params: ListConceptsParams = serde_json::from_str(json).unwrap();
-        assert_eq!(params.category, Some("harmony".to_string()));
-        assert_eq!(params.limit, Some(10));
-
-        let json = r#"{"query":"test","limit":5}"#;
-        let params: SearchConceptsParams = serde_json::from_str(json).unwrap();
-        assert_eq!(params.query, "test");
-        assert_eq!(params.limit, 5);
-    }
-
-    #[test]
-    fn test_search_params_default_limit() {
-        // Test that search params uses default limit when not specified
-        let json = r#"{"query":"test"}"#;
-        let params: SearchConceptsParams = serde_json::from_str(json).unwrap();
-        assert_eq!(params.query, "test");
-        assert_eq!(params.limit, 10); // Should use default
     }
 }

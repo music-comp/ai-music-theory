@@ -15,7 +15,7 @@ description = "Music Theory AI Skill - MCP server for accessing music theory edu
 
 [workspace.dependencies]
 # MCP SDK
-rmcp = { version = "0.14", features = ["server", "transport-io"] }
+rmcp = { version = "1", features = ["server", "transport-io"] }
 
 # Async runtime
 tokio = { version = "1", features = ["full", "fs", "sync"] }

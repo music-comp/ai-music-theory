@@ -3,7 +3,7 @@
 //! Re-exports `fabryk::core::Error` and `fabryk::core::Result` as the primary
 //! error types. Adds MCP-specific error mapping via `McpErrorContextExt`.
 
-use rmcp::model::{ErrorCode, ErrorData};
+use fabryk_mcp::model::{ErrorCode, ErrorData};
 
 // Re-export fabryk error types as crate-level error types.
 pub use fabryk::core::Error;

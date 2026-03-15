@@ -2394,7 +2394,7 @@ dependencies = [
  "async-trait",
  "fabryk-core",
  "log",
- "rmcp 1.2.0",
+ "rmcp",
  "schemars 1.2.0",
  "serde",
  "serde_json",
@@ -4733,7 +4733,7 @@ dependencies = [
  "pulldown-cmark 0.9.6",
  "regex",
  "rkyv 0.7.46",
- "rmcp 0.14.0",
+ "rmcp",
  "schemars 1.2.0",
  "serde",
  "serde_json",
@@ -6022,28 +6022,6 @@ dependencies = [
 
 [[package]]
 name = "rmcp"
-version = "0.14.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0a621b37a548ff6ab6292d57841eb25785a7f146d89391a19c9f199414bd13da"
-dependencies = [
- "async-trait",
- "base64 0.22.1",
- "chrono",
- "futures",
- "pastey 0.2.1",
- "pin-project-lite",
- "rmcp-macros 0.14.0",
- "schemars 1.2.0",
- "serde",
- "serde_json",
- "thiserror 2.0.18",
- "tokio",
- "tokio-util",
- "tracing",
-]
-
-[[package]]
-name = "rmcp"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ba6b9d2f0efe2258b23767f1f9e0054cfbcac9c2d6f81a031214143096d7864f"
@@ -6054,7 +6032,7 @@ dependencies = [
  "futures",
  "pastey 0.2.1",
  "pin-project-lite",
- "rmcp-macros 1.2.0",
+ "rmcp-macros",
  "schemars 1.2.0",
  "serde",
  "serde_json",
@@ -6062,19 +6040,6 @@ dependencies = [
  "tokio",
  "tokio-util",
  "tracing",
-]
-
-[[package]]
-name = "rmcp-macros"
-version = "0.14.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6b79ed92303f9262db79575aa8c3652581668e9d136be6fd0b9ededa78954c95"
-dependencies = [
- "darling 0.23.0",
- "proc-macro2",
- "quote",
- "serde_json",
- "syn 2.0.114",
 ]
 
 [[package]]

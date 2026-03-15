@@ -2,7 +2,6 @@
 //!
 //! Provides serve/index/status subcommands using clap.
 
-use std::io::Write;
 
 #[cfg(any(feature = "fts", feature = "graph", feature = "vector"))]
 use std::sync::Arc;
@@ -11,7 +10,7 @@ use clap::{Parser, Subcommand};
 
 use crate::config::Config;
 use crate::error::Result;
-use crate::server::MusicTheoryServer;
+use crate::server::build_server;
 use crate::sources::cli::SourcesCommands;
 use crate::state::AppState;
 
@@ -223,7 +222,6 @@ fn apply_log_level_override(
 /// * `log_level_override` - Optional log level to override config
 /// * `test_mode` - If true, runs in test mode without MCP protocol
 async fn run_server(log_level_override: Option<String>, test_mode: bool) -> Result<()> {
-    use rmcp::{transport::stdio, ServiceExt};
 
     // Load configuration
     let config = Config::load()?;
@@ -297,79 +295,37 @@ async fn run_server(log_level_override: Option<String>, test_mode: bool) -> Resu
     log::info!(transport = "stdio"; "Starting MCP server");
     log::info!("Waiting for MCP client initialization handshake...");
 
-    let service = MusicTheoryServer::new(state)
-        .serve(stdio())
-        .await
-        .map_err(|e| {
-            // Provide helpful error message for common failure cases
-            let error_str = format!("{:?}", e);
+    build_server(state).serve_stdio().await.map_err(|e| {
+        let error_str = format!("{:?}", e);
 
-            if error_str.contains("ConnectionClosed") || error_str.contains("initialized") {
-                eprintln!("\n❌ MCP Protocol Error: Failed to complete initialization handshake\n");
-                eprintln!("This server uses the Model Context Protocol (MCP) and expects JSON-RPC");
-                eprintln!("messages on stdin. It cannot be run interactively in a terminal.\n");
-                eprintln!("Usage:");
-                eprintln!("  • Run through an MCP client (e.g., Claude Desktop)");
-                eprintln!(
-                    "  • Use the MCP Inspector for testing: npx @modelcontextprotocol/inspector"
-                );
-                eprintln!(
-                    "  • Use --test flag to test signal handling: music-theory-mcp serve --test"
-                );
-                eprintln!("  • See: https://modelcontextprotocol.io/docs/tools/inspector\n");
-                eprintln!("Original error: {}\n", error_str);
+        if error_str.contains("ConnectionClosed") || error_str.contains("initialized") {
+            eprintln!("\n❌ MCP Protocol Error: Failed to complete initialization handshake\n");
+            eprintln!("This server uses the Model Context Protocol (MCP) and expects JSON-RPC");
+            eprintln!("messages on stdin. It cannot be run interactively in a terminal.\n");
+            eprintln!("Usage:");
+            eprintln!("  • Run through an MCP client (e.g., Claude Desktop)");
+            eprintln!(
+                "  • Use the MCP Inspector for testing: npx @modelcontextprotocol/inspector"
+            );
+            eprintln!(
+                "  • Use --test flag to test signal handling: music-theory-mcp serve --test"
+            );
+            eprintln!("  • See: https://modelcontextprotocol.io/docs/tools/inspector\n");
+            eprintln!("Original error: {}\n", error_str);
 
-                log::error!(
-                    "MCP initialization failed (likely invalid protocol input): {}",
-                    error_str
-                );
-            } else {
-                log::error!("Failed to start MCP server: {}", error_str);
-            }
-
-            crate::error::Error::io(std::io::Error::other(format!(
-                "MCP server initialization failed: {}",
+            log::error!(
+                "MCP initialization failed (likely invalid protocol input): {}",
                 error_str
-            )))
-        })?;
+            );
+        } else {
+            log::error!("Failed to start MCP server: {}", error_str);
+        }
 
-    // Set up graceful shutdown handler for Ctrl+C
-    let cancel_token = service.cancellation_token();
-    tokio::spawn(async move {
-        match tokio::signal::ctrl_c().await {
-            Ok(()) => {
-                log::info!("Received shutdown signal (Ctrl+C), shutting down gracefully...");
-                // Force flush to ensure message is written before cancellation
-                let _ = std::io::stderr().flush();
-                // Small delay to allow log message to be processed
-                tokio::time::sleep(tokio::time::Duration::from_millis(50)).await;
-                cancel_token.cancel();
-            }
-            Err(err) => {
-                log::error!("Failed to listen for shutdown signal: {}", err);
-            }
-        }
-    });
-
-    // Wait for server to finish (either naturally or due to Ctrl+C)
-    match service.waiting().await {
-        Ok(reason) => {
-            log::info!("Server stopped: {:?}", reason);
-            // Force flush to ensure message is written before exit
-            let _ = std::io::stderr().flush();
-            // Small delay to allow log message to be processed
-            tokio::time::sleep(tokio::time::Duration::from_millis(50)).await;
-        }
-        Err(e) => {
-            log::error!("Server task join error: {:?}", e);
-            let _ = std::io::stderr().flush();
-            tokio::time::sleep(tokio::time::Duration::from_millis(50)).await;
-            return Err(crate::error::Error::io(std::io::Error::other(format!(
-                "Server task join error: {:?}",
-                e
-            ))));
-        }
-    }
+        crate::error::Error::io(std::io::Error::other(format!(
+            "MCP server initialization failed: {}",
+            error_str
+        )))
+    })?;
 
     Ok(())
 }
