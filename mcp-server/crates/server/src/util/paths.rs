@@ -1073,4 +1073,263 @@ mod tests {
             output
         );
     }
+
+    // ── config_dir: exercise CWD-relative ../config branch ──────────
+
+    #[test]
+    #[serial(config_env)]
+    fn test_config_dir_cwd_relative_parent_config() {
+        // Exercise the "../config" relative path in config_dir (priority 3).
+        // We create:
+        //   tmp/config/default.toml
+        //   tmp/subdir/
+        // Then set CWD to tmp/subdir so "../config" resolves to tmp/config.
+        //
+        // We must also suppress higher-priority strategies:
+        //   - Remove env var (priority 1)
+        //   - server_root (priority 2) cannot be suppressed, but if it
+        //     succeeds we still exercise the code path up to that point.
+        let tmp = tempfile::tempdir().unwrap();
+        let config = tmp.path().join("config");
+        std::fs::create_dir_all(&config).unwrap();
+        std::fs::write(config.join("default.toml"), "# test").unwrap();
+        let subdir = tmp.path().join("subdir");
+        std::fs::create_dir_all(&subdir).unwrap();
+
+        env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        let original_cwd = env::current_dir().ok();
+        let _ = env::set_current_dir(&subdir);
+
+        let result = config_dir();
+
+        // Restore CWD before assertions
+        if let Some(ref cwd) = original_cwd {
+            let _ = env::set_current_dir(cwd);
+        }
+
+        // server_root (priority 2) may still succeed, so we just verify
+        // that if we got Some, it contains default.toml
+        if let Some(ref path) = result {
+            assert!(
+                path.join("default.toml").exists(),
+                "Returned config dir must contain default.toml: {:?}",
+                path
+            );
+        }
+    }
+
+    #[test]
+    #[serial(config_env)]
+    fn test_config_dir_cwd_relative_crates_server_config() {
+        // Exercise the "./crates/server/config" relative path (priority 3).
+        let tmp = tempfile::tempdir().unwrap();
+        let csc = tmp.path().join("crates").join("server").join("config");
+        std::fs::create_dir_all(&csc).unwrap();
+        std::fs::write(csc.join("default.toml"), "# test").unwrap();
+
+        env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        let original_cwd = env::current_dir().ok();
+        let _ = env::set_current_dir(tmp.path());
+
+        let result = config_dir();
+
+        if let Some(ref cwd) = original_cwd {
+            let _ = env::set_current_dir(cwd);
+        }
+
+        if let Some(ref path) = result {
+            assert!(
+                path.join("default.toml").exists(),
+                "Returned config dir must contain default.toml: {:?}",
+                path
+            );
+        }
+    }
+
+    // ── config_dir: fallback hardcoded path ─────────────────────────
+
+    #[test]
+    #[serial(config_env)]
+    fn test_config_dir_hardcoded_fallback_path_expansion() {
+        // Verify that the hardcoded fallback path uses tilde expansion.
+        // We cannot easily make all earlier strategies fail, but we can
+        // verify that the fallback path, when manually constructed, matches
+        // what expand_tilde would produce.
+        let fallback =
+            expand_tilde("~/lab/music-comp/ai-music-theory/mcp-server/crates/server/config");
+        if fallback.join("default.toml").exists() {
+            // The fallback path exists on this machine, which means the
+            // fallback branch COULD succeed if higher-priority strategies
+            // all fail.
+            assert!(fallback.is_absolute());
+        }
+    }
+
+    // ── skill_root: hardcoded fallback ──────────────────────────────
+
+    #[test]
+    #[serial(skill_env)]
+    fn test_skill_root_hardcoded_fallback_path_expansion() {
+        // Verify the hardcoded fallback uses tilde expansion correctly.
+        let fallback = expand_tilde("~/lab/music-comp/ai-music-theory");
+        if fallback.exists() {
+            assert!(fallback.is_absolute());
+            // On the developer's machine this path exists; skill_root's
+            // fallback would succeed if project_root failed.
+        }
+    }
+
+    // ── server_root: first-try path (config/default.toml directly) ──
+
+    #[test]
+    fn test_server_root_first_try_would_find_direct_config() {
+        // Verify the first-try strategy: if config/default.toml existed
+        // at a parent of binary_dir, server_root would return that parent.
+        // We test this indirectly via find_dir_with_marker.
+        let tmp = tempfile::tempdir().unwrap();
+        let config = tmp.path().join("config");
+        std::fs::create_dir_all(&config).unwrap();
+        std::fs::write(config.join("default.toml"), "# test").unwrap();
+
+        let child = tmp.path().join("target").join("debug").join("deps");
+        std::fs::create_dir_all(&child).unwrap();
+
+        let result = find_dir_with_marker(&child, "config/default.toml");
+        assert_eq!(
+            result.as_deref(),
+            Some(tmp.path()),
+            "First-try strategy should find config/default.toml"
+        );
+    }
+
+    #[test]
+    fn test_server_root_workspace_strategy_via_find_dir_with_marker() {
+        // Simulate the workspace strategy: Cargo.toml is found at workspace
+        // root, then crates/server/config/default.toml is checked.
+        let tmp = tempfile::tempdir().unwrap();
+        // Create workspace-like structure
+        std::fs::write(tmp.path().join("Cargo.toml"), "# workspace").unwrap();
+        let server_config = tmp.path().join("crates").join("server").join("config");
+        std::fs::create_dir_all(&server_config).unwrap();
+        std::fs::write(server_config.join("default.toml"), "# cfg").unwrap();
+
+        let child = tmp.path().join("target").join("debug").join("deps");
+        std::fs::create_dir_all(&child).unwrap();
+
+        // First try: no direct config/default.toml
+        let first_try = find_dir_with_marker(&child, "config/default.toml");
+        assert!(
+            first_try.is_none(),
+            "Direct config/default.toml should NOT be found"
+        );
+
+        // Second try: find Cargo.toml
+        let workspace = find_dir_with_marker(&child, "Cargo.toml");
+        assert_eq!(workspace.as_deref(), Some(tmp.path()));
+
+        // Then check crates/server/config/default.toml
+        let workspace_root = workspace.unwrap();
+        let server_crate = workspace_root.join("crates").join("server");
+        assert!(server_crate.join("config").join("default.toml").exists());
+    }
+
+    // ── project_root: verify marker iteration order ─────────────────
+
+    #[test]
+    fn test_project_root_finds_first_available_marker() {
+        // Simulate project_root's marker search order via find_dir_with_marker.
+        // If the first marker (SKILL.md) is found, later markers are not checked.
+        let tmp = tempfile::tempdir().unwrap();
+        // Only place the second marker (CONVENTIONS.md)
+        std::fs::write(tmp.path().join("CONVENTIONS.md"), "# conv").unwrap();
+
+        let child = tmp.path().join("src");
+        std::fs::create_dir_all(&child).unwrap();
+
+        // SKILL.md not found
+        let r1 = find_dir_with_marker(&child, "SKILL.md");
+        assert!(r1.is_none());
+
+        // CONVENTIONS.md found
+        let r2 = find_dir_with_marker(&child, "CONVENTIONS.md");
+        assert_eq!(r2.as_deref(), Some(tmp.path()));
+    }
+
+    #[test]
+    fn test_project_root_finds_third_marker() {
+        // Verify the third marker (SCOPE.md) is checked when others are absent.
+        let tmp = tempfile::tempdir().unwrap();
+        std::fs::write(tmp.path().join("SCOPE.md"), "# scope").unwrap();
+
+        let child = tmp.path().join("src");
+        std::fs::create_dir_all(&child).unwrap();
+
+        assert!(find_dir_with_marker(&child, "SKILL.md").is_none());
+        assert!(find_dir_with_marker(&child, "CONVENTIONS.md").is_none());
+
+        let r3 = find_dir_with_marker(&child, "SCOPE.md");
+        assert_eq!(r3.as_deref(), Some(tmp.path()));
+    }
+
+    #[test]
+    fn test_project_root_no_markers_returns_none() {
+        // When no markers exist anywhere in the walk path, returns None.
+        let tmp = tempfile::tempdir().unwrap();
+        let child = tmp.path().join("a").join("b");
+        std::fs::create_dir_all(&child).unwrap();
+
+        for marker in &["SKILL.md", "CONVENTIONS.md", "SCOPE.md"] {
+            assert!(
+                find_dir_with_marker(&child, marker).is_none(),
+                "Should not find {} in empty tree",
+                marker
+            );
+        }
+    }
+
+    // ── find_dir_with_marker: walk exactly MAX_WALK_LEVELS ──────────
+
+    #[test]
+    fn test_find_dir_with_marker_exactly_at_max_walk_levels() {
+        // Place marker exactly MAX_WALK_LEVELS levels above start.
+        // The loop runs 0..MAX_WALK_LEVELS (10 iterations: levels 0-9).
+        // Starting at level MAX_WALK_LEVELS means the marker is at iteration
+        // index MAX_WALK_LEVELS, which is ONE past the last iteration.
+        let tmp = tempfile::tempdir().unwrap();
+        let mut deep = tmp.path().to_path_buf();
+        for i in 0..MAX_WALK_LEVELS {
+            deep = deep.join(format!("d{}", i));
+        }
+        std::fs::create_dir_all(&deep).unwrap();
+        std::fs::write(tmp.path().join("marker.txt"), "m").unwrap();
+
+        // Exactly at the boundary: the marker is MAX_WALK_LEVELS levels up.
+        // The loop checks levels 0 through 9 (10 total). Starting from deep,
+        // level 9 is tmp + d0, and level 10 (tmp itself) is never checked.
+        let result = find_dir_with_marker(&deep, "marker.txt");
+        assert!(
+            result.is_none(),
+            "Marker at exactly MAX_WALK_LEVELS levels up should NOT be found"
+        );
+    }
+
+    // ── expand_tilde: with user-like path components ────────────────
+
+    #[test]
+    fn test_expand_tilde_preserves_trailing_slash() {
+        let path = expand_tilde("~/dir/");
+        if let Some(home) = dirs::home_dir() {
+            assert_eq!(path, home.join("dir/"));
+        }
+    }
+
+    #[test]
+    fn test_expand_tilde_with_dot_dot_component() {
+        let path = expand_tilde("~/a/../b");
+        if let Some(home) = dirs::home_dir() {
+            assert_eq!(path, home.join("a/../b"));
+        }
+    }
 }

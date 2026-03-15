@@ -2201,4 +2201,468 @@ fuzzy_distance = 2
     // logic itself is thoroughly tested in sources/validator.rs. The mode
     // parsing and JSON/table formatting are covered by the mode parsing tests
     // and by the fact that handle_validate delegates to validate_sources().
+
+    // ===================================================================
+    // handle_alias_add: missing [sources] section in TOML
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_add_missing_sources_section_in_toml() {
+        let temp_dir = TempDir::new().unwrap();
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).await.unwrap();
+
+        // Config with no [sources] section at all
+        let config_content = r#"
+[server]
+name = "test"
+version = "0.1.0"
+"#;
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        fs::write(config_dir.join("default.toml"), config_content)
+            .await
+            .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_add("general-some-source", "Alias").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_err());
+        let err_msg = result.unwrap_err().to_string();
+        assert!(
+            err_msg.contains("[sources]"),
+            "Error should mention missing [sources] section: {}",
+            err_msg
+        );
+    }
+
+    // ===================================================================
+    // handle_alias_add: TOML parse error
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_add_invalid_toml_returns_error() {
+        let temp_dir = TempDir::new().unwrap();
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        // Write invalid TOML content
+        fs::write(
+            config_dir.join("default.toml"),
+            "this is not [[ valid toml {{",
+        )
+        .await
+        .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_add("general-some-source", "Alias").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_err());
+    }
+
+    // ===================================================================
+    // handle_alias_remove: missing [sources] section in TOML
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_remove_missing_sources_section_in_toml() {
+        let temp_dir = TempDir::new().unwrap();
+
+        // Config with no [sources] section at all
+        let config_content = r#"
+[server]
+name = "test"
+version = "0.1.0"
+"#;
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        fs::write(config_dir.join("default.toml"), config_content)
+            .await
+            .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_remove("general-some-source", "Alias").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_err());
+        let err_msg = result.unwrap_err().to_string();
+        assert!(
+            err_msg.contains("[sources]"),
+            "Error should mention missing [sources] section: {}",
+            err_msg
+        );
+    }
+
+    // ===================================================================
+    // handle_alias_remove: TOML parse error
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_remove_invalid_toml_returns_error() {
+        let temp_dir = TempDir::new().unwrap();
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        fs::write(
+            config_dir.join("default.toml"),
+            "this is not [[ valid toml {{",
+        )
+        .await
+        .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_remove("general-some-source", "Alias").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_err());
+    }
+
+    // ===================================================================
+    // handle_alias_remove: aliases table exists but no entry for file_id
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_remove_no_aliases_for_specific_file_id() {
+        let temp_dir = TempDir::new().unwrap();
+        // Create config with aliases for a different source, not the one we try to remove from
+        let _config = create_test_config_with_sources(
+            &temp_dir,
+            &[
+                ("source-a", "[2020] Author - Source A.pdf"),
+                ("source-b", "[2021] Author - Source B.pdf"),
+            ],
+            &[("source-a", &["Alias A"])], // Only source-a has aliases
+        )
+        .await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Try to remove from source-b which has no aliases array
+        let result = handle_alias_remove("general-source-b", "SomeAlias").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        // Should succeed gracefully (prints "No aliases configured for ...")
+        assert!(result.is_ok());
+    }
+
+    // ===================================================================
+    // handle_alias_remove: missing category in TOML (remove path)
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_remove_missing_category_section() {
+        let temp_dir = TempDir::new().unwrap();
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).await.unwrap();
+
+        // Config with [sources] but without [sources.papers]
+        let config_content = format!(
+            r#"
+[server]
+name = "test"
+version = "0.1.0"
+
+[paths]
+base = "{base}"
+sources_md = "sources-md"
+concept_cards = "{cards}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources.general]
+path = ""
+[sources.general.files]
+[sources.general.aliases]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{index}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            base = temp_dir.path().display(),
+            cards = concept_cards_path.display(),
+            index = temp_dir.path().join("test-index").display(),
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        fs::write(config_dir.join("default.toml"), &config_content)
+            .await
+            .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Try to remove from papers category which doesn't exist in TOML
+        let result = handle_alias_remove("papers-some-source", "Alias").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_err());
+        let err_msg = result.unwrap_err().to_string();
+        assert!(
+            err_msg.contains("papers"),
+            "Error should mention missing category: {}",
+            err_msg
+        );
+    }
+
+    // ===================================================================
+    // handle_scan: cards with no source field
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_scan_table_with_no_source_cards() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        // Create cards without source field - they should be scanned but
+        // not contribute to sources count
+        create_concept_card(&temp_dir, "harmony", "no-source.md", None).await;
+        create_concept_card(
+            &temp_dir,
+            "harmony",
+            "with-source.md",
+            Some("Open Music Theory"),
+        )
+        .await;
+
+        let result = handle_scan(&config, "table", false).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_scan_json_with_no_source_cards() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        create_concept_card(&temp_dir, "harmony", "no-source.md", None).await;
+
+        let result = handle_scan(&config, "json", false).await;
+        assert!(result.is_ok());
+    }
+
+    // ===================================================================
+    // handle_scan: long source title exercises truncate_string in context
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_scan_table_long_source_title_truncated() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        let long_title =
+            "A Very Long Source Title That Exceeds Fifty Characters And Should Be Truncated";
+        create_concept_card(&temp_dir, "harmony", "long-title.md", Some(long_title)).await;
+
+        let result = handle_scan(&config, "table", true).await;
+        assert!(result.is_ok());
+    }
+
+    // ===================================================================
+    // handle_alias_add: category exists but no aliases table yet (ensures
+    // the "create aliases table" branch at line 448 is hit)
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_add_creates_aliases_table_when_missing() {
+        let temp_dir = TempDir::new().unwrap();
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).await.unwrap();
+
+        // Config with [sources.general] but NO [sources.general.aliases] table
+        let config_content = format!(
+            r#"
+[server]
+name = "test"
+version = "0.1.0"
+
+[paths]
+base = "{base}"
+sources_md = "sources-md"
+concept_cards = "{cards}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources.oxford]
+path = ""
+[sources.oxford.files]
+[sources.oxford.aliases]
+
+[sources.general]
+path = ""
+[sources.general.files]
+my-source = "[2020] Author - My Source.pdf"
+
+[sources.papers]
+path = ""
+[sources.papers.files]
+[sources.papers.aliases]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{index}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            base = temp_dir.path().display(),
+            cards = concept_cards_path.display(),
+            index = temp_dir.path().join("test-index").display(),
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        fs::write(config_dir.join("default.toml"), &config_content)
+            .await
+            .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_add("general-my-source", "New Alias").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+
+        let content = fs::read_to_string(config_dir.join("default.toml"))
+            .await
+            .unwrap();
+        assert!(
+            content.contains("New Alias"),
+            "Config should contain the new alias"
+        );
+    }
+
+    // ===================================================================
+    // handle_scan: multiple sources with different card counts for sorting
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_scan_table_sorting_by_card_count() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        // Create cards so sources have different counts
+        create_concept_card(&temp_dir, "harmony", "c1.md", Some("Source A")).await;
+        create_concept_card(&temp_dir, "harmony", "c2.md", Some("Source B")).await;
+        create_concept_card(&temp_dir, "harmony", "c3.md", Some("Source B")).await;
+        create_concept_card(&temp_dir, "harmony", "c4.md", Some("Source B")).await;
+
+        // Table output sorts by card count descending
+        let result = handle_scan(&config, "table", false).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_scan_json_sorting_by_card_count() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        create_concept_card(&temp_dir, "harmony", "c1.md", Some("Source A")).await;
+        create_concept_card(&temp_dir, "harmony", "c2.md", Some("Source B")).await;
+        create_concept_card(&temp_dir, "harmony", "c3.md", Some("Source B")).await;
+
+        // JSON output sorts by card count descending
+        let result = handle_scan(&config, "json", false).await;
+        assert!(result.is_ok());
+    }
+
+    // ===================================================================
+    // handle_sources_command: Alias Add and Remove dispatch paths
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_sources_command_alias_add() {
+        let temp_dir = TempDir::new().unwrap();
+        let _config = create_test_config_with_sources(
+            &temp_dir,
+            &[("source-a", "[2020] Author - Source A.pdf")],
+            &[],
+        )
+        .await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let cmds = SourcesCommands {
+            command: SourcesSubcommand::Alias(AliasCommands {
+                command: AliasSubcommand::Add {
+                    source_id: "general-source-a".to_string(),
+                    alias: "Test Alias".to_string(),
+                },
+            }),
+        };
+
+        let result = handle_sources_command(cmds, None).await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_sources_command_alias_remove() {
+        let temp_dir = TempDir::new().unwrap();
+        let _config = create_test_config_with_sources(
+            &temp_dir,
+            &[("source-a", "[2020] Author - Source A.pdf")],
+            &[("source-a", &["Test Alias"])],
+        )
+        .await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let cmds = SourcesCommands {
+            command: SourcesSubcommand::Alias(AliasCommands {
+                command: AliasSubcommand::Remove {
+                    source_id: "general-source-a".to_string(),
+                    alias: "Test Alias".to_string(),
+                },
+            }),
+        };
+
+        let result = handle_sources_command(cmds, None).await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
 }

@@ -605,6 +605,266 @@ mod tests {
         assert_eq!(params.direction, "both");
     }
 
+    #[test]
+    fn test_get_node_edges_params_explicit_direction() {
+        let json = r#"{"node_id":"test","direction":"incoming"}"#;
+        let params: GetNodeEdgesParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.node_id, "test");
+        assert_eq!(params.direction, "incoming");
+    }
+
+    #[test]
+    fn test_graph_status_response_skip_none_fields() {
+        let response = GraphStatusResponse {
+            enabled: false,
+            status: "not_available".to_string(),
+            error: None,
+            stats: None,
+            loaded_at: None,
+        };
+        let json = serde_json::to_string(&response).unwrap();
+        assert!(!json.contains("error"));
+        assert!(!json.contains("stats"));
+        assert!(!json.contains("loaded_at"));
+    }
+
+    #[test]
+    fn test_graph_status_response_with_error() {
+        let response = GraphStatusResponse {
+            enabled: true,
+            status: "failed".to_string(),
+            error: Some("Graph load failed".to_string()),
+            stats: None,
+            loaded_at: None,
+        };
+        let json = serde_json::to_string(&response).unwrap();
+        assert!(json.contains("\"error\":\"Graph load failed\""));
+        assert!(json.contains("\"status\":\"failed\""));
+    }
+
+    #[test]
+    fn test_graph_status_response_deserialization() {
+        let json = r#"{"enabled":true,"status":"loaded","stats":{"node_count":5,"edge_count":3,"concept_count":4,"source_count":1},"loaded_at":"2024-01-01T00:00:00Z"}"#;
+        let response: GraphStatusResponse = serde_json::from_str(json).unwrap();
+        assert!(response.enabled);
+        assert_eq!(response.status, "loaded");
+        assert!(response.error.is_none());
+        let stats = response.stats.unwrap();
+        assert_eq!(stats.node_count, 5);
+        assert_eq!(stats.edge_count, 3);
+        assert_eq!(stats.concept_count, 4);
+        assert_eq!(stats.source_count, 1);
+        assert_eq!(response.loaded_at.unwrap(), "2024-01-01T00:00:00Z");
+    }
+
+    #[test]
+    fn test_node_info_source_serialization() {
+        let info = NodeInfo {
+            id: "test-source".to_string(),
+            node_type: "source".to_string(),
+            details: NodeDetails::Source {
+                title: "Test Source".to_string(),
+                author: "Author Name".to_string(),
+                year: Some(2024),
+                is_converted: true,
+            },
+            in_degree: 0,
+            out_degree: 5,
+        };
+        let json = serde_json::to_string(&info).unwrap();
+        assert!(json.contains("\"id\":\"test-source\""));
+        assert!(json.contains("\"node_type\":\"source\""));
+        assert!(json.contains("\"author\":\"Author Name\""));
+        assert!(json.contains("\"year\":2024"));
+        assert!(json.contains("\"is_converted\":true"));
+        assert!(json.contains("\"out_degree\":5"));
+    }
+
+    #[test]
+    fn test_node_info_source_no_year() {
+        let info = NodeInfo {
+            id: "src-2".to_string(),
+            node_type: "source".to_string(),
+            details: NodeDetails::Source {
+                title: "Unknown Year Source".to_string(),
+                author: "Somebody".to_string(),
+                year: None,
+                is_converted: false,
+            },
+            in_degree: 1,
+            out_degree: 0,
+        };
+        let json = serde_json::to_string(&info).unwrap();
+        // year: None is skipped by skip_serializing_if
+        assert!(!json.contains("\"year\""));
+        assert!(json.contains("\"is_converted\":false"));
+    }
+
+    #[test]
+    fn test_node_details_concept_with_canonical_id() {
+        let info = NodeInfo {
+            id: "concept-alias".to_string(),
+            node_type: "concept".to_string(),
+            details: NodeDetails::Concept {
+                title: "Alias Concept".to_string(),
+                category: "harmony".to_string(),
+                source_id: "src-1".to_string(),
+                canonical_id: Some("concept-canonical".to_string()),
+                is_canonical: false,
+            },
+            in_degree: 0,
+            out_degree: 1,
+        };
+        let json = serde_json::to_string(&info).unwrap();
+        assert!(json.contains("\"canonical_id\":\"concept-canonical\""));
+        assert!(json.contains("\"is_canonical\":false"));
+    }
+
+    #[test]
+    fn test_node_details_concept_without_canonical_id() {
+        let details = NodeDetails::Concept {
+            title: "Root Concept".to_string(),
+            category: "fundamentals".to_string(),
+            source_id: "src-1".to_string(),
+            canonical_id: None,
+            is_canonical: true,
+        };
+        let json = serde_json::to_string(&details).unwrap();
+        assert!(!json.contains("canonical_id"));
+        assert!(json.contains("\"is_canonical\":true"));
+    }
+
+    #[test]
+    fn test_graph_stats_response_serialization() {
+        let response = GraphStatsResponse {
+            nodes: NodeCounts {
+                total: 50,
+                concepts: 40,
+                sources: 10,
+            },
+            edge_count: 75,
+            relationships: vec![
+                RelationshipCount {
+                    relationship: "Prerequisite".to_string(),
+                    count: 30,
+                },
+                RelationshipCount {
+                    relationship: "Introduces".to_string(),
+                    count: 45,
+                },
+            ],
+            categories: vec![CategoryCount {
+                category: "harmony".to_string(),
+                count: 20,
+            }],
+        };
+        let json = serde_json::to_string(&response).unwrap();
+        assert!(json.contains("\"total\":50"));
+        assert!(json.contains("\"concepts\":40"));
+        assert!(json.contains("\"sources\":10"));
+        assert!(json.contains("\"edge_count\":75"));
+        assert!(json.contains("\"Prerequisite\""));
+        assert!(json.contains("\"harmony\""));
+    }
+
+    #[test]
+    fn test_graph_validate_response_serialization() {
+        let response = GraphValidateResponse {
+            valid: false,
+            issues: vec![
+                "[orphan_nodes] Found 2 orphan nodes".to_string(),
+                "[self_loop] Found self-loop".to_string(),
+            ],
+            orphan_count: 2,
+            self_loop_count: 1,
+        };
+        let json = serde_json::to_string(&response).unwrap();
+        assert!(json.contains("\"valid\":false"));
+        assert!(json.contains("orphan_nodes"));
+        assert!(json.contains("\"orphan_count\":2"));
+        assert!(json.contains("\"self_loop_count\":1"));
+    }
+
+    #[test]
+    fn test_graph_validate_response_valid() {
+        let response = GraphValidateResponse {
+            valid: true,
+            issues: vec![],
+            orphan_count: 0,
+            self_loop_count: 0,
+        };
+        let json = serde_json::to_string(&response).unwrap();
+        assert!(json.contains("\"valid\":true"));
+        assert!(json.contains("\"issues\":[]"));
+    }
+
+    #[test]
+    fn test_node_edges_response_serialization() {
+        let response = NodeEdgesResponse {
+            node_id: "concept-a".to_string(),
+            direction: "both".to_string(),
+            incoming: vec![EdgeInfo {
+                from: "test-source".to_string(),
+                to: "concept-a".to_string(),
+                relationship: "Introduces".to_string(),
+                weight: 1.0,
+                origin: "Extracted".to_string(),
+            }],
+            outgoing: vec![EdgeInfo {
+                from: "concept-a".to_string(),
+                to: "concept-b".to_string(),
+                relationship: "Prerequisite".to_string(),
+                weight: 0.8,
+                origin: "Extracted".to_string(),
+            }],
+        };
+        let json = serde_json::to_string(&response).unwrap();
+        assert!(json.contains("\"node_id\":\"concept-a\""));
+        assert!(json.contains("\"direction\":\"both\""));
+        assert!(json.contains("\"incoming\""));
+        assert!(json.contains("\"outgoing\""));
+        assert!(json.contains("\"weight\":0.8"));
+    }
+
+    #[test]
+    fn test_node_edges_response_empty() {
+        let response = NodeEdgesResponse {
+            node_id: "isolated-node".to_string(),
+            direction: "both".to_string(),
+            incoming: vec![],
+            outgoing: vec![],
+        };
+        let json = serde_json::to_string(&response).unwrap();
+        assert!(json.contains("\"incoming\":[]"));
+        assert!(json.contains("\"outgoing\":[]"));
+    }
+
+    #[test]
+    fn test_default_direction_fn() {
+        assert_eq!(default_direction(), "both");
+    }
+
+    #[test]
+    fn test_edge_info_deserialization() {
+        let json = r#"{"from":"a","to":"b","relationship":"Prerequisite","weight":0.5,"origin":"Extracted"}"#;
+        let edge: EdgeInfo = serde_json::from_str(json).unwrap();
+        assert_eq!(edge.from, "a");
+        assert_eq!(edge.to, "b");
+        assert_eq!(edge.relationship, "Prerequisite");
+        assert!((edge.weight - 0.5).abs() < f32::EPSILON);
+        assert_eq!(edge.origin, "Extracted");
+    }
+
+    #[test]
+    fn test_basic_graph_stats_deserialization() {
+        let json = r#"{"node_count":10,"edge_count":20,"concept_count":8,"source_count":2}"#;
+        let stats: BasicGraphStats = serde_json::from_str(json).unwrap();
+        assert_eq!(stats.node_count, 10);
+        assert_eq!(stats.edge_count, 20);
+        assert_eq!(stats.concept_count, 8);
+        assert_eq!(stats.source_count, 2);
+    }
+
     // Functional tests for graph tools
     #[cfg(feature = "graph")]
     mod functional {
@@ -847,6 +1107,124 @@ mod tests {
 
             let result = graph_validate(&state).await;
             assert!(result.is_err());
+        }
+
+        #[tokio::test]
+        async fn test_graph_status_starting() {
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+            state.graph_service.set_state(ServiceState::Starting);
+
+            let response = graph_status(&state).await.unwrap();
+            assert!(response.enabled);
+            assert_eq!(response.status, "loading");
+            assert!(response.error.is_none());
+            assert!(response.stats.is_none());
+            assert!(response.loaded_at.is_none());
+        }
+
+        #[tokio::test]
+        async fn test_graph_status_failed() {
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+            state
+                .graph_service
+                .set_state(ServiceState::Failed("disk full".to_string()));
+
+            let response = graph_status(&state).await.unwrap();
+            assert!(response.enabled);
+            assert_eq!(response.status, "failed");
+            assert_eq!(response.error, Some("disk full".to_string()));
+            assert!(response.stats.is_none());
+            assert!(response.loaded_at.is_none());
+        }
+
+        #[tokio::test]
+        async fn test_get_node_not_loaded() {
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+
+            let result = get_node(&state, "any-node").await;
+            assert!(result.is_err());
+            assert!(result.unwrap_err().to_string().contains("not loaded"));
+        }
+
+        #[tokio::test]
+        async fn test_get_node_edges_not_loaded() {
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+
+            let result = get_node_edges(&state, "any-node", "both").await;
+            assert!(result.is_err());
+            assert!(result.unwrap_err().to_string().contains("not loaded"));
+        }
+
+        #[tokio::test]
+        async fn test_get_node_source_details() {
+            let state = create_test_state().await;
+            let info = get_node(&state, "test-source").await.unwrap();
+
+            if let NodeDetails::Source {
+                title,
+                author,
+                year,
+                is_converted,
+            } = info.details
+            {
+                assert_eq!(title, "Test Source");
+                assert_eq!(author, "Test Author");
+                assert_eq!(year, Some(2024));
+                assert!(is_converted);
+            } else {
+                panic!("Expected Source node details");
+            }
+        }
+
+        #[tokio::test]
+        async fn test_get_node_concept_b_details() {
+            let state = create_test_state().await;
+            let info = get_node(&state, "concept-b").await.unwrap();
+
+            assert_eq!(info.id, "concept-b");
+            assert_eq!(info.node_type, "concept");
+            // concept-b has one incoming edge (from concept-a) and no outgoing
+            assert_eq!(info.in_degree, 1);
+            assert_eq!(info.out_degree, 0);
+
+            if let NodeDetails::Concept {
+                title, category, ..
+            } = info.details
+            {
+                assert_eq!(title, "Concept B");
+                assert_eq!(category, "fundamentals");
+            } else {
+                panic!("Expected Concept node details");
+            }
+        }
+
+        #[tokio::test]
+        async fn test_get_node_edges_source_outgoing() {
+            let state = create_test_state().await;
+            let response = get_node_edges(&state, "test-source", "outgoing")
+                .await
+                .unwrap();
+
+            assert_eq!(response.node_id, "test-source");
+            assert_eq!(response.direction, "outgoing");
+            assert!(response.incoming.is_empty());
+            assert_eq!(response.outgoing.len(), 1);
+            assert_eq!(response.outgoing[0].to, "concept-a");
+            assert_eq!(response.outgoing[0].from, "test-source");
+        }
+
+        #[tokio::test]
+        async fn test_get_node_edges_leaf_node() {
+            let state = create_test_state().await;
+            // concept-b has incoming only, no outgoing
+            let response = get_node_edges(&state, "concept-b", "both").await.unwrap();
+
+            assert_eq!(response.incoming.len(), 1);
+            assert!(response.outgoing.is_empty());
         }
     }
 }

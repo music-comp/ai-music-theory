@@ -1721,8 +1721,8 @@ Test content.
 
         state.vector_service.set_state(ServiceState::Starting);
         let result = state.require_vector();
-        assert!(result.is_err());
-        assert!(result.unwrap_err().to_string().contains("building"));
+        let err = result.err().expect("should be err when Starting");
+        assert!(err.to_string().contains("building"));
 
         state.set_vector_ready(true);
         assert!(state.is_vector_ready());
@@ -1734,13 +1734,13 @@ Test content.
             .set_state(ServiceState::Failed("oom".to_string()));
         assert!(!state.is_vector_ready());
         let result = state.require_vector();
-        assert!(result.is_err());
-        assert!(result.unwrap_err().to_string().contains("oom"));
+        let err = result.err().expect("should be err when Failed");
+        assert!(err.to_string().contains("oom"));
 
         state.set_vector_ready(false);
         assert!(!state.is_vector_ready());
         let result = state.require_vector();
-        assert!(result.is_err());
-        assert!(result.unwrap_err().to_string().contains("not built"));
+        let err = result.err().expect("should be err when not built");
+        assert!(err.to_string().contains("not built"));
     }
 }

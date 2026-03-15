@@ -461,7 +461,7 @@ format:
 coverage:
 	@echo "$(BLUE)Generating test coverage report (with all features)...$(RESET)"
 	@echo "$(CYAN)• Running tests with coverage (server crate only)...$(RESET)"
-	@cd crates/server && cargo llvm-cov --features fts,graph
+	@cargo llvm-cov --features fts,graph --package music-theory-mcp
 	@echo "$(GREEN)✓ Coverage report generated$(RESET)"
 	@echo "$(YELLOW)→ For detailed HTML report, run: make coverage-html$(RESET)"
 
@@ -469,9 +469,9 @@ coverage:
 coverage-html:
 	@echo "$(BLUE)Generating HTML coverage report (with all features)...$(RESET)"
 	@echo "$(CYAN)• Running tests with coverage (server crate only)...$(RESET)"
-	@cd crates/server && cargo llvm-cov --html --features fts,graph
+	@cargo llvm-cov --html --features fts,graph --package music-theory-mcp
 	@echo "$(GREEN)✓ HTML coverage report generated$(RESET)"
-	@echo "$(CYAN)→ Report: crates/server/target/llvm-cov/html/index.html$(RESET)"
+	@echo "$(CYAN)→ Report: target/llvm-cov/html/index.html$(RESET)"
 
 .PHONY: deps
 deps: ensure-binstall
