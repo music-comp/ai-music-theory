@@ -616,6 +616,211 @@ fn truncate_string(s: &str, max_len: usize) -> String {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use serial_test::serial;
+    use tempfile::TempDir;
+    use tokio::fs;
+
+    // ---------------------------------------------------------------
+    // Helper: create a temp config directory with a TOML config file
+    // and set the MUSIC_THEORY_CONFIG_DIR env var. Returns Config.
+    // ---------------------------------------------------------------
+
+    async fn create_test_config(temp_dir: &TempDir) -> Config {
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).await.unwrap();
+
+        let config_content = format!(
+            r#"
+[server]
+name = "test-server"
+version = "0.1.0"
+
+[paths]
+base = "{}"
+sources_md = "sources-md"
+concept_cards = "{}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources]
+
+[sources.oxford]
+path = ""
+[sources.oxford.files]
+[sources.oxford.aliases]
+
+[sources.general]
+path = ""
+[sources.general.files]
+[sources.general.aliases]
+
+[sources.papers]
+path = ""
+[sources.papers.files]
+[sources.papers.aliases]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            temp_dir.path().display(),
+            concept_cards_path.display(),
+            temp_dir.path().join("test-index").display()
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        fs::write(config_dir.join("default.toml"), config_content)
+            .await
+            .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+        let config = Config::load().unwrap();
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        config
+    }
+
+    /// Create a test config with sources (general category) and aliases.
+    async fn create_test_config_with_sources(
+        temp_dir: &TempDir,
+        files: &[(&str, &str)],
+        aliases: &[(&str, &[&str])],
+    ) -> Config {
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        let sources_path = temp_dir.path().join("sources");
+        fs::create_dir_all(&concept_cards_path).await.unwrap();
+        fs::create_dir_all(&sources_path).await.unwrap();
+
+        let mut files_section = String::new();
+        for (id, filename) in files {
+            files_section.push_str(&format!("{} = \"{}\"\n", id, filename));
+        }
+
+        let mut aliases_section = String::new();
+        for (id, alias_list) in aliases {
+            let formatted: Vec<String> = alias_list.iter().map(|a| format!("\"{}\"", a)).collect();
+            aliases_section.push_str(&format!("{} = [{}]\n", id, formatted.join(", ")));
+        }
+
+        let config_content = format!(
+            r#"
+[server]
+name = "test-server"
+version = "0.1.0"
+
+[paths]
+base = "{base}"
+sources_md = "sources-md"
+concept_cards = "{cards}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources.oxford]
+path = ""
+[sources.oxford.files]
+[sources.oxford.aliases]
+
+[sources.general]
+path = "{sources}"
+[sources.general.files]
+{files_section}
+[sources.general.aliases]
+{aliases_section}
+
+[sources.papers]
+path = ""
+[sources.papers.files]
+[sources.papers.aliases]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{index}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            base = temp_dir.path().display(),
+            cards = concept_cards_path.display(),
+            sources = sources_path.display(),
+            files_section = files_section,
+            aliases_section = aliases_section,
+            index = temp_dir.path().join("test-index").display(),
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        fs::write(config_dir.join("default.toml"), &config_content)
+            .await
+            .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+        let config = Config::load().unwrap();
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        config
+    }
+
+    /// Create a concept card with optional source in the temp dir.
+    async fn create_concept_card(
+        temp_dir: &TempDir,
+        category: &str,
+        filename: &str,
+        source: Option<&str>,
+    ) {
+        let dir = temp_dir.path().join("concept-cards").join(category);
+        fs::create_dir_all(&dir).await.unwrap();
+
+        let content = if let Some(src) = source {
+            format!(
+                r#"---
+title: "Test Concept"
+category: "{}"
+source: "{}"
+---
+# Test
+
+Content"#,
+                category, src
+            )
+        } else {
+            format!(
+                r#"---
+title: "Test Concept"
+category: "{}"
+---
+# Test
+
+Content"#,
+                category
+            )
+        };
+
+        fs::write(dir.join(filename), content).await.unwrap();
+    }
+
+    // ===================================================================
+    // truncate_string tests
+    // ===================================================================
 
     #[test]
     fn test_truncate_string_short() {
@@ -638,26 +843,49 @@ mod tests {
     }
 
     #[test]
-    fn test_validation_mode_parsing() {
-        // Test that mode strings are parsed correctly
-        let modes = [
-            ("all", ValidationMode::All),
-            ("cards-config", ValidationMode::CardsConfig),
-            ("cards-fs", ValidationMode::CardsFilesystem),
-            ("config-fs", ValidationMode::ConfigFilesystem),
-        ];
-
-        for (mode_str, expected) in modes {
-            let mode = match mode_str {
-                "all" => ValidationMode::All,
-                "cards-config" => ValidationMode::CardsConfig,
-                "cards-fs" => ValidationMode::CardsFilesystem,
-                "config-fs" => ValidationMode::ConfigFilesystem,
-                _ => ValidationMode::All,
-            };
-            assert_eq!(mode, expected);
-        }
+    fn test_truncate_string_empty_input() {
+        assert_eq!(truncate_string("", 10), "");
     }
+
+    #[test]
+    fn test_truncate_string_empty_input_zero_max() {
+        assert_eq!(truncate_string("", 0), "");
+    }
+
+    #[test]
+    fn test_truncate_string_max_len_zero() {
+        // max_len = 0 <= 3, so uses s[..0]
+        assert_eq!(truncate_string("hello", 0), "");
+    }
+
+    #[test]
+    fn test_truncate_string_max_len_one() {
+        assert_eq!(truncate_string("hello", 1), "h");
+    }
+
+    #[test]
+    fn test_truncate_string_max_len_two() {
+        assert_eq!(truncate_string("hello", 2), "he");
+    }
+
+    #[test]
+    fn test_truncate_string_max_len_four_truncates() {
+        // max_len = 4, s.len() = 5, max_len > 3, so format!("{}...", &s[..1]) = "h..."
+        assert_eq!(truncate_string("hello", 4), "h...");
+    }
+
+    #[test]
+    fn test_truncate_string_long_title() {
+        let long = "A Very Long Title That Should Definitely Be Truncated For Display";
+        let result = truncate_string(long, 20);
+        assert_eq!(result.len(), 20);
+        assert!(result.ends_with("..."));
+        assert_eq!(result, "A Very Long Title...");
+    }
+
+    // ===================================================================
+    // parse_source_id tests
+    // ===================================================================
 
     #[test]
     fn test_parse_source_id_general() {
@@ -697,4 +925,1280 @@ mod tests {
         let result = parse_source_id("generalsource");
         assert!(result.is_err());
     }
+
+    #[test]
+    fn test_parse_source_id_empty_string() {
+        let result = parse_source_id("");
+        assert!(result.is_err());
+    }
+
+    #[test]
+    fn test_parse_source_id_just_category() {
+        let result = parse_source_id("general");
+        assert!(result.is_err());
+    }
+
+    #[test]
+    fn test_parse_source_id_error_message_contains_input() {
+        let result = parse_source_id("invalid-id");
+        let err = result.unwrap_err();
+        let msg = err.to_string();
+        assert!(
+            msg.contains("invalid-id"),
+            "Error should contain the input: {}",
+            msg
+        );
+    }
+
+    #[test]
+    fn test_parse_source_id_error_message_lists_categories() {
+        let result = parse_source_id("badcat-source");
+        let err = result.unwrap_err();
+        let msg = err.to_string();
+        assert!(msg.contains("oxford"), "Error should list oxford: {}", msg);
+        assert!(
+            msg.contains("general"),
+            "Error should list general: {}",
+            msg
+        );
+        assert!(msg.contains("papers"), "Error should list papers: {}", msg);
+    }
+
+    #[test]
+    fn test_parse_source_id_oxford_with_multiple_dashes() {
+        let (cat, file_id) = parse_source_id("oxford-gollin-neo-riemannian-handbook").unwrap();
+        assert_eq!(cat, "oxford");
+        assert_eq!(file_id, "gollin-neo-riemannian-handbook");
+    }
+
+    #[test]
+    fn test_parse_source_id_papers_single_word() {
+        let (cat, file_id) = parse_source_id("papers-lewin").unwrap();
+        assert_eq!(cat, "papers");
+        assert_eq!(file_id, "lewin");
+    }
+
+    // ===================================================================
+    // get_config_path tests
+    // ===================================================================
+
+    #[test]
+    #[serial(config_env)]
+    fn test_get_config_path_with_valid_env() {
+        let temp_dir = TempDir::new().unwrap();
+        let config_dir = temp_dir.path();
+        // config_dir() requires default.toml to exist
+        std::fs::write(config_dir.join("default.toml"), "[server]").unwrap();
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", config_dir);
+
+        let result = get_config_path();
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+        let path = result.unwrap();
+        assert!(path.ends_with("default.toml"));
+    }
+
+    #[test]
+    #[serial(config_env)]
+    fn test_get_config_path_returns_default_toml() {
+        let temp_dir = TempDir::new().unwrap();
+        let config_dir = temp_dir.path();
+        std::fs::write(config_dir.join("default.toml"), "[server]").unwrap();
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", config_dir);
+
+        let path = get_config_path().unwrap();
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert_eq!(path.file_name().unwrap(), "default.toml");
+    }
+
+    // ===================================================================
+    // Validation mode parsing tests (covering the match in handle_validate)
+    // ===================================================================
+
+    #[test]
+    fn test_validation_mode_parsing_all() {
+        let mode = match "all" {
+            "all" => ValidationMode::All,
+            "cards-config" => ValidationMode::CardsConfig,
+            "cards-fs" => ValidationMode::CardsFilesystem,
+            "config-fs" => ValidationMode::ConfigFilesystem,
+            _ => ValidationMode::All,
+        };
+        assert_eq!(mode, ValidationMode::All);
+    }
+
+    #[test]
+    fn test_validation_mode_parsing_cards_config() {
+        let mode = match "cards-config" {
+            "all" => ValidationMode::All,
+            "cards-config" => ValidationMode::CardsConfig,
+            "cards-fs" => ValidationMode::CardsFilesystem,
+            "config-fs" => ValidationMode::ConfigFilesystem,
+            _ => ValidationMode::All,
+        };
+        assert_eq!(mode, ValidationMode::CardsConfig);
+    }
+
+    #[test]
+    fn test_validation_mode_parsing_cards_fs() {
+        let mode = match "cards-fs" {
+            "all" => ValidationMode::All,
+            "cards-config" => ValidationMode::CardsConfig,
+            "cards-fs" => ValidationMode::CardsFilesystem,
+            "config-fs" => ValidationMode::ConfigFilesystem,
+            _ => ValidationMode::All,
+        };
+        assert_eq!(mode, ValidationMode::CardsFilesystem);
+    }
+
+    #[test]
+    fn test_validation_mode_parsing_config_fs() {
+        let mode = match "config-fs" {
+            "all" => ValidationMode::All,
+            "cards-config" => ValidationMode::CardsConfig,
+            "cards-fs" => ValidationMode::CardsFilesystem,
+            "config-fs" => ValidationMode::ConfigFilesystem,
+            _ => ValidationMode::All,
+        };
+        assert_eq!(mode, ValidationMode::ConfigFilesystem);
+    }
+
+    #[test]
+    fn test_validation_mode_parsing_unknown_defaults_to_all() {
+        let mode = match "bogus-mode" {
+            "all" => ValidationMode::All,
+            "cards-config" => ValidationMode::CardsConfig,
+            "cards-fs" => ValidationMode::CardsFilesystem,
+            "config-fs" => ValidationMode::ConfigFilesystem,
+            _ => ValidationMode::All,
+        };
+        assert_eq!(mode, ValidationMode::All);
+    }
+
+    // ===================================================================
+    // Clap parsing tests for CLI structs
+    // ===================================================================
+
+    #[test]
+    fn test_sources_subcommand_scan_defaults() {
+        // Verify that Scan parses with default values
+        let cmd = SourcesCommands::parse_from(["sources", "scan"]);
+        match cmd.command {
+            SourcesSubcommand::Scan { output, show_cards } => {
+                assert_eq!(output, "table");
+                assert!(!show_cards);
+            }
+            _ => panic!("Expected Scan subcommand"),
+        }
+    }
+
+    #[test]
+    fn test_sources_subcommand_scan_json_output() {
+        let cmd = SourcesCommands::parse_from(["sources", "scan", "--output", "json"]);
+        match cmd.command {
+            SourcesSubcommand::Scan { output, show_cards } => {
+                assert_eq!(output, "json");
+                assert!(!show_cards);
+            }
+            _ => panic!("Expected Scan subcommand"),
+        }
+    }
+
+    #[test]
+    fn test_sources_subcommand_scan_show_cards() {
+        let cmd = SourcesCommands::parse_from(["sources", "scan", "--show-cards"]);
+        match cmd.command {
+            SourcesSubcommand::Scan { output, show_cards } => {
+                assert_eq!(output, "table");
+                assert!(show_cards);
+            }
+            _ => panic!("Expected Scan subcommand"),
+        }
+    }
+
+    #[test]
+    fn test_sources_subcommand_scan_json_with_show_cards() {
+        let cmd =
+            SourcesCommands::parse_from(["sources", "scan", "--output", "json", "--show-cards"]);
+        match cmd.command {
+            SourcesSubcommand::Scan { output, show_cards } => {
+                assert_eq!(output, "json");
+                assert!(show_cards);
+            }
+            _ => panic!("Expected Scan subcommand"),
+        }
+    }
+
+    #[test]
+    fn test_sources_subcommand_validate_defaults() {
+        let cmd = SourcesCommands::parse_from(["sources", "validate"]);
+        match cmd.command {
+            SourcesSubcommand::Validate {
+                mode,
+                suggest_matches,
+                threshold,
+                json,
+            } => {
+                assert_eq!(mode, "all");
+                assert!(!suggest_matches);
+                assert!((threshold - 0.7).abs() < f32::EPSILON);
+                assert!(!json);
+            }
+            _ => panic!("Expected Validate subcommand"),
+        }
+    }
+
+    #[test]
+    fn test_sources_subcommand_validate_custom_mode() {
+        let cmd = SourcesCommands::parse_from(["sources", "validate", "--mode", "cards-config"]);
+        match cmd.command {
+            SourcesSubcommand::Validate { mode, .. } => {
+                assert_eq!(mode, "cards-config");
+            }
+            _ => panic!("Expected Validate subcommand"),
+        }
+    }
+
+    #[test]
+    fn test_sources_subcommand_validate_all_options() {
+        let cmd = SourcesCommands::parse_from([
+            "sources",
+            "validate",
+            "--mode",
+            "config-fs",
+            "--suggest-matches",
+            "--threshold",
+            "0.85",
+            "--json",
+        ]);
+        match cmd.command {
+            SourcesSubcommand::Validate {
+                mode,
+                suggest_matches,
+                threshold,
+                json,
+            } => {
+                assert_eq!(mode, "config-fs");
+                assert!(suggest_matches);
+                assert!((threshold - 0.85).abs() < f32::EPSILON);
+                assert!(json);
+            }
+            _ => panic!("Expected Validate subcommand"),
+        }
+    }
+
+    #[test]
+    fn test_sources_subcommand_alias_list_defaults() {
+        let cmd = SourcesCommands::parse_from(["sources", "alias", "list"]);
+        match cmd.command {
+            SourcesSubcommand::Alias(alias_cmds) => match alias_cmds.command {
+                AliasSubcommand::List { json } => {
+                    assert!(!json);
+                }
+                _ => panic!("Expected List subcommand"),
+            },
+            _ => panic!("Expected Alias subcommand"),
+        }
+    }
+
+    #[test]
+    fn test_sources_subcommand_alias_list_json() {
+        let cmd = SourcesCommands::parse_from(["sources", "alias", "list", "--json"]);
+        match cmd.command {
+            SourcesSubcommand::Alias(alias_cmds) => match alias_cmds.command {
+                AliasSubcommand::List { json } => {
+                    assert!(json);
+                }
+                _ => panic!("Expected List subcommand"),
+            },
+            _ => panic!("Expected Alias subcommand"),
+        }
+    }
+
+    #[test]
+    fn test_sources_subcommand_alias_add() {
+        let cmd = SourcesCommands::parse_from([
+            "sources",
+            "alias",
+            "add",
+            "general-open-music-theory",
+            "OMT",
+        ]);
+        match cmd.command {
+            SourcesSubcommand::Alias(alias_cmds) => match alias_cmds.command {
+                AliasSubcommand::Add { source_id, alias } => {
+                    assert_eq!(source_id, "general-open-music-theory");
+                    assert_eq!(alias, "OMT");
+                }
+                _ => panic!("Expected Add subcommand"),
+            },
+            _ => panic!("Expected Alias subcommand"),
+        }
+    }
+
+    #[test]
+    fn test_sources_subcommand_alias_remove() {
+        let cmd = SourcesCommands::parse_from([
+            "sources",
+            "alias",
+            "remove",
+            "general-open-music-theory",
+            "OMT",
+        ]);
+        match cmd.command {
+            SourcesSubcommand::Alias(alias_cmds) => match alias_cmds.command {
+                AliasSubcommand::Remove { source_id, alias } => {
+                    assert_eq!(source_id, "general-open-music-theory");
+                    assert_eq!(alias, "OMT");
+                }
+                _ => panic!("Expected Remove subcommand"),
+            },
+            _ => panic!("Expected Alias subcommand"),
+        }
+    }
+
+    // ===================================================================
+    // handle_scan tests
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_scan_table_empty_sources() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        // No concept cards => empty results, prints "No sources found."
+        let result = handle_scan(&config, "table", false).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_scan_json_empty_sources() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        let result = handle_scan(&config, "json", false).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_scan_table_with_sources() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        create_concept_card(
+            &temp_dir,
+            "harmony",
+            "concept-1.md",
+            Some("Open Music Theory"),
+        )
+        .await;
+        create_concept_card(
+            &temp_dir,
+            "harmony",
+            "concept-2.md",
+            Some("A Geometry of Music"),
+        )
+        .await;
+
+        let result = handle_scan(&config, "table", false).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_scan_table_with_show_cards() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        create_concept_card(
+            &temp_dir,
+            "harmony",
+            "concept-1.md",
+            Some("Open Music Theory"),
+        )
+        .await;
+        create_concept_card(
+            &temp_dir,
+            "fundamentals",
+            "concept-2.md",
+            Some("Open Music Theory"),
+        )
+        .await;
+
+        let result = handle_scan(&config, "table", true).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_scan_json_with_sources() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        create_concept_card(
+            &temp_dir,
+            "harmony",
+            "concept-1.md",
+            Some("Open Music Theory"),
+        )
+        .await;
+        create_concept_card(
+            &temp_dir,
+            "harmony",
+            "concept-2.md",
+            Some("A Geometry of Music"),
+        )
+        .await;
+
+        let result = handle_scan(&config, "json", false).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_scan_json_with_show_cards() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        create_concept_card(
+            &temp_dir,
+            "harmony",
+            "concept-1.md",
+            Some("Open Music Theory"),
+        )
+        .await;
+
+        let result = handle_scan(&config, "json", true).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_scan_json_multiple_cards_same_source() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        for i in 0..5 {
+            create_concept_card(
+                &temp_dir,
+                "harmony",
+                &format!("concept-{}.md", i),
+                Some("Open Music Theory"),
+            )
+            .await;
+        }
+
+        let result = handle_scan(&config, "json", true).await;
+        assert!(result.is_ok());
+    }
+
+    // ===================================================================
+    // handle_alias_list tests
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_list_table_no_aliases() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        let result = handle_alias_list(&config, false).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_list_json_no_aliases() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        let result = handle_alias_list(&config, true).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_list_table_with_aliases() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config_with_sources(
+            &temp_dir,
+            &[("open-music-theory", "[2022] Gotham - Open Music Theory.pdf")],
+            &[("open-music-theory", &["OMT", "Gotham OMT"])],
+        )
+        .await;
+
+        let result = handle_alias_list(&config, false).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_list_json_with_aliases() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config_with_sources(
+            &temp_dir,
+            &[("open-music-theory", "[2022] Gotham - Open Music Theory.pdf")],
+            &[("open-music-theory", &["OMT", "Gotham OMT"])],
+        )
+        .await;
+
+        let result = handle_alias_list(&config, true).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_list_table_multiple_categories() {
+        // This tests the loop over multiple categories. We use general only
+        // since test helpers create general sources, but it exercises the
+        // iteration logic with multiple file IDs.
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config_with_sources(
+            &temp_dir,
+            &[
+                ("source-a", "[2020] Author - Source A.pdf"),
+                ("source-b", "[2021] Author - Source B.pdf"),
+            ],
+            &[
+                ("source-a", &["Alias A1", "Alias A2"]),
+                ("source-b", &["Alias B1"]),
+            ],
+        )
+        .await;
+
+        let result = handle_alias_list(&config, false).await;
+        assert!(result.is_ok());
+    }
+
+    // ===================================================================
+    // handle_alias tests (dispatcher)
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_dispatches_list() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config(&temp_dir).await;
+
+        let alias_cmds = AliasCommands {
+            command: AliasSubcommand::List { json: false },
+        };
+        let result = handle_alias(&config, alias_cmds).await;
+        assert!(result.is_ok());
+    }
+
+    // ===================================================================
+    // handle_alias_add tests
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_add_new_alias() {
+        let temp_dir = TempDir::new().unwrap();
+        let _config = create_test_config_with_sources(
+            &temp_dir,
+            &[("open-music-theory", "[2022] Gotham - Open Music Theory.pdf")],
+            &[],
+        )
+        .await;
+
+        // Point config dir for get_config_path
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_add("general-open-music-theory", "OMT").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+
+        // Verify the alias was written to the config file
+        let content = fs::read_to_string(config_dir.join("default.toml"))
+            .await
+            .unwrap();
+        assert!(
+            content.contains("OMT"),
+            "Config should contain the added alias"
+        );
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_add_duplicate_alias() {
+        let temp_dir = TempDir::new().unwrap();
+        let _config = create_test_config_with_sources(
+            &temp_dir,
+            &[("open-music-theory", "[2022] Gotham - Open Music Theory.pdf")],
+            &[("open-music-theory", &["OMT"])],
+        )
+        .await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Adding an alias that already exists should succeed (no-op)
+        let result = handle_alias_add("general-open-music-theory", "OMT").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_add_invalid_source_id() {
+        let temp_dir = TempDir::new().unwrap();
+        let _config = create_test_config(&temp_dir).await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_add("invalid-source", "OMT").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_err());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_add_creates_aliases_section() {
+        // Test that adding an alias creates the aliases table if missing
+        let temp_dir = TempDir::new().unwrap();
+        let _config = create_test_config_with_sources(
+            &temp_dir,
+            &[("source-a", "[2020] Author - Source A.pdf")],
+            &[], // No aliases configured initially
+        )
+        .await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_add("general-source-a", "New Alias").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+
+        let content = fs::read_to_string(config_dir.join("default.toml"))
+            .await
+            .unwrap();
+        assert!(content.contains("New Alias"));
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_add_second_alias_to_existing() {
+        let temp_dir = TempDir::new().unwrap();
+        let _config = create_test_config_with_sources(
+            &temp_dir,
+            &[("open-music-theory", "[2022] Gotham - Open Music Theory.pdf")],
+            &[("open-music-theory", &["OMT"])],
+        )
+        .await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_add("general-open-music-theory", "Open MT").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+
+        let content = fs::read_to_string(config_dir.join("default.toml"))
+            .await
+            .unwrap();
+        assert!(content.contains("OMT"), "Original alias should remain");
+        assert!(content.contains("Open MT"), "New alias should be added");
+    }
+
+    // ===================================================================
+    // handle_alias_remove tests
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_remove_existing() {
+        let temp_dir = TempDir::new().unwrap();
+        let _config = create_test_config_with_sources(
+            &temp_dir,
+            &[("open-music-theory", "[2022] Gotham - Open Music Theory.pdf")],
+            &[("open-music-theory", &["OMT", "Open MT"])],
+        )
+        .await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_remove("general-open-music-theory", "OMT").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+
+        let content = fs::read_to_string(config_dir.join("default.toml"))
+            .await
+            .unwrap();
+        assert!(!content.contains("\"OMT\""), "Removed alias should be gone");
+        assert!(content.contains("Open MT"), "Other alias should remain");
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_remove_nonexistent_alias() {
+        let temp_dir = TempDir::new().unwrap();
+        let _config = create_test_config_with_sources(
+            &temp_dir,
+            &[("open-music-theory", "[2022] Gotham - Open Music Theory.pdf")],
+            &[("open-music-theory", &["OMT"])],
+        )
+        .await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Removing an alias that doesn't exist should succeed (prints message)
+        let result = handle_alias_remove("general-open-music-theory", "NonExistent").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_remove_last_alias_removes_key() {
+        let temp_dir = TempDir::new().unwrap();
+        let _config = create_test_config_with_sources(
+            &temp_dir,
+            &[("open-music-theory", "[2022] Gotham - Open Music Theory.pdf")],
+            &[("open-music-theory", &["OMT"])],
+        )
+        .await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_remove("general-open-music-theory", "OMT").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+
+        // Verify the config was cleaned up
+        let content = fs::read_to_string(config_dir.join("default.toml"))
+            .await
+            .unwrap();
+        assert!(!content.contains("\"OMT\""), "Removed alias should be gone");
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_remove_invalid_source_id() {
+        let temp_dir = TempDir::new().unwrap();
+        let _config = create_test_config(&temp_dir).await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_remove("invalid-source", "OMT").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_err());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_remove_no_aliases_for_category() {
+        let temp_dir = TempDir::new().unwrap();
+        // Create config without any aliases section populated
+        let _config = create_test_config_with_sources(
+            &temp_dir,
+            &[("source-a", "[2020] Author - Source A.pdf")],
+            &[], // No aliases at all
+        )
+        .await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Trying to remove from a source with no aliases configured
+        let result = handle_alias_remove("general-source-a", "SomeAlias").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        // Should succeed gracefully (prints "No aliases configured")
+        assert!(result.is_ok());
+    }
+
+    // ===================================================================
+    // handle_sources_command tests (integration)
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_sources_command_scan() {
+        let temp_dir = TempDir::new().unwrap();
+
+        // Set up the config so Config::load() works
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).await.unwrap();
+
+        let config_content = format!(
+            r#"
+[server]
+name = "test"
+version = "0.1.0"
+
+[paths]
+base = "{}"
+sources_md = "sources-md"
+concept_cards = "{}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources.oxford]
+path = ""
+[sources.oxford.files]
+[sources.oxford.aliases]
+[sources.general]
+path = ""
+[sources.general.files]
+[sources.general.aliases]
+[sources.papers]
+path = ""
+[sources.papers.files]
+[sources.papers.aliases]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            temp_dir.path().display(),
+            concept_cards_path.display(),
+            temp_dir.path().join("test-index").display(),
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        fs::write(config_dir.join("default.toml"), config_content)
+            .await
+            .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let cmds = SourcesCommands {
+            command: SourcesSubcommand::Scan {
+                output: "table".to_string(),
+                show_cards: false,
+            },
+        };
+
+        let result = handle_sources_command(cmds, None).await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_sources_command_alias_list() {
+        let temp_dir = TempDir::new().unwrap();
+
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).await.unwrap();
+
+        let config_content = format!(
+            r#"
+[server]
+name = "test"
+version = "0.1.0"
+
+[paths]
+base = "{}"
+sources_md = "sources-md"
+concept_cards = "{}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources.oxford]
+path = ""
+[sources.oxford.files]
+[sources.oxford.aliases]
+[sources.general]
+path = ""
+[sources.general.files]
+[sources.general.aliases]
+[sources.papers]
+path = ""
+[sources.papers.files]
+[sources.papers.aliases]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            temp_dir.path().display(),
+            concept_cards_path.display(),
+            temp_dir.path().join("test-index").display(),
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        fs::write(config_dir.join("default.toml"), config_content)
+            .await
+            .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let cmds = SourcesCommands {
+            command: SourcesSubcommand::Alias(AliasCommands {
+                command: AliasSubcommand::List { json: true },
+            }),
+        };
+
+        let result = handle_sources_command(cmds, None).await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    // ===================================================================
+    // handle_alias dispatcher tests for Add and Remove variants
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_dispatches_add() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config_with_sources(
+            &temp_dir,
+            &[("source-a", "[2020] Author - Source A.pdf")],
+            &[],
+        )
+        .await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let alias_cmds = AliasCommands {
+            command: AliasSubcommand::Add {
+                source_id: "general-source-a".to_string(),
+                alias: "Test Alias".to_string(),
+            },
+        };
+        let result = handle_alias(&config, alias_cmds).await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_dispatches_remove() {
+        let temp_dir = TempDir::new().unwrap();
+        let config = create_test_config_with_sources(
+            &temp_dir,
+            &[("source-a", "[2020] Author - Source A.pdf")],
+            &[("source-a", &["Existing Alias"])],
+        )
+        .await;
+
+        let config_dir = temp_dir.path().join("config");
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let alias_cmds = AliasCommands {
+            command: AliasSubcommand::Remove {
+                source_id: "general-source-a".to_string(),
+                alias: "Existing Alias".to_string(),
+            },
+        };
+        let result = handle_alias(&config, alias_cmds).await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    // ===================================================================
+    // handle_alias_remove: missing aliases table in TOML
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_remove_no_aliases_table_in_toml() {
+        // Create a config where the general section has no aliases table at all
+        let temp_dir = TempDir::new().unwrap();
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).await.unwrap();
+
+        // Intentionally omit [sources.general.aliases] from the TOML
+        let config_content = format!(
+            r#"
+[server]
+name = "test-server"
+version = "0.1.0"
+
+[paths]
+base = "{base}"
+sources_md = "sources-md"
+concept_cards = "{cards}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources.oxford]
+path = ""
+[sources.oxford.files]
+[sources.oxford.aliases]
+
+[sources.general]
+path = ""
+[sources.general.files]
+source-a = "[2020] Author - Source A.pdf"
+
+[sources.papers]
+path = ""
+[sources.papers.files]
+[sources.papers.aliases]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{index}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            base = temp_dir.path().display(),
+            cards = concept_cards_path.display(),
+            index = temp_dir.path().join("test-index").display(),
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        fs::write(config_dir.join("default.toml"), &config_content)
+            .await
+            .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // This should hit the "No aliases configured for category" early return
+        let result = handle_alias_remove("general-source-a", "SomeAlias").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_ok());
+    }
+
+    // ===================================================================
+    // handle_alias_add: missing sources section error path
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_add_missing_category_in_toml() {
+        // Create a config where the TOML file has no [sources.oxford] section
+        // but we try to add an alias for an oxford source
+        let temp_dir = TempDir::new().unwrap();
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).await.unwrap();
+
+        // Intentionally use a minimal config that only has general
+        let config_content = format!(
+            r#"
+[server]
+name = "test"
+version = "0.1.0"
+
+[paths]
+base = "{base}"
+sources_md = "sources-md"
+concept_cards = "{cards}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources.general]
+path = ""
+[sources.general.files]
+[sources.general.aliases]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{index}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            base = temp_dir.path().display(),
+            cards = concept_cards_path.display(),
+            index = temp_dir.path().join("test-index").display(),
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        fs::write(config_dir.join("default.toml"), &config_content)
+            .await
+            .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        // Trying to add an alias for oxford which doesn't exist in TOML
+        let result = handle_alias_add("oxford-some-source", "My Alias").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_err());
+        let err_msg = result.unwrap_err().to_string();
+        assert!(
+            err_msg.contains("oxford"),
+            "Error should mention the missing category: {}",
+            err_msg
+        );
+    }
+
+    // ===================================================================
+    // handle_alias_remove: missing category in TOML
+    // ===================================================================
+
+    #[tokio::test]
+    #[serial(config_env)]
+    async fn test_handle_alias_remove_missing_category_in_toml() {
+        let temp_dir = TempDir::new().unwrap();
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).await.unwrap();
+
+        let config_content = format!(
+            r#"
+[server]
+name = "test"
+version = "0.1.0"
+
+[paths]
+base = "{base}"
+sources_md = "sources-md"
+concept_cards = "{cards}"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+
+[sources.general]
+path = ""
+[sources.general.files]
+[sources.general.aliases]
+
+[logging]
+level = "error"
+coloured = false
+output = "stderr"
+report_caller = false
+
+[search]
+backend = "tantivy"
+index_path = "{index}"
+rebuild_on_startup = false
+snippet_size = 200
+fuzzy_search = false
+fuzzy_distance = 2
+"#,
+            base = temp_dir.path().display(),
+            cards = concept_cards_path.display(),
+            index = temp_dir.path().join("test-index").display(),
+        );
+
+        let config_dir = temp_dir.path().join("config");
+        fs::create_dir_all(&config_dir).await.unwrap();
+        fs::write(config_dir.join("default.toml"), &config_content)
+            .await
+            .unwrap();
+
+        std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
+
+        let result = handle_alias_remove("oxford-some-source", "My Alias").await;
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        assert!(result.is_err());
+        let err_msg = result.unwrap_err().to_string();
+        assert!(
+            err_msg.contains("oxford"),
+            "Error should mention the missing category: {}",
+            err_msg
+        );
+    }
+
+    // ===================================================================
+    // SourcesCommands Debug derive tests
+    // ===================================================================
+
+    #[test]
+    fn test_sources_commands_debug() {
+        let cmd = SourcesCommands::parse_from(["sources", "scan"]);
+        let debug_str = format!("{:?}", cmd);
+        assert!(debug_str.contains("Scan"));
+    }
+
+    #[test]
+    fn test_alias_commands_debug() {
+        let cmd = SourcesCommands::parse_from(["sources", "alias", "list"]);
+        let debug_str = format!("{:?}", cmd);
+        assert!(debug_str.contains("List"));
+    }
+
+    #[test]
+    fn test_alias_subcommand_add_debug() {
+        let cmd = SourcesCommands::parse_from(["sources", "alias", "add", "general-x", "y"]);
+        let debug_str = format!("{:?}", cmd);
+        assert!(debug_str.contains("Add"));
+    }
+
+    #[test]
+    fn test_alias_subcommand_remove_debug() {
+        let cmd = SourcesCommands::parse_from(["sources", "alias", "remove", "general-x", "y"]);
+        let debug_str = format!("{:?}", cmd);
+        assert!(debug_str.contains("Remove"));
+    }
+
+    #[test]
+    fn test_validate_subcommand_debug() {
+        let cmd = SourcesCommands::parse_from(["sources", "validate"]);
+        let debug_str = format!("{:?}", cmd);
+        assert!(debug_str.contains("Validate"));
+    }
+
+    // Note: handle_validate cannot be tested directly because it calls
+    // std::process::exit() which terminates the test process. The validation
+    // logic itself is thoroughly tested in sources/validator.rs. The mode
+    // parsing and JSON/table formatting are covered by the mode parsing tests
+    // and by the fact that handle_validate delegates to validate_sources().
 }

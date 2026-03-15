@@ -535,4 +535,542 @@ mod tests {
             assert!(has_skill || has_conventions || has_scope);
         }
     }
+
+    // ── find_dir_with_marker ─────────────────────────────────────────
+
+    #[test]
+    fn test_find_dir_with_marker_found_at_start() {
+        let tmp = tempfile::tempdir().unwrap();
+        std::fs::write(tmp.path().join("marker.txt"), "m").unwrap();
+
+        let result = find_dir_with_marker(tmp.path(), "marker.txt");
+        assert_eq!(result.as_deref(), Some(tmp.path()));
+    }
+
+    #[test]
+    fn test_find_dir_with_marker_found_one_level_up() {
+        let tmp = tempfile::tempdir().unwrap();
+        let child = tmp.path().join("child");
+        std::fs::create_dir_all(&child).unwrap();
+        std::fs::write(tmp.path().join("marker.txt"), "m").unwrap();
+
+        let result = find_dir_with_marker(&child, "marker.txt");
+        assert_eq!(result.as_deref(), Some(tmp.path()));
+    }
+
+    #[test]
+    fn test_find_dir_with_marker_found_at_max_walk_boundary() {
+        // Place marker exactly MAX_WALK_LEVELS - 1 levels above start
+        let tmp = tempfile::tempdir().unwrap();
+        let mut deep = tmp.path().to_path_buf();
+        // Create exactly MAX_WALK_LEVELS - 1 nested dirs (so the walk reaches
+        // the base on the last allowed iteration)
+        for i in 0..(MAX_WALK_LEVELS - 1) {
+            deep = deep.join(format!("d{}", i));
+        }
+        std::fs::create_dir_all(&deep).unwrap();
+        std::fs::write(tmp.path().join("marker.txt"), "m").unwrap();
+
+        let result = find_dir_with_marker(&deep, "marker.txt");
+        assert_eq!(
+            result.as_deref(),
+            Some(tmp.path()),
+            "Should find marker at the boundary of MAX_WALK_LEVELS"
+        );
+    }
+
+    #[test]
+    fn test_find_dir_with_marker_not_found_beyond_max_walk() {
+        // Place marker MAX_WALK_LEVELS + 1 levels above start so the walk
+        // gives up before reaching it.
+        let tmp = tempfile::tempdir().unwrap();
+        let mut deep = tmp.path().to_path_buf();
+        for i in 0..(MAX_WALK_LEVELS + 1) {
+            deep = deep.join(format!("d{}", i));
+        }
+        std::fs::create_dir_all(&deep).unwrap();
+        std::fs::write(tmp.path().join("marker.txt"), "m").unwrap();
+
+        let result = find_dir_with_marker(&deep, "marker.txt");
+        assert!(
+            result.is_none(),
+            "Should NOT find marker beyond MAX_WALK_LEVELS"
+        );
+    }
+
+    #[test]
+    fn test_find_dir_with_marker_nonexistent_marker() {
+        let tmp = tempfile::tempdir().unwrap();
+        let result = find_dir_with_marker(tmp.path(), "does_not_exist.xyz");
+        assert!(result.is_none());
+    }
+
+    #[test]
+    fn test_find_dir_with_marker_nested_marker_path() {
+        // Marker can be a nested path like "config/default.toml"
+        let tmp = tempfile::tempdir().unwrap();
+        let config = tmp.path().join("config");
+        std::fs::create_dir_all(&config).unwrap();
+        std::fs::write(config.join("default.toml"), "# cfg").unwrap();
+
+        let child = tmp.path().join("subdir");
+        std::fs::create_dir_all(&child).unwrap();
+
+        let result = find_dir_with_marker(&child, "config/default.toml");
+        assert_eq!(result.as_deref(), Some(tmp.path()));
+    }
+
+    // ── server_root (controlled temp dirs) ───────────────────────────
+
+    #[test]
+    fn test_server_root_returns_dir_with_config_default_toml() {
+        // If server_root succeeds, the returned dir must contain config/default.toml
+        if let Some(root) = server_root() {
+            assert!(
+                root.join("config").join("default.toml").exists(),
+                "server_root should point to a dir with config/default.toml"
+            );
+        }
+    }
+
+    // ── config_dir (controlled environment) ──────────────────────────
+
+    #[test]
+    #[serial(config_env)]
+    fn test_config_dir_env_var_with_tilde_and_valid_dir() {
+        // Create a temp dir with default.toml, set env to its path using tilde
+        let tmp = tempfile::tempdir().unwrap();
+        std::fs::write(tmp.path().join("default.toml"), "# cfg").unwrap();
+
+        // We cannot easily fake a tilde path that maps to tmp, so we use the
+        // absolute path here to make sure the env-var branch (priority 1)
+        // returns correctly and that expand_tilde is invoked.
+        env::set_var("MUSIC_THEORY_CONFIG_DIR", tmp.path());
+
+        let result = config_dir();
+        assert!(result.is_some(), "Should find config via env var");
+        assert_eq!(result.unwrap(), tmp.path().to_path_buf());
+
+        env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+    }
+
+    #[test]
+    #[serial(config_env)]
+    fn test_config_dir_env_var_dir_exists_but_no_default_toml() {
+        // The env var points to an existing directory that does NOT contain
+        // default.toml, so priority 1 should be skipped.
+        let tmp = tempfile::tempdir().unwrap();
+        // Do NOT create default.toml inside tmp.
+        env::set_var("MUSIC_THEORY_CONFIG_DIR", tmp.path());
+
+        let result = config_dir();
+        // The env-var branch should fail; result may come from another
+        // strategy or be None.
+        if let Some(ref path) = result {
+            assert_ne!(
+                path,
+                &tmp.path().to_path_buf(),
+                "Should NOT return the env-var dir when default.toml is missing"
+            );
+        }
+
+        env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+    }
+
+    #[test]
+    #[serial(config_env)]
+    fn test_config_dir_returns_path_containing_default_toml() {
+        // Regardless of strategy used, if config_dir returns Some the dir
+        // must contain default.toml.
+        env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        if let Some(path) = config_dir() {
+            assert!(
+                path.join("default.toml").exists(),
+                "config_dir result must contain default.toml: {:?}",
+                path
+            );
+        }
+    }
+
+    // ── skill_root (controlled environment) ──────────────────────────
+
+    #[test]
+    #[serial(skill_env)]
+    fn test_skill_root_env_var_existing_dir() {
+        let tmp = tempfile::tempdir().unwrap();
+        env::set_var("MUSIC_THEORY_SKILL_ROOT", tmp.path());
+
+        let result = skill_root();
+        assert_eq!(result.as_deref(), Some(tmp.path()));
+
+        env::remove_var("MUSIC_THEORY_SKILL_ROOT");
+    }
+
+    #[test]
+    #[serial(skill_env)]
+    fn test_skill_root_env_var_nonexistent_dir_falls_through() {
+        env::set_var("MUSIC_THEORY_SKILL_ROOT", "/no/such/dir/ever");
+
+        let result = skill_root();
+        // The env-var branch should fail; result comes from project_root or
+        // fallback (or None).
+        if let Some(ref path) = result {
+            assert_ne!(
+                path,
+                &PathBuf::from("/no/such/dir/ever"),
+                "Should NOT return a non-existent env-var path"
+            );
+        }
+
+        env::remove_var("MUSIC_THEORY_SKILL_ROOT");
+    }
+
+    // ── expand_tilde edge cases ──────────────────────────────────────
+
+    #[test]
+    fn test_expand_tilde_embedded_tilde_not_at_start() {
+        // A tilde that is NOT at the start of the path should be left alone
+        let original = PathBuf::from("/some/~path/here");
+        let expanded = expand_tilde(&original);
+        assert_eq!(original, expanded);
+    }
+
+    #[test]
+    fn test_expand_tilde_empty_path() {
+        let expanded = expand_tilde("");
+        assert_eq!(expanded, PathBuf::from(""));
+    }
+
+    #[test]
+    fn test_expand_tilde_deeply_nested() {
+        let path = expand_tilde("~/a/b/c/d/e");
+        if let Some(home) = dirs::home_dir() {
+            assert_eq!(path, home.join("a/b/c/d/e"));
+        }
+    }
+
+    // ── debug_paths additional assertions ────────────────────────────
+
+    #[test]
+    fn test_debug_paths_output_is_multiline() {
+        let output = debug_paths();
+        let line_count = output.lines().count();
+        assert!(
+            line_count >= 9,
+            "debug_paths should produce at least 9 lines, got {}",
+            line_count
+        );
+    }
+
+    // ── config_dir: CWD-relative paths branch ─────────────────────────
+
+    #[test]
+    #[serial(config_env)]
+    fn test_config_dir_no_env_var_set() {
+        // With no env var set, config_dir falls through to server_root, CWD,
+        // or fallback strategies. We verify it doesn't panic and that if it
+        // returns Some, the directory contains default.toml.
+        env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        let result = config_dir();
+        if let Some(path) = result {
+            assert!(
+                path.join("default.toml").exists(),
+                "config_dir result must contain default.toml: {:?}",
+                path
+            );
+        }
+    }
+
+    #[test]
+    #[serial(config_env)]
+    fn test_config_dir_env_var_empty_string() {
+        // Setting env var to empty string should cause env::var to succeed
+        // but the empty path won't contain default.toml, so it falls through.
+        env::set_var("MUSIC_THEORY_CONFIG_DIR", "");
+
+        let result = config_dir();
+        if let Some(ref path) = result {
+            assert!(
+                path.join("default.toml").exists(),
+                "Returned config dir must contain default.toml"
+            );
+        }
+
+        env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+    }
+
+    #[test]
+    #[serial(config_env)]
+    fn test_config_dir_cwd_relative_fallback() {
+        // Create a temporary directory with a config/default.toml layout and
+        // change CWD to it. This exercises the CWD-relative path search
+        // (priority 3).
+        let tmp = tempfile::tempdir().unwrap();
+        let config = tmp.path().join("config");
+        std::fs::create_dir_all(&config).unwrap();
+        std::fs::write(config.join("default.toml"), "# test").unwrap();
+
+        // Ensure env var doesn't interfere
+        env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+
+        let original_cwd = env::current_dir().ok();
+
+        // Change CWD to the temp dir so ./config is found
+        let _ = env::set_current_dir(tmp.path());
+
+        let result = config_dir();
+        // Restore CWD before assertions to avoid interfering with other tests
+        if let Some(ref cwd) = original_cwd {
+            let _ = env::set_current_dir(cwd);
+        }
+
+        // The result might come from CWD-relative or another strategy,
+        // but if it returns Some, it must contain default.toml
+        if let Some(ref path) = result {
+            assert!(
+                path.join("default.toml").exists(),
+                "Returned config dir must contain default.toml: {:?}",
+                path
+            );
+        }
+    }
+
+    // ── skill_root: fallback path branch ──────────────────────────────
+
+    #[test]
+    #[serial(skill_env)]
+    fn test_skill_root_no_env_var_set() {
+        env::remove_var("MUSIC_THEORY_SKILL_ROOT");
+
+        let result = skill_root();
+        // Result may come from project_root or the hardcoded fallback
+        if let Some(path) = result {
+            assert!(path.exists(), "skill_root result should exist: {:?}", path);
+        }
+    }
+
+    #[test]
+    #[serial(skill_env)]
+    fn test_skill_root_env_var_empty_string() {
+        // An empty env var expands to "" which won't exist as a path
+        env::set_var("MUSIC_THEORY_SKILL_ROOT", "");
+
+        let result = skill_root();
+        // Empty path "" .exists() returns false, so env branch falls through
+        if let Some(ref path) = result {
+            assert_ne!(path, &PathBuf::from(""), "Should NOT return an empty path");
+        }
+
+        env::remove_var("MUSIC_THEORY_SKILL_ROOT");
+    }
+
+    // ── find_dir_with_marker: additional edge cases ───────────────────
+
+    #[test]
+    fn test_find_dir_with_marker_marker_is_directory() {
+        // The marker can be a directory, not just a file
+        let tmp = tempfile::tempdir().unwrap();
+        let marker_dir = tmp.path().join("marker_dir");
+        std::fs::create_dir_all(&marker_dir).unwrap();
+
+        let child = tmp.path().join("child");
+        std::fs::create_dir_all(&child).unwrap();
+
+        let result = find_dir_with_marker(&child, "marker_dir");
+        assert_eq!(result.as_deref(), Some(tmp.path()));
+    }
+
+    #[test]
+    fn test_find_dir_with_marker_empty_marker() {
+        // Empty marker matches the dir itself (dir.join("") is the dir)
+        let tmp = tempfile::tempdir().unwrap();
+        let result = find_dir_with_marker(tmp.path(), "");
+        // PathBuf::join("") returns the original path which .exists()
+        assert_eq!(result.as_deref(), Some(tmp.path()));
+    }
+
+    #[test]
+    fn test_find_dir_with_marker_start_does_not_exist() {
+        // Start from a path that doesn't exist on disk
+        let result = find_dir_with_marker("/no/such/path/at/all", "marker.txt");
+        assert!(result.is_none());
+    }
+
+    #[test]
+    fn test_find_dir_with_marker_deeply_nested_marker_path() {
+        // Marker is a deeply nested path like "a/b/c/file.txt"
+        let tmp = tempfile::tempdir().unwrap();
+        let nested = tmp.path().join("a").join("b").join("c");
+        std::fs::create_dir_all(&nested).unwrap();
+        std::fs::write(nested.join("file.txt"), "x").unwrap();
+
+        let child = tmp.path().join("subdir");
+        std::fs::create_dir_all(&child).unwrap();
+
+        let result = find_dir_with_marker(&child, "a/b/c/file.txt");
+        assert_eq!(result.as_deref(), Some(tmp.path()));
+    }
+
+    #[test]
+    fn test_find_dir_with_marker_found_at_exact_level_zero() {
+        // Marker exists at the start directory itself (level 0 of the walk)
+        let tmp = tempfile::tempdir().unwrap();
+        std::fs::write(tmp.path().join("here.txt"), "found").unwrap();
+
+        let result = find_dir_with_marker(tmp.path(), "here.txt");
+        assert_eq!(result.as_deref(), Some(tmp.path()));
+    }
+
+    #[test]
+    fn test_find_dir_with_marker_multiple_markers_at_different_levels() {
+        // Marker exists at multiple levels; should find the closest (deepest)
+        let tmp = tempfile::tempdir().unwrap();
+        let child = tmp.path().join("child");
+        std::fs::create_dir_all(&child).unwrap();
+        // Marker at both levels
+        std::fs::write(tmp.path().join("m.txt"), "parent").unwrap();
+        std::fs::write(child.join("m.txt"), "child").unwrap();
+
+        let result = find_dir_with_marker(&child, "m.txt");
+        // Should find the child's marker first since we start there
+        assert_eq!(result.as_deref(), Some(child.as_path()));
+    }
+
+    // ── server_root / project_root: additional verification ───────────
+
+    #[test]
+    fn test_server_root_if_found_contains_config() {
+        if let Some(root) = server_root() {
+            let config_dir = root.join("config");
+            assert!(
+                config_dir.exists(),
+                "server_root should contain a config directory: {:?}",
+                root
+            );
+            assert!(
+                config_dir.join("default.toml").exists(),
+                "server_root/config should contain default.toml"
+            );
+        }
+    }
+
+    #[test]
+    fn test_project_root_if_found_has_expected_structure() {
+        if let Some(root) = project_root() {
+            // At least one of the marker files should exist
+            let markers = ["SKILL.md", "CONVENTIONS.md", "SCOPE.md"];
+            let found = markers.iter().any(|m| root.join(m).exists());
+            assert!(
+                found,
+                "project_root should contain at least one marker file: {:?}",
+                root
+            );
+        }
+    }
+
+    // ── binary_path / binary_dir: additional property checks ──────────
+
+    #[test]
+    fn test_binary_path_is_absolute() {
+        if let Some(path) = binary_path() {
+            assert!(
+                path.is_absolute(),
+                "Binary path should be absolute: {:?}",
+                path
+            );
+        }
+    }
+
+    #[test]
+    fn test_binary_dir_is_absolute() {
+        if let Some(dir) = binary_dir() {
+            assert!(
+                dir.is_absolute(),
+                "Binary dir should be absolute: {:?}",
+                dir
+            );
+        }
+    }
+
+    #[test]
+    fn test_binary_dir_is_parent_of_binary_path() {
+        if let (Some(path), Some(dir)) = (binary_path(), binary_dir()) {
+            assert!(
+                path.starts_with(&dir),
+                "Binary path {:?} should be under binary dir {:?}",
+                path,
+                dir
+            );
+        }
+    }
+
+    // ── expand_tilde: more edge cases ─────────────────────────────────
+
+    #[test]
+    fn test_expand_tilde_tilde_with_dot_path() {
+        let path = expand_tilde("~/.");
+        if let Some(home) = dirs::home_dir() {
+            assert_eq!(path, home.join("."));
+        }
+    }
+
+    #[test]
+    fn test_expand_tilde_double_tilde() {
+        // "~~" is a single path component, not "~" + "~",
+        // so strip_prefix("~") does not match — returned as-is
+        let path = expand_tilde("~~");
+        assert_eq!(path, PathBuf::from("~~"));
+    }
+
+    #[test]
+    fn test_expand_tilde_tilde_with_space_in_path() {
+        let path = expand_tilde("~/my path/with spaces");
+        if let Some(home) = dirs::home_dir() {
+            assert_eq!(path, home.join("my path/with spaces"));
+        }
+    }
+
+    // ── debug_paths: verify env var output ────────────────────────────
+
+    #[test]
+    #[serial(config_env)]
+    fn test_debug_paths_reflects_env_vars() {
+        env::set_var("MUSIC_THEORY_CONFIG_DIR", "/custom/config");
+        env::set_var("MUSIC_THEORY_SKILL_ROOT", "/custom/skill");
+
+        let output = debug_paths();
+        assert!(
+            output.contains("/custom/config"),
+            "debug_paths should show MUSIC_THEORY_CONFIG_DIR value"
+        );
+        assert!(
+            output.contains("/custom/skill"),
+            "debug_paths should show MUSIC_THEORY_SKILL_ROOT value"
+        );
+
+        env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+        env::remove_var("MUSIC_THEORY_SKILL_ROOT");
+    }
+
+    #[test]
+    #[serial(config_env)]
+    fn test_debug_paths_shows_none_when_env_unset() {
+        env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+        env::remove_var("MUSIC_THEORY_SKILL_ROOT");
+
+        let output = debug_paths();
+        // When env vars are unset, the output should show None for those fields
+        assert!(
+            output.contains("MUSIC_THEORY_CONFIG_DIR: None"),
+            "Should show None for unset MUSIC_THEORY_CONFIG_DIR: {}",
+            output
+        );
+        assert!(
+            output.contains("MUSIC_THEORY_SKILL_ROOT: None"),
+            "Should show None for unset MUSIC_THEORY_SKILL_ROOT: {}",
+            output
+        );
+    }
 }

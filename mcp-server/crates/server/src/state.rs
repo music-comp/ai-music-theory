@@ -1358,6 +1358,80 @@ Test content.
     }
 
     #[tokio::test]
+    #[cfg(feature = "graph")]
+    async fn test_require_graph_ready_returns_guard() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+        state.graph_service.set_state(ServiceState::Ready);
+        let result = state.require_graph();
+        assert!(result.is_ok());
+        // Guard should hold None since no graph data was actually loaded
+        let guard = result.unwrap();
+        assert!(guard.is_none());
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "graph")]
+    async fn test_initialize_graph_no_graph_file() {
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let mut config = test_config("simple");
+        // Point base path to temp dir which has no graph file
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
+
+        // Should succeed without starting any loading
+        let result = initialize_graph(&state).await;
+        assert!(result.is_ok());
+        // Graph service should still be stopped since no graph file exists
+        assert_eq!(state.graph_service.state(), ServiceState::Stopped);
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "graph")]
+    async fn test_initialize_graph_with_invalid_graph_file() {
+        use std::fs;
+        use tempfile::TempDir;
+        use tokio::time::{sleep, Duration};
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let data_dir = temp_dir.path().join("data");
+        let graphs_dir = data_dir.join("graphs");
+        fs::create_dir_all(&graphs_dir).expect("Failed to create graphs dir");
+
+        // Write an invalid graph file to trigger the error path in start_graph_loading
+        fs::write(graphs_dir.join("concept_graph.json"), "invalid json")
+            .expect("Failed to write graph file");
+
+        let mut config = test_config("simple");
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
+
+        let result = initialize_graph(&state).await;
+        assert!(result.is_ok());
+
+        // Wait for async graph loading to complete (or fail)
+        let mut attempts = 0;
+        while state.graph_service.state() == ServiceState::Stopped && attempts < 20 {
+            sleep(Duration::from_millis(50)).await;
+            attempts += 1;
+        }
+        // Allow additional time for the failure to be recorded
+        sleep(Duration::from_millis(200)).await;
+
+        // The graph service should be in Failed state due to invalid JSON
+        let svc_state = state.graph_service.state();
+        assert!(
+            matches!(svc_state, ServiceState::Failed(_)),
+            "Expected Failed state, got {:?}",
+            svc_state
+        );
+    }
+
+    #[tokio::test]
     #[cfg(feature = "vector")]
     async fn test_is_vector_ready() {
         let config = test_config("simple");
@@ -1404,5 +1478,269 @@ Test content.
         assert!(result.is_err());
         let err = result.err().unwrap();
         assert!(err.to_string().contains("out of memory"));
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "vector")]
+    async fn test_require_vector_ready_returns_guard() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+        state.set_vector_ready(true);
+        let result = state.require_vector();
+        assert!(result.is_ok());
+        // Guard should hold None since no vector backend was actually loaded
+        let guard = result.unwrap();
+        assert!(guard.is_none());
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_appstate_new_tantivy_with_existing_index() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        let mut config = test_config("tantivy");
+        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+        config.paths.sources_md = temp_dir
+            .path()
+            .join("sources-md")
+            .to_string_lossy()
+            .to_string();
+        config.paths.concepts_unified = temp_dir
+            .path()
+            .join("concepts-unified")
+            .to_string_lossy()
+            .to_string();
+        config.paths.guides = temp_dir.path().join("guides").to_string_lossy().to_string();
+
+        // Build index first
+        crate::search::build_index(&config)
+            .await
+            .expect("Failed to build index");
+
+        // Now create AppState - should detect and load existing index
+        let state = AppState::new(config).await.expect("Failed to create state");
+        assert!(state.is_fts_ready());
+        assert_eq!(state.active_backend_name(), "tantivy");
+
+        // search_backend should return the FTS backend
+        let _backend = state.search_backend();
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_initialize_fts_backend_with_existing_index() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let index_path = temp_dir.path().join("test-index");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        let card_content = r#"---
+title: Test Card
+category: test
+---
+
+# Test Card
+
+Test content.
+"#;
+        fs::write(concept_cards_path.join("test.md"), card_content)
+            .expect("Failed to write test card");
+
+        let mut config = test_config("tantivy");
+        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+        config.paths.sources_md = temp_dir
+            .path()
+            .join("sources-md")
+            .to_string_lossy()
+            .to_string();
+        config.paths.concepts_unified = temp_dir
+            .path()
+            .join("concepts-unified")
+            .to_string_lossy()
+            .to_string();
+        config.paths.guides = temp_dir.path().join("guides").to_string_lossy().to_string();
+
+        // Build index first
+        crate::search::build_index(&config)
+            .await
+            .expect("Failed to build index");
+
+        // initialize_fts_backend should load the existing index
+        let (backend, fts_service) =
+            initialize_fts_backend(&config).expect("Failed to init backend");
+        assert!(fts_service.state().is_ready());
+        assert!(backend.read().unwrap().is_some());
+    }
+
+    #[tokio::test]
+    async fn test_appstate_config_accessible() {
+        let config = test_config("simple");
+        let expected_name = config.server.name.clone();
+        let state = AppState::new(config).await.expect("Failed to create state");
+        assert_eq!(state.config.server.name, expected_name);
+    }
+
+    #[tokio::test]
+    async fn test_appstate_simple_backend_multiple_calls() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+
+        // Calling search_backend multiple times should always work
+        let _b1 = state.search_backend();
+        let _b2 = state.search_backend();
+        let _b3 = state.search_backend();
+        assert_eq!(state.active_backend_name(), "simple");
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_set_fts_ready_toggle_multiple_times() {
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let mut config = test_config("tantivy");
+        config.search.index_path = temp_dir
+            .path()
+            .join(".tantivy-index")
+            .to_string_lossy()
+            .to_string();
+
+        let state = AppState::new(config).await.expect("Failed to create state");
+
+        // Toggle multiple times to exercise both branches repeatedly
+        for _ in 0..3 {
+            state.set_fts_ready(true);
+            assert!(state.is_fts_ready());
+            assert_eq!(state.active_backend_name(), "tantivy");
+
+            state.set_fts_ready(false);
+            assert!(!state.is_fts_ready());
+            assert_eq!(state.active_backend_name(), "simple");
+        }
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "fts")]
+    async fn test_fts_service_state_transitions() {
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let mut config = test_config("tantivy");
+        config.search.index_path = temp_dir
+            .path()
+            .join(".tantivy-index")
+            .to_string_lossy()
+            .to_string();
+
+        let state = AppState::new(config).await.expect("Failed to create state");
+
+        // Initial state should be Stopped
+        assert_eq!(state.fts_service.state(), ServiceState::Stopped);
+
+        // Transition to Starting
+        state.fts_service.set_state(ServiceState::Starting);
+        assert!(!state.is_fts_ready());
+        assert_eq!(state.active_backend_name(), "simple");
+
+        // Transition to Ready
+        state.set_fts_ready(true);
+        assert!(state.is_fts_ready());
+
+        // Transition to Failed
+        state
+            .fts_service
+            .set_state(ServiceState::Failed("test error".to_string()));
+        assert!(!state.is_fts_ready());
+        assert_eq!(state.active_backend_name(), "simple");
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "graph")]
+    async fn test_graph_service_state_transitions() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+
+        // Stopped -> Starting -> Ready -> Failed -> Stopped
+        assert_eq!(state.graph_service.state(), ServiceState::Stopped);
+
+        state.graph_service.set_state(ServiceState::Starting);
+        let result = state.require_graph();
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("loading"));
+
+        state.graph_service.set_state(ServiceState::Ready);
+        let result = state.require_graph();
+        assert!(result.is_ok());
+
+        state
+            .graph_service
+            .set_state(ServiceState::Failed("test failure".to_string()));
+        let result = state.require_graph();
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("test failure"));
+
+        state.graph_service.set_state(ServiceState::Stopped);
+        let result = state.require_graph();
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("not loaded"));
+    }
+
+    #[tokio::test]
+    #[cfg(feature = "vector")]
+    async fn test_vector_service_state_transitions() {
+        let config = test_config("simple");
+        let state = AppState::new(config).await.expect("Failed to create state");
+
+        // Stopped -> Starting -> Ready -> Failed -> Stopped
+        assert!(!state.is_vector_ready());
+
+        state.vector_service.set_state(ServiceState::Starting);
+        let result = state.require_vector();
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("building"));
+
+        state.set_vector_ready(true);
+        assert!(state.is_vector_ready());
+        let result = state.require_vector();
+        assert!(result.is_ok());
+
+        state
+            .vector_service
+            .set_state(ServiceState::Failed("oom".to_string()));
+        assert!(!state.is_vector_ready());
+        let result = state.require_vector();
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("oom"));
+
+        state.set_vector_ready(false);
+        assert!(!state.is_vector_ready());
+        let result = state.require_vector();
+        assert!(result.is_err());
+        assert!(result.unwrap_err().to_string().contains("not built"));
     }
 }

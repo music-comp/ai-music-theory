@@ -12,6 +12,7 @@ RESET := \033[0m
 PROJECT_NAME := mcp-server
 BIN_DIR := ./bin
 MODE := debug
+MODES := debug release
 TARGET := ./target/$(MODE)
 GIT_COMMIT := $(shell git rev-parse --short HEAD 2>/dev/null || echo "unknown")
 GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "unknown")
@@ -406,18 +407,29 @@ test-fts-graph:
 	@cargo test --features fts,graph --workspace
 	@echo "$(GREEN)✓ All tests passed (FTS + graph enabled)$(RESET)"
 
+# Feature configurations to test across modes
+FEATURE_CONFIGS := none fts graph fts,graph
+
 .PHONY: test-all
 test-all:
-	@echo "$(BLUE)Running tests in all configurations...$(RESET)"
-	@echo "$(CYAN)• Configuration 1: Without features$(RESET)"
-	@cargo test --workspace
-	@echo "$(CYAN)• Configuration 2: With FTS$(RESET)"
-	@cargo test --features fts --workspace
-	@echo "$(CYAN)• Configuration 3: With graph$(RESET)"
-	@cargo test --features graph --workspace
-	@echo "$(CYAN)• Configuration 4: With FTS + graph$(RESET)"
-	@cargo test --features fts,graph --workspace
-	@echo "$(GREEN)✓ All tests passed in all configurations$(RESET)"
+	@echo "$(BLUE)Running tests in all modes and feature configurations...$(RESET)"
+	@for mode in $(MODES); do \
+		echo ""; \
+		echo "$(CYAN)═══ Mode: $$mode ═══$(RESET)"; \
+		RELEASE_FLAG=""; \
+		if [ "$$mode" = "release" ]; then RELEASE_FLAG="--release"; fi; \
+		for features in $(FEATURE_CONFIGS); do \
+			if [ "$$features" = "none" ]; then \
+				echo "$(CYAN)• [$$mode] Without features$(RESET)"; \
+				cargo test --workspace $$RELEASE_FLAG; \
+			else \
+				echo "$(CYAN)• [$$mode] With $$features$(RESET)"; \
+				cargo test --features $$features --workspace $$RELEASE_FLAG; \
+			fi; \
+		done; \
+	done
+	@echo ""
+	@echo "$(GREEN)✓ All tests passed in all modes and configurations$(RESET)"
 
 .PHONY: lint
 lint:

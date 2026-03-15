@@ -16,7 +16,6 @@ use music_theory_mcp::tools::search::{search_concepts, SearchConceptsParams};
 use music_theory_mcp::tools::sources::{
     check_source_availability, list_source_chapters, AvailabilityStatus,
 };
-use music_theory_mcp::SearchDocument;
 
 use tempfile::TempDir;
 use tokio::fs;

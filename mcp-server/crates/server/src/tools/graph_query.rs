@@ -1581,5 +1581,1123 @@ mod tests {
             let result = get_prerequisites(&state, params).await;
             assert!(result.is_err());
         }
+
+        // ---------------------------------------------------------------
+        // Depth/limit validation error paths
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_get_related_concepts_depth_exceeds_max() {
+            let state = create_query_test_state().await;
+            let params = GetRelatedConceptsParams {
+                concept_id: "concept-a".to_string(),
+                relationship_types: None,
+                direction: "both".to_string(),
+                depth: 4, // max is 3
+            };
+
+            let result = get_related_concepts(&state, params).await;
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("Depth exceeds maximum of 3"));
+        }
+
+        #[tokio::test]
+        async fn test_find_concept_path_max_depth_exceeds_max() {
+            let state = create_query_test_state().await;
+            let params = FindConceptPathParams {
+                from_id: "concept-a".to_string(),
+                to_id: "concept-b".to_string(),
+                max_depth: 9, // max is 8
+            };
+
+            let result = find_concept_path(&state, params).await;
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("Max depth exceeds maximum of 8"));
+        }
+
+        #[tokio::test]
+        async fn test_get_prerequisites_depth_exceeds_max() {
+            let state = create_query_test_state().await;
+            let params = GetPrerequisitesParams {
+                concept_id: "concept-a".to_string(),
+                depth: 6, // max is 5
+            };
+
+            let result = get_prerequisites(&state, params).await;
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("Depth exceeds maximum of 5"));
+        }
+
+        #[tokio::test]
+        async fn test_get_concept_neighborhood_radius_exceeds_max() {
+            let state = create_query_test_state().await;
+            let params = GetConceptNeighborhoodParams {
+                concept_id: "concept-a".to_string(),
+                radius: 4, // max is 3
+                max_nodes: 30,
+            };
+
+            let result = get_concept_neighborhood(&state, params).await;
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("Radius exceeds maximum of 3"));
+        }
+
+        #[tokio::test]
+        async fn test_get_concept_neighborhood_max_nodes_exceeds_max() {
+            let state = create_query_test_state().await;
+            let params = GetConceptNeighborhoodParams {
+                concept_id: "concept-a".to_string(),
+                radius: 2,
+                max_nodes: 51, // max is 50
+            };
+
+            let result = get_concept_neighborhood(&state, params).await;
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("Max nodes exceeds maximum of 50"));
+        }
+
+        #[tokio::test]
+        async fn test_get_dependents_depth_exceeds_max() {
+            let state = create_query_test_state().await;
+            let params = GetDependentsParams {
+                concept_id: "concept-a".to_string(),
+                depth: 5, // max is 4
+            };
+
+            let result = get_dependents(&state, params).await;
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("Depth exceeds maximum of 4"));
+        }
+
+        #[tokio::test]
+        async fn test_get_central_concepts_limit_exceeds_max() {
+            let state = create_query_test_state().await;
+            let params = GetCentralConceptsParams {
+                category: None,
+                limit: 26, // max is 25
+            };
+
+            let result = get_central_concepts(&state, params).await;
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("Limit exceeds maximum of 25"));
+        }
+
+        #[tokio::test]
+        async fn test_find_bridge_concepts_limit_exceeds_max() {
+            let state = create_query_test_state().await;
+            let params = FindBridgeConceptsParams {
+                category_a: "harmony".to_string(),
+                category_b: "fundamentals".to_string(),
+                limit: 16, // max is 15
+            };
+
+            let result = find_bridge_concepts(&state, params).await;
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("Limit exceeds maximum of 15"));
+        }
+
+        // ---------------------------------------------------------------
+        // Node-not-found error paths for remaining tools
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_find_concept_path_to_not_found() {
+            let state = create_query_test_state().await;
+            let params = FindConceptPathParams {
+                from_id: "concept-a".to_string(),
+                to_id: "nonexistent".to_string(),
+                max_depth: 5,
+            };
+
+            let result = find_concept_path(&state, params).await;
+            assert!(result.is_err());
+        }
+
+        #[tokio::test]
+        async fn test_get_concept_neighborhood_not_found() {
+            let state = create_query_test_state().await;
+            let params = GetConceptNeighborhoodParams {
+                concept_id: "nonexistent".to_string(),
+                radius: 2,
+                max_nodes: 30,
+            };
+
+            let result = get_concept_neighborhood(&state, params).await;
+            assert!(result.is_err());
+        }
+
+        #[tokio::test]
+        async fn test_get_dependents_not_found() {
+            let state = create_query_test_state().await;
+            let params = GetDependentsParams {
+                concept_id: "nonexistent".to_string(),
+                depth: 2,
+            };
+
+            let result = get_dependents(&state, params).await;
+            assert!(result.is_err());
+        }
+
+        #[tokio::test]
+        async fn test_get_concept_sources_not_found() {
+            let state = create_query_test_state().await;
+            let params = GetConceptSourcesParams {
+                concept_id: "nonexistent".to_string(),
+            };
+
+            let result = get_concept_sources(&state, params).await;
+            assert!(result.is_err());
+        }
+
+        #[tokio::test]
+        async fn test_get_concept_variants_not_found() {
+            let state = create_query_test_state().await;
+            let params = GetConceptVariantsParams {
+                canonical_id: "nonexistent".to_string(),
+            };
+
+            let result = get_concept_variants(&state, params).await;
+            assert!(result.is_err());
+        }
+
+        #[tokio::test]
+        async fn test_get_source_coverage_not_found() {
+            let state = create_query_test_state().await;
+            let params = GetSourceCoverageParams {
+                source_id: "nonexistent".to_string(),
+            };
+
+            let result = get_source_coverage(&state, params).await;
+            assert!(result.is_err());
+        }
+
+        // ---------------------------------------------------------------
+        // Wrong node type error paths
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_get_concept_sources_on_source_node() {
+            let state = create_query_test_state().await;
+            let params = GetConceptSourcesParams {
+                concept_id: "source-1".to_string(),
+            };
+
+            let result = get_concept_sources(&state, params).await;
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("Cannot get sources for a source node"));
+        }
+
+        #[tokio::test]
+        async fn test_get_concept_variants_on_source_node() {
+            let state = create_query_test_state().await;
+            let params = GetConceptVariantsParams {
+                canonical_id: "source-1".to_string(),
+            };
+
+            let result = get_concept_variants(&state, params).await;
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("Cannot get variants for a source node"));
+        }
+
+        #[tokio::test]
+        async fn test_get_concept_variants_not_canonical() {
+            // Create a state with a non-canonical concept
+            let mut data = fabryk::graph::GraphData::new();
+            data.add_node(
+                Node::new("variant-a", "Variant A")
+                    .with_category("harmony")
+                    .as_variant_of("canonical-x"),
+            );
+
+            let stats = GraphStats {
+                node_count: 1,
+                edge_count: 0,
+                concept_count: 1,
+                source_count: 0,
+            };
+
+            let loaded = LoadedGraph {
+                data,
+                loaded_at: chrono::Utc::now(),
+                stats,
+            };
+
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+            {
+                let mut graph_guard = state.graph_data.write().unwrap();
+                *graph_guard = Some(loaded);
+            }
+            state.graph_service.set_state(ServiceState::Ready);
+
+            let params = GetConceptVariantsParams {
+                canonical_id: "variant-a".to_string(),
+            };
+
+            let result = get_concept_variants(&state, params).await;
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("not marked as canonical"));
+        }
+
+        #[tokio::test]
+        async fn test_get_source_coverage_on_concept_node() {
+            let state = create_query_test_state().await;
+            let params = GetSourceCoverageParams {
+                source_id: "concept-a".to_string(),
+            };
+
+            let result = get_source_coverage(&state, params).await;
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("Cannot get coverage for a concept node"));
+        }
+
+        // ---------------------------------------------------------------
+        // Direction-specific traversal
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_get_related_concepts_outgoing_only() {
+            let state = create_query_test_state().await;
+            let params = GetRelatedConceptsParams {
+                concept_id: "concept-a".to_string(),
+                relationship_types: None,
+                direction: "outgoing".to_string(),
+                depth: 1,
+            };
+
+            let response = get_related_concepts(&state, params).await.unwrap();
+            // All results should be outgoing direction
+            for r in &response.related {
+                assert_eq!(r.direction, "outgoing");
+            }
+        }
+
+        #[tokio::test]
+        async fn test_get_related_concepts_incoming_only() {
+            let state = create_query_test_state().await;
+            let params = GetRelatedConceptsParams {
+                concept_id: "concept-a".to_string(),
+                relationship_types: None,
+                direction: "incoming".to_string(),
+                depth: 1,
+            };
+
+            let response = get_related_concepts(&state, params).await.unwrap();
+            // All results should be incoming direction
+            for r in &response.related {
+                assert_eq!(r.direction, "incoming");
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // Deeper BFS traversal
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_get_related_concepts_depth_2() {
+            let state = create_query_test_state().await;
+            let params = GetRelatedConceptsParams {
+                concept_id: "concept-a".to_string(),
+                relationship_types: None,
+                direction: "both".to_string(),
+                depth: 2,
+            };
+
+            let response = get_related_concepts(&state, params).await.unwrap();
+            assert_eq!(response.depth, 2);
+            // Should find more concepts at depth 2 than depth 1
+            assert!(response.total >= 2);
+        }
+
+        #[tokio::test]
+        async fn test_get_related_concepts_depth_3() {
+            let state = create_query_test_state().await;
+            let params = GetRelatedConceptsParams {
+                concept_id: "concept-c".to_string(),
+                relationship_types: None,
+                direction: "both".to_string(),
+                depth: 3,
+            };
+
+            let response = get_related_concepts(&state, params).await.unwrap();
+            assert_eq!(response.depth, 3);
+        }
+
+        // ---------------------------------------------------------------
+        // Relationship filter edge cases
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_get_related_concepts_multiple_relationship_filter() {
+            let state = create_query_test_state().await;
+            let params = GetRelatedConceptsParams {
+                concept_id: "concept-a".to_string(),
+                relationship_types: Some("prerequisite,relates_to".to_string()),
+                direction: "both".to_string(),
+                depth: 1,
+            };
+
+            let response = get_related_concepts(&state, params).await.unwrap();
+            // All results should be either Prerequisite or RelatesTo
+            for r in &response.related {
+                assert!(
+                    r.relationship == "Prerequisite" || r.relationship == "RelatesTo",
+                    "Unexpected relationship: {}",
+                    r.relationship
+                );
+            }
+        }
+
+        #[tokio::test]
+        async fn test_get_related_concepts_no_matching_filter() {
+            let state = create_query_test_state().await;
+            let params = GetRelatedConceptsParams {
+                concept_id: "concept-a".to_string(),
+                relationship_types: Some("covers".to_string()),
+                direction: "both".to_string(),
+                depth: 1,
+            };
+
+            let response = get_related_concepts(&state, params).await.unwrap();
+            // No matching edges with "covers" between concepts
+            // May be 0 or may have source edges -- just verify no error
+            assert_eq!(response.concept_id, "concept-a");
+        }
+
+        // ---------------------------------------------------------------
+        // find_concept_path edge cases
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_find_concept_path_same_node() {
+            let state = create_query_test_state().await;
+            let params = FindConceptPathParams {
+                from_id: "concept-a".to_string(),
+                to_id: "concept-a".to_string(),
+                max_depth: 5,
+            };
+
+            let response = find_concept_path(&state, params).await.unwrap();
+            assert_eq!(response.from, "concept-a");
+            assert_eq!(response.to, "concept-a");
+        }
+
+        #[tokio::test]
+        async fn test_find_concept_path_nodes_exist_path_details() {
+            let state = create_query_test_state().await;
+            let params = FindConceptPathParams {
+                from_id: "concept-c".to_string(),
+                to_id: "concept-a".to_string(),
+                max_depth: 5,
+            };
+
+            let response = find_concept_path(&state, params).await.unwrap();
+            assert!(response.found);
+            // Verify nodes and edges are populated
+            assert!(!response.nodes.is_empty());
+            assert!(!response.edges.is_empty());
+            // First node should be from, last should be to
+            assert_eq!(response.nodes.first().unwrap().id, "concept-c");
+            assert_eq!(response.nodes.last().unwrap().id, "concept-a");
+            // Verify step numbers
+            for (i, node) in response.nodes.iter().enumerate() {
+                assert_eq!(node.step, i as u32);
+            }
+            for (i, edge) in response.edges.iter().enumerate() {
+                assert_eq!(edge.step, i as u32);
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // get_prerequisites edge cases
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_get_prerequisites_node_with_no_prerequisites() {
+            let state = create_query_test_state().await;
+            let params = GetPrerequisitesParams {
+                concept_id: "concept-c".to_string(),
+                depth: 3,
+            };
+
+            let response = get_prerequisites(&state, params).await.unwrap();
+            assert_eq!(response.concept_id, "concept-c");
+            assert_eq!(response.concept_title, "Concept C");
+            // concept-c has no prerequisites in the test graph
+            assert_eq!(response.total, 0);
+            assert!(response.learning_order.is_empty());
+        }
+
+        #[tokio::test]
+        async fn test_get_prerequisites_response_fields() {
+            let state = create_query_test_state().await;
+            let params = GetPrerequisitesParams {
+                concept_id: "concept-a".to_string(),
+                depth: 3,
+            };
+
+            let response = get_prerequisites(&state, params).await.unwrap();
+            assert_eq!(response.concept_id, "concept-a");
+            assert_eq!(response.concept_title, "Concept A");
+            // Verify prerequisites have proper fields
+            for p in &response.prerequisites {
+                assert!(!p.id.is_empty());
+                assert!(!p.title.is_empty());
+                assert!(!p.category.is_empty());
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // get_concept_neighborhood edge cases
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_get_concept_neighborhood_small_max_nodes() {
+            let state = create_query_test_state().await;
+            let params = GetConceptNeighborhoodParams {
+                concept_id: "concept-a".to_string(),
+                radius: 2,
+                max_nodes: 2, // Very small limit
+            };
+
+            let response = get_concept_neighborhood(&state, params).await.unwrap();
+            // Should not exceed max_nodes
+            assert!(response.node_count <= 2);
+            // Center node should always be present
+            assert!(response.nodes.iter().any(|n| n.is_center));
+        }
+
+        #[tokio::test]
+        async fn test_get_concept_neighborhood_radius_1() {
+            let state = create_query_test_state().await;
+            let params = GetConceptNeighborhoodParams {
+                concept_id: "concept-b".to_string(),
+                radius: 1,
+                max_nodes: 30,
+            };
+
+            let response = get_concept_neighborhood(&state, params).await.unwrap();
+            assert_eq!(response.center, "concept-b");
+            assert_eq!(response.radius, 1);
+            // Center should be present
+            let center = response.nodes.iter().find(|n| n.is_center).unwrap();
+            assert_eq!(center.id, "concept-b");
+            assert_eq!(center.distance, 0);
+        }
+
+        #[tokio::test]
+        async fn test_get_concept_neighborhood_verifies_node_types() {
+            let state = create_query_test_state().await;
+            let params = GetConceptNeighborhoodParams {
+                concept_id: "concept-a".to_string(),
+                radius: 2,
+                max_nodes: 30,
+            };
+
+            let response = get_concept_neighborhood(&state, params).await.unwrap();
+            // Every node should have a valid type
+            for node in &response.nodes {
+                assert!(
+                    node.node_type == "concept"
+                        || node.node_type == "source"
+                        || node.node_type == "unknown",
+                    "Unexpected node type: {}",
+                    node.node_type
+                );
+                // Concepts should have categories, sources should not
+                if node.node_type == "concept" {
+                    assert!(node.category.is_some());
+                }
+            }
+        }
+
+        #[tokio::test]
+        async fn test_get_concept_neighborhood_edges_reference_existing_nodes() {
+            let state = create_query_test_state().await;
+            let params = GetConceptNeighborhoodParams {
+                concept_id: "concept-b".to_string(),
+                radius: 2,
+                max_nodes: 30,
+            };
+
+            let response = get_concept_neighborhood(&state, params).await.unwrap();
+            let node_ids: std::collections::HashSet<&str> =
+                response.nodes.iter().map(|n| n.id.as_str()).collect();
+
+            // Every edge should reference nodes in the neighborhood
+            for edge in &response.edges {
+                assert!(
+                    node_ids.contains(edge.from.as_str()),
+                    "Edge from {} not in neighborhood",
+                    edge.from
+                );
+                assert!(
+                    node_ids.contains(edge.to.as_str()),
+                    "Edge to {} not in neighborhood",
+                    edge.to
+                );
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // get_dependents edge cases
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_get_dependents_no_dependents() {
+            let state = create_query_test_state().await;
+            let params = GetDependentsParams {
+                concept_id: "concept-d".to_string(),
+                depth: 2,
+            };
+
+            let response = get_dependents(&state, params).await.unwrap();
+            assert_eq!(response.concept_id, "concept-d");
+            assert_eq!(response.concept_title, "Concept D");
+            // concept-d has no outgoing prerequisite edges
+            assert_eq!(response.total, 0);
+        }
+
+        #[tokio::test]
+        async fn test_get_dependents_chain() {
+            let state = create_query_test_state().await;
+            // concept-c -> concept-b -> concept-a via prerequisites
+            let params = GetDependentsParams {
+                concept_id: "concept-c".to_string(),
+                depth: 2,
+            };
+
+            let response = get_dependents(&state, params).await.unwrap();
+            assert_eq!(response.concept_id, "concept-c");
+            // Should find concept-b (depth 1) and concept-a (depth 2)
+            assert!(response.total >= 1);
+            assert!(response.dependents.iter().any(|d| d.id == "concept-b"));
+        }
+
+        #[tokio::test]
+        async fn test_get_dependents_depth_1() {
+            let state = create_query_test_state().await;
+            let params = GetDependentsParams {
+                concept_id: "concept-c".to_string(),
+                depth: 1,
+            };
+
+            let response = get_dependents(&state, params).await.unwrap();
+            // At depth 1, should only find direct dependents
+            for d in &response.dependents {
+                assert_eq!(d.depth, 1);
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // get_central_concepts edge cases
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_get_central_concepts_nonexistent_category() {
+            let state = create_query_test_state().await;
+            let params = GetCentralConceptsParams {
+                category: Some("nonexistent-category".to_string()),
+                limit: 10,
+            };
+
+            let response = get_central_concepts(&state, params).await.unwrap();
+            assert_eq!(response.total, 0);
+            assert!(response.concepts.is_empty());
+        }
+
+        #[tokio::test]
+        async fn test_get_central_concepts_small_limit() {
+            let state = create_query_test_state().await;
+            let params = GetCentralConceptsParams {
+                category: None,
+                limit: 1,
+            };
+
+            let response = get_central_concepts(&state, params).await.unwrap();
+            assert!(response.total <= 1);
+        }
+
+        // ---------------------------------------------------------------
+        // get_concept_sources edge cases
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_get_concept_sources_no_sources() {
+            let state = create_query_test_state().await;
+            // concept-d has no incoming source edges
+            let params = GetConceptSourcesParams {
+                concept_id: "concept-d".to_string(),
+            };
+
+            let response = get_concept_sources(&state, params).await.unwrap();
+            assert_eq!(response.concept_id, "concept-d");
+            assert_eq!(response.concept_title, "Concept D");
+            assert_eq!(response.total, 0);
+            assert!(response.sources.is_empty());
+        }
+
+        #[tokio::test]
+        async fn test_get_concept_sources_verifies_fields() {
+            let state = create_query_test_state().await;
+            let params = GetConceptSourcesParams {
+                concept_id: "concept-a".to_string(),
+            };
+
+            let response = get_concept_sources(&state, params).await.unwrap();
+            for s in &response.sources {
+                assert!(!s.source_id.is_empty());
+                assert!(!s.source_title.is_empty());
+                assert!(!s.source_author.is_empty());
+                assert!(
+                    s.relationship == "Introduces" || s.relationship == "Covers",
+                    "Unexpected relationship: {}",
+                    s.relationship
+                );
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // get_concept_variants with actual variants
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_get_concept_variants_with_variants() {
+            let mut data = fabryk::graph::GraphData::new();
+
+            // Canonical concept
+            data.add_node(Node::new("canonical-x", "Canonical X").with_category("harmony"));
+
+            // Variant concepts
+            data.add_node(
+                Node::new("variant-x-1", "Variant X (Source 1)")
+                    .with_category("harmony")
+                    .with_source("src-1")
+                    .as_variant_of("canonical-x"),
+            );
+            data.add_node(
+                Node::new("variant-x-2", "Variant X (Source 2)")
+                    .with_category("harmony")
+                    .with_source("src-2")
+                    .as_variant_of("canonical-x"),
+            );
+
+            // Source nodes
+            data.add_node(
+                Node::new("src-1", "Source 1")
+                    .with_node_type(NodeType::Custom("source".to_string()))
+                    .with_metadata("author", serde_json::json!("Author 1")),
+            );
+            data.add_node(
+                Node::new("src-2", "Source 2")
+                    .with_node_type(NodeType::Custom("source".to_string()))
+                    .with_metadata("author", serde_json::json!("Author 2")),
+            );
+
+            let stats = GraphStats {
+                node_count: 5,
+                edge_count: 0,
+                concept_count: 3,
+                source_count: 2,
+            };
+
+            let loaded = LoadedGraph {
+                data,
+                loaded_at: chrono::Utc::now(),
+                stats,
+            };
+
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+            {
+                let mut graph_guard = state.graph_data.write().unwrap();
+                *graph_guard = Some(loaded);
+            }
+            state.graph_service.set_state(ServiceState::Ready);
+
+            let params = GetConceptVariantsParams {
+                canonical_id: "canonical-x".to_string(),
+            };
+
+            let response = get_concept_variants(&state, params).await.unwrap();
+            assert_eq!(response.canonical_id, "canonical-x");
+            assert_eq!(response.canonical_title, "Canonical X");
+            assert_eq!(response.total, 2);
+
+            let variant_ids: Vec<&str> = response.variants.iter().map(|v| v.id.as_str()).collect();
+            assert!(variant_ids.contains(&"variant-x-1"));
+            assert!(variant_ids.contains(&"variant-x-2"));
+        }
+
+        #[tokio::test]
+        async fn test_get_concept_variants_with_missing_source_node() {
+            let mut data = fabryk::graph::GraphData::new();
+
+            data.add_node(Node::new("canonical-y", "Canonical Y").with_category("harmony"));
+            data.add_node(
+                Node::new("variant-y-1", "Variant Y")
+                    .with_category("harmony")
+                    .with_source("missing-source")
+                    .as_variant_of("canonical-y"),
+            );
+
+            let stats = GraphStats {
+                node_count: 2,
+                edge_count: 0,
+                concept_count: 2,
+                source_count: 0,
+            };
+
+            let loaded = LoadedGraph {
+                data,
+                loaded_at: chrono::Utc::now(),
+                stats,
+            };
+
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+            {
+                let mut graph_guard = state.graph_data.write().unwrap();
+                *graph_guard = Some(loaded);
+            }
+            state.graph_service.set_state(ServiceState::Ready);
+
+            let params = GetConceptVariantsParams {
+                canonical_id: "canonical-y".to_string(),
+            };
+
+            let response = get_concept_variants(&state, params).await.unwrap();
+            assert_eq!(response.total, 1);
+            // Should fall back to source_id as title
+            assert_eq!(response.variants[0].source_id, "missing-source");
+            assert_eq!(response.variants[0].source_title, "missing-source");
+        }
+
+        // ---------------------------------------------------------------
+        // get_source_coverage edge cases
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_get_source_coverage_with_covers_edges() {
+            let mut data = fabryk::graph::GraphData::new();
+
+            data.add_node(
+                Node::new("src-x", "Source X")
+                    .with_node_type(NodeType::Custom("source".to_string()))
+                    .with_metadata("author", serde_json::json!("Author X")),
+            );
+            data.add_node(Node::new("c1", "Concept 1").with_category("harmony"));
+            data.add_node(Node::new("c2", "Concept 2").with_category("rhythm"));
+            data.add_node(Node::new("c3", "Concept 3").with_category("melody"));
+
+            data.add_edge(Edge::new("src-x", "c1", Relationship::Introduces))
+                .expect("edge");
+            data.add_edge(Edge::new("src-x", "c2", Relationship::Covers))
+                .expect("edge");
+            data.add_edge(Edge::new("src-x", "c3", Relationship::Covers))
+                .expect("edge");
+
+            let stats = GraphStats {
+                node_count: 4,
+                edge_count: 3,
+                concept_count: 3,
+                source_count: 1,
+            };
+
+            let loaded = LoadedGraph {
+                data,
+                loaded_at: chrono::Utc::now(),
+                stats,
+            };
+
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+            {
+                let mut graph_guard = state.graph_data.write().unwrap();
+                *graph_guard = Some(loaded);
+            }
+            state.graph_service.set_state(ServiceState::Ready);
+
+            let params = GetSourceCoverageParams {
+                source_id: "src-x".to_string(),
+            };
+
+            let response = get_source_coverage(&state, params).await.unwrap();
+            assert_eq!(response.source_id, "src-x");
+            assert_eq!(response.source_title, "Source X");
+            assert_eq!(response.source_author, "Author X");
+            assert_eq!(response.total_concepts, 3);
+            assert_eq!(response.introduces_count, 1);
+            assert_eq!(response.covers_count, 2);
+            assert_eq!(response.introduces.len(), 1);
+            assert_eq!(response.covers.len(), 2);
+        }
+
+        #[tokio::test]
+        async fn test_get_source_coverage_no_coverage() {
+            let mut data = fabryk::graph::GraphData::new();
+
+            data.add_node(
+                Node::new("src-empty", "Empty Source")
+                    .with_node_type(NodeType::Custom("source".to_string()))
+                    .with_metadata("author", serde_json::json!("Nobody")),
+            );
+
+            let stats = GraphStats {
+                node_count: 1,
+                edge_count: 0,
+                concept_count: 0,
+                source_count: 1,
+            };
+
+            let loaded = LoadedGraph {
+                data,
+                loaded_at: chrono::Utc::now(),
+                stats,
+            };
+
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+            {
+                let mut graph_guard = state.graph_data.write().unwrap();
+                *graph_guard = Some(loaded);
+            }
+            state.graph_service.set_state(ServiceState::Ready);
+
+            let params = GetSourceCoverageParams {
+                source_id: "src-empty".to_string(),
+            };
+
+            let response = get_source_coverage(&state, params).await.unwrap();
+            assert_eq!(response.total_concepts, 0);
+            assert_eq!(response.introduces_count, 0);
+            assert_eq!(response.covers_count, 0);
+        }
+
+        #[tokio::test]
+        async fn test_get_source_coverage_ignores_non_coverage_edges() {
+            let mut data = fabryk::graph::GraphData::new();
+
+            data.add_node(
+                Node::new("src-z", "Source Z")
+                    .with_node_type(NodeType::Custom("source".to_string()))
+                    .with_metadata("author", serde_json::json!("Author Z")),
+            );
+            data.add_node(Node::new("c-z", "Concept Z").with_category("test"));
+
+            // RelatesTo edge from source -- should be ignored
+            data.add_edge(Edge::new("src-z", "c-z", Relationship::RelatesTo))
+                .expect("edge");
+
+            let stats = GraphStats {
+                node_count: 2,
+                edge_count: 1,
+                concept_count: 1,
+                source_count: 1,
+            };
+
+            let loaded = LoadedGraph {
+                data,
+                loaded_at: chrono::Utc::now(),
+                stats,
+            };
+
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+            {
+                let mut graph_guard = state.graph_data.write().unwrap();
+                *graph_guard = Some(loaded);
+            }
+            state.graph_service.set_state(ServiceState::Ready);
+
+            let params = GetSourceCoverageParams {
+                source_id: "src-z".to_string(),
+            };
+
+            let response = get_source_coverage(&state, params).await.unwrap();
+            assert_eq!(response.total_concepts, 0);
+        }
+
+        // ---------------------------------------------------------------
+        // find_concept_path: no path (disconnected)
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_find_concept_path_disconnected_nodes() {
+            let mut data = fabryk::graph::GraphData::new();
+            data.add_node(Node::new("isolated-a", "Isolated A").with_category("test"));
+            data.add_node(Node::new("isolated-b", "Isolated B").with_category("test"));
+
+            let stats = GraphStats {
+                node_count: 2,
+                edge_count: 0,
+                concept_count: 2,
+                source_count: 0,
+            };
+
+            let loaded = LoadedGraph {
+                data,
+                loaded_at: chrono::Utc::now(),
+                stats,
+            };
+
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+            {
+                let mut graph_guard = state.graph_data.write().unwrap();
+                *graph_guard = Some(loaded);
+            }
+            state.graph_service.set_state(ServiceState::Ready);
+
+            let params = FindConceptPathParams {
+                from_id: "isolated-a".to_string(),
+                to_id: "isolated-b".to_string(),
+                max_depth: 5,
+            };
+
+            let response = find_concept_path(&state, params).await.unwrap();
+            assert!(!response.found);
+            assert_eq!(response.path_length, 0);
+            assert!(response.nodes.is_empty());
+            assert!(response.edges.is_empty());
+        }
+
+        // ---------------------------------------------------------------
+        // find_concept_path: path through source nodes
+        // ---------------------------------------------------------------
+
+        #[tokio::test]
+        async fn test_find_concept_path_with_non_concept_in_path() {
+            let state = create_query_test_state().await;
+            // Try path that may go through source node
+            let params = FindConceptPathParams {
+                from_id: "source-1".to_string(),
+                to_id: "concept-b".to_string(),
+                max_depth: 5,
+            };
+
+            let response = find_concept_path(&state, params).await.unwrap();
+            // Just verify it completes without error
+            assert_eq!(response.from, "source-1");
+            assert_eq!(response.to, "concept-b");
+            // Non-concept nodes should have category=None
+            if response.found {
+                for node in &response.nodes {
+                    if node.id == "source-1" {
+                        assert!(node.category.is_none());
+                    }
+                }
+            }
+        }
+    }
+
+    // -------------------------------------------------------------------
+    // Serialization round-trip tests for parameter types
+    // -------------------------------------------------------------------
+
+    #[test]
+    fn test_get_related_concepts_params_with_all_fields() {
+        let json = r#"{"concept_id": "test", "relationship_types": "prerequisite,extends", "direction": "outgoing", "depth": 2}"#;
+        let params: GetRelatedConceptsParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.concept_id, "test");
+        assert_eq!(
+            params.relationship_types,
+            Some("prerequisite,extends".to_string())
+        );
+        assert_eq!(params.direction, "outgoing");
+        assert_eq!(params.depth, 2);
+    }
+
+    #[test]
+    fn test_find_concept_path_params_with_all_fields() {
+        let json = r#"{"from_id": "a", "to_id": "b", "max_depth": 3}"#;
+        let params: FindConceptPathParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.from_id, "a");
+        assert_eq!(params.to_id, "b");
+        assert_eq!(params.max_depth, 3);
+    }
+
+    #[test]
+    fn test_get_prerequisites_params_with_all_fields() {
+        let json = r#"{"concept_id": "test", "depth": 5}"#;
+        let params: GetPrerequisitesParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.concept_id, "test");
+        assert_eq!(params.depth, 5);
+    }
+
+    #[test]
+    fn test_get_concept_neighborhood_params_with_all_fields() {
+        let json = r#"{"concept_id": "test", "radius": 3, "max_nodes": 50}"#;
+        let params: GetConceptNeighborhoodParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.concept_id, "test");
+        assert_eq!(params.radius, 3);
+        assert_eq!(params.max_nodes, 50);
+    }
+
+    #[test]
+    fn test_get_dependents_params_with_all_fields() {
+        let json = r#"{"concept_id": "test", "depth": 4}"#;
+        let params: GetDependentsParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.concept_id, "test");
+        assert_eq!(params.depth, 4);
+    }
+
+    #[test]
+    fn test_get_central_concepts_params_with_category() {
+        let json = r#"{"category": "harmony", "limit": 20}"#;
+        let params: GetCentralConceptsParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.category, Some("harmony".to_string()));
+        assert_eq!(params.limit, 20);
+    }
+
+    #[test]
+    fn test_find_bridge_concepts_params_with_all_fields() {
+        let json = r#"{"category_a": "harmony", "category_b": "rhythm", "limit": 10}"#;
+        let params: FindBridgeConceptsParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.category_a, "harmony");
+        assert_eq!(params.category_b, "rhythm");
+        assert_eq!(params.limit, 10);
+    }
+
+    #[test]
+    fn test_get_related_concepts_params_serialization_round_trip() {
+        let params = GetRelatedConceptsParams {
+            concept_id: "test".to_string(),
+            relationship_types: Some("prerequisite".to_string()),
+            direction: "outgoing".to_string(),
+            depth: 2,
+        };
+        let json = serde_json::to_string(&params).unwrap();
+        let deserialized: GetRelatedConceptsParams = serde_json::from_str(&json).unwrap();
+        assert_eq!(deserialized.concept_id, "test");
+        assert_eq!(
+            deserialized.relationship_types,
+            Some("prerequisite".to_string())
+        );
+    }
+
+    #[test]
+    fn test_get_related_concepts_params_serialization_skip_none() {
+        let params = GetRelatedConceptsParams {
+            concept_id: "test".to_string(),
+            relationship_types: None,
+            direction: "both".to_string(),
+            depth: 1,
+        };
+        let json = serde_json::to_string(&params).unwrap();
+        // relationship_types should be skipped when None
+        assert!(!json.contains("relationship_types"));
     }
 }

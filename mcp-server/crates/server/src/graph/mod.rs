@@ -1010,4 +1010,977 @@ mod tests {
         let result = handle_validate(&config).await;
         assert!(result.is_err());
     }
+
+    // -----------------------------------------------------------------------
+    // Additional from_fabryk_relationship coverage
+    // -----------------------------------------------------------------------
+
+    #[test]
+    fn test_from_fabryk_relationship_variant_of() {
+        assert_eq!(
+            from_fabryk_relationship(&Relationship::VariantOf),
+            "VariantOf"
+        );
+    }
+
+    #[test]
+    fn test_from_fabryk_relationship_contrasts_with() {
+        assert_eq!(
+            from_fabryk_relationship(&Relationship::ContrastsWith),
+            "ContrastsWith"
+        );
+    }
+
+    #[test]
+    fn test_from_fabryk_relationship_answers_question() {
+        assert_eq!(
+            from_fabryk_relationship(&Relationship::AnswersQuestion),
+            "AnswersQuestion"
+        );
+    }
+
+    // -----------------------------------------------------------------------
+    // Additional to_fabryk_relationship coverage
+    // -----------------------------------------------------------------------
+
+    #[test]
+    fn test_to_fabryk_relationship_case_insensitive_extends() {
+        assert_eq!(to_fabryk_relationship("EXTENDS"), Relationship::Extends);
+    }
+
+    #[test]
+    fn test_to_fabryk_relationship_case_insensitive_introduces() {
+        assert_eq!(
+            to_fabryk_relationship("INTRODUCES"),
+            Relationship::Introduces
+        );
+    }
+
+    #[test]
+    fn test_to_fabryk_relationship_case_insensitive_covers() {
+        assert_eq!(to_fabryk_relationship("COVERS"), Relationship::Covers);
+    }
+
+    #[test]
+    fn test_to_fabryk_relationship_case_insensitive_cites() {
+        assert_eq!(
+            to_fabryk_relationship("CITES"),
+            Relationship::Custom("cites".to_string())
+        );
+    }
+
+    // -----------------------------------------------------------------------
+    // Relationship round-trip for additional variants
+    // -----------------------------------------------------------------------
+
+    #[test]
+    fn test_relationship_round_trip_extends() {
+        let fabryk_rel = to_fabryk_relationship("Extends");
+        let back = from_fabryk_relationship(&fabryk_rel);
+        assert_eq!(back, "Extends");
+    }
+
+    #[test]
+    fn test_relationship_round_trip_introduces() {
+        let fabryk_rel = to_fabryk_relationship("Introduces");
+        let back = from_fabryk_relationship(&fabryk_rel);
+        assert_eq!(back, "Introduces");
+    }
+
+    #[test]
+    fn test_relationship_round_trip_covers() {
+        let fabryk_rel = to_fabryk_relationship("Covers");
+        let back = from_fabryk_relationship(&fabryk_rel);
+        assert_eq!(back, "Covers");
+    }
+
+    // -----------------------------------------------------------------------
+    // Node discrimination edge cases
+    // -----------------------------------------------------------------------
+
+    #[test]
+    fn test_is_concept_node_custom_non_source() {
+        let node = Node::new("x", "X").with_node_type(NodeType::Custom("other".to_string()));
+        assert!(!is_concept_node(&node));
+    }
+
+    #[test]
+    fn test_is_source_node_user_query_type() {
+        let node = Node::new("q", "Query").with_node_type(NodeType::UserQuery);
+        assert!(!is_source_node(&node));
+    }
+
+    #[test]
+    fn test_node_id_with_special_characters() {
+        let node = Node::new("concept@source-1/part", "Title");
+        assert_eq!(node_id(&node), "concept@source-1/part");
+    }
+
+    #[test]
+    fn test_node_title_unicode() {
+        let node = Node::new("id", "Résumé des accords");
+        assert_eq!(node_title(&node), "Résumé des accords");
+    }
+
+    // -----------------------------------------------------------------------
+    // Source metadata edge cases
+    // -----------------------------------------------------------------------
+
+    #[test]
+    fn test_source_author_non_string_metadata() {
+        let node = Node::new("src", "Source").with_metadata("author", serde_json::json!(42));
+        // Non-string value should fall back to "Unknown"
+        assert_eq!(source_author(&node), "Unknown");
+    }
+
+    #[test]
+    fn test_source_year_non_numeric_metadata() {
+        let node =
+            Node::new("src", "Source").with_metadata("year", serde_json::json!("not-a-number"));
+        assert_eq!(source_year(&node), None);
+    }
+
+    #[test]
+    fn test_source_year_float_metadata() {
+        let node = Node::new("src", "Source").with_metadata("year", serde_json::json!(2024.5));
+        // as_u64() on a float returns None in serde_json
+        assert_eq!(source_year(&node), None);
+    }
+
+    #[test]
+    fn test_source_is_converted_non_bool_metadata() {
+        let node =
+            Node::new("src", "Source").with_metadata("is_converted", serde_json::json!("yes"));
+        // Non-bool should fall back to false
+        assert!(!source_is_converted(&node));
+    }
+
+    #[test]
+    fn test_source_is_converted_numeric_metadata() {
+        let node = Node::new("src", "Source").with_metadata("is_converted", serde_json::json!(1));
+        assert!(!source_is_converted(&node));
+    }
+
+    // -----------------------------------------------------------------------
+    // compute_graph_stats with non-standard node types
+    // -----------------------------------------------------------------------
+
+    #[test]
+    fn test_compute_graph_stats_user_query_nodes_not_counted() {
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(Node::new("c1", "C1").with_category("harmony"));
+        data.add_node(Node::new("q1", "Query 1").with_node_type(NodeType::UserQuery));
+        data.add_node(
+            Node::new("src1", "Source 1").with_node_type(NodeType::Custom("source".to_string())),
+        );
+        data.add_node(
+            Node::new("other1", "Other 1").with_node_type(NodeType::Custom("other".to_string())),
+        );
+
+        let stats = compute_graph_stats(&data);
+
+        assert_eq!(stats.node_count, 4);
+        assert_eq!(stats.concept_count, 1);
+        assert_eq!(stats.source_count, 1);
+        // user_query and other custom types are neither concept nor source
+    }
+
+    #[test]
+    fn test_compute_graph_stats_sources_only() {
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(
+            Node::new("src1", "Source 1").with_node_type(NodeType::Custom("source".to_string())),
+        );
+        data.add_node(
+            Node::new("src2", "Source 2").with_node_type(NodeType::Custom("source".to_string())),
+        );
+
+        let stats = compute_graph_stats(&data);
+
+        assert_eq!(stats.node_count, 2);
+        assert_eq!(stats.concept_count, 0);
+        assert_eq!(stats.source_count, 2);
+    }
+
+    #[test]
+    fn test_compute_graph_stats_with_multiple_edges() {
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(Node::new("a", "A").with_category("test"));
+        data.add_node(Node::new("b", "B").with_category("test"));
+        data.add_node(Node::new("c", "C").with_category("test"));
+        data.add_edge(Edge::new("a", "b", Relationship::Prerequisite))
+            .expect("edge");
+        data.add_edge(Edge::new("b", "c", Relationship::Prerequisite))
+            .expect("edge");
+        data.add_edge(Edge::new("a", "c", Relationship::RelatesTo))
+            .expect("edge");
+
+        let stats = compute_graph_stats(&data);
+
+        assert_eq!(stats.node_count, 3);
+        assert_eq!(stats.edge_count, 3);
+        assert_eq!(stats.concept_count, 3);
+        assert_eq!(stats.source_count, 0);
+    }
+
+    // -----------------------------------------------------------------------
+    // LoadedGraph additional tests
+    // -----------------------------------------------------------------------
+
+    #[test]
+    fn test_loaded_graph_debug() {
+        let data = fabryk::graph::GraphData::new();
+        let loaded = LoadedGraph {
+            data,
+            loaded_at: chrono::Utc::now(),
+            stats: GraphStats {
+                node_count: 0,
+                edge_count: 0,
+                concept_count: 0,
+                source_count: 0,
+            },
+        };
+        let debug_str = format!("{:?}", loaded);
+        assert!(debug_str.contains("LoadedGraph"));
+        assert!(debug_str.contains("stats"));
+    }
+
+    #[test]
+    fn test_graph_stats_clone() {
+        let stats = GraphStats {
+            node_count: 5,
+            edge_count: 10,
+            concept_count: 3,
+            source_count: 2,
+        };
+        let cloned = stats.clone();
+        assert_eq!(cloned.node_count, 5);
+        assert_eq!(cloned.edge_count, 10);
+        assert_eq!(cloned.concept_count, 3);
+        assert_eq!(cloned.source_count, 2);
+    }
+
+    // -----------------------------------------------------------------------
+    // load_concept_graph error paths
+    // -----------------------------------------------------------------------
+
+    #[tokio::test]
+    async fn test_load_concept_graph_invalid_json() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create graphs dir");
+
+        // Write invalid JSON
+        let graph_path = graphs_dir.join("concept_graph.json");
+        std::fs::write(&graph_path, "{ not valid json }").expect("write");
+
+        let result = load_concept_graph(temp_dir.path()).await;
+        assert!(result.is_err());
+        let err_str = format!("{}", result.unwrap_err());
+        assert!(
+            err_str.contains("parse") || err_str.contains("Failed"),
+            "Error should mention parsing failure: {}",
+            err_str
+        );
+    }
+
+    #[tokio::test]
+    async fn test_load_concept_graph_empty_file() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create graphs dir");
+
+        let graph_path = graphs_dir.join("concept_graph.json");
+        std::fs::write(&graph_path, "").expect("write");
+
+        let result = load_concept_graph(temp_dir.path()).await;
+        assert!(result.is_err());
+    }
+
+    #[tokio::test]
+    async fn test_load_concept_graph_valid_json_wrong_structure() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create graphs dir");
+
+        let graph_path = graphs_dir.join("concept_graph.json");
+        std::fs::write(&graph_path, r#"{"key": "value"}"#).expect("write");
+
+        let result = load_concept_graph(temp_dir.path()).await;
+        assert!(result.is_err());
+    }
+
+    #[tokio::test]
+    async fn test_load_concept_graph_empty_graph() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create graphs dir");
+
+        let data = fabryk::graph::GraphData::new();
+        let graph_path = graphs_dir.join("concept_graph.json");
+        fabryk::graph::save_graph(&data, &graph_path, None).expect("save");
+
+        let loaded = load_concept_graph(temp_dir.path()).await.expect("load");
+        assert_eq!(loaded.stats.node_count, 0);
+        assert_eq!(loaded.stats.edge_count, 0);
+        assert_eq!(loaded.stats.concept_count, 0);
+        assert_eq!(loaded.stats.source_count, 0);
+    }
+
+    // -----------------------------------------------------------------------
+    // CLI handlers: handle_validate with warnings/errors
+    // -----------------------------------------------------------------------
+
+    #[tokio::test]
+    async fn test_handle_validate_graph_with_orphans() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let mut data = fabryk::graph::GraphData::new();
+        // Add orphan nodes (no edges)
+        data.add_node(Node::new("orphan-1", "Orphan 1").with_category("test"));
+        data.add_node(Node::new("orphan-2", "Orphan 2").with_category("test"));
+
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        // Should complete without error even if warnings are present
+        let result = handle_validate(&config).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    async fn test_handle_validate_graph_with_self_loop() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(Node::new("a", "A").with_category("test"));
+        data.add_node(Node::new("b", "B").with_category("test"));
+        // Self-loop
+        data.add_edge(Edge::new("a", "a", Relationship::RelatesTo))
+            .expect("edge");
+        data.add_edge(Edge::new("a", "b", Relationship::Prerequisite))
+            .expect("edge");
+
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let result = handle_validate(&config).await;
+        assert!(result.is_ok());
+    }
+
+    // -----------------------------------------------------------------------
+    // CLI handlers: handle_stats edge cases
+    // -----------------------------------------------------------------------
+
+    #[tokio::test]
+    async fn test_handle_stats_empty_graph() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let data = fabryk::graph::GraphData::new();
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let result = handle_stats(&config).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    async fn test_handle_stats_graph_with_multiple_categories() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(Node::new("a", "A").with_category("harmony"));
+        data.add_node(Node::new("b", "B").with_category("rhythm"));
+        data.add_node(Node::new("c", "C").with_category("harmony"));
+        data.add_node(
+            Node::new("src", "Source").with_node_type(NodeType::Custom("source".to_string())),
+        );
+        data.add_edge(Edge::new("a", "b", Relationship::Prerequisite))
+            .expect("edge");
+        data.add_edge(Edge::new("a", "c", Relationship::RelatesTo))
+            .expect("edge");
+        data.add_edge(Edge::new("src", "a", Relationship::Introduces))
+            .expect("edge");
+
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let result = handle_stats(&config).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    async fn test_handle_stats_missing_graph() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let result = handle_stats(&config).await;
+        assert!(result.is_err());
+    }
+
+    // -----------------------------------------------------------------------
+    // CLI handlers: handle_compile edge cases
+    // -----------------------------------------------------------------------
+
+    #[tokio::test]
+    async fn test_handle_compile_missing_graph() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let result = handle_compile(&config).await;
+        assert!(result.is_err());
+    }
+
+    #[tokio::test]
+    async fn test_handle_compile_preserves_data() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(Node::new("a", "A").with_category("test"));
+        data.add_node(Node::new("b", "B").with_category("test"));
+        data.add_edge(Edge::new("a", "b", Relationship::Prerequisite))
+            .expect("edge");
+
+        let graph_path = graphs_dir.join("concept_graph.json");
+        fabryk::graph::save_graph(&data, &graph_path, None).expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        handle_compile(&config).await.expect("compile");
+
+        // Verify the graph can be reloaded after compile
+        let data_dir = temp_dir.path().join("data");
+        let reloaded = load_concept_graph(&data_dir).await.expect("reload");
+        assert_eq!(reloaded.stats.node_count, 2);
+        assert_eq!(reloaded.stats.edge_count, 1);
+    }
+
+    // -----------------------------------------------------------------------
+    // load_concept_graph: large graph
+    // -----------------------------------------------------------------------
+
+    #[tokio::test]
+    async fn test_load_concept_graph_multi_type_nodes() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create graphs dir");
+
+        let mut data = fabryk::graph::GraphData::new();
+        // Mix of types
+        data.add_node(Node::new("c1", "C1").with_category("harmony"));
+        data.add_node(Node::new("c2", "C2").with_category("rhythm"));
+        data.add_node(
+            Node::new("src1", "Source 1")
+                .with_node_type(NodeType::Custom("source".to_string()))
+                .with_metadata("author", serde_json::json!("Author A"))
+                .with_metadata("year", serde_json::json!(2020)),
+        );
+        data.add_node(
+            Node::new("src2", "Source 2")
+                .with_node_type(NodeType::Custom("source".to_string()))
+                .with_metadata("author", serde_json::json!("Author B")),
+        );
+        data.add_node(Node::new("q1", "Query 1").with_node_type(NodeType::UserQuery));
+
+        data.add_edge(Edge::new("c1", "c2", Relationship::Prerequisite))
+            .expect("edge");
+        data.add_edge(Edge::new("src1", "c1", Relationship::Introduces))
+            .expect("edge");
+        data.add_edge(Edge::new("src2", "c2", Relationship::Covers))
+            .expect("edge");
+
+        let graph_path = graphs_dir.join("concept_graph.json");
+        fabryk::graph::save_graph(&data, &graph_path, None).expect("save");
+
+        let loaded = load_concept_graph(temp_dir.path()).await.expect("load");
+
+        assert_eq!(loaded.stats.node_count, 5);
+        assert_eq!(loaded.stats.edge_count, 3);
+        assert_eq!(loaded.stats.concept_count, 2);
+        assert_eq!(loaded.stats.source_count, 2);
+    }
+
+    // -----------------------------------------------------------------------
+    // handle_stats: branches for orphans, most_depended_on, most_dependencies
+    // -----------------------------------------------------------------------
+
+    #[tokio::test]
+    async fn test_handle_stats_graph_with_orphans() {
+        // Exercises the `orphan_count > 0` println branch (line ~488-490)
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let mut data = fabryk::graph::GraphData::new();
+        // Connected pair
+        data.add_node(Node::new("a", "A").with_category("harmony"));
+        data.add_node(Node::new("b", "B").with_category("harmony"));
+        data.add_edge(Edge::new("a", "b", Relationship::Prerequisite))
+            .expect("edge");
+        // Orphan (no edges)
+        data.add_node(Node::new("orphan", "Orphan").with_category("misc"));
+
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let result = handle_stats(&config).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    async fn test_handle_stats_graph_with_high_degree_nodes() {
+        // Exercises the `most_depended_on` and `most_dependencies` branches
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let mut data = fabryk::graph::GraphData::new();
+        // Hub node with many outgoing edges
+        data.add_node(Node::new("hub", "Hub").with_category("core"));
+        for i in 0..5 {
+            let id = format!("dep-{}", i);
+            let title = format!("Dep {}", i);
+            data.add_node(Node::new(&id, &title).with_category("harmony"));
+            data.add_edge(Edge::new("hub", &id, Relationship::Prerequisite))
+                .expect("edge");
+        }
+        // Target node with many incoming edges
+        data.add_node(Node::new("target", "Target").with_category("advanced"));
+        for i in 0..5 {
+            let id = format!("dep-{}", i);
+            data.add_edge(Edge::new(&id, "target", Relationship::Prerequisite))
+                .expect("edge");
+        }
+
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let result = handle_stats(&config).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    async fn test_handle_stats_graph_with_no_relationships() {
+        // Graph with only nodes and no edges: relationship distribution is empty
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(Node::new("a", "A").with_category("harmony"));
+        data.add_node(Node::new("b", "B").with_category("rhythm"));
+
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let result = handle_stats(&config).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    async fn test_handle_stats_graph_no_category_nodes() {
+        // Graph where no node has a category: category distribution is empty
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(Node::new("a", "A")); // No category
+        data.add_node(Node::new("b", "B")); // No category
+        data.add_edge(Edge::new("a", "b", Relationship::RelatesTo))
+            .expect("edge");
+
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let result = handle_stats(&config).await;
+        assert!(result.is_ok());
+    }
+
+    // -----------------------------------------------------------------------
+    // handle_validate: graphs that trigger errors and edge printing
+    // -----------------------------------------------------------------------
+
+    #[tokio::test]
+    async fn test_handle_validate_graph_with_duplicate_edges() {
+        // Duplicate edges should trigger validation warnings/errors
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(Node::new("x", "X").with_category("test"));
+        data.add_node(Node::new("y", "Y").with_category("test"));
+        // Add the same edge twice (different relationship to allow it)
+        data.add_edge(Edge::new("x", "y", Relationship::Prerequisite))
+            .expect("edge");
+        data.add_edge(Edge::new("x", "y", Relationship::RelatesTo))
+            .expect("edge");
+
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let result = handle_validate(&config).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    async fn test_handle_validate_empty_graph() {
+        // An empty graph is valid but exercises the valid+no-warnings branch
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let data = fabryk::graph::GraphData::new();
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let result = handle_validate(&config).await;
+        assert!(result.is_ok());
+    }
+
+    #[tokio::test]
+    async fn test_handle_validate_complex_graph_with_many_relationships() {
+        // A graph with many different relationship types exercises sorted output
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(Node::new("a", "A").with_category("harmony"));
+        data.add_node(Node::new("b", "B").with_category("rhythm"));
+        data.add_node(Node::new("c", "C").with_category("melody"));
+        data.add_node(Node::new("d", "D").with_category("form"));
+        data.add_edge(Edge::new("a", "b", Relationship::Prerequisite))
+            .expect("edge");
+        data.add_edge(Edge::new("b", "c", Relationship::RelatesTo))
+            .expect("edge");
+        data.add_edge(Edge::new("c", "d", Relationship::Extends))
+            .expect("edge");
+        data.add_edge(Edge::new(
+            "a",
+            "c",
+            Relationship::Custom("same_as".to_string()),
+        ))
+        .expect("edge");
+
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        let result = handle_validate(&config).await;
+        assert!(result.is_ok());
+    }
+
+    // -----------------------------------------------------------------------
+    // handle_compile: additional edge cases
+    // -----------------------------------------------------------------------
+
+    #[tokio::test]
+    async fn test_handle_compile_large_graph() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("data/graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create dirs");
+
+        let mut data = fabryk::graph::GraphData::new();
+        for i in 0..20 {
+            let id = format!("n{}", i);
+            let title = format!("Node {}", i);
+            data.add_node(Node::new(&id, &title).with_category("test"));
+        }
+        // Chain edges
+        for i in 0..19 {
+            let from = format!("n{}", i);
+            let to = format!("n{}", i + 1);
+            data.add_edge(Edge::new(&from, &to, Relationship::Prerequisite))
+                .expect("edge");
+        }
+
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let mut config = Config::default();
+        config.paths.base = temp_dir.path().to_string_lossy().to_string();
+
+        handle_compile(&config).await.expect("compile");
+
+        // Verify data integrity after compile
+        let data_dir = temp_dir.path().join("data");
+        let reloaded = load_concept_graph(&data_dir).await.expect("reload");
+        assert_eq!(reloaded.stats.node_count, 20);
+        assert_eq!(reloaded.stats.edge_count, 19);
+    }
+
+    // -----------------------------------------------------------------------
+    // load_concept_graph: additional graph structures
+    // -----------------------------------------------------------------------
+
+    #[tokio::test]
+    async fn test_load_concept_graph_only_sources() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create graphs dir");
+
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(
+            Node::new("src-a", "Source A")
+                .with_node_type(NodeType::Custom("source".to_string()))
+                .with_metadata("author", serde_json::json!("Author"))
+                .with_metadata("year", serde_json::json!(2021))
+                .with_metadata("is_converted", serde_json::json!(true)),
+        );
+        data.add_node(
+            Node::new("src-b", "Source B").with_node_type(NodeType::Custom("source".to_string())),
+        );
+
+        let graph_path = graphs_dir.join("concept_graph.json");
+        fabryk::graph::save_graph(&data, &graph_path, None).expect("save");
+
+        let loaded = load_concept_graph(temp_dir.path()).await.expect("load");
+        assert_eq!(loaded.stats.concept_count, 0);
+        assert_eq!(loaded.stats.source_count, 2);
+        assert_eq!(loaded.stats.node_count, 2);
+    }
+
+    #[tokio::test]
+    async fn test_load_concept_graph_preserves_loaded_at_timestamp() {
+        let temp_dir = tempfile::TempDir::new().expect("temp dir");
+        let graphs_dir = temp_dir.path().join("graphs");
+        std::fs::create_dir_all(&graphs_dir).expect("create graphs dir");
+
+        let data = fabryk::graph::GraphData::new();
+        fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
+            .expect("save");
+
+        let before = chrono::Utc::now();
+        let loaded = load_concept_graph(temp_dir.path()).await.expect("load");
+        let after = chrono::Utc::now();
+
+        assert!(loaded.loaded_at >= before);
+        assert!(loaded.loaded_at <= after);
+    }
+
+    // -----------------------------------------------------------------------
+    // compute_graph_stats: edge cases with custom node types
+    // -----------------------------------------------------------------------
+
+    #[test]
+    fn test_compute_graph_stats_only_custom_non_source_nodes() {
+        // Nodes that are neither concept nor source
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(Node::new("x", "X").with_node_type(NodeType::Custom("widget".to_string())));
+        data.add_node(Node::new("y", "Y").with_node_type(NodeType::Custom("gadget".to_string())));
+
+        let stats = compute_graph_stats(&data);
+        assert_eq!(stats.node_count, 2);
+        assert_eq!(stats.concept_count, 0);
+        assert_eq!(stats.source_count, 0);
+    }
+
+    #[test]
+    fn test_compute_graph_stats_all_types_represented() {
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(Node::new("c1", "Concept 1").with_category("theory"));
+        data.add_node(Node::new("c2", "Concept 2").with_category("practice"));
+        data.add_node(
+            Node::new("s1", "Source 1").with_node_type(NodeType::Custom("source".to_string())),
+        );
+        data.add_node(
+            Node::new("w1", "Widget 1").with_node_type(NodeType::Custom("widget".to_string())),
+        );
+        data.add_node(Node::new("q1", "Query 1").with_node_type(NodeType::UserQuery));
+        data.add_edge(Edge::new("c1", "c2", Relationship::Prerequisite))
+            .expect("edge");
+        data.add_edge(Edge::new("s1", "c1", Relationship::Introduces))
+            .expect("edge");
+        data.add_edge(Edge::new(
+            "c2",
+            "s1",
+            Relationship::Custom("cites".to_string()),
+        ))
+        .expect("edge");
+
+        let stats = compute_graph_stats(&data);
+        assert_eq!(stats.node_count, 5);
+        assert_eq!(stats.edge_count, 3);
+        assert_eq!(stats.concept_count, 2);
+        assert_eq!(stats.source_count, 1);
+    }
+
+    // -----------------------------------------------------------------------
+    // Source metadata: year edge cases
+    // -----------------------------------------------------------------------
+
+    #[test]
+    fn test_source_year_zero() {
+        let node = Node::new("src", "Source").with_metadata("year", serde_json::json!(0));
+        assert_eq!(source_year(&node), Some(0));
+    }
+
+    #[test]
+    fn test_source_year_large_value() {
+        let node = Node::new("src", "Source").with_metadata("year", serde_json::json!(9999));
+        assert_eq!(source_year(&node), Some(9999));
+    }
+
+    #[test]
+    fn test_source_year_null_metadata() {
+        let node = Node::new("src", "Source").with_metadata("year", serde_json::Value::Null);
+        assert_eq!(source_year(&node), None);
+    }
+
+    #[test]
+    fn test_source_author_empty_string() {
+        let node = Node::new("src", "Source")
+            .with_metadata("author", serde_json::Value::String(String::new()));
+        assert_eq!(source_author(&node), "");
+    }
+
+    #[test]
+    fn test_source_author_null_metadata() {
+        let node = Node::new("src", "Source").with_metadata("author", serde_json::Value::Null);
+        assert_eq!(source_author(&node), "Unknown");
+    }
+
+    // -----------------------------------------------------------------------
+    // node_category: edge cases
+    // -----------------------------------------------------------------------
+
+    #[test]
+    fn test_node_category_empty_string() {
+        let node = Node::new("id", "Title").with_category("");
+        assert_eq!(node_category(&node), "");
+    }
+
+    #[test]
+    fn test_node_category_unicode() {
+        let node = Node::new("id", "Title").with_category("théorie");
+        assert_eq!(node_category(&node), "théorie");
+    }
+
+    // -----------------------------------------------------------------------
+    // Relationship mapping: remaining unmapped variants
+    // -----------------------------------------------------------------------
+
+    #[test]
+    fn test_to_fabryk_relationship_empty_string() {
+        let rel = to_fabryk_relationship("");
+        assert_eq!(rel, Relationship::Custom("".to_string()));
+    }
+
+    #[test]
+    fn test_to_fabryk_relationship_mixed_case_same_as() {
+        assert_eq!(
+            to_fabryk_relationship("SAMEAS"),
+            Relationship::Custom("same_as".to_string())
+        );
+        assert_eq!(
+            to_fabryk_relationship("SAME_AS"),
+            Relationship::Custom("same_as".to_string())
+        );
+    }
+
+    #[test]
+    fn test_to_fabryk_relationship_whitespace_is_custom() {
+        let rel = to_fabryk_relationship("  ");
+        assert_eq!(rel, Relationship::Custom("  ".to_string()));
+    }
+
+    #[test]
+    fn test_from_fabryk_relationship_empty_custom() {
+        let rel = Relationship::Custom(String::new());
+        assert_eq!(from_fabryk_relationship(&rel), "");
+    }
+
+    // -----------------------------------------------------------------------
+    // LoadedGraph: field access and constructed values
+    // -----------------------------------------------------------------------
+
+    #[test]
+    fn test_loaded_graph_fields_accessible() {
+        let mut data = fabryk::graph::GraphData::new();
+        data.add_node(Node::new("a", "A").with_category("test"));
+        data.add_node(Node::new("s", "S").with_node_type(NodeType::Custom("source".to_string())));
+        data.add_edge(Edge::new("s", "a", Relationship::Introduces))
+            .expect("edge");
+
+        let stats = compute_graph_stats(&data);
+        let loaded_at = chrono::Utc::now();
+
+        let loaded = LoadedGraph {
+            data,
+            loaded_at,
+            stats,
+        };
+
+        assert_eq!(loaded.stats.node_count, 2);
+        assert_eq!(loaded.stats.edge_count, 1);
+        assert_eq!(loaded.stats.concept_count, 1);
+        assert_eq!(loaded.stats.source_count, 1);
+        assert_eq!(loaded.loaded_at, loaded_at);
+        assert!(loaded.data.contains_node("a"));
+        assert!(loaded.data.contains_node("s"));
+    }
+
+    #[test]
+    fn test_graph_stats_all_zeroes() {
+        let stats = GraphStats {
+            node_count: 0,
+            edge_count: 0,
+            concept_count: 0,
+            source_count: 0,
+        };
+        let cloned = stats.clone();
+        assert_eq!(cloned.node_count, 0);
+        assert_eq!(cloned.edge_count, 0);
+        let debug = format!("{:?}", stats);
+        assert!(debug.contains("GraphStats"));
+    }
 }

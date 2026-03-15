@@ -758,4 +758,737 @@ mod tests {
             ),
         }
     }
+
+    // ========================================================================
+    // Default impl tests
+    // ========================================================================
+
+    #[test]
+    fn test_config_default_has_expected_sub_configs() {
+        let config = Config::default();
+        assert_eq!(config.server.name, "music-theory-skill");
+        assert!(!config.server.version.is_empty());
+        assert_eq!(config.paths.base, ".");
+        assert!(config.sources.oxford.path.is_empty());
+        assert!(config.sources.general.path.is_empty());
+        assert!(config.sources.papers.path.is_empty());
+    }
+
+    #[test]
+    fn test_server_config_default_values() {
+        let config = ServerConfig::default();
+        assert_eq!(config.name, "music-theory-skill");
+        assert_eq!(config.version, env!("CARGO_PKG_VERSION"));
+    }
+
+    #[test]
+    fn test_paths_config_default_values() {
+        let config = PathsConfig::default();
+        assert_eq!(config.base, ".");
+        assert_eq!(config.sources_md, "sources-md");
+        assert_eq!(config.concept_cards, "concept-cards");
+        assert_eq!(config.concepts_unified, "concepts-unified");
+        assert_eq!(config.guides, "guides");
+        assert_eq!(config.skill_docs, ".");
+    }
+
+    #[test]
+    fn test_sources_config_default_empty() {
+        let config = SourcesConfig::default();
+        assert!(config.oxford.path.is_empty());
+        assert!(config.oxford.files.is_empty());
+        assert!(config.general.path.is_empty());
+        assert!(config.general.files.is_empty());
+        assert!(config.papers.path.is_empty());
+        assert!(config.papers.files.is_empty());
+    }
+
+    #[test]
+    fn test_search_config_default_impl_values() {
+        let config = SearchConfig::default();
+        assert_eq!(config.backend, "simple");
+        assert_eq!(config.index_path, ".tantivy-index");
+        assert!(!config.rebuild_on_startup);
+        assert_eq!(config.snippet_size, 200);
+        assert!(!config.fuzzy_search);
+        assert_eq!(config.fuzzy_distance, 2);
+        assert_eq!(config.query_mode, QueryMode::Smart);
+        assert!((config.minimum_match_percent - 0.6).abs() < f32::EPSILON);
+        assert!(config.enable_stopwords);
+        assert!(config.custom_stopwords.is_empty());
+        assert!(!config.stopword_allowlist.is_empty());
+        assert!((config.field_boost_title - 3.0).abs() < f32::EPSILON);
+        assert!((config.field_boost_description - 2.0).abs() < f32::EPSILON);
+        assert!((config.field_boost_content - 1.0).abs() < f32::EPSILON);
+    }
+
+    // ========================================================================
+    // Default function tests (remaining coverage)
+    // ========================================================================
+
+    #[test]
+    fn test_default_query_mode_is_smart() {
+        assert_eq!(default_query_mode(), QueryMode::Smart);
+    }
+
+    #[test]
+    fn test_default_minimum_match_is_sixty_percent() {
+        assert!((default_minimum_match() - 0.6).abs() < f32::EPSILON);
+    }
+
+    #[test]
+    fn test_default_enable_stopwords_is_true() {
+        assert!(default_enable_stopwords());
+    }
+
+    #[test]
+    fn test_default_stopword_allowlist_contains_music_terms() {
+        let list = default_stopword_allowlist();
+        assert!(list.contains(&"I".to_string()));
+        assert!(list.contains(&"V".to_string()));
+        assert!(list.contains(&"do".to_string()));
+        assert!(list.contains(&"re".to_string()));
+        assert!(list.contains(&"mi".to_string()));
+        assert!(list.contains(&"fa".to_string()));
+        assert!(list.contains(&"sol".to_string()));
+        assert!(list.contains(&"la".to_string()));
+        assert!(list.contains(&"ti".to_string()));
+        assert!(list.contains(&"ii".to_string()));
+        assert!(list.contains(&"IV".to_string()));
+        assert!(list.contains(&"vi".to_string()));
+        assert!(list.contains(&"vii".to_string()));
+        assert!(list.contains(&"i".to_string()));
+        assert!(list.contains(&"v".to_string()));
+        assert!(list.contains(&"iv".to_string()));
+        assert_eq!(list.len(), 16);
+    }
+
+    #[test]
+    fn test_default_field_boost_title() {
+        assert!((default_field_boost_title() - 3.0).abs() < f32::EPSILON);
+    }
+
+    #[test]
+    fn test_default_field_boost_description() {
+        assert!((default_field_boost_description() - 2.0).abs() < f32::EPSILON);
+    }
+
+    #[test]
+    fn test_default_field_boost_content() {
+        assert!((default_field_boost_content() - 1.0).abs() < f32::EPSILON);
+    }
+
+    // ========================================================================
+    // QueryMode serde tests
+    // ========================================================================
+
+    #[test]
+    fn test_query_mode_serde_or() {
+        let json = r#""or""#;
+        let mode: QueryMode = serde_json::from_str(json).expect("Should deserialize Or");
+        assert_eq!(mode, QueryMode::Or);
+        let serialized = serde_json::to_string(&mode).unwrap();
+        assert_eq!(serialized, r#""or""#);
+    }
+
+    #[test]
+    fn test_query_mode_serde_and() {
+        let json = r#""and""#;
+        let mode: QueryMode = serde_json::from_str(json).expect("Should deserialize And");
+        assert_eq!(mode, QueryMode::And);
+    }
+
+    #[test]
+    fn test_query_mode_serde_smart() {
+        let json = r#""smart""#;
+        let mode: QueryMode = serde_json::from_str(json).expect("Should deserialize Smart");
+        assert_eq!(mode, QueryMode::Smart);
+    }
+
+    #[test]
+    fn test_query_mode_serde_minimum_match() {
+        let json = r#"{"minimum_match":0.75}"#;
+        let mode: QueryMode = serde_json::from_str(json).expect("Should deserialize MinimumMatch");
+        assert_eq!(mode, QueryMode::MinimumMatch(0.75));
+    }
+
+    #[test]
+    fn test_query_mode_debug() {
+        assert!(format!("{:?}", QueryMode::Or).contains("Or"));
+        assert!(format!("{:?}", QueryMode::And).contains("And"));
+        assert!(format!("{:?}", QueryMode::Smart).contains("Smart"));
+        assert!(format!("{:?}", QueryMode::MinimumMatch(0.5)).contains("MinimumMatch"));
+    }
+
+    #[test]
+    fn test_query_mode_clone() {
+        let mode = QueryMode::MinimumMatch(0.8);
+        let cloned = mode.clone();
+        assert_eq!(mode, cloned);
+    }
+
+    // ========================================================================
+    // SearchConfig serde - query mode and stopword fields
+    // ========================================================================
+
+    #[test]
+    fn test_search_config_serde_with_query_mode_and_stopwords() {
+        let json = r#"{
+            "query_mode": "and",
+            "minimum_match_percent": 0.8,
+            "enable_stopwords": false,
+            "custom_stopwords": ["the", "a"],
+            "stopword_allowlist": ["I", "V"],
+            "field_boost_title": 5.0,
+            "field_boost_description": 3.0,
+            "field_boost_content": 2.0
+        }"#;
+        let config: SearchConfig = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(config.query_mode, QueryMode::And);
+        assert!((config.minimum_match_percent - 0.8).abs() < f32::EPSILON);
+        assert!(!config.enable_stopwords);
+        assert_eq!(config.custom_stopwords, vec!["the", "a"]);
+        assert_eq!(config.stopword_allowlist, vec!["I", "V"]);
+        assert!((config.field_boost_title - 5.0).abs() < f32::EPSILON);
+        assert!((config.field_boost_description - 3.0).abs() < f32::EPSILON);
+        assert!((config.field_boost_content - 2.0).abs() < f32::EPSILON);
+    }
+
+    // ========================================================================
+    // expand_path error path
+    // ========================================================================
+
+    #[test]
+    fn test_expand_path_with_invalid_env_var_returns_error() {
+        // An undefined env var in shellexpand causes an error
+        let result = expand_path("$NONEXISTENT_VAR_THAT_SHOULD_NOT_EXIST_12345/path");
+        assert!(result.is_err());
+        let err = result.unwrap_err();
+        let msg = err.to_string();
+        assert!(
+            msg.contains("NONEXISTENT_VAR_THAT_SHOULD_NOT_EXIST_12345") || msg.contains("path"),
+            "Error should reference the invalid env var or path, got: {msg}"
+        );
+    }
+
+    // ========================================================================
+    // PathsConfig - concepts_unified_path (fts feature)
+    // ========================================================================
+
+    #[cfg(feature = "fts")]
+    #[test]
+    fn test_paths_config_concepts_unified_path_absolute() {
+        let config = PathsConfig {
+            base: ".".to_string(),
+            sources_md: "sources".to_string(),
+            concept_cards: "concepts".to_string(),
+            concepts_unified: "/absolute/unified".to_string(),
+            guides: "guides".to_string(),
+            skill_docs: "docs".to_string(),
+        };
+
+        let result = config.concepts_unified_path();
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/absolute/unified"));
+    }
+
+    // ========================================================================
+    // ConfigProvider trait tests
+    // ========================================================================
+
+    #[test]
+    fn test_config_provider_project_name() {
+        let config = Config::default();
+        let name = ConfigProvider::project_name(&config);
+        assert_eq!(name, "music-theory-skill");
+    }
+
+    #[test]
+    fn test_config_provider_base_path_absolute() {
+        let mut config = Config::default();
+        config.paths.base = "/test/base".to_string();
+        let result = ConfigProvider::base_path(&config);
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/test/base"));
+    }
+
+    #[test]
+    fn test_config_provider_content_path_concept_cards() {
+        let mut config = Config::default();
+        config.paths.concept_cards = "/abs/concepts".to_string();
+        let result = config.content_path("concept_cards");
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/abs/concepts"));
+    }
+
+    #[test]
+    fn test_config_provider_content_path_sources_md() {
+        let mut config = Config::default();
+        config.paths.sources_md = "/abs/sources".to_string();
+        let result = config.content_path("sources_md");
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/abs/sources"));
+    }
+
+    #[test]
+    fn test_config_provider_content_path_concepts_unified() {
+        let mut config = Config::default();
+        config.paths.concepts_unified = "/abs/unified".to_string();
+        let result = config.content_path("concepts_unified");
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/abs/unified"));
+    }
+
+    #[test]
+    fn test_config_provider_content_path_guides() {
+        let mut config = Config::default();
+        config.paths.guides = "/abs/guides".to_string();
+        let result = config.content_path("guides");
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/abs/guides"));
+    }
+
+    #[test]
+    fn test_config_provider_content_path_skill_docs() {
+        let mut config = Config::default();
+        config.paths.skill_docs = "/abs/docs".to_string();
+        let result = config.content_path("skill_docs");
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/abs/docs"));
+    }
+
+    #[test]
+    fn test_config_provider_content_path_unknown_type_returns_error() {
+        let config = Config::default();
+        let result = config.content_path("nonexistent_type");
+        assert!(result.is_err());
+        let err = result.unwrap_err();
+        assert!(err
+            .to_string()
+            .contains("Unknown content type: nonexistent_type"));
+    }
+
+    #[test]
+    fn test_config_provider_cache_path_fts() {
+        let mut config = Config::default();
+        config.search.index_path = "/abs/index".to_string();
+        let result = config.cache_path("fts");
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/abs/index"));
+    }
+
+    #[test]
+    fn test_config_provider_cache_path_graph() {
+        let mut config = Config::default();
+        config.paths.base = "/abs/base".to_string();
+        let result = config.cache_path("graph");
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/abs/base/data/graphs"));
+    }
+
+    #[test]
+    fn test_config_provider_cache_path_vector() {
+        let mut config = Config::default();
+        config.paths.base = "/abs/base".to_string();
+        let result = config.cache_path("vector");
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/abs/base/.cache/vector"));
+    }
+
+    #[test]
+    fn test_config_provider_cache_path_unknown_type() {
+        let mut config = Config::default();
+        config.paths.base = "/abs/base".to_string();
+        let result = config.cache_path("custom_cache");
+        assert!(result.is_ok());
+        assert_eq!(
+            result.unwrap(),
+            PathBuf::from("/abs/base/.cache/custom_cache")
+        );
+    }
+
+    // ========================================================================
+    // ConfigManager trait tests
+    // ========================================================================
+
+    #[test]
+    fn test_config_manager_project_name_static() {
+        assert_eq!(
+            <Config as ConfigManager>::project_name(),
+            "music-theory-skill"
+        );
+    }
+
+    #[test]
+    fn test_config_manager_default_config_path_is_some() {
+        // dirs::config_dir() returns Some on most systems
+        let result = Config::default_config_path();
+        if let Some(path) = result {
+            assert!(path.to_string_lossy().contains("music-theory-skill"));
+            assert!(path.to_string_lossy().contains("config.toml"));
+        }
+        // If dirs::config_dir() returns None (unlikely on macOS), that is also valid
+    }
+
+    #[test]
+    fn test_config_manager_resolve_config_path_with_explicit() {
+        let result = Config::resolve_config_path(Some("/explicit/path"));
+        assert_eq!(result, Some(PathBuf::from("/explicit/path")));
+    }
+
+    #[test]
+    fn test_config_manager_to_toml_string_roundtrip() {
+        let config = Config::default();
+        let toml_str = config.to_toml_string();
+        assert!(toml_str.is_ok());
+        let toml_str = toml_str.unwrap();
+        assert!(toml_str.contains("[server]"));
+        assert!(toml_str.contains("name"));
+        assert!(toml_str.contains("music-theory-skill"));
+    }
+
+    #[test]
+    fn test_config_manager_to_env_vars_produces_prefixed_keys() {
+        let config = Config::default();
+        let result = config.to_env_vars();
+        assert!(result.is_ok());
+        let vars = result.unwrap();
+        assert!(!vars.is_empty(), "Should produce at least one env var");
+        for (key, _) in &vars {
+            assert!(
+                key.starts_with("MUSIC_THEORY_"),
+                "All keys should be prefixed with MUSIC_THEORY_, got: {key}"
+            );
+        }
+    }
+
+    #[test]
+    fn test_config_manager_to_env_vars_contains_server_name() {
+        let config = Config::default();
+        let vars = config.to_env_vars().unwrap();
+        let server_name = vars
+            .iter()
+            .find(|(k, _)| k.contains("SERVER") && k.contains("NAME"));
+        assert!(
+            server_name.is_some(),
+            "Should contain a server name env var"
+        );
+        assert_eq!(server_name.unwrap().1, "music-theory-skill");
+    }
+
+    #[test]
+    fn test_config_manager_load_with_none_path_returns_default_or_resolved() {
+        // When no config path is given and resolve_config_path returns None,
+        // load should return the default config. In practice it may find a
+        // config dir on the system, so we just verify it doesn't panic.
+        let result = <Config as ConfigManager>::load(None);
+        assert!(result.is_ok());
+    }
+
+    #[test]
+    fn test_config_manager_load_with_nonexistent_path_returns_error() {
+        let result = <Config as ConfigManager>::load(Some("/nonexistent/path/that/does/not/exist"));
+        // This should error because default.toml won't be found at that path
+        assert!(result.is_err());
+    }
+
+    use serial_test::serial;
+    use tempfile::TempDir;
+
+    #[test]
+    #[serial(config_env)]
+    fn test_config_manager_load_with_valid_toml_file() {
+        let tmp = TempDir::new().expect("Failed to create temp dir");
+        let config_content = r#"
+[server]
+name = "test-server"
+version = "0.0.1"
+
+[paths]
+base = "/tmp/test"
+
+[search]
+backend = "tantivy"
+"#;
+        std::fs::write(tmp.path().join("default.toml"), config_content)
+            .expect("Failed to write config");
+
+        let path_str = tmp.path().to_string_lossy().to_string();
+        let result = <Config as ConfigManager>::load(Some(&path_str));
+        assert!(result.is_ok());
+        let config = result.unwrap();
+        assert_eq!(config.server.name, "test-server");
+        assert_eq!(config.server.version, "0.0.1");
+        assert_eq!(config.paths.base, "/tmp/test");
+        assert_eq!(config.search.backend, "tantivy");
+    }
+
+    #[test]
+    #[serial(config_env)]
+    fn test_config_manager_resolve_config_path_with_env_var() {
+        let tmp = TempDir::new().expect("Failed to create temp dir");
+        std::fs::write(tmp.path().join("default.toml"), "[server]\nname = \"test\"")
+            .expect("Failed to write config");
+
+        std::env::set_var(
+            "MUSIC_THEORY_CONFIG_DIR",
+            tmp.path().to_string_lossy().as_ref(),
+        );
+
+        let result = Config::resolve_config_path(None);
+        assert!(result.is_some());
+        // The env var path should be returned since it contains default.toml
+        let resolved = result.unwrap();
+        assert_eq!(resolved, tmp.path());
+
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+    }
+
+    #[test]
+    #[serial(config_env)]
+    fn test_config_manager_resolve_config_path_env_var_without_toml_falls_through() {
+        let tmp = TempDir::new().expect("Failed to create temp dir");
+        // Do NOT write default.toml - the env var path should be skipped
+
+        std::env::set_var(
+            "MUSIC_THEORY_CONFIG_DIR",
+            tmp.path().to_string_lossy().as_ref(),
+        );
+
+        let result = Config::resolve_config_path(None);
+        // Should fall through to util::paths::config_dir() since no default.toml
+        // The result depends on the environment, but it should NOT be the tmp path
+        if let Some(ref path) = result {
+            assert_ne!(path, &tmp.path().to_path_buf());
+        }
+
+        std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
+    }
+
+    // ========================================================================
+    // flatten_toml_table tests
+    // ========================================================================
+
+    #[test]
+    fn test_flatten_toml_table_simple_values() {
+        let toml_str = r#"
+key1 = "value1"
+key2 = 42
+key3 = true
+key4 = 3.14
+"#;
+        let doc: toml_edit::DocumentMut = toml_str.parse().unwrap();
+        let mut vars = Vec::new();
+        flatten_toml_table(doc.as_table(), "PREFIX", &mut vars);
+
+        let map: HashMap<String, String> = vars.into_iter().collect();
+        assert_eq!(map.get("PREFIX_KEY1").unwrap().trim(), "value1");
+        assert_eq!(map.get("PREFIX_KEY2").unwrap().trim(), "42");
+        assert_eq!(map.get("PREFIX_KEY3").unwrap().trim(), "true");
+        assert!(map.get("PREFIX_KEY4").unwrap().trim().starts_with("3.14"));
+    }
+
+    #[test]
+    fn test_flatten_toml_table_nested_tables() {
+        let toml_str = r#"
+[outer]
+inner_key = "inner_value"
+
+[outer.nested]
+deep_key = "deep_value"
+"#;
+        let doc: toml_edit::DocumentMut = toml_str.parse().unwrap();
+        let mut vars = Vec::new();
+        flatten_toml_table(doc.as_table(), "APP", &mut vars);
+
+        let map: HashMap<String, String> = vars.into_iter().collect();
+        assert_eq!(map.get("APP_OUTER_INNER_KEY").unwrap(), "inner_value");
+        assert_eq!(map.get("APP_OUTER_NESTED_DEEP_KEY").unwrap(), "deep_value");
+    }
+
+    #[test]
+    fn test_flatten_toml_table_array_of_tables() {
+        let toml_str = r#"
+[[items]]
+name = "first"
+
+[[items]]
+name = "second"
+"#;
+        let doc: toml_edit::DocumentMut = toml_str.parse().unwrap();
+        let mut vars = Vec::new();
+        flatten_toml_table(doc.as_table(), "ROOT", &mut vars);
+
+        // ArrayOfTables should produce a single entry with the formatted representation
+        assert_eq!(vars.len(), 1);
+        assert_eq!(vars[0].0, "ROOT_ITEMS");
+        assert!(vars[0].1.contains("name"));
+    }
+
+    #[test]
+    fn test_flatten_toml_table_empty() {
+        let toml_str = "";
+        let doc: toml_edit::DocumentMut = toml_str.parse().unwrap();
+        let mut vars = Vec::new();
+        flatten_toml_table(doc.as_table(), "EMPTY", &mut vars);
+        assert!(vars.is_empty());
+    }
+
+    // ========================================================================
+    // Clone and Debug trait coverage
+    // ========================================================================
+
+    #[test]
+    fn test_config_clone() {
+        let config = Config::default();
+        let cloned = config.clone();
+        assert_eq!(cloned.server.name, config.server.name);
+        assert_eq!(cloned.paths.base, config.paths.base);
+    }
+
+    #[test]
+    fn test_config_debug() {
+        let config = Config::default();
+        let debug = format!("{:?}", config);
+        assert!(debug.contains("Config"));
+        assert!(debug.contains("ServerConfig"));
+        assert!(debug.contains("PathsConfig"));
+    }
+
+    #[test]
+    fn test_server_config_clone_and_debug() {
+        let config = ServerConfig::default();
+        let cloned = config.clone();
+        assert_eq!(cloned.name, config.name);
+        let debug = format!("{:?}", config);
+        assert!(debug.contains("ServerConfig"));
+    }
+
+    #[test]
+    fn test_paths_config_clone_and_debug() {
+        let config = PathsConfig::default();
+        let cloned = config.clone();
+        assert_eq!(cloned.base, config.base);
+        let debug = format!("{:?}", config);
+        assert!(debug.contains("PathsConfig"));
+    }
+
+    #[test]
+    fn test_sources_config_clone_and_debug() {
+        let config = SourcesConfig::default();
+        let cloned = config.clone();
+        assert_eq!(cloned.oxford.path, config.oxford.path);
+        let debug = format!("{:?}", config);
+        assert!(debug.contains("SourcesConfig"));
+    }
+
+    #[test]
+    fn test_source_category_clone_and_debug() {
+        let mut cat = SourceCategory::default();
+        cat.path = "/test".to_string();
+        cat.files.insert("key".to_string(), "val.pdf".to_string());
+        cat.aliases
+            .insert("key".to_string(), vec!["alias1".to_string()]);
+        let cloned = cat.clone();
+        assert_eq!(cloned.path, cat.path);
+        assert_eq!(cloned.files.len(), 1);
+        assert_eq!(cloned.aliases.len(), 1);
+        let debug = format!("{:?}", cat);
+        assert!(debug.contains("SourceCategory"));
+    }
+
+    #[test]
+    fn test_search_config_clone_and_debug() {
+        let config = SearchConfig::default();
+        let cloned = config.clone();
+        assert_eq!(cloned.backend, config.backend);
+        let debug = format!("{:?}", config);
+        assert!(debug.contains("SearchConfig"));
+    }
+
+    // ========================================================================
+    // Serde round-trip for top-level Config
+    // ========================================================================
+
+    #[test]
+    fn test_config_serde_roundtrip_via_toml() {
+        let config = Config::default();
+        let toml_str = toml_edit::ser::to_string_pretty(&config).expect("Should serialize to TOML");
+        let deserialized: Config =
+            toml_edit::de::from_str(&toml_str).expect("Should deserialize from TOML");
+        assert_eq!(deserialized.server.name, config.server.name);
+        assert_eq!(deserialized.paths.base, config.paths.base);
+        assert_eq!(deserialized.search.backend, config.search.backend);
+    }
+
+    // ========================================================================
+    // SourceCategory with aliases populated
+    // ========================================================================
+
+    #[test]
+    fn test_source_category_file_path_with_aliases() {
+        let mut files = HashMap::new();
+        files.insert("harmony".to_string(), "harmony.pdf".to_string());
+        let mut aliases = HashMap::new();
+        aliases.insert(
+            "harmony".to_string(),
+            vec!["Harmony Basics".to_string(), "Intro to Harmony".to_string()],
+        );
+
+        let category = SourceCategory {
+            path: "/books".to_string(),
+            files,
+            aliases,
+        };
+
+        // file_path should still work - aliases don't affect file lookup
+        let result = category.file_path("harmony");
+        assert!(result.is_ok());
+        assert_eq!(result.unwrap(), PathBuf::from("/books/harmony.pdf"));
+    }
+
+    // ========================================================================
+    // SourceCategory serde deserialization
+    // ========================================================================
+
+    #[test]
+    fn test_source_category_serde_from_json() {
+        let json = r#"{
+            "path": "/sources",
+            "files": {"book1": "book1.pdf"},
+            "aliases": {"book1": ["Book One", "First Book"]}
+        }"#;
+        let cat: SourceCategory = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(cat.path, "/sources");
+        assert_eq!(cat.files.get("book1").unwrap(), "book1.pdf");
+        let aliases = cat.aliases.get("book1").unwrap();
+        assert_eq!(aliases.len(), 2);
+        assert!(aliases.contains(&"Book One".to_string()));
+    }
+
+    #[test]
+    fn test_sources_config_serde_from_json() {
+        let json = r#"{
+            "oxford": {"path": "/oxford", "files": {}, "aliases": {}},
+            "general": {"path": "/general", "files": {}, "aliases": {}},
+            "papers": {"path": "/papers", "files": {}, "aliases": {}}
+        }"#;
+        let config: SourcesConfig = serde_json::from_str(json).expect("Should deserialize");
+        assert_eq!(config.oxford.path, "/oxford");
+        assert_eq!(config.general.path, "/general");
+        assert_eq!(config.papers.path, "/papers");
+    }
+
+    // ========================================================================
+    // expand_path with environment variable
+    // ========================================================================
+
+    #[test]
+    fn test_expand_path_with_home_env_var() {
+        let result = expand_path("$HOME/test");
+        assert!(result.is_ok());
+        let path = result.unwrap();
+        assert!(path.is_absolute());
+        assert!(path.to_string_lossy().ends_with("/test"));
+    }
 }
