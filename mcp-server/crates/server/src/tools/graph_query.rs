@@ -16,8 +16,7 @@ use crate::graph::query::*;
 #[cfg(feature = "graph")]
 use crate::graph::{
     from_fabryk_relationship, is_concept_node, is_source_node, neighborhood, node_category,
-    node_title, prerequisites_sorted, shortest_path, source_author,
-    FabrykRelationship,
+    node_title, prerequisites_sorted, shortest_path, source_author, FabrykRelationship,
 };
 #[cfg(feature = "graph")]
 use petgraph::visit::EdgeRef;
@@ -520,8 +519,13 @@ pub async fn get_concept_neighborhood(
     })?;
 
     // Use fabryk neighborhood algorithm
-    let result = neighborhood(&loaded.data, &params.concept_id, params.radius as usize, None)
-        .map_err(|e| crate::error::Error::operation(format!("Neighborhood failed: {}", e)))?;
+    let result = neighborhood(
+        &loaded.data,
+        &params.concept_id,
+        params.radius as usize,
+        None,
+    )
+    .map_err(|e| crate::error::Error::operation(format!("Neighborhood failed: {}", e)))?;
 
     // Collect nodes: center + neighbors
     let mut nodes = Vec::new();
@@ -549,7 +553,11 @@ pub async fn get_concept_neighborhood(
     });
 
     // Add neighbor nodes (up to max_nodes - 1 since center takes one slot)
-    for node in result.nodes.iter().take((params.max_nodes as usize).saturating_sub(1)) {
+    for node in result
+        .nodes
+        .iter()
+        .take((params.max_nodes as usize).saturating_sub(1))
+    {
         node_ids_in_neighborhood.insert(node.id.clone());
         let distance = result.distances.get(&node.id).copied().unwrap_or(1) as u32;
 
@@ -636,10 +644,7 @@ pub async fn get_dependents(
     let concept_title = node_title(target_node).to_string();
 
     let start_idx = loaded.data.get_index(&params.concept_id).ok_or_else(|| {
-        crate::error::Error::not_found_msg(format!(
-            "Node index not found: {}",
-            params.concept_id
-        ))
+        crate::error::Error::not_found_msg(format!("Node index not found: {}", params.concept_id))
     })?;
 
     // BFS forward through incoming Prerequisite edges to find dependents
@@ -663,10 +668,7 @@ pub async fn get_dependents(
             .graph
             .edges_directed(current_idx, Direction::Outgoing)
         {
-            if matches!(
-                edge.weight().relationship,
-                FabrykRelationship::Prerequisite
-            ) {
+            if matches!(edge.weight().relationship, FabrykRelationship::Prerequisite) {
                 let dep_idx = edge.target();
                 if visited.insert(dep_idx) {
                     let dep_node = &loaded.data.graph[dep_idx];
@@ -796,10 +798,7 @@ pub async fn get_concept_sources(
     let concept_title = node_title(target_node).to_string();
 
     let idx = loaded.data.get_index(&params.concept_id).ok_or_else(|| {
-        crate::error::Error::not_found_msg(format!(
-            "Node index not found: {}",
-            params.concept_id
-        ))
+        crate::error::Error::not_found_msg(format!("Node index not found: {}", params.concept_id))
     })?;
 
     // Find all incoming edges from Source nodes
@@ -944,8 +943,7 @@ pub async fn find_bridge_concepts(
     let loaded = guard.as_ref().unwrap();
 
     // Use fabryk find_bridges algorithm (returns nodes sorted by bridge score)
-    let bridge_nodes =
-        crate::graph::find_bridges(&loaded.data, params.limit as usize * 3);
+    let bridge_nodes = crate::graph::find_bridges(&loaded.data, params.limit as usize * 3);
 
     // Filter and score by the two target categories
     let mut bridges = Vec::new();
@@ -1042,10 +1040,7 @@ pub async fn get_source_coverage(
     let src_author = source_author(source_node).to_string();
 
     let idx = loaded.data.get_index(&params.source_id).ok_or_else(|| {
-        crate::error::Error::not_found_msg(format!(
-            "Node index not found: {}",
-            params.source_id
-        ))
+        crate::error::Error::not_found_msg(format!("Node index not found: {}", params.source_id))
     })?;
 
     // Find all outgoing edges to concepts
@@ -1313,12 +1308,8 @@ mod tests {
             );
 
             // Edges
-            data.add_edge(Edge::new(
-                "source-1",
-                "concept-a",
-                Relationship::Introduces,
-            ))
-            .expect("edge");
+            data.add_edge(Edge::new("source-1", "concept-a", Relationship::Introduces))
+                .expect("edge");
             data.add_edge(Edge::new(
                 "concept-c",
                 "concept-b",
@@ -1331,12 +1322,8 @@ mod tests {
                 Relationship::Prerequisite,
             ))
             .expect("edge");
-            data.add_edge(Edge::new(
-                "concept-a",
-                "concept-d",
-                Relationship::RelatesTo,
-            ))
-            .expect("edge");
+            data.add_edge(Edge::new("concept-a", "concept-d", Relationship::RelatesTo))
+                .expect("edge");
 
             let stats = GraphStats {
                 node_count: 5,

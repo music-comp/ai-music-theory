@@ -1,4 +1,4 @@
-//! Markdown parsing utilities using pulldown-cmark and serde_yaml.
+//! Markdown parsing utilities using pulldown-cmark and yaml_serde.
 //!
 //! This module provides centralized markdown processing functionality:
 //! - YAML frontmatter extraction and deserialization

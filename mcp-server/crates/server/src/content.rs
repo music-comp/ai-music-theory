@@ -15,13 +15,15 @@ use fabryk_mcp::content::{CategoryInfo, ContentItemProvider};
 use serde::Serialize;
 
 use crate::config::Config;
-use crate::tools::concepts::{ListConceptsParams, ListCategoriesResponse};
+use crate::tools::concepts::{ListCategoriesResponse, ListConceptsParams};
 
 /// Summary information for a music theory concept card.
 ///
 /// This is the `ItemSummary` associated type for `ContentItemProvider`.
 /// It mirrors the fields from `tools::concepts::ConceptInfo` that are
 /// relevant for listing operations.
+// Scaffolding for fabryk ContentItemProvider migration (milestone M3).
+#[allow(dead_code)]
 #[derive(Debug, Clone, Serialize)]
 pub struct ConceptSummary {
     /// Concept identifier (e.g., "major-triad").
@@ -41,12 +43,15 @@ pub struct ConceptSummary {
 /// Wraps the existing concept card infrastructure, delegating to
 /// `tools::concepts::list_concepts`, `tools::concepts::get_concept`,
 /// and `tools::concepts::list_categories`.
+// Scaffolding for fabryk ContentItemProvider migration (milestone M3).
+#[allow(dead_code)]
 pub struct MusicTheoryContentProvider {
     config: Config,
 }
 
 impl MusicTheoryContentProvider {
     /// Create a new content provider with the given configuration.
+    #[allow(dead_code)]
     pub fn new(config: Config) -> Self {
         Self { config }
     }
@@ -232,7 +237,8 @@ mod tests {
         let harmony_dir = temp.path().join("harmony");
         tokio::fs::create_dir_all(&harmony_dir).await.unwrap();
 
-        let content = "---\ntitle: Triads\ncategory: harmony\n---\n\n# Triads\n\nThree-note chords.";
+        let content =
+            "---\ntitle: Triads\ncategory: harmony\n---\n\n# Triads\n\nThree-note chords.";
         tokio::fs::write(harmony_dir.join("triads.md"), content)
             .await
             .unwrap();

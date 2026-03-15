@@ -48,9 +48,8 @@ pub use fabryk::fts::TantivySearch;
 /// - `index_path`: `String` -> `Option<String>`
 /// - `snippet_size` -> `snippet_length`
 /// - `stopword_allowlist` -> `allowlist`
-pub fn to_fabryk_search_config(
-    config: &crate::config::SearchConfig,
-) -> fabryk::fts::SearchConfig {
+#[cfg(feature = "fts")]
+pub fn to_fabryk_search_config(config: &crate::config::SearchConfig) -> fabryk::fts::SearchConfig {
     let query_mode = match config.query_mode {
         crate::config::QueryMode::Smart => fabryk::fts::QueryMode::Smart,
         crate::config::QueryMode::And => fabryk::fts::QueryMode::And,
@@ -92,6 +91,7 @@ pub fn to_fabryk_query_mode(mode: &crate::config::QueryMode) -> fabryk::fts::Que
 /// Provides backward-compatible field names on top of fabryk's `IndexStats`.
 /// The project uses `files_found`, `indexed`, `errors` while fabryk uses
 /// `files_processed`, `documents_indexed`, `errors`.
+#[cfg(feature = "fts")]
 #[derive(Debug, Clone, Default)]
 pub struct IndexStats {
     /// Total number of files found across all content types.
@@ -124,6 +124,7 @@ impl From<fabryk::fts::IndexStats> for IndexStats {
     }
 }
 
+#[cfg(feature = "fts")]
 impl std::ops::AddAssign for IndexStats {
     fn add_assign(&mut self, other: Self) {
         self.files_found += other.files_found;
@@ -173,11 +174,15 @@ impl IndexMetadata {
     }
 
     /// Get the schema version.
+    // Retained for index compatibility checks in milestone M6.
+    #[allow(dead_code)]
     pub fn schema_version(&self) -> u32 {
         self.inner.schema_version
     }
 
     /// Get the content hash.
+    // Retained for index freshness checks in milestone M6.
+    #[allow(dead_code)]
     pub fn content_hash(&self) -> &str {
         &self.inner.content_hash
     }
@@ -215,7 +220,11 @@ pub async fn build_index(config: &crate::config::Config) -> crate::error::Result
             if path.exists() {
                 Some((path, label))
             } else {
-                log::debug!("Skipping missing content dir for {}: {}", label, path.display());
+                log::debug!(
+                    "Skipping missing content dir for {}: {}",
+                    label,
+                    path.display()
+                );
                 None
             }
         })
@@ -270,7 +279,12 @@ pub async fn build_index(config: &crate::config::Config) -> crate::error::Result
                 );
             }
             Err(e) => {
-                log::warn!("Failed to index {} from {}: {}", label, content_path.display(), e);
+                log::warn!(
+                    "Failed to index {} from {}: {}",
+                    label,
+                    content_path.display(),
+                    e
+                );
                 total_stats.errors += 1;
             }
         }
@@ -309,7 +323,7 @@ pub async fn is_index_fresh(
 // Tests
 // ============================================================================
 
-#[cfg(test)]
+#[cfg(all(test, feature = "fts"))]
 mod tests {
     use super::*;
     use crate::config::{PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
@@ -326,11 +340,7 @@ mod tests {
             minimum_match_percent: 0.6,
             enable_stopwords: true,
             custom_stopwords: vec![],
-            stopword_allowlist: vec![
-                "I".to_string(),
-                "V".to_string(),
-                "do".to_string(),
-            ],
+            stopword_allowlist: vec!["I".to_string(), "V".to_string(), "do".to_string()],
             field_boost_title: 3.0,
             field_boost_description: 2.0,
             field_boost_content: 1.0,

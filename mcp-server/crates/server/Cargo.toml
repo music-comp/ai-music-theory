@@ -16,10 +16,10 @@ default = []
 fts = ["dep:tantivy", "dep:regex", "dep:stop-words", "fabryk/fts-tantivy", "fabryk-mcp/fts-tantivy"]
 graph = ["dep:petgraph", "dep:rkyv", "dep:memmap2", "dep:blake3", "dep:chrono", "fabryk/graph-rkyv-cache", "fabryk-mcp/graph-rkyv-cache"]
 vector = ["fabryk/vector-lancedb", "fabryk/vector-fastembed"]
-full = ["fts", "graph", "vector"]
+http = ["fabryk-mcp/http"]
+full = ["fts", "graph", "vector", "http"]
 
 [dependencies]
-rmcp = { workspace = true }
 tokio = { workspace = true }
 async-trait = { workspace = true }
 confyg = { workspace = true }
@@ -30,13 +30,11 @@ serde_json = { workspace = true }
 schemars = { workspace = true }
 async-walkdir = { workspace = true }
 futures = { workspace = true }
-glob = { workspace = true }
-shellexpand = { workspace = true }
 pulldown-cmark = { workspace = true }
-serde_yaml = { workspace = true }
 yaml_serde = { workspace = true }
-thiserror = { workspace = true }
+shellexpand = { workspace = true }
 dirs = { workspace = true }
+thiserror = { workspace = true }
 
 # CLI parsing
 clap = { workspace = true }

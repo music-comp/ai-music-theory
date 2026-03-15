@@ -244,12 +244,7 @@ async fn list_chapters_from_index(state: &AppState, source_id: &str) -> Result<V
     let chapters = results
         .items
         .into_iter()
-        .filter(|result| {
-            result
-                .path
-                .as_ref()
-                .is_some_and(|p| p.contains(source_id))
-        })
+        .filter(|result| result.path.as_ref().is_some_and(|p| p.contains(source_id)))
         .map(|result| ChapterInfo {
             id: result.id,
             title: result.title,

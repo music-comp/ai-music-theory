@@ -18,6 +18,7 @@ use crate::state::AppState;
 
 /// Parameters accepted by the `semantic_search` tool.
 #[derive(Debug, Clone, Deserialize, JsonSchema)]
+#[cfg_attr(not(feature = "vector"), allow(dead_code))]
 pub struct SemanticSearchParams {
     /// The natural-language query string.
     pub query: String,
@@ -40,7 +41,7 @@ pub struct SemanticSearchParams {
 }
 
 /// The search strategy to use.
-#[derive(Debug, Clone, Serialize, Deserialize, JsonSchema, PartialEq)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize, JsonSchema, PartialEq)]
 #[serde(rename_all = "snake_case")]
 pub enum SearchMode {
     /// Pure vector similarity search.
@@ -48,13 +49,8 @@ pub enum SearchMode {
     /// Keyword / full-text search only.
     Keyword,
     /// Reciprocal-rank fusion of vector + keyword results.
+    #[default]
     Hybrid,
-}
-
-impl Default for SearchMode {
-    fn default() -> Self {
-        Self::Hybrid
-    }
 }
 
 fn default_mode() -> SearchMode {
@@ -146,7 +142,7 @@ async fn search_vector(
     state: &AppState,
     params: &SemanticSearchParams,
 ) -> Result<SemanticSearchResponse> {
-    use fabryk::vector::{VectorBackend, VectorSearchParams};
+    use fabryk::vector::VectorSearchParams;
 
     // Extract the Arc and drop the guard in a sync block so the
     // RwLockReadGuard is never alive across an `.await` point.
@@ -160,8 +156,7 @@ async fn search_vector(
             .clone()
     };
 
-    let mut search_params =
-        VectorSearchParams::new(&params.query).with_limit(params.limit);
+    let mut search_params = VectorSearchParams::new(&params.query).with_limit(params.limit);
 
     if let Some(ref cat) = params.category {
         search_params = search_params.with_category(cat);
@@ -217,8 +212,7 @@ async fn search_keyword(
         content_types: None,
     };
 
-    let response =
-        crate::tools::search::search_concepts(state, search_params).await?;
+    let response = crate::tools::search::search_concepts(state, search_params).await?;
 
     let items: Vec<SemanticSearchResult> = response
         .results
@@ -259,7 +253,7 @@ async fn search_hybrid(
     state: &AppState,
     params: &SemanticSearchParams,
 ) -> Result<SemanticSearchResponse> {
-    use fabryk::vector::{FtsResult, VectorBackend, VectorSearchParams, reciprocal_rank_fusion};
+    use fabryk::vector::{reciprocal_rank_fusion, FtsResult, VectorBackend, VectorSearchParams};
 
     // Always run keyword search.
     let keyword_future = search_keyword(state, params);
@@ -275,8 +269,7 @@ async fn search_hybrid(
 
     let vector_result = match maybe_backend {
         Some(vector_backend) => {
-            let mut vp = VectorSearchParams::new(&params.query)
-                .with_limit(params.limit * 2);
+            let mut vp = VectorSearchParams::new(&params.query).with_limit(params.limit * 2);
             if let Some(ref cat) = params.category {
                 vp = vp.with_category(cat);
             }
@@ -303,12 +296,8 @@ async fn search_hybrid(
                 })
                 .collect();
 
-            let hybrid = reciprocal_rank_fusion(
-                &vector_results.items,
-                &fts_results,
-                params.limit,
-                60,
-            );
+            let hybrid =
+                reciprocal_rank_fusion(&vector_results.items, &fts_results, params.limit, 60);
 
             let items: Vec<SemanticSearchResult> = hybrid
                 .into_iter()
@@ -393,8 +382,7 @@ mod tests {
     #[test]
     fn test_params_deserialization_defaults() {
         let json = r#"{"query":"harmony"}"#;
-        let params: SemanticSearchParams =
-            serde_json::from_str(json).unwrap();
+        let params: SemanticSearchParams = serde_json::from_str(json).unwrap();
         assert_eq!(params.query, "harmony");
         assert_eq!(params.mode, SearchMode::Hybrid);
         assert_eq!(params.limit, 10);
@@ -405,8 +393,7 @@ mod tests {
     #[test]
     fn test_params_deserialization_all_fields() {
         let json = r#"{"query":"cadence","mode":"vector","category":"harmony","source":"Open Music Theory","limit":5}"#;
-        let params: SemanticSearchParams =
-            serde_json::from_str(json).unwrap();
+        let params: SemanticSearchParams = serde_json::from_str(json).unwrap();
         assert_eq!(params.query, "cadence");
         assert_eq!(params.mode, SearchMode::Vector);
         assert_eq!(params.limit, 5);
@@ -421,10 +408,7 @@ mod tests {
                 id: "test-1".to_string(),
                 score: 0.95,
                 source: "vector".to_string(),
-                metadata: HashMap::from([(
-                    "title".to_string(),
-                    "Test".to_string(),
-                )]),
+                metadata: HashMap::from([("title".to_string(), "Test".to_string())]),
             }],
             total: 1,
             query: "test".to_string(),
@@ -456,10 +440,7 @@ mod tests {
             id: "test".to_string(),
             score: 0.5,
             source: "keyword".to_string(),
-            metadata: HashMap::from([(
-                "key".to_string(),
-                "value".to_string(),
-            )]),
+            metadata: HashMap::from([("key".to_string(), "value".to_string())]),
         };
         let json = serde_json::to_string(&result).unwrap();
         assert!(json.contains("metadata"));

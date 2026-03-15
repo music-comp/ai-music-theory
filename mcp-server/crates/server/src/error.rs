@@ -64,8 +64,7 @@ mod tests {
 
     #[test]
     fn test_error_io_with_path() {
-        let io_err =
-            std::io::Error::new(std::io::ErrorKind::PermissionDenied, "permission denied");
+        let io_err = std::io::Error::new(std::io::ErrorKind::PermissionDenied, "permission denied");
         let path = PathBuf::from("/test/path.txt");
         let err = Error::io_with_path(io_err, &path);
         assert!(err.is_io());
@@ -226,5 +225,4 @@ mod tests {
             );
         }
     }
-
 }

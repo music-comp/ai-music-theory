@@ -5,14 +5,14 @@
 //! [`FabrykMcpServer`].
 
 use serde::Deserialize;
-use serde_json::{Value, json};
+use serde_json::{json, Value};
 
 use fabryk_mcp::{
-    CompositeRegistry, FabrykMcpServer, ResourceFuture, ResourceRegistry, ToolRegistry, ToolResult,
     model::{
         AnnotateAble, CallToolResult, Content, ErrorCode, ErrorData, RawResource, Resource,
         ResourceContents, Tool,
     },
+    CompositeRegistry, FabrykMcpServer, ResourceFuture, ResourceRegistry, ToolRegistry, ToolResult,
 };
 
 use crate::config::Config;
@@ -35,7 +35,11 @@ fn json_schema(value: Value) -> serde_json::Map<String, Value> {
 
 /// Convenience wrapper to build a `Tool` with an input schema.
 fn make_tool(name: &str, description: &str, schema: Value) -> Tool {
-    Tool::new(name.to_string(), description.to_string(), json_schema(schema))
+    Tool::new(
+        name.to_string(),
+        description.to_string(),
+        json_schema(schema),
+    )
 }
 
 /// Convenience wrapper to build a `Tool` with no parameters.
@@ -550,44 +554,38 @@ impl ToolRegistry for SourceToolsRegistry {
                             None,
                         )
                     })?;
-                let response =
-                    tools::sources::check_source_availability(&state, &args.source_id)
-                        .await
-                        .map_err(|e| {
-                            to_mcp_error(e, "Error checking source availability")
-                        })?;
+                let response = tools::sources::check_source_availability(&state, &args.source_id)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error checking source availability"))?;
                 serialize_response(&response)
             }));
         }
 
         if name == "list_source_chapters" {
             return Some(Box::pin(async move {
-                let args: ListSourceChaptersArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
-                let response =
-                    tools::sources::list_source_chapters(&state, &args.source_id)
-                        .await
-                        .map_err(|e| to_mcp_error(e, "Error listing chapters"))?;
+                let args: ListSourceChaptersArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
+                let response = tools::sources::list_source_chapters(&state, &args.source_id)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error listing chapters"))?;
                 serialize_response(&response)
             }));
         }
 
         if name == "get_source_chapter" {
             return Some(Box::pin(async move {
-                let args: GetSourceChapterArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
+                let args: GetSourceChapterArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
                 let content = tools::sources::get_source_chapter(
                     &state.config,
                     &args.source_id,
@@ -602,17 +600,15 @@ impl ToolRegistry for SourceToolsRegistry {
 
         if name == "get_source_pdf_path" {
             return Some(Box::pin(async move {
-                let args: GetSourcePdfPathArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
-                let path =
-                    tools::sources::get_source_pdf_path(&state.config, &args.source_id)
-                        .map_err(|e| to_mcp_error(e, "Error getting PDF path"))?;
+                let args: GetSourcePdfPathArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
+                let path = tools::sources::get_source_pdf_path(&state.config, &args.source_id)
+                    .map_err(|e| to_mcp_error(e, "Error getting PDF path"))?;
                 let path_str = path.to_str().ok_or_else(|| {
                     ErrorData::new(ErrorCode::INTERNAL_ERROR, "Invalid UTF-8 in path", None)
                 })?;
@@ -1092,10 +1088,9 @@ impl ToolRegistry for GraphToolsRegistry {
                         None,
                     )
                 })?;
-                let response =
-                    tools::graph::get_node_edges(&state, &args.node_id, &args.direction)
-                        .await
-                        .map_err(|e| to_mcp_error(e, "Error getting node edges"))?;
+                let response = tools::graph::get_node_edges(&state, &args.node_id, &args.direction)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting node edges"))?;
                 serialize_response(&response)
             }));
         }
@@ -1104,14 +1099,13 @@ impl ToolRegistry for GraphToolsRegistry {
 
         if name == "get_related_concepts" {
             return Some(Box::pin(async move {
-                let args: GetRelatedConceptsArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
+                let args: GetRelatedConceptsArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
                 let tool_params = tools::graph_query::GetRelatedConceptsParams {
                     concept_id: args.concept_id,
                     relationship_types: args.relationship_types,
@@ -1127,14 +1121,13 @@ impl ToolRegistry for GraphToolsRegistry {
 
         if name == "find_concept_path" {
             return Some(Box::pin(async move {
-                let args: FindConceptPathArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
+                let args: FindConceptPathArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
                 let tool_params = tools::graph_query::FindConceptPathParams {
                     from_id: args.from_id,
                     to_id: args.to_id,
@@ -1149,14 +1142,13 @@ impl ToolRegistry for GraphToolsRegistry {
 
         if name == "get_prerequisites" {
             return Some(Box::pin(async move {
-                let args: GetPrerequisitesArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
+                let args: GetPrerequisitesArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
                 let tool_params = tools::graph_query::GetPrerequisitesParams {
                     concept_id: args.concept_id,
                     depth: args.depth,
@@ -1212,14 +1204,13 @@ impl ToolRegistry for GraphToolsRegistry {
 
         if name == "get_central_concepts" {
             return Some(Box::pin(async move {
-                let args: GetCentralConceptsArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
+                let args: GetCentralConceptsArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
                 let tool_params = tools::graph_query::GetCentralConceptsParams {
                     category: args.category,
                     limit: args.limit,
@@ -1233,14 +1224,13 @@ impl ToolRegistry for GraphToolsRegistry {
 
         if name == "get_concept_sources" {
             return Some(Box::pin(async move {
-                let args: GetConceptSourcesArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
+                let args: GetConceptSourcesArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
                 let tool_params = tools::graph_query::GetConceptSourcesParams {
                     concept_id: args.concept_id,
                 };
@@ -1253,14 +1243,13 @@ impl ToolRegistry for GraphToolsRegistry {
 
         if name == "get_concept_variants" {
             return Some(Box::pin(async move {
-                let args: GetConceptVariantsArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
+                let args: GetConceptVariantsArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
                 let tool_params = tools::graph_query::GetConceptVariantsParams {
                     canonical_id: args.canonical_id,
                 };
@@ -1273,14 +1262,13 @@ impl ToolRegistry for GraphToolsRegistry {
 
         if name == "find_bridge_concepts" {
             return Some(Box::pin(async move {
-                let args: FindBridgeConceptsArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
+                let args: FindBridgeConceptsArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
                 let tool_params = tools::graph_query::FindBridgeConceptsParams {
                     category_a: args.category_a,
                     category_b: args.category_b,
@@ -1295,14 +1283,13 @@ impl ToolRegistry for GraphToolsRegistry {
 
         if name == "get_source_coverage" {
             return Some(Box::pin(async move {
-                let args: GetSourceCoverageArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
+                let args: GetSourceCoverageArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
                 let tool_params = tools::graph_query::GetSourceCoverageParams {
                     source_id: args.source_id,
                 };
@@ -1517,11 +1504,7 @@ mod tests {
 
     #[test]
     fn test_make_tool() {
-        let tool = make_tool(
-            "test_tool",
-            "A test tool",
-            json!({"type": "object"}),
-        );
+        let tool = make_tool("test_tool", "A test tool", json!({"type": "object"}));
         assert_eq!(tool.name, "test_tool");
         assert_eq!(tool.description.as_deref(), Some("A test tool"));
     }
@@ -1647,11 +1630,7 @@ mod tests {
         ];
 
         for tool_name in &expected_tools {
-            assert!(
-                registry.has_tool(tool_name),
-                "Missing tool: {}",
-                tool_name
-            );
+            assert!(registry.has_tool(tool_name), "Missing tool: {}", tool_name);
         }
     }
 

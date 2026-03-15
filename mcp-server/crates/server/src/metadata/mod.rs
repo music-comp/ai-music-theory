@@ -6,9 +6,7 @@
 
 mod extraction;
 
-pub use extraction::{extract_concept_metadata, ConceptMetadata};
+pub use extraction::extract_concept_metadata;
 
 // v0.3.0 universal metadata support (used in FTS and source tools)
-#[cfg(feature = "fts")]
-pub use extraction::UniversalMetadata;
 pub use extraction::{extract_metadata, ContentType};

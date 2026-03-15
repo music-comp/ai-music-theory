@@ -88,7 +88,7 @@ pub fn extract_frontmatter(content: &str) -> Result<(Option<Frontmatter>, &str)>
     let frontmatter = if yaml_text.is_empty() {
         None
     } else {
-        match serde_yaml::from_str::<Frontmatter>(yaml_text) {
+        match yaml_serde::from_str::<Frontmatter>(yaml_text) {
             Ok(fm) => Some(fm),
             Err(e) => {
                 // Log warning but don't fail - treat as no frontmatter

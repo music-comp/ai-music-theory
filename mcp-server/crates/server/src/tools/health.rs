@@ -145,7 +145,6 @@ pub async fn get_health(state: &AppState) -> Result<HealthResponse> {
         let enabled = true;
         let ready = state.is_vector_ready();
         let stats = if ready {
-            use fabryk::vector::VectorBackend;
             if let Ok(guard) = state.vector_backend.read() {
                 guard.as_ref().map(|b| VectorStats {
                     document_count: b.document_count().unwrap_or(0),

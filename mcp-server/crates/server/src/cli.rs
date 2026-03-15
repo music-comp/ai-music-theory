@@ -2,7 +2,6 @@
 //!
 //! Provides serve/index/status subcommands using clap.
 
-
 #[cfg(any(feature = "fts", feature = "graph", feature = "vector"))]
 use std::sync::Arc;
 
@@ -45,6 +44,16 @@ pub enum Commands {
         /// Use Ctrl+C to test signal handling.
         #[arg(long)]
         test: bool,
+
+        /// Serve over HTTP instead of stdio
+        #[cfg(feature = "http")]
+        #[arg(long)]
+        http: bool,
+
+        /// Port for HTTP server (requires --http)
+        #[cfg(feature = "http")]
+        #[arg(long, short, default_value = "8080")]
+        port: u16,
     },
 
     /// Build or rebuild the full-text search index
@@ -142,8 +151,26 @@ pub enum VectordbSubcommand {
 pub async fn handle_command(cli: Cli) -> Result<()> {
     let log_level = cli.log_level.clone();
 
-    match cli.command.unwrap_or(Commands::Serve { test: false }) {
-        Commands::Serve { test } => run_server(log_level, test).await,
+    match cli.command.unwrap_or(Commands::Serve {
+        test: false,
+        #[cfg(feature = "http")]
+        http: false,
+        #[cfg(feature = "http")]
+        port: 8080,
+    }) {
+        Commands::Serve {
+            test,
+            #[cfg(feature = "http")]
+            http,
+            #[cfg(feature = "http")]
+            port,
+        } => {
+            #[cfg(feature = "http")]
+            if http {
+                return run_server_http(log_level, port).await;
+            }
+            run_server(log_level, test).await
+        }
 
         #[cfg(feature = "fts")]
         Commands::Index { force } => handle_index_command(force, log_level).await,
@@ -222,7 +249,6 @@ fn apply_log_level_override(
 /// * `log_level_override` - Optional log level to override config
 /// * `test_mode` - If true, runs in test mode without MCP protocol
 async fn run_server(log_level_override: Option<String>, test_mode: bool) -> Result<()> {
-
     // Load configuration
     let config = Config::load()?;
 
@@ -304,12 +330,8 @@ async fn run_server(log_level_override: Option<String>, test_mode: bool) -> Resu
             eprintln!("messages on stdin. It cannot be run interactively in a terminal.\n");
             eprintln!("Usage:");
             eprintln!("  • Run through an MCP client (e.g., Claude Desktop)");
-            eprintln!(
-                "  • Use the MCP Inspector for testing: npx @modelcontextprotocol/inspector"
-            );
-            eprintln!(
-                "  • Use --test flag to test signal handling: music-theory-mcp serve --test"
-            );
+            eprintln!("  • Use the MCP Inspector for testing: npx @modelcontextprotocol/inspector");
+            eprintln!("  • Use --test flag to test signal handling: music-theory-mcp serve --test");
             eprintln!("  • See: https://modelcontextprotocol.io/docs/tools/inspector\n");
             eprintln!("Original error: {}\n", error_str);
 
@@ -325,6 +347,51 @@ async fn run_server(log_level_override: Option<String>, test_mode: bool) -> Resu
             "MCP server initialization failed: {}",
             error_str
         )))
+    })?;
+
+    Ok(())
+}
+
+/// Run the MCP server over HTTP.
+#[cfg(feature = "http")]
+async fn run_server_http(log_level_override: Option<String>, port: u16) -> Result<()> {
+    let config = Config::load()?;
+    let log_opts = apply_log_level_override(&config.logging, log_level_override)?;
+    twyg::setup(log_opts)
+        .map_err(|e| crate::error::Error::config(format!("Failed to setup logging: {}", e)))?;
+
+    log::info!(
+        version = &*config.server.version,
+        name = &*config.server.name;
+        "Music Theory MCP Server starting"
+    );
+
+    let state = AppState::new(config).await?;
+
+    #[cfg(feature = "fts")]
+    {
+        let state_arc = Arc::new(state.clone());
+        crate::state::initialize_fts(&state_arc).await?;
+    }
+
+    #[cfg(feature = "graph")]
+    {
+        let state_arc = Arc::new(state.clone());
+        crate::state::initialize_graph(&state_arc).await?;
+    }
+
+    #[cfg(feature = "vector")]
+    {
+        let state_arc = Arc::new(state.clone());
+        crate::state::initialize_vector(&state_arc).await?;
+    }
+
+    let addr = std::net::SocketAddr::from(([127, 0, 0, 1], port));
+    log::info!(transport = "http", port = port; "Starting MCP server");
+
+    build_server(state).serve_http(addr).await.map_err(|e| {
+        log::error!("HTTP server error: {}", e);
+        crate::error::Error::io(std::io::Error::other(format!("HTTP server error: {}", e)))
     })?;
 
     Ok(())
@@ -476,7 +543,7 @@ async fn handle_vectordb_command(
     use std::sync::Arc;
 
     use crate::extractors::MusicTheoryVectorExtractor;
-    use fabryk::vector::{EmbeddingProvider, FastEmbedProvider, VectorBackend, VectorIndexBuilder};
+    use fabryk::vector::{EmbeddingProvider, FastEmbedProvider, VectorIndexBuilder};
 
     let config = Config::load()?;
     let opts = apply_log_level_override(&config.logging, log_level_override)?;
@@ -486,9 +553,7 @@ async fn handle_vectordb_command(
         VectordbSubcommand::Build { force } => {
             let base = config.paths.base_path()?;
             let cache_dir = base.join(".cache").join("vector");
-            std::fs::create_dir_all(&cache_dir).map_err(|e| {
-                crate::error::Error::io(e)
-            })?;
+            std::fs::create_dir_all(&cache_dir).map_err(|e| crate::error::Error::io(e))?;
             let cache_file = cache_dir.join("vector-cache.json");
 
             if force {
@@ -500,15 +565,21 @@ async fn handle_vectordb_command(
             }
 
             println!("Creating embedding provider (bge-small-en-v1.5)...");
-            let provider: Arc<dyn EmbeddingProvider> =
-                Arc::new(FastEmbedProvider::new("bge-small-en-v1.5", None).map_err(|e| {
-                    crate::error::Error::operation(format!("Failed to create embedding provider: {e}"))
-                })?);
+            let provider: Arc<dyn EmbeddingProvider> = Arc::new(
+                FastEmbedProvider::new("bge-small-en-v1.5", None).map_err(|e| {
+                    crate::error::Error::operation(format!(
+                        "Failed to create embedding provider: {e}"
+                    ))
+                })?,
+            );
 
             let content_dirs = [
                 (base.join(&config.paths.concept_cards), "concept_cards"),
                 (base.join(&config.paths.sources_md), "sources_md"),
-                (base.join(&config.paths.concepts_unified), "concepts_unified"),
+                (
+                    base.join(&config.paths.concepts_unified),
+                    "concepts_unified",
+                ),
                 (base.join(&config.paths.guides), "guides"),
             ];
 
@@ -602,14 +673,20 @@ mod tests {
     #[test]
     fn test_cli_parse_serve() {
         let cli = Cli::parse_from(["music-theory-mcp", "serve"]);
-        assert!(matches!(cli.command, Some(Commands::Serve { test: false })));
+        assert!(matches!(
+            cli.command,
+            Some(Commands::Serve { test: false, .. })
+        ));
         assert!(cli.log_level.is_none());
     }
 
     #[test]
     fn test_cli_parse_serve_test_mode() {
         let cli = Cli::parse_from(["music-theory-mcp", "serve", "--test"]);
-        assert!(matches!(cli.command, Some(Commands::Serve { test: true })));
+        assert!(matches!(
+            cli.command,
+            Some(Commands::Serve { test: true, .. })
+        ));
         assert!(cli.log_level.is_none());
     }
 
@@ -628,28 +705,40 @@ mod tests {
     #[test]
     fn test_cli_parse_log_level_with_serve() {
         let cli = Cli::parse_from(["music-theory-mcp", "--log-level", "warn", "serve"]);
-        assert!(matches!(cli.command, Some(Commands::Serve { test: false })));
+        assert!(matches!(
+            cli.command,
+            Some(Commands::Serve { test: false, .. })
+        ));
         assert_eq!(cli.log_level, Some("warn".to_string()));
     }
 
     #[test]
     fn test_cli_parse_log_level_before_command() {
         let cli = Cli::parse_from(["music-theory-mcp", "-l", "error", "serve"]);
-        assert!(matches!(cli.command, Some(Commands::Serve { test: false })));
+        assert!(matches!(
+            cli.command,
+            Some(Commands::Serve { test: false, .. })
+        ));
         assert_eq!(cli.log_level, Some("error".to_string()));
     }
 
     #[test]
     fn test_cli_parse_log_level_after_command() {
         let cli = Cli::parse_from(["music-theory-mcp", "serve", "--log-level", "info"]);
-        assert!(matches!(cli.command, Some(Commands::Serve { test: false })));
+        assert!(matches!(
+            cli.command,
+            Some(Commands::Serve { test: false, .. })
+        ));
         assert_eq!(cli.log_level, Some("info".to_string()));
     }
 
     #[test]
     fn test_cli_parse_serve_test_with_log_level() {
         let cli = Cli::parse_from(["music-theory-mcp", "-l", "debug", "serve", "--test"]);
-        assert!(matches!(cli.command, Some(Commands::Serve { test: true })));
+        assert!(matches!(
+            cli.command,
+            Some(Commands::Serve { test: true, .. })
+        ));
         assert_eq!(cli.log_level, Some("debug".to_string()));
     }
 
@@ -802,7 +891,7 @@ mod tests {
     }
 
     #[tokio::test]
-    #[serial]
+    #[serial(config_env)]
     #[cfg(feature = "fts")]
     async fn test_handle_index_command_no_index() {
         use std::fs;
@@ -882,7 +971,7 @@ fuzzy_distance = 2
     }
 
     #[tokio::test]
-    #[serial]
+    #[serial(config_env)]
     #[cfg(feature = "fts")]
     async fn test_handle_index_command_with_fresh_index() {
         use std::fs;
@@ -960,7 +1049,7 @@ fuzzy_distance = 2
     }
 
     #[tokio::test]
-    #[serial]
+    #[serial(config_env)]
     #[cfg(feature = "fts")]
     async fn test_handle_index_command_with_force() {
         use std::fs;
@@ -1036,7 +1125,7 @@ fuzzy_distance = 2
     }
 
     #[tokio::test]
-    #[serial]
+    #[serial(config_env)]
     #[cfg(feature = "fts")]
     async fn test_handle_status_command_no_index() {
         use std::fs;
@@ -1092,7 +1181,7 @@ fuzzy_distance = 2
     }
 
     #[tokio::test]
-    #[serial]
+    #[serial(config_env)]
     #[cfg(feature = "fts")]
     async fn test_handle_status_command_no_metadata() {
         use std::fs;
@@ -1151,7 +1240,7 @@ fuzzy_distance = 2
     }
 
     #[tokio::test]
-    #[serial]
+    #[serial(config_env)]
     #[cfg(feature = "fts")]
     async fn test_handle_status_command_with_index() {
         use std::fs;
@@ -1229,7 +1318,7 @@ fuzzy_distance = 2
     }
 
     #[tokio::test]
-    #[serial]
+    #[serial(config_env)]
     #[cfg(feature = "fts")]
     async fn test_handle_status_command_with_stale_index() {
         use std::fs;
@@ -1311,7 +1400,7 @@ fuzzy_distance = 2
     }
 
     #[tokio::test]
-    #[serial]
+    #[serial(config_env)]
     #[cfg(feature = "fts")]
     async fn test_handle_index_command_with_log_level() {
         use std::fs;
@@ -1383,7 +1472,7 @@ fuzzy_distance = 2
     }
 
     #[tokio::test]
-    #[serial]
+    #[serial(config_env)]
     #[cfg(feature = "fts")]
     async fn test_handle_status_command_with_log_level() {
         use std::fs;

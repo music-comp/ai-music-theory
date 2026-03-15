@@ -1,0 +1,26 @@
+# Local development overrides.
+# This file is gitignored — each developer creates their own
+# pointing to their local clone of the ecl repo.
+#
+# Copy this to .cargo/config.toml and adjust paths to match
+# your local ECL checkout location.
+#
+# Cargo's `paths` key overrides any dependency whose package name
+# and version match a crate found under the listed directories.
+# See: https://doc.rust-lang.org/cargo/reference/overriding-dependencies.html#paths-overrides
+
+paths = [
+    "/path/to/your/ecl/crates/fabryk",
+    "/path/to/your/ecl/crates/fabryk-core",
+    "/path/to/your/ecl/crates/fabryk-content",
+    "/path/to/your/ecl/crates/fabryk-fts",
+    "/path/to/your/ecl/crates/fabryk-graph",
+    "/path/to/your/ecl/crates/fabryk-vector",
+    "/path/to/your/ecl/crates/fabryk-mcp",
+    "/path/to/your/ecl/crates/fabryk-mcp-core",
+    "/path/to/your/ecl/crates/fabryk-mcp-content",
+    "/path/to/your/ecl/crates/fabryk-mcp-fts",
+    "/path/to/your/ecl/crates/fabryk-mcp-graph",
+    "/path/to/your/ecl/crates/fabryk-mcp-semantic",
+    "/path/to/your/ecl/crates/fabryk-cli",
+]

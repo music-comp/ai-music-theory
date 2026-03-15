@@ -5,6 +5,9 @@
 # Graph database cache
 data/.cache/
 
+# Local Cargo config (path overrides for development)
+.cargo/config.toml
+
 # Build artifacts
 target/
 *.rlib

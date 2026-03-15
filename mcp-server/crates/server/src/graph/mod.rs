@@ -29,8 +29,8 @@ use crate::error::{Error, Result};
 
 #[allow(unused_imports)]
 pub use fabryk::graph::{
-    Edge as FabrykEdge, EdgeOrigin as FabrykEdgeOrigin, GraphData,
-    Node as FabrykNode, NodeType, Relationship as FabrykRelationship,
+    Edge as FabrykEdge, EdgeOrigin as FabrykEdgeOrigin, GraphData, Node as FabrykNode, NodeType,
+    Relationship as FabrykRelationship,
 };
 
 #[allow(unused_imports)]
@@ -42,8 +42,8 @@ pub use fabryk::graph::{BuildStats, GraphBuilder, GraphExtractor};
 
 #[allow(unused_imports)]
 pub use fabryk::graph::{
-    calculate_centrality, find_bridges, get_related, neighborhood,
-    prerequisites_sorted, shortest_path, validate_graph,
+    calculate_centrality, find_bridges, get_related, neighborhood, prerequisites_sorted,
+    shortest_path, validate_graph,
 };
 
 #[allow(unused_imports)]
@@ -55,8 +55,8 @@ pub use fabryk::graph::{compute_stats, quick_summary};
 
 #[allow(unused_imports)]
 pub use fabryk::graph::{
-    CentralityScore, GraphStats as FabrykGraphStats, NeighborhoodResult,
-    PathResult, PrerequisitesResult, ValidationIssue, ValidationResult,
+    CentralityScore, GraphStats as FabrykGraphStats, NeighborhoodResult, PathResult,
+    PrerequisitesResult, ValidationIssue, ValidationResult,
 };
 
 // ============================================================================
@@ -74,10 +74,9 @@ pub mod query;
 
 #[allow(unused_imports)]
 pub use query::{
-    BridgeConceptsResponse, CentralConceptsResponse, ConceptPathResponse,
-    ConceptSourcesResponse, ConceptVariantsResponse, DependentsResponse,
-    NeighborhoodResponse, PrerequisitesResponse, RelatedConceptsResponse,
-    SourceCoverageResponse,
+    BridgeConceptsResponse, CentralConceptsResponse, ConceptPathResponse, ConceptSourcesResponse,
+    ConceptVariantsResponse, DependentsResponse, NeighborhoodResponse, PrerequisitesResponse,
+    RelatedConceptsResponse, SourceCoverageResponse,
 };
 
 // ============================================================================
@@ -187,9 +186,7 @@ pub fn to_fabryk_relationship(name: &str) -> fabryk::graph::Relationship {
         "extends" => fabryk::graph::Relationship::Extends,
         "introduces" => fabryk::graph::Relationship::Introduces,
         "covers" => fabryk::graph::Relationship::Covers,
-        "sameas" | "same_as" => {
-            fabryk::graph::Relationship::Custom("same_as".to_string())
-        }
+        "sameas" | "same_as" => fabryk::graph::Relationship::Custom("same_as".to_string()),
         "cites" => fabryk::graph::Relationship::Custom("cites".to_string()),
         other => fabryk::graph::Relationship::Custom(other.to_string()),
     }
@@ -207,12 +204,8 @@ pub fn from_fabryk_relationship(rel: &fabryk::graph::Relationship) -> String {
         fabryk::graph::Relationship::Extends => "Extends".to_string(),
         fabryk::graph::Relationship::Introduces => "Introduces".to_string(),
         fabryk::graph::Relationship::Covers => "Covers".to_string(),
-        fabryk::graph::Relationship::Custom(s) if s == "same_as" => {
-            "SameAs".to_string()
-        }
-        fabryk::graph::Relationship::Custom(s) if s == "cites" => {
-            "Cites".to_string()
-        }
+        fabryk::graph::Relationship::Custom(s) if s == "same_as" => "SameAs".to_string(),
+        fabryk::graph::Relationship::Custom(s) if s == "cites" => "Cites".to_string(),
         fabryk::graph::Relationship::LeadsTo => "LeadsTo".to_string(),
         fabryk::graph::Relationship::VariantOf => "VariantOf".to_string(),
         fabryk::graph::Relationship::ContrastsWith => "ContrastsWith".to_string(),
@@ -297,15 +290,13 @@ fn compute_graph_stats(data: &fabryk::graph::GraphData) -> GraphStats {
 /// # Errors
 ///
 /// Returns error if path resolution, content discovery, or build fails.
-pub async fn build_graph(
-    config: &Config,
-) -> Result<(fabryk::graph::GraphData, BuildStats)> {
+pub async fn build_graph(config: &Config) -> Result<(fabryk::graph::GraphData, BuildStats)> {
     let concept_cards_path = config.paths.concept_cards_path()?;
     let data_dir = config.paths.base_path()?.join("data");
 
     let extractor = crate::extractors::MusicTheoryGraphExtractor::new();
-    let mut builder = fabryk::graph::GraphBuilder::new(extractor)
-        .with_content_path(&concept_cards_path);
+    let mut builder =
+        fabryk::graph::GraphBuilder::new(extractor).with_content_path(&concept_cards_path);
 
     // Add manual edges if available
     let manual_edges_path = data_dir.join("graphs/manual_edges.json");
@@ -334,11 +325,7 @@ pub async fn build_graph(
 /// * `config` - Server configuration
 /// * `dry_run` - If true, build but do not write files
 /// * `verbose` - If true, show detailed build output
-pub async fn handle_build(
-    config: &Config,
-    dry_run: bool,
-    verbose: bool,
-) -> Result<()> {
+pub async fn handle_build(config: &Config, dry_run: bool, verbose: bool) -> Result<()> {
     println!("Building concept graph from cards...");
 
     let (graph_data, build_stats) = build_graph(config).await?;
@@ -470,8 +457,7 @@ pub async fn handle_stats(config: &Config) -> Result<()> {
     // Relationship distribution
     if !fabryk_stats.relationship_distribution.is_empty() {
         println!("\nRelationship types:");
-        let mut sorted_rels: Vec<_> =
-            fabryk_stats.relationship_distribution.iter().collect();
+        let mut sorted_rels: Vec<_> = fabryk_stats.relationship_distribution.iter().collect();
         sorted_rels.sort_by_key(|(_, count)| std::cmp::Reverse(**count));
         for (rel, count) in sorted_rels {
             println!("  {}: {}", rel, count);
@@ -481,8 +467,7 @@ pub async fn handle_stats(config: &Config) -> Result<()> {
     // Category distribution
     if !fabryk_stats.category_distribution.is_empty() {
         println!("\nConcept categories:");
-        let mut sorted_cats: Vec<_> =
-            fabryk_stats.category_distribution.iter().collect();
+        let mut sorted_cats: Vec<_> = fabryk_stats.category_distribution.iter().collect();
         sorted_cats.sort_by_key(|(_, count)| std::cmp::Reverse(**count));
         for (cat, count) in sorted_cats {
             println!("  {}: {}", cat, count);
@@ -579,8 +564,7 @@ mod tests {
 
     #[test]
     fn test_is_source_node_false_other_custom() {
-        let node =
-            Node::new("x", "X").with_node_type(NodeType::Custom("other".to_string()));
+        let node = Node::new("x", "X").with_node_type(NodeType::Custom("other".to_string()));
         assert!(!is_source_node(&node));
     }
 
@@ -610,8 +594,10 @@ mod tests {
 
     #[test]
     fn test_source_author_present() {
-        let node = Node::new("src", "Source")
-            .with_metadata("author", serde_json::Value::String("J. S. Bach".to_string()));
+        let node = Node::new("src", "Source").with_metadata(
+            "author",
+            serde_json::Value::String("J. S. Bach".to_string()),
+        );
         assert_eq!(source_author(&node), "J. S. Bach");
     }
 
@@ -623,8 +609,7 @@ mod tests {
 
     #[test]
     fn test_source_year_present() {
-        let node = Node::new("src", "Source")
-            .with_metadata("year", serde_json::json!(2024));
+        let node = Node::new("src", "Source").with_metadata("year", serde_json::json!(2024));
         assert_eq!(source_year(&node), Some(2024));
     }
 
@@ -636,15 +621,15 @@ mod tests {
 
     #[test]
     fn test_source_is_converted_true() {
-        let node = Node::new("src", "Source")
-            .with_metadata("is_converted", serde_json::json!(true));
+        let node =
+            Node::new("src", "Source").with_metadata("is_converted", serde_json::json!(true));
         assert!(source_is_converted(&node));
     }
 
     #[test]
     fn test_source_is_converted_false() {
-        let node = Node::new("src", "Source")
-            .with_metadata("is_converted", serde_json::json!(false));
+        let node =
+            Node::new("src", "Source").with_metadata("is_converted", serde_json::json!(false));
         assert!(!source_is_converted(&node));
     }
 
@@ -672,10 +657,7 @@ mod tests {
 
     #[test]
     fn test_to_fabryk_relationship_relates_to() {
-        assert_eq!(
-            to_fabryk_relationship("RelatesTo"),
-            Relationship::RelatesTo
-        );
+        assert_eq!(to_fabryk_relationship("RelatesTo"), Relationship::RelatesTo);
         assert_eq!(
             to_fabryk_relationship("relates_to"),
             Relationship::RelatesTo
@@ -746,10 +728,7 @@ mod tests {
 
     #[test]
     fn test_from_fabryk_relationship_extends() {
-        assert_eq!(
-            from_fabryk_relationship(&Relationship::Extends),
-            "Extends"
-        );
+        assert_eq!(from_fabryk_relationship(&Relationship::Extends), "Extends");
     }
 
     #[test]
@@ -762,10 +741,7 @@ mod tests {
 
     #[test]
     fn test_from_fabryk_relationship_covers() {
-        assert_eq!(
-            from_fabryk_relationship(&Relationship::Covers),
-            "Covers"
-        );
+        assert_eq!(from_fabryk_relationship(&Relationship::Covers), "Covers");
     }
 
     #[test]
@@ -782,10 +758,7 @@ mod tests {
 
     #[test]
     fn test_from_fabryk_relationship_leads_to() {
-        assert_eq!(
-            from_fabryk_relationship(&Relationship::LeadsTo),
-            "LeadsTo"
-        );
+        assert_eq!(from_fabryk_relationship(&Relationship::LeadsTo), "LeadsTo");
     }
 
     #[test]
@@ -861,8 +834,12 @@ mod tests {
         );
         data.add_node(Node::new("concept-2", "Concept 2").with_category("rhythm"));
 
-        data.add_edge(Edge::new("concept-1", "concept-2", Relationship::Prerequisite))
-            .expect("edge should be added");
+        data.add_edge(Edge::new(
+            "concept-1",
+            "concept-2",
+            Relationship::Prerequisite,
+        ))
+        .expect("edge should be added");
 
         let stats = compute_graph_stats(&data);
 
@@ -927,12 +904,8 @@ mod tests {
             Node::new("source-1", "Source 1")
                 .with_node_type(NodeType::Custom("source".to_string())),
         );
-        data.add_edge(Edge::new(
-            "source-1",
-            "concept-a",
-            Relationship::Introduces,
-        ))
-        .expect("edge");
+        data.add_edge(Edge::new("source-1", "concept-a", Relationship::Introduces))
+            .expect("edge");
 
         let graph_path = graphs_dir.join("concept_graph.json");
         fabryk::graph::save_graph(&data, &graph_path, None).expect("save");
@@ -990,8 +963,7 @@ mod tests {
         let mut data = fabryk::graph::GraphData::new();
         data.add_node(Node::new("a", "A").with_category("harmony"));
         data.add_node(
-            Node::new("src", "Source")
-                .with_node_type(NodeType::Custom("source".to_string())),
+            Node::new("src", "Source").with_node_type(NodeType::Custom("source".to_string())),
         );
         data.add_edge(Edge::new("src", "a", Relationship::Introduces))
             .expect("edge");

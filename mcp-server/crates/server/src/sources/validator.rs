@@ -145,6 +145,7 @@ async fn check_filesystem(config: &Config) -> Result<Vec<MissingFile>> {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use serial_test::serial;
     use std::collections::HashMap;
     use tempfile::TempDir;
     use tokio::fs;
@@ -252,6 +253,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_validate_sources_all_valid() {
         let temp_dir = TempDir::new().unwrap();
 
@@ -280,6 +282,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_validate_sources_missing_from_config() {
         let temp_dir = TempDir::new().unwrap();
 
@@ -300,6 +303,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_validate_sources_missing_from_filesystem() {
         let temp_dir = TempDir::new().unwrap();
 
@@ -327,6 +331,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_validate_sources_with_suggestions() {
         let temp_dir = TempDir::new().unwrap();
 
@@ -358,6 +363,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_validate_sources_mode_cards_config_only() {
         let temp_dir = TempDir::new().unwrap();
 
@@ -385,6 +391,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_validate_sources_mode_config_filesystem_only() {
         let temp_dir = TempDir::new().unwrap();
 
@@ -410,6 +417,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_validate_sources_stats() {
         let temp_dir = TempDir::new().unwrap();
 
@@ -455,6 +463,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_check_filesystem_empty_path() {
         let temp_dir = TempDir::new().unwrap();
 

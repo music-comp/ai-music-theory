@@ -7,9 +7,7 @@
 
 use async_trait::async_trait;
 
-use fabryk::fts::{
-    SearchBackend, SearchParams, SearchResult as FabrykSearchResult, SearchResults,
-};
+use fabryk::fts::{SearchBackend, SearchParams, SearchResult as FabrykSearchResult, SearchResults};
 
 use crate::config::Config;
 use crate::extractors::MusicTheoryDocumentExtractor;
@@ -104,9 +102,7 @@ impl SearchBackend for SimpleSearch {
 
             // Apply content_types filter
             if let Some(ref content_types) = params.content_types {
-                let matches_any = content_types
-                    .iter()
-                    .any(|ct| doc.matches_content_type(ct));
+                let matches_any = content_types.iter().any(|ct| doc.matches_content_type(ct));
                 if !matches_any {
                     continue;
                 }

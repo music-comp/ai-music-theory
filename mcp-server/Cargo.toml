@@ -14,9 +14,6 @@ repository = "https://github.com/oxur/ai-music-theory"
 description = "Music Theory AI Skill - MCP server for accessing music theory educational materials"
 
 [workspace.dependencies]
-# MCP SDK
-rmcp = { version = "1", features = ["server", "transport-io"] }
-
 # Async runtime
 tokio = { version = "1", features = ["full", "fs", "sync"] }
 async-trait = "0.1"
@@ -36,11 +33,9 @@ serde_json = "1"
 schemars = "1.2"
 
 # File operations and markdown
-glob = "0.3"
-shellexpand = "3.1"
 pulldown-cmark = "0.9"
-serde_yaml = "0.9"  # For frontmatter parsing (kept for existing code)
-yaml_serde = "0.10"  # Fabryk-compatible YAML (replaces serde_yaml in future)
+yaml_serde = "0.10"
+shellexpand = "3.1"
 dirs = "5"
 
 # Error handling
@@ -68,9 +63,11 @@ blake3 = "1.5"
 chrono = { version = "0.4", features = ["serde"] }
 
 # Fabryk framework (umbrella crates pull in sub-crates transitively)
-fabryk = { path = "../../../oxur/ecl/crates/fabryk" }
-fabryk-mcp = { path = "../../../oxur/ecl/crates/fabryk-mcp" }
-fabryk-cli = { path = "../../../oxur/ecl/crates/fabryk-cli" }
+# For local development, create .cargo/config.toml with path overrides
+# (see .cargo/config.toml.example)
+fabryk = { git = "https://github.com/oxur/ecl.git", branch = "main" }
+fabryk-mcp = { git = "https://github.com/oxur/ecl.git", branch = "main" }
+fabryk-cli = { git = "https://github.com/oxur/ecl.git", branch = "main" }
 
 [profile.dev]
 opt-level = 0

@@ -183,6 +183,7 @@ pub fn debug_paths() -> String {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use serial_test::serial;
 
     #[test]
     fn test_binary_path_exists() {
@@ -314,6 +315,7 @@ mod tests {
     }
 
     #[test]
+    #[serial(config_env)]
     fn test_config_dir_with_env_var() {
         use std::env;
 
@@ -343,6 +345,7 @@ mod tests {
     }
 
     #[test]
+    #[serial(config_env)]
     fn test_config_dir_with_invalid_env_var() {
         use std::env;
 
@@ -418,6 +421,7 @@ mod tests {
     }
 
     #[test]
+    #[serial(config_env)]
     fn test_config_dir_with_tilde_in_env_var() {
         use std::env;
 

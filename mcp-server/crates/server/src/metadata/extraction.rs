@@ -25,7 +25,9 @@ pub enum ContentType {
 
 impl ContentType {
     /// Get the string identifier for this content type.
+    // Retained for FTS content-type filtering in milestone M5.
     #[cfg(feature = "fts")]
+    #[allow(dead_code)]
     pub fn as_str(&self) -> &'static str {
         match self {
             ContentType::ConceptCard => "concept_card",
@@ -40,6 +42,9 @@ impl ContentType {
 ///
 /// This struct provides a unified interface for metadata extraction across
 /// all 4 content types: concept_cards, sources_md, concepts_unified, guides.
+// Several fields (`part`, `tags`, `author`, `date`) are populated but not yet
+// consumed outside tests; they will be surfaced in milestone M4 (rich tool output).
+#[allow(dead_code)]
 #[derive(Debug, Clone)]
 pub struct UniversalMetadata {
     /// Document ID (derived from filename or frontmatter)
@@ -49,7 +54,6 @@ pub struct UniversalMetadata {
     /// Thematic category
     pub category: String,
     /// Content type (read in FTS code, written always)
-    #[allow(dead_code)]
     pub content_type: ContentType,
     /// Source text name (optional)
     pub source: Option<String>,
@@ -279,6 +283,9 @@ async fn extract_guide_metadata(base_path: &Path, file_path: &Path) -> Result<Un
 ///
 /// This struct captures all metadata fields from a concept card file,
 /// providing a single source of truth for concept information.
+// Fields like `part`, `tags`, `author`, `date` are populated but not yet
+// consumed outside tests; they will be surfaced in milestone M4 (rich tool output).
+#[allow(dead_code)]
 #[derive(Debug, Clone)]
 pub struct ConceptMetadata {
     /// Concept ID (derived from filename)

@@ -15,6 +15,7 @@ use std::sync::RwLock as StdRwLock;
 #[cfg(any(feature = "graph", feature = "vector"))]
 use std::sync::RwLock;
 
+#[cfg(any(feature = "fts", feature = "graph", feature = "vector"))]
 use fabryk::core::{ServiceHandle, ServiceState};
 
 use crate::config::Config;
@@ -204,12 +205,12 @@ impl AppState {
         let svc_state = self.graph_service.state();
         if !svc_state.is_ready() {
             return match svc_state {
-                ServiceState::Starting => {
-                    Err(crate::error::Error::not_found_msg("Graph is currently loading"))
-                }
-                ServiceState::Failed(msg) => {
-                    Err(crate::error::Error::config(format!("Graph failed to load: {msg}")))
-                }
+                ServiceState::Starting => Err(crate::error::Error::not_found_msg(
+                    "Graph is currently loading",
+                )),
+                ServiceState::Failed(msg) => Err(crate::error::Error::config(format!(
+                    "Graph failed to load: {msg}"
+                ))),
                 _ => Err(crate::error::Error::not_found_msg("Graph not loaded yet")),
             };
         }
@@ -254,14 +255,9 @@ impl AppState {
         &self,
         backend: Arc<dyn fabryk::vector::VectorBackend>,
     ) -> Result<()> {
-        let mut guard = self
-            .vector_backend
-            .write()
-            .map_err(|_| {
-                crate::error::Error::config(
-                    "Failed to acquire vector write lock".to_string(),
-                )
-            })?;
+        let mut guard = self.vector_backend.write().map_err(|_| {
+            crate::error::Error::config("Failed to acquire vector write lock".to_string())
+        })?;
         *guard = Some(backend);
         Ok(())
     }
@@ -276,7 +272,8 @@ impl AppState {
     #[cfg(feature = "vector")]
     pub fn require_vector(
         &self,
-    ) -> Result<std::sync::RwLockReadGuard<'_, Option<Arc<dyn fabryk::vector::VectorBackend>>>> {
+    ) -> Result<std::sync::RwLockReadGuard<'_, Option<Arc<dyn fabryk::vector::VectorBackend>>>>
+    {
         let svc_state = self.vector_service.state();
         if !svc_state.is_ready() {
             return match svc_state {
@@ -484,8 +481,7 @@ fn start_background_indexing(state: Arc<AppState>) {
                 );
 
                 // Load newly built index
-                let fabryk_config =
-                    crate::search::to_fabryk_search_config(&state.config.search);
+                let fabryk_config = crate::search::to_fabryk_search_config(&state.config.search);
                 match TantivySearch::new(&fabryk_config) {
                     Ok(backend) => {
                         if state.update_fts_backend(backend).is_ok() {
@@ -557,9 +553,9 @@ fn start_vector_building(state: Arc<AppState>, cache_dir: std::path::PathBuf) {
                     log::info!(documents = doc_count; "Vector index ready");
                 } else {
                     log::error!("Failed to store vector backend");
-                    state.vector_service.set_state(ServiceState::Failed(
-                        "Failed to store backend".to_string(),
-                    ));
+                    state
+                        .vector_service
+                        .set_state(ServiceState::Failed("Failed to store backend".to_string()));
                 }
             }
             Err(e) => {
@@ -588,7 +584,7 @@ async fn build_vector_index(
 > {
     use crate::extractors::MusicTheoryVectorExtractor;
     use fabryk::vector::builder::ErrorHandling;
-    use fabryk::vector::{EmbeddingProvider, FastEmbedProvider, VectorBackend, VectorIndexBuilder};
+    use fabryk::vector::{EmbeddingProvider, FastEmbedProvider, VectorIndexBuilder};
 
     // Ensure cache directory exists
     tokio::fs::create_dir_all(cache_dir).await?;
@@ -603,7 +599,10 @@ async fn build_vector_index(
     let content_dirs = [
         (base.join(&config.paths.concept_cards), "concept_cards"),
         (base.join(&config.paths.sources_md), "sources_md"),
-        (base.join(&config.paths.concepts_unified), "concepts_unified"),
+        (
+            base.join(&config.paths.concepts_unified),
+            "concepts_unified",
+        ),
         (base.join(&config.paths.guides), "guides"),
     ];
 
@@ -838,8 +837,7 @@ Test content.
 
         // Load the index we just built
         let fabryk_config = crate::search::to_fabryk_search_config(&config.search);
-        let backend =
-            TantivySearch::new(&fabryk_config).expect("Failed to load index");
+        let backend = TantivySearch::new(&fabryk_config).expect("Failed to load index");
 
         // Update backend
         let result = state.update_fts_backend(backend);
@@ -887,8 +885,7 @@ Test content.
 
         // Load and set backend
         let fabryk_config = crate::search::to_fabryk_search_config(&config.search);
-        let backend =
-            TantivySearch::new(&fabryk_config).expect("Failed to load index");
+        let backend = TantivySearch::new(&fabryk_config).expect("Failed to load index");
         state.update_fts_backend(backend).expect("Failed to update");
         state.set_fts_ready(true);
 
@@ -977,9 +974,7 @@ Test content.
 
         // Create old metadata to make index appear stale
         let metadata = fabryk::fts::IndexMetadata::new("old-hash".to_string(), 1);
-        metadata
-            .save(&index_path)
-            .expect("Failed to save metadata");
+        metadata.save(&index_path).expect("Failed to save metadata");
 
         // Create a new file to make content hash different
         let card_content = r#"---

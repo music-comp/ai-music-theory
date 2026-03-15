@@ -121,6 +121,8 @@ pub async fn scan_concept_cards_with_stats(
 
 #[cfg(test)]
 mod tests {
+    use serial_test::serial;
+
     use super::*;
     use std::path::PathBuf;
     use tempfile::TempDir;
@@ -220,6 +222,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_scan_concept_cards_empty() {
         let temp_dir = TempDir::new().unwrap();
         let config = create_test_config(&temp_dir).await;
@@ -229,6 +232,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_scan_concept_cards_single_source() {
         let temp_dir = TempDir::new().unwrap();
         let config = create_test_config(&temp_dir).await;
@@ -248,6 +252,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_scan_concept_cards_multiple_cards_same_source() {
         let temp_dir = TempDir::new().unwrap();
         let config = create_test_config(&temp_dir).await;
@@ -280,6 +285,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_scan_concept_cards_multiple_sources() {
         let temp_dir = TempDir::new().unwrap();
         let config = create_test_config(&temp_dir).await;
@@ -314,6 +320,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_scan_concept_cards_no_source_field() {
         let temp_dir = TempDir::new().unwrap();
         let config = create_test_config(&temp_dir).await;
@@ -336,6 +343,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_scan_concept_cards_with_stats() {
         let temp_dir = TempDir::new().unwrap();
         let config = create_test_config(&temp_dir).await;
@@ -375,6 +383,7 @@ Content"#,
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_scan_concept_cards_trims_whitespace() {
         let temp_dir = TempDir::new().unwrap();
         let config = create_test_config(&temp_dir).await;
@@ -396,6 +405,7 @@ source: "  Open Music Theory  "
     }
 
     #[tokio::test]
+    #[serial(config_env)]
     async fn test_scan_concept_cards_empty_source_ignored() {
         let temp_dir = TempDir::new().unwrap();
         let config = create_test_config(&temp_dir).await;

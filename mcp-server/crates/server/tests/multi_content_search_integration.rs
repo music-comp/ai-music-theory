@@ -11,12 +11,12 @@
 use music_theory_mcp::config::{Config, PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
 use music_theory_mcp::metadata::{extract_metadata, ContentType};
 use music_theory_mcp::search::build_index;
-use music_theory_mcp::SearchDocument;
 use music_theory_mcp::state::AppState;
 use music_theory_mcp::tools::search::{search_concepts, SearchConceptsParams};
 use music_theory_mcp::tools::sources::{
     check_source_availability, list_source_chapters, AvailabilityStatus,
 };
+use music_theory_mcp::SearchDocument;
 
 use tempfile::TempDir;
 use tokio::fs;
@@ -695,8 +695,7 @@ async fn test_search_document_creation_all_types() {
 
     // Test concept card document
     let concept_path = base.join("concept-cards/harmony/cadence.md");
-    let concept_content =
-        tokio::fs::read_to_string(&concept_path).await.unwrap();
+    let concept_content = tokio::fs::read_to_string(&concept_path).await.unwrap();
     let concept_doc = extractor
         .extract(&concept_path, &concept_content)
         .expect("Document extraction failed");
@@ -707,8 +706,7 @@ async fn test_search_document_creation_all_types() {
 
     // Test source chapter document
     let source_path = base.join("sources-md/test-source/chapter-1-introduction.md");
-    let source_content =
-        tokio::fs::read_to_string(&source_path).await.unwrap();
+    let source_content = tokio::fs::read_to_string(&source_path).await.unwrap();
     let source_doc = extractor
         .extract(&source_path, &source_content)
         .expect("Document extraction failed");

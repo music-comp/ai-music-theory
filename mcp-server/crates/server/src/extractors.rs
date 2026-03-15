@@ -137,6 +137,8 @@ impl MusicTheoryDocumentExtractor {
     }
 
     /// Check if this extractor supports the given file extension.
+    // Used in tests; will be called by fabryk indexing pipeline in milestone M5.
+    #[allow(dead_code)]
     pub fn supports_extension(&self, ext: &str) -> bool {
         self.supported_extensions()
             .iter()
@@ -394,13 +396,9 @@ mod vector_extractor {
                 .and_then(|v| v.as_str())
                 .unwrap_or(&id);
 
-            let category = frontmatter
-                .get("category")
-                .and_then(|v| v.as_str());
+            let category = frontmatter.get("category").and_then(|v| v.as_str());
 
-            let description = frontmatter
-                .get("description")
-                .and_then(|v| v.as_str());
+            let description = frontmatter.get("description").and_then(|v| v.as_str());
 
             // Compose embedding text: title | category | description | body
             let mut parts = vec![title.to_string()];
@@ -497,10 +495,7 @@ The major triad consists of a root, major third, and perfect fifth."#;
             Some("A three-note chord built on major and minor thirds".to_string())
         );
         assert_eq!(doc.source, Some("Open Music Theory".to_string()));
-        assert_eq!(
-            doc.chapter,
-            Some("Triads and Seventh Chords".to_string())
-        );
+        assert_eq!(doc.chapter, Some("Triads and Seventh Chords".to_string()));
         assert_eq!(doc.part, Some("II".to_string()));
         assert_eq!(doc.section, Some("pp. 45-52".to_string()));
         assert_eq!(doc.tags, vec!["chord", "fundamentals"]);
@@ -728,21 +723,15 @@ prerequisites:
             let edges = extractor.to_graph_edges("from-node", &edge_data);
             assert_eq!(edges.len(), 3);
 
-            assert!(
-                edges
-                    .iter()
-                    .any(|e| e.to == "a" && e.relationship == Relationship::Prerequisite)
-            );
-            assert!(
-                edges
-                    .iter()
-                    .any(|e| e.to == "b" && e.relationship == Relationship::Prerequisite)
-            );
-            assert!(
-                edges
-                    .iter()
-                    .any(|e| e.to == "x" && e.relationship == Relationship::RelatesTo)
-            );
+            assert!(edges
+                .iter()
+                .any(|e| e.to == "a" && e.relationship == Relationship::Prerequisite));
+            assert!(edges
+                .iter()
+                .any(|e| e.to == "b" && e.relationship == Relationship::Prerequisite));
+            assert!(edges
+                .iter()
+                .any(|e| e.to == "x" && e.relationship == Relationship::RelatesTo));
 
             // All should have correct from_id
             assert!(edges.iter().all(|e| e.from == "from-node"));

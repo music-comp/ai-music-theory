@@ -11,6 +11,3 @@ pub mod resolver;
 pub mod scanner;
 pub mod types;
 pub mod validator;
-
-// Re-export commonly used types
-pub use resolver::SourceResolver;

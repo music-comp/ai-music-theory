@@ -343,7 +343,16 @@ check-deps: ensure-binstall
 		echo "$(YELLOW)→ Installing cargo-outdated...$(RESET)"; \
 		cargo binstall -y cargo-outdated; \
 	}
-	@OUTPUT=$$(cargo outdated --root-deps-only); \
+	@OUTPUT=$$(cargo outdated --root-deps-only 2>&1); EXITCODE=$$?; \
+	if [ $$EXITCODE -ne 0 ]; then \
+		if echo "$$OUTPUT" | grep -q -e "failed to load" -e "no entry found"; then \
+			echo "$(YELLOW)⚠ Skipping outdated check (cargo-outdated cannot resolve git dependencies)$(RESET)"; \
+			exit 0; \
+		else \
+			echo "$$OUTPUT"; \
+			exit 1; \
+		fi; \
+	fi; \
 	echo "$$OUTPUT"; \
 	echo ""; \
 	if echo "$$OUTPUT" | grep -E "^[a-z0-9_-]+\s+" | grep -v "^----" | awk '{print $$3}' | grep -v "^---$$" | grep -v "^Compat$$" | grep -E "^[0-9]" | grep -q .; then \

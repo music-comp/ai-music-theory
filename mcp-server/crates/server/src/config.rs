@@ -8,7 +8,7 @@ use std::path::PathBuf;
 use crate::error::{Error, Result};
 
 /// Main configuration structure for the MCP server.
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
 #[serde(default)]
 pub struct Config {
     pub server: ServerConfig,
@@ -306,18 +306,6 @@ impl Config {
     }
 }
 
-impl Default for Config {
-    fn default() -> Self {
-        Self {
-            server: ServerConfig::default(),
-            paths: PathsConfig::default(),
-            sources: SourcesConfig::default(),
-            logging: twyg::Opts::default(),
-            search: SearchConfig::default(),
-        }
-    }
-}
-
 impl Default for ServerConfig {
     fn default() -> Self {
         Self {
@@ -434,8 +422,7 @@ impl ConfigManager for Config {
     }
 
     fn to_toml_string(&self) -> fabryk::core::Result<String> {
-        toml_edit::ser::to_string_pretty(self)
-            .map_err(|e| Error::config(e.to_string()))
+        toml_edit::ser::to_string_pretty(self).map_err(|e| Error::config(e.to_string()))
     }
 
     fn to_env_vars(&self) -> fabryk::core::Result<Vec<(String, String)>> {
@@ -450,11 +437,7 @@ impl ConfigManager for Config {
 }
 
 /// Recursively flatten a TOML table into `KEY=value` pairs.
-fn flatten_toml_table(
-    table: &toml_edit::Table,
-    prefix: &str,
-    out: &mut Vec<(String, String)>,
-) {
+fn flatten_toml_table(table: &toml_edit::Table, prefix: &str, out: &mut Vec<(String, String)>) {
     for (key, item) in table.iter() {
         let env_key = format!("{}_{}", prefix, key.to_uppercase());
         match item {
