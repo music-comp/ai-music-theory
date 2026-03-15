@@ -31,7 +31,6 @@ use crate::util::files::{find_all_files, FindOptions};
 /// Returns `Err` if:
 /// - The concept cards path cannot be resolved
 /// - File scanning fails
-#[allow(dead_code)] // Public API - used in tests, available for external use
 pub async fn scan_concept_cards(config: &Config) -> Result<HashMap<String, SourceReference>> {
     let cards_path = config.paths.concept_cards_path()?;
     let mut sources: HashMap<String, SourceReference> = HashMap::new();

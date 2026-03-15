@@ -18,7 +18,6 @@ use crate::state::AppState;
 
 /// Parameters accepted by the `semantic_search` tool.
 #[derive(Debug, Clone, Deserialize, JsonSchema)]
-#[cfg_attr(not(feature = "vector"), allow(dead_code))]
 pub struct SemanticSearchParams {
     /// The natural-language query string.
     pub query: String,

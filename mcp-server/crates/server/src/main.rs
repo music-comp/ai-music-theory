@@ -1,24 +1,7 @@
-mod cli;
-mod config;
-mod content;
-mod error;
-mod extractors;
-#[cfg(feature = "graph")]
-mod graph;
-mod markdown;
-mod metadata;
-mod resources;
-mod search;
-mod server;
-mod sources;
-mod state;
-mod tools;
-mod util;
-
 use clap::Parser;
 
-use cli::Cli;
-use error::Result;
+use music_theory_mcp::cli::{self, Cli};
+use music_theory_mcp::error::Result;
 
 #[tokio::main]
 async fn main() -> Result<()> {
@@ -29,6 +12,7 @@ async fn main() -> Result<()> {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use music_theory_mcp::config;
 
     #[test]
     fn test_cli_parse() {

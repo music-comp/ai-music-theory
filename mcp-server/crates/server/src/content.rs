@@ -22,8 +22,6 @@ use crate::tools::concepts::{ListCategoriesResponse, ListConceptsParams};
 /// This is the `ItemSummary` associated type for `ContentItemProvider`.
 /// It mirrors the fields from `tools::concepts::ConceptInfo` that are
 /// relevant for listing operations.
-// Scaffolding for fabryk ContentItemProvider migration (milestone M3).
-#[allow(dead_code)]
 #[derive(Debug, Clone, Serialize)]
 pub struct ConceptSummary {
     /// Concept identifier (e.g., "major-triad").
@@ -43,15 +41,13 @@ pub struct ConceptSummary {
 /// Wraps the existing concept card infrastructure, delegating to
 /// `tools::concepts::list_concepts`, `tools::concepts::get_concept`,
 /// and `tools::concepts::list_categories`.
-// Scaffolding for fabryk ContentItemProvider migration (milestone M3).
-#[allow(dead_code)]
+#[derive(Debug)]
 pub struct MusicTheoryContentProvider {
     config: Config,
 }
 
 impl MusicTheoryContentProvider {
     /// Create a new content provider with the given configuration.
-    #[allow(dead_code)]
     pub fn new(config: Config) -> Self {
         Self { config }
     }

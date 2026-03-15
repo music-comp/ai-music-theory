@@ -13,7 +13,7 @@ use serde::{Deserialize, Serialize};
 // ============================================================================
 
 /// Response for get_related_concepts tool.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct RelatedConceptsResponse {
     /// ID of the queried concept
     pub concept_id: String,
@@ -26,7 +26,7 @@ pub struct RelatedConceptsResponse {
 }
 
 /// A related concept with relationship metadata.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct RelatedConcept {
     /// Concept ID
     pub id: String,
@@ -49,7 +49,7 @@ pub struct RelatedConcept {
 // ============================================================================
 
 /// Response for find_concept_path tool.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct ConceptPathResponse {
     /// Starting concept ID
     pub from: String,
@@ -66,7 +66,7 @@ pub struct ConceptPathResponse {
 }
 
 /// A node in a path.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct PathNode {
     /// Node ID
     pub id: String,
@@ -79,7 +79,7 @@ pub struct PathNode {
 }
 
 /// An edge in a path.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct PathEdge {
     /// Source node ID
     pub from: String,
@@ -96,7 +96,7 @@ pub struct PathEdge {
 // ============================================================================
 
 /// Response for get_prerequisites tool.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct PrerequisitesResponse {
     /// ID of the queried concept
     pub concept_id: String,
@@ -111,7 +111,7 @@ pub struct PrerequisitesResponse {
 }
 
 /// A prerequisite concept.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct PrerequisiteConcept {
     /// Concept ID
     pub id: String,
@@ -128,7 +128,7 @@ pub struct PrerequisiteConcept {
 // ============================================================================
 
 /// Response for get_concept_neighborhood tool.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct NeighborhoodResponse {
     /// Center concept ID
     pub center: String,
@@ -145,7 +145,7 @@ pub struct NeighborhoodResponse {
 }
 
 /// A node in a neighborhood.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct NeighborhoodNode {
     /// Node ID
     pub id: String,
@@ -162,7 +162,7 @@ pub struct NeighborhoodNode {
 }
 
 /// An edge in a neighborhood.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct NeighborhoodEdge {
     /// Source node ID
     pub from: String,
@@ -177,7 +177,7 @@ pub struct NeighborhoodEdge {
 // ============================================================================
 
 /// Response for get_dependents tool.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct DependentsResponse {
     /// ID of the queried concept
     pub concept_id: String,
@@ -190,7 +190,7 @@ pub struct DependentsResponse {
 }
 
 /// A dependent concept.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct DependentConcept {
     /// Concept ID
     pub id: String,
@@ -207,7 +207,7 @@ pub struct DependentConcept {
 // ============================================================================
 
 /// Response for get_central_concepts tool.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct CentralConceptsResponse {
     /// Category filter used (if any)
     pub category: Option<String>,
@@ -218,7 +218,7 @@ pub struct CentralConceptsResponse {
 }
 
 /// A central concept.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct CentralConcept {
     /// Concept ID
     pub id: String,
@@ -235,7 +235,7 @@ pub struct CentralConcept {
 // ============================================================================
 
 /// Response for get_concept_sources tool.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct ConceptSourcesResponse {
     /// ID of the queried concept
     pub concept_id: String,
@@ -248,7 +248,7 @@ pub struct ConceptSourcesResponse {
 }
 
 /// Source coverage information.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct SourceCoverage {
     /// Source ID
     pub source_id: String,
@@ -265,7 +265,7 @@ pub struct SourceCoverage {
 // ============================================================================
 
 /// Response for get_concept_variants tool.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct ConceptVariantsResponse {
     /// Canonical concept ID
     pub canonical_id: String,
@@ -278,7 +278,7 @@ pub struct ConceptVariantsResponse {
 }
 
 /// A source-specific concept variant.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct ConceptVariant {
     /// Variant concept ID
     pub id: String,
@@ -295,7 +295,7 @@ pub struct ConceptVariant {
 // ============================================================================
 
 /// Response for find_bridge_concepts tool.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct BridgeConceptsResponse {
     /// First category
     pub category_a: String,
@@ -308,7 +308,7 @@ pub struct BridgeConceptsResponse {
 }
 
 /// A bridge concept connecting two categories.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct BridgeConcept {
     /// Concept ID
     pub id: String,
@@ -329,7 +329,7 @@ pub struct BridgeConcept {
 // ============================================================================
 
 /// Response for get_source_coverage tool.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct SourceCoverageResponse {
     /// Source ID
     pub source_id: String,
@@ -350,7 +350,7 @@ pub struct SourceCoverageResponse {
 }
 
 /// Brief concept information.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct ConceptBrief {
     /// Concept ID
     pub id: String,

@@ -33,6 +33,7 @@ use crate::markdown::{extract_first_heading, extract_frontmatter, strip_frontmat
 /// The extraction logic is available as an inherent method (`extract`) so
 /// it can be used with or without the `fts` feature. When the `fts` feature
 /// is enabled, this struct also implements `fabryk::fts::DocumentExtractor`.
+#[derive(Debug)]
 pub struct MusicTheoryDocumentExtractor;
 
 impl MusicTheoryDocumentExtractor {
@@ -137,8 +138,6 @@ impl MusicTheoryDocumentExtractor {
     }
 
     /// Check if this extractor supports the given file extension.
-    // Used in tests; will be called by fabryk indexing pipeline in milestone M5.
-    #[allow(dead_code)]
     pub fn supports_extension(&self, ext: &str) -> bool {
         self.supported_extensions()
             .iter()

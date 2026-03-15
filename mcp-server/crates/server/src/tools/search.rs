@@ -43,7 +43,6 @@ pub struct SearchConceptsParams {
     /// Optional query mode override (smart, and, or, minimum_match)
     /// Only used by TantivySearch backend (requires fts feature)
     #[serde(default)]
-    #[cfg_attr(not(feature = "fts"), allow(dead_code))]
     pub query_mode: Option<QueryMode>,
     /// Optional category filter - only return results from this category
     #[serde(default)]

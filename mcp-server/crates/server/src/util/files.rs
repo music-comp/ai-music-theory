@@ -134,7 +134,6 @@ pub async fn find_file_by_id(base_path: &Path, id: &str, options: FindOptions) -
 pub struct FileInfo {
     pub path: PathBuf,
     pub stem: String,
-    #[allow(dead_code)]
     pub relative_path: PathBuf,
 }
 

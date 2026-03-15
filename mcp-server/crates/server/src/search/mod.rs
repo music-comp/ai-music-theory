@@ -174,15 +174,11 @@ impl IndexMetadata {
     }
 
     /// Get the schema version.
-    // Retained for index compatibility checks in milestone M6.
-    #[allow(dead_code)]
     pub fn schema_version(&self) -> u32 {
         self.inner.schema_version
     }
 
     /// Get the content hash.
-    // Retained for index freshness checks in milestone M6.
-    #[allow(dead_code)]
     pub fn content_hash(&self) -> &str {
         &self.inner.content_hash
     }

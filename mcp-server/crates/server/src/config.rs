@@ -14,11 +14,7 @@ pub struct Config {
     pub server: ServerConfig,
     pub paths: PathsConfig,
     pub sources: SourcesConfig,
-    // Allow unused - will be used when dynamic log level configuration is implemented
-    #[allow(dead_code)]
     pub logging: twyg::Opts,
-    // Allow unused - will be used when search backends are implemented (Phase 2+)
-    #[allow(dead_code)]
     pub search: SearchConfig,
 }
 
@@ -34,13 +30,9 @@ pub struct ServerConfig {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(default)]
 pub struct PathsConfig {
-    // Used by serde deserialization and accessed via base_path()
-    #[allow(dead_code)]
     pub base: String,
     pub sources_md: String,
     pub concept_cards: String,
-    // Unified concepts directory - future feature for merged concept storage
-    #[allow(dead_code)]
     pub concepts_unified: String,
     pub guides: String,
     pub skill_docs: String,
@@ -48,8 +40,7 @@ pub struct PathsConfig {
 
 impl PathsConfig {
     /// Get the base path expanded to an absolute PathBuf.
-    /// Used by skill_docs_path() and available for future path resolution
-    #[allow(dead_code)]
+    /// Used by skill_docs_path() and available for future path resolution.
     pub fn base_path(&self) -> Result<PathBuf> {
         expand_path(&self.base)
     }
@@ -136,7 +127,6 @@ pub enum QueryMode {
 /// Fields will be used when search backends are implemented (Phase 2+).
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(default)]
-#[allow(dead_code)]
 pub struct SearchConfig {
     /// Backend selection: "simple" or "tantivy"
     #[serde(default = "default_backend")]
@@ -271,7 +261,6 @@ impl Default for SearchConfig {
 impl SearchConfig {
     /// Get the index path as an absolute PathBuf.
     /// Will be used when search backends are implemented (Phase 2+).
-    #[allow(dead_code)]
     pub fn index_path(&self) -> Result<PathBuf> {
         expand_path(&self.index_path)
     }

@@ -27,33 +27,28 @@ use crate::error::{Error, Result};
 // Re-exports from fabryk::graph — types
 // ============================================================================
 
-#[allow(unused_imports)]
 pub use fabryk::graph::{
     Edge as FabrykEdge, EdgeOrigin as FabrykEdgeOrigin, GraphData, Node as FabrykNode, NodeType,
     Relationship as FabrykRelationship,
 };
 
-#[allow(unused_imports)]
 pub use fabryk::graph::{BuildStats, GraphBuilder, GraphExtractor};
 
 // ============================================================================
 // Re-exports from fabryk::graph — algorithms
 // ============================================================================
 
-#[allow(unused_imports)]
 pub use fabryk::graph::{
     calculate_centrality, find_bridges, get_related, neighborhood, prerequisites_sorted,
     shortest_path, validate_graph,
 };
 
-#[allow(unused_imports)]
 pub use fabryk::graph::{compute_stats, quick_summary};
 
 // ============================================================================
 // Re-exports from fabryk::graph — result types
 // ============================================================================
 
-#[allow(unused_imports)]
 pub use fabryk::graph::{
     CentralityScore, GraphStats as FabrykGraphStats, NeighborhoodResult, PathResult,
     PrerequisitesResult, ValidationIssue, ValidationResult,
@@ -63,7 +58,6 @@ pub use fabryk::graph::{
 // Re-exports from fabryk::graph — persistence
 // ============================================================================
 
-#[allow(unused_imports)]
 pub use fabryk::graph::{load_graph, load_graph_from_str, save_graph};
 
 // ============================================================================
@@ -72,7 +66,6 @@ pub use fabryk::graph::{load_graph, load_graph_from_str, save_graph};
 
 pub mod query;
 
-#[allow(unused_imports)]
 pub use query::{
     BridgeConceptsResponse, CentralConceptsResponse, ConceptPathResponse, ConceptSourcesResponse,
     ConceptVariantsResponse, DependentsResponse, NeighborhoodResponse, PrerequisitesResponse,
