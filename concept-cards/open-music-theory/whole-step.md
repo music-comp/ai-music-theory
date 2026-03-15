@@ -1,66 +1,108 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Whole Step
-category: theory
-source: Open Music Theory
-chapter: "Half Steps, Whole Steps, and Accidentals"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: whole-step
+
+# === CLASSIFICATION ===
+category: intervals
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Half Steps, Whole Steps, and Accidentals"
+chapter_number: 5
+pdf_page: null
+section: "Half Steps and Whole Steps"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "whole tone"
+  - "major second"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch
+  - half-step
+  - piano-keyboard
+extends: []
+related:
+  - major-scale
+  - interval
+  - accidental
+contrasts_with:
+  - half-step
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a whole step?"
+  - "How does a whole step relate to a half step?"
+  - "How do you find a whole step on the piano?"
 ---
 
-# Whole Step
+# Quick Definition
 
-## Quick Definition
+An interval equal to two half steps, or the distance of two adjacent keys on a piano with one key between them.
 
-An interval equal to two half steps, or the distance between two keys on a piano with one key between them.
+# Core Definition
 
-## Formal Definition
+A **whole step** (whole tone) is an interval equivalent to two half steps. On the piano keyboard, pairs of white keys with a black key between them are a whole step apart (A-B, C-D, D-E, F-G, G-A). To find a whole step above E or B (which have natural half steps above them), count two keys to the right: E to F# and B to C#. Whole steps from black keys also count two keys in the desired direction.
 
-A **whole step** (also called a whole tone or major second) is an interval equal to two half steps (two semitones). In equal-tempered tuning, a whole step represents a frequency ratio of approximately 2^(2/12):1 or about 1.122:1.
+# Prerequisites
 
-On a piano keyboard:
-- Pairs of white keys with a black key between them are a whole step apart (A-B, C-D, D-E, F-G, G-A)
-- A whole step above E is F♯ (the black key to the right of F)
-- A whole step above B is C♯ (the black key to the right of C)
-- Count two keys to the right (ascending) or left (descending) to find a whole step
+- **Pitch**: the notes being measured
+- **Half step**: a whole step is defined as two half steps
+- **Piano keyboard**: the layout that illustrates whole steps
 
-In pitch-class integer notation, a whole step = 2 semitones. The ordered pitch-class interval i(a,b) = 2 when b is a whole step above a.
+# Key Properties
 
-## Musical Context
+- Equals two half steps (two semitones)
+- On piano: two keys to the right (ascending) or left (descending)
+- White keys with a black key between them: whole step
+- E to F is NOT a whole step (it is a half step); E to F# is a whole step
+- B to C is NOT a whole step (it is a half step); B to C# is a whole step
+- Also called a major second (ma2) when interval quality is specified
 
-Whole steps are fundamental to scale construction. Major scales follow the pattern W-W-H-W-W-W-H (W=whole step, H=half step). The whole-tone scale consists entirely of whole steps.
+# Construction / Recognition
 
-Melodically, whole steps sound more stable and "open" than half steps. They create less tension and don't demand resolution as strongly. Most melodic motion in tonal music involves whole steps and half steps.
+On the keyboard, skip one key (count two keys from the starting note). Aurally, whole steps sound more open and stable than half steps.
 
-## Examples
+# Context & Application
 
-### Basic
+Whole steps are fundamental to scale construction. Major scales follow the pattern W-W-H-W-W-W-H. The whole-tone scale consists entirely of whole steps. Most melodic motion in tonal music involves whole steps and half steps.
 
-On a piano:
-- C to D = whole step
-- D to E = whole step
-- E to F♯ = whole step (not E to F, which is a half step)
-- B♭ to C = whole step
+# Examples
 
-### From Repertoire
+- C to D = whole step (black key between them)
+- D to E = whole step (black key between them)
+- E to F# = whole step (not E to F, which is a half step)
+- Bb to C = whole step
+- A whole step from a black key: C# to D# = whole step
 
-The beginning of "Happy Birthday" moves up a whole step (from G to A in the key of G major). Debussy's use of whole-tone scales in pieces like "Voiles" creates a characteristically ambiguous, dreamy sound.
+# Relationships
 
-## Related Concepts
+- **Leads to**: major-scale, minor-scale, mode, whole-tone-scale
+- **See also**: half-step, interval-quality, scale
 
-- **Prerequisite**: pitch, interval, half-step
-- **Leads to**: whole-tone-scale, hexatonic-scale, major-scale
-- **See also**: interval-quality, scale-degree, melodic-interval
+# Common Errors
 
-## Common Confusions
+- Treating E to F as a whole step (it is a half step)
+- Treating B to C as a whole step (it is a half step)
 
-- Whole step vs. half step: A whole step equals TWO half steps
-- E to F is NOT a whole step (it's a half step); E to F♯ is a whole step
-- B to C is NOT a whole step (it's a half step); B to C♯ is a whole step
-- "Whole step" and "whole tone" are synonyms; both equal 2 semitones
-- A whole step is also called a major second (M2) when quality is specified
+# Common Confusions
 
-## Source Reference
+- "Whole step" and "whole tone" are synonyms
+- A whole step is also called a major second (ma2) when quality is specified
+
+# Source Reference
 
 Open Music Theory, Part I, Chapter 5: "Half Steps, Whole Steps, and Accidentals"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: keyboard examples, E-F and B-C warnings, synonym list.

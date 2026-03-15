@@ -1,112 +1,102 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Pitch-Class Set
-category: theory
-source: Open Music Theory
-chapter: "Pitch-Class Sets, Normal Order, and Transformations"
-pdf_page: null
-chapter_number: 8
-unit: null
+slug: pitch-class-set
+
+# === CLASSIFICATION ===
+category: analysis
+subcategory: set-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Pitch-Class Sets, Normal Order, and Transformations"
+chapter_number: 8
+pdf_page: null
+section: "VIII.3"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "pc set"
+  - "pcset"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch-class
+  - integer-notation
+extends: []
+related:
+  - normal-order
+  - set-class
+  - prime-form
+contrasts_with:
+  - twelve-tone-row
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a pitch-class set?"
+  - "How does a pc set differ from a set class?"
+  - "How are pitch-class sets transformed by transposition and inversion?"
 ---
 
-# Pitch-Class Set
+# Quick Definition
+A pitch-class set (pc set) is any group of pitch classes treated as a unit for analysis, written in square brackets in normal order (e.g., [3, 8, 9]). Unlike a twelve-tone row, a pc set is unordered -- it defines a collection of pitch classes without specifying sequence.
 
-## Quick Definition
+# Core Definition
+A pitch-class set is a collection of pitch classes grouped together by an analyst. Any group of pitch classes can form a pc set. Sets are typically written in normal order (most compact ascending arrangement) within square brackets. Two fundamental operations transform pc sets: transposition (Tn, adding n to each integer mod 12) preserves the ordered intervallic content, while inversion (In, subtracting each integer from n, or inverting then transposing by n) reverses interval directions while preserving interval sizes. Transposition is notated Tn where n is the index number; inversion is notated In. To identify a transposition between two sets, subtract one from the other -- if all differences are equal, they are Tn-related.
 
-A pitch-class set (pcset) is an unordered collection of pitch classes treated as a single analytical unit. Any group of notes can form a pcset--a chord, a melodic fragment, or even non-contiguous pitches that an analyst groups together for structural reasons.
+# Prerequisites
+- Pitch class and integer notation
+- Mod-12 arithmetic
 
-## Formal Definition
+# Key Properties
+1. Any group of pitch classes can be a pc set
+2. Sets are unordered collections (unlike rows, which are ordered)
+3. Written in square brackets in normal order: [x, y, z]
+4. Transposition (Tn): add n to each integer mod 12
+5. Inversion (In): subtract each integer from n (n-x=y), or invert then transpose
+6. Two In methods: invert-then-transpose, or subtraction method (both yield same result)
+7. The index number n for an inversion can be found by adding corresponding integers of two inversionally related sets
 
-**Pitch-class set (pcset)**: An unordered collection of distinct pitch classes, typically written in curly braces or square brackets.
+# Context & Application
+Pc sets are the basic analytical units in post-tonal set theory. Analysts segment music into pc sets based on contiguity, shared rhythm, texture, articulation, register, or other musical cues. The power of set theory lies in revealing relationships between sets through transposition and inversion, showing how a composer creates unity from seemingly disparate materials. Sets can be compared by placing them in normal order, then determining their prime form to identify the set class.
 
-**Notation conventions**:
-- Unordered set: {0, 4, 7} or {C, E, G}
-- Normal order: [0, 4, 7] (most compact ascending arrangement)
-- Duplicates eliminated: {C, E, G, C} = {C, E, G} = {0, 4, 7}
+# Examples
+**Example 1** (Debussy, La cathedrale engloutie): The opening motive {D, E, B} = [2, 4, 11] is transposed T4 to {F-sharp, G-sharp, D-sharp} = [3, 6, 8] at m. 18, representing the cathedral's ascent.
 
-**Properties**:
-- **Cardinality**: The number of distinct pitch classes in the set (e.g., {0, 4, 7} has cardinality 3)
-- **Order-independent**: {0, 4, 7} = {7, 0, 4} = {4, 7, 0}
-- **Duplicates collapse**: Each pc appears at most once
-- **Octave-independent**: C4, E5, G3 yields the same pcset as C5, E4, G6
+**Example 2**: T4 of [11, 2, 4]: 11+4=3, 2+4=6, 4+4=8, giving [3, 6, 8].
 
-**Set vs. Class terminology**:
-- A **set** is any group collected by the analyst
-- A **class** is a group related by some equivalence (octave, enharmonic, etc.)
-- "Pitch-class set" is a set of pitch classes (not a class of sets--that's "set class")
+**Example 3** (Chen Yi, Duo Ye): [2, 4, 7] is inverted by I8 to become [1, 4, 6]. Subtraction method: 8-2=6, 8-4=4, 8-7=1, yielding [1, 4, 6].
 
-## Musical Context
+# Relationships
+## Builds Upon
+- **pitch-class** -- Pc sets are collections of pitch classes
+- **integer-notation** -- Sets use integer representation
+## Related
+- **normal-order** -- The standard way to write a pc set
+- **set-class** -- The group of all Tn/In-related pc sets
+- **prime-form** -- The label for a set class
+## Contrasts With
+- **twelve-tone-row** -- A row is ordered; a set is unordered
 
-In tonal analysis, we name harmonies by their root and quality (C major, F#dim7). But this system assumes:
-- Triadic/seventh-chord structure
-- Root position as referential
-- Tonal function
+# Common Confusions
+- **Confusion**: A pc set must have some special property to be valid
+  **Clarification**: Any group of pitch classes can be a set; the analyst decides what to group
+- **Confusion**: Pc set and set class are the same thing
+  **Clarification**: A pc set is one specific collection; a set class is the group of all Tn/In-related pc sets
+- **Confusion**: Inversion In always produces the same set class as the original
+  **Clarification**: Yes, by definition Tn/In-related sets belong to the same set class
 
-Post-tonal music often uses sonorities that don't fit these categories. A pcset approach allows us to:
-- Analyze any combination of pitch classes
-- Find relationships between seemingly different harmonies
-- Track motivic pitch content regardless of octave or voicing
+# Source Reference
+Open Music Theory, Part VIII, Chapter 3: "Pitch-Class Sets, Normal Order, and Transformations."
 
-Pcsets are fundamental units in set theory analysis--much as "triad" or "seventh chord" are fundamental units in tonal analysis.
-
-## Examples
-
-### Basic
-
-**A C major chord as a pcset**:
-```
-Pitches: C4, E4, G4
-Pitch classes: C, E, G
-In integers: 0, 4, 7
-As a set: {0, 4, 7}
-In normal order: [0, 4, 7]
-```
-
-**A more complex example**:
-```
-Pitches: Bb3, E4, F#4, C5
-Pitch classes: Bb, E, F#, C
-In integers: 10, 4, 6, 0
-As a set: {0, 4, 6, 10}
-Cardinality: 4 (a tetrachord)
-```
-
-**Cardinality names**:
-```
-2 pc: dyad
-3 pc: trichord
-4 pc: tetrachord
-5 pc: pentachord
-6 pc: hexachord
-7 pc: septachord
-8 pc: octachord
-9 pc: nonachord
-```
-
-### From Repertoire
-
-**Schoenberg, "Nacht" from Pierrot lunaire**: The recurring motive E-G-Eb forms pcset {3, 4, 7}. This "night" motive appears throughout in various transpositions and inversions, all sharing the same set-class identity.
-
-**Debussy, "La cathedrale engloutie"**: The opening motive <D, E, B> or <2, 4, 11> forms a trichord that returns at T4 as <F#, G#, D#> or <6, 8, 3>--both are the same set class.
-
-**Chen Yi, "Duo Ye"**: Pcsets [2, 4, 7] and [1, 4, 6] appear in the opening, related by inversion--they share the same interval content in reversed arrangement.
-
-## Related Concepts
-
-- **Prerequisite**: pitch-class, integer-notation, interval-class
-- **Leads to**: normal-order, prime-form, set-class, transposition-tn, inversion-in
-- **See also**: interval-vector, cardinality, segmentation
-
-## Common Confusions
-
-- **Set vs. set class**: A pcset is a specific collection; a set class groups all transpositions and inversions of that collection
-- **Order doesn't matter in sets**: {0, 4, 7} = {4, 7, 0} (but order matters for ordered sets and melodies)
-- **Duplicates are eliminated**: The chord C-E-G-C' is still pcset {0, 4, 7}
-- **Curly braces vs. square brackets**: {0, 4, 7} is unordered; [0, 4, 7] implies normal order
-- **Any pitch collection can be a pcset**: It doesn't need to be a traditional chord or scale
-- **"Pitch-class set" is not the same as "set class"**: The former is a specific set; the latter is a class of related sets
-- **Cardinality = number of elements**: A pcset with 3 pitch classes has cardinality 3, regardless of how many actual notes are played
-
-## Source Reference
-
-Open Music Theory, Part VIII, Chapter 3: "Pitch-Class Sets, Normal Order, and Transformations"
+# Verification Notes
+- Definition source: Directly from 08-03 source chapter
+- Confidence rationale: High -- clearly defined with detailed operations
+- Preserved from v2: Debussy and Chen Yi examples, transposition/inversion procedures
+- Cross-reference status: Verified against set theory quick reference sheet

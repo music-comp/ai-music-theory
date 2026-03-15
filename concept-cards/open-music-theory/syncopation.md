@@ -1,87 +1,100 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Syncopation
-category: theory
-source: Open Music Theory
-chapter: "Other Rhythmic Essentials"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: syncopation
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Other Rhythmic Essentials"
+chapter_number: 11
+pdf_page: null
+section: "Syncopation"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - beat
+  - meter
+extends: []
+related:
+  - rhythm
+  - tie
+  - dot
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is syncopation?"
+  - "How is syncopation created?"
+  - "What rhythmic devices produce syncopation?"
 ---
 
-# Syncopation
+# Quick Definition
 
-## Quick Definition
+Off-beat rhythmic accents that displace the expected stress pattern of the meter, created by ties, dots, rests, and/or dynamic accents.
 
-Rhythmic emphasis on weak beats or off-beat positions, creating a sense of rhythmic displacement or surprise by contradicting the established metric accent pattern.
+# Core Definition
 
-## Formal Definition
+**Syncopation** occurs when there are off-beat rhythmic accents -- stress where the meter does not normally place it. Syncopation can be created by **ties** (connecting a weak beat to the following strong beat), **dots** (extending a note past a beat boundary), **rests** on strong beats (leaving expected accents empty), and **dynamic accents** on weak beats. Syncopation creates rhythmic energy and forward momentum by working against the established metric pattern.
 
-**Syncopation** is the displacement of expected rhythmic accents in a metrical context. It occurs when emphasis (through articulation, dynamics, longer duration, or harmonic change) falls on:
-- Weak beats (e.g., beats 2 and 4 in 4/4)
-- Off-beat positions (e.g., the "and" of the beat)
-- Weak portions of beats (subdivisions)
+# Prerequisites
 
-**Methods of creating syncopation**:
+- **Beat**: the regular pulse being disrupted
+- **Meter**: the accent pattern being contradicted
 
-1. **Ties**: connecting a weak beat to the following strong beat
-2. **Dots**: extending a note from weak to strong beat
-3. **Rests**: placing silence on strong beats, emphasizing following weak beats
-4. **Dynamics**: accenting notes on weak beats or off-beats
-5. **Articulation**: emphasizing weak beat positions through attack
+# Key Properties
 
-Syncopation contradicts the meter's natural accent pattern (strong-weak-weak-weak in 4/4, strong-weak-weak in 3/4, etc.).
+- Rhythmic accent on normally unaccented beats or off-beats
+- Created by ties, dots, rests, and/or dynamic accents
+- Works against (not with) the established meter
+- Creates energy, surprise, and forward momentum
+- Central to jazz, funk, Latin, and many popular styles
 
-## Musical Context
+# Construction / Recognition
 
-Syncopation creates rhythmic vitality and interest:
-- Generates forward momentum and rhythmic drive
-- Creates tension through metric contradiction
-- Fundamental to jazz, ragtime, and much popular music
-- Adds rhythmic complexity to melodies and accompaniments
-- Prevents rhythmic monotony in repetitive passages
-- Can create dance-like or propulsive character
+Listen for stress or emphasis where the meter does not normally place it. Look for ties across beat boundaries, rests on strong beats, and accent marks on weak beats.
 
-Syncopation is a primary source of rhythmic excitement in Western music.
+# Context & Application
 
-## Examples
+Syncopation is a fundamental rhythmic device across musical styles. It is pervasive in jazz, popular music, Latin music, and African-diaspora traditions. In classical music, syncopation creates rhythmic interest and tension. The interplay between metric regularity and syncopated disruption generates rhythmic vitality.
 
-### Basic
+# Examples
 
-**Tie-created syncopation** (in 4/4):
-- Beat 2 tied to beat 3: ♩ (♩ ♩) ♩
-- Emphasis shifts from strong beat 3 to weak beat 2
+- Tie: quarter note on beat 2 tied to beat 3 (stress falls on beat 2 instead of 3)
+- Dot: dotted quarter on beat 1 extends past beat 2 (beat 2 is not articulated)
+- Rest: eighth rest on beat 1, eighth note on the "and" of 1 (accent shifts off the beat)
+- Dynamic accent: accent mark on beat 4 in 4/4 time
 
-**Dot-created syncopation**:
-- Dotted quarter starting on beat 2: ♩ ♩. ♪ (silence on beat 3)
+# Relationships
 
-**Rest-created syncopation**:
-- Rests on beats 1 and 3, notes on beats 2 and 4: 𝄽 ♩ 𝄽 ♩
-- Weak beats emphasized by preceding rests
+- **Leads to**: rhythmic complexity, groove
+- **See also**: beat, meter, tie, dot, rhythm
 
-**Dynamic-created syncopation**:
-- Accents on off-beats: ♪ >♪ ♪ >♪ (accents on "and" of each beat)
+# Common Errors
 
-### From Repertoire
+- Playing syncopated rhythms with the accent on the beat instead of off the beat
 
-Ragtime (Scott Joplin): pervasive syncopation in right hand against steady left-hand pulse. Jazz: syncopated ride cymbal patterns, anticipations. Beethoven: syncopations create drama in symphonies. Pop/rock: backbeat emphasis (beats 2 and 4). Latin music: clave patterns featuring syncopation.
+# Common Confusions
 
-## Related Concepts
+- Syncopation is not the absence of meter -- it is accent AGAINST the meter
+- A consistent off-beat pattern can establish its own sense of regularity
 
-- **Prerequisite**: beat, meter
-- **Leads to**: polyrhythm
-- **See also**: tie, anticipation, suspension
-
-## Common Confusions
-
-- Syncopation vs. off-beat: syncopation emphasizes off-beats; merely playing off-beats doesn't create syncopation without emphasis
-- Not all ties create syncopation—only those connecting weak to strong beats
-- Syncopation requires a metric context (established pulse) to contradict
-- Backbeat (emphasis on beats 2 and 4) is a type of syncopation
-- Syncopation vs. accent: syncopation involves metric displacement; accent is emphasis (accents can create syncopation)
-- Syncopation can occur without ties (rests, dynamics, articulation also create it)
-- Expected pattern must be established first for syncopation to be perceived
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 11: "Other Rhythmic Essentials"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: four creation methods (ties, dots, rests, dynamics), style associations.

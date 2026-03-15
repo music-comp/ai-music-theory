@@ -1,184 +1,81 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Omnibus Progression
-category: theory
-source: Open Music Theory
-chapter: "The Omnibus Progression"
-pdf_page: null
-chapter_number: 5
-unit: null
+slug: omnibus-progression
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: chromatic-harmony
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "The Omnibus Progression"
+chapter_number: 12
+pdf_page: null
+section: "V.12"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - dominant-seventh-chord
+  - chromatic-voice-leading
+extends: []
+related:
+  - chromatic-sequence
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the omnibus progression and how does it prolong dominant harmony?"
 ---
 
-# Omnibus Progression
+# Quick Definition
+A chromatic sequence in which the bass and another voice move in contrary motion by semitone while the other voices remain as common tones. Most commonly used to prolong dominant harmony through a chromatic voice exchange between the leading tone and the root of V7. Comes in converging and diverging versions.
 
-## Quick Definition
+# Core Definition
+The omnibus begins on a root-position dominant seventh chord. In the converging version, the bass ascends by semitone while the voice with the leading tone descends by semitone, creating a voice exchange. The remaining two voices hold as common tones. After three semitones of motion, a new root-position dominant seventh is reached; after four semitones, the original V7 returns in first inversion. The diverging version works identically but moves the seventh (instead of the leading tone) in contrary motion to the bass. To traverse distant keys (and eventually the full octave), upon reaching a new root-position V7, find the new leading tone (converging) or seventh (diverging) and restart.
 
-A special chromatic sequence that prolongs dominant harmony through a chromatic voice exchange between the bass (root of V7) and an upper voice (leading tone), with two non-moving common tones, creating either a converging motion (bass rises while leading tone descends) or diverging motion (bass descends while seventh rises), and used for dominant prolongation or as a pathway to distant chromatic modulations.
+# Prerequisites
+- Dominant seventh chord structure
+- Chromatic voice-leading principles
 
-## Formal Definition
+# Key Properties
+1. Bass and one upper voice move in contrary motion by semitone
+2. Two voices remain as common tones throughout
+3. Converging: bass up, leading tone down
+4. Diverging: bass down (or up), seventh moves opposite
+5. 3 semitones of motion reaches new root-position V7
+6. 4 semitones returns to original V7 in first inversion
+7. Can modulate to distant keys by restarting at each new V7
 
-**Omnibus progression** characteristics:
+# Context & Application
+The omnibus primarily prolongs dominant harmony with maximum chromatic smoothness. It can also serve as a modulation tool by chaining the pattern through multiple dominant sevenths, potentially traversing the entire octave. The voice leading is as smooth as possible — only two voices move at any time.
 
-**Basic structure**:
-- Begins on a **dominant seventh chord**
-- **Voice exchange** between bass and one upper voice
-- **Two common tones** remain static
-- Bass and upper voice move in **contrary chromatic motion**
+# Examples
+**Example 1**: V7 in C (G-B-D-F): bass G ascends (G-Ab-A-Bb), leading tone B descends (B-Bb-A-Ab), D and F hold. After 3 semitones: new root-position V7 on Bb.
 
-**Two types**:
+# Relationships
+## Builds Upon
+- **dominant-seventh-chord** — The chord being prolonged
+- **chromatic-voice-leading** — Semitonal contrary motion
+## Related
+- **chromatic-sequence** — The omnibus is a special type of chromatic sequence
 
-1. **Converging omnibus**:
-   - Bass moves **upward** by semitone
-   - Leading tone moves **downward** by semitone
-   - Converges toward a central point
+# Common Confusions
+- **Confusion**: The omnibus changes the harmony.
+  **Clarification**: It prolongs a single dominant harmony through voice exchange; the intervening sonorities are passing, not functional.
 
-2. **Diverging omnibus**:
-   - Bass moves **downward** by semitone  
-   - Chordal seventh moves **upward** by semitone
-   - Diverges outward from a central point
+# Source Reference
+Open Music Theory, Part V: Chromaticism, Chapter 12: "The Omnibus Progression."
 
-**Distance relationships**:
-- **Three semitones**: Returns to root-position V7 on different root
-- **Four semitones**: Returns to same V7 chord in first inversion
-- **Full octave traverse**: Can modulate through distant keys
-
-## Voice Leading Structure
-
-**Converging omnibus (in C)**:
-```
-Starting: G7 (G-B-D-F) in root position
-
-Beat 1: G7    G - B - D - F
-Beat 2: o7    Ab- B - D - F    (bass up, leading tone down to B)
-Beat 3: Mm7   A - Bb- D - F    (continuing)
-Beat 4: o7    Bb- Bb- D - F    (convergence point)
-Beat 5: B7    B - A - D#- F#   (new dominant seventh, 3 semitones up)
-
-Static voices: D and F remain as common tones
-Moving voices: Bass ascends (G-Ab-A-Bb-B)
-              Leading tone descends (B-Bb-A-Ab... reinterpreted)
-```
-
-**Voice exchange**:
-```
-Bass:        G → Ab → A → Bb (rising chromatically)
-Upper voice: B → Bb → A → Ab (falling chromatically)
-
-These two voices EXCHANGE pitch positions over time
-Creates chromatic contrary motion
-```
-
-## Harmonic Function
-
-**Dominant prolongation**:
-- Primary use: Prolong V7 while creating chromatic interest
-- Harmony remains essentially "dominant" throughout
-- Prepares tonic arrival with extended V prolongation
-- Common in Romantic cadential approaches
-
-**Modulation vehicle**:
-- After three semitones: New root-position V7
-- Can restart omnibus from new dominant
-- Eventually traverses the entire octave
-- Reaches distant keys systematically
-
-## Musical Context
-
-The omnibus progression serves specific compositional purposes:
-- **Dominant prolongation**: Extend pre-cadential tension
-- **Chromatic voice exchange**: Contrary motion interest
-- **Distant modulation**: Navigate to remote keys
-- **Romantic idiom**: Common in 19th-century harmony
-- **Dramatic effect**: Build tension before resolution
-- **Opera and song**: Accompaniment figure for expressive text
-- **Cadenza passages**: Extended dominant preparation
-
-## Examples
-
-### Basic
-
-**Converging omnibus in C major**:
-```
-Prolonging V7 (G7):
-
-G7:   G - B - D - F     (root position V7)
-      ↓   ↓   |   |     (bass up, soprano down, D and F hold)
-      Ab- Bb- D - F     (diminished quality)
-      ↓   ↓   |   |
-      A - A - D - F     (convergence)
-      ↓   ↓   |   |
-      Bb- Ab- D - F     (continue if desired)
-      ↓   ↓   |   |
-B7:   B - G#- D#- F#    (new V7 after 3 semitones)
-
-Voice exchange complete: G↔B exchanged positions (enharmonically)
-Now on V7/E (B7) - can resolve to E, or restart omnibus
-```
-
-**Diverging omnibus in C major**:
-```
-Prolonging V7 (G7):
-
-G7:   G - B - D - F     (root position V7)
-      ↓   |   |   ↓     (bass down, seventh up)
-      Gb- B - D - F#    (respelled as needed)
-      ↓   |   |   ↓
-      F - B - D - G     (new spacing)
-      ↓   |   |   ↓
-Eb7:  Eb- B - D - Ab    (new V7 after 3 semitones)
-
-Seventh (F) rises: F → F# → G → Ab
-Bass descends: G → Gb → F → E → Eb
-```
-
-**Modulation through omnibus**:
-```
-Starting in C, aiming for E:
-
-G7 (V7/C) → [omnibus 3 semitones] → B7 (V7/E) → E major
-
-G7 → Ab°7 → A7 → Bb°7 → B7 → E
-
-The omnibus provides chromatic pathway from C to E (distant keys)
-Each new root-position V7 is three semitones higher
-Full octave: G7 → B7 → Eb7 → G7 (returns after 4 cycles)
-```
-
-### From Repertoire
-
-**Beethoven, Piano Sonatas**: Omnibus progressions for extended dominant prolongation before dramatic cadences.
-
-**Schubert, Lieder**: Chromatic voice exchanges in piano accompaniment, text-painting of emotional tension.
-
-**Wagner, music dramas**: Extended omnibus progressions create harmonic suspense and delay resolution.
-
-**Chopin, Nocturnes and Ballades**: Cadential approaches using omnibus prolongation of dominant.
-
-**Mozart, opera finales**: Building tension through chromatically prolonged dominants.
-
-## Related Concepts
-
-- **Prerequisite**: dominant-seventh-chord, chromatic-voice-motion, tonic-prolongation
-- **Leads to**: chromatic-modulation, dominant-prolongation, chromatic-sequence
-- **See also**: augmented-sixth-chord, contrary-motion
-
-## Common Confusions
-
-- Omnibus = special chromatic sequence prolonging dominant harmony
-- Based on VOICE EXCHANGE between bass and upper voice
-- Two common tones remain STATIC throughout
-- Two types: converging (bass up, leading tone down) or diverging (bass down, seventh up)
-- After 3 semitones: arrives at NEW root-position dominant seventh
-- After 4 semitones: returns to SAME V7 in first inversion
-- Primary use: prolong dominant before resolution
-- Secondary use: modulate to distant keys
-- Moving voices travel in CONTRARY chromatic motion
-- Not all chromatic bass motion is an omnibus—must have voice exchange
-- Harmony essentially remains "dominant function" throughout
-- Common in Romantic-era music (Beethoven, Schubert, Chopin, Wagner)
-- Full octave traversal = 4 repetitions of 3-semitone pattern
-
-## Source Reference
-
-Open Music Theory, Part V: "Chromaticism"
-Open Music Theory, Part V: "The Omnibus Progression"
+# Verification Notes
+- Re-extracted from source chapter 05-12; merged with existing v2 card
+- Confidence rationale: High — clear description of converging/diverging types

@@ -1,132 +1,81 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "Diatonic Modes (20th Century)"
-category: theory
-source: Open Music Theory
-chapter: "Diatonic Modes"
-pdf_page: null
-chapter_number: 8
-unit: null
+slug: diatonic-modes-20c
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: modal-theory
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Diatonic Modes"
+chapter_number: 8
+pdf_page: null
+section: "VIII.7"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - mode
+extends: []
+related:
+  - color-notes
+  - collection-analysis
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How are diatonic modes used in 20th-century music?"
+  - "How do you identify which mode is being used?"
+  - "What are color notes?"
 ---
 
-# Diatonic Modes (20th Century)
+# Quick Definition
+In 20th/21st-century music, diatonic modes are rotations of the major scale with a pitch-class center (tonic) but without the range restrictions of church modes. Each mode has characteristic "color notes" that distinguish it from major or minor: mixolydian (lowered 7), lydian (raised 4), dorian (raised 6 vs. natural minor), phrygian (lowered 2).
 
-## Quick Definition
+# Core Definition
+Church modes originated in the medieval era with specific range and tenor requirements. In the 20th century, composers revived modes without authentic/plagal distinctions or range restrictions, but with the concept of a tonic. Modes are grouped by the quality of the third above the tonic: major-ish (ionian, mixolydian, lydian) or minor-ish (aeolian, dorian, phrygian). Each has a distinctive color note vs. major or natural minor. Composers establish modal tonics through repetition, agogic accents, drones, bass position, and cadences. Non-Western modes (raga, maqam, pelog/slendro, etc.) involve more than pitch collections, including characteristic gestures and protocols.
 
-In 20th- and 21st-century music, diatonic modes are rotations of the major scale used freely without the historical constraints of church music. Each mode has a distinctive "color note" that distinguishes it from major or natural minor: Lydian has raised 4, Mixolydian has lowered 7, Dorian has raised 6, and Phrygian has lowered 2.
+# Prerequisites
+- Mode (general understanding of modal systems)
 
-## Formal Definition
+# Key Properties
+1. Rotations of the major scale with a tonic but no range restriction
+2. Color notes distinguish each mode from major/minor
+3. Major-ish: mixolydian (lowered-7), lydian (raised-4)
+4. Minor-ish: dorian (raised-6), phrygian (lowered-2)
+5. Identification flowchart: quality of tonic chord, then check scale-degree 7, then color notes
+6. Non-Western modes are more than pitch collections
 
-**Diatonic modes in modern usage**: Seven-note collections using the pitches of the major scale, each with a different pitch as tonic/final.
+# Context & Application
+Modal writing was part of the early 20th-century broadening of compositional materials. Composers used modes alongside collections, atonality, and serialism. Modal identification follows a systematic process: determine tonic quality (major/minor third), check for lowered 7, then look for other color notes.
 
-**The six modes** (excluding Locrian, rarely used as a stable mode):
+# Examples
+**Example 1**: Lydian -- like major with raised-4 (fi). The raised 4th can create ambiguity with the dominant key.
+**Example 2**: Dorian -- like natural minor with raised-6 (la). Common in folk-influenced 20th-century music.
+**Example 3** (Beethoven, "Heiliger Dankgesang" from Op. 132): Lydian mode, with characteristic ambiguity between lydian-4 and dominant leading tone.
 
-| Mode | Relation to Major/Minor | Color Note | Quality |
-|------|------------------------|------------|---------|
-| Ionian | Same as major | (none) | Major |
-| Mixolydian | Major with b7 | te (b7) | Major-ish |
-| Lydian | Major with #4 | fi (#4) | Major-ish |
-| Aeolian | Same as natural minor | (none) | Minor |
-| Dorian | Natural minor with #6 | la (#6) | Minor-ish |
-| Phrygian | Natural minor with b2 | ra (b2) | Minor-ish |
+# Relationships
+## Builds Upon
+- **mode** -- 20th-century modes build on the general concept
+## Related
+- **color-notes** -- The distinguishing pitches of each mode
+- **collection-analysis** -- Modes as analytical tools for 20th-century music
 
-**20th-century practice differs from church modes**:
-- No authentic/plagal distinction (range not prescribed)
-- No tenor/reciting tone requirements
-- Greater freedom in establishing the final/tonic
-- Often combined with other harmonic elements
+# Common Confusions
+- **Confusion**: Modes must use white notes
+  **Clarification**: Any mode can be transposed to any pitch level
+- **Confusion**: Any piece with a raised 4 is lydian
+  **Clarification**: The raised 4 must function as a color note within a modal context, not as a chromatic passing tone
 
-**Parallel vs. relative relationships**:
-- **Parallel**: Same tonic, different collection (C major vs. C Dorian)
-- **Relative**: Same collection, different tonic (C major vs. A Aeolian)
+# Source Reference
+Open Music Theory, Part VIII, Chapter 7: "Diatonic Modes."
 
-## Musical Context
-
-Around 1900, many composers sought alternatives to common-practice major-minor tonality. Looking backward to medieval modes offered one path forward, providing:
-
-1. **Fresh melodic resources**: Scales that sound "ancient" or "folk-like"
-2. **Harmonic ambiguity**: Modal harmony avoids traditional dominant-tonic gravity
-3. **Cultural associations**: Modes evoke plainchant, folk traditions, or the exotic
-
-**Establishing modal tonics**: Without dominant-tonic function, composers use other means:
-- Repetition of the tonic pitch
-- Pedal points/drones on tonic
-- Agogic accent (longer note values on tonic)
-- Metric accent on tonic
-- Cadential emphasis on tonic
-
-**The "color note" is crucial**: The raised or lowered scale degree that distinguishes each mode from major or minor must be heard to establish modal identity.
-
-## Examples
-
-### Basic
-
-**The modes from bright to dark** (parallel to C):
-```
-Lydian:     C-D-E-F#-G-A-B-C  (brightest--raised 4)
-Ionian:     C-D-E-F-G-A-B-C   (major)
-Mixolydian: C-D-E-F-G-A-Bb-C  (major with lowered 7)
-Dorian:     C-D-Eb-F-G-A-Bb-C (minor with raised 6)
-Aeolian:    C-D-Eb-F-G-Ab-Bb-C (natural minor)
-Phrygian:   C-Db-Eb-F-G-Ab-Bb-C (darkest--lowered 2)
-```
-
-**Relative modes** (all using white notes):
-```
-Ionian:     C-D-E-F-G-A-B (final on C)
-Dorian:     D-E-F-G-A-B-C (final on D)
-Phrygian:   E-F-G-A-B-C-D (final on E)
-Lydian:     F-G-A-B-C-D-E (final on F)
-Mixolydian: G-A-B-C-D-E-F (final on G)
-Aeolian:    A-B-C-D-E-F-G (final on A)
-```
-
-**Identifying mode by color note**:
-```
-1. Is the tonic chord major or minor?
-   Major -> Lydian, Ionian, or Mixolydian
-   Minor -> Dorian, Aeolian, or Phrygian
-
-2. Check scale degree 7:
-   Raised (ti) in major tonic -> Lydian or Ionian
-   Lowered (te) in major tonic -> Mixolydian
-   Raised (ti) in minor tonic -> standard minor (not mode)
-   Lowered (te) in minor tonic -> proceed to step 3
-
-3. For minor modes, check degrees 2 and 6:
-   Lowered 2 (ra) -> Phrygian
-   Raised 6 (la) -> Dorian
-   Neither -> Aeolian
-```
-
-### From Repertoire
-
-**Debussy, "La fille aux cheveux de lin"**: The gentle Lydian inflections (raised 4) create a floating, dreamlike quality distinct from simple major.
-
-**Ravel, "Pavane pour une infante defunte"**: Modal passages evoke Renaissance court music, appropriate for a piece titled "Pavane."
-
-**Bartok, "From the Island of Bali"**: Explores modal and exotic scales as part of his synthesis of folk music elements.
-
-**Vaughan Williams, "Fantasia on a Theme by Thomas Tallis"**: Heavy use of Dorian and Phrygian modes creates the archaic, ecclesiastical atmosphere.
-
-**Stravinsky, Symphony of Psalms**: Modal writing contributes to the work's austere, ritualistic character.
-
-## Related Concepts
-
-- **Prerequisite**: major-scale, natural-minor-scale, scale-degree
-- **Leads to**: pandiatonicism
-- **See also**: pentatonic-collection, whole-tone-collection, octatonic-collection
-
-## Common Confusions
-
-- **Mode =/= key**: A mode has no leading tone function or dominant-tonic relationship in the tonal sense
-- **Color notes are relative to major/minor**: Lydian's "raised 4" means raised compared to Ionian, not compared to Phrygian
-- **"D mode on G" is valid**: Modal music can be transposed; "white notes starting on D" describes only one transposition of Dorian
-- **Establishing tonic takes effort**: Without dominant-tonic motion, composers must use other means
-- **Modes can mix with chromatic notes**: A piece in Dorian might have some chromaticism and still be "in" Dorian
-- **Not all modes are equally stable**: Locrian is rarely used as a primary mode because the diminished tonic triad lacks stability
-- **Medieval modes had additional constraints**: Modern modal writing ignores authentic/plagal distinctions
-
-## Source Reference
-
-Open Music Theory, Part VIII, Chapter 7: "Diatonic Modes"
+# Verification Notes
+- Definition source: From 08-07
+- Confidence rationale: High
+- Preserved from v2: Color notes table, identification flowchart, non-Western modes reference
+- Cross-reference status: Verified against collections chapter

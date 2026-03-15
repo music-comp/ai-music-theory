@@ -1,144 +1,108 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Period
+slug: period
+
+# === CLASSIFICATION ===
 category: form
-source: Open Music Theory
-chapter: "The Phrase, Archetypes, and Unique Forms"
-pdf_page: null
-chapter_number: 3
-unit: null
+subcategory: phrase-level
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "The Phrase, Archetypes, and Unique Forms"
+chapter_number: 2
+pdf_page: null
+section: "Archetype 2: The Period"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "parallel period"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - phrase
+  - cadence
+extends: []
+related:
+  - sentence
+  - compound-period
+  - hybrid-form
+  - antecedent-consequent
+contrasts_with:
+  - sentence
+  - repeated-phrase
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a period and what are its two phrases?"
+  - "How does the cadence pattern define a period?"
+  - "What distinguishes a period from a repeated phrase?"
 ---
 
-# Period
+# Quick Definition
+A phrase-level form comprising two phrases -- an antecedent ending with a weaker cadence (usually HC) and a consequent ending with a stronger cadence (usually PAC) -- creating a question-answer relationship.
 
-## Quick Definition
+# Core Definition
+The **period** comprises two phrases: an **antecedent** (ending with a weaker cadence, most often a half cadence) and a **consequent** (ending with a stronger cadence, most often a perfect authentic cadence). Each phrase consists of a basic idea (b.i.) followed by a contrasting idea (c.i.). Most consequents begin with a basic idea similar or identical to the antecedent's, but the consequent's contrasting idea must differ because it needs a stronger cadence. "Antecedents are sometimes characterized as 'asking a question' to which the consequent 'provides the answer'" (Ch. 2, "Archetype 2: The Period").
 
-A phrase-level form consisting of two phrases—an antecedent ending with a weaker cadence and a consequent ending with a stronger cadence—creating a "question-answer" or "incomplete-complete" relationship.
+# Prerequisites
+- **Phrase** -- A period is made of two phrases
+- **Cadence** -- Cadence types define the antecedent-consequent relationship
 
-## Formal Definition
+# Key Properties
+1. Two phrases: antecedent (weaker cadence) + consequent (stronger cadence)
+2. Antecedent typically ends with HC; consequent with PAC
+3. Both phrases: basic idea + contrasting idea
+4. Consequent's basic idea usually similar to antecedent's
+5. Consequent's contrasting idea differs (to achieve stronger cadence)
+6. Consequent equal to or longer than antecedent (rarely shorter)
+7. Typically in tonic key; modulation possible in consequent
+8. "Parallel period" = consequent begins like antecedent (the norm; "contrasting period" is rare)
 
-A **period** is a phrase archetype comprising two related phrases: an **antecedent** (the first phrase) that ends with a relatively weak cadence, and a **consequent** (the second phrase) that ends with a stronger cadence. The weak-to-strong cadential progression creates a sense of musical question and answer or incomplete and complete thoughts.
+# Construction / Recognition
+## To Identify:
+1. Find two cadences
+2. Check if the first cadence is weaker than the second (e.g., HC then PAC)
+3. Verify both phrases begin with similar basic ideas
+4. Confirm the contrasting ideas differ
+## To Distinguish from Repeated Phrase:
+- In a period, the consequent ends with a STRONGER cadence
+- In a repeated phrase, both phrases end with the SAME cadence
 
-**Essential structure**:
-1. **Antecedent** (first phrase):
-   - Basic idea (b.i.)
-   - Contrasting idea (c.i.)
-   - Ends with weaker cadence (most often HC)
+# Context & Application
+The period is one of two fundamental phrase archetypes. Its weak-to-strong cadence pattern creates a sense of completion that the sentence (single phrase) achieves differently. Periods may be simple (each phrase is just ideas) or compound (each phrase is itself a sentence or other form).
 
-2. **Consequent** (second phrase):
-   - Basic idea (usually similar/identical to antecedent's b.i.)
-   - Contrasting idea (different from antecedent's c.i.)
-   - Ends with stronger cadence (most often PAC)
+# Examples
+**Example 1** (Ch. 2, Example 11): Mozart's Clarinet Concerto, III (0:00-0:11) -- period with HC then PAC.
 
-**Typical proportions**:
-- Antecedent often 4 measures
-- Consequent usually same length as or longer than antecedent (rarely shorter)
-- Common total lengths: 8, 12, or 16 measures
+**Example 2** (Ch. 2, Example 13): Christian Petzold's Minuet in G Major -- compound period (antecedent and consequent are each sentences).
 
-**Cadential patterns**:
-- Most common: Antecedent ends HC, Consequent ends PAC
-- Also possible: Antecedent ends IAC, Consequent ends PAC
-- Key principle: Consequent cadence must be stronger than antecedent cadence
-- Periods may modulate (usually during consequent)
+# Relationships
+## Builds Upon
+- **phrase** -- A period combines two phrases
+## Enables
+- **compound-period** -- Sentences as antecedent/consequent
+## Contrasts With
+- **sentence** -- Period = two phrases; sentence = one phrase
+- **repeated-phrase** -- Period has weak→strong cadences; repeated phrase has same→same
 
-**Parallel vs. contrasting periods**:
-- **Parallel period** (most common): Consequent begins similarly/identically to antecedent
-- **Contrasting period** (rare): Consequent begins differently than antecedent
-- "Period" alone usually means parallel period
+# Common Errors
+- **Error**: Labeling a repeated phrase as a period
+  **Correction**: Check if the second phrase ends with a stronger cadence; if both end the same way, it's a repeated phrase
 
-**Relationship to sentence**:
-- Period = two phrases
-- Sentence = one phrase
-- Both are phrase-level archetypes
-- Can combine in compound period
+# Common Confusions
+- **Confusion**: "Period" means any two phrases together
+  **Clarification**: A period specifically requires the weak-to-strong cadence pattern
 
-## Musical Context
+# Source Reference
+Open Music Theory, Part III, Chapter 2: "The Phrase, Archetypes, and Unique Forms," section "Archetype 2: The Period."
 
-The period is a fundamental formal archetype:
-
-**Historical context**:
-- Ubiquitous in Classical music (Haydn, Mozart, Beethoven)
-- Common in folk songs and simple melodies
-- Continues through Romantic period
-- Theory developed by Koch, Reicha, and modern scholars
-
-**Expressive character**:
-- **Antecedent**: "Asks a question" or makes incomplete statement
-- **Consequent**: "Answers the question" or completes the thought
-- Creates sense of balance and completion
-- Weak-to-strong cadential motion generates satisfaction
-
-**Structural functions**:
-- Provides clear two-part structure
-- Creates expectation (antecedent) and fulfillment (consequent)
-- Enables modulation (often in consequent)
-- Balances repetition (similar b.i.) with variation (different c.i.)
-
-**Compositional uses**:
-- Common for opening themes
-- Often used in song forms (verse structure)
-- Frequently appears in dance music
-- Can be component of larger forms (e.g., in binary, ternary forms)
-
-**Analytical approach**:
-1. Identify the two cadences
-2. Verify weak-to-strong cadential relationship
-3. Locate basic ideas in each phrase
-4. Determine how contrasting ideas differ
-5. Assess whether consequent begins like antecedent (parallel) or differently (contrasting)
-
-## Examples
-
-### Basic
-
-**8-measure parallel period**:
-- Mm. 1-2: Antecedent basic idea
-- Mm. 3-4: Antecedent contrasting idea, HC
-- Mm. 5-6: Consequent basic idea (same as mm. 1-2)
-- Mm. 7-8: Consequent contrasting idea, PAC
-
-**Period with modulation**:
-- Antecedent: In tonic, ends HC
-- Consequent: Begins tonic, modulates to dominant, ends PAC in new key
-
-**Contrasting period** (rare):
-- Antecedent: Basic idea A, contrasting idea, HC
-- Consequent: Basic idea B (different), contrasting idea, PAC
-
-### From Repertoire
-
-**Clear period examples**:
-- **Mozart, Clarinet Concerto, III**: Opening period with HC-PAC pattern
-- **Schubert, "Du bist die Ruh"**: Periods throughout (though also has repeated phrases)
-- **Mozart, Piano Sonatas**: Numerous periods in slow movements
-- **Haydn, String Quartets**: Periods often open themes
-- **Folk songs**: "Twinkle Twinkle Little Star," "Mary Had a Little Lamb" are periods
-
-**Periods in popular music**:
-- Many pop song verses are periods
-- Hymns frequently use period structure
-- Simple song forms often built from periods
-
-## Related Concepts
-
-- **Prerequisite**: phrase, cadence, basic-idea, contrasting-idea
-- **Leads to**: compound-period, double-period, modulating-period, parallel-contrasting-period
-- **See also**: sentence
-
-## Common Confusions
-
-- Period vs. sentence: Period is TWO phrases; sentence is ONE phrase
-- Period vs. repeated phrase: In period, consequent ends with stronger cadence than antecedent; in repeated phrase, both end with same cadence
-- Not every two phrases make a period—requires weak-to-strong cadential relationship
-- The consequent must begin similarly to antecedent (in parallel period) but its contrasting idea must differ
-- "Parallel" refers to how the phrases begin, not to parallel motion in voice leading
-- Periods are archetypes—actual phrases may be "periodic" without fitting the archetype exactly
-- A period can modulate, but it doesn't have to
-- The contrasting ideas in antecedent and consequent are almost always different (due to different cadences)
-- Not all question-answer structures are periods—the specific formal characteristics must be present
-- Antecedent and consequent are components of periods, not independent concepts
-- Each phrase in a period has basic idea + contrasting idea (not presentation + continuation like sentence)
-
-## Source Reference
-
-Open Music Theory, Part III, Chapter 2: "The Phrase, Archetypes, and Unique Forms"
+# Verification Notes
+- Re-extracted from v2 card; preserved: question-answer metaphor, parallel vs. contrasting period distinction
+- Confidence: HIGH -- explicitly defined with examples

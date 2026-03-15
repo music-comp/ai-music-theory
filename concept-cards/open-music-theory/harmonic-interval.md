@@ -1,85 +1,91 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Harmonic Interval
-category: theory
-source: Open Music Theory
-chapter: "Intervals"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: harmonic-interval
+
+# === CLASSIFICATION ===
+category: intervals
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Intervals"
+chapter_number: 16
+pdf_page: null
+section: "Size"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval
+extends:
+  - interval
+related:
+  - melodic-interval
+  - consonance
+  - dissonance
+contrasts_with:
+  - melodic-interval
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a harmonic interval?"
+  - "How does a harmonic interval differ from a melodic interval?"
 ---
 
-# Harmonic Interval
+# Quick Definition
 
-## Quick Definition
+An interval in which the two notes are played or sung simultaneously.
 
-An interval formed by two pitches sounded simultaneously (together at the same time), creating the foundation of harmony and vertical sonorities.
+# Core Definition
 
-## Formal Definition
+A **harmonic interval** is an interval whose two notes sound at the same time. Harmonic intervals are the building blocks of chords and harmonic progressions. They are classified as consonant or dissonant based on their perceived stability.
 
-A **harmonic interval** is the pitch distance between two notes performed simultaneously. The two pitches sound together, creating a vertical sonority perceived as a single harmonic unit.
+# Prerequisites
 
-**Characteristics**:
-- Notes sound at the same time (simultaneous, not sequential)
-- Create vertical sonority (harmony)
-- Measured the same way as melodic intervals (size + quality)
-- Foundation of chords and harmonic progressions
+- **Interval**: the concept being specialized
 
-**Measurement**: Same as melodic intervals (unison, second, third, fourth, fifth, sixth, seventh, octave) with qualities (perfect, major, minor, augmented, diminished).
+# Key Properties
 
-**Perceptual qualities**:
-- **Consonant intervals**: stable, pleasing sound (P1, m3, M3, P5, m6, M6, P8)
-- **Dissonant intervals**: tense, unstable sound (m2, M2, tritone, m7, M7)
-- Consonance/dissonance more pronounced harmonically than melodically
+- Notes sound simultaneously
+- Form the basis of chords and harmony
+- Classified as consonant or dissonant
+- Same identification method as all intervals (size + quality)
 
-**Contrast with melodic intervals**: Harmonic = simultaneous; melodic = successive
+# Construction / Recognition
 
-## Musical Context
+Harmonic intervals appear as vertically stacked notes on the staff (same horizontal position, different vertical positions).
 
-Harmonic intervals form the basis of harmony:
-- Building blocks of chords (triads, seventh chords)
-- Create harmonic color and tension/release
-- Consonance and dissonance drive harmonic motion
-- Interval quality affects chord quality (major vs. minor third)
-- Harmonic intervals create vertical sonorities in polyphonic music
+# Context & Application
 
-Perfect consonances (P5, P8) sound most stable. Imperfect consonances (3rds, 6ths) sound pleasing but less stable. Dissonances create tension requiring resolution.
+Harmonic intervals define the sound of chords. The quality of harmonic intervals (consonant or dissonant) drives harmonic motion and voice leading.
 
-## Examples
+# Examples
 
-### Basic
+- Two notes played at the same time on a piano = harmonic interval
+- A C and G sounding together = harmonic perfect fifth
 
-**Consonant harmonic intervals** (played together):
-- C and E together = major third (M3), consonant
-- C and G together = perfect fifth (P5), very consonant
-- C and A together = major sixth (M6), consonant
+# Relationships
 
-**Dissonant harmonic intervals**:
-- C and D♭ together = minor second (m2), very dissonant
-- C and F♯ together = augmented fourth/tritone (A4), dissonant
-- C and B♭ together = minor seventh (m7), dissonant
+- **Extends**: interval
+- **See also**: melodic-interval, consonance, dissonance, chord
 
-**In notation**: Two notes vertically aligned on staff, performed simultaneously
+# Common Confusions
 
-### From Repertoire
+- Harmonic intervals sound simultaneously; melodic intervals sound sequentially
 
-Gregorian chant uses harmonic perfect fifths and octaves (organum). Bach chorales feature carefully treated dissonant intervals resolving to consonances. Jazz voicings exploit colorful dissonant intervals (minor seconds, major sevenths). Power chords in rock music use perfect fifths (P5).
-
-## Related Concepts
-
-- **Prerequisite**: pitch, interval, staff, simultaneous-ncts
-- **Leads to**: chord, consonance, dissonance, triad, seventh-chord
-- **See also**: melodic-interval, intervals, interval-quality
-
-## Common Confusions
-
-- Harmonic vs. melodic interval: harmonic = notes together; melodic = notes in sequence
-- Same measurement system for both types (M3 harmonic = M3 melodic in size/quality)
-- Harmonic consonance ≠ melodic consonance (same interval, different perceptual quality)
-- Perfect fourth: consonant melodically, but can be dissonant harmonically (context-dependent)
-- Harmonic interval ≠ harmony (interval = two notes; harmony = broader concept)
-- Vertical alignment on staff indicates harmonic interval, not melodic
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 16: "Intervals"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: simultaneous sounding, consonance/dissonance classification.

@@ -1,57 +1,101 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Pitch
-category: theory
-source: Open Music Theory
-chapter: "Notation of Notes, Clefs, and Ledger Lines"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: pitch
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Notation of Notes, Clefs, and Ledger Lines"
+chapter_number: 2
+pdf_page: null
+section: "Clefs"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - pitch-class
+  - octave-equivalence
+  - staff
+  - clef
+  - note
+  - aspn
+contrasts_with:
+  - pitch-class
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is pitch?"
+  - "How is pitch represented in Western notation?"
+  - "What determines whether a pitch sounds higher or lower?"
 ---
 
-# Pitch
-
-## Quick Definition
+# Quick Definition
 
 The perceived highness or lowness of a sound, determined by the frequency of its sound wave.
 
-## Formal Definition
+# Core Definition
 
-**Pitch** is one of the two primary features represented in Western musical notation (the other being rhythm). Physically, pitch is determined by the frequency of a sound wave: higher pitches have shorter wavelengths and higher frequencies, while lower pitches have longer wavelengths and lower frequencies.
+**Pitch** is one of the two primary features represented in Western musical notation (the other being rhythm). Physically, pitch is determined by the frequency of a sound wave: higher pitches have shorter wavelengths and higher frequencies, while lower pitches have longer wavelengths and lower frequencies. In Western notation, pitch is represented vertically on a staff (y-axis), with higher positions indicating higher pitches. Specific pitches are designated using the letter names A through G, which repeat in cycles due to octave equivalence.
 
-In Western notation, pitch is represented vertically on a staff (y-axis), with higher positions indicating higher pitches and lower positions indicating lower pitches. Specific pitches are designated using letter names A through G, which repeat in cycles.
+# Prerequisites
 
-In pitch-class contexts, pitches are represented as integers 0-11 (C=0, C♯/D♭=1, ..., B=11). When octave matters, scientific pitch notation is used (e.g., C4 = middle C).
+None -- pitch is a foundational perceptual concept.
 
-## Musical Context
+# Key Properties
 
-Pitch is fundamental to melody and harmony. Musicians use spatial metaphors to describe pitch relationships: notes are said to be "higher" or "lower." The ability to perceive and reproduce specific pitches is essential for musical performance and composition.
+- Determined by frequency of sound wave (measured in Hz)
+- Represented vertically on a staff (higher = higher pitch)
+- Designated by letter names A, B, C, D, E, F, G (repeating cyclically)
+- Specific pitches identified using ASPN (e.g., C4 = middle C at ~261.63 Hz)
+- Spatial metaphors ("higher" and "lower") are culturally constructed, not universal
 
-Cultural note: These spatial metaphors vary across time and culture. For example, some ancient Greek theorists placed higher-sounding notes visually lower, based on their experience with string instruments.
+# Construction / Recognition
 
-## Examples
+Pitch is perceived aurally as the highness or lowness of a sound. On a staff, pitch is read from the vertical position of a notehead relative to the clef.
 
-### Basic
+# Context & Application
 
-- Middle C (C4) has a frequency of approximately 261.63 Hz
-- The A above middle C (A4) has a frequency of 440 Hz (standard tuning reference)
-- Moving from C4 to C5 doubles the frequency (octave relationship)
+Pitch is fundamental to melody and harmony. The standard tuning reference is A4 = 440 Hz. Moving from one pitch to the same letter name an octave higher doubles the frequency. Ancient Greek theorists sometimes placed higher-sounding notes visually lower, illustrating that pitch notation conventions are culturally specific.
 
-### From Repertoire
+# Examples
 
-Any melody consists of a sequence of pitches over time. The opening of Beethoven's Fifth Symphony uses repeated pitches (three G's followed by an E♭).
+- Middle C (C4) = approximately 261.63 Hz
+- A4 = 440 Hz (standard tuning reference)
+- C4 to C5 doubles the frequency (octave relationship)
 
-## Related Concepts
+# Relationships
 
-- **Leads to**: interval, scale, chord
-- **See also**: pitch-class, octave-equivalence, staff, clef, note
+- **Leads to**: interval, scale, chord, melody
+- **See also**: pitch-class, octave-equivalence, aspn
 
-## Common Confusions
+# Common Errors
 
-- Pitch vs. note: A pitch is a specific frequency; a note on a staff indicates both pitch AND duration
-- Pitch vs. pitch class: Pitch includes octave information (C4 vs. C5); pitch class abstracts away octave (all C's belong to pitch class 0)
-- The terms "higher" and "lower" are metaphorical and culturally specific, not inherent to sound itself
+- Confusing pitch with volume (loudness) -- pitch is highness/lowness, not loudness/softness
 
-## Source Reference
+# Common Confusions
+
+- Pitch vs. note: a pitch is a specific frequency; a note on a staff indicates both pitch AND duration
+- Pitch vs. pitch class: pitch includes octave information (C4 vs. C5); pitch class abstracts away octave (all Cs belong to the same pitch class)
+- The terms "higher" and "lower" are metaphorical and culturally specific, not inherent properties of sound
+
+# Source Reference
 
 Open Music Theory, Part I, Chapter 2: "Notation of Notes, Clefs, and Ledger Lines"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: frequency examples, pitch vs. note vs. pitch-class distinctions, cultural note about Greek notation.

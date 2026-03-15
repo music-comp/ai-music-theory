@@ -1,267 +1,93 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Chromatic Modulation
-category: theory
-source: Open Music Theory
-chapter: "Modulation Techniques"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: chromatic-modulation
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: chromatic-harmony
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Chromatic Modulation"
+chapter_number: 6
+pdf_page: null
+section: "V.6"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "enharmonic modulation"
+  - "common-tone modulation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - modal-mixture
+  - modulation
+  - pivot-chord
+extends:
+  - modulation
+related:
+  - chromatic-pivot-chord
+  - enharmonic-reinterpretation-diminished-seventh
+contrasts_with:
+  - diatonic-modulation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do you modulate to distantly related keys?"
+  - "How does mode mixture facilitate chromatic modulation?"
 ---
 
-# Chromatic Modulation
+# Quick Definition
+Chromatic modulation uses chromatic chords (especially from mode mixture) as pivot chords to modulate between distantly related keys. It also includes enharmonic reinterpretation of Ger+6 as V7 (or vice versa) and common-tone modulation between chromatic mediants.
 
-## Quick Definition
+# Core Definition
+When two keys are more than one accidental apart on the circle of fifths, diatonic pivot chords become scarce. Mode mixture expands available pivot chords: from C major, mixture chords from C minor enable modulation to Eb major (7 shared chords), Ab major (4), Bb major (3), and their relative minors. Works bidirectionally: diatonic chords in old key serve as mixture chords in new key (sharpward). Enharmonic reinterpretation: Ger+6 respelled as V7 modulates up a half step; V7 respelled as Ger+6 modulates down a half step. Secondary dominants extend this further. Common-tone modulation uses a shared pitch between chromatic mediants (keys a third apart): C shares C with Ab major, G with Eb major, E with both A major and E major.
 
-A modulation technique using chromatic chords (secondary dominants, augmented sixths, Neapolitan, or chromatic mediants) to pivot smoothly between keys—where a chromatic chord in the old key is reinterpreted as a chromatic or diatonic chord in the new key, enabling modulation between distantly related keys through shared chromatic sonorities rather than diatonic common chords, notated with dual analysis showing the chord's function in both keys, common in Romantic music for dramatic key changes and expressive shifts, and more flexible than common chord modulation by allowing access to remote tonal areas through chromatic pivot points.
+# Prerequisites
+- Modal mixture and borrowed chords
+- Pivot chord modulation technique
+- Circle of fifths relationships
 
-## Formal Definition
+# Key Properties
+1. Mode mixture expands pivot chord vocabulary for distant modulation
+2. Flatward: mixture chords in old key become diatonic in new key
+3. Sharpward: diatonic chords in old key become mixture chords in new key
+4. Ger+6 respelled as V7 modulates up half step (and vice versa)
+5. Diminished seventh: any of 4 notes as root, 4 possible resolutions
+6. Common-tone modulation: shared pitch connects chromatic mediants
+7. Chromatic mediants: keys a third apart sharing common tones
 
-**Chromatic modulation** is a modulation technique using a chromatic chord as the pivot between keys.
+# Context & Application
+Verdi, Rigoletto: A major to F major using iv as pivot. Brahms, Waltz Op. 39, No. 14: G major viio6 reinterpreted as iio6 (mixture) in E major. Modulation from Ab major to C major: vi in Ab becomes iv (mixture) in C major. Common-tone modulation is especially smooth for chromatic third relations.
 
-**Process**:
-1. **Old key established**: Original tonic confirmed
-2. **Chromatic pivot chord**: Non-diatonic chord in old key
-3. **Reinterpretation**: Pivot functions differently in new key
-4. **New key confirmed**: Cadence in new key
+# Examples
+**Example 1** (A major to F major): iv in A serves as pivot, becoming ii in F.
+**Example 2** (Brahms, Waltz Op. 39, No. 14): viio6 in G major becomes iio6 (mixture) in E major.
+**Example 3** (Common-tone): C and Ab major share common tone C; C and Eb major share G.
 
-**Key characteristics**:
-- **Chromatic pivot**: Secondary dominant, Aug6, Neapolitan, etc.
-- **Dual function**: Different analysis in each key
-- **Distant keys**: Enables modulation to remote keys
-- **Smooth transition**: Despite chromatic content
-- **Romantic idiom**: More common than Classical period
+# Relationships
+## Builds Upon
+- **modal-mixture** — Provides expanded chord vocabulary
+- **modulation** — Extends basic pivot-chord technique to distant keys
+## Related
+- **chromatic-pivot-chord** — The specific chord type used
+- **enharmonic-reinterpretation-diminished-seventh** — Diminished seventh respelling technique
 
-**Different from common chord modulation**: Uses chromatic chords, not diatonic
+# Common Confusions
+- **Confusion**: Chromatic modulation requires completely new techniques.
+  **Clarification**: It uses the same pivot-chord principle as diatonic modulation, just with an expanded chord vocabulary from mixture.
 
-## Types of Chromatic Pivots
+# Source Reference
+Open Music Theory, Part V: Chromaticism, Chapter 6: "Chromatic Modulation."
 
-**Secondary dominant pivot**:
-```
-C major: V⁷/V (D⁷)
-         =
-G major: V⁷ (D⁷)
-
-D⁷ is V⁷/V in C major (chromatic)
-D⁷ is V⁷ in G major (diatonic)
-Pivot enables C→G modulation
-```
-
-**Augmented sixth pivot**:
-```
-C major: Ger⁺⁶ (A♭-C-E♭-F#)
-         =
-G major: N⁶ or other chromatic chord
-
-Enharmonic reinterpretation possible
-Enables distant modulations
-```
-
-**Neapolitan pivot**:
-```
-A minor: N⁶ (B♭ major, first inversion)
-         =
-D minor: VI (B♭ major)
-
-N⁶ in A minor becomes diatonic VI in D minor
-Chromatic in one key, diatonic in other
-```
-
-**Chromatic mediant**:
-```
-C major: E♭ major (♭III, borrowed)
-         =
-E♭ major: I (tonic of new key)
-
-Direct shift to chromatic mediant key
-Dramatic effect
-```
-
-## Voice Leading
-
-**Secondary dominant pivot** (C major → G major):
-```
-C major: I    V⁷/V   
-         C    D⁷     
-              ↓
-              Reinterpretation
-              ↓
-G major:      V⁷    I
-              D⁷    G
-
-D⁷ analyzed in both keys
-Smooth chromatic voice leading
-```
-
-**Detailed voice leading**:
-```
-C: I     V⁷/V  |
-   C-E-G  D-F#-A-C
-               ↓
-               V⁷/V = V⁷
-               ↓
-G:        V⁷    I
-          D-F#-A-C  G-B-D
-
-F# signals departure from C (V⁷/V)
-Same chord functions as V⁷ in G
-Cadence confirms G major
-```
-
-## Chromatic Modulation vs. Other Types
-
-**vs. Common chord modulation**:
-- **Common chord**: Diatonic pivot, closely related keys
-- **Chromatic**: Chromatic pivot, any keys including distant
-
-**vs. Direct/abrupt modulation**:
-- **Direct**: No pivot, sudden shift
-- **Chromatic**: Smooth pivot via chromatic chord
-
-**vs. Enharmonic modulation**:
-- **Enharmonic**: Respells chord (e.g., Ger⁺⁶ = V⁷)
-- **Chromatic**: May involve enharmonics but broader category
-
-## Distant Key Relationships
-
-**Enables modulation to**:
-- **Chromatic mediants**: C → E, C → E♭, C → A♭, C → A
-- **Remote keys**: Keys with many accidental differences
-- **Tritone relationships**: C → G♭/F#
-- **Parallel mode**: C major → C minor (via mixture)
-
-**More flexible than diatonic pivots**: Chromatic chords bridge larger tonal distances
-
-## Musical Context
-
-Chromatic modulation serves specific purposes:
-- **Distant modulations**: Access remote keys smoothly
-- **Dramatic effect**: More striking than diatonic modulation
-- **Romantic idiom**: Characteristic of 19th-century harmony
-- **Expressive range**: Wider tonal palette
-- **Chromatic voice leading**: Smooth despite distance
-- **Flexibility**: Not limited to closely related keys
-- **Secondary dominants**: Most common chromatic pivot
-- **Enharmonic possibilities**: Augmented sixth chords enable respellings
-
-Essential technique for Romantic-era tonal exploration.
-
-## Examples
-
-### Basic
-
-**Secondary dominant pivot** (C → G):
-```
-C major: I  -  IV  -  V⁷/V  |
-         C     F      D⁷    
-                      ↓
-                    V⁷/V = V⁷
-                      ↓
-G major:                   | V⁷  -  I
-                           | D⁷     G
-
-D⁷ is V⁷/V in C (chromatic)
-D⁷ is V⁷ in G (diatonic dominant)
-Smooth modulation via chromatic pivot
-```
-
-**Analytical notation**:
-```
-C:  I    IV   V⁷/V |
-               ────
-               V⁷/V = V⁷
-               ────
-G:                 | V⁷   I
-
-Bracket or alignment shows pivot
-Dual analysis provided
-```
-
-**Neapolitan pivot** (A minor → D minor):
-```
-Am: i  -  iv  -  N⁶  |
-    Am    Dm    B♭/D 
-               ↓
-              N⁶ = VI
-               ↓
-Dm:                 | VI  -  V  -  i
-                    | B♭     A    Dm
-
-B♭ is N⁶ (chromatic) in A minor
-B♭ is VI (diatonic) in D minor
-Enables smooth modulation
-```
-
-**Chromatic mediant modulation** (C → E♭):
-```
-C major: I  -  V  -  ♭III |
-         C     G     E♭   
-                     ↓
-                   ♭III = I
-                     ↓
-E♭ major:                | I   -  V  -  I
-                         | E♭     B♭   E♭
-
-E♭ is ♭III (borrowed) in C major
-E♭ becomes tonic of new key
-Direct, dramatic shift
-```
-
-**Augmented sixth pivot** (enharmonic):
-```
-C major: I  -  Ger⁺⁶  |
-         C     A♭-C-E♭-F#
-                ↓
-              Ger⁺⁶ = V⁷ (enharmonically)
-                ↓
-F# major:            | V⁷  -  I
-                     | C#⁷    F#
-
-Ger⁺⁶ respelled enharmonically as C#⁷ (V⁷/F#)
-Enables distant modulation C → F#
-```
-
-### From Repertoire
-
-**Beethoven, Piano Sonatas**: Chromatic modulations in development sections, uses secondary dominants as pivots to explore remote keys.
-
-**Chopin, Preludes and Nocturnes**: Chromatic mediants and secondary dominant pivots, enables dramatic tonal shifts typical of Romantic style.
-
-**Schubert, Songs and Piano works**: Famous for chromatic third relationships, modulations via chromatic pivots create expressive harmonic color.
-
-**Wagner, Operas**: Extensive chromatic modulation, uses augmented sixths, secondary dominants, enables fluid tonal motion.
-
-**Brahms, Symphonies and chamber music**: Sophisticated chromatic pivots, modulations to distant keys through chromatic chords.
-
-## Related Concepts
-
-- **Prerequisite**: chromatic-harmony, secondary-dominant, modulation, augmented-sixth-chord, neapolitan-sixth
-- **Leads to**: enharmonic-modulation, direct-modulation, chromatic-modulation
-- **See also**: common-chord-modulation, pivot-chord
-
-## Common Confusions
-
-- Chromatic modulation = modulation using **chromatic chord** as pivot
-- Pivot chord is non-diatonic (chromatic) in old key
-- May be diatonic or chromatic in new key
-- Enables modulation to **distant keys** (not just closely related)
-- Different from common chord modulation (which uses diatonic pivots)
-- Most common: **Secondary dominant** as pivot (e.g., V⁷/V)
-- Other pivots: Augmented sixths, Neapolitan, borrowed chords
-- Dual analysis: Shows function in both keys
-- Chromatic voice leading creates smooth transition
-- Romantic idiom (more common than in Classical period)
-- Can involve enharmonic respelling (e.g., Ger⁺⁶ = V⁷)
-- Not same as direct modulation (chromatic mod has pivot)
-- More flexible than diatonic pivots (wider range of keys)
-- Chromatic mediants common (C → E♭, C → E, etc.)
-- Secondary dominants most common chromatic pivot
-- Confirms new key with cadence (V-I in new key)
-- Smooth despite chromatic content and tonal distance
-- Expands tonal palette beyond closely related keys
-- Essential for Romantic harmonic exploration
-
-## Source Reference
-
-Open Music Theory, Part IV: "Chromatic Harmony and Modulation"
-Open Music Theory, Part IV: "Modulation Techniques: Chromatic Pivots"
+# Verification Notes
+- Re-extracted from source chapter 05-06; merged with existing v2 card
+- Preserved v2 repertoire examples and bidirectional explanation
+- Confidence rationale: High — clear conceptual framework in source

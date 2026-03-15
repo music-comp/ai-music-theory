@@ -1,62 +1,90 @@
 ---
-concept: Tresillo
-category: theory
-source: Open Music Theory
-chapter: "Rhythm and Meter in Pop Music"
-pdf_page: null
-chapter_number: 7
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Tresillo and Pop Rhythm
+slug: tresillo
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: pop-rhythm
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Rhythm and Meter in Pop Music"
+chapter_number: 1
+pdf_page: null
+section: "VII.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "3+3+2"
+  - "double tresillo"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - simple-meter
+  - syncopation
+extends: []
+related:
+  - swing-eighths
+  - backbeat
+contrasts_with:
+  - triplet
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the relationship between tresillo and African/Cuban traditions?"
+  - "How do you distinguish tresillo from real triplets?"
 ---
 
-## Quick Definition
+# Quick Definition
+The tresillo divides a beat (or two beats) into three nearly-equal groups: 3+3+2 (e.g., dotted eighth + dotted eighth + eighth note over a half note). Drawing on African and Cuban musical traditions, it creates a "fake triplet" feel while maintaining simple-meter division. The double tresillo doubles the pattern: 3+3+3+3+2+2. Straight syncopation shifts notes early by half their value.
 
-A rhythmic pattern that divides two beats into three nearly-equal groups in a 3+3+2 pattern, creating a "fake triplet" feel while maintaining simple meter.
+# Core Definition
+Pop/rock syncopation typically takes equal-duration notes, halves the first, and shifts remaining notes early by that half-value (straight syncopation). The tresillo is a different type: it divides a unit into nearly-even groups (3+3+2), approximating a triplet within simple meter. Also possible: 3+2+3 and 2+3+3 groupings. The double tresillo (3+3+3+3+2+2, per Biamonte 2014) doubles the pattern over a full measure. Straight syncopation operates at beat level (shift by division), division level (shift by subdivision), or two-beat level (shift by beat).
 
-## Formal Definition
+# Prerequisites
+- Simple meter and time signatures
+- Syncopation concepts
 
-The tresillo is a rhythmic pattern rooted in African and Cuban musical traditions that divides a unit (typically a half note or two beats) into three almost-equal groups: 3+3+2 (two dotted eighth notes followed by an eighth note in simple meter). This approximates a triplet division while maintaining the simple subdivision by 2, 4, or 8. The pattern creates syncopation through unequal groupings rather than through displacement.
+# Key Properties
+1. Tresillo: 3+3+2 grouping (dotted eighth + dotted eighth + eighth)
+2. "Fake triplet" — approximates triplet in simple meter
+3. Rooted in African and Cuban musical traditions
+4. Extremely common in pop, even outside Afro-Cuban styles
+5. Double tresillo: 3+3+3+3+2+2 (Biamonte 2014)
+6. Other groupings possible: 3+2+3, 2+3+3
+7. Straight syncopation: shifting notes early by half their value
 
-## Musical Context
+# Context & Application
+"Despacito" (Luis Fonsi/Daddy Yankee, 2016): tresillo in bass and bass drum after opening cuatro solo. "Cathedrals" (Jump, Little Children, 1998): juxtaposes real quarter-note triplets (violins) with tresillo accent pattern (guitar). "Electric Co." (U2, 1980): guitar plays double tresillo (3+3+3+3+2+2 in sixteenths) while kick drum plays straight quarters.
 
-The tresillo is extremely common in pop/rock music, even in styles that do not otherwise draw on Afro-Cuban traditions. Its pervasiveness stems from its ability to create rhythmic interest and forward drive while remaining compatible with the 4/4 time signature dominant in popular music.
+# Examples
+**Example 1** (Tresillo): Dotted eighth + dotted eighth + eighth note over half-note span = 3+3+2.
+**Example 2** (Double tresillo): 3+3+3+3+2+2 in sixteenth notes over full measure.
 
-### Variations
+# Relationships
+## Builds Upon
+- **simple-meter** — Tresillo operates within simple meter
+- **syncopation** — A specific type of nearly-even syncopation
+## Related
+- **swing-eighths** — Another uneven rhythmic practice (jazz)
+## Contrasts With
+- **triplet** — True triplet divides evenly into 3; tresillo is 3+3+2 (nearly even)
 
-- **Standard tresillo**: 3+3+2
-- **Alternate rotations**: 3+2+3 and 2+3+3
-- **Double tresillo**: 3+3+3+3+2+2 (the pattern doubled across four beats)
+# Common Confusions
+- **Confusion**: Tresillo is the same as a triplet.
+  **Clarification**: Tresillo (3+3+2) keeps simple-meter subdivision; triplets (3+3+3) divide evenly. Take care to distinguish them aurally.
 
-## Examples
+# Source Reference
+Open Music Theory, Part VII: Popular Music, Chapter 1: "Rhythm and Meter in Pop Music."
 
-### Basic Example
-
-In 4/4 time across two beats:
-- Attack on beat 1
-- Attack on the "and" of beat 1 (tied from the dotted eighth)
-- Attack on beat 2
-- Attack halfway through beat 2 (the final eighth note)
-
-Counted: 1 . . (2) . (and) . .
-
-### From Repertoire
-
-- "Despacito" by Luis Fonsi and Daddy Yankee (2016) - tresillo pattern in bass and bass drum after the cuatro solo
-- "Cathedrals" by Jump, Little Children (1998) - juxtaposes tresillo with actual triplets
-- "Electric Co." by U2 (1980) - guitar plays double tresillo (3+3+3+3+2+2) against straight quarter-note kick drum
-
-## Related Concepts
-
-- Straight syncopation
-- Triplet
-- Hemiola
-- Afro-Cuban rhythm
-
-## Common Confusions
-
-- **Tresillo vs. triplet**: Tresillo maintains the simple subdivision (eighth notes, sixteenths) in a 3+3+2 grouping; triplets actually divide the beat into three equal parts. The tresillo only approximates the triplet feel.
-- **Tresillo vs. straight syncopation**: Tresillo divides time into unequal groups (3+3+2); straight syncopation shifts equal-duration notes by half their value.
-
-## Source Reference
-
-Open Music Theory, Part VII: Popular Music, Chapter 1: "Rhythm and Meter in Pop Music"
+# Verification Notes
+- Re-extracted from source chapter 07-01; merged with existing v2 card
+- Preserved Biamonte reference and repertoire examples
+- Confidence rationale: High — clear source treatment with musical examples

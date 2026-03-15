@@ -1,111 +1,93 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Integer Notation
-category: theory
-source: Open Music Theory
-chapter: "Pitch and Pitch Class"
-pdf_page: null
-chapter_number: 8
-unit: null
+slug: integer-notation
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: pitch-systems
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Pitch and Pitch Class"
+chapter_number: 8
+pdf_page: null
+section: "VIII.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "pitch-class integers"
+  - "pc integers"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch-class
+extends: []
+related:
+  - interval-class
+  - pitch-class-set
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is integer notation in set theory?"
+  - "How are pitch classes numbered 0-11?"
+  - "Why use numbers instead of letter names for pitches?"
 ---
 
-# Integer Notation
+# Quick Definition
+A system for representing pitch classes as integers 0-11, where C=0, C-sharp/D-flat=1, D=2, and so on chromatically, eliminating the ambiguity of letter names and enharmonic spellings for post-tonal analysis.
 
-## Quick Definition
+# Core Definition
+Integer notation assigns a number from 0 to 11 to each of the twelve pitch classes: 0=C, 1=C-sharp/D-flat, 2=D, 3=D-sharp/E-flat, 4=E, 5=F, 6=F-sharp/G-flat, 7=G, 8=G-sharp/A-flat, 9=A, 10=A-sharp/B-flat, 11=B. Operations use mod-12 arithmetic (numbers wrap around at 12, like a clock face). Because enharmonic equivalents share the same integer (G-sharp and A-flat are both 8), the system avoids the ambiguity of letter names in non-tonal contexts. Integer notation emerged in the mid-20th century as theorists (particularly Allen Forte and Milton Babbitt) developed systematic methods for analyzing atonal and twelve-tone music.
 
-A system for representing pitch classes as integers 0-11, where C=0, C#/Db=1, D=2, and so on chromatically. This notation eliminates the ambiguity of letter names and enharmonic spellings, making it ideal for post-tonal analysis.
+# Prerequisites
+- Pitch class (understanding the grouping of pitches by octave and enharmonic equivalence)
 
-## Formal Definition
+# Key Properties
+1. Twelve integers: 0 through 11, one per pitch class, with C=0
+2. Arithmetic is mod 12 (e.g., 11+3=14 mod 12=2; 2-5=-3 mod 12=9)
+3. Enharmonic equivalents share the same integer
+4. Enables mathematical operations: transposition (Tn = add n), inversion (In = subtract from n)
+5. Visualized on the clock face with 0 at 12 o'clock, proceeding clockwise
+6. Each pitch class has exactly one unambiguous integer name
 
-**Integer notation** assigns a number from 0 to 11 to each of the twelve pitch classes:
+# Context & Application
+Letter names work well for tonal music where spelling reflects function (G-sharp as leading tone vs. A-flat as upper neighbor). In post-tonal music, tonal function is absent, seven letter names inadequately represent twelve pitch classes, and mathematical relationships become analytically significant. The clock face diagram is the standard visualization, reinforcing the cyclical nature of pitch-class space.
 
-| Integer | Pitch Class |
-|---------|-------------|
-| 0 | C (B#, Dbb) |
-| 1 | C#, Db |
-| 2 | D (Cx, Ebb) |
-| 3 | D#, Eb |
-| 4 | E (Fb) |
-| 5 | F (E#) |
-| 6 | F#, Gb |
-| 7 | G (Fx) |
-| 8 | G#, Ab |
-| 9 | A |
-| 10 | A#, Bb |
-| 11 | B (Cb) |
+# Examples
+**Example 1**: Converting letter names -- E=4, F-sharp=6, B-flat=10, A-flat=8.
 
-**Mathematical properties**:
-- Operations use **mod 12 arithmetic** (numbers "wrap around" at 12, like a clock)
-- 11 + 3 = 14 mod 12 = 2
-- 2 - 5 = -3 mod 12 = 9
+**Example 2**: Mod 12 arithmetic -- 7+8=15=3 (mod 12); 3-7=-4=8 (mod 12); 0-1=-1=11 (mod 12).
 
-**Advantages over letter names**:
-- No enharmonic ambiguity (G# and Ab are both simply "8")
-- Enables mathematical operations (transposition, inversion)
-- Each pitch class has exactly one name
-- Twelve pitch classes match twelve integers (0-11)
+**Example 3** (Schoenberg, "Nacht" from Pierrot lunaire): The recurring motive E-G-E-flat can be notated as [4, 7, 3], facilitating tracking of transpositions: T5 yields [9, 0, 8] (A-C-A-flat).
 
-## Musical Context
+# Relationships
+## Builds Upon
+- **pitch-class** -- Integer notation is the numbering system for pitch classes
+## Related
+- **interval-class** -- Intervals measured using integer semitones
+- **pitch-class-set** -- Collections represented as sets of integers
 
-Letter names work well for tonal music where spelling reflects function (G# as leading tone vs. Ab as upper neighbor). But in post-tonal music:
+# Common Confusions
+- **Confusion**: 0 represents A (as in some MIDI systems)
+  **Clarification**: In set theory, 0 always represents C
+- **Confusion**: Integers represent specific pitches
+  **Clarification**: They represent pitch classes -- C4 and C5 are both pc 0
+- **Confusion**: 10 and 11 are problematic two-digit numbers
+  **Clarification**: Some texts use T and E (or A and B) for compactness, but 10 and 11 are standard
 
-1. Tonal function is absent, so spelling is arbitrary
-2. Seven letter names inadequately represent twelve pitch classes
-3. Mathematical relationships become analytically significant
+# Source Reference
+Open Music Theory, Part VIII, Chapter 1: "Pitch and Pitch Class," section on Integer Notation.
 
-Integer notation emerged in the mid-20th century as theorists (particularly Allen Forte and Milton Babbitt) developed systematic methods for analyzing atonal and twelve-tone music.
-
-The **clock face diagram** is a common visualization: pitch classes arranged like hours on a clock (0=12 o'clock, moving clockwise). This image reinforces the cyclical nature of pitch-class space and mod 12 arithmetic.
-
-## Examples
-
-### Basic
-
-**Converting letter names to integers**:
-```
-C  -> 0     F# -> 6     Bb -> 10
-C# -> 1     G  -> 7     B  -> 11
-Db -> 1     Ab -> 8
-D  -> 2     A  -> 9
-```
-
-**A melody in integer notation**:
-```
-Notes:  E  - F  - G# - A  - C
-Staff:  E4 - F4 - G#4 - A4 - C5
-PC int: 4  - 5  - 8  - 9  - 0
-```
-
-**Mod 12 arithmetic examples**:
-```
-7 + 8 = 15 = 3 (mod 12)
-3 - 7 = -4 = 8 (mod 12)
-0 - 1 = -1 = 11 (mod 12)
-```
-
-### From Repertoire
-
-**Schoenberg, "Nacht" from Pierrot lunaire**: The recurring motive E-G-Eb can be notated as [4, 7, 3]. This facilitates tracking transpositions: T5 yields [9, 0, 8] (A-C-Ab).
-
-**Webern, Concerto Op. 24**: The opening row can be expressed entirely in integers, revealing the derived set structure: the row is built from four transformations of a single trichord.
-
-**Bartok, "Subject and Reflection"**: Integer notation reveals that passages in both hands share pitch-class set content related by transposition or inversion.
-
-## Related Concepts
-
-- **Prerequisite**: pitch-class, enharmonic-equivalence, mod-12-arithmetic
-- **Leads to**: pitch-class-set, ordered-pitch-class-interval, transposition-operation, inversion-operation
-- **See also**: normal-order, interval-class
-
-## Common Confusions
-
-- **C=0, not A**: Unlike some MIDI systems, set theory places C at 0
-- **Integers represent pitch classes, not pitches**: C4 and C5 are both pc 0
-- **10 and 11 are single digits conceptually**: Some texts use T and E (or A and B) to avoid two-digit numbers in sets
-- **Mod 12 means "remainder when divided by 12"**: Negative numbers wrap around (e.g., -3 mod 12 = 9)
-- **Integer notation is not merely "shorthand"**: It enables mathematical operations that letter names cannot support cleanly
-- **The clock face is pitch-class space, not pitch space**: It has no vertical (octave) dimension
-
-## Source Reference
-
-Open Music Theory, Part VIII, Chapter 1: "Pitch and Pitch Class"
+# Verification Notes
+- Definition source: Directly from 08-01 source chapter
+- Confidence rationale: High -- clearly defined with complete mapping in source
+- Preserved from v2: Integer-to-pitch mapping table, mod-12 examples, Schoenberg/Webern/Bartok repertoire references
+- Cross-reference status: Consistent with set theory quick reference sheet

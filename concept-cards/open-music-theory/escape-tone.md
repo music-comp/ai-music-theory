@@ -1,254 +1,109 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Escape Tone
-category: theory
-source: Open Music Theory
-chapter: "Non-Chord Tones and Embellishments"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: escape-tone
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: non-chord-tones
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Embellishing Tones"
+chapter_number: 4
+pdf_page: null
+section: "Category 2: Embellishing tones that involve a leap"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "ET"
+  - "echappee"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - embellishing-tone
+extends:
+  - embellishing-tone
+related:
+  - appoggiatura
+contrasts_with:
+  - appoggiatura
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is an escape tone?"
+  - "How does an escape tone differ from an appoggiatura?"
 ---
 
-# Escape Tone
+# Quick Definition
 
-## Quick Definition
+An escape tone is an embellishing tone approached by step and left by leap in the opposite direction, typically occurring on a weaker part of the beat and most commonly resolving downward.
 
-A non-chord tone approached by step from a chord tone that escapes by leap (typically upward) to another chord tone or the next harmony—creating the melodic pattern of stepwise approach followed by leap away, usually on a weak beat as an unaccented embellishment, with the characteristic "step in, leap out" motion that distinguishes it from the appoggiatura's opposite "leap in, step out" pattern, adding melodic interest and energy through its unexpected leaping departure.
+# Core Definition
 
-## Formal Definition
+**Escape tones** (ET) are *approached by step and left by leap* in the opposite direction (OMT, Ch. IV.4). They belong to Category 2 (embellishing tones involving a leap). The escape tone typically occurs on a weaker part of the beat than its surrounding notes. It is more common for escape tones to be left by motion downward than upward.
 
-**Escape tone** (ET, E, or sometimes échappée) is a non-chord tone that:
+# Prerequisites
 
-**Characteristics**:
-- Approached by **step** from chord tone
-- Left by **leap** (usually upward)
-- Creates pattern: **CT → step → ET → leap**
-- Usually on **weak beat** (unaccented)
-- Brief duration
-- "Escapes" by leap rather than resolving by step
+- **Embellishing tone** — Escape tone is one specific type of embellishing tone
 
-**Pattern**:
-```
-Chord tone → STEP → ET (non-chord tone, weak beat)
-                     ↓
-                    LEAP to next note (often chord tone)
-```
+# Key Properties
 
-**Alternative name**: Échappée (French), meaning "escape"
+1. Approached by STEP
+2. Left by LEAP in the opposite direction
+3. Typically on a WEAKER part of the beat
+4. More commonly left by downward motion
+5. Reverse pattern of the appoggiatura (step-leap vs. leap-step)
 
-**Function**: Melodic embellishment, adds energy through leaping departure
+# Construction / Recognition
 
-## Escape Tone Patterns
+## To Identify:
+1. Find a non-chord tone on a relatively weak beat
+2. Check: was it approached by STEP?
+3. Check: is it left by LEAP in the opposite direction?
+4. If yes: escape tone
 
-**Standard escape tone** (step up, leap up):
-```
-     I              V
-     C → D (step) → G (leap up 4th)
-         ↑
-        ET
+# Context & Application
 
-D approached by step from C
-D escapes by leap to G
-"Step in, leap out"
-```
+- **Typical contexts**: Melodic embellishment in any voice
+- **Historical/stylistic notes**: Source illustrates with Margaret Casson, "The Cuckoo."
 
-**Step up, leap down**:
-```
-Chord tone → step up → ET → leap down
+# Examples
 
-Less common pattern
-Still "step in, leap out"
-```
+**Example 1** (OMT Ch. IV.4, Example 6): Escape tone in Margaret Casson, "The Cuckoo."
 
-**Step down, leap up**:
-```
-Chord tone → step down → ET → leap up
+**Example 2** (OMT Ch. IV.4, Example 8): Escape tones in a two-voice texture, (a) left by downward leap and (b) left by upward leap (less common).
 
-Also valid escape tone
-```
+# Relationships
 
-**In cadential approach**:
-```
-     V              I
-     B → C → E
-         ↑   ↑
-        ET  leap
+## Builds Upon
+- **Embellishing tone** — Escape tone is a leap-involving embellishing tone type
 
-C = escape tone (step from B, leap to E)
-Embellishes approach to tonic
-```
+## Contrasts With
+- **Appoggiatura** — Appoggiatura: leap then step; escape tone: step then leap
 
-## Voice Leading
+# Common Errors
 
-**Metric placement**:
-```
-Beat:    1    2    3    4
-Chord:   I         I/V
-         C    D    G
-         ↑    ↑    ↑
-         CT   ET   CT
+- **Error**: Confusing escape tone with appoggiatura
+  **Correction**: Check the order: step first = escape tone; leap first = appoggiatura
 
-Escape tone on weak beat (2)
-Brief duration
-Leaps away to next chord tone
-```
+# Common Confusions
 
-**"Step in, leap out"** (defining characteristic):
-```
-Previous note → STEP → ET
-                       ↓
-                      LEAP away
+- **Confusion**: Thinking escape tones and appoggiaturas are the same
+  **Clarification**: They are mirror patterns: appoggiatura (leap-step, strong beat), escape tone (step-leap, weak beat)
 
-Opposite of appoggiatura (leap in, step out)
-Opposite of passing tone (step in, step out)
-```
+# Source Reference
 
-**Direction**:
-- **Upward leap**: Most common (escape tone leaps up)
-- **Downward leap**: Less common but valid
-- **Step can be up or down**: Flexible
+Open Music Theory, Part IV, Chapter 4: "Embellishing Tones," Category 2. See Examples 6, 8.
 
-## Escape Tone vs. Other Non-Chord Tones
+# Verification Notes
 
-**vs. Appoggiatura**:
-- **Escape tone**: **Step in**, leap out
-- **Appoggiatura**: **Leap in**, step out
-- Opposite patterns
-
-**vs. Passing tone**:
-- **Escape tone**: Step in, **leap out**
-- **Passing**: Step in, **step out** (continues stepwise)
-
-**vs. Neighbor**:
-- **Escape**: Step away, **leap to different note**
-- **Neighbor**: Step away, **return to same note**
-
-**vs. Anticipation**:
-- **Escape**: Leaps away from harmony
-- **Anticipation**: Anticipates **next** harmony (stays)
-
-## Musical Context
-
-Escape tones serve specific purposes:
-- **Melodic energy**: Adds motion through leap
-- **Unexpected departure**: Escapes rather than resolving stepwise
-- **Weak beat embellishment**: Unaccented, light touch
-- **Fills melodic gaps**: Connects chord tones creatively
-- **Less common than other NCTs**: More specialized use
-- **Baroque and Classical**: Appears in active melodic lines
-- **Adds variety**: Breaks pattern of stepwise motion
-
-Escape tones are less common than passing or neighbor tones but add distinctive character.
-
-## Examples
-
-### Basic
-
-**Simple escape tone** (C major, I to V):
-```
-     I              V
-     C → D → G
-     ↑   ↑   ↑
-     CT  ET  CT
-
-C (chord tone of I)
-D (step up, escape tone)
-G (leap up 4th, chord tone of V)
-
-"Step in, leap out"
-```
-
-**Step down, leap up**:
-```
-     I              I
-     E → D → G
-     ↑   ↑   ↑
-     CT  ET  CT
-
-E (^3 of I)
-D (step down, non-chord tone)
-G (leap up, ^5 of I)
-
-Escape tone pattern
-```
-
-**In melodic phrase**:
-```
-mm. 1-2:  I         V
-Melody:   C - D - E - D - G
-          ↑   PT  ↑   ET ↑
-          CT      CT    CT
-
-D (second time) = escape tone
-Steps from E, leaps to G
-```
-
-**Cadential context**:
-```
-     V              I
-     D → E → C
-         ↑   ↑
-        ET  leap down
-
-E steps up from D (^2→^3 in key)
-E escapes by leap down to C
-Unusual but valid
-```
-
-**Chromatic escape tone**:
-```
-     I              V
-     C → C# → E
-         ↑    ↑
-        ET   leap
-
-C# = chromatic escape tone
-Steps up (chromatically)
-Leaps to E
-```
-
-### From Repertoire
-
-**Bach, Inventions**: Escape tones in melodic sequences, active contrapuntal lines with step-then-leap patterns.
-
-**Mozart, Piano Sonatas**: Occasional escape tones in rapid passages, step-leap motion adds variety to scalar runs.
-
-**Baroque melodic writing**: Escape tones appear in active vocal and instrumental lines, particularly in sequential passages.
-
-**Handel, Concerti Grossi**: Escape tones in solo passages, embellishes melodic lines with unexpected leaps.
-
-**Less common than passing/neighbor tones**: Escape tones are specialized embellishment, used selectively for particular effect.
-
-## Related Concepts
-
-- **Leads to**: harmonic-embellishment, nonharmonic-tones
-- **See also**: appoggiatura, passing-tone, neighbor-tone, anticipation, incomplete-neighbor
-
-## Common Confusions
-
-- Escape tone = **step in, leap out** (defining pattern)
-- Approached by **step** from chord tone
-- Left by **leap** (usually upward)
-- Occurs on **weak beat** (unaccented)
-- "Escape" = leaps away rather than resolving stepwise
-- Opposite of appoggiatura (appoggiatura = leap in, step out)
-- Different from passing tone (passing = step in, step out)
-- Different from neighbor (neighbor returns to same note)
-- Usually brief duration (passes quickly)
-- French name: "échappée" = escape
-- "ET" or "E" abbreviation in analysis
-- Less common than passing tones or neighbor tones
-- Leap usually upward, but downward also possible
-- Step approach can be upward or downward
-- Creates melodic energy through leap
-- Unaccented (weak beat placement)
-- Not prepared (unlike suspension)
-- Doesn't resolve by step (unlike appoggiatura or suspension)
-- Sometimes called "incomplete neighbor" (older terminology)
-- Adds variety to melodic embellishment
-- More common in active, contrapuntal textures
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Non-Chord Tones: Embellishing Tones"
+- Definition source: Direct from OMT Ch. IV.4
+- Confidence rationale: HIGH — explicit definition
+- Re-extraction notes: Re-extracted from v2 card; preserved: distinction from appoggiatura. Old card's extensive content trimmed to source material.

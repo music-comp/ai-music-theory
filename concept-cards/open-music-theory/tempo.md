@@ -1,100 +1,106 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tempo
-category: theory
-source: Open Music Theory
-chapter: "Other Aspects of Notation"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: tempo
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Other Aspects of Notation"
+chapter_number: 7
+pdf_page: null
+section: "Tempo"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "tempi"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - beat
+  - meter
+extends: []
+related:
+  - rhythm
+  - fermata
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is tempo?"
+  - "How is tempo indicated in a score?"
+  - "What do the common Italian tempo terms mean?"
 ---
 
-# Tempo
+# Quick Definition
 
-## Quick Definition
+The speed at which a composition is performed, indicated by metronome markings (beats per minute) or Italian terms (allegro, andante, adagio, etc.).
 
-The speed at which a musical composition is performed, indicated either precisely with metronome markings (beats per minute) or descriptively with Italian terms (allegro, andante, adagio, etc.).
+# Core Definition
 
-## Formal Definition
+**Tempo** (plural: tempi) specifies how fast or slow a composition is performed. Tempo is indicated either specifically by a **metronome marking** (e.g., quarter-note = 60, meaning 60 quarter notes per minute) or less specifically by **Italian terms**. Common Italian terms from slow to fast: grave, largo, lento, adagio, andante, moderato, allegretto, allegro, vivace, presto. Gradual tempo changes include **ritardando** (rit., gradually slower) and **accelerando** (accel., gradually faster). Modifiers like assai ("very"), espressivo ("expressively"), and cantabile ("singingly") can accompany tempo markings.
 
-**Tempo** (plural: _tempi_) specifies the rate of the beat in musical performance. Tempo is notated in two ways:
+# Prerequisites
 
-**1. Metronome marking** (precise):
-- Format: ♩ = 60 (60 quarter notes per minute = 1 per second)
-- Expressed in beats per minute (bpm)
-- Provides exact rhythmic specification
+- **Beat**: the pulse that tempo governs
+- **Meter**: the organizational framework for beats
 
-**2. Italian tempo terms** (descriptive):
+# Key Properties
 
-Fast tempi:
-- _Presto_: very fast
-- _Vivace_: lively, fast
-- _Allegro_: fast, cheerful
-- _Allegretto_: moderately fast (literally "little allegro")
+- Metronome marking: precise (e.g., quarter-note = 120 bpm)
+- Italian terms: descriptive and relative, not precisely defined
+- Fast: vivace, presto, allegro, allegretto
+- Medium: moderato, andante
+- Slow: adagio, largo, lento, grave
+- Appears at the beginning of a work, movement, or section (top left)
+- Ritardando (rit.) = gradually slower; accelerando (accel.) = gradually faster
 
-Moderate tempi:
-- _Moderato_: moderate speed
-- _Andante_: walking pace
+# Construction / Recognition
 
-Slow tempi:
-- _Adagio_: slow, leisurely
-- _Lento_: slow
-- _Largo_: broad, very slow
-- _Grave_: very slow, solemn
+Tempo markings appear at the top left of the first staff or system, at the start of a work, movement, or section.
 
-**Tempo changes**:
-- _Ritardando_ (_rit._): gradually slower
-- _Accelerando_ (_accel._): gradually faster
+# Context & Application
 
-**Modifiers**: _assai_ (very), _espressivo_ (expressively), _cantabile_ (singingly), etc.
+Tempo fundamentally affects musical character. The same notes at different tempi convey entirely different affects. Historical styles have tempo conventions. Combined markings like "allegro assai" (very fast) or "andante cantabile" (walking pace, in a singing style) are common especially after 1800.
 
-## Musical Context
+# Examples
 
-Tempo fundamentally affects musical character:
-- Fast tempi create energy, excitement, urgency
-- Slow tempi allow for expressiveness, contemplation
-- Tempo choice impacts difficulty (faster = more challenging)
-- Historical styles have tempo conventions (Baroque vs. Romantic)
-- Same piece at different tempi can convey entirely different affects
+- Quarter-note = 60: one beat per second (slow)
+- Quarter-note = 120: two beats per second (moderate-fast)
+- Allegro: fast, cheerful
+- Andante: walking pace (moderate, not slow)
+- Adagio espressivo: slow and expressive
 
-Tempo markings usually appear at the beginning of a work, movement, or section (top left of first staff/system).
+# Relationships
 
-## Examples
+- **Leads to**: expression, performance practice
+- **See also**: beat, meter, fermata, rhythm
 
-### Basic
+# Common Errors
 
-Metronome markings:
-- ♩ = 60: one quarter note per second (slow)
-- ♩ = 120: two quarter notes per second (moderate/fast)
-- ♩ = 180: three quarter notes per second (very fast)
+- Assuming andante means "slow" (it means walking pace -- moderate)
+- Confusing allegretto as faster than allegro (-etto is a diminutive: "little allegro" = moderately fast)
 
-Italian terms (slowest to fastest):
-_Grave_ → _Largo_ → _Lento_ → _Adagio_ → _Andante_ → _Moderato_ → _Allegretto_ → _Allegro_ → _Vivace_ → _Presto_
+# Common Confusions
 
-Combined markings:
-- _Allegro assai_: very fast
-- _Andante cantabile_: walking pace, in a singing style
-- _Adagio espressivo_: slow and expressive
-
-### From Repertoire
-
-Beethoven's Symphony No. 5: _Allegro con brio_ (fast with vigor). Chopin's Nocturnes: often _Andante_ or _Lento_ (walking to slow). Vivaldi's "Summer" from _Four Seasons_: _Presto_ (very fast). Bach's _Air on the G String_: _Adagio_ (slow, lyrical).
-
-## Related Concepts
-
-- **Prerequisite**: beat, meter, rhythm
-- **See also**: fermata
-
-## Common Confusions
-
-- Tempo vs. rhythm: tempo = speed; rhythm = durational patterns
-- Faster tempo doesn't mean "play louder" (tempo ≠ dynamics)
-- _Allegretto_ is slower than _allegro_ (not faster; -etto = diminutive suffix)
-- _Andante_ means walking pace (moderate), not slow
-- Metronome markings are guidelines, not absolute requirements (interpretation varies)
-- _Ritardando_ and _accelerando_ are gradual (not sudden changes)
+- Tempo vs. rhythm: tempo = speed of the beat; rhythm = durational patterns within beats
+- Faster tempo does not mean louder (tempo and dynamics are independent)
 - Italian terms are relative and contextual, not precisely defined speeds
+- Ritardando and accelerando are gradual, not sudden changes
 
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 7: "Other Aspects of Notation"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: full Italian term spectrum, metronome marking format, modifier examples, common confusion about andante.

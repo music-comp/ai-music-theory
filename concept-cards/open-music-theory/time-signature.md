@@ -1,80 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Time Signature
-category: theory
-source: Open Music Theory
-chapter: "Simple Meter and Time Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: time-signature
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Simple Meter and Time Signatures"
+chapter_number: 9
+pdf_page: null
+section: "Time Signatures"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "meter signature"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - beat
+  - meter
+  - staff
+extends: []
+related:
+  - simple-meter
+  - compound-meter
+  - measure
+  - key-signature
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a time signature?"
+  - "What do the top and bottom numbers mean?"
+  - "How do time signatures differ between simple and compound meter?"
 ---
 
-# Time Signature
+# Quick Definition
 
-## Quick Definition
+Two numbers placed after the clef and key signature that indicate the meter: how many beats (or divisions) per measure and which note value gets the beat (or division).
 
-Two numbers placed at the beginning of a piece that indicate the meter: how many beats per measure (top number) and which note value gets the beat (bottom number).
+# Core Definition
 
-## Formal Definition
+A **time signature** (also called meter signature) consists of two numbers, one above the other, placed after the clef on the staff. It is NOT a fraction (no line between the numbers). In **simple meters**, the top number = beats per measure (2, 3, or 4) and the bottom number = beat unit (2=half, 4=quarter, 8=eighth). In **compound meters**, the top number = divisions per measure (6, 9, or 12) and the bottom number = division unit; divide the top number by 3 to find the number of beats.
 
-A **time signature** (also called meter signature) is a notational convention consisting of two numbers, one above the other, placed after the clef and key signature at the beginning of a composition. The time signature appears whenever the meter changes.
+# Prerequisites
 
-In simple meters:
-- **Top number**: How many beats per measure (typically 2, 3, or 4)
-- **Bottom number**: Which note value gets the beat (typically 2=half, 4=quarter, 8=eighth, 16=sixteenth)
+- **Beat**: the pulse being organized
+- **Meter**: the grouping pattern
+- **Staff**: where the time signature appears
 
-Special time signatures:
-- 𝄴 (common time) = 4/4
-- 𝄵 (cut time or alla breve) = 2/2
+# Key Properties
 
-Note: A time signature is NOT a fraction. There is no line between the two numbers.
+- Placed after clef and key signature (alphabetical: clef, key, time)
+- Not a fraction -- no line between numbers
+- Simple meter top numbers: 2, 3, 4
+- Compound meter top numbers: 6, 9, 12 (multiples of 3)
+- Common time (C symbol) = 4/4
+- Cut time (C with line) = 2/2
+- Beaming conventions change with different time signatures
 
-In compound meters, the interpretation differs slightly: the top number shows the number of divisions (not beats), and you must divide by 3 to get the number of actual beats.
+# Construction / Recognition
 
-## Musical Context
+The time signature appears at the beginning of a piece, after the clef and key signature. It may reappear when the meter changes.
 
-Time signatures provide essential information for performers:
-- How to count and feel the rhythm
-- Where strong beats (downbeats) occur
-- How to beam notes together properly
-- What conducting pattern to use
+# Context & Application
 
-Different time signatures create different musical characters. 3/4 suggests a waltz, 6/8 suggests a lilting compound feel, 4/4 is the most common "neutral" meter, and 5/4 or 7/8 create asymmetrical, modern-sounding rhythms.
+Time signatures tell performers how to organize rhythm into measures and which note value represents the beat. They govern beaming conventions (notes are beamed together by beat), counting patterns, and conducting patterns.
 
-## Examples
+# Examples
 
-### Basic
+- 4/4: 4 quarter-note beats per measure (simple quadruple)
+- 3/4: 3 quarter-note beats per measure (simple triple)
+- 6/8: 6 eighth-note divisions per measure = 2 dotted-quarter beats (compound duple)
+- 9/8: 9 eighth-note divisions = 3 dotted-quarter beats (compound triple)
 
-Common time signatures:
-- 4/4: FOUR beats per measure, QUARTER note gets the beat (most common)
-- 3/4: THREE beats per measure, QUARTER note gets the beat (waltz)
-- 2/2: TWO beats per measure, HALF note gets the beat (march, faster feel)
-- 6/8: TWO beats per measure, DOTTED QUARTER gets the beat (compound duple)
+# Relationships
 
-Same rhythm, different time signatures:
-- The same sounding rhythm can be notated in 4/4, 2/2, 4/8, or 4/16 depending on tempo and context
+- **Leads to**: measure, beaming conventions
+- **See also**: simple-meter, compound-meter, beat, key-signature
 
-### From Repertoire
+# Common Errors
 
-4/4: Most pop, rock, classical music (Beethoven's Fifth Symphony)
-3/4: Waltzes (Strauss waltzes, Chopin waltzes)
-6/8: "When Johnny Comes Marching Home," many Irish jigs
-2/4: Marches (Sousa's "Stars and Stripes Forever")
-5/4: Dave Brubeck's "Take Five," Mission Impossible theme
+- Treating the time signature as a fraction
+- Confusing simple and compound meter time signatures
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: meter, beat, measure, note-values
-- **Leads to**: simple-meter, compound-meter
-- **See also**: tempo
+- In simple meter, the top number = beats; in compound meter, the top number = divisions (divide by 3 for beats)
+- 3/4 and 6/8 have the same total duration per measure but different beat structures
 
-## Common Confusions
+# Source Reference
 
-- Time signature is NOT a fraction (don't reduce "4/4" to "1")
-- The bottom number represents a note value, not a count: 4 means quarter note, 8 means eighth note
-- Changing the time signature changes how we feel and count the beat, even if note values stay the same
-- 6/8 ≠ 3/4: though both have six eighth notes per measure, 6/8 groups them as TWO beats of THREE, while 3/4 groups them as THREE beats of TWO
+Open Music Theory, Part I, Chapter 9: "Simple Meter and Time Signatures"; Chapter 10: "Compound Meter and Time Signatures"
 
-## Source Reference
+# Verification Notes
 
-Open Music Theory, Part I, Chapter 9: "Simple Meter and Time Signatures"
+Re-extracted from v2 card; preserved: simple vs compound interpretation, common/cut time equivalents, placement rules.

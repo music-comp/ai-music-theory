@@ -1,147 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Roman Numeral Analysis
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Diatonic Harmony"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: roman-numeral-analysis
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Roman Numerals and SATB Chord Construction"
+chapter_number: 20
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Roman numeral notation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - triad
+  - seventh-chord
+  - key-signature
+  - scale-degree
+  - inversion
+  - figured-bass
+extends: []
+related:
+  - satb
+  - harmonic-function
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is Roman numeral analysis?"
+  - "How do Roman numerals indicate chord quality?"
+  - "How are inversions shown in Roman numeral analysis?"
 ---
 
-# Roman Numeral Analysis
+# Quick Definition
 
-## Quick Definition
+An analytical system using Roman numerals to identify chords by their root's scale degree, quality (uppercase = major, lowercase = minor), and inversion (figured bass numbers).
 
-A system of harmonic analysis that uses Roman numerals (I, ii, iii, IV, V, vi, vii°) to label chords according to their scale degree root in relation to the tonic, with uppercase numerals indicating major or augmented triads, lowercase indicating minor or diminished triads, and additional symbols showing chord quality and inversion—providing a key-independent way to analyze and understand harmonic progressions that reveals functional relationships rather than just absolute pitch content.
+# Core Definition
 
-## Formal Definition
+**Roman numeral analysis** identifies chords within the context of a key. Roman numerals indicate: (1) the scale degree of the chord's root, (2) the chord's quality (uppercase = major triad, lowercase = minor triad, o = diminished, + = augmented, 7 = seventh chord), and (3) inversion (via figured bass figures). In major: I, ii, iii, IV, V, vi, viio. In minor: i, iio, III, iv, v/V, VI, VII/viio. Seventh chord quality follows the triad (uppercase/lowercase), with half-diminished (half-dim) and fully diminished (o) distinguished by additional symbols.
 
-**Roman Numeral Analysis** is an analytical method that identifies chords by their scale degree and quality using Roman numerals, enabling analysis of harmonic function and progression independent of absolute pitch or key.
+# Prerequisites
 
-**Basic system**:
-- **Uppercase (I, IV, V)**: Major triads or augmented triads
-- **Lowercase (ii, iii, vi)**: Minor triads
-- **Lowercase with ° (vii°)**: Diminished triads
-- **Uppercase with + (III+)**: Augmented triads (rare in diatonic context)
+- **Triad / seventh chord**: the chords being labeled
+- **Key signature**: the tonal context
+- **Scale degree**: the numbering system
+- **Inversion / figured bass**: how inversions are shown
 
-**Diatonic triads in major**:
-```
-I    ii   iii  IV   V    vi   vii°
-C    Dm   Em   F    G    Am   B°   (in C major)
-M    m    m    M    M    m    d    (qualities)
-```
+# Key Properties
 
-**Diatonic triads in minor** (harmonic minor):
-```
-i    ii°  III+ iv   V    VI   vii°
-Cm   D°   E♭+  Fm   G    A♭   B°   (in C minor)
-m    d    A    m    M    M    d    (qualities)
-```
+- Uppercase = major triad; lowercase = minor triad
+- Superscript o = diminished; + = augmented
+- 7 = seventh chord; quality follows triad capitalization
+- Half-dim-7 and o7 distinguish half-diminished from fully diminished
+- Inversions shown with figured bass after the Roman numeral
+- Key is written below the key signature (uppercase for major, lowercase for minor)
 
-## Chord Quality Symbols
+# Construction / Recognition
 
-**Triads**:
-- **Major**: Uppercase (I, IV, V)
-- **Minor**: Lowercase (ii, iii, vi)
-- **Diminished**: Lowercase + ° (vii°, ii°)
-- **Augmented**: Uppercase + + (III+)
+1. Identify the key. 2. Stack chord in root position (mentally). 3. Identify root's scale degree. 4. Determine quality. 5. Add quality symbols and figured bass figures.
 
-**Seventh chords**:
-- **Major-major seventh**: I⁷ or IM7 (major triad + major 7th)
-- **Major-minor seventh**: V⁷ (major triad + minor 7th, dominant seventh)
-- **Minor-minor seventh**: ii⁷ (minor triad + minor 7th)
-- **Half-diminished seventh**: viiø⁷ (diminished triad + minor 7th)
-- **Fully-diminished seventh**: vii°⁷ (diminished triad + diminished 7th)
+# Context & Application
 
-## Inversion Symbols
+Roman numeral analysis is the standard method for analyzing tonal harmony. It enables comparison of harmonic progressions across different keys because the same Roman numeral pattern means the same harmonic function in any key.
 
-**Figured bass numbers** (added after Roman numeral):
+# Examples
 
-**Triads**:
-- **Root position**: (no symbol) or ⁵₃ - Example: I
-- **First inversion**: ⁶ or ⁶₃ - Example: I⁶
-- **Second inversion**: ⁶₄ - Example: I⁶₄
+- In C major: C-E-G = I; D-F-A = ii; G-B-D-F = V7
+- In G minor: G-Bb-D = i; F#-A-C-Eb = viio-6/5
+- V7 in any key = dominant seventh chord
 
-**Seventh chords**:
-- **Root position**: ⁷ or ⁷₅₃ - Example: V⁷
-- **First inversion**: ⁶₅ - Example: V⁶₅
-- **Second inversion**: ⁴₃ - Example: V⁴₃
-- **Third inversion**: ⁴₂ or ² - Example: V⁴₂
+# Relationships
 
-## Analytical Practice
+- **Leads to**: harmonic-function, harmonic analysis
+- **See also**: satb, triad, seventh-chord, figured-bass
 
-**Step-by-step analysis**:
-1. **Identify key**: Determine tonic and mode (major/minor)
-2. **Identify chord root**: What scale degree is the root?
-3. **Determine quality**: Major, minor, diminished, or augmented?
-4. **Choose numeral**: Uppercase or lowercase based on quality
-5. **Add inversion**: Figured bass numbers if not root position
-6. **Add extensions**: Seventh, ninth, etc., if present
+# Common Errors
 
-**Example in C major**:
-```
-Chord: E-G-C (bass note E)
-- Key: C major
-- Root: C (scale degree 1)
-- Quality: Major triad
-- Inversion: First inversion (E in bass)
-- Analysis: I⁶
-```
+- Confusing IV (4) and VI (6): IV = V minus I (5-1=4); VI = V plus I (5+1=6)
+- Forgetting to check for raised leading tone in minor keys
 
-## Musical Context
+# Common Confusions
 
-Roman numeral analysis serves critical purposes:
-- **Harmonic understanding**: Reveals chord relationships
-- **Key-independent analysis**: Same progression recognized in any key
-- **Functional analysis**: Shows tonic, predominant, dominant relationships
-- **Pedagogical clarity**: Standard language for teaching harmony
-- **Comparison**: Enables comparison across keys and works
-- **Composition**: Provides harmonic vocabulary for composition
+- Roman numeral quality follows the triad, not the seventh (V7 is uppercase because the triad is major, even though the seventh is minor)
+- I7 and V7 look the same in Roman numeral format but are different chord qualities (major-major vs. major-minor)
 
-Essential tool in music theory, composition, and analysis.
+# Source Reference
 
-## Examples
+Open Music Theory, Part I, Chapter 20: "Roman Numerals and SATB Chord Construction"
 
-### Basic
+# Verification Notes
 
-**Simple progression in C major**:
-```
-Chords:      C      Am     F      G
-Scale deg:   1      6      4      5
-Analysis:    I      vi     IV     V
-```
-
-**Progression with inversions**:
-```
-Chords:      C-E-G  C-F-A  G-B-D  C-E-G
-Bass notes:  C      F      B      C
-Analysis:    I      IV⁶    V⁶     I
-```
-
-### From Repertoire
-
-**Bach, Chorale harmonizations**: Roman numeral analysis reveals standard I-IV-V-I progressions and circle-of-fifths patterns.
-
-**Mozart, Piano Sonata K. 545, I**: I - V - I progression demonstrates clear tonic-dominant relationship.
-
-## Related Concepts
-
-- **Prerequisite**: triad, scale-degree, major-scale, minor-scale, chord-quality, figured-bass
-- **Leads to**: harmonic-function
-- **See also**: figured-bass
-
-## Common Confusions
-
-- Uppercase = major/augmented; lowercase = minor/diminished
-- Roman numerals indicate scale degree root (not absolute pitch)
-- Figured bass numbers indicate inversion (intervals above bass)
-- I⁶ = first inversion I, sixth above bass
-- V⁷ = dominant seventh, adds minor seventh
-- In minor: V is uppercase (raised leading tone, major quality)
-- vii° = diminished quality (circle indicates diminished)
-- Roman numerals show function, not just pitch
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
+Re-extracted from v2 card; preserved: quality conventions, major/minor scale-degree patterns, IV/VI confusion tip, key writing convention.

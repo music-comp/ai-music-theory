@@ -1,87 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Chromatic Scale
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: chromatic-scale
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
+chapter_number: 14
+pdf_page: null
+section: "Chromatic Scales"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "chromatic collection"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - half-step
+  - accidental
+extends: []
+related:
+  - scale
+  - enharmonic-equivalence
+contrasts_with:
+  - major-scale
+  - minor-scale
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a chromatic scale?"
+  - "Why is it called a 'collection' rather than a scale?"
+  - "How are chromatic scales typically notated?"
 ---
 
-# Chromatic Scale
+# Quick Definition
 
-## Quick Definition
+A collection of twelve adjacent half steps, typically notated with sharps ascending and flats descending.
 
-A collection of all twelve pitches within an octave, consisting entirely of half steps with no repeating pattern of intervals.
+# Core Definition
 
-## Formal Definition
+A **chromatic scale** (more accurately, chromatic collection) consists of twelve adjacent half steps. Because it lacks a pattern of half and whole steps (every interval is a half step), music theorists generally call it a collection rather than a scale. Chromatic scales are often written with sharps ascending and flats descending. A chromatic collection starting on a flat note typically uses naturals ascending and flats descending. Remember that B/C and E/F are natural half steps (no accidental needed between them).
 
-A **chromatic scale** (also called chromatic collection) consists of twelve adjacent half steps spanning an octave. Unlike diatonic scales, the chromatic scale has no pattern of alternating half and whole steps—it contains only half steps. The term "chromatic scale" appears in quotes in some theory texts because it lacks the structural pattern characteristic of true scales; hence, it's more accurately called a chromatic collection.
+# Prerequisites
 
-Conventional notation practices:
-- **Ascending**: Use sharps (C-C♯-D-D♯-E-F-F♯-G-G♯-A-A♯-B-C)
-- **Descending**: Use flats (C-B-B♭-A-A♭-G-G♭-F-E-E♭-D-D♭-C)
-- **Starting on a flat note**: Use naturals ascending, flats descending
+- **Half step**: every interval in the chromatic scale
+- **Accidental**: needed for the sharp/flat alterations
 
-Exception: The natural half steps E-F and B-C don't use sharps/flats.
+# Key Properties
 
-In pitch-class set theory, the chromatic collection includes all twelve pitch classes: {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11} (aggregate set).
+- Twelve consecutive half steps
+- No pattern of H/W -- all half steps
+- Convention: sharps ascending, flats descending
+- All twelve pitch classes represented
+- B/C and E/F: natural half steps (no accidental between them)
 
-## Musical Context
+# Construction / Recognition
 
-The chromatic scale serves multiple musical functions:
-- **Technique building**: Standard exercise for instrumentalists and vocalists
-- **Melodic embellishment**: Chromatic passing tones and neighbor tones
-- **Modulation**: Chromatic motion facilitates key changes
-- **Harmonic color**: Chromatic harmony (altered chords, secondary dominants)
-- **Atonal/12-tone music**: All twelve pitches treated equally
+Start on any note and move by half step twelve times. Use sharps going up and flats going down (conventional notation).
 
-Historical development:
-- Renaissance/Baroque: Sparse chromatic usage for expression (chromaticism)
-- Romantic era: Increasing chromaticism (Wagner, Liszt, Chopin)
-- 20th century: Total chromaticism in atonal and serial music (Schoenberg, Webern)
-- Jazz: Chromatic scales in bebop and post-bop improvisation
+# Context & Application
 
-The chromatic scale doesn't establish a tonal center—all pitches are equally weighted, making it tonally ambiguous.
+The chromatic scale represents the complete pitch material of Western equal temperament. It is used for technical exercises, chromatic passages, and forms the basis of pitch-class set theory.
 
-## Examples
+# Examples
 
-### Basic
+- Starting on C ascending: C-C#-D-D#-E-F-F#-G-G#-A-A#-B-C
+- Starting on C descending: C-B-Bb-A-Ab-G-Gb-F-E-Eb-D-Db-C
 
-C chromatic scale ascending (with sharps):
-C-C♯-D-D♯-E-F-F♯-G-G♯-A-A♯-B-C
+# Relationships
 
-C chromatic scale descending (with flats):
-C-B-B♭-A-A♭-G-G♭-F-E-E♭-D-D♭-C
+- **See also**: scale, half-step, enharmonic-equivalence, pitch-class
 
-E♭ chromatic ascending (starting on flat):
-E♭-E♮-F-G♭-G♮-A♭-A♮-B♭-B♮-C-D♭-D♮-E♭
+# Common Errors
 
-### From Repertoire
+- Forgetting that E-F and B-C are natural half steps (no accidental needed)
 
-Chromatic passages appear in:
-- Bach's "Chromatic Fantasy and Fugue"
-- Chopin's Etudes (esp. Op. 10, No. 2)
-- Wagner's "Tristan und Isolde" (highly chromatic)
-- Rimsky-Korsakov's "Flight of the Bumblebee" (chromatic runs)
-- Jazz: bebop scales, chromatic approach notes
+# Common Confusions
 
-## Related Concepts
+- Not truly a "scale" because it lacks the characteristic pattern of whole and half steps that defines scales
 
-- **Prerequisite**: half-step, pitch, scale
-- **Leads to**: chromatic-harmony, passing-tone, neighbor-tone, atonality, twelve-tone-row
-- **See also**: diatonicity, modulation, voice-leading
-
-## Common Confusions
-
-- Chromatic "scale" vs. chromatic collection: The term "scale" is somewhat misleading since there's no repeating pattern
-- Not a mode: The chromatic collection doesn't fit the modal system
-- Spelling matters: Even though C♯ = D♭ in sound, proper spelling (sharps ascending, flats descending) clarifies direction
-- All twelve pitches ≠ atonality: Diatonic music uses chromatic notes too (as embellishments, alterations)
-- The chromatic scale uses all 12 pitch classes, but that doesn't mean all are equally important in chromatic passages
-- Remember the natural half steps: E-F and B-C don't need accidentals
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 14: "Introduction to Diatonic Modes and the Chromatic Scale"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: sharp ascending/flat descending convention, E-F and B-C natural half steps.

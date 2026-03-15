@@ -1,85 +1,102 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Measure
-category: theory
-source: Open Music Theory
-chapter: "Simple Meter and Time Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: measure
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Simple Meter and Time Signatures"
+chapter_number: 9
+pdf_page: null
+section: "Time Signatures"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "bar"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - beat
+  - meter
+  - time-signature
+extends: []
+related:
+  - simple-meter
+  - compound-meter
+  - hypermeter
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a measure?"
+  - "What are bar lines?"
+  - "How many beats are in a measure?"
 ---
 
-# Measure
+# Quick Definition
 
-## Quick Definition
+A segment of music containing a fixed number of beats as defined by the time signature, separated from other measures by bar lines.
 
-A segment of musical time containing a fixed number of beats as specified by the time signature, separated from adjacent measures by vertical bar lines on the staff.
+# Core Definition
 
-## Formal Definition
+A **measure** (also called a bar) is equivalent to one beat grouping (duple, triple, or quadruple) as defined by the time signature. Measures are separated by vertical **bar lines** on the staff. Each measure contains the number of beats specified by the time signature: 2 beats in duple, 3 in triple, 4 in quadruple. The total duration of notes and rests in each measure must equal the value specified by the time signature.
 
-A **measure** (also called a **bar**) is a unit of metrical organization in Western musical notation. Each measure contains a specific number of beats determined by the time signature and is bounded by bar lines.
+# Prerequisites
 
-**Components**:
-- **Bar line**: vertical line through the staff separating measures
-- **Measure content**: notes and rests totaling the duration specified by time signature
-- **Double bar line**: two vertical lines marking section endings or conclusions
+- **Beat**: the pulse that fills measures
+- **Meter**: determines how many beats per measure
+- **Time signature**: specifies the measure's content
 
-**Relationship to meter**:
-- In 2/4 (simple duple): each measure contains 2 quarter-note beats
-- In 3/4 (simple triple): each measure contains 3 quarter-note beats
-- In 4/4 (simple quadruple): each measure contains 4 quarter-note beats
-- In 6/8 (compound duple): each measure contains 2 dotted-quarter beats
+# Key Properties
 
-The measure is the basic organizational unit grouping beats according to recurring accent patterns (strong-weak, strong-weak-weak, etc.).
+- Separated by bar lines (vertical lines through the staff)
+- Contains one complete beat grouping as specified by the time signature
+- In 4/4: each measure contains 4 quarter-note beats
+- In 6/8: each measure contains 6 eighth-note divisions (2 dotted-quarter beats)
+- Multi-measure rests indicate several consecutive measures of silence
 
-## Musical Context
+# Construction / Recognition
 
-Measures organize musical time:
-- Provide visual grouping of beats on the page
-- Establish recurring accent patterns (downbeat on beat 1)
-- Create rhythmic hierarchy (measure-level accents)
-- Enable coordination in ensemble performance (measure numbers for rehearsal)
-- Serve as reference points for formal analysis
+Measures are visually identified by bar lines. The total duration of all notes and rests within a measure must match the time signature.
 
-Measure length remains constant within a section (unless meter changes occur).
+# Context & Application
 
-## Examples
+Measures provide the organizational grid for musical time. They make music readable by grouping beats into regular units. Bar lines help performers track their position in the music and see beat groupings at a glance.
 
-### Basic
+# Examples
 
-In 4/4 time:
-- Measure 1: ♩ ♩ ♩ ♩ (four quarter notes = 4 beats)
-- Measure 2: 𝅗𝅥 𝅗𝅥 (two half notes = 4 beats)
-- Measure 3: 𝅝 (one whole note = 4 beats)
-- Each measure contains exactly 4 beats worth of note values
+- In 4/4: a measure might contain 4 quarter notes, 2 half notes, 1 whole note, etc.
+- In 3/4: a measure might contain 3 quarter notes or a dotted half note
+- Multi-measure rest with "4" above: rest for 4 full measures
 
-Bar lines separate measures:
-| ♩ ♩ ♩ ♩ | 𝅗𝅥 𝅗𝅥 | 𝅝 |
-(Bar lines shown as vertical lines)
+# Relationships
 
-Double bar line:
-|| marks end of section or piece
+- **Leads to**: hypermeter, phrase
+- **See also**: beat, time-signature, simple-meter, compound-meter
 
-### From Repertoire
+# Common Errors
 
-Most Western music is organized in measures. Beethoven's Fifth Symphony: four-measure phrases. Bach chorales: hymn-like texture with clear measure divisions. Pop songs: often 4-measure or 8-measure units. Jazz lead sheets: measure numbers for navigation during improvisation.
+- Putting too many or too few beats in a measure (must match time signature)
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: beat, meter, time-signature
-- **Leads to**: phrase, hypermeter, anacrusis
-- **See also**: time-signature
+- "Measure" and "bar" are synonymous terms
+- Bar lines separate measures; double bar lines indicate section endings; final bar lines end the piece
 
-## Common Confusions
-
-- Measure vs. bar: same concept (measure is more common in American usage)
-- Measure duration depends on tempo—fast tempo = shorter measures in clock time
-- All measures in a section must contain the same number of beats (unless meter changes)
-- Bar line vs. double bar line: single bar = measure division; double bar = section ending
-- Incomplete measures: anacrusis (pickup) at beginning; shortened final measure
-- Multi-measure rest: multiple consecutive measures of rest (notated specially)
-- Measure numbers for reference: first complete measure = measure 1 (anacrusis not counted)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 9: "Simple Meter and Time Signatures"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: bar/measure synonym, bar line types, multi-measure rest notation.

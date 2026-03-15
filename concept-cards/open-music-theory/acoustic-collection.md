@@ -1,140 +1,75 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Acoustic Collection
-category: theory
-source: Open Music Theory
-chapter: "Collections"
-pdf_page: null
-chapter_number: 8
-unit: null
+slug: acoustic-collection
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: collections
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Collections"
+chapter_number: 8
+pdf_page: null
+section: "VIII.8"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases:
+  - "acoustic scale"
+  - "overtone scale"
+  - "lydian dominant"
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - whole-tone-collection
+  - diatonic-modes-20c
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the acoustic collection?"
+  - "How does it relate to the overtone series?"
 ---
 
-# Acoustic Collection
+# Quick Definition
+A seven-note collection resembling a major scale with raised-4 and lowered-7, derived from the lowest intervals of the overtone series. It combines mixolydian's lowered-7 with lydian's raised-4, connecting to long-standing notions of consonance based on the harmonic series.
 
-## Quick Definition
+# Core Definition
+The acoustic collection corresponds roughly to the lowest partials of the harmonic series, producing a mode that is major-like but with raised-4 (lydian) and lowered-7 (mixolydian). It does not have the "modes of limited transposition" property (it can be transposed to all 12 levels). Its connection to the overtone series gives it a special status in theories emphasizing natural consonance.
 
-The acoustic collection (or acoustic scale) is a seven-note scale derived from the lower partials of the harmonic series. It resembles Mixolydian with a raised 4th--or equivalently, Lydian with a lowered 7th. The scale is C-D-E-F#-G-A-Bb-C. It combines the "bright" raised 4th of Lydian with the "flat" 7th of Mixolydian, creating a distinctively resonant sound.
+# Prerequisites
+None specific
 
-## Formal Definition
+# Key Properties
+1. Seven notes: major scale with raised-4 and lowered-7
+2. Derived from the overtone series
+3. Combines lydian raised-4 with mixolydian lowered-7
+4. Can be transposed to all 12 levels (not a mode of limited transposition)
+5. Also known as "lydian dominant" scale in jazz
 
-**Acoustic collection**: A seven-note pitch collection with the following properties:
+# Context & Application
+Associated with Bartok and other composers interested in folk music and natural acoustics. Connects to whole-tone scale (an acoustic scale can be reached from whole-tone by "splitting" one note).
 
-**Structure** (from C):
-```
-C - D - E - F# - G - A - Bb - C
-  2   2   2    1   2   2   1   (intervals in semitones)
-```
+# Examples
+**Example 1**: C acoustic: C-D-E-F#-G-A-Bb (like C major but with F# and Bb).
 
-**Relationship to modes**:
-- Like **Mixolydian** but with raised 4 (fi instead of fa)
-- Like **Lydian** but with lowered 7 (te instead of ti)
-- Sometimes called **Lydian dominant** or **Lydian b7**
+# Relationships
+## Related
+- **whole-tone-collection** -- Acoustic scale can be reached from whole-tone by splitting one note
+- **diatonic-modes-20c** -- Shares lydian and mixolydian color notes
 
-**Scale degrees compared to major**:
-```
-1 - 2 - 3 - #4 - 5 - 6 - b7
-```
+# Common Confusions
+- **Confusion**: The acoustic scale is a mode of limited transposition
+  **Clarification**: It is not; it can be transposed to all 12 levels
 
-**Derivation from harmonic series**:
-The pitches approximate partials 8-9-10-11-12-13-14 of the harmonic series (starting on C):
-- Partial 8: C
-- Partial 9: D
-- Partial 10: E
-- Partial 11: F# (slightly flat of equal temperament)
-- Partial 12: G
-- Partial 13: A (slightly flat)
-- Partial 14: Bb (slightly flat)
+# Source Reference
+Open Music Theory, Part VIII, Chapter 8: "Collections."
 
-**Set class**: (013568T), Forte number 7-34
-
-**Not a mode of limited transposition**: Unlike whole-tone and octatonic, acoustic has 12 unique transpositions.
-
-## Musical Context
-
-The acoustic scale has natural resonance because its pitches approximate the harmonic series. This connection to acoustics has appealed to:
-
-1. **Impressionists**: The scale's unique color attracted Debussy, Ravel
-2. **Folk-influenced composers**: Bartok found similar scales in Hungarian folk music
-3. **Jazz musicians**: The "Lydian dominant" scale fits dominant 7#11 chords
-4. **Spectralists**: Composers working with overtones naturally arrive at this collection
-
-**Neither major nor minor clearly**: The raised 4 (Lydian) and lowered 7 (Mixolydian) create ambiguity--brighter than Mixolydian, darker than Lydian.
-
-**Common harmonic contexts**:
-- Dominant 7#11 chords
-- Lydian-influenced passages needing the minor 7th
-- "Natural" or "resonant" sonorities
-
-## Examples
-
-### Basic
-
-**C acoustic scale**:
-```
-C - D - E - F# - G - A - Bb - C
-
-Compared to C major: #4, b7
-Compared to C Mixolydian: #4
-Compared to C Lydian: b7
-```
-
-**Available triads**:
-```
-C major (I)
-D major (II)
-Em (iii)
-F#dim (iv dim)
-G major (V) - but no leading tone to resolve!
-Am (vi)
-Bbm (bVII m)
-
-Note: Both IV and vii are altered compared to major
-```
-
-**Derivation from overtone series** (on C):
-```
-Fundamental: C (partial 1)
-Partials 1-7: C, C, G, C, E, G, Bb (approx)
-Partials 8-14: C, D, E, F#, G, A, Bb (approx)
-
-The acoustic scale is partials 8-14 collapsed to one octave
-```
-
-**Spelling variations**:
-```
-C acoustic: C - D - E - F# - G - A - Bb
-May also appear as: C - D - E - Gb - G - A - Bb
-(Both spellings used; F# more common in sharp contexts)
-```
-
-### From Repertoire
-
-**Bartok**: Frequently uses the acoustic scale, connecting it to Hungarian folk modes. The scale appears prominently in many of his piano works.
-
-**Debussy**: The "floating" quality of acoustic passages (no leading tone, raised 4) contributes to his characteristic harmonic language.
-
-**Ravel**: Uses acoustic scale for passages needing brightness without tonal resolution.
-
-**Jazz**: The "Lydian dominant" scale (same as acoustic) is standard vocabulary for dominant 7#11 chords.
-
-**Spectral music**: Composers like Grisey and Murail, working with overtone spectra, naturally incorporate acoustic-scale materials.
-
-## Related Concepts
-
-- **Prerequisite**: lydian, mixolydian, scale-degree
-- **Leads to**: twelve-tone-composition
-- **See also**: dominant-seventh-chord, overtone-series
-
-## Common Confusions
-
-- **Not symmetrical**: Unlike whole-tone and octatonic, acoustic has 12 unique transpositions
-- **Not one of Messiaen's modes**: It doesn't have limited transposition
-- **The #4 and b7 work together**: Neither alone would give the acoustic character
-- **"Acoustic" refers to the harmonic series**: Not to unplugged instruments
-- **Lydian dominant = acoustic**: Same scale, different names (jazz vs. classical)
-- **The scale doesn't perfectly match the overtones**: Equal temperament differs from just intonation
-- **Both dominant function and Lydian brightness**: This combination is unique to the acoustic scale
-
-## Source Reference
-
-Open Music Theory, Part VIII, Chapter 8: "Collections"
+# Verification Notes
+- Definition source: From 08-08
+- Confidence rationale: High
+- Preserved from v2: Overtone series derivation, relationship to whole-tone
+- Cross-reference status: Verified

@@ -1,286 +1,138 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Leading-Tone Chord
-category: theory
-source: Open Music Theory
-chapter: "Dominant Function and Prolongation"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: leading-tone-chord
+
+# === CLASSIFICATION ===
+category: chords
+subcategory: dominant-function
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Prolongation at Phrase Beginnings using the Leading-Tone Chord"
+chapter_number: 8
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "vii-o chord"
+  - "vii-o7"
+  - "diminished seventh chord"
+  - "leading-tone seventh"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tonic-prolongation
+  - dominant-seventh-chord
+extends:
+  - tonic-prolongation
+related:
+  - secondary-leading-tone-chord
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How can the leading-tone chord substitute for V7?"
+  - "Which inversions of vii-o7 correspond to which inversions of V7?"
+  - "Why do composers prefer vii-o7 over vii-half-dim-7?"
 ---
 
-# Leading-Tone Chord
-
-## Quick Definition
-
-A diminished triad (in major) or fully diminished seventh chord (in minor) built on the leading tone (^7), notated as vii° or vii°7, functioning as a dominant substitute or tonic prolongation chord—sharing three notes with V7 (effectively V7 without root), creating strong pull toward tonic through the leading tone and diminished fifth, appearing in root position for dominant function or in first inversion (vii°6) for tonic prolongation at phrase beginnings, requiring careful voice leading where the leading tone resolves up to tonic and the diminished fifth resolves inward, universal in common-practice music as an alternative to or embellishment of dominant harmony.
-
-## Formal Definition
-
-**Leading-tone chord** is a chord built on the seventh scale degree (^7):
-
-**In major keys**: vii° (diminished triad)
-- Root: ^7 (leading tone)
-- Third: ^2
-- Fifth: ^4 (diminished fifth above root)
-
-**In minor keys**: vii°7 (fully diminished seventh)
-- Root: ^7
-- Third: ^2  
-- Fifth: ^4
-- Seventh: ♭^6
-
-**Function**: 
-- **Dominant substitute** (root position)
-- **Tonic prolongation** (first inversion, vii°6)
-
-**Relationship to V7**: vii° = V7 without root (shares B-D-F in C major)
-
-## Leading-Tone Triad vs. Seventh
-
-**vii° (diminished triad)**:
-```
-In C major: B-D-F (B°)
-Structure: diminished triad
-Common in major keys
-Less tension than seventh chord
-```
-
-**vii°7 (fully diminished seventh)**:
-```
-In C minor: B-D-F-A♭ (B°7)
-Structure: diminished triad + diminished seventh
-Native to minor (harmonic minor)
-Maximum tension
-More common than triad
-```
-
-**In major keys**: vii°7 requires ♭^6 borrowed from minor (less common)
-
-## Voice Leading
-
-**vii° → I** (root position):
-```
-vii°:  B-D-F    I:  C-E-G
-S:     F  → E        (^4 → ^3, diminished fifth resolves inward)
-A:     D  → C or E   (^2 → ^1 or ^3)
-T:     B  → C        (^7 → ^1, leading tone UP!)
-B:     B  → C        (^7 → ^1 in bass)
-
-Leading tone (B) resolves UP to tonic
-Diminished fifth (B-F) resolves inward (B→C, F→E)
-Dominant function
-```
-
-**vii°6 → I** (first inversion, prolongation):
-```
-vii°6: D-F-B    I:  C-E-G
-S:     B  → C        (^7 → ^1, leading tone up)
-A:     F  → E        (^4 → ^3)
-T:     D  → C or E   (^2 → ^1 or ^3)
-B:     D  → C        (^2 → ^1, bass steps down)
-
-First inversion (^2 in bass)
-Tonic prolongation function
-Common at phrase beginnings: I-vii°6-I6
-```
-
-## vii° as Dominant Substitute
-
-**Relationship to V7**:
-```
-V7:   G-B-D-F  (in C major)
-vii°: B-D-F    (same upper structure)
-
-vii° = V7 without root
-Functions as dominant substitute
-Shares three notes with V7
-```
-
-**Progression**:
-```
-vii° - I  (instead of V - I)
-
-Same dominant function
-More linear bass motion (^7→^1)
-Less stable than V-I
-```
-
-## vii°6 for Tonic Prolongation
-
-**I - vii°6 - I6 pattern**:
-```
-I:     C-E-G    vii°6:  D-F-B    I6:  C-E-G
-Bass:  C    →   D   →   E
-
-^1-^2-^3 bass line (stepwise ascent)
-Prolongs tonic through passing motion
-vii°6 acts as passing chord
-Common phrase-beginning pattern
-```
-
-**Function**: Tonic prolongation (not dominant function when in first inversion)
-
-## Half-Diminished vs. Fully Diminished
-
-**In major** (vii° or vii∅7):
-```
-vii°:  B-D-F       (diminished triad)
-vii∅7: B-D-F-A     (half-diminished seventh, diatonic)
-
-Half-diminished native to major
-Fully diminished requires ♭^6 (borrowed)
-```
-
-**In minor** (vii°7):
-```
-vii°7: B-D-F-A♭    (fully diminished seventh)
-
-Native to harmonic minor
-All minor thirds (symmetrical)
-Maximum tension
-```
-
-## Inversions of vii°7
-
-**vii°7** (root position):
-- Bass: ^7
-- Dominant function
-- Resolves to I
-
-**vii°6/5** (first inversion):
-- Bass: ^2
-- Can prolong tonic or function as dominant
-- Most versatile inversion
+# Quick Definition
 
-**vii°4/3** (second inversion):
-- Bass: ^4
-- Often resolves to I6
-- Less common
+The leading-tone chord (vii-o7 and its inversions, or vii-o6 as a triad) can substitute for inversions of V7 in tonic prolongations, matched by which note is in the bass. Composers generally prefer the fully diminished seventh (vii-o7) over the half-diminished (vii-half-dim-7) for its richer tension.
 
-**vii°4/2 or vii°2** (third inversion):
-- Bass: ♭^6 (in minor)
-- Resolves to I6 or V
-- Creates chromatic bass line
+# Core Definition
 
-## Musical Context
+The **leading-tone chord** can substitute for V7 and its inversions in tonic prolongations according to which note is in the bass (OMT, Ch. IV.8):
 
-Leading-tone chords serve specific purposes:
-- **Dominant substitute**: Alternative to V or V7
-- **Tonic prolongation**: vii°6 prolongs tonic at phrase beginnings
-- **Linear bass motion**: ^7→^1 or ^2→^3 stepwise
-- **Maximum tension**: Diminished intervals create instability
-- **Voice leading efficiency**: Smooth stepwise motion
-- **Shared with V7**: Three common tones (upper structure)
-- **Universal device**: Appears throughout common-practice period
-- **Minor key emphasis**: vii°7 particularly common in minor
-
-Essential chord for dominant function and tonic prolongation.
-
-## Examples
-
-### Basic
-
-**vii° → I in C major**:
-```
-vii°:  B-D-F    (B diminished)
-I:     C-E-G    (C major)
-
-B → C (^7 → ^1, leading tone up)
-F → E (^4 → ^3, diminished fifth resolves inward)
-D → C or E (^2 → ^1 or ^3)
-
-Dominant function
-Substitute for V-I
-```
-
-**vii°6 prolonging tonic**:
-```
-I:     C-E-G    vii°6:  D-F-B    I6:  E-G-C
-Bass:  C    →   D   →   E
-
-Stepwise bass ascent (^1-^2-^3)
-Prolongs tonic through passing vii°6
-Not dominant function here
-```
-
-**vii°7 in C minor**:
-```
-vii°7: B-D-F-A♭   (fully diminished seventh)
-i:     C-E♭-G-C   (C minor tonic)
-
-B → C (^7 → ^1)
-A♭ → G (♭^6 → ^5)
-F → E♭ (^4 → ♭^3)
-D → C (^2 → ^1)
-
-Maximum tension, smooth resolution
-```
-
-**I-vii°6-I6-V progression**:
-```
-I      vii°6    I6     V
-C-E-G  D-F-B    E-G-C  G-B-D
-↓      ↓        ↓      ↓
-^1     ^2       ^3     ^5 (bass)
-
-Tonic prolongation (I-vii°6-I6)
-Then moves to dominant
-Common phrase opening
-```
-
-**vii°7/V (secondary leading-tone)**:
-```
-In C major: F#°7 (F#-A-C-E♭)
-Resolves to: G (dominant)
-
-Secondary leading-tone chord
-Tonicizes V
-```
-
-### From Repertoire
-
-**Bach, Chorales**: vii°6 for tonic prolongation, vii°7 at cadences in minor, proper voice leading with leading tone resolution.
-
-**Mozart, Piano Sonatas**: I-vii°6-I6 tonic prolongations, vii°7 as dominant substitute, linear bass motion.
-
-**Beethoven, Symphonies**: vii°7 for dramatic dominant function, diminished seventh tension in minor keys.
-
-**Haydn, String Quartets**: vii°6 in phrase openings, prolongs tonic smoothly, demonstrates Classical voice leading.
-
-**Bach, Well-Tempered Clavier**: Extensive vii°7 in minor-key fugues, dominant function and voice leading model.
-
-## Related Concepts
-
-- **Prerequisite**: leading-tone, diminished-triad, dominant-function, voice-leading
-- **Leads to**: secondary-leading-tone-chord, tonic-prolongation, half-diminished-seventh
-- **See also**: fully-diminished-seventh-chord, half-diminished-seventh
-
-## Common Confusions
-
-- Leading-tone chord = chord built on ^7 (vii° or vii°7)
-- In major: vii° (diminished triad, B-D-F in C)
-- In minor: vii°7 (fully diminished seventh, B-D-F-A♭ in C minor)
-- Function: **Dominant substitute** (root position) or **tonic prolongation** (first inversion)
-- vii° = V7 without root (shares B-D-F in C major)
-- Leading tone (^7) must resolve UP to ^1
-- Diminished fifth resolves inward (B→C, F→E)
-- **vii°6** (first inversion): Prolongs tonic (I-vii°6-I6)
-- Root position: Dominant function
-- Lowercase "vii" = diminished quality
-- ° symbol = diminished triad
-- °7 symbol = fully diminished seventh
-- ∅7 symbol = half-diminished seventh (diatonic in major)
-- Voice leading: Leading tone up, dim5 inward
-- Not same as viio7/V (secondary leading-tone, different function)
-- In major: vii°7 requires ♭^6 (borrowed from minor)
-- In minor: vii°7 native (from harmonic minor)
-- All inversions usable (⁶, ⁶₅, ⁴₃, ⁴₂/²)
-- More linear than V-I (bass ^7→^1 instead of ^5→^1)
-- Essential for tonic prolongation and dominant function
-- Universal in common-practice harmony
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Dominant Function and Leading-Tone Chords"
+- **vii-o7** (or vii-o6) replaces V6/5 or V6 (both have ti/^7 in the bass)
+- **vii-o6/5** (or vii-o6) replaces V4/3 (both have re/^2 in the bass)
+- **vii-o4/3** replaces V4/2 (both have fa/^4 in the bass)
+
+Three important points:
+1. The leading-tone triad is always used in first inversion (vii-o6), never root position
+2. In minor, remember to raise the leading tone (use ti, not te)
+3. In major, composers nearly always lower the chordal seventh to create a fully diminished seventh (vii-o7) rather than half-diminished (vii-half-dim-7)
+
+# Prerequisites
+
+- **Tonic prolongation** — The leading-tone chord serves as an alternative harmonization for prolongation bass lines
+- **Dominant seventh chord** — The leading-tone chord substitutes for specific V7 inversions
+
+# Key Properties
+
+1. Substitutes for V7 inversions based on shared bass note
+2. vii-o6: always first inversion (root position creates problematic dissonance with bass)
+3. vii-o7 preferred over vii-half-dim-7 in major keys
+4. In minor: raise ^7 to build the chord
+5. vii-o4/2 is rare (resolves to cad. 6/4, since le resolves to sol in the bass)
+6. vii-half-dim-7 contains a perfect fifth (re-la) that creates parallel-fifth danger
+
+# Construction / Recognition
+
+## Substitution Table (OMT Ch. IV.8, Example 3):
+| Leading-Tone Chord | Replaces | Shared Bass Note |
+|---|---|---|
+| vii-o7 or vii-o6 | V6/5 or V6 | ti (^7) |
+| vii-o6/5 or vii-o6 | V4/3 | re (^2) |
+| vii-o4/3 | V4/2 | fa (^4) |
+| vii-o4/2 | (no V7 equivalent) | le (^b6) |
+
+## Voice Leading:
+- Follow typical writing procedures
+- Resolve active notes by tendency (ti up to do, fa down to mi, le down to sol)
+- New note: le/la (^b6/^6) resolves down by step
+
+# Context & Application
+
+- **Typical contexts**: Tonic prolongation at phrase beginnings; any context where inverted V7 could appear
+- **Common applications**: Adds harmonic color and tension compared to V7 inversions
+- **Historical/stylistic notes**: Source illustrates with Mozart, "Agnus Dei" from Requiem, where vii-o7 creates "wonderful tension" compared to V7.
+
+# Examples
+
+**Example 1** (OMT Ch. IV.8, Example 1): vii-o7 and inversions in Mozart, "Agnus Dei" from Requiem, compared with a recomposition using V7.
+
+**Example 2** (OMT Ch. IV.8, Example 5): Tonic prolongations using vii-o7 and its inversions, compared with corresponding V7 prolongations.
+
+# Relationships
+
+## Builds Upon
+- **Tonic prolongation** — Leading-tone chord is an alternative harmonization for prolongation patterns
+- **Dominant seventh chord** — Each vii-o7 inversion maps to a V7 inversion
+
+## Enables
+- **Secondary leading-tone chord** — Applied vii-o7/x chords follow the same principles
+
+# Common Errors
+
+- **Error**: Using root-position vii-o (not first inversion)
+  **Correction**: The leading-tone triad must be in first inversion (vii-o6) to avoid dissonance with the bass
+
+- **Error**: Using vii-half-dim-6/5 and creating parallel fifths
+  **Correction**: The perfect fifth in vii-half-dim-7 (between re and la) creates parallel-fifth danger; use vii-o6/5 instead
+
+# Common Confusions
+
+- **Confusion**: Thinking vii-o7 and V7 are the same chord
+  **Clarification**: vii-o7 shares three notes with V7 but has a different root (ti vs. sol) and different color (fully diminished vs. major-minor)
+
+- **Confusion**: Using vii-half-dim-7 interchangeably with vii-o7 in major
+  **Clarification**: Composers strongly prefer vii-o7 (lower the chordal seventh) because vii-half-dim-7's perfect fifth creates parallel-fifth problems
+
+# Source Reference
+
+Open Music Theory, Part IV, Chapter 8: "Prolongation at Phrase Beginnings using the Leading-Tone Chord." See Examples 1-7.
+
+# Verification Notes
+
+- Definition source: Direct from OMT Ch. IV.8
+- Confidence rationale: HIGH — explicit substitution table and writing procedures
+- Re-extraction notes: Re-extracted from v2 card; preserved: substitution table, Mozart Requiem reference, vii-o7 vs. vii-half-dim-7 distinction. Old card had extensive content consistent with source.

@@ -1,91 +1,109 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Mode
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: mode
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
+chapter_number: 14
+pdf_page: null
+section: "Modes and the Parallel Relationship"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "diatonic mode"
+  - "church mode"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - major-scale
+  - minor-scale
+  - half-step
+  - whole-step
+extends: []
+related:
+  - ionian
+  - dorian
+  - phrygian
+  - lydian
+  - mixolydian
+  - aeolian
+  - locrian
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the diatonic modes?"
+  - "What is modal brightness?"
+  - "How are modes related to major and minor scales?"
 ---
 
-# Mode
+# Quick Definition
 
-## Quick Definition
+Scale-like collections of notes with distinct patterns of half and whole steps, ordered from brightest (lydian) to darkest (locrian) based on their similarity to major or minor.
 
-A scale-like collection of notes with a specific pattern of half and whole steps, derived from rotating through the major scale starting on different scale degrees.
+# Core Definition
 
-## Formal Definition
+The **diatonic modes** are seven scale-like collections with different patterns of half and whole steps. They can be described using the parallel relationship (all starting on the same tonic) and ranked by **modal brightness**: brighter modes sound more like major; darker modes sound more like minor. The three bright modes (containing mi/^3) are lydian, ionian, and mixolydian. The four dark modes (containing me/lowered-^3) are dorian, aeolian, phrygian, and locrian. Each mode is described relative to major or natural minor with specific altered scale degrees.
 
-A **mode** (or diatonic mode) is an ordered collection of pitches following a specific pattern of half and whole steps. The seven diatonic modes are derived from the major scale pattern, but each starts on a different scale degree, creating a unique interval structure and character.
+# Prerequisites
 
-The seven diatonic modes, ordered from brightest (most major-like) to darkest (most minor-like):
+- **Major scale**: bright modes are described relative to major
+- **Minor scale**: dark modes are described relative to natural minor
+- **Half step / whole step**: the intervals that define each mode
 
-**Bright modes** (contain major third, ^3):
-1. **Lydian**: W-W-W-H-W-W-H (major scale with raised ^4)
-2. **Ionian**: W-W-H-W-W-W-H (identical to major scale)
-3. **Mixolydian**: W-W-H-W-W-H-W (major scale with lowered ^7)
+# Key Properties
 
-**Dark modes** (contain minor third, ♭^3):
-4. **Dorian**: W-H-W-W-W-H-W (natural minor with raised ^6)
-5. **Aeolian**: W-H-W-W-H-W-W (identical to natural minor)
-6. **Phrygian**: H-W-W-W-H-W-W (natural minor with lowered ^2)
-7. **Locrian**: H-W-W-H-W-W-W (natural minor with lowered ^2 and ^5)
+- Seven modes, ordered brightest to darkest: lydian, ionian, mixolydian, dorian, aeolian, phrygian, locrian
+- Bright modes contain mi (^3): lydian (raised ^4), ionian (= major), mixolydian (lowered ^7)
+- Dark modes contain me (lowered ^3): dorian (raised ^6 relative to minor), aeolian (= natural minor), phrygian (lowered ^2), locrian (lowered ^2 and ^5)
+- Each mode can start on any note
+- Modes are described using the parallel relationship (same tonic)
 
-Modal brightness: modes with a major third (mi) sound brighter; modes with a minor third (me) sound darker.
+# Construction / Recognition
 
-## Musical Context
+To construct a mode, start with the parallel major or minor scale and apply the appropriate alteration(s). Or use the specific W/H step pattern for each mode.
 
-Modes were the foundation of medieval and Renaissance music. They fell out of favor during the Common Practice period (1650-1900) when major and minor tonality dominated, but experienced a revival in:
-- 20th/21st-century classical music (Debussy, Ravel, Bartók)
-- Jazz (modal jazz, chord-scale theory)
-- Folk music (many folk traditions are inherently modal)
-- Rock and pop (especially Dorian and Mixolydian)
+# Context & Application
 
-Each mode has a characteristic sound and emotional quality:
-- **Lydian**: Bright, dreamy, floating, "raised 4th" sound
-- **Ionian**: Bright, stable, happy (standard major)
-- **Mixolydian**: Bright but slightly relaxed (dominant 7th flavor)
-- **Dorian**: Minor but hopeful, balanced
-- **Aeolian**: Dark, sad (standard natural minor)
-- **Phrygian**: Dark, exotic, Spanish/Middle Eastern flavor
-- **Locrian**: Darkest, unstable, rarely used for entire pieces
+Modes appear across many musical styles: medieval and Renaissance music, jazz chord-scale theory, popular music harmonic schemas, and 20th/21st-century art music. Understanding modes enriches analysis beyond the major/minor binary.
 
-## Examples
+# Examples
 
-### Basic
+- C lydian: like C major but with F# (raised ^4)
+- C mixolydian: like C major but with Bb (lowered ^7)
+- C dorian: like C natural minor but with A-natural (raised ^6)
+- C phrygian: like C natural minor but with Db (lowered ^2)
 
-C Lydian: C-D-E-F♯-G-A-B-C
-C Ionian (C major): C-D-E-F-G-A-B-C
-C Mixolydian: C-D-E-F-G-A-B♭-C
-C Dorian: C-D-E♭-F-G-A-B♭-C
-C Aeolian (C minor): C-D-E♭-F-G-A♭-B♭-C
-C Phrygian: C-D♭-E♭-F-G-A♭-B♭-C
-C Locrian: C-D♭-E♭-F-G♭-A♭-B♭-C
+# Relationships
 
-### From Repertoire
+- **Leads to**: ionian, dorian, phrygian, lydian, mixolydian, aeolian, locrian
+- **See also**: major-scale, minor-scale, chord-scale-theory
 
-**Dorian**: "Scarborough Fair," "Eleanor Rigby" (Beatles), "So What" (Miles Davis)
-**Phrygian**: "White Rabbit" (Jefferson Airplane), flamenco music
-**Lydian**: "Flying in a Blue Dream" (Joe Satriani), Simpsons theme
-**Mixolydian**: "Norwegian Wood" (Beatles), "Sweet Child O' Mine" (Guns N' Roses)
-**Aeolian**: Most rock/metal in minor keys
+# Common Errors
 
-## Related Concepts
+- Confusing the relative vs. parallel way of thinking about modes
 
-- **Prerequisite**: scale, major-scale, minor-scale, half-step, whole-step, scale-degree
-- **Leads to**: dorian, phrygian, lydian, mixolydian, aeolian, locrian, ionian, modal-interchange
-- **See also**: tonality
+# Common Confusions
 
-## Common Confusions
+- Modes are NOT just "starting on different white keys" -- they are best understood as alterations of major or minor from the same tonic (parallel relationship)
+- Ionian = major scale; aeolian = natural minor scale
 
-- Modes vs. scales: Modes are specific types of scales with historical and theoretical significance
-- Ionian IS major scale; Aeolian IS natural minor—they're not different things
-- Parallel modes (all starting on same tonic, like C Dorian vs. C Lydian) vs. relative modes (same notes, different starting points, like C Ionian vs. D Dorian)
-- Modal music doesn't necessarily use all seven modes—pieces are typically "in" one mode
-- Brightness/darkness is about the third (major vs. minor), but other altered scale degrees add nuance
-- Not all non-major, non-minor music is modal—there are many other scale systems
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 14: "Introduction to Diatonic Modes and the Chromatic Scale"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: brightness continuum, bright/dark classification, parallel relationship approach.

@@ -1,205 +1,159 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Authentic Cadence
-category: theory
-source: Open Music Theory
-chapter: "Cadences"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: authentic-cadence
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: cadences
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Harmony, Cadences, and Phrase Endings"
+chapter_number: 1
+pdf_page: null
+section: "Authentic Cadences"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+# high: Explicitly defined with two subtypes and examples
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "AC"
+  - "full cadence"
+  - "V-I cadence"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - cadence
+  - harmonic-function
+  - voice-leading
+extends:
+  - cadence
+related:
+  - dominant-seventh-chord
+  - cadential-six-four
+  - strong-predominant
+contrasts_with:
+  - half-cadence
+  - deceptive-motion
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is an authentic cadence?"
+  - "What is the difference between a PAC and an IAC?"
+  - "How do I write a perfect authentic cadence?"
 ---
 
-# Authentic Cadence
+# Quick Definition
 
-## Quick Definition
+An authentic cadence occurs when the progression V-I (or V-i) marks the end of a phrase, creating a conclusive ending. It has two subtypes: perfect (PAC), with both chords in root position and ^1 in the soprano, and imperfect (IAC), where one or more of those conditions is not met.
 
-A cadence ending with the dominant chord (V or V⁷) resolving to the tonic chord (I or i), creating the strongest sense of closure in tonal music through the progression V-I, with two subtypes: Perfect Authentic Cadence (PAC) where both chords are in root position and the tonic note is in the soprano, providing complete closure; and Imperfect Authentic Cadence (IAC) where one or both chords are inverted or the tonic is not in the soprano, providing weaker but still conclusive closure.
+# Core Definition
 
-## Formal Definition
+An **authentic cadence** (AC) occurs when the harmonic progression V-I (or V-i in minor) marks the end of a phrase (OMT, Ch. IV.1). Two subtypes:
 
-**Authentic Cadence** (AC) is a harmonic cadence characterized by dominant-to-tonic progression (V-I), the fundamental closing gesture in tonal music.
+- **Perfect authentic cadence (PAC)**: Both V and I are in root position, and ^1 (do) is in the soprano over the tonic chord. This is the strongest cadence, creating maximum closure.
+- **Imperfect authentic cadence (IAC)**: V-I is still involved, but either (a) ^3 or ^5 is in the soprano over I, or (b) V, I, or both are inverted. IACs are weaker than PACs but stronger than half cadences.
 
-**Two types**:
+# Prerequisites
 
-**1. Perfect Authentic Cadence (PAC)**:
-- V (or V⁷) → I (both in root position)
-- Tonic (^1) in soprano of final chord
-- Strongest possible cadence
-- Complete sense of closure
+- **Cadence** — The authentic cadence is one of the two primary cadence types
+- **Harmonic function** — Requires understanding dominant-to-tonic motion
+- **Voice leading** — Proper soprano voice and chord position determine PAC vs. IAC
 
-**2. Imperfect Authentic Cadence (IAC)**:
-- V → I where one or more conditions for PAC not met:
-  - V or I (or both) inverted
-  - ^3 or ^5 in soprano of final chord (not ^1)
-- Weaker than PAC but still conclusive
-- Less final sense of arrival
+# Key Properties
 
-**Essential feature**: Both types use V-I progression (dominant to tonic)
+1. Harmonic progression V-I (or V-i) at a phrase ending
+2. PAC requires: both V and I in root position AND ^1 in soprano over I
+3. IAC: V-I with either inverted chords or ^3/^5 in soprano
+4. PAC is the strongest cadence; IAC occupies the middle of the cadential strength spectrum
+5. V7 may substitute for V in both PAC and IAC
+6. IAC strength varies: root-position with ^3 in soprano is stronger than inverted chords
 
-## Perfect Authentic Cadence (PAC)
+# Construction / Recognition
 
-**Requirements** (all must be met):
-1. V or V⁷ in root position
-2. I in root position
-3. Tonic (^1) in soprano of I chord
-4. Both chords in same key
+## Writing a PAC or IAC (OMT Ch. IV.1):
+1. Determine the key
+2. Write the entire bass: sol-do (^5-^1)
+3. Write the soprano:
+   - PAC: re-do or ti-do (^2-^1 or ^7-^1)
+   - IAC: re-mi or sol-sol (^2-^3 or ^5-^5)
+4. Fill in inner voices: What notes do I already have? What do I need? What to double? (Root in root position)
+5. In minor: use raised ^7 (ti) in V chord
 
-**Effect**: Maximum closure, finality, "the end"
+## To Recognize:
+1. Identify V-I at a phrase ending
+2. Check: both root position? ^1 in soprano? If yes: PAC. If no: IAC
+3. Confirm it marks a true phrase ending (not mid-phrase V-I)
 
-**Typical voice leading** (V-I):
-```
-Soprano: ^2 → ^1 (or ^7 → ^1 in V⁷)
-Alto:    ^7 → ^1 (leading tone resolves up)
-Tenor:   ^5 → ^3 (or stays ^5)
-Bass:    ^5 → ^1 (dominant to tonic)
-```
+# Context & Application
 
-**Usage**:
-- Ends major formal sections (phrases, periods, movements)
-- Essential Expositional Closure (EEC) in sonata form
-- Essential Structural Closure (ESC) in recapitulation
-- Final cadence of movements
+- **Typical contexts**: Phrase endings, period endings, sectional closures, movement endings
+- **Common applications**: PAC for definitive closure; IAC for internal phrase endings where continuation is desired
+- **Historical/stylistic notes**: PAC is the normative closing gesture throughout common-practice music. IAC can be "subverted" when a composer avoids a PAC by using IAC-like progressions that don't mark a true phrase end (OMT Ch. IV.1, Example 6: Beethoven Op. 2 No. 3).
 
-## Imperfect Authentic Cadence (IAC)
+# Examples
 
-**Types of IAC** (one or more conditions):
+**Example 1** (OMT Ch. IV.1, Example 2, m. 8): PAC in Joseph Boulogne's "Ballet No. 6" from L'amant anonyme. V-I with ^1 in soprano, both root position.
 
-**Inverted IAC**:
-- V⁶ → I or V → I⁶ (one or both inverted)
-- Example: V⁶ → I (bass ^7 → ^1)
+**Example 2** (OMT Ch. IV.1, Example 3): IAC in Fanny Hensel, "Ferne" Op. 9 No. 2. V-i with ^3 (me) in soprano over tonic.
 
-**Melodic IAC**:
-- V → I (both root position)
-- ^3 or ^5 in soprano (not ^1)
-- Example: Soprano ^2 → ^3
+**Example 3** (OMT Ch. IV.1, Example 5): Potential weak IAC in Schubert's Piano Sonata D. 845, III, using V6-I. Debatable whether it constitutes a true phrase ending.
 
-**Effect**: Conclusive but not final, allows continuation
+**Example 4** (OMT Ch. IV.1, Example 6): Subverted IAC in Beethoven's Piano Sonata Op. 2 No. 3, I, m. 8, where the cadence is crossed out because the phrase continues.
 
-**Usage**:
-- Internal phrase endings
-- Antecedent phrase endings (before consequent)
-- Sections requiring partial closure
-- Leads to further material
+# Relationships
 
-## Authentic Cadence vs. Other Cadences
+## Builds Upon
+- **Cadence** — Authentic cadence is the conclusive type of cadence
 
-**vs. Half Cadence**:
-- AC: Ends on I (tonic)
-- HC: Ends on V (dominant, no resolution)
+## Enables
+- **Cadential six-four** — Strengthens the approach to an authentic cadence
+- **Strong predominant** — Commonly precedes the V in an authentic cadence
 
-**vs. Plagal Cadence**:
-- AC: V → I (dominant function)
-- PC: IV → I (subdominant function, "Amen" cadence)
+## Related
+- **Dominant seventh chord** — V7 strengthens the authentic cadence
+- **Phrase model** — PAC completes the T-PD-D-T cycle with Te
 
-**vs. Deceptive Cadence**:
-- AC: V → I (expected resolution)
-- DC: V → vi (or other substitute, avoids I)
+## Contrasts With
+- **Half cadence** — HC ends on V (inconclusive); AC resolves V to I (conclusive)
+- **Deceptive motion** — V-vi avoids the expected AC
 
-## Musical Context
+# Common Errors
 
-Authentic cadences serve critical functions:
-- **Formal closure**: Mark ends of phrases, periods, sections
-- **Hierarchical structure**: PAC strongest, IAC weaker (but both conclusive)
-- **Tonal stability**: Confirm tonic key
-- **Phrase articulation**: Distinguish internal vs. final closures
-- **Formal goals**: Provide structural arrival points (EEC, ESC)
-- **Listener expectation**: Fulfill harmonic expectations
+- **Error**: Writing a PAC with ^3 in the soprano
+  **Correction**: PAC requires ^1 in the soprano over the tonic; ^3 makes it an IAC
 
-PAC is the standard "period" at the end of a musical "sentence."
+- **Error**: Using inverted V or I and calling it a PAC
+  **Correction**: PAC requires both chords in root position
 
-## Examples
+- **Error**: Labeling every V-I as an authentic cadence
+  **Correction**: It must mark a phrase ending to be a cadence
 
-### Basic
+# Common Confusions
 
-**Perfect Authentic Cadence (PAC)**:
-```
-V:      G-B-D     (root position, ^5 in bass)
-I:      C-E-C     (root position, ^1 in soprano)
+- **Confusion**: Thinking IAC is a "failed" PAC
+  **Clarification**: IACs are deliberate compositional choices for weaker closure, not mistakes
 
-Soprano:  D → C   (^2 → ^1)
-Bass:     G → C   (^5 → ^1)
+- **Confusion**: Believing "perfect" means better music
+  **Clarification**: "Perfect" is a technical term for the specific conditions (root position, ^1 in soprano); IAC is an equally valid compositional choice
 
-Perfect: Both root position, ^1 in soprano
-```
+- **Confusion**: Conflating IAC with half cadence
+  **Clarification**: IAC resolves V to I (conclusive, just weaker); HC stops on V (no resolution)
 
-**Imperfect Authentic Cadence (inverted)**:
-```
-V⁶:     B-D-G     (first inversion, ^7 in bass)
-I:      C-E-C     (root position, ^1 in soprano)
+# Source Reference
 
-Bass:     B → C   (^7 → ^1, voice exchange)
+Open Music Theory, Part IV, Chapter 1: "Introduction to Harmony, Cadences, and Phrase Endings," sections "Authentic Cadences" and "Cadential Strength and the IAC." See Examples 2-6, Examples 7-10 (writing procedures).
 
-Imperfect: V⁶ is inverted (not root position)
-```
+# Verification Notes
 
-**Imperfect Authentic Cadence (melodic)**:
-```
-V:      G-B-D     (root position)
-I:      C-E-G     (root position, ^5 in soprano!)
-
-Soprano:  D → E   (^2 → ^3)
-
-Imperfect: Both root position but ^3 in soprano (not ^1)
-```
-
-**V⁷ to I (PAC)**:
-```
-V⁷:     G-B-D-F   (dominant seventh, root position)
-I:      C-E-G-C   (tonic, root position, ^1 in soprano)
-
-Soprano:  F → E   (^4 → ^3, or continues to C)
-Alto:     D → C   (^7 → ^1, leading tone resolution)
-
-Perfect if soprano resolves to C (^1)
-```
-
-**Phrase ending with PAC**:
-```
-Measures 1-4 (antecedent):  ...IV - V [HC]
-Measures 5-8 (consequent):  ...IV - V - I [PAC]
-
-Period ends with PAC (complete closure)
-```
-
-### From Repertoire
-
-**Mozart, Piano Sonata K. 545, I, m. 4**: PAC in C major ends opening phrase, both chords root position, ^1 in soprano, perfect closure.
-
-**Beethoven, "Ode to Joy," m. 8**: PAC concludes first phrase, V-I in D major, tonic in soprano, demonstrates textbook perfect cadence.
-
-**Bach, Chorale "O Haupt voll Blut und Wunden"**: Multiple PACs mark phrase endings, clear formal articulation through perfect authentic cadences.
-
-**Haydn, Symphony No. 104, I**: IAC at internal phrase divisions, PAC at major formal boundaries, demonstrates hierarchical cadence structure.
-
-**Mozart, Symphony No. 40, I**: Essential Expositional Closure (EEC) is PAC in Bb major (m. 44), Essential Structural Closure (ESC) is PAC in g minor (recapitulation).
-
-## Related Concepts
-
-- **Prerequisite**: cadence, ii-v-i-progression, root-motion, voice-leading
-- **Leads to**: half-cadence, deceptive-cadence, plagal-cadence, srdc-phrase-structure, period
-- **See also**: essential-expositional-closure
-
-## Common Confusions
-
-- Authentic cadence = V-I (dominant to tonic progression)
-- PAC requires: V and I both root position, ^1 in soprano
-- IAC = authentic cadence not meeting PAC criteria (inverted or ^3/^5 in soprano)
-- "Perfect" doesn't mean better music (just stronger closure technically)
-- Both PAC and IAC are authentic (both V-I)
-- V⁷-I is authentic (can be PAC if conditions met)
-- IAC still conclusive (just less final than PAC)
-- Not every V-I is a cadence (must provide phrase closure function)
-- Leading tone (^7) resolves up to tonic (^1) in inner voices
-- Bass motion ^5-^1 (V-I) creates root position cadence
-- ^1 in soprano for PAC (not just any voice)
-- Inverted IAC: one or both chords inverted
-- Melodic IAC: ^3 or ^5 in soprano (both chords root position)
-- Half cadence ends on V (not I); authentic ends on I
-- Deceptive cadence V-vi (not V-I); authentic is V-I
-- PAC strongest cadence in tonal music (maximum closure)
-- IAC allows continuation (weaker closure, often internal phrases)
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Types of Cadences"
+- Definition source: Direct from OMT Ch. IV.1, explicit definition with two subtypes
+- Confidence rationale: HIGH — explicit definition with worked examples
+- Uncertainties: None
+- Cross-reference status: All slugs verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: voice-leading examples (^2-^1, ^7-^1 patterns), cadential strength spectrum concept, repertoire examples (Mozart K. 545, Beethoven "Ode to Joy" — though these were generic, replaced with source-specific examples from Boulogne, Hensel, Schubert, Beethoven Op. 2)

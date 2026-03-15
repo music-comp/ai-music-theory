@@ -1,279 +1,74 @@
 ---
-concept: Augmented Mediant
-category: theory
-source: Open Music Theory
-chapter: "Augmented Options"
-pdf_page: null
-chapter_number: 5
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Mediant Relations
+slug: augmented-mediant
+# === CLASSIFICATION ===
+category: harmony
+subcategory: chromatic-harmony
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Mediants"
+chapter_number: 99
+pdf_page: null
+section: "Supplementary"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases:
+  - "chromatic mediant"
+  - "mediant grades"
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - neo-riemannian-theory
+extends: []
+related:
+  - chromatic-third-relation
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the three grades of mediant relations?"
+  - "How do mediant grades relate to common tones and mode?"
 ---
 
-# Augmented Mediant
+# Quick Definition
+Mediant chords have roots a third away from the tonic and are classified in three grades: Grade 1 (diatonic) shares 2 common tones with mode change; Grade 2 (chromatic) shares 1 common tone with mode preserved; Grade 3 (disjunct/doubly-chromatic) shares 0 common tones with mode change. From C major, the eight possible mediant targets cover all triads rooted on E, E-flat, A, and A-flat, in both major and minor.
 
-## Quick Definition
+# Core Definition
+Mediants are chords rooted a third above or below the tonic. In chromatic harmony, all eight possibilities are considered: four root destinations (E, E-flat, A, A-flat from C) times two qualities (major, minor) = 8. Grade 1 (diatonic): L-related (C major to E minor) and R-related (C major to A minor), with 2 common tones and mode change. Grade 2 (chromatic): Upper/Lower Sharp/Flat mediants, with 1 common tone and mode preserved (e.g., C major to E major). Grade 3 (disjunct): C major to E-flat minor or A-flat minor, with no common tones and mode change. Neo-Riemannian transformations (L, R, P, and their combinations) connect these relations.
 
-A chord built on the third scale degree (mediant) with an augmented quality, occurring naturally in harmonic minor as III+ (containing ^3-^5-^7 where ^7 is raised)—functioning as a distinctive chromatic sonority that shares two common tones with both tonic and dominant, can serve as a passing chord between these functions, and exploits augmented triad symmetry to connect harmonies related by major third.
+# Prerequisites
+- Neo-Riemannian theory (L, R, P transformations)
 
-## Formal Definition
+# Key Properties
+1. Three grades based on common tones and mode change
+2. Grade 1: 2 common tones, mode change (L and R related)
+3. Grade 2: 1 common tone, mode preserved (4 types: upper/lower sharp/flat)
+4. Grade 3: 0 common tones, mode change (2 types)
+5. 8 total mediant relations from any major or minor triad
+6. German and English traditions use different terminology (P/R confusion)
 
-**Augmented mediant** (III+) is the augmented triad on ^3:
+# Context & Application
+Mediant relations are central to chromatic harmony in Romantic and post-Romantic music. Holmes's "Les Sept Ivresses" demonstrates systematic mediant usage.
 
-**In harmonic minor**:
-```
-C harmonic minor: C-D-E-flat-F-G-A-flat-B
-III+ = E-flat - G - B (^3 - ^5 - ^7)
+# Examples
+**Example 1**: From C major: Grade 1: E minor (L), A minor (R). Grade 2: E major (LP), E-flat major (PR), A major (RP), A-flat major (PL). Grade 3: E-flat minor (PRP), A-flat minor (PLP).
 
-Natural occurrence (no additional alteration needed)
-Raised ^7 (leading tone) creates augmented fifth
-```
+# Relationships
+## Builds Upon
+- **neo-riemannian-theory** -- L, R, P transformations define mediant relations
 
-**Structure**:
-```
-E-flat (^3) - G (^5) - B (^7)
-       M3         M3
+# Common Confusions
+- **Confusion**: "Parallel" means the same thing in English and German theory
+  **Clarification**: English "parallel" = same root, different mode (C major/C minor); German "Parallel" = relative key (C major/A minor)
 
-E-flat to B = augmented fifth (A5)
-Same structure as any augmented triad
-```
+# Source Reference
+Open Music Theory, Supplementary Chapter: "Mediants."
 
-## III+ in Harmonic Minor
-
-**Why it occurs**:
-```
-Natural minor III: E-flat - G - B-flat (major triad)
-Harmonic minor III: E-flat - G - B (augmented triad)
-
-Raising ^7 (B-flat → B) for leading tone
-Creates augmented fifth from ^3 to ^7
-```
-
-**Scale context**:
-```
-C harmonic minor:
-^1 ^2 ^3 ^4 ^5 ^6 ^7 ^1
-C  D  E-flat F  G  A-flat B  C
-
-Triad on E-flat: E-flat (^3) - G (^5) - B (^7)
-Quality: Augmented (M3 + M3)
-```
-
-## Common Tones with Tonic and Dominant
-
-**Shared notes**:
-```
-i (C minor):    C - E-flat - G
-III+:           E-flat - G - B
-V (G major):    G - B - D
-
-i and III+ share: E-flat, G (two common tones)
-III+ and V share: G, B (two common tones)
-```
-
-**Voice-leading implications**:
-```
-i → III+ → V
-Smooth connections through common tones
-III+ mediates between tonic and dominant
-```
-
-## Functional Uses
-
-**Passing between i and V**:
-```
-i: C - E-flat - G
-   ↓
-III+: E-flat - G - B
-   ↓
-V: G - B - D
-
-E-flat → G → (rest)
-G sustained through all three
-(E-flat) → B → D creates chromatic line: E-flat → B (enharmonic) → D? 
-Actually: voice leading varies
-```
-
-**As dominant substitute**:
-```
-III+ shares B and G with V
-Can tonicize relative major (E-flat major)
-E-flat-G-B → A-flat (as V+/IV? or connector to relative major)
-```
-
-**Coloristic function**:
-```
-III+ for chromatic color
-Not always functionally necessary
-Creates unstable, chromatic moment
-```
-
-## Voice Leading with III+
-
-**i → III+ → V in C minor**:
-```
-Soprano: E-flat → E-flat → D
-Alto:    C     → G     → G  
-Tenor:   G     → B     → B
-Bass:    C     → E-flat → G
-
-Common tones retained where possible
-B (leading tone) prepared in III+
-```
-
-**III+ → i resolution**:
-```
-III+: E-flat - G - B    →    i: C - E-flat - G
-      ↓       ↓   ↓           ↓   ↓        ↓
-      E-flat → E-flat        (common tone)
-      G → G                  (common tone)
-      B → C                  (leading tone resolves!)
-
-B → C completes leading tone resolution
-III+ can resolve directly to tonic
-```
-
-## Symmetry and Reinterpretation
-
-**III+ symmetry** (like all augmented triads):
-```
-E-flat+ = G+ = B+
-
-E-flat-G-B can be heard as:
-- III+ in C minor (E-flat root)
-- V+ in C major (G root)
-- ? in E major (B root)
-```
-
-**Enharmonic possibilities**:
-```
-C minor III+ = E-flat-G-B
-            = V+ in C major (G-B-D#, with D# = E-flat)
-            
-Same sound, different contexts
-```
-
-## Musical Context
-
-Augmented mediant serves specific purposes:
-- **Natural in harmonic minor**: No additional alteration needed
-- **Mediating function**: Links tonic and dominant areas
-- **Common tones**: Shares notes with both i and V
-- **Chromatic color**: Creates unstable, passing sonority
-- **Leading tone preparation**: Contains ^7 before dominant
-- **Symmetry exploitation**: Can be reinterpreted
-- **Relative major connection**: Links to III (relative major)
-- **Romantic usage**: Exploited for coloristic effect
-
-Distinctive chromatic chord arising naturally from harmonic minor.
-
-## Examples
-
-### Basic
-
-**III+ in C harmonic minor**:
-```
-Scale: C-D-E-flat-F-G-A-flat-B-C
-
-III+ = E-flat - G - B
-       ^3      ^5   ^7
-
-Intervals:
-E-flat to G = M3
-G to B = M3
-E-flat to B = A5
-
-Augmented triad structure
-```
-
-**Passing function i → III+ → V**:
-```
-i:    C - E-flat - G
-      ↓
-III+: E-flat - G - B
-      ↓
-V:    G - B - D
-
-Common tones create smooth motion:
-E-flat sustained (i to III+)
-G sustained throughout
-B prepared (III+ to V)
-```
-
-**III+ → i resolution**:
-```
-III+: E-flat - G - B    →    i: C - E-flat - G
-      
-E-flat → E-flat (CT)
-G → G (CT)
-B → C (^7 → ^1, leading tone resolution)
-
-III+ contains leading tone
-Resolves naturally to tonic
-```
-
-**In progression**:
-```
-Cm: i  -  III+  -  V  -  i
-    Cm    E-flat+   G    Cm
-
-III+ passes between tonic and dominant
-Creates chromatic passing motion
-B (leading tone) appears before V
-```
-
-**Comparison natural vs. harmonic minor**:
-```
-Natural minor: i - III - V
-              Cm - E-flat - G
-              (III = major, E-flat-G-B-flat)
-
-Harmonic minor: i - III+ - V
-               Cm - E-flat+ - G
-               (III+ = augmented, E-flat-G-B)
-
-Raised ^7 creates augmented quality
-```
-
-### From Repertoire
-
-**Bach, Chromatic Fantasy**: III+ appears in minor-key passages, natural result of harmonic minor usage.
-
-**Mozart, Piano Sonata in C minor, K. 457**: III+ in chromatic passages, passing between tonic and dominant.
-
-**Chopin, Prelude in C minor, Op. 28 No. 20**: III+ chord creates chromatic tension, harmonic minor context.
-
-**Rachmaninoff, Prelude in C-sharp minor**: III+ as passing harmony, intensifies chromatic voice leading.
-
-**Film scores (minor-key dramatic passages)**: III+ for tension and instability, exploits harmonic minor sound.
-
-## Related Concepts
-
-- **Prerequisite**: harmonic-minor-scale, augmented-triad, leading-tone
-- **Leads to**: augmented-triad-symmetry, chromatic-mediant
-- **See also**: augmented-triad-voice-leading
-
-## Common Confusions
-
-- III+ = augmented triad on mediant (^3)
-- Occurs naturally in HARMONIC minor (not natural minor)
-- Natural minor III = major triad (E-flat-G-B-flat in Cm)
-- Harmonic minor III+ = augmented (E-flat-G-B in Cm)
-- Raising ^7 creates the augmented fifth
-- Shares two common tones with both i and V
-- Can pass between tonic and dominant
-- Contains leading tone (^7 = B in C minor)
-- Leading tone can resolve up to ^1
-- III+ → i valid resolution (B → C)
-- Same symmetry as other augmented triads
-- III+ = V+ enharmonically in some contexts
-- E-flat+ = G+ = B+ (three spellings, one sound)
-- More common in Romantic music
-- Creates chromatic color in minor keys
-- Not same as chromatic mediant (different concept)
-- Chromatic mediant = key/chord relation by third with mode change
-- III+ = specific chord quality on ^3 in harmonic minor
-
-## Source Reference
-
-Open Music Theory, Part V: "Chromaticism"
-Open Music Theory, Part V: "Augmented Options"
+# Verification Notes
+- Definition source: From 99-02
+- Confidence rationale: High
+- Preserved from v2: Three-grade system, English/German terminology caution
+- Cross-reference status: Verified against neo-Riemannian chapter

@@ -1,93 +1,90 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Chord
-category: theory
-source: Open Music Theory
-chapter: "Triads"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: chord
+
+# === CLASSIFICATION ===
+category: chords
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Triads"
+chapter_number: 17
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch
+  - interval
+extends: []
+related:
+  - triad
+  - seventh-chord
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a chord?"
+  - "How many notes does a chord require?"
 ---
 
-# Chord
+# Quick Definition
 
-## Quick Definition
+Any combination of three or more pitch classes sounding simultaneously.
 
-Any combination of three or more pitch classes sounded simultaneously, forming the vertical harmonic structures that underpin tonal and post-tonal music.
+# Core Definition
 
-## Formal Definition
+A **chord** is any combination of three or more pitch classes that sound simultaneously. The most common chord types are triads (three notes stackable in thirds) and seventh chords (four notes stackable in thirds). Chords are the building blocks of harmony. Doubling (repeating a pitch class in a different octave) and spacing (how far apart the notes are) do not change a chord's identity.
 
-A **chord** is a simultaneous sounding of three or more distinct pitch classes. Chords are the primary vertical building blocks of harmony in Western music.
+# Prerequisites
 
-**Minimum requirement**: At least three different pitch classes
-- Two notes = interval (dyad), not chord
-- Three or more notes = chord
+- **Pitch**: the notes forming the chord
+- **Interval**: the distances between chord members
 
-**Common chord types**:
-- **Triads**: Three-note chords (root, third, fifth)
-- **Seventh chords**: Four-note chords (root, third, fifth, seventh)
-- **Ninth, eleventh, thirteenth chords**: Extended tertian harmonies
-- **Clusters**: Adjacent pitches sounded together
-- **Polychords**: Two or more chords sounded simultaneously
+# Key Properties
 
-**Chord properties**:
-- **Root**: Foundational pitch (in tertian harmony)
-- **Quality**: Major, minor, diminished, augmented, dominant, etc.
-- **Inversion**: Which chord member appears in the bass
-- **Voicing**: Specific arrangement and spacing of chord tones
+- Minimum three pitch classes
+- Most common types: triads (3 notes) and seventh chords (4 notes)
+- Identified by root, quality, and inversion
+- Doubling and spacing do not change chord identity
 
-**Pitch class vs. pitch**: Chords are defined by pitch classes (C-E-G is C major regardless of octave doubling or spacing).
+# Construction / Recognition
 
-## Musical Context
+Stack notes in thirds to identify the chord type. Any arrangement of the notes (different octaves, doublings) is the same chord.
 
-Chords serve multiple musical functions:
-- **Harmony**: Create harmonic progression and tonal movement
-- **Color**: Provide harmonic color and texture
-- **Structure**: Articulate formal boundaries (cadences)
-- **Function**: Tonic, predominant, and dominant functions in tonal music
-- **Expression**: Convey emotional character (major = bright, minor = dark, etc.)
+# Context & Application
 
-Chord progressions drive tonal motion from stability (tonic) through tension (dominant) back to resolution.
+Chords are the primary units of Western harmony. Chord progressions create the harmonic language of tonal music.
 
-## Examples
+# Examples
 
-### Basic
+- C, E, G sounding together = C major chord (triad)
+- C, E, G, B sounding together = C major seventh chord
 
-**Triads** (three-note chords):
-- C major: C-E-G (root position)
-- A minor: A-C-E
-- B diminished: B-D-F
-- G augmented: G-B-D♯
+# Relationships
 
-**Seventh chords** (four-note chords):
-- G dominant seventh: G-B-D-F (G7)
-- C major seventh: C-E-G-B (Cmaj7)
-- D minor seventh: D-F-A-C (Dmi7)
+- **Leads to**: triad, seventh-chord, roman-numeral-analysis
+- **See also**: interval, harmony
 
-**Extended chords** (five or more notes):
-- C major ninth: C-E-G-B-D (Cmaj9)
-- G dominant thirteenth: G-B-D-F-A-C-E (G13)
+# Common Confusions
 
-### From Repertoire
+- A chord requires at least 3 pitch classes (2 notes = an interval, not a chord)
 
-Bach chorales: four-voice triads and seventh chords in functional progressions. Beethoven piano sonatas: rich harmonic vocabulary with chromatic chords. Jazz standards: extended tertian harmony (ninths, elevenths, thirteenths). Debussy: quartal chords, whole-tone chords, parallel chord motion.
-
-## Related Concepts
-
-- **Prerequisite**: pitch-class, harmonic-interval
-- **Leads to**: triad, seventh-chord, voice-leading
-- **See also**: chord-quality, ninth-chord-inversion, serial-harmony
-
-## Common Confusions
-
-- Chord vs. interval: chord requires 3+ pitch classes; interval = 2 pitch classes
-- Chord vs. harmony: chord = vertical sonority; harmony = broader concept of chord relationships
-- Pitch class definition: C-E-G in any octave/spacing = C major chord
-- Root vs. bass: root = foundational note; bass = lowest sounding note (can differ in inversions)
-- Chord quality determined by intervals from root, not by absolute pitches
-- Doubling notes doesn't change the chord (C-E-G-C is still C major triad, not a seventh chord)
-- "Broken chord" (arpeggio) is melodic presentation, not a chord (notes must sound together)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 17: "Triads"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: three-pitch-class minimum, doubling/spacing independence.

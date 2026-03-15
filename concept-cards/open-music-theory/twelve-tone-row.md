@@ -1,150 +1,103 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Twelve-Tone Row
-category: theory
-source: Open Music Theory
-chapter: "Basics of Twelve-Tone Theory"
-pdf_page: null
-chapter_number: 9
-unit: null
+slug: twelve-tone-row
+
+# === CLASSIFICATION ===
+category: analysis
+subcategory: twelve-tone-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Basics of Twelve-Tone Theory"
+chapter_number: 9
+pdf_page: null
+section: "IX.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "tone row"
+  - "series"
+  - "row"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch-class
+  - integer-notation
+extends: []
+related:
+  - row-operations
+  - row-class
+  - row-matrix
+  - serialism
+contrasts_with:
+  - pitch-class-set
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a twelve-tone row?"
+  - "How many possible twelve-tone rows exist?"
+  - "What is the difference between a row and a set?"
 ---
 
-# Twelve-Tone Row
+# Quick Definition
+A twelve-tone row (also called a series) is an ordered arrangement of all twelve pitch classes, each appearing exactly once, used as the foundational material for twelve-tone composition. Each row generates up to 48 related forms through transposition, inversion, retrograde, and retrograde inversion.
 
-## Quick Definition
+# Core Definition
+Twelve-tone composition is based on a series (row) containing all twelve pitch classes in a particular order. There are 12! = 479,001,600 possible rows. The basic constraints: pitch classes are played in the order specified by the row, and once played, a pitch class is not repeated until the next row statement. Four operations transform a row: Prime (P, the original), Retrograde (R, reversed order), Inversion (I, reversed interval directions), and Retrograde Inversion (RI, both reversed). Each can be transposed to 12 pitch levels, yielding up to 48 forms in a row class. The row does not specify rhythm, register, or duration -- only pitch-class ordering. In practice, composers vary widely in how strictly they follow the ordering.
 
-A twelve-tone row (also called a series) is an ordered arrangement of all twelve pitch classes used as the foundational material in twelve-tone composition, where each pitch class appears exactly once—serving as a fixed sequence from which melodies, harmonies, and entire compositions are derived through various transformations (transposition, inversion, retrograde, and retrograde inversion), producing up to 48 related row forms that constitute a row class.
+# Prerequisites
+- Pitch class and integer notation (the units of the row)
 
-## Formal Definition
+# Key Properties
+1. Contains all 12 pitch classes exactly once
+2. Order is fixed (distinguishes a row from an unordered set)
+3. 12! = 479,001,600 possible orderings
+4. Generates up to 48 forms: P, R, I, RI each at 12 transpositions
+5. Rows with symmetry properties may have fewer than 48 distinct forms
+6. Does not specify rhythm, register, duration, or dynamics
+7. Row forms are labeled by type and starting pitch class (e.g., P7, I3, R10, RI0)
 
-**Twelve-tone row** (also: series, tone row): An ordered set containing all twelve pitch classes exactly once.
+# Context & Application
+The twelve-tone technique emerged in the 1920s, associated with Schoenberg (developer), Webern (explored symmetry), and Berg (combined with tonal elements). Rows construct themes, motives, and chords. Not all serial music uses twelve-tone rows, and not all twelve-tone music is strictly serial. Composers like Dallapiccola used rows freely with pitch repetition, while others like Webern adhered strictly to row ordering.
 
-**Mathematical properties**:
-- Contains pitch classes 0-11 (C through B)
-- Total possible rows: 12! = 479,001,600
-- Each row generates up to 48 related forms (row class)
-- Forms: P (prime), R (retrograde), I (inversion), RI (retrograde inversion)
-- Each form can be transposed to 12 pitch levels
+# Examples
+**Example 1** (Lutyens, Motet Op. 27): P0: 0-11-3-7-8-4-2-6-5-1-9-10 (C-B-E-flat-G-A-flat-E-D-F-sharp-F-D-flat-A-B-flat).
 
-**Row class structure**:
-```
-P0, P1, P2 ... P11  (12 prime forms)
-R0, R1, R2 ... R11  (12 retrograde forms)
-I0, I1, I2 ... I11  (12 inversion forms)
-RI0, RI1 ... RI11   (12 retrograde inversion forms)
-Total: 48 forms (unless row has special symmetry)
-```
+**Example 2** (Webern, Symphonie Op. 21): Row divides into two symmetric hexachords, both set class 6-1 (chromatic hexachord). The row is retrograde-equivalent (R6 = transposed P0), yielding only 24 distinct forms.
 
-**Basic constraints**:
-1. Pitch classes played in order specified by row
-2. Once played, pitch class not repeated until next row
+**Example 3** (Webern, Konzert Op. 24): P0: 11-8-2-3-7-6-8-4-5-0-1-9. Four trichords all set class (014), related by P, I, R, RI. Only 12 distinct row forms due to symmetry.
 
-## Musical Context
+# Relationships
+## Builds Upon
+- **pitch-class** -- Rows are ordered sequences of pitch classes
+- **integer-notation** -- Rows are expressed using integers 0-11
+## Related
+- **row-operations** -- P, R, I, RI transformations
+- **row-class** -- The collection of all 48 (or fewer) forms
+- **row-matrix** -- Grid displaying all row forms
+## Contrasts With
+- **pitch-class-set** -- A set is unordered; a row is ordered
 
-The twelve-tone row provides:
-- **Unity**: All pitch material derives from single row
-- **Equality**: All twelve pitch classes treated as equal (no tonic)
-- **Variety**: 48 transformations provide diverse material
-- **Coherence**: Interval content preserved across transformations
-- **Structure**: Row properties determine compositional possibilities
+# Common Confusions
+- **Confusion**: A twelve-tone row is the same as a pitch-class set
+  **Clarification**: A row is ordered; a set is unordered
+- **Confusion**: The row must be presented as a twelve-note melody
+  **Clarification**: Row pitches can be distributed across voices, presented as chords, etc.
+- **Confusion**: Twelve-tone music always sounds "atonal"
+  **Clarification**: Composers like Berg and Britten created tonal-sounding twelve-tone music
 
-The twelve-tone technique emerged in the 1920s, associated with:
-- Arnold Schoenberg (developed the method)
-- Anton Webern (explored row symmetry)
-- Alban Berg (combined with tonal elements)
+# Source Reference
+Open Music Theory, Part IX, Chapter 1: "Basics of Twelve-Tone Theory."
 
-Not all serial music uses twelve-tone rows, and not all twelve-tone music is strictly serial.
-
-## Examples
-
-### Basic
-
-**Chromatic scale as row** (for illustration):
-```
-P0: C-C#-D-D#-E-F-F#-G-G#-A-A#-B
-    0  1  2  3 4 5  6 7  8 9 10 11
-
-Intervals: +1, +1, +1, +1, +1, +1, +1, +1, +1, +1, +1
-```
-
-**Retrograde of above**:
-```
-R0: B-A#-A-G#-G-F#-F-E-D#-D-C#-C
-    11 10 9  8 7  6 5 4  3 2  1 0
-
-Same pitches, reversed order
-Ends on same pitch as P0 starts
-```
-
-**Row construction principles**:
-```
-Row: [ordered pitch classes]
-- Must include all 12 pitch classes
-- Each appears exactly once
-- Order is fixed (the "series")
-- Intervals between adjacent pitches define character
-
-Example row:
-0-11-3-7-8-4-2-6-5-1-9-10
-(from Lutyens's Motet Op. 27)
-```
-
-### From Repertoire
-
-**Elisabeth Lutyens, Motet Op. 27**:
-```
-P0: 0-11-3-7-8-4-2-6-5-1-9-10
-    C-B-Eb-G-Ab-E-D-F#-F-Db-A-Bb
-
-Interval succession: -1, +4, +4, +1, -4, -2, +4, -1, -4, +8, +1
-```
-
-**Webern, Symphonie Op. 21**:
-```
-Row divides into symmetric hexachords:
-First hexachord: 9-6-7-8-4-5 (chromatic cluster)
-Second hexachord: 11-10-2-1-0-3 (chromatic cluster)
-
-Both hexachords = set class 6-1 (chromatic hexachord)
-Row is retrograde-equivalent (R6 = transposed P0)
-```
-
-**Webern, Konzert Op. 24**:
-```
-P0: 11-8-2 | 3-7-6 | 8-4-5 | 0-1-9
-
-Four trichords, all set class (014)
-Each trichord related by P, I, R, or RI
-Only 12 distinct row forms (due to symmetry)
-```
-
-**Dallapiccola, Piccola Musica Notturna** (1954):
-Row unfolds gradually with free repetition—demonstrates flexible approach to twelve-tone technique.
-
-## Related Concepts
-
-- **Prerequisite**: pitch-class, interval-class, set-theory-analysis
-- **Leads to**: row-matrix, row-operations, combinatoriality
-- **See also**: serialism, derived-row
-
-## Common Confusions
-
-- Twelve-tone row = ordered arrangement of all 12 pitch classes
-- Each pitch class appears exactly once in the row
-- The row is a fixed ORDER, not just a collection
-- Row generates up to 48 forms (P, I, R, RI each at 12 transpositions)
-- "Series" and "row" are synonymous terms
-- Not the same as pitch-class set (row is ordered, set is unordered)
-- Rows don't specify rhythm, register, or duration
-- Different rows have different interval contents
-- Some rows have symmetry properties reducing 48 to fewer forms
-- Row forms maintain interval relationships when transformed
-- "Twelve-tone" refers to pitch organization, not timbre or rhythm
-- Not all music with 12 pitch classes is "twelve-tone"
-- Twelve-tone is a technique, not a style
-- Composers vary widely in how strictly they follow row ordering
-- Repetition of notes within row statement varies by composer/piece
-
-## Source Reference
-
-Open Music Theory, Part IX: "Basics of Twelve-Tone Theory"
+# Verification Notes
+- Definition source: Directly from 09-01 source chapter
+- Confidence rationale: High -- comprehensive treatment in source
+- Preserved from v2: Lutyens, Webern Op. 21, Webern Op. 24 examples, 48-form calculation
+- Cross-reference status: Verified against row properties and naming conventions chapters

@@ -1,91 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Parallel Keys
-category: theory
-source: Open Music Theory
-chapter: "Minor Scales, Scale Degrees, and Key Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: parallel-keys
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Minor Scales, Scale Degrees, and Key Signatures"
+chapter_number: 13
+pdf_page: null
+section: "The Parallel and Relative Relationships"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "parallel major"
+  - "parallel minor"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - major-scale
+  - minor-scale
+extends: []
+related:
+  - relative-keys
+  - mode-mixture
+contrasts_with:
+  - relative-keys
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are parallel keys?"
+  - "What do parallel keys share?"
+  - "How do parallel keys differ from relative keys?"
 ---
 
-# Parallel Keys
+# Quick Definition
 
-## Quick Definition
+A major and minor key that share the same tonic note but have different key signatures.
 
-Major and minor keys that share the same tonic note but have different key signatures, such as C major and C minor, or G major and G minor.
+# Core Definition
 
-## Formal Definition
+The **parallel relationship** is when a major key shares a tonic (do, ^1) with a minor key. For example, C major and C minor are parallel keys -- both have C as tonic but use different key signatures. The terms "parallel major" and "parallel minor" describe the relationship.
 
-**Parallel keys** (or the **parallel relationship**) refers to a major key and a minor key that share the same tonic (starting note) but differ in their key signatures and scale structures.
+# Prerequisites
 
-**Characteristics**:
-- Same tonic pitch (e.g., both start on C)
+- **Major scale**: one side of the relationship
+- **Minor scale**: the other side
+
+# Key Properties
+
+- Parallel keys share the same TONIC
 - Different key signatures
-- Different scale patterns (major vs. minor)
-- Differ by three flats (major → minor adds three flats or removes three sharps)
+- Same starting note, different patterns of half and whole steps
 
-**Examples of parallel key pairs**:
-- C major (no sharps/flats) ↔ C minor (3 flats: B♭, E♭, A♭)
-- G major (1 sharp: F♯) ↔ G minor (2 flats: B♭, E♭)
-- D major (2 sharps: F♯, C♯) ↔ D minor (1 flat: B♭)
-- A major (3 sharps: F♯, C♯, G♯) ↔ A minor (no sharps/flats)
+# Construction / Recognition
 
-**Scale degree differences**:
-- Parallel minor lowers ^3, ^6, and ^7 (in natural minor form)
-- Parallel major raises ^3, ^6, and ^7 (compared to natural minor)
+Keep the same tonic and switch between major and minor scale patterns.
 
-**Contrast with relative keys**: Parallel keys share tonic; relative keys share key signature.
+# Context & Application
 
-## Musical Context
+Parallel keys are important for mode mixture (borrowing chords from the parallel key) and for understanding the relationship between major and minor on the same tonic.
 
-Parallel relationships are fundamental to tonal music:
-- **Modal mixture/borrowing**: composers borrow chords from parallel keys
-- **Tonal color**: shift between parallel major and minor creates dramatic effect
-- **Expressive contrast**: major = bright; minor = dark (same tonic provides continuity)
-- **Common in Romantic music**: Schubert, Brahms frequently shift between parallel keys
-- **Picardy third**: ending a minor piece with parallel major chord
+# Examples
 
-The parallel relationship enables rich harmonic vocabulary through modal interchange.
+- C major / C minor (same tonic: C)
+- Ab major / Ab minor (same tonic: Ab)
+- F# major / F# minor (same tonic: F#)
 
-## Examples
+# Relationships
 
-### Basic
+- **Leads to**: mode-mixture, borrowed-chord
+- **See also**: relative-keys, major-scale, minor-scale
 
-**C major ↔ C minor**:
-- C major scale: C D E F G A B C
-- C natural minor scale: C D E♭ F G A♭ B♭ C
-- Difference: E♭, A♭, B♭ (lowered ^3, ^6, ^7)
+# Common Errors
 
-**G major ↔ G minor**:
-- G major: G A B C D E F♯ G (key signature: F♯)
-- G natural minor: G A B♭ C D E♭ F G (key signature: B♭, E♭)
-- Share tonic G, different key signatures
+- Confusing parallel and relative keys
 
-**A major ↔ A minor**:
-- A major: A B C♯ D E F♯ G♯ A (key signature: F♯, C♯, G♯)
-- A natural minor: A B C D E F G A (key signature: none)
-- Difference: three sharps
+# Common Confusions
 
-### From Repertoire
+- Parallel keys share a TONIC; relative keys share a KEY SIGNATURE
 
-Beethoven's Symphony No. 5: famously moves from C minor to C major (parallel keys) in finale. Brahms's Intermezzi frequently shift between parallel major and minor. Schubert's "Death and the Maiden": uses D minor and D major (parallel). Many Baroque pieces end minor movements with Picardy third (parallel major chord).
-
-## Related Concepts
-
-- **Prerequisite**: major-scale, minor-scale, key-signature
-- **Leads to**: modal-mixture, borrowed-chords, picardy-third, mode
-- **See also**: relative-keys, mode, key-signature, modal-interchange
-
-## Common Confusions
-
-- Parallel vs. relative: parallel = same tonic (C major/C minor); relative = same key signature (C major/A minor)
-- Parallel keys always share the same tonic letter name and accidental
-- Difference is always three accidentals (major → minor adds 3 flats or removes 3 sharps)
-- "Parallel major" of C minor = C major (not E♭ major, which is the relative major)
-- Parallel keys are not the same as "relative" keys—these are distinct relationships
-- Mode vs. parallel key: closely related concepts (major mode vs. minor mode on same tonic)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 13: "Minor Scales, Scale Degrees, and Key Signatures"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: tonic-sharing definition, contrast with relative keys.

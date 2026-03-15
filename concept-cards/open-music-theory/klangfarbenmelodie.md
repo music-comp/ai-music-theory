@@ -1,176 +1,80 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Klangfarbenmelodie
-category: technique
-source: Open Music Theory
-chapter: "Analysis Examples - Webern Op. 21 and 24"
-pdf_page: null
-chapter_number: 9
-unit: null
+slug: klangfarbenmelodie
+# === CLASSIFICATION ===
+category: application
+subcategory: orchestration
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Subtle Color Changes"
+chapter_number: 10
+pdf_page: null
+section: "X.2"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases:
+  - "sound-color melody"
+  - "tone-color melody"
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - orchestral-blend
+extends: []
+related:
+  - twelve-tone-analysis
+  - dovetailing
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is Klangfarbenmelodie?"
+  - "How does timbre articulate musical structure?"
 ---
 
-# Klangfarbenmelodie
+# Quick Definition
+Klangfarbenmelodie ("sound-color melody") is a compositional technique in which timbre variation creates a "kaleidoscope" melody -- a single melodic line passes among different instruments to color each note differently, articulating structural divisions and creating timbral variety within a continuous line.
 
-## Quick Definition
+# Core Definition
+Coined by Schoenberg in his Harmonielehre (1911), Klangfarbenmelodie treats timbre as a structural parameter equal to pitch and rhythm. In Schoenberg's "Farben" (Five Orchestral Pieces No. 3), the technique is foundational. Webern's Konzert Op. 24 uses timbre to articulate the row's trichordal divisions. Webern's orchestration of Bach's Ricercata from the Musical Offering is a landmark example, with palindromic timbral schemes analyzing the fugue subject's contour. Mahler also distributed melodies across instruments (7/iii Scherzo). Gubaidulina's Offertorium takes up Webern's timbral design of the Bach theme with a formal truncation process.
 
-Klangfarbenmelodie (German for "sound-color melody") is a compositional technique where a melodic line is distributed across different instruments or timbres, with each note or small group of notes played by a different instrument—creating a melody of changing tone colors rather than a continuous single-instrument line, particularly associated with Schoenberg and Webern but with precedents in Mahler's orchestration, serving to emphasize individual tones and create textural variety in twelve-tone and other atonal music.
+# Prerequisites
+- Orchestral blend
 
-## Formal Definition
+# Key Properties
+1. Timbre variation within a single melodic line
+2. Each note or phrase segment gets a different instrumental color
+3. Can articulate structural divisions (row segments, motivic groups)
+4. Related to pointillism (extreme case: one note per instrument)
+5. Timbral schemes can be palindromic or otherwise structured
+6. Pre-echoes in Schubert and Brahms (symmetrical timbral schemes)
 
-**Klangfarbenmelodie**: Melody distributed across changing timbres.
+# Context & Application
+Klangfarbenmelodie is central to the Second Viennese School's orchestral practice and has influenced composers from Mahler to Gubaidulina. It represents the elevation of timbre to a primary structural parameter.
 
-**Technique**:
-```
-Traditional melody:     One instrument, continuous line
-                       Violin: C-D-E-F-G-A-B-C
+# Examples
+**Example 1** (Webern, Konzert Op. 24): Each trichord of the row assigned to a different instrument, articulating the row's structure.
+**Example 2** (Webern, orch. of Bach Ricercata): Palindromic timbral scheme analyzing the fugue subject.
+**Example 3** (Mahler, Symphony 7/iii): Pointillistic opening coalescing into a coherent line.
 
-Klangfarbenmelodie:    Multiple instruments, shared line
-                       Flute: C-D | Clarinet: E-F | Oboe: G | Horn: A-B-C
-```
+# Relationships
+## Builds Upon
+- **orchestral-blend** -- Manipulates blend for melodic timbral variety
+## Related
+- **twelve-tone-analysis** -- Timbre articulates serial structure
+- **dovetailing** -- Related technique of sharing lines between instruments
 
-**Characteristics**:
-- Each pitch or short segment assigned to different instrument
-- Melodic continuity maintained through pitch succession
-- Timbral variety added through changing colors
-- Individual notes receive emphasis through isolation
-- Creates pointillistic texture
+# Common Confusions
+- **Confusion**: Klangfarbenmelodie is only a 20th-century technique
+  **Clarification**: It has precedents in Schubert, Brahms, and Mahler
 
-**Term origin**: Coined by Schoenberg (1911), Harmonielehre
+# Source Reference
+Open Music Theory, Part X, Chapter 2: "Subtle Color Changes," and Part IX, Chapter 4.
 
-## Musical Context
-
-Klangfarbenmelodie serves multiple purposes:
-- **Highlighting individual pitches**: Each tone distinct
-- **Avoiding traditional melody**: Fragments continuous line
-- **Exploring timbre**: Treats color as structural element
-- **Creating texture**: Pointillistic, scattered sound
-- **Serial emphasis**: Suits twelve-tone thinking (each note equal)
-
-**Historical context**:
-- Precedents in Mahler's orchestration
-- Central to Second Viennese School
-- Webern's orchestration of Bach's Ricercar (famous example)
-- Influenced Boulez, Stockhausen, spectral composers
-
-## Examples
-
-### Basic
-
-**Simple Klangfarbenmelodie**:
-```
-Melody: C-D-E-F-G-A-B-C (ascending scale)
-
-Traditional:
-Flute: C-D-E-F-G-A-B-C (one instrument)
-
-Klangfarbenmelodie distribution:
-Flute:     C---
-Oboe:        -D--
-Clarinet:      -E-F-
-Horn:            --G--
-Trumpet:            -A-B-
-Violin:                  -C
-
-Same pitches, changing colors
-Melody "passed around" the ensemble
-```
-
-**Timbral sequence in pairs**:
-```
-Webern Op. 21 pattern:
-Voice 1: Horn → Clarinet → Low string → Clarinet → Horn
-Voice 2: (paired similarly)
-
-Symmetrical timbral sequence
-Complements pitch symmetry
-```
-
-### From Repertoire
-
-**Webern, Symphonie Op. 21, Movement I**:
-```
-Opening double canon uses Klangfarbenmelodie:
-
-P0 (first voice):
-  Harp: notes 1-2
-  Horn: notes 3-4
-  Clarinet: notes 5-6-7
-  Bass clarinet: notes 8-9-10
-  Harp: notes 11-12
-
-The row is distributed across instruments
-No single instrument plays complete row
-Creates shimmering, pointillistic texture
-```
-
-**Webern, orchestration of Bach's Ricercar**:
-```
-Original: Keyboard piece (single timbre)
-
-Webern's orchestration:
-- Distributes subject across orchestra
-- Each note or few notes = different instrument
-- Makes counterpoint more visible/audible
-- Celebrates individual tones
-
-Iconic example of applying Klangfarbenmelodie
-to existing music
-```
-
-**Typical Webern passage**:
-```
-Four instruments, four pitches:
-Flute: Bb (pp)
-Clarinet: rest
-Violin: E (ppp)
-Cello: rest
-
-Then:
-Flute: rest
-Clarinet: G# (pp)
-Violin: rest
-Cello: D (ppp)
-
-Each pitch isolated, distinct timbre
-Creates silence between colors
-Extremely economical, concentrated
-```
-
-**Mahler precedent** (Symphony No. 9):
-```
-Melodic fragments shared between:
-- Violins start phrase
-- Woodwinds continue
-- Brass conclude
-
-Less extreme than Webern
-But establishes principle of
-timbrally varied melodic presentation
-```
-
-## Related Concepts
-
-- **Prerequisite**: twelve-tone-row
-- **Leads to**: total-serialism
-- **See also**: texture, second-viennese-school
-
-## Common Confusions
-
-- Klangfarbenmelodie = melody distributed across changing timbres
-- German: Klang (sound) + Farben (colors) + Melodie (melody)
-- NOT just varied orchestration (specifically fragments melody)
-- Each note or small group gets different instrument
-- Creates pointillistic, discontinuous texture
-- Associated especially with Webern
-- Term coined by Schoenberg (1911)
-- Precedents exist in Mahler's orchestration
-- Famous example: Webern's orchestration of Bach Ricercar
-- Suits twelve-tone thinking (emphasizes individual pitches)
-- Can be combined with dynamics (ppp, pp, etc.) for further isolation
-- Related to but distinct from orchestral "color"
-- Not limited to twelve-tone music
-- Influenced post-war avant-garde composers
-
-## Source Reference
-
-Open Music Theory, Part IX: "Analysis Examples - Webern Op. 21 and 24"
+# Verification Notes
+- Definition source: From 10-02 and 09-04
+- Confidence rationale: High
+- Preserved from v2: Schoenberg, Webern, Mahler, Gubaidulina examples
+- Cross-reference status: Verified

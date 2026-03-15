@@ -1,248 +1,111 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Supertonic Seventh
-category: theory
-source: Open Music Theory
-chapter: "Seventh Chords and Predominant Function"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: supertonic-seventh
+
+# === CLASSIFICATION ===
+category: chords
+subcategory: seventh-chords
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Predominant Seventh Chords"
+chapter_number: 13
+pdf_page: null
+section: "Adding a chordal seventh to ii"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "ii7"
+  - "ii6/5"
+  - "supertonic seventh chord"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - strong-predominant
+  - predominant-seventh-chord
+extends:
+  - strong-predominant
+related:
+  - dominant-seventh-chord
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the supertonic seventh chord?"
+  - "Which inversion of ii7 is most common?"
+  - "How does ii7 resolve?"
 ---
 
-# Supertonic Seventh
+# Quick Definition
 
-## Quick Definition
+The supertonic seventh (ii7) is the most common predominant seventh chord, with ii6/5 as its most frequent inversion. It intensifies the approach to the dominant, with the chordal seventh approaching by step or common tone and resolving down by step.
 
-A minor seventh chord built on the second scale degree (^2) in major keys, notated as ii⁷, consisting of a minor triad plus minor seventh (mm7), functioning as the most common predominant harmony that leads naturally to the dominant—with scale degrees ^2-^4-^6-^1 (in C major: D-F-A-C) creating smooth voice leading where the chordal seventh (^1) resolves down to the leading tone (^7) in the dominant chord, universally used in common-practice music as the standard predominant seventh chord.
+# Core Definition
 
-## Formal Definition
+The **supertonic seventh** (ii7) is the most common predominant seventh chord, adding a seventh to the ii chord to intensify its motion to V (OMT, Ch. IV.13). The inversions in order of commonality are: ii6/5, ii7, ii4/2, ii4/3. Each has specific typical contexts:
+- **ii6/5**: Substitutes for ii6 near phrase endings
+- **ii7**: Near phrase endings; preceded by I6 (not I) to avoid parallels
+- **ii4/2**: Expands tonic in I-ii4/2-V6/5-I progression
+- **ii4/3**: Uncommon; replaces strong PD at phrase endings
 
-**Supertonic seventh chord** (ii⁷) is a four-note chord consisting of:
-- **Root**: Supertonic (^2)
-- **Third**: Subdominant (^4) - minor third above root
-- **Fifth**: Submediant (^6) - perfect fifth above root
-- **Seventh**: Tonic (^1) - minor seventh above root
+# Prerequisites
 
-**Structure**: Minor triad + minor seventh (mm7 or minor-minor seventh)
+- **Strong predominant** — ii7 adds a seventh to the strong PD ii
+- **Predominant seventh chord** — ii7 is the primary example of this category
 
-**In C major**: D-F-A-C (D minor triad + minor seventh)
+# Key Properties
 
-**Function**: Predominant (leads to dominant V or V⁷)
+1. Most common predominant seventh chord
+2. ii6/5 most frequent inversion
+3. Chordal seventh: approach by step/common tone, resolve down by step
+4. ii7 preceded by I6 (not I) to avoid parallels
+5. ii7 to V7: one chord must be incomplete
+6. ii4/2 works in tonic expansion: I-ii4/2-V6/5-I
 
-## Chord Tones and Voice Leading
+# Construction / Recognition
 
-**Chord members** (in C major, ii⁷ = Dm⁷):
-- **Root (D, ^2)**: Often in bass, leaps to ^5 or ^7
-- **Third (F, ^4)**: Common tone with V⁷, can stay or resolve down
-- **Fifth (A, ^6)**: Often moves to ^5 or ^7
-- **Seventh (C, ^1)**: **Must resolve down** to ^7 (B, leading tone in V)
+## Inversion Uses:
+| Inversion | Typical Context | Commonality |
+|---|---|---|
+| ii6/5 | Substitutes for ii6 at phrase endings | Most common |
+| ii7 | Phrase endings | Common |
+| ii4/2 | Tonic expansion: I-ii4/2-V6/5-I | Less common |
+| ii4/3 | Strong PD at phrase endings | Uncommon |
 
-**Key voice leading feature**:
-```
-ii⁷:  D-F-A-C    →   V⁷:  G-B-D-F
-      ↑   ↑ ↑ ↑          ↑ ↑ ↑ ↑
-      ^2  ^4^6^1        ^5^7^2^4
+# Examples
 
-C (^1) resolves DOWN to B (^7)
-Smooth stepwise motion in most voices
-```
+**Example 1** (OMT Ch. IV.13, Example 3): Writing with ii6/5.
 
-## Voice Leading: ii⁷ → V⁷ → I
+**Example 2** (OMT Ch. IV.13, Example 4): Writing with ii7, showing incomplete chord requirement when resolving to V7.
 
-**Standard progression**:
-```
-ii⁷:  D-F-A-C    V⁷:  G-B-D-F    I:  C-E-G-C
-S:    C  →  B   →  C   (^1 → ^7 → ^1, seventh resolves down)
-A:    A  →  G   →  E   (^6 → ^5 → ^3)
-T:    F  →  D   →  C   (^4 → ^2 → ^1, or F stays then to E)
-B:    D  →  G   →  C   (^2 → ^5 → ^1, bass roots)
+**Example 3** (OMT Ch. IV.13, Example 5): Writing with ii4/2 in tonic expansion.
 
-Seventh (C) resolves down by step to B
-Root (D) moves to V root (G)
-Smooth voice leading throughout
-```
+# Relationships
 
-**Common tone** (F between ii⁷ and V⁷):
-```
-ii⁷ contains F (^4)
-V⁷ contains F (^4, chordal seventh)
+## Builds Upon
+- **Strong predominant** — ii7 is an enriched version of the strong PD ii
 
-F can be common tone, held in same voice
-Creates smooth connection
-```
+## Related
+- **Dominant seventh chord** — Same principle of adding a seventh for harmonic intensification
 
-## ii⁷ in Context
+# Common Errors
 
-**Typical progressions**:
+- **Error**: Preceding ii7 with root-position I
+  **Correction**: Use I6 before ii7 to avoid potential parallels
 
-**I - ii⁷ - V⁷ - I** (standard):
-```
-C   Dm⁷   G⁷   C
+# Source Reference
 
-Most common progression showing predominant function
-```
+Open Music Theory, Part IV, Chapter 13: "Predominant Seventh Chords," section "Adding a chordal seventh to ii." See Examples 2-6.
 
-**I - IV - ii⁷ - V⁷ - I** (expanded predominant):
-```
-C   F    Dm⁷   G⁷   C
+# Verification Notes
 
-Both IV and ii⁷ function as predominant
-ii⁷ strengthens approach to V
-```
-
-**vi - ii⁷ - V⁷ - I** (deceptive preparation):
-```
-Am  Dm⁷   G⁷   C
-
-After deceptive cadence, ii⁷ leads to authentic
-```
-
-## Inversions of ii⁷
-
-**ii⁷** (root position):
-- Bass: ^2 (D in C major)
-- Figured bass: ⁷ or ⁷₅
-- Most common, strongest
-
-**ii⁶₅** (first inversion):
-- Bass: ^4 (F in C major)
-- Figured bass: ⁶₅
-- Common, especially before V or I⁶
-
-**ii⁴₃** (second inversion):
-- Bass: ^6 (A in C major)
-- Figured bass: ⁴₃
-- Less common
-
-**ii⁴₂** or **ii²** (third inversion):
-- Bass: ^1 (C in C major)
-- Figured bass: ⁴₂ or ²
-- Bass resolves down to ^7 (leading tone)
-- Often resolves to V or I⁶
-
-## ii⁷ vs. ii (Plain Triad)
-
-**ii⁷** (with seventh):
-- Four notes: ^2-^4-^6-^1
-- Seventh adds forward drive
-- Smoother voice leading to V⁷
-- More common in Classical style
-
-**ii** (plain triad):
-- Three notes: ^2-^4-^6
-- Less chromatically driven
-- Simpler, but less smooth to V⁷
-- Also valid predominant
-
-**ii⁷ preferred** in many contexts for smoother progression to V⁷
-
-## Musical Context
-
-The supertonic seventh serves critical functions:
-- **Primary predominant**: Most common PD chord after IV
-- **Smooth voice leading**: Seventh resolves down to leading tone
-- **Expands harmonic vocabulary**: Beyond plain ii triad
-- **Universal in common-practice**: Nearly ubiquitous in Classical music
-- **Minor quality**: Appropriate for predominant function in major keys
-- **Leads naturally to V**: Harmonic gravity pulls toward dominant
-
-ii⁷ is essential to common-practice harmonic syntax.
-
-## Examples
-
-### Basic
-
-**ii⁷-V⁷-I in C major**:
-```
-ii⁷:  D-F-A-C    (supertonic seventh)
-V⁷:   G-B-D-F    (dominant seventh)
-I:    C-E-G-C    (tonic)
-
-C (^1, seventh) → B (^7, leading tone) → C (^1, tonic)
-Smooth stepwise resolution
-```
-
-**Voice leading detail**:
-```
-        ii⁷     V⁷      I
-S:      C   →   B   →   C   (1→7→1, seventh resolves)
-A:      A   →   G   →   E   (6→5→3)
-T:      F   →   D   →   C   (4→2→1)
-B:      D   →   G   →   C   (2→5→1, roots)
-
-Seventh resolves down
-All voices move smoothly
-```
-
-**ii⁶₅ - V** (first inversion):
-```
-ii⁶₅: F-A-C-D    (first inversion, ^4 in bass)
-V:    G-B-D-G    (root position dominant)
-
-F (bass) moves to G
-C resolves to B (seventh down)
-```
-
-**ii⁴₂ - I⁶** (third inversion):
-```
-ii⁴₂: C-D-F-A    (seventh in bass, ^1)
-I⁶:   C-E-G-C    (first inversion tonic)
-
-C (bass) stays (or down to B, then up to C in I⁶)
-Seventh in bass creates strong resolution
-```
-
-**Common progression**:
-```
-I  -  IV  -  ii⁷  -  V⁷  -  I
-C     F      Dm⁷    G⁷     C
-
-Predominant zone: IV - ii⁷
-Both lead to V⁷
-```
-
-### From Repertoire
-
-**Mozart, Piano Sonatas**: ii⁷-V⁷-I progressions throughout, standard predominant-dominant-tonic, smooth voice leading.
-
-**Beethoven, Symphonies**: ii⁷ expands predominant function, often in cadential progressions and phrase endings.
-
-**Bach, Chorales**: ii⁷ (and inversions) common in SATB settings, demonstrates proper seventh resolution.
-
-**Haydn, String Quartets**: ii⁷ in various inversions, particularly ii⁶₅ before V or I⁶.
-
-**Classical style universally**: ii⁷-V⁷-I perhaps most common cadential progression in Classical repertoire.
-
-## Related Concepts
-
-- **Prerequisite**: seventh-chord, pre-dominant-function, voice-leading
-- **Leads to**: circle-of-fifths, seventh-chord-resolution
-- **See also**: dominant-seventh-chord
-
-## Common Confusions
-
-- Supertonic seventh = ii⁷ (built on ^2 in major)
-- Structure: minor triad + minor seventh (mm7)
-- In C major: D-F-A-C (Dm⁷)
-- Function: Predominant (leads to V)
-- Seventh (^1) must resolve DOWN to ^7 (leading tone)
-- ii⁷ → V⁷ → I = standard progression (PD-D-T)
-- Root position figured bass: ⁷ or ⁷₅
-- First inversion: ii⁶₅ (^4 in bass)
-- Second inversion: ii⁴₃ (^6 in bass)
-- Third inversion: ii⁴₂ or ii² (^1 in bass, resolves down)
-- Different from V⁷ (which is major-minor seventh, Mm7)
-- ii⁷ quality = mm7 (minor triad + minor seventh)
-- Common tone F (^4) between ii⁷ and V⁷
-- More common than plain ii triad in Classical style
-- Smooth voice leading to V⁷ (seventh resolves to leading tone)
-- Essential predominant harmony in tonal music
-- Can substitute for or follow IV
-- All inversions usable, each with characteristic bass motion
-- Lowercase "ii" = minor quality (in major keys)
-- In minor keys, ii°⁷ (half-diminished seventh) on ^2
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Seventh Chords and Predominant Function"
+- Definition source: Direct from OMT Ch. IV.13
+- Confidence rationale: HIGH — explicit inversion hierarchy
+- Re-extraction notes: Re-extracted from v2 card; preserved: inversion hierarchy, incomplete chord requirement for ii7-V7.

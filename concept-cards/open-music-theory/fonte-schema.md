@@ -1,164 +1,87 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Fonte Schema
-category: theory
-source: Open Music Theory
-chapter: "Galant Schemas – Summary"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: fonte-schema
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: galant-schemas
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Galant Schemas – Summary"
+chapter_number: 12
+pdf_page: null
+section: "Answer/Process/Transition"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - galant-schema
+extends: []
+related:
+  - monte-schema
+  - ponte-schema
+  - meyer-schema
+contrasts_with:
+  - monte-schema
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Fonte schema and how does it tonicize two keys?"
+  - "How does the Fonte relate to the Meyer and the cycle of fifths?"
 ---
 
-# Fonte Schema
+# Quick Definition
+A four-stage continuation schema (described by Riepel) that tonicizes the supertonic minor and then the tonic, using a modular V-I pattern that descends by step, with melody sol-fa-fa-mi and bass di-re-ti-do.
 
-## Quick Definition
+# Core Definition
+The **Fonte** (described by Joseph Riepel) is a continuation schema with four stages: melody sol(5)-fa(4)-fa(4)-mi(3) over bass di(raised 1)-re(2)-ti(7)-do(1). Meter: W-S-W-S. Figured bass: 6/5-5-6/5-5. Roman numerals: V/ii-ii-V-I. It effectively tonicizes the supertonic minor and then the tonic in a sequential pattern. The modular half is a simple V-I: melody fa(4)-mi(3) over bass ti(7)-do(1). The Fonte has a strong relation to the Meyer and the cycle of fifths (Ch. 12).
 
-A four-stage sequential galant schema that descends by whole step through two tonicizations, with a characteristic fa-mi pattern repeated a step lower, creating a descending harmonic sequence (V/ii-ii, V-I) that provides continuation or transitional material in 18th-century music.
+# Prerequisites
+- **Galant schema** -- Understanding schema structure
 
-## Formal Definition
+# Key Properties
+1. Four stages with two sequential tonicizations (supertonic then tonic)
+2. Modular: each half is a V-I progression
+3. Melody: sol-fa-fa-mi; Bass: di-re-ti-do
+4. Meter: W-S-W-S
+5. Continuation/process position in a piece
+6. Strong relationship to cycle of fifths
 
-The **Fonte** (Italian: "fountain" or "source"; named by Joseph Riepel in 18th century) is a sequential schema that creates harmonic motion through two parallel tonicizations descending by whole step. The name may relate to the descending, flowing character of the sequence.
+# Construction / Recognition
+## To Identify:
+1. Look for two sequential V-I progressions descending by step
+2. Check for the raised-1 (di) in the bass signaling tonicization of ii
 
-**Four-stage structure**:
+# Context & Application
+The Fonte is a common continuation schema that provides harmonic variety through brief tonicization of the supertonic before returning to the tonic. Named by Riepel, it typically appears after an opening gambit.
 
-| Stage | 1 | 2 | 3 | 4 |
-|-------|---|---|---|---|
-| Meter | W | S | W | S |
-| Melody | sol (^5) | fa (^4) | fa (^4) | mi (^3) |
-| Bass | di (♯^1) | re (^2) | ti (^7) | do (^1) |
-| Figures | 6/5 | 5 | 6/5 | 5 |
-| Roman numerals | V/ii | ii | V | I |
+# Examples
+**Example 1** (Ch. 12): Complete Fonte table with four stages and modular half.
 
-**Key characteristics**:
-- **Sequential structure**: Two-stage module (stages 1-2) repeated a step lower (stages 3-4)
-- **Descending by step**: Entire pattern descends one scale degree
-- **Tonicization pattern**: V-i in one key, then V-I a step lower
-- **Modular repetition**: Stages 3-4 are transposition of stages 1-2 down a whole step
-- **Fa-mi cadential pattern**: Each module ends with fa-mi (^4-^3) melodic descent
-- **Metric pattern**: Weak-strong-weak-strong (W-S-W-S)
+# Relationships
+## Related
+- **monte-schema** -- Another Riepel schema; Monte ascends, Fonte descends
+- **meyer-schema** -- Fonte shares structural relationship with Meyer
+## Contrasts With
+- **monte-schema** -- Monte rises by step; Fonte descends by step
 
-**Relationship to cycle of fifths**:
-- Fonte connects to descending fifth progressions
-- V/ii → ii → V → I follows circle-of-fifths root motion
-- Effectively tonicizes supertonic minor (ii), then tonic major (I)
-- Each two-stage module = V-i resolution in different keys
+# Common Confusions
+- **Confusion**: Fonte and Monte are the same type of schema
+  **Clarification**: Fonte descends (tonicizes ii then I); Monte ascends (tonicizes IV then V)
 
-**Modularity**:
-The core module (one tonicization):
+# Source Reference
+Open Music Theory, Part II, Chapter 12: "Galant Schemas -- Summary," section "Answer/Process/Transition."
 
-| Stage | 1 | 2 |
-|-------|---|---|
-| Meter | W | S |
-| Melody | fa (^4) | mi (^3) |
-| Bass | ti (^7) | do (^1) |
-| Figures | 6/5 | 5/3 |
-| Roman numerals | V | I |
-
-This module appears twice: first in supertonic minor context (a tone above tonic), then in tonic.
-
-**Function**:
-- **Continuation schema**: Follows opening gambits, provides forward motion
-- **Sequential transition**: Bridges thematic material through descending sequence
-- **Harmonic variety**: Tonicizations create tonal color without true modulation
-- **Voice-leading pattern**: Teaches sequential technique and tonicization
-
-**Relation to Meyer**:
-Fonte shares structural similarity with Meyer (both use fa-mi pattern), but:
-- Meyer: Single I-V-V-I progression (opening function)
-- Fonte: Two sequential V-I progressions (continuation function)
-- Fonte emphasizes cycle-of-fifths motion through tonicizations
-
-## Musical Context
-
-The Fonte serves specific purposes in galant music:
-- **Sequential development**: Provides continuation after opening material
-- **Harmonic motion**: Creates sense of progression through sequential tonicizations
-- **Transition technique**: Bridges sections or leads to new material
-- **Melodic sequence**: Teaches sequential repetition at descending intervals
-- **Improvisation framework**: Provides ready-made continuation pattern
-
-The descending sequential motion creates directed harmonic energy characteristic of galant transitions and continuations.
-
-## Examples
-
-### Basic
-
-**Fonte in C major**:
-```
-Stage 1 (W): Soprano G4 (sol/^5), Bass C#4 (di/♯^1), V6/5/ii in C (= V6/5 in D minor)
-Stage 2 (S): Soprano F4 (fa/^4), Bass D4 (re/^2), ii in C (= i in D minor)
-Stage 3 (W): Soprano F4 (fa/^4), Bass B3 (ti/^7), V6/5 in C
-Stage 4 (S): Soprano E4 (mi/^3), Bass C4 (do/^1), I in C
-
-Module 1 (stages 1-2): Tonicizes D minor (ii)
-Module 2 (stages 3-4): Tonicizes C major (I)
-Pattern descends by whole step
-```
-
-**Fonte modular structure** (showing repetition):
-```
-Module A (in D minor context):
-  fa → mi over ti → do
-  Creates V-i in D minor
-
-Module B (in C major context, one step lower):
-  fa → mi over ti → do
-  Creates V-I in C major
-
-Same pattern, transposed down a step
-```
-
-**Fonte bass line** (emphasizing chromatic alteration):
-```
-Bass: C#-D-B-C
-      ↑ (raised ^1 for tonicization)
-The C# (di/♯^1) signals V/ii
-Descends chromatically then diatonically to tonic
-```
-
-**Fonte in parallel to Meyer**:
-```
-Meyer: I - V - V - I (single tonic-dominant trajectory)
-Fonte: V/ii - ii - V - I (sequential tonicizations)
-
-Both feature fa-mi melodic patterns
-Fonte repeats pattern sequentially (modular)
-Meyer uses pattern once in unified progression
-```
-
-### From Repertoire
-
-**Mozart Piano Sonata K. 545, I, transition**: Uses Fonte pattern to transition from first theme to contrasting material, demonstrating typical continuation function.
-
-**Haydn String Quartets**: Fonte appears frequently in development sections and transitions, creating sequential harmonic motion.
-
-**Mozart Piano Concerto K. 467, I**: Fonte in tutti passages provides sequential bridge between thematic statements.
-
-**Galant symphonies** (J.C. Bach, Stamitz, Gossec): Fonte as standard continuation pattern after opening material.
-
-**C.P.E. Bach keyboard works**: Features Fonte in transitions, often with characteristic embellishments and suspensions.
-
-## Related Concepts
-
-- **Prerequisite**: galant-schema, sequence, tonicization, circle-of-fifths, scale-degree
-- **Leads to**: continuation-phrase
-- **See also**: meter
-
-## Common Confusions
-
-- Fonte ≠ any descending sequence—specific V/ii-ii, V-I pattern
-- Sequential repetition = key feature (modular structure)
-- Fonte vs. Meyer: both use fa-mi but different harmonic contexts
-- Name "Fonte" (fountain) doesn't describe musical function—historical naming
-- Two tonicizations don't equal true modulation (brief harmonic coloring)
-- Bass chromatic alteration (♯^1) essential for V/ii tonicization
-- Can appear in minor mode with adjustments to scale degrees
-- Not limited to exactly four stages (can be extended or compressed)
-- Fonte vs. descending tetrachord: different patterns (Fonte has specific tonicization structure)
-- Stages 3-4 are transposed copy of stages 1-2 (not independent)
-- Named by Riepel (18th-century theorist), not modern invention
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 11: "Galant Schemas"
-Open Music Theory, Part II, Chapter 12: "Galant Schemas – Summary"
+# Verification Notes
+- Re-extracted from v2 card; preserved: Riepel attribution, modular half description
+- Confidence: HIGH -- explicitly defined with complete table

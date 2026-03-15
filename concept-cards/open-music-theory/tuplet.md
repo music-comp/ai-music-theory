@@ -1,95 +1,101 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tuplet
-category: theory
-source: Open Music Theory
-chapter: "Other Rhythmic Essentials"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: tuplet
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Other Rhythmic Essentials"
+chapter_number: 11
+pdf_page: null
+section: "Borrowed Divisions"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "borrowed division"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - beat
+  - simple-meter
+  - compound-meter
+extends: []
+related:
+  - rhythm
+  - syncopation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a tuplet?"
+  - "What is a triplet?"
+  - "What is a duplet?"
 ---
 
-# Tuplet
+# Quick Definition
 
-## Quick Definition
+A rhythm that divides a beat (or subdivision) into a number of parts different from the meter's normal division; triplets divide simple-meter beats into 3, duplets divide compound-meter beats into 2.
 
-A rhythmic grouping that temporarily borrows a different beat division than the prevailing meter, most commonly triplets (3 notes in the space of 2) in simple meter or duplets (2 notes in the space of 3) in compound meter.
+# Core Definition
 
-## Formal Definition
+A **tuplet** is a rhythmic device that uses a division "borrowed" from another meter type. A **triplet** divides a beat in simple meter into three parts (borrowed from compound meter); it is notated with the number 3 above the group. A **duplet** divides a beat in compound meter into two parts (borrowed from simple meter); it is notated with the number 2 above the group. Triplets can occur at the beat level, subdivision level, or across multiple beats.
 
-A **tuplet** is a rhythmic device that divides a beat (or multiple beats, or a subdivision) into a number of equal parts that differs from the meter's normal division pattern. Tuplets are "borrowed divisions" from the opposite meter type.
+# Prerequisites
 
-**Common types**:
+- **Beat**: the pulse being divided
+- **Simple meter**: where triplets are borrowed from compound
+- **Compound meter**: where duplets are borrowed from simple
 
-**Triplet** (most common):
-- Three notes in the space normally occupied by two
-- Typical in simple meters (borrows compound meter's triple division)
-- Notated with the number "3" above or below the note group
-- Examples: three eighth notes = one quarter note; three quarter notes = one half note
+# Key Properties
 
-**Duplet**:
-- Two notes in the space normally occupied by three
-- Typical in compound meters (borrows simple meter's duple division)
-- Notated with the number "2" above or below the note group
-- Example: two eighth notes = one dotted quarter note
+- Triplet: 3 notes in the space of 2 (in simple meter); notated with "3"
+- Duplet: 2 notes in the space of 3 (in compound meter); notated with "2"
+- Can occur at any metric level (beat, subdivision, multi-beat)
+- Counting borrowed: triplets use "1-la-li"; duplets use "1-and"
 
-**Other tuplets** (less common):
-- Quintuplet (5), sextuplet (6), septuplet (7), etc.
-- Same principle: number indicates how many notes fit in the space
+# Construction / Recognition
 
-**Levels**:
-- Beat level: triplet quarter notes in 4/4
-- Division level: triplet sixteenth notes in 4/4
-- Multi-beat level: triplet quarter notes spanning half note
+Tuplets are indicated by a number above or below the note group, sometimes with a bracket. A "3" over three eighth notes in simple meter = triplet.
 
-## Musical Context
+# Context & Application
 
-Tuplets add rhythmic variety and flexibility:
-- Create rhythmic interest by contradicting the prevailing meter
-- Allow composers to write rhythms that don't fit the meter's natural division
-- Common in expressive, rubato passages
-- Frequent in virtuosic passages and cadenzas
-- Can create hemiola or cross-rhythm effects
+Triplets are the most common tuplet in Western music. They add rhythmic variety and a flowing quality to simple-meter music. Duplets in compound meter create a more march-like, square feel.
 
-Tuplets blur the boundary between simple and compound feels.
+# Examples
 
-## Examples
+- Quarter-note triplet in 4/4: 3 quarter notes in the space of 2 (one half note)
+- Eighth-note triplet in 4/4: 3 eighth notes in the space of 1 quarter note
+- Sixteenth-note triplet: 3 sixteenths in the space of 1 eighth note
+- Duplet in 6/8: 2 dotted-eighth notes in the space of 3 eighth notes
 
-### Basic
+# Relationships
 
-**Triplet in simple meter (4/4)**:
-- Normal division: ♩ = ♪ + ♪ (two eighths per beat)
-- Triplet: ♩ = ♪ ♪ ♪ with "3" above (three eighths per beat)
-- Count: "1-la-li, 2-la-li, 3-la-li, 4-la-li"
+- **See also**: beat, simple-meter, compound-meter, rhythm
 
-**Duplet in compound meter (6/8)**:
-- Normal division: ♩. = ♪ + ♪ + ♪ (three eighths per beat)
-- Duplet: ♩. = ♪ ♪ with "2" above (two eighths per beat)
-- Count: "1-and, 2-and"
+# Common Errors
 
-**Other tuplets**:
-- Quintuplet: five notes in space of four (or three)
-- Sextuplet: six notes in space of four
+- Performing triplets unevenly (all three notes should be equal)
+- Confusing triplet notation with regular groups of three
 
-### From Repertoire
+# Common Confusions
 
-Chopin's nocturnes and ballades: extensive triplet figuration against duple accompaniment. Beethoven's piano sonatas: triplets for expressive flexibility. Brahms's symphonies: duplets in compound-meter movements. Rachmaninoff's piano concertos: complex tuplet combinations (quintuplets, sextuplets).
+- Triplets are not the same as compound meter -- they are "borrowed" from compound meter but used within simple meter
+- The "3" above a triplet means "3 in the space of 2," not "play 3 notes"
 
-## Related Concepts
-
-- **Prerequisite**: beat, simple-meter, compound-meter, note-values
-- **Leads to**: polyrhythm, chromatic-modulation
-
-## Common Confusions
-
-- Tuplet vs. normal division: tuplet contradicts the meter; normal division fits it
-- Triplet in 4/4: three notes per beat (not per measure)
-- Counting: triplets often counted "1-la-li" or "1-trip-let" (varies by teacher)
-- Tuplet bracket may or may not appear (number alone is sufficient)
-- Not all groups of three notes are triplets—in 6/8 or 9/8, groups of three are normal
-- Tuplets are relative to the meter's normal division, not absolute groupings
-- Duplet is not the same as "two eighth notes"—it's two notes where three normally fit
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 11: "Other Rhythmic Essentials"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: triplet/duplet definitions, multi-level occurrence, counting syllables.

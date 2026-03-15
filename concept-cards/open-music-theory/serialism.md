@@ -1,188 +1,84 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Serialism
-category: theory
-source: Open Music Theory
-chapter: "Basics of Twelve-Tone Theory"
-pdf_page: null
-chapter_number: 9
-unit: null
+slug: serialism
+# === CLASSIFICATION ===
+category: analysis
+subcategory: twelve-tone-theory
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "History and Context of Serialism"
+chapter_number: 9
+pdf_page: null
+section: "IX.6"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases:
+  - "serial music"
+  - "serial technique"
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - twelve-tone-row
+extends: []
+related:
+  - total-serialism
+  - tonal-tone-rows
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is serialism?"
+  - "How does serialism differ from twelve-tone composition?"
+  - "Who were the key figures in serial music?"
 ---
 
-# Serialism
+# Quick Definition
+Serialism is a broad compositional approach based on ordering musical elements (pitches, durations, dynamics, or other parameters) in a predetermined series. Twelve-tone composition is one specific type of serialism using orderings of all twelve pitch classes, but serialism encompasses a wider range of practices.
 
-## Quick Definition
+# Core Definition
+Serialism refers to the ordering of musical elements -- not limited to pitches. Twelve-tone composition specifically uses orderings of the twelve pitch classes. The technique emerged with Schoenberg (who described it as "composing with twelve tones related only to one another"), though Hauer and Eimert arrived at similar ideas independently. Serial thought evolved from "classic" serialism (Schoenberg, Webern, Berg) to total/integral serialism (applying serial processes to rhythm, dynamics, articulation). Tonal precedents exist in Bach, Haydn, and Mozart. Some composers (Berg, Hale Smith, Britten) created serial music with strong tonal qualities.
 
-Serialism is a broad compositional approach involving the systematic ordering and transformation of musical elements, most commonly associated with twelve-tone pitch organization but also applicable to rhythm, dynamics, articulation, and other parameters—distinguished from "twelve-tone composition" which specifically concerns pitch ordering, as serialism can involve any ordered series and twelve-tone composition is just one (though the most famous) type of serial music.
+# Prerequisites
+- Twelve-tone row (the foundational serial concept)
 
-## Formal Definition
+# Key Properties
+1. Ordering of musical elements in a predetermined sequence
+2. Not limited to pitch -- can include rhythm, dynamics, articulation
+3. Not all serial music is twelve-tone; not all twelve-tone music is strictly serial
+4. Associated with Second Viennese School (Schoenberg, Webern, Berg)
+5. Evolved into total/integral serialism (c. 1947-1952)
+6. Historical precedents in tonal music (Bach, Haydn retrograde canons)
+7. Set theory was developed retrospectively (Forte) to analyze free atonal music
 
-**Serialism**: Compositional method based on ordered series of elements.
+# Context & Application
+Serialism was both a revolutionary compositional technique and a point of intense aesthetic debate. Schoenberg viewed it as ensuring pitch-class equality; others saw totalitarian implications. Boulez declared non-serial composers "useless." Today serialism is one technique among many, and serial music continues to be written.
 
-**Types of serialism**:
+# Examples
+**Example 1** (Tavener, The Lamb): Serial operations (P, I, R, RI) applied to a modal melody -- serial but not twelve-tone.
+**Example 2** (Dallapiccola, Piccola Musica Notturna): Twelve-tone but with free pitch repetition -- demonstrating flexible serial practice.
+**Example 3** (Berg, Violin Concerto): Row centered on triads and fifths -- tonal twelve-tone music.
 
-1. **Pitch serialism**: Ordering of pitch classes
-   - Twelve-tone: all 12 pitch classes
-   - Non-twelve-tone: fewer or more pitches
+# Relationships
+## Builds Upon
+- **twelve-tone-row** -- The foundational serial concept
+## Related
+- **total-serialism** -- Extension of serial principles to all parameters
+- **tonal-tone-rows** -- Rows designed to produce tonal sounds
 
-2. **Rhythmic serialism**: Ordering of durations
-   ```
-   Example duration series: quarter, eighth, half, dotted quarter...
-   ```
+# Common Confusions
+- **Confusion**: Serialism and twelve-tone are synonymous
+  **Clarification**: Serialism is broader; twelve-tone is one type of serialism
+- **Confusion**: Serial music must be atonal
+  **Clarification**: Berg, Britten, and others wrote tonal-sounding serial music
 
-3. **Dynamic serialism**: Ordering of loudness levels
-   ```
-   Example: ppp, mp, ff, p, mf, pp...
-   ```
+# Source Reference
+Open Music Theory, Part IX, Chapters 1 and 6: "Basics of Twelve-Tone Theory" and "History and Context of Serialism."
 
-4. **Total/Integral serialism**: Multiple parameters serialized
-   - Pitch, rhythm, dynamics, articulation all ordered
-   - Each parameter has its own series
-
-**Relationship to twelve-tone**:
-```
-Serialism (broad) ⊃ Twelve-tone (specific)
-
-All twelve-tone music is serial
-Not all serial music is twelve-tone
-```
-
-## Musical Context
-
-Serialism represents:
-- **Systematic organization**: Predetermined ordering of elements
-- **Equality**: All elements in series treated equivalently
-- **Transformation**: Series subjected to operations (T, I, R, RI)
-- **New structures**: Alternative to tonal hierarchy
-
-**Historical development**:
-- 1920s: Schoenberg develops twelve-tone method
-- 1940s-50s: Expansion to total serialism
-- Continuing influence: Various serial techniques still used
-
-**Philosophical implications**:
-- Rejection of tonal hierarchy
-- Systematic vs. intuitive composition
-- "Emancipation of dissonance" (Schoenberg)
-
-## Examples
-
-### Basic
-
-**Twelve-tone serialism** (pitch):
-```
-Series: C-Db-E-F-Ab-A-Bb-D-Eb-G-Gb-B
-        0  1  4 5  8 9 10  2  3 7  6 11
-
-All 12 pitch classes
-Ordered
-Subject to T, I, R, RI operations
-```
-
-**Non-twelve-tone pitch series**:
-```
-Tavener, The Lamb:
-Series: G-B-A-F#-G (5 pitch classes)
-
-Still serial:
-- Fixed ordering
-- P, I, R, RI operations used
-- But NOT twelve-tone (only 5 pitches)
-```
-
-**Rhythmic series**:
-```
-Duration series: 1-2-3-4-5-6... (12 values)
-                 or any ordered set of durations
-
-Can be transformed:
-- Retrograde (reverse order)
-- Augmentation/diminution (multiply values)
-- Permutation
-```
-
-**Comparing serial types**:
-```
-                    Twelve-tone   Other serial
-Pitch ordering:     Yes           Variable
-All 12 pitches:     Yes           No
-Other parameters:   Optional      Variable
-Transformations:    P,I,R,RI      Various
-```
-
-### From Repertoire
-
-**Serial but not twelve-tone**:
-```
-Tavener, The Lamb:
-Soprano: G-B-A-F#-G (prime)
-Alto: G-Eb-F-Ab-G (inversion)
-
-Only 5 pitch classes
-Clear modal center on G
-Uses P, I, R, RI relationships
-= Serial technique, NOT twelve-tone
-```
-
-**Twelve-tone serial, but free**:
-```
-Dallapiccola, Piccola Musica Notturna:
-- Has a twelve-tone row
-- Allows note repetition
-- Gradual, undogmatic unfolding
-- Free rhythmic treatment
-= Twelve-tone but not strictly serial in practice
-```
-
-**Total serialism examples**:
-```
-Boulez, Structures 1 (1952):
-- Pitch series (12 elements)
-- Duration series (12 values)
-- Dynamic series
-- Attack series
-= Multiple parameters all serialized
-
-Messiaen, Mode de valeurs et d'intensités (1949-50):
-- 36-note pitch mode
-- Duration values assigned to pitches
-- Dynamics assigned to pitches
-- Articulations assigned to pitches
-= Precursor to total serialism
-```
-
-**Range of serial practice**:
-```
-STRICT                              FREE
-  ↓                                   ↓
-Total serialism    Twelve-tone    Serial techniques
-(all parameters)   (pitch only)   (some ordering)
-Boulez Structures  Webern Op.21   Dallapiccola
-Babbitt           Schoenberg     Berg, Britten
-```
-
-## Related Concepts
-
-- **Prerequisite**: twelve-tone-row, pitch-class
-- **Leads to**: total-serialism, row-operations, combinatoriality
-- **See also**: atonality, second-viennese-school
-
-## Common Confusions
-
-- Serialism = broad category of ordered compositional methods
-- Twelve-tone = specific type of serialism (12 pitch classes)
-- All twelve-tone is serial; not all serial is twelve-tone
-- Serial technique can apply to rhythm, dynamics, articulation
-- "Total" or "integral" serialism = multiple parameters serialized
-- Series can have any number of elements (not just 12)
-- Serial music can sound tonal (Berg) or atonal (Webern)
-- Serialism is technique, not style
-- Same serial technique yields very different music
-- Pre-serial precedents exist (canons, mirrors)
-- Not all 20th-century atonal music is serial
-- Free atonal music (early Schoenberg) preceded serialism
-- Serialized = systematically ordered, not random
-
-## Source Reference
-
-Open Music Theory, Part IX: "Basics of Twelve-Tone Theory"
+# Verification Notes
+- Definition source: From 09-01 and 09-06
+- Confidence rationale: High
+- Preserved from v2: Tavener, Dallapiccola, Berg examples; distinction from twelve-tone
+- Cross-reference status: Verified

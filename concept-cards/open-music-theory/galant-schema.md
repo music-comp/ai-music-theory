@@ -1,150 +1,106 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Galant Schema
-category: form
-source: Open Music Theory
-chapter: "Galant Schemas"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: galant-schema
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: galant-schemas
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Galant Schemas"
+chapter_number: 11
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "schema"
+  - "stock musical phrase"
+  - "partimento pattern"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - scale-degree
+  - figured-bass
+extends: []
+related:
+  - meyer-schema
+  - prinner-schema
+  - fonte-schema
+  - monte-schema
+  - rule-of-the-octave
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a galant schema?"
+  - "How are schemas classified by position (opening, continuation, cadence)?"
+  - "What three aspects define each schema?"
 ---
 
-# Galant Schema
+# Quick Definition
+Stock musical patterns (melodic, harmonic, metric skeletons) that 18th-century composers and improvisers learned and used as a basis for creating new Galant-style music, classified by their typical position within a piece.
 
-## Quick Definition
+# Core Definition
+**Schemas** are "stock musical phrases" (Gjerdingen 2007) that serve as melodic, harmonic, and rhythmic/metric skeletons for creating new music in the Galant style. The source describes three ways the term applies: as a **prototype** (idealized pattern), an **exemplar** (single instance), or a **theory** (explanation of a common event). Each schema has two or more "stages" defined by: (1) melodic features (scale degrees for top and bass voices), (2) harmonic features (figured bass), and (3) metric features (strong "S" or weak "W" beats). Schemas are also classified by typical position: opening gambits, continuations, and cadences (Ch. 11).
 
-Stock musical phrases or patterns used by 18th-century composers and improvisers as melodic, harmonic, and rhythmic/metric skeletons for creating music in the Galant style.
+# Prerequisites
+- **Scale degree** -- Schema stages are defined by scale degrees
+- **Figured bass** -- Harmonic features are expressed in figured bass notation
 
-## Formal Definition
+# Key Properties
+1. Multi-stage patterns defined by melody (scale degrees), harmony (figured bass), and meter (S/W)
+2. Three senses: prototype, exemplar, theory
+3. Named after historical descriptions or theorists (e.g., Meyer, Prinner, Monte, Fonte)
+4. Classified by typical position: opening gambit, continuation/process, cadence, post-cadential
+5. Bass and harmonic structure less fixed than melody
+6. Many schemas divide into question-answer halves
+7. Can be combined and embellished to create complete pieces
 
-A **schema** (plural: **schemas** or **schemata**) in the context of Galant music (mid-to-late 18th century) is a conventional musical pattern that serves as a template for composition and improvisation. Schemas function as prototypical formulas combining melody, harmony (bass line and figured bass), and metric placement.
+# Construction / Recognition
+## To Use Schemas in Composition:
+1. Select schemas appropriate to each position (opening, continuation, cadence)
+2. Realize the figured bass and melodic scale degrees in a specific key
+3. Embellish with rhythmic character, passing tones, and melodic decoration
+4. Combine schemas into a complete piece following their typical ordering
+## To Identify in Analysis:
+1. Reduce the melody and bass to scale degrees
+2. Match against known schema prototypes
+3. Consider the schema's typical position in the piece
 
-**Three meanings of "schema"**:
-1. **Prototype**: An idealized version of a common pattern (the abstract model)
-2. **Exemplar**: A specific instance that resembles the prototype (the actual occurrence in music)
-3. **Theory**: An explanation of a commonly occurring musical event (the analytical lens)
+# Context & Application
+Galant schemas represent the practical compositional knowledge of 18th-century musicians, as described by Robert Gjerdingen (2007). They were learned through partimento (figured bass realization) exercises and used for both composition and improvisation. The source provides files with chordal realizations for all schemas discussed.
 
-**Schema components** (the "what"):
-- **Melodic features**: Scale degrees in soprano (top voice) and bass
-- **Harmonic features**: Figured bass notation indicating chord structure
-- **Metric features**: Strong ("S") or weak ("W") beat placement for each stage
-- **Stages**: Typically 2-4 events that make up the complete schema
+# Examples
+**Example 1** (Ch. 11): The Meyer schema as an opening gambit -- four stages: I-V-V-I with melody do-ti-fa-mi and bass do-re-ti-do.
 
-**Schema functions** (the "when/where"):
-- **Opening gambits**: Schemas for beginning a piece or section
-- **Continuation/process**: Schemas for middle sections or transitions
-- **Closing gestures**: Schemas leading to cadences
-- **Cadences**: Schemas for concluding phrases
-- **Post-cadential**: Schemas appearing after cadences
+**Example 2** (Ch. 11): The Prinner schema as a closing gesture -- four stages: IV-I-vii-I with melody la-sol-fa-mi and bass fa-mi-re-do.
 
-**Common schemas**:
+# Relationships
+## Enables
+- **meyer-schema**, **prinner-schema**, **fonte-schema**, **monte-schema** -- Specific schema types
+## Related
+- **rule-of-the-octave** -- Related partimento tradition
 
-**Opening Gambits:**
-- **Romanesca**: I–V–vi–I progression
-- **Do–Re–Mi**: Simple ascending line in melody
-- **Sol–Fa–Mi**: I–ii–V–I or I–vii°–V–I
-- **Meyer**: I–V–V–I with specific melodic contour (^1–^7–^4–^3)
-- **Aprile, Jupiter, Pastorella**: Variations on opening patterns
+# Common Errors
+- **Error**: Treating schemas as rigid chord progressions
+  **Correction**: Schemas are flexible prototypes; bass and harmony are less fixed than the melodic scale degrees
 
-**Answer/Process/Transition:**
-- **Prinner**: Descending bass ^4–^3–^2–^1 with melody in parallel tenths
-- **Modulating Prinner**: Variant that modulates to the dominant
-- **Fonte**: Sequential pattern often tonicizing ii then I
-- **Monte**: Ascending sequential pattern (mentioned in source)
-- **Ponte**: Bridge or transition schema (mentioned in source)
+# Common Confusions
+- **Confusion**: Schemas are the same as Roman numeral progressions
+  **Clarification**: Schemas encompass melody, bass, figured bass, and metric position, not just chord progressions
 
-**Cadential schemas** (covered more in other chapters):
-- Various patterns leading to authentic cadences
-- Half-cadence patterns
+# Source Reference
+Open Music Theory, Part II, Chapters 11-13: "Galant Schemas," "Galant Schemas -- Summary," and "The Rule of the Octave."
 
-## Musical Context
-
-Galant schemas were central to 18th-century compositional practice:
-
-**Pedagogical function**:
-- Taught to students as formulas for composition and improvisation
-- Codified in treatises by Riepel, Fux, and others
-- Provided vocabulary for creating well-formed phrases
-- Enabled rapid composition and improvisation
-
-**Historical context**:
-- **Galant style**: Mid-to-late 18th century (c. 1730-1780)
-- Composers: Mozart, Haydn, early Beethoven, J.C. Bach, and many others
-- Era of transition from Baroque to Classical style
-- Emphasis on natural, elegant, "galant" expression
-
-**Compositional practice**:
-- Composers learned schemas as prototypes
-- Applied schemas flexibly with embellishment and variation
-- Combined schemas to create complete phrases and movements
-- Used schemas as starting points for elaboration
-
-**Modern scholarship**:
-- Robert Gjerdingen's *Music in the Galant Style* (2007) systematized schema theory
-- Schemas named after theorists (Meyer, Prinner) or earlier terms (Fonte, Monte, Ponte from Riepel)
-- Analytical tool for understanding 18th-century music
-- Pedagogical tool for teaching Classical-era composition
-
-**How schemas work in practice**:
-1. Choose appropriate schema for function (opening, continuation, cadence)
-2. Realize the basic prototype (melody + bass + harmony)
-3. Embellish with passing tones, neighbor tones, turns, etc.
-4. Vary rhythm, register, texture
-5. Chain schemas together to create complete musical phrases
-
-## Examples
-
-### Basic
-
-**Meyer schema** (opening gambit):
-- Melody: ^1–^7–^4–^3 (do–ti–fa–mi)
-- Bass: ^1–^2–^7–^1 (do–re–ti–do)
-- Harmony: I–V–V–I
-- Meter: Weak–Strong–Weak–Strong
-
-**Prinner schema** (answer/closing):
-- Melody: ^6–^5–^4–^3 (la–sol–fa–mi) in parallel tenths with bass
-- Bass: ^4–^3–^2–^1 (fa–mi–re–do)
-- Harmony: IV–I–vii°–I (often with 7-6 suspension on ^2)
-- Meter: Strong–Weak–Strong–Weak
-
-**Schema combination** (typical phrase):
-- Opening: Meyer (measures 1-4)
-- Answer: Prinner (measures 5-8)
-- Result: Complete 8-bar phrase
-
-### From Repertoire
-
-Galant schemas appear throughout Classical-era music:
-- **Mozart, Piano Sonatas**: Abundant use of Meyer, Prinner, Romanesca, and other schemas
-- **Haydn, String Quartets**: Opening themes often use schema combinations
-- **Mozart, Symphony No. 40, K. 550**: Opening uses schema patterns
-- **J.C. Bach, Sonatas**: Exemplary galant style with clear schema use
-- **Early Beethoven**: Piano Sonatas Op. 2, Op. 10 show galant schema influence
-
-Schemas provided the structural foundation that these composers then embellished into finished compositions.
-
-## Related Concepts
-
-- **Prerequisite**: figured-bass, meter, phrase, cadence
-- **Leads to**: meter, partimento, rule-of-the-octave
-- **See also**: srdc-phrase-structure
-
-## Common Confusions
-
-- Schemas are prototypes, not rigid rules—composers varied them freely
-- Not every 18th-century passage uses a schema—they're common but not universal
-- Schemas can overlap and blur together—boundaries aren't always clear
-- The same schema can serve different functions depending on context
-- Schema names are modern scholarly constructs (except those from Riepel and other historical sources)
-- Learning schemas doesn't guarantee writing good music—they're tools, not magic formulas
-- Schemas are defined by both melodic/harmonic content AND typical function/placement
-- Embellishment is expected—the bare schema is just a skeleton
-- Schemas can be compressed (faster) or extended (slower) depending on tempo and context
-- Not all Classical music uses schemas prominently—later Classical and early Romantic music moves away from them
-- Schemas are analytical tools for understanding 18th-century music, not the only way to analyze it
-- Different scholars may define schemas slightly differently—there's some variation in the literature
-
-## Source Reference
-
-Open Music Theory, Part II, Chapters 11-13: "Galant Schemas," "Galant Schemas – Summary," and "Galant Schemas – The Rule of the Octave and Harmonizing the Scale with Sequences"
+# Verification Notes
+- Re-extracted from v2 card; preserved: Gjerdingen citation, prototype/exemplar/theory distinction
+- Confidence: HIGH -- explicitly defined with extensive examples

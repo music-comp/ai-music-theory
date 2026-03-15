@@ -1,80 +1,105 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Meter
-category: theory
-source: Open Music Theory
-chapter: "Simple Meter and Time Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: meter
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Simple Meter and Time Signatures"
+chapter_number: 9
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "metre"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - beat
+  - rhythm
+extends: []
+related:
+  - simple-meter
+  - compound-meter
+  - time-signature
+  - measure
+  - hypermeter
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is meter?"
+  - "What is the difference between duple, triple, and quadruple meter?"
+  - "How is meter different from rhythm?"
 ---
 
-# Meter
+# Quick Definition
 
-## Quick Definition
+The recurring pattern of accented and unaccented beats that organizes musical time into regular groupings.
 
-The organization of beats into recurring patterns of strong and weak pulses, typically grouped in units of two, three, or four.
+# Core Definition
 
-## Formal Definition
+**Meter** is formed by recurrent patterns of accents in musical performances, organizing beats into regular groupings. Meters are classified by two properties: the number of beats per group (duple = 2, triple = 3, quadruple = 4) and how each beat divides (simple = divides into 2, compound = divides into 3). This yields six common meter types: simple duple, simple triple, simple quadruple, compound duple, compound triple, compound quadruple.
 
-**Meter** (or metre) is the organization of musical time through recurring patterns of accented (strong) and unaccented (weak) beats. Meter creates a hierarchical structure where beats are grouped into measures, and within each measure, certain beats feel stronger or more stressed than others.
+# Prerequisites
 
-Meters are classified by two characteristics:
+- **Beat**: the pulse being organized
+- **Rhythm**: the broader temporal concept
 
-1. **Beat division**:
-   - **Simple meter**: Each beat divides into two equal parts (and subdivides into four)
-   - **Compound meter**: Each beat divides into three equal parts (and subdivides into six)
+# Key Properties
 
-2. **Number of beats per measure**:
-   - **Duple**: 2 beats per measure
-   - **Triple**: 3 beats per measure
-   - **Quadruple**: 4 beats per measure
+- Duple: beats grouped in 2s
+- Triple: beats grouped in 3s
+- Quadruple: beats grouped in 4s
+- Simple: beat divides into 2 (then subdivides into 4)
+- Compound: beat divides into 3 (then subdivides into 6)
+- Meter is expressed through time signatures
+- Measures (bars) contain one beat grouping each
 
-In Western notation, meter is indicated by a time signature at the beginning of a composition (and whenever the meter changes).
+# Construction / Recognition
 
-## Musical Context
+Meter is felt by listening for recurring accent patterns. Conducting patterns help: duple (down-up), triple (down-out-up), quadruple (down-in-out-up). The downbeat (beat 1) has the strongest accent.
 
-Meter provides the rhythmic framework for musical composition and performance. It creates expectations about when strong and weak beats will occur, enabling:
-- Coordination among performers
-- Predictable patterns for listeners
-- Dance-able rhythms
-- Phrase structure and formal organization
+# Context & Application
 
-Different meters create different characters: marches use duple meter (strong-weak), waltzes use triple meter (strong-weak-weak), and much popular music uses quadruple meter (strong-weak-medium-weak).
+Meter provides the organizational framework for rhythm. Most Western music is metered. Time signatures communicate meter to performers. Conducting patterns make meter visible and help maintain steady tempo.
 
-## Examples
+# Examples
 
-### Basic
+- Simple duple: "Stars and Stripes Forever" (2 beats, each dividing into 2)
+- Simple triple: Mozart's "Minuet in F" (3 beats, each dividing into 2)
+- Simple quadruple: "Cake" by Flo Rida (4 beats, each dividing into 2)
+- Compound duple: "End of the Road" by Boyz II Men (2 beats, each dividing into 3)
 
-Simple meters:
-- 2/4 (simple duple): TWO beats per measure, QUARTER note gets the beat
-- 3/4 (simple triple): THREE beats per measure, QUARTER note gets the beat
-- 4/4 (simple quadruple): FOUR beats per measure, QUARTER note gets the beat
+# Relationships
 
-Compound meters:
-- 6/8 (compound duple): TWO beats per measure, DOTTED QUARTER gets the beat
-- 9/8 (compound triple): THREE beats per measure, DOTTED QUARTER gets the beat
+- **Leads to**: simple-meter, compound-meter, time-signature, measure, hypermeter
+- **See also**: beat, rhythm, syncopation
 
-### From Repertoire
+# Common Errors
 
-Simple triple: Mozart minuets, Chopin waltzes (3/4)
-Simple duple: Sousa marches (2/4, 2/2)
-Simple quadruple: Most pop, rock, and classical music (4/4)
-Compound duple: Many folk songs and hymns (6/8)
+- Confusing duple and quadruple (quadruple can feel like two groups of duple)
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: beat, rhythm
-- **Leads to**: time-signature, simple-meter, compound-meter, simple-meter, measure
-- **See also**: tempo, syncopation, hypermeter
+- Meter vs. rhythm: meter = underlying beat grouping; rhythm = specific durational patterns
+- Meter vs. time signature: meter is the felt pattern; time signature is the notation expressing it
 
-## Common Confusions
-
-- Meter vs. rhythm: Meter is the underlying organizational framework; rhythm is the actual pattern of durations
-- Meter vs. time signature: Time signature is the notation that indicates the meter
-- Simple vs. compound: Simple meters divide beats into TWOs; compound meters divide beats into THREEs
-- 6/8 is compound duple (2 beats), not simple sextuple (6 beats)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 9: "Simple Meter and Time Signatures"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: six meter categories, conducting patterns, musical examples.

@@ -1,114 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: SATB
-category: theory
-source: Open Music Theory
-chapter: "Roman Numerals and SATB Chord Construction"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: satb
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: notation
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Roman Numerals and SATB Chord Construction"
+chapter_number: 20
+pdf_page: null
+section: "Writing Chords in SATB Style"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "chorale style"
+  - "four-part writing"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - triad
+  - seventh-chord
+  - roman-numeral-analysis
+  - grand-staff
+extends: []
+related:
+  - voice-leading
+  - counterpoint
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is SATB style?"
+  - "What are the six rules for SATB chord construction?"
+  - "What are the standard vocal ranges?"
 ---
 
-# SATB
+# Quick Definition
 
-## Quick Definition
+A four-voice writing style using soprano, alto, tenor, and bass voices on a grand staff, following six rules: stem direction, chord construction, range, spacing, voice crossing, and doubling.
 
-A four-part vocal texture consisting of Soprano (highest), Alto (second highest), Tenor (second lowest), and Bass (lowest) voices, representing the standard framework for choral music and part-writing exercises in music theory.
+# Core Definition
 
-## Formal Definition
+**SATB style** simplifies compositions into four voices -- soprano (S), alto (A), tenor (T), and bass (B) -- to make harmonic content accessible. Six rules govern strict SATB writing: (1) **Stem direction**: soprano and tenor up, alto and bass down. (2) **Chord construction**: correct notes, accidentals, and bass matching the figured bass. (3) **Range**: S=C4-G5, A=G3-D5, T=C3-G4, B=F2-D4. (4) **Spacing**: no more than an octave between adjacent upper voices (S-A, A-T); up to a twelfth between T-B. (5) **Voice crossing**: voices must not cross (S always above A, A above T, T above B). (6) **Doubling**: in triads, double the bass note; never double the leading tone or tendency tones; seventh chords have no doubling (four notes for four voices).
 
-**SATB** (Soprano-Alto-Tenor-Bass) is a four-voice harmonic texture that represents the standard vocal distribution in choral music and serves as the foundation for traditional part-writing instruction.
+# Prerequisites
 
-**Voice ranges and characteristics**:
-- **Soprano**: Highest voice, typically treble clef, stems up
-- **Alto**: Second highest voice, typically treble clef, stems down
-- **Tenor**: Second lowest voice, typically bass clef (or treble clef 8va), stems up
-- **Bass**: Lowest voice, bass clef, stems down
+- **Triad / seventh chord**: the chords being voiced
+- **Roman numeral analysis**: the analytical context
+- **Grand staff**: the notation format
 
-**SATB chord construction rules**:
+# Key Properties
 
-**1. Stem direction**:
-- Soprano and Tenor: stems up (on right of notehead)
-- Alto and Bass: stems down (on left of notehead)
+- Four voices: soprano, alto (treble clef); tenor, bass (bass clef)
+- Soprano/tenor: up-stems; alto/bass: down-stems
+- Range limits for each voice
+- Max octave between adjacent upper voices
+- No voice crossing
+- Double the bass note in triads; never double leading tone
+- Seventh chords: no doubling needed (4 voices, 4 notes)
 
-**2. Chord construction**:
-- Each chord contains all four voices
-- Notes are vertically aligned
+# Construction / Recognition
 
-**3. Range**:
-- Each voice stays within comfortable vocal range
-- Soprano: approximately C4-A5
-- Alto: approximately G3-D5
-- Tenor: approximately C3-G4
-- Bass: approximately E2-C4
+SATB voicings appear on a grand staff with soprano and alto sharing the treble clef staff (distinguished by stem direction) and tenor and bass sharing the bass clef staff.
 
-**4. Spacing**:
-- Upper three voices (SAT) typically within octave of each other
-- More space allowed between Bass and Tenor
+# Context & Application
 
-**5. Voice crossing**:
-- Generally avoided (e.g., Alto shouldn't go higher than Soprano)
-- Occasionally used for special effects
+SATB style is the foundation for counterpoint and part writing. It models choral writing and is used extensively in music theory education for harmonic analysis, voice leading exercises, and chorale harmonization.
 
-**6. Doubling**:
-- In triads: double root most often, avoid doubling leading tone
-- In seventh chords: include all four notes (less doubling needed)
+# Examples
 
-## Musical Context
+- C major triad in SATB: Bass=C3, Tenor=G3, Alto=E4, Soprano=C5 (root doubled)
+- Ranges: Soprano C4-G5, Alto G3-D5, Tenor C3-G4, Bass F2-D4
+- Spacing error: A-T more than an octave apart
 
-SATB texture serves multiple purposes:
-- **Choral music**: Standard for hymns, anthems, part songs
-- **Theory pedagogy**: Framework for learning voice leading and harmony
-- **Harmonic analysis**: Reduces complex textures to four essential voices
-- **Practical music**: Accessible to amateur and professional choirs
-- **Historical significance**: Standard since Renaissance/Baroque periods
+# Relationships
 
-Four-part writing teaches voice-leading principles applicable to all harmonic textures.
+- **Leads to**: voice-leading, counterpoint, part-writing
+- **See also**: roman-numeral-analysis, triad, seventh-chord
 
-## Examples
+# Common Errors
 
-### Basic
+- Spacing errors between alto and tenor (most common, since they are in different clefs)
+- Voice crossing between alto and tenor (also most common for the same reason)
+- Doubling the leading tone
 
-**Typical SATB chord** (C major, root position):
-- Soprano: E (top line, stem up)
-- Alto: C (third space, stem down)
-- Tenor: G (second space bass clef, stem up)
-- Bass: C (second space bass clef, stem down)
+# Common Confusions
 
-**Voice leading principles**:
-- Smooth voice leading: prefer stepwise motion
-- Avoid parallel fifths and octaves between any two voices
-- Resolve tendency tones (leading tone up to tonic)
-- Keep upper three voices close, allow more space to bass
+- SATB is about four VOICES, not four instruments -- any instrument or voice type can realize SATB parts
+- The order of upper notes can be arranged in many ways; there is not necessarily one correct voicing
 
-**Common doubling** (C major triad):
-- Best: double root (two voices on C)
-- Good: double fifth (two voices on G)
-- Avoid: doubling third excessively
-- Never: double leading tone (B in C major)
-
-### From Repertoire
-
-Bach chorales exemplify SATB style (371 chorales standard teaching material). Handel's "Messiah" choruses use SATB texture. Hymns in Protestant hymnals written in SATB. Music theory textbooks (Aldwell & Schachter, Kostka & Payne) teach harmony through SATB part-writing.
-
-## Related Concepts
-
-- **Prerequisite**: chord, triad, seventh-chord
-- **Leads to**: voice-leading
-- **See also**: voice-crossing
-
-## Common Confusions
-
-- SATB ≠ just any four voices (specifically soprano, alto, tenor, bass ranges)
-- Stem direction is prescribed (not arbitrary): SA stems up, TB stems down... wait, I need to correct this. Let me check the source again.
-
-Actually, from the source: Soprano and Tenor stems up, Alto and Bass stems down. Let me fix this.
-- Voice crossing avoided in most styles (not prohibited, just unusual)
-- SATB is idealized texture (real choirs may have different voice balances)
-- "Close spacing" vs. "open spacing" refers to upper three voices
-- Doubling rules are guidelines, not absolute laws
-- SATB style ≠ always vocal (can be instrumental reduction)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 20: "Roman Numerals and SATB Chord Construction"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: six rules, specific vocal ranges, doubling rules, common error locations.

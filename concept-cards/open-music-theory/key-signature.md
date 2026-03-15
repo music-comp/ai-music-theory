@@ -1,78 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Key Signature
-category: theory
-source: Open Music Theory
-chapter: "Major Scales, Scale Degrees, and Key Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: key-signature
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Major Scales, Scale Degrees, and Key Signatures"
+chapter_number: 12
+pdf_page: null
+section: "Key Signatures"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - major-scale
+  - accidental
+  - clef
+extends: []
+related:
+  - minor-scale
+  - relative-keys
+  - parallel-keys
+contrasts_with:
+  - accidental
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a key signature?"
+  - "What is the order of sharps and flats?"
+  - "How do you identify a major key from its key signature?"
 ---
 
-# Key Signature
+# Quick Definition
 
-## Quick Definition
+A collection of sharps or flats placed after the clef and before the time signature, indicating which notes are consistently altered throughout a piece.
 
-A collection of sharps or flats placed at the beginning of each staff to indicate which notes should be consistently raised or lowered throughout a piece.
+# Core Definition
 
-## Formal Definition
+A **key signature** collects the accidentals of a scale and places them at the beginning of a composition, after the clef but before the time signature (order: clef, key, time -- alphabetical). Every note with that letter name throughout the piece is affected, regardless of octave. The order of sharps is F, C, G, D, A, E, B ("Fat Cats Go Down Alleys to Eat Birds"); the order of flats is the reverse: B, E, A, D, G, C, F. In sharp keys, the last sharp is a half step below the tonic. In flat keys, the second-to-last flat IS the tonic. C major has no sharps or flats; F major has one flat (Bb).
 
-A **key signature** is a notational device consisting of sharps (♯) or flats (♭) placed immediately after the clef and before the time signature. The key signature:
-- Indicates which pitches are altered throughout the piece
-- Shows the probable key of the composition
-- Remains in effect until changed by a new key signature or cancelled
+# Prerequisites
 
-Order of sharps: F♯-C♯-G♯-D♯-A♯-E♯-B♯ ("Fat Cats Go Down Alleys Eating Birds")
-Order of flats: B♭-E♭-A♭-D♭-G♭-C♭-F♭ ("Birds Eat And Dive Going Copiously Far")
+- **Major scale**: key signatures derive from scale patterns
+- **Accidental**: the symbols collected in the key signature
+- **Clef**: determines the placement of sharps/flats on the staff
 
-Rules for identification:
-- **Sharp keys**: The last sharp is a half step below the tonic
-- **Flat keys**: The second-to-last flat IS the tonic (exception: F major has one flat)
-- **C major**: No sharps or flats
-- **F major**: One flat (B♭)
+# Key Properties
 
-In post-tonal contexts, key signatures may be omitted or non-traditional.
+- Sharps order: F, C, G, D, A, E, B (zig-zag pattern on staff)
+- Flats order: B, E, A, D, G, C, F (reverse of sharps; palindrome)
+- Sharp key trick: last sharp = half step below tonic
+- Flat key trick: second-to-last flat = tonic
+- Exceptions to memorize: C major (no accidentals), F major (one flat: Bb)
+- Affects all octaves of the specified notes
+- Maximum 7 sharps or 7 flats for "real" key signatures
 
-## Musical Context
+# Construction / Recognition
 
-Key signatures serve practical and theoretical functions:
-- **Practical**: Reduce clutter (no need to write accidentals repeatedly)
-- **Theoretical**: Indicate the tonal center and expected pitch collection
-- **Performance**: Help musicians anticipate which notes will be altered
+Key signatures appear immediately after the clef on every staff/system. Sharps and flats appear in their standard order, placed on specific lines and spaces.
 
-Every major key signature also represents its relative minor (e.g., C major and A minor share the same key signature). The circle of fifths organizes all key signatures visually, showing relationships between keys.
+# Context & Application
 
-## Examples
+Key signatures tell performers which notes to play sharp or flat throughout a piece without writing individual accidentals. They also indicate the key (or one of two possible keys: the major key or its relative minor). The circle of fifths organizes all major key signatures by number of accidentals.
 
-### Basic
+# Examples
 
-C major / A minor: No sharps or flats
-G major / E minor: One sharp (F♯)
-D major / B minor: Two sharps (F♯, C♯)
-A major / F♯ minor: Three sharps (F♯, C♯, G♯)
+- G major: one sharp (F#)
+- D major: two sharps (F#, C#)
+- Bb major: two flats (Bb, Eb)
+- Ab major: four flats (Bb, Eb, Ab, Db)
+- C major: no sharps or flats
 
-F major / D minor: One flat (B♭)
-B♭ major / G minor: Two flats (B♭, E♭)
-E♭ major / C minor: Three flats (B♭, E♭, A♭)
+# Relationships
 
-### From Repertoire
+- **Leads to**: relative-keys, parallel-keys, circle of fifths
+- **See also**: accidental, major-scale, minor-scale, clef
 
-Beethoven's Fifth Symphony is in C minor (three flats: B♭, E♭, A♭). Mozart's Eine kleine Nachtmusik is in G major (one sharp: F♯). Chopin's "Raindrop" Prelude is in D♭ major (five flats: B♭, E♭, A♭, D♭, G♭).
+# Common Errors
 
-## Related Concepts
+- Placing sharps/flats in the wrong order
+- Forgetting that key signature accidentals affect ALL octaves
 
-- **Prerequisite**: major-scale, accidental, clef
-- **Leads to**: circle-of-fifths, relative-major-minor, transposition, modulation
-- **See also**: tonality, mode
+# Common Confusions
 
-## Common Confusions
+- Key signature accidentals are persistent (apply throughout); written accidentals are temporary (apply within a measure)
+- A key signature narrows the key to two possibilities: a major key and its relative minor
 
-- Key signature vs. key: The signature is notation; the key is the tonal system
-- A key signature doesn't guarantee the piece is in that key (could be relative minor or modal)
-- Accidentals in the music temporarily override the key signature for that measure only
-- Order matters: sharps and flats must appear in the correct order on the correct lines/spaces
-- "Real" keys correspond to standard key signatures; "imaginary" keys would require double sharps or double flats
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 12: "Major Scales, Scale Degrees, and Key Signatures"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: order mnemonics, identification tricks for sharp/flat keys, C/F major exceptions, circle of fifths connection.

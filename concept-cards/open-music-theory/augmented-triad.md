@@ -1,249 +1,93 @@
 ---
-concept: Augmented Triad
-category: theory
-source: Open Music Theory
-chapter: "Augmented Options"
-pdf_page: null
-chapter_number: 5
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Augmented Triad in Chromatic Harmony
+slug: augmented-triad
+
+# === CLASSIFICATION ===
+category: chords
+subcategory: chromatic-harmony
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Augmented Options"
+chapter_number: 8
+pdf_page: null
+section: "V.8"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "augmented chord"
+  - "+triad"
+  - "III+"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - triad-types
+  - chromatic-alteration
+extends: []
+related:
+  - neo-riemannian-theory
+  - weitzmann-region
+  - equal-divisions-of-the-octave
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How is the augmented triad used in chromatic harmony?"
+  - "What makes the augmented triad rare but significant?"
 ---
 
-# Augmented Triad
+# Quick Definition
+The augmented triad (major third + major third) is much rarer than other triad types but significant for its symmetrical construction, its role in chromatic voice leading, and its connection to neo-Riemannian theory. It appears most commonly as III+ in harmonic minor or as a chromatic passing chord V-V+-I in major.
 
-## Quick Definition
+# Core Definition
+The augmented triad is symmetrical — only four distinct augmented triads exist. III+ in harmonic minor is the only diatonic form, sharing two common tones with both V and i (semitone difference in the remaining note), suggesting dominant function. As a chromatic passing chord, V-V+-I fills in the whole step ^2-^3 with a chromatic semitone. The triad can be enharmonically respelled so any note serves as root, enabling resolution to three different minor triads or connection from three different major triads — all by single semitone. This makes it central to Weitzmann regions and neo-Riemannian theory. Schoenberg noted the augmented triad is "better protected against banality" than the diminished triad.
 
-A three-note chord consisting of two stacked major thirds (or equivalently, a major third and an augmented fifth above the root)—creating a symmetrical structure that divides the octave into three equal parts, possesses no diatonic origin in major or natural minor scales, and carries an inherently ambiguous, unstable quality that composers exploit for chromatic color, tonal ambiguity, and voice-leading connections between more stable harmonies.
+# Prerequisites
+- Four triad types (major, minor, diminished, augmented)
+- Chromatic alteration and voice leading
 
-## Formal Definition
+# Key Properties
+1. Major third + major third = symmetrical construction
+2. Only 4 distinct augmented triads exist (like only 3 diminished sevenths)
+3. III+ in harmonic minor: only diatonic augmented triad
+4. Chromatic passing: V-V+-I fills ^2 to ^3 with chromatic semitone
+5. Any member can serve as root (enharmonic ambiguity)
+6. Connects to 3 major and 3 minor triads by single semitone move
+7. Rarely focal in common practice; more prominent in late 19th century
 
-**Augmented triad** (+, aug) is a symmetrical chord structure:
+# Context & Application
+Schubert, "Der Atlas": Bb and D constant (^3 and ^5), G moves to F# (^1 and ^7), suggesting tonic-dominant alternation with minimal voice movement. Bach, Magnificat "Fecit Potentiam": dramatically foregrounded augmented triad after general pause. Hensel, Gondellied: V+-I cadence with chromatic passing motion. Liszt, R.W. Venezia: augmented triad (C# augmented) as structural sonority competing with Bb minor for tonic status, achieving "first, last, loudest, longest" rhetorical status. Cohn (2012) observed augmented triads are typically "tucked into the middle of a phrase" before 1830.
 
-**Interval structure**:
-- Root to third: Major third (M3, 4 semitones)
-- Third to fifth: Major third (M3, 4 semitones)
-- Root to fifth: Augmented fifth (A5, 8 semitones)
+# Examples
+**Example 1** (Schubert, "Der Atlas"): III+ alternating with i and V through minimal voice movement.
+**Example 2** (Hensel, Gondellied): V6/5/V-V+-I cadence with chromatic ^2-#^2-^3 motion.
+**Example 3** (Liszt, R.W. Venezia): Augmented triad as structural/tonic-challenging sonority.
 
-**Mathematical symmetry**:
-```
-M3 + M3 + M3 = 12 semitones (octave)
-4 + 4 + 4 = 12
+# Relationships
+## Builds Upon
+- **triad-types** — One of the four triad types
+## Related
+- **neo-riemannian-theory** — Augmented triad fills gap between R-related triads
+- **weitzmann-region** — Each augmented triad connects to 6 consonant triads
+- **equal-divisions-of-the-octave** — Divides octave into major thirds
 
-Divides octave into three equal parts
-Same symmetry principle as diminished seventh
-```
+# Common Confusions
+- **Confusion**: Augmented triads are unimportant because rare.
+  **Clarification**: Rarity is part of their value. Their symmetry makes them theoretically significant and central to neo-Riemannian analysis.
+- **Confusion**: V+ resolves easily to minor triads.
+  **Clarification**: The raised fifth resolves upward by step, making resolution to minor triads (which would need the fifth to descend) problematic.
 
-**Only four unique augmented triads**:
-```
-Set 1: C+ = E+ = G#+ (C-E-G#)
-Set 2: C#+ = F+ = A+ (C#-F-A / D-flat-F-A)
-Set 3: D+ = F#+ = A#+ (D-F#-A# / D-F#-B-flat)
-Set 4: E-flat+ = G+ = B+ (E-flat-G-B)
-```
+# Source Reference
+Open Music Theory, Part V: Chromaticism, Chapter 8: "Augmented Options."
 
-## Structure and Symmetry
-
-**Three notes, all M3 apart**:
-```
-C+: C - E - G#
-    M3   M3
-
-E+: E - G# - B# (C)
-    M3    M3
-
-G#+: G# - B# - D## (E)
-     M3    M3
-
-All three are the same chord (C-E-G#)
-Different spellings reflect different contexts
-```
-
-**Enharmonic equivalence**:
-```
-C augmented = E augmented = G# augmented
-
-Same three pitch classes
-Different notation
-Different functional interpretation
-```
-
-## Occurrence in Diatonic Context
-
-**Not naturally diatonic**:
-```
-Major scale triads: I, ii, iii, IV, V, vi, vii°
-None are augmented
-
-Minor scale triads (natural): i, ii°, III, iv, v, VI, VII
-None are augmented
-
-Minor scale (harmonic): i, ii°, III+, iv, V, VI, vii°
-III+ = augmented (E-flat-G-B in C minor)
-```
-
-**Harmonic minor III+**:
-```
-In C harmonic minor: E-flat-G-B
-Scale degrees: ^3-^5-^7
-
-Only diatonic occurrence of augmented triad
-Arises from raised ^7 (leading tone)
-```
-
-## Common Chromatic Uses
-
-**V+ (augmented dominant)**:
-```
-V+ = G-B-D# in C major
-Raised fifth (D#) creates chromatic tension
-D# → E (half step to ^3)
-Intensifies V → I resolution
-```
-
-**Passing/neighbor function**:
-```
-C - C+ - F
-I   +    IV
-
-G# (augmented fifth) passes to A
-Chromatic voice leading connection
-```
-
-**Common-tone augmented triad**:
-```
-Similar to CT°7
-Shares common tone with surrounding chords
-Creates chromatic embellishment
-```
-
-## Voice Leading Properties
-
-**Resolution of augmented fifth**:
-```
-Augmented fifth wants to expand:
-G# → A (up by half step)
-
-Or can contract:
-G# → G (down by half step, back to perfect fifth)
-```
-
-**Typical V+ → I resolution**:
-```
-V+:  G - B - D#  →  I: C - C - E
-     ↓   ↓    ↓       ↓   ↓   ↓
-     G → C          (perfect fifth up)
-     B → C          (leading tone up)
-     D# → E         (augmented fifth up, resolves)
-
-All voices resolve by step or common tone
-```
-
-## Musical Context
-
-Augmented triads serve specific purposes:
-- **Chromatic color**: Distinctive, unstable sound
-- **Voice leading**: Smooth chromatic connections
-- **Dominant intensification**: V+ more urgent than V
-- **Impressionist harmony**: Debussy uses extensively
-- **Whole-tone implications**: Part of whole-tone scale
-- **Tonal ambiguity**: Symmetry obscures root
-- **Romantic chromaticism**: Expressive chromatic chord
-- **Film/popular music**: Creates suspense, mystery
-
-Distinctive chromatic sonority with unique voice-leading potential.
-
-## Examples
-
-### Basic
-
-**Augmented triad structure**:
-```
-C+: C - E - G#
-    M3   M3
-
-Intervals from root:
-C to E = M3 (4 semitones)
-C to G# = A5 (8 semitones)
-
-Sound: bright, tense, unresolved
-```
-
-**Three equivalent spellings**:
-```
-C+ = C-E-G#    (C as root)
-E+ = E-G#-B#   (E as root, B# = C)
-G#+ = G#-B#-D## (G# as root, D## = E)
-
-Same sound, different interpretation
-Context determines spelling
-```
-
-**V+ → I resolution**:
-```
-G+ (V+): G - B - D#  →  C (I): C - E - G
-         ↓   ↓    ↓           ↓   ↓   ↓
-         G → C               (up P4)
-         B → C               (up m2, leading tone)
-         D# → E              (up m2, augmented 5th resolves)
-
-D# creates additional leading tone to E
-Intensifies dominant function
-```
-
-**Passing augmented triad**:
-```
-C - C+ - F
-I    +   IV
-
-Voice leading:
-C: C-E-G → C+: C-E-G# → F: C-F-A
-            ↓    ↓    ↓
-            G → G# → A (chromatic passing)
-
-G# passes from G to A
-Smooth chromatic connection I to IV
-```
-
-### From Repertoire
-
-**Liszt, "Liebestraum" No. 3**: Augmented triads create yearning chromatic quality, voice leading to stable harmonies.
-
-**Debussy, Preludes**: Augmented triads as coloristic sonority, whole-tone implications, impressionist harmony.
-
-**Wagner, "Tristan und Isolde"**: Augmented triads contribute to chromatic tension, unstable floating harmony.
-
-**Ravel, "Jeux d'eau"**: Augmented triads for shimmering water effects, impressionist texture.
-
-**Film scores (suspense/mystery genres)**: Augmented triads signal tension, uncertainty, otherworldly quality.
-
-## Related Concepts
-
-- **Prerequisite**: triad, major-triad, chord-quality
-- **Leads to**: augmented-triad-symmetry, whole-tone-scale
-- **See also**: diminished-triad, altered-dominant-chord, chromatic-harmony
-
-## Common Confusions
-
-- Augmented triad = M3 + M3 (two major thirds stacked)
-- Root to fifth = augmented fifth (A5, 8 semitones)
-- Different from major triad (M3 + m3 = M3 + P5)
-- Symmetrical structure (divides octave in three)
-- Only FOUR unique augmented triads (C+, C#+, D+, E-flat+)
-- Each augmented triad has three enharmonic spellings
-- C+ = E+ = G#+ (same sound, different context)
-- Not diatonic to major or natural minor
-- Occurs in harmonic minor as III+ (^3-^5-^7)
-- V+ = augmented dominant (common chromatic chord)
-- Augmented fifth tends to resolve outward by half step
-- Creates "suspended" or "floating" quality
-- Associated with whole-tone scale
-- Common in Impressionism (Debussy, Ravel)
-- Used for chromatic passing motion
-- Symmetry creates tonal ambiguity (like °7)
-- Voice leading determines root interpretation
-- Written with "+" or "aug" symbol
-
-## Source Reference
-
-Open Music Theory, Part V: "Chromaticism"
-Open Music Theory, Part V: "Augmented Options"
+# Verification Notes
+- Re-extracted from source chapter 05-08; merged with existing v2 card
+- Preserved Schubert, Bach, Hensel, Liszt examples from source
+- Confidence rationale: High — extensive source treatment

@@ -1,73 +1,91 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: ii-V-I Progression
-category: theory
-source: Open Music Theory
-chapter: "ii-V-I"
-pdf_page: null
-chapter_number: 6
-unit: null
+slug: ii-v-i-progression
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: jazz-harmony
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "ii-V-I"
+chapter_number: 4
+pdf_page: null
+section: "VI.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "two-five-one"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - seventh-chord-types
+  - root-motion-by-fifth
+  - harmonic-function
+extends: []
+related:
+  - applied-ii-v
+  - turnaround
+  - tritone-substitution
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Why is ii-V-I the most important progression in jazz?"
+  - "What is an applied ii-V?"
 ---
 
-# ii-V-I Progression
+# Quick Definition
+The ii-V-I progression (mi7-7-ma7 in major; half-dim7-7-mi7 in minor) is the fundamental harmonic building block of traditional jazz, found at cadences and as a recurring schema throughout tunes. The pattern is so recognizable that entire ii-V progressions can be applied to non-tonic chords, and even incomplete ii-Vs (without the I) function as a recognizable schema.
 
-## Quick Definition
+# Core Definition
+Three chords related by descending fifth with a distinctive quality sequence: mi7-7-ma7 in major, half-dim7-7-mi7 in minor. The V chord is always dominant quality regardless of mode. The ii-V-I functions as a schema — recognizable even with alterations (ma7 replaced by 6, V altered with raised or lowered fifth). Applied ii-Vs: the entire ii-V-I can tonicize any chord, not just I. In "Afternoon in Paris," ii-V-Is tonicize bVII and bVI. McClimon's "ii-V space" visualizes how these progressions relate via the circle of fifths. The turnaround (I-vi-ii-V-I) is a common progression that loops back to tonic; substituting V7/ii for vi creates an applied ii-V within the turnaround.
 
-The most important chord progression in jazz, moving from the supertonic seventh chord to the dominant seventh chord to the tonic, with roots descending by fifths.
+# Prerequisites
+- Seventh chord types and qualities
+- Root motion by fifth
+- Harmonic function (T/PD/D)
 
-## Formal Definition
+# Key Properties
+1. Quality sequence: mi7-7-ma7 (major) or half-dim7-7-mi7 (minor)
+2. Root motion by descending fifth throughout
+3. Recognizable as schema even with alterations
+4. Applied ii-Vs can tonicize any chord
+5. Incomplete ii-Vs (without I) still function as recognizable pattern
+6. Turnaround: I-vi-ii-V-I (common variant with applied ii-V: I-V7/ii-ii-V-I)
+7. V always dominant quality in both major and minor
 
-The **ii-V-I progression** is a foundational schema in jazz harmony consisting of three chords with roots related by descending fifths:
+# Context & Application
+"Afternoon in Paris" (John Lewis): opens with sequential ii-V-Is tonicizing Bb (bVII) and Ab (bVI) before the final ii-V-I in C. "Ceora" (Lee Morgan): entirely composed of ii-V-Is. The turnaround schema commonly transforms vi into V7/ii, creating a tonicized ii-V within the progression.
 
-**In major keys**: ii7 - V7 - Imaj7
-- Example in C: Dm7 - G7 - Cmaj7
-- Chord qualities: minor 7th - dominant 7th - major 7th
+# Examples
+**Example 1** (Final cadences): "Afternoon in Paris," "All the Things You Are," "My Funny Valentine," "Joy Spring" — all end with ii-V-I.
+**Example 2** ("Afternoon in Paris"): Cmi7-F7-Bbma7 (tonicizing Bb), Bbmi7-Eb7-Abma7 (tonicizing Ab), Dmi7-G7-Cma7 (home key).
 
-**In minor keys**: ii half-dim7 - V7 - i7
-- Example in C minor: Dm7b5 - G7 - Cm7
-- Chord qualities: half-diminished 7th - dominant 7th - minor 7th
+# Relationships
+## Builds Upon
+- **seventh-chord-types** — Each chord has a specific quality
+- **root-motion-by-fifth** — Drives the entire progression
+## Related
+- **applied-ii-v** — ii-V applied to non-tonic targets
+- **turnaround** — Common progression incorporating ii-V
+- **tritone-substitution** — Replaces V7 within ii-V progressions
 
-The progression can be identified by:
-1. Root motion by descending fifths (D-G-C)
-2. Characteristic sequence of chord qualities
+# Common Confusions
+- **Confusion**: ii-V-I must always resolve to I.
+  **Clarification**: Incomplete ii-Vs (without resolution) are common and recognizable; the quality + root-motion pattern is enough to evoke the schema.
 
-## Musical Context
+# Source Reference
+Open Music Theory, Part VI: Jazz, Chapter 4: "ii-V-I."
 
-The ii-V-I is ubiquitous in jazz, appearing at cadences and as a building block throughout tunes. Its importance has led to the concept of "applied ii-V" progressions, where the entire schema can be transposed to tonicize any chord.
-
-The progression functions like a schema: listeners familiar with jazz recognize it even when altered or incomplete. A ii-V (without the I) still implies the resolution, even if it doesn't arrive.
-
-## Examples
-
-### Basic
-
-In C major:
-- Dm7 (ii7) -> G7 (V7) -> Cmaj7 (Imaj7)
-
-In C minor:
-- Dm7b5 (ii half-dim7) -> G7 (V7) -> Cm7 (i7)
-
-### From Repertoire
-
-- "Afternoon in Paris" (John Lewis): Multiple ii-V-Is in different keys
-- "All the Things You Are" (Jerome Kern): Built largely on ii-V-I progressions
-- "My Funny Valentine" (Rodgers/Hart): Features ii-V-I at cadential points
-- "Joy Spring" (Clifford Brown): Uses ii-V-I as primary harmonic material
-
-## Related Concepts
-
-- **Prerequisite**: seventh-chord, dominant-function, chord-quality, root-motion
-- **Leads to**: applied-ii-v, turnaround, chord-scale-theory
-- **See also**: voice-leading-3-7-paradigm, circle-of-fifths, tonicization
-
-## Common Confusions
-
-- The V chord is dominant quality in both major AND minor keys
-- ii-V-I is a SCHEMA, not a rigid formula; variations still sound like ii-V-I
-- The major seventh on I (Imaj7) distinguishes jazz ii-V-I from classical ii-V-I
-- A ii-V without I still functions as the schema (incomplete ii-V)
-- Alterations (#11, b9, etc.) don't change the basic function
-
-## Source Reference
-
-Open Music Theory, Part VI, Chapter 4: "ii-V-I"
+# Verification Notes
+- Re-extracted from source chapter 06-04; merged with existing v2 card
+- Preserved McClimon's ii-V space reference and repertoire examples
+- Confidence rationale: High — foundational jazz concept with thorough treatment

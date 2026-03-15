@@ -1,86 +1,102 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Anacrusis
-category: theory
-source: Open Music Theory
-chapter: "Simple Meter and Time Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: anacrusis
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Simple Meter and Time Signatures"
+chapter_number: 9
+pdf_page: null
+section: "Counting in Simple Meter"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "pickup note"
+  - "upbeat"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - beat
+  - meter
+  - measure
+extends: []
+related:
+  - simple-meter
+  - compound-meter
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is an anacrusis?"
+  - "How do you count a pickup note?"
+  - "How does an anacrusis affect the last measure?"
 ---
 
-# Anacrusis
+# Quick Definition
 
-## Quick Definition
+One or more notes that appear before the first full measure, counted as the last beat(s) of an imaginary measure; the last measure is typically shortened by the same amount.
 
-An incomplete measure at the beginning of a musical work or phrase, consisting of one or more pickup notes that precede the first downbeat; also called a "pickup" or "upbeat."
+# Core Definition
 
-## Formal Definition
+An **anacrusis** (also called a pickup note or upbeat) occurs when a piece begins with notes before the first complete measure. The anacrusis is counted as the last note(s) of an imaginary measure, so the count does not begin on "1." When a work begins with an anacrusis, the last measure is usually shortened by the length of the anacrusis, so that the first and last measures together equal one complete measure.
 
-An **anacrusis** (plural: _anacruses_; also called **pickup measure** or **pickup notes**) is an incomplete initial measure containing one or more notes that occur before the first strong beat (downbeat) of a piece or phrase.
+# Prerequisites
 
-**Characteristics**:
-- Begins on a weak beat or subdivision (not on beat 1)
-- Contains fewer beats than a complete measure
-- Counted as the final beat(s) of an imaginary preceding measure
-- Creates anticipatory motion toward the first downbeat
+- **Beat**: the pulse being counted
+- **Meter**: the grouping context
+- **Measure**: the unit that the anacrusis precedes
 
-**Notation convention**:
-- Anacrusis at the beginning is not counted as "measure 1"
-- First complete measure = measure 1
-- Final measure is typically shortened by the duration of the anacrusis to balance the total beat count
+# Key Properties
 
-**Example in 4/4**:
-- If anacrusis is one quarter note (beat 4), the final measure contains only three quarter notes (beats 1-2-3)
-- Total beats remain balanced across the entire piece
+- Appears before the first full measure
+- Counted as the last beat(s) of an imaginary measure
+- Count does not start on "1"
+- Last measure is typically shortened by the anacrusis duration
+- First measure + last measure = one complete measure
 
-## Musical Context
+# Construction / Recognition
 
-Anacrusis serves expressive and formal functions:
-- Creates forward momentum toward the downbeat
-- Provides rhythmic lead-in to melodic material
-- Common in melodies that emphasize upbeat energy
-- Affects phrasing and breathing (vocalists/wind players breathe before anacrusis)
-- Establishes tempo and character before the "real" beginning
+An anacrusis is recognized when the first measure of a piece has fewer beats than the time signature specifies. The "missing" beats appear at the end of the piece.
 
-Many folk songs, hymns, and classical themes begin with anacrusis.
+# Context & Application
 
-## Examples
+Many familiar melodies begin with an anacrusis: "Happy Birthday," "Amazing Grace," "The Star-Spangled Banner." The anacrusis creates forward momentum leading into the first downbeat.
 
-### Basic
+# Examples
 
-In 4/4 time with anacrusis:
-- Anacrusis: ♩ (one beat, counted as "4")
-- Measure 1: ♩ ♩ ♩ ♩ (four beats: "1 2 3 4")
-- Measure 2: ♩ ♩ ♩ ♩
-- ...
-- Final measure: ♩ ♩ ♩ (only three beats: "1 2 3")
+- In 4/4: a single quarter-note pickup is counted as beat "4" (the last beat of an imaginary measure)
+- The last measure would then have only 3 beats (3 quarter notes)
+- First incomplete measure + last incomplete measure = one full measure
 
-In 3/4 time with anacrusis:
-- Anacrusis: ♩ (counted as "3")
-- Measure 1: ♩ ♩ ♩ ("1 2 3")
-- Final measure: ♩ ♩ (only "1 2")
+# Relationships
 
-### From Repertoire
+- **See also**: beat, measure, simple-meter, compound-meter
 
-"Happy Birthday": begins with anacrusis (♩ ♩ on "Happy Birth-"). "The Star-Spangled Banner": begins on beat 3 of imaginary measure ("Oh say"). Beethoven's Fifth Symphony: three-note anacrusis before downbeat. Many Bach chorales: pickup notes leading to phrase downbeats.
+# Common Errors
 
-## Related Concepts
+- Starting the count on "1" for an anacrusis (it should start on the appropriate later beat)
+- Forgetting to shorten the last measure
 
-- **Prerequisite**: beat, measure, beat, meter
-- **Leads to**: srdc-phrase-structure
-- **See also**: beat
+# Common Confusions
 
-## Common Confusions
+- An anacrusis is not a complete measure -- it is a partial measure at the beginning
+- The terms "anacrusis," "pickup," and "upbeat" are synonymous in this context
 
-- Anacrusis ≠ measure 1 (first complete measure is measure 1)
-- Counting begins with anacrusis as the last beat(s) of an imaginary measure (not as beat 1)
-- Final measure is shortened to balance anacrusis duration (not always a complete measure)
-- Anacrusis vs. syncopation: anacrusis = before first downbeat; syncopation = off-beat emphasis
-- Not all pieces begin with anacrusis (many start directly on beat 1)
-- Multiple anacruses possible throughout a piece (phrase-level pickups)
-- Term "upbeat" can mean anacrusis or the last beat of any measure (context-dependent)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 9: "Simple Meter and Time Signatures"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: counting rule, last-measure shortening rule, familiar melody examples.

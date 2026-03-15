@@ -1,65 +1,87 @@
 ---
-concept: Lament Schema
-category: theory
-source: Open Music Theory
-chapter: "Classical Schemas (in a Pop Context)"
-pdf_page: null
-chapter_number: 7
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Classical Schemas in Pop (Lament and Circle-of-Fifths)
+slug: lament-schema
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: pop-harmony
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Classical Schemas (in a Pop Context)"
+chapter_number: 9
+pdf_page: null
+section: "VII.9"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "lament bass"
+  - "circle-of-fifths schema"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - minor-tetrachord
+  - root-motion-by-fifth
+extends: []
+related:
+  - aeolian-schemas
+  - ground-bass
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the lament schema in pop music?"
+  - "How does the circle-of-fifths schema work in pop?"
 ---
 
-## Quick Definition
+# Quick Definition
+The lament schema descends through the minor tetrachord do-te-le-sol, typically harmonized I-bVII-bVI-V. The circle-of-fifths schema has roots descending by perfect fifth (at least four chords); in minor, it often moves from i toward the relative major (III). Both derive from common-practice traditions but appear frequently in pop/rock.
 
-A four-chord schema descending through the minor tetrachord ^1-flat^7-flat^6-^5 (do-te-le-sol), typically harmonized as i-flat-VII-flat-VI-V.
+# Core Definition
+Lament: descending minor tetrachord (do-te-le-sol, or ^1-b^7-b^6-^5) harmonized with diatonic triads. Most typical: I-bVII-bVI-V. The middle chords (te) can be harmonized various ways (e.g., III in second inversion). Named for its historical use as ground bass in songs of lament (Purcell's "Dido's Lament," Bach's "Crucifixus"). Circle-of-fifths: at least four chords with roots descending by P5. In minor, often begins on i and can move toward relative major (III heard as potential new I). Can be chromaticized with applied ii-V progressions (like jazz). Tonal ambiguity is common in both schemas.
 
-## Formal Definition
-
-The lament schema is a descending bass line progression spanning from tonic to dominant through the minor tetrachord: ^1-flat^7-flat^6-^5. The most common harmonization is i-flat-VII-flat-VI-V, though flat^7 can be harmonized in various ways. Named for its use in early classical music as a ground bass for songs of mourning and lament.
-
-## Musical Context
-
-The lament has deep historical roots in Western music, from Baroque ground bass compositions to contemporary pop/rock. The stepwise descending bass creates a sense of inevitability and often accompanies themes of sorrow, loss, or fate.
-
-### Historical Background
-
-- "Dido's Lament" by Henry Purcell (Dido and Aeneas)
-- "Crucifixus" by J.S. Bach (Mass in B Minor)
-- Both use chromatic elaborations of the basic lament pattern
-
-### Variations
-
-- Harmonization of flat^7 can vary (VII, III6, or v)
-- The aeolian version i-flat-VII-flat-VI-v strongly implies aeolian mode
-- Middle chords often syncopated
-
-## Examples
-
-### Basic Example
-
-In A minor: Am - G - F - E (i-flat-VII-flat-VI-V)
-Bass line: A - G - F - E (descending minor tetrachord)
-
-### From Repertoire
-
-- "Sultans of Swing" by Dire Straits (1978) - classic pop/rock lament; middle chords syncopated, dominant seventh at phrase end creates turnaround
-- "Thoughts of a Dying Atheist" by Muse (2004) - flat^7 harmonized by III in second inversion (or VII with upper neighbors)
-- "I Don't Like You" by Eva Simons (2012) - aeolian variant with flat-VII and minor v
-
-## Related Concepts
-
-- Aeolian mode
-- Ground bass
-- Modal schemas
+# Prerequisites
 - Minor tetrachord
-- Descending bass lines
+- Root motion by fifth
 
-## Common Confusions
+# Key Properties
+1. Lament: do-te-le-sol bass descent; typical I-bVII-bVI-V harmonization
+2. Te can be harmonized flexibly (bVII, III6, etc.)
+3. Named for classical ground-bass laments
+4. Circle-of-fifths: roots descend by P5, at least 4 chords
+5. Often starts on i in minor, moves toward relative major
+6. Can be chromaticized with applied ii-V progressions
+7. Both schemas can be tonally ambiguous
 
-- **Lament vs. aeolian cadence**: The lament descends through four chords to V; the aeolian cadence is flat-VI-flat-VII-i ascending to tonic
-- **Harmonization flexibility**: The bass line is more definitive than the chord choices; different harmonizations are all "lament" if the bass descends through the tetrachord
-- **Major vs. minor context**: The lament is primarily associated with minor keys, though the progression can appear in major with mode mixture
+# Context & Application
+"Sultans of Swing" (Dire Straits, 1978): classic lament i-bVII-bVI-V with syncopated middle chords. "Thoughts of a Dying Atheist" (Muse, 2004): lament with unusual te harmonization (III in second inversion), followed immediately by circle-of-fifths schema. "Barbie Girl" (Aqua, 1997): tonally ambiguous circle-of-fifths. "You and Whose Army?" (Radiohead, 2004): chromatic circle-of-fifths with applied ii-V pairs.
 
-## Source Reference
+# Examples
+**Example 1** (Lament in "Sultans of Swing"): Dmi-C-Bb-A (i-bVII-bVI-V in D minor).
+**Example 2** (Circle-of-fifths in "Barbie Girl"): Four chords descending by fifth, ambiguous between minor tonic and relative major.
 
-Open Music Theory, Part VII: Popular Music, Chapter 9: "Classical Schemas (in a Pop Context)"
+# Relationships
+## Builds Upon
+- **minor-tetrachord** — The descending bass line of the lament
+## Related
+- **aeolian-schemas** — Lament often implies aeolian mode
+- **ground-bass** — Classical origin of the lament schema
+
+# Common Confusions
+- **Confusion**: The lament must use bVII for the te harmony.
+  **Clarification**: Te can be harmonized multiple ways; bVII is most common but III6 or other options exist.
+
+# Source Reference
+Open Music Theory, Part VII: Popular Music, Chapter 9: "Classical Schemas (in a Pop Context)."
+
+# Verification Notes
+- Re-extracted from source chapter 07-09; merged with existing v2 card
+- Combined lament and circle-of-fifths into unified card matching source chapter
+- Confidence rationale: High — clear source treatment with multiple examples

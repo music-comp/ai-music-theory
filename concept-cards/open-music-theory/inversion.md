@@ -1,86 +1,101 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Inversion
-category: theory
-source: Open Music Theory
-chapter: "Inversion and Figured Bass"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: inversion
+
+# === CLASSIFICATION ===
+category: chords
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Inversion and Figured Bass"
+chapter_number: 19
+pdf_page: null
+section: "Triadic Inversion and Figures"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "chord inversion"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - triad
+  - seventh-chord
+extends: []
+related:
+  - figured-bass
+  - roman-numeral-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is chord inversion?"
+  - "What determines the inversion of a chord?"
+  - "How many inversions can triads and seventh chords have?"
 ---
 
-# Inversion
+# Quick Definition
 
-## Quick Definition
+The arrangement of a chord determined by which note is in the bass; root position has the root in the bass, while inverted chords have the third, fifth, or seventh in the bass.
 
-When a chord's notes are rearranged so that a note other than the root appears in the bass voice (lowest position).
+# Core Definition
 
-## Formal Definition
+**Inversion** is determined by which note appears in the bass voice (lowest note). The bass voice is NOT the same as the root. A triad in **root position** has the root in the bass. **First inversion** has the third in the bass. **Second inversion** has the fifth in the bass. Seventh chords additionally have **third inversion** (seventh in the bass). The root of a chord never changes regardless of inversion; only the bass note changes.
 
-**Inversion** refers to the rearrangement of a chord's notes such that a pitch other than the root appears in the bass (the lowest-sounding voice). The type of inversion is determined by which chord member appears in the bass:
+# Prerequisites
 
-For triads:
-- **Root position**: Root in bass (not inverted)
-- **First inversion**: Third in bass
-- **Second inversion**: Fifth in bass
+- **Triad**: root position chord structure
+- **Seventh chord**: four-note chord with additional inversion
 
-For seventh chords:
-- **Root position**: Root in bass (not inverted)
-- **First inversion**: Third in bass
-- **Second inversion**: Fifth in bass
-- **Third inversion**: Seventh in bass
+# Key Properties
 
-Important: The root of the chord does NOT change with inversion—only the bass note changes. A C major triad is always a C major triad whether in root position or inverted; the root is always C.
+- Root position: root in bass
+- First inversion: third in bass
+- Second inversion: fifth in bass
+- Third inversion (seventh chords only): seventh in bass
+- Root is always the same regardless of inversion
+- Bass voice determines inversion, not the root
 
-In figured bass notation, inversions are indicated by numbers showing intervals above the bass.
+# Construction / Recognition
 
-## Musical Context
+Identify the bass note. Stack the remaining notes in thirds to find the root. Compare bass to root to determine inversion.
 
-Inversions serve multiple musical purposes:
-- Create smoother bass lines with stepwise motion
-- Vary harmonic color while maintaining the same chord function
-- Control voice leading and avoid large melodic leaps
-- Affect the stability and tension of harmonies
+# Context & Application
 
-Inversions have different characteristics:
-- Root position: Most stable, strongest harmonic identity
-- First inversion: Smooth, common, relatively stable
-- Second inversion: Less stable, often requires specific treatment (cadential 6/4, passing 6/4, etc.)
-- Third inversion (seventh chords): Creates active bass motion, less stable
+Inversions create smoother bass lines by allowing stepwise motion between chords. First inversion chords are particularly common for creating flowing bass lines. Second inversion chords have specific uses (cadential, passing, neighbor).
 
-## Examples
+# Examples
 
-### Basic
+- C major root position: C in bass (C-E-G)
+- C major first inversion: E in bass (E-G-C) -- chord symbol C/E
+- C major second inversion: G in bass (G-C-E) -- chord symbol C/G
+- G7 third inversion: F in bass (F-G-B-D) -- chord symbol G7/F
 
-C major triad inversions:
-- Root position: C-E-G (C in bass)
-- First inversion: E-G-C (E in bass) - chord symbol: C/E
-- Second inversion: G-C-E (G in bass) - chord symbol: C/G
+# Relationships
 
-G dominant seventh chord inversions:
-- Root position: G-B-D-F (G in bass)
-- First inversion: B-D-F-G (B in bass) - chord symbol: G7/B
-- Second inversion: D-F-G-B (D in bass) - chord symbol: G7/D
-- Third inversion: F-G-B-D (F in bass) - chord symbol: G7/F
+- **Leads to**: figured-bass, roman-numeral-analysis, voice-leading
+- **See also**: triad, seventh-chord
 
-### From Repertoire
+# Common Errors
 
-The bass line in Pachelbel's Canon uses primarily root position and first inversion chords to create smooth motion. Mozart frequently uses first inversions to create elegant bass lines. The "cadential 6/4" (second inversion tonic chord resolving to dominant) is ubiquitous in classical music.
+- Confusing the bass voice with the root (they are only the same in root position)
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: triad, seventh-chord, chord
-- **Leads to**: root-motion, triad-inversions, figured-bass, voice-leading
-- **See also**: harmonic-function
+- The root of a C major triad is always C, even when E or G is in the bass
+- Inversion is about the bass note, not about rearranging upper voices
 
-## Common Confusions
-
-- Bass vs. root: The bass is the lowest-sounding note; the root is the note the chord is built on (these differ in inversions)
-- Inversion doesn't change the chord's root or basic identity—C/E is still a C major chord
-- Second inversion triads are less stable than first inversions (not just "another inversion")
-- Chord symbols show inversion with a slash (C/E); figured bass shows it with numbers (6)
-- Interval inversion (flipping two notes) is different from chord inversion (rearranging chord tones)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 19: "Inversion and Figured Bass"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: all inversion types, bass vs root distinction, snowperson inversion analogy from source.

@@ -1,268 +1,119 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Neighbor Tone
-category: theory
-source: Open Music Theory
-chapter: "Non-Chord Tones and Embellishments"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: neighbor-tone
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: non-chord-tones
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Embellishing Tones"
+chapter_number: 4
+pdf_page: null
+section: "Category 1: Embellishing tones that move by step"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "NT"
+  - "auxiliary note"
+  - "upper neighbor"
+  - "lower neighbor"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - embellishing-tone
+extends:
+  - embellishing-tone
+related:
+  - passing-tone
+  - double-neighbor
+contrasts_with:
+  - passing-tone
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a neighbor tone?"
+  - "What is the difference between an upper and lower neighbor?"
+  - "How does a neighbor tone differ from a passing tone?"
 ---
 
-# Neighbor Tone
+# Quick Definition
 
-## Quick Definition
+A neighbor tone is an embellishing tone approached by step and left by step in the opposite direction, returning to the original pitch. Upper neighbors step up then back down; lower neighbors step down then back up.
 
-A non-chord tone that decorates a single pitch by stepping away (up or down) and immediately returning to the original note—creating the melodic pattern chord-tone → neighbor (step away) → same chord-tone, with the neighbor typically occurring on a weak beat as an unaccented embellishment, though accented neighbors on strong beats are also possible, adding melodic interest while prolonging a single harmony through stepwise oscillation.
+# Core Definition
 
-## Formal Definition
+**Neighbor tones** (NT) are approached by step and left by step in the *opposite direction*, producing either an upper neighbor or a lower neighbor (OMT, Ch. IV.4). They belong to Category 1 of embellishing tones (stepwise motion only). The defining feature is that the voice returns to its starting pitch.
 
-**Neighbor tone** (NT, N, or sometimes AUX for "auxiliary note") is a non-chord tone that:
+# Prerequisites
 
-**Characteristics**:
-- Steps away from a chord tone (up or down)
-- **Returns to the same pitch** it left
-- Creates pattern: **CT → NT → CT** (same CT)
-- Approached and left by **step** in opposite directions
-- Usually on **weak beat** (unaccented)
-- Can be **accented** (on strong beat)
+- **Embellishing tone** — Neighbor tone is one specific type of embellishing tone
 
-**Two types**:
+# Key Properties
 
-**Upper neighbor** (UN):
-```
-Chord tone → step UP → return down
-Example: C → D → C
-```
+1. Approached by step
+2. Left by step in the OPPOSITE direction (returns to starting pitch)
+3. Two subtypes: upper neighbor (step up, return down) and lower neighbor (step down, return up)
+4. Middle note of a three-note gesture where first and last notes are the same pitch
+5. Prolongs a single harmony by decorating one chord tone
 
-**Lower neighbor** (LN):
-```
-Chord tone → step DOWN → return up
-Example: C → B → C
-```
+# Construction / Recognition
 
-**Function**: Melodic embellishment, prolongs single harmony
+## To Identify:
+1. Find a non-chord tone
+2. Check: approached by step?
+3. Check: left by step in the OPPOSITE direction, returning to the starting pitch?
+4. If yes: neighbor tone. Step up = upper neighbor; step down = lower neighbor.
 
-## Neighbor Tone Patterns
+# Context & Application
 
-**Unaccented neighbor** (most common):
-```
-Beat:    1    2    3    4
-Chord:   I         I
-Melody:  C    D    C
+- **Typical contexts**: All voices; very common embellishment in tonal music
+- **Common applications**: Decorating sustained or repeated pitches; adding melodic interest; prolonging harmony
 
-D = upper neighbor to C
-Weak beat, unaccented
-```
+# Examples
 
-**Accented neighbor**:
-```
-Beat:    1    2    3    4
-Chord:   I         I
-Melody:  C    D    C
-         ↑    ↑
-         WT   ANT (accented neighbor on strong beat)
+**Example 1** (OMT Ch. IV.4, Example 1): Neighbor tones in Szymanowska, March no. 6.
 
-D on beat 2 (strong) = accented neighbor
-Creates mild dissonance on accent
-```
+**Example 2** (OMT Ch. IV.4, Example 4): (a) Upper neighbor and (b) lower neighbor tones in a two-voice texture.
 
-**Chromatic neighbor**:
-```
-C → C# → C   (chromatic upper neighbor)
-C → B  → C   (diatonic lower neighbor)
+# Relationships
 
-Chromatic alteration possible
-Common for expressive effect
-```
+## Builds Upon
+- **Embellishing tone** — Neighbor tone is a stepwise embellishing tone type
 
-**Double neighbor** (complete neighbor figure):
-```
-C → D → C → B → C
+## Related
+- **Double neighbor** — Both upper and lower neighbors in succession
+- **Passing tone** — Also stepwise but continues in same direction
 
-Upper neighbor, return, lower neighbor, return
-Embellishes C with both neighbors
-```
+## Contrasts With
+- **Passing tone** — Passing continues in same direction; neighbor returns to starting pitch
 
-## Accented vs. Unaccented
+# Common Errors
 
-**Unaccented neighbor** (standard):
-```
-Beat:     1    &    2    &
-Chord:    I         I
-Melody:   C    D    C    D
-               ↑         ↑
-               NT        NT
+- **Error**: Labeling a passing tone as a neighbor
+  **Correction**: If the voice does not return to the original pitch, it is a passing tone, not a neighbor
 
-Neighbors on weak beats/offbeats
-No metric emphasis
-Smooth embellishment
-```
+# Common Confusions
 
-**Accented neighbor** (less common, more dramatic):
-```
-Beat:     1    2    3    4
-Chord:    I              I
-Melody:   C    D    C
-          ↑    ↑
-          CT   ANT (strong beat, accented)
+- **Confusion**: Confusing neighbor tones with appoggiaturas
+  **Clarification**: Neighbor tones are approached by step; appoggiaturas are approached by leap
 
-Neighbor on strong beat
-Creates tension
-More noticeable dissonance
-```
+# Source Reference
 
-## Chromatic Neighbors
+Open Music Theory, Part IV, Chapter 4: "Embellishing Tones," Category 1. See Examples 1, 4.
 
-**Chromatic lower neighbor** (very common):
-```
-C → B → C   (diatonic)
-C → Bb → C  (chromatic)
+# Verification Notes
 
-Chromatic alteration for expressive color
-```
-
-**Chromatic upper neighbor**:
-```
-C → C# → C  (chromatic)
-C → D → C   (diatonic)
-
-Half-step motion, intensified embellishment
-```
-
-**Use**: Adds chromatic color, common in Romantic music, emotionally expressive
-
-## Neighbor vs. Other Non-Chord Tones
-
-**vs. Passing tone**:
-- **Neighbor**: Returns to **same note** (C → D → C)
-- **Passing**: Continues to **different note** (C → D → E)
-
-**vs. Escape tone**:
-- **Neighbor**: Both step motions **opposite directions**
-- **Escape**: Step then **leap away**
-
-**vs. Appoggiatura**:
-- **Neighbor**: Approached by **step**
-- **Appoggiatura**: Approached by **leap**
-
-## Musical Context
-
-Neighbor tones serve specific purposes:
-- **Melodic embellishment**: Adds interest to static pitches
-- **Rhythmic activation**: Animates sustained notes
-- **Harmonic prolongation**: Extends single harmony
-- **Smooth voice leading**: Stepwise motion
-- **Expressive color**: Especially chromatic neighbors
-- **Universal device**: Appears in all style periods
-- **Pedagogical clarity**: Simple, clear non-chord tone
-
-Neighbor tones are among the most basic and common embellishments.
-
-## Examples
-
-### Basic
-
-**Simple upper neighbor** (C major, I):
-```
-Chord:   I    I    I
-Melody:  C → D → C
-
-D = upper neighbor to C
-Steps up, returns down
-Embellishes C (^1)
-```
-
-**Lower neighbor**:
-```
-Chord:   I    I    I
-Melody:  E → D → E
-
-D = lower neighbor to E
-Steps down, returns up
-Embellishes E (^3)
-```
-
-**Chromatic lower neighbor**:
-```
-Chord:   I         I
-Melody:  C → B → C
-
-B (natural) = chromatic lower neighbor
-Half-step below C
-Returns to C
-```
-
-**Accented neighbor**:
-```
-Beat:    1    2    3    4
-Chord:   V              V
-Melody:  D    E    D
-
-E on beat 2 (strong) = accented neighbor
-More prominent dissonance
-Returns to D
-```
-
-**Double neighbor**:
-```
-Chord:   I    I    I    I    I
-Melody:  C → D → C → B → C
-
-Upper neighbor (D), return
-Lower neighbor (B), return
-Complete embellishment of C
-```
-
-**In context** (phrase):
-```
-I       IV      V       I
-C-D-C   F-G-F   G-A-G   C
-
-Each chord has neighbor tone embellishment
-Upper neighbors throughout
-```
-
-### From Repertoire
-
-**Mozart, Piano Sonatas**: Abundant neighbor tones in melodic lines, both diatonic and chromatic, simple embellishment device.
-
-**Bach, Chorales**: Upper and lower neighbors in inner voices, chromatic lower neighbors for expressive effect.
-
-**Beethoven, "Für Elise"**: Opening motive uses neighbor tones (E-D#-E), chromatic lower neighbor creates characteristic sound.
-
-**Chopin, Nocturnes**: Elaborate melodic embellishment including chromatic neighbors, expressive ornamentation.
-
-**Handel, arias**: Vocal melodies with neighbor tone embellishments, both accented and unaccented varieties.
-
-## Related Concepts
-
-- **Leads to**: double-neighbor, harmonic-embellishment
-- **See also**: passing-tone, escape-tone, appoggiatura
-
-## Common Confusions
-
-- Neighbor tone = steps away and **returns to same pitch**
-- Pattern: CT → NT → CT (same chord tone)
-- Approached and left by **step in opposite directions**
-- Usually **unaccented** (weak beat), but can be accented
-- Upper neighbor = step up, return down
-- Lower neighbor = step down, return up
-- Different from passing tone (passing continues to different note)
-- Can be **chromatic** or diatonic
-- Chromatic lower neighbor very common (e.g., C → B → C in C major)
-- Accented neighbor = on strong beat (more dramatic)
-- Unaccented neighbor = on weak beat (more common)
-- Double neighbor = both upper and lower in succession
-- "NT", "N", or "AUX" abbreviation in analysis
-- Prolongs single harmony (decorates one chord)
-- Both motions by step (no leaps)
-- Returns to starting pitch (defining characteristic)
-- Can occur in any voice (soprano, alto, tenor, bass)
-- Very common embellishment (perhaps most common non-chord tone)
-- Sometimes called "auxiliary note" (older term)
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Non-Chord Tones: Embellishing Tones"
+- Definition source: Direct from OMT Ch. IV.4
+- Confidence rationale: HIGH — explicit definition with examples
+- Uncertainties: None
+- Cross-reference status: All slugs verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: upper/lower neighbor terminology, chromatic neighbor concept, double neighbor reference. Old card's extensive accented/unaccented discussion was not source-derived from Ch. IV.4 (the source does not distinguish accented vs. unaccented neighbors in this chapter).

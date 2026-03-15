@@ -1,89 +1,92 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Homophony
-category: theory
-source: Open Music Theory
-chapter: "Texture"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: homophony
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: texture
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Texture"
+chapter_number: 21
+pdf_page: null
+section: "Homophony"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "homophonic texture"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - texture
+extends:
+  - texture
+related:
+  - homorhythm
+  - melody-and-accompaniment
+  - polyphony
+contrasts_with:
+  - polyphony
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is homophony?"
+  - "What are the two subtypes of homophony?"
 ---
 
-# Homophony
+# Quick Definition
 
-## Quick Definition
+A texture with multiple voices moving together harmonically, either in block chords (homorhythm) or as melody with accompaniment.
 
-A musical texture with multiple voices moving together harmonically at the same or similar pace, often with a single melody supported by chordal accompaniment.
+# Core Definition
 
-## Formal Definition
+**Homophony** features multiple voices moving together harmonically. Two subtypes: **homorhythm** (all voices in similar/identical rhythm, creating block chords) and **melody and accompaniment** (distinct melody with harmonic support). The most common texture in Western music.
 
-**Homophony** (from Greek *homos* = "same" + *phōnē* = "voice/sound") is a texture characterized by multiple voices moving together harmonically, typically at the same pace or with very similar rhythms. Unlike monophony, homophonic texture includes harmonic support; unlike polyphony, the voices don't have independent melodic identities.
+# Prerequisites
 
-Homophony has two main subtypes:
+- **Texture**: the general concept
 
-1. **Homorhythm** (or homophonic/homorhythmic texture): All voices move in the same or very similar rhythm, often in block chords. The texture emphasizes vertical sonorities with all parts rhythmically aligned.
+# Key Properties
 
-2. **Melody and accompaniment**: A clear primary melody is supported by accompanying voices that provide harmonic support but aren't melodically independent. The melody and accompaniment often have different rhythms.
+- Multiple voices serving harmonic function
+- Two subtypes: homorhythm and melody-and-accompaniment
+- Most common Western texture
 
-In both subtypes, the texture is primarily harmonic (vertical) rather than contrapuntal (horizontal), and one voice typically predominates melodically.
+# Construction / Recognition
 
-## Musical Context
+Listen for harmonic structure. Same rhythm = homorhythm. Prominent melody + support = melody and accompaniment.
 
-Homophony is the most common texture in Western music from the Classical period (c. 1750) onward:
-- Hymns and chorales (homorhythmic)
-- Art songs (melody + piano accompaniment)
-- Popular music (vocal melody + band/instrumental accompaniment)
-- Classical-period symphonies and sonatas
-- Most contemporary commercial music
+# Context & Application
 
-Homophonic texture:
-- Emphasizes harmonic progressions
-- Makes melodies easier to perceive
-- Allows clear text projection in vocal music
-- Creates a sense of unity and collective motion
+Dominates Western music from Classical period onward. Chorales, pop songs, accompanied vocal music.
 
-The melody-and-accompaniment subtype is especially dominant in tonal music, where harmonic function drives musical structure.
+# Examples
 
-## Examples
+- Chorale: homorhythm
+- Pop song with vocal + guitar: melody and accompaniment
 
-### Basic
+# Relationships
 
-**Homorhythm**:
-- SATB choir singing a hymn in block chords, all voices changing notes together
-- Barbershop quartet singing with locked rhythms
+- **Extends**: texture
+- **Leads to**: homorhythm, melody-and-accompaniment
+- **See also**: polyphony, monophony
 
-**Melody and accompaniment**:
-- Singer with guitar playing chords
-- Piano sonata with right hand melody, left hand playing broken chords
-- Pop song: lead vocal melody over drums, bass, and guitar
+# Common Confusions
 
-### From Repertoire
+- Melody-and-accompaniment is a TYPE of homophony, not a separate category
 
-**Homorhythmic**:
-- Tcherepnin: Six Horn Quartets No. 6, "Chorale"
-- "Wild Mountain Thyme" (The Longest Johns)
-- Lutheran chorales harmonized by Bach
-
-**Melody and accompaniment**:
-- Hindemith: Flute Sonata, second movement
-- Ella Fitzgerald: "Misty" (vocal melody + piano accompaniment)
-- Schubert: "Gretchen am Spinnrade" (vocal melody + piano arpeggios)
-- Most pop/rock songs
-
-## Related Concepts
-
-- **Prerequisite**: texture, chord, rhythm
-- **Leads to**: homorhythm, melody-and-accompaniment, serial-harmony
-- **See also**: harmonic-rhythm
-
-## Common Confusions
-
-- Homophony ≠ monophony: Homophony has harmony; monophony doesn't
-- Homophony ≠ polyphony: Homophonic voices aren't independent melodies
-- Homorhythmic doesn't mean all voices have identical rhythms—just very similar or coordinated rhythms
-- The accompaniment in melody-and-accompaniment CAN be melodically interesting, but it's subordinate to the primary melody
-- You can have rhythmic independence within homophonic texture as long as one voice clearly predominates melodically
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 21: "Texture"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: two subtypes, dominance in Western music.

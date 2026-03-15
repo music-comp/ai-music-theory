@@ -1,95 +1,92 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Consonance
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Species Counterpoint"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: consonance
+
+# === CLASSIFICATION ===
+category: intervals
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Intervals"
+chapter_number: 16
+pdf_page: null
+section: "Consonance and Dissonance"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval
+  - interval-quality
+extends: []
+related:
+  - dissonance
+contrasts_with:
+  - dissonance
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are consonant intervals?"
+  - "What is the difference between perfect and imperfect consonances?"
 ---
 
-# Consonance
+# Quick Definition
 
-## Quick Definition
+Intervals perceived as stable, not requiring resolution; harmonically, these include perfect consonances (P1, P5, P8) and imperfect consonances (ma3, mi3, ma6, mi6).
 
-An interval or chord that sounds stable, pleasant, and harmonically resolved, requiring no further motion.
+# Core Definition
 
-## Formal Definition
+**Consonant** intervals are perceived as more stable, as if they do not need to resolve. Harmonic consonances are divided into **perfect consonances** (P1, P5, P8) and **imperfect consonances** (ma3, mi3, ma6, mi6). Perfect fourths are contextually consonant or dissonant. Melodic consonances include all perfect and imperfect consonances plus ma2, mi2 (steps). These categorizations have varied with milieu (cultural context and time period).
 
-**Consonance** describes intervals or simultaneities that are perceived as stable, blended, and requiring no resolution. Consonant intervals create a sense of rest and harmonic fusion where the tones seem to belong together.
+# Prerequisites
 
-In species counterpoint, consonances are divided into two categories:
+- **Interval**: the distances being classified
+- **Interval quality**: the specific qualities that determine consonance
 
-**Perfect consonances** (most stable):
-- Perfect unison (P1)
-- Perfect fifth (P5)
-- Perfect octave (P8)
+# Key Properties
 
-**Imperfect consonances** (stable but less static):
-- Major third (M3)
-- Minor third (m3)
-- Major sixth (M6)
-- Minor sixth (m6)
+- Harmonically consonant: P1, P5, P8 (perfect); ma3, mi3, ma6, mi6 (imperfect)
+- Melodically consonant: above plus ma2, mi2
+- Perfect fourth: contextually consonant or dissonant
+- Categorizations are culturally and historically variable
+- Consonance/dissonance is a spectrum, not a binary
 
-**Special case**: The perfect fourth (P4) is consonant when it occurs between upper voices but dissonant when it involves the lowest voice in a texture. In two-voice counterpoint (where all fourths involve the bass), perfect fourths are treated as dissonant.
+# Construction / Recognition
 
-Acoustically, consonance relates to simple frequency ratios: perfect consonances have the simplest ratios (2:1 for octave, 3:2 for fifth), while imperfect consonances have slightly more complex ratios (5:4 for major third, 6:5 for minor third).
+Consonant intervals sound stable and complete. Perfect consonances (unisons, fifths, octaves) sound "open" or "hollow." Imperfect consonances (thirds, sixths) sound "warm" or "full."
 
-## Musical Context
+# Context & Application
 
-Consonance provides:
-- **Stability**: Points of rest in musical phrases
-- **Resolution**: Goals toward which dissonances move
-- **Tonal fusion**: The sense that notes "belong together"
-- **Structural markers**: Beginnings and endings of phrases typically use consonances
+Consonance and dissonance are central to species counterpoint, voice leading, and harmonic progression. Consonant intervals typically begin and end musical phrases, while dissonant intervals create motion and tension within phrases.
 
-Compositional uses:
-- **Perfect consonances**: Strongest stability, used at beginnings and endings
-- **Imperfect consonances**: Provide stability with more color and variety, preferred for most harmonic progressions
-- **Cadences**: Typically end on perfect consonances (P8 or P1)
-- **Voice leading**: Moving from dissonance to consonance creates resolution
+# Examples
 
-The preference for imperfect over perfect consonances in the middle of phrases creates variety and forward motion while maintaining stability.
+- P5 (C-G): perfect consonance -- sounds open and stable
+- ma3 (C-E): imperfect consonance -- sounds warm and pleasant
+- mi6 (E-C): imperfect consonance
 
-## Examples
+# Relationships
 
-### Basic
+- **See also**: dissonance, interval, species-counterpoint
 
-Consonant intervals:
-- C–C (P1): Perfect consonance
-- C–E (M3): Imperfect consonance
-- C–G (P5): Perfect consonance
-- C–A (M6): Imperfect consonance
-- C–C (P8): Perfect consonance
+# Common Confusions
 
-Dissonant intervals (for contrast):
-- C–D (M2): Dissonance
-- C–F# (A4): Dissonance
-- C–B (M7): Dissonance
+- Perfect fourths can be consonant (melodically, or harmonically in some contexts) or dissonant (harmonically in others)
+- What counts as consonant has changed throughout music history
 
-### From Repertoire
+# Source Reference
 
-- Final chords of pieces almost always end on perfect consonances (P1 or P8)
-- Triads contain two consonant intervals stacked: third + fifth
-- Renaissance polyphony creates consonance on strong beats
-- Barbershop harmony uses rich consonances (especially M6 and m7 as consonances in that style)
+Open Music Theory, Part I, Chapter 16: "Intervals"
 
-## Related Concepts
+# Verification Notes
 
-- **Prerequisite**: interval, interval-quality, harmonic-interval
-- **Leads to**: perfect-imperfect-consonances, dissonance
-- **See also**: cadence, harmonic-rhythm
-
-## Common Confusions
-
-- Consonance vs. dissonance is somewhat culturally defined—what sounds consonant can vary by style and era
-- Perfect fourth: consonant in upper voices, dissonant against the bass (special case)
-- Consonance ≠ "pleasant": Some dissonances can be beautiful and expressive
-- The distinction between perfect and imperfect consonances matters for voice leading (parallel perfects are forbidden; parallel imperfects are allowed in moderation)
-- Consonance doesn't mean "simple" musically—complex music uses consonance and dissonance together
-- Major and minor versions of thirds and sixths are both consonant (quality doesn't affect consonance/dissonance for these intervals)
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 1: "Introduction to Species Counterpoint"
+Re-extracted from v2 card; preserved: perfect/imperfect distinction, P4 ambiguity, historical variability note.

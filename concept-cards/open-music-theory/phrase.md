@@ -1,138 +1,106 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Phrase
+slug: phrase
+
+# === CLASSIFICATION ===
 category: form
-source: Open Music Theory
-chapter: "Foundational Concepts for Phrase-Level Forms"
-pdf_page: null
-chapter_number: 3
-unit: null
+subcategory: phrase-level
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "The Phrase, Archetypes, and Unique Forms"
+chapter_number: 2
+pdf_page: null
+section: "The Phrase"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - cadence
+extends: []
+related:
+  - sentence
+  - period
+  - segmentation-analysis
+  - motive
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a phrase in tonal music?"
+  - "What makes a phrase 'relatively complete'?"
+  - "What is the difference between a phrase and phrasing?"
 ---
 
-# Phrase
+# Quick Definition
+A relatively complete musical thought that exhibits trajectory toward a goal and arrives at a sense of closure, typically marked by a cadence (PAC, IAC, or HC) in tonal music.
 
-## Quick Definition
+# Core Definition
+A **phrase** is "a relatively complete thought that exhibits trajectory toward a goal, arriving at a sense of closure." In tonal classical music, "the goal of a phrase is almost always one of the kinds of cadences": perfect authentic cadence (PAC), imperfect authentic cadence (IAC), or half cadence (HC). "Relatively complete" means the phrase has a sense of beginning, middle, and end. Phrases can be any length, but 4, 8, or 16 measures are particularly common. Phrases comprise either ideas alone or both subphrases and ideas (Ch. 2, "The Phrase").
 
-A relatively complete musical thought that exhibits trajectory toward a goal and arrives at a sense of closure, typically marked by a cadence.
+# Prerequisites
+- **Cadence** -- Cadences signal phrase endings in tonal music
 
-## Formal Definition
+# Key Properties
+1. Relatively complete: has beginning, middle, and end
+2. Exhibits trajectory toward a goal
+3. Arrives at closure (usually a cadence in tonal music)
+4. Common lengths: 4, 8, or 16 measures
+5. Comprises ideas or subphrases+ideas
+6. Square brackets for ideas/subphrases; arcs for phrases and above
+7. Can be sentence, period (paired), or unique form
 
-A **phrase** is a unit of musical form characterized by a sense of beginning, middle, and end—a relatively complete musical statement that exhibits directed motion toward a goal and achieves closure. In tonal music, phrases most commonly conclude with a cadence, though other means of creating closure exist.
+# Construction / Recognition
+## To Identify Phrases:
+1. Find cadences (PAC, IAC, HC) -- these usually mark phrase endings
+2. Verify the passage has beginning, middle, and end
+3. Check for directed motion toward the cadence
+4. Determine length and internal organization
+## Caution:
+- Not every V-I motion is a cadence
+- Not every pause marks a phrase ending
 
-**Essential characteristics**:
-- **Trajectory**: Forward motion toward a goal
-- **Closure**: Sense of arrival or completion at the end
-- **Relative completeness**: Has beginning, middle, and end
-- **Typical length**: Often 4 or 8 measures in Classical music (though can vary)
-- **Hierarchical position**: Larger than ideas/subphrases; smaller than themes/sections
+# Context & Application
+The phrase is the fundamental building block of musical form. Understanding phrase structure informs both analysis and performance. "Phrasing" in performance refers to shaping passages with trajectory toward their goal -- knowing where cadences fall helps shape this trajectory. Phrases combine to form larger structures: periods, sentences, sections, themes.
 
-**Components of a phrase**:
-- **Beginning**: Opening gesture that initiates motion
-- **Middle**: Development or continuation of musical material
-- **End**: Closure, typically marked by a cadence
-- **Ideas**: Smaller grouping units (often 2 measures) that combine to form phrases
-- **Motives**: Smallest recurring units that build ideas
+# Examples
+**Example 1** (Ch. 2, Example 1): A 4-measure phrase in Schubert's "Du bist die Ruh" (common length).
 
-**Closure markers**:
-- **Cadences**: Harmonic/melodic formulas signaling closure (most common in tonal music)
-- **Melodic arrival**: Reaching a goal pitch or register
-- **Rhythmic conclusion**: Longer note values, rests
-- **Textural change**: Shift in texture or dynamics
-- **Harmonic arrival**: Return to tonic or resolution of tension
+**Example 2** (Ch. 2, Example 2): A 13-measure phrase in Fanny Hensel's "Abendbild" (unusual length).
 
-**Phrase structure**:
-- Phrases typically group into pairs (antecedent-consequent, statement-response)
-- Multiple phrases combine to create periods, sentences, or other formal types
-- Phrases can be regular (symmetrical) or irregular (asymmetrical)
-- Phrases may overlap, elide, or extend
+**Example 3** (Ch. 2, Example 4): Multiple locations in Haydn's Piano Trio Hob. XV:6 where someone might mistakenly label cadences.
 
-## Musical Context
+# Relationships
+## Enables
+- **sentence** -- A special kind of phrase (presentation + continuation)
+- **period** -- A combination of two phrases (antecedent + consequent)
+- **phrase-expansion** -- Techniques for making phrases longer than expected
+## Related
+- **segmentation-analysis** -- Method for analyzing phrase structure
 
-Phrases are fundamental units of musical form:
+# Common Errors
+- **Error**: Identifying too many phrases by marking every pause as a phrase ending
+  **Correction**: Phrases require genuine closure (cadences); not every pause or V-I is a cadence
 
-**Structural function**:
-- Basic building block of musical form
-- Combine to create larger sections (themes, periods, sections)
-- Provide articulation points in musical flow
-- Enable hierarchical organization of musical time
-- Create patterns of tension and resolution
+# Common Confusions
+- **Confusion**: "Phrase" and "phrasing" are the same thing
+  **Clarification**: "Phrase" is a formal unit; "phrasing" is performance shaping
+- **Confusion**: All phrases are 4 or 8 measures
+  **Clarification**: Phrase length varies; 4/8 are common but not required
 
-**Performance implications**:
-- Understanding phrase structure informs musical shaping
-- Trajectory toward cadence suggests dynamic and temporal shaping
-- Phrase boundaries often align with breathing points (in vocal/wind music)
-- "Phrasing" in performance refers to shaping based on phrase structure
+# Source Reference
+Open Music Theory, Part III, Chapter 2: "The Phrase, Archetypes, and Unique Forms," section "The Phrase."
 
-**Analytical approach**:
-- Identify phrase endings (usually marked by cadences)
-- Determine phrase length and structure
-- Analyze how phrases group into larger units
-- Use segmentation analysis to show internal organization
-- Consider how phrases contribute to overall form
-
-**Historical context**:
-- Classical period: Regular 4- and 8-measure phrases common
-- Romantic period: More irregular phrase lengths, extended phrases
-- 20th century: Greater variety in phrase construction
-- Pop/rock: Often 4-measure phrases organized into verse/chorus structures
-
-## Examples
-
-### Basic
-
-**Simple 4-measure phrase**:
-- Measures 1-2: Opening idea (tonic harmony)
-- Measures 3-4: Closing idea (half cadence or authentic cadence)
-- Result: Complete phrase with beginning, middle, end
-
-**8-measure phrase** (common in Classical music):
-- Measures 1-2: Idea 1 (tonic)
-- Measures 3-4: Idea 2 (dominant or modulation)
-- Measures 5-6: Idea 3 (development or variation)
-- Measures 7-8: Idea 4 (authentic cadence in tonic)
-
-**Irregular phrase** (5 or 7 measures):
-- Extension or contraction of regular phrase
-- Creates asymmetry and variety
-
-### From Repertoire
-
-**Classical phrases**:
-- **Mozart, Piano Sonata K. 545, I**: Clear 4- and 8-measure phrases with cadences
-- **Haydn, String Quartets**: Regular phrases with clear cadential articulation
-- **Beethoven, Piano Sonatas**: Both regular and extended phrases
-- **Schubert, Songs**: Phrases aligned with poetic lines
-
-**Romantic phrases**:
-- **Chopin, Nocturnes**: Extended, lyrical phrases with embellishment
-- **Brahms, Symphonies**: Phrases of varying lengths, often asymmetrical
-- **Wagner, Music Dramas**: Continuous phrases with elided cadences
-
-**Popular music**:
-- **Beatles songs**: Typically 4-measure phrases in verse/chorus forms
-- **Folk songs**: Simple 4- or 8-measure phrases
-- **Jazz standards**: 8-measure phrases common (AABA form uses 8-bar phrases)
-
-## Related Concepts
-
-- **Prerequisite**: cadence, meter, harmonic-progression
-- **Leads to**: period, sentence, antecedent-consequent, phrase-expansion
-- **See also**: subphrase, segmentation-analysis
-
-## Common Confusions
-
-- Phrase vs. phrasing: "Phrase" is a formal unit; "phrasing" is performance shaping (though related)
-- Phrase endings require closure—not every 4 measures is a phrase
-- Phrases need beginning, middle, and end—avoid identifying units that are too small
-- Not all phrases are 4 or 8 measures—phrase length varies by style and period
-- Cadences usually mark phrase endings, but not every cadence ends a phrase (some are internal)
-- Phrase vs. period: A phrase is a single unit; a period is a pair of related phrases
-- Phrases can overlap or elide at cadences—phrase endings don't always create silence
-- In performance, "play it in one phrase" often means "without breaking the line," not a reference to formal phrase structure
-- Phrases are relatively complete, not absolutely complete—they function within larger contexts
-- Breath marks in music don't always align with phrase boundaries
-- Pop/rock "verse" or "chorus" typically contains multiple phrases, not a single phrase
-
-## Source Reference
-
-Open Music Theory, Part III, Chapter 1: "Foundational Concepts for Phrase-Level Forms"
+# Verification Notes
+- Re-extracted from v2 card; preserved: phrase vs. phrasing distinction, length examples
+- Definition directly quoted from source
+- Confidence: HIGH -- central concept of the chapter

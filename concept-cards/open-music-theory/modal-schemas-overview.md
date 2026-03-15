@@ -1,70 +1,94 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Modal Schemas in Pop Music
-category: theory
-source: Open Music Theory
-chapter: "Modal Schemas"
-pdf_page: null
-chapter_number: 7
-unit: null
+slug: modal-schemas-overview
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: pop-harmony
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Modal Schemas"
+chapter_number: 11
+pdf_page: null
+section: "VII.11"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - diatonic-modes
+  - chord-function
+extends: []
+related:
+  - mixolydian-schemas
+  - aeolian-schemas
+  - dorian-schemas
+  - lydian-schemas
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do modes appear in pop chord progressions?"
+  - "How do you identify modes by ear in pop music?"
 ---
 
-## Quick Definition
+# Quick Definition
+Pop songs frequently use chord progressions implying modes other than major/minor. Each mode has a "color note" that distinguishes it: mixolydian (te/lowered-^7), aeolian (le and te), dorian (la with minor tonic), lydian (fi/raised-^4). Modal schemas include shuttles (two-chord alternations), cadences (goal-oriented progressions), and the lament. A mode may appear briefly without the entire song being in that mode.
 
-Chord progressions in pop music that imply modes other than major or minor through characteristic "color notes" and their associated harmonies.
+# Core Definition
+Modes group by tonic quality: major-tonic (major, mixolydian, lydian) vs. minor-tonic (aeolian, dorian, phrygian). Each differs from major/minor by one "color note." Modal harmonies align functionally with diatonic counterparts but with more "flavors." Key schemas: Mixolydian — double plagal (bVII-IV-I), subtonic shuttle (I-bVII). Aeolian — subtonic shuttle (i-bVII), aeolian shuttle (i-bVII-bVI-bVII), aeolian cadence (bVI-bVII-i, often with picardy third), lament (i-bVII-bVI-v). Dorian — dorian shuttle (i-IV, with major IV and minor i; expanded to i-IV-i7-IV). Lydian — lydian shuttle (I-II#), lydian cadence (II#-IV-I with chromatic fi-fa-sol line); rare, often neutralized later by IV or ii. Identification by ear: (1) quality of tonic, (2) is ^7 raised (ti) or lowered (te)?, (3) check for fi (lydian) or la (dorian).
 
-## Formal Definition
+# Prerequisites
+- Diatonic modes (all seven)
+- Chord function in pop
 
-Modal schemas are harmonic progressions that employ chords built on scale degrees characteristic of a particular mode. Each mode has a "color note" - the single pitch that distinguishes it from major (for major-tonic modes) or natural minor (for minor-tonic modes). Modal harmonies function similarly to their diatonic counterparts but with additional "flavors" created by modal inflections.
+# Key Properties
+1. Each mode has one "color note" distinguishing it from major/minor
+2. Mixolydian: te (lowered-^7), bVII chord; double plagal, subtonic shuttle
+3. Aeolian: te + le; bVI and bVII chords; aeolian shuttle/cadence, lament
+4. Dorian: la (raised-^6 vs. aeolian); major IV with minor i; dorian shuttle
+5. Lydian: fi (raised-^4); II# chord; lydian shuttle/cadence; rare in pop
+6. Phrygian: ra (lowered-^2); very rare in pop
+7. Modal harmony doesn't change function — just adds more "flavors"
+8. A modal schema may appear without the entire song being in that mode
 
-## Musical Context
+# Context & Application
+"Tired of Waiting for You" (Kinks): mixolydian subtonic shuttle I-bVII. "Somebody That I Used to Know" (Gotye): aeolian subtonic shuttle in verses, aeolian shuttle in chorus. Fellowship Theme (Lord of the Rings, Shore): aeolian cadence bVI-bVII-I with picardy third. "Get Lucky" (Daft Punk): dorian shuttle i-IV in B dorian. "Forget You" (Cee Lo Green): lydian cadence II#-IV-I. Biamonte (2010) and Tagg (2011) form the basis of this framework.
 
-### Mode Classification
+# Examples
+**Example 1** (Mixolydian): I-bVII shuttle in "Tired of Waiting" (Kinks).
+**Example 2** (Aeolian cadence): bVI-bVII-I with picardy third in Lord of the Rings Fellowship Theme.
+**Example 3** (Dorian): i-IV shuttle in "Get Lucky" (Daft Punk).
+**Example 4** (Lydian): II#-IV-I cadence in "Forget You" (Cee Lo Green).
 
-**Major-tonic modes** (major third above tonic):
-- **Major**: Reference point
-- **Mixolydian**: flat^7 (te) - produces flat-VII and v
-- **Lydian**: #^4 (fi) - produces II# and vii
+# Relationships
+## Builds Upon
+- **diatonic-modes** — The seven modes provide the chord vocabulary
+## Related
+- **mixolydian-schemas** — Specific mixolydian patterns
+- **aeolian-schemas** — Specific aeolian patterns
+- **dorian-schemas** — Specific dorian patterns
+- **lydian-schemas** — Specific lydian patterns
 
-**Minor-tonic modes** (minor third above tonic):
-- **Aeolian/Natural minor**: Reference point
-- **Dorian**: ^6 (la) instead of flat^6 - produces IV and ii
+# Common Confusions
+- **Confusion**: ii-IV shuttles sound like dorian shuttles.
+  **Clarification**: If the minor chord sounds like tonic (not ii), it is dorian. Listening to lots of funk/disco helps develop this distinction.
+- **Confusion**: I-II# is always lydian.
+  **Clarification**: If II# goes to V, it is V/V (secondary dominant). Lydian II# leads elsewhere (to IV or I). Lydian is rare in pop; be cautious with identification.
 
-### Modal Harmonic Function
+# Source Reference
+Open Music Theory, Part VII: Popular Music, Chapter 11: "Modal Schemas."
 
-Modal chords generally align with diatonic functions:
-- Tonic function: I, i, iii, III, vi, VI
-- Subdominant function: IV, iv, ii, II#, flat-VI
-- Dominant function: V, v, flat-VII, vii
-
-## Examples
-
-### Basic Example
-
-Color notes and their harmonies:
-- Mixolydian flat^7: flat-VII chord (Bb in C mixolydian)
-- Dorian ^6 in minor: major IV chord (F major in D dorian/D minor)
-- Lydian #^4: II# chord (D major in C lydian)
-
-### From Repertoire
-
-- Various songs use modal schemas without being entirely in that mode
-- Modal color often appears briefly within otherwise major/minor songs
-
-## Related Concepts
-
-- Mixolydian schemas (subtonic shuttle, double plagal)
-- Aeolian schemas (aeolian shuttle, aeolian cadence, lament)
-- Dorian schemas (dorian shuttle)
-- Lydian schemas (lydian shuttle, lydian cadence)
-- Color notes
-
-## Common Confusions
-
-- **Modal vs. borrowed chords**: Modal schemas use mode-defining chords prominently; borrowed chords appear incidentally within major/minor contexts
-- **Full modal commitment**: Most pop songs using modal schemas are not entirely in that mode; they borrow modal color
-- **Identifying modes by ear**: First identify tonic quality (major/minor), then listen for ^7 (raised or lowered?), then other color notes
-
-## Source Reference
-
-Open Music Theory, Part VII: Popular Music, Chapter 11: "Modal Schemas"
+# Verification Notes
+- Re-extracted from source chapter 07-11; merged with existing v2 card
+- Preserved Biamonte/Tagg references and ear-identification flowchart
+- Confidence rationale: High — extensive source chapter with many examples

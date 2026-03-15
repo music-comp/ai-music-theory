@@ -1,289 +1,156 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tonicization
-category: theory
-source: Open Music Theory
-chapter: "Tonicization and Secondary Chords"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: tonicization
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: chromatic-harmony
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Tonicization"
+chapter_number: 15
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "secondary function"
+  - "temporary tonicization"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - harmonic-function
+  - dominant-seventh-chord
+  - leading-tone-chord
+extends:
+  - harmonic-function
+related:
+  - applied-chord
+  - secondary-dominant
+  - secondary-leading-tone-chord
+  - extended-tonicization
+contrasts_with:
+  - modulation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is tonicization?"
+  - "How does tonicization differ from modulation?"
+  - "Which chords can be tonicized?"
+  - "How do I analyze tonicization?"
 ---
 
-# Tonicization
+# Quick Definition
 
-## Quick Definition
+Tonicization is the process of making a non-tonic chord temporarily sound like tonic by approaching it with its own dominant (V/x, V7/x) or leading-tone chord (vii-o7/x), introducing chromatic alterations without leaving the original key.
 
-The process of temporarily emphasizing a diatonic chord as if it were a tonic by approaching it with its own dominant (or leading-tone chord)—creating a brief, local sense of a new tonal center without actually modulating away from the original key, achieved through secondary dominants (V/x, V7/x) or secondary leading-tone chords (vii°/x, vii°7/x) that introduce chromatic alterations to create temporary leading tones and dominant function toward non-tonic chords, notated with slash notation showing the applied chord and its target, distinguished from modulation by its brevity and lack of cadential confirmation, and fundamental to chromatic harmony's expansion of tonal vocabulary beyond strictly diatonic resources.
+# Core Definition
 
-## Formal Definition
+**Tonicization** is the process of making a non-tonic chord temporarily sound like tonic (OMT, Ch. IV.15). It is accomplished using **secondary dominant** (V/x, V7/x) or **secondary leading-tone** (vii-o7/x) chords, also called **applied chords**. These chords are notated with a slash: the chord before the slash is its identity in the secondary key, and the chord after the slash is the chord being tonicized. Read left to right with "of" replacing the slash: V/ii = "five of two."
 
-**Tonicization** is the temporary treatment of a diatonic chord as a tonic through applied (secondary) dominant or leading-tone chords.
+Applied chords nearly always involve accidentals, especially accidentals that raise the pitch. Another way to think about them: they are altered versions of diatonic chords (e.g., ii becomes II-sharp, which is V/V).
 
-**Key characteristics**:
-- **Temporary**: Brief emphasis, not sustained key change
-- **Applied chords**: V/x, V7/x, vii°/x, vii°7/x (secondary chords)
-- **Chromatic alteration**: Introduces notes foreign to key
-- **No modulation**: Original key maintained
-- **Target chord**: Any diatonic chord except diminished vii°
+# Prerequisites
 
-**Process**: Applied chord → Target chord (acts like V→I locally)
+- **Harmonic function** — Applied chords create temporary dominant-tonic relationships
+- **Dominant seventh chord** — Secondary dominants follow V7 resolution principles
+- **Leading-tone chord** — Secondary leading-tone chords follow vii-o7 resolution principles
 
-**Notation**: "V/V" = "five of five" (dominant OF the dominant)
+# Key Properties
 
-## Tonicization vs. Modulation
+1. Temporary: brief emphasis, not sustained key change
+2. Uses applied/secondary chords (V/x, V7/x, vii-o/x, vii-o7/x)
+3. Introduces chromatic notes (accidentals, especially raised pitches)
+4. No modulation: original key maintained
+5. Any major or minor triad can be tonicized (not diminished or augmented)
+6. Cannot tonicize vii-o or ii-o (no diminished/augmented keys)
+7. Most commonly tonicized: V, ii, vi, IV
+8. Chromaticism signals potential tonicization
 
-**Tonicization** (temporary):
-```
-C major: I - V7/V - V - I
-         C   D7     G   C
+# Construction / Recognition
 
-V7/V tonicizes G briefly
-Returns immediately to C
-No cadence in G
-Brief, local emphasis
-```
+## Steps for Analyzing Tonicization (OMT Ch. IV.15):
+1. Find a chromatic note. Is it part of the chord or an embellishing tone?
+2. Determine the chord's quality:
+   - Major triad or dominant seventh = V(7)/x
+   - Diminished triad or diminished seventh = vii-o(7)/x
+3. To determine x: In what key is the chromatic chord V or vii-o? That key's tonic = x in the home key
 
-**Modulation** (key change):
-```
-C major: I - V7/V |
-         C   D7   
-                  ↓ (pivot)
-G major:     V7   | I - V - I
-             D7   | G   D   G
+## Steps for Spelling Applied Chords:
+1. Determine the root of the chord being tonicized
+2. Pretend this root is tonic of a temporary key
+3. Spell V7 or vii-o7 in that temporary key
 
-Cadence confirms G major
-Sustained in new key
-Structural key change
-```
+## Resolving Applied Chords:
+1. Secondary leading tone resolves UP (like a leading tone)
+2. Secondary seventh resolves DOWN (like a chordal seventh)
+3. Exception: when target is itself a seventh chord, the secondary leading tone may resolve DOWN by semitone into the seventh
 
-**Key distinction**: Duration and cadential confirmation
+# Context & Application
 
-## Applied Chords (Secondary Chords)
+- **Typical contexts**: Chromatic passages in common-practice music; intensifying approaches to important chords
+- **Common applications**: V/V most common (tonicizing V); V/ii, V/vi also very common
+- **Historical/stylistic notes**: Source uses examples from Joseph Bologne (String Quartet), Josephine Lang, Maria Szymanowska. Tonicized deceptive motion (vii-o7/vi before vi) is a striking effect.
 
-**Types of applied chords**:
+# Examples
 
-**Secondary dominants**:
-- **V/x**: Major triad on raised scale degree
-- **V7/x**: Dominant seventh
-- Most common type
+**Example 1** (OMT Ch. IV.15, Example 1): Tonicization in Joseph Bologne, Six Concertante Quartets No. 1, II, mm. 1-8. V6/5/V tonicizes V at a half cadence.
 
-**Secondary leading-tone chords**:
-- **vii°/x**: Diminished triad
-- **vii°7/x**: Fully diminished seventh
-- Less common but valid
+**Example 2** (OMT Ch. IV.15, Example 3): Secondary leading-tone chord (vii-o7/V) in Josephine Lang, followed by cad. 6/4.
 
-## Common Tonicizations
+**Example 3** (OMT Ch. IV.15, Example 8): Tonicizing IV in Joseph Bologne, String Quartet No. 4, I — tonic triad becomes V7/IV by adding te (^b7).
 
-**V/V in major** (most common):
-```
-C major: V/V = D or D7
-         Tonicizes: V (G major)
+**Example 4** (OMT Ch. IV.15, Example 10): Tonicized deceptive motion (vii-o7/vi before vi) in Josephine Lang.
 
-Progression: I - V7/V - V - I
-             C   D7     G   C
+**Example 5** (OMT Ch. IV.15, Example 12): Summary diagram showing how each diatonic triad can be chromatically altered to generate secondary V7 chords.
 
-D7 contains F# (temporary leading tone to G)
-Briefly tonicizes G
-Returns to C major tonic
-```
+# Relationships
 
-**V/ii**:
-```
-C major: V/ii = A or A7
-         Tonicizes: ii (D minor)
+## Builds Upon
+- **Harmonic function** — Applied chords create temporary functional relationships
 
-Progression: I - V7/ii - ii - V - I
-             C   A7      Dm   G   C
+## Enables
+- **Applied chord** — Umbrella term for all secondary dominant and leading-tone chords
+- **Extended tonicization** — Longer tonicizations approaching but not reaching modulation
+- **Modulation** — Full key change (the "stronger" end of the tonicization-modulation spectrum)
 
-A7 contains C# (temporary leading tone to D)
-Strengthens approach to ii
-```
+## Related
+- **Secondary dominant** — V/x and V7/x applied chords
+- **Secondary leading-tone chord** — vii-o/x and vii-o7/x applied chords
 
-**V/vi**:
-```
-C major: V/vi = E or E7
-         Tonicizes: vi (A minor)
+## Contrasts With
+- **Modulation** — Modulation is longer-term with cadential confirmation; tonicization is brief and temporary
 
-Progression: I - V7/vi - vi - IV
-             C   E7      Am   F
+# Common Errors
 
-E7 contains G# (temporary leading tone to A)
-Common in popular music
-```
+- **Error**: Analyzing every chromatic note as tonicization
+  **Correction**: Check if the chromatic note is an embellishing tone first; only chromatic chord tones indicate potential tonicization
 
-## Chromatic Alterations
+- **Error**: Forgetting to raise the leading tone in applied chords
+  **Correction**: Applied chords nearly always involve raised accidentals to create the temporary leading tone
 
-**Creating temporary leading tones**:
-```
-V/V in C major: D7 (D-F#-A-C)
+# Common Confusions
 
-F# = raised ^4 in C major
-F# acts as leading tone TO G (^7 in "key" of G)
-Chromatic alteration creates tonicization
-```
+- **Confusion**: Thinking tonicization changes the key
+  **Clarification**: Tonicization is temporary; the original key remains structurally in control (no cadence in the new key)
 
-**Pattern**: Raise the note a half step below target root
+- **Confusion**: Believing only V can be tonicized
+  **Clarification**: Any major or minor diatonic triad can be tonicized (V, ii, vi, IV, iii, and VII in minor)
 
-**Voice leading**:
-```
-V7/V → V in C major:
-D-F#-A-C → G-B-D-G
+# Source Reference
 
-F# → G (temporary leading tone resolves UP)
-C → B (chordal seventh resolves DOWN)
-Same voice leading as primary V7→I
-```
+Open Music Theory, Part IV, Chapter 15: "Tonicization." See Examples 1-12 (especially Example 12, altered diatonic chords summary).
 
-## Tonicization Targets
-
-**Can tonicize** (any major or minor diatonic chord):
-- I (technically just V, not V/I)
-- ii, iii (less common)
-- IV, V (very common)
-- vi (very common)
+# Verification Notes
 
-**Cannot tonicize**:
-- vii° (diminished triad, not stable enough to be "temporary tonic")
-
-**Most common targets**: V, ii, vi, IV
-
-## Extended Tonicization
-
-**Brief tonicization** (standard):
-```
-One applied chord: V7/V - V
-
-Single chromatic chord
-Immediate resolution
-Clear tonicization
-```
-
-**Extended tonicization** (longer):
-```
-Multiple chords tonicizing V:
-V7/V - viio/V - V
-
-Or: ii/V - V7/V - V
-
-Gray area between tonicization and modulation
-Longer but still returns to original key
-No cadence in "tonicized" key
-```
-
-## Musical Context
-
-Tonicization serves specific purposes:
-- **Harmonic color**: Chromatic enrichment without modulation
-- **Forward momentum**: Applied chords create drive to target
-- **Expands vocabulary**: Beyond diatonic resources
-- **Brief emphasis**: Highlights individual chords
-- **Common-practice universal**: Baroque through Romantic
-- **Secondary dominants most common**: V/V, V/ii, V/vi standard
-- **Voice leading**: Same as primary dominants
-- **No key change**: Original tonic remains structural
-
-Essential for understanding chromatic harmony in tonal music.
-
-## Examples
-
-### Basic
-
-**V/V in C major**:
-```
-Progression: I - V7/V - V - I
-             C   D7     G   C
-
-D7 (D-F#-A-C) tonicizes G
-F# is chromatic (raised ^4)
-Resolves to V, then to I
-Brief tonicization
-```
-
-**V/ii in C major**:
-```
-Progression: V7/ii - ii - V - I
-             A7      Dm   G   C
-
-A7 (A-C#-E-G) tonicizes Dm
-C# is chromatic (raised ^1)
-Strengthens approach to ii
-```
-
-**V/vi in C major**:
-```
-Progression: I - V/vi - vi - IV
-             C   E      Am   F
-
-E major tonicizes Am
-G# is chromatic (raised ^5)
-Common in popular music
-```
-
-**Chain of tonicizations**:
-```
-V7/iii - iii - V7/vi - vi - V7/ii - ii - V - I
-
-Each chord tonicized by its dominant
-Creates forward drive
-Extended chromatic sequence
-```
-
-**vii°/V** (secondary leading-tone):
-```
-C major: vii°/V = F#° (F#-A-C)
-         Tonicizes: V (G major)
-
-Progression: I - vii°/V - V
-             C   F#°     G
-
-F#° = V7/V without root
-Same function, different quality
-```
-
-### From Repertoire
-
-**Bach, Well-Tempered Clavier**: Extensive tonicizations, V/V common at cadences, chromatic harmony enriches diatonic framework.
-
-**Mozart, Piano Sonatas**: V/V, V/ii, V/vi throughout, tonicizations create harmonic interest, standard Classical practice.
-
-**Beethoven, Symphonies**: Tonicizations in transitions and developments, chromatic harmony for tonal variety.
-
-**Chopin, Preludes and Nocturnes**: Rich tonicizations, chains of secondary dominants, Romantic chromatic palette.
-
-**Popular music** (e.g., Beatles): V/vi common ("Something", "In My Life"), chromatic color in verse-chorus progressions.
-
-## Related Concepts
-
-- **Prerequisite**: secondary-dominant, dominant-function, chromatic-alteration, leading-tone, ii-v-i-progression
-- **Leads to**: secondary-leading-tone-chord, applied-chord, extended-tonicization, modulation
-- **See also**: chromatic-harmony
-
-## Common Confusions
-
-- Tonicization = **temporary** emphasis of non-tonic chord as tonic
-- Uses applied/secondary chords (V/x, V7/x, vii°/x, vii°7/x)
-- Different from modulation (which is sustained key change with cadence)
-- Notation: "V/V" = dominant OF the dominant (slash = "of")
-- Chromatic alterations create temporary leading tones
-- Most common: V/V, V/ii, V/vi, V/IV
-- Brief duration (one or few chords)
-- No cadence in "tonicized" key (just emphasis)
-- Original key remains structural tonic
-- Can tonicize any major/minor diatonic chord (not vii°)
-- V/I would just be V (redundant)
-- Extended tonicization = multiple chords (gray area before modulation)
-- Voice leading same as primary V7→I
-- Temporary leading tone resolves UP
-- Chordal seventh resolves DOWN
-- Universal in common-practice music
-- Creates chromatic color without modulation
-- Secondary dominant most common applied chord
-- Secondary leading-tone (vii°/x) also valid
-- "Applied chord" = alternate term for secondary chord
-- "Slash notation" shows relationship (V/V, vii°7/ii, etc.)
-- Returns to original key (no sustained departure)
-
-## Source Reference
-
-Open Music Theory, Part IV: "Chromatic Harmony"
-Open Music Theory, Part IV: "Tonicization and Secondary Function"
+- Definition source: Direct from OMT Ch. IV.15
+- Confidence rationale: HIGH — extensive explicit definition with analytical procedures
+- Re-extraction notes: Re-extracted from v2 card; preserved: slash notation explanation, chromatic alteration concept, tonicization targets list, distinction from modulation. Source-specific examples from Bologne, Lang, and Szymanowska replace old card's generic examples.

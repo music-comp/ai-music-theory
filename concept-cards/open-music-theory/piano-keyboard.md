@@ -1,75 +1,106 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Piano Keyboard
-category: theory
-source: Open Music Theory
-chapter: "The Keyboard and the Grand Staff"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: piano-keyboard
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "The Keyboard and the Grand Staff"
+chapter_number: 4
+pdf_page: null
+section: "The Piano Keyboard"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "keyboard"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch
+  - octave-equivalence
+extends: []
+related:
+  - grand-staff
+  - middle-c
+  - half-step
+  - whole-step
+  - aspn
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How is the piano keyboard organized?"
+  - "How do you find specific notes on the keyboard?"
+  - "What is the pattern of black and white keys?"
 ---
 
-# Piano Keyboard
+# Quick Definition
 
-## Quick Definition
+The layout of white and black keys on a piano, organized in a repeating pattern of groups of two and three black keys across multiple octaves.
 
-The layout of white and black keys on a piano, organized in a repeating pattern across multiple octaves, providing a visual and physical representation of pitch relationships.
+# Core Definition
 
-## Formal Definition
+The **piano keyboard** is a horizontal arrangement of white and black keys spanning approximately seven complete octaves (plus portions of octaves 0 and 8). Black keys are grouped in alternating sets of two and three. The white key immediately to the left of a group of two black keys is always C; the white key immediately to the left of a group of three black keys is always F. This pattern repeats for each octave due to octave equivalence.
 
-The **piano keyboard** is a horizontal arrangement of keys (both white and black) that spans approximately seven complete octaves plus small portions of octaves 0 and 8. The keyboard exhibits a repeating pattern:
+# Prerequisites
 
-- **White keys**: Represent the natural pitches (C, D, E, F, G, A, B) in sequential order
-- **Black keys**: Grouped in alternating sets of two and three, representing the sharps and flats
+- **Pitch**: understanding of highness/lowness
+- **Octave equivalence**: the repeating pattern depends on this principle
 
-Key reference points:
-- **C**: Always found immediately to the left of a two-black-key group
-- **F**: Always found immediately to the left of a three-black-key group
+# Key Properties
 
-This pattern repeats across the entire keyboard, with each repetition representing a new octave related by octave equivalence (pitches separated by an octave = 12 semitones).
+- White keys: natural pitches C, D, E, F, G, A, B (in order, repeating)
+- Black keys: grouped in alternating sets of 2 and 3
+- C is always to the immediate left of the two-black-key group
+- F is always to the immediate left of the three-black-key group
+- Each adjacent key (white to black or black to white) = one half step
+- The pattern repeats for each octave
+- The keyboard primarily spans ASPN octaves 1 through 7
 
-## Musical Context
+# Construction / Recognition
 
-The piano keyboard is fundamental to music theory education because:
-- It provides kinesthetic engagement with pitch relationships
-- Intervals are visually represented as physical distances
-- The layout makes whole steps and half steps immediately visible
-- It serves as a reference for understanding harmony and voice leading
+The keyboard is recognized by its alternating pattern of white and black keys. The groupings of 2 and 3 black keys provide visual and tactile landmarks for finding any pitch.
 
-The keyboard's layout directly corresponds to the Western chromatic scale, with each key (white or black) representing one half step from its neighbor.
+# Context & Application
 
-## Examples
+The piano keyboard provides a kinesthetic way to engage with music theory. It makes intervals visually and physically apparent, aids in understanding scales and chords, and serves as a universal reference tool for musicians of all instruments. Many music theory concepts are taught using the keyboard layout.
 
-### Basic
+# Examples
 
-Pattern recognition:
-- White keys follow the sequence: C-D-E-F-G-A-B (repeating)
-- Black keys in groups of 2: C♯/D♭ and D♯/E♭
-- Black keys in groups of 3: F♯/G♭, G♯/A♭, and A♯/B♭
+- Black keys in groups of 2: C#/Db and D#/Eb
+- Black keys in groups of 3: F#/Gb, G#/Ab, and A#/Bb
+- Middle C (C4): white key to the left of the two-black-key group near the center, usually under the brand name
+- No black key between E-F or B-C (these are natural half steps)
 
-Finding middle C (C4):
-- Locate the two-black-key group near the center of the keyboard
-- Middle C is the white key immediately to the left of this group
-- Usually positioned beneath the piano's brand name
+# Relationships
 
-### From Repertoire
-
-Pianists use the keyboard's visual pattern to navigate music quickly. Beethoven's "Moonlight Sonata" uses the repeating octave patterns. Chopin's études exploit the geometric relationships between black and white keys for technical facility.
-
-## Related Concepts
-
-- **Prerequisite**: pitch, octave-equivalence, half-step
 - **Leads to**: grand-staff, middle-c, interval, chord, scale
-- **See also**: aspn, enharmonic-equivalence
+- **See also**: aspn, enharmonic-equivalence, half-step, whole-step
 
-## Common Confusions
+# Common Errors
 
-- The keyboard pattern is not symmetrical around middle C (octaves start on C, not A)
-- Black keys have two names (e.g., C♯ = D♭) depending on musical context
-- There is no black key between E-F or B-C (these are natural half steps)
-- Counting half steps: moving from any key to the very next key (white or black) = one half step
-- The keyboard spans octaves 1-7 completely, with small portions of 0 and 8
+- Assuming all adjacent white keys are a whole step apart (E-F and B-C are half steps)
 
-## Source Reference
+# Common Confusions
+
+- Black keys have two names (e.g., C# = Db) depending on musical context -- this is enharmonic equivalence
+- The keyboard pattern is not symmetrical around middle C
+- Counting intervals on the keyboard: always count the first note as "one"
+
+# Source Reference
 
 Open Music Theory, Part I, Chapter 4: "The Keyboard and the Grand Staff"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: reference points for C and F, octave span information, natural half-step pairs.

@@ -1,74 +1,111 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Accidental
-category: theory
-source: Open Music Theory
-chapter: "Half Steps, Whole Steps, and Accidentals"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: accidental
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Half Steps, Whole Steps, and Accidentals"
+chapter_number: 5
+pdf_page: null
+section: "Sharps, Flats, and Naturals"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch
+  - half-step
+  - whole-step
+  - staff
+  - note
+extends: []
+related:
+  - enharmonic-equivalence
+  - key-signature
+  - chromatic-scale
+contrasts_with:
+  - key-signature
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is an accidental?"
+  - "What do sharps, flats, and naturals do?"
+  - "Where should accidentals be placed relative to a note?"
 ---
 
-# Accidental
+# Quick Definition
 
-## Quick Definition
+A symbol placed before a note that raises or lowers its pitch by a half step or whole step, or cancels a previous modification.
 
-A symbol placed before a note to raise or lower its pitch by a half step or whole step, or to cancel a previous accidental.
+# Core Definition
 
-## Formal Definition
+An **accidental** is a symbol written to the left of a notehead that modifies the pitch of that note. The five standard accidentals are: **sharp** (#) raises by one half step, **flat** (b) lowers by one half step, **natural** cancels a previous sharp or flat, **double sharp** (x) raises by two half steps (a whole step), and **double flat** (bb) lowers by two half steps (a whole step). Accidentals must always be written to the left of the notehead, directly across the line or space on which the note appears.
 
-An **accidental** is a symbol written to the left of a notehead that modifies the pitch of that note. The five standard accidentals are:
+# Prerequisites
 
-- **Sharp (♯)**: Raises a note by one half step (1 semitone)
-- **Flat (♭)**: Lowers a note by one half step (1 semitone)
-- **Natural (♮)**: Cancels a previous sharp or flat, returning to the natural pitch
-- **Double sharp (𝄪 or ×)**: Raises a note by two half steps (1 whole step)
-- **Double flat (𝄫)**: Lowers a note by two half steps (1 whole step)
+- **Pitch**: what is being modified
+- **Half step / whole step**: the distances accidentals create
+- **Staff / note**: the context in which accidentals appear
 
-Accidentals must be written:
-- To the LEFT of the notehead (never to the right)
-- Directly across from the line or space of the note
-- At the same vertical height as the notehead
+# Key Properties
 
-An accidental affects all subsequent notes of the same pitch within the same measure, unless canceled by another accidental.
+- Sharp (#): raises by one half step; looks like a tilted hashtag
+- Flat (b): lowers by one half step; looks like a slanted lowercase "b"
+- Natural: cancels a previous accidental; tilted box shape
+- Double sharp (x): raises by a whole step (two half steps)
+- Double flat (bb): lowers by a whole step (two half steps)
+- Always written to the LEFT of the notehead
+- Must be at the same vertical position as the notehead (same line or space)
 
-## Musical Context
+# Construction / Recognition
 
-Accidentals allow composers to use pitches outside the key signature, enabling chromaticism, modulation, and expressive inflection. They are essential for:
-- Chromatic passages
-- Tonicization and modulation
-- Melodic alterations (raised leading tones in minor, etc.)
-- Creating tension and color
+When writing accidentals, place them immediately to the left of the notehead, on the same line or space. Do not make them too large, too small, or on a different line/space than the note.
 
-In jazz and contemporary music, accidentals are frequent. In diatonic classical music, they mark moments of harmonic interest or key change.
+# Context & Application
 
-## Examples
+Accidentals name the black keys on the piano: black keys a half step above a white key take its name plus "sharp" (e.g., C#); black keys a half step below take the white key's name plus "flat" (e.g., Db). White keys can also have accidental names: F is also E#, E is also Fb, C is also B#, B is also Cb. Accidentals enable chromaticism, modulation, and expressive inflection.
 
-### Basic
+# Examples
 
-- C♯ = C raised by a half step (same pitch as D♭)
-- E♭ = E lowered by a half step (same pitch as D♯)
-- F♮ = F natural (cancels any previous F♯ or F♭)
-- D𝄪 = D raised by a whole step (same pitch as E)
-- B𝄫 = B lowered by a whole step (same pitch as A)
+- C# = C raised by a half step (same sound as Db)
+- Eb = E lowered by a half step (same sound as D#)
+- F-natural = cancels any previous F# or Fb
+- Dx = D raised by a whole step (same sound as E)
+- Bbb = B lowered by a whole step (same sound as A)
 
-### From Repertoire
+# Relationships
 
-Bach's chromatic passages use frequent accidentals. In Chopin's works, accidentals create expressive melodic inflections and harmonic color. Jazz lead sheets are filled with accidentals showing chord alterations and chromatic passing tones.
+- **Leads to**: enharmonic-equivalence, key-signature, chromatic-scale
+- **See also**: half-step, whole-step, pitch
 
-## Related Concepts
+# Common Errors
 
-- **Prerequisite**: pitch, half-step, whole-step, staff, note
-- **Leads to**: enharmonic-equivalence, key-signature, modulation
+- Placing accidentals to the right of the note instead of the left
+- Placing accidentals on a different line or space than the notehead
+- Making accidentals too large or too small
 
-## Common Confusions
+# Common Confusions
 
-- Accidentals go to the LEFT of the note, not the right
-- An accidental affects ALL subsequent notes of that pitch in the same measure
-- Accidentals don't carry over the barline (unless tied)
-- Key signatures vs. accidentals: key signature sharps/flats appear at the beginning and affect the entire piece; accidentals are temporary
-- Double sharp (𝄪) ≠ two sharps; it's a single symbol meaning "raise by a whole step"
+- Key signature accidentals appear at the beginning and affect the entire piece; written accidentals are local to a measure
+- An accidental affects all subsequent notes of that pitch within the same measure
+- Double sharp is a single symbol (x), not two separate sharps
 
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 5: "Half Steps, Whole Steps, and Accidentals"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: all five accidental types, placement rules, distinction from key signatures.

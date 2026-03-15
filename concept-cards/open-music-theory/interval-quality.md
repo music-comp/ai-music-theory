@@ -1,88 +1,105 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Interval Quality
-category: theory
-source: Open Music Theory
-chapter: "Intervals"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: interval-quality
+
+# === CLASSIFICATION ===
+category: intervals
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Intervals"
+chapter_number: 16
+pdf_page: null
+section: "Perfect, Major, and Minor Qualities"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval
+  - generic-interval
+  - major-scale
+extends: []
+related:
+  - consonance
+  - dissonance
+  - tritone
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the five interval qualities?"
+  - "Which intervals are perfect and which are major/minor?"
+  - "What makes an interval augmented or diminished?"
 ---
 
-# Interval Quality
+# Quick Definition
 
-## Quick Definition
+The precise classification of an interval as perfect, major, minor, augmented, or diminished, which combined with size fully identifies the interval.
 
-The precise measurement (in semitones) of an interval, indicated by terms like perfect, major, minor, augmented, or diminished.
+# Core Definition
 
-## Formal Definition
+**Interval quality** makes an interval specific when combined with size. Five qualities exist: **augmented** (A or +), **major** (ma), **perfect** (P), **minor** (mi), and **diminished** (d or o). Unisons, 4ths, 5ths, and octaves are perfect; 2nds, 3rds, 6ths, and 7ths are major or minor. Augmented = one half step larger than perfect or major. Diminished = one half step smaller than perfect or minor. Note: one half step smaller than major = minor (not diminished).
 
-**Interval quality** specifies the exact size of an interval in semitones, combined with the interval's generic size (second, third, fourth, etc.) to create a complete interval identification.
+# Prerequisites
 
-The five interval qualities are:
-- **Perfect (P)**: Used for unisons, fourths, fifths, and octaves
-- **Major (M or ma)**: Used for seconds, thirds, sixths, and sevenths
-- **Minor (m or mi)**: Used for seconds, thirds, sixths, and sevenths
-- **Augmented (A or +)**: One half step larger than perfect or major
-- **Diminished (d or o)**: One half step smaller than perfect or minor
+- **Interval**: the concept quality modifies
+- **Generic interval**: the size component
+- **Major scale**: the reference for determining quality
 
-Quality and size hierarchy:
-- Doubly diminished < Diminished < Minor/Perfect < Major < Augmented < Doubly augmented
+# Key Properties
 
-Rule: Unisons, fourths, fifths, and octaves are perfect (or augmented/diminished). Seconds, thirds, sixths, and sevenths are major/minor (or augmented/diminished).
+- Perfect intervals: unisons, 4ths, 5ths, octaves (P1, P4, P5, P8)
+- Major/minor intervals: 2nds, 3rds, 6ths, 7ths
+- Augmented = P or ma + one half step larger
+- Minor = ma - one half step smaller
+- Diminished = P or mi - one half step smaller
+- Doubly augmented/diminished possible (rare)
+- Quality is written before size: "perfect fifth" (P5), "minor third" (mi3)
 
-## Musical Context
+# Construction / Recognition
 
-Interval quality determines:
-- **Harmonic color**: Major thirds sound bright; minor thirds sound dark
-- **Consonance/dissonance**: Perfect consonances (P1, P5, P8), imperfect consonances (M3, m3, M6, m6), dissonances (all 2nds, 7ths, A4, d5)
-- **Voice leading**: Tendency tones often move by minor or major seconds
-- **Chord quality**: Major and minor chords differ by the quality of their third
+Use the major-scale method: if the top note is in the bottom note's major scale, the interval is perfect or major. Lower = minor (for 2nds, 3rds, 6ths, 7ths) or diminished (for unisons, 4ths, 5ths, octaves). Further alteration = augmented or diminished.
 
-The distinction between major and minor intervals is crucial for understanding the emotional character of music. Perfect intervals have a unique acoustic purity (simple frequency ratios).
+# Context & Application
 
-## Examples
+Interval quality is essential for chord construction, voice leading, ear training, and analysis. Perfect and major intervals from the tonic define the major scale.
 
-### Basic
+# Examples
 
-Perfect intervals:
-- P1 (unison) = 0 semitones
-- P4 (perfect fourth) = 5 semitones
-- P5 (perfect fifth) = 7 semitones
-- P8 (octave) = 12 semitones
+- C to E (in C major) = major third (ma3)
+- C to Eb = minor third (mi3)
+- C to E# = augmented third (A3)
+- F to B = augmented fourth (A4, tritone)
+- B to F = diminished fifth (d5, tritone)
 
-Major intervals:
-- M2 = 2 semitones, M3 = 4 semitones, M6 = 9 semitones, M7 = 11 semitones
+# Relationships
 
-Minor intervals:
-- m2 = 1 semitone, m3 = 3 semitones, m6 = 8 semitones, m7 = 10 semitones
+- **Leads to**: chord, triad, seventh-chord
+- **See also**: interval, consonance, dissonance, tritone
 
-Augmented/Diminished:
-- A4 (tritone) = 6 semitones (one half step larger than P4)
-- d5 (tritone) = 6 semitones (one half step smaller than P5)
+# Common Errors
 
-### From Repertoire
+- Making an interval one half step smaller than major and calling it diminished (it is minor; diminished is one half step smaller than minor or perfect)
 
-Major thirds: Opening of "Kumbaya" (C-E)
-Minor thirds: Opening of "Greensleeves" (A-C in A minor)
-Perfect fourths: "Here Comes the Bride"
-Perfect fifths: "Twinkle, Twinkle" (C-G)
-Augmented fourth/tritone: "The Simpsons" theme, "Maria" from West Side Story
+# Common Confusions
 
-## Related Concepts
+- The progression of qualities is: diminished < minor < major < augmented (for 2nds, 3rds, 6ths, 7ths)
+- For perfect intervals: diminished < perfect < augmented (no major/minor)
 
-- **Prerequisite**: interval, half-step, major-scale, generic-interval
-- **Leads to**: consonance-dissonance, chord-quality, major-triad, minor-triad, perfect-fourth
-- **See also**: interval-inversion, semitone, chromatic-alteration
-
-## Common Confusions
-
-- Perfect intervals (1, 4, 5, 8) NEVER have major/minor quality; only augmented/diminished
-- Major/minor intervals (2, 3, 6, 7) have major/minor quality, not perfect
-- Augmented is larger, diminished is smaller—remember "augment = add, diminish = subtract"
-- Enharmonic intervals sound the same but have different names (A4 vs. d5 both = 6 semitones)
-- Quality is NOT the same as consonance/dissonance (M6 is consonant; M7 is dissonant)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 16: "Intervals"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: five quality types, perfect vs major/minor groupings, augmented/diminished rules.

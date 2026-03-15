@@ -1,95 +1,93 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Interval Inversion
-category: theory
-source: Open Music Theory
-chapter: "Intervals"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: interval-inversion
+
+# === CLASSIFICATION ===
+category: intervals
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Intervals"
+chapter_number: 16
+pdf_page: null
+section: "Intervallic Inversion"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "intervallic inversion"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval
+  - interval-quality
+extends: []
+related:
+  - simple-compound-intervals
+  - enharmonic-equivalence
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is interval inversion?"
+  - "What rules govern inverted interval sizes and qualities?"
+  - "When is inversion useful for identification?"
 ---
 
-# Interval Inversion
+# Quick Definition
 
-## Quick Definition
+Flipping two notes so the bottom becomes the top (or vice versa); inverted sizes add up to 9 and qualities reverse (major becomes minor, augmented becomes diminished, perfect stays perfect).
 
-The process of reversing the position of two pitches in an interval by moving the lower note up an octave or the upper note down an octave, creating a complementary interval that sums with the original to equal an octave.
+# Core Definition
 
-## Formal Definition
+**Intervallic inversion** occurs when two notes are "flipped" -- the lower note moves up an octave (or the upper note moves down). Two key rules: (1) sizes of inverted pairs always add up to 9 (unisons invert to octaves, 2nds to 7ths, 3rds to 6ths, 4ths to 5ths). (2) Qualities reverse: perfect inverts to perfect, major to minor, augmented to diminished. Inversion is useful when the bottom note has a difficult or imaginary key signature -- invert the interval to work from the easier note.
 
-**Intervallic inversion** (or **interval inversion**) occurs when the two pitches forming an interval exchange positions—the lower note becomes the upper note, or vice versa, typically by octave displacement.
+# Prerequisites
 
-**Mathematical relationship**:
-- Original interval size + inverted interval size = 9
-  - Second (2) inverts to seventh (7): 2 + 7 = 9
-  - Third (3) inverts to sixth (6): 3 + 6 = 9
-  - Fourth (4) inverts to fifth (5): 4 + 5 = 9
-  - Fifth (5) inverts to fourth (4): 5 + 4 = 9
-  - Etc.
+- **Interval**: the concept being inverted
+- **Interval quality**: the qualities that reverse
 
-**Quality transformations** under inversion:
-- Perfect (P) ↔ Perfect (P)
-- Major (M) ↔ Minor (m)
-- Augmented (A) ↔ Diminished (d)
+# Key Properties
 
-**Inversion pairs**:
-- Unison (P1) ↔ Octave (P8)
-- Minor second (m2) ↔ Major seventh (M7)
-- Major second (M2) ↔ Minor seventh (m7)
-- Minor third (m3) ↔ Major sixth (M6)
-- Major third (M3) ↔ Minor sixth (m6)
-- Perfect fourth (P4) ↔ Perfect fifth (P5)
-- Augmented fourth/Tritone (A4) ↔ Diminished fifth (d5)
+- Sizes add to 9: 1+8, 2+7, 3+6, 4+5
+- Perfect inverts to perfect
+- Major inverts to minor (and vice versa)
+- Augmented inverts to diminished (and vice versa)
+- Useful strategy for difficult bottom notes
 
-## Musical Context
+# Construction / Recognition
 
-Interval inversion serves analytical and compositional purposes:
-- **Analytical tool**: Simplifies difficult interval identification
-  - If lower note is tonic of obscure key, invert the interval
-- **Compositional technique**: Creates melodic variation through inversion
-- **Harmonic understanding**: Inverted intervals have complementary functions
-- **Symmetry**: Tritone inverts to itself (A4 = d5 enharmonically)
+Move the lower note up an octave (or upper note down). Apply the rules to determine the inverted interval without calculation.
 
-Inversion is particularly useful when the lower note of an interval is the tonic of a difficult key signature with many sharps or flats.
+# Context & Application
 
-## Examples
+Inversion helps identify intervals with imaginary key signatures (e.g., Ebb-Ab: invert to Ab-Ebb, work from Ab major). It also reveals compositional relationships exploited by composers.
 
-### Basic
+# Examples
 
-**Inverting intervals** (C as lower note):
-- C to E (M3) → E to C (m6): major third inverts to minor sixth
-- C to G (P5) → G to C (P4): perfect fifth inverts to perfect fourth
-- C to F♯ (A4) → F♯ to C (d5): augmented fourth inverts to diminished fifth
+- Major 3rd inverts to minor 6th (3+6=9, major becomes minor)
+- Perfect 4th inverts to perfect 5th (4+5=9, perfect stays perfect)
+- Augmented 6th inverts to diminished 3rd (6+3=9, augmented becomes diminished)
 
-**Quality transformation**:
-- Major → Minor (and vice versa)
-- Perfect → Perfect
-- Augmented → Diminished (and vice versa)
+# Relationships
 
-**Size calculation**:
-- Third inverts to sixth: 3 + 6 = 9
-- Second inverts to seventh: 2 + 7 = 9
+- **See also**: interval, interval-quality, enharmonic-equivalence
 
-### From Repertoire
+# Common Confusions
 
-Bach's fugues often use melodic inversion (subject inverted becomes countersubject). Twelve-tone composition uses pitch-class inversion systematically. Composers use interval inversion to generate complementary melodic material.
+- Inversion changes BOTH size and quality, not just one
 
-## Related Concepts
-
-- **Prerequisite**: interval, intervals, interval-quality
-- **Leads to**: harmonic-inversion, complementary-intervals
-- **See also**: ninth-chord-inversion, octave-equivalence
-
-## Common Confusions
-
-- Interval inversion vs. chord inversion: different concepts (flipping two notes vs. rearranging chord tones)
-- Inversion changes both size AND quality (not just position)
-- Size sum = 9 (not 8 or 10): second + seventh = 9, not 8
-- Tritone is symmetrical: A4 ↔ d5 (both are tritones enharmonically)
-- Inverted interval ≠ retrograde (inversion flips up/down; retrograde reverses time)
-- Perfect intervals invert to perfect (not to major/minor)
-- Interval inversion is not the same as negative harmony (more complex transformation)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 16: "Intervals"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: sum-to-9 rule, quality reversal rules, identification strategy for difficult keys.

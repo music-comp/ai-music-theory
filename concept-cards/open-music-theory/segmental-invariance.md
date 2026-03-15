@@ -1,164 +1,74 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Segmental Invariance
-category: theory
-source: Open Music Theory
-chapter: "Row Properties"
-pdf_page: null
-chapter_number: 9
-unit: null
+slug: segmental-invariance
+# === CLASSIFICATION ===
+category: analysis
+subcategory: twelve-tone-theory
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Row Properties"
+chapter_number: 9
+pdf_page: null
+section: "IX.3"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases:
+  - "invariant segments"
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - twelve-tone-row
+  - derived-row
+extends: []
+related:
+  - hexachordal-combinatoriality
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is segmental invariance?"
+  - "How do you find invariant segments between row forms?"
 ---
 
-# Segmental Invariance
+# Quick Definition
+Segmental invariance occurs when a pitch-class segment of a row remains in place (same absolute pitch classes) when the row is transformed by transposition or inversion, because the relationship between the segments within the row matches the transformation applied to the whole row.
 
-## Quick Definition
+# Core Definition
+When a pitch-class segment of a row shares the same transpositional or inversional relationship with another segment in the same row, transforming the whole row by that relationship "holds" those segments invariant -- they swap positions but retain their absolute pitch-class content. To find invariant segments: (1) find equivalent set classes within the row; (2) determine their Tn or In relationship; (3) when the whole row is transformed by that same relationship, those segments are held invariant.
 
-Segmental invariance occurs when a pitch-class segment of a twelve-tone row remains unchanged in absolute pitch content (not just set class) when the row undergoes transformation—happening when two segments within a row are related by the same transposition or inversion that is subsequently applied to the entire row, causing those segments to swap positions while retaining their exact pitches, providing composers with predictable pitch connections across different row forms.
+# Prerequisites
+- Twelve-tone row and derived row concepts
 
-## Formal Definition
+# Key Properties
+1. Segments are preserved as absolute pitch-class collections (not just set class)
+2. Occurs when internal segment relationships match the row transformation
+3. Algorithm: find equivalent segments, determine their Tn/In, apply that to whole row
+4. Intervallic invariance (preserving interval content) is common; segmental (pitch-class) invariance is rarer
 
-**Segmental invariance**: Preservation of exact pitch-class content in a segment when a row is transformed.
+# Context & Application
+Segmental invariance is compositionally valuable because it creates continuity across row-form changes -- certain harmonic sonorities persist even as the overall pitch material transforms.
 
-**Mechanism**:
-```
-If segments A and B within a row are related by Tn:
-When the entire row is transposed by Tn:
-- Segment A becomes segment B (by position swap)
-- Segment B becomes segment A
-- Both retain their exact pitch classes
-```
+# Examples
+**Example 1** (Webern, String Quartet Op. 28): P0 and P4 share the same tetrachords (in different positions). The three discrete tetrachords in P0 are related by T4/T8, so transposing the row by T4 swaps their positions while preserving their pitch-class content.
 
-**Requirements for invariance**:
-1. Find two segments of same set class within row
-2. Determine their transpositional/inversional relationship (Tn or TnI)
-3. Apply SAME transformation to entire row
-4. Original segments are "held invariant"
+# Relationships
+## Builds Upon
+- **twelve-tone-row** and **derived-row** -- Invariance relates to row segment properties
+## Related
+- **hexachordal-combinatoriality** -- Related hexachord-level property
 
-**Types**:
-- **Transpositional invariance**: Segments related by Tn, row transposed by Tn
-- **Inversional invariance**: Segments related by TnI, row inverted by TnI
+# Common Confusions
+- **Confusion**: Segmental invariance means the intervals stay the same
+  **Clarification**: Intervallic invariance preserves intervals; segmental invariance preserves actual pitch classes
 
-## Musical Context
+# Source Reference
+Open Music Theory, Part IX, Chapter 3: "Row Properties," section on Segmental Invariance.
 
-Segmental invariance provides:
-- **Pitch continuity**: Same pitches recur across row forms
-- **Motivic connection**: Links between different sections
-- **Compositional control**: Predictable pitch relationships
-- **Voice leading**: Smooth connections between row forms
-
-Invariance is distinct from set-class preservation:
-- Set-class content ALWAYS preserved under transformation
-- SEGMENTAL invariance = exact PITCH CLASSES preserved
-- Much rarer and more structurally significant
-
-## Examples
-
-### Basic
-
-**How invariance works** (abstract example):
-```
-Row P0: [A-B-C] [D-E-F] [G-H-I] [J-K-L]
-        Segment1 Segment2 Segment3 Segment4
-
-If Segment1 = T8 of Segment4:
-Then transposing by T8:
-
-Row P8: [J-K-L] [?-?-?] [?-?-?] [A-B-C]
-        (was Seg4) ........ (was Seg1)
-
-Segments 1 and 4 swap positions
-Their PITCHES stay the same
-They are "held invariant"
-```
-
-**Finding invariance**:
-```
-Step 1: Find equivalent set-class segments in row
-        Example: two (0123) tetrachords
-
-Step 2: Determine relationship between them
-        Example: first = T8 of third
-
-Step 3: Transform row by that relationship
-        Example: transpose entire row by T8
-
-Step 4: Those segments are now invariant
-        Example: first and third tetrachords swap
-                 but keep same pitch classes
-```
-
-### From Repertoire
-
-**Webern, String Quartet Op. 28**:
-```
-P0: B-Bb-D-Eb | F#-G-E-F | Ab-A-C-Db
-    Tet 1       Tet 2      Tet 3
-
-All tetrachords = set class (0123)
-
-Relationship:
-Tet 1 to Tet 2: T8 (or T-4)
-Tet 2 to Tet 3: T4
-
-When row transposed by T8 (= P8):
-P8: Ab-A-C-Db | B-Bb-D-Eb | F#-G-E-F
-    (was Tet3)  (was Tet1)   (was Tet2)
-
-Invariance:
-- Tetrachord 1 of P0 = Tetrachord 2 of P8 (same pitches!)
-- Tetrachord 2 of P0 = Tetrachord 3 of P8 (same pitches!)
-- Tetrachord 3 of P0 = Tetrachord 1 of P8 (same pitches!)
-
-Segments "rotate" but pitches held invariant
-```
-
-**Visual representation**:
-```
-P0:  [B-Bb-D-Eb] - [F#-G-E-F] - [Ab-A-C-Db]
-         |              |             |
-     light blue        red          navy
-
-P8:  [Ab-A-C-Db] - [B-Bb-D-Eb] - [F#-G-E-F]
-         |              |             |
-        navy       light blue        red
-
-Colors show how segments rotate
-Pitch content stays identical
-```
-
-**Compositional use**:
-```
-Webern exploits this invariance:
-- Can move between P0 and P8
-- Tetrachord pitches remain constant
-- Creates continuity across row changes
-- Segments function as stable reference points
-```
-
-## Related Concepts
-
-- **Prerequisite**: twelve-tone-row, row-operations, transposition
-- **Leads to**: combinatoriality, twelve-tone-analysis
-- **See also**: derived-row, set-class, pitch-class-set
-
-## Common Confusions
-
-- Segmental invariance = exact pitch classes preserved (not just set class)
-- Set class is ALWAYS preserved; segmental invariance is special
-- Occurs when segments within row are related by Tn or TnI
-- Apply SAME transformation to row, segments become invariant
-- The segments SWAP POSITIONS but keep same pitches
-- Different from "row class" (all 48 forms of a row)
-- Derived rows often have invariance properties
-- To find invariance:
-  1. Find equivalent segments in row
-  2. Determine their relationship (Tn or TnI)
-  3. That transformation produces invariance
-- Not all rows have useful invariance properties
-- Invariance gives composers predictable pitch connections
-- Webern particularly exploited segmental invariance
-- Invariance is about ABSOLUTE pitches, not interval patterns
-
-## Source Reference
-
-Open Music Theory, Part IX: "Row Properties"
+# Verification Notes
+- Definition source: From 09-03
+- Confidence rationale: High
+- Preserved from v2: Webern Op. 28 example, algorithm steps
+- Cross-reference status: Verified

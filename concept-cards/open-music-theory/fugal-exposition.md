@@ -1,147 +1,114 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Fugal Exposition
-category: form
-source: Open Music Theory
-chapter: "High Baroque Fugal Exposition"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: fugal-exposition
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: fugue
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "High Baroque Fugal Exposition"
+chapter_number: 9
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "exposition (fugal)"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - counterpoint
+  - imitation
+  - fugue-subject
+  - fugue-answer
+  - countersubject
+extends:
+  - imitation
+related:
+  - sixteenth-century-contrapuntal-style
+  - free-counterpoint
+contrasts_with:
+  - sonata-form
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a fugal exposition and how is it structured?"
+  - "In what order do voices typically enter?"
+  - "What is the difference between the exposition and the rest of the fugue?"
 ---
 
-# Fugal Exposition
+# Quick Definition
+The opening section of a fugue during which each voice enters successively with the subject or answer, establishing the main thematic material and the number of contrapuntal voices.
 
-## Quick Definition
+# Core Definition
+The **fugal exposition** is the first formal section of a fugue, defined by the systematic presentation of the subject and answer in each voice. Voice 1 begins with the subject (tonic), Voice 2 enters with the answer (dominant) while Voice 1 continues with a countersubject, and so on until all voices have entered. The source treats "fugue as a process" showing "how to construct (the first part of) a fugue from first principles" according to "high Baroque" technique of Bach, Handel, and their contemporaries (Ch. 9).
 
-The opening section of a fugue during which each voice enters successively with the subject or answer, establishing the main thematic material and the number of voices.
+# Prerequisites
+- **Counterpoint** -- Fugal writing is advanced contrapuntal technique
+- **Imitation** -- The fugue is the 18th-century successor to Renaissance imitative practice
+- **Fugue subject/answer/countersubject** -- The component parts of the exposition
 
-## Formal Definition
+# Key Properties
+1. Voices enter one by one, each stating the subject or answer
+2. Alternates between subject (tonic) and answer (dominant)
+3. New voices should enter as the highest or lowest at that point
+4. Voice order possibilities: SATB, BTAS, ASTB, TBAS, etc.
+5. May include links (short interpolations) between entries
+6. Redundant entries (beyond total voice count) may occur
+7. Ends when all voices have entered
+8. May lead directly into episode or cadence
 
-The **fugal exposition** (or simply **exposition**) is the first formal section of a fugue, characterized by the systematic presentation of the subject (and answer) in each of the fugue's voices. During the exposition, voices enter one at a time, each stating either the subject or the answer until all voices have entered.
+# Construction / Recognition
+## To Write a Fugal Exposition:
+1. State the subject in Voice 1 (tonic key)
+2. Enter Voice 2 with answer (dominant) while Voice 1 continues with countersubject
+3. Optionally insert a link between entries
+4. Continue entering voices, alternating subject and answer
+5. Ensure metrically comparable entry points
+## To Identify:
+1. Locate successive voice entries with the same or similar melody
+2. Check for alternation between tonic and dominant key areas
+3. Note the buildup of textural density as voices accumulate
 
-**Structure of exposition**:
-1. **Voice 1**: Presents subject alone (in tonic)
-2. **Voice 2**: Presents answer (in dominant) while Voice 1 continues with countersubject or free counterpoint
-3. **Voice 3**: Presents subject (in tonic) while Voices 1-2 continue
-4. **Voice 4**: Presents answer (in dominant) while Voices 1-3 continue
-(Pattern continues for however many voices the fugue has)
+# Context & Application
+The fugal exposition establishes the number of voices, presents the main thematic material, and sets the contrapuntal relationships that govern the entire fugue. The source distinguishes fugal exposition from sonata-form exposition: "they both refer to a first section setting out the main material, but they otherwise differ" (Ch. 9). The exposition builds tension through gradual voice accumulation.
 
-**Key characteristics**:
-- **Complete voice entries**: Each voice must enter with subject or answer
-- **Alternating pattern**: Typically alternates between subject (tonic) and answer (dominant)
-- **Order of entry**: Voices usually enter from highest to lowest, lowest to highest, or from middle outward
-- **Duration**: Varies based on subject length and number of voices (typically 6-12 measures)
-- **Conclusion**: Ends when all voices have entered; may conclude with cadence or lead directly to episode
+# Examples
+**Example 1** (Ch. 9, Example 2): Exposition of Bach's Fugue in C minor (BWV 847), showing three voices with tonal answer, two regular countersubjects (CS1 and CS2), and a link between entries 2 and 3 (mm. 5-6).
 
-**Optional elements**:
-- **Links**: Short interpolations between voice entries
-- **Redundant entries**: Additional subject/answer statements beyond the number of voices
-- **Counterexposition**: A second exposition-like section in a different key
+**Example 2** (Ch. 9, Example 1): Hypothetical three-voice exposition diagram showing Subject/Countersubject/Free counterpoint layout.
 
-**Relationship to voices**:
-- Two-voice fugue: 2 entries (subject, answer)
-- Three-voice fugue: 3 entries (often subject, answer, subject)
-- Four-voice fugue: 4 entries (often subject, answer, subject, answer)
+# Relationships
+## Builds Upon
+- **imitation** -- Fugal exposition is systematic imitative writing
+- **counterpoint** -- Advanced contrapuntal technique
+## Related
+- **sixteenth-century-contrapuntal-style** -- Historical precursor
+## Contrasts With
+- **sonata-form** -- Different kind of exposition (key areas vs. voice entries)
 
-## Musical Context
+# Common Errors
+- **Error**: Having an inner voice (alto or tenor) enter last
+  **Correction**: The last voice to enter should be the highest or lowest at that stage
 
-The exposition serves crucial structural and expressive functions:
+# Common Confusions
+- **Confusion**: Fugal exposition and sonata-form exposition are related
+  **Clarification**: They share the name "exposition" but differ structurally
+- **Confusion**: "Voices" in fugue means singers
+  **Clarification**: "Voices" refers to contrapuntal lines, which may be instrumental
 
-**Structural functions**:
-- Establishes the number of voices
-- Presents the main thematic material (subject)
-- Establishes tonic-dominant polarity
-- Sets the contrapuntal relationships (subject, answer, countersubject)
-- Defines the character and affect of the entire fugue
-- Creates textural density through gradual voice entry
+# Source Reference
+Open Music Theory, Part II, Chapter 9: "High Baroque Fugal Exposition." Covers subject, answer, countersubject, voice entries, links, and analysis of BWV 847.
 
-**Expressive functions**:
-- Builds tension and complexity as voices accumulate
-- Creates anticipation through successive entries
-- Demonstrates the subject's character before development
-- Establishes the intellectual and emotional tone
-
-**Compositional considerations**:
-- Voice entry order: Choose order appropriate to the fugue (SATB, BTAS, ASTB, etc.)
-- Last entry: Typically the highest or lowest remaining voice (avoid inner voice entering last)
-- Metrically comparable entries: If subject enters on a pickup, all entries should do the same
-- Links optional: May include short passages between entries for harmonic, registral, or phrase-length variation
-
-**After the exposition**:
-- **Episode**: Transitional section using subject fragments, often sequential
-- **Middle entries**: Subject appears in various keys
-- **Development**: Fugal devices (stretto, inversion, augmentation, etc.)
-- **Final entry**: Often returns to tonic for closure
-
-## Examples
-
-### Basic
-
-**Three-voice exposition structure**:
-- Measures 1-2: Soprano, subject (C major)
-- Measures 3-4: Alto, answer (G major); Soprano, countersubject
-- Measures 5-6: Bass, subject (C major); Soprano and Alto, free counterpoint
-- Measure 7: Cadence or beginning of episode
-
-**Four-voice exposition with link**:
-- Measures 1-2: Tenor, subject
-- Measures 3-4: Alto, answer; Tenor, countersubject
-- Measure 5: Link (sequential treatment of subject fragment)
-- Measures 6-7: Soprano, subject; Alto and Tenor continue
-- Measures 8-9: Bass, answer; other voices continue
-
-### From Repertoire
-
-**Bach, WTC I, Fugue in C major (BWV 846)**:
-- Exposition: Measures 1-6
-- Four voices enter in order: Alto, Soprano, Bass, Tenor
-- Real answer
-- Each entry is two measures
-- Simple, clear structure
-
-**Bach, WTC I, Fugue in C minor (BWV 847)**:
-- Exposition: Measures 1-8
-- Three voices: Alto, Soprano, Bass
-- Tonal answer
-- Two regular countersubjects
-- Link between entries 2 and 3 (mm. 5-6)
-
-**Bach, Art of Fugue, Contrapunctus I**:
-- Exposition: Opening measures
-- Four voices enter successively
-- Subject in D minor, answer in A minor
-- Systematic presentation of all voices
-
-**Handel, Messiah, "And with His stripes"**:
-- Vocal fugue exposition
-- Four voice parts (SATB)
-- Text-driven subject
-- Clear alternation between subject and answer
-
-**Beethoven, String Quartet Op. 131**:
-- Opening fugue exposition
-- Four string instruments
-- Slow, chromatic subject
-- Ricercar-style character
-
-## Related Concepts
-
-- **Prerequisite**: fugue, countersubject
-- **Leads to**: stretto, double-exposition, development-section
-
-## Common Confusions
-
-- Fugal exposition vs. sonata-form exposition: Different structures—fugal exposition introduces voices with the subject; sonata exposition presents themes and key areas
-- The exposition doesn't have to end with a strong cadence—it may lead directly into an episode
-- Not all voices have to enter in register order (high to low or low to high)—middle entries are possible
-- The last voice to enter should be the highest or lowest at that point (avoid inner voice last)
-- Redundant entries (extra subject/answer beyond the number of voices) can appear but are optional
-- Links between entries are optional, not required
-- The exposition may include modulation or tonicization, especially in longer fugues
-- Counter-exposition (second exposition-like section) is not part of the first exposition
-- Voice numbers refer to order of entry, not to pitch register
-- "Voices" in fugue refers to contrapuntal lines, not necessarily separate performers
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 9: "High Baroque Fugal Exposition"
+# Verification Notes
+- Re-extracted from v2 card; preserved: detailed voice entry examples, BWV 846/847 analysis, Art of Fugue and Handel references
+- Confidence: HIGH -- chapter-length treatment with worked example

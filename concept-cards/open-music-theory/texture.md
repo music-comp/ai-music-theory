@@ -1,83 +1,95 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Texture
-category: theory
-source: Open Music Theory
-chapter: "Texture"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: texture
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Texture"
+chapter_number: 21
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - monophony
+  - heterophony
+  - homophony
+  - polyphony
+  - homorhythm
+  - melody-and-accompaniment
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is musical texture?"
+  - "What are the four main categories of texture?"
+  - "Can a piece have more than one texture?"
 ---
 
-# Texture
+# Quick Definition
 
-## Quick Definition
+The density of and interaction between a work's different voices, classified as monophony, heterophony, homophony, or polyphony.
 
-The density of and interaction between the different voices or layers in a musical work.
+# Core Definition
 
-## Formal Definition
+**Texture** is the density of and interaction between a work's different voices. The four main categories are: **monophony** (single unaccompanied melodic line), **heterophony** (multiple variants of the same melody heard simultaneously), **homophony** (multiple voices moving harmonically together), and **polyphony** (multiple independent melodic lines). Most music does not conform to a single texture; rather, it moves between them.
 
-**Texture** refers to how multiple voices or parts in music interact and layer together. It describes the relationship between melodic lines, harmonic content, and rhythmic activity. Texture is determined by:
-- The number of independent parts or voices
-- How these parts relate to each other (melodically, harmonically, rhythmically)
-- The density and spacing of musical material
+# Prerequisites
 
-The four main textural categories are:
-1. **Monophony**: Single unaccompanied melodic line
-2. **Heterophony**: Multiple variants of the same melody heard simultaneously
-3. **Homophony**: Multiple voices moving together harmonically at the same pace
-4. **Polyphony**: Multiple independent melodic lines with separate rhythms
+None -- texture is a fundamental analytical concept.
 
-Most music doesn't conform to a single texture throughout but moves between different textures to create variety and formal structure.
+# Key Properties
 
-## Musical Context
+- Four main categories: monophony, heterophony, homophony, polyphony
+- Homophony subdivides into homorhythm and melody-and-accompaniment
+- Most music contains changes of texture
+- Texture is sometimes overlooked but is an important analytical dimension
 
-Texture is fundamental to musical style and genre:
-- Medieval chant: Primarily monophonic
-- Renaissance polyphony: Complex interwoven voices
-- Classical/Romantic music: Predominantly homophonic (melody + accompaniment)
-- Baroque fugues: Polyphonic texture
-- Popular music: Typically homophonic with clear melody and accompaniment
+# Construction / Recognition
 
-Composers manipulate texture to:
-- Create variety and contrast
-- Build and release tension
-- Clarify formal sections
-- Highlight important melodic material
-- Create different emotional effects
+Identify the number of voices and how they relate: unison = monophony; same melody varied = heterophony; melody + harmony = homophony; independent lines = polyphony.
 
-Texture affects perception: thick textures sound full and complex; thin textures sound sparse or exposed. Changes in texture mark important structural points.
+# Context & Application
 
-## Examples
+Texture analysis reveals how composers create variety, contrast, and dramatic shape. Changes of texture often mark formal boundaries.
 
-### Basic
+# Examples
 
-**Monophonic**: Solo flute melody with no accompaniment
-**Heterophonic**: Two guitars playing slight variations of the same folk melody
-**Homophonic**: Voice singing melody while piano plays chords beneath
-**Polyphonic**: Four-voice fugue where each voice has independent melody
+- Solo cello suite: monophony
+- Irish fiddle + flute playing same melody with variations: heterophony
+- Hymn with block chords: homorhythm (a type of homophony)
+- Piano melody with left-hand accompaniment: melody and accompaniment (homophony)
+- Fugue: polyphony
 
-### From Repertoire
+# Relationships
 
-**Monophony**: Gregorian chant, Bach Cello Suites, "Where Have All the Flowers Gone" (Pete Seeger)
-**Heterophony**: Traditional Irish reel with fiddle and flute, Turkish classical music
-**Homophony**: Most hymns, Chopin nocturnes, typical pop songs (vocal melody + instrumental accompaniment)
-**Polyphony**: Bach fugues, Renaissance motets, "Row, Row, Row Your Boat" (when sung in a round)
+- **Leads to**: monophony, heterophony, homophony, polyphony, homorhythm, melody-and-accompaniment
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: rhythm
-- **Leads to**: monophony, heterophony, homophony, polyphony, homorhythm, melody-and-accompaniment, counterpoint
-- **See also**: voice-leading
+- Texture is not the same as timbre (sound quality) or dynamics (loudness)
+- Most real music mixes textures rather than staying in one category
 
-## Common Confusions
-
-- Texture vs. timbre: Texture is about how parts relate; timbre is about tone color/quality
-- Number of performers ≠ texture: A single pianist can create polyphonic texture; an orchestra can play monophonically in unison
-- Harmony ≠ texture: You can have harmony in both homophonic and polyphonic textures
-- Thick texture doesn't necessarily mean polyphonic—eight instruments playing the same melody in unison is still monophonic
-- Most music mixes textures—a piece isn't entirely one type throughout
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 21: "Texture"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: four main categories, subdivision of homophony, texture-mixing note.

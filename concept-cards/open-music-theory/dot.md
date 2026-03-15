@@ -1,75 +1,101 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Dot
-category: theory
-source: Open Music Theory
-chapter: "Rhythmic and Rest Values"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: dot
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Rhythmic and Rest Values"
+chapter_number: 8
+pdf_page: null
+section: "Dots and ties"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "dotted note"
+  - "augmentation dot"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - note-values
+  - rest-values
+extends: []
+related:
+  - tie
+  - compound-meter
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What does a dot do to a note's duration?"
+  - "How does a double dot work?"
+  - "What is a dotted quarter note equivalent to?"
 ---
 
-# Dot
+# Quick Definition
 
-## Quick Definition
+A symbol placed after a note or rest that increases its duration by half; additional dots each add half the value of the previous dot.
 
-A symbol placed after a note or rest that increases its duration by half of its original value.
+# Core Definition
 
-## Formal Definition
+A **dot** is written immediately after a note or rest and increases its duration by half. A dotted quarter note equals a quarter note plus an eighth note (three eighth notes total). A dotted half note equals a half note plus a quarter note (three quarter notes total). Multiple dots can be added: a **double-dotted** note adds half the value of the first dot. A double-dotted quarter note equals a quarter + eighth + sixteenth (1.75 times the original).
 
-A **dot** (or augmentation dot) is a small circular mark written immediately to the right of a notehead or rest that increases its duration by one-half. A dotted note or rest equals the original value plus half of that value.
+# Prerequisites
 
-Mathematical relationship:
-- Dotted note/rest = original value × 1.5
-- Dotted note/rest = original value + (original value ÷ 2)
+- **Note values**: the durations being extended
+- **Rest values**: dots also apply to rests
 
-Multiple dots can be applied:
-- **Single dot**: adds 1/2 of the original value
-- **Double dot**: first dot adds 1/2, second dot adds 1/4 (total: 1.75× original)
-- **Triple dot**: adds 1/2 + 1/4 + 1/8 (total: 1.875× original)
+# Key Properties
 
-Each subsequent dot adds half the value of the previous dot.
+- Single dot: adds half the note's value (1.5x total)
+- Double dot: adds half of the first dot's value (1.75x total)
+- Applies to both notes and rests
+- Dotted quarter = quarter + eighth = 3 eighth notes
+- Dotted half = half + quarter = 3 quarter notes
+- Dotted whole = whole + half = 3 half notes
 
-## Musical Context
+# Construction / Recognition
 
-Dotted rhythms are extremely common in Western music. They create:
-- Uneven, lilting rhythms (dotted eighth + sixteenth)
-- Long-short patterns in various styles
-- Elegant, flowing motion in slower tempos
-- Energetic drive in faster tempos
+The dot is placed immediately to the right of the notehead (or rest symbol), in the space above or below a line if the note is on a line.
 
-The dotted quarter note is especially common in compound meters (6/8, 9/8, 12/8), where it equals one beat. Dotted half notes are frequent in triple meters.
+# Context & Application
 
-## Examples
+Dots are essential in compound meter, where the beat is always a dotted value (dotted quarter in 6/8, dotted half in 6/4). They also appear frequently in simple meter for rhythmic variety and syncopation.
 
-### Basic
+# Examples
 
-Duration equivalencies:
-- Dotted half note (𝅗𝅥.) = half note + quarter note = 3 quarter notes
-- Dotted quarter note (♩.) = quarter note + eighth note = 3 eighth notes
-- Dotted eighth note (♪.) = eighth note + sixteenth note = 3 sixteenth notes
+- Dotted quarter note = 1.5 quarter notes = 3 eighth notes
+- Dotted half note = 1.5 half notes = 3 quarter notes
+- Double-dotted quarter = quarter + eighth + sixteenth
 
-Double-dotted:
-- Double-dotted half note (𝅗𝅥..) = half note + quarter note + eighth note = 7 eighth notes
+# Relationships
 
-### From Repertoire
+- **Leads to**: compound-meter
+- **See also**: tie, note-values, rest-values
 
-The "Marseillaise" (French national anthem) features prominent dotted rhythms. Baroque music uses dotted rhythms extensively (French overtures, sarabandes). The dotted quarter + eighth rhythm is characteristic of 6/8 marches and many folk songs.
+# Common Errors
 
-## Related Concepts
+- Forgetting that the dot adds HALF the value (not doubling it)
 
-- **Prerequisite**: note, rests, rhythm
-- **Leads to**: compound-meter, syncopation
-- **See also**: tie, note-values, fragmentation
+# Common Confusions
 
-## Common Confusions
+- Dot vs. staccato: a dot after a note = duration extension; a dot above/below a note = staccato (articulation)
+- Dots lengthen; ties also lengthen but connect two separate noteheads
 
-- A dot adds HALF the original value, not a fixed amount
-- The dot goes to the RIGHT of the notehead/rest, not the left
-- When a note is on a space, the dot goes in that space; when on a line, the dot goes in the space above
-- A tie can achieve the same duration but is used differently (crosses barlines, combines different note values)
-- Double-dotted notes are less common but follow the same principle (each dot is half the previous)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 8: "Rhythmic and Rest Values"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: mathematical relationships, double-dot explanation, compound meter connection.

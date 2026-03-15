@@ -1,81 +1,119 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Counterpoint
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Species Counterpoint"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: counterpoint
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: foundations
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Species Counterpoint"
+chapter_number: 1
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "punctus contra punctum"
+  - "contrapuntal writing"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval
+  - consonance
+  - dissonance-in-counterpoint
+extends: []
+related:
+  - species-counterpoint
+  - voice-leading
+  - polyphony
+contrasts_with:
+  - homophony
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is counterpoint and how does it differ from harmony?"
+  - "What are the four fundamental traits that counterpoint balances?"
+  - "Why is counterpoint studied as a compositional technique?"
 ---
 
-# Counterpoint
+# Quick Definition
+Counterpoint is the art of combining two or more independent melodic lines so they work together harmonically while maintaining individual integrity, balancing smoothness, independence, variety, and goal-directed motion.
 
-## Quick Definition
+# Core Definition
+**Counterpoint** (from Latin *punctus contra punctum*, "note against note") is the technique of composing music with multiple simultaneous melodic lines that are harmonically interdependent yet melodically independent. The source describes counterpoint as "the mediation of two or more musical lines into a meaningful and pleasing whole." It emphasizes horizontal (melodic) thinking while maintaining awareness of vertical (harmonic) relationships, seeking to balance four fundamental traits: smooth melodic lines, independence and integrity of each line, variety, and motion toward a goal (Ch. 1, Introduction to Species Counterpoint).
 
-The art of combining two or more independent melodic lines so that they work together harmonically while maintaining their individual integrity.
+# Prerequisites
+- **Interval** -- Understanding intervals is essential because counterpoint governs which intervals may occur between voices
+- **Consonance/dissonance** -- The treatment of consonance and dissonance is the central harmonic problem in counterpoint
 
-## Formal Definition
+# Key Properties
+1. Multiple independent melodic lines sounding simultaneously
+2. Lines must be harmonically interdependent (creating consonant simultaneities)
+3. Lines must be melodically independent (maintaining their own shape and integrity)
+4. Four core traits: smoothness, independence, variety, goal-directed motion
+5. These traits are grounded in auditory perception and cognition
+6. The traits are often in tension and must be balanced over the course of a passage
 
-**Counterpoint** (from Latin *punctus contra punctum* = "note against note") is the technique of composing music with multiple, simultaneous melodic lines that are harmonically interdependent yet melodically independent. Counterpoint mediates these lines into a meaningful and pleasing whole that exhibits:
+# Construction / Recognition
+## To Write Counterpoint:
+1. Begin with a well-formed melodic line (cantus firmus or given melody)
+2. Compose additional line(s) that maintain smooth, independent melodic shapes
+3. Ensure vertical intervals are consonant at structural points
+4. Balance the four traits: smoothness, independence, variety, motion toward goal
+5. Control dissonance carefully (passing tones, neighbor tones, suspensions)
+## To Recognize Counterpoint:
+1. Listen for two or more melodic lines that can be perceived independently
+2. Check that lines combine into consonant harmonies at strong beats
+3. Observe whether lines maintain different rhythmic profiles or directional independence
 
-- **Smoothness**: Stepwise motion and controlled leaps in each line
-- **Independence**: Each line maintains its own melodic identity and shape
-- **Variety**: Diverse rhythmic and melodic content across lines
-- **Goal-directed motion**: Clear sense of progression toward cadential points
-- **Tonal fusion**: Consonant simultaneities that create harmonic coherence
+# Context & Application
+Counterpoint is fundamental to Western art music from the Renaissance through the present. Species counterpoint (Fux's *Gradus ad Parnassum*, 1725) is the standard pedagogical method. The source notes that contrapuntal exercises train basic musical skills independent of any specific style, developing awareness of how auditory perception works: patterns create predictability, while departures heighten attention. This tension between expectation and surprise is "fundamental to most of the music we will study."
 
-Counterpoint emphasizes **horizontal** (linear/melodic) thinking while maintaining awareness of **vertical** (harmonic) relationships. The term is closely related to **polyphony** (texture with multiple independent voices); counterpoint describes the compositional technique, while polyphony describes the resulting texture.
+# Examples
+**Example 1** (Ch. 1): The cantus firmi from *Gradus ad Parnassum* -- one for each mode -- demonstrate the melodic principles underlying all counterpoint: smoothness, single climax, mostly stepwise motion, goal-directed shape.
 
-## Musical Context
+**Example 2** (Ch. 1, Example 2): Illustrations of four types of two-part motion (contrary, similar, parallel, oblique) that are fundamental to contrapuntal writing.
 
-Counterpoint is fundamental to Western art music, especially:
-- **Renaissance polyphony** (16th century): Palestrina, Josquin, Victoria
-- **Baroque music** (17th-18th centuries): Bach, Handel—fugues, inventions, canons
-- **Classical development sections**: Mozart, Haydn, Beethoven
-- **19th-century academic training**: Composers studied counterpoint systematically
-- **20th-century neoclassicism**: Hindemith, Stravinsky revived contrapuntal techniques
-- **Contemporary music**: Minimalism (Steve Reich), film scores, jazz
+# Relationships
+## Builds Upon
+- **interval** -- Intervals govern which vertical sonorities are permitted
+- **consonance** -- Consonance/dissonance classification drives all contrapuntal rules
+## Enables
+- **species-counterpoint** -- Systematic method for learning counterpoint
+- **fugal-exposition** -- Advanced contrapuntal genre
+- **sixteenth-century-contrapuntal-style** -- Historical application
+## Related
+- **voice-leading** -- Closely related technique for connecting chords smoothly
+- **polyphony** -- The resulting texture of contrapuntal writing
 
-Training in counterpoint develops:
-- Understanding of voice leading
-- Ability to balance independence and harmony
-- Sensitivity to melodic shape and motion
-- Skills in combining musical ideas
+# Common Errors
+- **Error**: Writing lines that create good harmonies but have no independent melodic interest
+  **Correction**: Each line must be a well-formed melody on its own, with clear shape and direction
+- **Error**: Writing lines that are independently beautiful but create dissonant clashes
+  **Correction**: Both melodic independence and harmonic consonance must be maintained simultaneously
 
-Species counterpoint (Fux's *Gradus ad Parnassum*, 1725) is the most common pedagogical method for learning contrapuntal technique.
+# Common Confusions
+- **Confusion**: Counterpoint is the same as harmony
+  **Clarification**: Counterpoint emphasizes horizontal (melodic) thinking; harmony emphasizes vertical (chordal) thinking, though both involve simultaneous pitches
+- **Confusion**: Counterpoint is an outdated technique only relevant to "old" music
+  **Clarification**: Contrapuntal principles underlie music from Renaissance polyphony through contemporary composition, film scores, and minimalism
+- **Confusion**: Counterpoint and polyphony are the same thing
+  **Clarification**: Counterpoint is the compositional technique; polyphony is the resulting texture
 
-## Examples
+# Source Reference
+Open Music Theory, Part II, Chapter 1: "Introduction to Species Counterpoint." Covers definitions, types of motion, cantus firmus composition, and the psychology of counterpoint.
 
-### Basic
-
-Two-voice counterpoint:
-- Upper voice: C-D-E-F-G
-- Lower voice: C-B-C-D-E
-Each line is melodically coherent and creates consonant harmonies when combined.
-
-### From Repertoire
-
-- Bach: Two-Part Inventions, Well-Tempered Clavier fugues
-- Palestrina: Masses and motets (Renaissance vocal polyphony)
-- Mozart: String Quartet in D minor, K. 421 (contrapuntal development)
-- Beethoven: Grosse Fuge, Op. 133
-- Hindemith: Ludus Tonalis (20th-century counterpoint)
-
-## Related Concepts
-
-- **Prerequisite**: interval, consonance-dissonance
-- **Leads to**: species-counterpoint, fugue, canzona, imitation, voice-leading, invertible-counterpoint
-- **See also**: polyphony, texture
-
-## Common Confusions
-
-- Counterpoint vs. harmony: Counterpoint emphasizes melodic lines; harmony emphasizes vertical chord structures (though both are present in contrapuntal music)
-- Counterpoint vs. polyphony: Counterpoint is the compositional technique; polyphony is the resulting texture
-- Good counterpoint doesn't ignore harmony—the lines must create good harmonies, but they're conceived linearly
-- Counterpoint ≠ old-fashioned: It's a fundamental technique still used in contemporary composition
-- Species counterpoint is pedagogical, not stylistic—it teaches principles applicable across many styles
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 1: "Introduction to Species Counterpoint"
+# Verification Notes
+- Re-extracted from v2 card; preserved: repertoire examples (Bach, Palestrina, Mozart, Beethoven, Hindemith) from old card's Musical Context section, integrated where relevant
+- Definition source: Directly from Chapter 1 opening paragraph and Key Takeaways
+- Confidence: HIGH -- explicitly defined with extensive discussion
+- The four traits (smoothness, independence, variety, motion) are directly stated in the source

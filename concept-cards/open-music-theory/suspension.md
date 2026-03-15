@@ -1,266 +1,120 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Suspension
-category: theory
-source: Open Music Theory
-chapter: "Non-Chord Tones and Embellishments"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: suspension
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: dissonance-treatment
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Fourth-Species Counterpoint"
+chapter_number: 5
+pdf_page: null
+section: "The Suspension"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "SUS"
+  - "prepared dissonance"
+  - "accented dissonance"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - consonance
+  - dissonance-in-counterpoint
+extends: []
+related:
+  - fourth-species
+  - fifth-species
+  - retardation
+  - cadential-six-four
+contrasts_with:
+  - dissonant-passing-tone
+  - dissonant-neighbor-tone
+  - retardation
+  - anticipation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the three parts of a suspension?"
+  - "What suspension types are available above and below the cantus?"
+  - "How does a suspension differ from a retardation?"
 ---
 
-# Suspension
+# Quick Definition
+An accented dissonance occurring on a strong beat, always consisting of three stages: consonant preparation (weak beat), dissonant suspension (strong beat, tied from preparation), and consonant resolution (weak beat, step down from suspension).
 
-## Quick Definition
+# Core Definition
+The **suspension** is an accented dissonance, meaning it always occurs on strong beats. It has three parts: (1) **preparation** -- a weak-beat note consonant with the cantus, tied to the suspension; (2) **suspension** -- a strong-beat note tied from the preparation, dissonant with the cantus; (3) **resolution** -- a weak-beat note one step below the preparation/suspension pitch, consonant with the cantus. Suspensions are categorized by the intervals of the suspension and resolution tones: above the cantus, the options are 7-6, 4-3, and 9-8 (with 7-6 and 4-3 preferred); below the cantus, 2-3 is the main type (Ch. 5, "The Suspension"). The concept also appears in later harmonic contexts (Ch. IV.4, "Embellishing Tones") where it is approached by a static note and resolved down by step.
 
-A non-chord tone created when a consonant note is held over (suspended) from one chord into the next where it becomes dissonant, then resolves downward by step to a consonant chord tone—characterized by the three-stage pattern of preparation (consonance), suspension (dissonance on strong beat), and resolution (consonance on weaker beat), creating expressive tension and delaying the arrival of the expected chord tone, common in cadential contexts and sequential passages throughout common-practice music.
+# Prerequisites
+- **Consonance/dissonance** -- Must understand which intervals are dissonant to identify the suspension moment
 
-## Formal Definition
+# Key Properties
+1. Three-part structure: preparation, suspension, resolution
+2. Always occurs on strong beats (accented dissonance)
+3. Preparation must be consonant and tied to the suspension
+4. Resolution is always by step downward (upward = retardation)
+5. Above cantus: 7-6, 4-3, 9-8 (2-1)
+6. Below cantus: 2-3 (inversion of 7-6)
+7. 7-6 and 4-3 preferred (resolve to imperfect consonances)
+8. No two consecutive suspensions creating parallel 5ths or 8ves on weak beats
 
-**Suspension** is a non-chord tone occurring in three stages:
+# Construction / Recognition
+## To Construct:
+1. Place a consonant note on a weak beat (preparation)
+2. Tie it over to the next strong beat (now dissonant with the other voice)
+3. Resolve down by step to a consonant weak-beat note (resolution)
+## To Identify:
+1. Find a non-chord tone on a strong beat
+2. Check: was it prepared by a static (held or repeated) note consonant in the previous chord?
+3. Check: does it resolve DOWN by step?
+4. If yes to both: suspension
 
-**1. Preparation**:
-- Consonant note in previous chord
-- Appears on weak beat
-- Same pitch as suspension
+# Context & Application
+The suspension is introduced in fourth-species counterpoint and becomes one of the most important expressive devices in tonal music. Chains of suspensions (e.g., 7-6, 7-6, 7-6) create descending sequences common in Baroque music. In fifth species, suspensions are embellished with turns, anticipations, and decorations. In common-practice harmony, the cadential 6/4 involves suspension-like voice leading (6-5, 4-3 motion). The 16th-century contrapuntal style uses suspensions with preparation on weak beats, dissonance on strong beats, and resolution by step down (Ch. 8).
 
-**2. Suspension proper**:
-- Same note held over or re-articulated
-- Becomes **dissonant** against new chord
-- Occurs on **strong beat** (metrically accented)
+# Examples
+**Example 1** (Ch. 5, Example 2): All suspension types in notation: 7-6, 4-3, 9-8 above cantus; 2-3 below cantus; and consonant figures like 5-6.
 
-**3. Resolution**:
-- Moves **down by step** to consonant chord tone
-- Occurs on **weaker beat**
-- Resolves tension
+**Example 2** (Ch. 6, Example 1): A chain of 7-6 suspensions with embellishments in fifth species.
 
-**Notation**: Often shown as **9-8, 7-6, 4-3, 2-3** (figured bass intervals showing suspension-resolution)
+**Example 3** (Ch. IV.4, Examples 9-10): Suspensions in Joseph Boulogne's String Quartet No. 4, I, mm. 47-49, and two-voice texture comparison with retardation.
 
-**Key characteristics**:
-- Three-part structure (prep-susp-res)
-- Suspension on strong beat (accented dissonance)
-- Resolution by stepwise descent
-- Creates expressive tension and delay
+# Relationships
+## Enables
+- **fourth-species** -- Suspensions are the defining feature
+- **fifth-species** -- Suspensions carry over with embellishments
+- **cadential-six-four** -- Involves suspension-like 6-5, 4-3 motion
+## Contrasts With
+- **retardation** -- Same pattern but resolves UP instead of down
+- **dissonant-passing-tone** -- Passing tones are unaccented; suspensions are accented
+- **anticipation** -- Anticipation arrives early (weak beat); suspension holds over (strong beat)
 
-## Types of Suspensions
+# Common Errors
+- **Error**: Resolving a suspension upward
+  **Correction**: Upward resolution = retardation, not a suspension
+- **Error**: Placing a suspension without proper consonant preparation
+  **Correction**: The preparation must be consonant and tied to the suspension
 
-**Classified by intervals above bass**:
+# Common Confusions
+- **Confusion**: Any tied note is a suspension
+  **Clarification**: A suspension must be dissonant on the strong beat; a consonant tied note is not a true suspension
+- **Confusion**: Suspensions and retardations are the same thing
+  **Clarification**: Suspension resolves down by step; retardation resolves up by step
 
-**9-8 suspension** (most common):
-```
-Bass: C ---- C
-Upper: D-C  (9th suspends, resolves to 8ve)
+# Source Reference
+Open Music Theory, Part II, Chapter 5: "Fourth-Species Counterpoint," section "The Suspension." Also discussed in Part IV, Chapter 4: "Embellishing Tones," Category 3.
 
-Preparation: D (2nd of chord, consonant)
-Suspension: D (9th above bass, dissonant)
-Resolution: C (8ve, consonant)
-```
-
-**7-6 suspension**:
-```
-Bass: C ---- C
-Upper: B-A  (7th suspends, resolves to 6th)
-
-Common in upper voices over sustained bass
-```
-
-**4-3 suspension** (very common):
-```
-Bass: C ---- C
-Upper: F-E  (4th suspends, resolves to 3rd)
-
-Creates 4-3 motion, often in cadences
-The 4th is dissonant against bass
-```
-
-**2-3 suspension** (bass suspension):
-```
-Bass: D-C  (2nd above lower note suspends)
-Upper: C ---- C
-
-Less common, suspension in bass voice
-```
-
-## Suspension Patterns
-
-**Cadential 4-3 suspension**:
-```
-     V⁷        I
-S:   F  - E   (4-3 suspension)
-A:   D  - C
-T:   B  - C
-B:   G  - C
-
-F (^4) suspends, creates dissonance, resolves to E (^3)
-Delays resolution, intensifies cadence
-```
-
-**Chain of suspensions** (common in sequences):
-```
-7-6   7-6   7-6
-Upper voices suspend in pattern
-Creates sequential motion
-```
-
-**Double suspension**:
-```
-Two voices suspend simultaneously
-Often 9-8 and 4-3 combined
-Rich dissonance
-```
-
-## Voice Leading
-
-**Standard suspension voice leading**:
-```
-Measure: 1      2      |  3      4
-Beat:    1  2   3  4   |  1  2   3  4
-         [Prep] [Susp] |  [Res]
-         weak   STRONG |  weak
-
-Chord 1: Consonance (preparation)
-Chord 2: Dissonance on beat 1 (suspension)
-         Resolution on beat 2 or later
-```
-
-**Requirements**:
-- **Preparation**: Must be consonant in previous chord
-- **Metric placement**: Suspension on strong beat
-- **Resolution**: Downward by step to consonance
-- **Same voice**: Preparation, suspension, resolution in same voice
-
-**Agent of resolution**: The note that the suspension resolves TO (often already present in other voices)
-
-## Retardation
-
-**Retardation** = suspension that resolves **UP** instead of down
-
-```
-Bass: G ---- C
-Upper: B-C  (7th suspends, resolves UP to 8ve)
-
-Same three-stage pattern (prep-susp-res)
-But resolution ascends by step
-Less common than regular suspension
-```
-
-**Use**: Often at cadences where ^7 suspends, resolves up to ^1
-
-## Musical Context
-
-Suspensions serve specific purposes:
-- **Expressive tension**: Creates and releases dissonance
-- **Metric emphasis**: Accents strong beats with dissonance
-- **Delay/prolongation**: Postpones arrival of expected harmony
-- **Cadential intensification**: Strengthens final cadences
-- **Sequential patterns**: Chains of suspensions in sequences
-- **Voice leading interest**: Adds melodic sophistication
-- **Baroque and Classical staple**: Essential harmonic device
-
-Suspensions are among the most important non-chord tones in tonal music.
-
-## Examples
-
-### Basic
-
-**9-8 suspension** (C major, I-V):
-```
-     I         V
-S:   D  - C    (9-8 suspension)
-A:   C  - B
-T:   E  - D
-B:   C  - G
-
-Beat: 1  2  3  4
-      [P] [S] [R]
-
-D prepared on weak beat (3rd of I)
-D suspended on strong beat (9th above G, dissonant)
-D resolves down to C (8ve above G, consonant)
-```
-
-**4-3 suspension at cadence**:
-```
-     V⁷        I
-S:   F  - E    (4-3 suspension)
-A:   D  - C
-T:   B  - C
-B:   G  - C
-
-F (^4) suspends from V⁷, resolves to E (^3) in I
-Intensifies authentic cadence
-```
-
-**7-6 suspension**:
-```
-Chord 1:  C-E-G-B  (I with added 7th, or pre-suspension)
-Chord 2:  C-E-A-C  (I⁶, B suspended)
-
-Upper:    B - A    (7-6 over bass C)
-
-B prepared, suspended (dissonant 7th), resolves to A (6th)
-```
-
-**Chain of suspensions** (sequence):
-```
-7-6   7-6   7-6
-Each chord has 7th suspend to 6th
-Creates descending chromatic or diatonic pattern
-Common in Baroque sequences
-```
-
-**Retardation** (upward resolution):
-```
-     V         I
-S:   B - C     (7-8 retardation)
-A:   G - E
-T:   D - C
-B:   G - C
-
-B (^7, leading tone) suspends, resolves UP to C (^1)
-Upward resolution = retardation
-```
-
-### From Repertoire
-
-**Bach, Chorales**: Abundant suspensions, especially 4-3 and 7-6 at cadences, demonstrates proper preparation and resolution.
-
-**Corelli, Trio Sonatas**: Chain suspensions in sequential passages, suspensions create expressive dissonance and drive motion forward.
-
-**Handel, "Messiah"**: Suspensions at cadences ("Hallelujah" chorus), 4-3 suspensions intensify arrivals.
-
-**Mozart, String Quartets**: Suspensions in slow movements add expressive depth, proper voice leading throughout.
-
-**J.S. Bach, Well-Tempered Clavier**: Suspensions in contrapuntal textures, often in chains during sequences.
-
-## Related Concepts
-
-- **Prerequisite**: consonance-dissonance, voice-leading
-- **Leads to**: retardation, nonharmonic-tones
-- **See also**: passing-tone, neighbor-tone, anticipation, appoggiatura
-
-## Common Confusions
-
-- Suspension = three-stage pattern (preparation-suspension-resolution)
-- Preparation must be **consonant** in previous chord
-- Suspension occurs on **strong beat** (metrically accented)
-- Resolution moves **down by step** to consonance (weaker beat)
-- Same voice throughout all three stages
-- Figured bass: 9-8, 7-6, 4-3, 2-3 show intervals above bass
-- 4-3 suspension very common at cadences (V⁷-I, ^4→^3)
-- Agent of resolution = note that suspension resolves TO
-- Retardation = suspension resolving UP instead of down
-- Not same as passing tone (passing tone unaccented, fills gap)
-- Not same as appoggiatura (appoggiatura approached by leap)
-- Preparation required (unlike appoggiatura which can leap in)
-- Creates **accented** dissonance (strong beat emphasis)
-- Chain suspensions = series of suspensions in sequence
-- Double suspension = two voices suspend simultaneously
-- Common in Baroque and Classical music (Bach, Handel, Mozart)
-- Resolution can be delayed (extended suspension)
-- 2-3 suspension = bass suspension (less common)
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Non-Chord Tones: Embellishing Tones"
+# Verification Notes
+- Re-extracted from v2/v3 card; preserved: figured-bass interval classification (7-6, 4-3, 9-8, 2-3), retardation contrast, Boulogne example, cadential 6/4 connection
+- Definition from Ch. 5 (species counterpoint) as primary source, with Ch. IV.4 as secondary
+- Confidence: HIGH -- explicitly defined in both source locations

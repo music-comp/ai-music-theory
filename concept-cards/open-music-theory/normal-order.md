@@ -1,125 +1,88 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Normal Order
-category: theory
-source: Open Music Theory
-chapter: "Pitch-Class Sets, Normal Order, and Transformations"
-pdf_page: null
-chapter_number: 8
-unit: null
+slug: normal-order
+
+# === CLASSIFICATION ===
+category: analysis
+subcategory: set-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Pitch-Class Sets, Normal Order, and Transformations"
+chapter_number: 8
+pdf_page: null
+section: "VIII.3"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "normal form"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch-class-set
+extends: []
+related:
+  - prime-form
+  - set-class
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is normal order?"
+  - "How do you find the normal order of a pitch-class set?"
+  - "What is the difference between normal order and prime form?"
 ---
 
-# Normal Order
+# Quick Definition
+Normal order is the most compressed way to write a pitch-class set in ascending order, analogous to root position for triads but generalized for any collection of pitch classes. It is written in square brackets, e.g., [3, 8, 9].
 
-## Quick Definition
+# Core Definition
+Normal order provides a standard, unique representation for any pitch-class set, enabling comparison and classification. The algorithm: (1) list pitch classes ascending within one octave, eliminating duplicates; (2) duplicate the first pc at the end; (3) find the largest gap between adjacent pcs; (4) rewrite starting from the pc to the right of that largest gap. In case of a tie for largest gap, choose the ordering most compact to the left (closest packing at the bottom). Normal order is to pc sets what root position is to triads -- a standardized arrangement for classification. It differs from prime form, which additionally transposes to 0 and compares with the inversion.
 
-Normal order (or normal form) is the most compact way to arrange the pitch classes of a set in ascending order, analogous to how "root position" standardizes triads. It provides a consistent way to compare and label pitch-class sets.
+# Prerequisites
+- Pitch-class set (understanding of pc set as a collection of pitch classes)
 
-## Formal Definition
+# Key Properties
+1. Most compressed ascending arrangement of pitch classes
+2. Written in square brackets: [x, y, z]
+3. Algorithm: find largest gap, start after it
+4. Ties broken by most compact packing to the left
+5. Not the same as prime form (normal order is specific to a set; prime form labels the set class)
+6. Can also be found visually using the clock face (shortest arc method)
 
-**Normal order**: The ascending arrangement of a pitch-class set that spans the smallest possible interval from first to last element.
+# Context & Application
+Normal order is the essential first step in set-theory analysis. Before comparing sets, calculating transpositions, or determining set class membership, each set must be placed in normal order. The clock face provides an intuitive visual method: plot the pitch classes, find the largest gap, and read clockwise from the pitch class after the gap.
 
-**Algorithm to find normal order**:
+# Examples
+**Example 1**: Given {G-sharp4, A2, D-sharp3, A4} = pitch classes {8, 9, 3}. Ascending options: 3,8,9 or 8,9,3 or 9,3,8. Gaps: 8-to-9=1, 9-to-3=6, 3-to-8=5. Largest gap is 9-to-3. Start after it: [3, 8, 9].
 
-1. **List all rotations**: Arrange the pitch classes in ascending order within an octave, then create all rotations
-2. **Find the smallest outer interval**: Compare the interval from first to last pc in each rotation
-3. **Choose the rotation with the smallest span**
-4. **Tiebreaker**: If spans are equal, choose the rotation most "packed to the left" (smallest intervals at the beginning)
+**Example 2**: The clock face method -- plot pcs on the clock, find the biggest empty arc, read clockwise from the first pc after the gap.
 
-**Notation**: Normal order is written in square brackets: [0, 4, 7]
+# Relationships
+## Builds Upon
+- **pitch-class-set** -- Normal order is the standard way to notate a pc set
+## Related
+- **prime-form** -- Normal order transposed to 0 and compared with its inversion
+- **set-class** -- Normal order is a step toward identifying set class membership
 
-**Mathematical representation**:
-For a set of cardinality n:
-- Calculate all n rotations
-- For each rotation, measure interval from element 1 to element n (mod 12)
-- Select the rotation with minimum span; if tied, select the one with minimum interval between elements 1 and 2, then 2 and 3, etc.
+# Common Confusions
+- **Confusion**: Normal order and prime form are the same
+  **Clarification**: Normal order is specific to one pc set; prime form is the label for the entire set class (transposed to 0, compared with inversion)
+- **Confusion**: The order of pitches in normal order reflects temporal order
+  **Clarification**: Normal order is purely a notational convention for classification; it says nothing about which pitch comes first in the music
 
-## Musical Context
+# Source Reference
+Open Music Theory, Part VIII, Chapter 3: "Pitch-Class Sets, Normal Order, and Transformations."
 
-Just as root position provides a standard form for triads, normal order provides a standard form for any pitch-class set. This standardization:
-
-- Allows consistent comparison between sets
-- Facilitates identification of transpositional relationships
-- Serves as the starting point for finding prime form
-- Makes sets recognizable regardless of how they appear in the music
-
-Normal order is **descriptive, not prescriptive**: the normal order [0, 4, 7] doesn't mean C should be the bass note--it's simply a standard representation of the set.
-
-## Examples
-
-### Basic
-
-**Finding normal order for {G#, A, D#}**:
-```
-Step 1: Write pitch classes in ascending order
-  8, 9, 3 (G#, A, D#)
-
-Step 2: List all rotations and their spans
-  [8, 9, 3]: span from 8 to 3 = 7 (3 + 12 - 8 = 7)
-  [9, 3, 8]: span from 9 to 8 = 11
-  [3, 8, 9]: span from 3 to 9 = 6 <-- smallest!
-
-Step 3: Normal order is [3, 8, 9]
-```
-
-**A set with a tie**:
-```
-Set: {C, D, F#, G#} = {0, 2, 6, 8}
-
-Rotations and spans:
-  [0, 2, 6, 8]: span = 8
-  [2, 6, 8, 0]: span = 10
-  [6, 8, 0, 2]: span = 8  <-- tie!
-  [8, 0, 2, 6]: span = 10
-
-Tiebreaker: Compare [0, 2, 6, 8] and [6, 8, 0, 2]
-  [0, 2, 6, 8]: first interval = 2
-  [6, 8, 0, 2]: first interval = 2  <-- still tied!
-
-  [0, 2, 6, 8]: second interval = 4
-  [6, 8, 0, 2]: second interval = 4  <-- still tied!
-
-  [0, 2, 6, 8]: third interval = 2
-  [6, 8, 0, 2]: third interval = 2
-
-Both are equally packed. Convention: choose the one starting with the lower number.
-Normal order: [0, 2, 6, 8]
-```
-
-**Clock face method**:
-```
-1. Plot pitch classes on clock face
-2. Find the largest "gap" (arc without notes)
-3. Read clockwise from the note after the gap
-4. The first note you encounter starts the normal order
-```
-
-### From Repertoire
-
-**Schoenberg, Pierrot lunaire, "Nacht"**: The "Nacht" motive {E, G, Eb} = {3, 4, 7}
-```
-Rotations: [3, 4, 7], [4, 7, 3], [7, 3, 4]
-Spans: 4, 11, 9
-Normal order: [3, 4, 7]
-```
-
-**Debussy, La mer**: Finding normal orders of recurring sonorities helps identify relationships between seemingly different chords that are actually transpositions of the same set.
-
-## Related Concepts
-
-- **Prerequisite**: pitch-class-set, integer-notation, mod-12-arithmetic
-- **Leads to**: prime-form, set-class, transposition-tn, inversion-in
-- **See also**: interval-vector
-
-## Common Confusions
-
-- **Normal order is not the same as prime form**: Normal order is the most compact arrangement; prime form requires additional steps (transposing to 0 and comparing with inversion)
-- **Normal order is not root position**: It's a standardization for comparison, not a claim about which note is "fundamental"
-- **The starting pitch class can be any integer**: Normal order [3, 8, 9] is valid--it doesn't need to start on 0
-- **Square brackets signal normal order**: Use [brackets] for normal order, {braces} for unordered sets
-- **"Packed to the left" means smallest intervals first**: In a tie, the set with smaller intervals early wins
-- **Span is measured mod 12**: The interval from the first to the last element, going ascending (clockwise)
-
-## Source Reference
-
-Open Music Theory, Part VIII, Chapter 3: "Pitch-Class Sets, Normal Order, and Transformations"
+# Verification Notes
+- Definition source: Directly from 08-03 source chapter
+- Confidence rationale: High -- step-by-step algorithm provided in source
+- Preserved from v2: Mathematical method, clock face method reference
+- Cross-reference status: Consistent with prime-form card

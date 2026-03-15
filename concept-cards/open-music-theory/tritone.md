@@ -1,87 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tritone
-category: theory
-source: Open Music Theory
-chapter: "Intervals"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: tritone
+
+# === CLASSIFICATION ===
+category: intervals
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Intervals"
+chapter_number: 16
+pdf_page: null
+section: "Augmented and Diminished Qualities"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "augmented fourth"
+  - "diminished fifth"
+  - "diabolus in musica"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval
+  - interval-quality
+extends: []
+related:
+  - dissonance
+  - consonance
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a tritone?"
+  - "How many half steps is a tritone?"
+  - "Why is the tritone considered dissonant?"
 ---
 
-# Tritone
+# Quick Definition
 
-## Quick Definition
+An interval of exactly six half steps -- either an augmented fourth (A4) or diminished fifth (d5) -- historically considered the most dissonant interval.
 
-An interval spanning exactly three whole tones (six semitones), equivalent to an augmented fourth or diminished fifth, historically considered the most dissonant interval and requiring careful resolution in tonal music.
+# Core Definition
 
-## Formal Definition
+The **tritone** spans exactly six half steps (three whole tones, hence "tri-tone"). It can be spelled as an augmented fourth (A4, e.g., F-B) or a diminished fifth (d5, e.g., B-F). These are enharmonically equivalent in sound but differ in spelling. The tritone is the only interval that inverts to itself (A4 inverts to d5, both = 6 half steps). In the white-key system, F-B is the only tritone. Historically called "diabolus in musica" (the devil in music) for its dissonance.
 
-A **tritone** is an interval containing six semitones (half steps), spanning exactly three whole tones (hence "tri-tone"). It can be spelled as:
+# Prerequisites
 
-**Two spellings**:
-1. **Augmented fourth (A4)**: e.g., C to F♯, F to B
-2. **Diminished fifth (d5)**: e.g., C to G♭, B to F
+- **Interval**: the concept being specialized
+- **Interval quality**: augmented and diminished qualities
 
-**Characteristics**:
-- Exactly half an octave (6 semitones out of 12)
-- Symmetrical: divides the octave into two equal parts
-- Inverts to itself (A4 inverts to d5, both tritones)
-- Enharmonically equivalent but functionally different (spelling determines resolution)
-- Most dissonant interval in tonal harmony
+# Key Properties
 
-**In pitch-class theory**: Interval class 6 (ic6), the only interval class that equals its own inversion.
+- Exactly 6 half steps (3 whole tones)
+- Augmented 4th (A4) or diminished 5th (d5)
+- The only interval that inverts to itself
+- F-B is the sole white-key tritone
+- Historically considered the most dissonant interval
+- Divides the octave exactly in half
 
-**Historical names**: "diabolus in musica" (devil in music), "mi contra fa"
+# Construction / Recognition
 
-## Musical Context
+Count 6 half steps from any note, or locate the A4/d5 relationship. Aurally, the tritone has a distinctive, tense, unstable quality.
 
-The tritone is central to tonal harmony and dissonance:
-- **Dominant function**: Found in V7 chord between ^7 and ^4 (leading tone to fourth scale degree)
-- **Resolution tendency**: Strong pull to resolve by contrary motion (stepwise)
-  - In V7: tritone resolves inward to third or outward to sixth of I
-- **Diminished seventh chord**: Contains two tritones
-- **Augmented triad**: Contains no tritone (despite "augmented" name)
-- **Locrian mode**: Contains tritone above tonic (^1 to ♭^5)
+# Context & Application
 
-Historically avoided in medieval music (thus "devil in music"), later became essential to functional harmony.
+The tritone is central to tonal harmony. It occurs between ^4 and ^7 of a major scale, forming the defining dissonance of the dominant seventh chord. Its resolution (^7 up to ^1, ^4 down to ^3) drives V7-I motion.
 
-## Examples
+# Examples
 
-### Basic
+- F to B = augmented fourth (A4) = 6 half steps
+- B to F = diminished fifth (d5) = 6 half steps
+- Same sound, different spelling
 
-**Augmented fourth (A4)**:
-- C to F♯ = 6 semitones (C-C♯-D-D♯-E-F-F♯)
-- F to B = 6 semitones (F-F♯-G-G♯-A-A♯-B)
+# Relationships
 
-**Diminished fifth (d5)**:
-- C to G♭ = 6 semitones
-- B to F = 6 semitones
+- **See also**: dissonance, dominant-seventh-chord, interval-quality
 
-**In dominant seventh chord**:
-- G7 (G-B-D-F): tritone between B and F
-- Resolves to C major: B→C (up), F→E (down)
+# Common Confusions
 
-### From Repertoire
+- A4 and d5 sound the same but are spelled differently -- spelling depends on context
+- The tritone inverts to itself (unique among intervals)
 
-Opening of "The Simpsons" theme (F-B tritone). Wagner's "Tristan und Isolde" opening chord contains tritone. Jazz musicians use tritone substitution (reharmonization technique). Leonard Bernstein's "Maria" from _West Side Story_ features prominent tritone leaps. Black Sabbath's "Black Sabbath" opens with tritone (E-B♭).
-
-## Related Concepts
-
-- **Prerequisite**: interval, semitone
-- **Leads to**: dominant-seventh-chord, half-diminished-seventh, tritone-substitution, locrian-mode
-- **See also**: dissonance, interval-class
-
-## Common Confusions
-
-- Tritone vs. augmented fourth vs. diminished fifth: all tritones (6 semitones), different spellings
-- Spelling matters for resolution: A4 (F to B) vs. d5 (E♯ to B) resolve differently
-- "Three tones" = three whole tones (6 semitones), not three of anything else
-- Tritone is interval class 6 (ic6), not interval 6 (which is a sixth)
-- Augmented triad ≠ contains tritone (it contains major thirds, not tritones)
-- Tritone is symmetrical: inverts to itself (A4 ↔ d5)
-- "Diabolus in musica" is historical superstition, not musical fact
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 16: "Intervals"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: A4/d5 enharmonic equivalence, self-inversion property, "diabolus in musica" history, dominant-seventh connection.

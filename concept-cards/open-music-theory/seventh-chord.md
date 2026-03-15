@@ -1,92 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Seventh Chord
-category: theory
-source: Open Music Theory
-chapter: "Seventh Chords"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: seventh-chord
+
+# === CLASSIFICATION ===
+category: chords
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Seventh Chords"
+chapter_number: 18
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - triad
+  - interval
+extends:
+  - chord
+related:
+  - inversion
+  - figured-bass
+  - roman-numeral-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a seventh chord?"
+  - "What are the five common qualities of seventh chord?"
+  - "How are seventh chords named?"
 ---
 
-# Seventh Chord
+# Quick Definition
 
-## Quick Definition
+A four-note chord whose notes can be stacked in thirds: root, third, fifth, and seventh, in five common qualities.
 
-A four-note chord whose notes can be arranged as a stack of three thirds, adding a seventh above the root of a triad.
+# Core Definition
 
-## Formal Definition
+A **seventh chord** is a four-note chord stackable in thirds (an "extra-long snowperson"). It has a root, third, fifth, and seventh. Five common qualities: **major-major** (major triad + major 7th; also called "major seventh"), **major-minor** (major triad + minor 7th; also called "dominant seventh"), **minor-minor** (minor triad + minor 7th; also called "minor seventh"), **half-diminished** (diminished triad + minor 7th), and **fully diminished** (diminished triad + diminished 7th; also called "diminished seventh"). Chord symbols: Cma7, C7, Cmi7, C-half-dim-7, Co7.
 
-A **seventh chord** is a four-note chord whose pitches can be arranged in thirds. When stacked in its most compact form (root position), a seventh chord consists of:
-- **Root**: The lowest note
-- **Third**: A generic third above the root
-- **Fifth**: A generic fifth above the root
-- **Seventh**: A generic seventh above the root (sometimes called "chordal seventh")
+# Prerequisites
 
-There are five common qualities of seventh chord, determined by (1) the quality of the underlying triad and (2) the quality of the seventh from the root:
+- **Triad**: the three-note foundation
+- **Interval**: the distances between chord members
 
-1. **Major-major seventh** (ma7 or M7): major triad + major seventh
-2. **Major-minor seventh** (7 or dom7): major triad + minor seventh (also called "dominant seventh")
-3. **Minor-minor seventh** (mi7 or m7): minor triad + minor seventh (also called "minor seventh")
-4. **Half-diminished seventh** (∅7): diminished triad + minor seventh
-5. **Fully diminished seventh** (o7): diminished triad + diminished seventh (also called "diminished seventh")
+# Key Properties
 
-In pitch-class set theory: C major-major seventh = **{0, 4, 7, 11}**.
+- Four notes: root, third, fifth, seventh
+- Named by triad quality + seventh quality
+- Major-major (ma7): major triad + major 7th
+- Major-minor (7): major triad + minor 7th (dominant seventh)
+- Minor-minor (mi7): minor triad + minor 7th
+- Half-diminished (half-dim-7): diminished triad + minor 7th
+- Fully diminished (o7): diminished triad + diminished 7th
+- In major: I7=ma7, ii7=mi7, iii7=mi7, IV7=ma7, V7=dom7, vi7=mi7, vii-half-dim-7
+- In minor (with raised leading tone): V7=dom7, viio7=fully dim
 
-## Musical Context
+# Construction / Recognition
 
-Seventh chords add harmonic richness and color beyond triads. They:
-- Create more complex harmonies
-- Generate stronger harmonic motion (especially dominant sevenths)
-- Are essential in jazz, blues, and popular music
-- Add "jazzy" or sophisticated colors to progressions
+1. Draw root. 2. Stack snowperson + one more third. 3. Apply root's key signature (creates major-major). 4. Adjust for other qualities.
 
-Each quality has characteristic sound and function:
-- **Major-major**: "happy and jazzy," stable tonic quality (jazz, contemporary)
-- **Major-minor** (dominant): "unresolved," creates strong pull to tonic (most common in classical music)
-- **Minor-minor**: "sad and jazzy," common in jazz and pop
-- **Half-diminished**: "scary and jazzy," predominant function (ii∅7 in minor)
-- **Fully diminished**: "very scary," creates dramatic tension, common in 19th-century music
+# Context & Application
 
-## Examples
+Seventh chords add richness and tension to harmony. The dominant seventh (V7) is the most important seventh chord in tonal music, creating strong resolution to the tonic. Other seventh chords serve various harmonic functions.
 
-### Basic
+# Examples
 
-C major-major seventh (Cma7): C-E-G-B
-- Major triad (C-E-G) + major seventh (C to B)
+- Cma7: C-E-G-B (major triad + major 7th)
+- C7: C-E-G-Bb (major triad + minor 7th = dominant seventh)
+- Cmi7: C-Eb-G-Bb (minor triad + minor 7th)
+- C-half-dim-7: C-Eb-Gb-Bb (diminished triad + minor 7th)
+- Co7: C-Eb-Gb-Bbb (diminished triad + diminished 7th)
 
-G major-minor seventh (G7): G-B-D-F
-- Major triad (G-B-D) + minor seventh (G to F)
-- The "dominant seventh" in C major
+# Relationships
 
-A minor-minor seventh (Ami7): A-C-E-G
-- Minor triad (A-C-E) + minor seventh (A to G)
+- **Extends**: chord
+- **Leads to**: inversion, figured-bass, roman-numeral-analysis
+- **See also**: triad, dominant-seventh-chord
 
-B half-diminished seventh (B∅7): B-D-F-A
-- Diminished triad (B-D-F) + minor seventh (B to A)
+# Common Errors
 
-B fully diminished seventh (Bo7): B-D-F-A♭
-- Diminished triad (B-D-F) + diminished seventh (B to A♭)
+- Confusing half-diminished and fully diminished (both have diminished triads; they differ in the seventh quality)
 
-### From Repertoire
+# Common Confusions
 
-The V7 chord (major-minor seventh on ^5) is ubiquitous in classical music. Jazz standards use seventh chords almost exclusively (ii7-V7-Ima7 progression). The blues uses dominant sevenths throughout. Fully diminished sevenths appear frequently in Romantic music for dramatic effect.
+- Two naming systems exist: "major-major" vs. "major seventh"; "major-minor" vs. "dominant seventh"
+- The "chordal seventh" is the interval, not the scale degree (^7); context distinguishes them
 
-## Related Concepts
-
-- **Prerequisite**: triad, interval-quality, chord
-- **Leads to**: dominant-seventh-chord, chordal-tension, ninth-chords
-- **See also**: voice-leading
-
-## Common Confusions
-
-- Seventh chord vs. seventh scale degree: Different concepts (chord type vs. scale position)
-- "Seventh" in chord refers to the interval from root, not the seventh note of a scale
-- Major-minor (dominant) seventh is the MOST common seventh chord in classical music, not major-major
-- Half-diminished has a MINOR seventh; fully diminished has a DIMINISHED seventh
-- Chord quality is determined by BOTH the triad quality AND the seventh quality
-- Dominant seventh (V7) is a function; major-minor seventh is a quality—they often coincide but aren't synonymous
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 18: "Seventh Chords"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: five qualities with two naming systems, scale-degree patterns in major/minor, spelling method.

@@ -1,121 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Set Class
-category: theory
-source: Open Music Theory
-chapter: "Set Class and Prime Form"
-pdf_page: null
-chapter_number: 8
-unit: null
+slug: set-class
+
+# === CLASSIFICATION ===
+category: analysis
+subcategory: set-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Set Class and Prime Form"
+chapter_number: 8
+pdf_page: null
+section: "VIII.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "pitch-class set class"
+  - "pcset class"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch-class-set
+  - normal-order
+extends: []
+related:
+  - prime-form
+  - forte-number
+  - interval-vector
+  - z-relation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a set class?"
+  - "Why do certain sonorities sound similar despite different transpositions?"
+  - "How does set class relate to prime form and Forte number?"
 ---
 
-# Set Class
+# Quick Definition
+A set class is a group of all pitch-class sets related by transposition (Tn) or inversion (In). All members share the same interval content, named by their prime form (e.g., (037) for major/minor triads) or Forte number (e.g., 3-11).
 
-## Quick Definition
+# Core Definition
+Set class is the most abstract level of harmonic/melodic classification in set theory. Just as a "class" in set theory means "group," a set class groups together all pc sets that are transpositionally or inversionally equivalent. The terminology hierarchy: pitch class groups pitches (by octave/enharmonic equivalence); pitch-class set groups pitch classes (analyst's choice); set class groups pitch-class sets (by Tn/In equivalence). All members of a set class share the same interval vector, explaining why they sound fundamentally similar. Set classes are named by their prime form and catalogued by Forte number. There are 220 set classes total (from cardinality 0 to 12).
 
-A set class is a collection of all pitch-class sets that are related by transposition (Tn) or inversion (In). Just as all major triads belong to one "type," all sets in a set class share the same interval content and thus sound fundamentally similar, regardless of which specific pitch classes they contain.
+# Prerequisites
+- Pitch-class set and normal order (to identify and compare sets)
 
-## Formal Definition
+# Key Properties
+1. All members related by Tn or In share the same interval content
+2. Named by prime form (parentheses, no commas): (014), (037), (02357)
+3. Also identified by Forte number: cardinality-catalog position (e.g., 3-11)
+4. Number of distinct members depends on symmetry (asymmetric sets: 24 members; symmetric: fewer)
+5. Major and minor triads belong to the same set class (037) because they are inversionally related
+6. 220 total set classes exist (including null set and aggregate)
+7. Complement pairs: a set class and its complement together complete the twelve-tone aggregate
 
-**Set class** (or pitch-class set class): The equivalence class of all pitch-class sets related by Tn and/or In operations.
+# Context & Application
+Set class explains why certain sonorities sound similar across different transpositions and inversions. In analysis, tracking set classes reveals compositional unity -- a piece might use only 3-4 set classes despite dozens of different pc sets. The concept is analogous to (but more general than) tonal chord types: just as "major triad" encompasses C major, F-sharp major, etc., set class (037) encompasses all major and minor triads.
 
-**Equivalence relation**: Two pcsets A and B are members of the same set class if and only if B = Tn(A) or B = In(A) for some n.
+# Examples
+**Example 1**: Major and minor triads -- C major {0,4,7}, D major {2,6,9}=T2, F minor {5,8,0}=I0 of C major. All are set class (037), Forte number 3-11.
 
-**Properties of a set class**:
-- All members share the same interval vector
-- All members share the same prime form (the label for the set class)
-- The number of members depends on the set's symmetry properties
+**Example 2** (Bartok, "Subject and Reflection"): Four different pc sets across two passages -- right hands related by T5, left hands related by T5, hands related by I8 and I6. All belong to set class (02357).
 
-**Naming conventions**:
-- **Prime form**: The most compact form transposed to start on 0, written in parentheses: (014)
-- **Forte number**: A catalog number (e.g., 3-3), where the first digit is cardinality and the second is position in Forte's list
+**Example 3**: Set class (014) -- semitone + minor third. Members include {0,1,4}, {1,2,5}, {5,6,9}, and all inversions. All share interval vector <1,0,1,1,1,0>.
 
-**Terminology hierarchy**:
-```
-Pitch class: group of pitches (by octave/enharmonic equivalence)
-Pitch-class set: group of pitch classes
-Set class: group of pitch-class sets (by Tn/In equivalence)
-```
+# Relationships
+## Builds Upon
+- **pitch-class-set** -- Set class groups pc sets by Tn/In equivalence
+- **normal-order** -- Sets must be in normal order before finding prime form
+## Related
+- **prime-form** -- The label for a set class
+- **forte-number** -- Catalog number for a set class
+- **interval-vector** -- All members of a set class share the same interval vector
 
-## Musical Context
+# Common Confusions
+- **Confusion**: Set class and pc set are the same thing
+  **Clarification**: A pc set is one specific collection; a set class is the equivalence class of all Tn/In-related pc sets
+- **Confusion**: Prime form is a privileged member of the set class
+  **Clarification**: (014) does not make {0,1,4} more "important" than {3,4,7}; it is just a label
+- **Confusion**: Major and minor triads are different set classes
+  **Clarification**: They are inversionally related and thus the same set class (037)
 
-Set class provides the most abstract level of harmonic/melodic classification in set theory. Its utility:
+# Source Reference
+Open Music Theory, Part VIII, Chapter 4: "Set Class and Prime Form."
 
-1. **Explains similarity**: Why do certain sonorities in different transpositions/inversions sound related? They're members of the same set class.
-
-2. **Simplifies analysis**: Instead of tracking individual pcsets, we can track set classes. A piece might use only 3-4 set classes despite dozens of different pcsets.
-
-3. **Reveals compositional method**: Composers often build pieces around a small number of set classes, creating unity through consistent interval content.
-
-The concept is analogous to (but more general than) tonal chord types: just as "major triad" encompasses C major, F# major, etc., set class (037) encompasses all major and minor triads.
-
-## Examples
-
-### Basic
-
-**Major and minor triads as one set class**:
-```
-C major: {0, 4, 7}
-D major: {2, 6, 9} = T2{0, 4, 7}
-F minor: {5, 8, 0} = I0{0, 4, 7}
-A minor: {9, 0, 4} = I4{0, 4, 7}
-
-All are related by Tn or In
-All are members of set class (037)
-Forte number: 3-11
-```
-
-**A set class with its members**:
-```
-Set class (014):
-
-Some members by transposition:
-T0: {0, 1, 4}
-T1: {1, 2, 5}
-T5: {5, 6, 9}
-...
-
-Some members by inversion:
-I0{0, 1, 4} = {0, 11, 8} = [8, 11, 0]
-I5{0, 1, 4} = {5, 4, 1} = [1, 4, 5]
-...
-
-All 24 versions share interval vector <1,0,1,1,1,0>
-```
-
-**Comparing set classes**:
-```
-(013): semitone + whole tone
-(014): semitone + minor third
-(015): semitone + major third
-
-Different set classes, different interval content, different sonic "color"
-```
-
-### From Repertoire
-
-**Bartok, "Subject and Reflection"**: All four sets (two per passage, right and left hands) belong to the same set class (02357). Though they appear at different transposition levels and in inversional relationships, they share identical interval content.
-
-**Schoenberg, Pierrot lunaire**: The recurring "Nacht" motive and its transformations all belong to set class (014). Tracking this set class through the movement reveals motivic unity.
-
-**Webern, Concerto Op. 24**: Built from transformations of a single trichord--all manifestations belong to set class (014), creating extreme economy of materials.
-
-## Related Concepts
-
-- **Prerequisite**: pitch-class-set, transposition-tn, inversion-in, interval-class
-- **Leads to**: prime-form, interval-vector, forte-number, z-relation
-- **See also**: normal-order, cardinality
-
-## Common Confusions
-
-- **Set class vs. pitch-class set**: A pcset is a specific collection; a set class is the group of all Tn/In-related pcsets
-- **Prime form is a label, not a privileged set**: (014) doesn't make {0, 1, 4} more "important" than {3, 4, 7}
-- **Major and minor triads share a set class**: They're inversionally related, hence the same set class (037)
-- **Not all sets have 24 members in their class**: Symmetrical sets have fewer (e.g., augmented triad has only 4 members in its set class)
-- **Forte numbers are arbitrary**: 3-3 doesn't mean "three of something"--it's just a catalog position
-- **The finite number of set classes**: There are only 220 set classes total (including the null set and the aggregate)
-- **Interval vector is the same for all members**: This is what makes set class membership aurally meaningful
-
-## Source Reference
-
-Open Music Theory, Part VIII, Chapter 4: "Set Class and Prime Form"
+# Verification Notes
+- Definition source: Directly from 08-04 source chapter
+- Confidence rationale: High -- clearly defined with terminology hierarchy
+- Preserved from v2: Bartok example, major/minor triad comparison, (014) interval vector
+- Cross-reference status: Verified against set class table on Wikipedia

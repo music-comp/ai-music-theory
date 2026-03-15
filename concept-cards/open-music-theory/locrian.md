@@ -1,89 +1,92 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Locrian Mode
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: locrian
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
+chapter_number: 14
+pdf_page: null
+section: "Modes and the Parallel Relationship"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - mode
+  - minor-scale
+extends:
+  - mode
+related:
+  - phrygian
+contrasts_with:
+  - lydian
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the locrian mode?"
+  - "Why is locrian the darkest mode?"
 ---
 
-# Locrian Mode
+# Quick Definition
 
-## Quick Definition
+The darkest diatonic mode with the pattern H-W-W-H-W-W-W -- like natural minor but with lowered ^2 (ra) and lowered ^5 (se).
 
-The darkest diatonic mode, with the interval pattern H-W-W-H-W-W-W, equivalent to natural minor with both lowered second (♭^2) and lowered fifth (♭^5) degrees.
+# Core Definition
 
-## Formal Definition
+The **locrian mode** has the ascending pattern H-W-W-H-W-W-W. It is the darkest of all seven modes. Compared to natural minor, locrian has lowered ^2 (ra) and lowered ^5 (se). Solfege: do, ra, me, fa, se, le, te. The lowered ^5 makes the tonic triad diminished, which is why locrian is rarely used as a key center in tonal music.
 
-**Locrian mode** is a seven-note diatonic mode with the ascending pattern of whole and half steps: H-W-W-H-W-W-W.
+# Prerequisites
 
-**Compared to natural minor (Aeolian)**:
-- Same as natural minor except ^2 and ^5 are each lowered by one half step
-- Solfège: do-ra-me-fa-se-le-te-do (where "ra" = lowered ^2, "se" = lowered ^5)
+- **Mode**: the general concept
+- **Minor scale**: locrian is described relative to natural minor
 
-**Scale degrees** (compared to Aeolian):
-- ^1, ♭^2, ♭^3, ^4, ♭^5, ♭^6, ♭^7
+# Key Properties
 
-**Characteristics**:
-- Contains minor third (me/♭^3), making it a "dark" mode
-- Minor second between ^1 and ^2 (half step above tonic)
-- Perfect fourth above tonic
-- Diminished fifth above tonic (tritone)
-- Minor sixth (le/♭^6)
-- Minor seventh (subtonic)
+- Pattern: H-W-W-H-W-W-W
+- Like natural minor with lowered ^2 AND lowered ^5
+- Darkest mode of all seven
+- Tonic triad is diminished (unstable)
+- Contains me (lowered ^3) -- a dark mode
 
-**Position in modal brightness spectrum**: Darkest mode (rightmost in darkness continuum)
+# Construction / Recognition
 
-## Musical Context
+Start with natural minor and lower both ^2 and ^5. The diminished tonic triad is the most distinguishing feature.
 
-Locrian's instability limits its practical use:
-- Diminished fifth (♭^5) creates tritone above tonic, making tonic unstable
-- No perfect fifth means no stable tonic triad
-- Rarely used as primary mode in tonal music
-- Occasionally appears in experimental, jazz, and metal contexts
-- Theoretical importance greater than practical application
-- Tonic chord is diminished, not minor
+# Context & Application
 
-The diminished fifth (♭^5) and lowered second (♭^2) create maximum instability.
+Locrian is rare in tonal music because of its diminished tonic triad. It appears in metal, jazz (over half-diminished chords), and theoretical discussions.
 
-## Examples
+# Examples
 
-### Basic
+- C locrian: C-Db-Eb-F-Gb-Ab-Bb-C (note: Db and Gb)
+- B locrian: B-C-D-E-F-G-A-B (all white keys)
 
-**B Locrian**:
-- Pattern: B-C-D-E-F-G-A-B
-- H-W-W-H-W-W-W
-- Lowered ^2: C♮ (instead of C♯ in B natural minor)
-- Lowered ^5: F♮ (instead of F♯ in B natural minor)
+# Relationships
 
-**C Locrian**:
-- Pattern: C-D♭-E♭-F-G♭-A♭-B♭-C
-- Lowered ^2: D♭, Lowered ^5: G♭
+- **Extends**: mode
+- **See also**: phrygian, half-diminished-seventh
 
-**Solfège**: do-ra-me-fa-se-le-te-do
+# Common Confusions
 
-### From Repertoire
+- Locrian has TWO alterations relative to natural minor (lowered ^2 and ^5), making it doubly dark
 
-Björk's "Army of Me" (intro) uses Locrian. Metallica occasionally uses Locrian passages for extreme dark character. Jazz musicians (John Coltrane) experimented with Locrian over half-diminished chords. Shostakovich explored Locrian in some compositions. Generally rare in traditional repertoire due to inherent instability.
-
-## Related Concepts
-
-- **Prerequisite**: scale, mode, minor-scale, whole-step, half-step, tritone
-- **Leads to**: chromatic-harmony
-- **See also**: phrygian, aeolian, diatonic-modes
-
-## Common Confusions
-
-- Locrian vs. Lydian: opposite ends of brightness spectrum (darkest vs. brightest)
-- Locrian's instability: diminished fifth makes tonic chord unstable (not major or minor)
-- Locrian ≠ Lochrian or Lokrian (common misspellings)
-- "Darkest" refers to maximum number of lowered degrees (♭^2, ♭^3, ♭^5, ♭^6, ♭^7)
-- Locrian is theoretical/experimental; rarely used as stable tonal center
-- Locrian mode ≠ B minor key (Locrian has diminished fifth, minor has perfect fifth)
-- The diminished fifth is the primary source of instability
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 14: "Introduction to Diatonic Modes and the Chromatic Scale"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: double alteration, diminished tonic triad issue, B locrian white-key example.

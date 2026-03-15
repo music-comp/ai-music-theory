@@ -1,193 +1,72 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Dovetailing
-category: theory
-source: Open Music Theory
-chapter: "Core Principles of Orchestration"
-pdf_page: null
-chapter_number: 10
-unit: null
+slug: dovetailing
+# === CLASSIFICATION ===
+category: application
+subcategory: orchestration
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Core Principles of Orchestration"
+chapter_number: 10
+pdf_page: null
+section: "X.1"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - antiphony
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is dovetailing in orchestration?"
+  - "How can dovetailing be used to demarcate rhythm?"
 ---
 
-# Dovetailing
+# Quick Definition
+Dovetailing shares a continuous melodic line between different instruments, with each part picking up where the previous left off, often overlapping by one note. It can ensure continuity on instruments with limited sustaining capacity, create timbral variety within a single line, and demarcate rhythmic groupings.
 
-## Quick Definition
+# Core Definition
+Dovetailing distributes a continuous line among multiple instruments, overlapping parts slightly. Smetana's Vltava illustrates: flutes dovetail overlapping by one note on the downbeat; clarinets join, creating both within-section and between-section dovetailing; strings later break the line into 6+3+3 groupings, using the dovetail to articulate rhythm. Rachmaninoff 3/ii shows dense dovetailing with every sixteenth note seeing a new entry.
 
-The technique of sharing a continuous melodic line between different instruments, with parts overlapping slightly at transition points to maintain seamlessness, used both to enable instruments to share long lines they could not sustain alone and to create subtle rhythmic articulation through the grouping of entries, ranging from simple two-instrument exchanges to complex multi-voice patterns.
+# Prerequisites
+None specific
 
-## Formal Definition
+# Key Properties
+1. Continuous line shared between instruments
+2. Parts overlap slightly (often by one note)
+3. Can ensure continuity for instruments that need to breathe
+4. Can demarcate rhythmic groupings
+5. Can create timbral variety within a single line
+6. Can operate within and between instrumental sections
 
-**Dovetailing** is the distribution of a continuous line among multiple parts with overlapping transitions.
+# Context & Application
+Dovetailing is a fundamental orchestration technique, complementary to antiphony. It creates seamless lines while giving each player manageable parts.
 
-**Purposes**:
-- Enable **sustained lines** on instruments with breath limits
-- Create **seamless continuity** through overlapping entries
-- Produce **rhythmic articulation** through grouping patterns
-- Generate **timbral variety** within single lines
-- Provide **interesting parts** for players
+# Examples
+**Example 1** (Smetana, Vltava): Flutes dovetail at the opening; strings use dovetailing for rhythmic articulation.
+**Example 2** (Rachmaninoff, Symphony No. 3/ii): Dense dovetailing among oboes, bassoons, and violins at every sixteenth note.
 
-**Basic Pattern**:
-```
-Instrument 1: ─────────────┐
-                           ├─ overlap
-Instrument 2:         ─────┴───────────┐
-                                        ├─ overlap
-Instrument 3:                    ───────┴───────
+# Relationships
+## Related
+- **antiphony** -- Complementary technique (block exchange vs. continuous sharing)
 
-Continuous line, shared responsibility
-Each instrument enters before previous exits
-```
+# Common Confusions
+- **Confusion**: Dovetailing means instruments play the same notes together
+  **Clarification**: Dovetailing shares a line sequentially, not simultaneously
 
-**Types**: Within sections (flute 1-2), between sections (winds-strings), both simultaneously.
+# Source Reference
+Open Music Theory, Part X, Chapter 1: "Core Principles of Orchestration."
 
-## Dovetailing Patterns
-
-**Simple two-part dovetail**:
-```
-Flute 1: ●●●●●●●●●○
-Flute 2:         ○●●●●●●●●●
-
-○ = overlap note (both play)
-Seamless continuation of line
-```
-
-**Rhythmic articulation**:
-```
-Measure:  1    2    3    4
-Violin 1: ●●●●●●──────────
-Violin 2: ────────●●●●●●──
-Viola:    ────────────●●●●
-
-Entry points create 6+3+3 grouping
-Rhythm embedded in orchestration
-```
-
-**Within and between sections**:
-```
-Flutes:    Fl.1 → Fl.2 → Fl.1 (within)
-Clarinets: Cl.1 → Cl.2 → Cl.1 (within)
-Cross:     Fl.1 + Cl.2, then Cl.1 + Fl.2 (between)
-
-Multiple dovetail patterns simultaneously
-Complex layered texture
-```
-
-**Saturated dovetailing**:
-```
-Sixteenth entries:
-Beat:      1  &  +  a  2
-Oboe 1:    ●  ─  ─  ─  ─
-Bassoon 1: ─  ●  ─  ─  ─
-Violin 1:  ─  ─  ●  ─  ─
-Violin 2:  ─  ─  ─  ●  ─
-
-Every subdivision = new entry
-Maximum rhythmic detail
-```
-
-## Dovetail vs. Antiphony
-
-**Dovetailing** (overlap):
-```
-Part 1: ─────────┐
-                 ├─ both play
-Part 2:     ─────┴─────
-
-Continuous, overlapping
-Creates seamless line
-```
-
-**Antiphony** (separation):
-```
-Part 1: ─────────
-Part 2:          ─────────
-
-Separated, alternating
-Creates contrast/dialogue
-```
-
-**Complementary techniques**: Dovetailing ensures continuity; antiphony creates contrast.
-
-## Musical Context
-
-Dovetailing serves specific purposes:
-- **Breath management**: Wind players can share long lines
-- **Seamless melody**: Continuous sound despite instrument changes
-- **Rhythmic embedding**: Entry points create metric patterns
-- **Player interest**: Engaging parts with clear responsibilities
-- **Textural variety**: Color changes within continuous lines
-- **Structural articulation**: Groupings can reflect form
-
-Dovetailing is essential for sustained orchestral lines.
-
-## Examples
-
-### Basic
-
-**Simple wind dovetail** (Smetana, Vltava opening):
-```
-Flute 1: ●●●●●●●●○─────────
-Flute 2: ─────────○●●●●●●●●
-
-Overlap on downbeat
-Flutes share continuous line
-```
-
-**With rhythmic articulation**:
-```
-Flute 1:  ●●●●●●─────────────
-Flute 2:  ────●●●────────────
-             └─ slurred differently
-
-Staccato on downbeat demarcates beat
-Fluid line with metric clarity
-```
-
-**String section dovetail**:
-```
-mm. 36ff: (Smetana, Vltava)
-Violins:  ●●●●●●──────────────
-Violas:   ──────●●●───────────
-Cellos:   ─────────●●●────────
-
-6+3+3 grouping emerges
-Rhythm created by entries
-```
-
-### From Repertoire
-
-**Smetana, Vltava**: Classic dovetailing example; flutes overlap by one note on downbeat, clarinets join with parallel dovetailing within and between sections.
-
-**Rachmaninoff, Symphony No. 3, ii**: Dense dovetailing saturates every sixteenth subdivision; oboes/bassoons alternate, violins 1/2 alternate, winds and strings offset by sixteenth.
-
-**Ravel orchestrations**: Subtle dovetailing creates seamless long lines; color changes within melody through instrument handoffs.
-
-**Wagner operas**: Extended melodic lines shared between instruments; careful overlapping maintains legato despite breathing.
-
-## Related Concepts
-
-- **Prerequisite**: rhythm
-- **See also**: antiphony
-
-## Common Confusions
-
-- Dovetailing **overlaps**; antiphony **separates**
-- Overlap creates **seamless** continuation
-- Entry points can create **rhythmic articulation**
-- Can occur **within** sections (fl.1-fl.2) or **between** (winds-strings)
-- **Smetana Vltava** = classic simple dovetailing
-- **Rachmaninoff 3** = dense, saturated dovetailing
-- Dovetailing can be **complementary** to antiphony
-- Serves **practical** purposes (breath) and **musical** ones (rhythm)
-- Creates **interesting parts** for players (often overlooked benefit)
-- Groupings (6+3+3) can reflect **larger rhythmic patterns**
-- Different from simple **doublings** (which are simultaneous)
-- **Slurring** and articulation affect seamlessness
-- Can be subtle (two instruments) or complex (entire orchestra)
-- Wind dovetailing addresses **breath limitations**
-- String dovetailing often for **color variety**
-
-## Source Reference
-
-Open Music Theory, Part X: "Orchestration"
-Open Music Theory, Chapter 10-01: "Core Principles of Orchestration"
+# Verification Notes
+- Definition source: From 10-01
+- Confidence rationale: High
+- Preserved from v2: Smetana and Rachmaninoff examples
+- Cross-reference status: Verified

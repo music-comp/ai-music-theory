@@ -1,270 +1,111 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Deceptive Motion
-category: theory
-source: Open Music Theory
-chapter: "La in the Bass and Mid-Phrase Functions"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: deceptive-motion
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: cadences
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "La (Scale Degree 6) in the Bass at Beginnings, Middles, and Endings"
+chapter_number: 11
+pdf_page: null
+section: "Deceptive motion"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "deceptive cadence"
+  - "deceptive resolution"
+  - "V-vi"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - authentic-cadence
+  - harmonic-function
+extends: []
+related:
+  - cadence
+contrasts_with:
+  - authentic-cadence
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is deceptive motion?"
+  - "How do I write V-vi without creating parallels?"
+  - "Is deceptive motion the same as a deceptive cadence?"
 ---
 
-# Deceptive Motion
+# Quick Definition
 
-## Quick Definition
+Deceptive motion occurs when V sets up the expectation for a cadence but moves to vi (or less commonly IV6) instead of I, with the bass moving sol-la (^5-^6). It avoids rather than creates a cadence.
 
-A V→vi (or V→IV6) progression occurring in the **middle** of a phrase rather than at a cadence point—where the dominant resolves unexpectedly to the submediant or subdominant chord instead of the tonic, creating forward momentum and avoiding premature closure, distinguished from the "deceptive cadence" (V→vi at phrase ending) by its non-cadential, mid-phrase location where it functions to extend or elaborate harmonic motion rather than conclude it, common in Classical phrase structure for expanding predominant zones or delaying tonic arrival, with characteristic voice leading where the bass moves up by step (^5→^6) while upper voices resolve normally.
+# Core Definition
 
-## Formal Definition
+When a V chord sets up the expectation for a cadence but moves instead to an unexpected, non-tonic harmony, this is called **deceptive motion** (OMT, Ch. IV.11). It most commonly occurs when V(7) moves to vi rather than I, with the bass moving sol-la (^5-^6). Less commonly, la may be harmonized with IV6 rather than vi.
 
-**Deceptive motion** is a V→vi (or V→IV6) progression in the **middle** of a phrase (not at cadence).
+The source prefers "deceptive motion" over "deceptive cadence" because the progression V(7)-vi avoids a cadence rather than creating one.
 
-**Characteristics**:
-- **Mid-phrase**: Not phrase-ending
-- **V→vi most common**: Dominant to submediant
-- **V→IV6 also valid**: Dominant to subdominant first inversion
-- **Not cadential**: Doesn't conclude phrase
-- **Forward momentum**: Extends progression
-- **Bass motion**: ^5→^6 (step up)
+# Prerequisites
 
-**Function**: Predominant expansion or tonic avoidance in phrase interior
+- **Authentic cadence** — Deceptive motion subverts the expected authentic cadence
+- **Harmonic function** — Understanding that vi receives the tonic note (^1) via leading-tone resolution despite not being I
 
-**Different from deceptive cadence**: Location and function differ
+# Key Properties
 
-## Deceptive Motion vs. Deceptive Cadence
+1. V(7) moves to vi instead of expected I
+2. Bass: sol-la (^5-^6)
+3. Avoids cadence rather than creating one
+4. To avoid parallels: resolve ti-do (^7-^1) normally AND move all upper voices contrary to bass (downward)
 
-**Deceptive cadence** (phrase-ending):
-```
-... IV - V - vi ||
-... F    G   Am (ends phrase)
+# Construction / Recognition
 
-Phrase concludes on vi
-Creates incomplete conclusion
-vi functions as weak tonic substitute
-```
+## To Write V(7)-vi Without Parallels (OMT Ch. IV.11, Example 7):
+1. Resolve ti (^7) to do (^1) as normal
+2. Move all upper voices in contrary motion to the bass (downward)
 
-**Deceptive motion** (mid-phrase):
-```
-... V - vi - IV - V - I
-... G   Am   F    G   C
+# Context & Application
 
-Mid-phrase V→vi
-Extends progression
-vi functions as predominant preparation
-Phrase continues to authentic cadence
-```
+- **Typical contexts**: Mid-phrase cadence avoidance; extending phrases beyond expected cadence points
+- **Historical/stylistic notes**: Source illustrates with Crussell, Clarinet Quartet Op. 7, II, mm. 66-72.
 
-**Key distinction**: Cadential vs. non-cadential location
+# Examples
 
-## Voice Leading
+**Example 1** (OMT Ch. IV.11, Example 5): Deceptive motion in Crussell, Clarinet Quartet Op. 7, II, mm. 66-72.
 
-**Standard V→vi**:
-```
-V:   G-B-D     vi:  A-C-E
-S:   D  →  E        (^2 → ^3, common tone or step)
-A:   B  →  C        (^7 → ^1, leading tone resolves)
-T:   G  →  E or A   (^5 → ^3 or ^6)
-B:   G  →  A        (^5 → ^6, step UP)
+**Example 2** (OMT Ch. IV.11, Example 7): Writing deceptive motion with parallel-avoidance technique.
 
-Bass moves up by step (characteristic)
-Leading tone still resolves to ^1 (in vi)
-Upper voices resolve normally
-```
+# Relationships
 
-**V→IV6** (alternative):
-```
-V:   G-B-D     IV6:  A-C-F
-S:   D  →  C        (^2 → ^1, step down)
-A:   B  →  C        (^7 → ^1)
-T:   G  →  F        (^5 → ^4)
-B:   G  →  A        (^5 → ^6, step up)
+## Contrasts With
+- **Authentic cadence** — AC: V-I (expected resolution); deceptive motion: V-vi (unexpected, avoids cadence)
 
-Same bass motion ^5→^6
-IV6 instead of vi
-Both valid deceptive motions
-```
+## Related
+- **Cadence** — Deceptive motion is cadence avoidance
 
-## Functional Role
+# Common Errors
 
-**In phrase structure**:
-```
-Opening: I - vii°6 - I6  (tonic prolongation)
-Middle:  IV - V - vi     (deceptive motion)
-         vi - ii - V - I  (continues to PAC)
+- **Error**: Creating parallel fifths or octaves in V-vi
+  **Correction**: Resolve ti to do normally and move all upper voices downward (contrary to ascending bass)
 
-Deceptive motion extends middle
-Avoids premature tonic arrival
-Creates longer phrase
-```
+# Common Confusions
 
-**Predominant expansion**:
-```
-... IV - V - vi - ii - V - I
+- **Confusion**: Calling V-vi a "deceptive cadence"
+  **Clarification**: The source prefers "deceptive motion" because V-vi avoids a cadence rather than creating one
 
-V→vi expands predominant zone
-vi functions as weak predominant
-Delays dominant arrival
-```
+# Source Reference
 
-## Common Progressions
+Open Music Theory, Part IV, Chapter 11: "La (Scale Degree 6) in the Bass," section "Deceptive motion." See Examples 5, 7.
 
-**V-vi in mid-phrase**:
-```
-I - IV - V - vi - IV - V - I
+# Verification Notes
 
-V→vi extends progression
-Not cadential (continues)
-Creates expanded phrase
-```
-
-**With predominant continuation**:
-```
-... V - vi - ii - V - I
-
-V→vi moves to ii
-ii→V→I completes cadence
-Mid-phrase function
-```
-
-**Multiple deceptive motions**:
-```
-I - V - vi - V - vi - ii - V - I
-
-Two V→vi progressions
-Extends phrase significantly
-Eventually reaches PAC
-```
-
-## La in the Bass (^6)
-
-**"La in the Bass" patterns** (Open Music Theory terminology):
-```
-^5 → ^6 bass motion
-V → vi or V → IV6
-
-Characteristic ascending step
-"La" = solfège for ^6
-Midphrase function typical
-```
-
-**Continues vs. Ends**:
-- **Continues**: Deceptive motion (mid-phrase)
-- **Ends**: Deceptive cadence (phrase conclusion)
-
-## Musical Context
-
-Deceptive motion serves specific purposes:
-- **Phrase extension**: Lengthens progression
-- **Tonic avoidance**: Delays resolution
-- **Predominant expansion**: Extends PD zone
-- **Forward momentum**: Keeps phrase moving
-- **Non-cadential**: Different from deceptive cadence
-- **Classical phrase structure**: Common mid-phrase device
-- **Bass ^5→^6**: Characteristic motion
-- **vi predominant function**: After V, vi functions as weak PD
-
-Essential for understanding phrase interior harmonic motion.
-
-## Examples
-
-### Basic
-
-**V-vi mid-phrase** (C major):
-```
-Phrase: I - IV - V - vi - ii - V - I
-        C   F    G   Am   Dm   G   C
-
-V→vi in measure 3 (mid-phrase)
-Not cadential (phrase continues)
-vi leads to ii (predominant expansion)
-Phrase ends with PAC (V-I)
-```
-
-**Voice leading**:
-```
-        V       vi
-S:      D   →   E   (or C→C common tone)
-A:      B   →   C   (^7→^1, resolves)
-T:      G   →   E
-B:      G   →   A   (^5→^6, step up)
-
-Characteristic bass motion
-Upper voices resolve
-```
-
-**V-IV6 alternative**:
-```
-Phrase: I - V - IV6 - ii - V - I
-        C   G   F/A   Dm   G   C
-
-V→IV6 mid-phrase (^5→^6 bass)
-Same function as V→vi
-Continues to predominant
-```
-
-**Extended phrase**:
-```
-mm. 1-2:  I - vii°6 - I6  (tonic prolongation)
-m. 3:     IV
-m. 4:     V - vi           (deceptive motion)
-mm. 5-6:  IV - ii - V - I  (predominant-dominant-tonic)
-
-Deceptive motion extends phrase
-Not cadential
-Phrase continues after vi
-```
-
-**Multiple deceptive motions**:
-```
-I - V - vi - V - vi - ii - V - I
-
-Two V→vi progressions
-Creates long phrase
-Eventually resolves to I
-```
-
-### From Repertoire
-
-**Mozart, Piano Sonatas**: V→vi mid-phrase extensions, avoids premature cadence, expands phrases beyond four bars.
-
-**Beethoven, Piano Sonatas**: Deceptive motions extend phrases, particularly in development sections, creates longer breath.
-
-**Haydn, String Quartets**: V→vi in phrase interiors, not at cadences, demonstrates Classical phrase expansion technique.
-
-**Classical period generally**: Deceptive motion standard for phrase extension, distinguished from deceptive cadence by location and function.
-
-**Bach, Chorales**: Less common (Baroque phrases shorter), but V→vi appears mid-phrase for harmonic variety.
-
-## Related Concepts
-
-- **Prerequisite**: ii-v-i-progression, deceptive-cadence, srdc-phrase-structure, pre-dominant-function, voice-leading
-- **Leads to**: phrase-expansion, evaded-cadence
-- **See also**: phrase-extension
-
-## Common Confusions
-
-- Deceptive motion = V→vi (or V→IV6) in **mid-phrase** (not cadential)
-- Different from **deceptive cadence** (which ends phrase on vi)
-- Location matters: mid-phrase vs. phrase-ending
-- Function: extends/expands vs. concludes weakly
-- Bass motion: ^5→^6 (step up) characteristic
-- V→vi most common (also V→IV6)
-- vi functions as weak predominant (after deceptive motion)
-- Not phrase-ending (that's deceptive cadence)
-- Continues to predominant or further progression
-- Eventually resolves to authentic cadence
-- Creates longer phrases (phrase extension)
-- Classical phrase structure device
-- Voice leading same as deceptive cadence (but different function)
-- Leading tone (^7) still resolves to ^1 (in vi chord)
-- Upper voices resolve normally despite "deceptive" bass
-- "La in the bass" = ^6 (solfège terminology)
-- Predominant expansion common function
-- Avoids premature tonic arrival
-- Forward momentum (keeps phrase going)
-- Not same as deceptive cadence (location and function differ)
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "La in the Bass and Mid-Phrase Functions"
+- Definition source: Direct from OMT Ch. IV.11
+- Confidence rationale: HIGH — explicit definition with terminological preference
+- Re-extraction notes: Re-extracted from v2 card; preserved: V-vi parallel-avoidance technique, terminological distinction between motion and cadence.

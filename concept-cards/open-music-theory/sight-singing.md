@@ -1,93 +1,100 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Sight-Singing
-category: theory
-source: Open Music Theory
-chapter: "The Basics of Sight-Singing and Dictation"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: sight-singing
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: aural-skills
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "The Basics of Sight-Singing and Dictation"
+chapter_number: 15
+pdf_page: null
+section: "Strategies for Sight-Singing and Sight-Counting"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "sight reading"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - solfege
+  - scale-degree
+  - rhythm
+  - meter
+extends: []
+related:
+  - dictation
+  - protonotation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is sight-singing?"
+  - "What strategies help with sight-singing?"
+  - "What is sight-counting?"
 ---
 
-# Sight-Singing
+# Quick Definition
 
-## Quick Definition
+Singing a melody at sight, without prior hearing or practice, using solmization syllables (solfege or scale degrees) and rhythmic counting.
 
-The skill of singing music at first sight without having previously heard or practiced it, using solmization systems (solfège or scale degrees) to identify pitches and rhythmic counting for durations.
+# Core Definition
 
-## Formal Definition
+**Sight-singing** means singing at sight, having never before heard or seen the music. **Sight-counting** is counting a rhythm never before heard or seen. Both use solmization systems (solfege or scale degrees for pitch; counting systems for rhythm). Key strategies include: conducting while singing, noting the clef/time signature/key signature before beginning, observing melodic contour, and practicing at a slower tempo when struggling.
 
-**Sight-singing** is the performance practice of singing unfamiliar music directly from written notation, without prior rehearsal or hearing. It requires the simultaneous integration of:
+# Prerequisites
 
-**Core components**:
-- **Pitch reading**: Identifying pitches from staff notation
-- **Rhythm reading**: Interpreting rhythmic values and meter
-- **Solmization**: Using solfège syllables or scale degrees to internalize pitch relationships
-- **Tonal orientation**: Establishing and maintaining the key/tonal center
+- **Solfege / scale degree**: melodic solmization systems
+- **Rhythm / meter**: rhythmic counting systems
 
-**Common solmization systems**:
-- **Solfège** (movable do): do-re-mi-fa-sol-la-ti-do
-- **Scale degrees**: ^1-^2-^3-^4-^5-^6-^7-^8
-- **Both approaches** emphasize functional pitch relationships within a key
+# Key Properties
 
-**Essential skills**:
-- Recognizing melodic contour (up, down, same)
-- Identifying intervals (stepwise vs. leaps)
-- Maintaining steady tempo while singing
-- Conducting or tapping to keep time
+- Sing at sight = perform without prior practice
+- Use rhythmic and melodic solmization consistently
+- Conduct while sight-singing to maintain tempo
+- Note clef, time signature, and key signature before beginning
+- Observe melodic contour (direction of motion)
+- Do not write counts or solfege on your music
 
-## Musical Context
+# Construction / Recognition
 
-Sight-singing serves multiple pedagogical and practical purposes:
-- **Aural skills development**: Connects visual notation to aural perception
-- **Musicianship training**: Core skill in undergraduate music curricula
-- **Ensemble participation**: Enables quick learning of new repertoire
-- **Internal audiation**: Develops ability to "hear" music mentally from score
-- **Sight-counting**: Related skill for rhythm-only reading
+Sight-singing is a performance skill developed through systematic practice over many years, typically four semesters of undergraduate aural skills courses.
 
-Mastery requires consistent practice over multiple years (typically four semesters of aural skills courses).
+# Context & Application
 
-## Examples
+Sight-singing is essential for all musicians. It develops the connection between written notation and sound, improving reading fluency, ear training, and musical understanding.
 
-### Basic
+# Examples
 
-**Preparation steps**:
-1. Note clef, key signature, time signature
-2. Identify tonic and sing tonic pitch
-3. Observe melodic contour (overall shape)
-4. Practice at slower tempo if needed
-5. Conduct while singing to maintain tempo
+- Before singing: identify clef (treble), key (G major), time signature (4/4), then begin
+- Conduct in quadruple pattern while singing solfege syllables
 
-**Solmization example** (C major):
-- Notes: C-D-E-F-G
-- Solfège: do-re-mi-fa-sol
-- Scale degrees: ^1-^2-^3-^4-^5
+# Relationships
 
-**Common challenges**:
-- Singing correct direction (up vs. down)
-- Maintaining steady tempo
-- Large intervallic leaps
-- Chromatic alterations
+- **See also**: dictation, protonotation, solfege, scale-degree
 
-### From Repertoire
+# Common Errors
 
-Sight-singing exercises from textbooks like Ottman's "Music for Sight Singing" or Berkowitz's "A New Approach to Sight Singing." Choral singers sight-sing new octavos at first rehearsal. Auditions for choirs and music schools typically include sight-singing component.
+- Writing counts or solfege on the music (slows development)
+- Starting without checking clef, key, and time signature
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: pitch, staff, clef, key-signature, rhythm, solfege, scale-degree
-- **Leads to**: dictation
+- Sight-singing includes rhythm, not just pitch -- both must be performed simultaneously
 
-## Common Confusions
-
-- Sight-singing vs. sight-reading: essentially synonymous (both mean performing at first sight)
-- Don't write solfège/scale degrees on music (defeats purpose of sight-singing)
-- Singing correct direction is half the battle (up/down/same)
-- Slower tempo is acceptable when learning
-- Conducting while singing helps maintain steady tempo
-- Sight-singing ≠ perfect pitch (uses relative pitch relationships)
-- Takes years to master—be patient with progress
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 15: "The Basics of Sight-Singing and Dictation"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: strategies list, sight-counting definition, practice recommendations.

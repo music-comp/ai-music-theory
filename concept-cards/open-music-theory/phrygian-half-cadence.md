@@ -1,236 +1,103 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Phrygian Half Cadence
-category: theory
-source: Open Music Theory
-chapter: "Cadences in Minor Keys"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: phrygian-half-cadence
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: cadences
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "La (Scale Degree 6) in the Bass at Beginnings, Middles, and Endings"
+chapter_number: 11
+pdf_page: null
+section: "The phrygian half cadence (PHC)"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "PHC"
+  - "Phrygian cadence"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - half-cadence
+extends:
+  - half-cadence
+related:
+  - strong-predominant
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a phrygian half cadence?"
+  - "In what key context does the phrygian half cadence occur?"
 ---
 
-# Phrygian Half Cadence
+# Quick Definition
 
-## Quick Definition
+The phrygian half cadence (PHC) is a special phrase ending occurring only in minor keys, using the progression iv6-V with the bass moving le-sol (^b6-^5), creating a characteristic half-step descent reminiscent of the Phrygian mode.
 
-A specific type of half cadence in minor keys where the phrase ends on the dominant (V) approached from the subdominant in first inversion (iv6)—creating the characteristic bass motion of a descending half step (♭^6→^5), resembling the Phrygian mode's descending semitone from the tonic, notated as iv6→V and creating a distinctive sound with ^4 in the bass descending chromatically to the dominant, common in Baroque music (particularly in slow movements and dramatic recitatives), producing a plaintive, archaic quality that emphasizes the arrival on the dominant, often used at the end of slow introductions or before important structural moments.
+# Core Definition
 
-## Formal Definition
+The **phrygian half cadence** (PHC) is a special kind of cadential phrase ending that occurs only in minor and involves the progression iv6-V (OMT, Ch. IV.11). It is called "phrygian" because of the half step when le moves to sol (^b6-^5) in the bass, a sound similar to ra-do (^b2-^1) in the Phrygian mode.
 
-**Phrygian half cadence** (Phrygian HC or PHC) is a half cadence in minor with the specific progression **iv6 → V**.
+Writing PHCs requires care to avoid parallels and augmented seconds between le and ti (^b6-^#7). Doubling do (^1) in iv6 helps avoid these problems. PHCs are often approached from i with soprano me-fa-sol (^3-^4-^5).
 
-**Characteristics**:
-- **Minor key only**: Not found in major
-- **Bass motion**: ♭^6 → ^5 (half step descent)
-- **iv6 before V**: Subdominant first inversion
-- **Half cadence**: Phrase ends on V (open ending)
-- **Distinctive sound**: Resembles Phrygian mode cadence
+# Prerequisites
 
-**In A minor**: iv6 = Dm/F (F-A-D) → V = E (E-G#-B)
-- Bass: F → E (♭^6 → ^5, half step)
+- **Half cadence** — PHC is a specific type of half cadence
 
-**Named after**: Phrygian mode (which has half step above tonic)
+# Key Properties
 
-## Bass Motion
+1. Occurs ONLY in minor keys
+2. Progression: iv6-V
+3. Bass: le-sol (^b6-^5), descending half step
+4. Named for resemblance to Phrygian mode's half-step descent
+5. Double do (^1) in iv6 to avoid parallels and augmented seconds
+6. Common soprano: me-fa-sol (^3-^4-^5)
 
-**Characteristic half-step descent**:
-```
-iv6:  F-A-D    V:  E-G#-B
-Bass: F   →    E   (♭^6 → ^5, half step down)
+# Construction / Recognition
 
-Chromatic descent
-Resembles Phrygian mode
-Distinctive sound
-```
+## To Write (OMT Ch. IV.11, Example 10):
+1. Write bass: le-sol (^b6-^5)
+2. Double do (^1) in iv6
+3. Common soprano: me-fa-sol (^3-^4-^5)
+4. Avoid augmented second between le and ti
 
-**In C minor**:
-```
-iv6:  Ab-C-F   V:  G-B-D
-Bass: Ab  →    G   (♭^6 → ^5)
+# Examples
 
-Same half-step bass motion
-Minor key pattern
-```
+**Example 1** (OMT Ch. IV.11, Example 9): PHC in Schubert, "Die Mainacht," mm. 1-10.
 
-## Voice Leading
+**Example 2** (OMT Ch. IV.11, Example 10): Writing a PHC with proper voice leading.
 
-**Standard Phrygian HC**:
-```
-        iv6      V
-S:      D    →   E or G#  (^4 → ^5 or ^7)
-A:      A    →   B        (^1 → ^2 or ^7)
-T:      F    →   E        (^6 → ^5)
-B:      F    →   E        (♭^6 → ^5, HALF STEP)
+# Relationships
 
-Bass descends by half step
-Upper voices resolve normally
-Ends on V (half cadence)
-```
+## Builds Upon
+- **Half cadence** — PHC is a specialized half cadence in minor
 
-**Minimal motion**:
-```
-All voices move by step
-Smooth voice leading
-Bass half-step characteristic
-```
+# Common Errors
 
-## Phrygian HC vs. Regular HC
+- **Error**: Writing an augmented second between le and ti (^b6-^#7)
+  **Correction**: Double do (^1) in iv6 to avoid this
 
-**Regular half cadence** (in minor):
-```
-... ii°6 - V  or  iv - V  or  I - V
+# Common Confusions
 
-Various approaches to V
-Phrase ends on V
-Open ending
-```
+- **Confusion**: Using PHC in major keys
+  **Clarification**: PHC occurs only in minor; major keys lack the ^b6-^5 half step
 
-**Phrygian half cadence**:
-```
-... iv6 - V
+# Source Reference
 
-SPECIFIC: iv6 (first inversion, ♭^6 in bass)
-Distinctive half-step bass
-Special archaic quality
-```
+Open Music Theory, Part IV, Chapter 11, section "The phrygian half cadence." See Examples 9-10.
 
-**Phrygian HC = specific type of HC**
+# Verification Notes
 
-## Phrygian Mode Connection
-
-**Phrygian mode** (ancient):
-```
-E Phrygian: E-F-G-A-B-C-D-E
-
-Half step between E and F (^1 and ♭^2)
-Characteristic descending half-step cadence
-```
-
-**Phrygian HC resembles**:
-```
-Minor key: iv6-V has ♭^6→^5 (half step)
-Similar to Phrygian: ♭^2→^1 (half step)
-
-Named for this resemblance
-Archaic, modal quality
-```
-
-## Musical Context
-
-Phrygian half cadence serves specific purposes:
-- **Minor key idiom**: Only in minor
-- **Baroque frequency**: Common in Baroque slow movements
-- **Dramatic effect**: Plaintive, archaic quality
-- **Half-step bass**: Distinctive chromatic descent
-- **Recitative**: Common in opera/oratorio recitatives
-- **Slow introductions**: Often ends slow intro before fast section
-- **Open ending**: Half cadence (ends on V)
-- **Historical flavor**: Evokes early music/modes
-
-Distinctive minor-key cadential gesture with archaic character.
-
-## Examples
-
-### Basic
-
-**Phrygian HC in A minor**:
-```
-Phrase ending:
-... i  -  iv6  -  V  ||
-... Am    Dm/F    E
-
-Bass: A → F → E (descends to E by half step)
-Dm/F = iv6 (^4 in bass)
-Ends on V (half cadence)
-```
-
-**Voice leading**:
-```
-        iv6      V
-S:      D    →   E      (^4 → ^5)
-A:      A    →   G# or B (^1 → ^7 or ^2)
-T:      F    →   E      (^6 → ^5)
-B:      F    →   E      (♭^6 → ^5, HALF STEP)
-
-Smooth stepwise motion
-Bass half-step characteristic
-```
-
-**In C minor**:
-```
-... i  -  iv6  -  V  ||
-... Cm    Fm/Ab   G
-
-Bass: C → Ab → G (half-step Ab→G)
-Phrygian HC sound
-Minor key specific
-```
-
-**Longer approach**:
-```
-Opening (A minor):
-i - iv - vii°6/V - iv6 - V ||
-
-iv6-V = Phrygian HC
-Ends first phrase
-Opens to next section
-```
-
-**After slow introduction**:
-```
-Slow intro (A minor): ... iv6 - V ||
-
-[Fermata]
-
-Allegro: i - V - i ...
-
-Phrygian HC ends introduction
-Pauses on V
-Fast section begins with resolution
-```
-
-### From Repertoire
-
-**Bach, Passions**: Phrygian half cadences in recitatives, dramatic pauses on dominant, emphasizes textual moments.
-
-**Handel, Operas**: Recitative endings with iv6-V, Phrygian HC for rhetorical pauses, Baroque convention.
-
-**Vivaldi, Concerti slow movements**: Phrygian HC at phrase endings in minor-key Largos, archaic, expressive quality.
-
-**Bach, Well-Tempered Clavier**: Minor-key preludes/fugues use iv6-V, demonstrates Baroque minor-key cadence practice.
-
-**Baroque slow movements generally**: Phrygian HC marks phrase boundaries, creates distinctive minor-key color.
-
-## Related Concepts
-
-- **Prerequisite**: half-cadence, pivot-chord
-- **Leads to**: basic-cadence-types, half-cadence
-- **See also**: phrygian-cadence
-
-## Common Confusions
-
-- Phrygian half cadence = **iv6 → V** in minor (specific HC type)
-- PHC or Phrygian HC abbreviation
-- **Minor key only** (not found in major)
-- Bass motion: **♭^6 → ^5** (half-step descent) - characteristic
-- iv6 = subdominant first inversion (^4 in bass)
-- Ends on **V** (half cadence, open ending)
-- Different from regular HC (Phrygian has specific iv6-V progression)
-- Named after Phrygian mode (which has ♭^2→^1 half step)
-- Archaic, modal quality (evokes early music)
-- Common in **Baroque** (Bach, Handel, Vivaldi)
-- Recitative endings (opera/oratorio)
-- Slow introductions (ends on V before fast section)
-- Voice leading: All voices stepwise, bass half-step down
-- Distinctive sound (not generic HC)
-- In A minor: Dm/F → E (F→E bass half step)
-- In C minor: Fm/Ab → G (Ab→G bass half step)
-- Still a half cadence (phrase ends on V)
-- Creates pause, open feeling
-- Resolves in next phrase (usually to i)
-- Baroque and early Classical periods particularly
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Cadences in Minor Keys: Phrygian Half Cadence"
+- Definition source: Direct from OMT Ch. IV.11
+- Confidence rationale: HIGH — explicit definition
+- Re-extraction notes: Re-extracted from v2 card; preserved: Phrygian mode connection, minor-only restriction.

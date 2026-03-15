@@ -1,158 +1,76 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: All-Interval Row
-category: theory
-source: Open Music Theory
-chapter: "Row Properties"
-pdf_page: null
-chapter_number: 9
-unit: null
+slug: all-interval-row
+# === CLASSIFICATION ===
+category: analysis
+subcategory: twelve-tone-theory
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Row Properties"
+chapter_number: 9
+pdf_page: null
+section: "IX.3"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - twelve-tone-row
+extends: []
+related:
+  - derived-row
+  - row-operations
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is an all-interval row?"
+  - "How many all-interval rows exist?"
+  - "What property links the first and last notes of an all-interval row?"
 ---
 
-# All-Interval Row
+# Quick Definition
+An all-interval row features all eleven distinct intervals between neighboring pitches, in addition to containing all twelve distinct pitch classes. There are 1,928 distinct all-interval row forms, and by definition, notes equidistant from the center pair are always a tritone apart.
 
-## Quick Definition
+# Core Definition
+While all standard twelve-tone rows include all twelve distinct pitches, only some also feature all eleven distinct intervals between neighboring pitches. These are all-interval rows. A notable example is the "Grandmother chord" (credited to Nicolas Slonimsky): starting with a semitone up, then a tone down, alternating odd and even intervals with odd intervals growing and even shrinking. The resulting pitch succession forms two interleaved chromatic scales (a chromatic wedge), with precedents in tonal works such as fugues by Bach (BWV 548) and Shostakovich (Op. 87 No. 15).
 
-An all-interval row is a twelve-tone row in which all eleven distinct intervals (measured in semitones from 1 to 11) appear between adjacent pitches—achieved by examining the overlapping dyads formed by consecutive pitch pairs (1-2, 2-3, 3-4, etc.) and ensuring each of the eleven possible intervals occurs exactly once, resulting in maximum intervallic variety and a property shared by exactly 1,928 distinct row forms.
+# Prerequisites
+- Twelve-tone row (the base concept)
 
-## Formal Definition
+# Key Properties
+1. All 11 distinct ordered pitch-class intervals appear between adjacent pitches
+2. 1,928 distinct all-interval row forms exist
+3. Notes equidistant from the center pair are always a tritone apart (by definition)
+4. Can be viewed as two interleaved chromatic scales (chromatic wedge)
+5. Represents maximal intervallic variety
 
-**All-interval row**: A twelve-tone row containing all eleven intervals between consecutive pitches.
+# Context & Application
+All-interval rows appeal to composers seeking maximum variety of intervallic content. The property ensures that every possible interval is represented, creating rich motivic potential.
 
-**Mathematical properties**:
-- 12 pitch classes produce 11 adjacent intervals
-- Each interval class 1-11 appears exactly once
-- Total distinct all-interval rows: 1,928
-- By definition: tritone (interval 6) connects notes equidistant from center
-  - Notes 1 and 12 are a tritone apart
-  - Notes 2 and 11 are a tritone apart
-  - Notes 3 and 10, 4 and 9, 5 and 8, 6 and 7
+# Examples
+**Example 1** (Nono, Il Canto Sospeso): An all-interval row that can be seen as two interleaved chromatic scales.
+**Example 2**: The "Grandmother chord" row -- semitone up, whole tone down, minor third up, major third down, etc.
 
-**Overlapping segment analysis**:
-```
-Row:      a - b - c - d - e - f - g - h - i - j - k - l
-Dyads:    [a-b] [b-c] [c-d] [d-e] [e-f] [f-g] [g-h] [h-i] [i-j] [j-k] [k-l]
-Intervals:  1     2     3     4     5     6     7     8     9    10    11
-           (in some order, each appears once)
-```
+# Relationships
+## Builds Upon
+- **twelve-tone-row** -- All-interval rows are a special subtype
+## Related
+- **derived-row** -- Another special row type, focusing on discrete segments
 
-## Musical Context
+# Common Confusions
+- **Confusion**: All twelve-tone rows have all intervals
+  **Clarification**: All rows have all 12 pitch classes, but only some have all 11 distinct intervals between adjacent notes
 
-All-interval rows provide:
-- **Maximum variety**: Every interval represented equally
-- **Balance**: No interval emphasized over others
-- **Structural interest**: Row structure becomes self-defining
-- **Historical importance**: Explored by many serialist composers
+# Source Reference
+Open Music Theory, Part IX, Chapter 3: "Row Properties," section on Overlapping Segments.
 
-The all-interval property represents one approach to "using everything equally"—parallel to the twelve-tone principle of using all pitch classes.
-
-Famous construction method (Grandmother chord / Slonimsky):
-- Alternate odd and even intervals
-- Odd intervals ascending (1, 3, 5, 7, 9, 11)
-- Even intervals descending (10, 8, 6, 4, 2)
-- Results in two interleaved chromatic scales
-
-## Examples
-
-### Basic
-
-**Grandmother chord construction**:
-```
-Start on A
-+1 (up semitone):     A  - Bb
--2 (down tone):       Bb - Ab
-+3 (up minor 3rd):    Ab - B
--4 (down major 3rd):  B  - G
-+5 (up perfect 4th):  G  - C
--6 (down tritone):    C  - F#
-+7 (up perfect 5th):  F# - C#
--8 (down minor 6th):  C# - A (octave higher)
-+9 (up major 6th):    A  - F#
--10 (down minor 7th): F# - E
-+11 (up major 7th):   E  - D#
-
-Result: A-Bb-Ab-B-G-C-F#-C#-A-F#-E-D#
-        (two interleaved chromatic scales)
-```
-
-**Verifying all-interval property**:
-```
-Row: A-Bb-Ab-B-G-C-F#-C#-A-F#-E-D#
-     9  10  8 11 7 0  6  1  9 6  4 3
-
-Intervals between adjacent notes:
-9→10: +1 (semitone)
-10→8: -2 (= +10, whole tone)
-8→11: +3 (minor 3rd)
-11→7: -4 (= +8, major 3rd)
-... etc.
-
-All 11 intervals (1-11) appear exactly once
-```
-
-**Tritone relationships**:
-```
-In all-interval row, notes equidistant from center form tritones:
-
-Position:  1   2   3   4   5   6   7   8   9  10  11  12
-Note:      A  Bb  Ab  B   G   C   F#  C#  A  F#  E   D#
-
-Pairs (tritone = interval 6):
-1 and 12: A - D# (tritone)
-2 and 11: Bb - E (tritone)
-3 and 10: Ab - F# (tritone)
-4 and 9:  B - A (not tritone in this row)
-... pattern varies by specific row
-```
-
-### From Repertoire
-
-**Luigi Nono, Il Canto Sospeso**:
-```
-Uses an all-interval row based on Grandmother chord principle
-
-Row features:
-- Chromatic wedge structure
-- Two interleaved chromatic scales
-- Maximum intervallic variety
-
-Similar structure found in:
-- Bach fugues (BWV 548) - chromatic wedge subjects
-- Shostakovich fugues (Op. 87, No. 15)
-```
-
-**All-interval row in analysis**:
-```
-When analyzing, check:
-1. List intervals between all 11 adjacent pairs
-2. Confirm each interval 1-11 appears once
-3. Note the tritone relationships
-4. Consider how composer exploits the property
-```
-
-## Related Concepts
-
-- **Prerequisite**: twelve-tone-row, interval-class
-- **Leads to**: derived-row, all-trichord-row
-- **See also**: interval-vector
-
-## Common Confusions
-
-- All-interval row = all 11 intervals between adjacent pitches
-- NOT the same as containing all interval classes in any position
-- Uses overlapping segment analysis (dyads 1-2, 2-3, 3-4, etc.)
-- Exactly 1,928 distinct all-interval rows exist
-- Every all-interval row has tritones between symmetrically-positioned notes
-- Notes 1-12, 2-11, 3-10, 4-9, 5-8, 6-7 form tritones (by definition)
-- "Grandmother chord" is a famous all-interval row construction
-- Construction: alternate odd intervals up, even intervals down
-- Results in two interleaved chromatic scales
-- The property is about ADJACENT intervals, not all dyadic intervals
-- Different from all-trichord rows (which use all trichord types)
-- All-interval property preserved under transposition
-- Inversion gives different interval sequence (inverted)
-- Retrograde gives reversed interval sequence
-
-## Source Reference
-
-Open Music Theory, Part IX: "Row Properties"
+# Verification Notes
+- Definition source: From 09-03 source chapter
+- Confidence rationale: High -- clear definition with count
+- Preserved from v2: Nono example, Grandmother chord, 1,928 count
+- Cross-reference status: Verified against twelve-tone anthology

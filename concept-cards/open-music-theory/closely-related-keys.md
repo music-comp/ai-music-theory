@@ -1,267 +1,118 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Closely Related Keys
-category: theory
-source: Open Music Theory
-chapter: "Modulation and Key Relationships"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: closely-related-keys
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: chromatic-harmony
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Extended Tonicization and Modulation to Closely Related Keys"
+chapter_number: 17
+pdf_page: null
+section: "Closely related keys"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "related keys"
+  - "neighboring keys"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - modulation
+extends:
+  - modulation
+related:
+  - pivot-chord
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are closely related keys?"
+  - "How do I find all closely related keys for a given key?"
+  - "Which modulation targets are most common?"
 ---
 
-# Closely Related Keys
+# Quick Definition
 
-## Quick Definition
+Closely related keys are keys whose key signatures differ by at most one accidental, sharing many common chords. They correspond to every major or minor triad in the home key's set of diatonic Roman numerals.
 
-Keys that differ from each other by **one sharp or flat** in their key signatures—sharing most of their diatonic scale degrees and chords, making modulation between them smooth and natural with many common chord options for pivoting, defined for any key as including the relative major/minor, dominant key, subdominant key, and their relatives (totaling five closely related keys from any tonic), notated by showing the single accidental difference, fundamental to understanding Classical-era modulation practices where composers typically moved between closely related keys in expositions and developments, with more distant key relationships reserved for special dramatic effects or later Romantic-era exploration.
+# Core Definition
 
-## Formal Definition
+Key signatures within one accidental of one another are considered **closely related keys**, sharing many common chords (OMT, Ch. IV.17). To find all closely related keys:
 
-**Closely related keys** are keys whose signatures differ by **one sharp or flat** (or no difference for relative keys).
+1. Create a 3-column, 2-row grid
+2. Place the home key in the center of the upper row
+3. Add a sharp (or subtract a flat) for the right column
+4. Add a flat (or subtract a sharp) for the left column
+5. In the lower row, list the relative major/minor for each
 
-**From any major key**, closely related keys are:
-1. **Relative minor** (same key signature)
-2. **Dominant** (one more sharp, or one fewer flat)
-3. **Dominant's relative minor** (one more sharp)
-4. **Subdominant** (one more flat, or one fewer sharp)
-5. **Subdominant's relative minor** (one more flat)
+The resulting keys always correspond to every major or minor triad in the home key's Roman numerals (major: I, ii, iii, IV, V, vi; minor: i, III, iv, v, VI, VII).
 
-**From any minor key**, closely related keys are:
-1. **Relative major** (same key signature)
-2. **Dominant** (one more sharp for harmonic minor)
-3. **Dominant's relative major** (one more sharp)
-4. **Subdominant** (one more flat)
-5. **Subdominant's relative major** (one more flat)
+Most common modulation targets: major: I to V, I to vi; minor: i to III, i to v.
 
-**Total**: Five closely related keys from any tonic
+# Prerequisites
 
-## Closely Related Keys from C Major
+- **Modulation** — Closely related keys are the most common modulation targets
 
-**C major** (no sharps/flats):
+# Key Properties
 
-1. **A minor** - relative (same signature: no sharps/flats)
-2. **G major** - dominant (one sharp: F#)
-3. **E minor** - dominant's relative (one sharp: F#)
-4. **F major** - subdominant (one flat: Bb)
-5. **D minor** - subdominant's relative (one flat: Bb)
+1. Key signatures differ by at most one accidental
+2. Share many common chords (enabling pivot chord modulations)
+3. Correspond to diatonic triads of the home key
+4. Grid method: 3 columns x 2 rows identifies all 5 closely related keys
+5. Most common targets: V and vi in major; III and v in minor
 
-**All differ by one accidental or less**
+# Construction / Recognition
 
-## Closely Related Keys from A Minor
+## Grid Method (OMT Ch. IV.17, Example 4):
+For F major:
+| One flat less | Starting key | One sharp more |
+|---|---|---|
+| Bb | **F** | C |
+| Gm | Dm | Am |
 
-**A minor** (no sharps/flats in natural minor):
+## Verification:
+The closely related keys always correspond to the diatonic triads: I, ii, iii, IV, V, vi (major) or i, III, iv, v, VI, VII (minor).
 
-1. **C major** - relative (same signature)
-2. **E minor** - dominant (one sharp: F# from harmonic minor)
-3. **G major** - dominant's relative (one sharp)
-4. **D minor** - subdominant (one flat: Bb)
-5. **F major** - subdominant's relative (one flat)
+# Examples
 
-## Why "Closely Related"?
+**Example 1** (OMT Ch. IV.17, Example 4): Closely related keys of F major identified using the grid method.
 
-**Many common chords**:
-```
-C major and G major share:
-- C major (I in C = IV in G)
-- Em (iii in C = vi in G)
-- Am (vi in C = ii in G)
-- G major (V in C = I in G)
+**Example 2** (OMT Ch. IV.17, Example 3): Circle of fifths diagram showing key relationships.
 
-Multiple pivot chord options
-Smooth modulation possible
-```
+# Relationships
 
-**Similar scalar content**:
-```
-C major: C-D-E-F-G-A-B
-G major: G-A-B-C-D-E-F#
+## Builds Upon
+- **Modulation** — Closely related keys are the primary modulation destinations
 
-Only one note different (F vs F#)
-Minimal chromatic adjustment
-```
+## Related
+- **Pivot chord** — More common chords shared between closely related keys = more pivot options
 
-**Easy voice leading**:
-- Few accidental changes
-- Many common tones
-- Natural progression feeling
+# Common Errors
 
-## Distant Keys
+- **Error**: Forgetting to include relative keys in the closely related key set
+  **Correction**: The lower row of the grid contains the relative major/minor of each key in the upper row
 
-**Not closely related** = differ by more than one accidental:
+# Common Confusions
 
-**From C major**:
-- **D major** (2 sharps) - distant
-- **Eb major** (3 flats) - distant
-- **Ab major** (4 flats) - distant
-- **B major** (5 sharps) - distant
+- **Confusion**: Thinking closely related keys must be adjacent on the circle of fifths
+  **Clarification**: Closely related keys include both the adjacent keys AND their relative major/minor counterparts (6 keys total including the home key)
 
-**Require**:
-- Chromatic modulation
-- Enharmonic modulation
-- Or direct modulation
-- Fewer common chords
-- More dramatic effect
+# Source Reference
 
-## Modulation Between Closely Related Keys
+Open Music Theory, Part IV, Chapter 17, section "Closely related keys." See Examples 3-4.
 
-**Easiest modulations**:
-```
-Relative keys (C ↔ Am): Trivial, same signature
-Dominant (C → G): Very common, many pivots
-Subdominant (C → F): Common, smooth
+# Verification Notes
 
-Classical sonata form standard:
-Exposition: Tonic → Dominant (closely related)
-Development: Explores various keys
-Recapitulation: Returns to tonic
-```
-
-**Common pivots abundant**:
-```
-C → G: Use Am (vi=ii), Em (iii=vi), or C (I=IV)
-C → F: Use Dm (ii=vi), Am (vi=iii), or F (IV=I)
-C → Am: Nearly all chords shared
-
-Smooth, natural modulations
-```
-
-## Classical-Era Practice
-
-**Expositions**:
-```
-Major key sonata: I → V (closely related)
-Minor key sonata: i → III (relative major, closely related)
-
-Standard practice
-Establishes contrast without jarring shift
-```
-
-**Development sections**:
-```
-May visit closely or distantly related keys
-But returns through closely related keys
-Smooth retransition to recapitulation
-```
-
-**Binary/Ternary forms**:
-```
-A section: Tonic
-B section: Closely related key (often V or relative)
-Return: Tonic
-
-Balanced, clear tonal plan
-```
-
-## Musical Context
-
-Closely related keys serve specific purposes:
-- **Smooth modulation**: Minimal chromatic adjustment
-- **Many common chords**: Multiple pivot options
-- **Classical norm**: Standard modulation targets
-- **Tonal contrast**: Variety without distance
-- **Voice leading**: Easy, natural connections
-- **Formal structure**: Defines sectional relationships
-- **Pedagogical**: First modulations taught
-- **Harmonic clarity**: Clear key relationships
-
-Essential concept for understanding Classical-era tonal structure.
-
-## Examples
-
-### Basic
-
-**C major's closely related keys**:
-```
-1. A minor (relative, 0 accidentals)
-2. G major (dominant, +1 sharp)
-3. E minor (dom. relative, +1 sharp)
-4. F major (subdominant, +1 flat)
-5. D minor (sub. relative, +1 flat)
-
-All within one accidental of C
-```
-
-**Common chord modulation C → G**:
-```
-C: I  -  vi   |
-     C     Am  
-          ──────
-          vi=ii |
-          ──────
-G:        ii   | V  -  I
-          Am   | D     G
-
-Many chords shared
-Smooth pivot
-Closely related keys
-```
-
-**Modulation C → F**:
-```
-C: I  -  ii   |
-     C     Dm  
-          ──────
-          ii=vi |
-          ──────
-F:        vi   | V  -  I
-          Dm   | C     F
-
-Subdominant relationship
-Closely related
-Easy modulation
-```
-
-**Distant key comparison** (C → D):
-```
-C major: no sharps/flats
-D major: 2 sharps (F#, C#)
-
-Differs by 2 accidentals
-NOT closely related
-Requires chromatic or enharmonic modulation
-```
-
-### From Repertoire
-
-**Mozart, Piano Sonatas**: Expositions modulate I→V (closely related), demonstrates Classical sonata form, smooth pivot chord modulations.
-
-**Haydn, String Quartets**: Binary forms use closely related keys (I-V or i-III), establishes contrast within close tonal proximity.
-
-**Beethoven, Piano Sonatas**: Sonata form with closely related key scheme in expositions, development may explore distant keys, but returns via closely related.
-
-**Bach, Well-Tempered Clavier**: Fugue episodes modulate to closely related keys, smooth voice leading, Baroque tonal practice.
-
-**Classical period universal**: Closely related keys define standard modulation practice, distant keys reserved for special effects.
-
-## Related Concepts
-
-- **Prerequisite**: key-signature, modulation, relative-major-minor
-- **Leads to**: key-relationships, common-chord-modulation
-- **See also**: relative-keys
-
-## Common Confusions
-
-- Closely related keys = differ by **one sharp/flat** (or same signature)
-- From any key: 5 closely related keys total
-- From C major: Am (relative), G (V), Em (rel. of V), F (IV), Dm (rel. of IV)
-- Relative keys = SAME signature (most closely related)
-- Dominant/subdominant = differ by ONE accidental
-- Distant keys = differ by TWO OR MORE accidentals
-- Many common chords between closely related keys
-- Easy modulation (many pivot options)
-- Classical era standard: Modulate to closely related keys
-- Sonata form: I→V (major) or i→III (minor) = closely related
-- Not same as "parallel keys" (C major/C minor = same tonic, different mode)
-- "Closely related" = proximity in key signature space
-- Key signature difference, not tonic distance
-- E major (4 sharps) NOT closely related to C (0 sharps) despite letter proximity
-- Relative minor/major always closely related (same signature)
-- Enables smooth voice leading (few chromatic notes)
-- More distant keys require chromatic/enharmonic modulation
-- Fundamental to Classical tonal architecture
-- Five keys from any tonic (standard count)
-
-## Source Reference
-
-Open Music Theory, Part IV: "Chromatic Harmony and Modulation"
-Open Music Theory, Part IV: "Key Relationships and Modulation Targets"
+- Definition source: Direct from OMT Ch. IV.17
+- Confidence rationale: HIGH — explicit definition with construction procedure
+- Re-extraction notes: Re-extracted from v2 card; preserved: grid method, diatonic triad correspondence, common modulation targets.

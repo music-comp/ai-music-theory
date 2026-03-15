@@ -1,94 +1,90 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Simple and Compound Intervals
-category: theory
-source: Open Music Theory
-chapter: "Intervals"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: simple-compound-intervals
+
+# === CLASSIFICATION ===
+category: intervals
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Intervals"
+chapter_number: 16
+pdf_page: null
+section: "Compound Intervals"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval
+extends:
+  - interval
+related:
+  - interval-inversion
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a simple interval?"
+  - "What is a compound interval?"
+  - "How do you convert between simple and compound intervals?"
 ---
 
-# Simple and Compound Intervals
+# Quick Definition
 
-## Quick Definition
+Simple intervals span an octave or less; compound intervals span more than an octave. Add 7 to a simple interval's size to get its compound equivalent.
 
-Simple intervals span an octave or less (unison through octave), while compound intervals span more than an octave, with compound intervals related to simple intervals by octave displacement.
+# Core Definition
 
-## Formal Definition
+**Simple intervals** range from unison to octave. Any interval larger than an octave is a **compound interval**. Quality remains the same: a minor third (mi3) becomes a minor tenth (mi10) when expanded by an octave. To convert: add 7 to the simple size. Unisons become octaves (8), 2nds become 9ths, 3rds become 10ths, 4ths become 11ths, 5ths become 12ths, 6ths become 13ths.
 
-**Simple intervals** are intervals ranging from a unison (P1) up to and including an octave (P8). All simple intervals fit within the span of one octave (12 semitones or less).
+# Prerequisites
 
-**Compound intervals** are intervals larger than an octave. They are created by adding one or more octaves to a simple interval.
+- **Interval**: the concept being extended
 
-**Relationship between simple and compound**:
-- Compound interval = simple interval + octave(s)
-- Ninth = second + octave (2 + 7 = 9)
-- Tenth = third + octave (3 + 7 = 10)
-- Eleventh = fourth + octave (4 + 7 = 11)
-- Twelfth = fifth + octave (5 + 7 = 12)
-- Thirteenth = sixth + octave (6 + 7 = 13)
-- Fourteenth = seventh + octave (7 + 7 = 14)
-- Fifteenth = two octaves (8 + 7 = 15)
+# Key Properties
 
-**Quality preserved**: Compound intervals have the same quality as their simple-interval counterparts
-- Major ninth (M9) relates to major second (M2)
-- Perfect eleventh (P11) relates to perfect fourth (P4)
-- Minor tenth (m10) relates to minor third (m3)
+- Simple: unison through octave (sizes 1-8)
+- Compound: larger than an octave (9ths, 10ths, 11ths, etc.)
+- Add 7 to simple size for compound equivalent
+- Quality stays the same (P, ma, mi, A, d)
+- Octaves, 11ths, 12ths are perfect; 9ths, 10ths, 13ths are major/minor
 
-## Musical Context
+# Construction / Recognition
 
-The simple/compound distinction affects:
-- **Register**: Compound intervals span wider ranges
-- **Voicing**: Compound intervals create more open spacings
-- **Harmonic color**: Compound intervals often sound less dissonant than their simple counterparts
-  - Minor ninth (m9) sounds less harsh than minor second (m2)
-- **Jazz/extended harmony**: Uses ninths, elevenths, thirteenths as chord extensions
-- **Analysis**: Often reduced to simple intervals for functional analysis
+If two notes are more than an octave apart, the interval is compound. Reduce it by subtracting 7 to find the simple equivalent.
 
-Compound intervals are especially important in extended tertian harmony (jazz, impressionism).
+# Context & Application
 
-## Examples
+Compound intervals are common in chord voicings (9th, 11th, 13th chords) and wide-ranging melodies. Understanding the simple equivalent helps with identification and ear training.
 
-### Basic
+# Examples
 
-**Simple intervals** (within one octave):
-- Unison (P1), second (m2, M2), third (m3, M3), fourth (P4), fifth (P5), sixth (m6, M6), seventh (m7, M7), octave (P8)
+- mi3 (C to Eb) becomes mi10 (C to Eb an octave higher)
+- P5 (C to G) becomes P12 (C to G an octave higher)
 
-**Compound intervals** (beyond one octave):
-- C to D (up one octave) = major ninth (M9)
-  - Related simple interval: major second (M2)
-- C to E (up one octave) = major tenth (M10)
-  - Related simple interval: major third (M3)
-- C to G (up one octave) = perfect twelfth (P12)
-  - Related simple interval: perfect fifth (P5)
+# Relationships
 
-**Calculation**:
-- To find compound from simple: add 7 to the simple interval number
-  - Third (3) + 7 = tenth (10)
-- To find simple from compound: subtract 7
-  - Ninth (9) - 7 = second (2)
+- **Extends**: interval
+- **See also**: interval-inversion, seventh-chord
 
-### From Repertoire
+# Common Confusions
 
-Chopin's piano music uses compound intervals (tenths in left hand) for wide voicing. Jazz piano voicings feature ninths, elevenths, and thirteenths for color. String orchestra writing uses compound intervals across multiple octaves. Impressionist harmony (Debussy, Ravel) employs stacked compound intervals for shimmering textures.
+- Compound intervals keep the same quality as their simple equivalents
 
-## Related Concepts
-
-- **Prerequisite**: interval, intervals, interval-quality
-- **Leads to**: extended-tertian-harmony, chordal-tension
-- **See also**: octave-equivalence, ninth-chords
-
-## Common Confusions
-
-- Compound ≠ "complex"—simply means "larger than an octave"
-- Ninth ≠ "second + seventh"—ninth = second + octave (2 + 7 = 9 as interval sizes)
-- Quality is preserved: major second → major ninth (not major second → minor ninth)
-- Tenth ≠ two fifths—tenth = third + octave
-- Simple/compound distinction is about span, not consonance/dissonance
-- Reducing compound to simple: subtract 7 from interval number (not 8)
-- Compound intervals still count from bottom note as "one"
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 16: "Intervals"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: add-7 rule, quality preservation, common compound intervals list.

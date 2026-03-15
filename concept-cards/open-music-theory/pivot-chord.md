@@ -1,307 +1,132 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Pivot Chord
-category: theory
-source: Open Music Theory
-chapter: "Modulation Techniques"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: pivot-chord
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: chromatic-harmony
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Extended Tonicization and Modulation to Closely Related Keys"
+chapter_number: 17
+pdf_page: null
+section: "Pivot chord modulations"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "common chord"
+  - "pivot"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - modulation
+  - closely-related-keys
+extends:
+  - modulation
+related:
+  - direct-modulation
+  - common-chord-modulation
+contrasts_with:
+  - direct-modulation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a pivot chord?"
+  - "How do I find the best pivot chord between two keys?"
+  - "How is a pivot chord analyzed?"
 ---
 
-# Pivot Chord
-
-## Quick Definition
-
-A chord that belongs to both the old key and the new key in a modulation, serving as the harmonic bridge or "pivot point" between two tonal centers—analyzed with dual Roman numerals showing its function in each key (e.g., "vi in C = ii in F"), enabling smooth voice leading across the key change without chromatic disruption at the moment of pivot, most commonly diatonic in both keys (common chord modulation) but can also be chromatic in one or both keys, and fundamental to understanding how composers create seamless transitions between different tonal areas while maintaining coherent voice leading and harmonic logic.
-
-## Formal Definition
-
-**Pivot chord** is a chord functioning in both the old key and the new key during a modulation.
-
-**Characteristics**:
-- **Dual function**: Different Roman numeral in each key
-- **Harmonic bridge**: Connects two keys
-- **Smooth transition**: No disruption at pivot moment
-- **Dual analysis**: Both functions shown in notation
-- **Various types**: Diatonic, chromatic, or enharmonic
-
-**Types of pivot chords**:
-
-**1. Common chord** (diatonic in both keys):
-```
-Most common type
-Smoothest transition
-Used in common chord modulation
-```
-
-**2. Chromatic pivot** (chromatic in old or new key):
-```
-Secondary dominant, Neapolitan, Aug6, etc.
-Enables distant modulations
-Used in chromatic modulation
-```
-
-**3. Enharmonic pivot** (respelled):
-```
-Ger+6 = V7, °7 symmetry
-Same sound, different notation
-Used in enharmonic modulation
-```
-
-## Pivot Chord in Common Chord Modulation
-
-**Process**:
-```
-Old key: Chords establish tonic
-         ↓
-Pivot:   Chord diatonic to both keys
-         (analyzed with dual Roman numerals)
-         ↓
-New key: Cadence confirms new tonic
-```
-
-**Example** (C major → G major):
-```
-C major: I    vi   |
-         C    Am   
-                   ↓ (Am = vi in C, ii in G)
-G major:      ii   | V    I
-              Am   | D    G
-
-Am is pivot chord
-vi in C major
-ii in G major
-Smooth transition
-```
-
-## Dual Analysis Notation
-
-**Bracket notation**:
-```
-C: I   vi   
-      ┌─┴──┐
-      vi=ii
-      └───┬┘
-G:     ii  V   I
-
-Shows pivot relationship clearly
-Both Roman numerals provided
-```
-
-**Vertical alignment**:
-```
-C: I    vi   |
-        ──────
-        vi=ii |
-        ──────
-G:      ii   | V    I
-
-Vertical line shows pivot moment
-Dual analysis at transition
-```
-
-**Simple notation**:
-```
-C: I    vi   
-       [vi=ii]
-G:      ii   V    I
-
-Brackets indicate pivot
-Shows both functions
-```
-
-## Common Pivot Chords
-
-**Between closely related keys** (most common):
-
-**C major → G major**:
-- C (I in C = IV in G)
-- Em (iii in C = vi in G)
-- **Am (vi in C = ii in G)** ← most common
-- G (V in C = I in G) - but G is the new tonic
-
-**C major → F major**:
-- F (IV in C = I in F) - but F is the new tonic
-- **Dm (ii in C = vi in F)** ← most common
-- Am (vi in C = iii in F)
-- C (I in C = V in F) - but C is the old tonic
-
-**C major → A minor** (relative):
-- Nearly all diatonic chords shared
-- Very easy modulation
-- Multiple pivot options
-
-## Chromatic Pivot Chords
-
-**Secondary dominant as pivot**:
-```
-C major: V7/V (D7 = chromatic in C)
-         =
-G major: V7 (D7 = diatonic in G)
-
-Chromatic in old key
-Diatonic in new key
-Enables smooth modulation to dominant key
-```
-
-**Neapolitan as pivot**:
-```
-A minor: N6 (Bb major, chromatic)
-         =
-D minor: VI (Bb major, diatonic)
-
-Chromatic in old key
-Diatonic in new key
-```
-
-## No-Pivot Modulations
-
-**Direct/abrupt modulation**:
-```
-No pivot chord
-Simply shifts between keys
-Usually at phrase boundary
-
-Old key ends: ... V - I ||
-New key begins: I - ...
-
-No connecting chord
-```
-
-**Pivot chord distinguishes**:
-- Common chord modulation (diatonic pivot)
-- Chromatic modulation (chromatic pivot)
-- From direct modulation (no pivot)
-
-## Choosing Pivot Chords
-
-**Factors**:
-- **Shared chords**: More shared = more pivot options
-- **Function in new key**: Pivot usually predominant (ii, IV, vi)
-- **Voice leading**: Smooth connections preferred
-- **Closely related keys**: Many pivot options
-- **Distant keys**: Fewer pivots, may need chromatic
-
-**Best pivots**: Predominant function in new key (leads naturally to V-I)
-
-## Musical Context
-
-Pivot chords serve critical purposes:
-- **Smooth modulation**: Connects keys without disruption
-- **Voice leading continuity**: No chromatic jumps at pivot
-- **Dual function**: Same chord, different contexts
-- **Flexibility**: Diatonic, chromatic, or enharmonic
-- **Analytical clarity**: Shows modulation mechanism
-- **Common practice standard**: Universal technique
-- **Key relationships**: More shared chords = easier modulation
-
-Essential concept for understanding tonal modulation.
-
-## Examples
-
-### Basic
-
-**Am pivot** (C → G):
-```
-C major: I  -  IV  -  vi   |
-         C     F      Am   
-                     ──────
-                     vi=ii |
-                     ──────
-G major:              ii   | V  -  I
-                      Am   | D     G
-
-Am functions as vi in C
-Am functions as ii in G
-Smooth pivot between keys
-```
-
-**Dm pivot** (C → F):
-```
-C major: I  -  V  -  ii   |
-         C     G     Dm   
-                    ──────
-                    ii=vi |
-                    ──────
-F major:             vi   | V  -  I
-                     Dm   | C     F
-
-Dm functions as ii in C
-Dm functions as vi in F
-Enables modulation to subdominant
-```
-
-**No pivot** (direct modulation):
-```
-Phrase 1 (C major): ... V - I ||
-                    ... G   C
-
-Phrase 2 (Eb major): I - V - I
-                     Eb  Bb  Eb
-
-No connecting chord
-Abrupt shift (not pivot chord modulation)
-```
-
-**Secondary dominant pivot** (chromatic):
-```
-C major: I    V7/V  |
-         C    D7    
-              ──────
-              V7/V = V7
-              ──────
-G major:      V7    | I
-              D7    | G
-
-D7 is V7/V (chromatic) in C
-D7 is V7 (diatonic) in G
-Chromatic pivot
-```
-
-### From Repertoire
-
-**Mozart, Piano Sonatas**: Common chord modulations with clear pivot chords, vi=ii pivots to dominant key standard in exposition.
-
-**Beethoven, Sonata form movements**: Pivot chords mark modulations from tonic to dominant (or relative major), analytical editions show dual Roman numerals.
-
-**Bach, Preludes**: Smooth modulations via pivot chords, demonstrates Baroque modulation technique, closely related keys.
-
-**Haydn, String Quartets**: Clear pivot chords at formal boundaries, modulates to dominant key in expositions via common chords.
-
-**Classical period universal**: Pivot chord modulation is THE standard technique, nearly every modulation uses pivot (common or chromatic).
-
-## Related Concepts
-
-- **Prerequisite**: modulation, roman-numeral-analysis, closely-related-keys, voice-leading
-- **Leads to**: common-chord-modulation, chromatic-modulation, enharmonic-modulation
-- **See also**: key-relationships
-
-## Common Confusions
-
-- Pivot chord = chord that **belongs to both keys** in modulation
-- Also called "common chord" when diatonic in both keys
-- Dual function: different Roman numeral in each key
-- Notation: Dual analysis shows both functions (vi=ii)
-- Most common: vi=ii (C→G), ii=vi (C→F)
-- Enables **smooth** modulation (no disruption at pivot)
-- Between closely related keys: many pivot options
-- Predominant function in new key most common (ii, IV, vi)
-- Can be **diatonic** (common chord) or **chromatic**
-- Different from direct modulation (which has NO pivot)
-- Analytical notation uses brackets or vertical alignment
-- Voice leading smooth through pivot point
-- "Pivot" = turning point between keys
-- Same chord, different harmonic context
-- Not all modulations use pivots (direct modulation doesn't)
-- Enharmonic pivots respell chord (Ger+6 = V7)
-- Classical period standard technique
-- Essential for understanding smooth modulation
-- Dual Roman numerals required in analysis
-- Pivot usually at formal/phrase boundary
-- Cadence in new key confirms modulation
-
-## Source Reference
-
-Open Music Theory, Part IV: "Chromatic Harmony and Modulation"
-Open Music Theory, Part IV: "Modulation Techniques and Pivot Chords"
+# Quick Definition
+
+A pivot chord is a single chord diatonic in both the old and new keys, used to make a modulation more subtle. It is analyzed with a double Roman-numeral label showing its function in both keys.
+
+# Core Definition
+
+A **pivot chord** is a single chord that is diatonic in both the home key and the new key (OMT, Ch. IV.17). It is analyzed using a special symbol where the upper Roman numeral labels the chord in the old key and the lower Roman numeral labels it in the new key.
+
+**Best pivots**: chords that are predominant in BOTH keys (since V will follow shortly in both interpretations). **Second best**: tonic in old key becoming predominant in new key (I becomes IV). **Poor pivots**: those involving dominant (e.g., "V becomes I" implies simultaneous instability and stability).
+
+Strategy for finding pivots: analyze in the old key until it stops making sense, then back up one or two chords to find the pivot.
+
+# Prerequisites
+
+- **Modulation** — Pivot chords are a technique for achieving modulation
+- **Closely related keys** — Pivot chords work best between keys sharing many common chords
+
+# Key Properties
+
+1. Diatonic in BOTH the old and new keys
+2. Analyzed with double label: upper = old key, lower = new key
+3. Best pivots: PD in both keys
+4. Second best: T in old key, PD in new key
+5. Poor: pivots involving V
+6. Multiple chords may qualify; choose the best functional match
+
+# Construction / Recognition
+
+## To Identify Potential Pivots (OMT Ch. IV.17, Example 5):
+1. Create a two-column table
+2. List all triads in the old key (left)
+3. List all triads in the new key (right)
+4. Match triads appearing in both columns
+5. Choose the best pivot (PD in both keys preferred)
+
+## To Analyze:
+1. Analyze in old key until analysis stops making sense
+2. Back up one chord — try it as pivot
+3. If it doesn't work, back up one more chord
+
+# Context & Application
+
+- **Typical contexts**: Transitions between key areas; subtle modulations in Classical music
+- **Historical/stylistic notes**: Source illustrates with Josephine Lang, "Der Winter," mm. 1-12, showing iv7 becoming ii7 as pivot.
+
+# Examples
+
+**Example 1** (OMT Ch. IV.17, Example 2): Pivot chord modulation in Josephine Lang, "Der Winter" — iv7 becomes ii7.
+
+**Example 2** (OMT Ch. IV.17, Example 5): Diagram identifying potential pivots between Dm and F major.
+
+**Example 3** (OMT Ch. IV.17, Example 6): Writing a modulating phrase with pivot chord and deceptive motion before confirming cadence.
+
+# Relationships
+
+## Builds Upon
+- **Modulation** — Pivot chord is the primary technique for subtle modulation
+
+## Related
+- **Common-chord modulation** — Alternate name for pivot chord modulation
+
+## Contrasts With
+- **Direct modulation** — Direct modulation is abrupt; pivot chord modulation is subtle
+
+# Common Errors
+
+- **Error**: Choosing a pivot where V becomes I
+  **Correction**: This implies simultaneous instability and stability; choose PD-PD pivots instead
+
+- **Error**: Cadencing too quickly after the pivot
+  **Correction**: Give ears time to adjust; use deceptive motion to extend the new key before confirming with a cadence
+
+# Common Confusions
+
+- **Confusion**: Thinking there is only one possible pivot between two keys
+  **Clarification**: Multiple chords may qualify; the best pivot is the one with the strongest functional analysis in both keys
+
+# Source Reference
+
+Open Music Theory, Part IV, Chapter 17: "Extended Tonicization and Modulation," section "Pivot chord modulations." See Examples 2, 5, 6.
+
+# Verification Notes
+
+- Definition source: Direct from OMT Ch. IV.17
+- Confidence rationale: HIGH — explicit definition with identification procedure
+- Re-extraction notes: Re-extracted from v2 card; preserved: double-label analysis, pivot quality hierarchy. Source-specific examples from Lang replace old card's generic discussion.

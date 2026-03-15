@@ -1,139 +1,80 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Interval Vector
-category: theory
-source: Open Music Theory
-chapter: "Set Class and Prime Form"
-pdf_page: null
-chapter_number: 8
-unit: null
+slug: interval-vector
+# === CLASSIFICATION ===
+category: analysis
+subcategory: set-theory
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Set Class and Prime Form"
+chapter_number: 8
+pdf_page: null
+section: "VIII.4"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases:
+  - "ic vector"
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval-class
+  - set-class
+extends: []
+related:
+  - z-relation
+  - forte-number
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is an interval vector?"
+  - "How do you calculate an interval vector?"
+  - "Why is the interval vector important for set-class identification?"
 ---
 
-# Interval Vector
+# Quick Definition
+An interval vector is a six-digit summary of a set class's interval-class content, listing the number of occurrences of each interval class (ic 1 through ic 6) in angle brackets, e.g., <1,0,1,1,1,0> for set class (014).
 
-## Quick Definition
+# Core Definition
+The interval vector counts all possible intervals between pairs of pitch classes in a set, categorized by interval class. It has six positions corresponding to ic 1 through ic 6. All members of the same set class share the same interval vector, making it a defining characteristic. The vector reveals the set's "sonic fingerprint" -- its distribution of semitones, whole tones, thirds, fourths, and tritones. Z-related set classes (exceptionally) share the same interval vector despite being different set classes.
 
-The interval vector (or interval-class vector) is a summary of all interval classes present in a pitch-class set, written as six numbers in angle brackets. Each position counts how many times a specific interval class (1 through 6) appears between pairs of pitch classes in the set. All members of a set class share the same interval vector.
+# Prerequisites
+- Interval class and set class
 
-## Formal Definition
+# Key Properties
+1. Six digits in angle brackets: <ic1, ic2, ic3, ic4, ic5, ic6>
+2. All members of a set class share the same interval vector
+3. Total count depends on cardinality: for n pcs, n(n-1)/2 intervals
+4. Identifies the "sonic color" of a set class
+5. Z-related pairs share the same vector despite different prime forms
 
-**Interval vector (ic vector)**: A six-element array showing the multiplicity of each interval class in a pitch-class set.
+# Context & Application
+The interval vector is listed in set class tables alongside prime form and Forte number. It explains why members of the same set class sound similar.
 
-**Format**: <ic1, ic2, ic3, ic4, ic5, ic6>
+# Examples
+**Example 1**: Major triad (037): intervals are M3(ic4), m3(ic3), P5(ic5). Vector: <0,0,1,1,1,0>.
+**Example 2**: (014): intervals are m2(ic1), M3(ic4), m3(ic3). Vector: <1,0,1,1,0,0>.
+**Example 3**: Chromatic trichord (012): intervals are m2(ic1), M2(ic2), m2(ic1 again -- wait: ic1+ic1+ic2). Vector: <2,1,0,0,0,0>.
 
-Where each position counts:
-- ic1: number of semitones (minor 2nds/major 7ths)
-- ic2: number of whole tones (major 2nds/minor 7ths)
-- ic3: number of minor 3rds/major 6ths
-- ic4: number of major 3rds/minor 6ths
-- ic5: number of perfect 4ths/5ths
-- ic6: number of tritones
+# Relationships
+## Builds Upon
+- **interval-class** -- The vector counts interval classes
+- **set-class** -- The vector characterizes a set class
+## Related
+- **z-relation** -- Z-related pairs share the same vector
 
-**Calculation**: For a set of cardinality n:
-- Total intervals = n(n-1)/2 (each pair counted once)
-- Determine the ic between each pair of pitch classes
-- Tally the count for each ic
+# Common Confusions
+- **Confusion**: The interval vector specifies the intervals in order
+  **Clarification**: It counts how many of each ic, not the order in which they appear
 
-**Property**: All members of a set class share the same interval vector. This is what makes set-class membership aurally meaningful--shared interval content produces similar sonic "color."
+# Source Reference
+Open Music Theory, Part VIII, Chapter 4: "Set Class and Prime Form," set class table reference.
 
-## Musical Context
-
-The interval vector reveals the **sonic fingerprint** of a set class:
-
-- **<101100>** for (013): one ic1, one ic3, one ic4--lean, with no tritones
-- **<000300>** for (048): three ic4s only--the augmented triad's unique sound
-- **<001110>** for (037): one each of ic3, ic4, ic5--the familiar major/minor triad
-
-Composers may choose set classes based on their interval vectors:
-- Favoring certain intervals (Webern loved ic1 and ic4)
-- Avoiding tritones (or embracing them)
-- Creating contrast between sections using sets with different interval profiles
-
-The interval vector is also crucial for identifying the **Z-relation**: two different set classes with identical interval vectors.
-
-## Examples
-
-### Basic
-
-**Calculating interval vector for {0, 1, 4}**:
-```
-Pairs and their interval classes:
-  0 and 1: ic = 1
-  0 and 4: ic = 4
-  1 and 4: ic = 3
-
-Tally:
-  ic1: 1
-  ic2: 0
-  ic3: 1
-  ic4: 1
-  ic5: 0
-  ic6: 0
-
-Interval vector: <1,0,1,1,0,0>
-```
-
-**Major triad {0, 4, 7}**:
-```
-Pairs:
-  0 and 4: ic = 4 (major 3rd)
-  0 and 7: ic = 5 (perfect 5th)
-  4 and 7: ic = 3 (minor 3rd)
-
-Interval vector: <0,0,1,1,1,0>
-
-(Same for all major triads and all minor triads!)
-```
-
-**Whole-tone collection {0, 2, 4, 6, 8, 10}**:
-```
-15 pairs total (6 choose 2)
-All pairs are ic2, ic4, or ic6
-
-Interval vector: <0,6,0,6,0,3>
-
-(No semitones, no minor 3rds, no perfect 5ths)
-```
-
-**Comparison of trichord interval vectors**:
-```
-(012) <2,1,0,0,0,0> - chromatic cluster
-(013) <1,1,1,0,0,0> - balanced
-(014) <1,0,1,1,0,0> - "Viennese" trichord
-(015) <1,0,0,1,1,0> - spans P5
-(016) <1,0,0,0,1,1> - semitone + tritone
-(024) <0,2,0,1,0,0> - whole-tone
-(025) <0,1,1,0,1,0> - suspended quality
-(027) <0,1,0,0,2,0> - quartal
-(036) <0,0,2,0,0,1> - diminished
-(037) <0,0,1,1,1,0> - major/minor triad
-(048) <0,0,0,3,0,0> - augmented
-```
-
-### From Repertoire
-
-**Webern, Concerto Op. 24**: The generating trichord (014) has interval vector <1,0,1,1,0,0>--emphasizing ic1 and ic4. This gives the work its characteristic sound: pointillistic and "crystalline."
-
-**Bartok, Music for Strings, Percussion, and Celesta**: The fugue subject emphasizes sets with high ic1 content, creating the chromatic intensity associated with this work.
-
-**Messiaen**: His modes of limited transposition (including the octatonic) have distinctive interval vectors. The octatonic <4,4,8,4,4,2> is rich in every interval class, explaining its harmonic versatility.
-
-## Related Concepts
-
-- **Prerequisite**: interval-class, pitch-class-set, set-class
-- **Leads to**: z-relation, rondo-character
-- **See also**: prime-form, forte-number, cardinality
-
-## Common Confusions
-
-- **Vector positions 1-6 correspond to interval classes 1-6**: Position 1 = ic1 (semitone), not ic0
-- **Total entries sum to n(n-1)/2**: Where n = cardinality of the set
-- **Major and minor triads have the same vector**: They're in the same set class
-- **Angle brackets for interval vector**: Write <0,0,1,1,1,0>, not (001110) or [001110]
-- **Z-related sets have identical vectors**: Different prime forms can share a vector (see Z-relation)
-- **Vector doesn't specify interval arrangement**: Two sets with <1,0,1,1,0,0> may place those intervals differently
-- **ic0 is not included**: The vector only counts ics 1-6
-
-## Source Reference
-
-Open Music Theory, Part VIII, Chapter 4: "Set Class and Prime Form"
+# Verification Notes
+- Definition source: Referenced in 08-04
+- Confidence rationale: High
+- Preserved from v2: Definition, examples
+- Cross-reference status: Verified

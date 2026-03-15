@@ -1,169 +1,91 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Prinner Schema
-category: theory
-source: Open Music Theory
-chapter: "Galant Schemas"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: prinner-schema
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: galant-schemas
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Galant Schemas"
+chapter_number: 11
+pdf_page: null
+section: "Closing Gestures Such as the Prinner"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "modulating Prinner"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - galant-schema
+extends: []
+related:
+  - meyer-schema
+  - passo-indietro-comma-schemas
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Prinner schema and what scale degrees define it?"
+  - "What is a modulating Prinner?"
 ---
 
-# Prinner Schema
+# Quick Definition
+A four-stage closing/answering galant schema with melody la-sol-fa-mi over bass fa-mi-re-do in parallel tenths, typically used as a response to an opening schema, with a modulating variant that moves from tonic to dominant.
 
-## Quick Definition
+# Core Definition
+The **Prinner** is a typical response to an opening schema, with four stages: melody la/le(6)-sol(5)-fa(4)-mi/me(3) over bass fa(4)-mi/me(3)-re(2)-do(1), in parallel tenths. Meter: S-W-S-W. Figured bass: 5-6-7/6-I, with Roman numerals IV-I-vii-I. A 7-6 suspension often appears on the third stage. The **Modulating Prinner** transposes up a fifth to move from tonic to dominant: melody mi(3)-re(2)-do(1)-ti(7) over bass do(8)-ti(7)-la(6)-sol(5), effectively IV-I-vii-I in the dominant key (Ch. 11-12).
 
-A four-stage descending galant schema with bass pattern fa-mi-re-do (^4-^3-^2-^1) and soprano in parallel tenths (la-sol-fa-mi or le-sol-fa-me), functioning as a typical closing gesture or answer to opening schemas, with characteristic 7-6 suspension on the third stage.
+# Prerequisites
+- **Galant schema** -- Understanding schema structure and notation
 
-## Formal Definition
+# Key Properties
+1. Four stages: melody 6-5-4-3, bass 4-3-2-1 (parallel tenths)
+2. Meter: S-W-S-W
+3. Closing/answering function
+4. Often features 7-6 suspension on third stage
+5. Modulating variant moves to the dominant key
+6. Can have an additional root-position dominant before final stage (five-stage version)
+7. Passo Indietro is essentially the first two stages of a Prinner
 
-The **Prinner** is one of the most common galant schemas, functioning primarily as a continuation or closing pattern that follows opening gambits. Named after an 18th-century music teacher, it provides elegant descending voice leading and satisfying tonic arrival.
+# Construction / Recognition
+## To Realize:
+1. Place descending scale degrees in parallel tenths
+2. Harmonize: 5/3-6-7/6-I
+3. Add 7-6 suspension on third stage if desired
+## To Identify:
+1. Look for descending parallel tenths (6-5-4-3 over 4-3-2-1)
+2. Check for answering position after an opening schema
 
-**Four-stage structure**:
+# Context & Application
+The Prinner is one of the most important schemas because it provides a standard way to close a phrase or answer an opening gambit. The modulating variant is crucial for moving from tonic to dominant within an exposition.
 
-| Stage | 1 | 2 | 3 | 4 |
-|-------|---|---|---|---|
-| Meter | S | W | S | W |
-| Melody | la/le (^6) | sol (^5) | fa (^4) | mi/me (^3) |
-| Bass | fa (^4) | mi/me (^3) | re (^2) | do (^1) |
-| Figures | 5 | 6 | 7-6 | I |
-| Roman numerals | IV | I | vii° (or V6/5) | I |
+# Examples
+**Example 1** (Ch. 11): Complete Prinner table with melody, bass, figures, and Roman numerals, plus modulating variant.
 
-**Key features**:
-- **Bass descending**: ^4-^3-^2-^1 (four descending steps)
-- **Soprano in parallel tenths**: ^6-^5-^4-^3 (follows bass down by tenths)
-- **7-6 suspension**: Typical on stage 3 (creates ^4-^3 motion over ^2 bass)
-- **Subdominant opening**: Starts on IV (^4 in bass)
-- **Tonic arrival**: Concludes on I (^1 in bass)
-- **Metric pattern**: Strong-weak-strong-weak (S-W-S-W)
+**Example 2** (Ch. 12): Five-stage variants with additional dominant chord.
 
-**Major vs. minor mode**:
-- **Major**: la-sol-fa-mi (^6-^5-^4-^3) all natural scale degrees
-- **Minor**: le-sol-fa-me (♭^6-^5-^4-♭^3) with lowered sixth and third
+# Relationships
+## Related
+- **meyer-schema** -- The Prinner commonly responds to a Meyer opening
+- **passo-indietro-comma-schemas** -- Passo Indietro is the first two stages of a Prinner
 
-**Variant: Five-stage Prinner**:
+# Common Confusions
+- **Confusion**: The Prinner is only a cadential formula
+  **Clarification**: It is a closing/answering schema, not a cadence per se; it can also modulate
 
-| Stage | 1 | 2 | 3 | 4 | 5 |
-|-------|---|---|---|---|---|
-| Meter | S | W | S | W | S |
-| Melody | la/le (^6) | sol (^5) | fa (^4) | fa (^4) | mi/me (^3) |
-| Bass | fa (^4) | mi/me (^3) | re (^2) | sol (^5) | do (^1) |
-| Figures | 5 | 6 | 7-6 | 7 | 5 |
-| Roman numerals | IV | I | vii° | V | I |
+# Source Reference
+Open Music Theory, Part II, Chapters 11-12: "Galant Schemas" and "Galant Schemas -- Summary."
 
-Inserts root-position dominant (V) before final tonic, adding harmonic weight to cadence.
-
-**Modulating Prinner**:
-
-Transposes Prinner up a fifth to modulate from tonic to dominant:
-
-| Stage | 1 | 2 | 3 | 4 |
-|-------|---|---|---|---|
-| Meter | S | W | S | W |
-| Melody | mi (^3) | re (^2) | do (^1) | ti (^7) |
-| Bass | do (^8) | ti (^7) | la (^6) | sol (^5) |
-| Figures | 5/3 | 6 | 7-♯6 | 5/3 |
-| RNs (tonic key) | I | V | vii°/V | V |
-| RNs (dominant key) | IV | I | vii° | I |
-
-First stage = IV in new key (dominant), last stage = I in new key.
-Useful for modulating to dominant key in exposition sections.
-
-**Function**:
-- **Closing gesture**: Responds to opening schemas (Meyer, Romanesca, etc.)
-- **Continuation pattern**: Bridges opening and cadential material
-- **Descending motion**: Creates sense of resolution and completion
-- **Subdominant approach**: IV-I motion different from dominant-driven cadences
-
-## Musical Context
-
-The Prinner serves multiple purposes in galant music:
-- **Answer to opening**: Complements opening gambits (Meyer, Pastorella, etc.)
-- **Sequential potential**: Can be sequenced or combined with other schemas
-- **Modulation vehicle**: Modulating Prinner facilitates key changes
-- **Voice-leading model**: Teaches parallel tenths and suspension resolution
-- **Improvisation framework**: Provides ready-made continuation pattern
-
-The descending bass and suspension create elegant, satisfying voice leading characteristic of galant style.
-
-## Examples
-
-### Basic
-
-**Prinner in C major** (four-stage):
-```
-Stage 1 (S): Soprano A4, Bass F4 (IV, 5/3)
-Stage 2 (W): Soprano G4, Bass E4 (I, 6/3)
-Stage 3 (S): Soprano F4 (7) → E4 (6), Bass D4 (vii°, 7-6 suspension)
-Stage 4 (W): Soprano E4, Bass C4 (I, 5/3)
-
-Soprano descends: A-G-F-E (la-sol-fa-mi)
-Bass descends: F-E-D-C (fa-mi-re-do)
-Parallel tenths throughout
-```
-
-**Prinner in A minor** (with lowered degrees):
-```
-Stage 1: Soprano F4 (le/♭6), Bass D4 (IV)
-Stage 2: Soprano E4 (sol/^5), Bass C4 (i)
-Stage 3: Soprano D4 (fa/^4), Bass B3 (vii°, with 7-6)
-Stage 4: Soprano C4 (me/♭3), Bass A3 (i)
-
-le-sol-fa-me (♭6-5-4-♭3) over fa-mi-re-do
-```
-
-**Modulating Prinner** (C major → G major):
-```
-Stage 1: Soprano E4 (mi), Bass C4 (I in C, IV in G)
-Stage 2: Soprano D4 (re), Bass B3 (V in C, I in G)
-Stage 3: Soprano C4 (do), Bass A3 (vii°/V in C, vii° in G)
-Stage 4: Soprano B3 (ti), Bass G3 (V in C = I in G)
-
-Arrives in G major (dominant key)
-```
-
-**Five-stage Prinner** (with interpolated V):
-```
-Stages 1-3: Same as basic Prinner
-Stage 4: Soprano F4, Bass G3 (V7)
-Stage 5: Soprano E4, Bass C4 (I)
-
-Adds dominant seventh before final tonic
-```
-
-### From Repertoire
-
-**Mozart Piano Sonata K. 545, I, mm. 5-8**: Prinner follows opening Meyer, demonstrating typical opening-answer pairing.
-
-**Haydn String Quartet Op. 76, No. 3 "Emperor," I**: Uses Prinner as continuation pattern after initial theme statement.
-
-**Mozart Symphony No. 40, K. 550, I**: Modulating Prinner facilitates transition to dominant key in exposition.
-
-**Galant keyboard sonatas** (C.P.E. Bach, J.C. Bach, Galuppi): Prinner appears frequently as standard continuation/closing pattern, often with embellishments.
-
-**Clementi Sonatinas**: Pedagogical works feature clear Prinner examples, useful for teaching galant style.
-
-## Related Concepts
-
-- **Prerequisite**: galant-schema, parallel-fifths, suspension, scale-degree
-- **Leads to**: meter
-- **See also**: partimento
-
-## Common Confusions
-
-- Prinner ≠ any descending bass—specific ^4-^3-^2-^1 pattern with ^6-^5-^4-^3 soprano
-- 7-6 suspension typical but not absolutely required
-- Parallel tenths = key feature (not parallel thirds or sixths)
-- Can start on downbeat or off-beat depending on context
-- Modulating Prinner transposes entire pattern (not just ending)
-- Prinner vs. descending tetrachord: Prinner has specific harmonic/metric pattern
-- Five-stage variant interpolates V, doesn't replace any stage
-- Works in both major and minor (adjust ^6 and ^3 for minor)
-- Not every IV-I progression is a Prinner (need full four-stage pattern)
-- "Prinner" is the teacher's name, not a musical term (like "Meyer" from Leonard Meyer)
-- Typically follows opening gambit, but can appear elsewhere in form
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 11: "Galant Schemas"
-Open Music Theory, Part II, Chapter 12: "Galant Schemas – Summary"
+# Verification Notes
+- Re-extracted from v2 card; preserved: modulating variant, parallel tenths description
+- Confidence: HIGH -- explicitly defined with tables

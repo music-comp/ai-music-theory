@@ -1,83 +1,102 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Fermata
-category: theory
-source: Open Music Theory
-chapter: "Other Aspects of Notation"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: fermata
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Other Aspects of Notation"
+chapter_number: 7
+pdf_page: null
+section: "Structural Features"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "hold"
+  - "bird's eye"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - note
+  - rest-values
+extends: []
+related:
+  - caesura
+  - tempo
+contrasts_with:
+  - caesura
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a fermata?"
+  - "How long should a fermata be held?"
+  - "Can a fermata appear on a rest?"
 ---
 
-# Fermata
+# Quick Definition
 
-## Quick Definition
+A symbol placed above or below a note or rest indicating it should be held longer than its normal duration, often at phrase endings or structural boundaries.
 
-A symbol (𝄐) placed above or below a note or rest indicating that it should be held longer than its normal duration, often appearing at structurally significant points like phrase endings.
+# Core Definition
 
-## Formal Definition
+A **fermata** is a structural feature in notation -- a curved arc with a dot in the center -- placed above or below a note or rest, indicating that the performer should sustain it beyond its written duration. The exact duration is not precisely specified; it depends on musical context and performer interpretation. Fermatas often appear at the start or end of musical sections. They can appear on rests as well as notes, prolonging silence.
 
-A **fermata** (also called a "hold" or "bird's eye") is a curved arc with a dot in the center, written above or below a note or rest. It indicates that the performer should sustain the note (or rest) beyond its written duration, typically for an indeterminate length determined by musical context and performer interpretation.
+# Prerequisites
 
-Symbol: 𝄐 (placed above notes) or fermata symbol inverted (placed below notes)
+- **Note**: the musical element being sustained
+- **Rest values**: fermatas can also apply to rests
 
-**Characteristics**:
-- Duration is not precisely specified—depends on context and interpretation
-- Typically lengthens a note by 1.5x to 2x its written value (or more)
-- Often appears on final notes of phrases, sections, or movements
-- Can appear on rests (silence is prolonged)
-- Usually indicates a moment of repose or emphasis
+# Key Properties
 
-**Placement**:
-- Above the staff for upper voices
-- Below the staff for lower voices or when appearing on rests
+- Symbol: curved arc with a dot (placed above or below)
+- Duration is indeterminate -- context-dependent (typically 1.5x to 2x or more)
+- Often marks ends of phrases, sections, or movements
+- Can appear on rests (prolonged silence)
+- In ensemble music, the conductor determines when to release
 
-## Musical Context
+# Construction / Recognition
 
-Fermatas serve multiple musical functions:
-- Mark structural boundaries (ends of phrases, sections, movements)
-- Create dramatic pauses or moments of emphasis
-- Allow for expressive freedom and rubato
-- Signal cadential arrival points
-- Provide breathing space between musical ideas
-- In ensemble music, requires coordination (conductor's cue)
+The fermata symbol appears directly above (for upper voices) or below (for lower voices) the note or rest it applies to.
 
-The fermata is a structural feature that articulates musical form.
+# Context & Application
 
-## Examples
+Fermatas mark structural boundaries, create dramatic pauses, signal cadential arrivals, and provide breathing space. In Bach chorales, fermatas mark phrase endings for congregational breathing. In concertos, a fermata on a tonic 6/4 chord signals the beginning of a cadenza.
 
-### Basic
+# Examples
 
-Common placements:
-- Final note of a phrase or section
-- Cadential notes (especially in chorales)
-- Dramatic pauses before important entrances
-- Rests between sections (fermata on rest = prolonged silence)
+- Final note of a chorale phrase held with fermata
+- Fermata on a rest between contrasting sections (prolonged silence)
+- Cadenza in a concerto begins after the fermata on a cadential chord
 
-Duration interpretation:
-- Short piece: hold 1.5-2x normal duration
-- Grand cadence: hold 2-3x or until conductor releases
-- Context-dependent (not mathematically precise)
+# Relationships
 
-### From Repertoire
+- **Leads to**: cadence, phrase
+- **See also**: caesura, tempo
 
-Bach chorales: fermatas mark ends of phrases for congregational breathing. Beethoven symphonies: dramatic fermatas create tension before resolutions. Cadenzas in concertos: fermata on tonic 6/4 chord signals soloist's improvised section. Haydn's "Surprise Symphony": fermata before sudden loud chord.
+# Common Errors
 
-## Related Concepts
+- Treating the fermata as having a fixed mathematical duration (it does not)
 
-- **Prerequisite**: note, rests, phrase
-- **Leads to**: cadence, srdc-phrase-structure
-- **See also**: caesura
+# Common Confusions
 
-## Common Confusions
+- Fermata vs. tenuto: fermata = hold indefinitely longer; tenuto = slight emphasis, full value
+- Fermata vs. caesura: fermata = prolong a sound or silence; caesura = complete cutoff/break
+- Fermata on a rest means prolonged silence, not a held note
 
-- Fermata vs. tenuto: fermata = hold indefinitely long; tenuto (—) = slight emphasis, full value
-- Fermata's duration is not fixed (unlike dotted notes which precisely add 50%)
-- Fermata can appear on rests (prolonged silence), not just notes
-- Fermata doesn't always mean "stop playing"—just "hold this longer"
-- Not the same as a pause symbol (caesura // is a cutoff)
-- In ensemble playing, the conductor determines when to release a fermata
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 7: "Other Aspects of Notation"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: structural function, rest application, ensemble coordination note, chorale and cadenza examples.

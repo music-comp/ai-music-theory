@@ -1,130 +1,94 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Fugue Answer
-category: form
-source: Open Music Theory
-chapter: "High Baroque Fugal Exposition"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: fugue-answer
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: fugue
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "High Baroque Fugal Exposition"
+chapter_number: 9
+pdf_page: null
+section: "Answer"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "comes"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - fugue-subject
+extends: []
+related:
+  - fugal-exposition
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the difference between a real and a tonal answer?"
+  - "When is a tonal answer required instead of a real answer?"
 ---
 
-# Fugue Answer
+# Quick Definition
+A transposition of the fugue subject, typically at the fifth/fourth, that may be exact (real answer) or slightly altered (tonal answer) to maintain tonal coherence when the subject emphasizes sol or contains V-I motion at its opening.
 
-## Quick Definition
+# Core Definition
+The **fugue answer** is a transposition of the subject that enters in the second voice. Two types exist: a **real answer** simply transposes the subject by perfect fifth/fourth with all generic intervals preserved; a **tonal answer** adjusts certain intervals to maintain tonal coherence. A tonal answer is required when the subject: (1) starts on sol (scale degree 5) or uses it prominently at the outset -- sol must become do in the answer, not re; (2) includes any V-I suggestion at the start -- prominent dominant notes become tonic notes; (3) modulates -- the answer must modulate back. "In all cases, we seek to make minimal adjustment such that the subject and answer are still as alike as possible" (Ch. 9, "Answer").
 
-A transposition of the fugue subject, usually at the perfect fifth (or fourth), presented by the second voice to enter in a fugue.
+# Prerequisites
+- **Fugue subject** -- The answer is derived from the subject
 
-## Formal Definition
+# Key Properties
+1. Real answer: exact transposition by P5/P4
+2. Tonal answer: adjusted transposition preserving tonal function
+3. Tonal answer needed when subject starts on/emphasizes sol (5)
+4. T-D progressions in subject often become D-T in tonal answer
+5. If subject modulates to dominant, answer modulates back to tonic
+6. Minimal adjustment principle: keep subject and answer as similar as possible
 
-The **answer** (or **fugue answer**) is the transposed version of the fugue subject that appears in the second voice during the fugal exposition. The answer is typically transposed up a perfect fifth (or down a perfect fourth) from the subject, though the exact transposition and any modifications depend on whether the answer is **real** or **tonal**.
+# Construction / Recognition
+## To Write a Real Answer:
+1. Transpose every note of the subject up a P5 (or down a P4)
+## To Write a Tonal Answer:
+1. Identify where sol appears prominently at the start
+2. Replace the transposed re (scale degree 2) with do (scale degree 1) at those points
+3. If the subject modulates, split into two phrases and adapt each
+4. Make minimal changes to preserve melodic similarity
 
-**Two types of answers**:
+# Context & Application
+The real vs. tonal answer distinction is central to fugal composition. Bach's fugues demonstrate both types extensively. The tonal answer preserves the tonic-dominant polarity essential to tonal music by ensuring the answer does not overemphasize the supertonic.
 
-1. **Real answer**: An exact transposition of the subject by a perfect fifth (or fourth)
-   - All generic intervallic relationships remain the same
-   - No modifications to the melodic contour
-   - Used when the subject doesn't emphasize scale degrees 1 and 5 problematically
+# Examples
+**Example 1** (Ch. 9, Example 2): Bach's Fugue in C minor (BWV 847) uses a tonal answer, with specific differences between subject and answer highlighted.
 
-2. **Tonal answer**: A transposition with slight melodic adjustments
-   - Modifies certain intervals to maintain tonal coherence
-   - Usually adjusts the relationship between tonic (^1) and dominant (^5)
-   - Used when exact transposition would create tonal problems
+**Example 2** (Ch. 9, Assignment 1): Students are asked to explain how the subject and answer of BWV 847 differ and why.
 
-**When a tonal answer is needed**:
-- Subject starts on or prominently features sol (^5) at the outset
-  - Sol (^5) in the subject becomes do (^1) in the answer (not re (^2))
-- Subject suggests V–I at the start
-  - Dominant to tonic in subject becomes tonic to dominant in answer
-- Subject modulates
-  - If subject modulates to dominant, answer modulates back to tonic
-  - Split the subject into phrases and adjust each accordingly
+# Relationships
+## Builds Upon
+- **fugue-subject** -- The answer is derived from the subject
+## Enables
+- **fugal-exposition** -- Voice entries alternate subject and answer
 
-**Principle**: Make minimal adjustments so subject and answer remain as similar as possible while both making melodic and tonal sense.
+# Common Errors
+- **Error**: Using a real answer when a tonal answer is needed
+  **Correction**: If the subject starts on sol or emphasizes V-I, use a tonal answer
 
-## Musical Context
+# Common Confusions
+- **Confusion**: A tonal answer is a completely different melody
+  **Clarification**: A tonal answer makes minimal adjustments; the overall contour and rhythm remain the same
 
-The answer serves crucial structural functions in the fugue:
+# Source Reference
+Open Music Theory, Part II, Chapter 9: "High Baroque Fugal Exposition," section "Answer."
 
-**Structural functions**:
-- Provides tonal variety (subject in tonic, answer in dominant key area)
-- Allows each voice to present the main theme
-- Creates tonic-dominant polarity essential to Baroque tonality
-- Maintains voice independence through staggered entries
-
-**Compositional challenges**:
-- Answer must be similar enough to be recognizable as the subject
-- Must make musical sense both melodically and harmonically
-- Must work contrapuntally with the countersubject
-- Tonal adjustments must be minimal and musically convincing
-
-**Alternating pattern** (typical in exposition):
-- Voice 1: Subject (tonic)
-- Voice 2: Answer (dominant)
-- Voice 3: Subject (tonic)
-- Voice 4: Answer (dominant)
-
-**Later in the fugue**:
-- Subject and answer may appear in various keys beyond tonic and dominant
-- Subject entries may be inverted, augmented, diminished, or appear in stretto
-
-## Examples
-
-### Basic
-
-**Real answer** (exact transposition):
-- Subject in C major: C–D–E–F–E–D–C
-- Real answer in G major: G–A–B–C–B–A–G
-  (Perfect fifth transposition, all intervals preserved)
-
-**Tonal answer** (adjusted):
-- Subject in C major: G–A–B–C (emphasizes ^5–^6–^7–^8)
-- Tonal answer: C–D–E–F (adjusts to ^1–^2–^3–^4, not D–E–F♯–G)
-  (G (^5) in subject becomes C (^1) in answer)
-
-**Modulating subject requiring tonal answer**:
-- Subject: Begins in C major, modulates to G major
-- Answer: Begins in G major, modulates back to C major
-  (Balances the tonal areas)
-
-### From Repertoire
-
-**Bach, WTC I, Fugue in C major (BWV 846)**:
-- Subject: Begins on C, ascending scale
-- Answer: Real answer beginning on G, exact transposition
-
-**Bach, WTC I, Fugue in C minor (BWV 847)**:
-- Subject: Begins on G (^5), chromatic descent
-- Answer: Tonal answer beginning on C (^1), adjusted intervals
-  (G in subject maps to C in answer, not D)
-
-**Bach, WTC I, Fugue in D major (BWV 850)**:
-- Subject: Emphasizes D–A relationship
-- Answer: Tonal answer adjusts A–D emphasis to maintain tonal coherence
-
-**Bach, Fugue in G minor "Little" (BWV 578)**:
-- Subject: Begins on D (^5) with upward leap
-- Answer: Tonal answer begins on G (^1) with adjusted intervals
-
-## Related Concepts
-
-- **Prerequisite**: fugue, transposition, perfect-fourth, modulation
-- **Leads to**: real-tonal-answer, exposition, countersubject
-- **See also**: imitation, key-relationships
-
-## Common Confusions
-
-- Answer vs. countersubject: Answer is the transposed subject; countersubject is new melodic material accompanying the subject/answer
-- Real vs. tonal: Real = exact transposition; tonal = adjusted transposition
-- Tonal answer is not a modulation—it's still recognizably the same theme, just slightly adjusted
-- The answer doesn't "answer" the subject in a question-answer sense—it's the same theme transposed
-- Not every voice states the answer—typically voices alternate between subject (tonic) and answer (dominant)
-- The answer interval is usually a perfect fifth up (or fourth down), but other intervals are possible in non-traditional fugues
-- Tonal answers are more common than real answers because many subjects emphasize tonic and dominant
-- The adjustment in a tonal answer is usually minimal—only one or two notes changed
-- Later subject entries (after the exposition) may appear at various intervals, not just fifth/fourth
-- The "fifth relationship" between subject and answer is central to Baroque fugal practice
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 9: "High Baroque Fugal Exposition"
+# Verification Notes
+- Re-extracted from v2 card; preserved: real vs. tonal distinction, three conditions for tonal answer
+- Confidence: HIGH -- explicitly defined with criteria

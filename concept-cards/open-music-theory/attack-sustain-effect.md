@@ -1,217 +1,77 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Attack-Sustain Effect
-category: theory
-source: Open Music Theory
-chapter: "Subtle Color Changes"
-pdf_page: null
-chapter_number: 10
-unit: null
+slug: attack-sustain-effect
+# === CLASSIFICATION ===
+category: application
+subcategory: orchestration
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Subtle Color Changes"
+chapter_number: 10
+pdf_page: null
+section: "X.2"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases:
+  - "resonance effect"
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - orchestral-blend
+extends: []
+related:
+  - timbral-cadence
+  - klangfarbenmelodie
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the attack-sustain effect in orchestration?"
+  - "How do composers simulate the natural attack profile of a note?"
 ---
 
-# Attack-Sustain Effect
+# Quick Definition
+The attack-sustain (or "resonance") effect assigns different instruments to the "attack" (short, percussive onset) and "sustain" (longer continuation) portions of a note, simulating the natural acoustic profile where a note's onset has a different spectral character from its continuation.
 
-## Quick Definition
+# Core Definition
+Acoustics teaches that a note's onset has a very different spectral profile from its sustaining portion. Composers simulate this by assigning "attacking" instruments (short notes -- harp, pizzicato, xylophone) and "sustaining" instruments (long notes -- winds, strings arco) to the same pitch at the same moment. Mozart used this in the Magic Flute overture (short trumpets/trombones, long horns) and Beethoven in Symphony 1/i (fp winds with pizzicato strings). Britten's Four Sea Interludes mvt. iii uses harp attacks with sustained flute "resonance." Related practice: different articulations on doublings (e.g., Debussy's La Mer -- oboe repeated notes with flute legato).
 
-An orchestration technique that separates the attack portion of a note from its sustained resonance by assigning different instruments to each function, with "attack" instruments playing short notes at the start and "sustain" instruments playing longer notes on the same pitches, mimicking the acoustic profile of natural sounds where onset differs from continuation.
+# Prerequisites
+- Orchestral blend
 
-## Formal Definition
+# Key Properties
+1. Short "attack" instruments provide onset
+2. Long "sustain" instruments provide continuation
+3. Simulates natural spectral evolution of a note
+4. Not limited to 20th century (Mozart, Beethoven examples)
+5. Related to different articulations on doublings
 
-**Attack-Sustain Effect** (also "resonance effect") separates note onset from continuation.
+# Context & Application
+The attack-sustain effect is a sophisticated orchestration technique beloved of 20th-century composers but with clear classical precedents.
 
-**Acoustic Basis**:
-- Natural sounds have different **attack** and **sustain** profiles
-- Attack = initial transient, rich in high frequencies
-- Sustain = steady-state, different spectral content
-- Orchestration can **artificially separate** these phases
+# Examples
+**Example 1** (Beethoven, Symphony 1/i): Wind fp chords with string pizzicato (attack only).
+**Example 2** (Britten, Four Sea Interludes mvt. iii): Harp attacks with sustained flute resonance; later xylophone + piccolo attacks with trumpet sustain.
 
-**Pattern**:
-```
-Attack:   Short note at onset
-          ↓
-Sustain:  Long note on same pitch, begins simultaneously
+# Relationships
+## Builds Upon
+- **orchestral-blend** -- Manipulates blend for spectral effect
+## Related
+- **timbral-cadence** -- Another subtle color-change technique
+- **klangfarbenmelodie** -- Related timbral thinking
 
-Together = composite sound with enhanced onset
-```
+# Common Confusions
+- **Confusion**: This is a purely 20th-century technique
+  **Clarification**: Mozart and Beethoven used it; it became more systematic in the 20th century
 
-**Instruments**: Penetrating, short-sound instruments for attack; sustained, warm instruments for resonance.
+# Source Reference
+Open Music Theory, Part X, Chapter 2: "Subtle Color Changes."
 
-## Attack-Sustain Pairs
-
-**Common attack instruments**:
-```
-Harp:         Plucked, instant decay
-Pizzicato:    Short, percussive
-Xylophone:    Bright attack, quick decay
-Piano:        Percussive onset
-Staccato brass/winds: Sharp articulation
-```
-
-**Common sustain instruments**:
-```
-Flutes:       Smooth sustained tone
-Horns:        Warm, continuous sound
-Strings arco: Long sustained lines
-Clarinets:    Smooth, even sustain
-Trombones:    Sustained power
-```
-
-**Classic pairings**:
-```
-Harp attack + Flute sustain
-Pizzicato attack + Sustained winds
-Xylophone attack + Trumpet sustain
-Piano fp + Strings sustain
-```
-
-## Historical Examples
-
-**Classical era**:
-```
-Beethoven Symphony 1/i opening:
-- Winds: fp chords (attack on f, sustain on p)
-- Pizzicato: attack only (no sustain)
-
-Attack-sustain within wind fp
-Enhanced by string pizz attack
-```
-
-**Mozart examples**:
-```
-Magic Flute overture:
-- Trumpets/trombones: short
-- Horns: long sustained
-→ Attack-sustain separation in brass
-
-Dies Irae:
-- Trumpets/drums: short attack
-- Other forces: long sustain
-```
-
-**20th century (fully developed)**:
-```
-Britten, Four Sea Interludes iii:
-- Harp harmonics: attack (penetrating)
-- Flutes: sustain (smooth continuation)
-
-Schoenberg, "Farben":
-- Harp: attack at reh. 2
-- Sustained wind chords: resonance
-```
-
-## Related Articulation Techniques
-
-**Different articulations on doublings**:
-```
-Debussy, La Mer iii (fig. 55):
-- Oboe: repeated notes
-- Flute: sustained line (no repetition)
-
-Same melody, different articulations
-Creates layered texture
-```
-
-**Pizzicato + arco**:
-```
-Sibelius, En Saga m. 189:
-- Viola pizzicato: attack
-- Viola arco: sustain
-
-Both in same instrument section
-Attack-sustain combined
-```
-
-**Staccato + legato doublings**:
-```
-Sibelius, En Saga m. 290:
-- Trumpet staccato
-- Oboe legato
-
-Same line, contrasting articulation
-Attack-sustain principle applied
-```
-
-## Musical Context
-
-Attack-sustain effect serves specific purposes:
-- **Timbral richness**: Enhanced composite sound
-- **Onset emphasis**: Clear rhythmic definition
-- **Acoustic simulation**: Natural sound quality
-- **Textural interest**: Layers within single chords
-- **Color variation**: Changes within sustained sounds
-- **Dynamic control**: Attack provides impact, sustain provides body
-
-The attack-sustain effect is a fundamental orchestral color technique.
-
-## Examples
-
-### Basic
-
-**Simple attack-sustain pair**:
-```
-Beat 1:
-Harp:     D4 (eighth note, attack)
-Flutes:   D4 (whole note, sustain)
-
-Harp provides onset definition
-Flutes continue the resonance
-```
-
-**Orchestral chord attack-sustain**:
-```
-Chord:    C major
-Attack:   Pizz strings, piano staccato
-Sustain:  Winds held, strings arco
-
-Short sounds mark attack
-Long sounds provide body
-```
-
-**fp as attack-sustain**:
-```
-Winds:    fp on chord
-          ↑↑
-          │└─ piano = sustain
-          └── forte = attack
-
-Single instrument achieves effect
-Through dynamic contrast
-```
-
-### From Repertoire
-
-**Beethoven, Symphony No. 1, i (opening)**: Iconic fp chords in winds create attack-sustain; enhanced by string pizzicato providing additional attack component.
-
-**Mozart, Magic Flute Overture**: Brass entrance with horns sustained while trumpets and trombones short; attack-sustain separation within brass section.
-
-**Britten, Four Sea Interludes, iii (c. 0'45")**: Harp harmonics and penetrating instruments for attack; sustained flute lines for resonance; later xylophone and piccolo attack with trumpet sustain.
-
-**Schoenberg, "Farben" (Five Orchestral Pieces, no. 3)**: Harp at reh. 2 provides attack component within groundbreaking timbral exploration.
-
-## Related Concepts
-
-- **Prerequisite**: articulation
-- **Leads to**: timbral-cadence
-- **See also**: dynamics
-
-## Common Confusions
-
-- Based on **acoustic** properties of natural sound (onset vs. steady-state)
-- Attack instruments = **short**, penetrating sounds
-- Sustain instruments = **long**, continuous sounds
-- **fp** can create attack-sustain in single instrument
-- Harp, pizzicato, xylophone = common **attack** instruments
-- Flutes, horns, sustained strings = common **sustain** instruments
-- Different from simple **doubling** (which matches articulation)
-- Can use **different articulations** on same line for effect
-- **Beethoven 1** opening = classic example
-- 20th century composers (**Britten, Schoenberg**) developed fully
-- Related to **tremolo strings** for loud passages (attack through repetition)
-- Attack-sustain creates **composite** timbre, not just layering
-- Xylophone/piccolo attack + trumpet sustain = common 20th-century pairing
-- Historical precedent in Mozart, but fully exploited later
-
-## Source Reference
-
-Open Music Theory, Part X: "Orchestration"
-Open Music Theory, Chapter 10-02: "Subtle Color Changes"
+# Verification Notes
+- Definition source: From 10-02
+- Confidence rationale: High
+- Preserved from v2: Classical and modern examples, acoustic rationale
+- Cross-reference status: Verified

@@ -1,90 +1,103 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Articulation
-category: theory
-source: Open Music Theory
-chapter: "Other Aspects of Notation"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: articulation
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Other Aspects of Notation"
+chapter_number: 7
+pdf_page: null
+section: "Articulations"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - note
+extends: []
+related:
+  - dynamics
+  - tempo
+contrasts_with:
+  - dynamics
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is articulation in music?"
+  - "What do legato, staccato, and accent markings mean?"
+  - "How does articulation differ from dynamics?"
 ---
 
-# Articulation
+# Quick Definition
 
-## Quick Definition
+Markings that indicate how notes are attacked and connected or separated, including legato (smooth), staccato (detached), accents, and tenuto.
 
-Markings that indicate how notes are attacked and connected or separated, affecting the character of sound production through symbols like slurs, staccato dots, accents, and tenuto marks.
+# Core Definition
 
-## Formal Definition
+**Articulation** refers to the connection or separation between notes and the accent level at the beginning of a note (its attack). Key articulation markings include: **legato** (slur) for smooth, connected playing; **tenuto** (horizontal line) for sustaining full value with slight emphasis; **staccato** (dot) for separated, detached notes; **accent** (sideways V, >) for extra stress; and **marcato** (upside-down V, ^) for more forceful accent. Sforzando (sfz, sf, fz) indicates sudden strong emphasis. Implementation varies by instrument.
 
-**Articulation** refers to the manner in which individual notes are performed, particularly regarding:
-1. **Attack**: The accent level or force at the beginning of a note
-2. **Connection**: The degree of separation or connection between consecutive notes
+# Prerequisites
 
-Common articulation markings:
+- **Note**: the musical element to which articulation applies
 
-**Connection markings**:
-- **Legato** (slur): curved line connecting notes; play smoothly and connected
-- **Tenuto** (—): short horizontal line; sustain full value, slightly emphasized
-- **Staccato** (•): dot above/below notehead; play detached and separated
+# Key Properties
 
-**Accent markings**:
-- **Accent** (>): sideways V shape; play with extra stress or emphasis
-- **Marcato** (^): upside-down V; play with a more forceful accent
-- **Sforzando/Forzando** (_sfz_, _sf_, _fz_): sudden, strong emphasis (similar to loud accent)
+- Legato (slur): curved line connecting notes; play smoothly
+- Tenuto (--): small horizontal line; sustain full value
+- Staccato (.): dot above/below note; play detached
+- Accent (>): sideways V; play with extra stress
+- Marcato (^): upside-down V; more forceful accent
+- Sforzando (sfz): sudden, strong emphasis
+- Placed above or below noteheads
 
-Articulations are placed above or below noteheads (above for upper voices, below for lower voices). Implementation varies by instrument: strings use bowing techniques, winds use tonguing, percussion uses stroke types.
+# Construction / Recognition
 
-## Musical Context
+Articulation symbols appear directly above or below noteheads. Different instruments achieve articulations through different techniques (bowing, tonguing, stroke type, etc.).
 
-Articulation shapes musical character and phrasing:
-- Defines the "speaking quality" of musical lines
-- Creates contrast between lyrical (legato) and detached (staccato) passages
-- Emphasizes structural points through accents
-- Contributes to style (Baroque detached vs. Romantic sustained)
-- Affects grouping perception and phrase boundaries
+# Context & Application
 
-Proper articulation is essential for stylistic accuracy and expressive performance.
+Articulation defines the "speaking quality" of musical lines. It creates contrast between lyrical (legato) and detached (staccato) passages, emphasizes structural points through accents, and contributes to stylistic accuracy (Baroque detached vs. Romantic sustained).
 
-## Examples
+# Examples
 
-### Basic
+- Legato: notes flow smoothly into each other (indicated by slur)
+- Staccato: notes shortened and separated (dot symbol)
+- Accent: note played with extra force (> symbol)
+- Marcato: note with harder, more forceful attack (^ symbol)
 
-Legato: notes flow smoothly into each other without breaks
-- Indicated by curved slur marking connecting multiple notes
-- Different from tie (which connects same pitches)
+# Relationships
 
-Staccato: notes are shortened and separated
-- Indicated by dot above or below notehead
-- Typically performed at about half the note's written duration
+- **Leads to**: expression, phrasing
+- **See also**: dynamics, tempo
 
-Tenuto: notes are held for full value, slightly emphasized
-- Indicated by short horizontal line
+# Common Errors
 
-Accents: notes are played with extra force
-- Regular accent (>) = noticeable emphasis
-- Marcato (^) = more forceful, harder attack
-- _sforzando_ (sfz) = sudden, strong emphasis
+- Confusing slur (articulation, connects different pitches) with tie (connects same pitch for duration)
 
-### From Repertoire
-
-Mozart's piano sonatas use delicate staccato for lightness. Chopin's nocturnes feature long legato lines for singing quality. Stravinsky's "Rite of Spring" uses heavy accents for rhythmic drive. Bach's violin partitas require varied bowing articulations for clarity.
-
-## Related Concepts
-
-- **Prerequisite**: note
-- **See also**: dynamics
-
-## Common Confusions
+# Common Confusions
 
 - Slur vs. tie: slurs connect different pitches (articulation); ties connect same pitch (duration)
-- Slur vs. phrase mark: slurs are shorter; phrase marks span entire phrases
-- Staccato doesn't mean "short note"—it means "shortened from written value"
-- Tenuto (—) vs. fermata (𝄐): tenuto = slight emphasis; fermata = hold longer
+- Staccato means "shortened from written value," not just "short"
+- Tenuto vs. fermata: tenuto = slight emphasis, full value; fermata = hold indefinitely longer
 - Accent (>) vs. marcato (^): marcato is more forceful
-- Articulation vs. dynamics: articulation = attack/connection; dynamics = loudness
-- _Sforzando_ is an accent marking, not a dynamic (though it affects loudness)
+- Articulation affects attack/connection; dynamics affect loudness (different parameters)
 
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 7: "Other Aspects of Notation"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: all six articulation types, slur vs. tie distinction, dynamics contrast.

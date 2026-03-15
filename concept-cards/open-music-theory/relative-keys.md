@@ -1,98 +1,103 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Relative Keys
-category: theory
-source: Open Music Theory
-chapter: "Minor Scales, Scale Degrees, and Key Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: relative-keys
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Minor Scales, Scale Degrees, and Key Signatures"
+chapter_number: 13
+pdf_page: null
+section: "The Parallel and Relative Relationships"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "relative major"
+  - "relative minor"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - major-scale
+  - minor-scale
+  - key-signature
+extends: []
+related:
+  - parallel-keys
+contrasts_with:
+  - parallel-keys
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are relative keys?"
+  - "How do you find the relative minor of a major key?"
+  - "What do relative keys share?"
 ---
 
-# Relative Keys
+# Quick Definition
 
-## Quick Definition
+A major and minor key that share the same key signature; the minor tonic is three half steps below the major tonic.
 
-Major and minor keys that share the same key signature but have different tonic notes, such as C major and A minor, or G major and E minor.
+# Core Definition
 
-## Formal Definition
+The **relative relationship** is when a major key shares a key signature with a minor key. For example, C major and A minor both have no sharps or flats. The tonic of the relative minor is always three half steps below the tonic of the relative major. To find the relative major from a minor key, count three half steps up. When counting, select the enharmonic spelling that matches the key signature type (a sharp key cannot have a flat relative, and vice versa).
 
-**Relative keys** (or the **relative relationship**) refers to a major key and a minor key that share the same key signature but have different tonic pitches.
+# Prerequisites
 
-**Characteristics**:
-- Same key signature (same sharps or flats)
-- Different tonic notes
-- Relative minor's tonic is a minor third (3 half steps) below relative major's tonic
-- Relative major's tonic is a minor third (3 half steps) above relative minor's tonic
+- **Major scale**: one side of the relationship
+- **Minor scale**: the other side
+- **Key signature**: what relative keys share
 
-**Finding relative keys**:
-- **Relative minor of a major key**: down 3 half steps from major tonic
-  - C major → A minor (C down to A)
-  - G major → E minor (G down to E)
-  - F major → D minor (F down to D)
+# Key Properties
 
-- **Relative major of a minor key**: up 3 half steps from minor tonic
-  - A minor → C major
-  - E minor → G major
-  - D minor → F major
+- Relative keys share the SAME key signature
+- Minor tonic = 3 half steps below major tonic
+- Major tonic = 3 half steps above minor tonic
+- Same pitch collection, different tonic
+- Choose the correct enharmonic spelling to match key signature type
 
-**Common relative key pairs**:
-- C major (no ♯/♭) ↔ A minor (no ♯/♭)
-- G major (1 ♯: F♯) ↔ E minor (1 ♯: F♯)
-- D major (2 ♯: F♯, C♯) ↔ B minor (2 ♯: F♯, C♯)
-- F major (1 ♭: B♭) ↔ D minor (1 ♭: B♭)
+# Construction / Recognition
 
-**Contrast with parallel keys**: Relative keys share key signature; parallel keys share tonic.
+From a major key, count 3 half steps down to find the relative minor. From a minor key, count 3 half steps up for the relative major.
 
-## Musical Context
+# Context & Application
 
-Relative relationships are fundamental to key identification and modulation:
-- **Key identification**: same key signature = either the major key or its relative minor
-- **Close modulation**: moving between relative keys is smooth and common
-- **Shared pitch content**: relative keys use the same notes (different tonal centers)
-- **Aeolian mode**: relative minor = Aeolian mode starting on 6th degree of major scale
-- **Common in all periods**: Bach, Mozart, Beethoven, and popular music all exploit this relationship
+Understanding relative keys helps with key identification: a key signature indicates two possible keys (the major key and its relative minor). The first and last notes of a piece help determine which key is actually used.
 
-The relative relationship enables seamless transitions between major and minor tonalities.
+# Examples
 
-## Examples
+- C major / A minor (no sharps or flats)
+- G major / E minor (one sharp)
+- Eb major / C minor (three flats)
+- Db major / Bb minor (five flats) -- not A# minor (seven sharps)
 
-### Basic
+# Relationships
 
-**C major ↔ A minor** (no sharps or flats):
-- C major scale: C D E F G A B C
-- A natural minor scale: A B C D E F G A
-- Same notes, different tonic (C vs. A)
+- **See also**: parallel-keys, key-signature, major-scale, minor-scale
 
-**G major ↔ E minor** (one sharp: F♯):
-- G major scale: G A B C D E F♯ G
-- E natural minor scale: E F♯ G A B C D E
-- Same key signature (F♯), different tonic (G vs. E)
+# Common Errors
 
-**Finding relative minor**:
-- D major → count down 3 half steps: D → C♯ → C → B
-- Relative minor of D major = B minor
+- Choosing the wrong enharmonic spelling (Bb minor, not A# minor, is relative to Db major)
 
-### From Repertoire
+# Common Confusions
 
-Many pieces begin in a minor key and end in the relative major (or vice versa). Bach's fugues often explore relative key relationships. Beethoven's "Moonlight Sonata" (C♯ minor) relates to E major. Pop songs frequently shift between relative major and minor for verse-chorus contrast.
+- Relative keys share a key signature but have different tonics
+- Parallel keys share a tonic but have different key signatures
+- These are different relationships
 
-## Related Concepts
-
-- **Prerequisite**: major-scale, minor-scale, key-signature
-- **Leads to**: modulation, circle-of-fifths, mode
-- **See also**: parallel-keys, natural-minor-scale
-
-## Common Confusions
-
-- Relative vs. parallel: relative = same key signature (C major/A minor); parallel = same tonic (C major/C minor)
-- Distance is 3 half steps (minor third), not 3 whole steps
-- Relative minor is below major (A is below C), not above
-- Same key signature doesn't mean same key—could be major or relative minor
-- Relative major of A minor = C major (not A major, which is parallel major)
-- All notes are the same in relative keys, but the tonal center (tonic) differs
-- "Relative" relationship is fixed (C major's relative minor is always A minor)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 13: "Minor Scales, Scale Degrees, and Key Signatures"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: 3-half-step rule, enharmonic spelling requirement, parallel contrast.

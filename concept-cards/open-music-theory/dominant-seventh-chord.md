@@ -1,209 +1,153 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Dominant Seventh Chord
-category: theory
-source: Open Music Theory
-chapter: "Seventh Chords"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: dominant-seventh-chord
+
+# === CLASSIFICATION ===
+category: chords
+subcategory: seventh-chords
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Strengthening Endings with V7"
+chapter_number: 2
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+# high: Explicitly defined with resolution procedures
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "V7"
+  - "dominant seventh"
+  - "Mm7 chord"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - authentic-cadence
+  - voice-leading
+extends:
+  - authentic-cadence
+related:
+  - cadential-six-four
+  - leading-tone-chord
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does V7 strengthen a cadence?"
+  - "What are the three ways V7 can resolve to I?"
+  - "What is the leading-tone drop?"
 ---
 
-# Dominant Seventh Chord
+# Quick Definition
 
-## Quick Definition
+The dominant seventh chord (V7) adds the note fa (^4) to the V triad, creating a dissonance that strengthens the dominant's pull toward the tonic. It resolves to I in three ways: default resolution, incomplete V7, or leading-tone drop.
 
-A major triad built on the dominant scale degree (^5) with an added minor seventh above the root, creating the chord V⁷ that contains two crucial tendency tones—the leading tone (^7) pulling upward to tonic and the chordal seventh (^4) pulling downward—making it the most unstable and dynamically directed chord in tonal music, demanding resolution to the tonic (I) and serving as the primary harmonic driver of cadential motion in common-practice tonality.
+# Core Definition
 
-## Formal Definition
+Adding **fa (^4)** to the V chord transforms it from a major triad into a **dominant seventh chord** (V7), since the seventh adds dissonance (and therefore instability) that strengthens the pull of V toward I (OMT, Ch. IV.2).
 
-**Dominant seventh chord** (V⁷) is a four-note chord consisting of:
-- **Root**: Dominant scale degree (^5)
-- **Third**: Leading tone (^7) - major third above root
-- **Fifth**: Supertonic (^2) - perfect fifth above root
-- **Seventh**: Subdominant (^4) - minor seventh above root
+Three resolutions of V7 to I:
+1. **Default resolution**: All active notes resolve according to their tendencies, producing an incomplete I (three roots, one third, no fifth)
+2. **Incomplete V7**: The fifth is omitted from V7 (root doubled instead), allowing resolution to a complete I
+3. **Leading-tone drop**: In a complete V7, ti (^7) drops down to sol (^5) in an inner voice, producing a complete I
 
-**Structure**: Major triad + minor seventh (Mm7)
+# Prerequisites
 
-**In C major**: G-B-D-F (G major triad + minor seventh)
+- **Authentic cadence** — V7 strengthens the V-I authentic cadence
+- **Voice leading** — Tendency-tone resolution governs all V7 voice leading
 
-**Function**: Strongest possible dominant function, demands resolution to I
+# Key Properties
 
-## Chord Tones and Tendency Tones
+1. V7 = V triad + minor seventh (fa, ^4)
+2. Contains two active/tendency tones: ti (^7, resolves up to do) and fa (^4, resolves down to mi)
+3. Default resolution produces incomplete I (no fifth) — this is normal and common
+4. Incomplete V7 (omit fifth, double root) resolves to complete I
+5. Leading-tone drop: ti leaps down to sol in an inner voice only
+6. V7 at half cadences is rare in Classical music ("19th-century HC," per Schmalfeldt)
 
-**Chord members** (in C major, V⁷ = G⁷):
-- **Root (G, ^5)**: Relatively stable, often leaps to ^1
-- **Third (B, ^7)**: LEADING TONE, must resolve UP to ^1 (C)
-- **Fifth (D, ^2)**: Somewhat flexible, often moves to ^1 or ^3
-- **Seventh (F, ^4)**: CHORDAL SEVENTH, must resolve DOWN to ^3 (E)
+# Construction / Recognition
 
-**Two strong tendency tones**:
-1. **Leading tone (^7)**: Resolves up by half step to ^1
-2. **Chordal seventh (^4)**: Resolves down by step to ^3
+## To Resolve V7 to I (Default Resolution):
+1. Write the entire bass: sol-do (^5-^1)
+2. Write soprano: choose an active note over V7, resolve by tendency
+3. Fill in inner voices: "What do I have, what do I need, and what is the tendency?"
+4. In minor: use ti (raised ^7), not te, in V7
 
-**Creates strong pull to tonic**
+## Tendency Tones in V7:
+- Ti (^7) resolves UP to do (^1)
+- Fa (^4) resolves DOWN to mi (^3)
+- Re (^2) typically moves to do (^1) or stays
 
-## Voice Leading: V⁷ → I
+## Leading-Tone Drop Rules:
+1. Use only in alto or tenor (inner voice) to hide the non-standard resolution
+2. Ti always leaps DOWN to sol (^5), never to mi (^3)
 
-**Standard resolution**:
-```
-V⁷:  G-B-D-F    →   I:  C-E-G-C
-S:   F  →  E        (^4 → ^3, seventh down)
-A:   D  →  C        (^2 → ^1, step down or leap)
-T:   B  →  C        (^7 → ^1, leading tone UP)
-B:   G  →  C        (^5 → ^1, leap to root)
-```
+# Context & Application
 
-**Tendency tone resolution**:
-- **B (^7)** resolves to **C (^1)** - leading tone up
-- **F (^4)** resolves to **E (^3)** - seventh down
-- Creates smooth voice leading and strong resolution
+- **Typical contexts**: Authentic cadences, especially PACs; phrase endings throughout common-practice music
+- **Common applications**: Strengthening cadences; creating harmonic drive toward tonic
+- **Historical/stylistic notes**: V7 at half cadences is much less common since HC is already unstable. Schmalfeldt (2011) terms HCs involving V7 the "19th-century HC," reflecting their greater prevalence in Romantic music.
 
-**Incomplete V⁷** (omit fifth):
-- Triple root, single third, single seventh (no fifth)
-- Allows complete I chord after resolution
-- Common when voices limited
+# Examples
 
-**Complete V⁷**:
-- All four notes present
-- Often produces incomplete I (triple root, single third, no fifth)
-- Or: resolve ^7 unusually to allow complete I
+**Example 1** (OMT Ch. IV.2, Example 1): PAC involving V7 in Margaret Casson's The Cuckoo. The seventh (fa) adds dissonance that strengthens the pull to I.
 
-## Inversions of V⁷
+**Example 2** (OMT Ch. IV.2, Example 2): Comparison of (a) PAC with triads only vs. (b) PAC with V7, demonstrating the stronger pull of V7.
 
-**V⁷** (root position):
-- Bass: ^5 (G in C major)
-- Figured bass: ⁷ or ⁷₅
-- Strongest, most common
+**Example 3** (OMT Ch. IV.2, Example 3): Default resolution of V7 — three roots and one third in I (no fifth). Example 3c shows the uncommon resolution where re goes up to mi, which usually causes voice-leading problems.
 
-**V⁶₅** (first inversion):
-- Bass: ^7 (B in C major, leading tone)
-- Figured bass: ⁶₅
-- Common, especially before I⁶
+**Example 4** (OMT Ch. IV.2, Examples 5-6): Alternative resolutions — incomplete V7 (Example 5) and leading-tone drop (Example 6).
 
-**V⁴₃** (second inversion):
-- Bass: ^2 (D in C major)
-- Figured bass: ⁴₃
-- Less common, often passing
+# Relationships
 
-**V⁴₂** (third inversion, also written V²):
-- Bass: ^4 (F in C major, chordal seventh)
-- Figured bass: ⁴₂ or ²
-- Bass resolves down to ^3 in I⁶
-- Common in progressions
+## Builds Upon
+- **Authentic cadence** — V7 strengthens the V-I cadence
 
-## Harmonic Function
+## Enables
+- **Cadential six-four** — Cad. 6/4 embellishes V7 before resolution
+- **Tonic prolongation** — Inverted V7s prolong tonic at phrase beginnings
 
-**Dominant function** (strongest):
-- Highest tension in tonal system
-- Demands resolution to tonic
-- Contains both tendency tones
-- Essential for authentic cadences (V⁷-I)
+## Related
+- **Leading-tone chord** — vii-o7 can substitute for V7 inversions
+- **Strong predominant** — Commonly precedes V7 at cadences
 
-**Typical contexts**:
-- **Authentic cadences**: ...V⁷ - I (PAC)
-- **Half cadences**: Phrase ends on V⁷ (HC)
-- **Predominant-Dominant-Tonic**: ii⁷ - V⁷ - I
-- **Cadential progression**: I⁶₄ - V⁷ - I
+## Contrasts With
+- No direct contrasts within this source
 
-## Musical Context
+# Common Errors
 
-The dominant seventh chord serves critical functions:
-- **Strongest dissonance in diatonic harmony**: Creates tension
-- **Tonal driver**: Pulls strongly to tonic through tendency tones
-- **Cadential force**: Essential for definitive authentic cadences
-- **Harmonic clarity**: Defines key unambiguously
-- **Expressive power**: Adds urgency and direction
-- **Universal in tonal music**: Appears in virtually all common-practice works
+- **Error**: Resolving re (^2) upward to mi (^3) in the default resolution
+  **Correction**: This creates an unusual doubling (two roots, two thirds) and usually leads to voice-leading problems; re should descend to do
 
-V⁷ is the cornerstone of tonal harmonic function.
+- **Error**: Using the leading-tone drop in the soprano
+  **Correction**: Leading-tone drop should only occur in alto or tenor to hide the non-standard resolution
 
-## Examples
+- **Error**: Leaping ti down to mi (^3) instead of sol (^5)
+  **Correction**: In the leading-tone drop, ti always goes to sol (the closer note)
 
-### Basic
+# Common Confusions
 
-**V⁷-I in C major**:
-```
-V⁷:  G-B-D-F    (dominant seventh)
-I:   C-E-G-C    (tonic)
+- **Confusion**: Thinking the incomplete I after default V7 resolution is wrong
+  **Clarification**: An I with three roots and one third (no fifth) is completely normal and expected after V7
 
-Tendency tone resolution:
-B (^7) → C (^1) - leading tone up
-F (^4) → E (^3) - seventh down
+- **Confusion**: Believing the leading-tone must always resolve upward
+  **Clarification**: The leading-tone drop is a standard exception when ti is in an inner voice and a complete I is desired
 
-Strong resolution, maximum closure
-```
+# Source Reference
 
-**Incomplete V⁷** (no fifth):
-```
-V⁷:  G-G-B-F    (root tripled, no D)
-I:   C-E-G-C    (complete tonic)
+Open Music Theory, Part IV, Chapter 2: "Strengthening Endings with V7." See Examples 1-7 (resolution types and summary). Also references Schmalfeldt (2011) regarding the "19th-century HC."
 
-Allows complete I chord after resolution
-```
+# Verification Notes
 
-**V⁶₅ - I⁶** (inverted progression):
-```
-V⁶₅: B-D-F-G    (first inversion V⁷, ^7 in bass)
-I⁶:  C-E-G-C    (first inversion I)
-
-Leading tone in bass resolves up to tonic
-```
-
-**V⁴₂ - I⁶** (third inversion):
-```
-V⁴₂: F-G-B-D    (seventh in bass, ^4)
-I⁶:  E-C-C-E    (bass resolves down ^4→^3)
-
-Chordal seventh in bass resolves stepwise down
-```
-
-**Cadential progression**:
-```
-I  -  IV  -  V⁷  -  I
-C     F      G⁷     C
-
-Classic T-PD-D-T with V⁷
-```
-
-### From Repertoire
-
-**Mozart, Piano Sonata K. 545, I, m. 4**: V⁷-I authentic cadence, clean resolution with tendency tones properly handled.
-
-**Beethoven, "Ode to Joy"**: V⁷-I progressions throughout, demonstrates fundamental dominant seventh function.
-
-**Bach, Chorales**: V⁷ appears frequently at cadences, proper voice leading with ^7→^1 and ^4→^3 resolutions.
-
-**Haydn, Symphony No. 104, I**: V⁷ creates tension before resolutions, drives harmonic motion throughout exposition.
-
-**Mozart, Symphony No. 40, I**: Dominant sevenths with dramatic effect, especially in development section.
-
-## Related Concepts
-
-- **Prerequisite**: chord, seventh-chord, leading-tone
-- **Leads to**: secondary-dominant, half-diminished-seventh, cadential-six-four
-- **See also**: authentic-cadence, harmonic-function, ii-v-i-progression
-
-## Common Confusions
-
-- Dominant seventh = V⁷ (major triad + minor seventh on ^5)
-- Contains two tendency tones: ^7 (up to ^1) and ^4 (down to ^3)
-- V⁷ = strongest dominant function (more than plain V)
-- Leading tone (^7) must resolve UP to ^1
-- Chordal seventh (^4) must resolve DOWN to ^3
-- Incomplete V⁷ omits fifth (allows complete I after resolution)
-- V⁶₅ = first inversion (^7 in bass)
-- V⁴₃ = second inversion (^2 in bass)
-- V⁴₂ or V² = third inversion (^4 in bass, resolves to I⁶)
-- V⁷-I strongest possible authentic cadence
-- Mm7 = major-minor seventh chord (major triad + minor 7th)
-- Only diatonic seventh chord in major with Mm7 quality
-- Dissonant chord (seventh is dissonance) requiring resolution
-- Can appear in half cadence (phrase ends on V⁷)
-- Secondary dominants use same V⁷ structure applied to other chords
-- V⁷ defines key more clearly than plain V (contains ^4 and ^7)
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Seventh Chords and Dominant Function"
+- Definition source: Direct from OMT Ch. IV.2
+- Confidence rationale: HIGH — explicit definition with three resolution types and worked examples
+- Uncertainties: None
+- Cross-reference status: All slugs verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: inversion details (V6/5, V4/3, V4/2) from old card's comprehensive treatment, tendency-tone resolution patterns. Old card covered inversions extensively; those are now more relevant to the tonic-prolongation card (Ch. IV.6) and are cross-referenced there.

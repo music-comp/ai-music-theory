@@ -1,261 +1,93 @@
 ---
-concept: Common Tone Diminished Seventh
-category: theory
-source: Open Music Theory
-chapter: "Chromatic Harmony: Embellishing Diminished Chords"
-pdf_page: null
-chapter_number: 4
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Common-Tone Diminished Seventh Chord
+slug: common-tone-diminished-seventh
+
+# === CLASSIFICATION ===
+category: chords
+subcategory: embellishing-chords
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Common-Tone Chords (CTo7 & CT+6)"
+chapter_number: 4
+pdf_page: null
+section: "V.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "CTo7"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - fully-diminished-seventh-chord
+  - neighbor-tone
+  - voice-leading
+extends: []
+related:
+  - common-tone-augmented-sixth
+  - leading-tone-chord
+contrasts_with:
+  - viio7
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do common-tone chords relate to voice-leading efficiency?"
+  - "What is a CTo7 chord and how does it differ from viio7?"
 ---
 
-# Common Tone Diminished Seventh
+# Quick Definition
+A fully diminished seventh chord that shares the root of the chord it embellishes (the common tone), functioning as a voice-leading chord created by simultaneous neighbor tones rather than as a functional harmony. It has the same pitches as viio7 but a completely different embellishing function.
 
-## Quick Definition
+# Core Definition
+The CTo7 is produced through layering simultaneous neighbor tones around a major triad or dominant seventh chord. The root of the embellished chord is retained as a common tone; the fifth is embellished by both upper (whole step) and lower (half step) neighbors; the third is embellished by its lower neighbor (half step). The resulting diminished seventh chord is not functional — it serves purely as embellishment. To distinguish from viio7: check if the diminished seventh shares a common tone with its resolution chord. If yes, CTo7; if no, viio7. When a cad.6/4 follows, look past it to determine common-tone status.
 
-A fully diminished seventh chord (°7) used as a chromatic embellishment rather than a functional dominant substitute, characterized by sharing a common tone with both the preceding and following chords while the other voices move chromatically to create passing or neighbor motion—typically prolonging a single harmony (often tonic) without functional progression, notated as CT°7 (common tone diminished seventh), creating dramatic chromatic color and voice leading interest without changing harmonic function, common in Romantic music for expressive intensification and chromatic enrichment of otherwise static harmonies.
+# Prerequisites
+- Fully diminished seventh chord quality
+- Neighbor tone embellishment
+- Voice-leading principles
 
-## Formal Definition
+# Key Properties
+1. Shares root with embellished chord (the common tone)
+2. Created by simultaneous neighbor tones, not harmonic function
+3. Fifth of embellished chord doubled (embellished by upper whole-step and lower half-step neighbors)
+4. Third embellished by lower neighbor (half step)
+5. Embellishes major triads or dominant seventh chords (typically I or V)
+6. Can appear as complete neighbor (x-CTo7-x) or incomplete neighbor (y-CTo7-x)
+7. When resolving to V7, upper neighbor continues upward to fa (^4) instead of doubling
 
-**Common tone diminished seventh chord** (CT°7) is a fully diminished seventh chord (°7) functioning as:
+# Context & Application
+Construction procedure: (1) find root of embellished chord (common tone), (2) find upper (M2) and lower (m2) neighbors to the fifth, (3) find lower neighbor (m2) to the third. CTo7 chords elaborate simple progressions with chromatic color. A tonic prolongation I-V4/3-I6 becomes richer with CTo7 filling between chords as incomplete neighbors. Scott Joplin's "The Sycamore" uses CTo7 sandwiched between cad.6/4 and V7. Chopin, Etude in F minor, Op. 10, No. 9, uses a related CT+6 in similar context.
 
-**Non-functional embellishment**: Does not act as dominant substitute
+# Examples
+**Example 1** (Scott Joplin, "The Sycamore," mm. 1-4): CTo7 between cad.6/4 and V7, bass motion F#-D-F# appears functional but is embellishing.
+**Example 2** (Tonic expansion): I-CTo7-V4/3-CTo7-I6 — two CTo7 chords with incomplete neighbors elaborate I-V4/3-I6 pattern.
 
-**Characteristics**:
-- **Common tone**: One note shared with surrounding harmony
-- **Chromatic motion**: Other voices move by half step
-- **Prolongational**: Extends/embellishes single harmony
-- **No root motion**: Doesn't create functional progression
-- **Returns to same harmony**: Often I-CT°7-I or V-CT°7-V
+# Relationships
+## Builds Upon
+- **fully-diminished-seventh-chord** — Same quality, different function
+- **neighbor-tone** — CTo7 is the culmination of multiple simultaneous neighbors
+## Related
+- **common-tone-augmented-sixth** — Partner embellishing chord type (all chromatic neighbors)
+## Contrasts With
+- **viio7** — Same quality but viio7 is functional; CTo7 is embellishing. Key test: common tone with resolution chord.
 
-**Different from functional vii°7**: vii°7 resolves to tonic (functional), CT°7 embellishes without resolving
+# Common Confusions
+- **Confusion**: CTo7 is just another viio7 chord.
+  **Clarification**: CTo7 shares a common tone with its resolution chord; viio7 does not. The distinction is functional, not structural. If you stack CTo7 in thirds, you get something like viio4/2/iii — but there is no iii to be found.
+- **Confusion**: CTo7 needs a Roman numeral.
+  **Clarification**: CTo7 does not receive a standard Roman numeral because it is a voice-leading chord, not a functional harmony.
 
-**Function**: Embellishing/passing, not dominant
+# Source Reference
+Open Music Theory, Part V: Chromaticism, Chapter 4: "Common-Tone Chords (CTo7 & CT+6)."
 
-## Common Tone Diminished Patterns
-
-**Embellishing tonic** (most common):
-```
-I  -  CT°7  -  I
-C     C#°7    C
-
-Common tone: C (retained)
-Other voices: chromatic neighbors
-Returns to same I chord
-```
-
-**Voice leading**:
-```
-I:     C-E-G-C    CT°7:  C-E♭-G♭-A   I:  C-E-G-C
-       ↓  ↓  ↓   ↓            ↓  ↓  ↓   ↓
-       C→ C  → C        (common tone, stays)
-       E→ E♭ → E        (chromatic lower neighbor)
-       G→ G♭ → G        (chromatic lower neighbor)
-       C→ A  → C        (chromatic neighbor, unusual)
-
-C sustained (common tone)
-Other voices move chromatically and return
-```
-
-**Embellishing dominant**:
-```
-V  -  CT°7  -  V
-G     G#°7    G
-
-Common tone: G
-Chromatic embellishment of V
-```
-
-## CT°7 vs. Functional vii°7
-
-**Functional vii°7** (dominant function):
-```
-vii°7  →  I   (resolves, functional progression)
-B°7      C
-
-Leading tone function
-Resolves to tonic
-Functional dominant substitute
-```
-
-**Common tone °7** (embellishing):
-```
-I  →  CT°7  →  I   (embellishes, returns to same chord)
-C      C#°7     C
-
-No functional progression
-Prolongs tonic
-Chromatic embellishment
-Common tone shared
-```
-
-**Key difference**: Function vs. embellishment
-
-## Voice Leading Patterns
-
-**Chromatic neighbor motion**:
-```
-I:        C-E-G-E
-CT°7:     C-E♭-G♭-B♭♭(A)
-I:        C-E-G-E
-
-All voices except C move by chromatic half step
-Create neighbor motion around chord tones
-Return to starting pitches
-```
-
-**Chromatic passing motion**:
-```
-I:        C-E-G-C
-CT°7:     C-E♭-G♭-A
-vi:       C-E-A-C (or other chord)
-
-Common tone C
-Other voices pass chromatically
-May continue to different chord
-```
-
-**Common tone can be in any voice**:
-```
-Soprano CT: Top voice sustains
-Bass CT: Bass voice sustains (less common)
-Inner CT: Alto or tenor sustains
-```
-
-## Spelling and Enharmonics
-
-**Enharmonic flexibility**:
-```
-C#°7 = C#-E-G-B♭
-    = D♭°7 = D♭-E(F♭)-G-B♭♭(A)
-
-Spelled to show voice leading clearly
-Often enharmonically respelled
-```
-
-**Typical spelling**:
-```
-When embellishing C major (I):
-CT°7 often spelled: C#°7 or D♭°7
-
-Shows chromatic relationship to C
-Depends on voice leading context
-```
-
-## Musical Context
-
-Common tone diminished seventh serves specific purposes:
-- **Chromatic embellishment**: Enriches static harmonies
-- **Dramatic color**: Adds tension without functional change
-- **Romantic idiom**: Particularly common in 19th century
-- **Prolongation**: Extends single harmony through chromaticism
-- **Voice leading interest**: Creates chromatic lines
-- **Non-functional**: Doesn't drive harmonic progression
-- **Returns to origin**: Embellishes and releases back
-- **Expressive intensification**: Heightens emotional content
-
-Essential chromatic device in Romantic harmony.
-
-## Examples
-
-### Basic
-
-**CT°7 embellishing tonic** (C major):
-```
-I:     C-E-G-C    CT°7:  C-E♭-G♭-B♭♭  I:  C-E-G-C
-       ↓  ↓  ↓   ↓       ↓   ↓   ↓   ↓   ↓  ↓  ↓
-       C→ C  → C         (common tone C)
-       E→ E♭ → E         (chromatic neighbor)
-       G→ G♭ → G         (chromatic neighbor)
-       C→ A  → C         (chromatic motion)
-
-C sustained throughout
-Other voices create chromatic embellishment
-```
-
-**Progression with CT°7**:
-```
-I  -  IV  -  I  -  CT°7  -  I  -  V  -  I
-C     F      C     C#°7     C     G     C
-
-CT°7 embellishes tonic between IV and V
-Prolongs I without functional change
-```
-
-**CT°7 embellishing dominant**:
-```
-V:     G-B-D-G    CT°7:  G-B♭-D♭-E   V:  G-B-D-G
-       ↓  ↓  ↓   ↓       ↓  ↓   ↓  ↓   ↓  ↓  ↓
-       G→ G  → G         (common tone G)
-       B→ B♭ → B         (chromatic neighbor)
-       D→ D♭ → D         (chromatic neighbor)
-       G→ E  → G         (chromatic motion)
-
-Embellishes dominant chord
-Chromatic enrichment
-```
-
-**In context**:
-```
-mm. 1-4: I - CT°7 - I - IV - V - I
-         C   C#°7   C   F    G   C
-
-CT°7 adds chromatic color in opening
-Prolongs tonic before moving to IV
-```
-
-**Not functional vii°7**:
-```
-Functional:  vii°7  -  I  (progression, resolution)
-             B°7       C
-
-Embellishing: I  -  CT°7  -  I  (embellishment, return)
-              C     C#°7     C
-
-Different function despite similar sound
-```
-
-### From Repertoire
-
-**Chopin, Nocturnes and Preludes**: Common tone diminished sevenths embellish tonic and dominant harmonies, chromatic enrichment typical of Romantic style.
-
-**Brahms, Piano works and songs**: CT°7 chords prolong harmonies, creates chromatic voice leading without functional progression.
-
-**Wagner, Operas**: Extensive use of embellishing diminished sevenths, chromatic harmony and prolongation essential to style.
-
-**Schubert, Lieder**: CT°7 for text expression, embellishes static harmonies with chromatic color.
-
-**Romantic period generally**: Common tone diminished sevenths standard technique for chromatic enrichment without functional change.
-
-## Related Concepts
-
-- **Prerequisite**: fully-diminished-seventh-chord, common-tones, chromatic-voice-motion, tonic-prolongation
-- **Leads to**: harmonic-embellishment, chromatic-modulation
-
-## Common Confusions
-
-- Common tone diminished seventh = °7 embellishing without functional progression
-- Abbreviation: CT°7 (common tone diminished seventh)
-- Fully diminished seventh (°7): all minor thirds
-- **Common tone**: One pitch shared with surrounding harmony
-- **Chromatic motion**: Other voices move by half step (neighbors/passing)
-- Returns to same harmony (I-CT°7-I or V-CT°7-V)
-- Different from functional vii°7 (which resolves to tonic as dominant substitute)
-- **Non-functional**: Doesn't create harmonic progression
-- **Embellishing function**: Prolongs/decorates single harmony
-- Most common: Embellishes tonic (I) or dominant (V)
-- Romantic idiom (Chopin, Brahms, Wagner, Schubert)
-- Voice leading: Chromatic neighbors or passing tones around common tone
-- Common tone can be in any voice (soprano, bass, inner)
-- Enharmonically flexible spelling (shows voice leading context)
-- Creates dramatic chromatic color without functional change
-- "Stationary" harmony with chromatic enrichment
-- Not vii°7/I (which would be functional secondary diminished)
-- Prolongational device (extends single harmony through time)
-- No root motion in bass (often same bass note)
-- Voice leading interest without harmonic drive
-
-## Source Reference
-
-Open Music Theory, Part IV: "Chromatic Harmony"
-Open Music Theory, Part IV: "Embellishing Diminished Seventh Chords"
+# Verification Notes
+- Re-extracted from source chapter 05-04; merged with existing v2 card
+- Preserved v2 voice-leading diagrams and construction procedure
+- Confidence rationale: High — detailed source treatment with clear examples

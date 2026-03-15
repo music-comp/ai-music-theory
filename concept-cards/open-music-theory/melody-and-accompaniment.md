@@ -1,97 +1,93 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Melody and Accompaniment
-category: theory
-source: Open Music Theory
-chapter: "Texture"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: melody-and-accompaniment
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: texture
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Texture"
+chapter_number: 21
+pdf_page: null
+section: "Melody and Accompaniment"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "accompanied melody"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - homophony
+extends:
+  - homophony
+related:
+  - homorhythm
+contrasts_with:
+  - polyphony
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is melody and accompaniment texture?"
+  - "How does it differ from homorhythm?"
 ---
 
-# Melody and Accompaniment
+# Quick Definition
 
-## Quick Definition
+A type of homophony with a clear, distinct melody supported by accompanying voices that provide harmony in a different rhythm.
 
-A homophonic texture in which one voice carries the primary melodic line while other voices or parts provide harmonic and rhythmic support without competing melodically, the most common texture in Western classical and popular music.
+# Core Definition
 
-## Formal Definition
+**Melody and accompaniment** is perhaps the most common type of homophony. It features a clear melody that is distinct from other supporting voices, which form an accompaniment. The melody and accompaniment often have different rhythms (unlike homorhythm, where all voices share the same rhythm). The accompaniment fills out the texture harmonically without competing with the melody for attention.
 
-**Melody and accompaniment** is a homophonic texture characterized by:
+# Prerequisites
 
-**Melodic voice**:
-- Carries the primary musical idea
-- Typically in the highest voice (soprano or instrumental top line)
-- Most rhythmically and melodically active
-- Draws the listener's primary attention
+- **Homophony**: the broader texture category
 
-**Accompaniment**:
-- Provides harmonic foundation (chords, bass line)
-- Supports melody without competing with it
-- May have distinct rhythmic patterns (alberti bass, arpeggios, block chords, etc.)
-- Typically less melodically complex than primary melody
-- Creates rhythmic momentum and harmonic color
+# Key Properties
 
-**Characteristics**:
-- Clear hierarchy: melody is primary, accompaniment is secondary
-- Accompaniment rhythm may differ from melody (unlike homorhythm)
-- Harmonic progression supports melodic direction
-- Most flexible and common homophonic texture
+- One clear predominant melody
+- Supporting voices provide harmonic accompaniment
+- Melody and accompaniment typically have different rhythms
+- Accompaniment is subordinate to the melody
+- Most common texture in Western music
 
-**Contrast with other textures**:
-- **Homorhythm**: All parts move in same rhythm (stricter homophony)
-- **Polyphony**: Multiple independent melodies (no hierarchy)
-- **Melody and accompaniment**: Clear melodic hierarchy with supportive accompaniment
+# Construction / Recognition
 
-## Musical Context
+Listen for a single prominent melody with supporting harmony underneath. The accompaniment may be arpeggiated chords, repeated patterns, or sustained harmonies.
 
-Melody and accompaniment dominates Western music:
-- **Classical period**: Mozart, Haydn piano sonatas (melody + alberti bass)
-- **Romantic period**: Art songs (Schubert Lieder), piano character pieces
-- **Popular music**: Voice/lead instrument with guitar/piano/band accompaniment
-- **Solo instrumental**: Piano, guitar pieces with melody in treble, harmony in bass
-- **Chamber music**: String quartet with first violin melody, others accompany
+# Context & Application
 
-This texture allows melody to be heard clearly while providing harmonic richness and rhythmic interest.
+This texture dominates popular music, art song, accompanied instrumental music, and most film music. It is the default texture for singer-songwriters, piano ballads, and orchestral melody passages.
 
-## Examples
+# Examples
 
-### Basic
+- Hindemith Flute Sonata: clear flute melody with piano accompaniment
+- Ella Fitzgerald singing "Misty": vocal melody with piano accompaniment
+- Pop song: singer with guitar strumming chords
 
-**Piano texture** (melody and accompaniment):
-- Right hand: melodic line (♩ ♪♪ 𝅗𝅥)
-- Left hand: alberti bass pattern (♪♪♪♪ ♪♪♪♪)
-- Melody is primary; left hand supports harmonically
+# Relationships
 
-**Song** (voice and piano):
-- Vocal line: melody
-- Piano: harmonic accompaniment (chords, arpeggios, bass line)
-- Piano supports but doesn't compete with voice
+- **Extends**: homophony
+- **See also**: homorhythm, polyphony
 
-**String quartet** (first movement):
-- Violin I: primary melody
-- Violin II, Viola, Cello: harmonic accompaniment (sustained notes, pizzicato, arpeggios)
+# Common Confusions
 
-### From Repertoire
+- Melody and accompaniment IS a type of homophony, not a separate texture category
+- The accompaniment is not independent -- it supports the melody harmonically
 
-Mozart Piano Sonata K. 545: melody in right hand, alberti bass in left. Schubert's "Erlkönig": voice carries melody, piano provides rhythmic accompaniment (triplet figures). Beatles "Yesterday": vocal melody with guitar/string accompaniment. Chopin Nocturnes: lyrical melody with arpeggiated accompaniment.
-
-## Related Concepts
-
-- **Prerequisite**: texture, homophony
-- **Leads to**: alberti-bass, sonata-form
-- **See also**: homorhythm, homophony, monophony
-
-## Common Confusions
-
-- Melody and accompaniment ≠ homorhythm (accompaniment can have different rhythm than melody)
-- Melody not always in highest voice (but usually is)
-- Accompaniment can be complex and interesting (not just "background")
-- Multiple melodies = polyphony, not melody and accompaniment
-- Melody and accompaniment is a type of homophony (the most common type)
-- Accompaniment ≠ "unimportant"—it provides essential harmonic and rhythmic foundation
-- In solo piano music, both hands can be by one player (still melody + accompaniment texture)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 21: "Texture"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: different-rhythm distinction from homorhythm, subordinate accompaniment, repertoire examples.

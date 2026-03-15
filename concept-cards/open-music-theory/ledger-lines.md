@@ -1,65 +1,104 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Ledger Lines
-category: theory
-source: Open Music Theory
-chapter: "Notation of Notes, Clefs, and Ledger Lines"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: ledger-lines
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Notation of Notes, Clefs, and Ledger Lines"
+chapter_number: 2
+pdf_page: null
+section: "Writing Ledger Lines"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "leger lines"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - staff
+  - clef
+  - pitch
+extends:
+  - staff
+related:
+  - grand-staff
+  - middle-c
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are ledger lines?"
+  - "How do ledger lines extend a staff?"
+  - "How do you correctly write notes on ledger lines?"
 ---
 
-# Ledger Lines
+# Quick Definition
 
-## Quick Definition
+Short horizontal lines added above or below a staff to extend its range for notes too high or too low to fit on the five-line staff.
 
-Short horizontal lines added above or below a staff to extend its range for notes that are too high or too low to fit on the five-line staff.
+# Core Definition
 
-## Formal Definition
+**Ledger lines** are small horizontal lines drawn to extend a staff upward or downward when notes exceed the range of the standard five-line staff. Each ledger line represents a continuation of the staff's alternating pattern of lines and spaces. Notes can be placed on ledger lines or in the spaces between them, following the same letter-name pattern as if the staff were simply continuing in that direction. Ledger lines can be used with any clef.
 
-**Ledger lines** (also spelled "leger lines") are small horizontal lines drawn to extend a staff upward or downward when notes exceed the range of the standard five-line staff. Each ledger line represents a continuation of the staff's alternating pattern of lines and spaces.
+# Prerequisites
 
-Ledger lines can be used with any clef. Notes can be placed on ledger lines or in the spaces between them, following the same letter-name pattern as if the staff were simply continuing in that direction.
+- **Staff**: the five-line system that ledger lines extend
+- **Clef**: determines which pitches the extended lines represent
+- **Pitch**: the concept of highness/lowness being extended
 
-## Musical Context
+# Key Properties
 
-Ledger lines allow notation of pitches beyond the staff's normal range without changing clefs. However, excessive ledger lines become difficult to read, so performers often prefer music to use an appropriate clef or to change clefs when the range demands it.
+- Extend the staff above or below in the same line-space pattern
+- Each space and line above/below the staff gets a letter name as if the staff continued
+- Should be spaced the same distance apart as the staff lines
+- Only the ledger lines needed for a given note are drawn (no extra lines above/below)
 
-Ledger lines are essential for instruments with wide ranges (like piano) and for passages where the tessitura temporarily moves outside the staff.
+# Construction / Recognition
 
-## Examples
+When writing a note on a ledger line, draw only the line(s) the note requires. Do not add an extra ledger line above or below the note. Ledger lines are shorter than staff lines, extending just slightly beyond the notehead on each side.
 
-### Basic
+# Context & Application
 
-Above a treble clef staff:
+Ledger lines are essential for instruments with wide ranges (especially piano) and for passages where the tessitura temporarily moves outside the staff. Middle C is the most commonly encountered ledger-line note, appearing on a ledger line between the treble and bass staves. Excessive ledger lines become difficult to read, which is why multiple clefs exist.
 
-- First ledger line above = A
-- Space above that = B
-- Second ledger line above = C
+# Examples
 
-Below a bass clef staff:
+- Above treble clef: first ledger line = G5, space above = A5, second ledger line = B5
+- Below bass clef: first ledger line = E2, space below = D2, second ledger line = C2
+- Middle C appears on one ledger line below treble clef or one ledger line above bass clef
 
-- First ledger line below = E
-- Space below that = D
-- Second ledger line below = C
+# Relationships
 
-### From Repertoire
-
-Piano music frequently uses ledger lines, especially middle C (which appears on a ledger line between the treble and bass staves). High notes in flute music and low notes in bass vocal music commonly require ledger lines.
-
-## Related Concepts
-
-- **Prerequisite**: staff, clef, pitch
+- **Extends**: staff
 - **Leads to**: grand-staff
-- **See also**: middle-c
+- **See also**: middle-c, clef
 
-## Common Confusions
+# Common Errors
 
-- Do not draw an extra ledger line above or below a note—only draw the line(s) the note actually sits on or the lines needed to clarify spacing
-- Ledger lines should be spaced the same distance apart as the staff lines
-- Each ledger line represents a single line of the extended staff; there are spaces between ledger lines too
-- When a note is on a ledger line, draw only that line, not all the lines below/above it
+- Adding an extra ledger line above or below the intended note
+- Spacing ledger lines unevenly compared to staff lines
+- Making ledger lines too long (they should be short, just slightly wider than the notehead)
 
-## Source Reference
+# Common Confusions
+
+- Notes on ledger lines follow the same line-space letter-name pattern as the staff -- they are simply a continuation
+- Both the line and the space of each ledger line can hold notes
+
+# Source Reference
 
 Open Music Theory, Part I, Chapter 2: "Notation of Notes, Clefs, and Ledger Lines"; Chapter 3: "Reading Clefs"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: spelling variant, common errors about extra ledger lines, examples of specific pitches on ledger lines.

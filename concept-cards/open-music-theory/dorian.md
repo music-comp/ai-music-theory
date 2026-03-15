@@ -1,84 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Dorian Mode
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: dorian
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
+chapter_number: 14
+pdf_page: null
+section: "Modes and the Parallel Relationship"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - mode
+  - minor-scale
+extends:
+  - mode
+related:
+  - aeolian
+  - mixolydian
+contrasts_with:
+  - aeolian
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the dorian mode?"
+  - "How does dorian differ from natural minor?"
 ---
 
-# Dorian Mode
+# Quick Definition
 
-## Quick Definition
+A dark (minor-sounding) diatonic mode with the pattern W-H-W-W-W-H-W, like natural minor but with a raised ^6.
 
-A dark diatonic mode with the interval pattern W-H-W-W-W-H-W, equivalent to natural minor with a raised sixth degree (^6).
+# Core Definition
 
-## Formal Definition
+The **dorian mode** has the ascending pattern W-H-W-W-W-H-W. It is the brightest of the four dark modes. Compared to natural minor (aeolian), dorian has a raised ^6 (la instead of le). Solfege: do, re, me, fa, sol, la, te. The raised ^6 gives dorian a characteristically lighter, less mournful quality than natural minor.
 
-**Dorian mode** is a seven-note diatonic mode with the ascending pattern of whole and half steps: W-H-W-W-W-H-W.
+# Prerequisites
 
-**Compared to natural minor (Aeolian)**:
-- Same as natural minor except ^6 is raised by one half step
-- Solfège: do-re-me-fa-sol-la-te-do (where "la" = raised ^6)
+- **Mode**: the general concept
+- **Minor scale**: dorian is described relative to natural minor
 
-**Scale degrees** (compared to Aeolian):
-- ^1, ^2, ♭^3, ^4, ^5, ^6, ♭^7
+# Key Properties
 
-**Characteristics**:
-- Contains minor third (me/♭^3), making it a "dark" mode
-- Perfect fourth above tonic
-- Perfect fifth above tonic
-- Major sixth (la/^6) instead of minor sixth (le/♭^6)
-- Minor seventh (subtonic)
+- Pattern: W-H-W-W-W-H-W
+- Like natural minor with raised ^6
+- Brightest dark mode
+- Contains me (lowered ^3) -- a dark mode
+- Characteristic interval: major 6th above tonic (^6 = la, not le)
 
-**Position in modal brightness spectrum**: Fourth position, brightest of the dark modes (between Mixolydian and Aeolian)
+# Construction / Recognition
 
-## Musical Context
+Start with natural minor and raise ^6 by a half step. Or apply the W-H-W-W-W-H-W pattern.
 
-Dorian's raised sixth creates distinctive character:
-- Brighter than natural minor due to raised ^6
-- Neither fully major nor fully minor in character
-- Common in folk music, jazz, and medieval music
-- Associated with "sophisticated" or "bittersweet" quality
-- Minor tonic with major subdominant (iv becomes IV)
+# Context & Application
 
-The raised ^6 is the defining characteristic distinguishing Dorian from Aeolian (natural minor).
+Dorian is common in jazz, folk, pop, and medieval music. The raised ^6 distinguishes it from aeolian and creates a warmer minor sound. "Scarborough Fair" and many jazz minor tunes use dorian.
 
-## Examples
+# Examples
 
-### Basic
+- C dorian: C-D-Eb-F-G-A-Bb-C (note: A-natural, not Ab as in C natural minor)
+- D dorian: D-E-F-G-A-B-C-D (all white keys)
 
-**D Dorian**:
-- Pattern: D-E-F-G-A-B-C-D
-- W-H-W-W-W-H-W
-- Raised ^6: B♮ (instead of B♭ in D natural minor)
+# Relationships
 
-**A Dorian**:
-- Pattern: A-B-C-D-E-F♯-G-A
-- Raised ^6: F♯ (instead of F♮ in A natural minor)
+- **Extends**: mode
+- **See also**: aeolian, minor-scale, mixolydian
 
-**Solfège**: do-re-me-fa-sol-la-te-do
+# Common Errors
 
-### From Repertoire
+- Confusing dorian with natural minor (dorian has raised ^6)
 
-"Scarborough Fair" (traditional English ballad) is in Dorian mode. Miles Davis's "So What" explores D Dorian. Simon & Garfunkel's "Scarborough Fair" arrangement uses Dorian. Medieval plainchant frequently uses Dorian. Pink Floyd's "Another Brick in the Wall, Part 2" features Dorian mode.
+# Common Confusions
 
-## Related Concepts
+- Dorian is NOT the same as natural minor -- the raised ^6 is the distinguishing feature
 
-- **Prerequisite**: scale, mode, minor-scale, whole-step, half-step
-- **See also**: aeolian, phrygian, mixolydian, diatonic-modes
-
-## Common Confusions
-
-- Dorian vs. natural minor: Dorian has raised ^6 (B in D), natural minor has lowered ^6 (B♭ in D)
-- Dorian ≠ Lydian (Dorian is dark/minor; Lydian is bright/major)
-- Dorian is not "minor with a twist"—it's its own mode with distinct character
-- The raised ^6 creates major sixth from tonic, not minor sixth
-- Dorian mode ≠ D minor key (mode has no functional harmony)
-- Dorian's ^6 is natural/raised compared to Aeolian (not "lowered" from major)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 14: "Introduction to Diatonic Modes and the Chromatic Scale"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: raised ^6 distinction, solfege syllables, D dorian white-key example.

@@ -1,180 +1,78 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Orchestral Blend
-category: theory
-source: Open Music Theory
-chapter: "Core Principles of Orchestration"
-pdf_page: null
-chapter_number: 10
-unit: null
+slug: orchestral-blend
+# === CLASSIFICATION ===
+category: application
+subcategory: orchestration
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Core Principles of Orchestration"
+chapter_number: 10
+pdf_page: null
+section: "X.1"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - orchestral-crescendo
+  - antiphony
+  - dovetailing
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do you blend orchestral sounds?"
+  - "What are the principles of orchestral chord voicing?"
+  - "How do voice-leading principles apply to orchestration?"
 ---
 
-# Orchestral Blend
+# Quick Definition
+Orchestral blend involves treating each instrumental section (winds, brass, strings) as a self-contained unit following four-part writing principles: include all important harmonic pitches, avoid overdoubling the third, use densest packing in the middle register, wider spacing in the bass, and wider spacing in the very highest registers.
 
-## Quick Definition
+# Core Definition
+For tutti orchestration, the default approach blends by treating each section as self-contained. The principles of four-part writing still apply: voice-leading, spacing, and doubling conventions carry over from the choral context. Chord spacing types include close, open, and interlocking voicing. For blended sound, interlocking voicing with balanced registers is preferred. For distinct color per note, wider spacing is used. Doubling melody lines requires compatible balance of equally strong instruments in similar registers. Texture choices (polyphonic, melody-and-accompaniment) affect instrument distribution: polyphonic writing balances parts; melody-and-accompaniment foregrounds the melody through timbre, register, and texture contrast.
 
-The default goal in tonal orchestration of combining instruments so their timbres merge into a unified sound rather than remaining distinct, achieved by treating each section as self-contained, matching instrument strengths and registers, and applying voice-leading principles to each orchestral section independently.
+# Prerequisites
+None specific (but four-part writing knowledge assumed)
 
-## Formal Definition
+# Key Properties
+1. Each section treated as self-contained four-part writing
+2. Densest packing in middle register
+3. Wider spacing in bass (octave doublings: cello + bass)
+4. Wider spacing returns in very high registers
+5. Avoid overdoubling the third
+6. Interlocking voicing for blend; wider spacing for color
+7. Voice-leading principles still apply
 
-**Orchestral Blend** is the practice of combining instrumental forces to create a cohesive, unified sound rather than highlighting individual timbres.
+# Context & Application
+These principles apply to tonal orchestration but extend to much 20th-century writing. The Mozart 40/iii example shows balanced two-part invention across three octaves; Schubert 8/i shows deliberate "odd" doubling (oboe + clarinet unison) for expressive effect.
 
-**Principles**:
-- Treat each section (strings, winds, brass) as **self-contained**
-- Apply **four-part writing** principles within each section
-- Balance **instrument strengths** with appropriate register choices
-- Use **compatible timbres** for simultaneous combinations
-- Match **register and dynamics** for equal blend
+# Examples
+**Example 1** (Mozart 40/iii): Balanced lines in both winds and strings across three octaves.
+**Example 2** (Schubert 8/i): Unusual oboe-clarinet unison for unsettled mood, contrasting with blended viola-clarinet thirds for the second theme.
 
-**Approach**:
-```
-Tutti Blend:
-Strings: [complete harmony, self-contained voicing]
-Winds:   [complete harmony, self-contained voicing]
-Brass:   [complete harmony, self-contained voicing]
+# Relationships
+## Related
+- **orchestral-crescendo** -- Successive combination technique
+- **antiphony** -- Distributing material between groups
+- **dovetailing** -- Sharing lines between parts
 
-Each section can stand alone harmonically
-Combined = blended orchestral sound
-```
+# Common Confusions
+- **Confusion**: Orchestration requires entirely new principles
+  **Clarification**: Four-part writing principles still apply, adapted for orchestral forces
 
-**Application**: The primary default for tonal orchestration; divergence from blend creates intentional contrast for compositional effect.
+# Source Reference
+Open Music Theory, Part X, Chapter 1: "Core Principles of Orchestration."
 
-## Blend Techniques
-
-**Section independence**:
-```
-Woodwinds:    Fl.1  Fl.2  Ob.1  Ob.2  [complete chord]
-Brass:        Hn.1  Hn.2  Tpt.1 Tpt.2 [complete chord]
-Strings:      Vln1  Vln2  Vla   Vc    [complete chord]
-
-Each section contains all necessary harmonic pitches
-Result: Rich, blended tutti sound
-```
-
-**Interlocking voicing** (for blend):
-```
-      Fl.1 ────────
-      Ob.1 ──────
-      Fl.2 ────
-      Ob.2 ──
-      Cl.1
-
-Instruments interleave by register
-Creates integrated, mixed timbre
-```
-
-**Register matching**:
-```
-For blend: Match instruments in compatible ranges
-  - Similar dynamics at that register
-  - Similar timbral character
-  - Equal strength/projection
-```
-
-## Blended vs. Contrasting Doublings
-
-**Blended doublings** (optimal):
-```
-Viola + Clarinet in thirds
-  - Similar timbral warmth
-  - Compatible ranges
-  - Equal projection
-  → Creates new, unified sound
-```
-
-**Contrasting doublings** (special effect):
-```
-Oboe + Clarinet in unison (Schubert 8)
-  - Different timbral characters
-  - Creates unsettled quality
-  → Deliberate compositional choice
-```
-
-## Musical Context
-
-Blend serves specific purposes in orchestration:
-- **Tutti passages**: Full orchestra sounds unified
-- **Chorale textures**: Harmonic writing as integrated sound
-- **Sustained chords**: Sections merge into single timbre
-- **Traditional orchestration**: Default expectation for tonal music
-- **Structural clarity**: Main material delivered clearly
-- **Dynamic balance**: All instruments contribute equally
-
-Blend is not a law but the default; contrast is the exception used for effect.
-
-## Examples
-
-### Basic
-
-**Blended chord voicing** (C major tutti):
-```
-Flutes:   G5  E5
-Oboes:    C5  G4
-Clarinets: E4  C4
-Bassoons:  G3  C3
-
-Horns:    E4  C4
-Trumpets: G5  E5
-
-Violins I:  G5  E5
-Violins II: C5  G4
-Violas:     E4  C4
-Cellos:     G3
-Basses:     C2
-
-Each section: complete C major chord
-All sections: blended tutti
-```
-
-**Interlocking winds** (for blend):
-```
-Register:   Higher → → → → → → Lower
-            Fl.1  Ob.1  Fl.2  Ob.2  Cl.1  Cl.2
-
-Alternating timbres by register
-Creates integrated wind color
-```
-
-**Compatible doublings**:
-```
-Blend: Clarinet + Viola (warm, middle register)
-Blend: Flute + Violin (bright, upper register)
-Blend: Bassoon + Cello (dark, bass register)
-
-Matched timbral qualities produce unified sound
-```
-
-### From Repertoire
-
-**Mozart, Symphony No. 40, iii**: Two-part invention with both parts played in three octaves by both winds and strings, creating blended, balanced lines through equal distribution.
-
-**Schubert, Symphony No. 8, i (second theme)**: Cello melody accompanied by optimally blended viola and clarinet in thirds, demonstrating ideal timbral pairing.
-
-**Brahms, Symphonies**: Frequent use of self-contained sections with each instrumental choir voiced independently, creating rich blended tuttis.
-
-**Beethoven, Symphony No. 5**: Brass section used as self-contained unit with complete harmonic voicing, blending with equally complete string and wind sections.
-
-## Related Concepts
-
-- **Prerequisite**: voice-leading
-- **See also**: orchestral-spacing
-
-## Common Confusions
-
-- Blend is the **default** in tonal orchestration, not a special effect
-- Each section should be **self-contained** harmonically
-- **Four-part principles** apply within each section
-- Interlocking voicings create blend; wide spacing creates individual colors
-- Blended doublings match **similar timbres** and **registers**
-- Contrast is achieved by **departing** from blend (not the reverse)
-- Balance requires matching **dynamic strength** at chosen registers
-- Blend does not mean **identical** instruments; compatible ones work
-- Schubert's oboe-clarinet unison is **unusual**, not typical doubling
-- Mozart's viola-clarinet pairing is **optimal** blend example
-- Blend creates **unified** orchestral color; contrast creates **distinct** colors
-- Consider **projection** and **volume** when matching instruments
-
-## Source Reference
-
-Open Music Theory, Part X: "Orchestration"
-Open Music Theory, Chapter 10-01: "Core Principles of Orchestration"
+# Verification Notes
+- Definition source: From 10-01
+- Confidence rationale: High
+- Preserved from v2: Mozart and Schubert examples, spacing principles
+- Cross-reference status: Verified

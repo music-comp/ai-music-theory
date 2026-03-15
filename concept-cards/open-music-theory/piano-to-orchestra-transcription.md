@@ -1,194 +1,79 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Piano-to-Orchestra Transcription
-category: theory
-source: Open Music Theory
-chapter: "Transcription from Piano"
-pdf_page: null
-chapter_number: 10
-unit: null
+slug: piano-to-orchestra-transcription
+# === CLASSIFICATION ===
+category: application
+subcategory: orchestration
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Transcription from Piano"
+chapter_number: 10
+pdf_page: null
+section: "X.3"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - orchestral-blend
+  - orchestral-crescendo
+extends: []
+related:
+  - attack-sustain-effect
+  - dovetailing
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do you transcribe piano music for orchestra?"
+  - "What is the difference between transcription and translation?"
 ---
 
-# Piano-to-Orchestra Transcription
+# Quick Definition
+Orchestrating piano music is best understood as translation rather than transcription: going back to the core musical idea "behind" the piano version and re-realizing it for orchestra. Key questions: What is the piano effect trying to create? How might the orchestra achieve something similar? What additional rhythms or parts can be extracted from the harmony?
 
-## Quick Definition
+# Core Definition
+Orchestrating from piano involves: extending notes (sustain pedal implies held notes for the orchestra), extracting accents (separate "attack" parts from "sustain" parts), reworking broken octaves (other instruments can repeat notes more easily), and breaking up large arpeggiation into dovetailed parts. Changing keys between piano and orchestral versions may be appropriate (especially for earlier repertoire). Case studies include Mahler 4/iv (timbral variations on an arpeggiated accompaniment), Bach BWV 1006/Cantata 29 (extracting implied lines from solo violin), Mussorgsky/Ravel/Stokowski Pictures at an Exhibition (comparing three orchestrators' approaches), and Stravinsky's Rite of Spring (long-range bass crescendo).
 
-The process of adapting piano music for orchestra, best approached as translation rather than literal transcription, requiring identification of the core musical idea behind the piano writing, consideration of how to achieve equivalent effects with orchestral forces, and creative extraction of additional rhythmic and harmonic material implied by the piano texture.
+# Prerequisites
+- Orchestral blend and orchestral crescendo techniques
 
-## Formal Definition
+# Key Properties
+1. Translation, not mere transcription
+2. Extend sustained pedal notes
+3. Extract accents as separate attack-sustain parts
+4. Rework pianistic figures (broken octaves, large arpeggiation)
+5. Key changes may be appropriate for non-piano idioms
+6. Multiple valid solutions exist for any passage
 
-**Piano-to-Orchestra Transcription** is the art of realizing piano music for orchestral forces.
+# Context & Application
+Orchestrating piano music forces close reading of the original and creative reimagining for orchestral forces. The technique has a rich repertoire of examples, from Bach's self-orchestrations to Ravel's famous orchestration of Mussorgsky.
 
-**Approach**:
-- Think of **translation**, not literal transcription
-- Identify the **core musical idea** "behind" the piano version
-- Ask: What is the piano effect trying to **create**?
-- Consider: How might this be best achieved by **orchestra**?
+# Examples
+**Example 1** (Mahler 4/iv): Multiple timbral variations of the same harp accompaniment pattern.
+**Example 2** (Mussorgsky, "Gnomus"): Comparing Ravel and Stokowski approaches to the same piano original.
+**Example 3** (Stravinsky, Rite of Spring, "Danse Sacrale"): Bass line scored with systematic timbral crescendo across sections.
 
-**Key Questions**:
-```
-1. What effect is the piano trying to create?
-2. How can orchestra achieve similar (or better) effect?
-3. What additional rhythms/parts can be extracted?
-4. What pianistic idioms need reworking?
-```
+# Relationships
+## Builds Upon
+- **orchestral-blend** and **orchestral-crescendo** -- Core orchestration techniques applied
+## Related
+- **attack-sustain-effect** -- Useful for orchestrating accented passages
+- **dovetailing** -- Useful for orchestrating continuous figuration
 
-**Methods vary**: Some composers write for piano first, others directly for orchestra, most use short-score format that is neither.
+# Common Confusions
+- **Confusion**: The orchestration should match the piano exactly
+  **Clarification**: Think translation, not transcription; the goal is the core musical idea
 
-## Extraction Techniques
+# Source Reference
+Open Music Theory, Part X, Chapter 3: "Transcription from Piano."
 
-**Extending notes** (from pedal):
-```
-Piano:    [chord with sustain pedal down]
-
-Orchestra: Extract held notes to separate parts
-           Sustain each pitch beyond notated length
-           Match to pedal change points
-```
-
-**Extracting accents**:
-```
-Piano:    [melody with accent marks]
-
-Orchestra: Main parts play "as written"
-           Additional parts provide attack only
-           Attack-sustain separation
-```
-
-**Extracting implied voices**:
-```
-Piano:    [arpeggiated accompaniment]
-
-Orchestra: Separate chord tones to own parts
-           Different rhythms per voice
-           Reveal hidden counterpoint
-```
-
-## Pianistic Idioms Requiring Reworking
-
-**Broken octaves**:
-```
-Piano:    C3-C4-C3-C4-C3-C4 (alternating)
-
-Orchestra: NOT literal transcription
-           Consider: sustained octaves, OR
-           Different instruments on each octave, OR
-           Rhythmic redistribution
-
-Many instruments repeat notes better than piano
-```
-
-**Large arpeggiation**:
-```
-Piano:    [florid arpeggio across 4 octaves]
-
-Orchestra: Break into multiple parts
-           Dovetail instruments for continuous effect
-           Maintain register and rhythmic levels
-```
-
-**Tremolo/repeated chords**:
-```
-Piano:    [tremolo chords]
-
-Orchestra: String tremolo natural
-           Or rhythmic articulation
-           Or sustained with attack-sustain
-```
-
-**Key changes**:
-```
-Earlier music: Often different keys for keyboard vs. orchestra
-               Baroque/Classical used narrower orchestral key set
-
-Modern: Less common, but possible for idiomatic reasons
-        (Example: F# to F for string open strings)
-```
-
-## Musical Context
-
-Transcription serves specific purposes:
-- **Repertoire expansion**: Great piano music becomes orchestral
-- **Pedagogical value**: Teaches similarities and differences
-- **Compositional insight**: Reveals underlying musical ideas
-- **Practical music-making**: Expands performance possibilities
-- **Analytical understanding**: Forces close reading of original
-
-Transcription requires deep understanding of both media.
-
-## Examples
-
-### Basic
-
-**Chopin Prelude Op. 28/13 (for string quartet)**:
-```
-Original LH:  [broken thirds figure]
-
-Transcription solution:
-Viola:  [broken thirds figure]
-Cello:  [main chord notes]
-
-Separation reveals metrical dissonance
-12/8 (cello) vs. 6/4 (other parts)
-```
-
-**Beethoven Op. 13 (Pathetique, for orchestra)**:
-```
-Original LH:  [broken octaves on C pedal]
-
-Transcription solution:
-Viola:      C4 (quarter notes)
-Cello:      C3 (eighth notes)
-Bass:       C2 (half notes)
-Timpani:    C3 (rolls and accents)
-
-Three octaves, three pulse levels
-Pedal distributed across instruments
-```
-
-**Adding parts based on accents**:
-```
-Original:   [melody with sfz marks]
-
-Transcription:
-- Main instruments: full melody
-- Added parts: sfz notes only
-- Progressive entries at sfz points
-```
-
-### From Repertoire
-
-**Mahler, Symphony No. 4, iv**: Mahler's own transcription of his song; harp nearly identical to piano, but strings create varied timbral realizations of arpeggiated accompaniment across movement.
-
-**Bach, Cantata 29/i (from Partita BWV1006)**: Bach's own orchestration of solo violin work; extracts implied harmonies, adds quarter-note part distributed across trumpets and orchestra, brings out melodic eighth notes with parallel thirds.
-
-**Ravel, orchestration of Mussorgsky's Pictures at an Exhibition**: Masterly translation; adds characteristic gestures (string glissandos), varies orchestration for repeats, creates new timbral effects unavailable on piano.
-
-**Stokowski, Pictures at an Exhibition**: Different approach from Ravel; cuts repeats, sustains through rests, resembles Ravel's distinctive additions while more freely modifying material.
-
-## Related Concepts
-
-- **Leads to**: texture-redistribution
-- **See also**: dovetailing, attack-sustain-effect
-
-## Common Confusions
-
-- Think **translation**, not literal transcription
-- Identify **core idea** behind piano writing
-- Piano idioms often need **reworking** for orchestra
-- Broken octaves = **rarely** literal in orchestra
-- Large arpeggios = **dovetail** across instruments
-- **Extract** implied voices from arpeggiated figures
-- **Extend notes** based on pedal markings
-- **Extract accents** for attack-sustain separation
-- Key changes **acceptable** for idiomatic reasons
-- Mahler's song-symphony = **model** of self-transcription
-- Bach extracts **implied** harmony, adds **new** material
-- Ravel vs. Stokowski = **different approaches** to same work
-- Consider what orchestra can do **better** than piano
-- Maintain **register and rhythm** at minimum
-
-## Source Reference
-
-Open Music Theory, Part X: "Orchestration"
-Open Music Theory, Chapter 10-03: "Transcription from Piano"
+# Verification Notes
+- Definition source: From 10-03
+- Confidence rationale: High
+- Preserved from v2: Mahler, Bach, Mussorgsky/Ravel/Stokowski, Stravinsky examples
+- Cross-reference status: Verified

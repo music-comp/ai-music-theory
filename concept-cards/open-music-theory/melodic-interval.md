@@ -1,83 +1,88 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Melodic Interval
-category: theory
-source: Open Music Theory
-chapter: "Intervals"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: melodic-interval
+
+# === CLASSIFICATION ===
+category: intervals
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Intervals"
+chapter_number: 16
+pdf_page: null
+section: "Size"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval
+extends:
+  - interval
+related:
+  - harmonic-interval
+contrasts_with:
+  - harmonic-interval
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a melodic interval?"
+  - "How does a melodic interval differ from a harmonic interval?"
 ---
 
-# Melodic Interval
+# Quick Definition
 
-## Quick Definition
+An interval in which the two notes are played or sung one after the other (sequentially), not simultaneously.
 
-An interval formed by two pitches sounded sequentially (one after the other) rather than simultaneously, creating the building blocks of melodic lines.
+# Core Definition
 
-## Formal Definition
+A **melodic interval** is an interval whose two notes sound separately -- one after the other. Melodic intervals form the building blocks of melodies. They can be ascending (lower note first) or descending (higher note first). The same size and quality rules apply as for all intervals.
 
-A **melodic interval** is the pitch distance between two notes performed successively in time. The two pitches are articulated separately, with one note ending before the next begins (or with a brief overlap).
+# Prerequisites
 
-**Characteristics**:
-- Notes sound one after the other (sequential, not simultaneous)
-- Can ascend (lower to higher) or descend (higher to lower)
-- Measured the same way as harmonic intervals (size + quality)
-- Creates horizontal motion in music (melody)
+- **Interval**: the concept being specialized
 
-**Direction**:
-- **Ascending melodic interval**: moves from lower pitch to higher pitch
-- **Descending melodic interval**: moves from higher pitch to lower pitch
+# Key Properties
 
-**Measurement**: Same as harmonic intervals (unison, second, third, fourth, fifth, sixth, seventh, octave) with qualities (perfect, major, minor, augmented, diminished).
+- Notes sound sequentially (one then the other)
+- Can be ascending or descending
+- Form the basis of melody
+- Same identification method as all intervals (size + quality)
 
-**Contrast with harmonic intervals**: Melodic = successive; harmonic = simultaneous
+# Construction / Recognition
 
-## Musical Context
+Melodic intervals appear in a melody as successive notes. They are visually distinguished from harmonic intervals because the notes appear at different horizontal positions on the staff.
 
-Melodic intervals shape melodic contour and character:
-- Small intervals (seconds, thirds) create stepwise, smooth melodies
-- Large intervals (sixths, sevenths, octaves) create dramatic leaps
-- Melodic consonance/dissonance differs from harmonic
-  - Melodic fourths are smooth; harmonic fourths can be dissonant
-- Intervallic content defines melodic style and character
-- Voice leading principles govern melodic interval choices
+# Context & Application
 
-## Examples
+Melodic intervals define the shape and character of melodies. Stepwise motion (2nds) creates smooth melodies; larger leaps (4ths, 5ths, octaves) create more dramatic, angular melodies.
 
-### Basic
+# Examples
 
-**Ascending melodic intervals**:
-- C to D (one after the other) = ascending major second (M2)
-- C to E = ascending major third (M3)
-- C to G = ascending perfect fifth (P5)
+- In "Twinkle Twinkle Little Star": the opening C-C is a melodic unison, C-G is a melodic 5th
 
-**Descending melodic intervals**:
-- G to C (one after the other) = descending perfect fifth (P5)
-- E to C = descending major third (M3)
-- D to C = descending major second (M2)
+# Relationships
 
-**In notation**: Two notes written separately on staff, performed in sequence
+- **Extends**: interval
+- **See also**: harmonic-interval
 
-### From Repertoire
+# Common Confusions
 
-"Somewhere Over the Rainbow" opens with ascending octave (P8). "My Bonnie Lies Over the Ocean" begins with ascending major sixth (M6). Bach's melodies feature smooth stepwise motion (seconds) with occasional leaps. Romantic melodies often use wide leaps for dramatic effect.
+- Melodic intervals sound sequentially; harmonic intervals sound simultaneously
 
-## Related Concepts
-
-- **Prerequisite**: pitch, interval, staff, note
-- **Leads to**: voice-leading
-- **See also**: harmonic-interval, intervals, interval-quality
-
-## Common Confusions
-
-- Melodic vs. harmonic interval: melodic = notes in sequence; harmonic = notes together
-- Same size/quality applies to both types (M3 melodic = M3 harmonic in measurement)
-- Melodic consonance ≠ harmonic consonance (perfect fourth is melodically smooth but harmonically dissonant in some contexts)
-- Ascending vs. descending: direction matters for perception but not for interval name
-- Melodic interval ≠ melodic contour (interval = specific distance; contour = overall shape)
-- Two notes played simultaneously ≠ melodic interval (that's harmonic)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 16: "Intervals"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: sequential sounding, ascending/descending distinction.

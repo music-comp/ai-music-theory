@@ -1,70 +1,93 @@
 ---
-concept: "AABA Form (32-Bar Song Form)"
+# === CORE IDENTIFICATION ===
+concept: AABA Form and Strophic Form
+slug: aaba-form
+
+# === CLASSIFICATION ===
 category: form
-source: Open Music Theory
-chapter: "AABA Form and Strophic Form"
-pdf_page: null
-chapter_number: 7
-unit: null
+subcategory: pop-form
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "AABA Form and Strophic Form"
+chapter_number: 4
+pdf_page: null
+section: "VII.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "32-bar song form"
+  - "AABA"
+  - "strophic form"
+  - "AAA form"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - phrase-structure
+  - harmonic-closure
+extends: []
+related:
+  - verse-chorus-form
+  - 12-bar-blues
+contrasts_with:
+  - verse-chorus-form
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are AABA form and strophic form?"
+  - "What is the function of a bridge section in AABA form?"
 ---
 
-## Quick Definition
+# Quick Definition
+Strophic form (AAA) repeats the same basic strophe throughout. AABA form (32-bar song form) has two strophes (AA), a contrasting bridge (B), and a return of the strophe (A). Both were especially common in older pop (1960s and earlier). The strophe is the main section (harmonically closed, srdc internal pattern); the bridge contrasts and builds expectation for the strophe's return (often harmonically open, ending on dominant).
 
-A song form with two strophes (AA), a contrasting bridge (B), and a return to the strophe (A), traditionally with each section being 8 bars for a total of 32 bars.
+# Core Definition
+Strophe (A): presents primary lyrical/musical content, harmonically closed, self-contained. Internal structure most commonly srdc (statement-restatement-departure-conclusion) for four-phrase strophes, or aab for three-phrase strophes (12-bar blues). Bridge (B): contrasting section that builds expectation for A's return; emphasizes non-tonic harmonies, commonly ends on dominant; must be followed by A for its function to be satisfied. AABA typically followed by another complete cycle (AABA) or an incomplete one (BA). Introduction (I): transitions from silence to first core section; short, usually instrumental. Outro (O): transitions back to silence, often uses fadeout or "bookend" material from intro. Coda (X): song-ending section with new material. Refrains: lyric-invariant passages within lyric-variant sections (head refrain or tail refrain).
 
-## Formal Definition
+# Prerequisites
+- Phrase structure (2-, 3-, 4-part sections)
+- Harmonic closure concepts
 
-AABA form, also called 32-bar song form, structures a song as:
-- **A (Strophe)**: Primary musical and lyrical content, harmonically closed, often prolonging tonic
-- **A (Strophe)**: Repetition of the first strophe
-- **B (Bridge)**: Contrasting section that builds tension and expectation for the return
-- **A (Strophe)**: Return of the strophe, providing resolution
+# Key Properties
+1. Strophic (AAA): same strophe repeated; may include auxiliary sections
+2. AABA: AA (strophe x2) + B (bridge) + A (strophe return)
+3. Strophe is harmonically closed; bridge is harmonically open
+4. AABA commonly followed by AABA or BA cycle
+5. srdc most common internal pattern for strophes
+6. Bridge builds expectation for return of A
+7. Refrains: lyric-invariant passages within sections (tail refrain = title lyrics at end)
+8. More common in older pop (pre-1970s)
 
-The form typically continues with additional cycles, either complete (AABA) or partial (BA). After the first complete cycle, lyrics usually repeat rather than introducing new text.
+# Context & Application
+"Blue Suede Shoes" (Carl Perkins, 1955): strophic form — all sections share same underlying music. "I Want to Hold Your Hand" (Beatles, 1963): AABA form with intro, bridge at 0:52, strophe return at 1:11. "Cathedrals" (Jump, Little Children): head refrain ("In the shadows of tall buildings..."). Based on research of Jay Summach (2012).
 
-## Musical Context
+# Examples
+**Example 1** ("Blue Suede Shoes"): Strophic form — intro, strophe, strophe, instrumental strophe, strophe, strophe.
+**Example 2** ("I Want to Hold Your Hand"): AABA with intro, followed by BA repeat.
 
-AABA form was especially common in Golden Age popular song (Tin Pan Alley era) and early rock and roll through the 1960s. The name "32-bar form" comes from the traditional 8-bar length of each section.
+# Relationships
+## Builds Upon
+- **phrase-structure** — Sections contain 2-4 phrases
+## Related
+- **verse-chorus-form** — The other major pop form type
+- **12-bar-blues** — Most common aab (3-part) strophe pattern
+## Contrasts With
+- **verse-chorus-form** — AABA uses strophes; verse-chorus splits content between verse and chorus
 
-### Bridge Function in AABA
+# Common Confusions
+- **Confusion**: Chorus and refrain are the same thing.
+  **Clarification**: A chorus is an entire standalone section; a refrain is a lyric-invariant passage WITHIN a section (usually just one phrase or less).
 
-- Creates contrast with the strophe
-- Emphasizes non-tonic harmonies
-- Commonly ends on dominant harmony
-- Builds expectation for the strophe's return
-- Must be followed by the strophe to fulfill its function
+# Source Reference
+Open Music Theory, Part VII: Popular Music, Chapter 4: "AABA Form and Strophic Form."
 
-## Examples
-
-### Basic Example
-
-Complete form: AABA - BA (or AABA - AABA)
-
-### From Repertoire
-
-- "I Want to Hold Your Hand" by The Beatles (1963):
-  - Intro (brief)
-  - A: Strophe with primary melody and title lyrics
-  - A: Strophe repeated
-  - B: Bridge at 0:52, creating tension
-  - A: Strophe returns at 1:11
-  - Followed by BA repetition
-
-## Related Concepts
-
-- Strophic form (AAA)
-- Verse-chorus form
-- Bridge section
-- Strophe
-- Refrain
-
-## Common Confusions
-
-- **AABA vs. verse-chorus with bridge**: In AABA, the strophe serves both verse and chorus functions; in verse-chorus form, these are separate sections
-- **Bridge function**: In AABA, the bridge must build expectation for the strophe's return; in verse-chorus form, bridges have more flexibility
-- **32-bar length**: Not all AABA songs have exactly 8-bar sections; the name is historical
-
-## Source Reference
-
-Open Music Theory, Part VII: Popular Music, Chapter 4: "AABA Form and Strophic Form"
+# Verification Notes
+- Re-extracted from source chapter 07-04; merged with existing v2 card
+- Preserved Summach terminology and repertoire examples
+- Confidence rationale: High — thorough source treatment

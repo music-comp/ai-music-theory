@@ -1,86 +1,111 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Triad
-category: theory
-source: Open Music Theory
-chapter: "Triads"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: triad
+
+# === CLASSIFICATION ===
+category: chords
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Triads"
+chapter_number: 17
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - chord
+  - interval
+  - major-scale
+extends:
+  - chord
+related:
+  - seventh-chord
+  - inversion
+  - figured-bass
+  - roman-numeral-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a triad?"
+  - "What are the four qualities of triad?"
+  - "How are triads identified?"
+  - "What are the qualities of triads built on each scale degree?"
 ---
 
-# Triad
+# Quick Definition
 
-## Quick Definition
+A three-note chord whose notes can be stacked in thirds, consisting of a root, third, and fifth, in four qualities: major, minor, diminished, augmented.
 
-A three-note chord whose notes can be arranged as a stack of two thirds, with a root, third, and fifth.
+# Core Definition
 
-## Formal Definition
+A **triad** is a three-note chord whose notes can be arranged in thirds (looking like a "snowperson" on the staff -- all lines or all spaces). The lowest note in root position is the **root**, the middle note is the **third**, and the highest is the **fifth**. Four qualities exist: **major** (major 3rd + perfect 5th), **minor** (minor 3rd + perfect 5th), **diminished** (minor 3rd + diminished 5th), and **augmented** (major 3rd + augmented 5th). In chord symbols: C = major, Cmi = minor, Co = diminished, C+ = augmented.
 
-A **triad** is a three-note chord whose pitches can be arranged in thirds. When stacked in its most compact form (called root position or "snowperson form"), a triad consists of:
-- **Root**: The lowest note (when stacked in thirds)
-- **Third**: The middle note (a generic third above the root)
-- **Fifth**: The highest note (a generic fifth above the root)
+# Prerequisites
 
-A triad can always be notated so all three notes appear on adjacent lines or all three appear on adjacent spaces.
+- **Chord**: the general concept
+- **Interval**: the distances between triad members
+- **Major scale**: used for the spelling method
 
-There are four qualities of triad, determined by the quality of the intervals from the root:
+# Key Properties
 
-1. **Major triad**: major third + perfect fifth (M3, P5)
-2. **Minor triad**: minor third + perfect fifth (m3, P5)
-3. **Diminished triad**: minor third + diminished fifth (m3, d5)
-4. **Augmented triad**: major third + augmented fifth (M3, A5)
+- Three notes stackable in thirds: root, third, fifth
+- Major: ma3 + P5 (named for its third)
+- Minor: mi3 + P5 (named for its third)
+- Diminished: mi3 + d5 (named for its fifth)
+- Augmented: ma3 + A5 (named for its fifth)
+- In major keys: I, IV, V = major; ii, iii, vi = minor; viio = diminished
+- In minor keys: i, iv = minor; III, VI, VII = major; iio = diminished; V = major (with raised leading tone)
+- Identified by root, quality, and inversion
 
-In pitch-class set theory, triads are three-note sets. C major triad = **{0, 4, 7}** (pitch classes C, E, G).
+# Construction / Recognition
 
-## Musical Context
+1. Draw root on staff. 2. Add third and fifth (snowperson). 3. Think of root's major key signature. 4. Apply accidentals for major triad. 5. Adjust for other qualities.
 
-Triads are the fundamental harmonic building blocks of tonal music. They:
-- Form the basis of chord progressions
-- Support melodies
-- Define harmonic function (tonic, dominant, subdominant)
-- Create consonance and stability (major and minor) or tension (diminished and augmented)
+# Context & Application
 
-Triads are named after their root and quality, with characteristic sounds:
-- Major: bright, stable, "happy"
-- Minor: dark, stable, "sad"
-- Diminished: tense, unstable, "scary"
-- Augmented: ambiguous, unsettled, "mystical"
+Triads are the fundamental chords of Western harmony. Understanding triad qualities on each scale degree is essential for Roman numeral analysis and chord progression.
 
-## Examples
+# Examples
 
-### Basic
+- C major triad: C-E-G
+- C minor triad: C-Eb-G
+- C diminished triad: C-Eb-Gb
+- C augmented triad: C-E-G#
+- In G major: G=I (major), Am=ii (minor), Bm=iii, C=IV, D=V, Em=vi, F#o=viio
 
-C major triad: C-E-G (root-third-fifth)
-- Intervals: C to E = M3, C to G = P5
+# Relationships
 
-A minor triad: A-C-E
-- Intervals: A to C = m3, A to E = P5
+- **Extends**: chord
+- **Leads to**: seventh-chord, inversion, figured-bass, roman-numeral-analysis
+- **See also**: interval, major-scale, minor-scale
 
-B diminished triad: B-D-F
-- Intervals: B to D = m3, B to F = d5
+# Common Errors
 
-C augmented triad: C-E-G♯
-- Intervals: C to E = M3, C to G♯ = A5
+- For diminished triads: must lower BOTH the third AND the fifth from major
+- For augmented triads: raise the fifth from major (third stays the same as major)
 
-### From Repertoire
+# Common Confusions
 
-The opening chord of Beethoven's "Ode to Joy" is a D major triad. The first chord of "Greensleeves" is an A minor triad. Diminished triads appear frequently in Baroque and Romantic music to create tension. Augmented triads are less common but appear in Wagner and late-Romantic chromatic music.
+- Major and minor triads are named for the quality of their THIRD; diminished and augmented are named for the quality of their FIFTH
+- Doubling and spacing do not change a triad's identity
 
-## Related Concepts
-
-- **Prerequisite**: interval, interval-quality, chord
-- **Leads to**: major-triad, minor-triad, diminished-triad, augmented-triad, root-motion, inversion, seventh-chord
-- **See also**: harmonic-function, consonance-dissonance
-
-## Common Confusions
-
-- Triad vs. chord: All triads are chords, but not all chords are triads (some have more notes)
-- Root vs. bass: The root is the pitch the triad is built on; the bass is the lowest-sounding pitch (which may differ if inverted)
-- Quality depends on BOTH the third and fifth, not just one interval
-- Notes can be doubled or in different octaves and still form the same triad
-- "Major" and "minor" refer to the quality of the third; "diminished" and "augmented" refer to the fifth
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 17: "Triads"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: four qualities with intervals, scale-degree patterns in major/minor, snowperson analogy, spelling method.

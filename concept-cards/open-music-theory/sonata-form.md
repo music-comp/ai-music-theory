@@ -1,219 +1,113 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Sonata Form
+slug: sonata-form
+
+# === CLASSIFICATION ===
 category: form
-source: Open Music Theory
-chapter: "Sonata Form"
-pdf_page: null
-chapter_number: 3
-unit: null
+subcategory: sectional-forms
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Sonata Form"
+chapter_number: 8
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "sonata-allegro form"
+  - "first-movement form"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - binary-form
+  - phrase
+  - cadence
+  - transition
+  - retransition
+extends:
+  - binary-form
+related:
+  - rondo-form
+  - ternary-form
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the three main sections of sonata form?"
+  - "What is the difference between the exposition and recapitulation?"
+  - "What are the medial caesura, EEC, and ESC?"
 ---
 
-# Sonata Form
+# Quick Definition
+A complex manifestation of a harmonically open, rounded, balanced binary form with three main sections: exposition (presenting primary and secondary themes in different keys), development (unstable exploration), and recapitulation (themes return, secondary theme now in tonic).
 
-## Quick Definition
+# Core Definition
+**Sonata form** has two reprises: the first is the **exposition** and the second contains the **development** and **recapitulation**. The exposition presents: Primary Theme (P, in tonic), Transition (TR, connective), Secondary Theme (S, in non-tonic key -- typically V for major, III for minor), and Closing Area (C, suffix in S's key). The development is unstable, featuring sequences, chromaticism, and modulation. The recapitulation restates exposition material with S and C now in the tonic key. The **medial caesura** (MC) marks the break between TR and S; the **Essential Expositional Closure** (EEC) is the first satisfactory PAC in S moving to non-S material; the **Essential Structural Closure** (ESC) is its recapitulation counterpart. Sonata form is "a complex manifestation of a harmonically open, rounded binary form that is also balanced" (Ch. 8).
 
-A large-scale three-part form (Exposition-Development-Recapitulation) characteristic of Classical and Romantic instrumental movements, featuring two contrasting thematic areas in different keys in the exposition, developmental treatment of themes in the middle section, and return of both themes in the tonic key in the recapitulation, creating dramatic tonal and thematic conflict and resolution across the movement.
+# Prerequisites
+- **Binary form** -- Sonata form is an elaboration of rounded balanced binary
+- **Transition/retransition** -- Connective sections within sonata form
+- **Cadence** -- PACs and HCs define structural points
 
-## Formal Definition
+# Key Properties
+1. Two reprises: exposition (1st) and development+recapitulation (2nd)
+2. Exposition: P (tonic) - TR - S (non-tonic) - C (suffix)
+3. Development: unstable, sequential, chromatic, modulating
+4. Recapitulation: P-TR-S-C with S now in tonic
+5. Transition may be dependent (derived from P) or independent
+6. Medial caesura: break between TR and S
+7. EEC: first PAC in S that moves to non-S material (exposition)
+8. ESC: first PAC in S in tonic (recapitulation)
+9. Crux: point where recapitulation diverges to bring S into tonic
+10. May have introduction (slow prefix) and coda (large suffix)
 
-**Sonata form** (also called "first-movement form" or "sonata-allegro form") is a formal structure typically used for first movements of multi-movement works (symphonies, sonatas, string quartets, concertos) in the Classical and Romantic periods, organized around tonal drama between two key areas and thematic development.
+# Construction / Recognition
+## To Analyze Sonata Form:
+1. Locate P and S (two core sections in different keys)
+2. Identify the TR between them (dependent or independent)
+3. Find the MC, EEC, and ESC
+4. Locate the development-recapitulation boundary (return of P in tonic)
+5. Compare exposition and recapitulation to find the crux
+## Key Differences from Binary:
+- More consistent return of material in recapitulation
+- All of S and C should be in balanced return
 
-**Three main sections**:
+# Context & Application
+Sonata form dominates the first movements of symphonies, sonatas, string quartets, and concertos from the Classical period through the Romantic era. The source provides detailed analysis of Mozart's Piano Sonata K. 310, I, tracing P, TR, S, C, development, retransition, and recapitulation with specific measure numbers and harmonic analysis.
 
-1. **Exposition**: Presents two contrasting thematic groups in different keys
-   - **Primary theme (P)**: Opening theme in tonic key (I)
-   - **Transition (TR)**: Modulates to secondary key
-   - **Secondary theme (S)**: Contrasting theme in new key (V in major, III in minor)
-   - **Closing zone (C)**: Confirms secondary key, often with cadential material
-   - **Repeat**: Exposition typically repeated (||: Exposition :||)
+# Examples
+**Example 1** (Ch. 8, Examples 1-2): Diagrams of sonata form at the largest level and with all subsections.
 
-2. **Development**: Explores, fragments, and transforms thematic material
-   - **Fragmentation**: Themes broken into motives
-   - **Modulation**: Passes through various keys (often remote)
-   - **Contrapuntal treatment**: Themes combined, inverted, sequenced
-   - **Harmonic instability**: Avoids strong tonic cadences
-   - **Climactic buildup**: Increases tension toward retransition
-   - **Retransition (RT)**: Prepares return to tonic (often on dominant pedal)
+**Example 2** (Ch. 8, Example 6): Detailed analysis of Mozart K. 310, I: P (mm. 1-8), TR (mm. 9-22), S (mm. 23-45), C (mm. 45-49), Development (mm. 50-79), Recapitulation (mm. 80-133).
 
-3. **Recapitulation**: Returns both themes in tonic key
-   - **Primary theme (P)**: Returns in tonic (I)
-   - **Transition (TR)**: Modified to remain in tonic (no modulation needed)
-   - **Secondary theme (S)**: Now in tonic (I), resolving tonal conflict
-   - **Closing zone (C)**: Confirms tonic
-   - **Coda**: Optional extended closing section (common in Beethoven)
+# Relationships
+## Builds Upon
+- **binary-form** -- Sonata form is a complex elaboration of rounded balanced binary
+## Related
+- **rondo-form** -- Sonata-rondo combines elements of both
+- **ternary-form** -- Shares the return concept
 
-**Key structural feature**: **Tonal conflict and resolution**
-- Exposition: Tonic vs. Dominant (or relative major in minor keys)
-- Development: Tonal instability and exploration
-- Recapitulation: Resolution—all material in tonic
+# Common Errors
+- **Error**: Assuming the recapitulation is an exact copy of the exposition
+  **Correction**: The transition is typically recomposed to bring S into the tonic key
 
-**Optional elements**:
-- **Introduction**: Slow opening before main tempo (I - Adagio intro, then Allegro exposition)
-- **Coda**: Extended conclusion after recapitulation (especially Beethoven and later)
+# Common Confusions
+- **Confusion**: Sonata form and sonata (the genre) are the same
+  **Clarification**: Sonata form is a formal structure; a sonata is a multi-movement work
+- **Confusion**: The development must "develop" exposition material
+  **Clarification**: The development may introduce its own material; "development" refers to its formal function, not necessarily its content
 
-## Thematic Organization
+# Source Reference
+Open Music Theory, Part III, Chapter 8: "Sonata Form." Includes Hepokoski/Darcy terminology (MC, EEC, ESC) and Caplin's development structure.
 
-**Classical sonata form** (Haydn, Mozart, early Beethoven):
-```
-EXPOSITION (repeated)          DEVELOPMENT          RECAPITULATION
-|-----------------------------|-------------------|---------------------------|
-P    TR    S    C             Fragmentation      P    TR    S    C    (Coda)
-I → → → → V → V              Various keys        I → → → → I → I      I
-Tonic     Dominant            Unstable           All in Tonic
-```
-
-**Tonal plan** (major key):
-- Exposition: I → V
-- Development: Various (vi, iii, IV, ii, etc., sometimes remote keys)
-- Recapitulation: I throughout
-
-**Tonal plan** (minor key):
-- Exposition: i → III (relative major, occasionally v)
-- Development: Various
-- Recapitulation: i throughout
-
-## Formal Functions (Caplin)
-
-**Exposition functions**:
-- **P (Primary theme zone)**: Establishes tonic, main theme, stability
-- **TR (Transition)**: Creates momentum, modulates to secondary key
-- **MC (Medial Caesura)**: Articulating pause before S (often V:HC or I:HC)
-- **S (Secondary theme zone)**: Arrives in new key, often more lyrical/stable
-- **C (Closing zone)**: Cadential reinforcement of secondary key
-
-**Development functions**:
-- **Pre-core**: Optional opening materials
-- **Core**: Main developmental work (sequencing, fragmentation)
-- **Retransition**: Dominant preparation for recapitulation return
-
-**Recapitulation functions**:
-- Parallel to exposition but with tonal resolution (all in tonic)
-- **EEC (Essential Expositional Closure)**: First PAC in S zone
-- **ESC (Essential Structural Closure)**: Corresponding PAC in recapitulation S
-
-## Variants and Extensions
-
-**Monothematic sonata**: P and S use same thematic material (Haydn)
-
-**Sonata without development**: Exposition followed immediately by recapitulation (rare)
-
-**Continuous exposition**: No clear caesura between P and S (Romantic tendency)
-
-**Expanded coda**: Coda becomes "second development" (Beethoven, Brahms)
-
-**Sonata-rondo**: Combines sonata and rondo principles (ABACABA with developmental C)
-
-## Musical Context
-
-Sonata form serves specific purposes:
-- **Tonal drama**: Creates and resolves key conflict
-- **Thematic contrast**: Juxtaposes different characters/moods
-- **Large-scale coherence**: Unifies extended movements through return
-- **Developmental exploration**: Allows compositional elaboration and transformation
-- **Formal sophistication**: Demonstrates compositional mastery
-- **Emotional narrative**: Suggests abstract "story" (conflict → struggle → resolution)
-
-Sonata form is the defining formal principle of Classical instrumental music.
-
-## Examples
-
-### Basic
-
-**Simple sonata form outline** (Mozart style):
-```
-EXPOSITION (mm. 1-60, repeated)
-  P (mm. 1-10): Main theme, C major (I)
-  TR (mm. 11-20): Transition, modulates to G major
-  S (mm. 21-40): Lyrical second theme, G major (V)
-  C (mm. 41-60): Closing material, cadences in G major
-
-DEVELOPMENT (mm. 61-100)
-  Core (mm. 61-85): P motive sequenced through d minor, a minor, e minor
-  RT (mm. 86-100): Dominant pedal on G, building to return
-
-RECAPITULATION (mm. 101-160)
-  P (mm. 101-110): Main theme returns, C major (I)
-  TR (mm. 111-120): Transition stays in C major (no modulation)
-  S (mm. 121-140): Second theme now in C major (I) - RESOLUTION
-  C (mm. 141-160): Closing material in C major, final cadences
-```
-
-**Tonal conflict and resolution**:
-```
-EXPOSITION:           RECAPITULATION:
-P: I (C major)       P: I (C major)
-S: V (G major)  →    S: I (C major) ← KEY RESOLUTION
-
-The tonal conflict (I vs. V) established in exposition
-is resolved in recapitulation (all in I)
-```
-
-**Development techniques**:
-```
-Original P theme: C - E - G - A - G - F - E - D - C
-
-Development fragments:
-- Motive 1: C - E - G (ascending triad, sequenced)
-- Motive 2: A - G - F - E (descending line, inverted)
-- Combination: Motive 1 in soprano, Motive 2 in bass (counterpoint)
-- Key sequence: C → a → d → G (circle of fifths)
-```
-
-**Typical proportions** (Classical):
-```
-Exposition: ~40% of movement (repeated, so ~50% of performance time)
-Development: ~25% of movement
-Recapitulation: ~35% of movement
-Coda (if present): Variable
-```
-
-**Medial Caesura (MC)**:
-```
-End of TR, before S:
-V  -  V  - [pause/fermata/rest] → S begins in new key
-
-Creates articulation, "breath" before secondary theme
-Often emphasized with HC cadence, then caesura
-```
-
-### From Repertoire
-
-**Mozart, Symphony No. 40 in G Minor, K. 550, I**: Classic sonata form with clear P (g minor), TR, S (Bb major, III), development with motivic fragmentation, recapitulation with S in g minor (i).
-
-**Beethoven, Symphony No. 5, I**: Monothematic sonata (P and S use same "fate" motive), dramatic development, extended coda that functions as second development.
-
-**Haydn, Symphony No. 104 ("London"), I**: Slow introduction, monothematic exposition, witty development with surprise modulations, compact recapitulation.
-
-**Mozart, Piano Sonata in C Major, K. 545, I**: Pedagogical example, clear sections, transparent textures, ideal for learning sonata form structure.
-
-**Beethoven, Piano Sonata Op. 2, No. 1, I**: Early Beethoven sonata with clear Classical proportions, dramatic development, forceful coda.
-
-## Related Concepts
-
-- **Prerequisite**: binary-form, phrase, period, sentence, cadence, modulation, key-relationships
-- **Leads to**: sonata-rondo, theme-and-variations, development-section, recapitulation
-- **See also**: exposition, retransition
-
-## Common Confusions
-
-- Sonata form ≠ sonata (genre vs. form; sonatas may use various forms)
-- "Sonata-allegro" emphasizes typical fast tempo, but form used in slow movements too
-- Exposition repeat is traditional but sometimes omitted in performance
-- Development doesn't always develop P—can focus on TR, S, or new material
-- Recapitulation not always literal repeat (often varied, compressed, or expanded)
-- Secondary theme not always more lyrical (depends on composer/work)
-- "Second theme" can be thematic group (multiple themes) not single melody
-- Medial Caesura (MC) is articulation point, not always literal pause
-- Monothematic sonata (Haydn) uses same material for P and S (tonal contrast primary)
-- Coda can be brief (Mozart) or massive "second development" (Beethoven)
-- Minor-key sonatas: S typically in III (relative major), not v (minor dominant)
-- Essential Expositional Closure (EEC) = first PAC in S zone (structural goal)
-- Retransition prepares recapitulation return (often dominant pedal with crescendo)
-- Romantic sonatas often modify form (continuous exposition, thematic transformation)
-- Sonata form principle = tonal conflict and resolution, not rigid template
-
-## Source Reference
-
-Open Music Theory, Part III: "Form and Analysis"
-Open Music Theory, Part III: "Sonata Form"
+# Verification Notes
+- Re-extracted from v2 card; preserved: MC/EEC/ESC terminology, Mozart K. 310 analysis, binary-form relationship
+- Confidence: HIGH -- chapter-length treatment with extensive worked example

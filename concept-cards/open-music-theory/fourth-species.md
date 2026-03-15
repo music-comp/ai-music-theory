@@ -1,119 +1,112 @@
 ---
-concept: Fourth Species
-category: theory
-source: Open Music Theory
-chapter: "Fourth-Species Counterpoint"
-pdf_page: null
-chapter_number: 2
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Fourth Species Counterpoint
+slug: fourth-species
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: species-counterpoint
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Fourth-Species Counterpoint"
+chapter_number: 5
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "syncopated counterpoint"
+  - "suspension species"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - first-species
+  - suspension
+extends:
+  - first-species
+related:
+  - fifth-species
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does fourth species introduce the suspension?"
+  - "What are the types of suspensions used above and below the cantus?"
+  - "When is it permissible to 'break species' in fourth species?"
 ---
 
-# Fourth Species
+# Quick Definition
+The fourth species exercise, characterized by syncopated half notes tied across bar lines, introducing the suspension -- an accented dissonance that is prepared as a consonance, held while the other voice moves to create dissonance, and resolved downward by step.
 
-## Quick Definition
+# Core Definition
+In **fourth-species counterpoint**, both voices move once per bar but are rhythmically offset by a half note. The counterpoint line is notated in half notes with each weak-beat half note tied across the bar line to the following strong beat, creating oblique motion and introducing the **suspension**: an accented dissonance always occurring on strong beats. A suspension has three parts: preparation (weak-beat consonance), suspension (strong-beat dissonance, tied from preparation), and resolution (weak-beat note, one step below the suspension, consonant with cantus). Dissonant suspensions should be used as much as possible (Ch. 5).
 
-A species counterpoint exercise featuring syncopated rhythm where the counterpoint line is offset from the cantus firmus by a half note, creating tied notes across bar lines and introducing the suspension.
+# Prerequisites
+- **First species** -- Weak-beat resolutions follow first-species principles
+- **Suspension** -- The central dissonance type of fourth species
 
-## Formal Definition
+# Key Properties
+1. Syncopated rhythm: half notes tied across bar lines
+2. Pure fourth species uses only oblique motion
+3. Suspension: preparation (consonant weak beat) - suspension (dissonant strong beat) - resolution (consonant weak beat, step down)
+4. Above cantus: 7-6, 4-3, and 9-8 (2-1) suspensions; 7-6 and 4-3 preferred
+5. Below cantus: 2-3 is the main dissonant suspension
+6. Consonant suspensions (5-6) also possible but less desirable
+7. No after-beat fifths or octaves (two 5ths or 8ves on consecutive weak beats)
+8. Breaking species (reverting to second species) permitted briefly when no suspension possible
+9. Cantus must end re-do (not ti-do) for proper fourth-species ending
+10. Always begin with a half rest
 
-**Fourth species** (or **fourth-species counterpoint**) is the fourth type of species counterpoint exercise, characterized by syncopation at the bar level. The counterpoint moves in half notes that are tied across bar lines, creating a rhythmic offset from the cantus firmus.
+# Construction / Recognition
+## To Write Fourth Species:
+1. Begin with a half rest
+2. Use dissonant suspensions as much as possible
+3. Prepare each suspension as a consonance on the weak beat
+4. Resolve each suspension by step down on the next weak beat
+5. If no dissonance is possible, use a consonant tied figure or break species briefly
+6. End with 7-6 suspension (above) or 2-3 suspension (below) into clausula vera
+## To Identify Suspension Types:
+1. Count the interval of the dissonance and its resolution (e.g., 7-6, 4-3, 2-3)
+2. Check that the suspended note was prepared as a consonance
 
-**Key characteristics**:
-- **Syncopated rhythm**: Counterpoint begins on weak beats, tied to the following strong beats
-- **Oblique motion**: One voice sustains while the other moves (the two lines always move in oblique motion)
-- **Suspensions**: The primary feature—accented dissonances on strong beats that resolve downward by step
-- **Tied figures**: Weak-beat notes tied across bar lines to strong beats
+# Context & Application
+Fourth species introduces the first accented dissonance in species counterpoint. Unlike passing tones and neighbor tones (which occur on weak beats), the suspension falls on the strong beat, creating greater tension. The suspension became one of the most important expressive devices in tonal music, used extensively in Renaissance polyphony, Baroque sequences, and Classical harmony.
 
-**The suspension figure** (three parts):
-1. **Preparation**: A weak-beat consonance in the counterpoint
-2. **Suspension**: A strong-beat dissonance (tied from preparation, same pitch)
-3. **Resolution**: A weak-beat consonance, one step below the suspension
+# Examples
+**Example 1** (Ch. 5, Example 1): All fourth-species exercises from *Gradus ad Parnassum*.
 
-**Suspension types**:
-- **Above cantus**: 7–6, 4–3, 9–8 (2–1) are possible; 7–6 and 4–3 are preferred
-- **Below cantus**: 2–3 is the main dissonant suspension; 5–6 is consonant
-- Numbers indicate the intervals of suspension and resolution with the cantus
+**Example 2** (Ch. 5, Example 2): Notation showing all suspension types: 7-6, 4-3, 9-8 above cantus; 2-3 below cantus.
 
-**Rules**:
-- Begin with half rest, then do (^1) or sol (^5) above; do (^1) below
-- End with clausula vera: penultimate bar has do–ti (^1–^7) forming 7–6 or 2–3 suspension; final bar has whole note do (^1)
-- Use dissonant suspensions as much as possible
-- Avoid "after-beat" fifths or octaves (parallel fifths/octaves on consecutive weak beats)
-- No more than three of the same suspension type in a row
-- Breaking species (reverting to second species) is permissible when suspensions are impossible, but use sparingly
+# Relationships
+## Builds Upon
+- **first-species** -- Weak-beat resolutions follow first-species interval rules
+- **suspension** -- The defining feature of fourth species
+## Enables
+- **fifth-species** -- Suspensions carry over into florid counterpoint
 
-## Musical Context
+# Common Errors
+- **Error**: Resolving a suspension upward instead of downward
+  **Correction**: Suspensions in species counterpoint always resolve down by step
+- **Error**: Using two 9-8 or two 4-5 suspensions in a row
+  **Correction**: These create consecutive octaves or fifths on weak beats (after-beat parallels)
 
-**Pedagogical purpose**:
-- Teaches treatment of accented dissonances (suspensions)
-- Develops understanding of syncopation
-- Trains preparation and resolution of dissonances
-- Introduces tension created by strong-beat dissonance
-- Prepares for understanding of harmonic rhythm and suspension in tonal music
+# Common Confusions
+- **Confusion**: Fourth species is primarily about melodic shape
+  **Clarification**: The main goal is practicing suspension treatment; melodic shape is secondary
+- **Confusion**: Any tied note is a suspension
+  **Clarification**: A suspension must be dissonant on the strong beat; a tied consonance is not a true suspension
 
-**Unique challenges**:
-- Creates predominantly downward melodic motion (due to resolutions)
-- Makes climax placement difficult
-- Melodic shape is less important than proper suspension treatment
-- Requires occasional upward leaps to maintain singable range
-- May necessitate "breaking species" to continue the exercise
+# Source Reference
+Open Music Theory, Part II, Chapter 5: "Fourth-Species Counterpoint."
 
-**Relationship to composition**:
-- Suspensions are fundamental to tonal harmony and expressive music
-- Syncopation is essential to rhythmic variety in all styles
-- The preparation-suspension-resolution pattern appears throughout tonal music
-- 4–3 suspensions are ubiquitous in cadences
-- Suspensions create expressive tension and resolution
-
-Fourth species is unique among the species because it prioritizes rhythmic/harmonic technique over melodic shape.
-
-## Examples
-
-### Basic
-
-**7–6 suspension above cantus**:
-- Cantus: D (whole note) – C (whole note)
-- Counterpoint: (half rest) A (half note) | [tie] A–G (half notes)
-  Intervals: 5 | 7–6 (A suspends to form a seventh with D, resolves down to G forming a sixth)
-
-**4–3 suspension above cantus**:
-- Cantus: G (whole note) – F (whole note)
-- Counterpoint: D (half note) | [tie] D–C (half notes)
-  Intervals: 5 | 4–3 (D suspends to form a fourth with G, resolves to C forming a third)
-
-**2–3 suspension below cantus**:
-- Cantus: C (whole note) – D (whole note)
-- Counterpoint: D (half note) | [tie] D–E (half notes)
-  Intervals: 2 | 2–3 (D suspends to form a second below C, resolves up to E forming a third)
-
-### From Repertoire
-
-Fourth species is pedagogical, but suspensions appear everywhere in tonal music:
-- Bach: Suspensions in chorales and fugues create expressive dissonances
-- Handel: Chain of suspensions in "And with His stripes" (Messiah)
-- Mozart/Haydn: 4–3 suspensions in cadential formulas
-- Romantic music: Expressive suspensions for emotional effect
-- Jazz: Suspended chords and syncopation fundamental to the style
-- Pop/Rock: Suspended chords (sus4, sus2) and syncopation ubiquitous
-
-## Related Concepts
-
-- **Prerequisite**: species-counterpoint, third-species, consonance, dissonance, oblique-motion, syncopation
-- **Leads to**: fifth-species, suspension
-- **See also**: cadential-six-four, suspended-chord, syncopation
-
-## Common Confusions
-
-- Fourth species uses syncopation (rhythmic offset), not four notes per bar—the "fourth" refers to the exercise type
-- Suspensions are always accented (on strong beats), unlike passing tones and neighbor tones (on weak beats)
-- The resolution always goes down by step—upward resolutions are not suspensions
-- Consonant suspensions (like 5–6) are permitted but not the goal; practice dissonant suspensions
-- "Preparation" must be consonant—you can't prepare a suspension with a dissonance
-- After-beat fifths/octaves (on consecutive weak beats) are forbidden, even though they're not on downbeats
-- Breaking species means temporarily using second-species rhythm, not violating rules
-- The melodic line may be less shapely than in other species—this is acceptable because the focus is on suspension treatment
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 5: "Fourth-Species Counterpoint"
+# Verification Notes
+- Re-extracted from v2 card; preserved detailed suspension type list
+- Suspension types directly from source (Ch. 5, Example 2)
+- Confidence: HIGH -- chapter-length treatment

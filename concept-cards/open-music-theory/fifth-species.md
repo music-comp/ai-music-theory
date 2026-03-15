@@ -1,113 +1,104 @@
 ---
-concept: Fifth Species
-category: theory
-source: Open Music Theory
-chapter: "Fifth-Species Counterpoint"
-pdf_page: null
-chapter_number: 2
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Fifth Species Counterpoint
+slug: fifth-species
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: species-counterpoint
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Fifth-Species Counterpoint"
+chapter_number: 6
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "florid counterpoint"
+  - "free species"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - first-species
+  - second-species
+  - third-species
+  - fourth-species
+extends:
+  - fourth-species
+related:
+  - free-counterpoint
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does fifth species combine the previous four species?"
+  - "What new elements does fifth species introduce?"
+  - "How are suspensions embellished in fifth species?"
 ---
 
-# Fifth Species
+# Quick Definition
+The fifth and final species exercise, combining elements from all previous species (whole notes, half notes, quarter notes, and suspensions) with new embellishments including anticipations and eighth-note pairs, approaching the character of real music.
 
-## Quick Definition
+# Core Definition
+**Fifth-species counterpoint** (florid counterpoint) combines the techniques from species 1-4 with a few additions. The counterpoint line may include motion in whole notes (1st species), half notes (2nd), quarter notes (3rd), and suspensions (4th) in almost any combination and order. New to fifth species are embellishments of suspensions and the introduction of eighth-note motion for the first time -- always in pairs on weak beats, either as passing eighth notes or as an "anticipation with turn" embellishment of a suspension (Ch. 6).
 
-A species counterpoint exercise that freely combines techniques from all previous species (whole notes, half notes, quarter notes, and suspensions) plus new embellishments, creating florid counterpoint that resembles real music.
+# Prerequisites
+- **First through fourth species** -- Fifth species combines all previous techniques
 
-## Formal Definition
+# Key Properties
+1. Combines all rhythmic values from species 1-4
+2. Introduces suspension embellishments (decorating the resolution)
+3. Introduces eighth-note motion (always in pairs, on weak beats)
+4. Anticipation: a note that arrives before the expected beat
+5. Begin with perfect consonance; end with clausula vera
+6. Challenge is balancing not only consonance types but also types of counterpoint
+7. Starts to resemble real music
 
-**Fifth species** (or **fifth-species counterpoint**, also called **florid counterpoint**) is the final type of species counterpoint exercise. It synthesizes and combines all the techniques learned in species 1–4, allowing free mixture of note values and contrapuntal devices.
+# Construction / Recognition
+## To Write Fifth Species:
+1. Begin with a perfect consonance and end with a clausula vera
+2. Mix rhythmic values from all previous species
+3. Use dissonant suspensions from fourth species, with optional embellishments
+4. Include eighth notes only in pairs on weak beats
+5. Balance variety of rhythmic values with smooth melodic flow
+## To Recognize:
+1. Look for mixed rhythmic values (whole, half, quarter, eighth) in the counterpoint
+2. Identify suspension embellishments and anticipations
 
-**Elements combined from previous species**:
-- **First species**: Whole notes, note-against-note consonance
-- **Second species**: Half notes, passing tones on weak beats
-- **Third species**: Quarter notes, neighbor tones, double neighbors, nota cambiata
-- **Fourth species**: Suspensions, syncopation, tied figures
+# Context & Application
+Fifth species bridges the gap between strict species exercises and free composition. It is the culmination of the *Gradus ad Parnassum* two-voice method, teaching students to combine all contrapuntal techniques into musically coherent lines. Fux introduces suspension embellishments and eighth notes "in between" fourth and fifth species.
 
-**New elements in fifth species**:
-- **Eighth notes**: Introduced for the first time, used in pairs on weak beats
-- **Embellished suspensions**: Suspensions decorated with various ornamental figures
-- **Anticipation**: A note that anticipates the following downbeat chord tone
-- **Turn**: An ornamental figure that embellishes suspensions
-- **Greater rhythmic freedom**: Almost any combination of note values
+# Examples
+**Example 1** (Ch. 6, Example 1): A chain of 7-6 suspensions with common embellishments, showing how the simplified version reduces to plain fourth-species suspensions.
 
-**Rules**:
-- Begin with a perfect consonance
-- End with clausula vera
-- Observe all voice-leading principles from previous species
-- Eighth notes come in pairs and occur only on weak beats (second or fourth quarter note)
-- Balance different types of motion and consonance
-- Create a singable, musical line with good shape and variety
+**Example 2** (Ch. 6, Example 2): All fifth-species exercises from *Gradus ad Parnassum*.
 
-**Purpose**: Fifth species is the culmination of species counterpoint, where the student demonstrates mastery of all contrapuntal techniques in a free, musical context approaching real composition.
+# Relationships
+## Builds Upon
+- **first-species** through **fourth-species** -- Combines all previous techniques
+## Enables
+- **free-counterpoint** -- Fifth species is the stepping stone to free composition
+- **sixteenth-century-contrapuntal-style** -- Historical application of florid counterpoint
 
-## Musical Context
+# Common Errors
+- **Error**: Using eighth notes on strong beats or singly
+  **Correction**: Eighth notes always come in pairs and occur on weak beats only
 
-**Pedagogical purpose**:
-- Synthesizes all previous species into musical whole
-- Develops judgment in choosing among contrapuntal techniques
-- Teaches rhythmic variety and embellishment
-- Prepares for free composition
-- Bridges the gap between exercises and real music
+# Common Confusions
+- **Confusion**: Fifth species allows complete rhythmic freedom
+  **Clarification**: While it mixes rhythmic values, eighth notes are still restricted to pairs on weak beats
 
-**Challenges**:
-- Balancing all the different techniques learned
-- Creating musical coherence while demonstrating variety
-- Maintaining good melodic shape while following voice-leading rules
-- Choosing appropriate moments for each species technique
-- Creating a line that sounds like music, not just an exercise
+# Source Reference
+Open Music Theory, Part II, Chapter 6: "Fifth-Species Counterpoint."
 
-**Relationship to composition**:
-- Closely resembles actual Baroque and Renaissance counterpoint
-- Teaches the embellishment and diminution practices of free composition
-- Develops the ability to write independent, beautiful melodic lines
-- All the techniques appear in real contrapuntal music (fugues, inventions, motets, etc.)
-
-Fifth species (florid counterpoint) is the final stage of species counterpoint pedagogy and the transition to composing real contrapuntal music.
-
-## Examples
-
-### Basic
-
-**Fifth-species line combining multiple techniques**:
-- Bar 1: Whole note (first species)
-- Bar 2: Two half notes, second a passing tone (second species)
-- Bar 3: Four quarter notes with neighbor tone (third species)
-- Bar 4: Suspension with embellishment (fourth species + embellishment)
-- Bar 5: Quarter notes with two eighth-note passing tones (new to fifth species)
-
-**Embellished suspension**:
-- Instead of simple 7–6 suspension (whole note tied, then resolution)
-- Use decorated resolution: suspension on downbeat, then eighth-note turn figure before resolution
-
-### From Repertoire
-
-Fifth species resembles actual contrapuntal music:
-- **Bach, Two-Part Inventions**: Free counterpoint very similar to fifth species
-- **Bach, Fugue subjects**: Often use florid, embellished lines
-- **Palestrina, Motets**: Renaissance polyphony with embellished lines
-- **Handel, Sonatas**: Baroque melodic lines with varied rhythms and embellishments
-- **Mozart, String Quartets**: Contrapuntal passages with mixture of note values
-- **Any fugue or invention**: Demonstrates the principles of fifth species in real music
-
-## Related Concepts
-
-- **Prerequisite**: species-counterpoint, first-species, second-species, third-species, fourth-species, suspension, passing-tone, neighbor-tone
-- **Leads to**: free-counterpoint, fugue
-- **See also**: anticipation
-
-## Common Confusions
-
-- Fifth species is not a new set of rules—it's the combination of all previous species with a few additions
-- The "fifth" refers to the exercise type, not five notes per bar
-- Eighth notes are new but restricted: they come in pairs and only on weak beats
-- Fifth species should sound musical, not mechanical—it's about making artistic choices while following principles
-- Not "anything goes"—all the rules from species 1–4 still apply to their respective contexts
-- The goal is to demonstrate mastery by creating beautiful, singable counterpoint, not to use every technique in every exercise
-- Embellished suspensions still follow suspension rules—the embellishments decorate but don't violate the preparation-suspension-resolution pattern
-- Fifth species is the culmination of species counterpoint training and prepares for free composition
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 6: "Fifth-Species Counterpoint"
+# Verification Notes
+- Re-extracted from v2 card; preserved description of suspension embellishments
+- Confidence: HIGH -- explicitly defined in source

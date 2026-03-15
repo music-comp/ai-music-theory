@@ -1,93 +1,105 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Simple Meter
-category: theory
-source: Open Music Theory
-chapter: "Simple Meter and Time Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: simple-meter
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Simple Meter and Time Signatures"
+chapter_number: 9
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - beat
+  - meter
+extends:
+  - meter
+related:
+  - time-signature
+  - compound-meter
+  - measure
+contrasts_with:
+  - compound-meter
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is simple meter?"
+  - "How does the beat divide in simple meter?"
+  - "What do the numbers in a simple meter time signature mean?"
 ---
 
-# Simple Meter
+# Quick Definition
 
-## Quick Definition
+A meter in which each beat divides into two equal parts and subdivides into four.
 
-Meters in which each beat naturally divides into two equal parts and further subdivides into four, distinguished from compound meters where beats divide into three.
+# Core Definition
 
-## Formal Definition
+**Simple meter** is a meter in which the beat divides into two, then further subdivides into four. Simple meters can be duple (2 beats), triple (3 beats), or quadruple (4 beats). In simple meter time signatures, the top number indicates how many beats per measure (2, 3, or 4) and the bottom number indicates the beat unit (2 = half note, 4 = quarter note, 8 = eighth note). Common time (C) = 4/4; cut time = 2/2.
 
-**Simple meter** is a metrical organization where the beat divides by two (and subdivides by four). Each beat represents a note value that can be split into two equal durations.
+# Prerequisites
 
-**Division pattern**:
-- Beat → 2 divisions (duple division)
-- Each division → 2 subdivisions (quadruple subdivision total)
+- **Beat**: the pulse being divided
+- **Meter**: the organizational concept
 
-**Types of simple meter** (by beat grouping):
-- **Simple duple**: 2 beats per measure (groups of 2)
-- **Simple triple**: 3 beats per measure (groups of 3)
-- **Simple quadruple**: 4 beats per measure (groups of 4)
+# Key Properties
 
-**Time signature characteristics**:
-- Top number: 2, 3, or 4 (number of beats per measure)
-- Bottom number: note value that receives the beat (commonly 2, 4, 8, or 16)
-- Examples: 2/4, 3/4, 4/4 (𝄴), 3/8, 2/2 (𝄵)
+- Beat divides into 2, subdivides into 4
+- Top number of time signature: number of beats (2, 3, or 4)
+- Bottom number: beat unit (2, 4, 8, or 16)
+- Counting: beats as "1, 2, 3, 4"; divisions as "1-and, 2-and"; subdivisions as "1-e-and-a"
+- Common time (C) = 4/4; cut time = 2/2
+- Beaming groups notes by beat
 
-**Contrast with compound meter**:
-- Simple meter: beat ÷ 2 (e.g., ♩ = ♪ + ♪)
-- Compound meter: beat ÷ 3 (e.g., ♩. = ♪ + ♪ + ♪)
+# Construction / Recognition
 
-## Musical Context
+In simple meter, look for a top number of 2, 3, or 4 in the time signature. Beats are never dotted values (that indicates compound meter).
 
-Simple meters dominate Western music:
-- Most pop, rock, folk, and classical music uses simple meters
-- Create clear, regular pulse patterns
-- Enable straightforward rhythmic organization
-- Feel "march-like" or "even" (vs. compound meters' "lilting" feel)
+# Context & Application
 
-**Style associations**:
-- Simple duple: marches, polkas
-- Simple triple: waltzes, minuets
-- Simple quadruple: most pop/rock, hymns, many classical works
+Simple meter is the most common meter type in Western music. Counting in simple meter uses Arabic numerals for beats, "and" (+) for divisions, and "e" and "a" for subdivisions (1-e-and-a). An anacrusis (pickup) begins before beat 1, counting as the last beat(s) of an imaginary measure.
 
-## Examples
+# Examples
 
-### Basic
+- 4/4 (simple quadruple): 4 quarter-note beats per measure
+- 3/4 (simple triple): 3 quarter-note beats per measure
+- 2/2 (simple duple, cut time): 2 half-note beats per measure
+- 3/8 (simple triple): 3 eighth-note beats per measure
 
-**Simple duple** (2 beats per measure):
-- 2/4: two quarter-note beats (♩ ♩)
-- 2/2 (cut time 𝄵): two half-note beats (𝅗𝅥 𝅗𝅥)
-- Each beat divides into two eighth notes
+# Relationships
 
-**Simple triple** (3 beats per measure):
-- 3/4: three quarter-note beats (♩ ♩ ♩)
-- 3/8: three eighth-note beats (♪ ♪ ♪)
-- Waltz feel
+- **Extends**: meter
+- **Leads to**: time-signature, measure, anacrusis
+- **See also**: compound-meter, beat, rhythm
 
-**Simple quadruple** (4 beats per measure):
-- 4/4 (common time 𝄴): four quarter-note beats (♩ ♩ ♩ ♩)
-- 4/2: four half-note beats
-- Most common meter in Western music
+# Common Errors
 
-### From Repertoire
+- Treating the time signature as a fraction (it is not -- there is no line between the numbers)
+- Miscounting beats when the beat unit is not a quarter note
 
-Simple duple: Sousa's "Stars and Stripes Forever" (2/4), most marches. Simple triple: Strauss waltzes (3/4), Mozart minuets. Simple quadruple: Beethoven's Symphony No. 5 (𝄴), "Twinkle Twinkle Little Star," most pop songs.
+# Common Confusions
 
-## Related Concepts
+- Simple vs. compound: in simple meter the beat divides into 2; in compound meter it divides into 3
+- 3/4 (simple triple) vs. 6/8 (compound duple): same number of eighth notes per measure but different beat structures
 
-- **Prerequisite**: beat, meter, time-signature, note-values
-- **Leads to**: compound-meter, simple-meter
-- **See also**: measure
-
-## Common Confusions
-
-- Simple vs. compound: simple = beat ÷ 2; compound = beat ÷ 3
-- Simple quadruple (4/4) vs. simple duple (2/2): similar feel, different beat groupings
-- Time signature bottom number doesn't determine simple vs. compound (that's the top number)
-- 3/4 is simple triple; 6/8 is compound duple (different division patterns)
-- "Simple" doesn't mean "easy"—it refers to duple beat division
-- Triplets can appear in simple meter (borrowed division from compound)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 9: "Simple Meter and Time Signatures"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: counting system, common/cut time equivalents, 3/4 vs 6/8 confusion.

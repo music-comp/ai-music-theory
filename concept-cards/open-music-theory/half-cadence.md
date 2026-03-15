@@ -1,209 +1,138 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Half Cadence
-category: theory
-source: Open Music Theory
-chapter: "Cadences"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: half-cadence
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: cadences
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Harmony, Cadences, and Phrase Endings"
+chapter_number: 1
+pdf_page: null
+section: "Half Cadences"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+# high: Explicitly defined in source
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "HC"
+  - "semi-cadence"
+  - "imperfect cadence (British usage)"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - cadence
+  - harmonic-function
+extends:
+  - cadence
+related:
+  - phrygian-half-cadence
+  - phrase-model
+contrasts_with:
+  - authentic-cadence
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a half cadence?"
+  - "How does a half cadence differ from an authentic cadence?"
+  - "How do I write a half cadence?"
 ---
 
-# Half Cadence
+# Quick Definition
 
-## Quick Definition
+A half cadence (HC) occurs when a phrase ends on the dominant chord (V), creating an inconclusive, open-ended sound that demands continuation, with any chord potentially preceding V (notated as "x-V").
 
-A cadence that ends on the dominant chord (V), creating an incomplete or "open" ending that suggests continuation rather than closure, typically preceded by tonic (I), pre dominant (ii or IV), or cadential six-four (I⁶₄), functioning as a musical "question" or pause that demands an answer—commonly used to end antecedent phrases in periods where the consequent phrase provides resolution with an authentic cadence.
+# Core Definition
 
-## Formal Definition
+A **half cadence** (HC) occurs when a phrase ends on V (OMT, Ch. IV.1). A variety of chords can precede V, so the harmonic progression is often notated as "x-V," where x is any chord. The HC is the weakest cadence type because of its unfinished sound, sitting at the bottom of the cadential strength spectrum (below IAC and PAC).
 
-**Half Cadence** (HC) is a cadence ending on the dominant (V) chord, creating harmonic expectation without resolution to tonic.
+# Prerequisites
 
-**Essential characteristic**: Phrase ends on V (dominant)
+- **Cadence** — Half cadence is one of the two primary cadence categories
+- **Harmonic function** — Requires understanding that V has dominant function and creates expectation
 
-**Common preceding chords**:
-- I → V (tonic to dominant)
-- IV → V (subdominant to dominant)
-- ii → V (supertonic to dominant)
-- I⁶₄ → V (cadential six-four to dominant)
+# Key Properties
 
-**Effect**: Incomplete, open, expectant—demands continuation
+1. Phrase ends on V (dominant chord)
+2. Any chord can precede V ("x-V")
+3. Creates an inconclusive, open-ended effect
+4. Weakest cadence type on the strength spectrum
+5. V7 is uncommon at half cadences since it adds further instability to an already unstable endpoint (Schmalfeldt's "19th-century HC")
+6. Demands continuation; typically answered by an authentic cadence
 
-## Types of Half Cadence
+# Construction / Recognition
 
-**Simple half cadence**:
-- Any progression ending on V
-- Example: I - IV - V [HC]
-- Creates open ending
+## Writing a HC (OMT Ch. IV.1):
+1. Determine the key
+2. Write the entire bass: do-sol (^1-^5) — using only I and V for now
+3. Write the soprano: do-ti or mi-re (^1-^7 or ^3-^2); sol-sol (^5-^5) possible but uncommon
+4. Fill in inner voices: What do I have? What do I need? Double the bass in root position.
+5. In minor: use raised ^7 (ti) in V chord
 
-**Phrygian half cadence** (minor keys):
-- iv⁶ - V in minor
-- Bass: ^6 - ^5 (descending half step)
-- Named for Phrygian mode (half-step descent to final)
-- Example in A minor: Dm/F - E (F - E in bass)
-- Baroque favorite, especially slow movements
+## To Recognize:
+1. Identify a phrase ending where the final chord is V
+2. Confirm it sounds inconclusive/open
+3. Listen for a sense of beginning after the cadence point
 
-**Cadential six-four + half cadence**:
-- I⁶₄ - V (cadential setup, but ends on V)
-- Example: I - I⁶₄ - V [HC]
-- Strong approach to V, but no resolution to I
-- Creates maximum expectation
+# Context & Application
 
-## Function in Periods
+- **Typical contexts**: Antecedent phrase endings in periods; transitions; internal phrase divisions
+- **Common applications**: Creates the "question" in question-answer phrase structures; marks formal boundaries without closure
+- **Historical/stylistic notes**: HC with V7 is rare in Classical music but more common in Romantic music (Schmalfeldt's "19th-century HC," per OMT Ch. IV.2).
 
-**Antecedent-Consequent structure**:
-```
-Antecedent (4 bars):    ...I - IV - V [HC]
-Consequent (4 bars):    ...I - IV - V - I [PAC]
+# Examples
 
-Question (HC)           Answer (PAC)
-```
+**Example 1** (OMT Ch. IV.1, Example 2, m. 4): Half cadence in Joseph Boulogne's "Ballet No. 6" from L'amant anonyme, Act II. First phrase ends on V, sounding inconclusive.
 
-**HC creates the "question"**:
-- First phrase ends on V (half cadence)
-- Listener expects resolution
-- Second phrase provides answer (authentic cadence to I)
+**Example 2** (OMT Ch. IV.1, Examples 11-12): Writing a HC in major and minor keys, demonstrating bass line do-sol and soprano options.
 
-**Formal function**: Articulates phrase without closure
+# Relationships
 
-## Half Cadence vs. Other Cadences
+## Builds Upon
+- **Cadence** — Half cadence is the inconclusive cadence type
 
-**vs. Authentic Cadence**:
-- HC: Ends on V (no resolution)
-- AC: V - I (resolves to tonic)
+## Enables
+- **Phrygian half cadence** — A special type of HC in minor (iv6-V)
 
-**vs. Deceptive Cadence**:
-- HC: Ends on V (one chord, no resolution)
-- DC: V - vi (two chords, unexpected resolution)
+## Related
+- **Phrase model** — HC occupies the D position without Te
+- **Cadential six-four** — Can precede V at a half cadence
 
-**Key difference**: HC is a stopping point ON V; other cadences resolve FROM V
+## Contrasts With
+- **Authentic cadence** — AC resolves V to I; HC stops on V
 
-## Harmonic Context
+# Common Errors
 
-Half cadences serve specific purposes:
-- **Phrase division**: Marks end of phrase without closure
-- **Antecedent endings**: Standard for first phrase of period
-- **Formal articulation**: Creates breathing points
-- **Harmonic expectation**: Demands continuation/resolution
-- **Sectional boundaries**: Marks divisions in larger forms
-- **Medial Caesura** (MC): In sonata form, HC marks end of transition
+- **Error**: Writing V7 at a half cadence in Classical style
+  **Correction**: V7 adds instability and is uncommon at HCs in 18th-century music; use V triad
 
-## Musical Context
+- **Error**: Confusing HC with IAC
+  **Correction**: HC ends ON V (no resolution); IAC has V resolving TO I
 
-Half cadences create formal and harmonic effects:
-- **Open endings**: Phrase incomplete, requires continuation
-- **Question-answer**: HC = question, AC = answer
-- **Tension**: Leaves harmony unresolved on V
-- **Momentum**: Propels music forward (can't stop on HC)
-- **Formal balance**: Paired with authentic cadences in periods
+# Common Confusions
 
-Half cadence is the "comma" to authentic cadence's "period."
+- **Confusion**: Thinking "half" means the cadence is incomplete or wrong
+  **Clarification**: Half cadences are deliberate compositional choices for creating open-ended phrases
 
-## Examples
+- **Confusion**: Believing only I can precede V at a half cadence
+  **Clarification**: Any chord can precede V ("x-V"); I, ii, IV, and cad. 6/4 are all common
 
-### Basic
+# Source Reference
 
-**Simple half cadence** (I-V):
-```
-C major:
-I  -  V [HC]
-C  -  G
+Open Music Theory, Part IV, Chapter 1: "Introduction to Harmony, Cadences, and Phrase Endings," section "Half Cadences." See Examples 2, 4 (cadential strength spectrum), 11-12 (writing HCs).
 
-Ends on V, creates open ending
-Expects continuation to I
-```
+# Verification Notes
 
-**Common half cadence** (IV-V):
-```
-C major:
-IV  -  V [HC]
-F   -  G
-
-Subdominant prepares dominant
-Typical antecedent ending
-```
-
-**With predominant** (ii-V):
-```
-C major:
-I  -  ii  -  V [HC]
-C  -  Dm  -  G
-
-Predominant strengthens approach to V
-Still ends incomplete
-```
-
-**Phrygian half cadence** (minor):
-```
-A minor:
-iv⁶  -  V [HC]
-Dm/F -  E
-
-Bass: F → E (descending half step)
-Characteristic of minor keys, Baroque style
-```
-
-**Cadential six-four + HC**:
-```
-C major:
-I  -  I⁶₄  -  V [HC]
-C  -  C/G  -  G
-
-I⁶₄ over V bass, resolves to V
-Strong preparation, but no resolution to I
-```
-
-**In period structure**:
-```
-Antecedent (mm. 1-4):
-I - vi - IV - V [HC]
-Incomplete, asks "question"
-
-Consequent (mm. 5-8):
-I - vi - IV - V - I [PAC]
-Complete, provides "answer"
-
-Period structure: HC answered by PAC
-```
-
-### From Repertoire
-
-**Mozart, Piano Sonata K. 545, I, mm. 1-4**: Antecedent phrase ends with half cadence on V (G major), sets up consequent phrase which answers with PAC.
-
-**Beethoven, "Ode to Joy," mm. 1-4**: First phrase ends on half cadence (A major V chord), creates expectation for second phrase resolution.
-
-**Bach, Chorales**: Phrygian half cadences common in minor-key chorales, especially at internal phrase divisions.
-
-**Mozart, Symphony No. 40, I**: Medial Caesura (MC) at end of transition is half cadence in Bb major (V:HC), marking boundary before secondary theme.
-
-**Haydn, String Quartets**: Frequent use of HC at antecedent endings, demonstrating Classical phrase structure.
-
-## Related Concepts
-
-- **Prerequisite**: cadence, phrase, period, antecedent-consequent, chord
-- **Leads to**: authentic-cadence, medial-caesura, srdc-phrase-structure
-- **See also**: phrygian-cadence, dominant-arrival
-
-## Common Confusions
-
-- Half cadence = ends ON V (doesn't resolve to I)
-- "Half" because incomplete, not "half-hearted" or weak
-- HC is one-chord ending (V), not two-chord progression
-- Any progression can precede HC (I-V, IV-V, ii-V, I⁶₄-V, etc.)
-- Phrygian HC specific to minor (iv⁶-V, bass descends ^6-^5)
-- HC different from deceptive cadence (HC ends V; DC is V-vi)
-- Not incomplete authentic cadence (IAC is V-I; HC is just V)
-- Medial Caesura (MC) in sonata form often HC (marks TR-S boundary)
-- HC creates expectation, not resolution
-- Common in antecedent phrases (answered by consequent's AC)
-- Can end on V⁷ (still half cadence, just with seventh)
-- "Semi-cadence" = alternate term for half cadence (same thing)
-- HC typically not final cadence of movement (requires resolution)
-- Multiple HCs possible in development sections (avoiding tonic)
-- Cadential I⁶₄-V sometimes called "half cadence" (technically ends on V)
-- HC is functional pause/articulation (not accidental ending)
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Types of Cadences"
+- Definition source: Direct from OMT Ch. IV.1
+- Confidence rationale: HIGH — explicit definition with examples
+- Uncertainties: None
+- Cross-reference status: All slugs verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: period/antecedent-consequent context, phrygian HC reference (moved to separate card), cadential strength spectrum placement. Old card's generic repertoire examples replaced with source-specific Boulogne example.

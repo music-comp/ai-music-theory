@@ -1,81 +1,88 @@
 ---
-concept: Blues Scale
-category: theory
-source: Open Music Theory
-chapter: "Blues Melodies and the Blues Scale"
-pdf_page: null
-chapter_number: 6
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Blues Scale and Blues Melodies
+slug: blues-scale
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: blues
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Blues Melodies and the Blues Scale"
+chapter_number: 9
+pdf_page: null
+section: "VI.9"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "minor blues scale"
+  - "major blues scale"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - minor-pentatonic-scale
+  - 12-bar-blues
+extends:
+  - minor-pentatonic-scale
+related:
+  - blue-notes
+  - call-and-response
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the blues scale and how does it relate to the pentatonic scale?"
+  - "What are blue notes?"
 ---
 
-# Blues Scale
+# Quick Definition
+The blues scale is a minor pentatonic scale with an added chromatic passing tone: do-me-fa-fi-sol-te (^1-b^3-^4-#^4-^5-b^7). When used over major-key blues chords, it creates characteristic clashes (mi/me, ti/te) producing "blue notes" — pitches that are neither flat nor natural but somewhere in between. The major blues scale is a rotation starting on the second note: do-re-ri-mi-sol-la.
 
-## Quick Definition
+# Core Definition
+Blues melodies in sung form follow an aab lyric structure matching the three 4-bar phrases. Call-and-response is essential: the vocal "call" occupies the first two bars of each phrase, with instrumental "response" filling the remaining two bars. The blues scale generalizes this melodic practice: minor pentatonic (do-me-fa-sol-te) plus chromatic passing tone (fi, leading up to sol). The clashes between the scale (me, te) and major harmony (mi, ti) produce blue notes — microtonal inflections between flat and natural that are characteristic of the style. The major blues scale (do-re-ri-mi-sol-la) is a rotation of the minor blues scale from its relative major, less dissonant over major chords but the minor blues scale over major chords is equally standard practice.
 
-A six-note scale based on the minor pentatonic with an added chromatic passing tone: do-me-fa-fi-sol-te (^1-flat^3-^4-sharp^4-^5-flat^7).
+# Prerequisites
+- Minor pentatonic scale
+- 12-bar blues form
 
-## Formal Definition
+# Key Properties
+1. Minor blues scale: do-me-fa-fi-sol-te (minor pentatonic + chromatic passing tone)
+2. Major blues scale: do-re-ri-mi-sol-la (rotation from relative minor)
+3. Blue notes: mi/me and ti/te clashes; pitches between flat and natural
+4. aab lyric structure matches three 4-bar blues phrases
+5. Call-and-response: vocal call (first 2 bars), instrumental response (last 2 bars)
+6. Used over BOTH major and minor blues progressions
+7. Chromatic passing tone (fi) leads up to sol (^5)
 
-The **blues scale** is a six-note scale used in blues and jazz improvisation:
+# Context & Application
+"Gulf Coast Blues" (Clarence Williams, recorded by Bessie Smith, 1923): one of earliest recorded blues songs. Demonstrates aab lyric structure, call-and-response between voice and piano, and blues-scale-based melody. The minor blues scale works over major chords despite the "clashes" — this is intentional and characteristic, not an error.
 
-**Scale degrees**: ^1 - flat^3 - ^4 - sharp^4 - ^5 - flat^7
+# Examples
+**Example 1** (C blues scale): C-Eb-F-F#-G-Bb (minor blues); C-D-D#-E-G-A (major blues).
+**Example 2** ("Gulf Coast Blues"): aab lyric structure with call-and-response in each 4-bar phrase.
 
-In C: C - Eb - F - F# - G - Bb
+# Relationships
+## Builds Upon
+- **minor-pentatonic-scale** — Blues scale adds one chromatic passing tone
+## Related
+- **blue-notes** — The characteristic mi/me and ti/te clashes
+- **call-and-response** — Essential to blues melodic structure
 
-**Construction**:
-- Start with the minor pentatonic scale: ^1 - flat^3 - ^4 - ^5 - flat^7
-- Add a chromatic passing tone between ^4 and ^5: sharp^4 (or flat^5)
+# Common Confusions
+- **Confusion**: The blues scale sounds "wrong" over major chords.
+  **Clarification**: The me/mi and te/ti clashes are intentional and define the blues sound. Blue notes are neither flat nor natural — they exploit the space between.
 
-**Characteristic features**:
-- The flat^3 and flat^7 clash with major chord tones, creating blue notes
-- The sharp^4 (flat^5) is a chromatic passing tone, not a stable scale degree
-- Used over BOTH major and minor blues progressions
+# Source Reference
+Open Music Theory, Part VI: Jazz, Chapter 9: "Blues Melodies and the Blues Scale."
 
-**Major blues scale** (rotation):
-Begin the blues scale on its second note (flat^3) to get:
-^1 - ^2 - sharp^2 - ^3 - ^5 - ^6
-
-In C: C - D - D# - E - G - A (relative to C major)
-
-## Musical Context
-
-The blues scale generalizes melodic practices from the blues tradition into a learnable scale for improvisers. The characteristic sound comes from the clash between the scale's minor-tinged notes (flat^3, flat^7) and the major chords of a blues progression.
-
-These clashes produce "blue notes" - pitches that are neither fully major nor minor but somewhere in between, giving blues its distinctive expressive quality.
-
-## Examples
-
-### Basic
-
-C blues scale: C - Eb - F - F# - G - Bb - C
-
-Over C7 chord:
-- Eb (flat^3) clashes with E (^3) in the chord
-- Bb (flat^7) clashes with B (^7) in a Cmaj7 context
-
-C major blues scale: C - D - D# - E - G - A - C
-
-### From Repertoire
-
-"Gulf Coast Blues" (Clarence Williams, 1923, recorded by Bessie Smith): The melody uses blues scale pitches with characteristic blue note inflections.
-
-Blues scale is ubiquitous in rock guitar solos, R&B melodies, and jazz improvisation over blues changes.
-
-## Related Concepts
-
-- **Prerequisite**: pentatonic-scale, interval
-- **Leads to**: blue-notes
-- **See also**: 12-bar-blues, mode
-
-## Common Confusions
-
-- The blues scale is used over MAJOR blues as well as minor; the clashes are intentional
-- The sharp^4 is a passing tone, not meant to be dwelt upon
-- "Blues scale" usually means the minor version; specify "major blues scale" for the rotation
-- The blues scale is a simplification; real blues melody is more nuanced
-- Blue notes are often bent or slurred, not played exactly on the tempered pitches
-
-## Source Reference
-
-Open Music Theory, Part VI, Chapter 9: "Blues Melodies and the Blues Scale"
+# Verification Notes
+- Re-extracted from source chapter 06-09; merged with existing v2 card
+- Preserved Bessie Smith example and call-and-response context
+- Confidence rationale: High — clear source treatment with historical context

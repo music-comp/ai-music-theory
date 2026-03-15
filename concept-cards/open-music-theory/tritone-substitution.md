@@ -1,70 +1,89 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tritone Substitution
-category: theory
-source: Open Music Theory
-chapter: "Substitutions"
-pdf_page: null
-chapter_number: 6
-unit: null
+slug: tritone-substitution
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: jazz-harmony
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Substitutions"
+chapter_number: 6
+pdf_page: null
+section: "VI.6"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "tritone sub"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - dominant-seventh-chord
+  - tritone-interval
+  - ii-v-i-progression
+extends: []
+related:
+  - mode-mixture-jazz
+  - applied-chord
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a tritone substitution and why does it work?"
+  - "How do tritone subs create chromatic bass lines?"
 ---
 
-# Tritone Substitution
+# Quick Definition
+A tritone substitution replaces a dominant seventh chord with another dominant seventh chord a tritone away. This works because the two chords share the same tritone (the interval between their 3rd and 7th), so the harmonic function is preserved. Unique to jazz. Creates characteristic chromatic bass motion (down by minor second to target).
 
-## Quick Definition
+# Core Definition
+The tritone evenly divides the twelve-tone collection, so transposing by tritone maps the tritone onto itself. Any V7 chord (applied or diatonic) can be replaced by the V7 a tritone away. In the turnaround, replacing diatonic chords with applied V7s then tritone-subbing every other one yields a chromatic descending bass line with smooth voice leading. Mode mixture substitutions are also common in jazz: ii7 becomes ii-half-dim7, V7 gains b9 — both involve substituting le for la (lowered-^6 for natural-^6). McClimon (2017) visualizes tritone substitutions as a parallel "shadow space" behind the standard ii-V space.
 
-Replacing a dominant seventh chord with another dominant seventh chord whose root is a tritone away, exploiting the fact that both chords share the same tritone interval.
+# Prerequisites
+- Dominant seventh chord structure
+- Tritone interval properties
+- ii-V-I schema
 
-## Formal Definition
+# Key Properties
+1. Replaces V7 with V7 a tritone away
+2. Works because both chords share the same tritone (between 3rd and 7th)
+3. Creates chromatic bass motion down by minor second to target
+4. Can replace any V7: diatonic or applied
+5. Unique to jazz (not found in classical or pop substitution practice)
+6. Often preceded by its own ii chord in the "shadow" ii-V space
+7. Mode mixture substitutions: ii7 to ii-half-dim7, V7 to V7b9 (le for la)
 
-A **tritone substitution** replaces one dominant seventh chord with another dominant seventh a tritone (three whole steps) away. This substitution works because:
+# Context & Application
+In turnarounds, converting I-vi-ii-V to all applied V7s then tritone-subbing alternating chords produces a chromatic descending bass line. "Satin Doll" (Ellington) demonstrates modally mixed ii-half-dim7 substitution. Substitutions may be improvised, notated directly, or shown in parentheses in lead sheets.
 
-1. **Root relationship**: The substitute is a tritone from the original (e.g., G7 -> Db7)
-2. **Shared tritone**: Both chords contain the same tritone interval:
-   - G7 contains B-F (tritone)
-   - Db7 contains F-Cb (= B) (same tritone, enharmonically)
+# Examples
+**Example 1** (Turnaround with tritone subs): I-VI7-II7-V7 becomes I-bVI7-II7-bII7 with chromatic bass.
+**Example 2** (Mode mixture): Ami7 becomes A-half-dim7; G7 becomes G7b9 (both substitute le for la).
 
-**Why it works**: The tritone divides the octave in half symmetrically. Transposing by a tritone maps the tritone onto itself. The guide tones (3rd and 7th) of a dominant chord swap roles in the tritone sub.
+# Relationships
+## Builds Upon
+- **dominant-seventh-chord** — The chord being substituted
+- **tritone-interval** — The shared interval that makes it work
+## Related
+- **mode-mixture-jazz** — Another common jazz substitution technique
+- **applied-chord** — Tritone subs can replace any applied V7
 
-**Result**: The tritone sub resolves down by half step instead of down by fifth, creating chromatic bass motion.
+# Common Confusions
+- **Confusion**: Tritone subs change the harmonic function.
+  **Clarification**: The function is preserved because the defining tritone (3rd-7th) is the same in both chords, just with roles swapped.
 
-## Musical Context
+# Source Reference
+Open Music Theory, Part VI: Jazz, Chapter 6: "Substitutions."
 
-Tritone substitution is a distinctively jazz technique, rarely found in classical or pop music. It allows for:
-- Chromatic bass lines
-- Harmonic variety over familiar progressions
-- Smooth voice leading (the chromatic resolution)
-
-A common application is in the turnaround, where alternating tritone subs create a chromatic descending bass line.
-
-## Examples
-
-### Basic
-
-Original: G7 -> Cmaj7 (V-I)
-Tritone sub: Db7 -> Cmaj7 (bII7-I, resolving down by half step)
-
-Turnaround with tritone subs:
-- Original: Cmaj7 - A7 - D7 - G7 - Cmaj7
-- With subs: Cmaj7 - Eb7 - Ab7 - Db7 - Cmaj7 (chromatic bass: C-Eb-Ab-Db-C)
-
-### From Repertoire
-
-"Blues for Alice" (Charlie Parker): Uses tritone substitutions extensively, demonstrated through McClimon's ii-V space visualization. The tune weaves between regular ii-V-I progressions and their tritone-substituted versions.
-
-## Related Concepts
-
-- **Prerequisite**: dominant-seventh-chord, tritone, ii-v-i-progression
-- **See also**: turnaround, applied-chord
-
-## Common Confusions
-
-- The substitute is a DOMINANT seventh chord, not just any chord a tritone away
-- Tritone sub works because of shared tritone, not just root distance
-- The 3rd and 7th swap: 3rd of G7 (B) = 7th of Db7; 7th of G7 (F) = 3rd of Db7
-- Tritone subs can apply to ANY dominant chord, including applied dominants
-- The ii chord can precede a tritone sub just as it precedes a regular V7
-
-## Source Reference
-
-Open Music Theory, Part VI, Chapter 6: "Substitutions"
+# Verification Notes
+- Re-extracted from source chapter 06-06; merged with existing v2 card
+- Preserved McClimon's shadow-space visualization reference
+- Confidence rationale: High — well-explained jazz concept

@@ -1,88 +1,94 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Aeolian Mode
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: aeolian
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
+chapter_number: 14
+pdf_page: null
+section: "Modes and the Parallel Relationship"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "natural minor mode"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - mode
+  - minor-scale
+extends:
+  - mode
+related:
+  - dorian
+  - phrygian
+contrasts_with:
+  - ionian
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the aeolian mode?"
+  - "How does aeolian relate to natural minor?"
 ---
 
-# Aeolian Mode
+# Quick Definition
 
-## Quick Definition
+The diatonic mode identical to the natural minor scale (W-H-W-W-H-W-W), the middle dark mode.
 
-A dark diatonic mode equivalent to the natural minor scale, with the interval pattern W-H-W-W-H-W-W, serving as the reference point for minor-type modes.
+# Core Definition
 
-## Formal Definition
+The **aeolian mode** has the ascending pattern W-H-W-W-H-W-W -- identical to the natural minor scale. It is the third darkest mode (between dorian and phrygian). No scale degrees are altered relative to natural minor. Solfege: do, re, me, fa, sol, le, te.
 
-**Aeolian mode** is a seven-note diatonic mode with the ascending pattern of whole and half steps: W-H-W-W-H-W-W.
+# Prerequisites
 
-**Relationship to natural minor**:
-- Aeolian mode = natural minor scale
-- Same interval pattern, same sound
-- "Aeolian" emphasizes modal context; "natural minor" emphasizes tonal context
+- **Mode**: the general concept
+- **Minor scale**: aeolian is identical to natural minor
 
-**Solfège**: do-re-me-fa-sol-le-te-do
+# Key Properties
 
-**Scale degrees**: ^1, ^2, ♭^3, ^4, ^5, ♭^6, ♭^7
+- Pattern: W-H-W-W-H-W-W
+- Identical to natural minor
+- Middle of the four dark modes
+- Contains me (lowered ^3) -- a dark mode
+- No altered degrees relative to natural minor
 
-**Characteristics**:
-- Contains minor third (me/♭^3), making it a "dark" mode
-- Perfect fourth above tonic
-- Perfect fifth above tonic
-- Minor sixth (le/♭^6)
-- Minor seventh/subtonic (te/♭^7)
+# Construction / Recognition
 
-**Position in modal brightness spectrum**: Fifth position, middle of the dark modes (between Dorian and Phrygian)
+Use the natural minor pattern from any tonic. Aeolian sounds exactly like natural minor.
 
-## Musical Context
+# Context & Application
 
-Aeolian is foundational to Western minor tonality:
-- Standard natural minor scale in tonal music
-- Relative minor of Ionian (shares same key signature)
-- Common in folk music, pop, and classical music
-- Often modified with raised ^6 and ^7 (melodic/harmonic minor)
-- Reference point for understanding darker modes
+Aeolian is extremely common in rock, pop, and classical music. It is the reference point from which other dark modes are described.
 
-When analyzing modal music, "Aeolian" distinguishes the mode from functional minor-key tonality.
+# Examples
 
-## Examples
+- C aeolian: C-D-Eb-F-G-Ab-Bb-C (= C natural minor)
+- A aeolian: A-B-C-D-E-F-G-A (all white keys)
 
-### Basic
+# Relationships
 
-**A Aeolian**:
-- Pattern: A-B-C-D-E-F-G-A
-- W-H-W-W-H-W-W
-- Identical to A natural minor scale
+- **Extends**: mode
+- **See also**: minor-scale, dorian, phrygian
 
-**E Aeolian**:
-- Pattern: E-F♯-G-A-B-C-D-E
-- Identical to E natural minor scale
+# Common Confusions
 
-**Solfège**: do-re-me-fa-sol-le-te-do
+- Aeolian IS natural minor; they are identical
 
-### From Repertoire
-
-"Losing My Religion" by R.E.M. (A Aeolian). Traditional ballads like "House of the Rising Sun" (A Aeolian/A minor). Much classical minor-key music uses Aeolian as the foundation, often with raised ^7 for cadences. Medieval and Renaissance modal music features Aeolian prominently.
-
-## Related Concepts
-
-- **Prerequisite**: scale, mode, minor-scale, whole-step, half-step
-- **Leads to**: natural-minor-scale, harmonic-minor-scale, melodic-minor-scale, relative-major-minor
-- **See also**: dorian, phrygian, ionian, diatonic-modes
-
-## Common Confusions
-
-- Aeolian vs. natural minor: same pitch content, different conceptual frameworks
-  - "Aeolian" = modal thinking (no functional hierarchy)
-  - "Natural minor" = tonal thinking (i-iv-v functional harmony)
-- Aeolian vs. harmonic/melodic minor: Aeolian = natural minor only
-- Aeolian ≠ Ionian (Aeolian has minor third; Ionian has major third)
-- Aeolian is a mode, not a key (keys imply functional harmonic progression)
-- All modes can start on any pitch (A Aeolian, D Aeolian, etc.)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 14: "Introduction to Diatonic Modes and the Chromatic Scale"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: natural minor equivalence, A aeolian white-key example, brightness ranking.

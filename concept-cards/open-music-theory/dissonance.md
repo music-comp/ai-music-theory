@@ -1,92 +1,92 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Dissonance
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Species Counterpoint"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: dissonance
+
+# === CLASSIFICATION ===
+category: intervals
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Intervals"
+chapter_number: 16
+pdf_page: null
+section: "Consonance and Dissonance"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval
+  - interval-quality
+extends: []
+related:
+  - consonance
+  - tritone
+contrasts_with:
+  - consonance
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are dissonant intervals?"
+  - "Why do dissonant intervals feel like they need to resolve?"
 ---
 
-# Dissonance
+# Quick Definition
 
-## Quick Definition
+Intervals perceived as unstable, creating tension that demands resolution; includes seconds, sevenths, tritones, and (in some contexts) perfect fourths.
 
-An interval or chord that sounds unstable, tense, and requires resolution to consonance.
+# Core Definition
 
-## Formal Definition
+**Dissonant** intervals are perceived as less stable, as if they need to resolve to a consonance. Harmonically dissonant intervals include ma2, mi2, ma7, mi7, tritone (A4/d5), and contextually P4. Melodically dissonant intervals include A4/d5, ma7, mi7, and any augmented or diminished interval. These categorizations have varied across cultures and time periods.
 
-**Dissonance** describes intervals or simultaneities that are perceived as unstable, tense, or requiring resolution. Dissonant intervals create a sense of motion and harmonic tension that typically resolves to consonance.
+# Prerequisites
 
-In species counterpoint and tonal music, dissonances include:
-- All seconds (major and minor): M2, m2
-- All sevenths (major and minor): M7, m7
-- All augmented intervals: A1, A2, A4, A5, A6, etc.
-- All diminished intervals: d2, d3, d4, d5, d7, etc.
-- Perfect fourth (P4) when it involves the lowest voice
+- **Interval**: the distances being classified
+- **Interval quality**: the qualities that determine dissonance
 
-Dissonances have more complex frequency ratios than consonances, creating acoustic beating and roughness that the ear perceives as instability.
+# Key Properties
 
-**Treatment of dissonance** in tonal music:
-- Dissonances must be **prepared** (approached properly)
-- Dissonances must **resolve** (move to consonance)
-- Resolution typically involves stepwise motion
-- Dissonances generally occur in metrically weak positions or as embellishments
+- Harmonically dissonant: 2nds, 7ths, tritone, contextually P4
+- Melodically dissonant: tritone, 7ths, augmented/diminished intervals
+- Dissonance creates tension demanding resolution to consonance
+- Dissonance drives harmonic motion forward
+- Classification is culturally variable
 
-## Musical Context
+# Construction / Recognition
 
-Dissonance serves essential musical functions:
-- **Creates tension**: Drives music forward by requiring resolution
-- **Provides variety**: Prevents harmonic stasis
-- **Expressive intensity**: Heightens emotional content
-- **Goal-oriented motion**: Creates expectation and satisfaction through resolution
-- **Structural articulation**: Marks important points through tension and release
+Dissonant intervals sound tense, unstable, or "clashing." They create an expectation for resolution.
 
-Historical evolution:
-- Medieval/Renaissance: Very restricted dissonance treatment
-- Baroque/Classical: Controlled dissonance (suspensions, passing tones)
-- Romantic era: Increasingly free and prolonged dissonance
-- 20th century: Emancipation of dissonance (dissonances not requiring resolution)
+# Context & Application
 
-The balance between consonance and dissonance is fundamental to Western tonal music's tension-and-release aesthetic.
+Dissonance is not "bad" -- it is essential for musical motion. Without dissonance, music would lack tension and direction. Dissonant intervals resolve to consonant ones, creating the fundamental tension-resolution pattern of Western tonal music.
 
-## Examples
+# Examples
 
-### Basic
+- mi2 (B-C): strong dissonance
+- ma7 (C-B): strong dissonance
+- A4/d5 (tritone, F-B): dissonant, historically called "diabolus in musica"
 
-Dissonant intervals:
-- C–D (M2): Dissonance, resolves when D moves to C or E
-- C–F# (A4): Tritone, strong dissonance
-- C–B (M7): Dissonance, resolves when B moves to C
-- C–Db (m2): Sharp dissonance
+# Relationships
 
-Dissonant vs. consonant:
-- C–D (M2) = dissonant; C–E (M3) = consonant
-- C–B (M7) = dissonant; C–A (M6) = consonant
+- **See also**: consonance, tritone, interval, voice-leading
 
-### From Repertoire
+# Common Confusions
 
-**Suspensions**: Bach chorales—dissonant note prepared and resolved
-**Passing tones**: Mozart melodies—dissonant notes passing between consonances
-**Appogiaturas**: Romantic music—dissonant leaps resolved by step
-**Emancipated dissonance**: Schoenberg, Webern—dissonances standing alone without traditional resolution
+- Dissonance is not inherently unpleasant -- it is a musical tool for creating motion and expression
 
-## Related Concepts
+# Source Reference
 
-- **Prerequisite**: interval, interval-quality, consonance, harmonic-interval
-- **Leads to**: suspension, passing-tone, neighbor-tone, appoggiatura, retardation
-- **See also**: voice-leading
+Open Music Theory, Part I, Chapter 16: "Intervals"
 
-## Common Confusions
+# Verification Notes
 
-- Dissonance ≠ "bad" or "ugly": Dissonance is essential for expressive music
-- Context matters: The tritone (A4/d5) is very dissonant; the perfect fourth is contextually dissonant (only when against the bass)
-- All dissonant intervals listed are considered dissonant in tonal music, but 20th-century music may treat them differently
-- Dissonance doesn't always resolve immediately—it can be prolonged for expressive effect
-- The same pitch combination can be consonant or dissonant depending on context and treatment
-- Seventh chords contain dissonant intervals (the seventh) but are standard harmonic structures
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 1: "Introduction to Species Counterpoint"
+Re-extracted from v2 card; preserved: specific dissonant intervals, historical variability, resolution concept, tritone mention.

@@ -1,90 +1,103 @@
 ---
-concept: Solfège
-category: theory
-source: Open Music Theory
-chapter: "Major Scales, Scale Degrees, and Key Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Solfege
+slug: solfege
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Major Scales, Scale Degrees, and Key Signatures"
+chapter_number: 12
+pdf_page: null
+section: "Scale Degrees, Solfege, and Scale-Degree Names"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "solmization"
+  - "sol-fa"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - major-scale
+  - scale-degree
+extends: []
+related:
+  - scale-degree-names
+  - minor-scale
+  - sight-singing
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is solfege?"
+  - "What are the solfege syllables for a major scale?"
+  - "What is the difference between movable do and fixed do?"
 ---
 
-# Solfège
+# Quick Definition
 
-## Quick Definition
+A system of syllables (do, re, mi, fa, sol, la, ti) used to name the notes of a scale, aiding sight-singing and ear training.
 
-A system of singing syllables (do, re, mi, fa, sol, la, ti) assigned to scale degrees, used for sight-singing, ear training, and teaching pitch relationships in tonal music.
+# Core Definition
 
-## Formal Definition
+**Solfege** is a solmization system using the syllables do, re, mi, fa, sol, la, and ti for the seven notes of a major scale (^1 through ^7). In **movable do**, do changes with the tonic of the key (do = ^1 in any key). In **fixed do**, do is always the pitch class C. In minor, altered syllables include me (lowered-^3, "may"), le (lowered-^6, "lay"), and te (lowered-^7, "tay"). Raised ^4 = fi; raised ^6 = la; raised ^7 = ti (in harmonic and melodic minor).
 
-**Solfège** (also **solmization**) is a pedagogical system that assigns specific syllables to scale degrees, enabling musicians to sing pitches by their function within a scale rather than by their absolute letter names.
+# Prerequisites
 
-**Major scale syllables**:
-- do (^1) - re (^2) - mi (^3) - fa (^4) - sol (^5) - la (^6) - ti (^7) - do (^1/^8)
+- **Major scale**: the context where solfege syllables are first learned
+- **Scale degree**: the numerical system solfege parallels
 
-**Minor scale modifications**:
-- me (♭^3): lowered third (pronounced "may")
-- le (♭^6): lowered sixth (pronounced "lay")
-- te (♭^7): lowered seventh/subtonic (pronounced "tay")
+# Key Properties
 
-**Two systems**:
+- Major: do, re, mi, fa, sol, la, ti
+- Natural minor: do, re, me, fa, sol, le, te
+- Harmonic minor: do, re, me, fa, sol, le, ti (raised ^7)
+- Melodic minor ascending: do, re, me, fa, sol, la, ti (raised ^6 and ^7)
+- Movable do: do = tonic of current key
+- Fixed do: do = C always
+- Chromatic alterations: fi (raised fa), se (lowered sol), ra (lowered re), etc.
 
-1. **Movable do**: do corresponds to tonic (scale degree ^1), regardless of pitch
-   - In C major: do = C
-   - In G major: do = G
-   - Most common in American pedagogy
+# Construction / Recognition
 
-2. **Fixed do**: do always corresponds to the pitch class C
-   - In any key: do = C, re = D, mi = E, etc.
-   - Common in Romance language countries and at some conservatories
+Apply solfege syllables to scale degrees. In movable do, identify the tonic first, then assign do.
 
-## Musical Context
+# Context & Application
 
-Solfège serves multiple pedagogical purposes:
-- **Sight-singing**: Enables singing unfamiliar music by scale degree function
-- **Ear training**: Develops recognition of intervallic relationships
-- **Melodic dictation**: Facilitates transcription by identifying scale degrees
-- **Functional understanding**: Emphasizes tonal relationships over absolute pitches
-- **Transposition**: Simplifies understanding of melodies in different keys
+Solfege is essential for sight-singing and ear training. It provides singable syllables that reinforce the sound of each scale degree relative to the tonic. Regular practice with solfege improves aural skills.
 
-Movable do emphasizes the functional relationships between pitches in tonal music.
+# Examples
 
-## Examples
+- C major: C=do, D=re, E=mi, F=fa, G=sol, A=la, B=ti
+- D major (movable do): D=do, E=re, F#=mi, G=fa, A=sol, B=la, C#=ti
+- A natural minor: A=do, B=re, C=me, D=fa, E=sol, F=le, G=te
 
-### Basic
+# Relationships
 
-**Major scale** (C major with movable do):
-- C = do, D = re, E = mi, F = fa, G = sol, A = la, B = ti, C = do
+- **Leads to**: sight-singing, dictation
+- **See also**: scale-degree, scale-degree-names, minor-scale
 
-**Minor scale** (A natural minor with movable do):
-- A = do, B = re, C = me, D = fa, E = sol, F = le, G = te, A = do
+# Common Errors
 
-**Movable vs. Fixed do**:
-- Melody in D major, starting on D:
-  - Movable do: "do re mi..."
-  - Fixed do: "re mi fa♯..." (because D = re in fixed do)
+- Using major syllables in minor keys (me, le, te are needed for lowered degrees)
 
-### From Repertoire
+# Common Confusions
 
-"Do-Re-Mi" from _The Sound of Music_ teaches the solfège syllables. Folk song "Hot Cross Buns" uses "mi-re-do." "Mary Had a Little Lamb" begins "mi-re-do-re-mi-mi-mi." Sight-singing exercises in music theory classes universally use solfège.
+- Movable do vs. fixed do: different systems, both valid; Open Music Theory uses movable do
+- Solfege is a tool for learning, not a permanent notation system
 
-## Related Concepts
+# Source Reference
 
-- **Prerequisite**: scale, scale-degree, major-scale, minor-scale
-- **Leads to**: sight-singing, melodic-alteration
-- **See also**: scale-degree-names
+Open Music Theory, Part I, Chapter 12: "Major Scales, Scale Degrees, and Key Signatures"; Chapter 13: "Minor Scales"
 
-## Common Confusions
+# Verification Notes
 
-- Movable vs. fixed do: in movable do, "do" changes with the key; in fixed do, "do" = C always
-- Solfège syllables are functions (movable do), not absolute pitches
-- "Sol" (solfège) vs. "G" (letter name): sol = ^5 in any major key
-- Minor scale syllables: me/le/te are lowered versions of mi/la/ti
-- "Ti" (solfège ^7) vs. "te" (minor ^7): ti = leading tone; te = subtonic
-- Pronunciation: sol (not "so"), la (not "lah"), ti (not "si" in movable do, though "si" in fixed do)
-- Solfège hand signs (Curwen hand signs) sometimes accompany syllables in pedagogy
-
-## Source Reference
-
-Open Music Theory, Part I, Chapter 12: "Major Scales, Scale Degrees, and Key Signatures"
-Open Music Theory, Part I, Chapter 13: "Minor Scales, Scale Degrees, and Key Signatures"
+Re-extracted from v2 card; preserved: all minor syllable variants, movable vs fixed do distinction, pronunciation guides.

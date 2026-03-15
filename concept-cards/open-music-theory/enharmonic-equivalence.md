@@ -1,77 +1,106 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Enharmonic Equivalence
-category: theory
-source: Open Music Theory
-chapter: "Half Steps, Whole Steps, and Accidentals"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: enharmonic-equivalence
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: pitch
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Half Steps, Whole Steps, and Accidentals"
+chapter_number: 5
+pdf_page: null
+section: "Enharmonic equivalence"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "enharmonic spelling"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch
+  - accidental
+  - half-step
+extends: []
+related:
+  - pitch-class
+  - key-signature
+  - chromatic-scale
+contrasts_with:
+  - octave-equivalence
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is enharmonic equivalence?"
+  - "Why can one pitch have multiple names?"
+  - "Does enharmonic spelling matter in tonal music?"
 ---
 
-# Enharmonic Equivalence
+# Quick Definition
 
-## Quick Definition
+When two differently spelled notes (like C# and Db) sound the same pitch in equal temperament.
 
-When two differently spelled notes (like C♯ and D♭) sound the same pitch.
+# Core Definition
 
-## Formal Definition
+**Enharmonic equivalence** occurs when two or more notes are spelled differently but represent the same sounding pitch. Each key on the piano has more than one name: for example, the black key between C and D can be called C# (sharp) or Db (flat). White keys also have enharmonic names: F = E#, E = Fb, C = B#, B = Cb. Double accidentals expand this further: D = C-double-sharp = E-double-flat.
 
-**Enharmonic equivalence** occurs when two or more notes are spelled differently but represent the same pitch or pitch class in equal temperament. Enharmonically equivalent notes have different letter names and accidentals but produce identical frequencies when played.
+# Prerequisites
 
-Common enharmonic pairs:
-- C♯ = D♭
-- D♯ = E♭
-- F♯ = G♭
-- G♯ = A♭
-- A♯ = B♭
+- **Pitch**: the sound being named
+- **Accidental**: the symbols that create alternate names
+- **Half step**: the distance relationships that produce enharmonic pairs
 
-Additionally:
-- E = F♭, E♯ = F
-- B = C♭, B♯ = C
-- C = D𝄫, C𝄪 = D
-- F♭ = E, F = E♯
+# Key Properties
 
-In pitch-class integer notation, enharmonically equivalent notes map to the same integer (0-11). For example, C♯, D♭, and B𝄪 all = pitch class 1.
+- Enharmonically equivalent notes sound identical in equal temperament
+- Each piano key has at least two names, some have three (e.g., D = C-double-sharp = E-double-flat)
+- Common pairs: C#/Db, D#/Eb, F#/Gb, G#/Ab, A#/Bb
+- Natural half-step equivalents: E/Fb, F/E#, B/Cb, C/B#
+- In pitch-class integer notation, enharmonic equivalents map to the same integer (0-11)
 
-## Musical Context
+# Construction / Recognition
 
-Enharmonic equivalence is a feature of equal temperament, the tuning system standard in Western music since the 19th century. In other tuning systems (just intonation, meantone, etc.), enharmonic notes may have slightly different frequencies.
+On a keyboard, any single key can be named multiple ways using different accidentals. The correct spelling depends on key, harmonic context, and direction of melodic motion.
 
-Despite sounding identical, enharmonic spellings convey different musical meanings:
-- C♯ suggests upward motion or a sharp key
-- D♭ suggests downward motion or a flat key
-- Correct spelling clarifies harmonic function and voice leading
+# Context & Application
 
-Composers choose spellings based on context, key, and the direction of melodic motion.
+Despite sounding identical, enharmonic spellings convey different musical meanings in tonal music: C# suggests upward motion or a sharp key; Db suggests downward motion or a flat key. Correct spelling clarifies harmonic function and voice leading. Enharmonic equivalence is exact only in equal temperament; in other tuning systems, enharmonic pairs may differ slightly.
 
-## Examples
+# Examples
 
-### Basic
+- C# = Db (same black key on piano)
+- F# = Gb (same black key)
+- E = Fb (same white key)
+- B# = C (same white key)
+- D = C-double-sharp = E-double-flat (three names for one pitch)
 
-Enharmonic pairs on a piano keyboard:
-- The black key between C and D can be called C♯ or D♭
-- The black key between F and G can be called F♯ or G♭
-- The white key F can also be called E♯
-- The white key E can also be called F♭
+# Relationships
 
-### From Repertoire
+- **Leads to**: key-signature, chromatic-scale, modulation
+- **See also**: pitch-class, octave-equivalence, accidental
 
-In Beethoven's "Moonlight Sonata" (C♯ minor), all the sharps could theoretically be respelled as flats (D♭ minor), but this would make reading and understanding the music much more difficult. Composers choose the spelling that makes the most sense for the key and harmonic context.
+# Common Errors
 
-## Related Concepts
+- Using the wrong enharmonic spelling for the key context (e.g., writing Db in a sharp key where C# is correct)
 
-- **Prerequisite**: pitch, pitch-class, accidental, half-step
-- **Leads to**: circle-of-fifths, modulation
-- **See also**: octave-equivalence, chromatic-scale, key-signature
+# Common Confusions
 
-## Common Confusions
+- Enharmonic equivalence is about same-sounding different names; octave equivalence is about same-named different registers
+- In tonal music, spelling matters for readability and harmonic clarity even though the sounds are identical
+- Enharmonic equivalence is perfect only in equal temperament
 
-- Enharmonic equivalence applies to pitch, not spelling: C♯ and D♭ SOUND the same but ARE NOT the same note name
-- In tonal music, spelling matters: G♯ resolves up to A; A♭ resolves down to G
-- Enharmonic equivalence is perfect only in equal temperament; in other tuning systems, enharmonic notes may differ slightly
-- Don't confuse with octave equivalence: that's about pitches in different octaves; this is about different names for the same pitch
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 5: "Half Steps, Whole Steps, and Accidentals"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: all enharmonic pairs, double-accidental examples, tuning system caveat.

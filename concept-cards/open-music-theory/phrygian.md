@@ -1,85 +1,92 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Phrygian Mode
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: phrygian
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
+chapter_number: 14
+pdf_page: null
+section: "Modes and the Parallel Relationship"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - mode
+  - minor-scale
+extends:
+  - mode
+related:
+  - aeolian
+  - locrian
+contrasts_with:
+  - lydian
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the phrygian mode?"
+  - "How does phrygian differ from natural minor?"
 ---
 
-# Phrygian Mode
+# Quick Definition
 
-## Quick Definition
+A dark diatonic mode with the pattern H-W-W-W-H-W-W, like natural minor but with a lowered ^2 (ra).
 
-A dark diatonic mode with the interval pattern H-W-W-W-H-W-W, equivalent to natural minor with a lowered second degree (♭^2).
+# Core Definition
 
-## Formal Definition
+The **phrygian mode** has the ascending pattern H-W-W-W-H-W-W. Compared to natural minor, phrygian has a lowered ^2 (ra instead of re). Solfege: do, ra, me, fa, sol, le, te. The half step between ^1 and ^2 gives phrygian a distinctive, dark quality often associated with Spanish or Middle Eastern music.
 
-**Phrygian mode** is a seven-note diatonic mode with the ascending pattern of whole and half steps: H-W-W-W-H-W-W.
+# Prerequisites
 
-**Compared to natural minor (Aeolian)**:
-- Same as natural minor except ^2 is lowered by one half step
-- Solfège: do-ra-me-fa-sol-le-te-do (where "ra" = lowered ^2)
+- **Mode**: the general concept
+- **Minor scale**: phrygian is described relative to natural minor
 
-**Scale degrees** (compared to Aeolian):
-- ^1, ♭^2, ♭^3, ^4, ^5, ♭^6, ♭^7
+# Key Properties
 
-**Characteristics**:
-- Contains minor third (me/♭^3), making it a "dark" mode
-- Minor second between ^1 and ^2 (half step above tonic)
-- Perfect fourth above tonic
-- Perfect fifth above tonic
-- Minor sixth (le/♭^6)
-- Minor seventh (subtonic)
+- Pattern: H-W-W-W-H-W-W
+- Like natural minor with lowered ^2
+- Second darkest mode (between aeolian and locrian)
+- Characteristic interval: minor 2nd above tonic (half step ^1-^2)
 
-**Position in modal brightness spectrum**: Sixth position, second darkest mode (between Aeolian and Locrian)
+# Construction / Recognition
 
-## Musical Context
+Start with natural minor and lower ^2 by a half step. The opening half step is the most recognizable feature.
 
-Phrygian's lowered second creates distinctive character:
-- Half-step above tonic (^1 to ♭^2) creates exotic, dark quality
-- Common in Spanish flamenco music
-- Associated with Middle Eastern and Spanish musical traditions
-- Used in metal and progressive rock for dark, ominous character
-- Rare in common-practice classical music
+# Context & Application
 
-The lowered ^2 (half step above tonic) is the defining characteristic distinguishing Phrygian from Aeolian.
+Phrygian is prominent in flamenco, metal, and Middle Eastern-influenced music. The half step above the tonic creates a distinctive, exotic quality.
 
-## Examples
+# Examples
 
-### Basic
+- C phrygian: C-Db-Eb-F-G-Ab-Bb-C (note: Db, not D as in C natural minor)
+- E phrygian: E-F-G-A-B-C-D-E (all white keys)
 
-**E Phrygian**:
-- Pattern: E-F-G-A-B-C-D-E
-- H-W-W-W-H-W-W
-- Lowered ^2: F♮ (instead of F♯ in E natural minor)
+# Relationships
 
-**A Phrygian**:
-- Pattern: A-B♭-C-D-E-F-G-A
-- Lowered ^2: B♭ (instead of B♮ in A natural minor)
+- **Extends**: mode
+- **See also**: aeolian, locrian, minor-scale
 
-**Solfège**: do-ra-me-fa-sol-le-te-do
+# Common Confusions
 
-### From Repertoire
+- Phrygian is NOT the same as natural minor -- the lowered ^2 is the distinguishing feature
 
-Traditional Spanish flamenco music uses Phrygian mode (often E Phrygian). Metallica's "Wherever I May Roam" features E Phrygian. The main theme from "The Rite of Spring" (Stravinsky) uses Phrygian. Pink Floyd's "Set the Controls for the Heart of the Sun" explores Phrygian mode. Medieval plainchant includes Phrygian as one of the authentic modes.
-
-## Related Concepts
-
-- **Prerequisite**: scale, mode, minor-scale, whole-step, half-step
-- **See also**: aeolian, dorian, locrian, diatonic-modes
-
-## Common Confusions
-
-- Phrygian vs. natural minor: Phrygian has lowered ^2 (F in E), natural minor has raised ^2 (F♯ in E)
-- Phrygian ≠ Lydian (opposite ends of spectrum; Phrygian is very dark, Lydian is very bright)
-- The lowered ^2 creates minor second from tonic (half step), not major second
-- Phrygian dominant (used in flamenco) is different—it has major third and major sixth
-- Phrygian mode ≠ E minor key (mode has no functional harmony)
-- "Dark" doesn't mean "dissonant"—refers to minor-mode quality
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 14: "Introduction to Diatonic Modes and the Chromatic Scale"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: lowered ^2 distinction, solfege, E phrygian white-key example, flamenco association.

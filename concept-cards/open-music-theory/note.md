@@ -1,66 +1,105 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Note
-category: theory
-source: Open Music Theory
-chapter: "Notation of Notes, Clefs, and Ledger Lines"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: note
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Notation of Notes, Clefs, and Ledger Lines"
+chapter_number: 2
+pdf_page: null
+section: "Notation of Notes"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - staff
+extends: []
+related:
+  - pitch
+  - rhythm
+  - note-values
+  - rest-values
+contrasts_with:
+  - rest-values
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a note in music notation?"
+  - "What are the components of a written note?"
+  - "How does a note differ from a pitch?"
 ---
 
-# Note
+# Quick Definition
 
-## Quick Definition
+A written symbol in music notation that indicates both pitch (how high or low) and duration (how long).
 
-A written symbol in music notation that indicates both pitch (how high or low) and duration (how long to hold the sound).
+# Core Definition
 
-## Formal Definition
+A **note** is a written symbol in Western musical notation that conveys two primary pieces of information: pitch and rhythm (duration). A note consists of several components: a **notehead** (oval, either filled or open), an optional **stem** (vertical line), and optional **beams** or **flags** that indicate shorter durations. The position of the notehead on the staff indicates pitch; the appearance of the notehead and its attachments indicate duration.
 
-A **note** is a written symbol in Western musical notation that conveys two primary pieces of information: pitch and rhythm. A note consists of several components:
+# Prerequisites
 
-- **Notehead**: An oval shape (not round), either filled (black) or open (white), tilted slightly upward to the right
-- **Stem** (optional): A vertical line attached to the notehead, extending upward (on the right) or downward (on the left)
-- **Beam or flag** (optional): Connects or marks notes with certain rhythmic values
+- **Staff**: notes are placed on the lines and spaces of a staff to indicate pitch
+- **Western musical notation**: the system within which notes function
 
-The position of the notehead on the staff (on a line or in a space) indicates pitch. The appearance of the notehead (filled vs. open) and presence/absence of stems, flags, and beams indicate duration.
+# Key Properties
 
-## Musical Context
+- Noteheads are oval (not round), tilted slightly upward to the right
+- Noteheads on a line fill half of each space above and below
+- Noteheads in a space just touch the lines above and below
+- Stems point down (left side) for notes above the middle line, up (right side) for notes below
+- Notes on the middle line can have stems in either direction
+- Stem length equals four staff lines when hand-drawn
 
-Notes are the fundamental building blocks of written music. Reading and writing notes correctly is essential for communicating musical ideas. The same pitch can be notated with different note shapes to indicate different durations (whole note, half note, quarter note, etc.).
+# Construction / Recognition
 
-Proper notation of noteheads matters: they should be oval (not circular), properly sized, and correctly positioned to touch or fill the appropriate line or space.
+A note is recognized by its notehead position on a staff (pitch) and its visual form (duration). Quarter notes and shorter values have filled noteheads; half notes and whole notes have open noteheads. Flags and beams attach to stems to indicate eighth notes and shorter.
 
-## Examples
+# Context & Application
 
-### Basic
+Notes are the fundamental building blocks of written music. Every melody, chord, and rhythmic pattern is built from notes placed on a staff. The same pitch can appear with different note shapes (whole, half, quarter, etc.) to indicate different durations.
 
-A notehead on a line should fill half of each space above and below the line. A notehead in a space should just touch the lines above and below.
+# Examples
 
-Components:
+- A filled notehead with a stem = quarter note
+- An open notehead with a stem = half note
+- An open notehead without a stem = whole note
+- A filled notehead with a stem and one flag = eighth note
 
-- Quarter note: filled notehead with stem
-- Half note: open notehead with stem
-- Whole note: open notehead without stem
-- Eighth note: filled notehead with stem and flag (or beam when grouped)
+# Relationships
 
-### From Repertoire
+- **Leads to**: interval, chord, note-values
+- **See also**: rest-values, pitch, rhythm
 
-The opening of "Twinkle, Twinkle Little Star" uses quarter notes and half notes to create its familiar rhythm, with noteheads positioned on the staff to indicate the melody's pitches.
+# Common Errors
 
-## Related Concepts
+- Drawing noteheads that are round instead of oval
+- Drawing noteheads that are too large or too small relative to the staff
+- Incorrect stem direction (stems should point down for notes above the middle line)
+- When writing harmonic seconds, failing to displace one note -- the lower note always goes on the left
 
-- **Prerequisite**: staff, pitch, rhythm
-- **Leads to**: interval, chord
-- **See also**: rests
+# Common Confusions
 
-## Common Confusions
+- Note vs. pitch: a note indicates BOTH pitch and duration; "pitch" alone refers only to frequency/highness-lowness
+- Note vs. tone: in everyday speech these are interchangeable, but in theory a note is specifically a written symbol
 
-- Note vs. pitch: A note indicates BOTH pitch and duration; pitch alone only indicates frequency/highness
-- Noteheads should be oval, not round
-- When two notes form a second (adjacent line and space), one must be displaced to the left or right; the lower note always goes on the left
-- Stem direction: stems point down (on left of notehead) for notes above the middle line; up (on right) for notes below
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 2: "Notation of Notes, Clefs, and Ledger Lines"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: quick definition, formal definition content, common confusions about note vs. pitch and stem direction.

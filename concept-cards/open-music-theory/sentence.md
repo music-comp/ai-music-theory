@@ -1,143 +1,113 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Sentence
+slug: sentence
+
+# === CLASSIFICATION ===
 category: form
-source: Open Music Theory
-chapter: "The Phrase, Archetypes, and Unique Forms"
-pdf_page: null
-chapter_number: 3
-unit: null
+subcategory: phrase-level
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "The Phrase, Archetypes, and Unique Forms"
+chapter_number: 2
+pdf_page: null
+section: "Archetype 1: The Sentence"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "sentential"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - phrase
+  - cadence
+extends: []
+related:
+  - period
+  - compound-period
+  - hybrid-form
+contrasts_with:
+  - period
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a sentence and what are its two subphrases?"
+  - "What are the four traits of a continuation?"
+  - "What is the difference between a sentence and a period?"
 ---
 
-# Sentence
+# Quick Definition
+A phrase-level archetype consisting of two subphrases: a presentation (basic idea + repetition) and a continuation (featuring fragmentation, increased rhythmic activity, sequences, and/or increased harmonic rhythm) that drives toward a cadence.
 
-## Quick Definition
+# Core Definition
+A **sentence** is a specific phrase archetype consisting of two subphrases: the **presentation** (a basic idea and its repetition, typically stable and on tonic harmony) and the **continuation** (which feels less stable and drives toward cadential closure). The continuation is characterized by four traits: (1) **fragmentation** -- unit sizes shorter than previously established; (2) increased rhythmic activity; (3) **sequences** -- units repeated and transposed; (4) increased **harmonic rhythm** -- chord changes more frequent. Not all traits must be present; fragmentation is often the clearest signal. Sentences come in many forms: the archetypal sentence (4 or 8 measures, balanced proportions, fragmentation) to less clear "sentential" phrases. "At a minimum, to be sentential, a phrase needs a presentation and a continuation" (Ch. 2).
 
-A phrase-level form consisting of a presentation (basic idea + repetition) followed by a continuation (featuring fragmentation, sequences, increased harmonic rhythm, or increased rhythmic activity) that drives toward a cadence.
+# Prerequisites
+- **Phrase** -- A sentence is a specific type of phrase
+- **Cadence** -- The continuation drives toward a cadence
 
-## Formal Definition
+# Key Properties
+1. Two subphrases: presentation + continuation
+2. Presentation: basic idea (b.i.) + repetition (often varied)
+3. Continuation: fragmentation, increased rhythmic activity, sequences, increased harmonic rhythm
+4. Common lengths: 4 (2+2), 8 (4+4), 16 (8+8) measures
+5. Continuation equal to or longer than presentation (rarely shorter)
+6. Basic idea repetition shares contour with original (transposition, embellishment, re-harmonization common)
+7. Continuation can end with PAC, HC, or IAC
+8. Sentence is a single phrase (unlike period, which is two phrases)
 
-A **sentence** is a specific type of phrase archetype characterized by a two-part structure: a **presentation** that establishes thematic material through repetition, followed by a **continuation** that increases instability and drives toward cadential closure.
+# Construction / Recognition
+## To Identify a Sentence:
+1. Find the cadence marking the phrase ending
+2. Locate the presentation: look for basic idea followed by its repetition (shared contour)
+3. Identify the continuation: look for fragmentation and other continuation traits
+4. Determine proportions (presentation vs. continuation length)
+## To Compose:
+1. Write a basic idea (often 2 measures) beginning on tonic
+2. Repeat (with variation) to complete the presentation
+3. Write a continuation with shorter units, faster rhythm, more chord changes
+4. Drive toward a cadence
 
-**Essential structure**:
-1. **Presentation** (first half):
-   - Basic idea (b.i.)
-   - Repetition of basic idea (often varied)
-   - Harmonically stable, typically beginning on tonic
+# Context & Application
+The sentence is one of two fundamental phrase archetypes (alongside the period) in Classical music. The theory was developed by Arnold Schoenberg and refined by William Caplin. The source places sentences and unique forms as equally common, viewing them as "two ends of a spectrum." Sentences can be compound: two sentences can combine as antecedent and consequent of a compound period.
 
-2. **Continuation** (second half):
-   - Fragmentation, sequences, increased harmonic rhythm, or increased rhythmic activity
-   - Harmonically unstable at beginning
-   - Drives toward cadence (PAC, HC, or IAC)
+# Examples
+**Example 1** (Ch. 2, Example 6): Louise Farrenc, Cello Sonata, II -- a sentence with clear presentation and continuation with fragmentation.
 
-**Typical proportions**:
-- Most common: 8 measures (4+4)
-- Also common: 16 measures (8+8), 4 measures (2+2)
-- Continuation often balances presentation in length
-- Continuation may be longer than presentation (but rarely shorter)
+**Example 2** (Ch. 2, Example 9): Beethoven, Polonaise for Military Band -- a 4-measure sentence without fragmentation in the continuation.
 
-**Presentation characteristics**:
-- Basic idea typically 2 measures (but can be 1 or 4)
-- Repetition may be exact or varied through:
-  - Transposition
-  - Melodic/rhythmic embellishment
-  - Change of harmonization
-  - Change of interval quality or size
-- Maintains same melodic contour as basic idea
-- Harmonic progressions: often I–V–V–I, I–ii–V–I, or I moving to V or to predominant
+**Example 3** (Ch. 2, Example 10): Beethoven, Piano Sonata Op. 7, II -- sentence whose continuation uses "unit" instead of fragmentation.
 
-**Continuation characteristics** (four typical traits):
-- **Fragmentation**: Units shorter than basic idea length (e.g., if b.i. is 2 measures, fragments are 1 measure)
-- **Increased rhythmic activity**: Faster note values than presentation
-- **Sequences**: Transposed repetitions of melodic/harmonic patterns
-- **Increased harmonic rhythm**: More frequent chord changes than in presentation
+# Relationships
+## Builds Upon
+- **phrase** -- A sentence is a special type of phrase
+## Enables
+- **compound-period** -- Sentences can serve as antecedent/consequent in compound periods
+- **hybrid-form** -- Presentation can pair with consequent; antecedent can pair with continuation
+## Contrasts With
+- **period** -- Sentence is one phrase; period is two phrases
 
-Not all continuations exhibit all four traits; some may have only one or two. Fragmentation is often the clearest signal.
+# Common Errors
+- **Error**: Confusing fragmentation (unit length) with motivic derivation (melodic content)
+  **Correction**: "Fragmentation refers only to the length of the units" -- it does not refer to melodic content
 
-## Musical Context
+# Common Confusions
+- **Confusion**: Every 8-measure phrase is a sentence
+  **Clarification**: A sentence requires presentation + continuation structure; many 8-measure phrases are unique forms
+- **Confusion**: Sentence and period are similar
+  **Clarification**: A sentence is one phrase with two subphrases; a period is two phrases
 
-The sentence is a fundamental phrase archetype in Classical music:
+# Source Reference
+Open Music Theory, Part III, Chapter 2: "The Phrase, Archetypes, and Unique Forms," section "Archetype 1: The Sentence."
 
-**Historical context**:
-- Common in Classical period (Haydn, Mozart, Beethoven)
-- Continues in Romantic period
-- Theory developed by Arnold Schoenberg and William Caplin
-- Remains analytically useful for tonal music analysis
-
-**Structural function**:
-- Balances stability (presentation) with instability (continuation)
-- Creates momentum toward cadence
-- Provides economy of material through repetition and variation
-- Enables clear formal articulation
-
-**Expressive character**:
-- Presentation: Establishes, stabilizes
-- Continuation: Develops, drives forward, creates tension
-- Overall: Statement → development → resolution
-
-**Variants and flexibility**:
-- **Archetypal sentence**: 8 measures, balanced proportions, fragmentation in continuation
-- **Sentential**: Exhibits some sentence characteristics without being a clear archetype
-- Continuation may lack fragmentation (still a sentence if other traits present)
-- Continuation may be extended beyond presentation length
-
-**Analytical approach**:
-1. Identify cadence marking phrase ending
-2. Locate presentation: look for basic idea and repetition
-3. Identify continuation: look for fragmentation and other characteristics
-4. Determine proportions and variants
-
-## Examples
-
-### Basic
-
-**8-measure archetypal sentence**:
-- Mm. 1-2: Basic idea (tonic, begins on tonic)
-- Mm. 3-4: Repetition of basic idea (may be transposed to dominant)
-- Mm. 5-6: Fragmentation (1-measure units derived from b.i.)
-- Mm. 7-8: Cadential drive (PAC in tonic)
-
-**4-measure sentence**:
-- M. 1: Basic idea (one measure)
-- M. 2: Repetition
-- M. 3: Fragmentation (half-measure units)
-- M. 4: Cadence
-
-### From Repertoire
-
-**Clear sentence examples**:
-- **Louise Farrenc, Cello Sonata, II**: Opening sentence with clear presentation and continuation
-- **Beethoven, Polonaise for Military Band**: Sentence without fragmentation in continuation
-- **Beethoven, Piano Sonata Op. 7, II**: Sentence with continuation lacking fragmentation
-- **Mozart, Piano Sonatas**: Numerous sentences in opening themes
-- **Haydn, String Quartets**: Sentences often open movements
-
-**Sentential passages** (less archetypal but related):
-- Many Classical themes exhibit sentential characteristics
-- Romantic composers often vary the sentence structure
-- Film music frequently uses sentence-like structures
-
-## Related Concepts
-
-- **Prerequisite**: phrase, basic-idea, cadence, row-presentation, harmonic-rhythm
-- **Leads to**: period, compound-period, phrase-expansion
-- **See also**: fragmentation, sequence
-
-## Common Confusions
-
-- Sentence vs. period: Sentence is one phrase; period is two phrases
-- Not all phrases are sentences—many are unique forms or periods
-- Presentation requires repetition of basic idea—without repetition, it's not a sentence
-- Continuation doesn't always have fragmentation—other traits may be present instead
-- "Sentential" describes passages resembling sentences without being clear archetypes
-- The basic idea and its repetition usually share melodic contour
-- Sentences can occur within larger forms (e.g., as antecedent/consequent in compound period)
-- Continuation is always longer than or equal to presentation, rarely shorter
-- Fragmentation refers only to unit length, not melodic content
-- Not every 8-measure phrase is a sentence—must have presentation + continuation structure
-- Multiple traits of continuation may be present, but not all are required
-- Sentence is an archetype—actual phrases exist on a spectrum from clearly sentence-like to unique
-
-## Source Reference
-
-Open Music Theory, Part III, Chapter 2: "The Phrase, Archetypes, and Unique Forms"
+# Verification Notes
+- Re-extracted from v2 card; preserved: four continuation traits, Farrenc/Beethoven examples, sentential spectrum concept
+- All properties directly from source
+- Confidence: HIGH -- chapter-length treatment with multiple examples

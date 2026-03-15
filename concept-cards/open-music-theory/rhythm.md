@@ -1,70 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Rhythm
-category: theory
-source: Open Music Theory
-chapter: "Rhythmic and Rest Values"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: rhythm
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Rhythmic and Rest Values"
+chapter_number: 8
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - beat
+  - meter
+  - note-values
+  - rest-values
+  - tempo
+contrasts_with:
+  - pitch
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is rhythm?"
+  - "How does rhythm differ from meter?"
+  - "What is the relationship between rhythm and pitch?"
 ---
 
-# Rhythm
+# Quick Definition
 
-## Quick Definition
+The pattern of durations of musical sounds and silences in time.
 
-The organization of musical sounds and silences in time, including their durations and patterns.
+# Core Definition
 
-## Formal Definition
+**Rhythm** refers to the duration of musical sounds and rests in time. It is one of the two primary features of Western musical notation (the other being pitch). Music is a temporal art -- time is one of its essential components -- so organizing time through rhythm is fundamental. Rhythm is notated horizontally (on the x-axis) in Western notation, using note values, rest values, dots, and ties.
 
-**Rhythm** refers to the temporal aspect of music—the duration of musical sounds and rests and their organization in time. Rhythm is one of the two primary features represented in Western musical notation (the other being pitch).
+# Prerequisites
 
-Rhythm encompasses:
-- **Duration**: How long notes and rests last
-- **Pulse**: Regular underlying beats
-- **Meter**: The organization of beats into recurring patterns
-- **Tempo**: The speed of the pulse
-- **Rhythmic patterns**: Specific combinations of note values
+None -- rhythm is a foundational concept.
 
-In Western notation, rhythm is represented horizontally on the x-axis, while pitch is represented vertically on the y-axis. Different note shapes (whole, half, quarter, eighth, etc.) indicate different durations.
+# Key Properties
 
-## Musical Context
+- Represents the temporal dimension of music (x-axis in notation)
+- Expressed through note values, rest values, dots, and ties
+- Organized into meter through regular beat patterns
+- Independent of pitch (rhythm can exist without melody)
 
-Rhythm is fundamental to all music. It provides:
-- Temporal structure and organization
-- Forward motion and energy
-- Character and style (march, waltz, swing, etc.)
-- Coordination among performers
+# Construction / Recognition
 
-Different musical styles emphasize rhythm differently: African and Latin music often feature complex polyrhythms, while Baroque music may have steady, consistent rhythmic patterns. Contemporary music sometimes explores irregular meters and complex rhythmic relationships.
+Rhythm is recognized aurally as patterns of long and short durations, and visually through the arrangement of note values and rests on a staff.
 
-## Examples
+# Context & Application
 
-### Basic
+Rhythm and pitch are the two pillars of Western music notation. Rhythm exists independently of pitch (as in percussion music), and pitch can exist without complex rhythm (as in sustained drones). Most music combines both.
 
-Rhythmic elements:
-- A quarter note lasts one beat (in common time)
-- A half note lasts two beats
-- Four eighth notes = duration of one half note
-- Patterns like short-short-long create rhythmic motifs
+# Examples
 
-### From Repertoire
+- A pattern of quarter-quarter-half is a rhythm
+- Clapping patterns are pure rhythm without pitch
+- The rhythm of speech patterns often inspires musical rhythms
 
-The opening of Beethoven's Fifth Symphony has an iconic rhythm: three short notes and one long note (♪♪♪♩). Syncopated rhythms in jazz place accents off the main beats. The steady rhythm of a march vs. the lilting rhythm of a waltz creates different characters.
+# Relationships
 
-## Related Concepts
+- **Leads to**: beat, meter, note-values, rest-values, syncopation
+- **See also**: pitch, tempo
 
-- **Prerequisite**: note, tie
-- **Leads to**: meter, tempo, note-values, rest-values, beat
-- **See also**: syncopation, polyrhythm
+# Common Errors
 
-## Common Confusions
+- Confusing rhythm with beat or meter
 
-- Rhythm vs. meter: Rhythm is the actual durations and patterns; meter is the underlying organizational framework
-- Rhythm vs. tempo: Rhythm is the pattern of durations; tempo is the speed
-- All music has rhythm (even "free" or unmeasured music has temporal organization)
-- Rhythm includes both sounds AND silences (rests)
+# Common Confusions
 
-## Source Reference
+- Rhythm vs. beat: rhythm = specific pattern of durations; beat = regular underlying pulse
+- Rhythm vs. meter: rhythm = surface-level durational patterns; meter = underlying grouping of beats
+
+# Source Reference
 
 Open Music Theory, Part I, Chapter 8: "Rhythmic and Rest Values"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: definition as duration pattern, distinction from beat and meter.

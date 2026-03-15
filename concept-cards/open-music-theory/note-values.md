@@ -1,101 +1,104 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Note Values
-category: theory
-source: Open Music Theory
-chapter: "Rhythmic and Rest Values"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: note-values
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Rhythmic and Rest Values"
+chapter_number: 8
+pdf_page: null
+section: "Note Values"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "rhythmic values"
+  - "durations"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - note
+extends: []
+related:
+  - rest-values
+  - dot
+  - tie
+  - beat
+  - rhythm
+contrasts_with:
+  - rest-values
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the common note values?"
+  - "How do note values relate to each other hierarchically?"
+  - "What are the British names for note values?"
 ---
 
-# Note Values
+# Quick Definition
 
-## Quick Definition
+The hierarchical system of note durations -- whole, half, quarter, eighth, sixteenth -- where each value divides into two of the next smaller value.
 
-The durational lengths of musical notes, organized hierarchically where each value can be divided into two smaller values, indicated by the appearance of the notehead (filled vs. open), stem, and flags or beams.
+# Core Definition
 
-## Formal Definition
+**Note values** are hierarchical: each value divides into two smaller values, like a pizza into halves, quarters, eighths, etc. A whole note divides into two half notes, four quarter notes, eight eighth notes, and sixteen sixteenth notes. Three visual changes decrease a note's value by half: adding a stem (whole to half), filling in the notehead (half to quarter), and adding a flag (quarter to eighth, eighth to sixteenth). British terms: whole note = semibreve, half note = minim, quarter note = crotchet, eighth note = quaver, sixteenth note = semiquaver.
 
-**Note values** are the hierarchical system of rhythmic durations in Western musical notation. Each note value represents a specific duration relative to other values, with each value divisible into two of the next-smaller value.
+# Prerequisites
 
-Common note values (from longest to shortest):
+- **Note**: the symbol whose duration is being specified
 
-- **Double whole note (breve)**: Open notehead with lines on either side; equals 2 whole notes
-- **Whole note (semibreve)**: Thick, open oval notehead without stem; primary long duration
-- **Half note (minim)**: Open oval notehead with stem; equals 2 quarter notes
-- **Quarter note (crotchet)**: Filled notehead with stem; equals 2 eighth notes
-- **Eighth note (quaver)**: Filled notehead with stem and one flag (or beam); equals 2 sixteenth notes
-- **Sixteenth note (semiquaver)**: Filled notehead with stem and two flags (or beams); equals 2 thirty-second notes
+# Key Properties
 
-British terms appear in parentheses above.
+- Whole note: thick unfilled oval, no stem (longest common value)
+- Half note: thinner oval, open notehead with stem (half of whole)
+- Quarter note: filled notehead with stem (quarter of whole)
+- Eighth note: filled notehead, stem, one flag (eighth of whole)
+- Sixteenth note: filled notehead, stem, two flags (sixteenth of whole)
+- Each value = exactly two of the next smaller value
+- Double whole note (breve) = two whole notes (rare)
 
-**Hierarchical relationships**:
-- 1 whole note = 2 half notes = 4 quarter notes = 8 eighth notes = 16 sixteenth notes
-- Each value is exactly half the duration of the value above it
-- Each value is exactly twice the duration of the value below it
+# Construction / Recognition
 
-**Visual characteristics**:
-- Open (white) noteheads: whole and half notes
-- Filled (black) noteheads: quarter note and shorter
-- Stems: half note and shorter (whole note has no stem)
-- Flags/beams: eighth note and shorter
+Unfilled noteheads = whole or half note; filled noteheads = quarter note or shorter. Flags increase for shorter values. Beams replace flags when notes are grouped.
 
-**Ways to decrease duration by half**:
-1. Add a stem (whole → half)
-2. Fill the notehead (half → quarter)
-3. Add a flag (quarter → eighth, eighth → sixteenth)
+# Context & Application
 
-## Musical Context
+Note values are the fundamental units of musical rhythm. Their hierarchical relationships allow rhythmic complexity through combinations, dots, and ties.
 
-Note values organize time in music:
-- Provide relative duration relationships independent of tempo
-- Enable complex rhythmic patterns through combination
-- Allow for metric organization (grouping into measures)
-- Form the basis for rhythm reading and dictation
+# Examples
 
-The hierarchical nature means that once you know the basic pulse (e.g., quarter note = beat), all other values are defined relative to it.
-
-## Examples
-
-### Basic
-
-Visual identification:
-- Whole note: open oval, no stem (○)
-- Half note: open oval with stem (♩ unfilled)
-- Quarter note: filled oval with stem (♩)
-- Eighth note: filled oval with stem and one flag (♪)
-- Sixteenth note: filled oval with stem and two flags
-
-Mathematical relationships:
 - 1 whole = 2 halves = 4 quarters = 8 eighths = 16 sixteenths
-- In 4/4 time with quarter note = 1 beat:
-  - Whole note = 4 beats
-  - Half note = 2 beats
-  - Quarter note = 1 beat
-  - Eighth note = 1/2 beat
-  - Sixteenth note = 1/4 beat
+- Quarter note with stem and filled head is the most common "default" beat unit
 
-### From Repertoire
+# Relationships
 
-Chopin's "Minute Waltz" uses rapid sixteenth notes. Bach's Preludes often feature steady eighth-note or sixteenth-note motion. Hymns and chorales frequently use whole notes and half notes for sustained harmonies.
+- **Leads to**: rest-values, dot, tie, simple-meter, compound-meter
+- **See also**: beat, rhythm, time-signature
 
-## Related Concepts
+# Common Errors
 
-- **Prerequisite**: note, rhythm
-- **Leads to**: rest-values, dot, tie, meter, beat, tempo
-- **See also**: tuplet
+- Drawing noteheads round instead of oval
+- Confusing filled (quarter/eighth) with open (whole/half) noteheads
 
-## Common Confusions
+# Common Confusions
 
-- Note value vs. absolute time: values are relative, not fixed durations (tempo determines actual time)
-- Filled noteheads always have stems; unfilled noteheads may or may not
-- Flags vs. beams: isolated notes use flags; grouped notes use beams (same duration)
-- British vs. American terminology (semibreve = whole note, minim = half note, etc.)
-- Note value doesn't determine pitch—only duration
-- Adding flags decreases duration (makes notes shorter), not longer
-- Double whole note (breve) is rarely used in modern notation
+- Note values are relative to each other, not absolute durations -- a quarter note's actual duration depends on tempo
+- British and American terminology differ but describe the same durations
 
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 8: "Rhythmic and Rest Values"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: hierarchical relationships, British terminology, construction details.

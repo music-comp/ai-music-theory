@@ -1,91 +1,101 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Rest Values
-category: theory
-source: Open Music Theory
-chapter: "Rhythmic and Rest Values"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: rest-values
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Rhythmic and Rest Values"
+chapter_number: 8
+pdf_page: null
+section: "Rest Values"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "rests"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - note-values
+extends: []
+related:
+  - note-values
+  - dot
+  - rhythm
+contrasts_with:
+  - note-values
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are rest values?"
+  - "How do rest values correspond to note values?"
+  - "How do you tell a whole rest from a half rest?"
 ---
 
-# Rest Values
+# Quick Definition
 
-## Quick Definition
+Symbols indicating durations of silence, corresponding hierarchically to note values: whole rest, half rest, quarter rest, eighth rest, sixteenth rest.
 
-Symbols indicating durations of silence in music, organized hierarchically to correspond exactly with note values, where each rest value can be divided into two smaller values.
+# Core Definition
 
-## Formal Definition
+**Rests** indicate the duration of silences in music. Each note value has a corresponding rest value, organized in the same hierarchical relationship (each divides into two of the next smaller). A whole rest hangs down from a line; a half rest sits on top of a line. Quarter rests have a distinctive zigzag shape. Eighth and sixteenth rests add flags like their note counterparts. Adding a flag to a rest decreases its duration by half.
 
-**Rest values** are symbols representing silences in musical notation, with each rest corresponding to a specific note value's duration. Like note values, rests are hierarchical—each rest value divides into two of the next-smaller value.
+# Prerequisites
 
-Common rest values (from longest to shortest):
+- **Note values**: rests mirror the note value hierarchy
 
-- **Breve rest**: Filled box on second space from top; equals 2 whole rests (rare)
-- **Whole rest**: Filled rectangle hanging down from the fourth line; equals 2 half rests
-- **Half rest**: Filled rectangle sitting on top of the third line; equals 2 quarter rests
-- **Quarter rest**: Complex symbol resembling a backward "3" with extensions; equals 2 eighth rests
-- **Eighth rest**: Single flag attached to a short stem; equals 2 sixteenth rests
-- **Sixteenth rest**: Double flag attached to a short stem; equals 2 thirty-second rests
+# Key Properties
 
-**Visual mnemonics**:
-- Whole rest hangs down (like a "heavy" whole note, or a hat hanging from a hook)
-- Half rest sits on top (like a hat sitting on a person's head)
-- Adding flags decreases duration by half (eighth → sixteenth)
+- Whole rest: filled rectangle hanging down from a line
+- Half rest: filled rectangle sitting on top of a line
+- Quarter rest: zigzag shape (difficult to draw -- practice carefully)
+- Eighth rest: angled line with one flag
+- Sixteenth rest: angled line with two flags
+- Same hierarchical relationships as note values
+- Breve rest: filled box on second space from top (rare)
 
-**Hierarchical relationships**:
-- 1 whole rest = 2 half rests = 4 quarter rests = 8 eighth rests = 16 sixteenth rests
-- Rest durations exactly mirror their corresponding note values
+# Construction / Recognition
 
-## Musical Context
+The whole rest hangs DOWN (think: "heavier," so it hangs). The half rest sits UP (think: like a top hat on a head). This is the most critical visual distinction.
 
-Rests are essential for:
-- Creating rhythmic space and breathing room in music
-- Articulating phrases and creating formal boundaries
-- Defining syncopation and off-beat patterns
-- Allowing instruments/voices to rest in ensemble music
-- Shaping musical gesture through silence
+# Context & Application
 
-Silence is as important as sound in music. Rests are not merely "nothing"—they actively shape musical time and expression.
+Rests are as important as notes in shaping musical rhythm and phrase. Strategic use of silence creates drama, punctuation, and rhythmic contrast.
 
-## Examples
+# Examples
 
-### Basic
+- Whole rest = silence for one full measure (in any time signature with 4 or fewer beats)
+- Half rest = silence for half a whole rest
+- Quarter rest = silence for one quarter-note beat
 
-Visual identification:
-- Whole rest: filled rectangle hanging down from line 4 (▬ below line)
-- Half rest: filled rectangle sitting on line 3 (▬ on line)
-- Quarter rest: complex backward "3" shape with vertical extensions
-- Eighth rest: single curved flag on short stem (resembles "7" with flag)
-- Sixteenth rest: double curved flag on short stem
+# Relationships
 
-In a 4/4 measure with quarter note = 1 beat:
-- Whole rest = 4 beats of silence
-- Half rest = 2 beats of silence
-- Quarter rest = 1 beat of silence
-- Eighth rest = 1/2 beat of silence
-- Sixteenth rest = 1/4 beat of silence
+- **See also**: note-values, dot, rhythm, measure
 
-### From Repertoire
+# Common Errors
 
-Beethoven's Fifth Symphony uses dramatic rests to create tension. Jazz musicians use rests for syncopated rhythms. In vocal music, rests indicate breathing points. Haydn's "Surprise Symphony" uses rests before sudden loud chords for dramatic effect.
+- Confusing whole rest (hangs down) with half rest (sits up)
+- Drawing quarter rests poorly (they are notoriously difficult to hand-draw)
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: note-values, rhythm
-- **Leads to**: meter, anacrusis, syncopation, phrase, articulation
-- **See also**: dot, fermata
+- A whole rest can also mean "rest for the entire measure" regardless of time signature
+- Rests are never tied (only notes are tied); consecutive rests are simply written separately
 
-## Common Confusions
-
-- Whole rest hangs DOWN from a line; half rest sits ON TOP of a line (not reversed)
-- Whole rest can also indicate a full measure of rest in any meter (not just whole-note duration)
-- Quarter rests are notoriously difficult to draw—practice carefully
-- Adding flags to rests (eighth → sixteenth) decreases duration, just like with notes
-- Rest vs. silence: rests are notated silences with specific durations, not arbitrary pauses
-- Multi-measure rests (not covered here) use different notation
-- Rests cannot be tied (ties only connect sounding notes)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 8: "Rhythmic and Rest Values"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: hanging/sitting distinction for whole/half rests, quarter rest drawing difficulty note.

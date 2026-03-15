@@ -1,84 +1,93 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Mixolydian Mode
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: mixolydian
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
+chapter_number: 14
+pdf_page: null
+section: "Modes and the Parallel Relationship"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - mode
+  - major-scale
+extends:
+  - mode
+related:
+  - ionian
+  - dorian
+contrasts_with:
+  - phrygian
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the mixolydian mode?"
+  - "How does mixolydian differ from major?"
 ---
 
-# Mixolydian Mode
+# Quick Definition
 
-## Quick Definition
+A bright diatonic mode with the pattern W-W-H-W-W-H-W -- like major but with a lowered ^7 (te).
 
-A bright diatonic mode with the interval pattern W-W-H-W-W-H-W, equivalent to a major scale with a lowered seventh degree (♭^7).
+# Core Definition
 
-## Formal Definition
+The **mixolydian mode** has the ascending pattern W-W-H-W-W-H-W. It is the third brightest mode. Compared to major (ionian), mixolydian has a lowered ^7 (te instead of ti). Solfege: do, re, mi, fa, sol, la, te. The lowered ^7 removes the strong leading-tone pull to the tonic, creating a more relaxed quality.
 
-**Mixolydian mode** is a seven-note diatonic mode with the ascending pattern of whole and half steps: W-W-H-W-W-H-W.
+# Prerequisites
 
-**Compared to major (Ionian)**:
-- Same as major scale except ^7 is lowered by one half step
-- Solfège: do-re-mi-fa-sol-la-te-do (where "te" = lowered ^7)
+- **Mode**: the general concept
+- **Major scale**: mixolydian is described relative to major
 
-**Scale degrees** (compared to Ionian):
-- ^1, ^2, ^3, ^4, ^5, ^6, ♭^7
+# Key Properties
 
-**Characteristics**:
-- Contains major third (mi/^3), making it a "bright" mode
-- Perfect fourth above tonic
-- Perfect fifth above tonic
-- Minor seventh (subtonic) instead of major seventh (leading tone)
+- Pattern: W-W-H-W-W-H-W
+- Like major with lowered ^7
+- Third brightest mode (between ionian and dorian)
+- Contains mi (^3) -- a bright mode
+- Lacks a leading tone (te instead of ti)
 
-**Position in modal brightness spectrum**: Third brightest mode (between Ionian and Dorian)
+# Construction / Recognition
 
-## Musical Context
+Start with the major scale and lower ^7 by a half step. The sound is "major but without the strong pull to resolve."
 
-Mixolydian's lowered seventh creates distinctive sound:
-- Subtonic (♭^7) lacks the strong pull to tonic of a leading tone
-- Creates more relaxed, less resolved feeling than major
-- Common in folk music, blues, rock, and modal jazz
-- Dominant seventh chord built on tonic (I7) is characteristic
-- Associated with "bluesy" or "folksy" character
+# Context & Application
 
-The lowered ^7 is the defining characteristic distinguishing Mixolydian from Ionian.
+Mixolydian is extremely common in rock, blues, folk, and Celtic music. It is also the mode associated with dominant seventh chords in jazz chord-scale theory. "Sweet Child O' Mine" by Guns N' Roses and many blues-rock riffs use mixolydian.
 
-## Examples
+# Examples
 
-### Basic
+- C mixolydian: C-D-E-F-G-A-Bb-C (note: Bb, not B as in C major)
+- G mixolydian: G-A-B-C-D-E-F-G (all white keys)
 
-**C Mixolydian**:
-- Pattern: C-D-E-F-G-A-B♭-C
-- W-W-H-W-W-H-W
-- Lowered ^7: B♭ (instead of B♮ in C major)
+# Relationships
 
-**G Mixolydian**:
-- Pattern: G-A-B-C-D-E-F-G
-- Lowered ^7: F♮ (instead of F♯ in G major)
+- **Extends**: mode
+- **See also**: ionian, major-scale, dorian
 
-**Solfège**: do-re-mi-fa-sol-la-te-do
+# Common Confusions
 
-### From Repertoire
+- Mixolydian is NOT the same as major -- the lowered ^7 is the distinguishing feature
 
-The Beatles' "Norwegian Wood" uses Mixolydian mode. Traditional Irish and Scottish fiddle tunes frequently use Mixolydian. The Grateful Dead's modal improvisations often explore Mixolydian. Beethoven's Symphony No. 9, finale ("Ode to Joy") has Mixolydian passages. Blues and rock guitar solos over dominant seventh chords imply Mixolydian.
-
-## Related Concepts
-
-- **Prerequisite**: scale, mode, major-scale, whole-step, half-step
-- **Leads to**: blues-scale, dominant-seventh-chord
-- **See also**: ionian, dorian, diatonic-modes, subtonic
-
-## Common Confusions
-
-- Mixolydian vs. major: Mixolydian has lowered ^7 (B♭ in C), major has natural ^7 (B♮ in C)
-- Subtonic (♭^7 in Mixolydian) vs. leading tone (^7 in major): different functions
-- Mixolydian ≠ Myxolydian (common misspelling)
-- Mixolydian is a mode, not a key (no functional V-I hierarchy)
-- The lowered ^7 creates minor seventh from tonic (C to B♭), not major seventh
-- Mixolydian ≠ Lydian (opposite alterations: raised ^4 vs. lowered ^7)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 14: "Introduction to Diatonic Modes and the Chromatic Scale"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: lowered ^7 distinction, solfege (te), G mixolydian white-key example, rock/blues association.

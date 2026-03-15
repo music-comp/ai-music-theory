@@ -1,67 +1,105 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Grand Staff
-category: theory
-source: Open Music Theory
-chapter: "The Keyboard and the Grand Staff"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: grand-staff
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "The Keyboard and the Grand Staff"
+chapter_number: 4
+pdf_page: null
+section: "The Grand Staff"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "great staff"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - staff
+  - clef
+  - ledger-lines
+extends:
+  - staff
+related:
+  - middle-c
+  - piano-keyboard
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a grand staff?"
+  - "How are the treble and bass staves connected?"
+  - "Where does middle C appear on the grand staff?"
 ---
 
-# Grand Staff
+# Quick Definition
 
-## Quick Definition
+A system of two staves -- treble clef above and bass clef below -- connected by a line and brace, used primarily for piano music.
 
-A system of two staves (treble and bass) connected together, used primarily for piano music to accommodate the instrument's wide range.
+# Core Definition
 
-## Formal Definition
+A **grand staff** consists of a treble clef staff placed above a bass clef staff, connected on the left side by a vertical line and a brace. It provides the range needed for piano music. Typically, the pianist plays the upper staff (treble clef) with the right hand and the lower staff (bass clef) with the left hand. Middle C (C4) appears on a ledger line between the two staves.
 
-A **grand staff** consists of two staves joined together: a staff with a treble clef above and a staff with a bass clef below. The two staves are connected on the left side by a vertical line and a brace. The grand staff provides the range needed for piano music and other instruments or ensembles with wide pitch ranges.
+# Prerequisites
 
-Typically, a pianist plays the notes on the upper staff (treble clef) with the right hand and the notes on the lower staff (bass clef) with the left hand, though this can vary.
+- **Staff**: the five-line system
+- **Clef**: treble and bass clefs that identify pitches on each staff
+- **Ledger lines**: needed for notes between the two staves
 
-The note C4 (middle C) serves as a reference point, appearing on a ledger line between the two staves when they are vertically condensed, or simultaneously on the first ledger line below the treble staff and the first ledger line above the bass staff.
+# Key Properties
 
-## Musical Context
+- Upper staff has treble clef; lower staff has bass clef
+- Connected on the left by a vertical line and a brace
+- Middle C appears on one ledger line below treble staff or one ledger line above bass staff
+- Notes between the staves can be notated in either clef
+- The two staves are read simultaneously as a single system
 
-The grand staff is the standard notation system for piano music. It allows composers to notate the piano's full range (over seven octaves) efficiently without excessive ledger lines. The separation into two staves with different clefs makes reading easier by keeping most notes within the five lines of each staff.
+# Construction / Recognition
 
-Harp music also uses the grand staff. In score study, looking at piano reductions or keyboard arrangements on the grand staff helps musicians understand harmonic progressions.
+A grand staff is recognized by two staves joined by a brace on the left, with treble clef on top and bass clef on bottom.
 
-## Examples
+# Context & Application
 
-### Basic
+The grand staff is the standard notation for piano, harp, and organ. It accommodates the piano's seven-plus-octave range. Piano reductions of orchestral or choral music also use the grand staff.
 
-A grand staff consists of:
+# Examples
 
-```
-Treble ═══════  }  brace and line
-Bass   ═══════  }
-```
+- Middle C appears between the two staves, on one ledger line
+- The letter names D, C, B, A, G appear on shared ledger lines between the staves
+- A vertically condensed grand staff shows middle C exactly between the two staves
 
-Middle C (C4) appears:
+# Relationships
 
-- On the first ledger line below the treble staff
-- On the first ledger line above the bass staff
-- When staves are condensed, between the two staves
+- **Extends**: staff
+- **Leads to**: middle-c, satb
+- **See also**: piano-keyboard, ledger-lines
 
-### From Repertoire
+# Common Errors
 
-All piano music from Beethoven sonatas to contemporary jazz charts uses the grand staff. Bach's Well-Tempered Clavier, Chopin's Nocturnes, and Debussy's Preludes all employ the grand staff notation.
+- Forgetting the brace and connecting line on the left
+- Writing middle C with incorrect ledger-line placement
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: staff, treble-clef, bass-clef, ledger-lines
-- **See also**: middle-c
+- The grand staff is a single system, not two independent staves
+- Not all two-staff systems are grand staves -- some choral music uses two treble or two bass clefs
+- Notes appearing in both staves (like middle C) represent the same pitch
 
-## Common Confusions
-
-- The grand staff is not two independent staves—it's a single system meant to be read together
-- Notes between the staves (with ledger lines) can be notated in either clef; middle C is often written in both
-- The line and brace connecting the staves indicate they should be played simultaneously
-- Not all two-staff systems are grand staves—some choral music uses two treble or two bass clefs
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 4: "The Keyboard and the Grand Staff"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: definition, middle-C placement details, connection to piano.

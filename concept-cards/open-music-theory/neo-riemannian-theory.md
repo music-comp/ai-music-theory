@@ -1,183 +1,99 @@
 ---
-concept: Neo-Riemannian Theory
-category: theory
-source: Open Music Theory
-chapter: "Neo-Riemannian Triadic Progressions"
-pdf_page: null
-chapter_number: 5
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Neo-Riemannian Triadic Progressions
+slug: neo-riemannian-theory
+
+# === CLASSIFICATION ===
+category: analysis
+subcategory: transformational-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Neo-Riemannian Triadic Progressions"
+chapter_number: 14
+pdf_page: null
+section: "V.14"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "NROs"
+  - "neo-Riemannian operations"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - triad-types
+  - common-tones
+  - voice-leading
+extends: []
+related:
+  - tonnetz
+  - weitzmann-region
+  - cube-dance
+  - neo-riemannian-cycles
+  - augmented-triad
+contrasts_with:
+  - functional-harmony
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the basic Neo-Riemannian transformations (P, R, L)?"
+  - "How does neo-Riemannian theory rationalize non-functional triadic progressions?"
 ---
 
-# Neo-Riemannian Theory
+# Quick Definition
+Neo-Riemannian theory provides a framework for understanding triadic progressions based on common-tone retention and parsimonious voice leading rather than tonal function. The three basic transformations — Parallel (P), Relative (R), and Leading-tone exchange (L) — each toggle between one major and one minor triad while preserving two common tones and moving one note by step.
 
-## Quick Definition
+# Core Definition
+Named after Hugo Riemann, neo-Riemannian theory rationalizes triadic progressions that confound Roman numeral analysis (like Brahms's Concerto for Violin and Cello, mm. 268-79). Each transformation toggles between a major and minor triad: **P** (Parallel) preserves the perfect fifth, moves the remaining note by semitone (C major to C minor). **R** (Relative) preserves the major third, moves remaining note by whole tone (C major to A minor). **L** (Leading-tone exchange) preserves the minor third, moves remaining note by semitone (C major to E minor). Additional transformations with one common tone and two moving notes: **S** (Slide) — opposite of P, moves the two fifth-members by semitone (C major to C# minor). **N** (Nebenverwandt) — moves both minor-third members by semitone (C major to F minor). **H** (Hexapole) — no common tones, each note moves by semitone (C major to Ab minor). All can be expressed as combinations of P, L, R.
 
-A theoretical framework, named after 19th-century theorist Hugo Riemann, that analyzes triadic progressions based on common-tone retention and voice-leading distance rather than functional harmony, using transformations (P, L, R, and others) that toggle between major and minor triads while preserving shared pitches, particularly useful for analyzing late Romantic music (Brahms, Wagner, Liszt) and film scores where chord progressions are "triadic but tonally indeterminate"—coherent by voice-leading logic rather than diatonic function.
+# Prerequisites
+- Major and minor triad structure
+- Common-tone identification
+- Voice-leading principles
 
-## Formal Definition
+# Key Properties
+1. Each transformation toggles between one major and one minor triad
+2. P: preserves P5, moves 1 note by semitone (change mode)
+3. R: preserves M3, moves 1 note by whole tone (relative major/minor)
+4. L: preserves m3, moves 1 note by semitone (leading-tone exchange)
+5. S, N, H: secondary transformations with fewer common tones
+6. Any two triads can be connected in 5 or fewer steps
+7. Parsimonious voice leading: no single voice moves more than a step
 
-**Neo-Riemannian theory** provides tools for understanding:
+# Context & Application
+The Tonnetz visualizes pitch relationships: P5 left-to-right, M3 diagonal top-left to bottom-right, m3 diagonal bottom-left to top-right. P/R/L are "flips" along edges. Cycles: PL cycle (6 chords, generates hexatonic scale), RP cycle (8 chords, generates octatonic scale), RL cycle (all 24 triads), PLR cycle (6 chords centered on one pitch). Augmented triads fill the gap in R transformations (which move by 2 semitones) and connect to Weitzmann regions. The Cube Dance (Douthett/Steinbach 1998) maps all major/minor triads connected by semitone, with augmented triads as "bridges" between PL cycles. Useful for 19th-century music that is triadic but not functionally tonal.
 
-**Core principle**:
-- Analyzes triadic progressions through **common-tone relationships**
-- Focuses on **voice-leading parsimony** (minimal motion)
-- Does NOT require a tonal center or functional analysis
-- Each transformation **toggles** between one major and one minor triad
+# Examples
+**Example 1** (Brahms, Concerto for Violin and Cello, mm. 268-79): Ab major connected to Ab major through PL transformations: Ab-Abm-E-Em-C-Cm-Ab.
+**Example 2** (Laurie Anderson, "O Superman"): Successive L transformations throughout.
+**Example 3** (PL cycle): C-Cm-Ab-Abm-E-Em-C (hexatonic scale).
 
-**Key insight** (Richard Cohn, 1998):
-> "If this music is triadic but functionally indeterminate, by what other principles might it cohere?"
+# Relationships
+## Builds Upon
+- **triad-types** — Operates on major and minor triads
+- **voice-leading** — Parsimonious voice leading is the core principle
+## Related
+- **tonnetz** — Visual representation of transformations
+- **weitzmann-region** — Augmented triads connect to 6 consonant triads
+- **cube-dance** — Maps all triads connected by semitone
+- **augmented-triad** — Fills gap in R transformation, bridges PL cycles
 
-**Transformational thinking**:
-- Instead of: "What key is this in? What is the function?"
-- Ask: "What transformation connects these two triads?"
-- Focus on the **operation** (P, L, R) rather than **position** in a key
+# Common Confusions
+- **Confusion**: Neo-Riemannian analysis replaces Roman numeral analysis.
+  **Clarification**: It complements functional analysis for music that is triadic but not functionally tonal. Use Roman numerals when functional analysis works.
+- **Confusion**: R moves by semitone like P and L.
+  **Clarification**: R moves one note by whole tone (2 semitones), making it "more work" than P or L (1 semitone each). The augmented triad fills this gap.
 
-**Not functional harmony**:
-- Roman numerals become inadequate or misleading
-- No need to establish tonic
-- Chord progressions make voice-leading sense, not functional sense
+# Source Reference
+Open Music Theory, Part V: Chromaticism, Chapter 14: "Neo-Riemannian Triadic Progressions."
 
-## The Transformational Paradigm
-
-**Key conceptual shift**:
-```
-Traditional analysis: Chords exist in a KEY
-                     Function determined by scale degree
-                     C → Am = I → vi in C major
-
-Neo-Riemannian:      Chords exist in TRANSFORMATIONAL SPACE
-                     Relationships determined by operations
-                     C → Am = R transformation (relative)
-                     No need to specify a key!
-```
-
-**Toggle principle**:
-- Each transformation is like a "caps lock" key
-- Applying the same transformation twice returns to the original chord
-- P(P(C)) = C, L(L(C)) = C, R(R(C)) = C
-
-**Compound transformations**:
-- Chains of transformations: PL, RP, LPL, etc.
-- Can describe ANY connection between triads
-- Maximum five transformations needed between any two triads
-
-## Musical Context
-
-Neo-Riemannian theory is particularly suited for:
-- **Late Romantic**: Brahms, Wagner, Liszt, Wolf, Mahler
-- **Chromatic mediant relationships**: Third-related keys without modulation
-- **Film music**: John Williams, Howard Shore, Hans Zimmer
-- **Triadic post-tonality**: Music that uses triads but not functional harmony
-- **Minimalism**: Repetitive triadic patterns (Steve Reich, Philip Glass)
-- **Popular music**: Analysis of non-functional progressions
-- **Video game music**: Atmospheric harmonic progressions
-
-**Where traditional analysis fails**:
-```
-Brahms, Concerto for Violin and Cello, mm. 270-76:
-Ab - Abm - E - Em - C - Cm - Ab
-
-In Ab major? The chords "don't belong" to Ab in any useful way
-No functional relationships (no V-I, ii-V, etc.)
-But the progression sounds COHERENT
-
-Neo-Riemannian analysis:
-Ab -P→ Abm -L→ E -P→ Em -L→ C -P→ Cm -L→ Ab (PL cycle)
-
-NOW the progression makes sense:
-Alternating P and L transformations
-Closes a "loop" after 6 chords
-Each move is maximally smooth (1 half-step)
-```
-
-## Related Concepts Overview
-
-**Basic transformations** (see PLR-transformations):
-- P (Parallel): Same root, change mode
-- L (Leading-tone exchange): Move non-common tone by half step
-- R (Relative): Major ↔ relative minor
-
-**Other transformations** (see secondary-neo-riemannian-transformations):
-- S (Slide): Move perfect fifth by half step, change mode
-- N (Nebenverwandt): Move minor third by half step, change mode
-- H (Hexpole): All three voices move by half step (no common tones)
-
-**Visual representations**:
-- Tonnetz: Grid showing P5, M3, m3 relationships
-- Weitzmann regions: Augmented triads as hubs
-- Cube Dance: PL cycles connected by augmented triads
-
-**Cycles** (see neo-riemannian-cycles):
-- PL cycle: 6 triads, hexatonic scale
-- RP cycle: 8 triads, octatonic scale
-- PLR cycle: 6 triads centered on common tone
-
-## Examples
-
-### Basic
-
-**Traditional vs. Neo-Riemannian analysis**:
-```
-Progression: C - Am - F - Dm - Bb - Gm - Eb - Cm
-
-Traditional (in C major... sort of):
-I - vi - IV - ii - bVII - v - bIII - i
-(Roman numerals become awkward; is it major? minor? both?)
-
-Neo-Riemannian:
-C -R→ Am -L→ F -R→ Dm -L→ Bb -R→ Gm -L→ Eb -R→ Cm
-RL RL RL RL... (RL cycle)
-
-The progression is a systematic series of R and L transformations
-No tonal center needed to understand the logic
-```
-
-**Brahms example analyzed**:
-```
-Ab - Abm - E - Em - C - Cm - Ab
-
-Ab -P→ Abm: Fifth stays (Ab-Eb), third moves (C→Cb)
-Abm -L→ E:  Minor third stays (Cb/B-Eb/D#), fifth moves (Ab→G#→root)
-E -P→ Em:   Fifth stays (E-B), third moves (G#→G)
-Em -L→ C:   Minor third stays (E-G), fifth moves (B→C=new root)
-C -P→ Cm:   Fifth stays (C-G), third moves (E→Eb)
-Cm -L→ Ab:  Minor third stays (Eb-G→Ab), fifth moves (C→Ab=root)
-
-Returns to Ab after 6 chords = closed PL cycle
-```
-
-### From Repertoire
-
-**Wagner, Tristan und Isolde**: Chromatic mediant relationships that resist traditional analysis but make sense through Neo-Riemannian transformations.
-
-**Brahms, late works**: Systematically exploits third relationships and PLR cycles.
-
-**John Williams, film scores**: Neo-Riemannian cycles for supernatural or otherworldly scenes (E.T., Close Encounters).
-
-**Howard Shore, Lord of the Rings**: Triadic but non-functional progressions for different cultures/locations.
-
-**Schubert, Lieder**: Early examples of triadic chromaticism that anticipate Neo-Riemannian analysis.
-
-**Laurie Anderson, "O Superman"**: Successive L transformations throughout (minimalist application).
-
-## Common Confusions
-
-- Neo-Riemannian ≠ "replacement" for functional analysis
-- Use it when functional analysis FAILS (triadic but non-functional)
-- Named after Hugo Riemann (19th-c. theorist), developed by Richard Cohn and others (1990s)
-- Transformations TOGGLE between major and minor (like caps lock)
-- P(P(X)) = X, L(L(X)) = X, R(R(X)) = X always
-- Not about determining "key"—about tracing transformational paths
-- All basic transformations (P, L, R) preserve two common tones
-- "Parsimonious voice leading" = minimal motion (half steps preferred)
-- Works for triads only (not seventh chords in basic form)
-- Any two triads can be connected in at most 5 transformations
-- Tonnetz, Cube Dance, etc. are visualization tools, not the theory itself
-- Particularly useful for Romantic and film music
-- Does not replace functional analysis—complements it for appropriate music
-
-## Source Reference
-
-Open Music Theory, Part V: "Chromaticism"
-Open Music Theory, Part V: "Neo-Riemannian Triadic Progressions"
+# Verification Notes
+- Re-extracted from source chapter 05-14; merged with existing v2 card
+- Preserved Brahms example, transformation definitions, and cycle descriptions
+- Confidence rationale: High — extensive, detailed source chapter

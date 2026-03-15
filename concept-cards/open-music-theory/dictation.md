@@ -1,101 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Dictation
-category: theory
-source: Open Music Theory
-chapter: "The Basics of Sight-Singing and Dictation"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: dictation
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: aural-skills
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "The Basics of Sight-Singing and Dictation"
+chapter_number: 15
+pdf_page: null
+section: "Strategies for Dictation"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "ear training dictation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - solfege
+  - rhythm
+  - note-values
+extends: []
+related:
+  - sight-singing
+  - protonotation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is dictation in music?"
+  - "What strategies help with rhythmic dictation?"
+  - "What strategies help with melodic dictation?"
 ---
 
-# Dictation
+# Quick Definition
 
-## Quick Definition
+Translating heard musical sounds (rhythms, melodies, chord progressions) into written staff notation, without having seen the music before.
 
-The skill of translating music heard aurally—rhythms, melodies, harmonies, or chord progressions—into written staff notation without having seen the score, developing aural perception and notation fluency.
+# Core Definition
 
-## Formal Definition
+**Dictation** involves translating aural sounds into staff notation. Strategies for rhythmic dictation include **dot grids** (dots representing beats), **slash notation** (slashes for articulations, dashes for sustains, circles for rests), and conducting/tapping while listening. Strategies for melodic dictation include **contour lines** (indicating direction of motion), writing solmization syllables, and combining with rhythmic strategies. The final step is converting these intermediate representations into standard staff notation.
 
-**Dictation** (also called **musical dictation** or **ear training dictation**) is the practice of listening to performed music and transcribing it into standard musical notation. It is the inverse skill of sight-singing/sight-reading.
+# Prerequisites
 
-**Types of dictation**:
+- **Solfege**: for identifying pitches heard
+- **Rhythm / note values**: for notating durations heard
 
-**1. Rhythmic dictation**:
-- Transcribe rhythm patterns only (no pitch)
-- Use tools: dot grids, slash notation, protonotation
-- Conduct or tap while listening to identify beat placement
+# Key Properties
 
-**2. Melodic dictation**:
-- Transcribe both pitch and rhythm
-- Use tools: contour lines, solfège syllables, protonotation
-- First establish rhythm, then add pitches
+- Rhythmic dictation: dot grids, slash notation, then staff notation
+- Melodic dictation: contour lines and/or solfege syllables added to rhythmic framework
+- Conducting or tapping while listening helps
+- Multiple hearings are typical
+- Write rhythm first, then add pitch
 
-**3. Harmonic dictation**:
-- Transcribe chord progressions
-- Identify chord quality and bass motion
-- More advanced skill
+# Construction / Recognition
 
-**Dictation strategies**:
-- **Dot grid**: Series of dots representing beats and measures
-- **Slash notation**: Slashes for articulations, dashes for sustains, circles for rests
-- **Contour lines**: Arrows/lines showing pitch direction (up, down, same)
-- **Conducting/tapping**: Kinesthetic aid for beat identification
-- **Solfège writing**: Note syllables before converting to staff notation
+Dictation is an inverse skill to sight-singing: sight-singing converts notation to sound; dictation converts sound to notation.
 
-## Musical Context
+# Context & Application
 
-Dictation develops critical musicianship skills:
-- **Aural-visual connection**: Links sound to notation
-- **Active listening**: Analytical attention to musical detail
-- **Transcription**: Practical skill for arranging, composing
-- **Error detection**: Ability to hear mistakes in performance
-- **Internal audiation**: Strengthens mental hearing
+Dictation develops the critical skill of hearing music and writing it down. It is practiced throughout undergraduate aural skills courses and is essential for transcription, arranging, and composition.
 
-Dictation is core component of undergraduate music curricula (typically four semesters of aural skills).
+# Examples
 
-## Examples
+- Rhythmic dictation: hear a 4-measure rhythm, create dot grid, add slash notation, convert to staff notation
+- Melodic dictation: hear a melody, notate rhythm first, add contour lines, write solfege, convert to staff notation
 
-### Basic
+# Relationships
 
-**Rhythmic dictation process**:
-1. Listen to establish tempo and meter
-2. Create dot grid (dots = beats)
-3. Use slash notation to mark articulations
-4. Convert slash notation to staff notation
+- **See also**: sight-singing, protonotation, solfege
 
-**Melodic dictation process**:
-1. Transcribe rhythm first (rhythmic dictation)
-2. Add contour lines (up/down/same)
-3. Write solfège syllables or scale degrees
-4. Convert to pitches on staff
-5. Check against original
+# Common Errors
 
-**Tools**:
-- Dot grid: • • • • | • • • •
-- Slash notation: / — ○ / (slash = attack, dash = sustain, circle = rest)
-- Contour lines: ↗ ↘ → (up, down, same)
+- Trying to notate everything at once (break into rhythm first, then pitch)
 
-### From Repertoire
+# Common Confusions
 
-Aural skills classes use recorded examples for dictation. Jazz musicians transcribe solos from recordings. Music theorists transcribe folk songs or oral traditions. Composers and arrangers dictate ideas heard internally.
+- Dictation is not guessing -- it uses systematic strategies to capture what is heard
 
-## Related Concepts
-
-- **Prerequisite**: pitch, rhythm, solfege, scale-degree, meter
-- **Leads to**: transition
-- **See also**: sight-singing, protonotation
-
-## Common Confusions
-
-- Dictation vs. transcription: essentially synonymous (both convert sound to notation)
-- Rhythmic dictation first, then add pitch (don't do both simultaneously at first)
-- Multiple hearings expected—dictation isn't done in one listening
-- Conducting/tapping while listening aids beat identification
-- Protonotation (slash notation, contour lines) is intermediate step, not final answer
-- Perfect pitch not required—use relative relationships (solfège/scale degrees)
-- Dictation complements sight-singing (inverse processes)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 15: "The Basics of Sight-Singing and Dictation"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: dot grid strategy, slash notation, contour lines, multi-step process.

@@ -1,100 +1,84 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Oblique Motion
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Species Counterpoint"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: oblique-motion
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: voice-motion
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Species Counterpoint"
+chapter_number: 1
+pdf_page: null
+section: "Types of motion"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval
+extends: []
+related:
+  - contrary-motion
+  - similar-motion
+  - parallel-motion
+  - fourth-species
+contrasts_with:
+  - contrary-motion
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is oblique motion?"
+  - "In which species is oblique motion the primary motion type?"
 ---
 
-# Oblique Motion
+# Quick Definition
+Oblique motion occurs when one voice moves while the other stays on the same pitch, creating a change of interval without both voices moving -- it is the defining motion type of fourth species (syncopated/suspension counterpoint).
 
-## Quick Definition
+# Core Definition
+**Oblique motion** occurs when "one part moves, the other stays on the same pitch" (Ch. 1). In fourth-species counterpoint, the two lines always move in oblique motion because one voice holds while the other changes (creating the suspension pattern). Oblique motion is also useful in other species for avoiding problematic parallel motion.
 
-When one voice moves to a different pitch while the other voice remains on the same pitch.
+# Prerequisites
+- **Interval** -- Understanding intervals needed to analyze voice motion
 
-## Formal Definition
+# Key Properties
+1. One voice moves; the other stays still
+2. Defining motion type of fourth species (suspensions)
+3. Avoids parallel fifths and octaves
+4. Least frequently required in first species
+5. 5-6 motion (oblique) is common in 16th-century style
 
-**Oblique motion** is a type of motion between two voices in which one voice moves (ascending or descending) while the other voice sustains the same pitch (remains stationary).
+# Construction / Recognition
+## To Identify:
+1. One voice changes pitch; the other remains on the same note
 
-Characteristics:
-- One voice moves (by step or leap, in either direction)
-- The other voice stays on the same pitch
-- The interval between the voices changes (unless the moving voice returns to the same pitch)
+# Context & Application
+Oblique motion is structurally important in fourth species, where the tied (suspended) note creates oblique motion by definition. In sixteenth-century style, the oblique motion from fifth to sixth above a bass note is described as "common."
 
-Example:
-- Voice 1: C → C (stationary)
-- Voice 2: E → F → G (moving)
-Interval changes: M3 → P4 → P5 (oblique motion)
+# Examples
+**Example 1** (Ch. 1, Example 2): Notation showing oblique motion alongside other types.
 
-Types of motion between voices:
-1. **Oblique**: One moves, one stays (this concept)
-2. **Contrary**: Opposite directions
-3. **Similar**: Same direction, different intervals
-4. **Parallel**: Same direction, same interval type maintained
+# Relationships
+## Related
+- **fourth-species** -- Pure fourth species uses only oblique motion
+- **suspension** -- The suspension pattern creates oblique motion
 
-## Musical Context
+# Common Confusions
+- **Confusion**: Oblique motion means one voice is unimportant
+  **Clarification**: The held voice is structurally significant (it creates the suspension dissonance)
 
-Oblique motion serves specific functions in voice leading:
+# Source Reference
+Open Music Theory, Part II, Chapter 1.
 
-**Advantages**:
-- Creates harmonic variety while maintaining a stable reference point
-- Useful for voice independence when one voice holds a pedal tone
-- Helps avoid voice-leading problems (parallel fifths/octaves)
-- Common in suspensions (one voice sustains while another moves)
-- Effective for creating harmonic interest without melodic complexity in all voices
-
-**Common uses**:
-- **Pedal tones**: Bass sustains while upper voices move
-- **Suspensions**: One voice holds while others resolve
-- **Common tones**: Maintaining a pitch common to two chords
-- **Drone bass**: Bass sustains throughout while melody changes
-
-**Limitations**:
-- Overuse can make one voice seem inactive or uninteresting
-- The stationary voice may not have a strong melodic identity
-- Less common than contrary and similar motion in two-voice textures
-
-Oblique motion is especially useful in multivoice textures where maintaining one voice while others move creates both stability and variety.
-
-## Examples
-
-### Basic
-
-**Oblique motion with pedal**:
-- Upper: E → F → G → A
-- Lower: C → C → C → C
-(Bass remains stationary on pedal C)
-
-**Oblique motion with common tone**:
-- Upper: E → E (sustained)
-- Lower: C → D → E
-(Soprano holds E while bass moves)
-
-### From Repertoire
-
-- Bach: Organ pedal points (bass sustains while upper voices move)
-- Baroque suspensions: One voice holds dissonance while bass moves
-- Classical period: Common tones held between chord changes
-- Drone-based music: Scottish bagpipes, Indian classical music (tanpura drone)
-- Modern minimalism: Steve Reich—one voice sustains while others shift
-
-## Related Concepts
-
-- **Prerequisite**: interval
-- **Leads to**: suspension, common-tones, voice-leading
-- **See also**: contrary-motion, parallel-motion, similar-motion, counterpoint
-
-## Common Confusions
-
-- Oblique motion can occur when the moving voice moves in either direction—what matters is that one voice is stationary
-- The stationary voice doesn't have to be the bass—it can be any voice
-- A tied note across a barline creates oblique motion if another voice moves during that time
-- Oblique motion is less common in strict two-voice counterpoint because it can reduce melodic interest in one voice
-- Not the same as a pedal point, though pedal points create oblique motion—oblique motion is the broader category
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 1: "Introduction to Species Counterpoint"
+# Verification Notes
+- Re-extracted from v2 card; no unique content lost
+- Confidence: HIGH -- explicitly defined

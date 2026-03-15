@@ -1,76 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Major Scale
-category: theory
-source: Open Music Theory
-chapter: "Major Scales, Scale Degrees, and Key Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: major-scale
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Major Scales, Scale Degrees, and Key Signatures"
+chapter_number: 12
+pdf_page: null
+section: "Major Scales"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "ionian mode"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - scale
+  - half-step
+  - whole-step
+extends:
+  - scale
+related:
+  - key-signature
+  - scale-degree
+  - solfege
+  - minor-scale
+  - ionian
+contrasts_with:
+  - minor-scale
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a major scale?"
+  - "What is the pattern of whole and half steps in a major scale?"
+  - "How are major scales named?"
 ---
 
-# Major Scale
+# Quick Definition
 
-## Quick Definition
+An ordered collection of half and whole steps with the ascending pattern W-W-H-W-W-W-H, named for its first note.
 
-A seven-note scale with the ascending pattern W-W-H-W-W-W-H (where W=whole step, H=half step), characterized by a bright, stable sound.
+# Core Definition
 
-## Formal Definition
+A **major scale** is an ordered collection of half (H) and whole (W) steps in the ascending succession W-W-H-W-W-W-H. It starts and ends on notes of the same letter name, one octave apart. The starting/ending note determines the scale's name, including any accidental (e.g., Bb major). The pattern of half and whole steps is the same in every major key. The major scale is equivalent to the ionian mode.
 
-A **major scale** is an ordered collection of seven distinct pitch classes (plus the octave) following the specific interval pattern:
-- W-W-H-W-W-W-H (whole-whole-half-whole-whole-whole-half)
+# Prerequisites
 
-The scale is named after its first and last note (the tonic). For example, a scale starting and ending on C is called "C major."
+- **Scale**: the concept of an ordered pitch collection
+- **Half step / whole step**: the intervals that define the pattern
 
-In pitch-class integer notation, the major scale pattern is: {0, 2, 4, 5, 7, 9, 11} when starting from pitch class 0. Under transposition, this pattern remains the same regardless of starting pitch class.
+# Key Properties
 
-Interval structure from the tonic:
-- M2 (major second), M3 (major third), P4 (perfect fourth), P5 (perfect fifth), M6 (major sixth), M7 (major seventh), P8 (perfect octave)
+- Pattern: W-W-H-W-W-W-H
+- Half steps occur between ^3-^4 and ^7-^8 (mi-fa and ti-do)
+- Named for the first note (including accidental)
+- Same pattern in every key
+- Equivalent to the ionian mode
+- All other diatonic modes and scales are often described relative to major
 
-## Musical Context
+# Construction / Recognition
 
-The major scale is foundational to Western tonal music. It:
-- Provides the basis for major keys
-- Creates a sense of brightness, resolution, and stability
-- Defines harmonic relationships in tonal music
-- Serves as the reference scale for understanding intervals and chords
+Start on any note and apply W-W-H-W-W-W-H. Add accidentals as needed to maintain the pattern. The resulting scale defines the key signature for that major key.
 
-The major scale's specific pattern of half and whole steps creates its characteristic sound, especially the half steps between scale degrees 3-4 and 7-8, which create strong melodic tendencies.
+# Context & Application
 
-## Examples
+The major scale is the foundation of Western tonal music. Key signatures, chord construction, interval identification, and Roman numeral analysis all reference the major scale. The "major scale method" for identifying intervals uses the major scale of the bottom note.
 
-### Basic
+# Examples
 
-C major scale:
-C-D-E-F-G-A-B-C
-{0, 2, 4, 5, 7, 9, 11, 0} in pitch class integers
+- C major: C-D-E-F-G-A-B-C (no accidentals)
+- G major: G-A-B-C-D-E-F#-G (one sharp)
+- Bb major: Bb-C-D-Eb-F-G-A-Bb (two flats)
 
-G major scale:
-G-A-B-C-D-E-F♯-G
-{7, 9, 11, 0, 2, 4, 6, 7} in pitch class integers
+# Relationships
 
-B♭ major scale:
-B♭-C-D-E♭-F-G-A-B♭
+- **Extends**: scale
+- **Leads to**: key-signature, scale-degree, solfege, scale-degree-names, triad, seventh-chord
+- **See also**: minor-scale, ionian, mode
 
-All follow the same W-W-H-W-W-W-H pattern.
+# Common Errors
 
-### From Repertoire
+- Forgetting to apply the correct accidentals to maintain the W-W-H-W-W-W-H pattern
 
-"Twinkle, Twinkle Little Star," "Happy Birthday," and countless other melodies use primarily major scale tones. Mozart's Eine kleine Nachtmusik (first movement, G major), Beethoven's "Ode to Joy" (D major), and most major-key classical and popular music draw their melodic and harmonic material from the major scale.
+# Common Confusions
 
-## Related Concepts
+- Major scale and ionian mode are the same thing
+- "Real" key signatures have at most 7 sharps or 7 flats; key signatures requiring double accidentals are "imaginary"
 
-- **Prerequisite**: scale, half-step, whole-step, pitch
-- **Leads to**: key-signature, scale-degree, diatonicity, solfege
-- **See also**: minor-scale, mode, tonality, chord
-
-## Common Confusions
-
-- Major scale vs. major key: The scale is the collection of pitches; the key is the tonal system built on that scale
-- All major scales have the same interval pattern (W-W-H-W-W-W-H), regardless of starting note
-- Major scales require accidentals (sharps or flats) for all keys except C major
-- The "major" quality comes from the interval pattern, especially the major third above the tonic
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 12: "Major Scales, Scale Degrees, and Key Signatures"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: W-W-H-W-W-W-H pattern, half-step locations (^3-^4, ^7-^8), ionian equivalence.

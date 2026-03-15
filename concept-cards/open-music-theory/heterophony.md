@@ -1,90 +1,91 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Heterophony
-category: theory
-source: Open Music Theory
-chapter: "Texture"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: heterophony
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: texture
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Texture"
+chapter_number: 21
+pdf_page: null
+section: "Heterophony"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "heterophonic texture"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - texture
+extends:
+  - texture
+related:
+  - monophony
+  - homophony
+  - polyphony
+contrasts_with:
+  - homophony
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is heterophony?"
+  - "How does heterophony differ from monophony and polyphony?"
 ---
 
-# Heterophony
+# Quick Definition
 
-## Quick Definition
+A texture in which multiple variants of the same melody are heard simultaneously across different voices.
 
-A musical texture in which two or more voices perform simultaneous variations of the same melody, creating slight but perceptible differences in rhythm, ornamentation, or pitch while maintaining the same basic melodic contour.
+# Core Definition
 
-## Formal Definition
+**Heterophony** features multiple voices performing simultaneous variations of the same melodic line. Variations range from small embellishments to longer runs, but the underlying melody stays recognizable. It differs from monophony (strict unison) and polyphony (independent melodies).
 
-**Heterophony** (from Greek "hetero" = different, "phonos" = voice/sound) is a texture characterized by the simultaneous performance of slightly varied versions of a single melody. Unlike unison monophony (exact duplication) or polyphony (independent melodies), heterophony presents the same melodic idea with deliberate or spontaneous variations.
+# Prerequisites
 
-**Characteristics**:
-- Multiple voices/instruments performing the same basic melody
-- Variations in:
-  - Ornamentation (one voice adds embellishments)
-  - Rhythm (slight timing differences)
-  - Octave displacement (different registers)
-  - Pitch inflection (microtonal differences)
-- Same melodic contour and harmonic implications
-- Variations may be intentional (composed) or spontaneous (performance practice)
+- **Texture**: the general concept
 
-**Contrast with other textures**:
-- **Monophony**: Exact duplication of single melody
-- **Heterophony**: Simultaneous variations of same melody
-- **Polyphony**: Independent melodies with distinct identities
+# Key Properties
 
-## Musical Context
+- Multiple simultaneous variants of one melody
+- Underlying melody remains recognizable
+- Common in non-Western and folk traditions
 
-Heterophony appears in diverse musical traditions:
-- **Non-Western music**: Common in Asian, Middle Eastern, African traditions
-- **Folk music**: Irish traditional music (fiddle and flute variations)
-- **Oral traditions**: Spontaneous variations when multiple singers perform from memory
-- **Improvised music**: Jazz, where multiple improvisers elaborate on a theme
-- **Early polyphony**: Medieval organum shows heterophonic characteristics
+# Construction / Recognition
 
-Less common in Western classical notation (which prescribes exact parts), more common in oral/improvisatory traditions.
+Listen for multiple voices playing essentially the same melody with slightly different embellishments.
 
-## Examples
+# Context & Application
 
-### Basic
+Common in Turkish classical music, Irish traditional music, and many Asian traditions.
 
-**Heterophonic scenario**:
-- Melody: C-D-E-F-G
-- Voice 1: C-D-E-F-G (simple version)
-- Voice 2: C-D-(ornament)-E-F-(trill)-G (embellished version)
-- Both voices follow same contour but with variations
+# Examples
 
-**Rhythmic heterophony**:
-- Voice 1: ♩ ♩ ♩ ♩
-- Voice 2: ♪♪ ♩ ♪♪ ♩
-- Same pitches, different rhythmic elaboration
+- Turkish classical music: winds embellish melody of plucked strings
+- Irish reel: fiddle and flute with slight melodic variation
 
-**Octave heterophony**:
-- Voice 1: C4-D4-E4-F4
-- Voice 2: C5-D5-E5-F5
-- Same melody, different octaves (sometimes considered "compound melody")
+# Relationships
 
-### From Repertoire
+- **Extends**: texture
+- **See also**: monophony, homophony, polyphony
 
-Irish traditional music: fiddle and flute play variations of the same reel simultaneously. Gagaku (Japanese court music): instruments perform heterophonic variations. Javanese gamelan: metallophones create heterophonic texture. Turkish classical music (makam): taksim improvisations with subtle variations. Early American shape-note singing: spontaneous ornamentation creates heterophony.
+# Common Confusions
 
-## Related Concepts
+- Heterophony is NOT polyphony -- voices perform variants of the SAME melody
 
-- **Prerequisite**: texture, fragmentation
-- **Leads to**: polyphony
-- **See also**: monophony, homophony
-
-## Common Confusions
-
-- Heterophony vs. monophony in octaves: subtle distinction (octave doubling vs. variation)
-- Heterophony vs. polyphony: heterophony = variations of same melody; polyphony = distinct melodies
-- Heterophony ≠ "bad unison" or mistakes—it's intentional variation
-- Common in non-Western music, less common in Western classical tradition
-- Can be composed (notated variations) or spontaneous (performance practice)
-- Heterophony vs. descant: descant is independent counter-melody (polyphonic), not variation
-- Not a hybrid of homophony and polyphony—it's its own texture type
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 21: "Texture"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: embellishment description, non-Western associations.

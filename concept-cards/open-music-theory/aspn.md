@@ -1,85 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "American Standard Pitch Notation (ASPN)"
-category: theory
-source: Open Music Theory
-chapter: "American Standard Pitch Notation (ASPN)"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: aspn
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: pitch
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "American Standard Pitch Notation (ASPN)"
+chapter_number: 6
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "scientific pitch notation"
+  - "SPN"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch
+  - octave-equivalence
+extends: []
+related:
+  - middle-c
+  - pitch-class
+  - enharmonic-equivalence
+contrasts_with:
+  - pitch-class
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is ASPN?"
+  - "How do you label specific pitches in ASPN?"
+  - "Where do octave designations change?"
 ---
 
-# American Standard Pitch Notation (ASPN)
+# Quick Definition
 
-## Quick Definition
+A labeling system that identifies specific pitches by combining a note name with a subscript octave number (e.g., C4 = middle C).
 
-A system for labeling specific musical pitches by combining a note name (letter) with a subscript octave number, enabling precise identification of any pitch within human hearing range.
+# Core Definition
 
-## Formal Definition
+**American Standard Pitch Notation** (ASPN) designates specific musical pitches by combining a note name (letter plus optional accidental) with a subscript octave designation (integer). Each octave begins on C and ends on B: C4, D4, E4, F4, G4, A4, B4 are all in octave 4. Octave designations increment at each C: B3 is followed by C4. Middle C = C4 (~261.63 Hz). The piano keyboard primarily spans octaves 1 through 7. ASPN labels are instrument-independent: C4 is C4 whether played on flute, cello, or voice.
 
-**American Standard Pitch Notation** (abbreviated ASPN) is a bipartite labeling system that designates specific pitches by combining:
+# Prerequisites
 
-1. **Note name**: A letter (A-G) with optional accidental (♯, ♭, ♮, 𝄪, 𝄫)
-2. **Octave designation**: A subscript integer (0, 1, 2, 3, 4, 5, 6, 7, 8, ...)
+- **Pitch**: the concept being labeled
+- **Octave equivalence**: the repeating cycle that ASPN organizes
 
-Format: [Letter][Accidental][Octave Number]
-- Examples: C4, G♯5, B♭3, F2
+# Key Properties
 
-**Octave boundaries**:
-- Each octave begins with C and ends with B
-- Octave designations increment at each C (not at A)
-- Octave 4 includes all pitches from C4 up to (but not including) C5
+- Format: [Letter][Accidental][Octave Number] (e.g., C4, G#5, Bb3)
+- Each octave: C to B (octave changes at C, not A)
+- Middle C = C4 (critical reference point to memorize)
+- Piano spans octaves 1-7 (with partial 0 and 8)
+- Accidentals do not change octave number: B#3 and C4 are enharmonically equivalent but have different ASPN labels
+- ASPN specifies a pitch (with octave); pitch class does not
 
-**Key reference points**:
-- **Middle C = C4** (approximately 261.63 Hz)
-- Piano keyboard spans primarily octaves 1-7, with partial octaves 0 and 8
-- Each octave represents a doubling of frequency
+# Construction / Recognition
 
-**Distinction from pitch class**: ASPN specifies exact pitches with octave information, while pitch class refers to all notes with the same letter name across all octaves.
+To determine an ASPN label, identify the letter name and accidental, then determine which octave the note is in by counting from the nearest C.
 
-## Musical Context
+# Context & Application
 
-ASPN provides unambiguous pitch communication:
-- **Precise identification**: "Play a C4" specifies exactly which C
-- **Instrument-independent**: C4 is C4 whether on flute, cello, or voice
-- **Transposition clarity**: Enables clear description of register changes
-- **Analysis notation**: Essential for describing specific pitch relationships
+ASPN provides unambiguous pitch communication. Without it, "play a C" is ambiguous (which octave?). With ASPN, "play C4" is precise. ASPN is essential in academic analysis, instrument specifications, and anywhere exact pitch identification matters. Standard tuning reference: A4 = 440 Hz.
 
-Without ASPN, saying "play a C" is ambiguous (which octave?). With ASPN, "play C4" is perfectly clear.
+# Examples
 
-## Examples
+- C4 = middle C (~261.63 Hz)
+- A4 = 440 Hz (standard tuning reference)
+- All notes from C4 through B4 are in octave 4
+- B3 to C4 crosses an octave boundary
+- B#3 and C4: enharmonically equivalent but different ASPN octave numbers
 
-### Basic
+# Relationships
 
-ASPN notation:
-- C4, D4, E4, F4, G4, A4, B4 (all in octave 4)
-- C5, D5, E5, F5, G5, A5, B5 (all in octave 5)
-- C♯4 and D♭4 (same pitch, enharmonically equivalent)
-
-Octave boundaries:
-- B3 → C4 (octave changes at C)
-- B♯3 and C4 are enharmonically equivalent but have different octave numbers
-- All pitches from C4 through B4 are in octave 4
-
-### From Repertoire
-
-Soprano vocal range typically extends from C4 to C6. Tenor range typically A2 to C5. A piccolo's lowest note is D5; a contrabassoon can play down to B♭0. Orchestral scores often reference specific ASPN pitches for tuning (A4 = 440 Hz).
-
-## Related Concepts
-
-- **Prerequisite**: pitch, octave-equivalence, staff
 - **Leads to**: pitch-class, transposition
-- **See also**: middle-c, enharmonic-equivalence
+- **See also**: middle-c, enharmonic-equivalence, piano-keyboard
 
-## Common Confusions
+# Common Errors
 
-- Octaves begin on C, not A (so B3 → C4, not B3 → A4)
-- Middle C is C4 (not C3 or C5)
-- Accidentals don't change octave number: B♯3 ≠ C4 (different octave designations despite enharmonic equivalence)
-- Octave 4 includes C4, D4, ..., B4 (ending before C5)
-- ASPN labels are absolute, not relative to a particular instrument's range
-- Pitch (C4) vs. pitch class (C) — ASPN specifies pitches, not pitch classes
+- Placing the octave boundary at A instead of C
+- Labeling middle C as C3 or C5 instead of C4
 
-## Source Reference
+# Common Confusions
+
+- Octaves begin on C, not A (B3 is followed by C4, not B3 by A4)
+- Accidentals do not change octave number: B#3 is NOT the same ASPN label as C4
+- ASPN specifies pitch (with octave); pitch class abstracts away octave
+
+# Source Reference
 
 Open Music Theory, Part I, Chapter 6: "American Standard Pitch Notation (ASPN)"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: format specification, B#3/C4 enharmonic example, A4=440Hz reference, octave boundary rule.

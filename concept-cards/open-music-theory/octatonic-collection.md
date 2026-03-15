@@ -1,138 +1,79 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Octatonic Collection
-category: theory
-source: Open Music Theory
-chapter: "Collections"
-pdf_page: null
-chapter_number: 8
-unit: null
+slug: octatonic-collection
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: collections
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Collections"
+chapter_number: 8
+pdf_page: null
+section: "VIII.8"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases:
+  - "diminished scale"
+  - "octatonic scale"
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - whole-tone-collection
+  - hexatonic-collection
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the octatonic collection?"
+  - "How many octatonic collections exist?"
+  - "What triads does the octatonic contain?"
 ---
 
-# Octatonic Collection
+# Quick Definition
+An eight-note collection built by alternating whole steps and half steps. Only three distinct octatonic collections exist: OCT0,1, OCT1,2, and OCT2,3 (named by the half-step pair unique to each). Contains eight major/minor triads and four diminished triads but no root motion by fifth, making tonic/dominant motion impossible.
 
-## Quick Definition
+# Core Definition
+The octatonic collection alternates whole and half steps across eight pitches. Its homogeneous interval content means only three distinct transpositions exist. Jazz musicians call it the "diminished scale" because it fits well with fully diminished seventh chords. The collection contains many triadic harmonies (8 major/minor triads, 4 each of every seventh chord type except major seventh) but no chords related by root motion by fifth. It produces plentiful root motion by third instead. The octatonic appears with some frequency prior to the 20th century (especially in Russian music).
 
-The octatonic collection is an eight-note symmetrical scale built by alternating half and whole steps (1-2-1-2-1-2-1-2 or 2-1-2-1-2-1-2-1). Known in jazz as the "diminished scale," it contains two interlocking diminished seventh chords. There are only three unique octatonic collections (OCT0,1, OCT1,2, OCT2,3). Unlike whole-tone, octatonic is rich in triadic content but lacks dominant-tonic function.
+# Prerequisites
+None specific
 
-## Formal Definition
+# Key Properties
+1. Eight notes, alternating W-H-W-H-W-H-W-H
+2. Only 3 distinct collections: OCT0,1; OCT1,2; OCT2,3
+3. Transposing by 3 semitones returns the same collection
+4. 8 major/minor triads, 4 diminished triads per collection
+5. No root motion by fifth possible
+6. Rich root motion by third
+7. Also called "diminished scale" in jazz
 
-**Octatonic collection**: An eight-note pitch collection with the following properties:
+# Context & Application
+Joan Tower, Chopin (Ballade in G minor), Tchaikovsky (Sugar Plum Fairy), and many Russian composers used the octatonic. It bridges tonal and atonal worlds due to its triadic content.
 
-**Structure**:
-- **Interval pattern**: 1-2-1-2-1-2-1-2 (half-whole) or 2-1-2-1-2-1-2-1 (whole-half)
-- **Cardinality**: 8 pitch classes
-- **Contains two diminished seventh chords** a semitone apart
-- **Set class**: (0134679T), Forte number 8-28
+# Examples
+**Example 1**: OCT0,1 = {0,1,3,4,6,7,9,10} = C-C#-D#-E-F#-G-A-Bb.
+**Example 2** (Chopin, Ballade in G minor): Octatonic over Bb7 chord.
+**Example 3** (Tchaikovsky, Sugar Plum Fairy): Celesta arpeggios using octatonic for "magical" effect.
 
-**Only three unique collections** (due to minor-3rd symmetry):
-```
-OCT0,1: C - C# - D# - E - F# - G - A - Bb
-        {0, 1, 3, 4, 6, 7, 9, 10}
+# Relationships
+## Related
+- **whole-tone-collection** -- Another symmetric collection with limited transpositions
+- **hexatonic-collection** -- Another symmetric collection with triadic content
 
-OCT1,2: C# - D - E - F - G - Ab - Bb - B
-        {1, 2, 4, 5, 7, 8, 10, 11}
+# Common Confusions
+- **Confusion**: There are two types (W-H starting and H-W starting)
+  **Clarification**: These are rotations of the same collection, not different collections; there are only 3 distinct collections
 
-OCT2,3: D - Eb - F - F# - G# - A - B - C
-        {2, 3, 5, 6, 8, 9, 11, 0}
-```
+# Source Reference
+Open Music Theory, Part VIII, Chapter 8: "Collections."
 
-**Naming convention**: The subscript numbers indicate a characteristic semitone in the collection (C-C# for OCT0,1).
-
-**Symmetry**: Transposition by minor 3rd (T3) maps the collection onto itself. Therefore: 12 transpositions / 4 (period) = 3 unique forms.
-
-## Musical Context
-
-The octatonic became associated with Russian music through Rimsky-Korsakov, who used it for supernatural characters (Kashchei). This "magical" association persisted through Stravinsky, Bartok, and Messiaen.
-
-**Harmonic richness**: Unlike whole-tone, octatonic contains:
-- 8 major triads (roots form two dim7 chords)
-- 8 minor triads
-- 4 diminished triads
-- Dominant 7ths, minor 7ths, half-diminished 7ths
-- NO major 7th chords
-
-**But no functional harmony**: No two triads are related by fifth, so tonic-dominant motion is impossible. Root motion by third predominates.
-
-**Associations**:
-- Russian nationalism (Rimsky-Korsakov)
-- Magic, sorcery, the supernatural
-- Modernist harmonic language
-- Jazz improvisation over dim7 and dom7 chords
-
-## Examples
-
-### Basic
-
-**OCT0,1 spelled from C (half-whole)**:
-```
-C - Db - Eb - E - F# - G - A - Bb - (C)
-   1    2    1    2    1   2   1   2
-
-Two interlocking dim7 chords:
-  C - Eb - F# - A = Cdim7
-  Db - E - G - Bb = Dbdim7 (= C#dim7)
-```
-
-**Available triads in OCT0,1**:
-```
-Major triads: C, Eb, F#, A (roots form Cdim7)
-Minor triads: C#m, Em, Gm, Bbm (roots form C#dim7)
-
-Note: The major triad roots and minor triad roots
-form the two constituent diminished seventh chords!
-```
-
-**Tritone relationships**:
-```
-Each major triad has another major triad a tritone away:
-  C major and F# major
-  Eb major and A major
-
-Same for minor triads:
-  C#m and Gm
-  Em and Bbm
-```
-
-**Identifying which collection**:
-```
-Find any half step in the scale:
-- C-Db present? -> OCT0,1
-- C#-D present? -> OCT1,2
-- D-Eb present? -> OCT2,3
-```
-
-### From Repertoire
-
-**Rimsky-Korsakov, "Kashchei the Immortal"**: The villain's music is characterized by octatonic melodies and harmonies, establishing the collection's "evil/supernatural" association.
-
-**Stravinsky, "The Firebird"**: Octatonic = magical/supernatural realm; diatonic = human realm. The contrast structures the ballet.
-
-**Bartok, "From the Island of Bali"**: Octatonic emerges from combining (0167) tetrachords in each hand.
-
-**Joan Tower, "Silver Ladders"**: Opens with clearly articulated octatonic material.
-
-**Chopin, Ballade in G minor**: Early Romantic use of octatonic over dominant harmony (m. 106ff).
-
-**Messiaen**: Calls octatonic his "Mode 2" in his modes of limited transposition.
-
-## Related Concepts
-
-- **Prerequisite**: diminished-seventh-chord, minor-triad, half-step, whole-step
-- **Leads to**: modes-of-limited-transposition, distance-model
-- **See also**: whole-tone-collection, hexatonic-collection, transpositional-symmetry
-
-## Common Confusions
-
-- **Only THREE unique octatonic collections exist**: Not eight or twelve
-- **Two modes/rotations**: Half-whole and whole-half (different starting interval)
-- **Jazz calls it "diminished scale"**: Same thing as octatonic
-- **Rich in triads, unlike whole-tone**: 8 major + 8 minor triads available
-- **No major 7th chords**: Despite the harmonic richness
-- **No root motion by fifth**: This prevents functional harmony
-- **Transposition by m3 gives the SAME collection**: This is why only 3 unique forms exist
-- **The two constituent dim7 chords are a semitone apart**: Not a tritone, not a minor third
-
-## Source Reference
-
-Open Music Theory, Part VIII, Chapter 8: "Collections"
+# Verification Notes
+- Definition source: From 08-08
+- Confidence rationale: High
+- Preserved from v2: Triadic content, Tower/Chopin/Tchaikovsky examples
+- Cross-reference status: Verified

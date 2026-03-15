@@ -1,170 +1,79 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Row Naming Conventions
-category: theory
-source: Open Music Theory
-chapter: "Naming Conventions for Rows"
-pdf_page: null
-chapter_number: 9
-unit: null
+slug: row-naming-conventions
+# === CLASSIFICATION ===
+category: analysis
+subcategory: twelve-tone-theory
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Naming Conventions for Rows"
+chapter_number: 9
+pdf_page: null
+section: "IX.2"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases:
+  - "fixed zero"
+  - "moveable zero"
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - row-matrix
+extends: []
+related:
+  - twelve-tone-row
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the different conventions for labeling twelve-tone rows?"
+  - "What is fixed zero vs. moveable zero?"
+  - "How do the three matrix types differ?"
 ---
 
-# Row Naming Conventions
+# Quick Definition
+Two main conventions exist for numbering twelve-tone rows: fixed zero (P0 always starts on C) and moveable zero (P0 starts on a contextually important pitch). A hybrid third type uses a contextual starting pitch but labels with fixed-zero numbers (e.g., P2 starting on D).
 
-## Quick Definition
+# Core Definition
+In fixed-zero convention, P0 starts on C (pitch class 0), I0 also starts on C, R0 ends on C, RI0 ends on C. This provides consistency across analyses. In moveable-zero convention, P0 is assigned to the first or most meaningful row form regardless of starting pitch, with transpositions calculated from that reference point. The hybrid convention places a contextual row on top but labels it with the fixed-zero subscript. In all conventions, P0 and I0 share the same starting pitch class, and Pn and Rn are exact retrogrades.
 
-Row naming conventions are the systems used to label twelve-tone row forms with subscript numbers (P0, I5, R7, RI11, etc.), with two main approaches: fixed-zero (where P0 always starts on C, pitch class 0) and moveable-zero (where P0 is assigned to a contextually important row form regardless of starting pitch)—both systems using the subscript to indicate transposition level, with P and I labeled by their starting pitch and R and RI labeled by their ending pitch to ensure retrograde pairs share the same subscript.
+# Prerequisites
+- Row matrix (understanding how forms are organized)
 
-## Formal Definition
+# Key Properties
+1. Fixed zero: P0 starts on C; most common modern convention
+2. Moveable zero: P0 starts on analyst's choice; musically sensitive
+3. Hybrid: contextual pitch level but fixed-zero labels
+4. In all systems: Pn and Rn are exact retrogrades; In starts on same pc as Pn
+5. Operations work identically regardless of convention
+6. Be aware of which convention is used when reading analytical literature
 
-**Naming conventions**: Systems for labeling the 48 row forms.
+# Context & Application
+When reading twelve-tone analyses, one must identify which convention is in use. Fixed zero has become more common in recent scholarship for its clarity and consistency, but moveable zero remains useful for musically sensitive analyses. The choice of convention does not affect the analytical results -- only the labels.
 
-**Two main systems**:
+# Examples
+**Example 1** (Lutyens, Motet): Fixed zero: P0 = 0-11-3-7-8-4-2-6-5-1-9-10 (starts on C). Moveable zero with D: P0 = 2-1-5-9-10-6-4-8-7-3-11-0. Hybrid: P2 = 2-1-5-9-10-6-4-8-7-3-11-0.
 
-1. **Fixed-zero (P0 starts on C)**:
-   - P0 always begins on pitch class 0 (C)
-   - I0 also begins on C
-   - Subscript indicates starting pitch for P and I
-   - Subscript indicates ending pitch for R and RI
-   - Most common in current scholarship
+# Relationships
+## Builds Upon
+- **row-matrix** -- Naming conventions determine how the matrix is labeled
+## Related
+- **twelve-tone-row** -- The entity being named
 
-2. **Moveable-zero (P0 starts on contextual pitch)**:
-   - P0 assigned to first or most important row form
-   - Subscript still indicates transposition relative to P0
-   - Musically sensitive but less consistent across analyses
+# Common Confusions
+- **Confusion**: One convention is "correct" and others are wrong
+  **Clarification**: All are valid; consistency within an analysis is what matters
+- **Confusion**: Different conventions change the analysis
+  **Clarification**: Only the labels change; the musical relationships are the same
 
-**Subscript rules (both systems)**:
-```
-P forms: subscript = starting pitch class
-I forms: subscript = starting pitch class
-R forms: subscript = ending pitch class
-RI forms: subscript = ending pitch class
+# Source Reference
+Open Music Theory, Part IX, Chapter 2: "Naming Conventions for Rows."
 
-This ensures:
-- Pn and Rn are exact retrogrades
-- In and RIn are exact retrogrades
-```
-
-## Musical Context
-
-Understanding naming conventions is essential for:
-- **Reading analyses**: Different sources use different systems
-- **Communication**: Ensuring clarity when discussing rows
-- **Matrix construction**: Labeling rows consistently
-- **Score analysis**: Identifying row forms in actual music
-
-**Practical considerations**:
-- Fixed-zero: Consistent across all pieces, easy comparison
-- Moveable-zero: More contextually meaningful, but varies by analysis
-- Always check which convention a source uses
-
-## Examples
-
-### Basic
-
-**Fixed-zero convention**:
-```
-Row starting on C:  P0 (C = pitch class 0)
-Row starting on F#: P6 (F# = pitch class 6)
-Row starting on Bb: P10 (Bb = pitch class 10)
-
-I form starting on E: I4 (E = pitch class 4)
-R form ending on G:   R7 (G = pitch class 7)
-```
-
-**Moveable-zero convention**:
-```
-If piece begins with row starting on D:
-- That row = P0 (contextually assigned)
-- Row starts on D, but labeled P0
-- Other forms numbered relative to this P0
-
-Same row in fixed-zero:
-- Row starting on D = P2 (D = pitch class 2)
-```
-
-**Why R and RI use ending pitch**:
-```
-P5:  F-G-Ab-B-... -E   (starts on F = 5)
-R5:  E-...-Ab-G-F      (ends on F = 5)
-
-P5 and R5 are exact retrogrades
-Same subscript = same relationship
-```
-
-### From Repertoire
-
-**Lutyens, Motet Op. 27** (comparing conventions):
-
-**Fixed-zero (P0 starts on C)**:
-```
-Row as composed: 0-11-3-7-8-4-2-6-5-1-9-10
-This IS P0 (starts on 0 = C)
-
-Matrix labeled:
-P0, P1, P2, ... P11
-I0, I1, I2, ... I11
-etc.
-```
-
-**Moveable-zero (P0 starts on D)**:
-```
-First voice enters on D
-Analyst assigns that transposition as P0
-
-Same row now: 2-1-5-9-10-6-4-8-7-3-11-0
-Labeled as P0 (contextual)
-
-But in fixed-zero this would be P2
-```
-
-**Matrix type 3 (hybrid)**:
-```
-Row starting on D in top position
-But labeled P2 (not P0)
-
-Combines:
-- Contextual organization (D in top row)
-- Fixed-zero labeling (P2 because D = 2)
-```
-
-**Webern, Symphonie Op. 21**:
-```
-Different sources use different conventions:
-- Bailey (1991) follows Webern's sketches
-- Some sources swap P and I assignments
-
-When reading analysis, always check:
-- Which convention is used?
-- Which row is designated P0?
-```
-
-## Related Concepts
-
-- **Prerequisite**: twelve-tone-row, row-operations, pitch-class
-- **Leads to**: row-matrix, twelve-tone-analysis
-- **See also**: transposition
-
-## Common Confusions
-
-- Two main systems: fixed-zero (P0 on C) and moveable-zero (P0 contextual)
-- Fixed-zero = more common, consistent across analyses
-- Moveable-zero = musically sensitive, varies by analysis
-- BOTH systems: P and I subscript = starting pitch
-- BOTH systems: R and RI subscript = ending pitch
-- This ensures Pn/Rn and In/RIn are exact retrograde pairs
-- P0 and I0 always start on the SAME pitch class
-- R0 and RI0 always end on that same pitch class
-- Subscript numbers are pitch classes (0-11), not scale degrees
-- Fixed-zero: P0 = starts on C, P3 = starts on Eb, P7 = starts on G
-- When reading any analysis, CHECK which convention is used
-- Matrix can be organized three ways:
-  1. P0 on top, starting on 0 (C)
-  2. P0 on top, starting on chosen pitch n
-  3. Pn on top (contextual), labeled by fixed-zero
-- All three matrix types represent same row class
-- The choice of convention doesn't change the music, only the labels
-
-## Source Reference
-
-Open Music Theory, Part IX: "Naming Conventions for Rows"
+# Verification Notes
+- Definition source: Directly from 09-02 source chapter
+- Confidence rationale: High -- all three types clearly defined
+- Preserved from v2: Three convention types, Lutyens example
+- Cross-reference status: Verified against matrix examples in source

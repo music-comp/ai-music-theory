@@ -1,105 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Protonotation
-category: theory
-source: Open Music Theory
-chapter: "The Basics of Sight-Singing and Dictation"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: protonotation
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: aural-skills
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "The Basics of Sight-Singing and Dictation"
+chapter_number: 15
+pdf_page: null
+section: "Protonotation"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - dictation
+  - solfege
+  - meter
+extends: []
+related:
+  - sight-singing
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is protonotation?"
+  - "How does protonotation simplify dictation?"
+  - "How do you convert protonotation to staff notation?"
 ---
 
-# Protonotation
+# Quick Definition
 
-## Quick Definition
+A simplified notation system using beat-grid lines, horizontal duration marks, and solfege syllables to represent basic pitch and rhythm before converting to staff notation.
 
-Simplified preliminary notation systems used as intermediate steps in musical dictation, including dot grids, slash notation, and contour lines, before converting to standard staff notation.
+# Core Definition
 
-## Formal Definition
+**Protonotation** is a basic system of musical notation drawn from Gary Karpinski's *Manual for Ear Training and Sight Singing*. It uses vertical lines of varying length to represent beats (longer = stronger accent), horizontal lines for duration, and movable-do solfege syllables for pitch. It does not contain information about specific beat duration or key. Protonotation serves as an intermediate step between hearing music and writing full staff notation. Given a clef, tonic pitch, and beat duration/time signature, protonotation can be converted to staff notation.
 
-**Protonotation** (from Greek "proto" = first, preliminary) refers to simplified notational methods used during the dictation process. These serve as intermediate representations before transcribing music into standard staff notation.
+# Prerequisites
 
-**Common protonotation systems**:
+- **Dictation**: the activity protonotation supports
+- **Solfege**: used for pitch in protonotation
+- **Meter**: protonotation grids reflect meter type
 
-**1. Dot grid**:
-- Series of dots representing beats in measures
-- Format: • • • • | • • • • | • • • •
-- Each dot = one beat; vertical lines = barlines
-- Foundation for slash notation
+# Key Properties
 
-**2. Slash notation**:
-- Built on dot grid foundation
-- Symbols:
-  - **/** (slash) = note attack/articulation
-  - **—** (dash) = sustained note continuation
-  - **○** (circle) = rest/silence
-- Captures rhythm without pitch
+- Vertical lines represent beats (longer = downbeat, shorter = weak beat)
+- Horizontal lines represent note duration
+- Solfege syllables indicate pitch
+- Arrows indicate melodic leaps
+- X or blank indicates rests
+- No key or beat-duration information (must be specified separately)
+- Can be realized into multiple different staff notations depending on clef, key, and time signature
 
-**3. Contour lines**:
-- Visual representation of melodic direction
-- Symbols:
-  - **↗** or **/** = pitch goes up
-  - **↘** or **\\** = pitch goes down
-  - **→** or **—** = pitch stays same
-  - **★** = leap (larger interval)
-- Captures pitch contour without specific intervals
+# Construction / Recognition
 
-**4. Solfège/scale degree notation**:
-- Writing solmization syllables (do, re, mi...) or scale degrees (^1, ^2, ^3...)
-- Indicates pitch relationships before converting to staff
+Create a grid of vertical beat lines matching the meter, then add horizontal duration lines and solfege syllables as you hear them.
 
-## Musical Context
+# Context & Application
 
-Protonotation serves pedagogical purposes:
-- **Reduces cognitive load**: Focus on one element at a time
-- **Rhythmic dictation**: Dot grid → slash notation → staff notation
-- **Melodic dictation**: Contour lines + solfège → staff notation
-- **Teaching tool**: Helps beginners break down complex task
-- **Quick sketching**: Composers use protonotation for rapid idea capture
+Protonotation provides a systematic, low-stakes intermediate step for dictation that separates the tasks of hearing and notating. It is particularly useful for beginners.
 
-The process moves from protonotation (simple) to standard notation (complex).
+# Examples
 
-## Examples
+- Duple meter grid: alternating long and short vertical lines
+- Triple meter grid: one long, two short vertical lines per measure
+- Notes are written as horizontal lines with solfege syllables
 
-### Basic
+# Relationships
 
-**Rhythmic dictation sequence**:
-1. Dot grid: • • • • | • • • •
-2. Add slashes/dashes: / — — / | / / — /
-3. Convert to staff: ♩ 𝅗𝅥 ♩ | ♩ ♩ 𝅗𝅥
+- **See also**: dictation, sight-singing, solfege, meter
 
-**Melodic dictation sequence**:
-1. Contour: ↗ ↗ ↘ → (up, up, down, same)
-2. Solfège: do re mi re mi
-3. Staff notation: C D E D E (in C major)
+# Common Errors
 
-**Combined example**:
-- Dot grid: • • • •
-- Slash notation: / — / /
-- Contour lines: → ↗ ↘ ↗
-- Solfège: do re do mi
-- Staff notation: ♩ 𝅗𝅥 ♩ ♩ with pitches C D C E
+- Forgetting that protonotation requires additional information (clef, key, beat unit) for conversion
 
-### From Repertoire
+# Common Confusions
 
-Aural skills textbooks teach protonotation as standard dictation methodology. Music theory pedagogy uses these tools to scaffold learning. Composers' sketches often resemble protonotation (simplified ideas before full scoring).
+- Protonotation is not a replacement for staff notation -- it is an intermediate step
 
-## Related Concepts
-
-- **Prerequisite**: dictation, rhythm, pitch, meter, beat
-- **Leads to**: transition, melodic-alteration
-- **See also**: sight-singing
-
-## Common Confusions
-
-- Protonotation is intermediate step, not final product
-- Different systems for different purposes: dot grid for rhythm, contour for pitch
-- Slash notation ≠ guitar chord slashes (different meanings)
-- Contour lines show direction, not exact intervals
-- Protonotation should be quick—don't over-complicate
-- Eventually transcribe protonotation to standard staff notation
-- Experienced musicians may skip protonotation and write directly on staff
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 15: "The Basics of Sight-Singing and Dictation"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: Karpinski attribution, grid description, conversion requirements.

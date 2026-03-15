@@ -1,85 +1,96 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Scale Degree
-category: theory
-source: Open Music Theory
-chapter: "Major Scales, Scale Degrees, and Key Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: scale-degree
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Major Scales, Scale Degrees, and Key Signatures"
+chapter_number: 12
+pdf_page: null
+section: "Scale Degrees, Solfege, and Scale-Degree Names"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - major-scale
+extends: []
+related:
+  - solfege
+  - scale-degree-names
+  - minor-scale
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a scale degree?"
+  - "How are scale degrees notated?"
+  - "What is the caret notation?"
 ---
 
-# Scale Degree
+# Quick Definition
 
-## Quick Definition
+A solmization system using Arabic numerals with carets (^1, ^2, ^3, etc.) to identify each note's position within a scale.
 
-A number (with a caret above it) that identifies a note's position within a scale, showing its relationship to the tonic.
+# Core Definition
 
-## Formal Definition
+**Scale degrees** are solmization syllables notated by Arabic numerals with carets above them: ^1, ^2, ^3, ^4, ^5, ^6, ^7. The first note of a scale is ^1 and the numbers ascend until the last note, which is also ^1 (some instructors use ^8). Scale degrees identify a note's position within a key regardless of the specific key, making them useful for analysis and transposition. In minor, lowered degrees are indicated with a downward arrow: lowered-^3, lowered-^6, lowered-^7.
 
-A **scale degree** is a system of labeling notes within a scale according to their position, using Arabic numerals with carets (^) above them: ^1, ^2, ^3, ^4, ^5, ^6, ^7. The first note of the scale is ^1, and the numbers ascend until returning to ^1 (or ^8) at the octave.
+# Prerequisites
 
-Each scale degree also has a formal name:
-- ^1 = **Tonic** (the central pitch)
-- ^2 = **Supertonic** (a second above tonic)
-- ^3 = **Mediant** (midway between tonic and dominant)
-- ^4 = **Subdominant** (a fifth below tonic)
-- ^5 = **Dominant** (a fifth above tonic, second most important pitch)
-- ^6 = **Submediant** (midway between subdominant and tonic below)
-- ^7 = **Leading tone** (when a half step below tonic; pulls toward tonic)
+- **Major scale**: the primary context for scale degrees
 
-Scale degrees are abstract and relative: ^1 in C major is C, but ^1 in G major is G. This system allows analysis independent of absolute pitch.
+# Key Properties
 
-## Musical Context
+- Notated with Arabic numerals and carets: ^1 through ^7
+- ^1 = first note of scale (tonic)
+- Position-based: ^5 in C major = G; ^5 in D major = A
+- Key-independent: ^5 always means "fifth note of the scale"
+- In minor: lowered-^3, lowered-^6, lowered-^7 indicate half-step alterations
 
-Scale degrees show functional relationships within a key:
-- Identify melodic patterns across different keys
-- Analyze harmonic progressions (I-IV-V-I uses scale degrees ^1-^4-^5-^1)
-- Understand tendency tones (^7 wants to resolve to ^1)
-- Enable transposition (same scale degrees = same relative pitches in new key)
+# Construction / Recognition
 
-Understanding scale degrees helps musicians think structurally about music rather than just in terms of letter names. The dominant (^5) and leading tone (^7) have particularly strong tendencies toward the tonic (^1).
+Count up from the tonic to find scale degree numbers. The caret (^) symbol distinguishes scale degrees from other numbers.
 
-## Examples
+# Context & Application
 
-### Basic
+Scale degrees provide a universal language for discussing melodic and harmonic patterns across all keys. They connect directly to solfege syllables and scale-degree names, forming three parallel naming systems.
 
-In C major:
-- ^1 = C (tonic)
-- ^2 = D (supertonic)
-- ^3 = E (mediant)
-- ^4 = F (subdominant)
-- ^5 = G (dominant)
-- ^6 = A (submediant)
-- ^7 = B (leading tone)
+# Examples
 
-In G major:
-- ^1 = G (tonic)
-- ^2 = A (supertonic)
-- ^3 = B (mediant)
-- ^4 = C (subdominant)
-- ^5 = D (dominant)
-- ^6 = E (submediant)
-- ^7 = F♯ (leading tone)
+- In C major: C=^1, D=^2, E=^3, F=^4, G=^5, A=^6, B=^7
+- In Bb major: Bb=^1, C=^2, D=^3, Eb=^4, F=^5, G=^6, A=^7
 
-### From Repertoire
+# Relationships
 
-The melody of "Twinkle, Twinkle Little Star" in C major: ^1-^1-^5-^5-^6-^6-^5... This pattern (^1-^1-^5-^5-^6-^6-^5) would work in ANY major key by transposing the scale degrees to the new tonic.
+- **Leads to**: solfege, scale-degree-names, roman-numeral-analysis
+- **See also**: major-scale, minor-scale
 
-## Related Concepts
+# Common Errors
 
-- **Prerequisite**: scale, major-scale
-- **Leads to**: solfege, harmonic-function, tonicization
-- **See also**: figured-bass
+- Omitting the caret (^) -- without it, numbers are ambiguous
 
-## Common Confusions
+# Common Confusions
 
-- Scale degree vs. pitch class: Scale degrees are relative to a key; pitch classes are absolute
-- ^1 vs. 1: The caret is essential (^1 = scale degree; 1 = pitch class or finger number)
-- Scale degree names are always relative to the tonic, not absolute pitches
-- In minor keys, some scale degrees may be altered (like raised ^7)
-- ^8 and ^1 refer to the same scale degree in different octaves
+- Scale degrees are different from interval numbers (^5 = fifth scale degree; P5 = perfect fifth interval)
+- In minor, the same degree number can be natural or lowered depending on context
 
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 12: "Major Scales, Scale Degrees, and Key Signatures"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: caret notation, minor alterations, key-independence property.

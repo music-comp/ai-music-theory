@@ -1,97 +1,90 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Homorhythm
-category: theory
-source: Open Music Theory
-chapter: "Texture"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: homorhythm
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: texture
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Texture"
+chapter_number: 21
+pdf_page: null
+section: "Homorhythm"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "homorhythmic texture"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - homophony
+extends:
+  - homophony
+related:
+  - melody-and-accompaniment
+contrasts_with:
+  - polyphony
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is homorhythm?"
+  - "How does homorhythm differ from melody and accompaniment?"
 ---
 
-# Homorhythm
+# Quick Definition
 
-## Quick Definition
+A type of homophony in which all voices move in extremely similar or completely identical rhythm, creating block chords.
 
-A homophonic texture in which all voices move together with the same rhythm, creating a "block chord" effect where each vertical sonority articulates simultaneously across all parts.
+# Core Definition
 
-## Formal Definition
+**Homorhythm** is a subtype of homophony in which all voices move in an extremely similar or completely unison rhythm. This creates block chords where melody and harmony move together simultaneously. It is most commonly seen in chorale-like compositions. While there may be a melody that stands out, all voices still move in rhythmic unison.
 
-**Homorhythm** (also called **homorhythmic texture**; from Greek "homo" = same, "rhythmos" = rhythm) is a subtype of homophonic texture characterized by all voices moving in the same rhythm, with each note attack occurring simultaneously in all parts.
+# Prerequisites
 
-**Characteristics**:
-- All voices have identical rhythm
-- Vertical alignment: every note in every voice attacks together
-- Harmonic progression clearly articulated
-- Typically one voice carries the melody (usually the highest)
-- Other voices provide harmonic support
-- Creates "block chord" or "chordal" effect
+- **Homophony**: the broader texture category
 
-**Relationship to homophony**:
-- **Homophony** (general): Melody with accompaniment (accompaniment may have varied rhythm)
-- **Homorhythm** (specific): All parts move in same rhythm (stricter form of homophony)
-- Homorhythm is always homophonic, but homophony is not always homorhythmic
+# Key Properties
 
-**Musical effect**:
-- Emphasizes harmonic progression over melodic independence
-- Creates rhythmic solidarity and clarity
-- Projects melody clearly (typically in highest voice)
-- Suitable for text declamation (all voices articulate text together)
+- All voices in nearly identical or identical rhythm
+- Creates block chord texture
+- Melody and harmony move simultaneously
+- Common in chorales, hymns, and anthems
 
-## Musical Context
+# Construction / Recognition
 
-Homorhythmic texture serves specific purposes:
-- **Hymns and chorales**: Four-part SATB with identical rhythm
-- **National anthems**: Clear text declamation with harmonic support
-- **Choral music**: Homorhythmic sections for textual emphasis or climax
-- **Marches**: Rhythmic solidarity for unified effect
-- **Educational**: Teaches harmonic progression and voice leading
+Listen for all voices moving in the same (or very similar) rhythm. The result is a "chordal" sound.
 
-Composers alternate homorhythm with other textures for variety and formal articulation.
+# Context & Application
 
-## Examples
+Homorhythm is characteristic of chorales (Bach chorales are the classic example), hymns, national anthems, and many folk songs sung in harmony.
 
-### Basic
+# Examples
 
-**Homorhythmic passage** (all voices have same rhythm):
-```
-Soprano: ♩    ♩    𝅗𝅥   |  ♩
-Alto:    ♩    ♩    𝅗𝅥   |  ♩
-Tenor:   ♩    ♩    𝅗𝅥   |  ♩
-Bass:    ♩    ♩    𝅗𝅥   |  ♩
-```
+- Tcherepnin's Six Horn Quartets, No. 6 (Chorale): block chords in horn quartet
+- "Wild Mountain Thyme" by The Longest Johns: voices in rhythmic unison
 
-All voices attack together, creating vertical block chords.
+# Relationships
 
-**Contrast: Non-homorhythmic homophony**:
-```
-Soprano: ♩    ♩    𝅗𝅥   |  ♩   (melody)
-Alto:    𝅗𝅥        𝅗𝅥   |  ♩   (accompaniment, different rhythm)
-Tenor:   𝅗𝅥        𝅗𝅥   |  ♩
-Bass:    𝅝                | 𝅗𝅥
-```
+- **Extends**: homophony
+- **See also**: melody-and-accompaniment, polyphony
 
-Still homophonic (melody + accompaniment), but not homorhythmic (rhythms differ).
+# Common Confusions
 
-### From Repertoire
+- Homorhythm can still have a prominent melody -- the key distinction is that ALL voices share the same rhythm
 
-Hymns: "Amazing Grace," "A Mighty Fortress Is Our God." Chorales: Bach's four-part chorales (though Bach occasionally breaks homorhythm). National anthems: "The Star-Spangled Banner," "God Save the Queen." Handel's "Messiah": "Hallelujah Chorus" sections. Barbershop quartets: predominantly homorhythmic texture.
-
-## Related Concepts
-
-- **Prerequisite**: texture, homophony, rhythm, chord, satb
-- **See also**: melody-and-accompaniment, homophony, monophony, texture
-
-## Common Confusions
-
-- Homorhythm vs. homophony: homorhythm = same rhythm (specific); homophony = melody + accompaniment (general)
-- Not all homophony is homorhythmic (accompaniment can have different rhythm)
-- Homorhythm ≠ monophony: homorhythm has harmonic parts; monophony is single unaccompanied line
-- "Block chords" implies homorhythm but homorhythm isn't always block chords (can have melodic motion)
-- Homorhythm ≠ polyphony (polyphony has rhythmically independent voices)
-- Brief homorhythmic passages don't make entire piece homorhythmic
-- Four-part chorale style is typically homorhythmic (standard textbook example)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 21: "Texture"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: block chord description, chorale association, repertoire examples.

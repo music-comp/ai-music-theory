@@ -1,132 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Countersubject
-category: form
-source: Open Music Theory
-chapter: "High Baroque Fugal Exposition"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: countersubject
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: fugue
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "High Baroque Fugal Exposition"
+chapter_number: 9
+pdf_page: null
+section: "Countersubject"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "CS"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - fugue-subject
+  - fugue-answer
+extends: []
+related:
+  - fugal-exposition
+  - invertible-counterpoint
+contrasts_with:
+  - free-counterpoint
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a countersubject and how is it composed?"
+  - "What constraints apply when making a countersubject invertible at the octave?"
 ---
 
-# Countersubject
+# Quick Definition
+A melodic line that accompanies the subject/answer in a fugue, recurring throughout; ideally invertible at the octave so it can appear above or below the subject.
 
-## Quick Definition
+# Core Definition
+A **countersubject** is a melodic line sounded with (and complementing) the subject/answer in a fugal exposition. It first appears when the second voice enters with the answer, while the first voice continues with the countersubject. The source advises sketching versions with both subject and answer simultaneously. For invertible countersubjects: avoid fifths (invert to fourths), stick to unisons/octaves, thirds/sixths, and seconds/sevenths; avoid 4-3 suspensions (use 7-6 and 2-3 instead, which invert to each other). Reserve the fifth as the completion of the chord in the free part (Ch. 9, "Countersubject").
 
-A recurring melodic line that accompanies the fugue subject or answer, first appearing when the second voice enters and typically recurring throughout the fugue.
+# Prerequisites
+- **Fugue subject/answer** -- The countersubject must work harmonically with both
 
-## Formal Definition
+# Key Properties
+1. Complements the subject/answer melodically and harmonically
+2. Recurs throughout the fugue (unlike free counterpoint)
+3. First appears in two-voice texture -- must outline clear harmonies
+4. For invertible countersubject: avoid fifths (invert to fourths)
+5. For invertible countersubject: use 7-6 and 2-3 suspensions (not 4-3)
+6. Should establish complementary rhythmic motion
+7. Must work with both the subject and the answer
 
-A **countersubject** is a melodic line in a fugue that appears in counterpoint with the subject or answer and recurs regularly throughout the composition. It first appears in the initial voice after it has stated the subject, continuing while the second voice presents the answer.
+# Construction / Recognition
+## To Compose:
+1. Find the skeletal form of the subject; treat it as a tonal cantus firmus
+2. Write a skeletal counterpoint; check against both subject and answer
+3. Embellish, being true to the subject's character
+4. If invertible: test both orientations
+## To Identify:
+1. Look for a recurring melodic line accompanying subject entries
+2. Check if it appears both above and below the subject
 
-**Characteristics**:
-- **Recurrence**: Appears regularly with later subject/answer entries (unlike free counterpoint)
-- **Contrapuntal compatibility**: Must work both above and below the subject/answer
-- **Harmonic clarity**: Must outline clear harmonies (triads, seventh chords) in two-voice texture
-- **Rhythmic complementarity**: Often moves when the subject is static, and vice versa
-- **Character consistency**: Should match the character and affect of the subject
+# Context & Application
+The countersubject provides continuity throughout the fugue. Not every fugue has a regular countersubject. Bach's C minor fugue (BWV 847) has two regular countersubjects (CS1 and CS2).
 
-**Multiple countersubjects**:
-- Some fugues have two or more regular countersubjects (CS1, CS2, etc.)
-- Each must work with the subject and with each other
-- Example: Bach, WTC I, C minor Fugue (BWV 847) has two countersubjects
+# Examples
+**Example 1** (Ch. 9, Example 2): BWV 847 showing two countersubjects (CS1 and CS2) labeled.
 
-**Invertible countersubject**:
-- Can appear both above and below the subject/answer
-- Requires special voice-leading considerations:
-  - Avoid perfect fifths (invert to perfect fourths, problematic in two-voice writing)
-  - Use unisons/octaves, thirds/sixths, seconds/sevenths
-  - Avoid 4–3 suspensions (become 5–6, not dissonant when inverted)
-  - Use 7–6 and 2–3 suspensions (these invert to each other)
+# Relationships
+## Builds Upon
+- **fugue-subject** -- Must complement the subject
+## Related
+- **invertible-counterpoint** -- Countersubjects are often invertible at the octave
+## Contrasts With
+- **free-counterpoint** -- Free counterpoint does not necessarily recur
 
-## Musical Context
+# Common Errors
+- **Error**: Writing a countersubject that works with the subject but not the answer
+  **Correction**: Check both versions simultaneously during composition
 
-The countersubject serves crucial functions in fugal structure:
+# Common Confusions
+- **Confusion**: Every fugue must have a regular countersubject
+  **Clarification**: Some fugues use free counterpoint instead
 
-**Structural functions**:
-- Provides complementary melodic material to the subject
-- Creates rhythmic and melodic variety
-- Helps maintain contrapuntal interest throughout the fugue
-- Defines harmonic progressions in conjunction with the subject
-- Enables rich contrapuntal combinations
+# Source Reference
+Open Music Theory, Part II, Chapter 9: "High Baroque Fugal Exposition," section "Countersubject."
 
-**Compositional process**:
-1. Create skeletal version first (don't write full melody immediately)
-2. Sketch versions for both subject and answer simultaneously
-3. Ensure harmonic sense in two-voice texture
-4. Embellish the skeletal line to create interesting melody
-5. Test invertibility if desired
-
-**Compositional guidelines**:
-- Be true to the subject's character
-- Establish complementary rhythmic motion (one moves, the other sustains)
-- Make changes to countersubject only where corresponding changes appear in subject/answer
-- Ensure it outlines clear harmonies with only two voices
-- Consider that it will recur many times—make it interesting but not overwhelming
-
-**Relationship to free counterpoint**:
-- Free counterpoint doesn't recur regularly
-- Countersubject is fixed material that returns
-- Some fugues use second or third countersubjects instead of free counterpoint
-
-## Examples
-
-### Basic
-
-**Subject and countersubject** (hypothetical):
-- Subject: C–E–G–C (whole notes, slow harmonic rhythm)
-- Countersubject: Eighth-note scalar motion (fast surface rhythm)
-  (Complementary rhythms: subject is static, countersubject is active)
-
-**Invertible countersubject**:
-- Above subject: Uses thirds and sixths primarily
-- Below subject: Same intervals invert successfully to sixths and thirds
-
-### From Repertoire
-
-**Bach, WTC I, Fugue in C minor (BWV 847)**:
-- Subject: Chromatic descent, dotted rhythm
-- CS1: Sixteenth-note running line, diatonic
-- CS2: Quarter-note line with suspensions
-  (Two regular countersubjects create rich three-voice counterpoint)
-
-**Bach, WTC I, Fugue in C major (BWV 846)**:
-- Subject: Ascending sixteenth-note scale
-- Countersubject: Quarter and eighth notes in complementary rhythm
-  (Invertible countersubject appears both above and below subject)
-
-**Bach, WTC II, Fugue in E♭ major (BWV 876)**:
-- Subject: Stately, marchlike
-- Countersubject: Complementary rhythmic pattern, invertible
-
-**Handel, Messiah, "And with His stripes"**:
-- Subject: Descending line, text-driven
-- Countersubject: Ascending motion, contrasting contour
-  (Vocal fugue with clear countersubject)
-
-**Beethoven, String Quartet Op. 131, opening fugue**:
-- Subject: Slow, chromatic
-- Countersubject: Chromatic with complementary rhythm
-
-## Related Concepts
-
-- **Prerequisite**: fugue, counterpoint, invertible-counterpoint, voice-leading
-- **Leads to**: free-counterpoint, free-counterpoint
-- **See also**: exposition
-
-## Common Confusions
-
-- Countersubject vs. free counterpoint: Countersubject recurs regularly; free counterpoint is non-recurring material
-- Not every fugue has a regular countersubject—some use free counterpoint throughout
-- The countersubject is not a second subject (that would be a double fugue)—it's accompanying material
-- Countersubject must work with the answer as well as the subject—test both combinations
-- Invertible countersubject is optional, not required, but highly desirable
-- The countersubject first appears in the opening voice while the second voice states the answer
-- Multiple countersubjects are numbered (CS1, CS2) in order of appearance
-- The countersubject may undergo slight variation while still being recognizable
-- Some fugues have two or three regular countersubjects that all recur together
-- Unlike the subject, the countersubject doesn't appear alone—it always accompanies the subject/answer
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 9: "High Baroque Fugal Exposition"
+# Verification Notes
+- Re-extracted from v2 card; preserved: invertibility rules, BWV 847 reference
+- Confidence: HIGH -- explicitly defined

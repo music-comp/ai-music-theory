@@ -1,79 +1,91 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Monophony
-category: theory
-source: Open Music Theory
-chapter: "Texture"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: monophony
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: texture
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Texture"
+chapter_number: 21
+pdf_page: null
+section: "Monophony"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "monophonic texture"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - texture
+extends:
+  - texture
+related:
+  - heterophony
+  - homophony
+  - polyphony
+contrasts_with:
+  - polyphony
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is monophony?"
+  - "Can monophony involve multiple performers?"
 ---
 
-# Monophony
+# Quick Definition
 
-## Quick Definition
+A texture consisting of a single unaccompanied melodic line, the simplest and most exposed of all textures.
 
-A musical texture consisting of a single unaccompanied melodic line with no harmonic support.
+# Core Definition
 
-## Formal Definition
+**Monophony** is a texture characterized by a single unaccompanied melodic line. All instruments or voices play/sing in unison (the same melody), making it the simplest texture. Monophony can involve multiple performers as long as they all perform the same melody.
 
-**Monophony** (from Greek *mono* = "single" + *phōnē* = "voice/sound") is a musical texture characterized by a single melodic line without accompaniment or harmony. Monophonic texture can involve:
-- A single performer (solo voice, solo instrument)
-- Multiple performers playing/singing the same melody in unison
-- Multiple performers playing/singing the same melody in different octaves (octave doubling)
+# Prerequisites
 
-Key characteristic: Only one pitch sounding at any given time (or multiple instruments/voices producing the same pitch/octave equivalents). There is no harmonic accompaniment, no independent counter-melodies, and no chordal support.
+- **Texture**: the general concept
 
-Monophony is the simplest and most exposed of all musical textures, as there is nowhere to hide—every note is prominent and clearly audible.
+# Key Properties
 
-## Musical Context
+- Single melodic line with no accompaniment
+- Can involve many performers playing/singing in unison
+- Simplest and most exposed texture
 
-Monophony is:
-- The oldest texture in Western music (Gregorian chant, medieval music)
-- Common in folk music traditions worldwide
-- Used for pedagogical purposes (learning melodies, sight-singing)
-- Effective for creating intimacy or starkness
-- The texture of unaccompanied solo performance
+# Construction / Recognition
 
-Musical contexts for monophony:
-- Sacred chant (Gregorian chant, Byzantine chant)
-- Unaccompanied solo instrumental music (Bach Cello Suites, solo flute pieces)
-- Solo a cappella vocal music (folk songs, protest songs)
-- Melodic statements before accompaniment enters
-- Pedagogical exercises and études
+Listen for a single melody with no harmony, chords, or accompaniment.
 
-The exposure of monophonic texture demands high musical skill—there's no harmony to mask intonation or rhythm issues.
+# Context & Application
 
-## Examples
+Examples include plainchant, solo instrumental pieces (Bach cello suites), and unaccompanied folk singing.
 
-### Basic
+# Examples
 
-- A single person whistling a tune
-- A solo violin playing a melody
-- An entire orchestra playing the same melody in unison/octaves
-- Gregorian chant sung by a choir (everyone singing the same melody)
+- Bach Cello Suite No. 1: solo cello = monophony
+- Pete Seeger singing unaccompanied = monophony
 
-### From Repertoire
+# Relationships
 
-- Bach: Cello Suite No. 1 in G Major, BWV 1007 (solo cello)
-- Pete Seeger: "Where Have All the Flowers Gone?" (unaccompanied voice)
-- Gregorian chant: "Dies Irae"
-- Debussy: "Syrinx" for solo flute
-- Opening of Brahms's Symphony No. 1, fourth movement (theme in unison)
+- **Extends**: texture
+- **See also**: heterophony, homophony, polyphony
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: pitch, rhythm, texture
-- **Leads to**: heterophony, homophony
+- Monophony can involve many performers -- the key is only ONE melodic line
 
-## Common Confusions
-
-- Multiple people can create monophony if they're all singing/playing the exact same melody
-- Octave doublings are still monophonic (men and women singing "same" melody an octave apart)
-- Monophony ≠ solo performance necessarily—a full orchestra in unison is monophonic
-- Monophonic ≠ boring or simple musically—the melody itself can be highly complex
-- Instruments that can play multiple notes (piano, guitar) playing a single-note melody = still monophonic
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 21: "Texture"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: unison definition, multiple-performer clarification, repertoire examples.

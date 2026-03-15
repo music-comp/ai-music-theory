@@ -1,89 +1,100 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Hypermeter
-category: theory
-source: Open Music Theory
-chapter: "Other Rhythmic Essentials"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: hypermeter
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Other Rhythmic Essentials"
+chapter_number: 11
+pdf_page: null
+section: "Meter Beyond Measure (Hypermeter)"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "hypermetric structure"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - beat
+  - meter
+  - measure
+extends:
+  - meter
+related:
+  - phrase
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is hypermeter?"
+  - "How do measures form patterns of accentuation?"
+  - "How do you annotate hypermetric structure?"
 ---
 
-# Hypermeter
+# Quick Definition
 
-## Quick Definition
+Patterns of accentuation that emerge at the level of measures, creating groups of strong and weak measures analogous to strong and weak beats.
 
-Patterns of accentuation at the measure level, where groups of measures function like beats within a larger metric structure, creating hierarchical accent patterns across multiple bars.
+# Core Definition
 
-## Formal Definition
+**Hypermeter** refers to groups of measures that form patterns of accentuation at the metrical level, especially at faster tempos. Just as beats within a measure have varying degrees of accent (downbeat vs. upbeat), entire measures can feel stronger or weaker relative to each other. Hypermetric counts (numbers above measures) show which measures are accented (typically 1 and 3 in a quadruple hypermeter) and which are less accented (2 and 4). Conducting along to hypermetric numbers reveals these accent patterns.
 
-**Hypermeter** (from Greek _hyper_ meaning "over" or "above") refers to metrical organization at a level higher than the measure. Just as beats group into measures with recurring accent patterns (strong-weak-weak-weak), measures group into hypermetrical units with their own accent patterns.
+# Prerequisites
 
-**Characteristics**:
-- **Hypermetrical measures**: groups of measures forming metric units (typically 2, 3, or 4 measures)
-- **Hypermetrical downbeat**: the measure that feels most accented in the group
-- **Weak hypermetrical positions**: measures that feel less accented
+- **Beat**: the pulse within measures
+- **Meter**: the grouping of beats
+- **Measure**: the units being grouped hypermetrically
 
-**Labeling**:
-- Annotate scores with hypermetrical counts: 1, 2, 3, 4 (or 1, 2, or 1, 2, 3)
-- "Measure 1" = hypermetrical downbeat (strongest measure)
-- Subsequent measures = weaker metrical positions
+# Key Properties
 
-**Relationship to meter**:
-- Operates at a slower timescale than beat-level meter
-- Most audible at faster tempos where individual beats pass quickly
-- Creates phrase-level accent patterns
+- Groups of measures form accent patterns
+- Typically duple or quadruple hypermetric groupings
+- Annotated with numbers above measures (1, 2, 3, 4)
+- Hypermetric "1" = strongest measure; mirrors downbeat within a measure
+- Most apparent at faster tempos where individual measures feel like "beats"
 
-## Musical Context
+# Construction / Recognition
 
-Hypermeter organizes musical phrases and formal structure:
-- Provides large-scale rhythmic organization
-- Groups measures into coherent phrase units
-- Creates predictable patterns listeners internalize
-- Affects phrasing, dynamics, and expressive shaping
-- Common in periodic phrase structures (Classical style)
+Annotate scores with hypermetric numbers. Conduct along in a duple or quadruple pattern to feel which measures are more accented.
 
-Conductors sometimes conduct hypermetrical patterns (one gesture per measure) at fast tempos.
+# Context & Application
 
-## Examples
+Hypermeter is important for understanding phrase structure and formal organization. In Beethoven's scherzo movements (fast 3/4), individual measures feel like beats in a larger meter. Most Classical-era phrases are 4 or 8 measures long, creating regular hypermetric patterns.
 
-### Basic
+# Examples
 
-**Four-measure hypermeter** (hypermetrical quadruple):
-- Measures 1-4 function like beats 1-2-3-4 of a single large "measure"
-- Measure 1: hypermetrical downbeat (strongest)
-- Measure 2: weaker
-- Measure 3: moderately strong
-- Measure 4: weakest (leads back to measure 1)
+- Beethoven's Symphony No. 9, "Scherzo": measures group into fours, with measures 1 and 3 more accented
+- A typical 8-bar phrase: measures 1-4 and 5-8 form two hypermetric groups
 
-Analogy:
-- Beat-level meter: strong-weak-weak-weak (within one measure)
-- Hypermeter: strong-weak-medium-weak (across four measures)
+# Relationships
 
-**Hypermetrical conducting**:
-- At fast tempo, conduct one gesture per measure
-- Follow pattern: down-in-out-up (quadruple pattern across four measures)
+- **Extends**: meter
+- **Leads to**: phrase
+- **See also**: beat, measure
 
-### From Repertoire
+# Common Errors
 
-Beethoven's Symphony No. 9, "Scherzo": clear four-measure hypermetrical groups at fast tempo. Mozart's piano sonatas: regular two- and four-measure hypermetrical patterns. Strauss waltzes: three-measure hypermetrical units (mirroring triple meter). Pop songs: four-measure or eight-measure hypermetrical phrases.
+- Ignoring hypermetric structure in performance (can lead to flat, unshapen phrasing)
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: measure, beat, meter, phrase
-- **Leads to**: srdc-phrase-structure
-- **See also**: phrase, period
+- Hypermeter is not the same as meter -- it operates one level above, grouping measures rather than beats
 
-## Common Confusions
-
-- Hypermeter is not a different meter—it's metric organization at the measure level (not beat level)
-- Hypermetrical patterns are perceptual/analytical (not always notated in the score)
-- Not all music has clear hypermeter (especially slower tempos, through-composed works)
-- Hypermeter requires regular phrase lengths (irregular phrases disrupt hypermetrical patterns)
-- Hypermetrical "downbeat" = strongest measure (not always measure 1 of a piece)
-- Hypermeter vs. phrase: related but distinct (phrases have melodic/harmonic closure; hypermeter = accent pattern)
-- Hypermetrical irregularities (5-measure or 7-measure groups) create expressive effects
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 11: "Other Rhythmic Essentials"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: Beethoven Scherzo example, annotation method, accent hierarchy.

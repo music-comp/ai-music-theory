@@ -1,297 +1,137 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tonic Prolongation
-category: theory
-source: Open Music Theory
-chapter: "Prolongation and Phrase Structure"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: tonic-prolongation
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: prolongation
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Prolonging Tonic at Phrase Beginnings with V6 and Inverted V7s"
+chapter_number: 6
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "tonic expansion"
+  - "prolongation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - harmonic-function
+  - dominant-seventh-chord
+extends:
+  - harmonic-function
+related:
+  - phrase-model
+  - leading-tone-chord
+  - plagal-motion
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is tonic prolongation?"
+  - "How do inverted V7 chords prolong tonic?"
+  - "What are the four bass-line patterns for tonic prolongation?"
 ---
 
-# Tonic Prolongation
-
-## Quick Definition
-
-The extension or elaboration of tonic harmony through intervening chords that embellish rather than functionally progress away from the tonic—creating the sense that the tonic "continues" despite surface harmonic motion, typically achieved through inverted dominant chords (V6, V7 in inversion), leading-tone chords in first inversion (vii°6), neighboring and passing chords, pedal tones, or arpeggiated bass motion, common at phrase beginnings where the tonic is established and extended before moving to predominant function, notated analytically by showing that intervening chords prolong rather than replace tonic function, and fundamental to understanding hierarchical harmonic structure where surface chords serve to elaborate deeper structural harmonies.
-
-## Formal Definition
-
-**Tonic prolongation** is the extension of tonic harmony through embellishing chords that do not create functional harmonic progression.
-
-**Key characteristics**:
-- **Tonic remains structural**: I continues as governing harmony
-- **Intervening chords**: Embellish without progressing
-- **Not functional progression**: Not T→PD→D
-- **Common at phrase beginnings**: Establishes tonic before progressing
-- **Voice leading**: Linear, passing, or neighbor motion
-- **Harmonic hierarchy**: Surface vs. structural levels
-
-**Typical location**: Opening of phrases (tonic establishment zone)
+# Quick Definition
 
-## Common Prolongation Techniques
-
-**1. Inverted V or V7**:
-```
-I - V6 - I  or  I - V7(inv) - I
-
-V in inversion prolongs I
-Not functional V→I (because inverted)
-Linear bass motion
-```
-
-**2. vii°6** (leading-tone chord, first inversion):
-```
-I - vii°6 - I6
-
-vii°6 passes between I and I6
-Stepwise bass: ^1-^2-^3
-Most common prolongation
-```
-
-**3. Arpeggiation**:
-```
-I - I6 - I  or  I - V6/4 - I6
-
-Bass arpeggiates tonic harmony
-No functional change
-Surface motion only
-```
+Tonic prolongation extends the influence of tonic harmony at the beginning of a phrase by alternating I with inverted dominant chords (V6, V6/5, V4/3, V4/2), creating a three-chord pattern where the first and last chords are tonic.
 
-**4. Neighbor motion**:
-```
-I - IV6 - I  or  I - ii6 - I
+# Core Definition
 
-Neighboring chords return to I
-Upper voices neighbor around tonic tones
-```
+**Prolongation** means that a harmony's influence lasts longer than a single chord (OMT, Ch. IV.6). Phrase beginnings in Western classical music typically prolong tonic harmony to establish the home key. The most common method is alternating tonic with V6 or inverted V7 chords. The tonic's influence is felt more strongly because (1) it is on stronger beats, and (2) it appears in root position while V7 is inverted.
 
-**5. Pedal tone**:
-```
-I (pedal) with changing harmonies above
+All tonic prolongations share these traits:
+- Three chords long
+- First and last chords are I or I6
+- Middle chord is V6 or an inverted V7
+- V6/inverted V7 resolves using standard tendency-tone principles
 
-Bass sustains ^1
-Upper voices move
-Tonic remains structural
-```
-
-## I - vii°6 - I6 Pattern
+# Prerequisites
 
-**Most common tonic prolongation**:
-```
-I:      C-E-G    vii°6:  D-F-B    I6:  E-G-C
-Bass:   C    →   D   →   E
+- **Harmonic function** — Prolongation extends tonic function across multiple chords
+- **Dominant seventh chord** — Inverted V7s are the primary prolongation devices
 
-^1-^2-^3 stepwise bass ascent
-vii°6 passes between I and I6
-Prolongs tonic through linear motion
-Opens many Classical phrases
-```
-
-**Voice leading**:
-```
-        I       vii°6    I6
-S:      G   →   B    →   G  (or E→F→E neighbor)
-A:      E   →   F    →   E  (neighbor motion)
-T:      C   →   D    →   C  (or G sustained)
-B:      C   →   D    →   E  (stepwise ascent)
+# Key Properties
 
-Linear bass motion
-Upper voices neighbor or sustain
-Prolongs tonic harmony
-```
+1. Three chords: I (or I6) — V6/inverted V7 — I (or I6)
+2. Four main bass-line patterns (OMT Ch. IV.6, Example 10):
+   - do-ti-do (^1-^7-^1): I-V6/5-I or I-V6-I
+   - do-re-mi (^1-^2-^3): I-V4/3-I6
+   - do-fa-mi (^1-^4-^3): I-V4/2-I6
+   - do-re-do (^1-^2-^1): I-V4/3-I (less common)
+3. Chaining prolongations can extend tonic influence extensively
+4. V4/3 offers an exception: fa (^4) can move up to sol (^4-^5) when bass creates parallel tenths
 
-## Functional Progression vs. Prolongation
+# Construction / Recognition
 
-**Functional progression**:
-```
-I - IV - V - I
-T   PD  D   T
+## To Write a Tonic Prolongation:
+1. Choose a bass-line pattern from the four options
+2. Write the entire bass
+3. Write soprano following tendency-tone principles
+4. Fill in inner voices using typical writing procedure
 
-Moves through functions
-Harmonic motion TO cadence
-Structural progression
-```
+## To Recognize:
+1. Look for I or I6 at the beginning of a phrase
+2. Identify an inverted V or V7 between tonic chords
+3. Confirm the bass-line pattern matches one of the four standard patterns
 
-**Tonic prolongation**:
-```
-I - vii°6 - I6 - IV - V - I
-[  Tonic zone  ]  PD  D   T
+# Context & Application
 
-Opening prolongs I
-Then functional progression begins
-Two harmonic levels
-```
-
-**Key distinction**: Prolongation extends, progression advances
+- **Typical contexts**: Phrase beginnings; establishing tonic at the start of sections
+- **Common applications**: Standard opening gesture in Classical music
+- **Historical/stylistic notes**: Source illustrates with Clara Schumann, Piano Trio, III, mm. 1-2.
 
-## Inverted Dominants for Prolongation
+# Examples
 
-**V6 prolongs tonic**:
-```
-I - V6 - I
+**Example 1** (OMT Ch. IV.6, Example 2): Tonic prolongation in Clara Schumann, Piano Trio, III, mm. 1-2, using inverted V7s.
 
-V6 (first inversion) embellishes I
-Not functional V→I (root position needed)
-Linear passing motion
-```
+**Example 2** (OMT Ch. IV.6, Example 9): Extensive tonic prolongation chaining multiple three-chord patterns.
 
-**V4/3 or V4/2**:
-```
-I - V4/3 - I6  or  I - V4/2 - I6
+**Example 3** (OMT Ch. IV.6, Example 10): Summary table of four bass-line patterns.
 
-Inverted V7 prolongs tonic
-Seventh resolves stepwise
-Linear voice leading
-```
+# Relationships
 
-**Root position V = functional** (ends prolongation):
-```
-I - vii°6 - I6 - V - I
-[Prolongation] Function
+## Builds Upon
+- **Harmonic function** — Prolongation extends tonic function
 
-Root position V is dominant function
-Ends tonic zone, begins cadential progression
-```
+## Enables
+- **Leading-tone chord** — vii-o7 and its inversions can substitute for V7 inversions in prolongations
 
-## Harmonic Hierarchy
+## Related
+- **Phrase model** — Prolongation fills the Tb area
+- **Plagal motion** — (IV)-I is an alternative prolongation method
 
-**Two levels**:
+# Common Errors
 
-**Surface level**:
-```
-I - vii°6 - I6 - IV - ii6 - V - I
+- **Error**: Using root-position V or V7 for prolongation
+  **Correction**: Tonic prolongation uses INVERTED V or V7; root position implies cadential function
 
-Seven chords
-Detailed voice leading
-```
+- **Error**: Forgetting to resolve the chordal seventh (fa) downward
+  **Correction**: Fa (^4) resolves down to mi (^3), except in the parallel-tenths exception with V4/3
 
-**Structural level**:
-```
-I -------- IV - V - I
-T          PD  D   T
+# Common Confusions
 
-Four chords
-Functional progression
-Tonic prolonged at opening
-```
+- **Confusion**: Thinking I-V-I at a phrase beginning is a tonic prolongation with root-position V
+  **Clarification**: Standard tonic prolongation uses inverted dominant chords; root-position V implies cadential function
 
-**Prolongation occurs at surface**: Embellishes structural harmony
+# Source Reference
 
-## Musical Context
+Open Music Theory, Part IV, Chapter 6: "Prolonging Tonic at Phrase Beginnings with V6 and Inverted V7s." See Examples 1-10 (especially Example 10, bass-line summary).
 
-Tonic prolongation serves specific purposes:
-- **Phrase openings**: Establishes tonic before progressing
-- **Tonic stability**: Extends tonic zone
-- **Voice leading interest**: Linear motion while harmonically static
-- **Structural clarity**: Separates establishment from progression
-- **Classical phrase model**: Nearly universal at phrase beginnings
-- **Hierarchical thinking**: Surface vs. deep structure
-- **Not functional progression**: Embellishment, not motion
+# Verification Notes
 
-Essential for understanding phrase structure and harmonic hierarchy.
-
-## Examples
-
-### Basic
-
-**I-vii°6-I6 prolongation**:
-```
-Opening (C major):
-I      vii°6    I6     IV     V     I
-C-E-G  D-F-B    E-G-C  F-A-C  G-B-D  C-E-G
-
-[Tonic prolongation] [Functional progression]
-
-vii°6 prolongs I
-Then IV-V-I progression
-Common phrase opening
-```
-
-**Voice leading detail**:
-```
-        I       vii°6    I6
-S:      G   →   B    →   G
-A:      E   →   F    →   E   (neighbor)
-T:      C   →   D    →   C
-B:      C   →   D    →   E   (stepwise)
-
-Smooth linear motion
-Prolongs tonic
-```
-
-**V6 prolongation**:
-```
-I - V6 - I
-
-C-E-G → B-D-G → C-E-G
-
-V6 embellishes, doesn't progress
-First inversion key
-```
-
-**Arpeggiation**:
-```
-I - I6 - I
-
-C-E-G → E-G-C → C-E-G
-
-Bass arpeggiates: C-E-C
-No functional change
-```
-
-**With predominant expansion**:
-```
-I - vii°6 - I6 - IV - ii6 - V - I
-
-[  Tonic   ] [ PD zone ] D   T
-
-Opening zone prolongs I
-Middle zone expands PD
-Then dominant and resolution
-```
-
-### From Repertoire
-
-**Mozart, Piano Sonatas**: I-vii°6-I6 opens countless phrases, establishes tonic before functional progression, Classical norm.
-
-**Haydn, String Quartets**: Tonic prolongation at phrase beginnings, vii°6 and V6 common, demonstrates Classical phrase structure.
-
-**Beethoven, Piano Sonatas**: Extended tonic prolongations, sometimes entire opening sections, then functional progression.
-
-**Bach, Chorales**: Briefer tonic prolongations (Baroque less expansive), but I-vii°6-I6 pattern appears.
-
-**Classical period universal**: Nearly every phrase opens with tonic prolongation zone before moving to predominant.
-
-## Related Concepts
-
-- **Prerequisite**: tonic-function, voice-leading, passing-motion, neighbor-motion
-- **Leads to**: pre-dominant-function
-
-## Common Confusions
-
-- Tonic prolongation = extending I through embellishing chords
-- Occurs typically at **phrase beginnings** (tonic establishment)
-- Most common: **I-vii°6-I6** pattern (stepwise bass ^1-^2-^3)
-- Inverted dominants prolong (V6, V4/3, V4/2)
-- Root position V = functional (ends prolongation)
-- Different from functional progression (which advances through T-PD-D)
-- Creates harmonic **hierarchy**: surface vs. structural
-- Not "real" chord progression (embellishment, not motion)
-- Voice leading: linear, passing, or neighbor motion
-- vii°6 most common prolongation chord
-- Arpeggiating bass (I-I6-I) also prolongs
-- Pedal tone sustains tonic through upper voice changes
-- Ends when predominant function begins (IV, ii)
-- Classical phrase model: [T prolongation][PD-D-T progression]
-- Two levels: surface (detailed) vs. structural (functional)
-- "Prolongation" ≠ "duration" (means harmonic extension)
-- Essential for understanding phrase structure
-- Nearly universal in Classical music
-- Separates establishment from progression
-- Inverted chords key (V6 prolongs, V doesn't)
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Prolongation and Phrase Beginnings"
+- Definition source: Direct from OMT Ch. IV.6
+- Confidence rationale: HIGH — explicit definition with four bass-line patterns and summary table
+- Re-extraction notes: Re-extracted from v2 card; preserved: four bass-line patterns, Clara Schumann example reference. Old card's content was largely consistent with source.

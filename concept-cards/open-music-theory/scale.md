@@ -1,78 +1,101 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Scale
-category: theory
-source: Open Music Theory
-chapter: "Major Scales, Scale Degrees, and Key Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: scale
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Major Scales, Scale Degrees, and Key Signatures"
+chapter_number: 12
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch
+  - half-step
+  - whole-step
+extends: []
+related:
+  - major-scale
+  - minor-scale
+  - mode
+  - chromatic-scale
+  - key-signature
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a scale?"
+  - "How are scales constructed?"
 ---
 
-# Scale
+# Quick Definition
 
-## Quick Definition
+An ordered collection of pitches arranged in a specific pattern of half steps and whole steps, ascending and/or descending.
 
-An ordered collection of pitches arranged in ascending or descending order, typically spanning an octave, built from a specific pattern of half steps and whole steps.
+# Core Definition
 
-## Formal Definition
+A **scale** is an ordered collection of half and whole steps. Scales are named for their first note (which is also their last note, one octave apart), including any accidental that applies to that note. The specific pattern of half and whole steps determines the type of scale (major, minor, chromatic, modal, etc.). Scales provide the pitch material from which melodies and harmonies are constructed.
 
-A **scale** is an ordered collection of pitches organized by a specific pattern of intervals (half steps and whole steps). Scales typically:
-- Begin and end on the same pitch class, an octave apart
-- Follow a fixed pattern of intervals
-- Serve as the pitch material for melodies and harmonies
+# Prerequisites
 
-In pitch-class set theory, a scale can be represented as an ordered pitch-class set. For example, the C major scale is the ordered set {0, 2, 4, 5, 7, 9, 11, 0} in ascending order.
+- **Pitch**: the notes arranged in a scale
+- **Half step / whole step**: the intervals that define scale patterns
 
-The pattern of intervals defines the scale type:
-- **Major scale**: W-W-H-W-W-W-H
-- **Natural minor scale**: W-H-W-W-H-W-W
-- **Chromatic scale**: All half steps
-- **Whole-tone scale**: All whole steps
+# Key Properties
 
-## Musical Context
+- Ordered collection of half and whole steps
+- Named for their first (and last) note
+- Start and end on the same letter name, one octave apart
+- The specific H/W pattern determines the scale type
+- Provide pitch material for melody and harmony
 
-Scales provide the fundamental pitch vocabulary for tonal music. They:
-- Define the key of a piece
-- Provide melodic material
-- Establish harmonic relationships
-- Create a sense of tonal center (the first note, or tonic)
+# Construction / Recognition
 
-Musicians practice scales to develop technique, learn key signatures, and internalize the sound of different tonalities. Understanding scales is essential for composition, improvisation, analysis, and performance.
+Scales are constructed by applying a specific pattern of half and whole steps starting from a given note. They are recognized aurally by their characteristic sound and visually by their step pattern.
 
-## Examples
+# Context & Application
 
-### Basic
+Scales are foundational to Western music theory. They underlie key signatures, chord construction, and melodic composition. Instrumentalists practice scales to develop fluency across all keys.
 
-C major scale (ascending):
-C-D-E-F-G-A-B-C
-Pattern: W-W-H-W-W-W-H
+# Examples
 
-A natural minor scale (ascending):
-A-B-C-D-E-F-G-A
-Pattern: W-H-W-W-H-W-W
+- Major scale: W-W-H-W-W-W-H
+- Natural minor scale: W-H-W-W-H-W-W
+- Chromatic scale: 12 consecutive half steps
 
-Chromatic scale from C:
-C-C♯-D-D♯-E-F-F♯-G-G♯-A-A♯-B-C
-Pattern: All half steps (H-H-H-H-H-H-H-H-H-H-H-H)
+# Relationships
 
-### From Repertoire
+- **Leads to**: major-scale, minor-scale, mode, chromatic-scale, key-signature, scale-degree
+- **See also**: pitch, half-step, whole-step
 
-Most Classical-period melodies use primarily notes from a single major or minor scale. "Do-Re-Mi" from The Sound of Music explicitly teaches the major scale. Jazz improvisers choose scales that fit the underlying harmony, switching scales as chords change.
+# Common Errors
 
-## Related Concepts
+- Forgetting to include the accidental in the scale name (Bb major, not B major if it has flats)
 
-- **Prerequisite**: pitch, half-step, whole-step, octave-equivalence
-- **Leads to**: major-scale, minor-scale, mode, chromatic-scale, scale-degree
-- **See also**: pitch-class-set, tonality, key-signature
+# Common Confusions
 
-## Common Confusions
+- A scale is an ordered collection of notes; a key is the broader tonal context that a scale defines
+- Scales are not the same as modes, though they are related
 
-- Scale vs. key: A scale is a collection of pitches; a key is a tonal system built on that scale
-- Scale vs. mode: Modes are types of scales (Dorian, Phrygian, etc.); "scale" is the general category
-- Scales are typically practiced ascending and descending, but in actual music, pitches can occur in any order
-- Different scale types have different interval patterns—major isn't the only scale
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 12: "Major Scales, Scale Degrees, and Key Signatures"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: definition as ordered collection, naming convention, step pattern concept.

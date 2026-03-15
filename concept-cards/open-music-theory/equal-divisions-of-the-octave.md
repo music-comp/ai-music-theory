@@ -1,189 +1,89 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Equal Divisions of the Octave
-category: theory
-source: Open Music Theory
-chapter: "Equal Divisions of the Octave"
-pdf_page: null
-chapter_number: 5
-unit: null
+slug: equal-divisions-of-the-octave
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: chromatic-harmony
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Equal Divisions of the Octave"
+chapter_number: 9
+pdf_page: null
+section: "V.9"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - chromatic-scale
+  - interval-identification
+extends: []
+related:
+  - chromatic-sequence
+  - augmented-triad
+  - diminished-seventh-chord
+  - whole-tone-scale
+contrasts_with:
+  - diatonic-sequence
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How many ways can the octave be divided equally?"
+  - "How do equal divisions create tonal ambiguity?"
 ---
 
-# Equal Divisions of the Octave
+# Quick Definition
+There are exactly five ways to divide a single octave equally: by minor second (chromatic scale), major second (whole-tone scale), minor third (diminished seventh chord), major third (augmented triad), and tritone (two notes). Root progressions following these divisions quickly leave diatonic territory and create tonal ambiguity by subverting the asymmetry that defines tonal function.
 
-## Quick Definition
+# Core Definition
+In the diatonic system, scale asymmetry pulls chords toward a tonic. Equal division of the octave eliminates this pull. Root motion by minor 2nds produces the chromatic scale (12 steps). By major 2nds: the whole-tone scale (6 steps, associated with hexatonic scales). By minor 3rds: the diminished seventh chord (4 steps, associated with octatonic scale). By major 3rds: the augmented triad (3 steps, associated with hexatonic scale). By tritone: 2 steps (somewhat trivial). These patterns foreshadow 20th-century pitch organization. The earliest examples appear as short passages within otherwise tonal works.
 
-A compositional technique where chord roots or pitch collections divide the twelve semitones of the octave into equal parts, creating symmetrical structures that inherently avoid tonal hierarchy--since all divisions are equivalent, no single pitch can function as a gravitational center, producing the harmonic ambiguity that 19th-century composers increasingly sought to thwart listener expectations, foreshadowing 20th-century departures from common-practice tonality.
+# Prerequisites
+- Chromatic scale and interval identification
+- Diatonic vs. chromatic harmony
 
-## Formal Definition
+# Key Properties
+1. Exactly 5 equal divisions possible within one octave
+2. Minor 2nd: chromatic scale (12 divisions)
+3. Major 2nd: whole-tone scale (6 divisions)
+4. Minor 3rd: diminished seventh chord (4 divisions)
+5. Major 3rd: augmented triad (3 divisions)
+6. Tritone: 2 divisions
+7. Equal divisions subvert tonal asymmetry, creating ambiguity
 
-**Equal division of the octave** occurs when the twelve semitones are partitioned into equal intervals. Given 12 semitones per octave, only factors of 12 produce true equal divisions:
+# Context & Application
+19th-century composers used equal-division root progressions to create ambiguity and avoid confirming a tonal center. Chord progressions with roots by major thirds (C-E-G#/Ab-C) quickly leave the diatonic scale and lack dominant-to-tonic motion. Root progressions by minor thirds outline diminished seventh chords and relate to the octatonic scale. These techniques connect to 20th-century pitch organization.
 
-| Division | Interval | Semitones | Result |
-|----------|----------|-----------|--------|
-| 12 | Minor 2nd (m2) | 1 | Chromatic scale |
-| 6 | Major 2nd (M2) | 2 | Whole-tone scale |
-| 4 | Minor 3rd (m3) | 3 | Diminished-seventh chord |
-| 3 | Major 3rd (M3) | 4 | Augmented triad |
-| 2 | Tritone (A4/d5) | 6 | Tritone dyad |
+# Examples
+**Example 1** (Major thirds): C-E-Ab-C root progression outlines augmented triad, quickly leaves C major.
+**Example 2** (Minor thirds): Root motion outlining diminished seventh, often with intervening tonicizations.
 
-**Mathematical basis**: Division by interval i produces 12/i equal parts, cycling through all pitch classes before returning to the starting point.
+# Relationships
+## Builds Upon
+- **chromatic-scale** — Minor-second division produces it
+## Related
+- **chromatic-sequence** — Sequences often follow equal divisions
+- **augmented-triad** — Major-third division
+- **diminished-seventh-chord** — Minor-third division
+- **whole-tone-scale** — Major-second division
 
-## The Five Equal Divisions
+# Common Confusions
+- **Confusion**: Equal divisions only matter for post-tonal music.
+  **Clarification**: They appear as early as the late 18th century within otherwise tonal works, as short passages creating local ambiguity.
 
-### Division by Minor Second (12 parts)
-```
-C - C# - D - D# - E - F - F# - G - G# - A - A# - B - C
-Interval pattern: 1-1-1-1-1-1-1-1-1-1-1-1
+# Source Reference
+Open Music Theory, Part V: Chromaticism, Chapter 9: "Equal Divisions of the Octave."
 
-Result: Chromatic scale (trivial division)
-All 12 pitch classes included
-```
-
-### Division by Major Second (6 parts)
-```
-C - D - E - F# - G# - A# - C
-Interval pattern: 2-2-2-2-2-2
-
-Result: Whole-tone scale
-Two unique transpositions: WT0 and WT1
-```
-
-### Division by Minor Third (4 parts)
-```
-C - Eb - Gb - Bbb(A) - C
-Interval pattern: 3-3-3-3
-
-Result: Diminished-seventh chord
-Three unique transpositions
-Basis for octatonic scale
-```
-
-### Division by Major Third (3 parts)
-```
-C - E - G#/Ab - C
-Interval pattern: 4-4-4
-
-Result: Augmented triad
-Four unique transpositions
-Basis for hexatonic scale
-```
-
-### Division by Tritone (2 parts)
-```
-C - F#/Gb - C
-Interval pattern: 6-6
-
-Result: Tritone dyad
-Six unique transpositions
-```
-
-## Harmonic Implications
-
-**Tonal ambiguity arises because**:
-1. **Symmetry eliminates hierarchy**: No pitch has privileged status
-2. **No diatonic scale contains equal divisions**: Root progressions quickly leave any single key
-3. **Functional harmony subverted**: No dominant-tonic relationship possible within symmetric cycle
-
-**Example - Root motion by major thirds**:
-```
-C major - E major - Ab major - C major
-
-Analysis:
-- C and E could fit in C major
-- Ab cannot fit in C major
-- Ab to C is NOT a dominant-tonic progression
-- Creates floating, unanchored quality
-```
-
-## Historical Development
-
-**Late 18th/early 19th century**: Brief passages within tonal works
-- Composers sought momentary ambiguity
-- Equal divisions used as coloristic effects
-- Always resolved back to tonal framework
-
-**Mid-to-late 19th century**: Extended usage
-- Wagner, Liszt: prolonged symmetrical passages
-- Diminished-seventh reinterpretation
-- Augmented triads gain prominence
-
-**20th century**: Foundational systems
-- Debussy: Whole-tone as primary material
-- Bartok, Stravinsky: Octatonic organization
-- Messiaen: Modes of limited transposition
-- Post-tonal composers: Interval cycles as structural basis
-
-## Musical Context
-
-Equal divisions of the octave serve multiple compositional purposes:
-
-1. **Tonal ambiguity**: Subverting key expectations
-2. **Transitional passages**: Connecting distant keys
-3. **Color/atmosphere**: Creating dreamlike, suspended quality
-4. **Modernist organization**: Replacing tonal hierarchy with symmetry
-5. **Modulatory pivot**: Diminished seventh can resolve to four different keys
-
-The technique represents a fundamental shift from asymmetrical diatonic organization (which creates tonal pull) to symmetrical chromatic organization (which neutralizes it).
-
-## Examples
-
-### Basic
-
-**Diatonic vs. Symmetric comparison**:
-```
-Diatonic fifth cycle (unequal):
-C - G - D - A - E - B - F# - C# - G# - D# - A# - F - C
-Pattern: 5-5-5-5-5-5-5-5-5-5-5-5 (= 60 semitones = 5 octaves)
-Closes after 12 steps spanning 5 octaves
-
-Symmetric minor-third cycle (equal):
-C - Eb - Gb - A - C
-Pattern: 3-3-3-3 (= 12 semitones = 1 octave)
-Closes after 4 steps within single octave
-```
-
-**Root progression by major thirds**:
-```
-Chord progression: C - E - Ab - C
-Root motion: +4 semitones each step
-Triads used: C major, E major, Ab major
-Total: 12 semitones (returns to C)
-
-None of these chords share a single diatonic key
-Creates "uncanny" chromatic effect
-```
-
-### From Repertoire
-
-**Schubert, "Der Atlas"**: Alternation between tonic and III+ in g minor creates ambiguity between i and V through augmented triad's symmetric properties.
-
-**Liszt, late piano works**: Augmented triads as structural sonorities challenging tonal primacy.
-
-**Wagner, _Tristan und Isolde_**: Diminished-seventh reinterpretation enables distant modulations through enharmonic equivalence.
-
-**Debussy, "Voiles"**: Whole-tone collection as primary pitch material creates suspended, dreamlike quality.
-
-**Stravinsky, _Petrushka_**: Juxtaposition of C major and F# major triads (tritone apart) creates the famous "Petrushka chord."
-
-## Related Concepts
-
-- **Prerequisite**: chromatic-scale, interval, enharmonic-equivalence
-- **Leads to**: whole-tone-scale, octatonic-scale, hexatonic-scale, modes-of-limited-transposition
-- **See also**: interval-cycle, transpositional-equivalence, neo-riemannian-theory
-
-## Common Confusions
-
-- Equal division refers to the INTERVAL of division, not the number of resulting pitches
-- Division by perfect fifth does NOT equally divide a single octave (requires 5 octaves to close)
-- Equal divisions create LIMITED transposition: only 12/n unique forms exist
-- Diminished seventh divides by minor third (4 parts), octatonic scale uses minor thirds but has 8 notes
-- Whole-tone scale has 6 notes because division is by major second (12/2 = 6)
-- Not all symmetrical structures equally divide the octave (e.g., major scale is asymmetrical)
-- Tritone division is "trivial" since only 2 pitches are involved
-- Root motion by equal divisions leaves tonal function behind
-
-## Source Reference
-
-Open Music Theory, Part V: "Chromaticism"
-Open Music Theory, Part V: "Equal Divisions of the Octave"
+# Verification Notes
+- Re-extracted from source chapter 05-09; merged with existing v2 card
+- Confidence rationale: High — clear enumeration in source

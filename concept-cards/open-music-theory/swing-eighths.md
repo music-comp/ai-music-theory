@@ -1,65 +1,89 @@
 ---
-concept: Swing Eighths
-category: theory
-source: Open Music Theory
-chapter: "Swing Rhythms"
-pdf_page: null
-chapter_number: 6
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Swing Rhythms
+slug: swing-eighths
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: jazz-rhythm
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Swing Rhythms"
+chapter_number: 1
+pdf_page: null
+section: "VI.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "swing eighths"
+  - "swung eighths"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - simple-meter
+  - eighth-notes
+extends: []
+related:
+  - backbeat
+  - syncopation
+contrasts_with:
+  - straight-eighths
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do swing eighths in jazz relate to straight eighths?"
+  - "How do you notate swing rhythms?"
 ---
 
-# Swing Eighths
+# Quick Definition
+Swing eighths are notated as regular straight eighths but performed unevenly in a quasi-triplet rhythm where the first note is roughly twice as long as the second (2:1 ratio). This notation convention avoids clutter; performers are expected to swing automatically. The exact ratio varies by tempo and performer.
 
-## Quick Definition
+# Core Definition
+Swing eighths shift the proportion of paired eighth notes from 1:1 (straight) to roughly 2:1 (swung), approximating a triplet feel. Faster tempos tend toward more even (straighter) swing; slower tempos tend toward more dramatic swing. Always notated as straight eighths in jazz scores to avoid cluttered triplet notation. The backbeat (accent on beats 2 and 4) and swing eighths together form the standard swing drum beat: backbeat on closed hi-hat, swing eighths on ride cymbal. Syncopation in jazz involves subverting the beat hierarchy through accents, rests, and ties — the backbeat itself is a form of syncopation.
 
-Eighth notes notated evenly but performed unevenly in a quasi-triplet rhythm, where the first eighth is roughly twice as long as the second.
+# Prerequisites
+- Simple meter and time signatures
+- Eighth-note values and notation
 
-## Formal Definition
+# Key Properties
+1. Notated as straight eighths, performed as roughly 2:1 (quasi-triplet)
+2. First eighth approximately twice as long as second
+3. Exact ratio varies by tempo and performer
+4. Faster tempos = more even/straight; slower tempos = more dramatic swing
+5. Backbeat: accent on beats 2 and 4 (opposite of classical accent pattern)
+6. Syncopation: subverting the metric hierarchy through accents, rests, ties
 
-**Swing eighths** are a characteristic jazz rhythm in which two eighth notes notated as equal values are performed with unequal durations, approximately in a 2:1 ratio. The first eighth note receives roughly two-thirds of the beat while the second receives one-third, creating a "long-short" feel similar to a triplet with the first two notes tied.
+# Context & Application
+The Anything Goes overture demonstrates both straight and swing eighths within one piece. Comparing Dizzy Gillespie's "Eternal Triangle" (more even swing at fast tempo) with Count Basie's "Duet" (more uneven swing at slower tempo) illustrates the tempo-swing relationship. Carla Bley's "Donkey" demonstrates syncopation through rests and ties.
 
-Key characteristics:
-- Notated as regular **straight eighths** but understood to be swung
-- The exact ratio varies by tempo and performer style
-- Faster tempos tend toward more even (straighter) rhythms
-- Slower tempos often employ more dramatic swing
-- Written in lead sheets without special notation; performers are expected to know the convention
+# Examples
+**Example 1** (Anything Goes overture): Swing eighths at 0:36 (ensemble), straight eighths at 0:52 (middle section), swing returns at 1:39.
+**Example 2** (Standard swing drum beat): Ride cymbal plays swing eighths; closed hi-hat accents backbeat on 2 and 4.
 
-## Musical Context
+# Relationships
+## Builds Upon
+- **simple-meter** — Swing operates within 4/4 time
+## Related
+- **backbeat** — Partner component of the swing groove
+- **syncopation** — Broader category of metric subversion
+## Contrasts With
+- **straight-eighths** — Equal 1:1 ratio, no swing
 
-Swing eighths are one of the most recognizable features of jazz and define the "swing" feel that gave an entire era its name. The rhythmic lilt they create distinguishes jazz performance from classical interpretation of the same notation. The convention of notating swing eighths as straight eighths keeps scores readable and uncluttered.
+# Common Confusions
+- **Confusion**: Swing is exactly a triplet rhythm.
+  **Clarification**: The triplet approximation is a teaching tool; the actual ratio varies by tempo, performer, and style.
 
-Different jazz subgenres employ varying degrees of swing, from the pronounced swing of big band music to the subtler swing of bebop at fast tempos.
+# Source Reference
+Open Music Theory, Part VI: Jazz, Chapter 1: "Swing Rhythms."
 
-## Examples
-
-### Basic
-
-Notated: Two equal eighth notes on beats 1 and 1+
-Performed: First eighth = approximately 2/3 of beat 1, second eighth = approximately 1/3 of beat 1
-
-The pattern: long-short, long-short, long-short...
-
-### From Repertoire
-
-- "Anything Goes" overture (Cole Porter): Demonstrates both swing and straight eighths in different sections
-- "Eternal Triangle" (Dizzy Gillespie): Fast tempo with more even swing
-- "Duet" (Count Basie): Slower tempo with more pronounced, uneven swing
-
-## Related Concepts
-
-- **Prerequisite**: beat, tempo, meter
-- **Leads to**: backbeat
-- **See also**: syncopation
-
-## Common Confusions
-
-- Swing eighths are NOT triplets, though triplet notation is sometimes used to explain them; the actual ratio varies
-- The amount of swing is not fixed; it depends on tempo, style, and individual interpretation
-- A score does not explicitly indicate "swing"; performers must know from context (genre, tempo marking, style indication)
-- Swing eighths apply to the whole ensemble, not just one part
-
-## Source Reference
-
-Open Music Theory, Part VI, Chapter 1: "Swing Rhythms"
+# Verification Notes
+- Re-extracted from source chapter 06-01; merged with existing v2 card
+- Preserved tempo-swing relationship and repertoire examples
+- Confidence rationale: High — clear source treatment

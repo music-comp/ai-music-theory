@@ -1,92 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Polyphony
-category: theory
-source: Open Music Theory
-chapter: "Texture"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: polyphony
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: texture
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Texture"
+chapter_number: 21
+pdf_page: null
+section: "Polyphony"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "polyphonic texture"
+  - "contrapuntal texture"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - texture
+extends:
+  - texture
+related:
+  - counterpoint
+  - fugue
+  - monophony
+  - homophony
+contrasts_with:
+  - monophony
+  - homophony
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is polyphony?"
+  - "How does polyphony differ from homophony?"
 ---
 
-# Polyphony
+# Quick Definition
 
-## Quick Definition
+A texture in which multiple voices have separate, independent melodic lines and rhythms that blend together to create harmonies.
 
-A musical texture characterized by two or more independent melodic lines heard simultaneously, each with its own rhythm and contour.
+# Core Definition
 
-## Formal Definition
+**Polyphony** is characterized by multiple voices with separate melodic lines and independent rhythms. Each voice has its own melodic identity, yet the voices blend together to create harmonies. This is the most complex texture, requiring careful attention to how the independent lines interact. Polyphony is closely associated with counterpoint (the technique of combining independent melodic lines).
 
-**Polyphony** (from Greek *poly* = "many" + *phōnē* = "voice/sound") is a texture in which multiple voices or parts maintain melodic independence while combining to create harmonic relationships. Each voice has:
-- Its own melodic identity and direction
-- Independent rhythm (not moving in lockstep)
-- Equal or near-equal importance (no single voice is purely accompaniment)
+# Prerequisites
 
-The essence of polyphonic texture is **horizontal** (melodic/linear) thinking, even though vertical (harmonic) relationships emerge when the voices combine. The independence of the voices is paramount—listeners can follow individual lines while appreciating the whole.
+- **Texture**: the general concept
 
-Polyphonic texture is also called **contrapuntal** texture (from *punctus contra punctum* = "note against note"). The terms polyphony and counterpoint are closely related: polyphony describes the texture; counterpoint describes the technique of combining independent voices.
+# Key Properties
 
-Types of polyphonic procedures include:
-- **Imitative**: Voices enter with the same or similar melodic material (fugue, canon, round)
-- **Non-imitative**: Voices have different melodic material (free counterpoint)
+- Multiple independent melodic lines
+- Each voice has its own rhythm and contour
+- Voices create harmonies when heard together
+- Associated with counterpoint and fugue
+- Most complex of the four main textures
 
-## Musical Context
+# Construction / Recognition
 
-Polyphony is central to:
-- **Renaissance music** (Palestrina, Josquin, Victoria): Highly developed vocal polyphony
-- **Baroque music** (Bach, Handel): Instrumental and vocal counterpoint, fugues
-- **Contemporary classical music**: Neo-Baroque works, minimalism (Steve Reich)
-- **Jazz**: Collective improvisation (Dixieland), modern big band writing
+Listen for multiple distinct melodies happening simultaneously, each with its own rhythm and direction. The voices may imitate each other or be entirely independent.
 
-Historical development:
-- Medieval organum (parallel polyphony)
-- Renaissance imitative polyphony (height of vocal polyphony)
-- Baroque fugues and inventions (peak of instrumental counterpoint)
-- Classical/Romantic: Less prevalent, but still used in development sections
-- 20th century: Revival in neoclassicism and academic composition
+# Context & Application
 
-Polyphonic writing demands high compositional skill: each line must be melodically satisfying individually AND create pleasing harmonies when combined.
+Polyphony is the defining texture of Renaissance vocal music, Baroque fugues, and much 20th-century music. It also appears in the final chorus of Broadway numbers and in complex jazz arrangements.
 
-## Examples
+# Examples
 
-### Basic
+- Shostakovich Fugue No. 5 in D Major: independent melodic lines creating harmonies
+- "I'll Cover You - Reprise" from Rent (2:20-2:45): three independent vocal layers
+- Bach inventions and fugues: paradigmatic polyphonic writing
 
-- A three-voice fugue where each voice enters with the same subject at different times
-- A round like "Row, Row, Row Your Boat" (simple canon)
-- Two violins playing different melodies simultaneously that harmonize
-- Jazz combo with trumpet, sax, and trombone each improvising independent lines
+# Relationships
 
-### From Repertoire
+- **Extends**: texture
+- **Leads to**: counterpoint, fugue, species-counterpoint
+- **See also**: monophony, homophony, heterophony
 
-**Imitative polyphony**:
-- Bach: Fugue in D Major, WTC Book I
-- Shostakovich: Fugue No. 5 in D Major
-- "Row, Row, Row Your Boat" (when sung as a round)
+# Common Confusions
 
-**Non-imitative polyphony**:
-- Bach: Inventions and Sinfonias
-- Renaissance motets (Palestrina's masses)
-- "I'll Cover You - Reprise" from *Rent* (final chorus, multiple vocal lines)
+- Polyphony is NOT the same as "many sounds" -- it specifically means multiple INDEPENDENT melodic lines
+- Homophony has multiple voices too, but they serve a harmonic (not melodic) function
 
-**Jazz**:
-- Early New Orleans Dixieland (collective improvisation)
-- Modern big band counterpoint (Thad Jones, Bob Brookmeyer)
-
-## Related Concepts
-
-- **Prerequisite**: texture, rhythm
-- **Leads to**: counterpoint, fugue, canzona, imitation, voice-leading, species-counterpoint
-- **See also**: homophony
-
-## Common Confusions
-
-- Polyphony ≠ many voices: Two independent voices = polyphonic; twenty voices in block chords = homophonic
-- Polyphonic ≠ atonal or dissonant: Renaissance and Baroque polyphony is highly tonal
-- Voices must be melodically independent, not just rhythmically different
-- Counterpoint and polyphony aren't different things—counterpoint is the technique; polyphony is the resulting texture
-- A round is polyphonic (imitative), even though everyone sings the same melody (at staggered times)
-- Good polyphony creates satisfying harmony, but it's conceived linearly, not vertically
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 21: "Texture"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: independent lines definition, counterpoint association, Shostakovich and Rent examples.

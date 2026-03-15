@@ -1,250 +1,92 @@
 ---
-concept: Chromatic Sequence
-category: theory
-source: Open Music Theory
-chapter: "Chromatic Modulation"
-pdf_page: null
-chapter_number: 5
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Chromatic Sequences
+slug: chromatic-sequence
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: chromatic-harmony
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Chromatic Sequences"
+chapter_number: 10
+pdf_page: null
+section: "V.10"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - diatonic-sequence
+  - applied-chord
+  - equal-divisions-of-the-octave
+extends:
+  - diatonic-sequence
+related:
+  - omnibus-progression
+  - parallel-chromatic-sequence
+contrasts_with:
+  - diatonic-sequence
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do chromatic sequences differ from diatonic sequences?"
+  - "What is an elided resolution in a chromatic descending-fifths sequence?"
 ---
 
-# Chromatic Sequence
+# Quick Definition
+Chromatic sequences maintain consistent interval size AND quality throughout transposition (unlike diatonic sequences which preserve size but not quality to stay in key). They derive from equal divisions of the octave, create tonal ambiguity, and often use interlocking applied dominant chords with elided resolutions where the leading tone/chordal seventh exchange roles.
 
-## Quick Definition
+# Core Definition
+Diatonic sequences "cheat" the interval pattern to stay within a single key (e.g., the tritone in a descending-fifths sequence). Chromatic sequences maintain exact transposition of both interval size and quality, quickly moving outside the key. Three main types discussed: chromatic descending-fifths (interlocking V7 chords, roots outline whole-tone scale), chromatic ascending 5-6 (secondary dominants with roots ascending by major second), and chromatic descending 5-6 (Pachelbel variant with minor-third root motion replacing seconds). The elided resolution is key to voice-leading: in interlocking seventh chords, the leading tone resolves DOWN to become the new chordal seventh, and the old seventh resolves DOWN to become the new leading tone.
 
-A harmonic sequence that incorporates chromatic alterations to move through tonal space more rapidly than diatonic sequences allow—maintaining a consistent intervallic pattern while introducing accidentals that enable modulation to distant keys, division of the octave into equal parts, or intensification of harmonic motion through applied chords or chromatic alterations.
+# Prerequisites
+- Diatonic sequence types
+- Applied (secondary) dominant chords
+- Equal divisions of the octave
 
-## Formal Definition
+# Key Properties
+1. Both interval size AND quality maintained in transposition
+2. Quickly moves outside the key (unlike diatonic sequences)
+3. Chord qualities match exactly between model and copies
+4. Derive from equal divisions of the octave
+5. Elided resolution: leading tone becomes new seventh, old seventh becomes new leading tone
+6. Descending-fifths chromatic: roots outline whole-tone scale on strong beats
+7. Can be powerful tools for distant modulation
 
-**Chromatic sequence** is a sequence incorporating chromatic tones:
+# Context & Application
+Chromatic descending-fifths: every chord is V7 of the next; interlocking chain of dominants. Voice leading requires elided resolution — the expected chord is mentally "skipped over" (C7 appears instead of expected C or Cm after G7). The ascending 5-6 chromatic sequence creates major triads on every strong beat, roots a major second apart, and can modulate down by half step. The descending 5-6 (Pachelbel variant) replaces second motion with minor-third root motion, outlining the whole-tone scale and creating harmonic ambiguity.
 
-**Definition**: A harmonic-melodic pattern repeated at regular intervals involving:
-- Consistent intervallic relationships between pattern repetitions
-- Chromatic alterations (sharps, flats, naturals)
-- Movement beyond diatonic pitch collection
-- Potential for rapid modulation
+# Examples
+**Example 1** (Chromatic descending-fifths): G7-C7-F7-Bb7... — chain of interlocking dominant sevenths with elided resolutions.
+**Example 2** (Chromatic ascending 5-6): Major triads on strong beats ascending by M2, modulating down half step.
 
-**Types**:
-1. **Tonicizing sequence**: Uses applied chords (secondary dominants)
-2. **Equal division sequence**: Divides octave equally (m3, M3, tritone)
-3. **Chromatic linear sequence**: Chromatic voice leading with sequential pattern
+# Relationships
+## Builds Upon
+- **diatonic-sequence** — Chromatic sequences are the strict-transposition version
+- **applied-chord** — Interlocking secondary dominants drive the sequences
+## Related
+- **omnibus-progression** — Another chromatic sequential pattern
+- **parallel-chromatic-sequence** — Parallel chord motion variant
+## Contrasts With
+- **diatonic-sequence** — Diatonic preserves interval size but varies quality to stay in key
 
-**Contrast with diatonic sequence**: Diatonic stays within one key's pitch collection
+# Common Confusions
+- **Confusion**: Any sequence with chromatic pitches is a chromatic sequence.
+  **Clarification**: A chromaticized diatonic sequence (e.g., with applied dominants) is NOT a true chromatic sequence if the overall trajectory still follows diatonic scale steps. True chromatic sequences maintain exact interval patterns.
 
-## Sequential Patterns with Applied Chords
+# Source Reference
+Open Music Theory, Part V: Chromaticism, Chapter 10: "Chromatic Sequences."
 
-**Descending fifths with secondary dominants**:
-```
-||: V^7/x - x :||
-
-In C major, tonicizing each chord:
-V^7/IV - IV - V^7/vii° - vii° - V^7/iii - iii ...
-C^7     F    B^7       Bdim   F#^7      Em
-
-Each chord temporarily tonicized
-Creates powerful forward motion
-```
-
-**Circle of fifths with applied chords**:
-```
-Am - D^7 - G - C^7 - F - B^7 - E ...
-
-Alternating: chord - V^7 of next
-Rapid harmonic motion
-Modulatory potential
-```
-
-## Equal Division Sequences
-
-**Minor third cycle** (diminished seventh division):
-```
-C → E-flat → G-flat → A → (C)
-
-Root motion: m3 - m3 - m3 - m3
-Divides octave into four equal parts
-Same as diminished seventh chord tones
-Returns to starting point
-```
-
-**Major third cycle** (augmented triad division):
-```
-C → E → G# → (C)
-
-Root motion: M3 - M3 - M3
-Divides octave into three equal parts
-Same as augmented triad tones
-Returns to starting point
-```
-
-**Tritone cycle**:
-```
-C → F# → (C)
-
-Root motion: tritone - tritone
-Divides octave into two equal parts
-Maximum tonal distance
-```
-
-## Chromatic Linear Sequences
-
-**Chromatic bass descent**:
-```
-C - C/B - Am - Am/G - F - F/E - Dm - ...
-Bass: C - B - A - G - F - E - D
-
-Chromatic (or diatonic) bass line
-Chords follow pattern above bass
-Creates lament bass effect
-```
-
-**Chromatic voice exchange**:
-```
-Outer voices move in contrary chromatic motion
-Inner voices sustain or move by step
-Sequential repetition of pattern
-```
-
-## Modulating Sequences
-
-**Sequence as modulatory device**:
-```
-Start in C major:
-I - V^7/IV - IV - V^7/vii° - ...
-C   C^7      F    B^7
-
-Continue until reaching target key
-End with authentic cadence in new key
-Sequence provides path to distant key
-```
-
-**Sequential modulation to relative minor**:
-```
-C: I - ii - V^7 - I |
-         continuing...
-         | vi - ii - V^7 - I (in A minor)
-
-Sequence lands on vi, reinterpreted as i
-```
-
-## Voice Leading in Chromatic Sequences
-
-**Consistent chromatic alterations**:
-```
-Pattern: Root - ^3 - ^5 - ^7
-Applied to each step
-
-C^7:  C  - E  - G  - B-flat
-F^7:  F  - A  - C  - E-flat
-B-flat^7: B-flat - D - F - A-flat
-
-Same chord quality, chromatic transposition
-```
-
-**Parallel motion considerations**:
-```
-Sequential parallel fifths often permitted
-Musical continuity prioritized
-Pattern consistency creates coherence
-```
-
-## Musical Context
-
-Chromatic sequences serve specific purposes:
-- **Rapid modulation**: Move through key space efficiently
-- **Harmonic intensification**: Applied chords add tension
-- **Equal division**: Access symmetrical tonal structures
-- **Development sections**: Common in sonata form development
-- **Transitional passages**: Bridge between key areas
-- **Baroque sequences**: Foundation of sequential practice
-- **Romantic expansion**: Chromatic intensification of sequences
-- **Circle of fifths**: Most common sequential pattern
-
-Essential technique for modulatory passages and harmonic development.
-
-## Examples
-
-### Basic
-
-**Descending fifths with applied chords** (in C major):
-```
-C^7 - F - B^7 - Em - A^7 - Dm - G^7 - C
-I     IV   V^7/iii - iii - V^7/ii - ii - V^7 - I
-
-Each V^7 tonicizes following chord
-Circle of fifths motion
-Strong harmonic direction
-```
-
-**Minor third sequence** (chromatic mediant cycle):
-```
-C major → E-flat major → G-flat major → A major → C major
-
-||: I - V - I :|| in each key
-m3 root motion throughout
-Returns to starting key (enharmonically)
-Divides octave into four
-```
-
-**Major third sequence** (augmented triad roots):
-```
-C major → E major → G# major → C major
-
-||: I - IV - V :|| in each key
-M3 root motion
-Returns to starting key (enharmonically)
-Divides octave into three
-```
-
-**Chromatic bass line sequence**:
-```
-C    B    A    G    F    E    D    ...
-I    V6   vi   V^6/vi IV   V^6/IV ii
-
-Descending chromatic bass
-Chords alternate root position and inversion
-Continuous chromatic descent
-```
-
-### From Repertoire
-
-**Bach, Well-Tempered Clavier**: Sequential passages with applied chords, circle of fifths sequences in preludes and fugues.
-
-**Vivaldi, Concertos**: Extensive use of descending fifth sequences with applied dominants.
-
-**Beethoven, Piano Sonatas (development sections)**: Chromatic sequences to navigate distant keys in development.
-
-**Chopin, Etudes and Ballades**: Chromatic sequential passages, intensified Romantic sequences.
-
-**Wagner, Opera Preludes**: Extended chromatic sequences, continuous modulation through sequential patterns.
-
-## Related Concepts
-
-- **Prerequisite**: sequence, secondary-dominant, chromatic-modulation, circle-of-fifths
-- **Leads to**: omnibus-progression
-- **See also**: chromatic-third-relation, applied-chord
-
-## Common Confusions
-
-- Chromatic sequence = sequence with chromatic alterations
-- Different from diatonic sequence (stays in one key)
-- Applied chords (secondary dominants) most common chromatic element
-- Equal division sequences divide octave symmetrically
-- Minor third cycle = diminished seventh tones as roots
-- Major third cycle = augmented triad tones as roots
-- Tritone cycle = two-chord symmetric division
-- Sequences can serve as modulation technique
-- Land sequence on target chord, confirm with cadence
-- Voice leading follows sequential pattern consistently
-- Parallel fifths often acceptable in sequential contexts
-- Development sections commonly use chromatic sequences
-- Baroque foundation, Romantic expansion
-- Circle of fifths sequence most fundamental pattern
-- Chromatic alterations create applied/secondary chords
-- Can traverse entire chromatic space systematically
-- Returns to starting point in equal division cycles
-
-## Source Reference
-
-Open Music Theory, Part V: "Chromaticism"
-Open Music Theory, Part V: "Chromatic Modulation"
+# Verification Notes
+- Re-extracted from source chapter 05-10; merged with existing v2 card
+- Preserved elided resolution explanation and three sequence types
+- Confidence rationale: High — detailed source treatment with multiple examples

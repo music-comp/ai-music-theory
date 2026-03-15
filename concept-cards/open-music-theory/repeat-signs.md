@@ -1,85 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Repeat Signs
-category: theory
-source: Open Music Theory
-chapter: "Other Aspects of Notation"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: repeat-signs
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Other Aspects of Notation"
+chapter_number: 7
+pdf_page: null
+section: "Structural Features"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - staff
+  - measure
+extends: []
+related:
+  - fermata
+  - caesura
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What do repeat signs look like?"
+  - "How do first and second endings work?"
+  - "Can there be more than two endings?"
 ---
 
-# Repeat Signs
+# Quick Definition
 
-## Quick Definition
+Symbols indicating that a section of music should be played again, optionally with first and second (or more) endings.
 
-Notation symbols indicating that a section of music should be performed multiple times, including repeat barlines (:|: or :||:) and numbered endings (1st, 2nd, etc.) that specify different conclusions for each repetition.
+# Core Definition
 
-## Formal Definition
+**Repeat signs** are structural features consisting of a double bar line with two dots, indicating that the enclosed section of music should be repeated. If the repeated section ends differently each time, **first and second endings** are used (numbered brackets above the staff). More than two endings are possible, especially in Broadway musicals and other styles. The first ending is performed the first time through; on the repeat, the first ending is skipped and the second ending is performed instead.
 
-**Repeat signs** are structural markings that indicate musical material should be performed more than once. There are several types:
+# Prerequisites
 
-**1. Repeat barlines**:
-- **:||** (double dots before double barline): repeat back to the beginning or to the previous opening repeat sign
-- **||:** (double dots after double barline): marks where to begin repeating (optional if repeating from the very beginning)
-- **:|:** or **:||:** (dots on both sides): end one repeat, begin another
+- **Staff**: where repeat signs appear
+- **Measure**: the units being repeated
 
-**2. First and second endings** (also called _prima volta_ and _seconda volta_):
-- Numbered brackets (1., 2., sometimes 3., 4., etc.) above the staff
-- **First ending**: play the first time through
-- **Second ending**: skip first ending on repeat, play second ending instead
-- Each ending concludes the repeated section differently
+# Key Properties
 
-**3. Additional endings**:
-- Third, fourth (or more) endings possible in some styles (Broadway, jazz)
-- Follow same principle: skip previous endings, play the current ending on that repetition
+- Opening repeat sign: double bar with dots to the right
+- Closing repeat sign: double bar with dots to the left
+- First/second endings: numbered brackets indicating alternate endings
+- Third and fourth endings are possible in some styles
+- If no opening repeat sign appears, repeat from the beginning
 
-## Musical Context
+# Construction / Recognition
 
-Repeat signs serve practical and musical purposes:
-- **Economy of notation**: avoid writing out identical passages twice
-- **Structural clarity**: highlight formal repetition (verse-chorus, A-B-A, etc.)
-- **Performance efficiency**: easier to read than fully written-out repetitions
-- **Formal function**: repetition reinforces musical ideas and creates familiarity
+Repeat signs appear as thick and thin double bar lines with two dots on the staff side. First and second ending brackets appear above the staff with the appropriate number.
 
-Repeats are fundamental to most musical forms: binary form (||: A :||: B :||), song forms (verse-chorus), da capo arias, etc.
+# Context & Application
 
-## Examples
+Repeat signs save space and paper by avoiding rewriting identical passages. They are ubiquitous in popular music, jazz lead sheets, hymns, marches, and classical minuets/trios. Broadway musicals commonly use third and fourth endings for songs with multiple verses.
 
-### Basic
+# Examples
 
-Simple repeat (no endings):
-- ||: four measures :||
-- Play four measures, then repeat them, then continue
+- A 16-bar section enclosed in repeat signs is played twice (32 bars total)
+- First ending leads back to repeat; second ending continues forward
+- If only a closing repeat sign appears, repeat from the beginning of the piece
 
-Repeat with first and second endings:
-- ||: four measures | 1. measure A :|| 2. measure B ||
-- First time: play four measures, then measure A, go back to beginning
-- Second time: play four measures, skip measure A, play measure B instead, then continue
+# Relationships
 
-Multiple endings:
-- Some musical theater pieces have 1st, 2nd, and 3rd endings
-- Play designated ending on each pass through
+- **See also**: fermata, caesura, measure
 
-### From Repertoire
+# Common Errors
 
-Binary form dances (minuets, gavottes): ||: A :||: B :|| structure. Chopin mazurkas often use repeat signs for each section. Pop songs use repeat signs with different endings (verse with two different continuations). Jazz lead sheets use repeat signs extensively to avoid redundant notation.
+- Forgetting to look for the opening repeat sign (if absent, repeat from the beginning)
+- Playing the first ending on the second pass instead of skipping to the second ending
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: measure
-- **Leads to**: binary-form, ternary-form, da-capo
+- Repeat signs are not the same as D.C. (da capo) or D.S. (dal segno), which use different navigation symbols
 
-## Common Confusions
-
-- When to repeat: only repeat when you encounter :|| (dots before barline)
-- If no opening repeat sign (||:), repeat from the very beginning
-- First ending vs. second ending: play 1st ending first time only; skip it on repeat
-- Nested repeats can be confusing—consult performance practice for the piece
-- Repeat dots face the section to be repeated (dots on left of barline = go back)
-- Not all double barlines are repeat signs—only those with dots
-- Multiple endings: always skip previous endings and play only the current ending number
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 7: "Other Aspects of Notation"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: first/second ending description, Broadway multiple endings note.

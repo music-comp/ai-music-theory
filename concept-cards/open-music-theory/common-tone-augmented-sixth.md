@@ -1,243 +1,86 @@
 ---
-concept: Common Tone Augmented Sixth
-category: theory
-source: Open Music Theory
-chapter: "Augmented Options"
-pdf_page: null
-chapter_number: 5
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Common-Tone Augmented Sixth Chord
+slug: common-tone-augmented-sixth
+
+# === CLASSIFICATION ===
+category: chords
+subcategory: embellishing-chords
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Common-Tone Chords (CTo7 & CT+6)"
+chapter_number: 4
+pdf_page: null
+section: "V.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "CT+6"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - augmented-sixth-chords
+  - neighbor-tone
+extends: []
+related:
+  - common-tone-diminished-seventh
+contrasts_with:
+  - augmented-sixth-chords
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does CT+6 differ from a functional Ger+6?"
+  - "What is the relationship between CTo7 and CT+6?"
 ---
 
-# Common Tone Augmented Sixth
+# Quick Definition
+A German augmented sixth chord used not as a functional predominant but as an embellishing chord sharing a common tone with the chord being embellished (typically tonic). All three neighbor tones are chromatic (half step), producing a darker effect than the CTo7.
 
-## Quick Definition
+# Core Definition
+The CT+6 functions like the CTo7 but uses all chromatic (half-step) neighbors instead of mixing whole and half steps. Construction: keep root of embellished chord as common tone, use chromatic upper and lower neighbors to the fifth (both half step), and chromatic lower neighbor to the third. When embellishing I, the solfege matches Ger+6: le-do-me/ri-fi. In major keys, ri (raised-^2) is preferred over me (lowered-^3). Especially common in later 19th-century music. The augmented sixth interval may appear inverted as diminished third, but the label remains CT+6.
 
-An augmented sixth chord that shares a common tone with the chord it embellishes (typically tonic or dominant), functioning as a chromatic neighbor or prolongational harmony rather than a functional pre-dominant—where the characteristic augmented sixth interval expands outward while one pitch is sustained, creating chromatic voice leading color without genuine harmonic progression.
+# Prerequisites
+- Augmented sixth chord types (especially Ger+6)
+- Neighbor tone embellishment
 
-## Formal Definition
+# Key Properties
+1. Same pitches as Ger+6 but embellishing function, not predominant
+2. Root of embellished chord retained as common tone
+3. All three neighbor tones chromatic (half step), unlike CTo7 which mixes whole and half
+4. Darker sound than CTo7 due to all-chromatic neighbors
+5. Most commonly embellishes tonic (I)
+6. Common tone not always the bass note
+7. Augmented sixth may be inverted to diminished third
 
-**Common tone augmented sixth** (CT+6) is an embellishing augmented sixth chord:
+# Context & Application
+CT+6 appears especially in later 19th-century music. Chopin, Etude in F minor, Op. 10, No. 9: CT+6 in m. 8 at conclusion of parallel period over tonic pedal, as incomplete neighbor (preceded by V7 above pedal). Chopin spelled the chord with Cb instead of B-natural; the B-natural spelling would have clarified the neighboring function.
 
-**Characteristics**:
-- Contains augmented sixth interval (A6)
-- Shares common tone with surrounding harmony
-- Functions as prolongation (not functional progression)
-- Chromatic neighbor motion in non-common-tone voices
+# Examples
+**Example 1** (Chopin, Etude in F minor, Op. 10, No. 9, mm. 1-9): CT+6 in m. 8 over tonic pedal as incomplete neighbor.
 
-**Distinction from functional +6**:
-```
-Functional +6: Pre-dominant, resolves to V
-  iv → +6 → V (harmonic progression)
+# Relationships
+## Builds Upon
+- **augmented-sixth-chords** — Same pitches as Ger+6
+## Related
+- **common-tone-diminished-seventh** — Partner embellishing chord (mixed steps vs. all chromatic)
+## Contrasts With
+- **augmented-sixth-chords** — Ger+6 is functional predominant resolving to V; CT+6 embellishes with common tone
 
-CT+6: Embellishes without functional motion
-  I → CT+6 → I (prolongation of same harmony)
-```
+# Common Confusions
+- **Confusion**: CT+6 is the same as Ger+6.
+  **Clarification**: Same pitches, different function. CT+6 embellishes with a common tone; functional Ger+6 resolves to V without a common tone (Ger+6 does share a common tone with cad.6/4 but not with V itself).
 
-**Typical patterns**:
-```
-I → CT+6 → I
-V → CT+6 → V
-```
+# Source Reference
+Open Music Theory, Part V: Chromaticism, Chapter 4: "Common-Tone Chords (CTo7 & CT+6)."
 
-## Structure of CT+6
-
-**German sixth structure as CT+6**:
-```
-In C major, embellishing I:
-CT+6 = A-flat - C - E-flat - F#
-
-Common tone: C (tonic pitch)
-Other voices: chromatic neighbors around tonic chord
-```
-
-**Interval content**:
-```
-A-flat to F# = A6 (augmented sixth)
-A-flat to C = M3
-A-flat to E-flat = P5 (or A-flat to E-flat = M3 + m3)
-```
-
-## Voice Leading Patterns
-
-**I → CT+6 → I (embellishing tonic)**:
-```
-I:    C - E - G - C     CT+6: A-flat - C - E-flat - F#    I: C - E - G - C
-      ↓   ↓   ↓   ↓           ↓       ↓   ↓         ↓        ↓   ↓   ↓   ↓
-      C → A-flat → C    (chromatic lower neighbor)
-      E → E-flat → E    (chromatic lower neighbor)
-      G → F#     → G    (chromatic lower neighbor)
-      C →   C    → C    (COMMON TONE - sustained)
-
-C sustained throughout
-Other voices: chromatic neighbor motion
-A6 interval (A-flat-F#) expands to (G-G) octave
-```
-
-**V → CT+6 → V (embellishing dominant)**:
-```
-V:    G - B - D - G     CT+6: E-flat - G - B-flat - C#    V: G - B - D - G
-      ↓   ↓   ↓   ↓           ↓        ↓   ↓         ↓        ↓   ↓   ↓   ↓
-      G → E-flat → G    (lower neighbor)
-      B → B-flat → B    (lower neighbor)
-      D → C#     → D    (lower neighbor)
-      G →   G    → G    (COMMON TONE)
-
-G sustained throughout
-Embellishes dominant chord
-```
-
-## Comparison to Functional +6
-
-**Functional augmented sixth**:
-```
-Pre-dominant function:
-iv → Ger+6 → V
-
-A-flat-C-E-flat-F# → G-B-D
-Genuine progression
-Resolves to dominant
-Part of cadential approach
-```
-
-**Common tone augmented sixth**:
-```
-Prolongational function:
-I → CT+6 → I
-
-C-E-G → A-flat-C-E-flat-F# → C-E-G
-No harmonic progression
-Embellishes single harmony
-Common tone sustained
-```
-
-## Comparison to CT°7
-
-**Similar principle**:
-```
-CT°7: Embellishing diminished seventh with common tone
-CT+6: Embellishing augmented sixth with common tone
-
-Both:
-- Prolong single harmony
-- Share common tone
-- Create chromatic neighbor motion
-- Non-functional (embellishing)
-```
-
-**Different structure**:
-```
-CT°7: Four equal minor thirds (symmetrical)
-CT+6: Contains augmented sixth interval
-```
-
-## Musical Context
-
-Common tone augmented sixth serves specific purposes:
-- **Chromatic embellishment**: Enriches static harmonies
-- **Non-functional color**: Adds tension without progression
-- **Prolongation**: Extends single chord through chromaticism
-- **Romantic idiom**: Characteristic of 19th-century style
-- **Voice-leading interest**: Creates chromatic neighbor lines
-- **Dramatic effect**: Momentary chromatic intensity
-- **Distinct from functional +6**: Different purpose, similar structure
-- **Complements CT°7**: Alternative chromatic embellishment
-
-Important non-functional chromatic device in Romantic harmony.
-
-## Examples
-
-### Basic
-
-**CT+6 embellishing tonic** (C major):
-```
-I:     C - E - G - C
-       ↓   ↓   ↓   ↓
-CT+6: A-flat - C - E-flat - F# (C = common tone)
-       ↓   ↓   ↓   ↓
-I:     C - E - G - C
-
-Voice leading:
-C → A-flat → C (chromatic neighbors)
-E → E-flat → E (chromatic lower neighbor)
-G → F# → G (chromatic lower neighbor)
-C → C → C (sustained common tone)
-```
-
-**CT+6 embellishing dominant** (C major):
-```
-V:    G - B - D - G
-      ↓   ↓   ↓   ↓
-CT+6: E-flat - G - B-flat - C# (G = common tone)
-      ↓   ↓   ↓   ↓
-V:    G - B - D - G
-
-G sustained as common tone
-Embellishes dominant without progression
-```
-
-**In progression**:
-```
-C: I - CT+6 - I - IV - V - I
-   C   (embellish)  C   F   G   C
-
-CT+6 adds chromatic color
-Does not affect harmonic progression
-Prolongational, not functional
-```
-
-**Functional +6 vs. CT+6**:
-```
-Functional: ii^6 - Ger+6 - V - I
-           Dm/A  A-flat-C-E-flat-F#  G   C
-           Pre-dominant → Dominant → Tonic
-
-CT+6:      I - CT+6 - I
-           C  A-flat-C-E-flat-F#  C
-           Prolongation of tonic
-```
-
-### From Repertoire
-
-**Chopin, Nocturnes**: CT+6 embellishes tonic harmonies, creates chromatic color without harmonic motion.
-
-**Brahms, Intermezzi**: CT+6 chords prolong pedal points, chromatic embellishment over sustained bass.
-
-**Liszt, "Liebestraum"**: CT+6 adds yearning chromatic quality, embellishing moments of repose.
-
-**Wagner, "Siegfried Idyll"**: CT+6 in prolongational passages, chromatic enrichment of stable harmonies.
-
-**Rachmaninoff, Preludes**: CT+6 creates lush chromatic texture, embellishes without functional progression.
-
-## Related Concepts
-
-- **Prerequisite**: augmented-sixth-chords, common-tones, chromatic-voice-motion, tonic-prolongation
-- **Leads to**: harmonic-embellishment, chromatic-modulation
-- **See also**: common-tone-diminished-seventh, german-augmented-sixth
-
-## Common Confusions
-
-- CT+6 = augmented sixth chord functioning as embellishment
-- NOT a pre-dominant (does not progress to V)
-- Shares common tone with chord being embellished
-- Typically embellishes I or V
-- Structure same as functional +6 (often German)
-- Function different: prolongation vs. progression
-- Similar to CT°7 (common tone diminished seventh)
-- Both are non-functional embellishing chords
-- Both share common tone with surrounding harmony
-- CT+6 contains A6 interval; CT°7 is symmetrical °7
-- I → CT+6 → I (returns to same chord)
-- Voice leading: chromatic neighbors around common tone
-- Creates dramatic chromatic color
-- Does not drive harmonic rhythm
-- Romantic idiom (Chopin, Brahms, Liszt, Wagner)
-- Different notation sometimes: CT+6 or CT Ger+6
-- Resolution: A6 expands to octave (or sixth to fifth)
-- Common tone typically in bass or inner voice
-- Sustains one pitch while others create chromatic motion
-
-## Source Reference
-
-Open Music Theory, Part V: "Chromaticism"
-Open Music Theory, Part V: "Augmented Options"
+# Verification Notes
+- Re-extracted from source chapter 05-04; merged with existing v2 card
+- Preserved Chopin example and v2 voice-leading diagrams
+- Confidence rationale: High — clear source treatment

@@ -1,177 +1,82 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Hexachordal Combinatoriality
-category: theory
-source: Open Music Theory
-chapter: "Row Properties"
-pdf_page: null
-chapter_number: 9
-unit: null
+slug: hexachordal-combinatoriality
+# === CLASSIFICATION ===
+category: analysis
+subcategory: twelve-tone-theory
+tier: advanced
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Row Properties"
+chapter_number: 9
+pdf_page: null
+section: "IX.3"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases:
+  - "combinatoriality"
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - twelve-tone-row
+  - aggregate
+extends: []
+related:
+  - magic-hexachord
+  - all-trichord-row
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is hexachordal combinatoriality?"
+  - "What is the difference between semi-combinatorial and all-combinatorial?"
+  - "Why is combinatoriality compositionally useful?"
 ---
 
-# Hexachordal Combinatoriality
+# Quick Definition
+Hexachordal combinatoriality occurs when the first hexachord of one row form and the first hexachord of a related row form (by P-P, P-I, or P-RI transformation) are complementary -- together completing the twelve-tone aggregate. This ensures no pitch-class repetition when two combinatorial row forms sound simultaneously.
 
-## Quick Definition
+# Core Definition
+By definition, the first hexachord of P0 complements the second hexachord of P0, and also complements the first hexachord of R0. Combinatoriality becomes significant when it holds between other transformation pairs. Using Babbitt's terminology: semi-combinatorial rows have this property for one transformation type (P-P, P-I, or P-RI); all-combinatorial rows have it for all transformation types. Only six distinct all-combinatorial hexachords exist. Combinatoriality enables composers to stack two row forms vertically without pitch-class duplication within each hexachord span.
 
-Hexachordal combinatoriality is a property where the first hexachord (first six notes) of one row form complements the first hexachord of another row form—meaning together they produce all twelve pitch classes (a complete aggregate)—allowing composers to combine row forms in counterpoint while ensuring complete chromatic coverage, classified as semi-combinatorial (one transformation type works) or all-combinatorial (multiple transformation types work), with only six hexachord types being all-combinatorial.
+# Prerequisites
+- Twelve-tone row and aggregate concepts
 
-## Formal Definition
+# Key Properties
+1. First hexachords of two row forms together complete the aggregate
+2. By definition, P0-R0 first hexachords are always complementary
+3. Semi-combinatorial: holds for one additional transformation type
+4. All-combinatorial: holds for P-P, P-I, and P-RI simultaneously
+5. Only 6 distinct all-combinatorial hexachord types exist
+6. Enables pitch-class-complete vertical combinations
 
-**Hexachordal combinatoriality**: Two row forms whose corresponding hexachords are complementary (together yielding all 12 pitch classes).
+# Context & Application
+Combinatoriality was central to Babbitt's compositional practice and is a key structural property in many twelve-tone works. Webern's Symphonie Op. 21 uses hexachordal combinatoriality extensively.
 
-**Basic principle**:
-```
-Row 1: [Hexachord A] [Hexachord B]    (H1-A + H1-B = aggregate)
-Row 2: [Hexachord C] [Hexachord D]    (H2-C + H2-D = aggregate)
+# Examples
+**Example 1** (Webern, Symphonie Op. 21): The row's hexachords are both chromatic hexachords (set class 6-1), enabling combinatorial pairing.
+**Example 2**: If P0's first hexachord is {0,1,2,3,4,5} and I6's first hexachord is {6,7,8,9,10,11}, they are combinatorial -- together they complete the aggregate.
 
-If combinatorial:
-H1-A + H2-C = aggregate (all 12 pitch classes)
-H1-B + H2-D = aggregate (all 12 pitch classes)
-```
+# Relationships
+## Builds Upon
+- **twelve-tone-row** -- Combinatoriality is a row property
+- **aggregate** -- Combinatorial pairs complete the aggregate
+## Related
+- **magic-hexachord** -- A hexachord with exceptional combinatorial properties
 
-**Types** (Babbitt's terminology):
+# Common Confusions
+- **Confusion**: All twelve-tone rows are combinatorial
+  **Clarification**: P-R combinatoriality holds by definition, but P-P, P-I, or P-RI combinatoriality requires special hexachord properties
+- **Confusion**: Combinatoriality only applies to hexachords
+  **Clarification**: While hexachordal is most common, the concept can extend to other segment sizes
 
-1. **Semi-combinatorial**: One transformation type produces combinatoriality
-   - P-P combinatorial (transposition only)
-   - P-I combinatorial (inversion)
-   - P-RI combinatorial (retrograde inversion)
+# Source Reference
+Open Music Theory, Part IX, Chapter 3: "Row Properties," section on Hexachordal Combinatoriality.
 
-2. **All-combinatorial**: Multiple transformations produce combinatoriality
-   - Row is combinatorial under P-P, P-I, and P-RI
-   - Only six hexachord types have this property
-
-**Built-in combinatoriality** (by definition):
-- P and R are always combinatorial (R's first hexachord = P's second)
-- I and RI are always combinatorial (same relationship)
-
-## Musical Context
-
-Combinatoriality provides:
-- **Aggregate completion**: Ensures all 12 pitches in each hexachordal span
-- **Contrapuntal freedom**: Rows combine without pitch repetition
-- **Structural clarity**: Hexachordal boundaries articulate form
-- **Textural variety**: Multiple rows sound simultaneously
-
-**Historical importance**:
-- Central to Babbitt's compositional technique
-- Schoenberg used combinatoriality (sometimes intuitively)
-- Webern's rows often all-combinatorial
-- Foundation of much American twelve-tone practice
-
-## Examples
-
-### Basic
-
-**P-R combinatoriality** (always exists):
-```
-P0: [0-11-3-7-8-4] [2-6-5-1-9-10]
-     Hexachord 1     Hexachord 2
-
-R0: [10-9-1-5-6-2] [4-8-7-3-11-0]
-     H1 of R0       H2 of R0
-
-H1 of R0 = H2 of P0 (same pitches!)
-
-Therefore: H1 of P0 + H1 of R0 = aggregate
-          {0,11,3,7,8,4} + {10,9,1,5,6,2} = all 12
-```
-
-**P-I combinatoriality** (not always):
-```
-For P-I combinatoriality:
-- H1 of P must complement H1 of some In
-- Row must have special hexachord structure
-
-Example (Webern-type row):
-P0: [0-1-2-3-4-5] [6-7-8-9-10-11]
-I0: [0-11-10-9-8-7] [6-5-4-3-2-1]
-
-H1 of P0: {0,1,2,3,4,5}
-H1 of I0: {0,11,10,9,8,7}
-NOT complementary (both contain 0)
-
-Try I6:
-H1 of I6: {6,5,4,3,2,1}
-P0-H1 + I6-H1 = {0,1,2,3,4,5} + {6,5,4,3,2,1}
-             = all 12 pitch classes!
-
-P0 and I6 are combinatorial
-```
-
-**Semi-combinatorial example**:
-```
-Row with semi-combinatoriality:
-- Works with transposition (P-P)
-- Does NOT work with inversion (P-I)
-- Combinatorial only under ONE transformation type
-```
-
-### From Repertoire
-
-**Webern, Symphonie Op. 21**:
-```
-Row: 9-6-7-8-4-5 | 11-10-2-1-0-3
-     Hexachord 1   Hexachord 2
-
-Both hexachords = set class 6-1 (chromatic hexachord)
-{9,6,7,8,4,5} = chromatic segment A4-A
-{11,10,2,1,0,3} = chromatic segment B-Eb
-
-Properties:
-- All-combinatorial hexachords
-- Combinatorial by T, I, and RI
-- One of the six all-combinatorial types
-```
-
-**Six all-combinatorial hexachord types**:
-```
-Set class   Prime form        Description
-6-1         (012345)          Chromatic hexachord
-6-8         (023457)          "Dominant ninth" hexachord
-6-32        (024579)          Diatonic hexachord
-6-7         (012678)
-6-20        (014589)          "Magic" hexachord
-6-35        (02468T)          Whole-tone hexachord
-
-These are the ONLY all-combinatorial types
-```
-
-**Magic hexachord (014589)**:
-```
-Webern, Konzert Op. 24 uses (014589)
-
-Properties:
-- All-combinatorial
-- Combinatorial by T+/-2 and T6
-- Contains hexatonic cycle
-- Many internal triads
-- Used by Schoenberg, Webern, Maderna, Nono
-```
-
-## Related Concepts
-
-- **Prerequisite**: twelve-tone-row, set-class
-- **Leads to**: aggregate, total-serialism
-- **See also**: derived-row, segmental-invariance
-
-## Common Confusions
-
-- Combinatoriality = hexachords of different row forms complement each other
-- P and R are ALWAYS combinatorial (by definition)
-- I and RI are ALWAYS combinatorial (by definition)
-- The interesting cases: P-P, P-I, P-RI combinatoriality
-- Semi-combinatorial = works under ONE transformation type
-- All-combinatorial = works under MULTIPLE transformation types
-- Only SIX hexachord set classes are all-combinatorial
-- Combinatoriality ensures aggregate completion in hexachordal spans
-- "Aggregate" = complete collection of all 12 pitch classes
-- Combinatoriality enables contrapuntal row combinations
-- Not all rows are combinatorial (beyond basic P-R, I-RI)
-- Babbitt central to developing combinatorial theory
-- Combinatoriality is about HEXACHORDS, not the full row
-- Same concept could apply to other segment sizes (trichords, etc.)
-- Combinatorial pairs can sound simultaneously without pitch duplication
-
-## Source Reference
-
-Open Music Theory, Part IX: "Row Properties"
+# Verification Notes
+- Definition source: From 09-03
+- Confidence rationale: High
+- Preserved from v2: Babbitt terminology, Webern Op. 21 example, all-combinatorial count
+- Cross-reference status: Verified

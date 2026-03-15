@@ -1,92 +1,121 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Species Counterpoint
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Species Counterpoint"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: species-counterpoint
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: pedagogy
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Species Counterpoint"
+chapter_number: 1
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Fuxian counterpoint"
+  - "strict counterpoint"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - counterpoint
+  - cantus-firmus
+  - interval
+extends: []
+related:
+  - gradus-ad-parnassum
+  - voice-leading
+contrasts_with:
+  - free-counterpoint
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is species counterpoint and why is it studied?"
+  - "What are the five species and what does each introduce?"
+  - "How does species counterpoint relate to actual compositional practice?"
 ---
 
-# Species Counterpoint
+# Quick Definition
+A systematic, step-by-step pedagogical method for learning counterpoint through five progressively complex exercise types, each introducing new rhythmic and harmonic challenges against a cantus firmus.
 
-## Quick Definition
+# Core Definition
+**Species counterpoint** is a method for learning to write and combine melodies, based on Johann Joseph Fux's *Gradus ad Parnassum* (1725). The term "species" refers to types of exercises done in a particular order, each introducing one or two new musical problems. The five species for two voices are: (1) note against note (all consonances), (2) two notes against one (introducing passing-tone dissonance), (3) four notes against one (neighbor tones, double neighbor, nota cambiata), (4) syncopated rhythm (suspensions), and (5) florid counterpoint (combining all previous species). Each begins with a cantus firmus and adds a counterpoint line above or below it (Ch. 1).
 
-A pedagogical method for learning counterpoint through a series of increasingly complex exercises, each introducing new rhythmic and melodic challenges.
+# Prerequisites
+- **Counterpoint** -- Species counterpoint is the primary method for learning contrapuntal technique
+- **Cantus firmus** -- Each exercise begins with a given cantus firmus
+- **Interval** -- Rules are expressed in terms of intervallic relationships
 
-## Formal Definition
+# Key Properties
+1. Five progressive exercise types, each building on the previous
+2. Based on Fux's *Gradus ad Parnassum* (1725)
+3. Two-voice texture: cantus firmus plus one counterpoint line
+4. Rules are somewhat linked to 16th-century music but teach style-independent principles
+5. Abstracts away orchestration, motives, form, and most rhythmic complexity
+6. Focuses on four fundamental problems: smooth lines, independence, variety, goal-directed motion
+7. Used by composers from Mozart to Brahms to Hindemith
 
-**Species counterpoint** is a systematic, step-by-step method for learning to write melodies and combine them contrapuntally. The method divides contrapuntal technique into five progressive "species" (types of exercises), each adding specific musical problems to master.
+# Construction / Recognition
+## To Practice Species Counterpoint:
+1. Start with a well-formed cantus firmus (or use one from Fux)
+2. Choose the species to practice (1st through 5th)
+3. Compose a counterpoint line following that species' specific rules
+4. Begin on a perfect consonance; end with clausula vera
+5. Follow all melodic writing rules (stepwise motion, controlled leaps, single climax)
+6. Follow all harmonic writing rules (no parallel 5ths/8ves, prefer imperfect consonances)
+## To Identify Species in Analysis:
+1. Check the rhythmic ratio between voices (1:1, 2:1, 4:1, syncopated, or mixed)
+2. Note the treatment of dissonance (none, passing tones, neighbors, suspensions)
 
-The five species (based on Johann Joseph Fux's *Gradus ad Parnassum*, 1725):
+# Context & Application
+Species counterpoint is the most widely used method for teaching contrapuntal technique in conservatories and universities. The source emphasizes that the "rules" are pedagogical constraints stricter than actual Renaissance or Baroque practice. The method trains skills applicable across Western tonal music: voice leading, consonance/dissonance treatment, melodic independence, and harmonic balance. Many composers from the 18th to 21st centuries used this method or variations on it.
 
-1. **First species** (1:1): Note against note—one note in counterpoint for each cantus firmus note, all consonances
-2. **Second species** (2:1): Two notes in counterpoint against each cantus firmus note, introducing passing tone dissonances on weak beats
-3. **Third species** (4:1): Four notes against each cantus firmus note, more elaborate melodic patterns
-4. **Fourth species**: Suspensions—syncopated rhythm introducing prepared dissonances
-5. **Fifth species** (florid): Free combination of all previous species, approaching free composition
+# Examples
+**Example 1** (Ch. 1, Example 3): All cantus firmi from *Gradus ad Parnassum*, one for each mode, presented for both upper and lower counterpoint positions.
 
-Each species begins with a cantus firmus and adds a counterpoint line above or below it, following specific rules for that species.
+**Example 2** (Chs. 2-6): Complete first through fifth species exercises from Part I of *Gradus ad Parnassum*, annotated with intervals.
 
-## Musical Context
+# Relationships
+## Builds Upon
+- **counterpoint** -- Species counterpoint is the standard method for learning counterpoint
+- **cantus-firmus** -- All exercises begin with a cantus firmus
+## Enables
+- **first-species** -- Note-against-note counterpoint
+- **second-species** -- Two-against-one, introducing passing tones
+- **third-species** -- Four-against-one, introducing neighbor tones
+- **fourth-species** -- Syncopated, introducing suspensions
+- **fifth-species** -- Florid, combining all species
+- **free-counterpoint** -- Application to actual composition
+## Contrasts With
+- **free-counterpoint** -- Free counterpoint relaxes species rules for musical expression
 
-**Pedagogical purpose**:
-- Teaches fundamental voice-leading principles
-- Develops awareness of consonance/dissonance treatment
-- Builds skills in melodic independence and harmonic fusion
-- Abstracts core problems from specific styles
-- Provides systematic, progressive training
+# Common Errors
+- **Error**: Treating species rules as absolute compositional laws
+  **Correction**: Species rules are pedagogical constraints; actual Renaissance and Baroque music is more flexible
+- **Error**: Skipping species or attempting florid counterpoint before mastering earlier species
+  **Correction**: The progressive structure is essential; each species builds on skills from the previous one
 
-**Historical importance**:
-- Fux's method (1725) became the standard for teaching counterpoint
-- Used by composers from Mozart to Beethoven to Brahms to Hindemith
-- Still widely taught in conservatories and universities
-- Based on Renaissance polyphonic practices but applicable to many styles
+# Common Confusions
+- **Confusion**: Species counterpoint is Renaissance music
+  **Clarification**: It's a teaching method somewhat linked to 16th-century style, but it teaches universal principles
+- **Confusion**: The "species" are biological categories
+  **Clarification**: "Species" here means types or categories of exercises, not biological taxonomy
+- **Confusion**: Mastering species counterpoint makes you a great composer
+  **Clarification**: It develops essential skills but is only one component of compositional training
 
-**Not style-specific**:
-- Rules are somewhat linked to 16th-century music
-- Core principles apply across Western tonal music
-- Focuses on fundamental musical problems (smoothness, independence, variety, motion)
-- Abstracts away orchestration, motives, form, and most rhythmic complexity
+# Source Reference
+Open Music Theory, Part II, Chapter 1: "Introduction to Species Counterpoint." Covers the method's origins, all five species overviews, cantus firmus rules, and melodic/harmonic writing rules.
 
-The method trains basic contrapuntal skills independent of specific repertoire, which can then be applied to various musical styles.
-
-## Examples
-
-### Basic
-
-**First species** (all whole notes, all consonances):
-- Cantus: C - D - E - F - E - D - C
-- Counterpoint: E - F - G - A - G - F - E
-
-**Second species** (two half notes against each whole note):
-- Cantus: C (whole) - D (whole)
-- Counterpoint: E-F (half notes) - G-A (half notes)
-
-### From Repertoire
-
-Species counterpoint is pedagogical, not repertoire-based. However, the principles appear in:
-- Renaissance polyphony (Palestrina, Josquin): First-species-like passages
-- Bach: Species techniques in chorales, inventions, fugues
-- Mozart/Haydn: Contrapuntal development sections
-- Brahms: Studied Fux intensively, applied principles in chamber music
-
-## Related Concepts
-
-- **Prerequisite**: counterpoint, cantus-firmus, interval, consonance-dissonance
-- **Leads to**: first-species, second-species, third-species, fourth-species, fifth-species, fugue, free-counterpoint
-- **See also**: voice-leading
-
-## Common Confusions
-
-- Species counterpoint is a teaching method, not a compositional style—it's not "Renaissance music"
-- The rules are pedagogical constraints, not absolute laws—they're stricter than actual Renaissance or Baroque practice
-- Mastering species counterpoint doesn't automatically make you a great composer, but it develops essential skills
-- The "species" are exercise types, not biological categories (despite the name)
-- Fux's approach is one method; other counterpoint pedagogies exist (e.g., Schenker, Jeppesen)
-- Species counterpoint teaches principles applicable to tonal music generally, not just "old" music
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 1: "Introduction to Species Counterpoint"
+# Verification Notes
+- Re-extracted from v2 card; preserved: historical importance list (Mozart to Hindemith), pedagogical purpose summary
+- Definition source: Directly from Ch. 1 opening and Key Takeaways
+- Confidence: HIGH -- explicitly defined as the chapter's central topic

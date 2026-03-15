@@ -1,69 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Beat
-category: theory
-source: Open Music Theory
-chapter: "Simple Meter and Time Signatures"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: beat
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Simple Meter and Time Signatures"
+chapter_number: 9
+pdf_page: null
+section: "Terminology"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "pulse"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - rhythm
+extends: []
+related:
+  - meter
+  - tempo
+  - time-signature
+  - measure
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a beat?"
+  - "How is the beat related to meter?"
+  - "What note value gets the beat?"
 ---
 
-# Beat
+# Quick Definition
 
-## Quick Definition
+A regularly recurring pulse in music that listeners can tap or clap along to.
 
-A regularly recurring pulse in music that listeners can tap along to.
+# Core Definition
 
-## Formal Definition
+A **beat** is a pulse in music that regularly recurs. It is what you tap or clap along to when listening to music. Beats group into meters: duple (groups of 2), triple (groups of 3), or quadruple (groups of 4). In simple meter, beats divide into two; in compound meter, beats divide into three. The **beat unit** (which note value gets the beat) is indicated by the bottom number of the time signature in simple meters.
 
-A **beat** is a regular pulse in music that recurs at consistent time intervals, creating a sense of rhythmic organization. Beats are the basic units of time that performers and listeners use to organize and experience rhythm.
+# Prerequisites
 
-In Western notation:
-- The beat unit (which note value gets the beat) is indicated by the bottom number of the time signature
-- Common beat units: half note, quarter note, eighth note, or sixteenth note
-- In simple meters, each beat divides into two equal parts (and subdivides into four)
-- In compound meters, each beat divides into three equal parts
+- **Rhythm**: the broader concept of duration in time
 
-The beat provides a framework for organizing more complex rhythmic patterns and for coordinating multiple performers.
+# Key Properties
 
-## Musical Context
+- Regularly recurring pulse
+- Groups into duple (2), triple (3), or quadruple (4) patterns
+- Divides into 2 (simple meter) or 3 (compound meter)
+- Beat unit determined by time signature
+- First beat of each group = downbeat (stronger); last beat = upbeat (anticipatory)
 
-The beat is what you tap your foot to when listening to music. It's the fundamental pulse that gives music its sense of motion and allows musicians to stay together. Not all music has a regular beat (some is "free" or "unmeasured"), but most Western music from the Common Practice period through contemporary popular music is organized around a steady beat.
+# Construction / Recognition
 
-Different tempos (speeds) affect how the beat feels: slow beats create a relaxed character, while fast beats create energy and excitement. The beat can be explicitly stated (as in dance music) or implied (as in some classical music).
+Beats are felt and heard, not seen. Conducting patterns and tapping help identify and maintain the beat. Downbeats feel "heavier"; upbeats feel "lighter."
 
-## Examples
+# Context & Application
 
-### Basic
+The beat is the fundamental unit of musical time. Tempo specifies how fast beats occur. Meter organizes beats into regular groupings. All rhythmic notation is understood relative to the beat.
 
-In 4/4 time:
-- The quarter note gets the beat
-- There are four beats per measure
-- Counting: "1, 2, 3, 4"
+# Examples
 
-In 3/8 time:
-- The eighth note gets the beat
-- There are three beats per measure
-- Counting: "1, 2, 3"
+- In 4/4 time: quarter note gets the beat, 4 beats per measure
+- In 3/8 time: eighth note gets the beat, 3 beats per measure
+- In 6/8 time: dotted quarter note gets the beat, 2 beats per measure
 
-### From Repertoire
+# Relationships
 
-In "The Stars and Stripes Forever" (march), the steady beat is very obvious, making it easy to march in step. In Mozart's minuets, the beat creates a graceful, dance-like character. Pop music typically has a very clear, steady beat that drives the song forward.
+- **Leads to**: meter, time-signature, tempo, downbeat, upbeat
+- **See also**: rhythm, measure, simple-meter, compound-meter
 
-## Related Concepts
+# Common Errors
 
-- **Prerequisite**: rhythm, tie
-- **Leads to**: meter, time-signature, tempo, beat
-- **See also**: measure
+- Confusing beat with rhythm (beat = regular pulse; rhythm = patterns of duration)
 
-## Common Confusions
+# Common Confusions
 
-- Beat vs. rhythm: The beat is the steady pulse; rhythm includes all durational patterns (including patterns that go against the beat)
-- Beat vs. tempo: The beat is the pulse itself; tempo is the speed of that pulse
-- Not all notes fall on beats—some fall between beats (subdivisions) or across beats (syncopation)
-- The beat unit (which note value gets the beat) changes depending on the time signature
+- Beat vs. note value: the beat is a pulse; the note value is the notation symbol representing one beat's duration
+- Simple quadruple (4 beats) can feel like simple duple (2+2), making them hard to distinguish by ear alone
 
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 9: "Simple Meter and Time Signatures"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: duple/triple/quadruple groupings, downbeat/upbeat distinction, division into 2 or 3.

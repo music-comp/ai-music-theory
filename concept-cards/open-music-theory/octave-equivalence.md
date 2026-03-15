@@ -1,65 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Octave Equivalence
-category: theory
-source: Open Music Theory
-chapter: "Reading Clefs"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: octave-equivalence
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: pitch
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Reading Clefs"
+chapter_number: 3
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch
+extends: []
+related:
+  - pitch-class
+  - aspn
+  - scale
+  - piano-keyboard
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is octave equivalence?"
+  - "Why do pitches separated by an octave share the same letter name?"
+  - "Is octave equivalence universal across all cultures?"
 ---
 
-# Octave Equivalence
+# Quick Definition
 
-## Quick Definition
+The principle that pitches separated by an octave are perceived as fundamentally similar and share the same letter name.
 
-The principle that pitches separated by an octave are considered musically equivalent and are given the same letter name.
+# Core Definition
 
-## Formal Definition
+**Octave equivalence** is a fundamental assumption in Western music theory that pitches separated by an octave (a frequency ratio of 2:1) share the same essential identity and should have the same letter name. This explains why Western notation uses only seven letter names (A through G) repeating in a loop: A, B, C, D, E, F, G, A, B, C, ... The principle is culturally specific -- some ancient Greek music theorists did not accept octave equivalence and used more than seven letters of the Greek alphabet.
 
-**Octave equivalence** is a fundamental assumption in Western music theory that pitches separated by an octave (a frequency ratio of 2:1) share the same essential identity and should have the same letter name. This principle explains why the pitch letter names A through G repeat in a continuous loop throughout the entire pitch spectrum.
+# Prerequisites
 
-In pitch-class theory, octave equivalence is formalized by treating all pitches with the same letter name as belonging to the same pitch class, regardless of which octave they appear in. For example, all C notes (C0, C1, C2, C3, C4, etc.) belong to pitch class 0.
+- **Pitch**: the concept of highness/lowness of sound
 
-Mathematically: pitches p₁ and p₂ are octave-equivalent if p₂ = p₁ × 2ⁿ for some integer n.
+# Key Properties
 
-## Musical Context
+- Pitches one octave apart share the same letter name (e.g., all Cs are "C")
+- An octave corresponds to a frequency ratio of 2:1
+- The seven letter names (A-G) repeat cyclically because of this principle
+- Underpins the concept of pitch class (grouping all Cs, all Ds, etc.)
+- Culturally specific -- not a universal acoustic law
 
-Octave equivalence is so fundamental to Western music that it seems natural, but it is actually a cultural assumption that varies across different musical systems. This principle explains why:
+# Construction / Recognition
 
-- The piano keyboard pattern repeats every seven white keys
-- Men and women singing "the same melody" actually sing an octave apart
-- Letter names repeat: A-B-C-D-E-F-G-A-B-C-D-E-F-G...
+Octave equivalence is heard when two notes sound "the same" despite being in different registers. On a keyboard, the pattern of white and black keys repeats every octave. Mathematically: pitches p1 and p2 are octave-equivalent if p2 = p1 x 2^n for some integer n.
 
-The assumption enables musicians to think of a C in any register as "the same note" in terms of function and identity, even though they have different frequencies.
+# Context & Application
 
-## Examples
+Octave equivalence underlies the entire Western pitch-naming system. It explains why the piano keyboard pattern repeats, why men and women singing "the same melody" may actually sing an octave apart, and why chord theory can speak of a "C chord" without specifying which octave the notes are in.
 
-### Basic
+# Examples
 
-- C4 (middle C) ≈ 261.63 Hz
-- C5 (one octave higher) ≈ 523.25 Hz (exactly double the frequency)
-- C3 (one octave lower) ≈ 130.81 Hz (exactly half the frequency)
+- C4 (~261.63 Hz) and C5 (~523.25 Hz) are octave-equivalent (2:1 ratio)
+- A3 (220 Hz) and A4 (440 Hz) differ by exactly one octave
+- When a choir sings in unison, sopranos and basses may be octaves apart
 
-All three are called "C" due to octave equivalence.
+# Relationships
 
-### From Repertoire
+- **Leads to**: pitch-class, scale, aspn
+- **See also**: pitch, piano-keyboard, interval
 
-When a choir has sopranos and altos sing "the same melody," they typically sing an octave apart. The melody is considered "the same" because of octave equivalence, even though the actual pitches differ.
+# Common Errors
 
-## Related Concepts
+- Assuming octave equivalence is a physical or acoustic fact rather than a perceptual/cultural convention
 
-- **Prerequisite**: pitch
-- **Leads to**: pitch-class, scale-degree
-- **See also**: interval, consonance
+# Common Confusions
 
-## Common Confusions
-
-- Octave equivalence is a theoretical construct, not a physical fact—it's an assumption made by Western music theory
-- Not all musical cultures accept octave equivalence; some ancient Greek theorists used more than seven letters to name pitches
-- Octave equivalence means pitches are functionally equivalent, not that they sound identical—register matters for timbre and voice leading
+- Octave equivalence does not mean pitches in different octaves sound identical -- they sound similar but differ in register
+- Not all musical cultures accept octave equivalence; some ancient Greek theorists used more than seven letters
 - Pitch class abstracts away octave; pitch includes it: C4 and C5 are different pitches but the same pitch class
 
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 3: "Reading Clefs"; Chapter 4: "The Keyboard and the Grand Staff"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: frequency ratio examples, mathematical formulation, cultural specificity note about Greek theorists.

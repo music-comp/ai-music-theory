@@ -1,73 +1,84 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Jazz Voicings
-category: theory
-source: Open Music Theory
-chapter: "Jazz Voicings"
-pdf_page: null
-chapter_number: 6
-unit: null
+slug: jazz-voicings
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: jazz-technique
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Jazz Voicings"
+chapter_number: 3
+pdf_page: null
+section: "VI.3"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - chord-symbols-jazz
+  - harmonic-series
+extends: []
+related:
+  - ii-v-i-progression
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do you voice jazz chords idiomatically?"
+  - "What is the 3-7 voice-leading paradigm?"
 ---
 
-# Jazz Voicings
+# Quick Definition
+Jazz voicing principles: space chords like the harmonic series (wide intervals low, close intervals high), voice extensions above other members, double bass or root if doubling, omit the fifth freely. Smooth "lazy" voice leading connects chords — the 3-7 paradigm alternates thirds and sevenths between upper voices for maximum smoothness.
 
-## Quick Definition
+# Core Definition
+Spacing mimics the harmonic series: wide intervals in low registers, close intervals in upper registers. Extensions (9ths, 11ths, 13ths) belong in upper registers. Doubling: safest to double bass or root. Omitting: the fifth adds little character and is almost always omittable; root can be omitted if a bassist is present. Two-voice paradigm (3-7): use third and seventh of each chord; in fifth-related progressions, one voice alternates 3rd-7th while the other does 7th-3rd, yielding fourths and fifths in the right hand. Three-voice paradigm: add a top voice alternating 9ths and 13ths. Extensions should fit the overall key as a starting point; diatonic versions are tried first, then altered if they sound awkward.
 
-The specific arrangement of chord tones across registers and instruments, determining the spacing, doubling, and distribution of notes in a jazz harmony.
+# Prerequisites
+- Jazz chord symbols
+- Harmonic series basics
 
-## Formal Definition
+# Key Properties
+1. Spacing: wide low, close high (mimics harmonic series)
+2. Extensions voiced above other chord members
+3. Fifth almost always omittable
+4. Root can be omitted if bassist present
+5. Double bass or root (safest doublings)
+6. 3-7 paradigm: upper voices alternate 3rds and 7ths for smooth voice leading
+7. Three-voice paradigm: add 9th-13th alternation above 3-7 voices
+8. Guidelines, not rules — break them deliberately for desired effects
 
-A **voicing** is how the notes of a chord are distributed across the musical texture. Jazz voicings follow several idiomatic principles:
+# Context & Application
+In performance, the root is typically covered by the upright bass (sounding an octave below written). The 3-7 paradigm produces smooth voice leading between any chords related by fifth or second. Adding extensions that fit the key produces natural-sounding results; chromatically altered extensions add color and should be guided by ear and surrounding chords.
 
-**Spacing** (following the harmonic series):
-- Wide intervals in low registers
-- Closer intervals in high registers
-- Bass often separated from other voices by a large gap
+# Examples
+**Example 1** (3-7 paradigm in ii-V-I): Dmi7 (F-C) to G7 (F-B) to Cma7 (E-B) — voices alternate between 3rds and 7ths.
+**Example 2** (Three voices): Add top line of 9ths and 13ths above the 3-7 voices.
 
-**Doubling**:
-- Safe to double: bass note or root
-- These are stable tones that strengthen the chord
+# Relationships
+## Builds Upon
+- **chord-symbols-jazz** — Voicings realize chord symbols
+## Related
+- **ii-v-i-progression** — Primary context for jazz voice-leading paradigms
 
-**Omitting notes**:
-- The fifth is commonly omitted (it adds stability but little character)
-- The seventh and root are rarely omitted (they define the chord)
-- When a bassist covers the root, others may omit it
+# Common Confusions
+- **Confusion**: All notes in the chord symbol must be played.
+  **Clarification**: Extensions are often selectively omitted in voicings; the fifth is almost always dropped.
 
-**Extensions**:
-- Should be voiced in upper registers
-- A 13th voiced below the 7th will sound like a 6th
+# Source Reference
+Open Music Theory, Part VI: Jazz, Chapter 3: "Jazz Voicings."
 
-## Musical Context
-
-While chord symbols specify which pitches to play, voicings determine how those pitches sound in practice. A chord voicing can make harmony sound muddy or clear, dense or open, dissonant or consonant.
-
-In jazz performance, voicings are often improvised based on context, instrumentation, and personal style. Piano and guitar players must constantly make voicing decisions.
-
-## Examples
-
-### Basic
-
-For Cmaj7 (C-E-G-B):
-- **Muddy voicing**: C2-E2-G2-B2 (all notes in low register)
-- **Clear voicing**: C2 (bass), E3-G3-B3 (right hand, spaced out)
-- **With omitted 5th**: C2 (bass), E3-B3 (just 3rd and 7th)
-
-### From Repertoire
-
-Bill Evans revolutionized jazz piano voicings with his use of close-position chords in the middle register, combined with bass notes an octave or more below. This created a signature sound in recordings like "Waltz for Debby."
-
-## Related Concepts
-
-- **Prerequisite**: chord-symbols-jazz, jazz-extensions
-- **Leads to**: voice-leading
-
-## Common Confusions
-
-- A voicing is NOT the same as the chord; many voicings can represent the same chord
-- Voicing the 13th below the 7th changes its character (sounds like 6th, not 13th)
-- Omitting the 5th almost never hurts the sound; omitting the 3rd or 7th usually does
-- Good voicings consider both vertical (simultaneous) and horizontal (voice leading) dimensions
-
-## Source Reference
-
-Open Music Theory, Part VI, Chapter 3: "Jazz Voicings"
+# Verification Notes
+- Re-extracted from source chapter 06-03; merged with existing v2 card
+- Preserved 3-7 paradigm and spacing principles
+- Confidence rationale: High — practical and clearly explained in source

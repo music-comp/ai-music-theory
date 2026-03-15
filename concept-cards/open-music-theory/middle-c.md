@@ -1,77 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Middle C
-category: theory
-source: Open Music Theory
-chapter: "The Keyboard and the Grand Staff"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: middle-c
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: pitch
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "The Keyboard and the Grand Staff"
+chapter_number: 4
+pdf_page: null
+section: "The Grand Staff"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "C4"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch
+  - grand-staff
+  - piano-keyboard
+  - aspn
+extends: []
+related:
+  - ledger-lines
+  - clef
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is middle C?"
+  - "Where does middle C appear on the grand staff?"
+  - "Where is middle C on the piano keyboard?"
 ---
 
-# Middle C
+# Quick Definition
 
-## Quick Definition
+The note C4 in ASPN (~261.63 Hz), located between the treble and bass staves on the grand staff and near the middle of the piano keyboard.
 
-The note C4 in ASPN, located at the center of the grand staff (between treble and bass clefs) and near the middle of the piano keyboard, serving as a crucial reference point for pitch identification.
+# Core Definition
 
-## Formal Definition
+**Middle C** is the specific pitch C4 in American Standard Pitch Notation, with a frequency of approximately 261.63 Hz. It is so named because it appears in the middle of the grand staff (between the treble and bass clef staves when vertically condensed) and is located near the physical center of the piano keyboard, usually beneath the manufacturer's brand name. In treble clef it sits on the first ledger line below the staff; in bass clef, on the first ledger line above the staff; in alto clef, on the middle line; in tenor clef, on the second line from the top.
 
-**Middle C** is the specific pitch C4 (in American Standard Pitch Notation), with a frequency of approximately 261.63 Hz. It derives its name from two characteristics:
+# Prerequisites
 
-1. **On the grand staff**: When the treble and bass clef staves are vertically condensed, middle C appears on a ledger line exactly between the two staves
-2. **On the piano keyboard**: Located near the physical center of the keyboard, typically beneath the manufacturer's brand name
+- **Pitch**: concept of specific frequencies
+- **Grand staff**: the two-staff system where middle C sits between staves
+- **Piano keyboard**: physical layout where middle C is near the center
+- **ASPN**: the labeling system that designates it as C4
 
-In standard notation:
-- In treble clef: first ledger line below the staff
-- In bass clef: first ledger line above the staff
-- Can be written in either clef (same pitch, different notation)
+# Key Properties
 
-Formally: middle C = C4 = pitch class 0 at octave 4 = approximately 261.63 Hz
+- ASPN designation: C4
+- Frequency: ~261.63 Hz
+- On treble clef: first ledger line below the staff
+- On bass clef: first ledger line above the staff
+- On alto clef: middle line of the staff
+- On tenor clef: second line from the top
+- Useful as a reference point for learning all four clefs
 
-## Musical Context
+# Construction / Recognition
 
-Middle C serves multiple pedagogical and practical functions:
-- **Reference point**: Musicians use C4 to orient themselves when reading unfamiliar music
-- **Vocal range**: Sits near the boundary between typical male and female vocal registers
-- **Keyboard navigation**: Starting point for finding other pitches using ASPN
-- **Clef identification**: Helps locate the same pitch in different clefs
+On the keyboard, find the group of two black keys near the center; middle C is the white key immediately to their left. On the grand staff, it appears on the ledger line between the two staves.
 
-It's one of the most important pitches to memorize in ASPN notation.
+# Context & Application
 
-## Examples
+Middle C is one of the most important reference pitches to memorize. It serves as a starting point for finding other pitches using ASPN, for orienting oneself on a new clef, and for navigating the keyboard. It sits near the boundary between typical male and female vocal registers.
 
-### Basic
+# Examples
 
-On the grand staff:
-- When treble and bass staves are close together, middle C appears on the single ledger line between them
-- When staves are spaced apart, middle C can be written in either clef
-- Same pitch, different notation: C4 below treble staff = C4 above bass staff
+- C4 on the keyboard: near the center, under the brand name
+- C4 on the grand staff: one ledger line below treble or one ledger line above bass
+- B#3 and C4 are enharmonically equivalent but have different ASPN octave numbers
 
-On the keyboard:
-- Find the set of two black keys near the keyboard's center
-- Middle C is the white key immediately to their left
-- Usually positioned directly under the piano's brand name
+# Relationships
 
-### From Repertoire
+- **Leads to**: aspn, octave-equivalence
+- **See also**: ledger-lines, clef, grand-staff
 
-Middle C is the starting note of many beginning piano pieces. Mozart's "Sonata facile" K. 545 opens near middle C. The note serves as a common meeting point between left and right hands in piano music.
+# Common Errors
 
-## Related Concepts
+- Confusing C4 with C5 or another octave designation
+- Placing middle C on the wrong ledger line
 
-- **Prerequisite**: pitch, grand-staff, piano-keyboard, aspn
-- **Leads to**: octave-equivalence
-- **See also**: ledger-lines, treble-clef, bass-clef
+# Common Confusions
 
-## Common Confusions
+- Middle C is C4, not any other octave
+- "Middle" refers to its position on the grand staff and keyboard, not the middle of any particular vocal or instrumental range
+- B#3 and C4 are enharmonically equivalent but have different octave numbers in ASPN
 
-- Middle C is C4, not C5 or any other octave designation
-- Same pitch, different notation: ledger line below treble staff = ledger line above bass staff
-- "Middle" refers to its position on the grand staff and keyboard, not to the middle of a musical range
-- C4 and B♯3 are enharmonically equivalent but have different ASPN labels (different octave numbers)
-- Middle C can be written in either treble or bass clef without changing its pitch
+# Source Reference
 
-## Source Reference
+Open Music Theory, Part I, Chapter 4: "The Keyboard and the Grand Staff"; Chapter 6: "American Standard Pitch Notation (ASPN)"
 
-Open Music Theory, Part I, Chapter 4: "The Keyboard and the Grand Staff"
-Open Music Theory, Part I, Chapter 6: "American Standard Pitch Notation (ASPN)"
+# Verification Notes
+
+Re-extracted from v2 card; preserved: ASPN designation, frequency, positions in all four clefs, enharmonic note about B#3/C4.

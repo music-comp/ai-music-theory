@@ -1,232 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Anticipation
-category: theory
-source: Open Music Theory
-chapter: "Non-Chord Tones and Embellishments"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: anticipation
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: non-chord-tones
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Embellishing Tones"
+chapter_number: 4
+pdf_page: null
+section: "Category 3: Anticipations"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "ANT"
+  - "ant"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - embellishing-tone
+extends:
+  - embellishing-tone
+related:
+  - suspension
+contrasts_with:
+  - suspension
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is an anticipation?"
+  - "How does an anticipation differ from other embellishing tones?"
 ---
 
-# Anticipation
+# Quick Definition
 
-## Quick Definition
+An anticipation is an embellishing tone that arrives early: a chord tone of the upcoming harmony is heard as a non-chord tone in the current harmony, making it a two-note (not three-note) gesture that "anticipates" its membership in the next chord.
 
-A non-chord tone that arrives early—a note from the upcoming chord sounded before the rest of that chord arrives, typically appearing on a weak beat or weak part of the beat and approached by step, creating a subtle forward momentum by "anticipating" the arrival of the next harmony, common in cadential approaches where the melody arrives at the tonic pitch before the bass and inner voices complete the resolution.
+# Core Definition
 
-## Formal Definition
+**Anticipations** (ANT) involve static notes, like suspensions, retardations, and pedal tones, but are a *two-note* (rather than three-note) gesture in which a chord tone is heard early as a non-chord tone (OMT, Ch. IV.4). The anticipation "anticipates" its upcoming membership in a chord. This is the only embellishing tone type that departs from the standard three-note pattern.
 
-**Anticipation** (ANT or A) is a non-chord tone that:
+# Prerequisites
 
-**Characteristics**:
-- Appears **before** the chord it belongs to
-- Occurs on **weak beat** or weak part of beat
-- Usually approached by **step** (up or down)
-- Becomes **consonant** when the chord arrives
-- **Not prepared** as a consonance (unlike suspension)
-- Often resolves by **staying** on the same pitch
+- **Embellishing tone** — Anticipation is one specific type of embellishing tone
 
-**Pattern**:
-```
-Chord 1: [chord tones] → ANT (dissonant)
-         ↓
-Chord 2: ANT becomes chord tone (consonant)
-```
+# Key Properties
 
-**Metric placement**: Weak beat or offbeat (unaccented)
+1. Two-note gesture (exception to the three-note pattern)
+2. A chord tone of the NEXT chord arrives early in the CURRENT chord
+3. The anticipated note becomes consonant when the new chord arrives
+4. Involves a static note (the anticipated pitch is held or repeated into the new chord)
+5. Typically on a weaker part of the beat
 
-**Function**: Creates forward momentum, anticipates arrival
+# Construction / Recognition
 
-## Anticipation Patterns
+## To Identify:
+1. Find a non-chord tone that belongs to the NEXT chord
+2. Check: does the note arrive before the chord change?
+3. Check: does it then become a chord tone when the harmony changes?
+4. If yes: anticipation
 
-**Melodic anticipation** (most common):
-```
-     V          I
-S:   D  C      C    (C anticipated on weak beat)
-B:   G  ↓      C
+# Context & Application
 
-Soprano arrives at C before bass completes resolution
-C is non-chord tone in V, chord tone in I
-```
+- **Typical contexts**: Cadences (anticipating the tonic before it arrives); melodic embellishment
+- **Historical/stylistic notes**: Source illustrates with Josephine Lang, "Erinnerung," mm. 29-30.
 
-**Cadential anticipation**:
-```
-Measure: 1    2    3    4  |  1
-Chord:   V⁷   →    →    I-I  I
-Melody:  D    →    C    C    C
-         ↑         ↑    ↑
-         V⁷       ANT  consonant
+# Examples
 
-C arrives early on beat 3, anticipates I chord on beat 4
-```
+**Example 1** (OMT Ch. IV.4, Example 12): Anticipation in Josephine Lang, "Erinnerung," mm. 29-30.
 
-**Multiple anticipations**:
-```
-     V               I
-S:   D    C         C    (anticipation)
-A:   B    C         C    (anticipation)
-T:   G    →         E
-B:   G    →         C
+# Relationships
 
-Both soprano and alto anticipate I chord
-```
+## Builds Upon
+- **Embellishing tone** — Anticipation is a static-note embellishing tone type
 
-## Voice Leading
+## Contrasts With
+- **Suspension** — Suspension holds a note from the OLD chord into the new; anticipation arrives from the NEW chord early
 
-**Standard anticipation**:
-```
-Beat:    1    2    3    4  |  1
-         [  Chord 1   ] ANT | Chord 2
-         stronger    weak   | strong
+# Common Errors
 
-Anticipation on weak beat/subdivision
-Becomes consonant when new chord arrives
-Often stays on same pitch (no resolution needed)
-```
+- **Error**: Confusing anticipation with suspension
+  **Correction**: Suspension = old chord tone held over (strong beat, resolves down); anticipation = new chord tone arriving early (weak beat, becomes consonant)
 
-**Stepwise approach** (typical):
-```
-Chord 1: E → D → C (anticipation)
-         ↑   ↑   ↑
-         CT  CT  ANT (anticipates next chord)
+# Common Confusions
 
-Approached by step, arrives early
-```
+- **Confusion**: Expecting anticipations to follow the three-note pattern
+  **Clarification**: Anticipations are the only embellishing tone type with a two-note gesture
 
-**Leap possible** (less common):
-```
-Chord 1: E → C (anticipation)
-         leap to anticipated note
+# Source Reference
 
-Less typical, but acceptable
-```
+Open Music Theory, Part IV, Chapter 4: "Embellishing Tones," Category 3, "Anticipations." See Example 12.
 
-## Anticipation vs. Other Non-Chord Tones
+# Verification Notes
 
-**vs. Suspension**:
-- **Suspension**: Held over from previous chord, **strong beat**, resolves **down**
-- **Anticipation**: Arrives early, **weak beat**, often **stays**
-
-**vs. Passing tone**:
-- **Passing**: Fills gap between chord tones
-- **Anticipation**: Jumps ahead to next chord's note
-
-**vs. Neighbor**:
-- **Neighbor**: Returns to same note
-- **Anticipation**: Moves to note that becomes consonant in next chord
-
-## Musical Context
-
-Anticipations serve specific purposes:
-- **Forward momentum**: Creates sense of arrival
-- **Cadential smoothness**: Softens final cadences
-- **Melodic interest**: Adds subtle embellishment
-- **Weak-beat placement**: Unaccented, gentle effect
-- **Common in vocal music**: Natural anticipation of resolution
-- **Frequent at cadences**: Melody arrives before harmony completes
-
-Anticipations are subtle but effective embellishments in tonal music.
-
-## Examples
-
-### Basic
-
-**Simple anticipation at cadence** (C major):
-```
-     V          I
-S:   D - C     C    (C anticipated)
-A:   B - →     C
-T:   G - →     E
-B:   G - →     C
-
-Soprano arrives at C early (weak beat)
-Anticipates I chord arrival
-```
-
-**Stepwise approach**:
-```
-     V               I
-S:   E → D → C     C
-         ↑   ↑
-         CT  ANT
-
-D is chord tone (^2 in V)
-C arrives early as anticipation
-Becomes ^1 when I chord arrives
-```
-
-**Multiple voices anticipating**:
-```
-     V⁷              I
-S:   F → E         E    (anticipation)
-A:   D → C         C    (anticipation)
-T:   B → →         C
-B:   G → →         C
-
-Both soprano and alto anticipate I chord
-Creates smooth, early arrival
-```
-
-**In context** (phrase ending):
-```
-mm. 7-8:  IV    V⁷    ANT-I
-          F     G⁷    C
-          
-Anticipation softens cadential arrival
-Melody reaches tonic before bass
-```
-
-**Offbeat anticipation**:
-```
-Beat:     1    &    2    &    3    &    4    &  |  1
-Chord:    [    V⁷         ]         ANT        |  I
-Melody:   D              D    C               C
-
-C on "&" of 4 = anticipation
-Arrives before downbeat
-```
-
-### From Repertoire
-
-**Mozart, Piano Sonatas**: Frequent anticipations at phrase endings, melody anticipates tonic arrival while accompaniment completes cadence.
-
-**Bach, Chorales**: Anticipations in upper voices at final cadences, soprano often arrives at ^1 before other voices resolve.
-
-**Haydn, String Quartets**: Melodic anticipations create smooth phrase endings, particularly in slow movements.
-
-**Popular music/hymns**: Anticipations very common at phrase endings, vocal melody anticipates final chord.
-
-**Brahms, songs**: Anticipations in vocal line create natural text setting, arrives at cadential tones early for expressive effect.
-
-## Related Concepts
-
-- **Prerequisite**: consonance-dissonance, cadence
-- **Leads to**: nonharmonic-tones, harmonic-embellishment
-- **See also**: suspension, passing-tone, neighbor-tone, escape-tone
-
-## Common Confusions
-
-- Anticipation = note from next chord arrives **early**
-- Appears on **weak beat** (unaccented)
-- Usually approached by **step** (up or down)
-- **Not prepared** as consonance (unlike suspension)
-- Becomes consonant when next chord arrives
-- Often **stays** on same pitch (no resolution by leap/step needed)
-- Most common at **cadences** (melody arrives before harmony)
-- Opposite of suspension (suspension holds over, anticipation arrives early)
-- Creates forward momentum (looks ahead to next chord)
-- Can occur in multiple voices simultaneously
-- Stepwise approach most common, but leap possible
-- Unaccented (weak beat or offbeat placement)
-- Brief duration (doesn't last long before chord changes)
-- "ANT" or "A" abbreviation in analysis
-- Not to be confused with appoggiatura (which is accented)
-- Different from escape tone (escape leaves by leap)
-- Natural in vocal music (singers anticipate resolution)
-- Subtle embellishment (less dramatic than suspension)
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Non-Chord Tones: Embellishing Tones"
+- Definition source: Direct from OMT Ch. IV.4
+- Confidence rationale: HIGH — explicit definition
+- Re-extraction notes: Re-extracted from v2 card; preserved: contrast with suspension, two-note gesture distinction. Old card had extensive content beyond source; trimmed.

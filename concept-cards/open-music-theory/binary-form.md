@@ -1,114 +1,110 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Binary Form
+slug: binary-form
+
+# === CLASSIFICATION ===
 category: form
-source: Open Music Theory
-chapter: "Binary Form"
-pdf_page: null
-chapter_number: 3
-unit: null
+subcategory: sectional-forms
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Binary Form"
+chapter_number: 6
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - phrase
+  - cadence
+extends: []
+related:
+  - ternary-form
+  - sonata-form
+  - rounded-binary
+  - simple-binary
+  - balanced-binary
+contrasts_with:
+  - ternary-form
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the two types of binary form?"
+  - "What is the difference between rounded and simple binary?"
+  - "What does it mean for a binary form to be 'balanced'?"
 ---
 
-# Binary Form
+# Quick Definition
+A two-part form with two reprises (each typically repeated), classified as either rounded (opening material returns in the home key mid-second reprise) or simple (no substantial return), with an optional balanced aspect where the tail end of the first reprise returns at the end of the second.
 
-## Quick Definition
+# Core Definition
+**Binary form** has two main parts called **reprises**, each typically repeated. Two subtypes: **Rounded binary** (||:A:||:BA':||) -- the beginning of A returns in the home key somewhere in the second reprise; **Simple binary** (||:A:||:A':|| or ||:A:||:B:||) -- no substantial return of opening material. Either type may be **balanced**: the tail end of the first reprise returns at the tail end of the second, transposed to the home key. The first reprise is typically stable; the beginning of the second is unstable (sometimes called "digression"); the end returns to stability. Binary form is "typically one of the shorter forms" and is often embedded within compound ternary forms (Ch. 6).
 
-A musical form with two main sections (reprises), each typically repeated, common in Baroque and Classical dance movements.
+# Prerequisites
+- **Phrase** -- Binary sections are composed of phrases
+- **Cadence** -- Each reprise typically ends with a standard cadence
 
-## Formal Definition
+# Key Properties
+1. Two reprises, each usually repeated
+2. Rounded: A returns mid-second reprise in home key
+3. Simple: no return of A; second reprise is A' or B
+4. Balanced: tail end of first reprise returns at tail end of second (in home key)
+5. First reprise may be harmonically open (modulating) or closed
+6. Second reprise must end with authentic cadence in original key
+7. Common in dance music (17th-19th century)
+8. Often embedded in compound ternary form
 
-**Binary form** is a formal structure consisting of two main parts, called **reprises**, each of which is typically repeated. Binary forms were prevalent in 17th-, 18th-, and 19th-century repertoire, especially in dance music, and often serve as components of larger compound forms.
+# Construction / Recognition
+## To Identify Binary Form:
+1. Look for two reprises (repeat signs or written-out repeats)
+2. Check if A material returns in the second reprise (rounded) or not (simple)
+3. If the tail end of reprise 1 returns at the tail end of reprise 2: balanced
+4. Check harmonic plan: first reprise may modulate; second must return to home key
+## Rounded vs. Simple:
+- If the beginning of A returns in the home key mid-second reprise: rounded
+- If no substantial return: simple
 
-**Two types**:
-1. **Rounded binary**: Second reprise includes a return of opening material (A) in the home key
-   - Structure: ||: A :||: B A' :||
-   - Return of A material in middle of second reprise
+# Context & Application
+Binary form is foundational to understanding larger forms. Sonata form can be understood as "a complex manifestation of a harmonically open, rounded binary form that is also balanced" (Ch. 8). Dance movements (minuets, bourrées, sarabandes) are frequently in binary form.
 
-2. **Simple binary**: No substantial return of opening material in second reprise
-   - Structure: ||: A :||: A' :|| (continuation of A material)
-   - Or: ||: A :||: B :|| (contrasting material)
+# Examples
+**Example 1** (Ch. 6, Example 4): Mozart, Symphony No. 25, 3rd movement, Menuetto -- rounded binary with HC before A' return at m. 21.
 
-**Additional feature**:
-- **Balanced binary**: Opening material returns at the end of both reprises (marked with x in analysis)
+**Example 2** (Ch. 6, Example 6): Bach, Bourrée from Lute Suite BWV 996 -- simple binary where second reprise continues A's ideas without clear return.
 
-**Repeat structure**:
-- First reprise repeated
-- Second reprise repeated
-- Listener hears: A A B B (or A A B A' B A' in rounded binary)
-- 17th-18th century: Repeat signs in score, improvised decoration expected
-- 19th century: Written-out repeats with specified variations
+**Example 3** (Ch. 6, Example 8): Scarlatti, Sonata K. 322 -- simple balanced binary with 24 measures of balancing material.
 
-**Typical characteristics**:
-- First reprise (A): Main thematic material, often modulates to dominant or relative major
-- Second reprise: Begins away from tonic, may feature sequences, chromaticism, or dominant pedals
-- Rounded binary: Return of A in home key, often preceded by half cadence
-- Simple binary: Continues with similar (A') or contrasting (B) material throughout
+# Relationships
+## Enables
+- **sonata-form** -- Complex manifestation of rounded balanced binary
+- **ternary-form** -- Binary often embedded in compound ternary
+## Related
+- **rounded-binary** -- Subtype with return of A
+- **simple-binary** -- Subtype without return
+## Contrasts With
+- **ternary-form** -- ABA with independent sections vs. two reprises
 
-## Musical Context
+# Common Errors
+- **Error**: Calling any two-section piece "binary form"
+  **Correction**: Binary form specifically involves two reprises with the harmonic and thematic conventions described
 
-Binary form served important structural functions:
+# Common Confusions
+- **Confusion**: Rounded binary and ternary form are the same
+  **Clarification**: Rounded binary has two reprises with the return of A within the second reprise; ternary has three independent sections (ABA)
 
-**Historical context**:
-- Common in Baroque dance suites (Bach, Handel)
-- Standard in Classical minuets and trios
-- Continued use in 19th-century character pieces
-- Foundation for larger forms (rounded binary → early sonata form)
+# Source Reference
+Open Music Theory, Part III, Chapter 6: "Binary Form."
 
-**Compositional uses**:
-- Dance movements (minuet, bourrée, sarabande, gigue, etc.)
-- Character pieces and intermezzi
-- Component of compound ternary form (minuet-trio-minuet)
-- Simple, self-contained formal structure
-
-**Relationship to other forms**:
-- Rounded binary related to early sonata form
-- Often embedded within ternary structures
-- Can be expanded into compound forms
-- Minuet and trio each typically in binary form
-
-## Examples
-
-### Basic
-
-**Rounded binary structure**:
-- ||: A (tonic to dominant, 8 bars) :||
-- ||: B (developmental, 4 bars) + A' (return in tonic, 8 bars) :||
-
-**Simple binary structure**:
-- ||: A (tonic to dominant, 8 bars) :||
-- ||: A' (continues A material, 8 bars) :||
-
-### From Repertoire
-
-**Rounded binary**:
-- **Mozart, Symphony No. 25, III (Menuetto)**: Clear rounded binary with B section and return of A
-- **Beethoven, Piano Sonatas**: Many minuets in rounded binary
-- **Chopin, Polonaise Op. 40, No. 1**: Rounded binary with elided return
-
-**Simple binary**:
-- **Bach, Lute Suite BWV 996, Bourrée**: Simple binary with A' continuation
-- **Bach, French Suites**: Many dance movements in simple binary
-- **Handel, Keyboard Suites**: Binary forms throughout
-
-## Related Concepts
-
-- **Prerequisite**: phrase, cadence, modulation, home-key
-- **Leads to**: ternary-form, compound-ternary, sonata-form
-- **See also**: rounded-binary, simple-binary, balanced-binary, trio
-
-## Common Confusions
-
-- Binary means two main parts (reprises), not two phrases
-- Both reprises are typically repeated—this doesn't make it "four-part form"
-- Rounded vs. simple: Rounded has return of A in second reprise; simple doesn't
-- Rounded binary ≠ ternary form (ternary has three separate sections, binary has two reprises)
-- "Balanced" is a feature that can appear in both rounded and simple binary
-- The return in rounded binary must be in the home key
-- Second reprise often longer than first reprise (especially in rounded binary)
-- Not every two-section piece is binary form—must have the characteristic reprise structure
-- Repeat signs indicate performer should repeat, not that material is literally repeated in score
-- 19th-century binary forms often write out repeats with variations
-
-## Source Reference
-
-Open Music Theory, Part III, Chapter 6: "Binary Form"
+# Verification Notes
+- Re-extracted from v2 card; preserved: rounded/simple/balanced distinction, Mozart/Bach/Scarlatti examples
+- Confidence: HIGH -- chapter-length treatment

@@ -1,87 +1,103 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Caesura
-category: theory
-source: Open Music Theory
-chapter: "Other Aspects of Notation"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: caesura
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: notation
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Other Aspects of Notation"
+chapter_number: 7
+pdf_page: null
+section: "Structural Features"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "railroad tracks"
+  - "tram lines"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - note
+  - rest-values
+extends: []
+related:
+  - fermata
+  - repeat-signs
+contrasts_with:
+  - fermata
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a caesura?"
+  - "How does a caesura differ from a fermata?"
+  - "What does the caesura symbol look like?"
 ---
 
-# Caesura
+# Quick Definition
 
-## Quick Definition
+A symbol (//) indicating a break or complete musical cutoff, creating a moment of silence before the music resumes.
 
-A symbol indicating a break or complete cutoff in the musical flow, notated as parallel diagonal lines (//) placed above the staff, marking a point where sound stops completely before resuming.
+# Core Definition
 
-## Formal Definition
+A **caesura** is a structural marking notated as two parallel diagonal lines (//) placed above the staff, indicating a break or musical cutoff. All sound stops completely, creating a brief moment of silence before the music continues. The duration of the silence is context-dependent. A caesura creates stronger separation than a breath mark.
 
-A **caesura** (plural: _caesurae_ or _caesuras_) is a structural marking that indicates a definite break, pause, or musical cutoff. It is notated with two parallel diagonal lines (//), sometimes called "railroad tracks" or "tram lines," placed above the staff.
+# Prerequisites
 
-Symbol: // (double diagonal lines above the staff)
+- **Note**: the musical context surrounding the break
+- **Rest values**: understanding of silence in music
 
-**Characteristics**:
+# Key Properties
+
+- Symbol: // (double diagonal lines above the staff)
 - Indicates complete cessation of sound
-- Creates formal or dramatic separation between musical ideas
 - Duration of silence is context-dependent (usually brief)
-- Stronger separation than a breath mark
-- Often coincides with ends of phrases or sections
+- Stronger than a breath mark
+- All voices/instruments stop
 
-**Effect**:
-- All sound stops (unlike fermata, which prolongs)
-- Brief moment of silence before continuing
-- Creates rhetorical emphasis through interruption
-- May or may not align with barlines
+# Construction / Recognition
 
-## Musical Context
+The caesura symbol (//) appears above the staff at the point where the break occurs.
 
-Caesurae serve dramatic and structural functions:
-- Mark significant formal divisions (between sections, movements)
-- Create dramatic tension through sudden silence
-- Separate contrasting musical ideas
-- Allow time for musical "reset" (change of character, tempo, dynamics)
-- Provide theatrical pause in vocal or programmatic music
-- Emphasize the arrival point or what follows
+# Context & Application
 
-The caesura is a punctuation mark in musical rhetoric, analogous to a period or dash in written language.
+Caesurae mark significant formal divisions, create dramatic tension through sudden silence, separate contrasting musical ideas, and allow time for a musical "reset" (change of character, tempo, or dynamics). The caesura functions like a period or dash in written language.
 
-## Examples
+# Examples
 
-### Basic
-
-Typical usage:
 - Between contrasting sections of a piece
-- Before a sudden change in character or tempo
 - After a climactic moment before resolution
-- At the end of an improvised cadenza (before orchestra re-enters)
-- Between verses or sections in vocal music
+- After a cadenza, before the orchestra re-enters
+- A "general pause" (G.P.) in orchestral music serves a similar function
 
-Effect:
-- Music stops completely (all voices/instruments)
-- Brief silence (typically less than one beat)
-- Performers lift hands/stop sound
-- Resume with next written note
+# Relationships
 
-### From Repertoire
+- **Leads to**: phrase, form
+- **See also**: fermata, repeat-signs
 
-Mozart's piano concertos: caesura after cadenza before orchestra re-entry. Beethoven's symphonies: dramatic caesuras before powerful final statements. Chopin's ballades: caesura between sections of contrasting character. Wagner's operas: caesura for dramatic effect between musical phrases.
+# Common Errors
 
-## Related Concepts
+- Treating a caesura as having a precise, fixed duration (it is flexible)
 
-- **Prerequisite**: phrase, rests
-- **Leads to**: srdc-phrase-structure
-- **See also**: fermata
+# Common Confusions
 
-## Common Confusions
+- Caesura vs. fermata: caesura = cutoff/silence; fermata = prolong a note or rest
+- Caesura vs. breath mark: caesura = complete stop; breath mark = brief, lighter separation
+- Caesura vs. rest: a rest has defined duration; a caesura's silence is flexible
 
-- Caesura vs. fermata: caesura = cutoff/silence; fermata = prolong a note
-- Caesura vs. breath mark: caesura = complete stop; breath mark = brief separation
-- Caesura doesn't have precise duration (context-dependent, usually brief)
-- Double barlines mark section ends; caesura marks breaks within or between sections
-- Caesura is not the same as a rest (rest has defined duration; caesura's silence is flexible)
-- Symbol varies: // (most common), sometimes single slash /, or "G.P." (general pause)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 7: "Other Aspects of Notation"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: symbol description, distinction from fermata and breath mark, G.P. mention.

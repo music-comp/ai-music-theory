@@ -1,245 +1,109 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Secondary Dominant
-category: theory
-source: Open Music Theory
-chapter: "Chromatic Harmony: Secondary Dominants"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: secondary-dominant
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: chromatic-harmony
+tier: advanced
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Tonicization"
+chapter_number: 15
+pdf_page: null
+section: "Secondary dominant chords (V(7)/V)"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "V/x"
+  - "V7/x"
+  - "applied dominant"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tonicization
+  - applied-chord
+extends:
+  - applied-chord
+related:
+  - secondary-leading-tone-chord
+contrasts_with:
+  - secondary-leading-tone-chord
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a secondary dominant?"
+  - "How do I identify a secondary dominant chord?"
 ---
 
-# Secondary Dominant
+# Quick Definition
 
-## Quick Definition
+A secondary dominant is a major triad or dominant seventh chord (V/x or V7/x) that functions as the dominant of a diatonic chord other than the tonic, creating tonicization. It is the most common type of applied chord.
 
-A dominant seventh chord (or dominant triad) built on a scale degree other than the tonic's dominant, temporarily tonicizing a diatonic chord by approaching it as if it were a temporary tonic, notated as "V/x" or "V⁷/x" where x is the target chord—for example, V/V (dominant of the dominant) in C major is D or D⁷ leading to G, introducing chromatic notes (especially raised pitches creating temporary leading tones) that add harmonic color and forward momentum while expanding tonal vocabulary beyond strictly diatonic resources.
+# Core Definition
 
-## Formal Definition
+**Secondary dominant chords** (V/x, V7/x) are major triads or dominant seventh chords that tonicize non-tonic diatonic chords (OMT, Ch. IV.15). They are identified by their quality: if a chromatic chord is a major triad or dominant seventh, it receives the label V(7)/x.
 
-**Secondary dominant** is a chord that functions as the dominant (V or V⁷) of a diatonic chord other than the tonic, temporarily establishing that chord as a local tonic.
+V/V is the most common secondary dominant. The frequency of tonicization correlates with the frequency of the target chord in general usage.
 
-**Notation**: V/x or V⁷/x
-- V = dominant function
-- / = "of"
-- x = target chord (temporary tonic)
+# Prerequisites
 
-**Example in C major**:
-- **V/V** = D or D⁷ (dominant OF the dominant G)
-- **V/ii** = A or A⁷ (dominant OF ii, which is Dm)
-- **V/IV** = C or C⁷ (dominant OF IV, which is F)
+- **Tonicization** — Secondary dominants are the mechanism of tonicization
+- **Applied chord** — Secondary dominant is one type of applied chord
 
-**Function**: Temporarily tonicizes target chord through dominant approach
+# Key Properties
 
-## Common Secondary Dominants
+1. Quality: major triad or dominant seventh (Mm7)
+2. Most common applied chord type
+3. V/V most frequent; V/ii, V/vi, V/IV also very common
+4. Introduces chromatic notes (typically raised pitches creating temporary leading tones)
+5. Secondary leading tone resolves UP; secondary seventh resolves DOWN
+6. Exception: secondary leading tone may resolve DOWN when target is itself a seventh chord
 
-**In major keys** (C major example):
+# Construction / Recognition
 
-**V/V** (or V⁷/V):
-- Chord: D (or D-F#-A-C)
-- Target: V (G major)
-- Progression: D⁷ → G
-- Introduces F# (raised ^4)
+## To Identify:
+1. Find a chromatic chord
+2. Check quality: is it a major triad or dominant seventh?
+3. If yes: it is V(7)/x
+4. Determine x: in what key is this chord V? That key's tonic = x
 
-**V/ii** (or V⁷/ii):
-- Chord: A (or A-C#-E-G)
-- Target: ii (Dm)
-- Progression: A⁷ → Dm
-- Introduces C# (raised ^1)
+## To Spell:
+1. Find root of target chord
+2. Build V7 in the key of that root
 
-**V/vi** (or V⁷/vi):
-- Chord: E (or E-G#-B-D)
-- Target: vi (Am)
-- Progression: E⁷ → Am
-- Introduces G# (raised ^5)
+# Examples
 
-**V/IV** (or V⁷/IV):
-- Chord: C (or C-E-G-Bb)
-- Target: IV (F major)
-- Progression: C⁷ → F
-- Introduces Bb (lowered ^7)
+**Example 1** (OMT Ch. IV.15, Examples 1-2): V6/5/V in Joseph Bologne, tonicizing V at a half cadence in Bb major.
 
-**V/iii** (or V⁷/iii):
-- Chord: B (or B-D#-F#-A)
-- Target: iii (Em)
-- Progression: B⁷ → Em
-- Introduces D#, F# (raised ^2, ^4)
+**Example 2** (OMT Ch. IV.15, Example 8): V7/IV in Joseph Bologne — tonic triad + ^b7 = V7/IV.
 
-## Chromaticism and Voice Leading
+# Relationships
 
-**Chromatic alterations**:
-- Secondary dominants introduce chromatic notes
-- **Most common**: Raised note to create temporary leading tone
-- Example: V⁷/V in C major uses F# (raised ^4) to lead to G
+## Builds Upon
+- **Applied chord** — Secondary dominant is the V/x subtype
 
-**Voice leading**:
-```
-V⁷/V → V in C major:
-D⁷ (D-F#-A-C) → G (G-B-D)
+## Contrasts With
+- **Secondary leading-tone chord** — vii-o/x is the other type of applied chord (diminished quality)
 
-Soprano: C → B    (^4 → ^7 of C, or ^1 of G)
-Alto:    A → D    (step or leap)
-Tenor:   F# → G   (temporary leading tone resolves UP!)
-Bass:    D → G    (^2 → ^5 of C major)
+# Common Confusions
 
-F# functions as leading tone TO G (temporary tonic)
-```
+- **Confusion**: Thinking "secondary dominant" and "applied chord" are synonymous
+  **Clarification**: Secondary dominant = V/x type only; applied chord = umbrella term including both V/x and vii-o/x
 
-**Tendency tone resolution**:
-- Temporary leading tone (F# in V/V) resolves UP
-- Chordal seventh resolves DOWN
-- Same voice leading as primary V⁷
+# Source Reference
 
-## Tonicization vs. Modulation
+Open Music Theory, Part IV, Chapter 15: "Tonicization," section "Secondary dominant chords." See Examples 1-2, 5, 8, 12.
 
-**Tonicization** (secondary dominant creates):
-- **Brief**: Temporary establishment of new tonic
-- **Local**: Doesn't change overall key
-- **Returns**: Quickly returns to primary tonic
-- Created by single secondary dominant or brief progression
+# Verification Notes
 
-**Modulation**:
-- **Extended**: Sustained establishment of new key
-- **Structural**: Changes overall tonal center
-- **Cadential**: Authentic cadence confirms new key
-- Requires more than single chord
-
-**Secondary dominants create tonicization, not modulation**
-
-## Analytical Notation
-
-**Roman numeral analysis**:
-```
-In C major:
-I - V⁷/V - V - I
-C   D⁷     G   C
-
-"Five-seven of five" (V⁷/V) tonicizes V
-```
-
-**Figured bass**:
-```
-V⁷/V shown with quality: M-m7 (major triad + minor seventh)
-```
-
-**Slash notation**:
-- V/V = "five of five"
-- V⁷/ii = "five-seven of two"
-- vii°/vi = "seven-diminished of six"
-
-## Common Progressions
-
-**V/V in cadential approach**:
-```
-I - V⁷/V - V - I
-C   D⁷     G   C
-
-Chromatic approach to dominant
-```
-
-**Chain of secondary dominants**:
-```
-I - V⁷/IV - IV - V⁷/V - V - I
-C   C⁷      F    D⁷     G   C
-
-Multiple tonicizations in sequence
-```
-
-**V/ii in predominant expansion**:
-```
-I - V⁷/ii - ii - V - I
-C   A⁷      Dm   G   C
-
-Strengthens approach to ii (predominant)
-```
-
-## Musical Context
-
-Secondary dominants serve specific purposes:
-- **Harmonic color**: Add chromaticism and interest
-- **Forward momentum**: Increased harmonic drive through tonicization
-- **Expanded vocabulary**: Beyond diatonic resources
-- **Temporary tonicization**: Brief emphasis on diatonic chords
-- **Voice leading variety**: Chromatic voice leading
-- **Expressive intensification**: Heightened emotional effect
-
-Universal in common-practice music from Baroque through Romantic periods.
-
-## Examples
-
-### Basic
-
-**V/V in C major**:
-```
-Progression: I - V⁷/V - V - I
-Chords:      C   D⁷     G   C
-
-D⁷ (D-F#-A-C) tonicizes G
-F# is chromatic (raised ^4)
-```
-
-**V/ii in C major**:
-```
-Progression: V⁷/ii - ii  - V - I
-Chords:      A⁷      Dm    G   C
-
-A⁷ (A-C#-E-G) tonicizes Dm
-C# is chromatic (raised ^1)
-```
-
-**V/vi (common in popular music)**:
-```
-Progression: I - V/vi - vi - IV
-Chords (C):  C   E      Am   F
-
-E major tonicizes Am
-G# is chromatic (raised ^5)
-```
-
-**Chain of secondary dominants**:
-```
-V⁷/iii → iii → V⁷/vi → vi → V⁷/ii → ii → V → I
-
-Sequence of tonicizations
-```
-
-### From Repertoire
-
-**Bach, Well-Tempered Clavier, various preludes/fugues**: Extensive use of secondary dominants, V/V particularly common at cadences, creates harmonic richness.
-
-**Mozart, Piano Sonata K. 545, I**: V⁷/V appears before dominant arrival, chromatic approach to G major (V in C major).
-
-**Beethoven, Piano Sonatas**: Frequent secondary dominants, especially V/ii and V/V, expands harmonic vocabulary beyond strictly diatonic.
-
-**Bach, Chorales**: Secondary dominants add chromatic color, V/V most common, demonstrates Baroque harmonic practice.
-
-**Romantic era (Chopin, Schumann)**: Increased use of secondary dominants, chains of tonicizations, prepares ground for later chromatic harmony.
-
-## Related Concepts
-
-- **Prerequisite**: dominant-seventh-chord, ii-v-i-progression, tonicization, chromatic-alteration, voice-leading
-- **Leads to**: applied-chord, modulation, chromatic-harmony, tonicization-vs-modulation
-- **See also**: secondary-leading-tone-chord, applied-dominant
-
-## Common Confusions
-
-- Secondary dominant = V or V⁷ OF a diatonic chord (not tonic)
-- Notation: V/V = "five of five" (dominant of the dominant)
-- Introduces chromatic notes (usually raised to create temporary leading tone)
-- V/V in C major = D or D⁷ (not G, which IS the dominant)
-- Creates tonicization (temporary), not modulation (permanent key change)
-- Temporary leading tone resolves UP (like primary leading tone)
-- "Applied chord" = alternate term for secondary dominant/diminished
-- Can apply to any diatonic chord except diminished vii° (can't be tonicized)
-- V/I would just be V (redundant; already dominant of tonic)
-- Most common: V/V, V/ii, V/vi, V/IV
-- Seventh recommended (V⁷/x stronger than plain V/x)
-- Not a modulation if brief and returns to primary key
-- Voice leading same as primary V⁷ (tendency tones resolve correctly)
-- Adds harmonic color without leaving key
-- "Secondary" because secondary to primary V (which goes to I)
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "Chromatic Harmony and Secondary Dominants"
+- Definition source: Direct from OMT Ch. IV.15
+- Confidence rationale: HIGH — explicit definition
+- Re-extraction notes: Re-extracted from v2 card; preserved: quality-based identification, resolution exceptions.

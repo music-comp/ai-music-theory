@@ -1,102 +1,89 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Similar Motion
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Species Counterpoint"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: similar-motion
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: voice-motion
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Species Counterpoint"
+chapter_number: 1
+pdf_page: null
+section: "Types of motion"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval
+extends: []
+related:
+  - parallel-motion
+  - contrary-motion
+  - oblique-motion
+contrasts_with:
+  - contrary-motion
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is similar motion and how does it differ from parallel motion?"
+  - "What restrictions apply to similar motion in species counterpoint?"
 ---
 
-# Similar Motion
+# Quick Definition
+Similar motion occurs when two parts move in the same direction by different intervals, maintaining the same general trajectory but arriving at a different interval type -- use should be moderated by avoiding approach to perfect consonances (direct fifths/octaves).
 
-## Quick Definition
+# Core Definition
+**Similar motion** is when "the two parts move in the same direction (both up or both down)" but by different amounts (unlike parallel motion, where the interval stays the same). Similar and parallel motion "diminish variety and melodic independence" and should be moderated. Key restriction: "Never move into a perfect consonance by similar motion (this is called direct fifths/octaves)" because "this draws too much attention to an interval that already stands out of the texture" (Ch. 2). Avoid combining similar motion with leaps, especially large ones.
 
-When two voices move in the same direction (both up or both down) but by different interval sizes.
+# Prerequisites
+- **Interval** -- Must understand intervals to analyze motion types
 
-## Formal Definition
+# Key Properties
+1. Both voices move in the same direction
+2. By different amounts (unlike parallel motion)
+3. Diminishes variety and independence compared to contrary motion
+4. Direct fifths/octaves (similar motion into P5 or P8) should be avoided
+5. Avoid combining similar motion with large leaps
 
-**Similar motion** (also called direct motion) is a type of motion between two voices in which both voices move in the same direction—both ascending or both descending—but by different generic intervals, resulting in different interval types between the voices before and after the motion.
+# Construction / Recognition
+## To Identify:
+1. Check if both voices move in the same direction
+2. If the interval type changes: similar motion (not parallel)
 
-Characteristics:
-- Both voices move in the same direction (both up or both down)
-- The voices move by different interval sizes
-- The interval between the voices changes
+# Context & Application
+Similar motion is permitted but should be used carefully. It is less problematic than parallel motion because the changing interval type maintains some variety, but the same-direction movement still reduces independence.
 
-Example:
-- Voice 1: C → E (ascending third)
-- Voice 2: G → A (ascending second)
-Interval before: P5; Interval after: M6 (similar motion)
+# Examples
+**Example 1** (Ch. 1, Example 2): Notation showing similar motion alongside other types.
 
-Types of motion between voices:
-1. **Similar**: Same direction, different intervals (this concept)
-2. **Parallel**: Same direction, same interval type maintained
-3. **Contrary**: Opposite directions
-4. **Oblique**: One voice moves, the other stays on the same pitch
+# Relationships
+## Related
+- **parallel-motion** -- Similar motion where the interval stays the same
+## Contrasts With
+- **contrary-motion** -- Opposite directions; preferred
 
-## Musical Context
+# Common Errors
+- **Error**: Moving into a perfect consonance by similar motion (direct 5ths/8ves)
+  **Correction**: Approach perfect consonances by contrary or oblique motion
 
-Similar motion has a special status in voice leading:
+# Common Confusions
+- **Confusion**: Similar and parallel motion are identical
+  **Clarification**: Parallel maintains the same interval type; similar changes it
 
-**Advantages**:
-- Creates a sense of unified direction
-- More variety than parallel motion (intervals change)
-- Natural in melodic writing
+# Source Reference
+Open Music Theory, Part II, Chapters 1-2.
 
-**Restrictions**:
-- **Direct (or hidden) fifths/octaves**: Similar motion INTO a perfect fifth or octave is generally avoided, especially when the upper voice leaps. This creates an effect similar to parallel fifths/octaves and diminishes voice independence.
-- When both voices leap in similar motion, it can sound ungainly and reduce melodic smoothness
-
-**Best practices**:
-- Prefer contrary motion when possible
-- If using similar motion, approach imperfect consonances (thirds, sixths) rather than perfect consonances
-- If moving to a perfect consonance by similar motion, keep at least one voice moving by step (preferably the upper voice)
-
-Similar motion is less problematic than parallel motion but requires more care than contrary motion.
-
-## Examples
-
-### Basic
-
-**Acceptable similar motion**:
-- Upper: C → E (third)
-- Lower: A → C (third)
-(M3 → M3, but different motions = similar, not parallel)
-
-Actually, that's parallel! Let me fix:
-
-**Similar motion into imperfect consonance** (good):
-- Upper: C → D (step)
-- Lower: A → B (step)
-(M3 → m3)
-
-**Direct fifth** (avoid):
-- Upper: C → G (leap of fifth)
-- Lower: F → C (leap of fifth)
-(P4 → P5) ❌
-
-### From Repertoire
-
-- Classical voice leading: Similar motion is acceptable when approaching thirds and sixths
-- Bach chorales: Careful to avoid direct fifths and octaves
-- Direct octaves are sometimes found when the soprano moves by step (less problematic)
-- Popular music is less strict about direct fifths/octaves
-
-## Related Concepts
-
-- **Prerequisite**: interval
-- **Leads to**: voice-leading, parallel-motion, contrary-motion
-- **See also**: counterpoint
-
-## Common Confusions
-
-- Similar vs. parallel: Similar = same direction, different intervals; Parallel = same direction, same interval type
-- Not all similar motion is bad—only similar motion into perfect consonances (direct fifths/octaves) is problematic
-- Direct fifths are less problematic when the soprano moves by step (the leap in the bass is less noticeable)
-- The term "direct motion" is synonymous with "similar motion"
-- Popular and contemporary music often allows direct fifths/octaves that would be avoided in strict counterpoint
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 1: "Introduction to Species Counterpoint"
+# Verification Notes
+- Re-extracted from v2 card; no unique content lost
+- Confidence: HIGH -- explicitly defined

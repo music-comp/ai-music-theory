@@ -1,62 +1,75 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Backbeat
-category: theory
-source: Open Music Theory
-chapter: "Swing Rhythms"
-pdf_page: null
-chapter_number: 6
-unit: null
+slug: backbeat
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: pop-rhythm
+tier: mixed
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Drumbeats"
+chapter_number: 99
+pdf_page: null
+section: "Supplementary"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - meter
+extends: []
+related:
+  - ostinato
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a backbeat?"
+  - "What is its role in pop drumbeats?"
 ---
 
-# Backbeat
+# Quick Definition
+The backbeat is an accented articulation on beats 2 and 4 in quadruple meter, usually played by the snare drum. It is common to most pop drumbeats and is the rhythmic cornerstone of rock, rap, and many other popular genres.
 
-## Quick Definition
+# Core Definition
+The backbeat accents beats 2 and 4, creating a sense of forward momentum and groove that defines much popular music. In a basic rock beat, the kick drum plays on beats 1 and 3, the snare provides the backbeat on beats 2 and 4, and the hi-hat plays a steady pulse. Common drumbeat patterns include basic rock beat, double-time, half-time, four-on-the-floor, and dembow. Simple triple meter in pop often has a snare hit on beat 3. The drum kit consists of snare, kick, toms, ride cymbal, hi-hat, and crash/accent cymbals.
 
-An accent on beats 2 and 4 in quadruple meter, reversing the typical strong-weak pattern of classical music.
+# Prerequisites
+- Meter (understanding beats in quadruple time)
 
-## Formal Definition
+# Key Properties
+1. Accent on beats 2 and 4 in quadruple meter
+2. Usually played by snare drum
+3. Kick drum on beats 1 and 3 (basic pattern)
+4. Hi-hat/ride provides steady pulse
+5. Common drumbeat variants: basic rock, double-time, half-time, four-on-the-floor, dembow
+6. Quadruple meter is by far the most common in pop
 
-The **backbeat** is a rhythmic pattern that places accents on beats 2 and 4 of a 4/4 measure, rather than on the traditionally strong beats 1 and 3. This creates a characteristic syncopation that is fundamental to jazz, rock, and most forms of popular music.
+# Context & Application
+The backbeat is so ubiquitous in popular music that its presence often confirms the meter for listeners. It contrasts with classical music, where beat 1 typically receives the primary accent.
 
-Key characteristics:
-- Accents fall on the "weak" beats (2 and 4)
-- Typically played on the hi-hat, snare drum, or emphasized by the entire rhythm section
-- Beat 1 remains structurally important (chord changes, bass roots) but may not be the loudest
-- Combined with swing eighths to form the standard swing drum pattern
+# Examples
+**Example 1**: Basic rock beat: kick on 1 and 3, snare on 2 and 4, hi-hat on every eighth note.
+**Example 2**: Four-on-the-floor: kick on every beat, snare backbeat on 2 and 4.
 
-## Musical Context
+# Relationships
+## Builds Upon
+- **meter** -- Backbeat is a specific metric accent pattern
+## Related
+- **ostinato** -- Drumbeat patterns are rhythmic ostinatos
 
-The backbeat fundamentally changed Western music's rhythmic feel in the 20th century. While classical music emphasizes beats 1 and 3, jazz and popular music flip this expectation. In a standard swing drum pattern, the closed hi-hat cymbal marks the backbeat while the ride cymbal plays swing eighths.
+# Common Confusions
+- **Confusion**: The backbeat is a "wrong" accent
+  **Clarification**: In pop contexts, the backbeat is the primary rhythmic marker, not a deviation
 
-When listening to or performing jazz, tapping along to beats 2 and 4 (the backbeat) rather than 1 and 3 helps internalize the jazz rhythmic feel.
+# Source Reference
+Open Music Theory, Supplementary Chapter: "Drumbeats."
 
-## Examples
-
-### Basic
-
-In 4/4 time:
-- Beat 1: (no accent)
-- Beat 2: ACCENT (hi-hat/snare)
-- Beat 3: (no accent)
-- Beat 4: ACCENT (hi-hat/snare)
-
-### From Repertoire
-
-The backbeat is ubiquitous in jazz from the swing era onward. It is particularly audible in big band recordings where the hi-hat or snare clearly marks beats 2 and 4. Rock and R&B music inherited the backbeat from jazz and blues traditions.
-
-## Related Concepts
-
-- **Prerequisite**: beat, meter
-- **See also**: swing-eighths, syncopation
-
-## Common Confusions
-
-- The backbeat does NOT mean beat 1 is unimportant; structural events (chord changes, phrase beginnings) still occur on beat 1
-- The backbeat is a form of syncopation because it subverts the expected metric hierarchy
-- Not all jazz uses a backbeat, but it is extremely common in swing and later styles
-- In some Latin jazz styles, different accent patterns prevail
-
-## Source Reference
-
-Open Music Theory, Part VI, Chapter 1: "Swing Rhythms"
+# Verification Notes
+- Definition source: From 99-07
+- Confidence rationale: High
+- Preserved from v2: Basic definition, drum kit context
+- Cross-reference status: Verified

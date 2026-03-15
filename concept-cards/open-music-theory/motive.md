@@ -1,140 +1,96 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Motive
+slug: motive
+
+# === CLASSIFICATION ===
 category: form
-source: Open Music Theory
-chapter: "Foundational Concepts for Phrase-Level Forms"
-pdf_page: null
-chapter_number: 3
-unit: null
+subcategory: phrase-level
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Foundational Concepts for Phrase-Level Forms"
+chapter_number: 1
+pdf_page: null
+section: "Motives"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "motif"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - idea-level
+  - phrase
+  - segmentation-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a motive and how large should it be?"
+  - "What are common motive transformations?"
+  - "How does motivic analysis differ from segmentation analysis?"
 ---
 
-# Motive
+# Quick Definition
+A short, regularly recurring unit of music, typically smaller than an idea, that serves as the smallest meaningful building block; motives are tracked across a work as they recur and transform.
 
-## Quick Definition
+# Core Definition
+A **motive** is "a regularly recurring unit of music that's typically smaller than an idea" (Ch. 1). It is like a snippet of a melody -- the smallest meaningful unit that recurs and transforms throughout a work. While a motive does not necessarily have to repeat, those that recur are the most analytically interesting. Common transformations include: enlargement (longer durations), contraction (shorter durations), inversion (direction change), displacement (metric position change), retrograde (backward statement), intervallic manipulation (changing interval sizes), and embellishment (adding ornamental tones) (Ch. 1, "Motives").
 
-A short, regularly recurring musical unit (melodic, rhythmic, or otherwise) that is typically smaller than an idea and serves as a building block for larger musical structures.
+# Prerequisites
+This is a foundational concept with no prerequisites within this source.
 
-## Formal Definition
+# Key Properties
+1. Typically smaller than an idea (the next hierarchical level)
+2. Regularly recurring across a passage or work
+3. Most often refers to a pitch-based pattern; rhythmic motives also exist
+4. Can be transformed: enlargement, contraction, inversion, displacement, retrograde, intervallic manipulation, embellishment
+5. Should be short -- identifying an entire theme as a motive is a common mistake
 
-A **motive** (also **motif**) is a brief musical figure—usually comprising a distinctive pattern of pitches, rhythms, intervals, or timbres—that recurs throughout a composition and undergoes transformation. Motives are the smallest significant units of musical structure and serve as fundamental building blocks for larger formal units (ideas, phrases, themes).
+# Construction / Recognition
+## To Identify Motives:
+1. Listen for short, recurring patterns (typically 2-6 notes)
+2. Circle and label recurring motives in the score
+3. Track transformations across the work
+4. Avoid identifying passages that are too long -- motives are short!
+## Common Mistake:
+- Identifying an entire melody or theme as a motive (Example 5 in source shows this error)
 
-**Characteristics**:
-- **Short duration**: Typically just a few notes (often 2-6 notes)
-- **Recurrence**: Appears multiple times throughout a work (though a motive need not repeat to be a motive)
-- **Distinctiveness**: Memorable and recognizable pattern
-- **Smaller than an idea**: Motives combine to form ideas; ideas combine to form phrases
-- **Transformable**: Can be varied through transformation techniques
+# Context & Application
+Motivic analysis reveals how composers build large structures from small cells. The source demonstrates with John Williams's Jurassic Park themes, Beethoven's Symphony No. 5 (the famous four-note motive), and Lin-Manuel Miranda's "Aaron Burr, Sir" from Hamilton.
 
-**Types of motives**:
-- **Pitch motive**: Defined by specific pitches or intervals (most common; "motive" alone usually means pitch motive)
-- **Rhythmic motive**: Defined by rhythmic pattern
-- **Contour motive**: Defined by melodic shape (up/down direction)
-- **Timbre motive**: Defined by instrumental color or articulation
-- **Harmonic motive**: Defined by chord progression or harmonic pattern
+# Examples
+**Example 1** (Ch. 1, Example 3): Motivic analysis of Beethoven's Symphony No. 5, I (0:00-0:27), showing how the four-note motive pervades the opening.
 
-**Common transformations**:
-- **Enlargement** (augmentation): Lengthening note durations
-- **Contraction** (diminution): Shortening note durations
-- **Inversion**: Reversing melodic direction (up becomes down, down becomes up)
-- **Displacement**: Changing metric position relative to the beat
-- **Retrograde**: Presenting the motive backwards
-- **Intervallic manipulation**: Changing interval sizes (e.g., minor second becomes major second)
-- **Embellishment**: Adding ornamental tones to the basic shape
-- **Transposition**: Moving to a different pitch level
-- **Sequence**: Repeating at different pitch levels
+**Example 2** (Ch. 1, Example 5): What is NOT a motive -- an overly large passage identified as a motive in Beethoven's Fifth.
 
-## Musical Context
+# Relationships
+## Enables
+- **idea-level** -- Ideas contain motivic material
+- **segmentation-analysis** -- Motives are identified within segmentation analysis
+## Related
+- **phrase** -- Phrases are built from ideas, which are built from motives
 
-Motives serve crucial structural and expressive functions:
+# Common Errors
+- **Error**: Identifying an entire theme as a motive
+  **Correction**: Motives should be short -- typically just a few notes
 
-**Structural functions**:
-- Provide unity and coherence through recurrence
-- Generate musical material for development
-- Link sections and create large-scale connections
-- Serve as building blocks for themes and phrases
-- Enable economy of material (much music from little)
+# Common Confusions
+- **Confusion**: "Motive" refers to any recurring element
+  **Clarification**: "Motive" most often refers to a pitch-based pattern; rhythmic motives should be specified as such
 
-**Expressive functions**:
-- Create musical identity and memorability
-- Can represent characters, ideas, or emotions (leitmotifs in opera)
-- Provide focus and concentration
-- Build dramatic tension through transformation
-- Generate variety while maintaining unity
+# Source Reference
+Open Music Theory, Part III, Chapter 1: "Foundational Concepts for Phrase-Level Forms," section "Motives."
 
-**Compositional uses**:
-- **Beethoven**: Motivic development central to compositional method
-- **Wagner**: Leitmotifs (representative motives) in music dramas
-- **Brahms**: Dense motivic working and transformation
-- **Film music**: Motivic associations with characters and ideas
-- **Serialism**: Twelve-tone rows as extended motives
-
-**Analysis practice**:
-- Circle and label recurring motives in scores
-- Track transformations across a work
-- Avoid identifying overly long passages as motives (common mistake)
-- Focus on motives that recur and undergo transformation
-- Consider how motives combine to create larger structures
-
-## Examples
-
-### Basic
-
-**Simple pitch motive**:
-- Beethoven, Symphony No. 5: G–G–G–E♭ (four-note rhythm)
-  (The famous "short-short-short-long" motive)
-
-**Rhythmic motive**:
-- Eighth-eighth-quarter rhythm pattern
-  (Can appear with different pitches while retaining identity)
-
-**Contour motive**:
-- Up-down-up shape (specific intervals may vary)
-
-**Transformations of a motive**:
-- Original: C–E–G (ascending)
-- Inversion: C–A–F (descending)
-- Enlargement: C (half)–E (half)–G (half) (longer durations)
-- Displacement: Shifted to begin on beat 2 instead of beat 1
-
-### From Repertoire
-
-**Famous motivic works**:
-- **Beethoven, Symphony No. 5**: Four-note motive developed throughout entire symphony
-- **Beethoven, Symphony No. 9**: "Ode to Joy" built from simple motivic cells
-- **Bach, Fugues**: Subjects often comprise simple motives developed contrapuntally
-- **Wagner, *Ring Cycle***: Leitmotifs represent characters, objects, ideas
-- **Brahms, Symphony No. 3**: Falling third motive (F–A♭–F) permeates the work
-- **John Williams, *Star Wars***: Recurring motives for characters and themes
-- **John Williams, *Jurassic Park***: Five-note horn motive
-- **Lin-Manuel Miranda, *Hamilton***: Motivic cells throughout songs
-
-**Motivic composers**:
-- Beethoven: Master of motivic development
-- Brahms: Dense motivic working
-- Wagner: Leitmotif technique
-- Schoenberg: Developing variation
-- Film composers: Thematic/motivic associations
-
-## Related Concepts
-
-- **Prerequisite**: rhythm, pitch, interval
-- **Leads to**: phrase
-
-## Common Confusions
-
-- Motive vs. theme: Motives are short (a few notes); themes are longer complete melodies
-- Motive vs. idea: Motives are shorter than ideas; motives combine to form ideas
-- Common mistake: Identifying entire melodies or long passages as motives—motives are SHORT
-- A motive doesn't have to repeat to be a motive, but recurring motives are most analytically interesting
-- Not every short pattern is a significant motive—focus on patterns that recur and develop
-- "Motive" and "motif" are synonyms; both are acceptable
-- Rhythmic motives are specifically called "rhythmic motives"—"motive" alone usually means pitch motive
-- Leitmotif is a specific type of motive (a representative theme in opera)
-- Motivic transformations are intentional compositional techniques, not errors or variants
-- The term "motive" is sometimes used loosely to mean any recurring element, but formal analysis focuses on short, distinctive patterns
-- Sequences involve repetition of motives at different pitch levels, but sequence and motive are different concepts
-
-## Source Reference
-
-Open Music Theory, Part III, Chapter 1: "Foundational Concepts for Phrase-Level Forms"
+# Verification Notes
+- Re-extracted from v2 card; preserved: transformation types list, Beethoven/Williams/Miranda examples
+- Confidence: HIGH -- explicitly defined with multiple examples

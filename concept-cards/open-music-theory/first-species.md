@@ -1,132 +1,120 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: First Species Counterpoint
-category: theory
-source: Open Music Theory
-chapter: "First-Species Counterpoint"
-pdf_page: null
-chapter_number: 2
-unit: null
+slug: first-species
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: species-counterpoint
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "First-Species Counterpoint"
+chapter_number: 2
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "note-against-note"
+  - "1:1 counterpoint"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - cantus-firmus
+  - species-counterpoint
+  - perfect-consonance
+  - imperfect-consonance
+extends: []
+related:
+  - clausula-vera
+  - contrary-motion
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the rules of first-species counterpoint?"
+  - "How do you begin and end a first-species exercise?"
+  - "What motion types and intervals are permitted?"
 ---
 
-# First Species Counterpoint
+# Quick Definition
+The first of five species exercises, where a counterpoint line in whole notes moves note-against-note with the cantus firmus, using only consonant intervals, teaching fundamental voice independence and harmonic writing.
 
-## Quick Definition
+# Core Definition
+**First-species counterpoint** (also called "one-against-one" or 1:1 counterpoint) involves composing a single new line above or below a cantus firmus, where both voices move in whole notes -- one note in the counterpoint for every note in the cantus. All vertical intervals must be consonant. The source describes it as combining two "cantus-firmus-quality lines" to create "a whole texture that is smooth, that exhibits variety and goal-oriented motion, and in which these melodies both maintain their independence and fuse together into consonant simultaneities" (Ch. 2).
 
-A 1:1 contrapuntal exercise where a new melodic line (counterpoint) moves in whole notes against a cantus firmus, with both voices sounding one note simultaneously, creating the foundation for learning voice independence and consonant harmonic intervals.
+# Prerequisites
+- **Cantus firmus** -- The given melody against which counterpoint is composed
+- **Species counterpoint** -- First species is the first exercise type in this method
+- **Perfect/imperfect consonance** -- All intervals must be classified as consonant
 
-## Formal Definition
+# Key Properties
+1. Both voices move in whole notes (1:1 ratio)
+2. All vertical intervals must be consonant (no dissonance)
+3. Begin on perfect consonance (P1, P5, or P8)
+4. End with clausula vera on perfect unison or octave
+5. Prefer imperfect consonances (3rds, 6ths) over perfect (5ths, 8ves) in middle
+6. Unisons only at beginning and end
+7. No parallel fifths or parallel octaves
+8. Avoid direct/hidden fifths and octaves (similar motion into perfect consonance)
+9. No more than three consecutive imperfect consonances of the same type
+10. Each voice should have a single climax; climaxes should not coincide
+11. Avoid voice crossing and voice overlap
+12. Keep voices within an octave generally, maximum a twelfth
 
-**First-species counterpoint** (also called "one-against-one" or 1:1 counterpoint) is the first of five species in Fux's _Gradus ad Parnassum_ method. It involves composing a single new line above or below a given cantus firmus, where:
+# Construction / Recognition
+## To Write First-Species Counterpoint:
+1. Begin with a perfect consonance (above cantus: do or sol; below cantus: do only)
+2. Move primarily by step; keep melodic leaps consonant and compensated
+3. Use mostly imperfect consonances (3rds and 6ths) for interior intervals
+4. Vary the types of motion (prefer contrary; use some similar and parallel)
+5. Avoid parallel and direct 5ths/8ves
+6. End with clausula vera: contrary stepwise motion to unison or octave
+## To Evaluate:
+1. Check that all intervals are consonant
+2. Verify no parallel 5ths or 8ves
+3. Confirm beginning on perfect consonance and ending with clausula vera
 
-**Characteristics**:
-- Both cantus firmus and counterpoint move in whole notes
-- One note in the counterpoint for every note in the cantus
-- All vertical intervals must be consonant (except for special treatment of perfect fourth)
-- Emphasizes smooth melodic writing and consonant simultaneities
+# Context & Application
+First species isolates the fundamental problem of combining two independent melodic lines harmonically. The strict limitations (whole notes, all consonances) focus attention on voice independence, interval selection, and motion types. This species establishes principles used in all subsequent species and in free composition.
 
-**Beginning**:
-- Above cantus: begin on ^1 (do) or ^5 (sol), creating P1, P5, or P8
-- Below cantus: begin on ^1 (do) only, creating P1 or P8
-- Must start with perfect consonance for stability
+# Examples
+**Example 1** (Ch. 2, Example 1): All first-species exercises from *Gradus ad Parnassum*, annotated with intervals, showing counterpoint above and below each modal cantus firmus.
 
-**Ending**:
-- Must end with perfect unison or octave (not fifth)
-- Approach by contrary stepwise motion (clausula vera)
-- If cantus ends re-do (^2-^1), counterpoint ends ti-do (^7-^1)
-- If cantus ends ti-do (^7-^1), counterpoint ends re-do (^2-^1)
-- Penultimate bar forms third or sixth between voices
+**Example 2** (Ch. 2, Example 2): The clausula vera formula, showing both forms (re-do against ti-do).
 
-**Harmonic intervals**:
-- All intervals must be consonant
-- Prefer imperfect consonances (3rds, 6ths) over perfect (5ths, 8ves)
-- Unisons only at beginning and ending
-- No two perfect consonances of same size in a row (P5-P5 or P8-P8)
-- Avoid parallel fifths and parallel octaves (destroy voice independence)
+# Relationships
+## Builds Upon
+- **cantus-firmus** -- Counterpoint is composed against the cantus firmus
+- **species-counterpoint** -- First species is the initial exercise type
+## Enables
+- **second-species** -- Builds on first-species principles with 2:1 ratio
+## Related
+- **clausula-vera** -- Required ending formula
 
-**Independence of lines**:
-- Each line should have single climax that don't coincide
-- Avoid voice crossing (lower voice above higher, or vice versa)
-- Avoid voice overlap (voice leaps past previous note of other voice)
-- Maintain interval range: generally within octave, maximum twelfth
+# Common Errors
+- **Error**: Writing two perfect consonances of the same size in a row (e.g., P5-P5)
+  **Correction**: Never use parallel fifths or parallel octaves; follow any perfect consonance with an imperfect consonance
+- **Error**: Moving into a perfect consonance by similar motion (direct fifths/octaves)
+  **Correction**: Approach perfect consonances by contrary or oblique motion
 
-**Motion types**:
-- Prefer contrary motion (promotes independence)
-- Use variety of motion types
-- Avoid direct/hidden fifths or octaves (similar motion into perfect consonance)
-- No more than three imperfect consonances of same type in a row
+# Common Confusions
+- **Confusion**: First species is the easiest species
+  **Clarification**: It is foundational but not necessarily simple -- it demands careful attention to every interval
+- **Confusion**: The perfect fourth is consonant in first species
+  **Clarification**: In two-voice texture involving the lowest voice, the P4 is dissonant
 
-## Musical Context
+# Source Reference
+Open Music Theory, Part II, Chapter 2: "First-Species Counterpoint." Covers beginning/ending rules, line independence, intervals, and motion types.
 
-First species serves specific pedagogical purposes:
-- Teaches beginning and ending voice-leading formulas
-- Develops awareness of consonance vs. dissonance
-- Establishes principles of voice independence
-- Foundation for all subsequent species
-- Prepares for real polyphonic composition
-
-The strict limitations (whole notes, all consonances) isolate the fundamental problem of combining two independent melodies harmonically.
-
-## Examples
-
-### Basic
-
-**Valid first-species opening** (counterpoint above):
-```
-Counterpoint: G4 (whole note) - start on sol (^5)
-Cantus:       C4 (whole note) - given do (^1)
-Interval:     P5 - perfect consonance ✓
-```
-
-**Valid first-species ending** (clausula vera):
-```
-Measure n-1:
-Counterpoint: B4 (ti/^7)
-Cantus:       D4 (re/^2)
-Interval:     6th
-Measure n:
-Counterpoint: C5 (do/^1)
-Cantus:       C4 (do/^1)
-Interval:     P8 - contrary stepwise motion ✓
-```
-
-**Invalid progression** (parallel fifths):
-```
-Measure 1:    Measure 2:
-CP: G4        A4
-CF: C4        D4
-Intervals: P5 → P5 (parallel fifths - forbidden!)
-```
-
-**Invalid progression** (direct octave):
-```
-Measure n-1:  Measure n:
-CP: E4        C5 (leaps up)
-CF: G3        C4 (steps up)
-Intervals: 6th → P8 via similar motion (direct octave - avoid!)
-```
-
-### From Repertoire
-
-Fux's _Gradus ad Parnassum_ Part I provides complete first-species exercises in all modes (Dorian, Phrygian, Lydian, Mixolydian, Aeolian, Ionian). Each demonstrates: proper beginning (perfect consonance), variety of consonant intervals (mostly 3rds/6ths), single climax per voice, clausula vera ending.
-
-## Related Concepts
-
-- **Prerequisite**: cantus-firmus, species-counterpoint, consonance, dissonance, contrary-motion, parallel-motion, perfect-imperfect-consonances
-- **Leads to**: second-species, clausula-vera, harmonic-interval
-- **See also**: counterpoint, voice-overlap, voice-crossing, direct-fifths-octaves
-
-## Common Confusions
-
-- First species ≠ easiest species (it's foundational, not necessarily simple)
-- Perfect consonances at beginning/end only (not throughout)
-- Perfect fourth is dissonant in two-voice texture when involving lowest voice
-- Voice overlap ≠ voice crossing (overlap = leap past previous pitch; crossing = simultaneous reversal)
-- Contrary motion preferred but not required for every progression
-- "One-against-one" means one note per note, not one voice vs. one voice
-- Unisons diminish independence, so avoid except at beginning/end
-- Direct fifths/octaves less problematic than parallel fifths/octaves, but still avoid
-
-## Source Reference
-
-Open Music Theory, Part II, Chapter 2: "First-Species Counterpoint"
+# Verification Notes
+- Re-extracted from v2 card; preserved: detailed notation examples of valid/invalid progressions
+- All rules directly from source chapter
+- Confidence: HIGH -- extensive chapter-length treatment

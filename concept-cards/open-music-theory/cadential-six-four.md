@@ -1,219 +1,150 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Cadential Six-Four
-category: theory
-source: Open Music Theory
-chapter: "The Cadential Six-Four"
-pdf_page: null
-chapter_number: 4
-unit: null
+slug: cadential-six-four
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: cadences
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Strengthening Endings with Cadential 6/4"
+chapter_number: 5
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "cad. 6/4"
+  - "cadential six-four chord"
+  - "V 6/4"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - dominant-seventh-chord
+  - strong-predominant
+  - suspension
+extends:
+  - authentic-cadence
+related:
+  - passing-six-four
+  - neighbor-six-four
+contrasts_with:
+  - passing-six-four
+  - neighbor-six-four
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the cadential 6/4?"
+  - "Why is the cadential 6/4 labeled as V, not I?"
+  - "How does the cadential 6/4 resolve?"
 ---
 
-# Cadential Six-Four
+# Quick Definition
 
-## Quick Definition
+The cadential 6/4 (cad. 6/4) is an embellishment of the dominant created by two embellishing tones a sixth and a fourth above sol (^5) in the bass, labeled as a unit with its resolution: V with figures 6-5, 4-3 (and optionally 8-7 if resolving to V7).
 
-A specific use of the tonic chord in second inversion (I⁶₄) that functions as an embellishment or extension of the dominant chord rather than as independent tonic harmony, occurring on a strong beat immediately before V (or V⁷) at a cadence point, with characteristic doubled bass (^5) and both upper voices (^1 and ^3) resolving downward by step to members of the dominant chord—creating the progression I⁶₄-V-I where the I⁶₄ is not truly "tonic function" but rather a dominant preparation or prolongation.
+# Core Definition
 
-## Formal Definition
+The **cadential 6/4** comprises two embellishing tones that appear over sol (^5) in the bass (OMT, Ch. IV.5). These embellishing tones are always a sixth and a fourth above the bass. The cad. 6/4 and its resolution to V(7) are labeled as one unit. Although the notes spell a tonic triad in second inversion, the chord is labeled V (not I6/4) because:
 
-**Cadential six-four** (cad. ⁶₄ or I⁶₄-V) is a second-inversion tonic chord that functions as embellishment of the dominant in cadential contexts.
+1. It appears after a strong predominant — labeling it I would imply PD goes to T, which is not the sound
+2. V reflects the chord's sound as an elaboration of V, whereas I6/4 reflects only the spelling
 
-**Structure**: I⁶₄ over dominant bass (^5)
+# Prerequisites
 
-**In C major**:
-- Chord: C-E-G arranged as G-C-E (bass G, ^5)
-- Figured bass: ⁶₄ (sixth and fourth above bass)
-- Sounds over dominant bass
+- **Dominant seventh chord** — The cad. 6/4 resolves to V or V7
+- **Strong predominant** — Most commonly approached from IV or ii6
+- **Suspension** — The cad. 6/4 involves suspension-like voice leading
 
-**Function**: **Not tonic!** Functions as dominant prolongation/embellishment
+# Key Properties
 
-**Characteristic features**:
-- Appears on strong beat before V
-- Bass (^5) doubled
-- Upper voices (^6 and ^4 above bass, or ^1 and ^3 of key) resolve down by step
-- Metric accent on I⁶₄, resolution to V
+1. Built over sol (^5) in the bass
+2. Contains notes a sixth and fourth above the bass (which spell a tonic triad in second inversion)
+3. Labeled as V, not I6/4 (reflects function, not spelling)
+4. Resolves: 6th falls to 5th, 4th falls to 3rd (6-5, 4-3 motion)
+5. Optional: 8th falls to 7th if resolving to V7 (8-7 motion)
+6. Bass is doubled (required to avoid parallels)
+7. Can appear anywhere in a phrase as V embellishment, not just at cadences
 
-## Voice Leading
+# Construction / Recognition
 
-**Standard I⁶₄-V-I progression**:
-```
-I⁶₄:  G-C-E     V:  G-B-D     I:  C-E-G
-S:    E  →  D   →   C   (^3 → ^2 → ^1, stepwise)
-A:    C  →  B   →   C   (^1 → ^7 → ^1, stepwise)
-T:    G  →  G   →   E   (^5 stays, then to ^3)
-B:    G  →  G   →   C   (^5 stays, then to ^1)
-```
+## To Spell Cad. 6/4 in Four Voices:
+1. Write sol (^5) in the bass
+2. Determine notes a sixth and fourth above the bass; place one in soprano
+3. Fill inner voices: one doubles the bass, the other takes the remaining note
 
-**Key voice leading features**:
-- **Bass**: ^5 sustained through I⁶₄ and V (dominant pedal)
-- **Soprano**: ^3 resolves down to ^2 (of key)
-- **Alto**: ^1 resolves down to ^7 (of key)
-- **Tenor**: Sustains ^5 (bass) or moves
-- **Metrical pattern**: STRONG-weak (I⁶₄ accented, V unaccented or less accented)
+## To Resolve:
+1. Voice with the 6th above bass falls to 5th above bass
+2. Voice with the 4th above bass falls to 3rd above bass
+3. To add V7: voice doubling the bass moves down to the 7th (8-7)
+4. Keep the motion in the same voice (6-5 in one voice, 4-3 in another)
 
-## Function: Dominant, Not Tonic
+## To Approach:
+1. Any chord that approaches V can approach cad. 6/4 (most commonly IV, ii6)
+2. Avoid leaping to the 4th above bass (it is dissonant)
+3. Smooth motion into the cad. 6/4 is ideal
 
-**Why not tonic function?**
-- Appears over dominant bass (^5)
-- Resolves TO dominant (preparation function)
-- Creates suspension-like dissonance (4th above bass)
-- Metric accent emphasizes dissonance
-- Acts like double suspension over V (^1 and ^3 suspend, resolve down)
+# Context & Application
 
-**Think of it as**:
-```
-V with 6-4 suspension → V
-or
-Embellished V → V
-```
+- **Typical contexts**: Cadences (especially PAC); any phrase location as V embellishment
+- **Common applications**: Intensifying the expectation of a cadence; strengthening the dominant
+- **Historical/stylistic notes**: Source illustrates with Joseph Boulogne, String Quartet No. 4, I, mm. 45-47. The source notes that 6/4 chords are special because they contain a dissonance (the fourth) with the bass.
 
-**NOT**: I⁶₄ as independent tonic
+# Examples
 
-## Cadential Six-Four vs. Other Second Inversions
+**Example 1** (OMT Ch. IV.5, Example 1): Cad. 6/4 in Joseph Boulogne's String Quartet No. 4, I, mm. 45-47. The embellishing tones are a passing tone and a suspension over sol in the bass.
 
-**vs. Passing six-four**:
-- **Cadential**: Strong beat, resolves to V
-- **Passing**: Weak beat, passing motion in bass
+**Example 2** (OMT Ch. IV.5, Example 3): Resolving cad. 6/4 to V triad (3a, 3c) and to V7 (3b, 3d).
 
-**vs. Pedal six-four**:
-- **Cadential**: Over dominant bass, cadential context
-- **Pedal**: Over tonic pedal (I-V⁶₄-I), different bass
+**Example 3** (OMT Ch. IV.5, Example 4): Approaching cad. 6/4 from IV and ii6.
 
-**vs. Arpeggiating six-four**:
-- **Cadential**: Resolves to V, dominant function
-- **Arpeggiating**: Arpeggiates same harmony, no functional change
+# Relationships
 
-**Cadential six-four is unique**: Dominant function despite tonic pitch content
+## Builds Upon
+- **Authentic cadence** — Cad. 6/4 strengthens the dominant at authentic cadences
+- **Suspension** — The 6-5 and 4-3 motions are suspension-like
 
-## Common Progressions
+## Enables
+- No specific concepts
 
-**Classic cadential pattern**:
-```
-I - IV - I⁶₄ - V - I
-T   PD   D    D   T
+## Related
+- **Passing six-four** — Another type of 6/4 chord (different function)
+- **Neighbor six-four** — Another type of 6/4 chord (different function)
 
-I⁶₄ functions as dominant (not tonic)
-```
+## Contrasts With
+- **Passing six-four** — Pass. 6/4 prolongs a function; cad. 6/4 embellishes dominant
+- **Neighbor six-four** — N. 6/4 uses neighbor motion; cad. 6/4 uses suspension-like motion
 
-**With dominant seventh**:
-```
-I - IV - I⁶₄ - V⁷ - I
+# Common Errors
 
-Same function, V⁷ adds seventh
-```
+- **Error**: Labeling the cadential 6/4 as I6/4
+  **Correction**: Label as V with figures showing the embellishment (6-5, 4-3), because the chord functions as an elaboration of dominant, not tonic
 
-**Metric emphasis**:
-```
-Measure:  1      2       3      4
-         (I)    (IV)   I⁶₄-V    I
-Beat:            1  2  3  4     1
-                    ↑
-           I⁶₄ on strong beat 3
-```
+- **Error**: Leaping to the 4th above the bass
+  **Correction**: The 4th is dissonant and should be approached smoothly, not by leap
 
-## Musical Context
+- **Error**: Not doubling the bass in the cad. 6/4
+  **Correction**: The bass must be doubled to avoid parallels
 
-The cadential six-four serves specific purposes:
-- **Dominant preparation**: Intensifies arrival at V
-- **Cadential emphasis**: Adds weight to authentic cadences
-- **Metric accent**: Emphasizes dissonance on strong beat
-- **Embellishment**: Decorates dominant with tonic tones
-- **Common practice**: Universal in Classical repertoire
-- **Pedagogical importance**: Teaches functional harmony
+# Common Confusions
 
-Essential component of Perfect Authentic Cadence in Classical style.
+- **Confusion**: Thinking the cad. 6/4 is a tonic chord because it spells a tonic triad
+  **Clarification**: The sound and function are dominant (unstable, resolving); the spelling is coincidental. Playing and stopping on the cad. 6/4 reveals its instability.
 
-## Examples
+# Source Reference
 
-### Basic
+Open Music Theory, Part IV, Chapter 5: "Strengthening Endings with Cadential 6/4." See Examples 1-4.
 
-**Simple I⁶₄-V-I** (C major):
-```
-I⁶₄:  G(bass)-C-E    (second inversion tonic)
-V:    G(bass)-B-D    (dominant)
-I:    C(bass)-E-G    (tonic)
+# Verification Notes
 
-Bass: G-G-C (dominant sustained, then resolution)
-Functions as D-D-T (not T-D-T!)
-```
-
-**Voice leading detail**:
-```
-        I⁶₄     V      I
-S:      E   →   D  →   C   (3→2→1, stepwise)
-A:      C   →   B  →   C   (1→7→1, neighbor)
-T:      G   →   G  →   E   (5→5→3)
-B:      G   →   G  →   C   (5→5→1, dominant pedal)
-
-Upper voices resolve downward by step
-```
-
-**With V⁷**:
-```
-I⁶₄:  G-C-E
-V⁷:   G-B-D-F    (adds seventh)
-I:    C-E-G-C
-
-Same function, fuller dominant chord
-```
-
-**In phrase context**:
-```
-mm. 1-3:  I - vi - IV    (tonic and predominant)
-m. 4:     I⁶₄ - V - I    (cadential six-four to PAC)
-
-I⁶₄ marks cadential arrival point
-```
-
-**Metric pattern** (typical):
-```
-Beat:     1      2      3      4      1
-Chord:   (I)   (IV)    I⁶₄     V      I
-                        ↑      ↓
-                   Strong   Weak
-
-I⁶₄ metrically accented, creates suspension effect
-```
-
-### From Repertoire
-
-**Mozart, Piano Sonata K. 545, I**: Cadential six-four appears at authentic cadences throughout, I⁶₄-V-I creates formal articulation points.
-
-**Beethoven, "Ode to Joy"**: Cadential six-four intensifies cadences, I⁶₄ on strong beat before V-I resolution.
-
-**Haydn, Symphony No. 104, I**: Multiple cadential six-fours mark phrase endings, demonstrates Classical cadential norm.
-
-**Bach, Chorales**: Cadential six-four less common in Baroque (more common in Classical), but appears in some cadences.
-
-**Mozart, Symphony No. 40, I**: Cadential six-four at major structural points (EEC, ESC), intensifies cadential arrival.
-
-## Related Concepts
-
-- **Prerequisite**: chord, chord, cadence, dominant-function, voice-leading
-- **Leads to**: authentic-cadence, suspension
-- **See also**: passing-six-four
-
-## Common Confusions
-
-- Cadential ⁶₄ = I⁶₄ over dominant bass, functions as DOMINANT (not tonic!)
-- I⁶₄-V progression where I⁶₄ on strong beat, V on weak beat
-- "Six-four" = intervals above bass (6th and 4th)
-- Bass doubled (^5 doubled, not root of I)
-- Upper voices resolve DOWN by step (^1→^7, ^3→^2)
-- Functions like suspension over V (embellishment)
-- Appears at cadences (hence "cadential" six-four)
-- Not same as passing six-four (which is on weak beat, passing bass)
-- Not same as pedal six-four (which is over tonic pedal I-V⁶₄-I)
-- Metric accent crucial: strong beat emphasizes "dissonance"
-- V often followed immediately by I (PAC)
-- Can use V⁷ instead of plain V (same function)
-- Classical era hallmark (nearly ubiquitous in Mozart, Haydn, Beethoven)
-- Tonic pitches but dominant function (pitch ≠ function!)
-- "⁶₄" pronounced "six-four" (intervals above bass G: C=4th, E=6th)
-- Sometimes written Cad.⁶₄ or I⁶₄(cad.) to show cadential function
-
-## Source Reference
-
-Open Music Theory, Part IV: "Diatonic Harmony and Voice Leading"
-Open Music Theory, Part IV: "The Cadential Six-Four Chord"
+- Definition source: Direct from OMT Ch. IV.5
+- Confidence rationale: HIGH — explicit definition with labeling rationale and writing procedures
+- Re-extraction notes: Re-extracted from v2 card; preserved: V vs. I6/4 labeling rationale, voice-leading figures (6-5, 4-3), approach from strong PD. Old card had extensive content consistent with source.

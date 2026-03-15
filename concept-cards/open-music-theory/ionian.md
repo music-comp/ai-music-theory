@@ -1,87 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Ionian Mode
-category: theory
-source: Open Music Theory
-chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
-pdf_page: null
-chapter_number: 1
-unit: null
+slug: ionian
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
+source: "Open Music Theory"
+source_slug: open-music-theory
 authors: "Open Music Theory contributors"
+chapter: "Introduction to Diatonic Modes and the Chromatic Scale"
+chapter_number: 14
+pdf_page: null
+section: "Modes and the Parallel Relationship"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "major mode"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - mode
+  - major-scale
+extends:
+  - mode
+related:
+  - lydian
+  - mixolydian
+contrasts_with:
+  - aeolian
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the ionian mode?"
+  - "How does ionian relate to the major scale?"
 ---
 
-# Ionian Mode
+# Quick Definition
 
-## Quick Definition
+The diatonic mode identical to the major scale (W-W-H-W-W-W-H), the second brightest mode.
 
-The diatonic mode equivalent to the major scale, with the interval pattern W-W-H-W-W-W-H, serving as the reference point for modal brightness.
+# Core Definition
 
-## Formal Definition
+The **ionian mode** has the ascending pattern W-W-H-W-W-W-H -- the same pattern as the major scale. It is the second brightest mode (after lydian). No scale degrees are altered relative to major. Solfege: do, re, mi, fa, sol, la, ti.
 
-**Ionian mode** is a seven-note diatonic mode with the ascending pattern of whole and half steps: W-W-H-W-W-W-H.
+# Prerequisites
 
-**Relationship to major scale**:
-- Ionian mode = major scale
-- Same interval pattern, same sound
-- "Ionian" emphasizes modal context; "major" emphasizes tonal/functional context
+- **Mode**: the category ionian belongs to
+- **Major scale**: ionian is identical to the major scale
 
-**Solfège**: do-re-mi-fa-sol-la-ti-do
+# Key Properties
 
-**Scale degrees**: ^1, ^2, ^3, ^4, ^5, ^6, ^7
+- Pattern: W-W-H-W-W-W-H
+- Identical to the major scale
+- Second brightest mode (between lydian and mixolydian)
+- No altered scale degrees relative to major
+- Contains mi (^3) -- a bright mode
 
-**Characteristics**:
-- Contains major third (mi/^3), making it a "bright" mode
-- Perfect fourth above tonic
-- Perfect fifth above tonic
-- Major seventh (leading tone) that strongly resolves to tonic
+# Construction / Recognition
 
-**Position in modal brightness spectrum**: Second brightest mode (between Lydian and Mixolydian)
+Use the major scale pattern from any tonic. Ionian sounds exactly like a major scale.
 
-## Musical Context
+# Context & Application
 
-Ionian is the foundation of Western tonal music:
-- Standard major scale used in common-practice tonality
-- Establishes functional harmonic relationships (I-IV-V-I)
-- Most familiar mode to Western listeners
-- Dominant mode in Classical, Romantic, and much popular music
-- Reference point for understanding other modes
+Ionian is the reference point from which other modes are described. Most Western tonal music is fundamentally in ionian (major) or aeolian (minor).
 
-When analyzing modal music, "Ionian" distinguishes the mode from functional major-key tonality.
+# Examples
 
-## Examples
+- C ionian: C-D-E-F-G-A-B-C (= C major)
 
-### Basic
+# Relationships
 
-**C Ionian**:
-- Pattern: C-D-E-F-G-A-B-C
-- W-W-H-W-W-W-H
-- Identical to C major scale
+- **Extends**: mode
+- **See also**: major-scale, lydian, mixolydian
 
-**G Ionian**:
-- Pattern: G-A-B-C-D-E-F♯-G
-- Identical to G major scale
+# Common Errors
 
-**Solfège**: do-re-mi-fa-sol-la-ti-do
+- None specific -- ionian and major are simply two names for the same thing
 
-### From Repertoire
+# Common Confusions
 
-"Twinkle, Twinkle, Little Star," "Happy Birthday," Beethoven's "Ode to Joy"—virtually all major-key music uses Ionian mode. In modal jazz or modal pop, specifying "Ionian" indicates the absence of modal mixture or functional modulation.
+- Ionian IS the major scale; they are not merely similar, they are identical
 
-## Related Concepts
-
-- **Prerequisite**: scale, mode, major-scale, whole-step, half-step
-- **Leads to**: post-tonal-music, key-signature
-- **See also**: lydian, mixolydian, major-scale, diatonic-modes, aeolian
-
-## Common Confusions
-
-- Ionian vs. major scale: same pitch content, different conceptual frameworks
-  - "Ionian" = modal thinking (no functional hierarchy)
-  - "Major" = tonal thinking (I-IV-V functional harmony)
-- Ionian is a mode, not a key (keys imply functional harmonic progression)
-- All modes can start on any pitch (C Ionian, D Ionian, etc.)
-- Ionian is the reference point for modal brightness (not the "middle" mode)
-- Ionian ≠ Aeolian (Ionian has major third; Aeolian has minor third)
-
-## Source Reference
+# Source Reference
 
 Open Music Theory, Part I, Chapter 14: "Introduction to Diatonic Modes and the Chromatic Scale"
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: major scale equivalence, brightness ranking.
