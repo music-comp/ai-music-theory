@@ -1,12 +1,27 @@
 ---
 concept: Voice-Leading Space for Tetrachords
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: voice-leading-space-tetrachords
+category: voice-leading
+subcategory: smooth voice leading
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.4.2 Voice-leading space for tetrachords"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - voice-leading-space-trichords
+extends:
+  - voice-leading-space-trichords
+related:
+  - harmonic-quality-voice-leading-space
+contrasts_with: []
+answers_questions:
+  - "What is the voice-leading space for tetrachords?"
 ---
 
 # Quick Definition

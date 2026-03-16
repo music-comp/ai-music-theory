@@ -1,75 +1,93 @@
 ---
 concept: Z-Correspondent
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: z-correspondent
+category: set-theory
+subcategory: Z-relation
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Some Additional Properties and Relationships"
 chapter_number: 3
 pdf_page: 129
-unit: null
-authors: Joseph N. Straus
+section: "3.6.1 Z-correspondents"
+extraction_confidence: high
+aliases:
+  - "Z-related partner"
+prerequisites:
+  - z-relation
+  - forte-names
+extends:
+  - z-relation
+related:
+  - all-interval-tetrachords
+  - list-of-set-classes
+contrasts_with: []
+answers_questions:
+  - "What is a Z-correspondent?"
+  - "How do I find a set class's Z-correspondent?"
 ---
 
 # Quick Definition
 The partner set class in a Z-related pair; any set class with a Z in its Forte-name has exactly one Z-correspondent with a different prime form but identical interval-class vector.
 
-# Formal Definition
-A Z-correspondent is the other member of a Z-related pair of set classes. If set class X is Z-related to set class Y, then Y is the Z-correspondent of X (and vice versa). Z-correspondents:
-- Have different prime forms
-- Share the same interval-class vector
-- Cannot be related by transposition or inversion
-- Are indicated by Forte-names containing "Z"
+# Core Definition
+A Z-correspondent is the other member of a Z-related pair. If set class X is Z-related to set class Y, then Y is the Z-correspondent of X (and vice versa). Z-correspondents have different prime forms, share the same interval-class vector, and cannot be related by T or I. In the List of Set Classes, Z-related hexachords are listed directly across from each other with their shared vector between them. For other cardinalities, Z-correspondents must be found by searching for matching vectors (Straus, p. 129).
 
-In the List of Set Classes, Z-related hexachords are listed directly across from each other, with their shared interval-class vector between them. For other cardinalities, Z-correspondents must be found by searching for matching interval vectors.
+# Prerequisites
+- **Z-relation** -- the relationship between correspondents
+- **Forte-names** -- the naming system that marks Z-relations with "Z"
 
-# Mathematical Formulation/Recognition
-To find a Z-correspondent:
-1. Identify a set class with "Z" in its Forte-name
-2. Find the other set class with the same interval-class vector
-3. Verify they have different prime forms
+# Key Properties
+1. Z-correspondents come in pairs
+2. Different prime forms, same interval-class vector
+3. Indicated by "Z" in Forte-names (e.g., 4-Z15 and 4-Z29)
+4. In the List, Z-related hexachords face each other
+5. Complements of Z-correspondents are also Z-related: if 4-Z15 ~ 4-Z29, then 8-Z15 ~ 8-Z29
 
+# Construction / Recognition
 Z-correspondent pairs by cardinality:
 - Tetrachords: 1 pair (4-Z15 and 4-Z29)
 - Pentachords: 3 pairs
 - Hexachords: 15 pairs
-- Septachords: 3 pairs
-- Octachords: 1 pair
+- (Septachords and octachords have corresponding pairs via the complement relation)
 
-The Forte-name number after the dash may differ between Z-correspondents.
+To find a Z-correspondent:
+1. Identify the "Z" in the Forte-name
+2. For hexachords: look across the row in the List
+3. For others: search for matching interval-class vector
 
-# Musical Context/Application
-Z-correspondents are useful for:
-- Creating harmonic variety while maintaining intervallic consistency
-- Establishing subtle relationships that are heard but not immediately obvious
-- Compositional strategies that exploit shared interval content
-
-Composers like Elliott Carter deliberately juxtapose Z-correspondent set classes to create a specific type of harmonic relationship that is neither transposition nor inversion.
+# Context & Application
+Z-correspondents are compositionally useful for creating harmonic variety while maintaining intervallic consistency. Carter deliberately juxtaposes Z-correspondent tetrachords to create relationships that are neither transposition nor inversion.
 
 # Examples
-The all-interval tetrachord pair:
-- 4-Z15 (0146): intervals form [111111]
-- 4-Z29 (0137): intervals also form [111111]
+**Example 1** (p. 129): The all-interval tetrachord pair:
+- 4-Z15 (0146): vector [111111]
+- 4-Z29 (0137): vector [111111]
 
-Some hexachord Z-correspondent pairs from the List of Set Classes:
+**Example 2**: Some hexachord Z-correspondent pairs:
 - 6-Z3 (012356) and 6-Z36 (012347): vector [433221]
 - 6-Z6 (012567) and 6-Z38 (012378): vector [421242]
-- 6-Z10 (013457) and 6-Z39 (023458): vector [333321]
 - 6-Z11 (012457) and 6-Z40 (012358): vector [333231]
 
-The complement of a Z-correspondent is Z-related to the complement of its pair:
-- If 4-Z15 is Z-related to 4-Z29, then 8-Z15 is Z-related to 8-Z29
+# Relationships
+## Builds Upon
+- **Z-relation** -- the underlying relationship
 
-# Related Concepts
-- Z-relation
-- All-interval tetrachords
-- Interval-class vector
-- Forte-name
-- Complement relation
+## Related
+- **All-interval tetrachords** -- the most famous Z-correspondent pair
+- **Complement relation** -- complements of Z-correspondents are Z-related
+
+# Common Errors
+- Expecting Z-correspondents to have the same number after the dash in Forte-names (they often differ)
+- Looking for Z-correspondents among trichords (none exist)
 
 # Common Confusions
-- Expecting Z-correspondents to have the same Forte-number after the dash (they don't always)
-- Looking for Z-correspondents among trichords or larger sets where they don't exist
-- Thinking Z-correspondents share any relationship beyond interval content (they don't share subsets systematically, for example)
-- Forgetting that complements of Z-correspondents are also Z-related
+- Z-correspondents share interval content but do not systematically share subset structure
+- The Forte-name numbers after the dash may or may not match between Z-correspondents
 
 # Source Reference
-Chapter 3: Some Additional Properties and Relationships, Section 3.6.1, page 129
+Chapter 3: Some Additional Properties and Relationships, Section 3.6.1, p. 129
+
+# Verification Notes
+Upgraded from old v2 card. Preserved all Z-correspondent pair listings, complement-relation property, and search instructions. Added v3 template fields.

@@ -1,12 +1,35 @@
 ---
 concept: Octatonic Collection
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: octatonic-collection
+category: collections
+subcategory: octatonic
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.4 Octatonic Collection"
+extraction_confidence: high
+aliases:
+  - OCT
+  - "Messiaen Mode 2"
+prerequisites:
+  - referential-collections
+  - three-cycle
+extends:
+  - referential-collections
+related:
+  - octatonic-nomenclature
+  - octatonic-orderings
+  - octatonic-subsets
+  - octatonic-generation-by-transposition
+contrasts_with:
+  - diatonic-collection
+answers_questions:
+  - "What is the octatonic collection?"
+  - "What distinguishes the octatonic collection?"
 ---
 
 # Quick Definition

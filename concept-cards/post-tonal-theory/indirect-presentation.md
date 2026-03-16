@@ -1,45 +1,83 @@
 ---
 concept: Indirect Presentation
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: indirect-presentation
+category: twelve-tone
+subcategory: series
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 325
+section: "6.3.2 Indirect presentation"
+extraction_confidence: high
+aliases:
+  - "vertical alignment"
+  - "non-segmental presentation"
+prerequisites:
+  - segmental-subsets
+  - direct-presentation
+  - set-class
+extends: []
+related:
+  - composing-with-a-series
+contrasts_with:
+  - direct-presentation
+answers_questions:
+  - "What is indirect presentation of serial subsets?"
+  - "How can non-contiguous notes reproduce segmental set classes?"
 ---
 
 # Quick Definition
-Indirect presentation occurs when notes that are not contiguous within the series are aligned to create a set class that does occur as a segmental subset of the series.
+Indirect presentation occurs when notes that are not contiguous within the series are vertically aligned to create a set class that does occur as a segmental subset of the series.
 
-# Formal Definition
-*Indirect presentation* involves presenting pitch classes that are not contiguous within the series in a way that produces a set class found as a segmental subset of the series. These vertical alignments are not determined by the series—they result from independent compositional choices. Through careful vertical alignment, composers can ensure that both the linear (melodic) dimension and the relatively free vertical (harmonic) dimension express the same musical ideas that are embedded in the series.
+# Core Definition
+"These vertical alignments are not determined by the series -- they result from independent compositional choices" (Straus, p. 326). Through indirect presentation, a composer ensures that "both the linear dimension and the relatively free vertical dimension express the same musical ideas, ideas that he has embedded in his series. In this way, the series achieves an even deeper influence on the music" (p. 327).
 
-# Musical Context/Application
-- Allows the series to influence harmonic content beyond direct segmentation
-- Creates unity between melodic and harmonic dimensions
-- Demonstrates the depth of serial influence on musical structure
-- Shows how set classes embedded in the series can permeate all aspects of the music
-- Reveals sophisticated compositional planning beyond mere serial ordering
+# Prerequisites
+- **Segmental subsets** -- the set classes being reproduced
+- **Direct presentation** -- the contrasting mode of presentation
+
+# Key Properties
+1. Notes are not contiguous within the series
+2. Vertical alignment creates a set class found as a segmental subset
+3. These alignments are compositional choices, not serial requirements
+4. Creates unity between melodic and harmonic dimensions
+5. Shows the series's influence beyond mere serial ordering
+
+# Construction / Recognition
+- Identify groups of notes sounding simultaneously that come from different order positions
+- Determine the set class of each group
+- Check whether that set class occurs as a segmental subset of the series
+- If so, the vertical alignment is an indirect presentation
+
+# Context & Application
+Indirect presentation reveals sophisticated compositional planning. The composer deliberately aligns non-adjacent notes to reproduce the motivic content of the series, extending the series's influence into the harmonic domain. This is one of the key ways twelve-tone music achieves structural depth.
 
 # Examples
-- Schoenberg, String Quartet No. 4, m. 1-2: The melodic C# and the second chord are not contiguous within P2
-- When they sound together, they create a form of (0148), which does occur as a linear segment of the series
-- The same happens in mm. 2 and 6
-- The (0148) set class occurs three times as a segmental subset of the series, and Schoenberg reproduces it through vertical alignment
+**Example 1** (pp. 325--327, Ex. 6-18): Schoenberg, String Quartet No. 4, mm. 1--2 -- the melodic C# and the second chord are not contiguous within P2, but together they create sc(0148), which occurs three times as a linear segment of the series. The same happens in mm. 2 and 6.
 
-# Related Concepts
-- Segmental Subsets
-- Direct Presentation
-- Set Class
-- Composing with a Series
-- Series as Motive Repository
+# Relationships
+## Builds Upon
+- **Segmental subsets** -- the set classes being indirectly presented
+
+## Contrasts With
+- **Direct presentation** -- where notes are contiguous in the series
+
+## Related
+- **Composing with a series** -- indirect presentation is a compositional choice
+
+# Common Errors
+- Assuming all harmonies must come from contiguous series segments
+- Thinking indirect presentation is less "serial" -- it shows deeper serial influence
 
 # Common Confusions
-- Assuming all harmonies must come from contiguous series segments
-- Overlooking the independent compositional choices that create indirect presentations
-- Thinking indirect presentation is less "serial"—it shows deeper serial influence
-- Not recognizing that both melodic and harmonic dimensions can express series structure
+- **Direct vs. indirect**: Direct preserves serial adjacency; indirect reproduces set classes through independent compositional choices
+- **Determined by series vs. chosen by composer**: Indirect alignments are free choices that reinforce series content
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.3.2, pages 325-327
+Chapter 6, Section 6.3.2, pp. 325--327
+
+# Verification Notes
+Preserved from old card: Schoenberg (0148) example, compositional choice emphasis. Added: v3 template, direct quotations, deeper influence concept.

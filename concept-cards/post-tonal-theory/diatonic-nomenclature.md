@@ -1,12 +1,28 @@
 ---
 concept: DIA Nomenclature
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: diatonic-nomenclature
+category: collections
+subcategory: diatonic
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.3 Diatonic Collection"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - diatonic-collection
+extends:
+  - diatonic-collection
+related:
+  - modal-orderings
+  - octatonic-nomenclature
+contrasts_with: []
+answers_questions:
+  - "How are diatonic collections named?"
 ---
 
 # Quick Definition

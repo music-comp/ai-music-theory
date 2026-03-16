@@ -1,12 +1,30 @@
 ---
 concept: "Three-Cycle (C3)"
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: three-cycle
+category: harmony
+subcategory: interval cycles
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.2 Interval Cycles"
+extraction_confidence: high
+aliases:
+  - C3
+  - minor-third cycle
+prerequisites:
+  - interval-cycles
+extends:
+  - interval-cycles
+related:
+  - octatonic-collection
+  - six-cycle
+contrasts_with: []
+answers_questions:
+  - "What is the three-cycle (C3)?"
 ---
 
 # Quick Definition

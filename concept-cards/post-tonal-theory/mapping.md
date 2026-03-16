@@ -1,56 +1,90 @@
 ---
 concept: Mapping
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: mapping
+category: operations
+subcategory: null
+tier: intermediate
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Pitch-Class Sets"
 chapter_number: 2
 pdf_page: 59
-unit: null
-authors: Joseph N. Straus
+section: "2.3.4 Levels of transposition"
+extraction_confidence: high
+aliases:
+  - map
+  - maps onto
+prerequisites:
+  - transposition
+  - inversion
+extends:
+  - transposition
+related:
+  - nodes-and-arrows
+  - isography
+contrasts_with: []
+answers_questions:
+  - "What is a mapping in pitch-class set theory?"
+  - "How does transposition or inversion establish correspondences between elements?"
 ---
 
 # Quick Definition
-Mapping describes how a transformation (Tn or In) sends each element of one set onto a corresponding element of another set.
+A mapping describes how a transformation (Tn or In) sends each element of one set onto a corresponding element of another set.
 
-# Formal Definition
-In set theory, a mapping describes the correspondence established by an operation between elements of one set and elements of another. When we transpose or invert a set, each pitch class in the original set maps onto a specific pitch class in the resulting set. We say "Tn maps x onto y" or "x maps to y under Tn."
+# Core Definition
+In set theory, a mapping describes the one-to-one correspondence established by an operation between elements of one set and elements of another. When a set is transposed or inverted, each pitch class maps onto a specific pitch class in the resulting set. The language used is: "Tn maps x onto y" or "x maps to y under Tn."
 
-# Mathematical Formulation/Recognition
-**Transposition mapping:**
-- Tn maps pitch class x onto pitch class (x + n) mod 12
-- Every element has exactly one image
-- The mapping is one-to-one (bijective)
+# Prerequisites
+- **Transposition (Tn)** -- one of the operations that creates mappings
+- **Inversion (In)** -- the other operation that creates mappings
 
-**Inversion mapping:**
-- In maps pitch class x onto pitch class (n - x) mod 12
-- Pairs of pitch classes exchange positions
+# Key Properties
+1. Transposition mapping: Tn maps x onto (x + n) mod 12
+2. Inversion mapping: In maps x onto (n - x) mod 12
+3. Every element has exactly one image (bijective / one-to-one)
+4. Under transposition, first-to-first, second-to-second correspondence (in normal form)
+5. Under inversion, first-to-last, second-to-second-to-last correspondence (in normal form)
 
-**Notation:**
-- "T8 maps G onto Eb" or "G maps to Eb under T8"
-- "I6 maps G onto B and B onto G"
+# Construction / Recognition
+To trace a mapping:
+1. For Tn: add n to each element of the original set
+2. For In: subtract each element from n
+3. Arrows drawn between corresponding elements visualize the mapping
 
-# Musical Context/Application
-Understanding mappings helps analysts trace how musical ideas transform. When a set is transposed, we can track how each note moves to its corresponding note in the new set. Mappings reveal the specific connections between musical events and help explain why certain transposition or inversion levels are chosen.
+# Context & Application
+Understanding mappings helps analysts trace how musical ideas transform. The choice of transposition or inversion level is often compositionally significant because a mapping may replicate an interval found within the set being transformed. When the same operation maps both note-to-note and set-to-set, this creates multi-level structural coherence.
 
 # Examples
-**Example 2-8** (Webern, Concerto for Nine Instruments, op. 24): T8 maps the first melodic fragment onto the second:
-- G maps onto Eb (7 + 8 = 15 = 3)
+**Example 2-8** (p. 65, Webern, *Concerto for Nine Instruments*, op. 24): T8 maps the first melodic fragment onto the second:
+- G maps onto Eb (7 + 8 = 3 mod 12)
 - D# maps onto B (3 + 8 = 11)
-- E maps onto C (4 + 8 = 12 = 0)
+- E maps onto C (4 + 8 = 0)
 
-The same T8 that connects the first two notes within the fragment (G to D#) also connects the fragment as a whole to its transposition.
+The same T8 that connects the first two notes within the fragment (G to D#) also connects the entire fragment to its transposition.
 
-**Example 2-22**: Mappings under I0 and I6, showing how pitch classes exchange under inversion.
+**Example 2-22** (p. 73): Under I6, G maps onto B (7 + 11 = 6 mod 12... actually G + B = 7 + 11 = 18 = 6 mod 12). Sets [G, G#, B] and [G, Bb, B] are related by I6 with correspondences: G<->B, G#<->Bb.
 
-# Related Concepts
-- Transposition (Tn)
-- Inversion (In)
-- Nodes and arrows
-- Transformational networks
-- Isography
+# Relationships
+## Builds Upon
+- **Transposition (Tn)** -- creates additive mappings
+- **Inversion (In)** -- creates subtractive mappings
+## Enables
+- **Nodes and arrows** -- visual representation of mappings
+- **Isography** -- comparison of mapping structures
+## Related
+- **Levels of transposition** -- mappings reveal multi-level structural connections
+
+# Common Errors
+- **Error**: Assuming mappings imply physical motion. **Correction**: "Maps onto" describes a correspondence, not literal movement of notes.
 
 # Common Confusions
-Mapping is about correspondence, not physical motion. When we say "Tn maps x onto y," we mean that the operation establishes y as the correspondent of x, not that x literally moves to become y. In music, the original notes typically remain while new notes appear at the mapped positions.
+- **Confusion**: Correspondence order under inversion. **Clarification**: In normal form, inversion maps first to last, second to second-to-last, etc. -- not first to first as in transposition.
 
 # Source Reference
-Chapter 2: Pitch-Class Sets, Section 2.3.4-2.3.6, pp. 49-51
+Chapter 2: Pitch-Class Sets, Sections 2.3.4--2.3.6, pages 65--67.
+
+# Verification Notes
+- Definition source: direct from source
+- Confidence rationale: explicitly described with arrow diagrams
+- Re-extraction notes: preserved old card's Webern example; corrected I6 example arithmetic; upgraded to v3 template

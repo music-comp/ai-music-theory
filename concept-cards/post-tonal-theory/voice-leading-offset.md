@@ -1,12 +1,31 @@
 ---
 concept: Voice-Leading Offset
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: voice-leading-offset
+category: voice-leading
+subcategory: offset
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.3.2 Fuzzy transposition and inversion"
+extraction_confidence: high
+aliases:
+  - offset
+  - semitonal offset
+prerequisites:
+  - fuzzy-transposition
+  - fuzzy-inversion
+extends:
+  - fuzzy-transposition
+related:
+  - voice-leading-space-trichords
+  - voice-leading-space-tetrachords
+contrasts_with: []
+answers_questions:
+  - "What is voice-leading offset?"
 ---
 
 # Quick Definition

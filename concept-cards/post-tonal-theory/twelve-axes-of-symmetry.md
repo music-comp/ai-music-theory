@@ -1,12 +1,29 @@
 ---
 concept: The Twelve Axes of Symmetry
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: twelve-axes-of-symmetry
+category: centricity
+subcategory: axes
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.2.3 Inversional symmetry in pitch-class space (axis of symmetry)"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - inversional-symmetry-pitch-class-space
+extends:
+  - inversional-symmetry-pitch-class-space
+related:
+  - motion-from-axis-to-axis
+  - axis-modulation
+contrasts_with: []
+answers_questions:
+  - "How many axes of symmetry exist?"
+  - "How do I find the axis of symmetry?"
 ---
 
 # Quick Definition

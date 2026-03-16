@@ -1,86 +1,90 @@
 ---
 concept: Motivic Enlargement
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: motivic-enlargement
+category: motive
+subcategory: composing-out
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.1 Composing-Out"
+extraction_confidence: high
+aliases:
+  - enlargement
+  - motivic projection
+prerequisites:
+  - composing-out
+  - set-class
+extends:
+  - composing-out
+related:
+  - analytical-levels
+  - direct-presentation
+contrasts_with:
+  - direct-presentation
+answers_questions:
+  - "What is motivic enlargement?"
+  - "How are surface motives projected over large spans?"
 ---
 
 # Quick Definition
+A specific form of composing-out in which a small surface motive's intervallic content or set class is expanded to govern larger musical spans, appearing at structural points like phrase boundaries and melodic peaks.
 
-A form of composing-out where a small-scale motivic pattern is expanded to govern larger musical spans, with the intervals or set class of the original motive appearing at structural points.
+# Core Definition
+**Motivic enlargement** is a specific type of composing-out in which a motive's intervallic content or set class is projected over progressively larger time spans. The term emphasizes the scaling-up process: a motive that operates at the beat-to-beat level is "enlarged" to shape phrase structure, sectional organization, or even entire movements. The enlarged version maintains the essential interval relationships or set-class identity of the original motive while spanning a greater musical distance (Straus, Ch. 4, p. 176).
 
-# Formal Definition
+# Prerequisites
+- **Composing-out** -- enlargement is a specific form of composing-out
+- **Set class** -- the identity that is preserved across levels
 
-**Motivic enlargement** is a specific type of composing-out in which a motive's intervallic content or set class is projected over progressively larger time spans. The term emphasizes the scaling-up process: a motive that operates at the beat-to-beat level is "enlarged" to shape phrase structure, sectional organization, or even entire movements. The enlarged version maintains the essential interval relationships or set-class identity of the original motive while spanning a greater musical distance.
+# Key Properties
+1. The enlarged motive preserves set-class identity, not necessarily pitch order
+2. Structural notes are determined by musical context (phrasing, register, dynamics)
+3. Multiple levels of enlargement can nest within each other (self-similarity)
+4. The ratio of enlargement can vary from 2:1 to spanning an entire work
 
-# Mathematical Formulation/Recognition
-
-Identification process:
-1. Identify a surface motive with distinctive intervallic content (e.g., <+3, -1> or set class (014))
+# Construction / Recognition
+1. Identify a surface motive with distinctive intervallic content (e.g., <+3, -1> or sc(014))
 2. Locate structural pitches at higher levels (phrase boundaries, formal divisions)
 3. Verify that structural pitches form the same set class or exhibit the same ordered interval succession
-4. The ratio of enlargement can vary (from 2:1 to spanning an entire work)
+4. Check for further enlargement at still deeper levels
 
-Example: If a motive consists of three pitches forming sc(014):
-- Surface: G#-B-C occurring within one measure
-- Enlarged: G#-B-C as the first notes of three successive phrases
-- Further enlarged: G#-B-C as the opening pitches of three movements
-
-# Musical Context/Application
-
-Motivic enlargement serves as a primary organizational technique in post-tonal music where:
-- Traditional harmonic functions are absent
-- Thematic development relies on intervallic rather than tonal logic
-- Composers seek organic unity through self-similar structures at multiple scales
-- The technique creates "nesting" effects where small patterns contain the seeds of large-scale form
-
-The concept is particularly relevant to:
-- Webern's concentrated miniatures
-- Bartok's "organic" formal procedures
-- Stravinsky's block-based constructions
+# Context & Application
+Motivic enlargement serves as a primary organizational technique in post-tonal music where traditional harmonic functions are absent and composers seek organic unity through self-similar structures at multiple scales. It creates "nesting" effects where small patterns contain the seeds of large-scale form. The technique is particularly relevant to Webern's concentrated miniatures, Bartok's "organic" formal procedures, and Stravinsky's block-based constructions.
 
 # Examples
+**Example 1** (p. 176): Webern, *Five Songs*, op. 3, no. 1 -- Four-note melodic cell D-Db-Eb-Gb appears at the surface; the same four notes are enlarged as the initial notes of four vocal phrases.
 
-**Stravinsky, Les Noces** (Example 4-4):
-- Opening melody: [B, D, E] (a member of sc(025))
-- This set appears at T0 at the beginning of the ballet
-- At T2 as [C#, E, F#] at the third scene
-- At T-3 as [G#, B, C#] in the final coda
-- The large-scale transposition scheme composes-out the intervallic shape of the original set across the entire ballet
+**Example 2** (p. 178): Schoenberg, *Three Piano Pieces*, op. 11, no. 1 -- Surface motive B-G#-G (sc(014)) is enlarged as the three melodic high points; simultaneously enlarged in the bass as Gb-Bb-G (also sc(014)).
 
-**Schoenberg, Three Piano Pieces, op. 11, no. 1** (Example 4-3):
-- Small-scale motive: B-G#-G (sc(014)) at the melody's opening
-- Enlarged as the three melodic high points of the phrase
-- Simultaneously enlarged in the bass: Gb-Bb-G (also sc(014))
-- The enlargement creates structural parallelism between soprano and bass
+**Example 3** (p. 179): Stravinsky, *Les Noces* -- Opening [B, D, E] (sc(025)) enlarged at T0, T2, T-3 across the entire ballet, projecting the intervallic shape from surface to large-scale form.
 
-**Webern, Five Songs, op. 3, no. 1**:
-- Four-note melodic cell D-Db-Eb-Gb appears at the surface
-- Same four notes enlarged as the initial notes of four vocal phrases
-- Creates structural coherence across the entire phrase group
+# Relationships
+## Builds Upon
+- **Composing-out** -- enlargement is a specific realization of composing-out
+- **Set class** -- the preserved identity across levels
 
-# Related Concepts
+## Enables
+- **Analytical levels** -- implies multiple hierarchical levels of structure
 
-- Composing-out
-- Set class
-- Interval succession
-- Motivic parallelism
-- Nested structures
-- Self-similarity
-- Organic form
-- Transposition (Tn)
+## Contrasts With
+- **Sequence** -- sequences repeat in immediate succession; enlargement projects at a deeper structural level
+- **Traditional development** -- development transforms and varies a theme; enlargement replicates at larger scale
+
+# Common Errors
+- Looking only for pitch-exact repetition rather than set-class identity
+- Confusing enlargement with simple sequence or transposition
+- Ignoring musical context when selecting structural notes
 
 # Common Confusions
-
-- **Enlargement vs. sequence**: Sequences repeat a motive at different pitch levels in immediate succession; enlargement projects the motive at a deeper structural level over greater time spans
-- **Literal vs. abstract enlargement**: The enlarged motive preserves the set class or interval pattern, not necessarily the exact pitches
-- **Enlargement vs. development**: Traditional development transforms and varies a theme; enlargement replicates the motive's essential content at a larger scale
-- **Single vs. multiple levels**: Motivic enlargement can operate simultaneously at several levels (phrase, section, movement)
+- **Enlargement vs. sequence**: Sequences repeat at different pitch levels in immediate succession; enlargement projects at a deeper structural level over greater time spans
+- **Literal vs. abstract**: The enlarged motive preserves set class or interval pattern, not necessarily exact pitches
 
 # Source Reference
+Chapter 4: Motive, Voice Leading, and Harmony, Section 4.1, pp. 176-179
 
-Chapter 4: Motive, Voice Leading, and Harmony, Section 4.1, pages 176-179
+# Verification Notes
+Upgraded from v2 card. Preserved all three musical examples and the nesting/self-similarity discussion from the original card.

@@ -1,75 +1,92 @@
 ---
 concept: Modes of Limited Transposition
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: modes-of-limited-transposition
+category: set-theory
+subcategory: symmetry
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Some Additional Properties and Relationships"
 chapter_number: 3
 pdf_page: 117
-unit: null
-authors: Joseph N. Straus
+section: "3.2.2 Some special set classes"
+extraction_confidence: high
+aliases:
+  - "Messiaen modes"
+  - "modes of limited transposition (Messiaen)"
+prerequisites:
+  - transpositional-symmetry
+  - degrees-of-transpositional-symmetry
+extends:
+  - transpositional-symmetry
+related:
+  - whole-tone-collection
+  - octatonic-collection
+  - hexatonic-collection
+contrasts_with: []
+answers_questions:
+  - "What are Messiaen's modes of limited transposition?"
+  - "How do modes of limited transposition relate to transpositional symmetry?"
 ---
 
 # Quick Definition
-Olivier Messiaen's term for transpositionally symmetrical set classes that have fewer than twelve distinct transpositions; these collections "cannot be transposed beyond a certain number of times without returning to the original notes."
+Olivier Messiaen's term for seven transpositionally symmetrical set classes of six or more notes that have fewer than twelve distinct transpositions; these collections produce distinctive harmonic colors due to their symmetry.
 
-# Formal Definition
-The Modes of Limited Transposition are the transpositionally symmetrical set classes identified and systematically used by the French composer Olivier Messiaen. These are scales or collections that map onto themselves under transposition at intervals other than the octave (T0), resulting in fewer than twelve distinct forms.
+# Core Definition
+The Modes of Limited Transposition are transpositionally symmetrical set classes identified and systematically used by Olivier Messiaen. They are scales or collections that map onto themselves under transposition at intervals other than the octave, resulting in fewer than twelve distinct forms. Messiaen identified seven such modes from among the fourteen transpositionally symmetrical set classes, focusing on those with six or more notes (Straus, pp. 117-118).
 
-Messiaen identified seven such modes, though the complete list of transpositionally symmetrical set classes includes fourteen. His modes exclude smaller sets (dyads, trichords, tetrachords) and focus on scales with six or more notes.
+# Prerequisites
+- **Transpositional symmetry** -- the mathematical property underlying the modes
+- **Degrees of transpositional symmetry** -- quantifies how "limited" the transpositions are
 
-# Mathematical Formulation/Recognition
-Messiaen's seven modes (with their set-class designations):
+# Key Properties
+1. Each mode has fewer than 12 distinct transpositions
+2. Messiaen identified 7 modes from the 14 Tn-symmetrical set classes
+3. He excluded smaller sets (dyads, trichords, tetrachords)
+4. The modes resist conventional tonal function due to their symmetry
+5. Their "charm of impossibilities" (Messiaen's phrase) creates a distinctive aesthetic
 
-| Mode | Set Class | Familiar Name | Degree of Tn-symmetry |
-|------|-----------|---------------|----------------------|
-| 1 | 6-35 (02468T) | Whole-tone scale | 6 |
-| 2 | 8-28 (0134679T) | Octatonic scale | 4 |
-| 3 | 9-12 (01245689T) | Nonatonic scale | 3 |
-| 4 | 8-9 (01236789) | | 2 |
-| 5 | 6-7 (012678) | | 2 |
-| 6 | 8-25 (0124678T) | | 2 |
-| 7 | 10-6 (012346789T) | | 2 |
+# Construction / Recognition
+Messiaen's seven modes:
 
-Each has degree of transpositional symmetry > 1.
+| Mode | Set Class | Name | Degree | Distinct Forms |
+|------|-----------|------|--------|----------------|
+| 1 | 6-35 (02468T) | Whole-tone scale | 6 | 2 |
+| 2 | 8-28 (0134679T) | Octatonic scale | 4 | 3 |
+| 3 | 9-12 (01245689T) | Nonatonic scale | 3 | 4 |
+| 4 | 8-9 (01236789) | -- | 2 | 6 |
+| 5 | 6-7 (012678) | -- | 2 | 6 |
+| 6 | 8-25 (0124678T) | -- | 2 | 6 |
+| 7 | 10-6 (012346789T) | -- | 2 | 6 |
 
-# Musical Context/Application
-Messiaen used these modes extensively because:
-- They create distinctive harmonic colors
-- They resist traditional tonal function
-- Their symmetry produces a static, "timeless" quality
-- They have theological/symbolic meaning in Messiaen's aesthetic
-
-The limited transposition creates "charm of impossibilities" (Messiaen's phrase): these collections exhaust their transpositions quickly, giving them a unique, non-tonal character.
+# Context & Application
+Messiaen used these modes extensively throughout his compositional career. He valued them for their distinctive harmonic colors, their resistance to tonal function, and the static, "timeless" quality their symmetry creates. The modes also held theological/symbolic significance in his aesthetic. Many other composers have used these same collections, particularly the whole-tone, octatonic, and hexatonic scales.
 
 # Examples
-From Example 3-7 in the text: The fourteen transpositionally symmetrical set classes, with Messiaen's mode numbers indicated where applicable.
+**Example 1** (p. 118, Ex. 3-8): Bartok, Suite for Piano, op. 14, Scherzo -- uses augmented triads (048). Though not one of Messiaen's seven modes (it is a trichord), the augmented triad demonstrates the same principle: T4 produces the same pitch classes despite the pitch level changing.
 
-Mode 1 (whole-tone scale): Has only 2 distinct forms
-- Form 1: [C, D, E, F#, G#, A#]
-- Form 2: [C#, D#, F, G, A, B]
-- T2, T4, T6, T8, T10 all produce Form 1 or 2
+**Example 2** (p. 117): Mode 1 (whole-tone scale) has only 2 distinct forms. Mode 2 (octatonic scale) has only 3 distinct forms. These limitations are the compositional resource Messiaen exploited.
 
-Mode 2 (octatonic scale): Has only 3 distinct forms
-- Alternating half-steps and whole-steps
-- T3, T6, T9 return to original pitch content
+# Relationships
+## Builds Upon
+- **Transpositional symmetry** -- the modes are a compositionally curated subset of Tn-symmetrical sets
 
-From Example 3-8: Bartok, Suite for Piano, op. 14
-- Uses augmented triads (048), which transpose onto themselves at T4
-- Though not one of Messiaen's modes, it demonstrates the same principle
+## Related
+- **Whole-tone collection** -- Mode 1
+- **Octatonic collection** -- Mode 2
+- **Hexatonic collection** -- not in Messiaen's list but same principle (T4, T8 symmetry)
 
-# Related Concepts
-- Transpositional symmetry
-- Degrees of transpositional symmetry
-- Whole-tone scale
-- Octatonic scale
-- Hexatonic scale
-- Set class
+# Common Errors
+- Thinking "limited transposition" means the scale cannot be transposed (it can, but produces duplicates)
+- Confusing Messiaen's 7 modes with all 14 Tn-symmetrical set classes
 
 # Common Confusions
-- Thinking "limited transposition" means the scale cannot be transposed (it can, but produces duplicates)
-- Confusing Messiaen's seven modes with all transpositionally symmetrical sets (there are more)
-- Not recognizing that smaller symmetrical sets (like tritone, augmented triad, diminished seventh) have the same property
-- Assuming these modes are unique to Messiaen (they appear in earlier music, but he systematized them)
+- Smaller symmetrical sets (tritone, augmented triad, diminished seventh) have the same mathematical property but were excluded from Messiaen's list
+- These collections appear in music predating Messiaen; he was the first to systematize them
 
 # Source Reference
-Chapter 3: Some Additional Properties and Relationships, Section 3.2.2, pages 117-118
+Chapter 3: Some Additional Properties and Relationships, Section 3.2.2, pp. 117-118
+
+# Verification Notes
+Upgraded from old v2 card. Preserved all seven modes table, Bartok example, and Messiaen aesthetic context. Added v3 template fields and distinct forms column.

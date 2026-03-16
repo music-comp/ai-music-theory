@@ -1,57 +1,77 @@
 ---
 concept: I-Combinatoriality
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: i-combinatoriality
+category: compositional-methods
+subcategory: combinatoriality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 339
+section: "6.5.2 Schoenberg and hexachordal combinatoriality"
+extraction_confidence: high
+aliases:
+  - "inversional combinatoriality"
+prerequisites:
+  - hexachordal-combinatoriality
+  - four-types-of-combinatoriality
+extends: []
+related:
+  - schoenberg-and-hexachordal-combinatoriality
+  - twelve-tone-areas
+contrasts_with:
+  - p-combinatoriality
+answers_questions:
+  - "What is I-combinatoriality?"
+  - "How does Schoenberg use I-combinatoriality?"
 ---
 
 # Quick Definition
-I-combinatoriality occurs when the two hexachords of a series are related by inversion to each other, allowing a P-form to combine with an I-form to produce aggregates.
+I-combinatoriality occurs when the two hexachords of a series are related by inversion to each other, allowing P and I forms to combine and produce aggregates.
 
-# Formal Definition
-*I-combinatoriality* (inversional combinatoriality) is the most common type used by Schoenberg. It occurs when the two hexachords of a series (H1 and H2) are inversionally related to each other. If H1 and H2 are related by I_n, then combining two series forms that are also related by I_n will produce aggregates. The second hexachord of P has the same pitch-class content (though different order) as the first hexachord of the combinatorially related I-form.
+# Core Definition
+I-combinatoriality is "Schoenberg's kind" (Straus, p. 339). It occurs when the hexachords H1 and H2 are I-related to each other: I_n(H1) = H2. Combining P with I_(index) produces aggregates between their hexachords. This is the most common type of combinatoriality.
 
-# Mathematical Formulation/Recognition
-**Condition for I-combinatoriality:**
-- If I_n(H1) = H2, the series is I-combinatorial at index n
-- P_m combines with I_(n-m) to form aggregates
+# Prerequisites
+- **Hexachordal combinatoriality** -- the general concept
 
-**Diagram:**
-```
-P:   H1 (pcs a,b,c,d,e,f)  |  H2 (pcs g,h,i,j,k,l)
-I_x: H2 (pcs g,h,i,j,k,l)  |  H1 (pcs a,b,c,d,e,f)
-     ────────aggregate─────   ────────aggregate─────
-```
+# Key Properties
+1. H1 and H2 are inversionally related to each other
+2. P combines with I_x to form aggregates
+3. Most common type; 12+ hexachord types possess it
+4. Schoenberg's primary organizational method
 
-# Musical Context/Application
-- Schoenberg's primary method in his mature twelve-tone works
-- Creates aggregates when combining inversionally related series forms
-- Provides common-tone links between series forms (shared hexachordal content)
-- Foundation for twelve-tone area organization
-- Many hexachords have I-combinatoriality at one or more levels
+# Construction / Recognition
+- Check if I_n(H1) = H2 for some n
+- If yes, P_0 + I_n creates aggregates between hexachords
+
+# Context & Application
+I-combinatoriality is the foundation of Schoenberg's mature twelve-tone practice and his twelve-tone area system. Aggregates form between paired P and I forms sharing hexachordal content.
 
 # Examples
-- Schoenberg, String Quartet No. 4: P2 is I-combinatorial with I7
-- The second hexachord of P2 has the same content as the first hexachord of I7
-- This relationship organizes the entire first movement
-- Schoenberg, Piano Piece, op. 33a: Uses P10 and I3 throughout the first theme
+**Example 1** (pp. 338--342): Schoenberg, String Quartet No. 4 -- P2 + I7 creates aggregates. P0 + I5 creates aggregates.
 
-# Related Concepts
-- Hexachordal Combinatoriality
-- Four Types of Combinatoriality
-- Aggregate
-- All-Combinatorial Hexachords
-- Twelve-Tone Areas
+# Relationships
+## Builds Upon
+- **Hexachordal combinatoriality** -- I-combinatoriality is one type
+
+## Enables
+- **Twelve-tone areas** -- defined by I-combinatorial pairings
+
+## Contrasts With
+- **P-combinatoriality** -- uses transposition rather than inversion
+
+# Common Errors
+- Confusing I-combinatoriality with general inversional relationship
+- Thinking hexachords must be identical (they share content, not order)
 
 # Common Confusions
-- Confusing I-combinatoriality with general inversional relationship
-- Thinking the hexachords must be identical—they share content, not order
-- Assuming all series are I-combinatorial—only those with appropriate hexachords
-- Not calculating the correct index for the combinatorial relationship
+- **I-combinatoriality vs. I-symmetry**: I-combinatoriality involves hexachord-to-complement mapping; I-symmetry involves self-mapping
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.5.2, pages 338-340
+Chapter 6, Section 6.5.2, pp. 338--340
+
+# Verification Notes
+Preserved from old card: Schoenberg examples, diagram. Added: v3 template, direct quotation "Schoenberg's kind."

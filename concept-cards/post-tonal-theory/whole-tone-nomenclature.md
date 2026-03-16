@@ -1,12 +1,28 @@
 ---
 concept: WT Nomenclature
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: whole-tone-nomenclature
+category: collections
+subcategory: whole-tone
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.5 Whole-Tone Collection"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - whole-tone-collection
+extends:
+  - whole-tone-collection
+related:
+  - octatonic-nomenclature
+  - hexatonic-nomenclature
+contrasts_with: []
+answers_questions:
+  - "How are whole-tone collections named?"
 ---
 
 # Quick Definition

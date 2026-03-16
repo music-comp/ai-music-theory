@@ -1,12 +1,29 @@
 ---
 concept: Maximal Evenness
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: maximal-evenness
+category: harmony
+subcategory: interval cycles
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.2.3 Maximal evenness"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - interval-cycles
+  - cyclic-sets
+extends:
+  - interval-cycles
+related:
+  - nearly-even-sets
+  - referential-collections
+contrasts_with: []
+answers_questions:
+  - "What is maximal evenness?"
 ---
 
 # Quick Definition

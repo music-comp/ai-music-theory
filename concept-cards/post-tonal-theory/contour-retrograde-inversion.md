@@ -1,85 +1,90 @@
 ---
 concept: Contour Retrograde-Inversion
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: contour-retrograde-inversion
+category: analysis
+subcategory: contour
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Some Additional Properties and Relationships"
 chapter_number: 3
 pdf_page: 144
-unit: null
-authors: Joseph N. Straus
+section: "3.10.2 CSEG-class"
+extraction_confidence: high
+aliases:
+  - "CSEG retrograde-inversion"
+  - "contour RI"
+prerequisites:
+  - contour-inversion
+  - contour-retrograde
+extends:
+  - contour-inversion
+  - contour-retrograde
+related:
+  - cseg-class
+contrasts_with: []
+answers_questions:
+  - "What is contour retrograde-inversion?"
+  - "How does RI work for contour segments?"
 ---
 
 # Quick Definition
-A contour transformation combining retrograde and inversion; the CSEG is both reversed in order and complemented in value, producing a shape that is the mirror image played backward.
+A contour transformation combining retrograde and inversion: the CSEG is both reversed in order and complemented in value, producing a shape that is the mirror image played backward.
 
-# Formal Definition
-Contour retrograde-inversion (often notated RI) applies both contour inversion and contour retrograde to a CSEG. The order of applying these operations does not matter: R(I(CSEG)) = I(R(CSEG)).
+# Core Definition
+Contour retrograde-inversion (RI) applies both contour inversion and retrograde to a CSEG. The order of application does not matter: R(I(CSEG)) = I(R(CSEG)). For a CSEG <a, b, c, d> with n elements and max value m = n-1: RI = <m-d, m-c, m-b, m-a>. RI-related CSEGs share neither directional pattern (like I) nor temporal unfolding (like R), yet they belong to the same CSEG-class (Straus, pp. 144-145).
 
-For a CSEG <a, b, c, d> with n elements:
-- First invert: <(n-1)-a, (n-1)-b, (n-1)-c, (n-1)-d>
-- Then retrograde: <(n-1)-d, (n-1)-c, (n-1)-b, (n-1)-a>
+# Prerequisites
+- **Contour inversion** -- one component operation
+- **Contour retrograde** -- the other component operation
 
-Or equivalently:
-- First retrograde: <d, c, b, a>
-- Then invert: <(n-1)-d, (n-1)-c, (n-1)-b, (n-1)-a>
+# Key Properties
+1. RI = R composed with I = I composed with R (they commute)
+2. RI-related CSEGs are the "most distant" relatives within a CSEG-class
+3. Applied twice, returns to the original
+4. RI is essential for determining complete CSEG-class membership
 
-# Mathematical Formulation/Recognition
-For CSEG <x1, x2, ..., xn> where max value is m = n-1:
+# Construction / Recognition
+For CSEG <x1, x2, ..., xn> with max m = n-1:
+- Method 1: Invert first -> then retrograde
+- Method 2: Retrograde first -> then invert
+- RI = <m-xn, m-x(n-1), ..., m-x2, m-x1>
 
-RI = <m-xn, m-x(n-1), ..., m-x2, m-x1>
-
-To compute:
-1. Reverse the order
-2. Complement each value with respect to (n-1)
-
-Or:
-1. Complement each value
-2. Reverse the order
-
-Example: <2013> with n=4 (m=3)
-- Method 1: Invert first -> <1320>, then retrograde -> <0231>
-- Method 2: Retrograde first -> <3102>, then invert -> <0231>
+Example: RI(<2013>) with m=3:
+- Invert: <1320>; then Retrograde: <0231>
+- Or: Retrograde: <3102>; then Invert: <0231>
 - RI(<2013>) = <0231>
 
-# Musical Context/Application
-Contour retrograde-inversion:
-- Combines directional mirroring with temporal reversal
-- Represents the most distant transformation within a CSEG-class
-- Appears in music with complex motivic transformations
-- Is important for identifying complete CSEG-class membership
-
-When a CSEG and its RI appear in music, they share neither the same directional pattern (like I) nor the same temporal unfolding (like R), yet they belong to the same contour equivalence class.
+# Context & Application
+RI appears in music with complex motivic transformations and is needed to identify complete CSEG-class membership. When a CSEG and its RI both appear, they represent the maximum transformation within the same contour equivalence class.
 
 # Examples
-From Example 3-37: Crawford Seeger, String Quartet
+**Example 1** (p. 144, Ex. 3-37): Crawford Seeger, String Quartet -- the four members of one CSEG-class:
+- P: <2013>
+- I: <1320>
+- R: <3102>
+- RI: <0231>
 
-The four members of one CSEG-class:
-- Original: <2013>
-- Inversion: <1320>
-- Retrograde: <3102>
-- Retrograde-Inversion: <0231>
+<0231> is the prime form (starts on 0). Both <2013> and <0231> appear in Crawford's melody, showing use of RI-related contours.
 
-<0231> is the prime form of this CSEG-class (starts on 0).
+# Relationships
+## Builds Upon
+- **Contour inversion** and **Contour retrograde** -- the component operations
 
-Relationships:
-- <2013> and <0231> are RI-related
-- <1320> and <3102> are RI-related
-- The "opposites" in the group are always RI-related
+## Related
+- **CSEG-class** -- RI completes the classification
 
-In the Crawford melody, <2013> and <0231> both appear, showing use of RI-related contours from the same CSEG-class.
-
-# Related Concepts
-- Contour segment (CSEG)
-- CSEG-class
-- Contour inversion
-- Contour retrograde
-- Retrograde-inversion (in twelve-tone music)
+# Common Errors
+- Thinking RI is a different kind of operation (it is simply R and I combined)
+- Getting the order wrong (but R and I commute, so it does not matter)
 
 # Common Confusions
-- Thinking RI is a completely different operation (it's just R and I combined)
-- Not recognizing that R and I commute (order doesn't matter)
-- Confusing contour RI with pitch-class RI (different domains)
-- Forgetting that RI is the "most distant" relative within a CSEG-class
+- Contour RI is analogous to but distinct from pitch-class RI
+- RI-related CSEGs are the "most distant" within their class
 
 # Source Reference
-Chapter 3: Some Additional Properties and Relationships, Section 3.10.2, pages 144-145
+Chapter 3: Some Additional Properties and Relationships, Section 3.10.2, pp. 144-145
+
+# Verification Notes
+Upgraded from old v2 card. Preserved Crawford Seeger example and commutativity proof. Added v3 template fields.

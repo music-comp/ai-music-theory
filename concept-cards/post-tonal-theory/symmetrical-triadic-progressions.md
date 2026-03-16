@@ -1,12 +1,29 @@
 ---
 concept: Symmetrical Triadic Progressions
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: symmetrical-triadic-progressions
+category: harmony
+subcategory: triadic post-tonality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.6.2 Other progressions of triads"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - triadic-post-tonality
+  - inversional-axis
+extends:
+  - triadic-post-tonality
+related:
+  - interval-cycle-triadic-progressions
+  - centricity
+contrasts_with: []
+answers_questions:
+  - "How can inversional symmetry organize triadic progressions?"
 ---
 
 # Quick Definition

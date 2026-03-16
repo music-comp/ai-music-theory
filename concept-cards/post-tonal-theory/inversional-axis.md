@@ -1,12 +1,32 @@
 ---
 concept: Inversional Axis
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: inversional-axis
+category: centricity
+subcategory: axes
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.2 Inversional Axis"
+extraction_confidence: high
+aliases:
+  - axis of symmetry
+prerequisites:
+  - centricity
+  - inversional-symmetry
+extends:
+  - centricity
+related:
+  - inversional-symmetry-pitch-space
+  - inversional-symmetry-pitch-class-space
+  - inversional-wedges
+  - twelve-axes-of-symmetry
+contrasts_with: []
+answers_questions:
+  - "How do I find the axis of symmetry?"
 ---
 
 # Quick Definition

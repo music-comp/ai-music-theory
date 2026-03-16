@@ -1,71 +1,83 @@
 ---
 concept: All-Interval Tetrachords
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: all-interval-tetrachords
+category: set-theory
+subcategory: Z-relation
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Some Additional Properties and Relationships"
 chapter_number: 3
 pdf_page: 129
-unit: null
-authors: Joseph N. Straus
+section: "3.6.2 The two 'all-interval' tetrachords"
+extraction_confidence: high
+aliases:
+  - "all-interval tetrachord pair"
+prerequisites:
+  - z-relation
+  - interval-class-vector
+extends:
+  - z-relation
+related:
+  - z-correspondent
+contrasts_with: []
+answers_questions:
+  - "What are the all-interval tetrachords?"
+  - "Why are they called 'all-interval'?"
 ---
 
 # Quick Definition
-The two Z-related tetrachord set classes, (0146) and (0137), that each contain exactly one instance of every interval class; they are the only tetrachords with interval-class vector [111111].
+The two Z-related tetrachord set classes, 4-Z15 (0146) and 4-Z29 (0137), each containing exactly one instance of every interval class; they share interval-class vector [111111].
 
-# Formal Definition
-The all-interval tetrachords are 4-Z15 (0146) and 4-Z29 (0137), the unique pair of Z-related tetrachords. They are called "all-interval" because their shared interval-class vector [111111] indicates that each tetrachord contains exactly one occurrence of each of the six interval classes (ic1 through ic6).
+# Core Definition
+The all-interval tetrachords are 4-Z15 (0146) and 4-Z29 (0137), the unique Z-related tetrachord pair. They are called "all-interval" because their shared vector [111111] indicates one occurrence of each of the six interval classes. No other set of any cardinality contains exactly one of each interval class. Composers have been particularly interested in these tetrachords for their maximum intervallic variety within a four-note sonority (Straus, pp. 129-131).
 
-These tetrachords have attracted significant compositional interest, particularly from Elliott Carter, who used them extensively to create harmonies containing maximum intervallic variety within a four-note sonority.
+# Prerequisites
+- **Z-relation** -- these tetrachords are the paradigmatic Z-related pair
+- **Interval-class vector** -- their shared [111111] vector defines the property
 
-# Mathematical Formulation/Recognition
-Both tetrachords share vector [111111]:
-- (0146): Contains ic1 (between 0-1), ic2 (between 4-6), ic3 (between 1-4), ic4 (between 0-4), ic5 (between 1-6), ic6 (between 0-6)
-- (0137): Contains ic1 (between 0-1), ic2 (between 1-3), ic3 (between 0-3), ic4 (between 3-7), ic5 (between 0-7), ic6 (between 1-7)
+# Key Properties
+1. Both contain exactly one ic1, one ic2, one ic3, one ic4, one ic5, one ic6
+2. They are the only tetrachords (and only sets of any size) with this property
+3. They are Z-related: same vector, different prime forms, not T/I-related
+4. Maximum intervallic diversity in a four-note set
+5. Rich possibilities for voice leading (every interval is available)
 
-To identify: Any tetrachord with prime form (0146) or (0137) is an all-interval tetrachord.
+# Construction / Recognition
+(0146) interval class pairings:
+- ic1: 0-1; ic2: 4-6; ic3: 1-4; ic4: 0-4; ic5: 1-6; ic6: 0-6
 
-The all-interval property is unique to these two set classes; no other tetrachords (or sets of any other size) contain exactly one of each interval class.
+(0137) interval class pairings:
+- ic1: 0-1; ic2: 1-3; ic3: 0-3; ic4: 3-7; ic5: 0-7 (= ic5); ic6: 1-7
 
-# Musical Context/Application
-The all-interval tetrachords offer:
-- Maximum intervallic diversity in a four-note set
-- A distinctive harmonic color combining all intervals
-- A Z-related pair that can alternate with each other
-- Rich possibilities for voice leading (every interval is available)
-
-Elliott Carter made these tetrachords central to his compositional language, often assigning different intervals to different instruments and combining them to form all-interval tetrachords.
+# Context & Application
+Elliott Carter made these tetrachords central to his compositional language, often assigning different intervals to different instruments and combining them to form all-interval tetrachords. Berg also juxtaposed the two Z-related forms to create unified yet varied harmonic progressions.
 
 # Examples
-From Example 3-20: Carter, String Quartet No. 2
+**Example 1** (p. 129, Ex. 3-20a): Carter, String Quartet No. 2 -- second violin plays two ic3s (E-G and F-Ab), viola plays two ic6s (C-F# and Eb-A). Vertical combinations produce either (0146) or (0137). Carter differentiates instruments by assigning each a distinctive interval.
 
-In passage (a):
-- Second violin plays two ic3s (E-G and F-Ab)
-- Viola plays two ic6s (C-F# and Eb-A)
-- Vertical combinations produce either (0146) or (0137)
-- Carter differentiates instruments by assigning each a characteristic interval
+**Example 2** (p. 129, Ex. 3-20b): Carter, String Quartet No. 2 -- a form of (0146) stated melodically in the second violin while the other three instruments combine to create (0137).
 
-In passage (b):
-- Second violin states (0146) melodically
-- Other three instruments combine to create (0137)
+**Example 3** (pp. 130-131, Ex. 3-21): Berg, Four Songs, op. 2, no. 4 -- four-note chords alternate between (0137) and (0146). Sequential voice leading: bass moves by +5, upper voices by -1. Chords come in pairs related by T10 (because 5 + 5 = -1 + -1 = 10 mod 12). The final chord is linearized in the melody.
 
-From Example 3-21: Berg, Four Songs, op. 2, no. 4, "Warm die Lufte"
-- Four-note chords alternate between (0137) and (0146)
-- Chords come in pairs related by T10
-- Sequential voice leading: bass moves by +5, upper voices move by -1
-- Final chord linearized in the melody
+# Relationships
+## Builds Upon
+- **Z-relation** -- these are the canonical Z-related pair
 
-# Related Concepts
-- Z-relation
-- Z-correspondent
-- Interval-class vector
-- Tetrachord
-- Transpositional combination
+## Related
+- **Z-correspondent** -- they are each other's Z-correspondent
+
+# Common Errors
+- Thinking there is only one all-interval tetrachord (there are two, Z-related)
+- Confusing which is which: (0146) is 4-Z15, (0137) is 4-Z29
 
 # Common Confusions
-- Thinking there is only one all-interval tetrachord (there are two, Z-related)
-- Expecting other set sizes to have "all-interval" versions (they don't exist in the same sense)
-- Confusing the two: (0146) vs. (0137) - note the different prime forms
-- Assuming all-interval means "all twelve pitch classes" (it means all six interval classes)
+- "All-interval" means all six interval classes, not all twelve pitch classes
+- No other set size has an "all-interval" version in the same sense
 
 # Source Reference
-Chapter 3: Some Additional Properties and Relationships, Section 3.6.2, pages 129-131
+Chapter 3: Some Additional Properties and Relationships, Section 3.6.2, pp. 129-131
+
+# Verification Notes
+Upgraded from old v2 card. Preserved all Carter and Berg examples with compositional details. Added interval-class pairings for both tetrachords and v3 template fields.

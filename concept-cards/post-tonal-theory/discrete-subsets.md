@@ -1,57 +1,79 @@
 ---
 concept: Discrete Subsets
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: discrete-subsets
+category: twelve-tone
+subcategory: series
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 324
+section: "6.3.1 Direct presentation"
+extraction_confidence: high
+aliases:
+  - "non-overlapping subsets"
+  - "discrete segments"
+prerequisites:
+  - segmental-subsets
+  - twelve-tone-series
+extends: []
+related:
+  - derived-series
+  - hexachordal-combinatoriality
+  - direct-presentation
+contrasts_with: []
+answers_questions:
+  - "What are discrete subsets of a twelve-tone series?"
+  - "How many discrete trichords, tetrachords, and hexachords does a series have?"
 ---
 
 # Quick Definition
-Discrete subsets are non-overlapping portions of the series that divide it into equal segments, such as four discrete trichords, three discrete tetrachords, or two discrete hexachords.
+Discrete subsets are non-overlapping portions that divide the series into equal segments: four discrete trichords, three discrete tetrachords, or two discrete hexachords.
 
-# Formal Definition
-The *discrete subsets* are the ones that divide the series into non-overlapping portions. Every twelve-tone series contains:
-- **Four discrete trichords**: order positions 1-3, 4-6, 7-9, 10-12
-- **Three discrete tetrachords**: order positions 1-4, 5-8, 9-12
-- **Two discrete hexachords**: order positions 1-6, 7-12
+# Core Definition
+"The discrete subsets are the ones that divide the series into non-overlapping portions" (Straus, p. 255). Every twelve-tone series contains: four discrete trichords (positions 1--3, 4--6, 7--9, 10--12), three discrete tetrachords (positions 1--4, 5--8, 9--12), and two discrete hexachords (positions 1--6, 7--12). Set-class membership is preserved across all forms: in R and RI forms, the discrete subsets appear in reverse positional order.
 
-These discrete divisions are structurally significant because they partition the series completely without overlap. The set-class membership of discrete subsets remains invariant across all forms of the series.
+# Prerequisites
+- **Segmental subsets** -- discrete subsets are a special case of segmental subsets
 
-# Mathematical Formulation/Recognition
-- Discrete trichords: {pos 1-3}, {pos 4-6}, {pos 7-9}, {pos 10-12}
-- Discrete tetrachords: {pos 1-4}, {pos 5-8}, {pos 9-12}
-- Discrete hexachords: {pos 1-6}, {pos 7-12}
-- In R-forms, discrete subsets appear in reverse order position (last trichord of P = first of R)
-- Set-class membership preserved: if pos 1-3 of P0 is (014), pos 10-12 of R0 is also (014)
+# Key Properties
+1. Non-overlapping: they partition the series completely
+2. Every series has exactly 4 discrete trichords, 3 discrete tetrachords, 2 discrete hexachords
+3. Set-class membership preserved across all 48 forms
+4. In R-forms, last trichord of P = first trichord of R (same set class)
+5. Hexachords are fundamental for combinatoriality
 
-# Musical Context/Application
-- Discrete trichords and tetrachords are commonly used as motivic units
-- Hexachords are fundamental for combinatoriality
-- Composers often structure phrases around discrete subset boundaries
-- In Webern's derived series, all discrete trichords (or tetrachords) are of the same set class
-- Analysis often focuses on the relationships between discrete subsets
+# Construction / Recognition
+- Divide the 12 order positions into groups of 3, 4, or 6
+- Identify the set class of each group
+- Check for patterns (same set class = derived series)
+
+# Context & Application
+Discrete subsets are structurally significant because they partition the series completely. In derived series, all discrete trichords (or tetrachords) belong to the same set class. In combinatorial series, the two discrete hexachords have a specific inversional or transpositional relationship. Composers often structure phrases around discrete subset boundaries.
 
 # Examples
-- Schoenberg, String Quartet No. 4, mm. 1-6: The music divides P2 into its four discrete trichords
-- Each discrete trichord appears in the melody while the other three sound as accompaniment
-- Discrete tetrachords of P2: (0145), (0125), (0125)
-- The (015) set class appears multiple times among the segmental trichords
+**Example 1** (pp. 324--325): Schoenberg, String Quartet No. 4 -- discrete trichords of P2 include members of sc(015) and other trichord types. Discrete tetrachords: (0145), (0125), (0125). The music divides the series into four discrete trichords, each appearing in the melody and three times in the accompaniment.
 
-# Related Concepts
-- Segmental Subsets
-- Derived Series
-- Hexachordal Combinatoriality
-- Direct Presentation
-- Indirect Presentation
+# Relationships
+## Builds Upon
+- **Segmental subsets** -- discrete subsets are the non-overlapping case
+
+## Enables
+- **Derived series** -- defined by same-class discrete subsets
+- **Hexachordal combinatoriality** -- depends on discrete hexachord relationships
+- **Trichordal arrays** -- built from discrete trichords
+
+# Common Errors
+- Confusing discrete (non-overlapping) with overlapping segmental subsets
+- Forgetting that discrete subset order reverses in R and RI forms
 
 # Common Confusions
-- Confusing discrete subsets (non-overlapping) with overlapping segmental subsets
-- Forgetting that the order of discrete subsets reverses in R and RI forms
-- Not recognizing that hexachords are discrete subsets (only two per series)
-- Assuming discrete subsets must be presented in order—they can be reordered
+- **Discrete vs. segmental**: All discrete subsets are segmental, but not all segmental subsets are discrete
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.3.1, pages 324-325
+Chapter 6, Section 6.3.1, pp. 324--325
+
+# Verification Notes
+Preserved from old card: Schoenberg tetrachord example, counts. Added: v3 template, R-form reversal, combinatoriality connection.

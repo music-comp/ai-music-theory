@@ -1,12 +1,32 @@
 ---
 concept: "L' and R' (Obverse Transformations)"
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: obverse-transformations
+category: harmony
+subcategory: triadic post-tonality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.6.1 Triadic transformation"
+extraction_confidence: high
+aliases:
+  - "L'"
+  - "R'"
+prerequisites:
+  - triadic-transformation
+  - leading-tone-transformation
+  - relative-transformation
+extends:
+  - triadic-transformation
+related:
+  - slide-transformation
+  - plr-cycle
+contrasts_with: []
+answers_questions:
+  - "What are the obverse transformations?"
 ---
 
 # Quick Definition

@@ -1,12 +1,29 @@
 ---
 concept: Octatonic Orderings
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: octatonic-orderings
+category: collections
+subcategory: octatonic
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.4 Octatonic Collection"
+extraction_confidence: high
+aliases:
+  - half-whole scale
+  - whole-half scale
+prerequisites:
+  - octatonic-collection
+extends:
+  - octatonic-collection
+related:
+  - modal-orderings
+contrasts_with: []
+answers_questions:
+  - "What are the two octatonic orderings?"
 ---
 
 # Quick Definition

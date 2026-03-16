@@ -1,58 +1,77 @@
 ---
 concept: Twelve-Tone Areas
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: twelve-tone-areas
+category: compositional-methods
+subcategory: combinatoriality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 343
+section: "6.5.2 Schoenberg and hexachordal combinatoriality"
+extraction_confidence: high
+aliases:
+  - "serial areas"
+  - "combinatorial areas"
+prerequisites:
+  - hexachordal-combinatoriality
+  - series-class
+extends: []
+related:
+  - area-modulation
+  - schoenberg-and-hexachordal-combinatoriality
+contrasts_with: []
+answers_questions:
+  - "What is a twelve-tone area?"
+  - "How do twelve-tone areas relate to tonal keys?"
 ---
 
 # Quick Definition
-Twelve-tone areas are groups of combinatorially related series forms that share hexachordal content, functioning analogously to keys in tonal music and enabling large-scale harmonic motion.
+Twelve-tone areas are groups of four combinatorially related series forms sharing hexachordal content, functioning analogously to keys in tonal music for large-scale harmonic organization.
 
-# Formal Definition
-Combinatoriality divides the forty-eight series forms into closely knit groups, each constituting an *area* that functions like the tonicized keys in a tonal piece. With an I-combinatorial series like Schoenberg's String Quartet No. 4, there are twelve such areas, each containing four series forms (P, I, R, RI). For example, A0 contains P0, I5, R0, and RI5 (the index number determines the combinatorial partner). All four series forms in an area share the same hexachordal content.
+# Core Definition
+Combinatoriality "takes the forty-eight series forms and divides them into twelve or fewer closely knit groups of series forms. Each of these groups constitutes an *area* that functions like the tonicized keys in a tonal piece" (Straus, p. 343). With an I-combinatorial series, "there will be twelve such areas, each containing four series forms" (p. 343). Example: A0 = {P0, I5, R0, RI5}; A1 = {P1, I6, R1, RI6}; etc.
 
-# Mathematical Formulation/Recognition
-For I-combinatorial series with index n:
-- Area A_m contains: P_m, I_(n-m), R_m, RI_(n-m)
-- Example (index = 7): A2 = {P2, I5, R2, RI5} since 2 + 5 = 7
+# Prerequisites
+- **Hexachordal combinatoriality** -- areas are defined by combinatorial relationships
 
-Twelve areas for Schoenberg's String Quartet No. 4:
-- A0 = {P0, I7, R0, RI7}
-- A1 = {P1, I6, R1, RI6}
-- A2 = {P2, I5, R2, RI5}
-- ... through A11
+# Key Properties
+1. Each area contains 4 forms: P_m, I_n, R_m, RI_n (where m + n = index)
+2. All four forms share hexachordal content
+3. With I-combinatoriality, there are 12 areas
+4. Unlike tonal keys, all areas contain the same 12 pitch classes
+5. Areas differ in hexachordal content, not total content
+6. "Combinatoriality provides a solution" to the problem of creating harmonic areas (p. 344)
 
-# Musical Context/Application
-- Areas provide large-scale harmonic organization
-- Motion from area to area creates "modulation" in twelve-tone music
-- Unlike tonal keys, all areas contain the same 12 pitch classes
-- What distinguishes areas is hexachordal content, not total content
-- Combinatoriality solves the problem of creating harmonic areas when content is constant
+# Construction / Recognition
+- Determine the combinatorial index (m + n)
+- Group forms by shared hexachordal content
+- A_m = {P_m, I_(index-m), R_m, RI_(index-m)}
+
+# Context & Application
+Areas enable large-scale formal articulation analogous to tonal key structure. "A twelve-tone area is significantly different from a traditional tonal harmonic area. The diatonic collection changes its content when it is transposed... In twelve-tone music, however, the referential collection contains all twelve pitch classes. When it is transposed or inverted, the content remains the same" (p. 344).
 
 # Examples
-- Schoenberg, String Quartet No. 4, first movement:
-  - Opens in A2 (P2, I7, R2, RI7) for measures 1-31
-  - Later modulates to A4 (P4, I9, R4, RI9)
-  - Climactic return at m. 165 reaches A8 (a tritone from the opening)
-  - Large-scale path: A2 → A4 → A8 (like I → II → V in tonal terms)
-- The return of opening melody at T6 creates a sense of recapitulation
+**Example 1** (pp. 343--344, Ex. 6-39): Schoenberg, String Quartet No. 4 -- twelve areas listed. A2 = {P2, I7, R2, RI7}. The first movement opens in A2, moves through A4, reaches A8 at the climactic recapitulation.
 
-# Related Concepts
-- Hexachordal Combinatoriality
-- Aggregate
-- Area Modulation
-- Schoenberg and Hexachordal Combinatoriality
-- Large-Scale Form
+# Relationships
+## Builds Upon
+- **Hexachordal combinatoriality** -- areas are defined by combinatorial grouping
+
+## Enables
+- **Area modulation** -- movement between areas for large-scale form
+
+# Common Errors
+- Expecting areas to have different pitch-class content like keys (they don't)
+- Confusing area subscript with series form subscript
 
 # Common Confusions
-- Expecting areas to have different pitch-class content like tonal keys—they share all 12 pcs
-- Confusing the subscript of the area with the subscript of the series form
-- Not recognizing that area membership depends on the index number
-- Assuming area motion is as audible as key change—it's more subtle
+- **Area vs. key**: Areas differ in hexachordal content; keys differ in diatonic content. Areas share the same aggregate; keys do not.
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.5.2, pages 343-344
+Chapter 6, Section 6.5.2, pp. 343--344
+
+# Verification Notes
+Preserved from old card: A2 example, tonal analogy. Added: v3 template, direct quotation about area-key difference, construction formula.

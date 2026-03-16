@@ -1,57 +1,82 @@
 ---
 concept: Axis of Symmetry in Twelve-Tone Music
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: axis-of-symmetry-twelve-tone
+category: twelve-tone
+subcategory: invariants
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 321
+section: "6.2.9 Twelve-count"
+extraction_confidence: high
+aliases:
+  - "inversional axis (serial)"
+  - "axis of inversion (twelve-tone)"
+prerequisites:
+  - index-number-twelve-tone
+  - invariant-dyads-between-series-forms
+extends:
+  - inversional-symmetry
+related:
+  - verticals-in-arrays
+contrasts_with: []
+answers_questions:
+  - "What is the axis of symmetry in twelve-tone music?"
+  - "How does the axis create centricity?"
 ---
 
 # Quick Definition
-In twelve-tone music, the axis of symmetry is the pitch or pitch-class around which inversionally related series forms balance, determined by the index number of their relationship.
+The axis of symmetry is the pitch or pitch-class pair around which inversionally related series forms balance, determined by the index number, often creating an audible sense of centricity.
 
-# Formal Definition
-When two series forms are related by inversion, they balance around an *axis of symmetry* determined by their index number. If P_i and I_j have index number n (where i + j = n mod 12), the axis of inversion is the pitch class(es) that sum to n/2 (if n is even) or the dyad summing to n. The axis plays a centric role in the music, and notes balance symmetrically around it.
+# Core Definition
+When two series forms are related by inversion, they balance around an axis determined by their index number. The axis consists of the pitch class(es) that sum to the index number when doubled (i.e., n/2 mod 12, or the pair summing to n). In the music, the axis pitch often serves as a center of inversional symmetry, with "all the other notes arranged pitch-symmetrically around it" (Straus, p. 334).
 
-# Mathematical Formulation/Recognition
-**Calculating the axis:**
-- Index number n = i + j (for P_i and I_j)
-- Axis = pitch class(es) where pc + pc = n (mod 12)
-- For n = 6: axis at 3—9 or 0—6 (two pc-pairs sum to 6)
-- For n = 2: axis at 1 or 7—7 (pcs summing to 2)
+# Prerequisites
+- **Index number** -- determines the axis
+- **Invariant dyads between series forms** -- the dyads balance on the axis
 
-**Pitch realization:**
-- The axis can be realized as specific pitches in specific registers
-- Creates audible pitch symmetry around the axis pitch(es)
+# Key Properties
+1. Axis determined by index number n: pcs x where x + x = n (mod 12)
+2. Can be a single pc (if n is even) or a pc pair
+3. Often creates audible pitch centricity
+4. Unison dyads at the axis pitch occur once (not twice)
+5. All other notes balance symmetrically around the axis
 
-# Musical Context/Application
-- Inversionally related series create dyads that balance around a constant axis
-- The axis pitch often serves as a point of arrival or pitch center
-- Stravinsky's rotational arrays create vertical harmonies balanced around an axis
-- Webern exploits pitch symmetry around the axis
-- Creates a sense of centricity in twelve-tone contexts
+# Construction / Recognition
+- Calculate index number for the P/I pair
+- Find the axis: pitch class(es) where 2x = n (mod 12)
+- Look for that pitch class serving as a point of arrival in the music
+
+# Context & Application
+The axis creates a form of centricity in twelve-tone music. In Stravinsky's rotational arrays, the verticals often exhibit inversional balance around an axis note. In Webern's Piano Variations, the constant axis A-Eb (index 6) gives the movement unity.
 
 # Examples
-- Webern, "Wie bin ich froh!": P7 and RI7 have index 2; axis is C#—G
-- Webern, Piano Variations, op. 27: Constant index 6 throughout second movement; axis is A—Eb
-- The A above middle C is particularly audible as a pitch center (always heard as unison)
-- All other notes are arranged pitch-symmetrically around it
-- Stravinsky, Requiem Canticles: A# serves as axis of symmetry for array verticals
+**Example 1** (p. 321): Webern, "Wie bin ich froh!" -- index 2 produces axis C#-G; G plays a centric role.
 
-# Related Concepts
-- Index Number in Twelve-Tone Context
-- Invariant Dyads Between Series Forms
-- Inversional Symmetry
-- Pitch Centricity
-- Verticals in Arrays
+**Example 2** (p. 334): Webern, Piano Variations, op. 27 -- index 6 produces axis A-Eb; "A above middle C is particularly audible as a pitch center."
+
+**Example 3** (p. 348): Stravinsky, Requiem Canticles -- A# serves as axis of symmetry for the array verticals.
+
+# Relationships
+## Builds Upon
+- **Index number** -- the axis is derived from the index
+- **Inversional symmetry** -- the axis is the center of inversional balance
+
+## Related
+- **Verticals in arrays** -- array verticals may balance around an axis
+
+# Common Errors
+- Assuming the axis is always a single pitch class (it can be a dyad)
+- Confusing the axis with the first note of the series
 
 # Common Confusions
-- Assuming the axis is a single pitch class—it can be a dyad
-- Confusing the axis with the first note of the series
-- Not recognizing that the axis creates audible centricity
-- Forgetting that the same index number produces the same axis
+- **Axis in pitch vs. pitch-class space**: The axis can be realized as specific register pitches, creating more vivid audible centricity
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Sections 6.2.9, 6.4.3, 6.5.3, pages 321, 333-334, 349
+Chapter 6, Sections 6.2.9, 6.4.3, 6.5.3, pp. 321, 333--334, 348--349
+
+# Verification Notes
+Preserved from old card: Webern and Stravinsky examples. Added: v3 template, construction method, pitch vs. pitch-class distinction.

@@ -1,12 +1,29 @@
 ---
 concept: Modal Orderings
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: modal-orderings
+category: collections
+subcategory: diatonic
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.3 Diatonic Collection"
+extraction_confidence: high
+aliases:
+  - church modes
+prerequisites:
+  - diatonic-collection
+extends:
+  - diatonic-collection
+related:
+  - diatonic-nomenclature
+  - centric-tones
+contrasts_with: []
+answers_questions:
+  - "What are the seven modal orderings of the diatonic collection?"
 ---
 
 # Quick Definition

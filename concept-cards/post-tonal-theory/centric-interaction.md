@@ -1,12 +1,29 @@
 ---
 concept: Centric Interaction
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: centric-interaction
+category: centricity
+subcategory: axes
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.7 Collectional and Centric Interaction"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - centricity
+  - centric-tones
+extends:
+  - centricity
+related:
+  - collectional-interaction
+  - spectrum-of-centric-effects
+contrasts_with: []
+answers_questions:
+  - "How do competing centric tones interact?"
 ---
 
 # Quick Definition

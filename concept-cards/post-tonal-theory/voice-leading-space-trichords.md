@@ -1,12 +1,29 @@
 ---
 concept: Voice-Leading Space for Trichords
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: voice-leading-space-trichords
+category: voice-leading
+subcategory: smooth voice leading
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.4.1 Voice-leading space for trichords"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - voice-leading-offset
+  - set-class
+extends:
+  - voice-leading-offset
+related:
+  - voice-leading-space-tetrachords
+  - harmonic-quality-voice-leading-space
+contrasts_with: []
+answers_questions:
+  - "What must I know before understanding set-class space?"
 ---
 
 # Quick Definition

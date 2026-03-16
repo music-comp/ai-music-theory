@@ -1,54 +1,87 @@
 ---
 concept: Isography
+slug: isography
 category: analysis
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+subcategory: null
+tier: intermediate
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Pitch-Class Sets"
 chapter_number: 2
 pdf_page: 59
-unit: null
-authors: Joseph N. Straus
+section: "2.3.7 Nodes, arrows, and networks"
+extraction_confidence: high
+aliases:
+  - isographic networks
+prerequisites:
+  - nodes-and-arrows
+  - transposition
+  - inversion
+extends:
+  - nodes-and-arrows
+related:
+  - mapping
+contrasts_with: []
+answers_questions:
+  - "What does it mean for two networks to be isographic?"
+  - "How does isography reveal structural parallels in music?"
 ---
 
 # Quick Definition
-Isography refers to networks that share the same structure of arrows and operations, even when the contents of their nodes differ.
+Two transformational networks are isographic when they share the same structure of arrows and operation labels, even when the contents of their nodes differ.
 
-# Formal Definition
-Two transformational networks are isographic when they have the same arrow structure with identical operation labels, regardless of what musical elements occupy the nodes. Isographic networks reveal structural parallels between different musical passages or between different levels of analysis (e.g., note-to-note relationships mirroring set-to-set relationships).
+# Core Definition
+Isography is the property of two transformational networks having the same arrow structure with identical operation labels on corresponding arrows, regardless of what musical elements occupy the nodes. Isographic networks reveal structural parallels between different musical passages or between different levels of analysis (e.g., note-to-note relationships mirroring set-to-set relationships).
 
-# Mathematical Formulation/Recognition
-**Properties of isographic networks:**
-- Same number of nodes
-- Same arrow connections between nodes
-- Same operation labels (Tn, In) on corresponding arrows
-- Different content in nodes (different notes or sets)
+# Prerequisites
+- **Nodes and arrows** -- the network components being compared
+- **Transposition (Tn)** -- operations that label arrows
+- **Inversion (In)** -- operations that label arrows
 
-**Notation:**
-Networks are drawn with:
-- Circles or boxes for nodes
-- Arrows connecting nodes
-- Operation labels (T3, I5, etc.) on arrows
+# Key Properties
+1. Same number of nodes in both networks
+2. Same arrow connections between nodes
+3. Same operation labels (Tn, In) on corresponding arrows
+4. Different content in nodes (different notes or sets)
 
-# Musical Context/Application
-Isography demonstrates structural unity across different musical dimensions. When a network of note relationships is isographic with a network of set relationships, it shows that the same transformational logic governs both levels. This is a key feature of post-tonal compositional coherence.
+# Construction / Recognition
+To determine if two networks are isographic:
+1. Draw both networks with labeled arrows
+2. Compare the arrow structure: same connections?
+3. Compare the labels: same operations on corresponding arrows?
+4. If both match, the networks are isographic (regardless of node content)
+
+# Context & Application
+Isography demonstrates structural unity across different musical dimensions. When a note-level network is isographic with a set-level network, the same transformational logic governs both levels. This reveals a key feature of post-tonal compositional coherence: the same operation that moves from note to note also moves from set to set.
 
 # Examples
-**Example 2-12** (Stravinsky, Agon): Two networks showing:
-- Network (a): Bb --T3--> Db (single notes)
+**Example 2-12** (p. 68, Stravinsky, *Agon*): Two isographic networks:
+- Network (a): Bb --T3--> Db (single notes, the highest notes in the violin)
 - Network (b): [G, Ab, Bb, B] --T3--> [Bb, B, Db, D] (sets)
 
-The networks are isographic because they share the same T3 arrow, even though one connects single notes and the other connects sets. This reveals that the same operation moves the music forward at both the note and set levels.
+The networks share the same T3 arrow, even though one connects single notes and the other connects sets. The same operation drives the music at both levels.
 
-**Example 2-31c**: A network showing four sets connected by I1, I7, and T6. This same network structure appears in both Wuorinen's Twelve Short Pieces, no. 3, and Stockhausen's Klavierstuck III, making those passages isographic despite having different set content.
+**Example 2-31c** (p. 80): A network of four nodes connected by I1, I7, and T6 applies to both Wuorinen (*Twelve Short Pieces*, no. 3) and Stockhausen (*Klavierstuck III*). Different pieces, different set classes, but the same transformational structure.
 
-# Related Concepts
-- Nodes and arrows
-- Transformational networks
-- Transposition (Tn)
-- Inversion (In)
-- Structural levels
+# Relationships
+## Builds Upon
+- **Nodes and arrows** -- isography compares network structures
+## Enables
+- **Cross-level analysis** -- recognizing the same transformational logic at multiple levels
+## Related
+- **Mapping** -- isography compares patterns of mappings
+
+# Common Errors
+- **Error**: Requiring same node content for isography. **Correction**: Isography is about arrow structure, not node content.
 
 # Common Confusions
-Isographic networks have the same transformational structure but different musical content. Two passages are isographic when the operations between their elements are the same, not when the elements themselves are the same. Isography reveals deeper structural similarity than surface resemblance.
+- **Confusion**: Isography vs. identity. **Clarification**: Isographic networks have the same transformational structure but different musical content. If both arrow labels and node contents match, the networks are identical, not merely isographic.
 
 # Source Reference
-Chapter 2: Pitch-Class Sets, Section 2.3.7, pp. 51-52
+Chapter 2: Pitch-Class Sets, Section 2.3.7, pages 67--68.
+
+# Verification Notes
+- Definition source: direct from source
+- Confidence rationale: explicitly defined with illustrated examples
+- Re-extraction notes: preserved old card's Wuorinen/Stockhausen comparison; upgraded to v3 template

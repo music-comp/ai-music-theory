@@ -1,12 +1,28 @@
 ---
 concept: Nearly Even Sets
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: nearly-even-sets
+category: harmony
+subcategory: interval cycles
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.2.3 Maximal evenness"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - maximal-evenness
+extends:
+  - maximal-evenness
+related:
+  - interval-cycles
+contrasts_with:
+  - maximal-evenness
+answers_questions:
+  - "What are nearly even sets?"
 ---
 
 # Quick Definition

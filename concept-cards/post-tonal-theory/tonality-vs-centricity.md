@@ -1,12 +1,28 @@
 ---
 concept: Tonality vs. Centricity
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: tonality-vs-centricity
+category: centricity
+subcategory: axes
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.1 Tonality and Centricity"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - centricity
+extends:
+  - centricity
+related:
+  - centric-tones
+  - spectrum-of-centric-effects
+contrasts_with: []
+answers_questions:
+  - "How does centricity differ from tonality?"
 ---
 
 # Quick Definition

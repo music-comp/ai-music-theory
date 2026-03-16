@@ -1,12 +1,29 @@
 ---
 concept: "One-Cycle (C1)"
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: one-cycle
+category: harmony
+subcategory: interval cycles
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.2 Interval Cycles"
+extraction_confidence: high
+aliases:
+  - C1
+  - chromatic cycle
+prerequisites:
+  - interval-cycles
+extends:
+  - interval-cycles
+related:
+  - two-cycle
+contrasts_with: []
+answers_questions:
+  - "What is the one-cycle (C1)?"
 ---
 
 # Quick Definition

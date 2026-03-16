@@ -1,12 +1,33 @@
 ---
 concept: Triadic Transformation
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: triadic-transformation
+category: harmony
+subcategory: triadic post-tonality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.6.1 Triadic transformation"
+extraction_confidence: high
+aliases:
+  - neo-Riemannian operations
+prerequisites:
+  - contextual-inversion
+extends:
+  - contextual-inversion
+related:
+  - parallel-transformation
+  - leading-tone-transformation
+  - relative-transformation
+  - slide-transformation
+  - lp-cycle
+  - plr-cycle
+contrasts_with: []
+answers_questions:
+  - "What is triadic post-tonality?"
 ---
 
 # Quick Definition

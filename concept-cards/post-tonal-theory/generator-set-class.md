@@ -1,60 +1,80 @@
 ---
 concept: Generator Set Class
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: generator-set-class
+category: twelve-tone
+subcategory: series
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 334
+section: "6.5.1 Webern and derivation"
+extraction_confidence: high
+aliases:
+  - "generator"
+  - "generating set class"
+prerequisites:
+  - derived-series
+  - set-class
+extends: []
+related:
+  - webern-and-derivation
+  - discrete-subsets
+contrasts_with: []
+answers_questions:
+  - "What is a generator set class?"
+  - "Which set classes can and cannot serve as generators?"
 ---
 
 # Quick Definition
-The generator set class is the small set class (usually trichord or tetrachord) from which a derived series is constructed, with all discrete segments belonging to that same set class.
+The generator is the trichord or tetrachord set class from which a derived series is constructed, appearing as every discrete segment of that size in the series.
 
-# Formal Definition
-In a derived series, the set class from which the series is derived is called the *generator*. The generator is typically a trichord or tetrachord that appears as all discrete segments of that size within the series. Not all set classes can serve as generators:
-- **Trichord generators**: Any trichord except (036) can generate a derived series
-- **Tetrachord generators**: Any tetrachord that excludes interval class 4 can serve as generator
+# Core Definition
+"The set class from which the series is derived is called the *generator*" (Straus, p. 335). The generator determines the intervallic vocabulary of the entire series class, making it the fundamental motivic building block. Restrictions: "Any trichord -- except (036) -- can act as a *generator*" for trichord derivation. "Any tetrachord that excludes interval class 4 can act as generator" for tetrachord derivation (p. 335).
 
-The generator determines the intervallic vocabulary of the entire series class, making it the fundamental motivic building block.
+# Prerequisites
+- **Derived series** -- the generator defines a derived series
+- **Set class** -- generators are classified by set class
 
-# Mathematical Formulation/Recognition
-**Why (036) cannot generate:**
-- (036) is the diminished triad
-- To derive a 12-tone series, you need 4 non-overlapping (036)s covering all 12 pcs
-- But (036) only transposes to 4 forms (due to symmetry), and these overlap in pitch content
+# Key Properties
+1. Appears as ALL discrete segments of its size in the series
+2. 11 of 12 trichords can serve as generators (not (036))
+3. Tetrachord generators must exclude ic4
+4. The generator shapes the entire sound world of the piece
+5. Non-serial presentations often feature the generator
+6. "The influence of the series, especially its prominent [generator], goes far beyond simple, direct statements" (p. 337)
 
-**Why ic4 exclusion for tetrachords:**
-- Tetrachords containing ic4 cannot partition the aggregate into three non-overlapping instances
-- Similar to the (036) problem but for tetrachords
+# Construction / Recognition
+- Identify the set class appearing as every discrete trichord (or tetrachord) in the series
+- Verify that it meets the restriction criteria
+- Trace its appearances beyond direct serial statements
 
-# Musical Context/Application
-- The generator shapes the entire sound world of the piece
-- Every series form contains multiple statements of the generator
-- Non-serial presentations often feature the generator
-- The generator influences instrumentation, register, and articulation choices
-- Composers choose generators based on desired intervallic characteristics
+# Context & Application
+The generator influences all dimensions of composition. In Webern's op. 24, (014) shapes not only the series but also the melodic line, instrumental groupings, and registral distributions. "Even the transpositions connecting series forms mirror the intervals within (014)" (p. 337).
 
 # Examples
-- Webern, Concerto, op. 24: Generator is (014)
-- The (014) appears as every discrete trichord of the series
-- Beyond direct serial statements, (014) permeates the melodic line
-- Even the transpositions connecting series forms mirror the intervals within (014)
-- The melodic trichords are linked by T4 and I6—the same transformations found within (014)
+**Example 1** (pp. 334--338): Webern, Concerto, op. 24 -- generator is (014). Appears as every discrete trichord. Also shapes the non-serial melodic line, instrumentation, register, and articulation.
 
-# Related Concepts
-- Derived Series
-- Discrete Subsets
-- Set Class
-- Webern and Derivation
-- Intervallic Concentration
+**Example 2** (p. 360): Webern, String Quartet, op. 28 -- generator is (0123). All three discrete tetrachords are chromatic clusters.
+
+# Relationships
+## Builds Upon
+- **Derived series** -- the generator defines a derived series
+
+## Enables
+- **Motivic saturation** -- the generator permeates all musical dimensions
+
+# Common Errors
+- Assuming any prominent set class is the generator (it must appear as ALL discrete segments)
+- Forgetting that (036) cannot generate and ic4 excludes tetrachord generators
 
 # Common Confusions
-- Assuming any prominent set class is "the generator"—it must appear as ALL discrete segments
-- Forgetting the restrictions: no (036) for trichords, no ic4 for tetrachords
-- Conflating the generator with the most common set class—derivation has a specific technical meaning
-- Not recognizing that the generator's influence extends beyond direct serial statements
+- **Generator vs. prominent set class**: Derivation has a strict definition; casual prominence does not qualify
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.5.1, pages 334-335
+Chapter 6, Section 6.5.1, pp. 334--335
+
+# Verification Notes
+Preserved from old card: restriction rules, op. 24 and op. 28 examples. Added: v3 template, direct quotation about influence beyond direct statements.

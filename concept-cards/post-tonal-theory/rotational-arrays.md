@@ -1,57 +1,81 @@
 ---
 concept: Rotational Arrays
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: rotational-arrays
+category: compositional-methods
+subcategory: rotational-arrays
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 345
+section: "6.5.3 Stravinsky and rotational arrays"
+extraction_confidence: high
+aliases:
+  - "Stravinsky arrays"
+  - "rotation arrays"
+prerequisites:
+  - twelve-tone-series
+  - hexachord-rotation
+extends: []
+related:
+  - stravinsky-and-rotational-arrays
+  - verticals-in-arrays
+contrasts_with:
+  - trichordal-arrays
+answers_questions:
+  - "What is a rotational array?"
+  - "How is a rotational array constructed?"
 ---
 
 # Quick Definition
-Rotational arrays are Stravinsky's technique of systematically rotating hexachords (moving the first note to the end) and transposing each rotation to begin on the same first note, creating a 6×6 matrix with canonic relationships.
+A rotational array is a 6x6 matrix derived from a hexachord by systematically rotating it (moving the first note to the end) and transposing each rotation to begin on the same first note, creating canonic relationships between rows.
 
-# Formal Definition
-In Stravinsky's late twelve-tone music, he derived *rotational arrays* from each of the hexachords of his series forms. The first hexachord is written across the top row. The second line rotates the hexachord to start on its second note and transposes it to start on the original first note. Successive rows continue this process. The rows thus describe the same interval succession (allowing for wraparound) but begin one note earlier than the row above. The result is a kind of six-voice canon.
+# Core Definition
+In Stravinsky's rotational arrays, "the first hexachord is written across the top row. The second line of the array rotates that hexachord to start on its second note and simultaneously transposes it up to start on [the original first note]. The remaining lines of the array proceed in similar fashion" (Straus, p. 345). "The rows thus describe the same succession of intervals (allowing for wraparound), but begin one note earlier than the row directly above it. As a result, the lines create a kind of six-voice canon" (p. 346).
 
-# Mathematical Formulation/Recognition
-**Construction process:**
+# Prerequisites
+- **Hexachord rotation** -- the underlying operation
+- **Twelve-tone series** -- the source of the hexachords
+
+# Key Properties
+1. All rows begin on the same first note (creating centricity)
+2. Rows are related by rotation and transposition
+3. Transposition intervals = complements (mod 12) of intervals within the hexachord
+4. Moving through rows top-to-bottom composes-out the inversion of the generating hexachord
+5. Common tones between rows create melodic focus
+6. Creates a "kind of six-voice canon" (p. 346)
+
+# Construction / Recognition
 1. Write generating hexachord in Row I: a-b-c-d-e-f
-2. Row II: Rotate (b-c-d-e-f-a) then transpose to start on a
-3. Row III: Rotate again (c-d-e-f-a-b) then transpose to start on a
+2. Row II: Rotate (b-c-d-e-f-a), transpose to start on a
+3. Row III: Rotate again (c-d-e-f-a-b), transpose to start on a
 4. Continue for all 6 rows
 
-**Transposition intervals:**
-- The intervals of transposition between rows are the complements (mod 12) of the intervals within the original hexachord
-- Moving through rows top-to-bottom composes out the inversion of the generating hexachord
-
-# Musical Context/Application
-- Stravinsky normally used only four untransposed series forms: P, I, R, IR
-- He derived rotational arrays from each hexachord of each form (8 arrays total)
-- Rows can be presented first-to-last or last-to-first
-- Multiple voices can cycle through the array simultaneously
-- The first note of each row is always the same, often playing a centric role
+# Context & Application
+Stravinsky derived rotational arrays from each hexachord of each of his four series forms (8 arrays total). Rows can be presented first-to-last or last-to-first. Multiple voices can cycle through the array simultaneously.
 
 # Examples
-- Stravinsky, A Sermon, a Narrative, and a Prayer:
-  - Array derived from I-form hexachord: Eb-D-Gb-E-F-Ab
-  - All rows begin on Eb, which serves as a point of arrival/departure
-  - Three cycles through the array occur simultaneously in alto, tenor, and chorus
-  - Each cycle composes out the inversion of the generating hexachord
+**Example 1** (pp. 345--346, Exx. 6-41 and 6-42): Stravinsky, A Sermon, a Narrative, and a Prayer -- array from I-form hexachord Eb-D-Gb-E-F-Ab. All rows begin on Eb. Three simultaneous cycles through the array occur in alto, tenor, and chorus/instruments.
 
-# Related Concepts
-- Stravinsky and Rotational Arrays
-- Verticals in Arrays
-- Hexachord
-- Rotation
-- Melodic Pathways
+# Relationships
+## Enables
+- **Stravinsky and rotational arrays** -- the compositional approach using arrays
+- **Verticals in arrays** -- columns used for harmonies
+
+## Contrasts With
+- **Trichordal arrays** -- Babbitt's array type with different construction
+
+# Common Errors
+- Confusing rotation with retrograde (rotation moves first element to end)
+- Forgetting that transposition intervals are complements of hexachord intervals
 
 # Common Confusions
-- Confusing rotation with retrograde—rotation moves first element to end
-- Expecting standard aggregate formation—Stravinsky's music often avoids systematic aggregates
-- Not recognizing the canonic relationship between rows
-- Forgetting that transposition intervals relate to the inverted hexachord
+- **Rotation vs. transposition**: Rotation reorders; transposition then adjusts the starting pitch
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.5.3, pages 345-348
+Chapter 6, Section 6.5.3, pp. 345--348
+
+# Verification Notes
+Preserved from old card: construction process, canonic relationship, common tones. Added: v3 template, direct quotations, complement-interval relationship.

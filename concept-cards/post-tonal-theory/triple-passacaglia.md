@@ -1,49 +1,66 @@
 ---
 concept: Triple Passacaglia
-category: form
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: triple-passacaglia
+category: compositional-methods
+subcategory: rotational-arrays
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 350
+section: "6.5.4 Crawford Seeger and multilevel rotation"
+extraction_confidence: high
+aliases:
+  - "Crawford's triple passacaglia"
+prerequisites:
+  - crawford-seeger-and-multilevel-rotation
+extends: []
+related:
+  - hexachord-rotation
+contrasts_with: []
+answers_questions:
+  - "What is a triple passacaglia?"
+  - "How does it relate to the traditional passacaglia?"
 ---
 
 # Quick Definition
 Triple passacaglia is Crawford Seeger's term for music where a series is projected simultaneously at three structural levels: note-by-note, measure-by-measure (through rotation), and section-by-section (through transposition).
 
-# Formal Definition
-The term "triple passacaglia" was used by Ruth Crawford Seeger to describe movements where the series is projected at three distinct temporal levels. Like a traditional passacaglia (where a bass line repeats throughout), the serial passacaglia features the same pitch-class succession recurring at multiple scales:
-1. Surface level: The series unfolds note by note
-2. Middle level: Downbeats project the series through rotation
-3. Large-scale level: Sections project the series through transposition
+# Core Definition
+"That threefold projection is what Crawford had in mind when she referred to this movement as a 'triple passacaglia'" (Straus, p. 350). Like a traditional passacaglia (where a bass line repeats throughout), the serial passacaglia features the same pitch-class succession at three temporal scales: within measures, across downbeats, and across section boundaries.
 
-# Musical Context/Application
-- Extends the passacaglia concept to serial music
-- Creates unity from surface detail to deepest structure
-- Each structural level mirrors the same intervallic content
-- The term emphasizes the "ground" nature of the series
-- Represents a unique fusion of Baroque form with modernist technique
+# Prerequisites
+- **Crawford Seeger and multilevel rotation** -- the technique creating the triple projection
+
+# Key Properties
+1. Three levels of structural projection (not three voices)
+2. Same pitch-class succession at all three levels
+3. Extends the passacaglia concept (repeating ground) to serial music
+4. Creates extreme structural unity
+
+# Construction / Recognition
+- Identify the series at the note level
+- Check if downbeats project the same series (through rotation)
+- Check if section beginnings project the same series (through transposition)
 
 # Examples
-- Crawford Seeger, Diaphonic Suite No. 1, third movement:
-  - Surface: G-A-G#-B-C-F-C# in eighth notes
-  - Downbeats: m.1 on G, m.2 on A, m.3 on G#, etc. (the series through rotation)
-  - Sections: First section starts on G, second on A, third on G#, etc.
-  - The series is heard in "triple" form: within measures, across measure beginnings, and across section beginnings
+**Example 1** (p. 350): Crawford Seeger, Diaphonic Suite No. 1, third movement -- "triple passacaglia" with the seven-note series projected at three levels.
 
-# Related Concepts
-- Crawford Seeger and Multilevel Rotation
-- Passacaglia
-- Structural Levels
-- Rotation
-- Serial Music
+# Relationships
+## Builds Upon
+- **Crawford Seeger and multilevel rotation** -- the technique creating this form
+
+# Common Errors
+- Assuming "triple" means three voices (it means three structural levels)
+- Confusing with traditional passacaglia (this is a metaphorical extension)
 
 # Common Confusions
-- Assuming "triple" refers to three voices—it refers to three structural levels
-- Confusing with traditional passacaglia form—this is a metaphor, not identical structure
-- Not recognizing that each level projects the same series
-- Thinking this is a common twelve-tone technique—it's specific to Crawford Seeger
+- **Triple = three levels**, not three repetitions or three voices
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.5.4, pages 349-350
+Chapter 6, Section 6.5.4, p. 350
+
+# Verification Notes
+Preserved from old card: definition, three-level explanation. Added: v3 template, direct quotation, metaphorical extension note.

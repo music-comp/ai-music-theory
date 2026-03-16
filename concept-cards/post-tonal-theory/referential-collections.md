@@ -1,12 +1,30 @@
 ---
 concept: Referential Collections
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: referential-collections
+category: collections
+subcategory: null
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.3-5.6"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - set-class
+extends: []
+related:
+  - diatonic-collection
+  - octatonic-collection
+  - whole-tone-collection
+  - hexatonic-collection
+  - referential-collection-comparison
+contrasts_with: []
+answers_questions:
+  - "What are referential collections?"
 ---
 
 # Quick Definition

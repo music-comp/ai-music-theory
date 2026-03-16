@@ -1,12 +1,30 @@
 ---
 concept: Centricity
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: centricity
+category: centricity
+subcategory: axes
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.1 Tonality and Centricity"
+extraction_confidence: high
+aliases:
+  - pitch-class center
+prerequisites:
+  - pitch-class
+extends: []
+related:
+  - tonality-vs-centricity
+  - centric-tones
+  - inversional-axis
+contrasts_with:
+  - tonality-vs-centricity
+answers_questions:
+  - "What is centricity in post-tonal music?"
 ---
 
 # Quick Definition

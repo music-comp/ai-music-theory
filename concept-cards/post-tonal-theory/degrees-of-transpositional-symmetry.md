@@ -1,70 +1,94 @@
 ---
 concept: Degrees of Transpositional Symmetry
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: degrees-of-transpositional-symmetry
+category: set-theory
+subcategory: symmetry
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Some Additional Properties and Relationships"
 chapter_number: 3
 pdf_page: 119
-unit: null
-authors: Joseph N. Straus
+section: "3.2.4 Degrees of transpositional symmetry"
+extraction_confidence: high
+aliases:
+  - "degree of Tn-symmetry"
+prerequisites:
+  - transpositional-symmetry
+  - interval-class-vector
+extends:
+  - transpositional-symmetry
+related:
+  - degrees-of-inversional-symmetry
+  - symmetry-and-set-class-size
+contrasts_with: []
+answers_questions:
+  - "How many transposition levels map a set onto itself?"
+  - "How do I read the degree of transpositional symmetry from the List of Set Classes?"
 ---
 
 # Quick Definition
-The number of transpositional levels at which a set class maps onto itself; found in the List of Set Classes as the first number in the degree of symmetry notation (n, m).
+The count of distinct transposition levels (including T0) at which a set class maps onto itself; listed as the first number in the (n, m) degree-of-symmetry notation in the List of Set Classes.
 
-# Formal Definition
-The degree of transpositional symmetry is the count of distinct transposition levels (including T0) at which any member of a set class will map entirely onto itself. This number appears as the first value in the ordered pair (n, m) in the middle column of the List of Set Classes, where n is the degree of transpositional symmetry and m is the degree of inversional symmetry.
+# Core Definition
+The degree of transpositional symmetry measures how many distinct values of n allow Tn to map a set onto itself. In the List of Set Classes, this appears as the first number in the ordered pair (n, m), where n = degree of Tn-symmetry and m = degree of In-symmetry. Every set class has degree at least 1 (T0). The 14 set classes with degree greater than 1 are the truly transpositionally symmetrical ones (Straus, p. 119).
 
-Every set class has a degree of transpositional symmetry of at least 1, because all sets map onto themselves at T0. Set classes with a degree greater than 1 are considered truly transpositionally symmetrical.
+# Prerequisites
+- **Transpositional symmetry** -- the property being measured
+- **Interval-class vector** -- used to determine the degree
 
-# Mathematical Formulation/Recognition
-The degree of transpositional symmetry divides evenly into 12:
-- Degree 1: Only T0 (most common)
-- Degree 2: T0, T6
-- Degree 3: T0, T4, T8
-- Degree 4: T0, T3, T6, T9
-- Degree 6: T0, T2, T4, T6, T8, T10
+# Key Properties
+1. The degree always divides evenly into 12: possible values are 1, 2, 3, 4, 6, 12
+2. Degree 1: only T0 (most set classes)
+3. Degree 2: T0, T6
+4. Degree 3: T0, T4, T8
+5. Degree 4: T0, T3, T6, T9
+6. Degree 6: T0, T2, T4, T6, T8, T10
+7. The degree determines set class size: 24 / (total self-mapping operations)
 
+# Construction / Recognition
 To determine the degree:
-1. Count how many entries in the interval-class vector equal the set's cardinality (or half for ic6)
-2. Add 1 for the trivial T0 case
+1. Check the interval-class vector
+2. Count entries equal to the set's cardinality (or half for ic6)
+3. Add 1 for T0
+4. Alternatively, read the first number from the (n, m) notation in the List of Set Classes
 
-The degree also determines the number of distinct sets in the set class: 24 divided by (degree of Tn-symmetry times degree of In-symmetry) = number of sets in the class.
-
-# Musical Context/Application
-The degree of transpositional symmetry affects:
-- How many distinct transpositions of a set class exist
-- The compositional possibilities for transposition-based development
-- The "color" or character of the set (highly symmetrical sets have a distinctive quality)
-
-Messiaen classified his "Modes of Limited Transposition" by this property, finding that their symmetry creates unique harmonic atmospheres that resist conventional tonal function.
+# Context & Application
+The degree directly determines how many distinct transpositions of the set exist (12 / degree = number of distinct transpositions). Messiaen classified his "Modes of Limited Transposition" by this property, finding that their limited number of transpositions creates unique harmonic atmospheres.
 
 # Examples
-From Example 3-7:
+**Example 1** (p. 119): Representative degrees:
 
-| Set Class | Degree of Tn-symmetry | Levels |
-|-----------|-----------------------|--------|
-| (06) Tritone | 2 | T0, T6 |
-| (048) Augmented triad | 3 | T0, T4, T8 |
-| (0369) Diminished seventh | 4 | T0, T3, T6, T9 |
-| (02468T) Whole-tone scale | 6 | T0, T2, T4, T6, T8, T10 |
+| Set Class | Name | Degree | Distinct Forms |
+|-----------|------|--------|----------------|
+| (06) | Tritone | 2 | 6 |
+| (048) | Augmented triad | 3 | 4 |
+| (0369) | Diminished 7th | 4 | 3 |
+| (02468T) | Whole-tone | 6 | 2 |
 
-The whole-tone scale has the highest degree (6), meaning only two distinct whole-tone collections exist (one containing C, D, E, F#, G#, A#; the other containing C#, D#, F, G, A, B).
+**Example 2**: Most set classes (e.g., (0137), (0258)) have degree 1 -- they map onto themselves only at T0 and have 24 distinct members (before In-symmetry reduction).
 
-Most set classes (like (0137) or (0258)) have degree 1: they map onto themselves only at T0.
+# Relationships
+## Builds Upon
+- **Transpositional symmetry** -- this quantifies that property
 
-# Related Concepts
-- Transpositional symmetry
-- Degrees of inversional symmetry
-- Symmetry and set class size
-- Set class
-- Interval-class vector
+## Enables
+- **Symmetry and set class size** -- degree directly determines class size
+
+## Related
+- **Degrees of inversional symmetry** -- the complementary measure in the (n, m) pair
+
+# Common Errors
+- Forgetting to count T0 (every set has degree at least 1)
+- Conflating degree of Tn-symmetry with degree of In-symmetry
 
 # Common Confusions
-- Forgetting to count T0 (every set has at least degree 1)
-- Conflating degree of transpositional symmetry with degree of inversional symmetry
-- Assuming high degree means "better" or "more useful" (it just means different compositional properties)
-- Not understanding how symmetry affects set class size
+- High degree does not mean "better" or "more useful" -- it means fewer distinct transpositions and a different compositional character
+- The degree always divides 12, which explains why the possible values are limited
 
 # Source Reference
-Chapter 3: Some Additional Properties and Relationships, Section 3.2.4, page 119
+Chapter 3: Some Additional Properties and Relationships, Section 3.2.4, p. 119
+
+# Verification Notes
+Upgraded from old v2 card. Preserved all degree tables and formulas. Added distinct forms column and v3 template structure.

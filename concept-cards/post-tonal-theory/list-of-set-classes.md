@@ -1,63 +1,103 @@
 ---
 concept: List of Set Classes
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: list-of-set-classes
+category: set-theory
+subcategory: null
+tier: intermediate
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Pitch-Class Sets"
 chapter_number: 2
 pdf_page: 59
-unit: null
-authors: Joseph N. Straus
+section: "2.8 List of Set Classes"
+extraction_confidence: high
+aliases:
+  - set class table
+  - set class catalog
+prerequisites:
+  - prime-form
+  - set-class
+  - forte-names
+  - interval-class-vector
+extends:
+  - set-class
+related:
+  - cardinality
+  - complement-relation
+contrasts_with: []
+answers_questions:
+  - "How many set classes are there?"
+  - "What information is in the List of Set Classes?"
+  - "How do I look up a set class?"
 ---
 
 # Quick Definition
-The List of Set Classes is a comprehensive catalog of all possible set classes, providing prime forms, Forte names, interval-class vectors, and symmetry information.
+The List of Set Classes is a comprehensive catalog providing prime forms, Forte names, interval-class vectors, and symmetry information for all possible set classes.
 
-# Formal Definition
-The List of Set Classes is a reference table containing all possible set classes organized by cardinality. Although there are many thousands of distinct pitch-class sets, they group into a much smaller number of set classes. For example, 220 distinct trichords form only 12 trichordal set classes. The list provides: prime form, Forte name, interval-class vector, and symmetry measures for each set class.
+# Core Definition
+The List of Set Classes is a reference table containing all possible set classes organized by cardinality. Although there are thousands of distinct pitch-class sets, they group into a much smaller number of set classes. The list provides four pieces of information for each set class: (1) prime form, (2) Forte name, (3) interval-class vector, and (4) symmetry measures (transpositional and inversional). Sets with more than six elements are listed across from their complements.
 
-# Mathematical Formulation/Recognition
-**Number of set classes by cardinality:**
-| Cardinality | Set Classes |
-|-------------|-------------|
-| Trichords (3) | 12 |
-| Tetrachords (4) | 29 |
-| Pentachords (5) | 38 |
-| Hexachords (6) | 50 |
-| Septachords (7) | 38 |
-| Octachords (8) | 29 |
-| Nonachords (9) | 12 |
+# Prerequisites
+- **Prime form** -- the primary identifier in the list
+- **Set class** -- what each entry represents
+- **Forte names** -- alternative labeling system used in the list
+- **Interval-class vector** -- included for each entry
 
-Note the symmetry: sets of cardinality n and (12-n) have the same number of classes.
+# Key Properties
+1. Organized by cardinality (number of elements)
+2. **Number of set classes by cardinality:**
+   - Trichords (3): 12
+   - Tetrachords (4): 29
+   - Pentachords (5): 38
+   - Hexachords (6): 50
+   - Septachords (7): 38
+   - Octachords (8): 29
+   - Nonachords (9): 12
+3. Symmetry: cardinalities n and (12-n) have the same number of set classes
+4. Contains prime form, Forte name, interval-class vector, and symmetry degree for each entry
+5. Complement relationships shown by pairing across the table
 
-**Information in the list:**
-1. Prime form (column 1)
-2. Forte name: cardinality-ordinal (column 2)
-3. Interval-class vector (column 3)
-4. Symmetry degree: transpositional, inversional (column 4)
-5. Complement (opposite side of list)
+# Construction / Recognition
+**To use the list:**
+1. Put your set in prime form
+2. Find it in the list (arranged in ascending order within each cardinality)
+3. Read off the Forte name, interval-class vector, and symmetry information
+4. Check the complementary set class across the table
 
-# Musical Context/Application
-The List of Set Classes is an essential reference tool for post-tonal analysis. It allows quick identification of any set's set-class membership and provides instant access to the interval-class vector and other properties. Analysts consult it when putting sets into prime form and when seeking sets with particular intervallic characteristics.
+# Context & Application
+The List of Set Classes is an essential analytical reference. It allows quick identification of any set's set-class membership and provides instant access to interval-class vector and symmetry properties. "Notice how few set classes there are" (Straus, Ch. 2): the thousands of possible sets reduce to a manageable catalog.
 
 # Examples
-Looking up set class 3-4 in the list reveals:
-- Prime form: (015)
-- Forte name: 3-4
-- Interval-class vector: <100110>
-- Contains 1 semitone, 1 minor third, 1 perfect fourth
+From the list:
+- 220 distinct trichords group into just 12 trichordal set classes
+- (037) = 3-11: the major/minor triad, ic vector <001110>
+- (014) = 3-3: ic vector <101100>
+- (0126) = 4-5: ic vector <210111>
+- (02468T) = 6-35: the whole-tone scale
 
-The List also shows that (015) and its complement relate to each other.
+# Relationships
+## Builds Upon
+- **Prime form** -- the list is organized by prime form
+- **Set class** -- each entry represents one set class
+## Enables
+- **Set-class analysis** -- essential reference for identifying and comparing set classes
+## Related
+- **Forte names** -- alternative labels in the list
+- **Cardinality** -- the organizing principle
+- **Complement relation** -- paired entries in the list
+- **Interval-class vector** -- tabulated for each entry
 
-# Related Concepts
-- Prime form
-- Set class
-- Forte names
-- Interval-class vector
-- Complement relation
-- Cardinality
+# Common Errors
+- **Error**: Looking up a normal form instead of a prime form. **Correction**: Always convert to prime form before consulting the list.
 
 # Common Confusions
-The List of Set Classes contains set classes, not individual sets. Each entry represents an entire family of related sets (typically 24). The Forte names are an alternative labeling system; this book primarily uses prime forms but occasionally references Forte names.
+- **Confusion**: Entries represent individual sets. **Clarification**: Each entry represents an entire set class (typically 24 sets). The listed prime form is the canonical representative.
 
 # Source Reference
-Chapter 2: Pitch-Class Sets, Section 2.8, pp. 68-69; List of Set Classes, pp. 378-381
+Chapter 2: Pitch-Class Sets, Section 2.8, pages 85--86.
+
+# Verification Notes
+- Definition source: direct from source
+- Confidence rationale: explicitly described with cardinality counts
+- Re-extraction notes: preserved old card's cardinality table and symmetry observation; upgraded to v3 template

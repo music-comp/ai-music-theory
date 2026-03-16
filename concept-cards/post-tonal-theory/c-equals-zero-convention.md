@@ -1,54 +1,106 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: C=0 Convention
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: c-equals-zero-convention
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: notation systems
+tier: foundational
+
+# === PROVENANCE ===
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Pitch and Interval"
 chapter_number: 1
-pdf_page: 17
-unit: null
-authors: Joseph N. Straus
+pdf_page: 21
+section: "1.4 Integer Notation"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - fixed-do convention
+  - C equals zero
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pitch-class
+  - integer-notation
+extends: []
+related:
+  - enharmonic-equivalence
+  - mod-12-arithmetic
+  - pitch-class-clockface
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Why is C assigned to integer 0?"
+  - "What convention is used for mapping pitch classes to integers?"
 ---
 
 # Quick Definition
-The C=0 convention assigns integer 0 to pitch class C, with other pitch classes numbered chromatically upward (C#=1, D=2, etc.).
+The C=0 convention assigns integer 0 to pitch class C (and its enharmonic equivalents), with remaining pitch classes numbered chromatically upward through 11.
 
-# Formal Definition
-The C=0 convention is a "fixed do" system for integer notation where pitch class C (along with its enharmonic equivalents B# and Dbb) is assigned integer 0. Subsequent pitch classes are numbered chromatically: C#/Db=1, D=2, D#/Eb=3, and so on through B=11. This standardized system enables consistent mathematical operations on pitch classes across all analytical contexts.
+# Core Definition
+The C=0 convention is the standard "fixed do" assignment system in which pitch class C (along with enharmonic equivalents B# and Dbb) is arbitrarily assigned the integer 0. Subsequent pitch classes are numbered chromatically: C#/Db = 1, D = 2, and so on through B = 11. This convention is universally adopted in post-tonal theory and provides a consistent reference point for all pitch-class calculations.
 
-# Mathematical Formulation/Recognition
-**Complete integer assignments:**
-| Integer | Pitch Class |
-|---------|-------------|
-| 0 | C (B#, Dbb) |
-| 1 | C#, Db |
-| 2 | D (C##, Ebb) |
-| 3 | D#, Eb |
-| 4 | E (D##, Fb) |
-| 5 | F (E#, Gbb) |
-| 6 | F#, Gb |
-| 7 | G (F##, Abb) |
-| 8 | G#, Ab |
-| 9 | A (G##, Bbb) |
-| 10 | A#, Bb |
-| 11 | B (A##, Cb) |
+# Prerequisites
+- **Pitch Class** — the twelve equivalence classes that the integers label
+- **Integer Notation** — the system of using integers 0-11 for pitch classes
 
-# Musical Context/Application
-The C=0 convention provides a universal reference point for pitch-class calculations. All analysts using this convention will arrive at the same integer representations, enabling clear communication of pitch-class relationships regardless of how the notes are spelled in the score.
+# Key Properties
+1. The assignment of 0 to C is arbitrary but universally adopted
+2. All enharmonic spellings of a given pitch class receive the same integer
+3. The convention enables the pitch-class clockface with C (0) at the 12 o'clock position
+4. All interval, transposition, and inversion calculations depend on this fixed reference
+
+# Construction / Recognition
+## To Construct:
+1. Assign 0 to C (and enharmonic equivalents)
+2. Count up chromatically, adding 1 per semitone, through B = 11
+
+## To Recognize:
+1. Any system where C = 0, C# = 1, D = 2, ..., B = 11 follows this convention
+
+# Context & Application
+The C=0 convention ensures that all analysts working with the same music arrive at the same integer representations, enabling clear communication. Some historical or alternative systems used different reference points, so when consulting older literature it is important to verify which convention is in use.
 
 # Examples
-**Example 1-6**: Shows the integer notation system with C=0, including multiple enharmonic spellings for each pitch class.
+**Example 1-6** (p. 21): The complete table of pitch classes with integer assignments under the C=0 convention.
 
-**Example 1-7** (Schoenberg, String Quartet No. 3): Demonstrates pitch-class integers assigned to notated pitches.
+**Example 1-7** (p. 22): Pitch-class integers assigned to the opening of Schoenberg, String Quartet No. 3, demonstrating the convention in analytical practice.
 
-# Related Concepts
-- Integer notation
-- Pitch class
-- Enharmonic equivalence
-- Mod 12 arithmetic
-- Pitch-class clockface
+# Relationships
+## Builds Upon
+- **Pitch Class** — the C=0 convention labels pitch classes
+- **Integer Notation** — the C=0 convention is the specific assignment rule within the integer notation system
+
+## Enables
+- **Pitch-Class Clockface** — places 0 (C) at the 12 o'clock position
+- **All interval and transformation calculations** — depend on consistent integer assignment
+
+## Related
+- **Enharmonic Equivalence** — all enharmonic spellings receive the same integer
+
+## Contrasts With
+- (some older literature uses different conventions, but these are not covered in this source)
+
+# Common Errors
+- **Error**: Assuming a different pitch class equals 0 (e.g., moveable-do thinking)
+  **Correction**: In standard post-tonal theory, C is always 0 regardless of key or context.
 
 # Common Confusions
-The C=0 convention is arbitrary but universally adopted in post-tonal theory. Some earlier or alternative systems used different reference points. When reading older literature, verify which convention is being used. In this book and most contemporary sources, C always equals 0.
+- **Confusion**: Conflating the C=0 convention with a key of C
+  **Clarification**: The assignment is purely a labeling convention; it does not imply that C is a tonic or has any special tonal function.
 
 # Source Reference
-Chapter 1: Basic Concepts of Pitch and Interval, Section 1.4, pp. 5-6
+Chapter 1: Basic Concepts of Pitch and Interval, Section 1.4, pp. 21-22.
+
+# Verification Notes
+- Definition source: direct (Straus Section 1.4, "fixed do" reference)
+- Confidence rationale: explicitly stated as the adopted convention
+- Re-extraction notes: Re-extracted from v2 card; preserved: complete integer table reference, clarity about arbitrary but universal adoption

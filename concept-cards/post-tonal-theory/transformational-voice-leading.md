@@ -1,12 +1,30 @@
 ---
 concept: Transformational Voice Leading
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: transformational-voice-leading
+category: voice-leading
+subcategory: smooth voice leading
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.3.1 Transposition and inversion"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - transposition
+  - inversion
+extends:
+  - transposition
+related:
+  - fuzzy-transposition
+  - fuzzy-inversion
+  - voice-leading-offset
+contrasts_with: []
+answers_questions:
+  - "What is transformational voice leading?"
 ---
 
 # Quick Definition

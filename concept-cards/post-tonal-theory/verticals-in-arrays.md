@@ -1,57 +1,75 @@
 ---
 concept: Verticals in Arrays
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: verticals-in-arrays
+category: compositional-methods
+subcategory: rotational-arrays
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 348
+section: "6.5.3 Stravinsky and rotational arrays"
+extraction_confidence: high
+aliases:
+  - "array columns"
+  - "array verticals"
+prerequisites:
+  - rotational-arrays
+extends: []
+related:
+  - stravinsky-and-rotational-arrays
+  - axis-of-symmetry-twelve-tone
+contrasts_with: []
+answers_questions:
+  - "What are verticals in a rotational array?"
+  - "How do verticals create inversional symmetry?"
 ---
 
 # Quick Definition
-Verticals are the columns of a rotational array, used by Stravinsky to generate harmonies that often display inversional symmetry around an axis determined by the array's construction.
+Verticals are the columns of a rotational array, used by Stravinsky for harmonies; they display inversional symmetry around the constant first note, which serves as an axis.
 
-# Formal Definition
-Although Stravinsky generally used the rows of rotational arrays to create melodies, he also sometimes used the columns (or "verticals") of the arrays to write harmonies. In a rotational array, the verticals have distinctive properties: Vertical 1 consists of a single pitch class (since all rows begin on the same note), which forms an axis of symmetry for the rest of the verticals. Pairs of verticals are related by inversion around this axis, creating a balanced harmonic structure.
+# Core Definition
+"Although Stravinsky generally used the rows of the arrays to create melodies, he also sometimes used the columns (or 'verticals') of the arrays to write harmonies" (Straus, p. 348). Vertical 1 consists of a single pitch class (since all rows begin on the same note), "which forms an axis of symmetry for the rest of the verticals. Verticals 6 and 2 are related at I_{first note}, as are verticals 3 and 5. Vertical 4 maps onto itself at I_{first note}" (p. 349).
 
-# Mathematical Formulation/Recognition
-In a rotational array starting on pitch class x:
-- **Vertical 1**: Contains only x (repeated 6 times)
-- **Verticals 2 and 6**: Related by I_x
-- **Verticals 3 and 5**: Related by I_x
-- **Vertical 4**: Maps onto itself at I_x
+# Prerequisites
+- **Rotational arrays** -- verticals are the columns of these arrays
 
-The axis of symmetry is determined by the first note of the array.
+# Key Properties
+1. Vertical 1: single pitch class (constant first note), forms axis of symmetry
+2. Verticals 2 and 6: related by I around the axis
+3. Verticals 3 and 5: related by I around the axis
+4. Vertical 4: maps onto itself at the axis inversion
+5. Creates balanced, centric harmonic structures
 
-# Musical Context/Application
-- Verticals provide ready-made harmonies for twelve-tone composition
-- The inversional symmetry creates a sense of balance and centricity
-- The first pitch class often serves as a centric note
-- Frequent pitch-class doublings (from the constant first column) add weight
-- Verticals can be used alongside melodic row presentations
+# Construction / Recognition
+- Read columns of the rotational array rather than rows
+- Check inversional relationships between paired verticals
+- Identify the axis from Vertical 1
+
+# Context & Application
+Verticals provide ready-made harmonies with built-in inversional balance and centricity. The frequent pitch-class doublings (from common tones between rows) "impart a sense of weight and focus" (p. 349).
 
 # Examples
-- Stravinsky, Requiem Canticles:
-  - Rotational array with A# as first note
-  - Vertical 1: only A# (forms axis of symmetry)
-  - Verticals 6 and 2 are related at I_{A#}
-  - Verticals 3 and 5 are related at I_{A#}
-  - Vertical 4 maps onto itself at I_{A#}
-  - The A# is a centric note, with other notes arranged symmetrically around it
+**Example 1** (pp. 348--349): Stravinsky, Requiem Canticles -- A# serves as axis of symmetry for all verticals. Verticals 6 and 2 are I-related, as are 3 and 5; Vertical 4 is self-inverting. The passage creates a cadential harmonic structure.
 
-# Related Concepts
-- Rotational Arrays
-- Stravinsky and Rotational Arrays
-- Inversional Symmetry
-- Axis of Symmetry
-- Pitch Centricity
+# Relationships
+## Builds Upon
+- **Rotational arrays** -- verticals are array columns
+
+## Related
+- **Axis of symmetry** -- the constant first note creates an axis
+
+# Common Errors
+- Confusing verticals (columns) with rows in the array
+- Not recognizing the built-in inversional symmetry
 
 # Common Confusions
-- Confusing verticals (columns) with rows in the array
-- Not recognizing the inversional symmetry built into the vertical structure
-- Overlooking how the first note creates the axis of symmetry
-- Assuming verticals must be used in order—they can be freely combined
+- **Vertical use vs. row use**: Rows create melodies; verticals create harmonies. Both derive from the same array.
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.5.3, pages 348-349
+Chapter 6, Section 6.5.3, pp. 348--349
+
+# Verification Notes
+Preserved from old card: Requiem Canticles example, pairing relationships. Added: v3 template, direct quotations, axis formation.

@@ -1,12 +1,28 @@
 ---
 concept: Harmonic Quality in Voice-Leading Space
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: harmonic-quality-voice-leading-space
+category: voice-leading
+subcategory: smooth voice leading
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.4.3 Harmonic quality"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - voice-leading-space-trichords
+  - maximal-evenness
+extends:
+  - voice-leading-space-trichords
+related:
+  - voice-leading-space-tetrachords
+contrasts_with: []
+answers_questions:
+  - "What is harmonic quality in voice-leading space?"
 ---
 
 # Quick Definition

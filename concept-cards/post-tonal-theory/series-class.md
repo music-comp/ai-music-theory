@@ -1,52 +1,95 @@
 ---
 concept: "Series Class (Row Class)"
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: series-class
+category: twelve-tone
+subcategory: series
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 315
+section: "6.2.7 Series class (row class)"
+extraction_confidence: high
+aliases:
+  - "row class"
+  - "family of series forms"
+prerequisites:
+  - twelve-tone-series
+  - prime-ordering
+  - retrograde
+  - inversion-twelve-tone
+  - retrograde-inversion
+extends: []
+related:
+  - forty-eight-series-forms
+  - twelve-by-twelve-matrix
+  - content-and-order
+contrasts_with:
+  - set-class
+answers_questions:
+  - "What is a series class?"
+  - "How many forms does a series class contain?"
+  - "What intervallic relationships exist among series forms?"
 ---
 
 # Quick Definition
-A series class (or row class) is the family of forty-eight series forms related by transposition, retrograde, inversion, and retrograde-inversion, all sharing closely related intervallic content and subset structure.
+A series class (or row class) is the family of forty-eight series forms -- twelve primes, twelve retrogrades, twelve inversions, and twelve retrograde-inversions -- all closely related by shared intervallic content and subset structure.
 
-# Formal Definition
-For any series, we have a family of forty-eight series forms: twelve primes (P0-P11), twelve retrogrades (R0-R11), twelve inversions (I0-I11), and twelve retrograde-inversions (RI0-RI11). That family of series forms is known as a *series class* (or *row class*). The series in the series class are all related by T, R, I, or RI, and each individual series is a member (representative) of the class. All the members of the series class are closely related in terms of both pitch classes and intervals.
+# Core Definition
+"For any series, we thus have a family of forty-eight series forms: twelve primes, twelve retrogrades, twelve inversions, and twelve retrograde-inversions. That family of series forms is known as a *series class* (or *row class*). The series in the series class are all related by T, R, I, or RI, and each individual series is a member (representative) of the class. All the members of the series class are closely related in terms of both pitch classes and intervals" (Straus, pp. 315--316).
 
-# Mathematical Formulation/Recognition
-- 48 total forms = 12 P-forms + 12 R-forms + 12 I-forms + 12 RI-forms
-- All forms share the same interval-class content
-- Intervallic relationships between forms:
-  - P and P (or I and I, R and R, RI and RI): same intervals, same order (prime-related)
-  - P and I (or R and RI): complementary intervals, same order
-  - P and RI (or I and R): same intervals, reverse order
-  - P and R (or I and RI): complementary intervals, reverse order
+# Prerequisites
+- **Four basic operations** -- P, R, I, RI must be understood to comprehend the class
 
-# Musical Context/Application
-- The series class constitutes the pitch material for a twelve-tone composition
-- Most pieces use far fewer than 48 different forms
-- All forms share the distinctive intervallic sound of the series
-- Composers build structural relationships into the series that permeate all 48 forms
-- The matrix is a convenient way to view the entire series class
+# Key Properties
+1. 48 total forms = 12 P + 12 R + 12 I + 12 RI
+2. All forms share the same interval-class content
+3. Intervallic relationships between orderings (p. 317):
+   - Prime-related (P-P, I-I, R-R, RI-RI): same intervals, same order
+   - P and I (R and RI): complementary intervals, same order
+   - P and RI (I and R): same intervals, reverse order
+   - P and R (I and RI): complementary intervals, reverse order
+4. Retrograde-symmetrical series have only 24 distinct orderings
+
+# Construction / Recognition
+- Generate all 12 P-forms by transposition
+- Generate R-forms by reversing each P-form
+- Generate I-forms by inverting each pitch class
+- Generate RI-forms by reversing each I-form
+- A 12x12 matrix displays the entire class compactly
+
+# Context & Application
+The series class constitutes the complete pitch material available for a twelve-tone composition. Most pieces use far fewer than 48 forms. "A composer builds into the original series (and thus into the entire family of forty-eight forms) certain kinds of structures and relationships. A composition based on that series can express those structures and relationships in many different ways" (p. 318).
 
 # Examples
-- Schoenberg, String Quartet No. 4: All 48 forms share predominance of intervals 1, 4, 8, and 11, and exclude intervals 3 and 9
-- The first movement primarily uses P2, I7, R2, and RI7 (a single twelve-tone area)
-- Webern's retrograde-symmetrical series have only 24 distinct orderings (P=RI, I=R)
+**Example 1** (p. 316, Ex. 6-7): Schoenberg, String Quartet No. 4 -- all four orderings share predominance of intervals 1, 4, 8, and 11, with complete exclusion of intervals 3 and 9. "Each of them can impart to a piece the same distinctive sound" (p. 316).
 
-# Related Concepts
-- Prime Ordering
-- Retrograde
-- Inversion (Twelve-Tone)
-- Retrograde-Inversion
-- 12×12 Matrix
+**Example 2** (p. 360): Webern, String Quartet, op. 28 -- retrograde-symmetrical series yields only 24 distinct orderings (each P = some RI; each I = some R).
+
+# Relationships
+## Builds Upon
+- **Four basic operations** -- the class is generated by P, R, I, RI
+
+## Enables
+- **12x12 matrix** -- compact display of the entire series class
+- **Twelve-tone areas** -- groupings within the series class
+- **Invariants** -- relationships preserved among class members
+
+## Contrasts With
+- **Set class** -- preserves content identity (unordered); series class preserves order relationships
+
+# Common Errors
+- Assuming all 48 forms are equally used in a piece
+- Conflating series class (ordered) with set class (unordered)
 
 # Common Confusions
-- Assuming all 48 forms are equally used in a piece—most compositions use only a subset
-- Conflating series class with set class—series class preserves order, set class does not
-- Not recognizing that retrograde-symmetrical series have only 24 distinct forms
+- **48 vs. 24 forms**: Retrograde-symmetrical series (common in Webern) yield only 24 distinct orderings
+- **Series class vs. set class**: Both are equivalence classes, but series class preserves order while set class does not
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.2.7, pages 315-316
+Chapter 6, Section 6.2.7, pp. 315--317
+
+# Verification Notes
+Preserved from old card: 48-form breakdown, intervallic relationship table, Webern's 24 forms. Added: v3 template, direct quotations, Ex. 6-7 interval data, contrasts with set class.

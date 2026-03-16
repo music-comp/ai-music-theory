@@ -1,12 +1,29 @@
 ---
 concept: Cyclic Sets
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: cyclic-sets
+category: harmony
+subcategory: cyclic harmonies
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.2.2 Cyclic harmonies"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - interval-cycles
+extends:
+  - interval-cycles
+related:
+  - cyclic-linear-motion
+  - maximal-evenness
+  - referential-collections
+contrasts_with: []
+answers_questions:
+  - "What are cyclic sets?"
 ---
 
 # Quick Definition

@@ -1,12 +1,32 @@
 ---
 concept: Contextual Inversion
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: contextual-inversion
+category: harmony
+subcategory: triadic post-tonality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.5 Contextual Inversion"
+extraction_confidence: high
+aliases:
+  - J, K, L inversions
+prerequisites:
+  - inversion
+  - set-class
+extends:
+  - inversion
+related:
+  - contextual-inversion-space
+  - ri-chain
+  - triadic-transformation
+contrasts_with:
+  - inversion
+answers_questions:
+  - "What is contextual inversion?"
 ---
 
 # Quick Definition

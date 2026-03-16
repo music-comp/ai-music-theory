@@ -1,12 +1,31 @@
 ---
 concept: PLR-Cycle
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: plr-cycle
+category: harmony
+subcategory: triadic post-tonality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.6.1 Triadic transformation"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - parallel-transformation
+  - leading-tone-transformation
+  - relative-transformation
+extends:
+  - triadic-transformation
+related:
+  - lp-cycle
+  - obverse-transformations
+contrasts_with:
+  - lp-cycle
+answers_questions:
+  - "What is a PLR-cycle?"
 ---
 
 # Quick Definition

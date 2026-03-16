@@ -1,12 +1,33 @@
 ---
 concept: Hexatonic Collection
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: hexatonic-collection
+category: collections
+subcategory: hexatonic
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.6 Hexatonic Collection"
+extraction_confidence: high
+aliases:
+  - HEX
+prerequisites:
+  - referential-collections
+  - four-cycle
+extends:
+  - referential-collections
+related:
+  - hexatonic-nomenclature
+  - hexatonic-orderings
+  - hexatonic-augmented-triad-structure
+  - lp-cycle
+contrasts_with:
+  - octatonic-collection
+answers_questions:
+  - "What is the hexatonic collection?"
 ---
 
 # Quick Definition

@@ -1,12 +1,29 @@
 ---
 concept: Inversional Symmetry in Pitch Space
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: inversional-symmetry-pitch-space
+category: centricity
+subcategory: axes
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.2.1 Inversional symmetry in pitch space"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - inversional-axis
+extends:
+  - inversional-axis
+related:
+  - inversional-symmetry-pitch-class-space
+  - inversional-wedges
+contrasts_with:
+  - inversional-symmetry-pitch-class-space
+answers_questions:
+  - "How does inversional symmetry work in pitch space?"
 ---
 
 # Quick Definition

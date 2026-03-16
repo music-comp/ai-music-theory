@@ -1,54 +1,76 @@
 ---
 concept: All-Interval Series
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: all-interval-series
+category: twelve-tone
+subcategory: series
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 327
+section: "6.3.2 Indirect presentation"
+extraction_confidence: high
+aliases:
+  - "all-interval row"
+prerequisites:
+  - twelve-tone-series
+  - ordered-pitch-class-intervals
+extends: []
+related:
+  - all-trichord-series
+  - segmental-subsets
+contrasts_with:
+  - derived-series
+answers_questions:
+  - "What is an all-interval series?"
+  - "How does an all-interval series contrast with a derived series?"
 ---
 
 # Quick Definition
-An all-interval series is a twelve-tone series whose eleven ordered pitch-class intervals include all intervals 1-11 exactly once, representing maximum intervallic diversity.
+An all-interval series uses each of the eleven ordered pitch-class intervals (1--11) exactly once, representing maximum intervallic diversity.
 
-# Formal Definition
-It is possible to write series with very different intervallic characteristics. An *all-interval series* uses each of the eleven ordered pitch-class intervals exactly once. This means the series contains one instance each of intervals 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and 11. Such series represent maximum intervallic diversity, contrasted with Webern's preference for series that concentrate on just a few intervals.
+# Core Definition
+"It is possible to write series that use each of the eleven ordered pitch-class intervals once (called 'all-interval series')" (Straus, p. 327). A twelve-tone series has eleven intervals between consecutive notes; an all-interval series uses each interval 1--11 exactly once. This represents the opposite approach from Webern's preference for "series that confine themselves to only one or two different intervals" (p. 327).
 
-# Mathematical Formulation/Recognition
-- A twelve-tone series has 11 ordered pitch-class intervals
-- All-interval series: each interval 1-11 appears exactly once
-- Can be verified by listing the ordered pc intervals between consecutive notes
-- Example verification: intervals should be a permutation of {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+# Prerequisites
+- **Twelve-tone series** -- the series whose intervals are being constrained
+- **Ordered pitch-class intervals** -- the eleven intervals being distributed
 
-**Construction challenge:**
-- Not all orderings of 12 pcs produce an all-interval series
-- Must be specifically designed to achieve this property
+# Key Properties
+1. Each interval 1--11 appears exactly once among the 11 consecutive intervals
+2. Represents maximum intervallic diversity
+3. Must be specifically designed (not a common property)
+4. Contrasts with Webern's concentrated approach
 
-# Musical Context/Application
-- Represents the opposite approach from Webern's intervallic concentration
-- Guarantees maximum diversity of intervals within a single series statement
-- Creates a characteristic sound with all interval types present
-- Berg sometimes favored intervallic variety
-- Some composers specifically constructed all-interval series for their unique properties
+# Construction / Recognition
+- List the 11 ordered pc intervals between consecutive notes
+- Check if they form a permutation of {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+- Requires deliberate construction
+
+# Context & Application
+The all-interval series represents one extreme of series construction. The subset structure and intervallic vocabulary are maximally diverse. Some composers have specifically sought this property for its unique expressive possibilities.
 
 # Examples
-- The text mentions all-interval series as a possibility for series construction
-- Exercise II.2.c asks students to construct a series "that uses each of the eleven ordered pitch-class intervals once"
-- All-interval tetrachords (0137) and (0146) are related to this concept at the tetrachord level
+**Example 1** (p. 327): Mentioned as a constructive possibility, contrasted with series using only one or two intervals. Exercise II.2.c asks students to construct such a series.
 
-# Related Concepts
-- Ordered Pitch-Class Intervals
-- Twelve-Tone Series
-- All-Trichord Series
-- Intervallic Concentration
-- Series Construction
+# Relationships
+## Contrasts With
+- **Derived series** -- which use few intervals repeatedly
+
+## Related
+- **All-trichord series** -- maximum diversity at the trichord level
+
+# Common Errors
+- Confusing "all-interval" (ordered intervals 1--11) with "all-interval-class" (ic1--6)
+- Assuming any series might accidentally be all-interval
 
 # Common Confusions
-- Confusing "all-interval" with "all-interval-class"—the former is about ordered intervals 1-11
-- Assuming any series might accidentally be all-interval—it requires deliberate construction
-- Not recognizing that intervals 1 and 11 are distinct in ordered terms (though same interval class)
-- Conflating with all-interval tetrachords (0137)/(0146), which are a different concept
+- **All-interval series vs. all-interval tetrachords**: (0137) and (0146) are all-interval tetrachords, a different concept
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.3.2, page 327
+Chapter 6, Section 6.3.2, p. 327
+
+# Verification Notes
+Preserved from old card: definition, contrast with concentration. Added: v3 template, direct quotation, construction note.

@@ -1,54 +1,95 @@
 ---
 concept: Normal Form
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: normal-form
+category: set-theory
+subcategory: null
+tier: intermediate
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Pitch-Class Sets"
 chapter_number: 2
 pdf_page: 59
-unit: null
-authors: Joseph N. Straus
+section: "2.2 Normal Form"
+extraction_confidence: high
+aliases:
+  - normal order
+prerequisites:
+  - pitch-class-set
+extends:
+  - pitch-class-set
+related:
+  - normal-form-algorithm
+  - prime-form
+  - pitch-class-clockface
+  - transpositional-equivalence
+contrasts_with:
+  - prime-form
+answers_questions:
+  - "What is normal form?"
+  - "How do I put a pitch-class set into normal form?"
+  - "How does normal form help compare sets?"
 ---
 
 # Quick Definition
 Normal form is the most compact way of writing a pitch-class set, arranged ascending within an octave, making it easy to visualize and compare sets.
 
-# Formal Definition
-Normal form is a simple, compressed way of writing a pitch-class set that facilitates comparison between sets. It represents the most compact arrangement of the pitch classes within an octave. Sets in normal form are written in square brackets with elements in ascending order. When two sets are transpositionally related, their normal forms will have the same succession of intervals.
+# Core Definition
+Normal form is "a simple, compact, easily grasped form" (Straus, Ch. 2) for representing a pitch-class set. It is the most compressed arrangement of the pitch classes ascending within an octave. Sets in normal form are written in square brackets. When two sets are transpositionally related, their normal forms have the same succession of intervals. When inversionally related, their normal forms have mirror-image interval successions.
 
-# Mathematical Formulation/Recognition
-**Algorithm for finding normal form:**
+# Prerequisites
+- **Pitch-class set** -- normal form is a way of writing a pitch-class set
 
-1. Write the pitch classes ascending within an octave (like a scale), starting from each possible pitch class.
+# Key Properties
+1. Written in square brackets: [C, E, G] or [0, 4, 7]
+2. Elements arranged ascending within an octave
+3. Most compact span from first to last element
+4. Transpositionally related sets share the same interval succession in normal form
+5. If a set is in normal form, its transposition is also in normal form
 
-2. **Rule 1**: Choose the arrangement with the smallest span from first to last.
+# Construction / Recognition
+See the companion card **normal-form-algorithm** for the full step-by-step procedure. In brief:
+1. List all rotations of the pitch classes ascending within an octave
+2. **Rule 1**: Choose the rotation with the smallest span (first to last)
+3. **Rule 2** (tiebreaker): Choose the rotation most packed to one end
+4. **Rule 3** (symmetrical sets): Prefer packing to the bottom (larger intervals at top)
 
-3. **Rule 2** (tiebreaker): If there's a tie, choose the arrangement most packed to one end (with larger intervals concentrated at top or bottom).
+Alternatively, display the set on a pitch-class clockface and read off the normal form by inspection.
 
-4. **Rule 3** (for symmetrical sets): If still tied (inversionally symmetrical sets), prefer the arrangement packed to the bottom (larger intervals at top).
-
-**Notation**: Square brackets, ascending: [C, E, G] or [0, 4, 7]
-
-# Musical Context/Application
-Normal form enables systematic comparison of pitch-class sets. When analyzing a passage, putting each set into normal form reveals whether sets are related by transposition (same interval succession) or inversion (mirror-image interval succession). The pitch-class clockface provides a quick visual method for determining normal form.
+# Context & Application
+Normal form enables systematic comparison of pitch-class sets regardless of how they appear in the music. It is the first step toward identifying set-class membership (via prime form). Analysts routinely put sets into normal form when comparing collections found in a score.
 
 # Examples
-**Example 2-3**: Step-by-step procedure illustrated with three sets:
-- Example 1: {A, Bb, F} becomes [F, A, Bb] (span of 5, smallest)
-- Example 2: {F, Ab, A, C#} becomes [C#, F, Ab, A] (tie at span 8, most packed to top)
-- Example 3: {C, E, G#, A, B} becomes [G#, A, B, C, E] (symmetrical, packed to bottom)
+**Example 2-3** (p. 61): Three worked examples:
+- {A, Bb, F}: rotations have spans 8, 11, 5. Smallest span = 5 gives normal form [F, A, Bb].
+- {F, Ab, A, C#}: tie at span 8; [C#, F, Ab, A] is more packed to the top, so it is the normal form.
+- {C, E, G#, A, B}: symmetrical set with two equally valid arrangements; [G#, A, B, C, E] preferred (packed to bottom).
 
-**Example 2-4** (Ruggles, Lilacs): Four chords displayed on clockfaces with their normal forms determined by visual inspection.
+**Example 2-4** (p. 62, Ruggles, *Lilacs*): Four chords displayed on pitch-class clockfaces with normal forms determined by visual inspection.
 
-# Related Concepts
-- Pitch-class set
-- Prime form
-- Transposition
-- Inversion
-- Set class
-- Pitch-class clockface
+# Relationships
+## Builds Upon
+- **Pitch-class set** -- normal form is a representation of a pitch-class set
+## Enables
+- **Prime form** -- prime form is derived from normal form
+- **Transpositional equivalence** -- recognized by identical interval successions in normal form
+- **Inversional equivalence** -- recognized by mirror-image interval successions in normal form
+## Related
+- **Pitch-class clockface** -- visual shortcut for determining normal form
+## Contrasts With
+- **Prime form** -- normal form preserves specific pitch-class content; prime form always starts on 0 and identifies the set class
+
+# Common Errors
+- **Error**: Confusing normal form with prime form. **Correction**: Normal form preserves the actual pitch classes; prime form transposes to start on 0 and may invert.
+- **Error**: Forgetting to check all rotations. **Correction**: There are as many rotations as pitch classes in the set; check the span of each.
 
 # Common Confusions
-Normal form and prime form are different. Normal form is specific to a particular set; prime form identifies the set class and always starts with 0. Two sets related by transposition have the same interval succession in normal form but different pitch-class content. The procedure described here differs slightly from older formulations but leads more smoothly to prime form.
+- **Confusion**: This algorithm vs. Forte's original. **Clarification**: Straus adopts Brinkman's formulation, which differs slightly from Forte's (always packed to the bottom) but leads more smoothly to prime form.
 
 # Source Reference
-Chapter 2: Pitch-Class Sets, Section 2.2, pp. 45-47
+Chapter 2: Pitch-Class Sets, Section 2.2, pages 61--62.
+
+# Verification Notes
+- Definition source: direct from source
+- Confidence rationale: clearly defined with explicit algorithm and examples
+- Re-extraction notes: preserved old card's note about the algorithm differing from Forte's original; upgraded to v3 template

@@ -1,12 +1,28 @@
 ---
 concept: Motion from Axis to Axis
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: motion-from-axis-to-axis
+category: centricity
+subcategory: axes
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.2.4 Motion from axis to axis"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - twelve-axes-of-symmetry
+extends:
+  - twelve-axes-of-symmetry
+related:
+  - axis-modulation
+  - composing-out
+contrasts_with: []
+answers_questions:
+  - "How can music modulate from axis to axis?"
 ---
 
 # Quick Definition

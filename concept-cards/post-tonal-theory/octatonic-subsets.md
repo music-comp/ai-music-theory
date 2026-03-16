@@ -1,12 +1,29 @@
 ---
 concept: Octatonic Subsets
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: octatonic-subsets
+category: collections
+subcategory: octatonic
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.4 Octatonic Collection"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - octatonic-collection
+extends:
+  - octatonic-collection
+related:
+  - octatonic-generation-by-transposition
+  - diatonic-octatonic-interaction
+contrasts_with:
+  - whole-tone-subsets
+answers_questions:
+  - "What subsets are found in the octatonic collection?"
 ---
 
 # Quick Definition

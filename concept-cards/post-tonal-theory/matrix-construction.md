@@ -1,66 +1,85 @@
 ---
 concept: Matrix Construction
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: matrix-construction
+category: twelve-tone
+subcategory: matrix
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 317
+section: "6.2.8 12x12 matrix"
+extraction_confidence: high
+aliases:
+  - "building a matrix"
+  - "constructing a row matrix"
+prerequisites:
+  - twelve-by-twelve-matrix
+  - prime-ordering
+  - inversion-twelve-tone
+extends: []
+related:
+  - twelve-counting
+  - series-class
+contrasts_with: []
+answers_questions:
+  - "How do I construct a 12x12 matrix step by step?"
+  - "How do I verify a matrix is correct?"
 ---
 
 # Quick Definition
-Matrix construction is the step-by-step process of building a 12×12 grid that displays all forty-eight forms of a twelve-tone series, starting with P0 in the top row and I0 in the first column.
+Matrix construction is the step-by-step process of building a 12x12 grid: write P0 across the top row, I0 down the first column, then fill each remaining row as a P-form starting on the pitch class in its first column.
 
-# Formal Definition
-To construct a 12×12 matrix:
-1. **Step 1**: Write P0 horizontally across the top row
-2. **Step 2**: Write I0 vertically down the left column (invert each pitch class of P0)
-3. **Step 3**: Fill in the remaining prime orderings in the rows from left to right, beginning on whatever pitch class is in the first column
-4. The second row will contain P_x (where x is the second element of I0), the third row P_y, and so on
-5. Each cell is determined by transposing the top row to start on the pitch class in the first column of that row
+# Core Definition
+"To construct such a matrix, begin by writing P0 horizontally across the top and I0 vertically down the left side... Then write in the remaining prime orderings in the rows from left to right, beginning on whatever pitch class is in the first column" (Straus, p. 317).
 
-# Mathematical Formulation/Recognition
-**Step-by-step example (Schoenberg, String Quartet No. 4):**
-1. P0: 0-11-7-8-3-1-2-10-6-5-4-9 (normalize series to start on 0)
-2. I0: Invert each pc → 0-1-5-4-9-11-10-2-6-7-8-3 (down first column)
-3. Row 2 starts on 1 (second element of I0), so it's P1: 1-0-8-9-4-2-3-11-7-6-5-10
-4. Row 3 starts on 5, so it's P5: 5-4-0-1-8-6-7-3-11-10-9-2
+# Prerequisites
+- **12x12 matrix** -- understanding what the matrix represents
+- **P0 and I0** -- needed as starting material
+
+# Key Properties
+1. P0 provides the interval succession for all rows
+2. I0 determines the starting pitch class of each row
+3. Each cell is determined by transposing the top row to start on the first-column pitch class
+4. Each row and column must contain all 12 pcs exactly once (verification check)
+
+# Construction / Recognition
+**Step-by-step (Schoenberg, String Quartet No. 4):**
+1. Normalize the series to start on 0: P0 = 0-11-7-8-3-1-2-10-6-5-4-9
+2. Compute I0 by inverting each pc: I0 = 0-1-5-4-9-11-10-2-6-7-8-3
+3. Row 2 starts on 1 (second element of I0), so fill in P1: 1-0-8-9-4-2-3-11-7-6-5-10
+4. Row 3 starts on 5 (third element of I0), so fill in P5: 5-4-0-1-8-6-7-3-11-10-9-2
 5. Continue for all 12 rows
+6. Verify: every row and every column contains each of 0--11 exactly once
 
-**Verification**: Each row should contain each pc 0-11 exactly once; same for each column.
-
-# Musical Context/Application
-- Essential preparatory step before analyzing a twelve-tone piece
-- The matrix serves as a reference chart for twelve-counting
-- Reveals invariant relationships between series forms
-- Shows which forms share common starting/ending pitch classes
-- Can be constructed with letter names or integers
+# Context & Application
+Matrix construction is the essential preparatory step before analyzing any twelve-tone piece. It provides a complete reference for identifying all series forms during twelve-counting. The matrix can also be constructed with letter names for musicians who prefer that notation.
 
 # Examples
-Complete matrix for Schoenberg's String Quartet No. 4:
-```
-      I0  I11  I7  I8  I3  I1  I2 I10  I6  I5  I4  I9
-P0:    0   11   7   8   3   1   2  10   6   5   4   9  R0
-P1:    1    0   8   9   4   2   3  11   7   6   5  10  R1
-P5:    5    4   0   1   8   6   7   3  11  10   9   2  R5
-P4:    4    3  11   0   7   5   6   2  10   9   8   1  R4
-...
-     RI0 RI11 RI7 RI8 RI3 RI1 RI2 RI10 RI6 RI5 RI4 RI9
-```
+**Example 1** (pp. 317--318, Exx. 6-9 and 6-10): Schoenberg, String Quartet No. 4 -- the text shows the construction in two stages: first P0 and I0 alone (Ex. 6-9), then the completed matrix (Ex. 6-10).
 
-# Related Concepts
-- 12×12 Matrix
-- Forty-Eight Series Forms
-- Prime Ordering
-- Inversion (Twelve-Tone)
-- Twelve-Counting
+# Relationships
+## Builds Upon
+- **12x12 matrix** -- this is the procedure for building that matrix
+- **Inversion** -- I0 is computed by inverting P0
+
+## Enables
+- **Twelve-counting** -- the matrix is the primary reference tool
+- **Combinatoriality analysis** -- hexachordal relationships visible in the matrix
+
+# Common Errors
+- Computing I0 incorrectly: each element x of P0 becomes (12 - x) mod 12
+- Starting with the original series form rather than normalizing to P0
+- Filling rows by arbitrary transposition rather than using the first column as guide
 
 # Common Confusions
-- Filling in rows by transposition without using the first column as guide
-- Computing I0 incorrectly—each element should be (0 - x) mod 12 for the corresponding P0 element
-- Constructing the matrix with the original series rather than normalizing to P0
-- Not verifying that each row and column contains all 12 pitch classes
+- **Normalization**: The matrix always uses P0 (starting on pc 0), even if the piece begins with a different P-form
+- **I0 computation**: I0 has the same first element as P0 (both start on 0); subsequent elements are complements
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.2.8, pages 317-318
+Chapter 6, Section 6.2.8, pp. 317--318
+
+# Verification Notes
+Preserved from old card: step-by-step procedure, verification check. Added: v3 template, normalization emphasis, two-stage construction from source examples.

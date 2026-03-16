@@ -1,68 +1,96 @@
 ---
 concept: Degrees of Inversional Symmetry
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: degrees-of-inversional-symmetry
+category: set-theory
+subcategory: symmetry
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Some Additional Properties and Relationships"
 chapter_number: 3
 pdf_page: 126
-unit: null
-authors: Joseph N. Straus
+section: "3.4.3 Degrees of inversional symmetry"
+extraction_confidence: high
+aliases:
+  - "degree of In-symmetry"
+prerequisites:
+  - inversional-symmetry
+  - addition-table
+extends:
+  - inversional-symmetry
+related:
+  - degrees-of-transpositional-symmetry
+  - symmetry-and-set-class-size
+contrasts_with: []
+answers_questions:
+  - "How many inversion levels map a set onto itself?"
+  - "How do I read the degree of inversional symmetry from the List of Set Classes?"
 ---
 
 # Quick Definition
-The number of distinct inversion levels at which a set class maps onto itself; found in the List of Set Classes as the second number in the degree of symmetry notation (n, m).
+The count of distinct inversion levels at which a set class maps onto itself; listed as the second number in the (n, m) degree-of-symmetry notation in the List of Set Classes.
 
-# Formal Definition
-The degree of inversional symmetry is the count of distinct index numbers at which any member of a set class will map entirely onto itself under inversion. This appears as the second value in the ordered pair (n, m) in the List of Set Classes, where n is the degree of transpositional symmetry and m is the degree of inversional symmetry.
+# Core Definition
+The degree of inversional symmetry counts the distinct index numbers at which any member of a set class maps entirely onto itself under inversion. This appears as the second value in the ordered pair (n, m) in the List of Set Classes. Many set classes have degree 0 (not inversionally symmetrical). Some map onto themselves at one level (degree 1), and a small number at multiple levels. Only 11 set classes have degree greater than 1 (Straus, pp. 126-128).
 
-Many set classes have a degree of inversional symmetry of 0 (they cannot map onto themselves under any inversion). Some set classes map onto themselves at one level of inversion (degree 1), and a small number map onto themselves at multiple levels (degree 2, 3, 4, or 6).
+# Prerequisites
+- **Inversional symmetry** -- the property being measured
+- **Addition table** -- used to determine the degree
 
-# Mathematical Formulation/Recognition
-To determine the degree of inversional symmetry:
-1. Construct an addition table for any member of the set class
-2. Count how many index numbers appear with frequency equal to the set's cardinality
-3. That count is the degree of inversional symmetry
+# Key Properties
+1. Possible degrees: 0, 1, 2, 3, 4, or 6
+2. Degree 0: not inversionally symmetrical (most common)
+3. Degree 1: inversionally symmetrical at one level (reasonably common -- 79 set classes)
+4. Degree > 1: rare (only 11 set classes)
+5. Virtually all sets with high Tn-symmetry also have high In-symmetry
 
-Possible degrees: 0, 1, 2, 3, 4, or 6
+# Construction / Recognition
+The 11 set classes with degree > 1 (from Ex. 3-18):
 
-The degree affects set class size: 24 / (degree of Tn-symmetry times degree of In-symmetry) = number of sets in the class.
+| Set Class | Name | In-levels (re: prime form) | Degree |
+|-----------|------|----------------------------|--------|
+| 3-12 (048) | Augmented triad | I0, I4, I8 | 3 |
+| 4-9 (0167) | -- | I1, I7 | 2 |
+| 4-25 (0268) | French aug. 6th | I2, I8 | 2 |
+| 4-28 (0369) | Dim. 7th chord | I0, I3, I6, I9 | 4 |
+| 6-7 (012678) | -- | I2, I8 | 2 |
+| 6-20 (014589) | Hexatonic scale | I1, I5, I9 | 3 |
+| 6-35 (02468T) | Whole-tone scale | I0, I2, I4, I6, I8, I10 | 6 |
+| 8-9 (01236789) | -- | I3, I9 | 2 |
+| 8-25 (0124678T) | -- | I2, I8 | 2 |
+| 8-28 (0134679T) | Octatonic scale | I1, I4, I7, I10 | 4 |
+| 9-12 (01245689T) | Enneatonic | I2, I6, I10 | 3 |
 
-# Musical Context/Application
-Sets with higher degrees of inversional symmetry:
-- Have multiple axes of symmetry
-- Offer more options for inversional voice leading that preserves all tones
-- Are relatively rare and have distinctive harmonic qualities
-- Often also have high degrees of transpositional symmetry
+# Context & Application
+Sc(024), for example, has degree (1, 1): it maps onto itself at one transpositional level (T0) and one inversional level (I4). The whole-tone scale has the highest degree of symmetry of all: (6, 6), mapping onto itself at six transpositional and six inversional levels.
 
-Sc(024), for example, has degree (1, 1): it maps onto itself at T0 and one level of inversion (I4).
+The comparison between Ex. 3-7 and Ex. 3-18 reveals that virtually all Tn-symmetrical sets are also highly In-symmetrical. The sole exception is (013679), which has degree (2, 0) -- transpositionally symmetrical at T6 but not inversionally symmetrical at more than one level.
 
 # Examples
-From Example 3-18: Set classes with degree of inversional symmetry greater than 1:
+**Example 1** (p. 127, Ex. 3-18): The whole-tone scale (02468T) with degree (6, 6) is the most symmetrical set of all.
 
-| Set Class | Familiar Name | Levels of In-symmetry | Degree |
-|-----------|---------------|----------------------|--------|
-| (048) | Augmented triad | I0, I4, I8 | 3 |
-| (0167) | | I1, I7 | 2 |
-| (0268) | French aug. 6th | I2, I8 | 2 |
-| (0369) | Diminished 7th | I0, I3, I6, I9 | 4 |
-| (014589) | Hexatonic scale | I1, I5, I9 | 3 |
-| (02468T) | Whole-tone scale | I0, I2, I4, I6, I8, I10 | 6 |
-| (0134679T) | Octatonic scale | I1, I4, I7, I10 | 4 |
+**Example 2**: The diminished seventh chord (0369) with degree (4, 4) maps onto itself at I0, I3, I6, I9 -- four inversional axes.
 
-The whole-tone scale (6, 6) is the most symmetrical set of all, mapping onto itself at six transpositional and six inversional levels.
+# Relationships
+## Builds Upon
+- **Inversional symmetry** -- this quantifies that property
 
-# Related Concepts
-- Inversional symmetry
-- Degrees of transpositional symmetry
-- Symmetry and set class size
-- Addition table
-- Axis of symmetry
+## Enables
+- **Symmetry and set class size** -- degree determines class size along with Tn-symmetry
+
+## Related
+- **Degrees of transpositional symmetry** -- the complementary measure in the (n, m) pair
+
+# Common Errors
+- Confusing degree 0 (not In-symmetrical) with degree 1 (In-symmetrical at one level)
 
 # Common Confusions
-- Confusing degree 0 (not inversionally symmetrical) with degree 1 (inversionally symmetrical at one level)
-- Not recognizing that virtually all sets with high transpositional symmetry also have high inversional symmetry
-- Thinking the index numbers of symmetry are arbitrary (they relate systematically to the set's structure)
-- Forgetting that (013679) is the only set class that is transpositionally but not inversionally symmetrical at more than one level
+- (013679) is the only set class that is Tn-symmetrical but not In-symmetrical at multiple levels
+- Every set class with In-degree > 1 is also Tn-symmetrical
 
 # Source Reference
-Chapter 3: Some Additional Properties and Relationships, Section 3.4.3, pages 126-128
+Chapter 3: Some Additional Properties and Relationships, Section 3.4.3, pp. 126-128
+
+# Verification Notes
+Upgraded from old v2 card. Preserved complete table of 11 set classes, whole-tone/diminished examples, and (013679) exception. Added v3 template fields.

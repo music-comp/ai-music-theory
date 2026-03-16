@@ -1,12 +1,32 @@
 ---
 concept: Fuzzy Inversion
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: fuzzy-inversion
+category: voice-leading
+subcategory: "fuzzy T/I"
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.3.2 Fuzzy transposition and inversion"
+extraction_confidence: high
+aliases:
+  - "I*"
+  - "*In"
+prerequisites:
+  - inversion
+  - transformational-voice-leading
+extends:
+  - inversion
+related:
+  - fuzzy-transposition
+  - voice-leading-offset
+contrasts_with:
+  - inversion
+answers_questions:
+  - "What is fuzzy inversion?"
 ---
 
 # Quick Definition

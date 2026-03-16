@@ -1,12 +1,30 @@
 ---
 concept: "L (Leading-Tone Transformation)"
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: leading-tone-transformation
+category: harmony
+subcategory: triadic post-tonality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.6.1 Triadic transformation"
+extraction_confidence: high
+aliases:
+  - L transformation
+prerequisites:
+  - triadic-transformation
+extends:
+  - triadic-transformation
+related:
+  - parallel-transformation
+  - lp-cycle
+  - hexatonic-poles
+contrasts_with: []
+answers_questions:
+  - "What is the L (leading-tone) transformation?"
 ---
 
 # Quick Definition

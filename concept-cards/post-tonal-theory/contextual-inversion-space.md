@@ -1,12 +1,27 @@
 ---
 concept: Contextual-Inversion Space
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: contextual-inversion-space
+category: harmony
+subcategory: triadic post-tonality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.5.1 Chain and space for (014)"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - contextual-inversion
+extends:
+  - contextual-inversion
+related:
+  - ri-chain
+contrasts_with: []
+answers_questions:
+  - "What is a contextual-inversion space?"
 ---
 
 # Quick Definition

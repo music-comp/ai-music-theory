@@ -1,79 +1,94 @@
 ---
 concept: Hexachordal Complement Theorem
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: hexachordal-complement-theorem
+category: set-theory
+subcategory: complement
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Some Additional Properties and Relationships"
 chapter_number: 3
 pdf_page: 135
-unit: null
-authors: Joseph N. Straus
+section: "3.7.4 Hexachords"
+extraction_confidence: high
+aliases:
+  - "hexachord theorem"
+  - "hexachordal complement property"
+prerequisites:
+  - complement-relation
+  - complement-interval-content
+extends:
+  - complement-interval-content
+related:
+  - self-complementary-hexachords
+  - z-relation
+contrasts_with: []
+answers_questions:
+  - "Why do hexachords always share the same interval vector as their complement?"
+  - "What is the hexachordal complement theorem?"
 ---
 
 # Quick Definition
-The theorem stating that any hexachord has exactly the same interval-class vector as its complement; this is because the size difference between a hexachord and its complement is zero.
+The theorem that any hexachord has exactly the same interval-class vector as its complement; this follows from the general complement interval formula because the size difference between complementary hexachords is zero.
 
-# Formal Definition
-The Hexachordal Complement Theorem states that a hexachord (6-note set) always has the identical interval-class vector as its complement (also a 6-note set). This follows from the general complement relation property: the difference in interval-class counts equals the difference in set sizes. Since both a hexachord and its complement have 6 notes, the difference is zero, and their vectors are identical.
+# Core Definition
+The Hexachordal Complement Theorem states that a hexachord always has an identical interval-class vector to its complement. This is a special case of the general complement interval property: since both sets have 6 notes, the size difference k = 12 - 2(6) = 0, so the complement has 0 more of each interval class. The consequence: if the hexachord maps to its complement via T or I, it is self-complementary; if not, it is Z-related to its complement. This relationship is fundamental to twelve-tone music (Straus, pp. 135-136).
 
-This has two important consequences:
-1. Self-complementary hexachords: Those that can map onto their complement under T or I belong to the same set class as their complement
-2. Z-related hexachords: Those that cannot map onto their complement are Z-related to their complement
+# Prerequisites
+- **Complement relation** -- the general framework
+- **Complement interval content** -- the formula this theorem specializes
 
-# Mathematical Formulation/Recognition
-For complementary sets of size n and (12-n):
-- Interval count difference = (12-n) - n = 12 - 2n
-- For hexachords: n = 6, so difference = 12 - 12 = 0
+# Key Properties
+1. For hexachords: k = 0, so vectors are identical
+2. Every hexachord falls into one of two categories: self-complementary or Z-related to its complement
+3. This is the only cardinality where complement vectors are exactly equal
+4. The property is crucial for twelve-tone music (rows divide into complementary hexachords)
 
-Therefore: IC vector of any hexachord = IC vector of its complement
+# Construction / Recognition
+Derivation from the general formula:
+- Set size n = 6, complement size = 12 - 6 = 6
+- Size difference k = 12 - 2n = 12 - 12 = 0
+- Vector difference = 0 for all interval classes
+- Therefore: hexachord vector = complement vector
 
-Consequence:
-- If hexachord H can map to its complement via T or I: H is self-complementary
-- If hexachord H cannot map to its complement via T or I: H is Z-related to its complement
+In the List: self-complementary hexachords appear alone; Z-related pairs face each other.
 
-In the List of Set Classes:
-- Self-complementary hexachords have nothing across from them
-- Z-related hexachords are listed across from their Z-correspondent (which is their complement's set class)
-
-# Musical Context/Application
-The hexachordal complement theorem is fundamental to:
-- Twelve-tone music (rows divide into complementary hexachords with same interval content)
-- Understanding hexachordal combinatoriality
-- Analyzing music based on complementary hexachordal areas
-- Compositional systems that partition the aggregate
-
-The theorem explains why dividing twelve tones into two hexachords creates such a balanced, unified sound: both halves have identical intervallic resources.
+# Context & Application
+The theorem explains why dividing twelve tones into two hexachords creates a balanced, unified sound: both halves have identical intervallic resources. It is the theoretical foundation for hexachordal combinatoriality and aggregate-based composition.
 
 # Examples
-From Example 3-27: Crawford Seeger, String Quartet, third movement
-- Hexachord X and Hexachord Y are literal complements
-- They share the same interval-class vector
-- They are Z-related (cannot map onto each other by T or I)
-- Hexachord Z is T7 of Hexachord Y
-- X and Z are abstract complements (share same vector) but now share 4 notes
+**Example 1** (p. 136, Ex. 3-27): Crawford Seeger, String Quartet, third movement:
+- Hexachord X and hexachord Y are literal complements
+- They share the same interval-class vector (as the theorem guarantees)
+- They are Z-related (not self-complementary, since no T or I maps one to the other)
+- Hexachord Z = T7 of Y; X and Z are abstract complements sharing 4 notes
 
-Self-complementary hexachord example:
-- [2, 3, 4, 5, 6, 7] = sc6-1 (012345)
-- Its complement [8, 9, 10, 11, 0, 1] is ALSO sc6-1 (012345)
-- They have the same prime form, so 6-1 is self-complementary
+**Example 2**: sc6-1 (012345) is self-complementary. Its complement is also (012345). The identical vectors are guaranteed by the theorem.
 
-Z-related hexachord example:
-- 6-Z3 (012356) with vector [433221]
-- Its complement belongs to 6-Z36 (012347)
-- Different prime forms, same vector: Z-related to each other
+**Example 3**: 6-Z3 (012356) and 6-Z36 (012347) are Z-related hexachords -- their complements belong to each other's set class, sharing vector [433221].
 
-# Related Concepts
-- Complement relation
-- Z-relation
-- Self-complementary hexachord
-- Hexachordal combinatoriality
-- Twelve-tone music
-- Aggregate
+# Relationships
+## Builds Upon
+- **Complement interval content** -- this theorem is the k=0 special case
+
+## Enables
+- **Self-complementary hexachords** -- one outcome of the theorem
+- **Hexachordal combinatoriality** -- built on the shared interval content
+
+## Related
+- **Z-relation** -- the other outcome when hexachords are not self-complementary
+
+# Common Errors
+- Thinking this property applies to other cardinalities with exact equality (it does not; only hexachords have k=0)
+- Confusing identical vectors with identical set class (they are different things)
 
 # Common Confusions
-- Thinking all hexachords are self-complementary (only those that map to their complement by T or I)
-- Not recognizing that non-self-complementary hexachords must be Z-related to their complement
-- Forgetting this is a special case of the general complement theorem (it only works exactly for hexachords)
-- Confusing identical interval vectors with identical set class membership
+- The theorem is a special case of the general complement formula, not an independent fact
+- Non-self-complementary hexachords are Z-related to their complement, not unrelated
 
 # Source Reference
-Chapter 3: Some Additional Properties and Relationships, Section 3.7.4, pages 135-137
+Chapter 3: Some Additional Properties and Relationships, Section 3.7.4, pp. 135-137
+
+# Verification Notes
+Upgraded from old v2 card. Preserved Crawford Seeger example and self-complementary/Z-related dichotomy. Added derivation from general formula and v3 template fields.

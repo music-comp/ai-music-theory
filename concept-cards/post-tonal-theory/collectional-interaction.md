@@ -1,12 +1,29 @@
 ---
 concept: Collectional Interaction
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: collectional-interaction
+category: collections
+subcategory: null
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.7 Collectional and Centric Interaction"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - referential-collections
+extends:
+  - referential-collections
+related:
+  - diatonic-octatonic-interaction
+  - psalms-chord
+  - centric-interaction
+contrasts_with: []
+answers_questions:
+  - "How do referential collections interact?"
 ---
 
 # Quick Definition

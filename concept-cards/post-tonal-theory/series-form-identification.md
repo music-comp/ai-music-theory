@@ -1,60 +1,85 @@
 ---
 concept: Series Form Identification
+slug: series-form-identification
 category: analysis
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+subcategory: null
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 319
+section: "6.2.9 Twelve-count"
+extraction_confidence: high
+aliases:
+  - "identifying series forms"
+  - "row identification"
+prerequisites:
+  - twelve-counting
+  - twelve-by-twelve-matrix
+  - index-number-twelve-tone
+extends: []
+related:
+  - series-class
+  - ordered-pitch-class-intervals
+contrasts_with: []
+answers_questions:
+  - "How do I identify which series form is being used in a passage?"
+  - "How can intervallic analysis identify a series form without a matrix?"
 ---
 
 # Quick Definition
-Series form identification is the analytical process of determining which of the 48 series forms is being used at a given point in a piece, using matrix lookup or intervallic comparison.
+Series form identification is the process of determining which of the 48 forms is being used at a given point, using either matrix lookup or intervallic comparison with a known form.
 
-# Formal Definition
-Identifying series forms can be done in two ways:
-1. **Matrix lookup**: Construct a 12×12 matrix, look at the first few notes of an unknown passage, and find which of the 48 forms begins with those notes
-2. **Intervallic analysis**: Apply knowledge of intervallic relationships between series forms—compare the ordered pitch-class intervals of the unknown passage to those of a known form to determine the transformation type (P, R, I, or RI) and calculate the index number
+# Core Definition
+Two methods exist for identifying series forms: (1) construct a 12x12 matrix and look up the first few notes; (2) "more directly by applying our knowledge of the intervallic relationships between series forms" (Straus, p. 320). The intervallic method compares the unknown passage's ordered pc intervals to those of a known form, then calculates the index number to determine the specific transposition level.
 
-# Mathematical Formulation/Recognition
-**Intervallic relationships for identification:**
-- Same intervals, same order → transposition of a P-form
-- Same intervals, reverse order → an RI-form
-- Complementary intervals, same order → an I-form
-- Complementary intervals, reverse order → an R-form
+# Prerequisites
+- **Twelve-counting** -- the overall analytical process
+- **12x12 matrix** -- reference tool for lookup method
+- **Index number** -- needed for intervallic method
 
-**Index number calculation:**
-- If intervals match in reverse, calculate index: add first note of unknown + last note of known, second + second-to-last, etc.
-- All sums should equal the same index number (mod 12)
-- If index = n and known form is P_m, unknown RI-form is RI_x where m + x = n
+# Key Properties
+1. Same intervals, same order = prime-related (another P or same-type form)
+2. Complementary intervals, same order = I-related
+3. Same intervals, reversed = RI-related
+4. Complementary intervals, reversed = R-related
+5. Index number: sum of corresponding pitch classes between related forms
 
-# Musical Context/Application
-- Essential skill for twelve-tone analysis
-- Allows the analyst to map the series forms used throughout a piece
-- Reveals relationships and invariants between consecutive forms
-- Shows how composers create continuity through shared elements
-- Necessary first step before examining deeper structural relationships
+# Construction / Recognition
+**Intervallic method (demonstrated for Webern, "Wie bin ich froh!"):**
+1. Known: P7 has certain ordered pc intervals
+2. Accompaniment intervals match P7's final intervals in reverse = RI-form
+3. Calculate index: first note of unknown + last note of known, etc.
+4. All sums = 2 (mod 12), so index number = 2
+5. Since P7 + RI_x must sum to 2, and 7 + 7 = 14 = 2, the form is RI7
+
+# Context & Application
+Series form identification is the first step in twelve-tone analysis. The intervallic method is more efficient than matrix lookup for experienced analysts. It reveals how composers create relationships between successive series forms.
 
 # Examples
-- Webern, "Wie bin ich froh!": Given P7 in the melody, identify the accompaniment
-- First five notes of accompaniment: F#-F-D with intervals that match P7's final intervals in reverse
-- This indicates an RI-form; calculating index: (6+8), (5+9), etc. all sum to 2 (mod 12)
-- Since 7 + 7 = 14 → 2, the accompaniment is RI7
-- The song uses only P7, RI7, R7, and I7
+**Example 1** (pp. 319--322): Webern, "Wie bin ich froh!" -- accompaniment identified as RI7 through intervallic comparison with P7. Index number 2 confirms: 6+8 = 5+9 = 2 (mod 12).
 
-# Related Concepts
-- Twelve-Counting
-- 12×12 Matrix
-- Ordered Pitch-Class Intervals
-- Index Number
-- Intervallic Relationships Between Series Forms
+# Relationships
+## Builds Upon
+- **Twelve-counting** -- identification is part of the counting process
+- **Index number** -- used to calculate specific transposition
 
-# Common Confusions
-- Not recognizing that intervals can identify the transformation type without matrix lookup
+## Enables
+- **Invariant analysis** -- requires knowing which forms are in use
+- **Area analysis** -- requires identifying all series forms in a passage
+
+# Common Errors
 - Miscalculating the index number when sums exceed 11
-- Forgetting that R_n ends on pc n (not begins), affecting identification
+- Forgetting that R_n ends on pc n, not begins
 - Assuming the first note heard is the first note of the series form
 
+# Common Confusions
+- **Matrix lookup vs. intervallic method**: Both yield the same result; the intervallic method is faster but requires understanding of interval relationships
+
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.2.9, pages 319-322
+Chapter 6, Section 6.2.9, pp. 319--322
+
+# Verification Notes
+Preserved from old card: both identification methods, Webern index calculation. Added: v3 template, step-by-step intervallic method example.

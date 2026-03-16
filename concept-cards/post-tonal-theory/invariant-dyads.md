@@ -1,58 +1,85 @@
 ---
 concept: Invariant Dyads
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: invariant-dyads
+category: twelve-tone
+subcategory: invariants
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 328
+section: "6.4.1 Invariant dyads"
+extraction_confidence: high
+aliases:
+  - "dyadic invariance"
+  - "preserved dyads"
+prerequisites:
+  - invariants
+  - index-number-twelve-tone
+extends: []
+related:
+  - invariant-trichords
+  - invariant-dyads-between-series-forms
+contrasts_with: []
+answers_questions:
+  - "How can dyads be held invariant under series transformation?"
+  - "How do invariant dyads create associative paths?"
 ---
 
 # Quick Definition
-Invariant dyads are pairs of adjacent pitch classes in a series that remain together (though possibly reordered) when the series is transformed, creating recurring motivic associations.
+Invariant dyads are pairs of adjacent pitch classes in a series that remain together (though possibly reordered or repositioned) when the series is transformed, creating recurring motivic associations.
 
-# Formal Definition
-The simplest type of invariant collection is the dyad. If a series contains a dyad that we want to keep intact under transformation, we need to find an equivalent dyad (related by transposition or inversion) elsewhere in the series. If two subsets are related by I_n, inverting the series by the same I_n will cause the two subsets to map onto each other, and both will remain intact. The pitch classes stay together, though their order may reverse.
+# Core Definition
+To keep a dyad intact under transformation, find "an equivalent subset, one related by transposition or inversion, somewhere else in the series. If the two subsets are related by I_n, inverting the series as a whole by the same I_n will cause the two subsets to map onto each other, and both will remain intact" (Straus, p. 328).
 
-# Mathematical Formulation/Recognition
-To find invariant dyads under inversion:
-1. Locate a dyad in the series (e.g., notes 0 and 11 = C and B)
-2. Find another instance of the same interval class in the series
-3. Calculate the index number that maps one dyad onto the other
-4. Index number = sum of corresponding pitch classes (e.g., 0+6=6, 11+5=16→4... wait, must be same for all)
-5. Correct: The index relates the two dyads; I_n applied to the series preserves both dyads
+The dyad is "the simplest collection to hear and discuss, but the same principles apply to holding larger collections invariant as well" (p. 330).
 
-Example calculation:
-- Dyad 1: (0, 11), Dyad 2: (5, 6)
-- Index number: 0+5=5, 11+6=17→5 (mod 12)
-- I_5 maps 0↔5 and 11↔6
+# Prerequisites
+- **Invariants** -- the general concept of preserved relationships
+- **Index number** -- needed to calculate the specific inversion level
 
-# Musical Context/Application
-- Invariant dyads create recurring melodic/harmonic motives
-- They provide continuity as the music moves through series forms
-- Composers deliberately construct series to exploit dyadic invariance
-- The chain of invariant dyads can be heard as an "associative path"
-- Important for creating audible relationships in twelve-tone music
+# Key Properties
+1. Two dyads related by I_n swap positions when the series is inverted by I_n
+2. The index number must be consistent for all pitch classes in both dyads
+3. The dyads are preserved as collections (content), not necessarily in the same order
+4. Creates "associative paths" linking different series forms
+
+# Construction / Recognition
+1. Locate a dyad in the series (e.g., (0, 11) = C, B)
+2. Find another instance of the same interval class elsewhere (e.g., (6, 5) = Gb, F)
+3. Calculate the index number: 0 + 5 = 5, 11 + 6 = 17 = 5 (mod 12)
+4. I5 maps (0, 11) onto (6, 5) and vice versa
+5. Compare P0 with I5: both dyads are preserved
+
+# Context & Application
+Invariant dyads create audible motivic connections between series forms. "It is easy and musically rewarding to hear the chain of invariants moving through the music" (p. 330). Composers deliberately choose series forms that preserve important dyads, creating continuity across transformations.
 
 # Examples
-- Schoenberg, String Quartet No. 4, third movement: (C, B) and (Gb, F) are invariant between P0 and I5
-- In P0: C-B is the first dyad; Gb-F is the only repeated dyad
-- In RI5: C-B is now repeated; Gb-F is at the end
-- The passage from P0 to RI5 to R0 maintains these dyadic associations
+**Example 1** (pp. 328--330, Exx. 6-19 through 6-21): Schoenberg, String Quartet No. 4, third movement -- P0 begins with (C, B) and contains (Gb, F) at positions 9--10. Under I5, these dyads exchange positions. In the music, P0 is followed by RI5 then R0; the dyads C-B and Gb-F are maintained throughout, creating a chain of motivic associations.
 
-# Related Concepts
-- Invariants
-- Invariant Trichords
-- Index Number
-- Inversion (Twelve-Tone)
-- Segmental Subsets
+# Relationships
+## Builds Upon
+- **Invariants** -- dyadic invariance is the simplest case
+
+## Enables
+- **Invariant trichords** -- same principles applied to larger collections
+
+## Related
+- **Index number** -- determines which transformation preserves the dyads
+
+# Common Errors
+- Expecting dyads to remain in the same order positions (they swap)
+- Forgetting to verify the index number is consistent for all pitch classes
+- Confusing invariant dyads (same pcs together) with recurring interval classes
 
 # Common Confusions
-- Expecting dyads to remain in the same order—they may swap positions
-- Forgetting to check that the index number is consistent for both pitch classes
-- Confusing invariant dyads (same pcs together) with recurring interval classes
-- Not recognizing that dyads map onto each other, not onto themselves (unless symmetrical)
+- **Dyads map onto each other, not onto themselves** (unless the dyad is inversionally symmetrical)
+- **Content vs. order**: The pitch classes stay together, but their order may reverse
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.4.1, pages 328-330
+Chapter 6, Section 6.4.1, pp. 328--330
+
+# Verification Notes
+Preserved from old card: Schoenberg example, index calculation. Added: v3 template, direct quotation about audibility, step-by-step construction.

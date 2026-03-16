@@ -1,49 +1,85 @@
 ---
 concept: Content and Order
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: content-and-order
+category: twelve-tone
+subcategory: operations
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 311
+section: "6.2.1 Content and order"
+extraction_confidence: high
+aliases:
+  - "order vs content"
+  - "content versus order"
+prerequisites:
+  - twelve-tone-series
+  - transposition
+  - inversion
+extends: []
+related:
+  - prime-ordering
+  - transposition-twelve-tone
+  - inversion-twelve-tone
+  - series-class
+contrasts_with:
+  - transpositional-equivalence
+answers_questions:
+  - "How do transposition and inversion affect a twelve-tone series differently from a smaller set?"
+  - "Why does twelve-tone transposition change order but not content?"
 ---
 
 # Quick Definition
 In twelve-tone music, transposition and inversion change the order of pitch classes within the series but not the content, since any transformation of all twelve pitch classes still yields all twelve pitch classes.
 
-# Formal Definition
-When a set of fewer than twelve elements is transposed or inverted, the *content* of the set usually changes—new pitch classes are introduced. However, when a twelve-tone series is transposed or inverted, the content remains the same (all twelve pitch classes are still present), but the *order* changes. This is a fundamental difference between operations on smaller pitch-class sets and operations on twelve-tone series. In the twelve-tone system, the basic operations—transposition and inversion—affect order, not content.
+# Core Definition
+"When a set of fewer than twelve elements is transposed or inverted, the content of the set usually changes." For example, transposing any member of (0123) up two semitones introduces two new pitch classes. "When a twelve-tone series is transposed, however, the content remains the same... but in a different order. The same is true of inversion. In the twelve-tone system, the basic operations -- transposition and inversion -- affect order, not content" (Straus, p. 311).
 
-# Mathematical Formulation/Recognition
-- For a set smaller than 12 elements: T_n changes content (introduces new pitch classes)
-- For a twelve-tone series: T_n preserves content (still all 12 pcs) but changes order
-- Example: If (0123) is transposed up 2 semitones, two new pitch classes are introduced
-- Example: If a 12-tone series is transposed up 7 semitones, the same 12 pitch classes remain, but in different order positions
+# Prerequisites
+- **Twelve-tone series** -- the concept applies specifically to complete 12-pc orderings
+- **Transposition / Inversion** -- the operations whose effects are being characterized
 
-# Musical Context/Application
-- This property distinguishes twelve-tone composition from atonal pitch-class set analysis
-- Series forms are related by their ordering, not by having different pitch-class content
-- All 48 forms of a series share identical pitch-class content (all 12 pitch classes)
-- The interval succession—not the pitch-class content—defines the prime ordering
-- Composers exploit order relationships while maintaining constant aggregate content
+# Key Properties
+1. Transposing or inverting a twelve-tone series always yields the same twelve pitch classes
+2. Only the order of pitch classes changes under these operations
+3. The interval succession (not the pc content) defines each series form
+4. This property is unique to the aggregate -- smaller sets change content under T_n and I_n
+
+# Construction / Recognition
+- Compare any two series forms (e.g., P2 and P9): identical pitch-class content, different ordering
+- No pitch class occupies the same order position after transposition
+- The interval succession remains the same under transposition (same intervals, same order)
+
+# Context & Application
+This property is the foundational distinction between twelve-tone operations and pitch-class set operations. It means that series forms are differentiated by their orderings, not by having different notes. All 48 forms share identical pitch-class content. Composers exploit order relationships while maintaining constant aggregate content.
 
 # Examples
-- Schoenberg, String Quartet No. 4: P2 and P9 both contain all twelve pitch classes; they differ only in order
-- When P2 (starting on D) is transposed up 7 semitones to P9 (starting on A), no pitch class occupies the same order position it did before
-- The interval succession remains the same under transposition, defining the series identity
+**Example 1** (p. 313): Schoenberg, String Quartet No. 4 -- P2 (starting on D) transposed up 7 semitones to P9 (starting on A). Both contain all twelve pitch classes; no pitch class occupies the same order position. The interval succession (11, 8, 1, 7, 10, 1, 8, 8, 11, 11, 5) remains the same.
 
-# Related Concepts
-- Twelve-Tone Series
-- Transposition (Twelve-Tone)
-- Inversion (Twelve-Tone)
-- Series Class (Row Class)
-- Ordered Pitch-Class Intervals
+# Relationships
+## Builds Upon
+- **Twelve-tone series** -- the complete aggregate whose content cannot change
+
+## Enables
+- **Series class** -- all 48 forms share content, differ in order
+- **Prime ordering** -- defined by its interval succession, not its content
+
+## Contrasts With
+- **Transpositional equivalence (sets)** -- for smaller sets, T_n changes content
+
+# Common Errors
+- Applying set-theory expectations (content change under T_n) to twelve-tone series
+- Assuming different series forms have different pitch-class content
 
 # Common Confusions
-- Applying set-theory thinking where transposition changes content—this doesn't apply to complete 12-tone series
-- Assuming different series forms have different pitch-class content—they all contain all 12 pcs
-- Confusing interval content (which is preserved under T_n) with pitch-class content
+- **Interval content vs. pitch-class content**: interval succession is preserved under transposition; pc content is always the same for any twelve-tone series form
+- **Order change vs. content change**: twelve-tone operations change order only; sub-aggregate operations typically change content
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.2.1, page 311
+Chapter 6, Section 6.2.1, p. 311
+
+# Verification Notes
+Preserved from old card: core distinction, Schoenberg example. Added: v3 template, direct quotation, prerequisite/relationship structure.

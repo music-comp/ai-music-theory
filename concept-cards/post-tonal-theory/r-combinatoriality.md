@@ -1,57 +1,70 @@
 ---
 concept: R-Combinatoriality
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: r-combinatoriality
+category: compositional-methods
+subcategory: combinatoriality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 339
+section: "6.5.2 Schoenberg and hexachordal combinatoriality"
+extraction_confidence: high
+aliases:
+  - "retrograde combinatoriality"
+prerequisites:
+  - hexachordal-combinatoriality
+  - four-types-of-combinatoriality
+extends: []
+related:
+  - ri-combinatoriality
+  - all-combinatorial-hexachords
+contrasts_with:
+  - p-combinatoriality
+answers_questions:
+  - "What is R-combinatoriality?"
+  - "Why is R-combinatoriality at T0 trivial?"
 ---
 
 # Quick Definition
-R-combinatoriality occurs when a hexachord maps onto itself under transposition, allowing a P-form to combine with an R-form to produce aggregates.
+R-combinatoriality occurs when a hexachord maps onto itself under transposition, allowing P and R forms to combine and produce aggregates; it is trivial at T0 (all hexachords map onto themselves).
 
-# Formal Definition
-*R-combinatoriality* (retrograde combinatoriality) occurs when each hexachord of a series (H1 and H2) maps onto itself under transposition. If T_n(H1) = H1 and T_n(H2) = H2, then combining P with R_n produces aggregates. All hexachords are trivially R-combinatorial at T_0 (any collection maps onto itself at T_0). Non-trivial R-combinatoriality is rarer.
+# Core Definition
+R-combinatoriality occurs when T_n(H1) = H1 (self-mapping via transposition). "All hexachords are trivially R-combinatorial at T0 (any collection maps onto itself)" (Straus, p. 340). Non-trivial R-combinatoriality requires transpositional symmetry. The combinatoriality chart excludes "those that are combinatorial only at R0" (p. 340).
 
-# Mathematical Formulation/Recognition
-**Condition for R-combinatoriality:**
-- If T_n(H1) = H1 (hexachord maps onto itself), the series is R-combinatorial at level n
-- Trivial case: T_0 always works (every set maps onto itself)
-- Non-trivial: n ≠ 0
+# Prerequisites
+- **Four types of combinatoriality** -- R is one of the four types
 
-**Diagram:**
-```
-P:   H1  |  H2
-R_n: H2  |  H1  (if H1 and H2 are T-symmetric)
-     agg    agg
-```
+# Key Properties
+1. H1 and H2 map onto themselves (self-mapping via T)
+2. Trivial at T0 for all hexachords
+3. Non-trivial examples: (013679) "Petrushka" at 1 level
+4. Connected to transpositional symmetry of the hexachord
 
-# Musical Context/Application
-- Trivial R-combinatoriality (at T_0) applies to all series
-- Non-trivial R-combinatoriality is rare
-- The Petrushka hexachord (013679) has non-trivial R-combinatoriality at 1 level
-- All-combinatorial hexachords have R-combinatoriality among their properties
-- Often overlooked because the trivial case is uninteresting
+# Construction / Recognition
+- Check if T_n(H1) = H1 for some n other than 0
+- If yes, non-trivial R-combinatoriality exists
 
 # Examples
-- (013679) "Petrushka" hexachord: R-combinatorial at 1 non-trivial level (plus trivial T_0)
-- (012678): R-combinatorial at 2 levels
-- (02468T) Whole-tone: R-combinatorial at 6 levels
+**Example 1** (p. 340): (013679) "Petrushka" hexachord has 1 non-trivial R-combinatorial level. All-combinatorial hexachords D, E, F have multiple R levels.
 
-# Related Concepts
-- Hexachordal Combinatoriality
-- Four Types of Combinatoriality
-- P-Combinatoriality
-- RI-Combinatoriality
-- Transpositional Symmetry
+# Relationships
+## Contrasts With
+- **P-combinatoriality** -- P maps onto complement via T; R maps onto self via T
+
+## Related
+- **RI-combinatoriality** -- the inversional equivalent of R (self-mapping via I)
+
+# Common Errors
+- Forgetting that T0 R-combinatoriality is trivial and uninteresting
 
 # Common Confusions
-- Forgetting that T_0 R-combinatoriality is trivial (always true)
-- Confusing R-combinatoriality with P-combinatoriality (self-mapping vs. complement-mapping)
-- Not recognizing the connection to transpositional symmetry
-- Assuming R-combinatoriality is about retrograde operation rather than hexachord self-mapping
+- **Self-mapping vs. complement-mapping**: R maps onto itself; P maps onto the complement
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.5.2, pages 339-340
+Chapter 6, Section 6.5.2, pp. 339--340
+
+# Verification Notes
+Preserved from old card: trivial case, Petrushka hexachord. Added: v3 template, direct quotation about trivial case exclusion.

@@ -1,52 +1,79 @@
 ---
 concept: B-A-C-H Motive
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: bach-motive
+category: twelve-tone
+subcategory: series
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 360
+section: "Model Analysis 6.1"
+extraction_confidence: high
+aliases:
+  - "BACH cipher"
+  - "B-flat-A-C-B"
+prerequisites:
+  - derived-series
+  - generator-set-class
+extends: []
+related:
+  - webern-and-derivation
+  - retrograde-symmetry
+  - twelve-tone-canon
+contrasts_with: []
+answers_questions:
+  - "What is the B-A-C-H motive?"
+  - "How does Webern embed it in a derived series?"
 ---
 
 # Quick Definition
-The B-A-C-H motive is a musical cipher spelling J.S. Bach's name using German note names (B-flat, A, C, B-natural), which appears prominently in Webern's String Quartet, op. 28.
+The B-A-C-H motive is a musical cipher spelling Bach's name in German note nomenclature (Bb-A-C-B natural), embedded by Webern as the generator of his String Quartet, op. 28, where it belongs to set class (0123).
 
-# Formal Definition
-The *B-A-C-H motive* (Bb-A-C-B in German nomenclature, where B = Bb and H = B-natural) is a musical spelling of Johann Sebastian Bach's name. This tetrachord belongs to set class (0123), the chromatic tetrachord. In Webern's String Quartet, op. 28, the series is derived from (0123), making the B-A-C-H motive omnipresent throughout the work as every discrete tetrachord is a form of this set class.
+# Core Definition
+"This, of course, is the B-A-C-H motive, a musical version of Bach's name (in German nomenclature, Bb = B and B = H)" (Straus, p. 361). In Webern's String Quartet, op. 28, the series is derived from (0123), the chromatic tetrachord. Since the series is derived from this set class, "the B-A-C-H motive -- transposed, inverted, retrograded, and retrograde-inverted -- is omnipresent" (p. 361).
 
-# Mathematical Formulation/Recognition
-- B-A-C-H in German: Bb = 10, A = 9, C = 0, B(H) = 11
-- Ordered as (10, 9, 0, 11) or normalized to (0123)
-- Set class: (0123), the chromatic tetrachord
-- Intervals: <-1, +3, -1> or various orderings of ic1 and ic3
+# Prerequisites
+- **Derived series** -- the B-A-C-H motive serves as the generator
+- **Generator set class** -- (0123) is the generator
 
-# Musical Context/Application
-- Historical musical homage tradition (many composers have used B-A-C-H)
-- Webern embeds it as the generator of his derived series
-- The motive is transposed, inverted, retrograded, and retrograde-inverted
-- Appears at the very opening of the inversional canon
-- Creates a link between twelve-tone technique and Baroque tradition
+# Key Properties
+1. German nomenclature: B = Bb, H = B natural
+2. Pitch classes: Bb(10), A(9), C(0), B(11)
+3. Set class: (0123), the chromatic tetrachord
+4. Appears as every discrete tetrachord in Webern's derived series
+5. Links twelve-tone technique with Baroque tradition
+
+# Construction / Recognition
+- Look for (0123) tetrachords in Webern's op. 28
+- The literal B-A-C-H appears as the first tetrachord of P10: Bb-A-C-B
+
+# Context & Application
+The B-A-C-H motive connects Webern to the Baroque contrapuntal tradition he admired. Webern "was fond of canons -- they are a constant feature of his music. He seems to have enjoyed them both for their own sake and for their association with traditional tonal and modal practices" (p. 359).
 
 # Examples
-- Webern, String Quartet, op. 28:
-  - First tetrachord of P10: Bb-A-C-B (the B-A-C-H motive literally)
-  - Because the series is derived from (0123), B-A-C-H appears in every series statement
-  - The leading voice of the canon begins with this motive
-  - "The B-A-C-H motive—transposed, inverted, retrograded, and retrograde-inverted—is omnipresent"
+**Example 1** (pp. 360--361): Webern, String Quartet, op. 28 -- first tetrachord of P10 is literally Bb-A-C-B. Because the series is derived from (0123), every series statement contains four B-A-C-H motives (transposed, inverted, etc.). The leading voice of the canon (Variation 4) begins with this motive.
 
-# Related Concepts
-- Derived Series
-- Generator Set Class
-- Musical Cipher
-- Chromatic Tetrachord
-- Webern and Derivation
+# Relationships
+## Builds Upon
+- **Derived series** -- B-A-C-H is the generator
+- **Generator set class** -- (0123)
+
+## Related
+- **Twelve-tone canon** -- Webern's canonic treatment of derived series
+- **Retrograde symmetry** -- the op. 28 series is retrograde-symmetrical
+
+# Common Errors
+- Confusing German and English note names (B = Bb, H = B natural in German)
+- Assuming the motive must appear literally (it is usually transformed)
 
 # Common Confusions
-- Confusing German and English note names (B = Bb, H = B-natural in German)
-- Assuming the motive must appear literally—it's usually transformed
-- Not recognizing (0123) as the B-A-C-H set class
-- Thinking the motive is only significant when spelled literally
+- **B-A-C-H as motive vs. as set class**: The literal cipher is a specific ordering of (0123); all (0123) instances are transformations of B-A-C-H
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Model Analysis 6.1, pages 360-361
+Chapter 6, Model Analysis 6.1, pp. 360--361
+
+# Verification Notes
+Preserved from old card: German nomenclature, (0123) identification, omnipresence. Added: v3 template, direct quotation, Baroque tradition connection.

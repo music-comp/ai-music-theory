@@ -1,12 +1,31 @@
 ---
 concept: "Five-Cycle (C5)"
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: five-cycle
+category: harmony
+subcategory: interval cycles
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.2 Interval Cycles"
+extraction_confidence: high
+aliases:
+  - C5
+  - circle of fourths
+  - circle of fifths cycle
+prerequisites:
+  - interval-cycles
+extends:
+  - interval-cycles
+related:
+  - diatonic-collection
+  - two-cycle
+contrasts_with: []
+answers_questions:
+  - "What is the five-cycle (C5)?"
 ---
 
 # Quick Definition

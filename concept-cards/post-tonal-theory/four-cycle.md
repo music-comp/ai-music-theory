@@ -1,12 +1,30 @@
 ---
 concept: "Four-Cycle (C4)"
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: four-cycle
+category: harmony
+subcategory: interval cycles
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.2 Interval Cycles"
+extraction_confidence: high
+aliases:
+  - C4
+  - major-third cycle
+prerequisites:
+  - interval-cycles
+extends:
+  - interval-cycles
+related:
+  - hexatonic-collection
+  - two-cycle
+contrasts_with: []
+answers_questions:
+  - "What is the four-cycle (C4)?"
 ---
 
 # Quick Definition

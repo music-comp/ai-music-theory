@@ -1,82 +1,98 @@
 ---
 concept: Unique Multiplicity of Interval Class
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: unique-multiplicity-of-interval-class
+category: set-theory
+subcategory: transposition properties
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Some Additional Properties and Relationships"
 chapter_number: 3
 pdf_page: 114
-unit: null
-authors: Joseph N. Straus
+section: "3.1.2 Some special set classes (major scale and whole-tone scale)"
+extraction_confidence: high
+aliases:
+  - "unique multiplicity"
+  - "graduated interval content"
+prerequisites:
+  - interval-class-vector
+  - common-tone-theorem-for-transposition
+extends:
+  - common-tone-theorem-for-transposition
+related:
+  - transpositional-symmetry
+contrasts_with:
+  - transpositional-symmetry
+answers_questions:
+  - "Why does the major scale create a hierarchy of closely and distantly related keys?"
+  - "What is unique multiplicity of interval class?"
 ---
 
 # Quick Definition
-A property of the major scale (and its modes) where each interval class occurs a different number of times, producing a different number of common tones at each transposition level and enabling the hierarchy of closely and distantly related keys.
+A property of the major scale (and its set class) where each interval class occurs a different number of times, producing a graduated continuum of common-tone relationships at different transposition levels and enabling the hierarchy of key relationships in tonal music.
 
-# Formal Definition
-Unique multiplicity of interval class refers to an interval-class vector in which no two entries (except those affected by the tritone exception) are the same. The major scale has this property with vector [254361]:
-- 2 occurrences of ic1 (semitones)
-- 5 occurrences of ic2 (whole tones)
-- 4 occurrences of ic3 (minor thirds)
-- 3 occurrences of ic4 (major thirds)
-- 6 occurrences of ic5 (perfect fourths/fifths)
-- 1 occurrence of ic6 (tritone)
+# Core Definition
+Unique multiplicity of interval class describes an interval-class vector in which each entry is distinct (with the minor exception that ic1 and ic6 produce the same common-tone count due to the tritone exception). The major scale, sc(013568T) with vector [254361], exemplifies this property: it has 2 ic1s, 5 ic2s, 4 ic3s, 3 ic4s, 6 ic5s, and 1 ic6. Because each interval class has a different multiplicity, transposition at each level yields a different number of common tones, creating a graduated hierarchy from closely related keys (T7: 6 common tones) to distantly related keys (T1: 2 common tones) (Straus, pp. 114-115).
 
-This creates a graduated continuum of common-tone relationships at different transposition levels.
+# Prerequisites
+- **Interval-class vector** -- the data structure exhibiting unique multiplicity
+- **Common tone theorem for transposition** -- connects interval counts to common-tone behavior
 
-# Mathematical Formulation/Recognition
-For a set to have unique multiplicity:
-- All entries in the interval-class vector must be distinct
-- Exception: ic1 and ic6 may have the same count (due to tritone doubling at T6)
+# Key Properties
+1. The major scale vector [254361] has all different entries
+2. This produces a different common-tone count at (almost) every transposition level
+3. T5/T7: 6 common tones (closest relationship -- dominant/subdominant)
+4. T2/T10: 5 common tones
+5. T3/T9: 4 common tones
+6. T4/T8: 3 common tones
+7. T1/T11: 2 common tones; T6: 2 common tones (the one overlap, due to tritone exception)
+8. This graduated continuum is the foundation of the circle of fifths
 
-The major scale [254361]:
-- T5/T7: 6 common tones (closest relationship)
-- T2/T10: 5 common tones
-- T3/T9: 4 common tones
-- T4/T8: 3 common tones
-- T1/T11 or T6: 2 common tones (most distant)
+# Construction / Recognition
+To check for unique multiplicity:
+1. Compute the interval-class vector
+2. Verify that all six entries are distinct
+3. Note: T1/T11 and T6 may coincide due to the tritone doubling rule
 
-Each transposition produces a unique number of common tones.
+Contrast with whole-tone scale [060603]: entries are 0, 6, 0, 6, 0, 3 -- no gradation, only extreme values.
 
-# Musical Context/Application
-Unique multiplicity explains:
-- Why the circle of fifths works (T7 maximizes common tones)
-- The hierarchy of closely vs. distantly related keys in tonal music
-- Why modulation to dominant feels "close" while modulation by semitone feels "remote"
-- The asymmetry essential to tonal key relationships
-
-Contrast with whole-tone scale [060603]: no gradation at all, just all-or-nothing (6 common tones or 0).
+# Context & Application
+Unique multiplicity explains why the major/minor scale system supports hierarchical key relationships: modulation to the dominant (T7) retains 6 of 7 pitch classes, while modulation by semitone retains only 2. The whole-tone scale, lacking this property, cannot support graduated key relationships -- it offers only complete overlap or complete contrast.
 
 # Examples
-From Example 3-5: Major scale common tones at different transposition levels
+**Example 1** (p. 115, Ex. 3-5): Major scale common tones at each transposition:
+- T7 (to dominant): 6 common tones -- closest relationship
+- T2: 5 common tones
+- T3: 4 common tones
+- T4: 3 common tones
+- T1 or T6: 2 common tones -- most distant relationships
 
-Starting from C major:
-- T7 (up a fifth to G major): 6 common tones (C, D, E, G, A, B)
-- T5 (up a fourth to F major): 6 common tones (C, D, E, F, G, A)
-- T2 (up a whole step to D major): 5 common tones
-- T4 (up a major third to E major): 3 common tones
-- T1 (up a semitone to Db major): 2 common tones
+**Example 2** (p. 116, Ex. 3-6): Whole-tone scale [060603]:
+- Even transpositions (T2, T4, T6, T8, T10): 6 common tones (complete duplication)
+- Odd transpositions (T1, T3, T5, T7, T9, T11): 0 common tones
+- Stark either/or, no hierarchy possible
 
-This gradation creates the tonal hierarchy:
-- Dominant (T7) and subdominant (T5) are "closely related"
-- Keys a semitone away are "distantly related"
+# Relationships
+## Builds Upon
+- **Common tone theorem for transposition** -- unique multiplicity is visible through this theorem
 
-From Example 3-6: Contrast with whole-tone scale [060603]
-- Even transpositions: 6 common tones (complete overlap)
-- Odd transpositions: 0 common tones (no overlap)
-- No intermediate relationships - no hierarchy possible
+## Enables
+- Understanding of tonal key hierarchies and circle of fifths
 
-# Related Concepts
-- Common tones under transposition
-- Interval-class vector
-- Major scale
-- Circle of fifths
-- Key relationships in tonal music
+## Contrasts With
+- **Transpositional symmetry** -- symmetrical sets lack unique multiplicity; they have redundant interval counts
+
+# Common Errors
+- Overlooking that T1/T11 and T6 both yield 2 common tones (the one exception to strict uniqueness, due to the tritone rule)
+- Confusing unique multiplicity with transpositional symmetry (they are nearly opposite properties)
 
 # Common Confusions
-- Thinking the major scale is unique in having this property (other sets might theoretically have it too)
-- Not recognizing that the tritone complicates the uniqueness (T1 and T6 both yield 2 common tones)
-- Confusing unique multiplicity with transpositional symmetry (they are opposite concepts)
-- Assuming this property is relevant only to tonal analysis (it illuminates any set's transposition behavior)
+- The property is not unique to the major scale -- other set classes could theoretically have it, though the major scale is the most musically significant example
+- The whole-tone scale is the extreme counterexample: maximum redundancy in interval counts
 
 # Source Reference
-Chapter 3: Some Additional Properties and Relationships, Section 3.1.2, pages 114-116
+Chapter 3: Some Additional Properties and Relationships, Section 3.1.2, pp. 114-116
+
+# Verification Notes
+Upgraded from old v2 card. Preserved all content including major scale analysis, whole-tone contrast, and circle-of-fifths connection. Added v3 taxonomy and structural fields.

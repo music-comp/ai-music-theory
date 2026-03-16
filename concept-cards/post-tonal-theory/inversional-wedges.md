@@ -1,12 +1,30 @@
 ---
 concept: Inversional Wedges
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: inversional-wedges
+category: centricity
+subcategory: inversional wedges
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.2.2 Inversional wedges"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - inversional-axis
+  - inversional-symmetry-pitch-space
+extends:
+  - inversional-axis
+related:
+  - expanding-wedge
+  - contracting-wedge
+  - centricity
+contrasts_with: []
+answers_questions:
+  - "What are inversional wedges?"
 ---
 
 # Quick Definition

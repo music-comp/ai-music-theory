@@ -1,12 +1,29 @@
 ---
 concept: RI-Chain
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: ri-chain
+category: harmony
+subcategory: triadic post-tonality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.5.1 Chain and space for (014)"
+extraction_confidence: high
+aliases:
+  - retrograde-inversion chain
+prerequisites:
+  - contextual-inversion
+extends:
+  - contextual-inversion
+related:
+  - contextual-inversion-space
+  - combination-cycles
+contrasts_with: []
+answers_questions:
+  - "What is an RI-chain?"
 ---
 
 # Quick Definition

@@ -1,12 +1,30 @@
 ---
 concept: Diatonic Collection
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: diatonic-collection
+category: collections
+subcategory: diatonic
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.3 Diatonic Collection"
+extraction_confidence: high
+aliases:
+  - DIA
+prerequisites:
+  - referential-collections
+extends:
+  - referential-collections
+related:
+  - diatonic-nomenclature
+  - modal-orderings
+  - nonfunctional-diatonicism
+contrasts_with: []
+answers_questions:
+  - "What is the diatonic collection in post-tonal music?"
 ---
 
 # Quick Definition

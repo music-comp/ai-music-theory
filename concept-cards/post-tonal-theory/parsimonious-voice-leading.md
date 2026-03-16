@@ -1,12 +1,30 @@
 ---
 concept: Parsimonious Voice Leading
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: parsimonious-voice-leading
+category: voice-leading
+subcategory: smooth voice leading
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.6.1 Triadic transformation"
+extraction_confidence: high
+aliases:
+  - smooth voice leading
+  - minimal voice leading
+prerequisites:
+  - triadic-transformation
+extends:
+  - triadic-transformation
+related:
+  - lp-cycle
+  - voice-leading-offset
+contrasts_with: []
+answers_questions:
+  - "What is parsimonious voice leading?"
 ---
 
 # Quick Definition

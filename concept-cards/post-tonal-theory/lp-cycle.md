@@ -1,12 +1,32 @@
 ---
 concept: "LP-Cycle (Hexatonic System)"
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: lp-cycle
+category: harmony
+subcategory: triadic post-tonality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.6.1 Triadic transformation"
+extraction_confidence: high
+aliases:
+  - hexatonic system
+prerequisites:
+  - leading-tone-transformation
+  - parallel-transformation
+  - hexatonic-collection
+extends:
+  - triadic-transformation
+related:
+  - hexatonic-poles
+  - plr-cycle
+contrasts_with:
+  - plr-cycle
+answers_questions:
+  - "How do interval cycles relate to voice leading?"
 ---
 
 # Quick Definition

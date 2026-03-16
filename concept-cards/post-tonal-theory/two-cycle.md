@@ -1,12 +1,30 @@
 ---
 concept: "Two-Cycle (C2)"
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: two-cycle
+category: harmony
+subcategory: interval cycles
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.2 Interval Cycles"
+extraction_confidence: high
+aliases:
+  - C2
+  - whole-tone cycle
+prerequisites:
+  - interval-cycles
+extends:
+  - interval-cycles
+related:
+  - whole-tone-collection
+  - four-cycle
+contrasts_with: []
+answers_questions:
+  - "What is the two-cycle (C2)?"
 ---
 
 # Quick Definition

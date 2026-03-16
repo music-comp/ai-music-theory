@@ -1,12 +1,29 @@
 ---
 concept: Centric Tones
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: centric-tones
+category: centricity
+subcategory: axes
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Centricity and Referential Pitch Collections"
 chapter_number: 5
 pdf_page: 244
-unit: null
-authors: Joseph N. Straus
+section: "5.1 Tonality and Centricity"
+extraction_confidence: high
+aliases:
+  - pitch center
+prerequisites:
+  - centricity
+extends:
+  - centricity
+related:
+  - inversional-axis
+  - silent-center
+contrasts_with: []
+answers_questions:
+  - "What are centric tones?"
 ---
 
 # Quick Definition

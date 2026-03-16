@@ -1,12 +1,30 @@
 ---
 concept: Combination Cycles
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: combination-cycles
+category: harmony
+subcategory: interval cycles
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.2.4 Combination cycles"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - interval-cycles
+extends:
+  - interval-cycles
+related:
+  - ri-chain
+  - octatonic-collection
+  - hexatonic-collection
+contrasts_with:
+  - interval-cycles
+answers_questions:
+  - "What are combination cycles?"
 ---
 
 # Quick Definition

@@ -1,51 +1,84 @@
 ---
 concept: Retrograde-Inversion
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: retrograde-inversion
+category: twelve-tone
+subcategory: operations
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 315
+section: "6.2.6 Retrograde-inversion"
+extraction_confidence: high
+aliases:
+  - "RI-form"
+  - "retrograde-inverted ordering"
+prerequisites:
+  - twelve-tone-series
+  - retrograde
+  - inversion-twelve-tone
+extends: []
+related:
+  - prime-ordering
+  - series-class
+  - index-number-twelve-tone
+contrasts_with: []
+answers_questions:
+  - "What is the retrograde-inversion of a twelve-tone series?"
+  - "How does RI relate intervallically to P, R, and I?"
 ---
 
 # Quick Definition
-The retrograde-inversion (RI) of a series is the retrograde of the inversion—the I-form played backward—producing an interval succession with the same intervals as the prime but in reverse order.
+The retrograde-inversion (RI) is the inversion played backward, producing an interval succession with the same intervals as the prime but in reverse order.
 
-# Formal Definition
-The *retrograde-inversion* of the series is simply the retrograde of the inversion (I played backward). In terms of pitch classes, P and RI are far apart—each is the upside-down-and-backward version of the other. In terms of intervals, however, the two are quite similar: they have the same intervals in reverse order. Compared to R, RI has the complementary intervals in the same order; compared to I, it has the complementary intervals backward. The resulting series forms are named RI0 (the retrograde of I0), RI1 (the retrograde of I1), ... RI11 (the retrograde of I11).
+# Core Definition
+"The *retrograde-inversion* of the series is simply the retrograde of the inversion" (Straus, p. 315). In terms of pitch classes, P and RI "seem far apart: each is the upside-down-and-backward version of the other. In terms of intervals, however, the two are quite similar: they have the same intervals in reverse order" (p. 315). RI_n is the retrograde of I_n. The series forms are RI_0 through RI_11.
 
-# Mathematical Formulation/Recognition
-- RI_n = retrograde of I_n
-- RI_n ends on pitch-class n (like R_n ends on pitch-class n)
-- Intervals: same as P but in reverse order
-- Compared to I: same intervals, reversed order
-- Compared to R: complementary intervals, same order
-- Compared to P: same intervals, reversed order
+# Prerequisites
+- **Retrograde** -- RI is the retrograde of the inversion
+- **Inversion (twelve-tone)** -- RI reverses the I-form
 
-# Musical Context/Application
-- One of the four basic orderings (P, R, I, RI) of the twelve-tone series
-- RI-forms have a particularly close intervallic relationship to P-forms (same intervals, reversed)
-- Series that are related by RI (P and RI, I and R) have the same intervals in reverse order
-- RI is often paired with P in combinatorial relationships
-- Creates symmetrical structures when combined with other series forms
+# Key Properties
+1. RI_n = retrograde of I_n
+2. RI_n ends on pitch-class n (like R_n ends on n)
+3. Compared to P: same intervals, reverse order
+4. Compared to R: complementary intervals, same order
+5. Compared to I: complementary intervals, reverse order
+
+# Construction / Recognition
+- Write out I_n, then reverse the order of pitch classes
+- Or: observe that the intervals match P's intervals in reverse order
+- RI_n ends on the pitch class that I_n begins on
+
+# Context & Application
+RI has a particularly close intervallic relationship to P (same intervals, reversed), making RI-related series easy to connect musically. RI-forms are commonly used in combinatorial pairings and in creating symmetrical structures. In Webern's music, retrograde-symmetrical series make some P-forms identical to RI-forms.
 
 # Examples
-- Schoenberg, String Quartet No. 4: RI7 is used in the third movement, following P0
-- The ordered pitch intervals of RI are <5, 11, 11, 8, 8, 1, 10, 7, 1, 8, 11>—the same as P in reverse
-- Webern, "Wie bin ich froh!": RI7 appears in the accompaniment, related to P7 at index number 2
+**Example 1** (p. 315, Ex. 6-6): Schoenberg, String Quartet No. 4 -- RI7 has interval succession <5, 11, 11, 8, 8, 1, 10, 7, 1, 8, 11>, which is the reverse of P's <11, 8, 1, 7, 10, 1, 8, 8, 11, 11, 5>.
 
-# Related Concepts
-- Prime Ordering
-- Retrograde
-- Inversion (Twelve-Tone)
-- Series Class (Row Class)
-- Index Number
+**Example 2** (p. 320): Webern, "Wie bin ich froh!" -- RI7 in the accompaniment is identified by recognizing that the intervals match P7's intervals in reverse. The index number relating P7 and RI7 is 2 (7 + 7 = 14 = 2 mod 12).
+
+# Relationships
+## Builds Upon
+- **Retrograde** -- RI applies retrograde to the inverted form
+- **Inversion (twelve-tone)** -- RI is the retrograde of I
+
+## Related
+- **Prime ordering** -- RI has the same intervals as P, reversed
+- **Series class** -- RI-forms are 12 of the 48 series forms
+
+# Common Errors
+- Confusing "retrograde-inversion" with "inversion of the retrograde" -- mathematically equivalent, but defined as R of I
+- Assuming RI_n begins on pitch-class n (it ends on n)
 
 # Common Confusions
-- Confusing RI with "inversion of the retrograde"—RI is specifically the retrograde of the inversion (R of I), though mathematically these are equivalent
-- Not realizing that RI_n ends (rather than begins) on pitch-class n
-- Overlooking the close intervallic relationship between P and RI (same intervals, reversed)
+- **RI vs. IR**: Straus defines RI as retrograde of I. Stravinsky uses "IR" (inversion of retrograde, starting on the same first note as R). These yield different results when labeling conventions differ.
+- **Close relationship to P**: Despite being "upside-down-and-backward," RI shares P's exact intervals (just reversed)
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.2.6, page 315
+Chapter 6, Section 6.2.6, p. 315
+
+# Verification Notes
+Preserved from old card: intervallic comparisons to all four forms, Schoenberg/Webern examples. Added: v3 template, direct quotation about P-RI relationship, Stravinsky IR distinction.

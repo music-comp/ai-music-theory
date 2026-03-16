@@ -1,12 +1,28 @@
 ---
 concept: Cyclic Linear Motion
-category: technique
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: cyclic-linear-motion
+category: harmony
+subcategory: interval cycles
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.2.1 Cyclic linear motion"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - interval-cycles
+extends:
+  - interval-cycles
+related:
+  - cyclic-sets
+  - composing-out
+contrasts_with: []
+answers_questions:
+  - "What is cyclic linear motion?"
 ---
 
 # Quick Definition

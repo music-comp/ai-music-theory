@@ -1,56 +1,85 @@
 ---
 concept: Crawford Seeger and Multilevel Rotation
-category: application
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: crawford-seeger-and-multilevel-rotation
+category: compositional-methods
+subcategory: rotational-arrays
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 349
+section: "6.5.4 Crawford Seeger and multilevel rotation"
+extraction_confidence: high
+aliases:
+  - "Crawford's serial practice"
+  - "multilevel serial rotation"
+prerequisites:
+  - hexachord-rotation
+  - twelve-tone-series
+extends: []
+related:
+  - triple-passacaglia
+  - stravinsky-and-rotational-arrays
+contrasts_with:
+  - schoenberg-and-hexachordal-combinatoriality
+  - webern-and-derivation
+answers_questions:
+  - "How does Crawford Seeger use rotation in serial music?"
+  - "What is a triple passacaglia?"
 ---
 
 # Quick Definition
-Crawford Seeger's multilevel rotation projects a series at multiple structural levels simultaneously: note-to-note, measure-to-measure (through rotation), and section-to-section (through transposition), creating a "triple passacaglia."
+Crawford Seeger's multilevel rotation projects a series simultaneously at three structural levels -- note-by-note, measure-by-measure (through rotation), and section-by-section (through transposition) -- creating what she called a "triple passacaglia."
 
-# Formal Definition
-Of Ruth Crawford Seeger's small but distinctive body of works, five follow multilayered serial plans of rotation and transposition. A series (often of fewer than twelve notes) is rotated systematically from measure to measure. When all rotations are complete, the series is transposed, and the new form is rotated in the same manner. The transposition interval is chosen so that the new form begins on the next note of the original series, thus projecting the pitch-class succession at the highest structural level.
+# Core Definition
+"Of Ruth Crawford Seeger's small but distinctive body of works, five follow multilayered serial plans of rotation and transposition" (Straus, p. 349). A series (often shorter than twelve notes) is systematically rotated from measure to measure. When rotations are complete, the series is transposed to begin on the next note of the original, and the process repeats. "Thus the series is projected at three levels: in eighth notes within each measure, from downbeat to downbeat, and from section to section" (p. 350). Crawford called this a "triple passacaglia."
 
-# Mathematical Formulation/Recognition
-Three levels of structure (for a 7-note series):
-1. **Note level**: Series stated in eighth notes within each measure
-2. **Measure level**: Each measure begins on the next rotation (m.1 on note 1, m.2 on note 2, etc.)
-3. **Section level**: After 7 measures, series transposes to start on original note 2; after another 7, on note 3, etc.
+# Prerequisites
+- **Hexachord rotation** -- the rotation technique applied at multiple levels
 
-The series is projected at three temporal levels simultaneously.
+# Key Properties
+1. Series projected at three temporal levels simultaneously
+2. Note level: series in eighth notes within each measure
+3. Measure level: each measure starts on the next rotation
+4. Section level: each new section transposes to the next note of the original series
+5. "This is not twelve-tone music exactly, but it is serial music from its surface details to its structural depths" (p. 350)
 
-# Musical Context/Application
-- Creates extreme structural unity across all time scales
-- Crawford called this approach a "triple passacaglia"
-- While not strictly twelve-tone (often uses shorter series), it is thoroughly serial
-- The same pitch-class succession governs immediate, intermediate, and large-scale structure
-- Represents a unique approach distinct from Schoenberg, Webern, or Stravinsky
+# Construction / Recognition
+1. State the series in the first measure
+2. Rotate to start on the second note in the next measure
+3. Continue rotating through all notes
+4. Transpose to start on the second note of the original series
+5. The section-level succession mirrors the original series
+
+# Context & Application
+Crawford Seeger represents the fourth of five approaches. Her technique predates and differs from Stravinsky's rotational arrays, creating extreme structural unity across all time scales. Her approach is "serial music from its surface details to its structural depths" (p. 350).
 
 # Examples
-- Crawford Seeger, Diaphonic Suite No. 1, third movement:
-  - Seven-note series: G-A-G#-B-C-F-C#
-  - M. 1 begins on G; m. 2 on A; m. 3 on G#; etc.
-  - After 7 measures, series transposes up 2 semitones (to start on A)
-  - This new form is rotated through 7 measures
-  - Large-scale succession: G-A-G#-B-C-F-C# (the original series at section level)
-  - Each new section begins on the next note of the series
+**Example 1** (pp. 349--350, Exx. 6-45 and 6-46): Crawford Seeger, Diaphonic Suite No. 1, third movement -- seven-note series G-A-G#-B-C-F-C#. M. 1 starts on G, m. 2 on A, m. 3 on G#, etc. After 7 measures, series transposes up 2 semitones to start on A. Large-scale succession: G-A-G#-B-C-F-C# (the original series at the section level).
 
-# Related Concepts
-- Hexachord Rotation
-- Rotational Arrays
-- Serial Music
-- Structural Depth
-- Triple Passacaglia
+# Relationships
+## Builds Upon
+- **Hexachord rotation** -- applied at multiple structural levels
+
+## Related
+- **Triple passacaglia** -- Crawford's term for this technique
+- **Stravinsky and rotational arrays** -- different rotational approach
+
+## Contrasts With
+- **Schoenberg and hexachordal combinatoriality** -- different organizing principle
+- **Webern and derivation** -- different source of structural depth
+
+# Common Errors
+- Assuming Crawford Seeger's music is twelve-tone (she often used shorter series)
+- Confusing this with Stravinsky's rotational arrays (different techniques)
 
 # Common Confusions
-- Assuming Crawford Seeger's music is twelve-tone—she often used shorter series
-- Not recognizing the three-level projection of the same succession
-- Confusing this approach with Stravinsky's rotational arrays—different techniques
-- Overlooking Crawford Seeger's pioneering role in American serialism
+- **"Triple" refers to three structural levels**, not three voices or three series
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.5.4, pages 349-350
+Chapter 6, Section 6.5.4, pp. 349--350
+
+# Verification Notes
+Preserved from old card: Diaphonic Suite example, three levels. Added: v3 template, direct quotations, "not twelve-tone exactly" clarification.

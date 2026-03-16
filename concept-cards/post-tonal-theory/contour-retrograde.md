@@ -1,74 +1,80 @@
 ---
 concept: Contour Retrograde
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: contour-retrograde
+category: analysis
+subcategory: contour
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Some Additional Properties and Relationships"
 chapter_number: 3
 pdf_page: 144
-unit: null
-authors: Joseph N. Straus
+section: "3.10.2 CSEG-class"
+extraction_confidence: high
+aliases:
+  - "CSEG retrograde"
+  - "contour R"
+prerequisites:
+  - contour-segment
+extends:
+  - contour-segment
+related:
+  - contour-inversion
+  - contour-retrograde-inversion
+  - cseg-class
+contrasts_with: []
+answers_questions:
+  - "What is contour retrograde?"
+  - "How does reversing a CSEG work?"
 ---
 
 # Quick Definition
-A contour transformation that reverses the temporal order of elements in a CSEG; the last element becomes first, the first becomes last, and the contour is read backward.
+A contour transformation reversing the temporal order of elements in a CSEG; the last element becomes first and the first becomes last, while the contour values remain unchanged.
 
-# Formal Definition
-Contour retrograde (often notated RET or R) transforms a CSEG by reversing the order of its elements. If the original CSEG is <a, b, c, d>, the retrograde is <d, c, b, a>. The actual contour values remain unchanged; only their temporal sequence is reversed.
+# Core Definition
+Contour retrograde transforms a CSEG by reversing the order of its elements. If the original is <a, b, c, d>, the retrograde is <d, c, b, a>. The actual contour values are unchanged; only their temporal sequence reverses. Retrograde-related CSEGs describe the same relative heights played in opposite temporal directions (Straus, pp. 144-145).
 
-Retrograde-related CSEGs describe the same sequence of relative heights played in opposite temporal directions. They are "backward" versions of each other.
+# Prerequisites
+- **Contour segment** -- the object being transformed
 
-# Mathematical Formulation/Recognition
-For CSEG <x1, x2, x3, ..., xn>:
-- RET = <xn, ..., x3, x2, x1>
+# Key Properties
+1. Formula: RET(<x1, x2, ..., xn>) = <xn, ..., x2, x1>
+2. Values unchanged; only order reverses
+3. Applied twice, returns to the original
+4. A palindromic CSEG equals its own retrograde
+5. Independent of contour inversion
 
-Simply reverse the order of elements.
-
-Example: <2013>
+# Construction / Recognition
+Simply reverse the order of elements:
 - RET(<2013>) = <3102>
+- Verification: first of original = last of retrograde, and vice versa
 
-To verify: The first element of the original equals the last element of the retrograde, and vice versa.
-
-Note: Retrograde does not change the values, only their order. The set of integers present remains the same.
-
-# Musical Context/Application
-Contour retrograde is useful for:
-- Identifying melodies played "backward" in terms of shape
-- Analyzing palindromic contour structures
-- Understanding relations in music with retrograde motivic development
-- Comparing beginnings and endings that mirror each other in shape
-
-Contour retrograde is a more general concept than pitch retrograde, capturing the shape relationship even when specific pitches differ.
+# Context & Application
+Contour retrograde identifies melodies played "backward" in shape. It is useful for analyzing palindromic structures and comparing beginnings and endings that mirror each other temporally. It is a more general concept than pitch retrograde, capturing shape relationships even when specific pitches differ.
 
 # Examples
-From Example 3-37: Crawford Seeger, String Quartet
+**Example 1** (p. 144, Ex. 3-37): Crawford Seeger -- <2013> and <3102> are retrograde-related. <0231> and <1320> are also retrogrades of each other.
 
-Original CSEG: <2013>
-- Temporal order: second-highest, lowest, second-lowest, highest
+# Relationships
+## Builds Upon
+- **Contour segment** -- the objects being transformed
 
-Contour retrograde: <3102>
-- Temporal order: highest, second-lowest, lowest, second-highest
-- Same pattern as original but backward in time
+## Related
+- **Contour inversion** -- independent operation (changes values, not order)
+- **Contour retrograde-inversion** -- combination of R and I
+- **CSEG-class** -- R is one of the classifying operations
 
-The relationship between <0231> and <1320>:
-- <1320> is the retrograde of <0231>
-- Each is the other read backward
-
-Contour retrograde in symmetrical structures:
-- A palindromic CSEG equals its own retrograde
-- Example: <1201> and <1021> are retrogrades
-
-# Related Concepts
-- Contour segment (CSEG)
-- CSEG-class
-- Contour inversion
-- Contour retrograde-inversion
-- Retrograde (in twelve-tone music)
+# Common Errors
+- Confusing retrograde (order reversal) with inversion (value complementation)
+- Thinking retrograde changes the contour values (it does not)
 
 # Common Confusions
-- Confusing retrograde (order reversal) with inversion (value complementation)
-- Thinking retrograde changes the contour values (it doesn't; only order changes)
-- Not recognizing that R and I are independent operations that can be combined
-- Confusing contour retrograde with pitch-class set retrograde (CSEG is ordered; pc sets are unordered)
+- R and I are independent operations that can be combined (RI)
+- Contour retrograde applies to ordered segments, not unordered sets
 
 # Source Reference
-Chapter 3: Some Additional Properties and Relationships, Section 3.10.2, pages 144-145
+Chapter 3: Some Additional Properties and Relationships, Section 3.10.2, pp. 144-145
+
+# Verification Notes
+Upgraded from old v2 card. Preserved Crawford Seeger example. Tightened definition and added v3 template fields.

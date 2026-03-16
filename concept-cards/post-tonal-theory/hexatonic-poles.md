@@ -1,12 +1,28 @@
 ---
 concept: Hexatonic Poles
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: hexatonic-poles
+category: harmony
+subcategory: triadic post-tonality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Motive, Voice Leading, and Harmony"
 chapter_number: 4
 pdf_page: 175
-unit: null
-authors: Joseph N. Straus
+section: "4.6.1 Triadic transformation"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - lp-cycle
+  - hexatonic-collection
+extends:
+  - lp-cycle
+related:
+  - leading-tone-transformation
+contrasts_with: []
+answers_questions:
+  - "What are hexatonic poles?"
 ---
 
 # Quick Definition

@@ -1,60 +1,88 @@
 ---
 concept: Hexachordal Combinatoriality
-category: theory
-source: Introduction to Post-Tonal Theory (Fifth Edition)
+slug: hexachordal-combinatoriality
+category: compositional-methods
+subcategory: combinatoriality
+tier: advanced
+source: "Introduction to Post-Tonal Theory"
+source_slug: post-tonal-theory
+authors: "Joseph N. Straus"
 chapter: "Basic Concepts of Twelve-Tone Music"
 chapter_number: 6
-pdf_page: 310
-unit: null
-authors: Joseph N. Straus
+pdf_page: 338
+section: "6.5.2 Schoenberg and hexachordal combinatoriality"
+extraction_confidence: high
+aliases:
+  - "combinatoriality"
+  - "hexachordal complementation"
+prerequisites:
+  - aggregate
+  - twelve-tone-series
+  - discrete-subsets
+  - inversion-twelve-tone
+extends: []
+related:
+  - four-types-of-combinatoriality
+  - all-combinatorial-hexachords
+  - twelve-tone-areas
+  - schoenberg-and-hexachordal-combinatoriality
+contrasts_with: []
+answers_questions:
+  - "What is combinatoriality?"
+  - "How do combinatorial series create aggregates?"
 ---
 
 # Quick Definition
-Hexachordal combinatoriality is the property where the hexachords of one series form can combine with the hexachords of another related form to create aggregates of all twelve pitch classes.
+Combinatoriality is the property where a collection can combine with a transposed or inverted form of itself (or its complement) to create an aggregate of all twelve pitch classes.
 
-# Formal Definition
-*Combinatoriality* is the general term for combining a collection with one or more transposed or inverted forms of itself (or its complement) to create an *aggregate* (all twelve pitch classes). In Schoenberg's mature twelve-tone music, series are always constructed so that the two hexachords are related by inversion. If the two hexachords are related by I_n, combining two series forms related by the same I_n will produce aggregates. The second hexachord of P has the same pitch-class content as the first hexachord of the combinatorially related I-form (and vice versa).
+# Core Definition
+"*Combinatoriality* is the general term for combining a collection with one or more transposed or inverted forms of itself (or its complement) to create an aggregate" (Straus, p. 341). In Schoenberg's mature twelve-tone music, "the two hexachords are related by inversion. If the two hexachords are related by I_n, combining two series forms related by the same I_n will produce aggregates" (p. 338). The second hexachord of one series has the same pitch-class content (different order) as the first hexachord of the combinatorial partner.
 
-# Mathematical Formulation/Recognition
-**Combinatorial relationship:**
-- If H1 and H2 are the hexachords of P, and H1 = I_n(H2)
-- Then P combined with I_(index) produces aggregates
-- Second hexachord of P = First hexachord of combinatorial I (same content, different order)
+# Prerequisites
+- **Aggregate** -- the twelve-pc collection being created
+- **Discrete subsets** -- specifically the two discrete hexachords
+- **Inversion** -- the primary operation for combinatorial pairing
 
-**Aggregate formation:**
-```
-P:    H1 (pcs a)  |  H2 (pcs b)
-I:    H2 (pcs b)  |  H1 (pcs a)
-      aggregate   |   aggregate
-```
+# Key Properties
+1. Hexachordal content is shared: H2 of P = H1 of combinatorial I (same content, different order)
+2. Aggregates form between the hexachords of paired series
+3. Not all hexachords are combinatorial (except trivially at T0)
+4. Four types exist: I, P, R, RI-combinatoriality
+5. Creates links between series forms through common-tone connections
 
-# Musical Context/Application
-- The aggregate is the basic harmonic unit in twelve-tone music
-- Combinatoriality provides links between series forms
-- Creates common-tone connections from phrase to phrase
-- Permits smooth transitions between series forms
-- Foundation for Schoenberg's twelve-tone areas
+# Construction / Recognition
+- Identify the two discrete hexachords of a series
+- Check if one hexachord can map onto the complement of the other under T_n or I_n
+- If I_n(H1) = H2, the series is I-combinatorial at that index
+- The combinatorial partner shares hexachordal content
+
+# Context & Application
+"The aggregate is the basic harmonic unit in twelve-tone music" (p. 341). Combinatoriality provides smooth connections between series forms and enables the creation of twelve-tone areas for large-scale harmonic organization.
 
 # Examples
-- Schoenberg, String Quartet No. 4: P2 is combinatorial with I7
-- The second hexachord of P2 has the same content as the first hexachord of I7
-- When P0 is followed by RI5, the second hexachord of P0 and first hexachord of RI5 form an aggregate
-- Dyads in the first violin (mm. 620-21) are distributed among instruments in the following R0
+**Example 1** (pp. 338--342, Ex. 6-35): Schoenberg, String Quartet No. 4 -- P2 is combinatorial with I7. The second hexachord of P2 has the same content as the first hexachord of I7. When P0 is followed by RI5, an aggregate forms between the second hexachord of P0 and the first hexachord of RI5.
 
-# Related Concepts
-- Aggregate
-- I-Combinatoriality
-- P-Combinatoriality
-- R-Combinatoriality
-- RI-Combinatoriality
-- All-Combinatorial Hexachords
-- Twelve-Tone Areas
+# Relationships
+## Builds Upon
+- **Aggregate** -- combinatoriality creates aggregates
+
+## Enables
+- **Twelve-tone areas** -- groupings based on combinatorial relationships
+- **Area modulation** -- movement between areas
+
+## Related
+- **Four types of combinatoriality** -- the four specific combinatorial relationships
+
+# Common Errors
+- Confusing hexachord content (shared) with hexachord order (different)
+- Thinking any collection combining with its complement at T0 is significant (that is trivial)
 
 # Common Confusions
-- Confusing hexachord content (which is shared) with hexachord order (which differs)
-- Thinking combinatoriality requires identical hexachords—they have same content, different order
-- Not recognizing that any collection combines with its complement at T0 (trivial case)
-- Assuming all series are combinatorial—only those with appropriate hexachord relationships
+- **Content vs. order**: Combinatorial hexachords share the same pitch classes but present them in different orders
+- **Combinatorial vs. complementary**: All hexachords are complements; only specific ones are combinatorial at non-trivial levels
 
 # Source Reference
-Chapter 6: Basic Concepts of Twelve-Tone Music, Section 6.5.2, pages 338-344
+Chapter 6, Section 6.5.2, pp. 338--341
+
+# Verification Notes
+Preserved from old card: Schoenberg example, aggregate formation diagram. Added: v3 template, direct quotation, four-type reference, content-vs-order emphasis.
