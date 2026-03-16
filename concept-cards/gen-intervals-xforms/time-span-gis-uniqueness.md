@@ -1,69 +1,96 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Time-Span GIS Uniqueness
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+slug: time-span-gis-uniqueness
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: rhythmic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Theorem 4.1.5"
+  - "essential uniqueness of time-span GIS"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - time-span-gis
+  - time-span-interval-independence
+extends:
+  - time-span-gis
+related:
+  - isomorphism
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Is the time-span GIS the only reference-independent time-span GIS?"
+  - "Why is non-commutativity forced by reference-independence?"
 ---
 
 # Quick Definition
-The time-span GIS 4.1.3 is essentially unique: it is the only GIS on time spans (up to isomorphism) whose interval function is independent of both the referential time-point zero and the referential time-unit.
+The time-span GIS 4.1.3 is essentially unique: any GIS on time spans with both zero-point independence and unit independence must be isomorphic to GIS 4.1.3 via a map preserving the int function.
 
-# Formal Definition
-**Theorem 4.1.5:** Let GIS' = (TMSPS, IVLS', int') be any GIS with time spans for its objects that also enjoys Properties (A) and (B) of Theorem 4.1.4. Then the group IVLS of GIS 4.1.3 and the group IVLS' of GIS' are isomorphic via a map f such that, for all time spans s and t:
+# Core Definition
+Theorem 4.1.5: Let GIS' = (TMSPS, IVLS', int') be any GIS with time spans for its objects that enjoys Properties (A) and (B) of Theorem 4.1.4. Then IVLS and IVLS' are isomorphic via a map f such that int'(s, t) = f(int(s, t)) for all time spans s and t. The isomorphism is constructed using the LABEL' function of GIS': f(i, p) = int'((0, 1), (i, p)) (Lewin, Theorem 4.1.5, pp. 110-112).
 
-int'(s, t) = f(int(s, t))
+# Prerequisites
+- **Time-Span GIS** — The GIS whose uniqueness is being established
+- **Time-Span Interval Independence** — The two properties that characterize GIS 4.1.3
 
-# Mathematical Formulation
-**Proof outline:**
-Define f: IVLS -> IVLS' by f(i, p) = LABEL'(i, p) = int'((0, 1), (i, p))
+# Key Properties
+1. Any reference-independent time-span GIS is isomorphic to GIS 4.1.3
+2. The isomorphism f maps IVLS to IVLS' and satisfies int'(s,t) = f(int(s,t))
+3. "Essentially unique" means unique up to isomorphism — different presentations encode the same structure
+4. Non-commutativity is not imposed but forced by the independence properties
 
-Using the independence properties:
-f(i, p)^(-1) f(j, q) = int'((i, p), (j, q))     [by 3.1.2]
-                     = int'((0, p), (j-i, q))   [Property A: shift by -i]
-                     = int'((0, 1), ((j-i)/p, q/p)) [Property B: scale by 1/p]
-                     = f((j-i)/p, q/p)
-                     = f((i, p)^(-1)(j, q))    [by Lemma 4.1.6.2]
+# Construction / Recognition
+## To Verify:
+1. Propose any alternative GIS' on TMSPS with Properties (A) and (B)
+2. Define f(i, p) = int'((0, 1), (i, p))
+3. Show f is an isomorphism from IVLS to IVLS' satisfying int' = f(int)
 
-By Lemma 4.1.6.1, f is a homomorphism. Since LABEL' is bijective, f is an isomorphism.
-
-Finally: f(int(s, t)) = int'(s, t) by tracing through the definitions.
-
-# Musical Context/Application
-This theorem gives GIS 4.1.3 a privileged theoretical status: if you want a GIS on time spans that doesn't depend on arbitrary reference choices, you must (essentially) use this one.
-
-The uniqueness result validates the non-commutative structure as not merely an arbitrary choice but a necessary consequence of requiring reference-independence.
+# Context & Application
+This uniqueness result validates the non-commutative structure as not merely an arbitrary choice but a mathematical necessity. If you want reference-independence for time-span intervals, you must (essentially) use this group structure. The non-commutativity is a consequence, not a premise.
 
 # Examples
-**Alternative GIS:**
-Suppose someone proposes a different time-span GIS with IVLS' and int'. If their GIS also has properties (A) and (B), Theorem 4.1.5 guarantees:
-1. IVLS' is isomorphic to IVLS
-2. int' is just int composed with the isomorphism
+**Example 1** (p. 112): If someone proposes a different GIS' with Properties (A) and (B), Theorem 4.1.5 guarantees IVLS' is isomorphic to IVLS and int' is just int composed with the isomorphism.
 
-**What the isomorphism means:**
-Any "reference-independent" time-span interval theory will have the same algebraic structure. Different formulations may use different notation, but they all encode the same information.
+**Example 2** (p. 110): GIS 4.1.2 does NOT have Property (B), so the uniqueness theorem does not apply to it — it is a genuinely different structure.
 
-**Non-example:**
-GIS 4.1.2 with int((a,x),(b,y)) = (b-a, y/x) does NOT have property (B). It is a valid GIS, but not reference-independent. Theorem 4.1.5 doesn't apply.
+# Relationships
+## Builds Upon
+- **Time-Span GIS** — the GIS whose uniqueness is proved
+- **Time-Span Interval Independence** — the characterizing properties
 
-# Related Concepts
-- Time-Span Interval Independence
-- Time-Span GIS
-- Group Isomorphism
-- LABEL Function
-- Reference Independence
+## Enables
+- Confidence that the non-commutative structure is the "right" one for reference-independent rhythm analysis
+
+# Common Errors
+- **Error**: Thinking uniqueness means there is only one way to write the group
+  **Correction**: Different presentations (notation, coordinates) are allowed; the algebraic structure is unique up to isomorphism
 
 # Common Confusions
-1. **"Essentially unique" vs. unique:** Different GIS may use different IVLS' groups, but they're all isomorphic. The structure is unique; the presentation may vary.
-
-2. **The isomorphism f:** It's defined using the LABEL' function of the alternative GIS. The proof shows this f is automatically a group isomorphism.
-
-3. **Significance:** This isn't just showing one nice GIS exists. It shows there's only one (up to isomorphism) with the desired properties.
-
-4. **Why non-commutative?** The uniqueness theorem doesn't impose non-commutativity. Rather, the independence properties FORCE the resulting IVLS to be non-commutative.
+- **Confusion**: Thinking non-commutativity was assumed from the start
+  **Clarification**: Lewin derives non-commutativity as a consequence of requiring reference-independence. The independence properties force IVLS to be non-commutative.
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Theorem 4.1.5 and Lemmas 4.1.6.1-4.1.6.2, pp. 110-112
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Theorem 4.1.5 and Lemmas 4.1.6.1-4.1.6.2, pp. 110-112.
+
+# Verification Notes
+- Definition source: direct from Theorem 4.1.5
+- Confidence rationale: high — explicit theorem with proof
+- Re-extraction notes: Re-extracted from v2 card; preserved: significance discussion, contrast with GIS 4.1.2, proof outline

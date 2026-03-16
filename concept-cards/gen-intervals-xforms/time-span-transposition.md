@@ -1,85 +1,105 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Time-Span Transposition
-category: technique
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+slug: time-span-transposition
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: rhythmic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "T_{(i,p)}"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - time-span-gis
+  - transposition-operation
+extends:
+  - transposition-operation
+related:
+  - time-span-interval-preserving-operation
+  - time-span-inversion
+contrasts_with:
+  - time-span-interval-preserving-operation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does transposition work in the non-commutative time-span GIS?"
 ---
 
 # Quick Definition
-Time-span transposition T(i,p) transforms a time span by shifting its attack point i span-lengths later and scaling its duration by factor p. Due to non-commutativity, time-span transposition does not preserve intervals (except for the identity).
+Time-span transposition T_{(i,p)}(a, x) = (a + ix, px) shifts the attack point i span-lengths later and scales the duration by factor p. Due to non-commutativity, it does not preserve intervals (except for the identity) and may even reverse chronological order.
 
-# Formal Definition
-**Notes 4.1.7(A):** Given interval (i, p) and time span (a, x):
+# Core Definition
+Notes 4.1.7(A): Given interval (i, p) and time span (a, x), transposition yields T_{(i,p)}(a, x) = (a + ix, px). The transposed span begins i x-lengths later than a and lasts p times as long. Equivalently, T_{(i,p)}(a, x) = (a, x)(i, p) in IVLS (right-multiplication). Since no non-identity interval is central in this GIS (Note 4.1.7E), no non-identity transposition preserves intervals (Note 4.1.7F) (Lewin, Notes 4.1.7, pp. 112-114).
 
-T(i,p)(a, x) = (a + ix, px)
+# Prerequisites
+- **Time-Span GIS** — The GIS in which transposition operates
+- **Transposition Operation** — The general theory from Chapter 3
 
-The transposed time span begins i x-lengths later than a, and lasts p times as long as x.
+# Key Properties
+1. T_{(i,p)}(a, x) = (a + ix, px)
+2. The shift is ix (not i) — measured in x-units
+3. No non-identity transposition preserves intervals (Note 4.1.7F)
+4. Transposition may reverse chronological order of events (Figure 4.4)
+5. T_{(i,p)}(a, x) = (a, x)(i, p) (right-multiplication in IVLS)
 
-# Mathematical Formulation
-**Derivation from Definition 3.4.1:**
-T(i,p)(a, x) = (b, y) where int((a, x), (b, y)) = (i, p)
-That is: ((b-a)/x, y/x) = (i, p)
-So: b = a + ix and y = px
-Hence: T(i,p)(a, x) = (a + ix, px)
+# Construction / Recognition
+## To Construct:
+1. Choose interval (i, p)
+2. For time span (a, x): shift attack by ix, multiply duration by p
+3. Result: (a + ix, px)
 
-**LABEL interpretation (Notes 4.1.7(B)-(C)):**
-With ref = (0, 1):
-LABEL(a, x) = int((0, 1), (a, x)) = (a, x)
-
-The number-pair (a, x) serves as both time span and its LABEL.
-T(i,p)(a, x) = (a, x)(i, p) (composition in IVLS)
-
-# Musical Context/Application
-Time-span transposition models moving an event later in time and/or changing its duration. Unlike pitch transposition, this operation:
-- Does not preserve intervals (Theorem 3.4.8, since (i, p) is not central unless i = 0, p = 1)
-- May not even preserve chronological order of events
-
-This counterintuitive behavior is inherent to the non-commutative structure.
+# Context & Application
+Unlike familiar pitch transposition, time-span transposition can distort intervals and reverse chronology. On Figure 4.4, two spans s_1 and s_2 with s_1 preceding s_2 can be transposed by (4, 2) so that t_1 = T(s_1) follows t_2 = T(s_2). This counterintuitive behavior is inherent to non-commutative structure.
 
 # Examples
-**Basic calculation:**
-T(2,3)(1, 4) = (1 + 2*4, 3*4) = (9, 12)
-The event at time 1 lasting 4 units becomes an event at time 9 lasting 12 units.
+**Example 1** (p. 113): T_{(2,3)}(1, 4) = (1 + 2*4, 3*4) = (9, 12)
 
-**Figure 4.4 interpretation:**
-If s1 = (a1, x1) and t1 = T(4,2)(s1), then:
-t1 = (a1 + 4x1, 2x1)
-t1 begins 4 s1-durations after s1, and lasts twice as long.
+**Example 2** (p. 113): Non-preservation of intervals:
+- s = (0, 1), t = (2, 1): int(s, t) = (2, 1)
+- T_{(1,2)}(s) = (1, 2), T_{(1,2)}(t) = (3, 2)
+- int((1, 2), (3, 2)) = (1, 1) — different from (2, 1)
 
-**Non-preservation of intervals:**
-s = (0, 1), t = (1, 1): int(s, t) = (1, 1)
-T(1,2)(s) = (1, 2), T(1,2)(t) = (1 + 2, 2) = (3, 2)
-int(T(1,2)(s), T(1,2)(t)) = ((3-1)/2, 2/2) = (1, 1)
+**Example 3** (Figure 4.4): Chronology reversal when transposing two spans at different local tempi.
 
-Wait, that preserved the interval! Let's try another:
-s = (0, 1), t = (2, 1): int(s, t) = (2, 1)
-T(1,2)(s) = (1, 2), T(1,2)(t) = (3, 2)
-int((1, 2), (3, 2)) = ((3-1)/2, 2/2) = (1, 1) =/= (2, 1)
+# Relationships
+## Builds Upon
+- **Transposition Operation** — general T_i theory from Chapter 3
+- **Time-Span GIS** — the specific GIS context
 
-Interval NOT preserved!
+## Enables
+- Analysis of rhythmic transformations in multi-tempo music
 
-**Chronology can reverse:**
-On Figure 4.4: s1 precedes s2, but t1 = T(4,2)(s1) may follow t2 = T(4,2)(s2).
+## Contrasts With
+- **Time-Span Interval-Preserving Operation** — P_{(h,u)} preserves intervals; T_{(i,p)} does not
 
-# Related Concepts
-- Time-Span GIS
-- Time-span Interval
-- Transposition Operation (Ti)
-- Interval-Preserving Operation
-- Non-Commutative Groups
+# Common Errors
+- **Error**: Expecting transposition to preserve intervals as in pitch-class GIS
+  **Correction**: Only T_{(0,1)} = identity preserves intervals in this non-commutative GIS
 
 # Common Confusions
-1. **Transposition doesn't preserve intervals:** This is shocking if you're used to pitch transposition. Only T(0,1) = identity preserves intervals.
-
-2. **The formula T(i,p)(a, x) = (a + ix, px):** The shift is i*x, not just i. It's measured in x-units.
-
-3. **Chronology reversal:** Two events in one temporal order may appear in reversed order after transposition.
-
-4. **Right multiplication:** T(i,p)(a, x) = (a, x)(i, p) in IVLS. This is the anti-isomorphism at work.
+- **Confusion**: Thinking the shift is i absolute units
+  **Clarification**: The shift is ix — measured in x-units (the duration of the original span)
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Notes 4.1.7(A)-(C), pp. 112-113
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Notes 4.1.7(A)-(C), (F), pp. 112-114.
+
+# Verification Notes
+- Definition source: direct from Notes 4.1.7(A)
+- Confidence rationale: high — explicit formula with examples
+- Re-extraction notes: Re-extracted from v2 card; preserved: non-preservation example, chronology reversal, right-multiplication interpretation

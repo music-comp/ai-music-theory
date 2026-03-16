@@ -1,72 +1,113 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Transposition and Interval Preservation
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: transposition-and-interval-preservation
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: group-structure
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (2): Formal Features"
 chapter_number: 3
-pdf_page: 62
-unit: null
-authors: David Lewin
+pdf_page: 81
+section: "3.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transposition-operation
+  - interval-preserving-operation
+  - central-interval
+extends: []
+related:
+  - group-of-transpositions
+  - group-of-interval-preserving-operations
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "When does a transposition preserve intervals?"
+  - "Under what conditions does T_i equal P_i?"
+  - "Why do transpositions in non-commutative GIS generally distort intervals?"
 ---
 
 # Quick Definition
-A transposition Ti preserves intervals if and only if the interval i is central (commutes with every interval in the group). In commutative GIS structures, all transpositions preserve intervals; in non-commutative structures, typically only the identity transposition does.
+A transposition T_i preserves intervals if and only if the interval i is central (commutes with every interval in the group). In commutative GIS, all transpositions preserve intervals; in non-commutative GIS, typically only the identity does.
 
-# Formal Definition
-Given an interval i in a GIS, the following conditions are logically equivalent:
-- (A): Ti preserves intervals
-- (B): For some choice of ref, Ti = Pi
-- (C): For any choice of ref, Ti = Pi
+# Core Definition
+**Theorem 3.4.8**: The following conditions are logically equivalent:
+- (A): T_i preserves intervals (int(T_i(s), T_i(t)) = int(s, t) for all s, t)
+- (B): For some choice of ref, T_i = P_i
+- (C): For any choice of ref, T_i = P_i
 - (D): i is central in IVLS (i commutes with every j in IVLS)
 
-# Mathematical Formulation
-**Theorem 3.4.8:** Conditions (A)-(D) are equivalent.
+This establishes a fundamental dichotomy between commutative and non-commutative GIS.
 
-**Proof sketch:**
-(A) => (C): If Ti preserves intervals, then by Theorem 3.4.7, Ti = Pj for some j. One shows j = i by comparing labels.
+# Prerequisites
+- **Transposition operation (T_i)** — The operation whose interval-preserving property is characterized
+- **Interval-preserving operation (P_i)** — The reference standard for interval preservation
+- **Central interval** — The algebraic condition equivalent to interval preservation
 
-(C) => (B): Trivial.
+# Key Properties
+1. The four conditions (A)-(D) are equivalent
+2. In commutative GIS: every T_i = P_i and every transposition preserves intervals
+3. In non-commutative GIS: most T_i differ from P_i and distort intervals
+4. The identity T_e always preserves intervals (since e is always central)
+5. Theorem 3.4.7 provides the prerequisite: if T_i preserves intervals, then T_i = P_j for some j
 
-(B) => (D): If Ti = Pi for some ref, then LABEL(s) * i = i * LABEL(s) for all s, implying i commutes with every interval.
+# Construction / Recognition
+## To Construct:
+1. Determine whether i is central in IVLS
+2. If yes, T_i preserves intervals and equals P_i for any ref
+3. If no, T_i distorts intervals
+## To Recognize:
+1. A transposition that maps every pair of elements to a pair with the same interval
+2. A transposition that coincides with some interval-preserving operation
 
-(D) => (A): If i is central, then int(Ti(s), Ti(t)) = (LABEL(s)*i)^(-1)(LABEL(t)*i) = i^(-1) * int(s,t) * i = int(s,t).
-
-# Musical Context/Application
-This theorem reveals a fundamental dichotomy:
-
-**Commutative case (most familiar GIS):** Every interval is central, so every transposition preserves intervals. This is the familiar situation in pitch-class theory where T5 of an interval-class 3 dyad is still an interval-class 3 dyad.
-
-**Non-commutative case:** Only the identity interval (and possibly a few others) is central. Most transpositions distort intervallic relationships. This occurs in the time-span GIS of Chapter 4.
+# Context & Application
+This theorem reveals a fundamental dichotomy. In commutative GIS (most familiar settings), every transposition preserves intervals -- this is the familiar situation where T_5 of an interval-class 3 dyad is still interval-class 3. In non-commutative GIS (like the time-span GIS of Chapter 4), most transpositions distort intervallic relationships, and transposition can even change the chronological ordering of events.
 
 # Examples
-**Pitch-class GIS (commutative):**
-- Every Ti = Pi
-- T5{C, E} = {F, A}, and int(C, E) = int(F, A) = 4
+**Example 1** (p. 81): In the commutative pitch-class GIS: every T_i = P_i. So T_5{C, E} = {F, A}, and int(C, E) = int(F, A) = 4.
 
-**12-tone pitch classes and T6:**
-- T6 commutes with every Ti (since 6 + n = n + 6 mod 12)
-- T6 preserves intervals (which is redundant here since all Ti do)
+**Example 2** (Corollary 3.4.9, p. 82): In a non-commutative GIS, there exists some i for which T_i does not preserve intervals, and hence T_i is not the same as P_i.
 
-**Non-commutative time-span GIS:**
-- Only (0, 1) is central (the identity interval)
-- T(i,p) does not preserve intervals for (i, p) != (0, 1)
-- Transposition can change chronological ordering of events
+**Example 3** (Notes 4.1.7, p. 113): In the time-span GIS, only (0, 1) is central, so T_{(i,p)} does not preserve intervals for (i, p) different from (0, 1). Transposition can distort duration ratios and even chronological ordering.
 
-# Related Concepts
-- Transposition Operation (Ti)
-- Interval-Preserving Operation (Pi)
-- Central Element
-- Commutative vs. Non-commutative Groups
-- LABEL Function
+# Relationships
+## Builds Upon
+- **Transposition operation** — The operations whose behavior is characterized
+- **Interval-preserving operation** — The standard against which transpositions are measured
+- **Central interval** — The equivalent algebraic condition
+## Enables
+- **Group of transpositions vs. group of interval-preserving operations** — Their relationship depends on this theorem
+## Related
+- **Non-commutative GIS** — Where the dichotomy becomes non-trivial
+
+# Common Errors
+- **Error**: Assuming all transpositions preserve intervals in any GIS
+  **Correction**: Only T_i with central i preserves intervals; in non-commutative GIS this excludes most transpositions
 
 # Common Confusions
-1. Students familiar with commutative GIS may assume all transpositions preserve intervals. This fails in non-commutative cases.
-
-2. The centrality condition (D) is the key: an interval that does not commute with all others cannot yield an interval-preserving transposition.
-
-3. Even in non-commutative GIS, the *family* of interval-preserving operations exists (the Pi). It simply does not coincide with the family of transpositions.
-
-4. The identity interval e is always central, so Te = Pe = identity operation always preserves intervals.
+- **Confusion**: If T_i does not preserve intervals, then the family of interval-preserving operations does not exist
+  **Clarification**: The family PSVS of P_i operations always exists; it simply does not coincide with TNSPS in non-commutative GIS
+- **Confusion**: The identity e is the only central element
+  **Clarification**: In commutative groups all elements are central; the identity is merely the element that is always central regardless of group structure
 
 # Source Reference
-Chapter 3: Generalized Interval Systems (2): Formal Features, Theorem 3.4.8 and Corollaries 3.4.9, pp. 81-82
+Chapter 3: Generalized Interval Systems (2): Formal Features, Theorem 3.4.8 and Corollary 3.4.9, pages 81-82.
+
+# Verification Notes
+- Definition source: Direct from Theorem 3.4.8
+- Confidence rationale: High -- theorem with four equivalent conditions is explicitly stated and proved
+- Re-extraction notes: Re-extracted from v2 card; preserved: four equivalent conditions, commutative/non-commutative dichotomy, time-span chronological distortion point

@@ -1,58 +1,80 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Helmholtz Consonance Theory
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory"
-chapter_number: A
-pdf_page: 276
-unit: null
+slug: helmholtz-consonance-theory
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: historical-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
 authors: David Lewin
+chapter: "Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory"
+chapter_number: null
+pdf_page: 276
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Helmholtz vertical-interval theory"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - multiple-musical-spaces
+extends: []
+related:
+  - rameau-harmonic-theory
+  - senario
+contrasts_with:
+  - rameau-harmonic-theory
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Helmholtz's consonance theory differ from Rameau's?"
+  - "What does vertical interval content analysis imply about chord positions?"
 ---
 
 # Quick Definition
-Helmholtz's consonance theory, based on vertical-interval content, asserts that the six-four position of the major triad and the six-three position of the minor triad are equivalently consonant because they share the same interval content (fourth, major third, major sixth).
+Helmholtz's consonance theory, based on vertical-interval content, asserts that voicings sharing the same interval content are equivalently consonant, leading to the conclusion that the six-four major triad and the six-three minor triad are the "most consonant" positions for their respective sets.
 
-# Formal Definition
-Hermann Helmholtz, in Die Lehre von den Tonempfindungen (On the Sensations of Tone, 1865), develops a theory of consonance based on the vertical interval content of chord voicings. Two voicings sharing the same interval content are considered equivalent in consonance, leading to conclusions that differ from traditional voice-leading theory.
+# Core Definition
+In Die Lehre von den Tonempfindungen (1865), Helmholtz analyzes chord consonance by vertical interval content. Since the 6/4 position of the major triad (e.g., G-C-E) and the 6/3 position of the minor triad (e.g., C-E-A) both contain {P4, M3, M6}, he asserts they are equivalently the "most consonant" close positions for their respective pitch-class sets. Lewin cites Helmholtz's willingness to entertain such equivalences in contrast to Rameau's fundamental-bass-based approach (Lewin, Appendix A, p. 246).
 
-# Mathematical Formulation
-Interval content analysis:
-- C major in 6/4 position (G-C-E): intervals are P4, M3, M6
-- A minor in 6/3 position (C-E-A): intervals are M3, P4, M6
-- Both contain: {P4, M3, M6}
+# Prerequisites
+- **Multiple Musical Spaces** — Helmholtz's approach illustrates a purely harmonic-interval perspective
 
-Helmholtz's conclusion:
-- 6/4 position of major = most consonant voicing of major triad
-- 6/3 position of minor = most consonant voicing of minor triad
-- These two positions are "equivalent" in consonance
-
-# Musical Context/Application
-Helmholtz's approach conflicts with traditional theories that treat the 6/4 chord as an unstable dissonance requiring resolution. His analysis illustrates how different theoretical frameworks (vertical interval content vs. bass-oriented function) produce different conclusions about the same sonority.
+# Key Properties
+1. Consonance assessed by vertical interval content
+2. 6/4 major and 6/3 minor share interval content {P4, M3, M6}
+3. This conflicts with traditional treatment of 6/4 as dissonant
+4. Helmholtz might accept harmonic equivalences that Rameau would reject
 
 # Examples
-**Helmholtz's claim:**
-"Helmholtz... actually asserts harmonic equivalence of a certain sort between the six-four position of the major triad and the six-three position of the minor triad. Both those positions comprise the highly consonant verticalities of a fourth, a major third, and a major sixth; having the same vertical-interval content, they are thereby the 'most consonant' close positions for their respective pitch-class sets."
+**Example 1** (p. 246): Helmholtz asserts "harmonic equivalence of a certain sort between the six-four position of the major triad and the six-three position of the minor triad."
 
-**From Die Lehre von den Tonempfindungen:**
-"...so folgt hieraus, dass die Quartsextenlage des Duraccords wohllautender ist als die fundamentale, und diese besser als die Sextenlage. Umgekehrt ist die Sextenlage beim Mollaccord besser als die fundamentale, und diese besser als die Quartsextenlage."
+**Example 2** (p. 246): From the original German: "die Quartsextenlage des Duraccords wohllautender ist als die fundamentale... Umgekehrt ist die Sextenlage beim Mollaccord besser als die fundamentale."
 
-(Translation: "...it follows that the six-four position of the major chord is more euphonious than the fundamental position, and this is better than the six-three position. Conversely, the six-three position of the minor chord is better than the fundamental position, and this is better than the six-four position.")
+# Relationships
+## Related
+- **Senario** — Helmholtz's intervals derive from harmonic ratios
 
-**Rameau contrast:**
-This view contrasts sharply with Rameau's fundamental bass theory, where the 6/4 chord would require a specific bass note and resolution. Helmholtz's interval-content approach dissolves the distinction between a "stable" first inversion and an "unstable" second inversion.
-
-**Context for Lewin's argument:**
-Helmholtz's willingness to equate 6/4 major with 6/3 minor illustrates how pure harmonic-interval analysis can lead to conclusions rejected by those who prioritize bass function. The comparison appears in Lewin's discussion of whether Rameau should accept that G4-C#5-E5 is functionally equivalent to G4-B4-E5.
-
-# Related Concepts
-- Rameau's Harmonic Theory
-- Interval Content
-- Consonance and Dissonance
-- Six-Four Chord
-- Fundamental Bass
+## Contrasts With
+- **Rameau's Harmonic Theory** — Rameau's fundamental bass rejects the equivalence Helmholtz accepts
 
 # Common Confusions
-Helmholtz's interval-content approach differs from both traditional counterpoint (which treats 6/4 as dissonant) and from set-class theory (which would not distinguish inversions at all). Students should understand this as one theoretical perspective among several, not as "correct" or "incorrect" acoustics.
+- **Confusion**: Thinking Helmholtz's analysis is acoustically definitive
+  **Clarification**: It represents one theoretical perspective; traditional counterpoint treats 6/4 chords very differently
 
 # Source Reference
-Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory
+Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory, p. 246.
+
+# Verification Notes
+- Definition source: direct from Appendix A
+- Confidence rationale: high — explicit quotation with German original
+- Re-extraction notes: Re-extracted from v2 card; preserved: German quotation, Rameau contrast, interval content analysis

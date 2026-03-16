@@ -1,68 +1,103 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Unrolling Interval Vector
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: unrolling-interval-vector
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: time-span-set-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions"
 chapter_number: 5
 pdf_page: 119
-unit: null
-authors: David Lewin
+section: "5.4.2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - unrolling interval-vector
+  - stage-wise interval vector
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - release-ordering
+  - forwards-oriented-interval
+  - emb-function
+extends:
+  - m-class-vector
+related:
+  - brahms-rhapsody-emb
+  - attack-ordered-dyad
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does an interval vector develop over time in a time-span GIS?"
+  - "What is the unrolling technique for interval vectors?"
 ---
 
 # Quick Definition
-An unrolling interval vector tracks how a set's interval vector develops over time, showing the progressive accumulation of intervallic relationships as events unfold.
+An unrolling interval vector tracks how a set's interval vector develops over time, stage by stage, as time spans release and become fully perceived. Stages are articulated at release points, modeling the listener's evolving perception of intervallic structure.
 
-# Formal Definition
-Given a set Y of time spans, the unrolling interval vector articulates Y into stages based on release-ordering (when spans end, not when they begin). At each stage, the interval vector is computed for the subset of Y whose spans have fully occurred.
+# Core Definition
+Given a set Y of time spans, the unrolling procedure (Lewin, pp. 117-119) is: (1) list Y in release-ordering; (2) identify stages at distinct release points; (3) at each stage, compute the interval vector for the subset of Y whose spans have fully released; (4) track how the vector grows. This models "how our sense of intervallic structure evolves as we listen to the musical passage" (p. 118). Lewin also suggests a computer visualization using colored dots on a half-plane grid.
 
-Stage articulation:
-1. List Y = (s1, s2, ..., sN) in release-ordering
-2. Identify stages at distinct release points
-3. At stage k, compute interval vector for Y_k = spans released by that point
-4. Track how the vector grows from stage to stage
+# Prerequisites
+- **Release-Ordering** — Stages are determined by release points
+- **Forwards-Oriented Interval** — The interval vector entries
+- **EMB Function** — The interval vector entries are EMB values for dyad classes
 
-# Mathematical Formulation
-Release-ordering: s precedes t if:
-1. s ends before t ends, OR
-2. They end simultaneously and s is longer (began earlier)
+# Key Properties
+1. Stages articulate at release points of successive spans
+2. Multiple simultaneous releases may be grouped into one stage
+3. Y_1 subset Y_2 subset ... subset Y = Y_final
+4. Each new stage adds intervals involving newly-released spans
+5. Care must be taken when release-ordering differs from attack-ordering
+6. The technique extends to EMB for set classes of any cardinality (Example 5.4.3)
 
-Stage sequence: Y1 subset Y2 subset ... subset Y = Y_final
+# Construction / Recognition
+## To Construct:
+1. List set Y = (s_1, ..., s_N) in release-ordering
+2. Identify stages at distinct release points, grouping simultaneous releases
+3. At each stage k, compute interval vector for Y_k
+4. Display the progressive development
 
-At each stage k:
-- Interval vector entries = IFUNC(Y_k, Y_k)(i, p) for forwards-oriented (i, p)
-- New entries come from dyads involving newly-released spans
+## To Recognize:
+1. A sequence of growing interval vectors indexed by temporal stages
 
-Update rule: When span s releases, add to the vector all intervals between s and previously-released spans.
-
-# Musical Context/Application
-Unrolling captures how a listener perceives intervallic structure developing in real time. A span is not fully "perceived" until it ends (we don't know its duration until then). This models the evolving sense of rhythmic pattern as a passage unfolds.
+# Context & Application
+The technique models real-time perception and can be applied to IFUNC(X, Y) as well (Note 5.4.4). Lewin suggests a color-monitor visualization where dots at (i, log p) change color as intervals accumulate, following either serial stage rhythm or "perceptual rhythm" of release points.
 
 # Examples
-From Figure 5.13, string trio passage:
+**Example 1** (pp. 117-118, Figure 5.13): String trio passage with 4 stages: Stage 1 at time 18 (vn1, vn2 released), Stage 2 at 18.5 (vc1), Stage 3 at 18.75 (va1), Stage 4 at time 20 (all remaining).
 
-Stage 1 (time 18): Y1 = {vn1, vn2}
-- First interval: between first two violin notes
+# Relationships
+## Builds Upon
+- **Release-Ordering** — Determines stage articulation
+- **M-Class Vector** — Each stage produces an interval vector (2-class vector)
 
-Stage 2 (time 18.5): Y2 = {vn1, vn2, vc1}
-- Add intervals involving cello span
+## Enables
+- **Brahms Rhapsody EMB Analysis** — Extended to unrolling EMB for higher set classes
 
-Stage 3 (time 18.75): Y3 = {vn1, vn2, vc1, va1}
-- Add intervals involving viola span
-
-Stage 4 (time 20): Y4 = all of Y
-- Add intervals involving final simultaneous releases
-
-Computer visualization: Color dots on half-plane grid at (i, log p) for each forwards-oriented interval (i, p). Color intensity reflects multiplicity.
-
-# Related Concepts
-- Release-Ordering
-- Time-Span Interval Vector
-- IFUNC (Interval Function)
-- EMB (Embedding Function)
-- Perceptual Rhythm
+# Common Errors
+- **Error**: Adding intervals at attack points rather than release points
+  **Correction**: A span's intervals can only be counted after it releases
 
 # Common Confusions
-Release-ordering differs from attack-ordering. A span that attacks early may release late (if it's long). The unrolling uses release-ordering because we don't "know" a span's duration until it ends. This subtlety is crucial for modeling perception.
+- **Confusion**: Thinking the final interval vector captures all the information
+  **Clarification**: The temporal trajectory of vector development is analytically significant — which intervals appear early vs. late matters
 
 # Source Reference
-Chapter 5: Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions, Example 5.4.2 and Figures 5.13-5.15
+Chapter 5: Generalized Set Theory (1), Example 5.4.2, Note 5.4.4, pp. 116-120.
+
+# Verification Notes
+- Definition source: Direct from section 5.4.2
+- Confidence rationale: Detailed procedural description with example
+- Re-extraction notes: Re-extracted from v2 card; preserved: string trio stages, computer visualization suggestion. Added v3.1 structure.

@@ -1,58 +1,96 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Fundamental Bass Intervals
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: fundamental-bass-intervals
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: simply-transitive-groups
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (1): Intervals and Transpositions"
 chapter_number: 7
 pdf_page: 188
-unit: null
-authors: David Lewin
+section: "7.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "root-interval ratios"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - intervals-as-transpositions
+extends: []
+related:
+  - normative-network
+  - klang-representation
+  - dom-transformation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How are fundamental bass intervals used in Lewin's analyses?"
+  - "Why are fundamental bass intervals inadequate for distinguishing major from minor?"
 ---
 
 # Quick Definition
-Intervals expressed as ratios between roots of chords in fundamental bass theory, representing both the intervallic distance between roots and the transformational relation between harmonies.
+Ratios between roots of harmonies in fundamental bass theory (expressed as fractions between 1/2 and 1 to capture "falling" progressions), used as arrow labels on normative networks but recognized as inadequate because they cannot distinguish major from minor chords.
 
-# Formal Definition
-Fundamental bass intervals are expressed as fractions (typically between 1/2 and 1 to capture "falling" progressions):
-- 2/3: Dominant relation (root falls by fifth)
-- 3/4: Subdominant relation (root rises by fourth)
-- 5/6: Mediant relation (root falls by third)
+# Core Definition
+Figure 7.9 labels arrows with "familiar ratios from fundamental bass theory" expressed as "fractions between 1/2 and 1, to capture the 'falling' sense of the root progressions" (Lewin, 7.4, p. 169). The ratios (2/3, 3/4, 5/6) have "an impressive tradition behind them, exemplifying the desire of earlier theorists to subsume intervals and transformations (here harmonic changes) into one general phenomenon (the fundamental bass)" (p. 169). However, the model is "not quite adequate" because the interval 5/6 does not tell us that the resulting harmony is minor rather than major -- "if we transpose a C-major chord by the interval 5/6 we obtain an A-major chord, not an A-minor chord" (pp. 175-176).
 
-These ratios model chord-changes as "intervals" between roots, representing the historical desire to subsume intervals and transformations into one phenomenon.
+# Prerequisites
+- **Intervals as transpositions** — The fundamental bass tradition attempted to unify intervals and transformations
 
-# Mathematical Formulation
-The interval i from root p to root q:
-- i = q/p (as a frequency ratio)
-- For "falling" sense: express as fraction between 1/2 and 1
-- Example: G to C = 2/3 (G is 3/2 of C, so C is 2/3 of G)
+# Key Properties
+1. Expressed as fractions between 1/2 and 1 (falling direction)
+2. 2/3 represents dominant-tonic (falling fifth)
+3. 3/4 represents subdominant-tonic (falling fourth)
+4. 5/6 represents mediant relationship
+5. Cannot distinguish major from minor chords sharing a root
+6. This limitation motivates the introduction of Klang representation in Ch. 8
 
-The representation is "not quite adequate" because:
-- It does not capture mode (major/minor) of chords
-- It treats all progressions with same root interval as equivalent
+# Construction / Recognition
+## To Construct:
+1. Identify root pitches of harmonies in a progression
+2. Express the ratio between successive roots as a fraction between 1/2 and 1
+## To Recognize:
+1. Arrow labels on harmonic networks expressed as just-intonation ratios
 
-# Musical Context/Application
-Rameau's fundamental bass theory attempted to unify intervallic and transformational thinking - the conceptual predecessor to modern transformational theory. The limitations of fundamental bass intervals (inability to distinguish modes) motivate the development of Klang transformations in Chapter 8.
+# Context & Application
+The inadequacy of fundamental bass intervals for distinguishing mode motivates Lewin's transition to Klang transformations in Chapter 8: "when we pass from the C-node to the A-node on figure 7.9, we are really applying some transformation other than harmonic-transposition-by-(5/6), some transformation which is more than a synonym or isomorphic image for that interval" (p. 176). This leads directly to the definition of Klang representation and the DOM/MED transformations.
 
 # Examples
-From Figure 7.9 (Beethoven Symphony No. 1):
-- F to C: ratio 2/3 (dominant progression)
-- C to G: ratio 3/4 (reversed: subdominant relation)
-- C to A: ratio 5/6 (mediant relation to A minor)
+**Example 1** (Figure 7.9, p. 169): Arrows labeled 2/3, 3/4, 5/6 connect roots F, C, G, D, and A in the normative network for Beethoven's First Symphony.
 
-The A-minor "tail" shows the limitation: 5/6 tells us A is root, but not that the chord is minor.
+# Relationships
+## Builds Upon
+- **Intervals as transpositions** — Fundamental bass ratios exemplify the historical desire to unify intervals and transformations
+## Enables
+- **Klang representation** — The inadequacy of root-intervals motivates the Klang formalism
+- **DOM transformation** — Reformulates the dominant relationship without the modal ambiguity
+## Related
+- **Normative network** — Uses fundamental bass intervals as arrow labels
 
-# Related Concepts
-- CADENCE Graph
-- Klang Representation
-- DOM Transformation
-- Beethoven Symphony No. 1 Analysis
-- Rameau's Harmonic Theory
+# Common Errors
+- **Error**: Assuming fundamental bass intervals fully characterize harmonic relationships
+  **Correction**: They cannot distinguish major from minor chords with the same root
 
 # Common Confusions
-- These are not frequency ratios of pitches but conceptual ratios between chord roots
-- The fractions 1/2 to 1 convention captures "falling" progressions; rising would use 1 to 2
-- Fundamental bass intervals cannot distinguish major from minor chords with the same root
-- This limitation is not a flaw in the analysis but a motivation for extending the theory
+- **Confusion**: Thinking Lewin rejects the fundamental bass tradition
+  **Clarification**: He acknowledges its "impressive tradition" while identifying its limitations and showing how Klang transformations resolve them
 
 # Source Reference
-Chapter 7: Transformation Graphs and Networks (1): Intervals and Transpositions, Section 7.4
+Chapter 7: Transformation Graphs and Networks (1): Intervals and Transpositions, Section 7.4, page 169; transition to Chapter 8, pages 175-176.
+
+# Verification Notes
+- Definition source: Direct quotation from 7.4 and the 7-to-8 transition
+- Confidence rationale: Explicitly discussed with clear limitations identified
+- Re-extraction notes: Re-extracted from v2 card; preserved: inadequacy argument, Rameau reference

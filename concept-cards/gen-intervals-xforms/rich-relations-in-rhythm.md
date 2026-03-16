@@ -1,54 +1,103 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: RICH-Relations in Rhythm
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: rich-relations-in-rhythm
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: rhythmic-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "rhythmic RICH transformation"
+  - "durational RI-chaining"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - rich-transformation
+  - durational-motive
+extends:
+  - rich-transformation
+related:
+  - mozart-k550-development-analysis
+  - multiplicative-inversion
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does RICH apply to durational patterns?"
+  - "How can pitch and rhythm share the same transformational logic?"
 ---
 
 # Quick Definition
-RICH-relations in rhythm apply retrograde-inversion chaining operations to durational patterns, revealing how rhythmic motives transform through the same RI-chain processes used for pitch motives.
+RICH-relations in rhythm apply the retrograde-inversion chaining operation to durational series, revealing how rhythmic motives transform through the same RI-chain processes used for pitch motives.
 
-# Formal Definition
-The RICH transformation applied to a durational series produces a retrograde-inversion of that series. When applied multiplicatively, RICH inverts each duration value about a common product (or additively about a common sum), then retrogrades the result. The RICH operation links durational series in chains analogous to pitch RI-chains.
+# Core Definition
+The RICH transformation applied to a durational series produces a retrograde-inversion that preserves the linking (chaining) property: the end of the original series shares elements with the beginning of the RICH-transformed series. In the durational domain, RICH can be defined multiplicatively (about a product) or additively (about a sum). The "musical effect is bewildering on first hearing, because both the durational series involved in the RICH relation... are heard as alternative rhythmic settings for one and the same pitch motive" (Lewin, Section 10.1, p. 254).
 
-# Mathematical Formulation
-For durational series S = (d1, d2, d3):
-- Multiplicative RICH: RICH(S) = R(I_p(S)) where I_p inverts about product p
-- If S = (1, 2, 2), and we invert multiplicatively about 2: I_2(S) = (2, 1, 1)
-- Then R(2, 1, 1) = (1, 1, 2), but using appropriate product p = 4: I_4(1, 2, 2) = (4, 2, 2)
-- R(4, 2, 2) = (2, 2, 4) = RICH(1, 2, 2)
+# Prerequisites
+- **RICH transformation** — the pitch-domain operation being applied to rhythm
+- **Durational motive** — the rhythmic operand
 
-The linking property: The end of series S shares elements with the beginning of RICH(S).
+# Key Properties
+1. RICH operates on durational series just as on pitch series
+2. The linking property is preserved: end of source shares elements with start of RICH-transform
+3. Can be computed multiplicatively or additively
+4. Demonstrates that pitch and rhythmic domains can share the same transformational logic
+5. Creates "bewildering" aural effects when dual RI-chaining occurs
 
-# Musical Context/Application
-RICH-relations in rhythm demonstrate that the transformational logic governing pitch structure can simultaneously govern rhythmic structure. This reveals a deeper level of compositional coherence where pitch and rhythm are unified through the same transformational processes.
+# Construction / Recognition
+## To Construct:
+1. Take a durational series
+2. Invert multiplicatively (about a product) or additively (about a sum)
+3. Retrograde the result
+4. The output is the RICH-transform
+## To Recognize:
+1. Look for durational series that are retrograde-inversions of preceding series
+2. Check for the linking (shared elements) property between adjacent series
+
+# Context & Application
+RICH-relations in rhythm demonstrate that the transformational logic governing pitch structure can simultaneously govern rhythmic structure. This reveals a deeper level of compositional coherence where pitch and rhythm are unified through the same transformational processes, as demonstrated in the Mozart K.550 analysis.
 
 # Examples
-In Mozart's K.550 development (Figure 10.2), the durational motive DM = 1 + 2 + 2 transforms through a network involving RICH:
-- DM (bracket 1) = 1 + 2 + 2
-- Series 3 = T_2(DM) = 2 + 4 + 4
-- Series 4a = R(series 3) = 4 + 4 + 2
-- Series 4b = RICH(series 4a) = 4 + 2 + 2
-- Series 5 = RICH(DM) = 2 + 2 + 4
+**Example 1** (Figures 10.2-10.3, pp. 255-256): In Mozart K.550:
+- DM = 1 + 2 + 2; RICH(DM) = 2 + 2 + 4 (series 5)
+- Series 4a = 4 + 4 + 2; RICH(series 4a) = 4 + 2 + 2 (series 4b)
+- The RICH-arrow between DM and series 5 can be heard by focusing on rhythmic identity of measure 127 with measure 132
 
-The RICH-arrow between DM and series 5 can be heard by focusing on the rhythmic identity of measure 127 with measure 132. The rhythmic content at the end of bracket 1 (measure 127) links directly to the beginning of bracket 5 (measure 132).
+# Relationships
+## Builds Upon
+- **RICH transformation** — the pitch-domain operation being extended
+- **Durational motive** — the rhythmic operand
+## Related
+- **Mozart K.550 development analysis** — the analytical context
+- **Multiplicative inversion** — the inversion component of rhythmic RICH
 
-"The musical effect is bewildering on first hearing, because both the durational series involved in the RICH relation... are heard as alternative rhythmic settings for one and the same pitch motive."
-
-# Related Concepts
-- Durational Motive (DM)
-- Pitch Motive (PM)
-- RI-Chain
-- RICH Transformation
-- Transformation Networks
-- Multiplicative Inversion
+# Common Errors
+- **Error**: Applying retrograde and inversion separately without recognizing the chaining property
+  **Correction**: RICH specifically requires the linking (overlapping) property between adjacent forms
 
 # Common Confusions
-The RICH operation in rhythm is distinct from simple retrograde or simple inversion. RICH specifically refers to retrograde-inversion with a linking property. Students sometimes apply retrograde and inversion separately without recognizing the chained, overlapping structure that RICH implies.
+- **Confusion**: Thinking RICH in rhythm works identically to RICH in pitch
+  **Clarification**: The principle is the same (retrograde-inversion with linking), but the inversion can be multiplicative or additive in the durational domain, whereas pitch-class inversion is always additive mod 12
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figures 10.2-10.3
+Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Section 10.1, pp. 254-256. See Figures 10.2-10.3.
+
+# Verification Notes
+- Definition source: direct from Section 10.1 discussion
+- Confidence rationale: high -- explicitly analyzed with network figures
+- Re-extracted from v2 card; preserved: "bewildering" quote, DM/series 5 RICH example, linking property

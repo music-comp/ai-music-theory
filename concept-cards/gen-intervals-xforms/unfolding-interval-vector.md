@@ -1,73 +1,111 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Unfolding Interval Vector
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: unfolding-interval-vector
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: rhythmic-analysis
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (2): Formal Features"
 chapter_number: 3
-pdf_page: 62
-unit: null
-authors: David Lewin
+pdf_page: 72
+section: "3.3"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "progressive interval vector"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - gis3-interval
+  - direct-product-gis
+extends: []
+related:
+  - ictus
+  - mensural-structure
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does the interval content of a set develop note-by-note over time?"
+  - "When do intervallic patterns first become perceptible to a listener?"
+  - "How does the unfolding interval vector reveal the emergence of structure?"
 ---
 
 # Quick Definition
 The unfolding interval vector tracks how the interval content of a set develops note-by-note as elements are added through time, revealing the temporal process by which intervallic patterns emerge for a listener.
 
-# Formal Definition
-Given a temporally ordered sequence of elements entering at successive time-points, the unfolding interval vector is a progressive record of the intervals that become available as each new element is added. Each new element contributes new intervals to all previously heard elements.
+# Core Definition
+Given a temporally ordered sequence of elements entering at successive time-points, the unfolding interval vector is a progressive record of all intervals that become available as each new element is added. Each new element contributes new intervals to all previously heard elements. In a direct-product GIS, each interval is a compound pair (pitch-class interval, temporal interval), tracking both dimensions simultaneously.
 
-# Mathematical Formulation
-**Construction process:**
-1. First element (s1): no intervals yet
-2. Second element (s2): interval vector contains int(s1, s2)
-3. Third element (s3): vector adds int(s1, s3) and int(s2, s3)
-4. And so on...
+# Prerequisites
+- **GIS3-interval** — The compound intervals tracked by the vector
+- **Direct-product GIS** — The framework in which compound intervals are computed
 
-**For n elements:**
-After element n arrives, the interval vector contains all int(si, sj) where i < j <= n (only forward-in-time intervals).
+# Key Properties
+1. Only "forward" intervals (earlier to later) are counted
+2. The vector grows cumulatively: it records all intervals heard so far
+3. After element n arrives, the vector contains all int(s_i, s_j) where i < j <= n
+4. In compound GIS, recurrence means the same pair, not just same component
+5. The moment of first predominance signals structural emergence (the ictus)
 
-**In direct-product GIS:**
-Each interval is a compound (pitch-class interval, temporal interval), tracking both dimensions simultaneously.
+# Construction / Recognition
+## To Construct:
+1. Order elements chronologically: s_1, s_2, s_3, ...
+2. After s_1: no intervals
+3. After s_2: add int(s_1, s_2)
+4. After s_3: add int(s_1, s_3) and int(s_2, s_3)
+5. After s_n: add int(s_k, s_n) for all k < n
+## To Recognize:
+1. A cumulative inventory of intervals growing with each new musical event
+2. A tool for identifying when patterns first emerge
 
-# Musical Context/Application
-The unfolding interval vector models the listener's developing perception of intervallic structure. It addresses the question: At what point during the music do we first hear enough to perceive a pattern?
-
-Key application: determining when mensural structure becomes perceptible (the "ictus" in Lewin's theory).
+# Context & Application
+The unfolding interval vector models the listener's developing perception of intervallic structure. It addresses the question: at what point during the music do we first hear enough to perceive a pattern? Its key application is determining when mensural structure becomes perceptible (the "ictus").
 
 # Examples
-**Figure 3.3 (Webern analysis):**
+**Example 1** (Figure 3.3, pp. 72-75): Webern Piano Variations unfolding:
+- After (Eb, 0): no intervals
+- After (B, 3): {(8, 3)}
+- After (Bb, 4): {(8, 3), (7, 4), (11, 1)}
+- After (D, 5): {(8, 3), (7, 4), (11, 1), (11, 5), (3, 2), (4, 1)}
+- At time-point 5: first recurrence of pitch-class interval 11; proposed as first ictus
 
-After (Eb, 0): no intervals
-After (B, 3): {(8, 3)}
-After (Bb, 4): {(8, 3), (7, 4), (11, 1)}
-After (D, 5): {(8, 3), (7, 4), (11, 1), (11, 5), (3, 2), (4, 1)}
-After (C#, 10): adds {(10, 10), (2, 7), (3, 6), (11, 5)}
-After (C, 11): adds {(9, 11), (1, 8), (2, 7), (10, 6), (11, 1)}
+**Example 2** (Figure 3.5, p. 75): After (C#, 10): the GIS3-interval (11, 5) recurs for the first time -- the first recurring compound interval. After (C, 11): (11, 1) and (2, 7) recur.
 
-**Analytical observations:**
-- At time-point 5: first recurrence emerges (pitch-class interval 11)
-- Time-point 5 is proposed as first "ictus"
-- At time-point 10: (11, 5) recurs--first recurring GIS3-interval
-- At time-point 11: (11, 1) and (2, 7) recur
+# Relationships
+## Builds Upon
+- **GIS3-interval** — The compound intervals that populate the vector
+- **Direct-product GIS** — The framework for computing compound intervals
+## Enables
+- **Ictus** — The moment when the vector first shows predominance
+- **Mensural structure** — Revealed by the recurrence patterns in the vector
+## Related
+- **Interval vector** — The static (non-temporal) analog
 
-**Perceptual significance:**
-- Predominance of an interval signals its structural importance
-- Recurrence of compound intervals creates associations between dimensions
-
-# Related Concepts
-- Direct-Product GIS
-- Interval Vector
-- Webern Piano Variations Analysis
-- Ictus
-- Mensural Structure
+# Common Errors
+- **Error**: Including backward intervals (later to earlier) in the vector
+  **Correction**: Only forward intervals (int(s_i, s_j) with i < j) are counted
 
 # Common Confusions
-1. **Direction of intervals:** Only "forward" intervals (earlier to later) are counted, not symmetric pairs.
-
-2. **Accumulation vs. snapshot:** The unfolding vector grows; it records all intervals heard so far, not just new ones.
-
-3. **Compound intervals:** In GIS3, each interval is a pair. Recurrence means the same pair (not just same pitch-class interval or same temporal interval).
-
-4. **The ictus concept:** The moment when interval patterns first become perceptible is analytically significant, not just the total interval content.
+- **Confusion**: The unfolding vector is a snapshot at one moment
+  **Clarification**: It is a cumulative record that grows; it captures the developing perception over time
+- **Confusion**: Recurrence of one component (e.g., pitch-class interval 11) implies recurrence of the compound interval
+  **Clarification**: Compound recurrence requires the same pair (e.g., (11, 5)); component recurrence alone is less specific
 
 # Source Reference
-Chapter 3: Generalized Interval Systems (2): Formal Features, Figure 3.3 discussion, pp. 72-77
+Chapter 3: Generalized Interval Systems (2): Formal Features, Figure 3.3 and discussion, pages 72-77.
+
+# Verification Notes
+- Definition source: Synthesized from Lewin's analytical demonstration
+- Confidence rationale: High -- procedure is clearly demonstrated even if not given a formal definition
+- Re-extraction notes: Re-extracted from v2 card; preserved: Webern unfolding data, compound recurrence distinction, ictus connection

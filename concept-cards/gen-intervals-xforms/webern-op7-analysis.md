@@ -1,71 +1,109 @@
 ---
-concept: Webern Op.7 No.3 IFUNC Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
+# === CORE IDENTIFICATION ===
+concept: Webern Op. 7 No. 3 IFUNC Analysis
+slug: webern-op7-analysis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: webern-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions"
 chapter_number: 5
 pdf_page: 119
-unit: null
-authors: David Lewin
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - Webern Four Pieces op. 7 analysis
+  - Webern violin piece IFUNC analysis
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - ifunc
+  - set-in-gis
+  - transposition-operation
+extends: []
+related:
+  - ifunc-probability
+  - inj-function
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does IFUNC reveal structural relationships in atonal music?"
+  - "How can a single set be articulated in multiple valid ways?"
 ---
 
 # Quick Definition
-Lewin's analysis of Webern's op.7, no.3 demonstrates how IFUNC reveals multiple structural relationships between melodic phrases, ostinato figures, and their transformational connections.
+Lewin's analysis of Webern's op. 7 no. 3 demonstrates how IFUNC reveals multiple structural relationships between melodic phrases X, Y and ostinato figures Z_0, Z_3, showing that a single set can be validly articulated in several ways depending on intervallic context.
 
-# Formal Definition
-The analysis examines the Four Pieces for Violin and Piano, op.7, no.3, focusing on:
-- X: pitch-class set of melodic phrase 1 (measures 3-4) = {Ab, Bb, Eb}
-- Y: pitch-class set of melodic phrase 2 (measures 5-8) = 7-note set
-- Z0, Z3: violin ostinato forms
+# Core Definition
+The analysis examines the Four Pieces for Violin and Piano, op. 7 no. 3 (Figures 5.2-5.7), focusing on X = {Ab, Bb, Eb} (melodic phrase 1, mm. 3-4), Y = 7-note set (melodic phrase 2, mm. 5-8), and Z_0, Z_3 = violin ostinato forms. IFUNC values from Figure 5.3(a) reveal T_3 relationships between sets and multiple valid articulations of Y. The analysis was initiated by Michael Bushnell at Stony Brook.
 
-IFUNC values reveal T3 relationships, embedding patterns, and structural proportions.
+# Prerequisites
+- **IFUNC** — The primary analytical tool used
+- **Set in a GIS** — X, Y, Z_0, Z_3 are sets in the pitch-class GIS
+- **Transposition Operation** — T_3 and T_8 relationships are central
 
-# Mathematical Formulation
-From Figure 5.3(a), key IFUNC values:
+# Key Properties
+1. IFUNC(Z_0, Z_3)(3) = 4 (maximum): Z_3 = T_3(Z_0)
+2. IFUNC(X, Y)(3) = 3 (maximum): T_3(X) embeds in Y as every-third-note backbone
+3. IFUNC(X, Y)(8) = 3 (maximum): T_8(X) = {E, F#, B} bounds Y registrally/temporally
+4. IFUNC(X, Z_0) and IFUNC(Z_3, Y) share maxima at i = 0, 5, 6, 11: structural proportion X:Z_0 :: Z_3:Y
+5. Multiple valid articulations of Y arise from different intervallic contexts
 
-IFUNC(Z0, Z3)(3) = 4 (maximum): Z3 = T3(Z0)
-IFUNC(Z0, Z3)(9) = 4 (also maximum): Z3 = T9(Z0) as pitch-class relation
+# Construction / Recognition
+## To Apply This Analytical Method:
+1. Identify sets of interest (melodic phrases, ostinato figures)
+2. Compute IFUNC tables between all relevant pairs
+3. Find maximal IFUNC values — these indicate embedding and transposition relationships
+4. Explore musical significance of discovered relationships
+5. Consider multiple contexts for the same set
 
-IFUNC(X, Y)(3) = 3 (maximum): T3(X) embeds in Y
-IFUNC(X, Y)(8) = 3 (also maximum): T8(X) embeds in Y
+## To Recognize:
+1. IFUNC maximum = card(X) indicates complete embedding of a transposed form
+2. Multiple maxima suggest multiple valid structural readings
 
-IFUNC(X, Z0) and IFUNC(Z3, Y) share maxima at i = 0, 5, 6, 11:
-This establishes a "proportion" - X:Z0 :: Z3:Y
-
-# Musical Context/Application
-The analysis shows:
-1. The lyric melody (X then Y) is the only melodic content in the piece
-2. T3 relationships connect Z0->Z3 and X->T3(X)-embedded-in-Y
-3. T8(X) = {E, F#, B} serves as registral/temporal boundary for Y
-4. The violin ostinato (Z forms) comments on the melody through interval-3 relationships
-
-Multiple valid hearings: Y can be articulated as:
-- Ornamented T3(X) (figure 5.2c)
-- Bounded by T8(X) (figure 5.4)
-- Related to Z3 expansion (figure 5.5e)
+# Context & Application
+The analysis is paradigmatic for Lewin's approach: IFUNC serves both as a "precision tool" and as an exploratory device, leading the analyst to discover relationships "our ears might not otherwise pick up quickly." Crucially, Lewin argues that multiple valid articulations of Y are not contradictory but reflect different listening environments. The pianist shapes the melody differently when attending to interval-3 versus interval-8 relationships.
 
 # Examples
-Figure 5.2(c): T3 relation between ordered X and ordered Y
-- Ab-Bb-Eb in X corresponds to B-C#-F# as "backbone" of Y
-- C# receives agogic accent in Y, analogous to Bb in X
+**Example 1** (pp. 121-123, Figure 5.2c): T_3(X) embedded in Y — ordered T_3(X) = {B, C#, F#} appears as every third note of ordered Y, with C# receiving an agogic accent analogous to Bb in X.
 
-Figure 5.4: T8(X) = {E, F#, B} as boundary frame
-- B = first and lowest note of Y
-- E = highest note of Y
-- F# = last note of Y
+**Example 2** (p. 126, Figure 5.4): T_8(X) = {E, F#, B} as boundary frame — B is first/lowest note, E is highest, F# is last note of Y.
 
-Figure 5.5(a-d): Interval mappings at i = 0, 5, 6, 11
-- X's "fourths" map to Z0's "fourths"
-- Z3's 3-5 trichords map to Y's boundary 3-5 trichords
+**Example 3** (pp. 127-128, Figures 5.5-5.6): Proportion at intervals 0, 5, 6, 11 — X's fourths map to Z_0's fourths, Z_3's 3-5 trichords map to Y's boundary trichords.
 
-# Related Concepts
-- IFUNC (Interval Function)
-- Set Embedding
-- Transposition Operations
-- Multiple Contexts for Set Articulation
+# Relationships
+## Builds Upon
+- **IFUNC** — Primary analytical tool
+
+## Enables
+- **INJ Function** — Lewin notes that IFUNC "cannot suggest" the inversional relation at Figure 5.7; the injection function is needed
+
+## Related
+- **IFUNC Probability** — "Scarce" versus "common" intervals provide analytical backdrop
+
+# Common Errors
+- **Error**: Assuming one articulation of Y must be "correct" and others "wrong"
+  **Correction**: Each articulation is valid in its specific intervallic/contextual environment
 
 # Common Confusions
-The analysis presents multiple valid articulations of Y in different contexts. These are not contradictory but reflect different listening environments. Y-following-X heard with sensitivity to interval 3 yields one articulation; sensitivity to interval 8 yields another. Both are analytically valid.
+- **Confusion**: Thinking maximum IFUNC values always indicate the most important relationship
+  **Clarification**: Sub-maximal but still prominent values (like the proportion at i=0,5,6,11) can reveal equally significant structures
 
 # Source Reference
-Chapter 5: Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions, Figures 5.2-5.7
+Chapter 5: Generalized Set Theory (1), Figures 5.2-5.7, pp. 121-131.
+
+# Verification Notes
+- Definition source: Synthesized from extended analytical discussion
+- Confidence rationale: High — detailed analysis with musical examples and figures
+- Re-extraction notes: Re-extracted from v2 card; preserved: IFUNC table values, three articulations of Y, Bushnell credit, proportion structure. Added v3.1 structure.

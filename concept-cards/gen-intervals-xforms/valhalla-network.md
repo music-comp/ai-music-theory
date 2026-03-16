@@ -1,57 +1,95 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Valhalla Network
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: valhalla-network
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: klang-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (2): Non-Intervallic Transformations"
 chapter_number: 8
 pdf_page: 206
-unit: null
-authors: David Lewin
+section: "8.1.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - klang-representation
+  - subm-transformation
+  - par-transformation
+  - non-intervallic-transformations
+extends: []
+related:
+  - tarnhelm-network
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Valhalla network?"
 ---
 
 # Quick Definition
-A Klang transformation network analyzing the first presentation of the Valhalla theme in Das Rheingold, scene 2, showing structural relations that visually manifest a connection with the Tarnhelm network.
+A Klang transformation network (Figure 8.2b) analyzing the first presentation of the Valhalla theme in Das Rheingold, scene 2, measures 1-20, revealing structural relations among principal Klangs that parallel the Tarnhelm network.
 
-# Formal Definition
-The Valhalla network (Figure 8.2b) analyzes measures 1-20 of Das Rheingold, scene 2:
-- Shows relations among principal Klangs
-- Events of measures 1-6 are in parentheses (contextual frame)
-- Focus is on the "modulating" portion from measure 7 onwards
+# Core Definition
+The Valhalla network "asserts the indicated relations among the principal Klangs over the first presentation of the Valhalla theme in Das Rheingold, during measures 1-20 of scene 2" (Lewin, 8.1.1, p. 178). The "modulating" part from measure 7 onwards is the focus; events of measures 1-6 are in parentheses. Like the Tarnhelm network, it uses SUBM and PAR, making it genuinely non-intervallic. "Graphs (a) and (b) make visually clear a strong functional relationship between the Tarnhelm progression and the modulating portion of the Valhalla theme" (p. 178).
 
-# Mathematical Formulation
-Network structure uses transformations:
-- SUBM (submediant transformation)
-- PAR (parallel transformation)
-- Possibly DOM and other Klang transformations
+# Prerequisites
+- **Klang representation** — Network operates on Klangs
+- **SUBM transformation** — Used in the network
+- **PAR transformation** — Used in the network
+- **Non-intervallic transformations** — The network is genuinely non-intervallic
 
-Like the Tarnhelm network, this is genuinely non-intervallic due to combining SUBM and PAR.
+# Key Properties
+1. Analyzes Das Rheingold, scene 2, mm. 1-20
+2. Focus is on the modulating portion from m. 7 onwards
+3. Events of mm. 1-6 are parenthetical (contextual frame)
+4. Uses SUBM and PAR (genuinely non-intervallic)
+5. Structurally parallel to the Tarnhelm network
 
-# Musical Context/Application
-The Valhalla network reveals:
-1. The harmonic logic of the Valhalla theme's modulations
-2. A "strong functional relationship" with the Tarnhelm progression
-3. This relationship is "difficult to express in words" but made visible by the graphs
+# Construction / Recognition
+## To Construct:
+1. Identify principal Klangs in the Valhalla theme's modulations
+2. Determine SUBM and PAR relationships
+3. Build the network showing functional connections
+## To Recognize:
+1. A Klang network for the Valhalla theme with structural parallels to the Tarnhelm network
 
-The connection between Tarnhelm and Valhalla has dramatic significance: the magic helmet is created by Mime in Nibelheim, but serves the gods' purposes through the Ring's curse.
+# Context & Application
+The Tarnhelm-Valhalla structural relationship has dramatic significance in the Ring cycle. The comparison demonstrates the power of non-intervallic Klang networks to reveal relationships "difficult to express in words."
 
 # Examples
-From Das Rheingold, scene 2, measures 1-20:
-- The Valhalla theme unfolds with characteristic harmonic progressions
-- The network captures the functional relationships among Klangs
-- Comparison with Figure 8.2(a) shows structural parallels with Tarnhelm
+**Example 1** (Figure 8.2b, p. 178): The Valhalla network showing modulating Klangs from m. 7 of Das Rheingold, scene 2.
 
-# Related Concepts
-- Tarnhelm Network
-- SUBM Transformation
-- PAR Transformation
-- Non-Intervallic Transformations
-- Klang Representation
+# Relationships
+## Builds Upon
+- **Non-intervallic transformations** — Demonstrates non-intervallic structure
+## Related
+- **Tarnhelm network** — "Strong functional relationship" visible through graph comparison
+
+# Common Errors
+- **Error**: Including mm. 1-6 as primary analytical content
+  **Correction**: Those measures are parenthetical context; the modulating portion from m. 7 is the focus
 
 # Common Confusions
-- The parenthetical measures (1-6) frame the analysis but are not the primary focus
-- The structural relationship with Tarnhelm is not about shared pitch content
-- Both networks are "non-intervallic" in the technical sense
-- The visual similarity of graphs reveals a functional similarity
+- **Confusion**: Thinking the structural parallel with Tarnhelm means shared pitch content
+  **Clarification**: The parallel is in graph structure (transformational relationships), not pitch content
 
 # Source Reference
-Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.1.1, Figure 8.2(b)
+Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.1.1, Figure 8.2(b), page 178.
+
+# Verification Notes
+- Definition source: Direct from 8.1.1
+- Confidence rationale: Explicitly discussed with figure
+- Re-extraction notes: Re-extracted from v2 card; preserved: measure numbers, parenthetical mm. 1-6, structural relationship

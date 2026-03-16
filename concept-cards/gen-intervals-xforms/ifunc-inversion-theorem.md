@@ -1,55 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: IFUNC Inversion Theorem
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: ifunc-inversion-theorem
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: interval-functions
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions"
 chapter_number: 5
 pdf_page: 119
-unit: null
-authors: David Lewin
+section: "5.1.7"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Theorem 5.1.7"
+  - IFUNC under inversion
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - ifunc
+  - inversion-operation
+  - ifunc-symmetry-theorem
+extends:
+  - ifunc
+related:
+  - ifunc-interval-preserving
+  - interval-reversing-operation
+contrasts_with:
+  - inj-function
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What happens to IFUNC when both sets are inverted in a commutative GIS?"
+  - "Why can't IFUNC fully engage inversional relationships?"
 ---
 
 # Quick Definition
-In a commutative GIS, when both sets are transformed by the same inversion operation, IFUNC exchanges the roles of the two sets.
+In a commutative GIS, when both sets are inverted by the same inversion operation I, IFUNC exchanges the roles of the two sets: IFUNC(I(X), I(Y)) = IFUNC(Y, X).
 
-# Formal Definition
-Theorem 5.1.7: If I is any inversion operation in a commutative GIS, then IFUNC(I(X), I(Y)) = IFUNC(Y, X).
+# Core Definition
+Theorem 5.1.7: "If I is any inversion operation in a commutative GIS, then IFUNC(I(X), I(Y)) = IFUNC(Y, X)" (Lewin, p. 132). The proof sketch notes that in a commutative GIS, inversions are interval-reversing operations (Theorem 3.6.3), and the theorem follows by techniques similar to Theorem 5.1.5. Lewin emphasizes that "there is not much to be said in general about the effect of applying an inversion operation to X, Y, or both, so far as IFUNC is concerned" in non-commutative settings.
 
-Note: This theorem specifically requires a commutative GIS. In non-commutative GIS structures, the relationship between IFUNC and inversion is more complex and is better handled through the Injection Function (Chapter 6).
+# Prerequisites
+- **IFUNC** — The function whose behavior under inversion is described
+- **Inversion Operation** — Must be in a commutative GIS for this theorem
+- **IFUNC Symmetry Theorem** — IFUNC(Y, X)(i) = IFUNC(X, Y)(i^{-1}), used implicitly
 
-# Mathematical Formulation
-Proof sketch: In a commutative GIS, inversions are interval-reversing operations (Theorem 3.6.3). That is:
-int(I(s), I(t)) = int(s, t)^-1 = int(t, s)
+# Key Properties
+1. Requires a commutative GIS — does not hold in general
+2. Inversion exchanges the roles of X and Y in IFUNC
+3. Combined with Theorem 5.1.4: IFUNC(I(X), I(Y))(i) = IFUNC(X, Y)(i^{-1})
+4. In non-commutative GIS, the relationship is more complex and better handled by INJ
 
-Using techniques similar to Theorem 5.1.5:
-- The pairs (s, t) with s in X, t in Y, int(s, t) = i
-- Correspond bijectively to pairs (I(s), I(t)) with I(s) in I(X), I(t) in I(Y), int(I(s), I(t)) = i^-1
+# Construction / Recognition
+## To Apply:
+1. Verify the GIS is commutative
+2. Apply inversion I to both sets
+3. IFUNC(I(X), I(Y)) = IFUNC(Y, X) — simply reverse the set arguments
 
-This gives: IFUNC(I(X), I(Y))(i) = IFUNC(X, Y)(i^-1) = IFUNC(Y, X)(i)
+## To Recognize:
+1. When inversionally related sets have IFUNC values that mirror each other
 
-The last equality uses Theorem 5.1.4.
-
-# Musical Context/Application
-This theorem explains why inversion "flips" intervallic relationships. If X tends to precede Y by ascending intervals, then I(X) will tend to precede I(Y) by descending intervals - which is equivalent to I(Y) preceding I(X) by ascending intervals.
+# Context & Application
+This theorem reveals a fundamental limitation of IFUNC: it cannot fully engage inversional relationships in non-commutative settings. Lewin uses this limitation to motivate the Injection Function (INJ) in Chapter 6, which can handle inversions and other non-operation transformations. Even within the passage from Webern's op. 7 no. 3, Lewin notes that IFUNC can identify T_3 and T_8 embeddings but "cannot suggest" inversional relations; the injection function is needed for that.
 
 # Examples
-In pitch-class space with X = {C, E} and Y = {G, B}:
-- IFUNC(X, Y)(7) = 2 (two perfect fifths from X to Y)
-- Apply I_0 (inversion around C): I_0(X) = {C, Ab}, I_0(Y) = {F, Eb}
-- IFUNC(Y, X)(7) = IFUNC(X, Y)(5) = 2 (two perfect fourths from Y to X)
-- IFUNC(I_0(X), I_0(Y))(7) = IFUNC(Y, X)(7) = 2
+**Example 1** (derived from p. 132): In pitch-class space with X = {C, E} and Y = {G, B}: Apply I_0 (inversion about C). IFUNC(I_0(X), I_0(Y)) = IFUNC(Y, X). The inversion swaps which set serves as "source" and "target."
 
-The inversion swaps which set is "source" and which is "target" in terms of intervallic direction.
+# Relationships
+## Builds Upon
+- **IFUNC** — Property of the interval function under inversion
+- **Interval-Reversing Operation** — Inversions reverse intervals in commutative GIS
 
-# Related Concepts
-- IFUNC (Interval Function)
-- Inversion Operations
-- Commutative GIS
-- INJ (Injection Function)
-- Interval-Reversing Operations
+## Enables
+- **INJ Function** — Lewin's motivation: IFUNC's limitations with inversion lead to INJ
+
+## Related
+- **IFUNC Interval-Preserving** — Analogous invariance theorem for P-operations
+
+## Contrasts With
+- **INJ Function** — INJ handles inversional relationships that IFUNC cannot
+
+# Common Errors
+- **Error**: Applying this theorem in a non-commutative GIS
+  **Correction**: The theorem requires commutativity; in non-commutative settings, use INJ
 
 # Common Confusions
-This theorem only holds in commutative GIS structures. For general questions about IFUNC and inversion in non-commutative settings, or for more refined analysis, the Injection Function (INJ) from Chapter 6 is more appropriate.
+- **Confusion**: Thinking IFUNC can capture all inversional set relationships
+  **Clarification**: IFUNC is fundamentally limited with respect to inversion, especially in non-commutative settings. This is a key motivation for developing INJ in Chapter 6.
 
 # Source Reference
-Chapter 5: Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions, Theorem 5.1.7
+Chapter 5: Generalized Set Theory (1), Theorem 5.1.7 and surrounding discussion, pp. 132-133.
+
+# Verification Notes
+- Definition source: Direct from Theorem 5.1.7
+- Confidence rationale: Explicit theorem with proof sketch in source
+- Re-extraction notes: Re-extracted from v2 card; preserved: pitch-class example, emphasis on commutative restriction, connection to INJ motivation. Added v3.1 structure.

@@ -1,81 +1,80 @@
 ---
-concept: "Developing Spectra (DVSP)"
-category: analysis
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+# === CORE IDENTIFICATION ===
+concept: Developing Spectra
+slug: developing-spectra
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: timbral-gis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "DVSP"
+  - "developing spectral pattern"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - timbral-gis
+  - direct-product-gis
+extends:
+  - direct-product-gis
+related: []
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a developing spectrum (DVSP)?"
+  - "How can timbral evolution be modeled using GIS?"
 ---
 
 # Quick Definition
-A Developing Spectrum (DVSP) is a set of spectrum-time pairs representing how a sound's timbral content evolves over time, analyzed using a direct-product GIS combining spectral and temporal dimensions.
+A Developing Spectrum (DVSP) is a set of spectrum-time pairs representing how a sound's timbral content evolves over time, analyzed using a direct-product GIS combining a timbral GIS (8 partials) with a time-point GIS.
 
-# Formal Definition
-Let GIS1 be a timbral GIS (spectra with 8 partials). Let GIS2 be a time-point GIS. The direct product GIS3 = GIS1 x GIS2 has elements (s, a) where s is a spectrum and a is a time-point.
+# Core Definition
+Let GIS_1 be a timbral GIS (spectra with 8 partials) and GIS_2 be a time-point GIS. The direct product GIS_3 = GIS_1 x GIS_2 has elements (s, a) where s is a spectrum and a is a time-point. A DVSP is an ordered collection {(s_1, a_1), ..., (s_N, a_N)} representing spectral snapshots at successive times. Arranged as an array (Figure 4.5), it approximates a continuous "relief map" characterizing a sound's developing spectral signature (Lewin, pp. 115-117).
 
-A DVSP is an ordered collection:
-DVSP = {(s1, a1), (s2, a2), ..., (sN, aN)}
+# Prerequisites
+- **Timbral GIS** — The spectral GIS component
+- **Direct-Product GIS** — DVSP lives in a direct product of spectral and temporal GIS
 
-representing spectral snapshots at successive time points.
-
-# Mathematical Formulation
-**GIS3 structure:**
-S3 = {(s, a) : s is spectrum, a is time-point}
-IVLS3 = IVLS1 x IVLS2 (direct product)
-int3((s, a), (t, b)) = (int1(s, t), int2(a, b))
-
-**Figure 4.5 (N = 5):**
-```
-         partial:  1      2      3    ...    8
-time a1:        s1(1)  s1(2)  s1(3)  ...  s1(8)
-time a2:        s2(1)  s2(2)  s2(3)  ...  s2(8)
-  ...
-time a5:        s5(1)  s5(2)  s5(3)  ...  s5(8)
-```
-
-This array approximates a continuous "relief map" of spectral evolution.
-
-# Musical Context/Application
-DVSP analysis captures how timbre develops over the duration of a sound:
-- Attack transients (rapid spectral change)
-- Steady state (stable spectrum)
-- Decay characteristics
-
-This is the basis of modern spectral analysis and synthesis, representing instrumental sounds as evolving spectra.
+# Key Properties
+1. Elements are (spectrum, time-point) pairs in a direct-product GIS
+2. Array representation: rows = time points, columns = partial numbers, entries = power values
+3. Approximates a continuous "relief map" of spectral evolution
+4. The unfolding interval vector of a DVSP tracks spectral-temporal interval accumulation
+5. Time points should be dense enough to catch salient spectral features
 
 # Examples
-**Instrumental tone analysis:**
-A violin note might have DVSP:
-- a1 (attack): strong high partials
-- a2-a4 (steady): characteristic partial pattern
-- a5 (decay): weakening higher partials
+**Example 1** (Figure 4.5): N = 5 snapshots of an 8-partial spectrum, forming a 5 x 8 array of power values that sketches the sound's timbral evolution.
 
-**Relief map visualization:**
-If we plot partial power as height above a plane with time on one axis and partial number on the other, we get a 3D "relief map" showing spectral evolution.
+**Example 2** (p. 116): "Lexicon of Analyzed Tones" (Moorer and Grey, Computer Music Journal) uses this representation for violin, clarinet, oboe, and trumpet tones.
 
-**Computer music applications:**
-The Lexicon of Analyzed Tones (Moorer and Grey) uses exactly this representation for violin, clarinet, oboe, and trumpet tones.
-
-**Interval analysis of DVSP:**
-The unfolding interval vector of a DVSP (as in the Webern analysis, section 3.3.1) tracks how spectral-temporal intervals accumulate as the sound develops.
-
-# Related Concepts
-- Timbral GIS
-- Direct-Product GIS
-- Time-Point GIS
-- Unfolding Interval Vector
-- Spectral Analysis
+# Relationships
+## Builds Upon
+- **Timbral GIS** — the spectral component
+- **Direct-Product GIS** — the construction method
 
 # Common Confusions
-1. **Discrete approximation:** DVSP is a finite set of snapshots, approximating continuous spectral evolution.
-
-2. **Choice of time points:** The ai should be dense enough to capture salient spectral changes (maxima, minima of partials).
-
-3. **Relation to additive synthesis:** DVSP is the analytic inverse of additive synthesis, which builds sounds from specified partial evolutions.
-
-4. **Direct-product structure:** DVSP lives in GIS1 x GIS2, combining spectral intervals with temporal intervals into compound intervals.
+- **Confusion**: Thinking DVSP captures all aspects of a sound
+  **Clarification**: DVSP captures only the developing spectral profile (partial powers over time), not pitch, loudness, or spatial position
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Figure 4.5 and discussion, pp. 115-117
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Figure 4.5 and discussion, pp. 115-117.
+
+# Verification Notes
+- Definition source: direct from Section 4.2
+- Confidence rationale: high — explicit construction with figure
+- Re-extraction notes: Re-extracted from v2 card; preserved: relief map interpretation, Moorer/Grey reference, unfolding interval vector connection

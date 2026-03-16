@@ -1,55 +1,103 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Generalizing Power of Transformational Theory
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: generalizing-power-of-transformational-theory
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: simply-transitive-groups
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (1): Intervals and Transpositions"
 chapter_number: 7
 pdf_page: 188
-unit: null
-authors: David Lewin
+section: "7.1.2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - simply-transitive-group
+  - intervals-as-transpositions
+  - transformational-attitude
+extends: []
+related:
+  - non-intervallic-transformations
+  - gis-from-simply-transitive-group
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Why is transformational theory more general than GIS theory?"
+  - "How does transformational theory subsume interval theory?"
 ---
 
 # Quick Definition
-The capacity of transformational theory to subsume GIS structure and simply transitive group theory within a broader framework, enabling us to view intervals-between-things and transpositional-relations-between-Gestalts as the same phenomenon manifested in different ways.
+The capacity of transformational theory to subsume GIS structure and simply transitive group theory within a broader framework, enabling intervals-between-things and transpositional-relations-between-Gestalts to be understood as the same phenomenon manifested in different ways.
 
-# Formal Definition
-Transformational theory generalizes in two key senses:
-1. It subsumes GIS structure as a special case (the case of simply transitive transformation groups)
-2. It extends to transformation groups that are not simply transitive, enabling analysis of situations that cannot be modeled by intervals alone
+# Core Definition
+"More significant than this dichotomy [between intervals and transpositions], I believe, is the generalizing power of the transformational attitude: It enables us to subsume the theory of GIS structure, along with the theory of simply transitive groups, into a broader theory of transformations. This enables us to consider intervals-between-things and transpositional-relations-between-Gestalts not as alternatives, but as the same phenomenon manifested in different ways" (Lewin, 7.1.2, p. 159).
 
-The generalization enables treating intervals and transpositions "not as alternatives, but as the same phenomenon manifested in different ways."
+# Prerequisites
+- **Simply transitive group** — GIS structure is equivalent to simply transitive group structure
+- **Intervals as transpositions** — The formal equivalence that transformational theory subsumes
+- **Transformational attitude** — The conceptual orientation that drives the generalization
 
-# Mathematical Formulation
-The chain of subsumption:
-- Intervals in a GIS <--> Transposition operations (via simply transitive theorem)
-- Transposition operations subset-of General transformations
-- General transformations include non-intervallic operations (inversions, Klang transformations, serial operations, etc.)
+# Key Properties
+1. GIS structure is a special case of transformational structure (the simply transitive case)
+2. Transformational theory extends to non-simply-transitive groups
+3. Intervals and transpositions become two aspects of one phenomenon
+4. Non-intervallic transformations (PAR, REL, LT, SLIDE, RICH, TCH) are naturally included
+5. The framework applies to any musical parameter, not just pitch
 
-# Musical Context/Application
-This generalizing power allows a single analytical framework to address:
-- Intervallic relations between individual pitches
-- Transpositional relations between motives or Gestalts
-- Non-intervallic relations (parallel/relative mode changes, serial operations)
-- Mixed situations where different transformation types interact
+# Construction / Recognition
+## To Construct:
+1. Identify the musical space and objects of interest
+2. Determine available transformations (may include both intervallic and non-intervallic)
+3. Build networks using whatever transformations best illuminate the music
+## To Recognize:
+1. When a single analytical framework addresses both intervallic and non-intervallic relationships
+2. When the same symbol or transformation label unifies different manifestations of one phenomenon
+
+# Context & Application
+The generalizing power is demonstrated throughout Chapters 7-8: Chapter 7 shows how intervals and transpositions are unified within simply transitive contexts; Chapter 8 extends to Klang transformations (DOM, MED, REL, PAR, LT, SLIDE) and serial transformations (RICH, TCH, MUCH, TLAST, TFIRST, FLIPEND, FLIPSTART) that go beyond any GIS framework.
 
 # Examples
-In Schoenberg's op. 19, no. 6 (Figure 7.1):
-- The chord "rh" displays intervals -5, -9, -14 between pitches
-- The falling-ninth motif transposes by T_-5, T_-9, T_-14
-- Both phenomena are manifestations of one underlying structure
-- The symbol "-5" legitimately means the same thing in both contexts
+**Example 1** (Figure 7.1, pp. 159-160): In Schoenberg's op. 19, no. 6, the symbols "-5" on the chord structure and "-5" on the transposition scheme point at "the same phenomenon, not at different phenomena."
 
-# Related Concepts
-- Intervals as Transpositions
-- Simply Transitive Group
-- GIS Structure
-- Transformation Networks
-- Non-Intervallic Transformations
+**Example 2** (Figures 8.2-8.3): Wagner's Tarnhelm and Valhalla networks use PAR and SUBM alongside DOM and MED, demonstrating transformations that "could not be conceived using only intervals-and-transpositions" (p. 178).
+
+# Relationships
+## Builds Upon
+- **Simply transitive group** — The special case that is subsumed
+- **Intervals as transpositions** — The equivalence that is generalized
+## Enables
+- **Non-intervallic transformations** — The broader framework naturally includes these
+## Related
+- **GIS from simply transitive group** — The construction that shows GIS as a special case
+
+# Common Errors
+- **Error**: Treating generalization as meaning the broader theory is always more useful
+  **Correction**: For specific analyses, the narrower GIS framework may be more illuminating
 
 # Common Confusions
-- Generalization does not mean abandoning intervals; it means showing their place in a larger framework
-- The "same phenomenon" claim is formal/structural, not claiming identical perceptual experiences
-- Generalizing power does not imply that the broader theory is always more useful for a specific analysis
+- **Confusion**: Believing generalization means abandoning intervals
+  **Clarification**: Intervals are retained as a special case; they are shown to have a place in a larger framework
+- **Confusion**: Thinking the "same phenomenon" claim is about identical perception
+  **Clarification**: The claim is formal/structural; perceptual experiences may differ while the underlying structure is one
 
 # Source Reference
-Chapter 7: Transformation Graphs and Networks (1): Intervals and Transpositions, Section 7.1.2
+Chapter 7: Transformation Graphs and Networks (1): Intervals and Transpositions, Section 7.1.2, page 159.
+
+# Verification Notes
+- Definition source: Direct quotation from 7.1.2
+- Confidence rationale: Explicit statement of the concept's significance
+- Re-extraction notes: Re-extracted from v2 card; preserved: core quotation, subsumption chain, Schoenberg example

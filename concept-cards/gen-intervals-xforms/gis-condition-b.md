@@ -1,50 +1,112 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: GIS Condition B
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: gis-condition-b
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: core-definitions
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (1): Preliminary Examples and Definition"
 chapter_number: 2
 pdf_page: 47
-unit: null
-authors: David Lewin
+section: "2.3.1(B)"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - space completeness condition
+  - existence and uniqueness condition
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - generalized-interval-system
+  - group
+extends: []
+related:
+  - gis-condition-a
+  - additive-duration-space
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a Generalized Interval System (GIS)?"
+  - "How does the interval function int relate to the group IVLS?"
 ---
 
 # Quick Definition
-Condition (B) states that for any starting element s and any interval i, there exists a unique element t such that int(s, t) = i - the space is "complete" and intervals act freely.
 
-# Formal Definition
-For every s in S and every i in IVLS, there is a unique t in S which lies the interval i from s, that is, a unique t which satisfies int(s, t) = i. This guarantees that the space S is large enough to contain all theoretically conceivable elements.
+Condition (B) states that for any starting element s and any interval i, there exists a unique element t such that int(s, t) = i -- the space is "complete" and intervals act freely.
 
-# Mathematical Formulation
-- For all s in S and i in IVLS: exists unique t in S with int(s, t) = i
-- This defines a simply transitive group action of IVLS on S
-- For fixed s, the map i -> t (where int(s, t) = i) is a bijection from IVLS to S
-- |S| = |IVLS| (they have the same cardinality)
+# Core Definition
 
-# Musical Context/Application
-Condition (B) ensures the musical space is theoretically complete. If we can conceive of an interval i and a starting point s, we must be able to conceive of a point t lying that interval away. This may require extending practical spaces: chromatic pitch space must include supersonic and subsonic "pitches" to satisfy Condition (B). Figure 2.2 (harmonic space) extends infinitely to accommodate all conceivable dominant/mediant relationships.
+"For every s in S and every i in IVLS, there is a unique t in S which lies the interval i from s, that is a unique t which satisfies the equation int(s, t) = i" (Lewin, Definition 2.3.1(B), p. 52). This guarantees that S is large enough to contain all theoretically conceivable elements. It also establishes a bijection between IVLS and S (for any fixed s), so |S| = |IVLS|.
+
+# Prerequisites
+
+- **Generalized Interval System** — Condition (B) is part of the GIS definition
+- **Group** — IVLS must be a group for Condition (B) to make sense
+
+# Key Properties
+
+1. For all s in S and i in IVLS: exists unique t with int(s, t) = i
+2. Requires BOTH existence AND uniqueness
+3. Establishes a bijection from IVLS to S (for fixed s)
+4. |S| = |IVLS| (same cardinality)
+5. "Weak B" (existence without uniqueness) leads to equivalence classes
+
+# Construction / Recognition
+
+## To Verify:
+1. For each s in S and each i in IVLS, check that some t exists with int(s, t) = i
+2. Check that this t is unique
+
+# Context & Application
+
+Condition (B) forces the space S to be "theoretically complete." This may require extending practical spaces: chromatic pitch space must include supersonic and subsonic "pitches," Figure 2.2 extends infinitely, and time-point space extends indefinitely past and future. Lewin emphasizes: "We must conceive the formal space of a GIS as a space of theoretical potentialities, rather than as a compendium of musical practicalities."
 
 # Examples
-From Section 2.4: Example 2.2.5 (durations under subtraction) does NOT satisfy Condition (B). If s = 3 units and i = -8 units, there is no duration t with int(s, t) = i, since that would require t = -5 units (negative duration is meaningless).
 
-Pitch-class space satisfies Condition (B): For any pitch class s and any interval i (0-11), there is exactly one pitch class t with int(s, t) = i.
+**Example 1** (p. 56): Example 2.2.5 (additive durations) FAILS Condition (B). For s = 3 units and i = -8, no duration t satisfies int(s, t) = -8, since t = -5 units is not a duration.
 
-Time-point space requires extension: S must include time points indefinitely far in the past and future.
+**Example 2**: Pitch-class space SATISFIES Condition (B): for any pitch class s and any i in {0,...,11}, exactly one pitch class t has int(s, t) = i.
 
-Harmonic space (Figure 2.2): The map extends infinitely in all directions to satisfy Condition (B) - every dominant/mediant combination must be reachable.
+**Example 3** (p. 52): Harmonic space (Figure 2.2) extends infinitely to satisfy Condition (B) -- every dominant/mediant combination must be reachable from every starting point.
 
-# Related Concepts
-- Generalized Interval System
-- Interval Function int
-- GIS Condition A
-- Simply Transitive Action
-- Theoretical vs. Practical Space
+**Example 4** (p. 53): "Weak B" discussion: replacing "unique" with "some" leads to equivalence classes. The quotient S/EQUIV then forms a GIS.
+
+# Relationships
+
+## Builds Upon
+- **Group** — the interval group whose elements must all be realizable
+
+## Related
+- **GIS Condition A** — the other GIS condition
+- **Additive Duration Space** — the key example where Condition (B) fails
+
+# Common Errors
+
+- **Error**: Checking only existence without checking uniqueness.
+  **Correction**: Condition (B) requires BOTH: there must be a t, and it must be the only such t.
 
 # Common Confusions
-- Condition (B) requires BOTH existence AND uniqueness of t
-- "Weak B" (existence without uniqueness) leads to equivalence classes, not a full GIS
-- Practical musical contexts often use only a portion of the theoretically complete space S
-- Condition (B) is why some intuitive spaces (like durations) don't form GIS directly
+
+- **Confusion**: Thinking Condition (B) failure means the musical space is "wrong."
+  **Clarification**: It means the space as defined cannot support a GIS structure. Modular reduction (as in Example 2.2.6) or space extension may provide a remedy.
 
 # Source Reference
-Chapter 2: Generalized Interval Systems (1): Preliminary Examples and Definition, Definition 2.3.1(B), discussion at end of 2.4
+
+Chapter 2: Generalized Interval Systems (1): Preliminary Examples and Definition, Definition 2.3.1(B), discussion pp. 52-53, 56.
+
+# Verification Notes
+
+- Definition source: direct from Definition 2.3.1(B)
+- Confidence rationale: explicit condition with extended discussion of its meaning and failure cases
+- Re-extracted from v2 card; preserved: additive duration failure example, "weak B" discussion, "theoretical potentialities" quote

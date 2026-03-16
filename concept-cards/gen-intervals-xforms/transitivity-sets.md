@@ -1,66 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Transitivity Sets
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: transitivity-sets
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: injection-function
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - orbits under an operation
+  - I-partnerships
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-function
+  - inversion-operation
+extends: []
+related:
+  - angst-hoffen-analysis
+  - internal-transformation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are transitivity sets and how do they reveal operation structure?"
 ---
 
 # Quick Definition
-Transitivity sets partition S into orbits under an operation, grouping elements that transform among themselves - useful for tracking "partnerships" under inversion or other operations.
+Transitivity sets partition S into orbits under an operation, grouping elements that transform among themselves. For inversions, they reveal "partnerships" — pairs of pitch classes that map to each other.
 
-# Formal Definition
-Given an operation OP on S, a transitivity set is a minimal non-empty subset T of S such that OP maps T into itself. The operation OP permutes the elements of T among themselves.
+# Core Definition
+Given an operation OP on S, a transitivity set is a minimal non-empty subset T such that OP maps T into itself (Lewin, pp. 160-161). For inversion I = I_E^{Bb}: singletons {E} and {Bb} (fixed points); pairs {A, B}, {Ab, C}, {G, C#}, {Gb, D}, {F, Eb} (partnerships). Chords that embed entire transitivity sets have special structural significance. When I and w^E commute, w^E maps I-partnerships to I-partnerships as units.
 
-For inversion I about axis u:
-- {u} is a transitivity set (u maps to itself)
-- For v != u with I(v) != v, {v, I(v)} is a transitivity set (a "partnership")
+# Prerequisites
+- **INJ Function** — Transitivity sets are used within INJ analysis
+- **Inversion Operation** — Most common application is to inversion partnerships
 
-# Mathematical Formulation
-The transitivity sets of OP partition S:
-- Every element belongs to exactly one transitivity set
-- OP(T) = T for each transitivity set T
-- T is minimal: no proper non-empty subset T' of T has OP(T') = T'
+# Key Properties
+1. Transitivity sets of OP partition S completely
+2. OP(T) = T for each transitivity set T
+3. T is minimal: no proper subset is also OP-invariant
+4. For inversions: fixed points are singletons; all others are 2-element partnerships
+5. When two operations commute, one maps transitivity sets of the other to themselves
 
-For I = I_E^Bb (inversion about E and Bb) on pitch classes:
-- {E} - singleton (E maps to E)
-- {Bb} - singleton (Bb maps to Bb)
-- {Eb, F} - partnership
-- {D, F#} - partnership
-- {C#, G} - partnership
-- {C, Ab} - partnership
-- {B, A} - partnership
+# Construction / Recognition
+## To Construct:
+1. Given operation OP, compute OP(s) for each s in S
+2. Group elements into orbits: {s, OP(s), OP^2(s), ...}
+3. Each orbit is a transitivity set
 
-# Musical Context/Application
-Transitivity sets reveal the "structure" of an operation. For inversions, they show which notes are partners. When analyzing progressions, we can track how entire transitivity sets (partnerships) transform under other operations like wedges.
+## To Recognize:
+1. Pairs (or singletons) of elements that are exchanged (or fixed) by an operation
+
+# Context & Application
+In "Angst und Hoffen," tracking I-partnerships reveals that entire partnerships wedge together (e.g., (Ab, C) -> (G, C#) under w^E). The "missing F" breaks the (F, Eb) partnership, leaving Eb "bereft of its I-partner." This connects the formal structure to the text about the absent lover.
 
 # Examples
-From "Angst und Hoffen" (Figure 6.3):
+**Example 1** (pp. 160-161): I = I_E^{Bb} partitions pitch classes into: {Bb}, {A,B}, {Ab,C}, {G,C#}, {Gb,D}, {F,Eb}, {E}. The Angst chord {Gb, Bb, D} embeds the partnership {Gb, D} and the singleton {Bb}. The Seufzer chord embeds two full partnerships.
 
-I = I_E^Bb partitions pitch classes into transitivity sets:
-- (Bb): fixed
-- (A, B): partnership
-- (Ab, C): partnership
-- (G, C#): partnership
-- (Gb, D): partnership
-- (F, Eb): partnership
-- (E): fixed
+# Relationships
+## Builds Upon
+- **Inversion Operation** — Most common source of transitivity sets
 
-Analysis insight: In the chord progression, we can track whether entire I-partnerships are preserved or broken. When Fb appears instead of F, the partnership (F, Eb) is broken - Eb is "bereft of its I-partner."
+## Enables
+- **Angst und Hoffen Analysis** — I-partnerships track through the harmonic progression
 
-The wedge w^E and inversion I commute. This means w^E maps I-partnerships to I-partnerships. Figure 6.3(b) shows entire partnerships wedging together: (Ab, C) wedges to (G, C#) in the Z1->Z2 progression.
+## Related
+- **Internal Transformation** — Internal transformations preserve transitivity-set structure
 
-# Related Concepts
-- Inversion Operations
-- INJ (Injection Function)
-- Operation Orbits
-- Partnership (Inversional)
+# Common Errors
+- **Error**: Thinking transitivity sets are fixed for all operations
+  **Correction**: Each operation has its own transitivity sets
 
 # Common Confusions
-Transitivity sets are specific to an operation. The same pitch class may belong to different transitivity sets for different operations. The term "transitivity" comes from group theory, where it describes how a group action partitions a set into orbits.
+- **Confusion**: Thinking transitivity sets are the same as set classes
+  **Clarification**: Transitivity sets partition the space S (elements), not sets; set classes partition the collection of subsets
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, discussion following Figure 6.3
+Chapter 6: Generalized Set Theory (2), discussion following Figure 6.3, pp. 160-161.
+
+# Verification Notes
+- Definition source: Synthesized from discussion in context of Angst und Hoffen analysis
+- Confidence rationale: Clear definition with detailed analytical application
+- Re-extraction notes: Re-extracted from v2 card; preserved: I_E^Bb partition, partnership tracking, "bereft" language. Added v3.1 structure.

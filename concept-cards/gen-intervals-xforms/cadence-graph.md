@@ -1,57 +1,94 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: CADENCE Graph
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: cadence-graph
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: simply-transitive-groups
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (1): Intervals and Transpositions"
 chapter_number: 7
 pdf_page: 188
-unit: null
-authors: David Lewin
+section: "7.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - normative-network
+  - fundamental-bass-intervals
+extends: []
+related:
+  - beethoven-symphony-no-1-analysis
+  - abstract-gesture
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a CADENCE graph in Lewin's analysis?"
 ---
 
 # Quick Definition
-A graph structure representing the intervallic/transformational pattern of a V-I cadential progression, used as a building block for analyzing larger harmonic networks.
+An intervallic graph (Figure 7.10) modeling a V-I cadential relationship as a basic structural unit, used to analyze how normative networks can be read as balanced structures of paired cadences.
 
-# Formal Definition
-The CADENCE graph (Figure 7.10) is a node/arrow configuration representing:
-- A dominant-to-tonic progression
-- Specifically: subdominant of tonic, tonic, dominant of tonic
-- With appropriate fundamental bass intervals labeling the arrows
+# Core Definition
+The CADENCE graph is an intervallic structure constructed to analyze the cadential balance in the normative network of Figure 7.9. It formats a dominant-tonic pair as a basic unit that can be identified at multiple levels of the analysis. The normative network (without its A-minor tail) can be understood as two CADENCEs elided, with the right side of the first sharing the left side of the second (Figure 7.11). The local tonics extracted from these CADENCEs themselves fill another CADENCE graph (Figure 7.12) (Lewin, 7.4, pp. 171-173).
 
-The graph can be applied (filled with specific harmonies) to analyze cadential structures at various levels.
+# Prerequisites
+- **Normative network** — The CADENCE graph is used to analyze normative networks
+- **Fundamental bass intervals** — The arrows represent fundamental bass ratios
 
-# Mathematical Formulation
-CADENCE as displayed in Figure 7.10:
-- Three nodes in triangular arrangement
-- Arrows connect subdominant to tonic and tonic to dominant
-- Arrow labels are fundamental bass ratios (2/3, 3/4, etc.)
+# Key Properties
+1. Models a V-I cadential relationship as a basic graph structure
+2. Can be identified as a subgraph within larger normative networks
+3. The normative network (without tail) contracts from two elided CADENCEs (Figure 7.11)
+4. The direction of arrows (left/right) represents musical chronology, not graph structure per se
+5. CADENCE can be identified at multiple structural levels (roots, tonics)
 
-The graph's visual orientation (arrows pointing left or right) can represent musical chronology, but the graph as configuration knows no inherent direction.
+# Construction / Recognition
+## To Construct:
+1. Identify a dominant-tonic pair in a root progression
+2. Represent as a graph with two nodes and a labeled arrow (ratio 2/3)
+## To Recognize:
+1. A subnetwork showing a V-I relationship within a larger harmonic graph
+2. Repeated CADENCE patterns indicating balanced structure
 
-# Musical Context/Application
-CADENCE serves as an analytical primitive for building larger harmonic networks. In the Beethoven analysis (Figure 7.9), the normative network without tail can be understood as two CADENCE graphs elided (Figure 7.11). This reveals the "balanced" structure of the Minuet's harmonic organization.
+# Context & Application
+The CADENCE graph enables hearing the Minuet's harmonic structure as "balanced" -- two paired CADENCEs -- in contrast to the Adagio's "progressive" chain of V-I cadences along the circle of fifths. The repeated G-C progression in the Minuet (bracketed on Figure 7.8a) projects the elided G-C of Figure 7.11.
 
 # Examples
-From Beethoven Symphony No. 1 analysis:
-- Figure 7.10: Abstract CADENCE graph
-- Figure 7.11: Normative network as two elided CADENCEs
-- Left CADENCE: C-F; G-C
-- Right CADENCE: G-C; D-G
-- The elision occurs at the shared G-C
+**Example 1** (Figures 7.10-7.12, pp. 171-173): The normative network is read as two CADENCEs: C-F; G-C and G-C; D-G, elided at the shared G-C. The tonics (F, C, G) from these CADENCEs form yet another CADENCE graph (Figure 7.12), now "backwards" (dominants following tonics).
 
-Figure 7.12: The tonics alone (F, C, G) form yet another CADENCE pattern.
+# Relationships
+## Builds Upon
+- **Normative network** — CADENCE is a substructure within the normative network
+## Enables
+- **Beethoven Symphony No. 1 analysis** — The balanced reading of the Minuet
+## Related
+- **Abstract gesture** — CADENCE is itself a small abstract gesture
 
-# Related Concepts
-- Beethoven Symphony No. 1 Analysis
-- Fundamental Bass Theory
-- Elision in Harmonic Structure
-- Transformation Networks
+# Common Errors
+- **Error**: Confusing left/right visual orientation with fixed graph structure
+  **Correction**: "The CADENCE graph, as a configuration of nodes and labeled arrows, knows no 'right' and 'left'" (p. 172); these represent chronology, not structure
 
 # Common Confusions
-- The graph itself is abstract; left-right orientation represents chronology, not graph structure
-- A dominant can precede its tonic (right-pointing) or follow and inflect it (left-pointing)
-- The CADENCE graph is not the same as a cadential progression in performance
-- Multiple applications of CADENCE can nest or elide within larger structures
+- **Confusion**: Assuming dominant must precede tonic in a CADENCE graph
+  **Clarification**: The graph structure is abstract; chronological order is an interpretation, not a structural feature
 
 # Source Reference
-Chapter 7: Transformation Graphs and Networks (1): Intervals and Transpositions, Section 7.4, Figures 7.10-7.12
+Chapter 7: Transformation Graphs and Networks (1): Intervals and Transpositions, Section 7.4, Figures 7.10-7.12, pages 171-173.
+
+# Verification Notes
+- Definition source: Direct from Figures 7.10-7.12 and discussion
+- Confidence rationale: Explicitly constructed and named in source
+- Re-extraction notes: Re-extracted from v2 card; preserved: elision analysis, direction independence of graph structure

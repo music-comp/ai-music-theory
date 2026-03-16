@@ -1,64 +1,94 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Isographic Relationships
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
-chapter_number: 10
-pdf_page: 251
-unit: null
+slug: isographic-relationships
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: non-intervallic-transformations
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
 authors: David Lewin
+chapter: "Transformation Graphs and Networks (2): Non-Intervallic Transformations"
+chapter_number: 8
+pdf_page: 206
+section: "8.2.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - isography
+extends:
+  - isography
+related:
+  - wagner-parsifal-zauber-motive-analysis
+  - webern-piano-variations-analysis
+  - fate-prime-motive
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do isographic relationships reveal cross-compositional structural connections?"
 ---
 
 # Quick Definition
-Two networks are isographic when they share the same abstract graph structure (nodes and labeled arrows) while containing different musical content at corresponding nodes.
+Specific instances of isography between transformation networks from different composers, styles, or structural levels, demonstrating how the same transformational gesture can underlie vastly different musical surfaces.
 
-# Formal Definition
-Networks N1 and N2 are isographic if there exists a bijection between their nodes that preserves the graph structure: corresponding arrows have the same transformation labels, and the directional relationships between nodes are maintained. Isographic networks reveal structural parallelism between different musical passages or dimensions.
+# Core Definition
+Isographic relationships are concrete analytical observations where two or more networks share the same graph structure (are isographic). Key examples include: Wagner's Parsifal Z-form network (Figure 8.3) is isographic to Webern's op. 27 row-form network (Figure 8.4b); the FATE' bass-line chain (Figure 8.8) is isographic to the FATE bass-line chain (Figure 8.6). These relationships "enable us to hear a way in which" different passages "project the same overall transformational gesture" (Lewin, 8.2.6, p. 186).
 
-# Mathematical Formulation
-Networks N1 = (S1, G, f1) and N2 = (S2, G, f2) are isographic when:
-- They share the same graph G (nodes and arrows)
-- The node-labeling functions f1 and f2 may differ
-- All corresponding arrows carry the same transformation labels
+# Prerequisites
+- **Isography** — The formal concept underlying these relationships
 
-Notation: N1 ~ N2 (isographic)
+# Key Properties
+1. Cross-compositional: Wagner-Webern isography spans styles and centuries
+2. Within-work: FATE-FATE' isography operates within Die Walkure
+3. Cross-level: IPAIR operates at pitch, row, and formal levels in op. 27
+4. Preserved by series-dependent labels (TCH, RICH) but destroyed by specific numbers (T_i)
+5. Reveal deep structural unity despite surface diversity
 
-Properties:
-- Isography is an equivalence relation (reflexive, symmetric, transitive)
-- Isographic networks may contain different pitch/duration content
-- The transformation group determines available isographies
+# Construction / Recognition
+## To Construct:
+1. Analyze passages using series-dependent transformation labels
+2. Compare graph structures across works, passages, or levels
+## To Recognize:
+1. Same pattern of transformation labels and arrow configurations in different contexts
 
-# Musical Context/Application
-Isographic relationships reveal deep structural connections between passages that may sound quite different on the surface. Two isographic networks undergo the same sequence of transformations, suggesting compositional intention to create parallel structures at different pitch levels, different registers, or in different musical dimensions.
+# Context & Application
+Isographic relationships are among the most powerful analytical results of transformational theory, showing that formal structural unity can exist across vast differences in style, period, and musical surface.
 
 # Examples
-**Bartok "Syncopation" (Figure 10.6):**
-The triple proportion manifests as isography between left and right sides of the network:
-- Left side: C#-D#-F# to F#-G#-B via RICH
-- Right side: G#-A#-C# to C#-D#-F# via RICH
-"The triple proportion also involves an isography of the left side, on figure 10.6, with the right side, on the same figure."
+**Example 1** (Figures 8.3-8.4, p. 182): Wagner's Parsifal (RICH/TCH with TCH=10) isographic to Webern's op. 27 (RICH/TCH with TCH=3).
 
-**Prokofieff Melodies (Figure 10.9):**
-The network of inversion operations (Figure 10.9a) is isographic to the bass accompaniment figure (Figure 10.9b):
-- 10.9(a): I_G -> I_{F#/G} -> I_{F#} with T_11 arrows
-- 10.9(b): G -> F# -> F (accompaniment of measure 1)
-"The network implied by figure 10.9(b) is isographic to the network of figure 10.9(a)."
+**Example 2** (Figures 8.6, 8.8, p. 186): FATE chain (TCH=2) isographic to FATE' chain (TCH=3), both with four TCH-sequences.
 
-**CHR networks in "Reflets":**
-The CHR network of measure 10 is "isographic to the network of measure 9 in the accompaniment." Both project chromatic semitone motion, though at different pitch levels (related by T).
+# Relationships
+## Builds Upon
+- **Isography** — The formal concept
+## Related
+- **Wagner Parsifal Zauber motive analysis** — One side of the Wagner-Webern isography
+- **Webern Piano Variations analysis** — Other side of the Wagner-Webern isography
 
-**Product networks:**
-Figure 10.16 adjoins two isographic networks (melody and bass), both sharing the 3-5 graph structure while containing different Y-forms.
-
-# Related Concepts
-- Network Isomorphism
-- Triple Proportion
-- Product Networks
-- Transformation Graphs
-- CHR Networks
+# Common Errors
+- **Error**: Using specific transposition numbers when comparing networks
+  **Correction**: Series-dependent labels (TCH) preserve isography; T_i labels destroy it
 
 # Common Confusions
-Isography is not the same as isomorphism. Two isographic networks have the same graph structure but need not be related by a transposition or other bijective transformation of their contents. Networks containing completely different set classes can be isographic if they undergo the same sequence of transformations.
+- **Confusion**: Thinking isographic passages must be stylistically related
+  **Clarification**: Isography is formal/structural; Wagner and Webern share graph structure despite radically different styles
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figures 10.6, 10.9, 10.16
+Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Sections 8.2.4 and 8.2.6, pages 182, 186.
+
+# Verification Notes
+- Definition source: Synthesized from multiple examples in Ch. 8
+- Confidence rationale: Multiple explicit examples with clear claims
+- Re-extraction notes: Re-extracted from v2 card; preserved: Wagner-Webern and FATE-FATE' examples

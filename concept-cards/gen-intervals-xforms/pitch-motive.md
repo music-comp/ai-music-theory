@@ -1,54 +1,102 @@
 ---
-concept: "Pitch Motive (PM)"
-category: analysis
-source: Generalized Musical Intervals and Transformations
+# === CORE IDENTIFICATION ===
+concept: Pitch Motive
+slug: pitch-motive
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: motivic-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "PM"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - rich-transformation
+  - tch-transformation
+extends: []
+related:
+  - durational-motive
+  - mozart-k550-development-analysis
+  - ri-chaining
+contrasts_with:
+  - durational-motive
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a pitch motive in Lewin's transformational analysis?"
+  - "How does RICH operate on pitch motives?"
 ---
 
 # Quick Definition
-A pitch motive (PM) is a specific recurring pitch pattern that undergoes transformations throughout a musical work, serving as a fundamental unit of motivic analysis.
+A pitch motive (PM) is a specific recurring pitch pattern -- an operand of transformational operations such as RICH and TCH -- that serves as a fundamental unit of motivic analysis within transformation networks.
 
-# Formal Definition
-In the context of transformation networks, a pitch motive is a fixed sequence of pitches that can be subjected to serial transformations such as transposition (T), inversion (I), retrograde (R), and retrograde-inversion (RI). The pitch motive maintains its intervallic identity under these transformations while appearing in different pitch-class contexts.
+# Core Definition
+In the context of Lewin's transformational analysis, a pitch motive is a fixed sequence of pitches subjected to serial transformations including transposition, inversion, retrograde, and retrograde-inversion (RICH). The PM maintains its intervallic identity under transformation while appearing in different pitch-class contexts. RICH chains PM-forms in sequence; TCH measures the transposition interval between successive forms (Lewin, Section 10.1, pp. 251-253).
 
-# Mathematical Formulation
-For a pitch motive PM consisting of pitches (p1, p2, p3), transformations operate as:
-- T_n(PM) = (p1 + n, p2 + n, p3 + n)
-- I_n(PM) = (n - p1, n - p2, n - p3)
-- R(PM) = (p3, p2, p1)
-- RICH(PM) = retrograde-inversion chain transformation
+# Prerequisites
+- **RICH transformation** — the primary chaining operation on PM
+- **TCH transformation** — measures distance between successive PM forms
 
-The TCH (transposition-chain) interval measures the intervallic distance between successive RICH-transformed forms.
+# Key Properties
+1. PM is an operand for RICH, TCH, and other serial transformations
+2. PM maintains intervallic identity across transformations
+3. RICH-chaining produces a sequence of PM-forms
+4. TCH interval measures the transposition between adjacent forms
+5. PM is paired with DM (durational motive) in the Mozart analysis
 
-# Musical Context/Application
-Pitch motives function as the primary melodic building blocks in transformational analysis. They allow analysts to trace how a composer develops and transforms a basic musical idea throughout a composition. The PM concept is particularly useful in analyzing development sections where motivic transformation is paramount.
+# Construction / Recognition
+## To Construct:
+1. Identify a recurring pitch pattern in the music
+2. Describe it by its intervallic content
+3. Trace its transformations through RICH, TCH, etc.
+## To Recognize:
+1. Look for recurring intervallic patterns subjected to serial transformations
+2. Identify RICH-chaining: the end of one form overlaps the beginning of the next
+
+# Context & Application
+Pitch motives are the primary melodic building blocks in Lewin's transformational analyses. They allow tracing how a composer develops a basic idea throughout a composition, particularly in development sections where motivic transformation is paramount.
 
 # Examples
-In the development section of Mozart's Symphony No. 40, K.550, last movement (measures 127-133), Lewin identifies a pitch motive PM comprising "a diminished fourth up followed by a diminished seventh down." The PM-forms chain as follows:
-- (E-Ab-B)
-- (Ab-B-Eb)
-- (B-Eb-F#)
-- (Eb-F#-Bb)
-- (F#-Bb-C#)
-- (Bb-C#-F)
-- (C#-F-G#)
+**Example 1** (Figure 10.1, pp. 251-253): In Mozart K.550 (last movement, measures 127-133), PM comprises "a diminished fourth up followed by a diminished seventh down." The PM-forms chain via RICH with TCH interval of falling fourth: (E-Ab-B), (Ab-B-Eb), (B-Eb-F#), (Eb-F#-Bb), (F#-Bb-C#), (Bb-C#-F), (C#-F-G#).
 
-The TCH (transposition-chain) interval between successive forms is a falling fourth.
+# Relationships
+## Builds Upon
+- **RICH transformation** — chains PM-forms
+- **TCH transformation** — measures inter-form transposition
+## Related
+- **Durational motive** — the rhythmic counterpart to PM
+- **Mozart K.550 development analysis** — the primary analytical context
+- **RI-chaining** — the general technique PM exemplifies
+## Contrasts With
+- **Durational motive** — PM operates on pitch; DM operates on durations
 
-# Related Concepts
-- Durational Motive (DM)
-- RICH-Relations in Rhythm
-- RI-Chain
-- Transformation Networks
-- TCH (Transposition Chain)
-- Serial Transformations
+# Common Errors
+- **Error**: Treating PM as merely a memorable melodic fragment
+  **Correction**: PM is specifically a transformational operand, analyzed for its behavior under RICH, TCH, and other operations
 
 # Common Confusions
-Students sometimes confuse pitch motives with general melodic motives. A pitch motive in Lewin's sense is specifically a sequence of pitches analyzed through the lens of transformational theory, not merely a memorable tune fragment. The PM must be understood as an operand that transformations act upon, not simply a thematic element.
+- **Confusion**: Confusing PM with a theme or subject
+  **Clarification**: PM is a precise intervallic pattern, not necessarily a complete musical phrase; it is defined by its transformation-theoretic role
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figure 10.1 and surrounding discussion
+Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Section 10.1, pp. 251-253. See Figure 10.1.
+
+# Verification Notes
+- Definition source: direct from Section 10.1 discussion
+- Confidence rationale: high -- explicitly named and analyzed in detail
+- Re-extracted from v2 card; preserved: PM chain forms, TCH interval specification

@@ -1,73 +1,70 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Referential Zero Time-Point
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+slug: referential-zero-time-point
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: rhythmic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "time-point zero"
+  - "zero time-point problem"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - time-span
+extends: []
+related:
+  - referential-time-unit-problem
+  - time-span-interval-independence
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the referential zero time-point problem?"
 ---
 
 # Quick Definition
-The referential zero time-point is the implicit moment from which attack times are measured. Like the time-unit, no such moment has privileged status. The time-span GIS is designed to be independent of this choice.
+The referential zero time-point problem asks: what is the abstractly privileged moment from which we measure the attack time a of a time span (a, x)? Both GIS 4.1.2 and GIS 4.1.3 are independent of this choice (Property A of Theorem 4.1.4).
 
-# Formal Definition
-When we write time span (a, x), the number a measures units after an implicit "time-point zero." What is this moment?
+# Core Definition
+The number a in a time span (a, x) is measured relative to some "time-point zero." Lewin asks what this privileged moment is: the Big Bang? A notational convention (first barline)? Some contextual downbeat? Unlike the time-unit problem, the zero-point problem affects both commutative and non-commutative GIS equally — both have Property (A): shifting zero by h units transforms (a, x) to (a+h, x) without changing intervals (Lewin, pp. 95-96).
 
-Possible answers and their problems:
-- The Big Bang / Biblical Creation: scientifically/philosophically contentious
-- "A very long time ago": arbitrary
-- The first barline of the piece: notation-dependent
-- The first sound: may not be analytically privileged
+# Prerequisites
+- **Time Span** — The concept whose measurement depends on the choice of zero
 
-# Mathematical Formulation
-**The issue formalized:**
-If we shift time-point zero back by h units:
-- Time span (a, x) becomes (a + h, x)
-- In any GIS on time spans: int may or may not change
-
-**GIS 4.1.3 resolution (Theorem 4.1.4(A)):**
-int((a+h, x), (b+h, y)) = int((a, x), (b, y))
-
-The interval is independent of where we place time-point zero.
-
-**Less problematic than time-unit:**
-Even in commutative GIS 4.1.2:
-int((a+h, x), (b+h, y)) = ((b+h) - (a+h), y/x) = (b - a, y/x) = int((a, x), (b, y))
-
-Both GIS are zero-point independent. Only GIS 4.1.3 is also unit-independent.
-
-# Musical Context/Application
-Zero-point independence means: you can start the piece whenever you want, and the intervals between time spans are unchanged. This matches our intuition that rhythmic structure is intrinsic to the music, not dependent on clock time.
-
-The zero-point problem is less severe than the unit problem because both familiar time-span GIS structures (4.1.2 and 4.1.3) are zero-point independent.
+# Key Properties
+1. Both GIS 4.1.2 and GIS 4.1.3 are independent of zero-point choice (Property A)
+2. Shifting zero by h: (a, x) becomes (a+h, x); intervals unchanged
+3. Less problematic than the time-unit problem (which only GIS 4.1.3 resolves)
 
 # Examples
-**Practical irrelevance:**
-Analyzing mm. 22-32 of Carter: whether time-point 0 is at m. 22, m. 1, or the performer's first breath, the intervals between time spans in the passage are the same.
+**Example 1** (p. 96): int((a,x),(b,y)) in GIS 4.1.3: shifting zero by h gives int((a+h,x),(b+h,y)) = ((b-a)/x, y/x) — unchanged.
 
-**Score notation:**
-We often place time-point zero at the first barline or first attack. This is notational convenience, not theoretical necessity.
-
-**Performance variation:**
-Different performances start at different clock times. The rhythmic structure is the same regardless.
-
-# Related Concepts
-- Referential Time-Unit Problem
-- Time-Span GIS
-- Time-Span Interval Independence
-- Attack Time
-- Theorem 4.1.4
-
-# Common Confusions
-1. **Zero-point vs. unit:** Both GIS 4.1.2 and 4.1.3 are zero-point independent. Only 4.1.3 is unit-independent. These are separate properties.
-
-2. **LABEL depends on zero-point:** Even though intervals don't change, the LABEL function (which measures from a reference) does depend on where ref is placed.
-
-3. **Attack times change:** When we shift zero, (a, x) becomes (a+h, x). The time span "looks different" numerically but represents the same event.
-
-4. **Musical irrelevance:** We don't usually worry about this because zero-point independence is automatic for the GIS structures we use.
+# Relationships
+## Related
+- **Referential Time-Unit Problem** — the companion problem; more difficult
+- **Time-Span Interval Independence** — Property (A) resolves the zero-point problem
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Section 4.1 discussion, pp. 95-96
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, pp. 95-96.
+
+# Verification Notes
+- Definition source: direct from Section 4.1 discussion
+- Confidence rationale: high — explicit discussion
+- Re-extraction notes: Re-extracted from v2 card; preserved: less-problematic-than-unit-problem observation

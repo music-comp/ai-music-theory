@@ -1,76 +1,96 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Ordinal-Pitch Pairs
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: ordinal-pitch-pairs
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: injection-function
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "(n, p) pairs"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-function
+extends: []
+related:
+  - angst-hoffen-analysis
+  - protocol-pairs
+contrasts_with:
+  - protocol-pairs
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How can melodies be modeled as sets of ordinal-pitch pairs?"
 ---
 
 # Quick Definition
-The space of ordinal-pitch pairs models melodies as sets of pairs (n, p) where n is the ordinal position and p is the pitch class, enabling INJ analysis of serial melodic structure.
+The space of ordinal-pitch pairs S = {(n, p)} models melodies as sets where n is the ordinal position (1st, 2nd, ... note) and p is the pitch class. Transformations (k, OP) shift position by k and transform pitch by OP. This space is NOT a GIS, demonstrating INJ's generality.
 
-# Formal Definition
-The space S consists of pairs (n, p) where:
-- n is a positive integer (ordinal position: 1st, 2nd, 3rd, ... note)
-- p is a pitch class
+# Core Definition
+In the "Angst und Hoffen" melodic analysis (Lewin, pp. 161-163, Figure 6.4): elements are pairs (n, p) where n is a positive integer and p a pitch class. A melody is an unordered set of such pairs. Transformation (k, OP) maps (n, p) to (n+k, OP(p)). These transformations are NOT operations: no (n, p) with positive n satisfies (k, OP)(n, p) = (1, q) for k > 0.
 
-A melody (non-repeating pitch-class series) is modeled as a set of such pairs:
-- If the nth note is pitch class p, then (n, p) is in the set
+# Prerequisites
+- **INJ Function** — Required because transformations on this space are not operations
 
-Transformations on S:
-- (k, OP) maps (n, p) to (n + k, OP(p))
-- k shifts the ordinal position
-- OP transforms the pitch class
+# Key Properties
+1. S is NOT a GIS — transformations are not operations
+2. (k, OP)(n, p) = (n+k, OP(p))
+3. Even if OP is an operation on pitch classes, (k, OP) is not an operation on S
+4. INJ handles this gracefully; IFUNC cannot apply here
+5. Captures both "which note" and "which position" in the series
 
-# Mathematical Formulation
-S = {(n, p) : n in positive integers, p in pitch classes}
+# Construction / Recognition
+## To Construct:
+1. List the melody as ordered notes p_1, p_2, ..., p_N
+2. The set is {(1, p_1), (2, p_2), ..., (N, p_N)}
 
-For melody M with notes p1, p2, ..., pN:
-M = {(1, p1), (2, p2), ..., (N, pN)}
+## To Recognize:
+1. A set of (position, pitch-class) pairs modeling a serial melody
 
-Transformation (k, OP): S -> S
-(k, OP)(n, p) = (n + k, OP(p))
-
-Key property: (k, OP) is NOT an operation on S (not onto).
-- No (n, p) maps to (1, q) under (k, OP) when k > 0
-- This is fine for INJ analysis
-
-# Musical Context/Application
-This model captures both serial position and pitch-class identity. Analyzing INJ((k, OP)) reveals how melodic segments relate transformationally. Unlike the PROT model (which captures only ordering), this model captures both "which note" and "which position."
+# Context & Application
+This model enables analysis of serial melodic structure using INJ. In "Angst und Hoffen," internal transformations (1, I) and (2, w) bind the first tetrad; ordinal augmentation occurs in the second tetrad (I at distance 2, w at distance 3). T_6 is progressive between tetrads.
 
 # Examples
-From "Angst und Hoffen" melodic analysis (Figure 6.4):
+**Example 1** (pp. 161-163, Figure 6.4): Vocal melody from "Angst und Hoffen." X_1^4 = {(1,D), (2,Gb), (3,Eb), (4,Fb)}. INJ(X_1^4, X_1^4)(1,I) = 2 (internal); INJ(X_1^4, X_5^8)(n,I) = 0 for all n (no I-arrows between tetrads); T_6 is progressive between tetrads.
 
-Melody = (2, Gb), (1, D), (10, Fb), (3, Eb), ...
-Reading: "The 2nd note is Gb, the 1st note is D, the 10th note is Fb, ..."
+# Relationships
+## Builds Upon
+- **INJ Function** — Required for analysis in this non-GIS space
 
-Transformations:
-- (1, I): shift one position, invert pitch class
-- (2, w): shift two positions, wedge pitch class
+## Enables
+- **Angst und Hoffen Analysis** — Melodic portion uses this model
 
-First tetrad X_1^4 = {(1, D), (2, Gb), (3, Eb), (4, Fb)}
-- INJ(X_1^4, X_1^4)(1, I) = 2 (internal)
-- INJ(X_1^4, X_1^4)(2, w) = 2 (internal, allowing Fb as F)
+## Contrasts With
+- **Protocol Pairs** — PROT captures ordering only; ordinal-pitch pairs capture position and pitch identity
 
-Second tetrad X_5^8:
-- INJ(X_5^8, X_5^8)(2, I) = 2 (I-relations at distance 2, augmented from 1)
-- INJ(X_5^8, X_5^8)(3, w) = 1 (w-relations at distance 3, augmented from 2)
-
-Progressive relation:
-- INJ(X_1^4, X_5^8)(n, T_6) is positive for several n
-- T_6 is progressive between the tetrads (no I or w arrows cross)
-
-# Related Concepts
-- INJ (Injection Function)
-- Protocol Pairs (PROT)
-- Serial Melody
-- Progressive/Internal Transformations
+# Common Errors
+- **Error**: Treating (k, OP) as an operation
+  **Correction**: These are transformations, not operations — they cannot map S onto itself
 
 # Common Confusions
-This space is NOT a GIS (transformations like (k, OP) are not operations). INJ handles this gracefully. The ordinal-pitch model complements PROT: PROT captures pure ordering relations, while ordinal-pitch captures positional identity.
+- **Confusion**: Thinking ordinal-pitch pairs require a GIS
+  **Clarification**: This space has no GIS structure; INJ's independence from GIS is the point
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, melodic analysis following Figure 6.4
+Chapter 6: Generalized Set Theory (2), melodic analysis in Figure 6.4, pp. 161-164.
+
+# Verification Notes
+- Definition source: Direct from melodic analysis discussion
+- Confidence rationale: Detailed definition with analytical application
+- Re-extraction notes: Re-extracted from v2 card; preserved: melody example, non-GIS emphasis, ordinal augmentation observation. Added v3.1 structure.

@@ -1,63 +1,90 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Registral Climax Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: registral-climax-analysis
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: impressionist-analysis
+tier: advanced
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.4"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - z-forms
+  - v-motive
+extends: []
+related:
+  - debussy-reflets-dans-leau-analysis
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Lewin analyze the registral trajectory in Debussy's Reflets?"
+  - "What is the 'unfinished business' in the climax register?"
 ---
 
 # Quick Definition
-Lewin's registral climax analysis traces the melodic line's ascent toward upper-register goals (C5, Db5, Eb5) in "Reflets dans l'eau," examining how different passages address or defer resolution of "unfinished business" in the climax register.
+Lewin's analysis of the large-scale registral trajectory in "Reflets dans l'eau," tracing the principal melodic line's ascent from Db4 to the "provisional climax" C5 (m. 10), the ambiguous approach to Db5 (m. 30), and the definitive "breakthrough" to Eb5 (mm. 57-58) in Eb-major tonality.
 
-# Formal Definition
-This analytical thread follows the structural progression of the principal melodic line toward registral climaxes, examining how different passages address the tension between provisional high points (C5 as leading tone, Db5 as problematic tonic) and ultimate resolution (Eb5 in the breakthrough section). The analysis considers register, dynamics, motivic form, and tonal context.
+# Core Definition
+The principal melodic line ascends from Db4 using T and T'-inverse transformations, reaching C5 as "provisional climax" at m. 10. C5 as leading tone "makes a strong effect" but leaves "unfinished business" in the upper register. At m. 30, retrograde Z3 addresses C5 and Db5 ambiguously (rising or falling? structural or octave-transferred?). The definitive resolution comes at mm. 57-58 with the "breakthrough" V-form where "Bb4 and C5... finally make their breakthrough... to Eb5" in Eb-major tonality, with T(Z1) supporting the key change from Db to Eb = T(Db) (Lewin, Section 10.4, pp. 275-289).
 
-# Mathematical Formulation
-Registral trajectory:
-- Initial goal: C5 (provisional climax, measure 10)
-- Intermediate goal: Db5 (problematic, measure 30)
-- Ultimate resolution: Eb5 (breakthrough, measures 57-58)
+# Prerequisites
+- **Z-forms** — Z3 engages the registral question at m. 30
+- **V motive** — carries the breakthrough
 
-T-relation: The breakthrough to Eb5 requires T-transposition of the entire tonal context from Db major to Eb major.
+# Key Properties
+1. C5 = "provisional climax" at m. 10 (leading tone, strong effect)
+2. "Unfinished business" in the climax register
+3. Db5 approached ambiguously at m. 30 (retrograde Z3)
+4. Ambiguities: rising/falling? structural/transferred? C5/Db5 essential?
+5. Breakthrough at mm. 57-58: Bb4 and C5 to Eb5 in Eb major
+6. The tonal shift Db->Eb = T(Db) provides "an enormous T-ish boost"
 
-# Musical Context/Application
-The registral climax analysis demonstrates how transformational theory can address large-scale formal and teleological questions. By tracking how the melody's high-register aspirations are frustrated, partially satisfied, and ultimately achieved, the analysis reveals compositional strategy operating across the entire form.
+# Construction / Recognition
+## To Construct:
+1. Trace the principal melodic line's high points
+2. Identify provisional climaxes and unresolved registral questions
+3. Find the definitive resolution
+## To Recognize:
+1. Track the highest melodic pitches and their harmonic support across the piece
+
+# Context & Application
+The registral analysis integrates transformational, tonal, and phenomenological perspectives. Lewin discusses performance implications (dynamics, balance of doublings) alongside formal structure, and the C5-to-Db5 ambiguity engages deep questions about whether a minor second can function as a "T-relation."
 
 # Examples
-**Provisional climax at C5 (measure 10):**
-"The pitch C5 of measure 10 is the climax of this line, which has been using the rising T and T'-inverse transformations to ascend up to that point from the initial Db4. The line is completely diatonic, so the leading tone C5 makes a strong effect as a provisional climax."
+**Example 1** (pp. 275-278): At m. 30, ret Z3 addresses C5/Db5 with multiple ambiguities: (a) rising or falling? (b) structural or octave-transferred? (c) how essential is Db5? The mf crescendo to f supports hearing them as climactic.
 
-"The effect is somewhat concealed by the chromatic harmonization and by the possibility of hearing C5 as a neighbor to Bb4 on a subordinate level... Still, as one listens... it is clear that there is unfinished business for the principal melodic voice in its upper register."
+**Example 2** (Figure 10.21, pp. 287-289): The Eb-major breakthrough. T(Z1) = G-F-C-Bb is retrograded in mm. 58-59. "The whole tonality of the piece has temporarily moved up from Db to Eb = T(Db)." The T-relation within X has expanded to tonal-level modulation.
 
-**Problematic approach to Db5 (measure 30):**
-At measure 30, retrograde Z3 "circles around the critical pitch C5. It does touch Db5, but there is some question as to how essential Db5 sounds in the melodic line."
+# Relationships
+## Builds Upon
+- **Z-forms** — Z3 engages the registral question
+- **V motive** — carries the breakthrough
+## Related
+- **Debussy Reflets analysis** — the full context
 
-The problem: "Hitherto, all motivic T-relations have been both by one diatonic scale degree and by two semitones (or by major second). Now we have to respond motivically to a relation that is and is not the same, between C5 and Db5."
-
-Multiple ambiguities:
-- Rising vs. falling (retrograde Z and CHR forms suggest falling)
-- Structural register vs. octave transfer
-- But crescendo to f suggests rising importance
-
-"In sum, the C5 and Db5 of the retrograde Z3 at measure 30 are ambivalent in many ways."
-
-**Breakthrough to Eb5 (measures 57-58):**
-"Here Bb4 and C5, that could not rise farther at measure 10 and rose to Db5 only problematically at measure 30, finally make their breakthrough. Indeed, they get as far as Eb5, with no question about it. Db, significantly, is not on the scene now that we are in the key of Eb."
-
-The key change enables the resolution: "Now, over measures 56 and following, the change of tonality from Db to Eb provides an appropriate and enormous T-ish boost, enabling the melody to rise definitively beyond C5."
-
-# Related Concepts
-- Debussy Reflets dans l'eau Analysis
-- T and T' Transformations
-- Z-Forms
-- Motive X
-- Large-Scale Form
+# Common Errors
+- **Error**: Treating the registral trajectory as purely structural
+  **Correction**: Lewin integrates performance considerations (dynamics, balance) with formal analysis
 
 # Common Confusions
-The registral climax analysis is not merely about high notes but about motivic and tonal context. C5 and Db5 have different structural implications depending on the surrounding transformational network, harmonic support, and dynamic context. Students should consider all these factors together.
+- **Confusion**: Thinking the C5-Db5 question has a single answer
+  **Clarification**: "The answer, of course, is 'Yes and no'" -- the ambiguity is the point
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figures 10.10, 10.20-10.21
+Chapter 10, Section 10.4, pp. 275-289. Figure 10.21.
+
+# Verification Notes
+- Definition source: synthesized from Section 10.4 extended discussion
+- Confidence rationale: high -- central trajectory of the entire Debussy analysis
+- Re-extracted from v2 card; preserved: "provisional climax," "unfinished business," "breakthrough," T-ish boost, ambiguity discussion

@@ -1,78 +1,135 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Congruence Relation in GIS
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: congruence-relation-gis
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: formal-features
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (2): Formal Features"
 chapter_number: 3
 pdf_page: 62
-unit: null
-authors: David Lewin
+section: "3.2 Quotient GIS"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "CONG"
+  - "congruence on IVLS"
+  - "group congruence"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval-group-ivls
+  - equivalence-relation
+  - generalized-interval-system
+extends:
+  - congruence
+related:
+  - quotient-group
+  - induced-equivalence
+  - quotient-gis
+contrasts_with:
+  - equivalence-relation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do I construct a quotient GIS from a congruence relation?"
+  - "What is a congruence relation on IVLS?"
+  - "How does pitch-class space relate to chromatic pitch space via quotient GIS?"
 ---
 
 # Quick Definition
-A congruence relation on a group is an equivalence relation compatible with the group operation: if i is congruent to i' and j is congruent to j', then ij is congruent to i'j'. Congruences on IVLS induce quotient GIS structures.
+A congruence relation on the interval group IVLS is an equivalence relation compatible with the group operation, ensuring that the quotient group IVLS/CONG is well-defined and enabling construction of quotient GIS structures.
 
-# Formal Definition
-A relation CONG on a group IVLS is a congruence if:
-1. CONG is an equivalence relation (reflexive, symmetric, transitive)
-2. For all i, i', j, j' in IVLS: if i CONG i' and j CONG j', then ij CONG i'j'
+# Core Definition
+A relation CONG on the group IVLS is a congruence if: (1) CONG is an equivalence relation (reflexive, symmetric, transitive), and (2) whenever i is congruent to i' and j is congruent to j', then ij is congruent to i'j'. Condition (2) ensures the quotient group IVLS/CONG has a well-defined binary operation: [i] * [j] = [ij] (Lewin, Section 3.2, pp. 63-65; referencing Definition 1.10.1).
 
-Condition (2) ensures the quotient group IVLS/CONG is well-defined.
+# Prerequisites
+- **Interval Group (IVLS)** — The congruence is defined on this group
+- **Equivalence Relation** — A congruence is first an equivalence relation with additional compatibility
+- **Generalized Interval System** — Congruences on IVLS induce quotient GIS structures
 
-# Mathematical Formulation
-**Quotient group construction:**
-IVLS/CONG = {congruence classes of IVLS}
-[i] * [j] = [ij] (well-defined by condition 2)
+# Key Properties
+1. A congruence is an equivalence relation compatible with the group operation
+2. The congruence class of the identity e forms a normal subgroup (the kernel)
+3. All congruence classes are cosets of the kernel
+4. The quotient IVLS/CONG inherits a group structure: [i] * [j] = [ij]
+5. The congruence is defined on IVLS (intervals), not on S (elements)
+6. The congruence on IVLS induces an equivalence on S (see induced-equivalence)
 
-**Example (integers mod 12):**
-IVLS = Z (integers)
-CONG: i ~ i' iff 12 divides (i' - i)
-IVLS/CONG = Z/12Z (integers mod 12)
+# Construction / Recognition
+## To Construct:
+1. Identify a normal subgroup N of IVLS
+2. Declare i congruent to i' whenever i^{-1}i' is in N (equivalently, i and i' are in the same coset of N)
+3. Verify the compatibility condition: if i ~ i' and j ~ j', then ij ~ i'j'
 
-**Induced equivalence on S:**
-s EQUIV s' iff int(s, s') CONG e (identity)
+## To Recognize:
+1. Check that the relation is an equivalence relation on IVLS
+2. Verify compatibility with the group operation
+3. Identify the kernel (congruence class of e)
 
-# Musical Context/Application
-Congruence relations formalize "modularization":
-- Pitch space modularized by octave equivalence
-- Time-point space modularized by measure length
-- Just-intonation space modularized by octave
-
-The congruence determines which intervals are "equivalent to zero" and thus which elements of S become identified.
+# Context & Application
+Congruence relations formalize the concept of "modularization" — the process of identifying intervals that differ by some structural unit. This is ubiquitous in music theory whenever we treat intervals modulo some cycle (octave, measure length, etc.). The congruence determines which intervals are "equivalent to zero" and thus which elements of S will become identified in the quotient space.
 
 # Examples
-**Chromatic to pitch-class (Section 3.2):**
-- IVLS1 = Z (semitones)
-- CONG: i ~ i' iff i' = i + 12k for some integer k
-- IVLS2 = Z/12Z (pitch-class intervals)
-- EQUIV: pitches are equivalent if they differ by octaves
+**Example 1** (p. 63): Chromatic to pitch-class intervals:
+- IVLS = Z (integers, semitones), CONG: i ~ i' iff i' - i is divisible by 12
+- Quotient: IVLS/CONG = Z/12Z (integers mod 12)
+- Kernel: multiples of 12
 
-**Just intonation to pitch classes:**
-- IVLS1 = {2^a * 3^b * 5^c} under multiplication
-- CONG: i ~ i' iff i' = 2^n * i for some integer n
-- IVLS2 = pairs (b, c) (dominants and mediants)
-- EQUIV: pitches are equivalent if they differ by octaves
+**Example 2** (p. 67): Just-intonation modularization:
+- IVLS = {2^a * 3^b * 5^c} under multiplication
+- CONG: i ~ i' iff i'/i is a power of 2
+- Quotient: pairs (b, c) representing dominants and mediants
+- Kernel: powers of 2
 
-**Time-points to beat-classes:**
-- IVLS1 = Z (beats)
-- CONG: i ~ i' iff i' = i + Nk for some integer k
-- IVLS2 = Z/NZ (beat-classes in N-beat measure)
+**Example 3** (p. 68): Time-points to beat-classes:
+- IVLS = Z (beats), CONG: i ~ i' iff i' - i is divisible by N
+- Quotient: Z/NZ (beat-classes in N-beat measure)
 
-# Related Concepts
-- Quotient GIS
-- Equivalence Relation
-- Induced Equivalence
-- Group Homomorphism
-- Octave Equivalence
+# Relationships
+## Builds Upon
+- **Equivalence Relation** — a congruence is an equivalence relation with additional structure
+- **Interval Group (IVLS)** — the congruence is defined on IVLS
+
+## Enables
+- **Quotient GIS** — congruence on IVLS is the prerequisite for constructing a quotient GIS
+- **Induced Equivalence** — the congruence induces an equivalence relation on S
+
+## Related
+- **Quotient Group** — IVLS/CONG is the interval group of the quotient GIS
+- **Normal Subgroup** — the kernel of the congruence
+
+## Contrasts With
+- **Equivalence Relation** — a congruence has the additional compatibility constraint with the group operation
+
+# Common Errors
+- **Error**: Defining a congruence on S (elements) instead of IVLS (intervals)
+  **Correction**: The congruence is on IVLS; the equivalence on S is induced by the congruence
+
+- **Error**: Using an equivalence that is not compatible with the group operation
+  **Correction**: Always verify that the product of congruent elements is congruent; otherwise the quotient group operation is not well-defined
 
 # Common Confusions
-1. **Congruence on IVLS, not S:** The congruence is defined on the interval group. The equivalence on S is induced by the congruence.
+- **Confusion**: Believing any equivalence on S yields a quotient GIS
+  **Clarification**: Not every equivalence on S gives a quotient GIS; the equivalence must be induced by a congruence on IVLS for int to be well-defined on quotient elements
 
-2. **Compatibility condition:** The product of congruent elements must be congruent. This ensures quotient operations are well-defined.
-
-3. **Not every equivalence works:** An arbitrary equivalence on S may not yield a quotient GIS. The equivalence must be induced by a congruence on IVLS.
-
-4. **Kernel interpretation:** The congruence class of e (identity) is a normal subgroup. The congruence classes are cosets of this kernel.
+- **Confusion**: Confusing congruence classes with equivalence classes on S
+  **Clarification**: Congruence classes are subsets of IVLS (intervals); equivalence classes are subsets of S (elements). The congruence on IVLS induces the equivalence on S.
 
 # Source Reference
-Chapter 3: Generalized Interval Systems (2): Formal Features, Sections 3.2.1-3.2.4, pp. 64-68
+Chapter 3: Generalized Interval Systems (2): Formal Features, Sections 3.2.1-3.2.4, pp. 63-68.
+
+# Verification Notes
+- Definition source: direct from Section 3.2, referencing Definition 1.10.1
+- Confidence rationale: high — explicit definitions and examples
+- Re-extraction notes: Re-extracted from v2 card; preserved: three concrete examples, kernel interpretation, confusion about equivalence on S vs congruence on IVLS

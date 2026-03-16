@@ -1,86 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Time-Span Inversion
-category: technique
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+slug: time-span-inversion
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: rhythmic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "I_{(c,z)}^{(d,w)}"
+  - "time-span I_u^v"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - time-span-gis
+  - inversion-operation
+extends:
+  - inversion-operation
+related:
+  - time-span-transposition
+  - time-span-interval-preserving-operation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does inversion work in the non-commutative time-span GIS?"
 ---
 
 # Quick Definition
-In the time-span GIS, inversion I_{(c,z)}^{(d,w)} maps time spans using a formula involving both inversion parameters. Unlike commutative GIS, time-span inversions are extremely rigid: two inversions are equal only when their parameters are identical.
+Time-span inversion I_{(c,z)}^{(d,w)}(a, x) = (d + (c-a)w/x, zw/x) is uniquely rigid: two inversions are equal only when their parameters are identical, since only the identity interval is central.
 
-# Formal Definition
-**Notes 4.1.7(G):** The (c,z)/(d,w) inversion applied to time span (a, x) yields:
+# Core Definition
+Notes 4.1.7(G): The (c,z)/(d,w) inversion applied to time span (a, x) yields I_{(c,z)}^{(d,w)}(a, x) = (d + (c-a)w/x, zw/x) = (d, w)(a, x)^{-1}(c, z). Notes 4.1.7(H): I_{s'}^{t'} = I_s^t iff s' = s and t' = t, since only (0, 1) is central. There are no interval-reversing operations (Note 4.1.7I) (Lewin, Notes 4.1.7(G)-(I), pp. 113-114).
 
-I_{(c,z)}^{(d,w)}(a, x) = (d + (c - a)w/x, zw/x)
-                        = (d, w)(a, x)^(-1)(c, z)
+# Prerequisites
+- **Time-Span GIS** — The non-commutative GIS context
+- **Inversion Operation** — The general theory from Chapter 3
 
-# Mathematical Formulation
-**Derivation:**
-From Definition 3.5.1: int((d, w), I_{(c,z)}^{(d,w)}(a, x)) = int((a, x), (c, z))
+# Key Properties
+1. I_{(c,z)}^{(d,w)}(a, x) = (d + (c-a)w/x, zw/x)
+2. Equivalently: (d, w)(a, x)^{-1}(c, z) in IVLS
+3. Rigid: I_{s'}^{t'} = I_s^t iff s' = s and t' = t
+4. No interval-reversing operations exist (Theorem 3.6.4)
+5. (I_{(c,z)}^{(d,w)})^{-1} = I_{(d,w)}^{(c,z)}, which differs from the original
 
-Let I_{(c,z)}^{(d,w)}(a, x) = (b, y).
-Then: int((d, w), (b, y)) = int((a, x), (c, z))
-((b-d)/w, y/w) = ((c-a)/x, z/x)
+# Construction / Recognition
+## To Construct:
+1. Choose parameter time spans (c, z) and (d, w)
+2. Apply formula: I(a, x) = (d + (c-a)w/x, zw/x)
 
-So: b - d = (c - a)w/x, hence b = d + (c - a)w/x
-And: y/w = z/x, hence y = zw/x
-
-**Using LABEL notation:**
-I_{(c,z)}^{(d,w)}(a, x) = (d, w)(a, x)^(-1)(c, z)
-
-**Rigidity (Notes 4.1.7(H)):**
-I_{s'}^{t'} = I_s^t iff s' = s AND t' = t
-
-This follows from Theorem 3.5.3 since only (0, 1) is central in IVLS.
-
-# Musical Context/Application
-Time-span inversion is a complex operation that involves:
-- Scaling the duration by the ratio of the two parameter durations
-- Positioning the result based on both the original and the inversion parameters
-
-The rigidity property means every pair of time spans defines a unique inversion. There is no "axis of symmetry" equivalence class as in pitch-class inversion.
+# Context & Application
+Time-span inversion is much more rigid than pitch-class inversion. In pitch-class GIS, many pairs of parameters yield the same inversion (e.g., I_C^C = I_{F#}^{F#}). In the time-span GIS, every distinct pair of time spans defines a distinct inversion operation. This rigidity follows from the fact that only the identity is central in the time-span interval group.
 
 # Examples
-**Basic calculation:**
-I_{(2,3)}^{(4,5)}(1, 6) = (4 + (2-1)*5/6, 3*5/6)
-                        = (4 + 5/6, 15/6)
-                        = (29/6, 5/2)
+**Example 1** (from old card): I_{(2,3)}^{(4,5)}(1, 6) = (4 + (2-1)*5/6, 3*5/6) = (29/6, 5/2)
 
-**Verification via LABEL formula:**
-(4, 5)(1, 6)^(-1)(2, 3)
-= (4, 5)(-1/6, 1/6)(2, 3)
-= (4 + 5*(-1/6), 5/6)(2, 3)
-= (19/6, 5/6)(2, 3)
-= (19/6 + (5/6)*2, (5/6)*3)
-= (19/6 + 10/6, 15/6)
-= (29/6, 5/2)
+**Example 2** (Figure 4.4): If int(s_2, t_2) = int(s_1, t_1), then t_2 = I_{t_1}^{s_2}(s_1).
 
-Same result!
+# Relationships
+## Builds Upon
+- **Inversion Operation** — general I_u^v theory from Chapter 3
+- **Time-Span GIS** — the specific non-commutative context
 
-**Rigidity example:**
-I_{(0,1)}^{(2,3)} and I_{(0,1)}^{(2,4)} are different operations.
-I_{(0,1)}^{(2,3)} and I_{(1,1)}^{(2,3)} are different operations.
-Each pair of time spans gives a distinct inversion.
+## Enables
+- Analysis of time-span inversion relationships in multi-tempo music
 
-# Related Concepts
-- Inversion Operation (I_u^v)
-- Time-Span GIS
-- Central Interval
-- Inversion Equivalence Conditions
-- Non-Commutative GIS
+## Related
+- **Time-Span Transposition** — T does not preserve intervals; I does not reverse them
+
+# Common Errors
+- **Error**: Assuming some inversions are equivalent as in pitch-class GIS
+  **Correction**: Every distinct pair of time-span parameters gives a distinct inversion
 
 # Common Confusions
-1. **Rigidity:** In pitch-class GIS, I_C^E = I_G^B (same operation, different notation). In time-span GIS, every different parameter pair gives a different operation.
-
-2. **The formula:** Both parameters (c, z) and (d, w) contribute to the result. It's not "inversion about a single center."
-
-3. **No interval-reversal:** Time-span inversions do NOT reverse intervals (Theorem 3.6.4). There are no interval-reversing operations in this GIS.
-
-4. **Inverse of inversion:** (I_{(c,z)}^{(d,w)})^(-1) = I_{(d,w)}^{(c,z)}, but these are NOT equal (non-commutative case).
+- **Confusion**: Expecting inversion to reverse intervals
+  **Clarification**: There are NO interval-reversing operations in the time-span GIS (Theorem 3.6.4)
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Notes 4.1.7(G)-(H), pp. 113-114
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Notes 4.1.7(G)-(I), pp. 113-114.
+
+# Verification Notes
+- Definition source: direct from Notes 4.1.7(G)
+- Confidence rationale: high — explicit formula with derivation
+- Re-extraction notes: Re-extracted from v2 card; preserved: worked calculation, rigidity examples, LABEL formula verification

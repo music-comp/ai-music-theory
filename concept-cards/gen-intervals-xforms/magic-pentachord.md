@@ -1,60 +1,84 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: MAGIC Pentachord
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: magic-pentachord
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: impressionist-analysis
+tier: advanced
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.4"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - debussy-reflets-dans-leau-analysis
+  - v-motive
+  - tristan-chord-in-reflets
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the MAGIC pentachord in Lewin's Debussy analysis?"
 ---
 
 # Quick Definition
-The MAGIC pentachord is a specific five-note chord that controls structural passages in Debussy's "Reflets dans l'eau," appearing at critical formal junctures and generating characteristic harmonies through T' transposition.
+A recurring five-note harmonic entity (labeled "MAGIC" by Lewin) in Debussy's "Reflets dans l'eau" that controls the first half of m. 14, returns at the cadenza structural downbeat, and supports T'(MAGIC) in the second half of m. 14, with the Tristan chord's first transposition being a subset.
 
-# Formal Definition
-MAGIC is a pentachord (five-note pitch-class set) that Lewin identifies as structurally controlling specific measures in "Reflets dans l'eau." The pentachord appears in prime form and as T'(MAGIC), with both forms marking significant harmonic and formal articulation points in the piece.
+# Core Definition
+Lewin labels a pentachord "MAGIC" on Figure 10.10, asserting it as controlling the first half of m. 14; T'(MAGIC) then controls the second half. MAGIC harmony saturates the music from m. 23.5 to m. 27. The first transposition of the Tristan chord (G#-D-F#-B) is a subset of MAGIC. MAGIC harmony recurs at structurally significant moments including the passage supporting T'(MAGIC) and the V-motive prolongation (Lewin, Section 10.4, pp. 275-282).
 
-# Mathematical Formulation
-MAGIC pentachord structure:
-- Appears controlling first half of measure 14
-- T'(MAGIC) controls second half of measure 14
-- Relationship: T'(MAGIC) leads into plagal cadence
+# Prerequisites
+- (No specific formal prerequisites)
 
-Subset relationships:
-- "The first transposition of the Tristan chord, which Debussy spells as G#-D-F#-B, is a subset of the MAGIC pentachord D-Cb-Gb-(Bb)-Ab"
+# Key Properties
+1. A five-note harmonic entity recurring at structural moments
+2. Controls first half of m. 14; T'(MAGIC) controls second half
+3. Saturates mm. 23.5-27
+4. First Tristan transposition is a subset of MAGIC
+5. Supports V-motive prolongation (mm. 24-29)
 
-# Musical Context/Application
-The MAGIC pentachord functions as a harmonic field that organizes extended passages. Its T' transposition creates large-scale harmonic motion, and its appearance signals structural articulation. The relationship between MAGIC and T'(MAGIC) recapitulates at the harmonic level the T'/T relationships established motivically through X and Y.
+# Construction / Recognition
+## To Construct:
+1. Identify the pentachord Lewin labels MAGIC on Figure 10.10
+## To Recognize:
+1. Look for the recurring five-note harmony at structural junctures
+
+# Context & Application
+MAGIC provides harmonic continuity across different sections of the piece, linking m. 14 to the cadenza and the V-motive passages.
 
 # Examples
-**Measure 14:**
-"Figure 10.10 brackets a pentachord called MAGIC which it asserts as controlling the first half of measure 14; T'(MAGIC) then controls the second half."
+**Example 1** (Figure 10.10, pp. 275-276): MAGIC controls first half of m. 14. T'(MAGIC) leads into the plagal cadence of mm. 15-17.
 
-"The entire second half of measure 14 is in T'-relation to the entire first half of the measure."
+**Example 2** (p. 281): The Tristan chord's first transposition (G#-D-F#-B) = subset of MAGIC pentachord D-Cb-Gb-(Bb)-Ab.
 
-**Connection to cadential function:**
-"Tonally, the music has progressed from the tonic pedal of measures 1-8, through the dominant that opens measure 9, to the dominant-of-the-subdominant that ends measure 10... the harmony discharges its subdominant obligation with T'(MAGIC) in the second half of measure 14, and the tonal idea that carries measures 15-17 is a plagal cadence."
+# Relationships
+## Related
+- **Debussy Reflets analysis** — the analytical context
+- **V motive** — prolonged over MAGIC harmony
+- **Tristan chord in Reflets** — first transposition is a MAGIC subset
 
-**Retrograde CHR and MAGIC:**
-In measures 22-24, "a retrograde CHR line connecting the Eb of Tristan to the Gb of MAGIC; MAGIC then saturates the music from measure 23.5 to measure 27."
-
-**Tristan chord relationship:**
-The Tristan chord "G#-D-F#-B is a subset of the MAGIC pentachord D-Cb-Gb-(Bb)-Ab," linking the Wagnerian reference to the piece's harmonic structure.
-
-**T'(MAGIC) at measure 30:**
-"Db5 is specifically supported by T'(MAGIC) harmony, continuing to follow the precedent of measure 14" (Figure 10.20).
-
-# Related Concepts
-- T and T' Transformations
-- Debussy Reflets dans l'eau Analysis
-- CHR Networks
-- Tristan Chord
-- Harmonic Fields
-- Plagal Cadence
+# Common Errors
+- **Error**: Overlooking MAGIC as merely incidental harmony
+  **Correction**: It recurs at multiple structural junctures with clear compositional intent
 
 # Common Confusions
-The MAGIC pentachord is Lewin's analytical label, not a standard theoretical term. Students should recognize it as a specific structural harmony in this analysis rather than a general concept. The pentachord's significance lies in its recurrence and T' transformational relationship, not in abstract set-class properties.
+- **Confusion**: Thinking MAGIC is a standard theoretical entity
+  **Clarification**: It is Lewin's analytical label for a specific pentachord in this piece
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figures 10.10, 10.17, 10.20
+Chapter 10, Section 10.4, pp. 275-282. Figure 10.10.
+
+# Verification Notes
+- Definition source: direct from Section 10.4
+- Confidence rationale: high -- explicitly named and tracked through the analysis
+- Re-extracted from v2 card; preserved: Tristan subset relationship, T'(MAGIC) symmetry, V-motive connection

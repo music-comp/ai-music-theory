@@ -1,62 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: INJ Operation Theorem
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: inj-operation-theorem
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: injection-function
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: "6.5.1-6.5.2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Theorem 6.5.1"
+  - "Corollary 6.5.2"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-function
+  - operation
+extends:
+  - inj-function
+related:
+  - inj-complement-theorem
+  - inj-generalizes-ifunc
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What happens to INJ when f is an operation?"
 ---
 
 # Quick Definition
-When f is an operation (1-to-1 and onto), INJ(X, Y)(f) equals the cardinality of the intersection of f(X) with Y.
+When f is an operation OP (1-to-1 and onto), INJ(X, Y)(OP) equals the cardinality of OP(X) intersect Y — the number of common members shared by the transformed set and the target set. This generalizes Regener's Common-Note Function.
 
-# Formal Definition
-Theorem 6.5.1: If f is an operation OP, then INJ(X, Y)(OP) is the cardinality of OP(X) intersect Y, that is the number of common members shared by the sets OP(X) and Y.
+# Core Definition
+Theorem 6.5.1 (Lewin, p. 175): "If f is an operation OP, then INJ(X, Y)(OP) is the cardinality of OP(X) intersect Y." Corollary 6.5.2: "If f is an operation OP, then INJ(Y, X)(OP) = INJ(X, Y)(OP^{-1})."
 
-This connects INJ to the Common-Note Function developed by Regener.
+# Prerequisites
+- **INJ Function** — The function whose behavior for operations is described
+- **Operation** — OP must be 1-to-1 and onto S
 
-# Mathematical Formulation
-For operation OP:
-INJ(X, Y)(OP) = |OP(X) intersect Y|
+# Key Properties
+1. INJ(X, Y)(OP) = card(OP(X) intersect Y)
+2. INJ(Y, X)(OP) = INJ(X, Y)(OP^{-1})
+3. Generalizes Regener's Common-Note Function (for transpositions on pitch classes)
+4. Only valid for operations, not general transformations
 
-Proof: Let M = INJ(X, Y)(OP), the number of elements x in X such that OP(x) is in Y.
-Let N = |OP(X) intersect Y|.
+# Construction / Recognition
+## To Apply:
+1. Verify f is an operation (1-to-1 and onto)
+2. Compute f(X)
+3. Count elements common to f(X) and Y
 
-Since OP is 1-to-1:
-- The M elements x1, ..., xM map to M distinct elements OP(x1), ..., OP(xM)
-- These are exactly the elements of OP(X) intersect Y
-- Therefore M = N. Q.E.D.
+## To Recognize:
+1. Common-tone counting between a transformed set and a target set
 
-Corollary 6.5.2: If OP is an operation, then
-INJ(Y, X)(OP) = INJ(X, Y)(OP^-1)
-
-# Musical Context/Application
-This theorem shows that for operations, INJ counts common tones between a transformed set and a target set. This is the fundamental connection to Regener's Common-Note Function, which counts common tones between T_i(X) and Y for pitch-class sets.
-
-When f is not an operation, INJ can exceed the intersection cardinality (multiple elements mapping to the same image).
+# Context & Application
+This theorem connects INJ to the familiar notion of common tones. Regener's Common-Note Function counts how many common tones T_i(X) shares with Y; INJ generalizes this to all operations. The restriction to operations is essential for the equality; for non-operations, INJ can exceed the intersection cardinality.
 
 # Examples
-For transposition operation T_5 on pitch classes:
-- X = {C, E, G}, Y = {C, F, A}
-- T_5(X) = {F, A, C}
-- T_5(X) intersect Y = {F, A, C} intersect {C, F, A} = {C, F, A}
-- INJ(X, Y)(T_5) = 3
+**Example 1** (derived): T_5 on pitch classes. X = {C, E, G}, Y = {C, F, A}. T_5(X) = {F, A, C}. T_5(X) intersect Y = {C, F, A} = 3 elements. INJ(X, Y)(T_5) = 3.
 
-For inversion operation I_0:
-- X = {C, E, G} = {0, 4, 7}
-- I_0(X) = {0, 8, 5} = {C, Ab, F}
-- INJ(X, Y)(I_0) = |{C, Ab, F} intersect {C, F, A}| = 2
+# Relationships
+## Builds Upon
+- **INJ Function** — Special case when f is an operation
 
-# Related Concepts
-- INJ (Injection Function)
-- Common-Note Function (Regener)
-- Operations vs Transformations
-- Set Intersection
+## Enables
+- **INJ Complement Theorem** — Requires this theorem for its proof
+- **INJ Generalizes IFUNC** — Combined with 6.7.1
+
+# Common Errors
+- **Error**: Applying this theorem to non-operations like wedge transformations
+  **Correction**: For non-operations, INJ may exceed the intersection cardinality
 
 # Common Confusions
-This theorem applies only when f is an operation (bijection on S). For non-operations like wedge transformations, INJ can exceed the intersection size because multiple source elements may map to the same target element.
+- **Confusion**: Thinking INJ always equals set intersection size
+  **Clarification**: Only for operations. For wedges and other non-1-to-1 maps, the relationship breaks.
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, Theorem 6.5.1 and Corollary 6.5.2
+Chapter 6: Generalized Set Theory (2), Theorem 6.5.1, Corollary 6.5.2, pp. 175-176.
+
+# Verification Notes
+- Definition source: Direct from Theorem 6.5.1
+- Confidence rationale: Explicit theorem with proof
+- Re-extraction notes: Re-extracted from v2 card; preserved: Regener connection, operations-only caveat. Added v3.1 structure.

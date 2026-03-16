@@ -1,77 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Webern Piano Variations Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (2): Formal Features"
-chapter_number: 3
-pdf_page: 62
-unit: null
+slug: webern-piano-variations-analysis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: serial-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
 authors: David Lewin
+chapter: "Transformation Graphs and Networks (2): Non-Intervallic Transformations"
+chapter_number: 8
+pdf_page: 206
+section: "8.2.3"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - rich-transformation
+  - tch-transformation
+  - isography
+extends: []
+related:
+  - ipair-graph
+  - webern-op27-second-movement-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Lewin analyze RICH and TCH in Webern's Piano Variations?"
 ---
 
 # Quick Definition
-Lewin's analysis of Webern's Piano Variations op. 27, third movement, demonstrates how a direct-product GIS combining pitch-class and time-point intervals reveals compositional structure through recurrent compound intervals.
+Analysis of RICH and TCH chains in Webern's Piano Variations op. 27, demonstrating isography with Wagner's Parsifal networks and showing how the prime row form launches both the third-movement reprise and coda.
 
-# Formal Definition
-The analysis uses GIS3 = GIS1 x GIS2 where:
-- GIS1: 12 pitch classes, IVLS1 = Z/12Z
-- GIS2: time-points, IVLS2 = integers (beats)
-- GIS3: elements are (pitch-class, time-point) pairs
-- Intervals are pairs (pitch-class interval, temporal interval)
+# Core Definition
+Figure 8.4 graphs two instances of RICH-TCH chains from the Piano Variations: "(a) of the figure coincides with the thematic middle section of the first movement; (b) coincides with the frantically syncopated variation in the last movement" (Lewin, 8.2.3, p. 182). The row Eb-B-Bb-D-C#-C-F#-E-G-F-A-G# has TCH interval 3. The prime row form fills both the leftmost and rightmost nodes of (b), launching the big thematic reprise (m. 37) and the coda of the entire piece.
 
-# Mathematical Formulation
-**GIS3 structure:**
-- S3 = {(p, t) : p is pitch class, t is time-point}
-- IVLS3 = Z/12Z x Z
-- int3((p1, t1), (p2, t2)) = (int1(p1, p2), int2(t1, t2))
+# Prerequisites
+- **RICH transformation** — Connects successive row forms
+- **TCH transformation** — Relates alternate row forms
+- **Isography** — The Wagner-Webern comparison depends on this concept
 
-**Interval calculation example:**
-int3((Eb, 0), (D, 5)) = (int(Eb, D), 5 - 0) = (11, 5)
+# Key Properties
+1. Prime row: Eb-B-Bb-D-C#-C-F#-E-G-F-A-G#
+2. TCH interval = int(Eb,G#) + int(B,A) = 5 + 10 = 3
+3. Figure 8.4(a): first movement middle section
+4. Figure 8.4(b): third movement syncopated variation
+5. Prime row at rightmost node of (b) launches the coda
+6. Isographic with Wagner's Parsifal network (Figure 8.3)
 
-**Unfolding interval vector:** The interval content of the set as it accumulates note-by-note through time.
+# Construction / Recognition
+## To Construct:
+1. Identify row forms and their RICH connections
+2. Verify TCH relationships between alternate forms
+3. Compare graph structure with other networks for isography
+## To Recognize:
+1. RICH and TCH arrows in the same pattern as in other works
 
-# Musical Context/Application
-The analysis shows how pitch-class structure and mensural rhythmic structure interact in Webern's music. Rather than treating pitch and rhythm as independent parameters, the direct-product GIS reveals their compositional integration.
-
-Key insight: Recurrent GIS3-intervals bind certain pitch-class intervals to certain temporal intervals, creating thematic associations between the two dimensions.
+# Context & Application
+"At measure 37, the music continues to project the prime form of the row as it launches the big thematic reprise... The total rhythm of this coda matches that of the first-movement theme reprised at I, 37" (p. 183). The isography with Parsifal shows structural unity across vastly different styles.
 
 # Examples
-**Figure 3.1 (mm. 1-6):**
-Recurrent GIS3-intervals:
-- (11, 1): B-Bb, C#-C, A-G# (pitch-class 11 with 1 beat)
-- (11, 5): Eb-D, D-C# (pitch-class 11 with 5 beats)
-- (3, 2): B-D, E-G (pitch-class 3 with 2 beats)
-- (2, 7): links accompaniment figure elements
+**Example 1** (Figure 8.4, p. 182): Network (b) with RICH (straight arrows) and TCH (curved arrows) connecting row forms in the third movement variation.
 
-**Mensural interpretation:**
-- (11, 1) recurrence establishes pitch-class interval 11 as "beat-defining"
-- (11, 5) associates "5 beats later" with this structurally important interval
-- This suggests hearing the music "in 5 meter"
+# Relationships
+## Builds Upon
+- **RICH transformation** — Generates the network connections
+- **TCH transformation** — Relates alternate forms
+## Related
+- **Isography** — Wagner-Webern comparison
+- **IPAIR graph** — Also appears in op. 27 analysis (second movement)
 
-**Figure 3.3 (unfolding interval vector):**
-As notes enter at time-points 0, 3, 4, 5, 10, 11:
-- (Eb, 0), (B, 3), (Bb, 4), (D, 5), (C#, 10), (C, 11)
-- Interval vector expands with each note
-- Time-point 5 (first barline) marks where pitch-class 11 and beat 1 both predominate
-
-**Ictus analysis:**
-Time-point 5 functions as "ictus"--the moment when mensural structure first becomes perceptible. This coincides with the first notated barline.
-
-# Related Concepts
-- Direct-Product GIS
-- Unfolding Interval Vector
-- GIS3-interval
-- Mensural Structure
-- Compound Interval
+# Common Errors
+- **Error**: Writing T_3 instead of TCH on the Webern network
+  **Correction**: Using T_3 destroys the isography with Wagner's T_{10}-based network
 
 # Common Confusions
-1. **GIS3-intervals are pairs:** (11, 5) means pitch-class interval 11 AND temporal interval 5, not a product or sum.
-
-2. **Recurrence significance:** A GIS3-interval recurring creates thematic association between its pitch and temporal components.
-
-3. **"In 5 meter":** This is not simply asserting 5/4 time signature, but recognizing the structural significance of 5-beat spans via GIS3-interval analysis.
-
-4. **The analysis is note-by-note:** The unfolding interval vector tracks how our perception develops as we hear successive attacks.
+- **Confusion**: Thinking T_3 in Webern is unrelated to Wagner's structure
+  **Clarification**: Both use TCH; the isography reveals the same transformational gesture despite different transposition levels
 
 # Source Reference
-Chapter 3: Generalized Interval Systems (2): Formal Features, Example 3.3.1 and Figures 3.1-3.6, pp. 69-77
+Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.2.3, Figure 8.4, pages 182-183.
+
+# Verification Notes
+- Definition source: Direct from 8.2.3
+- Confidence rationale: Detailed analytical example
+- Re-extraction notes: Re-extracted from v2 card; preserved: TCH interval computation, coda/reprise connection, isography

@@ -1,62 +1,101 @@
 ---
-concept: "RGNPF (Regener Partition Function)"
-category: theory
-source: Generalized Musical Intervals and Transformations
+# === CORE IDENTIFICATION ===
+concept: "RGNPF (Regener's Generalized Partition Function)"
+slug: rgnpf-partition-function
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: injection-function
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: "6.9"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - Regener Partition Function
+  - partition function
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-function
+  - canonical-group
+  - k-relation-generalized
+extends:
+  - k-relation-generalized
+related:
+  - emb-function
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the generalized partition function?"
+  - "How does RGNPF relate to EMB?"
 ---
 
 # Quick Definition
-RGNPF(X, Y)(N) counts how many canonical operations A satisfy INJ(X, Y)(A) = N, partitioning CANON by INJ values.
+RGNPF(X, Y)(N) counts how many canonical operations A satisfy INJ(X, Y)(A) = N, partitioning CANON by INJ values and giving the complete distribution of how X relates to Y under all canonical operations.
 
-# Formal Definition
-Definition (6.9): When CANON is finite, for each integer N between 0 and cardX inclusive, RGNPF(X, Y)(N) is the number of members A of CANON satisfying INJ(X, Y)(A) = N.
+# Core Definition
+Section 6.9 (Lewin, p. 185): "When CANON is finite, for each integer N between 0 and cardX inclusive, RGNPF(X, Y)(N) is the number of members A of CANON satisfying INJ(X, Y)(A) = N." Named for Eric Regener. Key formula: EMB(X, Y) = RGNPF(X, Y)(cardX) / RGNPF(X, X)(cardX). RGNPF counts operations; EMB counts forms. The denominator corrects for symmetry.
 
-The function is named for Eric Regener, who developed related ideas for pitch-class set theory.
+# Prerequisites
+- **INJ Function** — RGNPF counts INJ value occurrences
+- **Canonical Group** — CANON must be finite
+- **K-Relation Generalized** — K/Kh multiplicities are RGNPF values at extremes
 
-# Mathematical Formulation
-RGNPF(X, Y): {0, 1, ..., cardX} -> non-negative integers
-RGNPF(X, Y)(N) = |{A in CANON : INJ(X, Y)(A) = N}|
+# Key Properties
+1. RGNPF(X, Y)(N) = |{A in CANON : INJ(X, Y)(A) = N}|
+2. Sum over N of RGNPF(X, Y)(N) = |CANON|
+3. RGNPF(X, Y)(cardX) = K_1 multiplicity; RGNPF(X, Y)(0) = K_2 multiplicity
+4. EMB(X, Y) = RGNPF(X, Y)(cardX) / RGNPF(X, X)(cardX)
+5. If X has M symmetries (non-identity operations fixing X), denominator = M + 1
 
-Properties:
-- Sum over all N of RGNPF(X, Y)(N) = |CANON|
-- RGNPF(X, Y)(cardX) = multiplicity of K1-ness
-- RGNPF(X, Y)(0) = multiplicity of K2-ness
+# Construction / Recognition
+## To Compute:
+1. For each A in CANON, compute INJ(X, Y)(A)
+2. Tally results by value N
+3. The tally for each N is RGNPF(X, Y)(N)
 
-Formula relating RGNPF to EMB:
-EMB(X, Y) = RGNPF(X, Y)(cardX) / RGNPF(X, X)(cardX)
+## To Recognize:
+1. A histogram of INJ values over canonical operations
 
-Explanation: RGNPF counts operations; EMB counts forms. If X has symmetry (M operations map X to itself), then M times as many operations embed X in Y as there are forms of X in Y.
-
-# Musical Context/Application
-RGNPF provides a complete picture of how INJ(X, Y) varies over CANON. Beyond just asking "can X embed in Y?" (K1), we can ask "how many ways can X embed in Y?" (RGNPF at maximum) and examine the full distribution of INJ values.
+# Context & Application
+RGNPF provides the complete picture beyond K/Kh, showing the full distribution of how X relates to Y under canonical operations. For symmetric sets, the EMB/RGNPF formula accounts for operations that produce the same embedded form.
 
 # Examples
-For X = major triad, Y = major scale, CANON = transpositions:
-- RGNPF(X, Y)(3) = 3 (three transpositions embed X fully in Y)
-- RGNPF(X, Y)(2) = some number (transpositions with 2 common tones)
-- RGNPF(X, Y)(1) = some number
-- RGNPF(X, Y)(0) = some number (dispersive transpositions)
+**Example 1** (derived from p. 185): X = augmented triad {C, E, G#}, CANON = transpositions. RGNPF(X, X)(3) = 3 (T_0, T_4, T_8 all fix X). EMB(X, X) = 1 (only one form embedded in itself). Formula: 1 = 3/3.
 
-Sum = 12 (all transpositions accounted for)
+**Example 2**: X = major triad, Y = major scale, CANON = transpositions. RGNPF(X, Y)(3) = 3 (three transpositions embed X fully). Sum over all N = 12 (all 12 transpositions accounted for).
 
-For symmetric sets:
-- X = augmented triad = {C, E, G#}
-- RGNPF(X, X)(3) = 4 (T_0, T_4, T_8 map X to itself, plus identity)
-- EMB(X, X) = 1 (only one form of X embedded in X - itself)
-- 4 = 1 * 4 confirms the formula
+# Relationships
+## Builds Upon
+- **K-Relation Generalized** — RGNPF gives the full distribution, not just extremes
 
-# Related Concepts
-- INJ (Injection Function)
-- EMB (Embedding Function)
-- K and Kh Relations
-- Canonical Group
+## Enables
+- **EMB Function** — EMB derivable from RGNPF via the formula
+
+# Common Errors
+- **Error**: Confusing RGNPF (counts operations) with EMB (counts forms)
+  **Correction**: Symmetric sets have multiple operations per form; RGNPF counts operations, EMB counts forms
 
 # Common Confusions
-RGNPF counts operations, not forms. A symmetric set has fewer forms than operations mapping it to itself. The formula EMB = RGNPF(max)/RGNPF(self) corrects for this overcounting due to symmetry.
+- **Confusion**: Thinking RGNPF works for infinite CANON
+  **Clarification**: Finite CANON required; for infinite CANON, measure-theoretic generalizations are needed (section 6.10)
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, section 6.9
+Chapter 6: Generalized Set Theory (2), section 6.9, p. 185.
+
+# Verification Notes
+- Definition source: Direct from section 6.9
+- Confidence rationale: Explicit definition with formula
+- Re-extraction notes: Re-extracted from v2 card; preserved: EMB derivation formula, augmented triad symmetry example, major triad/scale example. Added v3.1 structure.

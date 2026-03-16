@@ -1,64 +1,101 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: INJ Generalizes IFUNC Theorem
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: inj-generalizes-ifunc
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: injection-function
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: "6.7.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Theorem 6.7.1"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-function
+  - ifunc
+  - transposition-operation
+extends:
+  - inj-function
+  - ifunc
+related:
+  - inj-transformation-theorem
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does IFUNC relate to INJ?"
+  - "In what sense does INJ generalize IFUNC?"
 ---
 
 # Quick Definition
-In any GIS, IFUNC can be expressed as a special case of INJ: IFUNC(X, Y)(i) = INJ(X, Y)(T_i).
+In any GIS, IFUNC is a special case of INJ: IFUNC(X, Y)(i) = INJ(X, Y)(T_i). This shows INJ is the more fundamental concept, with IFUNC arising when the transformation is a transposition.
 
-# Formal Definition
-Theorem 6.7.1: Let (S, IVLS, int) be a GIS. Then for each interval i and for all sets X and Y,
-IFUNC(X, Y)(i) = INJ(X, Y)(T_i)
+# Core Definition
+Theorem 6.7.1 (Lewin, p. 179): "Let (S, IVLS, int) be a GIS. Then for each interval i and for all sets X and Y, IFUNC(X, Y)(i) = INJ(X, Y)(T_i)." The proof shows that counting pairs (s, t) with s in X, t in Y, int(s, t) = i is the same as counting elements s of X with T_i(s) in Y.
 
-This shows that INJ is the more fundamental concept, with IFUNC being the special case when the transformation is a transposition.
+# Prerequisites
+- **INJ Function** — The generalizing function
+- **IFUNC** — The function being generalized
+- **Transposition Operation** — T_i is the specific transformation connecting the two
 
-# Mathematical Formulation
-Proof: Let IFUNC(X, Y)(i) = M and INJ(X, Y)(T_i) = N.
+# Key Properties
+1. IFUNC(X, Y)(i) = INJ(X, Y)(T_i) — exact equality
+2. INJ handles all transformations; IFUNC only handles transpositions
+3. All IFUNC theorems become special cases of INJ theorems
+4. INJ works without a GIS; IFUNC requires one
 
-Claim: N >= M.
-Since IFUNC(X, Y)(i) = M, there are M distinct pairs (x1, y1), ..., (xM, yM) with:
-- xm in X, ym in Y
-- int(xm, ym) = i, hence ym = T_i(xm)
+# Construction / Recognition
+## To Apply:
+1. In a GIS, any IFUNC computation can be done via INJ with transpositions
+2. Conversely, INJ with transpositions reduces to IFUNC
 
-The xm are distinct (else the pairs wouldn't be). So X has at least M elements whose T_i-images are in Y. Thus N >= M.
+## To Recognize:
+1. When analyzing transposition-based relationships, IFUNC and INJ are equivalent
 
-Claim: M >= N.
-Let z1, ..., zN be the N distinct elements of X mapping into Y under T_i.
-Each (zn, T_i(zn)) was counted among the pairs (xm, ym).
-So M >= N.
-
-Therefore M = N. Q.E.D.
-
-# Musical Context/Application
-This theorem justifies the claim that INJ is the "master function" for generalized set theory. IFUNC, developed in Chapter 5, is powerful but limited to GIS contexts. INJ works in any context with transformations, including non-GIS settings and non-operation transformations.
+# Context & Application
+This theorem justifies INJ as the "master function." Lewin visualizes: imagine X and Y as point configurations in a plane; interval i as a vector. IFUNC asks "how many arrows of that vector go from X to Y?" INJ asks "if I translate X by that vector, how many points coincide with Y?" These are the same question differently phrased.
 
 # Examples
-Geometric visualization:
-- Imagine X and Y as point configurations in a plane
-- Let i be "move right 5 inches at 30 degrees"
-- IFUNC(X, Y)(i): How many distinct arrows of that vector go from X-points to Y-points?
-- INJ(X, Y)(T_i): Move all of X by that vector; how many points coincide with Y?
+**Example 1** (p. 179): Geometric visualization — X and Y as point configurations. "To the right and up 30 degrees for 5 inches" as an interval. IFUNC counts distinct arrows; INJ counts coincidences after translation. They are equal.
 
-These are the same question phrased differently.
+**Example 2**: IFUNC({C, E}, {G, B})(7) = 2 = INJ({C, E}, {G, B})(T_7).
 
-In pitch-class space:
-- IFUNC({C, E}, {G, B})(7) = 2 (two perfect fifths from first dyad to second)
-- INJ({C, E}, {G, B})(T_7) = 2 (same: two elements of first dyad map to second)
+# Relationships
+## Builds Upon
+- **IFUNC** — Shows IFUNC is a special case of INJ
+- **INJ Function** — INJ is the more general concept
 
-# Related Concepts
-- INJ (Injection Function)
-- IFUNC (Interval Function)
-- Transposition Operations
-- GIS (Generalized Interval System)
+## Enables
+- **INJ Transformation Theorem** — Generalizes IFUNC transformation theorems
+- **System Modulation** — Extends IFUNC questions to arbitrary transformations
+
+# Common Errors
+- **Error**: Thinking INJ only works for transpositions
+  **Correction**: INJ works for ANY transformation; the theorem shows transpositions yield IFUNC as a special case
 
 # Common Confusions
-This theorem only equates IFUNC with INJ for transposition operations. INJ can handle any transformation, including non-transpositions and non-operations. IFUNC cannot engage wedge transformations, inversions directly, or non-GIS contexts.
+- **Confusion**: Thinking IFUNC and INJ are redundant
+  **Clarification**: INJ is strictly more general — it handles non-GIS contexts and non-operation transformations that IFUNC cannot
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, Theorem 6.7.1
+Chapter 6: Generalized Set Theory (2), Theorem 6.7.1, p. 179.
+
+# Verification Notes
+- Definition source: Direct from Theorem 6.7.1 with proof
+- Confidence rationale: Explicit theorem with proof and geometric visualization
+- Re-extraction notes: Re-extracted from v2 card; preserved: geometric visualization, pitch-class example. Added v3.1 structure.

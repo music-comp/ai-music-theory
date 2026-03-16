@@ -1,68 +1,94 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Webern Op. 27 Second Movement Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: webern-op27-second-movement-analysis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: serial-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (2): Non-Intervallic Transformations"
 chapter_number: 8
 pdf_page: 206
-unit: null
-authors: David Lewin
+section: "8.5"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - i-arrows-on-graphs
+  - ipair-graph
+extends: []
+related:
+  - webern-piano-variations-analysis
+  - isography
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do I-arrows reveal structure in Webern's op. 27 second movement?"
 ---
 
 # Quick Definition
-An analysis of the opening of Webern's Piano Variations op. 27, second movement, demonstrating how I-arrows (inversional relationships) capture the mirror symmetry and canonic structure more effectively than purely intervallic networks.
+Analysis of the opening of Webern's Piano Variations op. 27 second movement, comparing a transpositional network (Figure 8.12a) with a mixed I-arrow/T-arrow network (Figure 8.12b), showing how I-arrows better capture rhythmic motif, registration symmetry, row structure, and canonic structure.
 
-# Formal Definition
-The analysis (Figure 8.12) compares two network representations of the same passage:
-- (a): Intervallic/transpositional network (curved arrows)
-- (b): Mixed network with T-arrows (curved) and I-arrows (straight)
+# Core Definition
+Figure 8.12(a) analyzes the pitches with intervallic/transpositional arrows; (b) uses both T-arrows (curved) and I-arrows (straight), where I = inversion about pitch A4. "Graph (b) reflects the rhythmic motif of the music by a visual motif, the vertical I-arrow. It represents by a visual symmetry the mirror symmetry of the pitch registration. It makes manifest the row-structure of the passage, and the way in which that structure interacts with the dux/comes structure of the musical canon" (Lewin, 8.5, p. 192).
 
-I = I^A_A (inversion about pitch A4), capturing the mirror axis of the canonic writing.
+# Prerequisites
+- **I-arrows on graphs** — The analysis introduces I-arrows
+- **IPAIR graph** — Four IPAIR subnetworks appear
 
-# Mathematical Formulation
-Network (b) structure:
-- Vertical I-arrows create visual motif matching rhythmic motif
-- Four IPAIR subnetworks: Bb-G#, A-A, F-C#, D-E
-- Each pair related by I^A_A
+# Key Properties
+1. I = inversion about pitch A4
+2. Four IPAIR subnetworks: Bb-G#, A-A, F-C#, D-E
+3. I-arrows reflect rhythmic motif visually
+4. I-arrows represent mirror symmetry of registration
+5. I-arrows manifest row structure and dux/comes canon
 
-The IPAIR graph is thematic:
-- Appears in pitch-class pairs within the phrase
-- Appears in row-form relationship (prime and I-inversion)
-- Appears in movement 3 antecedent/consequent structure
+# Construction / Recognition
+## To Construct:
+1. Identify pitches in the passage
+2. Determine inversional relationships
+3. Build network with both T-arrows and I-arrows
+## To Recognize:
+1. Vertical I-arrows creating visual symmetry matching the music's mirror symmetry
 
-# Musical Context/Application
-Network (b) captures several features that (a) misses:
-1. The rhythmic motif (represented by vertical I-arrow as visual motif)
-2. Mirror symmetry of pitch registration
-3. Row structure of the passage
-4. Dux/comes relationship of the canon
-
-The analysis demonstrates that inversional arrows can be analytically superior to purely intervallic representations.
+# Context & Application
+The comparison of graphs (a) and (b) demonstrates that I-arrow networks can reveal compositional structure more clearly than pure T-arrow networks, even when both are "correct."
 
 # Examples
-From Figure 8.12:
-- The pitches come in rhythmically paired dyads
-- Each dyad is an I-related pair about A
-- Bb-G#, A-A, F-C#, D-E are the four pairs
-- The visual symmetry of (b) reflects the audible symmetry
+**Example 1** (Figure 8.12, p. 191): Network (a) uses only T-arrows; network (b) combines T and I arrows. Network (b) better reflects the music's structure at every level.
 
-Isographic applications:
-- Movement 2 opening pairs
-- Row-form pairing (prime/inversion)
-- Movement 3 formal sections
+# Relationships
+## Builds Upon
+- **I-arrows on graphs** — Primary demonstration of I-arrows
+- **IPAIR graph** — Four IPAIRs identified
+## Related
+- **Isography** — The IPAIRs are all isographic
+- **Webern Piano Variations analysis** — Broader analysis of the same work
 
-# Related Concepts
-- I-Arrows on Graphs
-- IPAIR Graph
-- Isography
-- Webern Piano Variations Analysis
-- Mirror Symmetry
+# Common Errors
+- **Error**: Preferring the T-only network because it is "intervallic"
+  **Correction**: The I-arrow network captures more of the compositional structure
 
 # Common Confusions
-- Network (a) is not wrong; network (b) simply reveals different features
-- The I operation is pitch inversion, not pitch-class inversion in this context
-- The "visual motif" in (b) corresponds to a rhythmic motif, not just abstract structure
-- Isography across different structural levels shows IPAIR as thematic
+- **Confusion**: Thinking the choice between (a) and (b) is arbitrary
+  **Clarification**: Network (b) "reflects more clearly than graph (a) not only the compositional structure of the passage but also our foreground perception of its shapes" (p. 192)
 
 # Source Reference
-Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.5, Figure 8.12
+Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.5, Figure 8.12, pages 190-192.
+
+# Verification Notes
+- Definition source: Direct from 8.5
+- Confidence rationale: Detailed comparative analysis
+- Re-extraction notes: Re-extracted from v2 card; preserved: four IPAIRs, rhythmic/registration/row/canon correspondences

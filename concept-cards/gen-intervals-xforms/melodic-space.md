@@ -1,55 +1,87 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Melodic Space
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory"
-chapter_number: A
-pdf_page: 276
-unit: null
+slug: melodic-space
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: multiple-gis-intuitions
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
 authors: David Lewin
+chapter: "Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory"
+chapter_number: null
+pdf_page: 276
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "scalar space"
+  - "step space"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - generalized-interval-system
+  - multiple-musical-spaces
+extends: []
+related:
+  - harmonic-space
+  - zarlino-istitutioni-harmoniche
+  - schenker-melodic-harmonic-synthesis
+contrasts_with:
+  - harmonic-space
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is melodic space?"
+  - "How does melodic space differ from harmonic space?"
 ---
 
 # Quick Definition
 Melodic space is a conception of musical space where distances between pitches are measured by steps along some scale (diatonic, chromatic, pentatonic, etc.), reflecting intuitions about melodic motion rather than harmonic ratios.
 
-# Formal Definition
-In melodic space, intervals are measured by counting scalar degrees or semitones traversed in moving from one pitch to another. The space is typically linear or modular, and the relevant GIS structure depends on which scale defines the steps (diatonic, chromatic, whole-tone, etc.). Melodic space contrasts with harmonic space, where intervals derive from frequency ratios.
+# Core Definition
+In melodic space, intervals are measured by counting scalar degrees traversed in moving from one pitch to another. The space is typically linear or modular, and the relevant GIS depends on which scale defines the steps. Chapter 2 surveyed various such spaces, and Appendix A examines how they interact with harmonic spaces. Zarlino's Book 3 treats intervals as melodic phenomena, showing "abstract harmonic ratios are accessible to our perception because they can be filled in by notes of a diatonic series in melodic space" (Lewin, Appendix A, p. 247).
 
-# Mathematical Formulation
-Melodic GIS structures:
-- Chromatic melodic space: IVLS = Z (or Z_12 for pitch classes)
-- Diatonic melodic space: IVLS = Z_7 (diatonic pitch classes)
-- The interval function counts scale steps
+# Prerequisites
+- **Generalized Interval System** — Melodic spaces are modeled as GIS structures
+- **Multiple Musical Spaces** — Melodic space is one of several coexisting spaces
 
-For chromatic space: int(C, E) = 4 (semitones)
-For diatonic space (C major): int(C, E) = 2 (scale steps)
-
-# Musical Context/Application
-Melodic space captures our intuitions about voice-leading, scalar motion, and contour. When we hear a melodic line moving "by step," we are thinking in melodic space. The distinction between major second (two semitones) and minor second (one semitone) disappears in pure diatonic melodic space, where both are "one step."
+# Key Properties
+1. Intervals measured by scalar steps, not frequency ratios
+2. The space depends on which scale defines the steps
+3. Chromatic melodic space: IVLS = Z (or Z/12Z)
+4. Diatonic melodic space: IVLS = Z/7Z
+5. In pure diatonic melodic space, all steps are equal (major and minor seconds are both "one step")
 
 # Examples
-**From Appendix A:**
-"In some of these spaces, our intuitions of directed distance or motion from one position to another were measured by steps along some melodic scale, diatonic or chromatic, linear or modular."
+**Example 1** (p. 245): F-to-Ab in Debussy's Reflets: "two steps along a diatonic scale in Db major" (melodic), vs. "three semitones along a chromatic scale" (also melodic, different space), vs. harmonic interval within Db-major triad (harmonic space).
 
-**Zarlino's synthesis:**
-"Book 3 [of Istitutioni harmoniche] discusses intervals all over again as phenomena in melodic space, and synthesizes that approach with the mathematical ideas of book 1. Abstract harmonic ratios are accessible to our perception (as well as our intellect) because they can be filled in by notes of a diatonic series in melodic space."
+**Example 2** (p. 247): Zarlino's synthesis: Book 3 discusses intervals "as phenomena in melodic space" after Book 1 treated them as harmonic ratios.
 
-**Schenker's Zug:**
-Schenker's concept of the Zug (stepwise linear progression) is essentially melodic-spatial: "articulated segments of a unidirectional diatonic series make sense to our understanding (as well as our perception) because of the harmonic relations obtaining between the boundaries of the segments."
+# Relationships
+## Related
+- **Harmonic Space** — the complementary spatial intuition
+- **Zarlino's Istitutioni Harmoniche** — successfully integrates melodic and harmonic
+- **Schenker's Melodic-Harmonic Synthesis** — Zug concept inhabits melodic space
 
-**Reflets dans l'eau:**
-The C5-Db5 relationship poses questions about melodic space: "To what extent is the piece diatonic-melodic, so that one scale-step is one scale-step, regardless of its acoustical size? To what extent is the melos chromatic, so that one semitone is something necessarily very different from two semitones, even if both are spanning one diatonic step?"
-
-# Related Concepts
-- Harmonic Space
-- Multiple Musical Spaces
-- Diatonic Collection
-- Chromatic Scale
-- Schenker's Zug
-- Voice-Leading
+## Contrasts With
+- **Harmonic Space** — measures by ratios/acoustic affinity rather than scalar steps
 
 # Common Confusions
-Melodic space is not simply "the space of melodies" but a specific way of measuring intervals by scalar steps. The same pitch interval (e.g., C to E) has different values in different melodic spaces (4 semitones in chromatic space, 2 steps in diatonic space). Students should specify which melodic space they mean.
+- **Confusion**: Thinking "melodic space" means "the space of melodies"
+  **Clarification**: It is a way of measuring intervals by scalar steps; the same pitches exist in both melodic and harmonic space with different interval values
 
 # Source Reference
-Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory
+Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory, pp. 245-250.
+
+# Verification Notes
+- Definition source: synthesized from Appendix A and Chapter 2 references
+- Confidence rationale: high — discussed throughout Appendix A
+- Re-extraction notes: Re-extracted from v2 card; preserved: Reflets example, Zarlino synthesis reference, Schenker Zug reference

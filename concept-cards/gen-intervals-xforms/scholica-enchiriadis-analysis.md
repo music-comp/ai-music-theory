@@ -1,70 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Scholica Enchiriadis Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: scholica-enchiriadis-analysis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: medieval-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.5.5"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Nos qui vivimus analysis"
+  - "Symphony of the Diatesseron analysis"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - graph-homomorphism
+  - network-of-networks
+extends: []
+related:
+  - product-networks
+  - formal-melody
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Lewin analyze medieval parallel organum using transformation networks?"
+  - "How do homomorphisms, product networks, and networks-of-networks differ?"
 ---
 
 # Quick Definition
-An analysis of the opening phrase from the Scholica Enchiriadis example of Symphony of the Diatesseron, demonstrating homomorphisms, product networks, and networks-of-networks through medieval parallel organum.
+An analysis of "Nos qui vivimus" from the Scholica Enchiriadis (Symphony of the Diatesseron), demonstrating graph homomorphisms, product networks, and two types of networks-of-networks applied to medieval parallel organum.
 
-# Formal Definition
-The analysis (Figure 9.8) examines "Nos qui vivimus" in parallel organum:
-- (a): Musical transcription showing Principalis and Organalis
-- (b): Graph of the melody (step intervals 1, -1, 0, 0)
-- (c): Disconnected network with separate Principalis and Organalis lines
-- (d): Product network (not a homomorphic image of (b))
-- (f): Network-of-networks with outer graph (b), inner graph (e)
-- (g): Network-of-networks with outer graph (e), inner graph (b)
+# Core Definition
+The analysis (Figure 9.8, Section 9.5.5) examines parallel organum at the fourth using multiple network models: (b) the melody graph; (c) a disconnected network with separate Principalis and Organalis lines; (d) a product network; (f) a network-of-networks with melody as outer graph and diatesseron as inner; (g) a network-of-networks with diatesseron as outer and melody as inner. Graph (b) is a homomorphic image of (c) but NOT of (d) -- no SGMAP can satisfy both SGMAP(1) = 1 and SGMAP(3) = 0 (Lewin, pp. 236-239).
 
-# Mathematical Formulation
-Homomorphism result:
-- Graph (b) IS a homomorphic image of graph (c)
-- NODEMAP: collapses corresponding Principalis/Organalis nodes
-- SGMAP: identity on interval group
-- Graph (b) is NOT a homomorphic image of graph (d)
-- Proof: No SGMAP can satisfy SGMAP(1) = 1 and SGMAP(3) = 0
+# Prerequisites
+- **Graph homomorphism** — the relationship between (c) and (b)
+- **Network of networks** — models (f) and (g)
 
-Product structure:
-- Graph (d) = "product" of graph (b) with graph (e)
-- Graph (e): two nodes related by interval 3 (the diatesseron)
+# Key Properties
+1. Multiple valid network models for the same music
+2. Homomorphism from (c) onto (b): NODEMAP collapses voice pairs, SGMAP = identity
+3. Non-homomorphism from (d) to (b): algebraically impossible
+4. Model (f): "singing the melody, singing diatessera as we go"
+5. Model (g): "Principalis sings the melody; I sing it in diatesseron relation"
+6. T3 (modal steps) differs from RISE(4/3) (harmonic ratio) -- a salient problem of the style
 
-# Musical Context/Application
-The analysis distinguishes multiple valid models for the same music:
-- (c): Two separate melodic lines
-- (d): Product of melody and diatesseron
-- (f): "Singing the melody, singing diatessera as we go"
-- (g): "Principalis sings the melody; I sing the melody in diatesseron relation"
+# Construction / Recognition
+## To Construct:
+1. Transcribe the organum
+2. Build separate network models (melody, voices, product, networks-of-networks)
+3. Test homomorphism relationships between them
+## To Recognize:
+1. Identify parallel motion at a fixed interval
+2. Test whether collapsing voices preserves graph structure
 
-The T_3 interval is "climb three rungs on the modal ladder" - not the same as RISE(4/3), the harmonic ratio 4:3. This distinction relates to performance problems of the style.
+# Context & Application
+This analysis demonstrates the variety of network models applicable to a single passage and the formal relationships between them. The distinction between models (f) and (g) reflects genuinely different ways of hearing the organum. The T3/RISE(4/3) distinction relates to intonation problems of medieval style.
 
 # Examples
-From Figure 9.8:
-- Melody intervals: 1, -1, 0, 0 (step motion in mode)
-- Diatesseron interval: 3 (the Symphony)
-- Product network has arrows labeled 1, -1, 0, 3
+**Example 1** (Figure 9.8, pp. 236-239): Melody intervals: 1, -1, 0, 0 (step motion). Diatesseron interval: 3. Product network has arrows labeled 1, -1, 0, 3. The non-homomorphism proof: SGMAP(1) = 1 forces SGMAP(3) = 3, but graph (b) would require SGMAP(3) = 0. Contradiction.
 
-The non-homomorphism result:
-- Any SGMAP preserving SGMAP(1) = 1 must have SGMAP(3) = 3
-- But arrows on (d) show paths with interval 3 that collapse to interval 0 in (b)
-- Therefore no valid SGMAP exists for (d) -> (b)
+# Relationships
+## Builds Upon
+- **Graph homomorphism** — tested between various models
+- **Network of networks** — models (f) and (g)
+## Related
+- **Product networks** — model (d)
+- **Formal melody** — graph (b) models a series as a network
 
-# Related Concepts
-- Graph Homomorphism
-- Network of Networks
-- Product Networks
-- Medieval Organum
-- Diatesseron Interval
+# Common Errors
+- **Error**: Assuming all network models of the same music are homomorphically related
+  **Correction**: The non-homomorphism (d) -> (b) demonstrates that distinct models need not be structurally reducible to each other
 
 # Common Confusions
-- T_3 (modal steps) differs from RISE(4/3) (frequency ratio)
-- The failure of homomorphism (d) -> (b) is a theorem, not a technical flaw
-- Multiple network models can be valid for the same music
-- The "Symphony" refers to the diatesseron relationship, not a musical form
+- **Confusion**: Thinking (f) and (g) model the same thing
+  **Clarification**: They represent genuinely different analytical perspectives on the same music
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.5.5, Figure 9.8
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.5.5, pp. 236-239. See Figure 9.8.
+
+# Verification Notes
+- Definition source: direct from Section 9.5.5 discussion
+- Confidence rationale: high -- extended worked example with formal proofs
+- Re-extracted from v2 card; preserved: non-homomorphism proof, T3/RISE(4/3) distinction, multiple model perspectives

@@ -1,58 +1,108 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Node/Arrow System
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: node-arrow-system
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: graph-network-foundations
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.1.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "node-arrow system"
+  - "(NODES, ARROW)"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - communication-between-nodes
+  - connected-system
+  - arrow-chain
+  - transformation-graph-definition
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a node/arrow system?"
+  - "What is the foundational structure underlying transformation graphs?"
+  - "What must I know before studying transformation networks?"
 ---
 
 # Quick Definition
-The foundational structure underlying transformation graphs: an ordered pair (NODES, ARROW) where NODES is a set and ARROW is a collection of ordered pairs of nodes indicating which nodes are connected by arrows.
+A node/arrow system is an ordered pair (NODES, ARROW) consisting of a set of nodes and a binary relation on those nodes, providing the combinatorial skeleton underlying all transformation graphs and networks.
 
-# Formal Definition
-A node/arrow system is an ordered pair (NODES, ARROW) where:
-- NODES is a family (set)
-- ARROW is a subfamily of NODES x NODES (ordered pairs of nodes)
-- Nodes N_1 and N_2 are "in the arrow relation" if (N_1, N_2) is in ARROW
-- By stipulation: Every node is in the arrow relation with itself ((N, N) in ARROW for all N)
+# Core Definition
+A node/arrow system is an ordered pair (NODES, ARROW) where NODES is a family (set) and ARROW is a subfamily of NODES x NODES (ordered pairs of nodes). Nodes N1 and N2 are "in the arrow relation" if (N1, N2) is in ARROW. By stipulation, every node is in the arrow relation with itself: (N, N) is in ARROW for all N in NODES (Lewin, Definition 9.1.1, p. 224).
 
-# Mathematical Formulation
-(NODES, ARROW) where:
-- NODES = {N_1, N_2, ..., N_k}
-- ARROW subset of NODES x NODES
-- Reflexive: (N, N) in ARROW for all N in NODES
-- Not necessarily symmetric: (N_1, N_2) in ARROW does not imply (N_2, N_1) in ARROW
+# Prerequisites
+This is a foundational concept for transformation graph/network theory. Prerequisites lie in earlier chapters:
+- **Semigroup** — needed to label arrows in subsequent graph constructions
+- **Transformation** — the node/arrow system serves as the skeleton that will carry transformation labels
 
-# Musical Context/Application
-Node/arrow systems provide the combinatorial skeleton for transformation graphs and networks. The nodes will eventually contain musical objects; the arrows will be labeled with transformations. The system itself is abstract, knowing nothing of musical content or transformation labels.
+# Key Properties
+1. ARROW is a reflexive relation: (N, N) is in ARROW for every N in NODES
+2. ARROW is not necessarily symmetric: (N1, N2) in ARROW does not imply (N2, N1) in ARROW
+3. The system is purely abstract, carrying no information about musical content or transformation labels
+4. Nodes may or may not be in the arrow relation; the relation defines the topology of the system
+
+# Construction / Recognition
+## To Construct:
+1. Specify a set NODES
+2. Specify which ordered pairs of distinct nodes are in the ARROW relation
+3. Include all reflexive pairs (N, N) by stipulation
+## To Recognize:
+1. Check that a set of nodes is identified
+2. Check that a binary relation (arrow relation) on nodes is specified
+3. Verify reflexivity: every node has an arrow to itself
+
+# Context & Application
+Node/arrow systems provide the combinatorial skeleton for transformation graphs and networks. The nodes will eventually contain musical objects; the arrows will be labeled with transformations from a semigroup. The system itself is abstract, knowing nothing of musical content or transformation labels. It is the first layer of structure in the hierarchy: node/arrow system < transformation graph < transformation network.
 
 # Examples
-From Figure 9.1:
-- M_1 and M_2 are NOT in the arrow relation (no arrow between them)
-- M_1 and M_3 ARE in the arrow relation
-- M_4 and M_3 ARE in the arrow relation
-- Arrows from each node to itself are understood
+**Example 1** (Figure 9.1, p. 224): A system with nodes M1 through M6. M1 and M2 are NOT in the arrow relation; M1 and M3 ARE. Arrows from each node to itself are understood. The system is not connected (it decomposes into two communicating components).
 
-A simple IPAIR system:
-- NODES = {N_1, N_2}
-- ARROW = {(N_1, N_1), (N_2, N_2), (N_1, N_2), (N_2, N_1)}
-- Every pair of nodes is in the arrow relation
+**Example 2** (Figure 9.5, p. 231): An IPAIR system with two nodes where every pair is in the ARROW relation: NODES = {N1, N2}, ARROW = {(N1, N1), (N2, N2), (N1, N2), (N2, N1)}.
 
-# Related Concepts
-- Transformation Graph
-- Transformation Network
-- Communication (between nodes)
-- Connected System
-- Arrow Chain
+# Relationships
+## Builds Upon
+- No formal prerequisites within Chapter 9; this is the base structure
+## Enables
+- **Transformation graph** — built by adding SGP and TRANSIT to a node/arrow system
+- **Arrow chain** — defined as a directed path through a node/arrow system
+- **Communication between nodes** — defined as an equivalence relation on nodes
+## Related
+- **Connected system** — a node/arrow system where all nodes communicate
+## Contrasts With
+- **Transformation graph** — adds semigroup labeling to the node/arrow skeleton
+
+# Common Errors
+- **Error**: Forgetting the reflexive arrows (N, N) when constructing a system
+  **Correction**: Reflexive arrows are stipulated for all nodes; they are always present even when not drawn
 
 # Common Confusions
-- The reflexive arrows (N to N) are always assumed but often not drawn
-- Being "in the arrow relation" is ordered: (N_1, N_2) differs from (N_2, N_1)
-- The system is abstract - no musical content or transformation labels yet
-- "Arrow" refers to the relation, not a physical drawing (though drawings represent it)
+- **Confusion**: Thinking "arrow" requires a physical drawing
+  **Clarification**: "Arrow" refers to membership in the ARROW relation, a formal binary relation, not necessarily a visual arrow on a diagram
+- **Confusion**: Assuming the arrow relation is symmetric
+  **Clarification**: (N1, N2) in ARROW does NOT imply (N2, N1) in ARROW; the relation is directed
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.1.1, Definition
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Definition 9.1.1, pp. 224-225. See Figure 9.1 for a concrete example.
+
+# Verification Notes
+- Definition source: direct from Definition 9.1.1 (high confidence)
+- The reflexivity stipulation is explicit in the source
+- Re-extracted from v2 card; preserved: IPAIR example, reflexive arrow clarification in confusions

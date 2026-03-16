@@ -1,69 +1,124 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "Debussy Reflets dans l'eau Analysis"
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: debussy-reflets-dans-leau-analysis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: impressionist-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transformation-network-definition
+  - isography
+  - graph-homomorphism
+extends: []
+related:
+  - motive-x
+  - motive-y
+  - z-forms
+  - chr-networks
+  - magic-pentachord
+  - product-networks
+  - three-semitone-interval
+  - ruffling-motive
+  - v-motive
+  - registral-climax-analysis
+  - tristan-chord-in-reflets
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Lewin analyze Debussy's Reflets dans l'eau?"
+  - "How can transformation networks reveal structure in impressionist music?"
 ---
 
 # Quick Definition
-Lewin's extensive analysis of Debussy's "Reflets dans l'eau" demonstrates how transformation networks reveal structural relationships in impressionist music, tracing the development of motives X, Y, Z and their transformations through the piece.
+Lewin's extensive analysis of Debussy's "Reflets dans l'eau" (measures 1-35 and beyond) demonstrates how transformation networks reveal the derivation and development of motivic material (X, Y, Z forms), chromatic networks (CHR), the proliferation of the 3-semitone interval, and the large-scale registral trajectory through the piece.
 
-# Formal Definition
-This analysis applies transformational networks to show how an opening three-note motive (X) generates subsequent motivic material (Y, Z forms) and large-scale structure through transformations T and T'. The analysis reveals the interrelation between pitch/interval structures, chromatic networks (CHR), and formal design, with particular attention to registral and dynamic climaxes.
+# Core Definition
+This analysis (Section 10.4) applies transformational networks to show how the opening three-note motive X (Db-Eb-Ab) generates subsequent motivic material (Y, Z forms) and large-scale structure through transformations T and T'. The analysis traces interrelations between pitch/interval structures, chromatic networks (CHR), homophonic coordination, product networks, the MAGIC pentachord, and the piece's registral and dynamic climaxes. T and T' have context-dependent meanings: "one diatonic step up," "major second up," "two semitones up," or "pitch-class interval 2" depending on context (Lewin, pp. 266-293).
 
-# Mathematical Formulation
-Primary transformations from motive X (Db-Eb-Ab):
-- T: maps Db to Eb (one diatonic step / major second / 2 semitones)
-- T': maps Ab to Eb (perfect fourth descent)
-- T^(-1): inverse of T
-- T^(-1)T': composite transformation mapping Ab to F (within Y)
+# Prerequisites
+- **Transformation network** — the analytical framework
+- **Isography** — CHR networks appear isographically at different transposition levels
+- **Graph homomorphism** — used to relate larger melodic structures to simpler patterns
 
-Motivic derivations:
-- X = (Db, Eb, Ab) with internal T and T' relations
-- Y derived from X: T relation "folded in" to become T^(-1)
-- Z forms synthesize X and Y materials
+# Key Properties
+1. Motive X = Db4-Eb4-Ab4, with internal T (Db to Eb) and T' (Ab to Eb) relations
+2. Y derived from X by "folding" the T-relation into T^{-1}
+3. Z-forms synthesize X, Y, and T(X) materials
+4. CHR graph models continuous chromatic rise over 3 semitones
+5. The 3-semitone interval (minor third) proliferates from secondary to structural element
+6. The registral trajectory involves "unfinished business" in the climax register (C5 and above)
+7. Breakthrough at mm. 57-58 in Eb major resolves the registral tension
 
-# Musical Context/Application
-The analysis demonstrates transformational theory's applicability to impressionist repertoire, where traditional harmonic analysis proves insufficient. The network approach captures how Debussy develops his material through interrelated transformations while maintaining compositional coherence across ambiguous harmonic surfaces.
+# Construction / Recognition
+## To Construct:
+1. Identify the core motives X, Y, Z and their internal transformational structure
+2. Trace derivations: Y from X, Z from X/Y/T(X)
+3. Map CHR networks in accompaniment
+4. Track the proliferation of the 3-semitone interval
+5. Analyze the large-scale registral trajectory
+## To Recognize:
+1. Look for recurring motivic cells related by T and T'
+2. Identify isographic CHR networks at different transpositions
+3. Track the 3-interval as it moves from secondary to structural
+
+# Context & Application
+This is one of Lewin's most extensive analytical demonstrations, showing transformational theory's power in impressionist repertoire. The analysis reveals how Debussy develops material through layered transformational processes while maintaining compositional coherence across an ambiguous harmonic surface. The analysis attends to dynamics, register, and performance questions alongside formal structure.
 
 # Examples
-**Motive X and derivatives (Figure 10.11):**
-- X = Db4-Eb4-Ab4 contains T (Db to Eb) and T' (Ab to Eb)
-- Y = Ab4-F4-Eb4 derived by "folding" T into T^(-1)
-- T(X) at measure 3: Eb-F-Bb generates new pitch Bb4
-- Z1 at measure 9 synthesizes X, Y, T(X) relationships
+**Example 1** (Figures 10.11-10.12, pp. 268-269): X = (Db, Eb, Ab). Y derived by folding T to T^{-1}: Y = (Ab, F, Eb). T(X) at m. 3 generates Bb4. Z1 at m. 9 synthesizes all these relationships.
 
-**CHR networks:**
-The chromatic rise figure (CHR) first appears beneath Z1: "a continuous chromatic rise of a certain object (here a certain 3-note chord), over a total span of three semitones" (Figure 10.13). CHR networks appear isographically at different transposition levels.
+**Example 2** (Figure 10.16, pp. 270-271): Product network showing how the 3-interval proliferates. The melodic F-Ab is verticalized in harmony; the interplay of horizontal and vertical 3-intervals generates structural Cb in the bass -- "the first middleground chromaticism of the piece."
 
-**The F-Ab interval:**
-The interval 3 (minor third F-Ab) proliferates as structural element:
-- Within Y as temporal boundary for Z1
-- Verticalized in harmony
-- Generates structural Cb in bass (Figure 10.16)
-- Unleashed in the Tristan-chord sequence (measures 20-21)
+**Example 3** (Figure 10.21, p. 283): The Eb-major breakthrough at mm. 57-58: "Bb4 and C5... finally make their breakthrough... to Eb5." The whole tonality has temporarily moved up from Db to Eb = T(Db) to support T(Z1).
 
-**Large-scale trajectory:**
-- C5 reached as "provisional climax" at measure 10
-- Ambiguous approach to Db5 at measure 30 (retrograde Z3)
-- Breakthrough at measures 57-58: "Here Bb4 and C5... finally make their breakthrough... to Eb5"
-- Key change to Eb major supports T-transposition of entire tonal structure
+# Relationships
+## Builds Upon
+- **Transformation network** — the analytical framework throughout
+## Related
+- **Motive X** — the generative opening motive
+- **Motive Y** — derived from X by folding
+- **Z-forms** — syntheses of X, Y, T(X)
+- **CHR networks** — chromatic rise graphs in accompaniment
+- **MAGIC pentachord** — a recurring harmonic entity
+- **Product networks** — used for the 3-interval analysis
+- **Three-semitone interval** — structural element that proliferates
+- **Ruffling motive** — characteristic rhythm/contour of m. 18
+- **V motive** — "variable" motive in mm. 24-29
+- **Registral climax analysis** — the C5/Db5 trajectory
+- **Tristan chord in Reflets** — chromatic sequence element
 
-# Related Concepts
-- Motive X
-- Motive Y
-- Z-Forms (Z1, Z2, Z3)
-- CHR Networks
-- T and T' Transformations
-- Product Networks
-- MAGIC Pentachord
+# Common Errors
+- **Error**: Treating T as having a single fixed meaning throughout
+  **Correction**: T has context-dependent meaning (diatonic step, major second, two semitones, pitch-class interval 2)
 
 # Common Confusions
-The transformations T and T' have context-dependent meanings: "Depending on various contexts... we sometimes hear the interval associated with T as one diatonic step up, sometimes as a major second up, sometimes as two semitones up, and sometimes as the pitch-class interval 2." This multiplicity is a feature, not a bug, of the transformational approach.
+- **Confusion**: Thinking the analysis is purely formal
+  **Clarification**: Lewin integrates performance questions (dynamics, tempo, phrasing) with formal analysis, discussing how interpretive choices affect structural readings
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figures 10.10-10.21
+Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Section 10.4, pp. 266-293. See Figures 10.10-10.21.
+
+# Verification Notes
+- Definition source: direct from Section 10.4 analytical discussion
+- Confidence rationale: high -- the most extensive analysis in the chapter
+- Re-extracted from v2 card; preserved: motive derivation chain, 3-interval proliferation, Eb breakthrough, T context-dependence

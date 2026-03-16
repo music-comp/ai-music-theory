@@ -1,65 +1,102 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Brahms Rhapsody Unrolling EMB Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: brahms-rhapsody-emb
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: rhythmic-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions"
 chapter_number: 5
 pdf_page: 119
-unit: null
-authors: David Lewin
+section: "5.4.3"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - emb-function
+  - release-ordering
+  - set-class
+extends:
+  - unrolling-interval-vector
+related:
+  - attack-ordered-dyad
+  - forwards-oriented-interval
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How can EMB be unrolled over time to model evolving perception?"
 ---
 
 # Quick Definition
-The unrolling EMB analysis of Brahms's G-Minor Rhapsody demonstrates how embedding numbers for competing set classes develop over rhythmic stages, revealing structural patterns.
+The unrolling EMB analysis of Brahms's G-Minor Rhapsody tracks how embedding numbers for competing set classes /X1/ and /X2/ develop over rhythmic stages, revealing that /X2/ "comes on late and strong."
 
-# Formal Definition
-The analysis (Figures 5.14-5.15) tracks:
-- Set Y = temporal configuration of the opening
-- Set classes /X1/ and /X2/ as potential structural templates
-- EMB(/X1/, Y) and EMB(/X2/, Y) at each stage of Y's unrolling
+# Core Definition
+Example 5.4.3 (Lewin, pp. 119-120, Figures 5.14-5.15): The set Y models temporal aspects of the Rhapsody's opening. Y is articulated into four stages based on release points. At each stage, EMB(/X1/, Y) and EMB(/X2/, Y) are computed, tracking how the listener's perception of rhythmic set-class dominance evolves.
 
-Stages articulate at release points of time spans, modeling evolving perception.
+# Prerequisites
+- **EMB Function** — The embedding numbers being tracked
+- **Release-Ordering** — Stages are determined by when spans end, not when they begin
+- **Set Class** — /X1/ and /X2/ are competing rhythmic set classes
 
-# Mathematical Formulation
-Four stages of Y:
-- Stage 1: EMB(/X1/, Y) = 1, EMB(/X2/, Y) = 1
-- Stage 2: EMB(/X1/, Y) = 2, EMB(/X2/, Y) = 2
-- Stage 3: EMB(/X1/, Y) = 2, EMB(/X2/, Y) = 3
-- Stage 4: EMB(/X1/, Y) = 3, EMB(/X2/, Y) = 5
+# Key Properties
+1. Stage 1: EMB(/X1/) = 1, EMB(/X2/) = 1 (tied)
+2. Stage 2: EMB(/X1/) = 2, EMB(/X2/) = 2 (still tied)
+3. Stage 3: EMB(/X1/) = 2, EMB(/X2/) = 3 (/X2/ pulls ahead)
+4. Stage 4: EMB(/X1/) = 3, EMB(/X2/) = 5 (/X2/ decisively ahead)
+5. /X2/ dominance is reinforced at the closing group, where the theme liquidates to /X2/-forms
 
-Observation: /X2/ "comes on late and strong":
-- Tied through Stage 2
-- Pulls ahead at Stage 3 (3 vs 2)
-- Decisively ahead at Stage 4 (5 vs 3)
+# Construction / Recognition
+## To Construct an Unrolling EMB Analysis:
+1. Model the passage as a set Y of time spans
+2. Articulate Y into stages at release points
+3. At each stage, compute EMB for the set classes of interest
+4. Track how values evolve across stages
 
-# Musical Context/Application
-The set class /X2/ becomes dominant as the phrase unfolds. This is reinforced at the end of the closing group, where the theme liquidates to alternating /X2/-forms on tonic and dominant of D minor.
+## To Recognize:
+1. A time-series of EMB values showing set-class "competition"
 
-The unrolling technique models real-time perception: we don't know a time span's duration until it ends, so EMB values update at release points.
+# Context & Application
+The technique models real-time perception: we cannot know a time span's duration until it ends, so EMB values update at release points. The analysis shows that augmented (canonical) forms X1' and X2' only "count" once the dotted half note releases at Stage 4. The rhythmic reading is not exclusive of other interpretations.
 
 # Examples
-From Figure 5.14:
-- Y models the opening phrase's rhythmic structure
-- X1 and X2 are specific rhythmic patterns
-- X1' and X2' are canonical (augmented) forms found in Y
+**Example 1** (Figures 5.14-5.15): Y models the opening of Brahms's G-Minor Rhapsody. X1' and X2' are augmented canonical forms found within Y. The dotted half note releasing at Stage 4 adds two forms of X2 but only one of X1, creating the decisive /X2/ advantage. This is "reinforced by the end of the closing group in the music, where the closing theme is liquidated rhythmically down to a succession of X2-forms alternating on the tonic and dominant of D minor."
 
-The dotted half note releases at Stage 4, adding:
-- One more form of X1 (bringing total to 3)
-- Two more forms of X2 (bringing total to 5)
+# Relationships
+## Builds Upon
+- **EMB Function** — The values being tracked
+- **Release-Ordering** — Determines stage articulation
 
-The augmented forms X1' and X2' only "count" once the dotted half has released - we didn't know it was a dotted half until then.
+## Enables
+- Understanding of how rhythmic structure can be analyzed through set-theoretic methods
 
-Musical interpretation: The /X2/ set class, which dominates the unrolled EMB analysis, returns as the structural liquidation pattern at the closing group.
+## Related
+- **Unrolling Interval Vector** — Analogous technique for interval vectors
 
-# Related Concepts
-- EMB (Embedding Function)
-- Unrolling Interval Vector
-- Release-Ordering
-- Time-Span Set Class
-- Rhythmic Analysis
+# Common Errors
+- **Error**: Computing EMB for the complete set without tracking temporal development
+  **Correction**: The unrolling reveals which set class dominates and when, information lost in a static EMB computation
 
 # Common Confusions
-The unrolling EMB technique differs from simply computing EMB for the complete set. It models perception developing over time. A set class might "lose" early but "win" late (or vice versa), and this temporal trajectory is analytically significant.
+- **Confusion**: Thinking the unrolling reveals "the" rhythmic structure
+  **Clarification**: It reveals one reading; Lewin notes that other rhythmic interpretations (e.g., reading triplet eighths for triplet rests) are also valid
 
 # Source Reference
-Chapter 5: Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions, Example 5.4.3 and Figures 5.14-5.15
+Chapter 5: Generalized Set Theory (1), Example 5.4.3, Figures 5.14-5.15, pp. 119-120.
+
+# Verification Notes
+- Definition source: Direct from Example 5.4.3
+- Confidence rationale: Detailed worked example with figures
+- Re-extraction notes: Re-extracted from v2 card; preserved: four-stage EMB values, closing group connection, alternative interpretations note. Added v3.1 structure.

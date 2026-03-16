@@ -1,76 +1,84 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Stockhausen Klavierstuck XI Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+slug: stockhausen-klavierstuck-xi
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: analytical-applications
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Klavierstuck XI analysis"
+  - "Stockhausen Piano Piece XI"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - referential-time-unit-problem
+  - local-time-unit
+extends: []
+related:
+  - carter-string-quartet-analysis
+  - time-span-gis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Stockhausen's Klavierstuck XI illustrate the referential time-unit problem?"
 ---
 
 # Quick Definition
-Stockhausen's Klavierstuck XI exemplifies music where no single referential time-unit exists, as performers choose tempi freely among six options for each of 19 notated groups, with even the same group potentially appearing at different tempi in one realization.
+Stockhausen's Klavierstuck XI (1956) exemplifies music where no fixed referential time-unit exists: the pianist freely chooses among six tempi for each of 19 notated groups, with even the same group potentially occurring at different tempi in one performance realization.
 
-# Formal Definition
-The piece consists of 19 groups of notes on a single large sheet. Performance instructions:
-1. Begin with any group that catches the eye
-2. Choose tempo, dynamic, and attack freely for the first group
-3. After each group, read the instructions at its end for the next group
-4. Look randomly to any other group and play with those instructions
-5. When any group is reached for the third time, the realization is complete
+# Core Definition
+The piece consists of 19 groups dispersed over a single large score sheet. The performer begins with any group, choosing tempo, dynamic, and attack freely. After each group, instructions at its end determine performance parameters for the next randomly chosen group. When a group is reached for the third time, the realization is complete. Each group has traditional internal notation, but global tempo is indeterminate. This makes "the" referential time-unit meaningless beyond each group's interior at its performed tempo (Lewin, pp. 98-99).
 
-# Mathematical Formulation
-**Tempo choices:**
-Each group may be played at any of six tempi, ranging from very slow to very fast.
+# Prerequisites
+- **Referential Time-Unit Problem** — The piece exemplifies this problem
+- **Local Time Unit** — Each group at its tempo defines a local unit
 
-**Consequence for time-unit:**
-- No fixed global tempo
-- Same group may occur at different tempi
-- "The" referential time-unit is indeterminate beyond each group's interior
+# Key Properties
+1. 19 notated groups with traditional internal rhythmic notation
+2. Six possible tempi per group (very slow to very fast)
+3. Same group may appear at different tempi in one realization
+4. Sequence of groups is performer-chosen (indeterminate)
+5. Highly mensural despite lacking a fixed tempo
+6. Local time-units exist within each group but no global unit governs the piece
 
-**Time-span GIS relevance:**
-Local time-units exist within each group at its performed tempo, but no global unit governs the piece.
-
-# Musical Context/Application
-Klavierstuck XI is a paradigm case for the referential time-unit problem:
-- Traditional notation exists within each group
-- But tempo is performer-chosen and variable
-- Even the sequence of groups is indeterminate
-
-This makes GIS 4.1.2 (which requires a fixed unit) inapplicable at the global level, while GIS 4.1.3 (unit-independent) can still describe intervallic relationships.
+# Context & Application
+The piece demonstrates that music can be "highly mensural" without a fixed time-unit, motivating the development of the reference-independent time-span GIS 4.1.3. GIS 4.1.2 (requiring a fixed unit) is inapplicable at the global level, while GIS 4.1.3 can describe intervallic relationships across tempo changes.
 
 # Examples
-**Local structure:**
-Within each group, traditional rhythmic notation applies. A quarter note in group A at a given tempo defines a local time-unit.
+**Example 1** (p. 98): Performance procedure: "the first [group] that catches his eye; this he plays, choosing for himself tempo..., dynamic level and type of attack."
 
-**Cross-group relations:**
-If group A is played at MM60 and group B at MM120, the "same" notated rhythm appears at different speeds. The relationship between these versions requires unit-independent interval measurement.
+**Example 2**: Cross-group tempo relationships: if group A at MM60 and group B at MM120, the "same" rhythm appears at different speeds, requiring unit-independent measurement.
 
-**Performance variation:**
-Realization 1: Group 5 at MM100, then at MM60
-Realization 2: Group 5 at MM60, then at MM100
-
-Same group, different tempo relationships within one performance.
-
-**Mensural perception:**
-Despite lacking a fixed tempo, the piece is "highly mensural"--rhythmic proportions within and between groups are clearly audible.
-
-# Related Concepts
-- Referential Time-Unit Problem
-- Time-Span GIS
-- Local Time Unit
-- Indeterminate Music
-- Multiple Tempo Layers
+# Relationships
+## Related
+- **Carter String Quartet Analysis** — another multi-tempo example
+- **Time-Span GIS** — the analytical tool for such music
 
 # Common Confusions
-1. **Not "without rhythm":** The piece has strong rhythmic structure within groups. The indeterminacy is in tempo choice and ordering.
-
-2. **Six tempi:** These are discrete choices, not a continuum. But which tempo applies varies by performance and group occurrence.
-
-3. **Third-time rule:** A group appearing three times ends the piece. This creates different durations for different realizations.
-
-4. **Lewin's purpose:** The piece illustrates music that resists assigning "the" time-unit, not music that lacks rhythmic organization.
+- **Confusion**: Thinking the piece is "without rhythm"
+  **Clarification**: Each group has precise internal rhythmic notation; only the global tempo and ordering are indeterminate
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, discussion of examples, pp. 98-99
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, pp. 98-99.
+
+# Verification Notes
+- Definition source: direct from Chapter 4 discussion
+- Confidence rationale: high — explicit description of performance procedure
+- Re-extraction notes: Re-extracted from v2 card; preserved: performance instructions, six-tempi detail, third-time rule, mensural-despite-indeterminate observation

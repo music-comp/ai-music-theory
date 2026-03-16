@@ -1,54 +1,89 @@
 ---
-concept: "TCH Interval (Transposition Chain Interval)"
-category: theory
-source: Generalized Musical Intervals and Transformations
+# === CORE IDENTIFICATION ===
+concept: TCH Interval
+slug: tch-interval
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: motivic-analysis
+tier: advanced
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.1"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases:
+  - "transposition chain interval"
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tch-transformation
+  - rich-transformation
+extends: []
+related:
+  - mozart-k550-development-analysis
+  - bartok-syncopation-analysis
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a TCH interval in the context of RI-chaining?"
 ---
 
 # Quick Definition
-The TCH interval is the consistent transposition interval that relates successive forms of a motive in an RI-chain, measuring the pitch-class distance between corresponding positions in adjacent chain members.
+The TCH interval is the transposition distance between successive forms in an RI-chain, measuring how far each RICH-transformed motive is transposed from the previous one.
 
-# Formal Definition
-In an RI-chain of motivic forms, the TCH (Transposition Chain) interval is the interval by which each successive RICH-transformed form is transposed relative to its predecessor. When motive M undergoes RICH to produce M', the relationship between M and M' involves both the retrograde-inversion operation and a characteristic transpositional distance.
+# Core Definition
+In an RI-chain of motive forms linked by RICH, the TCH interval measures the transposition between successive forms. In the Mozart K.550 analysis, the TCH interval is a falling fourth (the pitch-class distance between successive PM-forms). In the Bartok analysis, the TCH interval is 5 (spanning the trichords). The TCH interval depends on the specific motive and its intervallic content (Lewin, Sections 10.1-10.2).
 
-# Mathematical Formulation
-For an RI-chain with forms M_1, M_2, M_3, ...:
-- M_2 = RICH(M_1)
-- M_3 = RICH(M_2)
-- The TCH interval = int(corresponding pitch of M_n, corresponding pitch of M_{n+1})
+# Prerequisites
+- **TCH transformation** — the transposition chain operation
+- **RICH transformation** — the RI-chain operation that generates successive forms
 
-If M_1 = (a, b, c) and TCH = t:
-- M_2 shares the last pitch c with M_1
-- The first pitch of M_2 = c (the linking pitch)
-- Subsequent forms continue the chain at interval t
+# Key Properties
+1. Measures transposition distance between consecutive RI-chain forms
+2. Determined by the intervallic content of the motive
+3. A falling fourth in the Mozart K.550 PM chain
+4. Equal to 5 in the Bartok Syncopation trichord chains
+5. The TCH interval is fixed for a given motive within a chain
 
-# Musical Context/Application
-The TCH interval characterizes the rate of transposition within an RI-chain, providing a measure of how quickly the chain moves through pitch space. Different TCH intervals produce chains with different harmonic and registral properties.
+# Construction / Recognition
+## To Construct:
+1. Identify consecutive forms in an RI-chain
+2. Measure the transposition between them
+## To Recognize:
+1. Look for a constant transposition distance between successive chain members
+
+# Context & Application
+The TCH interval characterizes the "speed" of an RI-chain through pitch space. Different motives produce different TCH intervals, and the specific TCH interval shapes the harmonic trajectory of the chain.
 
 # Examples
-In the Mozart K.550 development analysis (Figure 10.1):
-- The pitch motive PM = (diminished fourth up, diminished seventh down)
-- TCH interval = falling fourth
-- PM-forms chain as: (E-Ab-B), (Ab-B-Eb), (B-Eb-F#), (Eb-F#-Bb), (F#-Bb-C#), (Bb-C#-F), (C#-F-G#)
+**Example 1** (Section 10.1, p. 252): Mozart K.550 PM chain: (E-Ab-B), (Ab-B-Eb), (B-Eb-F#), ... TCH interval = falling fourth.
 
-Each successive form begins on the pitch that ended the previous form (the linking pitch), and the overall trajectory descends by fourths.
+**Example 2** (Section 10.2, p. 262): Bartok "Syncopation" trichord chains. TCH interval = 5.
 
-In Bartok's "Syncopation" (Figure 10.6), intervals of 5 span the trichords and measure the TCH-transpositions, creating a "triple proportion" that sounds "almost like I-IV-V-I."
+# Relationships
+## Builds Upon
+- **TCH transformation** — the operation whose interval is measured
+## Related
+- **Mozart K.550 development analysis** — TCH interval = falling fourth
+- **Bartok Syncopation analysis** — TCH interval = 5
 
-# Related Concepts
-- RICH Transformation
-- RI-Chain
-- Pitch Motive (PM)
-- Linking Pitch
-- Triple Proportion
-- Transposition Networks
+# Common Errors
+- **Error**: Assuming TCH interval is the same for all motives
+  **Correction**: It depends on the specific motive's intervallic content
 
 # Common Confusions
-The TCH interval should not be confused with the internal intervals of the motive itself. TCH measures the intervallic relationship between successive chain members, not the intervals within a single motive form. Also, TCH is specific to RI-chains; other chain types may have different characteristic intervals.
+- **Confusion**: Confusing TCH interval with RICH interval
+  **Clarification**: RICH links adjacent forms; TCH measures the net transposition between them
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figures 10.1, 10.6
+Chapter 10, Sections 10.1-10.2, pp. 252, 262.
+
+# Verification Notes
+- Definition source: synthesized from Sections 10.1-10.2
+- Confidence rationale: high -- explicitly used in multiple analyses
+- Re-extracted from v2 card; preserved: falling fourth and 5 examples

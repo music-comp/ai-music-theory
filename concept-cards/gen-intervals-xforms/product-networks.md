@@ -1,63 +1,92 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Product Networks
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: product-networks
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: structural-analysis
+tier: advanced
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.4"
+# === CONFIDENCE ===
+extraction_confidence: medium
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transformation-network-definition
+  - isography
+extends: []
+related:
+  - network-of-networks
+  - three-semitone-interval
+  - debussy-reflets-dans-leau-analysis
+contrasts_with:
+  - network-of-networks
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a product network?"
+  - "How do product networks differ from networks of networks?"
 ---
 
 # Quick Definition
-A product network combines two or more simpler networks by adjoining them, typically coupling melodic and bass networks that share the same abstract graph structure (isography) while containing different pitch content.
+A product network adjoins isographic sub-networks to display simultaneously operating structural layers, as in Figure 10.16 where melody and bass Y-forms are displayed in parallel, revealing how horizontal intervals are verticalized in harmony.
 
-# Formal Definition
-A product network is formed by adjoining multiple isographic networks, each operating on different musical elements (e.g., soprano and bass), into a single compound structure. The networks share graph structure and transformation labels but contain different node contents. The product captures how parallel musical dimensions are organized by the same transformational logic.
+# Core Definition
+A product network combines isographic sub-networks, one below another, revealing how the same transformational structure operates simultaneously in different registers or voices. In the Debussy analysis, Figure 10.16 adjoins a melodic network (I(Y) = F-Ab-Bb) above a bass network (J(Y) = Ab-Cb-Db), both isographic and connected by vertical 3-intervals. The product network is formally distinct from a network-of-networks (Lewin, Section 10.4, p. 270; cf. Section 9.5.5, p. 238).
 
-# Mathematical Formulation
-For networks N1 and N2 with isographic graphs G:
-- Product network P = N1 x N2
-- P inherits the graph structure G
-- Each node in P contains ordered pairs (n1, n2) from N1 and N2
-- Arrows in P represent simultaneous application of transformations
+# Prerequisites
+- **Transformation network** — the component sub-networks
+- **Isography** — the sub-networks share graph structure
 
-Properties:
-- Vertical relationships between corresponding nodes form a separate intervallic layer
-- The interval between soprano and bass nodes can itself be structurally significant
+# Key Properties
+1. Adjoins isographic sub-networks vertically
+2. Reveals simultaneous structural layers
+3. Shows how horizontal intervals become vertical
+4. Formally distinct from networks-of-networks
+5. The Scholica Enchiriadis product network (d) is a precursor (Section 9.5.5)
 
-# Musical Context/Application
-Product networks reveal how composers coordinate multiple voices or registers through parallel transformational structures. They are particularly useful for analyzing homophonic passages where soprano and bass (or other voice pairs) follow related but distinct paths.
+# Construction / Recognition
+## To Construct:
+1. Build isographic networks for different voices/registers
+2. Adjoin them vertically
+3. Connect with vertical transformation arrows
+## To Recognize:
+1. Look for parallel isographic structures in different registers
+
+# Context & Application
+Product networks reveal how composers deploy the same transformational structure across multiple voices or registers simultaneously, creating vertical (harmonic) relationships from horizontal (melodic) ones.
 
 # Examples
-**Figure 10.16 in "Reflets dans l'eau":**
-"Figure 10.16 is a 'product network.' It adjoins beneath a copy of figure 10.15(c) the bass notes of the dominant-thirteenth chords in an isographic network."
+**Example 1** (Figure 10.16, p. 270): Melody = I(Y) = F-Ab-Bb above bass = J(Y) = Ab-Cb-Db. Both are isographic; vertical 3-intervals connect them. This shows "how the pitch and pitch-class interval 3 is proliferating as a constructive element."
 
-Upper network (melodic): F4-Ab4-Bb4 (inverted Y form)
-Lower network (bass): Ab2-Cb3-Db3 (J(Y) form)
-- Both networks share the same graph structure
-- Vertical interval = 3 (pitch-class relation between soprano and bass)
+# Relationships
+## Builds Upon
+- **Transformation network** and **Isography**
+## Related
+- **Three-semitone interval** — product networks reveal its proliferation
+- **Debussy Reflets analysis** — primary example
+## Contrasts With
+- **Network of networks** — formally distinct; product networks are not hierarchically nested
 
-"These are exactly the bass notes of measures 9-10 which are in pitch-class relation 3 to the melody above them. Beyond participating in that relation, the pitches Ab2 and Db3 on figure 10.16 also function as temporal and registral boundaries for the bass line over measures 9-10."
-
-**Interval 3 proliferation:**
-"Figure 10.16 shows how the pitch and pitch-class interval 3 is proliferating as a constructive element of the composition."
-- Horizontal: melodic F-to-Ab within Y
-- Vertical: soprano-bass relation throughout
-- Generative: produces structural Cb in bass
-
-**Connection to motivic structure:**
-The product network demonstrates how the initially "secondary" interval (3, spanning F-Ab within Y) becomes structural through both horizontal (melodic) and vertical (harmonic) proliferation.
-
-# Related Concepts
-- Isographic Relationships
-- Network Isography
-- CHR Networks
-- Debussy Reflets dans l'eau Analysis
-- Voice-Leading Networks
+# Common Errors
+- **Error**: Conflating product networks with networks-of-networks
+  **Correction**: Product networks adjoin parallel structures; networks-of-networks nest structures hierarchically
 
 # Common Confusions
-A product network is not merely two networks written one above the other. The isographic relationship between the constituent networks is essential: they must share graph structure and transformation types. The product captures systematic coordination between voices, not coincidental parallelism.
+- **Confusion**: Thinking product networks require identical contents
+  **Clarification**: They require isographic graphs, not identical contents
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figures 10.15-10.16
+Chapter 10, Section 10.4, p. 270. Figure 10.16. Cf. Section 9.5.5 (Scholica Enchiriadis product).
+
+# Verification Notes
+- Definition source: synthesized from Sections 9.5.5 and 10.4
+- Confidence rationale: medium -- described through examples rather than numbered definition
+- Re-extracted from v2 card; preserved: Figure 10.16 example, distinction from network-of-networks

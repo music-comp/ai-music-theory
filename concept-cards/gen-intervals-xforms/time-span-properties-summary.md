@@ -1,87 +1,88 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Time-Span GIS Properties Summary
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+slug: time-span-properties-summary
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: rhythmic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Notes 4.1.7"
+  - "time-span GIS summary"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - time-span-gis
+  - time-span-transposition
+  - time-span-inversion
+  - time-span-interval-preserving-operation
+extends:
+  - time-span-gis
+related:
+  - commutative-vs-noncommutative-gis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the key properties of the time-span GIS?"
+  - "How do the abstract results from Chapter 3 apply to the time-span GIS?"
 ---
 
 # Quick Definition
-The time-span GIS exhibits several distinctive properties due to its non-commutativity: only the identity interval is central, transpositions don't preserve intervals, inversions are maximally rigid, and no interval-reversing operations exist.
+Notes 4.1.7 summarizes how the abstract GIS theory from Chapter 3 specializes to the time-span GIS: T_{(i,p)}(a,x) = (a+ix, px), P_{(h,u)}(a,x) = (h+ua, ux), only (0,1) is central, no non-identity transposition preserves intervals, and every distinct pair of time spans defines a distinct inversion.
 
-# Formal Definition
-**Notes 4.1.7 Summary:**
+# Core Definition
+Notes 4.1.7 collects the key formulas and facts for GIS 4.1.3: (A) T_{(i,p)}(a,x) = (a+ix, px); (B) LABEL(a,x) = (a,x) with ref = (0,1); (C) T_{(i,p)}(a,x) = (a,x)(i,p) (right-multiplication); (D) P_{(h,u)}(a,x) = (h+ua, ux) (left-multiplication); (E) only (0,1) is central; (F) no transposition preserves intervals except identity; (G) I_{(c,z)}^{(d,w)}(a,x) = (d+(c-a)w/x, zw/x); (H) I_s^t = I_{s'}^{t'} iff s=s' and t=t'; (I) no interval-reversing operations exist (Lewin, Notes 4.1.7, pp. 112-114).
 
-(E) The only central member of IVLS is (0, 1).
+# Prerequisites
+- **Time-Span GIS** — The GIS whose properties are summarized
+- **Time-Span Transposition** — Property (A)
+- **Time-Span Inversion** — Property (G)-(H)
+- **Time-Span Interval-Preserving Operation** — Property (D)
 
-(F) No transposition preserves intervals, and no interval-preserving operation is a transposition, except for the identity T(0,1) = P(0,1).
+# Key Properties
+1. (A) T_{(i,p)}(a,x) = (a+ix, px)
+2. (B) LABEL(a,x) = (a,x) with ref = (0,1)
+3. (C) T_{(i,p)}(a,x) = (a,x)(i,p)
+4. (D) P_{(h,u)}(a,x) = (h+ua, ux)
+5. (E) Only (0,1) is central in IVLS
+6. (F) No transposition preserves intervals (except identity)
+7. (G) I_{(c,z)}^{(d,w)}(a,x) = (d+(c-a)w/x, zw/x)
+8. (H) Rigid inversions: I_s^t = I_{s'}^{t'} iff s=s' and t=t'
+9. (I) No interval-reversing operations
 
-(H) I_s^t = I_{s'}^{t'} iff s' = s AND t' = t.
-
-(I) There are no interval-reversing operations on TMSPS.
-
-# Mathematical Formulation
-**Centrality (E):**
-(i, p) is central iff (i, p)(j, q) = (j, q)(i, p) for all (j, q).
-(i + pj, pq) = (j + qi, qp) for all j, q implies p = 1 and i = 0.
-
-**Transposition/Interval-preserving (F):**
-By Theorem 3.4.8, Ti = Pi iff i is central.
-Since only (0, 1) is central, only T(0,1) = P(0,1) = identity.
-
-**Inversion rigidity (H):**
-By Theorem 3.5.3, I_s^t = I_{s'}^{t'} iff t' = I_s^t(s') and int(s', s) is central.
-Since only (0, 1) is central, s' = s (int(s', s) = e implies s' = s).
-Then t' = I_s^t(s) = t.
-
-**No interval-reversal (I):**
-This restates Theorem 3.6.4 for the time-span case.
-
-# Musical Context/Application
-These properties show how radically different the time-span GIS is from familiar pitch-class theory:
-
-| Property | Pitch-class GIS | Time-span GIS |
-|----------|-----------------|---------------|
-| Central intervals | All | Only identity |
-| T preserves intervals | Always | Never (except identity) |
-| T = P | Always | Never (except identity) |
-| I_u^v = I_v^u | Always | Never (except u = v) |
-| # distinct inversions | n | n^2 |
-| Interval-reversing | = Inversions | Don't exist |
+# Context & Application
+This summary serves as a reference for how all the abstract machinery from Chapter 3 — transpositions, interval-preserving operations, inversions, interval-reversing operations — manifests in the concrete non-commutative time-span GIS. It concretely illustrates the theoretical distinctions between commutative and non-commutative GIS behavior.
 
 # Examples
-**Centrality failure:**
-(1, 2)(0, 3) = (1, 6)
-(0, 3)(1, 2) = (3, 6)
-So (1, 2) is not central.
+See individual cards for time-span-transposition, time-span-inversion, and time-span-interval-preserving-operation.
 
-**Transposition interval distortion:**
-s = (0, 1), t = (3, 1), int(s, t) = (3, 1)
-T(1,2)(s) = (1, 2), T(1,2)(t) = (5, 2)
-int(T(1,2)(s), T(1,2)(t)) = ((5-1)/2, 1) = (2, 1) =/= (3, 1)
+# Relationships
+## Builds Upon
+- **Time-Span GIS** — all properties are specializations of GIS 4.1.3
 
-**Inversion uniqueness:**
-In 12-tone pitch classes: I_0 = I_6 = ... (many notations for same operation)
-In time-spans: I_{(0,1)}^{(1,1)} =/= I_{(0,1)}^{(1,2)} =/= I_{(0,2)}^{(1,1)} (all different)
-
-# Related Concepts
-- Time-Span GIS
-- Central Interval
-- Transposition and Interval Preservation
-- Interval-Reversing Operation
-- Non-Commutative GIS
-
-# Common Confusions
-1. **These are consequences of non-commutativity:** The strange properties follow from IVLS being non-commutative, not from any peculiarity of time spans per se.
-
-2. **"Transposition" means something different:** In time-span GIS, T(i,p) is still the operation moving each element by interval (i, p). But it doesn't behave like pitch transposition.
-
-3. **Inversions are uniquely determined:** There's no "simplifying" I_{(a,x)}^{(b,y)} to a simpler notation. Each parameter pair is essential.
-
-4. **Figure 4.4 revisited:** The figure shows equal intervals int(s1, t1) = int(s2, t2), but s1 precedes s2 while t1 follows t2. Transposition doesn't preserve order!
+## Related
+- **Commutative vs. Non-Commutative GIS** — this summary concretely illustrates the abstract distinctions
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Notes 4.1.7(E)-(I), pp. 113-114
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Notes 4.1.7(A)-(I), pp. 112-114.
+
+# Verification Notes
+- Definition source: direct from Notes 4.1.7
+- Confidence rationale: high — explicit enumerated properties
+- Re-extraction notes: Re-extracted from v2 card; preserved: complete enumeration of all nine properties

@@ -1,85 +1,108 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Commutative Time-Span GIS
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+slug: commutative-time-span-gis
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: rhythmic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "GIS 4.1.2"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - time-span
+  - direct-product-gis
+  - generalized-interval-system
+extends:
+  - direct-product-gis
+related:
+  - referential-time-unit-problem
+contrasts_with:
+  - time-span-gis
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the commutative time-span GIS?"
+  - "How does the time-span GIS relate to simpler time-point and duration GIS structures?"
 ---
 
 # Quick Definition
-The commutative time-span GIS (Example 4.1.2) uses the interval function int((a,x), (b,y)) = (b-a, y/x). This simpler structure is useful when a fixed time unit can be assumed, but it depends on the choice of unit.
+The commutative time-span GIS (Example 4.1.2) uses int((a,x), (b,y)) = (b-a, y/x), measuring temporal distance in absolute units and duration ratio. It is a direct-product GIS that depends on the choice of referential time-unit.
 
-# Formal Definition
-**Example 4.1.2:** Take S = TMSPS. Take IVLS to be the direct-product group of:
-- Real numbers under addition (for temporal distance)
-- Positive reals under multiplication (for duration ratio)
+# Core Definition
+Example 4.1.2: Take S = TMSPS. IVLS is the direct-product group R x R+ with (i, p)(j, q) = (i + j, pq). Define int((a, x), (b, y)) = (b - a, y/x). This is a commutative GIS. The interval measures absolute temporal distance (b - a) and duration ratio (y/x). Unlike GIS 4.1.3, this GIS depends on the choice of time-unit: changing units transforms (b - a) to (b - a)u (Lewin, Example 4.1.2, pp. 92-93).
 
-Define: int((a, x), (b, y)) = (b - a, y/x)
+# Prerequisites
+- **Time Span** — Elements are time spans (a, x)
+- **Direct-Product GIS** — This is literally a direct product of time-point and duration GIS
+- **Generalized Interval System** — The GIS framework
 
-Then (TMSPS, IVLS, int) is a commutative GIS.
+# Key Properties
+1. int((a, x), (b, y)) = (b - a, y/x)
+2. IVLS = R x R+ with commutative operation (i, p)(j, q) = (i + j, pq)
+3. Independent of zero time-point choice (Property A of 4.1.4)
+4. NOT independent of time-unit choice (fails Property B of 4.1.4)
+5. Is a direct-product GIS: time-point GIS x duration GIS
+6. Duration ratio y/x is shared with GIS 4.1.3
 
-# Mathematical Formulation
-**IVLS structure:**
-IVLS = R x R+ with operation (i, p)(j, q) = (i + j, pq)
-This is commutative: (i, p)(j, q) = (j, q)(i, p) since addition and multiplication are commutative.
+# Construction / Recognition
+## To Construct:
+1. Take the time-point GIS (R, R, b - a) and the duration GIS (R+, R+, y/x)
+2. Form their direct product
 
-**Interval calculation:**
-int((a, x), (b, y)) = (b - a, y/x)
-- First component: temporal distance in absolute units
-- Second component: duration ratio (unit-independent)
+## To Recognize:
+1. Temporal distance is measured in absolute units, not span-lengths
+2. The two interval components are independent (direct product structure)
 
-**Contrast with GIS 4.1.3:**
-GIS 4.1.2: int = (b - a, y/x) - uses absolute time units
-GIS 4.1.3: int = ((b-a)/x, y/x) - uses first span as unit
-
-# Musical Context/Application
-This GIS is appropriate when:
-- A fixed referential time unit exists and is analytically significant
-- The music has a clear global beat or pulse
-- We want to measure absolute temporal distances
-
-It is NOT appropriate when:
-- No single time unit governs the texture
-- Different layers have independent tempi
-- We need reference-independence
+# Context & Application
+This simpler GIS is appropriate when a fixed referential time-unit exists (e.g., the quarter-note in Classical-period music). It fails for music with multiple simultaneous tempi (Carter, Stockhausen, Nancarrow) where no single time-unit governs the texture. It was encountered earlier as Example 3.3.2.
 
 # Examples
-**Basic interval:**
-s = (0, 1), t = (5, 2)
-int(s, t) = (5 - 0, 2/1) = (5, 2)
-Meaning: t begins 5 units after s and lasts twice as long.
+**Example 1** (p. 92): Basic interval:
+- s = (0, 1), t = (5, 2): int(s, t) = (5, 2) — "5 units later, twice as long"
 
-**Unit-dependence:**
-In beat units: s = (0, 1), t = (5, 2)
-In half-beat units: s = (0, 2), t = (10, 4)
-int (half-beats) = (10 - 0, 4/2) = (10, 2)
+**Example 2** (p. 93): Unit-dependence:
+- In beat units: int((0, 1), (5, 2)) = (5, 2)
+- In half-beat units: int((0, 2), (10, 4)) = (10, 2) — first component changed!
 
-Different first component! The interval depends on the unit choice.
+# Relationships
+## Builds Upon
+- **Direct-Product GIS** — this is a direct product of two simpler GIS
 
-**When it's appropriate:**
-Classic tonal music with clear meter: the quarter note (or other fixed value) serves as unambiguous referential unit. GIS 4.1.2 works well.
+## Enables
+- Understanding of what the non-commutative GIS improves upon
 
-**When it fails:**
-Carter's mm.22-32: no single unit works for all instruments. GIS 4.1.2 would give different intervals depending on which tempo we privilege.
+## Contrasts With
+- **Time-Span GIS** — GIS 4.1.3 divides by x to achieve reference-independence
 
-# Related Concepts
-- Time-Span GIS (Non-commutative)
-- Direct-Product GIS
-- Referential Time-Unit Problem
-- Time-Span Interval Independence
-- Theorem 4.1.4
+# Common Errors
+- **Error**: Using this GIS when the music has no fixed time-unit
+  **Correction**: For multi-tempo music, use GIS 4.1.3 which is reference-independent
 
 # Common Confusions
-1. **"Simpler" =/= "better":** GIS 4.1.2 is algebraically simpler (commutative) but less powerful (unit-dependent).
-
-2. **Duration ratio is shared:** Both GIS use y/x for duration ratio. Only the temporal distance component differs.
-
-3. **Property (A) but not (B):** GIS 4.1.2 has zero-point independence but not unit independence.
-
-4. **Direct-product structure:** GIS 4.1.2 is literally the direct product of two simpler GIS (time-points and durations). GIS 4.1.3 has a more intricate composition law.
+- **Confusion**: Thinking "simpler" means "better"
+  **Clarification**: GIS 4.1.2 is algebraically simpler (commutative) but less powerful (unit-dependent). GIS 4.1.3 is more complex but captures more about rhythmic structure.
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Example 4.1.2 and subsequent discussion, pp. 92-93
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Example 4.1.2, pp. 92-93.
+
+# Verification Notes
+- Definition source: direct from Example 4.1.2
+- Confidence rationale: high — explicit example
+- Re-extraction notes: Re-extracted from v2 card; preserved: unit-dependence example, contrast with GIS 4.1.3, Carter/Stockhausen context

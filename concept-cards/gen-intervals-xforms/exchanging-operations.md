@@ -1,68 +1,94 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "Exchanging Operations (X1, X2, X4, X5)"
-category: technique
-source: Generalized Musical Intervals and Transformations
-chapter: "Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
-chapter_number: B
-pdf_page: 282
-unit: null
+slug: exchanging-operations
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: octatonic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
 authors: David Lewin
+chapter: "Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
+chapter_number: null
+pdf_page: 282
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - X1
+  - X2
+  - X4
+  - X5
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - octatonic-pitch-class-set
+extends: []
+related:
+  - strans2-group
+  - queer-operations
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the exchanging operations X1, X2, X4, X5?"
 ---
 
 # Quick Definition
-The exchanging operations X1, X2, X4, and X5 are STRANS2 operations that swap pairs of pitch classes within the octatonic collection according to their semitone distance, creating involutions that exchange elements between the two diminished-seventh chords.
+Operations in STRANS2 that exchange pairs of pitch classes within the octatonic collection at specified semitone distances: X1 exchanges elements 1 semitone apart, X2 at 2 semitones, X4 at 4 semitones, and X5 at 5 semitones.
 
-# Formal Definition
-The exchanging operations are four involutions (self-inverse operations) in STRANS2 that swap pairs of pitch classes in the octatonic set S based on their intervallic distance. X_n exchanges pitch classes that are n semitones apart within S. Each X operation exchanges all four pairs simultaneously, swapping elements between the two constituent diminished-seventh chords.
+# Core Definition
+"X1 exchanges pitch classes within S that lie one semitone apart; it thus maps C to C#, C# to C, D# to E, E to D#, F# to G, G to F#, A to A#, and A# to A. X2 exchanges pitch classes that lie two semitones apart; it maps C to A#, A# to C, C# to D#, F# to E, and so on. X4 exchanges pitch classes that lie four semitones apart... X5 exchanges pitch classes that lie five semitones apart" (Lewin, Appendix B, p. 251).
 
-# Mathematical Formulation
-X1 exchanges pitch classes 1 semitone apart:
-- C <-> C#, D# <-> E, F# <-> G, A <-> A#
-- Each element swaps with its semitone neighbor
+# Prerequisites
+- **Octatonic pitch-class set** — The exchanging operations act on S
 
-X2 exchanges pitch classes 2 semitones apart:
-- C <-> A#, C# <-> D#, F# <-> E, G <-> A (approximately)
+# Key Properties
+1. X1: exchanges pairs 1 semitone apart (C<->C#, D#<->E, F#<->G, A<->A#)
+2. X2: exchanges pairs 2 semitones apart (C<->A#, C#<->D#, F#<->E, etc.)
+3. X4: exchanges pairs 4 semitones apart
+4. X5: exchanges pairs 5 semitones apart
+5. Each X operation is an involution (self-inverse)
+6. Members of STRANS2 (not STRANS1)
+7. Commute with all STRANS1 operations
 
-X4 exchanges pitch classes 4 semitones apart:
-- Pairs separated by major third within S
+# Construction / Recognition
+## To Construct:
+1. Choose a semitone distance d (1, 2, 4, or 5)
+2. Exchange each element with the element d semitones away (within S)
+## To Recognize:
+1. An involution on S that swaps pairs of elements at a fixed distance
 
-X5 exchanges pitch classes 5 semitones apart:
-- Pairs separated by perfect fourth within S
-
-Properties:
-- X_n * X_n = RO (each is an involution)
-- All X operations commute with all members of STRANS1
-- X operations exchange elements between the two diminished-seventh chords
-
-# Musical Context/Application
-The exchanging operations provide voice-leading transformations that swap pitch classes at specific intervallic distances. They can be useful for analyzing passages that feature systematic pitch-class exchanges or symmetrical voice-leading patterns within octatonic contexts.
+# Context & Application
+The exchanging operations, along with the queer operations, give STRANS2 its distinctive character. They provide novel analytical tools for octatonic music, generating "a more novel sort of family" of set-forms than standard T/I operations.
 
 # Examples
-**X1 definition:**
-"X1 exchanges pitch classes within S that lie one semitone apart; it thus maps C to C#, C# to C, D# to E, E to D#, F# to G, G to F#, A to A#, and A# to A."
+**Example 1** (p. 251): X1: C<->C#, D#<->E, F#<->G, A<->A#. Each element swaps with its semitone neighbor.
 
-**X2 definition:**
-"X2 exchanges pitch classes that lie two semitones apart; it maps C to A#, A# to C, C# to D#, F# to E, and so on."
+# Relationships
+## Related
+- **STRANS2 group** — X1, X2, X4, X5 are members
+- **Queer operations** — Fellow STRANS2 members
 
-**X4 definition:**
-"X4 exchanges pitch classes that lie four semitones apart; it maps F# to A#, E to C, G to D#, and so on."
-
-**X5 definition:**
-"X5 exchanges pitch classes that lie five semitones apart; it maps A to E, D# to A#, F# to C#, and so on."
-
-**Role in STRANS2:**
-The four X operations, together with RO, Q3, R6, and Q9, form the complete STRANS2 group. They ensure that STRANS2 is simply transitive on S while remaining distinct from STRANS1.
-
-# Related Concepts
-- STRANS2 Group
-- Queer Operations
-- Octatonic Pitch-Class Set
-- Simply Transitive Groups
-- Involution
-- Voice-Leading Transformations
+# Common Errors
+- **Error**: Assuming exchanging operations are standard inversions
+  **Correction**: They are involutions on S that have no simple twelve-tone counterpart
 
 # Common Confusions
-The X operations are not inversions in the traditional twelve-tone sense. They are involutions (self-inverse operations) that swap specific pairs of pitch classes. X1, for example, swaps each pitch class with its semitone neighbor, regardless of any inversional axis concept.
+- **Confusion**: Thinking X3 should exist
+  **Clarification**: X3 would exchange elements 3 semitones apart, which equals R6 (already in STRANS2 as a rotation); similarly X6 = RO (identity within each dim7 pair)
 
 # Source Reference
-Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups
+Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups, page 251.
+
+# Verification Notes
+- Definition source: Direct quotation from Appendix B
+- Confidence rationale: Explicitly defined with mappings
+- Re-extraction notes: Re-extracted from v2 card; preserved: complete X1 mapping, involution property

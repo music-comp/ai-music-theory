@@ -1,82 +1,82 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Rational Spectra GIS
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+slug: rational-spectra-gis
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: timbral-gis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "GIS 4.2.2"
+  - "linear filter GIS"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - generalized-interval-system
+  - timbral-gis
+extends:
+  - timbral-gis
+related: []
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How can linear filter classes be modeled as a GIS?"
 ---
 
 # Quick Definition
-The rational spectra GIS models filter classes where elements are rational functions of frequency, representing the class of linear filters that transform sounds by frequency-dependent amplitude scaling.
+The rational spectra GIS models linear filter classes as elements, where each "rational spectrum" is a positive rational function of frequency, and intervals represent the filter needed to transform one spectrum into another.
 
-# Formal Definition
-**Example 4.2.2:** A "rational spectrum" is a function s(x) for frequency x in [LO, HI] satisfying:
-(A) s(x) = p(x)/q(x) for polynomial functions p and q
-(B) s(x) > 0 for all x in [LO, HI]
+# Core Definition
+Example 4.2.2: A "rational spectrum" is a function s(x) = p(x)/q(x) (ratio of polynomials) that is strictly positive for all x in [LO, HI]. S = all rational spectra; IVLS = same family under pointwise multiplication; int(s, t) = t/s (pointwise quotient). This is a commutative GIS. Each rational spectrum corresponds to a class of linear filters (built from all-zero and all-pole components) that multiply the power at frequency x by s(x) (Lewin, Example 4.2.2, pp. 117-118).
 
-S = family of all rational spectra
-IVLS = S (same family, viewed as multiplicative group)
-Group operation: pointwise multiplication
-int(s, t) = t/s (pointwise quotient)
+# Prerequisites
+- **Generalized Interval System** — The GIS framework
+- **Timbral GIS** — The simpler discrete-partial timbral GIS of Example 4.2.1
 
-(S, IVLS, int) is a commutative GIS.
-
-# Mathematical Formulation
-**Group structure of IVLS:**
-- Closure: (p1/q1)(p2/q2) = (p1p2)/(q1q2) is rational
-- Identity: constant function 1(x) = 1
-- Inverse: (p/q)^(-1) = q/p (positive since p/q was positive)
-- Associativity: inherited from function multiplication
-
-**Filter interpretation:**
-Each rational spectrum s corresponds to a class of linear filters. Filter-class s transforms input sound to output by multiplying the power at frequency x by s(x).
-
-# Musical Context/Application
-This GIS models digital audio processing:
-- All-zero filters (FIR)
-- All-pole filters (IIR)
-- Combined linear filters
-
-The rational function form covers most practical linear filters in computer music.
+# Key Properties
+1. Elements are positive rational functions of frequency
+2. IVLS is the same set under pointwise multiplication
+3. int(s, t) = t/s (pointwise quotient)
+4. Commutative GIS
+5. Models linear filter classes (FIR and IIR filters)
+6. The frequency range [LO, HI] can be varied
 
 # Examples
-**Simple filter:**
-s(x) = x^2 / (x^2 + 1) for frequencies in [20, 20000] Hz
-This boosts high frequencies relative to low.
+**Example 1** (p. 117): If s is a current spectrum and t is a desired spectrum, int(s, t) = t/s is the filter needed to transform s into t.
 
-**Interval as transformation:**
-If s is current spectrum and t is desired spectrum:
-int(s, t) = t/s is the filter needed to transform s to t.
+**Example 2** (p. 118): Filter concatenation: filter s followed by filter t = filter st (pointwise product).
 
-**Filter concatenation:**
-Filter s followed by filter t = filter st (pointwise product).
-Composing filters = multiplying in the group.
+# Relationships
+## Builds Upon
+- **Timbral GIS** — extends from discrete partials to continuous frequency spectra
 
-**Transposition of filters:**
-Ti(s) = si (the filter shifted by interval i)
-Preserves the group structure of filter composition.
-
-**Computer music reference:**
-Cann's "Analysis/Synthesis Tutorial" in Computer Music Journal explains these techniques.
-
-# Related Concepts
-- Timbral GIS
-- Filter Design
-- Linear Time-Invariant Systems
-- Computer Music
-- Spectral Processing
+## Related
+- Computer music techniques described in Cann's "Analysis/Synthesis Tutorial"
 
 # Common Confusions
-1. **Functions as elements:** S consists of functions, not numbers. Each "point" in S is an entire frequency-response curve.
-
-2. **Positivity constraint:** s(x) > 0 is required for s to be invertible in the multiplicative group.
-
-3. **Frequency range:** LO and HI can be varied; the GIS depends on this choice.
-
-4. **Rational = ratio of polynomials:** This is a technical constraint that covers most practical filters.
+- **Confusion**: Thinking elements are numbers
+  **Clarification**: Each element is an entire function of frequency — a frequency-response curve
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Example 4.2.2, pp. 117
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Example 4.2.2, pp. 117-118.
+
+# Verification Notes
+- Definition source: direct from Example 4.2.2
+- Confidence rationale: high — explicit example
+- Re-extraction notes: Re-extracted from v2 card; preserved: filter interpretation, concatenation example, frequency range variability

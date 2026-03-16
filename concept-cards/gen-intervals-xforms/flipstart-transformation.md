@@ -1,60 +1,89 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: FLIPSTART Transformation
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: flipstart-transformation
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: serial-operations
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (2): Non-Intervallic Transformations"
 chapter_number: 8
 pdf_page: 206
-unit: null
-authors: David Lewin
+section: "8.3.2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - flipend-transformation
+contrasts_with:
+  - flipend-transformation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the FLIPSTART transformation?"
 ---
 
 # Quick Definition
-A transformation on three-element series that inverts the first element about the second element, preserving the last two elements: FLIPSTART transforms s_1-s_2-s_3 into a-s_2-s_3, where a is the inversion-about-s_2 of s_1.
+A transformation on three-element series that inverts the first element about the second, preserving the last two: FLIPSTART(s_1-s_2-s_3) = a-s_2-s_3, where a = I^{s_2}(s_1).
 
-# Formal Definition
-FLIPSTART operates on series of three pitches or pitch classes:
-- FLIPSTART(s_1-s_2-s_3) = a-s_2-s_3
-- Where a = I^{s_2}(s_1), the inversion of s_1 about s_2
-- int(s_1, a) = int(s_1, s_2) + int(s_2, a) where int(s_2, a) = int(s_1, s_2)
+# Core Definition
+"Dually, FLIPSTART transforms s_1-s_2-s_3 into a-s_2-s_3, where a is the inversion-about-s_2 of s_1; then FLIPSTART^{-1} transforms t_1-t_2-t_3 into t_1-b-t_3, where b is the inversion-about-t_1 of t_3" (Lewin, 8.3.2, p. 189).
 
-FLIPSTART^(-1) transforms t_1-t_2-t_3 into t_1-b-t_3, where b is the inversion-about-t_1 of t_3.
+# Prerequisites
+- (none specific within this source)
 
-# Mathematical Formulation
-For s = s_1-s_2-s_3:
-- a = 2*s_2 - s_1 (in pitch or pitch-class arithmetic)
-- FLIPSTART(s) = a-s_2-s_3
+# Key Properties
+1. Operates only on 3-element series
+2. Preserves the last two elements (s_2 and s_3)
+3. "Flips" the first element about the second
+4. FLIPSTART^{-1} preserves first and third, flips the second about the first
+5. Dual to FLIPEND (acting on opposite end of series)
 
-Properties:
-- FLIPSTART preserves the last two elements
-- FLIPSTART "flips" the first element about the second
-- FLIPSTART and FLIPEND are "dual" operations (acting on opposite ends)
+# Construction / Recognition
+## To Construct:
+1. Keep s_2 and s_3
+2. Compute a = 2*s_2 - s_1 (inversion of s_1 about s_2)
+3. Result: a-s_2-s_3
+## To Recognize:
+1. Last two elements unchanged; first reflected about the second
 
-# Musical Context/Application
-FLIPSTART and FLIPEND were identified by Jonathan W. Bernard for analyzing Varese's treatment of registral space. When alternated with FLIPEND, these operations generate systematic expansions and contractions of pitch intervals.
+# Context & Application
+When alternated with FLIPEND, creates chains of three-pitch series modeling registral expansion, contraction, and displacement in Varese's music (Bernard's analysis formalized by Lewin).
 
 # Examples
-From Figure 8.11:
-- (a) and (b) show different starting series
-- FLIPEND arrows above, FLIPSTART^(-1) arrows below
-- Alternating creates chains exploring registral space
+**Example 1** (Figure 8.11, p. 190): Two starting series produce different chains when FLIPEND and FLIPSTART^{-1} alternate.
 
-Specific transformation:
-- If s = C-E-G, then FLIPSTART(s) = G#-E-G (where G# = inversion of C about E)
-- int(C, E) = 4; int(E, G#) = 4 (same interval, continued upward)
+# Relationships
+## Related
+- **FLIPEND transformation** — Dual operation acting on the series ending
+## Contrasts With
+- **FLIPEND transformation** — FLIPSTART flips the start; FLIPEND flips the end
 
-# Related Concepts
-- FLIPEND Transformation
-- Varese Analysis
-- Registral Space
-- Inversion Operations
-- Three-Element Series
+# Common Errors
+- **Error**: Thinking FLIPSTART and FLIPEND are inverse operations
+  **Correction**: They are "dual" (acting on opposite ends), not inverses
 
 # Common Confusions
-- FLIPSTART only operates on three-element series
-- The "flip" is about the second element, not the first
-- FLIPSTART is different from FLIPSTART^(-1)
-- FLIPSTART and FLIPEND are "dual" but not inverse operations
+- **Confusion**: Assuming these only apply to atonal music
+  **Clarification**: While motivated by Varese analysis, the operations are defined abstractly for any three-element series
 
 # Source Reference
-Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.3.2, Figure 8.11
+Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.3.2, Figure 8.11, page 189.
+
+# Verification Notes
+- Definition source: Direct from 8.3.2
+- Confidence rationale: Explicitly defined
+- Re-extraction notes: Re-extracted from v2 card; preserved: duality with FLIPEND, inverse definition

@@ -1,56 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Nuclear Gesture
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: nuclear-gesture
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: interval-transposition-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (1): Intervals and Transpositions"
 chapter_number: 7
 pdf_page: 188
-unit: null
-authors: David Lewin
+section: "7.3"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "nuclear gesture with pickup"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - intervals-as-transpositions
+extends: []
+related:
+  - complementary-gesture
+  - brahms-horn-trio-analysis
+contrasts_with:
+  - complementary-gesture
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the nuclear gesture in Lewin's Brahms analysis?"
 ---
 
 # Quick Definition
-An intervallic configuration comprising pitch-class interval 4 subarticulated into two intervals of 2, typically approached by a pickup interval of 5 - the central structural gesture of Brahms's Horn Trio op. 40, last movement.
+An intervallic/transpositional structure consisting of pitch-class interval 4 subarticulated into two intervals of 2, with a pickup gesture of pitch-class interval 5, governing the last movement of Brahms's Horn Trio op. 40.
 
-# Formal Definition
-The nuclear gesture with pickup (Figure 7.6):
-- Overall interval: 4
-- Subarticulation: 2 + 2
-- Pickup gesture: approaching by pitch-class interval 5
+# Core Definition
+The nuclear gesture (Figure 7.6) "comprises the pitch-class interval (transposition) 4, subarticulated into two intervals (transpositions) of 2. The pickup gesture consists in approaching something by pitch-class interval/transposition 5" (Lewin, 7.3, p. 164). The complementary gesture articulates 8 into 10 + 10. These structures dominate the intervallic/transpositional configurations throughout the movement.
 
-The gesture relates to the complementary gesture (8 = 10 + 10), which uses the complementary intervals.
+# Prerequisites
+- **Intervals as transpositions** — The gesture is described in both interval and transposition language
 
-# Mathematical Formulation
-As a network graph:
-- Three nodes connected by arrows labeled 2
-- Overall span: 4 = 2 + 2
-- Pickup node connected by arrow labeled 5
+# Key Properties
+1. Nuclear gesture: overall interval 4 = 2 + 2
+2. Pickup: approach by pitch-class interval 5
+3. Complementary gesture: overall interval 8 = 10 + 10
+4. The pickup interval 5 never gets "complemented" (never becomes 7)
+5. Pitch-class intervals are used rather than pitch intervals, for reasons clarified through the analysis
 
-In pitch-class terms:
-- Example: Eb-F-G with pickup from Bb
-- int(Eb, F) = 2, int(F, G) = 2, int(Bb, Eb) = 5
+# Construction / Recognition
+## To Construct:
+1. Identify the interval 4 subarticulated into two steps of 2
+2. Add approach by interval 5 as pickup
+## To Recognize:
+1. An overall pitch-class transposition of 4 achieved in two steps of 2
+2. Preceded by approach motion of 5
 
-# Musical Context/Application
-The nuclear gesture governs the basic motive of the Horn Trio's last movement and its elaborations throughout. The gesture appears at multiple structural levels, from foreground motives to background bass progressions. It pairs with the complementary gesture to create the movement's intervallic logic.
+# Context & Application
+Lewin traces the nuclear and complementary gestures through passages (a) through (h) of Figure 7.7. In early passages (a)-(d), the gestures are subordinate to pitch/pitch-class motives. Beginning with passage (f), "the intervallic/transpositional networks take on a life of their own. They become autonomous structures; no longer subordinated to concomitant local pitch or pitch-class events, they rather interact with such events or perhaps even determine them" (p. 166).
 
 # Examples
-From Figure 7.7:
-- (a) First half of basic motive: nuclear gesture with pickup
-- (b) Bass line of opening phrase: governed by nuclear gesture, each stage inflected by pickup
-- The pitch classes Eb-F-G function as degrees 1-2-3 in Eb major
+**Example 1** (Figure 7.7a, p. 165): The basic motive has the nuclear gesture with pickup governing its first half; the complementary gesture governs the second half.
 
-# Related Concepts
-- Complementary Gesture
-- Brahms Horn Trio Analysis
-- Pickup Gesture
-- Intervallic Network
-- Gestural Augmentation
+**Example 2** (Figure 7.7g, pp. 167-168): The horn solo (mm. 137-44) projects the complementary gesture; measures 145-49 project "the complementary gesture times 2" (4 = 8 + 8), where intervallic values are multiplied by 2 alongside rhythmic augmentation.
+
+# Relationships
+## Builds Upon
+- **Intervals as transpositions** — The gesture uses interval/transposition duality
+## Enables
+- **Brahms Horn Trio analysis** — The primary analytical application
+## Related
+- **Complementary gesture** — The paired structure (8 = 10 + 10)
+## Contrasts With
+- **Complementary gesture** — Nuclear (4 = 2 + 2) vs. complementary (8 = 10 + 10)
+
+# Common Errors
+- **Error**: Using pitch intervals or diatonic intervals instead of pitch-class intervals
+  **Correction**: Lewin uses pitch-class intervals for reasons that "become clear by the end of this discussion" (p. 164)
 
 # Common Confusions
-- The nuclear gesture is an intervallic structure, not tied to specific pitch classes
-- The gesture operates at multiple structural levels, not just the foreground
-- The pickup is an integral part of the full gestural unit, not an optional prefix
-- The term "nuclear" indicates structural centrality, not atomic physics
+- **Confusion**: Thinking the nuclear gesture is always subordinate to pitch events
+  **Clarification**: In passages (f)-(h), the intervallic structures become autonomous
 
 # Source Reference
-Chapter 7: Transformation Graphs and Networks (1): Intervals and Transpositions, Section 7.3, Figure 7.6
+Chapter 7: Transformation Graphs and Networks (1): Intervals and Transpositions, Section 7.3, Figures 7.6-7.7, pages 164-169.
+
+# Verification Notes
+- Definition source: Direct quotation from 7.3
+- Confidence rationale: Explicitly defined and named in source
+- Re-extraction notes: Re-extracted from v2 card; preserved: complementary gesture times 2, autonomy observation

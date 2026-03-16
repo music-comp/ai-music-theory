@@ -1,62 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: START Node
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: start-node
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: graph-network-structure
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.7.6"
+
+# === CONFIDENCE ===
+extraction_confidence: medium
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - input-node
+  - precedence-ordered-system
+extends: []
+related:
+  - carriage-return-function
+  - beethoven-appassionata-analysis
+contrasts_with:
+  - input-node
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How can structural priority be established when formal input nodes don't match musical intuition?"
 ---
 
 # Quick Definition
-A formal node adjoined to a network with an arrow pointing to a designated "starting" node, providing a mechanism to establish structural priority that supersedes formal input nodes.
+A START node is a formal device -- a node containing "START" adjoined to a network with an arrow to a designated structurally prior node -- declared by convention to supersede all other input nodes, establishing structural priority independently of the graph's intrinsic arrow structure.
 
-# Formal Definition
-A START node is a node added to the node/arrow system such that:
-1. It contains the symbol "START" (or similar marker)
-2. An arrow issues from START to a designated node N
-3. START is declared to supersede other input nodes in function
-4. The START arrow establishes structural priority independently of the graph's intrinsic input nodes
+# Core Definition
+The START node is adjoined to the node/arrow system along with an arrow from START to a designated node. A formal convention declares it supersedes all other input nodes in function. When starting at the START node, reaching certain other input nodes requires traversing arrows backwards, formally capturing their subordinate status. The analytic criterion for placing the START arrow may be diachronic (the music starts there) or synchronic (that node begins a higher-level tonic function) (Lewin, Section 9.7.6, pp. 247-248).
 
-# Mathematical Formulation
-Formally adjoining START:
-- New NODES' = NODES union {START}
-- New ARROW' = ARROW union {(START, N)} for designated N
-- The START node becomes the unique input in NODES'
-- All former input nodes can now be reached from START only by traversing arrows
+# Prerequisites
+- **Input node** — START supersedes intrinsic input nodes
+- **Precedence-ordered system** — the context in which START addresses structural priority
 
-# Musical Context/Application
-START nodes address situations where formal input nodes do not match structural priority. When a graph has multiple inputs or when the formal input does not represent the musical "beginning," a START node can designate the analytically prior element. This is particularly useful for:
-- Tonal centers that are not graph-theoretic inputs
-- Temporal beginnings that differ from structural origins
-- Analytical readings that prioritize specific nodes
+# Key Properties
+1. START is formally adjoined to the existing system (new node + new arrow)
+2. Declared by convention to supersede other input nodes
+3. Reaching other input nodes from START may require traversing arrows backwards
+4. The analytic criterion for START placement may be diachronic or synchronic
+5. START itself has no musical contents (or contains only the marker "START")
+
+# Construction / Recognition
+## To Construct:
+1. Identify the node that should have structural priority
+2. Adjoin a new START node to NODES
+3. Add an arrow from START to the designated node
+4. Declare START supersedes all other input nodes
+## To Recognize:
+1. Look for an adjoined node labeled START with an arrow to a specific node
+
+# Context & Application
+START nodes address situations where formal input nodes don't match analytical intuitions about structural priority. In the Beethoven Appassionata, the Gb nodes are formal inputs but Db has tonal priority. A START node pointing to Db captures this priority. Nodes reachable from START only by backward arrow-traversal are thereby formally subordinated.
 
 # Examples
-From Figure 9.14(b) (Beethoven Appassionata):
-- The Gb nodes are formal input nodes (arrows only go out)
-- But Db has structural priority as tonic
-- A START node pointing to Db establishes this priority
-- From START, reaching Gb nodes requires walking arrows backwards
-- This asymmetry formally captures Gb's subordinate status
+**Example 1** (Figure 9.14(b), pp. 247-248): Beethoven Appassionata slow movement. The Gb nodes are formal inputs, but Db has structural priority as tonic. A box labeled "START" with an arrow to the Db node is adjoined. From START, reaching Gb requires traversing arrows backwards, formally capturing Gb's subordinate status despite its input position.
 
-Criteria for placing START arrow:
-- Diachronic: Point to the first event heard in music
-- Synchronic: Point to the structurally prior element (e.g., tonic)
-- Either criterion is valid depending on analytical purpose
+# Relationships
+## Builds Upon
+- **Input node** — START addresses limitations of intrinsic input nodes
+## Related
+- **Carriage return function** — both address discrepancies between graph structure and musical priority
+- **Beethoven Appassionata analysis** — primary example
+## Contrasts With
+- **Input node** — intrinsic graph property vs. externally adjoined convention
 
-# Related Concepts
-- Input Node
-- Output Node
-- Precedence Ordering
-- Structural Priority
-- Beethoven Appassionata Analysis
+# Common Errors
+- **Error**: Treating START as musically significant content
+  **Correction**: START is a formal analytical device, not a musical event
 
 # Common Confusions
-- START is a formal device, not a musical event
-- Multiple analytical approaches may place START differently
-- START supersedes intrinsic input nodes by convention, not by graph structure
-- The START node itself has no musical contents (or contains only "START")
+- **Confusion**: Thinking START changes the intrinsic graph structure
+  **Clarification**: It is adjoined to the system; the original graph's properties remain
+- **Confusion**: Thinking there is only one valid START placement
+  **Clarification**: The criterion may be diachronic or synchronic, potentially yielding different placements
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.7.6
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.7.6, pp. 247-248. See Figure 9.14(b).
+
+# Verification Notes
+- Definition source: synthesized from Section 9.7.6 discussion (not a numbered definition)
+- Confidence rationale: medium -- concept is described in context but not given a formal numbered definition
+- Re-extracted from v2 card; preserved: diachronic/synchronic criteria, Appassionata example

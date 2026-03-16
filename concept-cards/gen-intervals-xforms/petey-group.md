@@ -1,70 +1,102 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: PETEY Group
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: petey-group
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: formal-features
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (2): Formal Features"
 chapter_number: 3
 pdf_page: 62
-unit: null
-authors: David Lewin
+section: "3.5 Inversions"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "PT group"
+  - "group of direct transformations"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transposition-operation
+  - interval-preserving-operation
+extends:
+  - group-of-transpositions
+  - group-of-interval-preserving-operations
+related:
+  - petinv-group
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the PETEY group?"
+  - "How do transpositions and interval-preserving operations combine?"
 ---
 
 # Quick Definition
-PETEY is the group of all operations on a GIS space S that can be expressed as PT, where P is an interval-preserving operation and T is a transposition. It combines the two fundamental families of "direct" transformations.
+PETEY is the group of all operations on a GIS space that can be expressed as PT, where P is an interval-preserving operation and T is a transposition. It combines the two fundamental families of "direct" (non-inverting) transformations.
 
-# Formal Definition
-**Theorem 3.5.11(A):** Let PETEY be the family of all operations on S that can be expressed as (functionally equal to) something of form PT, where P is some interval-preserving operation and T is some transposition. Then PETEY is a group of operations.
+# Core Definition
+Theorem 3.5.11(A) defines PETEY as the family of all operations expressible as PT (P interval-preserving, T transposition) and proves it is a group. Closure follows because (PT)(P'T') = (PP')(TT') (using Theorem 3.4.10: every T commutes with every P). Inverses exist because (PT)^{-1} = P^{-1}T^{-1}, which is again in PETEY (Lewin, Theorem 3.5.11(A), pp. 89-90).
 
-# Mathematical Formulation
-**Closure proof:**
-Let PT and P'T' be members of PETEY.
-Set P'' = PP' and T'' = TT'.
-Since P and T families are groups, P'' is interval-preserving and T'' is a transposition.
-(PT)(P'T') = P(TP')T' = P(P'T)T' (by Theorem 3.4.10: T commutes with P)
-           = (PP')(TT') = P''T''
+# Prerequisites
+- **Transposition Operation** — One of the two generating families
+- **Interval-Preserving Operation** — The other generating family
 
-So PETEY is closed under composition.
+# Key Properties
+1. PETEY = {PT : P is interval-preserving, T is transposition}
+2. PETEY is closed: (PT)(P'T') = (PP')(TT') by Theorem 3.4.10
+3. Inverses exist: (PT)^{-1} = P^{-1}T^{-1} is in PETEY
+4. In commutative GIS: PETEY = TNSPS = PSVS (all three coincide)
+5. In non-commutative GIS: PETEY is strictly larger than either TNSPS or PSVS
+6. PT = TP for all P, T (Theorem 3.4.10)
 
-**Inverse proof:**
-Given PT in PETEY:
-P^(-1) is interval-preserving, T^(-1) is a transposition.
-P^(-1)T^(-1) is in PETEY.
-(PT)(P^(-1)T^(-1)) = P(TP^(-1))T^(-1) = P(P^(-1)T)T^(-1) = (PP^(-1))(TT^(-1)) = identity.
+# Construction / Recognition
+## To Construct:
+1. Take any interval-preserving operation P_i
+2. Take any transposition T_j
+3. Compose: P_i T_j (or equivalently T_j P_i) is in PETEY
 
-# Musical Context/Application
-PETEY represents all "direct" transformations that do not involve inversion. In commutative GIS where P = T, PETEY reduces to the transposition group. In non-commutative GIS, PETEY is larger and has a richer structure.
+## To Recognize:
+1. The operation can be decomposed into an interval-preserving part and a transposition part
 
-The name "PETEY" comes from combining "P" (interval-preserving) and "T" (transposition), with the suffix making it pronounceable.
+# Context & Application
+PETEY represents all "direct" transformations — those not involving inversion. The name combines "P" and "T" into a pronounceable word. In commutative GIS, PETEY reduces to the familiar transposition group. In non-commutative GIS, PETEY has a richer structure that reflects the independent roles of transposition and interval preservation.
 
 # Examples
-**Commutative GIS:**
-PETEY = TNSPS = PSVS (all three groups coincide)
-Every element is both a transposition and interval-preserving.
+**Example 1**: In commutative 12-tone GIS: PETEY = {T_0, T_1, ..., T_{11}} since T_i = P_i.
 
-**Non-commutative time-span GIS:**
-PETEY contains all P(h,u) T(i,p) operations.
-These form a larger group than either TNSPS or PSVS alone.
-P and T operations do not coincide, but they commute with each other.
+**Example 2**: In non-commutative time-span GIS: PETEY contains all compositions P_{(h,u)} T_{(i,p)}, forming a group larger than either the transposition group or the interval-preserving group alone.
 
-**Group structure:**
-PETEY = PSVS * TNSPS (internal product)
-Since P and T commute, this is actually PSVS x TNSPS as sets, but the group structure combines them.
+# Relationships
+## Builds Upon
+- **Group of Transpositions** — TNSPS is a subgroup of PETEY
+- **Group of Interval-Preserving Operations** — PSVS is a subgroup of PETEY
 
-# Related Concepts
-- Interval-Preserving Operation (Pi)
-- Transposition Operation (Ti)
-- PETINV Group
-- Commutativity of T with P
-- Group of Operations
+## Enables
+- **PETINV Group** — PETEY plus inversions forms PETINV
+
+# Common Errors
+- **Error**: Assuming the order PT matters
+  **Correction**: PT = TP by Theorem 3.4.10, so the order is irrelevant
 
 # Common Confusions
-1. **PETEY vs. TNSPS:** In commutative GIS these are equal. In non-commutative GIS, PETEY is strictly larger.
-
-2. **Order in PT:** The formula is P followed by T, but since P and T commute (Theorem 3.4.10), PT = TP as operations.
-
-3. **PETEY is a group:** Closure requires the commutativity of P and T to rearrange (PT)(P'T') into (PP')(TT').
-
-4. The proof uses Theorem 3.4.10 essentially--without the commutativity of T and P, PETEY might not be a group.
+- **Confusion**: Thinking PETEY is always larger than TNSPS
+  **Clarification**: In commutative GIS, PETEY = TNSPS. The distinction arises only in non-commutative GIS.
 
 # Source Reference
-Chapter 3: Generalized Interval Systems (2): Formal Features, Theorem 3.5.11(A), pp. 89-90
+Chapter 3: Generalized Interval Systems (2): Formal Features, Theorem 3.5.11(A), pp. 89-90.
+
+# Verification Notes
+- Definition source: direct from Theorem 3.5.11(A)
+- Confidence rationale: high — explicit theorem with proof
+- Re-extraction notes: Re-extracted from v2 card; preserved: closure proof outline, commutative simplification

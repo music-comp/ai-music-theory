@@ -1,67 +1,82 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Ruffling Motive
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: ruffling-motive
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: impressionist-analysis
+tier: advanced
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.4"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - tristan-chord-in-reflets
+  - debussy-reflets-dans-leau-analysis
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the ruffling motive in Lewin's Debussy analysis?"
 ---
 
 # Quick Definition
-The ruffling motive is the characteristic rhythm and contour figure in Debussy's "Reflets dans l'eau" that first appears at measure 18, representing "the wind first ruffles the surface of the pond" and bound up with Tristan-chord harmony.
+The characteristic rhythm and contour governing the second half of m. 18 in Debussy's "Reflets dans l'eau," arpeggiating a Tristan chord upward then partially arpeggiating dominant-ninth harmony downward, representing the moment "the wind first ruffles the surface of the pond."
 
-# Formal Definition
-The ruffling motive is a gestural figure with specific rhythm and contour that arpeggiates a Tristan chord upward and partially arpeggiates a dominant-ninth harmony downward. It is bound together with chromatic events (Cb, D natural) and provides the material for the cadenza-like sequential passage of measures 20-21.
+# Core Definition
+The ruffling motive is bound together with the Cb events, the C-Cb voice leading, the vertical Y of Figure 10.18, and the vertical J(Y). It arpeggiates a Tristan chord upward and partially arpeggiates a dominant-ninth downward, within the registral confines of bass F3 and upper Ab4. "The Tristan chord is in the correct spacing at the right pitch-level, once the doubling Ab3 of the ascending ruffle is removed" (Lewin, Section 10.4, p. 279).
 
-# Mathematical Formulation
-Harmonic content of the ruffle:
-- Upward arpeggiation: Tristan chord (in correct spacing and pitch-level)
-- Downward partial arpeggiation: 9th harmony
-- Registral boundaries: bass F3 to upper Ab4
-- Chromatic events: C-Cb voice leading, D-Eb voice leading
+# Prerequisites
+- (No specific formal prerequisites)
 
-Sequential structure:
-- Ruffle-cum-Tristan sequences eight times
-- Each sequence = T_3 (transposition by 3 semitones)
-- Total ascent: essentially two octaves
+# Key Properties
+1. Characteristic rhythm and contour at m. 18
+2. Ascending Tristan chord + descending dominant-ninth fragment
+3. Within registral confines F3 to Ab4
+4. Bound to Cb events and vertical Y/J(Y) forms
+5. Sequences upward by 3 semitones in cadenza (mm. 20-21)
+6. Represents the wind ruffling the pond's surface
 
-# Musical Context/Application
-The ruffling motive provides both programmatic and structural significance. Programmatically, it depicts the wind disturbing the water's surface. Structurally, it connects the chromatic intervallic development (particularly the 3-interval) to the Tristan-chord harmony and provides the material for climactic sequential development.
+# Construction / Recognition
+## To Construct:
+1. Arpeggiate Tristan chord upward
+2. Partially arpeggiate dominant-ninth downward
+## To Recognize:
+1. Ascending-then-descending arpeggiation with Tristan chord content
+
+# Context & Application
+The ruffling motive marks a turning point in the piece's texture and dynamics. It introduces the Tristan chord that will be sequenced in the cadenza, and its characteristic pattern becomes associated with the 3-semitone sequential motion.
 
 # Examples
-**First appearance (measure 18):**
-"I shall call the characteristic rhythm and contour that govern the second half of measure 18 the 'ruffling motive'; here the wind first ruffles the surface of the pond."
+**Example 1** (pp. 279-280): At m. 18, the ruffling motive connects to the C-Cb voice leading and the verticalized Y-forms. Over mm. 20-21, "ruffle-cum-Tristan sequences eight times, arriving at measure 22 essentially two octaves above its point of departure."
 
-**Tristan chord connection:**
-"The motive arpeggiates a Tristan chord upwards and then partially arpeggiates a 9th harmony downwards, all within the registral confines of the bass F3 and the upper note Ab4. The Tristan chord is in the correct spacing at the right pitch-level, once the doubling Ab3 of the ascending ruffle is removed."
+# Relationships
+## Related
+- **Tristan chord in Reflets** — the harmonic content of the ruffle
+- **Debussy Reflets analysis** — the full context
 
-**Sequential cadenza (measures 20-21):**
-"Over measures 20-21, the Tristan-harmony-cum-ruffle-motive moves up quasi cadenza in literal sequences, 3 semitones per stage, until it gets essentially two octaves higher."
-
-The 3-semitone sequence interval relates to the structural F-Ab interval:
-"Now that D natural, as well as Cb, is on the scene along with F and Ab, the minor third or 3-semitone interval can be fully unleashed; the sequence at hand unleashes it."
-
-**Figure 10.19 parallels:**
-The ruffle sequence beginning shares features with Figure 10.16:
-- Both start with outer voices on F-and-Ab dyad
-- Both project Ab-and-Cb through 3-interval motion
-- Both embed Y motive forms
-
-**Wagnerian commentary:**
-"I have no idea what private commentary on Wagner Debussy may have intended by his use of the Tristan chord and his continued sequencing of it by 3 semitones, a sequence which Wagner artfully only suggests in the first-act Prelude."
-
-# Related Concepts
-- Tristan Chord
-- CHR Networks
-- Debussy Reflets dans l'eau Analysis
-- Motive Y
-- Three-Semitone Interval
-- Sequential Structure
+# Common Errors
+- **Error**: Treating the ruffling motive as merely textural
+  **Correction**: It is structurally integrated with the Cb events, Y-forms, and 3-interval network
 
 # Common Confusions
-The ruffling motive is not merely decorative figuration but carries structural weight through its Tristan-chord harmony and 3-semitone sequential intervals. Students should connect the programmatic surface (wind on water) to the analytical content (intervallic development, harmonic reference).
+- **Confusion**: Thinking the Tristan chord is incidental
+  **Clarification**: It is in "correct spacing at the right pitch-level" -- structurally precise
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figures 10.18-10.19
+Chapter 10, Section 10.4, pp. 279-281.
+
+# Verification Notes
+- Definition source: direct from Section 10.4
+- Confidence rationale: high -- explicitly named with detailed analysis
+- Re-extracted from v2 card; preserved: correct spacing detail, 8-fold sequencing, registral confines

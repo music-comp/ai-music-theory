@@ -1,72 +1,108 @@
 ---
-concept: Commutativity of T with P
-category: theory
-source: Generalized Musical Intervals and Transformations
+# === CORE IDENTIFICATION ===
+concept: Commutativity of Transpositions with Interval-Preserving Operations
+slug: transposition-interval-preserving-commutativity
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: group-structure
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (2): Formal Features"
 chapter_number: 3
-pdf_page: 62
-unit: null
-authors: David Lewin
+pdf_page: 82
+section: "3.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "T-P commutativity"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transposition-operation
+  - interval-preserving-operation
+  - label-function
+extends: []
+related:
+  - group-of-transpositions
+  - group-of-interval-preserving-operations
+  - petey-group
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Do transpositions and interval-preserving operations commute?"
+  - "Is the order of applying T and P operations irrelevant?"
+  - "Why do T and P commute even in non-commutative GIS?"
 ---
 
 # Quick Definition
-Any transposition operation Ti commutes with any interval-preserving operation Pj. This is a universal property holding in all GIS structures, whether commutative or non-commutative.
+Any transposition operation T_i commutes with any interval-preserving operation P_j: P_j T_i = T_i P_j. This universal property holds in all GIS structures, whether commutative or non-commutative.
 
-# Formal Definition
-For any transposition Tn and any interval-preserving operation Pj in a GIS:
+# Core Definition
+**Theorem 3.4.10**: Any transposition operation commutes with any interval-preserving operation. That is, for any T_n and any P_j in a GIS: P_j T_i = T_i P_j. The proof uses the fact that T_i right-multiplies labels while P_j left-multiplies them, so the two operations "pass through" each other.
 
-Pj Ti = Ti Pj
+# Prerequisites
+- **Transposition operation (T_i)** — Right-multiplies LABEL by i
+- **Interval-preserving operation (P_j)** — Left-multiplies LABEL by j
+- **LABEL function** — The computational framework for the proof
 
-That is, applying Ti first then Pj yields the same result as applying Pj first then Ti.
+# Key Properties
+1. P_j T_i = T_i P_j for all i, j in IVLS
+2. This holds even when IVLS is non-commutative
+3. The proof relies on associativity: j * (LABEL(s) * i) = (j * LABEL(s)) * i
+4. This does NOT mean T operations commute among themselves or P operations commute among themselves
+5. The result implies the combined group PETEY has special structure
 
-# Mathematical Formulation
-**Theorem 3.4.10:** Any transposition operation commutes with any interval-preserving operation.
+# Construction / Recognition
+## To Construct:
+1. Given any T_i and P_j, compute P_j(T_i(s)) and T_i(P_j(s)) for any s
+2. Both yield the same element
+## To Recognize:
+1. The order of T and P application does not matter
+2. Right-multiplication (T) and left-multiplication (P) of labels are independent
 
-**Proof:** Fix any ref. Consider Ti and Pj. For any sample s:
-
-LABEL(Pj(Ti(s))) = j * LABEL(Ti(s))
-                 = j * (LABEL(s) * i)
-                 = (j * LABEL(s)) * i
-                 = LABEL(Pj(s)) * i
-                 = LABEL(Ti(Pj(s)))
-
-Since Pj Ti(s) and Ti Pj(s) have the same LABEL, they are equal. As this holds for all s, the functional equation Pj Ti = Ti Pj is true.
-
-# Musical Context/Application
-This theorem establishes that the two fundamental families of operations--transpositions and interval-preserving operations--always commute with each other. This provides significant computational convenience:
-
-- Order of applying T and P operations is irrelevant
-- The combined group of T and P operations has a special structure
-- In commutative GIS where T = P, this is trivially true
-- In non-commutative GIS, this is a non-trivial and important result
+# Context & Application
+This theorem establishes that the two fundamental families of operations -- transpositions and interval-preserving operations -- always commute with each other. In commutative GIS where T = P, this is trivially true. In non-commutative GIS, this is a non-trivial and important result that gives the PETEY group its special structure.
 
 # Examples
-**In pitch-class GIS:**
-Since Ti = Pi for all i, the theorem says Ti Tj = Tj Ti, which is true since addition mod 12 is commutative.
+**Example 1** (p. 82): Proof: LABEL(P_j(T_i(s))) = j * LABEL(T_i(s)) = j * (LABEL(s) * i) = (j * LABEL(s)) * i = LABEL(P_j(s)) * i = LABEL(T_i(P_j(s))). Since the LABELs agree, the elements are equal.
 
-**In time-span GIS:**
-- T(i,p) and P(h,u) commute even though IVLS is non-commutative
-- T(2,3) P(4,5) = P(4,5) T(2,3)
-- This can be verified by direct computation on any time span
+**Example 2**: In the pitch-class GIS: since T_i = P_i for all i, the theorem says T_i T_j = T_j T_i, which holds because addition mod 12 is commutative.
 
-**Algebraic structure:**
-The theorem implies that in the group generated by all T and P operations, the subgroups TNSPS (transpositions) and PSVS (interval-preserving ops) have a special relationship.
+**Example 3**: In the time-span GIS: T_{(i,p)} and P_{(h,u)} commute even though IVLS is non-commutative. This can be verified by direct computation on any time span (a, x).
 
-# Related Concepts
-- Transposition Operation (Ti)
-- Interval-Preserving Operation (Pi)
-- Commutative Operations
-- PETEY Group
-- Non-commutative GIS
+# Relationships
+## Builds Upon
+- **Transposition operation** — One of the commuting families
+- **Interval-preserving operation** — The other commuting family
+## Enables
+- **PETEY group** — The group generated by T and P operations has structure determined by this commutativity
+## Related
+- **Group of transpositions** — T operations among themselves compose by anti-isomorphism
+- **Group of interval-preserving operations** — P operations among themselves compose by isomorphism
+
+# Common Errors
+- **Error**: Concluding that T operations commute among themselves because T commutes with P
+  **Correction**: T_i T_j = T_{ji} (anti-isomorphism), which generally differs from T_j T_i = T_{ij}
 
 # Common Confusions
-1. This theorem says T commutes with P, not that T operations commute among themselves or that P operations commute among themselves.
-
-2. In non-commutative GIS: Ti Tj = Tji (anti-commutes in a sense), Pi Pj = Pij (preserves order), but Ti Pj = Pj Ti (commutes).
-
-3. Students may think this follows from the GIS being commutative. It does not--the theorem holds even in non-commutative GIS.
-
-4. The proof relies on the distinction between right-multiplication (T) and left-multiplication (P) of labels, which makes them pass through each other.
+- **Confusion**: This commutativity follows from the GIS being commutative
+  **Clarification**: The theorem holds even in non-commutative GIS; it follows from the algebraic structure of left- vs. right-multiplication
+- **Confusion**: Since T and P commute, PETEY must be abelian
+  **Clarification**: PETEY is generally not abelian; T operations do not commute among themselves, and P operations do not commute among themselves
 
 # Source Reference
-Chapter 3: Generalized Interval Systems (2): Formal Features, Theorem 3.4.10, p. 82
+Chapter 3: Generalized Interval Systems (2): Formal Features, Theorem 3.4.10, page 82.
+
+# Verification Notes
+- Definition source: Direct from Theorem 3.4.10
+- Confidence rationale: High -- theorem and proof are explicit
+- Re-extraction notes: Re-extracted from v2 card; preserved: proof via LABEL manipulation, left/right multiplication insight, PETEY structure implication

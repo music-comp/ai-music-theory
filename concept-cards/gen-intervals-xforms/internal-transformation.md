@@ -1,66 +1,104 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Internal Transformation
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: internal-transformation
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: injection-function
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: "6.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - X-internal transformation
+  - Y-internal transformation
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-function
+extends: []
+related:
+  - progressive-transformation
+  - external-transformation
+  - dispersive-transformation
+  - transitivity-sets
+contrasts_with:
+  - progressive-transformation
+  - external-transformation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What distinguishes internal from progressive transformations?"
+  - "What is an internal transformation?"
 ---
 
 # Quick Definition
-An internal transformation is one for which INJ(X, X)(f) or INJ(Y, Y)(f) is high - it transforms a set into something much like itself.
+An internal transformation f is one for which INJ(X, X)(f) or INJ(Y, Y)(f) is high — it maps a set largely into itself, modeling self-reference, symmetry, or prolongation.
 
-# Formal Definition
-Definition (6.4): Given sets X and Y, and a family INSPECT of transformations:
-- f is X-internal if INJ(X, X)(f) is high
-- f is Y-internal if INJ(Y, Y)(f) is high
-- f is internal (for the progression X-Y) if it is both X-internal and Y-internal
+# Core Definition
+Section 6.4 (Lewin, pp. 172-174): "For certain transformations f within the family INSPECT, the value of INJ(X, X)(f) or INJ(Y, Y)(f) will be high. We shall call these transformations X-internal or Y-internal accordingly." A transformation both X-internal and Y-internal is simply "internal" for the progression X-Y. "An X-internal transformation tends to extend/elaborate/develop/prolong X in the music."
 
-Internal transformations tend to "extend/elaborate/develop/prolong" a set rather than transform it into something else.
+# Prerequisites
+- **INJ Function** — Internal is defined via INJ(X, X)(f) values
 
-# Mathematical Formulation
-f is X-internal if:
-INJ(X, X)(f) is near or at max{INJ(X, X)(g) : g in INSPECT}
+# Key Properties
+1. f is X-internal if INJ(X, X)(f) is high
+2. f is Y-internal if INJ(Y, Y)(f) is high
+3. Composition of two X-internal transformations tends to be X-internal
+4. Inverse of an X-internal operation tends to be X-internal
+5. The identity is maximally internal for every set
 
-Algebraic tendencies:
-- Composition of two X-internal transformations tends to be X-internal
-- Inverse of an X-internal operation tends to be X-internal
-- These follow because operations that keep X "like itself" compose to keep X "like itself"
+# Construction / Recognition
+## To Identify:
+1. Compute INJ(X, X)(f) for each f in INSPECT
+2. Those with highest values are X-internal
 
-# Musical Context/Application
-Internal transformations model symmetry and self-reference within a harmony. When a chord has high internal transformation values, it exhibits structural regularities that the transformation reveals. Operations like inversion often serve as internal transformations for symmetric chords.
+## To Recognize:
+1. A transformation that preserves a chord's identity (maps it to something like itself)
+
+# Context & Application
+Internal transformations model inversional symmetry, prolongation, and self-reference. In "Angst und Hoffen," I = I_E^{Bb} is internal: INJ(X, X)(I) = 3 (all of Angst maps to itself) and INJ(Y, Y)(I) = 2. The "missing F" breaks Y's full inversional self-symmetry.
 
 # Examples
-From "Angst und Hoffen":
-- I = I_E^Bb (inversion about E/Bb axis)
-- Angst chord X = {Gb, Bb, D}
-- Hoffen chord Y = {Fb, Bb, Eb}
+**Example 1** (pp. 157-158): I is internal for Angst/Hoffen: INJ(X, X)(I) = 3, INJ(Y, Y)(I) = 2. The Fb of Y prevents full I-symmetry.
 
-INJ(X, X)(I) = 3: All of X maps into X under I
-- Gb <-> D (swap under I)
-- Bb -> Bb (fixed point)
+**Example 2** (p. 163): In the melodic analysis, (1, I) and (2, w) are internal for tetrad X_1^4; (2, I) and (3, w) are internal for tetrad X_5^8. No I or w arrows lead between tetrads.
 
-INJ(Y, Y)(I) = 2: Most of Y maps into Y
-- Fb is "bereft of its I-partner" (would be F)
-- Bb fixed, Eb <-> ... (incomplete symmetry)
+# Relationships
+## Builds Upon
+- **INJ Function** — Defined through INJ values
 
-The missing F breaks the inversional symmetry of Y.
+## Enables
+- **Transitivity Sets** — I-partnerships within chords are transitivity sets of internal operations
 
-From melodic analysis (Figure 6.4):
-- (1, I) and (2, w) are internal for tetrad X_1^4
-- (2, I) and (3, w) are internal for tetrad X_5^8
+## Contrasts With
+- **Progressive Transformation** — Progressive maps X toward Y; internal keeps X like itself
+- **External Transformation** — External maps X outside itself; internal keeps X within itself
 
-# Related Concepts
-- Progressive Transformation
-- External Transformation
-- Dispersive Transformation
-- INJ (Injection Function)
-- Inversional Symmetry
+# Common Errors
+- **Error**: Thinking internal means "trivial" or "identity"
+  **Correction**: Non-identity transformations can be highly internal for symmetric sets
 
 # Common Confusions
-Internal does not mean "trivial" or "identity." A transformation can significantly rearrange elements of X while still mapping X into itself. The identity is maximally internal, but non-identity transformations can also be highly internal for symmetric sets.
+- **Confusion**: Assuming a transformation is either internal or progressive
+  **Clarification**: A transformation can be Y-internal and X-Y-progressive simultaneously
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, section 6.4
+Chapter 6: Generalized Set Theory (2), section 6.4, pp. 172-174.
+
+# Verification Notes
+- Definition source: Direct from section 6.4
+- Confidence rationale: Explicit definition with musical examples
+- Re-extraction notes: Re-extracted from v2 card; preserved: Angst/Hoffen examples, algebraic tendencies. Added v3.1 structure.

@@ -1,66 +1,103 @@
 ---
-concept: Wagner Todesverkuendigung Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
+# === CORE IDENTIFICATION ===
+concept: "Wagner Todesverkuendigung Analysis"
+slug: wagner-todesverkuendigung-analysis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: serial-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (2): Non-Intervallic Transformations"
 chapter_number: 8
 pdf_page: 206
-unit: null
-authors: David Lewin
+section: "8.2.6"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Annunciation of Death analysis"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - rich-transformation
+  - tch-transformation
+  - ri-chaining
+extends: []
+related:
+  - fate-motive
+  - fate-prime-motive
+  - isography
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does RICH/TCH analysis reveal structure in Wagner's Todesverkuendigung?"
 ---
 
 # Quick Definition
-An extended analysis of the opening of Die Walkure Act 2, Scene 4 ("Todesverkuendigung"), demonstrating how the FATE motive generates RI-chains in both bass and melody, with the TCH interval corresponding to the thematic A-to-B gesture.
+An analysis of Die Walkure Act 2, Scene 4, showing how the FATE motive (3-note series with network 2 = (-1) + 3) generates independent RICH chains in bass and melody, with the TCH interval 2 governing both chains and the large-scale transposition of the entire passage.
 
-# Formal Definition
-The analysis (Figures 8.6-8.9) examines:
-- The FATE motive: intervallic network 2 = (-1) + 3 semitones, spanning A to B
-- LOVE motive relationship: ambitus F#-to-B with A-to-B core
-- RI-chaining in bass: A-C-B chains to C-B-D chains to B-D-C#, etc.
-- RI-chaining in melody: A-G#-B chains through successive forms
-- Large-scale TCH sequence: mm. 1-12 transpose to mm. 13-24
+# Core Definition
+The FATE motive's melodic component functions as both a 3-note series and an intervallic network (2 = (-1) + 3 semitones), originally spanning A to B. RICH chains operate independently in bass and melody: the bass chain begins with A-C-B (embedding A-to-B), the melodic chain with A-G#-B (the other FATE form embedding A-to-B). Both chains have TCH interval 2 = int(A, B). The large sequence transposing mm. 1-12 into mm. 13-24 is itself a TCH-sequence (Lewin, 8.2.6, pp. 184-187).
 
-# Mathematical Formulation
-FATE network (Figure 8.7b):
-- Overall interval: 2
-- Subarticulation: (-1) + 3
+# Prerequisites
+- **RICH transformation** — Generates the chains in bass and melody
+- **TCH transformation** — Governs the transposition level
+- **RI-chaining** — The structural technique
 
-TCH interval for FATE forms:
-- For A-C-B: i = int(A, B) + int(C, C) = int(A, B) = 2
-- For A-G#-B: i = int(A, B) + int(G#, G#) = int(A, B) = 2
+# Key Properties
+1. FATE network: 2 = (-1) + 3 semitones
+2. Two FATE forms embed A-to-B: A-C-B (bass) and A-G#-B (melody)
+3. TCH interval = 2 = int(A, B) for both chains
+4. Bass and melody RICH chains are independent but share the same TCH interval
+5. Large sequence (mm. 1-12 to mm. 13-24) is also a TCH-sequence
+6. LOVE motive relationships: F#-A-B ambitus, interval 3 connecting LOVE to FATE
 
-The TCH interval 2 = int(A, B) connects motivic structure to sequence structure.
+# Construction / Recognition
+## To Construct:
+1. Identify FATE series forms in bass and melody
+2. Trace RICH chains in each voice independently
+3. Compute TCH interval from the series structure
+4. Verify large-scale TCH relationship
+## To Recognize:
+1. Independent RI-chains in multiple voices sharing the same TCH interval
+2. The TCH interval equals a motivically prominent interval (int(A, B) = 2)
 
-# Musical Context/Application
-The analysis reveals how:
-1. The FATE motive emerges from the preceding LOVE material
-2. Independent RI-chains proceed in bass and melody
-3. Structural sequences arise from RI-chaining at multiple levels
-4. The dramatic thematic interval A-to-B governs all sequence levels
+# Context & Application
+The analysis demonstrates how 2-as-TCH-interval is the "same" 2 as int(A, B), the compositionally prominent interval. "We do not need such heavy transformational machinery, just to hear that the 2-sequences of the music are related to the A-B gesture of the motive. But the transformational machinery clarifies just how the relation is worked out" (p. 186).
 
 # Examples
-From Figure 8.6:
-- Bass chain: A-C-B -> C-B-D -> B-D-C# -> D-C#-E -> C#-E-D# (and further)
-- Melody chain: A-G#-B -> G#-B-A# -> ... -> B-A#-C# (mm. 13-14)
-- The melodic B-A#-C# at m. 13 launches the transposed return of all FATE music
+**Example 1** (Figure 8.6, pp. 184-185): Bass RICH chain: A-C-B, C-B-D, B-D-C#, D-C#-E, C#-E-D#... Melody RICH chain: A-G#-B, G#-B-A#, B-A#-C#...
 
-Large sequence (mm. 1-12 to mm. 13-24):
-- This TCH-sequence governs the entire passage structure
-- Produced by RI-chaining at the highest level
+**Example 2** (Figure 8.9, p. 187): Siegmund's questions during the stichomythy project LOVE motive pitch classes in their keys (f#, a, b, A, F#, b).
 
-# Related Concepts
-- FATE Motive
-- LOVE Motive
-- RICH Transformation
-- TCH Transformation
-- RI-Chaining
-- Structural Sequencing
+# Relationships
+## Builds Upon
+- **RICH transformation** — Generates both chains
+- **TCH transformation** — Governs transposition levels
+## Related
+- **FATE motive** — The primary analytical object
+- **Isography** — Bass and melody chains are isographic
+
+# Common Errors
+- **Error**: Drawing only T_2 arrows without showing RICH chains
+  **Correction**: Using only T_2 would miss the function of 2 as TCH interval in two independent chains launched by the two FATE forms embedding A-to-B
 
 # Common Confusions
-- The 2-interval appears at multiple structural levels but represents different phenomena
-- Simply drawing T_2 arrows would miss the RI-chaining mechanism
-- The bass and melody chains are independent, not parallel
-- The FATE' motive (mm. 56ff) has TCH interval 3, not 2, showing structural variation
+- **Confusion**: Thinking the two chains are dependent
+  **Clarification**: Bass and melody RICH chains are independent, launched by different FATE forms
 
 # Source Reference
-Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.2.6, Figures 8.6-8.9
+Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.2.6, Figures 8.6-8.9, pages 184-187.
+
+# Verification Notes
+- Definition source: Direct from 8.2.6
+- Confidence rationale: Detailed analytical example with figures
+- Re-extraction notes: Re-extracted from v2 card; preserved: dual chains, TCH = int(A,B), LOVE connection

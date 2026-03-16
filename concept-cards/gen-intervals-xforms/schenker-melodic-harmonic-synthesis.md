@@ -1,61 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "Schenker's Melodic-Harmonic Synthesis"
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory"
-chapter_number: A
-pdf_page: 276
-unit: null
+slug: schenker-melodic-harmonic-synthesis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: historical-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
 authors: David Lewin
+chapter: "Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory"
+chapter_number: null
+pdf_page: 276
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Schenker's integration of melodic and harmonic space"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - multiple-musical-spaces
+  - zarlino-istitutioni-harmoniche
+  - stufen-theory
+extends:
+  - zarlino-istitutioni-harmoniche
+related:
+  - melodic-space
+  - harmonic-space
+contrasts_with:
+  - rameau-harmonic-theory
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Schenker synthesize melodic and harmonic spaces?"
+  - "How does Schenker's synthesis relate to Zarlino's?"
 ---
 
 # Quick Definition
 Schenker's mature theory represents a "triumphal synthesis" of melodic space (the Urlinie's stepwise descent) and harmonic space (the bass arpeggiation), understood in the context of functional tonality through Stufen theory.
 
-# Formal Definition
-Heinrich Schenker's theory (principally in Der freie Satz, 1935) synthesizes melodic and harmonic intuitions through complementary structures: the Urlinie (fundamental line) moves stepwise through melodic space while the bass arpeggiation (Bassbrechung) moves through harmonic space. The Zug (linear progression) instantiates melodic-scalar motion whose endpoints are justified by harmonic relations (the boundaries of a Zug are harmonically consonant).
+# Core Definition
+Lewin identifies Schenker's theory (Der freie Satz, 1935) as achieving a triumphal synthesis of harmonic and melodic space in the context of functional tonality. The Zug (linear progression) instantiates melodic-scalar motion whose endpoints are harmonically justified, embodying Zarlino's bidirectional principle: melodic segments derive meaning from harmonic boundary relations, and harmonic intervals become perceptible through scalar filling. Schenker's Stufen theory enables contextual discriminations that Zarlino could not make (Lewin, Appendix A, p. 247).
 
-# Mathematical Formulation
-Schenkerian structures:
-- Urlinie: stepwise melodic descent (3-2-1, 5-4-3-2-1, or 8-7-6-5-4-3-2-1)
-- Bassbrechung: harmonic arpeggiation I-V-I
-- Zug: "articulated segments of a unidirectional diatonic series"
+# Prerequisites
+- **Multiple Musical Spaces** — Schenker's synthesis integrates multiple spaces
+- **Zarlino's Istitutioni Harmoniche** — Schenker's synthesis extends Zarlino's approach
+- **Stufen Theory** — Enables contextual discriminations within the synthesis
 
-The synthesis:
-- Melodic coherence: stepwise voice-leading
-- Harmonic justification: consonant interval between Zug boundaries
-- Stufen: scale degrees provide contextual meaning to both melodic and harmonic events
+# Key Properties
+1. Urlinie: stepwise melodic descent (fundamental line)
+2. Bassbrechung: harmonic arpeggiation I-V-I
+3. Zug: linear progression whose boundaries are harmonically consonant
+4. Stufen theory provides contextual meaning to both melodic and harmonic events
+5. Extends Zarlino's bidirectional integration into functional tonality
 
-# Musical Context/Application
-Schenker's synthesis operates within functional tonality, where Stufen theory provides contextual meaning. The analyst can assign structural priority to contextual modal tonics, enabling discriminations that pure harmonic theories (like Zarlino's senario-based approach) cannot make.
+# Context & Application
+Schenker's synthesis succeeds where Zarlino's occasionally fails because Stufen theory enables assignment of structural priority to contextual modal tonics. However, Schenker "finesses certain problems about the universality of minor harmonic structures which Zarlino attempts to confront."
 
 # Examples
-**Comparison with Zarlino:**
-"This way of interrelating harmonic and melodic space has much in common with central aspects of Schenker's theories, in particular with Schenker's understanding of the Zug, and even specifically of the Urlinie."
+**Example 1** (p. 247): Comparison with Zarlino: "This way of interrelating harmonic and melodic space has much in common with central aspects of Schenker's theories, in particular with Schenker's understanding of the Zug."
 
-"Schenker's mature theory contains another triumphal synthesis of harmonic and melodic space, understood now in the context of functional tonality."
+**Example 2** (p. 248): Stufen advantage: "Schenker, quite willing to assign structural priority to contextual modal tonics inter alia, uses his Stufen theory to powerful effect."
 
-**The Zug concept:**
-The Zug demonstrates how melodic and harmonic spaces interact: "articulated segments of a unidirectional diatonic series make sense to our understanding (as well as our perception) because of the harmonic relations obtaining between the boundaries of the segments."
+# Relationships
+## Builds Upon
+- **Zarlino's Istitutioni Harmoniche** — extends Zarlino's bidirectional synthesis
+- **Stufen Theory** — enables contextual discriminations
 
-**Stufen advantage:**
-"Schenker, quite willing to assign structural priority to contextual modal tonics inter alia, uses his Stufen theory to powerful effect in related connections."
+## Enables
+- Sophisticated analysis of tonal music integrating melodic and harmonic dimensions
 
-Unlike Zarlino, who "had no Stufen theory that could enable him to make such discriminations," Schenker can distinguish between contextually major and minor sixths based on their modal function.
+## Contrasts With
+- **Rameau's Harmonic Theory** — Rameau's harmony-first approach vs. Schenker's integration
 
-**Complementary limitations:**
-"On the other hand, he [Schenker] finesses certain problems about the universality of minor harmonic structures which Zarlino attempts to confront, and succeeds in confronting to a remarkable extent."
-
-# Related Concepts
-- Urlinie
-- Zug (Linear Progression)
-- Stufen Theory
-- Zarlino's Istitutioni Harmoniche
-- Melodic Space
-- Harmonic Space
+# Common Errors
+- **Error**: Treating Schenker's synthesis as merely "melody plus harmony"
+  **Correction**: The synthesis is a mutual validation where melodic coherence justifies harmonic structure and vice versa
 
 # Common Confusions
-Schenker's synthesis is not simply "melody plus harmony" but a sophisticated integration where each validates the other. The Urlinie's stepwise motion is meaningful because of its harmonic framework; the harmonic arpeggiation is meaningful because it supports melodic coherence. Students should understand the mutual dependence, not just parallel coexistence.
+- **Confusion**: Thinking Schenker's theory fully resolves all problems of space integration
+  **Clarification**: Schenker "finesses" certain issues about minor that Zarlino confronts more directly
 
 # Source Reference
-Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory
+Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory, pp. 247-248.
+
+# Verification Notes
+- Definition source: direct from Appendix A
+- Confidence rationale: high — explicit discussion with comparisons
+- Re-extraction notes: Re-extracted from v2 card; preserved: Zarlino comparison, Stufen advantage, Zug concept, complementary limitations note

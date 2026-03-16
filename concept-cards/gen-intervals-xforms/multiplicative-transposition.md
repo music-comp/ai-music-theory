@@ -1,53 +1,93 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Multiplicative Transposition
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: multiplicative-transposition
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: rhythmic-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "rhythmic augmentation"
+  - "rhythmic diminution"
+  - "T_k (durational)"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - durational-motive
+extends: []
+related:
+  - multiplicative-inversion
+  - mozart-k550-development-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is multiplicative transposition of a durational series?"
+  - "How are augmentation and diminution formalized?"
 ---
 
 # Quick Definition
-Multiplicative transposition is a transformation that multiplies all duration values in a rhythmic series by a constant factor, producing augmentation (factor > 1) or diminution (factor < 1).
+Multiplicative transposition scales all duration values in a rhythmic series by a constant factor k, formalizing augmentation (k > 1) and diminution (k < 1) as transformational operations on durational motives.
 
-# Formal Definition
-Given a durational series S = (d1, d2, d3, ..., dn), multiplicative transposition by factor k produces T_k(S) = (k*d1, k*d2, k*d3, ..., k*dn). This operation preserves the proportional relationships between durations while scaling the absolute values.
+# Core Definition
+Given a durational series S = (d1, d2, ..., dn), multiplicative transposition by factor k produces Tk(S) = (k*d1, k*d2, ..., k*dn). The operation preserves proportional relationships while scaling absolute values. Tk is an isomorphism: Tk(Tm(S)) = T_{km}(S); T1 is the identity; T_{1/k} is the inverse of Tk (Lewin, Section 10.1, pp. 253-256).
 
-# Mathematical Formulation
-Let S = (d1, d2, ..., dn) be a durational series.
-- T_k(S) = (k*d1, k*d2, ..., k*dn) for multiplication factor k
-- T_k is an isomorphism: T_k(T_m(S)) = T_{km}(S)
-- T_1 is the identity
-- T_{1/k} is the inverse of T_k
+# Prerequisites
+- **Durational motive** — the operand of multiplicative transposition
 
-Properties:
-- Augmentation: k > 1 (e.g., T_2 doubles all durations)
-- Diminution: k < 1 (e.g., T_{1/2} halves all durations)
+# Key Properties
+1. Augmentation: k > 1 (e.g., T2 doubles all durations)
+2. Diminution: k < 1 (e.g., T_{1/2} halves all durations)
+3. Preserves proportional relationships between durations
+4. Differs from additive pitch transposition (which adds a constant)
+5. Forms a group: Tk * Tm = T_{km}
 
-# Musical Context/Application
-Multiplicative transposition in the durational domain is analogous to transposition in the pitch domain, but instead of adding a constant to all values, we multiply by a constant. This operation formalizes the traditional concepts of rhythmic augmentation and diminution.
+# Construction / Recognition
+## To Construct:
+1. Multiply each duration in the series by factor k
+## To Recognize:
+1. Check if all durations in one series are a constant multiple of another
+
+# Context & Application
+Multiplicative transposition formalizes traditional augmentation and diminution. In the Mozart K.550 analysis, T2 transforms DM = 1+2+2 into series 3 = 2+4+4. Later, T_{1/2} transforms series 6 into series 7, "undoing the effect of the earlier augmentation."
 
 # Examples
-In the Mozart K.550 analysis (Figures 10.2-10.3):
-- DM = 1 + 2 + 2 (the basic durational motive)
-- T_2(DM) = 2 + 4 + 4 (augmentation by factor 2, appearing as series 3)
+**Example 1** (Section 10.1, pp. 253-256): DM = 1+2+2; T2(DM) = 2+4+4 (augmentation). Series 7 = 2+1+1 = T_{1/2}(series 6 = 4+2+2) (diminution undoing the augmentation).
 
-The augmentation from bracket 2 to bracket 3 transforms the rhythmic setting by T_2. Later, series 7 = 2 + 1 + 1 represents a diminution (T_{1/2}) of series 6 = 4 + 2 + 2, which "undoes the effect of the earlier augmentation."
+# Relationships
+## Builds Upon
+- **Durational motive** — the operand
+## Related
+- **Multiplicative inversion** — the other durational transformation
+- **Mozart K.550 development analysis** — primary example
 
-Lewin notes: "This diminution (multiplicative transposition by 1/2) undoes the effect of the earlier augmentation (transposition by 2), the augmentation we underwent in passing from bracket 2 to bracket 3."
-
-# Related Concepts
-- Durational Motive (DM)
-- Multiplicative Inversion
-- Additive Transposition
-- Augmentation
-- Diminution
-- Rhythmic Transformation
+# Common Errors
+- **Error**: Confusing multiplicative transposition (rhythm) with additive transposition (pitch)
+  **Correction**: Pitch Tn adds n to each value; durational Tk multiplies each value by k
 
 # Common Confusions
-Multiplicative transposition in rhythm differs fundamentally from additive transposition in pitch. In pitch space (using pitch-class integers), T_n adds n to each value. In durational space, T_k multiplies each value by k. Students should not conflate these two types of transposition operations despite the similar notation.
+- **Confusion**: Thinking augmentation/diminution is always by factor 2
+  **Clarification**: Any factor k is valid; the Mozart analysis uses T2 but other values are possible
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figures 10.2-10.3
+Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Section 10.1, pp. 253-256. See Figures 10.2-10.3.
+
+# Verification Notes
+- Definition source: direct from Section 10.1
+- Confidence rationale: high -- explicitly defined with worked examples
+- Re-extracted from v2 card; preserved: DM transformation chain, inverse relationship

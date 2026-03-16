@@ -1,70 +1,112 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Row-Retrograde as Complement
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: row-retrograde-complement
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: serial-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: "Example 6.6.2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "retrograde as complement in PROT"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - protocol-pairs
+  - inj-function
+  - set-complementation
+extends: []
+related:
+  - generalized-hexachord-theorem
+  - retrograde-operation
+  - inj-complement-theorem
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How are a twelve-tone row and its retrograde related as subsets of PROT?"
+  - "Why does the Generalized Hexachord Theorem apply to rows and retrogrades?"
+  - "What does it mean for a row to be a 'complement' of its retrograde in PROT?"
 ---
 
 # Quick Definition
-In the PROT model, a twelve-tone row and its retrograde are set-theoretic complements: L-bar (complement of L) = R(L), connecting serial retrograde to Fortean complementation.
+In the PROT (protocol pairs) model of twelve-tone rows, a row L and its retrograde R(L) are set-theoretic complements: L-bar = R(L). This places the row/retrograde relationship in the same formal position as hexachord/complement, and the Generalized Hexachord Theorem (6.6.1E) applies.
 
-# Formal Definition
-For a row L as a subset of PROT:
-- L contains 66 protocol pairs (all pairs (p, q) where p precedes q)
-- PROT has 132 pairs total
-- L-bar (complement) contains the remaining 66 pairs
-- L-bar = {(p, q) : (q, p) in L} = R(L)
+# Core Definition
+For a row L modeled as a subset of PROT (the 132 ordered pairs of distinct pitch classes): L contains the 66 protocol pairs (p, q) where p precedes q in the row. Its complement L-bar contains the remaining 66 pairs. Since (p, q) is in L-bar if and only if q precedes p in L, which is if and only if (p, q) is in R(L), we have L-bar = R(L) (Lewin, Example 6.6.2, p. 154).
 
-The retrograde operation R on PROT is: R(p, q) = (q, p).
+# Prerequisites
+- **Protocol pairs (PROT)** — The space of 132 ordered pairs of distinct pitch classes
+- **INJ function** — The injection function that generalizes IFUNC
+- **Set complementation** — L-bar is the complement of L within PROT
 
-# Mathematical Formulation
-For row L:
-(p, q) in L iff p precedes q in L
-(p, q) in L-bar iff p does NOT precede q in L
-iff q precedes p in L
-iff (p, q) in R(L)
+# Key Properties
+1. A row L as a subset of PROT contains 66 protocol pairs (all pairs where p precedes q)
+2. PROT has 132 pairs total, so L-bar also has 66 pairs
+3. L-bar = R(L): the complement equals the retrograde
+4. The retrograde operation R on PROT is R(p, q) = (q, p)
+5. cardL = 66 = (1/2) * cardPROT, placing L in the formal position of a "hexachord"
+6. Theorem 6.6.1(E) applies: INJ(L, L)(OP) = INJ(R(L), R(L))(OP) for any operation OP
 
-Therefore: L-bar = R(L)
+# Construction / Recognition
+## To Construct:
+1. Represent a row L as the set of all (p, q) pairs where p precedes q
+2. The complement L-bar = {(p, q) : (q, p) in L} = R(L)
+3. Apply Theorem 6.6.1(E) to deduce INJ equalities
+## To Recognize:
+1. A row and its retrograde sharing the same INJ internal structure
+2. The complement relationship holding in PROT, not in pitch-class space
 
-This places row/retrograde in the same formal position as hexachord/complement:
-- cardL = 66 = 1/2 * cardPROT
-- L and L-bar partition PROT
-- Generalized Hexachord Theorem (6.6.1E) applies
-
-# Musical Context/Application
-The complement relationship between row and retrograde extends Babbitt's hexachord theorem to serial structure. The formal analogy suggests deep connections between set-class theory and serial theory, unified through the PROT model and INJ function.
+# Context & Application
+The complement relationship extends Babbitt's hexachord theorem to serial structure. Just as the hexachord theorem says a hexachord and its complement have the same interval content, the generalized version says a row and its retrograde have the same "internal INJ structure." The formal analogy suggests deep connections between set-class theory and serial theory, unified through the PROT model and INJ function.
 
 # Examples
-Row L = A-Bb-E-D-Eb-C#-G-F-F#-G#-B-C (Moses und Aron)
-Contains pairs like: (A, Bb), (A, E), (A, D), ..., (B, C)
-Total: 66 pairs
+**Example 1** (Example 6.6.2, Moses und Aron):
+- Row L = A-Bb-E-D-Eb-C#-G-F-F#-G#-B-C
+- L contains 66 pairs: (A, Bb), (A, E), (A, D), ..., (B, C)
+- Retrograde R(L) = C-B-G#-F#-F-G-C#-Eb-D-E-Bb-A
+- R(L) contains 66 pairs: (C, B), (C, G#), ..., (Bb, A)
+- L-bar = R(L): e.g., (Bb, A) is in L-bar because A precedes Bb in L (so Bb does NOT precede A), and (Bb, A) is in R(L) because Bb precedes A in the retrograde.
 
-Retrograde R(L) = C-B-G#-F#-F-G-C#-Eb-D-E-Bb-A
-Contains pairs like: (C, B), (C, G#), ..., (Bb, A)
-
-Complement L-bar contains exactly the pairs in R(L):
-- (Bb, A) in L-bar because A precedes Bb in L, so Bb does NOT precede A in L
-- (Bb, A) in R(L) because A precedes Bb in R(L)
-
-Application of Theorem 6.6.1E:
-For any operation OP on PROT:
+**Application of Theorem 6.6.1(E)**: For any operation OP on PROT:
 INJ(L, L)(OP) = INJ(L-bar, L-bar)(OP) = INJ(R(L), R(L))(OP)
 
-This says the "internal INJ structure" of a row equals that of its retrograde.
+# Relationships
+## Builds Upon
+- **Protocol pairs** — The space within which rows are modeled as sets
+- **INJ function** — Measures internal structure of rows
+## Enables
+- **Generalized hexachord theorem** — Applied to rows via the complement relationship
+## Related
+- **Retrograde operation** — R(p, q) = (q, p) on PROT
+- **INJ complement theorem** — The general theorem (6.6.1) instantiated here
 
-# Related Concepts
-- Protocol Pairs (PROT)
-- INJ Complement Theorem
-- Hexachord Theorem (Generalized)
-- Retrograde Operation
-- Set Complementation
+# Common Errors
+- **Error**: Thinking the complement relationship holds in pitch-class space
+  **Correction**: A row and its retrograde have the same pitch-class content. The complementarity is in PROT (ordering relations), not in pitch classes.
 
 # Common Confusions
-The complement relationship holds in PROT, not in pitch-class space. A row and its retrograde have the same pitch-class content; their complementarity is in terms of ordering relations (protocol pairs), not pitch classes.
+- **Confusion**: Conflating "complement in PROT" with "pitch-class complement"
+  **Clarification**: In PROT, L and R(L) partition the 132 protocol pairs into two equal halves. This is about ordering relationships, not about which pitch classes are present.
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, Example 6.6.2
+Chapter 6: Generalized Set Theory (2): The Injection Function, Example 6.6.2, pages 154-155.
+
+# Verification Notes
+- Definition source: Direct from Example 6.6.2
+- Confidence rationale: Explicitly constructed with proof and application
+- Re-extraction notes: Re-extracted from v2 card; preserved: Moses und Aron row, complement proof, Theorem 6.6.1(E) application

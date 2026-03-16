@@ -1,69 +1,100 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "Protocol Pairs (PROT)"
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: protocol-pairs
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: injection-function
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: "6.2.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - PROT
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-function
+extends: []
+related:
+  - partial-ordering
+  - signature-motive
+  - semi-simple-variations-analysis
+  - inj-complement-theorem
+contrasts_with:
+  - ordinal-pitch-pairs
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are protocol pairs and how do they model twelve-tone rows?"
 ---
 
 # Quick Definition
-PROT is the space of protocol pairs - ordered pairs (p, q) of distinct pitch classes - providing a model for twelve-tone rows as unordered sets of precedence relations.
+PROT is the space of ordered pairs (p, q) of distinct pitch classes (132 total). A twelve-tone row is modeled as a subset of PROT containing all precedence relations: (p, q) is in the set iff p precedes q in the row. This treats all rows as conceptually equal.
 
-# Formal Definition
-Definition (6.2.4): A protocol pair is an ordered pair (p, q) of distinct chromatic pitch classes. The family PROT contains all 132 = 12 x 11 such pairs.
+# Core Definition
+Example 6.2.4 (Lewin, pp. 166-167): "A protocol pair is an ordered pair (p, q) of distinct chromatic pitch classes. There are thus 132 = 12 times 11 protocol pairs." A row L contains 66 pairs (11+10+...+1). Operations: T_i(p,q) = (T_i(p), T_i(q)); I(p,q) = (I(p), I(q)); R(p,q) = (q,p). The retrograde R(L) = complement of L in PROT, connecting row/retrograde to set/complement duality.
 
-A twelve-tone row can be represented as a subset of PROT: the pair (p, q) belongs to the set if and only if p precedes q in the row.
+# Prerequisites
+- **INJ Function** — PROT is a space on which INJ operates
 
-# Mathematical Formulation
-PROT = {(p, q) : p, q in pitch classes, p != q}
-|PROT| = 12 * 11 = 132
+# Key Properties
+1. |PROT| = 132; each row has 66 pairs; its retrograde (complement) also has 66
+2. Row and retrograde are complementary subsets of PROT
+3. Operations T_i, I, R, and combinations form a group isomorphic to the twelve-tone group
+4. No a priori ordering assumed — all rows are conceptually equal
+5. Partial orderings (subsets satisfying PO1, PO2 but not SIMP) model incomplete serial structures
 
-Row as subset L of PROT:
-(p, q) in L iff p appears before q in the row
+# Construction / Recognition
+## To Construct a Row as Subset of PROT:
+1. Given row p_1, p_2, ..., p_12
+2. Include pair (p_i, p_j) whenever i < j
+3. Result is a 66-element subset of PROT
 
-A row L is a "linear ordering" satisfying:
-- (SIMP): For any (p, q) in PROT, either (p, q) or (q, p) is in L
-- (PO1): Never both (p, q) and (q, p) in L
-- (PO2): If (p, q) and (q, r) in L, then (p, r) in L
+## To Recognize:
+1. A 66-element subset of PROT satisfying PO1, PO2, and SIMP
 
-Each row contains exactly 66 protocol pairs (11 + 10 + ... + 1).
-
-Operations on PROT:
-- T_i(p, q) = (T_i(p), T_i(q))
-- I(p, q) = (I(p), I(q))
-- R(p, q) = (q, p) [retrograde]
-
-# Musical Context/Application
-This model treats all rows as equals - no privileged "chromatic row" from which others derive. It captures the ordering information of a row without imposing any external structure. Partial orderings (subsets of PROT satisfying PO1 and PO2 but not SIMP) model incomplete orderings like aggregate structures.
+# Context & Application
+This model enables applying INJ set-theoretic techniques to serial analysis. INJ(L, X)(f) measures how well partial ordering X fits within row form f(L). The complement relationship (row = complement of retrograde) parallels hexachord/complement in pitch-class theory, and the Generalized Hexachord Theorem (6.6.1E) applies.
 
 # Examples
-Row of Schoenberg's Fourth Quartet: D-C#-A-Bb-...
-As subset of PROT, contains:
-- (D, C#), (D, A), (D, Bb), ...
-- (C#, A), (C#, Bb), ...
-- (A, Bb), ...
-- All 66 pairs where earlier note precedes later
+**Example 1** (p. 167): Schoenberg's Fourth Quartet row D-C#-A-Bb-...: contains pairs (D, C#), (D, A), (C#, A), (A, Bb), etc.
 
-Notation: D-C#-A-Bb-... remains convenient for quick reference.
+**Example 2** (pp. 168-169): Moses und Aron row L_1 with motive X_1 = E-A-Bb: INJ(L_1, X_1)(J) = 3 uniquely identifies J(L_1) among inverted forms.
 
-Partial ordering example (Figure 6.7):
-- X1 = E-A-Bb (small motive) contains 3 pairs: (E, A), (E, Bb), (A, Bb)
-- X2 models SATB aggregate, containing 12 pairs
+# Relationships
+## Builds Upon
+- **INJ Function** — INJ on PROT space
 
-INJ(L, X1)(J) = 3 means the J-inverted row contains all three precedence pairs of motive X1. This identifies X1 as a "signature motive" for that row form.
+## Enables
+- **Partial Ordering** — Generalizes rows to incomplete orderings
+- **Signature Motive** — INJ on PROT identifies row forms
+- **INJ Complement Theorem** — Row/retrograde as complement sets
 
-# Related Concepts
-- Twelve-Tone Row
-- Partial Ordering
-- Linear Ordering
-- INJ (Injection Function)
-- Row Transformations
+# Common Errors
+- **Error**: Confusing protocol pairs with ordered pitch-class pairs in other contexts
+  **Correction**: PROT specifically models precedence relations for serial analysis
 
 # Common Confusions
-The retrograde operation R swaps pairs: R(p, q) = (q, p). If L is a row, R(L) = complement of L in PROT. This gives a beautiful connection: row and retrograde as complement sets, like hexachord and complement in traditional theory.
+- **Confusion**: Thinking this model privileges one row over others
+  **Clarification**: No a priori ordering is assumed; "any row orders [the pitch classes] as well as any other row"
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, Example 6.2.4
+Chapter 6: Generalized Set Theory (2), Example 6.2.4, pp. 166-170.
+
+# Verification Notes
+- Definition source: Direct from Example 6.2.4
+- Confidence rationale: Explicit definition with multiple analytical applications
+- Re-extraction notes: Re-extracted from v2 card; preserved: cardinality 132/66, retrograde as complement, Moses und Aron reference. Added v3.1 structure.

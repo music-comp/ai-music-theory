@@ -1,61 +1,92 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "Hindemith's Chromatic Space Construction"
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory"
-chapter_number: A
-pdf_page: 276
-unit: null
+slug: hindemith-chromatic-space
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: historical-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
 authors: David Lewin
+chapter: "Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory"
+chapter_number: null
+pdf_page: 276
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Hindemith's synthesis"
+  - "Unterweisung im Tonsatz chromatic derivation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - multiple-musical-spaces
+  - senario
+extends: []
+related:
+  - zarlino-istitutioni-harmoniche
+  - minor-sixth-problem
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How did Hindemith attempt to derive the chromatic scale from harmonic relationships?"
+  - "What is the Ab problem in Hindemith's construction?"
 ---
 
 # Quick Definition
-Hindemith's construction attempts to show that the chromatic scale emerges naturally from harmonic relationships, deriving each chromatic pitch from its "closest" harmonic relation to a tonic within a compact melodic region.
+Hindemith's construction (Unterweisung im Tonsatz, 1937) attempts to show that the chromatic scale from C2 to C3 emerges naturally as the set of pitches in "closest" harmonic relation to C2, synthesizing melodic compactness with harmonic proximity to a tonic.
 
-# Formal Definition
-In his Unterweisung im Tonsatz (Craft of Musical Composition, 1937), Paul Hindemith constructs a chromatic scale from C2 to C3 by showing that each pitch within this octave lies in "closest" harmonic relationship to C2, according to specific algorithms involving overtone relationships. The achievement synthesizes melodic well-packedness (chromatic scale within an octave) with harmonic well-packedness (all pitches harmonically related to tonic).
+# Core Definition
+Hindemith derives chromatic pitches by showing each lies in close harmonic relation to C2 via overtone relationships: G2 (2nd partial of G2 = 3rd partial of C2), F2 (3rd partial = 4th partial of C2), etc. The "essence of Hindemith's achievement was to have shown how pitches within a melodically well-packed region, a chromatic scale from C2 to C3, could be regarded as pitches also within a harmonically well-packed region around the tonic." The construction encounters difficulty with Ab2, requiring an eighth-partial relationship — paralleling Zarlino's minor sixth problem (Lewin, Appendix A, pp. 249-250).
 
-# Mathematical Formulation
-Hindemith's construction algorithm:
-- G2: 2nd partial of G2 = 3rd partial of C2 (closest relation)
-- F2: 3rd partial of F2 = 4th partial of C2
-- E2, Eb2, A2: derivable without partials > 6
-- Continue for remaining chromatic pitches
+# Prerequisites
+- **Multiple Musical Spaces** — Hindemith synthesizes melodic and harmonic spaces
+- **Senario** — The construction parallels senario limitations
 
-The algorithm generates pitches within the target octave (C2-C3) that are harmonically "close" to C2.
+# Key Properties
+1. Most chromatic pitches derive from partials numbered 6 or below
+2. Ab2 requires eighth-partial relationship (5th partial of Ab2 = 8th partial of C2)
+3. Hindemith generates Ab1 instead and transfers it up an octave
+4. The Ab problem parallels Zarlino's trouble with the minor sixth
+5. Seventh-partial relationships are avoided (as Zarlino avoids adjoining 7 to the senario)
 
-Problematic case (Ab):
-- Ab2 would require: 5th partial of Ab2 = 8th partial of C2
-- Instead, Hindemith generates Ab1 and transfers it up an octave
-
-# Musical Context/Application
-Hindemith's construction attempts to ground the chromatic scale in acoustic/harmonic reality rather than accepting it as arbitrary equal division. The success of this attempt is partial: most pitches derive naturally, but Ab requires special treatment that somewhat undermines the elegance of the construction.
+# Context & Application
+Hindemith's construction partially succeeds in grounding the chromatic scale in acoustic reality. The Ab problem reveals that purely harmonic derivation encounters the same difficulty at the minor sixth that plagued Zarlino four centuries earlier.
 
 # Examples
-**The achievement:**
-"Hindemith makes an interesting synthesis of melodic and harmonic spaces. He tries to show that a chromatic scale from C2 to C3 is filled by those pitches, and only those pitches, which lie in 'closest' harmonic relation to C2 within a certain harmonic space."
+**Example 1** (p. 249): G2 derivation: 2nd partial of G2 = 3rd partial of C2
 
-**Methodology:**
-"We ignore the overtones of C2; then G2, within the desired scale-segment, is harmonically 'close' to C2 because the second partial of G2 is the third partial of C2. F2, within the desired scale-segment, is 'close' to C2 since the third partial of F2 is the fourth partial of C2."
+**Example 2** (p. 250): Ab problem: "He would have to have used an eighth-partial relationship: The fifth partial of Ab2 is the eighth partial of C2."
 
-**The essence:**
-"The essence of Hindemith's achievement was not just to find pitch classes that can be represented by pitches within a chromatic scale. After all, Zarlino and his forerunners could do that well enough and better. Rather, the achievement was to have shown how pitches within a melodically well-packed region, a chromatic scale from C2 to C3, could be regarded as pitches also within a harmonically well-packed region around the tonic."
+# Relationships
+## Builds Upon
+- **Multiple Musical Spaces** — attempts to integrate melodic and harmonic
 
-**The Ab problem:**
-"The one pitch with which Hindemith has trouble is Ab2, the minor sixth above the tonic C2. Curiously enough, his troubles resemble Zarlino's troubles with the minor sixth."
+## Related
+- **Zarlino's Istitutioni Harmoniche** — parallel minor sixth difficulty
+- **Minor Sixth Problem** — the Ab problem is an instance of this recurring difficulty
+- **Senario** — both Zarlino and Hindemith encounter the number 8
 
-"But in order to find Ab2 by this method, he would have to have used an eighth-partial relationship... Presumably for reasons of these sorts, Hindemith produces not Ab2 but Ab1 by his algorithm; Ab1 is a unique pitch which he generates in this way outside the octave C2-C3. Then, without much explanation, he brings Ab1 up an octave, so that it will lie within his desired scale-segment."
-
-# Related Concepts
-- Senario
-- Harmonic Space
-- Melodic Space
-- Zarlino's Istitutioni Harmoniche
-- Chromatic Scale
-- Minor Sixth Problem
+# Common Errors
+- **Error**: Thinking the construction proves the chromatic scale is acoustically "natural"
+  **Correction**: The construction partially succeeds but the Ab problem reveals fundamental limitations
 
 # Common Confusions
-Hindemith's construction is not a proof that the chromatic scale is acoustically "natural" but rather an attempt at synthesis that partially succeeds. The Ab problem reveals limitations analogous to Zarlino's senario difficulties. Students should appreciate both the achievement and its incompleteness.
+- **Confusion**: Thinking the Ab problem is a minor flaw
+  **Clarification**: It reveals that the minor sixth consistently resists purely harmonic derivation across different theoretical frameworks
 
 # Source Reference
-Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory
+Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory, pp. 249-250.
+
+# Verification Notes
+- Definition source: direct from Appendix A
+- Confidence rationale: high — explicit discussion with worked examples
+- Re-extraction notes: Re-extracted from v2 card; preserved: derivation method, Ab problem, parallel with Zarlino, essence quote

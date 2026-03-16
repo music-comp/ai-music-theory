@@ -1,69 +1,105 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Network of Networks
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: network-of-networks
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: graph-network-extensions
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.5.5"
+
+# === CONFIDENCE ===
+extraction_confidence: medium
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transformation-network-definition
+  - operation
+  - commutativity
+extends:
+  - transformation-network-definition
+related:
+  - product-networks
+  - scholica-enchiriadis-analysis
+contrasts_with:
+  - product-networks
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a network of networks?"
+  - "How can networks be nested hierarchically?"
 ---
 
 # Quick Definition
-A transformation network where each node contains not a simple musical object but an entire network, allowing hierarchical or layered analytical structures.
+A transformation network where each node contains not a simple musical object but an entire sub-network, allowing hierarchical or layered analytical structures with outer transformations operating on complete inner networks.
 
-# Formal Definition
-A network-of-networks has:
-1. An outer network structure (NODES, ARROW, SGP, TRANSIT)
-2. Each CONTENTS(N) is itself a transformation network
-3. The outer transformations operate on entire inner networks
+# Core Definition
+A network-of-networks has an outer network structure whose CONTENTS at each node is itself a transformation network. The outer transformations operate on entire inner networks. Two varieties are illustrated in Section 9.5.5: type (f) where the outer graph is the melody and each node contains a diatesseron interval-network, and type (g) where the outer graph is the diatesseron and each node contains the full melody-network (Lewin, Section 9.5.5, pp. 238-239).
 
-Two varieties shown in Section 9.5.5:
-- Type (f): Outer graph is (b), each node contains an (e)-network
-- Type (g): Outer graph is (e), each node contains a (b)-network
+Well-formedness requires: the outer transformations must be operations (invertible), the inner transformations must commute with the outer transformations.
 
-# Mathematical Formulation
-For networks-of-networks to be well-formed:
-- The transformations in outer SGP must be operations (invertible)
-- The inner network transformations must commute with outer transformations
-- Example: T_3 (outer) commutes with T_1, T_{-1}, T_0 (inner)
+# Prerequisites
+- **Transformation network** — both outer and inner structures are networks
+- **Operation** — outer transformations must be operations
+- **Commutativity** — inner and outer transformations must commute
 
-Product networks (type (d) in Figure 9.8) are related but formally distinct:
-- Product network: NODES is a Cartesian product
-- Network-of-networks: NODES contains entire networks as elements
+# Key Properties
+1. Each node of the outer network contains an entire inner network
+2. Outer transformations transpose or otherwise transform entire sub-networks
+3. Inner/outer commutativity is required for well-formedness
+4. Two perspectives (f) and (g) model the same musical situation differently
+5. Formally distinct from product networks, though related
 
-# Musical Context/Application
-Networks-of-networks model analytical situations where:
-- Each structural element is itself structured (e.g., each chord is a melodic pattern)
-- Transformations operate at multiple levels (transposing entire sub-structures)
-- Hierarchical relationships exist between levels of structure
+# Construction / Recognition
+## To Construct:
+1. Define an outer network (nodes, arrows, semigroup, TRANSIT)
+2. At each outer node, place a complete inner network as CONTENTS
+3. Ensure outer transformations commute with inner transformations
+## To Recognize:
+1. Look for networks whose node contents are themselves networks
+2. Verify the commutativity requirement
 
-The Scholica Enchiriadis example models parallel organum: "We are singing the melody, singing diatessera as we go."
+# Context & Application
+Networks-of-networks model analytical situations with multiple structural levels: chords that are themselves patterned, voices that each carry melodic content, etc. The Scholica Enchiriadis example models parallel organum: (f) represents "singing the melody, singing diatessera as we go," while (g) represents "I am singing the same melody as Principalis, in diatesseron relation."
 
 # Examples
-From Figure 9.8 (Scholica Enchiriadis):
-- Network (f): Graph (b) as outer structure, graph (e) at each node
-  - Each node contains a diatesseron (two voices a fourth apart)
-  - Outer arrows transpose entire diatessera along the melody
-  - Models: "singing the melody, singing diatessera as we go"
+**Example 1** (Figure 9.8, pp. 238-239): Scholica Enchiriadis "Nos qui vivimus."
+- Network (f): outer graph = melody (b), inner graph = diatesseron (e). Models: "We are singing (the graph of) 'Nos qui vivimus,' singing diatessera as we go."
+- Network (g): outer graph = diatesseron (e), inner graph = melody (b). Models Organalis thinking: "Principalis is singing the melody; I am singing the same melody at the diatesseron."
 
-- Network (g): Graph (e) as outer structure, graph (b) at each node
-  - Each node contains the entire melody "Nos qui vivimus"
-  - Outer arrow relates Principalis melody to Organalis melody
-  - Models: "I am singing the melody, in diatesseron relation to Principalis"
+# Relationships
+## Builds Upon
+- **Transformation network** — both levels are networks
+## Related
+- **Product networks** — related but formally distinct; product networks use Cartesian products of nodes
+- **Scholica Enchiriadis analysis** — primary example
+## Contrasts With
+- **Product networks** — product networks are not hierarchically nested
 
-# Related Concepts
-- Transformation Network Definition
-- Product Networks
-- Commuting Transformations
-- Hierarchical Structure
-- Scholica Enchiriadis Analysis
+# Common Errors
+- **Error**: Omitting the commutativity requirement
+  **Correction**: Well-formedness requires inner and outer transformations to commute
 
 # Common Confusions
-- Network-of-networks differs from product networks (though related)
-- The outer/inner distinction is a matter of perspective (f) vs (g)
-- Commutativity of transformations is required for well-formedness
-- Not all analytical situations suit this structure
+- **Confusion**: Thinking (f) and (g) are the same structure
+  **Clarification**: They model different perspectives on the same music and are formally distinct
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.5.5, Figure 9.8
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.5.5, pp. 238-239. See Figure 9.8(f) and (g).
+
+# Verification Notes
+- Definition source: synthesized from Section 9.5.5 discussion
+- Confidence rationale: medium -- concept described through examples, not given a numbered definition
+- Re-extracted from v2 card; preserved: Scholica Enchiriadis examples, commutativity requirement, (f) vs (g) distinction

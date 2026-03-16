@@ -1,67 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Carriage Return Function
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: carriage-return-function
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: graph-network-structure
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.7.6"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "carriage-return moment"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - precedence-ordered-system
+extends: []
+related:
+  - input-node
+  - beethoven-appassionata-analysis
+  - start-node
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a carriage-return moment in a transformation network?"
+  - "What happens when musical chronology violates precedence ordering?"
 ---
 
 # Quick Definition
-The formal function of certain nodes in a network where musical chronology violates precedence-ordering - moments where listening "shoots back from right to left" on a precedence-ordered graph, violating the sense of one-way arrows.
+A carriage-return moment occurs when the listening chronology of a musical passage violates the precedence ordering of its network, marking the precise moments when the listener must "shoot back from right to left" on a precedence-compatible graph layout.
 
-# Formal Definition
-A carriage-return moment occurs when:
-1. The node/arrow system is precedence-ordered
-2. Nodes are laid out compatibly with precedence (one-way arrows left to right)
-3. Musical chronology at some point moves from a later node to an earlier node (in precedence terms)
-4. The listener must traverse one-way arrows backwards
+# Core Definition
+In a precedence-ordered system laid out so one-way arrows go left to right, carriage-return moments are precisely those moments in the listening chronology at which that chronology violates precedence-ordering. At all other moments, listening chronology is compatible with precedence-ordering. The expression implicitly supposes that the node/arrow system is precedence-ordered (Lewin, Section 9.7.6, pp. 246-247).
 
-These moments mark precisely where musical chronology violates formal precedence.
+# Prerequisites
+- **Precedence-ordered system** — carriage returns require precedence-ordered systems
 
-# Mathematical Formulation
-Given precedence-ordered system with compatible layout:
-- Let node N_j have earlier chronological position than N_k
-- But N_k precedes N_j in the formal precedence ordering
-- The transition from N_j to N_k is a carriage-return
+# Key Properties
+1. Precisely defined: moments where chronology violates precedence
+2. At all other moments, chronology is compatible with precedence
+3. The concept requires both a precedence-ordered graph AND a musical chronology
+4. Carriage returns are analytically informative, not flaws
+5. Lewin notes this concept is hard to express precisely in any other theoretical vocabulary
 
-Formally: Chronological order violates precedence at exactly those transitions that are carriage-returns.
+# Construction / Recognition
+## To Construct:
+1. Lay out the precedence-ordered graph with one-way arrows left to right
+2. Trace the musical chronology through the nodes
+3. Identify moments where chronology moves from right to left
+## To Recognize:
+1. Find nodes where the musical event occurs after an event at a node further right in the precedence layout
 
-# Musical Context/Application
-Carriage-return moments often correspond to:
-- Structural "returns" or "resets" in the music
-- Harmonic motions that feel like going back to begin again
-- Phrases that restart from a structural origin
-
-The concept provides precise vocabulary for describing these musical phenomena through graph-theoretic formalism.
+# Context & Application
+Carriage-return moments often correspond to structural "returns" or "resets" in the music. In the Beethoven Appassionata analysis, the Gb harmonies function as carriage returns, interacting effectively with the phrasing. The concept pinpoints where the temporal and structural orderings diverge, giving precise vocabulary for a phenomenon otherwise difficult to articulate.
 
 # Examples
-From Beethoven Appassionata analysis (Figure 9.14):
-- Nodes laid out in precedence-compatible order (b)
-- The Gb nodes are formal inputs (arrows only go out)
-- But Gb harmonies do not occur first in the music
-- The moments when Gb is heard are carriage-return moments
-- The listener "shoots back from right to left" on the graph
+**Example 1** (Figure 9.14, pp. 244-247): Beethoven Appassionata slow movement. The Gb nodes are formal inputs in the precedence-compatible layout (b). But in the music, Db is heard first. The moments when Gb is heard are carriage-return moments -- the listener "shoots back from right to left," and this interacts with the phrasing of the passage. The second Gb carriage-return is felt especially strongly.
 
-The carriage-return function of Gb nodes:
-- Gb appears as "reset" points in the musical chronology
-- This interacts effectively with the phrasing of the passage
-- The formal input function captures this "reset" quality precisely
+# Relationships
+## Builds Upon
+- **Precedence-ordered system** — carriage returns occur within such systems
+## Enables
+- (Analytical insight into temporal vs. structural ordering)
+## Related
+- **Input node** — formal inputs that produce carriage returns when not heard first
+- **START node** — a device to establish structural priority over formal input nodes
+- **Beethoven Appassionata analysis** — primary example of carriage returns
 
-# Related Concepts
-- Precedence Ordering
-- Precedence-Ordered System
-- Input Node
-- Musical Chronology versus Graph Structure
-- Beethoven Appassionata Analysis
+# Common Errors
+- **Error**: Treating carriage returns as defects in the analysis
+  **Correction**: Carriage returns are analytically informative features, not problems
 
 # Common Confusions
-- Carriage returns require precedence-ordered systems (not all systems have them)
-- The term is analogical (like typewriter carriage returns), not literal
-- Carriage returns mark where chronology violates precedence, not where arrows point backward
-- Having carriage returns is analytically interesting, not a flaw in the network
+- **Confusion**: Thinking carriage returns mean arrows point backward
+  **Clarification**: The arrows are correctly oriented; it is the musical chronology that moves against the arrow direction
+- **Confusion**: Thinking carriage returns apply to all networks
+  **Clarification**: They require precedence-ordered systems; non-precedence-ordered systems lack the necessary framework
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.7.6
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.7.6, pp. 244-247. See Figure 9.14.
+
+# Verification Notes
+- Definition source: synthesized from Section 9.7.6 discussion
+- Confidence rationale: high -- concept explicitly named and defined in context
+- Re-extracted from v2 card; preserved: Appassionata example, "shoot back from right to left" quote

@@ -1,67 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: STRANS2 Group
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
-chapter_number: B
-pdf_page: 282
-unit: null
+slug: strans2-group
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: octatonic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
 authors: David Lewin
+chapter: "Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
+chapter_number: null
+pdf_page: 282
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - STRANS2
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - octatonic-pitch-class-set
+  - simply-transitive-group
+  - strans1-group
+extends: []
+related:
+  - gis2-octatonic
+  - dual-simply-transitive-groups
+  - queer-operations
+  - exchanging-operations
+contrasts_with:
+  - strans1-group
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is STRANS2 in the octatonic GIS?"
+  - "What are the queer and exchanging operations?"
 ---
 
 # Quick Definition
-STRANS2 is an alternative simply transitive group of eight operations on the octatonic collection comprising RO, Q3, R6, Q9 (including "queer" operations) and X1, X2, X4, X5 (exchanging operations), forming the dual to STRANS1.
+An alternative simply transitive group of eight operations on the octatonic collection comprising RO, Q3, R6, Q9 (including "queer" operations that rotate the two diminished-seventh chords in opposite directions) and X1, X2, X4, X5 (exchanging operations), forming the dual to STRANS1.
 
-# Formal Definition
-STRANS2 is a group of eight operations on the octatonic set S that is simply transitive and dual to STRANS1. Every member of STRANS2 commutes with every member of STRANS1, and STRANS2 consists precisely of those operations that commute with all members of STRANS1. The group contains rotations (RO, R6), queer operations (Q3, Q9), and exchanging operations (X1, X2, X4, X5).
+# Core Definition
+STRANS2 contains RO and R6 from STRANS1, plus "queer" operations Q3, Q9 and "exchanging" operations X1, X2, X4, X5. "Q3 rotates each of the diminished-seventh chords within S, but in opposite directions; it maps C to D#, D# to F#, F# to A, A to C, and also C# to A# (not to E), A# to G, G to E, and E to C#" (Lewin, Appendix B, p. 251). STRANS2 is simply transitive on S, and "every member of STRANS2 commutes with every member of STRANS1" (p. 252). STRANS2 consists precisely of those operations commuting with all STRANS1 members.
 
-# Mathematical Formulation
-STRANS2 operations:
-- RO: identity
-- Q3: "queer" operation rotating each diminished-seventh chord in opposite directions
-- R6: rotation by tritone
-- Q9: inverse of Q3
-- X1: exchanges pitch classes 1 semitone apart within S
-- X2: exchanges pitch classes 2 semitones apart within S
-- X4: exchanges pitch classes 4 semitones apart within S
-- X5: exchanges pitch classes 5 semitones apart within S
+# Prerequisites
+- **Octatonic pitch-class set** — The space of action
+- **Simply transitive group** — STRANS2 has this property
+- **STRANS1 group** — STRANS2 is defined as its dual/commutant
 
-Group properties:
-- |STRANS2| = 8
-- Simply transitive on S
-- Commutes with STRANS1: for all f in STRANS1 and g in STRANS2, fg = gf
+# Key Properties
+1. |STRANS2| = 8, simply transitive on S
+2. RO, R6: shared with STRANS1
+3. Q3: rotates dim7 chords in opposite directions; Q9 = Q3^{-1}
+4. X1, X2, X4, X5: exchange pitch classes at specified semitone distances
+5. Every STRANS2 member commutes with every STRANS1 member
+6. STRANS2 = {f : S -> S | fg = gf for all g in STRANS1}
 
-# Musical Context/Application
-STRANS2 provides an alternative transformation group for analyzing octatonic music. While STRANS1 captures familiar T/I relationships, STRANS2 offers a different perspective that may reveal structures invisible to STRANS1 analysis. The dual relationship means both perspectives are equally valid.
+# Construction / Recognition
+## To Construct:
+1. Find all operations on S that commute with every member of STRANS1
+2. These form STRANS2
+## To Recognize:
+1. Operations that rotate dim7 chords in opposite directions (Q3, Q9) or exchange elements at fixed distances (X1-X5)
+
+# Context & Application
+STRANS2 provides an alternative perspective for analyzing octatonic music. Its "queer" operations have no standard twelve-tone counterpart, offering genuinely novel analytical tools. The dual relationship means both STRANS1 and STRANS2 perspectives are equally valid.
 
 # Examples
-**Definition of queer operations:**
-"Q3 rotates each of the diminished-seventh chords within S, but in opposite directions; it maps C to D#, D# to F#, F# to A, A to C, and also C# to A# (not to E), A# to G, G to E, and E to C#."
+**Example 1** (p. 251): Q3: C->D#, D#->F#, F#->A, A->C (forward rotation of dim7 #1), C#->A#, A#->G, G->E, E->C# (backward rotation of dim7 #2).
 
-"Q9 is the inverse operation to Q3; it maps C to A,..., D# to C, and also C# to E,..., and A# to C#."
+**Example 2** (p. 251): X1 exchanges pairs one semitone apart: C<->C#, D#<->E, F#<->G, A<->A#.
 
-**Definition of exchanging operations:**
-"X1 exchanges pitch classes within S that lie one semitone apart; it thus maps C to C#, C# to C, D# to E, E to D#, F# to G, G to F#, A to A#, and A# to A."
+# Relationships
+## Builds Upon
+- **STRANS1 group** — STRANS2 is its commutant/dual
+## Enables
+- **GIS2 octatonic** — GIS with STRANS2 as transpositions
+## Related
+- **Dual simply transitive groups** — STRANS1 and STRANS2 exemplify duality
+- **Queer operations** — Q3, Q9 are unique to STRANS2
+- **Exchanging operations** — X1, X2, X4, X5 are unique to STRANS2
+## Contrasts With
+- **STRANS1 group** — Different group on the same set
 
-"X2 exchanges pitch classes that lie two semitones apart; it maps C to A#, A# to C, C# to D#, F# to E, and so on."
-
-"X4 exchanges pitch classes that lie four semitones apart; it maps F# to A#, E to C, G to D#, and so on."
-
-"X5 exchanges pitch classes that lie five semitones apart; it maps A to E, D# to A#, F# to C#, and so on."
-
-**Commutation with STRANS1:**
-"Every member of STRANS2 commutes with every member of STRANS1. In fact, the members of STRANS2 are precisely those transformations on S that commute with every member of STRANS1."
-
-# Related Concepts
-- STRANS1 Group
-- Queer Operations
-- Exchanging Operations
-- GIS2
-- Octatonic Pitch-Class Set
-- Dual Simply Transitive Groups
+# Common Errors
+- **Error**: Trying to express Q3 or Q9 as standard T or I operations
+  **Correction**: Queer operations have no standard twelve-tone counterpart
 
 # Common Confusions
-The queer operations Q3 and Q9 are not standard transpositions or inversions. They rotate the two diminished-seventh chords in opposite directions simultaneously. Students should not assume STRANS2 operations can be expressed simply in terms of familiar T and I operations.
+- **Confusion**: Thinking STRANS2 is less natural than STRANS1
+  **Clarification**: The duality is symmetric; neither group is more fundamental
 
 # Source Reference
-Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups
+Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups, pages 251-252.
+
+# Verification Notes
+- Definition source: Direct quotation from Appendix B
+- Confidence rationale: Explicitly defined with all operations specified
+- Re-extraction notes: Re-extracted from v2 card; preserved: Q3 mapping, X1 mapping, commutation property

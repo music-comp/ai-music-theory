@@ -1,86 +1,117 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Time-Span Interval Group
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+slug: time-span-interval-group
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: rhythmic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "IVLS for time spans"
+  - "time-span IVLS"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval-group-ivls
+  - group
+extends:
+  - interval-group-ivls
+related:
+  - time-span-gis
+  - central-interval
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the interval group for the time-span GIS?"
+  - "Why is the time-span interval group non-commutative?"
 ---
 
 # Quick Definition
-The time-span interval group IVLS consists of pairs (i, p) with a non-commutative composition law. The first component measures relative temporal position (in span-lengths), the second measures duration ratio.
+The time-span interval group consists of pairs (i, p) (i real, p positive real) with the non-commutative composition (i, p)(j, q) = (i + pj, pq), identity (0, 1), and inverse (i, p)^{-1} = (-i/p, 1/p).
 
-# Formal Definition
-**Lemma 4.1.3.1:** Let IVLS be the family of pairs (i, p) where i is real and p is positive real. Then IVLS forms a group under:
+# Core Definition
+Lemma 4.1.3.1: Let IVLS be the family of pairs (i, p) where i is real and p is positive real. IVLS forms a group under (i, p)(j, q) = (i + pj, pq). The identity is (0, 1) and (i, p)^{-1} = (-i/p, 1/p). This group is non-commutative: the only central element is (0, 1) (Lewin, Lemma 4.1.3.1, p. 106; Note 4.1.7E, p. 113).
 
-(i, p)(j, q) = (i + pj, pq)
+# Prerequisites
+- **Interval Group (IVLS)** — This is a specific instance of the general IVLS concept
+- **Group** — Must understand group axioms (closure, associativity, identity, inverse)
 
-Identity: (0, 1)
-Inverse: (i, p)^(-1) = (-i/p, 1/p)
+# Key Properties
+1. Composition: (i, p)(j, q) = (i + pj, pq)
+2. Identity: (0, 1)
+3. Inverse: (i, p)^{-1} = (-i/p, 1/p)
+4. Non-commutative: (i, p)(j, q) differs from (j, q)(i, p) in general
+5. Only (0, 1) is central — no other element commutes with all others
+6. Associative: ((i,p)(j,q))(k,r) = (i,p)((j,q)(k,r)) = (i + pj + pqk, pqr)
+7. The formula (i, p)^{-1}(j, q) = ((j-i)/p, q/p) (Lemma 4.1.6.2)
 
-This group is non-commutative.
+# Construction / Recognition
+## To Construct:
+1. Take all pairs (i, p) with i real, p positive real
+2. Define composition (i, p)(j, q) = (i + pj, pq)
+3. Verify group axioms
 
-# Mathematical Formulation
-**Verification of group axioms:**
+## To Recognize:
+1. The first component combines additively with scaling: i + pj
+2. The second component combines multiplicatively: pq
+3. The scaling factor p in i + pj is what makes the group non-commutative
 
-Closure: If (i, p) and (j, q) are in IVLS, so is (i + pj, pq).
-
-Associativity:
-((i,p)(j,q))(k,r) = (i + pj, pq)(k, r) = (i + pj + pqk, pqr)
-(i,p)((j,q)(k,r)) = (i,p)(j + qk, qr) = (i + p(j + qk), pqr) = (i + pj + pqk, pqr)
-
-Identity: (i,p)(0,1) = (i + p*0, p*1) = (i, p)
-         (0,1)(i,p) = (0 + 1*i, 1*p) = (i, p)
-
-Inverse: (i,p)(-i/p, 1/p) = (i + p*(-i/p), p*(1/p)) = (0, 1)
-        (-i/p, 1/p)(i,p) = (-i/p + (1/p)*i, (1/p)*p) = (0, 1)
-
-**Non-commutativity proof:**
-(i, p)(j, q) = (i + pj, pq)
-(j, q)(i, p) = (j + qi, qp)
-These differ when i + pj =/= j + qi, e.g., (1, 2)(0, 3) = (1, 6) but (0, 3)(1, 2) = (3, 6).
-
-# Musical Context/Application
-The group structure reflects how rhythmic relationships compound:
-- First component: temporal offset in "first-span units"
-- Second component: duration ratio
-
-The non-commutativity captures that "scaling then shifting" differs from "shifting then scaling" in temporal music.
+# Context & Application
+The composition law reflects how rhythmic relationships compound: the first component (temporal offset) is affected by the second (duration scaling). "Scaling then shifting" differs from "shifting then scaling," which is why the group is non-commutative. The i component measures relative temporal position in span-lengths; the p component measures duration ratio.
 
 # Examples
-**Composition calculation:**
-(2, 3)(4, 5) = (2 + 3*4, 3*5) = (14, 15)
-Interpretation: 2 spans + 3*(4 spans) = 14 spans; 3*5 = 15 times duration
+**Example 1** (p. 106): Non-commutativity:
+- (1, 2)(0, 3) = (1 + 2*0, 2*3) = (1, 6)
+- (0, 3)(1, 2) = (0 + 3*1, 3*2) = (3, 6) — different!
 
-**Inverse calculation:**
-(2, 3)^(-1) = (-2/3, 1/3)
-Check: (2, 3)(-2/3, 1/3) = (2 + 3*(-2/3), 3*(1/3)) = (0, 1)
+**Example 2**: Inverse calculation:
+- (2, 3)^{-1} = (-2/3, 1/3)
+- Check: (2, 3)(-2/3, 1/3) = (2 + 3*(-2/3), 3*(1/3)) = (0, 1)
 
-**Order matters:**
-(1, 2)(3, 1) = (1 + 2*3, 2*1) = (7, 2)
-(3, 1)(1, 2) = (3 + 1*1, 1*2) = (4, 2)
-Different results!
+**Example 3**: Associativity:
+- ((1,2)(3,4))(5,6) = (7, 8)(5, 6) = (7 + 8*5, 48) = (47, 48)
+- (1,2)((3,4)(5,6)) = (1,2)(23, 24) = (1 + 2*23, 48) = (47, 48)
 
-**Identity interpretation:**
-(0, 1) means "same attack time" (0 span-lengths later) and "same duration" (1 times as long).
+# Relationships
+## Builds Upon
+- **Interval Group (IVLS)** — this is the interval group for the time-span GIS
+- **Group** — satisfies all group axioms
 
-# Related Concepts
-- Time-Span GIS
-- Non-Commutative Groups
-- Group Composition
-- Central Interval (only (0,1) is central)
-- Time-span Transposition
+## Enables
+- **Time-Span GIS** — serves as the IVLS for the non-commutative time-span GIS
+- **Time-Span Transposition** — transpositions by elements of this group
+
+## Related
+- **Central Interval** — only (0, 1) is central, with far-reaching consequences
+
+# Common Errors
+- **Error**: Computing (i, p)(j, q) as (i + j, pq) (forgetting the scaling factor)
+  **Correction**: The correct formula is (i + pj, pq) — the p scales j before adding
 
 # Common Confusions
-1. **The formula (i + pj, pq):** The first component is NOT i + j. The p factor scales j before adding.
-
-2. **Order of composition:** (i, p) then (j, q) gives (i + pj, pq). Think: first interval (i, p), then measure the second interval relative to the scaled context.
-
-3. **Units in first component:** i and j are measured in span-lengths, not absolute time. That's why p scales j.
-
-4. **Why non-commutative?** Scaling (p factor) affects subsequent temporal measurements. "Scale then shift" differs from "shift then scale."
+- **Confusion**: Thinking the non-commutativity is incidental
+  **Clarification**: Non-commutativity is forced by the reference-independence properties. The scaling of j by p (measuring j in the "units" established by p) is what makes the group non-commutative.
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Lemma 4.1.3.1, pp. 106
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Lemma 4.1.3.1, p. 106. Central element: Note 4.1.7(E), p. 113.
+
+# Verification Notes
+- Definition source: direct from Lemma 4.1.3.1
+- Confidence rationale: high — explicit lemma with verification
+- Re-extraction notes: Re-extracted from v2 card; preserved: non-commutativity proof, inverse calculation, associativity verification, scaling interpretation

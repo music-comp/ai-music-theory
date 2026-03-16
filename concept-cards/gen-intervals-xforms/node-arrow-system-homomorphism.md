@@ -1,60 +1,96 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Node/Arrow System Homomorphism
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: node-arrow-system-homomorphism
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: graph-network-mappings
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.5.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - node-arrow-system
+extends: []
+related:
+  - node-arrow-system-isomorphism
+  - graph-homomorphism
+contrasts_with:
+  - node-arrow-system-isomorphism
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a homomorphism of node/arrow systems?"
+  - "How does a homomorphism differ from an isomorphism of node/arrow systems?"
 ---
 
 # Quick Definition
-A mapping between node/arrow systems that preserves arrows (but not necessarily reflects them) - if nodes are in the arrow relation, their images are too, but the image system may have "more arrows."
+A mapping between node/arrow systems that preserves arrows in one direction (if nodes are in the arrow relation, their images are too) but need not reflect them (the image system may have additional arrows).
 
-# Formal Definition
-A homomorphism from (NODES, ARROW) into (NODES', ARROW') is a map NODEMAP: NODES -> NODES' such that:
-- (NODEMAP(N_1), NODEMAP(N_2)) is in ARROW' whenever (N_1, N_2) is in ARROW
+# Core Definition
+A mapping NODEMAP of NODES into NODES' is a homomorphism of (NODES, ARROW) into (NODES', ARROW') if (NODEMAP(N1), NODEMAP(N2)) is in the ARROW' relation whenever (N1, N2) is in ARROW. NODEMAP is "onto" if whenever N'1 and N'2 are in ARROW', there exist N1 and N2 in ARROW with N'1 = NODEMAP(N1) and N'2 = NODEMAP(N2). NODEMAP is "1-to-1 as a homomorphism" if it is injective (Lewin, Definition 9.5.1, pp. 233-234).
 
-A homomorphism is "onto" if: whenever N'_1 and N'_2 are in ARROW', there exist N_1, N_2 in ARROW with NODEMAP(N_1) = N'_1 and NODEMAP(N_2) = N'_2.
+# Prerequisites
+- **Node/arrow system** — the structures being mapped
 
-A homomorphism is "1-to-1" if NODEMAP is injective.
+# Key Properties
+1. Preservation only: arrows in the source map to arrows in the target
+2. The converse need NOT hold: the target may "have more arrows"
+3. A 1-to-1 onto homomorphism = isomorphism (by Definition 9.4.1)
+4. "Onto" has a special definition: every arrow in the target must be the image of some arrow in the source
+5. A 1-to-1 surjective NODEMAP that is NOT "onto" in the special arrow sense is NOT an isomorphism
 
-# Mathematical Formulation
-Homomorphism NODEMAP satisfies:
-- (N_1, N_2) in ARROW implies (NODEMAP(N_1), NODEMAP(N_2)) in ARROW'
+# Construction / Recognition
+## To Construct:
+1. Define a map NODEMAP: NODES -> NODES'
+2. Verify that for all (N1, N2) in ARROW, (NODEMAP(N1), NODEMAP(N2)) is in ARROW'
+## To Recognize:
+1. Check arrow preservation
+2. If also checking for "onto": verify the arrow-surjectivity condition
 
-The converse need not hold:
-- It is possible for (NODEMAP(N_1), NODEMAP(N_2)) to be in ARROW' even when (N_1, N_2) is not in ARROW
-- This happens when the target system "has more arrows"
-
-A 1-to-1 onto homomorphism is an isomorphism (by Definition 9.4.1).
-
-# Musical Context/Application
-Homomorphisms model relationships where one network structure is a simplification or abstraction of another. Collapsing parallel voices, abstracting away structural details, or showing one structure as the image of another all involve homomorphisms.
+# Context & Application
+Homomorphisms model many-to-one relationships between network structures: collapsing parallel voices into a single melodic line, abstracting away structural details, or showing one network as a simplification of another. They are weaker than isomorphisms, allowing more flexible structural comparisons.
 
 # Examples
-From Section 9.5.5 (Scholica Enchiriadis):
-- Graph (c) has separate Principalis and Organalis voice networks
-- Graph (b) is the single melody
-- NODEMAP collapses corresponding voice nodes into melody nodes
-- This is a homomorphism from (c) onto (b)
+**Example 1** (Section 9.5.5, p. 236): The Scholica Enchiriadis analysis. NODEMAP collapses the first Principalis node and the first Organalis node of graph (c) both into the first node of graph (b), and so on. This is a homomorphism from (c) onto (b).
 
-Contrast with isomorphism:
-- An onto 1-to-1 homomorphism is automatically an isomorphism
-- But a 1-to-1 homomorphism that is not onto, or an onto homomorphism that is not 1-to-1, is NOT an isomorphism
+**Example 2** (Section 9.5.1, p. 234): It is possible for NODEMAP to be 1-to-1 as a set map and surjective, without being an isomorphism of systems, because the target may "have more arrows." Taking NODES' = NODES and adding arrows to ARROW gives ARROW'; the identity NODEMAP is then a homomorphism but not an isomorphism.
 
-# Related Concepts
-- Node/Arrow System Isomorphism
-- Graph Homomorphism
-- Node/Arrow System
-- NODEMAP
+# Relationships
+## Builds Upon
+- **Node/arrow system** — the structures being mapped
+## Enables
+- **Graph homomorphism** — combines NODEMAP with SGMAP
+## Contrasts With
+- **Node/arrow system isomorphism** — isomorphism requires both preservation AND reflection of arrows
+
+# Common Errors
+- **Error**: Assuming a bijective homomorphism is an isomorphism
+  **Correction**: The "onto" condition for homomorphisms has a special arrow-level meaning; bijective NODEMAP + arrow preservation is NOT sufficient
 
 # Common Confusions
-- "Homomorphism onto" has a special definition (stronger than just surjective NODEMAP)
-- 1-to-1 homomorphism is not automatically an isomorphism (must also be onto in the special sense)
-- The target system may have arrows not in the image of ARROW
-- Preservation of arrows is one-way; reflection is not required
+- **Confusion**: Thinking "homomorphism onto" just means surjective NODEMAP
+  **Clarification**: It requires that every ARROW' pair comes from some ARROW pair; surjectivity of NODEMAP as a set map is a weaker condition
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.5.1, Definition
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Definition 9.5.1, pp. 233-234.
+
+# Verification Notes
+- Definition source: direct from Definition 9.5.1
+- Confidence rationale: explicit formal definition with careful distinctions
+- Re-extracted from v2 card; preserved: special "onto" definition, Scholica Enchiriadis example

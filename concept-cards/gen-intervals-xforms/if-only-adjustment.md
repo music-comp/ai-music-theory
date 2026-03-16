@@ -1,66 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: If-Only Adjustment
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: if-only-adjustment
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: injection-function
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: "6.3"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-function
+extends: []
+related:
+  - progressive-transformation
+  - angst-hoffen-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is an if-only adjustment in INJ analysis?"
 ---
 
 # Quick Definition
-An if-only adjustment is a hypothetical small change to a set that would bring an INJ value up to its theoretical maximum, often revealing structural significance of the "wrong" note.
+An if-only adjustment is a hypothetical small change to a set that would bring a near-maximal INJ value up to its theoretical maximum. The notes that "would need to change" become analytically significant as substitutes, blue notes, or structurally marked elements.
 
-# Formal Definition
-When INJ(X, Y)(f) is near but not at its theoretical maximum, we can ask: What small adjustment to X or Y would make the injection perfect? The notes that would need to change become analytically significant as "substitutes," "blue notes," or structurally marked elements.
+# Core Definition
+Section 6.3 (Lewin, pp. 171-172): "Suppose INJ(X, Y)(f) is near its theoretical possible maximum... A small adjustment in X or in Y might enable us to remove the 'almost' component... bringing the injection number up to its theoretical maximum value. The parts of X or Y that do not quite fit may come under pressure to conform, giving rise in the music to urges for generating new material."
 
-This technique reveals compositional tensions and points of interest.
+# Prerequisites
+- **INJ Function** — If-only adjustments analyze near-maximal INJ values
 
-# Mathematical Formulation
-Suppose INJ(X, Y)(f) = M - 1 where M = |X| (the maximum).
+# Key Properties
+1. Identifies the "problematic" element x in X where f(x) is not in Y
+2. Identifies the "missing" element f(x) that Y lacks
+3. Identifies the "wrong" element in Y that substitutes for f(x)
+4. The "wrong" note often has multiple structural functions
+5. Music may resolve by eventually providing the "correct" note
 
-Then exactly one element x of X fails to map into Y under f.
-- f(x) is not in Y
-- "If only" f(x) were in Y, INJ would be maximal
-- Alternatively, "if only" the element y = f(x) replaced some element of Y
+# Construction / Recognition
+## To Identify:
+1. Find INJ(X, Y)(f) near but below maximum
+2. Identify which elements of X fail to map into Y
+3. Ask "if only" what change to X or Y would make INJ maximal
 
-The adjustment pressure identifies:
-1. The "problematic" element x in X
-2. The "missing" element f(x) in Y
-3. The "wrong" element (what Y has instead of f(x))
+## To Recognize:
+1. A note described as a "substitute," "wrong note," or "blue note" that prevents perfect mapping
 
-# Musical Context/Application
-If-only situations create compositional tension. The "wrong" note (what's there instead of what would make INJ perfect) often has thematic significance: it may be a focal point, a blue note, a substitute, or a structural marker. Music may "resolve" by eventually supplying the "right" note.
+# Context & Application
+If-only adjustments are a powerful analytical technique. They reveal compositional tensions and structural goals. The "wrong" notes are deliberately placed; their "wrongness" creates tension and marks structure. In "Angst und Hoffen," the Fb/F issue drives the entire song's development.
 
 # Examples
-From "Angst und Hoffen":
-- X = {Gb, Bb, D}, Y = {Fb, Bb, Eb}
-- w^E(X) = {G, Bb, Eb}
-- INJ(X, Y)(w^E) = 2 (not 3)
+**Example 1** (pp. 156-157): In "Angst und Hoffen," INJ(X, Y)(w^E) = 2 (not 3). "If only" the Fb of Y were F, INJ would be maximal. The Fb is simultaneously: (1) a substitute for F, (2) the focal E of the wedge (enharmonically), (3) the missing I-partner for Eb, (4) a symbol of the absent lover.
 
-The "problem": Gb wedges to G, but Y has Fb not F.
-"If only" Fb were F, INJ would be 3.
+**Example 2** (pp. 169-170, Figure 6.8): In Semi-Simple Variations, aggregate X2 is "11/12 embedded" in row forms. INJ(L2, X2)(f) = 11 for certain f, not quite 12. Small adjustments in tenor or alto would make the embedding perfect.
 
-Significance of Fb:
-1. Blue note / substitute for F
-2. Focal point E of the wedge (Fb = E enharmonically as goal)
-3. Missing I-partner for Eb under I = I_Bb^E
+# Relationships
+## Builds Upon
+- **INJ Function** — Technique exploits near-maximal INJ values
 
-The song develops toward supplying F (on "begehre") and arriving at E (Seufzer chord).
+## Enables
+- **Angst und Hoffen Analysis** — If-only analysis of Fb is central to the analysis
 
-From Semi-Simple Variations (Figure 6.8):
-- Aggregate X2 is 11/12 embedded in row forms
-- "If only" one tenor note were reordered, or one row element swapped
+## Related
+- **Progressive Transformation** — Near-maximal progressive transformations invite if-only analysis
 
-# Related Concepts
-- INJ (Injection Function)
-- Progressive Transformation
-- Substitution Notes
-- Structural Analysis
+# Common Errors
+- **Error**: Interpreting if-only as the composer "making a mistake"
+  **Correction**: The "wrong" notes are deliberate; their structural significance is the point
 
 # Common Confusions
-If-only adjustments are analytical tools, not claims that the composer "made a mistake." The "wrong" notes are deliberately placed and their wrongness is often precisely the point - it creates tension, marks structure, or enables other musical effects.
+- **Confusion**: Thinking if-only adjustments suggest the music "should" be different
+  **Clarification**: They reveal structural tensions and compositional goals, not errors
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, section 6.3
+Chapter 6: Generalized Set Theory (2), section 6.3, pp. 171-172.
+
+# Verification Notes
+- Definition source: Direct from section 6.3
+- Confidence rationale: Explicit discussion with multiple analytical applications
+- Re-extraction notes: Re-extracted from v2 card; preserved: Fb multiple functions, Semi-Simple Variations example. Added v3.1 structure.

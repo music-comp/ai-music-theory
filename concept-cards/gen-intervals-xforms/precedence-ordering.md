@@ -1,58 +1,100 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Precedence Ordering
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: precedence-ordering
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: graph-network-structure
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.7.2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "PRECEDENCE relation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - proper-arrow-chain
+extends: []
+related:
+  - precedence-ordered-system
+  - partial-ordering
+  - input-node
+  - output-node
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the precedence relation in a node/arrow system?"
+  - "How does precedence differ from being in the arrow relation?"
 ---
 
 # Quick Definition
-A partial ordering on nodes derived from the arrow structure, where N precedes N' if there is a proper arrow chain from N to N' - capturing a formal "before/after" relationship without requiring it to match musical chronology.
+In a node/arrow system, node N precedes node N' if there exists a proper arrow chain from N to N', capturing a formal "before/after" relationship that is stricter than merely being in the arrow relation and need not match musical chronology.
 
-# Formal Definition
-In a node/arrow system:
-- N precedes N' if there exists a proper arrow chain from N to N'
-- A proper arrow chain is one with at least one "one-way arrow" (an arrow (N_i, N_j) where (N_j, N_i) is NOT in ARROW)
+# Core Definition
+In a node/arrow system, node N precedes node N', and N' follows N, if there exists some proper arrow chain from N to N'. One must carefully distinguish "N precedes N'" from "N is in the ARROW relation to N'" (Lewin, Definition 9.7.2, p. 241).
 
-The system is precedence-ordered if no node both precedes and follows another (no cycles through one-way arrows).
+# Prerequisites
+- **Proper arrow chain** — precedence is defined via proper arrow chains
 
-# Mathematical Formulation
-PRECEDENCE = {(N, N') : N precedes N'}
+# Key Properties
+1. Precedence requires a proper arrow chain (with at least one one-way arrow)
+2. Being in the ARROW relation does NOT imply precedence (if both directions exist)
+3. Precedence does NOT imply being in the ARROW relation (may require intermediate nodes)
+4. In a precedence-ordered system, PRECEDENCE is a strict partial ordering (Theorem 9.7.4)
+5. Precedence is a formal property; it may differ from musical chronology
 
-Theorem 9.7.4: In a precedence-ordered system, PRECEDENCE is a strict partial ordering:
-- (PO1): No (N, N') has both (N, N') and (N', N) in PRECEDENCE
-- (PO2): If (N_1, N_2) and (N_2, N_3) in PRECEDENCE, then (N_1, N_3) in PRECEDENCE
+# Construction / Recognition
+## To Construct:
+1. Find a proper arrow chain from N to N'
+2. If one exists, N precedes N'
+## To Recognize:
+1. Check for proper arrow chains (chains with at least one one-way arrow) from N to N'
+2. Note: N being in ARROW to N' does not suffice; the chain must be proper
 
-# Musical Context/Application
-Precedence ordering captures the inherent directionality in a network's arrow structure. Precedence-ordered systems are "potentially compatible with naive chronology" - nodes can be arranged so that precedence agrees with temporal order. However, precedence is a formal property; it need not match actual musical chronology.
+# Context & Application
+Precedence captures the inherent directionality in a network's arrow structure. When precedence-ordered, a system is "potentially compatible with naive chronology" -- nodes can be arranged so that precedence agrees with temporal order. However, actual music may violate this arrangement, leading to "carriage return" moments.
 
 # Examples
-From Figure 9.12:
-- M_1 precedes M_3 (via M_1 -> M_2 -> M_3 with one-way arrow M_2 -> M_3)
-- M_1 does NOT precede M_2 (all arrows between them are two-way)
-- M_1 is in ARROW relation to M_2, but M_1 does not precede M_2
+**Example 1** (Figure 9.12, p. 241): M1 precedes M3 (via M1->M2->M3 with one-way arrow M2->M3). But M1 does NOT precede M2 (all arrows between them are two-way). And M1 is in the ARROW relation to M2 but does not precede M2.
 
-From Figure 9.13:
-- Two left nodes precede two right nodes
-- Neither left node precedes the other
-- Neither right node precedes the other
-- Multiple linear orderings are compatible
+**Example 2** (Figure 9.13, p. 243): Two left-hand nodes each precede each right-hand node. Neither left-hand node precedes the other; neither right-hand node precedes the other. Multiple linear chronologies are compatible.
 
-# Related Concepts
-- Proper Arrow Chain
-- Precedence-Ordered System
-- Linear Ordering
-- Input Node
-- Output Node
+# Relationships
+## Builds Upon
+- **Proper arrow chain** — precedence is defined by the existence of proper chains
+## Enables
+- **Precedence-ordered system** — a system where precedence has no cycles
+## Related
+- **Partial ordering** — in precedence-ordered systems, PRECEDENCE is a strict partial ordering
+- **Input node** — input nodes precede all nodes they communicate with
+- **Output node** — output nodes follow all nodes they communicate with
+
+# Common Errors
+- **Error**: Equating "in the arrow relation" with "precedes"
+  **Correction**: Precedence requires proper (one-way) arrows; two-way arrow relations do not establish precedence
 
 # Common Confusions
-- Precedence is stricter than being in ARROW relation (requires one-way arrows)
-- Precedence differs from musical chronology (formal vs. temporal)
-- Not all systems are precedence-ordered (some have cycles)
-- A node can be in ARROW relation to another without preceding it
+- **Confusion**: Thinking precedence must match musical chronology
+  **Clarification**: Precedence is formal; the music may present objects in an order that violates precedence ordering
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Sections 9.7.2-9.7.4
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Definition 9.7.2, p. 241. See Figures 9.12-9.13.
+
+# Verification Notes
+- Definition source: direct from Definition 9.7.2
+- Confidence rationale: explicit definition with careful distinction from ARROW relation
+- Re-extracted from v2 card; preserved: Figure 9.12 examples showing ARROW vs precedence distinction

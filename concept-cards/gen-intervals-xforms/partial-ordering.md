@@ -1,69 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Partial Ordering in Serial Theory
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: partial-ordering
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: injection-function
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: "6.2.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - strict partial ordering
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - protocol-pairs
+extends:
+  - protocol-pairs
+related:
+  - signature-motive
+  - semi-simple-variations-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a partial ordering in serial theory?"
+  - "How do partial orderings model incomplete serial structures?"
 ---
 
 # Quick Definition
-A partial ordering is a subset of PROT that captures "some" precedence relations without necessarily determining a complete row - useful for modeling aggregates and incomplete serial structures.
+A partial ordering is a subset of PROT satisfying antisymmetry (PO1) and transitivity (PO2) but not necessarily totality (SIMP). It models "knowing some precedence relations while being uncertain about others" — useful for aggregates and motivic fragments.
 
-# Formal Definition
-A subset X of PROT is a (strict) partial ordering if it satisfies:
-- (PO1): There is no (p, q) in PROT such that X contains both (p, q) and (q, p)
-- (PO2): If (p, q) and (q, r) are in X, then so is (p, r) [transitivity]
+# Core Definition
+Example 6.2.4 (Lewin, p. 167): A subset X of PROT is a (strict) partial ordering if: (PO1) X never contains both (p, q) and (q, p); (PO2) if (p, q) and (q, r) are in X, then so is (p, r). Linear orderings (rows) additionally satisfy (SIMP): for any distinct p, q, either (p, q) or (q, p) is in X.
 
-Partial orderings that also satisfy (SIMP) - for any (p, q), either (p, q) or (q, p) is in X - are called linear orderings and correspond to twelve-tone rows.
+# Prerequisites
+- **Protocol Pairs** — Partial orderings are subsets of PROT
 
-# Mathematical Formulation
-Partial ordering X subset of PROT:
-- Irreflexive: (p, p) never in X (by PROT definition)
-- Antisymmetric: Not both (p, q) and (q, p) in X (PO1)
-- Transitive: (p, q) and (q, r) in X implies (p, r) in X (PO2)
+# Key Properties
+1. Partial orderings model incomplete serial structures
+2. Rows (linear orderings) are the special case satisfying SIMP
+3. SATB aggregates can be modeled as partial orderings (each voice ordered, cross-voice unspecified)
+4. INJ(L, X)(f) measures compatibility of partial ordering X with row form f(L)
+5. A motive E-A-Bb is a partial ordering containing 3 pairs
 
-Linear ordering L (row) adds:
-- Totality (SIMP): For all distinct p, q, either (p, q) or (q, p) in L
+# Construction / Recognition
+## To Construct:
+1. Identify the known precedence relations among pitch classes
+2. Include all pairs (p, q) where p is known to precede q
+3. Verify PO1 (no contradictions) and PO2 (transitivity)
 
-A partial ordering represents "knowing" some precedence relations while being "uncertain" or "indifferent" about others.
+## To Recognize:
+1. A subset of PROT with no contradictory orderings and transitive closure
 
-# Musical Context/Application
-Partial orderings model structures where complete serial ordering is not specified:
-- SATB aggregates where each voice has internal ordering but cross-voice relations are unspecified
-- Motivic fragments extracted from rows
-- Compositional situations with local ordering but global flexibility
+# Context & Application
+Partial orderings model aggregate structures in Babbitt's music, motivic fragments in Schoenberg, and any situation where serial ordering is partially specified. They enable INJ analysis without requiring a complete row.
 
 # Examples
-From Figure 6.7:
+**Example 1** (p. 167): X_1 = E-A-Bb (motive) = {(E,A), (E,Bb), (A,Bb)}: 3 pairs, a linear ordering on 3 elements.
 
-X1 = {(E, A), (E, Bb), (A, Bb)}
-- Models the linear motive E-A-Bb
-- Contains 3 pairs, satisfies PO1 and PO2
-- Is a partial ordering (and happens to be linear on its 3 elements)
+**Example 2** (pp. 167-168, Figure 6.7): X_2 = SATB aggregate from Semi-Simple Variations: 12 pairs (3 per voice), partial ordering (not linear — cross-voice ordering unspecified).
 
-X2 models SATB aggregate from Semi-Simple Variations:
-- Soprano: B-D-Eb (3 pairs)
-- Alto: G-Bb-F (3 pairs)
-- Tenor: E-C#-F# (3 pairs)
-- Bass: C-A-Ab (3 pairs)
-- Total: 12 pairs (no cross-voice orderings)
+# Relationships
+## Builds Upon
+- **Protocol Pairs** — Partial orderings are subsets of PROT
 
-X2 satisfies PO1 and PO2 but not SIMP (doesn't order all pairs).
+## Enables
+- **Signature Motive** — Small partial orderings can identify row forms
+- **Semi-Simple Variations Analysis** — Aggregate partial orderings analyzed via INJ
 
-INJ(L, X2)(f) measures how well the ordering X2 "fits within" row form f(L).
-
-# Related Concepts
-- Protocol Pairs (PROT)
-- Linear Ordering (Rows)
-- Twelve-Tone Row
-- Aggregate Structure
-- INJ (Injection Function)
+# Common Errors
+- **Error**: Thinking a partial ordering determines a unique row
+  **Correction**: Many rows may be compatible with a given partial ordering
 
 # Common Confusions
-A partial ordering is not a "partial row" - it's a set of precedence relations that may not determine a unique row completion. Many different rows might be compatible with a given partial ordering. This models compositional situations with constrained but not fully determined serial structure.
+- **Confusion**: Conflating partial ordering with "incomplete row"
+  **Clarification**: A partial ordering captures known precedence without implying any particular completion
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, Example 6.2.4
+Chapter 6: Generalized Set Theory (2), Example 6.2.4, pp. 167-168.
+
+# Verification Notes
+- Definition source: Direct from Example 6.2.4
+- Confidence rationale: Explicit definition with examples
+- Re-extraction notes: Re-extracted from v2 card; preserved: E-A-Bb example, SATB aggregate example. Added v3.1 structure.

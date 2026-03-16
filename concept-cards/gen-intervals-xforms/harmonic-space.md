@@ -1,61 +1,85 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Harmonic Space
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory"
-chapter_number: A
-pdf_page: 276
-unit: null
+slug: harmonic-space
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: multiple-gis-intuitions
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
 authors: David Lewin
+chapter: "Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory"
+chapter_number: null
+pdf_page: 276
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "ratio space"
+  - "acoustic interval space"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - generalized-interval-system
+  - multiple-musical-spaces
+extends: []
+related:
+  - melodic-space
+  - senario
+  - rameau-harmonic-theory
+contrasts_with:
+  - melodic-space
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is harmonic space?"
+  - "How does harmonic space differ from melodic space?"
 ---
 
 # Quick Definition
-Harmonic space is a conception of musical space where intervals between pitches are measured by frequency ratios or derived harmonic relationships, reflecting intuitions about consonance and acoustic affinity rather than melodic distance.
+Harmonic space is a conception of musical space where intervals are measured by frequency ratios or derived harmonic relationships, reflecting intuitions about consonance and acoustic affinity rather than melodic distance.
 
-# Formal Definition
-In harmonic space, intervals derive from numerical relationships between frequencies (ratios like 2:1, 3:2, 5:4) or from "moves on a game board derived from harmonic relationships." The space may be structured by just-intonation ratios, fifth-relationships, or other harmonically-motivated constructions. Harmonic space contrasts with melodic space, where intervals count scalar steps.
+# Core Definition
+In harmonic space, intervals derive from frequency ratios (2:1, 3:2, 5:4) or from moves on a game board derived from harmonic relationships. Zarlino's Book 1 treats intervals as phenomena in harmonic space (the senario). Rameau's theory operates primarily in harmonic space. Helmholtz measures consonance by vertical interval content. Hindemith derives the chromatic scale from harmonic proximity. The attempt to derive all musical structure from harmonic space alone is shown to be inadequate (Lewin, Appendix A, pp. 245-250).
 
-# Mathematical Formulation
-Harmonic GIS structures:
-- Ratio-based: IVLS = positive rationals under multiplication
-- Fifth-based: IVLS = Z (powers of 3:2)
-- Combined: IVLS = Z x Z (fifths and thirds independently)
+# Prerequisites
+- **Generalized Interval System** — Harmonic spaces are modeled as GIS structures
+- **Multiple Musical Spaces** — Harmonic space is one of several coexisting spaces
 
-Harmonic intervals:
-- Octave = 2:1
-- Perfect fifth = 3:2
-- Major third = 5:4
-- Minor third = 6:5
-
-# Musical Context/Application
-Harmonic space underlies theories of consonance, fundamental bass, chord root relationships, and harmonic function. When we perceive two pitches as harmonically "close" despite being far apart melodically (e.g., notes two octaves apart), we are thinking in harmonic space.
+# Key Properties
+1. Intervals measured by frequency ratios, not scalar steps
+2. Fundamental consonances derive from the senario (ratios of numbers 1-6)
+3. Notes can be "close" in harmonic space but far in melodic space (e.g., octave-related)
+4. Harmonic space alone is insufficient to generate all musical structure (Rameau's difficulty)
 
 # Examples
-**From Appendix A:**
-"In other spaces, our intuitions were measured by numbers reflecting harmonic relationships of various kinds, or by moves on a game board derived from harmonic relationships."
+**Example 1** (p. 245): F-to-Ab in Reflets: "harmonic interval within the Db-major triad" — a harmonic-space intuition.
 
-**Rameau's framework:**
-Rameau's theory operates primarily in harmonic space, deriving intervals from the corps sonore (sounding body): "Rameau's argument that the harmonic intervals of 5/4 and 6/5 may be exchanged in relative register within the harmonic triad."
+**Example 2** (p. 246): Rameau operates in harmonic space when discussing 5/4 and 6/5, but invokes melodic concepts ("thirds") without having established a melodic space.
 
-**Zarlino's senario:**
-The senario (numbers 1-6) defines the primary consonances in harmonic space through ratios: octave (2:1), fifth (3:2), fourth (4:3), major third (5:4), minor third (6:5), major sixth (5:3), minor sixth (8:5 - requiring extension beyond senario).
+# Relationships
+## Related
+- **Senario** — defines the primary consonances of harmonic space
+- **Rameau's Harmonic Theory** — operates primarily in harmonic space
 
-**Helmholtz on consonance:**
-Helmholtz "asserts harmonic equivalence of a certain sort between the six-four position of the major triad and the six-three position of the minor triad. Both those positions comprise the highly consonant verticalities of a fourth, a major third, and a major sixth; having the same vertical-interval content, they are thereby the 'most consonant' close positions for their respective pitch-class sets."
-
-**Hindemith's construction:**
-Hindemith "tries to show that a chromatic scale from C2 to C3 is filled by those pitches, and only those pitches, which lie in 'closest' harmonic relation to C2 within a certain harmonic space."
-
-# Related Concepts
-- Melodic Space
-- Multiple Musical Spaces
-- Senario
-- Rameau's Harmonic Theory
-- Just Intonation
-- Fundamental Bass
+## Contrasts With
+- **Melodic Space** — measures by scalar steps rather than ratios
 
 # Common Confusions
-Harmonic space is not "the space of harmonies/chords" but a way of measuring intervals through frequency ratios and harmonic affinity. Two notes can be close in harmonic space but far in melodic space (e.g., notes related by octave) or vice versa (e.g., chromatic semitone neighbors).
+- **Confusion**: Thinking harmonic space = "the space of harmonies/chords"
+  **Clarification**: It is a way of measuring intervals through frequency ratios and acoustic affinity
 
 # Source Reference
-Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory
+Appendix A: Melodic and Harmonic GIS Structures; Some Notes on the History of Tonal Theory, pp. 245-250.
+
+# Verification Notes
+- Definition source: synthesized from Appendix A
+- Confidence rationale: high — discussed throughout Appendix A
+- Re-extraction notes: Re-extracted from v2 card; preserved: Reflets example, Rameau reference, Helmholtz and Hindemith references

@@ -1,56 +1,121 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Duration Proportion Space
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: duration-proportion-space
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: musical-spaces
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (1): Preliminary Examples and Definition"
 chapter_number: 2
 pdf_page: 47
-unit: null
-authors: David Lewin
+section: "2.2.3"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Example 2.2.3"
+  - multiplicative duration space
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - group
+  - function
+extends: []
+related:
+  - duration-class-space
+  - just-intonation-pitch-space
+  - generalized-interval-system
+contrasts_with:
+  - additive-duration-space
+  - time-point-space
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do I construct a GIS from a musical space?"
 ---
 
 # Quick Definition
+
 Duration proportion space is a GIS where durations are compared by their ratios (quotients), using a multiplicative interval group.
 
-# Formal Definition
-In Example 2.2.3, the musical space S is a family of durations, each measuring a temporal span in time units. The interval int(s, t) is the quotient t/s of the duration measurements. If s spans 4 time units and t spans 3 time units, then int(s, t) = 3/4. The interval group IVLS is a multiplicative group of positive numbers, depending on which proportions we wish to allow.
+# Core Definition
 
-# Mathematical Formulation
-- S = durations (positive real numbers representing time spans)
-- IVLS = multiplicative group of positive ratios (specific group depends on context)
-- int(s, t) = t/s (ratio of durations)
-- If we allow proportions of 2 and 3: IVLS = {2^a * 3^b : a, b in Z}
-- If we allow 2, 3, 5, and 7: IVLS = {2^a * 3^b * 5^c * 7^d}
-- Identity: int(s, s) = 1
-- Inverse: int(t, s) = 1/int(s, t)
+"The musical space is a family of durations, each duration measuring a temporal span in time units. And int(s, t) is the quotient of the t and s measurements, t/s" (Lewin, Example 2.2.3, p. 53). The specific interval group depends on which proportions are allowed. If we allow basic proportions of 2 and 3, IVLS = {2^a * 3^b}; with 5 and 7 added, IVLS = {2^a * 3^b * 5^c * 7^d}; one could even use irrational factors.
 
-# Musical Context/Application
-This GIS models rhythmic proportions - how durations relate to each other by ratio. The statement "t is 3/4 the length of s" gives an interval. This framework is used in analyses of proportional notation, metric modulation, and tempo relationships. Durations can be identified with tempi (inverse relationship): if s is a beat duration, the tempo is proportional to 1/s.
+# Prerequisites
+
+- **Group** — IVLS is a multiplicative group of positive numbers
+- **Function** — int(s, t) = t/s is the interval function
+
+# Key Properties
+
+1. S = durations (positive real numbers), extended to indefinitely short and long
+2. IVLS = a multiplicative group of positive ratios (context-dependent)
+3. int(s, t) = t/s (ratio of durations)
+4. Identity: int(s, s) = 1
+5. Durations can be identified with tempi (inverse relationship)
+
+# Construction / Recognition
+
+## To Construct:
+1. Choose which basic proportions to allow (e.g., 2 and 3)
+2. Generate the multiplicative group of ratios
+3. Define int(s, t) = t/s
+
+## To Recognize:
+1. Intervals are ratios (multiplied together), not differences
+2. The specific IVLS depends on which proportions the analysis allows
+
+# Context & Application
+
+This GIS models rhythmic proportions: "t is 3/4 the length of s" gives an interval. The framework applies to proportional notation, metric modulation, and tempo relationships. Durations identified with tempi allow inverse-proportion analysis. Carter, Nancarrow, and Ligeti used compositions involving such rhythmic proportions.
 
 # Examples
-From Example 2.2.3:
-- If s = 4 units and t = 3 units, int(s, t) = 3/4
-- "t is 3/4 the length of s"
 
-Different IVLS depending on allowed proportions:
-- Basic 2 and 3: IVLS = {2^a * 3^b}, e.g., 1, 2, 3, 4, 6, 8, 9, 3/2, 4/3, ...
-- Including 5 and 7: IVLS = {2^a * 3^b * 5^c * 7^d}
-- Including sqrt(2) and sqrt(3): IVLS = {2^(a/2) * 3^(b/2)}
+**Example 1** (p. 53): If s = 4 units and t = 3 units, int(s, t) = 3/4.
 
-Tempo-space interpretation: Durations and tempi are inversely related. A duration of 2 units corresponds to a tempo half as fast as a duration of 1 unit.
+**Example 2** (Section 2.4, p. 54): With basic proportions 2 and 3: IVLS = {2^a * 3^b}. With sqrt(2) and sqrt(3): IVLS = {2^(a/2) * 3^(b/2)}.
 
-# Related Concepts
-- Duration-Class Space
-- Time-Point Space
-- Generalized Interval System
-- Just Intonation Pitch Space
-- Multiplicative Group
+# Relationships
+
+## Builds Upon
+- **Group** — uses a multiplicative group of positive rationals (or reals)
+
+## Enables
+- **Duration-Class Space** — reducing this space by modulus M
+
+## Related
+- **Just Intonation Pitch Space** — structurally parallel (both use multiplicative groups of ratios)
+
+## Contrasts With
+- **Additive Duration Space** — quotients vs. differences
+- **Time-Point Space** — measures lengths, not positions
+
+# Common Errors
+
+- **Error**: Adding intervals instead of multiplying them.
+  **Correction**: Intervals are ratios; composition is by multiplication, not addition.
 
 # Common Confusions
-- Intervals are ratios (multiplied together), not differences (added)
-- This differs from time-point space (which measures positions, not lengths)
-- The specific IVLS depends on what proportions the analysis allows
-- S must be extended to include "impractical" durations for mathematical completeness
+
+- **Confusion**: Thinking one specific IVLS applies to all duration analyses.
+  **Clarification**: The choice of IVLS depends on which proportions the analyst wishes to allow.
 
 # Source Reference
-Chapter 2: Generalized Interval Systems (1): Preliminary Examples and Definition, Example 2.2.3, Section 2.4
+
+Chapter 2: Generalized Interval Systems (1): Preliminary Examples and Definition, Example 2.2.3, Section 2.4, pp. 53, 54.
+
+# Verification Notes
+
+- Definition source: direct from Example 2.2.3 and Section 2.4
+- Confidence rationale: explicit example with multiple IVLS variants
+- Re-extracted from v2 card; preserved: different IVLS options, tempo interpretation, composer references

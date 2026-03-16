@@ -1,61 +1,108 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Set Class
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: set-class
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: canonical-groups
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions"
 chapter_number: 5
 pdf_page: 119
-unit: null
-authors: David Lewin
+section: "5.2.2-5.2.3"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - /X/
+  - "forms of X"
+  - canonical equivalence class
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - canonical-group
+  - canonical-equivalence
+extends:
+  - canonical-equivalence
+related:
+  - emb-function
+  - m-class-vector
+  - z-relation-generalized
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a set class in generalized set theory?"
+  - "How does the choice of canonical group affect set classes?"
 ---
 
 # Quick Definition
-A set class, denoted /X/, is the canonical equivalence class containing set X - that is, the collection of all sets that can be derived from X by operations in the canonical group.
+A set class /X/ is the canonical equivalence class containing set X — the collection of all sets derivable from X by operations in the canonical group. "X' is a form of X" means X' is in /X/.
 
-# Formal Definition
-Definition 5.2.2: We shall write /X/ to denote the canonical equivalence-class containing the set X. /X/ will be called, for short, the "set class of X."
+# Core Definition
+Definition 5.2.2: "We shall write /X/ to denote the canonical equivalence-class containing the set X. /X/ will be called, for short, the 'set class of X'" (Lewin, p. 136). Locution 5.2.3: "'X' is a form of X' means that X' is canonically equivalent to X. /X/ may be referred to as 'the forms of X'" (p. 137). The set class depends on both X and CANON; different canonical groups produce different set classes from the same set.
 
-Locutions (5.2.3): "X' is a form of X" means that X' is canonically equivalent to X. /X/ may be referred to as "the forms of X."
+# Prerequisites
+- **Canonical Group** — Set classes are defined relative to CANON
+- **Canonical Equivalence** — The equivalence relation that partitions sets into classes
 
-# Mathematical Formulation
-/X/ = {A(X) : A in CANON}
+# Key Properties
+1. /X/ = {A(X) : A in CANON}
+2. If X' is in /X/, then /X'/ = /X/ (same equivalence class)
+3. |/X/| <= |CANON| (bounded by group size)
+4. If X has symmetry (some non-identity A fixes X), then |/X/| < |CANON|
+5. Different CANON choices yield different set classes from the same X
+6. EMB(X', Y) = EMB(X, Y) for X' in /X/ — embedding number is well-defined on set classes
 
-Properties:
-- If X' is in /X/, then /X'/ = /X/ (same equivalence class)
-- |/X/| <= |CANON| (number of forms bounded by size of canonical group)
-- If X has symmetry (some non-identity A fixes X), then |/X/| < |CANON|
+# Construction / Recognition
+## To Construct /X/:
+1. Fix the canonical group CANON
+2. Apply every A in CANON to X
+3. Collect the distinct results — this is /X/
 
-The set class depends on both X and CANON:
-- Different canonical groups produce different set classes
-- Notation should properly be /X/_CANON to show this dependence
+## To Recognize:
+1. Two sets belong to the same set class if one can be obtained from the other by a canonical operation
 
-# Musical Context/Application
-Set classes represent abstract intervallic configurations independent of transposition and/or inversion. In Forte's theory, set classes are identified by names like 3-11 (major/minor triad when CANON includes inversions). The set class captures the intrinsic intervallic properties shared by all its member sets.
+# Context & Application
+Lewin acknowledges that "the term 'set class' will grate dreadfully on the ears of any mathematical logician" but adopts it as standard usage in atonal theory (p. 136). His earlier term "chord type" was more precise but loses intuitive meaning for non-pitch sets (rhythmic sets, timbral sets, etc.). The concept is fundamental to EMB, the M-class vector, and all comparative set-theoretic analysis.
 
 # Examples
-In pitch-class space with X = {C, E, G}:
+**Example 1** (p. 136): X = {C, E, G}. With CANON = transpositions: /X/ = {major triads} (12 sets). With CANON = transpositions + inversions: /X/ = Forte's 3-11 = {all harmonic triads} (24 sets).
 
-If CANON = transpositions only:
-- /X/ = {{C,E,G}, {C#,F,G#}, {D,F#,A}, ...} (12 major triads)
-- The set class is "the major triads"
+**Example 2** (p. 136): The augmented triad {C, E, G#} has only 4 forms under transposition (symmetric under T_4), showing that |/X/| < |CANON| when X has symmetry.
 
-If CANON = transpositions and inversions:
-- /X/ = {all major triads, all minor triads} (24 sets)
-- The set class is Forte's 3-11, "the harmonic triads"
+# Relationships
+## Builds Upon
+- **Canonical Equivalence** — Set classes are the equivalence classes
 
-Cardinality example:
-- {C, E, G#} has only 4 forms under transposition (augmented triad is symmetric)
-- /augmented triad/ has only 4 members, not 12
+## Enables
+- **EMB Function** — Counts forms of one set class embedded in another set
+- **M-Class Vector** — Lists EMB values for all M-element set classes
+- **K-Relation Generalized** — Compares sets across set classes
 
-# Related Concepts
-- Canonical Group
-- Canonical Equivalence
-- Forms of a Set
-- EMB (Embedding Function)
-- Forte Set Classes
+## Related
+- **Z-Relation Generalized** — Z-related sets belong to distinct set classes but share IFUNC self-values
+
+# Common Errors
+- **Error**: Forgetting that set class depends on CANON
+  **Correction**: Always specify the canonical group; "set class" is meaningless without it
 
 # Common Confusions
-The term "set class" grates on mathematical logicians since it conflates two technical terms. Lewin acknowledges this but uses it because it has become standard in atonal theory. His earlier term "chord type" is more descriptive but loses intuitive meaning when applied to non-pitch sets (rhythmic sets, timbral sets, etc.).
+- **Confusion**: Thinking "set class" is a purely mathematical term
+  **Clarification**: Lewin uses it as music-theoretic terminology (adapted from Forte), acknowledging it conflicts with mathematical logic usage
 
 # Source Reference
-Chapter 5: Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions, Definition 5.2.2 and Locutions 5.2.3
+Chapter 5: Generalized Set Theory (1), Definitions 5.2.2-5.2.3, pp. 136-137.
+
+# Verification Notes
+- Definition source: Direct from Definitions 5.2.2 and 5.2.3
+- Confidence rationale: Explicit definitions in source
+- Re-extraction notes: Re-extracted from v2 card; preserved: augmented triad symmetry example, Forte 3-11 reference. Added v3.1 structure.

@@ -1,56 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Normative Network
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: normative-network
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: simply-transitive-groups
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (1): Intervals and Transpositions"
 chapter_number: 7
 pdf_page: 188
-unit: null
-authors: David Lewin
+section: "7.4"
+
+# === CONFIDENCE ===
+extraction_confidence: medium
+
+# === VARIANTS ===
+aliases:
+  - "normative fundamental-bass network"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - intervals-as-transpositions
+  - fundamental-bass-intervals
+extends: []
+related:
+  - abstract-gesture
+  - cadence-graph
+  - beethoven-symphony-no-1-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a normative network in Lewin's transformational theory?"
 ---
 
 # Quick Definition
-A transformation network proposed as an underlying structure that multiple musical passages realize, serving as an analytical reference point for comparing different manifestations of a shared gesture.
+A graph of labeled arrows representing an abstract transformational structure that can be "read" or "realized" in different ways by different musical passages, functioning as a norm for comparison.
 
-# Formal Definition
-A normative network is a specific network (not just a graph) that:
-1. Has defined CONTENTS for its nodes
-2. Serves as a reference for comparing other networks
-3. May be modified (e.g., by removing "tails") for analytical purposes
-4. Can be "read" or interpreted in multiple ways
+# Core Definition
+Figure 7.9 presents a "normative fundamental-bass network" whose arrows are labeled with harmonic ratios (2/3, 3/4, 5/6), and which serves as a common underlying structure for both the Adagio introduction and the Minuet opening of Beethoven's First Symphony. The normative network can be "read" progressively (as a chain of V-I cadences) or in a balanced manner (as paired CADENCEs), and these different readings illuminate the different characters of the passages that realize the network (Lewin, 7.4, pp. 169-174).
 
-# Mathematical Formulation
-As a network, normative structure includes:
-- (S, NODES, ARROW, SGP, TRANSIT, CONTENTS)
-- The CONTENTS provides specific objects (e.g., specific Klangs or pitch classes)
-- Analysis may involve removing secondary features (like the A-minor "tail" in Figure 7.9)
-- Different "readings" of the same normative network yield different interpretations
+# Prerequisites
+- **Intervals as transpositions** — The arrows represent both intervals between roots and transformational relations between harmonies
+- **Fundamental bass intervals** — The specific labeling system used in the Beethoven example
 
-# Musical Context/Application
-Normative networks allow comparison across passages that share underlying structure while differing in surface detail, chronology, or interpretation. The Beethoven analysis uses a normative network to show how the Adagio and Minuet share harmonic structure despite their different characters.
+# Key Properties
+1. The network is a graph of nodes and labeled arrows, independent of any particular musical realization
+2. Different musical passages can realize the same normative network
+3. The network can be "read" in multiple ways (progressive, balanced, etc.)
+4. Chronological direction is an interpretation of the norm, not inherent to it
+5. The normative network captures the "tertium quid" between intervals and transformations
+
+# Construction / Recognition
+## To Construct:
+1. Identify common transformational structures across passages
+2. Abstract the shared graph of nodes and labeled arrows
+3. Propose this as the normative network
+## To Recognize:
+1. Multiple passages can be mapped onto the same graph structure
+2. The graph's labeled arrows match the transformational relationships in each passage
+
+# Context & Application
+The normative network concept enables a critical stance where neither realization has structural priority. As Lewin notes, figure 7.9 "exhibited a feature we discussed early in chapter 7. On the one hand, we could conceive of its arrows as signifying intervals between individual elements... On the other hand, we could also conceive of the arrows as signifying transformational relations between Gestalts" (p. 175).
 
 # Examples
-From Beethoven Symphony No. 1 analysis:
-- Figure 7.9: Normative fundamental-bass network
-- Nodes contain: C, F, G, D, A-minor
-- The A-minor tail is docked for primary analysis
-- Progressive reading: Chain of V-I cadences moving along circle of fifths (Adagio)
-- Balanced reading: Two elided CADENCEs (Minuet)
+**Example 1** (Figure 7.9, pp. 169-170): The normative network for Beethoven's First Symphony with arrows labeled 2/3, 3/4, 5/6, connecting harmonic roots F, C, G, D, and A minor.
 
-Both readings are valid interpretations of the same normative network.
+# Relationships
+## Builds Upon
+- **Fundamental bass intervals** — The labeling system for the Beethoven example
+## Enables
+- **Abstract gesture** — The normative network symbolizes the abstract gesture
+- **Beethoven Symphony No. 1 analysis** — The primary analytical application
+## Related
+- **CADENCE graph** — A substructure used in reading the normative network
 
-# Related Concepts
-- Abstract Gesture
-- Transformation Network
-- CADENCE Graph
-- Beethoven Symphony No. 1 Analysis
-- Progressive versus Balanced Readings
+# Common Errors
+- **Error**: Treating one passage's reading of the norm as the "correct" one
+  **Correction**: The norm is abstract; different readings illuminate different passages
 
 # Common Confusions
-- A normative network is not the same as the abstract graph; it has specific contents
-- "Normative" does not mean "correct" or "superior" - it means serving as a reference
-- Different readings of a normative network are not competing; they illuminate different aspects
-- The decision to dock a "tail" is an analytical choice, not inherent to the structure
+- **Confusion**: Thinking the normative network specifies chronological order
+  **Clarification**: "Musical chronology is naturally crucial" but "chronological distinctions in this system function not as norms but as different interpretations of the normative graphs" (p. 173)
 
 # Source Reference
-Chapter 7: Transformation Graphs and Networks (1): Intervals and Transpositions, Section 7.4, Figure 7.9
+Chapter 7: Transformation Graphs and Networks (1): Intervals and Transpositions, Section 7.4, Figure 7.9, pages 169-175.
+
+# Verification Notes
+- Definition source: Synthesized from 7.4 discussion and the transition to Ch. 8
+- Confidence rationale: Medium -- the concept is clearly demonstrated but defined through example rather than formal definition
+- Re-extraction notes: Re-extracted from v2 card; preserved: progressive vs. balanced readings, Beethoven context

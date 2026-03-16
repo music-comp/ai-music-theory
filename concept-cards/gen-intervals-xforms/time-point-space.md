@@ -1,54 +1,116 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Time-Point Space
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: time-point-space
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: musical-spaces
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (1): Preliminary Examples and Definition"
 chapter_number: 2
 pdf_page: 47
-unit: null
-authors: David Lewin
+section: "2.2.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Example 2.2.1"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - group
+  - function
+extends: []
+related:
+  - chromatic-pitch-space
+  - beat-class-space
+  - generalized-interval-system
+contrasts_with:
+  - duration-proportion-space
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do I construct a GIS from a musical space?"
 ---
 
 # Quick Definition
-Time-point space is a GIS where the musical space consists of regularly pulsing time points, and intervals measure the number of time units between points.
 
-# Formal Definition
-In Example 2.2.1, the musical space S is a succession of time points pulsing at regular temporal distances one time unit apart. Given time points s and t, int(s, t) is the number of temporal units by which t is later than s. The interval group IVLS is the integers under addition, with the space extended indefinitely in both temporal directions.
+Time-point space is a GIS where the elements are regularly pulsing time points, and intervals measure the number of time units by which one point is later than another.
 
-# Mathematical Formulation
-- S = time points {..., t-2, t-1, t0, t1, t2, ...} extending indefinitely
-- IVLS = (Z, +), the integers under addition
-- int(s, t) = number of time units that t is later than s
-- Negative intervals: -x later = x earlier
-- Identity: int(s, s) = 0
+# Core Definition
 
-# Musical Context/Application
-Time-point space provides a GIS framework for rhythmic analysis. It models discrete, equally-spaced time points like beats, pulses, or attack points. This is the temporal analog of chromatic pitch space. Just as pitch intervals can be transposed, time-point intervals allow temporal transposition (shifting events forward or backward in time).
+"The musical space is a succession of time points pulsing at regular temporal distances one time unit apart. Given time points s and t, int(s, t) is the number of temporal units by which t is later than s. (-x units later is x units earlier.)" (Lewin, Example 2.2.1, p. 52). S extends indefinitely in both temporal directions, IVLS = (Z, +).
+
+# Prerequisites
+
+- **Group** — IVLS = (Z, +) is a group
+- **Function** — int: S x S -> IVLS is a function
+
+# Key Properties
+
+1. S = time points extending indefinitely backward and forward
+2. IVLS = (Z, +), the integers under addition
+3. int(s, t) = number of time units that t is later than s
+4. Negative intervals mean earlier: -x later = x earlier
+5. Structurally identical to chromatic pitch space (both use Z under addition)
+
+# Construction / Recognition
+
+## To Construct:
+1. Establish a regular pulse of time points one unit apart
+2. Extend indefinitely in both temporal directions
+3. Define int(s, t) = number of units that t is later than s
+
+## To Recognize:
+1. Elements are time points (instants), not durations (spans)
+2. Intervals are integers measuring temporal displacement
+
+# Context & Application
+
+Time-point space provides a GIS framework for rhythmic analysis, modeling discrete equally-spaced attacks or pulses. It is the temporal analog of chromatic pitch space. This space is later modularized into beat-class space (Example 2.2.2) by imposing a meter.
 
 # Examples
-From Example 2.2.1:
-- If s is beat 5 and t is beat 9, int(s, t) = 4 (t is 4 units later)
-- If s is beat 5 and t is beat 2, int(s, t) = -3 (t is 3 units earlier)
-- int(s, s) = 0 for any time point s
 
-The GIS structure:
-- S must extend indefinitely backward (past) and forward (future) for Condition (B)
-- For any time point s and integer i, there's exactly one time point t with int(s, t) = i
+**Example 1** (p. 52): If s is beat 5 and t is beat 9, int(s, t) = 4 (t is 4 units later). If t is beat 2, int(s, t) = -3 (3 units earlier).
 
-This is structurally identical to chromatic pitch space - both use IVLS = (Z, +).
+# Relationships
 
-# Related Concepts
-- Beat-Class Space
-- Chromatic Pitch Space
-- Generalized Interval System
-- Duration Space
-- Rhythm
+## Builds Upon
+- **Group** — uses (Z, +) as the interval group
+
+## Enables
+- **Beat-Class Space** — wrapping time-point space around an N-hour clock
+
+## Related
+- **Chromatic Pitch Space** — structurally identical (both use IVLS = Z)
+
+## Contrasts With
+- **Duration Proportion Space** — time points measure positions; durations measure lengths
+
+# Common Errors
+
+- **Error**: Confusing time points (positions in time) with durations (lengths of time).
+  **Correction**: Time points are instants; durations are spans. Different GIS structures apply to each.
 
 # Common Confusions
-- Time points are instants (when events occur), not durations (how long they last)
-- The space must extend infinitely for mathematical completeness
-- Negative intervals represent earlier times, not impossible times
-- This differs from duration space (which measures lengths, not positions)
+
+- **Confusion**: Thinking the space cannot extend into the past.
+  **Clarification**: For Condition (B), the space must extend indefinitely in both directions.
 
 # Source Reference
-Chapter 2: Generalized Interval Systems (1): Preliminary Examples and Definition, Example 2.2.1, Section 2.4
+
+Chapter 2: Generalized Interval Systems (1): Preliminary Examples and Definition, Example 2.2.1, Section 2.4, pp. 52, 54.
+
+# Verification Notes
+
+- Definition source: direct from Example 2.2.1 and Section 2.4
+- Confidence rationale: explicit example with full GIS specification
+- Re-extracted from v2 card; preserved: structural identity with chromatic pitch space

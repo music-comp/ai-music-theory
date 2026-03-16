@@ -1,90 +1,91 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Carter String Quartet Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+slug: carter-string-quartet-analysis
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: analytical-applications
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Carter String Quartet No. 1 analysis"
+  - "Carter mm. 22-35 analysis"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - time-span-gis
+  - local-time-unit
+  - referential-time-unit-problem
+extends: []
+related:
+  - stockhausen-klavierstuck-xi
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Lewin analyze Carter's String Quartet No. 1 using the time-span GIS?"
+  - "What motivates the non-commutative time-span GIS?"
 ---
 
 # Quick Definition
-Lewin's analysis of Elliott Carter's String Quartet No. 1, mm. 22-35, demonstrates music with multiple simultaneous tempo layers where no single referential time-unit exists. This motivates the time-span GIS.
+Lewin's analysis of Elliott Carter's String Quartet No. 1, mm. 22-35, demonstrates music with four simultaneous tempo layers (MM36, MM96, MM180, MM120) where no single referential time-unit exists, motivating the non-commutative time-span GIS.
 
-# Formal Definition
-The passage features four instruments, each with its own local tempo:
-- First violin: MM36, changing to MM72, then MM90
-- Second violin: MM96, changing through MM120, 160, 96, 80, 60, 90
-- Viola: MM180 (constant)
-- Cello: MM120, changing to MM48, then variable
+# Core Definition
+The passage features four instruments each maintaining autonomous local time-units: first violin at MM36 (later MM90), second violin at MM96 (changing through several tempi), viola at MM180, cello at MM120 (then MM48). Figure 4.2a tabulates these tempi; Figure 4.2b represents them as pitches in frequency ratios to reveal their "numerical consonances." Seven performance notes detail how tempo relationships must be heard and projected by the players (Lewin, pp. 94-106).
 
-Each instrument maintains internally consistent mensural structure, but no single tempo governs the ensemble.
+# Prerequisites
+- **Time-Span GIS** — The analytical tool for this music
+- **Local Time Unit** — Each instrument has its own
+- **Referential Time-Unit Problem** — No single unit governs the texture
 
-# Mathematical Formulation
-**Figure 4.2a (tempo relationships):**
-```
-meas:    22      25      27         30    31    33
-Vl.1:    36  (72)        //              90
-Vl.2:    96              // 120/160/96/80/60//  90
-Vla.:         180
-Vc.:    120              // 48                  //(variable)
-```
-
-**Figure 4.2b (pitch representation):**
-Tempi represented as pitches in frequency ratios:
-- MM180 = high C
-- MM120 = F# (2/3 of 180)
-- MM96 = E (8/15 of 180)
-- MM48 = Db (4/15 of 180)
-etc.
-
-The "harmony" of tempi shows their numerical consonances.
-
-# Musical Context/Application
-This passage exemplifies music requiring the time-span GIS:
-1. Each instrument has locally referential time-units
-2. No single beat governs the whole texture
-3. Rhythmic relationships exist between instruments despite tempo independence
-4. The passage "progresses" through tempo relationships, not just "is"
-
-The analysis shows how performers must hear proportional relationships, not just play their own parts.
+# Key Properties
+1. Four simultaneous tempo layers in mm. 22-32
+2. Figure 4.2b: tempi as pitches reveals consonance network (Db4 as "root")
+3. Seven performance notes detail inter-instrument tempo relationships
+4. The search for a single overriding tempo "is bound to fail" (p. 103)
+5. Analysis follows Zarlino's spirit (variety of consonant ratios) rather than Rameau's (single referential unity)
 
 # Examples
-**Performance notes (1)-(7):**
+**Example 1** (Figure 4.2a): Tempo table showing four instruments with independent tempi.
 
-(1) Cello MM48 at m.27 = octave below violin 2's MM96. Player should hear the cello slowing to half the violin's rate.
+**Example 2** (pp. 100-103): Performance notes including: cello MM48 at m.27 as rhythmic octave below violin 2's MM96; tempo voice-exchange at m.27; violin 2's quasi-palindromic tempo structure (Figure 4.3).
 
-(2) Violin 2 MM120 at m.27 = cello's opening MM120. Voice exchange: instruments swap tempi.
+**Example 3** (p. 95): Figure 4.2b shows tempo consonances as a Db-major-seventh-plus-sixth harmony.
 
-(3) Violin 2's 120-to-160 ratio matches violin 1 and cello's 36-to-48 ratio. Same proportion at different speeds.
+# Relationships
+## Builds Upon
+- **Time-Span GIS** — the analytical framework
+- **Local Time Unit** — each instrument has its own
 
-(4) Violin 2's 80-to-60 retrogrades 120-to-160 an octave lower. Internal palindrome structure.
+## Related
+- **Stockhausen Klavierstuck XI** — another example motivating the time-span GIS
 
-(5) Violin 2's 60-to-90 matches cello-to-viola's 120-to-180, an octave lower.
-
-(6) Violin 1's MM90 at m.33 matches violin 2's MM90 at m.31.
-
-(7) Violin 1's 36-to-90 profile matches cello's 120-to-48 in retrograde.
-
-**The "root" metaphor:**
-MM48 (Db4 on Figure 4.2b) functions as a "rhythmic ground" for mm.22-31, like a tonal root organizes harmony.
-
-# Related Concepts
-- Time-Span GIS
-- Referential Time-Unit Problem
-- Local Time Unit
-- Multiple Tempo Layers
-- Metric Modulation
+# Common Errors
+- **Error**: Trying to find "the" beat for the entire passage
+  **Correction**: The passage has no single overriding beat; its richness lies in the network of local tempo consonances
 
 # Common Confusions
-1. **Not simply "in no meter":** The passage has strong mensural character, just not a single governing meter.
-
-2. **Figures 4.2a-b are analytical tools:** The pitch representation (4.2b) helps musicians grasp tempo ratios by analogy to familiar interval ratios.
-
-3. **Tempo "consonances":** The phrase suggests tempi in simple ratios (2:3, 3:4) are more "consonant" than complex ratios.
-
-4. **Zarlino vs. Rameau:** The analysis follows Zarlino (variety of consonant ratios) rather than Rameau/Riemann/Hindemith (single referential unity).
+- **Confusion**: Thinking the music is "without rhythm"
+  **Clarification**: The mensural character is especially strong within each individual part; it is the global unity of meter that is absent
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Figures 4.1-4.3 and discussion, pp. 94-106
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Figures 4.1-4.3 and discussion, pp. 94-106.
+
+# Verification Notes
+- Definition source: direct from Chapter 4 analysis
+- Confidence rationale: high — detailed analysis with figures
+- Re-extraction notes: Re-extracted from v2 card; preserved: tempo table, performance notes, pitch-representation figure, Zarlino vs Rameau framing

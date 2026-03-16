@@ -1,60 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: BIND Transformation
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: bind-transformation
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: serial-transformations
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.6.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - rich-transformation
+extends: []
+related:
+  - tch-transformation
+  - wagner-todesverkuendigung-analysis
+  - fate-motive
+  - input-node
+contrasts_with:
+  - rich-transformation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the BIND transformation?"
+  - "How does BIND differ from RICH?"
 ---
 
 # Quick Definition
-A serial transformation that takes a pitch-class series and produces the retrograde-inverted form with the same first and last notes as the original, "binding" the series to its endpoints.
+BIND takes a pitch-class series and transforms it into that retrograde-inverted form which preserves the same first and last notes as the original, "binding" the series to its endpoints.
 
-# Formal Definition
-BIND operates on a pitch-class series s:
-- BIND(s) is that retrograde-inverted form of s with the same first and last notes as s
-- If s begins on x and ends on y, then BIND(s) also begins on x and ends on y
-- BIND preserves the "frame" while inverting and reversing the interior
+# Core Definition
+BIND operates on a pitch-class series s: BIND(s) is that retrograde-inverted form of s which has the same first and last notes as s. If s begins on x and ends on y, then BIND(s) also begins on x and ends on y. BIND commutes with TCH, a property crucial for constructing the FATE motive network (Lewin, Section 9.6.4, pp. 239-240).
 
-# Mathematical Formulation
-For series s = s_1, s_2, ..., s_N:
-- BIND(s) is an RI form of s
-- BIND(s)_1 = s_1 and BIND(s)_N = s_N
-- The specific RI form is determined by these endpoint constraints
+# Prerequisites
+- **RICH transformation** — BIND is related but distinct (different endpoint constraints)
 
-Properties:
-- BIND commutes with TCH
-- This commutativity is crucial for the Todesverkuendigung network (Figure 9.11)
+# Key Properties
+1. Preserves first AND last notes of the series
+2. The interior is retrograde-inverted
+3. BIND commutes with TCH
+4. Differs from RICH (which constrains the first two notes of the output, not last)
+5. Used to connect melodic and bass forms sharing the same endpoints
 
-# Musical Context/Application
-BIND appears in the analysis of Wagner's Todesverkuendigung, connecting the bass-line FATE chain to the melodic FATE chain. The BIND arrows on Figure 9.11 are diagonal, showing how bass and melody forms relate while preserving their shared endpoints.
+# Construction / Recognition
+## To Construct:
+1. Given series s with first note x and last note y
+2. Find the RI form of s that also begins on x and ends on y
+## To Recognize:
+1. Two series sharing first and last notes that are RI-related
+
+# Context & Application
+BIND appears in the Wagner Todesverkuendigung analysis (Figure 9.11), where diagonal arrows connect bass FATE forms to melodic FATE forms. The bass form A-C-B and a melodic form sharing endpoints A and B are related by BIND. The input node (A-C-B) at lower left has "special generative function."
 
 # Examples
-From Figure 9.11 (Todesverkuendigung):
-- Bass form: A-C-B (begins A, ends B)
-- Melody form: A-G#-B (begins A, ends B)
-- BIND(A-C-B) could yield A-G#-B (same endpoints, RI-related)
-- The diagonal BIND arrows connect bass and melody chains
+**Example 1** (Figure 9.11, pp. 239-240): BIND connects FATE motive forms across bass and melody chains. The horizontal arrows are RICH; the curved arrows are TCH; the diagonal arrows are BIND. BIND commutes with TCH, ensuring the network is well-formed.
 
-The input function of A-C-B:
-- Lower left node (A-C-B) is the unique input
-- This form has "special generative function"
-- The entire network grows from the LOVE-derived bass motive
+# Relationships
+## Builds Upon
+- **RICH transformation** — related serial transformation
+## Related
+- **TCH transformation** — commutes with BIND
+- **Wagner Todesverkuendigung analysis** — primary example
+- **FATE motive** — the musical operand
+- **Input node** — A-C-B as unique input demonstrates generative function
+## Contrasts With
+- **RICH transformation** — RICH constrains first two notes of output; BIND constrains first and last
 
-# Related Concepts
-- RICH Transformation
-- TCH Transformation
-- Wagner Todesverkuendigung Analysis
-- FATE Motive
-- Serial Transformations
+# Common Errors
+- **Error**: Confusing BIND with RICH
+  **Correction**: BIND preserves first AND last notes; RICH preserves only the linking overlap
 
 # Common Confusions
-- BIND is not the same as RICH (different endpoint constraints)
-- BIND preserves first AND last notes; RICH only constrains first two notes of output
-- The commutativity with TCH is a key property for network construction
-- BIND requires specific endpoint matching, which may not always exist for arbitrary series
+- **Confusion**: Thinking BIND always exists for any series
+  **Clarification**: The specific RI form matching both endpoints must exist; this is not guaranteed for arbitrary series
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.6.4, Figure 9.11
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.6.4, pp. 239-240. See Figure 9.11.
+
+# Verification Notes
+- Definition source: direct from Section 9.6.4
+- Confidence rationale: high -- explicitly defined in context
+- Re-extracted from v2 card; preserved: FATE motive examples, commutativity with TCH, contrast with RICH

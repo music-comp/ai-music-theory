@@ -1,60 +1,85 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Klang Analysis
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: klang-analysis
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: twentieth-century-analysis
+tier: advanced
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.3"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transformation-network-definition
+extends: []
+related:
+  - slide-transformation
+  - prokofieff-melodies-analysis
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "When does Klang analysis prove inadequate?"
+  - "How does pitch-class set analysis complement Klang analysis?"
 ---
 
 # Quick Definition
-Klang analysis applies transformations between major and minor triads (Klangs) using operations like SLIDE, PAR, DOM, and SUBD to model harmonic progressions through Klang-transformations rather than pitch-class operations.
+Klang analysis uses Klang transformations (DOM, SUBD, PAR, REL, SLIDE, etc.) to model triadic progressions, but proves inadequate when parallel voice-leading obscures functional relationships, as in the Prokofieff analysis where pitch-class inversion provides clearer insight.
 
-# Formal Definition
-A Klang is an ordered pair (root, quality) where root is a pitch class and quality is + (major) or - (minor). Klang transformations operate on these ordered pairs, modeling relationships between triads in terms of their functional and voice-leading properties. Unlike pitch-class set operations, Klang operations preserve the distinction between major and minor triads as fundamental categories.
+# Core Definition
+Klang analysis (Figure 10.8a) models the Prokofieff passage using SLIDE to relate Eb minor to D major. However, the proportion among triads in m. 6 "seems hard to portray by Klang-relations that mesh with our aural intuitions." Parallel voice-leading makes functional hearing difficult. Pitch-class set analysis (Figure 10.8b) using inversions proves more revealing (Lewin, Section 10.3, pp. 262-264).
 
-# Mathematical Formulation
-Klang notation: (R, +) for major, (R, -) for minor
-Key Klang operations:
-- SLIDE: (R, +) -> (R, -) and vice versa, moving the third by semitone
-- PAR (Parallel): changes quality while keeping root
-- DOM (Dominant): (R, +) -> (R+5, +), major triad to its dominant
-- SUBD (Subdominant): (R, +) -> (R-5, +), major triad to its subdominant
-- REL (Relative): (R, +) -> (R-3, -), major to relative minor
+# Prerequisites
+- **Transformation network** — Klang analysis uses this framework
 
-Composition example: (F, -)(PAR)(SUBD) = (C, +)
+# Key Properties
+1. Models triads as (pitch-class, mode) pairs
+2. Transformations: DOM, SUBD, PAR, REL, SLIDE
+3. Limited when voice-leading is parallel and non-functional
+4. Complemented by pitch-class set analysis
+5. Framework choice depends on analytical context
 
-# Musical Context/Application
-Klang analysis is appropriate when functional relationships between triads are salient and when the major/minor distinction should be preserved. However, as Lewin demonstrates in the Prokofieff analysis, Klang analysis can prove inadequate when parallel voice-leading or non-functional relationships predominate.
+# Construction / Recognition
+## To Construct:
+1. Identify triadic harmonies as Klangs
+2. Connect with Klang transformations
+## To Recognize:
+1. Note where Klang relations fail to match aural intuitions
+
+# Context & Application
+The Prokofieff analysis demonstrates that Klang and pitch-class-set approaches are complementary. Analysts should choose the framework best capturing the hearing of a passage.
 
 # Examples
-**Prokofieff Melodies op.35 (Figure 10.8a):**
-Klang-network relating cadence harmonies:
-- E minor at measure 2.5 (instead of expected Eb major)
-- Eb minor at measure 5.5 (instead of expected Eb major)
-- D major at measure 6
+**Example 1** (Figure 10.8a, p. 263): SLIDE relates Eb minor to D major. But in m. 6: "how functional are these relations in a context that emphasizes the proportion (Eb minor)-is-to-(C major) as (F minor)-is-to-(D major)?"
 
-"D major, the SLIDE transform of Eb minor, bears to the latter Klang the same relation which Eb major, a Klang heard in the upper voices of measure 1 and expected at measure 2.5, bears to E minor, the Klang actually heard at measure 2.5."
+# Relationships
+## Builds Upon
+- **Transformation network** — the formal framework
+## Related
+- **SLIDE transformation** — used in the Klang approach
+- **Prokofieff Melodies analysis** — demonstrates limitations
 
-**Limitations demonstrated:**
-"Figure 10.8(a) does not attempt to engage the C-major and F-minor triads of measure 6 in its Klang-network. The proportion among the four triads of measure 6... seems hard to portray by Klang-relations that mesh with our aural intuitions."
-
-The formal Klang-relations exist (F minor as minor subdominant of C major; C major as major dominant of F minor) but the question is "how functional are these relations in a context that emphasizes the proportion (Eb minor)-is-to-(C major) as (F minor)-is-to-(D major)?"
-
-**Pitch-class alternative:**
-When Klang analysis fails to capture the structure, pitch-class inversion analysis (Figure 10.8b) proves "more fruitful."
-
-# Related Concepts
-- SLIDE Transformation
-- Neo-Riemannian Operations
-- Pitch-Class Inversion
-- Prokofieff Melodies Analysis
-- Triadic Transformations
+# Common Errors
+- **Error**: Forcing Klang analysis when pitch-class analysis is more revealing
+  **Correction**: Choose the framework that best captures the musical hearing
 
 # Common Confusions
-Klang analysis is not universally applicable. When voice-leading is parallel or when harmonic relationships are not functionally conceived, pitch-class operations may provide clearer insight. Students should not force all triadic analysis into Klang terms but should choose the analytical approach that best matches the music's organization.
+- **Confusion**: Thinking Klang analysis is always superior for triadic music
+  **Clarification**: Parallel voice-leading can make pitch-class analysis more insightful
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figure 10.8
+Chapter 10, Section 10.3, pp. 262-264. Figures 10.8a-b.
+
+# Verification Notes
+- Definition source: synthesized from Section 10.3
+- Confidence rationale: high -- explicitly contrasted
+- Re-extracted from v2 card; preserved: SLIDE example, complementarity argument

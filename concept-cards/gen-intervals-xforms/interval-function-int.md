@@ -1,60 +1,111 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Interval Function int
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: interval-function-int
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: interval-mechanics
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (1): Preliminary Examples and Definition"
 chapter_number: 2
 pdf_page: 47
-unit: null
-authors: David Lewin
+section: "Definition 2.3.1, Theorem 2.3.2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "int function"
+  - "interval function"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - musical-space-s
+  - interval-group-ivls
+  - function
+extends: []
+related:
+  - generalized-interval-system
+  - interval-composition
+  - simply-transitive-action
+  - transposition
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the formal definition of the interval function int in a GIS?"
+  - "What conditions must the function int satisfy?"
+  - "Why is int(s, t) directed rather than symmetric?"
 ---
 
 # Quick Definition
-The function int(s, t) assigns to each ordered pair of elements in a musical space the directed interval from s to t in the interval group IVLS.
+The function int(s, t) assigns to each ordered pair of elements in a musical space S the unique directed interval from s to t in the interval group IVLS, subject to two conditions that ensure intervals compose correctly and that the space is complete.
 
-# Formal Definition
-In a GIS (S, IVLS, int), int is a function mapping S x S into IVLS, subject to:
-(A) For all r, s, t in S: int(r, s) * int(s, t) = int(r, t)
-(B) For every s in S and i in IVLS, there exists a unique t in S with int(s, t) = i
+# Core Definition
+"int is a function mapping S x S into IVLS, all subject to the two conditions (A) and (B) following. (A): For all r, s, and t in S, int(r, s)int(s, t) = int(r, t). (B): For every s in S and every i in IVLS, there is a unique t in S which lies the interval i from s, that is a unique t which satisfies the equation int(s, t) = i" (Lewin, Definition 2.3.1, p. 47).
 
-From these conditions, two theorems follow:
-- int(s, s) = e (identity) for all s
-- int(t, s) = int(s, t)^(-1) for all s, t
+From these conditions, Theorem 2.3.2 derives: "int(s, s) = e and int(t, s) = int(s, t)^(-1) for every s and t in S."
 
-# Mathematical Formulation
-- int: S x S -> IVLS
-- int(s, t) is the directed interval FROM s TO t
-- Condition (A): intervals compose along paths
-- Condition (B): given start point and interval, endpoint is unique
-- int(s, s) = e (Theorem 2.3.2)
-- int(t, s) = int(s, t)^(-1) (Theorem 2.3.2)
+# Prerequisites
+- **Musical space S** — The domain from which ordered pairs are drawn
+- **Interval group IVLS** — The codomain, a mathematical group
+- **Function** — int is formally a function from S x S into IVLS
 
-# Musical Context/Application
-The interval function formalizes our intuition of "directed distance" between musical elements. When we ask "what interval is it from C to G?", we compute int(C, G). The direction matters: int(C, G) is not the same as int(G, C) unless the group is trivial. This captures the asymmetry between ascending and descending intervals.
+# Key Properties
+1. int: S x S -> IVLS maps ordered pairs of space elements to intervals
+2. Condition (A): int(r, s) * int(s, t) = int(r, t) — intervals compose along paths
+3. Condition (B): for every s and i, there is a unique t with int(s, t) = i — space is complete
+4. int(s, s) = e (identity) for all s — derived from Conditions (A) and (B)
+5. int(t, s) = int(s, t)^(-1) for all s, t — reversing direction inverts the interval
+
+# Construction / Recognition
+## To Construct:
+1. Identify elements s, t in the musical space S
+2. Compute the directed measurement from s to t according to the conventions of the GIS
+3. The result is a member of IVLS
+## To Recognize:
+1. A function taking ordered pairs from a musical space and returning group elements
+2. Satisfying both Condition (A) and Condition (B)
+
+# Context & Application
+The interval function formalizes our intuition of "directed distance" between musical elements. Lewin introduces it provisionally as "our intuition of a directed measurement or motion behaving like an 'interval from s to t.'" The direction matters: int(s, t) and int(t, s) are group inverses, not equal, capturing the asymmetry between ascending and descending.
 
 # Examples
-From Chapter 2:
-- Chromatic pitch space: int(C4, G4) = 7 (semitones up), int(G4, C4) = -7
-- Pitch-class space: int(C, G) = 7, int(G, C) = 5 (since 7 + 5 = 12 = 0 mod 12)
-- Just intonation: int(C4, G4) = 3/2 (frequency ratio)
-- Time-point space: int(beat 1, beat 5) = 4 (time units later)
+**Example 1** (p. 47): Chromatic pitch space — int(C4, G4) = 7 (semitones up), int(G4, C4) = -7. Verification: 7 + (-7) = 0 = e.
 
-Condition (A) example: int(C4, E4) = 4, int(E4, G4) = 3, int(C4, G4) = 7, and 4 + 3 = 7.
+**Example 2** (p. 47): Pitch-class space — int(E, F) = 1, int(F, E) = 11. Verification: 1 + 11 = 12 = 0 mod 12.
 
-Theorem proof: int(s, s)int(s, s) = int(s, s) by Condition (A). Multiplying by int(s, s)^(-1) gives int(s, s) = e.
+**Example 3** (p. 47, Theorem 2.3.2 proof): "int(s, s)int(s, s) = int(s, s), via Condition (A). Multiply both sides of that equation by int(s, s)^(-1); we obtain int(s, s) = e as asserted."
 
-# Related Concepts
-- Generalized Interval System
-- Musical Space S
-- Interval Group IVLS
-- Directed Interval
-- Transposition
+# Relationships
+## Builds Upon
+- **Musical space S** — The set from which elements are drawn
+- **Interval group IVLS** — The group into which int maps
+## Enables
+- **Generalized Interval System** — int is the third component of the GIS triple (S, IVLS, int)
+- **Transposition** — T_i(s) is defined as the unique t with int(s, t) = i
+## Related
+- **Simply transitive action** — Condition (B) establishes simple transitivity of IVLS on S
+
+# Common Errors
+- **Error**: Treating int(s, t) as undirected (symmetric)
+  **Correction**: int is directed: int(s, t) and int(t, s) are group inverses, not equal
 
 # Common Confusions
-- int(s, t) is directed: FROM s TO t, not just "between s and t"
-- int(s, t) and int(t, s) are inverses, not equal (unless the interval is its own inverse)
-- The notation "int(s, t)" uses parentheses - this is a function of two arguments
-- Condition (B) ensures each interval from s leads to exactly one t
+- **Confusion**: Thinking Conditions (A) and (B) alone are insufficient to derive int(s, s) = e
+  **Clarification**: Theorem 2.3.2 proves int(s, s) = e and int(t, s) = int(s, t)^(-1) follow from (A) and (B); these do not need to be separately stipulated
 
 # Source Reference
-Chapter 2: Generalized Interval Systems (1): Preliminary Examples and Definition, Definition 2.3.1, Theorem 2.3.2
+Chapter 2: Generalized Interval Systems (1): Preliminary Examples and Definition, Definition 2.3.1, Theorem 2.3.2, pages 47-48.
+
+# Verification Notes
+- Definition source: Direct quotation from Definition 2.3.1 and Theorem 2.3.2
+- Confidence rationale: Core formal definition, extensively discussed
+- Re-extraction notes: Re-extracted from v2 card; preserved: multiple space examples, theorem proof, directionality emphasis

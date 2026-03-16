@@ -1,56 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Node/Arrow System Isomorphism
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: node-arrow-system-isomorphism
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: graph-network-mappings
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.4.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "NODEMAP isomorphism"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - node-arrow-system
+extends: []
+related:
+  - graph-isomorphism
+  - node-arrow-system-homomorphism
+  - isography
+contrasts_with:
+  - node-arrow-system-homomorphism
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "When are two node/arrow systems isomorphic?"
+  - "What is a NODEMAP?"
 ---
 
 # Quick Definition
-Two node/arrow systems are isomorphic if there exists a bijection between their node sets that preserves the arrow relation in both directions - nodes are in the arrow relation if and only if their images are.
+Two node/arrow systems are isomorphic if there exists a bijection (NODEMAP) between their node sets that preserves the arrow relation in both directions: (N1, N2) is in ARROW if and only if (NODEMAP(N1), NODEMAP(N2)) is in ARROW'.
 
-# Formal Definition
-Node/arrow systems (NODES, ARROW) and (NODES', ARROW') are isomorphic if there exists NODEMAP: NODES -> NODES' such that:
-1. NODEMAP is 1-to-1 (injective)
-2. NODEMAP is onto (surjective)
-3. For every pair (N_1, N_2) of NODES: (N_1, N_2) is in ARROW if and only if (NODEMAP(N_1), NODEMAP(N_2)) is in ARROW'
+# Core Definition
+Two node/arrow systems (NODES, ARROW) and (NODES', ARROW') are isomorphic if there exists a 1-to-1 map NODEMAP of NODES onto NODES' such that for every pair (N1, N2) of NODES, (N1, N2) is in the ARROW relation if and only if (NODEMAP(N1), NODEMAP(N2)) is in the ARROW' relation. Such a NODEMAP is called an isomorphism of the two systems (Lewin, Definition 9.4.1, p. 231).
 
-Such a NODEMAP is called an isomorphism of the systems.
+# Prerequisites
+- **Node/arrow system** — the structures being compared
 
-# Mathematical Formulation
-The bijection NODEMAP preserves and reflects arrows:
-- Preservation: (N_1, N_2) in ARROW implies (NODEMAP(N_1), NODEMAP(N_2)) in ARROW'
-- Reflection: (NODEMAP(N_1), NODEMAP(N_2)) in ARROW' implies (N_1, N_2) in ARROW
+# Key Properties
+1. NODEMAP must be bijective (1-to-1 and onto)
+2. Arrow preservation: (N1, N2) in ARROW implies (NODEMAP(N1), NODEMAP(N2)) in ARROW'
+3. Arrow reflection: (NODEMAP(N1), NODEMAP(N2)) in ARROW' implies (N1, N2) in ARROW
+4. Both directions are required; preservation alone gives only a homomorphism
+5. Isomorphic systems have identical combinatorial structure
 
-Both directions are required; preservation alone only gives a homomorphism.
+# Construction / Recognition
+## To Construct:
+1. Find a bijection between NODES and NODES'
+2. Verify arrow preservation in both directions
+## To Recognize:
+1. Check that a bijection exists between node sets
+2. Check that arrows correspond exactly under the bijection
 
-# Musical Context/Application
-Node/arrow system isomorphism is the foundation for comparing transformation graphs. If two systems are isomorphic, they have identical structure - same number of nodes, same pattern of arrows. The musical content may differ, but the combinatorial skeleton is the same.
+# Context & Application
+Node/arrow system isomorphism is the foundation for comparing transformation graphs (Definition 9.4.2) and for defining isography of networks (Definition 9.4.3). If two systems are isomorphic, they have identical structure regardless of what the nodes are named or what objects they contain.
 
 # Examples
-Two IPAIR systems are isomorphic:
-- System 1: NODES = {A, B}, all pairs in ARROW
-- System 2: NODES' = {X, Y}, all pairs in ARROW'
-- NODEMAP: A -> X, B -> Y
-- Arrow preservation: (A, B) in ARROW iff (X, Y) in ARROW' [both true]
+**Example 1** (Section 9.4.4, p. 231): The IPAIR system with two nodes where every pair is in ARROW. Any two such systems (regardless of node names) are isomorphic under any bijection between their two-element node sets.
 
-The CADENCE system (four nodes, specific arrows) is isomorphic to any other four-node system with the same arrow pattern.
+# Relationships
+## Builds Upon
+- **Node/arrow system** — the structures being compared
+## Enables
+- **Graph isomorphism** — combines NODEMAP with SGMAP
+- **Isography** — defined via graph isomorphism, which uses node/arrow isomorphism
+## Contrasts With
+- **Node/arrow system homomorphism** — homomorphism preserves arrows in one direction only; isomorphism requires both
 
-# Related Concepts
-- Node/Arrow System
-- Graph Isomorphism
-- Node/Arrow System Homomorphism
-- Transformation Graph Definition
-- NODEMAP
+# Common Errors
+- **Error**: Checking arrow preservation in only one direction
+  **Correction**: Both preservation AND reflection of arrows are required for isomorphism
 
 # Common Confusions
-- Isomorphism is bidirectional (preservation AND reflection of arrows)
-- Homomorphism is only one direction (preservation only)
-- Isomorphism requires bijection; homomorphism allows non-bijective maps
-- Node/arrow isomorphism ignores transformation labels (that's graph isomorphism)
+- **Confusion**: Thinking a bijective homomorphism is automatically an isomorphism
+  **Clarification**: A bijective NODEMAP that preserves arrows but does not reflect them is NOT an isomorphism; the target system may "have more arrows"
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.4.1, Definition
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Definition 9.4.1, p. 231.
+
+# Verification Notes
+- Definition source: direct from Definition 9.4.1
+- Confidence rationale: explicit formal definition
+- Re-extracted from v2 card; preserved: bidirectionality emphasis, IPAIR example

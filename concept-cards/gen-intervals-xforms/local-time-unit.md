@@ -1,71 +1,85 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Local Time Unit
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+slug: local-time-unit
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: rhythmic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.1"
+
+# === CONFIDENCE ===
+extraction_confidence: medium
+
+# === VARIANTS ===
+aliases:
+  - "locally referential time-unit"
+  - "local beat"
+  - "local tempo"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - time-span-gis
+  - referential-time-unit-problem
+extends: []
+related:
+  - carter-string-quartet-analysis
+  - stockhausen-klavierstuck-xi
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a local time unit?"
+  - "How do multiple local time units coexist in a texture?"
 ---
 
 # Quick Definition
-A local time unit is a duration that serves as a referential measure for a particular instrument, voice, or temporal region within a composition, without necessarily governing the entire texture.
+A local time unit is a duration that serves as a referential measure for a particular instrument, voice, or temporal region within a composition, without necessarily governing the entire texture. The time-span GIS handles multiple local units automatically.
 
-# Formal Definition
-In music with multiple tempo layers, each layer may have its own locally referential time unit. A time span's duration x may serve as the local unit for measuring other time spans within the same temporal context, without being an absolute reference for the entire composition.
+# Core Definition
+In music with multiple tempo layers, each layer has its own locally referential time unit. Any time span's duration x may serve as the local unit for measuring other spans in the same context. The interval int((a, x), (b, y)) = ((b-a)/x, y/x) uses x as the measuring unit, so the time-span GIS automatically treats each first span as locally referential. Lewin emphasizes that asking "which is THE beat?" is the wrong question — one should ask "what are the local units and how do they relate?" (Lewin, pp. 98-107).
 
-# Mathematical Formulation
-**In time-span GIS:**
-The interval int((a, x), (b, y)) = ((b-a)/x, y/x) uses x as the measuring unit.
+# Prerequisites
+- **Time-Span GIS** — The GIS that naturally accommodates local units
+- **Referential Time-Unit Problem** — Motivates the concept of local rather than global units
 
-This is the essence of the time-span GIS: each time span serves as a potential local unit for measuring intervals from itself.
-
-**Multiple local units:**
-If instrument A uses unit x and instrument B uses unit u, intervals within A are measured in x-units, intervals within B in u-units. The time-span GIS handles this automatically.
-
-# Musical Context/Application
-The concept addresses music where:
-- Different instruments/voices have different tempi
-- Tempo changes within a part
-- There is no global beat
-- Each part may have first-species character relative to its own beat
-
-Local time units let us analyze each stream on its own terms while still computing intervals across streams when needed.
+# Key Properties
+1. Each instrument/layer may have its own local time unit
+2. The time-span GIS uses x (the first span's duration) as the measuring rod
+3. Players should feel their local beat internally, not subordinate to a possibly nonexistent global beat
+4. "Foot-tapping" a global beat distorts lyric lines with autonomous local tempi
 
 # Examples
-**Carter analysis, mm.22-32:**
-- Viola: local unit at MM180
-- Cello mm.27-31: local unit at MM48
-- First violin mm.22-30: local unit at MM36
-- Second violin mm.22-26: local unit at MM96
+**Example 1** (pp. 99-100): Carter, mm. 22-32: viola at MM180, cello at MM48, first violin at MM36, second violin at MM96 — each with its own local time unit.
 
-Each instrument's melody has first-species character relative to its local unit.
+**Example 2** (p. 101): "These lyric lines are not syncopated... Rather, each line has its own autonomous local time-unit, with respect to which it should project an essentially 'first-species' character."
 
-**Stockhausen's Klavierstuck XI:**
-Each of 19 groups has an internal tempo. The local unit within each group is defined by that tempo. Relationships between groups involve different local units.
+# Relationships
+## Builds Upon
+- **Time-Span GIS** — naturally accommodates local units
+- **Referential Time-Unit Problem** — motivates the concept
 
-**Ligeti's Poeme symphonique:**
-Each metronome defines its own local unit. The 100 simultaneous local units create the texture.
-
-**Performance implication:**
-Players should feel their local beat internally, not subordinate it to a global beat that doesn't exist. "Foot-tapping" a global beat distorts lyrical lines that have their own local tempo.
-
-# Related Concepts
-- Time-Span GIS
-- Referential Time-Unit Problem
-- Multiple Tempo Layers
-- Carter String Quartet Analysis
-- Tempo Relationships
+## Related
+- **Carter String Quartet Analysis** — the primary example
+- **Stockhausen Klavierstuck XI** — another example with local units per group
 
 # Common Confusions
-1. **Local vs. global:** The time-span GIS allows every time span to serve as a local unit. There need not be a global unit.
-
-2. **First-species character:** A melody with constant note durations is "first-species" relative to its local beat, even if syncopated relative to another layer.
-
-3. **Player technique:** Well-trained players learn to maintain independent local units while coordinating ensemble rhythm.
-
-4. **Analytical stance:** Asking "which is THE beat?" may be the wrong question. Better: "what are the local units and how do they relate?"
+- **Confusion**: Thinking local time units create "syncopation" against a global beat
+  **Clarification**: Without a global beat, there is no syncopation — each line has its own first-species character relative to its local unit
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, discussion of Carter analysis and Figure 4.4, pp. 98-107
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, pp. 98-107.
+
+# Verification Notes
+- Definition source: synthesized from extended discussion
+- Confidence rationale: medium — concept discussed at length but not formally defined
+- Re-extraction notes: Re-extracted from v2 card; preserved: Carter example, first-species character observation, performance implications

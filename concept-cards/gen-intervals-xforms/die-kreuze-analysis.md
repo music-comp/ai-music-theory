@@ -1,70 +1,94 @@
 ---
-concept: "Die Kreuze" Wedge Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
+# === CORE IDENTIFICATION ===
+concept: '"Die Kreuze" Wedge Analysis'
+slug: die-kreuze-analysis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: schoenberg-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - Pierrot Lunaire no. 14 analysis
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-function
+  - wedge-transformation
+extends: []
+related:
+  - angst-hoffen-analysis
+  - system-modulation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do dyad-focal wedge transformations work?"
 ---
 
 # Quick Definition
-Lewin's analysis of "Die Kreuze" (Pierrot Lunaire no.14) demonstrates wedge transformations converging to dyad focal points rather than single pitch classes.
+Lewin's analysis of "Die Kreuze" (Pierrot Lunaire no. 14) demonstrates wedge transformations converging to dyad focal points ({C, C#} and {F#, G}) rather than single pitch classes, with the "missing F" theme connecting to the "Angst und Hoffen" analysis via system modulation.
 
-# Formal Definition
-The piece employs two wedge transformations:
-- w^{C/C#}: converges to the dyad {C, C#}
-- w^{F#/G}: converges to the dyad {F#, G}
+# Core Definition
+The analysis (Lewin, pp. 164-165, Figure 6.6) employs: w^{C/C#} converging to {C, C#} (F#->F->E->Eb->D->C#->C# and G->Ab->A->Bb->B->C->C), w^{F#/G} converging to {F#, G}, and I_G = I_{C#}. Special property: no pitch class p satisfies w^{F#/G}(p) = F# except F# itself, and no p satisfies w^{C/C#}(p) = Db. These "sitting out" notes are compositionally significant.
 
-These wedges map pitch classes toward their focal dyads:
-- w^{C/C#}: F#-F-E-Eb-D-C#-C# and G-Ab-A-Bb-B-C-C
-- w^{F#/G}: analogous convergence to {F#, G}
+# Prerequisites
+- **INJ Function** — Analytical framework
+- **Wedge Transformation** — Dyad-focal wedges generalize single-focal wedges
 
-Related inversion: I_G = I_C# (inversion about G and C#)
+# Key Properties
+1. Dyad-focal wedges converge to two adjacent pitch classes, not one
+2. Some pitch classes have no preimage under the wedge (they "sit out")
+3. The "missing F" reappears: missing as semitone neighbor to Gb in F#-wedge
+4. System modulation T_2 connects E-centered (op. 15) to F#-centered (Pierrot) structures
 
-# Mathematical Formulation
-For dyad-focal wedge w^{u/v} where u and v are adjacent pitch classes:
-- Pitch classes on the "u side" advance toward u
-- Pitch classes on the "v side" advance toward v
-- u and v are fixed points
+# Construction / Recognition
+## To Construct a Dyad-Focal Wedge:
+1. Choose two adjacent pitch classes u, v as focal dyad
+2. Pitch classes on the u-side advance toward u; on the v-side toward v
+3. u and v are fixed points
 
-Special property: No pitch class p satisfies w^{F#/G}(p) = F# except F# itself.
-Similarly: No p satisfies w^{C/C#}(p) = Db except Db itself.
+## To Recognize:
+1. Voice-leading convergence toward a dyad rather than a single pitch
 
-This "sitting out" of certain pitch classes is compositionally significant.
-
-# Musical Context/Application
-The opening of "Die Kreuze" (Figure 6.6) shows:
-- F# sits out its wedge game (no note wedges to F#)
-- Db sits out its wedge game (no note wedges to Db)
-- These "missing origins" for the focal points create structural markers
-
-The visual/aural symmetry and the inversional structure I_G = I_B* interact with the dual wedges.
+# Context & Application
+The analysis extends wedge techniques from "Angst und Hoffen" to a different Schoenberg work, demonstrating the generality of the approach and the connection via system modulation.
 
 # Examples
-From Figure 6.6:
+**Example 1** (p. 165, Figure 6.6): Opening of "Die Kreuze": F# sits out its wedge game (no note wedges to it). From Z3 onward, outer voices almost converge to F#/Gb except missing F. The I_B also structures the second chord as an "internal" transformation.
 
-Opening chord structure shows:
-- Inner voice attains F# goal "from above" over Z1-Z3
-- From Z3 onward, outer voices almost converge to F#/Gb except missing F
-- The "missing F" theme reappears: missing as semitone neighbor to Gb
+# Relationships
+## Builds Upon
+- **Wedge Transformation** — Extends to dyad-focal wedges
 
-Comparison to "Angst und Hoffen":
-- In op.15/7: F missing as neighbor to E (E-wedge focal point)
-- In Pierrot 14: F missing as neighbor to Gb (F#-wedge focal point)
+## Related
+- **Angst und Hoffen Analysis** — Connected via T_2 system modulation
 
-The T_2 relationship between E and F# connects the two analyses through system modulation.
-
-# Related Concepts
-- Wedge Transformation
-- INJ (Injection Function)
-- Focal Point (Wedge)
-- "Angst und Hoffen" Analysis
-- Inversional Symmetry
+# Common Errors
+- **Error**: Assuming all wedges converge to single pitch classes
+  **Correction**: Dyad-focal wedges converge to adjacent semitone pairs
 
 # Common Confusions
-Dyad-focal wedges are more complex than single-pitch focal wedges. The w^{C/C#} wedge has two fixed points forming a semitone dyad, and pitch classes converge toward the nearer member of the dyad. This generalizes the single-focal-point wedges like w^E.
+- **Confusion**: Thinking the "missing F" in this piece is unrelated to the "missing F" in op. 15
+  **Clarification**: Lewin explicitly connects them via T_2 modulation: F missing as neighbor to E (op. 15) vs. F missing as neighbor to Gb (Pierrot)
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, Figure 6.6 and surrounding discussion
+Chapter 6: Generalized Set Theory (2), Figure 6.6, pp. 164-165.
+
+# Verification Notes
+- Definition source: Direct from analytical discussion
+- Confidence rationale: Detailed analysis with musical examples
+- Re-extraction notes: Re-extracted from v2 card; preserved: dyad-focal wedge mechanics, "sitting out" property, connection to op. 15. Added v3.1 structure.

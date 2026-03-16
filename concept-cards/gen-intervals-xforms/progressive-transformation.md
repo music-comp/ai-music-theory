@@ -1,59 +1,103 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Progressive Transformation
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: progressive-transformation
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: injection-function
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: "6.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - X-Y-progressive transformation
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-function
+extends: []
+related:
+  - internal-transformation
+  - external-transformation
+  - dispersive-transformation
+  - angst-hoffen-analysis
+contrasts_with:
+  - internal-transformation
+  - dispersive-transformation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What distinguishes internal from progressive transformations?"
+  - "What is a progressive transformation?"
 ---
 
 # Quick Definition
-A progressive transformation is one for which INJ(X, Y)(f) is maximal or relatively high - it transforms X into something much like Y.
+A progressive transformation f (for the progression X to Y) is one for which INJ(X, Y)(f) is maximal or relatively high — it maps a lot of X into Y, modeling how X "becomes" Y.
 
-# Formal Definition
-Definition (6.4): Given sets X and Y, and a family INSPECT of transformations, a transformation f in INSPECT is called progressive (for the X-to-Y progression) if INJ(X, Y)(f) is maximal or at least relatively high compared to other transformations in INSPECT.
+# Core Definition
+Section 6.4 (Lewin, pp. 172-174): "For certain transformations f within the family INSPECT, the value of INJ(X, Y)(f) will be maximal, or at least relatively high subject to the constraints of the situation. We shall call these transformations progressive. They map a lot of X into Y." Intuitively, "a progressive transformation tends to urge X onwards, to become something else (like Y)." Progressive transformations combine algebraically: X-internal followed by progressive tends to be progressive; progressive followed by Y-internal tends to be progressive.
 
-Progressive transformations "push X toward Y" - they map a lot of X into Y.
+# Prerequisites
+- **INJ Function** — Progressive is defined via INJ(X, Y)(f) values
 
-# Mathematical Formulation
-f is progressive for X -> Y if:
-INJ(X, Y)(f) is near or at max{INJ(X, Y)(g) : g in INSPECT}
+# Key Properties
+1. f is progressive for X->Y if INJ(X, Y)(f) is near its maximum
+2. Composition: (X-internal) then (progressive) tends to be progressive
+3. Composition: (progressive) then (Y-internal) tends to be progressive
+4. Maximum possible INJ(X, Y)(f) <= card(X) for any f
 
-Algebraic tendency:
-- (X-internal) followed by (X-Y-progressive) tends to be X-Y-progressive
-- (X-Y-progressive) followed by (Y-internal) tends to be X-Y-progressive
+# Construction / Recognition
+## To Identify:
+1. Compute INJ(X, Y)(f) for transformations f in INSPECT
+2. Those with highest values are progressive for X->Y
 
-This follows from the nature of composition: if f maps much of X into X, and g maps much of X into Y, then gf maps much of X into Y.
+## To Recognize:
+1. A transformation that makes one chord sound like (or become) the next
 
-# Musical Context/Application
-Progressive transformations model the "forward motion" from one chord to another. They capture the sense that one harmony "becomes" or "leads to" another. In a progression X -> Y, progressive transformations are those that most directly connect the two.
-
-Contrast with internal transformations, which keep X "being itself" or Y "being itself."
+# Context & Application
+Progressive transformations model harmonic motion and voice-leading. In "Angst und Hoffen," w^E is progressive for Angst->Hoffen. In the melodic analysis, T_6 is progressive between tetrads. The concept provides a formal framework for intuitions about harmonic "direction."
 
 # Examples
-From "Angst und Hoffen":
-- w^E (wedge-to-E) is progressive for Angst -> Hoffen
-  - INJ(X, Y)(w^E) = 2 (high relative to other transformations)
-- I = I_E^Bb (inversion about E/Bb) is internal for both chords
-  - INJ(X, X)(I) = 3 (maps X to itself)
-  - INJ(Y, Y)(I) = 2 (maps much of Y to itself)
+**Example 1** (p. 157): In "Angst und Hoffen," w^E is progressive: INJ(X, Y)(w^E) = 2 (high). I is internal: INJ(X, X)(I) = 3 (X maps to itself).
 
-The wedge pushes Angst toward Hoffen; the inversion keeps each chord self-related.
+**Example 2** (p. 163, Figure 6.5a): T_6 is progressive for X_1^4 -> X_5^8 in the melodic analysis, while I and w are internal for each tetrad.
 
-From Figure 6.5(a) in the melodic analysis:
-- T6 is progressive for X_1^4 -> X_5^8 (first tetrad to second)
-- I and w are internal for each tetrad
+# Relationships
+## Builds Upon
+- **INJ Function** — Defined through INJ values
 
-# Related Concepts
-- Internal Transformation
-- Dispersive Transformation
-- External Transformation
-- INJ (Injection Function)
+## Enables
+- **Angst und Hoffen Analysis** — Classification of transformations as progressive or internal
+- **System Modulation** — Progressive transformations modulate under conjugation
+
+## Contrasts With
+- **Internal Transformation** — Internal keeps X like itself; progressive pushes X toward Y
+- **Dispersive Transformation** — Dispersive maps X away from Y; progressive maps toward
+
+# Common Errors
+- **Error**: Thinking "progressive" means musically "good" or "forward-moving"
+  **Correction**: It is a technical term describing high INJ(X, Y)(f), not an aesthetic judgment
 
 # Common Confusions
-"Progressive" does not mean "good" or "correct" - it is a technical term describing high INJ(X, Y) values. A progression might involve multiple transformations, some progressive and some internal, working together. The terminology describes function, not aesthetic value.
+- **Confusion**: Thinking a transformation must be either progressive or internal
+  **Clarification**: A transformation can be both (e.g., Y-internal and X-Y-progressive) or neither
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, section 6.4
+Chapter 6: Generalized Set Theory (2), section 6.4, pp. 172-174.
+
+# Verification Notes
+- Definition source: Direct from section 6.4
+- Confidence rationale: Explicit definition with algebraic properties
+- Re-extraction notes: Re-extracted from v2 card; preserved: Angst/Hoffen and melodic examples, algebraic tendencies. Added v3.1 structure.

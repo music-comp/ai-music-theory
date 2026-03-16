@@ -1,67 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Canonical Groups in Octatonic Analysis
-category: technique
-source: Generalized Musical Intervals and Transformations
-chapter: "Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
-chapter_number: B
-pdf_page: 282
-unit: null
+slug: canonical-groups-octatonic
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: octatonic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
 authors: David Lewin
+chapter: "Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
+chapter_number: null
+pdf_page: 282
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - strans1-group
+  - strans2-group
+  - canonical-group
+extends:
+  - canonical-group
+related:
+  - strans-forms
+  - gis1-octatonic
+  - gis2-octatonic
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do STRANS1 and STRANS2 serve as canonical groups for octatonic analysis?"
 ---
 
 # Quick Definition
-STRANS1 and STRANS2 serve as candidate CANONICAL groups for set-theoretical studies in octatonic music, determining which sets are considered equivalent under the chosen group's operations.
+STRANS1 and STRANS2 serve as canonical groups for set-theoretical studies within the octatonic collection, with STRANS1 defining standard (dodecaphonic) canonical equivalence and STRANS2 defining a novel form of canonical equivalence with special INJ-preservation properties.
 
-# Formal Definition
-A CANONICAL group determines set-class equivalence: two sets are in the same class if one can be transformed into the other by a group operation. In octatonic analysis, either STRANS1 or STRANS2 can serve as the CANONICAL group, producing different notions of equivalence. STRANS1-equivalence matches standard T/I equivalence restricted to octatonic; STRANS2-equivalence represents a novel classification.
+# Core Definition
+"STRANS2 and STRANS1, which figure as groups of interval-preserving operations in those respective GIS structures, are thereby also likely candidates for CANONical groups of operations in a variety of set-theoretical studies" (Lewin, Appendix B, p. 252). STRANS1-forms of a set are "exactly the dodecaphonically transposed and inverted forms of the set that lie within S," while STRANS2-forms are "a more novel sort of family." The INJ function is preserved across STRANS2-forms: INJ(Y, Y)(f) = INJ(Y', Y')(f) for any STRANS2-forms Y, Y' and STRANS1 operation f.
 
-# Mathematical Formulation
-CANON = STRANS1:
-- Sets X and Y are equivalent iff Y = f(X) for some f in STRANS1
-- Equivalence classes = T/I classes restricted to octatonic
+# Prerequisites
+- **STRANS1 group** — One of the two canonical group candidates
+- **STRANS2 group** — The other canonical group candidate
+- **Canonical group** — The general concept being instantiated
 
-CANON = STRANS2:
-- Sets X and Y are equivalent iff Y = g(X) for some g in STRANS2
-- Equivalence classes = STRANS2-forms, a novel classification
+# Key Properties
+1. STRANS1 as CANON: forms are standard T/I forms within S
+2. STRANS2 as CANON: forms are novel, non-standard
+3. INJ preserved across STRANS2-forms for STRANS1 operations
+4. More generally: INJ(Y,Z)(f) = INJ(A(Y),A(Z))(f) for f in STRANS1, A in STRANS2
+5. Both groups provide valid canonical equivalence classes
 
-INJ properties:
-- INJ(Y, Y)(f) is constant across all Y in the same STRANS2-class, for fixed f in STRANS1
-- This enables set-theoretic analysis using either group as CANON
+# Construction / Recognition
+## To Construct:
+1. Choose STRANS1 or STRANS2 as the canonical group
+2. Compute all forms of a given set under the chosen group
+## To Recognize:
+1. Sets related by all operations in STRANS1 (standard forms) or STRANS2 (novel forms)
 
-# Musical Context/Application
-The choice of canonical group determines what counts as "the same" set class in analysis. Using STRANS1 gives familiar results; using STRANS2 may reveal relationships invisible to standard analysis. The dual structure suggests both perspectives are equally valid for different analytical purposes.
+# Context & Application
+The dual canonical groups offer complementary perspectives for set-theoretical analysis in octatonic music. STRANS1 connects to familiar dodecaphonic analysis; STRANS2 reveals novel equivalences.
 
 # Examples
-**From the text:**
-"STRANS2 and STRANS1, which figure as groups of interval-preserving operations in those respective GIS structures, are thereby also likely candidates for CANONical groups of operations in a variety of set-theoretical studies."
+**Example 1** (p. 252): STRANS2-forms of {C, E, G} yield eight distinct trichords, a "more novel sort of family" than the standard STRANS1-forms.
 
-**STRANS1 as CANON:**
-"The STRANS1-forms of a set within S are exactly the dodecaphonically transposed and inverted forms of the set that lie within S."
+# Relationships
+## Builds Upon
+- **Canonical group** — The general concept
+## Related
+- **STRANS-forms** — The resulting equivalence classes
+- **GIS1 octatonic** — Uses STRANS2 as interval-preserving (canonical) group
+- **GIS2 octatonic** — Uses STRANS1 as interval-preserving (canonical) group
 
-This produces familiar equivalence: two octatonic subsets are equivalent iff related by T or I operations.
-
-**STRANS2 as CANON:**
-"The STRANS2-forms of a set within S are in general a more novel sort of family."
-
-Example with (C, E, G):
-- STRANS2-forms: (C, E, G), (D#, C#, E), (F#, A#, C#), (A, G, A#), (C#, D#, F#), (A#, F#, A), (F#, C, D#), (G, A, C)
-- These eight sets are STRANS2-equivalent, though not all are T/I-related
-
-**INJ invariance:**
-"If Y is any one of those eight sets, and Y' is any other one, and f is any one of the eight operations in STRANS1, then... INJ(Y, Y)(f) = INJ(Y', Y')(f)."
-
-This demonstrates that STRANS2-equivalence preserves important set-theoretic properties with respect to STRANS1 operations.
-
-# Related Concepts
-- STRANS-Forms
-- Set Class
-- STRANS1 Group
-- STRANS2 Group
-- INJ Function
-- Octatonic Analysis
+# Common Errors
+- **Error**: Using only STRANS1 as canonical group
+  **Correction**: STRANS2 provides equally valid and potentially more revealing canonical equivalences
 
 # Common Confusions
-The choice of canonical group is not a matter of correctness but of analytical purpose. STRANS1 gives familiar equivalences; STRANS2 reveals additional structure. Students should recognize that multiple valid canonical groups can exist for the same musical space.
+- **Confusion**: Thinking canonical equivalence under STRANS2 is arbitrary
+  **Clarification**: The INJ-preservation property gives STRANS2-equivalence strong formal justification
 
 # Source Reference
-Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups
+Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups, page 252.
+
+# Verification Notes
+- Definition source: Direct from Appendix B
+- Confidence rationale: Explicitly discussed as canonical group candidates
+- Re-extraction notes: Re-extracted from v2 card; preserved: INJ-preservation, standard vs. novel forms

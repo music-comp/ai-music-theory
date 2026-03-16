@@ -1,65 +1,105 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: STRANS1 Group
-category: theory
-source: Generalized Musical Intervals and Transformations
-chapter: "Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
-chapter_number: B
-pdf_page: 282
-unit: null
+slug: strans1-group
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: octatonic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
 authors: David Lewin
+chapter: "Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
+chapter_number: null
+pdf_page: 282
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - STRANS1
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - octatonic-pitch-class-set
+  - simply-transitive-group
+extends: []
+related:
+  - strans2-group
+  - gis1-octatonic
+  - dual-simply-transitive-groups
+  - rotation-operations
+contrasts_with:
+  - strans2-group
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is STRANS1 in the octatonic GIS?"
+  - "How does STRANS1 relate to standard T/I operations?"
 ---
 
 # Quick Definition
-STRANS1 is the simply transitive group of eight operations on the octatonic collection comprising RO, R3, R6, R9 (rotations) and K, L, M, N (inversions), induced from the standard atonal operations T_0, T_3, T_6, T_9, I_5, I_E, I_8, I_A#.
+The simply transitive group of eight operations on the octatonic collection comprising RO, R3, R6, R9 (rotations preserving each diminished-seventh chord) and K, L, M, N (operations swapping between diminished-seventh chords), induced from standard atonal operations T_0, T_3, T_6, T_9, I_5, I_E, I_8, I_{A#}.
 
-# Formal Definition
-STRANS1 is a group of eight operations on the octatonic set S = {C, C#, D#, E, F#, G, A, A#} that is simply transitive: given any two elements s and t of S, there exists exactly one operation in STRANS1 mapping s to t. The group is induced from the eight standard twelve-tone operations that preserve S, but the operations are understood as acting on S specifically, not on the full chromatic.
+# Core Definition
+"Eight of the standard 'atonal' operations on the twelve pitch-classes transform S into itself; these operations are T_0, T_3, T_6, T_9, I_5, I_E, I_8, and I_{A#}. The eight operations form a group on the twelve pitch-classes and therefore, mapping S into itself, induce a group of corresponding operations on S; we shall call those corresponding operations RO, R3, R6, R9, K, L, M, and N respectively" (Lewin, Appendix B, p. 251). STRANS1 is simply transitive on S: "Given members s and t of S, there is a unique OP among the eight cited operations on S, satisfying OP(s) = t" (p. 251).
 
-# Mathematical Formulation
-STRANS1 operations:
-- RO (from T_0): identity, maps each element to itself
-- R3 (from T_3): rotation by minor third
-- R6 (from T_6): rotation by tritone
-- R9 (from T_9): rotation by major sixth (= minor third down)
-- K (from I_5): inversion swapping diminished-seventh chords
-- L (from I_E): inversion swapping diminished-seventh chords
-- M (from I_8): inversion swapping diminished-seventh chords
-- N (from I_A#): inversion swapping diminished-seventh chords
+# Prerequisites
+- **Octatonic pitch-class set** — The space on which STRANS1 acts
+- **Simply transitive group** — STRANS1 has this property
 
-Group properties:
-- |STRANS1| = 8
-- Simply transitive on S
-- Isomorphic to D_4 (dihedral group of order 8)
+# Key Properties
+1. |STRANS1| = 8
+2. Simply transitive on S
+3. RO, R3, R6, R9: "rotations" preserving each diminished-seventh chord
+4. K, L, M, N: swap between diminished-seventh chords (induced from inversions)
+5. If t is in same dim7 as s: operation is RO, R3, R6, or R9
+6. If t is in opposite dim7 from s: operation is K, L, M, or N
+7. K, L, M, N are "GIS1-transpositions" even though they derive from twelve-tone inversions
 
-# Musical Context/Application
-STRANS1 operations correspond to the familiar transposition and inversion operations restricted to octatonic context. When analyzing octatonic music, STRANS1 captures the relationships typically discussed using T and I operations, but understood within the eight-note universe.
+# Construction / Recognition
+## To Construct:
+1. Identify the eight standard operations preserving S
+2. Restrict them to S to get the eight STRANS1 operations
+## To Recognize:
+1. Operations on the octatonic set that move elements within or between diminished-seventh chords
+
+# Context & Application
+"We must be careful to distinguish the operations K, L, M, and N, which are 'GIS1-transpositions' under this formalism, from the operations I_5 etc. that gave rise to them; I_5 etc. are inversion-operations in a different GIS" (p. 251). STRANS2 members are precisely those operations commuting with all STRANS1 members.
 
 # Examples
-**Definition from text:**
-"The eight operations form a group on the twelve pitch-classes and therefore, mapping S into itself, induce a group of corresponding operations on S; we shall call those corresponding operations RO, R3, R6, R9, K, L, M, and N respectively."
+**Example 1** (p. 251): R3 maps C to D#, D# to F#, F# to A, A to C (rotation of first dim7), and C# to E, E to G, G to A#, A# to C# (rotation of second dim7).
 
-**Simple transitivity:**
-"It is not hard to verify that the latter group is simply transitive on S: Given members s and t of S, there is a unique OP, among the eight cited operations on S, satisfying OP(s) = t."
+**Example 2** (p. 251): K (from I_5) maps elements between the two diminished-seventh chords.
 
-**Determining the operation:**
-"If t is in the same diminished-seventh chord as s, OP will be RO, R3, R6, or R9; if t is in the opposite diminished-seventh chord from s, OP will be K, L, M, or N."
+# Relationships
+## Builds Upon
+- **Octatonic pitch-class set** — The space of action
+## Enables
+- **GIS1 octatonic** — GIS with STRANS1 as transpositions
+## Related
+- **Dual simply transitive groups** — STRANS1 and STRANS2 are duals
+- **Rotation operations** — RO, R3, R6, R9 are "rotations"
+## Contrasts With
+- **STRANS2 group** — Different simply transitive group on the same set
 
-**Naming convention:**
-"The operations RO, R3, R6, and R9 may be thought of as 'rotations,' to justify the use of the letter R in their names."
-
-**Distinction from twelve-tone operations:**
-"We must be careful to distinguish the operations K, L, M, and N, which are 'GIS1-transpositions' under this formalism, from the operations I_5 etc. that gave rise to them; I_5 etc. are inversion-operations in a different GIS, a GIS involving a different family of (twelve not eight) objects."
-
-# Related Concepts
-- STRANS2 Group
-- Octatonic Pitch-Class Set
-- GIS1
-- Simply Transitive Groups
-- Rotation Operations
-- Dual Simply Transitive Groups
+# Common Errors
+- **Error**: Treating K, L, M, N as inversions in the octatonic GIS
+  **Correction**: In GIS1, they are transpositions, even though they derive from twelve-tone inversions
 
 # Common Confusions
-The operations K, L, M, N are GIS1-transpositions (formally analogous to transpositions), even though they derive from twelve-tone inversions. Students must distinguish between the twelve-tone operation I_5 and its induced octatonic operation K. In the octatonic GIS1, K is a transposition operation, not an inversion.
+- **Confusion**: Equating octatonic R3 with chromatic T_3
+  **Clarification**: "We must be careful to distinguish the octatonic GIS1-transpositions RO, R3, R6, and R9 from the dodecaphonic atonal-GIS-transpositions T_0, T_3, T_6, and T_9" (p. 251)
 
 # Source Reference
-Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups
+Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups, page 251.
+
+# Verification Notes
+- Definition source: Direct quotation from Appendix B
+- Confidence rationale: Explicitly defined with verification criteria
+- Re-extraction notes: Re-extracted from v2 card; preserved: dim7 membership criterion, K/L/M/N as transpositions, distinction from twelve-tone ops

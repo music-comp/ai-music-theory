@@ -1,55 +1,87 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tristan Chord in Reflets
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: tristan-chord-in-reflets
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: impressionist-analysis
+tier: advanced
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.4"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - three-semitone-interval
+  - ruffling-motive
+extends: []
+related:
+  - debussy-reflets-dans-leau-analysis
+  - magic-pentachord
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What role does the Tristan chord play in Debussy's Reflets dans l'eau?"
 ---
 
 # Quick Definition
-In "Reflets dans l'eau," the Tristan chord appears at measure 18 within the ruffling motive, then sequences by minor thirds in a cadenza passage that "unleashes" the structural 3-semitone interval.
+The Tristan chord appears at m. 18 in Debussy's "Reflets dans l'eau" within the "ruffling motive," then sequences upward by 3 semitones per stage in a cadenza (mm. 20-21), unleashing the hitherto restrained 3-semitone interval in its most dramatic manifestation.
 
-# Formal Definition
-The Tristan chord (historically associated with Wagner's opera) appears in Debussy's piece in "the correct spacing at the right pitch-level" as part of the ruffling motive's upward arpeggiation. The subsequent sequential treatment by 3 semitones connects the famous Wagnerian sonority to the piece's structural intervallic content.
+# Core Definition
+The ruffling motive at m. 18 arpeggiates a Tristan chord upward then partially arpeggiates a dominant-ninth downward, within the registral confines of bass F3 and upper Ab4. The chord is "in the correct spacing at the right pitch-level" after removing the doubling Ab3. Over mm. 20-21, the Tristan chord sequences upward by 3 semitones per stage in a quasi-cadenza, rising two octaves. This sequence "unleashes" the 3-interval. The first transposition (G#-D-F#-B) is a subset of the MAGIC pentachord (Lewin, Section 10.4, pp. 279-281).
 
-# Mathematical Formulation
-Sequential structure:
-- Tristan chord sequences by T_3 (transposition by 3 semitones)
-- Eight sequential statements
-- Total ascent: approximately two octaves
-- Relates to MAGIC pentachord: "The first transposition of the Tristan chord, which Debussy spells as G#-D-F#-B, is a subset of the MAGIC pentachord D-Cb-Gb-(Bb)-Ab"
+# Prerequisites
+- **Three-semitone interval** — the interval driving the sequence
+- **Ruffling motive** — the rhythmic/contour context
 
-# Musical Context/Application
-The Tristan chord's appearance connects Debussy's impressionist language to late-Romantic harmonic practice while serving the piece's internal structure. The 3-semitone sequential interval relates to the F-Ab dyad central to the piece's motivic development.
+# Key Properties
+1. Tristan chord at correct spacing and pitch level (m. 18)
+2. Sequences by 3 semitones per stage (mm. 20-21)
+3. Rises essentially two octaves in the cadenza
+4. First transposition is a subset of MAGIC pentachord
+5. Lewin notes he has "no idea what private commentary on Wagner Debussy may have intended"
+
+# Construction / Recognition
+## To Construct:
+1. Identify the Tristan chord voicing
+2. Trace the 3-semitone sequential pattern
+## To Recognize:
+1. Tristan chord in correct spacing sequenced by minor thirds
+
+# Context & Application
+The Tristan chord sequence represents the "full unleashing" of the 3-semitone interval that has been developing since Y's F-Ab span. Debussy's continued sequencing by 3 semitones makes perfect compositional sense regardless of any Wagnerian allusion.
 
 # Examples
-**First appearance (measure 18):**
-"The motive arpeggiates a Tristan chord upwards and then partially arpeggiates a 9th harmony downwards, all within the registral confines of the bass F3 and the upper note Ab4. The Tristan chord is in the correct spacing at the right pitch-level, once the doubling Ab3 of the ascending ruffle is removed."
+**Example 1** (Figure 10.19, p. 281): The cadenza begins on F-Ab (the basic 3-dyad) and sequences upward. The network embeds Y and J(Y) subnetworks, "then sequences all Y-forms indefinitely."
 
-**Sequential cadenza (measures 20-21):**
-"Over measures 20-21, the Tristan-harmony-cum-ruffle-motive moves up quasi cadenza in literal sequences, 3 semitones per stage, until it gets essentially two octaves higher."
+# Relationships
+## Builds Upon
+- **Three-semitone interval** — the interval driving the sequence
+## Related
+- **Ruffling motive** — the rhythmic context
+- **MAGIC pentachord** — first Tristan transposition is a subset
+- **Debussy Reflets analysis** — the full context
 
-**Structural connection:**
-"Now that D natural, as well as Cb, is on the scene along with F and Ab, the minor third or 3-semitone interval can be fully unleashed; the sequence at hand unleashes it."
-
-**Comparison with Figure 10.16:**
-"Figure 10.19 has striking features in common with figure 10.16 earlier... Both the figures start with their outer voices on the basic 3-dyad F-and-Ab. In both, the outer voices then move by the melodic 3-interval, to project Ab-and-Cb."
-
-**Wagnerian reference:**
-"I have no idea what private commentary on Wagner Debussy may have intended by his use of the Tristan chord and his continued sequencing of it by 3 semitones, a sequence which Wagner artfully only suggests in the first-act Prelude. Debussy's sequential cadenza, unleashing the hitherto restrained 3-interval, makes perfect sense in his own composition, of course."
-
-# Related Concepts
-- Ruffling Motive
-- MAGIC Pentachord
-- Three-Semitone Interval
-- CHR Networks
-- Debussy Reflets dans l'eau Analysis
+# Common Errors
+- **Error**: Over-interpreting the Wagner allusion
+  **Correction**: Lewin emphasizes the chord's function within Debussy's own compositional logic
 
 # Common Confusions
-The Tristan chord's appearance is not merely a Wagnerian quotation or allusion but serves internal structural purposes. The 3-semitone sequential interval connects to the piece's F-Ab motivic content, making the chord and its treatment organically related to Debussy's compositional materials.
+- **Confusion**: Thinking the Tristan chord is merely a quotation
+  **Clarification**: It is structurally integrated through the 3-interval network
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figures 10.18-10.19
+Chapter 10, Section 10.4, pp. 279-281. Figure 10.19.
+
+# Verification Notes
+- Definition source: direct from Section 10.4
+- Confidence rationale: high -- explicitly analyzed
+- Re-extracted from v2 card; preserved: correct spacing detail, MAGIC subset, Wagner comment

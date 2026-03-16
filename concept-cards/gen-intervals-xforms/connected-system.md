@@ -1,56 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Connected System
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: connected-system
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: graph-network-foundations
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.1.3"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "connected node/arrow system"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - node-arrow-system
+  - communication-between-nodes
+extends: []
+related:
+  - operation-network
+  - equivalence-class
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a connected node/arrow system?"
+  - "How does connectivity relate to operation networks?"
 ---
 
 # Quick Definition
-A node/arrow system is connected if any two nodes communicate - that is, there is always a path (forwards or backwards) between any pair of nodes.
+A node/arrow system is connected if any two nodes communicate, meaning there is always a path (forwards or backwards along arrows) between any pair of nodes.
 
-# Formal Definition
-A node/arrow system (NODES, ARROW) is connected if for any two nodes N and N' in NODES, N communicates with N'.
+# Core Definition
+A node/arrow system (NODES, ARROW) is connected if for any two nodes N and N' in NODES, N communicates with N'. Equivalently, the communication equivalence relation has only one equivalence class (Lewin, Definition 9.1.3, p. 226).
 
-Equivalently: The communication equivalence relation has only one equivalence class (all nodes are in the same class).
+# Prerequisites
+- **Node/arrow system** — the structure being classified
+- **Communication between nodes** — the relation that defines connectivity
 
-# Mathematical Formulation
-(NODES, ARROW) is connected iff:
-- For all N, N' in NODES: there exists a path N_0, N_1, ..., N_J with N_0 = N, N_J = N', and each consecutive pair in some arrow relation
+# Key Properties
+1. All nodes lie in a single equivalence class under communication
+2. Any disconnected system decomposes into connected subsystems (components)
+3. Each component is (NODES_i, ARROW_i) where NODES_i is an equivalence class and ARROW_i restricts ARROW to pairs within NODES_i
+4. Connectivity is essential for Theorem 9.3.3 (unique determination of operation network contents)
 
-Disconnected systems decompose:
-- Any disconnected system can be analyzed into connected subsystems
-- Each subsystem is (NODES_i, ARROW_i) where NODES_i is an equivalence class under communication
-- ARROW_i is the restriction of ARROW to pairs within NODES_i
+# Construction / Recognition
+## To Construct:
+1. Ensure every pair of nodes can be linked by a path of forwards-or-backwards arrows
+## To Recognize:
+1. Pick any node; follow all possible arrow paths (forward and backward)
+2. If all nodes are reachable, the system is connected
+3. If some nodes are unreachable, the system is disconnected
 
-# Musical Context/Application
-Connected networks represent unified analytical structures where any musical object can be related to any other through a chain of transformations. Disconnected networks represent analytically independent components - useful when analyzing music with genuinely separate structural elements.
+# Context & Application
+Connected networks represent unified analytical structures where any musical object can be related to any other through transformations. The key consequence is Theorem 9.3.3: in a connected operation network, specifying the contents of any single node uniquely determines the contents of all others.
 
 # Examples
-Figure 9.1 is not connected:
-- It decomposes into two connected components
-- Within each component, all nodes communicate
-- Between components, no nodes communicate
+**Example 1** (Figure 9.1, p. 225): This system is NOT connected; it decomposes into two components, each internally connected, with no communication between them.
 
-A typical connected network:
-- The CADENCE graph is connected (all four nodes communicate)
-- A linear melodic network (each note connected to next) is connected
+**Example 2**: The CADENCE graph (from Section 7.4) is connected: all four Klang nodes communicate through the arrow structure.
 
-# Related Concepts
-- Communication Between Nodes
-- Node/Arrow System
-- Connected Component
-- Transformation Graph
-- Equivalence Class
+# Relationships
+## Builds Upon
+- **Communication between nodes** — connectivity = single equivalence class under communication
+## Enables
+- **Operation network** — Theorem 9.3.3 requires connectivity for unique content determination
+## Related
+- **Equivalence class** — connected components are equivalence classes under communication
+
+# Common Errors
+- **Error**: Assuming connectivity means every pair has a direct arrow
+  **Correction**: Connectivity only requires the existence of some path (possibly through intermediaries)
 
 # Common Confusions
-- Connected does not mean every pair has a direct arrow (only that paths exist)
-- Disconnected systems are not malformed; they represent multiple independent structures
-- Connected refers to the abstract system, not to musical continuity
-- A single disconnected system can be analytically useful (parallel voice analysis, etc.)
+- **Confusion**: Thinking disconnected systems are malformed
+  **Clarification**: Disconnected systems are perfectly valid; they represent multiple independent analytical structures (e.g., separate voice analyses)
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.1.3, Definition
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Definition 9.1.3, p. 226.
+
+# Verification Notes
+- Definition source: direct from Definition 9.1.3
+- Confidence rationale: explicit definition with clear consequences
+- Re-extracted from v2 card; preserved: CADENCE graph example, clarification about disconnected systems

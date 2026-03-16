@@ -1,83 +1,112 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Mensural Structure
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: mensural-structure
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: rhythmic-analysis
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (2): Formal Features"
 chapter_number: 3
-pdf_page: 62
-unit: null
-authors: David Lewin
+pdf_page: 71
+section: "3.3"
+
+# === CONFIDENCE ===
+extraction_confidence: medium
+
+# === VARIANTS ===
+aliases:
+  - "mensuration"
+  - "metric organization"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - gis3-interval
+  - unfolding-interval-vector
+extends: []
+related:
+  - ictus
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does GIS analysis reveal perceived beat and meter?"
+  - "What is the relationship between recurrent intervals and metric structure?"
+  - "How does mensural structure differ from notated meter?"
 ---
 
 # Quick Definition
-Mensural structure refers to the patterns of temporal intervals that create perceived beat, meter, and rhythmic organization in music, as revealed through GIS analysis of recurrent temporal intervals.
+Mensural structure refers to the patterns of temporal intervals that create perceived beat, meter, and rhythmic organization in music, as revealed through GIS analysis of recurrent temporal intervals and compound pitch-time associations.
 
-# Formal Definition
-In a GIS involving time-points, mensural structure emerges from:
-1. Predominance of certain temporal intervals
-2. Recurrence of compound intervals binding pitch to time
-3. Association of specific pitch-class intervals with beat-defining temporal intervals
+# Core Definition
+In a GIS involving time-points, mensural structure emerges from the predominance of certain temporal intervals, the recurrence of compound GIS3-intervals binding pitch to time, and the association of specific pitch-class intervals with beat-defining temporal intervals. Mensural structure is the perceptual reality underlying metric hearing, distinct from notated meter. Lewin suggests the medieval concept of "perfections" may be a better metaphor than modern time signatures for this music (pp. 74-76).
 
-Mensural structure is not identical to notated meter but is the perceptual reality underlying metric hearing.
+# Prerequisites
+- **GIS3-interval** — Compound intervals whose recurrence defines mensural associations
+- **Unfolding interval vector** — The tool for tracking when mensural patterns emerge
 
-# Mathematical Formulation
-**In GIS3 (pitch-class x time-point):**
-A temporal interval t is "beat-defining" if:
-- GIS3-intervals (n, t) recur for various pitch-class intervals n
-- Temporal interval t predominates among the intervals present
+# Key Properties
+1. Mensural structure is perceptual, not notational
+2. It emerges when specific temporal intervals predominate in the unfolding interval vector
+3. Compound GIS3-intervals bind pitch structure to temporal structure
+4. Multiple competing mensural readings may coexist
+5. The analysis reveals which beats are emphasized by pitch-interval associations
 
-**Figure 3.2 structure:**
-| pc interval | temporal interval | feature |
-|-------------|-------------------|---------|
-| 11 | 1 | beat-defining |
-| 11 | 5 | thematic/mensural |
-| 3 | 2 | cadential |
-| 2 | 7 | accompaniment-linking |
+# Construction / Recognition
+## To Construct:
+1. Build the unfolding interval vector for a passage
+2. Identify which temporal intervals predominate
+3. Track compound GIS3-intervals to see which pitch intervals bind to which temporal intervals
+4. The predominant temporal interval defines the mensural unit
+## To Recognize:
+1. Recurrence of specific temporal intervals across multiple GIS3-interval pairs
+2. Pitch-class intervals consistently associated with particular beat durations
+3. Possible competition between alternative mensural readings
 
-# Musical Context/Application
-Mensural structure analysis asks: What temporal intervals are structurally significant? This is distinct from asking: What is the meter signature?
-
-The analysis reveals:
-- Which beats are emphasized by pitch-interval associations
-- How temporal spans acquire meaning through repetition
-- Why certain "cross-meters" may be heard
+# Context & Application
+Mensural structure analysis asks: what temporal intervals are structurally significant? This differs from asking: what is the time signature? The analysis reveals which beats are emphasized by pitch-interval associations, how temporal spans acquire meaning through repetition, and why certain "cross-meters" may be heard.
 
 # Examples
-**Webern analysis:**
+**Example 1** (Figures 3.2-3.4, pp. 71-76): Webern Piano Variations mensural analysis:
 - Temporal interval 1 predominates (the beat)
 - Pitch-class interval 11 is associated with beat 1
 - Temporal interval 5 is associated with the thematic opening gesture
-- This suggests "5/4 meter" hearing
+- The GIS3-interval (11, 5) recurs at structurally important points
+- This suggests hearing in "5/4 meter" or "quintuple perfections"
 
-**"In 5 meter" interpretation:**
-Not simply asserting 5/4 time signature, but recognizing:
-- 5-beat spans fill structurally significant durations
-- GIS3-interval (11, 5) recurs at structurally important points
-- The opening-to-first-ictus span is 5 beats
+**Example 2** (Figure 3.5, p. 75): After time-point 10, the (11, 5) recurrence intensifies: Eb-to-D and D-to-C# both span (11, 5), strengthening the 5/4 sensation.
 
-**Figure 3.5:**
-After time-point 10, the (11, 5) recurrence intensifies the "5/4" sensation:
-- Eb to D: (11, 5)
-- D to C#: (11, 5)
+**Example 3** (Figure 3.6, p. 76): At time-point 11, the GIS3-interval (2, 7) creates an alternative mensural reading that competes with the (11, 5) structure, demonstrating mensural conflict.
 
-**Mensural conflict (Figure 3.6):**
-At time-point 11, the GIS3-interval (2, 7) creates an alternative mensural reading that competes with the (11, 5) structure.
+# Relationships
+## Builds Upon
+- **GIS3-interval** — The compound intervals that define mensural associations
+- **Unfolding interval vector** — The tool for detecting mensural emergence
+## Enables
+- **Ictus** — The moment when mensural structure first becomes perceptible
+## Related
+- **Webern Piano Variations analysis** — The primary analytical demonstration
 
-# Related Concepts
-- Ictus
-- GIS3-Interval
-- Unfolding Interval Vector
-- Beat
-- Meter vs. Mensuration
+# Common Errors
+- **Error**: Equating mensural structure with the notated time signature
+  **Correction**: Mensural structure is perceptual organization; it may conflict with notation
 
 # Common Confusions
-1. **Mensural =/= metric:** Mensural structure is the perceptual organization; metric structure is the notational representation.
-
-2. **GIS3 intervals reveal mensuration:** The recurrence of compound intervals, not just temporal intervals, defines mensural structure.
-
-3. **Multiple mensural readings:** A passage may support competing mensural interpretations, as in the 5-vs-6 conflict in Webern.
-
-4. **"Perfection" metaphor:** Lewin suggests "quintuple perfections" may be a better metaphor than "5/4 meter" for this music.
+- **Confusion**: GIS3-interval recurrence and temporal interval recurrence are the same thing
+  **Clarification**: Mensural structure involves compound intervals binding pitch to time, not just temporal intervals alone
+- **Confusion**: A passage can have only one mensural structure
+  **Clarification**: Competing mensural interpretations may coexist, as in the 5-vs-7 conflict in the Webern analysis
 
 # Source Reference
-Chapter 3: Generalized Interval Systems (2): Formal Features, Figures 3.2-3.6 and discussion, pp. 71-77
+Chapter 3: Generalized Interval Systems (2): Formal Features, Figures 3.2-3.6 and discussion, pages 71-77.
+
+# Verification Notes
+- Definition source: Synthesized from Lewin's analytical discussion
+- Confidence rationale: Medium -- concept is clearly illustrated but not formally defined; emerges from analytical application
+- Re-extraction notes: Re-extracted from v2 card; preserved: Webern details, "quintuple perfections" reference, mensural conflict example

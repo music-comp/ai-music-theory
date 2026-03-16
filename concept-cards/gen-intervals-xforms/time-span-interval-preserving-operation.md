@@ -1,85 +1,96 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Time-Span Interval-Preserving Operation
-category: technique
-source: Generalized Musical Intervals and Transformations
-chapter: "Generalized Interval Systems (3): A Non-Commutative GIS"
+slug: time-span-interval-preserving-operation
+
+# === CLASSIFICATION ===
+category: timbral-temporal-systems
+subcategory: rhythmic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
+chapter: "Generalized Interval Systems (3): A Non-Commutative GIS; Some Timbral GIS Models"
 chapter_number: 4
 pdf_page: 91
-unit: null
-authors: David Lewin
+section: "4.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "P_{(h,u)}"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - time-span-gis
+  - interval-preserving-operation
+extends:
+  - interval-preserving-operation
+related:
+  - time-span-transposition
+contrasts_with:
+  - time-span-transposition
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do interval-preserving operations work in the time-span GIS?"
 ---
 
 # Quick Definition
-In the time-span GIS, interval-preserving operations P(h,u) first scale a time span by factor u, then shift it by h units. Unlike transpositions, these operations preserve all intervallic relationships between time spans.
+The time-span interval-preserving operation P_{(h,u)}(a, x) = (h + ua, ux) first scales a time span by u, then shifts it by h units. Unlike transpositions, these operations always preserve all intervallic relationships.
 
-# Formal Definition
-**Notes 4.1.7(D):** The interval-preserving operation P(h,u) transforms time span (a, x) to:
+# Core Definition
+Notes 4.1.7(D): P_{(h,u)}(a, x) = (h, u)(a, x) = (h + ua, ux). This is left-multiplication in IVLS. The operation scales all durations by u (tempo change) and shifts all events by h (position change). Interval preservation is verified: int(P(a,x), P(b,y)) = ((u(b-a))/(ux), uy/(ux)) = ((b-a)/x, y/x) = int((a,x), (b,y)). These are NOT transpositions in this non-commutative GIS (Note 4.1.7F) (Lewin, Notes 4.1.7(D), (F), p. 113).
 
-P(h,u)(a, x) = (h + ua, ux)
+# Prerequisites
+- **Time-Span GIS** — The non-commutative GIS context
+- **Interval-Preserving Operation** — The general theory from Chapter 3
 
-This is computed as (h, u)(a, x) in the IVLS group (left multiplication).
+# Key Properties
+1. P_{(h,u)}(a, x) = (h + ua, ux) (left-multiplication)
+2. Always preserves intervals: int(P(s), P(t)) = int(s, t)
+3. Not a transposition (except for identity P_{(0,1)} = T_{(0,1)})
+4. Physical interpretation: play at tempo u starting at time h
 
-# Mathematical Formulation
-**Derivation from Definition 3.4.4:**
-P(h,u)(a, x) = (b, y) where LABEL(b, y) = (h, u) * LABEL(a, x)
-With LABEL(a, x) = (a, x):
-(b, y) = (h, u)(a, x) = (h + ua, ux)
+# Construction / Recognition
+## To Construct:
+1. Choose interval (h, u): h = time shift, u = tempo scaling factor
+2. For time span (a, x): compute (h + ua, ux)
 
-**Verification of interval preservation:**
-int(P(h,u)(a, x), P(h,u)(b, y))
-= int((h + ua, ux), (h + ub, uy))
-= (((h + ub) - (h + ua))/ux, uy/ux)
-= ((u(b - a))/ux, y/x)
-= ((b - a)/x, y/x)
-= int((a, x), (b, y))
-
-# Musical Context/Application
-P(h,u) represents uniform temporal transformation:
-- Scale all durations by u (changing tempo)
-- Shift all events by h (changing absolute position)
-
-Because the operation is uniform, intervallic relationships are preserved. This is like transposing a piece to a different tempo and start time--the internal structure remains the same.
+# Context & Application
+P_{(h,u)} models uniform temporal transformation: changing the tempo by factor u and the start time by h. This is like "play the piece twice as fast and start 10 seconds later" — the internal rhythmic structure is preserved.
 
 # Examples
-**Scaling and shifting:**
-P(5,2)(3, 1) = (5 + 2*3, 2*1) = (11, 2)
-Original: event at time 3, duration 1
-Result: event at time 11, duration 2
+**Example 1** (p. 113): P_{(5,2)}(3, 1) = (5 + 2*3, 2*1) = (11, 2)
 
-**Contrast with transposition:**
-T(2,3)(3, 1) = (3 + 2*1, 3*1) = (5, 3)
-P(2,3)(3, 1) = (2 + 3*3, 3*1) = (11, 3)
+**Example 2**: Contrast with transposition:
+- T_{(2,3)}(3, 1) = (3 + 2*1, 3*1) = (5, 3)
+- P_{(2,3)}(3, 1) = (2 + 3*3, 3*1) = (11, 3) — different result
 
-Different results! T uses the span's own duration to measure the shift.
+# Relationships
+## Builds Upon
+- **Interval-Preserving Operation** — general P_i theory
+- **Time-Span GIS** — the specific context
 
-**Interval preservation check:**
-s = (0, 1), t = (2, 3)
-int(s, t) = (2, 3)
+## Contrasts With
+- **Time-Span Transposition** — T right-multiplies labels and does NOT preserve intervals; P left-multiplies and DOES
 
-P(10, 2)(s) = (10, 2), P(10, 2)(t) = (10 + 4, 6) = (14, 6)
-int((10, 2), (14, 6)) = ((14-10)/2, 6/2) = (2, 3)
-
-Interval preserved!
-
-**Physical interpretation:**
-P(h,u) = "play the piece twice as fast (u = 2) and start at time h"
-All internal rhythmic relationships are preserved.
-
-# Related Concepts
-- Time-Span Transposition
-- Interval-Preserving Operation (Pi)
-- Time-Span GIS
-- LABEL Function
-- Left vs. Right Multiplication
+# Common Errors
+- **Error**: Confusing P_{(h,u)} with T_{(h,u)}
+  **Correction**: P uses left-multiplication (h + ua, ux); T uses right-multiplication (a + hx, ux). Same second component, different first.
 
 # Common Confusions
-1. **P vs. T:** P(h,u)(a,x) = (h + ua, ux) uses left multiplication. T(i,p)(a,x) = (a + ix, px) uses right multiplication. They differ in non-commutative groups!
-
-2. **The formula:** Scale first (ua), then shift (h + ua). The duration scales to ux.
-
-3. **Interval preservation:** T(i,p) does NOT preserve intervals (except identity). P(h,u) DOES preserve intervals (always).
-
-4. **Tempo interpretation:** P(h,u) models playing at tempo u (relative to original) starting at time h. This preserves the musical structure.
+- **Confusion**: Thinking interval-preserving operations are "more natural" than transpositions
+  **Clarification**: Both are valid operations with different musical interpretations. Transpositions measure from the original span; interval-preserving operations apply uniform scaling.
 
 # Source Reference
-Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Notes 4.1.7(D), pp. 113
+Chapter 4: Generalized Interval Systems (3): A Non-Commutative GIS, Notes 4.1.7(D), p. 113.
+
+# Verification Notes
+- Definition source: direct from Notes 4.1.7(D)
+- Confidence rationale: high — explicit formula with verification
+- Re-extraction notes: Re-extracted from v2 card; preserved: interval preservation proof, contrast with transposition, physical interpretation

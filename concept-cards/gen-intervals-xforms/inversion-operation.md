@@ -1,70 +1,133 @@
 ---
-concept: "Inversion Operation (I_u^v)"
-category: technique
-source: Generalized Musical Intervals and Transformations
+# === CORE IDENTIFICATION ===
+concept: Inversion Operation
+slug: inversion-operation
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: formal-features
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (2): Formal Features"
 chapter_number: 3
 pdf_page: 62
-unit: null
-authors: David Lewin
+section: "3.5 Inversions"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "I_u^v"
+  - "u/v inversion"
+  - "inversion about u and v"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - generalized-interval-system
+  - label-function
+  - transposition-operation
+  - interval-preserving-operation
+extends:
+  - generalized-interval-system
+related:
+  - interval-reversing-operation
+  - petinv-group
+  - commutative-gis-inversion-properties
+contrasts_with:
+  - transposition-operation
+  - interval-preserving-operation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is an inversion operation in a GIS?"
+  - "How do commutative and non-commutative GIS structures differ?"
 ---
 
 # Quick Definition
-The u/v inversion operation I_u^v maps each element s to an element I_u^v(s) that is "balanced" about u and v in a specific intervallic proportion: the interval from v to I_u^v(s) equals the interval from s to u.
+The u/v inversion I_u^v maps each element s to an element "balanced" about u and v: the interval from v to I_u^v(s) equals the interval from s to u.
 
-# Formal Definition
-Given any u in S and any v in S, the operation I_u^v of u/v inversion is defined by the equation:
+# Core Definition
+Given any u, v in S, the operation I_u^v is defined by int(v, I_u^v(s)) = int(s, u) for all s (Definition 3.5.1). Using LABEL with i = LABEL(v), j = LABEL(u): LABEL(I_u^v(s)) = i * LABEL(s)^{-1} * j (Theorem 3.5.2). The operation I_u^v maps u to v and v to u; its inverse is I_v^u (Corollary 3.5.9). In commutative GIS, I_u^v = I_v^u always; in non-commutative GIS this holds only when int(v, u) is central (Lewin, pp. 82-89).
 
-int(v, I_u^v(s)) = int(s, u)
+# Prerequisites
+- **Generalized Interval System** — Inversion is defined within a GIS
+- **LABEL Function** — The LABEL formula for inversion is essential for computation
+- **Transposition Operation** — Understanding how inversions combine with transpositions (Theorem 3.5.6)
+- **Interval-Preserving Operation** — Understanding how inversions combine with P operations (Theorem 3.5.7)
 
-for all s in S. This captures the intuition that I(s) bears to v the inverse of the intervallic relationship that s bears to u.
+# Key Properties
+1. int(v, I_u^v(s)) = int(s, u) for all s
+2. LABEL(I_u^v(s)) = i * LABEL(s)^{-1} * j where i = LABEL(v), j = LABEL(u)
+3. I_u^v(u) = v and I_u^v(v) = u
+4. (I_u^v)^{-1} = I_v^u (Corollary 3.5.9)
+5. T_n I_u^v = I_x^v where x = T_n(u) (Theorem 3.5.6A)
+6. I_u^v T_n = I_u^w where w = T_n^{-1}(v) (Theorem 3.5.6B)
+7. I_u^v I_x^w = P_{im^{-1}} T_{k^{-1}j} (Theorem 3.5.8)
+8. In commutative GIS: I = I^{-1}, IT = T^{-1}I (Corollary 3.5.10)
 
-# Mathematical Formulation
-**Definition 3.5.1:**
-I_u^v(s) = t where int(v, t) = int(s, u)
+# Construction / Recognition
+## To Construct:
+1. Choose u, v in S
+2. For each s, compute i = int(s, u)
+3. Find the unique t with int(v, t) = i
+4. Set I_u^v(s) = t
 
-**Theorem 3.5.2:** Fix ref, let i = LABEL(v), j = LABEL(u). Then:
-LABEL(I_u^v(s)) = i * LABEL(s)^(-1) * j
+## To Recognize:
+1. The transformation maps u to v and v to u
+2. For any s, int(v, image) = int(s, u)
+3. The LABEL formula has the pattern i * x^{-1} * j
 
-**Key properties:**
-- I_u^v is 1-to-1 and onto (an operation)
-- I_u^v(u) = v and I_u^v(v) = u
-- In commutative GIS: I_u^v = I_v^u (Corollary 3.5.5)
-- In non-commutative GIS: I_u^v may differ from I_v^u
-
-# Musical Context/Application
-Inversion in a GIS generalizes familiar pitch inversion. For pitch classes, I_C^C (inversion about C) maps each pitch class to its "mirror image" across C. The general definition allows inversion about two different points u and v, creating an asymmetric "balance."
-
-The formula int(v, I(s)) = int(s, u) says: the distance from v to the image equals the distance from the original to u. This is the abstract essence of "reflection" or "inversion."
+# Context & Application
+Inversion generalizes the familiar pitch-class operation. For pitch classes, I_C^C maps each note to its "mirror image" across C. The general definition allows inversion about two different points u and v. In commutative GIS, many pairs (u, v) yield the same operation; in non-commutative GIS, I_u^v = I_{u'}^{v'} only when u' = u and v' = v (Note 4.1.7H).
 
 # Examples
-**Pitch-class inversion:**
-- I_C^C (inversion about C): maps E to Ab, G to F, etc.
-- I_C^C = I_F#^F# = I_D^Bb = ... (all equivalent in commutative case)
-- For any I, I(s) + s = constant (the "index" of the inversion)
+**Example 1** (p. 83): In 12-tone pitch-class GIS:
+- I_C^C maps E to A-flat, G to F
+- I_C^C = I_{F#}^{F#} = I_D^{Bb} (multiple equivalent representations)
 
-**Determining when I_u^v = I_w^x:**
-In commutative GIS: I_u^v = I_w^x iff w = I_u^v(x)
-In non-commutative GIS: I_u^v = I_w^x iff w = I_u^v(x) AND int(x, u) is central
+**Example 2** (p. 84): Determining when I_u^v = I_x^w:
+- Commutative GIS: iff w = I_u^v(x)
+- Non-commutative GIS: iff w = I_u^v(x) AND int(x, u) is central (Theorem 3.5.3)
 
-**Figure 3.7 visualization:**
-s and I(s) are "balanced" about u and v with arrows showing inverse intervallic proportions.
+# Relationships
+## Builds Upon
+- **Transposition Operation** — inversions combine with transpositions (Theorem 3.5.6)
+- **Interval-Preserving Operation** — inversions combine with P operations (Theorem 3.5.7)
 
-# Related Concepts
-- Transposition Operation (Ti)
-- Interval-Preserving Operation (Pi)
-- Inversion Index
-- Interval-Reversing Operations
-- LABEL Function
+## Enables
+- **PETINV Group** — inversions plus PETEY form the full canonical group
+- **Interval-Reversing Operation** — in commutative GIS, inversions are precisely the interval-reversing operations
+
+## Related
+- **Commutative GIS Inversion Properties** — special simplifications in the commutative case
+
+## Contrasts With
+- **Transposition Operation** — transposition right-multiplies labels; inversion inverts-and-sandwiches labels
+- **Interval-Preserving Operation** — preserves all intervals; inversion reverses them (in commutative case)
+
+# Common Errors
+- **Error**: Assuming I_u^v = I_v^u in all GIS
+  **Correction**: This holds only in commutative GIS or when int(v, u) is central (Corollary 3.5.4)
+
+- **Error**: Confusing int(v, I(s)) = int(s, u) with int(I(s), v) = int(u, s)
+  **Correction**: The defining formula places v and s on opposite sides. The interval is FROM v TO the image, and FROM the original TO u.
 
 # Common Confusions
-1. **I_u^v vs. I_v^u:** In commutative GIS these are the same operation. In non-commutative GIS they may differ, even though both swap u and v.
+- **Confusion**: Thinking inversion must be about a "center" (single point)
+  **Clarification**: GIS inversion involves two points u and v. In the familiar pitch-class case, C/C inversion and F#/F# inversion happen to be the same operation, but the formalism allows u and v to differ.
 
-2. **The formula:** int(v, I_u^v(s)) = int(s, u) places v and s on opposite sides of their respective intervals. This can be confusing--the interval is FROM v TO the image, but FROM the original TO u.
-
-3. **Corollary 3.5.4:** I_u^v = I_v^u iff int(v, u) is central. In non-commutative GIS, this fails for most pairs (u, v).
-
-4. **Inversion is an operation:** Students should verify that I_u^v is indeed 1-to-1 and onto.
+- **Confusion**: Assuming inversion is always an involution (I^2 = identity)
+  **Clarification**: In commutative GIS, I_u^v is indeed self-inverse. In non-commutative GIS, (I_u^v)^{-1} = I_v^u which may differ from I_u^v.
 
 # Source Reference
-Chapter 3: Generalized Interval Systems (2): Formal Features, Definitions 3.5.1-3.5.5, pp. 82-86
+Chapter 3: Generalized Interval Systems (2): Formal Features, Definition 3.5.1 through Corollary 3.5.10, pp. 82-89.
+
+# Verification Notes
+- Definition source: direct from Definition 3.5.1
+- Confidence rationale: high — explicit definition with extensive theorems
+- Re-extraction notes: Re-extracted from v2 card; preserved: pitch-class example, equivalence conditions, visualization reference (Figure 3.7)

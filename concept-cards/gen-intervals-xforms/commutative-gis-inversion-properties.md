@@ -1,76 +1,104 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Inversion Properties in Commutative GIS
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: commutative-gis-inversion-properties
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: formal-features
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (2): Formal Features"
 chapter_number: 3
 pdf_page: 62
-unit: null
-authors: David Lewin
+section: "3.5 Inversions"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "commutative inversion simplifications"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inversion-operation
+  - transposition-operation
+  - commutative-vs-noncommutative-gis
+extends:
+  - inversion-operation
+related:
+  - interval-reversing-operation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What special properties do inversions have in commutative GIS?"
+  - "How do commutative and non-commutative GIS structures differ?"
 ---
 
 # Quick Definition
-In a commutative GIS, inversions have special properties: every inversion is self-inverse (I = I^(-1)), and the composition IT equals T^(-1)I. These properties simplify calculations and match familiar pitch-class inversion behavior.
+In a commutative GIS, inversions have special simplifying properties: every inversion is self-inverse (I^{-1} = I), inversion conjugates transposition to its inverse (IT = T^{-1}I), and I_u^v always equals I_v^u.
 
-# Formal Definition
-**Corollary 3.5.10:** Let T and I be any transposition operation and any inversion operation in a commutative GIS. Then:
+# Core Definition
+Corollary 3.5.10 states: In a commutative GIS, for any transposition T and any inversion I: (A) I^{-1} = I (every inversion is an involution), and (B) IT = T^{-1}I (inversion conjugates transposition to its inverse). These follow from I_u^v = I_v^u (Corollary 3.5.5) and (I_u^v)^{-1} = I_v^u (Corollary 3.5.9) in the commutative case (Lewin, Corollary 3.5.10, p. 89).
 
-(A): I^(-1) = I (every inversion is self-inverse/involutory)
-(B): IT = T^(-1)I (inversion conjugates transposition to its inverse)
+# Prerequisites
+- **Inversion Operation** — The operation whose properties are simplified
+- **Transposition Operation** — Interacts with inversion via IT = T^{-1}I
+- **Commutative vs. Non-Commutative GIS** — These properties hold only in the commutative case
 
-# Mathematical Formulation
-**Proof of (A):**
-From Corollary 3.5.9, (I_u^v)^(-1) = I_v^u.
-In commutative GIS, I_u^v = I_v^u (Corollary 3.5.5).
-Therefore I^(-1) = I.
+# Key Properties
+1. I_u^v = I_v^u for all u, v (Corollary 3.5.5)
+2. I^{-1} = I (every inversion is self-inverse/involutory)
+3. IT = T^{-1}I (inversion conjugates transposition to its inverse)
+4. Equivalently: TIT = I, or TI = IT^{-1}
+5. I_u^v = I_x^w iff w = I_u^v(x) (simplified from non-commutative condition)
 
-**Proof of (B):**
-Set J = IT. By Theorem 3.5.6(B), J is an inversion operation.
-By (A), J = J^(-1).
-So IT = J = J^(-1) = (IT)^(-1) = T^(-1)I^(-1) = T^(-1)I.
+# Construction / Recognition
+## To Recognize:
+1. Verify that IVLS is commutative
+2. Then all five properties above automatically hold
 
-**Alternative form of (B):**
-Multiplying both sides of IT = T^(-1)I by T on the left:
-TIT = I, or equivalently, TI = IT^(-1).
-
-# Musical Context/Application
-These properties are familiar from standard pitch-class theory:
-- Inversions are involutions (applying twice returns to the original)
-- Transposition "passes through" inversion with sign change
-
-Property (B) explains why, in pitch-class analysis, we can rewrite ITn as T(-n)I: the transposition index negates when moved past an inversion.
+# Context & Application
+These properties are familiar from standard pitch-class theory. Property (B) explains why IT_n = T_{-n}I in pitch-class analysis: the transposition index negates when passing through an inversion. These properties fail in non-commutative GIS (like the time-span GIS), where inversions are not self-inverse and IT is not T^{-1}I.
 
 # Examples
-**Pitch-class example:**
+**Example 1** (p. 89): In 12-tone pitch-class GIS:
 - I_0(x) = -x (mod 12) is self-inverse: I_0(I_0(x)) = -(-x) = x
-- I_0 T_5 = T_(-5) I_0 = T_7 I_0
-- Verification: I_0 T_5(0) = I_0(5) = 7; T_7 I_0(0) = T_7(0) = 7
+- I_0 T_5 = T_7 I_0 = T_{-5} I_0
 
-**Commutator interpretation:**
-Property (B) can be rewritten: I T I^(-1) = T^(-1).
-This says inversion conjugates transposition to its inverse.
-In group theory terms: I normalizes the transposition group.
-
-**Row operations:**
-In twelve-tone theory, these properties explain why:
+**Example 2**: Row operations in twelve-tone theory:
 - Applying I twice returns the original row
-- RI = IR (retrograde and inversion commute in effect)
+- The commutator relation TIT = I explains standard row-class arithmetic
 
-# Related Concepts
-- Inversion Operation (I_u^v)
-- Transposition Operation (Ti)
-- Involutory Transformation
-- Commutative GIS
-- Group Conjugation
+# Relationships
+## Builds Upon
+- **Inversion Operation** — these are special properties of inversions in the commutative case
+- **Transposition Operation** — the IT = T^{-1}I formula involves transpositions
+
+## Enables
+- Standard pitch-class arithmetic and row operations
+
+## Related
+- **Interval-Reversing Operation** — in commutative GIS, inversions are also interval-reversing
+
+# Common Errors
+- **Error**: Applying IT = T^{-1}I in a non-commutative GIS
+  **Correction**: This formula is specific to commutative GIS. In non-commutative GIS, use Theorem 3.5.6 directly.
 
 # Common Confusions
-1. **These properties fail in non-commutative GIS:** In time-span GIS, I =/= I^(-1) generally, and IT =/= T^(-1)I.
-
-2. **I^(-1) = I does NOT mean I = identity:** Self-inverse means I*I = identity, not I = identity. Inversions are non-trivial involutions.
-
-3. **Formula (B) IT = T^(-1)I:** The transposition index "negates" when passing through an inversion. In additive notation: I Tn = T(-n) I.
-
-4. Students familiar with only commutative GIS may assume these properties hold universally. They are specific to the commutative case.
+- **Confusion**: Thinking I^{-1} = I means I is the identity
+  **Clarification**: I^{-1} = I means I * I = identity (involution), not I = identity. Inversions are non-trivial self-inverse operations.
 
 # Source Reference
-Chapter 3: Generalized Interval Systems (2): Formal Features, Corollary 3.5.10, pp. 89
+Chapter 3: Generalized Interval Systems (2): Formal Features, Corollary 3.5.10, p. 89.
+
+# Verification Notes
+- Definition source: direct from Corollary 3.5.10
+- Confidence rationale: high — explicit corollary with proof
+- Re-extraction notes: Re-extracted from v2 card; preserved: pitch-class example, row-operation application, involution clarification

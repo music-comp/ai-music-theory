@@ -1,67 +1,88 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Motive X
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: motive-x
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: impressionist-analysis
+tier: advanced
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.4"
+# === CONFIDENCE ===
+extraction_confidence: high
+# === VARIANTS ===
+aliases: []
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transformation-network-definition
+extends: []
+related:
+  - motive-y
+  - z-forms
+  - debussy-reflets-dans-leau-analysis
+contrasts_with: []
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is Motive X in Lewin's Debussy analysis?"
+  - "How does Motive X generate subsequent motivic material?"
 ---
 
 # Quick Definition
-Motive X is the generative opening motive of Debussy's "Reflets dans l'eau" (Db-Eb-Ab), whose internal transformational structure (T and T' relations) generates all subsequent motivic material in the piece.
+The opening three-note motive Db4-Eb4-Ab4 in Debussy's "Reflets dans l'eau," whose internal T (Db to Eb) and T' (Ab to Eb) relations generate all subsequent motivic material and large-scale tonal structure.
 
-# Formal Definition
-Motive X comprises the pitches Db4-Eb4-Ab4, containing two fundamental transformations: T (mapping Db to Eb) and T' (mapping Ab to Eb). These transformations, operating on the three pitches of X, serve as the generative basis for derived motives (Y, Z-forms) and large-scale tonal relationships throughout the composition.
+# Core Definition
+Motive X = (Db, Eb, Ab) contains two fundamental transformations: T (Db to Eb) and T' (Ab to Eb). T has context-dependent meaning: "one diatonic step up, sometimes as a major second up, sometimes as two semitones up, and sometimes as the pitch-class interval 2." X generates Y by "folding" the T relation, T(X) by transposition, and Z-forms by synthesis. The T-relation ultimately expands to tonal-level key change from Db to Eb at the climax (Lewin, Section 10.4, pp. 266-268).
 
-# Mathematical Formulation
-X = (Db4, Eb4, Ab4) with:
-- T: Db -> Eb (second position - first position)
-- T': Ab -> Eb (third position - second position, or transposition by perfect fourth down/fifth up)
+# Prerequisites
+- **Transformation network** — the analytical framework
 
-Internal structure (Figure 10.11a):
-```
-Db ----T----> Eb
-              ^
-Ab ----T'-----+
-```
+# Key Properties
+1. Three pitches: Db4-Eb4-Ab4
+2. Internal T: Db -> Eb; internal T': Ab -> Eb
+3. T(X) = (Eb, F, Bb) generates Bb4 at m. 3
+4. Y derived by folding T to T^{-1}
+5. Context-dependent T meaning is a feature, not a deficiency
 
-The compound T^(-1)T' maps the first pitch to the third: Db -> Ab (via the shared Eb).
+# Construction / Recognition
+## To Construct:
+1. Identify the opening Db-Eb-Ab cell
+2. Map T and T' relations within
+## To Recognize:
+1. Look for the intervallic pattern (step up, fourth down) or transformations thereof
 
-# Musical Context/Application
-Motive X establishes the fundamental intervallic and transformational relationships that pervade "Reflets dans l'eau." The T and T' transformations have multiple simultaneous meanings (diatonic step, major second, semitones, pitch-class interval) depending on context, allowing Debussy to develop his material across different musical spaces.
+# Context & Application
+X is the generative cell for the entire Reflets analysis. All subsequent material derives from X's internal transformational structure.
 
 # Examples
-From the analysis (Figures 10.10-10.11):
+**Example 1** (Figure 10.11, p. 268): X = (Db, Eb, Ab). T(X) = (Eb, F, Bb) at m. 3. Y derived by folding.
 
-**X in measure 1:**
-The motive Db4-Eb4-Ab4 opens the piece, establishing:
-- T = ascending second (Db to Eb)
-- T' = descending fourth (Ab to Eb)
+# Relationships
+## Builds Upon
+- **Transformation network** — analyzed within network structures
+## Enables
+- **Motive Y** — derived from X
+- **Z-forms** — synthesize X, Y, T(X)
+## Related
+- **Debussy Reflets analysis** — the full analytical context
 
-**T(X) in measure 3:**
-X transforms to T(X) = Eb-F-Bb, generating the new pitch Bb4:
-- "The new pitch Bb4 of T(X) is thereby generated in the principal melodic line"
-- "Bb, as the high point of T(X), is the T-transpose of Ab, the high point of X"
-
-**Large-scale T-transposition:**
-The climactic Eb major passage (measures 56-58) represents T applied to the entire tonic:
-- "The whole tonality of the piece has temporarily moved up from Db to Eb = T(Db)"
-- "The potential for the change of tonality was perhaps already latent in the transformation of X to T(X) during measure 3"
-
-**Repeat structure (measures 5-8):**
-The repeat creates T^(-1) at a larger rhythmic level: "The change from T to T^(-1)... now characterizes on a larger rhythmic level the change from the progression X-T(X) (measures 1-3), to the progression T(X)-X (measures 3-5)."
-
-# Related Concepts
-- Motive Y
-- Z-Forms
-- T and T' Transformations
-- Debussy Reflets dans l'eau Analysis
-- Transformation Networks
+# Common Errors
+- **Error**: Fixing T as always "two semitones"
+  **Correction**: T's meaning varies by context
 
 # Common Confusions
-Students should not interpret T and T' as fixed interval types. Lewin emphasizes that their meaning varies with context: "Depending on various contexts to come, we sometimes hear the interval associated with T as one diatonic step up, sometimes as a major second up, sometimes as two semitones up, and sometimes as the pitch-class interval 2."
+- **Confusion**: Thinking X is a simple pitch motive
+  **Clarification**: X is a transformational structure with internal T and T' relations
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figures 10.10-10.11
+Chapter 10, Section 10.4, pp. 266-268. Figure 10.11.
+
+# Verification Notes
+- Definition source: direct from Section 10.4
+- Confidence rationale: high -- the generative cell of the entire analysis
+- Re-extracted from v2 card; preserved: T/T' definitions, context-dependence, key-change expansion

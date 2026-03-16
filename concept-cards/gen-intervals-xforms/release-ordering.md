@@ -1,63 +1,101 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Release-Ordering
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: release-ordering
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: time-span-set-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions"
 chapter_number: 5
 pdf_page: 119
-unit: null
-authors: David Lewin
+section: "5.4.2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - release ordering
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - time-span-gis
+  - set-in-gis
+extends: []
+related:
+  - attack-ordered-dyad
+  - unrolling-interval-vector
+  - brahms-rhapsody-emb
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is release-ordering and why is it needed?"
+  - "How does release-ordering differ from attack-ordering?"
 ---
 
 # Quick Definition
-Release-ordering arranges time spans by when they end (release), not when they begin (attack), reflecting the order in which spans are fully perceived.
+Release-ordering arranges time spans by when they end (release point), not when they begin, reflecting the order in which spans are fully perceived by a listener.
 
-# Formal Definition
-Given distinct spans s and t, s precedes t in the release-ordering if:
-1. s ends before t ends, OR
-2. They end simultaneously and s is longer (equivalently, s began earlier)
+# Core Definition
+"Given distinct spans s and t, s precedes t in the release-ordering if s ends before t ends, or if they end simultaneously and s is longer" (Lewin, p. 117). The rationale: "we cannot claim to have perceived [a span] as [a] span" until it ends, because "we do not yet know how long [it is] going to be" (p. 117). Release-ordering thus models the order of perceptual completion.
 
-If spans s and t correspond to musical events event1 and event2, then s precedes t in release-ordering when we perceive event1's full time span before we perceive event2's.
+# Prerequisites
+- **Time-Span GIS** — Release-ordering applies to sets of time spans
+- **Set in a GIS** — The spans being ordered form a set
 
-# Mathematical Formulation
-For time spans s = (a, x) and t = (b, y):
+# Key Properties
+1. For s = (a, x): release time = a + x
+2. s precedes t in release-ordering if (a+x) < (b+y), or if equal and x > y
+3. Release-ordering may differ from attack-ordering
+4. Determines the stages for unrolling interval vectors and EMB
+5. Models perceptual reality: a span is not fully perceived until it ends
 
-Release time of s = a + x
-Release time of t = b + y
+# Construction / Recognition
+## To Construct:
+1. For each span (a, x), compute release time a + x
+2. Order spans by ascending release time
+3. Break ties by listing the longer span first (it began earlier)
 
-s <_release t if:
-- (a + x) < (b + y), OR
-- (a + x) = (b + y) AND x > y (i.e., a < b since durations differ)
+## To Recognize:
+1. Spans arranged so that each has ended before the next is listed
 
-This defines a total ordering on any finite set of distinct time spans.
-
-Contrast with attack-ordering:
-s <_attack t if:
-- a < b, OR
-- a = b AND x < y
-
-# Musical Context/Application
-Release-ordering models perceptual reality: we cannot know a span's duration until it ends. When "unrolling" interval vectors, we need release-ordering to track which spans have been fully perceived at each moment. This differs from score-order (attack-ordering).
+# Context & Application
+Release-ordering is essential for "unrolling" interval vectors and EMB values. At time point 17, even though a viola may have attacked at time 16, we cannot count its span or any intervals involving it because we do not yet know its duration. Only spans that have released can participate in computed intervals.
 
 # Examples
-From Figure 5.13, Y = {vn1, vn2, vc1, va1, vn3, vc2, va2, vn4}
+**Example 1** (p. 117, Figure 5.13): String trio passage. Attack-ordering: vn1, va1, vc1, vn2, ... Release-ordering: vn1, vn2, vc1, va1, ... At time 17 (attack of vn2), only vn1 has fully "happened" — no intervals are yet available.
 
-Attack-ordering: vn1, va1, vc1, vn2, vn3, vc2, va2, vn4
-(ordered by when each span begins)
+# Relationships
+## Builds Upon
+- **Time-Span GIS** — Ordering applies to time spans
 
-Release-ordering: vn1, vn2, vc1, va1, vn3, vc2, va2, vn4
-(ordered by when each span ends)
+## Enables
+- **Unrolling Interval Vector** — Uses release-ordering to determine stages
+- **Brahms Rhapsody EMB Analysis** — Stage articulation based on release-ordering
 
-The difference matters: at time 17, va1 and vc1 have attacked but not released. We have "heard" them begin but don't yet know how long they will last. Only vn1 has fully "happened" at that point in release-ordering.
+## Related
+- **Attack-Ordered Dyad** — Different ordering used for dyad classification
 
-# Related Concepts
-- Unrolling Interval Vector
-- Attack-Ordered Dyad
-- Time-Span GIS
-- Perceptual Time
+# Common Errors
+- **Error**: Using attack-ordering for unrolling computations
+  **Correction**: Unrolling must use release-ordering to properly model perception
 
 # Common Confusions
-Release-ordering is not simply "reverse" attack-ordering. A short note that attacks late can still release early. The ordering depends on both onset time and duration. In ensemble passages with varying note lengths, release-ordering can differ substantially from attack-ordering.
+- **Confusion**: Thinking release-ordering is simply the reverse of attack-ordering
+  **Clarification**: A short note attacking late can release before a long note attacking early; the orderings can differ in complex ways
 
 # Source Reference
-Chapter 5: Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions, Example 5.4.2
+Chapter 5: Generalized Set Theory (1), Example 5.4.2, pp. 116-118.
+
+# Verification Notes
+- Definition source: Direct from section 5.4.2
+- Confidence rationale: Explicit definition with detailed rationale
+- Re-extraction notes: Re-extracted from v2 card; preserved: string trio example, perceptual rationale. Added v3.1 structure.

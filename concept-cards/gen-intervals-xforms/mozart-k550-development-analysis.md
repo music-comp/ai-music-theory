@@ -1,58 +1,114 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Mozart K.550 Development Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: mozart-k550-development-analysis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: classical-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
-unit: null
-authors: David Lewin
+section: "10.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transformation-network-definition
+  - rich-transformation
+  - tch-transformation
+extends: []
+related:
+  - pitch-motive
+  - durational-motive
+  - rich-relations-in-rhythm
+  - multiplicative-transposition
+  - multiplicative-inversion
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Lewin analyze Mozart's K.550 development section?"
+  - "How can RI-chaining in pitch conceal elaborate durational transformations?"
 ---
 
 # Quick Definition
-Lewin's analysis of the development section in Mozart's Symphony No. 40, K.550, demonstrates how RI-chaining in pitch structure conceals elaborate RICH-transformations in durational structure.
+Lewin's analysis of the development section opening in Mozart's Symphony No. 40, K.550 (last movement), demonstrating how straightforward RI-chaining in pitch structure both "suggests and conceals" an elaborate transformational network in durational structure.
 
-# Formal Definition
-This extended analytical example shows how the straightforward RI-chaining visible in the pitch domain both "suggests and conceals" a complex transformational network in the durational domain. The analysis operates on two parallel dimensions: pitch motives (PM) undergoing RICH transformations, and durational motives (DM) undergoing corresponding rhythmic transformations.
+# Core Definition
+This analytical example (Section 10.1) operates on two parallel dimensions: pitch motives (PM) undergoing RICH transformations with TCH interval of a falling fourth, and durational motives (DM) undergoing corresponding rhythmic transformations including multiplicative transposition, multiplicative inversion, retrograde, and RICH. The analysis shows that the transformational logic governing pitch structure simultaneously governs rhythmic structure, revealing deeper compositional coherence (Lewin, pp. 251-258).
 
-# Mathematical Formulation
-The pitch motive chain follows TCH (transposition chain) by falling fourths:
-- PM forms: (E-Ab-B) -> (Ab-B-Eb) -> (B-Eb-F#) -> (Eb-F#-Bb) -> (F#-Bb-C#) -> (Bb-C#-F) -> (C#-F-G#)
+# Prerequisites
+- **Transformation network** — the analytical framework
+- **RICH transformation** — the chaining operation applied to both pitch and duration
+- **TCH transformation** — measures the transposition interval between successive RI-chain forms
 
-The durational network (Figure 10.3) involves:
-- T = multiplicative T_2 (augmentation)
-- I = multiplicative inversion
-- J = another multiplicative inversion I_2
-- RICH = multiplicative retrograde-inversion
+# Key Properties
+1. Pitch motive PM: diminished fourth up + diminished seventh down
+2. Durational motive DM = 1 + 2 + 2 (quarter-note beats)
+3. PM-form (C#-F-G#) is bracketed twice (4a and 4b), reflecting rhythmic ambiguity
+4. Durational series 4b is RICH(series 4a), projecting RI-chaining in the durational domain
+5. The RICH-chain extends backwards to include the rocket theme's high Db
+6. The analysis is "grossly oversimplified" by Lewin's own admission
 
-# Musical Context/Application
-This analysis exemplifies how transformational theory can reveal hidden structural connections in Classical music. Mozart's development section appears to use simple RI-chaining in pitch, but the rhythmic structure involves a sophisticated network of transformations that create "bewildering" effects upon first hearing.
+# Construction / Recognition
+## To Construct:
+1. Identify the pitch motive PM and its RICH/TCH chain
+2. Identify the durational motive DM and its transformations
+3. Map transformational relationships in both domains
+4. Construct the durational network (Figures 10.2-10.3)
+## To Recognize:
+1. Look for parallel transformational processes in pitch and rhythmic domains
+2. Listen for the "bewildering" effect of dual RI-chaining
+
+# Context & Application
+This analysis exemplifies how transformational theory reveals hidden structural connections in Classical music. The development section (measures 127-135) appears to use simple RI-chaining in pitch, but the rhythmic structure involves a sophisticated network including multiplicative transposition (T2), multiplicative inversion, and RICH.
 
 # Examples
-The passage (measures 127-135) opens the development section of the last movement. Key observations:
+**Example 1** (Figures 10.1-10.3, pp. 251-256): The durational network:
+- Bracket 1, 2: DM = 1 + 2 + 2
+- Bracket 3: T2(DM) = 2 + 4 + 4 (augmentation)
+- Bracket 4a: R(bracket 3) = 4 + 4 + 2
+- Bracket 4b: I(bracket 3) = 4 + 2 + 2 (also RICH of 4a)
+- Bracket 5: RICH(DM) = 2 + 2 + 4
 
-1. **Pitch chain**: PM comprises "a diminished fourth up followed by a diminished seventh down," chained through RICH transformations with TCH interval of falling fourth.
+**Example 2** (Figure 10.4, pp. 257-258): The RI-chain extends backwards via the PM-form A-Db-E, connecting to the rocket theme. The rhythmic sequence of 3 quarters between Db and E parallels subsequent durations.
 
-2. **Durational ambiguity**: The PM-form (C#-F-G#) is bracketed twice (4a and 4b) reflecting "an interesting ambiguity about its rhythmic location":
-   - Series 4a = 4 + 4 + 2 (retrograde of series 3)
-   - Series 4b = 4 + 2 + 2 (inversion of series 3, also RICH of 4a)
+# Relationships
+## Builds Upon
+- **RICH transformation** — the primary chaining operation in both domains
+## Enables
+- (Demonstrates analytical method for parallel pitch/rhythm analysis)
+## Related
+- **Pitch motive** — PM is the pitch component
+- **Durational motive** — DM is the rhythmic component
+- **RICH-relations in rhythm** — rhythmic application of RICH
+- **Multiplicative transposition** — T2 augmentation in durational domain
+- **Multiplicative inversion** — durational inversion about a product or sum
 
-3. **Texture change**: At measure 133, despite radical texture change, the durational series continues the transformational network. Series 6 = 4 + 2 + 2 recapitulates series 4b.
-
-4. **Diminution**: Series 7 = 2 + 1 + 1 diminutes series 6 by factor of 2, undoing the earlier augmentation from bracket 2 to bracket 3.
-
-5. **Extended chain**: The RI-chaining of PM actually begins earlier, involving "the all-important high Db of the rocket theme" (Figure 10.4).
-
-# Related Concepts
-- Pitch Motive (PM)
-- Durational Motive (DM)
-- RICH-Relations in Rhythm
-- RI-Chain
-- TCH (Transposition Chain)
-- Transformation Networks
+# Common Errors
+- **Error**: Focusing only on pitch RI-chain and missing durational transformations
+  **Correction**: The analysis specifically demonstrates that both dimensions must be considered
 
 # Common Confusions
-Students may focus exclusively on the pitch RI-chain without recognizing the parallel durational transformations. The analysis demonstrates that surface pitch patterns can distract from equally sophisticated rhythmic organization operating according to the same transformational logic.
+- **Confusion**: Thinking durational inversion must be additive
+  **Clarification**: It can be computed multiplicatively (8/2, 8/4, 8/4 = 4, 2, 2) or additively (6-2, 6-4, 6-4 = 4, 2, 2); both yield the same result here
 
 # Source Reference
-Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Figures 10.1-10.4
+Chapter 10: Transformation Graphs and Networks (4): Some Further Analyses, Section 10.1, pp. 251-258. See Figures 10.1-10.4.
+
+# Verification Notes
+- Definition source: direct from Section 10.1 analytical discussion
+- Confidence rationale: high -- extended detailed analysis with multiple figures
+- Re-extracted from v2 card; preserved: bracket-by-bracket durational series, dual inversion computation, "bewildering" quote

@@ -1,57 +1,89 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Riemann Function Theory Critique
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: riemann-function-theory-critique
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: klang-operations
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (2): Non-Intervallic Transformations"
 chapter_number: 8
 pdf_page: 206
-unit: null
-authors: David Lewin
+section: "8.1.1"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - dom-transformation
+  - klang-representation
+extends: []
+related:
+  - transformational-attitude
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What problems does Lewin identify in Riemann's function theory?"
 ---
 
 # Quick Definition
-Lewin's analysis of conceptual problems in Riemann's harmonic function theories, particularly regarding the transformational character of functional concepts and the orientation of harmonic arrows.
+Lewin's analysis of two conceptual problems in Riemann's harmonic function theories: (1) dominants do not point to their tonics (they "just sit around"), and (2) Riemann never realized the transformational character of his concepts.
 
-# Formal Definition
-Lewin identifies two main problems with Riemann's approach:
+# Core Definition
+Lewin identifies two problems. First, the arrow orientation: "His dominants, other than secondary dominants, do not point to their tonics via implicit DOM arrows. Rather the tonics point to their dominants, generating them by implicit DOM' arrows. Then the dominants just sit around, not going anywhere" (8.1.1, p. 177). Second, transformational awareness: "He never quite worked through in his own mind the transformational character of his theories. He did not quite ever realize that he was conceiving 'dominant' (whether DOM or DOM') as something one does to a Klang, to obtain another Klang" (p. 177). Lewin conjectures Riemann was "unduly influenced by a desire to promote his notation as a substitute for Roman-Numeral notation."
 
-1. Arrow orientation problem: Riemann's dominants do not point to their tonics via implicit DOM arrows. Instead, tonics point to dominants (generating them by implicit DOM' arrows). Then "the dominants just sit around, not going anywhere."
+# Prerequisites
+- **DOM transformation** — The distinction between DOM and DOM' is central
+- **Klang representation** — Riemann's framework is formalized through Klangs
 
-2. Transformational awareness problem: Riemann "never quite worked through in his own mind the transformational character of his theories." He did not realize he was conceiving "dominant" as something one does to a Klang.
+# Key Properties
+1. DOM arrows (Lewin) point dependents toward tonic; DOM' arrows (Riemann) point tonic toward dependents
+2. Riemann conceived functional terms as labels, not transformations
+3. This made his analyses "subject to inertia and lifelessness"
+4. Lewin's reformulation preserves Riemann's insights while correcting the conceptual framework
 
-# Mathematical Formulation
-The distinction between DOM and DOM':
-- DOM: (C, +)DOM = (F, +) [C becomes dominant of F]
-- DOM': (F, +)DOM' = (C, +) [F takes its dominant, yielding C]
+# Construction / Recognition
+## To Construct:
+1. Compare DOM (become-dominant-of) with DOM' (take-the-dominant)
+2. Note how arrow direction affects graph dynamics
+## To Recognize:
+1. Static harmonic graphs (Riemann) vs. dynamic ones (Lewin)
 
-Riemann implicitly used DOM' (tonics generating dominants), which creates static graphs. Lewin's DOM (dominants pointing to tonics) creates dynamic graphs matching harmonic function.
-
-# Musical Context/Application
-Lewin suggests Riemann was influenced by his desire to promote his notation as a substitute for Roman numerals. This led him to conceive functional terms as labels for Klangs rather than as transformations that:
-- Generate Klangs from a local tonic (DOM'), or
-- Urge Klangs towards their tonics (DOM)
-
-The result: Riemann's "musical analyses [are] subject to inertia and lifelessness, seldom doing justice to the power and originality of his theoretical ideas."
+# Context & Application
+Lewin's critique is respectful but pointed: Riemann's "power and originality" are acknowledged, but the conceptual flaw "makes his musical analyses subject to inertia and lifelessness, seldom doing justice to the power and originality of his theoretical ideas" (p. 177).
 
 # Examples
-Compare network orientations:
-- With DOM (Lewin): Arrows point from dominants to tonics, showing functional direction
-- With DOM' (Riemann's implicit): Arrows point from tonics to dominants, creating static generation
+**Example 1** (Figure 8.1, p. 177): The normative network of Figure 7.9 rewritten with DOM and MED arrows. The arrows "drive" the network "in a natural musical way," showing functional dependency.
 
-Figure 8.1 shows how DOM and MED "drive" networks "in a natural musical way."
+# Relationships
+## Builds Upon
+- **DOM transformation** — DOM vs. DOM' is the core of the critique
+## Related
+- **Transformational attitude** — Riemann failed to adopt a fully transformational stance
 
-# Related Concepts
-- DOM Transformation
-- Klang Representation
-- Transformation versus Label
-- Network Dynamics
-- Harmonic Function
+# Common Errors
+- **Error**: Thinking Lewin rejects Riemann entirely
+  **Correction**: Lewin adopts and modifies Riemann's ideas, correcting the conceptual framework while preserving the insights
 
 # Common Confusions
-- The critique is conceptual, not about Riemann's analytical results
-- Lewin's reformulation preserves Riemann's insights while correcting the conceptual framework
-- "DOM" and "dominant" are not the same; DOM is a transformation, dominant is a function/label
-- The critique applies to the theoretical framework, not to all of Riemann's work
+- **Confusion**: Thinking the critique is about mathematical error
+  **Clarification**: It is about conceptual orientation (labels vs. transformations, static vs. dynamic arrows)
 
 # Source Reference
-Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.1.1
+Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.1.1, page 177.
+
+# Verification Notes
+- Definition source: Direct quotation from 8.1.1
+- Confidence rationale: Explicit discussion with clear claims
+- Re-extraction notes: Re-extracted from v2 card; preserved: "inertia and lifelessness" quotation, conjecture about Roman numerals

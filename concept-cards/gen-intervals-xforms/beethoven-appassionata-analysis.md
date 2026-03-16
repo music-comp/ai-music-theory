@@ -1,73 +1,108 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Beethoven Appassionata Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: beethoven-appassionata-analysis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: tonal-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.7.6"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transformation-network-definition
+  - precedence-ordered-system
+  - input-node
+  - output-node
+extends: []
+related:
+  - carriage-return-function
+  - start-node
+  - time-spanning-network
+  - schenkerian-network
+  - double-emploi
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Lewin analyze the Beethoven Appassionata slow movement?"
+  - "How can formal input nodes conflict with musical priority?"
 ---
 
 # Quick Definition
-An extended analysis of the slow movement opening from Beethoven's Appassionata Sonata demonstrating discrepancies between precedence-ordering and musical chronology, the carriage-return function, and Schenkerian network modeling.
+An extended analysis of the slow movement opening from Beethoven's Appassionata Sonata demonstrating discrepancies between precedence-ordering and musical chronology, the carriage-return function, START node device, time-spanning networks, and Schenkerian network modeling.
 
-# Formal Definition
-The analysis (Figures 9.14-9.16) examines the opening theme in Db major, focusing on:
-- Klang network for the foreground (Figure 9.14)
-- Time-span attachments (Figure 9.15)
-- Schenkerian multi-level network (Figure 9.16)
+# Core Definition
+This analysis (Figures 9.14-9.16) examines a Klang network for the opening of the Appassionata slow movement in Db major. The Gb Klangs are formal input nodes but Db has structural and temporal priority. The analysis introduces carriage-return moments (where chronology violates precedence), the START node (to establish structural priority), time-spanning networks (to model temporal placement), and Schenkerian networks (to model hierarchical levels). It also demonstrates Rameau's double emploi: the fourth sonority is simultaneously Gb-major with added sixth and eb-minor with minor seventh (Lewin, Section 9.7.6, pp. 244-250).
 
-Key analytical claims:
-- The Gb Klangs are formal input nodes but not structural or temporal beginnings
-- The eb-Klang/Gb-Klang relation exemplifies Rameau's double emploi
-- Carriage-return moments occur when Gb harmonies are heard
+# Prerequisites
+- **Transformation network** — the analytical framework
+- **Precedence-ordered system** — the network is precedence-ordered
+- **Input/output nodes** — Gb is input, Db is output
 
-# Mathematical Formulation
-From Figure 9.14(b):
-- Precedence-ordered network with Gb nodes as inputs
-- Musical chronology: Db occurs first, not Gb
-- Carriage-return moments: transitions to Gb nodes
+# Key Properties
+1. Gb nodes are formal inputs but not structural or temporal beginnings
+2. Carriage-return moments occur when Gb harmonies are heard
+3. START node pointing to Db establishes structural priority
+4. Time-spanning network (Figure 9.15) makes temporal placement explicit
+5. Schenkerian network (Figure 9.16) distinguishes "input at level 3" from deeper levels
+6. Double emploi: REL arrow from (Gb,+) to (eb,-) goes one way only
 
-From Figure 9.16 (Schenkerian network):
-- Level 1: (Db, 5, 1) as background
-- Level 2: Db-Ab-Db progression with middleground fifth degree
-- Level 3: Foreground elaboration including Gb Klangs
-- Gb nodes are "input at level 3" but not at deeper levels
+# Construction / Recognition
+## To Construct:
+1. Build Klang network for foreground harmonic progression
+2. Identify input/output nodes
+3. Compare with musical chronology to find carriage returns
+4. Adjoin START node for structural priority
+5. Optionally: build Schenkerian multilevel network
+## To Recognize:
+1. Look for discrepancies between formal input and musical/structural beginning
 
-# Musical Context/Application
-The analysis illustrates how:
-1. Formal input nodes need not match structural priority
-2. START nodes can establish analytical priority
-3. Time-spanning networks make temporal relationships explicit
-4. Schenkerian networks model hierarchical structure
-5. Carriage-return moments have precise formal characterization
+# Context & Application
+This analysis serves as the primary demonstration of several formal concepts introduced in Chapter 9: carriage returns, START nodes, time-spanning networks, and Schenkerian networks. It shows how multiple analytical models (foreground Klang network, time-spanning network, Schenkerian network) apply to the same passage, each capturing different aspects.
 
 # Examples
-From the analysis:
-- The fourth sonority is both Gb-major (with added sixth) and eb-minor (with minor seventh)
-- The double emploi creates the REL transformation arrow from Gb to eb
-- The Gb harmonies function as carriage-returns: "reset" points in the listening experience
-- Figure 9.16 refines input/output terminology: "input at level n"
+**Example 1** (Figure 9.14, pp. 244-246): Klang network in two layouts: (a) chronological left-to-right, (b) precedence-compatible left-to-right. In (b), all one-way arrows point right, but musical chronology violates this at Gb nodes.
 
-Schenkerian reading compared:
-- Middleground: Db-Ab-Db supporting sustained fifth degree
-- The fifth degree is inflected by upper neighbor twice
-- Gb Klangs support this neighboring function
+**Example 2** (Figure 9.16, pp. 249-250): Schenkerian network. Level 1: (Db, 5, 1). Level 2: Db-Ab-Db with sustained fifth degree. Level 3: foreground with Gb Klangs as "input at level 3."
 
-# Related Concepts
-- Carriage Return Function
-- Time-Spanning Network
-- Schenkerian Network
-- START Node
-- Double Emploi
-- REL Transformation
+# Relationships
+## Builds Upon
+- **Precedence-ordered system** — the Klang network is precedence-ordered
+## Related
+- **Carriage return function** — first introduced through this analysis
+- **START node** — first introduced through this analysis
+- **Time-spanning network** — demonstrated via this analysis
+- **Schenkerian network** — demonstrated via this analysis
+- **Double emploi** — the Gb/eb reinterpretation
+
+# Common Errors
+- **Error**: Taking the Klang network as a complete analysis
+  **Correction**: Lewin explicitly states it "is not an adequate representation for the way tonality controls this passage"
 
 # Common Confusions
-- The Klang network (Figure 9.14) is not equivalent to Schenkerian analysis
-- Multiple analytical models can apply to the same passage
-- The carriage-return function describes formal graph structure, not performance rubato
-- Level-specific input/output is more refined than global input/output
+- **Confusion**: Thinking carriage returns indicate flawed analysis
+  **Clarification**: They reveal interesting structural features (the "reset" quality of Gb harmonies)
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.7.6, Figures 9.14-9.16
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.7.6, pp. 244-250. See Figures 9.14-9.16.
+
+# Verification Notes
+- Definition source: direct from Section 9.7.6 extended discussion
+- Confidence rationale: high -- extended analysis serving as demonstration of multiple formal concepts
+- Re-extracted from v2 card; preserved: double emploi detail, level-specific input/output, Schenkerian reading comparison

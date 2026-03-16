@@ -1,67 +1,100 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: STRANS-Forms
-category: technique
-source: Generalized Musical Intervals and Transformations
-chapter: "Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
-chapter_number: B
-pdf_page: 282
-unit: null
+slug: strans-forms
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: octatonic-structures
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
 authors: David Lewin
+chapter: "Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups"
+chapter_number: null
+pdf_page: 282
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "STRANS1-forms"
+  - "STRANS2-forms"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - strans1-group
+  - strans2-group
+extends: []
+related:
+  - gis1-octatonic
+  - gis2-octatonic
+  - canonical-groups-octatonic
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are STRANS-forms of a set in the octatonic GIS?"
+  - "How do STRANS1-forms differ from STRANS2-forms?"
 ---
 
 # Quick Definition
-STRANS-forms are the family of sets obtained by applying all operations from a STRANS group to a given set, analogous to T-forms (transposed forms) and I-forms (inverted forms) in standard twelve-tone theory but using the non-standard STRANS operations.
+The STRANS-forms of a set Y within the octatonic collection S are the images of Y under all operations in a given STRANS group. STRANS1-forms correspond to standard dodecaphonic T/I forms within S; STRANS2-forms yield a "more novel sort of family."
 
-# Formal Definition
-Given a set X within the octatonic collection S and a group STRANS (either STRANS1 or STRANS2), the STRANS-forms of X are the sets {f(X) : f in STRANS}. STRANS1-forms correspond to the familiar transposed and inverted forms of X within S. STRANS2-forms represent a novel family of set transformations unique to the octatonic GIS2 structure.
+# Core Definition
+"The STRANS1-forms of a set within S are exactly the dodecaphonically transposed and inverted forms of the set that lie within S. The STRANS2-forms of a set within S are in general a more novel sort of family" (Lewin, Appendix B, p. 252). A key property: for any STRANS2-forms Y and Y' of a given set, and any STRANS1 operation f, INJ(Y, Y)(f) = INJ(Y', Y')(f). More generally, if f is in STRANS1 and A is in STRANS2, then INJ(Y, Z)(f) = INJ(A(Y), A(Z))(f) for any sets Y, Z within S.
 
-# Mathematical Formulation
-STRANS1-forms of X:
-- {RO(X), R3(X), R6(X), R9(X), K(X), L(X), M(X), N(X)}
-- These are exactly the T-forms and I-forms of X that lie within S
+# Prerequisites
+- **STRANS1 group** — Generates STRANS1-forms
+- **STRANS2 group** — Generates STRANS2-forms
 
-STRANS2-forms of X:
-- {RO(X), Q3(X), R6(X), Q9(X), X1(X), X2(X), X4(X), X5(X)}
-- A "more novel sort of family"
+# Key Properties
+1. STRANS1-forms of Y = {f(Y) : f in STRANS1} = standard T/I forms within S
+2. STRANS2-forms of Y = {g(Y) : g in STRANS2} = novel family
+3. INJ is constant across STRANS2-forms: INJ(Y,Y)(f) = INJ(Y',Y')(f) for STRANS2-forms Y, Y'
+4. More generally: INJ(Y,Z)(f) = INJ(A(Y),A(Z))(f) for f in STRANS1, A in STRANS2
+5. STRANS2 members serve as canonical operations for set-theoretical studies using STRANS1
 
-INJ function property:
-- For Y, Y' both STRANS2-forms of X, and f in STRANS1:
-- INJ(Y, Y)(f) = INJ(Y', Y')(f)
+# Construction / Recognition
+## To Construct:
+1. Choose a set Y within S
+2. Apply all operations in STRANS1 (or STRANS2) to Y
+3. Collect the results
+## To Recognize:
+1. STRANS1-forms match familiar T/I-related sets within S
+2. STRANS2-forms may look unfamiliar
 
-# Musical Context/Application
-STRANS-forms generalize the familiar concept of set classes to the octatonic GIS context. STRANS1-forms capture familiar transposition/inversion relationships; STRANS2-forms reveal additional relationships that may be analytically useful for octatonic music but are invisible from the standard T/I perspective.
+# Context & Application
+STRANS-forms provide canonical equivalence classes for set-theoretical analysis within octatonic space. The INJ-preservation property makes STRANS2 a natural canonical group for studies using STRANS1 intervals, and vice versa.
 
 # Examples
-**STRANS1-forms:**
-"The STRANS1-forms of a set within S are exactly the dodecaphonically transposed and inverted forms of the set that lie within S."
+**Example 1** (p. 252): STRANS2-forms of {C, E, G}: (C,E,G), (D#,C#,E), (F#,A#,C#), (A,G,A#), (C#,D#,F#), (A#,F#,A), (F#,C,D#), (G,A,C) -- eight distinct trichords.
 
-**STRANS2-forms example:**
-"Taking (C, E, G), for instance, we apply to it in turn the operations RO, Q3, R6, Q9, X1, X2, X4, and X5; its STRANS2-forms are thereby computed as:
-- RO(C, E, G) = (C, E, G)
-- Q3(C, E, G) = (D#, C#, E)
-- R6(C, E, G) = (F#, A#, C#)
-- Q9(C, E, G) = (A, G, A#)
-- X1(C, E, G) = (C#, D#, F#)
-- X2(C, E, G) = (A#, F#, A)
-- X4(C, E, G) = (F#, C, D#)
-- X5(C, E, G) = (G, A, C)"
+# Relationships
+## Builds Upon
+- **STRANS1 group** — Generates one family of forms
+- **STRANS2 group** — Generates the other family
+## Related
+- **GIS1 octatonic** — STRANS1-forms are canonical under GIS1
+- **GIS2 octatonic** — STRANS2-forms are canonical under GIS2
+- **Canonical groups (octatonic)** — STRANS1 and STRANS2 serve as canonical groups
 
-**INJ invariance:**
-"If Y is any one of those eight sets, and Y' is any other one, and f is any one of the eight operations in STRANS1, then the number of members of Y whose f-transforms lie within Y' is the same as the number of members of Y' whose f-transforms lie within Y': INJ(Y, Y)(f) = INJ(Y', Y')(f)."
-
-**General INJ property:**
-"More generally, if f is any one of the eight operations in STRANS1, and A is any one of the eight operations in STRANS2, and Y and Z are any sets whatsoever within S, then INJ(Y, Z)(f) = INJ(A(Y), A(Z))(f)."
-
-# Related Concepts
-- STRANS1 Group
-- STRANS2 Group
-- Set Class
-- T-Forms and I-Forms
-- INJ Function
-- Canonical Operations
+# Common Errors
+- **Error**: Assuming STRANS1-forms and STRANS2-forms are the same
+  **Correction**: STRANS1-forms are standard T/I forms; STRANS2-forms are generally novel
 
 # Common Confusions
-STRANS1-forms coincide with familiar T/I-forms (restricted to octatonic), but STRANS2-forms are genuinely novel. Students should not expect STRANS2-forms to match any familiar set-class relationships. The two families of forms provide complementary but distinct perspectives on octatonic set relationships.
+- **Confusion**: Thinking STRANS2-forms have no analytical value
+  **Clarification**: They have the same INJ-preservation properties as STRANS1-forms, making them equally valid for set-theoretical analysis
 
 # Source Reference
-Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups
+Appendix B: Non-Commutative Octatonic GIS Structures; More on Simply Transitive Groups, page 252.
+
+# Verification Notes
+- Definition source: Direct quotation from Appendix B
+- Confidence rationale: Explicitly defined with worked example
+- Re-extraction notes: Re-extracted from v2 card; preserved: INJ-preservation property, {C,E,G} forms example

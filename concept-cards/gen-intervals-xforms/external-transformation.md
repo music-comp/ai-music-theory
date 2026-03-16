@@ -1,59 +1,96 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: External Transformation
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: external-transformation
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: injection-function
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: "6.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - X-external transformation
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-function
+extends: []
+related:
+  - internal-transformation
+  - dispersive-transformation
+  - progressive-transformation
+contrasts_with:
+  - internal-transformation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is an external transformation?"
 ---
 
 # Quick Definition
-An external transformation is one for which INJ(X, X)(f) is minimal or relatively small - it maps X largely outside itself.
+An X-external transformation f has minimal INJ(X, X)(f) — it maps X largely outside itself. The semi-combinatorial hexachord property (INJ(X, X)(I) = 0) is a classic example.
 
-# Formal Definition
-Definition (6.4): A transformation f is X-external if INJ(X, X)(f) is minimal or relatively small given the constraints of X and INSPECT.
+# Core Definition
+Section 6.4 (Lewin, p. 174): "An f such that INJ(X, X)(f) is minimal or at least relatively small, given the constraints of X and INSPECT, can be called X-external. Such an f maps X largely outside itself." The definition avoids mentioning complements, which may not be finite sets if S is infinite.
 
-External transformations map X largely outside itself, in contrast to internal transformations which keep X "like itself."
+# Prerequisites
+- **INJ Function** — External is defined via low INJ(X, X)(f) values
 
-# Mathematical Formulation
-f is X-external if:
-INJ(X, X)(f) is near or at min{INJ(X, X)(g) : g in INSPECT}
+# Key Properties
+1. f is X-external if INJ(X, X)(f) is near its minimum
+2. X-internal followed by X-external tends to be X-external
+3. When INJ(X, X)(f) = 0, f is maximally external
+4. Semi-combinatorial hexachord: I mapping X to complement means INJ(X, X)(I) = 0
 
-Algebraic tendencies:
-- X-internal followed by X-external tends to be X-external
-- Progressive followed by Y-external tends to be dispersive
+# Construction / Recognition
+## To Identify:
+1. Compute INJ(X, X)(f) for transformations of interest
+2. Those with lowest values are X-external
 
-The definitions avoid mentioning set complements, which may not be "sets" if S is infinite.
+## To Recognize:
+1. A transformation that takes a chord entirely (or mostly) outside itself
 
-# Musical Context/Application
-External transformations model "departure" from a harmony. They take notes of a chord to notes outside that chord. In traditional theory, operations like certain transpositions of a set by intervals that produce maximum divergence are external.
-
-The semi-combinatorial hexachord property is a classic example: certain inversions map a hexachord entirely outside itself (to its complement).
+# Context & Application
+External transformations model "departure" from a harmony. The semi-combinatorial hexachord provides a canonical example: an inversion mapping X to its complement makes I maximally X-external. This is Babbitt's combinatoriality condition.
 
 # Examples
-Semi-combinatorial hexachord:
-- Let X be a hexachord that inverts to its complement under I = I_0^E
-- Then INJ(X, X)(I) = 0
-- I is maximally X-external
+**Example 1** (p. 174): If X is a semi-combinatorial hexachord and I is the inversion mapping X to complement(X), then INJ(X, X)(I) = 0 — I is maximally X-external.
 
-From op.19 no.6 analysis:
-- If I is the inversion that maps hexachord X to complement(X)
-- Then I is X-external: INJ(X, X)(I) = 0
-- This is Babbitt's hexachord combinatoriality condition
+# Relationships
+## Builds Upon
+- **INJ Function** — Defined through INJ values
 
-External transformations set up the potential for progressive motion: if X is externalized, it has "left itself" and can more readily "become" something else.
+## Related
+- **Dispersive Transformation** — External concerns X vs. itself; dispersive concerns X vs. Y
 
-# Related Concepts
-- Internal Transformation
-- Progressive Transformation
-- Dispersive Transformation
-- Combinatoriality
-- INJ (Injection Function)
+## Contrasts With
+- **Internal Transformation** — High vs. low INJ(X, X)(f)
+
+# Common Errors
+- **Error**: Confusing external with dispersive
+  **Correction**: External: low INJ(X, X)(f). Dispersive: low INJ(X, Y)(f). Different set pairs.
 
 # Common Confusions
-External is not the same as dispersive. External concerns X's relationship to itself; dispersive concerns X's relationship to Y. A transformation can be X-external (mapping X outside X) while being progressive (mapping X into Y).
+- **Confusion**: Thinking external transformations are analytically unimportant
+  **Clarification**: External transformations reveal important structural properties like combinatoriality
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, section 6.4
+Chapter 6: Generalized Set Theory (2), section 6.4, p. 174.
+
+# Verification Notes
+- Definition source: Direct from section 6.4
+- Confidence rationale: Explicit definition
+- Re-extraction notes: Re-extracted from v2 card; preserved: semi-combinatorial example. Added v3.1 structure.

@@ -1,69 +1,91 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Bach Two-Part Invention Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: bach-two-part-invention-analysis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: serial-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (2): Non-Intervallic Transformations"
 chapter_number: 8
 pdf_page: 206
-unit: null
-authors: David Lewin
+section: "8.2.5"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - much-transformation
+  - rich-transformation
+extends: []
+related:
+  - structural-sequencing
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do MUCH and RICH appear in Bach's Two-Part Invention No. 1?"
 ---
 
 # Quick Definition
-An analysis of Bach's first Two-Part Invention demonstrating how MUCH and RICH operations combine to generate sequential structures, showing that RI-chaining techniques predate their formal theorization.
+Analysis of Bach's first Two-Part Invention showing how MUCH and RICH chain the principal motive, generating foreground sequences at 2-diatonic-steps-down through a technique "very similar to that used by Wagner and Webern."
 
-# Formal Definition
-The analysis (Figure 8.5) examines three pitch-class series related by MUCH and RICH:
-- C-E-F#-B-C#-G-Bb (first form)
-- Ab-C-D-G-A-Eb-F# (second form)
-- F-A-B-E-F#-C-Eb (third form)
+# Core Definition
+"Figure 8.5(a) shows how Bach chains MUCH and RICH in the first Two-Part Invention" (Lewin, 8.2.5, p. 183). The graph (Figure 8.5b) involves OP = RICH-after-MUCH and OP' = MUCH-after-RICH in a "dual" relationship. "Bach's foreground sequence is constructed by a method very similar to that used by Wagner and Webern, in building their structural sequences. Figure 8.5 shows how artfully Bach's transformational technique uses the characteristics of his motive to fit his meter" (p. 183).
 
-The Ab form is "central" - balanced between the other two by TFIRST^(-1) and TLAST transformations.
+# Prerequisites
+- **MUCH transformation** — One of the chaining operations used
+- **RICH transformation** — The other chaining operation used
 
-# Mathematical Formulation
-Combined operations:
-- OP = RICH-after-MUCH
-- OP' = MUCH-after-RICH
+# Key Properties
+1. Three motive forms connected by MUCH and RICH
+2. OP = RICH-after-MUCH; OP' = MUCH-after-RICH
+3. Transposition interval: 2-diatonic-steps-down
+4. MUCH and RICH do not commute, but their combined intervals relate systematically
+5. The technique is analogous to Wagner's and Webern's structural sequencing
 
-The operations do not commute on all series, but:
-- OP-interval for s = OP'-interval for RI(s)
-- The specific transposition interval is 2-diatonic-steps-down
+# Construction / Recognition
+## To Construct:
+1. Identify the motive and its MUCH/RICH chaining points
+2. Trace the combined operations OP and OP'
+## To Recognize:
+1. Motivic forms connected by maximal overlap (MUCH) and two-note overlap (RICH)
 
-Figure 8.5(b) shows the graph structure with OP and OP' arrows.
-
-# Musical Context/Application
-The analysis demonstrates:
-1. Bach's transformational technique resembles Wagner's and Webern's
-2. The foreground sequence is built from RI-chaining
-3. The technique artfully fits the meter
-4. Historical continuity of compositional techniques
-
-The Ab-starting form ends the piece, matching its "central" position in the transformational network.
+# Context & Application
+This analysis demonstrates that serial chaining techniques exist in tonal music (Bach) as well as in post-tonal contexts (Wagner, Webern), predating their formal theorization by centuries.
 
 # Examples
-From Figure 8.5:
-- Three unaccompanied appearances of the FLYAWAY motive
-- Each ends a major section of the work
-- The Ab form appears last (ends the piece)
-- Network shows it balanced between the other forms
+**Example 1** (Figure 8.5, p. 183): Three pitch-class series from the Invention connected by TFIRST^{-1} and TLAST arrows, with MUCH and RICH generating the connections.
 
-The cadential function of the Ab form:
-- "Transformationally balanced" between the other two
-- Analogous to tonic balanced between dominant and subdominant
-- Temporal finality matches transformational centrality
+# Relationships
+## Builds Upon
+- **MUCH transformation** — One of the chaining operations
+- **RICH transformation** — The other chaining operation
+## Related
+- **Structural sequencing** — The foreground sequence is a product of the chaining technique
 
-# Related Concepts
-- MUCH Transformation
-- RICH Transformation
-- TLAST Transformation
-- TFIRST Transformation
-- RI-Chaining
+# Common Errors
+- **Error**: Thinking serial chaining techniques are exclusively post-tonal
+  **Correction**: Bach's Invention demonstrates the same structural principles in a tonal, diatonic context
 
 # Common Confusions
-- The three forms are not in chronological order in the network
-- The "centrality" is transformational, not temporal
-- Using T_5 and T_2 labels would obscure the balancing relationship
-- Bach's technique is formally similar to later composers despite stylistic differences
+- **Confusion**: Assuming the diatonic interval (2 steps down) is the same as pitch-class interval
+  **Clarification**: The analysis uses diatonic intervals appropriate to the tonal context
 
 # Source Reference
-Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.2.5, Figure 8.5
+Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.2.5, Figure 8.5, page 183.
+
+# Verification Notes
+- Definition source: Direct from 8.2.5
+- Confidence rationale: Explicitly analyzed with figure
+- Re-extraction notes: Re-extracted from v2 card; preserved: OP/OP' relationship, Wagner/Webern comparison

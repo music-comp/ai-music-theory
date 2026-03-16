@@ -1,63 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Forwards-Oriented Interval
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: forwards-oriented-interval
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: time-span-set-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions"
 chapter_number: 5
 pdf_page: 119
-unit: null
-authors: David Lewin
+section: "5.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - time-span-gis
+  - attack-ordered-dyad
+extends: []
+related:
+  - release-ordering
+  - unrolling-interval-vector
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a forwards-oriented interval in the time-span GIS?"
+  - "How do forwards-oriented intervals classify time-span dyads?"
 ---
 
 # Quick Definition
-A forwards-oriented interval in the time-span GIS is an interval (i, p) where i >= 0, and if i = 0 then p > 1, representing the relationship from an earlier (or shorter) span to a later (or longer) one.
+A forwards-oriented interval (i, p) in the time-span GIS has i >= 0, and if i = 0 then p > 1. These intervals label the dyad classes of attack-ordered dyads, playing the role that interval classes play in pitch-class theory.
 
-# Formal Definition
-An interval (i, p) in the time-span GIS is forwards-oriented if:
-1. i >= 0 (the target span begins at or after the source span)
-2. If i = 0, then p > 1 (simultaneous spans have target longer than source)
+# Core Definition
+An interval (i, p) is forwards-oriented if i > 0, or if i = 0 and p > 1 (Lewin, p. 113). Backwards-oriented intervals satisfy i < 0, or i = 0 and p < 1. The identity (0, 1) is neither. The inverse of a forwards-oriented interval is backwards-oriented and vice versa: (i, p)^{-1} = (-i/p, 1/p). The forwards-oriented intervals correspond 1-to-1 with 2-element set classes in the time-span GIS (using interval-preserving operations as CANON).
 
-Backwards-oriented intervals satisfy:
-1. i <= 0
-2. If i = 0, then p < 1
+# Prerequisites
+- **Time-Span GIS** — The interval group in which orientation is defined
+- **Attack-Ordered Dyad** — Forwards-oriented intervals arise from AODs
 
-The identity interval (0, 1) is neither forwards nor backwards oriented.
+# Key Properties
+1. IVLS partitions into three categories: forwards-oriented, backwards-oriented, identity
+2. Inverse of forwards = backwards, and vice versa
+3. Label dyad classes exactly as Forte's interval classes label pitch-class dyads
+4. EMB(D, X) = IFUNC(X, X)(i, p) for dyad D with forwards-oriented interval (i, p)
 
-# Mathematical Formulation
-The group IVLS of time-span intervals partitions into three categories:
-1. Forwards-oriented: {(i, p) : i > 0} union {(0, p) : p > 1}
-2. Backwards-oriented: {(i, p) : i < 0} union {(0, p) : 0 < p < 1}
-3. Identity: {(0, 1)}
+# Construction / Recognition
+## To Determine Orientation:
+1. Check the first component i of interval (i, p)
+2. If i > 0: forwards-oriented
+3. If i < 0: backwards-oriented
+4. If i = 0: check p — forwards if p > 1, backwards if p < 1, identity if p = 1
 
-Key relationship:
-- If (i, p) is forwards-oriented, then (i, p)^-1 = (-i/p, 1/p) is backwards-oriented
-- Inverses swap orientation
+## To Recognize:
+1. The interval spanning an attack-ordered dyad is always forwards-oriented
 
-Crucial theorem: Given attack-ordered dyads D1 = (s1, t1) and D2 = (s2, t2), D1 and D2 are canonically equivalent if and only if int(s1, t1) = int(s2, t2).
-
-# Musical Context/Application
-Forwards-oriented intervals describe how a later event relates to an earlier one in terms of temporal position and duration ratio. They play the same classifying role for time-span dyads that interval classes play for pitch-class dyads in traditional set theory.
+# Context & Application
+Forwards-oriented intervals enable a complete analog of Forte's interval-class analysis for rhythmic structures. The time-span interval vector lists EMB values for each forwards-oriented interval (i, p), capturing the rhythmic set's internal temporal relationships independent of tempo and absolute time.
 
 # Examples
-Forwards-oriented intervals:
-- (1, 1): Next event begins 1 duration later, same length
-- (2, 0.5): Event begins 2 durations later, half as long
-- (0, 2): Simultaneous event, twice as long
+**Example 1** (p. 113): (1, 1) — next event begins 1 duration later, same length (successive equal notes). (2, 0.5) — event begins 2 durations later, half as long. (0, 2) — simultaneous event, twice as long.
 
-Backwards-oriented (inverses):
-- (-1, 1): Previous event began 1 duration earlier, same length
-- (-4, 2): Previous event began 4 (of its) durations earlier, twice as long
+**Example 2** (pp. 114-115, Figure 5.12): Chopin sonata motive (b) has interval vector showing (1,1) = 3, (2,1) = 2, (3,1) = 2 among other entries.
 
-The forwards-oriented intervals label dyad classes, just as interval classes 1-6 label dyad classes in pitch-class theory.
+# Relationships
+## Builds Upon
+- **Attack-Ordered Dyad** — AOD intervals are always forwards-oriented
 
-# Related Concepts
-- Attack-Ordered Dyad
-- Time-Span GIS
-- Time-Span Interval Vector
-- Interval-Preserving Operations in TMSPS
+## Enables
+- **Unrolling Interval Vector** — Uses forwards-oriented intervals as vector entries
+- **M-Class Vector** — 2-class vector indexed by forwards-oriented intervals
+
+# Common Errors
+- **Error**: Confusing forwards-oriented with "ascending" pitch intervals
+  **Correction**: Forwards-oriented refers to temporal direction (later onset), not pitch direction
 
 # Common Confusions
-Don't confuse the "orientation" with musical direction. Forwards-oriented means the interval goes from earlier to later (or shorter to longer if simultaneous). The terminology parallels "positive" vs "negative" intervals but accounts for the non-commutativity of the time-span GIS.
+- **Confusion**: Thinking orientation depends on musical context
+  **Clarification**: Orientation is a purely formal property of the interval pair (i, p)
 
 # Source Reference
-Chapter 5: Generalized Set Theory (1): Interval Functions; Canonical Groups and Canonical Equivalence; Embedding Functions, section 5.4 and Appendix 5.6
+Chapter 5: Generalized Set Theory (1), section 5.4, pp. 113-114.
+
+# Verification Notes
+- Definition source: Direct from section 5.4
+- Confidence rationale: Explicit definition
+- Re-extraction notes: Re-extracted from v2 card; preserved: examples, Forte analogy. Added Chopin reference, v3.1 structure.

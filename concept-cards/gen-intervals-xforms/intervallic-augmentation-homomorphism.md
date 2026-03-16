@@ -1,64 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Intervallic Augmentation Homomorphism
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: intervallic-augmentation-homomorphism
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: graph-network-mappings
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.5.3"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "complementary gesture times 2"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - graph-homomorphism
+extends:
+  - graph-homomorphism
+related:
+  - brahms-horn-trio-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does intervallic augmentation work as a graph homomorphism?"
+  - "What kind of homomorphism has isomorphic NODEMAP but non-isomorphic SGMAP?"
 ---
 
 # Quick Definition
-A graph homomorphism where SGMAP multiplies all intervals by a constant factor (such as 2), transforming one intervallic structure into an augmented version while preserving graph structure.
+A graph homomorphism where NODEMAP is an isomorphism (identity on nodes) but SGMAP multiplies all intervals by a constant factor, transforming one intervallic structure into an augmented version while preserving the node/arrow system.
 
-# Formal Definition
-An intervallic augmentation homomorphism from graph G to graph G' has:
-- NODEMAP = identity on NODES (same nodes)
-- SGMAP(i) = k*i for some constant k (intervals multiplied by k)
-- If i labels an arrow in G, then k*i labels the corresponding arrow in G'
+# Core Definition
+An intervallic augmentation homomorphism from graph G to graph G' has: NODEMAP = identity on NODES (an isomorphism of node/arrow systems); SGMAP(i) = ki for some constant k (a semigroup homomorphism that is not 1-to-1). If interval i labels an arrow in G, then ki labels the corresponding arrow in G'. This satisfies Definition 9.5.2 because SGMAP preserves the group operation: SGMAP(i + j) = k(i + j) = ki + kj = SGMAP(i) + SGMAP(j) (Lewin, Section 9.5.3, pp. 235-236).
 
-This is a graph homomorphism because SGMAP preserves the semigroup operation: SGMAP(i + j) = k(i + j) = ki + kj = SGMAP(i) + SGMAP(j).
+# Prerequisites
+- **Graph homomorphism** — this is a specific type
 
-# Mathematical Formulation
-For pitch-class intervals (mod 12):
-- SGMAP(i) = 2i maps intervals to their doubles
-- Example: 10 -> 20 = 8 (mod 12)
-- SGMAP is a homomorphism but not isomorphism (not 1-to-1: SGMAP(0) = SGMAP(6) = 0)
+# Key Properties
+1. NODEMAP is an isomorphism (same nodes, same arrows)
+2. SGMAP(i) = ki is a group homomorphism but not an isomorphism (not 1-to-1 in general)
+3. SGMAP(0) = SGMAP(6) = 0 when k = 2, mod 12 -- so it collapses elements
+4. The homomorphism is not "onto" unless the codomain is restricted to even intervals
+5. Demonstrates that NODEMAP and SGMAP can have very different properties
 
-Requirements (9.5.2):
-- (A): NODEMAP is identity (node/arrow system isomorphism)
-- (B): SGMAP is semigroup homomorphism (i -> 2i)
-- (C): Compatibility: If arrow has label i in G, it has label 2i in G'
+# Construction / Recognition
+## To Construct:
+1. Take a transformation graph G
+2. Keep the same node/arrow system
+3. Multiply all TRANSIT labels by k to get G'
+4. SGMAP(i) = ki; NODEMAP = identity
+## To Recognize:
+1. Same node/arrow system in both graphs
+2. All interval labels in the second graph are k times those in the first
 
-# Musical Context/Application
-Intervallic augmentation captures the relationship between gestures at different intervallic scales. In the Brahms Horn Trio analysis, the "complementary gesture times 2" (Figure 9.6b) is the homomorphic image of the complementary gesture (Figure 9.6a), with all intervals doubled.
+# Context & Application
+In the Brahms Horn Trio analysis (Section 7.3), the "complementary gesture" has intervals 10, 10, 8 and the "complementary gesture times 2" has intervals 8, 8, 4 (all mod 12). This doubling is formalized as a graph homomorphism. The formalization shows it is a proper homomorphism (not an isomorphism), capturing the precise nature of the intervallic relationship.
 
 # Examples
-From Section 9.5.3 (Brahms Horn Trio):
-- Graph (a): complementary gesture with intervals 10, 10, 8
-- Graph (b): complementary gesture times 2 with intervals 8, 8, 4
-- NODEMAP = identity (same three nodes)
-- SGMAP(10) = 20 = 8 (mod 12)
-- SGMAP(8) = 16 = 4 (mod 12)
+**Example 1** (Section 9.5.3, Figure 9.6, pp. 235-236): Brahms Horn Trio.
+- Graph (a): intervals 10, 10, 8
+- Graph (b): intervals 8, 8, 4
+- SGMAP(10) = 20 = 8 (mod 12); SGMAP(8) = 16 = 4 (mod 12)
+- Making it "onto" requires redefining SGPb as the group of even intervals
 
-The musical context:
-- Rhythmic augmentation (values times 2) accompanies intervallic augmentation
-- The horn solo (mm. 145-49) realizes the augmented gesture
-- The relationship is formal (homomorphism), not just loose analogy
+# Relationships
+## Builds Upon
+- **Graph homomorphism** — this is a specific application
+## Related
+- **Brahms Horn Trio analysis** — the musical context
 
-# Related Concepts
-- Graph Homomorphism
-- SGMAP
-- Complementary Gesture
-- Brahms Horn Trio Analysis
-- Rhythmic Augmentation
+# Common Errors
+- **Error**: Assuming the augmentation creates an isomorphism
+  **Correction**: SGMAP(i) = 2i is not 1-to-1 (e.g., SGMAP(0) = SGMAP(6) = 0), so it is a proper homomorphism
 
 # Common Confusions
-- SGMAP is a homomorphism but not an isomorphism (not 1-to-1)
-- The augmentation factor (2) is fixed for the entire homomorphism
-- "Times 2" applies to intervals, not to durations (though both may be augmented)
-- The homomorphism is not "onto" unless we redefine the codomain
+- **Confusion**: Confusing intervallic augmentation with rhythmic augmentation
+  **Clarification**: "Times 2" applies to intervals here, not durations (though both may be augmented in the music)
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.5.3, Figure 9.6
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.5.3, pp. 235-236. See Figure 9.6.
+
+# Verification Notes
+- Definition source: direct from Section 9.5.3
+- Confidence rationale: high -- explicitly worked example
+- Re-extracted from v2 card; preserved: Brahms interval computations, non-isomorphism proof, "onto" redefinition

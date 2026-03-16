@@ -1,61 +1,95 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Serial Transformations Generalization
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: serial-transformations-generalization
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: serial-operations
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (2): Non-Intervallic Transformations"
 chapter_number: 8
 pdf_page: 206
-unit: null
-authors: David Lewin
+section: "8.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - rich-transformation
+  - non-commutative-gis
+extends:
+  - rich-transformation
+related:
+  - tch-transformation
+  - much-transformation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do serial transformations generalize to abstract GIS settings?"
+  - "What complications arise in non-commutative GIS?"
 ---
 
 # Quick Definition
-The extension of serial transformations (RICH, TCH, MUCH, TLAST, TFIRST, FLIPEND, FLIPSTART) to series whose elements are members of an abstract commutative GIS, with complications arising in non-commutative cases.
+The extension of serial transformations (RICH, TCH, MUCH, TLAST, TFIRST, FLIPEND, FLIPSTART) to series in abstract commutative GIS contexts, with complications in non-commutative cases where multiple plausible definitions exist for operations like RICH.
 
-# Formal Definition
-Serial transformations can be generalized to abstract GIS settings:
-- For commutative GIS: All definitions extend naturally
-- For non-commutative GIS: Multiple plausible definitions may exist
+# Core Definition
+"The serial transformations just studied... are all easily generalized to operate on series whose elements are members of an abstract commutative GIS. In the non-commutative case, it is not clear just how some of the operations are to be defined; different possibilities are equally plausible" (Lewin, 8.4, p. 189). For RICH in a non-commutative GIS, three candidates t, u, v may all differ: t and u are retrogrades of different inversions, while v preserves the reversed serial intervals. "If the GIS is commutative, t, u, and v will all be the same series. If the GIS is not commutative, t, u, and v may be three distinct series" (p. 190).
 
-The problem with RICH in non-commutative GIS:
-- Given series s with elements in a non-commutative GIS
-- Three candidates for "RICH(s)": t, u, and v
-- All three have the same first two elements (a, b) but may differ thereafter
+# Prerequisites
+- **RICH transformation** — The primary operation being generalized
+- **Non-commutative GIS** — The context where complications arise
 
-# Mathematical Formulation
-For abstract series s = s_1, s_2, ..., a, b in a non-commutative GIS:
+# Key Properties
+1. All serial transformations generalize straightforwardly to commutative GIS
+2. Non-commutative GIS creates ambiguity: three candidates for RICH(s)
+3. Candidate t: retrograde of (a/b)-inversion of s
+4. Candidate u: retrograde of (b/a)-inversion of s
+5. Candidate v: series starting with a, using reversed serial intervals
+6. All three share the same first two elements (a, b)
+7. In commutative GIS: t = u = v
 
-Candidate t: retrograde of I(s) where I = (a/b)-inversion I^a
-Candidate u: retrograde of J(s) where J = (b/a)-inversion I^b = (I^a)^(-1)
-Candidate v: starts with a, proceeds by intervals i_{n-1}, i_{n-2}, ..., i_2, i_1 (reversed order)
+# Construction / Recognition
+## To Construct:
+1. In commutative GIS: apply standard definitions directly
+2. In non-commutative GIS: choose among t, u, v based on analytical context
+## To Recognize:
+1. Ambiguity in RICH definition signals a non-commutative GIS context
 
-Where i_k = int(s_k, s_{k+1}) are the serial intervals of s.
-
-In commutative GIS: t = u = v
-In non-commutative GIS: t, u, v may be three distinct series
-
-# Musical Context/Application
-This generalization shows that serial transformations are not merely computational procedures but depend on the underlying intervallic structure. The non-commutative case reveals that even "standard" serial operations require interpretive choices about inversion and interval ordering.
+# Context & Application
+This generalization shows that serial transformations depend on the underlying intervallic structure. The non-commutative case reveals interpretive choices even for "standard" operations.
 
 # Examples
-The three candidates for RICH(s):
-- All begin with elements a and b (last two of s, in order)
-- All are retrograde-inverted forms of s
-- In commutative GIS (standard pitch classes), they collapse to one series
-- In non-commutative GIS (e.g., time spans with non-commutative intervals), they may differ
+**Example 1** (p. 189): For s = s_1, s_2, ..., a, b with serial intervals i_1, ..., i_{n-1}: candidate v starts with a and proceeds by intervals i_{n-1}, i_{n-2}, ..., i_1 (reversed order).
 
-# Related Concepts
-- RICH Transformation
-- TCH Transformation
-- MUCH Transformation
-- Non-Commutative GIS
-- Abstract GIS
+# Relationships
+## Builds Upon
+- **RICH transformation** — The primary operation generalized
+## Related
+- **Non-commutative GIS** — The context where complications arise
+
+# Common Errors
+- **Error**: Assuming RICH is unambiguous in all GIS contexts
+  **Correction**: In non-commutative GIS, three plausible candidates may differ
 
 # Common Confusions
-- "Generalization" here means extension to abstract GIS, not looser definitions
-- The complication only arises for non-commutative GIS
-- Standard pitch-class applications are unaffected (Z_12 is commutative)
-- The three candidates differ only in non-commutative cases
+- **Confusion**: Thinking this affects standard pitch-class applications
+  **Clarification**: Z_12 is commutative, so all candidates collapse to one; only non-commutative GIS (e.g., time-span GIS) creates ambiguity
 
 # Source Reference
-Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.4
+Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.4, pages 189-190.
+
+# Verification Notes
+- Definition source: Direct from 8.4
+- Confidence rationale: Explicitly discussed
+- Re-extraction notes: Re-extracted from v2 card; preserved: three candidates, commutative collapse

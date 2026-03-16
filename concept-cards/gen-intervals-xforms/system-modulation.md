@@ -1,72 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: System Modulation
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: system-modulation
+
+# === CLASSIFICATION ===
+category: generalized-set-theory
+subcategory: injection-function
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: "6.7.2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - transformational modulation
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-transformation-theorem
+  - inj-function
+extends:
+  - inj-transformation-theorem
+related:
+  - angst-hoffen-analysis
+  - progressive-transformation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is system modulation in the context of INJ?"
 ---
 
 # Quick Definition
-System modulation occurs when an entire musical context is transformed by an operation A, changing sets X and Y to A(X) and A(Y), with transformations conjugating accordingly.
+System modulation occurs when an entire musical context transforms by an operation A, changing sets X, Y to A(X), A(Y) and transformations f to f' = AfA^{-1}. The conjugate f' plays the same structural role in the modulated system that f played in the original.
 
-# Formal Definition
-When we "modulate the system by operation A":
-- Set X becomes A(X)
-- Set Y becomes A(Y)
-- Transformation f becomes f' = AfA^-1
+# Core Definition
+Following Theorem 6.7.2(C) (Lewin, pp. 180-181): "We can imagine that the shift from X-and-Y to A(X)-and-A(Y) reflects a 'modulation' of the system by the operation A." The key insight: "INJ(modulated X, modulated Y)(f') = INJ(X, Y)(f)" where f' = AfA^{-1}. Lewin notes "the INJ function is itself 'modulated' according to the formula."
 
-The conjugate transformation f' plays the same structural role in the modulated system that f played in the original. This is captured by Formula 6.7.2(C):
-INJ(A(X), A(Y))(f) = INJ(X, Y)(A^-1 f A)
+# Prerequisites
+- **INJ Transformation Theorem** — Provides the conjugation formula
+- **INJ Function** — The function whose behavior under modulation is described
 
-# Mathematical Formulation
-Modulation map: (X, Y, f) -> (A(X), A(Y), AfA^-1)
+# Key Properties
+1. Modulation map: (X, Y, f) -> (A(X), A(Y), AfA^{-1})
+2. INJ(A(X), A(Y))(AfA^{-1}) = INJ(X, Y)(f) — structural preservation
+3. In commutative GIS: T_i remains T_i under transposition (transpositions commute)
+4. Inversions shift: I_u becomes T_n I_u T_n^{-1} = I_{n+u}
+5. Wedges shift: w^u becomes T_n w^u T_n^{-1} = w^{T_n(u)}
 
-Key insight: The relationship
-INJ(modulated X, modulated Y)(f') = INJ(X, Y)(f)
+# Construction / Recognition
+## To Apply:
+1. Identify the modulation operation A (typically a transposition)
+2. Transform all sets by A
+3. Conjugate all transformations: f -> AfA^{-1}
+4. The new system has the same INJ structure as the old
 
-holds when f' = AfA^-1.
+## To Recognize:
+1. When the same types of relationships appear at a different pitch level or in a different context
 
-For transposition A = T_n in a commutative GIS:
-- T_i becomes T_n T_i T_n^-1 = T_i (transpositions commute)
-- I_u becomes T_n I_u T_n^-1 = I_{n+u} (inversion center shifts by n)
-- Wedge w^u becomes T_n w^u T_n^-1 = w^{T_n(u)} (focal point shifts)
-
-# Musical Context/Application
-System modulation models how an entire harmonic context can transpose while maintaining internal relationships. When music moves from one key to another, the relationships between transformations and sets are preserved up to conjugation.
-
-This formalizes intuitions like "the dominant in the new key plays the same role the dominant played in the old key."
+# Context & Application
+System modulation formalizes how harmonic structures transpose while maintaining internal relationships. The bass motion E -> F# in "Angst und Hoffen" corresponds to a T_2 modulation of the entire wedge/inversion system. This extends to hexachord modulations: when T_n(X) replaces X, the inversion that maps X to its complement is replaced by its conjugate.
 
 # Examples
-From "Angst und Hoffen" (Figure 6.3):
+**Example 1** (pp. 128-129, 180-181): In "Angst und Hoffen," E-centered system modulates to F#-centered by T_2. w^E -> w^{F#} = T_2 w^E T_2^{-1}; I -> J = T_2 I T_2^{-1}. The T_2 relation between bass notes Gb and E expands into a full system modulation.
 
-Original system (E-centered):
-- Focal point: E
-- Wedge: w^E
-- Inversion: I = I_E^Bb
+**Example 2** (p. 181): Hexachord X inverts to complement via I = I_0^E. After T_3 modulation, T_3(X) inverts to complement via J = T_3 I T_3^{-1} = I_3^{Ab}.
 
-Modulated system (F#-centered, modulation by T_2):
-- Focal point: F# = T_2(E)
-- Wedge: w^F# = T_2 w^E T_2^-1
-- Inversion: J = I_F#^C = T_2 I T_2^-1
+# Relationships
+## Builds Upon
+- **INJ Transformation Theorem** — Provides the formal basis
 
-The bass motion E -> F# (T_2) corresponds to the modulation from E-centered structure to F#-centered structure. Chords and transformations all shift together.
+## Enables
+- **Angst und Hoffen Analysis** — E-to-F# modulation is central
 
-Hexachord example:
-- X inverts to complement via I = I_0^E
-- Modulate by T_3: X' = T_3(X)
-- X' inverts to complement via J = T_3 I T_3^-1 = I_3^Ab
-
-# Related Concepts
-- INJ Transformation Theorem
-- Conjugation
-- Transposition Operations
-- Key Relationships
+# Common Errors
+- **Error**: Assuming the same transformation f works in the modulated system
+  **Correction**: The transformation must be conjugated to AfA^{-1}
 
 # Common Confusions
-System modulation is not just transposition of notes - it's the coordinated transformation of sets and operations that preserves structural relationships. A single transposition T_n of pitches induces conjugation T_n ... T_n^-1 on transformations.
+- **Confusion**: Thinking system modulation is just transposition
+  **Clarification**: It is transposition of sets plus conjugation of transformations — a coordinated change of the entire system
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, discussion following Theorem 6.7.2
+Chapter 6: Generalized Set Theory (2), discussion following Theorem 6.7.2, pp. 180-182.
+
+# Verification Notes
+- Definition source: Synthesized from discussion of Theorem 6.7.2
+- Confidence rationale: Detailed discussion with multiple examples
+- Re-extraction notes: Re-extracted from v2 card; preserved: Angst/Hoffen modulation, hexachord example. Added v3.1 structure.

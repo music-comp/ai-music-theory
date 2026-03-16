@@ -1,60 +1,102 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Graph Isomorphism
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: graph-isomorphism
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: graph-network-mappings
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (3): Formalities"
 chapter_number: 9
 pdf_page: 224
-unit: null
-authors: David Lewin
+section: "9.4.2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "(NODEMAP, SGMAP) isomorphism"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - node-arrow-system-isomorphism
+  - isomorphism
+extends:
+  - node-arrow-system-isomorphism
+related:
+  - isography
+  - graph-homomorphism
+contrasts_with:
+  - graph-homomorphism
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "When are two transformation graphs isomorphic?"
+  - "What is the formal basis for isography?"
 ---
 
 # Quick Definition
-Two transformation graphs are isomorphic if there exists a pair of bijections (NODEMAP, SGMAP) that preserve all structure: node/arrow relationships and transformation labels.
+Two transformation graphs are isomorphic if there exists a pair (NODEMAP, SGMAP) where NODEMAP is a node/arrow isomorphism and SGMAP is a semigroup isomorphism, and the TRANSIT functions correspond under both maps.
 
-# Formal Definition
-Graphs (NODES, ARROW, SGP, TRANSIT) and (NODES', ARROW', SGP', TRANSIT') are isomorphic if there exists (NODEMAP, SGMAP) with:
-- (A): NODEMAP is an isomorphism of node/arrow systems
-- (B): SGMAP is an isomorphism of semigroups SGP -> SGP'
-- (C): For all (N_1, N_2) in ARROW: TRANSIT'(NODEMAP(N_1), NODEMAP(N_2)) = SGMAP(TRANSIT(N_1, N_2))
+# Core Definition
+Given two transformation graphs (NODES, ARROW, SGP, TRANSIT) and (NODES', ARROW', SGP', TRANSIT'), they are isomorphic if there exists a pair (NODEMAP, SGMAP) with: (A) NODEMAP is an isomorphism of (NODES, ARROW) with (NODES', ARROW'); (B) SGMAP is an isomorphism of SGP with SGP'; (C) for every pair (N1, N2) in ARROW, TRANSIT'(NODEMAP(N1), NODEMAP(N2)) = SGMAP(TRANSIT(N1, N2)). The pair (NODEMAP, SGMAP) is called an isomorphism of the first graph with the second (Lewin, Definition 9.4.2, pp. 231-232).
 
-The pair (NODEMAP, SGMAP) is called an isomorphism of the first graph with the second.
+# Prerequisites
+- **Node/arrow system isomorphism** — NODEMAP must be such an isomorphism
+- **Isomorphism** (of semigroups) — SGMAP must preserve semigroup structure
 
-# Mathematical Formulation
-NODEMAP requirements:
-- Bijection: NODES -> NODES'
-- Preserves arrows: (N_1, N_2) in ARROW iff (NODEMAP(N_1), NODEMAP(N_2)) in ARROW'
+# Key Properties
+1. Requires both NODEMAP (bijection on nodes) and SGMAP (bijection on semigroups)
+2. Criterion (C) ensures TRANSIT labels correspond under the two maps
+3. Graph isomorphism is the foundation for defining isography of networks
+4. A 1-to-1 homomorphism onto is precisely an isomorphism (by definition)
 
-SGMAP requirements:
-- Bijection: SGP -> SGP'
-- Preserves semigroup operation: SGMAP(fg) = SGMAP(f)SGMAP(g)
+# Construction / Recognition
+## To Construct:
+1. Find a bijection NODEMAP between node sets preserving arrows both ways
+2. Find a semigroup isomorphism SGMAP between SGP and SGP'
+3. Verify that TRANSIT labels correspond: TRANSIT'(NODEMAP(N1), NODEMAP(N2)) = SGMAP(TRANSIT(N1, N2))
+## To Recognize:
+1. Check for bijections between nodes and between semigroups
+2. Verify the TRANSIT compatibility criterion (C)
 
-Compatibility (C):
-- Arrow labels correspond under SGMAP after nodes are mapped by NODEMAP
-
-# Musical Context/Application
-Graph isomorphism captures structural equivalence between transformation graphs. Two graphs may use different semigroups and different node sets but have identical structure. This is the foundation for isography of networks - the key concept for comparing analytical claims across different musical domains.
+# Context & Application
+Graph isomorphism captures structural equivalence. Two graphs may use different semigroups acting on different families of objects but share identical transformational structure. This is the foundation for isography: two networks are isographic precisely when their graphs are isomorphic.
 
 # Examples
-From Section 9.4.4:
-- Graph (a) has SGP = {E, I} where I = I^A_A (pitch-class operations)
-- Graph (c) has SGP' = {E, I} where I = inversion of rows about A
-- SGMAP: pitch-class-E -> row-E, pitch-class-I -> row-I
-- NODEMAP: identity on NODES
-- The graphs are isomorphic (same structure, different object domains)
+**Example 1** (Section 9.4.4, p. 231): Graphs (a) and (c) on Figure 9.5. Graph (a) has SGP = {E, I} as pitch-class operations; graph (c) has SGP' = {E, I} as row operations. SGMAP maps pitch-class-E to row-E and pitch-class-I to row-I. NODEMAP is the identity on NODES. The graphs are isomorphic.
 
-# Related Concepts
-- Isography
-- Node/Arrow System Isomorphism
-- Semigroup Isomorphism
-- Transformation Graph Definition
-- Graph Homomorphism
+**Example 2** (Section 9.4.4, p. 232): Graphs (a) and (d) where SGP = {E, I_A} and SGP' = {E, J = I_Bb}. SGMAP(E) = E, SGMAP(I) = J. The graphs are isomorphic despite using different inversion operations.
+
+# Relationships
+## Builds Upon
+- **Node/arrow system isomorphism** — provides the NODEMAP component
+## Enables
+- **Isography** — two networks are isographic iff their graphs are isomorphic
+## Related
+- **Graph homomorphism** — generalization allowing non-bijective maps
+## Contrasts With
+- **Graph homomorphism** — homomorphisms need not be bijective
+
+# Common Errors
+- **Error**: Checking only NODEMAP without verifying SGMAP
+  **Correction**: Both components must be isomorphisms, and criterion (C) must hold
 
 # Common Confusions
-- Isomorphism requires both NODEMAP and SGMAP to be bijections
-- The semigroups may be "different" (acting on different sets) but must be isomorphic as abstract semigroups
-- Graph isomorphism ignores CONTENTS (that's what networks add)
-- Isomorphic graphs can underlie isographic networks with very different musical content
+- **Confusion**: Thinking isomorphic graphs must use the "same" semigroup
+  **Clarification**: The semigroups may act on entirely different objects; they need only be isomorphic as abstract semigroups
 
 # Source Reference
-Chapter 9: Transformation Graphs and Networks (3): Formalities, Section 9.4.2, Definition
+Chapter 9: Transformation Graphs and Networks (3): Formalities, Definition 9.4.2, pp. 231-232. See Example 9.4.4 and Figure 9.5.
+
+# Verification Notes
+- Definition source: direct from Definition 9.4.2
+- Confidence rationale: explicit three-part formal definition
+- Re-extracted from v2 card; preserved: Figure 9.5 examples, semigroup isomorphism clarification

@@ -1,86 +1,108 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Anti-Isomorphism
-category: theory
-source: Generalized Musical Intervals and Transformations
+slug: anti-isomorphism
+
+# === CLASSIFICATION ===
+category: generalized-interval-systems
+subcategory: group-structure
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Interval Systems (2): Formal Features"
 chapter_number: 3
-pdf_page: 62
-unit: null
-authors: David Lewin
+pdf_page: 77
+section: "3.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "anti-homomorphism"
+  - "order-reversing isomorphism"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - group-of-transpositions
+  - transposition-operation
+extends: []
+related:
+  - group-of-interval-preserving-operations
+  - left-vs-right-group-operations
+contrasts_with:
+  - group-of-interval-preserving-operations
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Why does composing two transpositions reverse the order of intervals?"
+  - "What is the algebraic relationship between IVLS and TNSPS?"
+  - "How does anti-isomorphism differ from isomorphism?"
 ---
 
 # Quick Definition
-An anti-isomorphism is a bijective map between groups that reverses the order of multiplication: f(ab) = f(b)f(a). The transposition operations form a group anti-isomorphic to IVLS, explaining why transposition composition "reverses" interval order.
+An anti-isomorphism is a bijective map between groups that reverses the order of multiplication: f(ab) = f(b)f(a). The map from intervals to transpositions, f(i) = T_i, is an anti-isomorphism from IVLS onto TNSPS.
 
-# Formal Definition
-A function f: G -> H between groups is an anti-isomorphism if:
-1. f is bijective (1-to-1 and onto)
-2. f(ab) = f(b)f(a) for all a, b in G
+# Core Definition
+A function f: G -> H between groups is an **anti-isomorphism** if (1) f is bijective (one-to-one and onto), and (2) f(ab) = f(b)f(a) for all a, b in G. Theorem 3.4.2 establishes that the map f(i) = T_i from IVLS to the group of transpositions TNSPS is an anti-isomorphism, yielding the composition formula T_i T_j = T_{ji} (not T_{ij}).
 
-Note: condition (2) says f reverses the multiplication order.
+# Prerequisites
+- **Transposition operation (T_i)** — The operations whose group structure is characterized by the anti-isomorphism
+- **Group of transpositions (TNSPS)** — The codomain of the anti-isomorphism
 
-Contrast with isomorphism: f(ab) = f(a)f(b) (preserves order).
+# Key Properties
+1. The composition formula T_i T_j = T_{ji} reverses the subscript order
+2. In commutative groups, anti-isomorphism coincides with isomorphism since ab = ba
+3. The anti-isomorphism contrasts with the isomorphism f(i) = P_i from IVLS to PSVS, where P_i P_j = P_{ij}
+4. The reversal arises because int(s, T_i(T_j(s))) = j * i = ji
 
-# Mathematical Formulation
-**Theorem 3.4.2:** The map f: IVLS -> TNSPS defined by f(i) = T_i is an anti-isomorphism.
+# Construction / Recognition
+## To Construct:
+1. Define the map f: IVLS -> TNSPS by f(i) = T_i
+2. Verify bijectivity: T_i = T_j implies i = j, and every transposition is some T_i
+3. Verify the reversal property: f(ij) = T_{ij}, but f(i)f(j) = T_i T_j = T_{ji}
+## To Recognize:
+1. A group homomorphism that reverses multiplication order
+2. The composition of transpositions yields a subscript product in reversed order
 
-**Key formula:**
-T_i T_j = T_{ji}    (not T_{ij})
-
-**Proof idea:**
-int(s, T_i(T_j(s))) = int(s, T_j(s)) * int(T_j(s), T_i(T_j(s)))
-                    = j * i
-                    = ji
-
-So T_j(s) then T_i equals T_{ji}(s).
-
-**Consequence:**
-- f(ij) = T_{ij}
-- f(i)f(j) = T_i T_j = T_{ji}
-- Thus f(ij) =/= f(i)f(j) unless ij = ji
-
-# Musical Context/Application
-The anti-isomorphism explains why we must be careful with transposition composition:
-- "Transpose by i then transpose by j" is NOT "transpose by ij"
-- It IS "transpose by ji"
-
-In commutative groups (like pitch-class intervals), ij = ji, so this subtlety disappears. In non-commutative groups, it matters.
+# Context & Application
+The anti-isomorphism explains why care is needed when composing transpositions: "transpose by i then transpose by j" yields T_{ji}, not T_{ij}. In commutative groups (like pitch-class intervals mod 12), the distinction vanishes since ij = ji. In non-commutative groups (like the time-span interval group), the reversal is musically and computationally significant.
 
 # Examples
-**Commutative case (pitch classes):**
-T_5 T_3 = T_{3+5} = T_8 = T_{5+3}
-Order doesn't matter since 3 + 5 = 5 + 3 mod 12.
+**Example 1** (p. 78): In the commutative pitch-class GIS, T_5 T_3 = T_{3+5} = T_8 = T_{5+3}, so the reversal is invisible.
 
-**Non-commutative case (time spans):**
-T_{(1,2)} T_{(3,4)} = T_{(3,4)(1,2)}
-                    = T_{(3 + 4*1, 4*2)}
-                    = T_{(7, 8)}
+**Example 2**: In the non-commutative time-span GIS, the reversal matters: T_{(i,p)} T_{(j,q)} = T_{(j,q)(i,p)} = T_{(j+qi, qp)}, which generally differs from T_{(i,p)(j,q)} = T_{(i+pj, pq)}.
 
-T_{(3,4)} T_{(1,2)} = T_{(1,2)(3,4)}
-                    = T_{(1 + 2*3, 2*4)}
-                    = T_{(7, 8)}
+**Contrast with P operations**: P_i P_j = P_{ij} (isomorphism, preserves order) vs. T_i T_j = T_{ji} (anti-isomorphism, reverses order).
 
-(These happen to be equal, but try other pairs.)
+# Relationships
+## Builds Upon
+- **Transposition operation** — The individual maps whose group structure is described
+## Enables
+- **Group of transpositions** — The anti-isomorphism establishes TNSPS as a group
+- **PETEY group** — Understanding how T and P interact requires knowing their distinct relationships to IVLS
+## Related
+- **Group of interval-preserving operations** — PSVS is isomorphic (not anti-isomorphic) to IVLS
+## Contrasts With
+- **Group of interval-preserving operations** — Isomorphism (P_i P_j = P_{ij}) vs. anti-isomorphism (T_i T_j = T_{ji})
 
-**Contrast P operations:**
-P_i P_j = P_{ij}    (isomorphism, preserves order)
-T_i T_j = T_{ji}    (anti-isomorphism, reverses order)
-
-# Related Concepts
-- Group Isomorphism
-- Transposition Operation (Ti)
-- Group of Transpositions (TNSPS)
-- Interval-Preserving Operations (isomorphism)
-- Non-Commutative Groups
+# Common Errors
+- **Error**: Assuming T_i T_j = T_{ij}
+  **Correction**: The correct formula is T_i T_j = T_{ji}; the subscript product is reversed
 
 # Common Confusions
-1. **Anti- doesn't mean "opposite":** Anti-isomorphism is still a bijection preserving algebraic structure. It just reverses multiplication order.
-
-2. **In commutative groups:** Anti-isomorphism = isomorphism (since ab = ba, reversing order doesn't change anything).
-
-3. **Reading order:** "T_i then T_j" means apply T_j first, then T_i. The result is T_{ji}, with j appearing first in the subscript product.
-
-4. **This is why we care:** The anti-isomorphism between IVLS and TNSPS is NOT a defect. It's the correct algebraic relationship.
+- **Confusion**: "Anti-" means the map is somehow defective or opposite
+  **Clarification**: Anti-isomorphism is a perfectly valid structural correspondence; it simply reverses multiplication order
+- **Confusion**: In commutative settings, anti-isomorphism and isomorphism seem identical, leading students to miss the distinction
+  **Clarification**: The distinction becomes critical in non-commutative GIS structures like the time-span GIS
 
 # Source Reference
-Chapter 3: Generalized Interval Systems (2): Formal Features, Theorem 3.4.2, pp. 77-79
+Chapter 3: Generalized Interval Systems (2): Formal Features, Theorem 3.4.2, pages 77-79.
+
+# Verification Notes
+- Definition source: Direct from Theorem 3.4.2
+- Confidence rationale: High -- theorem and proof are explicitly stated
+- Re-extraction notes: Re-extracted from v2 card; preserved: contrast with P operations, time-span examples, compositional reading order discussion

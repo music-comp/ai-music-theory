@@ -1,74 +1,102 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Semi-Simple Variations INJ Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: semi-simple-variations-analysis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: serial-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Generalized Set Theory (2): The Injection Function"
 chapter_number: 6
 pdf_page: 154
-unit: null
-authors: David Lewin
+section: "6.2.4"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - inj-function
+  - protocol-pairs
+  - partial-ordering
+extends: []
+related:
+  - signature-motive
+  - if-only-adjustment
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does INJ on PROT reveal structural differences in a homogeneous-sounding piece?"
 ---
 
 # Quick Definition
-Lewin's analysis of Babbitt's Semi-Simple Variations uses INJ on the protocol-pair space PROT to measure how SATB aggregates relate to row forms and to each other across variations.
+Lewin's analysis of Babbitt's Semi-Simple Variations uses INJ on protocol-pair space PROT to measure how SATB aggregates relate to row forms, revealing that Variation 3 is maximally compatible with the row and that Variations 4 and 2 share a unique "pivot aggregate" relationship.
 
-# Formal Definition
-Key structures:
-- L2 = row of the piece (soprano voice, first 12 notes)
-- X2 = SATB aggregate from opening of Variation 3, as subset of PROT
-- V_n = generic SATB aggregates from variation n
+# Core Definition
+The analysis (Lewin, pp. 169-172, Figures 6.7-6.9) uses L_2 = the row and X_2 = SATB aggregate from Variation 3 (12 pairs in PROT). INJ(L_2, X_2)(f) = 11 for f = T_1, RT_1, J, RT_7J (near maximum of 12). Other variations' aggregates achieve at most 10. Cross-variation INJ(V_m, V_n)(T_0) is typically <= 2, except INJ(V_4, V_2)(T_0) = 5 (unique maximum), revealing a "pivot aggregate" shared between Variations 4 and 2.
 
-INJ(L2, X2)(f) measures how well X2's ordering "fits" within row form f(L2).
+# Prerequisites
+- **INJ Function** — Primary analytical tool
+- **Protocol Pairs** — Space in which the analysis operates
+- **Partial Ordering** — Aggregates are partial orderings in PROT
 
-# Mathematical Formulation
-X2 contains 12 protocol pairs (3 per voice, no cross-voice orderings):
-- Soprano: {(B, D), (B, Eb), (D, Eb)}
-- Alto: {(G, Bb), (G, F), (Bb, F)}
-- Tenor: {(E, C#), (E, F#), (C#, F#)}
-- Bass: {(C, A), (C, Ab), (A, Ab)}
+# Key Properties
+1. Variation 3 aggregates are maximally compatible with row forms (11/12)
+2. Other variations' aggregates fit at most 10/12
+3. Cross-variation "ordering cross-talk" is low (INJ <= 2) with two exceptions
+4. INJ(V_4, V_2)(T_0) = 5 reveals unique connection via "pivot aggregate"
+5. The pivot aggregate {D#-B-E, Ab-C-G, C#-F#-D, Bb-F-A} controls specific voices
 
-Key findings:
-- INJ(L2, X2)(T1) = 11 (maximum achievable is 12)
-- INJ(L2, X2)(RT1) = 11
-- INJ(L2, X2)(J) = 11, where J = I_0^Bb
-- No operation achieves 12
+# Construction / Recognition
+## To Apply This Method:
+1. Model SATB aggregates as partial orderings in PROT
+2. Compute INJ(L, X)(f) for row forms f of interest
+3. Compare INJ values across variations to find structural distinctions
+4. Look for unique cross-variation connections via high INJ(V_m, V_n)(T_0)
 
-Variation 3 aggregates are "maximally compatible" with L2 forms compared to other variations.
+## To Recognize:
+1. INJ-based structural differentiation in an otherwise homogeneous-sounding piece
 
-# Musical Context/Application
-The analysis reveals:
-1. Variation 3 has special relationship to the row (11/12 fit)
-2. Other variations have aggregates fitting at most 10/12
-3. Cross-variation "ordering cross-talk" is low (INJ <= 2 between variations)
-4. Exception: Variations 4 and 5 "talk with" Variation 2 at level 4-5
-
-This structural differentiation helps analyze a piece that sounds "extremely homogeneous."
+# Context & Application
+This analysis demonstrates INJ's power to make "very useful" structural discriminations "within a composition that sounds at first extremely homogeneous in texture throughout" (Lewin, p. 171). The if-only adjustments (11/12 instead of 12) and the pivot aggregate provide concrete structural insights.
 
 # Examples
-From Figures 6.7-6.9:
+**Example 1** (pp. 169-170, Figures 6.7-6.8): X_2 fits "11/12" in T_1(L_2) and J(L_2). In T_1(L_2), only (C#, F#) is reversed. "If only" the tenor went E-F#-C# instead of E-C#-F#, embedding would be perfect.
 
-Aggregate X2 fits 11/12 in rows T1(L2) and J(L2) (Figure 6.8):
-- In T1(L2): only (C#, F#) of X2 is reversed (row has F#, C#)
-- In J(L2): only (Bb, F) of X2 is reversed
+**Example 2** (pp. 171-172, Figure 6.9): The pivot aggregate controls tenor/bass of Variation 2 and soprano/alto of Variation 4, explaining their unique INJ = 5 connection. Variations share 3-note linear segments from the pivot aggregate.
 
-"If only" the tenor went E-F#-C# instead of E-C#-F#, embedding would be perfect.
+# Relationships
+## Builds Upon
+- **INJ Function** on **Protocol Pairs** — The analytical framework
 
-Cross-variation analysis:
-- INJ(V_m, V_n)(T_0) <= 2 for different variations (low cross-talk)
-- INJ(V_4, V_2)(T_0) = 5 (exceptional connection)
-- V_4 and V_2 share 3-note linear segments from a "pivot aggregate"
+## Enables
+- Understanding of structural differentiation in serial music
 
-Figure 6.9: The pivot aggregate {D#-B-E, Ab-C-G, C#-F#-D, Bb-F-A} controls tenor/bass of Var.2 and soprano/alto of Var.4, explaining their unique INJ connection.
+## Related
+- **If-Only Adjustment** — 11/12 embeddings invite if-only analysis
 
-# Related Concepts
-- Protocol Pairs (PROT)
-- Partial Ordering
-- INJ (Injection Function)
-- SATB Aggregate
-- Signature Motive
+# Common Errors
+- **Error**: Concluding that 11/12 means "almost the same as a row"
+  **Correction**: The specific pair that fails reveals compositional structure
 
 # Common Confusions
-High INJ values like 11/12 mean "almost embeds," not "embeds." The analysis uses "if-only" thinking to identify the specific pairs that prevent perfect embedding, revealing compositional structure in near-misses.
+- **Confusion**: Thinking INJ analysis requires hearing all 132 PROT pairs
+  **Clarification**: INJ values summarize aggregate-level relationships; the analyst need not enumerate all pairs
 
 # Source Reference
-Chapter 6: Generalized Set Theory (2): The Injection Function, Example 6.2.4 (Semi-Simple Variations portion), Figures 6.7-6.9
+Chapter 6: Generalized Set Theory (2), Example 6.2.4, Figures 6.7-6.9, pp. 167-172.
+
+# Verification Notes
+- Definition source: Synthesized from extended analytical discussion
+- Confidence rationale: Detailed analysis with figures and specific INJ values
+- Re-extraction notes: Re-extracted from v2 card; preserved: all key INJ values, pivot aggregate, if-only analysis. Added v3.1 structure.

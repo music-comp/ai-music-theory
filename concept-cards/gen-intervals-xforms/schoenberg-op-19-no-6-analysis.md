@@ -1,56 +1,95 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Schoenberg Op. 19 No. 6 Analysis
-category: analysis
-source: Generalized Musical Intervals and Transformations
+slug: schoenberg-op-19-no-6-analysis
+
+# === CLASSIFICATION ===
+category: analytical-applications
+subcategory: interval-transposition-analysis
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (1): Intervals and Transpositions"
 chapter_number: 7
 pdf_page: 188
-unit: null
-authors: David Lewin
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - intervals-as-transpositions
+  - transformational-attitude
+extends: []
+related:
+  - generalizing-power-of-transformational-theory
+  - abstract-gesture
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How can intervals within a chord and transpositions of a motif manifest the same phenomenon?"
 ---
 
 # Quick Definition
-An analytical example demonstrating how intervallic structure within a chord and transpositional scheme of a motif can be understood as manifestations of the same underlying phenomenon.
+An analytical example from Schoenberg's piano piece op. 19, no. 6, demonstrating how the intervallic structure within a chord and the transpositional scheme of a motif can be understood as manifestations of one underlying phenomenon.
 
-# Formal Definition
-Figure 7.1 displays the melodic motif of the "falling minor ninth (sixteenth)" developed throughout Schoenberg's piano piece op. 19, no. 6, showing its derivation from the intervallic structure of the opening right-hand chord "rh."
+# Core Definition
+Figure 7.1 displays the melodic motif of the "falling minor ninth (sixteenth)" developed throughout the piece from the intervallic structure of the opening right-hand chord "rh." Figure 7.1(a) shows the chord with falling pitch-intervals -5, -9, and -14 semitones; Figure 7.1(b) shows how the same intervals govern the transposition scheme of the falling-ninth motif. "The two symbols are pointing at the same phenomenon, not at different phenomena" (Lewin, p. 160).
 
-The analysis reveals:
-- Figure 7.1(a): The chord "rh" with falling pitch-intervals -5, -9, and -14 semitones
-- Figure 7.1(b): The transposition scheme of the falling-ninth motif using T_-5, T_-9, and T_-14
+# Prerequisites
+- **Intervals as transpositions** — The formal equivalence demonstrated by this analysis
+- **Transformational attitude** — The conceptual stance enabling this unified view
 
-# Mathematical Formulation
-Network structure:
-- Nodes: Pitches in chord (7.1a) or motif forms (7.1b)
-- Arrows: Labeled with intervals/transpositions -5, -9, -14
-- The same labels appear in both networks, representing "the same phenomenon"
+# Key Properties
+1. The chord "rh" contains pitch-intervals -5, -9, -14 semitones
+2. The falling-ninth motif transposes by T_{-5}, T_{-9}, T_{-14} through the piece
+3. The chord and motif forms share only one common pitch-class, ruling out pitch prolongation
+4. "Forwards in time" and "downwards in space" work together as manifestations of one phenomenon
+5. The transposition operations that move the motif forward are exactly those that move pitches of rh downward
 
-The transposition operations that move the falling-ninth motif "forwards in time" are exactly those that move pitches of rh "downwards in space."
+# Construction / Recognition
+## To Construct:
+1. Identify the intervallic content of the referential sonority (rh)
+2. Track transpositions of the principal motif through the piece
+3. Compare the interval set with the transposition set
+## To Recognize:
+1. Same interval labels appear in both the chord structure and the transposition scheme
+2. The relationship involves intervals and transpositions, not pitch prolongation
 
-# Musical Context/Application
-The analysis demonstrates that:
-1. Intervals structure the referential sonority "rh" as an Unterklang
-2. Transpositions make the falling-ninth motif move forward through the piece
-3. "Forwards in time" and "downwards in space" work together throughout the piece
-
-Importantly, the chord and the falling ninths share only one common pitch-class, emphasizing that the relationship involves intervals and transpositions, not pitch prolongation.
+# Context & Application
+This is the first analytical example in Chapter 7, demonstrating the opening theoretical claims about unifying intervals and transpositions. The analysis is supported by Cogan and Escot's analysis in Sonic Design. Lewin emphasizes that the chord and motif forms share only one pitch-class, confirming that "the phenomenon under discussion involves intervals and transpositions, not pitches or pitch-classes and their structural ornamentation" (p. 160).
 
 # Examples
-From Figure 7.1:
-- The chord rh contains the intervallic network -5, -9, -14
-- As the falling-ninth motif progresses through the piece, it transposes by exactly these intervals
-- The analysis by Cogan and Escot in Sonic Design supports this hearing
+**Example 1** (Figure 7.1, pp. 159-160): The chord rh as Unterklang structures the referential sonority; transpositions T_{-5}, T_{-9}, T_{-14} make the falling-ninth motif move forward through the piece. The symbol "-5" in both contexts is "legitimately the same."
 
-# Related Concepts
-- Intervals as Transpositions
-- Generalizing Power of Transformational Theory
-- Transformation Networks
-- Unterklang
+# Relationships
+## Builds Upon
+- **Intervals as transpositions** — The analysis exemplifies this equivalence
+## Enables
+- **Generalizing power of transformational theory** — The analysis demonstrates the generalizing capacity
+## Related
+- **Abstract gesture** — The underlying phenomenon is a kind of abstract gesture
+
+# Common Errors
+- **Error**: Interpreting the relationship as pitch-class elaboration (diminution)
+  **Correction**: If the motif appeared 5 semitones lower, one could argue pitch elaboration; but the actual relationship is intervallic/transpositional
 
 # Common Confusions
-- The relationship is intervallic/transpositional, not about pitch elaboration (diminution)
-- The chord and motifs do not share pitch-class content except for one note
-- The same symbol "-5" in both contexts points at one phenomenon, not two different ones
+- **Confusion**: Thinking the chord and motif must share pitch-class content for the relationship to hold
+  **Clarification**: They share only one pitch-class; the relationship is about intervals/transpositions, not pitch content
 
 # Source Reference
-Chapter 7: Transformation Graphs and Networks (1): Intervals and Transpositions, Figure 7.1 and surrounding discussion
+Chapter 7: Transformation Graphs and Networks (1): Intervals and Transpositions, Figure 7.1 and surrounding discussion, pages 159-160.
+
+# Verification Notes
+- Definition source: Direct from Figure 7.1 analysis
+- Confidence rationale: Explicit analytical example with clear claims
+- Re-extraction notes: Re-extracted from v2 card; preserved: core analysis, pitch-class/prolongation distinction

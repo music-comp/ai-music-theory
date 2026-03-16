@@ -1,59 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: MUCH Transformation
-category: technique
-source: Generalized Musical Intervals and Transformations
+slug: much-transformation
+
+# === CLASSIFICATION ===
+category: transformation-theory
+subcategory: serial-operations
+tier: advanced
+
+# === PROVENANCE ===
+source: "Generalized Musical Intervals and Transformations"
+source_slug: gen-intervals-xforms
+authors: David Lewin
 chapter: "Transformation Graphs and Networks (2): Non-Intervallic Transformations"
 chapter_number: 8
 pdf_page: 206
-unit: null
-authors: David Lewin
+section: "8.2.5"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - rich-transformation
+extends: []
+related:
+  - bach-two-part-invention-analysis
+  - tch-transformation
+contrasts_with:
+  - rich-transformation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the MUCH transformation?"
+  - "How does MUCH differ from RICH?"
 ---
 
 # Quick Definition
-A serial transformation that produces the retrograde-inverted form of a series with maximum overlap at the beginning - MUCH(s) is that RI form whose beginning overlaps the ending of s to the maximum possible extent.
+A serial transformation producing the retrograde-inverted form of a series with maximum overlap at the beginning: MUCH(s) is that RI form whose beginning overlaps the ending of s to the maximum possible extent.
 
-# Formal Definition
-MUCH (Maximum-overlap Unfolding CHain) operates on a series s:
-- MUCH(s) is the retrograde-inverted form of s whose beginning overlaps s's ending maximally
-- The overlap depends on the series' structure (how much of the ending can serve as the beginning of an RI form)
+# Core Definition
+"MUCH(s) is that retrograde-inverted form of s whose beginning overlaps the ending of s to the maximum possible extent" (Lewin, 8.2.5, p. 183). MUCH and RICH do not commute on the family of all series, but the combined operations OP = RICH-after-MUCH and OP' = MUCH-after-RICH have related transposition intervals: "the OP-interval-of-transposition for any given s is always the same as the OP'-interval for the retrograde-inversion of s" (p. 183).
 
-# Mathematical Formulation
-For series s:
-- MUCH(s) is an RI form of s
-- The specific RI form is determined by maximum overlap with s's end
+# Prerequisites
+- **RICH transformation** — MUCH is defined analogously to RICH but with maximum overlap
 
-Combined operations:
-- OP = RICH-after-MUCH
-- OP' = MUCH-after-RICH
-- MUCH and RICH do not commute on all series
-- But: OP-interval for s = OP'-interval for RI(s) (for any given s)
+# Key Properties
+1. MUCH(s) is an RI form of s with maximum overlap with s's ending
+2. The degree of overlap depends on the series' internal structure
+3. MUCH and RICH do not commute in general
+4. OP = RICH-after-MUCH; OP' = MUCH-after-RICH
+5. OP-interval for s = OP'-interval for RI(s)
 
-# Musical Context/Application
-MUCH, like RICH, generates structural sequences when combined appropriately. The combination of MUCH and RICH in Bach's Two-Part Invention No. 1 shows how these techniques predate their formal theorization.
+# Construction / Recognition
+## To Construct:
+1. Take series s
+2. Find all RI forms of s
+3. Determine which has the longest overlap with the end of s
+4. That RI form is MUCH(s)
+## To Recognize:
+1. Maximum overlap between end of one series and beginning of the next
+2. The second series is an RI form of the first
+
+# Context & Application
+MUCH appears in Bach's Two-Part Invention No. 1, where it combines with RICH to generate foreground sequences. This demonstrates that serial chaining techniques predate their formal theorization and appear in tonal as well as atonal contexts.
 
 # Examples
-From Bach's Two-Part Invention No. 1 (Figure 8.5):
-- Three series of pitch classes are connected by MUCH and RICH
-- TFIRST^(-1) and TLAST arrows create a network
-- The technique generates foreground sequence at 2-diatonic-steps-down
+**Example 1** (Figure 8.5, p. 183): Bach chains MUCH and RICH in the first Two-Part Invention. Three forms of the motive are connected by OP (RICH-after-MUCH) and OP' (MUCH-after-RICH), producing transposition at 2-diatonic-steps-down.
 
-Figure 8.5(b) shows the transformational graph:
-- OP = RICH-after-MUCH
-- OP' = MUCH-after-RICH
-- The specific transposition interval is 2 diatonic steps down
+# Relationships
+## Builds Upon
+- **RICH transformation** — MUCH is a companion operation to RICH
+## Enables
+- **Bach Two-Part Invention analysis** — Primary demonstration
+## Related
+- **TCH transformation** — MUCH-RICH combinations produce analogous transposition chains
+## Contrasts With
+- **RICH transformation** — RICH overlaps by exactly two elements; MUCH overlaps maximally
 
-# Related Concepts
-- RICH Transformation
-- TCH Transformation
-- Serial Transformations
-- Bach Two-Part Invention Analysis
-- RI-Chaining
+# Common Errors
+- **Error**: Assuming MUCH and RICH produce the same overlap
+  **Correction**: RICH always overlaps by exactly two elements; MUCH overlaps by the maximum possible
 
 # Common Confusions
-- MUCH differs from RICH in how the overlap is determined
-- "Maximum overlap" depends on the specific series structure
-- MUCH and RICH do not commute, but their combined transposition intervals relate systematically
-- The technique appears in tonal music (Bach) as well as atonal (Webern, Wagner)
+- **Confusion**: Thinking MUCH only applies to atonal music
+  **Clarification**: Bach's Invention demonstrates MUCH in a tonal, diatonic context
 
 # Source Reference
-Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.2.5
+Chapter 8: Transformation Graphs and Networks (2): Non-Intervallic Transformations, Section 8.2.5, Figure 8.5, page 183.
+
+# Verification Notes
+- Definition source: Direct quotation from 8.2.5
+- Confidence rationale: Explicitly defined with Bach example
+- Re-extraction notes: Re-extracted from v2 card; preserved: OP/OP' relationship, Bach example, diatonic context
