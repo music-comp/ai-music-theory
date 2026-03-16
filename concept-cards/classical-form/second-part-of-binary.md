@@ -1,21 +1,33 @@
 ---
 concept: Second Part of Binary
-category: form
+slug: second-part-of-binary
+category: formal-functions
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Small Binary"
 chapter_number: 7
 pdf_page: 98
-unit: null
-authors: "William E. Caplin"
+section: "Second Part"
+extraction_confidence: high
+aliases: []
+prerequisites: ["small-binary"]
+extends: []
+related: ["first-part-of-binary", "contrasting-middle-in-binary", "binary-without-contrasting-middle"]
+contrasts_with: ["recapitulation-in-small-ternary"]
+answers_questions:
+  - "How is the second part of a small binary constructed?"
+  - "What functions can appear in the second part?"
 ---
 
 # Quick Definition
 The concluding eight-measure section of a small binary, which always ends with a PAC in the home key and may or may not contain a contrasting middle, but crucially lacks a genuine recapitulation of the opening basic idea.
 
-# Formal Definition
+# Core Definition
 The second part of a small binary begins, in the majority of cases, with a four-measure unit identical in organization to a contrasting middle (B section) of the small ternary. The material that follows the B section can express various functions -- continuation, cadential, or consequent -- but never a recapitulation. Less frequently, the second part contains no contrasting middle and is constructed instead as a single theme-like unit, often with sentential or periodic characteristics. The melodic material opening the second part usually derives from the basic idea of the first part, reinforcing bipartite structure and dampening expectations for a subsequent recapitulation.
 
-# Construction/Recognition
+# Construction / Recognition
 1. Normatively 8 measures, usually repeated together with the first part
 2. Always concludes with PAC in the home key
 3. **With contrasting middle**: B section (4 mm.) followed by continuation, cadential, consequent, or further dominant prolongation (4 mm.)
@@ -24,7 +36,7 @@ The second part of a small binary begins, in the majority of cases, with a four-
 6. No genuine recapitulation of the basic idea in home-key tonic
 7. Even if basic idea appears, it serves a different function (continuation, cadential) rather than recapitulation
 
-# Musical Context
+# Context & Application
 The second part of the small binary must confirm the home key through PAC while avoiding the recapitulatory return that would convert the form into a small ternary. The motivic connection between part openings projects bipartite unity. When the first part is built as a sentence, composing a four-measure recapitulation is difficult (unlike with a period), making the small binary form more natural for sentential expositions within a 16-measure framework.
 
 # Examples

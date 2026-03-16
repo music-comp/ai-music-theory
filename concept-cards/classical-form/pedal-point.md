@@ -1,48 +1,86 @@
 ---
 concept: Pedal Point
-category: technique
+slug: pedal-point
+category: harmony
+subcategory: prolongational-techniques
+tier: foundational
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Fundamental Progressions of Harmony"
 chapter_number: 2
 pdf_page: 34
-unit: null
-authors: "William E. Caplin"
+section: "Prolongational Progressions"
+extraction_confidence: high
+aliases:
+  - "pedal"
+prerequisites:
+  - prolongational-progression
+extends:
+  - prolongational-progression
+related:
+  - neighboring-chord
+  - passing-chord
+  - substitute-chord
+  - postcadential-function
+  - standing-on-the-dominant
+contrasts_with: []
+answers_questions:
+  - "What is a pedal point?"
+  - "Why are subordinate harmonies placed in parentheses over a pedal?"
+  - "What formal functions use pedal points?"
 ---
 
 # Quick Definition
-The most perceptually forceful way of prolonging a harmony, in which the bass voice sustains the root of the prolonged harmony throughout the progression while subordinate chords change above it.
+The most perceptually forceful way of prolonging a harmony, in which the bass voice sustains the root of the prolonged harmony throughout the progression, significantly reducing the structural status of subordinate chords above it.
 
-# Formal Definition
-A pedal point is a sustained bass note containing the root of the prolonged harmony throughout a prolongational progression. In most cases, the prolonged harmony appears at the beginning and end of the progression. The bass note of the subordinate harmonies is replaced by the pedal note, significantly reducing the structural status of these harmonies. Subordinate chords over a pedal are always placed in parentheses in the analysis and indicated in root position unless a specific inversion is implied by context.
+# Core Definition
+"The most perceptually forceful way of prolonging a harmony is by means of a pedal point" (Ch. 2, p. 24). "The pedal, which lies in the bass voice throughout the progression, contains the root of the prolonged harmony" (Ch. 2, p. 24). "The bass note of the subordinate harmonies is replaced by the pedal note, thus significantly reducing the structural status of these harmonies; hence, they always are placed in parentheses in the analysis" (Ch. 2, p. 24). "Since the missing bass often makes it impossible to determine the position of the subordinate chords, they are indicated in root position unless a specific inversion is implied by the context" (Ch. 2, p. 24).
 
-# Construction/Recognition
-- Sustained bass note throughout the progression
-- The bass note is the root of the prolonged harmony
-- Subordinate harmonies above the pedal lose their normal bass function
-- The prolonged harmony typically appears at the beginning and end
-- Subordinate harmonies are placed in parentheses in the analysis
-- Since the missing bass makes it impossible to determine the position of subordinate chords, they are indicated in root position by default
+# Prerequisites
+- **Prolongational progression** -- the category to which pedal point belongs
 
-# Musical Context
-Pedal-point prolongations are prominently employed in connection with postcadential function. Tonic pedals support codettas and closing sections after PACs. Dominant pedals support standings on the dominant after HCs. A tonicized subdominant over a tonic pedal is frequently used in codettas.
+# Key Properties
+1. Sustained bass note throughout the progression
+2. The bass note is the root of the prolonged harmony
+3. Prolonged harmony typically appears at beginning and end
+4. Subordinate harmonies above the pedal have reduced structural status
+5. Subordinate harmonies placed in parentheses in analysis
+6. Subordinate chords indicated in root position by default (bass is replaced)
+
+# Construction / Recognition
+- Identify sustained or repeated bass note
+- Analyze harmonies above it as subordinate (in parentheses)
+- The pedal note defines the prolonged harmony
+
+# Context & Application
+Pedal-point prolongations are prominently employed in postcadential function. Tonic pedals support codettas. Dominant pedals support standings on the dominant. "Tonicized subdominant" over tonic pedal is "frequently used in codettas" (ex. 2.1b). Dominant pedal is "typical of a standing on the dominant" (ex. 2.1c).
 
 # Examples
-- Tonic pedal in codettas (ex. 2.1b): tonic pedal with tonicized subdominant above--frequently used in closing sections
-- Dominant pedal (ex. 2.1c): typical of a standing on the dominant
-- Beethoven, Op. 2/1, i, mm. 21-24: dominant pedal undermining the surface tonic prolongation in the subordinate theme's presentation
+**Example 1** (Ch. 2, ex. 2.1b): Tonic pedal with tonicized subdominant -- frequently used in codettas and closing sections.
+**Example 2** (Ch. 2, ex. 2.1c): Dominant pedal -- typical of a standing on the dominant.
+**Example 3** (Ch. 1, p. 19): Beethoven, Op. 2/1, i, mm. 21-24: dominant pedal undermining the surface tonic prolongation in the subordinate theme's presentation.
 
-# Related Concepts
-- Prolongational Progression
-- Neighboring Chord
-- Passing Chord
-- Substitute Chord
-- Postcadential Function
-- Standing on the Dominant
-- Closing Section
+# Relationships
+## Builds Upon
+- Prolongational progression
+## Enables
+- Postcadential function (tonic and dominant pedals)
+- Standing on the dominant
+## Related
+- Neighboring, passing, and substitute chords (the other three prolongational techniques)
+## Contrasts With
+None
+
+# Common Errors
+- Analyzing subordinate harmonies over a pedal as structurally independent
 
 # Common Confusions
-- Subordinate harmonies over a pedal point are significantly weakened; their Roman numeral labels should be in parentheses to show their reduced structural status.
-- A dominant pedal can undermine a surface tonic prolongation, creating harmonic ambiguity (as in subordinate theme presentations).
+- Subordinate harmonies over a pedal are significantly weakened; their labels should be in parentheses
+- A dominant pedal can undermine a surface tonic prolongation, creating harmonic ambiguity
 
 # Source Reference
-Chapter 2: Fundamental Progressions of Harmony, pp. 24-25 (pdf_page 34)
+Chapter 2, pp. 24-25 (pdf p. 34)
+
+# Verification Notes
+Preserved from old card: all content. Upgraded to v3 with direct quotations.

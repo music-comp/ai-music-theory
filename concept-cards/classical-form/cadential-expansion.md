@@ -1,52 +1,99 @@
 ---
 concept: Cadential Expansion
-category: technique
+slug: cadential-expansion
+category: compositional-techniques
+subcategory: cadential-procedures
+tier: advanced
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Subordinate Theme"
 chapter_number: 8
 pdf_page: 108
-unit: null
-authors: "William E. Caplin"
+section: "Cadential expansion"
+extraction_confidence: high
+aliases:
+  - "expanded cadential function"
+prerequisites:
+  - expanded-cadential-progression
+  - cadential-function
+  - subordinate-theme
+extends:
+  - loosening-techniques
+related:
+  - cadential-extension
+  - brilliant-style
+  - cadential-trill
+contrasts_with:
+  - cadential-extension
+answers_questions:
+  - "How does cadential expansion differ from cadential extension?"
+  - "What role does I6 play in signaling cadential expansion?"
+  - "How can individual harmonies within a cadential progression be expanded?"
 ---
-
 # Quick Definition
 A loosening technique in which cadential function is enlarged by means of an expanded cadential progression supporting one or more complete phrases, each with distinct melodic ideas and accompanimental textures.
 
-# Formal Definition
-Cadential expansion occurs when cadential function in a subordinate theme is supported by an expanded cadential progression that underlies one or more complete phrases. These phrases are most often exclusively cadential, since continuation function is usually expressed in preceding phrases. The majority of expanded cadential progressions contain all four harmonic functions (initial tonic, pre-dominant, dominant, final tonic). The expanded progression may give special emphasis to one component harmony: the initial tonic (often I6, embellished by neighboring V^4/3), the pre-dominant, or the dominant (especially the cadential 6/4). Cadential expansion differs from cadential extension: extension delays the PAC through failed cadences; expansion enlarges the cadential function through a broader harmonic progression.
+# Core Definition
+Cadential expansion occurs when cadential function in a subordinate theme is supported by an expanded cadential progression that underlies one or more complete phrases. These phrases are most often exclusively cadential, since continuation function is usually expressed in preceding phrases. The majority of expanded cadential progressions contain all four harmonic functions (initial tonic, pre-dominant, dominant, final tonic). One harmony may receive special emphasis: the initial tonic (often I6, embellished by neighboring V4/3), the pre-dominant, or the dominant (especially the cadential 6/4). Cadential expansion differs fundamentally from cadential extension: extension delays the PAC through failed cadences; expansion enlarges the cadential function through a broader harmonic progression.
 
-# Construction/Recognition
-1. An expanded cadential progression supports one or more complete phrases
+# Prerequisites
+- **Expanded cadential progression**: The harmonic structure supporting the expansion
+- **Cadential function**: The formal function being enlarged
+- **Subordinate theme**: The primary context for this technique
+
+# Key Properties
+1. An ECP supports one or more complete phrases with distinct melodic ideas
 2. All four harmonic functions usually present: initial tonic, pre-dominant, dominant, final tonic
-3. One harmony may receive special prominence:
-   - **Expanded dominant**: cadential 6/4 greatly lengthened before resolving; virtuosic passage-work, trills
-   - **Expanded pre-dominant**: variety of pre-dominant harmonies in single progression
-   - **Expanded initial tonic**: I6 prolonged by neighboring V^4/3; may generate a presentation phrase
-4. I6 serves as a conventionalized "cue" for the onset of an expanded cadential progression
-5. A cadential phrase often follows directly after a separate continuation phrase
+3. One harmony may receive special prominence through expansion
+4. I6 is a conventionalized "cue" for onset of expanded cadential progression
+5. The expanded dominant with trill signals concerto style
+6. If sufficiently large, the entire ECP may support the subordinate theme's climax
 
-# Musical Context
-Cadential expansion is one of the primary devices for enlarging subordinate themes. The expanded cadential progression can support the climax of the subordinate theme, particularly when the dominant is greatly expanded with virtuosic passage-work (concerto style). The conventionalized I6 signaling cadential onset allows listeners to anticipate the approaching cadential goal, creating appropriate formal expectations even within a loosely organized context.
+# Construction / Recognition
+- **Simple expansion**: No single harmony given special emphasis; all harmonies proportionally stretched
+- **Expanded initial tonic**: I6 prolonged by neighboring V4/3; may generate a presentation-like phrase
+- **Expanded pre-dominant**: Variety of pre-dominant harmonies within a single progression
+- **Expanded dominant**: Cadential 6/4 greatly lengthened; virtuosic passage-work, trills (concerto/brilliant style)
+- Typically follows a separate continuation phrase (not fused with it)
+
+# Context & Application
+Cadential expansion is one of the primary devices for enlarging subordinate themes. The climax of the subordinate theme is usually associated with an expanded cadential progression, particularly when the dominant is greatly expanded with virtuosic passage-work. In concerto movements, the trill in the solo part just before cadential arrival signals the approaching closure. This concerto-style device also appears in other genres.
 
 # Examples
-- Mozart, Piano Sonata in C, K. 545, i, mm. 22-26 (simple expanded cadential progression following continuation)
-- Mozart, Clarinet Quintet in A, K. 581, i, mm. 58-65 (expanded dominant: cadential 6/4 stretched over 3 measures with virtuosic passage-work and trill)
-- Haydn, Piano Sonata in C, Hob. XVI:35, i, mm. 36-45 (expanded initial tonic: I6 prolonged by V^4/3 chords for 5 measures; entire theme supported by single expanded cadential progression)
-- Mozart, Piano Sonata in D, K. 576, i, mm. 48-53 (expanded cadential progression in consequent of periodic subordinate theme)
+- Mozart, Piano Sonata in C, K. 545, i, mm. 22-26: simple expanded cadential progression following continuation
+- Mozart, Clarinet Quintet in A, K. 581, i, mm. 58-65: expanded dominant with cadential 6/4 stretched over 3 measures, virtuosic passage-work and trill
+- Haydn, Piano Sonata in C, Hob. XVI:35, i, mm. 36-45: expanded initial tonic -- I6 prolonged by V4/3 for 5 measures; entire theme supported by single ECP
+- Mozart, Piano Sonata in D, K. 576, i, mm. 48-53: expanded cadential progression in consequent of periodic subordinate theme
 
-# Related Concepts
-- Cadential Extension
-- Expanded Cadential Progression
-- Subordinate Theme Organization
-- Loosening Techniques
-- Cadential Function
-- Dominant Expansion
+# Relationships
+## Builds Upon
+- Expanded cadential progression (the harmonic foundation)
+- Cadential function (the formal function being enlarged)
+
+## Enables
+- Subordinate theme climax (ECP often supports the dynamic high point)
+- Brilliant style passages (over expanded dominant)
+
+## Related
+- Cadential trill (marks expanded dominant in concerto style)
+- Brilliant style (virtuosic passage-work over expanded harmony)
+
+## Contrasts With
+- Cadential extension (delays PAC through failed cadences rather than enlarging the progression)
+
+# Common Errors
+- Confusing the dominant of an ECP with a half cadence
+- Equating cadential expansion with cadential extension
+- Missing the I6 cue that signals onset of cadential expansion
 
 # Common Confusions
-- Cadential EXPANSION (enlarged progression) is different from cadential EXTENSION (delayed PAC through failed cadences) -- though both can operate simultaneously
-- The dominant of an expanded cadential progression (e.g., the expanded 6/4) is a penultimate harmony, NOT a half cadence -- it functions WITHIN the cadential progression, not as its goal
-- An I6 at the beginning of a cadential phrase is a harmonic cue for cadential function, NOT necessarily the beginning of a tonic prolongation
-- When the initial tonic of an expanded cadential progression is prolonged for four measures supporting a presentation, a hybrid sentence-cadential structure results
+- **Expansion vs. extension**: Expansion enlarges the progression itself; extension delays resolution through failed cadences. Both may operate simultaneously
+- **ECP dominant vs. HC**: The dominant within an ECP is penultimate (within the progression), not ultimate (as in HC)
+- **I6 function**: At the beginning of a cadential phrase, I6 signals cadential onset, not necessarily tonic prolongation
 
 # Source Reference
 Chapter 8: Subordinate Theme, "Cadential expansion" section, pp. 113-116 (PDF page 108)
+
+# Verification Notes
+Three types of harmonic expansion (initial tonic, pre-dominant, dominant) are explicitly enumerated. The I6 as conventional cue is stated clearly.

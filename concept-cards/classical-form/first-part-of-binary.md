@@ -1,21 +1,33 @@
 ---
 concept: First Part of Binary
-category: form
+slug: first-part-of-binary
+category: formal-functions
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Small Binary"
 chapter_number: 7
 pdf_page: 98
-unit: null
-authors: "William E. Caplin"
+section: "First Part"
+extraction_confidence: high
+aliases: []
+prerequisites: ["small-binary"]
+extends: []
+related: ["second-part-of-binary", "periodic-binary-with-half-cadence"]
+contrasts_with: ["exposition-in-small-ternary"]
+answers_questions:
+  - "How is the first part of a small binary constructed?"
+  - "What cadence types can end the first part?"
 ---
 
 # Quick Definition
 The opening eight-measure section of a small binary, usually constructed as a conventional theme (sentence, period, or hybrid) that may remain in the home key or modulate, and may close with any cadence type.
 
-# Formal Definition
+# Core Definition
 The first part of a small binary is usually an eight-measure theme of conventional organization (sentence, period, or hybrid). It may remain in the home key or modulate to a subordinate key, and it may close with any of the three cadential types: HC, PAC, or (rarely) IAC. When ending with a PAC (in any key), the first part cannot be distinguished from the exposition of a small ternary until the second part reveals the absence of recapitulation. When ending with a HC, a potential small ternary is not implied, since the exposition of that form rarely ends with weak cadential closure. The first part can express a sense of periodic organization yet end with a HC, resulting in a nonconventional form.
 
-# Construction/Recognition
+# Construction / Recognition
 1. Normatively 8 measures long, usually repeated
 2. Built as sentence, period, or hybrid
 3. May end with HC, PAC, or (rarely) IAC
@@ -24,7 +36,7 @@ The first part of a small binary is usually an eight-measure theme of convention
 6. When repeated (via repeat signs), a HC ending may initially suggest an antecedent of a 16-measure period
 7. Only when the second part fails to recapitulate can the binary form be confirmed (with PAC endings)
 
-# Musical Context
+# Context & Application
 The first part establishes the primary thematic material of the binary. When it ends with a HC, the subsequent repetition may imply the consequent of a 16-measure period, but when the repetition also ends with the same HC, the period interpretation fails and a small binary is strongly suggested. The choice of cadence type in the first part significantly affects the listener's formal expectations for what follows.
 
 # Examples

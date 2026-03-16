@@ -1,21 +1,42 @@
 ---
 concept: Essential Expositional Closure
-category: analysis
+slug: essential-expositional-closure
+category: formal-regions
+subcategory: subordinate-theme
+tier: advanced
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Subordinate Theme"
 chapter_number: 8
 pdf_page: 108
-unit: null
-authors: "William E. Caplin"
+section: null
+extraction_confidence: high
+aliases:
+  - "EEC"
+prerequisites:
+  - subordinate-theme
+  - authentic-cadence
+  - subordinate-key
+extends:
+  - cadential-goals-in-exposition
+related:
+  - closing-section
+  - one-more-time-technique
+contrasts_with:
+  - half-cadence
+answers_questions:
+  - "What is the essential expositional closure (EEC)?"
+  - "How do I identify the EEC in a sonata exposition?"
 ---
 
 # Quick Definition
 The PAC in the subordinate key that marks the structural close of the subordinate theme and fulfills the exposition's primary cadential goal of confirming the subordinate key.
 
-# Formal Definition
+# Core Definition
 The essential expositional closure (EEC) is the PAC in the subordinate key that concludes the subordinate theme (or the last theme of a subordinate-theme group). This cadence is the primary formal goal of the entire exposition, as it fulfills one of the theme's principal functions: confirming the subordinate key as a competing tonality to the home key. The subordinate key must be fully confirmed by a PAC for it to acquire sufficient weight to vie for prominence with the home key. The home key must also be confirmed by PAC, if not at the end of the main theme, then at least in the recapitulation.
 
-# Construction/Recognition
+# Construction / Recognition
 1. A PAC in the subordinate key (not the home key)
 2. Ends the subordinate theme or the last theme of a subordinate-theme group
 3. Followed by a closing section (codettas) in virtually all expositions
@@ -24,7 +45,7 @@ The essential expositional closure (EEC) is the PAC in the subordinate key that 
 6. Exceptions to this requirement are extremely rare in the classical repertory
 7. The cadence confirms the subordinate key as a genuine competitor to the home key
 
-# Musical Context
+# Context & Application
 The EEC is arguably the most important single moment in the exposition. All the formal processes of the exposition -- the main theme's establishment of the home key, the transition's destabilization, and the subordinate theme's loosening techniques -- converge on this cadential moment. The various techniques of cadential extension (IAC, DC, evaded cadence, abandoned cadence) all serve to delay and dramatize this moment, making its eventual arrival all the more emphatic. The closing section that follows provides postcadential emphasis or dissipation of the energy built up in achieving this goal.
 
 # Examples

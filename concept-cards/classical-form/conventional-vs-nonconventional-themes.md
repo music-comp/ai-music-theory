@@ -1,26 +1,44 @@
 ---
 concept: Conventional vs. Nonconventional Themes
-category: form
+slug: conventional-vs-nonconventional-themes
+category: fundamentals
+subcategory: methodology
+tier: foundational
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
-chapter: "Introduction"
-chapter_number: 0
-pdf_page: 14
-unit: null
+source_slug: classical-form
 authors: "William E. Caplin"
+chapter: "Introduction"
+chapter_number: null
+pdf_page: 14
+section: null
+extraction_confidence: high
+aliases:
+  - "conventional themes"
+  - "nonconventional themes"
+prerequisites: []
+extends:
+  - formal-function
+related:
+  - ideal-types
+  - sentence-overview
+  - period
+contrasts_with: []
+answers_questions:
+  - "What is the difference between conventional and nonconventional themes?"
 ---
 
 # Quick Definition
 Conventional themes conform to established formal types (sentence, period, small ternary), while nonconventional themes deviate from these models, blending or departing from standard patterns.
 
-# Formal Definition
+# Core Definition
 Caplin defines formal categories as "ideal types" (Idealtypen) representing abstractions based on generalized compositional tendencies in the classical repertory. Conventional themes conform closely to established theme types. Nonconventional themes depart from these models, combining features of multiple types or presenting functional ambiguities. Categories are not meant to reflect statistical frequency, and passages deviating from norms are not devalued aesthetically.
 
-# Construction/Recognition
+# Construction / Recognition
 - Conventional: clearly identifiable as sentence, period, small ternary, small binary, or recognized hybrid
 - Nonconventional: mixes features from different types, or presents ambiguities preventing clear classification
 - Categories are strictly defined so that deviations can be identified analytically
 
-# Musical Context
+# Context & Application
 Conventional themes dominate main-theme positions where tight-knit organization is appropriate. Nonconventional designs appear more frequently in loosely organized regions like contrasting middles, transitions, and subordinate themes.
 
 # Examples

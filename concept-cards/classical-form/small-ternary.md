@@ -1,21 +1,34 @@
 ---
 concept: Small Ternary
-category: form
+slug: small-ternary
+category: theme-types
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Small Ternary"
 chapter_number: 6
 pdf_page: 82
-unit: null
-authors: "William E. Caplin"
+section: null
+extraction_confidence: high
+aliases: ["ternary form"]
+prerequisites: ["sentence", "period", "hybrid-themes-overview"]
+extends: []
+related: ["exposition-in-small-ternary", "contrasting-middle", "recapitulation-in-small-ternary", "rounded-binary", "small-binary", "tight-knit-vs-loose-in-ternary"]
+contrasts_with: ["small-binary"]
+answers_questions:
+  - "What is the small ternary form?"
+  - "What are the three sections of a small ternary?"
+  - "How does small ternary relate to rounded binary?"
 ---
 
 # Quick Definition
 A theme-type consisting of three sections -- exposition (A), contrasting middle (B), and recapitulation (A') -- that functions as a self-contained formal unit within larger movement forms.
 
-# Formal Definition
+# Core Definition
 The small ternary is one of the most important forms in classical instrumental music. It consists of three sections expressing the formal functions of exposition (A), contrasting middle (B), and recapitulation (A'). The exposition is a tight-knit theme (most often a period) ending with a PAC in the home key or a subordinate key. The contrasting middle emphasizes dominant harmony and is more loosely organized. The recapitulation brings back the basic idea in the home key and closes with a PAC. The form can constitute a main theme of any full-movement form (sonata, rondo, concerto) and provides the tonal plan for the full-movement minuet and sonata forms.
 
-# Construction/Recognition
+# Construction / Recognition
 1. **Exposition (A)**: Tight-knit theme (period, sentence, or hybrid), 8 measures normatively, closes with PAC
 2. **Contrasting middle (B)**: Looser organization, emphasizes dominant harmony, ends with HC or dominant arrival
 3. **Recapitulation (A')**: Returns basic idea in home key, closes with PAC; may be exact, compressed, or expanded
@@ -23,7 +36,7 @@ The small ternary is one of the most important forms in classical instrumental m
 5. When A modulates, A' must be tonally adjusted to remain in home key
 6. Often appears with repeat signs: ||: A :||: B + A' :|| (rounded binary version)
 
-# Musical Context
+# Context & Application
 The small ternary serves as the theme for most theme-and-variations movements, the main theme of sonatas, rondos, and concertos, and the basis for minuet/trio forms. More than any other theme-type, the small ternary raises issues of form that transcend simple thematic organization.
 
 # Examples

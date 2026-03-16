@@ -1,28 +1,40 @@
 ---
 concept: "Compound Period Category: Antecedent + Continuation"
-category: form
+slug: compound-period-category-antecedent-continuation
+category: theme-types
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Hybrid Themes and Compound Themes"
 chapter_number: 5
 pdf_page: 70
-unit: null
-authors: "William E. Caplin"
+section: "Sixteen-Measure Period"
+extraction_confidence: high
+aliases: []
+prerequisites: ["compound-period", "hybrid-theme-type-1"]
+extends: ["compound-period"]
+related: ["compound-period-category-presentation-continuation", "compound-period-category-cbi-continuation"]
+contrasts_with: []
+answers_questions:
+  - "How is a compound period built from hybrid type 1 units?"
+  - "Why do composers avoid a 'period within a period'?"
 ---
 
 # Quick Definition
 In this compound period category, both the eight-measure antecedent and consequent units are built as hybrid type 1 (antecedent + continuation). The lower-level antecedent closes with a weak cadence at m. 4, followed by a continuation closing with a second weak cadence at m. 8. The basic idea returns at m. 9 to signal the higher-level consequent.
 
-# Formal Definition
+# Core Definition
 This category features hybrid type 1 as the basis of both antecedent and consequent units. The initial four-measure antecedent is followed by a continuation featuring characteristics such as fragmentation, harmonic acceleration, and a second weak cadence to close the eight-measure antecedent. The return of the basic idea is saved for measures 9-10 to signal the large-scale consequent. This implies a "period within a period" or "double period" concept, but the use of a continuation (rather than a consequent) at the lower level undermines genuine periodic expression at that level.
 
-# Construction/Recognition
+# Construction / Recognition
 1. **Large antecedent (mm. 1-8)**: four-measure antecedent (b.i. + c.i. + weak cadence) + four-measure continuation (fragmentation, acceleration, second weak cadence)
 2. **Large consequent (mm. 9-16)**: basic idea returns at m. 9; structure repeats but closes with PAC
 3. The basic idea appears at m. 1 and not again until m. 9
 4. Lower-level continuation at mm. 5-8 — NOT a lower-level consequent
 5. The avoidance of a lower-level consequent prevents the basic idea from appearing at m. 5, which would spoil the effect of its return at m. 9
 
-# Musical Context
+# Context & Application
 The avoidance of a genuine "double period" (with period structure at both levels) is a deliberate compositional strategy. If the basic idea returned at m. 5 (lower-level consequent), its reappearance at m. 9 (higher-level consequent) would be preempted and its dramatic effect diminished. By using hybrid type 1 instead of a simple period, the composer ensures the basic idea's return at m. 9 retains its full impact. Some themes appear to have the basic idea at m. 5, but closer harmonic examination reveals different harmonization, confirming continuation rather than consequent function.
 
 # Examples

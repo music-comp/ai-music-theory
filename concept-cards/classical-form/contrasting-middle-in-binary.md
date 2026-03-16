@@ -1,21 +1,33 @@
 ---
 concept: Contrasting Middle in Binary
-category: form
+slug: contrasting-middle-in-binary
+category: formal-functions
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Small Binary"
 chapter_number: 7
 pdf_page: 98
-unit: null
-authors: "William E. Caplin"
+section: "Presence of a Contrasting Middle"
+extraction_confidence: high
+aliases: []
+prerequisites: ["small-binary", "contrasting-middle"]
+extends: []
+related: ["second-part-of-binary", "binary-without-contrasting-middle"]
+contrasts_with: []
+answers_questions:
+  - "How does a contrasting middle function in a small binary?"
+  - "What follows the contrasting middle in a binary?"
 ---
 
 # Quick Definition
 A four-measure unit at the beginning of the second part of a small binary that is organized identically to the B section of a small ternary, emphasizing dominant harmony, but is followed by non-recapitulatory material rather than a return of the basic idea.
 
-# Formal Definition
+# Core Definition
 The second part of a small binary often begins with a four-measure unit that is identical in organization to a contrasting middle of the small ternary: it emphasizes dominant harmony (often through a standing on the dominant or model-sequence technique), creates tonal contrast, and may end with a HC. If a recapitulation were to follow this contrasting middle, a rounded binary (small ternary) would result. Instead, the material that follows expresses continuation, cadential, or consequent function, confirming the binary interpretation. The B section may feature its own internal organization, sometimes even modulating to and cadentially confirming a subordinate key.
 
-# Construction/Recognition
+# Construction / Recognition
 1. Four-measure unit at the beginning of the second part
 2. Emphasizes dominant harmony (standing on dominant, model-sequence, etc.)
 3. Followed by continuation, cadential, or consequent -- NOT recapitulation
@@ -25,7 +37,7 @@ The second part of a small binary often begins with a four-measure unit that is 
 7. **B + consequent**: A new two-measure idea + contrasting idea ending with PAC
 8. **B + dominant prolongation**: Goal dominant deceptively resolved, then PAC
 
-# Musical Context
+# Context & Application
 The contrasting middle in a binary creates a momentary expectation for recapitulation, which is then denied. This unfulfilled expectation is one of the defining features of the small binary form. The contrast between B section and subsequent non-recapitulatory material helps project the overall bipartite design. The B section's motivic material often derives from the first part's basic idea, which further dampens recapitulatory expectations.
 
 # Examples

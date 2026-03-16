@@ -1,28 +1,40 @@
 ---
 concept: "Hybrid Theme Type 1: Antecedent + Continuation"
-category: form
+slug: hybrid-theme-type-1
+category: theme-types
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Hybrid Themes and Compound Themes"
 chapter_number: 5
 pdf_page: 70
-unit: null
-authors: "William E. Caplin"
+section: "Hybrid 1"
+extraction_confidence: high
+aliases: ["ant. + cont."]
+prerequisites: ["antecedent", "continuation-function"]
+extends: []
+related: ["hybrid-themes-overview", "spectrum-of-theme-types"]
+contrasts_with: ["period", "sentence"]
+answers_questions:
+  - "What is hybrid theme type 1?"
+  - "How does antecedent + continuation work?"
 ---
 
 # Quick Definition
 Hybrid type 1 begins like a period (antecedent phrase with HC or IAC) but ends like a sentence (continuation phrase with fragmentation, harmonic acceleration, or other continuational traits). It combines periodic and sentential characteristics in equal measure.
 
-# Formal Definition
+# Core Definition
 Many hybrid themes begin like a period but end like a sentence: a four-measure antecedent followed by a four-measure continuation. The first phrase is a genuine antecedent — a basic idea followed by a contrasting idea ending with a weak cadence. The second phrase cannot be a consequent because the basic idea does not return; rather, it projects continuation function, most typically through fragmentation. If the second phrase lacks fragmentation, a perceptible increase in the rate of harmonic change usually expresses the continuation function. The combination is entirely logical: an initiating function (antecedent) is followed by medial and concluding functions (continuation and cadential, fused into a single continuation phrase).
 
-# Construction/Recognition
+# Construction / Recognition
 1. **First phrase (mm. 1-4)**: genuine antecedent — basic idea + contrasting idea + weak cadence (HC or IAC)
 2. **Second phrase (mm. 5-8)**: continuation — new material, fragmentation and/or harmonic acceleration, cadential closure (usually PAC)
 3. The basic idea does **not** return at m. 5 (which would make it a consequent)
 4. Continuation function expressed by fragmentation, harmonic acceleration, or both
 5. Normative length: 8 measures (4+4)
 
-# Musical Context
+# Context & Application
 Hybrid type 1 contains aspects of sentence and period in equal measure (see Figure 5.1 in Caplin). It occupies the middle of the spectrum between sentence and period. The antecedent can exist independently of a consequent — antecedent and consequent functions need not be linked together in all formal situations. Hybrid type 1 is especially useful in larger forms when the basic idea should not reappear within the eight-measure scope of the theme.
 
 # Examples

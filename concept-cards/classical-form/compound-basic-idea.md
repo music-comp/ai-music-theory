@@ -1,21 +1,33 @@
 ---
 concept: Compound Basic Idea
-category: form
+slug: compound-basic-idea
+category: formal-functions
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Hybrid Themes and Compound Themes"
 chapter_number: 5
 pdf_page: 70
-unit: null
-authors: "William E. Caplin"
+section: "Hybrid 3"
+extraction_confidence: high
+aliases: ["c.b.i."]
+prerequisites: ["basic-idea", "contrasting-idea"]
+extends: []
+related: ["antecedent", "presentation-function", "hybrid-theme-type-3", "hybrid-theme-type-4", "compound-period", "compound-sentence"]
+contrasts_with: ["antecedent"]
+answers_questions:
+  - "What is a compound basic idea?"
+  - "How does a c.b.i. differ from an antecedent?"
 ---
 
 # Quick Definition
 A compound basic idea (c.b.i.) is a four-measure phrase consisting of a basic idea and a contrasting idea that does not close with a cadence. By its melodic content it resembles an antecedent; by its tonic prolongational harmony it resembles a presentation. It is itself a hybrid of antecedent and presentation functions.
 
-# Formal Definition
+# Core Definition
 By definition, an antecedent contains a basic idea followed by a contrasting idea leading to a weak cadence. If a cadence does not appear at the end of the phrase, an essential component of antecedent function is lost. The lack of cadential closure creates open-endedness, and the phrase takes on the character and function of a higher-level basic idea. Thus the term "compound basic idea" applies to a phrase consisting of a simple basic idea and a contrasting idea that does not close with a cadence. By virtue of its melodic-motivic content, the compound basic idea resembles an antecedent. In light of its underlying harmony, which is usually (but not always) tonic prolongational, it resembles a presentation. The four-measure phrase itself represents a hybrid of antecedent and presentation functions.
 
-# Construction/Recognition
+# Construction / Recognition
 1. Contains a two-measure basic idea + two-measure contrasting idea
 2. **No cadence** at the end of the phrase — the crucial distinguishing feature from an antecedent
 3. Underlying harmony is typically tonic prolongational (I prolonged, possibly reaching V without forming a cadential progression)
@@ -23,7 +35,7 @@ By definition, an antecedent contains a basic idea followed by a contrasting ide
 5. The tonic prolongation may extend into the following phrase
 6. The term gains special appropriateness in compound themes, where the c.b.i. occupies the same hierarchical position as a simple basic idea
 
-# Musical Context
+# Context & Application
 The compound basic idea appears in hybrid themes (types 3 and 4) and as a building block of compound (sixteen-measure) themes, particularly compound sentences (where it is repeated to form the presentation) and compound periods (where it can form part of the large-scale antecedent). In compound themes, the four-measure c.b.i. stands in the same relation to the sixteen-measure structure as a two-measure basic idea does to an eight-measure structure.
 
 # Examples

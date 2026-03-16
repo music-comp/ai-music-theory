@@ -1,21 +1,33 @@
 ---
 concept: Symmetrical Period Deviations
-category: form
+slug: symmetrical-period-deviations
+category: compositional-techniques
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Period"
 chapter_number: 4
 pdf_page: 60
-unit: null
-authors: "William E. Caplin"
+section: "Deviations from the Norm"
+extraction_confidence: high
+aliases: []
+prerequisites: ["period"]
+extends: []
+related: ["asymmetrical-period-deviations", "extension", "expansion", "interpolation", "compression"]
+contrasts_with: ["asymmetrical-period-deviations"]
+answers_questions:
+  - "What are symmetrical deviations from the model period?"
+  - "How do extension, expansion, interpolation, and compression interact in periods?"
 ---
 
 # Quick Definition
 Symmetrical deviations from the model period occur when both the antecedent and consequent are altered from their four-measure norm in a way that preserves the inherent balance between the two phrases (e.g., 5+5, 3+3). The period's symmetrical character makes this type of deviation particularly natural.
 
-# Formal Definition
+# Core Definition
 Like the sentence, the period is divided into two four-measure phrases. But even more than the sentence, the 4+4 grouping structure suggests a symmetrical organization, since the consequent repeats the antecedent rather than bringing something essentially new. If the antecedent is altered from its four-measure norm, the consequent is typically changed to restore symmetry. Symmetrical deviations employ extension, expansion, interpolation, or compression, applied to both phrases to maintain equilibrium. Despite apparent symmetry in grouping structure (e.g., 5+5), a certain asymmetrical quality may be projected by the cadential pattern (e.g., 4+6 as defined by cadence positions).
 
-# Construction/Recognition
+# Construction / Recognition
 1. Both phrases deviate from the four-measure norm
 2. The resulting grouping structure remains symmetrical (e.g., 5+5, 3+3, 6+6)
 3. **Extension**: structural end occurs normally, then the function is stretched out (e.g., extra measure of dominant after HC)
@@ -24,7 +36,7 @@ Like the sentence, the period is divided into two four-measure phrases. But even
 6. **Compression**: both phrases shortened (e.g., 3+3, with antecedent 2+1 and consequent 1+2)
 7. Distinguish extension from expansion: extension stretches functions already established; expansion delays their completion
 
-# Musical Context
+# Context & Application
 Symmetrical deviations maintain the period's characteristic sense of balance and repose while accommodating more complex or extended musical ideas. They are among the most common deviations in the classical repertory.
 
 # Examples

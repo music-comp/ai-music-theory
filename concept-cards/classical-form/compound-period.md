@@ -1,21 +1,34 @@
 ---
 concept: Compound Period
-category: form
+slug: compound-period
+category: theme-types
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Hybrid Themes and Compound Themes"
 chapter_number: 5
 pdf_page: 70
-unit: null
-authors: "William E. Caplin"
+section: "Sixteen-Measure Period"
+extraction_confidence: high
+aliases: ["sixteen-measure period", "double period"]
+prerequisites: ["period", "antecedent", "consequent", "compound-basic-idea"]
+extends: ["period"]
+related: ["compound-period-category-presentation-continuation", "compound-period-category-cbi-continuation", "compound-period-category-antecedent-continuation"]
+contrasts_with: ["compound-sentence"]
+answers_questions:
+  - "What is a compound period?"
+  - "How is a sixteen-measure period constructed?"
+  - "What are the three categories of compound period?"
 ---
 
 # Quick Definition
 The compound (sixteen-measure) period consists of an eight-measure antecedent followed by an eight-measure consequent, where each unit is itself built as a sentence or hybrid theme. Like the simple period, the antecedent ends with a weak cadence and the consequent repeats it with a stronger cadence (usually PAC).
 
-# Formal Definition
+# Core Definition
 Compound themes are structures containing sixteen real measures. The compound sixteen-measure period consists of an eight-measure antecedent followed by an eight-measure consequent. The first theme (built as either a simple sentence or a hybrid) acquires antecedent function by closing with a weak cadence (normally HC, possibly IAC). The second theme (also a sentence or hybrid) becomes a consequent by repeating the first theme but concluding with the stronger PAC. The essential features of repetition and cadence that define antecedent and consequent functions for the eight-measure period apply to the sixteen-measure period as well.
 
-# Construction/Recognition
+# Construction / Recognition
 Three main categories based on the internal organization of the large antecedent:
 
 1. **Antecedent = presentation + continuation** (two sentences): compound period made of two eight-measure sentences; the first sentence ends with a weak cadence, the second repeats it with PAC
@@ -27,7 +40,7 @@ Key structural rules:
 - The basic idea returns at m. 9 to signal the large-scale consequent
 - Classical composers avoid using a simple period (antecedent + consequent) as the eight-measure unit because the basic idea's return at m. 5 would preempt and spoil the higher-level consequent at m. 9
 
-# Musical Context
+# Context & Application
 The compound period is one of the most important large-scale theme types in the classical repertory. The avoidance of a lower-level consequent within each eight-measure unit is a deliberate compositional strategy to preserve the dramatic impact of the basic idea's return at the higher-level consequent (m. 9). This is why sentences and hybrid types 1 and 3 are preferred as building blocks — they either repeat the basic idea immediately (sentence) or state it only once (hybrids 1 and 3).
 
 # Examples

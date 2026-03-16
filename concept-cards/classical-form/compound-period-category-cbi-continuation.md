@@ -1,28 +1,39 @@
 ---
 concept: "Compound Period Category: Compound Basic Idea + Continuation"
-category: form
+slug: compound-period-category-cbi-continuation
+category: theme-types
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Hybrid Themes and Compound Themes"
 chapter_number: 5
 pdf_page: 70
-unit: null
-authors: "William E. Caplin"
+section: "Sixteen-Measure Period"
+extraction_confidence: high
+aliases: []
+prerequisites: ["compound-period", "compound-basic-idea", "hybrid-theme-type-3"]
+extends: ["compound-period"]
+related: ["compound-period-category-presentation-continuation", "compound-period-category-antecedent-continuation"]
+contrasts_with: []
+answers_questions:
+  - "How is a compound period built from hybrid type 3 units?"
 ---
 
 # Quick Definition
 In this compound period category, both the eight-measure antecedent and consequent units are built as hybrid type 3 (compound basic idea + continuation). The c.b.i. provides a stable opening with tonic prolongation, while the continuation drives toward the cadence. The term "compound basic idea" gains particular appropriateness here, as it occupies the same hierarchical position as a simple basic idea in an eight-measure period.
 
-# Formal Definition
+# Core Definition
 In this category, the large antecedent (and consequent) is constructed as a hybrid theme of type 3 (compound basic idea + continuation). The term "compound basic idea" gains more appropriateness in the context of compound themes than in simple hybrids. A four-measure compound basic idea occupies the same hierarchical position in a sixteen-measure period as a two-measure basic idea does in an eight-measure period. Just as two contrasting ideas in a simple period need not contain the same material, the two continuation phrases in a sixteen-measure period may also exhibit diverse melodic-motivic content. The consequent's cadential function is often significantly expanded relative to the antecedent's.
 
-# Construction/Recognition
+# Construction / Recognition
 1. **Large antecedent (mm. 1-8)**: compound basic idea (mm. 1-4, tonic prolongation) + continuation (mm. 5-8) ending with weak cadence
 2. **Large consequent (mm. 9-16)**: restates c.b.i. + alters continuation to end with PAC
 3. The c.b.i. is typically supported by tonic prolongation (often a tonic pedal)
 4. The continuation phrases in antecedent and consequent may have different melodic content
 5. The consequent's cadential function may be significantly expanded, sometimes beginning earlier than in the antecedent
 
-# Musical Context
+# Context & Application
 This category highlights the hierarchical relationship between simple and compound formal structures — the c.b.i. at the four-measure level functions analogously to the basic idea at the two-measure level. The tonic pedal or prolongation that commonly supports the c.b.i. contrasts effectively with the more active harmonic motion of the continuation.
 
 # Examples

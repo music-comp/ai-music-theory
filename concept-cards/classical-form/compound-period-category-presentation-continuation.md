@@ -1,28 +1,39 @@
 ---
 concept: "Compound Period Category: Presentation + Continuation"
-category: form
+slug: compound-period-category-presentation-continuation
+category: theme-types
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Hybrid Themes and Compound Themes"
 chapter_number: 5
 pdf_page: 70
-unit: null
-authors: "William E. Caplin"
+section: "Sixteen-Measure Period"
+extraction_confidence: high
+aliases: []
+prerequisites: ["compound-period", "sentence"]
+extends: ["compound-period"]
+related: ["compound-period-category-cbi-continuation", "compound-period-category-antecedent-continuation"]
+contrasts_with: []
+answers_questions:
+  - "How is a compound period built from two sentences?"
 ---
 
 # Quick Definition
 In this compound period category, both the eight-measure antecedent and consequent units are built as sentences (presentation + continuation). The first sentence ends with a weak cadence, and the second sentence repeats the first but ends with a PAC. This represents the full development of the simple period whose antecedent has a miniature sentential design.
 
-# Formal Definition
+# Core Definition
 A compound period of this category is made up of two eight-measure sentences: the first sentence ends with a weak cadence, and the second, a repetition of the first, ends with a PAC. This type represents the full-fledged development of the simple period whose four-measure antecedent has a miniature sentential design. Like the simple sentence, the phrase following the presentation may be based on an expanded cadential progression and thus acquire continuation => cadential function. The consequent's cadential progression is typically more expanded than the antecedent's.
 
-# Construction/Recognition
+# Construction / Recognition
 1. **Large antecedent (mm. 1-8)**: presentation (mm. 1-4, statement-response repetition of b.i.) + continuation (mm. 5-8) ending with weak cadence (HC)
 2. **Large consequent (mm. 9-16)**: restates presentation + alters continuation to end with PAC
 3. Both units display sentential characteristics: fragmentation, harmonic acceleration, model-sequence technique
 4. The consequent's continuation may become continuation => cadential with an expanded cadential progression
 5. The cadential progression of the consequent is typically more expanded than the antecedent's
 
-# Musical Context
+# Context & Application
 This is one of the three main categories of compound period. The sentential design of each eight-measure unit combines the forward-driving character of the sentence with the symmetrical closure principle of the period, creating a theme of considerable complexity and expressivity.
 
 # Examples

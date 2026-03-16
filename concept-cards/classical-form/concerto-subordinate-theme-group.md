@@ -1,21 +1,42 @@
 ---
 concept: Concerto Subordinate-Theme Group
-category: form
+slug: concerto-subordinate-theme-group
+category: formal-regions
+subcategory: null
+tier: advanced
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Concerto Form"
 chapter_number: 17
-pdf_page: 254
-unit: null
-authors: "William E. Caplin"
+pdf_page: 258
+section: "Subordinate-Theme Group"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - concerto-form
+  - solo-exposition
+  - subordinate-theme
+extends:
+  - solo-exposition
+related:
+  - bravura-theme
+  - cadential-trill
+  - cadential-expansion
+  - opening-ritornello
+contrasts_with:
+  []
+answers_questions:
+  - "How many subordinate themes does a concerto exposition typically contain?"
+  - "Why is the first subordinate theme usually new?"
 ---
-
 # Quick Definition
 The subordinate-theme group in the solo exposition of a concerto, typically containing at least two themes, featuring new material for the solo alongside ritornello ideas, with extensive cadential expansions and virtuosic passage-work.
 
-# Formal Definition
+# Core Definition
 The subordinate-theme group of the solo exposition contains at least two themes (each ending with a PAC), with groups of three being extremely common. One or more themes is generally based on ideas from the opening ritornello, but new material is almost always added. The first subordinate theme is most likely to be entirely new, in order to project the solo's own melodic-motivic profile. The ritornello's first subordinate theme typically reappears as the second subordinate theme or the second part of a two-part subordinate theme. The solo subordinate-theme group is largely responsible for loosening the form: one theme prominently extends continuation function through harmonic sequence, and the cadential areas are greatly expanded. Enormous expanded cadential progressions are a hallmark of the concerto, and the cadential trill closes the exposition.
 
-# Construction/Recognition
+# Construction / Recognition
 - At least two subordinate themes (groups of three are common)
 - New material for the solo is almost always present
 - First subordinate theme is usually entirely new (for the solo's identity)
@@ -26,14 +47,15 @@ The subordinate-theme group of the solo exposition contains at least two themes 
 - Ends with cadential trill (conventional sign for the close of the solo exposition)
 - Virtuosic passage-work fills the structural space of sequences and cadential expansions
 
-# Musical Context
+# Context & Application
 The subordinate-theme group is where the concerto's dual needs -- formal function and virtuosic display -- most fully converge. The extended sequences and cadential expansions serve both to loosen the form (as in any sonata) and to showcase the soloist's technique. This concerto practice influenced other genres of the period.
 
 # Examples
 - Mozart, Piano Concerto in E-flat, K. 482, i: First subordinate theme in solo exposition (m. 128) is a bold, dramatic idea in minor; solo's own lyrical melody at m. 153; bravura theme at m. 171 in continuous sixteenth notes
 - The ritornello's first subordinate theme (quiet, peaceful) is eliminated from the solo exposition and returns in the recapitulation
 
-# Related Concepts
+# Relationships
+## Related
 - Solo Exposition
 - Opening Ritornello
 - Bravura Theme
@@ -41,9 +63,15 @@ The subordinate-theme group is where the concerto's dual needs -- formal functio
 - Solo Recapitulation
 - Subordinate Theme
 
+# Common Errors
+See Common Confusions.
+
 # Common Confusions
 - The subordinate-theme group in the opening ritornello is more tight knit than that in the solo exposition. Students should not apply the same expectations to both.
 - The first subordinate theme being entirely new does not mean the ritornello's subordinate themes are abandoned; they typically reappear as second or later themes in the group.
 
 # Source Reference
 Chapter 17: Concerto Form, pp. 258-260
+
+# Verification Notes
+Upgraded to v3 template from Chapter 17 extraction.

@@ -1,21 +1,33 @@
 ---
 concept: "Hybrid Theme Type 4: Compound Basic Idea + Consequent"
-category: form
+slug: hybrid-theme-type-4
+category: theme-types
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Hybrid Themes and Compound Themes"
 chapter_number: 5
 pdf_page: 70
-unit: null
-authors: "William E. Caplin"
+section: "Hybrid 4"
+extraction_confidence: high
+aliases: ["c.b.i. + cons."]
+prerequisites: ["compound-basic-idea", "consequent"]
+extends: []
+related: ["hybrid-themes-overview", "spectrum-of-theme-types", "period"]
+contrasts_with: ["period"]
+answers_questions:
+  - "What is hybrid theme type 4?"
+  - "How does c.b.i. + consequent differ from a period?"
 ---
 
 # Quick Definition
 Hybrid type 4 consists of a compound basic idea (basic idea + contrasting idea without cadence) followed by a consequent phrase that brings back the basic idea and closes with a PAC. It differs from a period in only one respect: it lacks the weak cadence at the end of measure 4.
 
-# Formal Definition
+# Core Definition
 In this fourth and final category of hybrid themes, a compound basic idea is followed by a consequent rather than a continuation. The opening basic idea returns in measures 5-6, and the theme ends with a PAC. Hybrids of this type differ from periods in only one respect: they lack the weak cadence in the fourth measure. When a compound basic idea is supported by a tonic prolongational progression (as is usually the case), the harmonic organization resembles a presentation. The consequent phrase frequently accelerates the harmonic rhythm in comparison to the preceding compound basic idea, whose tonic prolongation generally brings a relatively slow rate of harmonic change, thus imparting a degree of continuational expression as well.
 
-# Construction/Recognition
+# Construction / Recognition
 1. **First phrase (mm. 1-4)**: compound basic idea — basic idea + contrasting idea with **no cadence**
 2. Underlying harmony: typically tonic prolongational
 3. **Second phrase (mm. 5-8)**: consequent — basic idea returns (mm. 5-6) + contrasting idea (mm. 7-8) ending with PAC
@@ -23,7 +35,7 @@ In this fourth and final category of hybrid themes, a compound basic idea is fol
 5. The consequent may have increased harmonic activity (giving it some continuational quality)
 6. The tonic prolongation may extend into the consequent phrase
 
-# Musical Context
+# Context & Application
 Hybrid type 4 closely resembles a period on the spectrum of theme types, differing only in the absence of the weak cadence at the midpoint. It is also the only hybrid type in which the basic idea appears twice within the theme (once in the c.b.i. and once at the start of the consequent). For this reason, hybrid type 4 is not typically used in sixteen-measure periods — the return of the basic idea at m. 5 would preempt the higher-level consequent at m. 9.
 
 # Examples

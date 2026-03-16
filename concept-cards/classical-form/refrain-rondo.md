@@ -1,21 +1,40 @@
 ---
 concept: Refrain (Rondo)
-category: form
+slug: refrain-rondo
+category: formal-regions
+subcategory: null
+tier: advanced
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Rondo Forms"
 chapter_number: 16
 pdf_page: 242
-unit: null
-authors: "William E. Caplin"
+section: "Five-Part Rondo"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - five-part-rondo
+  - rondo-main-theme
+extends:
+  - five-part-rondo
+related:
+  - couplet-rondo
+  - refrain-return-types
+  - retransition-rondo
+contrasts_with:
+  - recapitulation
+answers_questions:
+  - "What is a rondo refrain?"
+  - "How can the refrain return (complete, abridged, incomplete)?"
 ---
-
 # Quick Definition
 The principal thematic idea of a rondo that returns multiple times in the home key, alternating with contrasting couplets. Also called the "rondo theme."
 
-# Formal Definition
+# Core Definition
 The refrain (or "rondo theme") is the recurring thematic element that defines rondo form. It appears at all times in the home key, alternating regularly with contrasting couplets. In a five-part rondo, the refrain appears three times; in a sonata-rondo, four times. Each refrain is numbered according to its position in the form. All refrains contain essentially the same material but may appear in complete, abridged, or incomplete versions on subsequent returns. Dramatic intensification in the rondo is generally associated more with the returns of the refrain than with the appearance of contrasting couplets; retransitions leading back to the refrain are typically long and elaborate, often anticipating the refrain's basic idea.
 
-# Construction/Recognition
+# Construction / Recognition
 - Appears in the home key at all times
 - Contains essentially the same material on each appearance
 - Returns may be complete, abridged, or incomplete
@@ -25,7 +44,7 @@ The refrain (or "rondo theme") is the recurring thematic element that defines ro
 - Usually a tight-knit, conventional, symmetrical theme
 - Always closes with a PAC (in complete versions)
 
-# Musical Context
+# Context & Application
 The refrain is the defining element of rondo form. Its regular returns create the characteristic alternation pattern (ABACA or ABACABA). The drama of the rondo lies largely in the anticipation and experience of the refrain's returns, which is why retransitions are often elaborate and extended.
 
 # Examples
@@ -33,7 +52,8 @@ The refrain is the defining element of rondo form. Its regular returns create th
 - Haydn, Piano Sonata in E-flat, Hob. XVI:49, iii: Small ternary as refrain (see ex. 6.6); refrain 2 is incomplete (only modulating A section)
 - Beethoven, Symphony No. 3, Op. 55, ii: Refrain 2 incomplete, moving toward IV and cadencing there
 
-# Related Concepts
+# Relationships
+## Related
 - Couplet (Rondo)
 - Rondo Main Theme
 - Refrain Return Types
@@ -41,9 +61,15 @@ The refrain is the defining element of rondo form. Its regular returns create th
 - Sonata-Rondo
 - Retransition (Rondo)
 
+# Common Errors
+See Common Confusions.
+
 # Common Confusions
 - An abridged refrain still ends with a PAC and thus achieves closure; an incomplete refrain lacks closure. Students should distinguish between these two types of shortened return.
 - The refrain is not the same as a "recapitulation" in the sonata sense. Only refrain 3 of a sonata-rondo corresponds to a sonata recapitulation.
 
 # Source Reference
 Chapter 16: Rondo Forms, pp. 242-243, 244-245, 247-248
+
+# Verification Notes
+Upgraded to v3 template from Chapter 16 extraction.

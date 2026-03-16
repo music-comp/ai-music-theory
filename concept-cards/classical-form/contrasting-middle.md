@@ -1,48 +1,89 @@
 ---
 concept: Contrasting Middle
-category: form
+slug: contrasting-middle
+category: formal-functions
+subcategory: intrathematic
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
-chapter: "Small Ternary"
-chapter_number: 6
-pdf_page: 82
-unit: null
+source_slug: classical-form
 authors: "William E. Caplin"
+chapter: "Some Basic Formal Functions: An Overview"
+chapter_number: 1
+pdf_page: 20
+section: "Small Ternary"
+extraction_confidence: high
+aliases:
+  - "B section"
+  - "middle section"
+prerequisites:
+  - small-ternary-overview
+  - standing-on-the-dominant
+extends: []
+related:
+  - exposition-in-small-ternary
+  - recapitulation-in-small-ternary
+  - tight-knit-vs-loose-organization
+contrasts_with:
+  - exposition-in-small-ternary
+answers_questions:
+  - "What defines the contrasting middle?"
+  - "How does the B section achieve contrast?"
+  - "Why is the B section often nonconventional in form?"
 ---
 
 # Quick Definition
-The B section of a small ternary form, which contrasts with the exposition primarily through harmonic instability (emphasizing dominant harmony) and looser phrase-structural organization.
+The B section of a small ternary form that achieves contrast primarily through harmonic means (emphasizing dominant harmony), displays looser organization than the exposition, and often ends with a half cadence followed by a standing on the dominant.
 
-# Formal Definition
-The contrasting middle achieves its sense of contrast primarily by harmonic and phrase-structural means and only secondarily by melodic-motivic means. The harmonic goal is, with rare exceptions, the dominant of the home key. The B section is looser and usually less conventional in its thematic design than the A section. It never closes with an authentic cadence in the home key; rather, it ends most often with a HC, sometimes with a dominant arrival, and occasionally with an authentic cadence in the dominant region. The contrasting middle never elides with the exposition or recapitulation.
+# Core Definition
+"The contrasting middle (B) of the small ternary achieves its contrast foremost through harmonic means -- namely, by an emphasis on dominant" (Ch. 1, p. 14). "The final harmony of the section is almost always the dominant of the home key, and frequently the section opens with this harmony as well. In the simplest case, the B section consists entirely of a standing on the dominant" (Ch. 1, p. 14). New melodic material and textural changes are typical but "of secondary importance and are not required of the form" (Ch. 1, p. 14). The B section typically has a "loose organization in relation to the more tight-knit A section" (Ch. 1, p. 14) and often acquires a nonconventional form.
 
-# Construction/Recognition
-1. Emphasizes dominant harmony (vs. tonic emphasis in A section)
-2. Looser, less symmetrical phrase structure
-3. No elision with A or A' sections
-4. Common internal procedures: standing on the dominant, model-sequence technique, looser sentential form, postcadential standing on the dominant
-5. Period form is never used for B sections
-6. May modulate to dominant key and confirm with cadence, followed by retransition
+# Prerequisites
+- **Small ternary** -- the theme type containing the contrasting middle
+- **Standing on the dominant** -- common postcadential procedure within the B section
 
-# Musical Context
-The contrasting middle is functionally analogous to the development section of sonata form. It destabilizes the tonal certainty of the exposition and creates expectations for the return of the basic idea in the recapitulation.
+# Key Properties
+1. Primary contrast is HARMONIC: emphasis on dominant harmony
+2. Usually opens and/or closes with dominant
+3. Simplest form: standing on the dominant (exclusive dominant prolongation)
+4. New melodic material is typical but not required
+5. Textural changes are secondary, not primary
+6. Looser organization than the A section
+7. Often nonconventional in form (neither sentence nor period)
+8. May contain HC followed by standing on the dominant
+
+# Construction / Recognition
+- Identify dominant emphasis throughout the section
+- Check for HC and possible standing on the dominant
+- Note looser organization compared to A
+- Do not force the B section into conventional theme-type categories
+
+# Context & Application
+Contrasting middles appear in small ternary themes and analogously at larger scales. Detailed treatment in Chapter 6.
 
 # Examples
-- Mozart, Eine kleine Nachtmusik, K. 525, ii, mm. 9-12 (standing on the dominant)
-- Beethoven, Piano Sonata in E-flat, Op. 7, ii, mm. 9-14 (standing on dominant with V^7/V chords)
-- Beethoven, Symphony No. 7, Op. 92, i, mm. 75-88 (sentential design with premature dominant arrival)
-- Mozart, String Quartet in E-flat, K. 428/421b, iv, mm. 17-26 (model-sequence + postcadential standing on dominant)
+**Example 1** (Ch. 1, pp. 14-15, ex. 1.4): Beethoven, Op. 15, ii, mm. 9-14: new idea on dominant, exact repetition altered to HC at m. 12, standing on the dominant (mm. 12-14) with V/V neighboring chords and fragmentation. Nonconventional form: not a genuine sentence nor period.
 
-# Related Concepts
-- Small Ternary
-- Standing on the Dominant
-- Model-Sequence Technique
-- Dominant Arrival
-- Postcadential Standing on the Dominant
-- Retransition in Small Ternary
+# Relationships
+## Builds Upon
+- Small ternary
+## Enables
+- Dominant tension demanding resolution in the recapitulation
+## Related
+- Standing on the dominant
+- Tight-knit vs. loose organization
+## Contrasts With
+- Exposition (A section): tight-knit, tonic vs. loose, dominant
+
+# Common Errors
+- Expecting dramatic motivic contrast as primary
+- Forcing the B section into sentence/period classification
 
 # Common Confusions
-- The dominant at the end of B resolving to tonic at the start of A' is NOT an authentic cadence
-- A B section entirely on dominant harmony has no cadence at all, since there is no independent harmonic progression
+- The B section's contrast is primarily harmonic, not motivic or textural
+- It frequently has a nonconventional form
 
 # Source Reference
-Chapter 6: Small Ternary, "Contrasting Middle" section, pp. 75-82 (PDF page 82)
+Chapter 1, pp. 13-15 (pdf p. 20); detailed treatment Chapter 6 (pdf p. 82)
+
+# Verification Notes
+Preserved from old card: Beethoven Op. 15 example. Upgraded to v3 with direct quotations.

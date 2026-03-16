@@ -1,48 +1,96 @@
 ---
 concept: Continuation Function
-category: theory
+slug: continuation-function
+category: formal-functions
+subcategory: intrathematic
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
-chapter: "Sentence"
-chapter_number: 3
-pdf_page: 46
-unit: null
+source_slug: classical-form
 authors: "William E. Caplin"
+chapter: "Some Basic Formal Functions: An Overview"
+chapter_number: 1
+pdf_page: 20
+section: "Sentence"
+extraction_confidence: high
+aliases:
+  - "cont."
+  - "continuation phrase"
+prerequisites:
+  - presentation-function
+  - basic-idea
+extends: []
+related:
+  - fragmentation
+  - harmonic-acceleration
+  - liquidation
+  - model-sequence-technique
+  - cadential-function
+contrasts_with:
+  - presentation-function
+  - cadential-function
+answers_questions:
+  - "What characterizes continuation function?"
+  - "What are the four compositional devices of continuation?"
+  - "How does continuation relate to cadential function?"
+  - "Must all four continuation characteristics be present?"
 ---
 
 # Quick Definition
-Continuation function destabilizes the phrase-structural, rhythmic, and harmonic context established by the presentation. It is characterized by four independent compositional devices: fragmentation, harmonic acceleration, increased surface rhythmic activity, and sequential harmonies. None of these is a necessary condition.
+The medial formal function of a sentence that destabilizes the context established by the presentation through fragmentation, harmonic acceleration, increased rhythmic activity, and/or sequential harmonies, driving toward the cadence.
 
-# Formal Definition
-The presentation of a sentence establishes the fundamental content of the theme in a relatively stable phrase-structural and harmonic context: units are clearly two measures long, and tonic prolongation creates harmonic solidity. The repetition combined with absence of cadential closure sets up strong expectations for material that will bring something new and give the theme momentum and drive. Continuation function destabilizes the formal context established by the presentation and gives the theme greater mobility. It is characterized by four compositional devices: (1) phrase-structural fragmentation, (2) acceleration in the rate of harmonic change, (3) increase in surface rhythmic activity, and (4) sequential harmonies. Although often closely related in a given continuation, these are distinct and independent processes, and none is a necessary condition of the function.
+# Core Definition
+Continuation function has "two outstanding characteristics: fragmentation, a reduction in the size of the units; and harmonic acceleration, an increase in the rate of harmonic change" (Ch. 1, p. 10). Additionally, sequential harmonies and increased surface rhythmic activity characterize the function. These are "distinct and independent processes" and "none is a necessary condition" (Ch. 3). Continuation and cadential functions "normally fuse into a single 'continuation phrase' in the eight-measure sentence" (Ch. 1, p. 11), but in looser contexts they can occupy separate phrases with different melodic-motivic content.
 
-# Construction/Recognition
-1. **Fragmentation**: two-measure units reduced to one-measure (most common trait)
-2. **Harmonic acceleration**: faster rate of chord change compared to presentation
-3. **Surface rhythmic acceleration**: shorter note values, denser attack points
-4. **Sequential harmonies**: harmonic patterns transposed to successive degrees, creating instability
-5. Any combination of these traits may express the function
-6. No single trait is required — the function can be expressed by any subset
-7. Continuation function may appear independently of a preceding presentation (e.g., in hybrid themes after an antecedent)
+# Prerequisites
+- **Presentation function** -- the stable context that continuation destabilizes
+- **Basic idea** -- the material that is fragmented and liquidated
 
-# Musical Context
-Continuation function is not restricted to the sentence form — it appears independently in hybrid themes (after antecedents or compound basic ideas), in compound themes, and in loosely organized formal regions. The function's core role is medial: it bridges the initiating function (presentation/antecedent/c.b.i.) and the concluding cadential function. Intrathematic functions in general need not be confined to the standard theme types with which they are conventionally associated.
+# Key Properties
+1. Fragmentation: two-measure units reduced to one-measure (or smaller) units
+2. Harmonic acceleration: faster rate of chord change compared to presentation
+3. Sequential harmonies: harmonic patterns transposed to successive degrees
+4. Increased surface rhythmic activity: shorter note values, denser attack points
+5. Any combination of these traits may express the function; none is individually required
+6. Typically fuses with cadential function in a single phrase (tight-knit sentence)
+7. In loose contexts, may occupy its own distinct phrase separate from the cadential
+
+# Construction / Recognition
+1. Look for reduction in unit size compared to the presentation
+2. Check for increased rate of harmonic change
+3. Note any sequential harmonic progression
+4. Observe whether motivic liquidation is occurring
+5. The function is medial: it bridges presentation/antecedent and cadential function
+
+# Context & Application
+Continuation function is not restricted to the sentence form. It appears in hybrid themes (after antecedents or compound basic ideas), in compound themes, and in loosely organized formal regions. The function's core role is medial, bridging initiating and concluding functions.
 
 # Examples
-- See examples under Fragmentation, Harmonic Acceleration, Surface Rhythmic Acceleration, and Harmonic Sequence for specific illustrations of each device
+**Example 1** (Ch. 1, p. 10, ex. 1.1): Beethoven, Op. 2/1, i, mm. 5-8: fragmentation (2mm to 1mm units), harmonic acceleration (one harmony per two measures in presentation vs. multiple in continuation), liquidation of motive "a," ending with HC.
+**Example 2** (Ch. 1, pp. 11-12, ex. 1.2): Beethoven, Op. 135, iii, mm. 7-10: fragmented units bring entirely different melodic material (no motivic derivation from basic idea), sequential repetition (model-sequence with descending-fifth root pattern: F-Bb-Eb-Ab-Db), PAC at m. 10.
 
-# Related Concepts
-- Continuation Phrase
-- Fragmentation
-- Harmonic Acceleration
-- Surface Rhythmic Acceleration
-- Harmonic Sequence
-- Presentation Phrase
-- Cadential Function in the Sentence
+# Relationships
+## Builds Upon
+- Presentation function (continuation destabilizes the context the presentation established)
+## Enables
+- Cadential function (continuation drives toward the cadence)
+- Sentence form (presentation + continuation/cadential = sentence)
+## Related
+- Fragmentation, harmonic acceleration, liquidation, model-sequence technique
+## Contrasts With
+- Presentation function: stable, ongoing, repetitive vs. destabilizing, goal-directed, fragmenting
+- Cadential function: continuation is medial and driving; cadential is terminal and conclusive
+
+# Common Errors
+- Requiring all four characteristics to be simultaneously present
+- Confusing continuation function with continuation phrase
 
 # Common Confusions
-- Continuation function and continuation phrase are related but not identical — the function can appear in phrases not labeled "continuation" (e.g., in the contrasting idea of an antecedent)
-- The four devices are independent — do not require all four to be present to identify continuation function
-- Continuation function is medial, not terminal — it sets up the cadential function but does not itself provide closure
+- Continuation function and continuation phrase are related but not identical; the function can appear in phrases not labeled "continuation"
+- The four devices are independent; do not require all four to identify continuation function
+- Fragmentation concerns unit length, not motivic content; fragments may introduce entirely new melodic material
 
 # Source Reference
-Chapter 3: Sentence, "Continuation Function" section (PDF page 46)
+Chapter 1, pp. 10-12 (pdf p. 20); detailed treatment in Chapter 3 (pdf p. 46)
+
+# Verification Notes
+Preserved from old card: four-device framework, independence of devices, medial role, distinction from continuation phrase. Merged Ch. 1 overview content with Ch. 3 reference. Upgraded to v3 with both Beethoven examples from Ch. 1.

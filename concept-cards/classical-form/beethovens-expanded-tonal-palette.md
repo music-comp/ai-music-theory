@@ -1,27 +1,44 @@
 ---
 concept: Beethoven's Expanded Tonal Palette
-category: analysis
+slug: beethovens-expanded-tonal-palette
+category: compositional-techniques
+subcategory: tonal-organization
+tier: advanced
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Development"
 chapter_number: 10
 pdf_page: 150
-unit: null
-authors: "William E. Caplin"
+section: null
+extraction_confidence: high
+aliases:
+  - "flat-region development keys"
+prerequisites:
+  - development-section
+  - tonal-organization-of-development
+extends:
+  - flat-region-emphasis
+related:
+  - development-key
+contrasts_with: []
+answers_questions:
+  - "How does Beethoven's tonal palette in developments differ from Haydn and Mozart?"
 ---
 
 # Quick Definition
 Beethoven's practice of using development keys borrowed from the parallel minor, expanding the tonal spectrum beyond the standard regions employed by Haydn and Mozart.
 
-# Formal Definition
+# Core Definition
 Beethoven expands the tonal spectrum by employing development keys borrowed from the parallel minor of the home key, such as bVI, bIII, and minor V. Although bVI and bIII are major-mode triads, their close relationship to the parallel minor creates sufficient contrast with the exposition's keys.
 
-# Construction/Recognition
+# Construction / Recognition
 - bVI (lowered submediant): major triad, related to parallel minor
 - bIII (lowered mediant): major triad borrowed from minor
 - Minor V: dominant in its minor form
 - These borrowed keys provide modal contrast despite major-mode chord quality
 
-# Musical Context
+# Context & Application
 This expansion represents a stylistic evolution, augmenting but not replacing the standard Haydn/Mozart keys.
 
 # Examples

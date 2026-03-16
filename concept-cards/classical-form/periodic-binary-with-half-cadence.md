@@ -1,21 +1,33 @@
 ---
 concept: Periodic Binary with Half Cadence
-category: form
+slug: periodic-binary-with-half-cadence
+category: theme-types
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Small Binary"
 chapter_number: 7
 pdf_page: 98
-unit: null
-authors: "William E. Caplin"
+section: "First Part"
+extraction_confidence: high
+aliases: []
+prerequisites: ["small-binary", "period"]
+extends: []
+related: ["first-part-of-binary"]
+contrasts_with: ["period"]
+answers_questions:
+  - "What happens when the first part of a binary has periodic qualities but ends with a HC?"
+  - "How does a failed consequent define a small binary?"
 ---
 
 # Quick Definition
 A small binary whose first part expresses periodic organization yet ends with a half cadence rather than an authentic cadence, denying the implied period form and strongly suggesting binary structure.
 
-# Formal Definition
+# Core Definition
 The first part of a small binary can express a sense of periodic organization yet still end with a HC. Among conventional theme-types, only the sentence and sentential hybrid normally end with a HC; the period and periodic hybrids normally conclude with an authentic cadence. When a first part opens with an antecedent-like phrase followed by a phrase that restates the basic idea in the manner of a consequent but closes with another HC instead of the expected authentic cadence, the result is a "failed consequent" and a nonconventional form with prominent periodic qualities. This HC ending also creates an overall antecedent-consequent relationship between the two parts of the binary (HC in part 1, PAC in part 2).
 
-# Construction/Recognition
+# Construction / Recognition
 1. First part opens with regular antecedent phrase
 2. Second phrase begins like a consequent (restating basic idea)
 3. Second phrase ends with HC instead of expected authentic cadence
@@ -24,7 +36,7 @@ The first part of a small binary can express a sense of periodic organization ye
 6. The repeated HC denies the period interpretation
 7. Overall two-part structure may suggest a "reversed" or "inverted" period
 
-# Musical Context
+# Context & Application
 This form is particularly interesting because it sets up and then denies multiple formal expectations. The listener initially expects a period within the first part, then a 16-measure period when the first part repeats. Both expectations fail. The resulting cadential differentiation between the two parts (HC then PAC) suggests a period-like relationship across the binary, but the lack of consequent function in the second part prevents a true periodic interpretation. This formal ambiguity is characteristic of the small binary's intermediary position between tight-knit and loose theme-types.
 
 # Examples

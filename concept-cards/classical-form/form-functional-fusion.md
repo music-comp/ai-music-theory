@@ -1,45 +1,87 @@
 ---
 concept: Form-Functional Fusion
-category: theory
+slug: form-functional-fusion
+category: formal-functions
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Sentence"
 chapter_number: 3
 pdf_page: 46
-unit: null
-authors: "William E. Caplin"
+section: "Continuation=>Cadential"
+extraction_confidence: high
+aliases: ["continuation=>cadential", "cont.=>cad.", "functional fusion"]
+prerequisites: ["continuation-function", "cadential-function"]
+extends: []
+related: ["sentence", "expanded-cadential-progression"]
+contrasts_with: []
+answers_questions:
+  - "What does the arrow notation (=>) mean in Caplin's theory?"
+  - "What is continuation=>cadential fusion?"
+  - "When are continuation and cadential functions separate vs. fused?"
 ---
-
 # Quick Definition
-Form-functional fusion occurs when two different formal functions (continuation and cadential) are expressed simultaneously within a single phrase. In the sentence, the continuation phrase fuses continuation function with cadential function, requiring the analyst to acknowledge both roles.
+The merging of two distinct formal functions--most commonly continuation and cadential--into a single phrase, notated with the => symbol, representing the normative arrangement in the sentence's second phrase.
 
-# Formal Definition
-The presence of two different functions in a single group can more technically be termed form-functional fusion. Fusion poses a problem of terminology because formal units are preferably labeled according to their primary functional expression. The decision to call the second half of a sentence a "continuation phrase" reflects the fact that in the majority of cases, continuation function is more salient throughout the phrase. However, when cadential function achieves equal or greater prominence (as when an expanded cadential progression supports the entire phrase), the label "continuation => cadential" acknowledges both functions, with the => symbol denoting retrospective reinterpretation.
+# Core Definition
+Form-functional fusion occurs when two distinct formal functions are expressed within a single phrase rather than in separate phrases. The most common fusion is **continuation=>cadential** (cont.=>cad.), where the continuation phrase of a sentence incorporates cadential function. The => symbol denotes retrospective reinterpretation: what begins as continuation function becomes cadential function as the phrase progresses. This fusion is the normative situation in the sentence. When the two functions are expressed in separate phrases, the result is a looser formal organization. The decision to label the fused phrase "continuation" reflects the fact that in the majority of cases, continuation function is more salient throughout; "continuation=>cadential" acknowledges both functions when cadential function achieves equal or greater prominence.
 
-# Construction/Recognition
-1. A single phrase expresses two distinct formal functions simultaneously
-2. In the sentence: continuation function (fragmentation, acceleration) + cadential function (cadential progression, liquidation)
-3. The primary function determines the phrase label (usually "continuation")
-4. When both functions are equally prominent: "continuation => cadential"
-5. In loosely organized contexts, the two functions may receive separate phrases instead of being fused
-6. The => symbol means "becomes" — retrospective reinterpretation of function
+# Prerequisites
+- Continuation Function (the first component of the fusion)
+- Cadential Function (the second component)
 
-# Musical Context
-Form-functional fusion is characteristic of the tight-knit sentence form, where the limited eight-measure span necessitates combining continuation and cadential functions within a single four-measure phrase. In more loosely organized contexts (subordinate themes, development sections), these functions may be allocated separate phrases, with a distinct continuation phrase followed by a distinct cadential phrase.
+# Key Properties
+- Arrow notation (=>) indicates fusion of two functions in one phrase
+- Continuation=>cadential is the most common type
+- This fusion is the norm in sentences; separation is a loosening technique
+- The expanded cadential progression often underlies the fused phrase
+- Also appears in hybrid themes (e.g., c.b.i. + cont.=>cad.) and compound themes
+- The => symbol means "becomes"--retrospective reinterpretation
+
+# Construction / Recognition
+1. Identify a phrase that begins with continuation characteristics (fragmentation, acceleration) and ends with cadential closure
+2. If both functions occupy a single four-measure phrase, label it cont.=>cad.
+3. If continuation occupies one phrase and cadential function a separate phrase, they are not fused
+4. In compound themes, cont.=>cad. labels an eight-measure phrase with both functions
+5. When cadential function is minimal, "continuation" alone suffices as the label
+
+# Context & Application
+Functional fusion appears throughout classical form. In the sentence, the fused cont.=>cad. phrase is standard. In compound periods, the consequent's second phrase often shifts from continuation to cont.=>cad. In hybrid type 2 (ant. + cad.), the cadential phrase lacks continuation characteristics, so there is no fusion. In loosely organized contexts (subordinate themes, development sections), these functions may be allocated separate phrases. Fusion is characteristic of tight-knit structure.
 
 # Examples
-- All continuation phrases in sentences exhibit some degree of form-functional fusion
-- Haydn, String Quartet in D Minor, Op. 42, i, mm. 5-8: continuation => cadential — fragmentation and harmonic acceleration coexist with an expanded cadential progression from the beginning of the phrase
+- Beethoven, Op. 2/1, i, mm. 5-8: continuation function (fragmentation, acceleration) fuses with cadential function (HC) in a single phrase
+- Haydn, String Quartet in D Minor, Op. 42, i, mm. 5-8: cont.=>cad. with fragmentation and expanded cadential progression from the beginning of the phrase
+- Haydn, Symphony No. 95 in C Minor, iii, mm. 5-8: c.b.i. followed by cont.=>cad. phrase
+- Beethoven, Piano Sonata in C Minor, Op. 10/1, ii, mm. 13-16: cont.=>cad. phrase in compound period consequent
 
-# Related Concepts
-- Continuation Phrase
-- Cadential Function in the Sentence
-- Continuation Becomes Cadential
-- Sentence
+# Relationships
+## Builds Upon
+- Continuation Function
+- Cadential Function
+
+## Enables
+- Sentence (cont.=>cad. is the standard second phrase)
+- Tight-knit organization (fusion contributes to formal efficiency)
+
+## Related
+- Expanded Cadential Progression (often underlies the fused phrase)
+
+## Contrasts With
+- Separate continuation and cadential phrases (looser organization)
+- Hybrid type 2 cadential phrase (exclusively cadential, no fusion)
+
+# Common Errors
+- Assuming continuation and cadential functions are always fused; separation is possible and indicates loosening
+- Confusing cont.=>cad. with exclusively cadential function; cont.=>cad. requires continuation characteristics at the start
 
 # Common Confusions
-- Fusion does not mean the functions are confused or unclear — both are genuinely present and can be analytically identified
-- The label "continuation phrase" is a simplification — students should always be aware that cadential function is also present
-- In loosely organized forms, continuation and cadential functions are often *not* fused but occupy separate phrases — fusion is characteristic of tight-knit structure
+- **Fused vs. separate**: in a sentence, cont.=>cad. is normative; separate phrases for each function represent a deviation toward looser form
+- **Continuation=>cadential vs. exclusively cadential**: in hybrid type 2 (ant. + cad.), the second phrase is exclusively cadential with no continuation characteristics--this is NOT a fusion
+- **Fusion does not mean ambiguity**: both functions are genuinely present and analytically identifiable
 
 # Source Reference
-Chapter 3: Sentence, "Additional Features" section (PDF page 46)
+Chapter 3: Sentence, "Additional Features" and "Continuation=>Cadential" sections (PDF page 46)
+
+# Verification Notes
+Re-extracted from Chapter 3 and merged with existing card. The => notation and retrospective reinterpretation confirmed across multiple chapters.

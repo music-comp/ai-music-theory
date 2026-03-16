@@ -1,21 +1,45 @@
 ---
 concept: Concerto Form
-category: form
+slug: concerto-form
+category: full-movement-forms
+subcategory: null
+tier: advanced
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Concerto Form"
 chapter_number: 17
 pdf_page: 254
-unit: null
-authors: "William E. Caplin"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - sonata-form
+  - opening-ritornello
+  - solo-exposition
+extends:
+  []
+related:
+  - subordinate-key-ritornello
+  - solo-development
+  - solo-recapitulation
+  - closing-ritornello
+  - textural-frame
+  - cadenza
+contrasts_with:
+  - sonata-form
+answers_questions:
+  - "What are the six sections of concerto form?"
+  - "How does concerto form differ from sonata form?"
+  - "Why is the 'double exposition' model misleading?"
 ---
-
 # Quick Definition
 The formal scheme of a classical concerto first movement, derived from baroque ritornello form and infused with sonata-form elements, consisting of six principal sections that pit a soloist against a full orchestra.
 
-# Formal Definition
+# Core Definition
 Concerto form is an independent formal type, a variant of neither the baroque ritornello form nor the classical sonata form but one that incorporates form-functional elements from both. It consists of six principal sections: (1) an opening ritornello for orchestra alone, (2) a solo exposition with orchestral accompaniment that modulates from home to subordinate key, (3) a subordinate-key ritornello for orchestra, (4) a solo development, (5) a solo recapitulation, and (6) a closing ritornello for orchestra (usually interrupted by a solo cadenza). The form is used in the first movement of all classical concertos and sometimes in slow movements, but rarely in finales. Because of the inherent inequality between soloist and orchestra, compositional devices are developed to highlight the soloist while giving the orchestra an independent identity through its ritornellos.
 
-# Construction/Recognition
+# Construction / Recognition
 - Six sections: Opening Ritornello - Solo Exposition - Subordinate-Key Ritornello - Solo Development - Solo Recapitulation - Closing Ritornello
 - Opening ritornello: orchestra alone, largely in home key, resembles a nonmodulating sonata exposition
 - Solo exposition: functions like a sonata exposition, modulating from I to V
@@ -25,7 +49,7 @@ Concerto form is an independent formal type, a variant of neither the baroque ri
 - Closing ritornello: orchestra alone, includes cadenza, completes textural frame
 - The textural frame (orchestra alone at beginning and end) is a defining feature
 
-# Musical Context
+# Context & Application
 The concerto was one of the principal "public" genres of classical music. The classical concerto pits a single instrumentalist against a full orchestra. Concerto form addresses the challenge of balancing the soloist's prominence with the orchestra's identity. The form appears in virtually all first movements of classical concertos by Haydn, Mozart, and Beethoven.
 
 # Examples
@@ -33,7 +57,8 @@ The concerto was one of the principal "public" genres of classical music. The cl
 - Mozart, Piano Concerto in D Minor, K. 466, i: Features an alternative main theme in the solo exposition
 - Haydn, Trumpet Concerto in E-flat, Hob. VIIe:1, i: Subordinate-key ritornello that fails to close cadentially
 
-# Related Concepts
+# Relationships
+## Related
 - Opening Ritornello
 - Solo Exposition
 - Subordinate-Key Ritornello
@@ -44,6 +69,9 @@ The concerto was one of the principal "public" genres of classical music. The cl
 - Cadenza
 - Sonata Form
 
+# Common Errors
+See Common Confusions.
+
 # Common Confusions
 - Concerto form has often been described as a sonata with an orchestral introduction ("double exposition" model). While this view has some attractions, it is misleading because it ignores the historical development from ritornello form and fails to account for compositional procedures that are vestiges of the older ritornello form.
 - The opening ritornello is not simply a sonata exposition repeated by the orchestra; it largely remains in the home key and serves a distinct set of functions.
@@ -51,3 +79,6 @@ The concerto was one of the principal "public" genres of classical music. The cl
 
 # Source Reference
 Chapter 17: Concerto Form, pp. 254-262
+
+# Verification Notes
+Upgraded to v3 template from Chapter 17 extraction.

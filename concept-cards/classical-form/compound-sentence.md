@@ -1,21 +1,34 @@
 ---
 concept: Compound Sentence
-category: form
+slug: compound-sentence
+category: theme-types
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Hybrid Themes and Compound Themes"
 chapter_number: 5
 pdf_page: 70
-unit: null
-authors: "William E. Caplin"
+section: "Sixteen-Measure Sentence"
+extraction_confidence: high
+aliases: ["sixteen-measure sentence"]
+prerequisites: ["sentence", "compound-basic-idea"]
+extends: ["sentence"]
+related: ["compressed-continuation-in-compound-sentence", "compound-period"]
+contrasts_with: ["compound-period"]
+answers_questions:
+  - "What is a compound sentence?"
+  - "How is a sixteen-measure sentence constructed?"
+  - "What is a compressed continuation in a compound sentence?"
 ---
 
 # Quick Definition
 The compound (sixteen-measure) sentence consists of an eight-measure presentation (containing a compound basic idea and its repetition over tonic prolongation) followed by an eight-measure continuation with fragmentation, harmonic acceleration, and cadential closure (usually PAC).
 
-# Formal Definition
+# Core Definition
 The model sixteen-measure sentence consists of an eight-measure presentation followed by an eight-measure continuation. The presentation contains a compound basic idea and its immediate repetition, both supported by a tonic prolongational progression. The continuation is characterized by fragmentation, harmonic acceleration, sequential harmonies, or increased surface rhythm. The cadential progression is usually expanded to support the final four-measure phrase. The sixteen-measure sentence most often closes with a PAC; a concluding HC is rare. Unlike the period, which maintains balance between its halves, the sentence's forward-striving character has less need to preserve symmetrical phrase structure.
 
-# Construction/Recognition
+# Construction / Recognition
 1. **Presentation (mm. 1-8)**: compound basic idea (mm. 1-4) + repetition of c.b.i. (mm. 5-8), both over tonic prolongation
 2. Repetition types: statement-response most common
 3. **Continuation (mm. 9-16)**: fragmentation (4-measure c.b.i. typically fragmented to 2-measure, then 1-measure units), harmonic acceleration, sequential progressions
@@ -23,7 +36,7 @@ The model sixteen-measure sentence consists of an eight-measure presentation fol
 5. **Compressed continuation variant**: continuation functions expressed in only four measures (mm. 9-12), with repetition or standing on the dominant restoring sixteen-measure length
 6. Fragmentation ratio: normatively 2:1 (4-measure units to 2-measure), then further 2:1 (2-measure to 1-measure)
 
-# Musical Context
+# Context & Application
 The compound sentence is one of the two principal compound theme types (alongside the compound period). Its forward-driving character is even more pronounced than in the simple sentence due to the greater span and more dramatic fragmentation process. The compressed continuation is a characteristic deviation — since continuation and cadence can often be fully expressed in fewer than eight measures, the composer may compress the continuation and restore symmetry through repetition or extension.
 
 # Examples

@@ -1,21 +1,33 @@
 ---
 concept: "Hybrid Theme Type 2: Antecedent + Cadential"
-category: form
+slug: hybrid-theme-type-2
+category: theme-types
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Hybrid Themes and Compound Themes"
 chapter_number: 5
 pdf_page: 70
-unit: null
-authors: "William E. Caplin"
+section: "Hybrid 2"
+extraction_confidence: high
+aliases: ["ant. + cad."]
+prerequisites: ["antecedent", "cadential-function", "expanded-cadential-progression"]
+extends: []
+related: ["hybrid-themes-overview", "spectrum-of-theme-types"]
+contrasts_with: ["hybrid-theme-type-1", "form-functional-fusion"]
+answers_questions:
+  - "What is hybrid theme type 2?"
+  - "How does antecedent + cadential differ from antecedent + continuation?"
 ---
 
 # Quick Definition
 Hybrid type 2 features an antecedent phrase followed by a phrase built exclusively on an expanded cadential progression (E.C.P.). Unlike the same phrase in a sentence context (where it would be called "continuation => cadential"), here the phrase is often exclusively cadential with few or no continuational characteristics.
 
-# Formal Definition
+# Core Definition
 A second hybrid type features an antecedent followed by a phrase built exclusively on an expanded cadential progression. In the context of a sentence, this latter phrase is termed "continuation => cadential" because we expect a presentation to lead to a continuation and because the phrase usually contains traits of this function. But in the context of an implied period, as suggested by an initial antecedent, the situation differs: we do not expect a continuation, and the phrase often displays few, if any, continuational characteristics. Thus following an antecedent, the second phrase can be considered exclusively cadential in function.
 
-# Construction/Recognition
+# Construction / Recognition
 1. **First phrase (mm. 1-4)**: genuine antecedent — basic idea + contrasting idea + weak cadence
 2. **Second phrase (mm. 5-8)**: built on an expanded cadential progression (E.C.P.)
 3. Little or no fragmentation — units may remain at two-measure size
@@ -23,7 +35,7 @@ A second hybrid type features an antecedent followed by a phrase built exclusive
 5. The basic idea does not return (distinguishing it from a period)
 6. Function is labeled "cadential" (not "continuation => cadential") when continuational traits are absent
 
-# Musical Context
+# Context & Application
 Hybrid type 2 is somewhat more periodic than hybrid type 1 (since continuational traits are missing) and lies between hybrid 1 and the period on the spectrum of theme types (see Figure 5.1). It can also appear with a sentential antecedent — one whose basic idea contains a one-measure motive repeated like a miniature presentation.
 
 # Examples

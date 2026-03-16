@@ -1,21 +1,33 @@
 ---
 concept: "Hybrid Theme Type 3: Compound Basic Idea + Continuation"
-category: form
+slug: hybrid-theme-type-3
+category: theme-types
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Hybrid Themes and Compound Themes"
 chapter_number: 5
 pdf_page: 70
-unit: null
-authors: "William E. Caplin"
+section: "Hybrid 3"
+extraction_confidence: high
+aliases: ["c.b.i. + cont."]
+prerequisites: ["compound-basic-idea", "continuation-function"]
+extends: []
+related: ["hybrid-themes-overview", "spectrum-of-theme-types", "sentence"]
+contrasts_with: ["sentence"]
+answers_questions:
+  - "What is hybrid theme type 3?"
+  - "How does c.b.i. + continuation differ from a sentence?"
 ---
 
 # Quick Definition
 Hybrid type 3 consists of a compound basic idea (basic idea + contrasting idea without a cadence) followed by a continuation phrase. It is very much like a sentence except that the basic idea is not repeated — the contrasting idea replaces the repetition.
 
-# Formal Definition
+# Core Definition
 By definition, an antecedent contains a basic idea followed by a contrasting idea leading to a weak cadence. If a cadence does not appear at the end of the phrase, an essential component of antecedent function is lost. The lack of cadential closure creates open-endedness, giving the phrase the character and function of a higher-level basic idea. The term "compound basic idea" (c.b.i.) applies to a phrase consisting of a simple basic idea and a contrasting idea that does not close with a cadence. By virtue of its melodic-motivic content, a compound basic idea resembles an antecedent. By its underlying harmony, which is usually tonic prolongational, a compound basic idea resembles a presentation. The four-measure phrase itself thus represents a hybrid of antecedent and presentation functions. The following phrase is a typical continuation with fragmentation and harmonic acceleration.
 
-# Construction/Recognition
+# Construction / Recognition
 1. **First phrase (mm. 1-4)**: compound basic idea — basic idea (mm. 1-2) + contrasting idea (mm. 3-4) with **no cadence**
 2. Underlying harmony: typically tonic prolongational (like a presentation)
 3. Melodic content: contrasting (like an antecedent)
@@ -23,7 +35,7 @@ By definition, an antecedent contains a basic idea followed by a contrasting ide
 5. The absence of cadence in the first phrase is what distinguishes this from hybrid type 1 (which has a genuine antecedent with cadence)
 6. The tonic prolongation may extend into the beginning of the continuation
 
-# Musical Context
+# Context & Application
 Hybrid type 3 is very close to a sentence on the spectrum of theme types, differing only in that the basic idea is not repeated (it receives a contrasting idea instead). It frequently appears in the repertory and is particularly useful in compound themes, where the term "compound basic idea" gains additional appropriateness as it occupies the same hierarchical position as a simple basic idea.
 
 # Examples

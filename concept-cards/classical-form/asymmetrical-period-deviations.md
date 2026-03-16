@@ -1,21 +1,33 @@
 ---
 concept: Asymmetrical Period Deviations
-category: form
+slug: asymmetrical-period-deviations
+category: compositional-techniques
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Period"
 chapter_number: 4
 pdf_page: 60
-unit: null
-authors: "William E. Caplin"
+section: "Deviations from the Norm"
+extraction_confidence: high
+aliases: []
+prerequisites: ["period"]
+extends: []
+related: ["symmetrical-period-deviations", "expansion", "extension", "deceptive-cadence"]
+contrasts_with: ["symmetrical-period-deviations"]
+answers_questions:
+  - "What are asymmetrical deviations from the model period?"
+  - "How do deceptive cadences create asymmetrical periods?"
 ---
 
 # Quick Definition
 Asymmetrical deviations from the model period occur when the antecedent assumes its regular four-measure length but the consequent is altered (usually expanded or extended), creating an imbalanced grouping structure (e.g., 4+6, 4+8). This creates a different aesthetic effect from symmetrical deviations.
 
-# Formal Definition
+# Core Definition
 A different aesthetic effect from symmetrical deviations occurs when the antecedent assumes its regular four-measure length, thus promising a normative period, but the consequent is altered to create an asymmetrical deviation. The asymmetry usually arises from an expansion of the consequent, but sometimes the consequent is extended when an expected PAC fails to appear (e.g., a deceptive cadence) and the phrase or a portion thereof is repeated to bring true cadential closure.
 
-# Construction/Recognition
+# Construction / Recognition
 1. Antecedent maintains its normative four-measure length
 2. Consequent is expanded or extended beyond four measures
 3. Common causes of asymmetry:
@@ -24,7 +36,7 @@ A different aesthetic effect from symmetrical deviations occurs when the anteced
    - Expansion of the contrasting idea or cadential progression
 4. The "promise" of a normative period (suggested by the regular antecedent) is disrupted
 
-# Musical Context
+# Context & Application
 Asymmetrical deviations create a sense of surprise and heightened expressivity. The regular antecedent sets up normative expectations, and the expanded consequent either delays or intensifies the expected cadential closure. This technique is often used for dramatic effect, with the extended consequent building greater momentum toward a climactic PAC.
 
 # Examples

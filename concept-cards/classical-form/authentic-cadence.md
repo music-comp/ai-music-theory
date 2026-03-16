@@ -1,51 +1,102 @@
 ---
 concept: Authentic Cadence
-category: theory
+slug: authentic-cadence
+category: harmony
+subcategory: cadence-types
+tier: foundational
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Fundamental Progressions of Harmony"
 chapter_number: 2
 pdf_page: 34
-unit: null
-authors: "William E. Caplin"
+section: "Cadential Progressions"
+extraction_confidence: high
+aliases:
+  - "PAC"
+  - "IAC"
+  - "perfect authentic cadence"
+  - "imperfect authentic cadence"
+prerequisites:
+  - cadential-progression
+  - dominant-function
+  - tonic-function
+  - pre-dominant-function
+extends:
+  - cadential-progression
+related:
+  - half-cadence
+  - deceptive-cadence
+  - cadential-six-four
+contrasts_with:
+  - half-cadence
+  - deceptive-cadence
+answers_questions:
+  - "What is an authentic cadence?"
+  - "What distinguishes PAC from IAC?"
+  - "What root-position requirements apply?"
+  - "What pre-dominant and dominant embellishments are used?"
 ---
 
 # Quick Definition
-The strongest tonal confirmation, achieved by a cadential progression ending with root-position V resolving to root-position I, exposing a descending-fifth bass motion.
+The strongest tonal confirmation, achieved by a cadential progression ending with root-position V resolving to root-position I, with the PAC (soprano on scale-degree 1) providing complete closure and the IAC (soprano on scale-degree 3 or 5) providing weaker closure.
 
-# Formal Definition
-The authentic cadential progression provides the strongest confirmation of a tonality. Its complete form consists of the fundamental harmonic functions in temporal sequence: initial tonic - pre-dominant - dominant - final tonic. For sufficient cadential strength, both the dominant and the final tonic must be in root position, exposing the fundamental-bass motion of a descending fifth (or ascending fourth) in the bass voice. If the dominant were inverted, the stepwise bass motion would usurp the melodic function of the upper voices. If the final tonic is inverted or altered, the progression becomes deceptive. The distinction between perfect authentic cadence (PAC, with ^1 in the soprano at the final tonic) and imperfect authentic cadence (IAC, with ^3 or ^5 in the soprano) is crucial for formal function.
+# Core Definition
+"The strongest tonal confirmation is achieved by an authentic cadential progression" (Ch. 2, p. 26). Its complete form: initial tonic - pre-dominant - dominant - final tonic. "For the authentic cadential progression to possess sufficient harmonic strength to confirm a tonality, both the dominant and the final tonic must be in root position," exposing "the fundamental-bass motion of a descending fifth (or ascending fourth) in the bass voice" (Ch. 2, p. 27). "If the dominant were inverted, then the move to the tonic would necessarily result in a stepwise motion in the bass, thus usurping the melodic function of the upper voices" (Ch. 2, p. 27).
 
-# Construction/Recognition
-- Complete: I(6) - pre-dominant - V(7) - I (all in root position for V and final I)
-- Incomplete: omits initial tonic, pre-dominant, or both
-- PAC: soprano ends on ^1 over root-position I (strongest closure)
-- IAC: soprano ends on ^3 or ^5 over root-position I (weaker closure)
-- Bass must show descending fifth (^5 to ^1) at the V-I resolution
-- The cadential six-four embellishes the dominant, not the tonic
-- II6 is the more characteristic pre-dominant (not IV)
+# Prerequisites
+- **Cadential progression** -- the broader category
+- **Tonic, dominant, pre-dominant functions** -- the constituent harmonies
 
-# Musical Context
-The authentic cadence is the primary means of confirming tonality in classical music. PAC provides full thematic closure (end of consequent phrases, end of themes). IAC provides weaker closure (sometimes used at the end of antecedent phrases). The strength of the authentic cadence makes it essential for the structural endings of themes, subordinate themes, and recapitulations.
+# Key Properties
+1. Complete: I(6) - PD - V(7) - I; incomplete: omits initial T or PD
+2. Both V and final I must be root-position
+3. PAC: soprano on scale-degree 1 (strongest closure)
+4. IAC: soprano on scale-degree 3 or 5 (weaker closure)
+5. II6 is more characteristic pre-dominant than IV
+6. Dominant embellishment: cadential six-four
+7. Pre-dominant embellishments: chromatic pre-dominants (VII7/V, augmented sixths, bII6)
+8. Initial tonic embellishments: neighboring V7, secondary dominants of IV or II
+
+# Construction / Recognition
+- Verify root-position V and root-position final I
+- Check soprano at final I (scale-degree 1 = PAC, scale-degree 3 or 5 = IAC)
+- Identify pre-dominant type and any embellishments
+
+# Context & Application
+PAC provides full thematic closure (end of consequent phrases, subordinate themes, recapitulations). IAC provides weaker closure (sometimes at end of antecedent phrases). The distinction between PAC and IAC has significant formal implications (cadential differentiation).
 
 # Examples
-- Basic: I-II6-V-I (ex. 2.5a)
-- With cadential six-four: I-II6-I6/4-V-I (ex. 2.6)
-- With Neapolitan pre-dominant: I-bII6-V-I (ex. 2.7a-b, especially in minor)
-- With chromatic pre-dominant: I-VII7/V-V-I (ex. 2.7c-h)
+**Example 1** (Ch. 2, ex. 2.5a): Basic: I-II6-V-I.
+**Example 2** (Ch. 2, ex. 2.6): With cadential six-four: I-II6-I6/4-V-I.
+**Example 3** (Ch. 2, ex. 2.7a-b): With Neapolitan: I-bII6-V-I (especially in minor).
+**Example 4** (Ch. 2, ex. 2.7c-h): With chromatic pre-dominants: VII7/V, consecutive diminished sevenths.
+**Example 5** (Ch. 2, ex. 2.8b-d): Initial tonic embellished by neighboring V7 or secondary dominant of IV.
 
-# Related Concepts
-- Cadential Progression
-- Half Cadence
-- Deceptive Cadence
-- Cadential Six-Four
-- Pre-dominant Function
-- Perfect Authentic Cadence
-- Imperfect Authentic Cadence
+# Relationships
+## Builds Upon
+- Cadential progression and all three harmonic functions
+## Enables
+- Cadential function (the formal function requiring authentic cadence)
+- Cadential differentiation (PAC vs. IAC)
+- Essential expositional closure (requires PAC)
+## Related
+- Half cadence, deceptive cadence (the other cadence types)
+- Cadential six-four (dominant embellishment)
+## Contrasts With
+- Half cadence: ends on V instead of resolving to I
+- Deceptive cadence: final tonic replaced by substitute harmony
+
+# Common Errors
+- Accepting an inverted V or inverted final I as a genuine authentic cadence
 
 # Common Confusions
-- The cadential six-four is not a tonic in second inversion; it is a dominant embellishment with suspension-like resolution.
-- II6 is more typical than IV as the classical pre-dominant, contrary to many textbooks.
-- An IAC is an authentic cadence but provides weaker closure than a PAC, which has significant formal implications.
+- The cadential six-four is not a tonic in second inversion; it is a dominant embellishment
+- II6 is more typical than IV in classical cadential progressions
+- An IAC provides weaker closure than PAC, with significant formal implications
 
 # Source Reference
-Chapter 2: Fundamental Progressions of Harmony, pp. 26-28 (pdf_page 34)
+Chapter 2, pp. 26-28 (pdf p. 34)
+
+# Verification Notes
+Preserved from old card: all content including embellishment types. Upgraded to v3 with direct quotations.

@@ -1,27 +1,45 @@
 ---
 concept: Development Ending
-category: technique
+slug: development-ending
+category: formal-regions
+subcategory: development
+tier: advanced
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Development"
 chapter_number: 10
 pdf_page: 150
-unit: null
-authors: "William E. Caplin"
+section: null
+extraction_confidence: high
+aliases:
+  - "retransition"
+prerequisites:
+  - development-section
+  - standing-on-the-dominant
+extends:
+  - retransition
+related:
+  - false-recapitulation
+  - recapitulation
+contrasts_with: []
+answers_questions:
+  - "How does the development section end?"
 ---
 
 # Quick Definition
 The concluding passage of the development section, normally arriving on the dominant of the home key to prepare for the recapitulation, sometimes with exceptional harmonic substitutions.
 
-# Formal Definition
+# Core Definition
 The final harmony of the development is normally the dominant of the home key. Two exceptions arise: (1) when the recapitulation does not begin on tonic, the development ends on a harmony leading naturally to the recapitulation's opening; (2) the development may end with a dominant substitute such as V/VI or V/III, both of which contain the leading tone. When using V/VI or V/III, the texture is typically reduced to a single voice to avoid cross-relations.
 
-# Construction/Recognition
+# Construction / Recognition
 - Standard ending: half cadence in home key followed by standing on the dominant
 - Exceptional: VII^6/5/V when recapitulation begins on V7
 - Substitute dominants: V/VI or V/III (both contain leading tone)
 - Texture reduction at the end to avoid cross-relations with substitute dominants
 
-# Musical Context
+# Context & Application
 The development ending creates maximum harmonic tension, building expectation for the "double return."
 
 # Examples

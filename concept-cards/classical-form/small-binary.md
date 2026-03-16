@@ -1,21 +1,34 @@
 ---
 concept: Small Binary
-category: form
+slug: small-binary
+category: theme-types
+tier: intermediate
 source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source_slug: classical-form
+authors: "William E. Caplin"
 chapter: "Small Binary"
 chapter_number: 7
 pdf_page: 98
-unit: null
-authors: "William E. Caplin"
+section: null
+extraction_confidence: high
+aliases: ["binary form"]
+prerequisites: ["sentence", "period"]
+extends: []
+related: ["first-part-of-binary", "second-part-of-binary", "contrasting-middle-in-binary", "binary-without-contrasting-middle", "periodic-binary-with-half-cadence", "bipartite-structure"]
+contrasts_with: ["small-ternary", "rounded-binary"]
+answers_questions:
+  - "What is small binary form?"
+  - "How does small binary differ from small ternary?"
+  - "Why is the small binary used in variation forms?"
 ---
 
 # Quick Definition
 A theme-type consisting of two parts, each normatively eight measures long and usually repeated, distinguished from the small ternary primarily by its lack of genuine recapitulation -- the second part does not bring back the opening basic idea in the home-key tonic.
 
-# Formal Definition
+# Core Definition
 The small binary consists of two parts whose functional characteristics are sufficiently distinct from the small ternary to be defined independently. Each part is normatively eight measures long and is usually repeated by means of repeat signs or written-out ornamental variations. The small binary distinguishes itself from the rounded binary (small ternary) primarily through its lack of genuine recapitulation: the second part does not bring back the opening basic idea in the home-key tonic. Additionally, the second part usually begins with material directly related to the first part's opening (motivic connection), which dampens expectations for a subsequent recapitulation. The first part frequently ends with a HC, unlike the rounded binary's PAC-ending A section.
 
-# Construction/Recognition
+# Construction / Recognition
 1. Two-part structure: ||: Part 1 :||: Part 2 :||
 2. Each part normatively 8 measures (total 16 real measures)
 3. No genuine recapitulation of the basic idea in the home-key tonic
@@ -25,7 +38,7 @@ The small binary consists of two parts whose functional characteristics are suff
 7. Emphasizes structural symmetry; standard phrase alterations (extension, compression) are infrequent
 8. Two parts have less distinct overall functional meanings than the three sections of a small ternary
 
-# Musical Context
+# Context & Application
 The small binary tends to appear in movements featuring multiple recurrences of a theme, such as rondos and theme-and-variations forms. By using this form, the composer minimizes overexposure of the basic idea (since it will not be recapitulated within the theme itself), reserving its return for the beginning of each variation or rondo refrain. More than any other theme-type, the small binary emphasizes structural symmetry by regularly appearing in its normative 16-measure length (8 + 8).
 
 # Examples
