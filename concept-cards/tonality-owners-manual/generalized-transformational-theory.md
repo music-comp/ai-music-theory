@@ -1,40 +1,137 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Generalized Transformational Theory
-category: theory
+slug: generalized-transformational-theory
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: transformational-theory
+tier: advanced
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Appendix 3: Sequence and Transformation"
 chapter_number: null
 pdf_page: 555
-authors: "Dmitri Tymoczko"
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - extended transformational theory
+  - sequence-based transformational theory
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - sequence-as-transformation
+  - double-transposition
+extends:
+  - generalized-set-theory
+related:
+  - contrary-motion-counterpoint
+  - lp-and-pl-voice-leading
+  - gesualdos-trick
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does sequence theory generalize into transformational theory?"
+  - "What are the different types of transformational arrows?"
+  - "How do inversional sequences differ from transpositional ones?"
 ---
 
 # Quick Definition
-The extension of sequence theory into a comprehensive transformational framework using arrows with explicit parameters for transposition, inversion, temporal delay, and quantization -- modeling canons, vertical processes, neo-Riemannian transformations, and contrary-motion patterns within a unified formalism.
 
-# Formal Definition
-This generalization extends the basic sequence model (Chapter 4) in two ways: allowing transformations other than transposition (including inversion), and giving arrows an explicit temporal-delay parameter. When delay is zero, the result is a vertical process (parallel or contrary motion, quantization). Traditional sequences are the special case of self-replicating algorithms with uniform temporal delay. The framework encompasses: inversional sequences (I_x I_x = T_0, so they oscillate); neo-Riemannian L, P, R as one-note inversional sequences combining little-i and big-I; Gesualdo's trick as a general strategy; and jazz sequences combining semitonal descent with fifth-bass. Inversional arrows reanalyze neo-Riemannian transformations as repeating contrapuntal patterns.
+Tymoczko's extension of sequence theory into a general transformational framework that allows transformations other than transposition (including inversion), explicit temporal delays, vertical processes, coupled melodic motion, and quantization -- unifying sequences, canons, neo-Riemannian operations, and contrary-motion patterns.
 
-# Musical Context
-This formalism unifies phenomena from sixteenth-century canons through Stravinsky and Schoenberg to postwar jazz. It responds to the limitations of traditional transformational theory (Lewin), which focuses on disembodied pitch classes, by incorporating register, voice, and time. Schoenberg's "Angst und Hoffen" (Op. 15, No. 7) is analyzed using these tools, revealing sequences and voice-leading patterns linking atonal music to tonal predecessors.
+# Core Definition
+
+The topic of sequences "belongs to a larger transformational theory that extends the apparatus of chapter 4 in two ways: allowing transformations other than transposition and giving arrows an explicit parameter controlling temporal delay" (p. 555). When the delay is zero, we have a "vertical process" producing parallel or contrary motion. Inversional arrows create sequences that "turn each successive unit upside down" (p. 561), but since I(x)*I(x) = T(0), harmonically stable inversional sequences oscillate between unchanging sonorities. Neo-Riemannian L, P, R are analyzed as "one-note sequences-by-inversion, repeatedly applying the same operation" (p. 563), combining little-i and big-I. The formalism incorporates voice, register, and time, unlike "traditional transformational theory" which "often focuses on disembodied pitch classes" (p. 567).
+
+# Prerequisites
+
+- **Sequence as transformation** -- The basic transpositional framework being extended
+- **Double transposition** -- The hierarchical combination of transformations at different levels
+
+# Key Properties
+
+1. Arrows can use inversion as well as transposition
+2. Temporal delays model canons and non-self-replicating patterns
+3. Zero delay produces vertical processes (parallel/contrary motion)
+4. Coupled melodic motion handles voices moving along different-sized collections
+5. Quantization snaps out-of-grid notes into a collection (e.g., Part's Fur Alina)
+6. Neo-Riemannian L, P, R are one-note inversional sequences combining big-I and little-i
+7. Dual transformations (T-t, I-i) describe voice leadings; crossed arrows (T, I) describe symmetry operations
+
+# Construction / Recognition
+
+## To Apply the Generalized Framework:
+1. Identify the transformational relationship between successive units (transposition, inversion, or both)
+2. Determine temporal delays (simultaneous = vertical process, delayed = canon)
+3. Check whether the pattern is self-replicating (traditional sequence) or finite (canon)
+4. Factor hierarchically: combine big and little versions of the same operation
+5. For inversional sequences, check whether successive units transpose as well as invert
+
+# Context & Application
+
+This framework unifies phenomena from sixteenth-century canons through Stravinsky and Schoenberg to postwar jazz. The analysis of Schoenberg's "Angst und Hoffen" (Op. 15, no. 7) demonstrates how the framework captures "intuitive play-with-shapes": the basic objects are "hand shapes" or "Tinctorian vertical configurations, linked by familiar sequences and voice-leading patterns" rather than abstract pitch-class sets (p. 566). "These sequences link the music to the past even while generating futuristic harmonies" (p. 566).
 
 # Examples
-- Vertical processes: parallel motion along diatonic or chromatic scale, or along both chord and scale simultaneously (Figure A3.3, p. 558)
-- Stravinsky's Rite of Spring: contrary motion in diminished sevenths, approximated with dominant sevenths (Figure A3.8, p. 560)
-- McCoy Tyner's "Passion Dance": independent fourth-chord hands producing diatonic subsets naturally (Figure A3.11, p. 561)
-- Schoenberg's "Angst und Hoffen": schema alpha with transformational parameters, Gesualdo's trick, and contrary-motion wedge (Figure A3.19, pp. 565-566)
-- Part's Fur Alina: quantization as a vertical transformational process (Figure A3.5, p. 558)
 
-# Related Concepts
-- Sequence as Transformation
-- Voice-Leading Geometry
-- Collectional Hierarchy as Synthesis
-- Bebop as Chromaticized Functionality
+**Example 1** (pp. 558-560): Stravinsky's Rite of Spring -- contrary motion in strings using diminished seventh chords, then applied to nearly symmetrical dominant sevenths via the Principle of Musical Approximation.
+
+**Example 2** (pp. 560-561): Jazz contrary-motion sequences -- Viennese fourth chords ascending by two semitones while right-hand octatonic subsets descend by one semitone, expressing descending-fifth harmony. McCoy Tyner's "Passion Dance" uses independent fourth-chord hands producing diatonic subsets naturally.
+
+**Example 3** (pp. 563-564): Neo-Riemannian L, P, R as inversional sequences -- the "Moro Lasso" progression generated by adding transposition (-1) to the relative transform.
+
+**Example 4** (pp. 565-566): Schoenberg's "Angst und Hoffen" -- schema alpha with augmented-triad-to-fourth-chord voice leading, Gesualdo's trick, and contrary-motion wedge, analyzed as sequences with parametric variation.
+
+**Example 5** (p. 558): Part's Fur Alina -- quantization as vertical process, transposing the top voice down eight diatonic steps and snapping to B minor triad.
+
+# Relationships
+
+## Builds Upon
+- **Sequence as transformation** -- The transpositional framework being generalized
+- **Double transposition** -- Hierarchical combination of transformations
+
+## Enables
+- **Generalized set theory** -- Set-theoretical operations derived from the transformational framework
+
+## Related
+- **Contrary-motion counterpoint** -- Specific application of vertical inversional processes
+- **LP and PL voice leading** -- Neo-Riemannian operations as inversional sequences
+- **Gesualdo's trick** -- Hierarchical inversion producing efficient voice leading
+
+## Contrasts With
+- None listed
+
+# Common Errors
+
+- **Error**: Assuming inversional sequences produce as much harmonic variety as transpositional ones
+  **Correction**: Since I(x)*I(x) = T(0), harmonically stable inversional sequences oscillate between two sonorities; transposition must be added for variety
+
+- **Error**: Using only vertical inversional arrows (K-nets) for contrary motion
+  **Correction**: Horizontal transpositional arrows are "generally more flexible" (p. 567)
 
 # Common Confusions
-- Inversional sequences tend to oscillate between two sonorities (since I_x I_x = T_0); to get variety, successive units must be transposed, which destroys the one-bar canon-by-inversion
-- The formalism is more responsive to voice, register, and time than traditional Lewinian transformational theory
-- "Hand shapes" or Tinctorian vertical configurations are more appropriate basic objects than disembodied pitch-class sets for this music
+
+- **Confusion**: Thinking traditional Lewinian transformational theory handles voice and register
+  **Clarification**: It "often focuses on disembodied pitch classes, assigned to octave and instrument according to unformalized compositional whim" (p. 567)
+
+- **Confusion**: Assuming transformational arrows represent only symmetry operations
+  **Clarification**: Dual transformations (T-t, I-i) describe voice leadings applicable to single chords; crossed arrows (T, I) describe symmetry operations applicable to extended passages -- it is "often useful to go back and forth between the two" (p. 567)
 
 # Source Reference
-Appendix 3 ("Sequence and Transformation"), pp. 555-568.
+
+Appendix 3: "Sequence and Transformation," pp. 555-568. Key figures: A3.1-A3.21.
+
+# Verification Notes
+
+- Definition source: Direct from p. 555 and throughout the appendix
+- Confidence rationale: HIGH -- explicitly developed as the appendix's central framework
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: the Stravinsky Rite examples, the jazz contrary-motion analysis, the "Angst und Hoffen" analysis, the distinction between dual transformations and crossed arrows, the Part Fur Alina quantization example

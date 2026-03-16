@@ -1,39 +1,130 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Directed Melody
-category: theory
+slug: directed-melody
+
+# === CLASSIFICATION ===
+category: analysis
+subcategory: melodic-theory
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Heterogeneous Hierarchy"
 chapter_number: 9
-pdf_page: 407
-authors: "Dmitri Tymoczko"
-unit: null
+pdf_page: 408
+section: "Strategy and reduction"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - melodic directedness
+  - melodic strategy
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - basic-voice-leading
+  - quadruple-hierarchy
+extends: []
+related:
+  - double-transposition
+  - musical-arpeggiation
+  - contrary-motion-themes
+contrasts_with:
+  - prolongational-analysis
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What makes a melody feel purposeful rather than aimless?"
+  - "How do melodies articulate voice-leading structures at different levels of complexity?"
+  - "What is the relationship between melodic directedness and the spiral diagrams?"
 ---
 
 # Quick Definition
-A melody that articulates coherent voice-leading structures, typically moving between tonic-triad notes through stepwise descent or ascent, with surface notes "dancing" between the voices of an abstract background -- the mechanism that makes melodies feel purposeful rather than aimless.
 
-# Formal Definition
-Schenker proposed that directed melodies embellish stepwise descents from one tonic-triad note to another, with bass lines moving from tonic to dominant. Tymoczko extends this: simple melodies have one structural voice descending stepwise; more complex melodies dance between multiple voices of a background that itself moves coherently; still more complex melodies move contrary to the background voice leading (as in the Waldstein). Directed melodies articulate the doubly parallel motion of the spiral diagrams -- the combination of big-T transposition along the scale and little-t transposition along the chord. The nonharmonic system ensures out-of-chord notes resolve by step; registral limitations ensure within-chord notes outline close-position harmonies.
+A melody that articulates coherent voice-leading structures, typically moving between tonic-triad notes through stepwise descent, with surface notes "dancing" between the voices of an abstract background -- the mechanism that makes melodies feel purposeful rather than aimless.
 
-# Musical Context
-The concept reconciles Schenkerian insights about long-range melodic coherence with sequential harmonic grammar. A directed melody is not an autonomous force but emerges from the interaction of melodic strategy with harmonic constraints. The art of functional composition consists in writing satisfying phrases while satisfying local harmonic grammar -- analogous to pursuing strategic goals within game rules.
+# Core Definition
+
+Schenker proposed that directed melodies embellish stepwise descents from one tonic-triad note to another, with bass lines moving from tonic to dominant. Tymoczko endorses this insight but extends it across three levels of complexity: "Simple melodies, such as 'Helpless,' have just one structural voice, descending stepwise from one tonic-triad note to another. More complex melodies, such as 'Eight Days a Week,' dance between multiple voices of an abstract background that itself moves in a coherent way -- somewhat like an Alberti bass, but less predictably. Still more complex is the technique of moving contrary to a background voice leading, as when Beethoven ascends along the predominantly descending Waldstein progression" (p. 409). Directed melodies articulate "the doubly parallel motion represented by our spiral diagrams -- that is, the combination of big-T transposition along the scale, and little-t transposition along the chord" (p. 409).
+
+# Prerequisites
+
+- **Basic voice leading** -- Understanding how voices connect chords
+- **Quadruple hierarchy** -- The nested collectional structure that underlies melodic motion
+
+# Key Properties
+
+1. Nonharmonic system ensures out-of-chord notes resolve by step to in-chord notes
+2. Registral limitations ensure within-chord notes outline close-position harmonies
+3. Background provides "melodic destinations, points of rest between which the surface moves" (p. 409)
+4. Melody is "locally free but hierarchically structured" (p. 412)
+5. Harmony is the mirror image: "largely nonhierarchical but locally constrained" (p. 412)
+
+# Construction / Recognition
+
+## To Identify Directed Melody:
+1. Listen for a "slower melody" beneath the musical surface
+2. Identify stepwise connections between structurally important notes
+3. Check whether surface notes dance between voices of an abstract chordal background
+4. Look for the combination of big-T and little-t transposition
+
+# Context & Application
+
+The concept reconciles Schenkerian insights with sequential harmonic grammar. "The art of functional composition consists in writing satisfying phrases while also satisfying the constraints of the local harmonic grammar" (p. 409) -- analogous to pursuing strategic goals within game rules, as in basketball or chess. Broadly speaking, "Schenker was right about melody but wrong about harmony" (p. 412).
 
 # Examples
-- "Helpless" (Neil Young): single structural voice descending stepwise (p. 409)
-- "Eight Days a Week" (Beatles): melody dancing between multiple voices of an abstract background (p. 409)
-- Waldstein opening: melody ascending by thirds while bass descends by step, moving contrary to the background voice leading (p. 409)
-- Mozart's Symphony No. 40 opening: hierarchical transposition intrinsic to melodic directedness (Figure 9.1.2, p. 409)
 
-# Related Concepts
-- Melodic Strategy
-- Double Transposition
-- Quadruple Hierarchy
-- Reduction as Paraphrase
+**Example 1** (p. 409): Neil Young's "Helpless" -- single structural voice descending stepwise.
+
+**Example 2** (p. 409): The Beatles' "Eight Days a Week" -- melody dances between multiple voices of an abstract background.
+
+**Example 3** (p. 409): Waldstein opening -- melody ascends by thirds while bass descends by step, moving contrary to the background voice leading, producing "a dual melodic logic superimposing multiple directed narratives."
+
+**Example 4** (p. 409): Mozart's Symphony No. 40, K.550 opening -- hierarchical transposition is "the glue binding harmony and melody together" (Figure 9.1.2).
+
+# Relationships
+
+## Builds Upon
+- **Basic voice leading** -- Directed melody emerges from voice-leading connections between chords
+
+## Enables
+- **Double transposition** -- Directed melody articulates double transposition at the surface
+- **Musical arpeggiation** -- Large-scale arpeggiation is one form of directed melody
+
+## Related
+- **Contrary-motion themes** -- Extend directed melody beyond stepwise descent
+
+## Contrasts With
+- **Prolongational analysis** -- Tymoczko treats the "background" as melodic destinations rather than prolongational structure
+
+# Common Errors
+
+- **Error**: Equating directed melody with a memorable tune
+  **Correction**: Generic Beethovenian material can be highly directed while lacking melodic memorability
+
+- **Error**: Treating harmony as hierarchically structured in the same way as melody
+  **Correction**: Melody is locally free but hierarchically structured; harmony is the reverse
 
 # Common Confusions
-- Directed melody is not the same as a "tune" -- generic Beethovenian material can be highly directed while lacking melodic memorability
-- The "background" is not a prolongational structure but a set of melodic destinations between which the surface moves
-- Contrary motion against the background is a sophisticated technique, not a violation of directedness
+
+- **Confusion**: Thinking the "background" is a prolongational structure
+  **Clarification**: It is a set of melodic destinations between which the surface moves, like an Alberti bass
+
+- **Confusion**: Thinking contrary motion against the background violates directedness
+  **Clarification**: It is a sophisticated form of directedness producing dual melodic narratives
 
 # Source Reference
-Chapter 9, Section 1, pp. 408-412.
+
+Chapter 9, Section 1: "Strategy and reduction," pp. 408-412.
+
+# Verification Notes
+
+- Definition source: Direct from source, pp. 408-412; key quotations verified
+- Confidence rationale: HIGH -- central concept of the chapter, clearly articulated
+- Cross-reference status: Verified against Waldstein, K.550, and other examples
+- Re-extraction notes: Re-extracted from v2 card; preserved: three-level complexity model, game analogy, Waldstein/Helpless/Eight Days examples, Schenker right/wrong quotation

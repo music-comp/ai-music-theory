@@ -1,38 +1,113 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Origin and Meaning in Harmony
-category: analysis
+slug: origin-and-meaning-in-harmony
+
+# === CLASSIFICATION ===
+category: historical
+subcategory: origins-of-tonality
+tier: advanced
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "The Origins of Functional Tonality"
 chapter_number: 6
 pdf_page: 257
-authors: "Dmitri Tymoczko"
-unit: null
+section: "Origin and meaning"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - protofunctionality
+extends: []
+related:
+  - gradual-evolution-of-tonality
+  - clausula-vera
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Does a procedure's origin determine its meaning?"
+  - "Can we use modern theory to analyze early music?"
 ---
 
 # Quick Definition
-The philosophical debate about whether a compositional procedure's historical origin determines its musical meaning -- with Tymoczko arguing that origin and meaning can come apart, allowing composers to create music that exemplifies innovative, untheorized structure.
 
-# Formal Definition
-Carl Dahlhaus cautioned that the functional appearance of early music should not be taken at face value, since some pieces originated with a cantus-tenor duet to which additional voices were added. His principle: "provided that a procedure's origin determines its meaning." Tymoczko proposes an alternative in which origin and meaning can diverge -- composers follow their ears as they grope toward the new, sometimes using earlier techniques to create music that exemplifies innovative structure. Earlier music theorists are not "native informants" providing authoritative information about their culture, but theory builders whose claims should be checked against the data of music itself.
+Tymoczko's argument against Dahlhaus that a procedure's compositional origin does not determine its musical meaning. Composers can use older techniques to create music with innovative, untheorized structure, and "origin" and "meaning" can come apart.
 
-# Musical Context
-This debate is central to understanding whether proto-functional features in Renaissance music are "real" or merely apparent. Tymoczko argues that Renaissance theorists operated in an intellectual environment very different from ours, where tradition could override evidence. The history of practice is part of the history of theory, and contemporary tools and data-driven analysis can reveal regularities that earlier theorists could not perceive.
+# Core Definition
+
+Against Dahlhaus's claim that "a procedure's origin determines its meaning" (p. 269), Tymoczko proposes that composers follow their ears toward the new, sometimes using earlier techniques to create music exemplifying innovative and untheorized structure (p. 274). Earlier music theorists are not "native informants" providing authoritative information about their musical culture, but rather "theory builders" whose assertions should be checked against data from music itself (p. 273). Doing the history of theory without evaluating theoretical claims is "like doing the history of science without considering how experiments turned out" (p. 273). The history of practice is part of the history of theory (p. 275).
+
+# Prerequisites
+
+- **Protofunctionality** — The proto-functional patterns whose "meaning" is debated
+
+# Key Properties
+
+1. Origin and meaning can come apart
+2. Earlier theorists are theory builders, not native informants
+3. Their assertions should be checked against musical data
+4. Composers sometimes develop novel techniques without abstract understanding
+5. Renaissance thinkers upheld tradition over evidence in many domains
+6. Contemporary theory and data-driven analysis can reveal regularities in early music
+
+# Construction / Recognition
+
+## To Apply This Principle:
+1. Do not assume earlier theorists' descriptions are accurate
+2. Check theoretical claims against the data of musical practice
+3. Recognize that composers may have implicit knowledge not captured by contemporary theory
+4. Use both close analysis and statistical methods to reveal regularities
+
+# Context & Application
+
+Dahlhaus argued that frottolas with a cantus-tenor origin should be analyzed as two-voice compositions. Tymoczko responds that the resulting four-voice textures may embody harmonic thinking regardless of compositional process -- "different paths can lead to similar destinations" (p. 272).
 
 # Examples
-- Tromboncino's "Ah partiale e cruda morte!" -- Dahlhaus describes it as originating from a two-voice framework, but the deceptive cadence works only in the four-voice version, suggesting harmonic thinking
-- Pietro Aron describing a converging-voice cadence on E in 1532, even though the bass makes modern listeners hear A as the focal pitch (Figure 6.3.4)
-- Figures 6.3.5-6.3.6: Evidence that the meaning of converging voices was already in flux by the early 1500s
 
-# Related Concepts
-- Protofunctionality
-- Scale-Degree Analysis
-- Functional Analysis
-- Analytical Objectivity
+**Example 1** (pp. 270-272, Figs. 6.3.1-6.3.3): Tromboncino's "Ah partiale e cruda morte!" -- simultaneously embodying a cantus-tenor duet and close-position triadic thinking.
+
+**Example 2** (pp. 271-274): The clausula vera -- Aron (1532) described a cadential figure as converging on E, not A, but the music's behavior already reflects bass-centered harmonic thinking.
+
+# Relationships
+
+## Builds Upon
+- **Protofunctionality** — The patterns whose meaning is at stake
+
+## Enables
+- **Gradual evolution of tonality** — Accepting that meaning can change allows tracing functional development
+
+## Related
+- **Clausula vera** — A key example where origin and meaning diverge
+
+## Contrasts With
+- No direct contrasts
+
+# Common Errors
+
+- **Error**: Taking earlier theorists' descriptions at face value
+  **Correction**: Check their theories against the musical data, just as we check scientific theories against experiments
 
 # Common Confusions
-- "Presentism" (projecting contemporary concepts onto past music) is a real danger, but so is the equally erroneous assumption that earlier theorists operated with contemporary standards of descriptive accuracy.
-- The fact that Renaissance theorists described music in certain terms does not mean those descriptions are accurate -- they neither noticed nor cared about many changes as they were occurring, much like medieval grammarians with respect to case markers.
-- Used cautiously, contemporary theory and data-driven analysis can lead to a genuinely historical perspective, revealing as-yet-undiscovered regularities in early music.
+
+- **Confusion**: Thinking "presentism" is always wrong in musical analysis
+  **Clarification**: If Renaissance music exhibits weaker versions of tendencies that strengthen later, it is futile to insist on a strict boundary between early and functional music (p. 275)
 
 # Source Reference
-Chapter 6, section 3, "Origin and meaning," pp. 269-275.
+
+Chapter 6, section 3 "Origin and meaning," pp. 269-275.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 269-274
+- Confidence rationale: Central philosophical argument of the chapter
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source

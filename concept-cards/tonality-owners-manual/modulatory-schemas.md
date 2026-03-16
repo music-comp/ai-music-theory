@@ -1,38 +1,120 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Modulatory Schemas
-category: form
+slug: modulatory-schemas
+
+# === CLASSIFICATION ===
+category: modulation
+subcategory: modulatory-schemas
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Modulation"
 chapter_number: 8
-pdf_page: 361
-authors: "Dmitri Tymoczko"
-unit: null
+pdf_page: 376
+section: "Modulatory schemas"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "modulatory grammar"
+  - "grammar of modulatory destinations"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - key-distance-pitch-class-changing
+  - harmonic-cycle-theory
+extends:
+  - harmonic-cycle-theory
+related:
+  - helicopter-drop
+  - paired-sequence-design
+  - up-and-down-the-ladder
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is modulation, and what distinguishes key change from tonicization?"
+  - "How do modulatory norms compare to chord-to-chord norms?"
 ---
 
 # Quick Definition
-Recurring large-scale patterns of key change in classical music, including the helicopter drop, paired-sequence design, and up-and-down-the-ladder, which govern how development sections and transitions manage modulatory journeys.
 
-# Formal Definition
-As functional tonality develops, its syntax encompasses larger stretches of musical time, eventually producing a grammar of modulatory destinations broadly analogous to chord-to-chord grammar (Figure 8.4.1). Tymoczko identifies several specific modulatory schemas that typically occur in sonata-form developments: (1) the *helicopter drop* -- a sudden turn to a distant key followed by gradual return; (2) the *paired-sequence design* -- a balanced pair of sequences with the second undoing the first, pivoting at a rhetorically marked "point of farthest remove"; (3) the *up-and-down-the-ladder* -- ascending-fifth sequences building tension followed by descending-fifth sequences releasing it. Modulatory norms are more variable than chord grammar and more form-dependent (sonatas vs. fugues vs. rondos).
+A set of conventional patterns governing the succession of keys in functional tonality, broadly analogous to the grammar of chord-to-chord progressions but operating at a larger temporal scale.
 
-# Musical Context
-The grammars of chord and key are mirror images: chords typically progress tonic-to-secondary-to-dominant, while keys move tonic-to-dominant-to-secondary. Chordal norms remain stable from 1600 to the present, while modulatory patterns change significantly between periods.
+# Core Definition
+
+As functional tonality develops, "its syntax starts to encompass larger and larger stretches of musical time" (p. 376). By the mid-seventeenth century, there emerges "a grammar of modulatory destinations that is broadly analogous to its grammar of chord-to-chord successions" (Figure 8.4.1). In their details, these grammars are "mirror images: chords tend to progress from tonic to secondary destinations to dominant, while keys move from tonic to dominant to secondary destinations" (p. 377). Chordal norms are more stable historically than modulatory norms, which are also form-dependent: "sonatas are structured as journeys from tonic to foreign keys and back, while fugues and rondos permit more frequent returns" (p. 377).
+
+Specific schemas include the helicopter drop, the paired-sequence design, and the up-and-down-the-ladder.
+
+# Prerequisites
+
+- **Key distance (pitch-class-changing)** -- The distance framework underlying modulatory norms
+- **Harmonic cycle theory** -- The chord-level grammar that modulatory schemas mirror
+
+# Key Properties
+
+1. Modulatory grammar mirrors chord grammar but in reverse: chords go T--S--D, keys go T--D--secondary
+2. Modulatory norms are less stable historically than chord norms
+3. Modulatory norms are form-dependent (sonata vs. fugue vs. rondo)
+4. Specific schemas: helicopter drop, paired-sequence design, up-and-down-the-ladder
+5. Most classical-style modulations occur in sonata-form developments
+6. Classical phrases often end by tonicizing the dominant, but this is rare in jazz or rock
+
+# Construction / Recognition
+
+## To Identify Modulatory Schemas:
+1. Map the sequence of key areas in the passage
+2. Locate the point of farthest remove from the tonic
+3. Check whether the pattern matches a known schema (helicopter drop, paired sequence, ladder)
+4. Note the relationship between form and modulatory pattern (development, transition, etc.)
+
+# Context & Application
+
+Figure 8.4.1 provides a schematic outline of standard modulations in baroque and classical music. Beyond the general conventions (tonic to dominant to secondary destinations and back), specific development-section schemas are common. The modulatory grammar represents a higher level of musical syntax that emerged during the seventeenth century and continued evolving through the nineteenth.
 
 # Examples
-- Figure 8.4.1: Schematic outline of standard modulations in baroque and classical music.
-- Beethoven's *Pathétique* (Figure 8.4.2): Helicopter drop from G minor to distant E minor, followed by descent by fifths back to tonic.
-- Haydn's Symphony no. 62, I (Figure 8.4.4): Paired-sequence design with ascending arpeggio (descending-third sequence), point of farthest remove, and descending arpeggio (descending-fifth sequence).
-- Beethoven's Op. 2, no. 1, I (Figure 8.4.5): Paired-sequence ascending by step then descending by fifth.
 
-# Related Concepts
-- Up-and-Down-the-Ladder Schema
-- Harmonic Cycle Theory
-- Circle of Keys
-- Functional Sequences
+**Example 1** (p. 376, Figure 8.4.1): Schematic outline of standard modulations in baroque and classical music.
+
+**Example 2** (p. 375, Figure 8.3.5): Chopin's D major prelude -- ascending-fifth modulations through diatonic keys, exploiting both scale-first and chord-first modulatory mechanisms.
+
+# Relationships
+
+## Builds Upon
+- **Harmonic cycle theory** -- Modulatory schemas extend harmonic grammar to a higher temporal level
+
+## Enables
+- **Helicopter drop** -- A specific modulatory schema
+- **Paired-sequence design** -- A specific modulatory schema
+- **Up-and-down-the-ladder** -- A specific modulatory schema
+
+## Related
+- **Key distance (pitch-class-changing)** -- Determines which keys are nearby for modulatory purposes
+
+# Common Errors
+
+- **Error**: Applying one era's modulatory norms to another
+  **Correction**: Modulatory norms change historically; classical modulation to the dominant is rare in jazz or rock
 
 # Common Confusions
-- Modulatory schemas are not rigid templates but flexible patterns: the same basic design accommodates different thematic materials, different modulatory intervals, and different levels of elaboration.
-- The "point of farthest remove" is not always the most chromatically distant key -- it is the rhetorically marked turning point of the modulatory journey.
+
+- **Confusion**: Thinking modulatory schemas are as rigid as chord-to-chord grammar
+  **Clarification**: Modulatory norms are more variable and form-dependent than chord grammar
 
 # Source Reference
-Chapter 8, Section 4, pp. 376--378. Figures 8.4.1--8.4.5.
+
+Chapter 8: Modulation, Section 4, pp. 376--378. Figure 8.4.1.
+
+# Verification Notes
+
+- Definition source: Synthesized from pp. 376--378
+- Confidence rationale: High -- explicitly discussed with schematic figure
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: mirror-image observation, form-dependence point -- both confirmed in source; added specific schema types

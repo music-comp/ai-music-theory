@@ -1,36 +1,109 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Pivot Chord Modulation
-category: technique
+slug: pivot-chord-modulation
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: modulation
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Prelude: Could the Martians Understand Our Music?"
 chapter_number: null
 pdf_page: 303
-authors: "Dmitri Tymoczko"
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - common-chord modulation
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - ambiguous-syntax-in-tonal-music
+extends: []
+related:
+  - garden-path-modulation
+contrasts_with:
+  - garden-path-modulation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a pivot chord modulation?"
 ---
 
 # Quick Definition
-A modulatory technique where overlapping chord progressions are each syntactical in different keys, so that the listener experiences the key change only after it has already occurred.
 
-# Formal Definition
-In pivot-chord modulation, a chord (or short progression) functions syntactically in both the old key and the new key simultaneously. The pivot chord is analyzed with dual Roman numeral labels showing its function in each key. The key change is perceived retrospectively: the listener initially hears the pivot chord in the context of the old key, then reinterprets it as belonging to the new key once subsequent chords clarify the new tonal center. This contrasts with direct modulation (where the new key begins with an unambiguous dominant, without overlap) and garden-path modulation (where keys are juxtaposed without a strong signal of the new key).
+A standard modulatory strategy presenting overlapping progressions that are each syntactical in different keys, so that the listener experiences the key change only after it has already happened.
 
-# Musical Context
-Pivot-chord modulation is the most standard modulatory technique in common-practice tonality, preferred for its smoothness. It is especially prevalent in classical sonata-form transitions and development sections. The technique exploits the fact that diatonic collections share many chords -- closely related keys share more potential pivot chords.
+# Core Definition
+
+Standard pivot-chord modulations present overlapping progressions that are each syntactical in different keys: the key change is experienced only after it has already happened (p. 306, Fig. P7.4). Even the comparatively unambiguous direct modulation can have a similar effect, as listeners cannot know whether a foreign dominant seventh is an applied chord or the start of a new key (p. 306).
+
+# Prerequisites
+
+- **Ambiguous syntax in tonal music** — Pivot-chord modulations exploit harmonic ambiguity
+
+# Key Properties
+
+1. Overlapping syntactical progressions in two different keys
+2. Key change experienced retrospectively
+3. The pivot chord belongs to both keys simultaneously
+4. Even direct modulations can create similar retroactive effects
+
+# Construction / Recognition
+
+## To Identify a Pivot Chord Modulation:
+1. Locate a harmonic progression that can be analyzed in two keys
+2. Identify the chord(s) common to both keys
+3. Verify both preceding and following progressions are syntactical in their respective keys
+4. The pivot chord is the point of overlap
+
+# Context & Application
+
+Pivot-chord modulation is the most common modulatory strategy in functional tonal music. It contrasts with both direct modulation (no overlap, but unambiguous dominant signals the new key) and garden-path modulation (no clear signal, creating nonsyntactical effect at the boundary).
 
 # Examples
-- Figure P7.4: Three modulatory strategies compared -- pivot-chord, direct, and garden-path modulation. In pivot-chord modulation, there is a clear overlap between syntactical progressions in two different keys.
-- Even in direct modulation, ambiguity persists because listeners cannot immediately tell whether a foreign dominant seventh is an applied chord or the start of a new key.
 
-# Related Concepts
-- Garden-Path Modulation
-- Key Distance (Pitch-Class-Changing)
-- Ambiguous Syntax in Tonal Music
-- Modulatory Schemas
+**Example 1** (p. 307, Fig. P7.4): Three modulatory strategies -- pivot-chord, direct, and garden-path -- compared schematically.
+
+# Relationships
+
+## Builds Upon
+- **Ambiguous syntax in tonal music** — Exploits key-change ambiguity
+
+## Enables
+- No specific concepts enabled
+
+## Related
+- **Garden-path modulation** — An alternative modulatory strategy without overlapping syntax
+
+## Contrasts With
+- **Garden-path modulation** — Garden-path modulations lack the overlapping syntactical progressions
+
+# Common Errors
+
+- **Error**: Assuming every modulation must use a pivot chord
+  **Correction**: Direct and garden-path modulations are alternative strategies
 
 # Common Confusions
-- A pivot chord is not simply any chord shared between two keys -- it must function syntactically in both keys within the specific passage.
-- Tymoczko also introduces the notion of a "pivot third" (an incomplete sonority serving a pivot function), which extends the concept to ambiguous intervals that can be heard in two incompatible harmonic ways even without a modulation.
+
+- **Confusion**: Thinking the pivot chord is always clearly audible as a point of reinterpretation
+  **Clarification**: The reinterpretation is typically retrospective -- heard only after the new key is established
 
 # Source Reference
-Prelude to Chapter 7, pp. 306--307. Figure P7.4.
+
+Prelude: Could the Martians Understand Our Music?, pp. 306-307. See Figure P7.4.
+
+# Verification Notes
+
+- Definition source: Direct from p. 306
+- Confidence rationale: Standard concept briefly described
+- Cross-reference status: Verified against garden-path-modulation
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source

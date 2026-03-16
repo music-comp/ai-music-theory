@@ -1,36 +1,118 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Epistemic Circularity in Harmonic Analysis
+slug: epistemic-circularity-in-harmonic-analysis
+
+# === CLASSIFICATION ===
 category: analysis
+subcategory: epistemic-issues
+tier: advanced
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Prelude: Could the Martians Understand Our Music?"
 chapter_number: null
 pdf_page: 303
-authors: "Dmitri Tymoczko"
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - Quinnian skepticism
+  - hermeneutic circularity
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - contrapuntal-vs-harmonic-syntax
+  - nonharmonic-tone
+extends: []
+related:
+  - analytical-objectivity
+  - ambiguous-syntax-in-tonal-music
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is epistemic circularity in harmonic analysis?"
+  - "How can circular reasoning in analysis be benign?"
 ---
 
 # Quick Definition
-The problem that our identification of nonharmonic tones depends on prior assumptions about which progressions are common, while those assumptions are themselves based on earlier analyses that required the same judgments.
 
-# Formal Definition
-Epistemic circularity in harmonic analysis arises because Western classical music combines two syntaxes -- a contrapuntal syntax regulating dissonance and a harmonic syntax governing "genuine harmonies." The harmonic system requires distinguishing law-abiding harmonies from "apparent chords" produced by nonharmonic motion. Since consonant nonharmonic tones can mimic real harmonies, the analyst must draw on background knowledge of typical progressions to choose among readings, yet that background knowledge was itself formed through prior analyses facing the same ambiguity. Ian Quinn identified this circularity as a fundamental challenge for harmonic theory.
+The problem (identified by Ian Quinn) that harmonic analysis depends on judgments about nonharmonicity, which themselves depend on assumptions about what progressions are typical -- creating a circle where our reading of individual passages shapes our general expectations and vice versa.
 
-# Musical Context
-This problem surfaces whenever analysts must decide whether a consonant sonority is a genuine harmony or the byproduct of nonharmonic embellishment. It is pervasive in Bach chorale analysis, where contrapuntal idioms regularly produce consonant simultaneities that could be labeled as chords.
+# Core Definition
+
+Ian Quinn observed that harmonic analysis involves epistemic circularity: analysts avoid labeling certain progressions (like ii-I) based on claims about "what typically happens," yet those claims depend on their readings of individual passages (p. 304). If one habitually labeled ii-I progressions, one would believe they were more common, encouraging one to find them elsewhere. Tymoczko argues this can be a benign "hermeneutic" circularity, unproblematic so long as enough unambiguous passages calibrate expectations (p. 308). A two-stage computational process can model this: first-pass raw analysis (treating every consonance as harmonic) provides background expectations, then a second pass adjudicates among readings (p. 308).
+
+# Prerequisites
+
+- **Contrapuntal vs. harmonic syntax** — The dual syntax creates the circularity
+- **Nonharmonic tone** — Judgments about nonharmonicity are the source of circularity
+
+# Key Properties
+
+1. Identified by Ian Quinn (p. 304)
+2. Judgments about nonharmonicity depend on assumptions about typical progressions
+3. Assumptions about progressions depend on analyses that involve nonharmonicity judgments
+4. Can be benign when enough unambiguous passages calibrate expectations
+5. Modelable computationally with a two-stage process
+6. Related to Quine's argument that theoretical terms are underdetermined by evidence (fn. 4)
+
+# Construction / Recognition
+
+## To Manage Epistemic Circularity:
+1. Begin with a raw first-pass analysis treating every consonance as harmonic
+2. Use raw counts to establish background expectations
+3. Apply expectations in a second pass to adjudicate among allowable readings
+4. Verify that the final reading avoids rare or unusual progressions
+
+# Context & Application
+
+The circularity complicates theory evaluation: rather than a single theory-neutral analysis testing many syntaxes, each theory determines a different optimal analysis (Fig. P7.7). Tymoczko's computational approach reproduces expert analytical judgments, suggesting the circularity can be resolved through sufficient data (p. 308).
 
 # Examples
-- Figure P7.1: Four one-bar passages admitting both concise and verbose readings. In the first, melodic D is treated as ornamental to IV--I; in the second, I--ii--vii^6^--I^6^ is preferred because it is a common Bach idiom (appearing once every three chorales).
-- The ii--I progression is systematically avoided in readings, justified by claims about "what typically happens" -- yet those claims depend on the same type of readings.
-- Tymoczko proposes a two-stage computational process: first treat every consonance as harmonic to calibrate expectations, then use those statistics to adjudicate ambiguous passages (Figure P7.6).
 
-# Related Concepts
-- Ambiguous Syntax in Tonal Music
-- Incomplete Sonorities
-- Hermeneutic Circularity
+**Example 1** (p. 303, Fig. P7.1): Four one-bar passages where the analyst's readings all avoid ii-I progressions, justified by claims about typicality that are themselves shaped by similar readings.
+
+**Example 2** (p. 308, Fig. P7.6): Computational two-stage analysis of Bach chorales, reproducing expert judgments through benign circular reasoning.
+
+# Relationships
+
+## Builds Upon
+- **Contrapuntal vs. harmonic syntax** — The dual syntax creates the circularity
+- **Nonharmonic tone** — Judgments about nonharmonicity are the source of circularity
+
+## Enables
+- **Analytical objectivity** — Understanding circularity is prerequisite to pursuing objectivity
+
+## Related
+- **Ambiguous syntax in tonal music** — The ambiguities that feed the circularity
+
+## Contrasts With
+- No direct contrasts
+
+# Common Errors
+
+- **Error**: Treating all circular reasoning in analysis as vicious
+  **Correction**: Hermeneutic circularity can be benign when calibrated by unambiguous passages
 
 # Common Confusions
-- This is not mere subjectivity but *holism*: the need to resolve local ambiguities using stylistic knowledge external to the piece. The challenge is that theory and analysis must be evaluated together as a package (Figure P7.7), not separately.
-- Computational methods (Bayesian analysis, hidden Markov models) can model this circularity, suggesting it is tractable rather than vicious.
+
+- **Confusion**: Thinking computational methods can avoid circularity entirely
+  **Clarification**: Computational methods model the circularity rather than eliminating it -- they capture the "presuppositions essential to expert analytical judgment" (p. 309)
 
 # Source Reference
-Prelude to Chapter 7, pp. 303--310. Figures P7.1, P7.6, P7.7. References Quinn 2018, Temperley 2018.
+
+Prelude: Could the Martians Understand Our Music?, pp. 303-310.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 304, 308-309
+- Confidence rationale: Central theme of the prelude
+- Cross-reference status: Verified against analytical-objectivity
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source

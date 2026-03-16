@@ -1,38 +1,110 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Leading Tone Resolution
-category: theory
+slug: leading-tone-resolution
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: functional-harmony
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "The Origins of Functional Tonality"
 chapter_number: 6
 pdf_page: 257
-authors: "Dmitri Tymoczko"
-unit: null
+section: "Similarities and differences"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - protofunctionality
+extends: []
+related:
+  - gradual-evolution-of-tonality
+  - clausula-vera
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does leading tone behavior differ between protofunctional and functional music?"
 ---
 
 # Quick Definition
-The melodic tendency of the seventh scale degree (7^) to resolve upward to the tonic (1^), a tendency that strengthened considerably from the Renaissance through the classical period.
 
-# Formal Definition
-Leading tone resolution describes the increasing tendency of 7^ to resolve upward to 1^, particularly in outer voices. In fully functional music, outer-voice leading tones almost always move to the tonic. In protofunctional music, noncadential leading tones are less constrained and often progress downward. This suggests important differences between cadential and ordinary dominants: leading-tone resolution is a function of the cadential suspension rather than of the dominant as a harmonic entity or the leading tone as a melodic scale degree.
+The tendency of the seventh scale degree (leading tone) to resolve upward to the tonic. In protofunctional music, noncadential leading tones are weakly constrained and often progress downward; in functional music, outer-voice leading tones almost always resolve upward.
 
-# Musical Context
-The development of leading-tone resolution is one of several independent processes in the emergence of functional tonality. In the ionian mode, the leading tone lies within the key signature and does not require explicit accidentals. In other modes, the leading tone requires musica ficta, initially linking it to specific cadential formulae. As accidentals proliferate throughout the phrase, leading-tone resolution can strengthen in noncadential contexts as well, contributing to modal homogenization.
+# Core Definition
+
+In functional music, outer-voice leading tones almost always move to the tonic. In proto-functional music, noncadential leading tones are less constrained, often progressing downward (p. 268, Fig. 6.2.8). This suggests important differences between cadential and ordinary dominants: leading-tone resolution is a function of the cadential suspension rather than the dominant as a harmonic entity or the leading tone as a melodic scale degree (p. 269). The leading tone's increasing tendency to resolve is one of the multiple processes constituting the development of functional tonality (p. 258).
+
+# Prerequisites
+
+- **Protofunctionality** — Context for understanding the leading tone's changing role
+
+# Key Properties
+
+1. In functional music: outer-voice leading tones almost always resolve upward
+2. In protofunctional music: noncadential leading tones often descend (p. 268)
+3. Leading-tone resolution is linked to cadential suspension, not the dominant as such
+4. The leading tone lies within the ionian key signature (no accidentals needed)
+5. In other modes, leading tones require explicit accidentals (musica ficta)
+6. The increasing resolution tendency is one of multiple independent processes (p. 258)
+
+# Construction / Recognition
+
+## To Assess Leading-Tone Resolution:
+1. Identify seventh scale degrees (leading tones) in a passage
+2. Check whether they resolve upward (to tonic) or descend
+3. Distinguish cadential from noncadential contexts
+4. In protofunctional music, expect weaker upward tendency outside cadences
+
+# Context & Application
+
+The leading tone's resolution behavior helps distinguish protofunctional from fully functional practice and is one reason ionian provides the paradigm for protofunctionality.
 
 # Examples
-- Figure 6.2.8: A descending leading tone in Dalza's Tastar de Corde 1, mm. 85ff -- demonstrating the weak resolution tendency in protofunctional music
-- In Bach's chorales, the fifth of vii-diminished-6 is more likely to ascend than descend, whereas the seventh of V7 almost invariably resolves down (Figure 6.4.7)
-- Figure 6.4.9: In the nineteenth century, even after V43 replaces vii-diminished-6, it inherits the voice leading of its ancestor, with the seventh often ascending
 
-# Related Concepts
-- Protofunctionality
-- Modal Homogenization
-- First-Order Properties
-- Harmonic Cycles
+**Example 1** (p. 268, Fig. 6.2.8): A descending leading tone in Dalza's Tastar de Corde 1, mm. 85ff.
+
+# Relationships
+
+## Builds Upon
+- **Protofunctionality** — The context in which resolution behavior changes
+
+## Enables
+- **Gradual evolution of tonality** — Leading-tone resolution strengthens over time
+
+## Related
+- **Clausula vera** — Leading-tone resolution connects to cadential practice
+
+## Contrasts With
+- No direct contrasts
+
+# Common Errors
+
+- **Error**: Assuming leading tones always resolve upward in all tonal music
+  **Correction**: In protofunctional music, noncadential leading tones often descend
 
 # Common Confusions
-- The melodic resolution of the leading tone is not a precondition for functional composition. It is a tendency that strengthens during the functional era itself.
-- The vii-diminished-6 chord in Renaissance music resolves 4^ upward, which Dahlhaus and Bent take as evidence against functional analysis. But this is actually a point of continuity -- in Bach, the fifth of vii-diminished-6 also usually ascends rather than descends.
-- Leading-tone resolution is weaker in inner voices throughout the tonal tradition, and systematically weaker in noncadential contexts in earlier music.
+
+- **Confusion**: Thinking leading-tone resolution is intrinsic to the dominant chord
+  **Clarification**: Resolution is linked to the cadential suspension rather than the dominant as such (p. 269)
 
 # Source Reference
-Chapter 6, section 2, pp. 268-269; section 4, pp. 279-282.
+
+Chapter 6, section 2, pp. 268-269. Figure 6.2.8.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 268-269
+- Confidence rationale: Clearly described with statistical evidence
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source

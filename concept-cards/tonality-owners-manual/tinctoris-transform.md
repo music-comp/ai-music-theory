@@ -1,36 +1,113 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tinctoris Transform
-category: theory
+slug: tinctoris-transform
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: configurations
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Prelude: The Tinctoris Transform"
 chapter_number: null
 pdf_page: 87
-authors: "Dmitri Tymoczko"
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - individually transpositionally related
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - configuration-and-center-of-gravity
+extends: []
+related:
+  - efficient-voice-leading
+  - voicing-as-set-class
+  - spiral-diagrams-for-chord-space
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Tinctoris Transform?"
+  - "How are seemingly different progressions related by shared voice-leading patterns?"
 ---
 
 # Quick Definition
-A relationship between two progressions that share the same series of vertical configurations (intervals or voicings) but differ only in transpositional level -- essentially, they are "individually transpositionally related."
 
-# Formal Definition
-Two progressions are related by the Tinctoris Transform if they exemplify the same series of vertical configurations, differing only in the transposition applied to each chord independently. On spiral diagrams, paths related by the Tinctoris Transform differ only in the amount of sliding (scalar transposition) involved, while preserving the same looping (chordal transposition) structure.
+A relationship between progressions that share the same series of vertical configurations, differing only in transpositional level -- they are "individually transpositionally related" (*A Geometry of Music*), or equivalently, they "differ only in the amount of sliding involved" on spiral diagrams (p. 92).
 
-# Musical Context
-Named after Johannes Tinctoris's 1477 *Liber de arte contrapuncti*, which organized two-voice counterpoint by starting and destination intervals. Thomas Campion extended this to four voices in 1614. The concept reappears throughout the book as a unifying principle connecting figured-bass pedagogy, set theory, and voice-leading geometry. On the 3-in-12 diagram, there are only three fundamental kinds of motion (t_0, t_-1, t_-2); all others are obtained by adding slides.
+# Core Definition
+
+"Two progressions can be said to belong to the same category if they exemplify the same series of vertical configurations, differing only in transpositional level" (p. 91). Named after Tinctoris's 1477 approach, extended by Thomas Campion (1614) to four voices. "In A Geometry of Music I said that such progressions are individually transpositionally related; here I will say they are related by the Tinctoris Transform" (p. 91). On spiral diagrams, "paths related by the Tinctoris Transform differ only in the amount of sliding involved" (p. 92). The 3-in-12 diagram contains "only three fundamental kinds of motion, the clockwise loops of 0, 1, or 2 turns (t_0, t_{-1}, t_{-2}); all other motions can be obtained by adding slides" (p. 92).
+
+# Prerequisites
+
+- **Configuration and Center of Gravity** -- The transform groups progressions by shared configurations
+
+# Key Properties
+
+1. Groups progressions sharing the same series of vertical configurations
+2. Progressions differ only in transpositional level of each chord
+3. On spirals, related paths differ only in sliding (scalar transposition)
+4. The 3-in-12 diagram has only three fundamental motions (t_0, t_{-1}, t_{-2})
+5. Named after Tinctoris (1477), extended by Campion (1614)
+6. Simplifies analysis by ignoring transpositional differences
+
+# Construction / Recognition
+
+## To Identify Tinctoris-Related Progressions:
+1. Analyze the vertical configurations (intervals/voicings) in each progression
+2. Check if the configuration series is the same despite different pitch levels
+3. On the spiral, verify that paths differ only in the amount of sliding
+4. Factor out slides to reveal the shared looping structure
+
+# Context & Application
+
+The transform connects figured-bass pedagogy, set theory, and voice-leading geometry. Figured-bass terms describe shapes played by the keyboardist's right hand -- configurations independent of transposition. Modern set theory generalizes this to any conceivable collection.
 
 # Examples
-- Figure P3.5: Two of Campion's contrapuntal categories showing progressions within each category related by independent transposition of each chord
-- Figure P3.7: Three canonic sequences repeatedly applying T_x t_1, differing only in diatonic transposition -- seemingly unrelated but similar from the configurational viewpoint
-- Figure P3.6: Voice leadings from C major to triads on each line differ only in their transpositional component
 
-# Related Concepts
-- Configuration and Center of Gravity
-- Efficient Voice Leading
-- Voicing as Set Class
+**Example 1** (p. 91, Figure P3.5): Two of Campion's contrapuntal categories showing progressions related by independent transposition of each chord.
+
+**Example 2** (p. 92, Figure P3.7): Three canonic sequences repeatedly applying T_x t_1, differing only in diatonic transposition -- seemingly unrelated but sharing the same configurational pattern.
+
+**Example 3** (p. 92, Figure P3.6): Voice leadings from C major to triads on each radial line differ only in their transpositional component.
+
+# Relationships
+
+## Builds Upon
+- **Configuration and Center of Gravity** -- The transform groups by shared configuration
+
+## Related
+- **Efficient Voice Leading** -- The transform helps identify efficient voice-leading patterns
+- **Voicing as Set Class** -- Voicings are a specific application of configurational thinking
+- **Spiral Diagrams for Chord Space** -- Related paths differ only in sliding
+
+# Common Errors
+
+- **Error**: Confusing the Tinctoris Transform with simple transposition of an entire passage
+  **Correction**: Each chord may be independently transposed while preserving the pattern of configurations
 
 # Common Confusions
-- The Tinctoris Transform is not the same as simple transposition of an entire passage; rather, each chord in a progression may be independently transposed while preserving the pattern of vertical configurations
-- The term "individually transpositionally related" from *A Geometry of Music* refers to the same concept
+
+- **Confusion**: Thinking the transform is a modern invention
+  **Clarification**: It originated with Tinctoris in 1477 and has been used throughout the history of music theory
 
 # Source Reference
-Prelude to Chapter 3, "The Tinctoris Transform," pp. 87-95 (Figures P3.2, P3.5, P3.6, P3.7)
+
+Prelude to Chapter 3: "The Tinctoris Transform," pp. 87-95, Figures P3.2, P3.5-P3.7.
+
+# Verification Notes
+
+- Definition source: Direct quotation from pp. 91-92
+- Confidence: HIGH -- explicitly named concept with historical provenance
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: Campion extension, three-fundamental-motions insight

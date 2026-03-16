@@ -1,37 +1,117 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Hearing-As vs. Hearing Plus Thinking
-category: theory
+slug: hearing-as-vs-hearing-plus-thinking
+
+# === CLASSIFICATION ===
+category: analysis
+subcategory: perception-and-epistemology
+tier: advanced
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Prelude: Hearing and Hearing-As"
 chapter_number: null
 pdf_page: 402
-authors: "Dmitri Tymoczko"
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "hearing as vs. hearing plus thinking"
+  - "direct perception vs. calculation in music"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - experiential-vs-calculational-knowledge
+  - analytical-objectivity
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the difference between hearing something 'as' X and thinking 'that is X'?"
+  - "How does the hearing-as distinction affect music-theoretical claims?"
 ---
 
 # Quick Definition
-The distinction between directly experiencing a musical property (hearing-as) and recognizing it through conscious calculation (hearing plus thinking), drawn from Wittgenstein's philosophy of perception.
 
-# Formal Definition
-"Hearing as" refers to the immediate, experiential perception of musical properties such as interval quality or chord function, where the character of the sound is felt directly. "Hearing plus thinking" refers to the cognitive process of identifying musical properties through calculation or inference rather than direct perceptual experience. The distinction originates in Wittgenstein's (1953) parallel concept of "seeing as" versus "seeing plus thinking."
+A philosophical distinction (originating with Wittgenstein) between directly perceiving a musical quality "as" what it is -- where the perception is immediate and felt -- versus hearing sounds and using conscious calculation to identify musical properties.
 
-# Musical Context
-This distinction is foundational for evaluating claims about musical perception, particularly regarding long-range tonal relationships. If music theory is committed to art as experiential, then what we can calculate matters less than what we hear directly. This is why ear training emphasizes direct listening rather than score-based analysis.
+# Core Definition
+
+"Philosophers distinguish *hearing as* from *hearing plus thinking*: the question is whether we hear a major third *as* a major third, or whether we hear a pair of notes that allow us to *think the thought* 'that is a major third'" (p. 403). This distinction, originating with Wittgenstein's "seeing as" vs. "seeing plus thinking," is "arguably foundational to the entire enterprise" of music theory: "if we are committed to the idea that art is experiential, then we have reason to be less concerned with *what we can calculate* and more concerned with *what we hear directly*" (p. 403).
+
+The imaginary absolute-pitch student who identifies intervals by counting semitones exemplifies "hearing plus thinking" -- they pass tests but miss the direct, experiential quality (pp. 402--403). By contrast, hearing a dominant seventh chord "as" a perceptual whole, with its character seeming "immediate, forceful, and present," exemplifies "hearing as" (p. 403).
+
+# Prerequisites
+
+This is a foundational concept with no prerequisites within this source.
+
+# Key Properties
+
+1. "Hearing as": the perception of musical quality is direct, immediate, embedded in experience
+2. "Hearing plus thinking": sound is heard, then a thought is applied via calculation
+3. Experiments may not distinguish between the two -- a calculator can pass the same tests as a direct perceiver
+4. The distinction is relevant to long-range tonal perception (most listeners cannot directly "hear" tonal return)
+5. Theory can sometimes change experience, converting "thinking" into genuine "hearing"
+6. "It can be genuinely difficult to know whether we are thinking something or experiencing it directly" (p. 406)
+
+# Construction / Recognition
+
+## To Apply the Distinction:
+1. Ask: does the musical property feel immediate and pre-reflective, or does it require conscious tracking?
+2. Consider whether the perception persists without score-following or conscious analysis
+3. Note that repeated listening can provide cognitive access without genuine perceptual experience
+4. Be skeptical of first-person testimony about what one "hears" -- self-knowledge about perception is unreliable
+
+# Context & Application
+
+The distinction challenges claims about long-range tonal structure. Non-absolute-pitch listeners may know "that" a piece has returned to the tonic through rhetorical cues, but this is different from directly experiencing "dissonance being resolved" (p. 404). The prelude warns against both extremes: overconfident claims about what listeners perceive (ignoring human limitations) and dismissing all theoretical insight (ignoring theory's power to change experience).
+
+Tymoczko offers the electronic track "In" by Brothomstates as an example where theory genuinely changes perception: understanding the piece as a 3+2 echo harmonizes seemingly incompatible percepts (Figures P9.1--P9.2).
 
 # Examples
-- A hypothetical absolute-pitch student who identifies intervals by counting semitones rather than directly perceiving intervallic quality (p. 402)
-- Directly experiencing a dominant seventh chord as tense and full of implication versus calculating its identity from component pitches (p. 403)
-- The electronic track "In" by Brothomstates, where theory changes perception by revealing a 3 + 2 echo pattern (Figure P9.1-P9.2, p. 404-405)
 
-# Related Concepts
-- Limits of Long-Range Perception
-- Experiential vs. Calculational Knowledge
-- Heterogeneous Hierarchy
+**Example 1** (pp. 402--403): The imaginary absolute-pitch student who calculates intervals by counting semitones -- passes tests but lacks direct intervallic experience.
+
+**Example 2** (p. 403): Directly perceiving a dominant seventh chord's character as "immediate, forceful, and present."
+
+**Example 3** (pp. 404--405, Figures P9.1--P9.2): Brothomstates' "In" -- understanding the 3+2 echo structure genuinely changes what one hears.
+
+# Relationships
+
+## Builds Upon
+(Foundational epistemological concept)
+
+## Enables
+- **Experiential vs. calculational knowledge** -- A closely related distinction applied to music-theoretical claims
+
+## Related
+- **Analytical objectivity** -- Concerns about what we actually hear vs. what we claim to hear
+
+# Common Errors
+
+- **Error**: Assuming that passing an ear-training test proves genuine perceptual sensitivity
+  **Correction**: Tests cannot distinguish between direct perception and sophisticated calculation
 
 # Common Confusions
-- Passing an ear-training test does not prove one hears a property "as such" -- calculation can substitute for direct perception
-- Repeated listening gives cognitive access to information one may not perceive directly, making it unreliable as evidence for genuine perception
-- First-person testimony about what one hears can be unreliable, as demonstrated by experiments in visual perception and other domains
+
+- **Confusion**: Thinking repeated listening resolves the question
+  **Clarification**: Repeated listening provides cognitive access to information one may not be able to "perceive directly" in the relevant experiential sense (p. 404)
 
 # Source Reference
-Prelude to Chapter 9 ("Hearing and Hearing-As"), pp. 402-406. The distinction draws on Wittgenstein (1953) and DeBellis (1999).
+
+Prelude: Hearing and Hearing-As, pp. 402--406. Figures P9.1--P9.2.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 402--403 (Wittgenstein reference, major-third question)
+- Confidence rationale: High -- the prelude is explicitly organized around this distinction
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: Wittgenstein origin, imaginary student example; added Brothomstates example, repeated-listening caveat

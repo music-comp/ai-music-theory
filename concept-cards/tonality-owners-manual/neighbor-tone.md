@@ -1,38 +1,123 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Neighbor Tone
-category: theory
+slug: neighbor-tone
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: dissonance-treatment
+tier: foundational
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Nonharmonic Tones"
 chapter_number: 5
 pdf_page: 210
-authors: "Dmitri Tymoczko"
-unit: null
+section: "The first practice and the SNAP system"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - neighboring tone
+  - auxiliary tone
+  - upper neighbor
+  - lower neighbor
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - nonharmonic-tone
+extends: []
+related:
+  - snap-system
+  - passing-tone
+  - incomplete-neighbor
+  - cambiata
+contrasts_with:
+  - passing-tone
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a neighbor tone?"
+  - "What distinguishes passing tones from neighbor tones?"
 ---
 
 # Quick Definition
-A nonharmonic tone that departs from and returns to the same chord tone by step, either above (upper neighbor) or below (lower neighbor). Can be complete (departing and returning) or incomplete (connected by step to only one adjacent chord tone).
 
-# Formal Definition
-A complete neighbor tone moves by step from a chord tone and returns to the same chord tone. Incomplete neighbors are connected by step to only one of their adjacent chord tones -- they are either approached or left by leap. In the baroque and classical periods, incomplete neighbors are classified by metrical weight (accented or unaccented) and direction of stepwise connection (to predecessor or successor). Three of the four combinations are common: the appoggiatura (accented, connected to successor), the escape tone/echappee (unaccented, connected to predecessor), and the unaccented incomplete neighbor connected to the successor.
+A nonharmonic tone that departs from a chord tone by step (above or below) and returns to the same chord tone. Can be complete (departing and returning) or incomplete (connected by step to only one adjacent chord tone).
 
-# Musical Context
-Complete neighbors appear throughout the SNAP system in Renaissance music. Incomplete neighbors are largely eliminated from the strict Palestrina style, with only the cambiata surviving. They return as a standard part of eighteenth-century practice, where they become one of the key devices of the "standardized second practice."
+# Core Definition
+
+A complete neighbor tone moves by step from a chord tone and returns to the same chord tone. It can be an upper neighbor (step above) or lower neighbor (step below). Complete neighbors appear throughout the SNAP system in Renaissance music. Incomplete neighbors are connected by step to only one of their adjacent chord tones -- approached or left by leap. In the Palestrina style, incomplete neighbors are largely eliminated, with only the cambiata surviving. They return as standard devices in the baroque "standardized second practice" (p. 235).
+
+# Prerequisites
+
+- **Nonharmonic tone** — Understanding what constitutes a note outside the prevailing harmony
+
+# Key Properties
+
+1. Departs from and returns to the same chord tone
+2. Moves by step (typically one diatonic step)
+3. Can be upper or lower
+4. Can be complete (step-step) or incomplete (step-leap or leap-step)
+5. "121" neighbor tones cut across the binary division of the beat, like "121" passing tones (p. 215)
+
+# Construction / Recognition
+
+## To Identify a Neighbor Tone:
+1. Locate a note not belonging to the prevailing harmony
+2. Verify the note before it is a chord tone
+3. Verify the note after it is the same chord tone
+4. Confirm stepwise motion in both approach and departure (for complete neighbor)
+
+# Context & Application
+
+Complete neighbors are fundamental to the SNAP system. In the baroque and classical periods, incomplete neighbors are classified by metrical weight and direction of stepwise connection. Three of the four combinations are common: appoggiatura (accented, connected to successor), escape tone/echappee (unaccented, connected to predecessor), and unaccented incomplete neighbor connected to successor (p. 236).
 
 # Examples
-- Figure 5.4.1: The four species of incomplete neighbor, classified by accent and stepwise connection
-- Figure 5.4.2: Rare examples of the "missing" incomplete neighbor (accented, connected to predecessor) in Chopin's Mazurka Op. 33, no. 1, mm. 23-24, and "The Streets of Laredo"
-- Figure 5.4.3: An incomplete neighbor in Bach's "Wie schon leuchtet der Morgenstern" (BWV 172.6), where the bass B-flat decorates the following C melodically but would be replaced by the preceding F upon reduction
 
-# Related Concepts
-- SNAP System
-- Cambiata
-- Passing Tone
-- Anticipation
-- Nonharmonic Reduction
+**Example 1** (p. 215, Fig. 5.1.7): "121" neighbor tones that cut across the binary division of the beat in Palestrina's Pope Marcellus Mass and Willaert's O salutaris hostia.
+
+**Example 2** (p. 236, Fig. 5.4.1): The four species of incomplete neighbor classified by accent and stepwise connection.
+
+**Example 3** (p. 237, Fig. 5.4.3): An incomplete neighbor in Bach's "Wie schon leuchtet der Morgenstern" (BWV 172.6), where the bass B-flat decorates the following C melodically but would be replaced by the preceding F upon reduction.
+
+# Relationships
+
+## Builds Upon
+- **Nonharmonic tone** — Neighbor tones are one of the four SNAP species
+
+## Enables
+- **Incomplete neighbor** — The baroque expansion of neighbor-tone types
+- **Decorated anticipation** — Neighbors can decorate anticipations recursively
+
+## Related
+- **Snap system** — Neighbor tones are the N in SNAP
+- **Cambiata** — The sole incomplete neighbor surviving in the Palestrina style
+
+## Contrasts With
+- **Passing tone** — Passing tones continue in the same direction; neighbors return to the starting pitch
+
+# Common Errors
+
+- **Error**: Assuming the note an incomplete neighbor "represents" is always the note connected by step
+  **Correction**: Incomplete neighbors sometimes represent a different note for reduction purposes -- a melodic decoration of the following note may stand for the preceding note in the harmonic skeleton (p. 236)
 
 # Common Confusions
-- Incomplete neighbors are important because the notes they "represent" for purposes of reduction are not necessarily the notes to which they are connected by step. A melodic decoration of a following note may stand for a preceding note in the harmonic skeleton.
-- The fourth type of incomplete neighbor (accented, connected by step to predecessor) is extremely rare and sometimes interpretable as an added sixth rather than a nonharmonic tone.
+
+- **Confusion**: Treating the fourth type of incomplete neighbor (accented, connected by step to predecessor) as a standard nonharmonic tone
+  **Clarification**: This type is extremely rare and sometimes interpretable as an added sixth rather than a nonharmonic tone (p. 236, Fig. 5.4.2)
 
 # Source Reference
-Chapter 5, section 4, "The standardized second practice," pp. 235-237.
+
+Chapter 5: Nonharmonic Tones, sections 1 and 4, pp. 211-215 and 235-237.
+
+# Verification Notes
+
+- Definition source: Direct from chapter discussion
+- Confidence rationale: Standard, well-defined concept
+- Cross-reference status: Verified against snap-system, incomplete-neighbor, cambiata
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source

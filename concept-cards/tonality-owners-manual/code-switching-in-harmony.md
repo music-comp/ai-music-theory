@@ -1,39 +1,108 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Code Switching in Harmony
-category: analysis
+slug: code-switching-in-harmony
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: harmonic-function
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Rock Logic"
 chapter_number: 2
 pdf_page: 47
-authors: "Dmitri Tymoczko"
-unit: null
+section: "Function and retrofunction"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - function-and-retrofunction
+extends: []
+related:
+  - modal-state-of-nature
+  - loop-families-in-rock
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is code switching in harmony?"
 ---
 
 # Quick Definition
-The practice of alternating between functional and retrofunctional (modal) harmonic systems within a single piece, analogous to bilingual speakers switching between languages.
 
-# Formal Definition
-Code switching, a term borrowed from linguistics by Richard Cohn (originally to describe nineteenth-century chromaticism), refers to the juxtaposition of distinct harmonic subsystems within a single piece. In rock, this typically means alternating between modal/retrofunctional sections (ascending fifths, bVII-IV progressions) and functional sections (V-I cadences, ii-V-I). The systems may be kept separate (occurring in different sections) or blended into a "coherent creole."
+Alternating between functional and retrofunctional (modal) harmonic systems within a single piece, analogous to bilingual speakers switching between languages -- a term borrowed from linguistics by Richard Cohn.
 
-# Musical Context
-Code switching is pervasive in rock music and can also be found in Renaissance music. It challenges the assumption that a piece must be governed by a single harmonic system. The phenomenon suggests that popular musicians shift between "the default voice leading of the modal system and more conventionalized functional routines" much as bilingual speakers move between languages. The boundary between code switching and coherent fusion varies from listener to listener.
+# Core Definition
+
+"Just as bilingual speakers can move smoothly between two different languages, so too do popular musicians shift between the default voice leading of the modal system and more conventionalized functional routines" (p. 79). The term was "dubbed 'code switching' by Richard Cohn, borrowing a term from linguistics to describe nineteenth-century chromaticism" (p. 79). "The line between languages can vary from individual to individual: to my ears, tunes like 'With a Little Help from My Friends' really do move back and forth between distinct harmonic styles, but for others the song may be unified creole" (p. 79).
+
+# Prerequisites
+
+- **Function and Retrofunction** -- The two systems between which switching occurs
+
+# Key Properties
+
+1. Alternation between functional and retrofunctional harmonic systems
+2. Analogous to bilingual language switching
+3. The boundary between code switching and coherent fusion is subjective
+4. Can be reinforced by orchestration (different instruments for different systems)
+5. Found in both rock and Renaissance music
+6. Term from Cohn (2012), originally for nineteenth-century chromaticism
+
+# Construction / Recognition
+
+## To Identify:
+1. Look for sections with retrofunctional progressions (ascending fifths, bVII-IV)
+2. Look for sections with functional progressions (V-I, ii-V-I)
+3. Check if these alternate between song sections (verse vs. chorus)
+4. Note orchestrational reinforcement of the contrast
+
+# Context & Application
+
+Code switching suggests that rock music juxtaposes "distinct harmonic subsystems, one functional and one modal, each with its own characteristic repertoire of harmonic moves" (p. 78).
 
 # Examples
-- Beatles' "With a Little Help from My Friends": verse alternates between retrofunctional (I-V-ii) and functional (ii-V^7-I) three-chord units; orchestration reinforces the contrast (Ringo = modal, backing vocals = functional), Figure 2.9.1
-- Rolling Stones' "Sympathy for the Devil": mixolydian I-bVII-IV verses with functional V^7-I chorus (Figure 2.4.1)
-- The Who's "I Can't Explain": modal verses with functional I-vi-IV-V chorus
-- Thomas Morley's "April Is in My Mistress' Face" (1596): opens functionally, ends with retrofunctional descending 6-5 sequence (Figures 2.9.2-2.9.3)
 
-# Related Concepts
-- Function and Retrofunction
-- Modal State of Nature
-- Loop Families in Rock
-- Weak vs. Strong Root Progressions
+**Example 1** (p. 78, Figure 2.9.1): "With a Little Help from My Friends" -- ABAB alternation, Ringo on modal parts, backing vocals on functional.
+
+**Example 2** (p. 61): "Sympathy for the Devil" -- mixolydian verses, functional chorus.
+
+**Example 3** (pp. 79-80, Figures 2.9.2-2.9.3): Morley's "April Is in My Mistress' Face" (1596) -- functional opening, retrofunctional ending.
+
+# Relationships
+
+## Builds Upon
+- **Function and Retrofunction** -- The two harmonic languages involved
+
+## Related
+- **Modal State of Nature** -- The modal/retrofunctional system is one of the two "languages"
+
+# Common Errors
+
+- **Error**: Treating code switching as incoherence
+  **Correction**: It is a recognized expressive resource in both rock and pre-tonal music
 
 # Common Confusions
-- Code switching is not incoherence -- it is a recognized feature of both rock and pre-tonal music
-- The line between distinct systems and coherent fusion is subjective and may vary from listener to listener
-- Not all rock songs code-switch -- some are purely modal, others purely functional
+
+- **Confusion**: Thinking all rock songs code-switch
+  **Clarification**: Some are purely modal, others purely functional; code switching is one option
 
 # Source Reference
-Chapter 2, Section 9, pp. 78-82. Term attributed to Richard Cohn (2012), originally for nineteenth-century chromaticism.
+
+Chapter 2, Section 9, pp. 78-82. Term from Cohn (2012).
+
+# Verification Notes
+
+- Definition source: Direct quotation from p. 79
+- Confidence: HIGH -- explicitly discussed with named term
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: Ringo/backing vocals detail, creole analogy

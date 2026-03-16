@@ -1,42 +1,113 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Hey Joe Family
-category: analysis
+slug: hey-joe-family
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: harmonic-function
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Rock Logic"
 chapter_number: 2
 pdf_page: 47
-authors: "Dmitri Tymoczko"
-unit: null
+section: "A fourth family"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - fourth loop family
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - loop-families-in-rock
+extends: []
+related:
+  - shepard-tone-passacaglias
+  - function-and-retrofunction
+  - fundamental-canon-of-rock
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Hey Joe family of rock progressions?"
 ---
 
 # Quick Definition
+
 The fourth loop family, built on a five-chord ascending-fifth pattern (C-G-D-A-E) that generates many of rock's most iconic progressions through chord elimination and major/minor substitution.
 
-# Formal Definition
-The "Hey Joe" family involves five chords arranged in ascending fifths to be maximally close diatonically. Unlike the three-loop families (which select one chord from each of four angular positions), this family spans five chords that cover the full spiral, with the outer chords (C and E) occupying the same angular position. Since these outer chords are linked by symmetric voice leading (one note ascending, one descending), they can be exchanged to produce E-G-D-A-C. The five chords can be played with the five major triads that do not require barring in standard guitar tuning (C, G, D, A, E).
+# Core Definition
 
-# Musical Context
-An extraordinary number of iconic rock progressions derive from ascending fifths, perhaps with some chords eliminated and phrase structure misaligned with the fifths-sequence. This attests to the inner consistency of rock harmony and the way ascending fifths mediate between the demands of harmony and counterpoint. Tymoczko's musical education deemphasized ascending fifths in favor of descending fifths; one of his goals is to restore the ascending fifth to its central place.
+The Hey Joe family involves "five chords again arranged in an ascending-fifth pattern so as to be maximally close diatonically" (p. 71). Unlike the three-loop families, this spans five chords. The outer chords (C and E) "occupy the same registral position" on the spiral, linked by "symmetrical voice leading in which one note ascends and one note descends" (p. 73); they can therefore be exchanged. "It is extraordinary how many iconic rock progressions can be derived from ascending fifths" (p. 74). The five chords "can be played with the five major triads that do not require barring in standard guitar tuning" (p. 72).
+
+# Prerequisites
+
+- **Loop Families in Rock** -- The Hey Joe family is the fourth loop family
+
+# Key Properties
+
+1. Five-chord ascending-fifth pattern: C-G-D-A-E
+2. Outer chords (C, E) share an angular position and can be exchanged
+3. Generates i-VI-VII-i, a-F-C-G (axis progression), and many others
+4. Can be played with the five open guitar chords
+5. Despite ascending fifths (strong progressions), produces descending stepwise voice leading
+6. The minor tonic allows completely diatonic versions
+
+# Construction / Recognition
+
+## To Identify:
+1. Look for ascending-fifth root motion spanning 4-5 chords
+2. Check for stepwise descending voice leading despite ascending roots
+3. Note that some chords may be eliminated or replaced with minor
+4. The phrase structure may be misaligned with the fifths-sequence
+
+# Context & Application
+
+One of Tymoczko's goals is "to correct this misapprehension, restoring the ascending fifth to its central place in both modal and functionally tonal theory" (p. 74).
 
 # Examples
-- "Hey Joe" (Hendrix): C-G-D-A-E with endlessly sinking lament despite ascending fifths (Figure 2.7.1)
-- i-VI-VII-i: three-chord subset used in countless songs
-- a-F-C-G ("axis progression"): appears as i-VI-III-VII in A minor or I-V-vi-IV in C major
-- Neil Young's "Keep on Rockin' in the Free World": e-D-C (verse) and e-G-D-C (chorus), Figure 2.7.3
-- "Steppin' Stone" (Paul Revere and the Raiders): E-G-A-C with explicit continuous melodic descent (Figure 2.7.4)
-- Beatles' "A Day in the Life," "Here Comes the Sun"; Al Green's "Take Me to the River"
 
-# Related Concepts
-- Loop Families in Rock
-- Shepard-Tone Passacaglias
-- Function and Retrofunction
-- Melodic Principle of Harmony
-- Fundamental Canon of Rock
+**Example 1** (p. 72, Figure 2.7.1): "Hey Joe" -- C-G-D-A-E with endlessly sinking lament.
+
+**Example 2** (p. 72, Figure 2.7.2): Subsets including i-VI-VII-i and a-F-C-G (axis progression).
+
+**Example 3** (p. 73, Figure 2.7.3): "Keep on Rockin' in the Free World" -- e-D-C (verse), e-G-D-C (chorus).
+
+**Example 4** (p. 73, Figure 2.7.4): "Steppin' Stone" -- E-G-A-C with explicit continuous melodic descent.
+
+# Relationships
+
+## Builds Upon
+- **Loop Families in Rock** -- Fourth of four families
+
+## Related
+- **Shepard-Tone Passacaglias** -- The family produces its own canon
+- **Function and Retrofunction** -- Ascending fifths are strong progressions producing retrofunctional voice leading
+
+# Common Errors
+
+- **Error**: Thinking ascending fifths contradict descending voice leading
+  **Correction**: The two aspects work together; ascending fifths produce stepwise descent in the upper voices
 
 # Common Confusions
-- Despite being ascending fifths (strong progressions), the voice leading produces descending stepwise melodies -- the two aspects are not contradictory
-- The outer chords (C and E) share an angular position, so neither is "before" or "after" the other on the spiral
-- The "axis progression" (a-F-C-G) has dual interpretation as minor or major mode depending on tonal center
+
+- **Confusion**: Thinking the axis progression (a-F-C-G) is either minor or major
+  **Clarification**: It has dual interpretation as i-VI-III-VII (A minor) or I-V-vi-IV (C major)
 
 # Source Reference
-Chapter 2, Section 7, pp. 71-74, Figures 2.7.1-2.7.4.
+
+Chapter 2, Section 7: "A fourth family," pp. 71-74, Figures 2.7.1-2.7.4.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 71-72
+- Confidence: HIGH -- dedicated section
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: guitar tuning note, axis progression duality

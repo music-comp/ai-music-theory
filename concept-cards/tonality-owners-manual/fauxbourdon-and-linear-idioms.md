@@ -1,39 +1,121 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Fauxbourdon and Linear Idioms
-category: technique
+slug: fauxbourdon-and-linear-idioms
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: functional-progressions
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Functional Progressions"
 chapter_number: 7
-pdf_page: 311
-authors: "Dmitri Tymoczko"
-unit: null
+pdf_page: 330
+section: "Fauxbourdon and linear idioms"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "fauxbourdon"
+  - "linear idioms in functional harmony"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - harmonic-cycle-theory
+extends: []
+related:
+  - functional-sequences
+  - fauxbourdon-rule-of-the-octave
+  - pseudochord
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does the fauxbourdon tradition connect to functional progressions?"
+  - "What role does parallel motion play in functional harmony?"
 ---
 
 # Quick Definition
-Parallel triadic motion that obeys no further harmonic laws beyond the contrapuntal, persisting from the fourteenth century through the functional era as an independent syntactical subsystem.
 
-# Formal Definition
-Fauxbourdon is one of three independent subsystems comprising functional harmony (alongside harmonic cycles and sequences). It involves parallel motion of chords -- usually first-inversion triads descending by step -- and is "Exhibit A" for continuity between modal and functional practice. In its simplest form, fauxbourdon is decorative, gliding from one syntactic harmony to the next. In other cases it serves a textural function, creating a "palette-cleansing wash" interrupting connections between surrounding harmonies. Fauxbourdon also generates 7--6 suspensions that give the impression of chord changes, creating a continuum from "merely linear" fauxbourdon to "robustly harmonic" descending fifths.
+Parallel triadic motion that obeys no further harmonic laws beyond the contrapuntal, persisting from the fourteenth century through the functional era as one of three independent syntactical subsystems of functional harmony.
 
-# Musical Context
-Fauxbourdon is crucial as the source for descending-bass-line idioms (the fauxbourdon ROTO), for the development of sequences (especially in Corelli's Op. 1), and for the 75--63 idiom descended from the Renaissance seventh. It represents the persistence of medieval contrapuntal practice within the functional system.
+# Core Definition
+
+Fauxbourdon is "Exhibit A for the thesis of continuity between modal and functional practice, and a clear example of the multiple syntactical systems comprising functional harmony" (p. 331). It involves parallel motion of chords -- usually first-inversion triads descending by step -- operating independently of harmonic-cycle grammar. In its simplest form, fauxbourdon is decorative, "gliding from one syntactic harmony to the next" (p. 331). In other cases it serves a textural function, creating a "palette-cleansing wash" that interrupts connections between surrounding harmonies. Fauxbourdon also generates 7--6 suspensions that create impressions of chord change, spanning a continuum from "merely linear" fauxbourdon to "robustly harmonic" descending fifths (p. 335).
+
+# Prerequisites
+
+- **Harmonic cycle theory** -- Fauxbourdon is one of the three subsystems that the theory encompasses
+
+# Key Properties
+
+1. Parallel triadic motion beholden to no further harmonic laws
+2. Persists from the fourteenth century through the functional era
+3. Three roles: decorative (connecting syntactic harmonies), textural (interrupting harmonic connections), and sequential (generating 7--6 patterns)
+4. The 7--6 suspensions create a continuum between linear and harmonic interpretations
+5. The 75--63 fauxbourdon sequence descends from the Renaissance seventh (Figure 7.5.9)
+
+# Construction / Recognition
+
+## To Identify Fauxbourdon:
+1. Look for parallel first-inversion triads moving by step (usually descending)
+2. Check whether the parallel motion connects two syntactically meaningful harmonies (decorative fauxbourdon)
+3. Look for 7--6 suspensions decorating the parallel motion
+4. Assess whether the passage falls on the linear-to-harmonic continuum
+5. Note any root-position chords breaking the parallel pattern (often on scale degree 4)
+
+# Context & Application
+
+Fauxbourdon is crucial as the source for descending-bass-line idioms (the "fauxbourdon ROTO"), for the development of sequences (especially in Corelli's Op. 1 where a substantial proportion of sequential passages use fauxbourdon), and for the 75--63 idiom. In Corelli, fauxbourdon is the most popular descending-step sequence, supplanted by descending fifths in later styles. The intermediate cases between linear and harmonic "largely vanish in the classical period" but occasionally resurface, as in Chopin's Op. 17, no. 4 Mazurka (p. 335).
 
 # Examples
-- Figure 7.5.1: Fanny Mendelssohn Hensel, *Sechs Lieder*, Op. 1, no. 2, mm. 24--27: "decorative" fauxbourdon connecting IV^6^ to V^6^.
-- Figure 7.5.2: Opening of Bach's Fifth Brandenburg Concerto, using fauxbourdon to harmonize a descending bass from D4 to D3.
-- Figure 7.5.8: Fauxbourdon sequence with 7--6 suspensions and two variants, spanning the continuum from linear to harmonic.
-- Figure 7.5.9: The 75--63 fauxbourdon sequence in Monteverdi's "Longe da te, cor mio" (Book IV, mm. 34--37).
-- Chopin's Op. 17, no. 4 Mazurka: Updates the effect for the chromatic era.
 
-# Related Concepts
-- Rule of the Octave
-- Harmonic Cycle Theory
-- Functional Sequences
+**Example 1** (p. 331, Figure 7.5.1): Fanny Mendelssohn Hensel, *Sechs Lieder*, Op. 1, no. 2 -- decorative fauxbourdon connecting IV^6^ to V^6^.
+
+**Example 2** (p. 331, Figure 7.5.2): Opening of Bach's Fifth Brandenburg Concerto -- fauxbourdon harmonizes descending bass from D4 to D3.
+
+**Example 3** (pp. 334--335, Figure 7.5.8): Fauxbourdon with 7--6 suspensions and variants spanning the linear-to-harmonic continuum.
+
+**Example 4** (p. 335, Figure 7.5.9): The 75--63 fauxbourdon sequence in Monteverdi's "Longe da te, cor mio" (Book IV, mm. 34--37).
+
+# Relationships
+
+## Builds Upon
+(Fauxbourdon predates functional harmony and is not built upon other functional concepts)
+
+## Enables
+- **Fauxbourdon rule of the octave** -- The principal idiom generated by fauxbourdon in functional contexts
+- **Functional sequences** -- Fauxbourdon contributes to the development of sequential patterns
+
+## Related
+- **Pseudochord** -- The pedal-point idiom shares fauxbourdon's emphasis on parallel motion
+
+# Common Errors
+
+- **Error**: Analyzing all fauxbourdon passages with Roman numerals as if they were harmonic
+  **Correction**: Fauxbourdon operates as an independent linear system; Roman-numeral analysis may produce misleading results for purely linear passages
 
 # Common Confusions
-- Fauxbourdon is not simply "wrong" or "non-functional" harmony: it is an independent syntactical system that coexists with harmonic cycles within functional tonality.
-- The distinction between fauxbourdon and harmonic sequences is a continuum, not a binary: the 75--63 pattern is suspended between harmonic and nonharmonic realms.
-- Popular musicians use similar techniques when embellishing progressions with stepwise motion (e.g., IV--iii--ii--I).
+
+- **Confusion**: Thinking fauxbourdon is "wrong" or "non-functional" harmony
+  **Clarification**: It is an independent syntactical system that coexists with harmonic cycles within functional tonality
+
+- **Confusion**: Treating the linear-harmonic distinction as binary
+  **Clarification**: The 75--63 pattern and similar idioms occupy a continuum -- they are "suspended between the harmonic and nonharmonic realms" (p. 335)
 
 # Source Reference
-Chapter 7, Section 5, pp. 330--336. Figures 7.5.1--7.5.10.
+
+Chapter 7: Functional Progressions, Section 5, pp. 330--336. Figures 7.5.1--7.5.10.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 330--331 (Exhibit A quote, three roles)
+- Confidence rationale: High -- extensively discussed with many examples
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: Exhibit A quote, decorative/textural roles, Renaissance seventh connection, Chopin update -- all confirmed in source

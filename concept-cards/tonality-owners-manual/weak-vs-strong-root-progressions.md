@@ -1,38 +1,115 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Weak vs. Strong Root Progressions
-category: theory
+slug: weak-vs-strong-root-progressions
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: harmonic-function
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Rock Logic"
 chapter_number: 2
 pdf_page: 47
-authors: "Dmitri Tymoczko"
-unit: null
+section: "A melodic principle"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - melodic-principle-of-harmony
+extends: []
+related:
+  - function-and-retrofunction
+  - diatonic-distance
+  - corpus-analysis-methods
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What distinguishes rock harmonic logic from classical functional harmony?"
+  - "What are weak vs. strong root progressions?"
 ---
 
 # Quick Definition
-"Strong" root progressions (descending fifths, descending thirds) are associated with classical functional harmony; "weak" progressions (ascending fifths, ascending thirds, descending steps) are the norm in rock and modal music.
 
-# Formal Definition
-Following Meeuss (2000), root progressions are classified as "strong" (descending fifths, ascending minor thirds) or "weak" (ascending fifths, ascending minor thirds, descending steps). Descending melodic steps preferentially generate weak progressions, since these intervals allow more opportunities for stepwise descent between triads. The major third is the only interval equally balanced between strong and weak. The terms derive from the observation that strong progressions create a stronger sense of directed harmonic motion in classical contexts.
+"Strong" root progressions (descending fifths, descending thirds) are associated with classical functional harmony; "weak" progressions (ascending fifths, ascending thirds, descending steps) are the retrofunctional norm of rock and modal music.
 
-# Musical Context
-Rock music overwhelmingly favors weak progressions, while classical functionality favors strong progressions. Data from the Rolling Stone "500 Greatest Songs" confirms the model's predictions: fifths are the most frequent root motion, followed by major seconds, minor thirds, major thirds, and minor seconds (Figure 2.2.4). This pattern is consistent with the melodic principle, where descending steps and diatonic proximity jointly produce the observed distribution.
+# Core Definition
+
+Following Meeuss (2000), root progressions are classified as "strong" (descending fifths, ascending minor thirds) or "weak" (ascending fifths, ascending minor thirds, descending steps). "Descending steps preferentially give rise to what are sometimes called 'weak' root-progressions" (p. 48). The major third is "the only interval equally balanced between strong and weak" (p. 48). Data from the Rolling Stone "500 Greatest Songs" confirms these predictions: fifths most frequent, followed by major seconds, minor thirds, major thirds, minor seconds, with no tritone progressions at all (p. 56, Figure 2.2.4).
+
+# Prerequisites
+
+- **Melodic Principle of Harmony** -- Weak progressions arise from the melodic principle of descending stepwise melody
+
+# Key Properties
+
+1. Strong: descending fifths, ascending minor thirds (classical functional norms)
+2. Weak: ascending fifths, ascending minor thirds, descending steps (rock/modal norms)
+3. Major third is equally balanced between strong and weak
+4. Descending melodic steps preferentially generate weak progressions
+5. Rock corpus data confirms the predicted distribution
+6. Terms derive from the directionality of classical harmonic motion
+
+# Construction / Recognition
+
+## To Classify a Root Progression:
+1. Determine the root motion interval
+2. Determine the direction (ascending or descending)
+3. Descending fifths and ascending minor thirds = strong
+4. Ascending fifths and ascending minor thirds, descending steps = weak
+5. Major thirds are equally balanced
+
+# Context & Application
+
+Tymoczko's model explains rock's retrofunctional tendencies not as "rebellion against classical harmonic practice, but rather a straightforward solution to a basic musical problem" (p. 47). The spiral diagram rewrites with Roman numerals shows retrofunctional norms: "it does not give us reason to expect many descending fifths or descending thirds, progressions traditionally associated with functional tonality" (p. 57).
 
 # Examples
-- "Helpless" (I-V-IV-I): ascending fifth (I to V) and descending step (V to IV) -- both weak progressions
-- "Eight Days a Week" (I-II-IV-I): ascending step and descending step -- weak progressions
-- Rolling Stone corpus data: P5 most common (diatonic distance 0), followed by M2, m3, M3, m2, with tritone absent entirely (Figure 2.2.4)
 
-# Related Concepts
-- Melodic Principle of Harmony
-- Function and Retrofunction
-- Spiral Diagrams for Chord Space
-- Corpus Analysis Methods
+**Example 1** (p. 47): "Helpless" (I-V-IV-I) -- ascending fifth (I to V) and descending step (V to IV), both weak.
+
+**Example 2** (p. 59): "Eight Days a Week" (I-II-IV-I) -- ascending step and descending step, both weak.
+
+**Example 3** (p. 56, Figure 2.2.4): Rolling Stone corpus data confirming the prediction.
+
+# Relationships
+
+## Builds Upon
+- **Melodic Principle of Harmony** -- Weak progressions are generated by descending melodies
+
+## Enables
+- **Function and Retrofunction** -- The weak/strong distinction maps onto the retrofunctional/functional contrast
+
+## Related
+- **Diatonic Distance** -- Combined with diatonic proximity to predict rock harmony
+- **Corpus Analysis Methods** -- Corpus data validates the predictions
+
+# Common Errors
+
+- **Error**: Interpreting "weak" as aesthetically inferior
+  **Correction**: The terms describe a relationship to classical norms, not aesthetic quality
 
 # Common Confusions
-- "Weak" does not mean "bad" or "ineffective" -- the terms describe a relationship to classical functional norms, not aesthetic quality
-- Rock's preference for weak progressions is not a deliberate rejection of classical norms but a straightforward solution to basic musical problems
-- The major-third root motion is uniquely balanced between strong and weak tendencies
+
+- **Confusion**: Thinking rock's weak progressions are deliberate rejection of classical norms
+  **Clarification**: Rock musicians make "affirmative use of the possibilities afforded by deep musical relationships"; their oppositional quality is "more byproduct than motivation" (p. 57, footnote 13)
 
 # Source Reference
-Chapter 2, Sections 1-2, pp. 48-57, Figures 2.1.1-2.2.5. Terms from Meeuss (2000); observation about rock also made by Stephenson (2002).
+
+Chapter 2, Sections 1-2, pp. 48-57, Figures 2.1.1-2.2.5. Terms from Meeuss (2000).
+
+# Verification Notes
+
+- Definition source: Direct from p. 48 with Meeuss citation
+- Confidence: HIGH -- explicitly defined with corpus support
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: Rolling Stone corpus data, major-third balance note

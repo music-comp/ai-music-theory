@@ -1,36 +1,112 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Nonharmonic Consonance
-category: theory
+slug: nonharmonic-consonance
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: dissonance-treatment
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Nonharmonic Tones"
 chapter_number: 5
 pdf_page: 210
-authors: "Dmitri Tymoczko"
-unit: null
+section: "The first practice and the SNAP system"
+
+# === CONFIDENCE ===
+extraction_confidence: medium
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - nonharmonic-tone
+extends: []
+related:
+  - harmonic-skeleton
+  - ambiguous-syntax-in-tonal-music
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a nonharmonic consonance?"
+  - "Why do nonharmonic consonances complicate harmonic analysis?"
 ---
 
 # Quick Definition
-A consonant interval or sonority that functions as a nonharmonic tone -- belonging not to the prevailing harmony but passing between or neighboring actual chord tones.
 
-# Formal Definition
-A nonharmonic consonance is a tone that, while forming a consonant interval with other voices, is not a member of the structural harmony. Palestrina's music contains relatively few of these, making it highly susceptible to computational analysis. In later music, nonharmonic consonances become more common and create greater analytical difficulty, as the distinction between what is "harmonic" and what is "nonharmonic" becomes blurred when a nonharmonic tone is itself consonant.
+A tone that forms consonant intervals with other voices yet does not belong to the prevailing harmony. Their rarity in Palestrina facilitates algorithmic analysis; their increasing frequency in later music makes harmonic analysis more difficult.
 
-# Musical Context
-The relative absence of nonharmonic consonances in Palestrina's music is one reason why computational analysis of the style is so successful. In functional-era music, nonharmonic consonances are more frequent and create interpretive challenges: a tone may be consonant with the bass yet not belong to the prevailing harmony, requiring analytical judgment rather than simple interval measurement.
+# Core Definition
+
+A nonharmonic consonance is a tone that, while forming a consonant interval with other voices, is not a member of the structural harmony. Palestrina's music contains relatively few of these, making it highly susceptible to computational analysis -- there is "little need for concepts such as the 'nonharmonic consonance'" (p. 212). In later music, nonharmonic consonances become more frequent and create greater analytical difficulty, as the distinction between harmonic and nonharmonic becomes blurred when a nonharmonic tone is itself consonant.
+
+# Prerequisites
+
+- **Nonharmonic tone** — The general category to which nonharmonic consonances belong
+
+# Key Properties
+
+1. Consonant in interval but nonharmonic in function
+2. Rare in Palestrina's music
+3. Increasingly common in functional-era music
+4. Create analytical ambiguity -- hard to distinguish from chord tones by interval alone
+5. Composers tend to ensure simultaneous nonharmonic tones are mutually consonant
+
+# Construction / Recognition
+
+## To Identify a Nonharmonic Consonance:
+1. Locate a tone consonant with the bass and other voices
+2. Determine the prevailing harmony through context
+3. Check whether the tone belongs to that harmony
+4. If consonant but not part of the harmony, it is a nonharmonic consonance
+
+# Context & Application
+
+The relative absence of nonharmonic consonances in Palestrina is one reason computational analysis of the style succeeds. In functional-era music, composers tend to ensure simultaneous nonharmonic tones are mutually consonant, which inevitably leads to "apparent chords" that do not participate in the harmonic syntax (Prelude to Ch. 7, p. 304).
 
 # Examples
-- Palestrina's music contains "relatively few" nonharmonic consonances, facilitating algorithmic analysis (Ch. 5, section 1)
-- The concept becomes critical in functional-era music where consonant passing and neighbor tones complicate harmonic analysis (referenced in prelude to Ch. 7)
 
-# Related Concepts
-- Nonharmonic Reduction
-- Harmonic Skeleton
-- SNAP System
-- Analytical Ambiguity in Reduction
+**Example 1** (p. 212): Palestrina's music contains "relatively few" nonharmonic consonances, facilitating algorithmic analysis.
+
+**Example 2** (Prelude to Ch. 7, p. 304): Composers' tendency to make simultaneous nonharmonic tones consonant creates "apparent chords" that complicate analysis.
+
+# Relationships
+
+## Builds Upon
+- **Nonharmonic tone** — A specific subtype
+
+## Enables
+- **Ambiguous syntax in tonal music** — Nonharmonic consonances contribute to harmonic ambiguity
+
+## Related
+- **Harmonic skeleton** — Nonharmonic consonances blur the distinction between skeleton and surface
+
+## Contrasts With
+- No direct contrasts
+
+# Common Errors
+
+- **Error**: Identifying all consonant tones as harmonic
+  **Correction**: Consonance with the bass does not guarantee harmonic function; context determines status
 
 # Common Confusions
-- A nonharmonic consonance is not a contradiction in terms. The term "nonharmonic" refers to the tone's relation to the prevailing harmony, not to its intervallic quality. A tone can be consonant in interval yet nonharmonic in function.
-- The rarity of nonharmonic consonances in Palestrina is a feature that makes computational analysis feasible; their increasing presence in later music is one reason reduction becomes more difficult.
+
+- **Confusion**: Thinking "nonharmonic consonance" is a contradiction in terms
+  **Clarification**: "Nonharmonic" refers to the tone's function relative to the prevailing harmony, not its intervallic quality
 
 # Source Reference
-Chapter 5, section 1, p. 212.
+
+Chapter 5: Nonharmonic Tones, section 1, p. 212. Also Prelude to Ch. 7, p. 304.
+
+# Verification Notes
+
+- Definition source: Synthesized from brief mention on p. 212 and fuller discussion in Prelude to Ch. 7
+- Confidence rationale: Medium -- concept is mentioned but not extensively defined in Ch. 5 itself
+- Cross-reference status: Verified against harmonic-skeleton
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source

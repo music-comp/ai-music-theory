@@ -1,38 +1,114 @@
 ---
-concept: Circle of Keys (Heinichen's Model)
-category: theory
+# === CORE IDENTIFICATION ===
+concept: Circle of Keys
+slug: circle-of-keys
+
+# === CLASSIFICATION ===
+category: modulation
+subcategory: key-distance
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Modulation"
 chapter_number: 8
-pdf_page: 361
-authors: "Dmitri Tymoczko"
-unit: null
+pdf_page: 362
+section: "Two models of key distance"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Heinichen's Musicalische Circul"
+  - "circular model of key relations"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - key-distance-pitch-class-changing
+extends:
+  - key-distance-pitch-class-changing
+related:
+  - minor-key-space
+  - enharmonic-equivalence
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How are keys arranged in circular key space?"
+  - "How do key distance metrics relate to modulatory practice?"
 ---
 
 # Quick Definition
+
 A circular arrangement of major and minor keys based on pitch-class-changing key distance, dating back to Heinichen's eighteenth-century "Musicalische Circul" and formalized by Tymoczko using the scalar spiral diagram.
 
-# Formal Definition
-The circle of keys arranges major keys around a circle based on iterations of the basic voice leading (lowering the leading tone clockwise, raising the fourth degree counterclockwise). Minor keys are incorporated through three approaches: (1) superimposing circles for diatonic, acoustic, and harmonic minor scales (Figure 8.3.3, top left); (2) duplicating the diatonic circle and rearranging radial positions so that circular arcs represent shifts between a single key's scale forms (Figure 8.3.3, top right); (3) a compact model that does not distinguish minor scale forms (Figure 8.3.3, bottom). Heinichen's and Kellner's historical models (Figure 8.1.6) are precursors, representing one of the earliest geometrical representations of musical structure -- antedating the Tonnetz by almost a decade.
+# Core Definition
 
-# Musical Context
-The circle of keys is the primary tool for understanding classical modulatory practice. In Figure 8.3.4, keys are darkened to reflect proximity to C major, forming a stack of fifths from IV to iii (F--C--G--d--a--e). Diatonic tonal journeys are typically bounded: there is no obvious sharpward path from iii to IV, so sequences of diatonic modulations tend to cancel out. Only when key areas are conceived chromatically does full circular motion become possible.
+The circle of keys arranges major keys around a circle based on iterations of the basic voice leading: lowering the leading tone (clockwise) or raising the fourth degree (counterclockwise) (p. 363, Figure 8.1.5). This model dates back to Heinichen's "Musicalische Circul," "one of the earliest geometrical representations of musical structure, antedating the Tonnetz by almost a decade" (p. 363, Figure 8.1.6). Minor keys can be incorporated in three ways (Figure 8.3.3): superimposing circles for diatonic, acoustic, and harmonic-minor scales; duplicating the diatonic circle with rearranged radial positions; or a compact model not distinguishing minor scale forms. When augmented with proximity to a global tonic (Figure 8.3.4), diatonic keys form a stack of fifths from IV to iii (F--C--G--d--a--e).
+
+# Prerequisites
+
+- **Key distance (pitch-class-changing)** -- The distance measure that defines the circle's geometry
+
+# Key Properties
+
+1. Each step around the circle applies the diatonic scale's basic voice leading (one semitone change)
+2. Clockwise: flatward (lower leading tone); counterclockwise: sharpward (raise fourth degree)
+3. Historical precedent: Heinichen (ca. 1711) and Kellner
+4. Diatonic keys cluster in one region; no obvious sharpward path from iii to IV
+5. Complete circular motion requires chromatic key conception
+6. Minor keys are spatially extended, providing shortcuts (Figure 8.3.3)
+
+# Construction / Recognition
+
+## To Construct the Circle:
+1. Place C major at the top
+2. Move clockwise by lowering one note (the leading tone becomes subtonic): C major to F major
+3. Continue clockwise: F to B-flat to E-flat, etc.
+4. Counterclockwise: raise the fourth degree: C to G to D, etc.
+5. After twelve steps in either direction, return to the starting point (enharmonically)
+
+# Context & Application
+
+The circle of keys is the primary tool for understanding classical modulatory practice. It shows why diatonic modulations are bounded -- the keys from IV to iii cluster in one region, with no obvious sharpward path from iii back to IV (p. 374). Only chromatic key conception permits complete circuits. The model is superior to Vial's grid (Figure 8.3.1) because it preserves the circular geometry of enharmonic equivalence.
 
 # Examples
-- Figure 8.1.5: A model of key distance based on pitch-class motion.
-- Figure 8.1.6: Heinichen and Kellner's historical circular models.
-- Figure 8.3.3: Three models of key space incorporating major and minor.
-- Figure 8.3.4: Circular key space with proximity to C major indicated by shading.
 
-# Related Concepts
-- Key Distance (Pitch-Class-Changing)
-- Scalar Spiral Diagram
-- Enharmonic Equivalence
-- Basic Voice Leading of Scales
+**Example 1** (p. 363, Figure 8.1.5): The circular model of major-key distance.
+
+**Example 2** (p. 363, Figure 8.1.6): Heinichen and Kellner's historical circular models.
+
+**Example 3** (p. 374, Figure 8.3.4): Circular key space darkened to show proximity to C major.
+
+# Relationships
+
+## Builds Upon
+- **Key distance (pitch-class-changing)** -- The distance measure underlying the circle
+
+## Enables
+- **Minor key space** -- The extended model incorporating minor keys
+- **Enharmonic equivalence** -- The circular geometry makes enharmonic loops visible
+
+# Common Errors
+
+- **Error**: Conflating the circle of keys with the circle of fifths
+  **Correction**: The circle of keys represents voice-leading distance between complete scales, not just root relationships; it has the same topology but different meaning
 
 # Common Confusions
-- Vial's grid model (Figure 8.3.1) accurately represents the most common modulations but obscures the circular geometry of enharmonic equivalence. Tymoczko's spiral-based model preserves both accuracy and circular geometry.
-- The circle of keys is not the circle of fifths, though they are closely related. The circle of keys represents voice-leading distance between complete scales, not just root relationships.
+
+- **Confusion**: Using Vial's grid model when circular geometry matters
+  **Clarification**: Vial's grid accurately represents common modulations but obscures enharmonic loops -- paths that look similar on the grid produce very different outcomes (Figure 8.3.2)
 
 # Source Reference
-Chapter 8, Sections 1 and 3, pp. 362--375. Figures 8.1.5--8.1.6, 8.3.1--8.3.4.
+
+Chapter 8: Modulation, Sections 1 and 3, pp. 362--375. Figures 8.1.5--8.1.6, 8.3.1--8.3.4.
+
+# Verification Notes
+
+- Definition source: Synthesized from pp. 362--363 and 371--374
+- Confidence rationale: High -- developed with historical references and multiple figures
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: Heinichen historical reference, Vial comparison, bounded diatonic modulations; added minor-key incorporation and chromaticism requirement

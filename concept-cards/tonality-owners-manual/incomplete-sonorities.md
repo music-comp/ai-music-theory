@@ -1,34 +1,112 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Incomplete Sonorities
+slug: incomplete-sonorities
+
+# === CLASSIFICATION ===
 category: analysis
+subcategory: harmonic-analysis
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Prelude: Could the Martians Understand Our Music?"
 chapter_number: null
 pdf_page: 303
-authors: "Dmitri Tymoczko"
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - bare thirds
+  - pivot third
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - ambiguous-syntax-in-tonal-music
+extends: []
+related:
+  - epistemic-circularity-in-harmonic-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do incomplete sonorities create analytical ambiguity?"
 ---
 
 # Quick Definition
-Chords missing one or more notes (typically the root or fifth), which create analytical ambiguity because the remaining notes are consistent with multiple harmonic identities.
 
-# Formal Definition
-An incomplete sonority is a vertical simultaneity that lacks enough notes to uniquely determine its triadic identity. A bare third such as (B-flat, D) is consistent with a B-flat major triad missing its fifth or a G minor triad missing its root. The musical context -- including surrounding progressions, metric placement, and stylistic norms -- determines which reading is most plausible, but sometimes the ambiguity is deliberately exploited as an expressive resource.
+Bare thirds or fifths that are consistent with multiple triads, creating ambiguity about the underlying harmony. A bare third like B-flat/D could be a B-flat triad missing its fifth or a G minor triad missing its root.
 
-# Musical Context
-Incomplete sonorities are especially common in two- and three-voice textures (inventions, fugues, chorales with doubled voices). They become a major source of analytical ambiguity in Bach's music, where bare intervals frequently appear at rhythmically important positions.
+# Core Definition
+
+Incomplete sonorities are an important source of analytical ambiguity (p. 305). A bare third is consistent with a triad missing either its root or fifth. In Bach's "Jesu, du mein liebstes Leben" (BWV 356), the same bare third can sound like different triads depending on context -- and "sounds" really is accurate, as listeners intuitively hear the thirds asymmetrically (p. 305). A "pivot third" is a chord heard in two incompatible ways, analyzed with superimposed readings like a pivot chord even without modulation (p. 306).
+
+# Prerequisites
+
+- **Ambiguous syntax in tonal music** — Incomplete sonorities are one of three sources of ambiguity
+
+# Key Properties
+
+1. Bare thirds or fifths missing chord members
+2. Consistent with multiple triadic interpretations
+3. Context determines which interpretation listeners hear
+4. Listeners can hear different interpretations of the same interval at different points
+5. "Pivot thirds" can be heard two ways simultaneously
+
+# Construction / Recognition
+
+## To Analyze an Incomplete Sonority:
+1. Identify the sounding interval (third, fifth, etc.)
+2. List the possible triads it could belong to
+3. Use context (surrounding harmonies, voice leading) to determine most likely reading
+4. Consider whether the ambiguity itself is musically meaningful
+
+# Context & Application
+
+Incomplete sonorities are particularly common in two- and three-voice textures. Bach's two-part inventions and chorale passages with bare thirds exemplify the phenomenon.
 
 # Examples
-- Bach's "Jesu, du mein liebstes Leben" (BWV 356): The third beat of a recurring one-measure fragment contains a bare third that occupies a quarter of the piece. In mm. 2, 6, and 14, the third (B-flat, D) sounds like B-flat major missing its fifth; in mm. 5 and 10, (D, F) sounds like a rootless B-flat major triad (Figure P7.2).
-- Listeners not looking at the score genuinely hear these asymmetrically, confirming that incomplete sonorities can sound like specific triads even without all their notes.
 
-# Related Concepts
-- Ambiguous Syntax in Tonal Music
-- Epistemic Circularity in Harmonic Analysis
+**Example 1** (p. 304, Fig. P7.2): Bach's "Jesu, du mein liebstes Leben" (BWV 356) -- a contrapuntal fragment with bare thirds heard differently in different contexts.
+
+**Example 2** (p. 306, Fig. P7.3): Bach's D minor two-part invention (BWV 775, mm. 7-14) -- a B-flat/D pivot third heard as both IV and ii simultaneously.
+
+# Relationships
+
+## Builds Upon
+- **Ambiguous syntax in tonal music** — One of three main ambiguity sources
+
+## Enables
+- No specific concepts enabled
+
+## Related
+- **Epistemic circularity in harmonic analysis** — Ambiguous sonorities feed the circularity
+
+## Contrasts With
+- No direct contrasts
+
+# Common Errors
+
+- **Error**: Always choosing the same interpretation for identical intervals
+  **Correction**: Context can make the same bare third sound like different triads
 
 # Common Confusions
-- Incomplete sonorities are not the same as "wrong notes" or errors: they are a normal feature of textures with fewer than four independent voices.
-- The analytical challenge is not that we cannot identify the chord but that multiple identifications are equally consistent with the notes present.
+
+- **Confusion**: Thinking incomplete sonorities must have a single correct interpretation
+  **Clarification**: Sometimes the ambiguity is musically meaningful -- the piece may "play with these possibilities" (p. 305)
 
 # Source Reference
-Prelude to Chapter 7, pp. 304--306. Figure P7.2. References Weber (1817--1821) 1846, pp. 192--94; Goldenberg 2021.
+
+Prelude: Could the Martians Understand Our Music?, pp. 304-306.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 304-306
+- Confidence rationale: Clearly defined with detailed examples
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source

@@ -1,35 +1,108 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Voicing as Set Class
-category: theory
+slug: voicing-as-set-class
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: configurations
+tier: advanced
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Prelude: The Tinctoris Transform"
 chapter_number: null
 pdf_page: 87
-authors: "Dmitri Tymoczko"
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - intrinsic spacing as set class
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - configuration-and-center-of-gravity
+  - intrinsic-vs-enclosing-scale
+extends: []
+related:
+  - tinctoris-transform
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How are voicings formalized as set classes?"
+  - "What is the relationship between figured-bass voicings and set theory?"
 ---
 
 # Quick Definition
-A voicing is a pattern of spacing measured in chordal steps along the chord's intrinsic scale, formalizable as a pitch-set set class. Close position is 012, open position is 024, and so on.
 
-# Formal Definition
-Any chord simultaneously presents multiple set classes: a chromatic set class (determined by pitch classes), a diatonic set class (determined by the extrinsic scale), and an intrinsic pitch-set set class (determined by its voicing or spacing along the chord's own intrinsic scale). Voicings are set classes measured in intrinsic-scale steps. This hierarchical set theory supplements the Tinctorian perspective by providing a way to measure intervals within a vertical configuration.
+A voicing is a pattern of spacing measured in chordal steps along the intrinsic scale, formalizable as a pitch-set set class -- close position is 012, open position is 024, linking figured-bass theory, guitar voicings, and modern set theory.
 
-# Musical Context
-This concept links figured-bass hand positions, guitar voicings ("drop 2"), jazz pentatonic voicings, and formal set theory under a single framework. All share the factoring out of transposition, leaving a description of relative relationships: an interval, a figured-bass hand position, a voicing, a set class. The connection between these traditions was obscured historically by set theory's indifference to register, its lack of concern with voice leading, and its assumption of chromatic space.
+# Core Definition
+
+"We can formalize the intuitive notion of a voicing as a pattern of spacing in chordal steps: a 'close position' voicing is a voicing in which each note is one chordal step above its lower neighbor (e.g., C4-E4-G4) while an 'open position' voicing places each note two steps above its lower neighbor, as in C4-G4-E5" (p. 94). Any chord "presents multiple set classes simultaneously: a chromatic set class determined by its pitch classes, a diatonic set class determined by the extrinsic scale, and an intrinsic pitch-set set class determined by its voicing" (p. 94). "In different musical situations different sets can be more or less salient, with pitch-class content often more perceptible for small chords in close position, and intrinsic spacing more important as chords grow larger or are voiced in unusual ways" (p. 94).
+
+# Prerequisites
+
+- **Configuration and Center of Gravity** -- Voicings are configurations measured in intrinsic-scale steps
+- **Intrinsic vs. Enclosing Scale** -- The intrinsic scale provides the ruler for measuring voicing
+
+# Key Properties
+
+1. Close position = set class 012 (each note one chordal step above neighbor)
+2. Open position = set class 024 (each note two chordal steps above neighbor)
+3. Every chord presents three set classes: chromatic, diatonic, and intrinsic
+4. Pitch-class content is more salient for small close-position chords
+5. Intrinsic spacing is more important for large or unusually voiced chords
+6. Links figured-bass, guitar voicings ("drop 2"), jazz theory, and set theory
+
+# Construction / Recognition
+
+## To Determine a Voicing's Set Class:
+1. Identify the chord's notes
+2. Compress to a single octave to form the intrinsic scale
+3. Measure each note's position in steps along the intrinsic scale from the bass
+4. The resulting numbers form the voicing's set class (e.g., 012, 024)
+
+# Context & Application
+
+The concept connects three historically separate traditions: figured-bass pedagogy (describing hand shapes), guitar manuals (categorizing voicings as "drop 2" etc.), and formal set theory (general vocabulary of musical shapes). All share the factoring out of transposition, leaving relative relationships: "an interval, a figured-bass hand position, a voicing, a 'set class'" (p. 94). The connection was obscured by set theory's indifference to register, lack of concern with voice leading, and assumption of chromatic space.
 
 # Examples
-- Figure P3.10: Bill Evans's "So What" chord and Schoenberg's "Farben" chord are both voiced as open-position pentachords (024 in intrinsic steps), despite having very different pitch-class content. Tables show chromatic, diatonic, and chordal set classes for each.
 
-# Related Concepts
-- Configuration and Center of Gravity
-- Tinctoris Transform
-- OUCH Theory
-- Triadic Configurations
+**Example 1** (p. 94, Figure P3.10): Bill Evans's "So What" chord and Schoenberg's "Farben" chord are both voiced as open-position pentachords (024 in intrinsic steps), despite very different pitch-class content.
+
+# Relationships
+
+## Builds Upon
+- **Configuration and Center of Gravity** -- Voicings are a specific type of configuration
+- **Intrinsic vs. Enclosing Scale** -- The intrinsic scale provides the measurement ruler
+
+## Related
+- **Tinctoris Transform** -- Groups progressions by shared voicings/configurations
+
+# Common Errors
+
+- **Error**: Describing "close" and "open" position as vague register descriptions
+  **Correction**: They are specific set classes (012 and 024 for triads) measured in intrinsic-scale steps
 
 # Common Confusions
-- Traditional set theory focuses only on pitch-class content and ignores register; the voicing perspective adds registral information through intrinsic spacing
-- "Close position" and "open position" are specific voicings (set classes 012 and 024 for triads), not vague descriptions of register
+
+- **Confusion**: Thinking set theory only deals with pitch-class content
+  **Clarification**: Voicings add registral information through intrinsic spacing, complementing pitch-class set classes
 
 # Source Reference
-Prelude to Chapter 3, pp. 94-95, Figure P3.10
+
+Prelude to Chapter 3, pp. 94-95, Figure P3.10.
+
+# Verification Notes
+
+- Definition source: Direct quotation from p. 94
+- Confidence: HIGH -- explicitly defined with example
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: Evans/Schoenberg example, three-set-class insight, "drop 2" connection

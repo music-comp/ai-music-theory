@@ -1,41 +1,112 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Minor Triads on the Spiral
-category: theory
+slug: minor-triads-on-spiral
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: geometric-voice-leading
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Rock Logic"
 chapter_number: 2
 pdf_page: 47
-authors: "Dmitri Tymoczko"
-unit: null
+section: "Minor triads and other trichords"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - spiral-diagrams-for-chord-space
+extends: []
+related:
+  - principle-of-musical-approximation
+  - lp-and-pl-voice-leading
+  - loop-families-in-rock
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How are minor triads represented on the spiral diagram?"
 ---
 
 # Quick Definition
-Three strategies for incorporating minor triads into the spiral model: using the same spiral for any trichord type, superimposing major and minor spirals, or letting a single point represent both major and minor triads with a given root.
 
-# Formal Definition
-The 3-in-12 spiral diagram's basic principles are completely independent of a chord's specific intervallic content, depending only on chord size (3) and scale size (12). Sliding transposes along the scale, looping transposes along the chord, and radial motion outward always combines t_{-1} with **T**_4 regardless of chord type. For C minor, radial motion produces (C, Eb, G) -> (B, E, G); for an 026 trichord, (C, D, F#) -> (A#, E, F#). This universality is "one of the most remarkable features of the geometry."
+Three strategies for incorporating minor triads into the spiral model: using the same diagram for any trichord type, superimposing major and minor spirals, or letting one point represent both parallel major and minor triads.
 
-# Musical Context
-The closer a chord is to the augmented triad, the tighter the connection between clockwise motion and descending stepwise voice leading. Major and minor triads are both close to the augmented triad, producing smooth descent. More uneven chords (like 025) require larger distortions and produce more contrary motion. Three practical strategies: (1) use the same diagram for any trichord, (2) superimpose major and minor diagrams (Figure 2.6.2), or (3) use a single point for both parallel major and minor.
+# Core Definition
+
+The 3-in-12 spiral's "basic principles are completely independent of a chord's specific intervallic content, depending only on the size of the chord and the size of the scale" (p. 69). Sliding, looping, and radial motion work identically for any trichord. "This universality is one of the most remarkable features of the geometry, a single n-in-o graph describing any n-note chord in any o-note scale" (p. 69). The closer a chord is to the augmented triad, the tighter the connection between clockwise motion and descending stepwise voice leading. Three practical strategies: (1) use the same diagram; (2) superimpose major and minor (Figure 2.6.2); (3) use a single point for both.
+
+# Prerequisites
+
+- **Spiral Diagrams for Chord Space** -- Understanding the basic diagram
+
+# Key Properties
+
+1. The same n-in-o graph works for any n-note chord in any o-note scale
+2. For C minor, radial motion: (C,Eb,G) -> (B,E,G) -- same geometry as major
+3. Clockwise between parallel major/minor = "parallel" voice leading (alter third by semitone)
+4. Superimposed diagram allows calculating any major-minor voice leading
+5. The closer to augmented, the smoother the clockwise descent
+6. More uneven chords (025) produce more contrary motion but still follow the same geometry
+
+# Construction / Recognition
+
+## To Use Strategy 2 (Superimposed):
+1. Place major triads on one spiral, minor on another, superimpose
+2. Clockwise from C major to C minor lowers E to Eb (parallel voice leading)
+3. Combine radial + parallel to get any cross-quality voice leading
+
+## To Use Strategy 3 (Single Point):
+1. Use one point to represent both C major and C minor
+2. Sacrifice detail for graphical simplicity
+3. Good for tracking root motion across mixed progressions
+
+# Context & Application
+
+Strategy 3 is used for most of Ch. 2's analysis. In Ch. 3, diatonic analogues treat major and minor triads as "transpositionally related species of the same genus, the diatonic triad."
 
 # Examples
-- For C minor triad, radial motion: (C, Eb, G) -> (B, E, G) -- only one semitone from the major-triad version (Section 2.6)
-- Superimposed major/minor diagram: clockwise path between parallel major/minor is the "parallel" voice leading altering the third by semitone (Figure 2.6.2)
-- C major to E minor: combine radial (C major to E major) + parallel (E major to E minor) = leading-tone exchange (C, E, G) -> (B, E, G), Figure 2.6.2
-- Shostakovich E minor trio passacaglia: single-point approach allows tracking ascending-fifth progressions mixing major, minor, and diminished (Figure 2.6.3)
-- "Knockin' on Heaven's Door" uses minor ii without disrupting the descending stepwise voice leading
 
-# Related Concepts
-- Spiral Diagrams for Chord Space
-- Principle of Musical Approximation
-- LP and PL Voice Leading
-- Major-Third Substitution
-- Loop Families in Rock
+**Example 1** (p. 70, Figure 2.6.2): Superimposed major/minor diagram; clockwise from C major to E minor combines LP + parallel = leading-tone exchange.
+
+**Example 2** (p. 71, Figure 2.6.3): Shostakovich E minor trio passacaglia analyzed using single-point approach.
+
+# Relationships
+
+## Builds Upon
+- **Spiral Diagrams for Chord Space** -- Extends the diagram to handle multiple chord types
+
+## Related
+- **Principle of Musical Approximation** -- Near-symmetry determines smoothness of voice leading
+- **LP and PL Voice Leading** -- Cross-quality voice leadings combine radial with parallel
+
+# Common Errors
+
+- **Error**: Thinking the spiral diagram only works for major triads
+  **Correction**: The same n-in-o graph works for any trichord
 
 # Common Confusions
-- The spiral diagram is not exclusively for major triads -- the same n-in-o graph works for any n-note chord in any o-note scale
-- The three strategies sacrifice different things: the superimposed diagram is most precise but complex; the single-point approach sacrifices detail for simplicity
-- In diatonic contexts (Chapter 3), major and minor triads appear as transpositionally related "species of the same genus"
+
+- **Confusion**: Thinking strategy 3 (single point) loses important information
+  **Clarification**: It sacrifices detail for simplicity; strategy 2 (superimposed) provides more precision when needed
 
 # Source Reference
-Chapter 2, Section 6, pp. 68-71, Figures 2.6.1-2.6.3.
+
+Chapter 2, Section 6: "Minor triads and other trichords," pp. 68-71, Figures 2.6.1-2.6.3.
+
+# Verification Notes
+
+- Definition source: Direct quotation from p. 69
+- Confidence: HIGH -- dedicated section with three strategies
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: all three strategies, universality quote, Shostakovich example

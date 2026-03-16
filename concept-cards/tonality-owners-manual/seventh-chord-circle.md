@@ -1,38 +1,127 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Seventh-Chord Circle
-category: theory
+slug: seventh-chord-circle
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: geometric-voice-leading
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Line and Configuration"
 chapter_number: 3
 pdf_page: 96
-authors: "Dmitri Tymoczko"
-unit: null
+section: "Seventh chords"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "4-in-7 spiral diagram"
+  - "circle of diatonic sevenths"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - diatonic-dyad-circle
+  - basic-voice-leading
+extends:
+  - diatonic-dyad-circle
+related:
+  - common-tone-diminished-seventh
+  - descending-fifth-sequence
+  - harmony-and-counterpoint-relationship
+contrasts_with:
+  - triadic-circle-of-diatonic-triads
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does the seventh-chord spiral differ from the triadic circle?"
+  - "Why do seventh chords convert retrofunctional triadic motion into functional motion?"
 ---
 
 # Quick Definition
-The 4-in-7 spiral diagram for diatonic seventh chords, where the basic voice leading connects third-related chords, and two clockwise steps produce the descending-fifth progression. The seventh-chord circle "halves" the dyadic fifth circle, converting retrofunctional triadic motion into functional seventh-chord motion.
 
-# Formal Definition
-A diatonic seventh chord contains two fifths: root-fifth and third-seventh. As we move clockwise along the spiral, we apply the basic voice leading to each fifth-pair in turn. Two steps on the seventh-chord diagram equals one step on each fifth's dyadic diagram. One clockwise step produces T_-2 t_1 (descending-third root progression, seventh resolves down by step); two steps produce T_-4 t_2 (descending-fifth progression); three steps produce T_-6 t_3 (ascending-step progression). The addition of a fourth voice "magically converts retrofunctionality into functionality."
+The 4-in-7 spiral diagram for diatonic seventh chords, where the basic voice leading connects third-related chords, two clockwise steps produce descending-fifth progressions, and the addition of a fourth voice "magically converts retrofunctionality into functionality" (p. 140).
 
-# Musical Context
-The seventh-chord circle is vital for understanding jazz harmony and classical descending-fifth sequences. "All the Things You Are" oscillates between notes of one fifth-pair in the descending-fifth sequence, descending almost a complete octave. "I Will Survive" follows similar descending-stepwise melodic logic over seventh-chord fifths. The chromatic seventh-chord space (Figure 3.8.4) reveals that minor-third-related and tritone-related dominant sevenths have a degree of harmonic resemblance, explaining their intersubstitutability in jazz.
+# Core Definition
+
+A diatonic seventh chord contains two fifths: root-fifth and third-seventh. As we move clockwise on the spiral, we apply the basic voice leading to each fifth-pair in turn (Figure 3.8.1, p. 138). "Two steps on the seventh-chord diagram takes one step on each fifth-pair's dyadic diagram; where the fifth's basic voice leading links fifth-related harmonies, the seventh's basic voice leading links third-related harmonies, with the diatonic third being half the diatonic fifth" (p. 138). One clockwise step: T_{-2}t_1, descending-third roots; two steps: T_{-4}t_2, descending fifths; three steps: T_{-6}t_3, ascending steps. The chromatic space (Figure 3.8.4, p. 140) reveals that minor-third-related and tritone-related dominant sevenths are enclosed in trapezoidal boxes sharing three notes with the same diminished seventh.
+
+# Prerequisites
+
+- **Diatonic Dyad Circle** — The seventh-chord circle "halves" the dyadic fifth circle
+- **Basic Voice Leading** — The atomic move on this spiral
+
+# Key Properties
+
+1. Four loops for a four-note chord; seven points for the diatonic scale
+2. One clockwise step = descending-third root progression (T_{-2}t_1)
+3. Two clockwise steps = descending-fifth progression (T_{-4}t_2)
+4. Three clockwise steps = ascending-step progression (T_{-6}t_3)
+5. Four-voice patterns factor into two pairs articulating the fifth's basic voice leading
+6. Descending voice leading is functional with seventh chords but retrofunctional with triads
+7. Chromatic space groups minor-third/tritone-related dominants in trapezoidal boxes
+
+# Construction / Recognition
+
+## To Navigate:
+1. One CW step: third-related, descending seventh
+2. Two CW steps: fifth-related, standard functional progression
+3. Three CW steps: step-related, ascending
+4. Counter-clockwise steps produce the retrogrades
+
+# Context & Application
+
+The seventh-chord circle is vital for jazz harmony. "All the Things You Are" oscillates between notes of one fifth-pair in the descending-fifth sequence, descending almost a complete octave (Figure 3.8.2, p. 139). "I Will Survive" follows similar logic (Figure 3.8.3, p. 140). The chromatic space explains the intersubstitutability of minor-third and tritone-related dominants in jazz. As the nineteenth century progresses, seventh chords are "gradually liberated from their contrapuntal obligations, the 'dissonant' seventh increasingly permitted to ascend" (p. 146), allowing more thorough exploration of tetrachordal geometry.
 
 # Examples
-- Figure 3.8.1: Circle of diatonic sevenths with basic voice leading, showing how four-voice patterns factor into two pairs articulating the fifth's basic voice leading
-- Figure 3.8.2: "All the Things You Are" outlining the descending-fifth sequence
-- Figure 3.8.3: "I Will Survive" following the same logic
-- Figure 3.8.4: Chromatic dominant and diminished seventh-chord space
 
-# Related Concepts
-- Diatonic Dyad Circle
-- Triadic Circle of Diatonic Triads
-- Common-Tone Diminished Seventh
-- Basic Voice Leading
+**Example 1** (p. 138): Figure 3.8.1 shows the circle of diatonic sevenths with basic voice leading.
+
+**Example 2** (p. 139): "All the Things You Are" outlining the descending-fifth sequence.
+
+**Example 3** (p. 140): "I Will Survive" with descending stepwise melody over seventh-chord fifths.
+
+**Example 4** (p. 140): Figure 3.8.4 shows chromatic dominant and diminished seventh space.
+
+# Relationships
+
+## Builds Upon
+- **Diatonic Dyad Circle** — The seventh-chord circle halves the dyadic fifth circle
+- **Basic Voice Leading** — Atomic move on the spiral
+
+## Enables
+- **Common-Tone Diminished Seventh** — Generalized via the chromatic seventh-chord space
+- **Descending-Fifth Sequence** — Generated by two clockwise steps
+
+## Related
+- **Harmony and Counterpoint Relationship** — Seventh chords convert retrofunctionality to functionality
+
+## Contrasts With
+- **Triadic Circle of Diatonic Triads** — Triads make descending motion retrofunctional; sevenths restore functionality
+
+# Common Errors
+
+- **Error**: Assuming the basic voice leading links fifth-related seventh chords
+  **Correction**: One step links third-related chords; two steps are needed for fifth progressions
 
 # Common Confusions
-- The seventh-chord basic voice leading links chords by third, not by fifth; two iterations are needed for a fifth progression
-- Adding a fourth voice changes the relationship between counterpoint and function: descending voice leading is retrofunctional with triads but functional with seventh chords
+
+- **Confusion**: Thinking the retrofunctional/functional distinction is about style
+  **Clarification**: It is a mathematical fact about the geometry: the addition of a fourth voice changes which direction of voice leading produces descending-fifth root progressions
 
 # Source Reference
-Chapter 3, Section 8 ("Seventh chords"), pp. 138-146, Figures 3.8.1-3.8.14
+
+Chapter 3: Line and Configuration, Section 8, pp. 138-146, Figures 3.8.1-3.8.14.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 138-139
+- Key Properties: All explicit in source
+- Confidence: HIGH — central diagram with detailed analysis and examples
+- Re-extracted from v2 card; preserved: "halving" relationship, jazz connections, retrofunctionality conversion

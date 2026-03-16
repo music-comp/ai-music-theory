@@ -1,36 +1,116 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Ambiguous Syntax in Tonal Music
+slug: ambiguous-syntax-in-tonal-music
+
+# === CLASSIFICATION ===
 category: analysis
+subcategory: epistemic-issues
+tier: advanced
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Prelude: Could the Martians Understand Our Music?"
 chapter_number: null
 pdf_page: 303
-authors: "Dmitri Tymoczko"
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - contrapuntal-vs-harmonic-syntax
+extends: []
+related:
+  - epistemic-circularity-in-harmonic-analysis
+  - incomplete-sonorities
+  - garden-path-modulation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Why is tonal music pervasively ambiguous?"
+  - "What are the main sources of analytical ambiguity?"
 ---
 
 # Quick Definition
-The inherent interpretive flexibility of tonal music arising from the coexistence of contrapuntal and harmonic syntaxes, incomplete sonorities, and the ambiguity of key boundaries.
 
-# Formal Definition
-Tonal music combines a contrapuntal syntax (regulating dissonance treatment) and a harmonic syntax (governing genuine chord progressions). Because composers ensure that simultaneous nonharmonic tones are mutually consonant, "apparent chords" arise that do not participate in the harmonic syntax. This creates three principal sources of analytical ambiguity: (1) the distinction between genuine and apparent harmonies, (2) incomplete sonorities consistent with multiple chord identities, and (3) the placement of key boundaries in modulatory passages. Gottfried Weber argued that this ambiguity is pervasive and that the ear chooses the "most convenient, simple, easy, and suitable" explanation.
+Gottfried Weber's observation that tonal music is pervasively ambiguous because analysts must choose which notes to consider nonharmonic. Three main sources: contrapuntal syntax producing "apparent chords," incomplete sonorities admitting multiple interpretations, and key changes creating competing analyses.
 
-# Musical Context
-Ambiguity is not a deficiency but sometimes an expressive resource. Composers may deliberately exploit it, creating pieces where the ambiguity of syntax is intrinsic to the semantics -- a "miniature and multivalent musical kaleidoscope."
+# Core Definition
+
+Weber argued that Western music is pervasively ambiguous, as analysts must choose which notes to consider nonharmonic (p. 303). The ear chooses "the most convenient, simple, easy, and suitable explanation" (p. 303). Three main sources of ambiguity: (1) the contrapuntal syntax producing apparent consonances that may or may not be genuine harmonies; (2) incomplete sonorities (bare thirds or fifths) consistent with multiple triads; (3) key changes, where listeners differ in how quickly they adopt new tonal centers (pp. 304-307). Tymoczko argues this ambiguity can sometimes be part of the music's semantics, not merely an analytical nuisance (p. 305).
+
+# Prerequisites
+
+- **Contrapuntal vs. harmonic syntax** — The dual syntax is the primary source of ambiguity
+
+# Key Properties
+
+1. Pervasive in Western music (Weber)
+2. Three main sources: apparent chords, incomplete sonorities, key changes
+3. The ear chooses the "simplest" explanation -- but simplicity depends on background knowledge
+4. Sometimes the ambiguity is the point -- part of the music's semantics (p. 305)
+5. Ambiguity can be experienced simultaneously as multiple interpretations
+
+# Construction / Recognition
+
+## To Navigate Ambiguous Syntax:
+1. Identify whether apparent consonances might be nonharmonic byproducts
+2. Consider whether incomplete sonorities have multiple possible completions
+3. Check for key changes that might reframe progressions
+4. Balance local details with general stylistic expectations
+
+# Context & Application
+
+The prelude explores these ambiguities through detailed examples from Bach chorales, where the analyst must draw on background knowledge to resolve readings that are locally ambiguous.
 
 # Examples
-- Bach's "Jesu, du mein liebstes Leben" (BWV 356): A recurring bare third on beat 3 sounds like it is missing its fifth in some measures (mm. 2, 6, 14) and missing its root in others (mm. 5, 10), demonstrating that the same scale degrees can be given different meanings (Figure P7.2).
-- Bach's D minor two-part invention (BWV 775, m. 11): A "pivot third" (B-flat, D) can be heard simultaneously as IV (continuing a descending-fifth sequence) and as part of G minor (starting a new sequence) -- Figure P7.3.
 
-# Related Concepts
-- Epistemic Circularity in Harmonic Analysis
-- Incomplete Sonorities
-- Pivot Chord Modulation
-- Garden-Path Modulation
+**Example 1** (p. 303, Fig. P7.1): Four one-bar passages admitting concise or verbose readings.
+
+**Example 2** (p. 304, Fig. P7.2): Bach's "Jesu, du mein liebstes Leben" (BWV 356) -- a contrapuntal fragment with bare thirds interpretable as different triads.
+
+**Example 3** (p. 306, Fig. P7.3): Bach's D minor two-part invention (BWV 775, mm. 7-14) -- a "pivot third" heard in two incompatible ways.
+
+# Relationships
+
+## Builds Upon
+- **Contrapuntal vs. harmonic syntax** — The dual syntax creates ambiguity
+
+## Enables
+- **Epistemic circularity in harmonic analysis** — Ambiguity feeds the circularity problem
+
+## Related
+- **Incomplete sonorities** — One of the three sources of ambiguity
+- **Garden-path modulation** — Key-change ambiguity as a compositional device
+
+## Contrasts With
+- No direct contrasts
+
+# Common Errors
+
+- **Error**: Always choosing the most harmonically verbose reading
+  **Correction**: Weber's principle: choose the simplest reading, avoiding rare progressions (p. 303)
 
 # Common Confusions
-- Ambiguity is not the same as vagueness: specific passages can be genuinely consistent with multiple precise readings, and sometimes both readings are simultaneously active.
-- The desire for analytical consistency (treating similar passages the same way) must be balanced against psychological accuracy (how passages actually sound in context).
+
+- **Confusion**: Thinking ambiguity is always an analytical problem to solve
+  **Clarification**: Sometimes ambiguity is part of the music's semantics -- as in Bach's pivot thirds (p. 305)
 
 # Source Reference
-Prelude to Chapter 7, pp. 303--308. Figures P7.1--P7.3. References Weber (1817--1821) 1846.
+
+Prelude: Could the Martians Understand Our Music?, pp. 303-310.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 303-308
+- Confidence rationale: Central theme of the prelude
+- Cross-reference status: Verified against epistemic-circularity-in-harmonic-analysis
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source

@@ -1,36 +1,110 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Bass-Degree Function
-category: theory
+slug: bass-degree-function
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: functional-progressions
+tier: foundational
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Functional Progressions"
 chapter_number: 7
 pdf_page: 311
-authors: "Dmitri Tymoczko"
-unit: null
+section: "A theory of harmonic cycles"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "bass-function correlation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - descending-thirds-arrangement
+  - harmonic-cycle-theory
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does the bass note predict harmonic function in functional tonality?"
+  - "Which bass degrees support tonic and dominant, and which provide harmonic variation?"
 ---
 
 # Quick Definition
-The strong correlation between bass notes and harmonic function in functional tonality, where specific bass scale degrees are associated with specific functional categories.
 
-# Formal Definition
-In functional tonality, bass notes ^1, ^3, ^5, and ^7 typically support tonic and dominant harmonies, while ^2, ^4, and ^6 provide the bulk of harmonic variation (Figure 7.1.2). The near-disappearance of vi^6^ and the absence of iii and iii^6^ ensure that bass notes ^1 and ^3 are harmonized almost exclusively by tonic chords, ^5 by either dominant or tonic, and ^7 by dominant. The supertonic (^2) is unique in permitting functionally distinct sonorities: ii and vii^o6^ (or V4/3 in later styles). This strong bass-function correlation underlies figured-bass theory and the rule of the octave.
+The strong statistical correlation between bass scale degrees and harmonic function in functional tonality, where degrees 1, 3, 5, and 7 typically support tonic and dominant while 2, 4, and 6 provide harmonic variation.
 
-# Musical Context
-The correlation between bass and function is observable across the entire functional tradition, from Corelli through classical practice. It explains why figured-bass theory works as a practical system for realizing harmonies: knowing the bass note and its figures largely determines the harmonic function. The principle connects Tymoczko's descending-thirds model to historical figured-bass practice (Figure 7.1.4).
+# Core Definition
+
+In functional tonality, "the norm is for the bass to support tonic or dominant whenever it can, with 2-hat, 4-hat, and 6-hat providing the bulk of the harmonic variation" (p. 312). The near-disappearance of vi^6^ and absence of iii/iii^6^ ensure that bass 1-hat and 3-hat are harmonized almost exclusively by tonic chords, 5-hat by either dominant or tonic, and 7-hat by dominant (Figure 7.1.2). The supertonic (2-hat) is unique in permitting functionally distinct sonorities: ii and vii^o6^ (or V4/3 in later styles). "Bass strongly correlates with harmonic function" (p. 312).
+
+# Prerequisites
+
+This is a foundational concept with no prerequisites within this source.
+
+# Key Properties
+
+1. Bass degrees 1-hat, 3-hat, 5-hat, 7-hat: typically tonic and dominant
+2. Bass degrees 2-hat, 4-hat, 6-hat: provide harmonic variation
+3. The submediant appears almost exclusively in root position (vi, not vi^6^)
+4. The supertonic uniquely permits functionally distinct sonorities (ii vs. vii^o6^)
+5. The correlation underlies figured-bass theory and the rule of the octave
+6. The 6-hat can support broadly similar vi and IV^6^; the 4-hat allows both IV and ii^6^
+
+# Construction / Recognition
+
+## To Apply Bass-Degree Function:
+1. Identify the bass scale degree
+2. If 1-hat, 3-hat, 5-hat, or 7-hat: expect tonic or dominant harmony
+3. If 2-hat, 4-hat, or 6-hat: expect predominant or other non-tonic/dominant harmony
+4. For 2-hat specifically: consider whether ii or vii^o6^/V4/3 is more likely in context
+
+# Context & Application
+
+The bass-function correlation is observable across the entire functional tradition from Corelli through classical practice. It connects Tymoczko's descending-thirds model to historical figured-bass practice: the model's guiding principle is that "bass lines move along an abstract chain of descending thirds from 3-hat to 5-hat, with 5/3 preceding 6/3 over the same bass" (p. 313, Figure 7.1.4).
 
 # Examples
-- Figure 7.1.1: Distribution of major-mode sonorities in Bach chorales and Mozart piano sonatas, showing vi appearing almost exclusively in root position.
-- Figure 7.1.2: Bass degrees mapped to typical harmonic support -- tonic and dominant chords dominate most bass positions.
-- Figure 7.1.4: The descending-thirds arrangement as a figured-bass composer would conceive it.
 
-# Related Concepts
-- Descending-Thirds Arrangement of Chords
-- Rule of the Octave
-- Harmonic Cycle Theory
+**Example 1** (p. 312, Figure 7.1.1): Distribution of major-mode sonorities in Bach chorales and Mozart piano sonatas.
+
+**Example 2** (p. 312, Figure 7.1.2): Bass degrees mapped to typical harmonic support.
+
+**Example 3** (p. 313, Figure 7.1.4): The descending-thirds arrangement as a figured-bass composer would conceive it.
+
+# Relationships
+
+## Builds Upon
+(Foundational concept)
+
+## Enables
+- **Descending-thirds arrangement** -- Bass-degree function is built into the model's organization
+- **Harmonic cycle theory** -- The bass-function correlation supports the theory's statistical basis
+
+# Common Errors
+
+- **Error**: Treating bass-degree function as an absolute rule rather than a statistical regularity
+  **Correction**: The correlation is strong but not invariable; some bass degrees permit multiple functional interpretations
 
 # Common Confusions
-- Bass-degree function is a statistical regularity, not an absolute rule. The submediant (^6) can support the broadly similar vi and IV^6^ chords, while the subdominant (^4) allows for both IV and ii^6^.
-- Some bass lines are rare for linear rather than harmonic reasons (e.g., ii^6^--V^6^ with its leaping tritone).
+
+- **Confusion**: Assuming all bass motions are harmonically motivated
+  **Clarification**: Some bass-line choices reflect linear (fauxbourdon) rather than harmonic logic
 
 # Source Reference
-Chapter 7, Section 1, pp. 311--314. Figures 7.1.1--7.1.4.
+
+Chapter 7: Functional Progressions, Section 1, pp. 311--314. Figures 7.1.1--7.1.4.
+
+# Verification Notes
+
+- Definition source: Direct from p. 312
+- Confidence rationale: High -- supported by statistical analysis of Bach and Mozart
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: supertonic's unique role, figured-bass connection -- both confirmed in source

@@ -1,37 +1,115 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Configuration and Center of Gravity
-category: theory
+slug: configuration-and-center-of-gravity
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: configurations
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Prelude: The Tinctoris Transform"
 chapter_number: null
 pdf_page: 87
-authors: "Dmitri Tymoczko"
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - configurational perspective
+  - center-of-mass coordinate system
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - voice-leading
+extends: []
+related:
+  - tinctoris-transform
+  - efficient-voice-leading
+  - voicing-as-set-class
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a musical configuration?"
+  - "What is center of gravity in voice leading?"
+  - "What is voice-leading geometry, and how does it represent musical relationships spatially?"
 ---
 
 # Quick Definition
-A configuration is a collection of relative distances between voices that can be instantiated anywhere in pitch space; the center of gravity is the average of all pitches in the chord, specifying the configuration's location.
 
-# Formal Definition
-In the configurational coordinate system, voices are labeled by their distance from a reference voice (usually the first), whose coordinate is necessarily 0. This yields a configuration -- a pattern of relative intervals. A second number, the center of gravity (average of the pitches), records the configuration's location in pitch space. Together, configuration plus center of gravity fully specify the chord, equivalent to the standard system of absolute pitch labels. This is closely related to what physicists call the center-of-mass coordinate system.
+A configuration is a collection of relative distances between voices that can be instantiated anywhere in pitch space; the center of gravity (average of all pitches) specifies the configuration's location -- an alternative coordinate system emphasizing vertical shapes over individual voice positions.
 
-# Musical Context
-The configurational perspective emphasizes vertical shapes rather than individual voice positions. Where the standard approach says "one voice is at A4 and the other at D4," the configurational approach says "one voice is a fifth above the other, centered on F4." This highlights the contrast between parallel motion (preserving configuration) and contrary motion (changing it). The approach originated with Tinctoris (1477) and continues through figured-bass pedagogy, guitar voicing manuals ("drop 2"), and modern set theory.
+# Core Definition
+
+In the configurational system, "we instead label voices by their distance from one 'reference' voice (usually the first), whose coordinate is necessarily 0; this gives us a configuration, or collection of relative distances that can be instantiated anywhere in pitch space. To specify the configuration's location, we need another number recording the average of the pitches; I will call this its center of gravity" (p. 87). The two perspectives are "mathematically equivalent, and one can switch between them without loss of information" (p. 87). This system highlights "the contrast between parallel motion, which preserves the vertical configuration, and contrary motion, which changes it" (p. 87). It is "closely related to what physicists call the center-of-mass coordinate system" (p. 87).
+
+# Prerequisites
+
+- **Voice Leading** -- Understanding voice leading is needed to appreciate the configurational perspective
+
+# Key Properties
+
+1. Configuration = relative distances between voices (shape independent of location)
+2. Center of gravity = average pitch (location of the shape)
+3. Parallel motion preserves configuration; contrary motion changes it
+4. The two coordinate systems are mathematically equivalent
+5. On spiral diagrams, angular motion = change in center of gravity
+6. Efficient voice leading minimizes change in center of gravity
+
+# Construction / Recognition
+
+## To Convert to Configurational Coordinates:
+1. Choose a reference voice (typically the lowest)
+2. Measure all other voices' distances from the reference (= 0)
+3. Calculate the average of all pitches (= center of gravity)
+4. Configuration + center of gravity fully specify the chord
+
+# Context & Application
+
+Though seemingly modern and mathematical, the configurational approach "is in fact very old" (p. 87). Tinctoris used it in 1477, arranging counterpoint by starting and destination intervals. It continues through figured-bass pedagogy, guitar voicing manuals, and set theory. The approach clarifies efficient voice leading because "the most efficient voice leading between two vertical configurations will necessarily minimize the change in center of gravity" (p. 88).
 
 # Examples
-- Figure P3.1: Diagram showing both coordinate systems side by side
-- Figure P3.3: Efficient voice leading minimizes the change in center of gravity; dyadic, triadic, and seventh-chord progressions shown with center-of-gravity changes
-- Figure P3.9: Abstract diagram relating a dyad's change in center of gravity to overall voice-leading size
 
-# Related Concepts
-- Tinctoris Transform
-- Efficient Voice Leading
-- Voicing as Set Class
-- OUCH Theory
+**Example 1** (p. 87, Figure P3.1): Two musical coordinate systems shown side by side.
+
+**Example 2** (pp. 88-89, Figure P3.3): Efficient voice leading minimizes center-of-gravity change; dyadic, triadic, and seventh-chord progressions shown.
+
+**Example 3** (p. 91, Figure P3.9): Abstract diagram relating center-of-gravity change to overall voice-leading size; contrary motion (change = 0) minimizes total motion.
+
+# Relationships
+
+## Enables
+- **Tinctoris Transform** -- Grouping progressions by shared configurations
+- **Efficient Voice Leading** -- Efficient voice leading minimizes center-of-gravity change
+- **Voicing as Set Class** -- Voicings are set classes within the configurational framework
+
+## Related
+- **Spiral Diagrams for Chord Space** -- Angular position on spirals corresponds to center of gravity
+
+# Common Errors
+
+- **Error**: Confusing center of gravity with bass note
+  **Correction**: Center of gravity is the average of all pitches, not the lowest
 
 # Common Confusions
-- The center of gravity is the average pitch, not the bass note -- Tinctoris measured location relative to the tenor, but the two approaches are interconvertible
-- Configuration describes the shape independently of where it sits in pitch space; changing center of gravity moves the configuration without altering it
+
+- **Confusion**: Thinking the configurational perspective is a modern invention
+  **Clarification**: Tinctoris used it in 1477; it predates the standard pitch-based approach in some traditions
 
 # Source Reference
-Prelude to Chapter 3, pp. 87-88, Figure P3.1
+
+Prelude to Chapter 3: "The Tinctoris Transform," pp. 87-88, Figure P3.1.
+
+# Verification Notes
+
+- Definition source: Direct quotation from p. 87
+- Confidence: HIGH -- explicitly defined with named terminology
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: physicist analogy, Tinctoris historical origin

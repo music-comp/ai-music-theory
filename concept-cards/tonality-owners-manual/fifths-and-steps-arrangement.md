@@ -1,39 +1,116 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Fifths-and-Steps Arrangement
-category: theory
+slug: fifths-and-steps-arrangement
+
+# === CLASSIFICATION ===
+category: schema
+subcategory: compositional-schemas
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "The Origins of Functional Tonality"
 chapter_number: 6
 pdf_page: 257
-authors: "Dmitri Tymoczko"
-unit: null
+section: "The logical structure of protofunctionality"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - steps-and-fifths defaults
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - harmonic-cycles
+extends: []
+related:
+  - protofunctionality
+  - prinner-schema
+  - fenaroli-schema
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the fifths-and-steps arrangement?"
+  - "How does it ground galant schemas in triadic geometry?"
 ---
 
 # Quick Definition
-The default voice-leading pattern in which bass lines move by fifths (or fourths) while upper voices move by steps, creating the foundational contrapuntal structure underlying functional harmony.
 
-# Formal Definition
-The fifths-and-steps arrangement is the nearly sequential voice-leading pattern where upper voices move by step while the bass moves by approximately half an octave (a fourth or fifth). This pattern arises from the approximate contrary-motion symmetry of the major triad. It creates associations between melodic scale degrees and harmonic defaults: 7^-1^ with V-I, 1^-2^ with I-V, 2^-3^ with V-I, 3^-4^ with I-IV, 4^-5^ with IV-I, 5^-6^ with I-IV. These associations form an upper-voice analogue to the traditional "rule of the octave."
+The default voice-leading pattern combining upper-voice stepwise motion with bass leaps of a fifth, derived from the major triad's approximate inversional symmetry. Grounds galant schemas like the Fenaroli and Prinner in basic triadic geometry.
 
-# Musical Context
-The fifths-and-steps arrangement grounds many later galant schemas (Fenaroli, Prinner, Do-Re-Mi) in the basic geometry of triadic counterpoint. The pattern is remarkably rich: it exhibits the bass as "fifth-divider," produces complete circles in triadic space, yields voice leadings of the form t2T-3 or -4, and creates a sequential structure that the V-I-V-I pattern (7^-1^-2^-3^) repeats in contrary motion as I-IV-I-IV (3^-4^-5^-6^). The pattern's progressions are largely non-directional and can occur forward or backward.
+# Core Definition
+
+The fifths-and-steps arrangement combines upper-voice melodic steps with bass motion by fifths (p. 260). It arises from the major triad's approximate inversional symmetry: the bass divides the octave in half while upper voices divide it into sixths (p. 260, Fig. 6.1.3). This produces V-I-V-I (7-1-2-3) in one direction and I-IV-I-IV (3-4-5-6) in contrary motion at the fifth. The pattern grounds several later schemas in basic geometry: 7-1-2-3 over V-I-V-I relates to the Fenaroli; 3-4-5-6 over I-IV-I-IV is a reversed Prinner; 1-2-3 over I-V-I resembles the Do-Re-Mi (p. 262).
+
+# Prerequisites
+
+- **Harmonic cycles** — The fifths-and-steps arrangement generates harmonic cycles
+
+# Key Properties
+
+1. Bass moves by fifths; upper voices move by steps
+2. Derived from the approximate inversional symmetry of the major triad
+3. Contains germs of Fenaroli, Prinner, Do-Re-Mi schemas (p. 262)
+4. Largely non-directional (p. 261)
+5. Closely related to plagal and authentic cadences
+6. Shows how first-order tendencies arise from zeroth-order preferences + melodic constraints
+
+# Construction / Recognition
+
+## To Identify:
+1. Look for bass motion by fourth or fifth
+2. Check for upper-voice stepwise motion
+3. Note whether the pattern produces primary triads
+4. Check for embedded schematic figures
+
+# Context & Application
+
+Any style using fifths-and-steps defaults will naturally produce galant-like schemas. This explains the presence of Prinner and Fenaroli patterns throughout sixteenth-century music.
 
 # Examples
-- Figure 6.1.3: The geometric derivation showing exact contrary-motion sequence, approximate chromatic symmetry of the major triad, and diatonic quantization producing the fifths-and-steps defaults
-- Figure 6.1.4: Sequential and schematic content -- 7^-1^-2^-3^ under V-I-V-I is related to the Fenaroli; 3^-4^-5^-6^ under I-IV-I-IV is a transposed Fenaroli or reversed Prinner
-- Figure 6.1.5: Michaelis's frottola harmonized almost entirely with options from the fifths-and-steps arrangement
 
-# Related Concepts
-- Harmonic Cycles
-- Protofunctionality
-- Fenaroli Schema
-- Prinner Schema
-- Zeroth-Order Properties
+**Example 1** (p. 261, Fig. 6.1.3): Upper-voice steps against bass fifths.
+
+**Example 2** (p. 262, Fig. 6.1.4): Sequential and schematic content of the arrangement.
+
+# Relationships
+
+## Builds Upon
+- **Harmonic cycles** — Generates cycles
+
+## Enables
+- **Prinner schema** — Grounded in fifths-and-steps defaults
+- **Fenaroli schema** — Grounded in fifths-and-steps defaults
+
+## Related
+- **Protofunctionality** — Geometric basis of protofunctional practice
+
+## Contrasts With
+- No direct contrasts
+
+# Common Errors
+
+- **Error**: Treating galant schemas as arbitrary conventions
+  **Correction**: They are grounded in basic triadic geometry
 
 # Common Confusions
-- The fifths-and-steps arrangement is not just a description of a compositional practice -- it has a precise geometric basis in the approximate symmetry of the major triad.
-- The pattern does not imply strict rules about which chord must follow which. The progressions are "defaults" that can be overridden, and most are non-directional.
-- The IV-V progression is the one exception within the pattern, as it is completely parallel and thus lacks the contrary-motion structure of the others.
+
+- **Confusion**: Thinking the pattern is directional (only forward)
+  **Clarification**: It is largely non-directional
 
 # Source Reference
-Chapter 6, section 1, pp. 259-262.
+
+Chapter 6, section 1, pp. 260-262. Figures 6.1.3 and 6.1.4.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 260-262
+- Confidence rationale: Explicitly described with geometric derivation
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source

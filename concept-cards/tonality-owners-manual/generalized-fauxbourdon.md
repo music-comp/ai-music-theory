@@ -1,36 +1,124 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Generalized Fauxbourdon
-category: technique
+slug: generalized-fauxbourdon
+
+# === CLASSIFICATION ===
+category: counterpoint
+subcategory: contrapuntal-patterns
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Line and Configuration"
 chapter_number: 3
 pdf_page: 96
-authors: "Dmitri Tymoczko"
-unit: null
+section: "The circle of diatonic triads"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - triadic-circle-of-diatonic-triads
+  - basic-voice-leading
+extends:
+  - triadic-circle-of-diatonic-triads
+related:
+  - descending-fifth-sequence
+  - three-voice-triadic-sequences
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is generalized fauxbourdon?"
+  - "How does three-voice counterpoint relate to the triadic circle?"
 ---
 
 # Quick Definition
-Three-voice passages in which triads descend through a variety of triadic inversions, generalizing the traditional fauxbourdon technique of parallel sixth chords to include any consistent clockwise motion on the triadic circle.
 
-# Formal Definition
-Generalized fauxbourdon encompasses all three-voice passages that move consistently clockwise on the 3-in-7 triadic circle, passing through various inversions. Standard fauxbourdon (parallel sixth chords) is one instance; others include the descending 6-5 sequence (alternating 63 and 53 chords, moving one and two clockwise steps), ascending-fifth progressions (two clockwise steps), and various Pachelbel/Prinner/rule-of-the-octave patterns. Functional schemas represent the subset of these possibilities that are compatible with harmonic grammar.
+Three-voice passages in which triads descend through a variety of triadic inversions, generalizing traditional fauxbourdon (parallel sixth chords) to include any consistent clockwise motion on the triadic circle. Only a subset of these possibilities survives as functional schemas.
 
-# Musical Context
-Renaissance music is suffused with generalized fauxbourdon, moving freely through triadic inversions. Functional harmony restricts this: descending melodic motion correlates with retrofunctional progressions on the triadic circle, so functional composers must choose from a smaller set of acceptable options. Common functional patterns include the Pachelbel/Prinner octave descent, the ascending rule of the octave, and the "fauxbourdon rule of the octave" harmonizing descending bass lines. Baroque sequences often blur the boundary between "merely linear" fauxbourdon and robustly harmonic descending fifths.
+# Core Definition
+
+Generalized fauxbourdon encompasses all three-voice passages that move consistently clockwise on the 3-in-7 triadic circle, passing through various inversions (p. 114). Standard fauxbourdon (parallel sixth chords) is one instance; others include descending 6-5 sequences (alternating 63 and 53 chords, one and two clockwise steps), ascending-fifth progressions (two clockwise steps), and Pachelbel/Prinner/rule-of-the-octave patterns. "Of the many possibilities for generalized fauxbourdon, a few survive to become functional schemas" (p. 116). Functional composers must restrict themselves because descending melodic motion correlates with retrofunctional progressions on the triadic circle (Figure 3.4.9, p. 117).
+
+# Prerequisites
+
+- **Triadic Circle of Diatonic Triads** — The geometric space where generalized fauxbourdon operates
+- **Basic Voice Leading** — The atomic clockwise step
+
+# Key Properties
+
+1. Any consistent clockwise motion on the 3-in-7 triadic circle
+2. Encompasses traditional fauxbourdon as a special case
+3. Renaissance music uses these freely; functional music restricts to a subset
+4. Descending steps correlate with retrofunctional progressions
+5. Functional schemas represent the subset compatible with harmonic grammar
+6. Common patterns feature pairs of stepwise voices
+
+# Construction / Recognition
+
+## To Construct:
+1. Begin with a three-voice diatonic triad
+2. Move consistently clockwise on the triadic circle
+3. Each step applies the basic voice leading, changing one note
+4. Track which inversions appear
+
+## To Recognize:
+1. Look for three-voice passages with consistent motion through different triadic inversions
+2. Map the passage onto the triadic circle and verify clockwise motion
+3. Count steps to determine root progression pattern
+
+# Context & Application
+
+Renaissance music is suffused with generalized fauxbourdon. Ockeghem alternates 63 and 53 chords in a descending 6-5 sequence (Figure 3.4.5, p. 115). Palestrina uses ascending-fifth progressions (Figure 3.4.6, p. 115). Israel Kamakawiwo'ole's "Over the Rainbow" can be modeled on the diatonic spiral with the melody descending almost an octave while harmony loops three times (Figure 3.4.7, p. 115). Functional schemas that survive include the Pachelbel/Prinner octave descent, ascending rule of the octave, and "fauxbourdon rule of the octave" harmonizing descending bass lines (Figure 3.4.8, p. 116). Baroque sequences often blur the boundary between "merely linear" fauxbourdon and robustly harmonic descending fifths.
 
 # Examples
-- Figures 3.4.5-3.4.6: Ockeghem's descending 6-5 and Palestrina's ascending fifths as examples
-- Figure 3.4.8: Pachelbel/Prinner, rule of the octave, and fauxbourdon rule of the octave
-- Figure 3.4.9: All possibilities for stepwise descent with analysis of strong vs. weak progressions
 
-# Related Concepts
-- Triadic Circle of Diatonic Triads
-- Basic Voice Leading
-- Descending-Fifth Sequence
+**Example 1** (p. 115): Ockeghem's Gloria from *De plus en plus*, mm. 127ff -- descending 6-5 sequence.
+
+**Example 2** (p. 115): Palestrina's Kyrie from *Descendit angelus Domini*, ascending-fifth progressions.
+
+**Example 3** (p. 116): Figure 3.4.8 shows Pachelbel/Prinner, rule of the octave, and fauxbourdon rule of the octave as paths.
+
+# Relationships
+
+## Builds Upon
+- **Triadic Circle of Diatonic Triads** — The geometric space of operation
+- **Basic Voice Leading** — The atomic clockwise step
+
+## Enables
+- **Descending-Fifth Sequence** — One specific outcome of generalized fauxbourdon
+- **Three-Voice Triadic Sequences** — Generated by repeated clockwise motion
+
+## Related
+- **Harmony and Counterpoint Relationship** — Generalized fauxbourdon illustrates tension between linear and harmonic forces
+
+## Contrasts With
+- None specified
+
+# Common Errors
+
+- **Error**: Limiting fauxbourdon to parallel sixth chords
+  **Correction**: Generalized fauxbourdon includes any consistent clockwise motion on the triadic circle through various inversions
 
 # Common Confusions
-- Generalized fauxbourdon is not limited to parallel sixth chords; it encompasses any consistent clockwise motion on the triadic circle in three voices
-- The "fauxbourdon rule of the octave" is distinct from the standard rule of the octave
+
+- **Confusion**: Equating "fauxbourdon rule of the octave" with the standard rule of the octave
+  **Clarification**: They are distinct patterns; the fauxbourdon version is a mostly parallel-sixth pattern harmonizing descending bass lines (p. 116)
 
 # Source Reference
-Chapter 3, Section 4, pp. 114-117, Figures 3.4.5-3.4.9
+
+Chapter 3: Line and Configuration, Section 4, pp. 114-117, Figures 3.4.5-3.4.9.
+
+# Verification Notes
+
+- Definition source: Synthesized from pp. 114-116
+- Confidence: HIGH — clearly described with multiple examples
+- Re-extracted from v2 card; preserved: baroque boundary-blurring, functional subset observation

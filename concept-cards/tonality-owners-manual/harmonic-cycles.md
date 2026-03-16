@@ -1,40 +1,114 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Harmonic Cycles
-category: theory
+slug: harmonic-cycles
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: functional-harmony
+tier: foundational
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "The Origins of Functional Tonality"
 chapter_number: 6
 pdf_page: 257
-authors: "Dmitri Tymoczko"
-unit: null
+section: "The logical structure of protofunctionality"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - oscillatory progressions
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - zeroth-order-properties
+extends: []
+related:
+  - protofunctionality
+  - fifths-and-steps-arrangement
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are harmonic cycles in protofunctional music?"
+  - "How did harmonic cycles lengthen over time?"
 ---
 
 # Quick Definition
-Oscillating progressions between the tonic and a contrasting chord (particularly I-V-I and I-IV-I), which form the fundamental building blocks of protofunctional and functional harmony.
 
-# Formal Definition
-Harmonic cycles are oscillating progressions created by the preference for fifth-related primary triads. The two basic cycles are I-V-I and I-IV-I. In protofunctional music, these are roughly comparable in significance. As functional harmony matures, the harmonic cycles gradually lengthen: from simple oscillations (I-IV-I, I-V-I), to the four-chord I-ii-V-I, to the five-chord I-vi-(ii or IV)-V-I, ultimately terminating with the baroque's seven-chord descending-thirds sequence I-vi-IV-ii-vii-diminished-V-I.
+Oscillating progressions between the tonic and a contrasting chord (I-IV-I, I-V-I), characteristic of protofunctional music. These simple cycles gradually lengthened into the four- and five-chord progressions of mature functional tonality.
 
-# Musical Context
-The major triad exhibits an approximate contrary-motion symmetry: the bass divides the octave approximately in half while upper voices divide it into sixths. This geometric property creates a nearly sequential pattern underlying the basic harmonic cycles, with the V-I-V-I pattern repeating in contrary motion at the interval of a fifth as I-IV-I-IV. The cycles are largely non-directional in protofunctional music and can occur either forward or backward.
+# Core Definition
+
+The preference for fifth-related primary triads creates harmonic cycles oscillating between the tonic and a contrasting chord (p. 260). In protofunctional music, the basic cycles are I-IV-I and I-V-I, with the two harmonic cycles "if not equal, then at least comparable in significance" (p. 267). Over centuries, these cycles gradually lengthened: from simple oscillations (I-IV-I, I-V-I), to the four-chord I-ii-V-I, to the five-chord I-vi-(ii or IV)-V-I, terminating with the baroque seven-chord sequence I-vi-IV-ii-vii-V-I (p. 294).
+
+# Prerequisites
+
+- **Zeroth-order properties** — Harmonic cycles arise from the preference for primary triads
+
+# Key Properties
+
+1. Oscillation between tonic and contrasting chord
+2. I-IV-I and I-V-I are the fundamental cycles
+3. Gradual lengthening over centuries (p. 294)
+4. Underlie a subtle geometrical logic -- bass divides the octave in half, upper voices in sixths (p. 260)
+5. In protofunctional music, IV-I and V-I are roughly comparable in importance
+6. The eventual dominance of V-I over IV-I is a later development
+
+# Construction / Recognition
+
+## To Identify Harmonic Cycles:
+1. Look for oscillation between tonic and a contrasting chord (IV or V)
+2. Note the cycle length (two-chord, four-chord, etc.)
+3. Check whether the subdominant or dominant provides the primary contrast
+4. Track whether cycles lengthen as the music progresses
+
+# Context & Application
+
+Harmonic cycles are the foundation of protofunctionality and continue into mature functional tonality. The lengthening of cycles reflects the gradual enrichment of harmonic vocabulary over the sixteenth and seventeenth centuries.
 
 # Examples
-- Figure 6.1.3: Upper-voice steps against bass-line fifths, showing the geometric logic underlying harmonic cycles
-- Figure 6.1.2: Dalza's first Pavana alla Venetiana -- each period embellishes a single harmonic template based on I, IV, and V oscillations
-- Figure 6.2.2: Phrase structure with weaker V-I followed by stronger V-I in Dalza's Pavana alla Ferrarese
 
-# Related Concepts
-- Protofunctionality
-- Fifths-and-Steps Arrangement
-- Zeroth-Order Properties
-- First-Order Properties
-- Fenaroli Schema
-- Prinner Schema
+**Example 1** (p. 259, Fig. 6.1.2): Dalza's first Pavana alla Venetiana -- sixteen-bar periods with simple I-IV-V-I cycles.
+
+**Example 2** (p. 294): The gradual lengthening from I-V-I to I-ii-V-I to I-vi-ii-V-I to I-vi-IV-ii-vii-V-I.
+
+# Relationships
+
+## Builds Upon
+- **Zeroth-order properties** — Cycles arise from the preference for primary triads
+
+## Enables
+- **Protofunctionality** — Simple cycles define proto-functional practice
+
+## Related
+- **Fifths-and-steps arrangement** — Geometrical basis for harmonic cycles
+
+## Contrasts With
+- No direct contrasts
+
+# Common Errors
+
+- **Error**: Assuming V-I was always the dominant harmonic cycle
+  **Correction**: In early protofunctional music, IV-I was nearly as important as V-I
 
 # Common Confusions
-- In protofunctional music, the I-IV-I cycle is nearly as important as I-V-I. The declining relative importance of IV (from about 45% of non-tonic chords in Lassus to about 15% in Beethoven) represents a gradual historical change, not a timeless law.
-- IV-I progressions sometimes have subtle "dominant" quality through ascending 6^-7^-8^ lines. In other cases, I-IV has a tonicizing character. The role of IV is not a single, fixed thing.
-- The basic harmonic cycles are grounded in the geometry of triadic counterpoint and will appear in any style emphasizing fifths-and-steps defaults.
+
+- **Confusion**: Thinking harmonic cycles are unique to functional tonality
+  **Clarification**: Similar primary-triad emphasis appears in Sacred Harp polyphony, country music, and rock
 
 # Source Reference
-Chapter 6, sections 1-2, pp. 259-268; section 6, pp. 293-295.
+
+Chapter 6: The Origins of Functional Tonality, sections 1-2, pp. 260-267; section 6, p. 294.
+
+# Verification Notes
+
+- Definition source: Synthesized from pp. 260-267
+- Confidence rationale: Central concept described with historical trajectory
+- Cross-reference status: Verified against protofunctionality, fifths-and-steps-arrangement
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source

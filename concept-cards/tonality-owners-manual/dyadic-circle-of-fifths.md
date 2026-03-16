@@ -1,36 +1,119 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Dyadic Circle of Fifths
-category: theory
+slug: dyadic-circle-of-fifths
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: geometric-voice-leading
+tier: foundational
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Line and Configuration"
 chapter_number: 3
 pdf_page: 96
-authors: "Dmitri Tymoczko"
-unit: null
+section: "The imperfect system"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "contrapuntal circle of fifths"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - diatonic-dyad-circle
+  - basic-voice-leading
+extends:
+  - diatonic-dyad-circle
+related:
+  - descending-fifth-sequence
+  - imperfect-consonance-system
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Why do fifths predominate in two-voice diatonic counterpoint?"
+  - "How does voice-leading distance relate to harmonic proximity?"
 ---
 
 # Quick Definition
-The fact that fifth-related dyads are literally adjacent on the 2-in-7 spiral diagram, creating a circle-of-fifths organization that arises purely from contrapuntal geometry rather than acoustics.
 
-# Formal Definition
-In two-note diatonic space, the basic voice leading connects adjacent points whose roots are a fifth apart. Purely contrapuntal relationships thus privilege fifth motion: if we are in two-note diatonic space, fifth-related dyads are literally neighbors. This dyadic circle of fifths is independent of both the acoustic circle of fifths and the circle of fifths connecting diatonic scales. Linearly oriented music will inevitably contain a plethora of fifth-related imperfect consonances even when roots are not explicit compositional objects.
+The geometric fact that fifth-related dyads are literally adjacent on the 2-in-7 spiral diagram, creating a circle-of-fifths organization that arises purely from contrapuntal geometry rather than acoustics.
 
-# Musical Context
-The dyadic circle of fifths helps explain the ubiquity of fifth progressions across Western music. In Palestrina, fifth progressions arise from contrapuntal logic (the basic voice leading of diatonic thirds) and from converging cadential voices. The rise of functional tonality involves integrating these two sources, assigning harmonic significance to fifth progressions inevitably produced by the system of diatonic dyads. The dyadic logic thus underlies both Renaissance counterpoint and functional harmony.
+# Core Definition
+
+In two-note diatonic space, the basic voice leading connects adjacent points whose roots are a fifth apart. "Purely contrapuntal relationships will tend to privilege fifth motion: if we are in two-note diatonic space, then fifth-related dyads are literally adjacent to one another" (p. 99). This dyadic circle of fifths is independent of both the acoustic circle of fifths and the circle of fifths connecting diatonic scales. "We should therefore expect that linearly oriented music will contain a plethora of fifth-related imperfect consonances, even when roots are not the explicit objects of compositional attention" (p. 99).
+
+# Prerequisites
+
+- **Diatonic Dyad Circle** — The geometric space where adjacency is defined
+- **Basic Voice Leading** — The operation that connects adjacent fifth-related dyads
+
+# Key Properties
+
+1. Fifth-related dyads are geometrical neighbors on the 2-in-7 spiral
+2. This adjacency is a mathematical fact about diatonic geometry, not an acoustic or aesthetic convention
+3. Independent of both the acoustic circle of fifths and the key-signature circle of fifths
+4. Linearly oriented music inevitably generates fifth-related consonances
+5. The rise of functional tonality integrates these contrapuntal fifth-progressions with harmonic significance
+
+# Construction / Recognition
+
+## To Verify:
+1. On the 2-in-7 spiral, locate any dyad (e.g., the third C-E)
+2. Move one clockwise step to find the adjacent dyad (A-F, a sixth)
+3. Note that the root has moved by fifth (C down to A, or equivalently up by fourth)
+4. Confirm this holds for every position on the circle
+
+# Context & Application
+
+The dyadic circle of fifths helps explain the ubiquity of fifth progressions across Western music. In Palestrina, fifth progressions arise from two distinct sources: the contrapuntal logic of diatonic thirds and the converging voices of the cadence (p. 99). The rise of functional tonality involves integrating these two, "assigning harmonic significance to the fifth-progressions that are inevitably produced by the system of diatonic dyads" (p. 100). Random clockwise motions in the spiral diagram tend to produce the impression of harmonic function (Figure 3.9.1, p. 147).
 
 # Examples
-- Figure 3.1.5: Palestrina's *Ave regina coelorum* opening with four instances of the basic voice leading producing fifth-related harmonies
-- Figure 3.1.6: Beethoven's Op. 27, no. 1, finale, where dyadic basic voice leadings conform to tonal-functional expectations
-- Figure 3.1.10: Common schemas (converging cadence, Fonte, Monte) as short paths on the dyadic circle
 
-# Related Concepts
-- Diatonic Dyad Circle
-- Basic Voice Leading
-- Descending-Fifth Sequence
+**Example 1** (p. 99): Palestrina's *Ave regina coelorum* opening with four basic voice leadings producing fifth-related harmonies.
+
+**Example 2** (p. 100): Beethoven's Op. 27 no. 1 finale, where dyadic basic voice leadings conform to tonal-functional expectations.
+
+**Example 3** (p. 147): Figure 3.9.1 shows randomly generated dyadic counterpoint using mostly clockwise steps producing functional-sounding progressions.
+
+# Relationships
+
+## Builds Upon
+- **Diatonic Dyad Circle** — The adjacency is defined on this geometric space
+- **Basic Voice Leading** — The operation creating fifth-related motion
+
+## Enables
+- **Descending-Fifth Sequence** — Generated by iterating the adjacent-fifth relationship
+
+## Related
+- **Imperfect Consonance System** — The broader system containing this relationship
+
+## Contrasts With
+- None specified; this is a geometric fact rather than one pole of a contrast
+
+# Common Errors
+
+- **Error**: Assuming fifth motion in early music is harmonically motivated
+  **Correction**: In Renaissance counterpoint, fifth motion can arise from purely contrapuntal geometry before harmonic significance is assigned
 
 # Common Confusions
-- This is not the same as the acoustic circle of fifths (based on frequency ratios) or the circle of fifths relating keys -- these are three distinct phenomena that happen to converge on the importance of the fifth
-- The adjacency of fifth-related dyads is a geometrical fact about the 2-in-7 spiral, not a harmonic convention
+
+- **Confusion**: Conflating the three circles of fifths
+  **Clarification**: The dyadic (contrapuntal), acoustic (frequency ratio), and key-signature circles of fifths are three independent phenomena that happen to converge on the importance of the interval of a fifth (p. 99)
 
 # Source Reference
-Chapter 3, Section 1, pp. 99-100
+
+Chapter 3: Line and Configuration, Section 1, pp. 99-100; Section 9, p. 147.
+
+# Verification Notes
+
+- Definition source: Direct quotation from p. 99
+- Key Properties: Explicit in source
+- Confidence: HIGH — explicitly stated with clear geometric justification
+- Re-extracted from v2 card; preserved: triple circle-of-fifths distinction, Palestrina example

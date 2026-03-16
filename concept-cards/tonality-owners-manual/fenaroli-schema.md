@@ -1,39 +1,110 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Fenaroli Schema
-category: theory
+slug: fenaroli-schema
+
+# === CLASSIFICATION ===
+category: schema
+subcategory: compositional-schemas
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "The Origins of Functional Tonality"
 chapter_number: 6
 pdf_page: 257
-authors: "Dmitri Tymoczko"
-unit: null
+section: "The logical structure of protofunctionality"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - fifths-and-steps-arrangement
+extends: []
+related:
+  - prinner-schema
+  - protofunctionality
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Fenaroli schema?"
+  - "How is the Fenaroli related to the fifths-and-steps arrangement?"
 ---
 
 # Quick Definition
-A galant schema identified by Gjerdingen featuring the melody 7^-1^-2^-3^ over the harmonies V-I-V-I, grounded in the basic geometry of the fifths-and-steps arrangement.
 
-# Formal Definition
-The Fenaroli schema, as identified by Robert Gjerdingen, features an ascending melody 7^-1^-2^-3^ supported by alternating dominant and tonic harmonies (V-I-V-I). Tymoczko shows that this schema is rooted in the basic fifths-and-steps arrangement, where upper-voice steps are paired with bass fifths. The pattern can be understood as one half of a larger sequential structure: V-I-V-I (7^-1^-2^-3^) repeats in contrary motion at the interval of a fifth as I-IV-I-IV (3^-4^-5^-6^). This grounds the schema in the fundamental geometry of triadic counterpoint.
+Gjerdingen's name for a schema featuring melody 7-1-2-3 over bass V-I-V-I, grounded in the fifths-and-steps arrangement. A transposed version of this pattern (3-4-5-6 over I-IV-I-IV) functions as either a transposed Fenaroli or a reversed Prinner.
 
-# Musical Context
-The Fenaroli schema appears in any style that makes use of the fifths-and-steps defaults. It represents one of several schemas (along with the Prinner, Do-Re-Mi, and others) that emerge from the basic contrapuntal logic of triadic harmony. The schema is characteristic of both the protofunctional practice of the sixteenth century and the more codified galant style of the eighteenth century.
+# Core Definition
+
+The Fenaroli schema (named by Gjerdingen) features melody 7-1-2-3 over harmony V-I-V-I (p. 262, Fig. 6.1.4). It is one of the schemas grounded in the fifths-and-steps defaults. The pattern at 3-4-5-6 over I-IV-I-IV can be understood as either a transposed Fenaroli or a reversed Prinner (p. 262). Similarly, 1-2-3 over I-V-I resembles Gjerdingen's "Do-Re-Mi" (p. 262). The fifths-and-steps arrangement suggests these schemas will appear in any style using the defaults.
+
+# Prerequisites
+
+- **Fifths-and-steps arrangement** — Geometric basis
+
+# Key Properties
+
+1. Melody: 7-1-2-3; harmony: V-I-V-I
+2. Grounded in the fifths-and-steps defaults
+3. Related to the Prinner by transposition
+4. Related to the Do-Re-Mi schema
+5. Appears in styles using fifths-and-steps defaults
+
+# Construction / Recognition
+
+## To Identify a Fenaroli:
+1. Look for an alternating V-I bass pattern
+2. Check for an ascending stepwise melody 7-1-2-3
+3. Note that the pattern may appear transposed (3-4-5-6 over I-IV-I-IV)
+
+# Context & Application
+
+The Fenaroli is one of several schemas that Tymoczko grounds in the basic geometry of triadic counterpoint, showing that they will appear naturally in any proto-functional style.
 
 # Examples
-- Figure 6.1.4: The sequential content of the fifths-and-steps arrangement, showing 7^-1^-2^-3^ under V-I-V-I as related to the Fenaroli
-- Figure 6.5.2: In the Pope Marcellus Mass, overlapping "up by step, down by third" melodies create a 4^-5^-1^ bass reminiscent of the Fenaroli pattern
-- The 3^-4^-5^-6^ under I-IV-I-IV can be understood as either a transposed Fenaroli or a reversed Prinner
 
-# Related Concepts
-- Fifths-and-Steps Arrangement
-- Prinner Schema
-- Harmonic Cycles
-- Protofunctionality
-- Sequential Patterning
-- 3^-2^-1^ Melodic Template
+**Example 1** (p. 262, Fig. 6.1.4): Sequential and schematic content of the fifths-and-steps arrangement, including the Fenaroli.
+
+# Relationships
+
+## Builds Upon
+- **Fifths-and-steps arrangement** — The schema's geometric basis
+
+## Enables
+- No specific concepts
+
+## Related
+- **Prinner schema** — Related by transposition/reversal
+- **Protofunctionality** — One of the schematic idioms characteristic of protofunctional music
+
+## Contrasts With
+- No direct contrasts
+
+# Common Errors
+
+- **Error**: Treating the Fenaroli as a localized eighteenth-century phenomenon
+  **Correction**: It is grounded in fundamental triadic geometry and appears wherever fifths-and-steps defaults are used
 
 # Common Confusions
-- The Fenaroli is not just an eighteenth-century convention. Tymoczko argues it is grounded in the basic geometry of triadic counterpoint and will appear in any style using fifths-and-steps defaults.
-- The schema is related by sequential transposition to I-IV-I-IV with 3^-4^-5^-6^, which can itself be understood as a reversed Prinner.
+
+- **Confusion**: Thinking the Fenaroli and Prinner are unrelated
+  **Clarification**: They are related by transposition at the fifth within the fifths-and-steps arrangement
 
 # Source Reference
-Chapter 6, section 1, pp. 261-262; section 6, pp. 289-290.
+
+Chapter 6, section 1, p. 262. See Figure 6.1.4.
+
+# Verification Notes
+
+- Definition source: Direct from p. 262
+- Confidence rationale: Named and described with geometric grounding
+- Cross-reference status: Verified against prinner-schema
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source

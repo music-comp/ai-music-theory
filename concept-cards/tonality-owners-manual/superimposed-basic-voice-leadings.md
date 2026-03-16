@@ -1,37 +1,128 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Superimposed Basic Voice Leadings
-category: technique
+slug: superimposed-basic-voice-leadings
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: geometric-voice-leading
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Line and Configuration"
 chapter_number: 3
 pdf_page: 96
-authors: "Dmitri Tymoczko"
-unit: null
+section: "Other intervals"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - basic-voice-leading
+  - diatonic-dyad-circle
+extends:
+  - basic-voice-leading
+related:
+  - descending-fifth-sequence
+  - seventh-chord-circle
+  - four-voice-sequences
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How can basic voice leadings from different spiral diagrams be combined?"
+  - "Why do four-voice descending-fifth sequences arise from superimposed dyadic patterns?"
 ---
 
 # Quick Definition
-The technique of combining basic voice leadings from different dyadic spiral diagrams (e.g., thirds in outer voices with fifths in inner voices) to generate four-voice counterpoint, exploiting their structural similarity.
 
-# Formal Definition
-Because all two-note diatonic intervals share the same abstract basic voice leading structure (T_-4 t_1), basic voice leadings for different intervals stay in sync when superimposed. The diatonic fifth's basic voice leading can be embedded into 7-6 fauxbourdon sequences, descending-fifth sequences of incomplete seventh chords, and four-voice seventh-chord sequences. Superimposing thirds (outer voices) with fifths (inner voices) produces triads with doubled root -- one of the main voice-leading schemas for descending-fifth sequences. The three spirals (thirds/sixths, fourths/fifths, unisons/octaves) can be combined into a single superimposed diagram.
+The technique of combining basic voice leadings from different dyadic spiral diagrams (e.g., thirds in outer voices with fifths in inner voices) to generate four-voice counterpoint, exploiting their structural similarity under the shared T_{-4}t_1 formula.
 
-# Musical Context
-The development of Beethoven's Op. 2 no. 1 superimposes outer-voice thirds with inner-voice fifths, producing a ubiquitous four-voice pattern. The diatonic fifth's basic voice leading generates 7-6 fauxbourdon, descending-fifth incomplete seventh chords (common from baroque to jazz), and four-voice seventh-chord sequences. Baroque sequences often blur the boundary between "merely linear" fauxbourdon and robustly harmonic descending fifths by trading on the similarity of these patterns.
+# Core Definition
+
+Because all two-note diatonic intervals share the same abstract basic voice leading structure (T_{-4}t_1), basic voice leadings for different intervals stay in sync when superimposed (Figure 3.3.1, p. 107). The diatonic fifth's basic voice leading can be embedded into 7-6 fauxbourdon sequences, descending-fifth sequences of incomplete seventh chords, and four-voice seventh-chord sequences (Figure 3.3.3, p. 108). Superimposing thirds (outer voices) with fifths (inner voices) produces triads with doubled root, one of the main voice-leading schemas for descending-fifth sequences (p. 108). The three spiral diagrams for all diatonic consonances can be combined into a single superimposed diagram (Figure 3.3.6, p. 110).
+
+# Prerequisites
+
+- **Basic Voice Leading** — The building block being superimposed
+- **Diatonic Dyad Circle** — The geometric spaces being combined
+
+# Key Properties
+
+1. All 2-in-7 basic voice leadings share the abstract structure T_{-4}t_1
+2. This structural similarity allows different intervals' voice leadings to stay in sync
+3. Superimposing thirds and fifths produces the ubiquitous four-voice descending-fifth pattern
+4. The superimposed diagram combines unisons/octaves (outside), fourths/fifths (center), and thirds/sixths (between)
+5. Angular position represents sum of pitch classes; radial position mirrors interval type
+6. Small radial motions change vertical configurations by small amounts
+
+# Construction / Recognition
+
+## To Construct:
+1. Choose two different dyadic intervals (e.g., thirds and fifths)
+2. Write each interval's basic voice leading separately
+3. Stack them to create a four-voice texture
+4. The shared T_{-4}t_1 structure ensures synchronization
+
+## To Recognize:
+1. In a four-voice descending-fifth sequence, look for two pairs of voices
+2. Each pair should articulate a basic voice leading on its own spiral diagram
+3. The pairs move in sync due to shared abstract structure
+
+# Context & Application
+
+Beethoven's Op. 2 no. 1 development superimposes outer-voice thirds with inner-voice fifths, producing the ubiquitous four-voice descending-fifth pattern (Figure 3.3.2, p. 108). Baroque sequences often blur the boundary between "merely linear" fauxbourdon and robustly harmonic descending fifths by trading on the similarity of these patterns (p. 109). Jazz exploits the same link between descending-fifth progressions and efficient voice leading in sophisticated manipulation of diatonic geometry (p. 110). The superimposed diagram (Figure 3.3.6) is essentially the Mobius strip representing all two-note diatonic consonances.
 
 # Examples
-- Figure 3.3.2: Beethoven's Op. 2 no. 1 development combining thirds and fifths basic voice leadings
-- Figure 3.3.3: The diatonic fifth's basic voice leading embedded in fauxbourdon, incomplete sevenths, and full seventh-chord sequences
-- Figure 3.3.6: Superimposed spiral diagrams for all three diatonic consonances
 
-# Related Concepts
-- Basic Voice Leading
-- Diatonic Dyad Circle
-- Seventh-Chord Circle
-- Descending-Fifth Sequence
+**Example 1** (p. 108): Figure 3.3.2 shows Beethoven's Op. 2 no. 1 development combining thirds and fifths basic voice leadings.
+
+**Example 2** (p. 108): Figure 3.3.3 shows the fifth's basic voice leading embedded in fauxbourdon, incomplete sevenths, and full seventh-chord sequences.
+
+**Example 3** (p. 110): Figure 3.3.6 presents superimposed spiral diagrams for all three diatonic consonances.
+
+**Example 4** (p. 110): Thelonious Monk's "Pannonica" decorates upper voices forming fourths and fifths sinking slowly downward.
+
+# Relationships
+
+## Builds Upon
+- **Basic Voice Leading** — The operation being superimposed
+- **Diatonic Dyad Circle** — The geometric spaces being combined
+
+## Enables
+- **Descending-Fifth Sequence** — Generated by superimposing thirds and fifths
+- **Four-Voice Sequences** — Built from superimposed dyadic patterns
+
+## Related
+- **Seventh Chord Circle** — The four-note result of superimposing two dyadic layers
+
+## Contrasts With
+- None specified
+
+# Common Errors
+
+- **Error**: Treating four-voice sequences as fundamentally different from two-voice patterns
+  **Correction**: Many four-voice sequences are literally the superimposition of two dyadic voice leadings
 
 # Common Confusions
-- The structural similarity of different intervals' basic voice leadings is what allows them to stay in sync; this is a mathematical consequence of the 2-in-7 geometry
-- The same four-voice pattern can be analyzed as combining two different dyadic logics or as a single seventh-chord voice leading
+
+- **Confusion**: Thinking the structural similarity is coincidental
+  **Clarification**: The shared T_{-4}t_1 structure is a mathematical consequence of the 2-in-7 geometry, not a coincidence
 
 # Source Reference
-Chapter 3, Section 3 ("Other intervals"), pp. 107-113, Figures 3.3.1-3.3.10
+
+Chapter 3: Line and Configuration, Section 3 ("Other intervals"), pp. 107-113, Figures 3.3.1-3.3.10.
+
+# Verification Notes
+
+- Definition source: Synthesized from pp. 107-110
+- Key Properties: All explicit in source
+- Confidence: HIGH — detailed examples and geometric justification
+- Re-extracted from v2 card; preserved: baroque fauxbourdon/fifths boundary, jazz connection

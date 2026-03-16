@@ -1,36 +1,118 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Galant Schemas on the Dyad Circle
-category: analysis
+slug: galant-schemas-on-the-dyad-circle
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: geometric-voice-leading
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "Line and Configuration"
 chapter_number: 3
 pdf_page: 96
-authors: "Dmitri Tymoczko"
-unit: null
+section: "The imperfect system"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - diatonic-dyad-circle
+  - basic-voice-leading
+extends:
+  - diatonic-dyad-circle
+related:
+  - quiescenza-schema
+  - imperfect-consonance-system
+  - positive-counterpoint
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do galant schemas relate to the geometry of voice-leading spaces?"
+  - "Are galant schemas arbitrary conventions or geometrically constrained?"
 ---
 
 # Quick Definition
-Common galant schemas (converging cadence, Fonte, Monte, Quiescenza, I-IV-V-I) reinterpreted as characteristic paths on the 2-in-7 spiral diagram of imperfect consonances.
 
-# Formal Definition
-Gjerdingen's galant schemas correspond to short-distance motions on the dyadic circle: the converging cadence takes a single clockwise step from ^2-^4 to ^5-^7, augmented by passing tones; the Fonte (descending-fifth sequence) makes a series of clockwise moves; the Monte (ascending-step sequence) alternates clockwise steps with three-step counterclockwise moves, transposing up by step every other chord; the Quiescenza alternates rightward and leftward steps. These are not arbitrary conventions but responses to the basic affordances of diatonic space.
+Common galant schemas (converging cadence, Fonte, Monte, Quiescenza, I-IV-V-I) reinterpreted as characteristic short-distance paths on the 2-in-7 spiral diagram of imperfect consonances, revealing that they are "not so much arbitrary conventions as responses to the basic affordances of musical space" (p. 103).
 
-# Musical Context
-These schemas form the basic idioms of functional composition. Beneath their conventional surface lies a deeper geometrical logic of short-distance motions in the space of imperfect consonances. The approach mediates between the specificity of schema theory and the generality of Roman-numeral analysis: these linear/harmonic hybrids arise from fundamental diatonic geometry and represent the subset of contrapuntal possibilities compatible with functional-harmonic grammar. Both Schenkerian theory and schema theory emphasize outer-voice idioms of this sort; the dyadic circle traces them to an abstract geometry constraining musicians' linear impulses.
+# Core Definition
+
+Gjerdingen's galant schemas correspond to short-distance motions on the dyadic circle (Figure 3.1.10, p. 103): the converging cadence takes a single clockwise step from 2-4 to 5-7, augmented by passing tones in each voice; the Fonte (descending-fifth sequence) makes a series of clockwise moves; the Monte (ascending-step sequence) alternates clockwise steps with three-step counterclockwise moves, transposing up by step every other chord; the Quiescenza alternates rightward and leftward steps, tonicizing a pair of fifth-related harmonies. These schemas represent the linear/harmonic hybrids arising from fundamental diatonic geometry -- "that subset of contrapuntal possibilities that is compatible with Roman-numeral harmonic grammar, pruned from the larger vocabulary of earlier music" (p. 119).
+
+# Prerequisites
+
+- **Diatonic Dyad Circle** — The geometric space on which schemas are paths
+- **Basic Voice Leading** — The atomic step that schemas combine
+
+# Key Properties
+
+1. Each schema is a characteristic path on the 2-in-7 spiral diagram
+2. All involve short-distance motions (one to three steps)
+3. They represent the intersection of contrapuntal possibility and harmonic grammar
+4. More general and flexible than idioms as typically conceived
+5. Both Schenkerian theory and schema theory have emphasized these outer-voice patterns
+
+# Construction / Recognition
+
+## To Identify:
+1. Map a two-voice passage onto the dyadic circle
+2. Count the steps and direction of motion
+3. Match to known patterns: single CW step = converging cadence; series of CW steps = Fonte; alternating CW/CCW = Monte or Quiescenza
+
+# Context & Application
+
+The approach mediates between schema theory's specificity and Roman-numeral analysis's generality. These hybrid structures are "more general than schemas and more specific than 'dominant-tonic progressions' or 'parallel motion in tenths'" (p. 119). The number of available short-distance paths is geometrically limited, explaining why the same schemas reappear across centuries. Attending to dyadic patterns can reveal "subterranean levels of musical structure obscured by Roman numerals" -- as in Beethoven's Op. 23 violin sonata where root progressions are mysterious but basic voice leadings are systematic (Figure 3.1.8, p. 101).
 
 # Examples
-- Figure 3.1.10: All four schemas plus I-IV-V-I analyzed as paths on the spiral diagram
-- Figure 3.1.8: Beethoven's Op. 23 violin sonata second theme, where root progressions are mysterious but basic voice leadings are systematic
 
-# Related Concepts
-- Diatonic Dyad Circle
-- Basic Voice Leading
-- Quiescenza Schema
-- Positive Counterpoint
+**Example 1** (p. 103): Figure 3.1.10 shows converging cadence, Fonte, Monte, Quiescenza, and I-IV-V-I as paths on the spiral diagram.
+
+**Example 2** (p. 101): Beethoven's Op. 23 violin sonata second theme with systematic basic voice leadings despite mysterious root progressions.
+
+**Example 3** (p. 102): Clara Wieck Schumann's Op. 6 mazurka exploiting both ascending and descending basic voice leadings in different triadic positions.
+
+# Relationships
+
+## Builds Upon
+- **Diatonic Dyad Circle** — The geometric space on which schemas are defined
+- **Basic Voice Leading** — The atomic step that schemas combine
+
+## Enables
+- **Positive Counterpoint** — The positive perspective on contrapuntal possibilities
+
+## Related
+- **Quiescenza Schema** — One of the specific schemas analyzed
+- **Imperfect Consonance System** — The broader system containing these paths
+
+## Contrasts With
+- None specified
+
+# Common Errors
+
+- **Error**: Treating schemas as purely learned conventions with no structural basis
+  **Correction**: Schemas reflect geometrical constraints limiting the number of short-distance paths on the dyadic circle
 
 # Common Confusions
-- Schemas are not purely conventional; they reflect geometrical constraints that limit the number of available short-distance paths
-- Roman numerals capture one dimension; dyadic analysis reveals a complementary contrapuntal dimension that Roman numerals may obscure
+
+- **Confusion**: Assuming Roman numerals capture all the relevant structure
+  **Clarification**: Dyadic analysis reveals a complementary contrapuntal dimension that Roman numerals may obscure (p. 101)
 
 # Source Reference
-Chapter 3, Section 1, pp. 102-103, Figure 3.1.10
+
+Chapter 3: Line and Configuration, Section 1, pp. 102-103, Figure 3.1.10; also pp. 101-102, Figures 3.1.8-3.1.9.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 102-103
+- Confidence: HIGH — explicit analysis with named schemas and figure
+- Re-extracted from v2 card; preserved: mediation between schema theory and Roman numerals

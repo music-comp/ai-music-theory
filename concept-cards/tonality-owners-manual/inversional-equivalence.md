@@ -1,38 +1,114 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Inversional Equivalence
-category: theory
+slug: inversional-equivalence
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: functional-harmony
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "The Origins of Functional Tonality"
 chapter_number: 6
 pdf_page: 257
-authors: "Dmitri Tymoczko"
-unit: null
+section: "Similarities and differences"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - root equivalence
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - protofunctionality
+extends: []
+related:
+  - gradual-evolution-of-tonality
+  - origin-and-meaning-in-harmony
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is inversional equivalence?"
+  - "How did inversional equivalence develop historically?"
 ---
 
 # Quick Definition
-The principle that different inversions of a chord (e.g., C-E-G and E-G-C) share the same harmonic identity, with a common "root" regardless of which note is in the bass.
 
-# Formal Definition
-Inversional equivalence is the treatment of different inversions of a triad (root position, first inversion, second inversion) as forms of the same chord. In the early protofunctional period, inversional equivalence does not play a robust compositional role because the harmonic vocabulary is so restricted: there is little question about the equivalence of vi and vi6 in genres where vi6 hardly appears. Instead there is a proliferation of root-position primary triads. Simple harmonic functionality does not require inversional equivalence; the basic prerequisite for harmonic function is harmonic limitation. A weaker form of inversional equivalence appears early on in the preference for I6 over iii and in the construction of repeating contrapuntal patterns.
+The principle that different inversions of a chord (e.g., I and I6) share the same fundamental identity. In early protofunctional music, inversional equivalence is weak; it develops gradually from an implicit preference for I6 over iii into the stronger form explicit in the eighteenth century.
 
-# Musical Context
-Renaissance composers had at least some notion of inversional equivalence, as repeating contrapuntal patterns (sequences) require understanding which motions go in which voices -- tantamount to an implicit understanding of root, third, and fifth. The early preference for I6 over iii (about 60% in frottola, 85% in Dalza) reflects a perceived resemblance between E-G-C and C-E-G. The stronger form of inversional equivalence developed gradually, moving from implicit understanding in sixteenth-century practice to explicit theoretical formulation in the eighteenth century.
+# Core Definition
+
+In protofunctional music, inversional equivalence does not play a robust compositional role -- the harmonic vocabulary is so restricted that there can be no question about the equivalence of vi and vi6 in genres where vi6 hardly appears (p. 268). Instead, there is a substantial zeroth-order preference for I6 over iii, even in genres favoring root-position triads (p. 266). This asymmetry may reflect the aural similarity between I and I6 (p. 266). Renaissance composers had at least some implicit notion of inversional equivalence through repeating contrapuntal patterns where roots, thirds, and fifths moved in characteristic ways (p. 274). The interesting question is how this weak, implicit version developed into the stronger form explicit in the eighteenth century (p. 274). "Simple harmonic functionality does not require inversional equivalence; the basic prerequisite for harmonic function is harmonic limitation" (p. 268).
+
+# Prerequisites
+
+- **Protofunctionality** — The context in which inversional equivalence gradually emerges
+
+# Key Properties
+
+1. Different inversions treated as fundamentally the same chord
+2. Weak in protofunctional music; harmonic vocabulary too restricted to matter
+3. I6 preferred over iii even in root-position-heavy genres (p. 266)
+4. Implicit in Renaissance contrapuntal patterns (p. 274)
+5. Develops gradually from weak/implicit to strong/explicit
+6. Simple functionality does NOT require inversional equivalence (p. 268)
+
+# Construction / Recognition
+
+## To Assess Inversional Equivalence:
+1. Check whether a style treats different inversions similarly in progressions
+2. Compare frequency of I6 vs. iii (I6 preference suggests implicit equivalence)
+3. Look for contrapuntal patterns treating roots, thirds, and fifths distinctively
+4. Note whether register is fundamental to a chord's contextual function
+
+# Context & Application
+
+The preference for I6 over iii appears in both homophonic and polyphonic Renaissance music, suggesting a degree of harmonic thinking that goes beyond pure counterpoint.
 
 # Examples
-- Figure 6.2.4: The likelihood of root-position triads on various scale degrees, showing that 3^ is the least likely (after 7^) to support a root-position triad -- indicating a preference for I6 over iii
-- Figure 6.2.5: The Prinner schema combines the preference for I6 over iii with the vii-diminished-6--I cadence
-- Figure 6.6.3: The percentage of first-inversion chords on each scale degree, showing a slight rise as we approach the classical period
 
-# Related Concepts
-- Protofunctionality
-- Zeroth-Order Properties
-- Scale-Degree Analysis
-- Secondary Diatonic Triads
+**Example 1** (p. 266, Fig. 6.2.4): I6 appears more frequently than iii even in genres favoring root-position triads.
+
+**Example 2** (p. 274): Renaissance contrapuntal patterns show implicit inversional equivalence through characteristic root/third/fifth motions.
+
+# Relationships
+
+## Builds Upon
+- **Protofunctionality** — The context in which equivalence emerges
+
+## Enables
+- **Gradual evolution of tonality** — Inversional equivalence is one of the processes
+
+## Related
+- **Origin and meaning in harmony** — The development of equivalence exemplifies origin/meaning divergence
+
+## Contrasts With
+- No direct contrasts
+
+# Common Errors
+
+- **Error**: Assuming inversional equivalence is a prerequisite for functional harmony
+  **Correction**: "Simple harmonic functionality does not require inversional equivalence" (p. 268)
 
 # Common Confusions
-- Simple protofunctionality does NOT require inversional equivalence. The basic prerequisite is harmonic limitation (a restricted chord vocabulary), not the theoretical identification of inversions.
-- It is entirely possible to have an abstract understanding of "root," "third," and "fifth" while still believing that register is fundamental to a chord's contextual function.
-- The weaker form of inversional equivalence implicit in sixteenth-century practice formed the foundation for the later, more robust notion that was explicit in eighteenth-century theory.
+
+- **Confusion**: Thinking Renaissance musicians had no concept of chord inversion
+  **Clarification**: They had implicit notions through contrapuntal patterns, even without explicit theory (p. 274)
 
 # Source Reference
-Chapter 6, section 2, pp. 265-267; section 3, pp. 273-275.
+
+Chapter 6, sections 2-3, pp. 266-268, 274.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 266-268, 274
+- Confidence rationale: Extensively discussed with statistical evidence
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source

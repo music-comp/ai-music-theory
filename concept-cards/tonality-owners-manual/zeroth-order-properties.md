@@ -1,38 +1,115 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Zeroth-Order Properties
-category: theory
+slug: zeroth-order-properties
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: functional-harmony
+tier: foundational
+
+# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
+source_slug: tonality-owners-manual
+authors: "Dmitri Tymoczko"
 chapter: "The Origins of Functional Tonality"
 chapter_number: 6
 pdf_page: 257
-authors: "Dmitri Tymoczko"
-unit: null
+section: "The logical structure of protofunctionality"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - chord frequency
+  - context-independent probabilities
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - first-order-properties
+  - protofunctionality
+contrasts_with:
+  - first-order-properties
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are zeroth-order properties in harmonic analysis?"
+  - "Why is chordal vocabulary more fundamental than progression tendencies?"
 ---
 
 # Quick Definition
-Context-independent statistical properties of a musical style, particularly the frequency with which different chords appear regardless of their surrounding harmonic context.
 
-# Formal Definition
-Zeroth-order properties describe the overall frequency distribution of chords in a given repertoire, independent of what chords precede or follow them. In a typical major-key passage by J. S. Bach or Beethoven, more than half of all sonorities will be either I, I6, or V7. The flip side is the remarkable scarcity of sonorities like iii, iii6, and vi6, which typically comprise less than 1% of all chords. Tymoczko argues that functionality is "first and foremost a matter of chordal vocabulary" -- the restriction of harmonic vocabulary to a small number of chords.
+Context-independent chord frequencies: how often each chord type appears regardless of what precedes or follows it. In typical major-key Bach or Beethoven, more than half of all sonorities are I, I6, or V7 (p. 258).
 
-# Musical Context
-Zeroth-order properties contrast with first-order properties (which describe the likelihood of one chord progressing to another). Both contribute to the experience of functional harmony, but zeroth-order preferences are more fundamental. The development of functional harmony can be traced partly through the changing zeroth-order distributions: harmonic vocabulary gradually comes to focus on tonic, dominant, and predominants, while the mediant becomes virtually invisible.
+# Core Definition
+
+Zeroth-order properties are context-independent chord frequencies describing how often each chord type appears regardless of surrounding harmonies (p. 258). They contrast with first-order properties describing the likelihood of one chord progressing to another. Tymoczko argues "functionality is first and foremost a matter of chordal vocabulary" (p. 259) -- a harmonic theory cannot focus solely on rules like "chord X can go to chord Y" but must consider the basic preference for some chords over others. The gradual focusing of harmonic vocabulary on tonic, dominant, and predominants (ii and IV) is a key feature of the emergence of functional tonality (Fig. 6.1.1).
+
+# Prerequisites
+
+This is a foundational concept with no prerequisites within this source.
+
+# Key Properties
+
+1. Context-independent: how often a chord appears, regardless of context
+2. In major-key Bach/Beethoven, over 50% of sonorities are I, I6, or V7
+3. Sonorities like iii, iii6, and vi6 typically comprise less than 1% of chords
+4. Functionality is "first and foremost" a matter of chordal vocabulary
+5. The mediant grows invisible as functionality develops (Fig. 6.1.1)
+6. IV appears to increase from Josquin to Palestrina, then decrease thereafter
+
+# Construction / Recognition
+
+## To Measure Zeroth-Order Properties:
+1. Count all chord types in a passage or corpus
+2. Calculate the frequency of each chord type as a percentage
+3. Compare across different composers or periods
+4. Note which chords dominate and which are rare
+
+# Context & Application
+
+Zeroth-order properties reveal the gradual narrowing of harmonic vocabulary from the Renaissance to the classical period. The relative balance of IV and V changes dramatically: from roughly 45% IV in Lassus to about 15% in Beethoven (Fig. 6.2.7, p. 268).
 
 # Examples
-- Figure 6.1.1: Chord roots across a range of composers, showing gradual focusing of harmonic vocabulary on I, IV, V, and ii from Josquin to Beethoven
-- Figure 6.4.1: Dramatic increase in root-position major triads from Ockeghem to Palestrina; root-position major triads and second-inversion triads are the only sonorities that increase
-- Figure 6.6.4: Ionian-mode sonorities categorized by root across the entire era, showing the emergence of IV as a privileged third sonority
 
-# Related Concepts
-- First-Order Properties
-- Protofunctionality
-- Harmonic Cycles
-- Inversional Equivalence
+**Example 1** (p. 259, Fig. 6.1.1): Distribution of diatonic sonorities across ionian and major-mode composers from Josquin to Beethoven.
+
+**Example 2** (p. 268, Fig. 6.2.7): The relative proportion of IV and V across centuries.
+
+# Relationships
+
+## Builds Upon
+- No prerequisites
+
+## Enables
+- **Protofunctionality** — Zeroth-order preferences define proto-functional vocabulary
+
+## Related
+- **First-order properties** — First-order tendencies can arise from zeroth-order preferences + melodic constraints
+
+## Contrasts With
+- **First-order properties** — First-order properties are context-dependent (what follows what)
+
+# Common Errors
+
+- **Error**: Focusing only on first-order properties (progressions) while ignoring zeroth-order (vocabulary)
+  **Correction**: Tymoczko argues zeroth-order properties are more fundamental to functionality
 
 # Common Confusions
-- Zeroth-order properties interact with first-order properties. Music with lots of I, IV, and V will naturally feature lots of IV-I, IV-V, and I-IV motion. To identify genuine tendencies, one must calculate the difference between zeroth-order probability and first-order conditional probability.
-- A harmonic theory cannot be phrased solely in terms of rules like "chord X can go to chord Y" -- we also need to consider basic preferences for some chords over others.
-- The opposition between zeroth-order and first-order is broadly related to Dahlhaus's opposition between Riemannian (emphasizing chord categories) and Rameauian (emphasizing progressions) conceptions.
+
+- **Confusion**: Thinking a common progression like IV-V reveals special "tendency" beyond zeroth-order probability
+  **Clarification**: Some common progressions are common simply because their constituent chords are individually popular (p. 266)
 
 # Source Reference
-Chapter 6, section 1, pp. 258-262; section 4, pp. 275-279; section 6, pp. 289-296.
+
+Chapter 6: The Origins of Functional Tonality, section 1, pp. 258-261.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 258-259
+- Confidence rationale: Explicitly defined with clear terminology
+- Cross-reference status: Verified against first-order-properties
+- Re-extraction notes: Re-extracted from v2 card; preserved: all content derivable from source
