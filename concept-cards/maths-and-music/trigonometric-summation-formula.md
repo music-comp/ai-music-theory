@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Trigonometric Summation Formula
 slug: trigonometric-summation-formula
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: periodic-functions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 118
 section: "Shifting and Stretching Sine and Cosine"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "angle addition formula"
   - "sine addition formula"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sine-and-cosine-functions
 extends: []
@@ -36,7 +30,6 @@ related:
   - square-wave-fourier-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the trigonometric summation formula?"
   - "How does the summation formula connect sine/cosine sums to phase-shifted sinusoids?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Tradition
 slug: chromatic-tradition
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: historical-style
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 199
 section: "5.8.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chromatic tradition"
   - "atonal tradition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - macroharmony
   - chromaticism-quantification
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - scalar-tradition
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What features distinguish 19th-century chromaticism from 20th-century scalar composition?"
   - "How did atonality develop from chromatic tonality?"

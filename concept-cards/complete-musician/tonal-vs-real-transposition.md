@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal vs. Real Transposition
 slug: tonal-vs-real-transposition
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 16
 pdf_page: 364
 section: "Types of Motivic Repetition"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic vs. chromatic transposition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - diatonic-and-chromatic-scales
@@ -35,7 +29,6 @@ related:
   - harmonic-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between tonal and real transposition?"
   - "When does transposition leave the key?"

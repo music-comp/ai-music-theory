@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Goldilocks Principle
 slug: goldilocks-principle
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-theory
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 140
 section: "4.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "not too even, not too uneven"
   - "Goldilocks condition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-as-ruler
   - scalar-transposition
@@ -36,7 +30,6 @@ related:
   - eight-important-scales
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is perfect evenness not ideal for scales or chords?"
   - "What is the 'Goldilocks Principle' for musical structures?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Time-Span Inversion
 slug: time-span-inversion
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "I_{(c,z)}^{(d,w)}"
   - "time-span I_u^v"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span-gis
   - inversion-operation
@@ -36,7 +30,6 @@ related:
   - time-span-interval-preserving-operation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does inversion work in the non-commutative time-span GIS?"
 ---

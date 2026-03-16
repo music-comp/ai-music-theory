@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Motive as Germ
 slug: motive-as-germ
 
-# === CLASSIFICATION ===
 category: motive
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,17 +14,14 @@ chapter_number: 3
 pdf_page: 14
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - germ motive
   - "germ of the idea"
   - smallest common multiple
   - greatest common factor
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
 extends:
@@ -39,7 +33,6 @@ related:
   - feature-importance-hierarchy
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a motive?"
   - "What must I know before understanding developing variation?"

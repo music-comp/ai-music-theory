@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Boretz Region
 slug: boretz-region
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: tetrachordal regions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 170
 section: "Boretz regions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tristan-genus
   - diminished-seventh-chord
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - weitzmann-region
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Boretz region?"
   - "How do Boretz regions organize voice leading among seventh chords?"

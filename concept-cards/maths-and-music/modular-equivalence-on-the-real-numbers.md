@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modular Equivalence on the Real Numbers
 slug: modular-equivalence-on-the-real-numbers
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Modular Equivalence on the Real Numbers"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - real modular equivalence
   - equivalence modulo m on R
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-division-algorithm
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - modular-equivalence-on-the-integers
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modular equivalence on the real numbers?"
   - "How does modular equivalence partition R into equivalence classes?"

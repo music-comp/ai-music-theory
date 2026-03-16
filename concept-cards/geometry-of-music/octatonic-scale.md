@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octatonic Scale
 slug: octatonic-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-types
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: 143
 section: "4.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diminished scale"
   - "half-whole scale"
   - "whole-half scale"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - stacks-of-thirds
 extends: []
@@ -36,7 +30,6 @@ related:
   - hexatonic-scale
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the octatonic scale?"
   - "How is it constructed from third-cycles?"

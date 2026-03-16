@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Alteration
 slug: chromatic-alteration
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: applied chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 24
 pdf_page: 538
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-and-chromatic-scales
 extends: []
@@ -32,7 +26,6 @@ related:
   - chromatic-passing-tone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch and Pitch Class
 slug: pitch-and-pitch-class
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 3
 section: "Pitch and Pitch Class"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pitch"
   - "pitch class"
   - "PC"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - enharmonic-equivalence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between a pitch and a pitch class?"
   - "What is register?"

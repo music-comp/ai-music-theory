@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Coherent Harmony
 slug: coherent-harmony
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: phrase-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 18
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - harmonic coherence
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
 extends:
@@ -35,7 +29,6 @@ related:
   - tonic-form-and-dominant-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct a phrase from a motive?"
   - "What role does harmony play in connecting motive-forms?"

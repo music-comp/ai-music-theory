@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chord-Scale Theory
 slug: chord-scale-theory
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: jazz-improvisation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: null
 section: "VI.7"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord-scale relationships"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-modes
   - ii-v-i-progression
@@ -34,7 +28,6 @@ related:
   - modal-schemas-overview
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Chord-Scale Theory relate chords to scales for improvisation?"
   - "What are the limitations of the chord-scale approach?"

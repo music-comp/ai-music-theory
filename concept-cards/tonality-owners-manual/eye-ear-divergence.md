@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Eye-Ear Divergence
 slug: eye-ear-divergence
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: philosophical-foundations
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 1
 section: "Philosophy"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - what-you-see-is-what-you-hear principle
   - gap between eye and ear
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - corpus-analysis-methods
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the eye-ear divergence in music theory?"
   - "Can listeners hear all the structure that analysts find in scores?"

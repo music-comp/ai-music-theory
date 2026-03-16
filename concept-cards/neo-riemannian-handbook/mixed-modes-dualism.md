@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mixed Modes in Dualist Theory
 slug: mixed-modes-dualism
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: modal-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Henry Klumpenhouwer"
@@ -17,17 +14,14 @@ chapter_number: 6
 pdf_page: null
 section: "Section III"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Dur-Moll / Moll-Dur"
   - "mixed major-minor"
   - "Hauptmann's mixed modes"
   - "harmonic minor as mixed mode"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - hard-vs-soft-dualism
@@ -38,7 +32,6 @@ related:
   - triad-of-triads
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does dualist theory handle the harmonic minor scale?"
   - "What are mixed modes in the dualist framework?"

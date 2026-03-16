@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Lydian Dominant Scale
 slug: lydian-dominant-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: jazz-scales
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: 384
 section: "10.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "acoustic scale"
   - "lydian b7"
   - "overtone scale"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - altered-chords-and-scales
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - altered-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the lydian dominant scale?"
   - "How does the lydian dominant combine whole-tone and octatonic fragments?"

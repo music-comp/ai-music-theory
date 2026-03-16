@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: '"Angst und Hoffen" INJ Analysis'
 slug: angst-hoffen-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: schoenberg-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 154
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - Schoenberg op. 15 no. 7 analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
   - wedge-transformation
@@ -38,7 +32,6 @@ related:
   - die-kreuze-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does INJ analysis work in practice?"
   - "What distinguishes internal from progressive transformations?"

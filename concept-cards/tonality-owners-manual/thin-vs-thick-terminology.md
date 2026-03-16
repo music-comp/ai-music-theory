@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Thin vs. Thick Terminology
 slug: thin-vs-thick-terminology
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: philosophical-foundations
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 1
 pdf_page: 1
 section: "Philosophy"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -32,7 +26,6 @@ related:
   - eye-ear-divergence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between thin and thick music-theoretical terminology?"
   - "Why does Tymoczko prefer thin definitions?"

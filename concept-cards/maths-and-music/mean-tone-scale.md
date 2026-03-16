@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Classical Mean-Tone Scale
 slug: mean-tone-scale
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: mean-tone
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: 152
 section: "The Classical Mean-Tone Scale"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - mean-tone temperament
   - quarter-comma meantone
   - classical meantone
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-major-third
   - comma-of-didymus
@@ -40,7 +34,6 @@ contrasts_with:
   - pythagorean-scale
   - just-intonation-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is mean-tone temperament?"
   - "What distinguishes mean-tone temperament from Pythagorean tuning?"

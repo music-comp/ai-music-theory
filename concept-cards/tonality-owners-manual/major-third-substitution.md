@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Major-Third Substitution
 slug: major-third-substitution
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 47
 section: "A melodic principle"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - principle-of-musical-approximation
   - lp-and-pl-voice-leading
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - tritone-substitution
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is major-third substitution and why does it work?"
 ---

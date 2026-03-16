@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pedal Tone
 slug: pedal-tone
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 210
 section: "The standardized second practice"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - organ point
   - pedal point
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-tone
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - suspension
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pedal tone?"
   - "Why are pedal tones unique among nonharmonic tones?"

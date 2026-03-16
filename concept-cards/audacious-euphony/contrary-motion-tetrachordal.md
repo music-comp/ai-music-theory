@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrary Motion in Tristan-Genus Voice Leading
 slug: contrary-motion-tetrachordal
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: tetrachordal systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 166
 section: "The Tristan Genus as Nearly Even Tetrachord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "balanced voice leading (tetrachordal)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tristan-genus
   - boretz-region
@@ -37,7 +31,6 @@ related:
   - boretz-spider
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why does minor-third transposition produce contrary motion in seventh chords?"
   - "What is the relationship between the generating interval and balanced voice leading?"

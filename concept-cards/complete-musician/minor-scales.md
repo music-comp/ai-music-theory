@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Minor Scales
 slug: minor-scales
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 1
 pdf_page: 3
 section: "Building Scales in the Minor Mode"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "minor mode"
   - "natural minor"
   - "harmonic minor"
   - "melodic minor"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-scale
   - half-step-and-whole-step
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - major-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a minor scale?"
   - "What are the three forms of the minor scale?"

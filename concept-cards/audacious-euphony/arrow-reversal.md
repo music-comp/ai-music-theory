@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Arrow Reversal
 slug: arrow-reversal
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: double syntax
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 222
 section: "Cognitive Opacity"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "spring-loaded pivot"
   - "orientation flip"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-syntax-hypothesis
   - diatonic-encapsulation
@@ -37,7 +31,6 @@ related:
   - convertible-tonnetz
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is arrow reversal in double syntax?"
   - "How does the direction of hierarchical subordination change between syntaxes?"

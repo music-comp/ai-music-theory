@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Beginning the Sentence
 slug: beginning-the-sentence
 
-# === CLASSIFICATION ===
 category: form
 subcategory: theme-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 20
 section: "The Beginning of the Sentence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - sentence opening
   - sentence presentation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - motive
@@ -41,7 +35,6 @@ related:
   - control-of-variety
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I build a sentence opening (presentation)?"
   - "What determines the continuation of a sentence?"

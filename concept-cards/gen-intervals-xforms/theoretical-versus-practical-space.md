@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Theoretical Versus Practical Space
 slug: theoretical-versus-practical-space
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: foundational-definitions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 47
 section: "Discussion following Definition 2.3.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - musical-space-s
@@ -34,7 +28,6 @@ related:
   - pitch-class-space
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why must the formal space S of a GIS be larger than what is practically used?"
   - "What is Lewin's methodological point about theoretical potentialities?"

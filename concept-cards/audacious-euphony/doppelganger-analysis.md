@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Schubert 'Der Doppelganger' Analysis"
 slug: doppelganger-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: piece-specific analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 130
 section: "Neighborhoods and Pitch Retention Loops"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - neighborhood
   - connected-tonnetz
@@ -33,7 +27,6 @@ related:
   - tonnetz-analytical-neutrality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the neighborhood concept apply to a complete composition?"
   - "What are the three virtues of the Tonnetz demonstrated by this analysis?"

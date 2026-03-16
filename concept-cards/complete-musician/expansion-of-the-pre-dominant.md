@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Expansion of the Pre-Dominant
 slug: expansion-of-the-pre-dominant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 17
 pdf_page: 404
 section: "Expansion of the Pre-Dominant"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pre-dominant expansion"
   - "PD expansion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pre-dominant-function
   - contrapuntal-expansion
@@ -36,7 +30,6 @@ related:
   - passing-tonic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can the pre-dominant function be expanded?"
   - "What is a passing tonic?"

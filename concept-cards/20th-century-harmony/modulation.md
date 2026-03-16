@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modulation
 slug: modulation
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 247
 section: "Modulation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "key change"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
   - tonal-center
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - shifting-tonality
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modulation in twentieth-century music?"
   - "How many chords are needed to establish a modulation?"

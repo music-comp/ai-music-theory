@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Augmented Sixth in Pre-Dominant Expansion
 slug: augmented-sixth-in-pre-dominant-expansion
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: augmented sixth
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 30
 pdf_page: 678
 section: "Augmented Sixth Chords as Part of PD Expansions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-sixth-chord
 extends:
@@ -34,7 +28,6 @@ related:
   - chromatic-step-descent-bass
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I resolve an augmented sixth chord?"
 ---

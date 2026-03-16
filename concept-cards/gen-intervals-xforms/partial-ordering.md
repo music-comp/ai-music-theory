@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Partial Ordering in Serial Theory
 slug: partial-ordering
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 154
 section: "6.2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - strict partial ordering
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - protocol-pairs
 extends:
@@ -34,7 +28,6 @@ related:
   - semi-simple-variations-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a partial ordering in serial theory?"
   - "How do partial orderings model incomplete serial structures?"

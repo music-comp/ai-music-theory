@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Prime Intervals
 slug: prime-intervals
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: integer-ratios
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 110
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "prime interval"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - integral-intervals
   - prime-numbers
@@ -36,7 +30,6 @@ related:
   - keyboard-approximation-of-integer-ratios
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a prime interval in the mathematical sense?"
   - "How do prime intervals relate to prime factorization?"

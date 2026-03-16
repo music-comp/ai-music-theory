@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Articulation
 slug: articulation
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: null
 section: "Articulations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - note
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - dynamics
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is articulation in music?"
   - "What do legato, staccato, and accent markings mean?"

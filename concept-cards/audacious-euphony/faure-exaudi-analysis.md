@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Faure Exaudi Analysis"
 slug: faure-exaudi-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: faure-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 73
 section: "Three Late-Century Examples: Liszt, Rimsky-Korsakov, Faure"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Faure Requiem Introit analysis"
   - "Faure switching-station analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad-as-switching-station
   - consonance-dissonance-reciprocity
@@ -36,7 +30,6 @@ related:
   - mehrdeutigkeit
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the augmented triad function as a switching station?"
   - "What is an example of consonant triads organized around an augmented triad?"

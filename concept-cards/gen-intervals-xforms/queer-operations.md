@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Queer Operations (Q3 and Q9)"
 slug: queer-operations
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: octatonic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 282
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - Q3
   - Q9
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - octatonic-pitch-class-set
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - rotation-operations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the queer operations Q3 and Q9?"
 ---

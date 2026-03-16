@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Equal Temperament versus Just Intonation
 slug: equal-temperament-versus-just-intonation
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: temperament
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 152
 section: "Drawbacks of Unequal Temperament"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - ET vs JI
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - irrationality-of-equally-tempered-intervals
   - just-intonation-scale
@@ -37,7 +31,6 @@ related:
   - natural-gravitation-toward-just-intonation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes just intonation from equal temperament?"
   - "Why did equal temperament gain acceptance?"

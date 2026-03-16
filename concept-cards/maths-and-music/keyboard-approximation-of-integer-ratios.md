@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Keyboard Approximation of Integer Ratios
 slug: keyboard-approximation-of-integer-ratios
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: approximation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 110
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - integral-intervals
   - error-calculation-in-cents
@@ -34,7 +28,6 @@ related:
   - consonance-and-dissonance-from-integer-ratios
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How closely does the equally tempered keyboard approximate each integer ratio?"
   - "Which integer ratios are well represented on the keyboard?"

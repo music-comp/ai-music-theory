@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: I-Arrows on Graphs
 slug: i-arrows-on-graphs
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: non-intervallic-transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 206
 section: "8.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "inversion arrows"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inversion-operation
   - non-intervallic-transformations
@@ -34,7 +28,6 @@ related:
   - webern-op27-second-movement-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are I-arrows on transformation graphs?"
 ---

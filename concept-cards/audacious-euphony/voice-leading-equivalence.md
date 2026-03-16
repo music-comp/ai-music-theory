@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice-Leading Equivalence
 slug: voice-leading-equivalence
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 35
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - lp-transformation
   - idealized-voice-leading
@@ -34,7 +28,6 @@ related:
   - l-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is voice-leading equivalence?"
   - "Why can LP on major and LP on minor be called the same transformation?"

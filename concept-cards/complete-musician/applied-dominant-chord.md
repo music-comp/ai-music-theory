@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Applied Dominant Chord
 slug: applied-dominant-chord
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: applied chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 24
 pdf_page: 538
 section: "Applied Dominant Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "secondary dominant chord"
   - "V/X"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - applied-chord
   - dominant-seventh-chord
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - applied-leading-tone-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
   - "How do I construct an applied dominant?"

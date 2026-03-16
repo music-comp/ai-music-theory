@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Descending-Second Sequence
 slug: descending-second-sequence
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 22
 pdf_page: 495
 section: "The Descending-Second (D2) Sequence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "D2 (-5/+4)"
   - "descending-fifth sequence"
   - "circle-of-fifths sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-sequence
 extends:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - descending-third-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a D2 sequence?"
   - "How do I identify a sequence type?"

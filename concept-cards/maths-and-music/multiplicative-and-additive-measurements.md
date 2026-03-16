@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Multiplicative and Additive Measurements
 slug: multiplicative-and-additive-measurements
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: measurement
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 58
 section: "Multiplicative and Additive Measurements"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - multiplicative vs additive interval measurement
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - multiplicative-composition-of-intervals
 extends: []
@@ -34,7 +28,6 @@ related:
   - cents
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between multiplicative and additive interval measurements?"
   - "Why do musicians 'add' intervals while mathematicians 'multiply' them?"

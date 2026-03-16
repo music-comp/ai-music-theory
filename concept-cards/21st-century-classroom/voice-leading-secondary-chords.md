@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading Secondary Chords
 slug: voice-leading-secondary-chords
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: chromatic
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 29
 pdf_page: 417
 section: "29.1 Voice Leading Secondary Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "secondary dominant voice leading"
   - "secondary diminished voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chord-resolution
   - viio7-resolution
@@ -36,7 +30,6 @@ related:
   - voice-leading-borrowed-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you voice lead secondary dominant and diminished seventh chords?"
   - "What is the exception for viio7/V resolving to V?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neighbor Six-Four
 slug: neighbor-six-four
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: prolongation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: null
 section: "Neighbor 6/4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "n. 6/4"
   - "pedal 6/4"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadential-six-four
 extends:
@@ -37,7 +31,6 @@ contrasts_with:
   - cadential-six-four
   - passing-six-four
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a neighbor 6/4 chord?"
   - "How does a neighbor 6/4 differ from a passing 6/4?"

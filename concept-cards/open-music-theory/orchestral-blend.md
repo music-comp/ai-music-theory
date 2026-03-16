@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Orchestral Blend
 slug: orchestral-blend
-# === CLASSIFICATION ===
 category: application
 subcategory: orchestration
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Core Principles of Orchestration"
 chapter_number: 10
 pdf_page: null
 section: "X.1"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -26,7 +20,6 @@ related:
   - antiphony
   - dovetailing
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you blend orchestral sounds?"
   - "What are the principles of orchestral chord voicing?"

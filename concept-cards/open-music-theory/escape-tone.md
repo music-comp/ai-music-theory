@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Escape Tone
 slug: escape-tone
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: non-chord-tones
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: null
 section: "Category 2: Embellishing tones that involve a leap"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ET"
   - "echappee"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - embellishing-tone
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - appoggiatura
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an escape tone?"
   - "How does an escape tone differ from an appoggiatura?"

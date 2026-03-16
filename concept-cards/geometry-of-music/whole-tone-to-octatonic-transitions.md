@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Whole-Tone to Octatonic Transitions
 slug: whole-tone-to-octatonic-transitions
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-relationships
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 384
 section: "9.5, 10.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "central jazz scales"
   - "four-scale system"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-scale-compatibility
   - acoustic-scale-as-intermediary
@@ -35,7 +29,6 @@ related:
   - altered-scale
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the four central scales of jazz and twentieth-century music?"
   - "How do whole-tone, acoustic, and octatonic scales relate to each other?"

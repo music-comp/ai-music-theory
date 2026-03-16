@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Eight Important Scales
 slug: eight-important-scales
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-catalog
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 141
 section: "4.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tymoczko's eight scales"
   - "the important scale types"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - goldilocks-principle
   - scale-as-ruler
@@ -43,7 +37,6 @@ related:
   - pentatonic-scale
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the eight most important scales according to Tymoczko?"
   - "How are these scales constructed?"

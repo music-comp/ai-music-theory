@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chopin Sonata Analysis
 slug: chopin-sonata-analysis
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: analytical-applications
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 118
 section: "4.3"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "Chopin Bb-minor Sonata analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - gis-methodology
 extends: []
@@ -32,7 +26,6 @@ related:
   - interval-function-computation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can a formally valid intervallic relation become perceptually meaningful through musical development?"
   - "What is the role of the repeat in making the Chopin analysis work?"

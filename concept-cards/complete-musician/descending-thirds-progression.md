@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Descending-Thirds Progression
 slug: descending-thirds-progression
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 18
 pdf_page: 425
 section: "The Submediant as Bridge"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "harmonic arpeggiation"
   - "descending harmonic arpeggiation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - submediant
   - root-motions
@@ -36,7 +30,6 @@ related:
   - harmonic-arpeggiation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a descending-thirds progression?"
   - "How does vi bridge tonic and pre-dominant?"

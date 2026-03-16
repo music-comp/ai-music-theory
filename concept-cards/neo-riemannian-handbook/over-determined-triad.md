@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Over-Determined Triad
 slug: over-determined-triad
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: group theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "over-determination of the triad"
   - "triad as source of discord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonieschritte
   - schritt-wechsel-system
@@ -36,7 +30,6 @@ related:
   - combinatorial-group-theory
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does 'over-determined' mean in the context of the triad?"
   - "Why does the consonant triad produce competing transformational systems?"

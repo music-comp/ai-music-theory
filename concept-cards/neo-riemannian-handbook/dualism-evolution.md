@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Evolution of Harmonic Dualism
 slug: dualism-evolution
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: theoretical-development
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "phases of dualism"
   - "acoustic to psychological dualism"
   - "Riemann's shifting foundations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
 extends: []
@@ -37,7 +31,6 @@ related:
   - inversional-symmetry
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did Riemann's justification for dualism change over time?"
   - "What are the three phases of harmonic dualism?"

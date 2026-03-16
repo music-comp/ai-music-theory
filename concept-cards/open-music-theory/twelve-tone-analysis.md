@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Twelve-Tone Analysis
 slug: twelve-tone-analysis
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Analysis Examples - Webern Op. 21 and 24"
 chapter_number: 9
 pdf_page: null
 section: "IX.4"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-row
   - row-matrix
@@ -28,7 +22,6 @@ related:
   - twelve-tone-composition
   - serialism
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you analyze twelve-tone music?"
   - "What goes beyond identifying row forms in an analysis?"

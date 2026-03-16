@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Minor Root Problem
 slug: minor-root-problem
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: theoretical-challenges
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,17 +14,14 @@ chapter_number: 5
 pdf_page: null
 section: "Section V"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "problem of the Grundton"
   - "problem of the fundamental"
   - "minor chord root controversy"
   - "Grundton problem"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - undertone-series
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - monism-vs-dualism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the minor root problem in dualist theory?"
   - "How do monism and dualism differ in their treatment of minor?"

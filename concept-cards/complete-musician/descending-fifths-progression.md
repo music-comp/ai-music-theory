@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Descending-Fifths Progression
 slug: descending-fifths-progression
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 18
 pdf_page: 425
 section: "The Submediant in the Descending-Circle-of-Fifths Progression"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "circle-of-fifths progression"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - submediant
 extends:
@@ -33,7 +27,6 @@ related:
   - descending-second-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does vi participate in circle-of-fifths progressions?"
 ---

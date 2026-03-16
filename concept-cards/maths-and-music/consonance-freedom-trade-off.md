@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Consonance-Freedom Trade-Off
 slug: consonance-freedom-trade-off
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: temperament
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 152
 section: "Drawbacks of Unequal Temperament"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - tuning trade-off
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - equal-temperament-versus-just-intonation
   - drawbacks-of-unequal-temperament
@@ -35,7 +29,6 @@ related:
   - natural-gravitation-toward-just-intonation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why can't a tuning system be perfect in all respects?"
   - "What is the fundamental tension in tuning?"

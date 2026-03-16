@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Brahms Rhapsody Unrolling EMB Analysis
 slug: brahms-rhapsody-emb
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: rhythmic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: 119
 section: "5.4.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - emb-function
   - release-ordering
@@ -35,7 +29,6 @@ related:
   - forwards-oriented-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can EMB be unrolled over time to model evolving perception?"
 ---

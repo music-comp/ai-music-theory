@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Augmented Sixth Enharmonic Modulation
 slug: augmented-sixth-enharmonic-modulation
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: modulation
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 30
 pdf_page: 678
 section: "The Augmented Sixth Chord as Pivot in Modulations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - german-augmented-sixth
   - enharmonic-reinterpretation
@@ -34,7 +28,6 @@ related:
   - german-diminished-third-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I resolve an augmented sixth chord?"
 ---

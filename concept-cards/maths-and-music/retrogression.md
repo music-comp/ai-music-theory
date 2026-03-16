@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Retrogression
 slug: retrogression
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: melody
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 30
 section: "Retrogression"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "retrograde"
   - "melodic retrogression"
   - "horizontal reflection"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - geometric-transformations-of-graphs
   - melody
@@ -38,7 +32,6 @@ related:
   - symmetry-in-music
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is retrogression in music?"
   - "How does retrogression relate to mathematical reflection?"

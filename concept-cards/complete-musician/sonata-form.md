@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sonata Form
 slug: sonata-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 33
 pdf_page: 752
 section: "Sonata Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "sonata-allegro form"
   - "first-movement form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
   - rounded-binary-form
@@ -40,7 +34,6 @@ contrasts_with:
   - ternary-form
   - rondo-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is sonata form?"
   - "What must I know before analyzing sonata form?"

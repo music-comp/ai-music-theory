@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chain-Like Construction
 slug: chain-like-construction
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: motivic-development
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 22
 section: "Analysis of Periods from Beethoven's Piano Sonatas"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - connecting-motive-forms
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - sequences-and-quasi-sequences
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is chain-like construction in thematic building?"
   - "How do motive-forms overlap in chain-like construction?"

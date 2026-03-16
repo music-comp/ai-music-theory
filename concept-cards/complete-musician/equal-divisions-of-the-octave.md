@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Equal Divisions of the Octave
 slug: equal-divisions-of-the-octave
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: symmetrical harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 37
 pdf_page: 852
 section: "Sequential Progressions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "symmetrical octave divisions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - symmetrically-constructed-harmonies
   - chromatic-sequences
@@ -36,7 +30,6 @@ related:
   - omnibus
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are equal divisions of the octave?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tritone Resolution
 slug: tritone-resolution
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 203
 section: "Part Writing with the Dominant Seventh Chord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - diminished fifth resolution
   - augmented fourth resolution
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dominant-seventh-chord
   - voice-leading
@@ -35,7 +29,6 @@ related:
   - unequal-fifths
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
   - "How do I write proper voice-leading connections?"

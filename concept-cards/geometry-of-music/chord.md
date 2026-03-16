@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chord (OPC)
 slug: chord
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: classification
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "unordered set of pitch classes"
   - "OPC class"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-musical-object
   - octave-symmetry
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - transpositional-set-class
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a chord vs. a chord type?"
   - "What are OPTIC symmetries?"

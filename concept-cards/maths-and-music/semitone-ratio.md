@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Semitone Ratio
 slug: semitone-ratio
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: measurement
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 58
 section: "Semitones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - equal-tempered semitone
   - twelfth root of 2
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - multiplicative-composition-of-intervals
 extends: []
@@ -35,7 +29,6 @@ related:
   - frequencies-of-keyboard-notes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a semitone ratio?"
   - "What ratio corresponds to one semitone in equal temperament?"

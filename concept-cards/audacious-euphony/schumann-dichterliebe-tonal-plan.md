@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Schumann Dichterliebe Tonal Plan"
 slug: schumann-dichterliebe-tonal-plan
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: piece-specific analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 148
 section: "Continuous Upshifts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - continuous-upshift
   - voice-leading-zones
@@ -33,7 +27,6 @@ related:
   - lerdahl-comparison
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does voice-leading zone analysis reveal hidden structure in a song cycle's key sequence?"
 ---

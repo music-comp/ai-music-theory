@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Upshifting and Downshifting
 slug: upshifting-downshifting
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: directed voice leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 103
 section: "How Hexatonic and Weitzmann Regions Interact"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "directed voice leading"
   - "upshift/downshift"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - idealized-voice-leading
   - single-semitonal-displacement
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - balanced-voice-leading
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is directed voice leading in the context of triadic space?"
   - "How does motion direction correlate with graph direction?"

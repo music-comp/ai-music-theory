@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Permutational Near-Symmetry
 slug: permutational-near-symmetry
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: symmetry
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.9.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "near-P-symmetry"
   - "near-cluster"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - permutation-symmetry
   - near-symmetry
@@ -38,7 +32,6 @@ contrasts_with:
   - transpositional-near-symmetry
   - inversional-near-symmetry
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is permutational near-symmetry?"
   - "How does permutation relate to efficient voice leading?"

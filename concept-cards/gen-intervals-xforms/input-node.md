@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Input Node
 slug: input-node
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-structure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 224
 section: "9.6.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "IN node"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - node-arrow-system
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - output-node
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an input node in a node/arrow system?"
   - "How do input nodes relate to musical function?"

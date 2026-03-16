@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: General Sinusoidal Form
 slug: general-sinusoidal-form
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: periodic-functions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 118
 section: "Shifting and Stretching Sine and Cosine"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - trigonometric-summation-formula
   - sine-and-cosine-functions
@@ -35,7 +29,6 @@ related:
   - harmonics-and-overtones
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do the rectangular and polar forms of a sinusoid relate?"
   - "What is the general transformation of a sine function?"

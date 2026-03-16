@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Meter and Time Signatures
 slug: meter-and-time-signatures
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: meter
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,10 +14,8 @@ chapter_number: 2
 pdf_page: 30
 section: "Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "time signature"
   - "meter"
@@ -28,7 +23,6 @@ aliases:
   - "bars"
   - "compound time"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - note-durational-values
   - beats-and-tempo
@@ -39,7 +33,6 @@ related:
   - tuplets
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is meter in music?"
   - "How does a time signature work?"

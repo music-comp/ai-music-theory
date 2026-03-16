@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sentence Completion
 slug: sentence-completion
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sentence-construction
 tier: intermediate/advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 39
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - completion of the sentence
   - sentence practice form
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - beginning-the-sentence
   - motive
@@ -42,7 +36,6 @@ related:
 contrasts_with:
   - consequent-of-the-period
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I complete a sentence?"
   - "What is the practice form of a sentence?"

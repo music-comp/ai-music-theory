@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Principal Ideal Domain
 slug: principal-ideal-domain
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: rings
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 100
 section: "Ideals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "PID"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - integral-domain
   - ideals-and-principal-ideals
@@ -36,7 +30,6 @@ related:
   - unique-prime-factorization
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a principal ideal domain?"
   - "Why is Z a principal ideal domain?"

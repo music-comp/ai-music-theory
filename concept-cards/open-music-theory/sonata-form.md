@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sonata Form
 slug: sonata-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sectional-forms
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "sonata-allegro form"
   - "first-movement form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
   - phrase
@@ -39,7 +33,6 @@ related:
   - ternary-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three main sections of sonata form?"
   - "What is the difference between the exposition and recapitulation?"

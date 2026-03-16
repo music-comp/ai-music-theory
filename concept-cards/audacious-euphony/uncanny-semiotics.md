@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Uncanny Semiotics of Hexatonic Progressions
 slug: uncanny-semiotics
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: "The Hexatonic Trance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "hexatonic uncanny"
   - "supernatural semiotics"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-cycle
   - contrary-motion
@@ -37,7 +31,6 @@ related:
   - balanced-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why are hexatonic progressions associated with the uncanny and supernatural?"
   - "Is the link between hexatonic progressions and the uncanny merely conventional?"

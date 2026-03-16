@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Periodic Functions
 slug: periodic-functions
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: periodic-functions
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 118
 section: "Periodic Functions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "periodic function"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
   - vibrations-and-sound-waves
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a periodic function?"
   - "How do periodic functions relate to musical tones?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Metric Freedom (Taktfreiheit)
 slug: metric-freedom
 
-# === CLASSIFICATION ===
 category: rhythm-and-meter
 subcategory: compositional-practice
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Paul Berry"
@@ -17,16 +14,13 @@ chapter_number: 17
 pdf_page: 463
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Taktfreiheit"
   - "metric flexibility"
   - "rhythmic freedom"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - auftakttheorie
 extends: []
@@ -37,7 +31,6 @@ related:
   - metric-freedom-in-song
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is metric freedom (Taktfreiheit) in Riemann's understanding?"
   - "How did Riemann connect Brahms's compositional practice to Caccini?"

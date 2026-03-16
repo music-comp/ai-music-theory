@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Group of Interval-Preserving Operations (PSVS)
 slug: group-of-interval-preserving-operations
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: group-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 79
 section: "3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "PSVS"
   - "interval-preserving group"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-preserving-operation
   - label-function
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - group-of-transpositions
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do interval-preserving operations compose?"
   - "What is the algebraic relationship between PSVS and IVLS?"

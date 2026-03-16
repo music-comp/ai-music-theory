@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Augmentation and Diminution
 slug: augmentation-and-diminution
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 16
 pdf_page: 364
 section: "Motivic Transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
 extends:
@@ -32,7 +26,6 @@ related:
   - fragmentation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is augmentation of a motive?"
   - "What is diminution of a motive?"

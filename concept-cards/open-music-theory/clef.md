@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Clef
 slug: clef
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: null
 section: "Clefs"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - staff
   - pitch
@@ -37,7 +31,6 @@ related:
   - ledger-lines
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a clef?"
   - "Why are different clefs used?"

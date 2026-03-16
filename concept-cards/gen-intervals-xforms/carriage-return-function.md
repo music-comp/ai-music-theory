@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Carriage Return Function
 slug: carriage-return-function
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-structure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 224
 section: "9.7.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "carriage-return moment"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - precedence-ordered-system
 extends: []
@@ -34,7 +28,6 @@ related:
   - start-node
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a carriage-return moment in a transformation network?"
   - "What happens when musical chronology violates precedence ordering?"

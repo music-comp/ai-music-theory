@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tritone GIS Example
 slug: tritone-gis-example
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-mappings
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.5.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - simply-transitive-group
@@ -33,7 +27,6 @@ related:
   - gis-from-simply-transitive-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can a GIS be constructed on tritone set-classes?"
   - "How does graph homomorphism work when NODEMAP is not 1-to-1?"

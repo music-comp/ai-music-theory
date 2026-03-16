@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nondominant Seventh Chords
 slug: nondominant-seventh-chords
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: diatonic chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 17
 pdf_page: 404
 section: "Pre-Dominant Seventh Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pre-dominant seventh chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pre-dominant-function
   - seventh-chords
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - dominant-seventh-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are nondominant seventh chords?"
   - "How do you voice-lead nondominant seventh chords?"

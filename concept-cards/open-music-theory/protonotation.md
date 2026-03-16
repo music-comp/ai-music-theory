@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Protonotation
 slug: protonotation
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: aural-skills
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 15
 pdf_page: null
 section: "Protonotation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dictation
   - solfege
@@ -33,7 +27,6 @@ related:
   - sight-singing
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is protonotation?"
   - "How does protonotation simplify dictation?"

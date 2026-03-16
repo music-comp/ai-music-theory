@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seventh Chord Types
 slug: seventh-chord-types
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: chord-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 138
 section: "Musical Characteristics of Seventh Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "types of seventh chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chords
 extends:
@@ -34,7 +28,6 @@ related:
   - seventh-chord-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What types of seventh chords exist?"
   - "What is a seventh chord?"

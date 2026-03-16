@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octave Equivalence
 slug: octave-equivalence
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch
 extends: []
@@ -34,7 +28,6 @@ related:
   - piano-keyboard
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is octave equivalence?"
   - "Why do pitches separated by an octave share the same letter name?"

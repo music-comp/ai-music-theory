@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Triad Quality
 slug: triad-quality
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: chord-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 116
 section: "Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord quality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triads
 extends:
@@ -34,7 +28,6 @@ related:
   - triads-in-minor-keys
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a triad?"
   - "What types of triads exist?"

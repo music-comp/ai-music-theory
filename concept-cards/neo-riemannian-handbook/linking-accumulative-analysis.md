@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Linking and Accumulative Analysis
 slug: linking-accumulative-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-practices
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Daniel Harrison"
@@ -17,16 +14,13 @@ chapter_number: 20
 pdf_page: 558
 section: "II. Some Hypotheses about Tonic and Antitonic Trichords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - linking analysis
   - accumulative analysis
   - "linking vs. accumulative function"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - harrisonian-functional-discharge
@@ -37,7 +31,6 @@ related:
   - functional-transformational-synthesis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is linking analysis vs. accumulative analysis?"
   - "How do [037] triads relate functionally within a PL cycle?"

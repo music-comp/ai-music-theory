@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Mediant
 slug: chromatic-mediant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic harmony
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "David Kopp"
@@ -17,15 +14,12 @@ chapter_number: 14
 pdf_page: 401
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "chromatic third relation"
   - "chromatic mediant relation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - tonality
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - quintschritt-terzschritt
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is chromatic mediant relationship?"
   - "How do chromatic mediants differ from diatonic mediants?"

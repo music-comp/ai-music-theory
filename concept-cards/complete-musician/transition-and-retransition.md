@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transition and Retransition
 slug: transition-and-retransition
 
-# === CLASSIFICATION ===
 category: form
 subcategory: ternary
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 31
 pdf_page: 702
 section: "Transitions and Retransitions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "bridging section"
   - "returning transition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ternary-form
 extends: []
@@ -35,7 +29,6 @@ related:
   - rondo-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a transition in ternary form?"
   - "What is a retransition?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrary-Motion Sequence
 slug: contrary-motion-sequence
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 155
 section: "Contrary-motion sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "wedge sequence"
   - "Ludwig schema"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-exchange
   - harmonically-stable-and-unstable-sequences
@@ -38,7 +32,6 @@ contrasts_with:
   - transpositional-sequence
   - registrally-stable-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a contrary-motion sequence and how is it derived?"
   - "What distinguishes contrary-motion sequences from other types?"

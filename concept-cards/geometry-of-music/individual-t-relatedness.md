@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Individual T-Relatedness
 slug: individual-t-relatedness
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: equivalence
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 102
 section: "3.7"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "individually T-related voice leadings"
   - "individual transposition equivalence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - decomposition-into-parallel-contrary
   - cross-sections-of-chord-space
@@ -34,7 +28,6 @@ related:
   - voice-leading-lattices
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When are two voice leadings 'individually T-related'?"
   - "What geometric operation relates individually T-related voice leadings?"

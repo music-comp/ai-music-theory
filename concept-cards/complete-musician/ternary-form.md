@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ternary Form
 slug: ternary-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: ternary
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 31
 pdf_page: 702
 section: "Ternary Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "three-part form"
   - "ABA form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
   - rounded-binary-form
@@ -39,7 +33,6 @@ contrasts_with:
   - rounded-binary-form
   - binary-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is ternary form?"
   - "How does ternary form differ from rounded binary form?"

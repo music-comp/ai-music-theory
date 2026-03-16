@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Klang
 slug: klang
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: harmonic-entity
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier, Benjamin Steege, Brian Hyer"
@@ -17,17 +14,14 @@ chapter_number: null
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Oberklang (over-Klang)"
   - "Unterklang (under-Klang)"
   - consonant triad
   - harmonic sonority
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - akkord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Klang in Riemann's harmonic theory?"
   - "How does Klang differ from a generic chord (Akkord)?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Overtone Singing
 slug: overtone-singing
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: acoustics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 118
 section: "Harmonics and Overtones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "throat singing"
   - "harmonic singing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonics-and-overtones
   - overtone-series
@@ -35,7 +29,6 @@ related:
   - timbre-as-harmonic-amplitudes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is overtone singing?"
   - "How can individual harmonics become audible?"

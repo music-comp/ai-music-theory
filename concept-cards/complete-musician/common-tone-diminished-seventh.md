@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Common-Tone Diminished Seventh Chord
 slug: common-tone-diminished-seventh
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: symmetrical harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 35
 pdf_page: 810
 section: "The Common-Tone Diminished Seventh Chord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "c.t. dim 7"
   - "ct-dim-7"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diminished-seventh-chord
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - diminished-seventh-enharmonic-modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a common-tone diminished seventh chord?"
   - "How do I distinguish a common-tone dim7 from an applied dim7?"

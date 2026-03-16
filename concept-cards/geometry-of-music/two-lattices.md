@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: The Two Lattices
 slug: two-lattices
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: structural-analogy
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 270
 section: "7.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord lattice and scale lattice"
   - "fractal self-similarity of tonality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - circle-of-thirds-harmonic
   - scalar-model-of-key-distance
@@ -34,7 +28,6 @@ related:
   - diatonic-chord-lattice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are the circle of thirds and the circle of fifths structurally analogous?"
   - "In what sense is functional harmony 'self-similar' like a fractal?"

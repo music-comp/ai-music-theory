@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Strong and Weak Progressions
 slug: strong-and-weak-progressions
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 313
 section: "A theory of harmonic cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "strong vs. weak root progressions"
   - "rightward and leftward progressions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -33,7 +27,6 @@ related:
   - harmonic-cycle-theory
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What makes a root progression 'strong' or 'weak' in functional harmony?"
   - "Which root progressions move rightward on the descending-thirds model?"

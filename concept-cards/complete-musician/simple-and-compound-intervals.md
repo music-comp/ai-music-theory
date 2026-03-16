@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Simple and Compound Intervals
 slug: simple-and-compound-intervals
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 70
 section: "Melodic and Harmonic Intervals: Simple and Compound"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
   - octave
@@ -32,7 +26,6 @@ extends:
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between simple and compound intervals?"
 ---

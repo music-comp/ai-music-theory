@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Voice Exchange
 slug: chromatic-voice-exchange
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic progressions
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 27
 pdf_page: 616
 section: "Chromatic Stepwise Bass Descents"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-exchange
   - modal-mixture
@@ -34,7 +28,6 @@ related:
   - augmented-sixth-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modal mixture?"
 ---

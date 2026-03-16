@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tendency Histogram
 slug: tendency-histogram
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: corpus-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 257
 section: "Harmony and polyphony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - zeroth-order-properties
   - first-order-properties
@@ -34,7 +28,6 @@ related:
   - protofunctionality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a tendency histogram?"
   - "How can you distinguish genuine harmonic tendencies from zeroth-order effects?"

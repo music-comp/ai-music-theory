@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic Distance
 slug: diatonic-distance
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 47
 section: "A harmonic principle"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - harmonic distance
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - chordal-step-distance
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is harmonic distance measured between major triads?"
   - "What distinguishes rock harmonic logic from classical functional harmony?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Balanced Binary Form
 slug: balanced-binary
 
-# === CLASSIFICATION ===
 category: form
 subcategory: small-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,13 +14,10 @@ chapter_number: 24
 pdf_page: 347
 section: "24.3 Balanced Binary"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
   - modulation
@@ -37,7 +31,6 @@ contrasts_with:
   - rounded-binary
   - simple-binary
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is balanced binary form?"
   - "What distinguishes balanced binary from other binary types?"

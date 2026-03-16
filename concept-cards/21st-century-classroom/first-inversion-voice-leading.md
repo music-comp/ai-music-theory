@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading First-Inversion Triads
 slug: first-inversion-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 26
 pdf_page: 394
 section: "26.8 Voice Leading First-Inversion Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "first inversion doubling"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-definition
   - doubling-rules-triads
@@ -34,7 +28,6 @@ related:
   - special-situations-parallel-fifths
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you voice lead first-inversion triads?"
   - "What should you double in a first-inversion chord?"

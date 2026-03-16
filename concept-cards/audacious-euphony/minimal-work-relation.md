@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Minimal-Work Relation
 slug: minimal-work-relation
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: "A Minimal-Work Model of the Triadic Universe"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "minimal work"
   - "single-semitone adjacency"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-work
   - consonant-triad
@@ -38,7 +32,6 @@ related:
   - hexatonic-cycle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the minimal-work relation?"
   - "What must I know before understanding hexatonic cycles?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tetrachordal Structure
 slug: tetrachordal-structure
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scalar-building-block
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Matthew Gelbart, Alexander Rehding"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: null
 section: "From Pentatonicism to Tetrachords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - tetrachord
   - four-note scalar fragment
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pentatonicism
   - pien
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - pentatonicism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Riemann derive tetrachords from pentatonic structures?"
   - "What distinguishes pentatonic from diatonic tonality in Riemann's framework?"

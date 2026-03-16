@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch Interval
 slug: pitch-interval
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval types
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 25
 section: "1.7 Pitch Intervals (Ordered and Unordered)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - pi
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch
   - semitone
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - pitch-class-interval
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pitch interval?"
   - "What distinguishes ordered from unordered pitch intervals?"

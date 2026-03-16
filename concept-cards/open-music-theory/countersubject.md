@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Countersubject
 slug: countersubject
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: fugue
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: null
 section: "Countersubject"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "CS"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fugue-subject
   - fugue-answer
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - free-counterpoint
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a countersubject and how is it composed?"
   - "What constraints apply when making a countersubject invertible at the octave?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Repeated Phrase
 slug: repeated-phrase
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: null
 section: "The Repeated Phrase"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
 extends: []
@@ -32,7 +26,6 @@ related:
 contrasts_with:
   - period
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a repeated phrase and how does it differ from a period?"
 ---

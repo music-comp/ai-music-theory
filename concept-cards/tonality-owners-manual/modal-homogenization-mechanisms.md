@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modal Homogenization Mechanisms
 slug: modal-homogenization-mechanisms
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: evolution-of-harmonic-practice
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 384
 section: "Modal homogenization and scalar voice leading"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "mode-specific homogenization pathways"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modal-homogenization
   - key-distance-scale-degree-preserving
@@ -35,7 +29,6 @@ related:
   - hourglass-model-of-functional-history
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does each Renaissance mode evolve toward ionian?"
   - "Why does phrygian evolve differently from mixolydian?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval Function Computation (Time-Span GIS)
 slug: interval-function-computation
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: time-span-gis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 107
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "time-span interval formula"
   - "non-commutative interval computation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span
 extends: []
@@ -33,7 +27,6 @@ related:
   - left-vs-right-group-operations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are intervals computed in the non-commutative time-span GIS?"
   - "Why does the interval formula divide by the first span's duration?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch and Frequency
 slug: pitch-and-frequency
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: frequency
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 14
 section: "Pitch"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "pitch"
   - "frequency"
   - "hertz"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sets-and-number-systems
 extends: []
@@ -37,7 +31,6 @@ related:
   - octave-equivalence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pitch and how does it relate to frequency?"
   - "What is the mathematical model for the set of all pitches?"

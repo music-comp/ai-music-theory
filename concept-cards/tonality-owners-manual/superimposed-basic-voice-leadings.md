@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Superimposed Basic Voice Leadings
 slug: superimposed-basic-voice-leadings
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 96
 section: "Other intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - diatonic-dyad-circle
@@ -35,7 +29,6 @@ related:
   - four-voice-sequences
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can basic voice leadings from different spiral diagrams be combined?"
   - "Why do four-voice descending-fifth sequences arise from superimposed dyadic patterns?"

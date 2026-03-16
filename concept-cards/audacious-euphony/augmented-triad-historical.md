@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Augmented Triad: Historical Emergence"
 slug: augmented-triad-historical
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: augmented-triad-history
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 61
 section: "The Historical Emergence of Augmented Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Augmented triad origins"
   - "Der ubermassige Dreiklang history"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad
 extends:
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - consonant-triad
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an augmented triad in neo-Riemannian context?"
   - "How did the augmented triad gain theoretical acceptance?"

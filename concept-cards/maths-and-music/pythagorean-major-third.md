@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pythagorean Major Third
 slug: pythagorean-major-third
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: pythagorean
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 152
 section: "The Pythagorean Scale"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - ditone
   - "ratio 81:64"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pythagorean-scale
   - greater-whole-tone
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - just-major-third
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Pythagorean major third?"
   - "Why is the Pythagorean major third considered poor?"

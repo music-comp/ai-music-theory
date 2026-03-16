@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compound Basic Idea
 slug: compound-basic-idea
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: null
 section: "New: The Compound Basic Idea"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "c.b.i."
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hybrid-form
   - period
@@ -36,7 +30,6 @@ contrasts_with:
   - presentation
   - antecedent-consequent
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a compound basic idea?"
   - "How does it differ from an antecedent?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Time Span
 slug: time-span
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "TMSPS element"
   - "(a, x)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
 extends: []
@@ -35,7 +29,6 @@ related:
   - time-span-interval-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a time span in Lewin's theory?"
   - "How does the time-span GIS relate to simpler time-point and duration GIS structures?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parallel Fifths and Antiparallels
 slug: parallel-fifths-and-antiparallels
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: voice-leading-constraints
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: 210
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - hidden fifths
   - direct fifths
   - covered fifths
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-tone
   - harmonic-skeleton
@@ -36,7 +30,6 @@ related:
   - first-practice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why are parallel fifths traditionally prohibited?"
   - "How do suspensions create inconsistencies in parallel-fifth rules?"

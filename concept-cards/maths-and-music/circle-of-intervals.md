@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Circle of Intervals
 slug: circle-of-intervals
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 74
 section: "Generating intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - circle of fifths (when m=7, n=12)
   - interval circle
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generating-interval
   - n-chromatic-scale
@@ -36,7 +30,6 @@ related:
   - modular-clock
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a circle of intervals and how is it constructed?"
   - "Why do generating intervals produce circles that visit all note classes?"

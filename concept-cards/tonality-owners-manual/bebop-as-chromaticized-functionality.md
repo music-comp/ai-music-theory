@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Bebop as Chromaticized Functionality
 slug: bebop-as-chromaticized-functionality
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 528
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - chromaticized fifth-sequence
   - "2-in-12 harmonic space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-geometry
   - spiral-diagram-derivation
@@ -36,7 +30,6 @@ related:
   - tritone-substitution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Bebop relate to functional tonality?"
   - "What happens when the diatonic fifth-sequence is chromaticized?"

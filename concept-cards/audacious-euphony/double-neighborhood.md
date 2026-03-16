@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Double Neighborhood
 slug: double-neighborhood
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: pitch-retention structure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 135
 section: "Neighborhoods and Pitch Retention Loops"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "overlapping neighborhoods"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - neighborhood
   - pitch-retention-loop
@@ -34,7 +28,6 @@ related:
   - brahms-second-symphony-retransition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a double neighborhood?"
   - "How do two overlapping neighborhoods organize an extended passage?"

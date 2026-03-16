@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hypermeter
 slug: hypermeter
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 11
 pdf_page: null
 section: "Meter Beyond Measure (Hypermeter)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "hypermetric structure"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - beat
   - meter
@@ -35,7 +29,6 @@ related:
   - phrase
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is hypermeter?"
   - "How do measures form patterns of accentuation?"

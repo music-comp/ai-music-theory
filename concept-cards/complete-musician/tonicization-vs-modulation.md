@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonicization vs. Modulation
 slug: tonicization-vs-modulation
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: tonicization
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 25
 pdf_page: 563
 section: "Modulation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonicization
   - modulation
@@ -31,7 +25,6 @@ extends: []
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does tonicization differ from modulation?"
 ---

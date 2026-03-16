@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmony-Counterpoint Interaction
 slug: harmony-counterpoint-interaction
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: principle
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.9"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "two-dimensional musical coherence"
   - "harmony and counterpoint constraint"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-consistency
   - efficient-voice-leading
@@ -38,7 +32,6 @@ related:
   - overdetermination-principle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do the five components constrain each other?"
   - "Under what conditions can harmonic consistency and efficient voice leading coexist?"

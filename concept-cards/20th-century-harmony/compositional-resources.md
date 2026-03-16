@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compositional Resources
 slug: compositional-resources
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: 270
 section: "Theme and Form Ideas"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "harmonic resources"
   - "twentieth-century vocabulary"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-synthesis
 extends:
@@ -35,7 +29,6 @@ related:
   - combining-textures
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the full range of compositional resources available to the twentieth-century composer?"
   - "What are the three organizational principles for harmonic resources?"

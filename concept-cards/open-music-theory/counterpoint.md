@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Counterpoint
 slug: counterpoint
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: foundations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "punctus contra punctum"
   - "contrapuntal writing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
   - consonance
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - homophony
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is counterpoint and how does it differ from harmony?"
   - "What are the four fundamental traits that counterpoint balances?"

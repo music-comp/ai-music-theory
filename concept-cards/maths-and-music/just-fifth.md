@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Just Fifth
 slug: just-fifth
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: 138
 section: "Just Fifth"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - pure fifth
   - "3:2 fifth"
   - "ratio 3:2"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-interval
   - rational-interval
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - mean-tone-fifth
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a just fifth?"
   - "How does the just fifth compare to the tempered fifth?"

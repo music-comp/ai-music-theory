@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Key Distance (Pitch-Class-Changing)
 slug: key-distance-pitch-class-changing
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: key-distance
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: 361
 section: "Two models of key distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "pitch-class-changing modulation"
   - "scale-degree-changing key distance"
   - "common-tone key distance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading-of-scales
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - key-distance-scale-degree-preserving
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you determine the key distance between two keys using pitch-class motion?"
   - "Why are fifth-related keys considered close in classical music?"

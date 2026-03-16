@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval-Class Vector
 slug: interval-class-vector
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval class
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 32
 section: "1.12 Interval-Class Vector"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - ic vector
   - interval vector
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-class
   - interval-class-content
@@ -35,7 +29,6 @@ related:
   - pitch-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an interval-class vector?"
   - "How do I calculate an interval-class vector?"

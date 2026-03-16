@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Essential Enharmonicism
 slug: essential-enharmonicism
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: enharmonic phenomena
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 19
 section: "Triads in Chromatic Space"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "necessary enharmonicism"
   - "distributed enharmonic conversion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-indeterminacy
 extends: []
@@ -36,7 +30,6 @@ related:
   - layered-tonality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes essential from notational enharmonicism?"
   - "Why can't the moment of enharmonic conversion be pinpointed?"

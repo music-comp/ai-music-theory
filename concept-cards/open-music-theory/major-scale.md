@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Major Scale
 slug: major-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: null
 section: "Major Scales"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ionian mode"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale
   - half-step
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - minor-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a major scale?"
   - "What is the pattern of whole and half steps in a major scale?"

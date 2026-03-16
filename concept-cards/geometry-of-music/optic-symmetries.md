@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: OPTIC Symmetries
 slug: optic-symmetries
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: symmetry
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "OPTIC operations"
   - "five symmetry operations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-musical-object
   - pitch-space
@@ -42,7 +36,6 @@ related:
   - set-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are OPTIC symmetries?"
   - "How are chords, chord types, and set classes defined?"

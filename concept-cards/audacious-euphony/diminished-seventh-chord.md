@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diminished Seventh Chord
 slug: diminished-seventh-chord
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: seventh chord types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 165
 section: "The Tristan Genus as Nearly Even Tetrachord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "fully diminished seventh"
   - "perfectly even tetrachord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - perfectly-even-glossary
 extends: []
@@ -38,7 +32,6 @@ contrasts_with:
   - dominant-seventh-chord
   - half-diminished-seventh-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What role does the diminished seventh chord play in the Tristan-genus system?"
   - "How is the diminished seventh analogous to the augmented triad?"

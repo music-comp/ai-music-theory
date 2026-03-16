@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tritone
 slug: tritone
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,10 +14,8 @@ chapter_number: 3
 pdf_page: 70
 section: "Interval Inversion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "A4"
   - "d5"
@@ -28,7 +23,6 @@ aliases:
   - "diminished fifth"
   - "diabolus in musica"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-and-diminished-intervals
   - interval-inversion
@@ -37,7 +31,6 @@ related:
   - consonant-and-dissonant-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a tritone?"
 ---

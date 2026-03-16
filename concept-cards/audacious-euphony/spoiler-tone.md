@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Spoiler Tone
 slug: spoiler-tone
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: tetrachordal systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 167
 section: "The Tristan Genus as Nearly Even Tetrachord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "spoiler"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tristan-genus
   - diminished-seventh-chord
@@ -36,7 +30,6 @@ related:
   - boretz-spider
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a spoiler tone in the Tristan-genus system?"
   - "How do spoiler tones track voice-leading motion within a Boretz region?"

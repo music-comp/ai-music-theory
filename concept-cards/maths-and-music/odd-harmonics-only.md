@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Odd Harmonics Only
 slug: odd-harmonics-only
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: fourier-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 118
 section: "Example: the Square Wave"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fourier-coefficients
   - square-wave-fourier-analysis
@@ -34,7 +28,6 @@ related:
   - harmonics-and-overtones
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does it mean for a waveform to have only odd harmonics?"
   - "Why does the square wave sound like a clarinet?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: PAR Transformation
 slug: par-transformation
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: klang-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 206
 section: "8.1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "parallel transformation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang-representation
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - med-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I apply PAR to Klangs?"
   - "Why does PAR make Klang networks non-intervallic?"

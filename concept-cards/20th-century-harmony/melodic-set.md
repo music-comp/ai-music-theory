@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic Set
 slug: melodic-set
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: 247
 section: "Serial Harmony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "row"
   - "series"
   - "tone row"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - serial-harmony
 extends: []
@@ -37,7 +31,6 @@ related:
   - serial-modulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a melodic set?"
   - "What operations can be performed on a melodic set?"

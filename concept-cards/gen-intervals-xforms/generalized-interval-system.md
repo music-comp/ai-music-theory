@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generalized Interval System
 slug: generalized-interval-system
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: core-definitions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 47
 section: "2.3.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - GIS
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - group
   - function
@@ -36,7 +30,6 @@ related:
   - directed-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Generalized Interval System (GIS)?"
   - "How do I construct a GIS from a musical space?"

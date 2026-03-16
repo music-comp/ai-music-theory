@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Backbeat
 slug: backbeat
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: pop-rhythm
 tier: mixed
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,18 +11,14 @@ chapter: "Drumbeats"
 chapter_number: 99
 pdf_page: null
 section: "Supplementary"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - meter
 extends: []
 related:
   - ostinato
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a backbeat?"
   - "What is its role in pop drumbeats?"

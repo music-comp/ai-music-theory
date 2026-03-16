@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sentence Within Period
 slug: sentence-within-period
 
-# === CLASSIFICATION ===
 category: form
 subcategory: structural patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 21
 pdf_page: 477
 section: "The Sentence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sentence-structure
   - period
@@ -32,7 +26,6 @@ extends:
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can sentence structure and period structure coexist?"
 ---

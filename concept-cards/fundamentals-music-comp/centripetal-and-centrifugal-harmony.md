@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Centripetal and Centrifugal Harmony
 slug: centripetal-and-centrifugal-harmony
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-orientation
 tier: intermediate/advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 39
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sequences-and-quasi-sequences
 extends: []
@@ -34,7 +28,6 @@ related:
   - pedal-point-in-period-construction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between centripetal and centrifugal harmony?"
   - "How do I balance centrifugal harmony with other compositional elements?"

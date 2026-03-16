@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Functional Penumbra
 slug: functional-penumbra
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 314
 section: "A theory of harmonic cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "second-order idioms"
   - "penumbral progressions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - descending-thirds-arrangement
   - harmonic-cycle-theory
@@ -36,7 +30,6 @@ related:
   - common-tone-diminished-seventh
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens when a functional progression does not fit the descending-thirds model?"
   - "How does the harmonic grammar accommodate historical variation?"

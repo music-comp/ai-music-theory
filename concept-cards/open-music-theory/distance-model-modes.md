@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Distance Model Modes
 slug: distance-model-modes
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: collections
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,12 +11,9 @@ chapter: "Collections"
 chapter_number: 8
 pdf_page: null
 section: "VIII.8"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "distance model"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modes-of-limited-transposition
 extends: []
@@ -27,7 +21,6 @@ related:
   - octatonic-collection
   - hexatonic-collection
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are distance model modes?"
   - "How do they relate to modes of limited transposition?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Binary Form
 slug: binary-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sectional-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - cadence
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - ternary-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the two types of binary form?"
   - "What is the difference between rounded and simple binary?"

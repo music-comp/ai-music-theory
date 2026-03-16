@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Triads in Minor Keys
 slug: triads-in-minor-keys
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: diatonic-harmony
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: 116
 section: "Triads and the Scale: Harmonic Analysis"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triads
   - triad-quality
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - triads-in-major-keys
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What type of triad occurs on each scale degree in minor?"
 ---

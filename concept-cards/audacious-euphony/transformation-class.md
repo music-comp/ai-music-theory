@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transformation Class
 slug: transformation-class
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: equivalence classes
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 124
 section: "Voice-Leading Zones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "equivalence class of transformations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zones
   - h-group-transformations
@@ -37,7 +31,6 @@ related:
   - transformational-substitution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the equivalence classes for transformations in triadic space?"
   - "How do transformation classes relate to voice-leading zones?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Da Capo Form
 slug: da-capo-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: ternary
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 31
 pdf_page: 702
 section: "Da Capo Form: Compound Ternary Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "da capo"
   - "D.C. al fine"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ternary-form
 extends:
@@ -36,7 +30,6 @@ related:
   - ritornello
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is da capo form?"
   - "How is da capo form related to ternary form?"

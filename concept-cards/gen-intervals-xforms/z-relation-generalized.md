@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Z-Relation (Generalized)"
 slug: z-relation-generalized
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: interval-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - Z-related sets
   - Z-relation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ifunc
   - canonical-equivalence
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - canonical-equivalence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the generalized Z-relation?"
   - "Under what conditions do non-equivalent sets share identical interval content?"

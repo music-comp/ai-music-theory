@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Note Values
 slug: note-values
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: null
 section: "Note Values"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "rhythmic values"
   - "durations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - note
 extends: []
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - rest-values
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the common note values?"
   - "How do note values relate to each other hierarchically?"

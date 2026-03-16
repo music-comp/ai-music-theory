@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Upper Structure Voicings
 slug: upper-structure-voicings
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-voicings
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 395
 section: "10.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "upper structure triads"
   - "polychords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tritone-substitution-geometry
   - playing-outside
@@ -34,7 +28,6 @@ related:
   - altered-chords-and-scales
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are upper structure voicings in jazz?"
   - "How do upper structure voicings create polytonal effects?"

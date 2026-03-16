@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fundamental Frequency
 slug: fundamental-frequency
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: fourier-analysis
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 118
 section: "Harmonics and Overtones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "first harmonic"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - frequency-and-period
   - fourier-series
@@ -35,7 +29,6 @@ related:
   - overtone-series
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the fundamental frequency of a tone?"
   - "How does the fundamental relate to harmonics?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Building Phrases from Motive-Forms
 slug: building-phrases-from-motive-forms
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: phrase-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 18
 section: "Building Phrases"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - phrase construction from motives
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - variation
@@ -39,7 +33,6 @@ related:
   - sentence-structure
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct a phrase from a motive?"
   - "What are the practical methods for building phrases?"

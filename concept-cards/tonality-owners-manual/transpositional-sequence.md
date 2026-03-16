@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transpositional Sequence
 slug: transpositional-sequence
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 155
 section: "Repetition reimagined"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "parallel sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - taneyev-arrow-notation
 extends: []
@@ -35,7 +29,6 @@ contrasts_with:
   - canonic-sequence
   - contrary-motion-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a sequence (harmonic), and what role does repetition play in tonal music?"
   - "What distinguishes a real sequence from a tonal sequence?"

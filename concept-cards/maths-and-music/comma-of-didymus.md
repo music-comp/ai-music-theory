@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Comma of Didymus
 slug: comma-of-didymus
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: commas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: 138
 section: "Lesser Whole Tone"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - syntonic comma
   - "ratio 81:80"
   - Ptolemaic comma
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - greater-whole-tone
   - lesser-whole-tone
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - comma-of-pythagoras
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the comma of Didymus?"
   - "What is the difference between the two just whole tones?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Direct Fifths and Octaves
 slug: direct-fifths-and-octaves
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: 183
 section: "Summary of Voice-Leading Rules and Guidelines"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - hidden fifths
   - hidden octaves
   - similar motion to perfect intervals
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - parallel-fifths-and-octaves
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - parallel-fifths-and-octaves
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write proper voice-leading connections?"
 ---

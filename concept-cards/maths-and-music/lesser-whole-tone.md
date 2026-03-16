@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Lesser Whole Tone
 slug: lesser-whole-tone
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 138
 section: "Lesser Whole Tone"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ratio 10:9"
   - minor whole tone
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-interval
   - rational-interval
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - greater-whole-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the lesser whole tone?"
   - "How does it differ from the greater whole tone?"

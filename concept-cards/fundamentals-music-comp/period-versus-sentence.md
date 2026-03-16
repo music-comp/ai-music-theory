@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Period versus Sentence
 slug: period-versus-sentence
 
-# === CLASSIFICATION ===
 category: form
 subcategory: theme-types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 20
 section: "The Period and the Sentence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - sentence versus period
   - period and sentence distinction
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - motive
@@ -37,7 +31,6 @@ related:
   - form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does a period differ from a sentence?"
   - "What are the two fundamental theme structures?"

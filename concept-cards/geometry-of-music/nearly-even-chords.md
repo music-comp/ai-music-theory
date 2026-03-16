@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nearly Even Chords
 slug: nearly-even-chords
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 98
 section: "3.6, 3.9-3.10"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "approximately even chords"
   - "near interval cycles"
   - "maximally even chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-note-chord-space
   - harmonic-consistency-and-efficient-voice-leading
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - clustered-chords
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are 'nearly even' chords and why are they important?"
   - "Why do major and minor triads permit efficient voice leading?"

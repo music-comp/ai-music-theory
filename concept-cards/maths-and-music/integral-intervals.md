@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Integral Intervals
 slug: integral-intervals
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: integer-ratios
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 110
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "integral interval"
   - "integer ratio interval"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - unique-prime-factorization
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an integral interval?"
   - "How do positive integers correspond to musical intervals?"

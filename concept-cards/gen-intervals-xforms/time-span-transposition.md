@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Time-Span Transposition
 slug: time-span-transposition
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "T_{(i,p)}"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span-gis
   - transposition-operation
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - time-span-interval-preserving-operation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does transposition work in the non-commutative time-span GIS?"
 ---

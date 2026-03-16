@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Folkloristische Tonalitätsstudien"
 slug: folkloristische-tonalitatsstudien
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: primary-source
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Matthew Gelbart, Alexander Rehding"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Studies in Folk-Musical Tonality
   - "Riemann 1916 folk music study"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
   - klang
@@ -41,7 +35,6 @@ related:
   - pure-minor-mode
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes pentatonic from diatonic tonality in Riemann's framework?"
   - "What is the evolutionary path from pentatonicism to diatonic tonality?"

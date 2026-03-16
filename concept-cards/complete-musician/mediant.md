@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mediant
 slug: mediant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: diatonic chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 19
 pdf_page: 446
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "iii"
   - "III"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
   - submediant
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - submediant
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the mediant relate to the tonic and dominant?"
   - "How does the mediant function in tonal music?"

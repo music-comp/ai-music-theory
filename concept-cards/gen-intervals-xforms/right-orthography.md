@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Right Orthography
 slug: right-orthography
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: notation-conventions
 tier: foundational
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 32
 section: "1.2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "right functional orthography"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - function
   - binary-composition
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - left-orthography
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is right functional orthography and how does it differ from left orthography?"
   - "How does the order of composition change under right orthography?"

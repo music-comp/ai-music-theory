@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Conjunct Melodic Motion
 slug: conjunct-melodic-motion
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: melody
 tier: foundational
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 21
 section: "1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "stepwise motion"
   - "melodic conjunctness"
   - "step motion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - disjunct-motion
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the five components of tonality?"
   - "Why do melodies tend to move by small steps?"

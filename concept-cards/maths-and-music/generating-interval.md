@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generating Interval
 slug: generating-interval
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 74
 section: "Generating intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - generator of Z_n
   - chromatic generator
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - n-chromatic-scale
   - modular-integers
@@ -38,7 +32,6 @@ related:
   - relatively-prime-integers
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a generating interval?"
   - "Which chromatic intervals generate all note classes in a given scale?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ordered Pitch Space
 slug: ordered-pitch-space
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 83
 section: "3.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "two-dimensional pitch space"
   - "2D ordered pitch space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-musical-objects
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - circular-pitch-class-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can pairs of pitches be represented geometrically?"
   - "What is the difference between representing two notes as two points in one dimension versus one point in two dimensions?"

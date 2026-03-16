@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Staff
 slug: staff
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: null
 section: "Staff Notation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "stave"
   - "staves"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - grand-staff
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a staff in music?"
   - "How many lines does a staff have?"

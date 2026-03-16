@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Linkage
 slug: linkage
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 16
 pdf_page: 364
 section: "Linkage"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "motivic linkage"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
 extends:
@@ -34,7 +28,6 @@ related:
   - sentence-structure
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is linkage in motivic analysis?"
   - "How are phrases connected through shared motivic material?"

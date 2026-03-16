@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading With Non-Chord Tones
 slug: voice-leading-with-ncts
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 28
 pdf_page: 410
 section: "28.1 Voice Leading With Non-Chord Tones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "embellished voice leading"
   - "non-chord tone voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-definition
   - non-chord-tones-overview
@@ -37,7 +31,6 @@ related:
   - simultaneous-ncts
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are non-chord tones used in chorale-style voice leading?"
   - "What must you be careful of when adding non-chord tones?"

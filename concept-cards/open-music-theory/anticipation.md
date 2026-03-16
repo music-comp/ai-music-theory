@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Anticipation
 slug: anticipation
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: non-chord-tones
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: null
 section: "Category 3: Anticipations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ANT"
   - "ant"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - embellishing-tone
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - suspension
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an anticipation?"
   - "How does an anticipation differ from other embellishing tones?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Anticipation
 slug: anticipation
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 210
 section: "The first practice and the SNAP system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - arpeggiated anticipation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-tone
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - suspension
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an anticipation?"
   - "How do anticipations relate to suspensions in Palestrina?"

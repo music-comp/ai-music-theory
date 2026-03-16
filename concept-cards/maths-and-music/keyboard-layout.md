@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Keyboard Layout
 slug: keyboard-layout
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 14
 section: "Notes"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "piano keyboard"
   - "keyboard notes"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-and-frequency
   - note-notation-and-the-staff
@@ -36,7 +30,6 @@ related:
   - accidentals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are notes arranged on a keyboard instrument?"
   - "What is the abstract infinite keyboard?"

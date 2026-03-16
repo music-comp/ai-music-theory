@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Lament Bass
 slug: lament-bass
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 18
 pdf_page: 425
 section: "The Step Descent in the Bass"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "passus duriusculus"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - step-descent-bass
 extends:
@@ -33,7 +27,6 @@ related:
   - ground-bass
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a lament bass?"
   - "Why is the lament bass associated with minor keys?"

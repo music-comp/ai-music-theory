@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modes of Limited Transposition
 slug: modes-of-limited-transposition
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: collections
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,12 +11,9 @@ chapter: "Collections"
 chapter_number: 8
 pdf_page: null
 section: "VIII.8"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "Messiaen's modes"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - octatonic-collection
   - whole-tone-collection
@@ -27,7 +21,6 @@ extends: []
 related:
   - distance-model-modes
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are Messiaen's modes of limited transposition?"
   - "Why can these modes not be transposed in 12 unique ways?"

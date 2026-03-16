@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chordal Dissonance
 slug: chordal-dissonance
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: seventh-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 203
 section: "The Dominant Seventh and Chordal Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - seventh chord dissonance
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonance-and-dissonance
   - dominant-seventh-chord
@@ -34,7 +28,6 @@ related:
   - tendency-tones
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
 ---

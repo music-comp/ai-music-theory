@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Swing Rhythms
 slug: swing-eighths
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: jazz-rhythm
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: null
 section: "VI.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "swing eighths"
   - "swung eighths"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - simple-meter
   - eighth-notes
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - straight-eighths
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do swing eighths in jazz relate to straight eighths?"
   - "How do you notate swing rhythms?"

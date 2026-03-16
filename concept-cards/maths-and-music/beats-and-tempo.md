@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Beats and Tempo
 slug: beats-and-tempo
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: duration
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,17 +14,14 @@ chapter_number: 2
 pdf_page: 30
 section: "Duration of Notes"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "beat"
   - "tempo"
   - "beats per minute"
   - "BPM"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - horizontal-structure
 extends: []
@@ -37,7 +31,6 @@ related:
   - rhythm
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a beat in music?"
   - "What is tempo and how is it measured?"

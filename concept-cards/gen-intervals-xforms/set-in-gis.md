@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Set in a GIS
 slug: set-in-gis
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: foundational-definitions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: "5.1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - finite subset of S
   - set (generalized)
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - musical-space-s
@@ -36,7 +30,6 @@ related:
   - set-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a set in the context of generalized set theory?"
   - "How does Lewin's definition of 'set' differ from general mathematical usage?"

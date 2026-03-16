@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compound Melody in Sequences
 slug: compound-melody-in-sequences
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: compound melody
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 23
 pdf_page: 514
 section: "Compound Melody and Implied Seventh Chord Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - compound-melody
   - d2-sequence-with-seventh-chords
@@ -33,7 +27,6 @@ related:
   - implied-harmonies
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does compound melody interact with sequences?"
 ---

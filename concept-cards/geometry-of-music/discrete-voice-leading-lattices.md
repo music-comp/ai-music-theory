@@ -1,31 +1,25 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Discrete Voice-Leading Lattices
 slug: discrete-voice-leading-lattices
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: discrete-geometry
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
 chapter: "Appendix C: Discrete Voice-Leading Lattices"
-chapter_number: appendix-c
+chapter_number: null
 pdf_page: 430
 section: "Appendix C"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "voice-leading graphs"
   - "faithful lattices"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-space-formal-construction
 extends: []
@@ -33,7 +27,6 @@ related:
   - scale-lattice-twentieth-century
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When do discrete voice-leading graphs faithfully represent voice-leading distances?"
   - "What problems arise with graphs like the Tonnetz?"

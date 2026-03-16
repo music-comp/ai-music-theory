@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Simple Meter
 slug: simple-meter
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - beat
   - meter
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - compound-meter
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is simple meter?"
   - "How does the beat divide in simple meter?"

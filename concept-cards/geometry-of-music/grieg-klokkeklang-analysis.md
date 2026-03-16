@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Grieg "Klokkeklang" Analysis
 slug: grieg-klokkeklang-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: subset-technique-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 359
 section: "9.4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Bell Ringing analysis"
   - "Grieg Op. 54 No. 6 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - subset-technique
 extends: []
@@ -34,7 +28,6 @@ related:
   - reich-city-life-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Grieg's 'Klokkeklang' use fixed and mobile scale degrees?"
   - "How does the subset technique work in practice?"

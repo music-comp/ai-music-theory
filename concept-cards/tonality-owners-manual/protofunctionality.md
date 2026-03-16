@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Protofunctionality
 slug: protofunctionality
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 257
 section: "The logical structure of protofunctionality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - proto-functional harmony
   - simple functionality
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - zeroth-order-properties
   - first-order-properties
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - modal-homogenization
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is protofunctionality, and how does it differ from full functional harmony?"
   - "What is functional tonality, and when did it emerge historically?"

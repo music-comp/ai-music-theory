@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Inversion Equivalence Conditions
 slug: inversion-equivalence-conditions
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: inversion-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 84
 section: "3.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inversion-operation
   - central-interval
@@ -33,7 +27,6 @@ related:
   - inversion-interval-preserving-combination
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When do two inversions I_u^v and I_x^w define the same operation?"
   - "Why are there more distinct inversions in non-commutative GIS?"

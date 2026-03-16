@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Incomplete Sonorities
 slug: incomplete-sonorities
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: harmonic-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 303
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - bare thirds
   - pivot third
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ambiguous-syntax-in-tonal-music
 extends: []
@@ -33,7 +27,6 @@ related:
   - epistemic-circularity-in-harmonic-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do incomplete sonorities create analytical ambiguity?"
 ---

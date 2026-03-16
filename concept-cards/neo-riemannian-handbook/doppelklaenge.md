@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Doppelkl\xE4nge"
 slug: doppelklaenge
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: dissonance
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,16 +14,13 @@ chapter_number: 13
 pdf_page: 382
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "double sounds"
   - "double Klangs"
   - "Doppelkl\xE4nge (double sounds)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - harmonieschritte
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - parsimonious-trichords
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are Doppelkl\xE4nge in Riemann's theory?"
   - "How does Riemann explain dissonant chords through consonant triads?"

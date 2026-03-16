@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Cycles
 slug: harmonic-cycles
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 244
 section: "7.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tonal cycles"
   - "functional cycles"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - thirds-based-harmonic-grammar
 extends: []
@@ -34,7 +28,6 @@ related:
   - circle-of-thirds-harmonic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the basic unit of harmonic motion in functional tonality?"
   - "What are the most common chord progressions in Bach and Mozart?"

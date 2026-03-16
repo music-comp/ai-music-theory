@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compound Ternary Form
 slug: compound-ternary-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: ternary
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 31
 pdf_page: 702
 section: "Da Capo Form: Compound Ternary Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ternary with nested forms"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ternary-form
   - binary-form
@@ -36,7 +30,6 @@ related:
   - compound-rondo-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is compound ternary form?"
   - "How do nested forms work within ternary structure?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: N-Chromatic Scale
 slug: n-chromatic-scale
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: 74
 section: "Non-standard chromatic scales"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - n-tone equal temperament
   - n-EDO
   - equal division of the octave
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - multiplicative-to-additive-conversion
   - exponents-and-exponential-functions
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - twelve-chromatic-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an n-chromatic scale?"
   - "How is the chromatic unit defined for an arbitrary equal division of the octave?"

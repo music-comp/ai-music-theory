@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval Inversion
 slug: interval-inversion
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 16
 pdf_page: null
 section: "Intervallic Inversion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "intervallic inversion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
   - interval-quality
@@ -34,7 +28,6 @@ related:
   - enharmonic-equivalence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is interval inversion?"
   - "What rules govern inverted interval sizes and qualities?"

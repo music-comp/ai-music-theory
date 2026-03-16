@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Half-Diminished Seventh Chord (viio7)
 slug: half-diminished-seventh-chord
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: seventh-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 246
 section: "viio7"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - viio7
   - half-diminished leading-tone seventh
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - leading-tone-seventh-chord-viio7
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - leading-tone-seventh-chord-viio7
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
 ---

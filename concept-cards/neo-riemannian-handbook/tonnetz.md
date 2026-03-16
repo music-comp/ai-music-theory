@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonnetz
 slug: tonnetz
 
-# === CLASSIFICATION ===
 category: pitch-space
 subcategory: spatial representations of pitch
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Tone Network"
   - "Table of Tonal Relations"
   - "Tonnetze (plural)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -42,7 +36,6 @@ related:
 contrasts_with:
   - tonal-pitch-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Tonnetz and how is it structured?"
   - "How do I construct a Tonnetz representation?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Near Identity (Musical Similarity as Voice-Leading Distance)
 slug: near-identity
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: distance
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 46
 section: "2.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "near-transpositional equivalence"
   - "approximate harmonic identity"
   - "voice-leading similarity"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord
   - voice-leading-size
@@ -37,7 +31,6 @@ related:
   - efficient-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can musical similarity be measured by voice-leading distance?"
   - "What is harmonic consistency?"

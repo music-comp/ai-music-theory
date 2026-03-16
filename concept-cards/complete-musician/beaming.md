@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Beaming
 slug: beaming
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 33
 section: "Clarifying Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "beam groupings"
   - "rhythmic beaming"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - durational-symbols
   - meter-signatures
@@ -35,7 +29,6 @@ related:
   - compound-meter
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How should notes be beamed?"
   - "Why does beaming matter?"

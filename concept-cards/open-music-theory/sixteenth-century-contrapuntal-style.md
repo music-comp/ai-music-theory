@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sixteenth-Century Contrapuntal Style
 slug: sixteenth-century-contrapuntal-style
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: historical-styles
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Palestrina style"
   - "Renaissance polyphony"
   - "stile antico"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - species-counterpoint
   - imitation
@@ -38,7 +32,6 @@ related:
   - paraphrase-technique
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does 16th-century style differ from species counterpoint?"
   - "What are the key principles for imitation, melody, rhythm, and harmony?"

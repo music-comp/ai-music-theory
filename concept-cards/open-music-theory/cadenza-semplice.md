@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cadenza Semplice
 slug: cadenza-semplice
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: galant-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: null
 section: "Cadences and Post-Cadential"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "simple cadence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - galant-schema
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - cadenza-composta
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Cadenza Semplice schema?"
 ---

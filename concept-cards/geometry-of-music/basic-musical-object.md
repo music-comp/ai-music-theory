@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Basic Musical Object
 slug: basic-musical-object
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: formalism
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ordered pitch set"
   - "basic object"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-space
 extends: []
@@ -35,7 +29,6 @@ related:
   - set-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a basic musical object?"
   - "What are OPTIC symmetries?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Whole-Tone Scale
 slug: whole-tone-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-types
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 143
 section: "4.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "whole tone collection"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - stacks-of-thirds
 extends: []
@@ -34,7 +28,6 @@ related:
   - goldilocks-principle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the whole-tone scale?"
   - "Why is perfect evenness both a strength and a weakness?"

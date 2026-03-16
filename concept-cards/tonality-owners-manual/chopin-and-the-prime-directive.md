@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chopin and the Prime Directive
 slug: chopin-and-the-prime-directive
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: chopin-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 407
 section: "Chopin and the Prime Directive"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - melodic-strategy
   - prime-directive
@@ -35,7 +29,6 @@ related:
   - beethoven-schubert-wagner-lineage
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does a single melodic strategy produce different harmonic effects?"
   - "How does Chopin's chromaticism relate to earlier contrapuntal practice?"

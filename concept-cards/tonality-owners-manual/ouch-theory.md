@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: OUCH Theory
 slug: ouch-theory
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: configurations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 96
 section: "Four-voice triadic counterpoint"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triadic-configurations
 extends:
@@ -34,7 +28,6 @@ related:
   - positive-counterpoint
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is OUCH theory?"
   - "How can four-voice triadic counterpoint be taught using configurations?"

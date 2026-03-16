@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Thirds-Based Harmonic Grammar
 slug: thirds-based-harmonic-grammar
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 244
 section: "7.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "descending thirds model"
   - "chain of descending thirds"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - conjunct-melodic-motion
   - efficient-voice-leading
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - traditional-function-theory
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Tymoczko model chord progressions in functional harmony?"
   - "Why are descending thirds considered more fundamental than descending fifths?"

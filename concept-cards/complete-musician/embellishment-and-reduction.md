@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Embellishment and Reduction
 slug: embellishment-and-reduction
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-techniques
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 203
 section: "Embellishment and Reduction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - elaboration and reduction
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tones-of-figuration
   - hierarchy-in-tonal-music
@@ -35,7 +29,6 @@ related:
   - structural-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What must I know before understanding voice leading?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading in Pitch-Class Space
 slug: voice-leading-in-pitch-class-space
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: definition
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 46
 section: "2.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pitch-class voice leading"
   - "voice-leading schema"
   - "abstract voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-in-pitch-space
   - pitch-class-space
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - chord-progression
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a voice leading in pitch-class space?"
   - "What is a voice leading vs. a chord progression?"

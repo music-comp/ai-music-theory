@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Bartok Syncopation Analysis
 slug: bartok-syncopation-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: twentieth-century-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 251
 section: "10.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Mikrokosmos No. 133 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-network-definition
   - rich-transformation
@@ -36,7 +30,6 @@ related:
   - ri-chaining
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Lewin analyze Bartok's Syncopation?"
   - "How does RI-chaining work in non-serial, modal contexts?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Four-Note to Three-Note Voice Leadings
 slug: four-note-to-three-note-voice-leadings
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: chromatic-voice-leading
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 290
 section: "8.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "seventh-to-triad voice leadings"
   - "convergent voice leadings"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - efficient-voice-leading
 extends: []
@@ -34,7 +28,6 @@ related:
   - tristan-chord-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can we systematically categorize voice leadings from seventh chords to triads?"
   - "What determines the twelve basic schemas?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Progressive Transformation
 slug: progressive-transformation
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 154
 section: "6.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - X-Y-progressive transformation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
 extends: []
@@ -37,7 +31,6 @@ contrasts_with:
   - internal-transformation
   - dispersive-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes internal from progressive transformations?"
   - "What is a progressive transformation?"

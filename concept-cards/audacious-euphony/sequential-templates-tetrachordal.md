@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Sequential Templates (Tetrachordal)"
 slug: sequential-templates-tetrachordal
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: tetrachordal systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 167
 section: "The Tristan Genus as Nearly Even Tetrachord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tristan-genus sequential templates"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tristan-genus
   - boretz-group-transformations
@@ -36,7 +30,6 @@ related:
   - contrary-motion-tetrachordal
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What sequential patterns exist for Tristan-genus seventh chords?"
   - "How do the omnibus, T11, and T5 templates differ?"

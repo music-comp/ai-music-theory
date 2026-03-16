@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Prolongational Analysis
 slug: prolongational-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: harmonic-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: 414
 section: "Two models of the phrase"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - recursive harmonic model
   - the phrase model
   - prolongational hearing
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadential-weight
   - functional-harmony
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - sequential-harmonic-model
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the prolongational (recursive) model of the phrase?"
   - "How does Tymoczko's sequential model differ from the Schenkerian recursive model?"

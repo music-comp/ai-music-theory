@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ternary Form
 slug: ternary-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: small-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 24
 pdf_page: 353
 section: "24.7 Ternary Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ABA form"
   - "three-part form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - cadence
@@ -38,7 +32,6 @@ contrasts_with:
   - binary-form
   - rounded-binary
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is ternary form?"
   - "How is ternary form described?"

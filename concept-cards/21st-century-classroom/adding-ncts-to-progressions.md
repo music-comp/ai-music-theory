@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Adding Non-Chord Tones to Chord Progressions
 slug: adding-ncts-to-progressions
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 28
 pdf_page: 412
 section: "28.3 Adding Non-Chord Tones to a Chord Progression"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "embellishment strategies"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-with-ncts
   - non-chord-tones-overview
@@ -34,7 +28,6 @@ related:
   - simultaneous-ncts
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What types of non-chord tones work with different melodic motions?"
   - "How do you systematically add embellishments to a voice leading framework?"

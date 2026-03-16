@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Just Fourth
 slug: just-fourth
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: 138
 section: "Just Fourth"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - pure fourth
   - "4:3 fourth"
   - "ratio 4:3"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-fifth
 extends:
@@ -37,7 +31,6 @@ related:
   - just-intonation-scale
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a just fourth?"
   - "How does the just fourth relate to the just fifth?"

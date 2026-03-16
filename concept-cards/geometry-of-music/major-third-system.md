@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Major-Third System and Minor-Third System
 slug: major-third-system
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: chord-relationships
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 113
 section: "3.10"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "triadic major-third relations"
   - "seventh-chord minor-third relations"
   - "major-third and minor-third root motion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - near-symmetry
   - nearly-even-chords
@@ -37,7 +31,6 @@ related:
   - harmonic-consistency-and-efficient-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why do triads favor major-third root motion in chromatic contexts?"
   - "Why do seventh chords favor minor-third root motion?"

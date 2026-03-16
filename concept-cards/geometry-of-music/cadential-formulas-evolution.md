@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cadential Formulas Evolution
 slug: cadential-formulas-evolution
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: cadence
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 227
 section: "6.3.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "cadential evolution"
   - "V-I emergence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - medieval-two-voice-counterpoint
   - renaissance-triadic-harmony
@@ -36,7 +30,6 @@ related:
   - extended-common-practice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did the V-I cadence develop?"
   - "How do cadential formulas evolve from medieval to Renaissance practice?"

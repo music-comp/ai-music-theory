@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Enharmonic Equivalence
 slug: enharmonic-equivalence
 
-# === CLASSIFICATION ===
 category: pitch-space
 subcategory: pitch identity and equivalence
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "enharmonic identification"
   - "enharmonic reinterpretation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
 extends: []
@@ -36,7 +30,6 @@ related:
   - hexatonic-systems
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is enharmonic equivalence and how does it affect the Tonnetz?"
   - "How does enharmonic equivalence relate to equal temperament?"

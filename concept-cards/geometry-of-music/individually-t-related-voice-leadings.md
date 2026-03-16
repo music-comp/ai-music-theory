@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Individually T-Related Voice Leadings
 slug: individually-t-related-voice-leadings
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: chromatic-voice-leading
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 292
 section: "8.2-8.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "individual T-relatedness"
   - "T-related voice leadings"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - four-note-to-three-note-voice-leadings
 extends: []
@@ -35,7 +29,6 @@ related:
   - tristan-chord-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does it mean for two voice leadings to be individually T-related?"
   - "How do composers exploit individual T-relatedness?"

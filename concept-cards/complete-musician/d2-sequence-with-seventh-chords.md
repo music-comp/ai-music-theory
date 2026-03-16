@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: D2 Sequence with Seventh Chords
 slug: d2-sequence-with-seventh-chords
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 23
 pdf_page: 514
 section: "Sequences with Diatonic Seventh Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "D2 with alternating sevenths"
   - "D2 with interlocking sevenths"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - descending-second-sequence
   - seventh-chords
@@ -35,7 +29,6 @@ related:
   - sequences-with-inverted-seventh-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are seventh chords used in sequences?"
   - "What are alternating and interlocking sevenths in sequences?"

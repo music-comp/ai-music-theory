@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nonharmonic Tone
 slug: nonharmonic-tone
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,17 +14,14 @@ chapter_number: 5
 pdf_page: 210
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - non-harmonic tone
   - nonchordal tone
   - non-chord tone
   - "linearly constrained tone"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - chord-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonharmonic tone, and how does it differ from a chord tone?"
   - "Why is the concept of nonharmonicity inherently unstable?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Leittonwechsel (Leading-Tone Exchange, L)
 slug: leittonwechsel
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: neo-riemannian-operations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Henry Klumpenhouwer"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "L transformation"
   - "leading-tone exchange"
   - "Leittonwechselklang"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - leading-tone
@@ -39,7 +33,6 @@ related:
   - chromatic-mediant
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Leittonwechsel (L) transformation and how does it work?"
   - "How does L relate to chromatic third relations in Romantic harmony?"

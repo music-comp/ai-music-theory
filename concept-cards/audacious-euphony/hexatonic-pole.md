@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hexatonic Pole
 slug: hexatonic-pole
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diametric relation"
   - "hexatonic antipode"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-cycle
 extends: []
@@ -36,7 +30,6 @@ related:
   - lp-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a hexatonic pole?"
   - "How many common tones do hexatonic poles share?"

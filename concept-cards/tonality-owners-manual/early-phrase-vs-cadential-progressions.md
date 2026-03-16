@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Early-Phrase vs. Cadential Progressions
 slug: early-phrase-vs-cadential-progressions
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: phrase-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 407
 section: "Two models of the phrase"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - prolongational vs. cadential
   - early-phrase and late-phrase cycles
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-cycles
   - cadential-weight
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - prolongational-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do harmonic progressions differ at different points in a phrase?"
   - "What is the relationship between prolongational and cadential progressions?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Applied-Chord Sequence D3
 slug: applied-chord-sequence-d3
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: applied chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 24
 pdf_page: 538
 section: "The D3 (-4/+2) Sequence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "D3 (+3/-5) applied-chord sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - applied-chord
   - harmonic-sequences
@@ -35,7 +29,6 @@ related:
   - applied-chord-sequence-a2
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
 ---

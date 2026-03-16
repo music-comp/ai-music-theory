@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Augmented Triad as Central Axis
 slug: augmented-triad-as-axis
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: theoretical-framework
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: "Near Evenness, Minimal Voice Leading, and the Central Role of Augmented Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "augmented triad as generator"
   - "invisible axis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - near-evenness
   - perfectly-even-chord
@@ -37,7 +31,6 @@ related:
   - tonnetz-representation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What role do augmented triads play in pan-triadic syntax?"
   - "Why are augmented triads central even when absent from the surface?"

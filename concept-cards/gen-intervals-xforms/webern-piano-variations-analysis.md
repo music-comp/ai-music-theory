@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Webern Piano Variations Analysis
 slug: webern-piano-variations-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: serial-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "8.2.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rich-transformation
   - tch-transformation
@@ -34,7 +28,6 @@ related:
   - webern-op27-second-movement-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Lewin analyze RICH and TCH in Webern's Piano Variations?"
 ---

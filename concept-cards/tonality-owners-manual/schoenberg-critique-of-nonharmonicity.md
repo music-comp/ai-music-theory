@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Schoenberg's Critique of Nonharmonicity"
 slug: schoenberg-critique-of-nonharmonicity
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: epistemic-issues
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: 210
 section: "Schoenberg's critique"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-tone
   - snap-system
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - first-practice
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What was Schoenberg's critique of the nonharmonic system?"
   - "How should we understand the relationship between nonharmonic tones and harmony?"

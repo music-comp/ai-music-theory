@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Arpeggiating Six-Four
 slug: arpeggiating-six-four
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: prolongation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: null
 section: "Arpeggiating 6/4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "arp. 6/4"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadential-six-four
 extends: []
@@ -33,7 +27,6 @@ related:
   - neighbor-six-four
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an arpeggiating 6/4 chord?"
   - "Do arpeggiating 6/4 chords need to be labeled in analysis?"

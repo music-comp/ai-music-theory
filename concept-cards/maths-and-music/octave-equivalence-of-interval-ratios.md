@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octave Equivalence of Interval Ratios
 slug: octave-equivalence-of-interval-ratios
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: ratios
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 58
 section: "Octave Equivalence of Interval Ratios"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - interval ratio equivalence modulo octave
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-as-frequency-ratio
   - multiplicative-composition-of-intervals
@@ -33,7 +27,6 @@ related:
   - chords-as-note-class-collections
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When are two interval ratios equivalent modulo octave?"
   - "How does octave equivalence work with ratios instead of semitones?"

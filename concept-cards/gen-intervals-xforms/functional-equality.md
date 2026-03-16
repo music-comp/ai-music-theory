@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Functional Equality
 slug: functional-equality
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: functions
 tier: foundational
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 32
 section: "1.2.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - equality of functions
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - function
 extends: []
@@ -32,7 +26,6 @@ related:
   - composition-of-functions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What mathematical concepts must I know before understanding GIS?"
   - "When are two functions considered the same?"

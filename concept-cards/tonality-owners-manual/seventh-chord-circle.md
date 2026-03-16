@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seventh-Chord Circle
 slug: seventh-chord-circle
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 96
 section: "Seventh chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "4-in-7 spiral diagram"
   - "circle of diatonic sevenths"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-dyad-circle
   - basic-voice-leading
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - triadic-circle-of-diatonic-triads
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the seventh-chord spiral differ from the triadic circle?"
   - "Why do seventh chords convert retrofunctional triadic motion into functional motion?"

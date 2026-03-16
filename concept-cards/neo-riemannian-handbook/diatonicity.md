@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonicity
 slug: diatonicity
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scalar-system
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier, Matthew Gelbart, Alexander Rehding"
@@ -17,16 +14,13 @@ chapter_number: null
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - diatonic scale
   - diatonic system
   - expanded diatonicism
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pentatonicism
   - tetrachordal-structure
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - pentatonicism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is diatonicism in Riemann's expanded sense?"
   - "What distinguishes pentatonic from diatonic tonality in Riemann's framework?"

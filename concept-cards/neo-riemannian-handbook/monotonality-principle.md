@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Monotonality Principle
 slug: monotonality-principle
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-values
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Steven Rings"
@@ -17,16 +14,13 @@ chapter_number: 18
 pdf_page: 493
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Haupttonalitat"
   - "monotonal hearing"
   - "single-tonic principle"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - voice-leading-efficiency-principle
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Riemann's monotonality principle?"
   - "How does monotonality contrast with neo-Riemannian approaches?"

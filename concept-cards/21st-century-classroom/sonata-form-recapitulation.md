@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sonata Form Recapitulation
 slug: sonata-form-recapitulation
 
-# === CLASSIFICATION ===
 category: form
 subcategory: large-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 25
 pdf_page: 367
 section: "25.1 Sonata Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "recapitulation"
   - "recap"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form
   - sonata-form-exposition
@@ -36,7 +30,6 @@ related:
   - structural-functions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens in the recapitulation of sonata form?"
   - "Why must the transition be altered in the recapitulation?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Basic Voice Leading
 slug: basic-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 96
 section: "The imperfect system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "descending basic voice leading"
   - "ascending basic voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - repeating-contrapuntal-pattern
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a basic voice leading?"
   - "How does single-step motion on the spiral diagram translate to musical voice leading?"

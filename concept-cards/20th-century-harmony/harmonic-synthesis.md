@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Synthesis
 slug: harmonic-synthesis
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 13
 pdf_page: 270
 section: "Combining Textures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "synthesis of harmonic potentialities"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
   - atonality
@@ -41,7 +35,6 @@ related:
   - compositional-freedom
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is harmonic synthesis?"
   - "How are different harmonic textures integrated in twentieth-century music?"

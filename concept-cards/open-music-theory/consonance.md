@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Consonance
 slug: consonance
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 16
 pdf_page: null
 section: "Consonance and Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
   - interval-quality
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - dissonance
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are consonant intervals?"
   - "What is the difference between perfect and imperfect consonances?"

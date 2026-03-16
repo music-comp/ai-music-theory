@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Oettingen's Acoustical Matrix"
 slug: oettingens-acoustical-matrix
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: historical development of concepts
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Oettingen's table of tonal relations"
   - "Harmoniesystem table"
   - "frequency multiplication table"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - oettingens-harmoniesystem
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - traversable-landscape
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What was the original form of the Tonnetz before Riemann?"
   - "How did Oettingen conceive the table of tonal relations?"

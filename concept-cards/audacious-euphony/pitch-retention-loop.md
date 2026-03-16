@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch Retention Loop
 slug: pitch-retention-loop
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: compositional strategy
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 133
 section: "Neighborhoods and Pitch Retention Loops"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "PRL loop"
   - "retention loop"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - neighborhood
   - p-transformation
@@ -39,7 +33,6 @@ related:
   - brahms-second-symphony-retransition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pitch retention loop?"
   - "How do P, R, and L transformations tour a neighborhood?"

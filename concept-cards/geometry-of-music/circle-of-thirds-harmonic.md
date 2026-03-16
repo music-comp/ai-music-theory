@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Circle of Thirds (Harmonic)
 slug: circle-of-thirds-harmonic
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: 244
 section: "7.1-7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "descending circle of thirds"
   - "diatonic thirds chain"
   - "triadic circle of thirds"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - efficient-voice-leading
 extends: []
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - circle-of-fifths-scalar
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the circle of thirds relate voice leading to harmonic function?"
   - "Why does the same circle serve both contrapuntal and harmonic purposes?"

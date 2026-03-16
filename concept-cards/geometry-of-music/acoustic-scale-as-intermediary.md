@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Acoustic Scale as Intermediary
 slug: acoustic-scale-as-intermediary
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: modulation-technique
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 341
 section: "9.3.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "acoustic scale bridge"
   - "whole-tone to diatonic bridge"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - single-semitone-scale-voice-leading
   - scale-lattice
@@ -36,7 +30,6 @@ related:
   - whole-tone-to-octatonic-transitions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the acoustic scale bridge whole-tone and diatonic collections?"
   - "Why is the acoustic scale central to twentieth-century modulation?"

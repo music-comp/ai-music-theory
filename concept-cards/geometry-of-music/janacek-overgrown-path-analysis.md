@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Janacek "On an Overgrown Path" Analysis
 slug: janacek-overgrown-path-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: scale-first-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 344
 section: "9.3.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Janacek Series II No. 1 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-first-composition
   - single-semitone-scale-voice-leading
@@ -34,7 +28,6 @@ related:
   - debussy-des-pas-sur-la-neige-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Janacek organize scalar structure in 'On an Overgrown Path'?"
   - "How do exotic scales arise from semitonal alteration of harmonic major?"

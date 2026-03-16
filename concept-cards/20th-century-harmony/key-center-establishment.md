@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Key Center Establishment
 slug: key-center-establishment
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 247
 section: "Tonality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tonal establishment"
   - "key consciousness"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
   - tonal-center
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - atonality
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is a key center established in twentieth-century music?"
   - "What non-traditional methods exist for establishing tonality?"

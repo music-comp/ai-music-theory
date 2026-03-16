@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neapolitan Sixth
 slug: neapolitan-sixth
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: chromatic-predominant
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: null
 section: "V.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "bII6"
   - "N6"
   - "Neapolitan chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pre-dominant-function
   - chromatic-alteration
@@ -40,7 +34,6 @@ related:
   - applied-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Neapolitan sixth chord?"
   - "How does bII6 relate to iio6?"

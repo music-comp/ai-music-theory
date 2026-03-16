@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Gamut Overdetermination
 slug: chromatic-gamut-overdetermination
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: double syntax
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 231
 section: "On Musical Overdetermination"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "twelve-gamut overdetermination"
   - "abundant divisibility"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - overdetermination
   - perfectly-even-glossary
@@ -38,7 +32,6 @@ related:
   - diminished-seventh-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the twelve-tone chromatic gamut overdetermined?"
   - "Why does the number 12 matter for chromatic syntax?"

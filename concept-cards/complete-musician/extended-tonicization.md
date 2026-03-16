@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Extended Tonicization
 slug: extended-tonicization
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: tonicization
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 25
 pdf_page: 563
 section: "Extended Tonicizations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "expanded tonicization"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonicization
   - applied-chord
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does tonicization differ from modulation?"
 ---

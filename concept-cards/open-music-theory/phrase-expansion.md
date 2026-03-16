@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrase Expansion
 slug: phrase-expansion
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 4
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - sentence
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - phrase-contraction
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the internal and external expansion techniques?"
   - "What is the one-more-time technique?"

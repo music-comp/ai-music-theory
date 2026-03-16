@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Binary Form
 slug: binary-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: small-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,17 +14,13 @@ chapter_number: 24
 pdf_page: 344
 section: "24.1 Binary and Ternary Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
-# high: Source explicitly defines and categorizes binary form with three subtypes
 
-# === VARIANTS (authority control) ===
 aliases:
   - "two-part form"
   - "AB form"
   - "AA' form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - cadence
@@ -41,7 +34,6 @@ contrasts_with:
   - ternary-form
   - rounded-binary
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is binary form?"
   - "What are the three types of binary form?"

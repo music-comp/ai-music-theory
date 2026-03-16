@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Coherence Constraint
 slug: tonal-coherence-constraint
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic coherence and tonality
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,17 +14,14 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "tonal constraint on Harmonieschritte"
   - "Riemann's horror vision"
   - "chaos of possibilities"
   - "functional constraint"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonieschritte
   - intelligibility-harmonieschritte
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - neo-riemannian-operations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did Riemann constrain his Harmonieschritte system to maintain tonal coherence?"
   - "What was Riemann's 'horror vision' regarding unconstrained harmonic progressions?"

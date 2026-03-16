@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Z-Relation
 slug: z-relation
-# === CLASSIFICATION ===
 category: analysis
 subcategory: set-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Set Class and Prime Form"
 chapter_number: 8
 pdf_page: null
 section: "VIII.4"
-# === CONFIDENCE ===
 extraction_confidence: medium
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - set-class
   - interval-vector
@@ -26,7 +20,6 @@ extends: []
 related:
   - forte-number
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Z-relation?"
   - "How can two different set classes share the same interval vector?"

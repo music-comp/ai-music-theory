@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Greatest Common Divisor
 slug: greatest-common-divisor
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: number-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: 100
 section: "Greatest Common Divisor"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "GCD"
   - "gcd"
   - "highest common factor"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ideals-and-principal-ideals
   - principal-ideal-domain
@@ -39,7 +33,6 @@ related:
   - m-on-n-polyrhythmic-patterns
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I determine the GCD of two integers?"
   - "What is the greatest common divisor?"

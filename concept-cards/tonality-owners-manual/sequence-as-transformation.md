@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sequence as Transformation
 slug: sequence-as-transformation
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 4
 pdf_page: 155
 section: "Repetition reimagined"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
   - simple-period-and-grand-period
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a sequence (harmonic), and what role does repetition play in tonal music?"
 ---

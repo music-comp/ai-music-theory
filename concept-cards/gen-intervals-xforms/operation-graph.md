@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Operation Graph
 slug: operation-graph
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-definitions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.2.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-graph-definition
   - group
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - transformation-graph-definition
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes an operation graph from a transformation graph?"
   - "What is an operation graph?"

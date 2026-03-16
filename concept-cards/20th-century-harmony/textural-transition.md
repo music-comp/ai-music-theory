@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Textural Transition
 slug: textural-transition
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 13
 pdf_page: 270
 section: "Combining Textures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "harmonic texture transition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - combining-textures
 extends: []
@@ -37,7 +31,6 @@ related:
   - polychord-approach
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you smoothly transition between different harmonic textures?"
   - "Why is the characteristic interval of one texture contained in others?"

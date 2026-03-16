@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Commutative Time-Span GIS
 slug: commutative-time-span-gis
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "GIS 4.1.2"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span
   - direct-product-gis
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - time-span-gis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the commutative time-span GIS?"
   - "How does the time-span GIS relate to simpler time-point and duration GIS structures?"

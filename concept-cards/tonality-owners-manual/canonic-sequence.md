@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Canonic Sequence
 slug: canonic-sequence
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 4
 pdf_page: 155
 section: "Repetition reimagined"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - taneyev-arrow-notation
   - repeating-contrapuntal-pattern
@@ -36,7 +30,6 @@ contrasts_with:
   - transpositional-sequence
   - contrary-motion-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the relationship between canonic sequences and voice exchange?"
   - "What distinguishes a real sequence from a tonal sequence?"

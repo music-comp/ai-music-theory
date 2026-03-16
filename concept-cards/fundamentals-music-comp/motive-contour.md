@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Motive Contour
 slug: motive-contour
 
-# === CLASSIFICATION ===
 category: motive
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 14
 section: "What Constitutes a Motive"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - motive shape
   - motivic contour
   - directional profile
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
 extends:
@@ -37,7 +31,6 @@ related:
   - wave-like-melody
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a motive?"
   - "What are the features of a motive?"

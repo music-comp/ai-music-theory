@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: H-Group and W-Group Crosspollination
 slug: h-w-group-crosspollination
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: group interaction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 108
 section: "Chromatic Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "H/W crosspollination"
   - "interregional transformation pairing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - h-group-transformations
   - w-group-transformations
@@ -36,7 +30,6 @@ related:
   - combination-table
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why must H-group and W-group transformations be combined for chromatic sequences?"
   - "Which crosspollinations appeared earliest historically?"

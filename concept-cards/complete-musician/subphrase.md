@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Subphrase
 slug: subphrase
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase model
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 17
 pdf_page: 404
 section: "Subphrases"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - period
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a subphrase?"
   - "How does a subphrase differ from a phrase?"

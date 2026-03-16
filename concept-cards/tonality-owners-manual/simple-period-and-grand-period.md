@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Simple Period and Grand Period
 slug: simple-period-and-grand-period
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 4
 pdf_page: 155
 section: "Repetition reimagined"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - taneyev-arrow-notation
 extends: []
@@ -32,7 +26,6 @@ related:
   - transpositional-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between simple period and grand period in a sequence?"
 ---

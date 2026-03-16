@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval Function int
 slug: interval-function-int
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: interval-mechanics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 47
 section: "Definition 2.3.1, Theorem 2.3.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "int function"
   - "interval function"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - musical-space-s
   - interval-group-ivls
@@ -38,7 +32,6 @@ related:
   - transposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the formal definition of the interval function int in a GIS?"
   - "What conditions must the function int satisfy?"

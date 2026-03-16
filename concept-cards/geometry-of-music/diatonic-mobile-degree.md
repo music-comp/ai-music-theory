@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mobile Scale Degree
 slug: diatonic-mobile-degree
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: macroharmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 215
 section: "6.2"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "flexible degree"
   - "soft vs hard B"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - macroharmony
 extends: []
@@ -34,7 +28,6 @@ related:
   - centricity-and-tonicity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a mobile scale degree?"
   - "How does the medieval Bb/B-natural distinction work?"

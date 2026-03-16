@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Paradigms
 slug: harmonic-paradigms
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 246
 section: "Compositional Impact of Contrapuntal Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - contrapuntal paradigms
   - expansion models
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - contrapuntal-expansion
   - neighboring-chord
@@ -35,7 +29,6 @@ related:
   - phrase-model
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
 ---

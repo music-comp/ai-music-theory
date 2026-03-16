@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Elision
 slug: harmonic-elision
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: null
 section: "V.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - applied-chord
   - dominant-seventh-chord
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - chord-substitution
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is harmonic elision and how does it differ from chord substitution?"
   - "What are leading-tone elision and raised-root elision?"

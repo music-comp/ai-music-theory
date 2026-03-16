@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Vowel Formants
 slug: vowel-formants
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: acoustics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 118
 section: "Formants"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - formants
 extends:
@@ -33,7 +27,6 @@ related:
   - harmonics-and-overtones
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do vowel sounds differ in their formant structure?"
   - "Why does 'ee' sound brighter than 'oo'?"

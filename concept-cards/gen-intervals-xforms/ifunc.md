@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "IFUNC (Interval Function)"
 slug: ifunc
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: interval-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: "5.1.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - interval function
   - X/Y interval function
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - set-in-gis
@@ -42,7 +36,6 @@ contrasts_with:
   - inj-function
   - emb-function
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the IFUNC (interval function)?"
   - "How do I compute IFUNC between two sets?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Second Species Counterpoint
 slug: second-species
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: species-counterpoint
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "two-against-one"
   - "2:1 counterpoint"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - first-species
   - dissonant-passing-tone
@@ -35,7 +29,6 @@ related:
   - consonant-weak-beat-patterns
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What new musical problems does second species introduce?"
   - "How is dissonance treated in second species?"

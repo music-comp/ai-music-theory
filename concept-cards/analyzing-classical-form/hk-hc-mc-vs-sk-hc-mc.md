@@ -1,5 +1,5 @@
 ---
-concept: I:HC MC vs. V:HC MC
+concept: "I:HC MC vs. V:HC MC"
 chapter: "Exposition II: Transition"
 source: "Analyzing Classical Form"
 pdf_page: 331

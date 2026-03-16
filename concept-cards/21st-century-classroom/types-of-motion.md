@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Types of Motion
 slug: types-of-motion
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: fundamentals
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,10 +14,8 @@ chapter_number: 26
 pdf_page: 389
 section: "26.2 Types of Motion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "contrary motion"
   - "oblique motion"
@@ -28,7 +23,6 @@ aliases:
   - "parallel motion"
   - "direct motion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-definition
 extends: []
@@ -36,7 +30,6 @@ related:
   - objectionable-parallels
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the four types of motion between voices?"
   - "What is the difference between similar and parallel motion?"

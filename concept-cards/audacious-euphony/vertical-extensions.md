@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Vertical Extensions
 slug: vertical-extensions
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: Tonnetz variants
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 200
 section: "Vertical Extensions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "third-axis extensions"
   - "nebenverwandt substitutions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-tonnetz
   - nebenverwandt
@@ -37,7 +31,6 @@ related:
   - convertible-tonnetz
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are vertical extensions of the diatonic Tonnetz?"
   - "How does semitonal substitution extend the Tonnetz vertically?"

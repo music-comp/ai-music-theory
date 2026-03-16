@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Minor-Third Voice-Leading Symmetry
 slug: minor-third-voice-leading-symmetry
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: voice-leading-geometry
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 458
 section: "Meet the Ludwig"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - interval-class-3 symmetry
   - minor-third quarter-octave property
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-geometry
   - basic-voice-leading
@@ -36,7 +30,6 @@ related:
   - spiral-diagram-derivation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is the minor third special for contrary-motion voice leading?"
   - "What mathematical property of the minor third underlies the Ludwig schema?"

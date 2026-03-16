@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Simple Binary Form
 slug: simple-binary
 
-# === CLASSIFICATION ===
 category: form
 subcategory: small-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 24
 pdf_page: 351
 section: "24.5 Simple Binary"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "binary"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
 extends:
@@ -35,7 +29,6 @@ contrasts_with:
   - rounded-binary
   - balanced-binary
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is simple binary form?"
   - "What makes simple binary different from rounded or balanced binary?"

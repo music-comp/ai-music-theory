@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tuplet
 slug: tuplet
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 11
 pdf_page: null
 section: "Borrowed Divisions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "borrowed division"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - beat
   - simple-meter
@@ -35,7 +29,6 @@ related:
   - syncopation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a tuplet?"
   - "What is a triplet?"

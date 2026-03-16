@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Reduction to Residues
 slug: reduction-to-residues
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: liquidation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 16
 pdf_page: 85
 section: "The Practice Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - motivic residues
   - progressive shortening
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - developing-variation
   - spinning-out
@@ -36,7 +30,6 @@ related:
   - codetta-in-dance-forms
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are residues in the context of liquidation?"
   - "How does a motivic pattern get progressively shortened before a recapitulation?"

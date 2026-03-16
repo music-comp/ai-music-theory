@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Collectional Hierarchy as Synthesis
 slug: collectional-hierarchy-as-synthesis
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 527
 section: "Past and Future"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - collectional hierarchy
   - quadruple hierarchy as synthesis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - quadruple-hierarchy
   - spiral-diagram-derivation
@@ -38,7 +32,6 @@ related:
   - bebop-as-chromaticized-functionality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Schenkerian analysis relate to Tymoczko's geometric approach?"
   - "What foundational knowledge is needed for geometric models of voice leading?"

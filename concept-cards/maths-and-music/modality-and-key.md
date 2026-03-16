@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modality and Key
 slug: modality-and-key
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,10 +14,8 @@ chapter_number: 1
 pdf_page: 14
 section: "Modality and Key"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "mode"
   - "key"
@@ -28,7 +23,6 @@ aliases:
   - "keynote"
   - "tonal center"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ecclesiastical-modes
   - key-signatures-and-the-circle-of-fifths
@@ -40,7 +34,6 @@ related:
   - diatonic-and-chromatic-scales
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the mode of a composition?"
   - "What is the key of a composition?"

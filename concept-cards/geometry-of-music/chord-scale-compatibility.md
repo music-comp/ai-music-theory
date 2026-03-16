@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chord-Scale Compatibility
 slug: chord-scale-compatibility
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: compositional-technique
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 326
 section: "9.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord-scale theory"
   - "chord-scale system"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scales-modes-fundamentals
 extends: []
@@ -36,7 +30,6 @@ related:
   - avoid-notes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do chords and scales relate in twentieth-century music?"
   - "What is the principle of chord-scale compatibility?"

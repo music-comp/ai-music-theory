@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Equivalence Classes
 slug: equivalence-classes
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: sets-and-relations
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 14
 section: "Equivalence relations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "equivalence class"
   - "quotient set"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - equivalence-relations
 extends:
@@ -36,7 +30,6 @@ related:
   - enharmonic-equivalence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an equivalence class?"
   - "How do equivalence classes partition a set?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Formal Melody
 slug: formal-melody
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-structure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 224
 section: "9.7.7"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "series as transformation network"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - precedence-ordered-system
   - transformation-network-definition
@@ -34,7 +28,6 @@ related:
   - scholica-enchiriadis-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can a melody be formally modeled as a transformation network?"
   - "What makes a transformation network a formal 'melody'?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic Fourths in Jazz
 slug: melodic-fourths
 
-# === CLASSIFICATION ===
 category: application
 subcategory: jazz-improvisation
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 376
 section: "10.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "quartal melodies"
-  - "fourthy" playing
+  - '"fourthy" playing'
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - quartal-voicings
 extends: []
@@ -34,7 +28,6 @@ related:
   - pentatonic-scale
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do jazz musicians use melodic fourths in improvisation?"
   - "Why does the pentatonic scale facilitate quartal melodic playing?"

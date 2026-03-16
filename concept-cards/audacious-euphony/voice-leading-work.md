@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice-Leading Work
 slug: voice-leading-work
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: distance-metrics
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 19
 section: "Three Ways to Calculate Triadic Distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "voice-leading distance"
   - "VL work"
   - "total semitonal displacement"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - idealized-voice-leading
 extends:
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - common-tone-approach
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I calculate voice-leading work between two triads?"
   - "What is voice-leading work?"

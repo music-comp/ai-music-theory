@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dissonant Prolongation
 slug: dissonant-prolongation
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: prolongational-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 61
 section: "The Historical Emergence of Augmented Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Morgan's dissonant prolongation"
   - "Prolongation of dissonance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
   - augmented-triad
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - diatonic-encapsulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can a dissonant harmony be prolonged?"
   - "How does dissonant prolongation relate to Schenkerian analysis?"

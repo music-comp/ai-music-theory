@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval
 slug: interval
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 16
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch
   - generic-interval
@@ -40,7 +34,6 @@ related:
   - tritone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an interval?"
   - "How is an interval identified?"

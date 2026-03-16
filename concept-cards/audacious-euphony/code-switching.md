@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Code Switching
 slug: code-switching
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: double syntax
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 219
 section: "Code Switching and Double Determination"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "syntactic switching"
   - "language juxtaposition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-syntax-hypothesis
   - double-syntax-objections
@@ -37,7 +31,6 @@ related:
   - convertible-tonnetz
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes code switching from modulation?"
   - "How does linguistic code switching support the double syntax hypothesis?"

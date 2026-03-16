@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Nebenverwandt (Adjacency Relation)"
 slug: nebenverwandt
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: triadic-relations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 61
 section: "Consonance/Dissonance Reciprocity"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Adjacency relation"
   - "Reciprocal relation (Oettingen)"
   - "Next-related"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
   - augmented-triad
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - l-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the nebenverwandt relation?"
   - "How does the nebenverwandt differ from relative major/minor?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Integer Ratio Chords
 slug: integer-ratio-chords
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: integer-ratios
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 110
 section: "Exercises"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - integral-intervals
   - keyboard-approximation-of-integer-ratios
@@ -34,7 +28,6 @@ related:
   - reinforced-overtone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can chords be described using integer ratios?"
   - "What familiar chords emerge from sequences of integer ratios?"

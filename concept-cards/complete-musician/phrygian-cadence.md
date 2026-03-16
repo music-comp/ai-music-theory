@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrygian Cadence
 slug: phrygian-cadence
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 280
 section: "The Subdominant"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - PHRY
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - subdominant-as-pre-dominant
   - cadence-types
@@ -34,7 +28,6 @@ related:
   - half-cadence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cadence?"
   - "What distinguishes a half cadence from a deceptive cadence?"

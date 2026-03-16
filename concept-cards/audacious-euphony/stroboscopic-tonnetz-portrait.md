@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Stroboscopic Tonnetz Portrait
 slug: stroboscopic-tonnetz-portrait
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: analytical technique
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 204
 section: "The Convertible Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tonnetz snapshots"
   - "stroboscopic analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - convertible-tonnetz
   - diatonic-encapsulation
@@ -35,7 +29,6 @@ related:
   - liszt-consolation-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a stroboscopic Tonnetz portrait?"
   - "How does the convertible Tonnetz work as an analytical tool?"

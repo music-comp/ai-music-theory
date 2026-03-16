@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Simplification
 slug: harmonic-simplification
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: phrase-construction
 tier: foundational
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 11
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - harmonic skeleton
   - predetermined harmony
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
 extends:
@@ -36,7 +30,6 @@ related:
   - making-many-sketches
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How should a beginner approach the harmony of a phrase?"
   - "What is a harmonic skeleton in composition?"

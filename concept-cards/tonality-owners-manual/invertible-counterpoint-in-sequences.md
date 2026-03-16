@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Invertible Counterpoint in Sequences
 slug: invertible-counterpoint-in-sequences
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: contrapuntal-patterns
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 155
 section: "The geometry of two-voice sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "5-6 voice-leading pattern"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonically-stable-and-unstable-sequences
 extends: []
@@ -34,7 +28,6 @@ related:
   - three-voice-sequences-2-plus-1
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does invertible counterpoint enable harmonically unstable sequences?"
 ---

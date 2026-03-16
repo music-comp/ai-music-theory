@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Circle of Fifths
 slug: circle-of-fifths
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: key-relationships
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 3
 section: "Key Signatures and the Circle of Fifths"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "cycle of fifths"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - key-signatures
   - major-scale
@@ -35,7 +29,6 @@ related:
   - transposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the circle of fifths?"
   - "How do relative major and minor keys relate?"

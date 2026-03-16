@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generalized Transformational Theory
 slug: generalized-transformational-theory
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: transformational-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 555
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - extended transformational theory
   - sequence-based transformational theory
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sequence-as-transformation
   - double-transposition
@@ -37,7 +31,6 @@ related:
   - gesualdos-trick
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does sequence theory generalize into transformational theory?"
   - "What are the different types of transformational arrows?"

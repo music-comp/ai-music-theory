@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Perception-Based Tonality
 slug: perception-based-tonality
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: tonality
 tier: foundational
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 21
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "empirical approach to tonality"
   - "listener-centered tonality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - five-components-of-tonality
 extends:
@@ -36,7 +30,6 @@ related:
   - tonality-as-spectrum
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Is tonality a property of the music itself or of how it is perceived?"
   - "What are the five components of tonality?"

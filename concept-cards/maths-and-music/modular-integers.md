@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modular Integers
 slug: modular-integers
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Modular Equivalence on the Integers"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Z_m
   - integers mod m
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modular-equivalence-on-the-integers
 extends:
@@ -38,7 +32,6 @@ related:
   - modular-chromatic-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are modular integers?"
   - "How does the group Z_12 represent chromatic pitch classes?"

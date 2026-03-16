@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonalness, Orderedness, and Pleasantness
 slug: tonalness
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: perception
 tier: foundational
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 21
 section: "1.2"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "perceptual dimensions of consonance"
   - "tonalness and pleasantness"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - acoustic-consonance
 extends:
@@ -35,7 +29,6 @@ related:
   - perception-based-tonality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the relationship between tonalness, orderedness, and pleasantness?"
   - "How is acoustic consonance perceived?"

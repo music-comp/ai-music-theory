@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pivot Chord Modulation
 slug: pivot-chord-modulation
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: modulation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 303
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - common-chord modulation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ambiguous-syntax-in-tonal-music
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - garden-path-modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pivot chord modulation?"
 ---

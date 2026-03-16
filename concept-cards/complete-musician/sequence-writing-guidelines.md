@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sequence Writing Guidelines
 slug: sequence-writing-guidelines
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 22
 pdf_page: 495
 section: "Writing Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-sequence
 extends:
@@ -31,7 +25,6 @@ extends:
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write a sequence?"
 ---

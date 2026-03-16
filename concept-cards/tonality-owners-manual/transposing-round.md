@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transposing Round
 slug: transposing-round
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 4
 pdf_page: 155
 section: "Repetition reimagined"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - taneyev-arrow-notation
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - transpositional-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a transposing round and how does it combine transposition and permutation?"
 ---

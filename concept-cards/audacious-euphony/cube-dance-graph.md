@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cube Dance Graph
 slug: cube-dance-graph
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: voice-leading graph
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 103
 section: "How Hexatonic and Weitzmann Regions Interact"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Cube Dance"
   - "Douthett's Cube Dance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-cycle
   - weitzmann-region
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - connected-tonnetz
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Cube Dance graph?"
   - "How do I navigate the Cube Dance graph?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Augmented Triad
 slug: augmented-triad
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: symmetrical harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 35
 pdf_page: 810
 section: "The Augmented Triad"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "aug triad"
   - "raised-fifth triad"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - symmetrically-constructed-harmonies
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - diminished-seventh-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the augmented triad's role in symmetrical harmony?"
 ---

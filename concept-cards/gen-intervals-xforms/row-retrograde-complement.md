@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Row-Retrograde as Complement
 slug: row-retrograde-complement
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: serial-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 154
 section: "Example 6.6.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "retrograde as complement in PROT"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - protocol-pairs
   - inj-function
@@ -36,7 +30,6 @@ related:
   - inj-complement-theorem
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are a twelve-tone row and its retrograde related as subsets of PROT?"
   - "Why does the Generalized Hexachord Theorem apply to rows and retrogrades?"

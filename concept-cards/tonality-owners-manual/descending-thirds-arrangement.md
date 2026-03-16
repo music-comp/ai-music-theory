@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Descending-Thirds Arrangement
 slug: descending-thirds-arrangement
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: 312
 section: "A theory of harmonic cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "descending-thirds model"
   - "thirds-based harmonic grammar"
   - "descending-third chain"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - protofunctionality
 extends:
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - function-and-retrofunction
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you identify functional progressions using the descending-thirds model?"
   - "What is the descending-thirds arrangement of functional harmony?"

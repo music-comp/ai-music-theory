@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Beat
 slug: beat
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: null
 section: "Terminology"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pulse"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rhythm
 extends: []
@@ -35,7 +29,6 @@ related:
   - measure
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a beat?"
   - "How is the beat related to meter?"

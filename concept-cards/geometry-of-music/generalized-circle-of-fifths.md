@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generalized Circle of Fifths
 slug: generalized-circle-of-fifths
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 125
 section: "3.11"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "near interval cycle chain"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-lattices
   - nearly-even-chords
@@ -34,7 +28,6 @@ related:
   - near-symmetry
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a 'generalized circle of fifths'?"
   - "How does the diatonic circle of fifths generalize to other chord types?"

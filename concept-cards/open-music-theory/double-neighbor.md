@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Double Neighbor
 slug: double-neighbor
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: null
 section: "Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "neighbor group"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - third-species
 extends:
@@ -33,7 +27,6 @@ related:
   - nota-cambiata
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a double neighbor and when can it be used?"
 ---

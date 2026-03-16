@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Serial Cadence
 slug: serial-cadence
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: 247
 section: "Serial Harmony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - serial-harmony
   - serial-center-chord
@@ -34,7 +28,6 @@ related:
   - twelve-tone-technique
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are cadences formed in serial music?"
   - "What role does set completion play in serial cadences?"

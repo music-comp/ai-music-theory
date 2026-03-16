@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Homophony
 slug: homophony
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: texture
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 21
 pdf_page: null
 section: "Homophony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "homophonic texture"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - texture
 extends:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - polyphony
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is homophony?"
   - "What are the two subtypes of homophony?"

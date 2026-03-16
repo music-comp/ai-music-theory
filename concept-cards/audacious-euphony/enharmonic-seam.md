@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Enharmonic Seam
 slug: enharmonic-seam
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: enharmonic-phenomena
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 87
 section: "Historical Origins of Weitzmann Regions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Enharmonic boundary"
   - "Enharmonic crossing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-agent-complex
   - s-transformation
@@ -36,7 +30,6 @@ related:
   - nr-cycle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the enharmonic seam?"
   - "What is the difference between teasing and plunging through the enharmonic seam?"

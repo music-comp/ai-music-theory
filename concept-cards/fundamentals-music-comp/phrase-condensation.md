@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrase Condensation
 slug: phrase-condensation
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: sentence-construction
 tier: intermediate/advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 39
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - phrase shortening
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - beginning-the-sentence
   - liquidation
@@ -35,7 +29,6 @@ related:
   - cadence-contour
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does phrase shortening support liquidation?"
   - "What is the difference between reduction and condensation?"

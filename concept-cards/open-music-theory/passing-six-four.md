@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Passing Six-Four
 slug: passing-six-four
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: prolongation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: null
 section: "Passing 6/4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "pass. 6/4"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadential-six-four
   - tonic-prolongation
@@ -37,7 +31,6 @@ contrasts_with:
   - cadential-six-four
   - neighbor-six-four
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a passing 6/4 chord?"
   - "How does a passing 6/4 differ from a cadential 6/4?"

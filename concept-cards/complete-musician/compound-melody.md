@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compound Melody
 slug: compound-melody
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: compound melody
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 15
 pdf_page: 349
 section: "Harmonic Implications of Single Melodic Lines: Compound Melody"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "compound line"
   - "polyphonic melody"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading
   - triads-and-inversions
@@ -37,7 +31,6 @@ related:
   - invertible-counterpoint
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a compound melody?"
   - "How can a single melodic line imply multiple voices?"

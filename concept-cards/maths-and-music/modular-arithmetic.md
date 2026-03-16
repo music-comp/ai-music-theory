@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modular Arithmetic
 slug: modular-arithmetic
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Modular Arithmetic"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - clock arithmetic
   - arithmetic modulo m
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modular-integers
   - group
@@ -37,7 +31,6 @@ related:
   - n-tone-row-chart
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modular arithmetic?"
   - "How does modular arithmetic model interval composition under octave equivalence?"

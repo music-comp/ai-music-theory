@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Key
 slug: key
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch-organization
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 3
 section: "Scales"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "musical key"
   - "tonal center"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
   - diatonic-scale
@@ -37,7 +31,6 @@ related:
   - tonic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a key?"
   - "What is a key signature?"

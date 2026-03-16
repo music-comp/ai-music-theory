@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Western Musical Notation
 slug: western-musical-notation
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "staff notation"
   - "standard music notation"
   - "common music notation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -36,7 +30,6 @@ related:
   - rhythm
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Western musical notation?"
   - "Why was a system of writing music developed?"

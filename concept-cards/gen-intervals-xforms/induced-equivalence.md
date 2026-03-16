@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Induced Equivalence
 slug: induced-equivalence
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: formal-features
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 62
 section: "3.2 Quotient GIS"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "EQUIV"
   - "induced equivalence on S"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - congruence-relation-gis
   - generalized-interval-system
@@ -37,7 +31,6 @@ related:
   - quotient-set
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does a congruence on IVLS produce an equivalence on S?"
   - "How does pitch-class space relate to chromatic pitch space via quotient GIS?"

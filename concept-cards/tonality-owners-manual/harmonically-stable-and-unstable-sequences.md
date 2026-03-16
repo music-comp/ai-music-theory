@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonically Stable and Unstable Sequences
 slug: harmonically-stable-and-unstable-sequences
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 155
 section: "Repetition reimagined"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "wedge sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - taneyev-arrow-notation
 extends: []
@@ -34,7 +28,6 @@ related:
   - registrally-stable-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What makes a sequence harmonically stable or unstable?"
 ---

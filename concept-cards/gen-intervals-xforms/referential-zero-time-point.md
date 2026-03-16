@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Referential Zero Time-Point
 slug: referential-zero-time-point
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "time-point zero"
   - "zero time-point problem"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span
 extends: []
@@ -34,7 +28,6 @@ related:
   - time-span-interval-independence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the referential zero time-point problem?"
 ---

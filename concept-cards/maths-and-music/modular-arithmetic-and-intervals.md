@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modular Arithmetic and Intervals
 slug: modular-arithmetic-and-intervals
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: twelve-tone
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Octave identification"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - interval arithmetic mod 12
   - chromatic interval composition
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modular-arithmetic
   - octave-equivalence-formalized
@@ -36,7 +30,6 @@ related:
   - z-twelve-as-chromatic-interval-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does modular arithmetic apply to musical interval composition?"
   - "How are intervals composed under octave equivalence?"

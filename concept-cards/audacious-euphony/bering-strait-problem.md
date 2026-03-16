@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Bering Strait Problem
 slug: bering-strait-problem
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: planar distortion
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 19
 section: "Remarks on Syntax and Maps"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Bering Strait distortion"
   - "cyclic distortion"
   - "planar falsification"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - musical-maps
 extends: []
@@ -36,7 +30,6 @@ related:
   - cube-dance
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why do Tonnetz strips show identical points at top and bottom edges?"
   - "What distortion arises when cyclic pitch-class space is represented on a plane?"

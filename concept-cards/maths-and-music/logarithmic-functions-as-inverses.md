@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Logarithmic Functions as Inverses
 slug: logarithmic-functions-as-inverses
 
-# === CLASSIFICATION ===
 category: logarithms-and-measurement
 subcategory: logarithms
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: 66
 section: "Logarithmic Functions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - logarithm
   - log function
   - inverse exponential
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - exponents-and-exponential-functions
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - exponents-and-exponential-functions
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a logarithm and why is it useful for measuring intervals?"
   - "How is the logarithm defined as the inverse of the exponential function?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transformation Graph
 slug: transformation-graph-definition
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-definitions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 224
 section: "9.2.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "(NODES, ARROW, SGP, TRANSIT)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - node-arrow-system
   - semigroup
@@ -38,7 +32,6 @@ contrasts_with:
   - transformation-network-definition
   - operation-graph
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a transformation graph?"
   - "How do transformation graphs relate to transformation networks?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Form
 slug: form
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 10
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - musical form
   - musical organization
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - contrast-and-variety
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is musical form?"
   - "What does form mean in the aesthetic sense?"

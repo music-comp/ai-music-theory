@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Vocabulary Expansion
 slug: harmonic-vocabulary-expansion
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: historical-development
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 311
 section: "Functional melody, functional harmony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - seventh-chord expansion
   - functional harmonic development
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-cycle-theory
   - subdominant-and-dominant-cycles
@@ -37,7 +31,6 @@ related:
   - functional-penumbra
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why did functional tonality expand from triads to seventh chords?"
   - "How do seventh chords solve the tension between functional harmony and descending melody?"

@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Klang Analysis
 slug: klang-analysis
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: twentieth-century-analysis
 tier: advanced
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -14,11 +11,8 @@ chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
 section: "10.3"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-network-definition
 extends: []
@@ -26,7 +20,6 @@ related:
   - slide-transformation
   - prokofieff-melodies-analysis
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When does Klang analysis prove inadequate?"
   - "How does pitch-class set analysis complement Klang analysis?"

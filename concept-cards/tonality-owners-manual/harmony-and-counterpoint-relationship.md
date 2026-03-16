@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmony and Counterpoint Relationship
 slug: harmony-and-counterpoint-relationship
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 96
 section: "Harmony and counterpoint"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-dyad-circle
   - triadic-circle-of-diatonic-triads
@@ -33,7 +27,6 @@ related:
   - wrong-way-resolutions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the relationship between counterpoint and harmonic function?"
   - "Is the linear/harmonic relationship fixed or context-dependent?"

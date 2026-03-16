@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pre-Dominant Seventh Chords
 slug: pre-dominant-seventh-chords
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: diatonic chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 17
 pdf_page: 404
 section: "Pre-Dominant Seventh Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ii7"
   - "IV7"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pre-dominant-function
   - seventh-chords
@@ -35,7 +29,6 @@ related:
   - cadential-six-four-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do ii7 and IV7 function as pre-dominants?"
   - "What voice-leading rules apply to pre-dominant seventh chords?"

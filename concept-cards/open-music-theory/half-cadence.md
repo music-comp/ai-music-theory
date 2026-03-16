@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Half Cadence
 slug: half-cadence
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: cadences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,17 +14,13 @@ chapter_number: 1
 pdf_page: null
 section: "Half Cadences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
-# high: Explicitly defined in source
 
-# === VARIANTS (authority control) ===
 aliases:
   - "HC"
   - "semi-cadence"
   - "imperfect cadence (British usage)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadence
   - harmonic-function
@@ -39,7 +32,6 @@ related:
 contrasts_with:
   - authentic-cadence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a half cadence?"
   - "How does a half cadence differ from an authentic cadence?"

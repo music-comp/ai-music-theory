@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Triads
 slug: triads
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: chord-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 116
 section: "Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "triad"
   - "chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-and-dissonant-intervals
   - specific-intervals
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - seventh-chords
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a triad?"
   - "What is a chord?"

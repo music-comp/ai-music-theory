@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sublime vs. Beautiful in Beethoven
 slug: sublime-vs-beautiful-in-beethoven
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: beethoven-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 451
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - beauty and sublimity
   - Kantian sublime in Beethoven
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - anti-melodic-impulse
   - form-defining-parameters
@@ -36,7 +30,6 @@ related:
   - the-ludwig
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the beauty/sublimity distinction apply to Beethoven?"
   - "What aesthetic framework explains Beethoven's formal innovations?"

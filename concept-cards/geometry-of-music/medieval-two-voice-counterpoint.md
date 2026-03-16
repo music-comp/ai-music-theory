@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Medieval Two-Voice Counterpoint
 slug: medieval-two-voice-counterpoint
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: historical-style
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 215
 section: "6.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "organum"
   - "Ad Organum Faciendum style"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - five-components-of-tonality
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - renaissance-triadic-harmony
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does medieval counterpoint exemplify the five components of tonality?"
   - "What is Ad Organum Faciendum?"

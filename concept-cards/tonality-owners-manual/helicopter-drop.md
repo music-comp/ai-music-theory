@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Helicopter Drop
 slug: helicopter-drop
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: modulatory-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 376
 section: "Modulatory schemas"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "helicopter-drop schema"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulatory-schemas
   - key-distance-pitch-class-changing
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - paired-sequence-design
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a helicopter drop in modulatory practice?"
   - "How do development sections handle distant-key arrivals?"

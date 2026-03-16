@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Prinner Schema
 slug: prinner-schema
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: galant-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 11
 pdf_page: null
 section: "Closing Gestures Such as the Prinner"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "modulating Prinner"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - galant-schema
 extends: []
@@ -33,7 +27,6 @@ related:
   - passo-indietro-comma-schemas
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Prinner schema and what scale degrees define it?"
   - "What is a modulating Prinner?"

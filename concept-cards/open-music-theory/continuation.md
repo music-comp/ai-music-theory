@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Continuation
 slug: continuation
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: null
 section: "More Detail: The Continuation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sentence
   - presentation
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - consequent
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the four traits of a continuation?"
   - "Can a continuation lack fragmentation?"

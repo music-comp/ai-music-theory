@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic Sequence Along Chord and Scale
 slug: melodic-sequence-along-chord-and-scale
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 155
 section: "Melodic sequences and near sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "hierarchical transposition"
   - "interscalar transposition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - thinking-within-the-chord
   - structured-arpeggiation
@@ -36,7 +30,6 @@ related:
   - sequence-as-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do melodic sequences move along both chord and scale?"
   - "What distinguishes a real sequence from a tonal sequence?"

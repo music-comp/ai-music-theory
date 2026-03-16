@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Atonality
 slug: atonality
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 247
 section: "Atonality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "keylessness"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
   - compound-chord
@@ -38,7 +32,6 @@ contrasts_with:
   - tonality
   - polytonality
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is atonality?"
   - "How is atonal music organized without key?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neighborhood
 slug: neighborhood
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: pitch-retention structure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 129
 section: "Neighborhoods and Pitch Retention Loops"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pitch-class neighborhood"
   - "Tonschema neighborhood"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - connected-tonnetz
   - consonant-triad
@@ -36,7 +30,6 @@ related:
   - doppelganger-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pitch-class neighborhood in the triadic universe?"
   - "How do neighborhoods organize chromatic passages around a central pitch?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Monothematic Sonata
 slug: monothematic-sonata
 
-# === CLASSIFICATION ===
 category: form
 subcategory: large-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,13 +14,10 @@ chapter_number: 25
 pdf_page: 369
 section: "25.1.4 The Monothematic Sonata"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form
   - sonata-principle
@@ -32,7 +26,6 @@ extends:
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a monothematic sonata?"
   - "Why did Haydn use monothematic sonata form?"

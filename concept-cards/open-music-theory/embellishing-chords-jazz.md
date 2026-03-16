@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Jazz Embellishing Chords
 slug: embellishing-chords-jazz
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: null
 section: "VI.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ii-v-i-progression
   - applied-chord
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - chord-substitution
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do jazz performers add embellishing chords to existing progressions?"
   - "How does the CTo7 function in jazz contexts?"

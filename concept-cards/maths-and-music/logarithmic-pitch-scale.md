@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Logarithmic Pitch Scale
 slug: logarithmic-pitch-scale
 
-# === CLASSIFICATION ===
 category: logarithms-and-measurement
 subcategory: conversion
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 66
 section: "Logarithmic Scale for Pitch"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - logarithmic frequency axis
   - log pitch axis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - logarithm-properties
   - logarithmic-functions-as-inverses
@@ -36,7 +30,6 @@ related:
   - pitch-and-frequency
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why do equal musical intervals appear as equal distances on a logarithmic pitch scale?"
   - "What base should be used for a logarithmic pitch axis where octaves are unit distances?"

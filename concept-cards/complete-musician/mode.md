@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mode
 slug: mode
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: mode-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 3
 section: "Specific Scale Types: Major and Minor"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "major mode"
   - "minor mode"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-scale
 extends: []
@@ -35,7 +29,6 @@ related:
   - key
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a mode?"
   - "What distinguishes major from minor mode?"

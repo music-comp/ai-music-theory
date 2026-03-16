@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tristan Prelude Analysis
 slug: tristan-prelude-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: Wagner analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 167
 section: "The Tristan Genus as Nearly Even Tetrachord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tristan-genus
   - boretz-region
@@ -36,7 +30,6 @@ related:
   - tristan-genus-voice-leading-zones
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Boretz's analysis of the Tristan Prelude work?"
   - "What is interregional modulation in the tetrachordal system?"

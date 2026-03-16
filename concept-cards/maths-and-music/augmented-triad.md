@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Augmented Triad
 slug: augmented-triad
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: triads
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 44
 section: "Diminished and Augmented Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - augmented chord
   - aug chord
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-types-and-interval-sequences
   - cyclic-permutations-and-root-identification
@@ -37,7 +31,6 @@ contrasts_with:
   - major-triad
   - diminished-triad
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an augmented triad?"
   - "Why does an augmented triad have no discernible root?"

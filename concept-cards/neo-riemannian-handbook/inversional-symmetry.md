@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Inversional Symmetry
 slug: inversional-symmetry
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: symmetry-operations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: null
 section: "Sections 1-2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "pitch-space inversion"
   - "inversional invariance"
   - "reflection symmetry in music"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
 extends: []
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - contrapuntal-vs-harmonic-dualism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is inversional symmetry in music theory?"
   - "How does inversional symmetry relate to Riemann's dualism?"

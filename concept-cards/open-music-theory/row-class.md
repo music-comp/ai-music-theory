@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Row Class
 slug: row-class
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Basics of Twelve-Tone Theory"
 chapter_number: 9
 pdf_page: null
 section: "IX.1"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-row
   - row-operations
@@ -26,7 +20,6 @@ extends: []
 related:
   - row-matrix
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a row class?"
   - "How many forms are in a row class?"

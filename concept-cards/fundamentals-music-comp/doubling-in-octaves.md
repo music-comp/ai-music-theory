@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Doubling in Octaves
 slug: doubling-in-octaves
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 51
 section: "Voice Leading"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - octave doubling
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-in-accompaniment
 extends:
@@ -34,7 +28,6 @@ related:
   - accompaniment-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When can voices be doubled in octaves?"
   - "What is the difference between doubling in octaves and parallel octaves?"

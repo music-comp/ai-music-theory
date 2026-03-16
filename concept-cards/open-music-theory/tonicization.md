@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonicization
 slug: tonicization
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 15
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "secondary function"
   - "temporary tonicization"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - dominant-seventh-chord
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is tonicization?"
   - "How does tonicization differ from modulation?"

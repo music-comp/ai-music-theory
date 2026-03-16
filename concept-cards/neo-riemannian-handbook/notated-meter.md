@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Notated Meter
 slug: notated-meter
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric theory
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "William E. Caplin"
@@ -17,15 +14,12 @@ chapter_number: 15
 pdf_page: 415
 section: "Notated Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "notation-based meter"
   - "notational meter"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - expressed-meter
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is notated meter in Riemann's theory?"
   - "How does notated meter differ from expressed meter?"

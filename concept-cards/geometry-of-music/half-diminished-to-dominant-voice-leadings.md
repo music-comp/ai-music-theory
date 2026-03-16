@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Half-Diminished to Dominant Seventh Voice Leadings
 slug: half-diminished-to-dominant-voice-leadings
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: chromatic-voice-leading
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 311
 section: "8.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tristan chord resolutions"
   - "iiø7-V7 voice leadings"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - efficient-voice-leading
   - tesseract-model-dominant-sevenths
@@ -35,7 +29,6 @@ related:
   - generalized-augmented-sixths
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How many efficient voice leadings exist from a half-diminished seventh to dominant seventh chords?"
   - "How are these voice leadings organized in four-note chord space?"

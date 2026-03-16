@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonics and Overtones
 slug: harmonics-and-overtones
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: fourier-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: 118
 section: "Harmonics and Overtones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "harmonic"
   - "overtone"
   - "partial"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fourier-series
   - fundamental-frequency
@@ -39,7 +33,6 @@ related:
   - reinforced-overtone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are harmonics and overtones?"
   - "How do harmonics differ from overtones in numbering?"

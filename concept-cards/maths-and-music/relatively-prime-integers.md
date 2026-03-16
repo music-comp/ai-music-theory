@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Relatively Prime Integers
 slug: relatively-prime-integers
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: number-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 100
 section: "Greatest Common Divisor"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "coprime"
   - "mutually prime"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - greatest-common-divisor
 extends:
@@ -37,7 +31,6 @@ related:
   - m-on-n-polyrhythmic-patterns
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does it mean for two integers to be relatively prime?"
   - "How does relative primality determine generating intervals?"

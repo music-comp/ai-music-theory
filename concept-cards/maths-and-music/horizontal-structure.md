@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Horizontal Structure
 slug: horizontal-structure
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: duration
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 30
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "temporal structure"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - functions-and-graphs
 extends: []
@@ -36,7 +30,6 @@ related:
   - musical-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is horizontal structure in music?"
   - "How does the mathematical horizontal axis relate to musical time?"

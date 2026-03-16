@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Direct Modulation
 slug: direct-modulation
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 17
 pdf_page: null
 section: "Direct modulations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "phrase modulation"
   - "abrupt modulation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulation
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - pivot-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a direct modulation?"
   - "How does a direct modulation differ from a pivot chord modulation?"

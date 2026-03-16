@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Unique Factorization in Positive Rationals
 slug: unique-factorization-in-positive-rationals
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 138
 section: "Unique Factorization of Positive Rational Numbers"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - fundamental theorem of arithmetic for rationals
   - "unique factorization in Q+"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - unique-prime-factorization
 extends:
@@ -35,7 +29,6 @@ related:
   - p-limit-tuning
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you factor a positive rational number into primes?"
   - "How does unique factorization in Q+ differ from unique factorization in Z+?"

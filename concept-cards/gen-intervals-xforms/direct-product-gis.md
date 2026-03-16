@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Direct-Product GIS
 slug: direct-product-gis
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: formal-features
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 62
 section: "3.3 Direct-Product GIS"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "GIS1 x GIS2"
   - "product GIS"
   - "compound GIS"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - direct-product
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - quotient-gis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct a direct-product GIS?"
   - "What is a direct-product GIS?"

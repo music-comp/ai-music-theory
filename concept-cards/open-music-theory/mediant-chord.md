@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mediant Chord
 slug: mediant-chord
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: diatonic-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "iii chord"
   - "III chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - tonic-prolongation
@@ -34,7 +28,6 @@ related:
   - strong-predominant
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the function of the iii chord?"
   - "Is iii a substitute for I6?"

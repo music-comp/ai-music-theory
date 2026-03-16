@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rondo Form
 slug: rondo-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sectional-forms
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "rondo"
   - "five-part rondo"
   - "sonata rondo"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - cadence
@@ -38,7 +32,6 @@ related:
   - ternary-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is rondo form and what are its main types?"
   - "What is the difference between five-part rondo and sonata rondo?"

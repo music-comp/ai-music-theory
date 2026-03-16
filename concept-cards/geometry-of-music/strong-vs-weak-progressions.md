@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Strong vs Weak Progressions
 slug: strong-vs-weak-progressions
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 245
 section: "7.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "strong and weak harmonic motion"
   - "strong progressions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - thirds-based-harmonic-grammar
 extends: []
@@ -35,7 +29,6 @@ related:
   - descending-fifths-as-composite
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why are descending fifths and thirds more common than ascending ones in tonal music?"
   - "How does the asymmetry between strong and weak progressions increase from tonic to dominant?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Traversable Landscape
 slug: traversable-landscape
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: epistemological transformation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Tonnetz as landscape"
   - "navigable tonal space"
   - "spatial-metaphorical Tonnetz"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
   - oettingens-acoustical-matrix
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - oettingens-acoustical-matrix
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did the Tonnetz change from a frequency calculator to a navigable space?"
   - "What is the traversable landscape conception of the Tonnetz?"

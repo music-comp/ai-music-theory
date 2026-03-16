@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Commutativity
 slug: commutativity
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: algebraic-structures
 tier: foundational
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 32
 section: "1.8.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - abelian property
   - commutative property
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-composition
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - associativity
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes a commutative GIS from a non-commutative GIS?"
   - "What mathematical concepts must I know before understanding GIS?"

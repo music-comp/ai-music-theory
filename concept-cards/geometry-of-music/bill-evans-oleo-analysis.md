@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Bill Evans "Oleo" Analysis
 slug: bill-evans-oleo-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: jazz-analysis
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 396
 section: "10.7"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Oleo analysis"
   - "Evans Everybody Digs analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rhythm-changes
   - tritone-substitution-geometry
@@ -35,7 +29,6 @@ related:
   - jazz-as-modernist-synthesis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Bill Evans' 'Oleo' solo demonstrate jazz's synthesis of tonal techniques?"
   - "What techniques does Evans use across four choruses?"

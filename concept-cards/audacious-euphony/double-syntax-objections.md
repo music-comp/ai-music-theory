@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Double Syntax Objections and Responses
 slug: double-syntax-objections
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: double syntax
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 217
 section: "Double Syntax and Its Skeptics"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "skeptics of double syntax"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-syntax-hypothesis
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - double-syntax-hypothesis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What objections have been raised to the double syntax hypothesis?"
   - "How does Cohn respond to claims that syntactic switching is implausible?"

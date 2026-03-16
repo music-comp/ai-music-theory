@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Blues Harmony
 slug: 12-bar-blues
 
-# === CLASSIFICATION ===
 category: form
 subcategory: blues-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: null
 section: "VI.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "twelve-bar blues"
   - "blues form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dominant-seventh-chord
   - plagal-cadence
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - authentic-cadence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the structure of a 12-bar blues?"
   - "How does blues harmony differ from tonal and jazz harmony?"

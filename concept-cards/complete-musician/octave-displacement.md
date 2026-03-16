@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octave Displacement
 slug: octave-displacement
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 16
 pdf_page: 364
 section: "Motivic Transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "registral displacement"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
 extends:
@@ -33,7 +27,6 @@ related:
   - compound-melody
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is octave displacement in motivic development?"
 ---

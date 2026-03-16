@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hybrid Form
 slug: hybrid-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sentence
   - period
@@ -33,7 +27,6 @@ related:
   - cadential-ending
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a hybrid form?"
   - "What are the three possible beginnings and three possible endings?"

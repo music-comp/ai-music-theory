@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mixture Voice Leading
 slug: mixture-voice-leading
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: mixture
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 27
 pdf_page: 616
 section: "Voice Leading for Mixture Harmonies"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modal-mixture
   - voice-leading
@@ -34,7 +28,6 @@ related:
   - chromatic-voice-exchange
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modal mixture?"
 ---

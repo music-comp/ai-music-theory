@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transpositional Near-Symmetry
 slug: transpositional-near-symmetry
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: symmetry
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.9.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "near-T-symmetry"
   - "near-transpositional invariance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transposition
   - near-symmetry
@@ -38,7 +32,6 @@ contrasts_with:
   - inversional-near-symmetry
   - permutational-near-symmetry
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is transpositional near-symmetry?"
   - "When can a chord be connected to its transposition by efficient voice leading?"

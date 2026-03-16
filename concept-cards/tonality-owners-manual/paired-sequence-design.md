@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Paired-Sequence Design
 slug: paired-sequence-design
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: modulatory-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 377
 section: "Modulatory schemas"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "paired-sequence schema"
   - "balanced modulatory design"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulatory-schemas
 extends:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - helicopter-drop
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a paired-sequence design in modulatory practice?"
   - "How do composers balance departure and return in development sections?"

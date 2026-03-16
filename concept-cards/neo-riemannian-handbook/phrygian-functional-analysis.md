@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrygian Functional Analysis
 slug: phrygian-functional-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-practices
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Daniel Harrison"
@@ -17,15 +14,12 @@ chapter_number: 20
 pdf_page: 565
 section: "III. Remarks on Fantasia on a Theme by Thomas Tallis"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - Phrygian mode analysis
   - Phrygian tonal function
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - absolute-progression-modal-chromaticism
@@ -36,7 +30,6 @@ related:
   - tonal-gravity-distortion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do functional categories apply to Phrygian-mode music?"
   - "How does modal context affect functional analysis?"

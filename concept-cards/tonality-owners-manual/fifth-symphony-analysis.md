@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fifth Symphony Analysis
 slug: fifth-symphony-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: beethoven-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 482
 section: "The Fifth Symphony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Fifth Symphony first movement analysis"
   - "Op. 67 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - the-ludwig
   - disguised-model-technique
@@ -38,7 +32,6 @@ related:
   - tempest-sonata-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the Fifth Symphony first movement built from sequential and schematic material?"
   - "What is the chordal-interval pattern (0, 0, -1, -1) and how does it permeate the movement?"

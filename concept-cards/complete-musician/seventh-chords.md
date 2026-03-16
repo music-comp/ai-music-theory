@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seventh Chords
 slug: seventh-chords
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: chord-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 138
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "7th chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triads
   - triad-quality
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - triads
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a seventh chord?"
   - "What must I know before learning seventh chords?"

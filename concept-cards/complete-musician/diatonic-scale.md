@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic Scale
 slug: diatonic-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 3
 section: "Scales"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic"
   - "seven-note scale"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - half-step-and-whole-step
   - chromatic-scale
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - chromatic-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does diatonic mean?"
   - "What is a diatonic scale?"

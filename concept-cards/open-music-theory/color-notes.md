@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Color Notes
 slug: color-notes
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: modal-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,19 +11,15 @@ chapter: "Diatonic Modes"
 chapter_number: 8
 pdf_page: null
 section: "VIII.7"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "characteristic notes"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-modes-20c
 extends: []
 related:
   - collection-analysis
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are color notes in modal theory?"
   - "How do color notes help identify modes?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Incomplete Neighbor
 slug: incomplete-neighbor
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: 210
 section: "The standardized second practice"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - appoggiatura
   - "escape tone"
   - echappee
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - neighbor-tone
   - nonharmonic-tone
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - neighbor-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an incomplete neighbor?"
   - "How are incomplete neighbors classified?"

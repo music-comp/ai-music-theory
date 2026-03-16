@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Common-Tone Augmented Sixth Chord
 slug: common-tone-augmented-sixth
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: symmetrical harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 35
 pdf_page: 810
 section: "Common-Tone Augmented Sixth Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "c.t.+6"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-sixth-chord
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - augmented-sixth-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a common-tone augmented sixth chord?"
 ---

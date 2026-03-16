@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: H-Group Transformations
 slug: h-group-transformations
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: hexatonic group
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 101
 section: "Chromatic Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "hexatonic-group transformations"
   - "H-class transformations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-region
   - weitzmann-region
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - w-group-transformations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three H-group transformations?"
   - "What does the H-group preserve and what does it shift?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Closing Section
 slug: closing-section
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 33
 pdf_page: 752
 section: "Closing Section"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Cl"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form-exposition
 extends: []
@@ -33,7 +27,6 @@ related:
   - first-tonal-area-and-second-tonal-area
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the closing section in sonata form?"
 ---

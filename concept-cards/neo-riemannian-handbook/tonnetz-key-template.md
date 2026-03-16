@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonnetz Key Template
 slug: tonnetz-key-template
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: chromatic-tonality
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "David Kopp"
@@ -17,16 +14,13 @@ chapter_number: 14
 pdf_page: 413
 section: "III. Postscript"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "key-flip on the Tonnetz"
   - "diatonic template on Tonnetz"
   - "Kopp's key template"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
   - chromatic-mediant
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - hexatonic-systems
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Tonnetz key template and how does it generate chromatic mediants?"
   - "How do key-flips on the Tonnetz produce the four chromatic mediant keys?"

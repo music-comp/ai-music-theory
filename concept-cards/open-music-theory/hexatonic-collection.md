@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hexatonic Collection
 slug: hexatonic-collection
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: collections
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,19 +11,15 @@ chapter: "Collections"
 chapter_number: 8
 pdf_page: null
 section: "VIII.8"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "hexatonic scale"
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
   - octatonic-collection
   - magic-hexachord
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the hexatonic collection?"
   - "How many hexatonic collections exist?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Weitzmann's Der ubermassige Dreiklang"
 slug: weitzmann-treatise
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: nineteenth-century-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 73
 section: "Reciprocity in Weitzmann's Der ubermassige Dreiklang"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "The Augmented Triad (Weitzmann)"
   - "Weitzmann 1853 monograph"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad
   - nebenverwandt
@@ -38,7 +32,6 @@ related:
   - consonance-dissonance-reciprocity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Weitzmann's treatise about?"
   - "How did Weitzmann organize consonant triads around augmented triads?"

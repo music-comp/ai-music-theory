@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: N/R Cycle
 slug: nr-cycle
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: cyclic-structures
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 79
 section: "Weitzmann Transformations and N/R Cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Nebenverwandt/Relative cycle"
   - "N/R chain (complete)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - n-transformation
   - r-transformation
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - hexatonic-cycle
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an N/R cycle?"
   - "How does the N/R cycle traverse a Weitzmann region?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Back-Relating Dominant
 slug: back-relating-dominant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 19
 pdf_page: 446
 section: "The Back-Relating Dominant"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "BRD"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
   - two-level-analysis
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - dominant-function
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a back-relating dominant?"
   - "How do you analyze V followed by ii without calling it a retrogression?"

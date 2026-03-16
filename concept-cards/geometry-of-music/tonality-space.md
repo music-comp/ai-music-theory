@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonality Space
 slug: tonality-space
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: conceptual-framework
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 207
 section: "5.8.3"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "space of tonal possibilities"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - five-components-of-tonality
   - macroharmony
@@ -38,7 +32,6 @@ related:
   - scalar-tradition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can we conceptualize possibilities between atonality and traditional tonality?"
   - "What is 'tonality space'?"

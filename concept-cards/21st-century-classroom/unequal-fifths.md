@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Unequal Fifths
 slug: unequal-fifths
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: rules
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 27
 pdf_page: 404
 section: "27.1 Voice Leading Seventh Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "unequal parallel fifths"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - objectionable-parallels
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - objectionable-parallels
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are unequal fifths?"
   - "When are unequal fifths acceptable?"

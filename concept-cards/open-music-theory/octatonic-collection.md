@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octatonic Collection
 slug: octatonic-collection
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: collections
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,20 +11,16 @@ chapter: "Collections"
 chapter_number: 8
 pdf_page: null
 section: "VIII.8"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "diminished scale"
   - "octatonic scale"
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
   - whole-tone-collection
   - hexatonic-collection
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the octatonic collection?"
   - "How many octatonic collections exist?"

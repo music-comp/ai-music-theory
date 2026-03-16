@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hearing-As vs. Hearing Plus Thinking
 slug: hearing-as-vs-hearing-plus-thinking
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: perception-and-epistemology
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 402
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "hearing as vs. hearing plus thinking"
   - "direct perception vs. calculation in music"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -33,7 +27,6 @@ related:
   - analytical-objectivity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between hearing something 'as' X and thinking 'that is X'?"
   - "How does the hearing-as distinction affect music-theoretical claims?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Umwenden
 slug: umwenden
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical practices
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Scott Burnham"
@@ -17,16 +14,13 @@ chapter_number: 16
 pdf_page: 451
 section: "Expansion and Closure"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "about-face"
   - "metric reinterpretation"
   - "retroactive function change"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-function
   - phrase-expansion
@@ -37,7 +31,6 @@ related:
   - auftakttheorie
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Umwenden in Riemann's metric analysis?"
   - "How can a periodic function be retrospectively reinterpreted?"

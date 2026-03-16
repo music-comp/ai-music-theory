@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Minor Scale
 slug: minor-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 13
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - major-scale
   - scale
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - major-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three types of minor scale?"
   - "How does minor differ from major?"

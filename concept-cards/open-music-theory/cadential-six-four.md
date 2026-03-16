@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cadential Six-Four
 slug: cadential-six-four
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: cadences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "cad. 6/4"
   - "cadential six-four chord"
   - "V 6/4"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dominant-seventh-chord
   - strong-predominant
@@ -40,7 +34,6 @@ contrasts_with:
   - passing-six-four
   - neighbor-six-four
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the cadential 6/4?"
   - "Why is the cadential 6/4 labeled as V, not I?"

@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Aggregate
 slug: aggregate
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,13 +11,10 @@ chapter: "Row Properties"
 chapter_number: 9
 pdf_page: null
 section: "IX.3"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "chromatic aggregate"
   - "twelve-tone aggregate"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - twelve-tone-row
@@ -29,7 +23,6 @@ related:
   - hexachordal-combinatoriality
   - partially-ordered-row
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an aggregate in twelve-tone theory?"
   - "How can aggregates be formed besides row statements?"

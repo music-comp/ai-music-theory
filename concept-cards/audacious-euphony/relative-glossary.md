@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Relative (R) - Glossary Definition"
 slug: relative-glossary
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: glossary-definitions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 79
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Relative relation"
   - "Relative major/minor"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - r-transformation
 extends: []
@@ -35,7 +29,6 @@ related:
   - lr-chain
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Relative (R) relation?"
   - "What distinguishes L, P, R, N, and S transformations?"

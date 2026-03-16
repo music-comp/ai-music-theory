@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Klangvertretung (Tone Representation)
 slug: klangvertretung
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: representational-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Benjamin Steege, Brian Hyer"
@@ -17,17 +14,14 @@ chapter_number: null
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Klang representation
   - tone representation
   - Stellvertretung
   - Scheinkonsonanz (apparent consonance)
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - harmonic-function
@@ -40,7 +34,6 @@ related:
   - parallelklang
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Klangvertretung (tone representation)?"
   - "How do individual tones imply complete harmonies in Riemann's theory?"

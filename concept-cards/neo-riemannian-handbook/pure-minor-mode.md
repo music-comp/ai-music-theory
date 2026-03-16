@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pure Minor Mode
 slug: pure-minor-mode
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: modal-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Matthew Gelbart, Alexander Rehding"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - reines Moll
   - natural minor with minor dominant
   - Aeolian mode (approximate)
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pentatonicism
   - harmonic-dualism
@@ -36,7 +30,6 @@ related:
   - diatonicity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the pure minor mode in Riemann's theory?"
   - "How does the Folkloristische Tonalitätsstudien relate to harmonic dualism?"

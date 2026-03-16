@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Invertible Counterpoint Below the Surface
 slug: invertible-counterpoint-below-surface
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: invertible counterpoint
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 15
 pdf_page: 349
 section: "Invertible Counterpoint Below the Music's Surface"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "structural invertible counterpoint"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - invertible-counterpoint
   - contrapuntal-expansion
@@ -35,7 +29,6 @@ related:
   - two-level-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can invertible counterpoint operate beneath a homophonic surface?"
   - "When is contrapuntal analysis more revealing than roman numeral analysis?"

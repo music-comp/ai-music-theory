@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Uniform vs. Individual Operations on Progressions
 slug: uniform-vs-individual-operations
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: formalism
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.5-2.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "uniform vs. individual symmetry"
   - "uniform and individual application"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - optic-symmetries
   - basic-musical-object
@@ -37,7 +31,6 @@ related:
   - chord-progression
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between uniform and individual application of OPTIC symmetries?"
   - "What is a voice leading vs. a chord progression?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Well-Tempered Clavier
 slug: well-tempered-clavier
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: temperament
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 152
 section: "Drawbacks of Unequal Temperament"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Das Wohltemperierte Klavier
   - WTC
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - equal-temperament-versus-just-intonation
   - harmonic-freedom-and-modulation
@@ -35,7 +29,6 @@ related:
   - comma-placement-on-circle-of-fifths
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Well-Tempered Clavier?"
   - "How does it demonstrate equal temperament?"

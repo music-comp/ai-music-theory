@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Continuous Harmonic Structure
 slug: continuous-harmonic-structure
 
-# === CLASSIFICATION ===
 category: form
 subcategory: structural patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 20
 pdf_page: 462
 section: "Types of Periods"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - period
 extends:
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - harmonic-interruption
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a continuous harmonic structure in a period?"
 ---

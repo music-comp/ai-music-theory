@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Standing on the Dominant
 slug: standing-on-the-dominant
 
-# === CLASSIFICATION ===
 category: form
 subcategory: repetition-patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 151
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-exchange
 extends: []
@@ -33,7 +27,6 @@ related:
   - transposing-round
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is standing on the dominant and how does it relate to sequences?"
 ---

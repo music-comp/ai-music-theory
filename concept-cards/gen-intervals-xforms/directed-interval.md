@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Directed Interval
 slug: directed-interval
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: interval-concepts
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 47
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - directed measurement
   - directed motion
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - function
   - group
@@ -36,7 +30,6 @@ related:
   - gis-theorem-2-3-2
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the LABEL function?"
   - "How does the interval function int relate to the group IVLS?"

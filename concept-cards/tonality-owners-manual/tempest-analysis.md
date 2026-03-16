@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tempest Sonata Analysis
 slug: tempest-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: beethoven-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 457
 section: "The Tempest"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Op. 31 no. 2 analysis
   - Tempest first movement analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - the-ludwig
   - reduction-as-paraphrase
@@ -39,7 +33,6 @@ related:
   - registral-expansion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Tymoczko analyze Beethoven's Tempest sonata?"
   - "How do sequences function as reductive targets in analysis?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Comprehensibility through Subdivision
 slug: comprehensibility-through-subdivision
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 10
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - subdivision
   - structural subdivision
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends:
   - form
@@ -36,7 +30,6 @@ related:
   - motive
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is musical form?"
   - "Why must music be divided into parts?"

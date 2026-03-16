@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Consonance and Dissonance in Dualist Theory
 slug: consonance-dissonance-dualism
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: harmonic-foundations
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "dualist consonance"
   - "Klang-based consonance"
   - "psychological consonance theory"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - klang
@@ -37,7 +31,6 @@ related:
   - klang-representation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does dualist theory define consonance and dissonance?"
   - "Why does Riemann reject acoustic explanations of consonance?"

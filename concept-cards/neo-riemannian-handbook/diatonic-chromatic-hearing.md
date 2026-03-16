@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic vs. Chromatic Hearing
 slug: diatonic-chromatic-hearing
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical frameworks and methods
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Suzannah Clark"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "diatonic vs. chromatic analysis"
   - "scale-based vs. transformation-based hearing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonal-imagination
   - klangvertretung
@@ -36,7 +30,6 @@ related:
   - plr-transformations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does one decide between a diatonic and chromatic hearing of a passage?"
   - "How does Klangvertretung mediate between diatonic and chromatic frameworks?"

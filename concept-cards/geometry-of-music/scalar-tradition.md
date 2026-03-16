@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scalar Tradition
 slug: scalar-tradition
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: historical-style
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 204
 section: "5.8.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "scalar common practice"
   - "extended tonal tradition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - macroharmony
   - generalized-theory-of-keys
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - chromatic-tradition
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What features distinguish 19th-century chromaticism from 20th-century scalar composition?"
   - "What features identify 'chord-first' versus 'scale-first' composition?"

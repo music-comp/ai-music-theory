@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fermata
 slug: fermata
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: null
 section: "Structural Features"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "hold"
   - "bird's eye"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - note
   - rest-values
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - caesura
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a fermata?"
   - "How long should a fermata be held?"

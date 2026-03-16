@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Geometry of Two-Voice Sequences
 slug: geometry-of-two-voice-sequences
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 4
 pdf_page: 155
 section: "The geometry of two-voice sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-dyad-circle
   - repeating-contrapuntal-pattern
@@ -36,7 +30,6 @@ related:
   - contrary-motion-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are all the possible types of two-voice harmonically consistent sequences?"
   - "How does the spiral diagram classify sequential possibilities?"

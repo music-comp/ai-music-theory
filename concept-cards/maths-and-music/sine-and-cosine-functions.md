@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sine and Cosine Functions
 slug: sine-and-cosine-functions
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: periodic-functions
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 118
 section: "Shifting and Stretching Sine and Cosine"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "sinusoidal functions"
   - "trigonometric functions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-functions
 extends: []
@@ -36,7 +30,6 @@ related:
   - fourier-series
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What role do sine and cosine play in sound analysis?"
   - "How are sine and cosine related to each other?"

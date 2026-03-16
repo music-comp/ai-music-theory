@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fonte Schema
 slug: fonte-schema
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: galant-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: null
 section: "Answer/Process/Transition"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - galant-schema
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - monte-schema
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Fonte schema and how does it tonicize two keys?"
   - "How does the Fonte relate to the Meyer and the cycle of fifths?"

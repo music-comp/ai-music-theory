@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Stacks of Perfect Fifths
 slug: stacks-of-fifths
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: construction
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 142
 section: "4.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Pythagorean construction"
   - "fifth-generated scales"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - goldilocks-principle
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - stacks-of-thirds
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can scales be constructed from perfect fifths?"
   - "Why do stacks of fifths produce nearly even scales?"

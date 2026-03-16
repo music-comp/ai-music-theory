@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Acoustic Consonance
 slug: acoustic-consonance
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: acoustics
 tier: foundational
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 21
 section: "1.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "consonance"
   - "sensory consonance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - dissonance
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the five components of tonality?"
   - "What is acoustic consonance?"

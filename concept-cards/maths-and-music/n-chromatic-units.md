@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: N-Chromatic Units
 slug: n-chromatic-units
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: measurement
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 58
 section: "Arbitrary Chromatic Units"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - arbitrary chromatic units
   - n-tone equal temperament
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - semitone-ratio
 extends:
@@ -35,7 +29,6 @@ related:
   - microtuning
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are n-chromatic units?"
   - "How do you generalize equal temperament to n divisions of the octave?"

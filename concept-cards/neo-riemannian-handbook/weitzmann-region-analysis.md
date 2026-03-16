@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Weitzmann Region Analysis
 slug: weitzmann-region-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-practices
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Steven Rings"
@@ -17,15 +14,12 @@ chapter_number: 18
 pdf_page: 494
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - Weitzmann region
   - augmented-triad-based analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
   - voice-leading-efficiency
@@ -36,7 +30,6 @@ related:
   - analytical-values-paradigms
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Weitzmann region in neo-Riemannian theory?"
   - "How do I analyze chromatic progressions using neo-Riemannian tools?"

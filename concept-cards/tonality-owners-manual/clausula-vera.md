@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Clausula Vera
 slug: clausula-vera
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: origins-of-tonality
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 257
 section: "Origin and meaning"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - true cadence
   - converging-voice cadence
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - protofunctionality
 extends: []
@@ -34,7 +28,6 @@ related:
   - leading-tone-resolution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a clausula vera?"
   - "How does the clausula vera illustrate the divergence of origin and meaning?"

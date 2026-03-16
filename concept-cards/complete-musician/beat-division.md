@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Beat Division
 slug: beat-division
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric-organization
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 33
 section: "Beat Division and Simple and Compound Meters"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "subdivision"
   - "binary division"
   - "ternary division"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pulse-and-beat
   - meter
@@ -37,7 +31,6 @@ related:
   - borrowed-division
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is beat division?"
   - "What distinguishes simple from compound meter?"

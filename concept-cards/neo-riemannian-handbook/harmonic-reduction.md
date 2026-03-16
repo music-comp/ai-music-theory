@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Reduction
 slug: harmonic-reduction
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-method
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier"
@@ -17,17 +14,14 @@ chapter_number: 1
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - Klangschluessel reduction
   - harmonic skeleton
   - reductional sketch
   - Scheinharmonie (apparent harmony)
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - harmonic-function
@@ -39,7 +33,6 @@ related:
   - louis-thuille-synthesis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does function theory enable analytical reduction of complex harmony?"
   - "What distinguishes Riemann's original theory from neo-Riemannian theory?"

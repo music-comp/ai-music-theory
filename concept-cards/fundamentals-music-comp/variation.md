@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Variation
 slug: variation
 
-# === CLASSIFICATION ===
 category: motive
 subcategory: motivic-development
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 14
 section: "Use of the motive requires variation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - motivic variation
   - motive variation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
 extends: []
@@ -37,7 +31,6 @@ related:
   - feature-importance-hierarchy
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is developing variation?"
   - "What must I know before understanding developing variation?"

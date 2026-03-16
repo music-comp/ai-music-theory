@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: French Sixth Chord
 slug: french-sixth-chord
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: seventh chord types
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 175
 section: "4-Cube Trio"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "set class 4-25"
   - "prime form [0268]"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - four-cube-trio
   - tristan-genus
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - nearly-even-tetrachord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What role does the French sixth chord play in 4-Cube Trio?"
   - "How does the French sixth serve as a bridging chord?"

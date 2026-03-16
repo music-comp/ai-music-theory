@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Schlussformel in Dualist Theory
 slug: schlussformel-dualism
 
-# === CLASSIFICATION ===
 category: form
 subcategory: cadential-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Alexander Rehding"
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "closing formula"
   - "cadential formula in dualism"
   - "Riemann's Schlussformel"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - characteristic-dissonance
@@ -37,7 +31,6 @@ related:
   - harmonic-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Schlussformel in Riemann's theory?"
   - "How does cadential function work in dualist theory?"

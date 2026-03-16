@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seventh Chord
 slug: seventh-chord
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: seventh-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 44
 section: "Seventh Chord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - dominant seventh chord
   - dominant seventh
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - major-triad
 extends:
@@ -37,7 +31,6 @@ contrasts_with:
   - minor-seventh-chord
   - major-seventh-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a seventh chord (dominant seventh)?"
   - "How does a seventh chord relate to the major triad?"

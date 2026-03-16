@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Configuration and Center of Gravity
 slug: configuration-and-center-of-gravity
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: configurations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 87
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - configurational perspective
   - center-of-mass coordinate system
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading
 extends: []
@@ -35,7 +29,6 @@ related:
   - voicing-as-set-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a musical configuration?"
   - "What is center of gravity in voice leading?"

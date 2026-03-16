@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Prime Row
 slug: prime-row
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: serialism
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 74
 section: "Twelve-Tone Music"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - original row
   - tone row
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-technique
 extends: []
@@ -35,7 +29,6 @@ related:
   - n-tone-row-chart
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a prime row in twelve-tone composition?"
   - "How does the prime row determine the entire row chart?"

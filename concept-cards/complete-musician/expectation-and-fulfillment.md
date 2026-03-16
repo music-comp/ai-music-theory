@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Expectation and Fulfillment
 slug: expectation-and-fulfillment
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: perception
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 162
 section: "Melodic Fluency"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - Gestalt expectation/fulfillment
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - melodic-fluency
 extends: []
@@ -34,7 +28,6 @@ related:
   - evaded-cadence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What must I know before understanding voice leading?"
 ---

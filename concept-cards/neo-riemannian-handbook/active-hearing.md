@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Active Hearing (Aktives Horen)
 slug: active-hearing
 
-# === CLASSIFICATION ===
 category: rhythm-and-meter
 subcategory: aesthetic-principles
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "William E. Caplin"
@@ -17,16 +14,13 @@ chapter_number: 15
 pdf_page: 420
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "aktives Horen"
   - "active listening"
   - "goal-directed hearing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - notated-meter
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Riemann's principle of active hearing?"
   - "How does active hearing support Riemann's end-accented Auftakttheorie?"

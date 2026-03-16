@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Functional vs. Transformational Interpretation
 slug: functional-vs-transformational
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: epistemological issues in theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "function vs. transformation"
   - "Riemannian vs. neo-Riemannian reading"
   - "classification vs. transformation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonieschritte
   - schritt-wechsel-system
@@ -37,7 +31,6 @@ related:
   - neo-riemannian-operations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the neo-Riemannian interpretation differ from Riemann's original intent?"
   - "What is the conflation of functional and transformational readings?"

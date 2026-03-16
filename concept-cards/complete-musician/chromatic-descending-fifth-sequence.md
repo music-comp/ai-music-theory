@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Descending Fifth Sequence
 slug: chromatic-descending-fifth-sequence
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: chromatic sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 36
 pdf_page: 829
 section: "The Chromatic Forms of the D2 (-5/+4) Sequence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "D2 (-P5/+P4)"
   - "D2 (-P5/+A4)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-sequences
 extends:
@@ -34,7 +28,6 @@ related:
   - chromatic-descending-second-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do chromatic sequences extend diatonic ones?"
 ---

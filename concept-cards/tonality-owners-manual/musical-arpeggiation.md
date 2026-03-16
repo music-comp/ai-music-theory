@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Musical Arpeggiation
 slug: musical-arpeggiation
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: melodic-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 410
 section: "Strategy and reduction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - large-scale arpeggiation
   - collectional arpeggiation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - quadruple-hierarchy
   - directed-melody
@@ -36,7 +30,6 @@ related:
   - the-ludwig
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Tymoczko reconceive Schenkerian arpeggiation?"
   - "How is large-scale melodic arpeggiation achieved through schematic building blocks?"

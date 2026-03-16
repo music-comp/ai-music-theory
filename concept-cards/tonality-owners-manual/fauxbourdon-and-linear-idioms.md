@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fauxbourdon and Linear Idioms
 slug: fauxbourdon-and-linear-idioms
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 330
 section: "Fauxbourdon and linear idioms"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "fauxbourdon"
   - "linear idioms in functional harmony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-cycle-theory
 extends: []
@@ -35,7 +29,6 @@ related:
   - pseudochord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the fauxbourdon tradition connect to functional progressions?"
   - "What role does parallel motion play in functional harmony?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Atonal Organization
 slug: atonal-organization
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: 247
 section: "Atonality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - atonality
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - tonality
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is atonal music organized structurally?"
   - "What role does motivic concentration play in atonality?"

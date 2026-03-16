@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tones of Figuration
 slug: tones-of-figuration
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 162
 section: "Consonance and Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - melodic embellishments
   - figuration
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonance-and-dissonance
   - nonchord-tones
@@ -37,7 +31,6 @@ related:
   - accented-vs-unaccented-dissonance
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

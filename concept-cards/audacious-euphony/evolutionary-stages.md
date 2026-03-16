@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Evolutionary Stages of Chromatic Syntax
 slug: evolutionary-stages
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: evolutionary framework
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 228
 section: "The Soft Revolution"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "stages of the soft revolution"
   - "four-stage model"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - soft-revolution
   - preadaptation
@@ -38,7 +32,6 @@ related:
   - near-evenness
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the evolutionary stages of chromatic syntax?"
   - "How did atonality develop from tonal music?"

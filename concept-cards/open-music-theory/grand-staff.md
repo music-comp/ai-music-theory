@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Grand Staff
 slug: grand-staff
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: null
 section: "The Grand Staff"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "great staff"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - staff
   - clef
@@ -36,7 +30,6 @@ related:
   - piano-keyboard
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a grand staff?"
   - "How are the treble and bass staves connected?"

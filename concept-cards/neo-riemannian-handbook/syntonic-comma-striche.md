@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Syntonic Comma and Striche
 slug: syntonic-comma-striche
 
-# === CLASSIFICATION ===
 category: pitch-space
 subcategory: notation and pitch distinction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Comma of Didymus"
   - "Striche (comma marks)"
   - "syntonic comma notation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
 extends: []
@@ -37,7 +31,6 @@ related:
   - regional-space
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are Striche and what do they indicate on the Tonnetz?"
   - "What is the syntonic comma and why does it matter for the Tonnetz?"

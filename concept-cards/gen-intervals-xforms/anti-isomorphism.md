@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Anti-Isomorphism
 slug: anti-isomorphism
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: group-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 77
 section: "3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "anti-homomorphism"
   - "order-reversing isomorphism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - group-of-transpositions
   - transposition-operation
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - group-of-interval-preserving-operations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why does composing two transpositions reverse the order of intervals?"
   - "What is the algebraic relationship between IVLS and TNSPS?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ponte Schema
 slug: ponte-schema
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: galant-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: null
 section: "Answer/Process/Transition"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - galant-schema
 extends: []
@@ -34,7 +28,6 @@ contrasts_with:
   - fonte-schema
   - monte-schema
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Ponte schema and how does it function?"
 ---

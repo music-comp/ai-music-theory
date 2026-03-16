@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modal Mixture
 slug: modal-mixture
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: mixture
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 27
 pdf_page: 616
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "mixture"
   - "borrowed chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - parallel-keys
   - pre-dominant-function
@@ -39,7 +33,6 @@ contrasts_with:
   - applied-chord
   - tonicization
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modal mixture?"
   - "How does modal mixture relate to borrowed chords?"

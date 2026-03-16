@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Gradual Evolution of Tonality
 slug: gradual-evolution-of-tonality
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: origins-of-tonality
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 257
 section: "A broader perspective"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - evolutionary view of tonality
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - protofunctionality
   - zeroth-order-properties
@@ -35,7 +29,6 @@ related:
   - harmony-and-polyphony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is functional tonality, and when did it emerge historically?"
   - "Did functional tonality emerge suddenly or gradually?"

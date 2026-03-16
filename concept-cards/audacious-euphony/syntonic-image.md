@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Syntonic Image
 slug: syntonic-image
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: tuning and closure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 193
 section: "The Diatonic Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "syntonic comma identification"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-tonnetz
   - consonant-triad
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - enharmonic-seam
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a syntonic image?"
   - "How does the syntonic comma relate to the diatonic Tonnetz?"

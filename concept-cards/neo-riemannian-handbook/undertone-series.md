@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Undertone Series
 slug: undertone-series
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: acoustic-foundations
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,17 +14,14 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Untertonreihe"
   - "under-series"
   - "dual series"
   - "string-length series"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - overtone-series
 extends: []
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - overtone-series
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the undertone series?"
   - "How does harmonic dualism relate to the undertone series?"

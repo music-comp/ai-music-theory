@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Row Naming Conventions
 slug: row-naming-conventions
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,20 +11,16 @@ chapter: "Naming Conventions for Rows"
 chapter_number: 9
 pdf_page: null
 section: "IX.2"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "fixed zero"
   - "moveable zero"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - row-matrix
 extends: []
 related:
   - twelve-tone-row
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the different conventions for labeling twelve-tone rows?"
   - "What is fixed zero vs. moveable zero?"

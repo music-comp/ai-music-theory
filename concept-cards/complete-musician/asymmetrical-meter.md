@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Asymmetrical Meter
 slug: asymmetrical-meter
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: meter-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 33
 section: "Asymmetrical Meters"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "irregular meter"
   - "odd meter"
   - "additive meter"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - meter
   - simple-meter
@@ -36,7 +30,6 @@ extends:
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an asymmetrical meter?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generic Interval
 slug: generic-interval
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: null
 section: "Generic Intervals (Interval Size)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "interval size"
   - "interval number"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch
   - staff
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - interval-quality
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a generic interval?"
   - "How do you count the size of an interval?"

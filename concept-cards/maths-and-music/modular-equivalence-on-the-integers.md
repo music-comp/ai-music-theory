@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modular Equivalence on the Integers
 slug: modular-equivalence-on-the-integers
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Modular Equivalence on the Integers"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - congruence modulo m
   - integer modular equivalence
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modular-equivalence-on-the-real-numbers
 extends:
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - modular-equivalence-on-the-real-numbers
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modular equivalence on the integers?"
   - "How does modular equivalence partition Z into equivalence classes?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generalized Augmented Sixth Chords
 slug: generalized-augmented-sixths
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-techniques
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 290
 section: "8.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "generalized augmented sixth resolutions"
   - "twelve augmented sixth schemas"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - decorative-chromaticism
   - efficient-voice-leading
@@ -37,7 +31,6 @@ related:
   - tristan-chord-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a generalized augmented sixth chord?"
   - "How many basic schemas exist for efficient voice leading from seventh chord to triad?"

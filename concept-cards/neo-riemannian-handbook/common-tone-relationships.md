@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Common-Tone Relationships
 slug: common-tone-relationships
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: voice-leading and pitch retention
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Suzannah Clark"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "common tones"
   - "shared pitch classes"
   - "pitch-class retention"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -37,7 +31,6 @@ related:
   - maximally-smooth-cycles
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are common-tone relationships and why do they matter?"
   - "How do common tones relate to PLR transformations?"

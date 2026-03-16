@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: SUBM Transformation
 slug: subm-transformation
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: klang-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "8.1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang-representation
   - med-transformation
@@ -36,7 +30,6 @@ contrasts_with:
   - med-transformation
   - rel-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I apply SUBM to Klangs?"
 ---

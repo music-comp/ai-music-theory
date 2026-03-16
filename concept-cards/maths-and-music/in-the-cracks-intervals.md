@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: In-the-Cracks Intervals
 slug: in-the-cracks-intervals
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: approximation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 110
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "quarter-tone intervals"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - keyboard-approximation-of-integer-ratios
   - error-calculation-in-cents
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - powers-of-two-as-exact-keyboard-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are in-the-cracks intervals?"
   - "Which integer ratios are most poorly approximated by the keyboard?"

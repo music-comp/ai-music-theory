@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Split-Third Chord
 slug: split-third-chord
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: seventh chord types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 160
 section: "Four Eighteenth-Century Approaches to Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "alpha sonority"
   - "[0347]-type tetrachord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - combination-strategy
   - p-transformation
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - nearly-even-tetrachord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the split-third chord and how does it arise?"
   - "How does the combination strategy generate dissonant tetrachords?"

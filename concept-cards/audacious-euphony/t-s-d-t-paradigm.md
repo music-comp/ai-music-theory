@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: T-S-D-T Paradigm
 slug: t-s-d-t-paradigm
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: diatonic functional syntax
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 194
 section: "The Diatonic Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tonic-subdominant-dominant-tonic"
   - "cadential paradigm"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-tonnetz
   - rings-arrows
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - pan-triadic-syntax
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the T-S-D-T paradigm on the Tonnetz?"
   - "How does the basic diatonic cadential pattern map onto the Tonnetz?"

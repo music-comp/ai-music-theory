@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sealed Capsule Metaphor
 slug: sealed-capsule-metaphor
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: diatonic-chromatic interaction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: 205
 section: "The Convertible Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "capsules bobbing on the pan-triadic sea"
   - "microecological capsule"
   - "diatonic capsule"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-encapsulation
   - convertible-tonnetz
@@ -37,7 +31,6 @@ related:
   - double-syntax-hypothesis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the sealed capsule metaphor?"
   - "How do locally tonal passages relate to global chromatic organization?"

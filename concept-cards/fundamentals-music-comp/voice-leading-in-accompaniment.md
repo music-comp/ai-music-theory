@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading in Accompaniment
 slug: voice-leading-in-accompaniment
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 51
 section: "Voice Leading"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - accompaniment-function
   - chorale-like-accompaniment
@@ -34,7 +28,6 @@ related:
   - figuration-and-broken-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does voice leading work in piano accompaniment?"
   - "When can voices be added or subtracted in piano writing?"

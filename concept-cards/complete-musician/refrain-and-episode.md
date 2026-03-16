@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Refrain and Episode
 slug: refrain-and-episode
 
-# === CLASSIFICATION ===
 category: form
 subcategory: rondo
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 32
 pdf_page: 730
 section: "Rondo"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rondo-form
 extends: []
@@ -32,7 +26,6 @@ related:
   - seven-part-rondo
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are refrains and episodes in rondo form?"
 ---

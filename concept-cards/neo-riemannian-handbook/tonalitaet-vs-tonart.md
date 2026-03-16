@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Tonalit\xE4t vs. Tonart"
 slug: tonalitaet-vs-tonart
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic harmony
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "David Kopp"
@@ -17,15 +14,12 @@ chapter_number: 14
 pdf_page: 401
 section: "I. Introduction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "tonality vs. key"
   - "chromatic tonality vs. diatonic key"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
 extends: []
@@ -35,7 +29,6 @@ related:
   - harmonic-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between Tonalitat and Tonart in Riemann's theory?"
   - "How does chromatic tonality relate to diatonic function?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Three-Note Chord Space
 slug: three-note-chord-space
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 103
 section: "3.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "three-dimensional chord space"
   - "triangular prism chord space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-note-chord-space
   - mobius-strip-topology
@@ -38,7 +32,6 @@ related:
   - voice-leading-lattices
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the geometry of three-note chord space?"
   - "Where do major and minor triads lie in this space?"

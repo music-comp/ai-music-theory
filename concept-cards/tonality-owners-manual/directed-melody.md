@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Directed Melody
 slug: directed-melody
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: melodic-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 408
 section: "Strategy and reduction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - melodic directedness
   - melodic strategy
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - quadruple-hierarchy
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - prolongational-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What makes a melody feel purposeful rather than aimless?"
   - "How do melodies articulate voice-leading structures at different levels of complexity?"

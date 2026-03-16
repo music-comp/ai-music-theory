@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Jazz Chord Symbols
 slug: chord-symbols-jazz
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-notation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: null
 section: "VI.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "lead sheet symbols"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triad-types
   - seventh-chord-types
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - roman-numerals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do chord symbols work in jazz lead sheets?"
   - "What are the defaults and alterations in chord symbol notation?"

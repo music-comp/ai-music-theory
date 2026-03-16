@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Figuration and Broken Chords
 slug: figuration-and-broken-chords
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: accompaniment-types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 51
 section: "The Motive of the Accompaniment"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - broken-chord accompaniment
   - arpeggiated accompaniment
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chorale-like-accompaniment
   - accompaniment-function
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - chorale-like-accompaniment
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is figuration in accompaniment?"
   - "How do broken chords relate to chorale-like harmony?"

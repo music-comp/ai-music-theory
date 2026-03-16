@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fugal Exposition
 slug: fugal-exposition
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: fugue
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "exposition (fugal)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - counterpoint
   - imitation
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - sonata-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a fugal exposition and how is it structured?"
   - "In what order do voices typically enter?"

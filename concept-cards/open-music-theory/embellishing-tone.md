@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Embellishing Tone
 slug: embellishing-tone
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: non-chord-tones
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: null
 section: "Overview"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "non-chord tone"
   - "nonharmonic tone"
   - "NCT"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading
   - consonance
@@ -42,7 +36,6 @@ related:
   - pedal-tone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three categories of embellishing tones?"
   - "What is an embellishing tone?"

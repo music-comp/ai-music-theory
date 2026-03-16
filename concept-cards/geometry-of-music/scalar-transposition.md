@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scalar Transposition
 slug: scalar-transposition
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: operations
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: 137
 section: "4.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic transposition"
   - "transposition within a scale"
   - "step transposition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-as-ruler
   - scale-degree-arithmetic
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - chromatic-transposition
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is scalar transposition?"
   - "How does scalar transposition differ from chromatic transposition?"

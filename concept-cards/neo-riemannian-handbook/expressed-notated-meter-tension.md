@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Expressed-Notated Meter Tension
 slug: expressed-notated-meter-tension
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "William E. Caplin"
@@ -17,15 +14,12 @@ chapter_number: 15
 pdf_page: 418
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "metric theory tension"
   - "notated vs. expressed meter conflict"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - expressed-meter
   - notated-meter
@@ -36,7 +30,6 @@ related:
   - harmoniewirkung
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes Riemann's metric theory from conventional metric analysis?"
   - "What internal tension exists in Riemann's metric theory?"

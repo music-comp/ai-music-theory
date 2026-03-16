@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Slide (S) - Glossary Definition"
 slug: slide-glossary
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: glossary-definitions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: 82
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Slide relation"
   - "Terzgleich"
   - "Same-third relation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - s-transformation
 extends: []
@@ -35,7 +29,6 @@ related:
   - lp-equals-s-identity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Slide (S) relation?"
   - "What distinguishes L, P, R, N, and S transformations?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hierarchical Set Theory
 slug: hierarchical-set-theory
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: set-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 533
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - multilevel set theory
   - scale-relative set theory
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-distance-and-scale-steps
   - double-transposition
@@ -37,7 +31,6 @@ related:
   - tinctoris-transform
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What foundational knowledge is needed for geometric models of voice leading?"
   - "How does Tymoczko's set theory differ from traditional pitch-class set theory?"

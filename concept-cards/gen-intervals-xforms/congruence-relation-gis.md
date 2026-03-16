@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Congruence Relation in GIS
 slug: congruence-relation-gis
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: formal-features
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 62
 section: "3.2 Quotient GIS"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "CONG"
   - "congruence on IVLS"
   - "group congruence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-group-ivls
   - equivalence-relation
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - equivalence-relation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct a quotient GIS from a congruence relation?"
   - "What is a congruence relation on IVLS?"

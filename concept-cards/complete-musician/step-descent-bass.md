@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Step-Descent Bass
 slug: step-descent-bass
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 18
 pdf_page: 425
 section: "The Step Descent in the Bass"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "descending bass line"
   - "direct step-descent bass"
   - "indirect step-descent bass"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - submediant
   - contrapuntal-expansion
@@ -37,7 +31,6 @@ related:
   - minor-v-as-passing-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a step-descent bass?"
   - "What is the difference between direct and indirect step-descent basses?"

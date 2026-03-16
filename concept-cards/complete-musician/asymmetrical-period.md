@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Asymmetrical Period
 slug: asymmetrical-period
 
-# === CLASSIFICATION ===
 category: form
 subcategory: structural patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 21
 pdf_page: 477
 section: "Asymmetrical Periods"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - period
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - phrase-group
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an asymmetrical period?"
   - "How do asymmetrical periods distribute their phrases?"

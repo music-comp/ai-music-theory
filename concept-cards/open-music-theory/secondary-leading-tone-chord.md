@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Secondary Leading-Tone Chord
 slug: secondary-leading-tone-chord
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 15
 pdf_page: null
 section: "Secondary leading-tone chords (viio(7)/V)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "vii-o/x"
   - "vii-o7/x"
   - "applied leading-tone chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonicization
   - applied-chord
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - secondary-dominant
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a secondary leading-tone chord?"
   - "How does it differ from a secondary dominant?"

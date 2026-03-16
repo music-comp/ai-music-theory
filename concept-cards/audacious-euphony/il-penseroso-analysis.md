@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Il Penseroso Analysis (Liszt)"
 slug: il-penseroso-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: liszt-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 91
 section: "The Double-Agent Complex"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Annees de pelerinage Il Penseroso"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-agent-complex
   - s-transformation
@@ -35,7 +29,6 @@ related:
   - double-agent-pitch
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Liszt distribute the double-agent complex across phrases?"
 ---

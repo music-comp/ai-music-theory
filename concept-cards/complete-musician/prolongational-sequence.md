@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Prolongational Sequence
 slug: prolongational-sequence
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 23
 pdf_page: 514
 section: "Composing Sequences Within the Phrase Model"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-sequence
   - phrase-model
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - transitional-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a prolongational sequence?"
   - "How does a prolongational sequence differ from a transitional sequence?"

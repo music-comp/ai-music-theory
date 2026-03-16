@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hexatonic Misnomer
 slug: hexatonic-misnomer
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "David Kopp"
@@ -17,15 +14,12 @@ chapter_number: 14
 pdf_page: 414
 section: "III. Postscript"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "hexatonic label critique"
   - "critique of hexatonic organization"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-systems
   - chromatic-mediant
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - hexatonic-systems
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why might 'hexatonic' be a misnomer for chromatic mediant organization?"
   - "How do I identify hexatonic and octatonic cycles in music?"

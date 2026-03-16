@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic Scale Overdetermination
 slug: diatonic-scale-overdetermination
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: double syntax
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 231
 section: "On Musical Overdetermination"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "scalar double determination"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - overdetermination
   - generating-interval
@@ -36,7 +30,6 @@ related:
   - preadaptation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the diatonic scale overdetermined?"
   - "What is unique multiplicity?"

@@ -1,32 +1,26 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chord Space Formal Construction
 slug: chord-space-formal-construction
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: formal-mathematics
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
 chapter: "Appendix B: Chord Geometry: A More Technical Look"
-chapter_number: appendix-b
+chapter_number: null
 pdf_page: 419
 section: "Appendix B"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "T^n/S_n orbifold"
   - "chord space orbifold"
   - "fundamental domain for chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ordered-pitch-space
 extends:
@@ -35,7 +29,6 @@ related:
   - voice-leading-lattices
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the space of chords formally constructed?"
   - "What mathematical structure does chord space have?"

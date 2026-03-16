@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic Sequence
 slug: melodic-sequence
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 16
 pdf_page: 364
 section: "Motivic Repetition"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "sequential repetition of a motive"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - motivic-repetition-types
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - harmonic-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a melodic sequence?"
   - "How does a melodic sequence differ from a harmonic sequence?"

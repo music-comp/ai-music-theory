@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Substitution Strategy
 slug: substitution-strategy
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: strategies
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 157
 section: "Four Eighteenth-Century Approaches to Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "substitution"
   - "substitutional strategy"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - four-approaches-to-dissonance
   - diminished-seventh-chord
@@ -39,7 +33,6 @@ contrasts_with:
   - reduction-strategy
   - deletion-strategy
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I apply the four dissonance strategies (deletion, reduction, substitution, combination)?"
   - "How do seventh chords extend the triadic voice-leading model?"

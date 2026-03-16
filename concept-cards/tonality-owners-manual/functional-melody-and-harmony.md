@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Functional Melody and Harmony
 slug: functional-melody-and-harmony
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 326
 section: "Functional melody, functional harmony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "melody-harmony tension in functional tonality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - descending-thirds-arrangement
   - harmonic-cycle-theory
@@ -35,7 +29,6 @@ related:
   - double-emploi
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do functional composers reconcile harmonic progressions with descending melody?"
   - "Why did functional harmony expand from triads to seventh chords?"

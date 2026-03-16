@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scalar Distance vs Chromatic Distance
 slug: scalar-distance-vs-chromatic-distance
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: measurement
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 134
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic vs chromatic distance"
   - "step distance vs semitone distance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-as-ruler
 extends: []
@@ -34,7 +28,6 @@ related:
   - goldilocks-principle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between scalar and chromatic distance?"
   - "Why do listeners perceive both simultaneously?"

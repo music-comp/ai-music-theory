@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Analysis
 slug: harmonic-analysis
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: analysis
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: 116
 section: "Introduction to Harmonic Analysis"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - roman-numeral-analysis
   - figured-bass
@@ -33,7 +27,6 @@ related:
   - keyboard-and-chorale-style
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I analyze harmony?"
   - "How do I use figured bass?"

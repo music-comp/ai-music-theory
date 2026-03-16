@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Implied Harmony in Solo Music
 slug: implied-harmony-in-solo-music
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-techniques
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 162
 section: "Consonance and Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - implied harmonic context
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - contextual-analysis
   - nonchord-tones
@@ -34,7 +28,6 @@ related:
   - melodic-fluency
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What must I know before understanding voice leading?"
 ---

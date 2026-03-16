@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rameauian vs. Riemannian Function
 slug: rameauian-vs-riemannian-function
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 313
 section: "Rameau and Bach"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "motion-based vs. location-based function"
   - "Rameauian vs. Riemannian approaches to function"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - descending-thirds-arrangement
   - harmonic-cycle-theory
@@ -37,7 +31,6 @@ related:
   - nested-interval-cycles
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between Rameauian and Riemannian conceptions of harmonic function?"
   - "How does the fauxbourdon tradition connect to functional progressions?"

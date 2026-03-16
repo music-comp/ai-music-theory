@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Motive
 slug: motive
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 16
 pdf_page: 364
 section: "Introduction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "motif"
   - "Leitmotiv (when representing characters/events)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-and-frequency
   - rhythm
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - figure
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a motive?"
   - "How is a motive different from a figure?"

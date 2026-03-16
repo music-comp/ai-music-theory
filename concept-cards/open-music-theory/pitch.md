@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch
 slug: pitch
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: null
 section: "Clefs"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - pitch-class
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is pitch?"
   - "How is pitch represented in Western notation?"

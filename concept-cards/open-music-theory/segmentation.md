@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Segmentation
 slug: segmentation
-# === CLASSIFICATION ===
 category: analysis
 subcategory: set-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Analyzing with Set Theory (or not!)"
 chapter_number: 8
 pdf_page: null
 section: "VIII.6"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class-set
 extends: []
@@ -26,7 +20,6 @@ related:
   - set-theory-analysis
   - segmentation-analysis
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is segmentation in set-theory analysis?"
   - "How should an analyst decide which notes to group together?"

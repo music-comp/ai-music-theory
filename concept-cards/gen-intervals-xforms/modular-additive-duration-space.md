@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modular Additive Duration Space
 slug: modular-additive-duration-space
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: rhythmic-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 47
 section: "Example 2.2.6, Section 2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "duration-class space"
   - "modular duration space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - integers-mod-n
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - additive-duration-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does modular arithmetic rescue additive duration intervals?"
   - "What is a duration-class?"

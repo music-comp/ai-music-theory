@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Antar Opening (Rimsky-Korsakov)"
 slug: antar-opening
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: rimsky-korsakov-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 70
 section: "Three Late-Century Examples: Liszt, Rimsky-Korsakov, Faure"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Symphony No. 2 Antar opening analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad
   - consonance-dissonance-reciprocity
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - faust-symphony-opening
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the Antar opening balance consonance and dissonance?"
   - "What are the two analytical interpretations of the Antar opening?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Augmented Triad in Chromatic Harmony
 slug: augmented-triad
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: null
 section: "V.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "augmented chord"
   - "+triad"
   - "III+"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triad-types
   - chromatic-alteration
@@ -37,7 +31,6 @@ related:
   - equal-divisions-of-the-octave
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the augmented triad used in chromatic harmony?"
   - "What makes the augmented triad rare but significant?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tritone Substitution
 slug: tritone-substitution
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: null
 section: "VI.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tritone sub"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dominant-seventh-chord
   - tritone-interval
@@ -35,7 +29,6 @@ related:
   - applied-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a tritone substitution and why does it work?"
   - "How do tritone subs create chromatic bass lines?"

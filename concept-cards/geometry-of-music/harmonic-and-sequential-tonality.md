@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic and Sequential Tonality
 slug: harmonic-and-sequential-tonality
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-organization
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 258
 section: "7.3"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "Fétis's two components"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - thirds-based-harmonic-grammar
   - diatonic-sequences
@@ -34,7 +28,6 @@ related:
   - circle-of-thirds-harmonic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the two basic components of tonal practice according to Fétis?"
   - "How does the circle of thirds unify harmonic and sequential tonality?"

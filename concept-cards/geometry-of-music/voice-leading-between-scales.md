@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading Between Common Scales
 slug: voice-leading-between-scales
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: voice-leading
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 150
 section: "4.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "scale-to-scale voice leading"
   - "efficient modulation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulation-as-voice-leading
   - eight-important-scales
@@ -36,7 +30,6 @@ related:
   - scale-pyramid
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are the eight important scales connected by efficient voice leading?"
   - "What is the 'scale pyramid'?"

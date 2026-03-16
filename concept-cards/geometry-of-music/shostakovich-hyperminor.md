@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Shostakovich Hyperminor Scales
 slug: shostakovich-hyperminor
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-construction
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 348
 section: "9.3.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "hyperminor tonality"
   - "scale tesseract"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-first-composition
 extends: []
@@ -34,7 +28,6 @@ related:
   - single-semitone-scale-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Shostakovich create 'hyperminor' tonalities?"
   - "What is a scale tesseract?"

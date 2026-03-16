@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Off-Tonic Beginning
 slug: off-tonic-beginning
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: new harmonic tendencies
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 34
 pdf_page: 790
 section: "Tonal Clarity Postponed: Off-Tonic Beginning"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonal-ambiguity
 extends: []
@@ -32,7 +26,6 @@ related:
   - double-tonality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an off-tonic beginning?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Boundary Behavior in Chord Space
 slug: boundary-behavior
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 92
 section: "3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "mirror boundaries"
   - "twisted edges"
   - "boundary conditions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-note-chord-space
   - mobius-strip-topology
@@ -37,7 +31,6 @@ related:
   - parable-of-the-ant
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens when a voice leading reaches the edge of chord space?"
   - "Why do some voice leadings appear to bounce?"

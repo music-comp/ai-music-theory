@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parallel First-Inversion Triads
 slug: parallel-first-inversion-triads
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 23
 pdf_page: 514
 section: "Parallel First-Inversion Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "parallel six-three chords"
   - "fauxbourdon"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-sequence
 extends:
@@ -34,7 +28,6 @@ related:
   - d2-sequence-with-seventh-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can parallel first-inversion triads function in sequences?"
 ---

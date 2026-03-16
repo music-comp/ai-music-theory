@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neighbor Tone
 slug: neighbor-tone
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,17 +14,14 @@ chapter_number: 5
 pdf_page: 210
 section: "The first practice and the SNAP system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - neighboring tone
   - auxiliary tone
   - upper neighbor
   - lower neighbor
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-tone
 extends: []
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - passing-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a neighbor tone?"
   - "What distinguishes passing tones from neighbor tones?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Closely Related Keys
 slug: closely-related-keys
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 17
 pdf_page: null
 section: "Closely related keys"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "related keys"
   - "neighboring keys"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulation
 extends:
@@ -34,7 +28,6 @@ related:
   - pivot-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are closely related keys?"
   - "How do I find all closely related keys for a given key?"

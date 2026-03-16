@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chopin Prelude Analysis (Op. 28 No. 2)
 slug: chopin-prelude-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical techniques for large forms
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 37
 pdf_page: 852
 section: "Analytical Interlude: Chopin, Prelude, op. 28, no. 2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - intervallic-cell
   - tonal-ambiguity
@@ -34,7 +28,6 @@ related:
   - off-tonic-beginning
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can intervallic cells unify an ambiguous piece?"
 ---

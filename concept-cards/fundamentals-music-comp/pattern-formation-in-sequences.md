@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pattern Formation in Sequences
 slug: pattern-formation-in-sequences
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: sequential-treatment
 tier: intermediate/advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 39
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sequences-and-quasi-sequences
   - motive
@@ -35,7 +29,6 @@ related:
   - motive-of-the-accompaniment
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct the pattern for a sequence?"
   - "What is the relationship between the sequential pattern and the original motive?"

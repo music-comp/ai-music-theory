@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Permutation Symmetry (P)
 slug: permutation-symmetry
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: symmetry
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 46
 section: "2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "P symmetry"
   - "reordering"
   - "voice permutation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-musical-object
 extends: []
@@ -37,7 +31,6 @@ related:
   - permutational-near-symmetry
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are OPTIC symmetries?"
   - "What is a voice leading vs. a chord progression?"

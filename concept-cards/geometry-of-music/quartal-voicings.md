@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Quartal Voicings
 slug: quartal-voicings
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-voicings
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 375
 section: "10.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "fourth chords"
   - "quartal harmony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - left-hand-voicings-a-b
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - tertian-harmony
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are quartal voicings in jazz?"
   - "How do quartal voicings relate to traditional tertian harmony?"

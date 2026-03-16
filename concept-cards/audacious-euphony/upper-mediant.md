@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Upper Mediant
 slug: upper-mediant
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: tonal-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,12 @@ chapter_number: 6
 pdf_page: 129
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
-# Concept used analytically but not formally defined as a standalone term in Cohn
 
-# === VARIANTS ===
 aliases:
   - "chromatic mediant"
   - "third-related key area"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zones
   - hexatonic-cycle
@@ -39,7 +32,6 @@ related:
 contrasts_with:
   - dom-subd-transformations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an upper mediant?"
   - "How do upper mediants replace dominant function in nineteenth-century music?"

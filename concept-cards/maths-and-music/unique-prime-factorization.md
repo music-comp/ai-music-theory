@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Unique Prime Factorization
 slug: unique-prime-factorization
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: factorization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 100
 section: "Unique Factorization"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Fundamental Theorem of Arithmetic"
   - "unique factorization theorem"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - prime-numbers
   - integral-domain
@@ -37,7 +31,6 @@ related:
   - powers-of-two-as-exact-keyboard-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can every integer be factored uniquely into primes?"
   - "How does prime factorization determine an interval's character?"

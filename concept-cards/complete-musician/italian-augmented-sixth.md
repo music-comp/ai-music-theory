@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Italian Augmented Sixth Chord
 slug: italian-augmented-sixth
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: augmented sixth
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 30
 pdf_page: 678
 section: "Types of Augmented Sixth Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "It6"
   - "It+6"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-sixth-chord
 extends:
@@ -37,7 +31,6 @@ contrasts_with:
   - german-augmented-sixth
   - french-augmented-sixth
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes Italian, German, and French augmented sixth chords?"
   - "How do I resolve an augmented sixth chord?"

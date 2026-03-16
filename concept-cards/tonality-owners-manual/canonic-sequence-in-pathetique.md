@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Canonic Sequence in the Pathetique
 slug: canonic-sequence-in-pathetique
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-reduction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 151
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - canonic-sequence
   - antiparallel-motion
@@ -35,7 +29,6 @@ related:
   - standing-on-the-dominant
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the relationship between canonic sequences and voice exchange?"
   - "How does Beethoven combine multiple sequence types in a single passage?"

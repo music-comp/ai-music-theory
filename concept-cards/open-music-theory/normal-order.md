@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Normal Order
 slug: normal-order
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: set-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: null
 section: "VIII.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "normal form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class-set
 extends: []
@@ -33,7 +27,6 @@ related:
   - set-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is normal order?"
   - "How do you find the normal order of a pitch-class set?"

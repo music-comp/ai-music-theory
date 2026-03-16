@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Galant Schemas on the Dyad Circle
 slug: galant-schemas-on-the-dyad-circle
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 96
 section: "The imperfect system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-dyad-circle
   - basic-voice-leading
@@ -35,7 +29,6 @@ related:
   - positive-counterpoint
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do galant schemas relate to the geometry of voice-leading spaces?"
   - "Are galant schemas arbitrary conventions or geometrically constrained?"

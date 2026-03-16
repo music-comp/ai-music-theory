@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sequences with Inverted Seventh Chords
 slug: sequences-with-inverted-seventh-chords
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 23
 pdf_page: 514
 section: "Sequences with Inversions of Seventh Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - d2-sequence-with-seventh-chords
 extends:
@@ -32,7 +26,6 @@ related:
   - parallel-first-inversion-triads
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are inverted seventh chords used in sequences?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sets and Number Systems
 slug: sets-and-number-systems
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: number-systems
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 14
 section: "Sets and Numbers"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "number sets"
   - "standard number systems"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
   - division-algorithm
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What number sets are used in mathematical music theory?"
   - "How are the standard number systems denoted?"

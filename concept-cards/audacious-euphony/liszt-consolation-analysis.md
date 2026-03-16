@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Liszt Consolation No. 3 Analysis"
 slug: liszt-consolation-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: piece-specific analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 189
 section: "Some Previous Proposals / The Convertible Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - convertible-tonnetz
   - diatonic-encapsulation
@@ -35,7 +29,6 @@ related:
   - diatonic-tonnetz
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the convertible Tonnetz work in analytical practice?"
   - "What does it mean for a triad to be a sealed capsule bobbing on the pan-triadic sea?"

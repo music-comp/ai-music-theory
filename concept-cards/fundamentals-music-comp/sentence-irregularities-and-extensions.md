@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sentence Irregularities and Extensions
 slug: sentence-irregularities-and-extensions
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sentence-construction
 tier: intermediate/advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 39
 section: "Illustrations from the Literature"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - sentence extensions
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - beginning-the-sentence
   - development-and-liquidation
@@ -37,7 +31,6 @@ related:
   - asymmetrical-construction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why do sentences in masterworks deviate from the eight-measure practice form?"
   - "How do I identify what causes a sentence extension?"

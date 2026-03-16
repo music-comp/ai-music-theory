@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Simple Binary Form
 slug: simple-binary
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sectional-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: null
 section: "Simple Binary Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
 extends:
@@ -32,7 +26,6 @@ related: []
 contrasts_with:
   - rounded-binary
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What defines simple binary form?"
   - "What are the two subtypes of simple binary?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transposition and Interval Preservation
 slug: transposition-and-interval-preservation
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: group-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 81
 section: "3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transposition-operation
   - interval-preserving-operation
@@ -34,7 +28,6 @@ related:
   - group-of-interval-preserving-operations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When does a transposition preserve intervals?"
   - "Under what conditions does T_i equal P_i?"

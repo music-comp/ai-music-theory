@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octatonic Pole
 slug: octatonic-pole
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: tetrachordal transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 172
 section: "Octatonic-group transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Kollektivwechsel (tetrachordal)"
   - "collective exchange (tetrachordal)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - octatonic-group-transformations
   - tristan-genus
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - hexatonic-pole
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the octatonic pole?"
   - "How is the octatonic pole analogous to the hexatonic pole?"

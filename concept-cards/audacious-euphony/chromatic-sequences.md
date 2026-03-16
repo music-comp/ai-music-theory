@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Sequences
 slug: chromatic-sequences
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 107
 section: "Chromatic Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "odd-transposition sequences"
   - "interregional sequences"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - h-group-transformations
   - w-group-transformations
@@ -41,7 +35,6 @@ related:
   - transformational-substitution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are chromatic sequences generated from H-group and W-group transformations?"
   - "Why do odd-transposition sequences move between regions?"

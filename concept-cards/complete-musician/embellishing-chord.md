@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Embellishing Chord (IV as Tonic Expansion)
 slug: embellishing-chord
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 14
 pdf_page: 324
 section: "Revisiting the Subdominant"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - EC
   - IV as prolonging chord
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - subdominant-as-pre-dominant
   - contrapuntal-expansion
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - pre-dominant-function
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do pre-dominant chords lead to the dominant?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Tunnel
 slug: chromatic-tunnel
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: diatonic-chromatic interaction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 212
 section: "A Summary Example from Schubert"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chromatic obscurity"
   - "enharmonic tunnel"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-syntax-hypothesis
   - enharmonic-seam
@@ -37,7 +31,6 @@ related:
   - diatonic-chromatic-gauge
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a chromatic tunnel?"
   - "How does voice-leading perspective invert the diatonic perspective?"

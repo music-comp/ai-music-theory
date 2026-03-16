@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Retrogression
 slug: retrogression
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 19
 pdf_page: 446
 section: "The Back-Relating Dominant"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
 extends: []
@@ -32,7 +26,6 @@ related:
 contrasts_with:
   - harmonic-progression
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a retrogression?"
   - "Is V-ii always a retrogression?"

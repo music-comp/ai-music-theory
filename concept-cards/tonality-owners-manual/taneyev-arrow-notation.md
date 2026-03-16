@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Taneyev Arrow Notation
 slug: taneyev-arrow-notation
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-reduction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 155
 section: "Repetition reimagined"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "transposing arrows"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -33,7 +27,6 @@ related:
   - simple-period-and-grand-period
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can sequences be represented with transposing arrows?"
   - "What is a sequence (harmonic), and what role does repetition play in tonal music?"

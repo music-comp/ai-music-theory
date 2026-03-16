@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Swing Rhythm
 slug: swing-rhythm
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: meter
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 30
 section: "Rhythm"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "swing feel"
   - "swing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rhythm
   - tuplets
@@ -37,7 +31,6 @@ related:
   - note-durational-values
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is swing rhythm?"
   - "How is swing rhythm notated vs. performed?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Operation
 slug: operation
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: functions
 tier: foundational
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 32
 section: "1.3.1, 1.3.3.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - bijective transformation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation
   - one-to-one-function
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What mathematical concepts must I know before understanding GIS?"
 ---

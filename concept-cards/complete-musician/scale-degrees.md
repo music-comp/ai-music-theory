@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scale Degrees
 slug: scale-degrees
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch-organization
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 3
 section: "Scale Degree Numbers and Names"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "scale degree numbers"
   - "scale degree names"
   - "solmization"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-scale
   - tonic
@@ -37,7 +31,6 @@ related:
   - tonal-hierarchy
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are scale degrees?"
   - "What are the scale degree names?"

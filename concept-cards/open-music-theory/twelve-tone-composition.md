@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Twelve-Tone Composition
 slug: twelve-tone-composition
-# === CLASSIFICATION ===
 category: application
 subcategory: composition-technique
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Composing with Twelve Tones"
 chapter_number: 9
 pdf_page: null
 section: "IX.5"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-row
   - hexachordal-combinatoriality
@@ -27,7 +21,6 @@ related:
   - all-trichord-row
   - twelve-tone-analysis
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does one compose with twelve-tone rows?"
   - "What are different approaches to twelve-tone composition?"

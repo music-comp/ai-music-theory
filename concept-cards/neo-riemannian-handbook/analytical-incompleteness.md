@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Analytical Incompleteness
 slug: analytical-incompleteness
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: analytical-values
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Robert C. Cook"
@@ -17,15 +14,12 @@ chapter_number: 19
 pdf_page: 531
 section: Incompleteness
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - inevitable incompleteness
   - analytical provisionality
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - contextual-harmony-analysis
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - normative-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why are transformational analyses necessarily incomplete?"
   - "How does analytical incompleteness relate to chromatic music?"

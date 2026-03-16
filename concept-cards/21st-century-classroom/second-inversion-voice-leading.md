@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading Second-Inversion Triads
 slug: second-inversion-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 26
 pdf_page: 397
 section: "26.9 Voice Leading Second Inversion Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "six-four chord voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-definition
   - doubling-rules-triads
@@ -34,7 +28,6 @@ related:
   - first-inversion-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you voice lead second-inversion triads?"
   - "What do you double in a second-inversion chord?"

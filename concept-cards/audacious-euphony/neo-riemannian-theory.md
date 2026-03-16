@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neo-Riemannian Theory
 slug: neo-riemannian-theory
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: theoretical-framework
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 9
 section: "Genesis and Relation to Prior Work"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "neo-Riemannianism"
   - "triadic transformational theory"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - harmonic-dualism-critique
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is neo-Riemannian theory?"
   - "Why does Cohn avoid the term 'neo-Riemannian' in this book?"

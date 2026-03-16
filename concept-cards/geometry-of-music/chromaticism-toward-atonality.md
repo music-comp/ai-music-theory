@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromaticism Toward Atonality
 slug: chromaticism-toward-atonality
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: historical-trajectory
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 322
 section: "8.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "from chromaticism to atonality"
   - "late Romantic tonal dissolution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-practices-chromaticism
 extends: []
@@ -33,7 +27,6 @@ related:
   - tristan-chord-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does increasing chromaticism lead toward atonality?"
   - "Is the progression from chromaticism to atonality historically inevitable?"

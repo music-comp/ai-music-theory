@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generalized Division Algorithm
 slug: generalized-division-algorithm
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: groups
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 82
 section: "Generalized Division Algorithm"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - extended division algorithm
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - well-ordering-principle-variations
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - division-algorithm
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the Generalized Division Algorithm extend the standard one?"
   - "Why does every equivalence class modulo m have a unique representative in [0, m)?"

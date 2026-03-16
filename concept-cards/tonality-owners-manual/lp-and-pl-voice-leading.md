@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: LP and PL Voice Leading
 slug: lp-and-pl-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 47
 section: "A melodic principle"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - major-third system
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - radial-motion-on-spiral
   - spiral-diagrams-for-chord-space
@@ -35,7 +29,6 @@ related:
   - principle-of-musical-approximation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are LP and PL voice leadings?"
   - "What is voice-leading geometry, and how does it represent musical relationships spatially?"

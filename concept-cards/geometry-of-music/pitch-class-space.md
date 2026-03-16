@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch-Class Space (Circular)
 slug: pitch-class-space
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: space
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 46
 section: "2.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "circular pitch-class space"
   - "chroma circle"
   - "pitch-class circle"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-space
 extends:
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - pitch-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is pitch space vs. pitch-class space?"
   - "What is pitch-class space?"

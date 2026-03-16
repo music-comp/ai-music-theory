@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Klang-Representation (Klangvertretung)
 slug: klang-representation
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: perceptual-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,17 +14,14 @@ chapter_number: 5
 pdf_page: 179
 section: "III. Interval Fusion or Klang-Representation?"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Klangvertretung"
   - "tone representation"
   - "Klang representation"
   - "triad representation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - harmonic-dualism
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - monism-vs-dualism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Klangvertretung and how does it explain harmonic perception?"
   - "How can single tones imply complete triadic harmonies?"

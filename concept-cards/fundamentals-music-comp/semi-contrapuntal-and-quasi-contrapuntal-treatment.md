@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Semi-Contrapuntal and Quasi-Contrapuntal Treatment
 slug: semi-contrapuntal-and-quasi-contrapuntal-treatment
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: contrapuntal-techniques
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 51
 section: "Semi- and Quasi-Contrapuntal Treatment"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - semi-counterpoint
   - quasi-counterpoint
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - accompaniment-function
   - motive-of-the-accompaniment
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - contrapuntal-treatment-in-accompaniment
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between semi-contrapuntal and quasi-contrapuntal treatment?"
   - "How do semi- and quasi-contrapuntal techniques relate to accompaniment?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Triad
 slug: triad
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 17
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord
   - interval
@@ -37,7 +31,6 @@ related:
   - roman-numeral-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a triad?"
   - "What are the four qualities of triad?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scale Pyramid
 slug: scale-pyramid
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: organization
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 153
 section: "4.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "inverted pyramid of scales"
   - "scale hierarchy"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - eight-important-scales
   - voice-leading-between-scales
@@ -35,7 +29,6 @@ related:
   - acoustic-scale
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are the eight important scales hierarchically organized?"
   - "What role do non-diatonic seven-note scales play in the hierarchy?"

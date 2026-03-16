@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pedal Six-Four Chord
 slug: pedal-six-four-chord
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: six-four-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 14
 pdf_page: 324
 section: "Unaccented Six-Four Chords I: Pedal"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - Ped 6/4
   - neighboring six-four
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pedal-point
   - neighbor-tone
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - cadential-six-four-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

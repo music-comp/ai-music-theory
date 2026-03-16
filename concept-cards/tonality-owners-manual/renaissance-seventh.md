@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Renaissance Seventh
 slug: renaissance-seventh
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 210
 section: "The first practice and the SNAP system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - irreducible seventh chord
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - suspension
   - nonharmonic-tone
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - nonharmonic-reduction
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Renaissance seventh?"
   - "How can suspensions produce irreducible dissonances?"

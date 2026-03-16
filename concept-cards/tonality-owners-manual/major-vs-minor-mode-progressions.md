@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Major-Mode vs. Minor-Mode Progressions
 slug: major-vs-minor-mode-progressions
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 311
 section: "A theory of harmonic cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - modal symmetry in functional tonality
   - major-minor mode comparison
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-cycle-theory
 extends: []
@@ -34,7 +28,6 @@ related:
   - descending-thirds-arrangement
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Do major and minor modes use the same progressions in functional tonality?"
   - "Why does minor-mode harmony show greater attraction to the mediant?"

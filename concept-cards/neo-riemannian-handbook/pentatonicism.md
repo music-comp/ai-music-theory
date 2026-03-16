@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pentatonicism
 slug: pentatonicism
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scalar-system
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Matthew Gelbart, Alexander Rehding"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - pentatonic scale
   - anhemitonic pentatonic
   - five-note scale
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
 extends: []
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - diatonicity
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes pentatonic from diatonic tonality in Riemann's framework?"
   - "How does Riemann derive pentatonic scales?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Interval
 slug: harmonic-interval
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 16
 pdf_page: null
 section: "Size"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - melodic-interval
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a harmonic interval?"
   - "How does a harmonic interval differ from a melodic interval?"

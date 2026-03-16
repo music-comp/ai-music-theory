@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Inversional Equivalence
 slug: inversional-equivalence
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 257
 section: "Similarities and differences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - root equivalence
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - protofunctionality
 extends: []
@@ -33,7 +27,6 @@ related:
   - origin-and-meaning-in-harmony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is inversional equivalence?"
   - "How did inversional equivalence develop historically?"

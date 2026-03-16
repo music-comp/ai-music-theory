@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sonata Form Development
 slug: sonata-form-development
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 33
 pdf_page: 752
 section: "Development and Retransition"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "development section"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form-exposition
 extends: []
@@ -33,7 +27,6 @@ related:
   - sonata-form-recapitulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens in the development section of sonata form?"
 ---

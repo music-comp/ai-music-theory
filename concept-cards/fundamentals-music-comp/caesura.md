@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Caesura
 slug: caesura
 
-# === CLASSIFICATION ===
 category: form
 subcategory: period-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 22
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - caesara
   - cassura
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - motive
@@ -37,7 +31,6 @@ related:
   - cadence-contour
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a caesura?"
   - "How does the caesura function in period construction?"

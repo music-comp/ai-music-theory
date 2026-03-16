@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Upshift/Downshift Dualism
 slug: upshift-downshift-dualism
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: philosophical foundation
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 141
 section: "Departure -> Return Scripts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "voice-leading dualism"
   - "directional dualism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - upshifting-downshifting
   - voice-leading-zones
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - harmonic-dualism-critique
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does upshift/downshift dualism differ from historical harmonic dualism?"
   - "Is this dualism immune to the standard critiques of dualism?"

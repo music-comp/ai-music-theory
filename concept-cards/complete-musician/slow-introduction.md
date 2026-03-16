@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Slow Introduction
 slug: slow-introduction
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 33
 pdf_page: 752
 section: "The Slow Introduction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form
 extends: []
@@ -32,7 +26,6 @@ related:
   - off-tonic-beginning
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a slow introduction in sonata form?"
 ---

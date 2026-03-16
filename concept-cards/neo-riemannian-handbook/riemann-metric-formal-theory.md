@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Riemann's Metric-Formal Theory"
 slug: riemann-metric-formal-theory
 
-# === CLASSIFICATION ===
 category: form
 subcategory: metric-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Alexander Rehding"
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Riemann's Formenlehre"
   - "eight-bar period theory"
   - "metric-harmonic interaction"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
 extends: []
@@ -36,7 +30,6 @@ related:
   - phrasing-theory
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Riemann's theory of musical form?"
   - "Why did Riemann not extend formal analysis beyond the eight-measure period?"

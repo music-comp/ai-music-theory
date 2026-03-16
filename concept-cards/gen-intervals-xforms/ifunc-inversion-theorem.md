@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: IFUNC Inversion Theorem
 slug: ifunc-inversion-theorem
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: interval-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: "5.1.7"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 5.1.7"
   - IFUNC under inversion
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ifunc
   - inversion-operation
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - inj-function
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens to IFUNC when both sets are inverted in a commutative GIS?"
   - "Why can't IFUNC fully engage inversional relationships?"

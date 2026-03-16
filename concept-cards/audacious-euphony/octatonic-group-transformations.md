@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octatonic-Group Transformations
 slug: octatonic-group-transformations
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: tetrachordal transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 172
 section: "Octatonic-group transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "inter-regional transformations (tetrachordal)"
   - "octatonic bridge transformations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - octatonic-region
   - boretz-region
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - boretz-group-transformations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the octatonic-group transformations?"
   - "How do seventh chords move between Boretz regions?"

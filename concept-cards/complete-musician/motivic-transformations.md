@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Motivic Transformations
 slug: motivic-transformations
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 16
 pdf_page: 364
 section: "Motivic Transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "motivic development techniques"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - motivic-repetition-types
@@ -37,7 +31,6 @@ related:
   - linkage
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do composers transform motives?"
   - "What techniques are used for motivic development?"

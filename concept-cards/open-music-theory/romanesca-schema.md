@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Romanesca Schema
 slug: romanesca-schema
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: galant-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: null
 section: "Opening Gambits"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - galant-schema
 extends: []
@@ -31,7 +25,6 @@ related:
   - meyer-schema
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Romanesca schema?"
 ---

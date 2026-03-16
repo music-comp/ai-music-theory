@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transition in Sonata Form
 slug: transition-in-sonata-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 33
 pdf_page: 752
 section: "Transition"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tr"
   - "DTr (dependent transition)"
   - "ITr (independent transition)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form-exposition
 extends: []
@@ -35,7 +29,6 @@ related:
   - transition-and-retransition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a transition in sonata form?"
   - "What is the difference between dependent and independent transitions?"

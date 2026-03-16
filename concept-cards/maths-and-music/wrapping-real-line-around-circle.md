@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Wrapping Real Line Around Circle
 slug: wrapping-real-line-around-circle
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Modular Equivalence on the Real Numbers"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - wrapping function
   - circle parameterization
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modular-equivalence-on-the-real-numbers
 extends:
@@ -37,7 +31,6 @@ related:
   - octave-equivalence-formalized
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the wrapping function model octave equivalence geometrically?"
   - "What is the relationship between the number line and the circle of circumference m?"

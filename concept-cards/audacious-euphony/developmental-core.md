@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Developmental Core
 slug: developmental-core
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: formal function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: "Hexatonic Progressions, Tonnetz Representations, and Triadic Transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "core of the development"
   - "central action zone"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-cycle
 extends: []
@@ -36,7 +30,6 @@ related:
   - essential-enharmonicism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a developmental core and why do hexatonic cycles appear there?"
   - "How does the developmental core exhibit layered tonality?"

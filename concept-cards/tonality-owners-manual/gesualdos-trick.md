@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Gesualdo's Trick"
 slug: gesualdos-trick
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: contrapuntal-techniques
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 1
 section: "Gesualdo's trick"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - parallel voice leading with alternating inversions
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
   - intrinsic-vs-enclosing-scale
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Gesualdo's trick?"
   - "How can the same contrapuntal technique appear in both chromatic and diatonic music?"

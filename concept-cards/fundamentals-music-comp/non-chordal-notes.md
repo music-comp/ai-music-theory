@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Non-Chordal Notes
 slug: non-chordal-notes
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: melodic-embellishment
 tier: foundational
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 11
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - ancillary notes
   - embellishing notes
   - ornamental notes
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
 extends: []
@@ -34,7 +28,6 @@ related:
   - variation-methods
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a phrase in musical composition?"
   - "How do non-chordal notes contribute to melody?"

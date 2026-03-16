@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Writing Applied-Chord Sequences
 slug: writing-applied-chord-sequences
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: applied chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 24
 pdf_page: 538
 section: "Writing Applied-Chord Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - applied-chord-sequences-summary
 extends:
@@ -32,7 +26,6 @@ related:
   - voice-leading-for-applied-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
 ---

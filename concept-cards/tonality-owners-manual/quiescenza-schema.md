@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Quiescenza Schema
 slug: quiescenza-schema
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 96
 section: "The imperfect system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-dyad-circle
   - basic-voice-leading
@@ -33,7 +27,6 @@ related:
   - imperfect-consonance-system
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Quiescenza schema and how does it arise geometrically?"
 ---

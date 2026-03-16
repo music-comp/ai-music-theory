@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Boretz Spider
 slug: boretz-spider
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: tetrachordal regions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 170
 section: "Boretz spiders"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - boretz-region
   - boretz-group-transformations
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - weitzmann-water-bug
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Boretz spider?"
   - "How does the Boretz spider model voice leading within a Boretz region?"

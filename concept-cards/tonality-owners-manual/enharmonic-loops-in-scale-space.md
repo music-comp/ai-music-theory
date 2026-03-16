@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Enharmonic Loops in Scale Space
 slug: enharmonic-loops-in-scale-space
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: enharmonicism
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 366
 section: "Enharmonicism and loops in scale space"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "loops in scale space"
   - "nontrivial modulatory paths"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - key-distance-pitch-class-changing
   - enharmonic-equivalence
@@ -36,7 +30,6 @@ related:
   - scalar-voice-leading-notation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes genuine enharmonicism from merely notational enharmonic changes?"
   - "How do loops in scale space produce enharmonic equivalence?"

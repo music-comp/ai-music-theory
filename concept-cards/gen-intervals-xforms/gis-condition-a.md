@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: GIS Condition A
 slug: gis-condition-a
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: core-definitions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 47
 section: "2.3.1(A)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - path composition law
   - interval composition condition
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - group
@@ -36,7 +30,6 @@ related:
   - directed-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the interval function int relate to the group IVLS?"
   - "What is a Generalized Interval System (GIS)?"

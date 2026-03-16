@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transformational Substitution
 slug: transformational-substitution
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: substitution
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 114
 section: "Transformational Substitutions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "major-third substitution"
   - "same-group substitution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-sequences
   - voice-leading-zones
@@ -38,7 +32,6 @@ related:
   - transformation-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can a chromatic sequence be varied while maintaining its voice-leading trajectory?"
   - "How do transformational substitutions provide shortcuts to tonal goals?"

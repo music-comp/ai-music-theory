@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Idempotent TRANSIT Value
 slug: idempotent-transit-value
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-definitions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.2.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-graph-definition
   - transit-function
@@ -34,7 +28,6 @@ related:
   - operation-graph
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why must TRANSIT(N, N) be idempotent?"
   - "What happens to reflexive TRANSIT values when SGP is a group?"

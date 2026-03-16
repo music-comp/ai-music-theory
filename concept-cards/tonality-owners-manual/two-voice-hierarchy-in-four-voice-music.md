@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Two-Voice Hierarchy in Four-Voice Music
 slug: two-voice-hierarchy-in-four-voice-music
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: configurations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 96
 section: "Four-voice triadic counterpoint"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triadic-configurations
   - ouch-theory
@@ -34,7 +28,6 @@ related:
   - doubly-parallel-motion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does four-voice triadic counterpoint differ qualitatively from two or three voices?"
   - "Why do counterpoint classes focus on two and three voices?"

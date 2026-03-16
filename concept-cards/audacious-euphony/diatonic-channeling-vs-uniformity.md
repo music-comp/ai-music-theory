@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic Channeling vs. Law of Uniformity
 slug: diatonic-channeling-vs-uniformity
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: tonal-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 61
 section: "Consonance/Dissonance Reciprocity"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Diatony vs. repetition"
   - "Magnetism vs. inertia"
   - "Scale conformity vs. exact transposition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
   - augmented-triad
@@ -38,7 +32,6 @@ related:
   - consonance-dissonance-reciprocity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the tension between diatonic channeling and the law of uniformity?"
   - "How does the diatonic/chromatic distinction relate to consonant/augmented triads?"

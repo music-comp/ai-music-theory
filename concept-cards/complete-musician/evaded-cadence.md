@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Evaded Cadence
 slug: evaded-cadence
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 14
 pdf_page: 324
 section: "Evaded Cadences: Elision and Extension"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - thwarted cadence
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadential-six-four-chord
   - v42-third-inversion-v7
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - cadence-types
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cadence?"
 ---

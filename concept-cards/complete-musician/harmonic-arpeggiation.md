@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Arpeggiation
 slug: harmonic-arpeggiation
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 18
 pdf_page: 425
 section: "The Submediant as Bridge"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "melodic bass arpeggiation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - descending-thirds-progression
 extends:
@@ -33,7 +27,6 @@ related:
   - mediant-in-arpeggiations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a harmonic arpeggiation?"
   - "What is the difference between a harmonic and a melodic bass arpeggiation?"

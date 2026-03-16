@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seventh Chord Resolution
 slug: seventh-chord-resolution
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 27
 pdf_page: 402
 section: "27.1 Voice Leading Seventh Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "resolving seventh chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-definition
   - seventh-chord
@@ -35,7 +29,6 @@ related:
   - viio7-resolution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the fundamental rule for voice leading seventh chords?"
   - "How does the 7th of a chord resolve?"

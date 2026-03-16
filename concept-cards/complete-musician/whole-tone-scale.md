@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Whole-Tone Scale
 slug: whole-tone-scale
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: symmetrical harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 37
 pdf_page: 852
 section: "Analytical Interlude: Scriabin"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "whole-tone collection"
   - "whole-tone track"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - equal-divisions-of-the-octave
 extends:
@@ -35,7 +29,6 @@ related:
   - altered-dominant-seventh-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the whole-tone scale?"
 ---

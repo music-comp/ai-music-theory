@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Central Interval
 slug: central-interval
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: group-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 81
 section: "3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "central element"
   - "element of the center"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
 extends: []
@@ -35,7 +29,6 @@ related:
   - involutory-elements
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When does a transposition T_i preserve intervals?"
   - "When does T_i equal P_i?"

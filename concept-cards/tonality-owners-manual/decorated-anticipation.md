@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Decorated Anticipation
 slug: decorated-anticipation
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 210
 section: "The first practice and the SNAP system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - recursive anticipation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - anticipation
   - neighbor-tone
@@ -36,7 +30,6 @@ related:
   - ambiguous-syntax-in-tonal-music
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a decorated anticipation?"
   - "How can the same melodic figure have different structural meanings?"

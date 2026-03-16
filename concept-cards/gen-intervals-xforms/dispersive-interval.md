@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dispersive Interval
 slug: dispersive-interval
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: intervallic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 188
 section: "Section 7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "dispersive transformation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
   - transposition
@@ -38,7 +32,6 @@ contrasts_with:
   - progressive-transformation
   - internal-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What makes an interval 'dispersive' for a given set?"
   - "How do dispersive intervals relate to RI-chaining and structural sequencing?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Triad of Triads
 slug: triad-of-triads
 
-# === CLASSIFICATION ===
 category: form
 subcategory: dialectical-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Alexander Rehding"
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Hauptmann's triad of triads"
   - "chain of thirds"
   - "dialectical tonal structure"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - hauptmann-dialectic
@@ -36,7 +30,6 @@ related:
   - mediation-principle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Hauptmann's triad of triads?"
   - "How does dialectical logic apply to tonal structure?"

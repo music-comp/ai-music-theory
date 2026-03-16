@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Intermovement Motivic Connections
 slug: intermovement-motivic-connections
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 16
 pdf_page: 364
 section: "Intermovement Motivic Connections"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "cross-movement motivic unity"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - motivic-parallelism
@@ -34,7 +28,6 @@ related:
   - hidden-motivic-repetitions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can motives connect different movements of a multi-movement work?"
 ---

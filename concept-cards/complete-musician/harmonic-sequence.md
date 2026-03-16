@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Sequence
 slug: harmonic-sequence
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 22
 pdf_page: 495
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
   - voice-leading
@@ -40,7 +34,6 @@ contrasts_with:
   - melodic-sequence
   - sequential-progression
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a sequence?"
   - "How do I identify a sequence type?"

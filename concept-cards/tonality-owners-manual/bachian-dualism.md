@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Bachian Dualism
 slug: bachian-dualism
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: composer-specific
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 343
 section: "Bach the dualist"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Bach's dualistic harmonic practice"
   - "ascending vs. descending fifth dualism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - descending-thirds-arrangement
   - nested-interval-cycles
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - rameauian-vs-riemannian-function
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Bach's compositional practice differ from standard triadic Roman-numeral theory?"
   - "What is the relationship between ascending and descending fifths in Bach?"

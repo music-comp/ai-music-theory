@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch-Class Clockface
 slug: pitch-class-clockface
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation systems
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 23
 section: "1.5 Arithmetic modulo 12 (mod 12)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - clockface
   - pitch-class clock
   - pc clockface
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - integer-notation
@@ -39,7 +33,6 @@ related:
   - interval-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the pitch-class clockface?"
   - "How do I use the clockface to calculate intervals?"

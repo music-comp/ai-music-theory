@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Interval-Preserving Operations (Octatonic)"
 slug: interval-preserving-operations-octatonic
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: octatonic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 282
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - gis1-octatonic
   - gis2-octatonic
@@ -35,7 +29,6 @@ related:
   - strans2-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes transposition from interval-preserving operations in a non-commutative GIS?"
 ---

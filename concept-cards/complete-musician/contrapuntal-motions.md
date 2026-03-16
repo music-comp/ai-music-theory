@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrapuntal Motions
 slug: contrapuntal-motions
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: voice-relationships
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 94
 section: "Contrapuntal Motions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "voice motion"
   - "types of motion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - counterpoint
 extends: []
@@ -35,7 +29,6 @@ related:
   - hidden-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the types of contrapuntal motion?"
 ---

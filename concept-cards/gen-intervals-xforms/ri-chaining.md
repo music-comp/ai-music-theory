@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: RI-Chaining
 slug: ri-chaining
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: serial-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 188
 section: "7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "retrograde-inversion chaining"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rich-transformation
 extends: []
@@ -34,7 +28,6 @@ related:
   - wagner-parsifal-zauber-motive-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I apply RI-chaining (RICH) to a series?"
   - "What is the relationship between RI-chaining and structural sequencing?"

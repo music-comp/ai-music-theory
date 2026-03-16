@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tristan Voice Crossings as Surface Decoration
 slug: tristan-voice-crossings
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: chromatic-voice-leading
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 312
 section: "8.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "surface vs background voice leading in Tristan"
   - "Wagner's decorated voice leadings"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tristan-chord-analysis
 extends: []
@@ -33,7 +27,6 @@ related:
   - efficient-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why are Wagner's voice leadings in Tristan not maximally efficient?"
   - "How can voice crossings be understood as decorations of efficient voice leadings?"

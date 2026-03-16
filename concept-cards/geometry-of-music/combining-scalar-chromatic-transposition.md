@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Combining Scalar and Chromatic Transposition
 slug: combining-scalar-chromatic-transposition
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: analysis
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 168
 section: "4.10"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "decomposition into scalar and chromatic"
   - "scalar-chromatic cancellation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interscalar-transposition
   - scalar-transposition
@@ -35,7 +29,6 @@ related:
   - harmonic-consistency-and-efficient-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can efficient voice leadings be decomposed into scalar and chromatic components?"
   - "What does a composer 'know' when she knows all the efficient voice leadings between chord types?"

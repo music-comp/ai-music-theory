@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Stockhausen Klavierstuck XI Analysis
 slug: stockhausen-klavierstuck-xi
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: analytical-applications
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Klavierstuck XI analysis"
   - "Stockhausen Piano Piece XI"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - referential-time-unit-problem
   - local-time-unit
@@ -35,7 +29,6 @@ related:
   - time-span-gis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Stockhausen's Klavierstuck XI illustrate the referential time-unit problem?"
 ---

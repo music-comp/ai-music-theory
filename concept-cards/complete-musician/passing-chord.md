@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Passing Chord
 slug: passing-chord
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: elaboration
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 226
 section: "Passing Tones in the Bass: viio6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - passing-tone
   - first-inversion-triads
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - neighboring-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Corpus Analysis Methods
 slug: corpus-analysis-methods
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: computational-analysis
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 1
 section: "Statistics"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - computational corpus study
   - corpus analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - schema-theory
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can corpus analysis test traditional music-theoretical claims?"
   - "What role do computational methods play in modern music theory?"

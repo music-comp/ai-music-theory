@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Sequences
 slug: chromatic-sequence
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: null
 section: "V.10"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-sequence
   - applied-chord
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - diatonic-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do chromatic sequences differ from diatonic sequences?"
   - "What is an elided resolution in a chromatic descending-fifths sequence?"

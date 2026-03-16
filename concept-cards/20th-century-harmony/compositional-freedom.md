@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compositional Freedom
 slug: compositional-freedom
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 13
 pdf_page: 270
 section: "Theme and Form Ideas"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "harmonic freedom"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-synthesis
   - compositional-resources
@@ -35,7 +29,6 @@ related:
   - formal-ideas
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does complete compositional freedom mean in Persichetti's framework?"
   - "What constraints remain when all harmonic resources are available?"

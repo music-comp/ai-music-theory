@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Common Content
 slug: common-content
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: phrase-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 18
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - shared motivic content
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - motive-as-germ
@@ -36,7 +30,6 @@ related:
   - developing-variation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct a phrase from a motive?"
   - "What provides unity in a composition?"

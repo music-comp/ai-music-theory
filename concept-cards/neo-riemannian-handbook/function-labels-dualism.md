@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Function Labels in Dualist Theory
 slug: function-labels-dualism
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "T S D labels"
   - "Riemann's function symbols"
   - "functional terminology in dualism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - harmonic-function
@@ -37,7 +31,6 @@ related:
   - monism-vs-dualism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do T, S, D function labels work within dualist theory?"
   - "Are function labels consistent with dualism?"

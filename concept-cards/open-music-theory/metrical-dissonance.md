@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Metrical Dissonance
 slug: metrical-dissonance
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: advanced-meter
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,18 +11,14 @@ chapter: "Metrical Dissonance"
 chapter_number: 99
 pdf_page: null
 section: "Supplementary"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - meter
 extends: []
 related:
   - hypermeter
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is metrical dissonance?"
   - "What are displacement and grouping dissonance?"

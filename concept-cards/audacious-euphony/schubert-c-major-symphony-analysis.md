@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Schubert C Major Symphony Scherzo Analysis"
 slug: schubert-c-major-symphony-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: piece-specific analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 212
 section: "A Summary Example from Schubert"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-syntax-hypothesis
   - convertible-tonnetz
@@ -35,7 +29,6 @@ related:
   - diatonic-chromatic-gauge
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does double syntax work in a specific musical passage?"
   - "What is a chromatic tunnel?"

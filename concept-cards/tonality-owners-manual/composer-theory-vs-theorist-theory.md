@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Composer Theory vs. Theorist Theory
 slug: composer-theory-vs-theorist-theory
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: epistemology-of-music
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 1
 pdf_page: 1
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends:
   - implicit-musical-knowledge
@@ -33,7 +27,6 @@ related:
   - dogmatic-musical-conventions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between composer theory and theorist theory?"
   - "How do implicit and explicit musical theories interact historically?"

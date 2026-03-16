@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cantus Firmus
 slug: cantus-firmus
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: foundations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: null
 section: "Composing a Cantus Firmus"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "fixed voice"
   - "fixed melody"
   - "cantus firmi (plural)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-degree
   - consonance
@@ -37,7 +31,6 @@ related:
   - ostinato
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cantus firmus and what are its characteristics?"
   - "How do you compose a well-formed cantus firmus?"

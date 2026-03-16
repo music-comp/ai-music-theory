@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Elaboration and Reduction (Instrumental Application)
 slug: elaboration-and-reduction
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-techniques
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 11
 pdf_page: 246
 section: "Elaboration and Reduction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - embellishment-and-reduction
   - harmonic-paradigms
@@ -33,7 +27,6 @@ related:
   - structural-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What must I know before understanding voice leading?"
 ---

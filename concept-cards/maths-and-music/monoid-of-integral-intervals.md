@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Monoid of Integral Intervals
 slug: monoid-of-integral-intervals
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: algebraic-structures
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 110
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "integral interval monoid"
   - "(Z+, *) as intervals"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - monoid
   - integral-intervals
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - commutative-group
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What algebraic structure do the integral intervals form under composition?"
   - "Why do integral intervals form a monoid but not a group?"

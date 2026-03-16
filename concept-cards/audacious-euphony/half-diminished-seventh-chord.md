@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Half-Diminished Seventh Chord
 slug: half-diminished-seventh-chord
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: seventh chord types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 165
 section: "The Tristan Genus as Nearly Even Tetrachord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ø7"
   - "half-diminished"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diminished-seventh-chord
   - nearly-even-tetrachord
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - dominant-seventh-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the half-diminished seventh chord function in the Tristan-genus system?"
   - "What is the dualist interpretation of the half-diminished seventh?"

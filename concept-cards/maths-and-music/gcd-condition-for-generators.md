@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: GCD Condition for Generators
 slug: gcd-condition-for-generators
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Generators and Cyclic Groups"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - coprimality condition for generators
   - relatively prime generator criterion
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cyclic-group-and-generator
   - order-of-an-element
@@ -38,7 +32,6 @@ related:
   - euler-phi-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When does an element generate a cyclic group?"
   - "What is the relationship between gcd and generators of Z_n?"

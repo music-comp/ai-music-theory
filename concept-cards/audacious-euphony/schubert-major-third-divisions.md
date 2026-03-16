@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Schubert's Major-Third Divisions"
 slug: schubert-major-third-divisions
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: schubert-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 63
 section: "The Historical Emergence of Augmented Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Equal division of the octave by major thirds"
   - "Augmented triad arpeggiation through tonal centers"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad
   - dissonant-prolongation
@@ -38,7 +32,6 @@ related:
   - diatonic-channeling-vs-uniformity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do major-third divisions relate to augmented triads?"
   - "How does Schubert use equal division of the octave?"

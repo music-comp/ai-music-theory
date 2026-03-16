@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Motive
 slug: motive
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: null
 section: "Motives"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "motif"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -33,7 +27,6 @@ related:
   - segmentation-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a motive and how large should it be?"
   - "What are common motive transformations?"

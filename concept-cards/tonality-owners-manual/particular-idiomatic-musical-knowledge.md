@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Particular Idiomatic Musical Knowledge
 slug: particular-idiomatic-musical-knowledge
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: epistemology-of-music
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 1
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - idiomatic knowledge
   - particular musical knowledge
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends:
   - implicit-musical-knowledge
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - mathematical-characterization-of-music
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is particular idiomatic musical knowledge?"
   - "How does style-specific knowledge differ from general musical principles?"

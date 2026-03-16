@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Left Orthography
 slug: left-orthography
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 32
 section: "1.2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - left functional orthography
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - function
   - composition-of-functions
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - right-orthography
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What mathematical concepts must I know before understanding GIS?"
   - "How do I read Lewin's notation for function composition?"

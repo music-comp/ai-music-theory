@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neapolitan Voice Leading
 slug: neapolitan-voice-leading
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: Neapolitan
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 29
 pdf_page: 661
 section: "Common Contexts for bII6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - neapolitan-chord
 extends:
@@ -32,7 +26,6 @@ related:
   - voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Neapolitan chord?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ascending-Second Sequence (Fifths)
 slug: ascending-second-sequence-fifths
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 22
 pdf_page: 495
 section: "The Ascending-Second (A2) Sequence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "A2 (+5/-4)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-sequence
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - descending-second-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the A2 (+5/-4) sequence?"
 ---

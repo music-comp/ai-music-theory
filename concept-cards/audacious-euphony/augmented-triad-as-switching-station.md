@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Augmented Triad as Switching Station
 slug: augmented-triad-as-switching-station
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: augmented-triad-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 73
 section: "Three Late-Century Examples: Liszt, Rimsky-Korsakov, Faure"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Augmented triad as hub"
   - "Switching station metaphor"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad
   - consonance-dissonance-reciprocity
@@ -37,7 +31,6 @@ related:
   - weitzmann-water-bug
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an augmented triad in neo-Riemannian context?"
   - "How does the augmented triad function as a structural center?"

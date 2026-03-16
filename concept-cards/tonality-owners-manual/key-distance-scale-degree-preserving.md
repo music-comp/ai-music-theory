@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Key Distance (Scale-Degree-Preserving)
 slug: key-distance-scale-degree-preserving
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: key-distance
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 361
 section: "Two models of key distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "scale-degree-preserving modulation"
   - "sidestepping distance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading-of-scales
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - key-distance-pitch-class-changing
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you determine the key distance between two keys using scale-degree preservation?"
   - "What distinguishes chromatic modulation from diatonic modulation?"

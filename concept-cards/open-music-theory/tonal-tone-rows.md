@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Tone Rows
 slug: tonal-tone-rows
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,18 +11,14 @@ chapter: "History and Context of Serialism"
 chapter_number: 9
 pdf_page: null
 section: "IX.6"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-row
 extends: []
 related:
   - serialism
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can twelve-tone rows produce tonal-sounding music?"
   - "How did Berg, Britten, and others create tonal tone rows?"

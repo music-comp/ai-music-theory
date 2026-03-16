@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Leading-Tone Lowering
 slug: leading-tone-lowering
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 361
 section: "Two models of key distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - flatward modulation
   - clockwise scalar step
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading-of-scales
   - scalar-spiral-diagram
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - fourth-scale-degree-raising
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the flatward application of the diatonic scale's basic voice leading?"
   - "How does lowering the leading tone produce a modulation to the subdominant?"

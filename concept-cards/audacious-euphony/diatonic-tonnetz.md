@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic Tonnetz
 slug: diatonic-tonnetz
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: Tonnetz variants
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 192
 section: "The Diatonic Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic parallelogram"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - brower-tonnetz-genesis
   - syntonic-image
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - chromatic-tonnetz
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the diatonic Tonnetz?"
   - "How does the Tonnetz represent diatonic relationships?"

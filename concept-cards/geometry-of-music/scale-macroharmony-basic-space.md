@@ -1,31 +1,25 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scale, Macroharmony, and Lerdahl's Basic Space
 slug: scale-macroharmony-basic-space
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: comparative-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
 chapter: "Appendix E: Scale, Macroharmony, and Lerdahl's 'Basic Space'"
-chapter_number: appendix-e
+chapter_number: null
 pdf_page: 442
 section: "Appendix E"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Lerdahl comparison"
   - "scale vs macroharmony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - five-components-of-tonality
 extends: []
@@ -33,7 +27,6 @@ related:
   - extended-common-practice-synthesis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Tymoczko's approach differ from Lerdahl's basic space?"
   - "Why should scale, macroharmony, and centricity be kept separate?"

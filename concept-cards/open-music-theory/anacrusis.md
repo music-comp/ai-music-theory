@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Anacrusis
 slug: anacrusis
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: null
 section: "Counting in Simple Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pickup note"
   - "upbeat"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - beat
   - meter
@@ -36,7 +30,6 @@ related:
   - compound-meter
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an anacrusis?"
   - "How do you count a pickup note?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Double-Agent Complex
 slug: double-agent-complex
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: weitzmann-subsets
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 89
 section: "The Double-Agent Complex"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Four-triad complex"
   - "Double-agent structure"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - weitzmann-region
   - agents-harrison
@@ -40,7 +34,6 @@ related:
   - expanded-nr-chains
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a double-agent complex?"
   - "How does the double-agent complex relate to Weitzmann regions?"

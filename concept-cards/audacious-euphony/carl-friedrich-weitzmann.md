@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Carl Friedrich Weitzmann
 slug: carl-friedrich-weitzmann
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: theorist-biography
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 77
 section: "Weitzmann Transformations and N/R Cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Weitzmann (theorist)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -33,7 +27,6 @@ related:
   - nebenverwandt
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Who was Carl Friedrich Weitzmann?"
   - "What was Weitzmann's contribution to augmented triad theory?"

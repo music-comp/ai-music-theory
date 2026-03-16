@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cadential Ending
 slug: cadential-ending
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: null
 section: "New: Cadential"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "cad."
   - "cadential"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hybrid-form
 extends: []
@@ -36,7 +30,6 @@ contrasts_with:
   - continuation
   - consequent
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cadential ending and what bass pattern defines it?"
   - "How does it differ from a continuation?"

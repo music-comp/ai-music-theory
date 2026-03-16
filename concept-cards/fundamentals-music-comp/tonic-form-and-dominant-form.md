@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonic Form and Dominant Form
 slug: tonic-form-and-dominant-form
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: theme-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 20
 section: "The Dominant Form: The Complementary Repetition"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - tonic version and dominant version
   - "dux and comes (in sentence construction)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - coherent-harmony
@@ -37,7 +31,6 @@ related:
   - transposition-in-sentence-construction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I build a sentence opening (presentation)?"
   - "What are tonic form and dominant form?"

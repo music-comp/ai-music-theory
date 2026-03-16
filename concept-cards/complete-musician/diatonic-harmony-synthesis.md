@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Synthesis of Diatonic Harmonic Relationships
 slug: diatonic-harmony-synthesis
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 19
 pdf_page: 446
 section: "A Synthesis of Diatonic Harmonic Relationships"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
   - submediant
@@ -35,7 +29,6 @@ related:
   - root-motions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do all diatonic harmonies relate to each other?"
   - "What must I know before analyzing sonata form?"

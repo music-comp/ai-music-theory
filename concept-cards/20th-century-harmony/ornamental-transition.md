@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ornamental Transition
 slug: ornamental-transition
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,13 +14,10 @@ chapter_number: 13
 pdf_page: 270
 section: "Combining Textures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - textural-transition
 extends:
@@ -33,7 +27,6 @@ related:
   - combining-textures
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do ornamental tones facilitate textural transitions?"
   - "Which ornamental devices are most effective for preparing new textures?"

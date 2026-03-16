@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Plagal Cadence
 slug: plagal-cadence
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 14
 pdf_page: 324
 section: "Revisiting the Subdominant"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - amen cadence
   - PC
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadence-types
   - subdominant-as-pre-dominant
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - cadence-types
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cadence?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fenaroli Schema
 slug: fenaroli-schema
 
-# === CLASSIFICATION ===
 category: schema
 subcategory: compositional-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 257
 section: "The logical structure of protofunctionality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fifths-and-steps-arrangement
 extends: []
@@ -32,7 +26,6 @@ related:
   - protofunctionality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Fenaroli schema?"
   - "How is the Fenaroli related to the fifths-and-steps arrangement?"

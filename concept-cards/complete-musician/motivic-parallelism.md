@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Motivic Parallelism
 slug: motivic-parallelism
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 16
 pdf_page: 364
 section: "Motivic Parallelism"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "structural parallelism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - two-level-analysis
@@ -35,7 +29,6 @@ related:
   - motivic-nesting
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is motivic parallelism?"
   - "How can the same motive operate at different structural levels?"

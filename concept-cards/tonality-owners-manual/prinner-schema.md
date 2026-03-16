@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Prinner Schema
 slug: prinner-schema
 
-# === CLASSIFICATION ===
 category: schema
 subcategory: compositional-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 257
 section: "The logical structure of protofunctionality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fifths-and-steps-arrangement
 extends: []
@@ -32,7 +26,6 @@ related:
   - protofunctionality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Prinner schema?"
   - "How does contrapuntal syntax relate to harmonic syntax in tonal music?"

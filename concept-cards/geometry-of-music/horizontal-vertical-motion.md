@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Horizontal and Vertical Motion (Parallel and Contrary)
 slug: horizontal-vertical-motion
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 85
 section: "3.1, 3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "parallel and contrary motion"
   - "transpositional and contrary components"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ordered-pitch-space
   - two-note-chord-space
@@ -36,7 +30,6 @@ related:
   - voice-leading-size
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does horizontal motion mean in chord space?"
   - "What does vertical motion mean in chord space?"

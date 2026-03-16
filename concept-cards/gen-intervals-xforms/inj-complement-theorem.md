@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: INJ Complement Theorem
 slug: inj-complement-theorem
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 154
 section: "6.6.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 6.6.1"
   - Generalized Babbitt Hexachord Theorem
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
   - inj-operation-theorem
@@ -35,7 +29,6 @@ related:
   - inj-generalizes-ifunc
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does INJ relate to set complementation?"
   - "What is the Generalized Babbitt Hexachord Theorem?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transposition Symmetry (T)
 slug: transposition-symmetry
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: symmetry
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "T symmetry"
   - "transpositional equivalence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-musical-object
   - transposition
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - inversion-symmetry
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are OPTIC symmetries?"
   - "What does transposition mean in both pitch and pitch-class spaces?"

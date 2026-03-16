@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Elision
 slug: elision
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 14
 pdf_page: 324
 section: "Evaded Cadences: Elision and Extension"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - phrase elision
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - evaded-cadence
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - cadential-extension
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cadence?"
 ---

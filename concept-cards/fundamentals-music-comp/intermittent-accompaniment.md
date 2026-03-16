@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Intermittent Accompaniment
 slug: intermittent-accompaniment
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: accompaniment-types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 51
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - accompaniment-function
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - figuration-and-broken-chords
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is intermittent accompaniment?"
   - "How does intermittent accompaniment differ from other types?"

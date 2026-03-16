@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melody
 slug: melody
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: melody
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 30
 section: "Melody"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "melodic line"
   - "tune"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rhythm
   - pitch-and-frequency
@@ -38,7 +32,6 @@ related:
   - symmetry-in-music
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is melody?"
   - "Why is rhythm essential to melodic identity?"

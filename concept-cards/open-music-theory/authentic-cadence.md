@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Authentic Cadence
 slug: authentic-cadence
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: cadences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,17 +14,13 @@ chapter_number: 1
 pdf_page: null
 section: "Authentic Cadences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
-# high: Explicitly defined with two subtypes and examples
 
-# === VARIANTS (authority control) ===
 aliases:
   - "AC"
   - "full cadence"
   - "V-I cadence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadence
   - harmonic-function
@@ -42,7 +35,6 @@ contrasts_with:
   - half-cadence
   - deceptive-motion
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an authentic cadence?"
   - "What is the difference between a PAC and an IAC?"

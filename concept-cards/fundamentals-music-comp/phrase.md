@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrase
 slug: phrase
 
-# === CLASSIFICATION ===
 category: melody
 subcategory: phrase-construction
 tier: foundational
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 11
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - musical phrase
   - musical molecule
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends:
   - musical-building-blocks
@@ -37,7 +31,6 @@ related:
   - motive
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a phrase in musical composition?"
   - "What is the smallest structural unit in music?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Twenty-Four Consonant Triads
 slug: twenty-four-consonant-triads
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 19
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "triadic universe"
   - "24 triads"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
 extends: []
@@ -36,7 +30,6 @@ related:
   - tonnetz-representation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How many consonant triads exist in 12-tone equal temperament?"
   - "What is the 'triadic universe'?"

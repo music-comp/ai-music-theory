@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Funktionstheorie (Function Theory)
 slug: funktionstheorie
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: analytical-framework
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier"
@@ -17,17 +14,14 @@ chapter_number: 1
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - function theory
   - Riemannian function theory
   - "theory of tonal functions"
   - Funktionslehre
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - harmonic-function
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - stufentheorie
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Riemann's function theory relate to neo-Riemannian transformations?"
   - "What distinguishes Riemann's original theory from neo-Riemannian theory?"

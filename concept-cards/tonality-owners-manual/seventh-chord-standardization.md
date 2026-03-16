@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seventh Chord Standardization
 slug: seventh-chord-standardization
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 257
 section: "Harmony and polyphony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - renaissance-seventh
   - protofunctionality
@@ -33,7 +27,6 @@ related:
   - gradual-evolution-of-tonality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did seventh chords become standardized?"
   - "What is the relationship between Renaissance sevenths and later seventh chords?"

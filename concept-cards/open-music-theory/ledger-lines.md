@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ledger Lines
 slug: ledger-lines
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: null
 section: "Writing Ledger Lines"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "leger lines"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - staff
   - clef
@@ -36,7 +30,6 @@ related:
   - middle-c
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are ledger lines?"
   - "How do ledger lines extend a staff?"

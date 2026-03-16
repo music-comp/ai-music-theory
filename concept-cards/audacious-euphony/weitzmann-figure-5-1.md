@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Weitzmann's Figure (5.1)"
 slug: weitzmann-figure-5-1
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: historical diagram
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 102
 section: "How Hexatonic and Weitzmann Regions Interact"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Figure 3.9 with overlay"
   - "Weitzmann's augmented triad figure"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - weitzmann-region
   - augmented-triad-as-switching-station
@@ -36,7 +30,6 @@ related:
   - cube-dance-graph
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the historical starting point for the unified model?"
   - "How does Weitzmann's original figure encode latent properties?"

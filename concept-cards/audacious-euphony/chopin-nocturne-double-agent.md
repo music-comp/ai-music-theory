@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Chopin Nocturne Op. 9 No. 1 Double-Agent Analysis"
 slug: chopin-nocturne-double-agent
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: chopin-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 87
 section: "Historical Origins of Weitzmann Regions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Chopin Nocturne bb minor double agent"
   - "Chopin Op. 9/1 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-agent-complex
   - double-agent-pitch
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - chopin-mazurka-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the double-agent complex work in the Chopin Nocturne Op. 9 No. 1?"
   - "What does it mean to plunge through the enharmonic seam?"

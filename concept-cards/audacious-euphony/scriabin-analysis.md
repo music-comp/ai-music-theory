@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Scriabin Feuillet d'Album Analysis"
 slug: scriabin-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: early twentieth-century analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 184
 section: "Scriabin's Mystic Species and Generalized Weitzmann Regions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Feuillet d'Album analysis"
   - "Scriabin Op. 58 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-weitzmann-region
   - mystic-chord
@@ -37,7 +31,6 @@ related:
   - boretz-region
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the GWR concept apply to Scriabin's mystic chord music?"
   - "What are the limits of extending voice-leading parsimony to larger chords?"

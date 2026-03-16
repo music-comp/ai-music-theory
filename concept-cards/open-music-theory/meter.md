@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Meter
 slug: meter
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "metre"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - beat
   - rhythm
@@ -37,7 +31,6 @@ related:
   - hypermeter
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is meter?"
   - "What is the difference between duple, triple, and quadruple meter?"

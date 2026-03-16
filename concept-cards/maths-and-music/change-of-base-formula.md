@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Change of Base Formula
 slug: change-of-base-formula
 
-# === CLASSIFICATION ===
 category: logarithms-and-measurement
 subcategory: conversion
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 66
 section: "Different Bases"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "property L4"
   - change of base
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - logarithmic-functions-as-inverses
   - logarithm-properties
@@ -36,7 +30,6 @@ related:
   - multiplicative-to-additive-conversion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can I compute a logarithm of one base using a logarithm of a different base?"
   - "How are logarithms of different bases related?"

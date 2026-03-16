@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cadence
 slug: cadence
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: cadences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,12 @@ chapter_number: 1
 pdf_page: null
 section: "Introduction to Cadences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
-# high: Explicitly defined with taxonomy in source
 
-# === VARIANTS (authority control) ===
 aliases:
   - "cadential pattern"
   - "phrase ending"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - phrase-model
@@ -39,7 +32,6 @@ related:
   - phrygian-half-cadence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cadence in tonal music?"
   - "What are the two main categories of cadence?"

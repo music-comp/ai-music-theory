@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Overtone Series
 slug: overtone-series
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: acoustics
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Benjamin Steege"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - harmonic series
   - Obertonreihe
   - partials
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -37,7 +31,6 @@ contrasts_with:
   - undertone-series
   - tonvorstellung
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes acoustic from psychological foundations of harmony?"
   - "Why did Riemann abandon the overtone series as the basis for harmonic theory?"

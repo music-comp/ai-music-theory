@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Schubert 'Liedesend' Analysis"
 slug: liedesend-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: piece-specific analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 146
 section: "Departure -> Return Scripts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - departure-return-script
   - zonal-palindrome
@@ -32,7 +26,6 @@ related:
   - liszt-kyrie-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can voice-leading zones reveal coherence in an apparently arbitrary modulatory scheme?"
 ---

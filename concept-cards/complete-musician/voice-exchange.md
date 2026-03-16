@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Exchange
 slug: voice-exchange
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: voice-relationships
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 183
 section: "Spacing and Voicing"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - pitch swapping
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - spacing-and-voicing
 extends: []
@@ -34,7 +28,6 @@ related:
   - part-exchange
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write proper voice-leading connections?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Schenkerian Network
 slug: schenkerian-network
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-extensions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.7.6"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-network-definition
   - proj-transformation
@@ -35,7 +29,6 @@ related:
   - output-node
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can Schenkerian analysis be incorporated into transformation networks?"
   - "What is a Schenkerian network?"

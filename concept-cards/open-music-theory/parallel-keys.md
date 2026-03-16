@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parallel Keys
 slug: parallel-keys
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: null
 section: "The Parallel and Relative Relationships"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "parallel major"
   - "parallel minor"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - major-scale
   - minor-scale
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - relative-keys
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are parallel keys?"
   - "What do parallel keys share?"

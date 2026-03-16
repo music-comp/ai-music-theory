@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mozart K.550 Development Analysis
 slug: mozart-k550-development-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: classical-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 251
 section: "10.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-network-definition
   - rich-transformation
@@ -37,7 +31,6 @@ related:
   - multiplicative-inversion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Lewin analyze Mozart's K.550 development section?"
   - "How can RI-chaining in pitch conceal elaborate durational transformations?"

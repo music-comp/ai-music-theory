@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rhythm Changes
 slug: rhythm-changes
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-form
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 373
 section: "10.1, 10.7"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "I Got Rhythm changes"
   - "AABA form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ii-v-i-jazz-progression
 extends: []
@@ -34,7 +28,6 @@ related:
   - bill-evans-oleo-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are rhythm changes?"
   - "Why are rhythm changes important to jazz?"

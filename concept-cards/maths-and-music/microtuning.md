@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Microtuning
 slug: microtuning
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: acoustics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 58
 section: "Microtuning and Cents"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - microtonal tuning
   - alternative tuning
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cents
 extends: []
@@ -35,7 +29,6 @@ related:
   - interval-as-frequency-ratio
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is microtuning?"
   - "Why is microtuning necessary?"

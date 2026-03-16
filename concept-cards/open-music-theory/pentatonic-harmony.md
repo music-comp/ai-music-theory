@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pentatonic Harmony
 slug: pentatonic-harmony
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: pop-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: null
 section: "VII.12"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pentatonic-scale
   - triad-types
@@ -33,7 +27,6 @@ related:
   - modal-schemas-overview
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does pentatonic harmony work in rock music?"
 ---

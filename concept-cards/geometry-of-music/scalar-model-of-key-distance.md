@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scalar Model of Key Distance
 slug: scalar-model-of-key-distance
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: key-relations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 264
 section: "7.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "voice-leading model of key distance"
   - "scale-based key distance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - efficient-voice-leading
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - weber-chart-of-regions
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can key distance be measured using voice leading between scales?"
   - "Why do minor keys modulate to the relative major more often than to the dominant?"

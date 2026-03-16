@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonic and Dominant as Tonal Pillars
 slug: tonic-and-dominant-as-tonal-pillars
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 183
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - I-V axis
   - tonic-dominant axis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonance-and-dissonance
   - triads
@@ -36,7 +30,6 @@ related:
   - voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
 ---

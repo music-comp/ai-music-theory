@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Inversional Near-Symmetry
 slug: inversional-near-symmetry
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: symmetry
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.9.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "near-I-symmetry"
   - "near-inversional invariance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inversion
   - near-symmetry
@@ -37,7 +31,6 @@ contrasts_with:
   - transpositional-near-symmetry
   - permutational-near-symmetry
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is inversional near-symmetry?"
   - "When can a chord be connected to its inversion by efficient voice leading?"

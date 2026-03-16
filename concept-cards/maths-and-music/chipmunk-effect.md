@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chipmunk Effect
 slug: chipmunk-effect
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: acoustics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 118
 section: "Formants"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - formants
   - effect-of-horizontal-stretching-on-pitch
@@ -33,7 +27,6 @@ related:
   - timbre-as-harmonic-amplitudes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why does speeding up a recording sound unnatural?"
   - "What is the chipmunk effect?"

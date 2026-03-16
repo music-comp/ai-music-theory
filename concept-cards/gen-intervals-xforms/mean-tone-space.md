@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mean-Tone Space
 slug: mean-tone-space
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: tonal-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 47
 section: "Discussion following Example 2.1.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "quarter-comma mean-tone space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modular-harmonic-space
   - equivalence-relation
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - modular-harmonic-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is mean-tone space derived from modular harmonic space?"
   - "What equivalence relation collapses the two-dimensional harmonic map to a one-dimensional chain?"

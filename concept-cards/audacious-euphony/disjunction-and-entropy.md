@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Disjunction and Entropy
 slug: disjunction-and-entropy
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: disjunction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 126
 section: "Remarks on Disjunction and Entropy"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "maximal disjunction"
   - "maximal entropy"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zones
   - zone-diametric-relations
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - chromatic-sequences
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can the pan-triadic model represent disjunction as well as conjunction?"
   - "How does maximal entropy relate to all-interval tetrachords?"

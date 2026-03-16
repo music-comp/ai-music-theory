@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Monte Schema
 slug: monte-schema
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: galant-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: null
 section: "Answer/Process/Transition"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - galant-schema
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - fonte-schema
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Monte schema and how does it ascend?"
   - "How does the Monte differ from the Fonte?"

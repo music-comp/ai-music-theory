@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Multilingualism Analogy
 slug: multilingualism-analogy
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: double syntax
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 219
 section: "Code Switching and Double Determination"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "bilingualism analogy"
   - "linguistic analogy for double syntax"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-syntax-objections
 extends: []
@@ -35,7 +29,6 @@ related:
   - congruent-lexicalization
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does multilingualism support the double syntax hypothesis?"
   - "What does linguistics tell us about the cognitive feasibility of double syntax?"

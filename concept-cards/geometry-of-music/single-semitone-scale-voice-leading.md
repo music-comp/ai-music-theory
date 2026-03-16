@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Single-Semitone Scale Voice Leading
 slug: single-semitone-scale-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: scalar-voice-leading
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 328
 section: "9.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "semitonal scale connection"
   - "scalar voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-first-composition
   - scale-lattice
@@ -36,7 +30,6 @@ related:
   - polyscalar-composition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are scales connected by minimal voice leading?"
   - "What does it mean for two scales to be one semitone apart?"

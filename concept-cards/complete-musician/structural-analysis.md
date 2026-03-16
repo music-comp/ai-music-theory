@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Structural Analysis
 slug: structural-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-techniques
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 162
 section: "Sample Analyses"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - reduction
   - melodic reduction
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hierarchy-in-tonal-music
   - melodic-fluency
@@ -35,7 +29,6 @@ related:
   - embellishment-and-reduction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What must I know before understanding voice leading?"
 ---

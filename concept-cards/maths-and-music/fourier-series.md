@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fourier Series
 slug: fourier-series
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: fourier-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 118
 section: "Fourier Theory"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Fourier decomposition"
   - "harmonic series expansion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-functions
   - sine-and-cosine-functions
@@ -39,7 +33,6 @@ related:
   - square-wave-fourier-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Fourier series?"
   - "How can any periodic function be expressed in terms of sines and cosines?"

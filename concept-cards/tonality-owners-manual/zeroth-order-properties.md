@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Zeroth-Order Properties
 slug: zeroth-order-properties
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 257
 section: "The logical structure of protofunctionality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - chord frequency
   - context-independent probabilities
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - first-order-properties
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are zeroth-order properties in harmonic analysis?"
   - "Why is chordal vocabulary more fundamental than progression tendencies?"

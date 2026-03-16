@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Symmetrically Constructed Harmonies
 slug: symmetrically-constructed-harmonies
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: new harmonic tendencies
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 34
 pdf_page: 790
 section: "The Diminished Seventh Chord and Enharmonic Modulation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "symmetrical chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diminished-seventh-chord
 extends: []
@@ -34,7 +28,6 @@ related:
   - asymmetry-and-symmetry-in-tonal-music
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are symmetrically constructed harmonies?"
 ---

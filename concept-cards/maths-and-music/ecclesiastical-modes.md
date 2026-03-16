@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ecclesiastical Modes
 slug: ecclesiastical-modes
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 14
 section: "Modality and Key"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "church modes"
   - "medieval modes"
   - "modal scales"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cyclic-permutations
   - diatonic-and-chromatic-scales
@@ -38,7 +32,6 @@ related:
   - key-signatures-and-the-circle-of-fifths
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the seven ecclesiastical modes?"
   - "How are modes related to cyclic permutations of the diatonic scale?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Schubert Impromptu Analysis (Rings)
 slug: schubert-impromptu-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-practices
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Steven Rings"
@@ -17,15 +14,12 @@ chapter_number: 18
 pdf_page: 488
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Schubert Gb Impromptu analysis
   - D. 899 no. 3 analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - analytical-values-paradigms
   - plr-transformations
@@ -38,7 +32,6 @@ related:
   - weitzmann-region-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I apply neo-Riemannian analysis to a Schubert song?"
   - "How do Riemannian and neo-Riemannian analyses of the same passage differ?"

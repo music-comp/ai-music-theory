@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Inverse Element
 slug: inverse-element
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: algebraic-structures
 tier: foundational
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 32
 section: "1.6.1-1.6.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - inverse
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - semigroup
   - identity-element
@@ -34,7 +28,6 @@ related:
   - group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What mathematical concepts must I know before understanding GIS?"
 ---

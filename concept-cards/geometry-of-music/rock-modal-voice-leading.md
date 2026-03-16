@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rock Modal Voice Leading
 slug: rock-modal-voice-leading
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: scale-first-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 358
 section: "9.3.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "modal rock"
   - "scale-first rock composition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-first-composition
 extends: []
@@ -34,7 +28,6 @@ related:
   - twentieth-century-scalar-common-practice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does scale-first composition appear in rock music?"
   - "How are The Who and Bob Seger related to Debussy?"

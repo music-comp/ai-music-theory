@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Puff Schema
 slug: puff-schema
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: pop-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: null
 section: "VII.10"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "I-iii-IV"
   - "I-III#-IV"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - mediant-chord
   - chord-function
@@ -34,7 +28,6 @@ related:
   - singer-songwriter-schema
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the puff schema and where does it typically occur?"
   - "How does III# function as deceptive motion?"

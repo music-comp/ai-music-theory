@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sentence Structure
 slug: sentence-structure
 
-# === CLASSIFICATION ===
 category: form
 subcategory: structural patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 21
 pdf_page: 477
 section: "The Sentence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "sentence"
   - "Satz"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
   - subphrase
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - period
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a sentence?"
   - "What distinguishes a sentence from a period?"

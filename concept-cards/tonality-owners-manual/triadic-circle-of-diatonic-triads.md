@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Triadic Circle of Diatonic Triads
 slug: triadic-circle-of-diatonic-triads
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 96
 section: "The circle of diatonic triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "3-in-7 spiral diagram"
   - "circle of diatonic triads"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - diatonic-dyad-circle
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - diatonic-dyad-circle
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a spiral diagram, and what relationships does it encode?"
   - "How does voice-leading distance relate to harmonic proximity?"

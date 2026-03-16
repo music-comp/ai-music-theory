@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Simply Transitive Group
 slug: simply-transitive-group
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: simply-transitive-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: 188
 section: "7.1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - STRANS
   - "simply transitive action"
   - "regular group action"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - group
   - operation
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - non-intervallic-transformations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a simply transitive group?"
   - "How does simple transitivity relate to GIS structure?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Auftakttheorie
 slug: auftakttheorie
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric theory
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "William E. Caplin"
@@ -17,17 +14,14 @@ chapter_number: 15
 pdf_page: 418
 section: "Expressed Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "upbeat theory"
   - "theory of upbeat"
   - "end-accent theory"
   - "Theorie des Auftakts"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - expressed-meter
   - hierarchical-metric-organization
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - initial-accentuation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes Riemann's metric theory from conventional metric analysis?"
   - "What is Auftakttheorie (upbeat theory)?"

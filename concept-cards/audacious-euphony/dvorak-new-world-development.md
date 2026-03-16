@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Dvorak 'New World' Symphony Development Analysis"
 slug: dvorak-new-world-development
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: piece-specific analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 152
 section: "Continuous Upshifts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - continuous-upshift
   - voice-leading-zones
@@ -34,7 +28,6 @@ related:
   - dvorak-upper-mediant-scheme
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does continuous upshift work without sequential repetition?"
   - "How can two analytical 'performances' of the same data illuminate different aspects?"

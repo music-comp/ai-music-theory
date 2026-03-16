@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Virtual Presence (Tetrachordal)"
 slug: virtual-presence-tetrachordal
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: tetrachordal systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 170
 section: "Boretz regions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "virtual diminished seventh"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - boretz-region
   - diminished-seventh-chord
@@ -35,7 +29,6 @@ related:
   - boretz-spider
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can a diminished seventh chord structure a passage without appearing on the surface?"
   - "What does 'virtual presence' mean in the context of Boretz regions?"

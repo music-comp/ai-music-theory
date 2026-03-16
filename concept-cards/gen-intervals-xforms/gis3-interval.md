@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: GIS3-Interval
 slug: gis3-interval
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: direct-product-gis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 68
 section: "3.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "compound interval"
   - "direct-product interval"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - direct-product-gis
 extends: []
@@ -35,7 +29,6 @@ related:
   - ictus
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can pitch and temporal intervals be tracked simultaneously?"
   - "What is a compound interval in a direct-product GIS?"

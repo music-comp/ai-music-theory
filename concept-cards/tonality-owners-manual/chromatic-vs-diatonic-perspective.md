@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic vs. Diatonic Perspective
 slug: chromatic-vs-diatonic-perspective
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: chromatic-vs-diatonic
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 357
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "diatonic vs. chromatic analysis"
   - "hierarchical vs. flat models of chord and scale"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - descending-thirds-arrangement
   - basic-voice-leading
@@ -36,7 +30,6 @@ related:
   - scalar-voice-leading-notation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do diatonic and chromatic organization interact in tonal music?"
   - "What is the advantage of a hierarchical diatonic analysis over a flat chromatic one?"

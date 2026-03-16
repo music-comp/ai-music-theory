@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Musical Maps
 slug: musical-maps
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: geometric models
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 19
 section: "Remarks on Syntax and Maps"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "geometric representations of musical space"
   - "pitch-space models"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -36,7 +30,6 @@ related:
   - bering-strait-problem
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are musical maps and what are they good for?"
   - "What questions can musical maps help answer about compositions?"

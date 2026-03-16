@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Submediant Mixture (bVI)
 slug: submediant-mixture
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: mixture
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 27
 pdf_page: 616
 section: "Altered Submediant Harmony: bVI"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "flat-six chord"
   - "bVI"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-mixture
 extends:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - diatonic-submediant
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modal mixture?"
   - "How does modal mixture relate to borrowed chords?"

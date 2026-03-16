@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval Vector
 slug: interval-vector
-# === CLASSIFICATION ===
 category: analysis
 subcategory: set-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,12 +11,9 @@ chapter: "Set Class and Prime Form"
 chapter_number: 8
 pdf_page: null
 section: "VIII.4"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "ic vector"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-class
   - set-class
@@ -28,7 +22,6 @@ related:
   - z-relation
   - forte-number
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an interval vector?"
   - "How do you calculate an interval vector?"

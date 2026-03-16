@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Key Distance
 slug: key-distance
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: modulation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 205
 section: "5.8.2"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "tonal distance"
   - "distance between keys"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - macroharmony
   - generalized-theory-of-keys
@@ -35,7 +29,6 @@ related:
   - nineteenth-century-chromaticism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do we measure distance between keys?"
   - "What is key distance?"

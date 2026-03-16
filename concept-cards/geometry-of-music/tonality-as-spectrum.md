@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonality as Spectrum
 slug: tonality-as-spectrum
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: tonality
 tier: foundational
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 21
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tonal spectrum"
   - "degrees of tonality"
   - "tonality continuum"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - five-components-of-tonality
 extends:
@@ -35,7 +29,6 @@ related:
   - five-features-interdependence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the five components of tonality?"
   - "Is tonality a binary or continuous property?"

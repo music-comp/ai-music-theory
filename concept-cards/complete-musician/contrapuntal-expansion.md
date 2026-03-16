@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrapuntal Expansion
 slug: contrapuntal-expansion
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: elaboration
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 10
 pdf_page: 226
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - prolongation
   - harmonic expansion
   - tonic expansion
   - dominant expansion
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonic-and-dominant-as-tonal-pillars
   - second-level-analysis
@@ -39,7 +33,6 @@ related:
   - structural-vs-embellishing-harmonies
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
 ---

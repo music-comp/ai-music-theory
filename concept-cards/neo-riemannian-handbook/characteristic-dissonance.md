@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Characteristic Dissonance
 slug: characteristic-dissonance
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-identification
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Alexander Rehding"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "charakteristische Dissonanz"
   - "function-identifying dissonance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - consonance-dissonance-dualism
@@ -35,7 +29,6 @@ related:
   - harmonic-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a characteristic dissonance in Riemannian theory?"
   - "How do dissonances identify harmonic function in dualist theory?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Webern Op. 7 No. 3 IFUNC Analysis
 slug: webern-op7-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: webern-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - Webern Four Pieces op. 7 analysis
   - Webern violin piece IFUNC analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ifunc
   - set-in-gis
@@ -36,7 +30,6 @@ related:
   - inj-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does IFUNC reveal structural relationships in atonal music?"
   - "How can a single set be articulated in multiple valid ways?"

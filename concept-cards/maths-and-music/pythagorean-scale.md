@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pythagorean Scale
 slug: pythagorean-scale
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: pythagorean
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: 152
 section: "The Pythagorean Scale"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Pythagorean tuning
   - 3-limit scale
   - Pythagorean diatonic scale
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-fifth
   - p-limit-tuning
@@ -41,7 +35,6 @@ contrasts_with:
   - just-intonation-scale
   - mean-tone-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Pythagorean scale?"
   - "How do I build a Pythagorean scale?"

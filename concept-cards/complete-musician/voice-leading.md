@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading
 slug: voice-leading
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 183
 section: "Introduction to Voice Leading"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - part writing
   - voice-leading rules
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonic-and-dominant-as-tonal-pillars
   - tendency-tones
@@ -38,7 +32,6 @@ related:
   - spacing-and-voicing
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write proper voice-leading connections?"
   - "How do I write a four-voice (SATB) chorale?"

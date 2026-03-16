@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: LT Transformation
 slug: lt-transformation
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: klang-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 206
 section: "8.1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "leading-tone exchange"
   - "Leittonwechsel"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang-representation
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - slide-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I apply LT to Klangs?"
   - "What is the leading-tone exchange?"

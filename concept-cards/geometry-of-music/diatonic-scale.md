@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic Scale
 slug: diatonic-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-types
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 142
 section: "4.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "major scale"
   - "seven-note diatonic"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - stacks-of-fifths
   - stacks-of-thirds
@@ -38,7 +32,6 @@ related:
   - scale-lattice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the diatonic scale arise from the geometry of chord space?"
   - "Why is the diatonic scale 'overdetermined' as a musical structure?"

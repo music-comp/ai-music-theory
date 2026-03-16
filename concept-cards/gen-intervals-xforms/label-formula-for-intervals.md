@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Label Formula for Intervals
 slug: label-formula-for-intervals
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: formal-features
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 62
 section: "3.1 The LABEL Function"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "interval from labels"
   - "LABEL recovery formula"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - label-function
   - interval-group-ivls
@@ -36,7 +30,6 @@ related:
   - interval-preserving-operation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can intervals be computed from LABEL values?"
   - "What distinguishes the LABEL function from the int function?"

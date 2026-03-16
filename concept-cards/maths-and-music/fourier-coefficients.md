@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fourier Coefficients
 slug: fourier-coefficients
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: fourier-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 118
 section: "Fourier Theory"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fourier-series
 extends:
@@ -35,7 +29,6 @@ related:
   - harmonics-and-overtones
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do Fourier coefficients determine timbre?"
   - "How are Fourier coefficients computed?"

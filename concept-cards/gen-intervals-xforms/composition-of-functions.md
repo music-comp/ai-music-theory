@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Composition of Functions
 slug: composition-of-functions
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: functions
 tier: foundational
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 32
 section: "1.2.3-1.2.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - function composition
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - function
   - functional-equality
@@ -34,7 +28,6 @@ related:
   - associativity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What mathematical concepts must I know before understanding GIS?"
   - "How do transformations combine in sequence?"

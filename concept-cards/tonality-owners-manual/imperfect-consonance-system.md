@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Imperfect Consonance System
 slug: imperfect-consonance-system
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 96
 section: "The imperfect system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "imperfect system"
   - "2-in-7 system"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - triadic-circle-of-diatonic-triads
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the imperfect consonance system?"
   - "Why do fifths predominate in two-voice diatonic counterpoint?"

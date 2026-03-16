@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Empfindung vs. Vorstellung (Sensation vs. Representation)
 slug: empfindung-vorstellung
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: epistemology
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Benjamin Steege"
@@ -17,17 +14,14 @@ chapter_number: 2
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "sensation vs. representation"
   - "Tonempfindung vs. Tonvorstellung"
   - "physical ear vs. mental ear"
   - "leibliches Ohr vs. geistiges Ohr"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
 extends: []
@@ -37,7 +31,6 @@ related:
   - nature-of-harmony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes acoustic from psychological foundations of harmony?"
   - "What background is required for harmonic dualism?"

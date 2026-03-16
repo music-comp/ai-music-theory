@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hexatonic Scale
 slug: hexatonic-scale
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,10 +14,8 @@ chapter_number: 2
 pdf_page: 35
 section: "The Hexatonic Trance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "augmented scale"
   - "1:3 collection"
@@ -31,7 +26,6 @@ aliases:
   - "Liszt model"
   - "source-set E"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-cycle
 extends: []
@@ -40,7 +34,6 @@ related:
   - hexatonic-trance
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a hexatonic scale?"
   - "How does the hexatonic scale relate to hexatonic cycles?"

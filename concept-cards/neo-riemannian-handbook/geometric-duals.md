@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Geometric Duals
 slug: geometric-duals
 
-# === CLASSIFICATION ===
 category: pitch-space
 subcategory: spatial representations of pitch
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "graph duality"
   - "dual graphs"
   - "chicken-wire torus and Tonnetz duality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
   - toroidal-tonnetz
@@ -37,7 +31,6 @@ related:
   - regional-space
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are the pitch-class Tonnetz and the triadic Tonnetz related?"
   - "What are geometric duals in the context of the Tonnetz?"

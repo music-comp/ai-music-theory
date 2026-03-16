@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Polytonal to Atonal Transition
 slug: polytonal-to-atonal
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,13 +14,10 @@ chapter_number: 13
 pdf_page: 270
 section: "Combining Textures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - polytonality
   - atonality
@@ -35,7 +29,6 @@ related:
   - tonal-gravity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can polytonal textures dissolve into atonality?"
   - "What role does chromatic freedom play in this transition?"

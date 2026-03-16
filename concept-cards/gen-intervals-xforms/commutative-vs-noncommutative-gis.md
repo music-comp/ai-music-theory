@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Commutative vs. Non-Commutative GIS
 slug: commutative-vs-noncommutative-gis
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: formal-features
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 62
 section: "3.4-3.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "commutative GIS"
   - "non-commutative GIS"
   - "abelian vs non-abelian GIS"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - interval-group-ivls
@@ -39,7 +33,6 @@ related:
   - central-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do commutative and non-commutative GIS structures differ?"
   - "What distinguishes a commutative GIS from a non-commutative GIS?"

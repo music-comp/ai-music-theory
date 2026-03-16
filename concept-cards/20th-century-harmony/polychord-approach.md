@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Polychord Approach and Evaporation
 slug: polychord-approach
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: 270
 section: "Combining Textures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "polychord evaporation"
   - "coupled triad approach"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - textural-transition
   - polychord
@@ -37,7 +31,6 @@ related:
   - polytonal-to-atonal
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are polychords approached from simpler harmony?"
   - "What is polychord evaporation?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modulation
 slug: modulation
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-motion
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier, Benjamin Steege"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - key change
   - Modulation (German)
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
   - harmonic-function
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - applied-dominant
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does function theory distinguish modulation from applied dominants?"
   - "What is the essence of modulation in Riemann's theory?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neighbor Tone
 slug: neighbor-tone
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,10 +14,8 @@ chapter_number: 7
 pdf_page: 162
 section: "Consonance and Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - auxiliary tone
   - neighbor
@@ -28,7 +23,6 @@ aliases:
   - upper neighbor (UN)
   - lower neighbor (LN)
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonchord-tones
 extends: []
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - passing-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
   - "What distinguishes a passing tone from a neighbor tone?"

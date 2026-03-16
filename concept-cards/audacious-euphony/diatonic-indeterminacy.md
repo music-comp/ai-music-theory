@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic Indeterminacy
 slug: diatonic-indeterminacy
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: tonal ambiguity
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 19
 section: "Triads in Chromatic Space"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tonal indeterminacy"
   - "diatonic incoherence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-vs-diatonic-organization
 extends: []
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - diatonic-collection
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does it mean for a triadic progression to be diatonically indeterminate?"
   - "How is diatonic indeterminacy measured?"

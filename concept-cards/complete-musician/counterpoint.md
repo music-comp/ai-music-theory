@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Counterpoint
 slug: counterpoint
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: fundamentals
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 94
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "polyphony"
   - "contrapuntal writing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-and-dissonant-intervals
   - melody
@@ -36,7 +30,6 @@ related:
   - contrapuntal-motions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is counterpoint?"
   - "What distinguishes consonance from dissonance?"

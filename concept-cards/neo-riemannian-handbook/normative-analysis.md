@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Normative Analysis
 slug: normative-analysis
 
-# === CLASSIFICATION ===
 category: rhythm-and-meter
 subcategory: analytical-methodology
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Paul Berry"
@@ -17,16 +14,13 @@ chapter_number: 17
 pdf_page: 464
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "norm-based analysis"
   - "Riemannian normative method"
   - "deviation-from-norm analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - auftakttheorie
 extends:
@@ -37,7 +31,6 @@ related:
   - phrase-rhythm-brahms
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Riemann's normative analytical method?"
   - "How does normative analysis treat deviations from the eight-measure period?"

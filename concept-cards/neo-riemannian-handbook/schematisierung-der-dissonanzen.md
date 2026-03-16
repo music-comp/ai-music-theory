@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Schematisierung der Dissonanzen
 slug: schematisierung-der-dissonanzen
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: dissonance
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: 382
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "systematization of dissonances"
   - "classification of dissonances"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - harmonieschritte
@@ -37,7 +31,6 @@ related:
   - seventh-chord-spaces
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did Riemann systematize dissonant chords?"
   - "What categories did Riemann use to classify dissonance?"

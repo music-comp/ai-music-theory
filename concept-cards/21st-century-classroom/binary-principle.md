@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Binary Principle
 slug: binary-principle
 
-# === CLASSIFICATION ===
 category: form
 subcategory: small-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,13 +14,10 @@ chapter_number: 24
 pdf_page: 353
 section: "24.6 Binary Principle"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
   - modulation
@@ -34,7 +28,6 @@ related:
   - sectional-vs-continuous
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is binary principle?"
   - "What is the typical tonal plan of a Baroque binary form?"

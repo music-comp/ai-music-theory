@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Forwards-Oriented Interval
 slug: forwards-oriented-interval
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: time-span-set-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: 119
 section: "5.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span-gis
   - attack-ordered-dyad
@@ -33,7 +27,6 @@ related:
   - unrolling-interval-vector
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a forwards-oriented interval in the time-span GIS?"
   - "How do forwards-oriented intervals classify time-span dyads?"

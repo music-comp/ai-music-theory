@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Descending Melodic Thirds in Functional Harmony
 slug: descending-melodic-thirds
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: melody-harmony-interaction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 251
 section: "7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "falling thirds melodies"
   - "descending thirds pitch-class sequences"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - circle-of-thirds-harmonic
   - strong-vs-weak-progressions
@@ -35,7 +29,6 @@ related:
   - diatonic-sequences
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why do strong progressions produce descending melodic thirds?"
   - "How do falling thirds melodies relate to functional harmony?"

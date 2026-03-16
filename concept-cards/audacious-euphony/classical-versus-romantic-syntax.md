@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Classical versus Romantic Syntax
 slug: classical-versus-romantic-syntax
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: null
 pdf_page: 9
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "double syntax"
   - "diatonic vs. pan-triadic syntax"
   - "old and new syntaxes"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -36,7 +30,6 @@ related:
   - triads-second-nature
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do classical and romantic syntax differ?"
   - "Can two different syntactic systems operate in the same piece?"

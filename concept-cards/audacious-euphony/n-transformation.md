@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "N Transformation (Nebenverwandt)"
 slug: n-transformation
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: weitzmann-transformations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: 79
 section: "Weitzmann Transformations and N/R Cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Nebenverwandt transformation"
   - "L-inverse"
   - "L-prime"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
   - nebenverwandt
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - l-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes L, P, R, N, and S transformations?"
   - "What is the N transformation?"

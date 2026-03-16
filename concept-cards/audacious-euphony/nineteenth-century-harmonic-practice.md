@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nineteenth-Century Harmonic Practice
 slug: nineteenth-century-harmonic-practice
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: null
 pdf_page: 9
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "long nineteenth century"
   - "Romantic harmonic practice"
   - "chromatic triadic practice"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - audacious-euphony-paradox
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What characterizes nineteenth-century harmonic practice?"
   - "What is the 'long nineteenth century' in music?"

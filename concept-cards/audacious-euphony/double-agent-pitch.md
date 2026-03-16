@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Double Agent Pitch
 slug: double-agent-pitch
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: enharmonic-phenomena
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 89
 section: "The Double-Agent Complex"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Enharmonic double agent"
   - "Double-function pitch"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - agents-harrison
   - double-agent-complex
@@ -36,7 +30,6 @@ related:
   - s-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a double agent pitch?"
   - "How does enharmonic respelling redirect melodic agency?"

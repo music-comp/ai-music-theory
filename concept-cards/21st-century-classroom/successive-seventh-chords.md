@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Successive Seventh Chords
 slug: successive-seventh-chords
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 27
 pdf_page: 404
 section: "27.2 Voice Leading Successive Seventh Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "chain of seventh chords"
   - "circle of fifths seventh chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chord-resolution
   - circle-of-fifths-progression
@@ -34,7 +28,6 @@ extends:
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you voice lead successive seventh chords in a circle of fifths?"
   - "What is the alternating voicing pattern for root position seventh chord chains?"

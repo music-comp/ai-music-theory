@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: The Schenkerian Critique — Pluralism
 slug: schenkerian-critique-pluralism
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: theoretical-debate
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 276
 section: "7.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "harmony vs counterpoint debate"
   - "harmonic grammar independence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - thirds-based-harmonic-grammar
 extends: []
@@ -33,7 +27,6 @@ related:
   - two-lattices
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Does functional harmony involve independent harmonic laws, or can it be explained purely contrapuntally?"
   - "How does Tymoczko respond to the Schenkerian claim that harmony reduces to counterpoint?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Spacing and Register
 slug: spacing-and-register
 
-# === CLASSIFICATION ===
 category: pitch
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 33
 section: "1.13 Spacing and Register"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - spacing intervals
   - registral order
   - voicing
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - ordered-pitch-class-interval
@@ -37,7 +31,6 @@ related:
   - pitch-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is spacing in post-tonal theory?"
   - "How do I describe the vertical arrangement of a chord?"

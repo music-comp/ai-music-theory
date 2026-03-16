@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octave Equivalence
 slug: octave-equivalence
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: frequency
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 14
 section: "Octave Equivalence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "modulo octave"
   - "octave identification"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - musical-intervals
   - equivalence-relations
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - enharmonic-equivalence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is octave equivalence?"
   - "How is octave equivalence formalized as an equivalence relation?"

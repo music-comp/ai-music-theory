@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compound Rondo Form
 slug: compound-rondo-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: rondo
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 32
 pdf_page: 730
 section: "Compound Rondo Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rondo-form
   - binary-form
@@ -33,7 +27,6 @@ related:
   - compound-ternary-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is compound rondo form?"
 ---

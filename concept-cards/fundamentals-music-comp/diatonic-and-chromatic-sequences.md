@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic and Chromatic Sequences
 slug: diatonic-and-chromatic-sequences
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: sequential-treatment
 tier: intermediate/advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 39
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sequences-and-quasi-sequences
 extends:
@@ -34,7 +28,6 @@ related:
   - development-and-liquidation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between diatonic and chromatic sequences?"
   - "How do sequences relate to tonal stability?"

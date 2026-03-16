@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Major-Third System in Twentieth-Century Music
 slug: major-third-system-twentieth-century
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chord-relations
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 338
 section: "9.2.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "major-third related triads"
   - "neo-Riemannian major third"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-first-composition
 extends:
@@ -34,7 +28,6 @@ related:
   - debussy-wagner-comparison
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the major-third system appear in twentieth-century music?"
   - "How did the major-third system evolve from Schubert to contemporary music?"

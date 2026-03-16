@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Homomorphism
 slug: homomorphism
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: morphisms
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Homomorphism"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - group homomorphism
   - structure-preserving map
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - group
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - isomorphism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a homomorphism?"
   - "How do homomorphisms relate to musical interval conversions?"

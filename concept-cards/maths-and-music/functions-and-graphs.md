@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Functions and Graphs
 slug: functions-and-graphs
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: functions
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 14
 section: "Functions and graphs"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "real-valued functions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sets-and-number-systems
   - interval-notation
@@ -34,7 +28,6 @@ related:
   - pitch-and-frequency
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a function and its graph?"
   - "What are domain and range?"

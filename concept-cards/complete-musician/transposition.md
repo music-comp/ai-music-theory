@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transposition
 slug: transposition
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch-operations
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 3
 section: "Building Scales in the Major Mode"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "transpose"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - key
   - scale-degrees
@@ -34,7 +28,6 @@ related:
   - key-signatures
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is transposition?"
 ---

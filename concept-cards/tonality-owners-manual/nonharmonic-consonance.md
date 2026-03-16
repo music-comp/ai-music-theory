@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nonharmonic Consonance
 slug: nonharmonic-consonance
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: 210
 section: "The first practice and the SNAP system"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-tone
 extends: []
@@ -32,7 +26,6 @@ related:
   - ambiguous-syntax-in-tonal-music
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonharmonic consonance?"
   - "Why do nonharmonic consonances complicate harmonic analysis?"

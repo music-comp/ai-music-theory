@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic and Harmonic Intervals
 slug: melodic-and-harmonic-intervals
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 70
 section: "Melodic and Harmonic Intervals: Simple and Compound"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "linear interval"
   - "vertical interval"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
 extends:
@@ -34,7 +28,6 @@ related:
   - simple-and-compound-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between a melodic and a harmonic interval?"
 ---

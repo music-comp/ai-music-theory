@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parallel Keys
 slug: parallel-keys
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: key-relationships
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 3
 section: "Relative Major and Minor Keys"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "parallel major"
   - "parallel minor"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - key
   - mode
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - relative-keys
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are parallel keys?"
   - "How do parallel keys differ from relative keys?"

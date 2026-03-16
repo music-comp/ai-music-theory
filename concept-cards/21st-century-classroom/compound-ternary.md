@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compound Ternary Form
 slug: compound-ternary
 
-# === CLASSIFICATION ===
 category: form
 subcategory: small-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 24
 pdf_page: 357
 section: "24.7.1 Compound Ternary"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "minuet and trio form"
   - "da capo form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ternary-form
   - binary-form
@@ -35,7 +29,6 @@ related:
   - classical-multimovement-forms
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is compound ternary form?"
   - "How does compound ternary differ from simple ternary?"

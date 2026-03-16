@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Just Interval
 slug: just-interval
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 11
 pdf_page: 138
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - pure interval
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rational-interval
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - irrationality-of-equally-tempered-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a just interval?"
   - "How do just intervals differ from equally tempered intervals?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sonata Form Exposition
 slug: sonata-form-exposition
 
-# === CLASSIFICATION ===
 category: form
 subcategory: large-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 25
 pdf_page: 367
 section: "25.1 Sonata Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "exposition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form
   - modulation
@@ -36,7 +30,6 @@ related:
   - sonata-form-recapitulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the sections within a sonata form exposition?"
   - "What keys are the primary and secondary themes in?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transposition
 slug: transposition
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: transformation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "translation"
   - "Tx"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-space
   - distance-in-music
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - inversion
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does transposition mean in both pitch and pitch-class spaces?"
   - "What are the distance-preserving transformations of musical space?"

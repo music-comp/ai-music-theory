@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seventh Chord Voice Leading
 slug: seventh-chord-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: chord-connection
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 253
 section: "7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "descending seventh-chord voice leading"
   - "seventh chord circle of thirds"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - circle-of-thirds-harmonic
   - efficient-voice-leading
@@ -37,7 +31,6 @@ related:
   - chopin-open-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does voice leading between seventh chords differ from triadic voice leading?"
   - "Why is seventh-chord harmony more straightforward than triadic harmony in some respects?"

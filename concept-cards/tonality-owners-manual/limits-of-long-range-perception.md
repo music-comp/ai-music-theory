@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Limits of Long-Range Perception
 slug: limits-of-long-range-perception
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: perception-and-epistemology
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 402
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "perceptual limits in music"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hearing-as-vs-hearing-plus-thinking
 extends:
@@ -35,7 +29,6 @@ related:
   - analytical-objectivity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How reliable are claims about hearing large-scale tonal structures?"
   - "What are the limits of long-range musical perception?"

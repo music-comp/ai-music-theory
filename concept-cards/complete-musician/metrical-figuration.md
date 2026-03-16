@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Metrical Figuration
 slug: metrical-figuration
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 203
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - metrical passing tone
   - harmonized figuration
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - passing-tone
   - harmonic-rhythm
@@ -39,7 +33,6 @@ contrasts_with:
   - submetrical-figuration
   - supermetrical-figuration
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

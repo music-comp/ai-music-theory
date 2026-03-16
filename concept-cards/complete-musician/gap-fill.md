@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Gap-Fill
 slug: gap-fill
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: melodic-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 162
 section: "Melodic Fluency"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - gap fill
   - Gestalt gap-fill
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - melodic-fluency
 extends: []
@@ -34,7 +28,6 @@ related:
   - expectation-and-fulfillment
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What must I know before understanding voice leading?"
 ---

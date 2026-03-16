@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cambiata
 slug: cambiata
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 210
 section: "The first practice and the SNAP system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - nota cambiata
   - changing tone
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-tone
   - neighbor-tone
@@ -37,7 +31,6 @@ related:
   - incomplete-neighbor
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cambiata?"
   - "Why is the cambiata the only incomplete neighbor in the Palestrina style?"

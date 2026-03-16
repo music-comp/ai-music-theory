@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chase Schema
 slug: chase-schema
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 4
 pdf_page: 155
 section: "Three voices and the circle of triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - canonic-sequence
   - triadic-circle-of-diatonic-triads
@@ -34,7 +28,6 @@ related:
   - basic-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Chase schema and how does it combine canon and sequence?"
 ---

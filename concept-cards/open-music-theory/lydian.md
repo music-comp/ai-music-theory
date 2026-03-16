@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Lydian Mode
 slug: lydian
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 14
 pdf_page: null
 section: "Modes and the Parallel Relationship"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - mode
   - major-scale
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - locrian
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the lydian mode?"
   - "How does lydian differ from major?"

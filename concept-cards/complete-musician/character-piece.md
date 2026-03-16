@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Character Piece
 slug: character-piece
 
-# === CLASSIFICATION ===
 category: form
 subcategory: ternary
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 31
 pdf_page: 702
 section: "Ternary Form in the Nineteenth Century"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Charakterstueck"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ternary-form
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - da-capo-aria
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a character piece?"
 ---

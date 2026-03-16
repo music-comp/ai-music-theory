@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Antitonic Trichord
 slug: antitonic-trichord
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Daniel Harrison"
@@ -17,16 +14,13 @@ chapter_number: 20
 pdf_page: 555
 section: "II. Some Hypotheses about Tonic and Antitonic Trichords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "[026] discord"
   - fundamental dominant discord
   - antitonic discord
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
 extends: []
@@ -36,7 +30,6 @@ related:
   - parsimonious-trichords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an antitonic trichord in Harrison's theory?"
   - "Why is the [026] trichord the fundamental dominant discord?"

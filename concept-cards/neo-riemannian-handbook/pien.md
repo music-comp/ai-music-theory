@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Pien (Filling Tones)"
 slug: pien
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scalar-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Matthew Gelbart, Alexander Rehding"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - filling tones
   - infixed tones
   - ornamental tones
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pentatonicism
 extends: []
@@ -37,7 +31,6 @@ related:
   - folkloristische-tonalitatsstudien
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do pien tones transform pentatonic scales toward diatonicism?"
   - "What distinguishes pentatonic from diatonic tonality in Riemann's framework?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Consequent of the Period
 slug: consequent-of-the-period
 
-# === CLASSIFICATION ===
 category: form
 subcategory: period-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 24
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - after-sentence
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - antecedent-of-the-period
   - caesura
@@ -38,7 +32,6 @@ related:
   - rhythmic-increase-and-decrease-in-cadences
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write a consequent that completes a period?"
   - "How does the consequent relate to the antecedent?"

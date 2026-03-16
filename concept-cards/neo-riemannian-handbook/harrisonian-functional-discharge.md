@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harrisonian Functional Discharge
 slug: harrisonian-functional-discharge
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-discharge
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Daniel Harrison"
@@ -17,16 +14,13 @@ chapter_number: 20
 pdf_page: 556
 section: "II. Some Hypotheses about Tonic and Antitonic Trichords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - discharge functions
   - "Da, Db, Dc"
   - antitonic discharge
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - antitonic-trichord
@@ -38,7 +32,6 @@ related:
   - linking-accumulative-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Riemann's function theory relate to neo-Riemannian transformations?"
   - "What are discharge functions in Harrison's system?"

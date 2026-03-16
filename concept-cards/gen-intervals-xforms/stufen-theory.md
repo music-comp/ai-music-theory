@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Stufen Theory
 slug: stufen-theory
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: historical-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 276
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "scale-degree theory"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - multiple-musical-spaces
 extends: []
@@ -34,7 +28,6 @@ related:
   - minor-sixth-problem
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Stufen theory and why is it important for integrating musical spaces?"
 ---

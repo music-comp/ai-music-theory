@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Text Declamation
 slug: text-declamation
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: text-music-relationship
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Paul Berry"
@@ -17,17 +14,14 @@ chapter_number: 17
 pdf_page: 463
 section: "Metric Freedoms in Brahms's Songs"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Deklamation
   - text setting
   - verbal accentuation
   - "Textdeklamation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - expressed-meter
 extends:
@@ -38,7 +32,6 @@ related:
   - phrase-rhythm-brahms
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is text declamation in the context of Brahms's songs?"
   - "How does Riemann defend Brahms against charges of poor declamation?"

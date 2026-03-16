@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mod 12 Arithmetic
 slug: mod-12-arithmetic
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: mod 12
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 22
 section: "1.5 Arithmetic modulo 12 (mod 12)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - modular arithmetic
   - arithmetic modulo 12
   - mod 12
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - integer-notation
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - pitch-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is mod 12 arithmetic?"
   - "How do I reduce integers to pitch-class values?"

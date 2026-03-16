@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mediant Mixture (bIII)
 slug: mediant-mixture
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: mixture
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 27
 pdf_page: 616
 section: "Altered Mediant Harmony: bIII"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "flat-three chord"
   - "bIII"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-mixture
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - diatonic-mediant
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modal mixture?"
   - "How does modal mixture relate to borrowed chords?"

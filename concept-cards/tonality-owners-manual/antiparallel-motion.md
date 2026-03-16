@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Antiparallel Motion
 slug: antiparallel-motion
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 96
 section: "Voice exchanges"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "contrapuntally balanced motion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - voice-exchange
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - doubly-parallel-motion
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is antiparallel motion?"
   - "Why does antiparallel motion privilege fifth-related harmonies?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrase Endings
 slug: phrase-endings
 
-# === CLASSIFICATION ===
 category: melody
 subcategory: phrase-construction
 tier: foundational
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 11
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - phrase punctuation
   - phrase boundary
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
 extends: []
@@ -34,7 +28,6 @@ related:
   - phrase-length
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a phrase in musical composition?"
   - "How are phrase boundaries marked?"

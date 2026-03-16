@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Clausula Vera
 slug: clausula-vera
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: cadence
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: null
 section: "Ending a first-species counterpoint"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "true close"
   - "true cadence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - first-species
   - contrary-motion
@@ -35,7 +29,6 @@ related:
   - half-cadence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a clausula vera and how is it constructed?"
   - "How do species counterpoint exercises end?"

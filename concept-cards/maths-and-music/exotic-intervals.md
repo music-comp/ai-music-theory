@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Exotic Intervals
 slug: exotic-intervals
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 11
 pdf_page: 138
 section: "Higher Primes"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - higher-prime intervals
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - septimal-intervals
   - p-limit-tuning
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - septimal-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are exotic intervals?"
   - "What just intervals involve primes higher than 7?"

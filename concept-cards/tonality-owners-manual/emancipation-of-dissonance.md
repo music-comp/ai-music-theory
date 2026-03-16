@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Emancipation of the Dissonance
 slug: emancipation-of-dissonance
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 210
 section: "After nonharmonicity"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - melodic-harmonic divorce
   - playing outside
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-tone
   - standardized-second-practice
@@ -36,7 +30,6 @@ contrasts_with:
   - first-practice
   - standardized-second-practice
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the emancipation of the dissonance?"
   - "How did twentieth-century music change the nonharmonic system?"

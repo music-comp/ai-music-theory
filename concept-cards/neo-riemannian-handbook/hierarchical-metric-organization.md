@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hierarchical Metric Organization
 slug: hierarchical-metric-organization
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric theory
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "William E. Caplin"
@@ -17,16 +14,13 @@ chapter_number: 15
 pdf_page: 417
 section: "Notated Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "multi-level metric structure"
   - "Riemann's metric hierarchy"
   - "prototypical eight-measure period"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -36,7 +30,6 @@ related:
   - periodic-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes Riemann's metric theory from conventional metric analysis?"
   - "How is Riemann's eight-measure period structured?"

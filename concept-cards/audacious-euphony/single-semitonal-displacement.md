@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Single Semitonal Displacement
 slug: single-semitonal-displacement
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: "A Minimal-Work Model of the Triadic Universe"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "semitonal displacement"
   - "single semitone motion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - minimal-work-relation
 extends: []
@@ -36,7 +30,6 @@ related:
   - voice-leading-work
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is single semitonal displacement?"
   - "What is the smallest possible voice-leading change between two triads?"

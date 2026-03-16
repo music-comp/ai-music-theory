@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Passing Tone
 slug: chromatic-passing-tone
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 13
 pdf_page: 302
 section: "The Chromatic Passing Tone"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - CPT
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - passing-tone
 extends:
@@ -34,7 +28,6 @@ related:
   - accented-passing-tone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

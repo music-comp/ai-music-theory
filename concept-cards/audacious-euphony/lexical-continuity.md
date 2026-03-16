@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Lexical Continuity
 slug: lexical-continuity
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: double syntax
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 227
 section: "The Soft Revolution"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "unified lexicon"
   - "shared vocabulary"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-syntax-hypothesis
   - homophonous-diamorph
@@ -37,7 +31,6 @@ related:
   - evolutionary-stages
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is lexical continuity in the context of the soft revolution?"
   - "How does a shared vocabulary enable syntactic change?"

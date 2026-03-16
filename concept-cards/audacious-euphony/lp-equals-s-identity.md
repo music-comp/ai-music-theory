@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "R+LP=S Identity"
 slug: lp-equals-s-identity
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: transformation-identities
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: 98
 section: "Weitzmann Regions without Sequences: Wagner and Strauss"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "S decomposition"
   - "Slide decomposition"
   - "LP = S"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - s-transformation
   - r-transformation
@@ -36,7 +30,6 @@ related:
   - fruhling-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can the S transformation be decomposed into simpler transformations?"
   - "What is the R+LP=S identity?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Minor-Third Sequence (T3)"
 slug: minor-third-sequence
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 109
 section: "Minor-third (T +/- 3) sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "T3 sequence"
   - "octatonic sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-sequences
   - combination-table
@@ -36,7 +30,6 @@ related:
   - octatonic-scale
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are minor-third chromatic sequences generated?"
   - "What is the octatonic connection to P/R cycles?"

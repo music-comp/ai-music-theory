@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Weak Condition B
 slug: weak-condition-b
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: foundational-definitions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 47
 section: "Discussion following Definition 2.3.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "(weak B)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - gis-condition-b
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - gis-condition-b
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens if we weaken Condition (B) by replacing 'unique' with 'some'?"
   - "Why is the full Condition (B) 'no loss of generality'?"

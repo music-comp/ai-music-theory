@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Schematic Vocabulary in Beethoven
 slug: schematic-vocabulary-in-beethoven
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: beethoven-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 457
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Beethoven's personal vocabulary"
   - "Beethoven's schematic language"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - the-ludwig
   - fauxbourdon
@@ -37,7 +31,6 @@ related:
   - gjerdingen-schemas-and-geometry
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What schemas and patterns constitute Beethoven's personal compositional vocabulary?"
   - "How does Beethoven's vocabulary differ from a collection of tricks?"

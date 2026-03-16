@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Zonal Palindrome
 slug: zonal-palindrome
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: structural patterns
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 145
 section: "Departure -> Return Scripts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "palindrome of voice-leading zones"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zones
   - departure-return-script
@@ -36,7 +30,6 @@ related:
   - liedesend-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a zonal palindrome?"
   - "How can palindromic structure exist at the zone level without triadic palindrome?"

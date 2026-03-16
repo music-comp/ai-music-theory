@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rational Spectra GIS
 slug: rational-spectra-gis
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: timbral-gis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 91
 section: "4.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "GIS 4.2.2"
   - "linear filter GIS"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - timbral-gis
@@ -34,7 +28,6 @@ extends:
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can linear filter classes be modeled as a GIS?"
 ---

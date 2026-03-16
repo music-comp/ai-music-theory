@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonnetz Representation
 slug: tonnetz-representation
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 35
 section: "Hexatonic Progressions, Tonnetz Representations, and Triadic Transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tonnetz"
   - "tonal network"
   - "tone net"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-cycle
   - consonant-triad
@@ -37,7 +31,6 @@ related:
   - four-hexatonic-systems
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Tonnetz?"
   - "How does the Tonnetz represent hexatonic cycles?"

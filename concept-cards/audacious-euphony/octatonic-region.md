@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octatonic Region
 slug: octatonic-region
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: tetrachordal regions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 172
 section: "Octatonic regions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - boretz-region
   - tristan-genus
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - hexatonic-region
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an octatonic region in the Tristan-genus system?"
   - "How do octatonic regions bridge Boretz regions?"

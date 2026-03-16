@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Double Period
 slug: double-period
 
-# === CLASSIFICATION ===
 category: form
 subcategory: structural patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 21
 pdf_page: 477
 section: "The Double Period"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - period
 extends:
@@ -32,7 +26,6 @@ related:
   - asymmetrical-period
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a double period?"
   - "How does a double period differ from two separate periods?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Enharmonic Equivalence
 slug: enharmonic-equivalence
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 14
 section: "Accidentals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "enharmonic equivalents"
   - "enharmonic spelling"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - accidentals
   - equivalence-relations
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - octave-equivalence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does it mean for two notes to be enharmonically equivalent?"
   - "How does enharmonic equivalence differ from octave equivalence?"

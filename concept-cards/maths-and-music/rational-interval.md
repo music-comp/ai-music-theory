@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rational Interval
 slug: rational-interval
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 11
 pdf_page: 138
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - rational frequency ratio
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends:
   - interval-as-frequency-ratio
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - irrationality-of-equally-tempered-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a rational interval?"
   - "How do rational intervals differ from equally tempered intervals?"

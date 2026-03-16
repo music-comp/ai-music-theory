@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Functional Analysis
 slug: functional-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: harmonic-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 253
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - thick analysis
   - theory-laden analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - scale-degree-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is functional analysis in harmony?"
   - "How does functional analysis differ from scale-degree analysis?"

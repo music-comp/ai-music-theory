@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scalar Voice Leading Notation
 slug: scalar-voice-leading-notation
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: notation-systems
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 357
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "T and t notation"
   - "chromatic-scalar transposition notation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading-of-scales
 extends:
@@ -36,7 +30,6 @@ related:
   - key-distance-pitch-class-changing
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you notate voice leadings between scales?"
   - "What do the T and t symbols mean in scalar voice-leading analysis?"

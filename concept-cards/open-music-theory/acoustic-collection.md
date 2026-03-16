@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Acoustic Collection
 slug: acoustic-collection
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: collections
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,21 +11,17 @@ chapter: "Collections"
 chapter_number: 8
 pdf_page: null
 section: "VIII.8"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "acoustic scale"
   - "overtone scale"
   - "lydian dominant"
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
   - whole-tone-collection
   - diatonic-modes-20c
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the acoustic collection?"
   - "How does it relate to the overtone series?"

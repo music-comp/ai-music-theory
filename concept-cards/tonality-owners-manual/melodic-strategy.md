@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic Strategy
 slug: melodic-strategy
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: melodic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 407
 section: "Strategy and reduction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - melodic strategies
   - strategic melodic organization
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-transposition
   - quadruple-hierarchy
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - prolongational-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What makes a melody directed?"
   - "How does melodic strategy relate to Schenkerian analysis?"

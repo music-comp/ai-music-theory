@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: CADENCE Graph
 slug: cadence-graph
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: simply-transitive-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 188
 section: "7.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - normative-network
   - fundamental-bass-intervals
@@ -33,7 +27,6 @@ related:
   - abstract-gesture
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a CADENCE graph in Lewin's analysis?"
 ---

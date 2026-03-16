@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Macroharmonic Consistency Measurement
 slug: macroharmonic-consistency
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: macroharmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 182
 section: "5.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "macroharmonic consistency"
   - "macroharmonic emphasis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - global-macroharmonic-profile
   - macroharmony
@@ -35,7 +29,6 @@ related:
   - pitch-class-circulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do we measure macroharmonic consistency?"
   - "What does it mean for music to be macroharmonically consistent?"

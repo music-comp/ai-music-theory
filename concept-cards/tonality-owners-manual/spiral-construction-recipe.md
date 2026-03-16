@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Spiral Construction Recipe
 slug: spiral-construction-recipe
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 37
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transposition-along-a-collection
   - spiral-diagrams-for-chord-space
@@ -33,7 +27,6 @@ related:
   - loop-on-spiral
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you construct a spiral diagram for any chord in any scale?"
 ---

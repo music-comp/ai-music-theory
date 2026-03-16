@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Boretz-Group Transformations
 slug: boretz-group-transformations
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: tetrachordal transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 171
 section: "Boretz-group transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "intra-regional transformations (tetrachordal)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - boretz-region
   - tristan-genus
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - octatonic-group-transformations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the Boretz-group transformations?"
   - "How do transformations within a Boretz region work?"

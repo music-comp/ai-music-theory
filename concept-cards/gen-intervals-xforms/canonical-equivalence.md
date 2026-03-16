@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Canonical Equivalence
 slug: canonical-equivalence
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: canonical-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: "5.2.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - canonical equivalence relation
   - "X' is a form of X"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - canonical-group
   - set-in-gis
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - z-relation-generalized
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is canonical equivalence?"
   - "What distinguishes canonical equivalence from general set equivalence?"

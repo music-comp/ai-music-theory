@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: V7 to I Voice Leading
 slug: v7-to-i-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,16 +14,13 @@ chapter_number: 27
 pdf_page: 406
 section: "27.3 Voice Leading the V7 to I Progression"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "dominant seventh resolution"
   - "strict resolution"
   - "free resolution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chord-resolution
   - rules-of-melody
@@ -36,7 +30,6 @@ related:
   - cadential-six-four-to-v7
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the two ways to voice lead V7 to I?"
   - "What is the difference between strict and free resolution?"

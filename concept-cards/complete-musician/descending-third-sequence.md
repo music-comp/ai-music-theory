@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Descending-Third Sequence
 slug: descending-third-sequence
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 22
 pdf_page: 495
 section: "The Descending-Third (D3) Sequence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "D3 (-4/+2)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-sequence
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - descending-second-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a D3 sequence?"
   - "How does a D3 differ from a D2?"

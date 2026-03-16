@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Unordered Pitch Interval
 slug: unordered-pitch-interval
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval types
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 25
 section: "1.7 Pitch Intervals (Ordered and Unordered)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - upi
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch
   - pitch-interval
@@ -38,7 +32,6 @@ contrasts_with:
   - unordered-pitch-class-interval
   - interval-class
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an unordered pitch interval?"
   - "What distinguishes ordered from unordered pitch intervals?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Accent Types
 slug: accent-types
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric-organization
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 2
 pdf_page: 33
 section: "Accent in Music"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "musical accent"
   - "agogic accent"
   - "dynamic accent"
   - "tonic accent"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - meter
 extends: []
@@ -36,7 +30,6 @@ related:
   - syncopation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the different types of accent in music?"
 ---

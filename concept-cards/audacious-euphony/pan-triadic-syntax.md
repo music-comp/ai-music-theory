@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pan-Triadic Syntax
 slug: pan-triadic-syntax
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: null
 pdf_page: 9
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pan-triadic"
   - "romantic syntax"
   - "chromatic triadic syntax"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -38,7 +32,6 @@ contrasts_with:
   - root-interval-approach
   - classical-versus-romantic-syntax
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is pan-triadic syntax?"
   - "How does pan-triadic syntax differ from diatonic tonality?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fundamental Bass Intervals
 slug: fundamental-bass-intervals
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: simply-transitive-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 188
 section: "7.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "root-interval ratios"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - intervals-as-transpositions
 extends: []
@@ -34,7 +28,6 @@ related:
   - dom-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are fundamental bass intervals used in Lewin's analyses?"
   - "Why are fundamental bass intervals inadequate for distinguishing major from minor?"

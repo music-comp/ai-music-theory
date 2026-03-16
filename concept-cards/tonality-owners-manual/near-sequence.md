@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Near Sequence
 slug: near-sequence
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 155
 section: "Near sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "variable sequence"
   - "inexact sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - repeating-contrapuntal-pattern
   - transpositional-sequence
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - transpositional-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes a real sequence from a tonal sequence?"
   - "How does disguised repetition work in functional tonality?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Time-Span Interval Independence
 slug: time-span-interval-independence
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 4.1.4"
   - "reference independence"
   - "Properties (A) and (B)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span-gis
 extends:
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - commutative-time-span-gis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is the non-commutative time-span GIS independent of referential choices?"
   - "How does the time-span GIS relate to simpler time-point and duration GIS structures?"

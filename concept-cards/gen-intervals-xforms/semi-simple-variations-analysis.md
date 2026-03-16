@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Semi-Simple Variations INJ Analysis
 slug: semi-simple-variations-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: serial-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 154
 section: "6.2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
   - protocol-pairs
@@ -34,7 +28,6 @@ related:
   - if-only-adjustment
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does INJ on PROT reveal structural differences in a homogeneous-sounding piece?"
 ---

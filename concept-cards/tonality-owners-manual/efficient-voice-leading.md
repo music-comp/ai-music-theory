@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Efficient Voice Leading
 slug: efficient-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 87
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - configuration-and-center-of-gravity
 extends: []
@@ -33,7 +27,6 @@ related:
   - spiral-diagrams-for-chord-space
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What makes voice leading efficient?"
   - "How does center of gravity relate to efficient voice leading?"

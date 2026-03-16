@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice-Leading Efficiency
 slug: voice-leading-efficiency
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: efficiency-metrics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
@@ -17,17 +14,14 @@ chapter_number: 8
 pdf_page: null
 section: "Sections 3-5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "parsimonious motion"
   - "efficient voice leading"
   - "voice-leading parsimony"
   - "minimal voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading
 extends: []
@@ -38,7 +32,6 @@ related:
   - chromatic-second-practice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is voice-leading parsimony?"
   - "How do PLR transformations relate to voice-leading efficiency?"

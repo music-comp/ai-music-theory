@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: N-for-R Substitution
 slug: n-for-r-substitution
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: substitution
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 114
 section: "Transformational Substitutions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "file transfer"
   - "W-group substitution in L/R chain"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformational-substitution
   - perfect-fifth-sequence
@@ -37,7 +31,6 @@ related:
   - bruckner-third-symphony-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does N-for-R substitution shorten an L/R chain?"
   - "What does a 'file transfer' look like on the Tonnetz?"

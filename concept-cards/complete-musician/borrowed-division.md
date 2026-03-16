@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Borrowed Division
 slug: borrowed-division
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: rhythmic-procedures
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 33
 section: "More Rhythmic Procedures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tuplets"
   - "triplet"
   - "duplet"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - beat-division
   - simple-meter
@@ -36,7 +30,6 @@ related:
   - rhythm
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a borrowed division?"
   - "What is a triplet?"

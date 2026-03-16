@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Second Practice
 slug: chromatic-second-practice
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: null
 section: "Section 3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "second practice of chromaticism"
   - "chromatic voice-leading practice"
   - "efficient chromatic connections"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading
   - voice-leading-efficiency
@@ -36,7 +30,6 @@ related:
   - chromatic-tonality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the 'second practice' of 19th-century chromaticism?"
   - "How does efficient voice leading generate chromatic harmony?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonnetz Distance Measures
 slug: tonnetz-distance-measures
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: distance-metrics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 84
 section: "Remarks on the Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Triadic distance comparison"
   - "Three distance metrics"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz-representation
   - voice-leading-work
@@ -36,7 +30,6 @@ related:
   - r-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do different distance measures compare for triadic relationships?"
   - "Why is voice-leading work preferred over common-tone counting?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modal Schemas in Pop Music
 slug: modal-schemas-overview
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: pop-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 11
 pdf_page: null
 section: "VII.11"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-modes
   - chord-function
@@ -35,7 +29,6 @@ related:
   - lydian-schemas
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do modes appear in pop chord progressions?"
   - "How do you identify modes by ear in pop music?"

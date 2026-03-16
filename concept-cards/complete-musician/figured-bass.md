@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Figured Bass
 slug: figured-bass
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: 116
 section: "Figured Bass"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "thoroughbass"
   - "basso continuo"
   - "figures"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triads
   - triad-inversion
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - lead-sheet-notation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I use figured bass?"
   - "What do figured bass numbers mean?"

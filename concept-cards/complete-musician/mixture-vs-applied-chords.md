@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mixture vs. Applied Chords
 slug: mixture-vs-applied-chords
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: mixture
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 27
 pdf_page: 616
 section: "Modal Mixture, Applied Chords, and Other Chromatic Harmonies"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modal-mixture
   - applied-chord
@@ -31,7 +25,6 @@ extends: []
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modal mixture?"
   - "How does modal mixture relate to borrowed chords?"

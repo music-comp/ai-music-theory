@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Imitation
 slug: imitation
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: invertible counterpoint
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 16
 pdf_page: 364
 section: "Imitation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "canonic imitation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - contrapuntal-motions
@@ -36,7 +30,6 @@ related:
   - melodic-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is imitation in music?"
   - "How does imitation relate to motivic development?"

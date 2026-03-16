@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Symmetry versus Asymmetry in Sequences
 slug: symmetry-versus-asymmetry-in-sequences
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: chromatic sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 36
 pdf_page: 829
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-sequences
   - harmonic-sequences
@@ -33,7 +27,6 @@ related:
   - equal-divisions-of-the-octave
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do chromatic sequences extend diatonic ones?"
   - "What distinguishes chromatic from diatonic sequences?"

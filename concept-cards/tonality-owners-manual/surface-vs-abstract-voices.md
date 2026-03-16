@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Surface vs. Abstract Voices
 slug: surface-vs-abstract-voices
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: configurations
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 1
 section: "The quadruple hierarchy"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - concrete voices vs. abstract voices
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - quadruple-hierarchy
 extends: []
@@ -33,7 +27,6 @@ related:
   - shepard-tone-passacaglias
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between surface and abstract voices?"
   - "How do scale degrees function as abstract voices?"

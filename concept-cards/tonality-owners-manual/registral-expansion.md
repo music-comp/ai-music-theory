@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Registral Expansion
 slug: registral-expansion
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: beethoven-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 466
 section: "From schema to flow"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - registral wedge
   - pitch-domain crescendo
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - the-ludwig
   - contrary-motion-counterpoint
@@ -36,7 +30,6 @@ related:
   - schematic-vocabulary-in-beethoven
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Beethoven use the Ludwig to create cumulative dramatic effect?"
   - "What makes Beethoven's registral expansion distinctive compared to other composers?"

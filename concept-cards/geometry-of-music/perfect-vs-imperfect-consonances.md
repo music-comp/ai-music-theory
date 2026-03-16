@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Perfect vs. Imperfect Consonances
 slug: perfect-vs-imperfect-consonances
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: consonance
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 215
 section: "6.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "consonance classification"
   - "medieval consonance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - acoustic-consonance
 extends: []
@@ -34,7 +28,6 @@ related:
   - parallel-perfect-intervals-prohibition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the medieval classification of consonances?"
   - "How did the status of the fourth change from medieval to Renaissance music?"

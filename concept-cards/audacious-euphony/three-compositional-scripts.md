@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Three Compositional Scripts
 slug: three-compositional-scripts
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: taxonomy
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 129
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zones
   - compositional-script
@@ -36,7 +30,6 @@ related:
   - continuous-upshift
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three compositional scripts for navigating the triadic universe?"
   - "How do I identify a compositional script (neighborhood, upshift, departure-return)?"

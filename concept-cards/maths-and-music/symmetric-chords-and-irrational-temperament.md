@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Symmetric Chords and Irrational Temperament
 slug: symmetric-chords-and-irrational-temperament
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: temperament
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 11
 pdf_page: 138
 section: "Justly Tuned Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - irrationality-of-equally-tempered-intervals
   - justly-tuned-chords
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - justly-tuned-chords
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can augmented and diminished chords be justly tuned?"
   - "Why do symmetric chords require irrational temperament?"

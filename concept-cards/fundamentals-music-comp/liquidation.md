@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Liquidation
 slug: liquidation
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: motivic-development
 tier: intermediate/advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 39
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - connecting-motive-forms
@@ -37,7 +31,6 @@ related:
   - developing-variation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is liquidation?"
   - "How do I apply liquidation to complete a sentence?"

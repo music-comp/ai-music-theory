@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Set Class
 slug: set-class
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: canonical-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: 119
 section: "5.2.2-5.2.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - /X/
   - "forms of X"
   - canonical equivalence class
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - canonical-group
   - canonical-equivalence
@@ -38,7 +32,6 @@ related:
   - z-relation-generalized
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a set class in generalized set theory?"
   - "How does the choice of canonical group affect set classes?"

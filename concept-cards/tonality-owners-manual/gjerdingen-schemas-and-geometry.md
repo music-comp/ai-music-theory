@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Gjerdingen Schemas and Geometry
 slug: gjerdingen-schemas-and-geometry
 
-# === CLASSIFICATION ===
 category: schema
 subcategory: voice-leading-geometry
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 409
 section: "Strategy and reduction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - geometrical origins of galant schemas
   - schema-geometry connection
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-geometry
   - double-transposition
@@ -37,7 +31,6 @@ related:
   - collectional-hierarchy
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the geometrical origins of Gjerdingen's galant schemas?"
   - "Why do similar schemas reappear across different musical styles?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Audacious Euphony Paradox
 slug: audacious-euphony-paradox
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: theoretical-framework
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 9
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "audacious euphony"
   - "Riemann's paradox"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - root-interval-approach
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the audacious euphony paradox?"
   - "Why did Riemann call chromatic progressions both audacious and euphonious?"

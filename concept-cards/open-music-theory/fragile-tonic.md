@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fragile, Absent, and Emergent Tonics
 slug: fragile-tonic
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: pop-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 14
 pdf_page: null
 section: "VII.14"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonal-ambiguity
   - chord-function
@@ -34,7 +28,6 @@ related:
   - absent-tonic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three ways tonal ambiguity occurs in pop music?"
   - "How do fragile, absent, and emergent tonics connect to lyrical themes?"

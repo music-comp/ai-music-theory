@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Brunnhilde Immolation Analysis
 slug: brunnhilde-immolation-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: Wagner analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 173
 section: "Brunnhilde's Immolation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Gotterdammerung act 3 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - boretz-region
   - boretz-group-transformations
@@ -36,7 +30,6 @@ related:
   - four-cube-trio
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the Brunnhilde Immolation passage relate to the Tristan Prelude?"
   - "How do similar voice-leading scripts appear across different compositions?"

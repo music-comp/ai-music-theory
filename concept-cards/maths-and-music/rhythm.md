@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rhythm
 slug: rhythm
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: meter
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 30
 section: "Rhythm"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "rhythmic pattern"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - meter-and-time-signatures
   - note-durational-values
@@ -36,7 +30,6 @@ related:
   - tuplets
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is rhythm in music?"
   - "How does rhythm differ from meter?"

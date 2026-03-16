@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Schlusswirkung
 slug: schlusswirkung
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "William E. Caplin"
@@ -17,16 +14,13 @@ chapter_number: 15
 pdf_page: 431
 section: "Expressed Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "cadential effect"
   - "effect of cadence"
   - "closural accent"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - expressed-meter
   - harmonic-function
@@ -38,7 +32,6 @@ related:
   - phrase-expansion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Schlusswirkung (cadential effect)?"
   - "How do cadential arrivals create metrical accent?"

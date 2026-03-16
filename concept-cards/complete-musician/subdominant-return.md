@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Subdominant Return
 slug: subdominant-return
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 33
 pdf_page: 752
 section: "Harmonic Anomalies"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form-recapitulation
 extends: []
@@ -31,7 +25,6 @@ related:
   - false-recapitulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a subdominant return in sonata form?"
 ---

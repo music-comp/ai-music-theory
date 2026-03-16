@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cancellation Property
 slug: cancellation-property
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: rings
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 100
 section: "Cancellation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "cancellation law"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ring
   - integral-domain
@@ -34,7 +28,6 @@ related:
   - unique-prime-factorization
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the cancellation property?"
   - "When can you cancel a common factor in a ring?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dualistic Equivalence
 slug: dualistic-equivalence
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: equivalence-relations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: null
 section: "Section 2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "dualistic equivalence relation"
   - "inversional equivalence of progressions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inversional-symmetry
   - voice-leading
@@ -35,7 +29,6 @@ related:
   - contrapuntal-vs-harmonic-dualism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When are two chord progressions dualistically equivalent?"
   - "How does Tymoczko formalize Riemann's dualistic concepts?"

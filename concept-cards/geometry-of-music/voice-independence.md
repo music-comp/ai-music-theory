@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Independence
 slug: voice-independence
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: voice-leading-principles
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 228
 section: "6.3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "auditory streaming"
   - "voice separation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - conjunct-melodic-motion
 extends: []
@@ -34,7 +28,6 @@ related:
   - three-plus-one-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is voice independence important in counterpoint?"
   - "How does parallel motion affect voice perception?"

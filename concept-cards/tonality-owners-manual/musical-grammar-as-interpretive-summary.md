@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Musical Grammar as Interpretive Summary
 slug: musical-grammar-as-interpretive-summary
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: corpus-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 569
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - grammar as statistical summary
   - interpretive summary of tendencies
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - corpus-analysis-methodology
 extends:
@@ -35,7 +29,6 @@ related:
   - theoretical-underdetermination
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the status of musical 'grammars'?"
   - "How does musical grammar differ from linguistic grammar?"

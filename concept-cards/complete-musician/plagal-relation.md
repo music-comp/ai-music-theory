@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Plagal Relation
 slug: plagal-relation
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: new harmonic tendencies
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 34
 pdf_page: 790
 section: "Tonal Ambiguity: The Plagal Relation and Reciprocal Process"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modal-mixture
 extends: []
@@ -32,7 +26,6 @@ related:
   - tonal-ambiguity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the plagal relation in nineteenth-century harmony?"
 ---

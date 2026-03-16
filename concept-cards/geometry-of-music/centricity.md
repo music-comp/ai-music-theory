@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Centricity
 slug: centricity
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: tonality
 tier: foundational
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 21
 section: "1.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tonal center"
   - "tonic"
   - "pitch-class center"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - pitch-class-space
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the five components of tonality?"
   - "What is centricity in tonal music?"

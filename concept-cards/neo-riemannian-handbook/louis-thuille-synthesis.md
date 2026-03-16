@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Louis/Thuille Synthesis
 slug: louis-thuille-synthesis
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: reception-history
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Louis/Thuille Harmonielehre"
   - Auffassungsdissonanz (conceptual dissonance)
   - Munich school of harmony
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - funktionstheorie
   - stufentheorie
@@ -38,7 +32,6 @@ related:
   - modulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes Riemann's original theory from neo-Riemannian theory?"
   - "How was function theory received and transformed by later theorists?"

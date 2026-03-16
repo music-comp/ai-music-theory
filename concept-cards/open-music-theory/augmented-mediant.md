@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mediant Relations
 slug: augmented-mediant
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,20 +11,16 @@ chapter: "Mediants"
 chapter_number: 99
 pdf_page: null
 section: "Supplementary"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "chromatic mediant"
   - "mediant grades"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - neo-riemannian-theory
 extends: []
 related:
   - chromatic-third-relation
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three grades of mediant relations?"
   - "How do mediant grades relate to common tones and mode?"

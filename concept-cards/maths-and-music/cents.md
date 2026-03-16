@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cents
 slug: cents
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: measurement
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 58
 section: "Microtuning and Cents"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - cent
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - semitone-ratio
 extends: []
@@ -35,7 +29,6 @@ related:
   - multiplicative-and-additive-measurements
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cent in music?"
   - "How many cents are in a semitone? In an octave?"

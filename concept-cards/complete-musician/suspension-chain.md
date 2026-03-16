@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Suspension Chain
 slug: suspension-chain
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: 302
 section: "Additional Suspension Techniques"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - chain of suspensions
   - interlocking suspensions
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - suspension
   - suspension-types
@@ -35,7 +29,6 @@ related:
   - suspension-modifications
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

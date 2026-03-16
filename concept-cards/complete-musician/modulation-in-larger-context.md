@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modulation in the Larger Musical Context
 slug: modulation-in-larger-context
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: modulation
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 25
 pdf_page: 563
 section: "Modulation in the Larger Musical Context"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulation
 extends:
@@ -32,7 +26,6 @@ related:
   - binary-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does tonicization differ from modulation?"
 ---

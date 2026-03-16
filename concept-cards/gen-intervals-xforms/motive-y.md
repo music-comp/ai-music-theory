@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Motive Y
 slug: motive-y
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: impressionist-analysis
 tier: advanced
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -14,11 +11,8 @@ chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
 section: "10.4"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive-x
 extends: []
@@ -27,7 +21,6 @@ related:
   - three-semitone-interval
   - debussy-reflets-dans-leau-analysis
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Motive Y in Lewin's Debussy analysis?"
   - "How is Y derived from X?"

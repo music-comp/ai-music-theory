@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Wagner Todesverkuendigung Analysis"
 slug: wagner-todesverkuendigung-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: serial-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 206
 section: "8.2.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Annunciation of Death analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rich-transformation
   - tch-transformation
@@ -36,7 +30,6 @@ related:
   - isography
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does RICH/TCH analysis reveal structure in Wagner's Todesverkuendigung?"
 ---

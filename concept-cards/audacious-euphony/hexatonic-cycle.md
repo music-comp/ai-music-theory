@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hexatonic Cycle
 slug: hexatonic-cycle
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 35
 section: "A Minimal-Work Model of the Triadic Universe"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "hexatonic system"
   - "LP cycle"
   - "T4/T8 cycle"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - minimal-work-relation
   - single-semitonal-displacement
@@ -42,7 +36,6 @@ related:
   - tonnetz-representation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a hexatonic cycle?"
   - "How do I construct a hexatonic cycle from any starting triad?"

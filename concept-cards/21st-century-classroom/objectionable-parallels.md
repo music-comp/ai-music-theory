@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Objectionable Parallels
 slug: objectionable-parallels
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: rules
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,17 +14,14 @@ chapter_number: 26
 pdf_page: 390
 section: "26.3 Objectionable Parallels"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "parallel fifths"
   - "parallel octaves"
   - "forbidden parallels"
   - "parallel 5ths and 8ves"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - types-of-motion
   - voice-leading-definition
@@ -38,7 +32,6 @@ related:
   - direct-fifths-and-octaves
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are objectionable parallels?"
   - "Which parallel intervals are forbidden in voice leading?"

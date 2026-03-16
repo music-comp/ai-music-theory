@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Row Matrix
 slug: row-matrix
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,13 +11,10 @@ chapter: "Basics of Twelve-Tone Theory"
 chapter_number: 9
 pdf_page: null
 section: "IX.1"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "twelve-tone matrix"
   - "magic square"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - row-class
   - row-operations
@@ -28,7 +22,6 @@ extends: []
 related:
   - row-naming-conventions
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a row matrix?"
   - "How do you read P, R, I, and RI forms from the matrix?"

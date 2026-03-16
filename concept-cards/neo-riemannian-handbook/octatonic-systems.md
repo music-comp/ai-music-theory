@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octatonic Systems
 slug: octatonic-systems
 
-# === CLASSIFICATION ===
 category: pitch-space
 subcategory: cyclic triadic structures
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "PR cycles"
   - "octatonic triadic cycles"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
   - tonnetz
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - hexatonic-systems
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are octatonic systems and how do they relate to hexatonic systems?"
   - "How do PR cycles partition the consonant triads?"

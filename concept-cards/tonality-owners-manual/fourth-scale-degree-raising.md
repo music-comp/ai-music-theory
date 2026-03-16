@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fourth-Scale-Degree Raising
 slug: fourth-scale-degree-raising
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 361
 section: "Two models of key distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - sharpward modulation
   - counterclockwise scalar step
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading-of-scales
   - scalar-spiral-diagram
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - leading-tone-lowering
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the sharpward application of the diatonic scale's basic voice leading?"
   - "How does raising the fourth degree produce a modulation to the dominant?"

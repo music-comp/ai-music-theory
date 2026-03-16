@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Semigroup of Transformations
 slug: semigroup-of-transformations
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: algebraic-structures
 tier: foundational
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 32
 section: "1.3.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - closed collection of transformations
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation
   - composition-of-functions
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - group-of-operations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a semigroup?"
   - "What mathematical concepts must I know before understanding GIS?"

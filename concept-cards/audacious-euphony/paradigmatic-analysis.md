@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Paradigmatic Analysis
 slug: paradigmatic-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: comparative method
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 129
 section: "Departure and Return"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "paradigmatic comparison"
   - "vertical alignment analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zone
   - h-group-transformations
@@ -36,7 +30,6 @@ related:
   - same-zone-substitution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is paradigmatic analysis and how is it applied to voice-leading scripts?"
   - "How does vertical alignment reveal substitutional relationships?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Augmented and Diminished Intervals
 slug: augmented-and-diminished-intervals
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval-quality
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,10 +14,8 @@ chapter_number: 3
 pdf_page: 70
 section: "Transforming Intervals: Augmented and Diminished Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "A"
   - "d"
@@ -28,7 +23,6 @@ aliases:
   - "diminished"
   - "augmented"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - specific-intervals
 extends:
@@ -38,7 +32,6 @@ related:
   - consonant-and-dissonant-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are augmented and diminished intervals?"
   - "How do I transform an interval?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Wozzeck Chord
 slug: wozzeck-chord
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: hexachordal systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 183
 section: "Scriabin's Mystic Species and Generalized Weitzmann Regions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Forte class 6-34 (downshifting species)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-weitzmann-region
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - mystic-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Wozzeck chord?"
   - "How does the Wozzeck chord relate to the mystic chord?"

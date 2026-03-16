@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Riemannian Normative Analysis
 slug: riemannian-normative-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: "normative vs descriptive analysis"
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Scott Burnham"
@@ -17,15 +14,12 @@ chapter_number: 16
 pdf_page: 457
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "normative analysis (Riemann)"
   - "prototype-based analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-function
   - hierarchical-metric-organization
@@ -36,7 +30,6 @@ related:
   - phrase-expansion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is normative analysis in Riemann's method?"
   - "How does Riemann's analytical method reveal musical logic?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Schubert Impromptu Double-Agent Analysis
 slug: schubert-impromptu-double-agent-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: schubert-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 93
 section: "The Double-Agent Complex"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Impromptus Op. 90 double-agent analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-agent-complex
   - lp-transformation
@@ -34,7 +28,6 @@ related:
   - il-penseroso-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can the double-agent complex center on exterior triads?"
 ---

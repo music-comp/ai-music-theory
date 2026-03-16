@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Schoenberg Op. 19 No. 6 Analysis
 slug: schoenberg-op-19-no-6-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: interval-transposition-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 188
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - intervals-as-transpositions
   - transformational-attitude
@@ -33,7 +27,6 @@ related:
   - abstract-gesture
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can intervals within a chord and transpositions of a motif manifest the same phenomenon?"
 ---

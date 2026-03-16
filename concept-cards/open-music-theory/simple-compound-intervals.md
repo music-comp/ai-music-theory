@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Simple and Compound Intervals
 slug: simple-compound-intervals
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 16
 pdf_page: null
 section: "Compound Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
 extends:
@@ -32,7 +26,6 @@ related:
   - interval-inversion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a simple interval?"
   - "What is a compound interval?"

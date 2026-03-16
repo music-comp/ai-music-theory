@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Piano-to-Orchestra Transcription
 slug: piano-to-orchestra-transcription
-# === CLASSIFICATION ===
 category: application
 subcategory: orchestration
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Transcription from Piano"
 chapter_number: 10
 pdf_page: null
 section: "X.3"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - orchestral-blend
   - orchestral-crescendo
@@ -27,7 +21,6 @@ related:
   - attack-sustain-effect
   - dovetailing
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you transcribe piano music for orchestra?"
   - "What is the difference between transcription and translation?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Circumnavigation (Tetrachordal)"
 slug: circumnavigation-tetrachordal
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: tetrachordal transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 175
 section: "Circumnavigating the Tristan-Genus Universe"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tetrachordal circumnavigation"
   - "4-Cube Trio circumnavigation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - four-cube-trio
   - boretz-group-transformations
@@ -38,7 +32,6 @@ related:
   - chopin-mazurka-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you circumnavigate the Tristan-genus voice-leading space?"
   - "Which transpositional values produce directed vs. balanced motion?"

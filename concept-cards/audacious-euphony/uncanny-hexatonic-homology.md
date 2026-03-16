@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Uncanny Hexatonic Homology
 slug: uncanny-hexatonic-homology
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: Wagner analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 165
 section: "Hexatonic Poles in Parsifal"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "life/death consonance/dissonance mapping"
   - "Parsifal hexatonic homology"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-pole
   - hexatonic-poles-in-parsifal
@@ -36,7 +30,6 @@ related:
   - triadic-subset-embedding
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the hexatonic pole create a musical analogy for Parsifal's dramatic themes?"
   - "What is the connection between the uncanny and hexatonic pole voice leading?"

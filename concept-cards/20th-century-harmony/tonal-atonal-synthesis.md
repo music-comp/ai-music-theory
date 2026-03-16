@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal-Atonal Synthesis
 slug: tonal-atonal-synthesis
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 13
 pdf_page: 270
 section: "Combining Textures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tonal-atonal amalgamation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-synthesis
   - tonality
@@ -38,7 +32,6 @@ related:
   - polytonal-to-atonal
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can tonal and atonal resources be combined in a single work?"
   - "What is the relationship between serial devices and tonal harmony?"

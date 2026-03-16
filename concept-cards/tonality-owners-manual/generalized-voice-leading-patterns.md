@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generalized Voice-Leading Patterns
 slug: generalized-voice-leading-patterns
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: contrapuntal-syntax
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 1
 section: "Schema"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - fundamental language of counterpoint
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - prime-directive
   - voice-leading
@@ -35,7 +29,6 @@ related:
   - quadruple-hierarchy
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are generalized voice-leading patterns?"
   - "How do general contrapuntal principles relate to specific schemas?"

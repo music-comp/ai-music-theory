@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading by Bass Interval
 slug: voice-leading-by-bass-interval
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 26
 pdf_page: 392
 section: "26.7 Voice Leading Root Position Triads in Four Parts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "root position voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-definition
   - doubling-rules-triads
@@ -33,7 +27,6 @@ related:
   - deceptive-progression-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you voice lead root position triads based on bass interval?"
   - "What is the procedure for bass movement by 3rd, 4th, 5th, or 2nd?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Global Macroharmonic Profile
 slug: global-macroharmonic-profile
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: macroharmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 182
 section: "5.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "macroharmonic profile"
   - "collection distribution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - macroharmony
   - pitch-class-circulation
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - pitch-class-circulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can we identify which macroharmonies a piece uses?"
   - "How do we measure macroharmonic consistency?"

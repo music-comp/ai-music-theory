@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Attack-Sustain Effect
 slug: attack-sustain-effect
-# === CLASSIFICATION ===
 category: application
 subcategory: orchestration
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,12 +11,9 @@ chapter: "Subtle Color Changes"
 chapter_number: 10
 pdf_page: null
 section: "X.2"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "resonance effect"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - orchestral-blend
 extends: []
@@ -27,7 +21,6 @@ related:
   - timbral-cadence
   - klangfarbenmelodie
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the attack-sustain effect in orchestration?"
   - "How do composers simulate the natural attack profile of a note?"

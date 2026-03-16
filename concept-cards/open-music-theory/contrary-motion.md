@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrary Motion
 slug: contrary-motion
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: voice-motion
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 1
 pdf_page: null
 section: "Types of motion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
 extends: []
@@ -35,7 +29,6 @@ contrasts_with:
   - parallel-motion
   - similar-motion
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is contrary motion in counterpoint?"
   - "Why is contrary motion preferred in species counterpoint?"

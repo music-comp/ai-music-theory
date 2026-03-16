@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Special Situations with Parallel Fifths
 slug: special-situations-parallel-fifths
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,13 +14,10 @@ chapter_number: 26
 pdf_page: 397
 section: "26.10 Special Situations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - objectionable-parallels
   - voice-leading-by-bass-interval
@@ -32,7 +26,6 @@ related:
   - first-inversion-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When do parallel fifths arise between chords with roots a second apart?"
   - "How do you avoid parallel fifths in ii6-I6/4 and I-viio6 progressions?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: INJ for Measure Spaces
 slug: inj-measure-spaces
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 154
 section: "6.10"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - measure-theoretic INJ
   - continuous INJ
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
 extends:
@@ -35,7 +29,6 @@ related:
   - time-span-gis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can INJ be generalized to infinite sets using measure theory?"
 ---

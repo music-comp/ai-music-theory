@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval as Frequency Ratio
 slug: interval-as-frequency-ratio
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: ratios
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 58
 section: "The Ratio Associated to an Interval"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - interval ratio
   - frequency ratio
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - unison-and-opposite-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an interval in mathematical terms (as frequency ratio)?"
   - "Why is an interval a ratio rather than a difference of frequencies?"

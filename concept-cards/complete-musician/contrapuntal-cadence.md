@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrapuntal Cadence
 slug: contrapuntal-cadence
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase model
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 17
 pdf_page: 404
 section: "Contrapuntal Cadences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "weak cadence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadence-types
   - embedded-phrase-model
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - cadential-six-four-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a contrapuntal cadence?"
   - "When would a composer use a contrapuntal cadence instead of a structural cadence?"

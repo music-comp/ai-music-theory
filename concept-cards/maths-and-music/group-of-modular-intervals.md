@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Group of Modular Intervals
 slug: group-of-modular-intervals
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: groups
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 82
 section: "The Group of Modular Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - modular interval group
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - group-of-intervals
   - modular-equivalence-on-the-real-numbers
@@ -38,7 +32,6 @@ contrasts_with:
   - group-of-intervals
   - modular-chromatic-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the group of modular intervals?"
   - "How does interval composition work modulo octave?"

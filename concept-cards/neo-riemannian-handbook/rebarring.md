@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rebarring
 slug: rebarring
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "William E. Caplin"
@@ -17,16 +14,13 @@ chapter_number: 15
 pdf_page: 429
 section: "Expressed Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "metric reinterpretation"
   - "bar line repositioning"
   - "Umtaktung"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - expressed-meter
   - notated-meter
@@ -38,7 +32,6 @@ related:
   - schlusswirkung
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is rebarring in Riemann's analytical practice?"
   - "Why did Riemann reposition bar lines in classical works?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Quotient GIS
 slug: quotient-gis
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: formal-features
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 62
 section: "3.2 Quotient GIS"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "GIS/CONG"
   - "modularized GIS"
   - "quotient interval system"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - congruence-relation-gis
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - direct-product-gis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a quotient GIS?"
   - "How does pitch-class space relate to chromatic pitch space via quotient GIS?"

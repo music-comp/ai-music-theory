@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Unfolding Interval Vector
 slug: unfolding-interval-vector
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: rhythmic-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 72
 section: "3.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "progressive interval vector"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - gis3-interval
   - direct-product-gis
@@ -34,7 +28,6 @@ related:
   - mensural-structure
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the interval content of a set develop note-by-note over time?"
   - "When do intervallic patterns first become perceptible to a listener?"

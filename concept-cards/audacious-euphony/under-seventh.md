@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Under-Seventh
 slug: under-seventh
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: seventh chord types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 159
 section: "Reduction to a Triadic Subset"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "added sixth (dualist interpretation)"
   - "subposed dissonance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - reduction-strategy
   - half-diminished-seventh-chord
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - over-seventh
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the dualist interpretation of a half-diminished seventh chord?"
   - "How does the under-seventh relate to plagal voice leading?"

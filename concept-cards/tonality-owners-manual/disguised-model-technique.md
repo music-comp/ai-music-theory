@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Disguised Model Technique
 slug: disguised-model-technique
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequential-technique
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: 476
 section: "The Tempest"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - disguised model sequence
   - altered first-unit technique
   - retrospective clarification
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - canonic-sequence
   - the-ludwig
@@ -37,7 +31,6 @@ related:
   - passionate-simplicity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Beethoven obscure the sequential plan at the start of a passage?"
   - "What is the 'becoming clear only in retrospect' principle?"

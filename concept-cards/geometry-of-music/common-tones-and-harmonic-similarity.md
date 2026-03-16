@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Common Tones and Harmonic Similarity
 slug: common-tones-and-harmonic-similarity
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: chord-relations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 249
 section: "7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "voice-leading similarity"
   - "harmonic proximity via voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - efficient-voice-leading
   - circle-of-thirds-harmonic
@@ -35,7 +29,6 @@ related:
   - bass-line-substitution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why do third-related chords sound similar?"
   - "How does voice-leading proximity create harmonic similarity?"

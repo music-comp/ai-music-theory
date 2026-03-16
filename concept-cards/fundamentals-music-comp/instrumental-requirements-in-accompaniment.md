@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Instrumental Requirements in Accompaniment
 slug: instrumental-requirements-in-accompaniment
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: instrumental-writing
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 51
 section: "Requirements of Instruments"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - accompaniment-function
 extends:
@@ -34,7 +28,6 @@ related:
   - motive-of-the-accompaniment
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do instrumental constraints affect accompaniment writing?"
   - "How does writing for piano differ from writing for ensemble?"

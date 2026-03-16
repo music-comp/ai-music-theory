@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Zarlino's Istitutioni Harmoniche"
 slug: zarlino-istitutioni-harmoniche
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: historical-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 276
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Zarlino's synthesis"
   - "Istitutioni harmoniche"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - multiple-musical-spaces
   - senario
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - rameau-harmonic-theory
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did Zarlino integrate harmonic and melodic spaces?"
   - "What is the triumphal synthesis of Zarlino?"

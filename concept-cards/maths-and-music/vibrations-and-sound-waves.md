@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Vibrations and Sound Waves
 slug: vibrations-and-sound-waves
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: acoustics
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 118
 section: "Vibrations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "vibration"
   - "sound wave"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-functions
   - frequency-and-period
@@ -36,7 +30,6 @@ related:
   - pure-tone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a vibration in mathematical terms?"
   - "How does a vibration become a sound wave?"

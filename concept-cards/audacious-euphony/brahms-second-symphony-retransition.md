@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Brahms Second Symphony Retransition Analysis
 slug: brahms-second-symphony-retransition
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: piece-specific analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 134
 section: "Neighborhoods and Pitch Retention Loops"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-retention-loop
   - double-neighborhood
@@ -32,7 +26,6 @@ related:
   - tonnetz-analytical-neutrality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does a double neighborhood organize an extended retransition?"
   - "How does the Tonnetz handle ambiguous dyadic passages?"

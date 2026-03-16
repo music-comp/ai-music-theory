@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Klang Representation
 slug: klang-representation
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: klang-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 206
 section: "8.1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - Klang
   - "ordered pair (p, sign)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fundamental-bass-intervals
 extends: []
@@ -38,7 +32,6 @@ related:
   - slide-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Klang?"
   - "How does the Klang formalism solve the problem of fundamental bass intervals?"

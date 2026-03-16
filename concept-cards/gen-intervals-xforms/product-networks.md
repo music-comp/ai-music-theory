@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Product Networks
 slug: product-networks
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: structural-analysis
 tier: advanced
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -14,11 +11,8 @@ chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
 section: "10.4"
-# === CONFIDENCE ===
 extraction_confidence: medium
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-network-definition
   - isography
@@ -29,7 +23,6 @@ related:
   - debussy-reflets-dans-leau-analysis
 contrasts_with:
   - network-of-networks
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a product network?"
   - "How do product networks differ from networks of networks?"

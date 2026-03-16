@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rounded Binary Form
 slug: rounded-binary
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sectional-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: null
 section: "Rounded Binary Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - simple-binary
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What defines rounded binary form?"
   - "Where does the return of A material occur?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: ii-V-I Jazz Progression
 slug: ii-v-i-jazz-progression
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-harmony
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 371
 section: "10.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ii-V-I"
   - "two-five-one"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-seventh-chords
 extends:
@@ -36,7 +30,6 @@ related:
   - tritone-substitution-geometry
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the fundamental harmonic schema of jazz?"
   - "How does the ii-V-I relate to earlier voice-leading practices?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Integral Domain
 slug: integral-domain
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: rings
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 100
 section: "Cancellation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ring
 extends:
@@ -35,7 +29,6 @@ related:
   - prime-numbers
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an integral domain?"
   - "Why is the no-zero-divisors property important for number theory?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neighbor Tone
 slug: neighbor-tone
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: non-chord-tones
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,17 +14,14 @@ chapter_number: 4
 pdf_page: null
 section: "Category 1: Embellishing tones that move by step"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "NT"
   - "auxiliary note"
   - "upper neighbor"
   - "lower neighbor"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - embellishing-tone
 extends:
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - passing-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a neighbor tone?"
   - "What is the difference between an upper and lower neighbor?"

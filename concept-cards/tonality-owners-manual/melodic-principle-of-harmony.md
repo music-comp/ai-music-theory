@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic Principle of Harmony
 slug: melodic-principle-of-harmony
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 47
 section: "A melodic principle"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - spiral-diagrams-for-chord-space
   - voice-leading
@@ -34,7 +28,6 @@ related:
   - radial-motion-on-spiral
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do root-position chords differ functionally from inversions in rock vs. classical?"
   - "What distinguishes rock harmonic logic from classical functional harmony?"

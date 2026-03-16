@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Weitzmann Water Bug
 slug: weitzmann-water-bug
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: metaphorical-models
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 78
 section: "The Structure of a Weitzmann Region"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Water bug metaphor"
   - "Oval hallway metaphor"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - weitzmann-region
   - weitzmann-region-structure
@@ -34,7 +28,6 @@ related:
   - augmented-triad-as-switching-station
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the water bug metaphor for Weitzmann regions?"
   - "How does the augmented triad function within a Weitzmann region?"

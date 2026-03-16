@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fourth Progressions
 slug: fourth-progressions
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progression-types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 225
 section: "6.3.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "root motion by fourth"
   - "fourth/fifth progressions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - renaissance-triadic-harmony
   - three-plus-one-voice-leading
@@ -36,7 +30,6 @@ related:
   - circle-of-thirds
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why do fourth progressions dominate from the Renaissance onward?"
   - "How do root progressions evolve from Dufay to Bach?"

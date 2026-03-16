@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generic Intervals
 slug: generic-intervals
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval-naming
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 70
 section: "Naming Generic Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "generic name"
   - "generic size"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
 extends:
@@ -34,7 +28,6 @@ related:
   - specific-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a generic interval?"
   - "How do I determine the generic size of an interval?"

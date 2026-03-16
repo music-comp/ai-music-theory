@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: CHR Networks
 slug: chr-networks
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: impressionist-analysis
 tier: advanced
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -14,13 +11,10 @@ chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
 section: "10.4"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "chromatic rise networks"
   - "CHR graph"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-network-definition
   - isography
@@ -29,7 +23,6 @@ related:
   - z-forms
   - debussy-reflets-dans-leau-analysis
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are CHR networks in Lewin's Debussy analysis?"
 ---

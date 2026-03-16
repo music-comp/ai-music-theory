@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Elided Resolution
 slug: elided-resolution
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: augmented sixth
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,20 +14,16 @@ chapter_number: 30
 pdf_page: 678
 section: "General Features"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-sixth-chord
 extends: []
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I resolve an augmented sixth chord?"
 ---

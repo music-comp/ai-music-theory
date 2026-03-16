@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Plagal Drift
 slug: plagal-drift
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: directional motion
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: 186
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "perpetual downshift"
   - "flatward drift"
   - "subdominant-ward motion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cube-dance
   - voice-leading-zone
@@ -37,7 +31,6 @@ related:
   - rings-arrows
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is plagal drift and how does it differ from a plagal cadence?"
   - "What forces can halt plagal drift?"

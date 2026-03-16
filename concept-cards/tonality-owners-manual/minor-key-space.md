@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Minor Key Space
 slug: minor-key-space
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: key-distance
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 371
 section: "Minor keys"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "circular key space with minor"
   - "extended key space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - key-distance-pitch-class-changing
   - key-distance-scale-degree-preserving
@@ -36,7 +30,6 @@ related:
   - enharmonic-loops-in-scale-space
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do minor keys create shortcuts in key space?"
   - "How can both parallel and relative keys be modeled as 'close'?"

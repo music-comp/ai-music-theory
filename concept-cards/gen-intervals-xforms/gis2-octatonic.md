@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "GIS2 (Octatonic GIS with STRANS2)"
 slug: gis2-octatonic
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: octatonic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 282
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - GIS2
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - strans2-group
   - gis-from-simply-transitive-group
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - gis1-octatonic
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is GIS2 for the octatonic collection?"
   - "How do queer and exchanging operations become transpositions?"

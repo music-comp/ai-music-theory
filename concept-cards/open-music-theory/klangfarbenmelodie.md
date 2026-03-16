@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Klangfarbenmelodie
 slug: klangfarbenmelodie
-# === CLASSIFICATION ===
 category: application
 subcategory: orchestration
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,13 +11,10 @@ chapter: "Subtle Color Changes"
 chapter_number: 10
 pdf_page: null
 section: "X.2"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "sound-color melody"
   - "tone-color melody"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - orchestral-blend
 extends: []
@@ -28,7 +22,6 @@ related:
   - twelve-tone-analysis
   - dovetailing
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Klangfarbenmelodie?"
   - "How does timbre articulate musical structure?"

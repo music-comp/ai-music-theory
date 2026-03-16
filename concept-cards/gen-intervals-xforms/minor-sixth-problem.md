@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Minor Sixth Problem
 slug: minor-sixth-problem
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: historical-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 276
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "8:5 problem"
   - "Ab problem"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - senario
   - multiple-musical-spaces
@@ -36,7 +30,6 @@ related:
   - stufen-theory
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why does the minor sixth cause recurring difficulties for harmonic theories?"
   - "What connects Zarlino's and Hindemith's theoretical difficulties?"

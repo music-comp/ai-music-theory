@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval-Preserving Operation
 slug: interval-preserving-operation
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: formal-features
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 62
 section: "3.4 Transpositions and Interval-Preserving Operations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Pi"
   - "P_i"
   - "interval-preserving transformation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - label-function
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - transposition-operation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an interval-preserving operation in a GIS?"
   - "How do commutative and non-commutative GIS structures differ?"

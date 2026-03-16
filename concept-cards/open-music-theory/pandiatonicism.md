@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pandiatonicism
 slug: pandiatonicism
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: collections
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,18 +11,14 @@ chapter: "Collections"
 chapter_number: 8
 pdf_page: null
 section: "VIII.8"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-modes-20c
 extends: []
 related:
   - pentatonic-collection
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is pandiatonicism?"
   - "How does pandiatonic music differ from tonal and modal music?"

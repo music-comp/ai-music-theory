@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hierarchy in Tonal Music
 slug: hierarchy-in-tonal-music
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: tonal-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 162
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - tonal hierarchy
   - musical hierarchy
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonance-and-dissonance
   - triads
@@ -36,7 +30,6 @@ related:
   - melodic-fluency
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What must I know before understanding voice leading?"
 ---

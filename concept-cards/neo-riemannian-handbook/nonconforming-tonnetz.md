@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nonconforming Tonnetz
 slug: nonconforming-tonnetz
 
-# === CLASSIFICATION ===
 category: pitch-space
 subcategory: spatial representations of pitch
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "infinite Tonnetz"
   - "just-intoned Tonnetz"
   - "planar Tonnetz"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - toroidal-tonnetz
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes the conforming from nonconforming Tonnetz?"
   - "What is the geometry of the Tonnetz under just intonation?"

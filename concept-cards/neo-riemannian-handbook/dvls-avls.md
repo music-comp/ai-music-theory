@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: DVLS and AVLS Voice-Leading Measurements
 slug: dvls-avls
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: voice-leading-metrics
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
@@ -17,10 +14,8 @@ chapter_number: 8
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Displacement Voice-Leading Size"
   - "Average Voice-Leading Size"
@@ -28,7 +23,6 @@ aliases:
   - "absolute voice-leading sum"
   - "voice-leading distance measures"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-graph
   - plr-transformations
@@ -39,7 +33,6 @@ related:
   - parsimonious-trichords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are DVLS and AVLS and how do they quantify voice-leading efficiency?"
   - "How do neo-Riemannian transformations compare in terms of voice-leading distance?"

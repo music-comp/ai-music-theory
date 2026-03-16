@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Transformation-Class Substitution (Tetrachordal)"
 slug: transformation-class-substitution-tetrachordal
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: tetrachordal transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 177
 section: "Circumnavigating the Tristan-Genus Universe"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "class substitution (tetrachordal)"
   - "transformation substitution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - circumnavigation-tetrachordal
   - boretz-group-transformations
@@ -37,7 +31,6 @@ related:
   - sequential-templates-tetrachordal
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can transformation-class substitutions change a sequence type while preserving voice-leading direction?"
   - "What happens when S4 substitutes for S2 in a T5 sequence?"

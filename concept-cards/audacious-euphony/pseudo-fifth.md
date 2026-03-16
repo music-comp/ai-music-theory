@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pseudo-Fifth
 slug: pseudo-fifth
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: tuning and closure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 195
 section: "The Diatonic Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "B-F tritone"
   - "tritone as pseudo-fifth"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-tonnetz
   - syntonic-image
@@ -35,7 +29,6 @@ related:
   - diatonic-encapsulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the pseudo-fifth in the context of the diatonic Tonnetz?"
   - "Why does accepting the B-F tritone as a fifth create a Mobius strip?"

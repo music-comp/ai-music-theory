@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Two Practices of Nineteenth-Century Chromaticism
 slug: two-practices-chromaticism
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: chromatic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: 294
 section: "8.3, 8.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "first and second practice"
   - "functional and chromatic systems"
   - "Janus-faced chromaticism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - decorative-chromaticism
   - generalized-augmented-sixths
@@ -37,7 +31,6 @@ related:
   - tristan-chord-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the two 'practices' of nineteenth-century chromaticism?"
   - "How do functional harmony and chromatic voice leading coexist?"

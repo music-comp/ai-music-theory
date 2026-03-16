@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Antecedent-Consequent
 slug: antecedent-consequent
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: null
 section: "Archetype 2: The Period"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "question-answer"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - period
   - cadence
@@ -34,7 +28,6 @@ related:
   - hybrid-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What defines an antecedent and consequent?"
   - "How do the cadences of antecedent and consequent differ?"

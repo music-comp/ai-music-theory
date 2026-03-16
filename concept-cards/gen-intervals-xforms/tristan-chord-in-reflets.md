@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tristan Chord in Reflets
 slug: tristan-chord-in-reflets
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: impressionist-analysis
 tier: advanced
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -14,11 +11,8 @@ chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
 section: "10.4"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - three-semitone-interval
   - ruffling-motive
@@ -27,7 +21,6 @@ related:
   - debussy-reflets-dans-leau-analysis
   - magic-pentachord
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What role does the Tristan chord play in Debussy's Reflets dans l'eau?"
 ---

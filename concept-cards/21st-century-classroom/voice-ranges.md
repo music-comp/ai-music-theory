@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Ranges
 slug: voice-ranges
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: fundamentals
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 26
 pdf_page: 390
 section: "26.4 Voice Ranges"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "SATB ranges"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-definition
 extends: []
@@ -32,7 +26,6 @@ related:
   - rules-of-spacing
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the standard voice ranges for SATB writing?"
 ---

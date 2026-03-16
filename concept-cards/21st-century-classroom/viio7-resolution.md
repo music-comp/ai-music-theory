@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: vii-diminished-7 Resolution
 slug: viio7-resolution
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 27
 pdf_page: 407
 section: "27.4 The Special Resolution of viio7 (and viiø7)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "diminished seventh resolution"
   - "fully diminished seventh resolution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chord-resolution
   - rules-of-melody
@@ -35,7 +29,6 @@ related:
   - voice-leading-secondary-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you resolve viio7 and viiø7 chords?"
   - "When must the 3rd of viio7 resolve upward?"

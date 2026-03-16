@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Multiplicative Composition of Intervals
 slug: multiplicative-composition-of-intervals
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: ratios
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 58
 section: "Multiplicativity"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - multiplicativity of intervals
   - interval multiplication
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-as-frequency-ratio
 extends: []
@@ -34,7 +28,6 @@ related:
   - multiplicative-and-additive-measurements
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do intervals combine when one follows another?"
   - "Why does combining two intervals involve multiplying their ratios?"

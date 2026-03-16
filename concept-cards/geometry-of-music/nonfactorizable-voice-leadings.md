@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nonfactorizable Voice Leadings
 slug: nonfactorizable-voice-leadings
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: four-voice-techniques
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 254
 section: "7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "nonfactorizable four-voice voice leadings"
   - "split-merge voice leadings"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - efficient-voice-leading
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - three-plus-one-schema
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the nine types of nonfactorizable four-voice triadic voice leadings?"
   - "How do nonfactorizable voice leadings complement the 3+1 schema?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Polyscalar Composition
 slug: polyscalar-composition
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: compositional-technique
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 384
 section: "9.3, 10.4"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "polyscalar construction"
   - "multiple scales per progression"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-scale-compatibility
   - chord-first-composition
@@ -35,7 +29,6 @@ related:
   - altered-chords-and-scales
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens when a simple chord progression uses different scales for each chord?"
   - "How does polyscalar thinking arise from chord-scale compatibility?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Implied Harmonies
 slug: implied-harmonies
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: compound melody
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 15
 pdf_page: 349
 section: "Implied Harmonies"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "inferred harmonies"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - compound-melody
   - contrapuntal-expansion
@@ -34,7 +28,6 @@ related:
   - two-level-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you determine harmonies when chords are incomplete?"
   - "What are implied harmonies in compound melody?"

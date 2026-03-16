@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: GIS Methodology
 slug: gis-methodology
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: philosophical-foundations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 117
 section: "4.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "methodological defense of GIS"
   - "formal vs. perceptual relations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
 extends: []
@@ -33,7 +27,6 @@ related:
   - chopin-sonata-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What should we expect from a musical theory regarding perception?"
   - "Must every formally true statement be immediately perceptible?"

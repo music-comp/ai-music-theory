@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Macroharmony
 slug: macroharmony
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: macroharmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 172
 section: "5.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "harmonic penumbra"
   - "large-scale harmony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - five-components-of-tonality
   - harmonic-consistency
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - harmony-chord-level
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between a scale and a macroharmony?"
   - "What is macroharmony in music?"

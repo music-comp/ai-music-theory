@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Justly Tuned Chords
 slug: justly-tuned-chords
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 138
 section: "Justly Tuned Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - just chords
   - pure-tuned chords
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-interval
   - consonance-and-small-integer-ratios
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - symmetric-chords-and-irrational-temperament
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a justly tuned chord?"
   - "How do justly tuned chords relate to the harmonic series?"

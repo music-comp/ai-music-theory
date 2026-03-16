@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Pitch Space
 slug: tonal-pitch-space
 
-# === CLASSIFICATION ===
 category: pitch-space
 subcategory: hierarchical tonal models
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "TPS"
   - "Lerdahl's Tonal Pitch Space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - tonnetz
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Tonal Pitch Space and how does it differ from the Tonnetz?"
   - "How does the Tonnetz connect pitch space to key space?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Submediant
 slug: submediant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: diatonic chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 18
 pdf_page: 425
 section: "The Submediant"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "vi"
   - "VI"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
   - root-motions
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - mediant
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the submediant function in tonal music?"
   - "How does the submediant function as a tonic substitute?"

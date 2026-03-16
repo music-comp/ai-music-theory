@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mean-Tone Whole Tone
 slug: mean-tone-whole-tone
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: mean-tone
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 152
 section: "The Classical Mean-Tone Scale"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - meantone whole step
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - mean-tone-fifth
 extends: []
@@ -37,7 +31,6 @@ contrasts_with:
   - greater-whole-tone
   - lesser-whole-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the mean-tone whole tone?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scale-Degree Analysis
 slug: scale-degree-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: harmonic-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 253
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - thin analysis
   - theory-neutral analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - functional-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is scale-degree analysis?"
   - "How does scale-degree analysis differ from functional analysis?"

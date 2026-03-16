@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Well-Ordering Principle
 slug: well-ordering-principle
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: number-systems
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 14
 section: "Some Properties of Integers"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "well-ordering axiom"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sets-and-number-systems
 extends: []
@@ -32,7 +26,6 @@ related:
   - division-algorithm
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Well-Ordering Principle?"
   - "Why is the Well-Ordering Principle an axiom rather than a theorem?"

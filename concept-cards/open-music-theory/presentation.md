@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Presentation
 slug: presentation
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: null
 section: "More Detail: The Presentation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sentence
   - basic-idea
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - antecedent
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a presentation subphrase?"
   - "How does the basic idea's repetition vary?"

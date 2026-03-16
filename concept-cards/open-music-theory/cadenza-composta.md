@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cadenza Composta
 slug: cadenza-composta
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: galant-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: null
 section: "Cadences and Post-Cadential"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "compound cadence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - galant-schema
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - cadenza-semplice
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Cadenza Composta and how does it elaborate the Cadenza Semplice?"
 ---

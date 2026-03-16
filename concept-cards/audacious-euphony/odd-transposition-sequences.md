@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Odd-Transposition Sequences
 slug: odd-transposition-sequences
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 107
 section: "Chromatic Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "interregional sequences"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-sequences
   - h-group-transformations
@@ -34,7 +28,6 @@ related:
   - combination-table
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why do odd-transposition sequences cross between regions?"
   - "What is the voice-leading threshold between intra-regional and inter-regional motion?"

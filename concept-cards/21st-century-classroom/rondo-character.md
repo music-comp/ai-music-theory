@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rondo Character
 slug: rondo-character
 
-# === CLASSIFICATION ===
 category: form
 subcategory: style
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,13 +14,10 @@ chapter_number: 25
 pdf_page: 380
 section: "25.4 Rondo Character"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rondo-form
 extends: []
@@ -31,7 +25,6 @@ related:
   - classical-multimovement-forms
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is rondo character?"
   - "Is rondo character the same as rondo form?"

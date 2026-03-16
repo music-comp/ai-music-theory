@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch Motive
 slug: pitch-motive
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: motivic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 251
 section: "10.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "PM"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rich-transformation
   - tch-transformation
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - durational-motive
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pitch motive in Lewin's transformational analysis?"
   - "How does RICH operate on pitch motives?"

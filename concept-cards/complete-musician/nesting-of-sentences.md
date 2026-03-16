@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nesting of Sentences
 slug: nesting-of-sentences
 
-# === CLASSIFICATION ===
 category: form
 subcategory: structural patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 21
 pdf_page: 477
 section: "The Sentence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "nested sentence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sentence-structure
 extends:
@@ -33,7 +27,6 @@ related:
   - fragmentation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nested sentence?"
   - "Can a sentence contain another sentence within it?"

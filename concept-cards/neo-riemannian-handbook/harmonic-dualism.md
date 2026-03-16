@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Dualism
 slug: harmonic-dualism
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: foundational-theory
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,17 +14,14 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "harmonischer Dualismus"
   - "dualistic theory"
   - "Riemannian dualism"
   - "polar opposition of major and minor"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - monism-vs-dualism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is harmonic dualism?"
   - "How does harmonic dualism relate to the undertone series?"

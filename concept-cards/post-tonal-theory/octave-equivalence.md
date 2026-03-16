@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octave Equivalence
 slug: octave-equivalence
 
-# === CLASSIFICATION ===
 category: pitch
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 17
 section: "1.1 Octave Equivalence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - octave equivalency
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - pitch
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is octave equivalence?"
   - "How does pitch class differ from pitch?"

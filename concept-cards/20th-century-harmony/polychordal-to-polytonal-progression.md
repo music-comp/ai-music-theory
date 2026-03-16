@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Polychordal to Polytonal Progression
 slug: polychordal-to-polytonal-progression
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,13 +14,10 @@ chapter_number: 13
 pdf_page: 270
 section: "Combining Textures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - polychord-approach
   - polytonality
@@ -35,7 +29,6 @@ related:
   - chordal-polytonality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does a polychordal succession become polytonal in the context of harmonic synthesis?"
   - "What is the textural continuum from polychords through polytonality to atonality?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Hierarchy
 slug: tonal-hierarchy
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch-organization
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 3
 section: "Analytical Application"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pitch hierarchy"
   - "musical hierarchy"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
   - tonic
@@ -35,7 +29,6 @@ related:
   - accent-types
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is tonal hierarchy?"
   - "How are pitches ranked in importance?"

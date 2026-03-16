@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dispersive Transformation
 slug: dispersive-transformation
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 154
 section: "6.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - progressive-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a dispersive transformation?"
 ---

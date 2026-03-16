@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Loop Families in Rock
 slug: loop-families-in-rock
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 47
 section: "A first loop family"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - chord-loop families
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - spiral-diagrams-for-chord-space
   - melodic-principle-of-harmony
@@ -37,7 +31,6 @@ related:
   - hey-joe-family
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are loop families in rock harmony?"
   - "What distinguishes rock harmonic logic from classical functional harmony?"

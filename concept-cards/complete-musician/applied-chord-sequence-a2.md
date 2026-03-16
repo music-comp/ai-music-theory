@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Applied-Chord Sequence A2
 slug: applied-chord-sequence-a2
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: applied chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 24
 pdf_page: 538
 section: "The A2 (-3/+4) Applied-Chord Sequence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "A2 (-3/+4) applied-chord sequence"
   - "chromatic ascending 5-6 sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - applied-chord
   - harmonic-sequences
@@ -36,7 +30,6 @@ related:
   - applied-chord-sequence-d3
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
 ---

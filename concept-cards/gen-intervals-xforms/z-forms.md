@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Z-Forms
 slug: z-forms
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: impressionist-analysis
 tier: advanced
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -14,14 +11,11 @@ chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
 section: "10.4"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "Z1"
   - "Z2"
   - "Z3"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive-x
   - motive-y
@@ -31,7 +25,6 @@ related:
   - debussy-reflets-dans-leau-analysis
   - registral-climax-analysis
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the Z-forms in Lewin's Debussy analysis?"
 ---

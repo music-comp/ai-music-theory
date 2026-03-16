@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octatonic Pitch-Class Set
 slug: octatonic-pitch-class-set
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: octatonic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 282
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "octatonic collection"
   - "octatonic set S"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - simply-transitive-group
 extends: []
@@ -36,7 +30,6 @@ related:
   - gis2-octatonic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What must I know before understanding the octatonic GIS?"
   - "What is the octatonic pitch-class set used in Lewin's Appendix B?"

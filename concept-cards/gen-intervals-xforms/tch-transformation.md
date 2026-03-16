@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: TCH Transformation
 slug: tch-transformation
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: serial-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 206
 section: "8.2.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "transposition chain"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rich-transformation
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - rich-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes RICH from TCH?"
   - "Why use TCH instead of a specific transposition label?"

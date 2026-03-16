@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Natural Gravitation Toward Just Intonation
 slug: natural-gravitation-toward-just-intonation
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 11
 pdf_page: 138
 section: "Justly Tuned Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - natural tuning tendency
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-interval
   - justly-tuned-chords
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - equal-temperament-versus-just-intonation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why do singers and string players naturally tune to just intervals?"
   - "What distinguishes just intonation from equal temperament in practice?"

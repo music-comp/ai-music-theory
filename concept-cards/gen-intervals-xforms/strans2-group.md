@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: STRANS2 Group
 slug: strans2-group
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: octatonic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 282
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - STRANS2
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - octatonic-pitch-class-set
   - simply-transitive-group
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - strans1-group
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is STRANS2 in the octatonic GIS?"
   - "What are the queer and exchanging operations?"

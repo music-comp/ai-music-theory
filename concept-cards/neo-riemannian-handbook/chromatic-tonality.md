@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Tonality
 slug: chromatic-tonality
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "David Kopp"
@@ -17,16 +14,13 @@ chapter_number: 14
 pdf_page: 401
 section: "I. Introduction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Tonalit\xE4t (Riemann)"
   - "expanded tonality"
   - "common-tone tonality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
   - chromatic-mediant
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - tonalitaet-vs-tonart
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does chromatic tonality relate to diatonic function?"
   - "How do I analyze chromatic progressions using neo-Riemannian tools?"

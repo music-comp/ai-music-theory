@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nonstandard Chromatic Intervals
 slug: nonstandard-chromatic-intervals
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Nonstandard Chromatic Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - n-chromatic intervals
   - non-twelve chromatic intervals
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modular-chromatic-intervals
   - n-chromatic-scale
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - modular-chromatic-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are modular intervals defined in non-standard chromatic scales?"
   - "What group structure governs intervals in an n-chromatic scale?"

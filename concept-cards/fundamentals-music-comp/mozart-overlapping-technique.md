@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mozart Overlapping Technique
 slug: mozart-overlapping-technique
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: formal-construction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,16 +14,13 @@ chapter_number: 18
 pdf_page: 100
 section: "The Coda"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - overlapping joints
   - dovetailing technique
   - Mozartean overlap
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - coda-function-and-structure
   - progressive-reduction-in-codas
@@ -37,7 +31,6 @@ related:
   - uneven-phrase-lengths
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the overlapping technique characteristic of Mozart?"
   - "How does dovetailing work in musical form?"

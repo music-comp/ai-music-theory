@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Major and Minor Modes
 slug: major-and-minor-modes
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 14
 section: "Major and Minor Modes"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "major mode"
   - "minor mode"
   - "relative minor"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ecclesiastical-modes
   - modality-and-key
@@ -38,7 +32,6 @@ related:
   - scale-degrees-and-solmization
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the major and minor modes?"
   - "What is the relative minor key?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic Compass and Balance
 slug: melodic-compass-and-balance
 
-# === CLASSIFICATION ===
 category: melody
 subcategory: phrase-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 22
 section: "Construction of the Antecedent"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - melodic range
   - compass of a melody
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - antecedent-of-the-period
@@ -37,7 +31,6 @@ related:
   - contrast-and-variety
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the compass of a melody?"
   - "How should melodic range be managed across a period?"

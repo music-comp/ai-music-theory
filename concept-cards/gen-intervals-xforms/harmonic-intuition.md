@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Intuition
 slug: harmonic-intuition
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: interval-concepts
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 47
 section: "2.1.5"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-intonation-pitch-space
 extends: []
@@ -32,7 +26,6 @@ related:
   - directed-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct a GIS from a musical space?"
 ---

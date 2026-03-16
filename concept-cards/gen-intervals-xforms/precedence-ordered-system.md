@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Precedence-Ordered System
 slug: precedence-ordered-system
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-structure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 224
 section: "9.7.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "precedence-ordered node/arrow system"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - precedence-ordering
 extends: []
@@ -34,7 +28,6 @@ related:
   - carriage-return-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a precedence-ordered system?"
   - "When is a node/arrow system compatible with chronology?"

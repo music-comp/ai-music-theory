@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: CONTENTS Function
 slug: contents-function
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-definitions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 224
 section: "9.3.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "CONTENTS"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-graph-definition
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - transit-function
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the CONTENTS function in a transformation network?"
   - "How do musical objects get assigned to network nodes?"

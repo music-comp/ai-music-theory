@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rondo Form
 slug: rondo-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: large-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 25
 pdf_page: 375
 section: "25.3 Rondo Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "rondo"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulation
   - cadence
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - sonata-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is rondo form?"
   - "What is the difference between a refrain and an episode in rondo?"

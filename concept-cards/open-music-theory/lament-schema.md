@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Classical Schemas in Pop (Lament and Circle-of-Fifths)
 slug: lament-schema
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: pop-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: null
 section: "VII.9"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "lament bass"
   - "circle-of-fifths schema"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - minor-tetrachord
   - root-motion-by-fifth
@@ -35,7 +29,6 @@ related:
   - ground-bass
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the lament schema in pop music?"
   - "How does the circle-of-fifths schema work in pop?"

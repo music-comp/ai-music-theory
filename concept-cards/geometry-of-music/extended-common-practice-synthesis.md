@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Extended Common Practice Synthesis
 slug: extended-common-practice-synthesis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: historical-synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 409
 section: "Conclusion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "extended common practice"
   - "from impressionism through jazz to postminimalism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twentieth-century-scalar-common-practice
   - jazz-as-modernist-synthesis
@@ -34,7 +28,6 @@ related:
   - tonality-as-habitable-planet
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the extended common practice?"
   - "How does the history of Western tonality progress from medieval to contemporary?"

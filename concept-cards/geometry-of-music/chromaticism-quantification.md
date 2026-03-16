@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromaticism Quantification
 slug: chromaticism-quantification
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: macroharmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 182
 section: "5.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "measuring chromaticism"
   - "chromatic vs. nonchromatic"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class-circulation
   - macroharmonic-consistency
@@ -37,7 +31,6 @@ related:
   - scalar-tradition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can we quantify how 'chromatic' a piece is?"
   - "What features distinguish 19th-century chromaticism from 20th-century scalar composition?"

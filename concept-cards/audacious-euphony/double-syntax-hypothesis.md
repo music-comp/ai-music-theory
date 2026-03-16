@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Double Syntax Hypothesis
 slug: double-syntax-hypothesis
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: double syntax
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 212
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "double syntax"
   - "dual syntax"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pan-triadic-syntax
   - consonant-triad
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - double-syntax-objections
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is double syntax in chromatic harmony?"
   - "What must I know before understanding double syntax?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Isography
 slug: isography
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: non-intervallic-transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 206
 section: "8.2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "isographic relationship"
   - "network isography"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tch-transformation
   - rich-transformation
@@ -35,7 +29,6 @@ related:
   - ipair-graph
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does it mean for two networks to be isographic?"
   - "Why is TCH preferred over specific transposition labels?"

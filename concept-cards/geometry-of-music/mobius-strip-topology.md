@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mobius Strip Topology
 slug: mobius-strip-topology
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 87
 section: "3.2-3.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Mobius strip chord space"
   - "twisted strip topology"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - parable-of-the-ant
   - two-note-chord-space
@@ -36,7 +30,6 @@ related:
   - higher-dimensional-chord-spaces
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What kind of topological surface is two-note chord space?"
   - "Why does chord space have a twist?"

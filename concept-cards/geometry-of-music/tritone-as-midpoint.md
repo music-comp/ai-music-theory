@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tritone as Midpoint
 slug: tritone-as-midpoint
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 90
 section: "3.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tritone at center of chord space"
   - "central horizontal line"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-note-chord-space
 extends: []
@@ -35,7 +29,6 @@ related:
   - harmonic-consistency-and-efficient-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why does the tritone occupy the center of two-note chord space?"
   - "What is special about the tritone's position in chord space geometry?"

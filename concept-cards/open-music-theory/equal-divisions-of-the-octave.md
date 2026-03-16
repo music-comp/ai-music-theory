@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Equal Divisions of the Octave
 slug: equal-divisions-of-the-octave
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: null
 section: "V.9"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-scale
   - interval-identification
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - diatonic-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How many ways can the octave be divided equally?"
   - "How do equal divisions create tonal ambiguity?"

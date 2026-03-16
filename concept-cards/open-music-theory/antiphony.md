@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Antiphony
 slug: antiphony
-# === CLASSIFICATION ===
 category: application
 subcategory: orchestration
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,18 +11,14 @@ chapter: "Core Principles of Orchestration"
 chapter_number: 10
 pdf_page: null
 section: "X.1"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
   - dovetailing
   - orchestral-blend
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is antiphony in orchestration?"
   - "How is antiphony used to articulate form?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pseudochord
 slug: pseudochord
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 335
 section: "Fauxbourdon and linear idioms"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "pseudochord idiom"
   - "pedal-point parallel-thirds idiom"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fauxbourdon-and-linear-idioms
 extends:
@@ -34,7 +28,6 @@ related:
   - bachian-dualism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pseudochord in Tymoczko's analysis?"
   - "How do parallel thirds over a pedal point challenge harmonic analysis?"

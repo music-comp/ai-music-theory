@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scriabin Prelude Analysis (Op. 39 No. 2)
 slug: scriabin-prelude-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical techniques for large forms
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 37
 pdf_page: 852
 section: "Analytical Interlude: Scriabin, Prelude, op. 39, no. 2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - intervallic-cell
   - tonal-ambiguity
@@ -37,7 +31,6 @@ related:
   - reciprocal-process
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does analysis reveal structure in highly chromatic music at tonality's edge?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Lead-Sheet Notation
 slug: lead-sheet-notation
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: 138
 section: "Lead-Sheet Notation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord symbols"
   - "pop chord symbols"
   - "jazz chord symbols"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triads
   - seventh-chords
@@ -38,7 +32,6 @@ contrasts_with:
   - roman-numeral-analysis
   - figured-bass
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is lead-sheet notation?"
 ---

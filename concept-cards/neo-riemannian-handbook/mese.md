@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mese (Central Tone)
 slug: mese
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scalar-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Matthew Gelbart, Alexander Rehding"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - central tone
   - "proto-tonic"
   - "\u2609 (sun symbol)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pentatonicism
 extends: []
@@ -36,7 +30,6 @@ related:
   - folkloristische-tonalitatsstudien
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the mese in Riemann's pentatonic theory?"
   - "What distinguishes pentatonic from diatonic tonality in Riemann's framework?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Two Musical Geometries
 slug: two-musical-geometries
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: representations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 130
 section: "3.12"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "circular vs higher-dimensional representation"
   - "complementary geometries"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-note-chord-space
   - higher-dimensional-chord-spaces
@@ -34,7 +28,6 @@ related:
   - voice-leading-lattices
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the two geometric models of musical space?"
   - "What are the strengths and weaknesses of each?"

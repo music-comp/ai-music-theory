@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Riemann's 'Das Problem des harmonischen Dualismus' (Primary Source)"
 slug: riemann-primary-source
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: primary-source
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: 168
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Das Problem des harmonischen Dualismus"
   - "The Problem of Harmonic Dualism"
   - "Riemann 1905 article"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - overtone-series
@@ -38,7 +32,6 @@ related:
   - monism-vs-dualism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Riemann's 1905 article 'Das Problem des harmonischen Dualismus' and why is it significant?"
   - "How did Riemann shift from acoustic to psychological foundations for dualism?"

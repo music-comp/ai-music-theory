@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Omissibility of the Accompaniment
 slug: omissibility-of-the-accompaniment
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: general-principles
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 51
 section: "Omissibility of the Accompaniment"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - accompaniment-function
 extends: []
@@ -32,7 +26,6 @@ related:
   - complementary-rhythm
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When can the accompaniment be omitted?"
   - "When is accompaniment mandatory?"

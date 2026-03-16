@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Functional Sequences
 slug: functional-sequences
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 336
 section: "Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "tonal sequences"
   - "diatonic sequences in functional harmony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-cycle-theory
   - descending-thirds-arrangement
@@ -37,7 +31,6 @@ related:
   - up-and-down-the-ladder
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What types of sequences are common in functional harmony?"
   - "How do sequences relate to harmonic cycles?"

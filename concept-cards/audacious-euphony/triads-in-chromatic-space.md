@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Triads in Chromatic Space
 slug: triads-in-chromatic-space
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: spatial models
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 19
 section: "Triads in Chromatic Space"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pan-triadic space"
   - "chromatic triadic universe"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-vs-diatonic-organization
 extends: []
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - diatonic-collection
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does it mean to view triads in chromatic rather than diatonic space?"
   - "How does chromatic space measure triadic proximity?"

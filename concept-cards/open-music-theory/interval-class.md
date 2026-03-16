@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval Class
 slug: interval-class
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: intervals
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: null
 section: "VIII.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ic"
   - "unordered pitch-class interval"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - integer-notation
@@ -36,7 +30,6 @@ related:
   - set-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an interval class?"
   - "How many interval classes exist?"

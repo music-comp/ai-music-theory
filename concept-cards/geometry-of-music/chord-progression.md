@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chord Progression
 slug: chord-progression
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: definition
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "harmonic progression"
   - "individual OPC class"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord
 extends: []
@@ -36,7 +30,6 @@ contrasts_with:
   - voice-leading-in-pitch-space
   - voice-leading-in-pitch-class-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a voice leading vs. a chord progression?"
   - "What is a chord progression?"

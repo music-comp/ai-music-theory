@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Group
 slug: group
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: groups
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 82
 section: "Group"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - monoid
 extends:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - monoid
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a group in abstract algebra?"
   - "How does a group differ from a monoid?"

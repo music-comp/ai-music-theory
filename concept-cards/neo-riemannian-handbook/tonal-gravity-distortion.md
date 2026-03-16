@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Gravity and Transformational Space
 slug: tonal-gravity-distortion
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: phenomenology
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Daniel Harrison"
@@ -17,16 +14,13 @@ chapter_number: 20
 pdf_page: 564
 section: "III. Remarks on Fantasia on a Theme by Thomas Tallis"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - gravitational distortion of Tonnetz
   - tonic gravity
   - tonal-gravity metaphor
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
   - harmonic-function
@@ -38,7 +32,6 @@ related:
   - sensuous-functional-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does tonic presence affect transformational analysis?"
   - "What happens to neo-Riemannian space when a tonic is present?"

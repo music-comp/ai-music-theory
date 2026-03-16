@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Homorhythm
 slug: homorhythm
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: texture
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 21
 pdf_page: null
 section: "Homorhythm"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "homorhythmic texture"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - homophony
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - polyphony
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is homorhythm?"
   - "How does homorhythm differ from melody and accompaniment?"

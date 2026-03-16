@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Gradus ad Parnassum
 slug: gradus-ad-parnassum
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: pedagogy
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Steps to Parnassus"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - species-counterpoint
 extends: []
@@ -33,7 +27,6 @@ related:
   - first-species
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Gradus ad Parnassum and how is it organized?"
   - "How many exercises does it contain?"

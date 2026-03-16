@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transposition in Sentence Construction
 slug: transposition-in-sentence-construction
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: theme-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 20
 section: "Illustrations from the literature"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - sequential repetition in sentences
   - sentence transposition
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - sentence-structure
@@ -37,7 +31,6 @@ related:
   - tonic-form-and-dominant-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I build a sentence opening (presentation)?"
   - "How is transposition used in sentence construction?"

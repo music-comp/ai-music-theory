@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Time-Span GIS Uniqueness
 slug: time-span-gis-uniqueness
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 4.1.5"
   - "essential uniqueness of time-span GIS"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span-gis
   - time-span-interval-independence
@@ -35,7 +29,6 @@ related:
   - isomorphism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Is the time-span GIS the only reference-independent time-span GIS?"
   - "Why is non-commutativity forced by reference-independence?"

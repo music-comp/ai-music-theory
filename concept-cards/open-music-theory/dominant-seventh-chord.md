@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dominant Seventh Chord
 slug: dominant-seventh-chord
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: seventh-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,17 +14,13 @@ chapter_number: 2
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
-# high: Explicitly defined with resolution procedures
 
-# === VARIANTS (authority control) ===
 aliases:
   - "V7"
   - "dominant seventh"
   - "Mm7 chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - authentic-cadence
   - voice-leading
@@ -38,7 +31,6 @@ related:
   - leading-tone-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does V7 strengthen a cadence?"
   - "What are the three ways V7 can resolve to I?"

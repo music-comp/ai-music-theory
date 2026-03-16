@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nonharmonic Reduction
 slug: nonharmonic-reduction
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-reduction
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 203
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "syntactic reduction"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - summarizing-reduction
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is analytical reduction, and what are its varieties?"
   - "What distinguishes textural reduction from summarizing reduction?"

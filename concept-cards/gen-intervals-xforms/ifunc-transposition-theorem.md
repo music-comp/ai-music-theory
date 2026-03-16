@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: IFUNC Transposition Theorem
 slug: ifunc-transposition-theorem
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: interval-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 119
 section: "5.1.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 5.1.6"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ifunc
   - transposition-operation
@@ -36,7 +30,6 @@ related:
   - ifunc-inversion-theorem
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does transposing one or both sets affect IFUNC?"
   - "What is the effect of transposition on interval functions?"

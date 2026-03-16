@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voicing
 slug: voicing
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: chord-notation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 44
 section: "Voicing"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chords-as-note-class-collections
 extends: []
@@ -32,7 +26,6 @@ related:
   - cyclic-permutations-and-root-identification
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is voicing?"
   - "Does changing the voicing change the chord?"

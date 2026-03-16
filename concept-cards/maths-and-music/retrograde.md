@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Retrograde
 slug: retrograde
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: serialism
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 74
 section: "Twelve-Tone Music"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - retrograde row
   - row reversal
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - prime-row
   - twelve-tone-technique
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - inversion-and-transposition-of-rows
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a retrograde in twelve-tone music?"
   - "How is the retrograde of a row obtained?"

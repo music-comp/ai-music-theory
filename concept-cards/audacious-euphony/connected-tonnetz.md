@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Connected Tonnetz
 slug: connected-tonnetz
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: voice-leading graph
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 105
 section: "How Hexatonic and Weitzmann Regions Interact"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "unified Tonnetz"
   - "expanded Tonnetz"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz-strip
   - hexatonic-weitzmann-interaction
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - cube-dance-graph
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the full Tonnetz assembled from hexatonic and Weitzmann components?"
   - "What are the two interpretations of the major-third axes?"

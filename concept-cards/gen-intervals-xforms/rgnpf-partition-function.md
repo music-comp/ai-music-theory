@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "RGNPF (Regener's Generalized Partition Function)"
 slug: rgnpf-partition-function
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 154
 section: "6.9"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - Regener Partition Function
   - partition function
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
   - canonical-group
@@ -36,7 +30,6 @@ related:
   - emb-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the generalized partition function?"
   - "How does RGNPF relate to EMB?"

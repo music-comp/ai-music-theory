@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Effect of Horizontal Stretching on Pitch
 slug: effect-of-horizontal-stretching-on-pitch
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: periodic-functions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 118
 section: "Effect of Horizontal Stretching on Pitch"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - geometric-transformations-on-periodic-functions
   - frequency-and-period
@@ -35,7 +29,6 @@ related:
   - timbre
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I tune a waveform to a specific pitch?"
   - "What happens to pitch when a recording is sped up or slowed down?"

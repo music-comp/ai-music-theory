@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Serial Center Chord
 slug: serial-center-chord
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 247
 section: "Serial Harmony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "center chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - serial-harmony
   - melodic-set
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - tonal-center
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a serial center chord?"
   - "How are primary and secondary chords derived from a melodic set?"

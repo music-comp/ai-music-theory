@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Passing Tonic
 slug: passing-tonic
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 17
 pdf_page: 404
 section: "Expansion of the Pre-Dominant"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - expansion-of-the-pre-dominant
   - contrapuntal-expansion
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - tonic-expansion
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a passing tonic?"
   - "Can a tonic chord be subordinate to another function?"

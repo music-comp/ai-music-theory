@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Inversion
 slug: inversion
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: transformation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 46
 section: "2.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pitch-space inversion"
   - "reflection"
   - "I symmetry"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-space
   - distance-in-music
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - transposition
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does inversion mean in pitch and pitch-class spaces?"
   - "What are OPTIC symmetries?"

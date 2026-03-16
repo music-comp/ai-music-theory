@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Accented Neighbor Tone
 slug: accented-neighbor-tone
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: 302
 section: "The Accented Neighbor Tone"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - AN
   - accented auxiliary
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - neighbor-tone
   - accented-vs-unaccented-dissonance
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - neighbor-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

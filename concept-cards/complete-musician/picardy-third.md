@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Picardy Third
 slug: picardy-third
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 183
 section: "The Cadence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - tierce de Picardie
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadence-types
 extends: []
@@ -32,7 +26,6 @@ related:
   - leading-tone-in-minor
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cadence?"
 ---

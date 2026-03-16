@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Function as Fregean Concept
 slug: tonal-function-frege
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: philosophical-foundations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Brian Hyer"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: null
 section: "Funktion/Bedeutung"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Funktion/Bedeutung"
   - "function as meaning"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - klang
@@ -36,7 +30,6 @@ related:
   - klangvertretung
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Riemann's function theory relate to neo-Riemannian transformations?"
   - "What is the philosophical basis of the concept of harmonic function?"

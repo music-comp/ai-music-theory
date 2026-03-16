@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Twelve-Tone Technique
 slug: twelve-tone-technique
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 247
 section: "Atonality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "twelve-note composition"
   - "dodecaphony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - atonality
   - atonal-organization
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - tonality
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is twelve-tone technique according to Persichetti?"
   - "Why is twelve-tone writing primarily contrapuntal?"

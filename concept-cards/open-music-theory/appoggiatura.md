@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Appoggiatura
 slug: appoggiatura
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: non-chord-tones
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: null
 section: "Category 2: Embellishing tones that involve a leap"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "APP"
   - "leaping tone"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - embellishing-tone
 extends:
@@ -36,7 +30,6 @@ contrasts_with:
   - escape-tone
   - neighbor-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an appoggiatura?"
   - "How does an appoggiatura differ from an escape tone?"

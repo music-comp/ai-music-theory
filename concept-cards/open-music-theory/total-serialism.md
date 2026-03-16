@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Total Serialism
 slug: total-serialism
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,19 +11,15 @@ chapter: "History and Context of Serialism"
 chapter_number: 9
 pdf_page: null
 section: "IX.6"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "integral serialism"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - serialism
 extends:
   - twelve-tone-row
 related: []
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is total or integral serialism?"
   - "Who were the key composers of total serialism?"

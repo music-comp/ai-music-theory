@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Period Structure
 slug: period-structure
 
-# === CLASSIFICATION ===
 category: form
 subcategory: theme-types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 20
 section: "The Period and the Sentence"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - period form
   - Periode
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - motive
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - sentence-structure
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does a period differ from a sentence?"
   - "What is a period in musical composition?"

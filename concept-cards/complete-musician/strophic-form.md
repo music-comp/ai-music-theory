@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Strophic Form
 slug: strophic-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: variations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 28
 pdf_page: 637
 section: "Modal Mixture and the German Lied"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - german-lied
 extends: []
@@ -32,7 +26,6 @@ related:
 contrasts_with:
   - through-composed-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does modal mixture relate to borrowed chords?"
 ---

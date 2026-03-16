@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Triad's Second Nature"
 slug: triads-second-nature
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: theoretical-framework
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 9
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "second nature of triads"
   - "consonant triad's second nature"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - root-interval-approach
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the 'second nature' of consonant triads?"
   - "Why do triads have two distinct syntactic potentials?"

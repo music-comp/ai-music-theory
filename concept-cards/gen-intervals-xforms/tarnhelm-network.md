@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tarnhelm Network
 slug: tarnhelm-network
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: klang-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "8.1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang-representation
   - subm-transformation
@@ -34,7 +28,6 @@ related:
   - valhalla-network
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Tarnhelm network?"
   - "How does it demonstrate non-intervallic Klang analysis?"

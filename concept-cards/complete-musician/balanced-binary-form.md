@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Balanced Binary Form
 slug: balanced-binary-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: binary form
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 26
 pdf_page: 587
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - rounded-binary-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does binary form relate to sonata form?"
 ---

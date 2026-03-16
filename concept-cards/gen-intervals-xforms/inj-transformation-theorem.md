@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: INJ Transformation Theorem
 slug: inj-transformation-theorem
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 154
 section: "6.7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 6.7.2"
   - INJ conjugation formula
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
   - operation
@@ -37,7 +31,6 @@ related:
   - ifunc-transposition-theorem
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does INJ behave when sets are transformed by an operation?"
   - "What is system modulation in terms of INJ?"

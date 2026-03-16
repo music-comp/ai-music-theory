@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fugue Answer
 slug: fugue-answer
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: fugue
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: null
 section: "Answer"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "comes"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fugue-subject
 extends: []
@@ -32,7 +26,6 @@ related:
   - fugal-exposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between a real and a tonal answer?"
   - "When is a tonal answer required instead of a real answer?"

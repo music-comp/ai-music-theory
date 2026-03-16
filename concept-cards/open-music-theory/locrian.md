@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Locrian Mode
 slug: locrian
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 14
 pdf_page: null
 section: "Modes and the Parallel Relationship"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - mode
   - minor-scale
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - lydian
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the locrian mode?"
   - "Why is locrian the darkest mode?"

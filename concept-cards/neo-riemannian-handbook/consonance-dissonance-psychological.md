@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Consonance and Dissonance (Psychological)
 slug: consonance-dissonance-psychological
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: harmonic-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Benjamin Steege, Brian Hyer"
@@ -17,16 +14,13 @@ chapter_number: null
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Scheinkonsonanz (apparent consonance)
   - Auffassungsdissonanz (conceptual dissonance)
   - contextual consonance/dissonance
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - klangvertretung
@@ -39,7 +33,6 @@ related:
   - harmonic-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes acoustic from psychological foundations of harmony?"
   - "How does Riemann redefine consonance and dissonance?"

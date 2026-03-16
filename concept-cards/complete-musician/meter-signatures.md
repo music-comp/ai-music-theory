@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Meter Signatures
 slug: meter-signatures
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 33
 section: "The Meter Signature"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "time signature"
   - "meter sign"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - meter
   - simple-meter
@@ -36,7 +30,6 @@ related:
   - beaming
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I read a time signature?"
   - "What do the numbers in a time signature mean?"

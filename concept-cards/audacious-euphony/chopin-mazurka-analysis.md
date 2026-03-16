@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chopin f minor Mazurka Analysis
 slug: chopin-mazurka-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: Chopin analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 177
 section: "Circumnavigating the Tristan-Genus Universe"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Chopin Op. 68 no. 4 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - circumnavigation-tetrachordal
   - boretz-group-transformations
@@ -36,7 +30,6 @@ related:
   - tristan-genus-voice-leading-zones
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do transformation-class substitutions work in seventh-chord progressions?"
   - "How does the Chopin Mazurka relate to the Chopin Prelude?"

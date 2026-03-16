@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seven-Part Rondo
 slug: seven-part-rondo
 
-# === CLASSIFICATION ===
 category: form
 subcategory: rondo
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 32
 pdf_page: 730
 section: "Seven-Part Rondo"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ABACABA rondo"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rondo-form
   - five-part-rondo
@@ -36,7 +30,6 @@ contrasts_with:
   - five-part-rondo
   - ternary-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a seven-part rondo?"
   - "How does a seven-part rondo differ from a large ternary form?"

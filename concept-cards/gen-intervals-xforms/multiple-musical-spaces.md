@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Multiple Musical Spaces
 slug: multiple-musical-spaces
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: multiple-gis-intuitions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 276
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "multiple intervallic intuitions"
   - "plurality of musical spaces"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
 extends: []
@@ -36,7 +30,6 @@ related:
   - zarlino-istitutioni-harmoniche
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Do we inhabit a single musical space or multiple simultaneous spaces?"
   - "How do different intervallic intuitions interact in tonal music?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonicity (Global Centricity)
 slug: centricity-and-tonicity
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: centricity
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: 187
 section: "5.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "global centricity"
   - "tonal center"
   - "centricity"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - macroharmony
   - rootedness
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - rootedness
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does 'centricity' mean in tonal music?"
   - "How do you differentiate 'rootedness' from 'tonicity'?"

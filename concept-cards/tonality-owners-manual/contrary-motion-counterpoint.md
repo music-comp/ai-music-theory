@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrary-Motion Counterpoint
 slug: contrary-motion-counterpoint
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: beethoven-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 466
 section: "From schema to flow"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - Beethovenian contrary motion
   - outer-voice contrary motion
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - the-ludwig
   - basic-voice-leading
@@ -37,7 +31,6 @@ related:
   - schematic-vocabulary-in-beethoven
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does contrary motion function as a comprehensive approach to functional counterpoint?"
   - "What distinguishes Beethoven's contrapuntal defaults from Mozart's?"

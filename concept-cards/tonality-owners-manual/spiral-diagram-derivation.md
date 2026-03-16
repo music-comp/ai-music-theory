@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Spiral Diagram Derivation
 slug: spiral-diagram-derivation
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: geometric-models
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 545
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - helical derivation
   - chord-space subspace derivation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-geometry
   - double-transposition
@@ -37,7 +31,6 @@ related:
   - collectional-hierarchy-as-synthesis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you construct a spiral diagram for a given scale?"
   - "What are the two mathematical derivations of spiral diagrams?"

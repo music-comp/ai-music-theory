@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rondo Form
 slug: rondo-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: rondo
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 32
 pdf_page: 730
 section: "Rondo"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "rondeau"
   - "rondeau form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ternary-form
   - binary-form
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - sonata-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is rondo?"
   - "How does rondo extend ternary form?"

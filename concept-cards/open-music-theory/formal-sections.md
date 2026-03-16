@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Formal Sections
 slug: formal-sections
 
-# === CLASSIFICATION ===
 category: form
 subcategory: formal-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
 extends: []
@@ -36,7 +30,6 @@ related:
   - rondo-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between core and auxiliary sections?"
   - "What are the types of connective auxiliary sections?"

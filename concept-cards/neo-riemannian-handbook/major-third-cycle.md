@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Major-Third Cycle
 slug: major-third-cycle
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Robert C. Cook"
@@ -17,16 +14,13 @@ chapter_number: 19
 pdf_page: 513
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - major-third pair
   - major-third relation
   - "Terzschritt cycle"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
 extends: []
@@ -36,7 +30,6 @@ related:
   - hexatonic-systems
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do major-third cycles function in Romantic chromatic harmony?"
   - "How do I apply PLR transformations to a triadic progression?"

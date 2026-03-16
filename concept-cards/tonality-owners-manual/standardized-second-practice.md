@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Standardized Second Practice
 slug: standardized-second-practice
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: 210
 section: "The standardized second practice"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - first-practice
   - snap-system
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - first-practice
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the standardized second practice?"
   - "How does baroque dissonance treatment differ from the first practice?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch-Class Intervals (Paths)
 slug: pitch-class-interval
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: measurement
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "paths in pitch-class space"
   - "directed pitch-class interval"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class-space
 extends:
@@ -36,7 +30,6 @@ related:
   - transposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pitch-class interval?"
   - "What is pitch-class space?"

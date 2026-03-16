@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Tonnetz
 slug: chromatic-tonnetz
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: Tonnetz variants
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 190
 section: "Some Previous Proposals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "open Tonnetz"
   - "pan-triadic Tonnetz"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz-glossary
   - hexatonic-region
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - diatonic-tonnetz
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the chromatic Tonnetz?"
   - "How does the Tonnetz represent chromatic (pan-triadic) relationships?"

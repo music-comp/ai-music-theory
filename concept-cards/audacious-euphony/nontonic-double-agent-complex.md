@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nontonic Double-Agent Complex
 slug: nontonic-double-agent-complex
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: double-agent-applications
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 95
 section: "The Double-Agent Complex"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Non-tonic double-agent complex"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-agent-complex
 extends: []
@@ -32,7 +26,6 @@ related:
   - double-agent-pitch
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can the double-agent complex appear without tonic function?"
 ---

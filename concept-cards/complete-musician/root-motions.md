@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Root Motions
 slug: root-motions
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 18
 pdf_page: 425
 section: "The Submediant"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
 extends: []
@@ -33,7 +27,6 @@ related:
   - deceptive-motion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three basic root motions in tonal music?"
 ---

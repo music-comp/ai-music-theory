@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval Composition
 slug: interval-composition
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: interval-mechanics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 47
 section: "Definition 2.3.1(A)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "GIS Condition A"
   - "Condition A"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-group-ivls
   - musical-space-s
@@ -37,7 +31,6 @@ related:
   - group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do intervals combine along a path in a GIS?"
   - "What is Condition (A) of the GIS definition?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Bass as Secondary Melody
 slug: bass-as-secondary-melody
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: bass-treatment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 51
 section: "Treatment of the Bass Line"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - melodic bass line
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - accompaniment-function
   - voice-leading-in-accompaniment
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - pedal-point-in-period-construction
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How should the bass line be treated in accompaniment?"
   - "Why is a melodic bass line preferable?"

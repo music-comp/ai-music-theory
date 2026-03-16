@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Septimal Intervals
 slug: septimal-intervals
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 11
 pdf_page: 138
 section: "Septimal Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - 7-limit intervals
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-interval
   - p-limit-tuning
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - exotic-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are septimal intervals?"
   - "What is the septimal minor seventh?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Stacks of Thirds
 slug: stacks-of-thirds
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: construction
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 143
 section: "4.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "third-cycle construction"
   - "tertian scale construction"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - goldilocks-principle
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - stacks-of-fifths
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can scales be constructed from major and minor thirds?"
   - "What is the relationship between third-cycles and the eight important scales?"

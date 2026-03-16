@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cluster Transition
 slug: cluster-transition
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: 270
 section: "Combining Textures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "cluster subtraction"
   - "cluster addition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - textural-transition
   - tone-cluster
@@ -37,7 +31,6 @@ related:
   - combining-textures
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can clusters be used as transitional devices?"
   - "What is cluster subtraction and cluster addition?"

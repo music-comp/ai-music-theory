@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Essential-Accessory Distinction
 slug: essential-accessory-distinction
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical practices
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Scott Burnham"
@@ -17,16 +14,13 @@ chapter_number: 16
 pdf_page: 446
 section: "Reading between the Lines"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "essential vs. subsidiary material"
   - "primary vs. subordinate distinction"
   - "Wesentliches und Beiwerk"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-function
 extends:
@@ -36,7 +30,6 @@ related:
   - vorhang
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Riemann distinguish essential from subsidiary material?"
   - "What is the analytical basis for identifying phrase expansion?"

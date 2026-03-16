@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Metric Modulation
 slug: metric-modulation
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: advanced-meter
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Twentieth-Century Rhythmic Techniques"
 chapter_number: 99
 pdf_page: null
 section: "Supplementary"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - meter
 extends: []
@@ -26,7 +20,6 @@ related:
   - changing-meter
   - asymmetrical-meter
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is metric modulation?"
   - "How does metric modulation create seamless tempo changes?"

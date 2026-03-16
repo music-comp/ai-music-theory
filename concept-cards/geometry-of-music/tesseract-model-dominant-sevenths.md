@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tesseract Model for Dominant Sevenths
 slug: tesseract-model-dominant-sevenths
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: four-note-chord-space
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: 306
 section: "8.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "four-dimensional hypercube"
   - "hypercubic lattice for seventh chords"
   - "4D cube model"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chord-voice-leading
 extends: []
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - cubic-lattice-three-note-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the tesseract and how does it model four-note chord space?"
   - "How do Chopin and Wagner navigate this four-dimensional structure?"

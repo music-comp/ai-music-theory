@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Continuous Upshift
 slug: continuous-upshift
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: compositional strategy
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 148
 section: "Continuous Upshifts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "continuous upshifting"
   - "developmental upshift"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zones
   - upshifting-downshifting
@@ -39,7 +33,6 @@ contrasts_with:
   - departure-return-script
   - continuous-downshift
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the continuous upshift script?"
   - "How does continuous upshift differ from sequential upshift?"

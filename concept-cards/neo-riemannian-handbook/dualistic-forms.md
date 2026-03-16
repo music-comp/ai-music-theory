@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dualistic Forms
 slug: dualistic-forms
 
-# === CLASSIFICATION ===
 category: form
 subcategory: harmonic-form
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Alexander Rehding"
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "dualistic Formenlehre"
   - "dualist theory of form"
   - "symmetric formal synthesis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - triad-of-triads
@@ -38,7 +32,6 @@ related:
   - mediation-principle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a dualistic theory of musical form?"
   - "How does harmonic dualism extend to large-scale formal structure?"

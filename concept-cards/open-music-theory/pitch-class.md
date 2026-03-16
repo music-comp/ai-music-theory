@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch Class
 slug: pitch-class
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch-systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: null
 section: "VIII.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pc"
   - "pitch-class integer"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-vs-pitch-class
 extends: []
@@ -35,7 +29,6 @@ related:
   - interval-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pitch class?"
   - "How are pitch classes represented numerically?"

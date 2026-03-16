@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Garden of Eden Metaphor
 slug: garden-of-eden-metaphor
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-values
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Steven Rings"
@@ -17,16 +14,13 @@ chapter_number: 18
 pdf_page: 494
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Riemann's Garden of Eden"
   - "harmonic Garden metaphor"
   - "tonal Garden of Eden"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - monotonality-principle
 extends: []
@@ -36,7 +30,6 @@ related:
   - tonal-crisis-harmonic-anomaly
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Riemann's Garden of Eden metaphor and what does it reveal?"
   - "How does the metaphor reflect both promise and anxiety in Riemann's project?"

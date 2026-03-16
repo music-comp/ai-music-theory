@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Intervallic Modulation
 slug: intervallic-modulation
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 247
 section: "Modulation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "modulatory interval"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulation
 extends:
@@ -35,7 +29,6 @@ related:
   - root-movement
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the interval of modulation affect the musical result?"
   - "Why should the modulatory interval contrast with prevailing root progression?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Polytonality
 slug: polytonality
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: 247
 section: "Polytonality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
   - tonal-pillars
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - atonality
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is polytonality?"
   - "How does polytonality differ from polychordal writing?"

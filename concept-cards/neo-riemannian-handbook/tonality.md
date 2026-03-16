@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonality
 slug: tonality
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-system
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier, Benjamin Steege, Brian Hyer"
@@ -17,16 +14,13 @@ chapter_number: null
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Tonalitat"
   - tonal system
   - "major-minor key"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
 extends: []
@@ -37,7 +31,6 @@ related:
   - consonance-dissonance-psychological
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is tonality in Riemann's framework?"
   - "How does Riemann's concept of tonality differ from scale-based definitions?"

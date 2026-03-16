@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hexachordal Combinatoriality
 slug: hexachordal-combinatoriality
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,12 +11,9 @@ chapter: "Row Properties"
 chapter_number: 9
 pdf_page: null
 section: "IX.3"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "combinatoriality"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-row
   - aggregate
@@ -28,7 +22,6 @@ related:
   - magic-hexachord
   - all-trichord-row
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is hexachordal combinatoriality?"
   - "What is the difference between semi-combinatorial and all-combinatorial?"

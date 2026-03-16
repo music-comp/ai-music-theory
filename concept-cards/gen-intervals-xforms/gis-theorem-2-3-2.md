@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: GIS Theorem 2.3.2
 slug: gis-theorem-2-3-2
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: core-definitions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 47
 section: "2.3.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - self-interval and inverse-interval theorem
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - gis-condition-a
@@ -36,7 +30,6 @@ related:
   - directed-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the interval function int relate to the group IVLS?"
   - "What is a Generalized Interval System (GIS)?"

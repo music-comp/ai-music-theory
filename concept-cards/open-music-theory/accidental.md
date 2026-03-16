@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Accidental
 slug: accidental
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: null
 section: "Sharps, Flats, and Naturals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch
   - half-step
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - key-signature
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an accidental?"
   - "What do sharps, flats, and naturals do?"

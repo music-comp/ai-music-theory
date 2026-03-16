@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ictus
 slug: ictus
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: rhythmic-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 73
 section: "3.3"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "mensural ictus"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - unfolding-interval-vector
   - gis3-interval
@@ -33,7 +27,6 @@ related:
   - mensural-structure
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "At what point during a piece does the listener first perceive a beat?"
   - "How does intervallic analysis determine the emergence of metric structure?"

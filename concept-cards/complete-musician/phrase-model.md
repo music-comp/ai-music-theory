@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrase Model
 slug: phrase-model
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 280
 section: "Introduction to the Phrase Model"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - T-PD-D-T
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pre-dominant-function
   - cadence-types
@@ -34,7 +28,6 @@ related:
   - phrase-model-within-tonic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do pre-dominant chords lead to the dominant?"
   - "What is a cadence?"

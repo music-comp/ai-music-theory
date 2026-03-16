@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Translation
 slug: translation
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: melody
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 30
 section: "Translations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "horizontal shift"
   - "melodic translation"
   - "rhythmic translation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - geometric-transformations-of-graphs
   - melody
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - transposition
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is translation in music?"
   - "How does musical translation relate to graph transformations?"

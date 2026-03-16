@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Avoiding Parallels from Non-Chord Tones
 slug: parallels-from-ncts
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: rules
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,13 +14,10 @@ chapter_number: 28
 pdf_page: 411
 section: "28.2 Avoiding Objectionable Parallels"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - objectionable-parallels
   - voice-leading-with-ncts
@@ -33,7 +27,6 @@ related:
   - simultaneous-ncts
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do non-chord tones create parallel fifths and octaves?"
   - "How do you prevent NCT-created parallels?"

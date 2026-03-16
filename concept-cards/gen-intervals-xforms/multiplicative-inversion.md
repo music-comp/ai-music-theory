@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Multiplicative Inversion
 slug: multiplicative-inversion
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: rhythmic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 251
 section: "10.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "I_p (durational)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - durational-motive
 extends: []
@@ -34,7 +28,6 @@ related:
   - mozart-k550-development-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is multiplicative inversion of a durational series?"
   - "How do multiplicative and additive inversion compare in the durational domain?"

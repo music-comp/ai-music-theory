@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cross Sections of Chord Space
 slug: cross-sections-of-chord-space
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 100
 section: "3.7-3.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "vertical cross sections"
   - "horizontal slices"
   - "sum-class sections"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - decomposition-into-parallel-contrary
   - two-note-chord-space
@@ -36,7 +30,6 @@ related:
   - individual-t-relatedness
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are cross sections of chord space?"
   - "Why are cross sections useful for analyzing voice leading?"

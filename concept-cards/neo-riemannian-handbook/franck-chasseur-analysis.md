@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Franck Le chasseur maudit Analysis
 slug: franck-chasseur-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-practices
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Robert C. Cook"
@@ -17,15 +14,12 @@ chapter_number: 19
 pdf_page: 513
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - The Accursed Huntsman analysis
   - Franck analysis (Cook)
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - contextual-harmony-analysis
   - xy-transformation-group
@@ -36,7 +30,6 @@ related:
   - analytical-incompleteness
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I apply neo-Riemannian analysis to a chromatic orchestral work?"
   - "How does Cook combine multiple analytical approaches for Franck?"

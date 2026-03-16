@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Submediant as Pre-Dominant
 slug: submediant-as-pre-dominant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 18
 pdf_page: 425
 section: "The Submediant as the Pre-Dominant"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - submediant
   - pre-dominant-function
@@ -33,7 +27,6 @@ related:
   - single-interval-motive
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can vi function as a pre-dominant?"
   - "How does the submediant function as a tonic substitute?"

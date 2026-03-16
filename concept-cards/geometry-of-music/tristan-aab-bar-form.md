@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tristan AAB Bar Form
 slug: tristan-aab-bar-form
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: formal-structure
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 317
 section: "8.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tristan prelude bar form"
   - "AAB voice-leading schema"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tristan-chord-analysis
   - individually-t-related-voice-leadings
@@ -34,7 +28,6 @@ related:
   - generalized-augmented-sixths
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Wagner use AAB form in the Tristan prelude?"
   - "How does the B section relate to the A sections via individual T-relatedness?"

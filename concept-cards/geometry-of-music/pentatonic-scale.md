@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pentatonic Scale
 slug: pentatonic-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-types
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 142
 section: "4.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pentatonic collection"
   - "five-note scale"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - stacks-of-fifths
 extends: []
@@ -34,7 +28,6 @@ related:
   - eight-important-scales
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the pentatonic scale from Tymoczko's perspective?"
   - "Why do pentatonic 'thirds' sound like fourths?"

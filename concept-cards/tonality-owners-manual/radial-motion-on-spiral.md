@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Radial Motion on Spiral
 slug: radial-motion-on-spiral
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 47
 section: "A melodic principle"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - spiral-diagrams-for-chord-space
   - slide-along-spiral
@@ -35,7 +29,6 @@ related:
   - melodic-principle-of-harmony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does radial motion on the spiral diagram produce efficient voice leading?"
 ---

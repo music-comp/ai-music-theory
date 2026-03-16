@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tritone Substitution vs. Diatonic Third Substitution
 slug: tritone-vs-diatonic-substitution
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: substitution-theory
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 381
 section: "10.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "substitution comparison"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tritone-substitution-geometry
 extends: []
@@ -32,7 +26,6 @@ related:
   - diatonic-third-substitution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does tritone substitution relate to classical third substitution?"
   - "What geometric principle unifies these two substitution types?"

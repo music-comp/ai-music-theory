@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dual Simply Transitive Groups
 slug: dual-simply-transitive-groups
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: non-commutative-gis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 282
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "STRANS and STRANS'"
   - "commutant group"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - simply-transitive-group
   - gis-from-simply-transitive-group
@@ -39,7 +33,6 @@ related:
   - interval-preserving-operations-octatonic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are dual simply transitive groups?"
   - "How does a GIS relate to a simply transitive group?"

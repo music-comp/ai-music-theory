@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Cycles
 slug: harmonic-cycles
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 257
 section: "The logical structure of protofunctionality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - oscillatory progressions
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - zeroth-order-properties
 extends: []
@@ -33,7 +27,6 @@ related:
   - fifths-and-steps-arrangement
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are harmonic cycles in protofunctional music?"
   - "How did harmonic cycles lengthen over time?"

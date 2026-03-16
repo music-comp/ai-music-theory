@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Equivalence Relations
 slug: equivalence-relations
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: sets-and-relations
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 14
 section: "Equivalence relations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "equivalence relation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sets-and-number-systems
 extends: []
@@ -35,7 +29,6 @@ related:
   - note-classes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an equivalence relation?"
   - "What are the three properties that define an equivalence relation?"

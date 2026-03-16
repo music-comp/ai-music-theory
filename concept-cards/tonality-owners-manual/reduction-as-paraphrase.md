@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Reduction as Paraphrase
 slug: reduction-as-paraphrase
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: reductive-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 407
 section: "Strategy and reduction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - paraphrase-based reduction
   - speculative reduction
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - melodic-strategy
   - heterogeneous-hierarchy
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - prolongational-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is analytical reduction, and what are its varieties?"
   - "How does reduction as paraphrase differ from Schenkerian reduction?"

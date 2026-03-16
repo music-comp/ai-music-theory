@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Formants
 slug: formants
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: acoustics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 118
 section: "Formants"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "resonant frequency band"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonics-and-overtones
   - timbre-as-harmonic-amplitudes
@@ -35,7 +29,6 @@ related:
   - effect-of-horizontal-stretching-on-pitch
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are formants?"
   - "How do formants differ from harmonics?"

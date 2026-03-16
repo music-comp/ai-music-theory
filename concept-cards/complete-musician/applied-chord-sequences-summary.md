@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Applied-Chord Sequences Summary
 slug: applied-chord-sequences-summary
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: applied chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 24
 pdf_page: 538
 section: "Summary of Diatonic and Applied-chord Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - applied-chord-sequence-d2
   - applied-chord-sequence-d3
@@ -34,7 +28,6 @@ related:
   - writing-applied-chord-sequences
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
 ---

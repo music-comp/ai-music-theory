@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pivot Chord
 slug: pivot-chord
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 247
 section: "Modulation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pivotal chord"
   - "common chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulation
   - tonality
@@ -35,7 +29,6 @@ related:
   - serial-harmony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pivot chord?"
   - "What is the difference between a diatonic and chromatic pivot?"

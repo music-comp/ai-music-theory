@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: V6/5 (First Inversion V7)
 slug: v65-first-inversion-v7
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: inversions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 246
 section: "V6/5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - V six-five
   - first-inversion dominant seventh
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dominant-seventh-chord
   - neighboring-chord
@@ -37,7 +31,6 @@ related:
   - viio6-as-dominant-substitute
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
 ---

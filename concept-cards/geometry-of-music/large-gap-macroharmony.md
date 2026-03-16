@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Large-Gap Macroharmony (3-Gap)
 slug: large-gap-macroharmony
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: macroharmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 174
 section: "5.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "3-gap macroharmony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - macroharmony
   - small-gap-macroharmony
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - small-gap-macroharmony
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes 'small-gap' from 'large-gap' macroharmony?"
   - "Why does the hexatonic scale limit available chord types?"

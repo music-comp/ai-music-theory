@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Dualism in Dissonance Analysis
 slug: harmonic-dualism-in-dissonance
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: harmonic dualism
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 159
 section: "Reduction to a Triadic Subset"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "dualist dissonance theory"
   - "under-seventh theory"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - reduction-strategy
   - harmonic-dualism-critique
@@ -37,7 +31,6 @@ related:
   - hexatonic-poles-in-parsifal
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does harmonic dualism apply to the analysis of half-diminished seventh chords?"
   - "What is the historical context for the under-seventh interpretation?"

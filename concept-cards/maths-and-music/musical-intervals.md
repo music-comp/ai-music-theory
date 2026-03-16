@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Musical Intervals
 slug: musical-intervals
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: frequency
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 14
 section: "Musical Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "named intervals"
   - "keyboard intervals"
   - "tempered intervals"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-and-frequency
   - keyboard-layout
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - interval-notation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an interval in mathematical terms?"
   - "What are the standard named intervals and their semitone values?"

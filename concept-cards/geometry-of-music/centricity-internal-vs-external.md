@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Internal vs. External Centricity
 slug: centricity-internal-vs-external
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: centricity
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 196
 section: "5.7"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "internalism vs externalism"
   - "where does centricity come from?"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - centricity-and-tonicity
   - rootedness
@@ -35,7 +29,6 @@ related:
   - generalized-theory-of-keys
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Where does centricity come from?"
   - "Can any note of any scale be made to sound like a tonic?"

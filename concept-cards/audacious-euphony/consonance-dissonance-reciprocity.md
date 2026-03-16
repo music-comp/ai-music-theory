@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Consonance/Dissonance Reciprocity"
 slug: consonance-dissonance-reciprocity
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: consonance-dissonance-relations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 61
 section: "Consonance/Dissonance Reciprocity"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Reciprocity of consonance and dissonance"
   - "Fluid consonance/dissonance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
   - augmented-triad
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - diatonic-encapsulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can consonant triads subordinate to dissonant ones?"
   - "What is the relationship between consonant and augmented triads?"

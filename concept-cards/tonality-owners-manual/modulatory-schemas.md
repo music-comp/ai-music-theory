@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modulatory Schemas
 slug: modulatory-schemas
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: modulatory-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 376
 section: "Modulatory schemas"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "modulatory grammar"
   - "grammar of modulatory destinations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - key-distance-pitch-class-changing
   - harmonic-cycle-theory
@@ -37,7 +31,6 @@ related:
   - up-and-down-the-ladder
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modulation, and what distinguishes key change from tonicization?"
   - "How do modulatory norms compare to chord-to-chord norms?"

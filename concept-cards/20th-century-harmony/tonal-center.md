@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Center
 slug: tonal-center
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 247
 section: "Tonality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "key center"
   - "pitch center"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - atonality
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a tonal center?"
   - "How can a tonal center be established in twentieth-century music?"

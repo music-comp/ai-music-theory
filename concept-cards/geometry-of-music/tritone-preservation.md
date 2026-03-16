@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tritone Preservation in Substitution
 slug: tritone-preservation
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: interval-geometry
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 379
 section: "10.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tritone invariance"
   - "tritone symmetry"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tritone-substitution-geometry
 extends: []
@@ -33,7 +27,6 @@ related:
   - near-symmetry
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why are tritones preserved under tritone transposition?"
   - "Why are perfect fourths/fifths minimally affected by tritone transposition?"

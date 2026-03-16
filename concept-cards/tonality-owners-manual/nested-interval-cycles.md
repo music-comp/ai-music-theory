@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nested Interval Cycles
 slug: nested-interval-cycles
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 316
 section: "A more principled view"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "musical ouroboros"
   - "nested diatonic cycles"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - descending-thirds-arrangement
 extends:
@@ -36,7 +30,6 @@ related:
   - functional-sequences
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do descending fifths, thirds, and steps relate to each other in functional harmony?"
   - "What is the mathematical structure underlying the descending-thirds model?"

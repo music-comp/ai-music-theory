@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Figured-Bass Pedagogy and Voice-Leading Schemas
 slug: figured-bass-pedagogy
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: pedagogical-tradition
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 256
 section: "7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "keyboard voice-leading gestures"
   - "figured-bass voice-leading schemas"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonfactorizable-voice-leadings
   - three-plus-one-schema
@@ -34,7 +28,6 @@ related:
   - diatonic-chord-lattice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did figured-bass theorists solve the problem of generating all crossing-free voice leadings?"
   - "What are the two basic keyboard gestures for four-voice triadic voice leading?"

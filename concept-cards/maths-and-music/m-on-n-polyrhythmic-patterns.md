@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: M-on-N Polyrhythmic Patterns
 slug: m-on-n-polyrhythmic-patterns
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: number-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 100
 section: "Patterns of m on n in Music"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "m on n patterns"
   - "polyrhythm"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - greatest-common-divisor
   - relatively-prime-integers
@@ -35,7 +29,6 @@ related:
   - cyclic-group-and-generator
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do m-on-n polyrhythmic patterns work mathematically?"
   - "Why does a 3-on-4 pattern take 12 beats to complete?"

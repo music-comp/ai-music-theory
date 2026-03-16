@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Geometry in Analysis
 slug: geometry-in-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: geometric-methods
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 94
 section: "3.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "geometric analysis"
   - "chord space visualization"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-note-chord-space
   - generalized-line-segments
@@ -35,7 +29,6 @@ related:
   - horizontal-vertical-motion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can chord space geometry reveal musical patterns?"
   - "What analytical advantages does geometric visualization offer?"

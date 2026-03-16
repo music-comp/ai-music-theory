@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Plagal Motion
 slug: plagal-motion
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic progressions
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 27
 pdf_page: 616
 section: "Plagal Motions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "plagal cadence"
   - "Hollywood cadence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modal-mixture
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - authentic-cadence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modal mixture?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Relative Transformation (R)
 slug: relative-transformation
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: neo-riemannian-operations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Henry Klumpenhouwer"
@@ -17,17 +14,14 @@ chapter_number: 6
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "R transformation"
   - "Terzwechsel"
   - "Parallele (German)"
   - "relative key change"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
 extends:
@@ -38,7 +32,6 @@ related:
   - tonnetz
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Relative (R) transformation and how does it work?"
   - "Why is R the 'least smooth' of the three PLR operations?"

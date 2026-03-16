@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Triadic Configurations
 slug: triadic-configurations
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: configurations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 96
 section: "Voice exchanges and multiple chord types"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "upper-voice configurations"
   - "hand positions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triadic-circle-of-diatonic-triads
 extends: []
@@ -35,7 +29,6 @@ related:
   - thinking-within-the-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a configuration in the context of voice leading?"
   - "What are the five basic three-voice triadic configurations?"

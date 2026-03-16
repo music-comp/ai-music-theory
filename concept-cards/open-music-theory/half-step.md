@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Half Step
 slug: half-step
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: null
 section: "Half Steps and Whole Steps"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "semitone"
   - "half tone"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch
   - piano-keyboard
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - whole-step
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a half step?"
   - "What is the smallest interval in Western music?"

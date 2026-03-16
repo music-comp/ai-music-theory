@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cadential Six-Four Chord
 slug: cadential-six-four-chord
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: six-four-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 14
 pdf_page: 324
 section: "Accented Six-Four Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - cad 6/4
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - suspension
   - accented-passing-tone
@@ -39,7 +33,6 @@ contrasts_with:
   - passing-six-four-chord
   - arpeggiating-six-four-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cadence?"
   - "How do pre-dominant chords lead to the dominant?"

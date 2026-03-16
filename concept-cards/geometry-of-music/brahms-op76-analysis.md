@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Brahms Op. 76 No. 4 Analysis
 slug: brahms-op76-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: chromatic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 294
 section: "8.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Brahms Intermezzo analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-augmented-sixths
   - individually-t-related-voice-leadings
@@ -35,7 +29,6 @@ related:
   - two-practices-chromaticism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Brahms balance functional and chromatic harmony in Op. 76 No. 4?"
   - "How does the Tristan chord function in Brahms' Intermezzo?"

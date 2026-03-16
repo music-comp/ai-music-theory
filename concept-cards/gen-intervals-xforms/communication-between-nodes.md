@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Communication Between Nodes
 slug: communication-between-nodes
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-foundations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 224
 section: "9.1.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "communication relation"
   - "communicating nodes"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - node-arrow-system
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - arrow-chain
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When do two nodes in a node/arrow system communicate?"
   - "What kind of relation is communication among nodes?"

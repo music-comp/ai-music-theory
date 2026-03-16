@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch-Class Circulation Graph
 slug: pitch-class-circulation
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: macroharmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: 176
 section: "5.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pitch-class circulation"
   - "PC circulation graph"
   - "chromaticism graph"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - macroharmony
 extends: []
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - global-macroharmonic-profile
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can we quantify how 'chromatic' a piece is?"
   - "How fast do pitch classes circulate in a given piece?"

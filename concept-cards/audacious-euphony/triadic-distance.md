@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Triadic Distance
 slug: triadic-distance
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: distance-metrics
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 19
 section: "Three Ways to Calculate Triadic Distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "triadic proximity"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-distance
 extends:
@@ -36,7 +30,6 @@ related:
   - voice-leading-work
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can triadic distance be measured?"
   - "Why do different distance metrics yield different results?"

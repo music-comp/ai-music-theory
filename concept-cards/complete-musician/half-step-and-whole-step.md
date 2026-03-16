@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Half Step and Whole Step
 slug: half-step-and-whole-step
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: intervals
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 1
 pdf_page: 3
 section: "The Division of Musical Space: Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "semitone"
   - "half tone"
   - "whole tone"
   - "step"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-and-pitch-class
 extends: []
@@ -38,7 +32,6 @@ related:
   - interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a half step?"
   - "What is a whole step?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Local Time Unit
 slug: local-time-unit
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "locally referential time-unit"
   - "local beat"
   - "local tempo"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span-gis
   - referential-time-unit-problem
@@ -36,7 +30,6 @@ related:
   - stockhausen-klavierstuck-xi
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a local time unit?"
   - "How do multiple local time units coexist in a texture?"

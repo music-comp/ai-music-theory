@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Suspension Types and Labeling
 slug: suspension-types
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 13
 pdf_page: 302
 section: "Labeling Suspensions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - 9-8 suspension
   - 7-6 suspension
   - 4-3 suspension
   - 2-3 suspension
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - suspension
 extends:
@@ -37,7 +31,6 @@ related:
   - suspension-modifications
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

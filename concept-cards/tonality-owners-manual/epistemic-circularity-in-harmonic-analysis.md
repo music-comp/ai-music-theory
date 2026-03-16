@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Epistemic Circularity in Harmonic Analysis
 slug: epistemic-circularity-in-harmonic-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: epistemic-issues
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 303
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Quinnian skepticism
   - hermeneutic circularity
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - contrapuntal-vs-harmonic-syntax
   - nonharmonic-tone
@@ -35,7 +29,6 @@ related:
   - ambiguous-syntax-in-tonal-music
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is epistemic circularity in harmonic analysis?"
   - "How can circular reasoning in analysis be benign?"

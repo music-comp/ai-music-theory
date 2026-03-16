@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: SNAP System
 slug: snap-system
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 210
 section: "The first practice and the SNAP system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - SNAP
   - "suspensions, neighbors, anticipations, and passing tones"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-tone
 extends: []
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - standardized-second-practice
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the four basic types of nonharmonic tone in Renaissance practice?"
   - "What is the SNAP system?"

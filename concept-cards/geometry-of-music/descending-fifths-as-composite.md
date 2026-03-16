@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Descending Fifths as Composite Progressions
 slug: descending-fifths-as-composite
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 246
 section: "7.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "falling fifths as composite"
   - "factoring fifths into thirds"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - thirds-based-harmonic-grammar
   - circle-of-thirds-harmonic
@@ -36,7 +30,6 @@ related:
   - diatonic-sequences
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why are descending thirds more fundamental than descending fifths?"
   - "How can a falling-fifth progression be decomposed?"

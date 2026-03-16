@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Just Intonation Chromatic Scale
 slug: just-intonation-chromatic-scale
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: just-intonation
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 152
 section: "The Just Intonation Scale"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - 5-limit chromatic scale
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-intonation-scale
 extends:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - pythagorean-chromatic-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the just intonation scale extended to a chromatic scale?"
 ---

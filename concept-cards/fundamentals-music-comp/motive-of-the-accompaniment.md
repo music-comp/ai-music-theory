@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Motive of the Accompaniment
 slug: motive-of-the-accompaniment
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: motivic-organization
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 51
 section: "The Motive of the Accompaniment"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - accompaniment motive
   - motus
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - accompaniment-function
@@ -38,7 +32,6 @@ related:
   - liquidation-of-accompaniment-motive
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the accompaniment organized motivically?"
   - "What is the motive of the accompaniment?"

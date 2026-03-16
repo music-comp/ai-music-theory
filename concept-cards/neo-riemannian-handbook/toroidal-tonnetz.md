@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Toroidal Tonnetz
 slug: toroidal-tonnetz
 
-# === CLASSIFICATION ===
 category: pitch-space
 subcategory: spatial representations of pitch
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Conforming Tonnetz"
   - "tempered Tonnetz"
   - "equal-tempered Tonnetz"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
   - enharmonic-equivalence
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - nonconforming-tonnetz
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the conforming Tonnetz relate to equal temperament?"
   - "What distinguishes the conforming from nonconforming Tonnetz?"

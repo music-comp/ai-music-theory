@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Units in a Ring
 slug: units-in-a-ring
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: rings
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 100
 section: "Units"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "invertible elements"
   - "group of units"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ring
 extends:
@@ -36,7 +30,6 @@ related:
   - greatest-common-divisor
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are units in a ring?"
   - "Which elements of a ring have multiplicative inverses?"

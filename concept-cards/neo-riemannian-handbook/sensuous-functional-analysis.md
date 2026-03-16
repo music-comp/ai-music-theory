@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sensuous-Functional Analysis
 slug: sensuous-functional-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: interpretive-frameworks
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Daniel Harrison"
@@ -17,16 +14,13 @@ chapter_number: 20
 pdf_page: 553
 section: "I. The New Riemann: Same as the Old Riemann?"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - sensuous dimension of harmony
   - functional attitudes
   - Kurthian sensuousness
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - objects-transformations-dichotomy
@@ -37,7 +31,6 @@ related:
   - linking-accumulative-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the sensuous dimension of harmonic experience?"
   - "How do functional attitudes differ from transformational operations?"

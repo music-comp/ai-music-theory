@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modular Diatonic Space
 slug: modular-diatonic-space
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: tonal-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 47
 section: "Example 2.1.4, Section 2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic pitch-class space"
   - "seven-hour clock space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - integers-mod-n
@@ -38,7 +32,6 @@ contrasts_with:
   - pitch-class-space
   - diatonic-pitch-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is diatonic interval structure modeled as a GIS with seven pitch classes?"
   - "What is the interval group for modular diatonic space?"

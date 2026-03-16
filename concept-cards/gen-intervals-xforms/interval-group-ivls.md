@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval Group IVLS
 slug: interval-group-ivls
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: interval-mechanics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 47
 section: "Definition 2.3.1, Section 2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "group of intervals"
   - "interval group"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - group
   - generalized-interval-system
@@ -38,7 +32,6 @@ related:
   - quotient-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is IVLS in a GIS and what algebraic structure must it have?"
   - "What are examples of interval groups for different musical spaces?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Polyphonic Texture
 slug: polyphonic-texture
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: texture
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 138
 section: "Musical Texture"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "polyphony"
   - "contrapuntal texture"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - musical-texture
   - counterpoint
@@ -36,7 +30,6 @@ contrasts_with:
   - monophonic-texture
   - homophonic-texture
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is polyphonic texture?"
 ---

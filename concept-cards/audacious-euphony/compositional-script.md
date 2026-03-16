@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compositional Script
 slug: compositional-script
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: compositional strategy
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 129
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "navigational strategy"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zones
   - cube-dance-graph
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - chromatic-sequences
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I identify a compositional script (neighborhood, upshift, departure-return)?"
   - "What are the three compositional scripts for navigating the triadic universe?"

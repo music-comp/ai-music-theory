@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Durational Motive
 slug: durational-motive
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: rhythmic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 251
 section: "10.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "DM"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-network-definition
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - pitch-motive
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a durational motive?"
   - "How can rhythmic patterns undergo serial transformations?"

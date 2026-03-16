@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "S Transformation (Slide)"
 slug: s-transformation
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: weitzmann-transformations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: 82
 section: "Weitzmann Transformations and N/R Cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Slide transformation"
   - "Terzgleich (same-third)"
   - "Common-third progression"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
 extends: []
@@ -42,7 +36,6 @@ related:
 contrasts_with:
   - h-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes L, P, R, N, and S transformations?"
   - "What is the S (Slide) transformation?"

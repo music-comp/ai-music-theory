@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic Space
 slug: melodic-space
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: multiple-gis-intuitions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 276
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "scalar space"
   - "step space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - multiple-musical-spaces
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - harmonic-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is melodic space?"
   - "How does melodic space differ from harmonic space?"

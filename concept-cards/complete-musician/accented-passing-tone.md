@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Accented Passing Tone
 slug: accented-passing-tone
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 13
 pdf_page: 302
 section: "The Accented Passing Tone"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - APT
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - passing-tone
   - accented-vs-unaccented-dissonance
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - passing-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

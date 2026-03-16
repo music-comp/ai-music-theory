@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrapuntal vs. Harmonic Dualism
 slug: contrapuntal-vs-harmonic-dualism
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: analytical-methodology
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: null
 section: "Sections 3-4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "contrapuntal dualism"
   - "harmonic dualism vs. contrapuntal dualism"
   - "epiphenomenal inversion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inversional-symmetry
   - voice-leading-efficiency
@@ -37,7 +31,6 @@ related:
   - dualistic-equivalence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between contrapuntal and harmonic dualism?"
   - "Is inversional symmetry in chromatic music intentional or epiphenomenal?"

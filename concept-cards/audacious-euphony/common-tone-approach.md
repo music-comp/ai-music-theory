@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Common-Tone Approach
 slug: common-tone-approach
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: distance-metrics
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 19
 section: "Three Ways to Calculate Triadic Distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "common-tone distance"
   - "pitch-class intersection metric"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-distance
 extends:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - root-interval-approach
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the common-tone approach to measuring triadic distance?"
   - "What distinguishes common-tone distance from voice-leading distance?"

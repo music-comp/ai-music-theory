@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interregional Modulation
 slug: interregional-modulation
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: Boretz regions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 156
 section: "Octatonic regions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Boretz-region modulation"
   - "octatonic-region crossing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - boretz-region
   - boretz-group-transformations
@@ -36,7 +30,6 @@ related:
   - tristan-prelude-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is interregional modulation in the context of Boretz regions?"
   - "How does intra-regional motion differ from interregional modulation?"

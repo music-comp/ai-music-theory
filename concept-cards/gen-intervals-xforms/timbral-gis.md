@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Timbral GIS
 slug: timbral-gis
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: timbral-gis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: 91
 section: "4.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "GIS 4.2.1"
   - "spectral GIS"
   - "harmonic-spectrum GIS"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - direct-product-gis
@@ -37,7 +31,6 @@ related:
   - developing-spectra
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can timbral relationships be modeled as a GIS?"
 ---

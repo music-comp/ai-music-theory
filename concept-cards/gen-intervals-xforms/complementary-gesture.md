@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Complementary Gesture
 slug: complementary-gesture
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: interval-transposition-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 188
 section: "7.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "complementary gesture times 2"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nuclear-gesture
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - nuclear-gesture
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the complementary gesture in Lewin's Brahms analysis?"
 ---

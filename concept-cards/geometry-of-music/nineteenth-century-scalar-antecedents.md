@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nineteenth-Century Scalar Antecedents
 slug: nineteenth-century-scalar-antecedents
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: historical-context
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 330
 section: "9.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "antecedents of twentieth-century scalar techniques"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-first-composition
   - scale-first-composition
@@ -34,7 +28,6 @@ related:
   - debussy-des-pas-sur-la-neige-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Did the three scalar techniques originate in the twentieth century?"
   - "What are the nineteenth-century precursors to twentieth-century scalar composition?"

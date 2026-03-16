@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Formal Coherence
 slug: formal-coherence
 
-# === CLASSIFICATION ===
 category: form
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: 270
 section: "Theme and Form Ideas"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "musical coherence"
   - "structural unity"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - thematic-conception
   - thematic-transformation
@@ -36,7 +30,6 @@ related:
   - harmonic-synthesis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is formal coherence achieved in twentieth-century music?"
   - "What role does aural retention play in coherence?"

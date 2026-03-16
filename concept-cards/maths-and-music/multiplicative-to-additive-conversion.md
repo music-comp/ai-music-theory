@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Multiplicative-to-Additive Conversion
 slug: multiplicative-to-additive-conversion
 
-# === CLASSIFICATION ===
 category: logarithms-and-measurement
 subcategory: conversion
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 66
 section: "Converting Intervals from Multiplicative to Additive Measurement"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - ratio to cents conversion
   - interval conversion formulas
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - logarithm-properties
   - change-of-base-formula
@@ -38,7 +32,6 @@ related:
   - group-of-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you convert a frequency ratio to cents, semitones, or octaves?"
   - "How do logarithms convert multiplicative intervals to additive measurements?"

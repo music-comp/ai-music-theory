@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: RICH Transformation
 slug: rich-transformation
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: serial-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 206
 section: "8.2.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "RI-chaining operation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang-representation
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - tch-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I apply RI-chaining (RICH) to a series?"
   - "What distinguishes RICH from TCH?"

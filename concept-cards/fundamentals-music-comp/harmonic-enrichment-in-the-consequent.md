@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Enrichment in the Consequent
 slug: harmonic-enrichment-in-the-consequent
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: period-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 24
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - harmonic variation in the consequent
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - antecedent-of-the-period
   - consequent-of-the-period
@@ -36,7 +30,6 @@ related:
   - romantic-harmonic-complexity-in-periods
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write a consequent that completes a period?"
   - "How does the consequent's harmony differ from the antecedent's?"

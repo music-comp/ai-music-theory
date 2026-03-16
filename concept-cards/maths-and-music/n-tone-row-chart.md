@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: N-Tone Row Chart
 slug: n-tone-row-chart
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: serialism
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Creating an n-Tone Row Chart Using Modular Arithmetic"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - generalized row chart
   - n-tone serial chart
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modular-arithmetic
   - prime-row
@@ -38,7 +32,6 @@ related:
   - modular-clock
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is a row chart constructed for an arbitrary n-chromatic scale?"
   - "How does the formula entry(i,j) = a_j - a_i generalize to any n?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hybrid Spatial Model
 slug: hybrid-spatial-model
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical frameworks and methods
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Cohn's hybrid model"
   - "pragmatic solution"
   - "integrated tonal-transformational model"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
   - tonal-pitch-space
@@ -39,7 +33,6 @@ related:
   - regional-indeterminacy
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can the Tonnetz and Tonal Pitch Space be used together?"
   - "What is Cohn's pragmatic solution for integrating these models?"

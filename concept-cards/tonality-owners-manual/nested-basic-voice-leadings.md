@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nested Basic Voice Leadings
 slug: nested-basic-voice-leadings
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: transformational-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 357
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - hierarchically self-similar transformations
   - nested voice leadings
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - basic-voice-leading-of-scales
@@ -36,7 +30,6 @@ related:
   - nested-interval-cycles
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are nested basic voice leadings?"
   - "How do chordal and scalar basic voice leadings interact in Beethoven's Ninth?"

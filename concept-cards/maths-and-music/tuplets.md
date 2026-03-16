@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tuplets
 slug: tuplets
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: duration
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,17 +14,14 @@ chapter_number: 2
 pdf_page: 30
 section: "Tuplets"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "tuplet"
   - "triplet"
   - "quintuplet"
   - "k-tuplet"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - note-durational-values
 extends:
@@ -38,7 +32,6 @@ related:
   - swing-rhythm
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a tuplet and how is it constructed?"
   - "How do you divide a note into a non-power-of-2 number of equal parts?"

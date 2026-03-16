@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "GIS1 (Octatonic GIS with STRANS1)"
 slug: gis1-octatonic
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: octatonic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 282
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - GIS1
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - strans1-group
   - gis-from-simply-transitive-group
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - gis2-octatonic
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is GIS1 for the octatonic collection?"
   - "How do twelve-tone inversions become octatonic transpositions?"

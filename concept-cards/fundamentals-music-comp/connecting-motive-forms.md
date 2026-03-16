@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Connecting Motive-Forms
 slug: connecting-motive-forms
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: phrase-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 18
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - motive-form connection
   - connecting motives
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - variation
@@ -41,7 +35,6 @@ related:
   - compass-and-register
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct a phrase from a motive?"
   - "What principles govern the connection of motive-forms?"

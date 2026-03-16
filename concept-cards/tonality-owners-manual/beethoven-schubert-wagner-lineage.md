@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Beethoven-Schubert-Wagner Lineage
 slug: beethoven-schubert-wagner-lineage
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: compositional-lineage
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 504
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - dissolution of the classical consensus
   - Beethoven to Wagner trajectory
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - the-ludwig
   - contrary-motion-counterpoint
@@ -37,7 +31,6 @@ related:
   - form-defining-parameters
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did Schubert continue and transform Beethoven's schematic language?"
   - "How did Wagner extend Beethovenian techniques while dissolving classical conventions?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Complementary Repetition
 slug: complementary-repetition
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: theme-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 20
 section: "The Dominant Form: The Complementary Repetition"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "dux and comes"
   - tonic-dominant repetition
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - sentence-structure
@@ -39,7 +33,6 @@ related:
   - control-of-variety
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I build a sentence opening (presentation)?"
   - "What is complementary repetition?"

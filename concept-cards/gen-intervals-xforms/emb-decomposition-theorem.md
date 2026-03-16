@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: EMB Decomposition Theorem
 slug: emb-decomposition-theorem
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: embedding-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: "5.3.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 5.3.5.2"
   - EMB factorization
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - emb-function
   - emb-probability
@@ -36,7 +30,6 @@ related:
   - m-class-vector
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can EMB values be decomposed through intermediate set classes?"
 ---

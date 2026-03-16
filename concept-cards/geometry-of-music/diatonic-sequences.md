@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic Sequences
 slug: diatonic-sequences
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: sequential-tonality
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 256
 section: "7.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tonal sequences"
   - "diatonic sequential patterns"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - circle-of-thirds-harmonic
   - strong-vs-weak-progressions
@@ -36,7 +30,6 @@ related:
   - down-a-third-up-a-step-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are diatonic sequences organized by the circle of thirds?"
   - "Why is there a bias toward descending-thirds motion in sequences?"

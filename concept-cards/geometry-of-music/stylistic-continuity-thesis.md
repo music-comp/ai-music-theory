@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Stylistic Continuity Thesis
 slug: stylistic-continuity-thesis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: historical-framework
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 213
 section: "6.1–6.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "continuity thesis"
   - "common thread argument"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - extended-common-practice
   - five-components-of-tonality
@@ -34,7 +28,6 @@ related:
   - compositional-opportunism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Is there a common thread running through Western tonal music?"
   - "How do different historical periods of Western music relate?"

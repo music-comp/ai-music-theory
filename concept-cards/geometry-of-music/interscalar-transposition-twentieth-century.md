@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interscalar Transposition in Twentieth-Century Music
 slug: interscalar-transposition-twentieth-century
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: transposition-technique
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 335
 section: "9.2.2, 9.3.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "interscalar transposition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interscalar-interval-matrix
 extends:
@@ -34,7 +28,6 @@ related:
   - janacek-overgrown-path-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is interscalar transposition used in twentieth-century music?"
   - "How can music shift between different scale types while preserving contour?"

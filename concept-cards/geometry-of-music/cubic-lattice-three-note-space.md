@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cubic Lattice in Three-Note Space
 slug: cubic-lattice-three-note-space
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-space
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 299
 section: "8.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "triadic cubic geometry"
   - "three-note chord space center"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - major-third-system
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - tesseract-model-dominant-sevenths
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are major triads arranged at the center of three-note chord space?"
   - "How do Schubert's chromatic sequences navigate this geometry?"

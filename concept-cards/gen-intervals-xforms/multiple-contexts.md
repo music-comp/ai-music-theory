@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Multiple Contexts for Set Articulation
 slug: multiple-contexts
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: analytical-methodology
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: "Methodological discussion following Figure 5.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "context-dependent articulation"
   - "multiple hearings"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ifunc
   - transposition
@@ -36,7 +30,6 @@ related:
   - analytical-context
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can a musical set have different valid structures in different analytical contexts?"
   - "Why is it wrong to ask what a set 'really is' independent of context?"

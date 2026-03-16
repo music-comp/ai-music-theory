@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Palindromic Voice Leading
 slug: palindromic-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: structural patterns
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 138
 section: "Departure -> Return Scripts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "voice-level palindrome"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - departure-return-script
   - upshifting-downshifting
@@ -35,7 +29,6 @@ related:
   - liszt-kyrie-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens to individual voices when a triadic progression is reversed?"
   - "At what levels can palindromic structure exist?"

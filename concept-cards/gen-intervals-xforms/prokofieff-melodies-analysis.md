@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Prokofieff Melodies Op.35 Analysis
 slug: prokofieff-melodies-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: twentieth-century-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 251
 section: "10.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-network-definition
   - inversion-operation
@@ -35,7 +29,6 @@ related:
   - klang-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Lewin analyze Prokofieff's Melodies op. 35?"
   - "How can pitch-class inversions explain cadential substitutions?"

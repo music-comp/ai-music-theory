@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Inversion Centers Progression
 slug: inversion-centers-progression
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: twentieth-century-analysis
 tier: advanced
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -14,11 +11,8 @@ chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
 section: "10.3"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inversion-operation
 extends: []
@@ -26,7 +20,6 @@ related:
   - prokofieff-melodies-analysis
   - isography
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do inversion centers progress in the Prokofieff analysis?"
   - "How can melodic chromatic relations generate harmonic organization?"

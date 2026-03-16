@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Variante (Mode Change)
 slug: variante
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Brian Hyer"
@@ -17,17 +14,14 @@ chapter_number: 3
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - variant
   - mode change
   - Tv (tonic variant)
   - parallel (English usage)
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - harmonic-function
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - parallelklang
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do the three tone-relations (Parallele, Variante, Leittonwechsel) work?"
   - "What must I know before understanding neo-Riemannian operations?"

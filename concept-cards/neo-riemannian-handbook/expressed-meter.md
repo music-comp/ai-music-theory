@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Expressed Meter
 slug: expressed-meter
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric theory
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "William E. Caplin"
@@ -17,15 +14,12 @@ chapter_number: 15
 pdf_page: 418
 section: "Expressed Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ausgedr\xFCckter Takt"
   - "musical content meter"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - notated-meter
 extends: []
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - notated-meter
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes Riemann's metric theory from conventional metric analysis?"
   - "How do listeners perceive meter without seeing the score?"

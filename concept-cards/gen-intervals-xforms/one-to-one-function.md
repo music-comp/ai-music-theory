@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: One-to-One Function
 slug: one-to-one-function
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: functions
 tier: foundational
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 32
 section: "1.2.6.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - 1-to-1 function
   - injection
   - injective function
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - function
 extends:
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - onto-function
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What mathematical concepts must I know before understanding GIS?"
 ---

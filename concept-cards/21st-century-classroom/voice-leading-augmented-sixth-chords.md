@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading Augmented Sixth Chords
 slug: voice-leading-augmented-sixth-chords
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: chromatic
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 29
 pdf_page: 419
 section: "29.4 Voice Leading Augmented Sixth Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "+6 voice leading"
   - "augmented sixth resolution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-sixth-chords
   - voice-leading-definition
@@ -35,7 +29,6 @@ related:
   - voice-leading-secondary-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does #4 resolve in augmented sixth chords?"
   - "What is the exception when an augmented sixth resolves to V7?"

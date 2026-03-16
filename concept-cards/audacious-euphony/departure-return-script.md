@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Departure-Return Script"
 slug: departure-return-script
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: compositional strategy
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 138
 section: "Departure -> Return Scripts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "path-reversal script"
   - "downshift/upshift complementarity"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zones
   - upshifting-downshifting
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - continuous-upshift
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I identify a compositional script (neighborhood, upshift, departure-return)?"
   - "How does the departure-return script generalize I-V-I?"

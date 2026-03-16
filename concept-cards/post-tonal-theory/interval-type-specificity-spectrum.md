@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval-Type Specificity Spectrum
 slug: interval-type-specificity-spectrum
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval types
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 29
 section: "1.10 Interval Class"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - concrete to abstract interval hierarchy
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - four-interval-types
 extends:
@@ -36,7 +30,6 @@ related:
   - interval-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What information is lost at each step from opi to ic?"
   - "How do I choose which interval type to use?"

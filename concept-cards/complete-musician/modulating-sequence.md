@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modulating Sequence
 slug: modulating-sequence
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: modulation
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 25
 pdf_page: 563
 section: "The Sequence as a Tool in Modulation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-sequences
   - modulation
@@ -33,7 +27,6 @@ related:
   - pivot-area
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I modulate to a closely related key?"
 ---

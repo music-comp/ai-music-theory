@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch-Class Sum
 slug: pitch-class-sum
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: voice-leading zones
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 101
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pc sum"
   - "voice-leading zone index"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zone
 extends: []
@@ -34,7 +28,6 @@ related:
   - augmented-triad-as-axis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is a chord's voice-leading zone determined?"
   - "How do you calculate the pitch-class sum of a triad?"

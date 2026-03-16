@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice-Leading Efficiency Principle
 slug: voice-leading-efficiency-principle
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-methodology
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Steven Rings"
@@ -17,16 +14,13 @@ chapter_number: 18
 pdf_page: 489
 section: "II"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "voice-leading parsimony principle"
   - "neo-Riemannian voice-leading analysis"
   - "VL efficiency"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dvls-avls
 extends: []
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - monotonality-principle
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the voice-leading efficiency principle in neo-Riemannian analysis?"
   - "How does AVLS = 2 define a Weitzmann region?"

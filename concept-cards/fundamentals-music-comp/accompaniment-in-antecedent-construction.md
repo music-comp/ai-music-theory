@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Accompaniment in Antecedent Construction
 slug: accompaniment-in-antecedent-construction
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: thematic-integration
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 22
 section: "Construction of the Antecedent"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - antecedent-of-the-period
@@ -37,7 +31,6 @@ related:
   - semi-contrapuntal-and-quasi-contrapuntal-treatment
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write an accompaniment for a theme?"
   - "What accompaniment features should be used from the start of composition?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seventh Chord Spaces
 slug: seventh-chord-spaces
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: chord relationships
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: 382
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "tetrachordal voice-leading spaces"
   - "seventh chord voice-leading networks"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - doppelklaenge
   - neo-riemannian-operations
@@ -38,7 +32,6 @@ related:
   - dvls-avls
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can neo-Riemannian analysis extend beyond triads to seventh chords?"
   - "What voice-leading spaces exist for tetrachordal sonorities?"

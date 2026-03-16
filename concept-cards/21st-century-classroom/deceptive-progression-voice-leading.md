@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Deceptive Progression Voice Leading
 slug: deceptive-progression-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 26
 pdf_page: 393
 section: "26.7 Voice Leading Root Position Triads in Four Parts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "V-vi voice leading"
   - "V-VI voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-by-bass-interval
   - leading-tone
@@ -35,7 +29,6 @@ related:
   - voice-leading-borrowed-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you voice lead the deceptive progression?"
   - "Why does the deceptive progression result in a doubled third?"

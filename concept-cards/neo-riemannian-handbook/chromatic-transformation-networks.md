@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Transformation Networks
 slug: chromatic-transformation-networks
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: transformational-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "transformation networks"
   - "triadic transformation networks"
   - "neo-Riemannian networks"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
   - neo-riemannian-operations
@@ -38,7 +32,6 @@ related:
   - combinatorial-group-theory
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are chromatic transformation networks and how are they used analytically?"
   - "How do transformation networks relate to the Tonnetz?"

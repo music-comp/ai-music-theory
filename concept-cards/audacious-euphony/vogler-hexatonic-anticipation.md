@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Vogler's Hexatonic Anticipation"
 slug: vogler-hexatonic-anticipation
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: eighteenth-century-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 62
 section: "The Historical Emergence of Augmented Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Vogler's Handbuch progression"
   - "Vogler's augmented triad reinterpretation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad
   - mehrdeutigkeit
@@ -37,7 +31,6 @@ related:
   - weitzmann-treatise
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Who first explored the augmented triad's enharmonic potential?"
   - "How does Vogler's 1802 progression anticipate hexatonic cycles?"

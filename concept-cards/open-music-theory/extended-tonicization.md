@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Extended Tonicization
 slug: extended-tonicization
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 17
 pdf_page: null
 section: "Tonicization versus modulation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "prolonged tonicization"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonicization
   - modulation
@@ -34,7 +28,6 @@ related:
   - pivot-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is extended tonicization?"
   - "How does extended tonicization differ from both tonicization and modulation?"

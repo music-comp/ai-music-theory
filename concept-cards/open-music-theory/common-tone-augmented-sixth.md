@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Common-Tone Augmented Sixth Chord
 slug: common-tone-augmented-sixth
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: embellishing-chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: null
 section: "V.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "CT+6"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-sixth-chords
   - neighbor-tone
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - augmented-sixth-chords
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does CT+6 differ from a functional Ger+6?"
   - "What is the relationship between CTo7 and CT+6?"

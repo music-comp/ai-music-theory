@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parallel Perfect Intervals Prohibition
 slug: parallel-perfect-intervals-prohibition
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: voice-leading-rules
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 228
 section: "6.3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "forbidden parallels"
   - "prohibition on parallel fifths and octaves"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - perfect-vs-imperfect-consonances
   - renaissance-triadic-harmony
@@ -35,7 +29,6 @@ related:
   - extended-common-practice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why are parallel fifths and octaves prohibited?"
   - "Does the prohibition reflect acoustic or structural properties?"

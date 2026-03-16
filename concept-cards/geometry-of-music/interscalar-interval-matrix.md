@@ -1,31 +1,25 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interscalar Interval Matrix
 slug: interscalar-interval-matrix
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: formal-mathematics
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
 chapter: "Appendix D: The Interscalar Interval Matrix"
-chapter_number: appendix-d
+chapter_number: null
 pdf_page: 436
 section: "Appendix D"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ISI matrix"
   - "scalar interval matrix"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interscalar-transposition-twentieth-century
 extends: []
@@ -33,7 +27,6 @@ related:
   - chord-space-formal-construction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an interscalar interval matrix?"
   - "How can you find the most efficient voice leading between any two chord types?"

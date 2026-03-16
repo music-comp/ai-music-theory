@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Idea Level
 slug: idea-level
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: null
 section: "The Idea Level, the Phrase, and Segmentation Analysis"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "idea"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - formal-hierarchy
 extends: []
@@ -35,7 +29,6 @@ related:
   - basic-idea
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the idea level in formal hierarchy?"
   - "How long is a typical idea?"

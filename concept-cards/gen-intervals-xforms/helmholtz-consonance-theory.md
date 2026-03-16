@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Helmholtz Consonance Theory
 slug: helmholtz-consonance-theory
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: historical-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 276
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Helmholtz vertical-interval theory"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - multiple-musical-spaces
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - rameau-harmonic-theory
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Helmholtz's consonance theory differ from Rameau's?"
   - "What does vertical interval content analysis imply about chord positions?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Metric Freedom in Song
 slug: metric-freedom-in-song
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: phrase-rhythm
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Paul Berry"
@@ -17,16 +14,13 @@ chapter_number: 17
 pdf_page: 463
 section: "Metric Freedoms in Brahms's Songs"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Taktfreiheiten
   - "Die Taktfreiheiten in Brahms' Liedern"
   - metric irregularity in vocal music
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - expressed-meter
   - normative-analysis
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - hierarchical-metric-organization
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are metric freedoms in Brahms's songs?"
   - "How does Riemann reconcile metric irregularity with his normative metric theory?"

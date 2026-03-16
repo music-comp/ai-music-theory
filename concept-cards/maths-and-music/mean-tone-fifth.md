@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mean-Tone Fifth
 slug: mean-tone-fifth
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: mean-tone
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 152
 section: "The Classical Mean-Tone Scale"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - quarter-comma meantone fifth
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-major-third
   - just-fifth
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - just-fifth
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the mean-tone fifth?"
   - "How is the mean-tone fifth related to the just major third?"

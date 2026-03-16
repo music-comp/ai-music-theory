@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Beethoven Symphony No. 1 Analysis
 slug: beethoven-symphony-no-1-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: interval-transposition-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 188
 section: "7.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - normative-network
   - cadence-graph
@@ -33,7 +27,6 @@ related:
   - fundamental-bass-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can different passages realize the same abstract harmonic gesture?"
   - "What alternative does transformational theory offer to parody-based criticism?"

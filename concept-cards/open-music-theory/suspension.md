@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Suspension
 slug: suspension
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: null
 section: "The Suspension"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "SUS"
   - "prepared dissonance"
   - "accented dissonance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonance
   - dissonance-in-counterpoint
@@ -42,7 +36,6 @@ contrasts_with:
   - retardation
   - anticipation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three parts of a suspension?"
   - "What suspension types are available above and below the cantus?"

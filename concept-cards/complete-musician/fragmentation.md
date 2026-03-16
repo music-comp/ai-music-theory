@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fragmentation
 slug: fragmentation
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 16
 pdf_page: 364
 section: "Motivic Transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "motivic fragmentation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - augmentation-and-diminution
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is fragmentation in motivic analysis?"
   - "How does fragmentation generate musical momentum?"

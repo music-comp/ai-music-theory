@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Combination Table of H-Group and W-Group Operations"
 slug: combination-table
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: systematic classification
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 109
 section: "Chromatic Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Table 5.1"
   - "H/W combination table"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - h-group-transformations
   - w-group-transformations
@@ -38,7 +32,6 @@ related:
   - h-w-group-crosspollination
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Which transformation pairs generate which transposition intervals?"
   - "How many distinct chromatic sequence types exist?"

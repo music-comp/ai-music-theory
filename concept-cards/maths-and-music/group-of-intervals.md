@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Group of Intervals
 slug: group-of-intervals
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: groups
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 82
 section: "The Group of Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - interval group
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - group
   - isomorphism
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - group-of-modular-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do musical intervals form a group?"
   - "What is the relationship between additive and multiplicative interval measurements as groups?"

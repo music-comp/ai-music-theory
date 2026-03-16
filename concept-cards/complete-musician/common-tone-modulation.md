@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Common-Tone Modulation
 slug: common-tone-modulation
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: modulation
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 28
 pdf_page: 637
 section: "Chromatic Common-Tone Modulations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chromatic common-tone modulation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-modulation
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - chromatic-pivot-chord-modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I modulate to a closely related key?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
-concept: "So What" Chord
+concept: 'So What Chord'
 slug: so-what-chord
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-voicings
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 375
 section: "10.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "So What voicing"
   - "three fourths and a third"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - quartal-voicings
 extends: []
@@ -34,7 +28,6 @@ related:
   - ii-v-i-jazz-progression
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the 'So What' chord?"
   - "How does the 'So What' chord relate to the pentatonic scale?"

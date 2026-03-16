@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Note Durational Values
 slug: note-durational-values
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: duration
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 30
 section: "Duration of Notes"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "note values"
   - "durational notes"
   - "note durations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - beats-and-tempo
 extends: []
@@ -39,7 +33,6 @@ related:
   - rests
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the system of note durations organized?"
   - "What determines whether a notehead is filled or unfilled?"

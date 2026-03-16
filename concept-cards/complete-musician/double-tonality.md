@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Double Tonality
 slug: double-tonality
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: new harmonic tendencies
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 34
 pdf_page: 790
 section: "Double Tonality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "dual tonality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonal-ambiguity
 extends:
@@ -34,7 +28,6 @@ related:
   - reciprocal-process
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is double tonality?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Omnibus Progression
 slug: omnibus-progression
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: sequential templates
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 156
 section: "Circumnavigating the Tristan-Genus Universe"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "devil's mill"
   - "T3 seventh-chord sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - boretz-group-transformations
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - cube-dance-circumnavigation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the omnibus progression?"
   - "Why does the omnibus produce balanced (non-circumnavigatory) voice leading?"

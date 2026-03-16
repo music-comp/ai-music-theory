@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic Dyad Circle
 slug: diatonic-dyad-circle
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 96
 section: "The imperfect system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "2-in-7 spiral diagram"
   - "dyadic spiral"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -37,7 +31,6 @@ contrasts_with:
   - triadic-circle-of-diatonic-triads
   - seventh-chord-circle
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a spiral diagram, and what relationships does it encode?"
   - "How are diatonic dyads related geometrically?"

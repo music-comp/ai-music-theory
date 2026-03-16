@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Canonical Groups in Octatonic Analysis
 slug: canonical-groups-octatonic
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: octatonic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 282
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - strans1-group
   - strans2-group
@@ -36,7 +30,6 @@ related:
   - gis2-octatonic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do STRANS1 and STRANS2 serve as canonical groups for octatonic analysis?"
 ---

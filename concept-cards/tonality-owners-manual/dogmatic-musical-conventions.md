@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dogmatic Musical Conventions
 slug: dogmatic-musical-conventions
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: epistemology-of-music
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 1
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - dogmatic knowledge
   - unmotivated musical conventions
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - implicit-musical-knowledge
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are dogmatic musical conventions?"
   - "How do we distinguish genuine musical regularities from unmotivated rules?"

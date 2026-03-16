@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sentence Form and Thematic Parallelism
 slug: sentence-form-and-thematic-parallelism
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-structure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 444
 section: "Grouping, melody, harmony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - sentence-form double transposition
   - thematic parallelism in sentence form
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-transposition
   - basic-voice-leading
@@ -37,7 +31,6 @@ related:
   - contrary-motion-themes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does double transposition produce the sentence form's I-V / V-I default?"
   - "Why do sentence-form melodies tend to ascend by step along a descending chordal background?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrase Contraction
 slug: phrase-contraction
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: null
 section: "Contraction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "contraction"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - phrase-expansion
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is phrase contraction?"
   - "How does a contracted phrase typically feel?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Shifting Tonality
 slug: shifting-tonality
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 247
 section: "Modulation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "displaced tonality"
   - "wandering tonality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulation
   - tonal-gravity
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is shifting tonality?"
   - "How does shifting tonality differ from modulation?"

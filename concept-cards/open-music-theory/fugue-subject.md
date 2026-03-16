@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fugue Subject
 slug: fugue-subject
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: fugue
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: null
 section: "Subject"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "fugue theme"
   - "dux"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - counterpoint
 extends: []
@@ -35,7 +29,6 @@ related:
   - fugal-exposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a fugue subject and what are its structural parts?"
   - "What character types can a fugue subject have?"

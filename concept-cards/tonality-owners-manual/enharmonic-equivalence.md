@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Enharmonic Equivalence
 slug: enharmonic-equivalence
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: enharmonicism
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 366
 section: "Enharmonicism and loops in scale space"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "enharmonic reinterpretation"
   - "enharmonic spelling"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - key-distance-pitch-class-changing
 extends: []
@@ -34,7 +28,6 @@ related:
   - chromatic-vs-diatonic-perspective
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does enharmonic spelling signify in a fixed chromatic universe?"
   - "How does enharmonic equivalence relate to loops in scale space?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Anacrusis
 slug: anacrusis
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric-organization
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 33
 section: "Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "upbeat"
   - "pickup"
   - "auftakt"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - meter
 extends: []
@@ -34,7 +28,6 @@ related:
   - accent-types
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an anacrusis?"
 ---

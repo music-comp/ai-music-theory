@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Complementary Rhythm
 slug: complementary-rhythm
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: accompaniment-types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 51
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - accompaniment-function
   - motive-of-the-accompaniment
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - contrapuntal-treatment-in-accompaniment
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is complementary rhythm?"
   - "How does complementary rhythm differ from counterpoint?"

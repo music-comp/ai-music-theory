@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Range, Tessitura, and Ambitus
 slug: range-and-tessitura
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 183
 section: "Texture and Register"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - vocal range
   - optimal range
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - four-voice-texture-satb
 extends: []
@@ -34,7 +28,6 @@ related:
   - spacing-and-voicing
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write a four-voice (SATB) chorale?"
 ---

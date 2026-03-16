@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Exponential Notation in a Group
 slug: exponential-notation-in-a-group
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: groups
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Exponential Notation in a Group"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - group exponentiation
   - iterated composition
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - group
 extends:
@@ -36,7 +30,6 @@ related:
   - modular-arithmetic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does x^n mean in a group?"
   - "What are the rules of exponents in a group?"

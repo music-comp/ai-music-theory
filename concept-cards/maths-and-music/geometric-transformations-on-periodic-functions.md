@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Geometric Transformations on Periodic Functions
 slug: geometric-transformations-on-periodic-functions
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: periodic-functions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 118
 section: "Effect of Shifting and Stretching on Periodicity"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-functions
   - frequency-and-period
@@ -34,7 +28,6 @@ related:
   - timbre
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do shifts and stretches affect the period of a function?"
   - "Which transformations change pitch and which do not?"

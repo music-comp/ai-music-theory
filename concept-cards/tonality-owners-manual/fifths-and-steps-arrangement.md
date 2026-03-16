@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fifths-and-Steps Arrangement
 slug: fifths-and-steps-arrangement
 
-# === CLASSIFICATION ===
 category: schema
 subcategory: compositional-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 257
 section: "The logical structure of protofunctionality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - steps-and-fifths defaults
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-cycles
 extends: []
@@ -34,7 +28,6 @@ related:
   - fenaroli-schema
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the fifths-and-steps arrangement?"
   - "How does it ground galant schemas in triadic geometry?"

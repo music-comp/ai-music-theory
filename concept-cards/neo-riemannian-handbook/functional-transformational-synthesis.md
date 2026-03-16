@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Functional-Transformational Synthesis
 slug: functional-transformational-synthesis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: interpretive-frameworks
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Daniel Harrison"
@@ -17,16 +14,13 @@ chapter_number: 20
 pdf_page: 549
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - function-transformation reconciliation
   - sensuous-energetic synthesis
   - hybrid analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - objects-transformations-dichotomy
   - harrisonian-functional-discharge
@@ -39,7 +33,6 @@ related:
   - absolute-progression-modal-chromaticism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes functional harmony from transformational harmony?"
   - "How can functional and transformational approaches be reconciled?"

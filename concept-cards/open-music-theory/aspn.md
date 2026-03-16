@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "American Standard Pitch Notation (ASPN)"
 slug: aspn
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "scientific pitch notation"
   - "SPN"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch
   - octave-equivalence
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - pitch-class
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is ASPN?"
   - "How do you label specific pitches in ASPN?"

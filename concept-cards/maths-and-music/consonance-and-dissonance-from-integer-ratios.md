@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Consonance and Dissonance from Integer Ratios
 slug: consonance-and-dissonance-from-integer-ratios
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: integer-ratios
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 110
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - keyboard-approximation-of-integer-ratios
   - prime-interval-personality
@@ -34,7 +28,6 @@ related:
   - in-the-cracks-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do integer ratios relate to consonance and dissonance?"
   - "Why are small-integer ratios more consonant?"

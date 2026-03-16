@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ludwig Variants
 slug: ludwig-variants
 
-# === CLASSIFICATION ===
 category: schema
 subcategory: beethoven-schemas
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 459
 section: "Meet the Ludwig"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - Ludwig classification
   - Ludwig types
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - the-ludwig
   - minor-third-voice-leading-symmetry
@@ -37,7 +31,6 @@ related:
   - schematic-vocabulary-in-beethoven
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the different types of Ludwig schema?"
   - "How do octave-focused and third-focused Ludwig units differ?"

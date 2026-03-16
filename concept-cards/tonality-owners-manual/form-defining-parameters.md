@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Form-Defining Parameters
 slug: form-defining-parameters
 
-# === CLASSIFICATION ===
 category: form
 subcategory: parametric-form
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 451
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - parametric formal articulation
   - rhythm and register as form
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - anti-melodic-impulse
 extends: []
@@ -35,7 +29,6 @@ related:
   - standing-on-the-dominant
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Beethoven use rhythm and register to define form?"
   - "Why does Beethoven avoid conventional formal markers like the medial caesura?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Consonant Weak-Beat Patterns
 slug: consonant-weak-beat-patterns
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: species-counterpoint
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: null
 section: "Consonant weak beats"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - second-species
 extends: []
@@ -31,7 +25,6 @@ related:
   - dissonant-passing-tone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the seven types of consonant weak-beat patterns in second species?"
 ---

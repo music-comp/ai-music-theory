@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Musical Classification as Information Discarding
 slug: musical-classification-as-information-discarding
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: formalism
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "progressive abstraction"
   - "classification by symmetry"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-musical-object
   - optic-symmetries
@@ -37,7 +31,6 @@ related:
   - set-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does musical classification work?"
   - "What are OPTIC symmetries?"

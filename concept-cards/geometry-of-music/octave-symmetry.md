@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octave Symmetry (O)
 slug: octave-symmetry
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: symmetry
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 46
 section: "2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "octave equivalence"
   - "O symmetry"
   - "registral inversion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-musical-object
   - pitch-space
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - transposition-symmetry
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are OPTIC symmetries?"
   - "What is octave equivalence?"

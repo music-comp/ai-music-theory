@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Whole-Tone Scale from N/R Cycle
 slug: whole-tone-scale-from-nr-cycle
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: scale-emergence
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 81
 section: "Weitzmann Transformations and N/R Cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "N/R cycle whole-tone emergence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nr-cycle
 extends: []
@@ -33,7 +27,6 @@ related:
   - weitzmann-region
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do whole-tone scales emerge from N/R cycles?"
 ---

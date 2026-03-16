@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Enharmonic Crevice
 slug: enharmonic-crevice
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: diatonic-chromatic interaction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 216
 section: "A Summary Example from Schubert"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "enharmonic seam"
   - "enharmonic boundary"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-syntax-hypothesis
   - enharmonic-seam
@@ -36,7 +30,6 @@ related:
   - diatonic-chromatic-gauge
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the enharmonic crevice in chromatic harmony?"
   - "What happens when music crosses the enharmonic boundary?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chordal Leap and Arpeggiation
 slug: chordal-leap-and-arpeggiation
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 7
 pdf_page: 162
 section: "Consonance and Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - consonant leap
   - consonant skip
   - CL
   - ARP
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triads
   - consonance-and-dissonance
@@ -39,7 +33,6 @@ contrasts_with:
   - passing-tone
   - neighbor-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

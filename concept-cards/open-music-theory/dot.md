@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dot
 slug: dot
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: null
 section: "Dots and ties"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "dotted note"
   - "augmentation dot"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - note-values
   - rest-values
@@ -35,7 +29,6 @@ related:
   - compound-meter
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does a dot do to a note's duration?"
   - "How does a double dot work?"

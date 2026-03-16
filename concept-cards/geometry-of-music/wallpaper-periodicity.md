@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Wallpaper Periodicity
 slug: wallpaper-periodicity
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 86
 section: "3.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "periodic tiling"
   - "musical wallpaper"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ordered-pitch-space
 extends: []
@@ -35,7 +29,6 @@ related:
   - three-note-chord-space
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why does ordered pitch space have a repeating structure?"
   - "How does octave equivalence create periodicity in pitch space?"

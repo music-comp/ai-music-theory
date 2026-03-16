@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modal Homogenization
 slug: modal-homogenization
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: origins-of-tonality
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 257
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - protofunctionality
 extends: []
@@ -31,7 +25,6 @@ related:
   - gradual-evolution-of-tonality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modal homogenization?"
   - "What distinguishes modal harmony from tonal harmony historically?"

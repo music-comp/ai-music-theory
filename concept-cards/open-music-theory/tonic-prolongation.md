@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonic Prolongation
 slug: tonic-prolongation
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: prolongation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "tonic expansion"
   - "prolongation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - dominant-seventh-chord
@@ -37,7 +31,6 @@ related:
   - plagal-motion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is tonic prolongation?"
   - "How do inverted V7 chords prolong tonic?"

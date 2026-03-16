@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Small-Gap Macroharmony (2-Gap)
 slug: small-gap-macroharmony
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: macroharmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 174
 section: "5.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "2-gap macroharmony"
   - "gapless macroharmony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - macroharmony
   - harmonic-vs-macroharmonic-consistency
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - large-gap-macroharmony
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes 'small-gap' from 'large-gap' macroharmony?"
   - "Why do diatonic and acoustic scales support so many chord types?"

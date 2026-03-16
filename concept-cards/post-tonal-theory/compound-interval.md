@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compound Interval
 slug: compound-interval
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval types
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 24
 section: "1.6 Intervals (Calculated in Semitones)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - compound intervals
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - semitone
   - octave-equivalence
@@ -35,7 +29,6 @@ related:
   - pitch-class-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a compound interval in post-tonal theory?"
   - "How are compound intervals treated in interval class analysis?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading
 slug: voice-leading-definition
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: fundamentals
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,17 +14,14 @@ chapter_number: 26
 pdf_page: 389
 section: "26.1 Voice Leading"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "part writing"
   - "part-writing"
   - "SATB voice leading"
   - "chorale-style voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triad
   - triad-inversions
@@ -40,7 +34,6 @@ related:
   - rules-of-spacing
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is voice leading?"
   - "What are the three primary concerns of voice leading?"

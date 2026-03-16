@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Modulation
 slug: chromatic-modulation
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 247
 section: "Modulation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "half-step modulation"
   - "parallel-shift modulation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulation
 extends:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - pivot-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is chromatic modulation?"
   - "Why does chromatic modulation require extended follow-through?"

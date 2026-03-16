@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Debussy "Des pas sur la neige" Analysis
 slug: debussy-des-pas-sur-la-neige-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: scale-first-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 340
 section: "9.3.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Footprints in the Snow analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-first-composition
   - acoustic-scale-as-intermediary
@@ -34,7 +28,6 @@ related:
   - subset-technique
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Debussy organize scalar regions in 'Des pas sur la neige'?"
   - "How does the acoustic scale bridge whole-tone and diatonic collections?"

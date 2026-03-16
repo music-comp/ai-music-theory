@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Just Minor Third
 slug: just-minor-third
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 138
 section: "Just Minor Third"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - pure minor third
   - "ratio 6:5"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-fifth
   - just-major-third
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - septimal-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the just minor third?"
 ---

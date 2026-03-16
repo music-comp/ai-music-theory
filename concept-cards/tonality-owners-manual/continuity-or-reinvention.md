@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Continuity or Reinvention
 slug: continuity-or-reinvention
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: style-history
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 47
 section: "Continuity or reinvention?"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modal-state-of-nature
   - function-and-retrofunction
@@ -32,7 +26,6 @@ related:
   - loop-families-in-rock
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Did rock's modal harmony continue a folk tradition from the Renaissance?"
 ---

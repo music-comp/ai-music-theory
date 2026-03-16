@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Timbral Cadence
 slug: timbral-cadence
-# === CLASSIFICATION ===
 category: application
 subcategory: orchestration
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Subtle Color Changes"
 chapter_number: 10
 pdf_page: null
 section: "X.2"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - orchestral-blend
 extends: []
@@ -26,7 +20,6 @@ related:
   - attack-sustain-effect
   - seamless-orchestral-crescendo
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a timbral cadence?"
   - "How can timbre mark cadential moments?"

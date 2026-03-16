@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic Fluency
 slug: melodic-fluency
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: melodic-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: 162
 section: "Melodic Fluency"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - underlying stepwise lines
   - structural lines
   - subsurface step motions
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hierarchy-in-tonal-music
   - passing-tone
@@ -39,7 +33,6 @@ related:
   - expectation-and-fulfillment
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What must I know before understanding voice leading?"
 ---

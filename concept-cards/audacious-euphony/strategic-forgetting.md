@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Strategic Forgetting
 slug: strategic-forgetting
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: methodology
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 9
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "cultivated denial"
   - "methodological bracketing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
   - classical-versus-romantic-syntax
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is strategic forgetting in Cohn's methodology?"
   - "Why does Cohn ask readers to 'forget' about consonance and roots?"

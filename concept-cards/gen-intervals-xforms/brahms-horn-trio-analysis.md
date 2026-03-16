@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Brahms Horn Trio Analysis
 slug: brahms-horn-trio-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: interval-transposition-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 188
 section: "7.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nuclear-gesture
   - complementary-gesture
@@ -33,7 +27,6 @@ related:
   - abstract-gesture
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do intervallic/transpositional structures become autonomous in Brahms?"
 ---

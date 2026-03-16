@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Epistemological Transparency
 slug: epistemological-transparency
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: analytical-values
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Robert C. Cook"
@@ -17,15 +14,12 @@ chapter_number: 19
 pdf_page: 531
 section: Incompleteness
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - epistemological openness
   - analytical provisionality
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - normative-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is epistemological transparency in music analysis?"
   - "How do transformational approaches differ from traditional ones in their truth claims?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hexatonic Extension Exercise
 slug: hexatonic-extension-exercise
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: octatonic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 282
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "hexatonic GIS exercise"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - octatonic-pitch-class-set
   - strans1-group
@@ -36,7 +30,6 @@ related:
   - gis2-octatonic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can the octatonic GIS construction be extended to other symmetric collections?"
 ---

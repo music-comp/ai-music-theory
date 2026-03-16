@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Drawbacks of Unequal Temperament
 slug: drawbacks-of-unequal-temperament
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: temperament
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: 152
 section: "Drawbacks of Unequal Temperament"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pythagorean-scale
   - just-intonation-scale
@@ -35,7 +29,6 @@ related:
   - equal-temperament-versus-just-intonation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the drawbacks of unequal temperament?"
   - "Why was equal temperament adopted?"

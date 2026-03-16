@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pentatonic Collection
 slug: pentatonic-collection
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: collections
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,20 +11,16 @@ chapter: "Collections"
 chapter_number: 8
 pdf_page: null
 section: "VIII.8"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "pentatonic scale"
   - "minor pentatonic"
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
   - whole-tone-collection
   - octatonic-collection
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the pentatonic collection?"
   - "How can the pentatonic collection be generated?"

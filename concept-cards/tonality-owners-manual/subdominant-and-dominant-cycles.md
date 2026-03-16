@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Subdominant and Dominant Cycles
 slug: subdominant-and-dominant-cycles
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 311
 section: "A theory of harmonic cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - elementary functional cycles
   - tonic-subdominant-dominant cycles
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - descending-thirds-arrangement
 extends: []
@@ -35,7 +29,6 @@ related:
   - nested-interval-cycles
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the elementary building blocks of functional harmony?"
   - "How do the subdominant and dominant cycles differ in their historical development?"

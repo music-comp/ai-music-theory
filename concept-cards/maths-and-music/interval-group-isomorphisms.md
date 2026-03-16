@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval Group Isomorphisms
 slug: interval-group-isomorphisms
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: morphisms
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "The Group of Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - exponential-logarithm isomorphism
   - additive-multiplicative interval isomorphism
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - isomorphism
   - group-of-intervals
@@ -37,7 +31,6 @@ related:
   - multiplicative-to-additive-conversion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do the exponential and logarithm provide isomorphisms between interval representations?"
   - "What is the deep mathematical connection between additive and multiplicative interval measurement?"

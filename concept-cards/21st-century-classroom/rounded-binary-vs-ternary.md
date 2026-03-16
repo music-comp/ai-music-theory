@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Distinguishing Rounded Binary from Ternary
 slug: rounded-binary-vs-ternary
 
-# === CLASSIFICATION ===
 category: form
 subcategory: analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,13 +14,10 @@ chapter_number: 24
 pdf_page: 357
 section: "24.8 Distinguishing between Rounded Binary and Ternary"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rounded-binary
   - ternary-form
@@ -32,7 +26,6 @@ related:
   - binary-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you distinguish rounded binary from ternary form?"
   - "What three criteria help differentiate rounded binary from ternary?"

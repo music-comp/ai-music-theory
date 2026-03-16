@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seven-Part Rondo
 slug: seven-part-rondo
 
-# === CLASSIFICATION ===
 category: form
 subcategory: large-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 25
 pdf_page: 375
 section: "25.3 Rondo Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "7-part rondo"
   - "ABACABA form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rondo-form
   - sonata-principle
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - five-part-rondo
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is seven-part rondo form?"
   - "How does sonata principle apply in seven-part rondo?"

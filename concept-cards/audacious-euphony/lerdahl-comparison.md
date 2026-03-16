@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Lerdahl Regional Analysis Comparison"
 slug: lerdahl-comparison
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: comparative methodology
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 148
 section: "Continuous Upshifts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "scalar vs. triadic analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zones
   - schumann-dichterliebe-tonal-plan
@@ -33,7 +27,6 @@ related:
   - continuous-upshift
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do voice-leading zones reveal structure that Weber's regional graph does not?"
 ---

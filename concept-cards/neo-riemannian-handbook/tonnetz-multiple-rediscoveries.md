@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonnetz Multiple Rediscoveries
 slug: tonnetz-multiple-rediscoveries
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: historical development of concepts
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Tonnetze catalog"
   - "IC-based Tonnetz classification"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
 extends: []
@@ -35,7 +29,6 @@ related:
   - hexatonic-systems
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How many times was the Tonnetz independently discovered?"
   - "How are different Tonnetze classified by their generating intervals?"

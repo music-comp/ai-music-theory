@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: IFUNC Symmetry Theorem
 slug: ifunc-symmetry-theorem
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: interval-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: "5.1.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 5.1.4"
   - IFUNC exchange theorem
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ifunc
   - generalized-interval-system
@@ -36,7 +30,6 @@ related:
   - ifunc-inversion-theorem
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens to IFUNC when the roles of sets X and Y are exchanged?"
   - "How does IFUNC(Y, X) relate to IFUNC(X, Y)?"

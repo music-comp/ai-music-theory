@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scalar Spiral Diagram
 slug: scalar-spiral-diagram
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: geometrical-models
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 361
 section: "Two models of key distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - 7-in-12 spiral diagram
   - scale space spiral
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - spiral-diagram-derivation
@@ -38,7 +32,6 @@ related:
   - fourth-scale-degree-raising
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the scalar spiral diagram and how does it represent diatonic scales?"
   - "How do slides and loops on the diagram correspond to different types of modulation?"

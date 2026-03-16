@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Semitonal Voice Leading
 slug: semitonal-voice-leading
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: new harmonic tendencies
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 34
 pdf_page: 790
 section: "Tonal Ambiguity: Semitonal Voice Leading"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chromatic voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonal-ambiguity
 extends: []
@@ -33,7 +27,6 @@ related:
   - enharmonic-reinterpretation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is semitonal voice leading?"
 ---

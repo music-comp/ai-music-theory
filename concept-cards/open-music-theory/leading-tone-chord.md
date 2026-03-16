@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Leading-Tone Chord
 slug: leading-tone-chord
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: dominant-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,17 +14,14 @@ chapter_number: 8
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "vii-o chord"
   - "vii-o7"
   - "diminished seventh chord"
   - "leading-tone seventh"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonic-prolongation
   - dominant-seventh-chord
@@ -37,7 +31,6 @@ related:
   - secondary-leading-tone-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can the leading-tone chord substitute for V7?"
   - "Which inversions of vii-o7 correspond to which inversions of V7?"

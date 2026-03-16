@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ideals and Principal Ideals
 slug: ideals-and-principal-ideals
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: rings
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 100
 section: "Ideals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ideal"
   - "principal ideal"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ring
 extends:
@@ -36,7 +30,6 @@ related:
   - division-algorithm
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an ideal in a ring?"
   - "What is a principal ideal?"

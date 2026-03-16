@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Hauptmann's Dialectical Dualism"
 slug: hauptmann-dialectic
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: philosophical-foundations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Hauptmann's having/being distinction"
   - "haben/sein distinction"
   - "dialectical derivation of harmony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
 extends: []
@@ -36,7 +30,6 @@ related:
   - oettingen-phonicity-tonicity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did Hauptmann derive the major/minor distinction dialectically?"
   - "What is the haben/sein (having/being) distinction in harmonic theory?"

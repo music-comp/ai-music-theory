@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: If-Only Adjustment
 slug: if-only-adjustment
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 154
 section: "6.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
 extends: []
@@ -32,7 +26,6 @@ related:
   - angst-hoffen-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an if-only adjustment in INJ analysis?"
 ---

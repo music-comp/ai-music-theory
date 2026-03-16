@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Apparent Submediant
 slug: apparent-submediant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 18
 pdf_page: 425
 section: "Apparent Submediants"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "voice-leading submediant"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - submediant
   - contrapuntal-expansion
@@ -34,7 +28,6 @@ related:
   - contextual-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an apparent submediant?"
   - "Can a vi chord be a byproduct of voice leading rather than a real harmony?"

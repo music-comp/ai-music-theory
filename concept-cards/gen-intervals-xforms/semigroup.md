@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Semigroup
 slug: semigroup
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: algebraic-structures
 tier: foundational
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 1
 pdf_page: 32
 section: "1.4.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-composition
   - associativity
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - group
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a semigroup?"
   - "What mathematical concepts must I know before understanding GIS?"

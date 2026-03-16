@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cadential Six-Four as Hierarchy
 slug: cadential-six-four-as-hierarchy
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: hierarchical-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 407
 section: "Simple harmonic hierarchy"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - simple harmonic hierarchy
   - limited harmonic embedding
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - functional-analysis
   - early-phrase-vs-cadential-progressions
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - prolongational-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Does functional harmony exhibit any genuine hierarchy?"
   - "How should the cadential six-four chord be understood?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tarnhelm Double-Agent Analysis
 slug: tarnhelm-double-agent-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: wagner-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 91
 section: "The Double-Agent Complex"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tarnhelm motive analysis"
   - "Das Rheingold Tarnhelm"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-agent-complex
   - lp-transformation
@@ -35,7 +29,6 @@ related:
   - il-penseroso-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the Tarnhelm motive demonstrate permutational malleability of the double-agent complex?"
 ---

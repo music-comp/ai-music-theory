@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Key Signatures and the Circle of Fifths
 slug: key-signatures-and-the-circle-of-fifths
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 14
 section: "Key Signatures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "key signatures"
   - "circle of fifths"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-and-chromatic-scales
   - accidentals
@@ -39,7 +33,6 @@ related:
   - tetrachords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a key signature and how does it work?"
   - "How are key signatures generated systematically?"

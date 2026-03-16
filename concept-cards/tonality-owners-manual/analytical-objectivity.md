@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Analytical Objectivity
 slug: analytical-objectivity
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: epistemic-issues
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 303
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-degree-analysis
   - functional-analysis
@@ -33,7 +27,6 @@ related:
   - ambiguous-syntax-in-tonal-music
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can harmonic analysis be objective?"
   - "How does context affect analytical objectivity?"

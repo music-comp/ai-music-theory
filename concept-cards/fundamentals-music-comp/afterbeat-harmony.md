@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Afterbeat Harmony
 slug: afterbeat-harmony
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: accompaniment-types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 51
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - syncopated accompaniment
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - accompaniment-function
   - motive-of-the-accompaniment
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - chorale-like-accompaniment
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is afterbeat harmony in accompaniment?"
   - "How does afterbeat harmony contribute to rhythmic character?"

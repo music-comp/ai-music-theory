@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Unison and Opposite Intervals
 slug: unison-and-opposite-intervals
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: ratios
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 58
 section: "Orientation of Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - unison interval
   - inverse interval
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-as-frequency-ratio
 extends: []
@@ -34,7 +28,6 @@ related:
   - multiplicative-composition-of-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the unison interval?"
   - "What is the opposite of an interval?"

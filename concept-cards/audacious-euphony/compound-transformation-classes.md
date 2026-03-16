@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compound Transformation Classes
 slug: compound-transformation-classes
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: equivalence classes
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 125
 section: "Voice-Leading Zones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "compound HW classes"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-class
   - voice-leading-zones
@@ -35,7 +29,6 @@ related:
   - zone-diametric-relations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are triads in non-adjacent zones connected by compound transformations?"
   - "How many specific transformations does each compound class cover?"

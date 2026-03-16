@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rule of the Octave
 slug: rule-of-the-octave
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: galant-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: null
 section: "The Rule of the Octave"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Regolo"
   - "ROTO"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - figured-bass
   - scale-degree
@@ -34,7 +28,6 @@ related:
   - galant-schema
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Rule of the Octave?"
   - "How can it be built up from parallel 6/3 chords?"

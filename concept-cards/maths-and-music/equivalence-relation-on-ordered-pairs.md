@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Equivalence Relation on Ordered Pairs
 slug: equivalence-relation-on-ordered-pairs
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: ratios
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 58
 section: "The Equivalence Relation of Ratios"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - ratio equivalence relation
   - ratio as equivalence class
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -33,7 +27,6 @@ related:
   - multiplicative-composition-of-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is a ratio formally defined as an equivalence class?"
   - "Why can different pairs of numbers represent the same ratio?"

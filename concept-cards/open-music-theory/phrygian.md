@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrygian Mode
 slug: phrygian
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 14
 pdf_page: null
 section: "Modes and the Parallel Relationship"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - mode
   - minor-scale
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - lydian
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the phrygian mode?"
   - "How does phrygian differ from natural minor?"

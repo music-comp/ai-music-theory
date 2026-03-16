@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Spacing-Preserving Voice Leading
 slug: spacing-preserving-voice-leading
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: voice-leading-foundations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 533
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - strongly crossing free
   - crossing-free voice leading
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading
   - voice-exchange
@@ -37,7 +31,6 @@ related:
   - double-transposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a spacing-preserving voice leading?"
   - "How do voice leadings factor into voice exchanges and remainders?"

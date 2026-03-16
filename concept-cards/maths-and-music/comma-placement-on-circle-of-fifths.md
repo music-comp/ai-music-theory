@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Comma Placement on Circle of Fifths
 slug: comma-placement-on-circle-of-fifths
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: temperament
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: 152
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - comma-of-pythagoras
   - wolf-fifth
@@ -34,7 +28,6 @@ related:
   - drawbacks-of-unequal-temperament
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Where should the comma be placed on the circle of fifths?"
   - "How does comma placement affect key quality?"

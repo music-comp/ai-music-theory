@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch-Class Interval
 slug: pitch-class-interval
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval types
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 26
 section: "1.8 Ordered Pitch-Class Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - pci
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - mod-12-arithmetic
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - pitch-interval
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pitch-class interval?"
   - "What distinguishes ordered from unordered pitch-class intervals?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Periodic Function
 slug: periodic-function
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: phrase rhythm
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Scott Burnham"
@@ -17,16 +14,13 @@ chapter_number: 16
 pdf_page: 441
 section: "Downbeats"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Riemann's periodic functions"
   - "eight-measure period functions"
   - "measure functions (1-8)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hierarchical-metric-organization
   - auftakttheorie
@@ -40,7 +34,6 @@ related:
   - essential-accessory-distinction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are periodic functions in Riemann's analytical method?"
   - "How does Riemann parse movements into periods?"

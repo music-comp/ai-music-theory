@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrase Expansion
 slug: phrase-expansion
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: phrase rhythm
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Scott Burnham"
@@ -17,16 +14,13 @@ chapter_number: 16
 pdf_page: 446
 section: "Reading between the Lines"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "periodic expansion"
   - "phrase extension"
   - "expanded period"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-function
   - hierarchical-metric-organization
@@ -39,7 +33,6 @@ related:
   - schlusswirkung
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Beethoven expand periodic structures beyond eight measures?"
   - "What techniques create phrase expansion in Riemann's analytical framework?"

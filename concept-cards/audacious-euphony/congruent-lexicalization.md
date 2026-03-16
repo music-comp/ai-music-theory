@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Congruent Lexicalization
 slug: congruent-lexicalization
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: double syntax
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 220
 section: "Code Switching and Double Determination"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Muysken's congruent lexicalization"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - code-switching
   - homophonous-diamorph
@@ -35,7 +29,6 @@ related:
   - overdetermination
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is congruent lexicalization?"
   - "How do shared lexical items facilitate code switching in music?"

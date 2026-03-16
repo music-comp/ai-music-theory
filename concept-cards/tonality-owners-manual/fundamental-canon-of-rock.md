@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fundamental Canon of Rock
 slug: fundamental-canon-of-rock
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 47
 section: "Shepard-tone passacaglias"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - deep schema of rock
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - shepard-tone-passacaglias
   - loop-families-in-rock
@@ -34,7 +28,6 @@ related:
   - melodic-principle-of-harmony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the fundamental canon of rock?"
   - "How are the different loop families related?"

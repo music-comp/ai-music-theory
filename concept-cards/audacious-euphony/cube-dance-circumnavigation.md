@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cube Dance Circumnavigation
 slug: cube-dance-circumnavigation
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: voice-leading trajectories
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 101
 section: "Chromatic Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "voice-leading zone circumnavigation"
   - "full rotation of Cube Dance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cube-dance
   - voice-leading-zone
@@ -37,7 +31,6 @@ related:
   - transformational-substitution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What constitutes a circumnavigation of Cube Dance?"
   - "How many voice-leading zones must be traversed for one complete rotation?"

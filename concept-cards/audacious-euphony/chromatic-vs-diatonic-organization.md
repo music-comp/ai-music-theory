@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic vs. Diatonic Organization
 slug: chromatic-vs-diatonic-organization
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: distance metrics
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 0
 pdf_page: 9
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic vs. chromatic distance"
   - "two syntaxes"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - diatonic-collection
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the two fundamentally different ways of organizing triadic harmony?"
   - "How can a progression be both disjunct and conjunct at the same time?"

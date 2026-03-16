@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Integer Notation
 slug: integer-notation
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch-systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: null
 section: "VIII.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pitch-class integers"
   - "pc integers"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
 extends: []
@@ -34,7 +28,6 @@ related:
   - pitch-class-set
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is integer notation in set theory?"
   - "How are pitch classes numbered 0-11?"

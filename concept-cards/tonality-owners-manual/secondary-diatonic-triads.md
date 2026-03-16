@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Secondary Diatonic Triads
 slug: secondary-diatonic-triads
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: 257
 section: "A broader perspective"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - ii
   - vi
   - iii
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - protofunctionality
   - zeroth-order-properties
@@ -35,7 +29,6 @@ related:
   - gradual-evolution-of-tonality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did secondary diatonic triads develop their functional roles?"
 ---

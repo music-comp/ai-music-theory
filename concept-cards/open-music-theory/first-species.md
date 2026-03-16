@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: First Species Counterpoint
 slug: first-species
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: species-counterpoint
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "note-against-note"
   - "1:1 counterpoint"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cantus-firmus
   - species-counterpoint
@@ -37,7 +31,6 @@ related:
   - contrary-motion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the rules of first-species counterpoint?"
   - "How do you begin and end a first-species exercise?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: M-Class Vector
 slug: m-class-vector
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: embedding-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: 119
 section: "5.3.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - M-element class vector
   - dyad-type vector
   - trichord-type vector
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - emb-function
   - set-class
@@ -38,7 +32,6 @@ related:
   - emb-probability
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an M-class vector?"
   - "How does the M-class vector generalize Forte's interval vector?"

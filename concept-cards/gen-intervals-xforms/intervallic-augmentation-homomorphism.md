@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Intervallic Augmentation Homomorphism
 slug: intervallic-augmentation-homomorphism
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-mappings
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 224
 section: "9.5.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "complementary gesture times 2"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - graph-homomorphism
 extends:
@@ -33,7 +27,6 @@ related:
   - brahms-horn-trio-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does intervallic augmentation work as a graph homomorphism?"
   - "What kind of homomorphism has isomorphic NODEMAP but non-isomorphic SGMAP?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Agents (Harrison)"
 slug: agents-harrison
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 61
 section: "Consonance/Dissonance Reciprocity"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Leading-tone agents"
   - "Functional agents"
   - "Triadic agents"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
 extends: []
@@ -38,7 +32,6 @@ related:
   - consonance-dissonance-reciprocity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are agents in Harrison's theory of harmonic function?"
   - "How do agents relate to the nebenverwandt relation?"

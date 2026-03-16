@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrary-Motion Themes
 slug: contrary-motion-themes
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: beethoven-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 426
 section: "An expanded vocabulary of reductional targets"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - contrary-motion reductional targets
   - expanded reductional vocabulary
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - the-ludwig
   - basic-voice-leading
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - prolongational-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why are some Beethoven themes poorly served by standard Schenkerian reduction?"
   - "What alternative reductive targets does Tymoczko propose beyond stepwise descent?"

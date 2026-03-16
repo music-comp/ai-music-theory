@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Altered Dominant Seventh Chord
 slug: altered-dominant-seventh-chord
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: symmetrical harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 35
 pdf_page: 810
 section: "Altered Dominant Seventh Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "V7 with raised fifth"
   - "V7 with lowered fifth"
   - "FrV4/3"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad
   - augmented-sixth-chord
@@ -36,7 +30,6 @@ related:
   - symmetrically-constructed-harmonies
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an altered dominant seventh chord?"
 ---

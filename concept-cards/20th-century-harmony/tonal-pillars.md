@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Pillars
 slug: tonal-pillars
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 247
 section: "Tonality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chordal pillars"
   - "center-affirming chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
   - tonal-center
@@ -36,7 +30,6 @@ related:
   - modulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are tonal pillars?"
   - "How many chords are needed to establish tonality?"

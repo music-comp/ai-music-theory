@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Primary-Triad Harmony in Beethoven
 slug: primary-triad-harmony-in-beethoven
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: beethoven-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 457
 section: "Meet the Ludwig"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - I-IV-V emphasis
   - Beethoven's harmonic simplicity
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - the-ludwig
   - functional-analysis
@@ -37,7 +31,6 @@ related:
   - double-emploi
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why does Beethoven use such simple harmony?"
   - "How does the Ludwig relate to primary-triad harmony?"

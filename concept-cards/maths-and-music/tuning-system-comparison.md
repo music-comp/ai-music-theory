@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tuning System Comparison
 slug: tuning-system-comparison
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: temperament
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: 152
 section: "Drawbacks of Unequal Temperament"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pythagorean-scale
   - just-intonation-scale
@@ -36,7 +30,6 @@ related:
   - p-limit-tuning
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do the four main tuning systems compare?"
   - "What are the trade-offs between tuning systems?"

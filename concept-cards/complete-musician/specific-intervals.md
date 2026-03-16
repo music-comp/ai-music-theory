@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Specific Intervals
 slug: specific-intervals
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval-naming
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 70
 section: "Naming Specific Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "interval quality"
   - "specific size"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generic-intervals
   - major-scale
@@ -38,7 +32,6 @@ related:
   - augmented-and-diminished-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I determine the quality of an interval?"
   - "What makes an interval major, minor, or perfect?"

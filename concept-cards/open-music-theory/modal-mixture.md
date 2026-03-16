@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modal Mixture
 slug: modal-mixture
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: null
 section: "V.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "borrowing"
   - "mode mixture"
   - "borrowed chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - parallel-keys
   - major-scale
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modal mixture and how does it differ from modulation?"
   - "How does modal mixture in major relate to the parallel minor?"

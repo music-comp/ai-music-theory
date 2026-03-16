@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Double Emploi
 slug: double-emploi
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: harmonic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.7.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-network-definition
 extends: []
@@ -32,7 +26,6 @@ related:
   - beethoven-appassionata-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is double emploi in Lewin's network formalism?"
   - "How is harmonic ambiguity modeled in transformation networks?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Descending-Fifths Sequence
 slug: descending-fifths-sequence
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: sequential-tonality
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 257
 section: "7.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "falling-fifths sequence"
   - "circle-of-fifths sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-sequences
   - circle-of-thirds-harmonic
@@ -36,7 +30,6 @@ related:
   - seventh-chord-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is the descending-fifths sequence so common in tonal music?"
   - "How does the descending-fifths sequence relate to the circle of thirds?"

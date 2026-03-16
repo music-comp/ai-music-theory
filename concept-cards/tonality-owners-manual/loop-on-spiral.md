@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Loop on Spiral
 slug: loop-on-spiral
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 37
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - looping around the space
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - spiral-diagrams-for-chord-space
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - slide-along-spiral
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does looping around the spiral represent musically?"
 ---

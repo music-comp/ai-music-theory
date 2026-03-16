@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Liszt Organ Kyrie Analysis
 slug: liszt-kyrie-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: piece-specific analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 145
 section: "Departure -> Return Scripts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Missa pro organo lectarum Kyrie analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - departure-return-script
   - zonal-palindrome
@@ -33,7 +27,6 @@ related:
   - palindromic-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can a departure-return scheme operate without functional harmony?"
   - "What is the difference between triadic palindrome and zonal palindrome?"

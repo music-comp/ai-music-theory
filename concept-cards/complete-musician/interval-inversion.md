@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval Inversion
 slug: interval-inversion
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval-operations
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 70
 section: "Interval Inversion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "inversion of intervals"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - specific-intervals
 extends: []
@@ -32,7 +26,6 @@ related:
   - tritone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is interval inversion?"
   - "How does inversion affect interval quality?"

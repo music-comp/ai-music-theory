@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic Encapsulation
 slug: diatonic-encapsulation
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: diatonic-chromatic interaction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 194
 section: "The Diatonic Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic capsule"
   - "microecological hothouse"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-tonnetz
   - syntonic-image
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - pan-triadic-syntax
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is diatonic encapsulation?"
   - "How does the Tonnetz represent the activation of tonal forces?"

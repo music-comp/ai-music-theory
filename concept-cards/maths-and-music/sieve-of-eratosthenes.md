@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sieve of Eratosthenes
 slug: sieve-of-eratosthenes
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: number-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 100
 section: "Sieve of Eratosthenes"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - prime-numbers
 extends: []
@@ -32,7 +26,6 @@ related:
   - euler-phi-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I find all prime numbers up to a given limit?"
   - "What is the Sieve of Eratosthenes?"

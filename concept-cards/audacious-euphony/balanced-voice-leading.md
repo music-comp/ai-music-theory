@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Balanced Voice Leading
 slug: balanced-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 35
 section: "Contrary Motion and Balance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "balanced motion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-cycle
   - idealized-voice-leading
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - uniform-voice-leading
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes balanced from uniform voice leading?"
   - "Why is balanced voice leading special to major-third transpositions?"

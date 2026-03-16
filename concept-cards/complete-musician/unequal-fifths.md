@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Unequal Fifths
 slug: unequal-fifths
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 203
 section: "Part Writing with the Dominant Seventh Chord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - horn fifths
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - parallel-fifths-and-octaves
   - dominant-seventh-chord
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - parallel-fifths-and-octaves
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write proper voice-leading connections?"
 ---

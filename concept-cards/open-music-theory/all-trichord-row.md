@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: All-Trichord Row
 slug: all-trichord-row
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,12 +11,9 @@ chapter: "Composing with Twelve Tones"
 chapter_number: 9
 pdf_page: null
 section: "IX.5"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "all-trichord ring"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-row
   - set-class
@@ -28,7 +22,6 @@ related:
   - derived-row
   - all-interval-row
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an all-trichord row?"
   - "How many all-trichord rows exist?"

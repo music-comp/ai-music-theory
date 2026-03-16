@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dualist Tonal Space
 slug: dualist-tonal-space
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: spatial-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Henry Klumpenhouwer"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: null
 section: "Sections I-III"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "dualistic tonal space"
   - "topological space of dualism"
   - "topos"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - hard-vs-soft-dualism
@@ -38,7 +32,6 @@ related:
   - mediation-principle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the structure of dualist tonal space?"
   - "How do objects and transformations interact in neo-Riemannian theory?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Twelve-Tone Row
 slug: twelve-tone-row
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: null
 section: "IX.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tone row"
   - "series"
   - "row"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - integer-notation
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - pitch-class-set
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a twelve-tone row?"
   - "How many possible twelve-tone rows exist?"

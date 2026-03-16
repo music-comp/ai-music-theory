@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modular Integers Ring Structure
 slug: modular-integers-ring-structure
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: rings
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 100
 section: "Modular Integers"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ring of integers mod m"
   - "Z_m ring"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ring
   - group-of-modular-intervals
@@ -38,7 +32,6 @@ related:
   - greatest-common-divisor
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the ring structure of modular integers connect to chromatic scales?"
   - "When is the ring of modular integers an integral domain?"

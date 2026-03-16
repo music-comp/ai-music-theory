@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Second-Species Counterpoint
 slug: second-species-counterpoint
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: species
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 94
 section: "Second-Species Counterpoint"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "2:1 counterpoint"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - first-species-counterpoint
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - first-species-counterpoint
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is second-species counterpoint?"
   - "How is dissonance used in 2:1 counterpoint?"

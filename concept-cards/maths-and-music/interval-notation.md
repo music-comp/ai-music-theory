@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval Notation
 slug: interval-notation
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: sets-and-relations
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 14
 section: "Intervals of Real Numbers"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "real number intervals"
   - "open and closed intervals"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sets-and-number-systems
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - musical-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the standard notation for intervals of real numbers?"
   - "What is the difference between open and closed intervals?"

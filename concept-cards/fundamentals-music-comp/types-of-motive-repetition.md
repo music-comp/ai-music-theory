@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Types of Motive Repetition
 slug: types-of-motive-repetition
 
-# === CLASSIFICATION ===
 category: motive
 subcategory: motivic-development
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 14
 section: "Treatment and Utilization of the Motive"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - repetition types
   - motive repetition categories
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - variation
@@ -37,7 +31,6 @@ related:
   - repetition-and-monotony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes exact repetition from modified repetition?"
   - "What is developing variation?"

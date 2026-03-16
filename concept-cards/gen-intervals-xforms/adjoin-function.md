@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: ADJOIN Function
 slug: adjoin-function
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: embedding-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: 119
 section: "5.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - emb-function
   - set-class
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - sndw-function
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the ADJOIN function?"
 ---

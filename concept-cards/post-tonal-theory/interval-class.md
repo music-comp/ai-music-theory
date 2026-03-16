@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval Class
 slug: interval-class
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval class
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 28
 section: "1.10 Interval Class"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - ic
   - unordered pitch-class interval
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - unordered-pitch-class-interval
@@ -40,7 +34,6 @@ contrasts_with:
   - ordered-pitch-class-interval
   - pitch-interval
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an interval class?"
   - "How many interval classes are there?"

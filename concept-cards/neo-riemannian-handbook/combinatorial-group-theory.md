@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Combinatorial Group Theory in Harmony
 slug: combinatorial-group-theory
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: mathematical-foundations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "group-theoretic harmony"
   - "generator-based harmonic systems"
   - "combinatorial harmonic theory"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
 extends: []
@@ -36,7 +30,6 @@ related:
   - transformational-theory
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does combinatorial group theory apply to harmonic relationships?"
   - "What is a group presentation and how does it describe the PLR system?"

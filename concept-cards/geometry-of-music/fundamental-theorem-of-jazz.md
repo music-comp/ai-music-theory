@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fundamental Theorem of Jazz
 slug: fundamental-theorem-of-jazz
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: macroharmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 174
 section: "5.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "you can never be more than a semitone wrong"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - small-gap-macroharmony
   - macroharmony
@@ -34,7 +28,6 @@ related:
   - near-evenness
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the 'Fundamental Theorem of Jazz' relate to small-gap macroharmonies?"
   - "Why can jazz improvisers recover from 'wrong' notes?"

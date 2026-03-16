@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Minor Triad
 slug: minor-triad
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: triads
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 44
 section: "Minor Chord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - minor chord
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-types-and-interval-sequences
 extends: []
@@ -35,7 +29,6 @@ contrasts_with:
   - major-triad
   - diminished-triad
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes a major triad from a minor triad mathematically?"
   - "How do I construct a minor triad using interval sequences?"

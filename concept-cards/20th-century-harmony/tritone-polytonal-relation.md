@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tritone Polytonal Relation
 slug: tritone-polytonal-relation
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 247
 section: "Polytonality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "prime polytonal relationship"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - polytonality
   - polytonal-key-relationships
@@ -35,7 +29,6 @@ related:
   - polytonal-clarity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is the tritone the prime polytonal relationship?"
   - "How does the tritone separate tonal key spheres?"

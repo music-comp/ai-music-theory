@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Stepwise Ascending Bass
 slug: stepwise-ascending-bass
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 280
 section: "Pre-Dominants and the Stepwise Ascending Bass"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - bass line ^1-^2-^3-^4-^5
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pre-dominant-function
   - contrapuntal-expansion
@@ -34,7 +28,6 @@ related:
   - first-inversion-triads
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do pre-dominant chords lead to the dominant?"
 ---

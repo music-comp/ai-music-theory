@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sidestepping and Pumping-Up Modulation
 slug: sidestepping-and-pumping-up
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: modulatory-techniques
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,17 +14,14 @@ chapter_number: 8
 pdf_page: 361
 section: "Two models of key distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - sidestepping
   - pumping up
   - semitonal modulation
   - truck-driver modulation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading-of-scales
 extends: []
@@ -36,7 +30,6 @@ related:
   - scalar-spiral-diagram
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is sidestepping or pumping-up modulation?"
   - "How does sidestepping relate to the scale-degree-preserving model of key distance?"

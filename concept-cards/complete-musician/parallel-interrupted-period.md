@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parallel Interrupted Period
 slug: parallel-interrupted-period
 
-# === CLASSIFICATION ===
 category: form
 subcategory: structural patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 20
 pdf_page: 462
 section: "Types of Periods"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "PIP"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - period
   - harmonic-interruption
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - contrasting-continuous-period
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a parallel interrupted period?"
   - "What does PIP stand for?"

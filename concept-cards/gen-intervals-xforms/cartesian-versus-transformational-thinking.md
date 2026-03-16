@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cartesian versus Transformational Thinking
 slug: cartesian-versus-transformational-thinking
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: simply-transitive-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 188
 section: "7.1.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Cartesian vs. transformational attitudes"
   - "observer vs. performer perspective"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - simply-transitive-group
   - intervals-as-transpositions
@@ -35,7 +29,6 @@ related:
   - generalizing-power-of-transformational-theory
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes the Cartesian attitude from the transformational attitude?"
   - "What are the two conceptual frameworks for understanding musical space?"

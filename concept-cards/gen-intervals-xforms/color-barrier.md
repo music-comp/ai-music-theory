@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Color Barrier
 slug: color-barrier
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: twentieth-century-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 251
 section: "10.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ri-chaining
 extends: []
@@ -32,7 +26,6 @@ related:
   - rich-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the color barrier in Bartok's Syncopation?"
   - "How do collection-based constraints affect RI-chaining?"

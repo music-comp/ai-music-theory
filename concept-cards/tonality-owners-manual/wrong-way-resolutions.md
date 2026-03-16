@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Wrong-Way Resolutions
 slug: wrong-way-resolutions
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 96
 section: "The circle of diatonic triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ascending subdominant"
   - "retrofunctional resolution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - seventh-chord-circle
@@ -36,7 +30,6 @@ related:
   - harmony-and-counterpoint-relationship
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes a wrong-way resolution from a standard one?"
   - "What is the dualistic symmetry between V-I and IV-I?"

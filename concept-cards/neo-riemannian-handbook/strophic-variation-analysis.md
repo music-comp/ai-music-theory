@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Strophic Variation Analysis
 slug: strophic-variation-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-practices
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Paul Berry"
@@ -17,16 +14,13 @@ chapter_number: 17
 pdf_page: 475
 section: Commentary
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - strophic comparison
   - modified strophic analysis
   - strophic norm comparison
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - text-declamation
   - normative-analysis
@@ -37,7 +31,6 @@ related:
   - phrase-rhythm-brahms
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Riemann analyze modified strophic songs?"
   - "How can comparing strophes reveal compositional choices in Brahms's songs?"

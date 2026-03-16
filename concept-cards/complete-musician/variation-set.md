@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Variation Set
 slug: variation-set
 
-# === CLASSIFICATION ===
 category: form
 subcategory: variations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 26
 pdf_page: 587
 section: "Variation Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "theme and variations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
 extends: []
@@ -34,7 +28,6 @@ related:
   - variation-technique-strategies
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does binary form relate to sonata form?"
 ---

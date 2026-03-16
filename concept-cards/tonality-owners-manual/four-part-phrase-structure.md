@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Four-Part Phrase Structure
 slug: four-part-phrase-structure
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 407
 section: "The four-part phrase"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - quadruple grouping structure
   - four-unit phrase types
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - early-phrase-vs-cadential-progressions
 extends:
@@ -35,7 +29,6 @@ related:
   - simple-period-and-grand-period
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the basic phrase types in classical music?"
   - "How do sentence and period forms differ?"

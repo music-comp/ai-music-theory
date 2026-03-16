@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Integer Notation
 slug: integer-notation
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation systems
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 21
 section: "1.4 Integer Notation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - pitch-class integers
   - fixed-do integer notation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - enharmonic-equivalence
@@ -35,7 +29,6 @@ related:
   - mod-12-arithmetic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are pitch classes represented numerically?"
   - "What is integer notation in post-tonal theory?"

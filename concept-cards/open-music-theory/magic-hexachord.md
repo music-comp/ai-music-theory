@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Magic Hexachord
 slug: magic-hexachord
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,15 +11,12 @@ chapter: "Row Properties"
 chapter_number: 9
 pdf_page: null
 section: "IX.3"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "hexatonic collection"
   - "hexatonic set class"
   - "Ode-to-Napoleon hexachord"
   - "(014589)"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexachordal-combinatoriality
   - hexatonic-collection
@@ -30,7 +24,6 @@ extends: []
 related:
   - twelve-tone-row
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the magic hexachord?"
   - "Why is (014589) called 'magic'?"

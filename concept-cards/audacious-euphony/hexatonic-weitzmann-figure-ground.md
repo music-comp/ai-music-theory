@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hexatonic-Weitzmann Figure-Ground Relation
 slug: hexatonic-weitzmann-figure-ground
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: spatial metaphor
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 102
 section: "How Hexatonic and Weitzmann Regions Interact"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "water bug and pool metaphor"
   - "mariner/landlubber metaphor"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-region
   - weitzmann-region
@@ -36,7 +30,6 @@ related:
   - augmented-triad-as-switching-station
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do hexatonic regions relate to Weitzmann regions?"
   - "How are the two region types visualized in relation to each other?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Arrow Chain
 slug: arrow-chain
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-foundations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.1.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - node-arrow-system
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - communication-between-nodes
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an arrow chain in a node/arrow system?"
   - "How do arrow chains relate to transformation consistency?"

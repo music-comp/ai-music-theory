@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ternary Form
 slug: ternary-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sectional-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ABA form"
   - "three-part form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
   - phrase
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - binary-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is ternary form and how is it structured?"
   - "What is the difference between simple and compound ternary?"

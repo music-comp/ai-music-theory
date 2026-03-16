@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch Class
 slug: pitch-class
 
-# === CLASSIFICATION ===
 category: pitch
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 20
 section: "1.3 Pitch and Pitch Class"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - pc
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - octave-equivalence
   - enharmonic-equivalence
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - pitch
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pitch class?"
   - "How does pitch class differ from pitch?"

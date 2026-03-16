@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Whole Step
 slug: whole-step
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: null
 section: "Half Steps and Whole Steps"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "whole tone"
   - "major second"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch
   - half-step
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - half-step
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a whole step?"
   - "How does a whole step relate to a half step?"

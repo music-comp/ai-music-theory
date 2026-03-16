@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Simply Transitive Action
 slug: simply-transitive-action
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: group-actions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 47
 section: "Definition 2.3.1(B), Section 7.1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "simply transitive group action"
   - "STRANS"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - group
   - generalized-interval-system
@@ -37,7 +31,6 @@ related:
   - transposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does it mean for a group to act simply transitively on a space?"
   - "How does simple transitivity relate to GIS Condition (B)?"

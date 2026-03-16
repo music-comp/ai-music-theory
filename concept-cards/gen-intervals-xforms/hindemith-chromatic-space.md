@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Hindemith's Chromatic Space Construction"
 slug: hindemith-chromatic-space
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: historical-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 276
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Hindemith's synthesis"
   - "Unterweisung im Tonsatz chromatic derivation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - multiple-musical-spaces
   - senario
@@ -35,7 +29,6 @@ related:
   - minor-sixth-problem
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did Hindemith attempt to derive the chromatic scale from harmonic relationships?"
   - "What is the Ab problem in Hindemith's construction?"

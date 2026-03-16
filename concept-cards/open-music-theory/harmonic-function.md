@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Function
 slug: harmonic-function
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,17 +14,13 @@ chapter_number: 1
 pdf_page: null
 section: "Introduction to Harmony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
-# high: Concept explicitly defined in source with three categories and examples
 
-# === VARIANTS (authority control) ===
 aliases:
   - "functional harmony"
   - "chord function"
   - "T-PD-D-T"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triad
   - roman-numeral-analysis
@@ -41,7 +34,6 @@ related:
 contrasts_with:
   - roman-numeral-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three categories of harmonic function?"
   - "Which chords are tonic, predominant, and dominant?"

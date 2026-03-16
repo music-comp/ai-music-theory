@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: One-More-Time Technique
 slug: one-more-time-technique
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: null
 section: "One-More-Time Technique"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "o.m.t."
   - "OMT"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-expansion
 extends: []
@@ -33,7 +27,6 @@ related:
   - phrase
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the one-more-time technique?"
   - "How does it differ from an alternative path?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: PLR Transformations
 slug: plr-transformations
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: neo-riemannian-operations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Suzannah Clark"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "P, L, R operations"
   - "Parallel, Leittonwechsel, Relative"
   - "neo-Riemannian PLR group"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
 extends: []
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - common-tone-tonality
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three fundamental PLR transformations?"
   - "How does the PLR system originate in Riemann's late writings?"

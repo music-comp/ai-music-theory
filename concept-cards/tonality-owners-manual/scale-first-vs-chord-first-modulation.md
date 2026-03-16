@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scale-First vs. Chord-First Modulation
 slug: scale-first-vs-chord-first-modulation
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: modulatory-schemas
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 375
 section: "Minor keys"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "scale-first modulation"
   - "chord-first modulation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - key-distance-pitch-class-changing
   - enharmonic-equivalence
@@ -35,7 +29,6 @@ related:
   - chromatic-vs-diatonic-perspective
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes chromatic modulation from diatonic modulation?"
   - "What is the difference between scale-first and chord-first modulation?"

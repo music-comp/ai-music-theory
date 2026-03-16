@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Blues Scale and Blues Melodies
 slug: blues-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: blues
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: null
 section: "VI.9"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "minor blues scale"
   - "major blues scale"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - minor-pentatonic-scale
   - 12-bar-blues
@@ -36,7 +30,6 @@ related:
   - call-and-response
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the blues scale and how does it relate to the pentatonic scale?"
   - "What are blue notes?"

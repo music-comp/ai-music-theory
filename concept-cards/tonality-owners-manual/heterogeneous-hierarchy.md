@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Heterogeneous Hierarchy
 slug: heterogeneous-hierarchy
 
-# === CLASSIFICATION ===
 category: form
 subcategory: hierarchical-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 407
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - heterogeneous musical hierarchy
   - superimposed organization
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - quadruple-hierarchy
   - melodic-strategy
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - prolongational-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a heterogeneous hierarchy in tonal analysis?"
   - "How does Tymoczko's view of musical structure differ from Schenker's?"

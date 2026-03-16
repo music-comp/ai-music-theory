@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Composition of Inversion Operations
 slug: inversion-composition
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: inversion-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 88
 section: "3.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "inversion product"
   - "composition of inversions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inversion-operation
   - interval-preserving-operation
@@ -36,7 +30,6 @@ related:
   - petinv-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What operation results from composing two inversions?"
   - "What is the inverse of an inversion operation?"

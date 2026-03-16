@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hearing with Dualistic Ears
 slug: hearing-with-dualistic-ears
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: analytical-methodology
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Alexander Rehding"
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: null
 section: "Hearing with Dualistic Ears"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "dualistic listening"
   - "dualistic analytical perspective"
   - "utopian theory"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - dualistic-forms
@@ -37,7 +31,6 @@ related:
   - analytical-values-paradigms
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does it mean to 'hear with dualistic ears'?"
   - "Is dualistic analysis a claim about how music sounds or how it is organized?"

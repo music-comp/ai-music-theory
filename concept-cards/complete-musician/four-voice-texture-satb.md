@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Four-Voice Texture (SATB)
 slug: four-voice-texture-satb
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: 183
 section: "Texture and Register"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - SATB
   - four-part writing
   - chorale texture
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triads
 extends: []
@@ -37,7 +31,6 @@ related:
   - voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write a four-voice (SATB) chorale?"
 ---

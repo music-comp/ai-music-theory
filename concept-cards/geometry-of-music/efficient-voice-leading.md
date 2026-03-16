@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Efficient Voice Leading
 slug: efficient-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: principle
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 46
 section: "2.7-2.9"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "small voice leading"
   - "parsimonious voice leading"
   - "minimal voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-size
   - voice-leading-in-pitch-space
@@ -39,7 +33,6 @@ related:
   - five-features-interdependence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is efficient voice leading?"
   - "How do the five components constrain each other?"

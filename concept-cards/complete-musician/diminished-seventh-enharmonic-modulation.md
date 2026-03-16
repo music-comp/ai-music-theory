@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diminished Seventh Enharmonic Modulation
 slug: diminished-seventh-enharmonic-modulation
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: new harmonic tendencies
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 34
 pdf_page: 790
 section: "The Diminished Seventh Chord and Enharmonic Modulation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "enharmonic modulation via vii-dim-7"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - symmetrically-constructed-harmonies
   - diminished-seventh-chord
@@ -34,7 +28,6 @@ related:
   - chromatic-modulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the diminished seventh chord enable enharmonic modulation?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chordal-Step Distance
 slug: chordal-step-distance
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: distances
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 37
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - triadic step distance
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transposition-along-a-collection
   - intrinsic-vs-enclosing-scale
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - diatonic-distance
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is chordal-step distance?"
   - "Why is chordal-step distance relevant to efficient voice leading?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Applied Chords Metric Placement
 slug: applied-chords-metric-placement
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: applied chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 24
 pdf_page: 538
 section: "Incorporating Applied Chords Within Phrases"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - applied-chord
   - meter-and-time-signatures
@@ -33,7 +27,6 @@ related:
   - phrase-model
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Thematic Rotation
 slug: thematic-rotation
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: formal organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 129
 section: "Neighborhoods and Pitch Retention Loops"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "module rotation"
   - "thematic cycling"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
   - voice-leading-zone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is thematic rotation and how does it organize musical passages?"
   - "How does thematic rotation coordinate with hypermetric structure?"

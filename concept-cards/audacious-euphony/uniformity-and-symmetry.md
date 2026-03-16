@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Uniformity and Symmetry (Fetis)"
 slug: uniformity-and-symmetry
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: tonal-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 61
 section: "Consonance/Dissonance Reciprocity"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Law of uniformity"
   - "Fetis uniformity"
   - "Sequential leveling"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
 extends: []
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - diatonic-encapsulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Fetis's law of uniformity?"
   - "How can sequences override tonal hierarchy?"

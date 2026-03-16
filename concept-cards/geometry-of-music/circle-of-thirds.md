@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Circle of Thirds
 slug: circle-of-thirds
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 223
 section: "6.3.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic circle of thirds"
   - "triadic circle"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - renaissance-triadic-harmony
   - three-plus-one-voice-leading
@@ -35,7 +29,6 @@ related:
   - extended-common-practice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the circle of thirds?"
   - "How can we model all strongly crossing-free voice leadings between diatonic triads?"

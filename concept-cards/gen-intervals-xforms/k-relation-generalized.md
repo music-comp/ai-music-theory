@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "K and Kh Relations (Generalized)"
 slug: k-relation-generalized
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 154
 section: "6.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - generalized K relation
   - generalized Kh relation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
   - canonical-group
@@ -37,7 +31,6 @@ related:
   - rgnpf-partition-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are Forte's K and Kh relations generalized using INJ?"
 ---

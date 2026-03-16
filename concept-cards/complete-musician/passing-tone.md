@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Passing Tone
 slug: passing-tone
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: nonchord-tones
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: 94
 section: "Weak-Beat Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "PT"
   - "unaccented passing tone"
   - "consonant passing tone"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - second-species-counterpoint
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - consonant-neighbor-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a passing tone?"
   - "What distinguishes consonance from dissonance?"

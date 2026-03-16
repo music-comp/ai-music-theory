@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contextual Harmony and Context-Sensitive Analysis
 slug: contextual-harmony-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-practices
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Robert C. Cook"
@@ -17,16 +14,13 @@ chapter_number: 19
 pdf_page: 513
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - contextual analysis
   - context-sensitive analysis
   - contextual transformational analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
   - voice-leading
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - normative-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I analyze chromatic progressions using neo-Riemannian tools?"
   - "What distinguishes functional harmony from transformational harmony?"

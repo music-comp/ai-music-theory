@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cyclic Group and Generator
 slug: cyclic-group-and-generator
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: groups
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Generators and Cyclic Groups"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - cyclic group
   - group generator
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - group
   - exponential-notation-in-a-group
@@ -38,7 +32,6 @@ related:
   - modular-integers
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cyclic group?"
   - "What is a generator of a group?"

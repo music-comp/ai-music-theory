@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Signature Motive
 slug: signature-motive
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 154
 section: "6.2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - uniquely characteristic motive
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
   - protocol-pairs
@@ -34,7 +28,6 @@ related:
   - semi-simple-variations-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a signature motive in twelve-tone theory?"
 ---

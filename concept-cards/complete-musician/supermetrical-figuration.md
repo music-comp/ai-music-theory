@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Supermetrical Figuration
 slug: supermetrical-figuration
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 203
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - large-scale passing motion
   - supermetrical passing tone
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - metrical-figuration
 extends:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - metrical-figuration
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

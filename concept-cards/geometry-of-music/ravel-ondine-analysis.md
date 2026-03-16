@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ravel "Ondine" Analysis
 slug: ravel-ondine-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: scale-first-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 328
 section: "9.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Ravel Gaspard de la nuit Ondine analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-first-composition
   - single-semitone-scale-voice-leading
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - scriabin-op48-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Ravel's 'Ondine' exemplify scale-first composition?"
   - "How does Ravel explore a region of scale space?"

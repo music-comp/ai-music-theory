@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Z-Twelve as Chromatic Interval Group
 slug: z-twelve-as-chromatic-interval-group
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: twelve-tone
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "The Group of Modular Chromatic Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Z_12
   - chromatic pitch class group
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modular-chromatic-intervals
   - cyclic-group-and-generator
@@ -38,7 +32,6 @@ related:
   - n-tone-row-chart
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the group Z_12 represent chromatic pitch classes?"
   - "Why is Z_12 the central algebraic object in chromatic music theory?"

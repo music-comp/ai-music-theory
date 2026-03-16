@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contextual Analysis
 slug: contextual-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-techniques
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 162
 section: "The Importance of Contextual Analysis"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonance-and-dissonance
   - nonchord-tones
@@ -33,7 +27,6 @@ related:
   - hierarchy-in-tonal-music
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What must I know before understanding voice leading?"
 ---

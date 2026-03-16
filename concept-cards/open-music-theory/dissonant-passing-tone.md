@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dissonant Passing Tone
 slug: dissonant-passing-tone
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: null
 section: "Dissonant passing tones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - second-species
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - suspension
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a dissonant passing tone and where can it occur?"
   - "What are the rules for approaching and leaving a dissonant passing tone?"

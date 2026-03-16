@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Prime Form
 slug: prime-form
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: set-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: null
 section: "VIII.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - normal-order
   - set-class
@@ -33,7 +27,6 @@ related:
   - interval-vector
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is prime form?"
   - "How do you calculate the prime form of a set?"

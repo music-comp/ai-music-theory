@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonvorstellungen Turn
 slug: tonvorstellungen-turn
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: epistemological-shift
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,10 +14,8 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "psychological turn"
   - "Tonvorstellungen"
@@ -28,7 +23,6 @@ aliases:
   - "tone representations"
   - "mental representation of tones"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - dualism-evolution
@@ -39,7 +33,6 @@ related:
   - tonvorstellungen
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Tonvorstellungen turn in Riemann's theory?"
   - "How did Riemann shift from acoustic to psychological foundations?"

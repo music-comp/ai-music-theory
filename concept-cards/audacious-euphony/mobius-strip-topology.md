@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Mobius Strip Topology"
 slug: mobius-strip-topology
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: topological concepts
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 195
 section: "The Diatonic Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Mobius strip"
   - "half-twist topology"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-tonnetz
   - syntonic-image
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - cylindrical-tonnetz
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Mobius strip topology of the diatonic Tonnetz?"
   - "Why does the diatonic Tonnetz have a half-twist?"

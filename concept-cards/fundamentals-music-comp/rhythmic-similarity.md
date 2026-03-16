@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rhythmic Similarity
 slug: rhythmic-similarity
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: phrase-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 18
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - rhythmic unification
   - rhythmic coherence
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - variation
@@ -38,7 +32,6 @@ related:
   - variation-methods
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct a phrase from a motive?"
   - "What role does rhythm play in connecting motive-forms?"

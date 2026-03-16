@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Period Type Abbreviations
 slug: period-type-abbreviations
 
-# === CLASSIFICATION ===
 category: form
 subcategory: structural patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 20
 pdf_page: 462
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - period
 extends:
@@ -31,7 +25,6 @@ extends:
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What do the period abbreviations PIP, CCP, PSP, PPP mean?"
 ---

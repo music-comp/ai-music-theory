@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Connected System
 slug: connected-system
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-foundations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 224
 section: "9.1.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "connected node/arrow system"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - node-arrow-system
   - communication-between-nodes
@@ -34,7 +28,6 @@ related:
   - equivalence-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a connected node/arrow system?"
   - "How does connectivity relate to operation networks?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "INJ (Injection Function)"
 slug: inj-function
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: 154
 section: "6.2.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - injection number
   - injection function
   - "INJ(X, Y)(f)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - set-in-gis
   - transformation
@@ -43,7 +37,6 @@ contrasts_with:
   - ifunc
   - emb-function
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the INJ (injection number)?"
   - "How does IFUNC relate to INJ?"

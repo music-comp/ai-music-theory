@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Non-Standard Chromatic Scales
 slug: non-standard-chromatic-scales
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 74
 section: "Non-standard chromatic scales"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - alternative equal temperaments
   - non-twelve equal divisions
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - n-chromatic-scale
 extends:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - twelve-chromatic-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens when the octave is divided into something other than 12 equal parts?"
   - "How can non-standard chromatic scales be realized on a synthesizer?"

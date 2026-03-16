@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Implicit Musical Knowledge
 slug: implicit-musical-knowledge
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: epistemology-of-music
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 1
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - implicit knowledge
   - tacit musical knowledge
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - dogmatic-musical-conventions
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is implicit musical knowledge?"
   - "Why is musical knowledge difficult to articulate explicitly?"

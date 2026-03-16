@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tritone Substitution Geometry
 slug: tritone-substitution-geometry
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-space-geometry
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 378
 section: "10.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tritone substitution"
   - "tritone sub"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ii-v-i-jazz-progression
 extends:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - diatonic-third-substitution
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why does tritone substitution work?"
   - "What is the geometric explanation for tritone substitution?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Continuous Ternary Form
 slug: continuous-ternary-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: ternary
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 31
 pdf_page: 702
 section: "Ternary Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ABA (continuous)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ternary-form
 extends:
@@ -36,7 +30,6 @@ contrasts_with:
   - full-sectional-ternary-form
   - rounded-binary-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is continuous ternary form?"
   - "How does continuous ternary differ from rounded binary?"

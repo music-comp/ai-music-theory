@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Senario
 slug: senario
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: historical-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 276
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "senario numbers"
   - "Zarlino's senario"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-space
 extends: []
@@ -35,7 +29,6 @@ related:
   - hindemith-chromatic-space
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the senario?"
   - "How does the senario relate to consonance theory?"

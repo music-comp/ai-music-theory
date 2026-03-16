@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatically Descending Voicings over Descending Fifths
 slug: chromatically-descending-voicings
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: jazz-voice-leading
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 389
 section: "10.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "descending semitone over descending fifths"
   - "alternating tritone substitution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - bass-upper-voice-tritone-substitutions
 extends: []
@@ -33,7 +27,6 @@ related:
   - tritone-substitution-geometry
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can a soloist play a descending chromatic sequence over descending-fifth harmonies?"
   - "Why does this technique work?"

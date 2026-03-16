@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Imagination
 slug: tonal-imagination
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: psychological foundations of tone
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Suzannah Clark"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "imagination of tone"
   - "Tonphantasie"
   - "Tonvorstellung (in Clark's usage)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klangvertretung
 extends:
@@ -37,7 +31,6 @@ related:
   - plr-transformations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does it mean to 'imagine' a tone in Riemannian theory?"
   - "How does Klangvertretung relate to tonal imagination?"

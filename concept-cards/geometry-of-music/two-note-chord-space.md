@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Two-Note Chord Space
 slug: two-note-chord-space
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 89
 section: "3.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "two-note Mobius strip"
   - "dyad space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ordered-pitch-space
   - wallpaper-periodicity
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - circular-pitch-class-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the geometric space of all two-note chords?"
   - "Why is two-note chord space a Mobius strip?"

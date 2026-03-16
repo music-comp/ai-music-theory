@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interscalar Transposition
 slug: interscalar-transposition
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: operations
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 160
 section: "4.8-4.9"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "interscalar mapping"
   - "cross-scale transposition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scalar-transposition
   - modulation-as-voice-leading
@@ -36,7 +30,6 @@ related:
   - combining-scalar-chromatic-transposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is interscalar transposition?"
   - "How does it generalize scalar transposition?"

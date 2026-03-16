@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic and Diatonic Half Steps
 slug: chromatic-and-diatonic-half-steps
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: intervals
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 1
 pdf_page: 3
 section: "Scales"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - half-step-and-whole-step
   - accidentals
@@ -34,7 +28,6 @@ related:
   - enharmonic-equivalence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between a chromatic and a diatonic half step?"
 ---

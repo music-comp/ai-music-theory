@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Antecedent of the Period
 slug: antecedent-of-the-period
 
-# === CLASSIFICATION ===
 category: form
 subcategory: period-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 22
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - fore-sentence
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - phrase
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - beginning-the-sentence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct an antecedent of a period?"
   - "What distinguishes the antecedent from a sentence opening?"

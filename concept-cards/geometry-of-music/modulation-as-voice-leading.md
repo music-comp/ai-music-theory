@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modulation as Voice Leading
 slug: modulation-as-voice-leading
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: modulation
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 147
 section: "4.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "scale voice leading"
   - "modulation as scale movement"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-as-ruler
   - scalar-transposition
@@ -36,7 +30,6 @@ related:
   - interscalar-transposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can modulation be understood as voice leading between scales?"
   - "Why does sequential music force us to postulate specific voice leadings between scales?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modular Chromatic Intervals
 slug: modular-chromatic-intervals
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: twelve-tone
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "The Group of Modular Chromatic Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - chromatic interval classes
   - interval classes mod octave
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modular-arithmetic
   - octave-equivalence-formalized
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - group-of-modular-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are modular chromatic intervals?"
   - "How does Z_12 represent chromatic interval classes?"

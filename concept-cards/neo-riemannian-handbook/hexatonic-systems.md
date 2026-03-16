@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hexatonic Systems
 slug: hexatonic-systems
 
-# === CLASSIFICATION ===
 category: pitch-space
 subcategory: cyclic triadic structures
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Weitzmann regions"
   - "LP cycles"
   - "hexatonic cycles"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
   - tonnetz
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - octatonic-systems
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are hexatonic systems and how are they generated?"
   - "How do hexatonic systems relate to the Tonnetz?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Combining Textures
 slug: combining-textures
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 13
 pdf_page: 270
 section: "Combining Textures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "texture combination"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-synthesis
 extends: []
@@ -37,7 +31,6 @@ related:
   - polytonal-to-atonal
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are different harmonic textures combined in a single work?"
   - "What is the difference between vertical and successive texture combination?"

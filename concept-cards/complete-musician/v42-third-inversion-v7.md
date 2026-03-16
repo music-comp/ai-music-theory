@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: V4/2 (Third Inversion V7)
 slug: v42-third-inversion-v7
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: inversions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 246
 section: "V4/2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - V four-two
   - third-inversion dominant seventh
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dominant-seventh-chord
 extends:
@@ -36,7 +30,6 @@ related:
   - evaded-cadence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
 ---

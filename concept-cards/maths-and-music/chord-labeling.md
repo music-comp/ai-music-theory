@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chord Labeling
 slug: chord-labeling
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: chord-notation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 44
 section: "Chord Labeling"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - chord notation
   - chord symbols
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-types-and-interval-sequences
   - cyclic-permutations-and-root-identification
@@ -35,7 +29,6 @@ related:
   - functional-harmony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are chords labeled?"
   - "What do chord suffixes mean?"

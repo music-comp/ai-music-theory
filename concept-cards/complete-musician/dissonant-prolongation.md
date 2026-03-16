@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dissonant Prolongation
 slug: dissonant-prolongation
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: chromatic sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 36
 pdf_page: 829
 section: "Chromatic Contrary Motion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-contrary-motion
 extends: []
@@ -31,7 +25,6 @@ related:
   - omnibus
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is dissonant prolongation?"
 ---

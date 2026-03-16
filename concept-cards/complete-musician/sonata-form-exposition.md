@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sonata Form Exposition
 slug: sonata-form-exposition
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 33
 pdf_page: 752
 section: "The Binary Model for Sonata Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "exposition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form
   - first-tonal-area-and-second-tonal-area
@@ -36,7 +30,6 @@ related:
   - sonata-form-development
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I analyze a sonata form exposition?"
   - "What are the components of a sonata form exposition?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch-Class Set
 slug: pitch-class-set
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: set-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: null
 section: "VIII.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pc set"
   - "pcset"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - integer-notation
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - twelve-tone-row
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pitch-class set?"
   - "How does a pc set differ from a set class?"

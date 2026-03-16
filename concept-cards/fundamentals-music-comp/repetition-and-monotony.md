@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Repetition and Monotony
 slug: repetition-and-monotony
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: compositional-principles
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 14
 section: "Use of the motive requires variation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - repetition versus monotony
   - monotony through repetition
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
 extends: []
@@ -37,7 +31,6 @@ related:
   - comprehensibility-through-subdivision
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is developing variation?"
   - "What distinguishes exact repetition from modified repetition?"

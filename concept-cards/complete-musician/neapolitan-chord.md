@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neapolitan Chord
 slug: neapolitan-chord
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: Neapolitan
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 29
 pdf_page: 661
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "bII"
   - "Neapolitan sixth"
   - "N6"
   - "bII6"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pre-dominant-function
   - modal-mixture
@@ -40,7 +34,6 @@ related:
   - augmented-sixth-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Neapolitan chord?"
 ---

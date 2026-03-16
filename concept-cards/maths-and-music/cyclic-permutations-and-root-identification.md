@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cyclic Permutations and Root Identification
 slug: cyclic-permutations-and-root-identification
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: triads
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 44
 section: "Voicing"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - root discernibility
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cyclic-permutations
   - chord-types-and-interval-sequences
@@ -36,7 +30,6 @@ related:
   - chord-labeling
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do cyclic permutations determine whether a chord has a root?"
   - "Which chords have no discernible root?"

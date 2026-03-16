@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Minor Seventh Chord
 slug: minor-seventh-chord
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: seventh-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 44
 section: "Minor Seventh Chord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - minor-triad
 extends:
@@ -34,7 +28,6 @@ contrasts_with:
   - seventh-chord
   - major-seventh-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a minor seventh chord?"
   - "How does the minor seventh chord relate to the minor triad?"

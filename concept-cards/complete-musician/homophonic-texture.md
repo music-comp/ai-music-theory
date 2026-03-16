@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Homophonic Texture
 slug: homophonic-texture
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: texture
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 138
 section: "Musical Texture"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "homophony"
   - "melody and accompaniment"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - musical-texture
 extends:
@@ -37,7 +31,6 @@ contrasts_with:
   - monophonic-texture
   - polyphonic-texture
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is homophonic texture?"
 ---

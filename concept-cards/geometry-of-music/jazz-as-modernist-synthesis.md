@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Jazz as Modernist Synthesis
 slug: jazz-as-modernist-synthesis
 
-# === CLASSIFICATION ===
 category: application
 subcategory: historical-synthesis
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 405
 section: "10.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "jazz modernist synthesis"
   - "jazz common practice"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ii-v-i-jazz-progression
   - tritone-substitution-geometry
@@ -38,7 +32,6 @@ related:
   - bill-evans-oleo-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does jazz synthesize the developments of nineteenth and twentieth-century music?"
   - "Why is jazz central to the history of twentieth-century tonality?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Closural Proliferation
 slug: closural-proliferation
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata form
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Scott Burnham"
@@ -17,15 +14,12 @@ chapter_number: 16
 pdf_page: 448
 section: "Expansion and Closure"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "proliferation of 8 functions"
   - "multiplication of closural figures"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-function
   - phrase-expansion
@@ -37,7 +31,6 @@ related:
   - essential-accessory-distinction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Beethoven use multiple cadential arrivals for expressive effect?"
   - "What is the significance of repeated 8 functions in Riemann's analysis?"

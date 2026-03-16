@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scalar Inversion
 slug: scalar-inversion
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: operations
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 138
 section: "4.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic inversion"
   - "inversion within a scale"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scalar-transposition
   - scale-degree-arithmetic
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - chromatic-inversion
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is scalar inversion?"
   - "How does it differ from chromatic inversion?"

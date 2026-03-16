@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Invertible Counterpoint
 slug: invertible-counterpoint
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: invertible counterpoint
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 15
 pdf_page: 349
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "double counterpoint"
   - "invertible counterpoint at the octave"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - contrapuntal-expansion
   - consonant-and-dissonant-intervals
@@ -37,7 +31,6 @@ related:
   - implied-harmonies
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is invertible counterpoint?"
   - "How do composers reuse contrapuntal material efficiently?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Major Scale
 slug: major-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 3
 section: "Building Scales in the Major Mode"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "major mode"
   - "Ionian mode"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-scale
   - half-step-and-whole-step
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - minor-scales
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a major scale?"
   - "How do I construct one?"

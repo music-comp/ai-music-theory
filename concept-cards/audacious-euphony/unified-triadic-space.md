@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Unified Triadic Space
 slug: unified-triadic-space
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: unified model
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 101
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "connected triadic universe"
   - "pan-triadic universe"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-weitzmann-interaction
   - hexatonic-region
@@ -39,7 +33,6 @@ related:
   - voice-leading-zones
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the entire triadic universe organized under voice leading?"
   - "What does 'any chord can go to any other chord' mean precisely?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interpolation
 slug: interpolation
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase model
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 23
 pdf_page: 514
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "phrase extension by interpolation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
   - harmonic-sequence
@@ -35,7 +29,6 @@ related:
   - sequences-within-phrase-model
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is interpolation in phrase structure?"
 ---

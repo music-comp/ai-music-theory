@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cyclic Permutations
 slug: cyclic-permutations
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: sets-and-relations
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 14
 section: "Cyclic Permutations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "cyclic permutation"
   - "circular permutation"
   - "cyclic rotation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sets-and-number-systems
 extends: []
@@ -38,7 +32,6 @@ related:
   - chord-types-and-interval-sequences
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cyclic permutation of a sequence?"
   - "How do cyclic permutations generate musical modes?"

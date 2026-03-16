@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Two-Level Analysis
 slug: two-level-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 17
 pdf_page: 404
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "first-level and second-level analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
 extends:
@@ -35,7 +29,6 @@ related:
   - contextual-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is two-level analysis?"
   - "How do first-level and second-level analysis differ?"

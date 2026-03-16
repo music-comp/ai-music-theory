@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chord Multivalence
 slug: chord-multivalence
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-techniques
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 296
 section: "8.3, 8.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "multiple chord resolutions"
   - "harmonic pivot via voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-augmented-sixths
   - four-note-to-three-note-voice-leadings
@@ -35,7 +29,6 @@ related:
   - tristan-chord-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do Romantic composers exploit the multiple possible resolutions of a single chord?"
   - "How does chord multivalence propel chromatic harmony?"

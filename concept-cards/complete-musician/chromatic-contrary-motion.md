@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Contrary Motion
 slug: chromatic-contrary-motion
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: chromatic sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 36
 pdf_page: 829
 section: "Chromatic Contrary Motion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "contrary-motion chromaticism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - semitonal-voice-leading
 extends:
@@ -34,7 +28,6 @@ related:
   - omnibus
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is chromatic contrary motion?"
 ---

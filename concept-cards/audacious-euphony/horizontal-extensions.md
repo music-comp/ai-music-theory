@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Horizontal Extensions
 slug: horizontal-extensions
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: Tonnetz variants
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 197
 section: "Horizontal Extensions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "fifth-axis extensions"
   - "modulatory shell"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-tonnetz
   - diatonic-encapsulation
@@ -38,7 +32,6 @@ related:
   - syntonic-image
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the diatonic Tonnetz extend to accommodate modulation?"
   - "What are horizontal extensions of the Tonnetz?"

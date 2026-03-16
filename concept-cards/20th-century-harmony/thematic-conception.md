@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Thematic Conception
 slug: thematic-conception
 
-# === CLASSIFICATION ===
 category: form
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 13
 pdf_page: 270
 section: "Theme and Form Ideas"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "melodic kernel"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-synthesis
 extends: []
@@ -35,7 +29,6 @@ related:
   - formal-ideas
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is thematic material generated in twentieth-century music?"
   - "Why are tempo, dynamics, and medium integral to thematic conception?"

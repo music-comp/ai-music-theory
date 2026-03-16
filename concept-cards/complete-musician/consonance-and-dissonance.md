@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Consonance and Dissonance
 slug: consonance-and-dissonance
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: intervallic-quality
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 162
 section: "Consonance and Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - consonant and dissonant intervals
   - stability and instability
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - intervals
   - triads
@@ -37,7 +31,6 @@ related:
   - hierarchy-in-tonal-music
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What must I know before understanding voice leading?"
   - "What is a nonchord tone?"

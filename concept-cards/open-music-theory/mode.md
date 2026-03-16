@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mode
 slug: mode
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 14
 pdf_page: null
 section: "Modes and the Parallel Relationship"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic mode"
   - "church mode"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - major-scale
   - minor-scale
@@ -42,7 +36,6 @@ related:
   - locrian
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the diatonic modes?"
   - "What is modal brightness?"

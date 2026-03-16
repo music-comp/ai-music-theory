@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Abstract Gesture
 slug: abstract-gesture
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: simply-transitive-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 188
 section: "7.4"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "underlying abstract gesture"
   - "normative gesture"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformational-attitude
   - normative-network
@@ -35,7 +29,6 @@ related:
   - cadence-graph
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an abstract gesture in transformational theory?"
   - "How can different musical passages realize the same abstract structure?"

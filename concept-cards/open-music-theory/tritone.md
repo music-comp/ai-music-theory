@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tritone
 slug: tritone
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 16
 pdf_page: null
 section: "Augmented and Diminished Qualities"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "augmented fourth"
   - "diminished fifth"
   - "diabolus in musica"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
   - interval-quality
@@ -36,7 +30,6 @@ related:
   - consonance
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a tritone?"
   - "How many half steps is a tritone?"

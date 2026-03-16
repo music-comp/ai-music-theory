@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ties and Slurs
 slug: ties-and-slurs
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: duration
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 30
 section: "Ties and Slurs"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "tie"
   - "slur"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - note-durational-values
 extends: []
@@ -36,7 +30,6 @@ related:
   - meter-and-time-signatures
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between a tie and a slur?"
   - "How do ties affect note duration?"

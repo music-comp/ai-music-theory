@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonic
 slug: tonic
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch-organization
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 3
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "^1"
   - "first scale degree"
   - "do"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - dominant
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the tonic?"
   - "How is the most important pitch in a key determined?"

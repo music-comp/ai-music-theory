@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Dualism (Origins)
 slug: harmonic-dualism-origins
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: philosophical-foundations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Benjamin Steege"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - harmonic dualism
   - Dualismus
   - "polar opposition of major and minor"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - overtone-series
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - monism-vs-dualism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What background is required for harmonic dualism?"
   - "What distinguishes acoustic from psychological foundations of harmony?"

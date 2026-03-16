@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Key Signatures
 slug: key-signatures
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 3
 section: "Key Signatures and the Circle of Fifths"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "key signature"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - key
   - accidentals
@@ -36,7 +30,6 @@ related:
   - minor-scales
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a key signature?"
   - "How do I determine the key from a key signature?"

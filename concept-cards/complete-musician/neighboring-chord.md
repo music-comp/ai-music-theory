@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neighboring Chord
 slug: neighboring-chord
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: elaboration
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 226
 section: "Neighbor Tones in the Bass (V6)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - neighbor chord
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - neighbor-tone
   - first-inversion-triads
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - passing-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
 ---

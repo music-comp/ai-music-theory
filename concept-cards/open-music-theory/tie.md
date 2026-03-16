@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tie
 slug: tie
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: null
 section: "Dots and ties"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - note
   - note-values
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - articulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a tie in music notation?"
   - "How does a tie differ from a slur?"

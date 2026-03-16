@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Semitone Sequence (T1)"
 slug: semitone-sequence
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 113
 section: "Semitone (T +/- 1) sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "T1 sequence"
   - "semitonal sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-sequences
   - combination-table
@@ -35,7 +29,6 @@ related:
   - perfect-fifth-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are semitone chromatic sequences generated?"
   - "What is the S/P chain and how does it relate to Cube Dance circumnavigation?"

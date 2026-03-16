@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Riemann Function Theory Critique
 slug: riemann-function-theory-critique
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: klang-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "8.1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dom-transformation
   - klang-representation
@@ -32,7 +26,6 @@ related:
   - transformational-attitude
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What problems does Lewin identify in Riemann's function theory?"
 ---

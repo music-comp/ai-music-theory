@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Distance in Music
 slug: distance-in-music
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: measurement
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.1-2.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "musical distance"
   - "intervallic distance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-space
 extends: []
@@ -36,7 +30,6 @@ related:
   - voice-leading-size
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is distance measured in music?"
   - "What is pitch space vs. pitch-class space?"

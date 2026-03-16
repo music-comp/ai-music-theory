@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Limited Macroharmony
 slug: limited-macroharmony
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: macroharmony
 tier: foundational
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 21
 section: "1.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "macroharmonic constraint"
   - "pitch-class constraint"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
   - pitch-class-space
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the five components of tonality?"
   - "What is limited macroharmony?"

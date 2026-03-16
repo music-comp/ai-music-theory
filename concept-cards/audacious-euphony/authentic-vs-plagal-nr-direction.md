@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Authentic vs. Plagal N/R Direction
 slug: authentic-vs-plagal-nr-direction
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: cyclic-structures
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 80
 section: "Weitzmann Transformations and N/R Cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "N/R cycle direction"
   - "Clockwise vs. counterclockwise N/R"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nr-cycle
   - n-transformation
@@ -35,7 +29,6 @@ related:
   - whole-tone-scale-from-nr-cycle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the two directions of an N/R cycle?"
   - "How does direction affect the functional interpretation of an N/R cycle?"

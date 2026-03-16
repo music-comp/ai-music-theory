@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Oettingen's Phonicity and Tonicity"
 slug: oettingen-phonicity-tonicity
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: historical-systems
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,17 +14,14 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "tonicity and phonicity"
   - "tonic and phonic fundamentals"
   - "Oettingen dual principles"
   - "phonic overtone"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - overtone-series
@@ -38,7 +32,6 @@ related:
   - klang
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are Oettingen's dual principles of tonicity and phonicity?"
   - "How did Oettingen derive the minor triad without undertones?"

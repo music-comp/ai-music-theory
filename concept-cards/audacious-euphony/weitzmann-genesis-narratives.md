@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Weitzmann's Three Genesis Narratives"
 slug: weitzmann-genesis-narratives
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: nineteenth-century-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 73
 section: "Reciprocity in Weitzmann's Der ubermassige Dreiklang"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Entstehung narratives"
   - "Three origins of the augmented triad"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad
   - nebenverwandt
@@ -37,7 +31,6 @@ related:
   - augmented-triad-as-switching-station
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are Weitzmann's three genesis narratives for the augmented triad?"
   - "How does the third narrative invert the second?"

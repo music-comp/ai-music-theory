@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parallel Fifths and Octaves
 slug: parallel-fifths-and-octaves
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 183
 section: "Technique 3: Counterpoint"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - parallel perfect intervals
   - consecutive fifths and octaves
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading
 extends: []
@@ -35,7 +29,6 @@ related:
   - spacing-and-voicing
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write proper voice-leading connections?"
 ---

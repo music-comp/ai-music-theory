@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chaconne
 slug: chaconne
 
-# === CLASSIFICATION ===
 category: form
 subcategory: variations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 26
 pdf_page: 587
 section: "Continuous Variations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - continuous-variations
 extends:
@@ -33,7 +27,6 @@ related:
   - passacaglia
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does binary form relate to sonata form?"
 ---

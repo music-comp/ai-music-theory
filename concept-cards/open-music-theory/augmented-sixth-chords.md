@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Augmented Sixth Chords
 slug: augmented-sixth-chords
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: chromatic-predominant
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,17 +14,14 @@ chapter_number: 3
 pdf_page: null
 section: "V.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Italian sixth"
   - "French sixth"
   - "German sixth"
   - "+6 chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pre-dominant-function
   - chromatic-alteration
@@ -40,7 +34,6 @@ related:
   - common-tone-augmented-sixth
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do augmented sixth chords function as pre-dominants?"
   - "What distinguishes Italian, French, and German augmented sixth chords?"

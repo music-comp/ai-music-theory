@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transpositional Set Class (Chord Type)
 slug: transpositional-set-class
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: classification
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 46
 section: "2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord type"
   - "OPTC class"
   - "Tn-type"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord
   - transposition-symmetry
@@ -40,7 +34,6 @@ contrasts_with:
   - set-class
   - chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a transpositional set class?"
   - "What is a chord vs. a chord type?"

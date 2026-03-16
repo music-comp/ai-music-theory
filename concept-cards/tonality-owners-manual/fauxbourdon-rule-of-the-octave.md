@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fauxbourdon Rule of the Octave
 slug: fauxbourdon-rule-of-the-octave
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 332
 section: "Fauxbourdon and linear idioms"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "fauxbourdon ROTO"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fauxbourdon-and-linear-idioms
   - harmonic-cycle-theory
@@ -35,7 +29,6 @@ related:
   - pseudochord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does fauxbourdon generate descending-bass-line idioms in functional music?"
   - "What is the fauxbourdon ROTO and how does it relate to the standard rule of the octave?"

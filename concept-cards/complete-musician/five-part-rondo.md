@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Five-Part Rondo
 slug: five-part-rondo
 
-# === CLASSIFICATION ===
 category: form
 subcategory: rondo
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 32
 pdf_page: 730
 section: "Five-Part Rondo"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ABACA rondo"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rondo-form
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - seven-part-rondo
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a five-part rondo?"
 ---

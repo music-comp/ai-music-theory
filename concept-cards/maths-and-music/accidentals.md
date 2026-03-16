@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Accidentals
 slug: accidentals
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 14
 section: "Accidentals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "sharps and flats"
   - "chromatic alterations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - note-notation-and-the-staff
   - keyboard-layout
@@ -37,7 +31,6 @@ related:
   - diatonic-and-chromatic-scales
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are accidentals in music notation?"
   - "How do sharps, flats, naturals, and double accidentals alter pitch?"

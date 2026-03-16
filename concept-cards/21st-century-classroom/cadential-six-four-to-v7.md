@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cadential Six-Four to V7 Voice Leading
 slug: cadential-six-four-to-v7
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 27
 pdf_page: 407
 section: "27.3.1 Voice Leading I6/4 to V7"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "I6/4 to V7"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - types-of-six-four-chords
   - v7-to-i-voice-leading
@@ -32,7 +26,6 @@ extends: []
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you avoid parallel fifths when voice leading I6/4 to V7?"
 ---

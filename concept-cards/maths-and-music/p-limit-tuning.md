@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: p-Limit Tuning
 slug: p-limit-tuning
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: p-limit
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 152
 section: "p-Limit Tuning"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - prime-limit tuning
   - p-limit intonation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - unique-factorization-in-positive-rationals
   - rational-interval
@@ -36,7 +30,6 @@ related:
   - septimal-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is p-limit tuning?"
   - "What is 3-limit tuning?"

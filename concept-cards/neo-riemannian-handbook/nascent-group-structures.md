@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nascent Group Structures
 slug: nascent-group-structures
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: group theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "nascent groups"
   - "implicit group-theoretic content"
   - "proto-group structures"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonieschritte
   - schritt-wechsel-system
@@ -37,7 +31,6 @@ related:
   - quintschritt-terzschritt
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are nascent group structures in 19th-century harmony?"
   - "Did 19th-century theorists engage with group theory?"

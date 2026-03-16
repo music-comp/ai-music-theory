@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmoniewirkung
 slug: harmoniewirkung
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "William E. Caplin"
@@ -17,16 +14,13 @@ chapter_number: 15
 pdf_page: 422
 section: "Expressed Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "effect of harmony"
   - "harmonic effect"
   - "harmonic accent"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - expressed-meter
   - harmonic-function
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - motivic-imitation-metrics
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does harmonic change create metrical accent?"
   - "How does Riemann's metric theory relate to his harmonic theory?"

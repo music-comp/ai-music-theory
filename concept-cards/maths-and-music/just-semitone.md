@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Just Semitone
 slug: just-semitone
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 138
 section: "Just Semitone"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ratio 16:15"
   - diatonic semitone
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-interval
 extends:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - pythagorean-hemitone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the just semitone?"
 ---

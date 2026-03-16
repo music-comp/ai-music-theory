@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Reciprocal Process
 slug: reciprocal-process
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: new harmonic tendencies
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 34
 pdf_page: 790
 section: "Tonal Ambiguity: The Plagal Relation and Reciprocal Process"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plagal-relation
   - tonal-ambiguity
@@ -33,7 +27,6 @@ related:
   - altered-dominant-seventh-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the reciprocal process?"
 ---

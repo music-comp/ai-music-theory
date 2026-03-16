@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: W-Group Transformations
 slug: w-group-transformations
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: transformation-groups
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 77
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Weitzmann group transformations (glossary)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - w-group
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - h-group-transformations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the W-group transformations?"
   - "What properties do all W-group transformations share?"

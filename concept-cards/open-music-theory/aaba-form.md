@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: AABA Form and Strophic Form
 slug: aaba-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: pop-form
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,17 +14,14 @@ chapter_number: 4
 pdf_page: null
 section: "VII.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "32-bar song form"
   - "AABA"
   - "strophic form"
   - "AAA form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-structure
   - harmonic-closure
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - verse-chorus-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are AABA form and strophic form?"
   - "What is the function of a bridge section in AABA form?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modulation
 slug: modulation
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: modulation
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 25
 pdf_page: 563
 section: "Modulation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonicization
   - closely-related-keys
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - tonicization
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does tonicization differ from modulation?"
   - "How do I modulate to a closely related key?"

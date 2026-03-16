@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Whole-Tone Dominant Structure
 slug: whole-tone-dominant-structure
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Daniel Harrison"
@@ -17,16 +14,13 @@ chapter_number: 20
 pdf_page: 560
 section: "II. Some Hypotheses about Tonic and Antitonic Trichords"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "[02468] pentachord"
   - altered dominant pentachord
   - antitonic pentachord
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - antitonic-trichord
   - harrisonian-functional-discharge
@@ -36,7 +30,6 @@ related:
   - hexatonic-systems
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do altered dominants relate to antitonic trichords?"
   - "What is the [02468] pentachord in Harrison's theory?"

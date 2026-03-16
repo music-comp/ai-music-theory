@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tinctoris Transform
 slug: tinctoris-transform
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: configurations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 87
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - individually transpositionally related
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - configuration-and-center-of-gravity
 extends: []
@@ -34,7 +28,6 @@ related:
   - spiral-diagrams-for-chord-space
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Tinctoris Transform?"
   - "How are seemingly different progressions related by shared voice-leading patterns?"

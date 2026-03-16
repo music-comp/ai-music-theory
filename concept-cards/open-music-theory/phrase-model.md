@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrase Model
 slug: phrase-model
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,17 +14,13 @@ chapter_number: 1
 pdf_page: null
 section: "Introduction to Harmony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
-# high: Explicitly defined and diagrammed in source
 
-# === VARIANTS (authority control) ===
 aliases:
   - "T-PD-D-T model"
   - "Tb-PD-D-Te"
   - "functional phrase model"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
 extends:
@@ -38,7 +31,6 @@ related:
   - strong-predominant
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the phrase model in tonal harmony?"
   - "What is the typical order of harmonic functions in a phrase?"

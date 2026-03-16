@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Non-Intervallic Transformations
 slug: non-intervallic-transformations
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: non-intervallic-transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "8.1.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - simply-transitive-group
   - klang-representation
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - gis-from-simply-transitive-group
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes non-intervallic transformations from intervallic ones?"
   - "Why can't some Klang networks be analyzed as GIS structures?"

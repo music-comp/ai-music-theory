@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hard vs. Soft Dualism
 slug: hard-vs-soft-dualism
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: theoretical-distinctions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Henry Klumpenhouwer"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: null
 section: "Section I"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "hard dualism"
   - "soft dualism"
   - "strong vs. weak dualism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
 extends: []
@@ -36,7 +30,6 @@ related:
   - dualist-tonal-space
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between hard and soft dualism?"
   - "What distinguishes different forms of harmonic dualism?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Mixture
 slug: harmonic-mixture
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: mixture
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 27
 pdf_page: 616
 section: "Altered Submediant Harmony: bVI"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modal-mixture
 extends:
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - melodic-mixture
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modal mixture?"
   - "How does modal mixture relate to borrowed chords?"

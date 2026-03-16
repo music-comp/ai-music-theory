@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch
 slug: pitch
 
-# === CLASSIFICATION ===
 category: pitch
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,13 +14,10 @@ chapter_number: 1
 pdf_page: 20
 section: "1.3 Pitch and Pitch Class"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - pitch-class
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pitch?"
   - "How does pitch class differ from pitch?"

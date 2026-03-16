@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic Simplification in Cadence
 slug: melodic-simplification-in-cadence
 
-# === CLASSIFICATION ===
 category: melody
 subcategory: cadential-technique
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 24
 section: "Melodic Considerations: Cadence Contour"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - reduction of characteristic features in cadence
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - cadence-contour
@@ -36,7 +30,6 @@ related:
   - tendency-of-the-smallest-notes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the melody simplify at a cadence?"
   - "What is the relationship between melodic simplification and liquidation?"

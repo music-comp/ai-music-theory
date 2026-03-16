@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Overdetermination Principle
 slug: overdetermination-principle
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: tonality
 tier: foundational
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 21
 section: "1.6"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "remarkable coincidence"
   - "dual optimality of consonant chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - five-features-interdependence
   - acoustic-consonance
@@ -37,7 +31,6 @@ related:
   - near-symmetry
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do the five components constrain each other?"
   - "Why do the chords of Western tonal music have their particular structure?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Bass-Line Substitution
 slug: bass-line-substitution
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 250
 section: "7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "inversion substitution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - thirds-based-harmonic-grammar
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - third-substitution
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can the same chord progression appear over different bass lines?"
   - "What is the difference between bass-line substitution and third substitution?"

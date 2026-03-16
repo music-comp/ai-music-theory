@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Logic and Coherence
 slug: logic-and-coherence
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 10
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - musical logic
   - musical coherence
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends:
   - form
@@ -36,7 +30,6 @@ related:
   - developing-variation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is musical form?"
   - "What are the chief requirements for creating comprehensible form?"

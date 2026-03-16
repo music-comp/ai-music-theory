@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Jazz Voicings
 slug: jazz-voicings
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-technique
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: null
 section: "VI.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-symbols-jazz
   - harmonic-series
@@ -32,7 +26,6 @@ related:
   - ii-v-i-progression
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you voice jazz chords idiomatically?"
   - "What is the 3-7 voice-leading paradigm?"

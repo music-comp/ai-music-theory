@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Beethoven Appassionata Analysis
 slug: beethoven-appassionata-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: tonal-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.7.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-network-definition
   - precedence-ordered-system
@@ -38,7 +32,6 @@ related:
   - double-emploi
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Lewin analyze the Beethoven Appassionata slow movement?"
   - "How can formal input nodes conflict with musical priority?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Quotient Set
 slug: quotient-set
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: equivalence-relations
 tier: foundational
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 32
 section: "1.9.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - quotient family
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - equivalence-relation
   - equivalence-class
@@ -34,7 +28,6 @@ related:
   - quotient-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What mathematical concepts must I know before understanding GIS?"
 ---

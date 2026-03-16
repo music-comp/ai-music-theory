@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: First Tonal Area and Second Tonal Area
 slug: first-tonal-area-and-second-tonal-area
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 33
 pdf_page: 752
 section: "The Binary Model for Sonata Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "FTA"
   - "STA"
   - "first theme area"
   - "second theme area"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form
 extends: []
@@ -37,7 +31,6 @@ related:
   - closing-section
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I analyze a sonata form exposition?"
   - "What are the FTA and STA in sonata form?"

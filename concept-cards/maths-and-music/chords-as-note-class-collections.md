@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chords as Note Class Collections
 slug: chords-as-note-class-collections
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: chord-notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 44
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - chord as pitch class set
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmony
 extends: []
@@ -33,7 +27,6 @@ related:
   - voicing
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What defines a chord mathematically?"
   - "Why can a chord be played in different octaves and still be the same chord?"

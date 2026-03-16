@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sonata Form
 slug: sonata-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: large-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 25
 pdf_page: 367
 section: "25.1 Sonata Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "first-movement form"
   - "sonata-allegro form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
   - modulation
@@ -43,7 +37,6 @@ contrasts_with:
   - sonatina-form
   - rondo-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is sonata form?"
   - "What are the three main sections of sonata form?"

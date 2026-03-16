@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Single-Interval Motive
 slug: single-interval-motive
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 16
 pdf_page: 364
 section: "Single-Interval Motives"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "interval motive"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
 extends:
@@ -34,7 +28,6 @@ related:
   - hidden-motivic-repetitions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a single-interval motive?"
   - "How can a single interval serve as motivic material?"

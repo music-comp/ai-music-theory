@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: 4-Cube Trio
 slug: four-cube-trio
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: voice-leading maps
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 175
 section: "4-Cube Trio"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Power Towers (original name)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - boretz-region
   - boretz-spider
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - cube-dance
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is 4-Cube Trio?"
   - "How does the voice-leading map for seventh chords compare to Cube Dance for triads?"

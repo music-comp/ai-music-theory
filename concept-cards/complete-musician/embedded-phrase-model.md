@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Embedded Phrase Model
 slug: embedded-phrase-model
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase model
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 17
 pdf_page: 404
 section: "The Pre-Dominant in Embedded Phrase Models"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "EPM"
   - "mini T-PD-D-T"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
   - contrapuntal-expansion
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - cadence-types
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an embedded phrase model?"
   - "How does an EPM differ from a structural cadence?"

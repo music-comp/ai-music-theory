@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Substitute Chords in Sequences
 slug: substitute-chords-in-sequences
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: sequential-treatment
 tier: intermediate/advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 39
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - altered chords in sequences
   - chromatic chords in sequences
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sequences-and-quasi-sequences
   - diatonic-and-chromatic-sequences
@@ -36,7 +30,6 @@ related:
   - voice-leading-in-accompaniment
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How should substitute chords be used within sequences?"
   - "What is the quasi-melodic function of substitute notes?"

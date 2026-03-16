@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Developing Spectra
 slug: developing-spectra
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: timbral-gis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 91
 section: "4.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "DVSP"
   - "developing spectral pattern"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - timbral-gis
   - direct-product-gis
@@ -34,7 +28,6 @@ extends:
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a developing spectrum (DVSP)?"
   - "How can timbral evolution be modeled using GIS?"

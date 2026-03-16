@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrygian Half Cadence
 slug: phrygian-half-cadence
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: cadences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: null
 section: "The phrygian half cadence (PHC)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "PHC"
   - "Phrygian cadence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - half-cadence
 extends:
@@ -34,7 +28,6 @@ related:
   - strong-predominant
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a phrygian half cadence?"
   - "In what key context does the phrygian half cadence occur?"

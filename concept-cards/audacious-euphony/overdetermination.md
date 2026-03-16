@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Overdetermination
 slug: overdetermination
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: theoretical-framework
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,17 +14,14 @@ chapter_number: 2
 pdf_page: 35
 section: "Triads Are Homophonous Diamorphs"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "robustness"
   - "Babylonianism"
   - "dual determination"
   - "double determination"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - near-evenness
   - consonant-triad
@@ -38,7 +32,6 @@ related:
   - classical-versus-romantic-syntax
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is overdetermination in music theory?"
   - "Why do consonant triads serve both diatonic and chromatic syntax?"

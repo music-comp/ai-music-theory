@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval
 slug: interval
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval-fundamentals
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 70
 section: "Intervals and Melody"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "dyad"
   - "intervallic distance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-and-pitch-class
   - half-step-and-whole-step
@@ -36,7 +30,6 @@ related:
   - melodic-and-harmonic-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an interval?"
   - "What is a dyad?"

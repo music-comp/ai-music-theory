@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Frequency and Period
 slug: frequency-and-period
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: periodic-functions
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 118
 section: "Vibrations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "pitch and frequency"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-functions
 extends:
@@ -35,7 +29,6 @@ related:
   - effect-of-horizontal-stretching-on-pitch
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the relationship between frequency and period?"
   - "How does period determine pitch?"

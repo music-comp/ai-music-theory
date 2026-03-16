@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Mehrdeutigkeit (Multiple Meaning)"
 slug: mehrdeutigkeit
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: enharmonic-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 61
 section: "The Historical Emergence of Augmented Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Multiple meaning"
   - "Enharmonic multiple meaning"
   - "Enharmonic reinterpretation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad
 extends: []
@@ -38,7 +32,6 @@ related:
   - enharmonic-seam
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Mehrdeutigkeit?"
   - "How does the augmented triad's enharmonic potential work?"

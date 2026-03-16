@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Node/Arrow System
 slug: node-arrow-system
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-foundations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 224
 section: "9.1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "node-arrow system"
   - "(NODES, ARROW)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - transformation-graph-definition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a node/arrow system?"
   - "What is the foundational structure underlying transformation graphs?"

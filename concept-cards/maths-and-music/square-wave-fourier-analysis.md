@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Square Wave Fourier Analysis
 slug: square-wave-fourier-analysis
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: fourier-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 118
 section: "Example: the Square Wave"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "square wave"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fourier-series
   - fourier-coefficients
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - pure-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Fourier series of a square wave?"
   - "Why does the square wave have only odd harmonics?"

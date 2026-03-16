@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Applied Leading-Tone Chord
 slug: applied-leading-tone-chord
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: applied chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 24
 pdf_page: 538
 section: "Applied Leading-Tone Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "secondary leading-tone chord"
   - "applied diminished seventh"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - applied-chord
   - diminished-seventh-chord
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - applied-dominant-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
 ---

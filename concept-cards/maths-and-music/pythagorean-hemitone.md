@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pythagorean Hemitone
 slug: pythagorean-hemitone
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: pythagorean
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 152
 section: "The Pythagorean Scale"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Pythagorean limma
   - "ratio 256:243"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pythagorean-scale
   - greater-whole-tone
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - just-semitone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the half-step interval in the Pythagorean scale?"
 ---

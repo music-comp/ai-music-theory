@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Common-Tone Diminished Seventh
 slug: common-tone-diminished-seventh
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 96
 section: "Seventh chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "common-tone dominant seventh"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chord-circle
 extends:
@@ -33,7 +27,6 @@ related:
   - wrong-way-resolutions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a common-tone diminished seventh and its generalization?"
   - "How does the spiral diagram generalize the common-tone concept?"

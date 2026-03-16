@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parsimonious Trichords
 slug: parsimonious-trichords
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: voice-leading-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Suzannah Clark"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "parsimonious voice leading"
   - "generated trichords"
   - "maximally smooth trichords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
   - voice-leading-graph
@@ -38,7 +32,6 @@ related:
   - tonnetz
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What makes consonant triads 'parsimonious' in voice-leading terms?"
   - "How do PLR operations generate cycles of triads?"

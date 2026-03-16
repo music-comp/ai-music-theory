@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Webern Op. 27 Second Movement Analysis
 slug: webern-op27-second-movement-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: serial-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "8.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - i-arrows-on-graphs
   - ipair-graph
@@ -33,7 +27,6 @@ related:
   - isography
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I-arrows reveal structure in Webern's op. 27 second movement?"
 ---

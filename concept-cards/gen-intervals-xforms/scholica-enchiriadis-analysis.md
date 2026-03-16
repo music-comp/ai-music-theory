@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scholica Enchiriadis Analysis
 slug: scholica-enchiriadis-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: medieval-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 224
 section: "9.5.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Nos qui vivimus analysis"
   - "Symphony of the Diatesseron analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - graph-homomorphism
   - network-of-networks
@@ -35,7 +29,6 @@ related:
   - formal-melody
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Lewin analyze medieval parallel organum using transformation networks?"
   - "How do homomorphisms, product networks, and networks-of-networks differ?"

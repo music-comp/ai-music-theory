@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Division Algorithm
 slug: division-algorithm
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: number-systems
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 14
 section: "Some Properties of Integers"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Euclidean division"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sets-and-number-systems
 extends: []
@@ -34,7 +28,6 @@ related:
   - note-classes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Division Algorithm?"
   - "How does integer division relate to octave equivalence?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Semitonal Voice Leadings Between Triads
 slug: semitonal-voice-leadings
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: cataloging
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: null
 section: "Section 3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "16 semitonal voice leadings"
   - "maximally efficient triadic connections"
   - "semitone-only voice leadings"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading
   - voice-leading-efficiency
@@ -38,7 +32,6 @@ related:
   - chromatic-second-practice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How many semitonal voice leadings exist between consonant triads?"
   - "How can voice-leading possibilities be systematically cataloged?"

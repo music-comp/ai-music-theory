@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Types of Six-Four Chords
 slug: types-of-six-four-chords
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,16 +14,13 @@ chapter_number: 26
 pdf_page: 398
 section: "26.11 Types of Six-Four Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "pedal six-four"
   - "passing six-four"
   - "cadential six-four"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - second-inversion-voice-leading
   - cadential-six-four
@@ -35,7 +29,6 @@ related:
   - doubling-rules-triads
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three types of six-four chords?"
   - "When is it appropriate to use a second-inversion triad?"

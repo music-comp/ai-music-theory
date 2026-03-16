@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Verse-Chorus Form
 slug: verse-chorus-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: pop-form
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 5
 pdf_page: null
 section: "VII.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - aaba-form
   - phrase-structure
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - aaba-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the core sections of verse-chorus form?"
   - "How do verse-chorus cycles work?"

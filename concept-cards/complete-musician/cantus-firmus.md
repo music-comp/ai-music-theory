@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cantus Firmus
 slug: cantus-firmus
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: fundamentals
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: 94
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "CF"
   - "cantus firmi"
   - "fixed song"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - melody
 extends: []
@@ -35,7 +29,6 @@ related:
   - first-species-counterpoint
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cantus firmus?"
 ---

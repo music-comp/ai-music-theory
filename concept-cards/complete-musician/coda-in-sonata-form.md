@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Coda in Sonata Form
 slug: coda-in-sonata-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 33
 pdf_page: 752
 section: "Recapitulation and Coda"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "codetta"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form-recapitulation
 extends: []
@@ -32,7 +26,6 @@ related:
   - closing-section
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a coda in sonata form?"
   - "What is a codetta?"

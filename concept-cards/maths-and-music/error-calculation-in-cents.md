@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Error Calculation in Cents
 slug: error-calculation-in-cents
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: approximation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 110
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - integral-intervals
 extends: []
@@ -33,7 +27,6 @@ related:
   - in-the-cracks-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I calculate the approximation error for an integer ratio on the keyboard?"
   - "What does it mean for the keyboard to be 'sharp' or 'flat' relative to an integer ratio?"

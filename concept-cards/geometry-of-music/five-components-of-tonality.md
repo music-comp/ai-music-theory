@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Five Components of Tonality
 slug: five-components-of-tonality
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: tonality
 tier: foundational
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 21
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "five features of tonality"
   - "components of tonal music"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -38,7 +32,6 @@ related:
   - tonality-as-spectrum
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the five components of tonality?"
   - "How do the five components constrain each other?"

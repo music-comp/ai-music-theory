@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Klangvertretung in Schubert Analysis
 slug: klangvertretung-clark
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical frameworks and methods
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Suzannah Clark"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "tone representation in analysis"
   - "triadic-functional identity of tones"
   - "Clark's Klangvertretung analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klangvertretung
   - common-tone-relationships
@@ -38,7 +32,6 @@ related:
   - diatonic-chromatic-hearing
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can Klangvertretung be used as an analytical tool?"
   - "What does Clark's approach reveal about Schubert's chromatic progressions?"

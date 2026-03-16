@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chord Progressions and Circle of Fifths
 slug: chord-progressions-and-circle-of-fifths
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 44
 section: "Progressions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - circle of fifths progression
   - circle of fourths progression
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-labeling
 extends: []
@@ -35,7 +29,6 @@ related:
   - half-diminished-seventh-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a chord progression?"
   - "What is the circle of fifths?"

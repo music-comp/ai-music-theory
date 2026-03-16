@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrapuntal vs. Harmonic Syntax
 slug: contrapuntal-vs-harmonic-syntax
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: epistemic-issues
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 303
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - dual syntax
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-tone
 extends: []
@@ -34,7 +28,6 @@ related:
   - nonharmonic-consonance
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does contrapuntal syntax relate to harmonic syntax in tonal music?"
   - "Why does combining two syntaxes create analytical ambiguity?"

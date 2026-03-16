@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Verwandtschaftsgrad
 slug: verwandtschaftsgrad
 
-# === CLASSIFICATION ===
 category: pitch-space
 subcategory: distance metrics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "degree of relatedness"
   - "grade of kinship"
   - "Verwandtschaftsgrad (degree of relationship)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
 extends: []
@@ -37,7 +31,6 @@ related:
   - quintschritt-terzschritt
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is harmonic distance measured on the Tonnetz?"
   - "What is Verwandtschaftsgrad and how does it work?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrasting Continuous Period
 slug: contrasting-continuous-period
 
-# === CLASSIFICATION ===
 category: form
 subcategory: structural patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 20
 pdf_page: 462
 section: "Types of Periods"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "CCP"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - period
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - parallel-interrupted-period
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a contrasting continuous period?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Node/Arrow System Isomorphism
 slug: node-arrow-system-isomorphism
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-mappings
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 224
 section: "9.4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "NODEMAP isomorphism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - node-arrow-system
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - node-arrow-system-homomorphism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When are two node/arrow systems isomorphic?"
   - "What is a NODEMAP?"

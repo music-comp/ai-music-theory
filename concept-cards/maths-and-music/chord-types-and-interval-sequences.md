@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chord Types and Interval Sequences
 slug: chord-types-and-interval-sequences
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: triads
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 44
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - interval sequence
   - chord interval pattern
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chords-as-note-class-collections
 extends: []
@@ -38,7 +32,6 @@ related:
   - cyclic-permutations-and-root-identification
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is a chord type defined mathematically?"
   - "What interval sequences define the standard chord types?"

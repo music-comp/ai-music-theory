@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Note
 slug: note
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: null
 section: "Notation of Notes"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - staff
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - rest-values
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a note in music notation?"
   - "What are the components of a written note?"

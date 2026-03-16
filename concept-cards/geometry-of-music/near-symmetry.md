@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Near Symmetry
 slug: near-symmetry
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 109
 section: "3.8-3.10"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "approximate symmetry"
   - "near transpositional symmetry"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nearly-even-chords
   - three-note-chord-space
@@ -35,7 +29,6 @@ related:
   - voice-leading-lattices
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does 'near symmetry' mean for chords?"
   - "Why does near symmetry enable efficient voice leading?"

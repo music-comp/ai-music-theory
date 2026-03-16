@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Crisis and Harmonic Anomaly
 slug: tonal-crisis-harmonic-anomaly
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: interpretive-frameworks
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Steven Rings"
@@ -17,16 +14,13 @@ chapter_number: 18
 pdf_page: 488
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - harmonic surplus
   - tonal disruption
   - extratonal surplus
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - plr-transformations
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - monotonality-principle
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a tonal crisis in neo-Riemannian analysis?"
   - "How do analysts identify and respond to harmonic anomaly?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fifth Species Counterpoint
 slug: fifth-species
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: species-counterpoint
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "florid counterpoint"
   - "free species"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - first-species
   - second-species
@@ -37,7 +31,6 @@ related:
   - free-counterpoint
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does fifth species combine the previous four species?"
   - "What new elements does fifth species introduce?"

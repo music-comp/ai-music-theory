@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: First-Order Properties
 slug: first-order-properties
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 257
 section: "The logical structure of protofunctionality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - progression tendencies
   - transition probabilities
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - zeroth-order-properties
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - zeroth-order-properties
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are first-order properties in harmonic analysis?"
   - "How do you distinguish genuine harmonic tendencies from zeroth-order effects?"

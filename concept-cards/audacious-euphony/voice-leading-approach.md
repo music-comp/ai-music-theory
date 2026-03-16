@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice-Leading Approach
 slug: voice-leading-approach
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: distance-metrics
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 19
 section: "Three Ways to Calculate Triadic Distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "voice-leading distance"
   - "voice-leading proximity"
   - "voice-leading parsimony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-distance
   - idealized-voice-leading
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - root-interval-approach
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is voice-leading parsimony?"
   - "How does the voice-leading approach measure triadic distance?"

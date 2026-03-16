@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Natural Logarithm
 slug: natural-logarithm
 
-# === CLASSIFICATION ===
 category: logarithms-and-measurement
 subcategory: logarithms
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 66
 section: "Calculating Using the Natural Logarithm"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - ln
   - log_e
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - logarithmic-functions-as-inverses
   - change-of-base-formula
@@ -35,7 +29,6 @@ related:
   - multiplicative-to-additive-conversion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the natural logarithm?"
   - "How can the natural logarithm be used to compute musical interval conversions?"

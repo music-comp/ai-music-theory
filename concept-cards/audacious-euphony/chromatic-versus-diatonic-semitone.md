@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic versus Diatonic Semitone
 slug: chromatic-versus-diatonic-semitone
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 35
 section: "Hexatonic Progressions, Tonnetz Representations, and Triadic Transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - p-transformation
   - l-transformation
@@ -33,7 +27,6 @@ related:
   - single-semitonal-displacement
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between chromatic and diatonic semitones in hexatonic theory?"
   - "How do P and L differ in semitone type?"

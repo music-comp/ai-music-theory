@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Symmetric Division of the Octave
 slug: symmetric-division-of-octave
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: intervallic structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: "Contrary Motion and Balance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "equal division of the octave"
   - "perfectly even division"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - near-evenness
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the symmetric divisions of the chromatic octave?"
   - "Why do symmetric collections have special voice-leading properties?"

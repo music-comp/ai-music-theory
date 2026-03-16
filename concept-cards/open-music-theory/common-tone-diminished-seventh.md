@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Common-Tone Diminished Seventh Chord
 slug: common-tone-diminished-seventh
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: embellishing-chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: null
 section: "V.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "CTo7"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fully-diminished-seventh-chord
   - neighbor-tone
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - viio7
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do common-tone chords relate to voice-leading efficiency?"
   - "What is a CTo7 chord and how does it differ from viio7?"

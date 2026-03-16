@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Omnibus
 slug: omnibus
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: chromatic sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 36
 pdf_page: 829
 section: "The Omnibus"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-contrary-motion
   - dissonant-prolongation
@@ -34,7 +28,6 @@ related:
   - symmetrically-constructed-harmonies
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the omnibus?"
 ---

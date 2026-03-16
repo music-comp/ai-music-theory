@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neo-Riemannian Operations (Complete System)
 slug: neo-riemannian-operations
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: complete-system
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Schritt/Wechsel system"
   - "complete triadic transformation group"
   - "24-operation group"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
 extends:
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - common-tone-tonality
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the complete system of neo-Riemannian operations?"
   - "How do Schritte and Wechsel relate to PLR transformations?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scale as Ruler
 slug: scale-as-ruler
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-theory
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: 134
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "scale as metric"
   - "scale as distance measure"
   - "musical ruler"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-note-chord-space
 extends: []
@@ -37,7 +31,6 @@ related:
   - goldilocks-principle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a scale, from Tymoczko's geometric perspective?"
   - "How does a scale function as a measure of musical distance?"

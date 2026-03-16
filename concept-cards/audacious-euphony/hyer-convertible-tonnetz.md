@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Hyer's Convertible Tonnetz"
 slug: hyer-convertible-tonnetz
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: Tonnetz variants
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 190
 section: "Some Previous Proposals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Hyer's lattice"
   - "Hyer's geometry"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz-glossary
   - l-transformation
@@ -39,7 +33,6 @@ related:
   - mobius-strip-topology
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Hyer's convertible Tonnetz?"
   - "How does the Tonnetz represent both diatonic and chromatic relationships?"

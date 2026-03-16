@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seventh Chord Analysis
 slug: seventh-chord-analysis
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: analysis
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 138
 section: "Seventh Chords and Harmonic Analysis"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chords
   - seventh-chord-types
@@ -34,7 +28,6 @@ related:
   - lead-sheet-notation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I analyze seventh chords with roman numerals?"
 ---

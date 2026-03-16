@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Three-Voice Triadic Sequences
 slug: three-voice-triadic-sequences
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 4
 pdf_page: 155
 section: "Three voices and the circle of triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triadic-circle-of-diatonic-triads
   - repeating-contrapuntal-pattern
@@ -34,7 +28,6 @@ related:
   - canonic-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the triadic circle generate three-voice sequential patterns?"
 ---

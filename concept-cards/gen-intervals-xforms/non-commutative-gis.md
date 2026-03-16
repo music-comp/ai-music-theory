@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Non-Commutative GIS
 slug: non-commutative-gis
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "non-abelian GIS"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - commutative-vs-noncommutative-gis
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - commutative-time-span-gis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a non-commutative GIS?"
   - "What must I understand before non-commutative GIS structures?"

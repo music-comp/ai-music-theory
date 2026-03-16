@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Reductive Analysis
 slug: reductive-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-method
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 210
 section: "The standardized second practice"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - nonharmonic reduction
   - harmonic reduction
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-tone
   - snap-system
@@ -36,7 +30,6 @@ related:
   - standardized-second-practice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is reductive analysis and what are its three forms?"
   - "How can the nonharmonic system be used computationally to score harmonic interpretations?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transition
 slug: transition
 
-# === CLASSIFICATION ===
 category: form
 subcategory: formal-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: null
 section: "Connective Auxiliary Sections"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "TR"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - formal-sections
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - retransition
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a transition and how does it function?"
   - "How does a transition differ from a retransition?"

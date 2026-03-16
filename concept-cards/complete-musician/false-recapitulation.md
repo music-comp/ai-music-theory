@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: False Recapitulation
 slug: false-recapitulation
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 33
 pdf_page: 752
 section: "Harmonic Anomalies"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form-development
   - sonata-form-recapitulation
@@ -32,7 +26,6 @@ related:
   - subdominant-return
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a false recapitulation?"
 ---

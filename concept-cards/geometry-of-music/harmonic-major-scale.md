@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Major Scale
 slug: harmonic-major-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-types
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 144
 section: "4.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "major scale with lowered sixth"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - stacks-of-thirds
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - harmonic-minor-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the harmonic major scale?"
   - "How does it relate to the harmonic minor?"

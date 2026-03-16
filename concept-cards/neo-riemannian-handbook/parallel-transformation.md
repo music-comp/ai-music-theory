@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parallel Transformation (P)
 slug: parallel-transformation
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: neo-riemannian-operations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Henry Klumpenhouwer"
@@ -17,10 +14,8 @@ chapter_number: 6
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "P transformation"
   - "Quintwechsel"
@@ -28,7 +23,6 @@ aliases:
   - "Variante"
   - "parallel mode change"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
 extends:
@@ -40,7 +34,6 @@ related:
   - hexatonic-systems
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Parallel (P) transformation and how does it work?"
   - "How does P relate to Riemann's Seitenwechsel/Variante terminology?"

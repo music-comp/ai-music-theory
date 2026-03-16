@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ostinato
 slug: ostinato
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: rhythmic-techniques
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,17 +11,13 @@ chapter: "Twentieth-Century Rhythmic Techniques"
 chapter_number: 99
 pdf_page: null
 section: "Supplementary"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
   - ground-bass
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an ostinato?"
   - "How does ostinato create musical structure?"

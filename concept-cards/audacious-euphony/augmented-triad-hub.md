@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Augmented Triad as Hub
 slug: augmented-triad-hub
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: Cube Dance structure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 101
 section: "How Hexatonic and Weitzmann Regions Interact"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "augmented triad as switching station"
   - "cardinal points of Cube Dance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cube-dance
   - weitzmann-region
@@ -37,7 +31,6 @@ related:
   - voice-leading-zone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What role do augmented triads play on Cube Dance?"
   - "How do augmented triads connect hexatonic and Weitzmann regions?"

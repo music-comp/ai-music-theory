@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rhythmic Increase and Decrease in Cadences
 slug: rhythmic-increase-and-decrease-in-cadences
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: cadential-technique
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 24
 section: "Melodic Considerations: Cadence Contour"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - written-out ritardando
   - written-out accelerando
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadence-contour
   - tendency-of-the-smallest-notes
@@ -37,7 +31,6 @@ related:
   - sentence-irregularities-and-extensions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does rhythmic activity change at a cadence?"
   - "What is a written-out ritardando?"

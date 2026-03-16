@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Reduction Strategy
 slug: reduction-strategy
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: strategies
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: 159
 section: "Reduction to a Triadic Subset"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "reduction to a subset"
   - "reduction to a triadic subset"
   - "triadic reduction"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
   - four-approaches-to-dissonance
@@ -40,7 +34,6 @@ contrasts_with:
   - deletion-strategy
   - substitution-strategy
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I apply the four dissonance strategies (deletion, reduction, substitution, combination)?"
   - "What distinguishes deletion from reduction as dissonance strategies?"

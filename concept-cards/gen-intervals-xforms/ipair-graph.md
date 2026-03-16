@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: IPAIR Graph
 slug: ipair-graph
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: non-intervallic-transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 206
 section: "8.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "inversional pair graph"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - i-arrows-on-graphs
 extends: []
@@ -33,7 +27,6 @@ related:
   - webern-op27-second-movement-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an IPAIR graph?"
   - "How does IPAIR function as a thematic graph?"

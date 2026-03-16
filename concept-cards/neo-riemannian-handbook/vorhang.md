@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Vorhang
 slug: vorhang
 
-# === CLASSIFICATION ===
 category: form
 subcategory: formal analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Scott Burnham"
@@ -17,16 +14,13 @@ chapter_number: 16
 pdf_page: 447
 section: "Reading between the Lines"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "curtain"
   - "curtain measure(s)"
   - "Vorhang (curtain)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-function
 extends:
@@ -37,7 +31,6 @@ related:
   - schlusswirkung
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Vorhang in Riemann's analytical practice?"
   - "How does Riemann handle contrasting introductory material within a period?"

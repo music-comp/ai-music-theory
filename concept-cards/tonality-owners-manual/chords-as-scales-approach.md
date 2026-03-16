@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chords-as-Scales Approach
 slug: chords-as-scales-approach
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-reduction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 203
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - textural-reduction
   - thinking-within-the-chord
@@ -34,7 +28,6 @@ related:
   - analytical-ambiguity-in-reduction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can arpeggiated textures be analyzed without forcing them into chorale-like models?"
 ---

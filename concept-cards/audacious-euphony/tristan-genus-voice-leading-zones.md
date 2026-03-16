@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tristan-Genus Voice-Leading Zones
 slug: tristan-genus-voice-leading-zones
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: tetrachordal systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 171
 section: "Boretz-group transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tetrachordal voice-leading zones"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tristan-genus
   - voice-leading-zone
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - voice-leading-zones
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are voice-leading zones calculated for Tristan-genus chords?"
   - "What do the zone numbers mean in the tetrachordal system?"

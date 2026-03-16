@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Frequencies of Keyboard Notes
 slug: frequencies-of-keyboard-notes
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: acoustics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 58
 section: "Frequencies of Keyboard Notes"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - keyboard frequency calculation
   - A440 tuning
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - semitone-ratio
 extends:
@@ -35,7 +29,6 @@ related:
   - multiplicative-composition-of-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I calculate the frequency of any keyboard note?"
   - "What is the frequency of A4 (concert pitch)?"

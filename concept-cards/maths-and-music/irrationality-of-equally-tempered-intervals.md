@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Irrationality of Equally-Tempered Intervals
 slug: irrationality-of-equally-tempered-intervals
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 11
 pdf_page: 138
 section: "Irrationality of Equally-Tempered Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - irrationality theorem for equal temperament
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - unique-factorization-in-positive-rationals
   - rational-interval
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - just-interval
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Are equally tempered intervals rational?"
   - "Why are equal temperament and just intonation fundamentally incompatible?"

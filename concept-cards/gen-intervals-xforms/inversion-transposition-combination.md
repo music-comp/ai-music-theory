@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Combination of Inversion and Transposition
 slug: inversion-transposition-combination
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: inversion-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 86
 section: "3.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inversion-operation
   - transposition-operation
@@ -35,7 +29,6 @@ related:
   - inversion-equivalence-conditions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens when a transposition is composed with an inversion?"
   - "When does T_n commute with an inversion I_u^v?"

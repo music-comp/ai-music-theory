@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: TCH Interval
 slug: tch-interval
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: motivic-analysis
 tier: advanced
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -14,12 +11,9 @@ chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
 section: "10.1"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "transposition chain interval"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tch-transformation
   - rich-transformation
@@ -28,7 +22,6 @@ related:
   - mozart-k550-development-analysis
   - bartok-syncopation-analysis
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a TCH interval in the context of RI-chaining?"
 ---

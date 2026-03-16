@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Approximating Standard Keyboard Intervals
 slug: approximating-standard-keyboard-intervals
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 74
 section: "Approximating Standard Keyboard Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - interval approximation in n-chromatic scales
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - n-chromatic-scale
   - multiplicative-to-additive-conversion
@@ -35,7 +29,6 @@ related:
   - twelve-chromatic-scale
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How closely can a non-standard n-chromatic scale approximate standard keyboard intervals?"
   - "How do you convert semitones to n-chromatic units?"

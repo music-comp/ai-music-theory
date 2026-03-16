@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generalized Set Theory
 slug: generalized-set-theory
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: geometric-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 393
 section: "Generalized set theory"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "generalized chord-scale theory"
   - "cross-domain structural analogies"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading-of-scales
   - enharmonic-equivalence
@@ -36,7 +30,6 @@ related:
   - chromatic-vs-diatonic-perspective
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do structural analogies work between different chord-and-scale domains?"
   - "What scales are common in twentieth-century music and how are they related?"

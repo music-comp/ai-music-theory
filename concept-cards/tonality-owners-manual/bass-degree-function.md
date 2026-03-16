@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Bass-Degree Function
 slug: bass-degree-function
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 311
 section: "A theory of harmonic cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "bass-function correlation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -32,7 +26,6 @@ related:
   - harmonic-cycle-theory
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the bass note predict harmonic function in functional tonality?"
   - "Which bass degrees support tonic and dominant, and which provide harmonic variation?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hexatonic Poles in Parsifal
 slug: hexatonic-poles-in-parsifal
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: Wagner analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 162
 section: "Hexatonic Poles in Parsifal"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-pole
   - reduction-strategy
@@ -36,7 +30,6 @@ related:
   - h-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do hexatonic poles function as a motivic element in Parsifal?"
   - "How does the reduction strategy reveal hidden voice-leading relationships?"

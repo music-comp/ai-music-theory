@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Circle of Keys
 slug: circle-of-keys
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: key-distance
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 362
 section: "Two models of key distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Heinichen's Musicalische Circul"
   - "circular model of key relations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - key-distance-pitch-class-changing
 extends:
@@ -35,7 +29,6 @@ related:
   - enharmonic-equivalence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are keys arranged in circular key space?"
   - "How do key distance metrics relate to modulatory practice?"

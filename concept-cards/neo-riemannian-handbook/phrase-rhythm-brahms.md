@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrase Rhythm in Brahms
 slug: phrase-rhythm-brahms
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: phrase-rhythm
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Paul Berry"
@@ -17,15 +14,12 @@ chapter_number: 17
 pdf_page: 474
 section: Commentary
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - Brahms phrase structure
   - phrase-metric analysis of Brahms
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - metric-freedom-in-song
   - text-declamation
@@ -37,7 +31,6 @@ related:
   - auftakttheorie
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Riemann analyze phrase rhythm in Brahms's late songs?"
   - "What is the relationship between metric organization and phrase structure in Brahms?"

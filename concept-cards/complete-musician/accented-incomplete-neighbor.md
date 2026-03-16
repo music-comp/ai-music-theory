@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Accented Incomplete Neighbor
 slug: accented-incomplete-neighbor
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 13
 pdf_page: 302
 section: "The Appoggiatura"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - AIN
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - incomplete-neighbor
   - accented-vs-unaccented-dissonance
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - incomplete-neighbor
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmony and Polyphony in the Renaissance
 slug: harmony-and-polyphony
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: origins-of-tonality
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 257
 section: "Harmony and polyphony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - protofunctionality
 extends: []
@@ -32,7 +26,6 @@ related:
   - tendency-histogram
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Was early functionality confined to homophonic styles?"
   - "How does Renaissance polyphony relate to emerging functional tonality?"

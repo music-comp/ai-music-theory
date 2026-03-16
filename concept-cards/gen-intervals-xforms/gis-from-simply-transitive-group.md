@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: GIS from Simply Transitive Group
 slug: gis-from-simply-transitive-group
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: simply-transitive-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 188
 section: "7.1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 7.1.1"
   - "simply transitive group theorem"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - simply-transitive-group
   - generalized-interval-system
@@ -37,7 +31,6 @@ related:
   - group-of-transpositions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does a GIS relate to a simply transitive group?"
   - "Can any simply transitive group generate a GIS?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scale Degree Arithmetic
 slug: scale-degree-arithmetic
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: operations
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 137
 section: "4.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "modular scale arithmetic"
   - "scale degree numbers"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-as-ruler
 extends: []
@@ -34,7 +28,6 @@ related:
   - scalar-inversion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do scale degree numbers work?"
   - "What is scale degree arithmetic?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sequence as Reductional Target
 slug: sequence-as-reductional-target
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-reduction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 155
 section: "Sequences as reductional targets"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "sequence-based reduction"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - disguised-repetition-and-overt-sequence
   - near-sequence
@@ -35,7 +29,6 @@ related:
   - textural-reduction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is analytical reduction, and what are its varieties?"
   - "How do sequences serve as analytical middlegrounds?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Variation Methods
 slug: variation-methods
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: motivic-variation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 14
 section: "Comment on Examples"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - methods of variation
   - variation techniques
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - variation
@@ -38,7 +32,6 @@ related:
   - non-chordal-notes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is developing variation?"
   - "How do I vary a motive?"

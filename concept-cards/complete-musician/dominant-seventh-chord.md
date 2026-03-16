@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dominant Seventh Chord
 slug: dominant-seventh-chord
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: seventh-chords
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 6
 pdf_page: 138
 section: "Musical Characteristics of Seventh Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "V7"
   - "Mm7"
   - "major-minor seventh"
   - "dominant seventh"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chord-types
   - triads-in-major-keys
@@ -38,7 +32,6 @@ related:
   - tritone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a dominant seventh chord?"
   - "What is a seventh chord?"

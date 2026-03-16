@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Clustered Chords
 slug: clustered-chords
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 98
 section: "3.6, 3.9"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "highly uneven chords"
   - "chords near the boundary"
   - "chromatic clusters"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-note-chord-space
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - nearly-even-chords
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are clustered chords and where do they lie in chord space?"
   - "How can very uneven chords also participate in efficient voice leading?"

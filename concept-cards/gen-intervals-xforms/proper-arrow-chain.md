@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Proper Arrow Chain
 slug: proper-arrow-chain
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-structure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.7.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - arrow-chain
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - arrow-chain
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What makes an arrow chain 'proper'?"
   - "How do proper arrow chains define precedence?"

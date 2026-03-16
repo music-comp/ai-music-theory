@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Twelve-Tone Technique
 slug: twelve-tone-technique
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: serialism
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: 74
 section: "Twelve-Tone Music"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - dodecaphony
   - twelve-tone music
   - twelve-tone method
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-chromatic-scale
   - modular-chromatic-intervals
@@ -39,7 +33,6 @@ related:
   - z-twelve-as-chromatic-interval-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is twelve-tone technique?"
   - "How is a twelve-tone row chart constructed?"

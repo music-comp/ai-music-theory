@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nebenverwandt Saturation
 slug: nebenverwandt-saturation
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: harmonic texture
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 141
 section: "Departure -> Return Scripts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "N-saturated texture"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nebenverwandt
   - auf-dem-flusse-analysis
@@ -33,7 +27,6 @@ related:
   - transformational-substitution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does it mean for a passage to be nebenverwandt-saturated?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Exchanging Operations (X1, X2, X4, X5)"
 slug: exchanging-operations
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: octatonic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,17 +14,14 @@ chapter_number: null
 pdf_page: 282
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - X1
   - X2
   - X4
   - X5
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - octatonic-pitch-class-set
 extends: []
@@ -36,7 +30,6 @@ related:
   - queer-operations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the exchanging operations X1, X2, X4, X5?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Figured Bass
 slug: figured-bass
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: notation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 19
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "thoroughbass"
   - "basso continuo figures"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inversion
   - triad
@@ -35,7 +29,6 @@ related:
   - roman-numeral-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is figured bass?"
   - "What do the numbers in figured bass mean?"

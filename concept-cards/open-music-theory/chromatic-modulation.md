@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Modulation
 slug: chromatic-modulation
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: null
 section: "V.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "enharmonic modulation"
   - "common-tone modulation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modal-mixture
   - modulation
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - diatonic-modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you modulate to distantly related keys?"
   - "How does mode mixture facilitate chromatic modulation?"

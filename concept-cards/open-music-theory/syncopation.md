@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Syncopation
 slug: syncopation
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 11
 pdf_page: null
 section: "Syncopation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - beat
   - meter
@@ -34,7 +28,6 @@ related:
   - dot
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is syncopation?"
   - "How is syncopation created?"

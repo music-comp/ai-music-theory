@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Major Triad
 slug: major-triad
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: triads
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 44
 section: "Major Chord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - major chord
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-types-and-interval-sequences
 extends: []
@@ -37,7 +31,6 @@ contrasts_with:
   - diminished-triad
   - augmented-triad
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct a major triad using interval sequences?"
   - "What distinguishes a major triad from a minor triad mathematically?"

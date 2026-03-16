@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dominant Seventh Chord
 slug: dominant-seventh-chord
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: seventh chord types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 165
 section: "The Tristan Genus as Nearly Even Tetrachord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "V7"
   - "dominant seventh"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diminished-seventh-chord
   - nearly-even-tetrachord
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - half-diminished-seventh-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant seventh chord function in the Tristan-genus system?"
   - "What is the relationship between dominant seventh and diminished seventh chords in voice-leading theory?"

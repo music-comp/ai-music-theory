@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Schenker's Melodic-Harmonic Synthesis"
 slug: schenker-melodic-harmonic-synthesis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: historical-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 276
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Schenker's integration of melodic and harmonic space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - multiple-musical-spaces
   - zarlino-istitutioni-harmoniche
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - rameau-harmonic-theory
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Schenker synthesize melodic and harmonic spaces?"
   - "How does Schenker's synthesis relate to Zarlino's?"

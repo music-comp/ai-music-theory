@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Five-Part Rondo
 slug: five-part-rondo
 
-# === CLASSIFICATION ===
 category: form
 subcategory: large-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 25
 pdf_page: 375
 section: "25.3 Rondo Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "5-part rondo"
   - "ABACA form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rondo-form
 extends:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - seven-part-rondo
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is five-part rondo form?"
   - "What are the two designs of five-part rondo?"

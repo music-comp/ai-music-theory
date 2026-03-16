@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Secondary Dominant
 slug: secondary-dominant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 15
 pdf_page: null
 section: "Secondary dominant chords (V(7)/V)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "V/x"
   - "V7/x"
   - "applied dominant"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonicization
   - applied-chord
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - secondary-leading-tone-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a secondary dominant?"
   - "How do I identify a secondary dominant chord?"

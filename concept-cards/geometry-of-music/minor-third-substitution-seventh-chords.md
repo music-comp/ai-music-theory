@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Minor-Third Substitution for Seventh Chords
 slug: minor-third-substitution-seventh-chords
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-techniques
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 307
 section: "8.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "seventh-chord minor-third relations"
   - "diminished-seventh substitution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tesseract-model-dominant-sevenths
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - major-third-substitution
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why do seventh chords substitute by minor third while triads substitute by major third?"
   - "How does the diminished seventh chord enable minor-third substitution?"

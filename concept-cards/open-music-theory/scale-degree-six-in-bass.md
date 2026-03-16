@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scale Degree Six in the Bass
 slug: scale-degree-six-in-bass
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "la in the bass"
   - "^6 in the bass"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - tonic-prolongation
@@ -36,7 +30,6 @@ related:
   - phrygian-half-cadence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is la (^6) harmonized at phrase beginnings, middles, and endings?"
   - "What chords harmonize ^6 in the bass?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sectional Variations
 slug: sectional-variations
 
-# === CLASSIFICATION ===
 category: form
 subcategory: variations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 26
 pdf_page: 587
 section: "Sectional Variations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - variation-set
   - binary-form
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - continuous-variations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does binary form relate to sonata form?"
 ---

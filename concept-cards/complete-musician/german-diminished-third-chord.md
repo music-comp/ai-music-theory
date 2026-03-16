@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: German Diminished Third Chord
 slug: german-diminished-third-chord
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: augmented sixth
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 30
 pdf_page: 678
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Ger7"
   - "inverted German sixth"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - german-augmented-sixth
 extends:
@@ -34,7 +28,6 @@ related:
   - enharmonic-reinterpretation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes Italian, German, and French augmented sixth chords?"
 ---

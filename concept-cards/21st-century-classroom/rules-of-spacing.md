@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rules of Spacing
 slug: rules-of-spacing
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: rules
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 26
 pdf_page: 391
 section: "26.6 Rules of Spacing"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "spacing rules"
   - "spacing error"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-definition
   - voice-ranges
@@ -34,7 +28,6 @@ related:
   - doubling-rules-triads
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the spacing rules in four-part voice leading?"
   - "What is a spacing error?"

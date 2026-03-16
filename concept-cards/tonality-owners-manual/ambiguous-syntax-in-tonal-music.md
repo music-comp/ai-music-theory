@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ambiguous Syntax in Tonal Music
 slug: ambiguous-syntax-in-tonal-music
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: epistemic-issues
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 303
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - contrapuntal-vs-harmonic-syntax
 extends: []
@@ -33,7 +27,6 @@ related:
   - garden-path-modulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is tonal music pervasively ambiguous?"
   - "What are the main sources of analytical ambiguity?"

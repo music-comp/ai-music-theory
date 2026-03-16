@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cylindrical Tonnetz
 slug: cylindrical-tonnetz
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: Tonnetz variants
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 187
 section: "Some Previous Proposals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "cylinder model"
   - "cylindrical representation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-cycle
   - tonnetz-glossary
@@ -37,7 +31,6 @@ contrasts_with:
   - mobius-strip-topology
   - diatonic-tonnetz
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the cylindrical Tonnetz representation?"
   - "How does the cylinder model relate to hexatonic cycles?"

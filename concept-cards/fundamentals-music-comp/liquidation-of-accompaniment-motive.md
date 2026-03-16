@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Liquidation of Accompaniment Motive
 slug: liquidation-of-accompaniment-motive
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: motivic-organization
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 51
 section: "Treatment of the Motive of the Accompaniment"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive-of-the-accompaniment
   - liquidation
@@ -36,7 +30,6 @@ related:
   - accompaniment-types
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When and how is the accompaniment motive modified or liquidated?"
   - "How does accompaniment liquidation relate to thematic liquidation?"

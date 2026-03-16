@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Enharmonic Equivalence
 slug: enharmonic-equivalence
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 3
 section: "Enharmonicism"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "enharmonic"
   - "enharmonicism"
   - "enharmonic spelling"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - accidentals
   - pitch-and-pitch-class
@@ -36,7 +30,6 @@ related:
   - key
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is enharmonic equivalence?"
   - "When should one enharmonic spelling be used over another?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pythagorean Chromatic Scale
 slug: pythagorean-chromatic-scale
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: pythagorean
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: 152
 section: "The Pythagorean Scale"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pythagorean-scale
   - comma-of-pythagoras
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - just-intonation-chromatic-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the Pythagorean scale extended to a chromatic scale?"
 ---

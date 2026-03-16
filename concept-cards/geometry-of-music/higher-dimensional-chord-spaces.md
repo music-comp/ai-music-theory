@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Higher-Dimensional Chord Spaces
 slug: higher-dimensional-chord-spaces
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-spaces
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 110
 section: "3.9"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "n-dimensional chord space"
   - "four-note chord space"
   - "generalized chord spaces"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-note-chord-space
   - three-note-chord-space
@@ -38,7 +32,6 @@ related:
   - near-symmetry
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the general structure of chord space for n-note chords?"
   - "How do the principles of the Mobius strip generalize to higher dimensions?"

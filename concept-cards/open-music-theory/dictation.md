@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dictation
 slug: dictation
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: aural-skills
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 15
 pdf_page: null
 section: "Strategies for Dictation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ear training dictation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - solfege
   - rhythm
@@ -35,7 +29,6 @@ related:
   - protonotation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is dictation in music?"
   - "What strategies help with rhythmic dictation?"

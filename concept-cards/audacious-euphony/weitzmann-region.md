@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Weitzmann Region
 slug: weitzmann-region
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: augmented-triad-systems
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 77
 section: "The Structure of a Weitzmann Region"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "W-region"
   - "Augmented-triad region"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad
   - weitzmann-six-triad-cluster
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - hexatonic-region
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Weitzmann region?"
   - "How do I identify which Weitzmann region a triad belongs to?"

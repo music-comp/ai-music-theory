@@ -1,5 +1,5 @@
 ---
-concept: "One More Time" Technique
+concept: 'One More Time Technique'
 chapter: "Exposition III: Subordinate Theme"
 source: "Analyzing Classical Form"
 pdf_page: 389

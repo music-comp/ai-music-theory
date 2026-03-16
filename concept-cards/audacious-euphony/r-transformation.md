@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "R Transformation (Relative)"
 slug: r-transformation
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: weitzmann-transformations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 79
 section: "Weitzmann Transformations and N/R Cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Relative transformation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
 extends: []
@@ -40,7 +34,6 @@ contrasts_with:
   - l-transformation
   - p-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes L, P, R, N, and S transformations?"
   - "What is the R transformation?"

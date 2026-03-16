@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: START Node
 slug: start-node
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-structure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.7.6"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - input-node
   - precedence-ordered-system
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - input-node
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can structural priority be established when formal input nodes don't match musical intuition?"
 ---

@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Collection Analysis
 slug: collection-analysis
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-methods
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Analyzing with Modes, Scales, and Collections"
 chapter_number: 8
 pdf_page: null
 section: "VIII.9"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-modes-20c
   - octatonic-collection
@@ -26,7 +20,6 @@ extends: []
 related:
   - set-theory-analysis
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you analyze music using modes and collections?"
   - "How do you identify the prevailing mode in 20th-century music?"

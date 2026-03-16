@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading vs. Chord Progression
 slug: voice-leading-vs-chord-progression
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: definition
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "counterpoint vs. harmony"
   - "voice mappings vs. chord succession"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-in-pitch-space
   - chord-progression
@@ -37,7 +31,6 @@ related:
   - conjunct-melodic-motion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a voice leading vs. a chord progression?"
   - "How do voice leadings and chord progressions differ?"

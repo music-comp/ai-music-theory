@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transitivity Sets
 slug: transitivity-sets
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 154
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - orbits under an operation
   - I-partnerships
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
   - inversion-operation
@@ -35,7 +29,6 @@ related:
   - internal-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are transitivity sets and how do they reveal operation structure?"
 ---

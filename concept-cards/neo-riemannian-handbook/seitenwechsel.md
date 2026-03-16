@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seitenwechsel (Mode Exchange)
 slug: seitenwechsel
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: neo-riemannian-operations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,10 +14,8 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "side exchange"
   - "lateral change"
@@ -28,7 +23,6 @@ aliases:
   - "mode change"
   - "Variante relationship"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - harmonic-dualism
@@ -39,7 +33,6 @@ related:
   - plr-transformations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Seitenwechsel and how does it relate to the P transformation?"
   - "Why is Seitenwechsel the most fundamental Wechsel operation?"

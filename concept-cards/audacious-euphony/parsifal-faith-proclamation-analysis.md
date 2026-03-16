@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Parsifal Faith Proclamation Analysis"
 slug: parsifal-faith-proclamation-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: piece-specific analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "Two Analytical Vignettes: Wagner and Brahms"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - convertible-tonnetz
   - diatonic-encapsulation
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - brahms-first-symphony-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the convertible Tonnetz analyze Wagner's Parsifal?"
   - "What forces halt a plagal drift on the Tonnetz?"

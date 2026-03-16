@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rhythm
 slug: rhythm
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: temporal-fundamentals
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 33
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pulse-and-beat
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - meter
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is rhythm?"
 ---

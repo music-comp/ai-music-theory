@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "i-III-V# Complex"
 slug: i-iii-vsharp-complex
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: classical-origins
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 85
 section: "Historical Origins of Weitzmann Regions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Minor tonic / relative major / major dominant complex"
   - "Classical Weitzmann core"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - weitzmann-region
   - n-transformation
@@ -36,7 +30,6 @@ related:
   - expanded-nr-chains
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the Classical origins of Weitzmann regions?"
   - "How does the i-III-V# complex relate to the Weitzmann region?"

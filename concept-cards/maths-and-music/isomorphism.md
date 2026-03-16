@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Isomorphism
 slug: isomorphism
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: morphisms
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 82
 section: "Homomorphism"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - group isomorphism
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - homomorphism
 extends:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - homomorphism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an isomorphism?"
   - "What does it mean for two groups to be isomorphic?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Horizontal Polytonality
 slug: horizontal-polytonality
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 247
 section: "Polytonality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "contrapuntal polytonality"
   - "imitative polytonality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - polytonality
 extends:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - chordal-polytonality
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is horizontal polytonality?"
   - "How do real canons create polytonal effects?"

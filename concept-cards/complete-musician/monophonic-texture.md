@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Monophonic Texture
 slug: monophonic-texture
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: texture
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 138
 section: "Musical Texture"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "monophony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - musical-texture
 extends:
@@ -34,7 +28,6 @@ contrasts_with:
   - polyphonic-texture
   - homophonic-texture
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is monophonic texture?"
 ---

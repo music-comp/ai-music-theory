@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Soft Revolution
 slug: soft-revolution
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: evolutionary framework
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 225
 section: "The Soft Revolution"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "gradual syntactic change"
   - "evolutionary model of harmonic change"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-syntax-hypothesis
   - preadaptation
@@ -38,7 +32,6 @@ related:
   - homophonous-diamorph
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the soft revolution in music history?"
   - "How did chromatic syntax emerge from diatonic tonality?"

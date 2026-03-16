@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diminished Triad
 slug: diminished-triad
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: triads
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 44
 section: "Diminished and Augmented Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - diminished chord
   - dim chord
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-types-and-interval-sequences
 extends: []
@@ -38,7 +32,6 @@ contrasts_with:
   - major-triad
   - minor-triad
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a diminished triad?"
   - "Does the diminished triad have a discernible root?"

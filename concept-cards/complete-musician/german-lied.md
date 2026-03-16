@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: German Lied
 slug: german-lied
 
-# === CLASSIFICATION ===
 category: form
 subcategory: variations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 28
 pdf_page: 637
 section: "Modal Mixture and the German Lied"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "art song"
   - "Lied"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modal-mixture
   - chromatic-modulation
@@ -36,7 +30,6 @@ related:
   - character-piece
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does modal mixture relate to borrowed chords?"
 ---

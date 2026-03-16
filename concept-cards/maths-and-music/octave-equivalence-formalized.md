@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octave Equivalence Formalized
 slug: octave-equivalence-formalized
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Octave identification"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - octave identification
   - pitch class equivalence
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-chromatic-scale
 extends:
@@ -37,7 +31,6 @@ related:
   - z-twelve-as-chromatic-interval-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does modular arithmetic model octave equivalence?"
   - "How are the 12 note classes formally represented?"

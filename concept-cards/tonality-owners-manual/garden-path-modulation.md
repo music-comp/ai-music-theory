@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Garden-Path Modulation
 slug: garden-path-modulation
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: modulation
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 303
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ambiguous-syntax-in-tonal-music
 extends: []
@@ -32,7 +26,6 @@ related:
 contrasts_with:
   - pivot-chord-modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a garden-path modulation?"
   - "How can key changes create the impression of nonfunctionality?"

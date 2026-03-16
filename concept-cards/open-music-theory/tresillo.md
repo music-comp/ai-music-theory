@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tresillo and Pop Rhythm
 slug: tresillo
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: pop-rhythm
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: null
 section: "VII.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "3+3+2"
   - "double tresillo"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - simple-meter
   - syncopation
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - triplet
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the relationship between tresillo and African/Cuban traditions?"
   - "How do you distinguish tresillo from real triplets?"

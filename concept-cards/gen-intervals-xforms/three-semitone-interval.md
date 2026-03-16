@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Three-Semitone Interval
 slug: three-semitone-interval
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: impressionist-analysis
 tier: advanced
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -14,13 +11,10 @@ chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
 section: "10.4"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "interval 3"
   - "minor third interval"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive-y
 extends: []
@@ -29,7 +23,6 @@ related:
   - tristan-chord-in-reflets
   - product-networks
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the 3-semitone interval proliferate in Debussy's Reflets?"
 ---

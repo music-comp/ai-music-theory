@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Juxtaposition
 slug: juxtaposition
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: formal-construction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 18
 pdf_page: 100
 section: "The Group of Subordinate Themes"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - mere juxtaposition
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - subordinate-theme-group
   - loose-construction
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - developing-variation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are subordinate themes joined together in a sonata exposition?"
   - "What is juxtaposition in musical form?"

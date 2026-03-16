@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parable of the Ant
 slug: parable-of-the-ant
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 87
 section: "3.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "ant on wallpaper"
   - "single-tile representation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - wallpaper-periodicity
   - ordered-pitch-space
@@ -36,7 +30,6 @@ related:
   - boundary-behavior
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does ignoring octave and order in music relate to geometry?"
   - "Why is chord space a Mobius strip?"

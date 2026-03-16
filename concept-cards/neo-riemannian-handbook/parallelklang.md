@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parallelklang (Parallel Chord)
 slug: parallelklang
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Brian Hyer"
@@ -17,10 +14,8 @@ chapter_number: 3
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - parallel chord
   - Tp (tonic parallel)
@@ -28,7 +23,6 @@ aliases:
   - Dp (dominant parallel)
   - relative chord
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - harmonic-function
@@ -42,7 +36,6 @@ contrasts_with:
   - leittonwechselklang
   - variante
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do subsidiary chords represent primary functions in Riemann's theory?"
   - "What must I know before understanding neo-Riemannian operations?"

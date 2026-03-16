@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hierarchical Voice Leading
 slug: hierarchical-voice-leading
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: chromatic-vs-diatonic
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 357
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "nested voice-leading patterns"
   - "hierarchically self-similar transformations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - scalar-voice-leading-notation
@@ -37,7 +31,6 @@ related:
   - nested-interval-cycles
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do chordal and scalar voice leadings interact hierarchically?"
   - "What are hierarchically self-similar transformations in music?"

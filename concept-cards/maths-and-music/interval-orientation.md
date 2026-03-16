@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval Orientation
 slug: interval-orientation
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: ratios
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 58
 section: "Orientation of Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - interval direction
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-as-frequency-ratio
 extends: []
@@ -33,7 +27,6 @@ related:
   - multiplicative-composition-of-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you determine if an interval is upward or downward?"
   - "What ratio values correspond to upward vs. downward intervals?"

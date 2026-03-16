@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Double Determination
 slug: double-determination
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: double syntax
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 230
 section: "On Musical Overdetermination"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "triple overdetermination"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - overdetermination
   - preadaptation
@@ -36,7 +30,6 @@ related:
   - soft-revolution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is double determination in Western music?"
   - "How do multiple levels of overdetermination interact?"

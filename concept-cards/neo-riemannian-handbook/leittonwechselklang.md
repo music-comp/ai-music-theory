@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Leittonwechselklang (Leading-Tone Change Chord)
 slug: leittonwechselklang
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Brian Hyer"
@@ -17,17 +14,14 @@ chapter_number: 3
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - leading-tone change chord
   - Tl (tonic Leittonwechsel)
   - Sl (subdominant Leittonwechsel)
   - Dl (dominant Leittonwechsel)
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - harmonic-function
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - parallelklang
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do subsidiary chords represent primary functions in Riemann's theory?"
   - "What must I know before understanding neo-Riemannian operations?"

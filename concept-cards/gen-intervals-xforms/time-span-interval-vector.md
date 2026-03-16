@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Time-Span Interval Vector
 slug: time-span-interval-vector
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: rhythmic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 119
 section: "Example 5.4.1, Section 5.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "rhythmic interval vector"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span-gis
   - attack-ordered-dyad
@@ -38,7 +32,6 @@ related:
   - embedding-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is Forte's interval vector generalized to the non-commutative time-span GIS?"
   - "What is the role of attack-ordered dyads and forwards-oriented intervals?"

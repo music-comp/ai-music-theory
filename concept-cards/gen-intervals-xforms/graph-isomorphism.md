@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Graph Isomorphism
 slug: graph-isomorphism
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-mappings
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 224
 section: "9.4.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "(NODEMAP, SGMAP) isomorphism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - node-arrow-system-isomorphism
   - isomorphism
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - graph-homomorphism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When are two transformation graphs isomorphic?"
   - "What is the formal basis for isography?"

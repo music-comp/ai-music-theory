@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sentence
 slug: sentence
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: null
 section: "Archetype 1: The Sentence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "sentential"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - cadence
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - period
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a sentence and what are its two subphrases?"
   - "What are the four traits of a continuation?"

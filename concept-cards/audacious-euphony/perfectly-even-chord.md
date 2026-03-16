@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Perfectly Even Chord
 slug: perfectly-even-chord
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: theoretical-framework
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: "Near Evenness, Minimal Voice Leading, and the Central Role of Augmented Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "perfectly symmetric chord"
   - "equal division of the octave"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ contrasts_with:
   - near-evenness
   - consonant-triad
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a perfectly even chord?"
   - "Why can't perfectly even chords voice-lead smoothly to chords of the same type?"

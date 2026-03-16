@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Descending 6-5 Sequence
 slug: descending-six-five-sequence
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: contrapuntal-techniques
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 47
 section: "Two more families"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - retrograde ascending 5-6 sequence
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - loop-families-in-rock
 extends: []
@@ -34,7 +28,6 @@ related:
   - melodic-principle-of-harmony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the descending 6-5 sequence?"
   - "How does the same sequence function differently in classical and rock contexts?"

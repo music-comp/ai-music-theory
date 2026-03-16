@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Analytical Ambiguity in Reduction
 slug: analytical-ambiguity-in-reduction
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-reduction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 203
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-reduction
 extends: []
@@ -33,7 +27,6 @@ related:
   - chords-as-scales-approach
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Is analytical reduction always objective?"
   - "Can music admit multiple equally valid reductive analyses?"

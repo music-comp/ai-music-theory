@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Major-Third and Minor-Third Voice-Leading Systems
 slug: major-third-minor-third-systems
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: 236
 section: "6.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chromatic voice-leading systems"
   - "major-third system"
   - "minor-third system"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nineteenth-century-chromaticism
 extends: []
@@ -35,7 +29,6 @@ related:
   - near-evenness
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the major-third and minor-third voice-leading systems?"
   - "Why do chromatic composers keep producing the same root relationships?"

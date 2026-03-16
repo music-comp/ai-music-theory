@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Inversion Properties in Commutative GIS
 slug: commutative-gis-inversion-properties
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: formal-features
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 62
 section: "3.5 Inversions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "commutative inversion simplifications"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inversion-operation
   - transposition-operation
@@ -35,7 +29,6 @@ related:
   - interval-reversing-operation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What special properties do inversions have in commutative GIS?"
   - "How do commutative and non-commutative GIS structures differ?"

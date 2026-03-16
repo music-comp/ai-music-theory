@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Doubling Rules for Triads
 slug: doubling-rules-triads
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: rules
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 26
 pdf_page: 399
 section: "26.12 Summary of Doubling Rules for Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "doubling rules"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-definition
   - triad-inversions
@@ -35,7 +29,6 @@ related:
   - voice-leading-by-bass-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the doubling rules for triads in voice leading?"
   - "When do you double the bass and when don't you?"

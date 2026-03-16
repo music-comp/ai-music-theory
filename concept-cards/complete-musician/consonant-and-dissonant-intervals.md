@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Consonant and Dissonant Intervals
 slug: consonant-and-dissonant-intervals
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval-classification
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 3
 pdf_page: 70
 section: "Consonant and Dissonant Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "consonance"
   - "dissonance"
   - "perfect consonance"
   - "imperfect consonance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - specific-intervals
 extends: []
@@ -36,7 +30,6 @@ related:
   - triads
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes consonance from dissonance?"
   - "Which intervals are consonant and which are dissonant?"

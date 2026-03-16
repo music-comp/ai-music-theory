@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compositional Opportunism
 slug: compositional-opportunism
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: historical-framework
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 229
 section: "6.3 (conclusion)"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "path of least resistance"
   - "mountaineer analogy"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - five-components-of-tonality
 extends: []
@@ -34,7 +28,6 @@ related:
   - stylistic-continuity-thesis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why did Western music develop as it did?"
   - "Are there structural reasons behind music history?"

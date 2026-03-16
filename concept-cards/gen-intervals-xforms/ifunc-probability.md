@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: IFUNC as Probability Distribution
 slug: ifunc-probability
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: interval-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: "5.1.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 5.1.8"
   - IFUNC probability interpretation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ifunc
   - set-in-gis
@@ -36,7 +30,6 @@ related:
   - convolution-interpretation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can IFUNC be interpreted as a probability distribution?"
   - "How does IFUNC model statistical intervallic textures?"

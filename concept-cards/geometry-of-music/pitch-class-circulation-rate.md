@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch-Class Circulation Rate
 slug: pitch-class-circulation-rate
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: macroharmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 179
 section: "5.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "rate of pitch-class circulation"
   - "macroharmonic change rate"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class-circulation
 extends:
@@ -35,7 +29,6 @@ related:
   - chromaticism-quantification
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How fast do macroharmonies change in a piece?"
   - "How do different composers compare in their use of macroharmonic diversity?"

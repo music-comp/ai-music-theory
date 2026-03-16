@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Graph Homomorphism
 slug: graph-homomorphism
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-mappings
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.5.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - node-arrow-system-homomorphism
   - homomorphism
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - graph-isomorphism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a homomorphism of transformation graphs?"
   - "How do graph homomorphisms generalize graph isomorphisms?"

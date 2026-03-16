@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Caesura
 slug: caesura
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase model
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 17
 pdf_page: 404
 section: "Subphrases"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pause"
   - "break"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
 extends: []
@@ -34,7 +28,6 @@ related:
   - composite-phrase
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a caesura?"
   - "Does a caesura always mark a subphrase boundary?"

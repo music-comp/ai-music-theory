@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Geometric Transformations of Graphs
 slug: geometric-transformations-of-graphs
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: functions
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 14
 section: "Transformations of Graphs"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "graph transformations"
   - "shifts and stretches"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - functions-and-graphs
 extends: []
@@ -35,7 +29,6 @@ related:
   - retrogression
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the four geometric transformations of function graphs?"
   - "How do graph transformations relate to musical transformations?"

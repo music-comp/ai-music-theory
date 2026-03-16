@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Choriambus
 slug: choriambus
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: rhythmic motive
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 129
 section: "Continuous Upshift"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "Hungarian choriambus"
   - "long-short-short-long"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -33,7 +27,6 @@ related:
   - developmental-core
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the choriambus rhythmic pattern?"
   - "How does the choriambus link thematic materials in Dvorak's 'New World' Symphony?"

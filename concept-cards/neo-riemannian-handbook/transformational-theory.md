@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transformational Theory (Group Theory Foundations)
 slug: transformational-theory
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: mathematical-foundations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Henry Klumpenhouwer"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "transformational approach"
   - "group-theoretic foundations"
   - "Lewin's transformational theory"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
 extends: []
@@ -36,7 +30,6 @@ related:
   - chromatic-transformation-networks
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is transformational theory and how does it differ from traditional harmonic analysis?"
   - "How does the PLR group relate to mathematical group theory?"

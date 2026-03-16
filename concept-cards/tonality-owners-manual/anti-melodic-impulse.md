@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Anti-Melodic Impulse
 slug: anti-melodic-impulse
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: beethoven-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: null
 pdf_page: 451
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Beethoven's anti-melodicism
   - proto-music
   - deliberate genericity
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - the-ludwig
   - schema-theory
@@ -38,7 +32,6 @@ related:
   - form-defining-parameters
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why does Beethoven's music often use simple or generic themes?"
   - "How does Beethoven's approach to melody differ from Mozart's?"

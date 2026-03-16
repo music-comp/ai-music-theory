@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pedal Point in Period Construction
 slug: pedal-point-in-period-construction
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-devices
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 24
 section: "Comment on Periods by Romantic Composers"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - pedal point
   - pedalpoint
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - phrase
@@ -37,7 +31,6 @@ related:
   - harmonic-enrichment-in-the-consequent
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the constructive purpose of a pedal point in period construction?"
   - "When should a pedal point be used or avoided?"

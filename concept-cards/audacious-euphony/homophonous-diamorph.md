@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Homophonous Diamorph
 slug: homophonous-diamorph
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: theoretical-framework
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 35
 section: "Triads Are Homophonous Diamorphs"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "dual-function triad"
   - "dual-system element"
   - "cognate term"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - near-evenness
   - consonant-triad
@@ -38,7 +32,6 @@ related:
   - pan-triadic-syntax
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a homophonous diamorph?"
   - "Why can the same triads participate in two different syntactic systems?"

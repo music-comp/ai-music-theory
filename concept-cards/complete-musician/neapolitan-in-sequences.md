@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neapolitan in Sequences
 slug: neapolitan-in-sequences
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: Neapolitan
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 29
 pdf_page: 661
 section: "The Neapolitan in Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - neapolitan-chord
   - harmonic-sequences
@@ -33,7 +27,6 @@ related:
   - applied-chord-sequence-a2
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Neapolitan chord?"
 ---

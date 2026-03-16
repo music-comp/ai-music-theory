@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Time-Span Interval-Preserving Operation
 slug: time-span-interval-preserving-operation
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "P_{(h,u)}"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span-gis
   - interval-preserving-operation
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - time-span-transposition
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do interval-preserving operations work in the time-span GIS?"
 ---

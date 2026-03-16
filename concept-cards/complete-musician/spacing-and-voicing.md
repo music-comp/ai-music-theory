@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Spacing and Voicing
 slug: spacing-and-voicing
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: voicing
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: 183
 section: "Spacing and Voicing"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - close position
   - open position
   - chord spacing
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - four-voice-texture-satb
 extends: []
@@ -36,7 +30,6 @@ related:
   - voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write a four-voice (SATB) chorale?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Accent
 slug: tonal-accent
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "William E. Caplin"
@@ -17,15 +14,12 @@ chapter_number: 15
 pdf_page: 430
 section: "Expressed Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "accent by tonic return"
   - "tonic-based accent"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - expressed-meter
   - tonality
@@ -36,7 +30,6 @@ related:
   - auftakttheorie
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does tonic return create metrical accent?"
   - "What is tonal accent in Riemann's metric theory?"

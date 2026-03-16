@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Palestrina Style Constraints
 slug: palestrina-style-constraints
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: 210
 section: "The first practice and the SNAP system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - Palestrina style
   - first-practice constraints
   - prima prattica constraints
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - snap-system
   - nonharmonic-tone
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - standardized-second-practice
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What constraints govern nonharmonic tone usage in Palestrina's music?"
   - "How systematic is Palestrina's treatment of dissonance compared to other Renaissance composers?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Musical Building Blocks
 slug: musical-building-blocks
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 10
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - musical blocks
   - structural units
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends:
   - form
@@ -37,7 +31,6 @@ related:
   - period-structure
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is musical form?"
   - "What are the basic units of musical construction?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Intervals as Transpositions
 slug: intervals-as-transpositions
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: simply-transitive-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 188
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "interval-transposition equivalence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - simply-transitive-group
   - generalized-interval-system
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - cartesian-versus-transformational-thinking
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do transpositions relate to intervals in a GIS?"
   - "Can intervals and transpositions be understood as the same phenomenon?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Roman Numeral Analysis
 slug: roman-numeral-analysis
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 20
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Roman numeral notation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triad
   - seventh-chord
@@ -38,7 +32,6 @@ related:
   - harmonic-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Roman numeral analysis?"
   - "How do Roman numerals indicate chord quality?"

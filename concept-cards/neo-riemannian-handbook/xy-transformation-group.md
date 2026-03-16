@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: X/Y Transformation Group
 slug: xy-transformation-group
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: neo-Riemannian-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Robert C. Cook"
@@ -17,15 +14,12 @@ chapter_number: 19
 pdf_page: 529
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - X/Y group
   - mode-exchange/mode-preservation group
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
   - voice-leading
@@ -37,7 +31,6 @@ related:
   - chromatic-transformation-networks
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do objects and transformations interact in neo-Riemannian theory?"
   - "How do I analyze chromatic progressions using neo-Riemannian tools?"

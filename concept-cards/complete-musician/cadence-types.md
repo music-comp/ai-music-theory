@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cadence Types
 slug: cadence-types
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 183
 section: "The Cadence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - cadences
   - cadential types
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonic-and-dominant-as-tonal-pillars
 extends: []
@@ -39,7 +33,6 @@ related:
   - evaded-cadence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cadence?"
   - "What distinguishes a half cadence from a deceptive cadence?"

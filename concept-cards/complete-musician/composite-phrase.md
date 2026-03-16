@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Composite Phrase
 slug: composite-phrase
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase model
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 17
 pdf_page: 404
 section: "Composite Phrases"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - subphrase
   - phrase-model
@@ -33,7 +27,6 @@ related:
   - sentence-structure
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a composite phrase?"
   - "How does harmonic motion unfold in composite phrases?"

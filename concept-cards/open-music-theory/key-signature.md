@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Key Signature
 slug: key-signature
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: null
 section: "Key Signatures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - major-scale
   - accidental
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - accidental
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a key signature?"
   - "What is the order of sharps and flats?"

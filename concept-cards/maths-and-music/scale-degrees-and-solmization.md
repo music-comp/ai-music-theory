@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scale Degrees and Solmization
 slug: scale-degrees-and-solmization
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,17 +14,14 @@ chapter_number: 1
 pdf_page: 14
 section: "Scale Numbers and Solmization"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "scale degrees"
   - "solmization"
   - "solfege"
   - "scale numbers"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-and-chromatic-scales
   - modality-and-key
@@ -38,7 +32,6 @@ related:
   - major-and-minor-modes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are scale degrees and how are they notated?"
   - "What is solmization?"

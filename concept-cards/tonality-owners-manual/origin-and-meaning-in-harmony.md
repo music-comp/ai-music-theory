@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Origin and Meaning in Harmony
 slug: origin-and-meaning-in-harmony
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: origins-of-tonality
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 257
 section: "Origin and meaning"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - protofunctionality
 extends: []
@@ -32,7 +26,6 @@ related:
   - clausula-vera
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Does a procedure's origin determine its meaning?"
   - "Can we use modern theory to analyze early music?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Even vs Uneven Dyads
 slug: even-vs-uneven-dyads
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 98
 section: "3.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord evenness spectrum"
   - "even and uneven intervals"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-note-chord-space
   - harmonic-consistency-and-efficient-voice-leading
@@ -36,7 +30,6 @@ related:
   - tritone-as-midpoint
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does a dyad's evenness relate to its position in chord space?"
   - "Why can both very even and very uneven dyads be linked efficiently?"

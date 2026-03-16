@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: P-for-L Substitution
 slug: p-for-l-substitution
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: substitution
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 139
 section: "Departure -> Return Scripts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "H-class substitution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformational-substitution
   - auf-dem-flusse-analysis
@@ -34,7 +28,6 @@ related:
   - n-for-r-substitution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does P-for-L substitution create variety in departure-return scripts?"
 ---

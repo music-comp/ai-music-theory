@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Third Species Counterpoint
 slug: third-species
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: species-counterpoint
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "four-against-one"
   - "4:1 counterpoint"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - second-species
 extends:
@@ -36,7 +30,6 @@ related:
   - nota-cambiata
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What new dissonance types does third species introduce?"
   - "How does the metric hierarchy work in third species?"

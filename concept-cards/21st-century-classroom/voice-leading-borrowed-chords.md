@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading Borrowed Chords
 slug: voice-leading-borrowed-chords
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: chromatic
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 29
 pdf_page: 418
 section: "29.2 Voice Leading Borrowed Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "mode mixture voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-definition
   - mode-mixture
@@ -34,7 +28,6 @@ related:
   - voice-leading-secondary-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you voice lead borrowed chords?"
   - "How should flat-6 resolve in borrowed chords?"

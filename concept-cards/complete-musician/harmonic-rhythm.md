@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Rhythm
 slug: harmonic-rhythm
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: analysis
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 138
 section: "Musical Texture"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - homophonic-texture
   - harmonic-analysis
@@ -32,7 +26,6 @@ related:
   - musical-texture
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is harmonic rhythm?"
 ---

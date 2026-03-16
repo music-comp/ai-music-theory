@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Applied Chord
 slug: applied-chord
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: applied chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 24
 pdf_page: 538
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "secondary dominant"
   - "applied dominant"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dominant-function
   - triads
@@ -40,7 +34,6 @@ contrasts_with:
   - modal-mixture
   - modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
   - "How do applied chords create tonicization?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Forte Number
 slug: forte-number
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: set-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: null
 section: "VIII.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Forte name"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - set-class
   - prime-form
@@ -34,7 +28,6 @@ related:
   - z-relation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Forte number?"
   - "How does the Forte numbering system work?"

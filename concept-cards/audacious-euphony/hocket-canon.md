@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hocket Canon in Hexatonic Cycles
 slug: hocket-canon
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 35
 section: "The Hexatonic Trance"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-cycle
 extends: []
@@ -32,7 +26,6 @@ related:
   - balanced-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What voice-leading structure underlies a hexatonic cycle?"
   - "How do the three voices of a hexatonic cycle relate to each other?"

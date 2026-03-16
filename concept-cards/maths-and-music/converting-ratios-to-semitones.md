@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Converting Ratios to Semitones
 slug: converting-ratios-to-semitones
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: measurement
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 58
 section: "Semitones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - ratio to semitone conversion
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - semitone-ratio
 extends:
@@ -34,7 +28,6 @@ related:
   - converting-ratios-to-octaves
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I convert a frequency ratio to semitones?"
   - "What is the formula for converting a ratio to semitones?"

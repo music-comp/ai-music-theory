@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Five Features Interdependence
 slug: five-features-interdependence
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: tonality
 tier: foundational
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 21
 section: "1.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "interaction of tonal features"
   - "constraints among tonal components"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - five-components-of-tonality
   - conjunct-melodic-motion
@@ -39,7 +33,6 @@ related:
   - near-evenness
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do the five components constrain each other?"
   - "What are the five components of tonality?"

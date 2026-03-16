@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parallel Phrases
 slug: parallel-phrases
 
-# === CLASSIFICATION ===
 category: form
 subcategory: structural patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 20
 pdf_page: 462
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - period
 extends: []
@@ -32,7 +26,6 @@ related:
 contrasts_with:
   - contrasting-phrases
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are parallel phrases?"
 ---

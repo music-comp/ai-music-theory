@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Musical Form
 slug: musical-form
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: meter
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,17 +14,14 @@ chapter_number: 2
 pdf_page: 30
 section: "Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "form"
   - "song form"
   - "binary form"
   - "ternary form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - melody
   - rhythm
@@ -38,7 +32,6 @@ related:
   - horizontal-structure
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is musical form?"
   - "What are binary and ternary form?"

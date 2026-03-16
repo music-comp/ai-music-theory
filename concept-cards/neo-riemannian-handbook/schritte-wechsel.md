@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Schritte and Wechsel
 slug: schritte-wechsel
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chord classification and progression
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Schritt/Wechsel distinction"
   - "steps and exchanges"
   - "mode-preserving vs. mode-reversing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - harmonic-dualism
@@ -38,7 +32,6 @@ related:
   - plr-transformations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes Schritte from Wechsel?"
   - "How do Schritte and Wechsel relate to mode preservation?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Basic Voice Leading of Scales
 slug: basic-voice-leading-of-scales
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 361
 section: "Two models of key distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - scalar basic voice leading
   - diatonic scale basic voice leading
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - scalar-spiral-diagram
@@ -36,7 +30,6 @@ related:
   - hierarchical-transposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the minimal voice leading connecting two diatonic scales?"
   - "How is the basic voice leading of scales calculated using the spiral diagram?"

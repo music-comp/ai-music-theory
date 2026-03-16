@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Two-Reprise Form
 slug: two-reprise-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: small-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 24
 pdf_page: 346
 section: "24.2 Sectional versus Continuous"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "two reprise"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
 extends: []
@@ -33,7 +27,6 @@ related:
   - sonata-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does 'two-reprise' mean in form analysis?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
-concept: "Down a Third, Up a Step" Sequence
+concept: 'Down a Third, Up a Step Sequence'
 slug: down-a-third-up-a-step-sequence
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: sequential-tonality
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 257
 section: "7.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "descending third ascending step sequence"
   - "1-3 sequence on circle of thirds"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-sequences
   - circle-of-thirds-harmonic
@@ -35,7 +29,6 @@ related:
   - third-substitution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the 'down a third, up a step' sequence and why is it theoretically important?"
   - "How is it related to the descending-fifths sequence?"

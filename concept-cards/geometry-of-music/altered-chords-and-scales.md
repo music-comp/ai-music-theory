@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Altered Chords and Scales
 slug: altered-chords-and-scales
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: jazz-scales
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 383
 section: "10.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord-scale theory in jazz"
   - "altered dominant practice"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-scale-compatibility
   - avoid-notes
@@ -38,7 +32,6 @@ related:
   - polyscalar-composition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do altered chords generate non-diatonic scales in jazz?"
   - "Why does jazz require scale guidance for improvisation?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic and Chromatic Scales
 slug: diatonic-and-chromatic-scales
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: scales
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 14
 section: "Scales"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "major scale"
   - "standard scale"
   - "chromatic scale"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - musical-intervals
   - note-classes
@@ -40,7 +34,6 @@ related:
   - ecclesiastical-modes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the diatonic scale and what is its interval pattern?"
   - "What is the chromatic scale?"

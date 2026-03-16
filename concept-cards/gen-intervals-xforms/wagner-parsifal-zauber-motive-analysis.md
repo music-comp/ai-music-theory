@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Wagner Parsifal Zauber Motive Analysis
 slug: wagner-parsifal-zauber-motive-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: interval-transposition-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 188
 section: "7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Parsifal transformation music analysis"
   - "Zauber motive analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - intervals-as-transpositions
   - ri-chaining
@@ -37,7 +31,6 @@ related:
   - dispersive-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the Zauber motive's intervallic structure govern large-scale tonal organization in Parsifal?"
   - "How does RI-chaining create structural sequencing?"

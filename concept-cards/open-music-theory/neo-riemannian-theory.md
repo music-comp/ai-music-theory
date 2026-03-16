@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Neo-Riemannian Triadic Progressions
 slug: neo-riemannian-theory
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: transformational-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 14
 pdf_page: null
 section: "V.14"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "NROs"
   - "neo-Riemannian operations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triad-types
   - common-tones
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - functional-harmony
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the basic Neo-Riemannian transformations (P, R, L)?"
   - "How does neo-Riemannian theory rationalize non-functional triadic progressions?"

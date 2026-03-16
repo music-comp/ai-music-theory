@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Law of Least Motion
 slug: law-of-least-motion
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: principles
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 19
 section: "Three Ways to Calculate Triadic Distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "principle of least motion"
   - "thoroughbass voice-leading rule"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - single-semitonal-displacement
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the 'law of least motion' and what does it conflate?"
   - "When do common-tone retention and voice-leading work diverge?"

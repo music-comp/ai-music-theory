@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Full Sectional Ternary Form
 slug: full-sectional-ternary-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: ternary
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 31
 pdf_page: 702
 section: "Ternary Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "A||B||A||"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ternary-form
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - continuous-ternary-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is full sectional ternary form?"
   - "When do all sections close in their own tonic?"

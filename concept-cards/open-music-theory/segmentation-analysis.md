@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Segmentation Analysis
 slug: segmentation-analysis
 
-# === CLASSIFICATION ===
 category: form
 subcategory: analytical-methods
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 1
 pdf_page: null
 section: "The Idea Level, the Phrase, and Segmentation Analysis"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - cadence
@@ -33,7 +27,6 @@ related:
   - idea-level
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you perform a segmentation analysis?"
   - "What do square brackets and arcs represent in a segmentation diagram?"

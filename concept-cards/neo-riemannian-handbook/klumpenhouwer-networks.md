@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Klumpenhouwer Networks
 slug: klumpenhouwer-networks
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: network-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Henry Klumpenhouwer"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: null
 section: "Section III"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "K-nets"
   - "K-net analysis"
   - "network isomorphism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - schritt-wechsel-system
@@ -38,7 +32,6 @@ related:
   - plr-transformations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are Klumpenhouwer networks?"
   - "How do objects and transformations interact in neo-Riemannian theory?"

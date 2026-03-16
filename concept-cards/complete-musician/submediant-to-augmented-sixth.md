@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Submediant to Augmented Sixth Conversion
 slug: submediant-to-augmented-sixth
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: augmented sixth
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 30
 pdf_page: 678
 section: "bVI and the Augmented Sixth Chord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-sixth-chord
   - submediant-mixture
@@ -32,7 +26,6 @@ related:
   - german-augmented-sixth
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I resolve an augmented sixth chord?"
 ---

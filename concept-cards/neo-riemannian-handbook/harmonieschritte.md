@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonieschritte
 slug: harmonieschritte
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chord classification and progression
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Harmonic Steps"
   - "Systematik der Harmonieschritte"
   - "root-interval relations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - harmonic-dualism
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - plr-transformations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Harmonieschritt?"
   - "How do I use Harmonieschritte to classify chord progressions?"

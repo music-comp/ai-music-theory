@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: When to Use Seventh Chords
 slug: when-to-use-seventh-chords
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: technique
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,13 +14,10 @@ chapter_number: 27
 pdf_page: 408
 section: "27.5 When to Use Seventh Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chord-resolution
   - harmonic-function
@@ -32,7 +26,6 @@ related:
   - harmonic-flowchart
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Which chords most commonly receive sevenths?"
   - "How does harmonic function guide seventh chord usage?"

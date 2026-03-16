@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cardinality Equivalence
 slug: cardinality-equivalence
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: voice-leading-geometry
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 539
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - chord-cardinality equivalence
   - doublings-as-surface
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-geometry
   - quadruple-hierarchy
@@ -36,7 +30,6 @@ related:
   - chords-as-scales-approach
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can chords with different doublings (CGG and CCG) be treated as 'the same'?"
   - "How does the hierarchical picture resolve the problem of doublings in voice-leading geometry?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Four Hexatonic Systems
 slug: four-hexatonic-systems
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: "A Minimal-Work Model of the Triadic Universe"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "hexatonic partition"
   - "Northern/Southern/Eastern/Western systems"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-cycle
 extends: []
@@ -35,7 +29,6 @@ related:
   - tonnetz-representation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes the four hexatonic systems from each other?"
   - "How do the four hexatonic systems partition all 24 triads?"

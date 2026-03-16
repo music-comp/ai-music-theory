@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrase Group
 slug: phrase-group
 
-# === CLASSIFICATION ===
 category: form
 subcategory: structural patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 21
 pdf_page: 477
 section: "Asymmetrical Periods"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "phrase chain"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - period
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - period
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a phrase group?"
   - "How does a phrase group differ from a period?"

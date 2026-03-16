@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generalizing Power of Transformational Theory
 slug: generalizing-power-of-transformational-theory
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: simply-transitive-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 188
 section: "7.1.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - simply-transitive-group
   - intervals-as-transpositions
@@ -34,7 +28,6 @@ related:
   - gis-from-simply-transitive-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is transformational theory more general than GIS theory?"
   - "How does transformational theory subsume interval theory?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice-Leading Zones
 slug: voice-leading-zones
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: equivalence classes
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 120
 section: "Voice-Leading Zones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "sum classes"
   - "voice-leading zone system"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cube-dance-graph
   - hexatonic-weitzmann-interaction
@@ -38,7 +32,6 @@ related:
   - clock-face-model
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a voice-leading zone?"
   - "How do voice-leading zones organize triadic space?"

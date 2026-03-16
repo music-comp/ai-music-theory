@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Figure-Ground Reversal (Tetrachordal)"
 slug: figure-ground-reversal-tetrachordal
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: tetrachordal regions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 175
 section: "4-Cube Trio"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Boretz-octatonic figure-ground"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - boretz-region
   - octatonic-region
@@ -34,7 +28,6 @@ related:
   - hexatonic-weitzmann-interaction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can the same graph be interpreted as either Boretz-region or octatonic-region primary?"
   - "What is figure-ground reversal in 4-Cube Trio?"

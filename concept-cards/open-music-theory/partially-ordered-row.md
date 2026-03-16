@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Partially-Ordered Row
 slug: partially-ordered-row
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,12 +11,9 @@ chapter: "Row Properties"
 chapter_number: 9
 pdf_page: null
 section: "IX.3"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "partially ordered set"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-row
   - derived-row
@@ -27,7 +21,6 @@ extends: []
 related:
   - aggregate
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a partially-ordered row?"
   - "How does partial ordering differ from strict serial ordering?"

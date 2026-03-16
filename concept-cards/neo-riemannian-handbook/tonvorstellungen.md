@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonvorstellungen (Tone Imaginations)
 slug: tonvorstellungen
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: perceptual-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,17 +14,14 @@ chapter_number: 5
 pdf_page: 178
 section: "III. Interval Fusion or Klang-Representation?"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Tonvorstellung"
   - "tone imaginations"
   - "mental representations of tones"
   - "tone representations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - klang
@@ -38,7 +32,6 @@ related:
   - empfindung-vorstellung
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are Tonvorstellungen and how do they differ from Tonempfindungen?"
   - "Why did Riemann shift from acoustic to psychological foundations for his theory?"

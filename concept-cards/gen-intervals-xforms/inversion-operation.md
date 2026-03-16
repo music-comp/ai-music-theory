@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Inversion Operation
 slug: inversion-operation
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: formal-features
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 62
 section: "3.5 Inversions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "I_u^v"
   - "u/v inversion"
   - "inversion about u and v"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - label-function
@@ -42,7 +36,6 @@ contrasts_with:
   - transposition-operation
   - interval-preserving-operation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an inversion operation in a GIS?"
   - "How do commutative and non-commutative GIS structures differ?"

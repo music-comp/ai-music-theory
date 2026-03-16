@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pastorale Sonata Analysis
 slug: pastorale-sonata-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: beethoven-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 494
 section: "The 'Pastorale' sonata, Op. 28"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Op. 28 analysis"
   - "Pastorale first movement analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - the-ludwig
   - fauxbourdon
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - fifth-symphony-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the Pastorale sonata differ from Beethoven's more sequential movements?"
   - "What role does fauxbourdon play as a structural principle in this movement?"

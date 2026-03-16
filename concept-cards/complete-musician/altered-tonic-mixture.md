@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Altered Tonic Mixture
 slug: altered-tonic-mixture
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: mixture
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 27
 pdf_page: 616
 section: "Altered Tonic Harmony: i"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "minor tonic in major"
   - "modal shift"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modal-mixture
 extends:
@@ -34,7 +28,6 @@ related:
   - chromatic-pivot-chord-modulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modal mixture?"
 ---

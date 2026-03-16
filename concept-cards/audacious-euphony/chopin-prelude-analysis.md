@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chopin e minor Prelude Analysis
 slug: chopin-prelude-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: Chopin analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 178
 section: "Circumnavigating the Tristan-Genus Universe"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Chopin Op. 28 no. 4 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - four-cube-trio
   - tristan-genus-voice-leading-zones
@@ -35,7 +29,6 @@ related:
   - sequential-templates-tetrachordal
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the Chopin e minor Prelude circumnavigate 4-Cube Trio?"
   - "What are the competing analytical interpretations of the Prelude?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sectional versus Continuous Form
 slug: sectional-vs-continuous
 
-# === CLASSIFICATION ===
 category: form
 subcategory: small-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,16 +14,12 @@ chapter_number: 24
 pdf_page: 344
 section: "24.2 Sectional versus Continuous"
 
-# === CONFIDENCE ===
 extraction_confidence: high
-# high: Source explicitly defines both terms with examples
 
-# === VARIANTS (authority control) ===
 aliases:
   - "sectional form"
   - "continuous form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadence
   - modulation
@@ -38,7 +31,6 @@ related:
   - authentic-cadence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What makes a form sectional versus continuous?"
   - "How does the ending of the first section determine the form descriptor?"

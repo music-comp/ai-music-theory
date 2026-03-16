@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modular Clock
 slug: modular-clock
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Modular clock"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - n-hour clock
   - chromatic clock
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modular-integers
 extends:
@@ -36,7 +30,6 @@ related:
   - n-tone-row-chart
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the modular clock visualize Z_n?"
   - "How is addition in Z_n computed using the clock?"

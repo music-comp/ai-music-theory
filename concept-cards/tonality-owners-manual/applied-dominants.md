@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Applied Dominants
 slug: applied-dominants
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: 311
 section: "Rameau and Bach"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - secondary dominants
   - "V/X"
   - tonicization
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-cycle-theory
   - subdominant-and-dominant-cycles
@@ -38,7 +32,6 @@ related:
   - basic-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are applied dominants and how do they function within functional tonality?"
   - "How do applied dominants enable ascending-fifth sequences?"

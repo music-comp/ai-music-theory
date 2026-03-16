@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Rameau's Harmonic Theory"
 slug: rameau-harmonic-theory
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: historical-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 276
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Rameau's thirds problem"
   - "corps sonore theory"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - multiple-musical-spaces
   - senario
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - zarlino-istitutioni-harmoniche
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Rameau's error regarding harmonic and melodic space?"
   - "How does Lewin critique the harmony-first approach?"

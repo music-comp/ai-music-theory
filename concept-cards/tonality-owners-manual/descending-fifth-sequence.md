@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Descending-Fifth Sequence
 slug: descending-fifth-sequence
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 96
 section: "The imperfect system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "circle-of-fifths sequence"
   - "Fonte"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - diatonic-dyad-circle
@@ -37,7 +31,6 @@ related:
   - repeating-contrapuntal-pattern
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a harmonic sequence, and what role does repetition play in tonal music?"
   - "How do descending-fifth sequences arise from voice-leading geometry?"

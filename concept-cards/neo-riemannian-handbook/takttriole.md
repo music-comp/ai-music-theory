@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Takttriole
 slug: takttriole
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: phrase rhythm
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Scott Burnham"
@@ -17,16 +14,13 @@ chapter_number: 16
 pdf_page: 453
 section: "Expansion and Closure"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "measure triplet"
   - "Triole"
   - "metric triplet"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-function
   - phrase-expansion
@@ -37,7 +31,6 @@ related:
   - essential-accessory-distinction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Takttriole in Riemann's metric analysis?"
   - "How does Riemann handle three-measure groupings within his binary metric framework?"

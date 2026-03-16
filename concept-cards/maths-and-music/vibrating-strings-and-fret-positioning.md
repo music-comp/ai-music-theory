@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Vibrating Strings and Fret Positioning
 slug: vibrating-strings-and-fret-positioning
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: acoustics
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 58
 section: "Vibration of Strings"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - string vibration and pitch
   - inverse proportionality of frequency and length
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-as-frequency-ratio
   - semitone-ratio
@@ -34,7 +28,6 @@ related:
   - multiplicative-composition-of-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does string length relate to pitch?"
   - "How do you calculate fret positions for a given interval?"

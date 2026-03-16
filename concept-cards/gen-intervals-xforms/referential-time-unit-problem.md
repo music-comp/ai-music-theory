@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Referential Time-Unit Problem
 slug: referential-time-unit-problem
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "absolute time-unit problem"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span
 extends: []
@@ -35,7 +29,6 @@ related:
   - local-time-unit
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is a fixed referential time-unit problematic?"
   - "What motivates the non-commutative time-span GIS?"

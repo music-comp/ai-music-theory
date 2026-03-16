@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Galant Schema
 slug: galant-schema
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: galant-schemas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "schema"
   - "stock musical phrase"
   - "partimento pattern"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-degree
   - figured-bass
@@ -39,7 +33,6 @@ related:
   - rule-of-the-octave
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a galant schema?"
   - "How are schemas classified by position (opening, continuation, cadence)?"

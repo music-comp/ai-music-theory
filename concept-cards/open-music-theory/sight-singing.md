@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sight-Singing
 slug: sight-singing
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: aural-skills
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 15
 pdf_page: null
 section: "Strategies for Sight-Singing and Sight-Counting"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "sight reading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - solfege
   - scale-degree
@@ -36,7 +30,6 @@ related:
   - protonotation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is sight-singing?"
   - "What strategies help with sight-singing?"

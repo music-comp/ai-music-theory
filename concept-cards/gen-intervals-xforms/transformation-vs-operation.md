@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transformation vs Operation
 slug: transformation-vs-operation
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: foundational-definitions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 154
 section: "Convention 6.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - function
   - group
@@ -35,7 +29,6 @@ related:
   - canonical-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the formal difference between a transformation and an operation?"
   - "Why can a transformation that is not an operation not belong to a group?"

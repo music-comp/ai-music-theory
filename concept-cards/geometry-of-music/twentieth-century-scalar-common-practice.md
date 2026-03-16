@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Twentieth-Century Scalar Common Practice
 slug: twentieth-century-scalar-common-practice
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: historical-synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 368
 section: "9.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "common scales common techniques"
   - "twentieth-century common practice"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-first-composition
   - scale-first-composition
@@ -37,7 +31,6 @@ related:
   - jazz-as-modernist-synthesis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Is there a genuine twentieth-century tonal common practice?"
   - "Why do the same scales appear across such different styles?"

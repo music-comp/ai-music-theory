@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Geometric Series and Summation
 slug: geometric-series-and-summation
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: number-systems
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 30
 section: "Dots"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "geometric series"
   - "geometric sum formula"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sets-and-number-systems
 extends: []
@@ -34,7 +28,6 @@ related:
   - note-durational-values
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the formula for the sum of a finite geometric series?"
   - "When does an infinite geometric series converge?"

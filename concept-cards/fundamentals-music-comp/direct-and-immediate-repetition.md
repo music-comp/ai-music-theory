@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Direct and Immediate Repetition
 slug: direct-and-immediate-repetition
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: formal-construction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 18
 pdf_page: 100
 section: "The Group of Subordinate Themes"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - immediate repetition in subordinate themes
   - establish-and-abandon repetition
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - subordinate-theme-group
   - loose-construction
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - developing-variation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are subordinate themes established in sonata form?"
   - "What role does repetition play in subordinate theme groups?"

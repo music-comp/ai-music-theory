@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Set Class
 slug: set-class
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: classification
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 46
 section: "2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "OPTIC class"
   - "Tn/TnI-type"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transpositional-set-class
   - inversion-symmetry
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - transpositional-set-class
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a set class?"
   - "What are OPTIC symmetries?"

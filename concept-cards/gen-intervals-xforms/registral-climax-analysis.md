@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Registral Climax Analysis
 slug: registral-climax-analysis
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: impressionist-analysis
 tier: advanced
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -14,11 +11,8 @@ chapter: "Transformation Graphs and Networks (4): Some Further Analyses"
 chapter_number: 10
 pdf_page: 251
 section: "10.4"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - z-forms
   - v-motive
@@ -26,7 +20,6 @@ extends: []
 related:
   - debussy-reflets-dans-leau-analysis
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Lewin analyze the registral trajectory in Debussy's Reflets?"
   - "What is the 'unfinished business' in the climax register?"

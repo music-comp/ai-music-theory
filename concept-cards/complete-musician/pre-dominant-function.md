@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pre-Dominant Function
 slug: pre-dominant-function
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 280
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - predominant
   - PD
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonic-and-dominant-as-tonal-pillars
   - cadence-types
@@ -36,7 +30,6 @@ related:
   - phrase-model
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do pre-dominant chords lead to the dominant?"
 ---

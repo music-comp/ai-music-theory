@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Set Theory Analysis Methodology
 slug: set-theory-analysis
-# === CLASSIFICATION ===
 category: analysis
 subcategory: set-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Analyzing with Set Theory (or not!)"
 chapter_number: 8
 pdf_page: null
 section: "VIII.6"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - segmentation
   - set-class
@@ -26,7 +20,6 @@ extends: []
 related:
   - collection-analysis
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the limitations of set-theory analysis?"
   - "What does set theory not address?"

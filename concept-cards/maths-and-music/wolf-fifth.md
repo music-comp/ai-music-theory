@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Wolf Fifth
 slug: wolf-fifth
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: mean-tone
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: 152
 section: "The Classical Mean-Tone Scale"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - mean-tone-scale
   - lesser-diesis
@@ -33,7 +27,6 @@ related:
   - mean-tone-fifth
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the wolf fifth?"
   - "Why does the mean-tone scale have a wolf fifth?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nineteenth-Century Chromaticism
 slug: nineteenth-century-chromaticism
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: historical-style
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 232
 section: "6.5–6.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chromatic harmony"
   - "Romantic chromaticism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - functional-harmony-ch6
 extends:
@@ -35,7 +29,6 @@ related:
   - chromatic-tradition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did nineteenth-century chromaticism work?"
   - "What are the major-third and minor-third voice-leading systems?"

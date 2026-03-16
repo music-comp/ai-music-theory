@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch vs Pitch Class
 slug: pitch-vs-pitch-class
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch-systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: null
 section: "VIII.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pitch versus pitch class"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - enharmonic-equivalence
   - chromatic-scale
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - pitch-class
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between a pitch and a pitch class?"
   - "Why does post-tonal theory use pitch classes instead of pitches?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrapuntal vs. Harmonic Common Practice
 slug: contrapuntal-vs-harmonic-common-practice
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: historical-framework
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 231
 section: "6.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "two common practices"
   - "contrapuntal vs harmonic rules"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - renaissance-triadic-harmony
   - functional-harmony-ch6
@@ -36,7 +30,6 @@ related:
   - fourth-progressions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the relationship between contrapuntal and harmonic common practices?"
   - "Are harmonic rules derivable from voice-leading rules?"

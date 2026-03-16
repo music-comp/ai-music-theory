@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Greater Whole Tone
 slug: greater-whole-tone
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 138
 section: "Greater Whole Tone (Pythagorean Whole Tone)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Pythagorean whole tone
   - "ratio 9:8"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-fifth
 extends:
@@ -39,7 +33,6 @@ contrasts_with:
   - lesser-whole-tone
   - mean-tone-whole-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the greater whole tone?"
   - "Why is it called the Pythagorean whole tone?"

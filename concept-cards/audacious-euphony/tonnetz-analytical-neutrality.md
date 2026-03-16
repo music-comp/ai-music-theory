@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonnetz Analytical Neutrality
 slug: tonnetz-analytical-neutrality
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: analytical methodology
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 132
 section: "Neighborhoods and Pitch Retention Loops"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tonnetz neutrality"
   - "descriptive neutrality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - connected-tonnetz
 extends: []
@@ -35,7 +29,6 @@ related:
   - cube-dance-vs-tonnetz
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the three forms of analytical neutrality the Tonnetz provides?"
   - "How does the Tonnetz handle ambiguous passages?"

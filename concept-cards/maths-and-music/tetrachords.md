@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tetrachords
 slug: tetrachords
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: scales
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 14
 section: "Scales"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "tetrachord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - musical-intervals
   - diatonic-and-chromatic-scales
@@ -34,7 +28,6 @@ related:
   - equivalence-relations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a tetrachord?"
   - "How does the major scale decompose into tetrachords?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Intervals Calculated in Semitones
 slug: semitone
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: measurement
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 24
 section: "1.6 Intervals (Calculated in Semitones)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - semitone measurement
   - interval in semitones
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - enharmonic-equivalence
 extends: []
@@ -35,7 +29,6 @@ related:
   - interval-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are intervals measured in post-tonal theory?"
   - "Why not use traditional interval names (major third, etc.)?"

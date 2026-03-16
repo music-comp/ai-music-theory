@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Just Minor Seventh
 slug: just-minor-seventh
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 138
 section: "Justly Tuned Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ratio 9:5"
   - 5-limit minor seventh
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-fifth
   - just-minor-third
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - septimal-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the just minor seventh?"
   - "How does the just minor seventh differ from the septimal minor seventh?"

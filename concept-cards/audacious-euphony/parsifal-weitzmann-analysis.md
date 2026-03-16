@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parsifal Weitzmann Analysis
 slug: parsifal-weitzmann-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: wagner-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 97
 section: "Weitzmann Regions without Sequences: Wagner and Strauss"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Parsifal Act 1 mm. 404-413"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - weitzmann-region
   - weitzmann-region-nonsequential-paths
@@ -33,7 +27,6 @@ related:
   - fruhling-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Wagner explore Weitzmann regions nonsequentially?"
 ---

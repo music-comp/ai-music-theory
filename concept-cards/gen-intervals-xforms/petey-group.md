@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: PETEY Group
 slug: petey-group
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: formal-features
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 62
 section: "3.5 Inversions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "PT group"
   - "group of direct transformations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transposition-operation
   - interval-preserving-operation
@@ -36,7 +30,6 @@ related:
   - petinv-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the PETEY group?"
   - "How do transpositions and interval-preserving operations combine?"

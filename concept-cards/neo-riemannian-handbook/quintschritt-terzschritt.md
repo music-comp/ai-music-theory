@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Quintschritt and Terzschritt
 slug: quintschritt-terzschritt
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: fundamental generators
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,17 +14,14 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Q and T generators"
   - "fifth step and third step"
   - "Quintschritt (Q)"
   - "Terzschritt (T)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonieschritte
   - schritte-wechsel
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - plr-transformations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the fundamental generators of Riemann's Harmonieschritte system?"
   - "How do Quintschritt and Terzschritt generate all triadic relationships?"

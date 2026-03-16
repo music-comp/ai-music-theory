@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Slide Along Spiral
 slug: slide-along-spiral
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 37
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - sliding along the spiral
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - spiral-diagrams-for-chord-space
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - loop-on-spiral
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does sliding along the spiral represent musically?"
 ---

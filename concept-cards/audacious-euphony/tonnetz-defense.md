@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Tonnetz Defense (Six Arguments)"
 slug: tonnetz-defense
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: tonnetz-models
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 85
 section: "Remarks on the Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Six reasons for the Tonnetz"
   - "Tonnetz vs. fused-triad graphs"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz-representation
   - tonnetz-distance-measures
@@ -35,7 +29,6 @@ related:
   - cube-dance
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why does Cohn retain the Tonnetz despite its limitations?"
   - "What are the advantages of the Tonnetz over fused-triad graphs?"

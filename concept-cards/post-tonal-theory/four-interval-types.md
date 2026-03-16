@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Four Interval Types
 slug: four-interval-types
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval types
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 29
 section: "1.10 Interval Class"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - interval type hierarchy
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ordered-pitch-interval
   - unordered-pitch-interval
@@ -37,7 +31,6 @@ related:
   - pitch-class-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the four ways of describing an interval in post-tonal theory?"
   - "When should I use each interval type?"

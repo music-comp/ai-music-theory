@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Sequence Analysis
 slug: chromatic-sequence-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-practices
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Robert C. Cook"
@@ -17,15 +14,12 @@ chapter_number: 19
 pdf_page: 534
 section: "Le chasseur maudit"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - chromatic transposition analysis
   - minor-third ascent analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - xy-transformation-group
   - contextual-harmony-analysis
@@ -35,7 +29,6 @@ related:
   - voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I analyze chromatic sequences using neo-Riemannian tools?"
   - "How do chromatic transposition schemes function in late-Romantic music?"

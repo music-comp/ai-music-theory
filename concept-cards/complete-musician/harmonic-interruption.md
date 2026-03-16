@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Interruption
 slug: harmonic-interruption
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 20
 pdf_page: 462
 section: "Interrupted Periods"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "interruption"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - half-cadence
   - period
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - continuous-harmonic-structure
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is harmonic interruption?"
   - "How does interruption relate to period structure?"

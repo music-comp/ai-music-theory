@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Canonical Group
 slug: canonical-group
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: canonical-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: "5.2.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - CANON
   - canonical operations
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - group
@@ -38,7 +32,6 @@ related:
   - interval-preserving-operation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a canonical group?"
   - "How do canonical groups relate to set equivalence?"

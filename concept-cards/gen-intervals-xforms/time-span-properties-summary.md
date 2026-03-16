@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Time-Span GIS Properties Summary
 slug: time-span-properties-summary
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Notes 4.1.7"
   - "time-span GIS summary"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span-gis
   - time-span-transposition
@@ -37,7 +31,6 @@ related:
   - commutative-vs-noncommutative-gis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the key properties of the time-span GIS?"
   - "How do the abstract results from Chapter 3 apply to the time-span GIS?"

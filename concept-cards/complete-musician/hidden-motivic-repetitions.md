@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hidden Motivic Repetitions
 slug: hidden-motivic-repetitions
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: motivic analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 16
 pdf_page: 364
 section: "Hidden Repetitions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "concealed motivic repetitions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - motivic-parallelism
@@ -35,7 +29,6 @@ related:
   - two-level-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are hidden motivic repetitions?"
   - "How can motives be concealed within a musical texture?"

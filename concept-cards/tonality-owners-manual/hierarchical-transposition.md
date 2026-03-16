@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hierarchical Transposition
 slug: hierarchical-transposition
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: transformational-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 357
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - hierarchically nested transformations
   - hierarchical voice leading
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - scalar-spiral-diagram
@@ -36,7 +30,6 @@ related:
   - basic-voice-leading-of-scales
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is hierarchical transposition and how does it differ from simple modulation?"
   - "How can transformations operate simultaneously at multiple structural levels?"

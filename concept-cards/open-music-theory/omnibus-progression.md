@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Omnibus Progression
 slug: omnibus-progression
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 12
 pdf_page: null
 section: "V.12"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dominant-seventh-chord
   - chromatic-voice-leading
@@ -32,7 +26,6 @@ related:
   - chromatic-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the omnibus progression and how does it prolong dominant harmony?"
 ---

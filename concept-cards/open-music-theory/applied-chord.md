@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Applied Chord
 slug: applied-chord
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 15
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "secondary chord"
   - "applied dominant"
   - "applied leading-tone chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonicization
 extends:
@@ -36,7 +30,6 @@ related:
   - secondary-leading-tone-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
   - "What is the difference between applied dominant and applied leading-tone chords?"

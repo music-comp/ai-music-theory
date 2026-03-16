@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rameau-Weber Symmetries
 slug: rameau-weber-symmetries
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: foundational-symmetries
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: null
 section: "Section 1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "four basic symmetries"
   - "pre-Riemannian symmetries"
   - "tonal harmony symmetries"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
   - harmonic-dualism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What symmetries are implicit in traditional tonal theory?"
   - "What did Riemann add to the Rameau/Weber collection of symmetries?"

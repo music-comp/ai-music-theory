@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrast and Variety
 slug: contrast-and-variety
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 1
 pdf_page: 10
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends:
   - form
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - logic-and-coherence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is musical form?"
   - "What distinguishes exact repetition from modified repetition?"

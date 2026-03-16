@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Closely Related Keys
 slug: closely-related-keys
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: key-relationships
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 3
 section: "Key Signatures and the Circle of Fifths"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "neighboring keys"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - circle-of-fifths
   - key-signatures
@@ -34,7 +28,6 @@ related:
   - parallel-keys
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are closely related keys?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Converting Ratios to Octaves
 slug: converting-ratios-to-octaves
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: measurement
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 58
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - ratio to octave conversion
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-as-frequency-ratio
 extends: []
@@ -33,7 +27,6 @@ related:
   - converting-ratios-to-cents
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I measure an interval in octaves?"
   - "Why is base-2 the natural logarithm base for music?"

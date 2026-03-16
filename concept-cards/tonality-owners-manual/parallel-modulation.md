@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Parallel Modulation
 slug: parallel-modulation
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: key-relationships
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 361
 section: "Two models of key distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - parallel key relationship
   - parallel major-minor
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading-of-scales
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - relative-relationship
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the parallel modulation and how does it relate to key distance?"
   - "How does the parallel relationship differ from the relative relationship?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Medial Caesura
 slug: medial-caesura
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 33
 pdf_page: 752
 section: "Transition"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "MC"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form-exposition
   - transition-in-sonata-form
@@ -33,7 +27,6 @@ related:
   - first-tonal-area-and-second-tonal-area
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the medial caesura in sonata form?"
 ---

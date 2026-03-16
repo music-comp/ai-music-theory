@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tendency Tones
 slug: tendency-tones
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: melodic-structure
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 70
 section: "Melody: Characteristics, Writing, and Listening"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "leading tone"
   - "active tones"
   - "active scale degrees"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-degrees
   - half-step-and-whole-step
@@ -37,7 +31,6 @@ related:
   - dominant-seventh-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are tendency tones?"
   - "Why must the leading tone resolve?"

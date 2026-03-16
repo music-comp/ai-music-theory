@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scale-First Composition
 slug: scale-first-composition
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: compositional-technique
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 326
 section: "9.1, 9.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "scale-first technique"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-scale-compatibility
   - scale-lattice
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - chord-first-composition
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can music progress by voice leading between scales rather than chords?"
   - "What is scale-first composition?"

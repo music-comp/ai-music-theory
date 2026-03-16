@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Maximally Smooth Cycles
 slug: maximally-smooth-cycles
 
-# === CLASSIFICATION ===
 category: pitch-space
 subcategory: cyclic triadic structures
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "MSC"
   - "LP/PL cycles"
   - "semitonal cycles"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
   - common-tone-relationships
@@ -37,7 +31,6 @@ related:
   - voice-leading-efficiency
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are maximally smooth cycles?"
   - "How do maximally smooth cycles relate to hexatonic systems?"

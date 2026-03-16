@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Zone-Diametric Relations
 slug: zone-diametric-relations
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: distance relations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 127
 section: "Remarks on Disjunction and Entropy"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "maximum voice-leading distance"
   - "diametrically opposite zones"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zones
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - single-semitonal-displacement
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the maximum voice-leading distance between triads?"
   - "Which transpositions achieve maximum distance?"

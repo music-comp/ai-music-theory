@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: String Fretting and Rational Intervals
 slug: string-fretting-and-rational-intervals
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 11
 pdf_page: 138
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - rational interval construction by string division
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rational-interval
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - irrationality-of-equally-tempered-intervals
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can rational intervals be produced on a string?"
   - "Why were rational intervals accessible to ancient musicians?"

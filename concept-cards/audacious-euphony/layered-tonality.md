@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Layered Tonality
 slug: layered-tonality
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: tonal organization
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: "Hexatonic Progressions, Tonnetz Representations, and Triadic Transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Satyendra's layered tonality"
   - "multi-level tonal organization"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-cycle
   - diatonic-indeterminacy
@@ -37,7 +31,6 @@ related:
   - developmental-core
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is layered tonality?"
   - "How can music be simultaneously diatonic and chromatic?"

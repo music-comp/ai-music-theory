@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: 3+1 Voice-Leading Schema
 slug: three-plus-one-voice-leading
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: 222
 section: "6.3.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "3+1 schema"
   - "three-plus-one"
   - "bass plus upper voices"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - renaissance-triadic-harmony
 extends: []
@@ -37,7 +31,6 @@ related:
   - extended-common-practice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the 3+1 voice-leading schema?"
   - "How do three upper voices move over a bass in Renaissance and later music?"

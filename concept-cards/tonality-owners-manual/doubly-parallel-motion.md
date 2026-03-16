@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Doubly Parallel Motion
 slug: doubly-parallel-motion
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 37
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transposition-along-a-collection
 extends: []
@@ -33,7 +27,6 @@ related:
   - spiral-diagrams-for-chord-space
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is doubly parallel motion?"
   - "How do transposition along chord and scale combine?"

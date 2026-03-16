@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cadence Contour
 slug: cadence-contour
 
-# === CLASSIFICATION ===
 category: melody
 subcategory: cadential-technique
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 24
 section: "Melodic Considerations: Cadence Contour"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - consequent-of-the-period
@@ -36,7 +30,6 @@ related:
   - half-cadence-and-full-cadence-in-periods
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a cadence contour?"
   - "How does the melody behave at a cadence?"

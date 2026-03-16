@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Note Classes
 slug: note-classes
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 14
 section: "Octave Equivalence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "pitch classes"
   - "note class"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - octave-equivalence
   - equivalence-classes
@@ -37,7 +31,6 @@ related:
   - accidentals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a note class?"
   - "How many chromatic note classes exist?"

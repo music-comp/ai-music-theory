@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Intention and Phenomenological Analysis
 slug: tonal-intention-phenomenology
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: interpretive-frameworks
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Steven Rings"
@@ -17,16 +14,13 @@ chapter_number: 18
 pdf_page: 500
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - intentional path analysis
   - phenomenological hearing
   - tonal intention
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - plr-transformations
   - harmonic-function
@@ -39,7 +33,6 @@ related:
   - monotonality-principle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can phenomenological listening bridge paleo- and neo-Riemannian analysis?"
   - "How do I apply neo-Riemannian analysis to a Schubert song?"

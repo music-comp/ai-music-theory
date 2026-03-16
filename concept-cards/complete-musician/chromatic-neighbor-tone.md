@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Neighbor Tone
 slug: chromatic-neighbor-tone
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 13
 pdf_page: 302
 section: "The Chromatic Neighbor Tone"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - CN
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - neighbor-tone
 extends:
@@ -34,7 +28,6 @@ related:
   - accented-neighbor-tone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

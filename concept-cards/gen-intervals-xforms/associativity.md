@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Associativity
 slug: associativity
 
-# === CLASSIFICATION ===
 category: mathematical-foundations
 subcategory: algebraic-structures
 tier: foundational
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 32
 section: "1.3.5, 1.4.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - associative law
   - associative property
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-composition
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - commutativity
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What mathematical concepts must I know before understanding GIS?"
 ---

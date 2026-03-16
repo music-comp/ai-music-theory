@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Analysis Procedure
 slug: harmonic-analysis-procedure
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: harmonic-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "harmonic analysis method"
   - "phrase model analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
   - cadence
@@ -37,7 +31,6 @@ related:
   - harmonic-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I perform a harmonic analysis of a phrase?"
   - "What is the recommended order of steps for harmonic analysis?"

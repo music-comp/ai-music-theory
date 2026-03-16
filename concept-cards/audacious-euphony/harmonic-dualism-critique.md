@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Harmonic Dualism (Critique)"
 slug: harmonic-dualism-critique
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: null
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: "Remarks on Dualism"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "harmonic dualism"
   - "Riemannian dualism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - near-evenness
   - voice-leading-equivalence
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - melodic-dualism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is harmonic dualism and why is it critiqued?"
   - "Does neo-Riemannian theory require belief in harmonic dualism?"

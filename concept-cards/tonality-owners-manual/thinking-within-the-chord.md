@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Thinking Within the Chord
 slug: thinking-within-the-chord
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 96
 section: "Thinking within the chord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "chords as scales"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triadic-configurations
   - ouch-theory
@@ -36,7 +30,6 @@ related:
   - structured-arpeggiation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do surface voices relate to abstract harmonic backgrounds?"
   - "What is the relationship between Schenkerian background and voice-leading geometry?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Four Approaches to Dissonance
 slug: four-approaches-to-dissonance
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: strategies
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 156
 section: "Four Eighteenth-Century Approaches to Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "four dissonance strategies"
   - "Rameau's four strategies"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
   - pan-triadic-syntax
@@ -39,7 +33,6 @@ related:
   - tristan-genus
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I apply the four dissonance strategies (deletion, reduction, substitution, combination)?"
   - "What is the relationship between Rameau's dissonance theory and pan-triadic theory?"

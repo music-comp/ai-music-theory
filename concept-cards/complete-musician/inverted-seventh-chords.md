@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Inverted Seventh Chords
 slug: inverted-seventh-chords
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: chord-structure
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 6
 pdf_page: 138
 section: "Inverted Seventh Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "seventh chord inversions"
   - "6/5"
   - "4/3"
   - "4/2"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chords
   - triad-inversion
@@ -38,7 +32,6 @@ related:
   - seventh-chord-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are seventh chords inverted?"
   - "How do I use figured bass?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Just Major Third
 slug: just-major-third
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: just-intervals
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: 138
 section: "Just Major Third"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - pure major third
   - "5:4 third"
   - "ratio 5:4"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-interval
   - rational-interval
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - pythagorean-major-third
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the just major third?"
   - "How does the just major third compare to the tempered major third?"

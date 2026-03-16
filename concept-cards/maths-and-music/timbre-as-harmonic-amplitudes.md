@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Timbre as Harmonic Amplitudes
 slug: timbre-as-harmonic-amplitudes
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: fourier-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 118
 section: "Harmonics and Overtones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - timbre
   - fourier-series
@@ -36,7 +30,6 @@ related:
   - formants
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do Fourier coefficients determine timbre?"
   - "Why don't phase shifts affect the sound?"

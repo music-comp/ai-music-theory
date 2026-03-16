@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ludwig and Morte Schemas
 slug: ludwig-and-morte-schemas
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 155
 section: "Contrary-motion sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Ludwig schema"
   - "Morte schema"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - contrary-motion-sequence
 extends:
@@ -34,7 +28,6 @@ related:
   - galant-schemas-on-the-dyad-circle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the Ludwig and Morte schemas?"
   - "What are the most common contrary-motion sequences?"

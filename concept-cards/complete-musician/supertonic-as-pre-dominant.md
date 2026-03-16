@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Supertonic as Pre-Dominant (ii)
 slug: supertonic-as-pre-dominant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: 280
 section: "The Supertonic"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - ii chord
   - supertonic
   - iio6
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pre-dominant-function
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - subdominant-as-pre-dominant
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do pre-dominant chords lead to the dominant?"
 ---

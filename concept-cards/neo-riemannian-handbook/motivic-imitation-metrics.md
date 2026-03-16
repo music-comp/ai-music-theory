@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Motivic Imitation in Metrics
 slug: motivic-imitation-metrics
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "William E. Caplin"
@@ -17,16 +14,13 @@ chapter_number: 15
 pdf_page: 426
 section: "Expressed Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "melodic imitation criterion"
   - "statement-response accent"
   - "Aufstellung-Antwort"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - expressed-meter
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - initial-accentuation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does melodic repetition create metrical accent in Riemann's theory?"
   - "What role does imitation play in determining expressed meter?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: BIND Transformation
 slug: bind-transformation
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: serial-transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.6.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rich-transformation
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - rich-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the BIND transformation?"
   - "How does BIND differ from RICH?"

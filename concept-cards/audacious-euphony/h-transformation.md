@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "H Transformation (Hexatonic Pole)"
 slug: h-transformation
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 35
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "hexatonic pole transformation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-pole
   - l-transformation
@@ -37,7 +31,6 @@ related:
   - contrary-motion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the H transformation?"
   - "How does H relate to L and P?"

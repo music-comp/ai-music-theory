@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Four Weitzmann Regions
 slug: four-weitzmann-regions
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: augmented-triad-systems
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 77
 section: "The Structure of a Weitzmann Region"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Weitzmann region partition"
   - "Four augmented-triad regions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - weitzmann-region
   - augmented-triad
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - four-hexatonic-systems
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How many Weitzmann regions are there?"
   - "How do I identify which Weitzmann region a triad belongs to?"

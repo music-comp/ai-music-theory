@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Four Structural Functions in Music
 slug: structural-functions
 
-# === CLASSIFICATION ===
 category: form
 subcategory: analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 25
 pdf_page: 369
 section: "25.2 The Four Structural Functions in Music"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "structural functions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form
   - cadence
@@ -35,7 +29,6 @@ related:
   - sonata-form-development
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the four structural functions in music?"
   - "How do you distinguish expository from developmental function?"

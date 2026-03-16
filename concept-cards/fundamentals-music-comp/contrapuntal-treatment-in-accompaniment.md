@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrapuntal Treatment in Accompaniment
 slug: contrapuntal-treatment-in-accompaniment
 
-# === CLASSIFICATION ===
 category: accompaniment
 subcategory: contrapuntal-techniques
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 51
 section: "Contrapuntal Treatment"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - fugato in homophonic music
   - contrapuntal episodes
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - accompaniment-function
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - semi-contrapuntal-and-quasi-contrapuntal-treatment
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does contrapuntal writing appear in otherwise homophonic music?"
   - "What forms does contrapuntal treatment take in accompaniment?"

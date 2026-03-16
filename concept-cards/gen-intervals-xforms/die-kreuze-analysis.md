@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: '"Die Kreuze" Wedge Analysis'
 slug: die-kreuze-analysis
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: schoenberg-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 154
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - Pierrot Lunaire no. 14 analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
   - wedge-transformation
@@ -34,7 +28,6 @@ related:
   - system-modulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do dyad-focal wedge transformations work?"
 ---

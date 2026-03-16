@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tristan Genus Convertibility
 slug: tristan-genus-convertibility
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: convertible Tonnetz
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 207
 section: "The Convertible Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tetrachordal convertibility"
   - "seventh-chord double syntax"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - convertible-tonnetz
   - tristan-genus
@@ -37,7 +31,6 @@ related:
   - near-evenness
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Does the convertible Tonnetz apply to seventh chords?"
   - "How do Tristan-genus chords participate in double syntax?"

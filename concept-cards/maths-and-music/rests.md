@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rests
 slug: rests
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: duration
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 30
 section: "Rests"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "rest values"
   - "musical rests"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - note-durational-values
 extends: []
@@ -35,7 +29,6 @@ related:
   - dotted-note-duration-formula
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a rest in music notation?"
   - "How do rest durations correspond to note durations?"

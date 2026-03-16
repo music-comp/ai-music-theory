@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ordered Pitch-Class Interval
 slug: ordered-pitch-class-interval
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval types
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 26
 section: "1.8 Ordered Pitch-Class Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - opci
   - directed pitch-class interval
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - pitch-class-interval
@@ -39,7 +33,6 @@ contrasts_with:
   - unordered-pitch-class-interval
   - ordered-pitch-interval
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an ordered pitch-class interval?"
   - "What distinguishes ordered from unordered pitch-class intervals?"

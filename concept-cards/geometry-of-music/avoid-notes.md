@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Avoid Notes
 slug: avoid-notes
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-theory
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 372
 section: "10.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "avoid tones"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ii-v-i-jazz-progression
 extends: []
@@ -34,7 +28,6 @@ related:
   - chord-scale-compatibility
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are avoid notes in jazz?"
   - "Why are certain diatonic notes forbidden over certain chords?"

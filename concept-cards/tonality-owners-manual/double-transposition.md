@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Double Transposition
 slug: double-transposition
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: hierarchical-transformations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: 409
 section: "Strategy and reduction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - dual transposition
   - "T_x t_y transposition"
   - thematic transformation by dual transposition
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - quadruple-hierarchy
   - basic-voice-leading
@@ -38,7 +32,6 @@ related:
   - the-ludwig
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does thematic material transform from one harmony to another?"
   - "What is the relationship between scale transposition and chord transposition?"

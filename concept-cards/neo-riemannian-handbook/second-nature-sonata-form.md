@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Second Nature of Sonata Form
 slug: second-nature-sonata-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata form
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Scott Burnham"
@@ -17,15 +14,12 @@ chapter_number: 16
 pdf_page: 441
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "second nature of form"
   - "naturally given categories in music"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - periodic-function
   - hierarchical-metric-organization
@@ -37,7 +31,6 @@ related:
   - phrase-expansion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does Burnham mean by the 'second nature' of sonata form?"
   - "How does Riemann view the relationship between nature and historical form?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Complementary Intervals
 slug: complementary-intervals
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval class
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 26
 section: "1.8 Ordered Pitch-Class Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - complements mod 12
   - complementation mod 12
   - inversionally related intervals
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ordered-pitch-class-interval
   - mod-12-arithmetic
@@ -36,7 +30,6 @@ related:
   - unordered-pitch-class-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are complementary intervals?"
   - "What happens when you reverse the order of two pitch classes?"

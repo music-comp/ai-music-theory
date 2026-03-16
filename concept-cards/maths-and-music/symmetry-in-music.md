@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Symmetry in Music
 slug: symmetry-in-music
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: melody
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 30
 section: "Symmetry"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "musical symmetry"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - translation
   - transposition
@@ -37,7 +31,6 @@ related:
   - rhythm
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is symmetry in music?"
   - "How do mathematical transformations create musical symmetry?"

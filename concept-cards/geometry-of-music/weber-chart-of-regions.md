@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Weber Chart of the Regions
 slug: weber-chart-of-regions
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: key-relations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 264
 section: "7.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Vial/Weber model"
   - "chart of key relations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - scalar-model-of-key-distance
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Weber chart and how does it model key distance?"
   - "Where does the Weber model fall short compared to the scalar model?"

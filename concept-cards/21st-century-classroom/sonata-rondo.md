@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sonata Rondo Form
 slug: sonata-rondo
 
-# === CLASSIFICATION ===
 category: form
 subcategory: large-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 25
 pdf_page: 380
 section: "25.3.1 Sonata Rondo Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "sonata-rondo"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rondo-form
   - sonata-form
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - seven-part-rondo
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is sonata rondo form?"
   - "How does sonata rondo differ from seven-part rondo?"

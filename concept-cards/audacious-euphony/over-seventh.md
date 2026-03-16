@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Over-Seventh
 slug: over-seventh
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: seventh chord types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 162
 section: "Hexatonic Poles in Parsifal"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "added seventh"
   - "conventional seventh"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - reduction-strategy
   - dominant-seventh-chord
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - under-seventh
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the dualist counterpart of the over-seventh?"
   - "How does the over-seventh relate to the dominant seventh chord?"

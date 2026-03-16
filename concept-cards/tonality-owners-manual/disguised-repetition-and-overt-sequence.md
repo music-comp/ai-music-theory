@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Disguised Repetition and Overt Sequence
 slug: disguised-repetition-and-overt-sequence
 
-# === CLASSIFICATION ===
 category: form
 subcategory: repetition-patterns
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 155
 section: "Sequences as reductional targets"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "disguised model technique"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - repeating-contrapuntal-pattern
   - near-sequence
@@ -34,7 +28,6 @@ related:
   - harmony-and-counterpoint-relationship
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does disguised repetition function in tonal music?"
 ---

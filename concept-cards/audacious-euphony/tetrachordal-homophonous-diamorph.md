@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Tetrachordal Homophonous Diamorph"
 slug: tetrachordal-homophonous-diamorph
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: extended to dissonant harmonies
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 182
 section: "Circumnavigating the Tristan-Genus Universe"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "overdetermined seventh chords"
   - "syntactically ambiguous tetrachords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tristan-genus
   - homophonous-diamorph
@@ -37,7 +31,6 @@ related:
   - tristan-genus-convertibility
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do Tristan-genus chords function as homophonous diamorphs?"
   - "How do seventh chords switch between chromatic and diatonic syntax?"

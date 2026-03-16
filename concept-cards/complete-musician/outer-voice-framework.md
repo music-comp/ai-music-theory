@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Outer-Voice Framework
 slug: outer-voice-framework
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: voice-relationships
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 203
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - bass-soprano counterpoint
   - contrapuntal framework
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading
 extends: []
@@ -34,7 +28,6 @@ related:
   - embellishment-and-reduction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write proper voice-leading connections?"
 ---

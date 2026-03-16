@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Doubling Guidelines
 slug: doubling-guidelines
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: voicing
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 183
 section: "Doubled Chord Tones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - doubling rules
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - four-voice-texture-satb
   - tendency-tones
@@ -34,7 +28,6 @@ related:
   - spacing-and-voicing
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I write a four-voice (SATB) chorale?"
 ---

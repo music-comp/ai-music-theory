@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: TLAST Transformation
 slug: tlast-transformation
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: serial-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "8.3.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rich-transformation
 extends: []
@@ -32,7 +26,6 @@ related:
 contrasts_with:
   - tfirst-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the TLAST transformation?"
 ---

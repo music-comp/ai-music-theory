@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Triadic Subset Embedding
 slug: triadic-subset-embedding
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: strategies
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 162
 section: "Hexatonic Poles in Parsifal"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "embedded consonant triads"
   - "concealed hexatonic poles"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - reduction-strategy
   - hexatonic-pole
@@ -37,7 +31,6 @@ related:
   - over-seventh
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can triadic voice-leading relationships be tracked through dissonant surfaces?"
   - "How does triadic subset embedding expand motivic networks?"

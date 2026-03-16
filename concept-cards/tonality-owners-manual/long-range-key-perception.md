@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Long-Range Key Perception
 slug: long-range-key-perception
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: perception-and-epistemology
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 403
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "perception of tonal return"
   - "long-range tonal structure perception"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hearing-as-vs-hearing-plus-thinking
   - experiential-vs-calculational-knowledge
@@ -35,7 +29,6 @@ related:
   - analytical-objectivity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can listeners directly perceive long-range tonal return in a sonata?"
   - "What is the epistemological status of claims about hearing large-scale key structure?"

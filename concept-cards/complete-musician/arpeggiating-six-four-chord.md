@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Arpeggiating Six-Four Chord
 slug: arpeggiating-six-four-chord
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: six-four-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 14
 pdf_page: 324
 section: "Unaccented Six-Four Chords III: Arpeggiating"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - waltz six-four
   - consonant six-four
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chordal-leap-and-arpeggiation
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - cadential-six-four-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

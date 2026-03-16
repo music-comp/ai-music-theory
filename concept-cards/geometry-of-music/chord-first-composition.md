@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chord-First Composition
 slug: chord-first-composition
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: compositional-technique
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 326
 section: "9.1-9.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord-first technique"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-scale-compatibility
   - efficient-voice-leading
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - scale-first-composition
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can efficient chordal voice leading generate scalar passages?"
   - "What is the chord-first approach to twentieth-century composition?"

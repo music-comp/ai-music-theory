@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Faust Symphony Opening (Liszt)"
 slug: faust-symphony-opening
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: liszt-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 69
 section: "Three Late-Century Examples: Liszt, Rimsky-Korsakov, Faure"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Faust opening analysis"
   - "Liszt Faust Symphony mm. 1-22"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad
   - consonance-dissonance-reciprocity
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - antar-opening
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the Faust Symphony opening invert consonance and dissonance?"
   - "What is an example of consonance/dissonance reciprocity in practice?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Standard Forms in Classical Multi-Movement Works
 slug: classical-multimovement-forms
 
-# === CLASSIFICATION ===
 category: form
 subcategory: large-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 25
 pdf_page: 382
 section: "25.5 Standard Forms in a Multimovement Classical Piece"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "multimovement form"
   - "four-movement structure"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form
   - ternary-form
@@ -38,7 +32,6 @@ related:
   - five-part-rondo
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What forms are used in each movement of a Classical symphony?"
   - "What is the standard four-movement structure?"

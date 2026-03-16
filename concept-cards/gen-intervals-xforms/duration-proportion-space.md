@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Duration Proportion Space
 slug: duration-proportion-space
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: musical-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 47
 section: "2.2.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Example 2.2.3"
   - multiplicative duration space
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - group
   - function
@@ -38,7 +32,6 @@ contrasts_with:
   - additive-duration-space
   - time-point-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct a GIS from a musical space?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Left-Hand Voicings (A and B Forms)
 slug: left-hand-voicings-a-b
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-voicings
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: 371
 section: "10.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "A voicing"
   - "B voicing"
   - "left-hand jazz voicings"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ii-v-i-jazz-progression
 extends:
@@ -36,7 +30,6 @@ related:
   - avoid-notes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the A and B left-hand voicings in jazz?"
   - "How are jazz voicings derived from voice-leading schemas?"

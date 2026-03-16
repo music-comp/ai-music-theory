@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nonatonic System
 slug: nonatonic-system
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: neo-Riemannian-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Daniel Harrison"
@@ -17,15 +14,12 @@ chapter_number: 20
 pdf_page: 554
 section: "II. Some Hypotheses about Tonic and Antitonic Trichords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - nonatonic cycle
   - "Santa's nonatonic system"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - antitonic-trichord
   - plr-transformations
@@ -36,7 +30,6 @@ related:
   - linking-accumulative-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonatonic system in neo-Riemannian theory?"
   - "How do tonic and antitonic trichords interact in a nonatonic cycle?"

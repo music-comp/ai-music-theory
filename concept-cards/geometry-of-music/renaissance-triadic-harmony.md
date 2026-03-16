@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Renaissance Triadic Harmony
 slug: renaissance-triadic-harmony
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: historical-style
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 218
 section: "6.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Renaissance polyphony"
   - "triadic counterpoint"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - medieval-two-voice-counterpoint
   - perfect-vs-imperfect-consonances
@@ -41,7 +35,6 @@ contrasts_with:
   - medieval-two-voice-counterpoint
   - functional-harmony-ch6
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did triadic harmony arise in the Renaissance?"
   - "What percentage of Renaissance sonorities are triadic?"

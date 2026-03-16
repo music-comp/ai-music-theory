@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generalized Theory of Keys
 slug: generalized-theory-of-keys
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: centricity
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 172
 section: "5.6–5.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "extended key concept"
   - "tonality space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class-profile
   - macroharmony
@@ -37,7 +31,6 @@ related:
   - scalar-tradition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can we conceptualize possibilities between atonality and traditional tonality?"
   - "What is a 'generalized theory of keys'?"

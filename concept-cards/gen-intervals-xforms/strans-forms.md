@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: STRANS-Forms
 slug: strans-forms
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: octatonic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 282
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "STRANS1-forms"
   - "STRANS2-forms"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - strans1-group
   - strans2-group
@@ -36,7 +30,6 @@ related:
   - canonical-groups-octatonic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are STRANS-forms of a set in the octatonic GIS?"
   - "How do STRANS1-forms differ from STRANS2-forms?"

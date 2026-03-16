@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Similar Motion
 slug: similar-motion
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: voice-motion
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 1
 pdf_page: null
 section: "Types of motion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - contrary-motion
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is similar motion and how does it differ from parallel motion?"
   - "What restrictions apply to similar motion in species counterpoint?"

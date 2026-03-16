@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Up-and-Down-the-Ladder Schema
 slug: up-and-down-the-ladder
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: modulatory-schemas
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 379
 section: "Up and down the ladder"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ladder-of-fifths schema"
   - "ascending-then-descending fifths schema"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - paired-sequence-design
   - functional-sequences
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - helicopter-drop
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the up-and-down-the-ladder modulatory schema?"
   - "How are ascending and descending fifths used in development sections?"

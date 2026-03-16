@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Large-Scale Arpeggiation Through Tonicization
 slug: large-scale-arpeggiation-through-tonicization
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: tonicization
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 25
 pdf_page: 563
 section: "Extended Tonicizations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - extended-tonicization
 extends:
@@ -32,7 +26,6 @@ related:
   - tonicization
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does tonicization differ from modulation?"
 ---

@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Serialism
 slug: serialism
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,13 +11,10 @@ chapter: "History and Context of Serialism"
 chapter_number: 9
 pdf_page: null
 section: "IX.6"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "serial music"
   - "serial technique"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-row
 extends: []
@@ -28,7 +22,6 @@ related:
   - total-serialism
   - tonal-tone-rows
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is serialism?"
   - "How does serialism differ from twelve-tone composition?"

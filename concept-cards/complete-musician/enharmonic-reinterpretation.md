@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Enharmonic Reinterpretation
 slug: enharmonic-reinterpretation
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: new harmonic tendencies
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 34
 pdf_page: 790
 section: "The Diminished Seventh Chord and Enharmonic Modulation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "enharmonic pun"
   - "enharmonic modulation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - symmetrically-constructed-harmonies
 extends: []
@@ -34,7 +28,6 @@ related:
   - semitonal-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is enharmonic reinterpretation?"
 ---

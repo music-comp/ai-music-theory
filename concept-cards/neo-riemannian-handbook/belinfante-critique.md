@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Belinfante Critique
 slug: belinfante-critique
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: theoretical-debate
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Henry Klumpenhouwer"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: null
 section: "Section II"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "function-dualism contradiction"
   - "Belinfante's argument"
   - "function labels vs. polar opposition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - hard-vs-soft-dualism
@@ -37,7 +31,6 @@ related:
   - schritt-wechsel-system
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Belinfante critique of harmonic dualism?"
   - "Are Riemann's function labels inconsistent with dualism?"

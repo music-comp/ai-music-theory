@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: DOM and SUBD Transformations
 slug: dom-subd-transformations
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: diatonic functional transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 187
 section: "Some Previous Proposals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Lewin's DOM/SUBD"
   - "tonal-functional transformations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pan-triadic-syntax
   - l-transformation
@@ -40,7 +34,6 @@ contrasts_with:
   - h-group-transformations
   - w-group-transformations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are DOM and SUBD transformations?"
   - "How do Lewin's functional transformations differ from Neo-Riemannian ones?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Process-Based Chromatic Pedagogy
 slug: process-based-chromatic-pedagogy
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: pedagogical-method
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 288
 section: "8.1, 8.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "contrapuntal approach to chromaticism"
   - "process vs object approach"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - decorative-chromaticism
 extends: []
@@ -34,7 +28,6 @@ related:
   - voice-leading-as-chromatic-grammar
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between object-based and process-based approaches to teaching chromaticism?"
   - "Why should students learn to think chromatically rather than memorize chord types?"

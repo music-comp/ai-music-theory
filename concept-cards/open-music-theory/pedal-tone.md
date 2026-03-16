@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pedal Tone
 slug: pedal-tone
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: non-chord-tones
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 4
 pdf_page: null
 section: "Category 3: Embellishing tones involving static notes"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "PED"
   - "pedal point"
   - "organ point"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - embellishing-tone
 extends:
@@ -35,7 +29,6 @@ related:
   - tonic-prolongation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pedal tone?"
   - "How is a pedal tone labeled in analysis?"

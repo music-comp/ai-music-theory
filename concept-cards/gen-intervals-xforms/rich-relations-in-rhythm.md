@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: RICH-Relations in Rhythm
 slug: rich-relations-in-rhythm
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: rhythmic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 251
 section: "10.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "rhythmic RICH transformation"
   - "durational RI-chaining"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rich-transformation
   - durational-motive
@@ -36,7 +30,6 @@ related:
   - multiplicative-inversion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does RICH apply to durational patterns?"
   - "How can pitch and rhythm share the same transformational logic?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Group of Transpositions (TNSPS)
 slug: group-of-transpositions
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: group-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 77
 section: "3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "TNSPS"
   - "transposition group"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transposition-operation
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - group-of-interval-preserving-operations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Do the transpositions form a group?"
   - "How do transpositions compose?"

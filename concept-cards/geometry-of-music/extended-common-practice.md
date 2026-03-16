@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Extended Common Practice
 slug: extended-common-practice
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: historical-framework
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 213
 section: "6.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "extended common practice period"
   - "broad tonal tradition"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - five-components-of-tonality
   - macroharmony
@@ -41,7 +35,6 @@ related:
   - compositional-opportunism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the 'extended common practice'?"
   - "How do different historical periods of Western music relate to each other?"

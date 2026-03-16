@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Syntax in Music
 slug: syntax-in-music
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 19
 section: "Remarks on Syntax"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "musical syntax"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -32,7 +26,6 @@ related:
   - classical-versus-romantic-syntax
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does 'syntax' mean in music theory?"
   - "How does musical syntax differ from linguistic syntax?"

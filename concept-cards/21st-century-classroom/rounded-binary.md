@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rounded Binary Form
 slug: rounded-binary
 
-# === CLASSIFICATION ===
 category: form
 subcategory: small-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,14 +14,11 @@ chapter_number: 24
 pdf_page: 349
 section: "24.4 Rounded Binary"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "rounded binary"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
   - sectional-vs-continuous
@@ -38,7 +32,6 @@ contrasts_with:
   - balanced-binary
   - simple-binary
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is rounded binary form?"
   - "How does rounded binary differ from ternary form?"

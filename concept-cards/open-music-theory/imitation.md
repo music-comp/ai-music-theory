@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Imitation
 slug: imitation
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: technique
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: null
 section: "Imitation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "point of imitation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - counterpoint
 extends: []
@@ -33,7 +27,6 @@ related:
   - fugal-exposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is imitation in contrapuntal music?"
   - "What guidelines apply when writing imitative entries?"

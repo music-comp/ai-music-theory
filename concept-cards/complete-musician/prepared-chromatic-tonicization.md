@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Prepared Chromatic Tonicization
 slug: prepared-chromatic-tonicization
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: applied chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 24
 pdf_page: 538
 section: "Voice Leading for Applied Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chromatic preparation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - applied-chord
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - unprepared-chromatic-tonicization
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
 ---

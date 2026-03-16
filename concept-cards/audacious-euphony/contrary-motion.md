@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Contrary Motion in Hexatonic Progressions
 slug: contrary-motion
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 35
 section: "Contrary Motion and Balance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "bidirectional voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - balanced-voice-leading
   - hexatonic-cycle
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - uniform-voice-leading
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is contrary motion special to hexatonic progressions?"
   - "What is the relationship between contrary motion and the uncanny?"

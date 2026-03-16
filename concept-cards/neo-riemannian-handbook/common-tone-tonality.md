@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Common-Tone Tonality
 slug: common-tone-tonality
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "David Kopp"
@@ -17,14 +14,11 @@ chapter_number: 14
 pdf_page: 406
 section: "II. Analyses"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "common-tone chromaticism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-mediant
   - tonality
@@ -35,7 +29,6 @@ related:
   - plr-transformations
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do common tones create coherence in chromatic progressions?"
   - "What is the role of common tones in chromatic mediant relationships?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Imperfect Consonance
 slug: imperfect-consonance
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: intervals
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 1
 pdf_page: null
 section: "Consonance and dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - perfect-consonance
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Which intervals are classified as imperfect consonances in counterpoint?"
   - "Why are imperfect consonances preferred over perfect consonances in the middle of exercises?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Formal Hierarchy
 slug: formal-hierarchy
 
-# === CLASSIFICATION ===
 category: form
 subcategory: foundations
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 1
 pdf_page: null
 section: "Hierarchy"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -31,7 +25,6 @@ related:
   - segmentation-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is musical form organized hierarchically?"
   - "What are the levels from motive to piece?"

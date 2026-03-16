@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch-Class Space
 slug: pitch-class-space
 
-# === CLASSIFICATION ===
 category: pitch
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 23
 section: "1.5 Arithmetic modulo 12 (mod 12)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - modular pitch-class space
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - mod-12-arithmetic
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - pitch-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is pitch-class space?"
   - "How does pitch-class space differ from pitch space?"

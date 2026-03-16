@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Minor v as Passing Chord
 slug: minor-v-as-passing-chord
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: diatonic chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 18
 pdf_page: 425
 section: "The Step Descent in the Bass"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "non-functional minor dominant"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - step-descent-bass
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - dominant-function
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When is minor v used instead of major V?"
   - "Why does minor v not function as a dominant?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sequential Progression
 slug: sequential-progression
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 23
 pdf_page: 514
 section: "Sequences versus Sequential Progressions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "D2 progression"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-sequence
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - harmonic-sequence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a sequential progression?"
   - "How does a sequential progression differ from a true sequence?"

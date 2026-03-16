@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Comma of Pythagoras
 slug: comma-of-pythagoras
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: commas
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 138
 section: "The Comma of Pythagoras"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Pythagorean comma
   - ditonic comma
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-fifth
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - comma-of-didymus
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the comma of Pythagoras?"
   - "Why can't the circle of fifths be closed with just fifths?"

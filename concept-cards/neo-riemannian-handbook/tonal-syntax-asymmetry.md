@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonal Syntax Asymmetry
 slug: tonal-syntax-asymmetry
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 8
 pdf_page: null
 section: "Section 2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "non-inversional tonal practice"
   - "asymmetry of major and minor syntax"
   - "diatonic transpositional symmetry"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inversional-symmetry
 extends: []
@@ -36,7 +30,6 @@ related:
   - contrapuntal-vs-harmonic-dualism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why does traditional tonal syntax lack inversional symmetry?"
   - "How do major and minor actually relate in traditional tonal practice?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Root-Interval Approach
 slug: root-interval-approach
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: distance-metrics
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 19
 section: "Three Ways to Calculate Triadic Distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic distance"
   - "circle-of-fifths distance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-distance
 extends:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - voice-leading-approach
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the root-interval approach measure triadic distance?"
   - "What are the limitations of root-interval distance for chromatic music?"

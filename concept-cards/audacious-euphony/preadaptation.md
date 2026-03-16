@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Preadaptation
 slug: preadaptation
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: evolutionary framework
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 227
 section: "The Soft Revolution"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "exaptation"
   - "functional co-option"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - near-evenness
   - consonant-triad
@@ -37,7 +31,6 @@ related:
   - homophonous-diamorph
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is preadaptation in the context of chromatic harmony?"
   - "How was the consonant triad preadapted for chromatic syntax?"

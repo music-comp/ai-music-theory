@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transformational Attitude
 slug: transformational-attitude
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: simply-transitive-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 188
 section: "7.1.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "transformational perspective"
   - "inside-the-music attitude"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - simply-transitive-group
   - intervals-as-transpositions
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - cartesian-versus-transformational-thinking
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the transformational attitude in music theory?"
   - "How does the transformational attitude differ from interval measurement?"

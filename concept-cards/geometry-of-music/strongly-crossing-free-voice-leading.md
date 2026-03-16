@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Strongly Crossing-Free Voice Leading
 slug: strongly-crossing-free-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: properties
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 163
 section: "4.9"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "strongly crossing free"
   - "registrally robust crossing-free"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interscalar-transposition
 extends: []
@@ -34,7 +28,6 @@ related:
   - combining-scalar-chromatic-transposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a 'strongly crossing-free' voice leading?"
   - "How does it differ from ordinary crossing-free voice leading?"

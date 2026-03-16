@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Isographic Relationships
 slug: isographic-relationships
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: non-intervallic-transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "8.2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - isography
 extends:
@@ -34,7 +28,6 @@ related:
   - fate-prime-motive
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do isographic relationships reveal cross-compositional structural connections?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Scale
 slug: chromatic-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 3
 section: "Scales"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chromatic system"
   - "twelve-tone collection"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - half-step-and-whole-step
   - accidentals
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - diatonic-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the chromatic scale?"
   - "How many pitch classes are in the chromatic system?"

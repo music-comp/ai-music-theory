@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Scale
 slug: chromatic-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 14
 pdf_page: null
 section: "Chromatic Scales"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chromatic collection"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - half-step
   - accidental
@@ -36,7 +30,6 @@ contrasts_with:
   - major-scale
   - minor-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a chromatic scale?"
   - "Why is it called a 'collection' rather than a scale?"

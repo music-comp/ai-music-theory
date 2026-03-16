@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modal State of Nature
 slug: modal-state-of-nature
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: style-history
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 47
 section: "Other modalities"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - triadic state of nature
   - triadic default grammar
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - function-and-retrofunction
   - melodic-principle-of-harmony
@@ -36,7 +30,6 @@ related:
   - code-switching-in-harmony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the modal state of nature?"
   - "Why do Renaissance and rock modality sound similar?"

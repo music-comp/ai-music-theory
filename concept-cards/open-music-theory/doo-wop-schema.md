@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Four-Chord Schemas (Doo-Wop, Singer/Songwriter, Hopscotch)
 slug: doo-wop-schema
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: pop-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: null
 section: "VII.8"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "four-chord schemas"
   - "axis progression"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - roman-numeral-analysis
   - chord-function
@@ -36,7 +30,6 @@ related:
   - blues-based-schemas
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the main four-chord schemas in pop music?"
   - "How do you distinguish them by ear?"

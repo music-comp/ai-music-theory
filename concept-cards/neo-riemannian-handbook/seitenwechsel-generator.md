@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seitenwechsel as Generator
 slug: seitenwechsel-generator
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: fundamental generators
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,17 +14,14 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Seitenwechsel"
   - "mode exchange"
   - "parallel exchange"
   - "W0"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - schritte-wechsel
   - harmonic-dualism
@@ -38,7 +32,6 @@ related:
   - parallel-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Seitenwechsel and why is it a generator?"
   - "How does the mode-exchange operation work in Riemann's system?"

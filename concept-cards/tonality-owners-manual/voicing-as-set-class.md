@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voicing as Set Class
 slug: voicing-as-set-class
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: configurations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 87
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - intrinsic spacing as set class
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - configuration-and-center-of-gravity
   - intrinsic-vs-enclosing-scale
@@ -33,7 +27,6 @@ related:
   - tinctoris-transform
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are voicings formalized as set classes?"
   - "What is the relationship between figured-bass voicings and set theory?"

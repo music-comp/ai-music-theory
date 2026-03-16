@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fact-Value Gap in Analysis
 slug: fact-value-gap
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: analytical-values
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Steven Rings"
@@ -17,15 +14,12 @@ chapter_number: 18
 pdf_page: 494
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - analytical fact/value gap
   - coherence vs. disruption gap
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - analytical-values-paradigms
 extends: []
@@ -34,7 +28,6 @@ related:
   - tonal-intention-phenomenology
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the fact-value gap in neo-Riemannian analysis?"
   - "Why might an analysis fail to capture what we value in music?"

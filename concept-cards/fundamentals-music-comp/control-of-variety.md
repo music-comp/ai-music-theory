@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Control of Variety
 slug: control-of-variety
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: compositional-principles
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 20
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - limitation of variety
   - controlling variety
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - contrast-and-variety
   - repetition-and-monotony
@@ -37,7 +31,6 @@ related:
   - developing-variation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I build a sentence opening (presentation)?"
   - "How is variety controlled in composition?"

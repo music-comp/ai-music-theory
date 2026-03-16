@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: SUBD Transformation
 slug: subd-transformation
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: klang-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "8.1.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang-representation
   - dom-transformation
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - dom-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I apply SUBD to Klangs?"
 ---

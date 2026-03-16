@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Romantic Harmonic Complexity in Periods
 slug: romantic-harmonic-complexity-in-periods
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: historical-style
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 24
 section: "Comment on Periods by Romantic Composers"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - antecedent-of-the-period
   - consequent-of-the-period
@@ -34,7 +28,6 @@ related:
   - centripetal-and-centrifugal-harmony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do Romantic composers handle harmonic complexity in period construction?"
   - "How does the principle of compensating complexity operate in thematic construction?"

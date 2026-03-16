@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Tonnetz: Weitzmann Region Representation"
 slug: tonnetz-weitzmann-representation
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: tonnetz-models
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 83
 section: "Weitzmann Transformations and N/R Cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tonnetz Weitzmann depictions"
   - "Stalk and leaves Tonnetz"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - weitzmann-region
   - tonnetz-representation
@@ -36,7 +30,6 @@ related:
   - r-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is a Weitzmann region depicted on the Tonnetz?"
   - "Why does R appear misleadingly close on the Tonnetz?"

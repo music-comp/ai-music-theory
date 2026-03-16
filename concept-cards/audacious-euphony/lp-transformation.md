@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: LP/PL Transformation
 slug: lp-transformation
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 35
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "LP"
   - "PL"
   - "chromatic mediant transformation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - l-transformation
   - p-transformation
@@ -39,7 +33,6 @@ related:
   - contrary-motion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the LP transformation?"
   - "How does LP relate to major-third transposition?"

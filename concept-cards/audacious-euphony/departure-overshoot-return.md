@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Departure-Overshoot-Return
 slug: departure-overshoot-return
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: compositional strategy
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 144
 section: "Departure -> Return Scripts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "subdominant overshoot"
   - "recapitulatory overshoot"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - departure-return-script
   - voice-leading-zones
@@ -35,7 +29,6 @@ related:
   - schubert-bb-sonata-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens when a departure-return overshoots the origin?"
 ---

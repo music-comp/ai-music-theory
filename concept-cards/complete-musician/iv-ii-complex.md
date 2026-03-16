@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: IV-ii Complex
 slug: iv-ii-complex
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 280
 section: "Extending the Pre-Dominant"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - helping chords
   - voice-leading chords
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - subdominant-as-pre-dominant
   - supertonic-as-pre-dominant
@@ -34,7 +28,6 @@ related:
   - pre-dominant-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do pre-dominant chords lead to the dominant?"
   - "How do I write proper voice-leading connections?"

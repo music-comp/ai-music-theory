@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tone Representation vs. Tone Sensation
 slug: tone-representation-vs-sensation
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: psychological foundations of tone
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Suzannah Clark"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Vorstellung vs. Empfindung"
   - "imagination vs. sensation"
   - "mental representation vs. sensory input"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - klangvertretung
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the distinction between tone sensation and tone representation?"
   - "Why did Riemann reject the physical foundation for music theory?"

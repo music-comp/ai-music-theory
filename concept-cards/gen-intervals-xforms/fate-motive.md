@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: FATE Motive
 slug: fate-motive
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: serial-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "8.2.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rich-transformation
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - fate-prime-motive
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the FATE motive in Lewin's Die Walkure analysis?"
 ---

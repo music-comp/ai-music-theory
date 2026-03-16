@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Major Triad as Harmonics 4:5:6"
 slug: major-triad-as-harmonics
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: triads
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 138
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "4:5:6 chord"
   - justly tuned major triad
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - major-triad
   - interval-as-frequency-ratio
@@ -36,7 +30,6 @@ related:
   - consonance-and-small-integer-ratios
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is the major triad so consonant?"
   - "What is the relationship between the major triad and the harmonic series?"

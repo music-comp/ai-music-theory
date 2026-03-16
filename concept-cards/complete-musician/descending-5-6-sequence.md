@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Descending 5-6 Sequence
 slug: descending-5-6-sequence
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 22
 pdf_page: 495
 section: "The Descending-Third Sequence in Inversion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "D3 (-4/+2) + 6/3"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - descending-third-sequence
 extends:
@@ -33,7 +27,6 @@ related:
   - ascending-5-6-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the descending 5-6 sequence?"
 ---

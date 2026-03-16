@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Diatonic Modes (20th Century)"
 slug: diatonic-modes-20c
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: modal-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Diatonic Modes"
 chapter_number: 8
 pdf_page: null
 section: "VIII.7"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - mode
 extends: []
@@ -26,7 +20,6 @@ related:
   - color-notes
   - collection-analysis
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are diatonic modes used in 20th-century music?"
   - "How do you identify which mode is being used?"

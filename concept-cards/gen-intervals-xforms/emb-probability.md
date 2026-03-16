@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: EMB Probability Theorem
 slug: emb-probability
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: embedding-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 119
 section: "5.3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 5.3.4"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - emb-function
   - set-class
@@ -35,7 +29,6 @@ related:
   - emb-decomposition-theorem
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can EMB be interpreted probabilistically?"
 ---

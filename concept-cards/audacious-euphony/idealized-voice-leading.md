@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Idealized Voice Leading
 slug: idealized-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 19
 section: "Three Ways to Calculate Triadic Distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "optimal voice leading"
   - "minimal voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
   - single-semitonal-displacement
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is idealized voice leading?"
   - "How does idealized voice leading differ from actual compositional voice leading?"

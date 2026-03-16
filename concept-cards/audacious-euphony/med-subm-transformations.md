@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: MED and SUBM Transformations
 slug: med-subm-transformations
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: diatonic functional transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 189
 section: "Some Previous Proposals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "mediant transformation"
   - "submediant transformation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dom-subd-transformations
   - l-transformation
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - h-group-transformations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are Lewin's MED and SUBM transformations?"
   - "How do diatonic third relations relate to fifth relations in functional theory?"

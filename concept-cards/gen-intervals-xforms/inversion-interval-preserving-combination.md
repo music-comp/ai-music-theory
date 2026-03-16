@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Combination of Inversion and Interval-Preserving Operations
 slug: inversion-interval-preserving-combination
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: inversion-theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 87
 section: "3.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inversion-operation
   - interval-preserving-operation
@@ -34,7 +28,6 @@ related:
   - inversion-equivalence-conditions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens when an interval-preserving operation is composed with an inversion?"
   - "Which parameter of the inversion moves under left vs. right composition with P?"

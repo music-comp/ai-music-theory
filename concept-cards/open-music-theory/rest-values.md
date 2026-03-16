@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rest Values
 slug: rest-values
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: null
 section: "Rest Values"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "rests"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - note-values
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - note-values
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are rest values?"
   - "How do rest values correspond to note values?"

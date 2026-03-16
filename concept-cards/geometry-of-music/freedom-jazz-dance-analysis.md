@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
-concept: "Freedom Jazz Dance" Analysis
+concept: 'Freedom Jazz Dance Analysis'
 slug: freedom-jazz-dance-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: subset-technique-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 367
 section: "9.4.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Miles Davis Freedom Jazz Dance analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - subset-technique
   - twentieth-century-scalar-common-practice
@@ -33,7 +27,6 @@ related:
   - blues-progression-jazz
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do jazz musicians interpret a static harmony with multiple scales?"
   - "How does 'Freedom Jazz Dance' exemplify the extended scalar palette?"

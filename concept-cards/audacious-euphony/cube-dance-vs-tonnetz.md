@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Cube Dance vs. Tonnetz Comparison"
 slug: cube-dance-vs-tonnetz
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: comparative analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 107
 section: "How Hexatonic and Weitzmann Regions Interact"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "two modes of representation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cube-dance-graph
   - connected-tonnetz
@@ -34,7 +28,6 @@ related:
   - voice-leading-zones
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "When should I use Cube Dance vs. the Tonnetz?"
   - "What are the relative advantages of each representation?"

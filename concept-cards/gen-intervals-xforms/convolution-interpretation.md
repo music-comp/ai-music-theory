@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: IFUNC as Convolution
 slug: convolution-interpretation
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: interval-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - IFUNC convolution
   - characteristic function convolution
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ifunc
   - generalized-interval-system
@@ -36,7 +30,6 @@ related:
   - ifunc-probability
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does IFUNC relate to convolution of characteristic functions?"
   - "What is the mathematical connection between set theory and harmonic analysis?"

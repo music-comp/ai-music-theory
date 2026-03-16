@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Positive Counterpoint
 slug: positive-counterpoint
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: contrapuntal-patterns
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 96
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -32,7 +26,6 @@ related:
   - galant-schemas-on-the-dyad-circle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is positive counterpoint vs. negative counterpoint?"
   - "How can counterpoint be taught through possibilities rather than prohibitions?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mystic Chord
 slug: mystic-chord
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: hexachordal systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: 183
 section: "Scriabin's Mystic Species and Generalized Weitzmann Regions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord of the pleroma"
   - "Forte class 6-34"
   - "prime form [013579]"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-weitzmann-region
 extends: []
@@ -38,7 +32,6 @@ contrasts_with:
   - wozzeck-chord
   - tristan-genus
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the mystic chord and how does it relate to nearly even chord theory?"
   - "How does the GWR concept extend to six-note chords?"

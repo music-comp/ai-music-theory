@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading as Chromatic Grammar
 slug: voice-leading-as-chromatic-grammar
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: theoretical-framework
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 320
 section: "8.7"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "contrapuntal explanation of chromaticism"
   - "voice leading priority over harmony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-augmented-sixths
   - major-third-system
@@ -35,7 +29,6 @@ related:
   - two-practices-chromaticism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why should voice leading be prioritized over harmonic explanations of chromaticism?"
   - "How does voice-leading geometry subsume other theories of chromatic relations?"

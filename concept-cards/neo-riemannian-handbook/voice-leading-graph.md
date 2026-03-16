@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice-Leading Graph
 slug: voice-leading-graph
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: geometric-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Richard Cohn"
@@ -17,17 +14,14 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "voice-leading space"
   - "parsimonious graph"
   - "chicken-wire torus"
   - "voice leadability"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
   - parsimonious-trichords
@@ -38,7 +32,6 @@ related:
   - geometric-duals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are voice-leading graphs and how do they represent harmonic proximity?"
   - "How does the Tonnetz function as a voice-leading graph?"

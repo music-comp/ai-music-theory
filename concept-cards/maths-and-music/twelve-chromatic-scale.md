@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Twelve-Chromatic Scale
 slug: twelve-chromatic-scale
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: twelve-tone
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: 74
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - 12-tone equal temperament
   - 12-EDO
   - standard chromatic scale
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - n-chromatic-scale
 extends:
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - non-standard-chromatic-scales
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the twelve-chromatic scale?"
   - "Why does the standard chromatic scale divide the octave into 12 parts?"

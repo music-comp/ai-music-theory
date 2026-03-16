@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generalized Line Segments
 slug: generalized-line-segments
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 93
 section: "3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "paths in chord space"
   - "voice-leading paths"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-note-chord-space
   - boundary-behavior
@@ -36,7 +30,6 @@ related:
   - horizontal-vertical-motion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are voice leadings represented geometrically in chord space?"
   - "Why are voice-leading paths called 'generalized' line segments?"

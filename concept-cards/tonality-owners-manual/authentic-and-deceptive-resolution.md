@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Authentic and Deceptive Resolution
 slug: authentic-and-deceptive-resolution
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 96
 section: "The imperfect system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - diatonic-dyad-circle
@@ -34,7 +28,6 @@ related:
   - descending-fifth-sequence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the same basic voice leading produce both authentic and deceptive resolutions?"
 ---

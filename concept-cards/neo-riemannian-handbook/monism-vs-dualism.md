@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Monism vs. Dualism
 slug: monism-vs-dualism
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: theoretical-debate
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "monism versus dualism"
   - "monistic vs. dualistic theory"
   - "Capellen critique"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - overtone-series
@@ -37,7 +31,6 @@ related:
   - dualism-evolution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes monism from dualism in harmonic theory?"
   - "How do monism and dualism differ in their treatment of minor?"

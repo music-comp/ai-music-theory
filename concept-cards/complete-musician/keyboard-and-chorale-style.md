@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Keyboard and Chorale Style
 slug: keyboard-and-chorale-style
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 116
 section: "Harmony and the Keyboard"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "SATB"
   - "four-voice texture"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triads
   - voicing-and-doubling
@@ -34,7 +28,6 @@ related:
   - harmonic-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is keyboard style?"
   - "What is chorale style?"

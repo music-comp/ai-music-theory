@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Functional Harmony (Historical Context)
 slug: functional-harmony-ch6
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: historical-style
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 230
 section: "6.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "common practice harmony"
   - "baroque and classical harmony"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - renaissance-triadic-harmony
   - three-plus-one-voice-leading
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - renaissance-triadic-harmony
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What did functional harmony add to Renaissance practice?"
   - "What is the relationship between contrapuntal and harmonic common practices?"

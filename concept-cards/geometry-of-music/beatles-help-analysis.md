@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Beatles "Help!" Analysis
 slug: beatles-help-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: subset-technique-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 364
 section: "9.4.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Help analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - subset-technique
 extends: []
@@ -33,7 +27,6 @@ related:
   - rock-modal-voice-leading
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does 'Help!' use the subset technique?"
   - "How are the Beatles and Stravinsky related in their scalar approaches?"

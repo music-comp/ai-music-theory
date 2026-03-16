@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Node/Arrow System Homomorphism
 slug: node-arrow-system-homomorphism
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-mappings
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.5.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - node-arrow-system
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - node-arrow-system-isomorphism
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a homomorphism of node/arrow systems?"
   - "How does a homomorphism differ from an isomorphism of node/arrow systems?"

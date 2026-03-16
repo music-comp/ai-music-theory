@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Enharmonic Intervals
 slug: enharmonic-intervals
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: measurement
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,14 +14,11 @@ chapter_number: 1
 pdf_page: 24
 section: "1.6 Intervals (Calculated in Semitones)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - enharmonically equivalent intervals
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - enharmonic-equivalence
   - semitone
@@ -35,7 +29,6 @@ related:
   - interval-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Are a major third and a diminished fourth the same interval in post-tonal theory?"
   - "What are enharmonic intervals?"

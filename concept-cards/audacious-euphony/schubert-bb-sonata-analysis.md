@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Schubert Bb Major Sonata First Movement Analysis"
 slug: schubert-bb-sonata-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: piece-specific analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 142
 section: "Departure -> Return Scripts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "D. 960 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - departure-return-script
   - voice-leading-zones
@@ -34,7 +28,6 @@ related:
   - functional-interpretation-of-zones
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can three different analytical frameworks illuminate the same sonata movement?"
   - "How do voice-leading zones analyze a classical sonata form?"

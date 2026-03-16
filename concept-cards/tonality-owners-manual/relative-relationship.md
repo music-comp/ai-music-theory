@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Relative Relationship
 slug: relative-relationship
 
-# === CLASSIFICATION ===
 category: modulation
 subcategory: key-relationships
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 361
 section: "Two models of key distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - relative major-minor relationship
   - relative key relationship
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading-of-scales
 extends: []
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - parallel-modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the relative relationship between major and minor keys?"
   - "How does the relative relationship differ from the parallel relationship in terms of key distance?"

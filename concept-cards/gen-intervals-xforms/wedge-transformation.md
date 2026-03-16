@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Wedge Transformation
 slug: wedge-transformation
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: 154
 section: "6.2.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "w^E"
   - wedging-to-E
   - wedge-to-E
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
   - transformation
@@ -40,7 +34,6 @@ contrasts_with:
   - inversion-operation
   - transposition-operation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a wedge transformation?"
   - "Why does INJ handle wedge transformations but IFUNC cannot?"

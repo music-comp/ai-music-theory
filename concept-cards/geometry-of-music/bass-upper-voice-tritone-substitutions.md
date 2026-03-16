@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Bass and Upper Voice Tritone Substitutions
 slug: bass-upper-voice-tritone-substitutions
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-substitution
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: 388
 section: "10.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "independent tritone substitution"
   - "bass-only substitution"
   - "upper-voice substitution"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tritone-substitution-geometry
   - lydian-dominant-scale
@@ -37,7 +31,6 @@ related:
   - chromatically-descending-voicings
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens when only the bass or only the upper voices make a tritone substitution?"
   - "How do bass and upper-voice substitutions affect the scale?"

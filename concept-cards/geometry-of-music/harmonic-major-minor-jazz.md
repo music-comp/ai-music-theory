@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Major and Minor in Jazz
 slug: harmonic-major-minor-jazz
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: jazz-scales
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 387
 section: "10.4"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "harmonic scales in jazz"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - altered-chords-and-scales
 extends: []
@@ -32,7 +26,6 @@ related:
   - whole-tone-to-octatonic-transitions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are harmonic major and minor scales used in jazz?"
   - "What role do these scales play beyond the four central scales?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Virtuous vs. Parasitic Scales
 slug: virtuous-vs-parasitic-scales
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: scale-quality
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 327
 section: "9.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "virtuous scales"
   - "parasitic scales"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-scale-compatibility
 extends: []
@@ -34,7 +28,6 @@ related:
   - near-evenness
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes a virtuous scale from a parasitic one?"
   - "How can you tell if a composer is attentive to scalar qualities?"

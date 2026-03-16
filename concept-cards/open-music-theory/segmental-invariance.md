@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Segmental Invariance
 slug: segmental-invariance
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,12 +11,9 @@ chapter: "Row Properties"
 chapter_number: 9
 pdf_page: null
 section: "IX.3"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases:
   - "invariant segments"
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-row
   - derived-row
@@ -27,7 +21,6 @@ extends: []
 related:
   - hexachordal-combinatoriality
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is segmental invariance?"
   - "How do you find invariant segments between row forms?"

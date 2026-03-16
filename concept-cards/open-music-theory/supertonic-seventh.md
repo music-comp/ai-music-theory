@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Supertonic Seventh
 slug: supertonic-seventh
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: seventh-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 13
 pdf_page: null
 section: "Adding a chordal seventh to ii"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ii7"
   - "ii6/5"
   - "supertonic seventh chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - strong-predominant
   - predominant-seventh-chord
@@ -36,7 +30,6 @@ related:
   - dominant-seventh-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the supertonic seventh chord?"
   - "Which inversion of ii7 is most common?"

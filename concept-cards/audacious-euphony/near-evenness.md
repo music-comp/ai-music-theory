@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Near Evenness
 slug: near-evenness
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: theoretical-framework
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: "Near Evenness, Minimal Voice Leading, and the Central Role of Augmented Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "nearly even"
   - "near-even"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - perfectly-even-chord
   - consonant-triad
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - perfectly-even-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is near evenness?"
   - "Why do consonant triads voice-lead smoothly to each other?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Set Class
 slug: set-class
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: set-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: null
 section: "VIII.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "pitch-class set class"
   - "pcset class"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class-set
   - normal-order
@@ -37,7 +31,6 @@ related:
   - z-relation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a set class?"
   - "Why do certain sonorities sound similar despite different transpositions?"

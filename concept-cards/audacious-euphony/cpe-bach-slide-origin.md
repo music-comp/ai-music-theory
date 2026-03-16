@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "C.P.E. Bach Slide Origin"
 slug: cpe-bach-slide-origin
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: historical-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 86
 section: "Historical Origins of Weitzmann Regions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "C.P.E. Bach f minor Sonata"
   - "Earliest S transformation example"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - i-iii-vsharp-complex
   - s-transformation
@@ -35,7 +29,6 @@ related:
   - enharmonic-seam
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the earliest example of the Slide transformation?"
   - "How did the i-III-V# complex expand in the 18th century?"

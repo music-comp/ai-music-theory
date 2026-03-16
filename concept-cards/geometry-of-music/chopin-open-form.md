@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chopin's Open Form
 slug: chopin-open-form
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: chromatic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 302
 section: "8.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Chopin's directions for improvisation"
   - "Chopin's staggered descent"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chord-voice-leading
   - tesseract-model-dominant-sevenths
@@ -36,7 +30,6 @@ related:
   - tritone-substitution-historical
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What 'directions for improvisation' produce Chopin's F minor Mazurka?"
   - "How does the F minor Mazurka relate to the E minor Prelude?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Deceptive Motion
 slug: deceptive-motion
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: cadences
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: null
 section: "Deceptive motion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "deceptive cadence"
   - "deceptive resolution"
   - "V-vi"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - authentic-cadence
   - harmonic-function
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - authentic-cadence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is deceptive motion?"
   - "How do I write V-vi without creating parallels?"

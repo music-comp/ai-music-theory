@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Piano Keyboard
 slug: piano-keyboard
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: null
 section: "The Piano Keyboard"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "keyboard"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch
   - octave-equivalence
@@ -37,7 +31,6 @@ related:
   - aspn
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the piano keyboard organized?"
   - "How do you find specific notes on the keyboard?"

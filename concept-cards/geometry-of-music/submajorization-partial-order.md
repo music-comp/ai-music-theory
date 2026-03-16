@@ -1,32 +1,26 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Submajorization Partial Order
 slug: submajorization-partial-order
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: voice-leading-metrics
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
 chapter: "Appendix A: Measuring Voice-Leading Size"
-chapter_number: appendix-a
+chapter_number: null
 pdf_page: 415
 section: "Appendix A"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "voice-leading partial order"
   - "no-crossings principle"
   - "reasonable metrics"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-fundamentals
 extends: []
@@ -34,7 +28,6 @@ related:
   - near-evenness
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How should we measure voice-leading size?"
   - "What makes a voice-leading metric 'reasonable'?"

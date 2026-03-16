@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Enharmonic Intervals
 slug: enharmonic-intervals
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 70
 section: "Enharmonic Intervals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - specific-intervals
   - enharmonic-equivalence
@@ -32,7 +26,6 @@ related:
   - augmented-and-diminished-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are enharmonic intervals?"
 ---

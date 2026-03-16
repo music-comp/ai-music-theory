@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Decomposition into Parallel and Contrary Motion
 slug: decomposition-into-parallel-contrary
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 99
 section: "3.7"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "vector decomposition of voice leading"
   - "parallel/contrary components"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - horizontal-vertical-motion
   - two-note-chord-space
@@ -36,7 +30,6 @@ related:
   - individual-t-relatedness
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can any voice leading be decomposed into parallel and contrary components?"
   - "What is the musical significance of separating these components?"

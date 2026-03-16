@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonality-Atonality Continuum
 slug: tonality-atonality-continuum
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 247
 section: "Tonality"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tonal spectrum"
   - "degrees of tonality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonality
   - atonality
@@ -37,7 +31,6 @@ related:
   - polytonal-to-atonal
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Is the boundary between tonality and atonality definite?"
   - "What degrees of key feeling exist?"

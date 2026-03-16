@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Triad Inversion
 slug: triad-inversion
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: chord-structure
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 5
 pdf_page: 116
 section: "Triad Inversion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "inversion"
   - "root position"
   - "first inversion"
   - "second inversion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triads
 extends:
@@ -36,7 +30,6 @@ related:
   - figured-bass
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a triad?"
   - "How do I use figured bass?"

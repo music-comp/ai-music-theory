@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transformational Discourse
 slug: transformational-discourse
 
-# === CLASSIFICATION ===
 category: analytical-applications
 subcategory: methodology
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: null
 pdf_page: 276
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - transposition
@@ -34,7 +28,6 @@ related:
   - debussy-reflets-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is transformational discourse and how does it differ from interval-specific analysis?"
   - "When is transformational discourse powerful and when is it impoverished?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Compound Meter
 slug: compound-meter
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: meter-types
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 33
 section: "Beat Division and Simple and Compound Meters"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "compound time"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - meter
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - simple-meter
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes simple from compound meter?"
   - "What is compound meter?"

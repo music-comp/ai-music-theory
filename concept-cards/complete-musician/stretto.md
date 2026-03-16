@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Stretto
 slug: stretto
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: invertible counterpoint
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 16
 pdf_page: 364
 section: "Stretto"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - imitation
   - motive
@@ -33,7 +27,6 @@ related:
   - fragmentation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is stretto?"
   - "How does stretto create intensity?"

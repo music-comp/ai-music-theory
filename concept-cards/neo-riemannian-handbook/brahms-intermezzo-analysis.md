@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Brahms Intermezzo Op. 76 No. 4 Analysis"
 slug: brahms-intermezzo-analysis
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: analytical-examples
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: null
 section: "Section 5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Tymoczko's Brahms analysis"
   - "contrapuntal analysis of Brahms Op. 76/4"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading
   - voice-leading-efficiency
@@ -37,7 +31,6 @@ related:
   - dualistic-equivalence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Tymoczko analyze Brahms's Intermezzo Op. 76 No. 4?"
   - "How can voice-leading analysis illuminate chromatic harmony?"

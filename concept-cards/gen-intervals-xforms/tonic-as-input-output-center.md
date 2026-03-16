@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonic as Input/Output/Center
 slug: tonic-as-input-output-center
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-structure
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: 224
 section: "9.6.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tonic-as-generator"
   - "tonic-as-goal"
   - "tonic-as-center-of-balance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - input-node
   - output-node
@@ -35,7 +29,6 @@ related:
   - beethoven-appassionata-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do input/output functions in networks relate to tonicity?"
   - "What are the three principal ideas about tonicity?"

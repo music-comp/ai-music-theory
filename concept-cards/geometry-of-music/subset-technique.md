@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Subset Technique
 slug: subset-technique
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: compositional-technique
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 326
 section: "9.1, 9.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "fixed-subset technique"
   - "fixed and mobile scale degrees"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-scale-compatibility
 extends: []
@@ -34,7 +28,6 @@ related:
   - scale-first-composition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can scales be linked by shared subsets rather than voice leading?"
   - "What are fixed and mobile scale degrees?"

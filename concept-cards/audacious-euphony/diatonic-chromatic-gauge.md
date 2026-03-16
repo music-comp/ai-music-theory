@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic and Chromatic Gauge
 slug: diatonic-chromatic-gauge
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: diatonic-chromatic interaction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 215
 section: "A Summary Example from Schubert"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic vs. chromatic measurement"
   - "gauge switching"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-syntax-hypothesis
   - enharmonic-seam
@@ -36,7 +30,6 @@ related:
   - arrow-reversal
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the diatonic gauge vs. the chromatic gauge?"
   - "When must one relinquish the diatonic gauge for a chromatic one?"

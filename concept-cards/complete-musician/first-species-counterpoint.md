@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: First-Species Counterpoint
 slug: first-species-counterpoint
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: species
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 94
 section: "First-Species Counterpoint"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "1:1 counterpoint"
   - "note-against-note"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - counterpoint
   - cantus-firmus
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - second-species-counterpoint
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is first-species counterpoint?"
   - "What are the rules for 1:1 counterpoint?"

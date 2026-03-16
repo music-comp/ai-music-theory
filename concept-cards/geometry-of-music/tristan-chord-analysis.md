@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tristan Chord Analysis
 slug: tristan-chord-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: chromatic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 311
 section: "8.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tristan prelude analysis"
   - "Wagner Tristan voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-augmented-sixths
   - tesseract-model-dominant-sevenths
@@ -37,7 +31,6 @@ related:
   - tristan-voice-crossings
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Wagner systematically explore the voice-leading possibilities of the Tristan chord?"
   - "Why do the prelude's voice leadings have crossings, and what happens if we remove them?"

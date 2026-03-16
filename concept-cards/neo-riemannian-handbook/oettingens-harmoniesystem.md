@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Oettingen's Harmoniesystem"
 slug: oettingens-harmoniesystem
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: historical-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Harmoniesystem in dualer Entwickelung"
   - "Oettingen's dual development system"
   - "Oettingen's table of tone relations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - overtone-series
   - harmonic-dualism
@@ -37,7 +31,6 @@ related:
   - consonance-dissonance-dualism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What was Oettingen's Harmoniesystem and how did it influence Riemann?"
   - "What are tonicity and phonicity in Oettingen's theory?"

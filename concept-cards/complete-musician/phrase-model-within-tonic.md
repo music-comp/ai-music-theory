@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrase Model Within Tonic Prolongation
 slug: phrase-model-within-tonic
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 280
 section: "T-PD-D-T Within the Tonic Prolongation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - embedded phrase model
   - mini cadence within tonic
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase-model
   - contrapuntal-expansion
@@ -36,7 +30,6 @@ related:
   - v42-third-inversion-v7
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do pre-dominant chords lead to the dominant?"
 ---

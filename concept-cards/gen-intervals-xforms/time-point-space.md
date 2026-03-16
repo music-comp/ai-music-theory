@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Time-Point Space
 slug: time-point-space
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: musical-spaces
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 47
 section: "2.2.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Example 2.2.1"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - group
   - function
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - duration-proportion-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct a GIS from a musical space?"
 ---

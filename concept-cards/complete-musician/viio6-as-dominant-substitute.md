@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: viio6 as Dominant Substitute
 slug: viio6-as-dominant-substitute
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: inversions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 226
 section: "Passing Tones in the Bass: viio6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - diminished triad in first inversion
   - leading tone triad
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - passing-chord
   - dominant-seventh-chord
@@ -35,7 +29,6 @@ related:
   - contrapuntal-expansion
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
 ---

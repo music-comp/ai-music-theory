@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cadential Weight
 slug: cadential-weight
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: cadence
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 311
 section: "A theory of harmonic cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - cadence strength
   - cadential force
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-cycle-theory
   - descending-thirds-arrangement
@@ -36,7 +30,6 @@ related:
   - subdominant-and-dominant-cycles
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What determines the relative strength of different cadential progressions?"
   - "Why do authentic cadences feel more conclusive than plagal cadences?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Exponents and Exponential Functions
 slug: exponents-and-exponential-functions
 
-# === CLASSIFICATION ===
 category: logarithms-and-measurement
 subcategory: exponentials
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 66
 section: "Exponents"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - exponential function
   - exponential map
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - logarithmic-functions-as-inverses
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the exponential function and how is it defined?"
   - "How do exponential functions convert additive interval measurements to frequency ratios?"

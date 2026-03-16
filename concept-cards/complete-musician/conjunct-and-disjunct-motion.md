@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Conjunct and Disjunct Motion
 slug: conjunct-and-disjunct-motion
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: melodic-structure
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 3
 pdf_page: 70
 section: "Melody: Characteristics, Writing, and Listening"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "stepwise motion"
   - "step"
   - "skip"
   - "leap"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
 extends: []
@@ -35,7 +29,6 @@ related:
   - melody
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is conjunct motion?"
   - "What is disjunct motion?"

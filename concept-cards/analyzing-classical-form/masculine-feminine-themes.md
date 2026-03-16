@@ -1,5 +1,5 @@
 ---
-concept: "Masculine" vs. "Feminine" Themes
+concept: 'Masculine vs. Feminine Themes'
 chapter: "Exposition III: Subordinate Theme"
 source: "Analyzing Classical Form"
 pdf_page: 380

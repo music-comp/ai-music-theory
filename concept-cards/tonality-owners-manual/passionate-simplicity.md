@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Passionate Simplicity
 slug: passionate-simplicity
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: beethoven-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 451
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - Beethoven's passionate simplicity
   - "Beethoven Hero vs. Beethoven theorist"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - the-ludwig
   - schema-theory
@@ -37,7 +31,6 @@ related:
   - schematic-vocabulary-in-beethoven
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can Beethoven be both highly cerebral and highly expressive?"
   - "What is the relationship between Beethoven's schematic simplicity and his expressive power?"

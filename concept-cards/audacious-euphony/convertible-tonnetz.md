@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Convertible Tonnetz
 slug: convertible-tonnetz
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: convertible Tonnetz
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 201
 section: "The Convertible Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "hybrid Tonnetz"
   - "convertible model"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diatonic-tonnetz
   - chromatic-tonnetz
@@ -42,7 +36,6 @@ related:
   - tristan-genus-convertibility
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the convertible Tonnetz?"
   - "How does the Tonnetz represent both diatonic and chromatic relationships?"

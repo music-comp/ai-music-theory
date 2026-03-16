@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Schoenberg "Erwartung" Op. 2 No. 1 Analysis
 slug: schoenberg-erwartung-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: chromatic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 297
 section: "8.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Schoenberg song Erwartung analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-augmented-sixths
   - individually-t-related-voice-leadings
@@ -34,7 +28,6 @@ related:
   - two-practices-chromaticism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Schoenberg's early tonal song relate to Brahms' chromatic techniques?"
   - "What is the ascending-fifths sequence in Schoenberg's middle section?"

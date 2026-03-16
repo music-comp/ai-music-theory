@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Minor Seventh Chord
 slug: minor-seventh-chord
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: seventh chord types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 159
 section: "Four Eighteenth-Century Approaches to Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "set class 4-26"
   - "prime form [0358]"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - combination-strategy
   - r-transformation
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - nearly-even-tetrachord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the minor seventh chord generated through combination?"
   - "What role does the minor seventh chord play in 4-Cube Trio?"

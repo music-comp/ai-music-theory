@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Note Notation and the Staff
 slug: note-notation-and-the-staff
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 14
 section: "Notes"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "staff notation"
   - "note naming convention"
   - "scientific pitch notation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-and-frequency
 extends: []
@@ -37,7 +31,6 @@ related:
   - musical-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are specific pitches notated on a musical staff?"
   - "What is the subscript convention for naming keyboard notes?"

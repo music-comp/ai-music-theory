@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Altered Scale
 slug: altered-scale
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: jazz-scales
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 384
 section: "10.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "super locrian"
   - "diminished whole-tone"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - lydian-dominant-scale
   - tritone-substitution-geometry
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - lydian-dominant-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the altered scale in jazz?"
   - "How is the altered scale generated from tritone substitution?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Enharmonic Equivalence
 slug: enharmonic-equivalence
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: pitch
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: null
 section: "Enharmonic equivalence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "enharmonic spelling"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch
   - accidental
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - octave-equivalence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is enharmonic equivalence?"
   - "Why can one pitch have multiple names?"

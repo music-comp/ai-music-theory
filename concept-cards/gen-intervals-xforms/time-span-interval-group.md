@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Time-Span Interval Group
 slug: time-span-interval-group
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: rhythmic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "IVLS for time spans"
   - "time-span IVLS"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-group-ivls
   - group
@@ -36,7 +30,6 @@ related:
   - central-interval
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the interval group for the time-span GIS?"
   - "Why is the time-span interval group non-commutative?"

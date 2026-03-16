@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Theoretical Underdetermination
 slug: theoretical-underdetermination
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: epistemology
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 325
 section: "Rameau and Bach"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "theoretical underdetermination in music theory"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rameauian-vs-riemannian-function
   - descending-thirds-arrangement
@@ -34,7 +28,6 @@ related:
   - chromatic-vs-diatonic-perspective
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can multiple different theories accurately describe the same harmonic practice?"
   - "How should we choose between competing theories of functional harmony?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Brower's Tonnetz Genesis"
 slug: brower-tonnetz-genesis
 
-# === CLASSIFICATION ===
 category: representations
 subcategory: Tonnetz variants
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 192
 section: "The Diatonic Tonnetz"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tonnetz generation from seed node"
   - "diatonic Tonnetz genesis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz-glossary
   - consonant-triad
@@ -38,7 +32,6 @@ related:
   - diatonic-parallelogram
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the diatonic Tonnetz generated from a single triad?"
   - "What forces shape the development of the Tonnetz?"

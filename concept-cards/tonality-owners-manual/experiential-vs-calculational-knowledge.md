@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Experiential vs. Calculational Knowledge
 slug: experiential-vs-calculational-knowledge
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: perception-and-epistemology
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: null
 pdf_page: 402
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "direct sensitivity vs. calculation in music"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hearing-as-vs-hearing-plus-thinking
 extends:
@@ -33,7 +27,6 @@ related:
   - analytical-objectivity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between experiencing a musical property and calculating it?"
   - "How should we evaluate music-theoretical claims about long-range perception?"

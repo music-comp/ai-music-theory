@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Spiral Diagrams for Chord Space
 slug: spiral-diagrams-for-chord-space
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: geometric-voice-leading
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 37
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - spiral diagram
   - n-in-o graph
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transposition-along-a-collection
 extends:
@@ -37,7 +31,6 @@ related:
   - spiral-construction-recipe
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is voice-leading geometry, and how does it represent musical relationships spatially?"
   - "How do spiral diagrams represent chord spaces?"

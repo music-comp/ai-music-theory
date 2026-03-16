@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Rotation Operations (RO, R3, R6, R9)"
 slug: rotation-operations
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: octatonic-structures
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,17 +14,14 @@ chapter_number: null
 pdf_page: 282
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - RO
   - R3
   - R6
   - R9
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - octatonic-pitch-class-set
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - queer-operations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the rotation operations on the octatonic collection?"
 ---

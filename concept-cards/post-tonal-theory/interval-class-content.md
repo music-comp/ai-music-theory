@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval-Class Content
 slug: interval-class-content
 
-# === CLASSIFICATION ===
 category: intervals
 subcategory: interval class
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 29
 section: "1.11 Interval-Class Content"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - ic content
   - interval content
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval-class
   - pitch-class
@@ -34,7 +28,6 @@ related:
   - interval-class-vector
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is interval-class content?"
   - "How do I determine the interval-class content of a collection?"

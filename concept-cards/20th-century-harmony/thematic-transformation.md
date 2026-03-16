@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Thematic Transformation
 slug: thematic-transformation
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 13
 pdf_page: 270
 section: "Theme and Form Ideas"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "motivic development"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - thematic-conception
 extends: []
@@ -33,7 +27,6 @@ related:
   - theme-and-form
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is thematic material transformed in twentieth-century composition?"
   - "Why must a composer take inventory of all thematic aspects?"

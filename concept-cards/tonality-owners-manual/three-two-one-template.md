@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: 3-2-1 Melodic Template
 slug: three-two-one-template
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 257
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "5-4-3-2-1 template"
   - descending melodic template
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - protofunctionality
 extends: []
@@ -34,7 +28,6 @@ related:
   - prinner-schema
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the 3-2-1 melodic template?"
   - "How do melodic templates relate to functional tonality?"

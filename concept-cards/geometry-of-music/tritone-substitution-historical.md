@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tritone Substitution — Historical Emergence
 slug: tritone-substitution-historical
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-techniques
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 287
 section: "8.1, 8.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tritone substitution origin"
   - "bII7 as dominant substitute"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - decorative-chromaticism
   - tesseract-model-dominant-sevenths
@@ -36,7 +30,6 @@ related:
   - chopin-e-minor-prelude
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did tritone substitution evolve from augmented sixth chords?"
   - "What connects Chopin's F minor Mazurka to the E minor Prelude via tritone substitution?"

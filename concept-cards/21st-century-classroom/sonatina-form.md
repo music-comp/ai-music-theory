@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sonatina Form
 slug: sonatina-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: large-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,13 +14,10 @@ chapter_number: 25
 pdf_page: 368
 section: "25.1.2 Sonatina Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form
 extends:
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - sonata-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is sonatina form?"
   - "How does sonatina form differ from sonata form?"

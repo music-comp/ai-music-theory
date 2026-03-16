@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melody and Accompaniment
 slug: melody-and-accompaniment
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: texture
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 21
 pdf_page: null
 section: "Melody and Accompaniment"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "accompanied melody"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - homophony
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - polyphony
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is melody and accompaniment texture?"
   - "How does it differ from homorhythm?"

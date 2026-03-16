@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Syntactic Interaction
 slug: syntactic-interaction
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: diatonic-chromatic interaction
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 186
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "syntactic intertwining"
   - "dual-syntax interaction"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pan-triadic-syntax
   - hexatonic-region
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - chromatic-vs-diatonic-organization
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is syntactic interaction in chromatic harmony?"
   - "How do diatonic and chromatic syntaxes coexist in 19th-century music?"

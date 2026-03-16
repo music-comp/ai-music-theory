@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Serial Transformations Generalization
 slug: serial-transformations-generalization
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: serial-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "8.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rich-transformation
   - non-commutative-gis
@@ -34,7 +28,6 @@ related:
   - much-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do serial transformations generalize to abstract GIS settings?"
   - "What complications arise in non-commutative GIS?"

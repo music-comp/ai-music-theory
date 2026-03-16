@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Structural Sequencing
 slug: structural-sequencing
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: transformation-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 7
 pdf_page: 188
 section: "7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ri-chaining
   - tch-transformation
@@ -33,7 +27,6 @@ related:
   - rich-transformation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is structural sequencing?"
   - "How does RI-chaining create large-scale transposition relationships?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice-Leading Chords in Sequences
 slug: voice-leading-chords-in-sequences
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 22
 pdf_page: 495
 section: "Components and Types of Sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "helping chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-sequence
   - sequence-model-and-copy
@@ -33,7 +27,6 @@ extends:
 related: []
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are voice-leading chords in sequences?"
   - "Why does each sequence model need two chords?"

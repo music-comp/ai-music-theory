@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Triadic Structure Generates Syntax"
 slug: triadic-structure-generates-syntax
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: theoretical-framework
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 35
 section: "Triadic Structure Generates Pan-Triadic Syntax"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "structure generates syntax"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - near-evenness
   - pan-triadic-syntax
@@ -36,7 +30,6 @@ related:
   - consonant-triad
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why are triads, specifically, the objects that generate pan-triadic syntax?"
   - "How does triadic structure relate to triadic function?"

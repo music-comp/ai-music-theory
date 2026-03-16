@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hey Joe Family
 slug: hey-joe-family
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 47
 section: "A fourth family"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - fourth loop family
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - loop-families-in-rock
 extends: []
@@ -34,7 +28,6 @@ related:
   - fundamental-canon-of-rock
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Hey Joe family of rock progressions?"
 ---

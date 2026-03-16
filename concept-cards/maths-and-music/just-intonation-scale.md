@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Just Intonation Scale
 slug: just-intonation-scale
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: just-intonation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: 152
 section: "The Just Intonation Scale"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - just scale
   - 5-limit scale
   - pure intonation scale
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - p-limit-tuning
   - just-fifth
@@ -43,7 +37,6 @@ contrasts_with:
   - pythagorean-scale
   - mean-tone-scale
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the just intonation scale?"
   - "How do I build a just intonation scale?"

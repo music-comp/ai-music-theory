@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Klang-Representation in Dualist Theory
 slug: klang-representation-dualism
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: cognitive-foundations
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ian Bent"
@@ -17,17 +14,14 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Klangvertretung"
   - "Klang representation"
   - "chord representation"
   - "mental Klang image"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - klang
@@ -38,7 +32,6 @@ related:
   - minor-root-problem
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is Klang-representation in dualist theory?"
   - "How does the mind organize tones into chords according to Riemann?"

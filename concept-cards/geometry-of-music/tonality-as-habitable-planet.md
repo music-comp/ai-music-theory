@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonality as Habitable Planet
 slug: tonality-as-habitable-planet
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: tonality-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 11
 pdf_page: 411
 section: "Conclusion"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "habitable planet metaphor"
   - "ecological view of tonality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - five-components-of-tonality
   - near-evenness
@@ -34,7 +28,6 @@ related:
   - extended-common-practice-synthesis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is tonality compared to a habitable planet?"
   - "Is tonality one option among many, or uniquely constrained?"

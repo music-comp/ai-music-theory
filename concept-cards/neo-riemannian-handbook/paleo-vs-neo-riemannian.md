@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Paleo- vs. Neo-Riemannian Comparison
 slug: paleo-vs-neo-riemannian
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: paradigm-comparison
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Steven Rings"
@@ -17,16 +14,13 @@ chapter_number: 18
 pdf_page: 488
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "paleo-Riemannian vs. neo-Riemannian"
   - Riemann vs. neo-Riemannian theory
   - old vs. new Riemannian
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - plr-transformations
@@ -37,7 +31,6 @@ related:
   - functional-transformational-synthesis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes Riemann's original theory from neo-Riemannian theory?"
   - "How does Riemann's function theory relate to neo-Riemannian transformations?"

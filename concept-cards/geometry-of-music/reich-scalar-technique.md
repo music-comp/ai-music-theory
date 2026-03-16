@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Reich's Scalar Technique
 slug: reich-scalar-technique
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: scale-first-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 350
 section: "9.3.4-9.3.5, 9.4.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Reich modulation technique"
   - "minimalist scalar practice"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-first-composition
   - subset-technique
@@ -35,7 +29,6 @@ related:
   - twentieth-century-scalar-common-practice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Steve Reich use scales in his compositions?"
   - "What is the 'whole-tone plus one' scale?"

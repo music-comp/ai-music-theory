@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Period
 slug: period
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: null
 section: "Archetype 2: The Period"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "parallel period"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - cadence
@@ -38,7 +32,6 @@ contrasts_with:
   - sentence
   - repeated-phrase
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a period and what are its two phrases?"
   - "How does the cadence pattern define a period?"

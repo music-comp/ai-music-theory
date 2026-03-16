@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Carter String Quartet Analysis
 slug: carter-string-quartet-analysis
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: analytical-applications
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 91
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Carter String Quartet No. 1 analysis"
   - "Carter mm. 22-35 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span-gis
   - local-time-unit
@@ -35,7 +29,6 @@ related:
   - stockhausen-klavierstuck-xi
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Lewin analyze Carter's String Quartet No. 1 using the time-span GIS?"
   - "What motivates the non-commutative time-span GIS?"

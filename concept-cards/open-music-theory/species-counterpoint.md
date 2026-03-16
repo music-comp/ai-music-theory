@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Species Counterpoint
 slug: species-counterpoint
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: pedagogy
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Fuxian counterpoint"
   - "strict counterpoint"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - counterpoint
   - cantus-firmus
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - free-counterpoint
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is species counterpoint and why is it studied?"
   - "What are the five species and what does each introduce?"

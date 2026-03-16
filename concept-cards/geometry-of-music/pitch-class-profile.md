@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pitch-Class Profile
 slug: pitch-class-profile
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: centricity
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 5
 pdf_page: 188
 section: "5.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Krumhansl-Shepard profile"
   - "pitch-class distribution"
   - "tonal hierarchy"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rootedness
   - centricity-and-tonicity
@@ -36,7 +30,6 @@ related:
   - macroharmony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are pitch-class profiles (Krumhansl-Shepard)?"
   - "How can we represent centricity formally?"

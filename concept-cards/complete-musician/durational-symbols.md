@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Durational Symbols
 slug: durational-symbols
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 33
 section: "Rhythm and Durational Symbols"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "note values"
   - "rhythmic notation"
   - "rests"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rhythm
 extends: []
@@ -35,7 +29,6 @@ related:
   - meter-signatures
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the basic note values?"
   - "What are rests?"

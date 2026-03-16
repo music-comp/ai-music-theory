@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Unique Phrase-Level Form
 slug: unique-phrase-level-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: phrase-level
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: null
 section: "Unique Phrase-Level Forms"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
   - sentence
@@ -36,7 +30,6 @@ contrasts_with:
   - sentence
   - period
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a unique phrase-level form?"
   - "Are unique forms less common than archetypes?"

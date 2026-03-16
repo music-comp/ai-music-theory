@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ascending-Second Sequence (Thirds)
 slug: ascending-second-sequence-thirds
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: sequence analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 22
 pdf_page: 495
 section: "Another Ascending-Second Sequence: A2 (-3/+4)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "A2 (-3/+4)"
   - "ascending 5-6 sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-sequence
 extends:
@@ -35,7 +29,6 @@ related:
   - ascending-second-sequence-fifths
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the A2 (-3/+4) sequence?"
   - "What is the ascending 5-6 sequence?"

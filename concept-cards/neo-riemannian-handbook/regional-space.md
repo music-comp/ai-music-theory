@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Regional Space
 slug: regional-space
 
-# === CLASSIFICATION ===
 category: pitch-space
 subcategory: key representation and modulation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "diatonic regions"
   - "regional encapsulation"
   - "key space on the Tonnetz"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
   - syntonic-comma-striche
@@ -38,7 +32,6 @@ related:
   - hexatonic-systems
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the Tonnetz connect pitch space to key space?"
   - "How are diatonic keys represented on the Tonnetz?"

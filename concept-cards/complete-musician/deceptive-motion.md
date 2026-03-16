@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Deceptive Motion
 slug: deceptive-motion
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 18
 pdf_page: 425
 section: "The Submediant as Tonic Substitute"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "deceptive cadence"
   - "evaded cadence"
   - "interrupted cadence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - submediant
   - cadence-types
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - authentic-cadence
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a deceptive motion?"
   - "What happens after a deceptive motion?"

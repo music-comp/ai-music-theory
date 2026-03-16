@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Schubert Die Zauberharfe Overture Analysis"
 slug: zauberharfe-overture-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: piece-specific analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 104
 section: "How Hexatonic and Weitzmann Regions Interact"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Rosamunde Overture analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cube-dance-graph
   - connected-tonnetz
@@ -35,7 +29,6 @@ related:
   - chromatic-sequences
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Cube Dance model a composition that crosses regional boundaries?"
   - "How do Cube Dance and Tonnetz representations compare for the same passage?"

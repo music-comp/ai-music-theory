@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sonata Form Recapitulation
 slug: sonata-form-recapitulation
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sonata
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 33
 pdf_page: 752
 section: "Recapitulation and Coda"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "recap"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form-exposition
   - sonata-principle
@@ -35,7 +29,6 @@ related:
   - subdominant-return
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens in the recapitulation of sonata form?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Supplementary Dissonance
 slug: supplementary-dissonance
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: strategies
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 162
 section: "Hexatonic Poles in Parsifal"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "added dissonance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - reduction-strategy
 extends: []
@@ -34,7 +28,6 @@ related:
   - triadic-subset-embedding
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a supplementary dissonance?"
   - "How does supplementary dissonance smooth voice leading between triads?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Strong Predominant
 slug: strong-predominant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,17 +14,13 @@ chapter_number: 3
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
-# high: Explicitly defined with writing procedures
 
-# === VARIANTS (authority control) ===
 aliases:
   - "predominant"
   - "pre-dominant"
   - "PD chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - authentic-cadence
@@ -40,7 +33,6 @@ related:
   - predominant-seventh-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the strong predominant chords?"
   - "How do ii6 and IV function before a cadence?"

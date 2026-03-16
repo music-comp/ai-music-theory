@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Predominant Seventh Chord
 slug: predominant-seventh-chord
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: seventh-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 13
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ii7"
   - "IV7"
   - "predominant seventh"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - strong-predominant
   - dominant-seventh-chord
@@ -36,7 +30,6 @@ related:
   - supertonic-seventh
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the predominant seventh chords?"
   - "How is the chordal seventh treated in predominant seventh chords?"

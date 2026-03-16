@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Freedom and Modulation
 slug: harmonic-freedom-and-modulation
 
-# === CLASSIFICATION ===
 category: tuning-systems
 subcategory: temperament
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 152
 section: "Drawbacks of Unequal Temperament"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - harmonic emancipation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - drawbacks-of-unequal-temperament
   - irrationality-of-equally-tempered-intervals
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - natural-gravitation-toward-just-intonation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does equal temperament enable harmonic freedom?"
   - "Why is modulation easier in equal temperament?"

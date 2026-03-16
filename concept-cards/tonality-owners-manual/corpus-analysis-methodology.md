@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Corpus Analysis Methodology
 slug: corpus-analysis-methodology
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: corpus-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 569
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - computational corpus study
   - open-data methodology
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - functional-analysis
 extends:
@@ -35,7 +29,6 @@ related:
   - epistemic-circularity-in-harmonic-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do you apply corpus analysis methods to harmonic data?"
   - "What is the relationship between frequency and grammaticality in music?"

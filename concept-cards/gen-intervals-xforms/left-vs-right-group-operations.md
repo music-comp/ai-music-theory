@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Left vs. Right Group Operations
 slug: left-vs-right-group-operations
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: time-span-gis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 112
 section: "4.1 (Notes 4.1.7)"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "left-multiplication vs. right-multiplication"
   - "left action vs. right action"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transposition-operation
   - interval-preserving-operation
@@ -37,7 +31,6 @@ related:
   - transposition-and-interval-preservation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why do transpositions and interval-preserving operations differ in non-commutative GIS?"
   - "What is the algebraic distinction between left and right multiplication in a GIS?"

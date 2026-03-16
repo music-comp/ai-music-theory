@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Repeating Contrapuntal Pattern
 slug: repeating-contrapuntal-pattern
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: contrapuntal-patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 155
 section: "Repeating contrapuntal patterns"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "one-note sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - diatonic-dyad-circle
@@ -36,7 +30,6 @@ related:
   - geometry-of-two-voice-sequences
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the relationship between canonic sequences and voice exchange?"
   - "How do voice leadings generate sequences?"

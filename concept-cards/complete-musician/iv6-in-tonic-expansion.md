@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: IV6 in Tonic and Dominant Expansion
 slug: iv6-in-tonic-expansion
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: inversions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 10
 pdf_page: 226
 section: "Tonic Expansion with an Arpeggiating Bass: IV6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - contrapuntal-expansion
   - first-inversion-triads
@@ -33,7 +27,6 @@ related:
   - passing-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
 ---

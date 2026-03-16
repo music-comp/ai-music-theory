@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Debussy-Wagner Voice Leading Comparison
 slug: debussy-wagner-comparison
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: historical-comparison
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 334
 section: "9.2.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "impressionism and Wagnerism"
   - "Debussy chord-first technique"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-first-composition
 extends: []
@@ -33,7 +27,6 @@ related:
   - scriabin-op48-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do Debussy and Wagner relate in their use of voice leading?"
   - "What is the key difference between Wagnerian and Debussyan chromaticism?"

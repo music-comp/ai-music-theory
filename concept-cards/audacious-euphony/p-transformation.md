@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "P Transformation (Parallel)"
 slug: p-transformation
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 35
 section: "Hexatonic Progressions, Tonnetz Representations, and Triadic Transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Parallel"
   - "parallel transformation"
   - "mode change"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - single-semitonal-displacement
   - minimal-work-relation
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - l-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the P transformation?"
   - "How does P differ from L?"

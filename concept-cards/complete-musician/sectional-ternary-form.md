@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sectional Ternary Form
 slug: sectional-ternary-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: ternary
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 31
 pdf_page: 702
 section: "Ternary Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "A||BA"
   - "AB||A"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ternary-form
 extends:
@@ -37,7 +31,6 @@ contrasts_with:
   - full-sectional-ternary-form
   - continuous-ternary-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is sectional ternary form?"
 ---

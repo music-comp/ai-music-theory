@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pure Tone
 slug: pure-tone
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: acoustics
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 118
 section: "Effect of Horizontal Stretching on Pitch"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "sine tone"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sine-and-cosine-functions
   - vibrations-and-sound-waves
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - square-wave-fourier-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pure tone?"
   - "What does a sine wave sound like?"

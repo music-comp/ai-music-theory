@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "EMB (Embedding Function)"
 slug: emb-function
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: embedding-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: "5.3.1-5.3.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - embedding number
   - "EMB(X, Y)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - canonical-group
   - set-class
@@ -41,7 +35,6 @@ contrasts_with:
   - ifunc
   - inj-function
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an embedding function (EMB)?"
   - "How does EMB generalize Forte's interval vector?"

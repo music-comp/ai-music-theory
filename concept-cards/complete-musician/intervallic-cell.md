@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Intervallic Cell
 slug: intervallic-cell
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical techniques for large forms
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 37
 pdf_page: 852
 section: "The Intervallic Cell"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "cell"
   - "motivic cell"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonal-ambiguity
 extends: []
@@ -34,7 +28,6 @@ related:
   - whole-tone-scale
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an intervallic cell?"
 ---

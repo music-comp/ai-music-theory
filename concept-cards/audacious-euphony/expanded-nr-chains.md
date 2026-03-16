@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Expanded N/R Chains
 slug: expanded-nr-chains
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: cyclic-structures
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 95
 section: "Expanded N/R Chains"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Five-element N/R chains"
   - "Expanded double-agent complex"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - double-agent-complex
   - nr-cycle
@@ -36,7 +30,6 @@ related:
   - weitzmann-region
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do expanded N/R chains extend the double-agent complex?"
   - "What is the historical progression from four-chord to six-chord structures?"

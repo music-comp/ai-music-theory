@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Applied-Chord Sequence D2
 slug: applied-chord-sequence-d2
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: applied chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 24
 pdf_page: 538
 section: "The D2 (-5/+4) Sequence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "D2 (-5/+4) applied-chord sequence"
   - "descending second sequence with applied chords"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - applied-chord
   - harmonic-sequences
@@ -36,7 +30,6 @@ related:
   - applied-chord-sequence-a2
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
 ---

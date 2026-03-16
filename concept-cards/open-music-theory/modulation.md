@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modulation
 slug: modulation
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 17
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "key change"
   - "change of key"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonicization
   - cadence
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - tonicization
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modulation?"
   - "How does modulation differ from tonicization?"

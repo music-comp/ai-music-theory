@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Interregional Modulation (Tetrachordal)"
 slug: interregional-modulation-tetrachordal
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: tetrachordal transformations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 169
 section: "Boretz regions"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Boretz-region modulation"
   - "tetrachordal modulation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - boretz-region
   - octatonic-region
@@ -37,7 +31,6 @@ related:
   - brunnhilde-immolation-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is interregional modulation in the Tristan-genus system?"
   - "How do you detect a shift between Boretz regions?"

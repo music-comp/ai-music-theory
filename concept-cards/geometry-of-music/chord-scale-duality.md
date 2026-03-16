@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chord-Scale Duality
 slug: chord-scale-duality
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: theory
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 172
 section: "4.10"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "scale-chord complementarity"
   - "chords as small scales"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interscalar-transposition
   - combining-scalar-chromatic-transposition
@@ -35,7 +29,6 @@ related:
   - nearly-even-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the duality between chords and scales?"
   - "In what sense is a chord a 'small scale'?"

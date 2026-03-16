@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Operation Network
 slug: operation-network
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-definitions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 9
 pdf_page: 224
 section: "9.3.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-network-definition
   - operation-graph
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - transformation-network-definition
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do operation networks differ from transformation networks?"
   - "What is an operation network?"

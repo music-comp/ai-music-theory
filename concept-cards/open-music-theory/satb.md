@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: SATB
 slug: satb
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: notation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 20
 pdf_page: null
 section: "Writing Chords in SATB Style"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chorale style"
   - "four-part writing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triad
   - seventh-chord
@@ -37,7 +31,6 @@ related:
   - counterpoint
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is SATB style?"
   - "What are the six rules for SATB chord construction?"

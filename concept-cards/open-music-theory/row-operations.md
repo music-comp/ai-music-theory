@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Row Operations
 slug: row-operations
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: null
 section: "IX.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "twelve-tone operations"
   - "serial operations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-row
 extends: []
@@ -34,7 +28,6 @@ related:
   - row-matrix
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the four row operations in twelve-tone theory?"
   - "How are P, R, I, and RI forms labeled?"

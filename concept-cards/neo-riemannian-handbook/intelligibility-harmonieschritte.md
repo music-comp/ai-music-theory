@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Intelligibility of Harmonieschritte
 slug: intelligibility-harmonieschritte
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic cognition and constraint
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Verstaendlichkeit"
   - "intelligibility hierarchy"
   - "directly intelligible vs. mediated relationships"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonieschritte
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - neo-riemannian-operations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Riemann rank harmonic progressions by comprehensibility?"
   - "What makes a Harmonieschritt 'directly intelligible'?"

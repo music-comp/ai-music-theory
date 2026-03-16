@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: TRANSIT Function
 slug: transit-function
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-definitions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 224
 section: "9.2.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "TRANSIT"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - node-arrow-system
   - semigroup
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - contents-function
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the TRANSIT function in a transformation graph?"
   - "How are arrows labeled in a transformation graph?"

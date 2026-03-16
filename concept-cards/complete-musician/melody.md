@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melody
 slug: melody
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: melodic-structure
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 70
 section: "Melody: Characteristics, Writing, and Listening"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tune"
   - "melodic line"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - interval
   - diatonic-scale
@@ -36,7 +30,6 @@ related:
   - melodic-cadence
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What makes a good melody?"
   - "What are the characteristics of tonal melodies?"

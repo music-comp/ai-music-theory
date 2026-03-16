@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Four Sequence Types for Seventh Chords
 slug: four-sequence-types-seventh-chords
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-techniques
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 306
 section: "8.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Chopin's four sequence types"
   - "dominant-seventh sequence varieties"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chopin-open-form
   - tesseract-model-dominant-sevenths
@@ -35,7 +29,6 @@ related:
   - minor-third-substitution-seventh-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What four fundamental sequence types arise from staggered descent through dominant seventh chords?"
   - "How are these four types related to each other?"

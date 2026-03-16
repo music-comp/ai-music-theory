@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonvorstellung (Tone Representation/Imagination)
 slug: tonvorstellung
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: epistemology
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Benjamin Steege, Brian Hyer"
@@ -17,10 +14,8 @@ chapter_number: null
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - tone imagination
   - tone representation
@@ -28,7 +23,6 @@ aliases:
   - "Lehre von den Tonvorstellungen"
   - Tonphantasie (tone fantasy/imagination)
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - klangvertretung
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - empfindung-vorstellung
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are Tonvorstellungen (tone representations/imaginations)?"
   - "What distinguishes acoustic from psychological foundations of harmony?"

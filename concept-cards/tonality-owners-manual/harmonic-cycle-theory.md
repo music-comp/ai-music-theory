@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Cycle Theory
 slug: harmonic-cycle-theory
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 311
 section: "A theory of harmonic cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "theory of harmonic cycles"
   - "heterogeneous grammar of functional tonality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - descending-thirds-arrangement
   - protofunctionality
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - function-and-retrofunction
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a functional progression, and what constraints does it follow?"
   - "How is functional tonality organized as a grammar?"

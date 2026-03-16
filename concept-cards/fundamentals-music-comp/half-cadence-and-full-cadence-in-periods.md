@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Half Cadence and Full Cadence in Periods
 slug: half-cadence-and-full-cadence-in-periods
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: cadence-types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 22
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - cadential structure of the period
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - phrase
@@ -37,7 +31,6 @@ related:
   - harmonic-enrichment-in-the-consequent
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes a half cadence from a full cadence in period construction?"
   - "How do cadences define the period's two halves?"

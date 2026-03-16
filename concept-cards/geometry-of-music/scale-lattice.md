@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scale Lattice
 slug: scale-lattice
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: voice-leading
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 150
 section: "4.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "seven-note scale lattice"
   - "scale voice-leading graph"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-lattices
   - eight-important-scales
@@ -37,7 +31,6 @@ related:
   - voice-leading-between-scales
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the scale lattice?"
   - "How does it represent voice-leading relationships among seven-note scales?"

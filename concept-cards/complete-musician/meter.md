@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Meter
 slug: meter
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric-organization
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 2
 pdf_page: 33
 section: "Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "metric structure"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pulse-and-beat
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - rhythm
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is meter?"
   - "What distinguishes simple from compound meter?"

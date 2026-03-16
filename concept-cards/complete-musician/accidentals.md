@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Accidentals
 slug: accidentals
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,10 +14,8 @@ chapter_number: 1
 pdf_page: 3
 section: "Accidentals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chromatic alterations"
   - "sharp"
@@ -29,7 +24,6 @@ aliases:
   - "double sharp"
   - "double flat"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - half-step-and-whole-step
 extends: []
@@ -39,7 +33,6 @@ related:
   - chromatic-scale
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are accidentals?"
   - "What do sharps, flats, and naturals do?"

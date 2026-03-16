@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: INJ Operation Theorem
 slug: inj-operation-theorem
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 154
 section: "6.5.1-6.5.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 6.5.1"
   - "Corollary 6.5.2"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
   - operation
@@ -36,7 +30,6 @@ related:
   - inj-generalizes-ifunc
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens to INJ when f is an operation?"
 ---

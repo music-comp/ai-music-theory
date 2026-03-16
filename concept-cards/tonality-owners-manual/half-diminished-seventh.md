@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Half-Diminished Seventh
 slug: half-diminished-seventh
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chord-types
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 311
 section: "A theory of harmonic cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - half-diminished seventh chord
   - "ii-half-dim-7"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-cycle-theory
 extends: []
@@ -34,7 +28,6 @@ related:
   - functional-penumbra
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the half-diminished seventh chord function in the expanding functional vocabulary?"
   - "What is the historical trajectory of the half-diminished seventh in functional tonality?"

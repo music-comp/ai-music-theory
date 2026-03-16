@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Functional Harmony
 slug: functional-harmony
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 44
 section: "Progressions"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - implied harmony
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-labeling
   - harmony
@@ -35,7 +29,6 @@ related:
   - seventh-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is functional harmony?"
   - "How does a melody imply harmony?"

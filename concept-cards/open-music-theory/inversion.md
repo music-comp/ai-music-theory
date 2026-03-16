@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Inversion
 slug: inversion
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 19
 pdf_page: null
 section: "Triadic Inversion and Figures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord inversion"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triad
   - seventh-chord
@@ -34,7 +28,6 @@ related:
   - roman-numeral-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is chord inversion?"
   - "What determines the inversion of a chord?"

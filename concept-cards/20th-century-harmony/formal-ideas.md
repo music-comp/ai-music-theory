@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Formal Ideas
 slug: formal-ideas
 
-# === CLASSIFICATION ===
 category: form
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: 270
 section: "Theme and Form Ideas"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "formal generation"
   - "form-shaping ideas"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - theme-and-form
 extends: []
@@ -35,7 +29,6 @@ related:
   - compositional-freedom
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What kinds of musical ideas can shape formal structure?"
   - "How do harmonic events suggest formal direction?"

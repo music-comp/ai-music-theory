@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Motive
 slug: motive
 
-# === CLASSIFICATION ===
 category: motive
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 14
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - basic motive
   - motif
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
 extends:
@@ -40,7 +34,6 @@ related:
   - repetition-and-monotony
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a motive?"
   - "What are the features of a motive?"

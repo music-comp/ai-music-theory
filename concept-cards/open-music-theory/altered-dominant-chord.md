@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Altered and Extended Dominant Chords
 slug: altered-dominant-chord
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,10 +14,8 @@ chapter_number: 13
 pdf_page: null
 section: "V.13"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "V+"
   - "Vo"
@@ -28,7 +23,6 @@ aliases:
   - "V11"
   - "V13"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dominant-seventh-chord
   - augmented-triad
@@ -38,7 +32,6 @@ related:
   - augmented-sixth-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are altered dominant chords and how do they resolve?"
   - "What are extended dominant chords (V9, V11, V13)?"

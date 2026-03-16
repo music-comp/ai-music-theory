@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diminished Seventh Chord
 slug: diminished-seventh-chord
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: seventh-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 44
 section: "Diminished Seventh"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - full diminished chord
   - fully diminished seventh
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diminished-triad
   - cyclic-permutations-and-root-identification
@@ -37,7 +31,6 @@ contrasts_with:
   - half-diminished-seventh-chord
   - augmented-triad
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a diminished seventh chord?"
   - "Why does the diminished seventh chord have no discernible root?"

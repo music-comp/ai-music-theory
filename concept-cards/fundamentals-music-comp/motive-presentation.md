@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Motive Presentation
 slug: motive-presentation
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: theme-construction
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 20
 section: "The Beginning of the Sentence"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - presentation of the motive
   - thematic presentation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - phrase
@@ -37,7 +31,6 @@ related:
   - comprehensibility-through-subdivision
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I build a sentence opening (presentation)?"
   - "What must a theme's opening segment accomplish?"

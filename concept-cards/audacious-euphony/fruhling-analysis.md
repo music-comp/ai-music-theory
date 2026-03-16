@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Fruhling Analysis (Strauss)"
 slug: fruhling-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: strauss-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 98
 section: "Weitzmann Regions without Sequences: Wagner and Strauss"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Strauss Fruhling opening analysis"
   - "Orchesterlieder Fruhling analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - weitzmann-region
   - s-transformation
@@ -37,7 +31,6 @@ related:
   - weitzmann-region-nonsequential-paths
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Strauss explore Weitzmann regions?"
   - "What is the R+LP=S identity in practice?"

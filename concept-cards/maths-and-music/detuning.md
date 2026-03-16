@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Detuning
 slug: detuning
 
-# === CLASSIFICATION ===
 category: modular-arithmetic
 subcategory: chromatic-scales
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 74
 section: "Detuning"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - synthesizer detuning
   - cent offset tuning
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - n-chromatic-scale
   - non-standard-chromatic-scales
@@ -34,7 +28,6 @@ related:
   - n-tone-row-chart
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can a synthesizer be used to play in a non-standard chromatic scale?"
   - "How are detuning offsets calculated for an n-chromatic scale?"

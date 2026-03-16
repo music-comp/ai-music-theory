@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Suspension
 slug: suspension
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: 302
 section: "The Suspension"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - SUS
   - sus
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - accented-vs-unaccented-dissonance
   - voice-leading
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - anticipation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

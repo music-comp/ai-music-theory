@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Powers of Two as Exact Keyboard Intervals
 slug: powers-of-two-as-exact-keyboard-intervals
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: integer-ratios
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 110
 section: "Non-Chromatic Nature of Intervals Other Than Multiple Octaves"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "non-chromatic nature of integer intervals"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - integral-intervals
   - unique-prime-factorization
@@ -35,7 +29,6 @@ related:
   - irrationality-of-equally-tempered-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Which integer ratios can be played exactly on an equally tempered keyboard?"
   - "Why can only octaves be played precisely in equal temperament?"

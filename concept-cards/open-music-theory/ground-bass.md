@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ground Bass
 slug: ground-bass
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: compositional-forms
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "basso ostinato"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - counterpoint
   - imitation
@@ -34,7 +28,6 @@ related:
   - chaconne-passacaglia
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a ground bass and how does it differ from ostinato?"
   - "How do composers create variety over a repeating bass line?"

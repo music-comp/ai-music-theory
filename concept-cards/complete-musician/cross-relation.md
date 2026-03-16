@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Cross Relation
 slug: cross-relation
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: applied chords
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 24
 pdf_page: 538
 section: "Voice Leading for Applied Chords"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "false relation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-for-applied-chords
 extends: []
@@ -33,7 +27,6 @@ related:
   - chromatic-voice-exchange
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an applied chord?"
 ---

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Serial Modulation
 slug: serial-modulation
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: tonal-organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 12
 pdf_page: 247
 section: "Serial Harmony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "serial tonal-area shift"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - serial-harmony
   - melodic-set
@@ -36,7 +30,6 @@ related:
   - twelve-tone-technique
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does modulation work in serial music?"
   - "What are closely related serial harmonic areas?"

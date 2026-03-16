@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hexatonic-Weitzmann Interaction
 slug: hexatonic-weitzmann-interaction
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: unified model
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 101
 section: "How Hexatonic and Weitzmann Regions Interact"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "hexatonic-Weitzmann coordination"
   - "H/W interaction"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - hexatonic-region
   - weitzmann-region
@@ -42,7 +36,6 @@ contrasts_with:
   - hexatonic-cycle
   - weitzmann-region-structure
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do hexatonic regions relate to Weitzmann regions?"
   - "What must I know before understanding the Cube Dance?"

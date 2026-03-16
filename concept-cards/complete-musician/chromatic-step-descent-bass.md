@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Step-Descent Bass
 slug: chromatic-step-descent-bass
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic progressions
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 27
 pdf_page: 616
 section: "Chromatic Stepwise Bass Descents"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "lament bass"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modal-mixture
 extends:
@@ -33,7 +27,6 @@ related:
   - chromatic-voice-exchange
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is modal mixture?"
 ---

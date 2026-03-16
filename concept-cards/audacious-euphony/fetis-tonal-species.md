@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Fetis's Tonal Species"
 slug: fetis-tonal-species
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: tonal taxonomy
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 19
 section: "Triads in Chromatic Space"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "four species of tonality"
   - "Fetis's tonal taxonomy"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - kurth-absolute-progressions
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are Fetis's four species of tonality?"
   - "How does Fetis's framework support the idea of multiple coexisting syntaxes?"

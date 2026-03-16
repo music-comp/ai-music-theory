@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Intrinsic vs. Enclosing Scale
 slug: intrinsic-vs-enclosing-scale
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: scales
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 37
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - extrinsic scale
   - intrinsic scale
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transposition-along-a-collection
 extends: []
@@ -36,7 +30,6 @@ related:
   - voicing-as-set-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the difference between a chord's intrinsic scale and its enclosing scale?"
   - "How does the intrinsic scale connect traditional tonal theory with modern set theory?"

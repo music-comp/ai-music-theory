@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Unprepared Chromatic Modulation
 slug: unprepared-chromatic-modulation
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: modulation
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 28
 pdf_page: 637
 section: "Unprepared Chromatic Modulations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "direct chromatic modulation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-modulation
 extends:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - chromatic-pivot-chord-modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I modulate to a closely related key?"
 ---

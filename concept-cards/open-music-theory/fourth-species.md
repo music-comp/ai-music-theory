@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Fourth Species Counterpoint
 slug: fourth-species
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: species-counterpoint
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "syncopated counterpoint"
   - "suspension species"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - first-species
   - suspension
@@ -35,7 +29,6 @@ related:
   - fifth-species
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does fourth species introduce the suspension?"
   - "What are the types of suspensions used above and below the cantus?"

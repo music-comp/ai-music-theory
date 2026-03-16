@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Musical Space S
 slug: musical-space-s
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: foundational-definitions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 47
 section: "Definition 2.3.1, Section 2.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "space of a GIS"
   - "GIS space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
 extends: []
@@ -36,7 +30,6 @@ related:
   - simply-transitive-action
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the space S in a GIS?"
   - "What constraints does Condition (B) place on S?"

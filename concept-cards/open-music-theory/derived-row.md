@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Derived Row
 slug: derived-row
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Row Properties"
 chapter_number: 9
 pdf_page: null
 section: "IX.3"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-row
   - set-class
@@ -27,7 +21,6 @@ related:
   - segmental-invariance
   - all-trichord-row
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a derived row?"
   - "Why do composers favor derived rows?"

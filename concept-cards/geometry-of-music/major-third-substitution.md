@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Major-Third Substitution (Chromatic)
 slug: major-third-substitution
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-techniques
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 301
 section: "8.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chromatic third substitution"
   - "triadic substitution by major third"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - major-third-system
   - efficient-voice-leading
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - third-substitution
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does chromatic major-third substitution generate sequences in Schubert?"
   - "What is the relationship between chromatic descending sequences and major-third-related sequences?"

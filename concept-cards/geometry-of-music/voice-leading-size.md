@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice-Leading Size
 slug: voice-leading-size
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: measurement
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 91
 section: "3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "voice-leading distance"
   - "path length in chord space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-line-segments
   - two-note-chord-space
@@ -36,7 +30,6 @@ related:
   - nearly-even-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How is the size of a voice leading measured geometrically?"
   - "What determines how 'efficient' a voice leading is?"

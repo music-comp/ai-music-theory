@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Logarithm Properties
 slug: logarithm-properties
 
-# === CLASSIFICATION ===
 category: logarithms-and-measurement
 subcategory: logarithms
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 66
 section: "Properties of Logarithms"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "logarithm laws L1-L3"
   - "properties L1 L2 L3"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - logarithmic-functions-as-inverses
   - exponents-and-exponential-functions
@@ -36,7 +30,6 @@ related:
   - homomorphism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do logarithms convert multiplicative intervals to additive measurements?"
   - "What are the fundamental properties of logarithms?"

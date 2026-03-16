@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Heterophony
 slug: heterophony
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: texture
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 21
 pdf_page: null
 section: "Heterophony"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "heterophonic texture"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - texture
 extends:
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - homophony
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is heterophony?"
   - "How does heterophony differ from monophony and polyphony?"

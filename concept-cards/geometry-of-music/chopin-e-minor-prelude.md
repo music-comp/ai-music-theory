@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chopin E Minor Prelude Analysis
 slug: chopin-e-minor-prelude
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: chromatic-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 305
 section: "8.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Chopin Op. 28 No. 4 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chopin-open-form
   - descending-fifths-sequence
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - chopin-open-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the E minor Prelude relate to the F minor Mazurka?"
   - "What makes the Prelude a chromatic elaboration of a descending-fifths sequence?"

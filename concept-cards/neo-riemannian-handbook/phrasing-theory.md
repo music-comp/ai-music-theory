@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Phrasing Theory (Riemann's Phrasierungslehre)
 slug: phrasing-theory
 
-# === CLASSIFICATION ===
 category: rhythm-and-meter
 subcategory: phrase-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Phrasierungslehre"
   - "Riemann's phrasing theory"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - auftakttheorie
@@ -37,7 +31,6 @@ related:
   - metric-freedom
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What was Riemann's Phrasierungslehre and what role did it play in his theoretical system?"
   - "Why did Riemann's phrasing theory decline in influence despite being central to his work?"

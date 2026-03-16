@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Half-Diminished Seventh Chord
 slug: half-diminished-seventh-chord
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: seventh-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 44
 section: "Half-Diminished Seventh"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - diminished-triad
 extends:
@@ -34,7 +28,6 @@ contrasts_with:
   - diminished-seventh-chord
   - seventh-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a half-diminished seventh chord?"
   - "How does the half-diminished seventh differ from the fully diminished seventh?"

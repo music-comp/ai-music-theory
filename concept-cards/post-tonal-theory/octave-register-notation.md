@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Octave-Register Notation
 slug: octave-register-notation
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation systems
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 20
 section: "1.3 Pitch and Pitch Class"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - scientific pitch notation
   - octave designation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - integer-notation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are specific pitches designated in post-tonal theory?"
   - "What does C4 mean?"

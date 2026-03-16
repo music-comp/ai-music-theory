@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interscalar Transposition
 slug: interscalar-transposition
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: voice-leading-geometry
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 536
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - spacing-preserving voice leading between unrelated chords
   - crossing-free voice leading
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-geometry
   - basic-voice-leading
@@ -36,7 +30,6 @@ related:
   - quadruple-hierarchy
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a spacing-preserving voice leading?"
   - "How do interscalar transpositions relate to the spiral diagrams?"

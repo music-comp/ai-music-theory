@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sequences and Quasi-Sequences
 slug: sequences-and-quasi-sequences
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: motivic-development
 tier: intermediate/advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 39
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - beginning-the-sentence
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - chain-like-construction
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a sequence in Schoenberg's usage?"
   - "How are sequences used in sentence continuation?"

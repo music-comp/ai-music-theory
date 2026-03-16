@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Die Natur der Harmonik (The Nature of Harmony)"
 slug: nature-of-harmony
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: primary-source
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Benjamin Steege"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Die Natur der Harmonik"
   - "Riemann 1882 lecture"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - overtone-series
@@ -37,7 +31,6 @@ related:
   - harmonic-dualism
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes acoustic from psychological foundations of harmony?"
   - "What are Tonvorstellungen (tone representations/imaginations)?"

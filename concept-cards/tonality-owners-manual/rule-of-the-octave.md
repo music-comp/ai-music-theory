@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rule of the Octave
 slug: rule-of-the-octave
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: figured-bass
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 7
 pdf_page: 311
 section: "Fauxbourdon and linear idioms"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - ROTO
   - fauxbourdon ROTO
   - regola dell'ottava
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-cycle-theory
   - descending-thirds-arrangement
@@ -37,7 +31,6 @@ related:
   - cadential-weight
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the rule of the octave and how does it relate to functional tonality?"
   - "What is the fauxbourdon ROTO and how does it differ from the traditional rule of the octave?"

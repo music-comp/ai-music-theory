@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Blues Progression in Jazz
 slug: blues-progression-jazz
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-form
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 373
 section: "10.1, 10.6"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "blues form"
   - "twelve-bar blues"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ii-v-i-jazz-progression
 extends: []
@@ -34,7 +28,6 @@ related:
   - playing-outside
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What role does the blues progression play in jazz?"
   - "How does the blues create polytonal effects?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Nearly Even Tetrachord
 slug: nearly-even-tetrachord
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: tetrachordal systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 165
 section: "The Tristan Genus as Nearly Even Tetrachord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Tristan-genus chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nearly-even
   - diminished-seventh-chord
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - consonant-triad
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nearly even tetrachord?"
   - "How does the concept of near-evenness extend from triads to seventh chords?"

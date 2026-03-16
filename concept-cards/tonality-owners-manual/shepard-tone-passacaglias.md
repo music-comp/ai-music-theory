@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Shepard-Tone Passacaglias
 slug: shepard-tone-passacaglias
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 47
 section: "Shepard-tone passacaglias"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - loop-on-spiral
   - loop-families-in-rock
@@ -34,7 +28,6 @@ related:
   - fundamental-canon-of-rock
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a Shepard-tone passacaglia?"
   - "How do voices connect across the repeat in rock progressions?"

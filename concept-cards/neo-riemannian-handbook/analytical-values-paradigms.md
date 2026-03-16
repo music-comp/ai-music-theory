@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Analytical Values and Paradigms
 slug: analytical-values-paradigms
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: paradigm-comparison
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Steven Rings"
@@ -17,16 +14,13 @@ chapter_number: 18
 pdf_page: 488
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - analytical ideology
   - Riemannian analytical values
   - paleo- vs neo-Riemannian values
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - plr-transformations
@@ -39,7 +33,6 @@ related:
   - monotonality-principle
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes Riemann's original theory from neo-Riemannian theory?"
   - "What ideological assumptions underlie Riemannian vs. neo-Riemannian analysis?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Musical Motion Metaphor
 slug: musical-motion-metaphor
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: phenomenology
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Daniel Harrison"
@@ -17,16 +14,13 @@ chapter_number: 20
 pdf_page: 549
 section: "I. The New Riemann: Same as the Old Riemann?"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - metaphor of musical motion
   - tonal motion
   - "Zuckerkandl's paradox"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -34,7 +28,6 @@ related:
   - transformational-theory
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the philosophical problem with musical motion?"
   - "How does transformational theory model musical motion?"

@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Seamless Orchestral Crescendo
 slug: seamless-orchestral-crescendo
-# === CLASSIFICATION ===
 category: application
 subcategory: orchestration
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,18 +11,14 @@ chapter: "Subtle Color Changes"
 chapter_number: 10
 pdf_page: null
 section: "X.2"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - orchestral-crescendo
 extends: []
 related:
   - attack-sustain-effect
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do composers create seamless orchestral crescendos?"
   - "What is the spectral dimension of the crescendo in Berg's Wozzeck?"

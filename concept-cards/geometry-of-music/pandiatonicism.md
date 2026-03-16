@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pandiatonicism
 slug: pandiatonicism
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: compositional-technique
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 206
 section: "5.8.2"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "panscalar music"
   - "non-harmonic-consistent scalar music"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - macroharmony
   - harmonic-vs-macroharmonic-consistency
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - harmonic-vs-macroharmonic-consistency
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is pandiatonicism?"
   - "What features identify 'chord-first' versus 'scale-first' composition?"

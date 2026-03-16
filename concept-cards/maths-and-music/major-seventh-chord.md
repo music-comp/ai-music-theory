@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Major Seventh Chord
 slug: major-seventh-chord
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: seventh-chords
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 44
 section: "Major Seventh Chord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - major-triad
 extends:
@@ -34,7 +28,6 @@ contrasts_with:
   - seventh-chord
   - minor-seventh-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a major seventh chord?"
   - "What creates the characteristic dissonance of the major seventh chord?"

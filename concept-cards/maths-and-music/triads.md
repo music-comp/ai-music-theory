@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Triads
 slug: triads
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: triads
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 44
 section: "Triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - triadic harmony
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chords-as-note-class-collections
 extends: []
@@ -35,7 +29,6 @@ related:
   - augmented-triad
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a triad?"
   - "What are the four standard triad types?"

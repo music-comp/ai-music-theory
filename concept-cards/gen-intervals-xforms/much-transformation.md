@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: MUCH Transformation
 slug: much-transformation
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: serial-operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,13 +14,10 @@ chapter_number: 8
 pdf_page: 206
 section: "8.2.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - rich-transformation
 extends: []
@@ -33,7 +27,6 @@ related:
 contrasts_with:
   - rich-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the MUCH transformation?"
   - "How does MUCH differ from RICH?"

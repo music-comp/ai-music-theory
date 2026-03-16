@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voicing and Doubling
 slug: voicing-and-doubling
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: chord-structure
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 5
 pdf_page: 116
 section: "Voicing Triads: Spacing and Doubling"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "spacing"
   - "close position"
   - "open position"
   - "doubling"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triads
 extends: []
@@ -35,7 +29,6 @@ related:
   - keyboard-and-chorale-style
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is close position vs. open position?"
   - "Which chord members should be doubled?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Function and Retrofunction
 slug: function-and-retrofunction
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 47
 section: "Function and retrofunction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - retrofunctional harmony
   - retrofunction
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - weak-vs-strong-root-progressions
   - melodic-principle-of-harmony
@@ -38,7 +32,6 @@ related:
   - double-emploi
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes rock harmonic logic from classical functional harmony?"
   - "How do root-position chords differ functionally from inversions in rock vs. classical?"

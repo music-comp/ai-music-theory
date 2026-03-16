@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Euler Phi Function
 slug: euler-phi-function
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: number-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 100
 section: "Euler Phi Function"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "Euler's totient function"
   - "phi function"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - relatively-prime-integers
   - units-in-a-ring
@@ -37,7 +31,6 @@ related:
   - prime-numbers
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I compute the Euler phi function?"
   - "How many generating intervals does an m-chromatic scale have?"

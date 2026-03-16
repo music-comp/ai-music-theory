@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: First-Inversion Triads (Six-Three Chords)
 slug: first-inversion-triads
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: inversions
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,17 +14,14 @@ chapter_number: 10
 pdf_page: 226
 section: "Chordal Leaps in the Bass: I6 and V6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - 6/3 chords
   - six-three chords
   - I6
   - V6
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triads
   - contrapuntal-expansion
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - cadential-six-four-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the dominant relate to the tonic?"
 ---

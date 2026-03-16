@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tempo
 slug: tempo
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: null
 section: "Tempo"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tempi"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - beat
   - meter
@@ -34,7 +28,6 @@ related:
   - fermata
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is tempo?"
   - "How is tempo indicated in a score?"

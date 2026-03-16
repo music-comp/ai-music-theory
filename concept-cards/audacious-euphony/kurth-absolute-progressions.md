@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Kurth's Absolute Progressions"
 slug: kurth-absolute-progressions
 
-# === CLASSIFICATION ===
 category: historical-context
 subcategory: chromatic theory
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 19
 section: "Triads in Chromatic Space"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "absolute progressions"
   - "extratonal progressions"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fetis-tonal-species
 extends:
@@ -36,7 +30,6 @@ related:
   - diatonic-indeterminacy
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are Kurth's 'absolute progressions'?"
   - "How did Kurth extend Fetis's ideas about tonal disruption?"

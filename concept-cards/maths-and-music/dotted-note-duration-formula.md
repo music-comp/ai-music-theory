@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Dotted Note Duration Formula
 slug: dotted-note-duration-formula
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: duration
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 30
 section: "Dots"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "dotted notes"
   - "dot duration formula"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - note-durational-values
   - geometric-series-and-summation
@@ -37,7 +31,6 @@ related:
   - rests
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does a dot affect a note's duration?"
   - "What is the formula for the duration of a multiply-dotted note?"

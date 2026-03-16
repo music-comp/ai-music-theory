@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Doppelklang Voice Leading"
 slug: doppelklang-voice-leading
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: chromatic operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Edward Gollin"
@@ -17,16 +14,13 @@ chapter_number: 13
 pdf_page: 396
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "transformational Doppelklaenge analysis"
   - "dissonant voice-leading networks"
   - "DOUTH2 relation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - doppelklaenge
   - neo-riemannian-operations
@@ -38,7 +32,6 @@ related:
   - dvls-avls
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can neo-Riemannian voice-leading analysis extend to dissonant sonorities?"
   - "What is the DOUTH2 relation?"

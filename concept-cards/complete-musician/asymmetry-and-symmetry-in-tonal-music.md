@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Asymmetry and Symmetry in Tonal Music
 slug: asymmetry-and-symmetry-in-tonal-music
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: symmetrical harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 35
 pdf_page: 810
 section: "A Paradox: 'Balanced' Music Based on Asymmetry"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonal-ambiguity
 extends: []
@@ -32,7 +26,6 @@ related:
   - equal-divisions-of-the-octave
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do symmetry and asymmetry relate to tonality?"
   - "Why does symmetry create tonal ambiguity?"

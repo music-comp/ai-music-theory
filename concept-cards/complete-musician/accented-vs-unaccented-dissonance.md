@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Accented vs. Unaccented Dissonance
 slug: accented-vs-unaccented-dissonance
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: melodic-embellishment
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 13
 pdf_page: 302
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - accented tones of figuration
   - unaccented tones of figuration
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tones-of-figuration
 extends: []
@@ -36,7 +30,6 @@ related:
   - appoggiatura
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a nonchord tone?"
 ---

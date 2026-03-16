@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tonicization
 slug: tonicization
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: tonicization
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 24
 pdf_page: 538
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "temporary tonicization"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - applied-chord
 extends:
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does tonicization differ from modulation?"
   - "What is an applied chord?"

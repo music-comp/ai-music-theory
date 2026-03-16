@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Durational Accent
 slug: durational-accent
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: metric theory
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "William E. Caplin"
@@ -17,15 +14,12 @@ chapter_number: 15
 pdf_page: 428
 section: "Expressed Meter"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "accent by duration"
   - "notated durational emphasis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - expressed-meter
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - agogic-accent
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does note duration create metrical accent?"
   - "What is the difference between durational accent and agogic accent?"

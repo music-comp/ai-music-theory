@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Three-Voice Sequences Arranged 2 + 1
 slug: three-voice-sequences-2-plus-1
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 4
 pdf_page: 155
 section: "Three voices arranged 2 + 1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - canonic-sequence
   - voice-exchange
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - three-voice-triadic-sequences
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do three-voice sequences divide into canonic pair plus independent voice?"
 ---

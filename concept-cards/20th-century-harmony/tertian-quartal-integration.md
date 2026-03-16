@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tertian-Quartal Integration
 slug: tertian-quartal-integration
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: synthesis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
 source_slug: 20th-century-harmony
 authors: "Vincent Persichetti"
@@ -17,14 +14,11 @@ chapter_number: 13
 pdf_page: 270
 section: "Combining Textures"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "thirds-fourths blending"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - combining-textures
   - textural-transition
@@ -37,7 +31,6 @@ related:
   - quartal-secundal-blending
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can tertian and quartal harmony be blended?"
   - "What intervals connect tertian and quartal textures?"

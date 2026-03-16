@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice-Leading Distance and Scale Steps
 slug: voice-leading-distance-and-scale-steps
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: voice-leading-foundations
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 533
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - scale-step distance
   - relative distance measurement
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -35,7 +29,6 @@ related:
   - chordal-step-distance
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What foundational knowledge is needed for geometric models of voice leading?"
   - "How is distance measured in Tymoczko's geometric framework?"

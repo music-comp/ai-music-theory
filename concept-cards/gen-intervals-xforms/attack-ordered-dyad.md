@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Attack-Ordered Dyad (AOD)"
 slug: attack-ordered-dyad
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: time-span-set-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 119
 section: "5.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - AOD
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - set-in-gis
   - time-span-gis
@@ -35,7 +29,6 @@ related:
   - canonical-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an attack-ordered dyad in the time-span GIS?"
   - "How do dyad classes correspond to forwards-oriented intervals?"

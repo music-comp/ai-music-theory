@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Diatonic Chord Lattice
 slug: diatonic-chord-lattice
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: chord-space
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 273
 section: "7.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord cube"
   - "diatonic three-note lattice"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - circle-of-thirds-harmonic
   - two-lattices
@@ -35,7 +29,6 @@ related:
   - figured-bass-pedagogy
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are suspensions represented geometrically?"
   - "What three-note diatonic sonorities can resolve to a triad by stepwise descent?"

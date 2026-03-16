@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "SNDW (Sandwich Function)"
 slug: sndw-function
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: embedding-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 119
 section: "5.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - sandwich number
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - emb-function
   - cov-function
@@ -36,7 +30,6 @@ related:
   - adjoin-function
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the sandwich function SNDW?"
 ---

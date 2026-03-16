@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Deletion Strategy
 slug: deletion-strategy
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: strategies
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 157
 section: "Four Eighteenth-Century Approaches to Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "deletion"
   - "suppression of dissonance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
   - four-approaches-to-dissonance
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - reduction-strategy
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes deletion from reduction as dissonance strategies?"
   - "How does Schenkerian analysis handle dissonant harmonies?"

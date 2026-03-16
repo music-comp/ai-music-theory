@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modified and Partial Sequences
 slug: modified-and-partial-sequences
 
-# === CLASSIFICATION ===
 category: technique
 subcategory: sequential-treatment
 tier: intermediate/advanced
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 8
 pdf_page: 39
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - sequentially controlled
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sequences-and-quasi-sequences
 extends:
@@ -35,7 +29,6 @@ related:
   - diatonic-and-chromatic-sequences
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are modified and partial sequences?"
   - "How strictly must a sequence transpose its material?"

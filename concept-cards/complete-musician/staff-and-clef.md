@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Staff and Clef
 slug: staff-and-clef
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,10 +14,8 @@ chapter_number: 1
 pdf_page: 3
 section: "Charting Musical Sound: Staff and Clef"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "staves"
   - "treble clef"
@@ -30,7 +25,6 @@ aliases:
   - "C clef"
   - "grand staff"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -38,7 +32,6 @@ related:
   - pitch-and-pitch-class
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a staff?"
   - "What are the different clefs?"

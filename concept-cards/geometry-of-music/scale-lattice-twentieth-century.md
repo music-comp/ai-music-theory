@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scale Lattices in Twentieth-Century Music
 slug: scale-lattice-twentieth-century
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: scale-geometry
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 9
 pdf_page: 328
 section: "9.3"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "scale space"
   - "two-dimensional scale lattice"
   - "three-dimensional scale lattice"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - scale-lattice
   - single-semitone-scale-voice-leading
@@ -37,7 +31,6 @@ related:
   - acoustic-scale-as-intermediary
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can we visualize modulatory paths in twentieth-century music?"
   - "What do scale lattices reveal about twentieth-century compositional technique?"

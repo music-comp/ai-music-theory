@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Well-Ordering Principle Variations
 slug: well-ordering-principle-variations
 
-# === CLASSIFICATION ===
 category: algebra-in-music
 subcategory: groups
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 82
 section: "Variations On The Well-Ordering Principle"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - WOP variations
   - well-ordering axiom
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends:
   - well-ordering-principle
@@ -34,7 +28,6 @@ related:
   - division-algorithm
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the equivalent formulations of the Well-Ordering Principle?"
   - "How is WOP.4 used in the proof of the Generalized Division Algorithm?"

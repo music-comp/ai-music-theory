@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Involutory Elements
 slug: involutory-elements
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: group-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 87
 section: "3.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "involution"
   - "self-inverse element"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
 extends: []
@@ -34,7 +28,6 @@ related:
   - inversion-transposition-combination
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an involutory element in a group?"
   - "Why does T_6 commute with all inversions in the 12-tone GIS?"

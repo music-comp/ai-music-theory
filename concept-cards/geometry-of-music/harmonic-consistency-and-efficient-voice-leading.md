@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Consistency and Efficient Voice Leading
 slug: harmonic-consistency-and-efficient-voice-leading
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: constraints
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 97
 section: "3.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "combining constraints"
   - "harmonic and contrapuntal constraints"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - two-note-chord-space
   - voice-leading-size
@@ -38,7 +32,6 @@ related:
   - tritone-as-midpoint
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can composers combine harmonic consistency with efficient voice leading?"
   - "Why do nearly even chords support efficient voice leading?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Key-Template Tonnetz Flips
 slug: key-template-tonnetz-flips
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: chromatic operations
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "David Kopp"
@@ -17,15 +14,12 @@ chapter_number: 14
 pdf_page: 413
 section: "III. Postscript"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "diatonic set flips"
   - "key-template flips on the Tonnetz"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tonnetz
   - chromatic-mediant
@@ -36,7 +30,6 @@ related:
   - chromatic-tonality
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are chromatic mediants represented on the Tonnetz?"
   - "What is the structural relationship between key-level and chord-level transformations?"

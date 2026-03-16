@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Transposition
 slug: transposition
 
-# === CLASSIFICATION ===
 category: rhythm-and-form
 subcategory: melody
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,16 +14,13 @@ chapter_number: 2
 pdf_page: 30
 section: "Transposition"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "chromatic transposition"
   - "diatonic transposition"
   - "vertical shift"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - geometric-transformations-of-graphs
   - melody
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - translation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is transposition in music?"
   - "What is the difference between chromatic and diatonic transposition?"

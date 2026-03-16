@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmoniewirkung in Harmonieschritte
 slug: harmoniewirkung-harmonieschritte
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic effect and tonal coherence
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: null
 section: "Systematik der Harmonieschritte"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "harmonic effect of progressions"
   - "Wirkung of Harmonieschritte"
   - "cadential effect"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonieschritte
   - intelligibility-harmonieschritte
@@ -36,7 +30,6 @@ related:
   - over-determined-triad
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Riemann evaluate the musical effect of different harmonic progressions?"
   - "What makes some Harmonieschritte effective and others weak?"

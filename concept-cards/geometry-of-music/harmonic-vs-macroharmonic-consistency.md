@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic vs. Macroharmonic Consistency
 slug: harmonic-vs-macroharmonic-consistency
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: macroharmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 172
 section: "5.1–5.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "two-dimensional consistency"
   - "macroharmonic consonance"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - macroharmony
   - harmonic-consistency
@@ -37,7 +31,6 @@ related:
   - fundamental-theorem-of-jazz
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do the five components of tonality constrain each other?"
   - "How does harmonic consistency relate to macroharmonic consistency?"

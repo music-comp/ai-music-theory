@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: IFUNC Invariance Under Interval-Preserving Operations
 slug: ifunc-interval-preserving
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: interval-functions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 119
 section: "5.1.5"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Theorem 5.1.5"
   - IFUNC P-invariance
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ifunc
   - interval-preserving-operation
@@ -37,7 +31,6 @@ related:
   - ifunc-transposition-theorem
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why are interval-preserving operations considered canonical?"
   - "What happens to IFUNC when both sets are transformed by an interval-preserving operation?"

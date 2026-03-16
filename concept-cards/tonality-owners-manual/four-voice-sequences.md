@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Four-Voice Sequences
 slug: four-voice-sequences
 
-# === CLASSIFICATION ===
 category: form
 subcategory: sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: 155
 section: "Four voices"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "omnibus sequence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - three-voice-sequences-2-plus-1
   - three-voice-triadic-sequences
@@ -37,7 +31,6 @@ related:
   - thinking-within-the-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do four-voice sequences organize their voices?"
 ---

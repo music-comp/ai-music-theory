@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Regional Indeterminacy
 slug: regional-indeterminacy
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical frameworks and methods
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 11
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "key indeterminacy"
   - "tonally indeterminate passages"
   - "suspension of regional determination"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - regional-space
   - tonnetz
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - tonal-pitch-space
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What happens when a passage resists assignment to a single key?"
   - "How does the Tonnetz handle music without a clear tonal center?"

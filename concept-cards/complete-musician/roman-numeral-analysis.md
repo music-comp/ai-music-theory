@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Roman Numeral Analysis
 slug: roman-numeral-analysis
 
-# === CLASSIFICATION ===
 category: chords
 subcategory: analysis
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 116
 section: "Roman Numerals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "roman numerals"
   - "RNA"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triads
   - triad-quality
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - lead-sheet-notation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I use roman numerals in harmonic analysis?"
 ---

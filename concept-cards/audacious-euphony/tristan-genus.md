@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tristan Genus
 slug: tristan-genus
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: tetrachordal systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 165
 section: "The Tristan Genus as Nearly Even Tetrachord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "set-class 4-27"
   - "prime form [0258]"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nearly-even-tetrachord
   - diminished-seventh-chord
@@ -40,7 +34,6 @@ related:
 contrasts_with:
   - consonant-triad
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Tristan genus?"
   - "How do seventh chords extend the triadic voice-leading model?"

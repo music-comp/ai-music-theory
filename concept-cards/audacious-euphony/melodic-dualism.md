@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic Dualism
 slug: melodic-dualism
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: theoretical-framework
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 35
 section: "Remarks on Dualism"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-equivalence
   - near-evenness
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - harmonic-dualism-critique
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is melodic dualism?"
   - "How does melodic dualism differ from harmonic dualism?"

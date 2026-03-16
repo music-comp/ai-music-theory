@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Solfege
 slug: solfege
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: null
 section: "Scale Degrees, Solfege, and Scale-Degree Names"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "solmization"
   - "sol-fa"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - major-scale
   - scale-degree
@@ -36,7 +30,6 @@ related:
   - sight-singing
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is solfege?"
   - "What are the solfege syllables for a major scale?"

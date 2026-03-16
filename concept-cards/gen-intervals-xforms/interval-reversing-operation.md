@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Interval-Reversing Operation
 slug: interval-reversing-operation
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: formal-features
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 62
 section: "3.6 Interval-Reversing Transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "interval-reversing transformation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - generalized-interval-system
   - inversion-operation
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - interval-preserving-operation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an interval-reversing transformation?"
   - "How do commutative and non-commutative GIS structures differ?"

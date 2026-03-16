@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Symmetrical Sequential Progression
 slug: symmetrical-sequential-progression
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: chromatic sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 36
 pdf_page: 829
 section: "A Final Equal Division of the Octave"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "D3 (-P4/+m2)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-sequences
 extends:
@@ -34,7 +28,6 @@ related:
   - omnibus
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do chromatic sequences divide the octave?"
 ---

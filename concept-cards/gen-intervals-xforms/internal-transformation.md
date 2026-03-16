@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Internal Transformation
 slug: internal-transformation
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: injection-function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 154
 section: "6.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - X-internal transformation
   - Y-internal transformation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - inj-function
 extends: []
@@ -38,7 +32,6 @@ contrasts_with:
   - progressive-transformation
   - external-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes internal from progressive transformations?"
   - "What is an internal transformation?"

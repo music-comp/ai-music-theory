@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rings Arrows
 slug: rings-arrows
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: diatonic functional syntax
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 8
 pdf_page: 187
 section: "Some Previous Proposals"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "tonal-gravitational arrows"
   - "semantic arrows"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - dom-subd-transformations
   - diatonic-encapsulation
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - pan-triadic-syntax
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are Rings arrows in the context of the Tonnetz?"
   - "How does the convertible Tonnetz represent tonal gravity?"

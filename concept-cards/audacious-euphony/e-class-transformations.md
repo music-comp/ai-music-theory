@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: E-Class Transformations
 slug: e-class-transformations
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: equivalence classes
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 124
 section: "Voice-Leading Zones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "zone-preserving transformations"
   - "identity class"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformation-class
   - voice-leading-zones
@@ -38,7 +32,6 @@ contrasts_with:
   - h-group-transformations
   - w-group-transformations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Which transformations preserve voice-leading zone?"
   - "What is the E-class and how does it complement H-class and W-class?"

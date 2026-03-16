@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Absolute Progression and Modal Chromaticism
 slug: absolute-progression-modal-chromaticism
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Daniel Harrison"
@@ -17,16 +14,13 @@ chapter_number: 20
 pdf_page: 565
 section: "III. Remarks on Fantasia on a Theme by Thomas Tallis"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Kurthian absolute progression
   - modal chromaticism
   - tonic overcrowding
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sensuous-functional-analysis
   - plr-transformations
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - monotonality-principle
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an absolute progression?"
   - "When is transformational analysis more appropriate than functional analysis?"

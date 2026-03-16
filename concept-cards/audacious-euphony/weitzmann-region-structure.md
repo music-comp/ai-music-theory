@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Weitzmann Region Structure
 slug: weitzmann-region-structure
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: voice-leading-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 77
 section: "The Structure of a Weitzmann Region"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Flat terrain structure"
   - "Uniform voice-leading space"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - weitzmann-region
   - voice-leading-work
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - hexatonic-cycle
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What distinguishes hexatonic from Weitzmann regions?"
   - "Why are Weitzmann regions described as flat terrain?"

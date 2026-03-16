@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Stravinsky's Subset Technique
 slug: stravinsky-subset-technique
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: subset-technique-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 362
 section: "9.4.2, 9.4.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Stravinsky Petit airs analysis"
   - "Dance of the Adolescents analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - subset-technique
 extends: []
@@ -34,7 +28,6 @@ related:
   - beatles-help-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Stravinsky use the subset technique?"
   - "What is the abstract form of the subset technique?"

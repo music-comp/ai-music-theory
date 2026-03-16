@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Ascending Subdominant
 slug: ascending-subdominant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-progressions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 344
 section: "Bach the dualist"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ascending-fifth subdominant"
   - "IV-I with ascending leading tone"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
   - descending-thirds-arrangement
@@ -36,7 +30,6 @@ related:
   - passing-tone
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the ascending subdominant and how does it relate to the dominant?"
   - "How common is the ascending subdominant in different historical periods?"

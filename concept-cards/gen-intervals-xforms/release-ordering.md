@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Release-Ordering
 slug: release-ordering
 
-# === CLASSIFICATION ===
 category: generalized-set-theory
 subcategory: time-span-set-theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 5
 pdf_page: 119
 section: "5.4.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - release ordering
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span-gis
   - set-in-gis
@@ -35,7 +29,6 @@ related:
   - brahms-rhapsody-emb
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is release-ordering and why is it needed?"
   - "How does release-ordering differ from attack-ordering?"

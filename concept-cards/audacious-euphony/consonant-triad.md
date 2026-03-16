@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Consonant Triad
 slug: consonant-triad
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: null
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 19
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "harmonic triad"
   - "Klang"
   - "nearly even trichord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites: []
 extends: []
 related:
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - perfectly-even-chord
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a consonant triad in Cohn's framework?"
   - "Why are consonant triads central to both diatonic and pan-triadic syntax?"

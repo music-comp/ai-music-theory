@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Relative Keys
 slug: relative-keys
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: key-relationships
 tier: foundational
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,16 +14,13 @@ chapter_number: 1
 pdf_page: 3
 section: "Relative Major and Minor Keys"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "relative major"
   - "relative minor"
   - "relative key relations"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - key-signatures
   - major-scale
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - parallel-keys
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do relative major and minor keys relate?"
   - "What are relative keys?"

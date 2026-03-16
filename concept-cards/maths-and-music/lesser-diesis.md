@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Lesser Diesis
 slug: lesser-diesis
 
-# === CLASSIFICATION ===
 category: rational-intervals
 subcategory: commas
 tier: advanced
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 152
 section: "The Classical Mean-Tone Scale"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "ratio 128:125"
   - enharmonic diesis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - just-major-third
 extends: []
@@ -38,7 +32,6 @@ contrasts_with:
   - comma-of-pythagoras
   - comma-of-didymus
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the lesser diesis?"
   - "Why don't three just major thirds equal an octave?"

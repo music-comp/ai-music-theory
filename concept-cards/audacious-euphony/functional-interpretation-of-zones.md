@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Functional Interpretation of Zones
 slug: functional-interpretation-of-zones
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: functional theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 141
 section: "Departure -> Return Scripts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "zonal function"
   - "voice-leading dualism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zones
   - departure-return-script
@@ -37,7 +31,6 @@ related:
   - schubert-bb-sonata-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can voice-leading zones be interpreted functionally?"
   - "How do downshifting and upshifting relate to dominant and subdominant?"

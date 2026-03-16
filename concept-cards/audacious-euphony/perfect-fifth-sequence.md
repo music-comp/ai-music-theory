@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Perfect-Fifth Sequence (T5)"
 slug: perfect-fifth-sequence
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: sequences
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 111
 section: "Perfect-fifth (T +/- 5) sequences"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "T5 sequence"
   - "mediant chain"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-sequences
   - combination-table
@@ -36,7 +30,6 @@ related:
   - n-for-r-substitution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are perfect-fifth chromatic sequences generated?"
   - "What is the historical importance of the L/R chain?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Antecedent and Consequent Phrases
 slug: antecedent-and-consequent-phrases
 
-# === CLASSIFICATION ===
 category: form
 subcategory: structural patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 20
 pdf_page: 462
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "question and answer phrases"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - cadence-types
 extends: []
@@ -33,7 +27,6 @@ related:
   - harmonic-interruption
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are antecedent and consequent phrases?"
   - "How do antecedent and consequent relate to cadence strength?"

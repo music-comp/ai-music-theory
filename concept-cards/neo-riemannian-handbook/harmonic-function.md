@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Harmonic Function
 slug: harmonic-function
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: tonal-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier, Brian Hyer"
@@ -17,16 +14,13 @@ chapter_number: null
 pdf_page: null
 section: "Funktion/Bedeutung"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - tonal function
   - tonale Funktion
   - "Bedeutung (meaning)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - klang
   - tonality
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - stufentheorie
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Riemann's function theory relate to neo-Riemannian transformations?"
   - "What is a harmonic function in Riemann's theory?"

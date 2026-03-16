@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice-Leading Geometry
 slug: voice-leading-geometry
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: voice-leading-geometry
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: null
 pdf_page: 533
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - geometrical voice-leading theory
   - pitch-class voice-leading formalism
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - basic-voice-leading
 extends: []
@@ -36,7 +30,6 @@ related:
   - interscalar-transposition
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How are voice leadings formally defined in Tymoczko's framework?"
   - "What is the relationship between distance, scale steps, and transposition?"

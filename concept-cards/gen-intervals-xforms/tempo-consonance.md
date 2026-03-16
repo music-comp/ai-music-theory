@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tempo Consonance
 slug: tempo-consonance
 
-# === CLASSIFICATION ===
 category: timbral-temporal-systems
 subcategory: time-span-gis
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 99
 section: "4.1"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "tempo-consonance metaphor"
   - "tempo as pitch analogy"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - time-span
 extends: []
@@ -33,7 +27,6 @@ related:
   - interval-function-computation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can tempo ratios be understood by analogy with pitch intervals?"
   - "What makes some polyrhythmic relationships simpler than others?"

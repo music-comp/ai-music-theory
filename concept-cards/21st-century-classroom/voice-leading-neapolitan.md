@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice Leading the Neapolitan Chord
 slug: voice-leading-neapolitan
 
-# === CLASSIFICATION ===
 category: voice-leading
 subcategory: chromatic
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,15 +14,12 @@ chapter_number: 29
 pdf_page: 419
 section: "29.3 Voice Leading the Neapolitan Chord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "N6 voice leading"
   - "Neapolitan voice leading"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - neapolitan-chord
   - first-inversion-voice-leading
@@ -34,7 +28,6 @@ related:
   - voice-leading-augmented-sixth-chords
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the two rules for voice leading the Neapolitan chord?"
   - "What do you double in the N6 chord?"

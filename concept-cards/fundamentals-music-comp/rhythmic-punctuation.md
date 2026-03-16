@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Rhythmic Punctuation
 slug: rhythmic-punctuation
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: phrase-articulation
 tier: foundational
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 11
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - rhythmic differentiation
   - phrase punctuation
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
 extends:
@@ -34,7 +28,6 @@ related:
   - phrase-length
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a phrase in musical composition?"
   - "How does rhythm contribute to phrase structure?"

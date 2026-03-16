@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pivot Chord
 slug: pivot-chord
 
-# === CLASSIFICATION ===
 category: chromaticism
 subcategory: modulation
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 25
 pdf_page: 563
 section: "Analyzing Modulations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "common chord"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulation
   - closely-related-keys
@@ -34,7 +28,6 @@ related:
   - chromatic-pivot-chord-modulation
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I modulate to a closely related key?"
 ---

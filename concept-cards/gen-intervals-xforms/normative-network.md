@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Normative Network
 slug: normative-network
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: simply-transitive-groups
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 7
 pdf_page: 188
 section: "7.4"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "normative fundamental-bass network"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - intervals-as-transpositions
   - fundamental-bass-intervals
@@ -35,7 +29,6 @@ related:
   - beethoven-symphony-no-1-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a normative network in Lewin's transformational theory?"
 ---

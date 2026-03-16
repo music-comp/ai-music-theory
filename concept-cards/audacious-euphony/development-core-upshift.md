@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Development Core Upshift
 slug: development-core-upshift
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: formal function
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 150
 section: "Continuous Upshifts"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "central action zone upshift"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - continuous-upshift
   - voice-leading-zones
@@ -37,7 +31,6 @@ related:
   - dvorak-new-world-development
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the developmental core relate to continuous upshift?"
 ---

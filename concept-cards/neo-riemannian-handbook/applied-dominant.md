@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Applied Dominant (Zwischendominant)
 slug: applied-dominant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier"
@@ -17,10 +14,8 @@ chapter_number: 1
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Zwischendominant
   - Zwischendominante
@@ -28,7 +23,6 @@ aliases:
   - secondary dominant
   - Klammerdominante (parenthetical dominant)
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - tonality
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Riemann's function theory relate to neo-Riemannian transformations?"
   - "How does function theory handle chromaticism without invoking modulation?"

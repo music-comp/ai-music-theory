@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Maximal Entropy Triadic Quartet
 slug: maximal-entropy-triadic-quartet
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: voice-leading zones
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 101
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "all-interval triadic quartet"
   - "maximally entropic triadic quartet"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - voice-leading-zone
 extends: []
@@ -35,7 +29,6 @@ related:
   - disjunction
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a maximally entropic triadic quartet?"
   - "How do all-interval tetrachords relate to triadic voice-leading zones?"

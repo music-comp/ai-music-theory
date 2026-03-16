@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Third Substitution
 slug: third-substitution
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: functional-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 250
 section: "7.2"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic third substitution"
   - "triadic substitution by third"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - common-tones-and-harmonic-similarity
   - circle-of-thirds-harmonic
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - bass-line-substitution
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can a root position chord be replaced by a first-inversion chord on the same bass?"
   - "What explains the similarity between descending-fifths and 'down a third, up a step' sequences?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Masculine and Feminine Endings
 slug: masculine-and-feminine-endings
 
-# === CLASSIFICATION ===
 category: rhythm-meter
 subcategory: phrase-endings
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,13 +14,10 @@ chapter_number: 6
 pdf_page: 22
 section: "Construction of the Antecedent"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - phrase
 extends: []
@@ -34,7 +28,6 @@ related:
   - half-cadence-and-full-cadence-in-periods
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are masculine and feminine endings?"
   - "How do ending types affect period construction?"

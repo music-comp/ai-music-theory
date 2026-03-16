@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Plagal Motion
 slug: plagal-motion
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: prolongation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "plagal cadence"
   - "(IV)-I"
   - "Amen cadence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-function
   - tonic-prolongation
@@ -36,7 +30,6 @@ related:
   - strong-predominant
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is plagal motion?"
   - "How does plagal motion differ from a plagal cadence?"

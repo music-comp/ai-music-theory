@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mediation Principle in Dualism
 slug: mediation-principle
 
-# === CLASSIFICATION ===
 category: dualism
 subcategory: analytical-methodology
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Henry Klumpenhouwer"
@@ -17,16 +14,13 @@ chapter_number: 6
 pdf_page: null
 section: "Section III"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - "dualist mediation"
   - "opposition and balance"
   - "tonic as mediator"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-dualism
   - hard-vs-soft-dualism
@@ -37,7 +31,6 @@ related:
   - hauptmann-dialectic
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What role does mediation play in dualist harmonic analysis?"
   - "How does the tonic function as mediator in dualist theory?"

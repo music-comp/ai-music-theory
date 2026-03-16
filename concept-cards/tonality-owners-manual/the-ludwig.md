@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: The Ludwig
 slug: the-ludwig
 
-# === CLASSIFICATION ===
 category: schema
 subcategory: contrary-motion-patterns
 tier: advanced
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: 457
 section: "Meet the Ludwig"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - Ludwig schema
   - Ludwiging
   - contrary-motion third pattern
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - contrary-motion-counterpoint
   - minor-third-voice-leading-symmetry
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - quiescenza-schema
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Ludwig schema in Beethoven's music?"
   - "How does contrary motion generate functional harmony?"

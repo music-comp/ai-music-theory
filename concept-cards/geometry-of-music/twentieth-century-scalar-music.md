@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Twentieth-Century Scalar Music
 slug: twentieth-century-scalar-music
 
-# === CLASSIFICATION ===
 category: scales-modes
 subcategory: historical-style
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 6
 pdf_page: 238
 section: "6.7"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "chord-scale theory"
   - "scalar tonality"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nineteenth-century-chromaticism
   - scalar-tradition
@@ -36,7 +30,6 @@ related:
   - generalized-theory-of-keys
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does twentieth-century scalar music solve the chord-scale problem?"
   - "What is the connection between jazz chord-scale theory and impressionism?"

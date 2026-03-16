@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Suspension
 slug: suspension
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: dissonance-treatment
 tier: foundational
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 210
 section: "The first practice and the SNAP system"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - sus
   - syncopation dissonance
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nonharmonic-tone
 extends: []
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - passing-tone
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a suspension and how does it differ from other nonharmonic tones?"
   - "Why are suspensions considered 'dissonant harmonic events' rather than decorations?"

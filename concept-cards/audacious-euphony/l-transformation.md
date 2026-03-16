@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "L Transformation (Leittonwechsel)"
 slug: l-transformation
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: null
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 2
 pdf_page: 35
 section: "Hexatonic Progressions, Tonnetz Representations, and Triadic Transformations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Leittonwechsel"
   - "leading-tone exchange"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - single-semitonal-displacement
   - minimal-work-relation
@@ -39,7 +33,6 @@ related:
 contrasts_with:
   - p-transformation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the L transformation?"
   - "What is a Leittonwechsel?"

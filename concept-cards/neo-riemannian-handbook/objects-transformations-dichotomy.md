@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Objects and Transformations Dichotomy
 slug: objects-transformations-dichotomy
 
-# === CLASSIFICATION ===
 category: history-philosophy
 subcategory: phenomenology
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Daniel Harrison"
@@ -17,16 +14,13 @@ chapter_number: 20
 pdf_page: 549
 section: "I. The New Riemann: Same as the Old Riemann?"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "being vs. doing"
   - object/transformation problem
   - ventriloquist's dummy problem
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transformational-theory
   - harmonic-function
@@ -37,7 +31,6 @@ related:
   - harrisonian-functional-discharge
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do objects and transformations interact in neo-Riemannian theory?"
   - "What distinguishes functional harmony from transformational harmony?"

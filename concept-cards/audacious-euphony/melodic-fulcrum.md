@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Melodic Fulcrum
 slug: melodic-fulcrum
 
-# === CLASSIFICATION ===
 category: neo-riemannian-theory
 subcategory: voice-leading-concepts
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 61
 section: "Consonance/Dissonance Reciprocity"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Chromatic fulcrum"
   - "Diatonic/chromatic pivot pitch"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - consonant-triad
   - augmented-triad
@@ -37,7 +31,6 @@ related:
   - consonance-dissonance-reciprocity
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a melodic fulcrum?"
   - "How does the melodic fulcrum relate to the tension between diatonic and chromatic logic?"

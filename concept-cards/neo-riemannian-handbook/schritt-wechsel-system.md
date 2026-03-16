@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Schritt/Wechsel System"
 slug: schritt-wechsel-system
 
-# === CLASSIFICATION ===
 category: transformations
 subcategory: group theory
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
 source_slug: neo-riemannian-handbook
 authors: "Nora Engebretsen"
@@ -17,16 +14,13 @@ chapter_number: 12
 pdf_page: null
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "S/W system"
   - "S/W group"
   - "Schritt-Wechsel group"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonieschritte
   - schritte-wechsel
@@ -41,7 +35,6 @@ related:
 contrasts_with:
   - plr-transformations
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the Schritt/Wechsel system and how is it structured?"
   - "How does the S/W system relate to the PLR group?"

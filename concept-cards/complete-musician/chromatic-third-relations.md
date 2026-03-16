@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chromatic Third Relations
 slug: chromatic-third-relations
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic progressions
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,13 +14,10 @@ chapter_number: 28
 pdf_page: 637
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modal-mixture
   - harmonic-mixture
@@ -35,7 +29,6 @@ related:
 contrasts_with:
   - closely-related-keys
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does modal mixture relate to borrowed chords?"
 ---

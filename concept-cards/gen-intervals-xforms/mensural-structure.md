@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Mensural Structure
 slug: mensural-structure
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: rhythmic-analysis
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 71
 section: "3.3"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS ===
 aliases:
   - "mensuration"
   - "metric organization"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - gis3-interval
   - unfolding-interval-vector
@@ -34,7 +28,6 @@ related:
   - ictus
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does GIS analysis reveal perceived beat and meter?"
   - "What is the relationship between recurrent intervals and metric structure?"

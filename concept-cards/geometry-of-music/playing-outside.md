@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Playing Outside (Polytonality and Sidestepping)
 slug: playing-outside
 
-# === CLASSIFICATION ===
 category: application
 subcategory: jazz-improvisation
 tier: intermediate-advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 10
 pdf_page: 392
 section: "10.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "sidestepping"
   - "playing out"
   - "out-of-key playing"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - ii-v-i-jazz-progression
   - tritone-substitution-geometry
@@ -36,7 +30,6 @@ related:
   - modal-jazz
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does 'playing outside' mean in jazz?"
   - "How do jazz musicians create tension through out-of-key playing?"

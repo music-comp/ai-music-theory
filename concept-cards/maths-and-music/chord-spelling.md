@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Chord Spelling
 slug: chord-spelling
 
-# === CLASSIFICATION ===
 category: chord-theory
 subcategory: chord-notation
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 44
 section: "Chord Spelling"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - enharmonic spelling
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-labeling
 extends: []
@@ -34,7 +28,6 @@ related:
   - augmented-triad
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is correct chord spelling?"
   - "Why does chord spelling matter?"

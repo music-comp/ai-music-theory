@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Combination Strategy
 slug: combination-strategy
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: strategies
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 158
 section: "Four Eighteenth-Century Approaches to Dissonance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "combination"
   - "triadic combination"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - four-approaches-to-dissonance
   - consonant-triad
@@ -41,7 +35,6 @@ contrasts_with:
   - reduction-strategy
   - substitution-strategy
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I apply the four dissonance strategies (deletion, reduction, substitution, combination)?"
   - "How are dissonant tetrachords represented on the Tonnetz?"

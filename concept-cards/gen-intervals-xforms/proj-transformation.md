@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: PROJ Transformation
 slug: proj-transformation
 
-# === CLASSIFICATION ===
 category: transformation-theory
 subcategory: graph-network-extensions
 tier: advanced
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 224
 section: "9.7.6"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "PROJ+"
   - "PROJ-"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - schenkerian-network
 extends: []
@@ -33,7 +27,6 @@ related:
   - beethoven-appassionata-analysis
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What are the PROJ transformations in a Schenkerian network?"
   - "How do structural levels connect in Lewin's network formalism?"

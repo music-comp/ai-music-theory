@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: ii-V-I Progression
 slug: ii-v-i-progression
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: jazz-harmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,14 +14,11 @@ chapter_number: 4
 pdf_page: null
 section: "VI.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "two-five-one"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - seventh-chord-types
   - root-motion-by-fifth
@@ -36,7 +30,6 @@ related:
   - tritone-substitution
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is ii-V-I the most important progression in jazz?"
   - "What is an applied ii-V?"

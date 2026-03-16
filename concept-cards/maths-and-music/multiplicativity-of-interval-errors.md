@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Multiplicativity of Interval Errors
 slug: multiplicativity-of-interval-errors
 
-# === CLASSIFICATION ===
 category: pitch-and-intervals
 subcategory: temperament-and-tuning
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,15 +14,12 @@ chapter_number: 9
 pdf_page: 110
 section: null
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "additivity of cent errors"
   - "logarithmic additivity of approximation errors"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - error-calculation-in-cents
   - keyboard-approximation-of-integer-ratios
@@ -38,7 +32,6 @@ related:
   - monoid-of-integral-intervals
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why does the keyboard approximation error for a composite integer equal the sum of errors of its factors?"
   - "Why does multiplying by a power of 2 not change the approximation error?"

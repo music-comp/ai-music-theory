@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Overtone Series
 slug: overtone-series
 
-# === CLASSIFICATION ===
 category: harmonics-and-timbre
 subcategory: fourier-analysis
 tier: foundational
 
-# === PROVENANCE ===
 source: "Mathematics and Music"
 source_slug: maths-and-music
 authors: "David Wright"
@@ -17,14 +14,11 @@ chapter_number: 10
 pdf_page: 118
 section: "Harmonics and Overtones"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "harmonic series (acoustics)"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - fundamental-frequency
   - harmonics-and-overtones
@@ -36,7 +30,6 @@ related:
   - timbre-as-harmonic-amplitudes
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the overtone series?"
   - "What pitches make up the overtone series?"

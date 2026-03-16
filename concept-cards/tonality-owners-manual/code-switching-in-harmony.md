@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Code Switching in Harmony
 slug: code-switching-in-harmony
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 2
 pdf_page: 47
 section: "Function and retrofunction"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - function-and-retrofunction
 extends: []
@@ -32,7 +26,6 @@ related:
   - loop-families-in-rock
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is code switching in harmony?"
 ---

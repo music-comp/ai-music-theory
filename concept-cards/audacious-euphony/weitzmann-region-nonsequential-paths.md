@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Weitzmann Region Nonsequential Paths
 slug: weitzmann-region-nonsequential-paths
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: compositional-paths
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 4
 pdf_page: 97
 section: "Weitzmann Regions without Sequences: Wagner and Strauss"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Nonsequential Weitzmann exploration"
   - "Free-order Weitzmann paths"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - weitzmann-region
   - weitzmann-region-structure
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - nr-cycle
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Can Weitzmann regions be explored nonsequentially?"
   - "Why does the flat-terrain structure permit any ordering?"

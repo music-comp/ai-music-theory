@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Composite Form
 slug: composite-form
 
-# === CLASSIFICATION ===
 category: form
 subcategory: large-scale organization
 tier: advanced
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,14 +14,11 @@ chapter_number: 31
 pdf_page: 702
 section: "Ternary Form"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "compound form"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - binary-form
 extends: []
@@ -35,7 +29,6 @@ contrasts_with:
   - sonata-form
   - binary-form
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a composite form?"
   - "How do composite forms differ from organic forms like sonata?"

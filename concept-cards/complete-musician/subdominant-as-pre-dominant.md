@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Subdominant as Pre-Dominant (IV)
 slug: subdominant-as-pre-dominant
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: harmonic-function
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 12
 pdf_page: 280
 section: "The Subdominant"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - IV chord
   - subdominant
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pre-dominant-function
 extends: []
@@ -36,7 +30,6 @@ related:
 contrasts_with:
   - supertonic-as-pre-dominant
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do pre-dominant chords lead to the dominant?"
 ---

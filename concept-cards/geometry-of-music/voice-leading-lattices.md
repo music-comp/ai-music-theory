@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Voice-Leading Lattices
 slug: voice-leading-lattices
 
-# === CLASSIFICATION ===
 category: geometric-theory
 subcategory: voice-leading
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,16 +14,13 @@ chapter_number: 3
 pdf_page: 121
 section: "3.11"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "discrete lattices"
   - "voice-leading graphs"
   - "chord lattices"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - nearly-even-chords
   - higher-dimensional-chord-spaces
@@ -38,7 +32,6 @@ related:
   - scale-lattice
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How can high-dimensional chord spaces be represented in three or fewer dimensions?"
   - "What are the two types of voice-leading lattices?"

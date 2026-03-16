@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Tetrachordal-Triadic Analogy
 slug: tetrachordal-triadic-analogy
 
-# === CLASSIFICATION ===
 category: dissonance
 subcategory: tetrachordal systems
 tier: advanced
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 168
 section: "The Tristan Genus as Nearly Even Tetrachord"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Table 7.1"
   - "triadic-tetrachordal comparison"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - tristan-genus
   - pan-triadic-syntax
@@ -38,7 +32,6 @@ related:
   - cube-dance
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the Tristan-genus system parallel the triadic system?"
   - "What are the point-by-point correspondences between triads and seventh chords in voice-leading theory?"

@@ -1,12 +1,9 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: All-Interval Row
 slug: all-interval-row
-# === CLASSIFICATION ===
 category: analysis
 subcategory: twelve-tone-theory
 tier: advanced
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -14,11 +11,8 @@ chapter: "Row Properties"
 chapter_number: 9
 pdf_page: null
 section: "IX.3"
-# === CONFIDENCE ===
 extraction_confidence: high
-# === VARIANTS ===
 aliases: []
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - twelve-tone-row
 extends: []
@@ -26,7 +20,6 @@ related:
   - derived-row
   - row-operations
 contrasts_with: []
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is an all-interval row?"
   - "How many all-interval rows exist?"

@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Generalized Fauxbourdon
 slug: generalized-fauxbourdon
 
-# === CLASSIFICATION ===
 category: counterpoint
 subcategory: contrapuntal-patterns
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,13 +14,10 @@ chapter_number: 3
 pdf_page: 96
 section: "The circle of diatonic triads"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - triadic-circle-of-diatonic-triads
   - basic-voice-leading
@@ -34,7 +28,6 @@ related:
   - three-voice-triadic-sequences
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is generalized fauxbourdon?"
   - "How does three-voice counterpoint relate to the triadic circle?"

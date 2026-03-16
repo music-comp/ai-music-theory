@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Scriabin Op. 48 No. 2 Analysis
 slug: scriabin-op48-analysis
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: chord-first-analysis
 tier: advanced
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,14 +14,11 @@ chapter_number: 9
 pdf_page: 327
 section: "9.1"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Scriabin Prelude Op. 48 analysis"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chord-first-composition
 extends: []
@@ -34,7 +28,6 @@ related:
 contrasts_with:
   - ravel-ondine-analysis
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does Scriabin's Op. 48 No. 2 exemplify chord-first composition?"
   - "How did early twentieth-century composers generate scales from chord voice leading?"

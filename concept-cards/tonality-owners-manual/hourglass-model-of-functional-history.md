@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Hourglass Model of Functional History
 slug: hourglass-model-of-functional-history
 
-# === CLASSIFICATION ===
 category: historical
 subcategory: evolution-of-harmonic-practice
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Tonality: An Owner's Manual"
 source_slug: tonality-owners-manual
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 7
 pdf_page: 314
 section: "A theory of harmonic cycles"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "hourglass model"
   - "hourglass of harmonic regimentation"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - harmonic-cycle-theory
   - functional-penumbra
@@ -36,7 +30,6 @@ related:
   - modal-homogenization
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How does the harmonic vocabulary of functional music change over time?"
   - "Why are some progressions common in Bach rare in Mozart but reappear in Brahms?"

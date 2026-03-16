@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Modulation as Pitch-Class Circulation Change
 slug: modulation-as-circulation-change
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: macroharmony
 tier: intermediate
 
-# === PROVENANCE ===
 source: "A Geometry of Music"
 source_slug: geometry-of-music
 authors: "Dmitri Tymoczko"
@@ -17,15 +14,12 @@ chapter_number: 5
 pdf_page: 178
 section: "5.3–5.4"
 
-# === CONFIDENCE ===
 extraction_confidence: medium-high
 
-# === VARIANTS ===
 aliases:
   - "macroharmonic modulation"
   - "modulation and chromaticism"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class-circulation
   - macroharmony
@@ -36,7 +30,6 @@ related:
   - key-distance
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is the relationship between modulation and scale voice leading?"
   - "How does modulation affect pitch-class circulation?"

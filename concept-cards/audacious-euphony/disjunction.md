@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Disjunction
 slug: disjunction
 
-# === CLASSIFICATION ===
 category: syntax
 subcategory: distance assessment
 tier: foundational
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 19
 section: "Three Ways to Calculate Triadic Distance"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "diatonic disjunction"
   - "harmonic incoherence"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - chromatic-vs-diatonic-organization
 extends: []
@@ -36,7 +30,6 @@ related:
   - voice-leading-work
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What does it mean for a progression to be 'disjunct'?"
   - "Why is disjunction relative to the metric applied?"

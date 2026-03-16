@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Commutativity of Transpositions with Interval-Preserving Operations
 slug: transposition-interval-preserving-commutativity
 
-# === CLASSIFICATION ===
 category: generalized-interval-systems
 subcategory: group-structure
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Generalized Musical Intervals and Transformations"
 source_slug: gen-intervals-xforms
 authors: David Lewin
@@ -17,14 +14,11 @@ chapter_number: 3
 pdf_page: 82
 section: "3.4"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "T-P commutativity"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - transposition-operation
   - interval-preserving-operation
@@ -36,7 +30,6 @@ related:
   - petey-group
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Do transpositions and interval-preserving operations commute?"
   - "Is the order of applying T and P operations irrelevant?"

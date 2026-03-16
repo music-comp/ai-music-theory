@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Sonata Principle
 slug: sonata-principle
 
-# === CLASSIFICATION ===
 category: form
 subcategory: theory
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Music Theory for the 21st-Century Classroom"
 source_slug: 21st-century-classroom
 authors: "Robert Hutchinson"
@@ -17,13 +14,10 @@ chapter_number: 25
 pdf_page: 368
 section: "25.1.3 Sonata Principle"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases: []
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - sonata-form
   - modulation
@@ -34,7 +28,6 @@ related:
   - seven-part-rondo
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is sonata principle?"
   - "What does Charles Rosen mean by 'dissonant tonality'?"

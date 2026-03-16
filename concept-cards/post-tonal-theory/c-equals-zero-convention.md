@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: C=0 Convention
 slug: c-equals-zero-convention
 
-# === CLASSIFICATION ===
 category: fundamentals
 subcategory: notation systems
 tier: foundational
 
-# === PROVENANCE ===
 source: "Introduction to Post-Tonal Theory"
 source_slug: post-tonal-theory
 authors: "Joseph N. Straus"
@@ -17,15 +14,12 @@ chapter_number: 1
 pdf_page: 21
 section: "1.4 Integer Notation"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - fixed-do convention
   - C equals zero
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - pitch-class
   - integer-notation
@@ -36,7 +30,6 @@ related:
   - pitch-class-clockface
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "Why is C assigned to integer 0?"
   - "What convention is used for mapping pitch classes to integers?"

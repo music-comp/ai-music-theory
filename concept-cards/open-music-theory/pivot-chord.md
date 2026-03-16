@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Pivot Chord
 slug: pivot-chord
 
-# === CLASSIFICATION ===
 category: harmony
 subcategory: chromatic-harmony
 tier: advanced
 
-# === PROVENANCE ===
 source: "Open Music Theory"
 source_slug: open-music-theory
 authors: "Open Music Theory contributors"
@@ -17,15 +14,12 @@ chapter_number: 17
 pdf_page: null
 section: "Pivot chord modulations"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS (authority control) ===
 aliases:
   - "common chord"
   - "pivot"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - modulation
   - closely-related-keys
@@ -37,7 +31,6 @@ related:
 contrasts_with:
   - direct-modulation
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What is a pivot chord?"
   - "How do I find the best pivot chord between two keys?"

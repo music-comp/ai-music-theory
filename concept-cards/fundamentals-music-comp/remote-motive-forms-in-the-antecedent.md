@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Remote Motive-Forms in the Antecedent
 slug: remote-motive-forms-in-the-antecedent
 
-# === CLASSIFICATION ===
 category: melody
 subcategory: motivic-development
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
 source_slug: fundamentals-music-comp
 authors: "Arnold Schoenberg"
@@ -17,14 +14,11 @@ chapter_number: 6
 pdf_page: 22
 section: "Construction of the Antecedent"
 
-# === CONFIDENCE ===
 extraction_confidence: medium
 
-# === VARIANTS (authority control) ===
 aliases:
   - contrasting motive-forms in the antecedent
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - motive
   - connecting-motive-forms
@@ -37,7 +31,6 @@ related:
   - caesura
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How do I construct m. 3-4 of the antecedent with contrasting material?"
   - "How do I maintain coherence with remote motive-forms?"

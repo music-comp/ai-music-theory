@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: "Weitzmann's Six-Triad Cluster"
 slug: weitzmann-six-triad-cluster
 
-# === CLASSIFICATION ===
 category: triadic-systems
 subcategory: augmented-triad-systems
 tier: intermediate
 
-# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
 source_slug: audacious-euphony
 authors: "Richard Cohn"
@@ -17,15 +14,12 @@ chapter_number: 3
 pdf_page: 75
 section: "Reciprocity in Weitzmann's Der ubermassige Dreiklang"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - "Weitzmann Figure 3.9"
   - "Augmented triad cluster diagram"
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - augmented-triad
   - weitzmann-treatise
@@ -38,7 +32,6 @@ related:
 contrasts_with:
   - hexatonic-cycle
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "How did Weitzmann organize consonant triads around augmented triads?"
   - "What is a Weitzmann region?"

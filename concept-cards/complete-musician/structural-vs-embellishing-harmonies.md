@@ -1,14 +1,11 @@
 ---
-# === CORE IDENTIFICATION ===
 concept: Structural vs. Embellishing Harmonies
 slug: structural-vs-embellishing-harmonies
 
-# === CLASSIFICATION ===
 category: analysis
 subcategory: analytical-techniques
 tier: intermediate
 
-# === PROVENANCE ===
 source: "The Complete Musician"
 source_slug: complete-musician
 authors: "Steven G. Laitz"
@@ -17,15 +14,12 @@ chapter_number: 10
 pdf_page: 226
 section: "Second-Level Analysis"
 
-# === CONFIDENCE ===
 extraction_confidence: high
 
-# === VARIANTS ===
 aliases:
   - progressional vs. prolongational
   - descriptive vs. interpretive analysis
 
-# === TYPED RELATIONSHIPS ===
 prerequisites:
   - second-level-analysis
   - contrapuntal-expansion
@@ -35,7 +29,6 @@ related:
   - passing-chord
 contrasts_with: []
 
-# === COMPETENCY QUESTIONS ===
 answers_questions:
   - "What must I know before understanding voice leading?"
 ---
