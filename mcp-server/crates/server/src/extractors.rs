@@ -53,10 +53,11 @@ impl MusicTheoryDocumentExtractor {
         let (frontmatter, body) = extract_frontmatter(content).ok()?;
         let fm = frontmatter.unwrap_or_default();
 
-        // Title: prefer frontmatter, fall back to first heading, then file stem.
+        // Title: prefer frontmatter title, then concept, fall back to first heading, then file stem.
         let title = fm
             .title
             .clone()
+            .or_else(|| fm.concept.clone())
             .or_else(|| {
                 let stripped = strip_frontmatter(content);
                 extract_first_heading(stripped).map(|(_, text)| text)
@@ -289,6 +290,7 @@ mod graph_extractor {
 
             let title = frontmatter
                 .get("title")
+                .or_else(|| frontmatter.get("concept"))
                 .and_then(|v| v.as_str())
                 .unwrap_or(&id)
                 .to_string();
@@ -492,6 +494,7 @@ mod vector_extractor {
 
             let title = frontmatter
                 .get("title")
+                .or_else(|| frontmatter.get("concept"))
                 .and_then(|v| v.as_str())
                 .unwrap_or(&id);
 

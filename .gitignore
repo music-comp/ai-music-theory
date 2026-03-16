@@ -6,6 +6,7 @@
 /mcp-server/bin
 /mcp-server/.claude/
 /mcp-server/.tantivy-index
+/mcp-server/.fastembed_cache/
 /.tantivy-index/
 /.tantivy-index-test/
 /data

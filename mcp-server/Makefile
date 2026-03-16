@@ -37,11 +37,13 @@ help:
 	@echo "  $(YELLOW)make build$(RESET)            - Build all binaries (simple search)"
 	@echo "  $(YELLOW)make build-fts$(RESET)        - Build with full-text search feature"
 	@echo "  $(YELLOW)make build-graph$(RESET)      - Build with graph database feature"
-	@echo "  $(YELLOW)make build-fts-graph$(RESET)  - Build with FTS + graph (recommended)"
+	@echo "  $(YELLOW)make build-fts-graph$(RESET)  - Build with FTS + graph"
+	@echo "  $(YELLOW)make build-full$(RESET)       - Build with all features (FTS + graph + vector + http)"
 	@echo "  $(YELLOW)make build-release$(RESET)    - Build optimized release binaries (simple)"
 	@echo "  $(YELLOW)make build-release-fts$(RESET) - Build optimized release binaries (with FTS)"
 	@echo "  $(YELLOW)make build-release-graph$(RESET) - Build optimized release (with graph)"
 	@echo "  $(YELLOW)make build-release-fts-graph$(RESET) - Build optimized (FTS + graph)"
+	@echo "  $(YELLOW)make build-release-full$(RESET) - Build optimized (all features, recommended)"
 	@echo "  $(YELLOW)make build-all$(RESET)        - Build all configurations in release mode"
 	@echo "  $(YELLOW)make build MODE=release$(RESET) - Build with custom mode"
 	@echo ""
@@ -50,6 +52,7 @@ help:
 	@echo "  $(YELLOW)make test-fts$(RESET)         - Run all tests with FTS feature"
 	@echo "  $(YELLOW)make test-graph$(RESET)       - Run all tests with graph feature"
 	@echo "  $(YELLOW)make test-fts-graph$(RESET)   - Run all tests with FTS + graph"
+	@echo "  $(YELLOW)make test-full$(RESET)        - Run all tests with all features"
 	@echo "  $(YELLOW)make test-all$(RESET)         - Run tests in all configurations"
 	@echo "  $(YELLOW)make lint$(RESET)             - Run clippy and format check (all configs)"
 	@echo "  $(YELLOW)make format$(RESET)           - Format all code with rustfmt"
@@ -146,12 +149,12 @@ $(BIN_DIR):
 # Build targets
 .PHONY: build
 build: clean $(BIN_DIR)
-	@echo "$(BLUE)Building $(PROJECT_NAME) in $(MODE) mode...$(RESET)"
-	@echo "$(CYAN)• Compiling workspace...$(RESET)"
+	@echo "$(BLUE)Building $(PROJECT_NAME) in $(MODE) mode with all features...$(RESET)"
+	@echo "$(CYAN)• Compiling workspace with --features full (fts,graph,vector,http)...$(RESET)"
 	@if [ "$(MODE)" = "release" ]; then \
-		cargo build --release; \
+		cargo build --release --features full; \
 	else \
-		cargo build; \
+		cargo build --features full; \
 	fi
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
@@ -191,9 +194,9 @@ build-release: MODE = release
 build-release: TARGET = ./target/$(MODE)
 build-release: ODM_TARGET = $(OXUR_WORKSPACE)/target/$(MODE)
 build-release: clean $(BIN_DIR)
-	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode...$(RESET)"
-	@echo "$(CYAN)• Compiling optimized workspace...$(RESET)"
-	@cargo build --release
+	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with all features...$(RESET)"
+	@echo "$(CYAN)• Compiling optimized workspace with --features full (fts,graph,vector,http)...$(RESET)"
+	@cargo build --release --features full
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -305,6 +308,46 @@ build-release-fts-graph: clean $(BIN_DIR)
 	@echo "$(GREEN)✓ Release build complete (FTS + graph enabled)$(RESET)"
 	@echo "$(CYAN)→ Optimized binaries in $(BIN_DIR)/$(RESET)"
 
+.PHONY: build-full
+build-full: clean $(BIN_DIR)
+	@echo "$(BLUE)Building $(PROJECT_NAME) with all features in $(MODE) mode...$(RESET)"
+	@echo "$(CYAN)• Compiling workspace with --features full (fts,graph,vector,http)...$(RESET)"
+	@if [ "$(MODE)" = "release" ]; then \
+		cargo build --release --features full; \
+	else \
+		cargo build --features full; \
+	fi
+	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (full: FTS + graph + vector + http)"; \
+		else \
+			echo "  $(YELLOW)⚠$(RESET) $$bin not found, skipping"; \
+		fi; \
+	done
+	@echo "$(GREEN)✓ Build complete (all features enabled)$(RESET)"
+	@echo "$(CYAN)→ Binaries available in $(BIN_DIR)/$(RESET)"
+
+.PHONY: build-release-full
+build-release-full: MODE = release
+build-release-full: TARGET = ./target/$(MODE)
+build-release-full: clean $(BIN_DIR)
+	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with all features...$(RESET)"
+	@echo "$(CYAN)• Compiling optimized workspace with --features full (fts,graph,vector,http)...$(RESET)"
+	@cargo build --release --features full
+	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (full, size: $$(du -h $(BIN_DIR)/$$bin | cut -f1))"; \
+		else \
+			echo "  $(YELLOW)⚠$(RESET) $$bin not found, skipping"; \
+		fi; \
+	done
+	@echo "$(GREEN)✓ Release build complete (all features enabled)$(RESET)"
+	@echo "$(CYAN)→ Optimized binaries in $(BIN_DIR)/$(RESET)"
+
 docs: DOCS_PATH = target/doc/$(PROJECT_NAME)
 docs:
 	@echo "$(BLUE)Building $(PROJECT_NAME) docs...$(RESET)"
@@ -407,8 +450,15 @@ test-fts-graph:
 	@cargo test --features fts,graph --workspace
 	@echo "$(GREEN)✓ All tests passed (FTS + graph enabled)$(RESET)"
 
+.PHONY: test-full
+test-full:
+	@echo "$(BLUE)Running tests with all features...$(RESET)"
+	@echo "$(CYAN)• Running all workspace tests with --features full...$(RESET)"
+	@cargo test --features full --workspace
+	@echo "$(GREEN)✓ All tests passed (all features enabled)$(RESET)"
+
 # Feature configurations to test across modes
-FEATURE_CONFIGS := none fts graph fts,graph
+FEATURE_CONFIGS := none fts graph fts,graph full
 
 .PHONY: test-all
 test-all:
@@ -446,6 +496,9 @@ lint:
 	@echo "$(CYAN)• Running clippy with FTS + graph...$(RESET)"
 	@cargo clippy --features fts,graph --workspace -- -D warnings
 	@echo "$(GREEN)✓ Clippy passed (with FTS + graph)$(RESET)"
+	@echo "$(CYAN)• Running clippy with all features...$(RESET)"
+	@cargo clippy --features full --workspace -- -D warnings
+	@echo "$(GREEN)✓ Clippy passed (with all features)$(RESET)"
 	@echo "$(CYAN)• Checking code formatting...$(RESET)"
 	@cargo fmt --all -- --check
 	@echo "$(GREEN)✓ Format check passed$(RESET)"
@@ -461,7 +514,7 @@ format:
 coverage:
 	@echo "$(BLUE)Generating test coverage report (with all features)...$(RESET)"
 	@echo "$(CYAN)• Running tests with coverage (server crate only)...$(RESET)"
-	@cargo llvm-cov --features fts,graph --package music-theory-mcp
+	@cargo llvm-cov --features full --package music-theory-mcp
 	@echo "$(GREEN)✓ Coverage report generated$(RESET)"
 	@echo "$(YELLOW)→ For detailed HTML report, run: make coverage-html$(RESET)"
 
@@ -469,7 +522,7 @@ coverage:
 coverage-html:
 	@echo "$(BLUE)Generating HTML coverage report (with all features)...$(RESET)"
 	@echo "$(CYAN)• Running tests with coverage (server crate only)...$(RESET)"
-	@cargo llvm-cov --html --features fts,graph --package music-theory-mcp
+	@cargo llvm-cov --html --features full --package music-theory-mcp
 	@echo "$(GREEN)✓ HTML coverage report generated$(RESET)"
 	@echo "$(CYAN)→ Report: target/llvm-cov/html/index.html$(RESET)"
 

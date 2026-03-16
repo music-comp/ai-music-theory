@@ -105,6 +105,7 @@ pub async fn search_by_question(
         let concept_title = frontmatter
             .title
             .clone()
+            .or_else(|| frontmatter.concept.clone())
             .unwrap_or_else(|| file_info.stem.clone());
         let category = frontmatter
             .category

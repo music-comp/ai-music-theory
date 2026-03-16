@@ -140,6 +140,7 @@ pub fn extract_first_paragraph(content: &str, max_chars: usize) -> Option<String
 /// assert!(!text.contains("**"));
 /// assert!(!text.contains("["));
 /// ```
+#[allow(dead_code)]
 pub fn extract_text_content(content: &str) -> String {
     let parser = Parser::new(content);
     let mut text = String::new();
