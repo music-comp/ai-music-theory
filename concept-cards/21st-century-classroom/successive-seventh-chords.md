@@ -1,50 +1,114 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Successive Seventh Chords
-category: technique
-source: Music Theory for the 21st-Century Classroom
+slug: successive-seventh-chords
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: technique
+tier: intermediate-advanced
+
+# === PROVENANCE ===
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
 chapter: "Chapter 27: Voice Leading Seventh Chords"
-unit: 9
-authors: Robert Hutchinson
-pdf_page: null
 chapter_number: 27
+pdf_page: 404
+section: "27.2 Voice Leading Successive Seventh Chords"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "chain of seventh chords"
+  - "circle of fifths seventh chords"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - seventh-chord-resolution
+  - circle-of-fifths-progression
+extends:
+  - seventh-chord-resolution
+related: []
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do you voice lead successive seventh chords in a circle of fifths?"
+  - "What is the alternating voicing pattern for root position seventh chord chains?"
 ---
 
 # Quick Definition
-When voice leading successive seventh chords (as in circle-of-fifths progressions), alternate between incomplete voicings (no 5th) and complete voicings to allow proper resolution of all 7ths.
 
-# Formal Definition
-Successive root position seventh chords in four-part writing require alternating between complete and incomplete voicings because resolving the 7th of each chord limits the available notes. An incomplete seventh chord omits the 5th (has root, 3rd, and 7th only, with the root doubled). When the 7th resolves down by step to the next chord, it creates the pattern: complete-incomplete-complete-incomplete.
+When voice leading successive seventh chords (as in circle-of-fifths progressions), alternate between incomplete voicings (no 5th) and complete voicings for root position chains, or use all complete voicings with inverted chains.
 
-# Rules/Procedures
-1. **Root position successive 7ths**: Alternate complete and incomplete voicings
-   - Complete voicing: root, 3rd, 5th, 7th
-   - Incomplete voicing: root (doubled), 3rd, 7th (no 5th)
-2. **Inverted successive 7ths**: Use all complete voicings
-   - Two voices hold common tones (shown with ties)
-   - Two voices resolve downward by step
-   - Alternating 6/5 and 4/2 inversions work well
-   - Alternating 7 and 4/3 positions also work well
+# Core Definition
 
-# Musical Context
-Circle-of-fifths progressions with seventh chords are extremely common in Baroque, Classical, and jazz music. Vivaldi's Concerto for Two Violins and Cello in D minor, RV 565, demonstrates alternating complete and incomplete voicings in a chain of seventh chords.
+When voice leading a circle of fifths progression with root position seventh chords in four parts (SATB), alternate between incomplete seventh chords (without the 5th) and complete seventh chords. For inverted seventh chord chains, always resolve the 7th down by step and move other voices smoothly; two voices hold common tones while two resolve downward (Hutchinson, Ch. 27, pp. 404-406, Principle 27.2.2).
+
+# Prerequisites
+
+- **Seventh chord resolution** -- Each 7th must resolve down by step
+- **Circle of fifths progression** -- The most common context for successive 7ths
+
+# Key Properties
+
+1. Root position chains: alternate complete and incomplete voicings
+2. Incomplete voicing: root (doubled), 3rd, 7th (no 5th)
+3. Inverted chains (6/5 + 4/2 or 7 + 4/3): use all complete voicings
+4. In inverted chains: two voices hold common tones, two resolve down
+5. The 3rd of one chord resolves to the 7th of the next (chromaticism cancels)
+
+# Construction / Recognition
+
+## Root Position Chains:
+1. Start with complete or incomplete voicing
+2. Resolve 7th down, other voices to nearest chord tones
+3. Result alternates: complete-incomplete-complete-incomplete...
+
+## Inverted Chains (alternating 6/5 and 4/2):
+1. Resolve 7th down by step
+2. Two voices hold common tones (shown with ties)
+3. Two other voices step downward
+
+# Context & Application
+
+- **Typical contexts**: Circle-of-fifths progressions in Baroque, Classical, and jazz music
 
 # Examples
-- Root position circle of 5ths: I7-IV7-vii7-iii7-vi7-ii7-V7-I
-  - Alternate: complete-incomplete-complete-incomplete...
-- Inverted circle of 5ths with alternating 6/5 and 4/2
-  - Common tones tie across; 7ths resolve down
 
-# Related Concepts
-- Circle of Fifths Progressions
-- Seventh Chord Resolution
-- Complete and Incomplete Voicings
-- Common Tones
+**Example 1** (p. 405): Vivaldi, Concerto for Two Violins and Cello in D minor, RV 565, V -- alternating complete and incomplete voicings in root position chain
+
+**Example 2** (p. 405): Circle of fifths with alternating 6/5 and 4/2 inversions
+
+**Example 3** (p. 406): Circle of fifths with alternating 7 and 4/3 chords
+
+# Relationships
+
+## Builds Upon
+- **Seventh chord resolution** -- Applied repeatedly in succession
+
+# Common Errors
+
+- **Error**: Trying to use all complete voicings with root position chains
+  **Correction**: This leads to parallels; alternate complete and incomplete
+
+- **Error**: Omitting a note other than the 5th in incomplete voicings
+  **Correction**: Always omit the 5th; double the root
 
 # Common Confusions
-- Trying to use all complete voicings with root position - this leads to parallels
-- Forgetting that inverted seventh chord chains can use complete voicings throughout
-- Not recognizing which note to omit (always the 5th) in incomplete voicings
-- Missing the pattern of alternating inversions in chains of inverted 7ths
+
+- **Confusion**: Inverted chains also need alternating voicings
+  **Clarification**: Inverted seventh chord chains can use complete voicings throughout
 
 # Source Reference
-Chapter 27: Voice Leading Seventh Chords, Unit 9, Section 27.2, Principle 27.2.2
+
+Chapter 27: Voice Leading Seventh Chords, Section 27.2, Principle 27.2.2, pages 404-406. See Figures 27.2.1-27.2.4.
+
+# Verification Notes
+
+- Definition: Direct from Principle 27.2.2, pp. 404-406
+- Confidence: HIGH -- explicit principle with multiple figures
+- Re-extraction notes: Re-extracted from v2 card; preserved: Vivaldi example, alternating inversion patterns

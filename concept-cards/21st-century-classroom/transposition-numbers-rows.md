@@ -1,53 +1,76 @@
 ---
-concept: "Transposition Numbers (Rows)"
+concept: Transposition Numbers (Rows)
+slug: transposition-numbers-rows
 category: technique
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 34: Serialism"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: 20th-century-techniques
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Serialism"
 chapter_number: 34
+pdf_page: 493
+section: "34.1.2 Transposition Numbers"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - row-forms
+extends:
+  - row-forms
+related:
+  - twelve-tone-matrix
+  - determining-row-forms
+contrasts_with: []
+answers_questions:
+  - "How are row transpositions numbered?"
+  - "Why are R and RI labeled by their ending note?"
 ---
 
 # Quick Definition
-Transposition numbers in serial music indicate which pitch class a row form starts on (for P and I) or ends on (for R and RI), using pitch integers 0-11.
+P and I forms use their starting pitch class as the subscript; R and RI use their ending pitch class, ensuring corresponding forms share the same subscript number.
 
-# Formal Definition
-Row transposition is indicated by a subscript number (0-11) following the row form letter. For Prime (P) and Inversion (I) forms, the number indicates the starting pitch class. For Retrograde (R) and Retrograde Inversion (RI) forms, the number indicates the ending pitch class. This convention ensures that corresponding P and R forms (and I and RI forms) share the same subscript.
+# Core Definition
+Each row form is transposed to start on any of the 12 pitch classes. P and I use the starting pitch class as subscript (P_0 starts on C, I_3 starts on Eb). R and RI use the ending pitch class (R_1 ends on C#, RI_7 ends on G). This convention ensures P_n and R_n contain the same pitches in reverse order (Hutchinson, Ch. 34, p. 493).
 
-# Construction/Calculation
-Labeling conventions:
-- P_n: Prime starting on pitch class n
-- I_n: Inversion starting on pitch class n
-- R_n: Retrograde ENDING on pitch class n (= P_n backward)
-- RI_n: Retrograde Inversion ENDING on pitch class n (= I_n backward)
+# Prerequisites
+- **Row forms** -- Must understand P, R, I, RI
 
-Examples:
-- P0 starts on C (pitch class 0)
-- P3 starts on Eb (pitch class 3)
-- R0 ends on C (same pitches as P0, reversed)
-- I5 starts on F, RI5 ends on F
+# Key Properties
+1. P_n starts on pitch class n
+2. I_n starts on pitch class n
+3. R_n ends on pitch class n
+4. RI_n ends on pitch class n
+5. P_n and R_n share pitches (reversed order)
+6. I_n and RI_n share pitches (reversed order)
 
-# Musical Context
-The transposition numbering system provides a consistent way to identify and discuss all 48 row forms. The convention of labeling R and RI by their ending note ensures that P_n and R_n contain the same pitches (in reverse order), making the matrix easier to read and construct.
+# Construction / Recognition
+- For P and I: find starting note, convert to pitch integer = subscript
+- For R and RI: find last (12th) note, convert to pitch integer = subscript
 
 # Examples
-- P0: starts on C; R0: ends on C
-- I2: starts on D; RI2: ends on D
-- P7: starts on G; R7: ends on G
-- Looking at a piece: if first three notes are m3 up, M2 down, check if row has these intervals
+- P_0 starts on C; R_0 ends on C (p. 493)
+- P_3 starts on Eb; I_5 starts on F
+- R_8: ending note is Ab (pitch class 8)
 
-# Related Concepts
-- Row forms
-- Twelve-tone matrix
-- Pitch class integers
-- Determining row forms
+# Relationships
+## Builds Upon
+- **Row forms** -- Numbering system for the four forms
+## Related
+- **Twelve-tone matrix** -- Labels use this convention
+- **Determining row forms** -- Uses these numbers for identification
+
+# Common Errors
+- **Error**: Labeling R forms by their starting note
+  **Correction**: R and RI use their ENDING note
 
 # Common Confusions
-- R and RI are labeled by ENDING note, not starting note
-- P_n and R_n share the same subscript because they share the same pitches
-- The number is a pitch class (0-11), not a transposition interval
-- I_n starts on pitch class n, just like P_n
+- **Confusion**: Thinking the subscript is a transposition interval
+  **Clarification**: The subscript is a pitch class (0-11), not an interval
 
 # Source Reference
-Chapter 34: Serialism, Unit 12, Section 34.1.2 Transposition Numbers
+Chapter 34, Section 34.1.2, PDF page 493.
+
+# Verification Notes
+- Convention directly from source, p. 493
+- Re-extracted from v2 card; preserved: P/R shared pitches explanation
+- Confidence: HIGH -- source provides explicit convention

@@ -1,50 +1,82 @@
 ---
-concept: "Parallelism (Planing)"
+concept: Parallelism (Planing)
+slug: parallelism-planing
 category: technique
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 32: Impressionism and Extended Tonality"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: historical-styles
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Impressionism and Extended Tonality"
 chapter_number: 32
+pdf_page: 468
+section: "32.1 Impressionism"
+extraction_confidence: high
+aliases:
+  - "planing"
+  - "parallel chord motion"
+prerequisites:
+  - impressionism
+extends:
+  - impressionism
+related:
+  - objectionable-parallels
+contrasts_with:
+  - objectionable-parallels
+answers_questions:
+  - "What is parallelism (planing) in music?"
+  - "How does planing differ from traditional voice leading?"
 ---
 
 # Quick Definition
-Parallelism (also called planing) is a technique where all voices of a chord move in the same direction by the same interval, abandoning traditional voice-leading rules.
+Parallelism (planing) moves all voices of a chord in the same direction by the same interval, deliberately abandoning traditional voice-leading prohibitions against parallel motion.
 
-# Formal Definition
-Parallelism, also known as planing, refers to the technique of moving all voices of a chord voicing in parallel motion, maintaining the same intervallic structure. This directly contradicts the traditional prohibition against parallel fifths and octaves. Parallelism may be diatonic (staying within a scale, changing chord quality) or chromatic (maintaining exact chord quality through all transpositions).
+# Core Definition
+Parallelism, also known as "planing," is the technique of taking a chord voicing and moving all voices in parallel motion, maintaining the intervallic structure. This directly contradicts the traditional prohibition against parallel fifths and octaves. Both Debussy and Ravel used this technique extensively. Planing may be chromatic (maintaining exact chord quality) or diatonic (staying within a scale, allowing chord quality to change) (Hutchinson, Ch. 32, pp. 468-469).
 
-# Construction/Calculation
-Two types of parallelism:
-1. Chromatic/Real planing: All intervals remain exactly the same (all chords same quality)
-   - Example: C9 - Db9 - D9 (all dominant 9ths)
-2. Diatonic/Tonal planing: Motion stays within a scale (chord quality changes)
-   - Example: In C major: Dm7 - Em7 - FM7 (different qualities, same voicing shape)
+# Prerequisites
+- **Impressionism** -- Parallelism is one of the three core impressionist techniques
 
-To create parallel motion:
+# Key Properties
+1. All voices move in the same direction by the same interval
+2. Maintains the chord voicing shape throughout
+3. Deliberately violates traditional parallel 5th/8ve prohibitions
+4. Chromatic planing: same chord quality throughout
+5. Diatonic planing: chord quality changes to stay within a scale
+6. Can be applied to any chord type (triads, 7ths, 9ths)
+
+# Construction / Recognition
 1. Establish a chord voicing
 2. Move every voice by the same interval in the same direction
+3. Chromatic: all intervals remain exactly the same
+4. Diatonic: motion stays within a scale; chord quality varies
 
-# Musical Context
-Debussy and Ravel frequently used parallelism to create a distinctive wash of sound. The technique emphasizes the color of chord voicings over harmonic function. Chromatic parallelism with dominant 9th chords is particularly characteristic of Impressionism. The technique also appears in jazz (block chords) and later 20th-century music.
+# Context & Application
+Parallelism emphasizes the color of chord voicings over harmonic function. The technique is characteristic of impressionism and later influenced jazz block chord writing and film scoring.
 
 # Examples
-- Ravel, Pavane pour une infante defunte, bar 27: Parallel dominant 9th chords
-- Debussy, Prelude to the Afternoon of a Faun: Chromatically ascending dominant 7th chords
-- Debussy, Prelude to the Afternoon of a Faun: Parallel seventh chords of varying quality
+- Ravel, *Pavane pour une infante defunte*, bar 27: Parallel dominant 9th chords (p. 468, Figure 32.1.8)
+- Debussy, *Prelude to the Afternoon of a Faun*: Chromatically ascending dominant 7ths (p. 469, Figure 32.1.9)
+- Debussy, *Prelude to the Afternoon of a Faun*: Parallel 7th chords of varying quality (p. 469, Figure 32.1.10)
 
-# Related Concepts
-- Impressionism
-- Voice leading (traditional prohibition of parallels)
-- Block chords in jazz
-- Non-functional harmony
+# Relationships
+## Builds Upon
+- **Impressionism** -- One of three core techniques
+## Contrasts With
+- **Objectionable parallels** -- Traditional voice leading prohibits what planing embraces
+
+# Common Errors
+- **Error**: Assuming parallelism is a voice-leading error
+  **Correction**: In impressionist context, parallelism is a deliberate compositional technique
 
 # Common Confusions
-- Chromatic planing keeps all chord qualities the same; diatonic planing allows quality changes
-- This is intentional, not a voice-leading error
-- Parallel motion can be applied to any chord type (triads, 7ths, 9ths, etc.)
-- The bass may or may not participate in the parallel motion
+- **Confusion**: Thinking all parallel motion is the same
+  **Clarification**: Chromatic planing keeps exact chord quality; diatonic planing allows quality to change
 
 # Source Reference
-Chapter 32: Impressionism and Extended Tonality, Unit 12, Section 32.1.3 Use of Parallelism (Planing)
+Chapter 32, Section 32.1.3, PDF pages 468-469. Figures 32.1.8-32.1.10.
+
+# Verification Notes
+- Definition and examples directly from source
+- Re-extracted from v2 card; preserved: chromatic vs. diatonic distinction, Ravel/Debussy examples
+- Confidence: HIGH -- source provides explicit definition with multiple examples

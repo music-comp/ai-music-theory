@@ -1,49 +1,86 @@
 ---
 concept: Harmonizing the Bebop Scale
+slug: harmonizing-bebop-scale
 category: technique
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 31: Introduction to Jazz Theory"
-unit: 11
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: jazz-arranging
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Introduction to Jazz Theory"
 chapter_number: 31
+pdf_page: 460
+section: "31.11 Harmonizing the Bebop Scale"
+extraction_confidence: high
+aliases:
+  - "bebop scale harmonization"
+  - "block chord technique"
+prerequisites:
+  - bebop-scale
+  - fully-diminished-seventh-chord
+extends:
+  - bebop-scale
+related:
+  - close-voicings
+contrasts_with: []
+answers_questions:
+  - "How is the bebop scale harmonized in four parts?"
+  - "What chords appear on non-chord tones in bebop harmonization?"
 ---
 
 # Quick Definition
-The bebop scale can be harmonized in four parts where chord tones on downbeats are harmonized with tonic chord voicings and passing tones are harmonized with diminished seventh chords.
+The bebop major scale can be harmonized in four parts where chord tones receive tonic chord voicings and passing tones receive diminished seventh chords in various inversions.
 
-# Formal Definition
-Mark Levine's method for harmonizing the bebop major scale (1-2-3-4-5-#5-6-7) uses four-voice harmonization where the tonic chord appears on chord tones and vii diminished seventh chords (in various inversions) appear on non-chord tones. This creates smooth, chromatic voice leading while maintaining harmonic clarity. All non-tonic chords in this harmonization are vii diminished seventh chords.
+# Core Definition
+Mark Levine's method for harmonizing the bebop major scale (1-2-3-4-5-#5-6-7) uses four-voice harmonization where the tonic chord appears on chord tones and vii diminished seventh chords (in various inversions) appear on non-chord tones. All non-tonic chords are diminished seventh inversions. Each voice part should be singable. The technique works for both major and minor (Hutchinson, Ch. 31, pp. 460-461).
 
-# Construction/Calculation
-Bebop major scale harmonization:
-1. Harmonize chord tones (1, 3, 5, 6, 7) with the tonic chord (I or i)
-2. Harmonize non-chord tones with vii diminished seventh chords (various inversions)
-3. All four voices move stepwise (mostly chromatic)
-4. In major: I chords alternate with vii diminished inversions
-5. In minor: i chords alternate with vii diminished inversions
+# Prerequisites
+- **Bebop scale** -- The scale being harmonized
+- **Fully diminished seventh chord** -- Non-tonic harmonies are all diminished 7ths
 
-# Musical Context
-This harmonization technique creates the characteristic "shout chorus" or "sax soli" sound in big band jazz. It allows melodic lines based on the bebop scale to be harmonized in parallel motion while maintaining harmonic function. Count Basie's "London Bridge is Falling Down" demonstrates a similar approach. This technique is essential for jazz arranging.
+# Key Properties
+1. Bebop major scale: 1-2-3-4-5-#5-6-7
+2. Chord tones harmonized with tonic chord (I or i)
+3. Non-chord tones harmonized with vii diminished 7th inversions
+4. All four voices move stepwise (mostly chromatic)
+5. Works in both major and minor
+6. Each part is independently singable
+
+# Construction / Recognition
+1. Harmonize chord tones (1, 3, 5, 6, 7) with tonic chord
+2. Harmonize non-chord tones with vii diminished 7th chords
+3. All four voices move mostly by step
+4. In major: I alternates with vii diminished inversions
+5. In minor: i alternates with vii diminished inversions
+
+# Context & Application
+This technique creates the "shout chorus" or "sax soli" sound in big band jazz. Count Basie's "London Bridge is Falling Down" demonstrates a similar approach (p. 461, Figure 31.11.3).
 
 # Examples
-- C bebop major descending: C-B-Bb-A-Ab-G-F-E
-- Harmonized: CΔ7 - B°7/C - CΔ7/B - Am7 - Ab°7 - G/C - F°7 - C/E
-- All non-tonic chords are diminished 7th inversions
-- Count Basie, "London Bridge is Falling Down"
+- Four-part harmonization in major (p. 460, Figure 31.11.1)
+- Four-part harmonization in minor (p. 460, Figure 31.11.2)
+- Count Basie, "London Bridge is Falling Down" (Figure 31.11.3, p. 461)
 
-# Related Concepts
-- Bebop scale
-- Diminished seventh chords
-- Voice leading
-- Jazz arranging
-- Block chords
+# Relationships
+## Builds Upon
+- **Bebop scale** -- The scale that is harmonized
+## Related
+- **Close voicings** -- Similar dense chord textures
+
+# Common Errors
+- **Error**: Using different chord types on non-chord tones
+  **Correction**: All non-tonic harmonies should be vii diminished 7th inversions
 
 # Common Confusions
-- This is bebop MAJOR scale harmonization (with #5), not bebop dominant
-- All non-tonic chords are vii diminished, just in different inversions
-- The harmonization works because diminished 7ths are symmetrical
-- Each voice should be singable - check by singing through each part
+- **Confusion**: Thinking this is bebop dominant harmonization
+  **Clarification**: The source specifies bebop major scale (with #5), not bebop dominant
 
 # Source Reference
-Chapter 31: Introduction to Jazz Theory, Unit 11, Section 31.11 Harmonizing the Bebop Scale
+Chapter 31: Introduction to Jazz Theory, Section 31.11, PDF pages 460-461. Figures 31.11.1 (major) and 31.11.2 (minor). Basie example Figure 31.11.3.
+
+# Verification Notes
+- Technique from source, pp. 460-461, referencing Mark Levine
+- Both major and minor harmonizations shown
+- Basie example from source
+- Re-extracted from v2 card; preserved: Levine reference, Basie example, major vs. dominant distinction
+- Confidence: HIGH -- source provides explicit examples with notation

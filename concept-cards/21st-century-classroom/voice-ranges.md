@@ -1,47 +1,100 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Voice Ranges
-category: technique
-source: Music Theory for the 21st-Century Classroom
+slug: voice-ranges
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: fundamentals
+tier: intermediate-advanced
+
+# === PROVENANCE ===
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
 chapter: "Chapter 26: Voice Leading Triads"
-unit: 9
-authors: Robert Hutchinson
-pdf_page: null
 chapter_number: 26
+pdf_page: 390
+section: "26.4 Voice Ranges"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "SATB ranges"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - voice-leading-definition
+extends: []
+related:
+  - rules-of-spacing
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the standard voice ranges for SATB writing?"
 ---
 
 # Quick Definition
-Voice ranges define the acceptable pitch boundaries for each of the four SATB voices, based on the most common ranges found in J.S. Bach's 371 Chorales.
 
-# Formal Definition
-Voice ranges establish the practical limits within which each voice part should stay in four-part writing. These standardized ranges ensure singability and are derived from historical practice, particularly Bach's chorales. While actual vocalists may have wider ranges, these restricted ranges are used for academic voice leading exercises.
+Voice ranges define the acceptable pitch boundaries for each SATB voice, based on the most common ranges found in J.S. Bach's 371 Chorales.
 
-# Rules/Procedures
-1. Soprano: Approximately C4 to G5 (middle C to G above the treble staff)
-2. Alto: Approximately G3 to D5 (G below middle C to D in the treble staff)
-3. Tenor: Approximately C3 to G4 (C an octave below middle C to G above middle C)
-4. Bass: Approximately E2 to C4 (E below the bass staff to middle C)
-5. Keep all voices within their designated ranges throughout the exercise
-6. Avoid extremes - the comfortable middle of each range is preferred
+# Core Definition
 
-# Musical Context
-These ranges are conservative compared to trained vocalists' capabilities. They ensure that voice leading exercises produce singable results and reflect common practice. Bach's chorales were designed to be sung by congregations, so the ranges are moderate.
+For the purpose of music theory class, voice ranges are restricted to those most commonly found in J.S. Bach's 371 Chorales. These are likely more limited than those found among actual vocalists (Hutchinson, Ch. 26, p. 390).
+
+# Prerequisites
+
+- **Voice leading** -- Voice ranges constrain voice leading solutions
+
+# Key Properties
+
+1. Soprano: approximately C4 to G5
+2. Alto: approximately G3 to D5
+3. Tenor: approximately C3 to G4
+4. Bass: approximately E2 to C4
+5. Ranges are conservative compared to trained vocalists
+6. Based on Bach chorale practice
+
+# Construction / Recognition
+
+## To Apply:
+1. Keep all voices within their designated ranges throughout
+2. Prefer the comfortable middle of each range
+3. Avoid sustained writing at the extremes
+
+# Context & Application
+
+- **Typical contexts**: SATB chorale-style voice leading exercises
+- **Historical/stylistic notes**: Bach's chorales were designed to be sung by congregations, so ranges are moderate
 
 # Examples
-- A soprano line staying between D4 and E5 is well within range
-- A bass line that descends to D2 is acceptable but approaching the low extreme
-- An alto part reaching up to E5 is at the upper limit
 
-# Related Concepts
-- Rules of Spacing
-- Overtone Series
-- Tessitura
-- SATB Writing
+**Example 1** (p. 390): Figure 26.4.1 shows voice ranges for all four parts on the grand staff
+
+# Relationships
+
+## Related
+- **Rules of spacing** -- Spacing between voices operates within these ranges
+
+# Common Errors
+
+- **Error**: Writing parts at the extremes of the range for extended passages
+  **Correction**: Stay in the comfortable middle of each range when possible
 
 # Common Confusions
-- Confusing the voice ranges used in theory class with actual singer ranges
-- Forgetting that these ranges apply specifically to Bach chorale-style exercises
-- Writing parts at the extremes of the range rather than in the comfortable middle
-- Not accounting for the fact that different textbooks may use slightly different range specifications
+
+- **Confusion**: These are the only ranges vocalists can sing
+  **Clarification**: These are restricted academic ranges; trained singers typically have wider ranges
 
 # Source Reference
-Chapter 26: Voice Leading Triads, Unit 9, Section 26.4
+
+Chapter 26: Voice Leading Triads, Section 26.4, page 390. See Figure 26.4.1.
+
+# Verification Notes
+
+- Definition: Direct from source, p. 390
+- Confidence: HIGH -- explicit range specifications with figure
+- Re-extraction notes: Re-extracted from v2 card; preserved: approximate ranges, Bach chorale basis

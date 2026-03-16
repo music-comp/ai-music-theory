@@ -1,51 +1,81 @@
 ---
 concept: Set Class
-category: theory
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 33: Set Theory"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+slug: set-class
+category: analysis
+subcategory: post-tonal-analysis
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Set Theory"
 chapter_number: 33
+pdf_page: 485
+section: "33.6 Lists of Set Classes"
+extraction_confidence: high
+aliases:
+  - "equivalence class"
+prerequisites:
+  - prime-form
+  - transposition-tn
+  - inversion-tni
+extends:
+  - prime-form
+related:
+  - forte-numbers
+contrasts_with: []
+answers_questions:
+  - "What is a set class?"
+  - "How many set classes exist?"
+  - "What does it mean for sets to be in the same class?"
 ---
 
 # Quick Definition
-A set class is a collection of all pitch-class sets related by transposition and/or inversion, represented by a single prime form.
+A set class is a collection of all pitch-class sets sharing the same prime form -- related by transposition and/or inversion.
 
-# Formal Definition
-A set class is an equivalence class containing all pitch-class sets that share the same prime form. Just as C major, E major, and Ab major triads all belong to the category "major triad," all sets related by Tn or TnI belong to the same set class. There are 208 distinct set classes for sets of 3-9 pitch classes, each identified by a prime form and Forte number.
+# Core Definition
+A set class is an equivalence class containing all pitch-class sets that share the same prime form. Sets related by Tn or TnI belong to the same set class. There are 208 distinct set classes for sets of 3-9 pitch classes. Set classes are listed in tables with prime forms, Forte numbers, and interval vectors. Sets across from each other are complements (together they can complete the 12-note chromatic scale) (Hutchinson, Ch. 33, pp. 485-488).
 
-# Construction/Calculation
-1. Two sets belong to the same set class if:
-   - They are related by transposition (Tn), OR
-   - They are related by inversion (TnI)
-2. All sets in a set class share:
-   - The same prime form
-   - The same interval vector
-   - The same Forte number
-3. 208 distinct set classes exist (3-9 pitch classes)
+# Prerequisites
+- **Prime form** -- All sets in a class share the same prime form
+- **Transposition (Tn)** and **Inversion (TnI)** -- Define equivalence
 
-# Musical Context
-Set class is the most abstract level of pitch organization in set theory. Analyzing by set class reveals structural relationships between passages using different pitch classes. Composers may unify a work by consistently using sets from the same class throughout.
+# Key Properties
+1. All sets sharing the same prime form
+2. Related by Tn or TnI
+3. 208 distinct classes for 3-9 note sets
+4. Same interval vector within a class
+5. Complements: pairs that together complete the chromatic scale
+6. Some hexachords are self-complementary
+
+# Construction / Recognition
+- Two sets in the same class if related by Tn or TnI
+- All share: same prime form, same interval vector, same Forte number
 
 # Examples
-- Major triad (C-E-G) and minor triad (C-Eb-G): both belong to set class 3-11, prime form (037)
-- All transpositions and inversions of {0, 1, 4} belong to set class 3-3
-- Webern's chords sharing prime form (014) belong to the same set class
-- 3-12 (048): augmented triad - only 4 distinct sets in this class
+- Major and minor triads: both set class 3-11, prime form (037) (p. 480)
+- All transpositions of {0, 1, 4}: set class 3-3
+- Webern's chords sharing (014): all in set class 3-3
 
-# Related Concepts
-- Prime form
-- Forte numbers
-- Transposition (Tn)
-- Inversion (TnI)
-- Complement relation
+# Relationships
+## Builds Upon
+- **Prime form** -- Prime form identifies the set class
+## Related
+- **Forte numbers** -- Each set class has a Forte number
+- **Complement** -- Sets listed across from each other in tables
+
+# Common Errors
+- **Error**: Thinking each transposition of a set is a different set class
+  **Correction**: All transpositions and inversions belong to the same set class
 
 # Common Confusions
-- Set class is MORE abstract than prime form - it's the category, prime form is the label
-- Major and minor triads are the SAME set class (both are 037)
-- Not all set classes have the same number of members (some are more symmetrical)
-- Complements: some set classes combine with themselves to complete the chromatic
+- **Confusion**: Thinking major and minor triads are different set classes
+  **Clarification**: They are the same set class (3-11) because minor is the inversion of major
 
 # Source Reference
-Chapter 33: Set Theory, Unit 12, Section 33.6 Lists of Set Classes
+Chapter 33, Section 33.6, PDF pages 485-488. Tables 33.6.1-33.6.4.
+
+# Verification Notes
+- Definition synthesized from Section 33.6 tables and prime form discussion
+- 208 figure and complement relations from source
+- Re-extracted from v2 card; preserved: major/minor triad equivalence, complement concept
+- Confidence: HIGH -- source provides complete tables of all set classes

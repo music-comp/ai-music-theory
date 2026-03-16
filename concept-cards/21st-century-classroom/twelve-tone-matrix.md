@@ -1,58 +1,85 @@
 ---
 concept: Twelve-Tone Matrix
+slug: twelve-tone-matrix
 category: analysis
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 34: Serialism"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: 20th-century-techniques
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Serialism"
 chapter_number: 34
+pdf_page: 495
+section: "34.4 Twelve-Tone Matrix"
+extraction_confidence: high
+aliases:
+  - "row matrix"
+  - "12x12 matrix"
+prerequisites:
+  - row-forms
+  - transposition-numbers-rows
+extends: []
+related:
+  - determining-row-forms
+contrasts_with: []
+answers_questions:
+  - "What is a twelve-tone matrix?"
+  - "How do you construct a matrix?"
+  - "How do you read P, R, I, and RI from the matrix?"
 ---
 
 # Quick Definition
-A twelve-tone matrix is a 12x12 grid displaying all 48 row forms, with prime forms read left to right, retrogrades right to left, inversions top to bottom, and retrograde inversions bottom to top.
+A twelve-tone matrix is a 12x12 grid displaying all 48 row forms: P forms left to right, R right to left, I top to bottom, RI bottom to top.
 
-# Formal Definition
-The twelve-tone matrix is an analytical tool that organizes all 48 row forms of a twelve-tone composition in a 12-by-12 grid. The matrix is constructed by placing P0 across the top row and I0 down the left column. Each subsequent row is a transposition of the prime form beginning on the pitch class in the left column. Row forms are read in four directions: P forms (left to right), R forms (right to left), I forms (top to bottom), and RI forms (bottom to top).
+# Core Definition
+The twelve-tone matrix is an analytical tool showing all 48 row forms in a 12-by-12 grid. P0 is written across the top row and I0 down the left column. Each subsequent row is a transposition of the prime starting on the pitch class in the left column. P forms read left to right, R right to left, I top to bottom, RI bottom to top (Hutchinson, Ch. 34, pp. 495-496).
 
-# Construction/Calculation
-Steps to construct a matrix:
-1. Write P0 (prime starting on C) across the top row, left to right
-2. Write I0 (inversion starting on C) down the left column, top to bottom
-3. Each row is a prime form transposed to start on the note in column 1
-4. Fill in each row by transposing P0 to the starting pitch
-5. Label row forms:
-   - P_n on left (by starting note)
-   - R_n on right (by ending note)
-   - I_n on top (by starting note)
-   - RI_n on bottom (by ending note)
+# Prerequisites
+- **Row forms** -- Must understand P, R, I, RI
+- **Transposition numbers** -- Must understand labeling convention
 
-# Musical Context
-The matrix is an essential analytical tool for studying twelve-tone music. It allows analysts to identify row forms by comparing melodic fragments to the matrix. Once a clear row statement is identified in the score, the matrix reveals all possible row forms and their pitch content for further analysis.
+# Key Properties
+1. 12x12 grid containing all 48 row forms
+2. P forms: left to right (labeled on left by starting note)
+3. R forms: right to left (labeled on right by ending note)
+4. I forms: top to bottom (labeled on top by starting note)
+5. RI forms: bottom to top (labeled on bottom by ending note)
+6. Construction: P0 across top, I0 down left column
+
+# Construction / Recognition
+**To construct:**
+1. Write P0 left to right in top row
+2. Write I0 top to bottom in left column
+3. Each row: transpose P0 to start on the note in column 1
+4. Continue until all 12 rows are filled
+5. Label P and R on sides, I and RI on top/bottom
+
+# Context & Application
+The matrix is essential for twelve-tone analysis. Analysts use it to identify row forms by comparing melodic fragments to the matrix.
 
 # Examples
-Matrix excerpt (rows abbreviated):
-```
-     I0  I1  I6  I5 ...
-P0   C   Db  Gb  G  ...  R0
-P11  B   C   F   Gb ...  R11
-P6   Gb  G   C   Db ...  R6
-...
-    RI0 RI1 RI6 RI5
-```
+- Complete matrix from source (Table 34.4.1, p. 496): Shows all row forms with labels
+- Construction process shown step by step (Table 34.4.2, p. 496)
 
-# Related Concepts
-- Row forms
-- Transposition numbers
-- Twelve-tone analysis
-- Prime form
-- Inversion
+# Relationships
+## Builds Upon
+- **Row forms** and **Transposition numbers**
+## Related
+- **Determining row forms** -- Matrix helps verify row identifications
+
+# Common Errors
+- **Error**: Labeling P/I on the wrong edges
+  **Correction**: P labels go on the left (starting notes); R labels on the right (ending notes); I on top; RI on bottom
 
 # Common Confusions
-- P and I labels are on the edges where those forms START
-- R and RI labels are on the edges where those forms END
-- The diagonal from top-left to bottom-right contains all the same pitch
-- Matrix construction begins with P0 and I0, not necessarily the composer's original row
+- **Confusion**: Thinking the matrix diagonal is random
+  **Clarification**: The diagonal from top-left to bottom-right contains all the same pitch class
 
 # Source Reference
-Chapter 34: Serialism, Unit 12, Section 34.4 Twelve-Tone Matrix
+Chapter 34, Section 34.4, PDF pages 495-496. Tables 34.4.1 and 34.4.2.
+
+# Verification Notes
+- Construction procedure from source, pp. 495-496
+- Complete matrix shown in source
+- Re-extracted from v2 card; preserved: diagonal pitch property, construction steps
+- Confidence: HIGH -- source provides complete matrix with construction procedure

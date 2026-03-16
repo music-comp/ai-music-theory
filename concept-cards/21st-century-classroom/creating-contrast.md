@@ -1,56 +1,102 @@
 ---
-concept: Creating Contrast Between Sections
+concept: "Creating Contrast Between Sections"
+slug: creating-contrast
 category: technique
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 15: Creating Contrast Between Sections"
-unit: 3
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: form-and-arrangement
+tier: intermediate
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Creating Contrast Between Sections"
 chapter_number: 15
+pdf_page: 228
+section: "15.2 and 15.3"
+extraction_confidence: high
+aliases:
+  - "sectional contrast"
+prerequisites:
+  - elements-of-music
+  - texture
+extends:
+  - elements-of-music
+related:
+  - elements-of-music
+  - texture
+  - verse-chorus-form
+contrasts_with: []
+answers_questions:
+  - "How do composers create contrast between sections?"
+  - "Which elements of music typically change?"
+  - "How is form articulated through contrast?"
 ---
-
 # Quick Definition
-Contrast between sections is created by varying one or more elements of music, articulating the form and creating variety while maintaining overall coherence.
+Contrast between sections is created by varying one or more elements of music (melody, harmony, rhythm, timbre, texture, articulation, dynamics, register), articulating the form and creating variety while maintaining coherence.
 
-# Formal Definition
-Composers and arrangers create contrast between sections by varying the elements of music (melody, harmony, rhythm, timbre, texture, articulation, dynamics, register). Effective contrast helps listeners perceive form, maintains interest, and creates emotional variety.
+# Core Definition
+Composers and arrangers create contrast between sections by varying the elements of music. Effective contrast helps listeners perceive form, maintains interest, and creates emotional variety. Not all elements need to change -- some may remain constant to provide unity. The key is strategic variation of selected elements to articulate different formal sections.
 
-# Analysis/Application
-Strategies for creating contrast:
-1. Change the texture (add/remove instruments, change rhythmic density)
-2. Alter the dynamics (louder/softer)
-3. Shift the register (higher/lower)
-4. Change the articulation (staccato/legato)
-5. Modify the rhythm (faster/slower values)
-6. Change the mode (major/minor)
-7. Adjust the timbre (different instruments or tonal quality)
+# Prerequisites
+- **Elements of music**: The eight components that can be varied
+- **Texture**: Understanding of vertical and horizontal dimensions
 
-# Musical Context
-Creating contrast is essential to articulating form in both classical and popular music. Verses, choruses, and bridges are distinguished partly through contrasting elements.
+# Key Properties
+1. Vary one or more elements between sections
+2. Some elements remain constant for unity
+3. Common changes: texture, dynamics, articulation, rhythm, register
+4. Mode change (major/minor) provides harmonic contrast
+5. Contrast must be balanced with unity
+6. Chord progression may remain constant while other elements change
+
+# Construction / Recognition
+1. Identify which elements change between sections
+2. Note which elements remain constant
+3. Assess how dramatic the changes are
+4. Determine if changes occur gradually or suddenly
+5. Map the contrast pattern across the entire form
+
+# Context & Application
+Creating contrast is essential to articulating form in both classical and popular music. In classical music, different sections of a rondo form have distinct textures, articulations, and harmonic areas. In popular music, verses, pre-choruses, choruses, and post-choruses are distinguished through contrasting elements of music.
 
 # Examples
-Mozart, Eine kleine Nachtmusik, II (ABACA form):
-- Each section has distinct texture, articulation, and rhythm
-- C section contrasts with mode (C minor vs. C major)
+- Mozart, Eine kleine Nachtmusik, K. 525, II (ABACA rondo):
+  - A section: C major, 8th notes, legato, soft, melody with simple bass
+  - B section: more staccato, all voices together, 16th-note runs
+  - C section: C minor, 16th-note accompaniment, imitation between voices, mixed articulation
+- MAGIC!, "Rude" (verse-chorus):
+  - Verse 1: light texture (no drums/bass), voice + 2 guitars
+  - Verse 2: bass and drums enter, thickens texture, adds backbeat
+  - Pre-chorus: legato half/quarter notes, cross-stick 8ths, lighter (no backbeat)
+  - Chorus: same as V2 but higher vocal register
+  - Post-chorus: (3+3+2)+(3+3+2) rhythm on all instruments
 
-MAGIC!, "Rude":
-- Verse 1: Light texture (no drums/bass)
-- Verse 2: Added drums and bass
-- Pre-chorus: Legato, lighter (no backbeat)
-- Chorus: Same as V2 but higher vocal register
-- Post-chorus: Emphasized (3+3+2)+(3+3+2) rhythm
+# Relationships
+## Builds Upon
+- Elements of music (the tools for creating contrast)
 
-# Related Concepts
-- Elements of music
-- Form
-- Texture
-- Dynamics
-- Articulation
+## Enables
+- Effective form articulation
+- Arrangement and orchestration choices
+- Compositional variety
+
+## Related
+- elements-of-music
+- texture
+- verse-chorus-form
+
+## Contrasts With
+- Unity (the balance to contrast)
+
+# Common Errors
+- Changing too many elements at once (losing coherence)
+- Not changing enough elements (sections blend together)
 
 # Common Confusions
-- Not all elements need to change between sections
-- Some elements (like chord progression) may remain constant
-- Contrast must be balanced with unity
+- **Not all elements need to change**: Some remaining constant provides unity
+- **Chord progression can stay the same**: As in "Rude," where the progression barely changes but other elements articulate the form
+- **Balance contrast with unity**: Effective composition uses both
 
 # Source Reference
-Chapter 15: Creating Contrast Between Sections, Unit 3, Sections 15.2 and 15.3
+Chapter 15: Creating Contrast Between Sections, Sections 15.2-15.3 (PDF p. 228)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved detailed Mozart and "Rude" section-by-section analyses from v2 card. Added pre-chorus and post-chorus detail from source.

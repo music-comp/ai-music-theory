@@ -1,57 +1,77 @@
 ---
 concept: Forte Numbers
+slug: forte-numbers
 category: analysis
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 33: Set Theory"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: post-tonal-analysis
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Set Theory"
 chapter_number: 33
+pdf_page: 485
+section: "33.5 Forte Numbers"
+extraction_confidence: high
+aliases:
+  - "set class numbers"
+prerequisites:
+  - prime-form
+  - interval-vector
+extends: []
+related:
+  - set-class
+  - z-relations
+contrasts_with: []
+answers_questions:
+  - "What are Forte numbers?"
+  - "How are Forte numbers formatted?"
 ---
 
 # Quick Definition
-Forte numbers are labels assigned to each prime form in Allen Forte's catalog, using a format like "3-1" where the first number indicates cardinality and the second is the catalog position.
+Forte numbers are catalog labels for each prime form (format: X-Y where X = number of pitch classes, Y = catalog position), created by Allen Forte in 1973.
 
-# Formal Definition
-Forte numbers are the labeling system created by Allen Forte in "The Structure of Atonal Music" (1973) to identify each of the 208 possible prime forms (set classes) for 3- through 9-note sets. The format is X-Y, where X indicates the number of pitch classes (cardinality) and Y is the ordinal position in Forte's list. For example, 3-1 is the first trichord, 4-Z15 is a tetrachord with a Z-relation.
+# Core Definition
+When Allen Forte created a catalog of every possible 3- through 9-note set in *The Structure of Atonal Music* (1973), he labeled each prime form with two numbers separated by a hyphen. The first number indicates cardinality (number of pitch classes); the second is the ordinal position in his list. "Z" in a label (e.g., 4-Z29) indicates a Z-relation (Hutchinson, Ch. 33, p. 485).
 
-# Construction/Calculation
-Format: [cardinality]-[ordinal number]
-- First number (3-9): how many pitch classes in the set
-- Second number: position in Forte's ordering
-- "Z" indicates the set has a Z-relation (same interval vector as another set)
+# Prerequisites
+- **Prime form** -- Forte numbers label prime forms
+- **Interval vector** -- Listed alongside Forte numbers in tables
 
-Examples of cardinality:
-- 3-X: trichords (3 notes)
-- 4-X: tetrachords (4 notes)
-- 5-X: pentachords (5 notes)
-- 6-X: hexachords (6 notes)
-- 7-X: septachords (7 notes)
-- 8-X: octachords (8 notes)
-- 9-X: nonachords (9 notes)
+# Key Properties
+1. Format: [cardinality]-[ordinal number]
+2. Cardinality ranges from 3 to 9
+3. 208 total set classes cataloged
+4. "Z" indicates Z-relation (same vector as another set)
+5. Tables in Section 33.6 list all prime forms with Forte numbers and vectors
 
-# Musical Context
-Forte numbers provide a standardized vocabulary for discussing set classes in analytical writing. Instead of writing out prime forms, analysts can refer to "set class 3-3" and readers can look up the corresponding prime form, interval vector, and complement in published tables.
+# Construction / Recognition
+- 3-X: trichords; 4-X: tetrachords; 5-X: pentachords; 6-X: hexachords; 7-X: septachords; 8-X: octachords; 9-X: nonachords
+- Example: 3-11 = (037) = major/minor triad; 5-35 = (02479) = pentatonic scale
+
+# Context & Application
+Forte numbers provide standardized vocabulary for analytical writing, with complete tables in Section 33.6 (pp. 485-488).
 
 # Examples
-- 3-1: (012) - chromatic trichord
-- 3-11: (037) - major/minor triad
-- 4-Z15: (0146) - Z-related tetrachord
-- 4-Z29: (0137) - same interval vector as 4-Z15
-- 5-35: (02479) - pentatonic scale
+- 3-1: (012) chromatic trichord; 3-11: (037) major/minor triad; 3-12: (048) augmented triad
+- 4-Z15: (0146) and 4-Z29: (0137) both have vector 111111
 
-# Related Concepts
-- Prime form
-- Set class
-- Interval vector
-- Z-relations
-- Complement relations
+# Relationships
+## Related
+- **Set class** -- Forte numbers label set classes
+- **Z-relations** -- Z in a Forte number signals a Z-relation
+
+# Common Errors
+- **Error**: Thinking Forte numbers are calculated from the prime form
+  **Correction**: They are arbitrary catalog labels assigned by Forte's ordering
 
 # Common Confusions
-- Forte numbers are catalog labels, not mathematical calculations
-- The "Z" indicates Z-relation, not a different calculation method
-- Numbers are assigned in Forte's original ordering, not by prime form value
-- Some sets are self-complementary (combining with transposed self completes chromatic)
+- **Confusion**: Thinking the ordinal number correlates to compactness
+  **Clarification**: Forte's ordering follows his specific criteria, not simple compactness
 
 # Source Reference
-Chapter 33: Set Theory, Unit 12, Section 33.5 Forte Numbers
+Chapter 33, Section 33.5 and 33.6, PDF pages 485-488. Complete tables of set classes.
+
+# Verification Notes
+- Definition from source, p. 485; tables from Section 33.6
+- Re-extracted from v2 card; preserved: Z notation explanation, 208 set classes figure
+- Confidence: HIGH -- source provides definition and complete tables

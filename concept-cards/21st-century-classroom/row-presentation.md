@@ -1,49 +1,76 @@
 ---
 concept: Row Presentation in Music
+slug: row-presentation
 category: analysis
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 34: Serialism"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: 20th-century-techniques
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Serialism"
 chapter_number: 34
+pdf_page: 496
+section: "34.5 Row Form Presentation in Music"
+extraction_confidence: high
+aliases:
+  - "row presentation"
+prerequisites:
+  - twelve-tone-technique
+  - row-forms
+extends: []
+related:
+  - twelve-tone-matrix
+contrasts_with: []
+answers_questions:
+  - "How are rows presented in twelve-tone compositions?"
+  - "What is row overlap?"
 ---
 
 # Quick Definition
-Rows can be presented melodically, harmonically, contrapuntally, or in combinations, with row statements sometimes overlapping where the last note of one row begins the next.
+Rows can appear melodically, harmonically, contrapuntally, or in combinations; row statements sometimes overlap where the last note of one row begins the next.
 
-# Formal Definition
-Row presentation refers to how twelve-tone rows appear in the musical texture. Rows may be stated as single melodic lines, distributed across multiple voices, presented as chords, or divided into segments (tetrachords, trichords) that appear simultaneously in different registers. Overlap occurs when the twelfth note of one row statement also serves as the first note of the next row statement.
+# Core Definition
+Row presentation refers to how twelve-tone rows appear in the musical texture. Presentations include: melodic (single line), harmonic (stacked as chords), contrapuntal (divided among simultaneous voices), and segmented (partitioned into tetrachords or trichords). Overlap occurs when the 12th note of one row is also the 1st note of the next. An analyst should first find a clear presentation of the row before analyzing more complex textures (Hutchinson, Ch. 34, pp. 496-497).
 
-# Construction/Calculation
-Types of row presentation:
-1. Melodic: Row appears as a single line
-2. Harmonic: Row notes stacked as chords
-3. Contrapuntal: Row divided among simultaneous voices
-4. Segmented: Row partitioned (e.g., three tetrachords presented simultaneously)
-5. Overlap: Note 12 of row A = Note 1 of row B
-6. Combined: Melody in one row, accompaniment in another
+# Prerequisites
+- **Twelve-tone technique** -- Row presentation is part of twelve-tone practice
+- **Row forms** -- Must identify which forms are being presented
 
-# Musical Context
-Composers vary row presentation to create textural interest while maintaining serial structure. Webern favored pointillistic presentation across registers; Schoenberg often used melodic and accompanimental presentations simultaneously. Understanding row presentation is essential for complete twelve-tone analysis.
+# Key Properties
+1. Melodic: row as single line
+2. Harmonic: row notes as chords
+3. Contrapuntal: row divided among voices
+4. Segmented: partitioned into tetrachords presented simultaneously
+5. Overlap: note 12 of one row = note 1 of the next
+6. Multiple rows can sound simultaneously (one as melody, another as accompaniment)
+
+# Construction / Recognition
+1. Look for clear melodic statements first
+2. Check for rows distributed across voices
+3. Watch for overlap (shared notes between consecutive row statements)
+4. Multiple row forms may sound simultaneously
 
 # Examples
-- Melodic statement: Row as single-line melody
-- Tetrachord presentation: First 4 notes in soprano, next 4 in alto, last 4 in bass (simultaneous)
-- Overlap: ...A-B-C (end of P5) B-C-D... (B-C starts P7)
-- Schoenberg: melody in P0, chordal accompaniment in R0
+- Overlap example (p. 497, Figure 34.5.1): 12th note overlapping with 1st of next row
+- Tetrachord presentation (p. 497, Figure 34.5.2): Three tetrachords presented contrapuntally
+- Melody-accompaniment (p. 497): P0 as melody, R0 as chords
 
-# Related Concepts
-- Tone row
-- Row forms
-- Segmentation
-- Twelve-tone technique
+# Relationships
+## Related
+- **Twelve-tone matrix** -- Helps identify which row forms appear
+
+# Common Errors
+- **Error**: Missing overlap between consecutive row statements
+  **Correction**: Check if the last note of one row is the first of the next
 
 # Common Confusions
-- Rows don't have to appear as melodies - they can be vertical
-- Overlap reduces the total number of notes (shared note)
-- Different row forms can sound simultaneously
-- The same row segment might be hard to identify when spread across registers
+- **Confusion**: Expecting rows to always appear as melodies
+  **Clarification**: Rows can be vertical (chords), distributed across voices, or combined
 
 # Source Reference
-Chapter 34: Serialism, Unit 12, Section 34.5 Row Form Presentation in Music
+Chapter 34, Section 34.5, PDF pages 496-497. Figures 34.5.1 and 34.5.2.
+
+# Verification Notes
+- Presentation types from source, pp. 496-497
+- Re-extracted from v2 card; preserved: overlap concept, tetrachord presentation, melody-accompaniment example
+- Confidence: HIGH -- source provides multiple presentation examples

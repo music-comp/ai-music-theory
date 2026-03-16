@@ -1,54 +1,75 @@
 ---
 concept: Determining Row Forms
+slug: determining-row-forms
 category: analysis
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 34: Serialism"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: 20th-century-techniques
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Serialism"
 chapter_number: 34
+pdf_page: 493
+section: "34.2 Determining Row Forms"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - row-forms
+  - transposition-numbers-rows
+extends: []
+related:
+  - twelve-tone-matrix
+contrasts_with: []
+answers_questions:
+  - "How do you identify which row form appears in a passage?"
+  - "How do you determine the transposition level of a row form?"
 ---
 
 # Quick Definition
-Row forms are identified by examining the opening intervals of a melodic fragment and comparing them to the intervallic signatures of P, R, I, and RI forms.
+Row forms are identified by comparing the opening intervals of a passage to the intervallic signatures of P, R, I, and RI, then determining the transposition number.
 
-# Formal Definition
-To determine which row form appears in a passage, analyze the intervallic sequence and compare it to the characteristic intervals of each row form. Each of the four basic forms (P, R, I, RI) has a unique intervallic profile at its beginning, which can be used to identify it. Once the form is identified, the transposition number is determined from the first note (for P and I) or last note (for R and RI).
+# Core Definition
+To determine a row form's permutation and transposition, examine the intervallic composition of each row form. Each of the four forms (P, R, I, RI) has a unique intervallic profile at its beginning. Once identified, the transposition number comes from the first note (P, I) or last note (R, RI) (Hutchinson, Ch. 34, pp. 493-494).
 
-# Construction/Calculation
-Process for identifying row forms:
-1. Write out the four basic row forms and note their opening intervals
-2. Compare the intervals in the music to these patterns
-3. Match the intervallic pattern to identify the form type (P, R, I, or RI)
-4. Determine transposition:
-   - For P and I: identify the first pitch class
-   - For R and RI: identify the twelfth (last) pitch class
-5. The subscript equals the pitch class integer of that note
+# Prerequisites
+- **Row forms** -- Must know P, R, I, RI
+- **Transposition numbers** -- Must know labeling convention
 
-# Musical Context
-Identifying row forms is fundamental to twelve-tone analysis. Sometimes rows are clearly stated; other times they are distributed across voices or disguised through rhythm and register. The analyst works from clear statements toward more complex presentations.
+# Key Properties
+1. Each row form has a unique opening intervallic signature
+2. Compare passage intervals to the four form signatures
+3. Transposition: first note for P/I, last note for R/RI
+4. Write out all four forms' opening intervals for comparison
+
+# Construction / Recognition
+1. Write out P, R, I, RI and note their opening intervals
+2. Compare intervals in the music to these patterns
+3. Match to identify form type
+4. Find transposition: P/I = first pitch class; R/RI = 12th pitch class
 
 # Examples
-If P0 opens with: m2 up, P4 up
-Then:
-- P forms start: m2 up, P4 up
-- R forms start: [the last two intervals of P, reversed]
-- I forms start: m2 down, P4 down
-- RI forms start: [the last two intervals of I, reversed]
+- Source example (p. 494): Ascending m3 then descending M2 = retrograde; ending on Ab = R_8
+- Descending m2 then descending P4 = inversion at I_11
+- Ascending m2 then ascending P4 = prime at P_1
 
-Analysis example: m3 up, M2 down = matches R; ending on Ab = R8
+# Relationships
+## Builds Upon
+- **Row forms** and **Transposition numbers**
+## Related
+- **Twelve-tone matrix** -- Can verify identifications against the matrix
 
-# Related Concepts
-- Row forms
-- Twelve-tone matrix
-- Interval analysis
-- Serial analysis
+# Common Errors
+- **Error**: Using the starting note for R/RI transposition
+  **Correction**: R and RI use the 12th (last) note for their subscript
 
 # Common Confusions
-- Remember P/I use first note for transposition, R/RI use last note
-- The intervallic profile is the key identifier
-- Rows may be presented in various textures, not just melodic lines
-- Overlap between row statements is common
+- **Confusion**: Thinking all row forms start with the same intervals
+  **Clarification**: Each form has its own unique intervallic profile
 
 # Source Reference
-Chapter 34: Serialism, Unit 12, Section 34.2 Determining Row Forms
+Chapter 34, Section 34.2, PDF pages 493-494. Worked analysis example.
+
+# Verification Notes
+- Procedure from source, pp. 493-494
+- Re-extracted from v2 card; preserved: worked identification examples
+- Confidence: HIGH -- source provides step-by-step procedure with examples

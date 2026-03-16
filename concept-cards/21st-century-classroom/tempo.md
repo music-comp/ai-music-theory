@@ -1,49 +1,85 @@
 ---
 concept: Tempo
-category: theory
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 4: Basics of Rhythm"
-unit: 1
-authors: Robert Hutchinson
-pdf_page: null
+slug: tempo
+category: rhythm-meter
+tier: foundational
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Basics of Rhythm"
 chapter_number: 4
+pdf_page: 32
+section: "4.4 Meter"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - beat-and-pulse
+extends: []
+related:
+  - time-signature
+contrasts_with: []
+answers_questions:
+  - "What is tempo?"
+  - "How is tempo indicated in music?"
+  - "What does BPM mean?"
 ---
 
 # Quick Definition
-Tempo is the speed of the beat, measured in beats per minute (BPM) or indicated by Italian terms like Allegro or Andante.
+Tempo refers to the speed of the beat or pulse, measured in beats per minute (BPM) or indicated by Italian terms like Allegro, Andante, and Adagio.
 
-# Formal Definition
-Tempo refers to the speed at which beats occur in music. It can be specified precisely using beats per minute (BPM), where 60 BPM means one beat per second. Tempo can also be indicated by Italian terms (Allegro, Andante, Adagio) that suggest general speed ranges, sometimes combined with "M.M." (Maelzel's Metronome) for exact BPM.
+# Core Definition
+Tempo refers to the speed of the beat or pulse. Tempo can be referred to in beats per minute (BPM), such as 60 BPM (where the rate of the beat would be equal to a second), or, in classical music, with terms like Allegro, Andante, and Adagio, sometimes in combinations with "M.M." for Maelzel's Metronome.
 
-# Construction/Recognition
-- BPM (beats per minute): precise tempo measurement
-- 60 BPM = one beat per second
-- 120 BPM = two beats per second
-- Italian terms indicate general tempos and character
-- Metronome marks appear at the beginning of pieces
+# Prerequisites
+- **Beat and pulse**: The unit whose speed tempo measures
 
-# Musical Context
+# Key Properties
+1. Speed of the beat, not speed of individual notes
+2. BPM (beats per minute): precise measurement
+3. 60 BPM = one beat per second
+4. Italian terms: general speed ranges with character implications
+5. M.M. (Maelzel's Metronome): used with exact BPM in classical scores
+6. Tempo dramatically affects musical character
+
+# Construction / Recognition
+- Metronome markings at the beginning of pieces (e.g., quarter note = 120)
+- Italian terms above the staff (Allegro, Andante, etc.)
+- M.M. markings in classical scores
+
+# Context & Application
 Tempo dramatically affects the character and feel of music. The same piece played at different tempos can feel entirely different. Tempo choices are interpretive decisions that performers make based on style, context, and expression.
 
 # Examples
-- Largo: very slow (40-60 BPM)
-- Adagio: slow (66-76 BPM)
-- Andante: walking pace (76-108 BPM)
-- Allegro: fast (120-168 BPM)
-- Presto: very fast (168-200 BPM)
+- Largo: very slow (~40-60 BPM)
+- Adagio: slow (~66-76 BPM)
+- Andante: walking pace (~76-108 BPM)
+- Allegro: fast (~120-168 BPM)
+- Presto: very fast (~168-200 BPM)
 
-# Related Concepts
-- Beat
-- Pulse
-- Metronome
-- Italian tempo markings
-- BPM (beats per minute)
-- Rubato
+# Relationships
+## Builds Upon
+- Beat and pulse
+
+## Enables
+- Performance interpretation, metronome practice, tempo changes (accel., rit.)
+
+## Related
+- Time signature (defines what note value gets the beat that tempo measures)
+
+## Contrasts With
+(none)
+
+# Common Errors
+- Confusing tempo with meter (tempo = speed; meter = beat grouping)
+- Assuming Italian terms specify exact tempos (they indicate ranges)
 
 # Common Confusions
-- Tempo describes speed of beats, not speed of notes
-- Italian terms indicate ranges, not exact tempos
-- BPM is more precise but Italian terms convey character as well as speed
+- **Tempo vs. meter**: Tempo describes the speed of beats; meter describes how beats are grouped and divided
+- **Italian terms**: Indicate ranges and character, not exact BPM values
+- **BPM precision**: BPM is more precise than Italian terms but conveys less about musical character
 
 # Source Reference
-Chapter 4: Basics of Rhythm, Section 4.4 Meter
+Chapter 4: Basics of Rhythm, Section 4.4 Meter (PDF p. 32)
+
+# Verification Notes
+Re-extracted from v2 card; preserved: BPM ranges for Italian terms, M.M. explanation. Source defines tempo within the meter section alongside beat and pulse.

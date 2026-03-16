@@ -1,48 +1,79 @@
 ---
 concept: Bitonality
-category: theory
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 32: Impressionism and Extended Tonality"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+slug: bitonality
+category: harmony
+subcategory: 20th-century-techniques
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Impressionism and Extended Tonality"
 chapter_number: 32
+pdf_page: 472
+section: "32.4 Polychords"
+extraction_confidence: medium
+aliases:
+  - "polytonality"
+  - "bimodality"
+prerequisites:
+  - polychords
+extends:
+  - polychords
+related:
+  - impressionism
+contrasts_with: []
+answers_questions:
+  - "What is bitonality?"
+  - "How does bitonality differ from polychords?"
 ---
 
 # Quick Definition
-Bitonality is the simultaneous use of two different keys or tonal centers, creating harmonic tension through the juxtaposition of conflicting tonalities.
+Bitonality is the simultaneous use of two different keys, creating tension through the juxtaposition of conflicting tonalities over sustained passages.
 
-# Formal Definition
-Bitonality (also called bimodality when involving modes) refers to the compositional technique of using two distinct keys or tonal centers simultaneously. Unlike polychords which combine specific chord structures, bitonality involves sustained passages in two different keys. The technique creates complex harmonic effects while each individual layer maintains its own tonal coherence.
+# Core Definition
+Bitonality refers to the simultaneous use of two distinct keys or tonal centers. While related to polychords, bitonality involves sustained passages in two different keys rather than momentary chord superimposition. Each layer maintains its own tonal coherence. The technique represents a middle ground between tonality and atonality (synthesized from Hutchinson, Ch. 32, Section 32.4 context).
 
-# Construction/Calculation
-1. Establish one key/tonality in one register or instrumental group
-2. Establish a different key/tonality in another register or group
-3. Maintain both tonalities simultaneously
-4. Keys may be closely related or distantly related
-5. The two layers interact but maintain separate identities
-6. Often involves tritone-related keys for maximum contrast
+# Prerequisites
+- **Polychords** -- Bitonality extends the polychord concept over time
 
-# Musical Context
-Bitonality emerged in early 20th-century music as composers explored alternatives to single-key tonality without fully abandoning tonal reference. Stravinsky's Petrushka is famous for juxtaposing C major and F# major (a tritone apart). The technique appears in Milhaud, Bartok, and other 20th-century composers. It represents a middle ground between tonality and atonality.
+# Key Properties
+1. Two simultaneous keys or tonal centers
+2. Sustained passages (not just momentary chords)
+3. Each layer maintains its own tonal coherence
+4. Tritone-related keys create maximum contrast
+5. Middle ground between tonality and atonality
+
+# Construction / Recognition
+- Identify two simultaneous tonal centers in different registers or instrumental groups
+- Each layer has its own key identity
+- Bitonality extends over time; polychords are more localized
+
+# Context & Application
+Stravinsky's *Petrushka* juxtaposes C major and F# major (a tritone apart). The technique also appears in Milhaud and Bartok.
 
 # Examples
-- Stravinsky, Petrushka: C major vs. F# major (tritone-related keys)
-- Milhaud's polytonality extends bitonality to multiple simultaneous keys
-- Bartok's use of combined modes
-- Jazz: occasionally superimposing different key centers
+- Stravinsky, *Petrushka*: C major vs. F# major (tritone-related keys)
+- Stravinsky, *Petrushka*, Fourth Tableau (p. 474, Figure 32.4.3): Chromatically ascending dom7ths against repeating G-F-C cycle demonstrates polytonal layering
 
-# Related Concepts
-- Polychords
-- Polytonality (more than two keys)
-- Atonality
-- Key relationships
+# Relationships
+## Builds Upon
+- **Polychords** -- Bitonality extends polychord thinking over time
+## Related
+- **Impressionism** -- Both are 20th-century harmonic innovations
+
+# Common Errors
+- **Error**: Confusing a single moment of polychord with bitonality
+  **Correction**: Bitonality is sustained over passages; polychords can be momentary
 
 # Common Confusions
-- Bitonality is two keys; polytonality is multiple keys
-- Polychords are momentary; bitonality is sustained
-- Bitonality is not atonality - each layer has its own tonal center
-- The effect depends on the relationship between the keys chosen
+- **Confusion**: Thinking bitonality is the same as atonality
+  **Clarification**: Each layer in bitonality has its own tonal center; atonality avoids tonal centers entirely
 
 # Source Reference
-Chapter 32: Impressionism and Extended Tonality, Unit 12, Section 32.4 Polychords (related concept)
+Chapter 32, Section 32.4, PDF pages 472-474. Related to polychord discussion.
+
+# Verification Notes
+- Concept synthesized from polychord section context; not a primary heading in source
+- Petrushka example supports concept
+- Re-extracted from v2 card; preserved: Petrushka C/F# example, distinction from atonality
+- Confidence: MEDIUM -- concept is implied in polychord section but not a primary heading

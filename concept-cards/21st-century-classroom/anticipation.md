@@ -1,46 +1,88 @@
 ---
-concept: Anticipation
-category: theory
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 10: Non-Chord Tones"
-unit: 2
-authors: Robert Hutchinson
-pdf_page: null
+concept: "Anticipation"
+slug: anticipation
+category: analysis
+subcategory: melodic-embellishment
+tier: intermediate
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Non-Chord Tones"
 chapter_number: 10
+pdf_page: 120
+section: "10.7 Anticipation"
+extraction_confidence: high
+aliases:
+  - "Ant."
+  - "ANT"
+prerequisites:
+  - non-chord-tones-overview
+extends: []
+related:
+  - syncopation
+  - cadence
+contrasts_with:
+  - suspension
+answers_questions:
+  - "What is an anticipation?"
+  - "Where do anticipations commonly occur?"
+  - "How is syncopation related to anticipation?"
 ---
-
 # Quick Definition
-An anticipation is a non-chord tone that arrives early, anticipating a note in the following chord before that chord actually sounds.
+An anticipation is a non-chord tone that arrives early, sounding a note of the following chord before that chord actually arrives, often found at cadences.
 
-# Formal Definition
-An anticipation is a non-chord tone that anticipates the arrival of the next chord and is often found at cadences. It is approached by step and left by same note (the anticipated note becomes a chord tone when the new chord arrives).
+# Core Definition
+An anticipation is a non-chord tone that anticipates the arrival of the next chord and is often found at cadences. It is approached by step and left by same note (the anticipated note becomes a chord tone when the new chord arrives). Syncopation frequently leads to anticipation in popular music, where a note in the following measure arrives early on an offbeat.
 
-# Analysis/Application
-To identify anticipations:
+# Prerequisites
+- **Non-chord tones overview**: Understanding the classification system
+
+# Key Properties
+1. Approached by step, left by same note
+2. The NCT belongs to the next chord, not the current one
+3. Often found at cadences
+4. Syncopation frequently creates anticipations
+5. The note becomes a chord tone when the new harmony arrives
+
+# Construction / Recognition
 1. Look for a note that belongs to the next chord, not the current one
 2. Confirm it is approached by step
-3. The note is held or repeated when the new chord arrives
+3. The note is held or repeated when the new chord arrives (same note departure)
 4. Label as Ant. or ANT
 
-# Musical Context
-Anticipations are especially common at cadences, where they create rhythmic momentum by arriving before the harmonic resolution. Syncopation often leads to anticipations in popular music.
+# Context & Application
+Anticipations are especially common at cadences, where they create rhythmic momentum by arriving before the harmonic resolution. In popular music, syncopated rhythms frequently produce anticipations. They create a forward-leaning rhythmic feel.
 
 # Examples
-- Handel, Rinaldo, "Lascia ch'io pianga" (1711) - anticipation at the cadence
-- "Call Me" (Debbie Harry and Giorgio Moroder, 1980) - anticipations at ends of bars 1, 2, and 3
-- "My Heart Will Go On" (1997) - contains both appoggiatura and anticipation
-- Syncopated rhythms frequently create anticipations
+- Handel, Rinaldo, "Lascia ch'io pianga" (1711) -- anticipation at the cadence
+- "Call Me" (Debbie Harry/Moroder, 1980) -- anticipations at ends of bars 1, 2, and 3 due to syncopation
+- "My Heart Will Go On" (1997) -- contains both appoggiatura and anticipation
 
-# Related Concepts
-- Non-chord tones
-- Cadences
-- Syncopation
-- Rhythmic displacement
+# Relationships
+## Builds Upon
+- Non-chord tones overview (one of the nine types)
+
+## Enables
+- Rhythmic momentum at cadences
+- Syncopated melodic writing
+
+## Related
+- syncopation (often produces anticipations)
+- cadence (anticipations common at cadences)
+
+## Contrasts With
+- Suspension (held from previous chord; anticipation reaches ahead to next chord)
+
+# Common Errors
+- Confusing anticipation with suspension (anticipation looks ahead; suspension holds back)
 
 # Common Confusions
-- Anticipations are approached by step (or same note from a tie)
-- They become chord tones when the new harmony arrives
-- Syncopation and anticipation are related but not identical concepts
+- **Opposite of suspension**: Suspension holds a note from the previous chord; anticipation arrives early from the next chord
+- **Syncopation connection**: Syncopation often leads to anticipations, but they are not identical concepts
+- **Becomes a chord tone**: The anticipated note becomes consonant when the new chord arrives
 
 # Source Reference
-Chapter 10: Non-Chord Tones, Unit 2, Section 10.7
+Chapter 10: Non-Chord Tones, Section 10.7 (PDF p. 120)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved all examples and syncopation connection from v2 card.

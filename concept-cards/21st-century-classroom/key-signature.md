@@ -1,29 +1,59 @@
 ---
 concept: Key Signature
-category: theory
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 2: Major Scales and Key Signatures"
-unit: 1
-authors: Robert Hutchinson
-pdf_page: null
+slug: key-signature
+category: fundamentals
+tier: foundational
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Major Scales and Key Signatures"
 chapter_number: 2
+pdf_page: 18
+section: "2.3 Major Key Signatures"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - major-scale
+  - accidentals
+extends: []
+related:
+  - order-of-sharps
+  - order-of-flats
+  - circle-of-fifths
+  - relative-major-minor
+contrasts_with: []
+answers_questions:
+  - "What is a key signature?"
+  - "How many major key signatures are there?"
+  - "How do you identify a key from its key signature?"
 ---
 
 # Quick Definition
-A key signature is a set of sharps or flats placed at the beginning of each staff line that indicates which notes are consistently altered throughout a piece.
+A key signature is a set of sharps or flats placed at the beginning of each staff line that indicates which notes are consistently raised or lowered throughout a piece.
 
-# Formal Definition
-A key signature is placed at the beginning of a piece (or section) and is written with the clef at the beginning of each line of music. It indicates which notes are to be raised or lowered throughout the music, reflecting the sharps or flats of the key. There are 15 major key signatures: one with no sharps or flats (C major), seven with sharps, and seven with flats.
+# Core Definition
+A key signature is placed at the beginning of a piece (or the beginning of a section) and is written with the clef on the beginning of each line of music. The key signature reminds the performer which sharps or flats are in the scale (or key) of the piece and prevents the composer or arranger from writing every sharp or flat from the scale every time it occurs. There are 15 major key signatures: C major has no sharps or flats, and the other 14 can have between 1 to 7 sharps and 1 to 7 flats.
 
-# Construction/Recognition
-- Appears immediately after the clef at the start of each line
-- Sharps or flats are written in a specific order
-- Sharp keys: G, D, A, E, B, F#, C# (1-7 sharps)
-- Flat keys: F, Bb, Eb, Ab, Db, Gb, Cb (1-7 flats)
-- C major has no sharps or flats
+# Prerequisites
+- **Major scale**: The scale whose sharps/flats the key signature represents
+- **Accidentals**: Understanding what sharps and flats do
 
-# Musical Context
-Key signatures eliminate the need to write accidentals repeatedly throughout a piece. They establish the tonal center and indicate the scale from which the music draws its notes.
+# Key Properties
+1. Placed immediately after the clef at the start of each line
+2. 15 total major key signatures (0 sharps/flats + 7 sharp keys + 7 flat keys)
+3. Sharps and flats are written in a specific, fixed order
+4. Applies to ALL octaves of the affected notes
+5. Can represent either a major key or its relative minor
+6. Accidentals in the music can temporarily override the key signature
+
+# Construction / Recognition
+- For sharp keys: go up a half step from the last sharp to find the major key
+- For flat keys: the second-to-last flat is the name of the major key
+- C major: no sharps or flats (the exception to both rules)
+- Sharps/flats appear in their fixed order
+
+# Context & Application
+Key signatures eliminate the need to write accidentals repeatedly throughout a piece. They establish the tonal center and indicate the scale from which the music draws its notes. The same key signature can indicate either a major key or its relative minor.
 
 # Examples
 - G major: one sharp (F#)
@@ -32,17 +62,33 @@ Key signatures eliminate the need to write accidentals repeatedly throughout a p
 - Bb major: two flats (Bb, Eb)
 - C major: no sharps or flats
 
-# Related Concepts
-- Major scale
-- Order of sharps
-- Order of flats
-- Circle of fifths
-- Accidentals
+# Relationships
+## Builds Upon
+- Major scale, accidentals
+
+## Enables
+- Quick identification of key, simplified notation, transposition
+
+## Related
+- Order of sharps (F-C-G-D-A-E-B)
+- Order of flats (B-E-A-D-G-C-F)
+- Circle of fifths (visual organization of key signatures)
+- Relative major/minor (same key signature, different tonic)
+
+## Contrasts With
+(none)
+
+# Common Errors
+- Forgetting that key signatures apply to ALL octaves of the affected notes
+- Writing sharps or flats in the wrong order
 
 # Common Confusions
-- The key signature applies to ALL octaves of the affected notes
-- Naturals, sharps, or flats written in the music override the key signature temporarily
-- The same key signature can indicate either a major or its relative minor key
+- **Major vs. minor**: The same key signature can indicate either a major or its relative minor key
+- **Override**: Naturals, sharps, or flats written in the music temporarily override the key signature
+- **F major exception**: With one flat, there is no "second-to-last flat" -- you must memorize that one flat = F major
 
 # Source Reference
-Chapter 2: Major Scales and Key Signatures, Section 2.3 Major Key Signatures
+Chapter 2: Major Scales and Key Signatures, Section 2.3 Major Key Signatures (PDF p. 18-20)
+
+# Verification Notes
+Re-extracted from v2 card; preserved: identification rules (half step from last sharp, second-to-last flat), 15 key signatures count. Source provides both identification methods explicitly.

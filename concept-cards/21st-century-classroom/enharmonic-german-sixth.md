@@ -1,55 +1,90 @@
 ---
 concept: Enharmonic German Augmented Sixth
-category: theory
-source: Music Theory for the 21st-Century Classroom
+slug: enharmonic-german-sixth
+category: chords
+subcategory: chromatic-harmony
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
 chapter: "Chapter 21: Augmented Sixth Chords"
-unit: 6
-authors: Robert Hutchinson
-pdf_page: null
 chapter_number: 21
+pdf_page: 295
+section: "21.5.4"
+extraction_confidence: high
+aliases:
+  - "EnGer+6"
+  - "chord of the doubly augmented fourth"
+prerequisites:
+  - german-augmented-sixth
+extends:
+  - german-augmented-sixth
+related:
+  - cadential-six-four
+contrasts_with:
+  - german-augmented-sixth
+answers_questions:
+  - "What is the Enharmonic German augmented sixth?"
+  - "Why is b3 respelled as #2?"
+  - "In what keys does the EnGer+6 appear?"
 ---
-
 # Quick Definition
-The Enharmonic German augmented sixth (EnGer+6) respells flat-3 as sharp-2, creating a doubly augmented fourth, used when resolving to a MAJOR I6/4 chord.
+The Enharmonic German augmented sixth (EnGer+6) respells b3 as #2, creating a "doubly augmented fourth" between b6 and #2 -- used exclusively in major keys when resolving to a major cadential I6/4 chord, with #2 resolving upward to scale degree 3.
 
-# Formal Definition
-The Enharmonic German augmented sixth chord (labeled EnGer+6) respells the flat-3 of the standard German +6 as sharp-2 because it resolves only to major I6/4. This respelling changes the interval from flat-6 to sharp-2 from a diminished fifth to a doubly augmented fourth. The chord is sometimes called "the chord of the doubly-augmented fourth." The EnGer+6 does not occur in minor keys.
+# Core Definition
+The Enharmonic German augmented sixth chord (EnGer+6) respells the b3 of the standard German +6 as #2 because the EnGer+6 resolves only to major I6/4. This respelling changes the interval from b6 to b3 (a diminished fifth) to b6 to #2 (a doubly augmented fourth). Some textbooks call this "the chord of the doubly-augmented fourth." The spelling reflects voice leading: #2 resolves upward to 3 (the third of the major I6/4). The EnGer+6 does not occur in minor keys.
 
-# Construction/Recognition
-Scale degrees: flat-6, 1, sharp-2, sharp-4
-- In C major: Ab, C, D#, F# (compared to Ger+6: Ab, C, Eb, F#)
-- Contains a doubly augmented fourth: Ab to D#
-- The sharp-2 resolves upward to 3 (the third of major I6/4)
-- Only used in MAJOR keys resolving to major I6/4
+# Prerequisites
+- **German augmented sixth**: The standard form being respelled
 
-Voice leading:
-- flat-6 (Ab) resolves down to 5 (G)
-- sharp-2 (D#) resolves up to 3 (E)
-- sharp-4 (F#) resolves up to 5 (G)
+# Key Properties
+1. Scale degrees: b6, 1, #2, #4
+2. Respells b3 as #2 for correct voice leading to major I6/4
+3. Contains a doubly augmented fourth (b6 to #2)
+4. Only used in MAJOR keys
+5. Resolves to major I6/4 (then to V)
+6. Both #2 and #4 resolve upward
+7. Does not occur in minor keys
 
-# Musical Context
-- Used only in major keys
-- Resolves to major I6/4 (not minor)
-- The spelling reflects the upward resolution of sharp-2 to 3
-- Less common than standard Ger+6
+# Construction / Recognition
+- In C major: Ab-C-D#-F# (compared to Ger+6: Ab-C-Eb-F#)
+- The doubly augmented fourth (Ab to D#) is characteristic
+- Voice leading: b6 down to 5, #2 up to 3, #4 up to 5
+- Only resolves to major I6/4
+- Distinguished from standard Ger+6 by the #2 (instead of b3)
+
+# Context & Application
+The EnGer+6 is less common than the standard Ger+6 and appears only in major keys where the resolution is to a major I6/4 chord. The respelling from b3 to #2 is not merely theoretical -- it correctly represents the voice leading, with #2 ascending to scale degree 3. This demonstrates how classical spelling conventions prioritize showing the direction of resolution.
 
 # Examples
 - Robert Schumann, Dichterliebe, Op. 48, "Am leuchtenden Sommermorgen" (1840):
-  - Gb7 chord spelled as Gb-Bb-Db-E-natural (not Fb)
-  - The Db respelled as C# resolves up to D (third of major I6/4)
+  - Gb7 chord with E-natural (not Fb) and C# (not Db)
+  - The C# resolves up to D (third of major I6/4)
 
-# Related Concepts
-- German augmented sixth
-- Augmented sixth chords
-- Cadential I6/4
-- Doubly augmented fourth
-- Enharmonic spelling
+# Relationships
+## Builds Upon
+- German augmented sixth with enharmonic respelling
+
+## Enables
+- Correct voice leading notation in major-key contexts
+
+## Related
+- cadential-six-four (the chord of resolution)
+
+## Contrasts With
+- german-augmented-sixth (standard spelling with b3; used in minor or when resolving directly)
+
+# Common Errors
+- Using EnGer+6 in minor keys (it only occurs in major)
+- Resolving to minor I6/4 (it resolves only to major I6/4)
 
 # Common Confusions
-- EnGer+6 is used ONLY in major keys resolving to major I6/4
-- The spelling difference (sharp-2 vs flat-3) reflects resolution direction
-- Standard Ger+6 with flat-3 is used when resolving in minor or to V directly
-- The doubly augmented fourth (flat-6 to sharp-2) is characteristic
+- **Major keys only**: The EnGer+6 does not occur in minor keys
+- **Spelling reflects resolution**: #2 ascends to 3; b3 would descend, which is incorrect here
+- **Doubly augmented fourth**: The interval b6 to #2 (e.g., Ab to D#) is characteristic and unique
 
 # Source Reference
-Chapter 21: Augmented Sixth Chords, Unit 6, Sections 21.2, 21.5.4
+Chapter 21: Augmented Sixth Chords, Section 21.5.4 (PDF p. 295)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved Schumann Dichterliebe example from v2. Added detail about the doubly augmented fourth interval name from source.

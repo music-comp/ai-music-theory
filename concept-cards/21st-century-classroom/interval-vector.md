@@ -1,57 +1,90 @@
 ---
 concept: Interval Vector
+slug: interval-vector
 category: analysis
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 33: Set Theory"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: post-tonal-analysis
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Set Theory"
 chapter_number: 33
+pdf_page: 483
+section: "33.4 Interval Vector"
+extraction_confidence: high
+aliases:
+  - "interval class content"
+  - "IC vector"
+prerequisites:
+  - interval-class
+  - normal-form
+extends: []
+related:
+  - z-relations
+  - forte-numbers
+contrasts_with: []
+answers_questions:
+  - "What is an interval vector?"
+  - "How do you calculate an interval vector?"
 ---
 
 # Quick Definition
-An interval vector is a six-digit representation showing how many of each interval class (1-6) occurs in a pitch-class set.
+An interval vector is a six-digit representation showing how many of each interval class (1-6) occurs between all pairs of notes in a pitch-class set.
 
-# Formal Definition
-An interval vector (also called Interval Class Content) lists every possible interval occurring between pairs of notes in a pitch-class set. It is a six-digit array where each position represents an interval class (ic 1 through ic 6). Because interval classes are the shortest distance between two pitches, the largest interval class is 6 (the tritone); perfect fifths count as ic 5 (since P4 is shorter than P5).
+# Core Definition
+An interval vector (also known as Interval Class Content) lists every possible interval occurring in a pitch-class set. It is always six digits, representing ic 1 through ic 6. To calculate: measure from each note to all subsequent notes, tally each interval class. A zero means that interval class does not occur (Hutchinson, Ch. 33, pp. 483-484).
 
-# Construction/Calculation
-Steps to calculate interval vector:
-1. Arrange the set in normal form
-2. Measure from the first note to all other notes (as interval classes)
-3. Measure from the second note to all higher notes
-4. Continue from each successive note to following notes
-5. Tally occurrences of each interval class
-6. Result: six-digit vector [ic1, ic2, ic3, ic4, ic5, ic6]
+# Prerequisites
+- **Interval class** -- Vector tallies interval classes
+- **Normal form** -- Start from normal form arrangement
 
-Interval class = shortest distance:
-- ic1 = m2/M7
-- ic2 = M2/m7
-- ic3 = m3/M6
-- ic4 = M3/m6
-- ic5 = P4/P5
-- ic6 = tritone
+# Key Properties
+1. Always exactly six digits
+2. Positions: [ic1, ic2, ic3, ic4, ic5, ic6]
+3. Calculated by measuring all pairs of notes
+4. Zero = interval class not present
+5. Z-related sets share identical vectors despite different prime forms
 
-# Musical Context
-Interval vectors reveal the intervallic content of pitch-class sets, showing what intervals a composer has available within a given collection. Sets with similar interval vectors have similar sonic qualities. Z-related sets share identical interval vectors despite having different prime forms.
+# Construction / Recognition
+**Steps:**
+1. Arrange set in normal form
+2. Measure from first note to all others (as interval classes)
+3. Measure from second note to all subsequent notes
+4. Continue for each note
+5. Tally occurrences of each ic
+
+**Example:** Half-diminished 7th (G-Bb-Db-F)
+- G to Bb: ic 3; G to Db: ic 6; G to F: ic 2
+- Bb to Db: ic 3; Bb to F: ic 5
+- Db to F: ic 4
+- Vector: 012111
+
+# Context & Application
+Interval vectors reveal the intervallic content of sets. Sets with similar vectors have similar sonic qualities. The half-diminished 7th chord (012111) has zero half steps, one M2, two m3s, no M3s, one P4/P5, one tritone.
 
 # Examples
-- Half-diminished 7th chord (G-Bb-Db-F): interval vector 012111
-  - 0 half steps, 1 whole step, 2 minor 3rds, 1 major 3rd, 1 P4/P5, 1 tritone
-- Major triad (037): interval vector 001110
-- Chromatic trichord (012): interval vector 210000
+- Half-diminished 7th: 012111 (p. 484)
+- Major triad (037): 001110
+- Chromatic trichord (012): 210000
 
-# Related Concepts
-- Interval class
-- Prime form
-- Z-relations
-- Forte numbers
+# Relationships
+## Related
+- **Z-relations** -- Z-related sets share identical interval vectors
+- **Forte numbers** -- Tables include interval vectors alongside prime forms
+
+# Common Errors
+- **Error**: Reporting a vector with fewer or more than 6 digits
+  **Correction**: Interval vectors always have exactly 6 digits
 
 # Common Confusions
-- Interval vector always has exactly 6 digits
-- P5 counts as ic5, not ic7 (use shortest distance)
-- M6 counts as ic3 (its inversion, m3, is shorter)
-- A zero in the vector means that interval class doesn't occur in the set
+- **Confusion**: Thinking P5 goes in the ic 7 position
+  **Clarification**: P5 = ic 5 (use shortest distance); there is no ic 7
 
 # Source Reference
-Chapter 33: Set Theory, Unit 12, Section 33.4 Interval Vector
+Chapter 33, Section 33.4, PDF pages 483-484. Half-diminished worked example.
+
+# Verification Notes
+- Calculation procedure from source, pp. 483-484
+- Half-diminished example worked step by step in source
+- Re-extracted from v2 card; preserved: worked half-diminished example, six-digit rule
+- Confidence: HIGH -- source provides complete step-by-step procedure

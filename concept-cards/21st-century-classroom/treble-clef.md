@@ -1,46 +1,90 @@
 ---
 concept: Treble Clef
-category: theory
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 1: Basic Concepts"
-unit: 1
-authors: Robert Hutchinson
-pdf_page: null
+slug: treble-clef
+category: fundamentals
+tier: foundational
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Basic Concepts"
 chapter_number: 1
+pdf_page: 13
+section: "1.2 Notation"
+extraction_confidence: high
+aliases: ["G clef"]
+prerequisites:
+  - staff
+extends: []
+related:
+  - bass-clef
+  - alto-clef
+  - tenor-clef
+  - ledger-lines
+  - grand-staff
+contrasts_with:
+  - bass-clef
+answers_questions:
+  - "What is the treble clef?"
+  - "What notes are on the lines and spaces of the treble clef?"
 ---
 
 # Quick Definition
-The treble clef is a musical symbol that indicates higher-pitched notes, with the G above middle C located on the second line from the bottom.
+The treble clef (G clef) is the most well-known clef, placed on a five-line staff to designate the second line from the bottom as G4.
 
-# Formal Definition
-The treble clef, also called the G clef, is a clef symbol that, when placed on a five-line staff, designates the second line from the bottom as G4 (the G above middle C). It is the most commonly used clef, particularly for higher-pitched instruments and voices.
+# Core Definition
+The G clef, when placed on a five-line staff, becomes the treble clef, the most well-known clef. In treble clef, the notes on the lines are E-G-B-D-F from lowest to highest, often remembered through the traditional mnemonic "Every Good Boy Does Fine." The spaces are F-A-C-E from lowest to highest. Middle C (C4) is notated on the first ledger line below the staff.
 
-# Construction/Recognition
-- The curl of the treble clef wraps around the G line (second line from bottom)
-- Lines (bottom to top): E-G-B-D-F ("Every Good Boy Does Fine")
-- Spaces (bottom to top): F-A-C-E (spells "FACE")
-- Middle C (C4) is on the first ledger line below the staff
+# Prerequisites
+- **Staff**: The five-line framework on which notes are written
 
-# Musical Context
-The treble clef is used for instruments and voices in the higher register, including violin, flute, trumpet, soprano and alto voices, and the right hand of piano music.
+# Key Properties
+1. Based on the G clef symbol, which curls around the second line
+2. Second line from the bottom = G4
+3. Lines (bottom to top): E-G-B-D-F
+4. Spaces (bottom to top): F-A-C-E
+5. Middle C is on the first ledger line below the staff
+6. Most commonly used clef in music
+
+# Construction / Recognition
+- G clef symbol curls around the second line from the bottom
+- Lines: E-G-B-D-F ("Every Good Boy Does Fine")
+- Spaces: F-A-C-E (spells "FACE")
+- Middle C sits on the first ledger line below
+
+# Context & Application
+The treble clef is used for higher-pitched instruments and voices, including violin, flute, trumpet, soprano and alto voices, and the right hand of piano music. It is the first clef most musicians learn and the most frequently encountered in written music.
 
 # Examples
-- The note on the second line from the bottom is always G4
-- The note in the bottom space is always F4
-- The note on the first ledger line below the staff is middle C (C4)
+- Lines from bottom to top: E4-G4-B4-D5-F5
+- Spaces from bottom to top: F4-A4-C5-E5
+- Middle C (C4) is notated on the ledger line below the staff
 
-# Related Concepts
-- Bass clef
-- Alto clef
-- Tenor clef
+# Relationships
+## Builds Upon
 - Staff
-- Grand staff
-- Octave registers
+
+## Enables
+- Reading melody lines, right-hand piano notation, higher-register instruments
+
+## Related
+- Bass clef (lower register counterpart)
+- Grand staff (treble + bass clef joined by a bracket)
+- Ledger lines (for notes beyond the staff)
+- Alto clef, tenor clef (other common clef types)
+
+## Contrasts With
+- Bass clef (orients to F instead of G; used for lower pitches)
+
+# Common Errors
+- Confusing treble clef line/space names with bass clef line/space names
+- Forgetting that middle C requires a ledger line in treble clef
 
 # Common Confusions
-- Forgetting that the clef determines the pitch names of lines and spaces
-- Confusing treble clef line/space names with bass clef line/space names
-- Middle C location: it is below the treble staff, not on it
+- **G clef vs. treble clef**: The G clef becomes the treble clef when placed on a standard five-line staff
+- **Note names differ by clef**: The same line/space position represents different pitches in treble vs. bass clef
 
 # Source Reference
-Chapter 1: Basic Concepts, Section 1.2 Notation
+Chapter 1: Basic Concepts, Section 1.2 Notation (PDF p. 13)
+
+# Verification Notes
+Re-extracted from v2 card; preserved: mnemonic devices, line/space note names, instrument associations. Source explicitly names this as "the most well known clef."

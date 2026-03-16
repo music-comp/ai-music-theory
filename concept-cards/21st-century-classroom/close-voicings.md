@@ -1,47 +1,83 @@
 ---
 concept: Close Voicings
+slug: close-voicings
 category: technique
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 31: Introduction to Jazz Theory"
-unit: 11
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: jazz-voicing
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Introduction to Jazz Theory"
 chapter_number: 31
+pdf_page: 454
+section: "31.7.2 Jazz Chord Voicings"
+extraction_confidence: high
+aliases:
+  - "closed position voicings"
+prerequisites:
+  - guide-tones
+  - jazz-ninth-chords
+extends: []
+related:
+  - spread-voicings
+contrasts_with:
+  - spread-voicings
+answers_questions:
+  - "How are close voicings constructed?"
+  - "What note starts the right-hand voicing?"
 ---
 
 # Quick Definition
-Close voicings are five-note jazz chord voicings with the bass note in the left hand and four notes in close position in the right hand, typically with the 3rd or 7th as the lowest right-hand note.
+Close voicings are five-note jazz chord voicings with the bass note in the left hand and four notes in close position in the right hand, typically starting on the 3rd or 7th.
 
-# Formal Definition
-Close voicings (also called "closed position" voicings) feature five notes with the bass note played by the left hand and the remaining four chord tones voiced as close together as possible in the right hand. The right-hand voicing typically has the 7th or 3rd as its lowest note, creating a compact, dense sound characteristic of jazz piano.
+# Core Definition
+Close voicings have 5-note chords with the bass note in the left hand and the other four notes in close position in the right hand, usually with the 7th or 3rd of the chord as the lowest note in the right hand. The right-hand notes are voiced as close together as possible (Hutchinson, Ch. 31, p. 454).
 
-# Construction/Calculation
-1. Place the root (or bass note) in the left hand
-2. Voice four notes in close position in the right hand
-3. Start the right-hand voicing with either the 3rd or 7th as the lowest note
-4. Stack remaining chord tones (5th, 9th, 11th, 13th, alterations) closely above
-5. The 5th may be omitted to maintain five total parts
-6. All right-hand notes should be within an octave if possible
+# Prerequisites
+- **Guide tones** -- Close voicings are organized around the 3rd and 7th
+- **Jazz ninth chords** -- Upper extensions complete the voicing
 
-# Musical Context
-Close voicings provide a dense, rich sound ideal for piano comping in small group jazz settings. The compact right-hand position allows for quick chord changes and smooth voice leading. These voicings are particularly effective for accompanying soloists and for creating the intimate sound of jazz piano trio or quartet settings.
+# Key Properties
+1. Five-note chords
+2. Root (bass note) in left hand
+3. Four notes in close position in right hand
+4. Right hand starts on 3rd or 7th
+5. Right-hand notes as close together as possible
+6. 5th may be omitted to maintain five parts
+
+# Construction / Recognition
+1. Place root in left hand
+2. Start right hand with either 3rd or 7th
+3. Stack remaining chord tones closely above
+4. All right-hand notes within approximately an octave
+
+# Context & Application
+Close voicings provide a dense, rich sound ideal for piano comping in small group jazz. The compact right-hand position allows quick chord changes and smooth voice leading. Voice leading between close voicings is very smooth, with all voices moving by step or by 3rd.
 
 # Examples
-- Dm9 close: D (bass) | F-A-C-E (right hand: 3rd-5th-7th-9th)
-- G7(#9) close: G (bass) | B-D-F-A# (right hand: 3rd-5th-7th-#9)
-- CΔ9 close: C (bass) | E-G-B-D (right hand: 3rd-5th-7th-9th)
+- Dm9 close: D (LH) | F-A-C-E (RH, p. 454)
+- G7(#9) close: G (LH) | B-D-F-A# (RH)
+- Blues progression in close voicings (p. 456): voice leading is smooth with all parts moving by step or 3rd
 
-# Related Concepts
-- Spread voicings
-- Guide tones
-- Jazz chord voicings
-- Block chords
+# Relationships
+## Related
+- **Spread voicings** -- The other main voicing category
+## Contrasts With
+- **Spread voicings** -- Spread voicings place R-3-7 or R-7-3 as lowest voices
+
+# Common Errors
+- **Error**: Starting the right hand on a note other than the 3rd or 7th
+  **Correction**: The 3rd or 7th should be the lowest right-hand note
 
 # Common Confusions
-- "Close" refers to the spacing of the right-hand notes, not the left-right hand distance
-- The 3rd or 7th should be the lowest note in the right hand, not necessarily the root
-- Different from classical "close position" which puts all notes within an octave including bass
-- Either 3rd or 7th can be the bottom of the right-hand voicing
+- **Confusion**: Thinking "close" means hands are close together
+  **Clarification**: "Close" refers to the spacing of the right-hand notes, not the distance between hands
 
 # Source Reference
-Chapter 31: Introduction to Jazz Theory, Unit 11, Section 31.7.2 Jazz Chord Voicings
+Chapter 31: Introduction to Jazz Theory, Section 31.7.2, PDF page 454. Blues example on p. 456.
+
+# Verification Notes
+- Definition from source, Section 31.7.2, p. 454
+- Blues example demonstrates smooth voice leading
+- Re-extracted from v2 card; preserved: 3rd or 7th as lowest RH note rule
+- Confidence: HIGH -- source provides explicit construction rules

@@ -1,50 +1,84 @@
 ---
 concept: Twelve-Tone Technique
+slug: twelve-tone-technique
 category: technique
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 34: Serialism"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: 20th-century-techniques
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Serialism"
 chapter_number: 34
+pdf_page: 492
+section: "34.1 Twelve-Tone Technique"
+extraction_confidence: high
+aliases:
+  - "dodecaphony"
+  - "twelve-tone method"
+prerequisites:
+  - serialism
+extends:
+  - serialism
+related:
+  - tone-row
+  - row-forms
+  - twelve-tone-matrix
+contrasts_with: []
+answers_questions:
+  - "What are the basic premises of twelve-tone technique?"
+  - "How many row forms does a twelve-tone row generate?"
 ---
 
 # Quick Definition
-Twelve-tone technique is a compositional method using all twelve pitch classes in a fixed order (a row), ensuring no pitch is emphasized over others through premature repetition.
+Twelve-tone technique composes with all twelve pitch classes in a fixed order (a row), ensuring no pitch is emphasized through premature repetition; 48 row forms are possible.
 
-# Formal Definition
-Twelve-tone technique (also called dodecaphony) is a compositional approach developed by Arnold Schoenberg around 1921. A composition is based on a series (row) containing all twelve pitch classes in a specific order. This row is transformed through prime, retrograde, inversion, and retrograde inversion forms, each transposable to twelve levels. Every pitch in the composition derives from the row, providing unity while avoiding traditional tonal hierarchy.
+# Core Definition
+In a twelve-tone composition, every note can be accounted for as a member of the original series or one of its permutations, providing unity. The basic premises: (1) all twelve chromatic notes must occur, (2) no note repeats until the other 11 have occurred (exceptions: direct repetition, trills, tremolos), (3) the series can be inverted, retrograded, and retrograde-inverted, (4) the order of notes remains fixed. The row is a repository of intervals (Hutchinson, Ch. 34, p. 492).
 
-# Construction/Calculation
-Rules of twelve-tone technique:
-1. Create a twelve-tone row using all 12 pitch classes once
-2. Do not repeat any pitch until all 12 have occurred
-3. Permitted exceptions: immediate repetition, trills, tremolos
-4. Generate 48 row forms: 4 forms x 12 transpositions
-5. Row order is fixed - notes cannot be reordered
-6. Notes can appear in any octave (octave equivalence applies)
+# Prerequisites
+- **Serialism** -- Twelve-tone is the primary form of serialism
 
-# Musical Context
-Schoenberg developed twelve-tone technique to provide systematic organization for atonal music. The technique ensures no pitch class dominates through repetition before others appear. Major twelve-tone works include Schoenberg's Suite for Piano, Op. 25 and Piano Concerto, Webern's Symphony, and Berg's Violin Concerto.
+# Key Properties
+1. All 12 chromatic pitch classes in fixed order
+2. No repetition until all 11 others have occurred
+3. Exceptions: direct repetition, trills, tremolos
+4. Four row forms: P, R, I, RI
+5. Each transposable to 12 levels = 48 total row forms
+6. Order is fixed (no reordering)
+
+# Construction / Recognition
+1. Create a row using all 12 pitch classes once
+2. Generate 4 forms (P, R, I, RI)
+3. Transpose each to 12 levels
+4. Result: 48 row forms for compositional use
+
+# Context & Application
+Schoenberg developed the technique around 1921. The row provides unity by generating all musical material.
 
 # Examples
-- Schoenberg, Suite for Piano, Op. 25: First mature twelve-tone work
-- The row from Op. 25: E-F-G-Db-Gb-Eb-Ab-D-B-C-A-Bb
-- Webern's rows often feature intervallic symmetry
-- Berg incorporated tonal references within twelve-tone structure
+- Schoenberg, Suite for Piano, Op. 25 (p. 492, Figure 34.1.1): Row used throughout
+- The row from the source: demonstrates P, R, I, RI forms (p. 493)
 
-# Related Concepts
-- Serialism
-- Tone row
-- Row forms
-- Twelve-tone matrix
-- Atonality
+# Relationships
+## Builds Upon
+- **Serialism** -- Twelve-tone is the primary serial method
+## Related
+- **Tone row** -- The ordered 12-pitch-class series
+- **Row forms** -- P, R, I, RI transformations
+- **Twelve-tone matrix** -- Displays all 48 row forms
+
+# Common Errors
+- **Error**: Repeating a pitch before all 12 have occurred
+  **Correction**: Only direct repetitions, trills, and tremolos are exempt
 
 # Common Confusions
-- "Twelve-tone" refers to using all 12 pitch classes, not to specific intervals
-- The row is a structural device, not necessarily a melody
-- Twelve-tone music can still have expressive character
-- The technique doesn't preclude octave doublings or sustained notes
+- **Confusion**: Thinking the row is a melody
+  **Clarification**: The row is structural source material; it generates melodies, harmonies, and counterpoint
 
 # Source Reference
-Chapter 34: Serialism, Unit 12, Section 34.1 Twelve-Tone Technique
+Chapter 34, Section 34.1, PDF page 492. Four premises enumerated; Schoenberg Op. 25 example.
+
+# Verification Notes
+- Four premises directly from source, p. 492
+- Re-extracted from v2 card; preserved: exceptions list, 48 row forms calculation, Op. 25 reference
+- Confidence: HIGH -- source provides explicit premises

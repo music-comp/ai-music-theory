@@ -1,50 +1,110 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Voice Leading Borrowed Chords
-category: technique
-source: Music Theory for the 21st-Century Classroom
+slug: voice-leading-borrowed-chords
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: chromatic
+tier: intermediate-advanced
+
+# === PROVENANCE ===
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
 chapter: "Chapter 29: Voice Leading Chromatic Harmonies"
-unit: 9
-authors: Robert Hutchinson
-pdf_page: null
 chapter_number: 29
+pdf_page: 418
+section: "29.2 Voice Leading Borrowed Chords"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "mode mixture voice leading"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - voice-leading-definition
+  - mode-mixture
+extends: []
+related:
+  - deceptive-progression-voice-leading
+  - voice-leading-secondary-chords
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do you voice lead borrowed chords?"
+  - "How should flat-6 resolve in borrowed chords?"
 ---
 
 # Quick Definition
-Borrowed chords (mode mixture) are voice led like their diatonic equivalents, with one key addition: flat-6 should resolve down by step whenever it is a chord member.
 
-# Formal Definition
-Borrowed chords, which make use of mode mixture (borrowing notes from the parallel minor in a major key), follow the same voice leading procedures as their diatonic counterparts. For example, ii-half-dim-7 is handled like ii7. The critical additional rule is that flat-6 (the lowered sixth scale degree) functions as a tendency tone and should resolve down by step whenever possible.
+Borrowed chords (mode mixture) are voice led like their diatonic equivalents, with one critical addition: b6 functions as a tendency tone and should resolve down by step whenever possible.
 
-# Rules/Procedures
-1. Voice lead borrowed chords using the same rules as their diatonic equivalents
-2. **Flat-6 resolution**: When flat-6 is part of a borrowed chord, resolve it DOWN by step
-3. **V to flat-VI (borrowed deceptive cadence)**: Handle like V-VI in minor mode
-   - Resolve the 3rd of V (leading tone) up by step
-   - Move other voices contrary to bass
-   - Results in doubled 3rd in flat-VI
-4. **Other borrowed chords** (flat-III, flat-VII, i, v): Voice lead smoothly, avoiding parallels
-   - No specific rules beyond standard voice leading practice
+# Core Definition
 
-# Musical Context
-Borrowed chords add color to major-key progressions by introducing minor-mode inflections. The downward tendency of flat-6 reflects its chromatic pull toward the dominant (scale degree 5).
+Borrowed chords are handled similarly to their diatonic versions in terms of voice leading (e.g., iiø7 is handled similarly to ii7). In any borrowed chord containing b6, resolve this tendency tone down by step whenever possible. The V to bVI progression should be handled the same as the deceptive cadence in minor (see Principle 26.7.4). For other borrowed chords (bIII, bVII, i, v), simply voice lead as smoothly as possible (Hutchinson, Ch. 29, pp. 418-419, Principle 29.2.1).
+
+# Prerequisites
+
+- **Voice leading** -- Same principles extended to borrowed chords
+- **Mode mixture** -- Must understand borrowed chords
+
+# Key Properties
+
+1. Voice lead like diatonic equivalents
+2. b6 is a tendency tone: resolve DOWN by step
+3. V to bVI: handle like V-VI in minor (deceptive cadence rules)
+4. bIII, bVII, i, v: no specific rules beyond smooth voice leading
+5. The borrowed deceptive cadence results in doubled 3rd (same as minor)
+
+# Construction / Recognition
+
+## Procedure:
+1. Identify the borrowed chord and its diatonic equivalent
+2. Apply the same voice leading rules as the diatonic version
+3. If the chord contains b6: ensure b6 resolves down by step
+4. If V to bVI: apply the minor-mode deceptive cadence procedure
+5. Other borrowed chords: voice lead smoothly, avoid parallels
+
+# Context & Application
+
+- **Typical contexts**: Major-key progressions with minor-mode inflections
 
 # Examples
-- ii-half-dim-7 to V7: Resolve flat-6 (in the ii-half-dim) down to scale degree 5
-- iv to I: The flat-6 in the iv chord resolves down
-- V to flat-VI in C major: G-B-D to Ab-C-Eb with B rising to C and other voices descending
 
-# Related Concepts
-- Mode Mixture
-- Borrowed Chords
-- Deceptive Cadence
-- Tendency Tones
-- Flat-6 Scale Degree
+**Example 1** (p. 419): Figure 29.2.2 -- resolving b6 down when voice leading borrowed chords
+
+**Example 2**: V to bVI in C major (G-B-D to Ab-C-Eb) with B rising to C and other voices descending
+
+# Relationships
+
+## Related
+- **Deceptive progression voice leading** -- V-bVI uses the same procedure as V-VI in minor
+- **Voice leading secondary chords** -- Both are chromatic voice leading categories
+
+# Common Errors
+
+- **Error**: Forgetting that b6 is a tendency tone
+  **Correction**: b6 should always resolve down by step when part of a borrowed chord
+
+- **Error**: Applying special rules to ALL borrowed chords
+  **Correction**: Only chords containing b6 need the extra tendency-tone consideration; bIII, bVII, i, v just need smooth voice leading
 
 # Common Confusions
-- Forgetting that flat-6 is a tendency tone needing downward resolution
-- Not recognizing the borrowed deceptive cadence (V to flat-VI) and applying wrong rules
-- Treating borrowed chords as completely different entities rather than diatonic chord equivalents with accidentals
-- Trying to apply special rules to all borrowed chords when only flat-6 chords need the extra consideration
+
+- **Confusion**: Borrowed chords require completely different voice leading
+  **Clarification**: They follow the same rules as their diatonic equivalents, plus b6 tendency
 
 # Source Reference
-Chapter 29: Voice Leading Chromatic Harmonies, Unit 9, Section 29.2, Principle 29.2.1
+
+Chapter 29: Voice Leading Chromatic Harmonies, Section 29.2, Principle 29.2.1, pages 418-419. See Figure 29.2.2.
+
+# Verification Notes
+
+- Definition: Direct from Principle 29.2.1, pp. 418-419
+- Confidence: HIGH -- explicit principle
+- Re-extraction notes: Re-extracted from v2 card; preserved: b6 tendency tone rule, V-bVI deceptive cadence connection, bIII/bVII/i/v note

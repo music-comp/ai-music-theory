@@ -1,47 +1,113 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Seventh Chord Resolution
-category: technique
-source: Music Theory for the 21st-Century Classroom
+slug: seventh-chord-resolution
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: technique
+tier: intermediate-advanced
+
+# === PROVENANCE ===
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
 chapter: "Chapter 27: Voice Leading Seventh Chords"
-unit: 9
-authors: Robert Hutchinson
-pdf_page: null
 chapter_number: 27
+pdf_page: 402
+section: "27.1 Voice Leading Seventh Chords"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "resolving seventh chords"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - voice-leading-definition
+  - seventh-chord
+extends: []
+related:
+  - v7-to-i-voice-leading
+  - successive-seventh-chords
+  - viio7-resolution
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the fundamental rule for voice leading seventh chords?"
+  - "How does the 7th of a chord resolve?"
 ---
 
 # Quick Definition
+
 The fundamental rule for voice leading seventh chords is to resolve the 7th of the chord down by step, while other voices move smoothly to the nearest chord tones with appropriate doublings.
 
-# Formal Definition
-When voice leading any seventh chord, the chordal 7th (the note a 7th above the root) must resolve downward by step to the nearest chord tone in the following chord. All other voices should move as smoothly as possible to create a properly voiced subsequent chord. This rule applies to all seventh chord types (dominant, major, minor, half-diminished, fully diminished) and all inversions.
+# Core Definition
 
-# Rules/Procedures
-1. Identify the 7th of the chord (the note a 7th above the root)
-2. Resolve the 7th DOWN by step to the nearest chord tone
-3. Move other voices smoothly to create proper voicing in the next chord
-4. Maintain appropriate doubling in the resolution chord
-5. Avoid creating objectionable parallels
-6. Exception: In I-V4/3-I6 progression, the 7th may resolve up by step
+There is one general rule for voice leading any seventh chord: resolve the 7th of the chord down by step. All other voices should move smoothly to the nearest chord tone in a voicing containing the appropriate doubling. The one exception is the I-V4/3-I6 progression, where the 7th resolves up by step (Hutchinson, Ch. 27, p. 402, Principle 27.1.1).
 
-# Musical Context
-The 7th of a seventh chord is a dissonance that creates tension. Resolving it downward releases this tension in a satisfying way. This principle derives from the treatment of suspensions and other dissonances in Renaissance and Baroque counterpoint.
+# Prerequisites
+
+- **Voice leading** -- Seventh chord resolution extends voice leading rules
+- **Seventh chord** -- Must understand seventh chord structure
+
+# Key Properties
+
+1. Resolve the 7th DOWN by step
+2. Move other voices smoothly
+3. Maintain appropriate doubling in the resolution chord
+4. Exception: I-V4/3-I6 allows upward resolution of the 7th
+5. The upward-resolving exception creates acceptable unequal fifths
+
+# Construction / Recognition
+
+## Procedure:
+1. Identify the 7th of the chord (note a 7th above the root)
+2. Move it DOWN by step
+3. Move other voices smoothly to nearest chord tones
+4. Check for parallels and spacing
+
+# Context & Application
+
+- **Typical contexts**: All seventh chord voice leading
+- **Historical/stylistic notes**: The 7th is a dissonance that creates tension; downward resolution releases it
 
 # Examples
-- V7 to I: The 7th (scale degree 4) resolves down to scale degree 3
-- ii7 to V: The 7th (scale degree 1) resolves down to the leading tone
-- In Beethoven's Pathetique Sonata, Op. 13, II: Clear example of 7th resolving down
 
-# Related Concepts
-- V7 to I Voice Leading
-- Successive Seventh Chords
-- Complete and Incomplete Voicings
-- Dissonance Resolution
+**Example 1** (p. 402): Beethoven, Pathetique Sonata, Op. 13, II -- clear 7th resolving down
+
+**Example 2** (p. 403): Schubert, *Winterreise*, D. 911, "Fruhlingstraum" (1823) -- 7th resolution
+
+**Example 3** (p. 404): Mozart, Piano Sonata K. 331, I -- I-V4/3-I6 with 7th resolving UP (exception)
+
+# Relationships
+
+## Enables
+- **V7 to I voice leading** -- Specific application of seventh resolution
+- **Successive seventh chords** -- Chains of 7th chords applying this rule
+
+## Related
+- **viio7 resolution** -- Special case requiring additional care
+
+# Common Errors
+
+- **Error**: Forgetting to resolve the 7th down in inverted seventh chords
+  **Correction**: The 7th must resolve down regardless of inversion
 
 # Common Confusions
-- Forgetting to resolve the 7th down in inversions (it still must resolve down)
-- Confusing the chordal 7th with the interval of a 7th in spacing
-- Trying to resolve the 7th to an inappropriate note in the next chord
-- Not recognizing the I-V4/3-I6 exception where the 7th may go up
+
+- **Confusion**: Thinking the I-V4/3-I6 exception is wrong
+  **Clarification**: The upward resolution is acceptable because the resulting unequal fifths are considered less objectionable
 
 # Source Reference
-Chapter 27: Voice Leading Seventh Chords, Unit 9, Section 27.1, Principle 27.1.1
+
+Chapter 27: Voice Leading Seventh Chords, Section 27.1, Principle 27.1.1, pages 402-404. See Figures 27.1.2-27.1.5.
+
+# Verification Notes
+
+- Definition: Direct from Principle 27.1.1, p. 402
+- Confidence: HIGH -- explicit principle with examples
+- Re-extraction notes: Re-extracted from v2 card; preserved: exception for I-V4/3-I6, Beethoven and Schubert examples

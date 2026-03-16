@@ -1,54 +1,71 @@
 ---
 concept: Interval Class
-category: theory
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 33: Set Theory"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+slug: interval-class
+category: analysis
+subcategory: post-tonal-analysis
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Set Theory"
 chapter_number: 33
+pdf_page: 483
+section: "33.4 Interval Vector"
+extraction_confidence: high
+aliases:
+  - "ic"
+prerequisites:
+  - integer-notation-pitches
+extends: []
+related:
+  - interval-vector
+contrasts_with: []
+answers_questions:
+  - "What is an interval class?"
+  - "Why does the largest interval class equal 6?"
 ---
 
 # Quick Definition
-An interval class is the shortest distance between two pitch classes, measured in semitones, ranging from 1 to 6.
+An interval class is the shortest distance between two pitch classes in semitones, ranging from 1 to 6.
 
-# Formal Definition
-An interval class (abbreviated "ic") represents the shortest distance between two pitch classes, measured in semitones. Since an interval and its inversion (complement to 12) span the same pitch-class distance, interval class uses the smaller of the two. The largest interval class is 6 (the tritone), as any larger interval has a smaller inversion.
+# Core Definition
+An interval class (ic) is the shortest distance between two pitch classes, measured in semitones. Since an interval and its inversion sum to 12, interval class uses the smaller value. The largest interval class is 6 (the tritone), because any interval larger than 6 semitones has a smaller inversion. For example, a perfect 5th (7 semitones) has ic 5 because a P4 (5 semitones) is shorter (Hutchinson, Ch. 33, pp. 483-484).
 
-# Construction/Calculation
-Interval class mappings (interval -> ic):
-- m2/M7 -> ic1 (1 or 11 semitones -> use 1)
-- M2/m7 -> ic2 (2 or 10 semitones -> use 2)
-- m3/M6 -> ic3 (3 or 9 semitones -> use 3)
-- M3/m6 -> ic4 (4 or 8 semitones -> use 4)
-- P4/P5 -> ic5 (5 or 7 semitones -> use 5)
-- Tritone -> ic6 (6 semitones, its own inversion)
+# Prerequisites
+- **Integer notation** -- Intervals measured in semitones
 
-To find interval class:
+# Key Properties
+1. ic 1 = m2/M7; ic 2 = M2/m7; ic 3 = m3/M6; ic 4 = M3/m6; ic 5 = P4/P5; ic 6 = tritone
+2. Maximum ic = 6 (tritone)
+3. To find ic: if semitones > 6, subtract from 12
+4. Complementary intervals share the same ic
+
+# Construction / Recognition
 1. Count semitones between two pitch classes
 2. If result > 6, subtract from 12
 3. Result is the interval class
 
-# Musical Context
-Interval class simplifies intervallic analysis by treating complementary intervals as equivalent. In atonal music, a major 6th and minor 3rd have similar sonic functions despite their different sizes, so they share interval class 3. This equivalence is fundamental to interval vector calculation and set theory analysis.
-
 # Examples
-- C to E: 4 semitones = ic4
-- C to A: 9 semitones -> 12-9 = 3 = ic3 (not ic9)
-- C to G: 7 semitones -> 12-7 = 5 = ic5 (use P4, not P5)
-- C to F#: 6 semitones = ic6 (tritone)
+- C to E: 4 semitones = ic 4
+- C to A: 9 semitones -> 12-9 = 3 = ic 3
+- C to G: 7 semitones -> 12-7 = 5 = ic 5
 
-# Related Concepts
-- Interval vector
-- Semitones
-- Pitch class
-- Complementary intervals
+# Relationships
+## Related
+- **Interval vector** -- Built from interval class tallies
+
+# Common Errors
+- **Error**: Reporting P5 as ic 7
+  **Correction**: P5 (7 semitones) = ic 5 because P4 (5 semitones) is shorter
 
 # Common Confusions
-- Interval class is NOT the same as interval - it uses the smaller inversion
-- Maximum interval class is 6 (the tritone)
-- P5 (7 semitones) is ic5 because P4 (5 semitones) is smaller
-- M6 (9 semitones) is ic3 because m3 (3 semitones) is smaller
+- **Confusion**: Thinking interval class and interval are the same
+  **Clarification**: Interval class always uses the smaller of the two complementary intervals
 
 # Source Reference
-Chapter 33: Set Theory, Unit 12, Section 33.4 Interval Vector
+Chapter 33, Section 33.4, PDF pages 483-484.
+
+# Verification Notes
+- Definition from source, pp. 483-484
+- Re-extracted from v2 card; preserved: ic mappings, P5/P4 example
+- Confidence: HIGH -- source provides explicit definition with examples

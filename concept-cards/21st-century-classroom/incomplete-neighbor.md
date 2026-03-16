@@ -1,44 +1,87 @@
 ---
-concept: Incomplete Neighbor
-category: theory
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 10: Non-Chord Tones"
-unit: 2
-authors: Robert Hutchinson
-pdf_page: null
+concept: "Incomplete Neighbor"
+slug: incomplete-neighbor
+category: analysis
+subcategory: melodic-embellishment
+tier: intermediate
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Non-Chord Tones"
 chapter_number: 10
+pdf_page: 128
+section: "10.11 Incomplete Neighbor"
+extraction_confidence: high
+aliases:
+  - "IN"
+  - "I.N."
+prerequisites:
+  - neighbor-tone
+extends:
+  - neighbor-tone
+related:
+  - neighbor-tone
+  - appoggiatura
+  - double-neighbor
+contrasts_with: []
+answers_questions:
+  - "What is an incomplete neighbor?"
+  - "When should this label be used?"
 ---
-
 # Quick Definition
-An incomplete neighbor is a neighbor-like figure that lacks either the approach or the resolution to the same pitch, serving as a "utility" label for ambiguous non-chord tones.
+An incomplete neighbor is a utility label for neighbor-like figures that lack either the approach or the return to the same pitch, used when a non-chord tone defies standard classification.
 
-# Formal Definition
-Because composers are notorious for "breaking the rules," some non-chord tones either defy explanation or have multiple valid explanations. The incomplete neighbor is a utility non-chord tone that describes neighbor-like figures that are missing either the initial chord tone or the return to it.
+# Core Definition
+Because composers are notorious for "breaking the rules," some non-chord tones either defy explanation or have multiple valid explanations. The incomplete neighbor is a utility non-chord tone that describes neighbor-like figures missing either the initial chord tone or the return to it. Incomplete double neighbor figures also exist, especially in late Romantic music and jazz.
 
-# Analysis/Application
-Use incomplete neighbor when:
-1. A non-chord tone behaves like a neighbor but doesn't return to the original note
-2. A non-chord tone steps away from a chord tone without clear preparation
-3. The figure doesn't fit other non-chord tone categories well
+# Prerequisites
+- **Neighbor tone**: Understanding of complete neighbor figures
+
+# Key Properties
+1. Missing either the approach from or return to the same pitch
+2. A "utility" label for ambiguous non-chord tones
+3. Can also apply to incomplete double neighbor figures
+4. More common in late Romantic and jazz styles
+5. Represents the gray area in NCT classification
+
+# Construction / Recognition
+1. Look for a neighbor-like figure that does not complete the full pattern
+2. The NCT does not fit neatly into other categories
+3. Multiple valid interpretations may exist
 4. Label as IN or I.N.
 
-# Musical Context
-Incomplete neighbors appear more frequently in late Romantic music and jazz, where harmonic language is more flexible and chromatic. They represent the gray area in non-chord tone classification.
+# Context & Application
+Incomplete neighbors appear more frequently in late Romantic music and jazz, where harmonic language is more flexible. They represent the analytical gray area -- keep an open mind when analyzing music, as multiple interpretations may be valid.
 
 # Examples
-- Puccini, Gianni Schicchi, "O mio babbino caro" (1918) - incomplete neighbor example
+- Puccini, Gianni Schicchi, "O mio babbino caro" (1918) -- incomplete neighbor
 - Late Romantic and jazz music frequently feature incomplete double neighbor figures
 
-# Related Concepts
-- Neighbor tone
-- Double neighbor
-- Appoggiatura
-- Non-chord tone analysis
+# Relationships
+## Builds Upon
+- Neighbor tone (incomplete version of the same concept)
+
+## Enables
+- Flexible analysis of complex melodic embellishment
+
+## Related
+- neighbor-tone
+- appoggiatura (some incomplete neighbors could be analyzed as appoggiaturas)
+- double-neighbor
+
+## Contrasts With
+- Complete neighbor tone (which returns to the original pitch)
+
+# Common Errors
+- Over-using the incomplete neighbor label when a more specific label applies
 
 # Common Confusions
-- The incomplete neighbor is a catch-all for ambiguous cases
-- Some analysts may prefer to label these as appoggiaturas or escape tones
-- Keep an open mind when analyzing music - multiple interpretations may be valid
+- **Catch-all label**: Use only when other NCT types do not fit well
+- **Multiple valid analyses**: Some analysts may prefer appoggiatura or escape tone labels
+- **Keep an open mind**: Real music does not always fit neatly into categories
 
 # Source Reference
-Chapter 10: Non-Chord Tones, Unit 2, Section 10.11
+Chapter 10: Non-Chord Tones, Section 10.11 (PDF p. 128)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved "utility" framing and Puccini example from v2 card.

@@ -1,50 +1,113 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Deceptive Progression Voice Leading
-category: technique
-source: Music Theory for the 21st-Century Classroom
+slug: deceptive-progression-voice-leading
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: technique
+tier: intermediate-advanced
+
+# === PROVENANCE ===
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
 chapter: "Chapter 26: Voice Leading Triads"
-unit: 9
-authors: Robert Hutchinson
-pdf_page: null
 chapter_number: 26
+pdf_page: 393
+section: "26.7 Voice Leading Root Position Triads in Four Parts"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "V-vi voice leading"
+  - "V-VI voice leading"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - voice-leading-by-bass-interval
+  - leading-tone
+extends: []
+related:
+  - deceptive-cadence
+  - voice-leading-borrowed-chords
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do you voice lead the deceptive progression?"
+  - "Why does the deceptive progression result in a doubled third?"
 ---
 
 # Quick Definition
-The deceptive progression (V-vi or V-VI) requires special voice leading: the 3rd of V (the leading tone) must resolve up by step, while the other voices move contrary to the bass, resulting in a doubled 3rd in the vi/VI chord.
 
-# Formal Definition
-When the bass moves by a 2nd in the deceptive progression, standard contrary motion voice leading does not apply. Instead: (1) the 3rd of the V chord (scale degree 7, the leading tone) resolves up by step to scale degree 8; (2) the other two upper voices (5th and doubled root) move contrary to the bass. This results in two voices moving up and two moving down, producing a doubled 3rd in the vi/VI chord.
+The deceptive progression (V-vi or V-VI) requires the leading tone (3rd of V) to resolve up by step, while other voices move contrary to bass, resulting in a doubled 3rd in the vi/VI chord.
 
-# Rules/Procedures
-1. In minor mode (V-VI): Always resolve the leading tone up; other voices move contrary to bass
-2. In major mode (V-vi) with leading tone in soprano: Follow the same procedure as minor
-3. In major mode (V-vi) with leading tone in inner voice: May use standard contrary motion rules
-4. The resulting vi/VI chord will have a doubled 3rd (acceptable in this context)
-5. This exception exists because the leading tone is a strong tendency tone that must resolve upward
+# Core Definition
 
-# Musical Context
-The deceptive progression is called "deceptive" because it substitutes vi for the expected I after V. The voice leading must accommodate the leading tone's strong pull toward tonic while the bass moves unexpectedly to scale degree 6.
+When the bass moves by a 2nd in the deceptive progression in minor (V-VI), always move the 3rd of the V chord (the leading tone) up by step while the other notes (the 5th and doubled root) move in contrary motion to the bass. This results in two voices up and two voices down, producing a doubled 3rd in the VI chord. In major (V-vi), use this procedure if ^7 is in the soprano; if ^7 is in an inner voice, standard contrary motion may be used instead (Hutchinson, Ch. 26, pp. 393-394, Principle 26.7.4).
+
+# Prerequisites
+
+- **Voice leading by bass interval** -- This is an exception to the standard bass-by-2nd rule
+- **Leading tone** -- ^7 is the tendency tone driving this special procedure
+
+# Key Properties
+
+1. In minor (V-VI): always resolve leading tone up; other voices contrary to bass
+2. In major with ^7 in soprano: same procedure as minor
+3. In major with ^7 in inner voice: standard contrary motion may be used
+4. Result: doubled 3rd in vi/VI chord (acceptable in this context)
+5. Two voices up, two voices down
+
+# Construction / Recognition
+
+## Procedure:
+1. Identify the deceptive progression (V to vi or V to VI)
+2. Resolve the leading tone (3rd of V) UP by step to ^8
+3. Move the 5th and doubled root of V contrary to the bass
+4. Result: vi/VI chord with doubled 3rd
+
+# Context & Application
+
+- **Typical contexts**: Deceptive cadences in chorale harmonizations
+- **Historical/stylistic notes**: The leading tone's strong pull toward tonic overrides the standard contrary-motion rule
 
 # Examples
-- V-VI in C minor: G major (G-B-D) to Ab major (Ab-C-Eb)
-  - B (leading tone) must go to C
-  - Bass G goes to Ab (up by step)
-  - D and the doubled G both descend
-  - Result: Doubled C (3rd) in the Ab major chord
-- V-vi in C major with B in soprano: Same procedure applies
 
-# Related Concepts
-- Tendency Tones
-- Leading Tone Resolution
-- Voice Leading by Bass Interval
-- Deceptive Cadence
-- Mode Mixture
+**Example 1** (p. 393): Figure 26.7.5 -- V-VI in C minor with doubled 3rd result
+
+**Example 2** (p. 394): Figure 26.7.6 -- ^7 in soprano in major mode deceptive progression
+
+**Example 3** (p. 394): Figure 26.7.7 -- ^7 in inner voice in major mode (standard contrary motion possible)
+
+# Relationships
+
+## Related
+- **Deceptive cadence** -- The harmonic context for this voice leading
+- **Voice leading borrowed chords** -- V to bVI uses the same procedure as V-VI in minor
+
+# Common Errors
+
+- **Error**: Applying standard contrary motion without accommodating the leading tone
+  **Correction**: The leading tone MUST resolve up in this progression
+
+- **Error**: Treating the doubled 3rd as an error
+  **Correction**: The doubled 3rd is correct and expected in this specific context
 
 # Common Confusions
-- Applying standard "contrary motion to bass" rule without accommodating the leading tone
-- Not recognizing that the doubled 3rd is correct and expected in this case
-- In major mode, forgetting that the procedure depends on whether the leading tone is in the soprano or an inner voice
-- Confusing the deceptive progression with the borrowed bVI chord
+
+- **Confusion**: The procedure is the same in major and minor
+  **Clarification**: In major, it depends on whether ^7 is in the soprano or an inner voice
 
 # Source Reference
-Chapter 26: Voice Leading Triads, Unit 9, Section 26.7, Principle 26.7.4
+
+Chapter 26: Voice Leading Triads, Section 26.7, Principle 26.7.4, pages 393-394. See Figures 26.7.5-26.7.7.
+
+# Verification Notes
+
+- Definition: Direct from Principle 26.7.4, p. 393
+- Confidence: HIGH -- explicit principle with multiple figures
+- Re-extraction notes: Re-extracted from v2 card; preserved: major/minor distinction, soprano vs inner voice detail, doubled 3rd result

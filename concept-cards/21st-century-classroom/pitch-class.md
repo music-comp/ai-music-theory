@@ -1,47 +1,78 @@
 ---
 concept: Pitch Class
-category: theory
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 33: Set Theory"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+slug: pitch-class
+category: analysis
+subcategory: post-tonal-analysis
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Set Theory"
 chapter_number: 33
+pdf_page: 477
+section: "33.1.2 Integer Notation for Pitches"
+extraction_confidence: high
+aliases:
+  - "pc"
+prerequisites:
+  - intervals
+extends: []
+related:
+  - integer-notation-pitches
+  - pitch-class-set
+contrasts_with: []
+answers_questions:
+  - "What is a pitch class?"
+  - "How does a pitch class differ from a pitch?"
 ---
 
 # Quick Definition
 A pitch class includes all pitches with the same name regardless of octave or enharmonic spelling, representing the abstract identity of a note.
 
-# Formal Definition
-A pitch class is an equivalence class containing all pitches that share the same position within the octave, regardless of register or enharmonic spelling. When we say "the note C," we refer not to any specific C (C1, C2, C3, etc.) but to the concept of pitch class C, which includes all Cs in any octave. Pitch classes assume both octave equivalence and enharmonic equivalence.
+# Core Definition
+A pitch class is an equivalence class containing all pitches sharing the same position within the octave, regardless of register or enharmonic spelling. When we say Beethoven's first symphony is in C, we refer to pitch class C, which includes any and all Cs. Pitch classes assume octave equivalence and enharmonic equivalence. There are 12 pitch classes, each assigned an integer 0-11 (Hutchinson, Ch. 33, p. 477).
 
-# Construction/Calculation
-1. Identify the note name (including accidentals)
-2. Abstract away the specific octave (all registers treated as equivalent)
-3. Consider enharmonic equivalents as the same pitch class
-4. Result: 12 distinct pitch classes in the chromatic system
-5. Each pitch class is assigned an integer 0-11 (C=0)
+# Prerequisites
+- **Intervals** -- Pitch classes are the elements that form intervals
 
-# Musical Context
-The concept of pitch class is fundamental to set theory analysis and twelve-tone music. It allows analysts to discuss pitch relationships abstractly, independent of specific registral placement or notational spelling. When analyzing a twelve-tone row, we track pitch classes rather than specific pitches.
+# Key Properties
+1. Twelve distinct pitch classes (one per semitone)
+2. Octave equivalence: C2 and C5 are the same pitch class
+3. Enharmonic equivalence: D, C double-sharp, E double-flat = pitch class 2
+4. Each represented by an integer 0-11 (C=0)
+5. Infinitely many pitches but only 12 pitch classes
+
+# Construction / Recognition
+- Identify the note name
+- Abstract away the specific octave
+- Consider enharmonic equivalents as the same pitch class
+- Assign integer 0-11
+
+# Context & Application
+Pitch class is fundamental to set theory analysis and twelve-tone music, allowing abstract discussion independent of register or spelling.
 
 # Examples
-- Pitch class C: includes C0, C1, C2, C3, C4, etc., and B#, Dbb in any octave
-- Pitch class 0: all notes that are C (or B#, Dbb)
-- Beethoven's Symphony No. 1 is in pitch class C (not a specific C)
-- D, C double-sharp, and E double-flat are all pitch class 2
+- Pitch class 0: all Cs in any octave (also B#, Dbb)
+- Pitch class 2: D, C double-sharp, E double-flat
+- C major triad as pitch classes: {0, 4, 7}
 
-# Related Concepts
-- Integer notation
-- Octave equivalence
-- Enharmonic equivalence
-- Pitch-class set
+# Relationships
+## Related
+- **Integer notation** -- Pitch classes are represented as integers
+- **Pitch-class set** -- Collections of pitch classes
+
+# Common Errors
+- **Error**: Treating pitch class 4 as a specific E (e.g., E4)
+  **Correction**: Pitch class 4 includes all Es in all octaves
 
 # Common Confusions
-- Pitch vs. pitch class: C4 is a pitch; C is a pitch class
-- Pitch class abstracts away register - C2 and C7 are the same pitch class
-- All enharmonic spellings belong to the same pitch class
-- There are only 12 pitch classes but infinitely many pitches
+- **Confusion**: Thinking pitch and pitch class are the same
+  **Clarification**: C4 is a pitch; C (any octave) is a pitch class. There are infinitely many pitches but only 12 pitch classes.
 
 # Source Reference
-Chapter 33: Set Theory, Unit 12, Section 33.1.2 Integer Notation for Pitches
+Chapter 33, Section 33.1.2, PDF page 477.
+
+# Verification Notes
+- Definition from source, p. 477
+- Re-extracted from v2 card; preserved: Beethoven example, pitch vs. pitch class distinction
+- Confidence: HIGH -- source provides explicit definition

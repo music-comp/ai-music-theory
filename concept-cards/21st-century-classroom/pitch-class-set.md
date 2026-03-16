@@ -1,49 +1,84 @@
 ---
 concept: Pitch-Class Set
-category: theory
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 33: Set Theory"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+slug: pitch-class-set
+category: analysis
+subcategory: post-tonal-analysis
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Set Theory"
 chapter_number: 33
+pdf_page: 478
+section: "33.1.4 Pitch-Class Sets"
+extraction_confidence: high
+aliases:
+  - "pc set"
+  - "pcset"
+prerequisites:
+  - pitch-class
+  - integer-notation-pitches
+extends:
+  - pitch-class
+related:
+  - normal-form
+  - prime-form
+contrasts_with: []
+answers_questions:
+  - "What is a pitch-class set?"
+  - "How do pitch-class sets replace chords in atonal analysis?"
 ---
 
 # Quick Definition
-A pitch-class set is an unordered collection of pitch classes, representing a chord, motive, or musical idea abstracted from register and order.
+A pitch-class set is an unordered collection of distinct pitch classes, representing a chord or musical idea abstracted from register and order.
 
-# Formal Definition
-A pitch-class set is a collection of distinct pitch classes without regard to order or register. In atonal music analysis, pitch-class sets replace the traditional concepts of chords and scales. Any group of notes sounding together or in succession can form a pitch-class set. Sets are typically analyzed by determining their normal form and prime form to reveal relationships between different musical passages.
+# Core Definition
+In atonal music, pitch-class sets replace traditional concepts of chords and scales. Any group of notes sounding together or in succession can form a pitch-class set. Sets are unordered, contain no duplicates, and use integers 0-11. The system operates in modulo 12 (Hutchinson, Ch. 33, p. 478).
 
-# Construction/Calculation
-1. Identify all distinct pitch classes in a musical passage
-2. Remove duplicate pitch classes (each appears only once)
-3. List as integers (0-11)
-4. Order is not considered at this stage
-5. Register is not considered (octave equivalence)
-6. The set {3, 11, 2} is the same as {2, 3, 11} or {11, 2, 3}
+# Prerequisites
+- **Pitch class** -- Sets are collections of pitch classes
+- **Integer notation** -- Set members are represented as integers
 
-# Musical Context
-Pitch-class set analysis is the primary tool for understanding structure in atonal music. It reveals relationships between seemingly different musical ideas by showing they share the same abstract pitch content. Sets can be as small as 3 notes (trichords) or as large as 12 (the complete chromatic).
+# Key Properties
+1. Unordered collection of distinct pitch classes
+2. No duplicate pitch classes
+3. Represented as integers 0-11
+4. Analyzed through normal form, prime form, interval vector
+5. Sets range from 3 notes (trichords) to 9 notes (nonachords)
+
+# Construction / Recognition
+1. Identify all distinct pitch classes in a passage
+2. Remove duplicates
+3. List as integers
+4. Order does not matter at this stage: {3, 11, 2} = {2, 3, 11}
+
+# Context & Application
+Pitch-class set analysis reveals relationships between seemingly different musical ideas by showing they share the same abstract pitch content.
 
 # Examples
-- Webern chord Eb, B, D: pitch-class set {3, 11, 2}
-- C major triad as set: {0, 4, 7}
-- Diminished seventh chord: {0, 3, 6, 9}
-- Three-note sets are trichords; four-note sets are tetrachords
+- Webern chord Eb, B, D: {3, 11, 2} (p. 478)
+- C major triad: {0, 4, 7}
+- Three-note sets = trichords; four-note = tetrachords; five-note = pentachords; six-note = hexachords
 
-# Related Concepts
-- Pitch class
-- Normal form
-- Prime form
-- Set class
-- Interval vector
+# Relationships
+## Builds Upon
+- **Pitch class** -- Sets are collections of pitch classes
+## Related
+- **Normal form** -- Standardized ordering of a set
+- **Prime form** -- Most reduced representation
+
+# Common Errors
+- **Error**: Including duplicate pitch classes in a set
+  **Correction**: Each pitch class appears only once
 
 # Common Confusions
-- Sets are unordered - {0, 4, 7} = {7, 0, 4}
-- Sets contain only distinct members - no duplicate pitch classes
-- "Set" in this context is a mathematical term borrowed from set theory
-- Not all pitch collections form meaningful analytical sets
+- **Confusion**: Thinking sets are ordered
+  **Clarification**: Sets are unordered; {0, 4, 7} = {7, 0, 4}
 
 # Source Reference
-Chapter 33: Set Theory, Unit 12, Section 33.1.4 Pitch-Class Sets
+Chapter 33, Section 33.1.4, PDF page 478.
+
+# Verification Notes
+- Definition from source, p. 478
+- Re-extracted from v2 card; preserved: Webern example, trichord/tetrachord terminology
+- Confidence: HIGH -- source provides explicit definition

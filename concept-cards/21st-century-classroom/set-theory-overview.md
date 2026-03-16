@@ -1,51 +1,90 @@
 ---
-concept: "Set Theory (Music)"
+concept: Set Theory (Music)
+slug: set-theory-overview
 category: analysis
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 33: Set Theory"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: post-tonal-analysis
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Set Theory"
 chapter_number: 33
+pdf_page: 476
+section: "33.1 Set Theory"
+extraction_confidence: high
+aliases:
+  - "pitch-class set analysis"
+  - "atonal analysis"
+prerequisites:
+  - intervals
+  - integer-notation-pitches
+extends: []
+related:
+  - pitch-class
+  - pitch-class-set
+  - normal-form
+  - prime-form
+  - interval-vector
+  - forte-numbers
+contrasts_with: []
+answers_questions:
+  - "What is musical set theory?"
+  - "Why was set theory developed for music analysis?"
+  - "What are the basic principles of set theory analysis?"
 ---
 
 # Quick Definition
-Set theory is an analytical technique using mathematical concepts to analyze atonal music, where intervals rather than chords and scales are the primary building blocks.
+Set theory is an analytical technique using integers to represent pitches and intervals, enabling systematic analysis of atonal music where traditional chords and scales do not apply.
 
-# Formal Definition
-Musical set theory is an analytical approach that applies mathematical set theory to music, primarily for analyzing atonal and expressionist works. Developed systematically by Allen Forte in "The Structure of Atonal Music" (1973), it represents pitches and intervals with integers, removing tonal implications of staff notation. The approach follows modifications by John Rahn (1980) for normal form and prime form calculations, as adopted by Joseph Straus.
+# Core Definition
+Musical set theory is the analytical technique used to analyze expressionist/atonal music. The primary composers associated with expressionism are Arnold Schoenberg (1874-1951), Anton Webern (1883-1945), and Alban Berg (1885-1935). Instead of scales and chords, intervals are the building blocks. Allen Forte published *The Structure of Atonal Music* (1973), applying set theory mathematics to music. The approach in this text follows John Rahn's *Basic Atonal Theory* (1980), also followed by Joseph Straus (Hutchinson, Ch. 33, p. 476).
 
-# Construction/Calculation
-Key principles of set theory analysis:
-1. Represent pitches as integers 0-11 (C=0, C#/Db=1, D=2, etc.)
-2. Represent intervals by semitone count
-3. Assume enharmonic equivalence (D = C# = Ebb = pitch integer 2)
-4. Assume octave equivalence (all Cs are pitch class 0)
-5. Identify pitch-class sets in the music
-6. Analyze relationships through normal form, prime form, and interval vectors
+# Prerequisites
+- **Intervals** -- Intervals are the building blocks of atonal music
+- **Integer notation for pitches** -- Set theory represents pitches as integers 0-11
 
-# Musical Context
-Set theory provides analytical tools for music by Schoenberg, Webern, Berg, and other atonal composers. Before Forte's work, there was no widely-accepted systematic approach for showing relationships in atonal music. The theory reveals connections between seemingly different pitch collections and provides a vocabulary for discussing non-tonal music.
+# Key Properties
+1. Pitches represented as integers 0-11 (C=0)
+2. Intervals measured in semitones
+3. Assumes enharmonic equivalence and octave equivalence
+4. Works in modulo 12 (cycles after 11)
+5. Removes tonal implications of traditional notation
+6. 208 distinct set classes for 3-9 note sets
+7. Two methods exist: Forte and Rahn (only 6 of 208 sets differ)
+
+# Construction / Recognition
+**Key analytical tools:**
+1. Integer notation for pitches (0-11)
+2. Integer notation for intervals (semitone count)
+3. Normal form (most compact ascending arrangement)
+4. Prime form (transposed to 0, inverted if more compact)
+5. Interval vector (six-digit interval class content)
+6. Forte numbers (catalog labels)
+
+# Context & Application
+Before Forte's 1973 work, there was no widely-accepted systematic approach for analyzing atonal music. Set theory reveals connections between seemingly different pitch collections and provides vocabulary for non-tonal music.
 
 # Examples
+- Webern, 5 Movements for String Quartet, No. 3 (p. 476, Figure 33.1.1): Opening chords analyzed to show shared prime form (014)
 - Primary composers: Schoenberg, Webern, Berg (Second Viennese School)
-- Webern, 5 Movements for String Quartet, No. 3
-- Analysis reveals intervallic patterns across different pitch collections
-- 208 distinct set classes exist in the twelve-tone system
 
-# Related Concepts
-- Pitch class
-- Pitch-class set
-- Normal form
-- Prime form
-- Interval vector
-- Forte numbers
+# Relationships
+## Related
+- **Pitch class**, **pitch-class set**, **normal form**, **prime form**, **interval vector**, **Forte numbers** -- All are tools within set theory
+
+# Common Errors
+- **Error**: Applying set theory to tonal music
+  **Correction**: Set theory is designed for atonal music; tonal analysis uses different tools
 
 # Common Confusions
-- Set theory is for ATONAL music, not tonal analysis
-- Integer notation removes tonal implications but same intervals are involved
-- Different from mathematical set theory though it borrows concepts
-- Two methods exist (Forte vs. Rahn) - only 6 of 208 sets differ between them
+- **Confusion**: Thinking set theory and mathematical set theory are the same
+  **Clarification**: Musical set theory borrows concepts but is a distinct analytical methodology
 
 # Source Reference
-Chapter 33: Set Theory, Unit 12, Section 33.1 Set Theory
+Chapter 33: Set Theory, Section 33.1, PDF page 476. Webern example (Figure 33.1.1).
+
+# Verification Notes
+- Definition from source, Section 33.1, p. 476
+- Forte, Rahn, and Straus references from source
+- Re-extracted from v2 card; preserved: Forte/Rahn distinction, 208 set classes figure
+- Confidence: HIGH -- source provides comprehensive introduction

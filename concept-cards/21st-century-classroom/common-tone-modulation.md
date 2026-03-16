@@ -1,57 +1,95 @@
 ---
 concept: Common-Tone Modulation
+slug: common-tone-modulation
 category: technique
-source: Music Theory for the 21st-Century Classroom
+subcategory: modulation
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
 chapter: "Chapter 22: Modulation"
-unit: 7
-authors: Robert Hutchinson
-pdf_page: null
 chapter_number: 22
+pdf_page: 319
+section: "22.7.2 Common-Tone Modulation"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - modulation
+  - chromatic-mediants
+extends:
+  - modulation
+related:
+  - chromatic-mediants
+  - key-relationships
+contrasts_with:
+  - diatonic-pivot-chord-modulation
+  - direct-modulation
+answers_questions:
+  - "What is common-tone modulation?"
+  - "How does it differ from pivot chord modulation?"
+  - "What is the relationship between common-tone modulation and chromatic mediants?"
 ---
-
 # Quick Definition
-Common-tone modulation connects two keys through a single shared pitch that acts as a hinge between chords in different keys, often involving chromatic mediant relationships.
+Common-tone modulation connects two keys through a single shared pitch that acts as a hinge between chords in different keys -- the connecting chords are typically chromatic mediants (same quality, roots a third apart, sharing only one common tone).
 
-# Formal Definition
-In common-tone modulation, two chords are connected through a single note to bridge the distance between two keys. The common tone acts as a hinge between a chord in the first key and a chord (often dominant) in the new key. The two connecting chords are typically in a chromatic mediant relationship.
+# Core Definition
+In common-tone modulation, two chords are connected through a single note to bridge the distance between two keys. The common tone acts as a hinge between a chord in the first key and a chord (often V or V7) in the new key. The two connecting chords are typically in a chromatic mediant relationship: roots a third apart, same quality, sharing only one common tone. This technique exploits foreign key relationships for dramatic effect.
 
-# Construction/Recognition
-Process:
-1. Identify the common tone sustained between two chords
-2. The first chord belongs to the original key
-3. The second chord belongs to the new key (often V or V7 of new key)
-4. The two chords typically share ONLY that one common tone
+# Prerequisites
+- **Modulation**: The broader concept
+- **Chromatic mediants**: The typical relationship between connecting chords
 
-The connecting chords are often chromatic mediants:
-- Roots a third apart
-- Same quality (both major or both minor)
-- Share only ONE common tone
+# Key Properties
+1. Single common tone connects two chords in different keys
+2. The two chords typically share ONLY that one note
+3. The connecting chords are usually chromatic mediants
+4. Exploits foreign (distant) key relationships
+5. Creates dramatic harmonic surprise
+6. Romantic-era composers favored this technique
 
-# Musical Context
-- Exploits foreign key relationships for dramatic effect
-- Romantic era composers favored this technique
-- Creates a sense of tonal surprise
-- The single common tone provides just enough connection
+# Construction / Recognition
+- Identify the common tone sustained between two chords
+- The first chord belongs to the original key
+- The second chord belongs to the new key (often V or V7 of new key)
+- The two chords share only ONE common tone
+- Check if the connecting chords are chromatic mediants (same quality, roots a 3rd apart)
+
+# Context & Application
+Common-tone modulation provides just enough connection (one shared note) to bridge distant keys that have no diatonic common chords. Romantic-era composers like Beethoven and Schubert used this technique for dramatic tonal surprises. The single common tone provides an audible thread of continuity while everything else changes, creating a sense of both connection and distance.
 
 # Examples
-- Beethoven, Symphony No. 2, I (1801-1802):
+- Beethoven, Symphony No. 2 in D major, Op. 36, I (1801-1802):
   - C# is common tone between C# major (V in F# minor) and A7 (V7 in D major)
-
-- Schubert, Piano Trio No. 1, D. 898, I (1828):
+- Schubert, Piano Trio No. 1 in Bb major, D. 898, I (1828):
   - A is common tone between A major (V in D minor) and F major (I in F major)
 
-# Related Concepts
-- Chromatic mediants
-- Pivot chord modulation
-- Foreign key relationships
-- Direct modulation
-- Romantic harmony
+# Relationships
+## Builds Upon
+- Modulation concept with minimal (one-note) connection
+
+## Enables
+- Dramatic modulations to distant keys
+- Romantic-era tonal adventures
+
+## Related
+- chromatic-mediants (the typical relationship between connecting chords)
+- key-relationships (exploits foreign key distances)
+
+## Contrasts With
+- diatonic-pivot-chord-modulation (shares a whole chord, not just one note)
+- direct-modulation (no connection at all)
+
+# Common Errors
+- Confusing common-tone modulation with pivot chord modulation (one note vs. one chord)
+- Expecting the common tone to be in the bass (it can be in any voice)
 
 # Common Confusions
-- Only ONE common tone connects the chords (not a chord in common)
-- The connecting chords are usually chromatic mediants
-- This is different from pivot chord modulation (which shares a whole chord)
-- The common tone may be in any voice
+- **One note, not one chord**: Common-tone modulation shares a single pitch, not a full chord
+- **Chromatic mediants**: The connecting chords are typically in chromatic mediant relationship
+- **Any voice**: The common tone can appear in any voice part
 
 # Source Reference
-Chapter 22: Modulation, Unit 7, Section 22.7.2
+Chapter 22: Modulation, Section 22.7.2 (PDF p. 319-322)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved both Beethoven and Schubert examples from v2 card.

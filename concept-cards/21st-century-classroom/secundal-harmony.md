@@ -1,49 +1,79 @@
 ---
 concept: Secundal Harmony
-category: theory
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 32: Impressionism and Extended Tonality"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+slug: secundal-harmony
+category: harmony
+subcategory: 20th-century-techniques
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Impressionism and Extended Tonality"
 chapter_number: 32
+pdf_page: 471
+section: "32.3 Quartal, Quintal, and Secundal Harmony"
+extraction_confidence: medium
+aliases:
+  - "second-based harmony"
+  - "cluster chords"
+prerequisites:
+  - intervals
+extends: []
+related:
+  - quartal-harmony
+  - quintal-harmony
+  - pandiatonicism
+contrasts_with: []
+answers_questions:
+  - "What is secundal harmony?"
+  - "How does secundal harmony differ from quartal and quintal?"
 ---
 
 # Quick Definition
-Secundal harmony builds chords by stacking seconds (major or minor), creating dense, cluster-like sonorities characteristic of 20th-century music.
+Secundal harmony builds chords by stacking seconds, creating dense, cluster-like sonorities characteristic of 20th-century music.
 
-# Formal Definition
-Secundal harmony refers to chords constructed entirely (or mostly) from stacked seconds, producing cluster-like sonorities. Unlike the open sound of quartal and quintal harmony, secundal chords are dense and dissonant due to the close spacing of adjacent pitches. This approach became more common after 1900 as composers explored new harmonic territories.
+# Core Definition
+Secundal harmony refers to chords stacked entirely (or mostly) in seconds. Unlike the open sound of quartal and quintal harmony, secundal chords are dense and dissonant due to close spacing. This approach became more common after 1900 as composers explored new harmonic territories (Hutchinson, Ch. 32, p. 471).
 
-# Construction/Calculation
-1. Select a root note
-2. Stack seconds above it: M2 + M2 + m2...
-3. Three-note secundal chord: root - 2nd - 2nd (e.g., C-D-E)
-4. Can use major seconds, minor seconds, or combinations
-5. Diatonic secundal: stay within a scale
-6. Chromatic secundal: all minor seconds (chromatic cluster)
+# Prerequisites
+- **Intervals** -- Must understand major and minor seconds
 
-# Musical Context
-Secundal harmony creates tone clusters, which became associated with experimental and avant-garde music. Henry Cowell pioneered piano clusters played with forearms or fists. Secundal structures also appear in pandiatonic contexts where multiple adjacent scale degrees sound simultaneously. The technique adds harmonic tension and textural density.
+# Key Properties
+1. Chords built from stacked seconds (major, minor, or mixed)
+2. Dense, cluster-like quality
+3. Diatonic secundal: stays within a scale
+4. Chromatic secundal: consecutive half steps
+5. Inversionally related to chords in 7ths
+
+# Construction / Recognition
+- Three-note: C-D-E (diatonic) or C-C#-D (chromatic)
+- Can mix major and minor seconds
+
+# Context & Application
+Secundal structures appear in tone clusters (Cowell, Ligeti) and pandiatonic contexts. The technique adds harmonic tension and textural density.
 
 # Examples
-- Tone clusters in Cowell, Ives, Ligeti
-- Pandiatonic passages with adjacent scale degrees sounding together
-- Stacked in 2nds: C-D-E-F (all white keys)
-- Chromatic cluster: C-C#-D-D#-E
+- Defined alongside quartal and quintal in source (p. 471)
+- Tone clusters: C-D-E-F (diatonic secundal)
+- Practice exercise (p. 475): Students revoice a chord as a six-note secundal chord stacked in 2nds
 
-# Related Concepts
-- Quartal harmony
-- Quintal harmony
-- Tertian harmony
-- Tone clusters
-- Pandiatonicism
+# Relationships
+## Related
+- **Quartal harmony** and **Quintal harmony** -- Other non-tertian constructions
+- **Pandiatonicism** -- Seconds appear naturally in pandiatonic chord voicings
+
+# Common Errors
+- **Error**: Assuming all note clusters are "secundal harmony"
+  **Correction**: Secundal harmony implies intentional construction from stacked seconds
 
 # Common Confusions
-- Secundal harmony is intentionally dense/dissonant, unlike the open quality of quartal/quintal
-- Not all clusters are "secundal harmony" - the term implies intentional construction
-- Secundal chords invert to chords in 7ths (M2 inverts to m7)
-- Different from added-note chords which still have tertian foundation
+- **Confusion**: Thinking secundal harmony is the same as dissonance
+  **Clarification**: Secundal harmony is a deliberate constructive technique; the density is a feature
 
 # Source Reference
-Chapter 32: Impressionism and Extended Tonality, Unit 12, Section 32.3 Quartal, Quintal, and Secundal Harmony
+Chapter 32, Section 32.3, PDF page 471. Practice exercise on p. 475.
+
+# Verification Notes
+- Defined briefly in source alongside quartal/quintal, p. 471
+- Less detailed treatment than quartal or quintal in source
+- Re-extracted from v2 card; preserved: inversional relation to 7ths, diatonic vs. chromatic distinction
+- Confidence: MEDIUM -- source defines the concept but provides fewer examples than quartal/quintal

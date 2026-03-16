@@ -1,50 +1,87 @@
 ---
 concept: Tone Row
-category: theory
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 34: Serialism"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+slug: tone-row
+category: technique
+subcategory: 20th-century-techniques
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Serialism"
 chapter_number: 34
+pdf_page: 492
+section: "34.1 Twelve-Tone Technique"
+extraction_confidence: high
+aliases:
+  - "twelve-tone row"
+  - "series"
+  - "row"
+prerequisites:
+  - twelve-tone-technique
+extends: []
+related:
+  - row-forms
+  - twelve-tone-matrix
+contrasts_with:
+  - pitch-class-set
+answers_questions:
+  - "What is a tone row?"
+  - "How does a row differ from a pitch-class set?"
 ---
 
 # Quick Definition
-A tone row (twelve-tone row or series) is an ordered sequence of all twelve pitch classes that serves as the basic material for a serial composition.
+A tone row is an ordered sequence of all twelve pitch classes that serves as the foundational material for a serial composition.
 
-# Formal Definition
-A tone row is an ordered set of all twelve pitch classes of the chromatic scale, established by the composer as the foundational material for a twelve-tone composition. Unlike pitch-class sets (which are unordered), the row maintains a fixed sequence. The row embodies the intervallic characteristics of the piece and serves as a source for melodic, harmonic, and contrapuntal material through its various transformations.
+# Core Definition
+A twelve-tone series is also commonly called a twelve-tone "row." The row is ORDERED (unlike unordered pitch-class sets). It embodies the intervallic characteristics of the piece and serves as a source for melodic, harmonic, and contrapuntal material through its various transformations. Rows can be segmented into smaller units (trichords, tetrachords, hexachords) for analysis (Hutchinson, Ch. 34, p. 492).
 
-# Construction/Calculation
-Creating a tone row:
-1. Arrange all 12 pitch classes in a chosen order
+# Prerequisites
+- **Twelve-tone technique** -- The row exists within this compositional method
+
+# Key Properties
+1. Ordered sequence of all 12 pitch classes
 2. Each pitch class appears exactly once
-3. Order is determined by the composer's artistic choice
-4. The row defines 11 ordered intervals
-5. Composers may design rows with specific intervallic properties
-6. The row can be segmented into smaller units (trichords, tetrachords, hexachords)
+3. Order is fixed (distinguishes from unordered sets)
+4. Defines 11 ordered intervals
+5. Can be segmented into trichords, tetrachords, hexachords
+6. Repository of intervals for the composition
 
-# Musical Context
-The tone row is a repository of intervals unique to each composition. Composers design rows to create specific intervallic relationships - some emphasize certain intervals, create symmetries, or embed tonal references. The row's properties significantly affect the sound and character of the resulting composition.
+# Construction / Recognition
+- Arrange all 12 pitch classes in a chosen order
+- Each pitch class appears exactly once
+- The row can be analyzed for intervallic properties
+- Segments analyzed as pitch-class sets
+
+# Context & Application
+Composers design rows with specific intervallic properties. The row's characteristics significantly affect the composition's sound and character.
 
 # Examples
-- Schoenberg, Op. 25: E-F-G-Db-Gb-Eb-Ab-D-B-C-A-Bb
-- Webern often used rows with symmetrical properties
-- Berg's Violin Concerto row embeds triads: G-Bb-D-F#-A-C-E-G#-B-C#-D#-F
-- Row segments (trichords, etc.) can be analyzed as pitch-class sets
+- Schoenberg, Op. 25: Row shown in Figure 34.1.1 (p. 492)
+- Row from source analysis: demonstrates how intervals generate the four forms (p. 493)
+- Berg's Violin Concerto: row embeds triads (old card example preserved)
+- Row segments (trichords, tetrachords) analyzable as pitch-class sets
 
-# Related Concepts
-- Twelve-tone technique
-- Row forms (P, R, I, RI)
-- Row matrix
-- Set theory
-- Hexachordal combinatoriality
+# Relationships
+## Related
+- **Row forms** -- P, R, I, RI transformations of the row
+- **Twelve-tone matrix** -- Displays all transpositions of all row forms
+## Contrasts With
+- **Pitch-class set** -- Sets are unordered; rows are ordered
+
+# Common Errors
+- **Error**: Reordering notes within the row
+  **Correction**: The row's order is fixed; notes cannot be rearranged
 
 # Common Confusions
-- The row is ORDERED (unlike unordered pitch-class sets)
-- The row is not a melody or theme - it's source material
-- The same row generates different music depending on presentation
-- Rows can be designed with specific structural properties
+- **Confusion**: Thinking the row IS a melody
+  **Clarification**: The row is source material; it generates melodies, harmonies, and counterpoint
+- **Confusion**: Thinking rows are unordered like pitch-class sets
+  **Clarification**: Rows are ORDERED; the sequence matters
 
 # Source Reference
-Chapter 34: Serialism, Unit 12, Section 34.1 Twelve-Tone Technique
+Chapter 34, Section 34.1, PDF page 492.
+
+# Verification Notes
+- Definition from source, p. 492
+- Re-extracted from v2 card; preserved: Berg Violin Concerto reference, segment analysis concept
+- Confidence: HIGH -- source provides explicit definition

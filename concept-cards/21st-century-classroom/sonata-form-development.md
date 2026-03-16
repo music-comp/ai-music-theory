@@ -1,56 +1,127 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Sonata Form Development
+slug: sonata-form-development
+
+# === CLASSIFICATION ===
 category: form
-source: Music Theory for the 21st-Century Classroom
+subcategory: large-forms
+tier: intermediate
+
+# === PROVENANCE ===
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
 chapter: "Chapter 25: Sonata and Rondo Forms"
-unit: 8
-authors: Robert Hutchinson
-pdf_page: null
 chapter_number: 25
+pdf_page: 367
+section: "25.1 Sonata Form"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "development section"
+  - "development"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - sonata-form
+  - sonata-form-exposition
+extends:
+  - sonata-form
+related:
+  - structural-functions
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What happens in the development section of sonata form?"
+  - "What is a retransition?"
 ---
 
 # Quick Definition
+
 The development section fragments, sequences, and modulates themes from the exposition through various keys, building tension before the retransition leads back to the recapitulation.
 
-# Formal Definition
-The development section of sonata form often contains sequences and fragmentation of earlier melodies. It modulates through multiple keys, with irregular phrase lengths and elisions keeping the listener off balance. The development typically ends with a retransition, often featuring a dominant pedal, that prepares the return of tonic in the recapitulation.
+# Core Definition
 
-# Construction/Recognition
-Characteristics of development:
-- FRAGMENTATION: melodies broken into motives
-- SEQUENCING: motives repeated at different pitch levels
-- MODULATION: multiple keys explored
-- INSTABILITY: irregular phrases, elisions
-- May introduce NEW material
+Music with developmental function often contains sequences and fragmentation of earlier melodies. Developmental music modulates through multiple keys, with phrase lengths that may be irregular and elisions that keep the listener off balance. The development typically ends with a retransition, often featuring a dominant pedal, preparing the return of tonic (Hutchinson, Ch. 25, pp. 367, 373).
 
-Retransition:
-- Typically features dominant (V) pedal
-- Builds anticipation for return to tonic
-- Creates expectation for recapitulation
+# Prerequisites
 
-# Musical Context
-- Developmental function: unstable, modulatory
-- The most harmonically adventurous section
-- Tests and explores the thematic material
-- Length varies greatly between composers
+- **Sonata form** -- The development is the second main section of sonata form
+- **Sonata form exposition** -- The development works with material presented in the exposition
+
+# Key Properties
+
+1. Fragmentation of earlier melodies into motives
+2. Sequencing of motives at different pitch levels
+3. Modulation through multiple keys
+4. Irregular phrase lengths and elisions
+5. May introduce new material
+6. Ends with retransition (typically dominant pedal)
+7. Longer and more varied than a transition
+
+# Construction / Recognition
+
+## Features of Developmental Function:
+1. Listen for motives from the exposition being broken apart
+2. Identify sequential patterns
+3. Track key changes (multiple modulations)
+4. Note irregular phrasing
+5. The retransition typically features a V pedal leading to the recapitulation
+
+## Distinguishing Development from Transition:
+- Development is typically longer than a transition
+- Development contains more sections of varying nature
+- Development has a greater number of modulations
+
+# Context & Application
+
+- **Typical contexts**: Central section of sonata form movements
+- **Common applications**: The most harmonically adventurous section of a sonata
+- **Historical/stylistic notes**: Development sections vary greatly in length between composers; Beethoven's are famously extended, Mozart's often more concise. See Section 11.1 of the textbook for additional development section examples.
 
 # Examples
-- Beethoven's developments are famously extended
-- Mozart's developments are often more concise
-- See Section 11.1 of the textbook for development section examples
 
-# Related Concepts
-- Sonata form
-- Fragmentation
-- Sequence
-- Retransition
-- Developmental function
+**Example 1** (p. 367): The generalized sonata form diagram shows the development featuring "fragmentation and sequencing" with a "retransition" ending on a V pedal
+
+# Relationships
+
+## Builds Upon
+- **Sonata form** -- The development is the middle section
+- **Sonata form exposition** -- The development works with exposition material
+
+## Enables
+- **Sonata form recapitulation** -- The retransition at the end of the development leads to the recapitulation
+
+## Related
+- **Structural functions** -- Development exemplifies developmental function
+
+# Common Errors
+
+- **Error**: Expecting the development to use only themes from the exposition
+  **Correction**: Some developments introduce new material
+
+- **Error**: Confusing development with transition
+  **Correction**: Development is longer, explores more keys, and is more varied
 
 # Common Confusions
-- Development can include NEW material, not just existing themes
-- Development is distinct from transition (longer, more keys)
-- The retransition is part of the development
-- Some developments are brief; length varies
+
+- **Confusion**: Thinking the development is always long
+  **Clarification**: Length varies greatly; some developments are brief
+
+- **Confusion**: Believing the retransition is a separate section
+  **Clarification**: The retransition is the concluding portion of the development section
 
 # Source Reference
-Chapter 25: Sonata and Rondo Forms, Unit 8, Section 25.1
+
+Chapter 25: Sonata and Rondo Forms, Section 25.1, page 367 (diagram); Section 25.2.3, page 373 (developmental function). Cross-reference: Section 11.1 for detailed development examples.
+
+# Verification Notes
+
+- Definition: Synthesized from sonata form diagram (p. 367) and developmental function discussion (p. 373)
+- Confidence: HIGH -- explicit description in source
+- Re-extraction notes: Re-extracted from v2 card; preserved: Beethoven/Mozart comparison, cross-reference to Section 11.1, distinction from transition

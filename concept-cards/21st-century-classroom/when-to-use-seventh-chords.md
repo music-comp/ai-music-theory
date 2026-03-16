@@ -1,53 +1,103 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: When to Use Seventh Chords
-category: technique
-source: Music Theory for the 21st-Century Classroom
+slug: when-to-use-seventh-chords
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: technique
+tier: intermediate-advanced
+
+# === PROVENANCE ===
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
 chapter: "Chapter 27: Voice Leading Seventh Chords"
-unit: 9
-authors: Robert Hutchinson
-pdf_page: null
 chapter_number: 27
+pdf_page: 408
+section: "27.5 When to Use Seventh Chords"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - seventh-chord-resolution
+  - harmonic-function
+extends: []
+related:
+  - harmonic-flowchart
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Which chords most commonly receive sevenths?"
+  - "How does harmonic function guide seventh chord usage?"
 ---
 
 # Quick Definition
-Seventh chords are best used to add tension approaching tonic function, making them most appropriate on dominant function chords (V, vii) and pre-dominant function chords (ii, IV), while less common on tonic and mediant function chords.
 
-# Formal Definition
-The strategic use of seventh chords follows harmonic function in tonal music. Because the seventh adds dissonance that creates forward momentum toward resolution, sevenths are most effective when they propel the music toward tonic. Following the harmonic flowchart: dominant function chords (V7, vii-diminished-7) and pre-dominant function chords (ii7, IV7) benefit most from added sevenths. Tonic and mediant function chords (I, iii, vi) less commonly receive sevenths in common practice style.
+Seventh chords are best used to add tension approaching tonic function -- most appropriate on dominant function chords (V7, viio7) and pre-dominant function chords (ii7), while less common on tonic and mediant function chords.
 
-# Rules/Procedures
-1. **Most common sevenths** (dominant function):
-   - V7: The most important seventh chord
-   - vii-diminished-7 or vii-half-diminished-7: Strong dominant substitute
-2. **Common sevenths** (pre-dominant function):
-   - ii7 or ii-half-diminished-7: Very common in progressions to V
-   - IV7: Less common but used for added color
-3. **Less common sevenths** (tonic/mediant function):
-   - iii7: Rarely used
-   - vi7: Occasionally used
-   - I-major-7: Characteristic of jazz more than common practice
-   - IV-major-7: More jazz than common practice
+# Core Definition
 
-# Musical Context
-J.S. Bach's chorales demonstrate this principle, with sevenths appearing most frequently on V and ii. The harmonic flowchart explains why: these chords are moving toward tonic, so the added tension of the seventh enhances the resolution.
+In harmonizations, it is best to use seventh chords to add tension as you approach tonic function. Therefore, sevenths are added most frequently to chords of dominant function (V and viio) and chords of pre-dominant function (ii and, to a lesser extent, IV). Seventh chords like iii7, vi7, IVM7, and IM7 are less commonly used and encountered (Hutchinson, Ch. 27, p. 408).
+
+# Prerequisites
+
+- **Seventh chord resolution** -- Must know how to resolve 7ths before adding them
+- **Harmonic function** -- Seventh usage follows the harmonic flowchart
+
+# Key Properties
+
+1. Most common: V7 (the most important seventh chord)
+2. Very common: viio7 / viiø7 (dominant function)
+3. Common: ii7 / iiø7 (pre-dominant function)
+4. Less common: IV7 (pre-dominant, added color)
+5. Rare in common practice: iii7, vi7, IM7, IVM7
+6. Jazz uses more seventh chords than common practice style
+
+# Construction / Recognition
+
+## Guideline:
+1. Follow the harmonic flowchart
+2. Add 7ths most frequently to dominant-function chords (V, viio)
+3. Add 7ths to pre-dominant chords (ii, IV) for tension toward V
+4. Use 7ths on tonic/mediant chords sparingly (more jazz than common practice)
+
+# Context & Application
+
+- **Typical contexts**: Chorale harmonizations, composition
+- **Historical/stylistic notes**: Bach chorales show 7ths most frequently on V and ii; jazz uses 7ths on all chord types
 
 # Examples
-- ii7-V7-I: Both sevenths add tension resolving to tonic
-- J.S. Bach, Chorale 342, "Lobt Gott, ihr Christen": Shows typical seventh chord usage
-- I-major-7 and vi7: More common in jazz than in Bach chorales
 
-# Related Concepts
-- Harmonic Function
-- Harmonic Flowchart
-- Pre-dominant Chords
-- Dominant Chords
-- Seventh Chord Resolution
+**Example 1** (p. 408): J.S. Bach, Chorale 342, "Lobt Gott, ihr Christen, allzugleich" -- demonstrates typical seventh chord usage on dominant and pre-dominant chords
+
+# Relationships
+
+## Related
+- **Harmonic flowchart** -- Seventh chord usage follows functional flow
+
+# Common Errors
+
+- **Error**: Adding sevenths to every chord
+  **Correction**: Use sevenths strategically on dominant and pre-dominant chords
 
 # Common Confusions
-- Adding sevenths randomly without considering harmonic function
-- Thinking all chords should have sevenths (they should be used strategically)
-- Not recognizing that jazz and pop use sevenths differently than common practice
-- Forgetting that the 7th adds tension that needs resolution
+
+- **Confusion**: Jazz seventh chord usage applies to common practice
+  **Clarification**: IM7, vi7, etc. are more characteristic of jazz than of Bach-style writing
 
 # Source Reference
-Chapter 27: Voice Leading Seventh Chords, Unit 9, Section 27.5
+
+Chapter 27: Voice Leading Seventh Chords, Section 27.5, page 408. See Figure 27.5.1 (Bach Chorale 342).
+
+# Verification Notes
+
+- Definition: Direct from source, p. 408
+- Confidence: HIGH -- explicit guideline with functional rationale
+- Re-extraction notes: Re-extracted from v2 card; preserved: frequency hierarchy, Bach chorale example, jazz distinction

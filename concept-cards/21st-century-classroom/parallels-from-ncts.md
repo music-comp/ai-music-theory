@@ -1,48 +1,110 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Avoiding Parallels from Non-Chord Tones
-category: technique
-source: Music Theory for the 21st-Century Classroom
+slug: parallels-from-ncts
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: rules
+tier: intermediate-advanced
+
+# === PROVENANCE ===
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
 chapter: "Chapter 28: Voice Leading With Non-Chord Tones"
-unit: 9
-authors: Robert Hutchinson
-pdf_page: null
 chapter_number: 28
+pdf_page: 411
+section: "28.2 Avoiding Objectionable Parallels"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - objectionable-parallels
+  - voice-leading-with-ncts
+extends:
+  - objectionable-parallels
+related:
+  - simultaneous-ncts
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do non-chord tones create parallel fifths and octaves?"
+  - "How do you prevent NCT-created parallels?"
 ---
 
 # Quick Definition
-To avoid creating parallel 5ths and 8ves when adding non-chord tones, first identify all 5ths and 8ves in the framework, then avoid embellishments that approach these intervals by step in parallel motion.
 
-# Formal Definition
-Parallel fifths and octaves can be inadvertently created when non-chord tones move by step into chord tones. The NCT and the chord tone it resolves to can form parallels with another voice. To prevent this, systematically identify all perfect intervals (5ths, 8ves) between voices in the basic framework before adding embellishments. Then avoid placing NCTs that would step into one of these interval pairs from another 5th or 8ve.
+To avoid creating parallel 5ths and 8ves when adding non-chord tones, first identify all 5ths and 8ves in the framework, then avoid embellishments that move by step into these intervals in parallel motion.
 
-# Rules/Procedures
-1. Complete the basic voice leading framework without NCTs
-2. Identify every instance where two voices form a 5th or 8ve
-3. Check: Would a step into either note of that interval create parallels?
-4. Rule: Do NOT add NCTs that move by step into notes separated by a 5th or 8ve if this creates parallel motion
-5. When adding NCTs to multiple voices:
-   - Simultaneous NCTs should move in parallel 3rds or 6ths
-   - If consonance is impossible, stagger the NCTs rhythmically
-6. An NCT stepping into a 3rd or 6th is generally safe
+# Core Definition
 
-# Musical Context
-This careful approach to embellishment is what distinguishes skilled chorale writing from amateur attempts. Bach's chorales demonstrate constant awareness of intervallic relationships even when adding elaborate ornamental passages.
+To avoid creating parallel 5ths and 8ves when adding non-chord tones: (1) identify intervals of 5ths and 8ves between voices in the original framework; (2) avoid adding NCTs that move by step into notes separated by a 5th or 8ve; (3) it is best to avoid adding NCTs in two voices on the same beat unless they move in parallel 3rds or 6ths (Hutchinson, Ch. 28, pp. 411-412).
+
+# Prerequisites
+
+- **Objectionable parallels** -- Understanding the intervals to avoid
+- **Voice leading with NCTs** -- Understanding the framework-first approach
+
+# Key Properties
+
+1. Identify all 5ths and 8ves in the basic framework first
+2. Do NOT add NCTs that step into notes forming 5ths or 8ves
+3. NCTs stepping into 3rds or 6ths are generally safe
+4. Simultaneous NCTs in two voices should form consonant intervals (3rds, 6ths)
+5. If consonance is impossible, stagger NCTs rhythmically
+
+# Construction / Recognition
+
+## Systematic Approach:
+1. Complete the basic framework without NCTs
+2. Mark all intervals of 5th and 8ve between voices
+3. When adding NCTs, check: does the NCT approach one of these 5ths/8ves by step from another 5th/8ve?
+4. If yes: the NCT creates parallel 5ths/8ves -- find another embellishment
+
+# Context & Application
+
+- **Typical contexts**: Adding embellishments to chorale frameworks
 
 # Examples
-- Framework has soprano G and alto C (5th): If alto has a passing tone D stepping down to C, and soprano also has D stepping to G, this creates parallel 5ths
-- Safe example: Adding a neighbor tone in soprano while alto holds creates oblique motion, no parallels possible
 
-# Related Concepts
-- Objectionable Parallels
-- Non-Chord Tones
-- Voice Leading
-- Consonance and Dissonance
+**Example 1** (p. 411): Figure 28.2.1 -- progression with 5ths and 8ves identified in the framework
+
+**Example 2** (p. 411): Figure 28.2.2 -- parallel 5ths and 8ves created by non-chord tones
+
+# Relationships
+
+## Builds Upon
+- **Objectionable parallels** -- Extended to include NCT-created parallels
+
+## Related
+- **Simultaneous NCTs** -- Related concerns about multiple simultaneous embellishments
+
+# Common Errors
+
+- **Error**: Assuming that a correct framework makes all embellishments safe
+  **Correction**: Always check for new parallels created by NCTs
+
+- **Error**: Not identifying 5ths and 8ves in the framework before adding NCTs
+  **Correction**: Systematically mark all 5ths and 8ves first
 
 # Common Confusions
-- Assuming that because the framework avoids parallels, any embellishments are safe
-- Not systematically identifying 5ths and 8ves before adding NCTs
-- Adding NCTs to multiple voices without considering their relationship
-- Forgetting that the embellishment note itself counts in the voice leading
+
+- **Confusion**: NCTs don't count in voice leading
+  **Clarification**: NCTs form real intervals with other voices and can create real parallels
 
 # Source Reference
-Chapter 28: Voice Leading With Non-Chord Tones, Unit 9, Section 28.2
+
+Chapter 28: Voice Leading With Non-Chord Tones, Section 28.2, pages 411-412. See Figures 28.2.1-28.2.2.
+
+# Verification Notes
+
+- Definition: Direct from source, pp. 411-412
+- Confidence: HIGH -- explicit rules with figures
+- Re-extraction notes: Re-extracted from v2 card; preserved: systematic identification approach, staggering technique

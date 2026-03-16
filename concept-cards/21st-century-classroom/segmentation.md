@@ -1,49 +1,79 @@
 ---
 concept: Segmentation
+slug: segmentation
 category: analysis
-source: Music Theory for the 21st-Century Classroom
-chapter: "Chapter 33: Set Theory"
-unit: 12
-authors: Robert Hutchinson
-pdf_page: null
+subcategory: post-tonal-analysis
+tier: advanced
+source: "Music Theory for the 21st-Century Classroom"
+source_slug: 21st-century-classroom
+authors: "Robert Hutchinson"
+chapter: "Set Theory"
 chapter_number: 33
+pdf_page: 482
+section: "33.3.2 Segmentation"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - pitch-class-set
+  - prime-form
+extends: []
+related:
+  - set-theory-overview
+contrasts_with: []
+answers_questions:
+  - "What is segmentation in set theory?"
+  - "How do you decide which notes to group together?"
 ---
 
 # Quick Definition
-Segmentation is the analytical process of deciding which notes to group together as a pitch-class set for analysis.
+Segmentation is the analytical process of deciding which notes to group together as a pitch-class set for analysis in atonal music.
 
-# Formal Definition
-Segmentation refers to the process of determining which notes to group together and analyze as a pitch-class set. While segmentation is often based on musical factors (notes sounding together as a chord, or notes in a melodic line), analysts may examine various combinations of notes to search for deeper structural connections. Segmentation choices significantly affect analytical results.
+# Core Definition
+Segmentation is the term for determining which notes to group together and analyze in a passage. Usually, segmentation is based on the music -- notes sounding together as a chord, or notes in a melodic line. However, analysts may look at every possible combination of notes to search for deeper layers of connection. Not all segmentations yield meaningful relationships (Hutchinson, Ch. 33, p. 482).
 
-# Construction/Calculation
-Factors influencing segmentation decisions:
-1. Vertical simultaneities (notes sounding together)
-2. Melodic groupings (notes in a phrase or motive)
-3. Rhythmic groupings (notes sharing rhythmic patterns)
-4. Registral groupings (notes in similar ranges)
-5. Timbral groupings (notes played by same instrument)
-6. Analyst's hypothesis about structure
+# Prerequisites
+- **Pitch-class set** -- Segmentation determines which notes form a set
+- **Prime form** -- Segmented sets are analyzed for prime form
 
-# Musical Context
-Segmentation is one of the most subjective aspects of set theory analysis. Different segmentations of the same passage can reveal different relationships - or none at all. Analysts may try multiple segmentations to find meaningful connections. The validity of a segmentation depends on whether it reveals musically significant relationships.
+# Key Properties
+1. Musically motivated groupings: vertical (chords), horizontal (melodies)
+2. Can also explore non-obvious groupings
+3. Not finding relationships is analytically significant
+4. Subjective element: analyst's judgment required
+5. Different segmentations can yield different results
+
+# Construction / Recognition
+**Factors for segmentation:**
+1. Notes sounding simultaneously (vertical)
+2. Notes in a melodic line (horizontal)
+3. Rhythmic groupings
+4. Registral proximity
+5. Analyst's hypothesis about structure
+
+# Context & Application
+Segmentation is one of the most subjective aspects of set theory. Different segmentations reveal different relationships -- or none. The Webern analysis in the source shows that adding the cello C# to the three-note chords yielded no consistent relationship between sets (p. 483).
 
 # Examples
-- Webern, Op. 5, No. 3: Chord alone {3, 11, 2} -> prime form (014)
-- With added cello note: {1, 3, 11, 2} -> prime form (0124)
-- Second chord with cello: different prime form (0236)
-- Adding the cello note revealed no consistent relationship between sets
+- Webern, Op. 5, No. 3: Chord alone {3, 11, 2} -> (014) (p. 481)
+- With cello C#: {1, 3, 11, 2} -> (0124) (p. 483)
+- Second chord with C#: (0236) -- different prime form, no consistent relationship (p. 483)
 
-# Related Concepts
-- Pitch-class set
-- Normal form
-- Prime form
-- Analytical methodology
+# Relationships
+## Related
+- **Set theory overview** -- Segmentation is an analytical methodology within set theory
+
+# Common Errors
+- **Error**: Assuming every possible grouping will reveal meaningful relationships
+  **Correction**: Not finding relationships is itself analytically significant
 
 # Common Confusions
-- Segmentation is not arbitrary but should be musically motivated
-- Different segmentations can yield different results
-- Not finding relationships is itself analytically significant
-- Segmentation requires analytical judgment, not just mechanical application
+- **Confusion**: Thinking segmentation is purely mechanical
+  **Clarification**: It requires musical and analytical judgment
 
 # Source Reference
-Chapter 33: Set Theory, Unit 12, Section 33.3.2 Segmentation
+Chapter 33, Section 33.3.2, PDF pages 482-483.
+
+# Verification Notes
+- Definition from source, p. 482; Webern segmentation example on pp. 482-483
+- Re-extracted from v2 card; preserved: Webern examples showing both successful and unsuccessful segmentation
+- Confidence: HIGH -- source provides clear definition with analytical demonstration
