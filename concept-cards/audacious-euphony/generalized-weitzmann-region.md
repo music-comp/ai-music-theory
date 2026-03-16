@@ -1,59 +1,111 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "Generalized Weitzmann Region (GWR)"
-category: analysis
+slug: generalized-weitzmann-region
+
+# === CLASSIFICATION ===
+category: neo-riemannian-theory
+subcategory: generalized regions
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
-pdf_page: 156
-unit: null
-authors: Richard Cohn
+pdf_page: 183
+section: "Scriabin's Mystic Species and Generalized Weitzmann Regions"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "GWR"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - weitzmann-region
+  - boretz-region
+  - nearly-even
+  - perfectly-even-glossary
+extends:
+  - weitzmann-region
+  - boretz-region
+related:
+  - mystic-chord
+  - wozzeck-chord
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a generalized Weitzmann region?"
+  - "How do Weitzmann and Boretz regions relate to a general principle?"
+  - "Why do triads have special voice-leading properties compared to larger chords?"
 ---
 
 # Quick Definition
-A collection of all nearly even chords related to a single perfectly even chord by single semitonal displacement, generalizing the concept that underlies both Weitzmann regions (for triads) and Boretz regions (for seventh chords).
+A generalized Weitzmann region (GWR) is the collection of all nearly even chords of cardinality n related to a single perfectly even chord by single semitonal displacement, abstracting the common structure of Weitzmann regions (triads) and Boretz regions (seventh chords) into a general framework applicable to chords of any size.
 
-# Formal Definition
-A Generalized Weitzmann Region (GWR) consists of all nearly even chords of cardinality n that are related to a single perfectly even chord of cardinality n by single semitonal displacement. The concept abstracts the common structure underlying both Weitzmann regions (where 6 consonant triads surround an augmented triad) and Boretz regions (where 8 Tristan-genus chords surround a diminished seventh chord). The GWR framework allows extension to chords of any size.
+# Core Definition
+"Given some nonprime universe of *nq* tones (*n* and *q* are integers, *n* > 2, *q* > 1), there exist *q* perfectly equal divisions of chord size *n*. Each perfectly even division serves as the *core* for 2*n* nearly even chords: *n upshifters* that result from upward semitonal perturbation, and *n downshifters* that result from downward perturbation. Each such region plays a role corresponding to that of a Weitzmann region (for q = 4, n = 3) or a Boretz region (for q = 3, n = 4); I shall refer to it as a *generalized Weitzmann region* (GWR)" (p. 183). Any two chords sharing a GWR "are exactly two voice-leading units apart, whether related to each other by transposition or inversion."
 
-# Construction/Recognition
-For a perfectly even chord P of cardinality n:
-- GWR(P) = all chords X such that:
-  - |X| = n (X has same number of notes as P)
-  - X is nearly even
-  - X and P differ by single semitonal displacement (share n-1 tones, remaining tones are a semitone apart)
+# Prerequisites
+- **Weitzmann region**: The triadic instance (n=3, q=4)
+- **Boretz region**: The tetrachordal instance (n=3, q=3)
+- **Nearly even chord**: The chord type populating GWRs
+- **Perfectly even chord**: The core of each GWR
 
+# Key Properties
+1. Each GWR has 2n members (n upshifters + n downshifters)
+2. Intra-regional progressions always involve exactly 2 voice-leading units regardless of chord size
+3. Bridging between adjacent GWRs requires n-2 moving voices
+4. For n=3 (triads): bridges involve 1 moving voice (minimal work -- hence triads' special status)
+5. For n=4 (Tristan genus): bridges involve 2 moving voices
+6. For n=6 (mystic/Wozzeck): bridges would involve 4 moving voices (impractical)
+
+# Construction / Recognition
 Instances:
-- n=3: Weitzmann region (6 consonant triads around 1 augmented triad)
-- n=4: Boretz region (8 Tristan-genus chords around 1 diminished seventh)
+- **n=3, q=4** (triads in 12-tone): 4 Weitzmann regions, each with 6 triads around 1 augmented triad
+- **n=4, q=3** (Tristan genus in 12-tone): 3 Boretz regions, each with 8 seventh chords around 1 diminished seventh
+- **n=6, q=2** (hexachords in 12-tone): 2 GWRs, each with 12 chords (6 mystic + 6 Wozzeck) around 1 whole-tone scale
 
-The GWR structure generalizes the voice-leading organization principle to any chord size.
+Adjacent GWRs and bridging:
+- Two GWRs are adjacent if their cores differ by semitone
+- The n upshifters of the lower GWR and n downshifters of the higher GWR form a bridging region
+- The collective exchange (generalized H) displaces n-1 voices one direction and 1 voice opposite
 
-# Musical Context
-The GWR framework demonstrates that:
-- The voice-leading organization of pan-triadic syntax is not specific to triads
-- The same structural principle operates for seventh chords and potentially larger chords
-- Nearly even chords of any cardinality cluster around perfectly even "centers"
-- This generalization reveals the underlying mathematical unity of chromatic voice-leading spaces
+# Context & Application
+The GWR framework reveals why triads have uniquely privileged voice-leading properties: "from the standpoint of minimal voice leading, the ideal situation occurs when n = 3. It is only then that n - 2 = 1, that is, that a bridging motion involves only a single unit of voice-leading work" (p. 184). As chord cardinality grows, bridging becomes increasingly less efficient. The framework also shows that nearly even chords of prime cardinality relative to the chromatic universe (e.g., diatonic and pentatonic scales in 12-tone) do not participate in GWRs.
 
 # Examples
-- Weitzmann regions: 4 GWRs partition the 24 consonant triads, each containing 6 triads around 1 augmented triad
-- Boretz regions: 3 GWRs partition the 24 Tristan-genus chords, each containing 8 seventh chords around 1 diminished seventh
-- Hypothetical extensions: 5-note, 6-note chords would have analogous GWR structures
+- **Weitzmann regions (n=3)**: 4 GWRs partitioning 24 consonant triads (pp. 183-184)
+- **Boretz regions (n=4)**: 3 GWRs partitioning 24 Tristan-genus chords (p. 183)
+- **Hexachordal GWRs (n=6)**: Scriabin's mystic chords and Berg's Wozzeck chords as nearly even hexachords around whole-tone cores (pp. 183-184)
 
-# Related Concepts
-- Weitzmann Region
-- Boretz Region
-- Perfectly Even
-- Nearly Even
-- Single Semitonal Displacement
-- Augmented Triad
-- Diminished Seventh Chord
+# Relationships
+## Builds Upon
+- Weitzmann region (the triadic template)
+- Boretz region (the tetrachordal template)
+## Enables
+- Understanding why triads have uniquely efficient voice leading
+- Extension of voice-leading theory to any chord cardinality
+## Related
+- Mystic chord and Wozzeck chord (the hexachordal instantiation)
+## Contrasts With
+- (No direct contrast; GWR is a generalization, not an alternative)
+
+# Common Errors
+- **Error**: Thinking GWR is a new concept alongside Weitzmann and Boretz regions
+  **Correction**: It names the common structure already present in both; it is a generalization, not an addition
 
 # Common Confusions
-- GWR is a theoretical abstraction, not a new concept - it names the common structure of Weitzmann and Boretz regions
-- The number of chords in a GWR depends on the cardinality (3-note: 6 chords; 4-note: 8 chords)
-- GWRs are defined by voice-leading proximity to a perfectly even center, not by scale membership
-- The GWR concept applies to any cardinality, not just triads and seventh chords
+- **Confusion**: Assuming larger cardinalities produce more useful voice-leading systems
+  **Clarification**: Larger n means more moving voices in bridges (n-2), making bridging progressions increasingly unparsimonious
 
 # Source Reference
-Glossary, page 229
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 183-185.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: three cardinality examples, formal definition. Fresh extraction adds extensive direct quotations, bridging formula (n-2), collective exchange generalization, and prime cardinality exclusion.

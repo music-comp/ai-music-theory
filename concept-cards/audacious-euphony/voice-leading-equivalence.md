@@ -1,54 +1,100 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Voice-Leading Equivalence
-category: theory
+slug: voice-leading-equivalence
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Hexatonic Cycles"
 chapter_number: 2
 pdf_page: 35
-unit: null
-authors: Richard Cohn
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - lp-transformation
+  - idealized-voice-leading
+extends: []
+related:
+  - melodic-dualism
+  - p-transformation
+  - l-transformation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is voice-leading equivalence?"
+  - "Why can LP on major and LP on minor be called the same transformation?"
 ---
 
 # Quick Definition
-Voice-leading equivalence holds when two progressions share the same voice-leading behavior (which voices move, in which directions, by how much) despite potentially different root motions or tonal interpretations.
+Two triadic progressions are voice-leading equivalent when each individual voice exhibits the same behavior (direction and magnitude of motion), regardless of whether the root motions differ in direction.
 
-# Formal Definition
-Two triadic progressions are voice-leading equivalent when the behavior of each individual voice is the same: corresponding voices move in the same direction by the same interval, or hold the same common tones. This equivalence is independent of root motion direction. LP on a major triad (roots move up by major third) and LP on a minor triad (roots move down by major third) are voice-leading equivalent because both expand a perfect fifth to a major sixth via contrary semitonal motion.
+# Core Definition
+"What C major -> E major shares with c minor -> ab minor is the behavior of each individual voice: the G voice moves up by semitone, the C voice moves down by semitone, and the remaining voice holds constant" (Cohn, p. 50). This equivalence is "independent of root motion": LP on major moves roots up by major third, while LP on minor moves roots down by major third, yet both share the same voice-leading gesture. "It is this voice-leading equivalence that the label **LP** captures" (p. 51). The concept "neutralizes" objections that LP should not apply to both directions of root motion.
 
-# Construction/Recognition
-Voice-leading equivalence classes:
-- LP and PL on any triad: one tone holds, fifth expands to sixth (or contracts)
-- P on major = P on minor: fifth holds, third moves by chromatic semitone
-- L on major = L on minor: minor third holds, other tone moves by diatonic semitone
+# Prerequisites
+- **lp-transformation** — Voice-leading equivalence justifies calling LP on major and LP on minor the same transformation
+- **idealized-voice-leading** — Equivalence is assessed under idealized voice leading
 
+# Key Properties
+1. Defined by the behavior of individual voices (direction + magnitude)
+2. Independent of root motion direction
+3. Justifies using the same transformation label for major and minor versions
+4. "Any LP operation sends its perfect-fifth dyad to a major sixth, and any PL operation does the reverse" (p. 50)
+5. A structural claim, not a perceptual one
+
+# Construction / Recognition
 Example demonstrating equivalence (p. 50):
 - C major to E major (LP): C->B (down), E holds, G->G# (up)
-- c minor to ab minor (LP): C->B (down), Eb holds, G->Ab (up)
-- Same voice-leading gesture: two voices move by contrary semitone, one holds
+- c minor to ab minor (LP): C->B/Cb (down), Eb holds, G->Ab (up)
+- Same gesture: two outer voices move by contrary semitone, middle voice holds
 
-This equivalence "neutralizes" objections that LP should not be called the same transformation when it moves roots in opposite directions.
-
-# Musical Context
-Voice-leading equivalence allows analysts to identify structurally similar progressions that might look different on the page or sound different in tonal context. The Strauss example demonstrates how composers can exploit this equivalence for thematic connection across passages in different modes.
+# Context & Application
+Voice-leading equivalence allows analysts to identify structurally similar progressions that look different on the page. The Strauss "Fruhling" example demonstrates how composers exploit this equivalence for thematic connection across modes.
 
 # Examples
-From the text (pp. 50-51):
-Richard Strauss, "Fruhling" (Four Last Songs, 1949):
-"After an orchestral alternation between c minor and ab minor, the singer enters on the wave of that same progression at m. 5. The second stanza opens on a C major triad that moves directly to E major in 6/4 position. The two passages feature major-third transpositions but in opposite directions. What they share is their voice leading: both progressions lead C down by semitone and G up by semitone while keeping their third voice invariant. It is this voice-leading equivalence that the label LP captures."
+**Example 1** (pp. 50-51): Strauss, "Fruhling" (Four Last Songs): "The two passages feature major-third transpositions but in opposite directions. What they share is their voice leading: both progressions lead C down by semitone and G up by semitone while keeping their third voice invariant."
 
-# Related Concepts
-- LP/PL Transformation
-- Melodic Dualism
-- Voice-Leading Parsimony
-- Root Motion
-- P Transformation
-- L Transformation
+# Relationships
+## Builds Upon
+- **lp-transformation** — The primary context where voice-leading equivalence is invoked
+- **idealized-voice-leading** — The framework for assessing equivalence
+
+## Enables
+- **melodic-dualism** — Voice-leading equivalence grounds the more benign melodic dualism
+
+## Related
+- **p-transformation** — P on major and P on minor are voice-leading equivalent
+- **l-transformation** — L on major and L on minor are voice-leading equivalent
+
+## Contrasts With
+No direct contrasts within this source.
+
+# Common Errors
+- **Error**: Requiring root motion to match for two progressions to be "equivalent"
+  **Correction**: Voice-leading equivalence is defined by individual voice behavior, not root direction
 
 # Common Confusions
-- Voice-leading equivalence does not mean the progressions sound identical; tonal context matters
-- Root motion direction is not part of voice-leading equivalence; roots may move opposite directions
-- This equivalence is what justifies using the same transformation label for major and minor versions
-- Voice-leading equivalence is a structural claim, not a perceptual one
+- **Confusion**: Thinking voice-leading equivalent progressions sound identical
+  **Clarification**: They share structural voice-leading features but may sound different in tonal context
 
 # Source Reference
-Chapter 2: Hexatonic Cycles, pp. 50-51
+Chapter 2: Hexatonic Cycles, pp. 50-51.
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: the Strauss example, the voice-leading gesture description, the independence from root motion
+- Confidence: HIGH — explicitly demonstrated with musical example

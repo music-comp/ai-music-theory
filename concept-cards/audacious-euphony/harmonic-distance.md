@@ -1,63 +1,114 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Harmonic Distance
-category: theory
+slug: harmonic-distance
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: distance-metrics
+tier: foundational
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Introduction"
-chapter_number: 0
+chapter_number: null
 pdf_page: 9
-unit: null
-authors: Richard Cohn
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "triadic proximity"
+  - "harmonic proximity"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - triadic-distance
+  - root-interval-approach
+  - common-tone-approach
+  - voice-leading-approach
+  - voice-leading-work
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is harmonic distance?"
+  - "How can harmonic distance be measured?"
+  - "What distinguishes common-tone distance from voice-leading distance?"
 ---
 
 # Quick Definition
-The measurement of proximity or remoteness between harmonies (triads or keys), which can be calculated differently depending on whether one uses diatonic, common-tone, or voice-leading criteria.
+The measurement of proximity or remoteness between harmonies (triads or keys), which can be calculated using different criteria (diatonic, common-tone, or voice-leading) that may yield contradictory judgments.
 
-# Formal Definition
-Harmonic distance refers to the degree of relatedness between two triads or keys. The book identifies multiple, historically distinct methods for calculating this distance:
-1. Classical/diatonic: based on mutual membership in diatonic collections
-2. Common-tone: based on the number of shared pitch classes
-3. Voice-leading: based on the aggregate semitonal displacement between chord tones
+# Core Definition
+Harmonic distance refers to the degree of relatedness between two triads or keys. The book identifies multiple, historically distinct methods for calculating this distance. Riemann's judgment that certain chromatically related triads are "closely related" reveals a "conception of harmonic distance" that is "evidently rather different from our own" (p. 9). Current textbooks inherit the "eighteenth-century formulation that triads are closely related if their eponymous scales are identical to within one degree of difference: they share at least six out of seven tones" (p. 9). The investigation of alternative conceptions of harmonic distance is the book's first major question.
 
-These methods produce different, sometimes contradictory, proximity judgments, revealing that "harmonic distance" is not a single fixed property but depends on the criteria applied.
+# Prerequisites
+This is a foundational concept with no prerequisites within this source.
 
-# Construction/Recognition
+# Key Properties
+1. Not a single fixed property but depends on the criteria applied
+2. Three primary metrics: diatonic (scale-tone sharing), common-tone (pitch-class intersection), voice-leading (semitonal displacement)
+3. Different metrics can produce contradictory proximity judgments for the same pair of triads
+4. The choice of metric reflects historical and stylistic context
+5. Nineteenth-century theorists cultivated alternative conceptions distinct from modern textbook assumptions
+
+# Construction / Recognition
 For any two triads X and Y:
-
-Diatonic distance: Count how many diatonic collections contain both X and Y. Closer = more shared collections.
-
-Common-tone distance: Count shared pitch classes (0, 1, or 2 for triads). Closer = more common tones.
-
-Voice-leading distance: Sum the semitonal motion of each voice under idealized voice leading. Closer = fewer semitones of total motion.
+1. **Diatonic distance**: Count how many diatonic collections contain both. Closer = more shared collections
+2. **Common-tone distance**: Count shared pitch classes (0, 1, or 2). Closer = more common tones
+3. **Voice-leading distance**: Sum semitonal motion under idealized voice leading. Closer = fewer semitones
 
 Example: C major to E major
 - Diatonic: distant (no shared diatonic collection)
 - Common-tone: 1 (share E)
-- Voice-leading: 2 units (C stays, E stays, G moves to G#)
+- Voice-leading: 2 units (C->B, G->G#, E holds)
 
-# Musical Context
-Riemann's 1909 description of triads as "closely related" despite sharing only 3 of 7 scale tones reveals a conception of harmonic distance different from modern textbooks. The historical shift in how theorists calculated harmonic distance reflects changing compositional practice:
-- 18th century: diatonic distance paramount
-- 19th century: common-tone and voice-leading distance increasingly valued
-- The coexistence of multiple distance metrics enables the "double syntax" of 19th-century music
+# Context & Application
+The concept of multiple distance metrics is the starting point for *Audacious Euphony*. Riemann's 1909 description reveals that his "conception of harmonic distance is evidently rather different from our own" (p. 9). The book reconstructs "conceptions of triadic distance that were proper to nineteenth-century harmonic thought but have since been stripped from music theory's inheritance" (p. 10).
 
 # Examples
-- Galeazzi (1796) rated C major to E major as "regular and good" (share E) while rating C major to d minor as "very irregular and poor" (no common tones), despite the latter being diatonically closer
-- Schubert's Bb major Sonata progression (Bb - Gb - f# - A - Bb): diatonically very disjunct but voice-leading conjunct
-- Krause (1827), Marx (1837), Hauptmann (1853), Helmholtz (1877): all prioritized common-tone relations
+**Example 1** (p. 9): Riemann describes triads as "closely related" despite their associated scales sharing only "three tones out of seven."
 
-# Related Concepts
-- Triadic Distance
-- Voice-Leading Work
-- Common-Tone Approach
-- Root-Interval Approach
-- Chromatic vs. Diatonic Organization
-- Idealized Voice Leading
+**Example 2** (Ch. 1, pp. 23-25): Galeazzi (1796) rated C major to E major as "regular and good" (share E) while rating C major to d minor as "very irregular and poor" (no common tones), despite the latter being diatonically closer.
+
+# Relationships
+## Builds Upon
+This is a foundational concept.
+
+## Enables
+- **triadic-distance** — The systematic investigation of multiple distance metrics in Ch. 1
+- **root-interval-approach** — One specific approach to measuring harmonic distance
+- **common-tone-approach** — Another specific approach
+- **voice-leading-approach** — The approach central to this book
+
+## Related
+- **voice-leading-work** — The specific metric used in the voice-leading approach
+- **audacious-euphony-paradox** — The paradox arises from conflicting distance metrics
+
+## Contrasts With
+No direct contrasts; the concept itself encompasses multiple approaches.
+
+# Common Errors
+- **Error**: Assuming there is a single "correct" measure of harmonic distance
+  **Correction**: Different measures capture different musical intuitions; each is valid within its framework
 
 # Common Confusions
-- There is no single "correct" measure of harmonic distance - different measures capture different musical intuitions
-- Close diatonic distance does not guarantee smooth voice leading (e.g., I to ii)
-- The textbook assumption that diatonic distance is primary reflects 18th-century aesthetics, not universal musical truth
-- Enharmonically equivalent triads (Gb vs F#) may have different diatonic distances from a reference point while having identical voice-leading distances
+- **Confusion**: Conflating close diatonic distance with smooth voice leading
+  **Clarification**: I to ii is diatonically close but involves more voice-leading work than I to bVI
+- **Confusion**: Assuming the modern textbook approach represents universal musical truth
+  **Clarification**: It reflects eighteenth-century aesthetics, not a universal standard
 
 # Source Reference
-Introduction, pages 9-12
+Introduction, pp. 9-12. Elaborated in Chapter 1, pp. 19-31.
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: the Galeazzi example, the C-E comparison across metrics
+- Definition based on direct quotation from p. 9
+- Confidence: HIGH — the concept is the book's explicit starting point

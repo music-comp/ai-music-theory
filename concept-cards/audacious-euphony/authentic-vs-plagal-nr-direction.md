@@ -1,53 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Authentic vs. Plagal N/R Direction
-category: analysis
+slug: authentic-vs-plagal-nr-direction
+
+# === CLASSIFICATION ===
+category: triadic-systems
+subcategory: cyclic-structures
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Weitzmann Regions"
 chapter_number: 4
-pdf_page: 77
-unit: null
-authors: Richard Cohn
+pdf_page: 80
+section: "Weitzmann Transformations and N/R Cycles"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "N/R cycle direction"
+  - "Clockwise vs. counterclockwise N/R"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - nr-cycle
+  - n-transformation
+  - r-transformation
+extends: []
+related:
+  - whole-tone-scale-from-nr-cycle
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the two directions of an N/R cycle?"
+  - "How does direction affect the functional interpretation of an N/R cycle?"
 ---
 
 # Quick Definition
-The two opposite directions of traversing an N/R cycle: authentic (clockwise, where major triads are local tonics with minor subdominants) and plagal (counterclockwise, where minor triads are local tonics with major dominants).
+The two opposite directions of traversing an N/R cycle: authentic (clockwise, where major triads are local tonics with minor subdominants) and plagal (counterclockwise, where minor subdominants move to major tonics, and minor tonics to major dominants).
 
-# Formal Definition
-N/R cycles can be traversed in two directions:
-- Authentic direction: Major triads function as local tonics; minor triads serve as subdominants. Motion proceeds "clockwise" on Figure 4.3.
-- Plagal direction: Minor triads function as local tonics; major triads precede them as dominants. Minor subdominants move to major tonics, minor tonics to major dominants.
+# Core Definition
+N/R cycles can be traversed in two directions. In the authentic direction, "each major triad is prolonged as a local tonic, which each minor triad serves as subdominant" (p. 81). In the plagal direction, "minor subdominants move to their major tonics, and minor tonics, to their major dominants" (p. 82). The direction determines the functional interpretation of each triad and affects whether dominant sevenths are attached to major triads.
 
-The direction determines functional interpretation and affects whether dominant sevenths are attached to major triads (authentic) or other configurations.
+# Prerequisites
+- **N/R cycle**: Must understand the complete cycle to grasp directional options
+- **N and R transformations**: The two operations whose alternation creates the cycle
 
-# Construction/Recognition
-Authentic direction example (from C major):
-C major (tonic) -> f minor (subdominant) -> Ab major (tonic) -> db minor (subdominant) -> ...
+# Key Properties
+1. Authentic (clockwise): Major triads = local tonics; minor triads = subdominants
+2. Plagal (counterclockwise): Reverses functional roles
+3. Schubert consistently uses the authentic direction
+4. Liszt explores both: authentic in *Faust* Symphony, plagal in *Liebestraum* No. 3 and "Vision" etude
+5. With sevenths in authentic direction, whole-tone scales emerge
 
-Plagal direction example (from C major):
-C major <- a minor (tonic) <- E major (dominant) <- c# minor (tonic) <- ...
+# Construction / Recognition
+Authentic: C major (tonic) --(N)--> f minor (subdominant) --(R)--> Ab major (tonic) --(N)--> ...
+Plagal: C major --(R)--> a minor --(N)--> E major --(R)--> c# minor --(N)--> ...
 
-In authentic direction with sevenths, whole-tone scales emerge in treble register.
-
-# Musical Context
-Schubert consistently uses the authentic direction in his N/R cycles. Liszt explores both directions: authentic in the Faust Symphony, plagal in "O Lieb, so lang du lieben kannst" (Liebestraum No. 3) and the "Vision" etude. The plagal direction reverses the traditional dominant-tonic hierarchy.
+# Context & Application
+The directional choice is compositional, not structurally determined. Both directions produce valid complete cycles through a Weitzmann region.
 
 # Examples
-- Schubert Fourth Symphony, mm. 86-106: Authentic direction, major triads as local tonics
-- Schubert Ninth Symphony trombone solo: Authentic direction with dominant sevenths
-- Liszt "O Lieb, so lang du lieben kannst": Plagal direction
-- Liszt "Vision" etude: Plagal direction
+**Schubert, Fourth Symphony** (p. 81): Authentic direction, consonant triads only.
+**Schubert, Ninth Symphony trombone solo** (p. 81): Authentic direction with dominant sevenths.
+**Liszt, "O Lieb, so lang du lieben kannst"** (p. 82): Plagal direction.
+**Liszt, "Vision" etude** (p. 82): Plagal direction.
 
-# Related Concepts
-- N/R Cycle
-- N Transformation
-- R Transformation
-- Dominant-Tonic Function
-- Whole-Tone Scale
+# Relationships
+## Builds Upon
+- nr-cycle: The directional options apply to this cycle
+
+## Enables
+- whole-tone-scale-from-nr-cycle: Whole-tone scales emerge specifically in the authentic direction with sevenths
+
+## Related
+None additional.
+
+## Contrasts With
+None specified; the two directions contrast with each other.
+
+# Common Errors
+- **Error**: Treating one direction as structurally superior
+  **Correction**: Both directions are equally valid; the choice is compositional
 
 # Common Confusions
-- Both directions are equally valid structurally; the choice is compositional
-- Authentic and plagal refer to functional interpretation, not just motion direction
-- The whole-tone scale emergence occurs specifically in the authentic direction with sevenths
+- **Confusion**: "Authentic" and "plagal" refer to cadence types
+  **Clarification**: The terms describe the functional interpretation of triads within the cycle, not cadential patterns
 
 # Source Reference
-Chapter 4: Weitzmann Regions, pages 80-82
+Cohn, Richard. *Audacious Euphony*, Chapter 4: Weitzmann Regions, pp. 80-82.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Liszt examples for both directions, Schubert authentic consistency. High confidence: clearly described with specific examples.

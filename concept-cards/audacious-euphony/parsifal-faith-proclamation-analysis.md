@@ -1,61 +1,106 @@
 ---
-concept: Parsifal Faith Proclamation Analysis
+# === CORE IDENTIFICATION ===
+concept: "Parsifal Faith Proclamation Analysis"
+slug: parsifal-faith-proclamation-analysis
+
+# === CLASSIFICATION ===
 category: analysis
+subcategory: piece-specific analysis
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Syntactic Interaction and the Convertible Tonnetz"
 chapter_number: 8
-pdf_page: 186
-unit: null
-authors: Richard Cohn
+pdf_page: 206
+section: "Two Analytical Vignettes: Wagner and Brahms"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - convertible-tonnetz
+  - diatonic-encapsulation
+  - lr-chain
+  - plagal-drift
+extends: []
+related:
+  - syntactic-interaction
+  - rings-arrows
+contrasts_with:
+  - brahms-first-symphony-analysis
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does the convertible Tonnetz analyze Wagner's Parsifal?"
+  - "What forces halt a plagal drift on the Tonnetz?"
 ---
 
 # Quick Definition
-Cohn's analysis of Wagner's Faith Proclamation (Parsifal act 1 Prelude, mm. 45-55) demonstrating the convertible Tonnetz in action: a sentence structure where plagal drift through an L/R chain is halted by diatonic encapsulation around eb minor.
+Cohn's analysis of Wagner's Faith Proclamation (Parsifal act 1 Prelude, mm. 45-55), demonstrating the convertible Tonnetz: a sentence structure where plagal drift through an L/R chain is halted by diatonic encapsulation around eb minor.
 
-# Formal Definition
-The Faith Proclamation is structured as a sentence. The basic idea, beginning on Ab major, is transposed up a minor third to Cb major. The presentation segments can be heard as half-cadential (tonic to dominant per Lewin and Lerdahl) or as plagal (subdominant to tonic). Cohn supports the plagal hearing based on: (1) global role of plagal cadences in Parsifal's tonal logic; (2) local context following Dresden Amen's plagal extension to Eb major; (3) associative connection to Spear motive (mm. 4-6). The relationship between Ab major and Eb major is ultimately underdetermined - a "Hauptmannian antithesis without synthesis."
+# Core Definition
+The Faith Proclamation is structured as a sentence. The basic idea (Ab major to Eb major) is transposed up a minor third (Cb major to D/Ebb major). The presentation segments are underdetermined between half-cadential (T-D) and plagal (S-T) hearings. Cohn supports the plagal hearing based on: (1) global role of plagal cadences in Parsifal's tonal logic; (2) local context following Dresden Amen's plagal extension; (3) associative connection to the Spear motive (mm. 4-6). "The relationship between Ab major and Eb major is ultimately underdetermined, a Hauptmannian antithesis without synthesis" (p. 207).
 
-# Construction/Recognition
-Sentence structure:
-- Basic idea: Ab major - Eb major (underdetermined: T-D or S-T?)
-- Repetition: Cb major - Ebb/D major (minor third transposition)
-- Continuation: Nested sentence beginning on Ebb, devolving into plagal drift
+# Prerequisites
+- **Convertible Tonnetz**: The model applied here
+- **Diatonic encapsulation**: What halts the drift
+- **L/R chain**: The track of the plagal drift
+- **Plagal drift**: The analytical phenomenon observed
 
-The drift through L/R chain:
-- Motion is not predictable; "this is one of those triadic chains that 'can be arrested at any point or can just as easily go on in perpetuity'" (Mitchell 1962)
-- Figure 8.11 traces the path with gray triangle showing eb minor's role in presentation phrase
+# Key Properties
+1. Sentence structure with underdetermined harmonic function
+2. Continuation devolves into plagal drift along L/R chain
+3. Four distinct forces halt the drift and establish encapsulation
+4. Hermeneutic extension connects to Parsifal's dramatic themes
 
-Forces halting the drift:
+# Construction / Recognition
+**Forces halting the drift** (pp. 208-209):
 1. Leftward motion from eb minor to Cb major (stanches perpetual downshift)
 2. Reverse hemiola (elongates counting pulse)
-3. Accented dissonance: F-half-dim-7 as subdominant with characteristic dominant dissonance
-4. eb minor's encapsulation clinched by flanking with syntonic images
+3. First accented dissonance: F-half-dim-7 as subdominant with characteristic dominant dissonance
+4. eb minor's encapsulation clinched by flanking syntonic images
 
-# Musical Context
-The hermeneutic extension: "Stopping the flow" resonates with Parsifal's central event - healing Amfortas's bleeding wound. eb minor appears in the presentation phrase (gray triangle in Figure 8.11) where its three double-common-tone associates are sounded in turn. The music "perambulates about eb minor without knowing how to respond to it, just as the goose-headed Parsifal cluelessly gawked at the Communion service in act 1." Only after an aimless journey does Parsifal "stumble back upon that eb minor thing in act 3, recognize its value, and use it to stanch the plagal drift."
+**Hermeneutic extension**: "Stopping the flow" resonates with healing Amfortas's wound. eb minor appears in the presentation phrase (gray triangle in Figure 8.11) where its three double-common-tone associates are sounded in turn. "The music perambulates about eb minor without knowing how to respond to it, just as the goose-headed Parsifal cluelessly gawked at the Communion service" (p. 209).
 
-Following the eb minor cadence, the plagal flow temporarily reverses (Cb major Grail theme at m. 56) but then devolves into even more extended drift to the chromatically tortured reprise at m. 79.
+# Context & Application
+This analysis contrasts with the Brahms analysis that follows: Wagner uses structural means (supplementary dissonances, reversals, syntonic images) to halt drift, while Brahms uses rhetorical ones (thematic statements on hypermetric downbeats). The undetermined function of the basic idea shows the advantage of "a conceptual and representational system that does not require a determination" (p. 207).
 
 # Examples
-- Figure 8.10: Score of mm. 45-55 (Faith Proclamation)
-- Figure 8.11: Tonnetz analysis showing L/R chain and diatonic encapsulation
-- Web score 8.10 provides complete score
-- Murphy (2001) provides further analysis of the extended plagal drift
+- Figure 8.10 (p. 207): Score of mm. 45-55
+- Figure 8.11 (p. 208): Tonnetz analysis showing L/R chain and encapsulation
+- The gray triangle showing eb minor's role in the presentation phrase
+- Murphy (2001): Further analysis of the extended plagal drift
 
-# Related Concepts
-- Convertible Tonnetz
-- L/R chain
-- Diatonic encapsulation
-- Plagal drift
-- Hauptmannian antithesis
-- Sentence structure
-- Dresden Amen
+# Relationships
+## Builds Upon
+- Convertible Tonnetz, L/R chain, diatonic encapsulation
+
+## Enables
+- Understanding of structural vs. rhetorical means of encapsulation
+
+## Related
+- Syntactic interaction (the phenomenon demonstrated)
+
+## Contrasts With
+- Brahms First Symphony analysis (rhetorical vs. structural encapsulation)
+
+# Common Errors
+- **Error**: Forcing the Ab/Eb relationship into either T-D or S-T
+  **Correction**: The relationship is genuinely underdetermined; the Tonnetz represents this without requiring determination
 
 # Common Confusions
-- The Ab/Eb relationship is genuinely underdetermined; forcing T-D or S-T interpretation misses the point
-- The drift is not aimless composition; it is controlled suspension of tonal gravity
-- Encapsulation does not end the passage; it provides momentary grounding before further drift
-- Wagner's enharmonic notation (D major for Ebb major) is pragmatic, not syntactically significant
+- **Confusion**: The drift is aimless or poorly composed
+  **Clarification**: It is a controlled suspension of tonal gravity, dramatically motivated
 
 # Source Reference
-Chapter 8: Syntactic Interaction and the Convertible Tonnetz, pages 206-210
+Cohn, Richard. *Audacious Euphony*, Chapter 8, pp. 206-210.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: four forces halting drift, hermeneutic extension (Amfortas/Parsifal), Hauptmannian antithesis. Fresh extraction adds v3.1 structure, contrast with Brahms analysis.

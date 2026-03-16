@@ -1,55 +1,103 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Perfectly Even Chord
-category: theory
+slug: perfectly-even-chord
+
+# === CLASSIFICATION ===
+category: neo-riemannian-theory
+subcategory: theoretical-framework
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Hexatonic Cycles"
 chapter_number: 2
 pdf_page: 35
-unit: null
-authors: Richard Cohn
+section: "Near Evenness, Minimal Voice Leading, and the Central Role of Augmented Triads"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "perfectly symmetric chord"
+  - "equal division of the octave"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - near-evenness
+  - augmented-triad-as-axis
+contrasts_with:
+  - near-evenness
+  - consonant-triad
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a perfectly even chord?"
+  - "Why can't perfectly even chords voice-lead smoothly to chords of the same type?"
 ---
 
 # Quick Definition
-A perfectly even chord divides the octave into exactly equal parts, such as the augmented triad (three equal parts of 4 semitones each) or the diminished seventh chord (four equal parts of 3 semitones each).
+A chord that divides the octave into exactly equal parts, such as the augmented triad (three parts of 4 semitones each) or the diminished seventh chord (four parts of 3 semitones each).
 
-# Formal Definition
-A chord is perfectly even when all its constituent intervals (between adjacent pitch classes when arranged around the octave) are identical. In 12-tone equal temperament, this is possible only when the number of notes evenly divides 12: dyads (tritone = 2 notes, dividing into 2 parts of 6 semitones), trichords (augmented triad = 3 notes, dividing into 3 parts of 4 semitones), tetrachords (diminished seventh = 4 notes, dividing into 4 parts of 3 semitones), and hexachords (whole-tone scale = 6 notes, dividing into 6 parts of 2 semitones).
+# Core Definition
+A chord is perfectly even when all constituent intervals are identical. In 12-tone equal temperament, this requires the number of notes to evenly divide 12. Perfectly even chords serve as the structural axes from which nearly even chords are derived. The key theoretical point: "In the perfectly even case, the axis that reflects C and E into each other also reflects G# into itself. Consequently, the perfectly even augmented triad cannot be distinguished from its reflection, and the transformation is a phantom" (Cohn, p. 54). This means perfectly even chords cannot voice-lead to different chords of the same type by single semitone.
 
-# Construction/Recognition
+# Prerequisites
+This concept has no strict prerequisites within this source.
+
+# Key Properties
+1. All constituent intervals are identical
+2. Only possible when chord cardinality evenly divides 12
+3. Invariant under inversion about any axis bisecting an interval
+4. Cannot voice-lead to another chord of the same type by single semitone
+5. Serve as the "parent" structures from which nearly even chords are derived
+
+# Construction / Recognition
 Perfectly even chords in 12-TET:
-- 2 notes: tritone (C-F#), interval pattern [6-6]
-- 3 notes: augmented triad (C-E-G#), pattern [4-4-4]
-- 4 notes: diminished seventh (C-Eb-Gb-Bbb), pattern [3-3-3-3]
-- 6 notes: whole-tone scale, pattern [2-2-2-2-2-2]
+- 2 notes: tritone (C-F#), pattern [6-6], 6 instances
+- 3 notes: augmented triad (C-E-G#), pattern [4-4-4], 4 instances
+- 4 notes: diminished seventh (C-Eb-Gb-A), pattern [3-3-3-3], 3 instances
+- 6 notes: whole-tone scale (C-D-E-F#-G#-A#), pattern [2-2-2-2-2-2], 2 instances
 
-Key property: A perfectly even chord is invariant under inversion about any axis that bisects one of its intervals. This means that reflection of a perfectly even chord produces the same chord - there is no "inversion" distinct from the original.
-
-From Figure 2.17(a): When a trichord is perfectly even (augmented triad), "the axis that reflects C and E into each other also reflects G# into itself. Consequently, the perfectly even augmented triad cannot be distinguished from its reflection, and the transformation is a phantom."
-
-# Musical Context
-Perfectly even chords cannot voice-lead to themselves by single semitone because any single-semitone displacement produces a different chord type. They serve as the "parent" structures from which nearly even chords (like consonant triads) are derived. The perfectly even augmented triad is the axis around which hexatonic systems are organized.
+# Context & Application
+Perfectly even chords are "the invisible axes about which pan-triadic progressions spin" (p. 52). The augmented triad plays this role for consonant triads; the diminished seventh plays it for dominant/half-diminished seventh chords; the whole-tone collection plays it for mystic chords.
 
 # Examples
-From the text (p. 54-55):
-- The augmented triad CEG# as the perfectly even trichord
-- Figure 2.17 contrasts the augmented triad's behavior under reflection with that of consonant triads and dissonant [015]-type trichords
-- "In the perfectly even case, the axis that reflects C and E into each other also reflects G# into itself"
+**Example 1** (p. 54): Figure 2.17(a) shows the augmented triad under reflection: "the axis that reflects C and E into each other also reflects G# into itself."
 
-Historical context: Carl Friedrich Weitzmann (1853) recognized the augmented triad's unique status as a "perfectly even trisection of the octave" (addressed further in Chapter 3).
+**Example 2** (p. 55): Other perfectly even structures and their nearly even derivatives: diminished seventh -> dominant/half-diminished sevenths; whole-tone -> mystic chords; maximally even heptachords -> diatonic collections.
 
-# Related Concepts
-- Augmented Triad
-- Near Evenness
-- Diminished Seventh Chord
-- Whole-Tone Scale
-- Inversional Symmetry
-- Minimal Voice Leading
+# Relationships
+## Builds Upon
+This is a foundational structural concept.
+
+## Enables
+- **near-evenness** — Nearly even chords are defined as minimal perturbations of perfectly even chords
+- **augmented-triad-as-axis** — The augmented triad is the perfectly even trichord
+
+## Related
+No additional related concepts within this scope.
+
+## Contrasts With
+- **near-evenness** — Perfectly even chords lack the "wobble" that enables smooth voice leading
+- **consonant-triad** — Consonant triads are nearly (not perfectly) even
+
+# Common Errors
+- **Error**: Assuming perfectly even chords voice-lead smoothly to each other
+  **Correction**: They cannot, because reflection of a perfectly even chord produces itself (the "phantom" transformation)
 
 # Common Confusions
-- Perfectly even chords cannot voice-lead smoothly to OTHER chords of the same type (augmented to augmented requires more than single semitone)
-- There are only 4 augmented triads, 3 diminished seventh chords, and 2 whole-tone scales (due to their symmetry, transposition often reproduces the same chord)
-- "Even" refers to intervallic distribution, not to consonance or smoothness
-- Perfectly even chords are maximally symmetric, which limits their voice-leading flexibility within their own chord type
+- **Confusion**: Thinking "perfectly even" means "consonant" or "stable"
+  **Clarification**: "Even" refers to intervallic distribution; augmented triads and diminished sevenths are typically considered dissonant
 
 # Source Reference
-Chapter 2: Hexatonic Cycles, pp. 52-55
+Chapter 2: Hexatonic Cycles, pp. 52-55. Figures 2.15, 2.17.
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: the complete list of perfectly even chords in 12-TET, the "phantom transformation" concept, the Weitzmann historical reference
+- Confidence: HIGH — explicitly described with geometric demonstration

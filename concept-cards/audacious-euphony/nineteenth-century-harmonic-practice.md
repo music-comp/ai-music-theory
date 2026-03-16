@@ -1,66 +1,106 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Nineteenth-Century Harmonic Practice
-category: theory
+slug: nineteenth-century-harmonic-practice
+
+# === CLASSIFICATION ===
+category: historical-context
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Introduction"
-chapter_number: 0
+chapter_number: null
 pdf_page: 9
-unit: null
-authors: Richard Cohn
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "long nineteenth century"
+  - "Romantic harmonic practice"
+  - "chromatic triadic practice"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - pan-triadic-syntax
+  - classical-versus-romantic-syntax
+  - audacious-euphony-paradox
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What characterizes nineteenth-century harmonic practice?"
+  - "What is the 'long nineteenth century' in music?"
 ---
 
 # Quick Definition
-The harmonic language of the "long nineteenth century" (roughly 1780s-1910s) characterized by an increasing exploitation of chromatic triadic progressions alongside traditional diatonic tonality.
+The harmonic language of the "long nineteenth century" (roughly 1780s-1910s), characterized by increasing exploitation of chromatic triadic progressions alongside traditional diatonic tonality.
 
-# Formal Definition
-Nineteenth-century harmonic practice encompasses the repertoire from late Mozart and Haydn through early Schoenberg, during which composers increasingly exploited the voice-leading properties of consonant triads to create progressions that operate by chromatic rather than purely diatonic logic. This practice involves the coexistence of classical diatonic syntax with pan-triadic (chromatic) syntax, sometimes alternating, sometimes overlaid. The characteristic sound involves chromatic third relations, enharmonic pivots, and sequential patterns that traverse the chromatic universe.
+# Core Definition
+Nineteenth-century harmonic practice encompasses the repertoire from late Mozart and Haydn through early Schoenberg, during which composers increasingly exploited the voice-leading properties of consonant triads to create progressions operating by chromatic rather than purely diatonic logic. Cohn's book "reconstructs conceptions of triadic distance that were proper to nineteenth-century harmonic thought but have since been stripped from music theory's inheritance" (p. 10). The practice involves the coexistence of classical diatonic syntax with pan-triadic syntax, "sometimes in alternation, sometimes in overlay."
 
-# Construction/Recognition
-Key characteristics:
-- Root motion increasingly by thirds (major and minor) rather than exclusively by fifths
-- Exploitation of common tones between chromatically distant triads
-- Use of minimal voice-leading paths (single semitonal displacements)
-- Enharmonic reinterpretation as a compositional resource
-- Sequences that divide the octave into equal parts (by major thirds or minor thirds)
-- Hexatonic and Weitzmann region organization alongside diatonic function
+# Prerequisites
+This is a foundational concept with no prerequisites within this source.
 
-The practice represents a gradual shift in the balance between two available syntactic systems rather than the abandonment of one for the other.
+# Key Properties
+1. Spans from Mozart/Haydn (1780s) through early Schoenberg (1910s)
+2. Chromatic progressions coexist with diatonic function rather than replacing it
+3. Root motion increasingly by thirds (major and minor) alongside traditional fifth relations
+4. Chromatic progressions frequently affiliate with altered realities and the supernatural
+5. The practice represents a gradual shift in balance between two available syntactic systems
+6. Four types of evidence support Cohn's model: theoretical power, analytical productivity, historical appropriateness, historical productivity (pp. 10-11)
 
-# Musical Context
-Chromatic progressions in this repertoire frequently associate with:
-- The supernatural and uncanny (magic sleep, enchantment, otherworldly realms)
-- Altered psychological states (dreams, meditation, transcendence)
-- Exotic or distant locales
-- Moments of heightened emotional intensity
+# Construction / Recognition
+Key compositional characteristics:
+1. Exploitation of common tones between chromatically distant triads
+2. Use of minimal voice-leading paths (single semitonal displacements)
+3. Enharmonic reinterpretation as a compositional resource
+4. Sequences dividing the octave into equal parts (by major or minor thirds)
+5. Hexatonic and Weitzmann region organization alongside diatonic function
 
-These associations suggest that listeners perceived chromatic progressions as departures from normal expectation while still finding them "euphonious" - coherent by an alternative logic.
+# Context & Application
+The book draws on four kinds of evidence for its model of this practice: theoretical power (the model generalizes beyond consonant triads), analytical productivity (new ways of hearing and representing), historical appropriateness (emerges from indigenous nineteenth-century thinking), and historical productivity (affords understanding of stylistic transformation across the period) (pp. 10-11).
 
 # Examples
-Composers featured in Audacious Euphony include:
-- Schubert (Piano Sonata in Bb, D. 960; "Der Doppelganger"; "Auf dem Flusse"; Eb Piano Trio)
-- Chopin (piano music throughout)
-- Liszt (mountain-top meditations, transcendental etudes)
-- Wagner (Magic Sleep from Die Walkure; Tristan)
-- Brahms (Second Symphony and chamber music)
-- Rimsky-Korsakov (magic and exotic kingdoms)
-- Dvorak ("New World" Symphony)
-- Bruckner (symphonies)
-- Faure (songs and chamber music)
-- Richard Strauss (tone poems)
+Composers featured in *Audacious Euphony* include: Mozart, Haydn, Beethoven, Schubert, Chopin, Liszt, Wagner, Brahms, Rimsky-Korsakov, Dvorak, Bruckner, Faure, Richard Strauss, and Schoenberg (pp. 16-17).
 
-# Related Concepts
-- Pan-Triadic Syntax
-- Double Syntax Hypothesis
-- Chromatic vs. Diatonic Organization
-- Hexatonic Cycle
-- Weitzmann Region
-- Triads' Second Nature
+**Example** (p. 12): "In song, opera, and programmatic music of the period, such progressions are often explicitly affiliated with altered or heightened realities."
+
+# Relationships
+## Builds Upon
+This is a foundational historical context concept.
+
+## Enables
+- **audacious-euphony-paradox** — The paradox characterizes this repertoire
+- **pan-triadic-syntax** — The syntactic system underlying the chromatic practice
+
+## Related
+- **classical-versus-romantic-syntax** — The two syntaxes operating within this practice
+
+## Contrasts With
+No direct contrasts within this source.
+
+# Common Errors
+- **Error**: Analyzing all nineteenth-century chromatic progressions as failures of diatonic logic
+  **Correction**: They are successes of an alternative logic operating alongside diatonic syntax
 
 # Common Confusions
-- 19th-century practice did not abandon classical tonality; it developed a parallel system that coexists with it
-- The "crisis" of tonality at century's end represents the culmination of a gradual process, not a sudden rupture
-- Chromatic progressions in this repertoire are not failures of diatonic logic but successes of an alternative logic
-- The terms "late Romantic harmony" or "extended tonality" can obscure the systematic nature of chromatic organization
+- **Confusion**: Thinking nineteenth-century practice abandoned classical tonality
+  **Clarification**: It developed a parallel system that coexists with classical syntax
+- **Confusion**: Viewing the "crisis of tonality" as a sudden rupture
+  **Clarification**: It represents the culmination of a gradual process
 
 # Source Reference
-Introduction, pages 9-17
+Introduction, pp. 9-17.
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: the composer list, the four evidence types, the point about gradual shift
+- Confidence: HIGH — the historical period and its characteristics are explicitly described throughout the Introduction

@@ -1,72 +1,99 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Compositional Script
+slug: compositional-script
+
+# === CLASSIFICATION ===
 category: analysis
+subcategory: compositional strategy
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
 pdf_page: 129
-unit: null
-authors: Richard Cohn
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "navigational strategy"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - voice-leading-zones
+  - cube-dance-graph
+extends:
+  - unified-triadic-space
+related:
+  - neighborhood
+  - pitch-retention-loop
+  - departure-return-script
+  - continuous-upshift
+contrasts_with:
+  - chromatic-sequences
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do I identify a compositional script (neighborhood, upshift, departure-return)?"
+  - "What are the three compositional scripts for navigating the triadic universe?"
 ---
 
 # Quick Definition
-A compositional script is a recurring pattern or template that guides harmonic and voice-leading decisions in nineteenth-century chromatic music, providing structural coherence without relying on traditional tonal syntax.
+A recurring pattern or template guiding harmonic and voice-leading decisions in nineteenth-century chromatic music, providing structural coherence through directed voice-leading trajectories rather than traditional tonal syntax.
 
-# Formal Definition
-**Compositional scripts** are organizing principles that guide how nineteenth-century composers created compositional strategies in response to the voice-leading structure of the triadic universe. Unlike sequential passages where periodicity and patterned repetition dominate, scripts provide flexibility associated with genres like sonata, symphony, and Lied.
+# Core Definition
+Compositional scripts organize how "nineteenth-century composers created compositional strategies in response to" the voice-leading structure of the triadic universe (p. 129). Unlike the sequential passages of chapter 5 where "varied repetition was the guiding principle," scripts provide "the flexibility associated with sonata, symphony, and Lied" (p. 129). Cohn identifies three: neighborhoods/pitch retention loops, departure-return, and continuous upshift.
 
-Cohn identifies three principal scripts:
-1. **Neighborhoods and pitch retention loops**: Visiting a small set of adjacent voice-leading zones while maintaining focal tone retention
-2. **Departure → return**: Using novel resources to define a route, destination, and nature of reversal
-3. **Continuous upshift**: A variation on classical tropes like the Mannheim Rocket and Sturm und Drang developmental cores
+# Prerequisites
+- **Voice-leading zones**: The metric space scripts traverse
+- **Cube Dance graph**: The representation on which scripts are traced
 
-# Construction/Recognition
-Scripts operate through:
-- Voice-leading zone trajectories (tracking sums of pitch classes)
-- Transformation sequences (P, R, L, N, S, H combinations)
-- Pitch-class retention patterns
-- Symmetrical or palindromic structures
+# Key Properties
+1. Scripts differ from sequences: repetition plays a less systematic role
+2. Three types: neighborhood, departure-return, continuous upshift
+3. Scripts are not mutually exclusive; compositions may combine elements
+4. Scripts describe voice-leading trajectories, not thematic processes
+5. Scripts make no claim to completeness; they establish that "pan-triadic voice-leading models can make contributions to interpretation" (p. 129)
 
-Scripts differ from sequences in allowing:
-- Non-periodic harmonic rhythm
-- Varied thematic materials
-- Flexible transformation substitutions within classes
-- Same-zone triadic substitutions
+# Construction / Recognition
+- **Neighborhood script**: Small set of adjacent zones; focal tone retention; P/R/L tours
+- **Departure-return script**: Zone trajectory descending then ascending (or vice versa), with possible overshoot
+- **Continuous upshift script**: Sustained unidirectional voice leading across multiple zones
 
-# Musical Context
-Compositional scripts represent how composers created structural coherence in chromatic music without strict adherence to:
-- Diatonic scale-degree relationships
-- Traditional modulatory schemes
-- Sequential patterning
-
-Scripts provide analysts with frameworks for understanding:
-- Development sections
-- Extended chromatic passages
-- Song cycle organization
-- Modulatory strategies in Lieder and instrumental music
+# Context & Application
+Scripts provide alternatives to classical tonal schemes for organizing large-scale chromatic passages. They enable analysis of works where functional tonal interpretations are strained or tendentious, by offering a more theoretically neutral framework based on voice-leading direction.
 
 # Examples
-**Pitch retention loop script**: Schubert's "Der Doppelganger" (F# neighborhood), Verdi's "Ah si, ben mio" (cantabile section), Brahms's Second Symphony development (D and A neighborhoods).
+- **Neighborhood**: Schubert "Der Doppelganger," Brahms Symphony No. 2 retransition
+- **Departure-return**: Schubert "Auf dem Flusse," Schubert Bb Sonata, Liszt Kyrie, Schubert "Liedesend'"
+- **Continuous upshift**: Schumann *Dichterliebe*, Beethoven "Tempest" and "Waldstein," Dvorak "New World"
 
-**Departure → return script**: Schubert's "Auf dem Flusse" (downshift/upshift complementarity), Schubert's Bb major Piano Sonata (two-phase descent and compensatory ascent), Liszt's Organ Kyrie (palindromic voice-leading zones), Schubert's "Liedesend'" (palindromic tonal structure).
+# Relationships
+## Builds Upon
+- Unified triadic space and voice-leading zones
+## Enables
+- Interpretation of large-scale chromatic passages
+## Related
+- Individual script types (neighborhood, departure-return, continuous upshift)
+## Contrasts With
+- Chromatic sequences (ch5: systematic repetition vs. ch6: flexible navigation)
 
-**Continuous upshift script**: Schumann's Dichterliebe (two complete rotations through voice-leading space), Beethoven's "Tempest" and "Waldstein" developments, Dvorak's "New World" Symphony development (two rotations over ninety-six measures).
-
-# Related Concepts
-- Neighborhood
-- Pitch retention loop
-- Departure-return script
-- Continuous upshift
-- Voice-leading zone
-- Transformation class
-- Cube Dance
-- Pan-triadic syntax
+# Common Errors
+- **Error**: Scripts are rigid formulas
+  **Correction**: They allow considerable flexibility, including transformational substitutions and minor perturbations
 
 # Common Confusions
-- Scripts are not rigid formulas; they allow considerable flexibility and variation
-- Scripts differ from sequences: sequences use patterned repetition, scripts use directed voice-leading trajectories
-- Multiple scripts may overlap or combine within a single composition
-- Scripts describe compositional logic, not necessarily conscious compositional decisions
+- **Confusion**: Scripts replace tonal analysis
+  **Clarification**: They supervene upon functional hearings, "suggesting but not mandating them" (p. 141)
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pages 129-156
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 129-156.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: three-script taxonomy, flexibility emphasis. High confidence -- chapter-organizing concept.

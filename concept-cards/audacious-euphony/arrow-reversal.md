@@ -1,65 +1,113 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Arrow Reversal
-category: theory
+slug: arrow-reversal
+
+# === CLASSIFICATION ===
+category: syntax
+subcategory: double syntax
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Double Syntax and the Soft Revolution"
 chapter_number: 9
-pdf_page: 212
-unit: null
-authors: Richard Cohn
+pdf_page: 222
+section: "Cognitive Opacity"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "spring-loaded pivot"
+  - "orientation flip"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - double-syntax-hypothesis
+  - diatonic-encapsulation
+extends: []
+related:
+  - causal-reversal
+  - cognitive-opacity
+  - rings-arrows
+  - convertible-tonnetz
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is arrow reversal in double syntax?"
+  - "How does the direction of hierarchical subordination change between syntaxes?"
 ---
 
 # Quick Definition
-The metaphor describing how the direction of hierarchical subordination reverses when switching between diatonic and chromatic syntaxes: in diatonic syntax, tones orient toward tonic; in chromatic syntax, tones orient toward the chromatic collection via the triad.
+The metaphor describing how hierarchical subordination reverses between diatonic and chromatic syntax: in diatonic syntax, tones orient toward tonic via the diatonic scale; in chromatic syntax, tones orient toward the chromatic collection via the triad. The arrow pivots on the triad and is locked by the diatonic collection.
 
-# Formal Definition
-Arrow reversal captures the fundamental difference between diatonic and chromatic syntaxes. In diatonic syntax: chromatic (12+) -> diatonic (7) -> triad (3) -> tonic (1), where arrows indicate "takes its meaning from," "is oriented toward," or "functions with respect to." In chromatic syntax: chromatic (12) <- triad (3) <- tone (1), where arrows flip direction. The mechanism: "It is as if the arrow that initially points from chromatic (12+) to tonic (1) is attached to the system at the point of the triad (3), where it rests on a spring-loaded pivot and is locked into position by the diatonic (7). When the diatonic lock is released, the spring uncoils and the direction of the arrow instantly reverses."
+# Core Definition
+Diatonic syntax: chromatic (12+) -> diatonic (7) -> triad (3) -> tonic (1). Chromatic syntax: chromatic (12) <- triad (3) <- tone (1). "It is as if the arrow that initially points from chromatic (12+) to tonic (1) is attached to the system at the point of the triad (3), where it rests on a spring-loaded pivot and is locked into position by the diatonic (7). When the diatonic lock is released, the spring uncoils and the direction of the arrow instantly reverses. It requires some diatonic reconstitution to reload the spring, and some cadential labor to lock it back into its initial position" (p. 222).
 
-# Construction/Recognition
-Diatonic syntax:
-- Individual chromatic tones -> diatonic scale tones
-- Diatonic tones -> triadic members
-- Triadic members -> tonic
+# Prerequisites
+- **Double syntax hypothesis**: The framework within which arrows reverse
+- **Diatonic encapsulation**: The "lock" that holds the arrow in diatonic position
+
+# Key Properties
+1. The triad (3) is the pivot point -- present in both directions
+2. The diatonic collection (7) is the lock -- its dissolution triggers reversal
+3. "Cadential labor" is required to reload and relock the spring
+4. The reversal can be gradual (spring uncoiling) or sudden
+5. Connects to Rings arrows (which activate/deactivate during conversion)
+
+# Construction / Recognition
+**Diatonic arrow** (inward-pointing):
+- Individual chromatic tones -> diatonic scale tones -> triadic members -> tonic
 - Hierarchy flows inward toward tonic (1)
 
-Chromatic syntax:
-- Individual tones <- triadic membership (nearly even chord)
-- Triads <- chromatic collection (12-space)
+**Chromatic arrow** (outward-pointing):
+- Individual tones <- triadic membership <- chromatic collection
 - Hierarchy flows outward toward chromatic gamut (12)
 
-The pivot point is the triad (3), which exists in both systems. The lock is the diatonic collection (7); when diatonic encapsulation dissolves, the arrow reverses.
+**Relocking the spring**: requires "diatonic reconstitution" (establishing key context) and "cadential labor" (confirming the tonic through cadential progression).
 
-Reloading the spring requires "diatonic reconstitution" and "cadential labor" to lock it back into tonic-oriented position.
+# Context & Application
+Arrow reversal provides the most precise technical description of what happens during syntactic switching. It complements the causal reversal concept (which captures the cognitive/experiential dimension) and the convertible Tonnetz (which provides the geometric representation).
 
-# Musical Context
-Arrow reversal explains why double syntax encounters "such a deep vein of resistance":
-- Advocates suggest not just modal exchange but "all of the relations of subordination, causality, and orientation undergo a reversal"
-- "It is as if at one moment the person wears the garment and at the next the garment wears the person"
-
-Yet arrow reversal can be cognitively opaque:
-- Quotidian examples: Taking car to shop vs. car taking you to barber
-- Musical examples: G as neighbor to Ab becoming Ab as neighbor to G (Parsifal)
-- "A cunning composer or crafty performer knows how to take advantage of the opacity of causal reversal"
+The metaphor also explains why resistance to double syntax is so deep: "Its advocates are not merely suggesting that listeners exchange modes of organizing relations 'on the fly.' They are suggesting that all of the relations of subordination, causality, and orientation undergo a reversal" (p. 223).
 
 # Examples
-- Schubert C major Symphony Scherzo: At m. 117, arrow reverses as diatonic lock releases; at m. 141, cadential labor reloads and relocks
-- Parsifal opening: Eb as dominant of Ab (diatonic arrow) vs. Ab as subdominant of Eb (reversed)
-- Liszt Consolation hexatonic journey: Local diatonic arrows at each station, global chromatic arrow across the journey
-- Any sequential passage where "law of uniformity" suspends appellative powers
+- **Schubert Scherzo**: At m. 117, diatonic lock releases and arrow reverses; at m. 141, cadential labor reloads and relocks (pp. 222-223)
+- **Liszt Consolation**: Local diatonic arrows at each hexatonic station, global chromatic arrow across the journey
+- **Baroque Fortspinnung**: Arrow temporarily flips outward during sequential passage, then back at cadence (p. 228)
+- **Any sequential passage** where Fetis's "law of uniformity" suspends appellative powers
 
-# Related Concepts
-- Double syntax hypothesis
-- Cognitive opacity
-- Diatonic encapsulation
-- Chromatic syntax
-- Overdetermination
-- Rings arrows
+# Relationships
+## Builds Upon
+- Double syntax hypothesis and diatonic encapsulation
+
+## Enables
+- Precise description of syntactic conversion mechanics
+- Understanding of the soft revolution's mechanism
+
+## Related
+- Causal reversal (the cognitive dimension of the same phenomenon)
+- Rings arrows (the graphic representation that activates/deactivates)
+- Convertible Tonnetz (the geometric model showing arrow behavior)
+
+## Contrasts With
+- (none specified)
+
+# Common Errors
+- **Error**: Arrow reversal describes physical motion of notes
+  **Correction**: It describes hierarchical/organizational relationships, not physical motion
 
 # Common Confusions
-- Arrow reversal is metaphorical, describing hierarchical relationships, not physical motion
-- The reversal can be gradual (spring uncoiling) or instantaneous depending on musical context
-- Reversal does not mean the triads change; they serve as pivot points between systems
-- The metaphor captures causality/orientation reversal, not merely functional reinterpretation
+- **Confusion**: The reversal is instantaneous and total
+  **Clarification**: It can be gradual (spring uncoiling) depending on musical context
 
 # Source Reference
-Chapter 9: Double Syntax and the Soft Revolution, pages 222-225
+Cohn, Richard. *Audacious Euphony*, Chapter 9, pp. 222-225.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: spring-loaded pivot metaphor, cardinality notation, cadential labor concept. Fresh extraction adds v3.1 structure, Baroque Fortspinnung example, connection to soft revolution.

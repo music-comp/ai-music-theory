@@ -1,56 +1,108 @@
 ---
-concept: Combination Table of H-Group and W-Group Operations
-category: theory
+# === CORE IDENTIFICATION ===
+concept: "Combination Table of H-Group and W-Group Operations"
+slug: combination-table
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: systematic classification
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "A Unified Model of Triadic Voice-Leading Space"
 chapter_number: 5
-pdf_page: 101
-unit: null
-authors: "Richard Cohn"
+pdf_page: 109
+section: "Chromatic Sequences"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Table 5.1"
+  - "H/W combination table"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - h-group-transformations
+  - w-group-transformations
+  - chromatic-sequences
+extends: []
+related:
+  - minor-third-sequence
+  - perfect-fifth-sequence
+  - semitone-sequence
+  - h-w-group-crosspollination
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Which transformation pairs generate which transposition intervals?"
+  - "How many distinct chromatic sequence types exist?"
 ---
 
 # Quick Definition
-A 3x3 table showing how each of the nine possible pairings of H-group and W-group transformations generates a chromatic sequence transposing by semitone (T1), minor third (T3), or perfect fifth (T5).
+A 3x3 table showing how each of the nine possible pairings of H-group (L, P, H) and W-group (R, N, S) transformations generates a chromatic sequence transposing by semitone (T1), minor third (T3), or perfect fifth (T5).
 
-# Formal Definition
-Table 5.1 presents the nine combinations of the three H-group transformations (**L**, **P**, **H**) with the three W-group transformations (**R**, **N**, **S**). Each combination generates a chromatic sequence whose transpositional value is an odd number of semitones. The table is organized so that:
-- Rows correspond to H-group operations (**L**, **P**, **H**)
-- Columns correspond to W-group operations (**R**, **N**, **S**)
-- Cell values indicate the transposition interval (T1, T3, or T5)
+# Core Definition
+Table 5.1 (p. 109) presents the nine combinations systematically. Rows are H-group operations (L, P, H); columns are W-group operations (R, N, S). Each cell indicates the transposition interval. Each transpositional value appears exactly three times, meaning three distinct transformation pairs generate each interval.
 
-Each transpositional value appears exactly three times in the table, meaning three distinct transformation pairs generate each interval.
+# Prerequisites
+- **H-group transformations**: L, P, H as the three hexatonic-preserving operations
+- **W-group transformations**: R, N, S as the three Weitzmann-preserving operations
+- **Chromatic sequences**: Understanding why alternating H and W generates odd transpositions
 
-# Construction/Recognition
-The combination table:
+# Key Properties
+1. The table:
+   |     | **R** | **N** | **S** |
+   |-----|-------|-------|-------|
+   | **L** | T5  | T1  | T3  |
+   | **P** | T3  | T5  | T1  |
+   | **H** | T1  | T3  | T5  |
+2. Four darkly shaded (classically normative): L/R, L/N, P/R, P/N
+3. Three gray-shaded (maverick, Schubert/Liszt era): S/L, N/H, H/R
+4. Two unshaded (undocumented): P/S, H/S
+5. Each transposition value appears exactly three times
 
-|   | **R** | **N** | **S** |
-|---|-------|-------|-------|
-| **L** | T5 | T1 | T3 |
-| **P** | T3 | T5 | T1 |
-| **H** | T1 | T3 | T5 |
+# Construction / Recognition
+1. Select one H-group transformation (row) and one W-group transformation (column)
+2. The cell gives the transposition interval
+3. Direction (up or down) depends on the order of operations and mode of initial triad
+4. Classically normative pairings use only L, P (H-group) with R, N (W-group)
 
-Four darkly shaded combinations (**L**/**R**, **L**/**N**, **P**/**R**, **P**/**N**) use only classically normative transformations. Three gray-shaded combinations (**S**/**L**, **N**/**H**, **H**/**R**) involve one maverick transformation and appear in Schubert and Liszt. Two remaining combinations (**P**/**S**, **H**/**S**) are undocumented in the literature.
-
-# Musical Context
-The table systematizes the generation of all possible odd-transposition chromatic sequences through parsimonious voice leading. It reveals that the earliest sequences (eighteenth century) use the four normative combinations, with maverick combinations emerging in Schubert and Liszt.
+# Context & Application
+The table systematizes all possible parsimonious chromatic sequences, explaining both the historical emergence of sequence types (normative before maverick) and the voice-leading logic behind each. It serves as a reference for identifying the transformation pairs underlying any observed chromatic sequence.
 
 # Examples
-- T3 sequences: **P**/**R** (most common), **N**/**H**, **S**/**L**
-- T5 sequences: **L**/**R** (most common), **N**/**P**, **H**/**S** (undocumented)
-- T1 sequences: **N**/**L** (most common), **S**/**P**, **H**/**R**
+- **T3 (minor third)**: P/R = Schubert *Zauberharfe*; N/H = Schubert *Drei Klavierstucke* no. 2; S/L = Liszt *Lelio Fantasy*
+- **T5 (perfect fifth)**: L/R = Brahms Symphony No. 2; N/P = Bach g minor Organ Fantasy; H/S = undocumented
+- **T1 (semitone)**: N/L = many examples; S/P = Liszt *Il Penseroso*; H/R = rare
 
-# Related Concepts
-- H-Group Transformations
-- W-Group Transformations
-- Chromatic Sequences
-- Minor-Third Sequence
-- Perfect-Fifth Sequence
-- Semitone Sequence
+# Relationships
+## Builds Upon
+- The three H-group and three W-group transformations as building blocks
+## Enables
+- Identification of transformation pairs in any chromatic sequence
+- Understanding historical ordering of sequence types
+## Related
+- Individual sequence type cards (minor-third, perfect-fifth, semitone)
+- H/W group crosspollination
+## Contrasts With
+- N/A
+
+# Common Errors
+- **Error**: Assuming each pair produces a unique interval
+  **Correction**: Each interval (T1, T3, T5) is produced by three different pairs
 
 # Common Confusions
-- The transposition direction (up or down) depends on the order of operations and the mode of the initial triad
-- Even-valued transpositions (T2, T4, T6) stay within regions and are not generated by H/W pairings
-- Three units of voice-leading work per pair should be conceived as combining two distinct parsimonious transformations
+- **Confusion**: The table gives absolute direction (ascending or descending)
+  **Clarification**: Direction depends on the order of operations and whether the initial triad is major or minor; the table gives only the interval size
 
 # Source Reference
-Chapter 5: A Unified Model of Triadic Voice-Leading Space, pp. 108-109, Table 5.1
+Cohn, Richard. *Audacious Euphony*, Chapter 5, p. 109, Table 5.1.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: exact table layout, historical shading categories. High confidence -- the table is reproduced verbatim from the source.

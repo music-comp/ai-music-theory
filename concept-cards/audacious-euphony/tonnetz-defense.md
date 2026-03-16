@@ -1,56 +1,100 @@
 ---
-concept: Tonnetz Defense
-category: theory
+# === CORE IDENTIFICATION ===
+concept: "Tonnetz Defense (Six Arguments)"
+slug: tonnetz-defense
+
+# === CLASSIFICATION ===
+category: representations
+subcategory: tonnetz-models
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Weitzmann Regions"
 chapter_number: 4
-pdf_page: 77
-unit: null
-authors: Richard Cohn
+pdf_page: 85
+section: "Remarks on the Tonnetz"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Six reasons for the Tonnetz"
+  - "Tonnetz vs. fused-triad graphs"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tonnetz-representation
+  - tonnetz-distance-measures
+extends: []
+related:
+  - tonnetz-weitzmann-representation
+  - cube-dance
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Why does Cohn retain the Tonnetz despite its limitations?"
+  - "What are the advantages of the Tonnetz over fused-triad graphs?"
 ---
 
 # Quick Definition
 Six arguments for retaining the Tonnetz as a primary representational tool despite Tymoczko's critique that fused-triad graphs better represent voice-leading distance.
 
-# Formal Definition
-Cohn offers six reasons to continue using the Tonnetz rather than replacing it with fused-triad graphs:
-1. With augmented-triad axes as objects, Tonnetz distances align with fused-triad graphs
-2. The book's historical/analytical aims suit the Tonnetz's specific (not general) applicability
-3. The unconformed Tonnetz fixes directional axes, facilitating cross-passage comparison
-4. Individual tone tracking provides analytic information unavailable in fused graphs
-5. The Tonnetz maintains contact with historical modes of thought
-6. Historical origins in tuning allow exploration of the triad's two forms and two syntaxes
+# Core Definition
+Cohn offers six reasons to continue cultivating the Tonnetz (pp. 85-88): (1) With augmented-triad axes as objects, Tonnetz distances align with fused-triad graphs. (2) The book's historical/analytical aims suit the Tonnetz's specific applicability. (3) The "unconformed" Tonnetz fixes directional axes, facilitating cross-passage comparison. (4) Individual tone tracking yields analytic information unavailable from fused graphs, including dyads and seventh chords. (5) The Tonnetz maintains contact with historical thinking. (6) Historical origins in tuning allow exploration of the triad's two forms and two syntaxes.
 
-# Construction/Recognition
-The Tonnetz advantages over fused-triad graphs:
-- Atomic pitch-class level maintained (not fused into triads)
-- Directional axes consistent across the entire space
-- Can locate dyads and dissonant seventh chords without referring them to consonant triads
-- Historical connection to Euler, Oettingen, Riemann's acoustic-ratio thinking
+# Prerequisites
+- **Tonnetz representation**: The tool being defended
+- **Tonnetz distance measures**: The critique being addressed
 
-The tradeoff:
-- Tonnetz: historical, pitch-class tracking, but Bering Strait distortion
-- Cube Dance: trimmer, geometrically flexible, wraps into cycle easily
+# Key Properties
+1. The expanded Tonnetz resolves Tymoczko's distance discrepancies
+2. Individual pitch-class tracking is unavailable in fused-triad graphs
+3. The Tonnetz can locate dyads and seventh chords without forcing triadic interpretations
+4. Fixed directional axes facilitate cross-passage analytical comparison
+5. Both Tonnetz and fused-triad graphs have their uses; the choice depends on analytical purpose
+6. Cohn substitutes fused-triad graphs "when surfaces are composed exclusively of triads, and when focusing the eye on cyclic closure is more central" (p. 88)
 
-# Musical Context
-Both representations have their uses. Cohn uses the Tonnetz when surfaces are not exclusively triadic, when tracking pitch classes matters, and for historical connection. Fused-triad graphs (like Cube Dance) are preferred when surfaces are exclusively triadic and cyclic closure is more important than pitch-class tracking.
+# Construction / Recognition
+When to use the Tonnetz vs. fused-triad graphs:
+- **Tonnetz**: When tracking individual pitch classes, when dyads/seventh chords appear, when historical context matters, when directional axes are analytically useful
+- **Fused-triad graphs**: When surfaces are exclusively triadic, when cyclic closure is the focus
+
+# Context & Application
+The defense occurs in the context of Tymoczko's argument (2009b) that the Tonnetz should be "shipped off to the museum." Cohn acknowledges the validity of the critique while arguing that the Tonnetz remains useful for specific analytical purposes.
 
 # Examples
-- Chapter 6 demonstrates advantages of maintaining individual tones as primary objects
-- Chapter 8 explores tuning interplay between the triad's two forms
-- The book moves between Tonnetz and Cube Dance based on analytical needs
+**Chapter 6** (p. 87): "Shows that there are advantages to maintaining individual tones as primary objects, rather than prepackaging them into triads."
+**Chapter 8** (p. 87): "Explores the interplay of the triad's two forms, and hence of the two syntaxes to which they respectively give rise."
 
-# Related Concepts
-- Tonnetz
-- Cube Dance
-- Fused-Triad Graphs
-- Voice-Leading Work
-- Tymoczko's Critique
+# Relationships
+## Builds Upon
+- tonnetz-distance-measures: The critique that motivates the defense
+
+## Enables
+None directly.
+
+## Related
+- tonnetz-weitzmann-representation: The expanded Tonnetz addresses key criticisms
+- cube-dance: The alternative fused-triad representation
+
+## Contrasts With
+None specified.
+
+# Common Errors
+- **Error**: Treating the Tonnetz as universally superior to fused-triad graphs
+  **Correction**: "There will nonetheless be circumstances where the fused-triad graphs prove useful" (p. 88)
 
 # Common Confusions
-- This is not a claim that Tonnetz is universally superior to fused-triad graphs
-- Both representations have advantages for different purposes
-- The key is choosing the right tool for the analytical task
+- **Confusion**: The six arguments apply to all analytical contexts
+  **Clarification**: The arguments are specific to Cohn's historical and analytical aims; other contexts may favor fused-triad graphs
 
 # Source Reference
-Chapter 4: Weitzmann Regions, pages 85-88
+Cohn, Richard. *Audacious Euphony*, Chapter 4: Weitzmann Regions, pp. 85-88.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: six numbered arguments, Tymoczko critique context, when-to-use distinction. High confidence: systematic argumentation clearly presented.

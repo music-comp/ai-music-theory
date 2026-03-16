@@ -1,57 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: E-Class Transformations
-category: technique
+slug: e-class-transformations
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: equivalence classes
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "A Unified Model of Triadic Voice-Leading Space"
 chapter_number: 5
-pdf_page: 101
-unit: null
-authors: Richard Cohn
+pdf_page: 124
+section: "Voice-Leading Zones"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "zone-preserving transformations"
+  - "identity class"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transformation-class
+  - voice-leading-zones
+extends:
+  - transformation-class
+related:
+  - h-group-transformations
+  - w-group-transformations
+contrasts_with:
+  - h-group-transformations
+  - w-group-transformations
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Which transformations preserve voice-leading zone?"
+  - "What is the E-class and how does it complement H-class and W-class?"
 ---
 
 # Quick Definition
-The class of transformations that map triads within their own voice-leading zone, including LP, PL, and the identity operation E.
+The class of transformations that map triads within their own voice-leading zone (zone shift = 0), consisting of LP, PL, and the identity operation E.
 
-# Formal Definition
-E-class transformations are those that preserve voice-leading zone, neither upshifting nor downshifting. The class consists of:
-- LP (Leittonwechsel followed by Parallel)
-- PL (Parallel followed by Leittonwechsel)
-- E (identity operation)
+# Core Definition
+E-class transformations are defined alongside H-class and W-class: "an E class, consisting of three transformations that map triads within their own zone (LP, PL, and identity operation E)" (p. 124). E-class completes the system of transformation classes by handling the zero-distance case. LP and PL connect T4-related triads (e.g., C major to E major via LP; C major to Ab major via PL), while E maps a triad to itself.
 
-These transformations shift the zone by 0, connecting T4-related triads (LP, PL) or a triad to itself (E). The E-class complements H-class (+/-1 zone) and W-class (+/-2 zones).
+# Prerequisites
+- **Transformation class**: The general concept of transformation equivalence classes
+- **Voice-leading zones**: The zones that E-class preserves
 
-# Construction/Recognition
-E-class operations:
-- LP: C major -> e minor -> E major (zone 11 -> zone 11)
-- PL: C major -> c minor -> Ab major (zone 11 -> zone 11)
-- E: C major -> C major (zone 11 -> zone 11)
+# Key Properties
+1. Members: LP, PL, identity E
+2. Zone shift: 0
+3. LP and PL produce balanced voice leading (no net upshift or downshift)
+4. LP and PL connect T4-related triads within the same Cube Dance radius
+5. Complements H-class (shift 1) and W-class (shift 2)
 
-Zone shift: 0 (preserves both hexatonic and Weitzmann region assignment)
+# Construction / Recognition
+- LP: C major -> e minor (L) -> E major (P) -- zone 11 -> zone 11
+- PL: C major -> c minor (P) -> Ab major (L) -- zone 11 -> zone 11
+- E: C major -> C major -- zone 11 -> zone 11
 
-Relationship to balanced voice leading:
-- E-class maintains center of balance
-- Net voice-leading motion: none (voices cancel)
-- LP and PL are mutual inverses on the hexatonic cycle
-
-# Musical Context
-E-class transformations create the connections between T4-related triads within Cube Dance radii. They represent the zero point of the voice-leading distance scale for mode-changing operations. The identity E is included for completeness and closure of the class structure.
+# Context & Application
+E-class operations explain why T4-related triads can substitute for each other: they are connected by zone-preserving transformations. The class is less prominent analytically than H- and W-classes but is essential for completing the theoretical system.
 
 # Examples
-- Major third progressions within hexatonic cycles (LP, PL)
-- Passages that cycle through T4-related triads without net voice-leading shift
-- The identity operation underlies prolongation of a single triad
+- Major-third progressions within hexatonic cycles
+- Passages cycling through T4-related triads without net voice-leading shift
 
-# Related Concepts
-- H-Class Transformations
-- W-Class Transformations
-- Voice-Leading Zones
-- Center of Balance
-- T4 Equivalence
+# Relationships
+## Builds Upon
+- Transformation class system
+## Enables
+- Complete classification of all zone-shifting possibilities (0, 1, 2)
+## Related
+- H-group and W-group transformations
+## Contrasts With
+- H-class (zone shift 1) and W-class (zone shift 2)
+
+# Common Errors
+- **Error**: E-class means "do nothing"
+  **Correction**: LP and PL change the specific triad (e.g., C major to E major) but preserve the zone
 
 # Common Confusions
-- E-class is not "easier" than H or W; it's about zone preservation
-- LP and PL produce different specific results but same zone outcome
-- The identity E is a legitimate transformation class member
+- **Confusion**: E-class is trivial
+  **Clarification**: It is essential for explaining T4 equivalence and completing the theoretical system
 
 # Source Reference
-Chapter 5: A Unified Model of Triadic Voice-Leading Space, page 124
+Cohn, Richard. *Audacious Euphony*, Chapter 5, p. 124.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: LP/PL examples, complement to H/W classes. High confidence -- briefly but clearly defined.

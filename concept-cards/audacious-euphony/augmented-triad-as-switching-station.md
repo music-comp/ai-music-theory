@@ -1,60 +1,111 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Augmented Triad as Switching Station
-category: analysis
+slug: augmented-triad-as-switching-station
+
+# === CLASSIFICATION ===
+category: neo-riemannian-theory
+subcategory: augmented-triad-function
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Reciprocity"
 chapter_number: 3
-pdf_page: 61
-unit: null
-authors: Richard Cohn
+pdf_page: 73
+section: "Three Late-Century Examples: Liszt, Rimsky-Korsakov, Faure"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Augmented triad as hub"
+  - "Switching station metaphor"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - augmented-triad
+  - consonance-dissonance-reciprocity
+extends:
+  - dissonant-prolongation
+related:
+  - weitzmann-region
+  - mehrdeutigkeit
+  - weitzmann-water-bug
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is an augmented triad in neo-Riemannian context?"
+  - "How does the augmented triad function as a structural center?"
+  - "How does the augmented triad mediate between hexatonic and Weitzmann regions?"
 ---
 
 # Quick Definition
 The augmented triad functions as a "switching station" through which consonant triads are threaded, connecting harmonies that lack consistent diatonic explanation by virtue of their shared relationship to the augmented triad.
 
-# Formal Definition
-When a passage contains consonant triads that cannot be explained by a single diatonic framework, their coherence may derive from their shared status as single semitonal displacements of one augmented triad. The augmented triad functions as a conceptual center - a "switching station" - whether or not it sounds as a surface harmony. This role is analogous to the center of a circle orienting a set of dancers, "whether marked by a pole, a hole, or the imagination of the dancers" (p. 74).
+# Core Definition
+When a passage contains consonant triads that cannot be explained by a single diatonic framework, their coherence may derive from their shared status as "single semitonal displacements" of one augmented triad. The augmented triad functions as a conceptual center -- a "switching station" -- "whether or not it sounds as a surface harmony." Cohn uses a memorable analogy: "The center of a circle is equally orienting to a set of dancers, whether marked by a pole, a hole, or the imagination of the dancers" (p. 74). The augmented triad "can function as a switching station whether it has the presence of chronological mediator... or chronological consequent... or no role at all" (p. 74).
 
-# Construction/Recognition
-The switching station model:
-- One augmented triad connects to six consonant triads (3 major, 3 minor) via single semitone
-- Consonant triads in the same hexatonic system share this connection
-- The augmented triad may appear:
-  1. As chronological mediator (passing between consonant triads)
-  2. As chronological consequent (arrived at from consonant triads)
-  3. Not at all (implied but not sounded)
+# Prerequisites
+- **Augmented triad**: Must understand the augmented triad's structure and its relationship to consonant triads via single-semitone displacement
+- **Consonance/dissonance reciprocity**: The switching-station concept requires accepting that a dissonant harmony can organize consonant ones
 
-In all cases, the augmented triad provides the structural rationale for why these particular consonant triads group together.
+# Key Properties
+1. Each augmented triad connects to six consonant triads (3 major, 3 minor) via single semitone
+2. The augmented triad may appear as chronological mediator (passing between consonant triads)
+3. It may appear as chronological consequent (arrived at from consonant triads)
+4. It may not appear at all (implied but not sounded)
+5. In all cases, the augmented triad provides the structural rationale for the grouping
+6. "There is no consistent diatonic explanation that accounts for the simultaneous presence of this particular group of triads in a single phrase" (p. 74)
 
-# Musical Context
-The switching station concept explains passages where a diverse collection of consonant triads lacks unified diatonic explanation. Rather than forcing diatonic analysis, the analyst can recognize that these triads cohere through their shared relationship to an augmented triad that may or may not be explicit in the music.
+# Construction / Recognition
+1. Identify a passage with consonant triads that lack unified diatonic explanation
+2. Check whether all triads are single-semitone displacements of one augmented triad
+3. The augmented triad need not sound as a chord
+4. Look for semitonal voice-leading connections routed through the augmented triad's pitch classes
+
+# Context & Application
+The switching-station metaphor is central to the conceptual architecture of Chapters 3-4. It explains why certain groups of apparently unrelated consonant triads cohere in chromatic passages. The concept leads directly to the formal definition of Weitzmann regions in Chapter 4.
 
 # Examples
-From the text (pp. 71-74):
+**Faure, Requiem, Introit** (Figure 3.8, pp. 73-74): "The second option understands this bouquet of harmonies in terms of the augmented triad to which each one leads. This alternative places FAC# at the conceptual center of the passage, assigning it the role of a switching station through which the various consonant triads are threaded."
 
-Faure, Requiem, Introit (Figure 3.8):
-"Our preference for analyzing parallel passages in parallel ways presents us with a choice... The first of these options does not present a very coherent species of diatonic tonality: F major is embellished by f# minor and bb minor before resolving as dominant of d minor."
+**Rimsky-Korsakov, Antar** (Figures 3.6-3.7, pp. 71-73): The opening can be understood with either consonant triads or the augmented triad as structural center: "The same can be said of the opening measures of *Antar*, where the same collection of minor triads is no more tonicizing than in Faure."
 
-"The second option understands this bouquet of harmonies in terms of the augmented triad to which each one leads. This alternative places FAC# at the conceptual center of the passage, assigning it the role of a switching station through which the various consonant triads are threaded."
+# Relationships
+## Builds Upon
+- dissonant-prolongation: The switching station formalizes what dissonant prolongation describes
+- consonance-dissonance-reciprocity: The concept requires reciprocal treatment of consonance and dissonance
 
-"There is no consistent diatonic explanation that accounts for the simultaneous presence of this particular group of triads in a single phrase. What draws them together is their shared status as single semitonal displacements of FAC#."
+## Enables
+- weitzmann-region: The six-triad region formalizes the switching station's collection
+- weitzmann-water-bug: The water bug metaphor visualizes the switching station
 
-Rimsky-Korsakov, Antar (Figures 3.6-3.7):
-Analysis shows the opening can be understood with either consonant triads or the augmented triad as structural center. The augmented triad provides coherence even when not sounding as a simultaneity.
+## Related
+- mehrdeutigkeit: The augmented triad's multiple meanings enable its switching-station function
 
-# Related Concepts
-- Augmented Triad as Axis
-- Hexatonic System
-- Consonance/Dissonance Reciprocity
-- Weitzmann's Treatise
-- Mehrdeutigkeit
-- Near Evenness
+## Contrasts With
+None specified.
+
+# Common Errors
+- **Error**: Assuming the augmented triad must sound as a chord to function as a switching station
+  **Correction**: "The center of a circle is equally orienting... whether marked by a pole, a hole, or the imagination of the dancers"
+
+- **Error**: Treating the switching station as replacing diatonic analysis
+  **Correction**: It supplements diatonic analysis for passages where diatonic logic fails
 
 # Common Confusions
-- The augmented triad need not sound as a chord to function as a switching station
-- "Switching station" is metaphorical; the augmented triad does not literally "switch" anything
-- This analysis does not replace diatonic analysis but supplements it for passages where diatonic logic fails
-- The switching station provides structural explanation, not necessarily audible salience
+- **Confusion**: "Switching station" implies the augmented triad literally "switches" something
+  **Clarification**: The metaphor refers to the conceptual routing of harmonic connections through the augmented triad
+- **Confusion**: The switching station provides audible salience
+  **Clarification**: It provides structural explanation, not necessarily perceptual prominence
 
 # Source Reference
-Chapter 3: Reciprocity, pp. 71-74
+Cohn, Richard. *Audacious Euphony*, Chapter 3: Reciprocity, pp. 71-74.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: dancer analogy, chronological mediator/consequent/absent distinction, Faure and Antar examples. High confidence: central metaphor with extensive source discussion.

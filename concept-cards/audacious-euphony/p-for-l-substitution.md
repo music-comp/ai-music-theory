@@ -1,47 +1,92 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: P-for-L Substitution
-category: technique
+slug: p-for-l-substitution
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: substitution
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
-pdf_page: 129
-unit: null
-authors: "Richard Cohn"
+pdf_page: 139
+section: "Departure -> Return Scripts"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "H-class substitution"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transformational-substitution
+  - auf-dem-flusse-analysis
+extends:
+  - transformational-substitution
+related:
+  - n-for-r-substitution
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does P-for-L substitution create variety in departure-return scripts?"
 ---
 
 # Quick Definition
-A **P**-for-**L** substitution replaces a Leittonwechsel transformation with a Parallel transformation within a voice-leading trajectory, causing a transposition upward by major third that requires subsequent rectification to restore the original tonal course.
+An H-class substitution replacing Leittonwechsel (L) with Parallel (P) within a voice-leading trajectory, causing a transposition upward by major third that requires subsequent rectification.
 
-# Formal Definition
-Within the H-class of transformations (**L**, **P**, **H**), any member can substitute for any other while preserving the voice-leading zone trajectory. A **P**-for-**L** substitution replaces the expected **L** with **P** at a specific point in a progression. Since both belong to the H-class, they move between the same pair of voice-leading zones. However, the specific triads differ: where **L** would produce one triad, **P** produces its T4-related equivalent. This creates a "diagonal" displacement in the paradigmatic analysis that must be corrected to achieve tonal closure.
+# Core Definition
+Within the H-class ({L, P, H}), any member substitutes for any other while preserving the zone trajectory. At m. 48 of "Auf dem Flusse," "Schubert assigns the mid-measure semitonal ascent to the 'wrong' voice: F# instead of the A# of m. 12. Accordingly, d# minor leads not to B major via L but rather to D# major via P" (p. 139). This P-for-L substitution causes tonal displacement up by major third, requiring rectification in the subsequent couplet.
 
-# Construction/Recognition
-In the context of an **N**/**L** chain:
-- Expected: minor triad --(**L**)--> major triad (root descends by semitone to fifth)
-- Substitution: minor triad --(**P**)--> major triad (third ascends by semitone to root)
-- Result: The "wrong" voice receives the semitonal ascent, producing a T4-transposed version of the expected triad
-- Rectification: A subsequent transformation must compensate for the major-third displacement
+# Prerequisites
+- **Transformational substitution**: The general principle
+- **Auf dem Flusse analysis**: The context demonstrating this substitution
 
-# Musical Context
-The **P**-for-**L** substitution is a primary mechanism for introducing variety into departure-return scripts while maintaining zonal coherence. It appears when Schubert assigns a semitonal ascent to a different voice than expected.
+# Key Properties
+1. P replaces L (both H-class); zone trajectory preserved
+2. Produces T4-transposed version of expected triad
+3. Requires rectification to restore original tonal area
+4. In paradigmatic analysis (figure 6.8): appears as diagonal arrow
+
+# Construction / Recognition
+Expected: d# minor --(L)--> B major (root descends to fifth)
+Substitution: d# minor --(P)--> D# major (third ascends to root)
+Result: D# major acts as dominant of g# minor instead of B major as dominant of e minor
+
+# Context & Application
+P-for-L is the first and more moderate H-class substitution in "Auf dem Flusse." The more extreme H-for-L substitution follows later (m. 66), producing the "shocking" hexatonic pole.
 
 # Examples
-- Schubert, "Auf dem Flusse," m. 48: At the interlude, F# ascends instead of the expected A#, producing D# major via **P** instead of B major via **L**. This causes g# minor instead of e minor as the new tonic, requiring the second couplet to rectify the major-third displacement.
-- Figure 6.8: The paradigmatic analysis shows the **P**-for-**L** substitution as a diagonal arrow throwing the progression off its horizontal course
+- **"Auf dem Flusse," m. 48**: d# minor -> D# major (P) instead of -> B major (L); leads to g# minor instead of e minor
+- **Figure 6.8**: Diagonal arrow showing the displacement
 
-# Related Concepts
-- Transformational Substitution
-- H-Group Transformations
-- Auf dem Flusse Analysis
-- Voice-Leading Zones
-- Departure-Return Script
-- Hexatonic Pole
+# Relationships
+## Builds Upon
+- Transformational substitution principle
+## Enables
+- Variety in departure-return scripts
+## Related
+- N-for-R substitution (W-class analogue)
+## Contrasts With
+- H-for-L substitution (even more dramatic displacement)
+
+# Common Errors
+- **Error**: P-for-L is a compositional error
+  **Correction**: It is a deliberate strategy creating variety while maintaining zonal coherence
 
 # Common Confusions
-- **P**-for-**L** is not an error but a deliberate compositional strategy
-- The substitution preserves the voice-leading zone trajectory but changes the specific triads
-- Rectification is necessary only if the composer wishes to return to the original tonal area
-- **H**-for-**L** is the other possible H-class substitution, producing the even more "shocking" hexatonic pole
+- **Confusion**: The substitution changes the voice-leading direction
+  **Clarification**: The zone trajectory is preserved; only the specific triads change
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pp. 139-141, Figure 6.8
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 139-141, Figure 6.8.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: "wrong voice" description, specific m. 48 detail. High confidence -- clearly demonstrated in source.

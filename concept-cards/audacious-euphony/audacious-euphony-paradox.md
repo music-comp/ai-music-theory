@@ -1,59 +1,108 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Audacious Euphony Paradox
-category: theory
+slug: audacious-euphony-paradox
+
+# === CLASSIFICATION ===
+category: neo-riemannian-theory
+subcategory: theoretical-framework
+tier: foundational
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Introduction"
-chapter_number: 0
+chapter_number: null
 pdf_page: 9
-unit: null
-authors: Richard Cohn
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "audacious euphony"
+  - "Riemann's paradox"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - pan-triadic-syntax
+  - harmonic-distance
+  - classical-versus-romantic-syntax
+  - triads-second-nature
+contrasts_with:
+  - root-interval-approach
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the audacious euphony paradox?"
+  - "Why did Riemann call chromatic progressions both audacious and euphonious?"
+  - "How can triadic progressions be simultaneously close and distant?"
 ---
 
 # Quick Definition
-The paradox that chromatic triadic progressions can be simultaneously "audacious" (unexpected, norm-violating) and "euphonious" (smooth, well-connected) - defying diatonic logic while exhibiting voice-leading coherence.
+The paradox that chromatic triadic progressions can be simultaneously "audacious" (unexpected from a diatonic perspective) and "euphonious" (smooth and well-connected by voice leading), as identified in Riemann's 1909 description.
 
-# Formal Definition
-The audacious euphony paradox, derived from Hugo Riemann's 1909 description of a chromatic progression as "audaciously but effectively and euphoniously" constructed, identifies the central tension in 19th-century chromatic harmony. From a diatonic/classical perspective, such progressions confound expectations and appear irrational. Yet from a voice-leading perspective, the same progressions exhibit close relations and smooth connections. The paradox dissolves when one recognizes that the progressions operate according to a different syntax than classical diatonic tonality.
+# Core Definition
+The audacious euphony paradox, derived from Hugo Riemann's 1909 *Musik-Lexicon* entry on "Tonalitat," identifies a central tension in nineteenth-century chromatic harmony. Riemann describes a chromatic progression as "admittedly audacious but effective and euphonious," noting that it "defies definition in terms of an older doctrine of key" yet "consists only of closely related chords contrasted with the tonic triad" (Cohn, p. 9). The paradox arises because diatonic and voice-leading metrics of harmonic distance produce contradictory judgments: the chords' "associated scales share three tones out of seven" (diatonically distant), yet they are "closely related" by Riemann's alternative conception of harmonic proximity (p. 9).
 
-# Construction/Recognition
-The paradox arises from conflicting proximity metrics:
-- By diatonic metric: triads are distant (few shared scale tones)
-- By voice-leading metric: triads are close (minimal semitonal displacement)
+# Prerequisites
+This is a foundational concept with no prerequisites within this source. It serves as the motivating question for the entire book.
 
-For Riemann's example progression:
-- Classical assessment: scales share only 3 of 7 tones = "remotely separated"
-- Voice-leading assessment: triads connect by minimal motion = "closely related"
+# Key Properties
+1. Two conflicting proximity assessments of the same progression: audacious (diatonically distant) and euphonious (voice-leading proximate)
+2. Reveals that "harmonic distance" is not a single fixed property but depends on the chosen metric
+3. Dissolves when one recognizes the existence of an alternative syntax (pan-triadic) alongside classical diatonic tonality
+4. Reflects the aesthetic experience of nineteenth-century chromatic music, where progressions "excited the Romantic imagination" by confounding expectations while maintaining coherence (p. 12)
 
-The paradox reveals that two distinct systems for measuring triadic distance produce contradictory judgments, and both judgments are "correct" within their respective frameworks.
+# Construction / Recognition
+The paradox arises whenever two metrics of harmonic proximity yield contradictory judgments:
+1. By diatonic metric: triads are distant (few shared scale tones, e.g., 3 of 7)
+2. By voice-leading metric: triads are close (minimal semitonal displacement)
+3. Riemann's conception of harmonic distance was "evidently rather different from our own" (p. 9)
+4. The first question (how to construct and represent that alternative conception) is susceptible to systematic inquiry; the second (why "audacious" if closely related) identifies a paradox inviting interpretation
 
-# Musical Context
-The paradox reflects the aesthetic experience of 19th-century chromatic music:
-- Such progressions "excited the Romantic imagination" precisely because they confounded expectations
-- They are affiliated with altered realities: magic, dreams, the supernatural, the sublime
-- They evoke "the strange, magical, and inscrutable" (as noted by E.T.A. Hoffmann)
-- The combination of strangeness and smoothness creates a distinctive aesthetic effect
-
-Understanding the paradox illuminates why this repertoire continues to produce powerful effects: it operates on "a field animated by opposing forces: of classical and romantic syntax, of normativity and aberration."
+# Context & Application
+The paradox frames the entire project of *Audacious Euphony*. Chromatic progressions in nineteenth-century music occupy "a field animated by opposing forces: of classical and romantic syntax, of normativity and aberration" (p. 12). In song, opera, and programmatic music, such progressions are "often explicitly affiliated with altered or heightened realities: Schubert's magic harp, Wagner's magic sleep, Rimsky-Korsakov's magic and exotic kingdoms, Liszt's mountain-top meditations" (p. 12).
 
 # Examples
-- Riemann's 1909 Musik-Lexicon entry on "Tonalitat" describes a progression that "defies definition in terms of an older doctrine of key" yet "consists only of closely related chords"
-- Wagner's Magic Sleep: lacks tonal implication yet sounds coherent
-- Schubert's enharmonic progressions: create scale-degree paradoxes while maintaining smooth voice leading
-- The consistent 19th-century association of major-third relations with the uncanny
+**Example 1** (p. 9): Riemann's 1909 *Musik-Lexicon* entry describes a progression that "defies definition in terms of an older doctrine of key" yet "consists only of closely related chords." The associated scales share only 3 of 7 tones, yet Riemann calls them "closely related."
 
-# Related Concepts
-- Pan-Triadic Syntax
-- Voice-Leading Work
-- Chromatic vs. Diatonic Organization
-- Double Syntax Hypothesis
-- Triadic Distance
-- Nineteenth-Century Harmonic Practice
+**Example 2** (p. 12): Wagner's magic sleep music, Schubert's magic harp, and Rimsky-Korsakov's exotic kingdoms all feature chromatic progressions that are simultaneously norm-violating and smoothly connected.
+
+# Relationships
+## Builds Upon
+This is the book's foundational framing question.
+
+## Enables
+- **harmonic-distance** — The paradox motivates the investigation of multiple distance metrics
+- **pan-triadic-syntax** — Resolving the paradox requires recognizing an alternative syntax
+- **triads-second-nature** — The paradox points to a second property of triads beyond consonance
+
+## Related
+- **classical-versus-romantic-syntax** — The paradox exists at the intersection of two syntactic systems
+- **nineteenth-century-harmonic-practice** — The paradox characterizes the repertoire under study
+
+## Contrasts With
+- **root-interval-approach** — The classical approach that makes the progressions seem "audacious"
+
+# Common Errors
+- **Error**: Assuming the paradox results from random or arbitrary harmonic motion
+  **Correction**: The progressions follow a systematic alternative logic based on voice-leading proximity
 
 # Common Confusions
-- "Audacious" does not mean "random" or "arbitrary" - it means unexpected from a diatonic perspective
-- "Euphonious" is not merely subjective pleasantness but indicates systematic voice-leading relationships
-- The paradox is not a flaw in the music but a feature that contributes to its expressive power
-- Resolving the paradox requires recognizing the legitimacy of multiple syntactic systems, not privileging one over the other
+- **Confusion**: Thinking "audacious" means "incoherent" or "random"
+  **Clarification**: "Audacious" means unexpected from a diatonic perspective; the progressions are highly systematic by voice-leading criteria
+- **Confusion**: Believing the paradox indicates a flaw in the music
+  **Clarification**: The paradox is a feature that contributes to expressive power; resolving it requires recognizing the legitimacy of multiple syntactic systems
 
 # Source Reference
-Introduction, pages 9-12
+Introduction, pp. 9-12. The Riemann quotation is from s.v. "Tonalitat," *Musik-Lexicon*, 1909.
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: the physician analogy comparison was dropped (it belongs in strategic-forgetting), and the specific examples from the old card were retained
+- Definition drawn directly from Riemann quotation on p. 9
+- Confidence: HIGH — the paradox is the explicit framing device for the book, with direct quotation

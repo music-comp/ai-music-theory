@@ -1,48 +1,100 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tonnetz Analytical Neutrality
-category: theory
+slug: tonnetz-analytical-neutrality
+
+# === CLASSIFICATION ===
+category: representations
+subcategory: analytical methodology
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
-pdf_page: 129
-unit: null
-authors: "Richard Cohn"
+pdf_page: 132
+section: "Neighborhoods and Pitch Retention Loops"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Tonnetz neutrality"
+  - "descriptive neutrality"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - connected-tonnetz
+extends: []
+related:
+  - doppelganger-analysis
+  - brahms-second-symphony-retransition
+  - cube-dance-vs-tonnetz
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the three forms of analytical neutrality the Tonnetz provides?"
+  - "How does the Tonnetz handle ambiguous passages?"
 ---
 
 # Quick Definition
-The Tonnetz is analytically neutral with respect to both triadic constituency (it can represent dyads and individual tones without forcing triadic interpretation) and tonal centricity (it does not privilege any pitch class as tonic), making it ideal for passages where these attributions are uncertain.
+The Tonnetz is analytically neutral in three ways: it represents triads as atomistic pitch-class assemblies (accommodating dyads without forcing triadic interpretation), it does not privilege any pitch class as tonic, and it tracks pitch-class accumulation independently of triadic or tonal attribution.
 
-# Formal Definition
-The Tonnetz possesses three forms of analytical neutrality that are especially valuable for chromatic music:
-1. **Triadic neutrality**: By representing triads as assemblies of atomistic pitch-class components, the Tonnetz accommodates surfaces featuring dyads and individual tones without compelling decisions about triadic completion
-2. **Tonal neutrality**: The Tonnetz does not mandate a tonal center; it can be adapted to express tonal interpretations but is not compelled to do so
-3. **Interpretive neutrality**: As a consequence of (1) and (2), the Tonnetz facilitates tracking pitch-class accumulation independently of triadic or tonal attribution
+# Core Definition
+Three virtues of neutrality demonstrated in the "Der Doppelganger" analysis (pp. 132-133): (1) "By representing triads as assemblies of atomistic pitch-class components, the Tonnetz adapts well to surfaces that feature dyads and individual tones" without compelling triadic decisions; (2) "The Tonnetz is neutral with respect not only to triadic constituency but also to tonal (key) centricity" -- it can be adapted to express tonal interpretations but is not compelled to; (3) "The Tonnetz facilitates tracking the accumulation of dyads and pitch classes, encouraging us to observe how they might form systematic aggregations independently of their triadic constituency."
 
-# Construction/Recognition
-Tonnetz neutrality manifests when:
-- A dyad can represent either of two triads (the Tonnetz places it at their shared edge)
-- Multiple tonal interpretations are viable (the Tonnetz documents relationships without arbitrating)
-- A passage features gradual pitch-class accumulation (the Tonnetz tracks this directly)
+# Prerequisites
+- **Connected Tonnetz**: The representation whose neutrality is being described
 
-# Musical Context
-Neutrality is particularly valuable for music where tonal centricity is ambiguous, triadic identity is uncertain, or multiple interpretations coexist. It allows analysts to "avoid arbitration entirely, in favor of a Solomonic option that splits the difference."
+# Key Properties
+1. Triadic neutrality: dyads placed at shared edges, not forced into triangles
+2. Tonal neutrality: no pitch class privileged as tonic
+3. Interpretive neutrality: pitch-class accumulation tracked independently
+4. The Tonnetz can be adapted to express tonal interpretations (ch8) but need not
+5. Dyadic ambiguity handled by opening edges into ovals (figure 6.6b)
+
+# Construction / Recognition
+Neutrality is analytically valuable when:
+- A dyad could represent either of two triads
+- Multiple tonal interpretations are viable
+- Gradual pitch-class accumulation drives the structure
+
+# Context & Application
+Neutrality is a key advantage of the Tonnetz over both Cube Dance (which fuses pitch classes into triads) and functional analysis (which mandates tonal interpretations). It enables analysts to "avoid arbitration entirely, in favor of a Solomonic option that splits the difference" (p. 137).
 
 # Examples
-- Schubert, "Der Doppelganger": The Tonnetz avoids adjudicating whether final harmonies represent subdominant-to-tonic or tonic-from-dominant
-- Brahms, Symphony No. 2, retransition: The FA and F#A dyads at mm. 282-286 resist triadic interpretation; the Tonnetz opens the dyadic edge into an oval, a location in its own right
-- Schubert, "Liedesend'": The Tonnetz documents the modulatory scheme without forcing monotonal interpretation
+- **"Der Doppelganger"**: Avoids adjudicating between B major tonic and e minor tonic readings
+- **Brahms Symphony No. 2 retransition**: FA and F#A dyads represented as ovals on the Tonnetz
+- **"Liedesend'"**: Documents modulatory scheme without forcing monotonal interpretation
 
-# Related Concepts
-- Tonnetz
-- Neighborhood
-- Pitch Retention Loop
-- Cube Dance vs. Tonnetz
-- Doppelganger Analysis
+**Tonnetz "performance" concept** (pp. 155-156): Cohn uses the metaphor of "performance" for interpretive shaping of analytical data on the Tonnetz. Two representations of the same passage constitute "two 'performances' upon a single pattern of black dots" -- both can be "note accurate" but shape data differently, drawing breaths at different articulation points. In the Dvorak "New World" development, figure 6.20a shows chains (R/P, hexatonic, N/L) while 6.20b interprets the same data as tours about E and A retention loops. The concept illustrates "the interpretive leeway available to the pan-triadic analyst" and raises questions about the relationship between analytical and musical performance
+
+# Relationships
+## Builds Upon
+- Connected Tonnetz as the representation
+## Enables
+- Analysis of tonally ambiguous passages
+- Multi-level tracking (tones, dyads, triads)
+## Related
+- Doppelganger analysis and Brahms retransition (demonstrations)
+## Contrasts With
+- Functional analysis (which mandates tonal commitment)
+
+# Common Errors
+- **Error**: Neutrality means the Tonnetz cannot express tonal interpretations
+  **Correction**: It CAN be adapted to do so (chapter 8); it is not compelled to
 
 # Common Confusions
-- Neutrality does not mean the Tonnetz cannot express tonal interpretations; it can be adapted to do so (as shown in Chapter 8)
-- Neutrality is a feature, not a limitation; it enables multiple readings to coexist
-- The Tonnetz's graphic solution for dyadic ambiguity (opening edges into ovals) extends its representational capacity
+- **Confusion**: Neutrality is a limitation
+  **Clarification**: It is a feature enabling multiple coexisting interpretations
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pp. 132-133, 137-138
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 132-133, 137-138.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: three virtues, Solomonic option quote, oval notation. High confidence -- explicitly articulated analytical principle.
+Consolidated content from v2 card [tonnetz-performance]: added "Tonnetz performance" metaphor (pp. 155-156), two-performances concept with Dvorak New World example (figures 6.20a/b), interpretive leeway quote, connection between analytical and musical performance.

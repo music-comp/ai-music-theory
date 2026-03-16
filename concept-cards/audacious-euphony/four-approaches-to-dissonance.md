@@ -1,76 +1,110 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Four Approaches to Dissonance
-category: theory
+slug: four-approaches-to-dissonance
+
+# === CLASSIFICATION ===
+category: dissonance
+subcategory: strategies
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
 pdf_page: 156
-unit: null
-authors: Richard Cohn
+section: "Four Eighteenth-Century Approaches to Dissonance"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "four dissonance strategies"
+  - "Rameau's four strategies"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - consonant-triad
+  - pan-triadic-syntax
+extends:
+  - neo-riemannian-theory
+related:
+  - deletion-strategy
+  - reduction-strategy
+  - substitution-strategy
+  - combination-strategy
+  - tristan-genus
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do I apply the four dissonance strategies (deletion, reduction, substitution, combination)?"
+  - "What is the relationship between Rameau's dissonance theory and pan-triadic theory?"
+  - "How does pan-triadic theory handle seventh chords and other dissonant harmonies?"
 ---
 
 # Quick Definition
-Cohn identifies four historical strategies for incorporating dissonant harmonies into harmonic theory: deletion, reduction to a subset, substitution, and combination, all deriving from Rameau's eighteenth-century approaches.
+Four historical strategies for incorporating dissonant harmonies into a fundamentally triadic theoretical framework, all originating in Rameau's eighteenth-century approaches: deletion, reduction to a subset, substitution, and combination.
 
-# Formal Definition
-The **four approaches to dissonance** are strategies for theoretically accounting for seventh chords and other dissonant harmonies within a fundamentally triadic theoretical framework. These strategies, first developed by Jean-Philippe Rameau, persist in various forms through nineteenth-century theory and into present-day pedagogy:
+# Core Definition
+Cohn identifies four strategies for theoretically accounting for seventh chords and larger-cardinality harmonies within pan-triadic theory. These strategies derive from Jean-Philippe Rameau, "the theorist for whom dissonant harmonies first arose as categorical possibilities," who "generated them through a series of ad hoc, even mutually incompatible, methods" (p. 156). All four endured in the nineteenth century and three survive into present-day pedagogy. Cohn distinguishes between a *strategy* as a general set of assumptions and the several *methods* by which it might be implemented, noting that his methods are distinct from Rameau's, which are distinct from modern harmony texts.
 
-1. **Deletion**: Ignoring dissonant harmonies, treating nonadjacent consonances as directly adjacent
-2. **Reduction to a subset**: Identifying a consonant triad embedded within the dissonance
-3. **Substitution**: Treating the dissonance as a chromatic displacement of a simpler harmony
-4. **Combination**: Generating dissonances from the union of two triads
+# Prerequisites
+- **Consonant triad**: The strategies address how to handle harmonies that go beyond the consonant triad, the basic unit of pan-triadic theory
+- **Pan-triadic syntax**: Understanding the triadic framework that these strategies extend is essential for grasping why dissonance requires special treatment
 
-# Construction/Recognition
-**Deletion**: Used in modulatory theory (keys = triads) and Schenkerian analysis (only consonances prolong)
+# Key Properties
+1. The four strategies are mutually compatible -- the same passage may be analyzed using different strategies
+2. Each strategy serves different analytical purposes and yields different insights
+3. Cohn primarily develops reduction and substitution in Chapter 7, while deletion is tacitly assumed and combination is briefly sketched
+4. The strategies are not mutually exclusive -- Rameau himself used multiple approaches
 
-**Reduction**:
-- Dominant seventh → major triad (ignore seventh)
-- Half-diminished seventh → minor triad (ignore putative root)
-- Method: identify unique consonant subset
+# Construction / Recognition
+1. **Deletion**: Suppress dissonant harmonies, treating nonadjacent consonances as directly adjacent (Schenkerian practice)
+2. **Reduction to a subset**: Identify the unique consonant triad embedded within the dissonance (V7 reduces to major triad; half-diminished to minor triad)
+3. **Substitution**: Treat the dissonance as a semitonal displacement of a simpler harmony (Boretz: V7 and half-diminished as displaced diminished sevenths)
+4. **Combination**: Generate dissonances from the union of two triads (major seventh = L-related triads; minor seventh = R-related triads; split-third = P-related triads)
 
-**Substitution**:
-- Diminished seventh = displaced dominant seventh (Rameau, Traite)
-- Dominant/half-diminished seventh = displaced diminished seventh (Boretz)
-- Method: semitonal displacement from simpler harmony
-
-**Combination**:
-- Major seventh = L-related triads combined
-- Minor seventh = R-related triads combined
-- Split-third chord = P-related triads combined (alpha sonority)
-
-# Musical Context
-These strategies serve different analytical purposes:
-- **Deletion**: Focus on large-scale triadic/tonal structure
-- **Reduction**: Maintain triadic framework while acknowledging dissonance
-- **Substitution**: Explain voice-leading relationships among dissonances
-- **Combination**: Understand complex sonorities as triadic aggregations
-
-Cohn primarily develops reduction and substitution strategies in Chapter 7, showing how both extend pan-triadic theory to tetrachordal contexts.
+# Context & Application
+These strategies extend pan-triadic theory to handle the dissonant harmonies that chromatic music of the late nineteenth century prominently features. Each strategy illuminates different aspects of dissonant harmony: deletion focuses on large-scale tonal structure; reduction maintains triadic voice-leading connections; substitution reveals voice-leading efficiency among dissonances; combination shows how tetrachords relate to triadic pairs on the Tonnetz.
 
 # Examples
-**Deletion (Schenkerian)**: Nonadjacent consonant triads treated as register-specific pitches participating in linear strands.
+- **Deletion (Schenker)**: Graphs represent nonadjacent consonant triads as register-specific pitches in linear strands, suppressing dissonances between them (pp. 157-158)
+- **Reduction**: Wagner treats minor triads and their half-diminished supersets as interchangeable in late music; the final cadence of *Tristan* features a minor subdominant with added sixth where the "root" passes upward like an under-seventh (pp. 159-161)
+- **Substitution (Boretz)**: The opening of the *Tristan* Prelude -- each chord contains three pitch classes of B-D-F-G# diminished seventh with one tone "spoiled" by semitonal displacement (pp. 166-167)
+- **Combination**: Schreker's *Kammersymphonie* -- C# split-third chord fills gap between hexatonic poles A major and f minor, formed from P-related triads (p. 160)
 
-**Reduction**: Wagner's half-diminished seventh chords in Tristan analyzed as minor triads with under-sevenths; the final cadence of Tristan und Isolde features a minor subdominant with added sixth creating "ø7" sonority where B (the "seventh") does not resolve.
+# Relationships
+## Builds Upon
+- Pan-triadic syntax (the framework being extended)
+- Rameau's harmonic theory (historical origin of all four strategies)
+## Enables
+- Tristan-genus analysis (via substitution and reduction)
+- Boretz-region theory (via substitution)
+- Tonnetz representation of dissonances (via combination)
+## Related
+- Harmonic dualism (supports reduction strategy for half-diminished chords)
+- Schenkerian analysis (principal modern form of deletion strategy)
+## Contrasts With
+- Unified dissonance theory (Cohn explicitly proposes "not a unified theory of chordal dissonance but rather a set of responses")
 
-**Substitution (Boretz)**: Opening of Tristan Prelude - each Tristan-genus chord contains three pitch classes of the B-D-F-G# diminished seventh, with one tone displaced by semitone.
-
-**Combination**: Schreker's Kammersymphonie - C# split-third chord fills gap between hexatonic poles A major and f minor, formed by combining P-related triads.
-
-# Related Concepts
-- Triadic reduction
-- Substitutional dissonance
-- Under-seventh
-- Over-seventh
-- Tristan genus
-- Boretz region
-- Rameau's fundamental bass
-- Schenkerian analysis
+# Common Errors
+- **Error**: Treating the four strategies as mutually exclusive theories
+  **Correction**: They are complementary analytical tools; the same passage may benefit from multiple strategies
+- **Error**: Assuming Cohn's methods are the same as Rameau's
+  **Correction**: The strategies are shared, but the specific methods of implementation differ across historical periods
 
 # Common Confusions
-- These are strategies, not mutually exclusive theories; the same passage might be analyzed multiple ways
-- Reduction and substitution reverse Rameau's generative arrows in different ways
-- Deletion is implicit in many analyses without being acknowledged
-- Not all dissonances yield to all strategies equally well
+- **Confusion**: Thinking deletion means dissonances don't exist or matter
+  **Clarification**: Deletion is an analytical strategy that suppresses dissonances from the representation, not a claim about their musical insignificance
+- **Confusion**: Conflating reduction with third-stacking
+  **Clarification**: Reduction identifies the unique consonant *subset*, which may differ from the standard third-stack root (e.g., half-diminished B-D-F-A reduces to D minor, not B diminished)
 
 # Source Reference
-Chapter 7: Dissonance, pages 156-160
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 156-160.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: hand-curated construction/recognition details for each strategy, musical context descriptions. Fresh extraction adds precise quotations, expanded historical context, and v3.1 structure.

@@ -1,56 +1,101 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: W-Group Transformations
-category: technique
+slug: w-group-transformations
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: transformation-groups
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Weitzmann Regions"
 chapter_number: 4
 pdf_page: 77
-unit: null
-authors: Richard Cohn
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Weitzmann group transformations (glossary)"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - w-group
+extends: []
+related:
+  - r-transformation
+  - n-transformation
+  - s-transformation
+  - h-group-transformations
+contrasts_with:
+  - h-group-transformations
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the W-group transformations?"
+  - "What properties do all W-group transformations share?"
 ---
 
 # Quick Definition
-Any transformation that maps a consonant triad within its Weitzmann region and outside of its hexatonic region, comprising the three transformations R (Relative), N (Nebenverwandt), and S (Slide).
+Any transformation that maps a consonant triad within its Weitzmann region and outside of its hexatonic region, comprising R (Relative), N (Nebenverwandt), and S (Slide).
 
-# Formal Definition
-W-group transformations are the set of three transformations that connect triads sharing membership in the same Weitzmann region while belonging to different hexatonic regions. Each W-group transformation involves motion through or around an augmented triad that serves as the center of the Weitzmann region. The three W-group transformations are: R (Relative), which connects triads sharing a major-third dyad (e.g., C major and a minor); N (Nebenverwandt), which connects a major triad with the minor triad whose root is a perfect fourth above (e.g., C major and f minor); and S (Slide), which connects triads sharing a common third (e.g., C major and c# minor).
+# Core Definition
+W-group transformations are defined in the Glossary as the set of three transformations connecting triads that share Weitzmann region membership while belonging to different hexatonic regions. Each involves motion "through or around an augmented triad that serves as the center of the Weitzmann region" (cf. Glossary, p. 229). Properties shared by all three: involution, 2 semitones of voice-leading work, Weitzmann region preservation, hexatonic region shift, and mode change.
 
-# Construction/Recognition
-The three W-group transformations:
-- R (Relative): Preserves major-third dyad; moves root by minor third
-  - C major <-> a minor: (C, E, G) <-> (A, C, E)
-- N (Nebenverwandt): Preserves perfect-fifth dyad; moves third by whole tone
-  - C major <-> f minor: (C, E, G) <-> (F, Ab, C)
-- S (Slide): Preserves third dyad; moves root and fifth by semitone
-  - C major <-> c# minor: (C, E, G) <-> (C#, E, G#)
+# Prerequisites
+- **W-group**: The algebraic group these transformations belong to
 
-Properties:
-- All three are involutions (applying twice returns to original)
-- All involve 2 semitones of voice-leading work
-- All connect triads that share the same Weitzmann region
-- Complement the H-group transformations (L, P, H)
+# Key Properties
+1. R preserves the major-third dyad; one voice moves by whole step
+2. N preserves the perfect-fifth dyad; two voices move by semitone in contrary motion
+3. S preserves the third; root and fifth both move by semitone in same direction
+4. All are involutions: applying twice returns to original
+5. All involve 2 semitones of voice-leading work
+6. All connect triads sharing a Weitzmann region
 
-# Musical Context
-W-group transformations produce the characteristic progressions of Weitzmann regions, often associated with 19th-century chromatic practice. While H-group transformations (L, P, H) keep triads within hexatonic regions, W-group transformations cross hexatonic boundaries while remaining within a single Weitzmann region. The Weitzmann region's six triads (three major, three minor) can be traversed entirely through W-group transformations.
+# Construction / Recognition
+- R(C major) = a minor: (C, E, G) -> (A, C, E)
+- N(C major) = f minor: (C, E, G) -> (F, Ab, C)
+- S(C major) = c# minor: (C, E, G) -> (C#, E, G#)
+
+# Context & Application
+W-group transformations produce the characteristic progressions of Weitzmann regions. While H-group transformations keep triads within hexatonic regions, W-group transformations cross hexatonic boundaries while remaining within a Weitzmann region.
 
 # Examples
-- R: The relative major/minor relationship (C major to a minor)
-- N: The nebenverwandt relationship characteristic of 19th-century practice (C major to f minor)
-- S: The slide relationship favored by Schubert and later Romantics (C major to c# minor)
-- Weitzmann region traversal: Any path through six triads surrounding an augmented triad
+- R: Relative major/minor (C major to a minor)
+- N: Nebenverwandt (C major to f minor)
+- S: Slide (C major to c# minor)
 
-# Related Concepts
-- Weitzmann region
-- H-group transformations (L, P, H)
-- Relative (R)
-- Nebenverwandt (N)
-- Slide (S)
-- Augmented triad
+# Relationships
+## Builds Upon
+- w-group: The group to which these transformations belong
+
+## Enables
+None directly; individual transformations enable specific structures.
+
+## Related
+- r-transformation, n-transformation, s-transformation: The individual members
+- h-group-transformations: The complementary set
+
+## Contrasts With
+- h-group-transformations: H-group preserves hexatonic region; W-group preserves Weitzmann region
+
+# Common Errors
+- **Error**: Treating W-group as including LP and PL
+  **Correction**: LP and PL are hexatonic compounds; the W-group contains only mode-reversing single transformations
 
 # Common Confusions
-- W-group and H-group partition the six single-semitonal-displacement transformations differently than major/minor third vs. perfect fifth
-- R is both a W-group transformation and a common tonal operation; its membership in W-group reflects geometric, not functional, classification
-- The "W" refers to Weitzmann, whose 1853 treatise explored these regional relationships
+- **Confusion**: W-group and H-group partition all possible transformations
+  **Clarification**: They partition the six single-step mode-reversing transformations; same-mode connections (LP, PL) belong to neither group exclusively
 
 # Source Reference
-Glossary, page 229
+Cohn, Richard. *Audacious Euphony*, Glossary, p. 229.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: glossary definition, shared properties list, H-group contrast. High confidence: formally defined in glossary.

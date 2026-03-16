@@ -1,70 +1,113 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Substitution Strategy
-category: theory
+slug: substitution-strategy
+
+# === CLASSIFICATION ===
+category: dissonance
+subcategory: strategies
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
-pdf_page: 156
-unit: null
-authors: Richard Cohn
+pdf_page: 157
+section: "Four Eighteenth-Century Approaches to Dissonance"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "substitution"
+  - "substitutional strategy"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - four-approaches-to-dissonance
+  - diminished-seventh-chord
+extends: []
+related:
+  - tristan-genus
+  - boretz-region
+  - spoiler-tone
+  - nearly-even-tetrachord
+contrasts_with:
+  - reduction-strategy
+  - deletion-strategy
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do I apply the four dissonance strategies (deletion, reduction, substitution, combination)?"
+  - "How do seventh chords extend the triadic voice-leading model?"
+  - "What is the relationship between Boretz's Tristan analysis and Rameau's substitution theory?"
 ---
 
 # Quick Definition
-The substitution strategy treats dissonant chords as semitonal displacements of simpler harmonies, with Cohn inverting Rameau's approach to interpret dominant and half-diminished seventh chords as displacements of fully diminished seventh chords.
+The substitution strategy treats dissonant chords as semitonal displacements of simpler or more symmetrical harmonies; Cohn, following Boretz, inverts Rameau's method to interpret dominant and half-diminished seventh chords as displacements of fully diminished seventh chords.
 
-# Formal Definition
-**Substitution** is a strategy for incorporating dissonant harmonies into theory by treating them as chromatic displacements of simpler or more symmetrical structures. The strategy has multiple historical implementations:
+# Core Definition
+**Substitution** interprets dissonant harmonies as chromatic displacements of simpler structures. Rameau's *Traite* (1722) interpreted the diminished seventh chord as resulting from the displacement of the root of a dominant seventh chord. Benjamin Boretz (1972) reversed Rameau's generative arrow: taking a cue from his analysis of the *Tristan* Prelude, he interprets dominant and half-diminished seventh chords "as semitonal displacements of fully diminished seventh chords" (p. 158). Where Rameau valued the dominant seventh as progenitor by virtue of its relative consonance, "Boretz bestows primacy on the diminished seventh by virtue of its status as an equal division of the octave" (p. 168). This reversal for tetrachords is analogous to Weitzmann's reversal for triads, which grants primacy to the augmented triad.
 
-1. **Rameau (Traite 1722)**: Diminished seventh = displacement of dominant seventh (root removed and replaced)
-2. **Kirnberger**: Accidental seventh chord's dissonant tone substitutes for its consonant resolution
-3. **Fetis**: Chromatic passing/neighboring chords substitute for diatonic ones
-4. **Schenkerian pedagogy**: Dissonances substitute for their resolutions
-5. **Boretz (1972)**: Dominant and half-diminished sevenths = displacements of diminished seventh (Cohn's approach)
+# Prerequisites
+- **Four approaches to dissonance**: Understanding substitution as one of four complementary strategies
+- **Diminished seventh chord**: The perfectly even tetrachord that serves as the substitutional origin
 
-# Construction/Recognition
-Cohn develops substitution following Boretz:
-- Take a fully diminished seventh chord (perfectly even tetrachord)
-- Displace one tone downward by semitone → dominant seventh chord
-- Displace one tone upward by semitone → half-diminished seventh chord
+# Key Properties
+1. Reverses Rameau's generative arrow: the symmetrical chord (diminished seventh) is primary, not the functional one (dominant seventh)
+2. Creates the theoretical foundation for the Tristan genus and Boretz regions
+3. Parallels Weitzmann's approach to triads (augmented triad as progenitor of consonant triads)
+4. Enables analysis of voice-leading among dissonances without invoking tonal function
+
+# Construction / Recognition
+Following Boretz's method:
+1. Take a fully diminished seventh chord (perfectly even tetrachord)
+2. Displace one tone downward by semitone: produces a dominant seventh chord
+3. Displace one tone upward by semitone: produces a half-diminished seventh chord
+4. The displaced tone is the "spoiler" (Boretz's term)
 
 Example with B-D-F-G# diminished seventh:
-- Displace D# down to D → G-B-D-F (G dominant seventh)
-- Displace D up to D# → D#-F#-A-C# (D# half-diminished, enharmonically)
+- Displace B down to Bb: produces Bb dominant seventh (Bb-D-F-Ab)
+- Displace D up to D#: produces D# half-diminished (D#-F#-A-C#, enharmonically)
 
-This reverses Rameau's arrow: the symmetrical chord (diminished seventh) is primary, generating the asymmetrical ones (V7, ø7) through displacement.
-
-# Musical Context
-Substitution is appropriate when:
-- Dissonant chords move parsimoniously among themselves
-- Diatonic/tonal coherence is suspended
-- Voice-leading efficiency among dissonances is the organizing principle
-
-The approach enables:
-- Analysis of Tristan-style seventh chord progressions
-- Understanding of Boretz regions
-- 4-Cube Trio voice-leading maps
-
-The substitution strategy parallels Weitzmann's approach to triads: just as consonant triads are displacements of augmented triads, Tristan-genus chords are displacements of diminished seventh chords.
+# Context & Application
+The substitution strategy is appropriate when dissonant chords move parsimoniously among themselves and diatonic/tonal coherence is suspended. It enables the systematic Tristan-genus analysis developed in the rest of Chapter 7, including Boretz regions, Boretz spiders, 4-Cube Trio, and the entire apparatus for analyzing voice leading among seventh chords. The approach is also the historical precursor to substitutional theories in Kirnberger (accidental seventh chords), Fetis (chromatic substitutes for diatonic chords), and Schenkerian pedagogy.
 
 # Examples
-**Tristan Prelude opening (Boretz's analysis)**: The first two chords share a common relation to the D-F-G#-B diminished seventh; each contains three of its four pitch classes, with one pitch "contrapuntally" displaced by semitone. The D# "spoils" the first chord (ø7), and when it resolves to D, the F is "displaced" to E (creating V7).
+- **Tristan Prelude opening (Boretz 1972)**: "These two chords... share a common relation to... D-F-G#-B; each... contains just three of its four pitch classes, with one pitch 'contrapuntally' displaced by a semitone; for only the D# 'spoils' the first chord of m. 2, and when it 'resolves' to D, the F of the complex is 'displaced' to E" (p. 168)
+- **Tristan Prelude chords 3-4**: Same pattern with different spoilers (F# and G) operating on the same B-D-F-G# core
+- **Chord 5 to chord 6**: Marks the first "interregional modulation" as a new majority diminished seventh complex takes over (p. 169)
 
-**Brunnhilde's Immolation (Gotterdammerung)**: Similar script to Tristan - alternating V7 and ø7 chords occupy the Boretz region centered on E-G-A#-C#, with eighth-note chords as single semitonal displacements of the central diminished seventh.
+# Relationships
+## Builds Upon
+- Rameau's *Traite* (1722) -- original substitution strategy (diminished seventh from displaced dominant seventh)
+- Boretz (1972) -- reversal that makes diminished seventh primary
+## Enables
+- Tristan genus (the system of nearly even tetrachords)
+- Boretz regions (clusters of chords around a diminished seventh)
+- 4-Cube Trio (unified voice-leading map)
+## Related
+- Weitzmann region (triadic analogue: consonant triads as displaced augmented triads)
+- Spoiler tone (the displaced pitch in a Tristan-genus chord)
+## Contrasts With
+- Reduction strategy (relates dissonances to consonant triadic subsets; substitution relates them to a perfectly even dissonance)
+- Deletion strategy (removes dissonances; substitution embraces them as primary objects)
 
-# Related Concepts
-- Diminished seventh chord
-- Tristan genus
-- Boretz region
-- Nearly even tetrachord
-- Dominant seventh chord
-- Half-diminished seventh chord
-- Weitzmann region (triadic analogue)
+# Common Errors
+- **Error**: Assuming Cohn's substitution follows Rameau's direction (dominant seventh as progenitor)
+  **Correction**: Cohn follows Boretz in reversing the arrow; the diminished seventh is progenitor by virtue of its perfect evenness
 
 # Common Confusions
-- Cohn reverses Rameau's substitution direction: diminished seventh is primary, not derived
-- Substitution here differs from common-practice "chord substitution" (e.g., tritone substitution)
-- The strategy applies to voice-leading relationships, not harmonic function
-- Both V7 and ø7 are "spoiled" diminished seventh chords, not derivations of each other
+- **Confusion**: Conflating substitution here with common-practice "chord substitution" (e.g., tritone substitution)
+  **Clarification**: Substitution here describes a generative/analytical relationship between chord types, not a harmonic function replacement
+- **Confusion**: Thinking V7 and half-diminished are derived from each other
+  **Clarification**: Both are independently derived from the diminished seventh by opposite directions of displacement
 
 # Source Reference
-Chapter 7: Dissonance, pages 157-158, 165-170
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 157-158, 166-170.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Boretz quotation, construction examples. Fresh extraction adds historical context (Kirnberger, Fetis, Schenker), Weitzmann parallel, and precise page citations.

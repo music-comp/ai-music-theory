@@ -1,65 +1,118 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Voice-Leading Work
-category: theory
+slug: voice-leading-work
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: distance-metrics
+tier: foundational
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Mapping the Triadic Universe"
 chapter_number: 1
 pdf_page: 19
-unit: null
-authors: Richard Cohn
+section: "Three Ways to Calculate Triadic Distance"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "voice-leading distance"
+  - "VL work"
+  - "total semitonal displacement"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - idealized-voice-leading
+extends:
+  - voice-leading-approach
+related:
+  - minimal-work-relation
+  - single-semitonal-displacement
+  - triadic-distance
+contrasts_with:
+  - common-tone-approach
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do I calculate voice-leading work between two triads?"
+  - "What is voice-leading work?"
 ---
 
 # Quick Definition
 The sum of the magnitude of all voice motions between two chords connected by idealized voice leading, measured in semitones.
 
-# Formal Definition
-Voice-leading work quantifies the total semitonal displacement required to transform one chord into another under idealized voice leading. A unit of voice-leading work equals the motion of one voice by one semitone. The work between two chords is calculated by summing the absolute values of all voice motions when tones are optimally paired. For consonant triads, voice-leading work ranges from 1 to 6 semitones, with lower values indicating closer voice-leading proximity.
+# Core Definition
+Voice-leading work quantifies the total semitonal displacement required to transform one chord into another under idealized voice leading. A unit of voice-leading work equals the motion of one voice by one semitone. The work between two triads is calculated by summing the absolute values of all voice motions when tones are optimally paired. For consonant triads, voice-leading work ranges from 1 to 6 semitones, with lower values indicating closer voice-leading proximity (synthesized from Ch. 1, pp. 25-31, and Ch. 2, p. 36).
 
-# Construction/Recognition
-For triads X = {x1, x2, x3} and Y = {y1, y2, y3} with optimal pairing:
-Voice-leading work = |x1 - y1| + |x2 - y2| + |x3 - y3|
+# Prerequisites
+- **idealized-voice-leading** — Voice-leading work is measured under idealized (optimal) voice-leading pairing
 
-Where distances are measured in semitones mod 12 (taking the smaller direction).
+# Key Properties
+1. Measured in semitones (integer values)
+2. Range for consonant triads: 1 (minimum, P or L) to 6 (maximum)
+3. Finer-grained than common-tone counting (6 values vs. 3)
+4. Independent of root motion direction
+5. Measured in pitch-class space, abstracting from actual register
+6. One unit of work = one voice moving one semitone
 
-Range for consonant triads:
-- Minimum: 1 (P or L transformation)
-- Maximum: 6 (e.g., C major to f# minor)
+# Construction / Recognition
+## To calculate voice-leading work between triads X and Y:
+1. List the pitch classes of both triads
+2. Find the optimal one-to-one pairing that minimizes total semitonal motion
+3. For each pair, calculate the distance in semitones (mod 12, taking the smaller direction)
+4. Sum all distances
 
-Examples:
-- C major to c minor (P): E to Eb = 1 unit
-- C major to e minor (L): C to B = 1 unit
-- C major to a minor (R): G to A = 2 units
-- C major to f minor (N): E to F, G to Ab = 2 units
-- C major to Ab major: C to C, E to Eb, G to Ab = 2 units
+## Examples:
+- C major to c minor (P): E to Eb = **1 unit**
+- C major to e minor (L): C to B = **1 unit**
+- C major to a minor (R): G to A = **2 units**
+- C major to Ab major (LP): C to C, E to Eb, G to Ab = **2 units**
+- C major to ab minor (H): C to B, E to Eb, G to Ab = **3 units**
+- C major to F major: C to C, E to F, G to A = **3 units**
 
-# Musical Context
-Voice-leading work provides:
-- A finer metric than common-tone counting (6 values vs. 3)
-- The basis for defining single semitonal displacement
-- The criterion for adjacency in the Cube Dance and Tonnetz
-- A measure of triadic proximity independent of root relations
-
-Voice-leading work became central to 19th-century conceptions of harmonic proximity, complementing and sometimes overriding diatonic and root-based metrics.
+# Context & Application
+Voice-leading work is the central metric for pan-triadic analysis. It provides the basis for defining single semitonal displacement, for adjacency in the hexatonic cycle and Cube Dance, and for measuring triadic proximity independent of root relations. "The voice-leading approach distinguishes between progressions that common-tone counting conflates" (synthesized from Ch. 1).
 
 # Examples
-- Table 1.1 in Chapter 1 calculates voice-leading work for the Schubert Bb Sonata passage
-- The Cube Dance connects all triads related by 1 unit of work
-- Hexatonic cycles minimize cumulative voice-leading work
-- Sequential passages often minimize work at each step
+**Example 1** (Ch. 1, Table 1.1): The Schubert B-flat Sonata passage: Bb to Gb = 2 units, Gb to f# = 1 unit, f# to A = 2 units, total = 14 units across the full progression.
 
-# Related Concepts
-- Idealized Voice Leading
-- Single Semitonal Displacement
-- Voice-Leading Approach
-- Common-Tone Approach
-- Triadic Distance
-- Voice-Leading Zone
+**Example 2** (Ch. 2, p. 36): In a hexatonic cycle, "motion between them thus involves a single unit of work," defining the minimal-work relation.
+
+# Relationships
+## Builds Upon
+- **idealized-voice-leading** — The assumed pairing method
+- **voice-leading-approach** — Voice-leading work is the quantitative core of this approach
+
+## Enables
+- **minimal-work-relation** — Defined as voice-leading work of 1
+- **single-semitonal-displacement** — The transformation producing 1 unit of work
+- **hexatonic-cycle** — Built from chains of 1-unit-work connections
+
+## Related
+- **triadic-distance** — Voice-leading work is one of three distance metrics
+
+## Contrasts With
+- **common-tone-approach** — Common-tone counting provides coarser distance information
+
+# Common Errors
+- **Error**: Counting the number of moving voices instead of total semitonal displacement
+  **Correction**: Voice-leading work measures total displacement, not the number of moving voices. C to a minor: 1 voice moves 2 semitones = 2 units, not 1 unit
 
 # Common Confusions
-- Voice-leading work measures total displacement, not the number of moving voices
-- Work is measured in pitch-class space, abstracting from actual register
-- Low work does not always correlate with high common-tone retention
-- The metric assumes idealized voice leading, not actual compositional texture
+- **Confusion**: Thinking voice-leading work applies to actual compositional voicing
+  **Clarification**: It measures idealized voice leading in pitch-class space, not the actual registral realization
+- **Confusion**: Assuming low work always means more common tones
+  **Clarification**: C major to ab minor = 3 units with 0 common tones; C major to G major = 4 units with 1 common tone
 
 # Source Reference
-Glossary, page 229; foundational throughout the book
+Chapter 1: Mapping the Triadic Universe, pp. 25-31. Glossary, p. 229. Foundational throughout the book.
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: the calculation examples, the Schubert analysis reference, the distinction from common-tone counting
+- Confidence: HIGH — the concept is explicitly defined and used consistently throughout the book

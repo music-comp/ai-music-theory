@@ -1,48 +1,91 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "Dvorak Upper Mediant Tonal Scheme"
+slug: dvorak-upper-mediant-scheme
+
+# === CLASSIFICATION ===
 category: analysis
+subcategory: piece-specific analysis
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
-pdf_page: 129
-unit: null
-authors: "Richard Cohn"
+pdf_page: 152
+section: "Continuous Upshifts"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - continuous-upshift
+  - voice-leading-zones
+extends: []
+related:
+  - dvorak-new-world-development
+  - upper-mediant
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Dvorak's New World Symphony avoid the dominant?"
 ---
 
 # Quick Definition
-The first movement of Dvorak's "New World" Symphony avoids the dominant throughout, instead using four upper mediant triads presented in upshifting order to fill the off-tonic structural role, with the second theme's keys climbing voice-leading space as part of a **P**/**S** chain.
+The first movement of Dvorak's "New World" Symphony avoids the dominant throughout, instead using four upper mediant triads in upshifting order to fill the off-tonic role, with the second theme's keys climbing voice-leading space (7 -> 8 -> 10 -> 11) as part of a P/S chain.
 
-# Formal Definition
-The movement's tonal peculiarity is its avoidance of the dominant: B is never tonicized, and cadential dominants are undercut by weak bass degrees, deceptive resolution, or brief duration. The off-tonic role is filled by four upper mediant triads (Kopp's term, 2002) presented in upshifting order. The second theme appears in g minor (m. 91), G major (m. 137), ab minor (recapitulation), and Ab major, with keys climbing voice-leading space through zones 7 -> 8 -> 10 -> 11, forming a **P**/**S** chain. The coda extends this to zone 2 (A major, then F major) before the fleeting structural dominant at m. 408.
+# Core Definition
+"B is never tonicized, as major or minor" (p. 152). Cadential dominants are undercut by weak bass, deceptive resolution, or brief duration. "The off-tonic role is appropriated by four upper mediant triads (Kopp's term, 2002), presented in upshifting order" (p. 152). The second theme climbs: g minor (zone 7) -> G major (zone 8) in exposition; ab minor (zone 10) -> Ab major (zone 11) in recapitulation. Ab major is "the hexatonic pole of the tonic, an extraordinary key in which to close a recapitulation" (p. 153). The coda extends to zone 2 before the fleeting structural dominant.
 
-# Construction/Recognition
-Figure 6.17 tracks the second theme:
-- Exposition: g minor (zone 7) -> G major (zone 8)
-- Recapitulation: ab minor (zone 10) -> Ab major (zone 11)
-- Recapitulation closes in Ab major, the hexatonic pole of the tonic -- an extraordinary recapitulatory key
-- Coda extends upshift to zone 2 before the structural dominant
+# Prerequisites
+- **Continuous upshift**: The overall trajectory
+- **Voice-leading zones**: The metric for tracking the scheme
 
-# Musical Context
-The movement's dominant avoidance and upper-mediant scheme represent a large-scale departure from classical tonal norms. The relaxed upshift through pastoral breathing points mirrors the intense upshift across the development section.
+# Key Properties
+1. Movement-wide dominant avoidance
+2. Four upper mediants fill off-tonic role
+3. Second theme keys: 7 -> 8 -> 10 -> 11 (P/S chain)
+4. Ab major recapitulation = hexatonic pole of tonic
+5. Relaxed upshift through pastoral points mirrors intense developmental upshift
+
+# Construction / Recognition
+- Figure 6.17: Second theme across exposition and recapitulation
+- Figure 6.18: Tonnetz showing keys climbing through gray band
+
+# Context & Application
+The dominant avoidance and upper-mediant scheme represent a large-scale departure from classical norms, analyzed through voice-leading zones to reveal the movement's coherent upshifting trajectory.
 
 # Examples
-- Figure 6.17: Second theme traced across exposition and recapitulation
-- Figure 6.18: Tonnetz showing keys climbing through the gray band
-- Ab major as recapitulatory key: the hexatonic pole of the e minor tonic
-- F major in the coda functions as Neapolitan to the fleeting structural dominant
+- Recapitulatory Ab major: hexatonic pole of e minor tonic
+- Coda F major: functions as Neapolitan to the fleeting structural dominant (m. 408)
 
-# Related Concepts
-- Upper Mediant
-- Continuous Upshift
-- Voice-Leading Zones
-- P/S Chain
-- Hexatonic Pole
-- Dvorak New World Development Analysis
+# Relationships
+## Builds Upon
+- Continuous upshift script
+## Enables
+- Understanding of the overall New World first movement structure
+## Related
+- Dvorak New World development (intense counterpart to this relaxed upshift)
+## Contrasts With
+- Classical dominant-based tonal schemes
+
+# Common Errors
+- **Error**: Dominant avoidance is a local phenomenon
+  **Correction**: It is movement-wide; B is never tonicized
 
 # Common Confusions
-- Dominant avoidance is a movement-wide feature, not just a local event
-- The upper mediants are not functionally equivalent to dominants; they fill the off-tonic role through a different logic
-- Ab major closing the recapitulation is extraordinary precisely because it is the hexatonic pole of the tonic
+- **Confusion**: Upper mediants function as dominants
+  **Clarification**: They fill the off-tonic role through a different (upshifting) logic
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pp. 152-153, Figures 6.17-6.18
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 152-153, Figures 6.17-6.18.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: dominant avoidance detail, hexatonic pole of tonic, P/S chain zones. High confidence -- movement-level analytical observation.

@@ -1,53 +1,104 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Compound Transformation Classes
-category: theory
+slug: compound-transformation-classes
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: equivalence classes
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "A Unified Model of Triadic Voice-Leading Space"
 chapter_number: 5
-pdf_page: 101
-unit: null
-authors: "Richard Cohn"
+pdf_page: 125
+section: "Voice-Leading Zones"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "compound HW classes"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transformation-class
+  - voice-leading-zones
+extends:
+  - transformation-class
+related:
+  - chromatic-sequences
+  - zone-diametric-relations
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How are triads in non-adjacent zones connected by compound transformations?"
+  - "How many specific transformations does each compound class cover?"
 ---
 
 # Quick Definition
-Compound transformation classes describe connections between triads in nonadjacent voice-leading zones by chaining H-class and W-class operations, with the number of terms corresponding to the voice-leading distance between the zones.
+Classes of compound transformations connecting triads in non-adjacent voice-leading zones, built by alternating H-class and W-class operations: HW connects zones 3 apart, HWH connects 4 apart, WHW connects 5 apart, and HWHW/WHWH connects the maximum of 6 apart.
 
-# Formal Definition
-With H-class and W-class transformation classes as basic elements, compound classes connect triads from nonadjacent zones:
-- **HW** or **WH** (3 zones apart): Connects triads related by odd transposition, covering the chromatic sequences studied in Chapter 5
-- **HWH** (4 zones apart): Three-term compound
-- **WHW** (5 zones apart): Three-term compound
-- **HWHW** or **WHWH** (6 zones apart, maximum distance): Four-term compound, connecting triads related by major second or tritone
+# Core Definition
+With H- and W-group transformation classes as basic elements, compound classes connect triads from non-adjacent zones. "Triads that are transpositionally related by an odd value, three voice-leading units apart, are connected by a compound HW or WH transformation; in effect, this is the generalization that underlies all of the work with sequences and transformational substitutions in this chapter" (pp. 125-126). Four units: HWH; five units: WHW; six units (maximum): HWHW or WHWH.
 
-The three-term compounds each cover twenty-seven specific sets of transformations, and the four-term compounds cover eighty-one.
+# Prerequisites
+- **Transformation class**: The basic H, W, and E classes
+- **Voice-leading zones**: The zone system these compounds operate on
 
-# Construction/Recognition
-To determine the compound class connecting two triads:
-1. Calculate their voice-leading zone distance (modulo 12)
-2. Alternate H and W classes to match that distance
-3. The compound class tells you how many region boundaries must be crossed
+# Key Properties
+1. HW or WH: zones 3 apart (9 specific combinations = 3 x 3)
+2. HWH: zones 4 apart (27 specific sets of transformations = 3^3)
+3. WHW: zones 5 apart (27 specific sets)
+4. HWHW or WHWH: zones 6 apart (81 specific sets = 3^4)
+5. The generalizing power parallels "odd + odd = even" -- a single statement consolidating many specific instances
 
-# Musical Context
-Compound transformation classes generalize the substitution principles underlying chromatic sequences, consolidating a large number of specific transformational instances into abstract structural claims analogous to number-theoretic statements like "odd + odd = even."
+# Construction / Recognition
+For any two triads, determine their zone distance:
+- Distance 1: single H-class operation
+- Distance 2: single W-class operation
+- Distance 3: HW or WH compound
+- Distance 4: HWH compound
+- Distance 5: WHW compound
+- Distance 6: HWHW or WHWH compound
+
+# Context & Application
+Compound classes provide the abstract framework underlying all chromatic sequence analysis. The three-term compounds cover 27 specific sets of transformations; four-term compounds cover 81. This level of abstraction consolidates vast numbers of specific cases into general principles. Cohn notes that "for readers mystified by this mode of discourse, be assured that the remainder of the book proceeds independently of these abstractions" (p. 126).
 
 # Examples
-- Zones 1 and 2 (distance 1): Single H-class transformation
-- Zones 2 and 4 (distance 2): Single W-class transformation
-- Zones 4 and 8 (distance 4): HWH compound (e.g., d minor to G major)
-- Zones 5 and 11 (distance 6): HWHW or WHWH compound (maximum distance)
+- Distance 3 (HW): the generalization underlying all odd-transposition chromatic sequences (the central work of ch5)
+- Distance 4 (HWH): d minor (zone 4) to G major (zone 8) requires HWH
+- Distance 6 (HWHW): connects zone-diametric triads (T2 or T6 related), maximum distance
 
-# Related Concepts
-- Voice-Leading Zones
-- H-Group Transformations
-- W-Group Transformations
-- Transformation Class
-- Chromatic Sequences
-- Zone Distance Calculation
+# Relationships
+## Builds Upon
+- Transformation classes as the building blocks
+## Enables
+- Zone-diametric analysis (distance 6)
+- General trajectory analysis independent of specific transformations
+## Related
+- Chromatic sequences (HW compound generates all odd-transposition sequences)
+- Zone-diametric relations (HWHW connects maximum-distance triads)
+## Contrasts With
+- Individual transformation names (the specific level these generalize away from)
+
+# Common Errors
+- **Error**: Compound classes require specific transformations in specific order
+  **Correction**: Any combination of the specified class types in the specified order suffices
 
 # Common Confusions
-- The compound class specifies the classes of the component transformations, not the specific transformations themselves
-- HWHW and WHWH both connect triads at maximum distance (6 zones) but represent different orderings
-- The generalizing power is enormous: each four-term compound covers eighty-one specific transformation chains
+- **Confusion**: These abstractions are required for practical analysis
+  **Clarification**: They are optional; the book proceeds without them after this section
+- **Confusion**: HWHW and WHWH are different distances
+  **Clarification**: Both connect zones 6 apart; they represent different orderings of the same distance
 
 # Source Reference
-Chapter 5: A Unified Model of Triadic Voice-Leading Space, pp. 123-124
+Cohn, Richard. *Audacious Euphony*, Chapter 5, pp. 125-126.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: specific combination counts (27, 81), "odd + odd = even" analogy. High confidence -- clearly articulated formal system.

@@ -1,60 +1,115 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: LP/PL Transformation
-category: technique
+slug: lp-transformation
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Hexatonic Cycles"
 chapter_number: 2
 pdf_page: 35
-unit: null
-authors: Richard Cohn
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "LP"
+  - "PL"
+  - "chromatic mediant transformation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - l-transformation
+  - p-transformation
+  - hexatonic-cycle
+extends: []
+related:
+  - h-transformation
+  - voice-leading-equivalence
+  - melodic-dualism
+  - contrary-motion
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the LP transformation?"
+  - "How does LP relate to major-third transposition?"
 ---
 
 # Quick Definition
-LP (or PL) is a compound transformation that moves between same-mode triads whose roots are a major third apart, involving two semitonal displacements that move the perfect fifth outward or inward by step.
+A compound transformation connecting same-mode triads whose roots are a major third apart, involving two semitonal displacements that expand a perfect fifth outward (or contract a major sixth inward) by contrary semitonal motion.
 
-# Formal Definition
-LP connects triads of the same mode by combining the L and P transformations. Despite its compound name, LP can be understood as a unitary Gestalt - a single transformation that transposes a major triad up by major third or a minor triad down by major third, while producing characteristic voice-leading: the perfect fifth expands to a major sixth (or contracts from major sixth to perfect fifth for PL).
+# Core Definition
+LP connects same-mode triads by combining L and P transformations. "Although the name for this transformation, **LP**, suggests a compound transformation, with intermediate ... minor [triad] deleted, I prefer to think of the transformation (and its inverse, **PL**) as a unitary *Gestalt* whose name happens to have two syllables" (Cohn, p. 48). The transformation's key property is voice-leading equivalence: "any **LP** operation sends its perfect-fifth dyad to a major sixth (or perfect fourth to minor third), and any **PL** operation does the reverse" (p. 50).
 
-# Construction/Recognition
-Voice-leading specification for LP:
-- For major triads: root descends by semitone, fifth ascends by semitone, third held
-- For minor triads: root ascends by semitone, fifth descends by semitone, third held
-- Voice-leading work: 2 semitones total
-- Common tones: 1 (the third)
+# Prerequisites
+- **l-transformation** — LP combines L and P
+- **p-transformation** — LP combines L and P
+- **hexatonic-cycle** — LP connects triads 2 positions apart in a hexatonic cycle
 
-Examples:
-- LP(C major) = E major: (C, E, G) -> (B, E, G#); C->B, G->G#
-- LP(c minor) = ab minor: (C, Eb, G) -> (Ab, Cb, Eb); C->Cb, G->Ab
-- PL(E major) = C major: (E, G#, B) -> (E, G, C); G#->G, B->C
+# Key Properties
+1. Voice-leading work: 2 semitones total
+2. Common tones: 1 (the third)
+3. Root motion: major third (4 semitones)
+4. Connects same-mode triads (major to major, or minor to minor)
+5. LP on major: root descends, fifth ascends (fifth expands to sixth)
+6. LP on minor: root ascends, fifth descends (fifth contracts from sixth)
+7. LP and PL produce the same final result from the same starting triad (but via different intermediate triads)
 
-Note: LP on a major triad produces the same result as PL on a major triad (both yield E major from C major), but the intermediate triad differs (e minor vs. c minor).
+# Construction / Recognition
+- LP(C major) = E major: C->B (down), E holds, G->G# (up)
+- LP(c minor) = ab minor: C->B/Cb (down), Eb holds, G->Ab (up)
+- PL(E major) = C major: G#->G (down), E holds, B->C (up)
 
-# Musical Context
-LP/PL transformations appear frequently in nineteenth-century chromatic music as "chromatic mediant" relations or major-third transpositions. They play a crucial role in hexatonic cycles, connecting same-mode triads that are two steps apart in the cycle. The transformation is particularly associated with seamless modulation by major third.
+Key voice-leading gesture: the perfect fifth expands to a major sixth via contrary semitonal motion.
+
+# Context & Application
+LP/PL transformations appear frequently as "chromatic mediant" relations in nineteenth-century music. Cohn addresses three objections to calling LP on major and LP on minor "the same" transformation: (1) roots move in opposite directions, (2) the equivalence seems to result from transformational logic alone, (3) it implies harmonic dualism. "All three objections are neutralized by an appeal to voice leading" (p. 50).
 
 # Examples
-From the text (p. 48-49):
-- Liszt, Consolation no. 3: "The passage presents upward motion through the strip... A second new feature is the omission of one member of the cycle, c# minor, resulting in the direct juxtaposition of two triads of the same mode"
-- The example shows A major to Db major via LP
-- Schubert Sanctus: g minor interpolated between b minor and eb minor, using LP transformations
+**Example 1** (p. 48): Liszt, Consolation no. 3: upward motion through a Tonnetz strip with LP connecting same-mode triads (A major to Db major).
 
-Richard Strauss, "Fruhling" (Four Last Songs, 1949):
-- "After an orchestral alternation between c minor and ab minor, the singer enters on the wave of that same progression at m. 5. The second stanza opens on a C major triad that moves directly to E major" - demonstrating LP in both minor and major modes with equivalent voice leading (p. 51)
+**Example 2** (pp. 50-51): Strauss, "Fruhling" (Four Last Songs): "After an orchestral alternation between c minor and ab minor, the singer enters on the wave of that same progression at m. 5. The second stanza opens on a C major triad that moves directly to E major." Both are LP, with the same voice leading (C down, G up, middle voice holds) despite opposite root directions.
 
-# Related Concepts
-- L Transformation
-- P Transformation
-- H Transformation
-- Hexatonic Cycle
-- Chromatic Mediant
-- Major-Third Transposition
-- Voice-Leading Equivalence
+**Example 3** (p. 49): Schubert Sanctus: g minor interpolated between b minor and eb minor, using LP.
+
+# Relationships
+## Builds Upon
+- **l-transformation** — One component of the compound
+- **p-transformation** — The other component
+- **hexatonic-cycle** — LP connects triads 2 steps apart
+
+## Enables
+- **h-transformation** — H extends LP by one more step (3 positions in the cycle)
+
+## Related
+- **voice-leading-equivalence** — LP on major and LP on minor are voice-leading equivalent
+- **melodic-dualism** — LP's equivalence across modes is grounded in melodic (not harmonic) dualism
+- **contrary-motion** — LP produces contrary motion between the outer voices
+
+## Contrasts With
+No direct contrasts within this source.
+
+# Common Errors
+- **Error**: Decomposing LP into two separate steps in analysis when the passage presents it as a direct juxtaposition
+  **Correction**: LP can function as a "unitary Gestalt" even though it has a compound name (p. 48)
 
 # Common Confusions
-- LP and PL produce the same final result when applied to the same starting triad, but they traverse different intermediate triads
-- The compound name does not mean LP must be decomposed; it can function as a unitary transformation
-- LP on major triads moves roots UP by major third; LP on minor triads moves roots DOWN by major third - this is not inconsistency but rather voice-leading equivalence (both expand the fifth to a sixth)
-- Do not confuse with mere transposition; LP involves specific voice-leading behavior, not just pitch displacement
+- **Confusion**: Thinking LP on major (roots up by M3) and LP on minor (roots down by M3) are different transformations
+  **Clarification**: They share the same voice-leading gesture (fifth expands to sixth); root direction is not part of the transformation's identity (p. 50)
 
 # Source Reference
-Chapter 2: Hexatonic Cycles, pp. 48-51
+Chapter 2: Hexatonic Cycles, pp. 48-51. The Strauss "Fruhling" analysis on pp. 50-51.
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: the "unitary Gestalt" quotation, the Liszt and Strauss examples, the three objections and their neutralization
+- Confidence: HIGH — explicitly defined with multiple examples and theoretical justification

@@ -1,68 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Wozzeck Chord
-category: theory
+slug: wozzeck-chord
+
+# === CLASSIFICATION ===
+category: dissonance
+subcategory: hexachordal systems
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
-pdf_page: 156
-unit: null
-authors: Richard Cohn
+pdf_page: 183
+section: "Scriabin's Mystic Species and Generalized Weitzmann Regions"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Forte class 6-34 (downshifting species)"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - generalized-weitzmann-region
+extends: []
+related:
+  - mystic-chord
+  - scriabin-analysis
+contrasts_with:
+  - mystic-chord
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Wozzeck chord?"
+  - "How does the Wozzeck chord relate to the mystic chord?"
 ---
 
 # Quick Definition
-The Wozzeck chord is a nearly even hexachord formed by downward semitonal displacement from a whole-tone scale, named for its prominence in Berg's opera, serving as the downshifting counterpart to Scriabin's mystic chord.
+The Wozzeck chord is a nearly even hexachord formed by downward semitonal displacement from a whole-tone scale, named for its prominence in Berg's opera, serving as the downshifting counterpart to Scriabin's mystic chord within the hexachordal GWR.
 
-# Formal Definition
-The **Wozzeck chord** (featured in Berg's opera of the same name; see Perle 1967) is a nearly even hexachord belonging to the same Forte-class as the mystic chord (6-34, prime form [013579]). It is formed by:
-- Taking a whole-tone scale (perfectly even hexachord)
-- Displacing one tone downward by semitone
+# Core Definition
+The **Wozzeck chord** "featured in the Berg opera; see Perle 1967" (p. 183) is a nearly even hexachord belonging to the same Forte class as the mystic chord (6-34, prime form [013579]). It is formed by displacing one tone of a whole-tone scale downward by semitone -- the downshifting species of the hexachordal GWR. It relates to the whole-tone core as major triads relate to augmented triads, or dominant sevenths to diminished sevenths: through downward displacement.
 
-The Wozzeck chord relates to its whole-tone "core" in the same way that major triads relate to augmented triads, or dominant seventh chords relate to diminished seventh chords - through downward semitonal displacement.
+# Prerequisites
+- **Generalized Weitzmann region**: The framework placing the Wozzeck chord in context
 
-# Construction/Recognition
-Relationship to mystic chord:
-- Both are set-class 6-34
-- Related by inversion (like major/minor triads, like V7/ø7)
-- Mystic = upward displacement from whole-tone
-- Wozzeck = downward displacement from whole-tone
+# Key Properties
+1. Downward semitonal displacement of one whole-tone scale tone
+2. Same Forte class as mystic chord (6-34), related by inversion
+3. Named for Berg's opera *Wozzeck* (Perle 1967)
+4. Six Wozzeck chords cluster around each whole-tone core
+5. Intra-GWR motion: 2 voice-leading units (as always)
+6. Bridging between GWRs: 4 moving voices (impractical)
 
-Generalized Weitzmann Region structure:
-- 6 Wozzeck chords cluster around each whole-tone core
-- 6 mystic chords cluster around the same core
-- 12 total nearly even hexachords per GWR
+# Construction / Recognition
+- Whole-tone scale: e.g., C-D-E-F#-G#-A#
+- Lower one tone by semitone: e.g., D down to C# yields C-C#-E-F#-G#-A#
+- The Wozzeck chord is to the mystic chord as the major triad is to the minor triad, or V7 to ø7
 
-Voice-leading:
-- 2 units to any other chord in the same GWR
-- Bridging between GWRs would require 4 moving voices
+Potential bridging (from Scriabin analysis):
+- "The first mystic chord in Feuillet could be inverted into a Wozzeck chord by holding C and D# invariant and raising the remaining pitches by semitone" (p. 185)
 
-# Musical Context
-The Wozzeck chord:
-- Appears prominently in Berg's expressionist opera
-- Relates to the mystic chord as major relates to minor, or V7 to ø7
-- Demonstrates that nearly even chord systems exist at any cardinality
-- Shows diminishing returns of voice-leading parsimony as n increases
-
-The chord illustrates theoretical principles while having limited practical application compared to triads or Tristan-genus chords.
+# Context & Application
+The Wozzeck chord demonstrates that nearly even chord systems exist at any cardinality, while simultaneously showing the diminishing returns of voice-leading parsimony as n increases. Its theoretical significance exceeds its practical utility for most analytical purposes.
 
 # Examples
-**Berg's Wozzeck**: Perle (1967) identifies the chord as a characteristic sonority in the opera.
+- **Berg's Wozzeck**: Perle (1967) identifies the chord as a characteristic sonority (p. 183)
+- **Hypothetical bridging**: Converting a mystic chord to a Wozzeck chord by holding 2 tones invariant and moving 4 by semitone (p. 185)
 
-**Scriabin's Feuillet d'Album (potential motion)**: The first mystic chord could theoretically be inverted into a Wozzeck chord by holding C and D# invariant and raising the remaining pitches by semitone - though Scriabin does not make such bridging progressions in the piece.
+# Relationships
+## Builds Upon
+- Generalized Weitzmann region (the GWR for n=6)
+- Whole-tone scale (the perfectly even core)
+## Enables
+- Understanding of GWR theory across cardinalities
+## Related
+- Mystic chord (upshifting counterpart, same set class)
+## Contrasts With
+- Mystic chord (downward vs. upward displacement)
 
-# Related Concepts
-- Mystic chord
-- Whole-tone scale
-- Nearly even chord
-- Generalized Weitzmann region
-- Berg's Wozzeck
-- Forte set class 6-34
-- Spoiler tone
+# Common Errors
+- **Error**: Thinking "Wozzeck chord" is a standard term from Berg's era
+  **Correction**: It is Cohn's analytical label, named for the opera where it is prominent
 
 # Common Confusions
-- Wozzeck and mystic chords are the same set class, related by inversion
-- "Wozzeck chord" is named for the opera, not a technical term from Berg
-- The chord's theoretical significance exceeds its practical utility
-- Like the mystic chord, it demonstrates limits rather than extensions of pan-triadic principles
+- **Confusion**: Assuming Wozzeck and mystic chords are different set classes
+  **Clarification**: Both are Forte class 6-34, related by inversion (same set class)
 
 # Source Reference
-Chapter 7: Dissonance, pages 183-184
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 183-184.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Perle reference, bridging example from Feuillet. Fresh extraction adds clearer analogy chain (major:minor :: V7:ø7 :: Wozzeck:mystic).

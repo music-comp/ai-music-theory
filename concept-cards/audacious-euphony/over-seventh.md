@@ -1,80 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Over-Seventh
-category: theory
+slug: over-seventh
+
+# === CLASSIFICATION ===
+category: dissonance
+subcategory: seventh chord types
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
-pdf_page: 156
-unit: null
-authors: Richard Cohn
+pdf_page: 162
+section: "Hexatonic Poles in Parsifal"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "added seventh"
+  - "conventional seventh"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - reduction-strategy
+  - dominant-seventh-chord
+extends: []
+related:
+  - under-seventh
+  - hexatonic-poles-in-parsifal
+contrasts_with:
+  - under-seventh
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the dualist counterpart of the over-seventh?"
+  - "How does the over-seventh relate to the dominant seventh chord?"
 ---
 
 # Quick Definition
-An over-seventh is a dissonant tone added a minor seventh above the root of a major triad, creating what is typically called a dominant seventh chord, analyzed as a major triad with supplementary treble dissonance.
+An over-seventh is a dissonant tone added a minor seventh above the root of a major triad, creating the conventional dominant seventh chord, analyzed as a major triad with supplementary treble dissonance -- the symmetric counterpart to the under-seventh.
 
-# Formal Definition
-The **over-seventh** is the conventional seventh added above a major triad to create a dominant seventh chord. In dualist theory, it is symmetrical to the under-seventh added below a minor triad.
+# Core Definition
+The **over-seventh** is the conventional seventh added above a major triad to create a dominant seventh chord. In dualist theory, it is the symmetric counterpart to the under-seventh added below a minor triad. The over-seventh resolves downward by step in standard authentic cadential motion (e.g., F resolving to E in G7 to C major). The terminology emphasizes that the seventh is supplementary to the triadic core, paralleling the under-seventh's supplementary status below a minor triad.
 
-For the chord G-B-D-F (G dominant seventh):
-- Analysis: G major triad (G-B-D) with F as over-seventh
-- The seventh is generated upward from the root
+# Prerequisites
+- **Reduction strategy**: The over-seventh arises from viewing the dominant seventh as a major triad with addition
+- **Dominant seventh chord**: The chord type being analyzed
 
-The over-seventh behaves according to standard voice-leading expectations:
-- Resolves downward by step
-- Creates characteristic dominant-to-tonic motion
-- The triad remains the structural core
+# Key Properties
+1. The normative case in tonal theory -- the standard dominant seventh chord
+2. Resolves downward by step (conventional seventh resolution)
+3. Symmetrical to under-seventh: over-seventh above major triad mirrors under-seventh below minor triad
+4. Creates authentic cadential motion, while under-seventh creates plagal cadential motion
 
-# Construction/Recognition
-Standard generation:
-- Major triad built upward from root: G → B → D
-- Over-seventh added a minor seventh above root: G → F
-- Result: G-B-D-F (dominant seventh)
+# Construction / Recognition
+- Take a major triad (e.g., G-B-D)
+- Add a minor seventh above the root: G up to F
+- Result: G-B-D-F (G dominant seventh)
+- The over-seventh (F) resolves downward to E in standard resolution
 
-Voice-leading behavior:
-- Over-seventh resolves downward (F → E in G7 → C)
-- Root typically descends by fifth or ascends by step
-- Third resolves upward (leading tone resolution)
-
-Symmetry with under-seventh:
-- Over-seventh: added above major triad, resolves down (authentic)
-- Under-seventh: added below minor triad, resolves up (plagal)
-
-# Musical Context
-The over-seventh is the normative case in tonal theory:
-- Dominant function chords
-- Applied dominants (secondary dominants)
-- Any major triad with added seventh
-
-The term is useful for:
-- Maintaining symmetry with under-seventh concept
-- Clarifying that the seventh is "supplementary" to the triadic core
-- Distinguishing from cases where the seventh is more structural
-
-In Cohn's analysis of hexatonic poles in Parsifal:
-- The Amfortasklage opens with dominant G# major accompanied by over-seventh
-- This parallels the Herzeleide motive's subdominant c# minor with under-seventh
+# Context & Application
+The term "over-seventh" is most useful in the context of Cohn's Parsifal analysis, where it pairs with the under-seventh to describe hexatonic pole relationships embedded in dissonant formations. When the Amfortasklage opens with dominant G# major accompanied by an over-seventh, and the Herzeleide motive features subdominant c# minor with an under-seventh, the paired terminology reveals the symmetry of the dissonant additions.
 
 # Examples
-**Parsifal, Amfortasklage opening**: Dominant G# major with over-seventh. This pairs with the Herzeleide motive's c# minor with under-seventh to create hexatonic pole relationships embedded in dissonant formations.
+- **Parsifal, Amfortasklage opening**: Dominant G# major with over-seventh pairs with the Herzeleide motive's c# minor with under-seventh to create hexatonic pole relationships embedded in dissonant formations (p. 163)
+- **Standard authentic cadence**: G7 to C major, where over-seventh F resolves to E
 
-**Standard authentic cadence**: G7 → C major. The over-seventh F resolves to E while the G-B-D triadic core resolves conventionally.
+# Relationships
+## Builds Upon
+- Standard dominant seventh chord theory
+- Reduction strategy (dominant seventh as major triad with addition)
+## Enables
+- Symmetric analysis of dissonant hexatonic poles in Parsifal
+## Related
+- Under-seventh (symmetrical counterpart)
+## Contrasts With
+- Under-seventh (below vs. above; resolves up vs. down; plagal vs. authentic)
 
-**Hexatonic pole with supplementary dissonance**: When a hexatonic pole appears with one chord having an over-seventh and the other an under-seventh, the triadic relationship remains audible despite the dissonant additions.
-
-# Related Concepts
-- Under-seventh
-- Dominant seventh chord
-- Harmonic dualism
-- Major triad
-- Authentic cadence
-- Reduction strategy
-- Hexatonic pole
+# Common Errors
+- **Error**: Thinking "over-seventh" is a novel concept
+  **Correction**: It is simply the standard dominant seventh chord reframed in dualist terminology to clarify its symmetry with the under-seventh
 
 # Common Confusions
-- Over-seventh is the standard/familiar case; under-seventh is the dualist innovation
-- The terminology emphasizes the seventh as addition, not as chord-defining
-- Over-seventh analysis is consistent with standard theory; under-seventh is not
-- Both terms emphasize the triadic core's primacy over the dissonant addition
+- **Confusion**: Assuming the term adds analytical power beyond the standard dominant seventh label
+  **Clarification**: The term's value lies in establishing the symmetric pair with under-seventh, particularly for analyzing passages where both appear
 
 # Source Reference
-Chapter 7: Dissonance, pages 162-164
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 162-164.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Parsifal example with hexatonic pole context. Fresh extraction adds clearer framing of the term's purpose within dualist symmetry.

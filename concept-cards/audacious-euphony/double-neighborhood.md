@@ -1,44 +1,93 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Double Neighborhood
-category: theory
+slug: double-neighborhood
+
+# === CLASSIFICATION ===
+category: triadic-systems
+subcategory: pitch-retention structure
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
-pdf_page: 129
-unit: null
-authors: "Richard Cohn"
+pdf_page: 135
+section: "Neighborhoods and Pitch Retention Loops"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "overlapping neighborhoods"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - neighborhood
+  - pitch-retention-loop
+extends:
+  - neighborhood
+related:
+  - brahms-second-symphony-retransition
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a double neighborhood?"
+  - "How do two overlapping neighborhoods organize an extended passage?"
 ---
 
 # Quick Definition
-A double neighborhood consists of two overlapping pitch-class neighborhoods whose central tones are consonant with each other, providing a larger but still bounded region of triadic space for compositional exploration.
+Two overlapping pitch-class neighborhoods whose central tones are consonant with each other, providing a larger bounded region of triadic space shown as two overlapping hexagons on the Tonnetz.
 
-# Formal Definition
-When two neighborhoods share overlapping triads on the Tonnetz, they form a double neighborhood. The two central pitch classes are typically related by a consonant interval (third or fifth). The double neighborhood contains all triads from both component neighborhoods, providing a richer set of harmonic resources while maintaining coherence through shared pitch classes and triadic overlaps.
+# Core Definition
+When two neighborhoods share overlapping triads on the Tonnetz, they form a double neighborhood. The two central pitch classes are related by a consonant interval (third or fifth). Figure 6.6(a) models the Brahms passage as two overlapping hexagons on the Tonnetz. The synoptic figure 6.7 reveals "a comprehensive counterclockwise tour of the space, from subdominant to subdominant," sounding "every triad in the double neighborhood, and no triads outside of it" (p. 137).
 
-# Construction/Recognition
-On the Tonnetz, a double neighborhood appears as two overlapping hexagons:
-- Each hexagon represents one pitch-class neighborhood
-- The overlap region contains triads shared by both neighborhoods
-- The total set of triads is larger than either neighborhood alone but bounded
+# Prerequisites
+- **Neighborhood**: Single pitch-class neighborhood as building block
+- **Pitch retention loop**: The systematic tour mechanism
 
-# Musical Context
-Double neighborhoods provide the organizational framework for extended passages that explore two related tonal centers without committing exclusively to either. They are particularly effective in retransitional passages where tonic and dominant compete for harmonic attention.
+# Key Properties
+1. Two hexagonal structures overlapping on the Tonnetz
+2. Central pitch classes are consonant with each other
+3. Total set of triads is bounded and larger than either neighborhood alone
+4. Passages can sound every triad in the double neighborhood and none outside it
+
+# Construction / Recognition
+1. Identify two focal pitch classes in a passage
+2. Verify they are consonant (related by third or fifth)
+3. Draw overlapping hexagons on the Tonnetz
+4. Check that all harmonies in the passage fall within this region
+
+# Context & Application
+Double neighborhoods provide the organizational framework for extended retransitional passages where two related tonal centers (e.g., tonic and dominant pedals) compete for attention.
 
 # Examples
-- Brahms, Symphony No. 2, first movement, mm. 246-302: The retransition tours a double neighborhood centered on D (tonic) and A (dominant). Figure 6.6(a) shows the two overlapping hexagons. The passage sounds every triad in the double neighborhood and no triads outside of it.
-- The synoptic Tonnetz (figure 6.7) reveals the passage as a comprehensive counterclockwise tour of the combined space
+- **Brahms Symphony No. 2, 1st mvt., mm. 246-302**: Double neighborhood centered on D (tonic) and A (dominant). The timpani sounds only D and A, serving as thirds and fifths of various triads. Figure 6.6(a) shows overlapping hexagons; figure 6.7 reveals complete counterclockwise tour sounding every triad in the double neighborhood.
 
-# Related Concepts
-- Neighborhood
-- Pitch Retention Loop
-- Brahms Second Symphony Retransition Analysis
-- Common-Tone Retention
-- Tonnetz
+# Relationships
+## Builds Upon
+- Single neighborhood as component
+## Enables
+- Analysis of extended passages with two focal pitch classes
+## Related
+- Brahms Second Symphony retransition (paradigmatic example)
+## Contrasts With
+- Single neighborhood (simpler structure)
+
+# Common Errors
+- **Error**: Any two neighborhoods form a double neighborhood
+  **Correction**: The central pitch classes must be consonant (related by third or fifth)
 
 # Common Confusions
-- A double neighborhood is not simply two unrelated neighborhoods; the central pitch classes must be consonant
-- The double neighborhood constrains the harmonic vocabulary: all triads used come from this region
-- The two component loops may be traversed sequentially or with overlap
+- **Confusion**: The two loops must be traversed sequentially
+  **Clarification**: They can be traversed sequentially, with overlap, or with back-filling
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pp. 135-138, Figure 6.6
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 135-138, Figures 6.6-6.7.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: comprehensive tour description, bounded region property. High confidence -- clearly demonstrated in Brahms analysis.

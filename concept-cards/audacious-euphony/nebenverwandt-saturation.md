@@ -1,47 +1,92 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Nebenverwandt Saturation
+slug: nebenverwandt-saturation
+
+# === CLASSIFICATION ===
 category: analysis
+subcategory: harmonic texture
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
-pdf_page: 129
-unit: null
-authors: "Richard Cohn"
+pdf_page: 141
+section: "Departure -> Return Scripts"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "N-saturated texture"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - nebenverwandt
+  - auf-dem-flusse-analysis
+extends: []
+related:
+  - transformational-substitution
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What does it mean for a passage to be nebenverwandt-saturated?"
 ---
 
 # Quick Definition
-Nebenverwandt saturation describes a compositional texture where the **N** transformation (connecting a minor triad to its major dominant or vice versa) pervades the harmonic surface, with nearly every minor triad adjacent to its major dominant and nearly every major triad adjacent to some minor tonic.
+A compositional texture where the N transformation (connecting a minor triad to its major dominant) pervades the harmonic surface, with W-class transformations perpetually represented by N without substitution, while H-class transformations vary freely.
 
-# Formal Definition
-In a nebenverwandt-saturated passage, the W-class transformations are perpetually represented by **N** without substitution, even as H-class transformations may vary freely (**L**, **P**, or **H** substituting for each other). The subdominant is largely absent, and the harmonic motion is dominated by dominant-function relationships. This creates a texture that lives entirely "downstream" from its tonic, with every harmonic change involving a dominant-tonic relationship.
+# Core Definition
+In "Auf dem Flusse," "the song is nebenverwandt-saturated: every minor triad is followed or preceded by its major dominant, and with the single exception of G major (m. 58), every major triad is adjacent to some minor tonic to which it is dominant" (p. 141). The subdominant is "absent to a remarkable degree: aside from a tonicized f# minor at m. 62 . . . only eight chords have subdominant value, and none of these has a duration of more than a single beat" (p. 141). W-class transformations are always N; H-class may vary (P for L, H for L).
 
-# Construction/Recognition
-Signs of nebenverwandt saturation:
-- Every minor triad is followed or preceded by its major dominant
-- Nearly every major triad is adjacent to a minor tonic to which it is dominant
-- Subdominant function is absent or minimally represented
-- W-class transformations are always **N**, never **R** or **S**
-- H-class transformations may vary freely
+# Prerequisites
+- **Nebenverwandt**: The N transformation connecting minor triad to major dominant
+- **Auf dem Flusse analysis**: The paradigmatic example
 
-# Musical Context
-Nebenverwandt saturation creates a pervasive dominant-tonic orientation that can drive chromatic modulation without subdominant support. It is a compositional strategy for achieving extreme modulatory adventure while maintaining a sense of directed harmonic motion.
+# Key Properties
+1. Every minor triad adjacent to its major dominant (N relation)
+2. W-class perpetually N, never R or S
+3. H-class varies freely (provides the compositional variety)
+4. Subdominant nearly absent
+5. The song lives entirely "downstream" from its tonic
+
+# Construction / Recognition
+Check for:
+- Every minor triad preceded or followed by its major dominant
+- Near-absence of subdominant function
+- W-class transformations uniformly N
+
+# Context & Application
+Nebenverwandt saturation creates extreme modulatory adventure through dominant-function motion alone, without subdominant support. It achieves complexity not through enharmonic ambiguity but through H-class substitutions within a saturated N framework.
 
 # Examples
-- Schubert, "Auf dem Flusse": The song is nebenverwandt-saturated throughout its chromatic sections. Only eight chords have subdominant value, none lasting more than a beat. The W-class is always represented by **N**; H-class substitutions (**P** for **L**, **H** for **L**) provide the variety.
-- With the single exception of G major (m. 58), every major triad in "Auf dem Flusse" is adjacent to some minor tonic
+- **"Auf dem Flusse"**: Only eight subdominant chords, none longer than one beat; song never approaches an enharmonic seam despite extreme modulatory complexity
 
-# Related Concepts
-- Nebenverwandt
-- N Transformation
-- Auf dem Flusse Analysis
-- W-Group Transformations
-- Transformational Substitution
-- Departure-Return Script
+# Relationships
+## Builds Upon
+- Nebenverwandt transformation
+## Enables
+- Understanding of dominant-driven chromatic modulation
+## Related
+- Transformational substitution (H-class varies while W-class is fixed)
+## Contrasts With
+- Passages with balanced dominant/subdominant representation
+
+# Common Errors
+- **Error**: All harmonies are dominant
+  **Correction**: Every harmonic CHANGE involves an N relation; the harmonies themselves vary
 
 # Common Confusions
-- Nebenverwandt saturation does not mean all harmonies are dominant; it means every harmonic change involves a dominant-tonic (**N**) relationship
-- The absence of subdominant is a positive structural feature, not a deficiency
-- The saturation occurs at the W-class level; the H-class remains free to vary
+- **Confusion**: Saturation implies monotony
+  **Clarification**: H-class variation (P for L, H for L) provides rich variety within the N-saturated framework
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pp. 141-142
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 141-142.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: eight-chord subdominant count, "downstream" metaphor, H-class variation detail. High confidence -- well-documented in source.

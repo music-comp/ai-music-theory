@@ -1,59 +1,100 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Contrary Motion in Tristan-Genus Voice Leading
-category: theory
+slug: contrary-motion-tetrachordal
+
+# === CLASSIFICATION ===
+category: dissonance
+subcategory: tetrachordal systems
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
-pdf_page: 156
-unit: null
-authors: "Richard Cohn"
+pdf_page: 166
+section: "The Tristan Genus as Nearly Even Tetrachord"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "balanced voice leading (tetrachordal)"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tristan-genus
+  - boretz-region
+  - diminished-seventh-chord
+extends:
+  - contrary-motion
+related:
+  - sequential-templates-tetrachordal
+  - omnibus-progression
+  - boretz-spider
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Why does minor-third transposition produce contrary motion in seventh chords?"
+  - "What is the relationship between the generating interval and balanced voice leading?"
 ---
 
 # Quick Definition
-Contrary motion in Tristan-genus voice leading occurs when two chords are transpositionally related by minor third or tritone -- the intervals internal to the diminished seventh chord -- producing balanced voice leading where moving voices go in opposite directions, analogous to major-third transposition in the triadic case.
+Contrary motion in Tristan-genus voice leading occurs when chords are transpositionally related by minor third or tritone -- the intervals internal to the diminished seventh chord -- producing balanced voice leading where moving voices go in opposite directions.
 
-# Formal Definition
-Within the Tristan-genus system, **contrary motion** characterizes voice leading between chords of the same species (V7 to V7, or half-diminished to half-diminished) that are related by the intervals of the diminished seventh chord (minor third T3, tritone T6). When two same-species Tristan-genus chords are connected within a Boretz region, voices move in contrary motion: the resolution of one "spoiler" into the diminished seventh body is offset by the displacement of a different voice out of that body, on the same side.
+# Core Definition
+Within the Tristan-genus system, **contrary motion** characterizes voice leading between same-species chords related by intervals of the diminished seventh (T3, T6). The general principle: the minor third "divides the octave into as many equal parts as a seventh chord has tones" (p. 167, italicized in original). This parallels the triadic case where the major third has special status because it divides the octave into as many equal parts as a triad has tones. When same-species chords connect within a Boretz region, "the resolution of the 'spoiler' into the diminished seventh body is offset by the displacement of a different voice out of that body, on the same flank" (p. 171), producing contrary semitonal motion with two voices stationary and two moving in opposite directions.
 
-This parallels the triadic principle: major-third transposition produces contrary motion among triads because the major third divides the octave into as many equal parts as the triad has tones (three). For tetrachords, the minor third divides the octave into as many equal parts as a seventh chord has tones (four).
+# Prerequisites
+- **Tristan genus**: The chord system in which this property operates
+- **Boretz region**: The context for same-species connections
+- **Diminished seventh chord**: The perfectly even chord whose intervals determine the balanced transpositions
 
-# Construction/Recognition
-Contrary motion appears in Tristan-genus voice leading when:
-- **Same-species chords** in the same Boretz region connect (V7 to V7 or half-diminished to half-diminished)
-- Two voices remain stationary, two move by semitone in opposite directions
-- The net voice-leading displacement is zero (balanced)
+# Key Properties
+1. Contrary motion occurs with same-species connections (V7 to V7 or ø7 to ø7) at T3 or T6
+2. Two voices stationary, two moving by semitone in opposite directions
+3. Net voice-leading displacement is zero (balanced)
+4. Produces the omnibus/devil's mill progression when applied sequentially (T3)
+5. Directed circumnavigation requires intervals absent from the diminished seventh (T1, T2, T4, T5)
 
-By contrast, **opposite-species** connections (V7 to half-diminished) involve either:
-- Two semitones distributed between two different voices (similar motion)
-- A single voice moving by whole step (**R**\*)
+# Construction / Recognition
+- Same-species, same-region chords: contrary motion
+- Opposite-species chords: similar motion (two parallel semitones) or whole step (R*)
+- The distinction determines whether voice leading is balanced or directed
 
-# Musical Context
-Contrary motion within Boretz regions produces balanced oscillation without net directional shift. This is musically useful for creating harmonic variety without progressive motion -- the passage oscillates between two adjacent voice-leading zones. The Tristan Prelude opening exemplifies this: the first five chords alternate between zones 3 and 1, balancing about the central diminished seventh chord.
-
-For circumnavigation of 4-Cube Trio (directed motion through all voice-leading zones), one must use the transpositional values absent from the diminished seventh chord (T1, T2, T4, T5), which produce similar motion rather than contrary motion.
+# Context & Application
+Contrary motion produces balanced oscillation without net directional shift, useful for harmonic variety without progressive motion. The Tristan Prelude opening exemplifies this: five chords oscillate between zones 3 and 1. For circumnavigation (directed motion through all zones), the remaining transpositional values (T1, T2, T4, T5) must be used, which produce similar motion.
 
 # Examples
-**Tristan Prelude, figure 7.8(a)**: The T3 sequence of dominant seventh chords demonstrates contrary motion -- the "omnibus" or "devil's mill" progression where two voices are stationary and two move in opposite semitonal directions.
+- **T3 sequence (omnibus/devil's mill, Fig. 7.8a)**: V7 chords in minor-third transposition with contrary semitonal motion (p. 167)
+- **Tristan Prelude opening**: First five chords alternate upshift and downshift, balanced between zones 3 and 1 (pp. 171-172)
+- **General principle**: "The minor third has this special status because it divides the octave into as many equal parts as a seventh chord has tones" (p. 167)
 
-**Tristan Prelude opening**: The first five chords alternately upshift and downshift, moving back and forth across the Boretz spider. This balanced contrary motion keeps the passage hovering between zones 3 and 1.
+# Relationships
+## Builds Upon
+- Contrary motion (triadic) -- the analogous principle for major-third transposition
+## Enables
+- Understanding why T3/T6 are balanced and why T1/T2/T4/T5 are directed
+## Related
+- Sequential templates (the omnibus is the contrary-motion template)
+- Boretz spider (the visual space of balanced oscillation)
+## Contrasts With
+- (Contrast with similar motion in opposite-species connections)
 
-**Comparison with triadic case**: Just as major-third transposition of triads produces contrary motion (p. 38), minor-third transposition of seventh chords produces contrary motion. The general principle: transposition by the generating interval of the perfectly even chord produces balanced voice leading.
-
-# Related Concepts
-- Contrary motion in hexatonic progressions (triadic analogue)
-- Balanced voice leading
-- Boretz-group transformations
-- Omnibus progression
-- Boretz spider
-- Voice-leading zone
-- Circumnavigation (tetrachordal)
-- Diminished seventh chord
+# Common Errors
+- **Error**: Assuming contrary motion in tetrachords is produced by major-third transposition
+  **Correction**: Major-third transposition is the triadic case; the tetrachordal generating interval is the minor third
 
 # Common Confusions
-- Contrary motion occurs with same-species connections, not opposite-species
-- Minor-third transposition produces contrary motion for tetrachords, not major-third (which is the triadic case)
-- Contrary motion is balanced (no circumnavigation); directed motion requires other intervals
-- Do not confuse with contrapuntal contrary motion; this describes a structural property of specific transpositions
+- **Confusion**: Conflating contrapuntal contrary motion with this structural property
+  **Clarification**: This describes a property of specific transpositions, not a general contrapuntal technique
 
 # Source Reference
-Chapter 7: Dissonance, pages 166-167, 175-176
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 166-167, 175-176.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: general principle quotation, omnibus connection, triadic parallel. Fresh extraction adds italicized principle emphasis and clearer explanation of same-species vs. opposite-species distinction.

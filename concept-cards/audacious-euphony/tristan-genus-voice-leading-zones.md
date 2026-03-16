@@ -1,60 +1,109 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tristan-Genus Voice-Leading Zones
-category: theory
+slug: tristan-genus-voice-leading-zones
+
+# === CLASSIFICATION ===
+category: dissonance
+subcategory: tetrachordal systems
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
-pdf_page: 156
-unit: null
-authors: "Richard Cohn"
+pdf_page: 171
+section: "Boretz-group transformations"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "tetrachordal voice-leading zones"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tristan-genus
+  - voice-leading-zone
+  - pitch-class-sum
+extends:
+  - voice-leading-zone
+related:
+  - four-cube-trio
+  - boretz-region
+  - circumnavigation-tetrachordal
+contrasts_with:
+  - voice-leading-zones
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How are voice-leading zones calculated for Tristan-genus chords?"
+  - "What do the zone numbers mean in the tetrachordal system?"
 ---
 
 # Quick Definition
-Tristan-genus chords occupy the six odd-numbered voice-leading zones (1, 3, 5, 7, 9, 11), calculated by summing their pitch-class content, with diminished seventh chords, minor seventh chords, and French sixth chords occupying the even-numbered zones.
+Tristan-genus chords occupy the six odd-numbered voice-leading zones (1, 3, 5, 7, 9, 11), calculated by summing their pitch-class content modulo 12, with diminished seventh, minor seventh, and French sixth chords filling the even zones.
 
-# Formal Definition
-**Voice-leading zones** for the Tristan genus are derived via the same summing protocol used for triadic voice-leading zones (chapter 5). Each Tristan-genus chord (V7 or half-diminished seventh) is assigned to an odd-numbered zone by summing its pitch-class integers modulo 12. The diminished seventh chords occupy even zones (at 2:00, 6:00, and 10:00 on 4-Cube Trio), while minor seventh chords and French sixth chords also occupy even zones, serving as bridges.
+# Core Definition
+**Voice-leading zones** for the Tristan genus are derived via the same summing protocol used for triadic zones (Chapter 5). Each Tristan-genus chord is assigned to an odd-numbered zone by summing its pitch-class integers modulo 12. Cohn warns that "the labels for zones acquire meaning only within the limited context of the tetrachordal system of voice leading. Some of the labels are identical to those used for voice-leading zones in triadic space. These are 'false friends': the triadic and tetrachordal systems are not in communication with each other" (p. 172 n. 13).
 
-Cohn warns that "the labels for zones acquire meaning only within the limited context of the tetrachordal system of voice leading." Some zone labels are identical to those used for triadic voice-leading zones, but these are "false friends": the triadic and tetrachordal systems are not in communication with each other.
+# Prerequisites
+- **Tristan genus**: The chords being zoned
+- **Voice-leading zone (triadic)**: The analogous concept for triads
+- **Pitch-class sum**: The computation method
 
-# Construction/Recognition
-To determine a Tristan-genus chord's voice-leading zone:
-1. List its four pitch classes as integers (C=0, C#=1, ..., B=11)
+# Key Properties
+1. Tristan-genus chords occupy only odd zones (1, 3, 5, 7, 9, 11)
+2. Diminished sevenths at even zones 2, 6, 10 (at spider centers on 4-Cube Trio)
+3. Minor sevenths and French sixths at even zones 0, 2, 4, 6, 8, 10 (bridges)
+4. Boretz-region motion alternates between two adjacent odd zones
+5. Octatonic bridges jump zones, leaving gaps fillable by even-zone chords
+6. Zone labels are "false friends" with triadic zone labels
+
+# Construction / Recognition
+To determine a Tristan-genus chord's zone:
+1. List four pitch classes as integers (C=0, C#=1, ..., B=11)
 2. Sum them modulo 12
-3. The result is an odd number (1, 3, 5, 7, 9, or 11)
+3. Result is an odd number
 
 Zone behavior:
-- **Boretz-region motion**: alternates between two adjacent odd zones (e.g., 3 and 1)
-- **Octatonic bridging**: jumps to non-adjacent zones (leaves gaps)
-- **Circumnavigation**: systematically tours all six odd zones
-- **Even zones**: engaged by diminished sevenths, minor sevenths, French sixths
+- **Balanced (Boretz-region)**: Alternates between two adjacent odd zones (e.g., 3 and 1)
+- **Directed (circumnavigation)**: Tours all six odd zones systematically
+- **Even zones engaged**: By diminished sevenths, minor sevenths, French sixths
 
-# Musical Context
-Voice-leading zones enable tracking the directional trajectory of Tristan-genus progressions. In the Tristan Prelude opening, the first five chords alternate between zones 3 and 1, balancing about the B-D-F-G# diminished seventh chord (whose integers sum to 2). When the sixth chord enters zone 5, it signals interregional modulation.
-
-Zone analysis reveals whether a passage is balanced (oscillating between adjacent zones) or directed (systematically upshifting or downshifting through the zones), analogous to the triadic case but operating independently.
+# Context & Application
+Zones enable tracking directional trajectory. In the Tristan Prelude opening, alternation between zones 3 and 1 reveals balanced motion; when chord 6 enters zone 5, it signals modulation. In the Chopin Mazurka, zone 1 plays a central articulating role, represented by successive dominant seventh chords (G7, Bb7, Db7) that mark structural junctures.
 
 # Examples
-**Tristan Prelude opening**: Zones alternate 3-1-3-1-3, indicating balanced oscillation within a single Boretz region. Chord 6 jumps to zone 5, marking the modulation.
+- **Tristan Prelude opening**: Zones alternate 3-1-3-1-3, balancing about B-D-F-G# diminished seventh (zone 2). Chord 6 jumps to zone 5 (pp. 171-172)
+- **Chopin Mazurka Op. 68 no. 4**: Zone 1 returns at G7 (m. 33), Bb7 (m. 36), Db7 (m. 39), each marking structural juncture (pp. 178-179)
+- **Chopin e minor Prelude**: First phrase descends 15 cumulative semitones through the zones (pp. 180-181)
 
-**Chopin Mazurka Op. 68 no. 4**: Zone 1 plays a central articulating role throughout mm. 33-40, represented successively by G7, Bb7, and Db7. Each return to zone 1 marks a structural juncture.
+# Relationships
+## Builds Upon
+- Voice-leading zone (triadic) (analogous concept, same computation, different system)
+## Enables
+- 4-Cube Trio navigation
+- Tracking upshift/downshift trajectories
+## Related
+- Boretz region (balanced motion between adjacent zones)
+- Circumnavigation (touring all six odd zones)
+## Contrasts With
+- Triadic voice-leading zones (same labels but "false friends" -- independent systems)
 
-**Chopin e minor Prelude**: The first phrase's downshift covers 15 cumulative semitones across the voice-leading zones, with the path self-intersecting at the B-D-F-G# region on 4-Cube Trio.
-
-# Related Concepts
-- Voice-leading zone (triadic)
-- 4-Cube Trio
-- Boretz region
-- Octatonic region
-- Circumnavigation (tetrachordal)
-- Pitch-class sum
-- Upshifting and downshifting
+# Common Errors
+- **Error**: Assuming tetrachordal zone 3 and triadic zone 3 refer to the same harmonic space
+  **Correction**: They are "false friends" in independent, non-communicating systems
 
 # Common Confusions
-- Tetrachordal zone labels are "false friends" to triadic zone labels -- same numbers, different systems
-- Only odd zones are occupied by Tristan-genus chords; even zones belong to other chord types
-- Zone numbers are not key designations; they describe voice-leading position only
-- The summing protocol is the same as for triads, but the resulting system is independent
+- **Confusion**: Thinking zone numbers have tonal significance
+  **Clarification**: Zones describe voice-leading position only, not key or tonal center
 
 # Source Reference
-Chapter 7: Dissonance, pages 171-172, 177-179
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 171-172, 177-179.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: "false friends" warning, zone behavior types, Chopin examples. Fresh extraction adds direct quotation and computation method.

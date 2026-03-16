@@ -1,51 +1,101 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Four Weitzmann Regions
-category: analysis
+slug: four-weitzmann-regions
+
+# === CLASSIFICATION ===
+category: triadic-systems
+subcategory: augmented-triad-systems
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Weitzmann Regions"
 chapter_number: 4
 pdf_page: 77
-unit: null
-authors: Richard Cohn
+section: "The Structure of a Weitzmann Region"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Weitzmann region partition"
+  - "Four augmented-triad regions"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - weitzmann-region
+  - augmented-triad
+extends:
+  - weitzmann-six-triad-cluster
+related:
+  - four-hexatonic-systems
+contrasts_with:
+  - four-hexatonic-systems
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How many Weitzmann regions are there?"
+  - "How do I identify which Weitzmann region a triad belongs to?"
+  - "How does the figure-ground relationship work between hexatonic and Weitzmann regions?"
 ---
 
 # Quick Definition
-The four distinct Weitzmann regions partition all twenty-four consonant triads, each centered on one of the four augmented triads.
+The four distinct Weitzmann regions partition all twenty-four consonant triads, each centered on one of the four augmented triads, with no overlap.
 
-# Formal Definition
-The four Weitzmann regions exhaust the twenty-four consonant triads with no overlap. Each region is defined by a central augmented triad:
-1. Region centered on CEG# (C+): {C, E, Ab, a, c#, f}
-2. Region centered on C#FA (C#+): {C#, F, A, a#/bb, d, f#}
-3. Region centered on DGbBb (D+): {D, Gb/F#, Bb, b, eb/d#, g}
-4. Region centered on EbGB (Eb+): {Eb, G, B, c, e, g#/ab}
+# Core Definition
+"Both models partition the twenty-four triads into eight triplets, each of which contains three major-third-related triads of the same species, and each of which is paired with a triplet featuring triads of the opposite species. Where hexatonic and Weitzmann regions differ is in how those triplets are paired" (p. 77). Each consonant triad belongs to exactly one Weitzmann region.
 
-# Construction/Recognition
-Each region contains:
-- 3 major triads related by T4 (major third transposition)
-- 3 minor triads related by T4
-- All 6 triads displaced by single semitone from the central augmented triad
+# Prerequisites
+- **Weitzmann region**: Understanding of what constitutes a single region
+- **Augmented triad**: The four augmented triads define the four regions
 
-The four augmented triads themselves form a T4 cycle:
-CEG# -> C#FA -> DGbBb -> EbGB -> CEG#
+# Key Properties
+1. Four regions exhaust all 24 consonant triads with no overlap
+2. Each region contains 3 major and 3 minor triads
+3. Major triads in each region are related by T4; minor triads likewise
+4. The four central augmented triads themselves form a T4 cycle
 
-# Musical Context
-The four regions create a partition of triadic space complementary to the four hexatonic regions. Where hexatonic regions preserve common tones maximally within modal pairs (same root or T4 roots), Weitzmann regions pair triads with roots an odd number of semitones apart. Composers could explore one region thoroughly or move between adjacent regions.
+# Construction / Recognition
+1. **CEG# region**: C major, E major, Ab major, a minor, c# minor, f minor
+2. **C#FA region**: Db major, F major, A major, bb minor, d minor, f# minor
+3. **DF#Bb region**: D major, Gb major, Bb major, b minor, eb minor, g minor
+4. **EbGB region**: Eb major, G major, B major, c minor, e minor, g# minor
+
+# Context & Application
+The four Weitzmann regions create a partition complementary to the four hexatonic regions. Together, these two partitions form a figure-ground relationship: hexatonic regions pair same-root or T4-root cross-modal triads; Weitzmann regions pair odd-semitone-root cross-modal triads. Every triad belongs to exactly one of each type of region.
 
 # Examples
-- Schubert's N/R cycles (Symphonies 4 and 9, Octet, c minor Sonata) traverse complete individual Weitzmann regions
-- Strauss's "Fruhling" explores the GBEb region in its first stanza, then shifts to the CEAb region for the second stanza
-- The Tarnhelm motive operates within a single Weitzmann region
+**Strauss, "Fruhling"** (pp. 98-100): Explores the EbGB region in stanza 1, then shifts to the CEG#/Ab region for stanza 2.
 
-# Related Concepts
-- Weitzmann Region
-- Four Hexatonic Regions
-- Augmented Triad
-- Triadic Universe Partition
+**Schubert's N/R cycles**: Each complete cycle traverses one entire Weitzmann region.
+
+# Relationships
+## Builds Upon
+- weitzmann-six-triad-cluster: The historical antecedent (Weitzmann's Table 3.1)
+
+## Enables
+None directly; this is the partition structure.
+
+## Related
+- four-hexatonic-systems: The complementary partition
+
+## Contrasts With
+- four-hexatonic-systems: Different pairing of cross-modal triads
+
+# Common Errors
+- **Error**: Confusing Weitzmann and hexatonic partitions
+  **Correction**: They pair the same-species triplets differently: hexatonic pairs same-root; Weitzmann pairs odd-semitone roots
 
 # Common Confusions
-- The four Weitzmann regions partition the triads differently than the four hexatonic regions
-- Each consonant triad belongs to exactly one Weitzmann region (no overlap)
-- The regions are named after their central augmented triad, not their component consonant triads
+- **Confusion**: A triad can belong to multiple Weitzmann regions
+  **Clarification**: Each triad belongs to exactly one Weitzmann region (no overlap)
 
 # Source Reference
-Chapter 4: Weitzmann Regions, pages 77-78
+Cohn, Richard. *Audacious Euphony*, Chapter 4: Weitzmann Regions, pp. 77-78.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: four-region listing, complementary partition characterization. High confidence: clearly enumerated in source.

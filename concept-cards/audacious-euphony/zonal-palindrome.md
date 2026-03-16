@@ -1,44 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Zonal Palindrome
-category: technique
+slug: zonal-palindrome
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: structural patterns
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
-pdf_page: 129
-unit: null
-authors: "Richard Cohn"
+pdf_page: 145
+section: "Departure -> Return Scripts"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "palindrome of voice-leading zones"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - voice-leading-zones
+  - departure-return-script
+extends:
+  - departure-return-script
+related:
+  - palindromic-voice-leading
+  - liszt-kyrie-analysis
+  - liedesend-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a zonal palindrome?"
+  - "How can palindromic structure exist at the zone level without triadic palindrome?"
 ---
 
 # Quick Definition
-A zonal palindrome is a progression whose voice-leading zone sequence reads the same forwards and backwards, even when the specific triads themselves do not form a palindrome, providing an abstract structural framework for departure-return schemes.
+A progression whose voice-leading zone sequence reads the same forwards and backwards, even when the specific triads do not form a palindrome, providing an abstract structural framework for departure-return schemes.
 
-# Formal Definition
-A zonal palindrome occurs when the sequence of voice-leading zones traversed by a triadic progression forms a palindromic (symmetric) pattern about a central axis. The palindromic structure is proper not to the specific triads but to the voice-leading zones they represent. This allows for considerable triadic variety while maintaining an audible and kinetically perceptible departure-return structure.
+# Core Definition
+A zonal palindrome occurs when the sequence of voice-leading zones forms a symmetric pattern about a central axis, while the specific triads may deviate from palindromic ordering. The concept emerges from the Liszt Kyrie analysis where "the palindrome . . . is proper not to the progression of the triads themselves but to that of voice-leading zones that they represent" (p. 146). Zone-equivalent triads (T4-related) can freely substitute without disrupting the palindromic zone structure.
 
-# Construction/Recognition
-1. Assign voice-leading zones to each prolonged harmony in a passage
+# Prerequisites
+- **Voice-leading zones**: The metric enabling zone-level symmetry
+- **Departure-return script**: The compositional framework palindromes realize
+
+# Key Properties
+1. Zone sequence is symmetric about a central axis
+2. Specific triads need not be palindromic (same-zone substitutions allowed)
+3. Minor perturbations ("rufflings") may occur without invalidating the structure
+4. The palindrome may be kinetically perceptible to performers through complementary downshift/upshift
+5. Reveals coherence in passages that seem arbitrary at the triadic level
+
+# Construction / Recognition
+1. Assign voice-leading zones to each prolonged harmony
 2. Read the zone sequence forwards and backwards
-3. If the sequences match (possibly with minor perturbations), a zonal palindrome is present
-4. The palindrome may be strict or "ruffled" by small deviations
+3. If they match (with possible minor perturbations), a zonal palindrome exists
+4. Check whether individual voices also form palindromes (they may, as in the Liszt Kyrie)
 
-# Musical Context
-Zonal palindromes provide evidence of structural coherence in passages where specific triadic relationships seem arbitrary or inscrutable. They reveal the logic of modulatory schemes that resist explanation through conventional tonal analysis.
+# Context & Application
+Zonal palindromes reveal structural coherence in passages where triadic-level analysis finds only inscrutability. They demonstrate that departure-return schemes operate at a more abstract level than specific triadic choices.
 
 # Examples
-- Liszt, Kyrie (*Missa pro organo lectarum*): Voice-leading zones form a strict palindrome about the central axis, even though triadic succession is not strictly palindromic (figures 6.11-6.12)
-- Schubert, "Liedesend'": Zone sequence across nine strophes forms a palindrome connecting c minor (beginning) to f minor (center) to e minor (end), with minor perturbation at stanza VIII (figures 6.13-6.14)
+- **Liszt Kyrie**: Strict zonal palindrome despite non-palindromic triadic succession; deviations involve retrograded T4 transposition (p. 146)
+- **Schubert "Liedesend'"**: Zonal palindrome across nine strophes, with one perturbation at stanza VIII (pp. 147-148)
 
-# Related Concepts
-- Palindromic Voice Leading
-- Departure-Return Script
-- Voice-Leading Zones
-- Liszt Kyrie Analysis
-- Liedesend Analysis
+# Relationships
+## Builds Upon
+- Departure-return script (palindromes are a realization of this script)
+## Enables
+- Analysis of apparently inscrutable modulatory schemes
+## Related
+- Palindromic voice leading (the individual-voice level)
+## Contrasts With
+- Strict triadic palindrome (which is a stronger condition)
+
+# Common Errors
+- **Error**: Zonal palindrome requires triadic palindrome
+  **Correction**: Zone-equivalent triads substitute freely; the palindrome operates at the zone level
 
 # Common Confusions
-- A zonal palindrome does not require triadic palindrome; zone-equivalent triads can substitute freely
-- The palindrome operates at an abstract level that may not be immediately audible but is kinetically perceptible to performers
-- Minor perturbations ("rufflings") do not invalidate the overall palindromic structure
+- **Confusion**: Minor perturbations invalidate the palindrome
+  **Clarification**: "Rufflings" are expected; the overall symmetric pattern matters more than exact correspondence
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pp. 145-148
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 145-148.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: "proper not to the triads but to zones" quote, ruffling concept. High confidence -- clearly demonstrated in two examples.

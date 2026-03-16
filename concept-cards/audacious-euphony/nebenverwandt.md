@@ -1,64 +1,124 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "Nebenverwandt (Adjacency Relation)"
-category: theory
+slug: nebenverwandt
+
+# === CLASSIFICATION ===
+category: neo-riemannian-theory
+subcategory: triadic-relations
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Reciprocity"
 chapter_number: 3
 pdf_page: 61
-unit: null
-authors: Richard Cohn
+section: "Consonance/Dissonance Reciprocity"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Adjacency relation"
+  - "Reciprocal relation (Oettingen)"
+  - "Next-related"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - consonant-triad
+  - augmented-triad
+extends: []
+related:
+  - agents-harrison
+  - bidirectional-leading-tone
+  - consonance-dissonance-reciprocity
+  - n-transformation
+  - weitzmann-treatise
+contrasts_with:
+  - l-transformation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the nebenverwandt relation?"
+  - "How does the nebenverwandt differ from relative major/minor?"
+  - "What distinguishes L, P, R, N, and S transformations?"
 ---
 
 # Quick Definition
-Nebenverwandt (translated as "adjacency relation" by Saslaw) is Weitzmann's term for the relationship between a minor triad and its major dominant, or equivalently, a major triad and its minor subdominant (e.g., C major and f minor).
+Nebenverwandt ("adjacency relation") is Weitzmann's term for the relationship between a minor triad and its major dominant, or equivalently, a major triad and its minor subdominant (e.g., C major and f minor).
 
-# Formal Definition
-The nebenverwandt relation pairs triads whose reciprocal leading-tone energies are divided between their "agents" (the thirds). In the C major / f minor pair: E (the third of C major) presses upward as the borrowed leading tone from f minor's parallel major (F major), while Ab (the third of f minor) presses downward as the borrowed leading tone from C major's parallel minor (c minor). This creates a bidirectional tension that neither triad can resolve without the other.
+# Core Definition
+The nebenverwandt relation pairs triads whose "reciprocal leading-tone energies are divided between the thirds," which Daniel Harrison (1994) calls the "agents": "the upward-pressing E, borrowed from f minor's parallel major, and the downward-pressing Ab, borrowed from C major's parallel minor" (p. 65). Weitzmann identified this as a third type of reciprocity, and Arthur von Oettingen named the same pairing "reciprocal" (*Reziprok*), a German/English cognate (Mooney 1996, 56). Although it "plays a central role in the writings of many theorists after 1850, it never achieved a stable name" (p. 65).
 
-# Construction/Recognition
-Properties of nebenverwandt pairs:
-- Triads are of opposite mode
-- Related by minor third (or major sixth)
-- The major triad is the dominant of the minor triad's parallel major
-- The minor triad is the subdominant of the major triad's parallel minor
-- Both triads contribute to the same augmented triad when their agents are combined
+# Prerequisites
+- **Consonant triad**: Must understand major and minor triad structure to grasp the relation between them
+- **Augmented triad**: The nebenverwandt pair jointly generates the augmented triad "most important" to both keys (Weitzmann)
 
-Example: C major (C-E-G) and f minor (F-Ab-C)
-- Shared tone: C
-- Reciprocal agents: E (from C major) and Ab (from f minor)
-- Combined agents form augmented triad portion: E and Ab (= G#) are major third apart
+# Key Properties
+1. Triads are of opposite mode (one major, one minor)
+2. Roots are separated by a perfect fifth (e.g., C major and f minor)
+3. The major triad is the dominant of the minor triad's key
+4. The minor triad is the subdominant of the major triad's parallel minor
+5. Both triads contribute agents that combine to form part of an augmented triad
+6. The relation creates bidirectional leading-tone tension
 
-Daniel Harrison's term "agents" (1994) refers to the thirds of triads, which carry the most tension in functional harmony.
+# Construction / Recognition
+Given any major triad (e.g., C major):
+1. Its nebenverwandt is the minor triad a perfect fourth above (f minor)
+2. Shared tone: root of major triad = fifth of minor triad (C)
+3. The agents: E (third of C major, pressing up) and Ab (third of f minor, pressing down)
+4. When combined, the agents and shared tone form an augmented triad (Ab-C-E)
 
-# Musical Context
-The nebenverwandt relation creates a reciprocal tension that neither triad can definitively resolve. This makes it useful for creating ambiguity or for passages that oscillate between two tonal centers without settling on either.
+Given any minor triad (e.g., f minor):
+1. Its nebenverwandt is the major triad a perfect fifth above (C major)
+2. The N transformation formalizes this as a voice-leading operation
+
+# Context & Application
+The nebenverwandt relation is foundational for Weitzmann regions: the N/R cycle that generates a complete Weitzmann region alternates nebenverwandt and relative transformations. The relation also underlies the double-agent complex, where enharmonic respelling redirects leading-tone energy.
 
 # Examples
-From the text (pp. 64-65):
+**Weitzmann's definition** (p. 65): "Carl Friedrich Weitzmann identified a third type of reciprocity... the relationship between a minor triad and its major dominant, which he regarded as equivalent to that of a major triad and its minor subdominant."
 
-Weitzmann's identification:
-"Carl Friedrich Weitzmann identified a third type of reciprocity... the relationship between a minor triad and its major dominant, which he regarded as equivalent to that of a major triad and its minor subdominant."
+**Nebenverwandt pentachord** (pp. 73-74): "Weitzmann combines f minor and C major triads into a pentachord, FAb-CEG, from whose interior he extracts the augmented triad: F[Ab-C-E]G. 'From the connection of these two nebenverwandt chords arises the augmented triad most important to the two keys represented by them.'"
 
-Name history:
-"Although this triadic relation plays a central role in the writings of many theorists after 1850, it never achieved a stable name. I shall refer to it using Weitzmann's term, nebenverwandt, which Janna Saslaw translates as 'adjacency relation.'"
+**Smith 2006**: "Identifies several Brahms compositions that thematize this reciprocity as an ambiguity" (p. 65).
 
-Arthur von Oettingen's alternative name: "reciprocal" (a German/English cognate).
+# Relationships
+## Builds Upon
+- consonant-triad: The relation connects two consonant triads of opposite mode
+- agents-harrison: The agents (triadic thirds) carry the reciprocal leading-tone energies
 
-Smith 2006: "identifies several Brahms compositions that thematize this reciprocity as an ambiguity."
+## Enables
+- n-transformation: The N transformation formalizes nebenverwandt as a voice-leading operation
+- nr-cycle: N alternating with R generates the complete Weitzmann region
+- double-agent-complex: The nebenverwandt relation creates the leading-tone tensions exploited in double-agent complexes
+- weitzmann-region: The nebenverwandt pentachord generates the augmented triad central to each region
 
-# Related Concepts
-- Consonance/Dissonance Reciprocity
-- Leading-Tone Exchange
-- Weitzmann's Treatise
-- Hexatonic System
-- Agent (Harrison)
-- Leittonwechsel
+## Related
+- bidirectional-leading-tone: The nebenverwandt agents exhibit bidirectional leading-tone behavior
+- weitzmann-treatise: Weitzmann coined and explored this term
+
+## Contrasts With
+- l-transformation: L (Leittonwechsel) swaps the moving and stationary voices of N; Morris 1998 proposes L' (L-inverse) as an alternative label for N
+
+# Common Errors
+- **Error**: Confusing nebenverwandt with relative major/minor
+  **Correction**: Relative pairs share a key signature; nebenverwandt pairs share a root/fifth and have roots a fifth apart
+
+- **Error**: Treating the agents' tensions as merely voice-leading
+  **Correction**: The tensions are functional (leading-tone pressure), not just parsimonious motion
 
 # Common Confusions
-- Nebenverwandt is not the same as relative major/minor (which shares a key signature)
-- The term "adjacency" refers to the relationship on certain theoretical graphs, not to chromatic proximity
-- Both triads in a nebenverwandt pair belong to the same hexatonic system
-- The reciprocal tensions are functional (leading-tone pressure), not just voice-leading
+- **Confusion**: "Adjacency" refers to chromatic proximity
+  **Clarification**: Saslaw's translation "adjacency relation" refers to theoretical graph relationships, not chromatic distance
+- **Confusion**: Both triads in a nebenverwandt pair belong to the same hexatonic system
+  **Clarification**: They belong to the same Weitzmann region but different hexatonic regions
 
 # Source Reference
-Chapter 3: Reciprocity, pp. 64-65
+Cohn, Richard. *Audacious Euphony*, Chapter 3: Reciprocity, pp. 64-65, 73-74.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Oettingen "reciprocal" name, Smith 2006 reference, pentachord construction. High confidence: key concept with extensive source definition.

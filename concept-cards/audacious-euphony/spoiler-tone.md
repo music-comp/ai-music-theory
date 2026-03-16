@@ -1,73 +1,106 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Spoiler Tone
-category: theory
+slug: spoiler-tone
+
+# === CLASSIFICATION ===
+category: dissonance
+subcategory: tetrachordal systems
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
-pdf_page: 156
-unit: null
-authors: Richard Cohn
+pdf_page: 167
+section: "The Tristan Genus as Nearly Even Tetrachord"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "spoiler"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tristan-genus
+  - diminished-seventh-chord
+  - substitution-strategy
+extends: []
+related:
+  - boretz-region
+  - boretz-group-transformations
+  - boretz-spider
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a spoiler tone in the Tristan-genus system?"
+  - "How do spoiler tones track voice-leading motion within a Boretz region?"
 ---
 
 # Quick Definition
-A spoiler tone is the single pitch that displaces a Tristan-genus chord away from the perfectly even diminished seventh chord, distinguishing the dominant seventh or half-diminished seventh from its Boretz region's central diminished seventh.
+A spoiler tone is the single pitch within a Tristan-genus chord that lies outside the majority diminished seventh chord, "spoiling" what would otherwise be a perfectly even tetrachord and distinguishing the chord's species and regional membership.
 
-# Formal Definition
-Following Boretz (1972), a **spoiler** is the pitch within a dominant seventh or half-diminished seventh chord that lies outside the majority diminished seventh chord. The spoiler "spoils" what would otherwise be a perfectly even tetrachord.
+# Core Definition
+Following Boretz (1972), a **spoiler** is the pitch within a dominant seventh or half-diminished seventh chord that lies outside the majority diminished seventh chord. Boretz writes of the first two Tristan Prelude chords: "these two chords... share a common relation to... D-F-G#-B; each... contains just three of its four pitch classes, with one pitch 'contrapuntally' displaced by a semitone; for only the D# 'spoils' the first chord of m. 2, and when it 'resolves' to D, the F of the complex is 'displaced' to E" (p. 168). When the spoiler resolves back into the diminished seventh body, a different pitch must become the new spoiler to maintain Tristan-genus character.
 
-For any Tristan-genus chord:
-- Three pitches belong to the central diminished seventh
-- One pitch (the spoiler) is displaced by semitone from the fourth diminished-seventh tone
+# Prerequisites
+- **Tristan genus**: The system within which spoiler tones operate
+- **Diminished seventh chord**: The perfectly even body that is "spoiled"
+- **Substitution strategy**: The theoretical framework defining the spoiler relationship
 
-When the spoiler "resolves" back into the diminished seventh, a different pitch must become the new spoiler to maintain the Tristan-genus character.
+# Key Properties
+1. Three pitches of a Tristan-genus chord belong to the central diminished seventh; the fourth (the spoiler) is displaced by semitone
+2. Downward spoiler (below the diminished-seventh tone) creates V7; upward spoiler creates ø7
+3. When spoiler resolves, another voice must emerge as new spoiler (conservation of displacement)
+4. Cross-species progressions: spoiler resolves, new spoiler emerges on the opposite side of the diminished seventh
+5. Same-species progressions: spoiler resolves, new spoiler emerges on the same side
 
-# Construction/Recognition
-Spoiler identification:
-- Take any V7 or ø7 chord
-- Identify the three pitches that belong to a diminished seventh chord
-- The remaining pitch is the spoiler
+# Construction / Recognition
+To identify a spoiler:
+1. Take any V7 or ø7 chord
+2. Identify the three pitches belonging to one of the three diminished seventh chords
+3. The remaining pitch is the spoiler
 
-Spoiler motion:
-- Downward spoiler (below the diminished-seventh tone) → dominant seventh
-- Upward spoiler (above the diminished-seventh tone) → half-diminished seventh
+Example: F-A-B-D# (Tristan chord)
+- Three pitches B, F, [D = missing, D# present] belong to B-D-F-G# diminished seventh
+- D# is the spoiler (upward displacement of D) -- hence this is a ø7
 
-Resolution behavior:
-- When spoiler resolves, another voice must "spoil" to maintain Tristan-genus membership
-- Cross-species progressions: spoiler resolves, new spoiler emerges on opposite side
-- Same-species progressions: spoiler resolves, new spoiler emerges on same side
-
-# Musical Context
-The spoiler concept illuminates:
-- Voice-leading within Boretz regions
-- How Tristan-genus chords relate to their central diminished seventh
-- The "virtual presence" of diminished seventh chords in Wagner's music
-
-In analytical description:
-- "The D# spoils the first chord" (Boretz on Tristan opening)
-- Spoiler resolution and emergence tracks the voice-leading narrative
-- Helps explain why certain progressions feel connected despite chromatic complexity
+# Context & Application
+Spoiler tracking provides a narrative tool for analyzing voice-leading motion within Boretz regions. In the Tristan Prelude, successive spoilers trace the path through the Boretz spider. When a new "majority diminished seventh chord complex" takes over, it signals interregional modulation. Wagner's initial sketch corroborates the virtual presence of the core diminished seventh (p. 170 n. 11).
 
 # Examples
-**Tristan Prelude, opening**: Boretz writes that "only the D# 'spoils' the first chord of m. 2, and when it 'resolves' to D, the F of the complex is 'displaced' to E." The spoiler (D#) resolves into the B-D-F-G# diminished seventh, but F must become the new spoiler (rising to E) to create the dominant seventh.
+- **Tristan Prelude chord 1**: D# spoils B-D-F-G# (p. 168)
+- **Tristan Prelude chord 2**: E spoils (below F); the shift from D# to D resolves one spoiler while F to E creates a new one (p. 168)
+- **Tristan Prelude chords 3-4**: F# and G are successive spoilers of the same B-D-F-G# complex (p. 169)
+- **Tristan Prelude chord 5**: C is the spoiler; chord 6 marks shift to a new majority complex centered on A-C-D#-F# (p. 169)
 
-**Tristan Prelude, chords 3-4**: The second chord pair similarly spoils the B-D-F-G# complex: F# and G are spoilers in successive chords.
+# Relationships
+## Builds Upon
+- Diminished seventh chord (the "body" that is spoiled)
+- Substitution strategy (the theoretical framework)
+## Enables
+- Boretz-group transformation labeling (tracking which tones move)
+- Interregional modulation detection (when majority complex shifts)
+## Related
+- Boretz spider (visual representation of spoiler motion)
+## Contrasts With
+- (No direct contrasting concept)
 
-**Tristan Prelude, chord 5**: C is the spoiler. Chord 6 (C#7) marks a shift to a new "majority diminished seventh complex" - the first interregional modulation.
-
-# Related Concepts
-- Boretz region
-- Diminished seventh chord
-- Tristan genus
-- Single semitonal displacement
-- Nearly even tetrachord
-- Boretz-group transformations
-- Virtual presence
+# Common Errors
+- **Error**: Treating the spoiler as a "dissonance" in functional terms
+  **Correction**: The spoiler is a displacement from perfect evenness, not a dissonance in the tonal-functional sense
 
 # Common Confusions
-- "Spoiler" is Boretz's term, not standard music theory vocabulary
-- The spoiler is not the "dissonance" in functional terms; it's the displacement from perfect evenness
-- Spoiler can be above (→ ø7) or below (→ V7) the diminished-seventh position
-- The central diminished seventh may never appear; it exerts influence virtually
+- **Confusion**: Thinking the central diminished seventh must sound for the spoiler concept to apply
+  **Clarification**: The diminished seventh may be entirely virtual, with its influence exerted through the spoiler relationships among sounding chords
 
 # Source Reference
-Chapter 7: Dissonance, pages 166-170
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 167-170.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Boretz quotation, Tristan chord-by-chord analysis, resolution behavior description. Fresh extraction adds clearer same-species vs. cross-species distinction and interregional modulation connection.

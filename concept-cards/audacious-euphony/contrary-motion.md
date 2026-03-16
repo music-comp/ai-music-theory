@@ -1,63 +1,111 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Contrary Motion in Hexatonic Progressions
-category: theory
+slug: contrary-motion
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Hexatonic Cycles"
 chapter_number: 2
 pdf_page: 35
-unit: null
-authors: Richard Cohn
+section: "Contrary Motion and Balance"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "bidirectional voice leading"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - balanced-voice-leading
+  - hexatonic-cycle
+extends:
+  - balanced-voice-leading
+related:
+  - uncanny-semiotics
+  - near-evenness
+  - lp-transformation
+contrasts_with:
+  - uniform-voice-leading
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Why is contrary motion special to hexatonic progressions?"
+  - "What is the relationship between contrary motion and the uncanny?"
 ---
 
 # Quick Definition
-Contrary motion in hexatonic progressions refers to the unique property of major-third transpositions where, for every voice that rises, another falls by the same magnitude - a property exclusive to triads transpositionally related by major third.
+The unique property of major-third transpositions where, for every voice that rises, another falls by the same magnitude -- a property exclusive to triads transpositionally related by major third and central to the semiotic power of hexatonic progressions.
 
-# Formal Definition
-Contrary motion describes voice leading where voices move in opposite directions simultaneously. Among triadic transpositions, contrary motion "inheres exclusively to triads that are transpositionally related by major third" (T4 or T8). This is because the major third divides the octave into as many equal parts as the triad has notes (three), creating balanced voice leading where upward and downward motion cancel out.
+# Core Definition
+"A significant entailment of balanced voice leading is *contrary motion*: for every voice that rises, another falls by the same magnitude. Contrary motion among triads of the same mode thus inheres exclusively to triads that are transpositionally related by major third" (Cohn, p. 37). When three-voice triads are "connected by idealized voice leading, contrary motion is indeed a special case: it arises only between triads whose roots are related by major third and hence share membership in a hexatonic cycle" (p. 42). Any given triad can be juxtaposed with 18 other triads outside its cycle; one involves single-voice motion, and the remaining 17 involve "similar or parallel motion" (p. 42).
 
-# Construction/Recognition
+# Prerequisites
+- **balanced-voice-leading** — Contrary motion is an entailment of balanced voice leading
+- **hexatonic-cycle** — Contrary motion occurs exclusively between triads sharing a hexatonic cycle
+
+# Key Properties
+1. Exclusive to major-third transpositions (T4/T8)
+2. "The major third has this special status because it divides the octave into as many equal parts as the triad has notes" (p. 37)
+3. All three types of hexatonic juxtaposition (adjacent, next-adjacent, diametric) exhibit contrary motion
+4. "This entailment, which is at the heart of the approach developed in this book, has gone unrecognized by the many scholars who have studied third relations during the last thirty years" (p. 37)
+
+# Construction / Recognition
 Mathematical basis:
 - Major third = 4 semitones
 - Three major thirds = 12 semitones = octave
-- Triad has 3 notes; octave divided by 3 = 4 semitones (major third)
-- Therefore: "the major third has this special status because it divides the octave into as many equal parts as the triad has notes" (p. 38)
+- Triad has 3 notes; octave divided by 3 = 4 semitones
 
 Voice-leading comparison:
-- T4 (major third up): one voice up, one voice down, one stationary
-- T3 (minor third up): both moving voices move down (uniform direction)
-- T5 (perfect fourth up): both moving voices move in same direction
+- T4 (major third): one voice up, one voice down, one stationary = contrary
+- T3 (minor third): both moving voices down = uniform/parallel
+- T5 (perfect fourth): both moving voices same direction = uniform
 
-The text notes: "Under least-motion voice leading, recursive transposition by any interval other than major third generates uniformly directed voice leading" (p. 37).
-
-# Musical Context
-Contrary motion in hexatonic progressions creates the sensation of harmonic change without net melodic direction - voices rise and fall but the overall pitch center remains stable. This property underlies both the syntactic role of major-third relations in pan-triadic progressions and their semiotic association with supernatural and altered states.
+# Context & Application
+Contrary motion underlies both the syntactic role of major-third relations and their semiotic association with the supernatural. The successive alternation of up and down in a hexatonic cycle can be compressed into simultaneous contrary motion between nonadjacent triads (Fig. 2.3, p. 39).
 
 # Examples
-From the text (p. 37-38):
-- C major to E major: G rises to G#, C falls to B, E holds - contrary motion
-- C major to Eb major (minor third): C falls to Bb, E falls to Eb, G holds - parallel/uniform motion
+**Example 1** (p. 37): C major to E major: G rises to G#, C falls to B, E holds.
 
-Figure 2.3 (p. 39-40) shows contrary motion in:
-- (a) Major-to-major relations: double displacements in opposite directions
-- (b) Minor-to-minor relations: same pattern
-- (c) Hexatonic poles: triple displacement, all three voices move, balanced contrary motion
+**Example 2** (p. 37, contrast): C major to Eb major: both C and E fall (to Bb and Eb); this is NOT contrary motion.
 
-The text emphasizes this "has gone unrecognized by the many scholars who have studied third relations during the last thirty years" (p. 38).
+**Example 3** (Fig. 2.3, p. 39): Diametric triads (hexatonic poles) move all three voices by semitone in balanced contrary motion.
 
-# Related Concepts
-- Balanced Voice Leading
-- Major-Third Transposition
-- Hexatonic Cycle
-- LP/PL Transformation
-- Near Evenness
-- Voice-Leading Zone
-- Uniform Voice Leading
+# Relationships
+## Builds Upon
+- **balanced-voice-leading** — Contrary motion is a direct consequence of balanced voice leading
+- **hexatonic-cycle** — The context in which contrary motion occurs
+
+## Enables
+- **uncanny-semiotics** — Contrary motion contributes to the uncanny effect of hexatonic progressions
+
+## Related
+- **near-evenness** — The structural property that makes contrary motion possible
+- **lp-transformation** — The compound transformation that produces contrary motion between same-mode triads
+
+## Contrasts With
+- **uniform-voice-leading** — All other transposition types produce uniform (unidirectional) motion
+
+# Common Errors
+- **Error**: Expecting contrary motion in all smooth triadic progressions
+  **Correction**: Only major-third transpositions produce contrary motion; minor-third and fifth transpositions do not
 
 # Common Confusions
-- Contrary motion in hexatonic progressions is not the same as contrary motion in counterpoint pedagogy; here it describes a structural property of specific transpositions
-- Minor-third transpositions do NOT exhibit contrary motion; both moving voices go the same direction
-- The contrary motion is a consequence of the augmented triad's perfect evenness, not an arbitrary feature
-- Do not assume all "smooth" progressions involve contrary motion; only major-third relations do
+- **Confusion**: Equating contrary motion in hexatonic theory with contrary motion in species counterpoint
+  **Clarification**: Here it describes a structural property of specific transpositions, not a general pedagogical norm
 
 # Source Reference
-Chapter 2: Hexatonic Cycles, pp. 37-38, 44-46
+Chapter 2: Hexatonic Cycles, pp. 37-38, 42-44. Figures 2.3 (p. 39) and 2.2 (p. 38).
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: the mathematical basis, the voice-leading comparison table, the emphasis on prior non-recognition
+- Confidence: HIGH — explicitly defined with clear mathematical justification

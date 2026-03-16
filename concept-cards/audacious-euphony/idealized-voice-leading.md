@@ -1,64 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Idealized Voice Leading
-category: technique
+slug: idealized-voice-leading
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: null
+tier: foundational
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Mapping the Triadic Universe"
 chapter_number: 1
 pdf_page: 19
-unit: null
-authors: Richard Cohn
+section: "Three Ways to Calculate Triadic Distance"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "optimal voice leading"
+  - "minimal voice leading"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - voice-leading-work
+  - voice-leading-approach
+  - single-semitonal-displacement
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is idealized voice leading?"
+  - "How does idealized voice leading differ from actual compositional voice leading?"
 ---
 
 # Quick Definition
-The optimal pairing of tones between two chords that minimizes total voice-leading work, abstracting from actual registral realization and instrumental/vocal constraints.
+The optimal one-to-one pairing of tones between two chords that minimizes total voice-leading work, abstracting from actual registral realization and instrumental constraints.
 
-# Formal Definition
-Idealized voice leading refers to the ordered dyads between two chords when their tones are paired one-to-one to minimize total voice-leading work (aggregate semitonal displacement). The idealized voice leading from C major to F major is (C, C), (E, F), (G, A), regardless of how those chords are registrally realized or how actual instruments or singers move between their constituent tones. The concept treats voice leading in pitch-class space rather than pitch space, allowing comparison of triadic connections independent of compositional texture.
+# Core Definition
+Idealized voice leading refers to the ordered dyads between two chords when their tones are paired one-to-one to minimize total voice-leading work. The concept operates in pitch-class space rather than pitch space, treating voice leading as an abstract relationship independent of compositional texture. The concept, attributed to Godfrey Winham by Proctor (1978), is so familiar that "it takes a special effort to acknowledge it" (synthesized from Ch. 1, p. 26). Cohn notes that theorists assume idealized voice leading "every day of their working lives."
 
-# Construction/Recognition
+# Prerequisites
+This is a foundational concept with no prerequisites within this source.
+
+# Key Properties
+1. Operates in pitch-class space (octave equivalence assumed)
+2. Pairs tones one-to-one between two chords
+3. Minimizes total semitonal displacement
+4. Independent of actual registral spacing or voicing
+5. Provides a standard basis for comparing triadic connections
+6. Not a prescription for composition but an analytical abstraction
+
+# Construction / Recognition
 For chords X = {x1, x2, x3} and Y = {y1, y2, y3}:
-- Find the permutation of Y that minimizes Σ|xi - yi| (mod 12, taking smaller direction)
-- This permutation defines the idealized voice leading
-- Each ordered pair (xi, yi) represents one voice's motion
-
-The idealized voice leading:
-- Treats pitch classes, not pitches (octave equivalence assumed)
-- Pairs tones one-to-one (no voice crossing in the abstract)
-- Minimizes total displacement
-- Is independent of actual registral spacing
+1. Consider all possible one-to-one pairings of tones
+2. For each pairing, calculate total semitonal displacement
+3. The pairing with minimum total displacement is the idealized voice leading
+4. Distances measured mod 12, taking the smaller of the two possible directions
 
 Example: C major {C, E, G} to F major {F, A, C}
-- Idealized: (C, C), (E, F), (G, A) = 0 + 1 + 2 = 3 units work
-- Not (C, F), (E, A), (G, C) = 5 + 5 + 5 = 15 units (not minimal)
+- Optimal: (C, C), (E, F), (G, A) = 0 + 1 + 2 = 3 units
+- Not: (C, F), (E, A), (G, C) = 5 + 5 + 5 = 15 units
 
-# Musical Context
-Idealized voice leading:
-- Provides a standard for measuring triadic distance
-- Abstracts from compositional texture to reveal underlying proximity
-- Is assumed by theorists "every day of their working lives" (Cohn)
-- Enables systematic comparison across different realizations
-
-The concept, attributed to Godfrey Winham by Proctor (1978), is so familiar that "it takes a special effort to acknowledge it."
+# Context & Application
+Idealized voice leading underlies all distance calculations in the book. Common-tone counting, voice-leading work, and the geometric representations (Tonnetz, Cube Dance) all assume idealized pairing. The concept enables systematic comparison across different compositional realizations.
 
 # Examples
-- Common-tone retention is counted using idealized voice leading
-- Voice-leading work metrics assume idealized pairing
-- The Cube Dance represents idealized voice-leading connections
-- Tonnetz distances reflect idealized, not actual, voice leading
+**Example 1** (Ch. 1): Common-tone retention between triads is counted using idealized voice leading.
 
-# Related Concepts
-- Voice-Leading Work
-- Single Semitonal Displacement
-- Balanced Voice Leading
-- Upshift Voice Leading
-- Downshift Voice Leading
-- Common-Tone Approach
+**Example 2** (Ch. 2): "Under idealized voice leading one voice moves up (G to G#) and one moves down (C to B), while the third voice, E, holds its place" when transposing C major to E major (p. 37).
+
+# Relationships
+## Builds Upon
+This is a foundational analytical concept.
+
+## Enables
+- **voice-leading-work** — Calculated under idealized voice leading
+- **voice-leading-approach** — Built on the assumption of idealized pairing
+- **balanced-voice-leading** — Defined in terms of idealized voice-leading behavior
+
+## Related
+- **single-semitonal-displacement** — The minimum possible idealized voice-leading distance
+
+## Contrasts With
+No direct contrasts within this source.
+
+# Common Errors
+- **Error**: Expecting actual compositions to always realize idealized voice leading
+  **Correction**: Composers may voice chords differently for musical reasons; idealized voice leading is an analytical abstraction
 
 # Common Confusions
-- Idealized voice leading is not a prescription for composition - it's an analytical abstraction
-- Actual music may realize voice leading differently than the idealized version
-- The concept assumes octave equivalence, which may not always match perception
-- "Idealized" does not mean "better" - it means abstracted for comparison purposes
+- **Confusion**: Thinking "idealized" means "better" or "preferred"
+  **Clarification**: It means abstracted for comparison purposes, not prescriptive for composition
 
 # Source Reference
-Glossary, page 229; assumed throughout the book
+Chapter 1: Mapping the Triadic Universe, pp. 25-27. Glossary, p. 229. The concept is attributed to Godfrey Winham via Proctor (1978).
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: the Winham/Proctor attribution, the F major worked example, the point about theoretical ubiquity
+- Confidence: HIGH — the concept is explicitly described and is foundational throughout the book

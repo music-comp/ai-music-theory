@@ -1,58 +1,108 @@
 ---
-concept: "Triads' Second Nature"
-category: theory
+# === CORE IDENTIFICATION ===
+concept: "Triad's Second Nature"
+slug: triads-second-nature
+
+# === CLASSIFICATION ===
+category: neo-riemannian-theory
+subcategory: theoretical-framework
+tier: foundational
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Introduction"
-chapter_number: 0
+chapter_number: null
 pdf_page: 9
-unit: null
-authors: Richard Cohn
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "second nature of triads"
+  - "consonant triad's second nature"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - near-evenness
+  - consonant-triad
+  - pan-triadic-syntax
+  - augmented-triad-as-axis
+contrasts_with:
+  - root-interval-approach
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the 'second nature' of consonant triads?"
+  - "Why do triads have two distinct syntactic potentials?"
 ---
 
 # Quick Definition
-The property of consonant triads that enables them to form coherent progressions through voice-leading proximity, independent of their acoustic consonance and diatonic function.
+The property of consonant triads that enables them to generate coherent chromatic progressions through voice-leading proximity, independent of their acoustic consonance ("first nature") that generates diatonic tonality.
 
-# Formal Definition
-The "second nature" of consonant triads refers to a structural property, distinct from their acoustic consonance (their "first nature"), that underlies pan-triadic syntax. While triads' first nature derives from the harmonic series and generates classical diatonic tonality, their second nature emerges from their status as "nearly even" divisions of the chromatic octave. This second property is equally rare among chord types and equally generative of syntactic organization.
+# Core Definition
+Cohn's "principal thesis is that major and minor triads are not only the familiar acoustic consonances of eighteenth-century classical theory. They also have a second property, equally rare and equally generative of syntax" (p. 10). This second property is near evenness: triads are minimal perturbations of perfectly even augmented triads, enabling smooth voice-leading connections. While the "first nature" (acoustic consonance) generates classical diatonic syntax through root relations, the "second nature" (near evenness) generates pan-triadic syntax through voice-leading proximity. "That property underlies an alternative method for measuring harmonic proximity, leading naturally to an account of the triadic universe and to its representation through an interrelated set of maps" (p. 10).
 
-# Construction/Recognition
-The second nature of triads relates to their geometric properties in pitch-class space:
-- Consonant triads are "nearly even" three-note chords - distributed as evenly as possible without being perfectly even
-- This near-evenness positions them optimally for minimal voice-leading connections
-- Each consonant triad relates to augmented triads (perfectly even three-note chords) by single semitonal displacement
-- The 24 consonant triads form systematic networks (hexatonic cycles, Weitzmann regions) based on this property
+# Prerequisites
+This is a foundational concept with no prerequisites within this source.
 
-The mathematical formulation: a consonant triad divides 12 semitones into intervals of 3, 4, and 5 semitones (or 4, 3, and 5 for minor), approaching but not achieving the perfect evenness of 4, 4, and 4 (augmented triad).
+# Key Properties
+1. Distinct from and independent of acoustic consonance (the "first nature")
+2. Derives from the triad's status as a "nearly even" chord in chromatic pitch-class space
+3. "Equally rare and equally generative of syntax" as consonance (p. 10)
+4. Enables triads to connect via minimal voice leading, generating hexatonic cycles and pan-triadic progressions
+5. Operates "beneath the surface even when augmented triads are absent from the musical texture" (synthesized from Ch. 2)
 
-# Musical Context
-Understanding triads' second nature allows analysts and composers to:
-- Recognize coherence in passages that seem "irrational" from a diatonic perspective
-- Appreciate how 19th-century composers exploited voice-leading properties systematically
-- Understand why chromatic third relations became associated with altered psychological states
-- Connect triadic chromaticism to broader patterns in the chromatic universe
+# Construction / Recognition
+1. A consonant triad divides 12 semitones into intervals of 3, 4, and 5 (or 4, 3, 5) semitones
+2. This is the closest possible approximation of the perfectly even 4-4-4 augmented triad
+3. Each consonant triad is one semitone away from exactly one augmented triad
+4. This near evenness generates voice-leading connections independent of root relations
+5. The result: 24 consonant triads form systematic networks (hexatonic cycles, Weitzmann regions) based on this property
 
-The second nature operates beneath the surface even when augmented triads are absent from the musical texture, structuring the space through which consonant triads move.
+# Context & Application
+The "second nature" concept is the book's central theoretical claim. It explains why consonant triads can serve double duty as both diatonic and chromatic harmonic objects. Understanding this property requires the "strategic forgetting" Cohn advocates: temporarily bracketing the familiar acoustic properties to foreground the geometric voice-leading properties.
 
 # Examples
-- The "audacious but euphonious" progression Riemann describes in the 1909 Musik-Lexicon: triads that are "closely related" by voice-leading criteria despite sharing few diatonic scale degrees
-- Hexatonic cycles in Brahms, Wagner, and others: progressions that exploit the voice-leading proximity deriving from triads' near-evenness
-- The consistent affiliation of chromatic major-third relations with supernatural or uncanny topics in 19th-century programmatic music
+**Example 1** (p. 10): The book's subtitle, "The Consonant Triad's Second Nature," encapsulates this thesis.
 
-# Related Concepts
-- Consonant Triad
-- Nearly Even
-- Augmented Triad
-- Pan-Triadic Syntax
-- Voice-Leading Work
-- Single Semitonal Displacement
-- Hexatonic Cycle
-- Weitzmann Region
+**Example 2** (p. 14): Cohn's 1990 observation about Schubert's E-flat Piano Trio revealed "a voice-leading property of consonant triads" that was "special; it was shared by no other three-note chords."
+
+# Relationships
+## Builds Upon
+This is a foundational thesis concept.
+
+## Enables
+- **near-evenness** — The specific mathematical property underlying the second nature
+- **pan-triadic-syntax** — The syntax generated by the second nature
+- **hexatonic-cycle** — A primary structure emerging from the second nature
+
+## Related
+- **consonant-triad** — The object possessing the dual nature
+- **augmented-triad-as-axis** — The perfectly even chord from which triads derive their second nature
+
+## Contrasts With
+- **root-interval-approach** — Reflects the "first nature" (acoustic consonance) rather than the second
+
+# Common Errors
+- **Error**: Treating the second nature as a secondary or lesser property
+  **Correction**: It is "equally rare and equally generative of syntax" as the first nature (p. 10)
 
 # Common Confusions
-- The "second nature" is not a secondary or lesser property - it is equally fundamental and equally generative of musical syntax
-- This property is not in opposition to acoustic consonance but operates alongside it, enabling a distinct mode of triadic organization
-- The second nature does not replace diatonic function but provides an alternative organizational principle that can coexist with it
-- Recognizing the second nature requires "forgetting" (strategically bracketing) default assumptions about roots, scales, and tonic function
+- **Confusion**: Thinking the two natures are opposed or contradictory
+  **Clarification**: They are independent properties that happen to coincide in the same objects (overdetermination)
+- **Confusion**: Assuming the second nature replaces diatonic function
+  **Clarification**: It provides an alternative organizational principle that can coexist with diatonic syntax
 
 # Source Reference
-Introduction, pages 9-13
+Introduction, pp. 9-13. The "principal thesis" statement appears on p. 10.
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: the mathematical formulation (3+4+5 division), the point about augmented triads being absent from the surface
+- Definition based on direct quotation from p. 10
+- Confidence: HIGH — this is the book's explicitly stated principal thesis

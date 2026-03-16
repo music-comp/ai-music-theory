@@ -1,48 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Palindromic Voice Leading
-category: technique
+slug: palindromic-voice-leading
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: structural patterns
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
-pdf_page: 129
-unit: null
-authors: "Richard Cohn"
+pdf_page: 138
+section: "Departure -> Return Scripts"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "voice-level palindrome"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - departure-return-script
+  - upshifting-downshifting
+extends:
+  - departure-return-script
+related:
+  - zonal-palindrome
+  - liszt-kyrie-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What happens to individual voices when a triadic progression is reversed?"
+  - "At what levels can palindromic structure exist?"
 ---
 
 # Quick Definition
-Palindromic voice leading occurs when the reversal of a triadic progression causes each individual voice to retrace its path, creating a departure-return structure that may be strict at the level of individual voices, voice-leading zones, or both.
+When a triadic progression is reversed, each individual voice retraces its path, creating palindromic structure that may be strict at the voice level, the zone level, or both -- but staggered voice entries can prevent strict triadic palindrome even when voices are individually palindromic.
 
-# Formal Definition
-When a series of triads is followed by its retrograde, each constituent voice traces a palindrome. This palindromic complementarity is particularly strong for performers, for whom the reversal of upshifting and downshifting involves a kinetic aspect. The palindrome may operate at different levels:
-1. **Voice-level palindrome**: Each individual voice traces a strict palindrome (as in Liszt's Kyrie)
-2. **Zonal palindrome**: The voice-leading zones form a palindrome, even if specific triads do not match (as in Schubert's "Liedesend'")
-3. **Triadic palindrome**: The actual triadic progression is a strict palindrome (rare in practice)
+# Core Definition
+"If both departure and return realize least-motion voice leading, then each upper voice is structured as a palindrome. The sense of departure -> return is particularly strong for a performer, for whom the complementarity of downshifting and upshifting involves a kinetic aspect" (p. 138). Three levels of palindrome: (1) voice-level (each voice retraces its path), (2) zonal (zone sequence is symmetric), (3) triadic (actual chord sequence is symmetric -- rare). The Liszt Kyrie demonstrates that voice-level palindrome does not guarantee triadic palindrome when voices enter staggered.
 
-# Construction/Recognition
-- Look for a passage where voice-leading direction reverses at a central axis
-- Check whether individual voices retrace their paths
-- Check whether voice-leading zones form a palindromic sequence
-- Note that staggered voice entry can create voice-level palindromes without triadic palindromes
+# Prerequisites
+- **Departure-return script**: The compositional framework generating palindromes
+- **Upshifting and downshifting**: The directional reversal creating symmetry
 
-# Musical Context
-Palindromic voice leading provides a mechanism for departure-return scripts in chromatic music where functional harmonic analysis is difficult or inappropriate. The kinetic complementarity of downshifting and upshifting provides a perceptual anchor.
+# Key Properties
+1. Reversing a triadic progression reverses each voice
+2. Voice-level palindrome is perceptible kinetically to performers
+3. Staggered voice entry can decouple voice-level from triadic-level palindrome
+4. Zonal palindrome is the most general and most commonly realized level
+5. Triadic palindrome (strict) is rare
+
+# Construction / Recognition
+1. Identify a passage where voice-leading direction reverses at a central axis
+2. Check individual voices: do they retrace their paths?
+3. Check zones: does the zone sequence read the same forwards and backwards?
+4. Check triads: is the triadic progression itself symmetric? (rare)
+
+# Context & Application
+Palindromic voice leading is the mechanism by which departure-return scripts create structural coherence. The kinetic experience of palindromic reversal is particularly important for performers.
 
 # Examples
-- Liszt, *Missa pro organo lectarum*, Kyrie: Individual voices palindromic, zones palindromic, but triadic succession not strictly palindromic due to staggered firing order
-- Schubert, "Liedesend'": Zone-level palindrome across nine strophes, with minor perturbation in stanza VIII
-- Classical I -> V -> I: The prototype departure-return, where voice palindrome arises from the complement of downshift and upshift
+- **Classical I -> V -> I**: The prototype departure-return where voice palindrome arises from downshift/upshift complementarity
+- **Liszt Kyrie**: Individual voices palindromic; zones palindromic; triads NOT palindromic (staggered firing order)
+- **Schubert "Liedesend'"**: Zone-level palindrome across nine strophes
 
-# Related Concepts
-- Departure-Return Script
-- Voice-Leading Zones
-- Upshift Voice Leading
-- Downshift Voice Leading
-- Zonal Palindrome
+# Relationships
+## Builds Upon
+- Departure-return script
+## Enables
+- Zonal palindrome as analytical concept
+## Related
+- Liszt Kyrie analysis (paradigmatic demonstration)
+## Contrasts With
+- Non-palindromic progressions (one-directional scripts like continuous upshift)
+
+# Common Errors
+- **Error**: Voice-level palindrome guarantees triadic palindrome
+  **Correction**: Staggered voice entry can decouple the two levels (Liszt Kyrie)
 
 # Common Confusions
-- A palindrome of voice-leading zones does not require a palindrome of specific triads
-- Individual voice palindromes do not guarantee triadic palindromes (the Liszt Kyrie demonstrates this)
-- The palindromic structure may be "ruffled" by perturbations without losing its organizational force
+- **Confusion**: Palindromic structure must be aurally obvious
+  **Clarification**: It may be kinetically perceptible to performers even when not aurally salient
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pp. 138-148
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 138, 145-148.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: three palindromic levels, kinetic perception, staggered firing order. High confidence -- clearly articulated concept.

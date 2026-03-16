@@ -1,69 +1,110 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "Circumnavigation (Tetrachordal)"
-category: technique
+slug: circumnavigation-tetrachordal
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: tetrachordal transformations
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
-pdf_page: 156
-unit: null
-authors: Richard Cohn
+pdf_page: 175
+section: "Circumnavigating the Tristan-Genus Universe"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "tetrachordal circumnavigation"
+  - "4-Cube Trio circumnavigation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - four-cube-trio
+  - boretz-group-transformations
+  - octatonic-group-transformations
+  - tristan-genus-voice-leading-zones
+extends: []
+related:
+  - sequential-templates-tetrachordal
+  - chopin-prelude-analysis
+  - chopin-mazurka-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do you circumnavigate the Tristan-genus voice-leading space?"
+  - "Which transpositional values produce directed vs. balanced motion?"
 ---
 
 # Quick Definition
-Tetrachordal circumnavigation is movement through all voice-leading zones of the Tristan-genus system by alternating Boretz-group and octatonic-group transformations, analogous to triadic circumnavigation via hexatonic and Weitzmann transformations.
+Tetrachordal circumnavigation is movement through all six odd voice-leading zones of the Tristan-genus system by alternating Boretz-group and octatonic-group transformations, analogous to triadic circumnavigation of Cube Dance.
 
-# Formal Definition
-**Circumnavigation** of the Tristan-genus universe involves traversing all six odd-numbered voice-leading zones through systematic combination of:
-1. Boretz-group transformations (within regions)
-2. Octatonic-group transformations (between regions)
+# Core Definition
+"4-Cube Trio, like Cube Dance, is a true model of voice leading (Tymoczko 2011b, 106).... 4-Cube Trio also serves as a space for circumnavigation of the universe of nearly even tetrachords" (p. 175). The simplest circumnavigatory path uses transpositional sequences that perpetually upshift or downshift, engaging only the odd voice-leading zones. "If the sequence uses only members of the Tristan genus, then only odd zones of voice-leading space are engaged. The diminished seventh, minor seventh, and French sixth chords in the even zones have virtual status" (p. 176). Transposition by minor third or tritone (intervals internal to the diminished seventh) produces balanced/contrary motion; other intervals (T1, T2, T4, T5) produce directed circumnavigatory sequences.
 
-The 4-Cube Trio graph can be circumnavigated just as Cube Dance can, though the transpositional values that enable directed motion differ from the triadic case.
+# Prerequisites
+- **4-Cube Trio**: The space being circumnavigated
+- **Boretz-group transformations**: Intra-regional operations used in alternation
+- **Octatonic-group transformations**: Inter-regional operations used in alternation
+- **Voice-leading zones**: The metric tracking circumnavigatory progress
 
-# Construction/Recognition
-Conditions for circumnavigation:
-- Transpositional values by minor third (T3) or tritone (T6) produce balanced motion
-- Other values (T1, T2, T4, T5) produce directed upshift or downshift
-- Each value can be achieved through four distinct transformation pairs
+# Key Properties
+1. Balanced motion: T3, T6 (intervals internal to diminished seventh)
+2. Directed motion: T1, T2, T4, T5 (intervals absent from diminished seventh)
+3. Each directed transposition achievable by four distinct transformation pairs (Table 7.3)
+4. Transformation-class substitutions can introduce variety while maintaining trajectory
+5. Even zones may be engaged by bridging chords (diminished seventh, minor seventh, French sixth)
 
-Table 7.3 shows:
-- Rows: Boretz transformations (S3(2), S3(4), S6, R*)
-- Columns: Octatonic transformations (S2, S4, S5, octatonic pole)
-- Cells: Resulting transpositional values (T±1, T±2, T±4, T±5)
+# Construction / Recognition
+Table 7.3 combination table (p. 176):
 
-Complete circumnavigation requires passing through all odd zones (1, 3, 5, 7, 9, 11).
+|       | S2    | S4    | S5    | Oct. pole |
+|-------|-------|-------|-------|-----------|
+| S3(2) | T±1   | T±5   | T±4   | T±2       |
+| S3(4) | T±5   | T±1   | T±2   | T±4       |
+| S6    | T±2   | T±4   | T±1   | T±5       |
+| R*    | T±4   | T±2   | T±5   | T±1       |
 
-# Musical Context
-Circumnavigation appears in:
-- Sequential passages dominated by seventh chords
-- Extended chromatic passages with directed voice leading
-- Development sections using seventh-chord chains
+Select a Boretz + octatonic pair, alternate them, and the sequence tours all odd zones.
 
-Unlike triadic circumnavigation:
-- Even zones (0, 2, 4, 6, 8, 10) may be engaged via bridging chords
-- Diminished sevenths, minor sevenths, and French sixths can fill gaps
-- The path can be continuous or skip zones depending on transformation choices
+# Context & Application
+Circumnavigation appears in sequential passages dominated by seventh chords. The Chopin Prelude Op. 45 circumnavigates multiple times by alternating S4 and S3(4). The Chopin e minor Prelude circumnavigates engaging even zones as well. Class substitutions can convert one sequence type to another while maintaining the downshifting trajectory.
 
 # Examples
-**Chopin's Prelude Op. 45**: Extended downshifting roulade circumnavigates 4-Cube Trio multiple times through alternating S4 and S3(4) transformations.
+- **Chopin Prelude Op. 45**: "Extended downshifting roulade... circumnavigates 4-Cube Trio multiple times by alternating S4 and S3(4)" (Childs 1998) (p. 177)
+- **Chopin e minor Prelude**: First phrase circumnavigates 4-Cube Trio, engaging both odd and even zones (Figure 7.25, pp. 181-182)
+- **Figure 7.8(b,c)**: T11 and T5 sequential templates for circumnavigation (p. 167)
 
-**Chopin's e minor Prelude**: The first phrase's chromatic descent circumnavigates 4-Cube Trio, engaging even zones through diminished seventh and minor seventh chords.
+# Relationships
+## Builds Upon
+- 4-Cube Trio (the space being circumnavigated)
+- Table 7.3 (the combination table governing transpositional values)
+## Enables
+- Sequential analysis of extended seventh-chord passages
+## Related
+- Sequential templates (the patterns enabling circumnavigation)
+- Chopin Prelude analysis, Chopin Mazurka analysis (analytical applications)
+## Contrasts With
+- (No direct contrast; compare with triadic circumnavigation via Cube Dance)
 
-**Figure 7.8(b) and (c)**: Sequential templates for T11 and T5 progressions that would circumnavigate given sufficient extension.
-
-# Related Concepts
-- Circumnavigation (triadic)
-- 4-Cube Trio
-- Boretz-group transformations
-- Octatonic-group transformations
-- Voice-leading zone
-- Cube Dance
-- Transformation combination
+# Common Errors
+- **Error**: Thinking T3 and T6 sequences circumnavigate
+  **Correction**: They produce balanced (contrary) motion, not directed circumnavigation; T1, T2, T4, T5 are required
 
 # Common Confusions
-- T3 and T6 transpositions do NOT circumnavigate; they produce balanced motion
-- Circumnavigation requires alternating Boretz and octatonic transformations
-- Even zones can be engaged through bridging chords, not just Tristan-genus
-- The specific transformation pair determines the direction and pace of motion
+- **Confusion**: Assuming circumnavigation requires a single transformation pair
+  **Clarification**: Class substitutions can change the pair mid-passage while maintaining the overall trajectory
 
 # Source Reference
-Chapter 7: Dissonance, pages 175-178
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 175-182.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Table 7.3, balanced vs. directed distinction, Chopin examples. Fresh extraction adds direct quotations and transformation pair variety.

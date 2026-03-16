@@ -1,50 +1,90 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Nontonic Double-Agent Complex
+slug: nontonic-double-agent-complex
+
+# === CLASSIFICATION ===
 category: analysis
+subcategory: double-agent-applications
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Weitzmann Regions"
 chapter_number: 4
-pdf_page: 77
-unit: null
-authors: Richard Cohn
+pdf_page: 95
+section: "The Double-Agent Complex"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Non-tonic double-agent complex"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - double-agent-complex
+extends: []
+related:
+  - double-agent-pitch
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Can the double-agent complex appear without tonic function?"
 ---
 
 # Quick Definition
 Double-agent complexes that appear in passages where none of the four constituent triads serves as global tonic, demonstrating the structure's independence from tonal function.
 
-# Formal Definition
-A nontonic double-agent complex occurs when the four-triad structure appears in a musical passage without any of its members functioning as the composition's tonic. This demonstrates that the double-agent complex is a chromatic voice-leading structure that can operate at various tonal levels, not just around tonic. The complex can center on local tonics that are remote from the global tonic.
+# Core Definition
+"The double-agent complex can also be present where none of its constituent chords serves as tonic" (p. 95). This demonstrates that the complex is fundamentally a chromatic voice-leading structure that operates at various tonal levels, not just around tonic.
 
-# Construction/Recognition
-The complex retains its structure:
-- Two R-related interior triads (local tonics in the passage)
-- Two N-related exterior triads (flanking the interior pair)
-- S-related exterior triads with enharmonic double agent
+# Prerequisites
+- **Double-agent complex**: The basic structure whose tonal independence is demonstrated
 
-But the interior triads may be:
-- Secondary key areas
-- Development section harmonies
-- Mediant relationships to the global tonic
+# Key Properties
+1. The four-triad structure is preserved (N-R-N chain segment with S exterior)
+2. None of the four triads functions as global tonic
+3. The complex can operate on secondary key areas, development section harmonies, or mediant relationships
 
-# Musical Context
-Nontonic double-agent complexes demonstrate the chromatic structure's flexibility and autonomy. Rather than being tied to tonic function, the complex can appear wherever its voice-leading properties serve compositional purposes. This extends the complex beyond its Classical syntactic origins.
+# Construction / Recognition
+Look for the N-R-N chain pattern in passages where the harmonies are locally organized but tonally remote from the global tonic.
+
+# Context & Application
+Nontonic double-agent complexes show the chromatic structure's autonomy from functional tonality.
 
 # Examples
-- Schumann "Im wunderschonen Monat Mai" (Dichterliebe No. 1), mm. 3-7: Complex centered on local tonics b minor and D major, neither of which is the global tonic (A major implied)
-- Same complex appears untransposed at mm. 3-5 of "Ich will meine Seele tauschen" (Dichterliebe No. 5, b minor)
-- Brahms "Von ewiger Liebe" (Op. 43 No. 1): Complex connects minorized mediant (d minor) to dominant of dominant (C# major), setting "Nirgend noch Licht und nirgend noch Rauch"
+**Schumann, "Im wunderschonen Monat Mai" (Dichterliebe No. 1)** (pp. 95-96): Complex centered on local tonics b minor and D major, neither of which is the global tonic (A major implied). "The same complex appears, untransposed and in the same register, at mm. 3-5 of 'Ich will meine Seele tauschen,' the fifth song."
 
-# Related Concepts
-- Double-Agent Complex
-- Local Tonic
-- Secondary Key Areas
-- Chromatic Voice Leading
-- Schumann Harmonic Practice
+**Brahms, "Von ewiger Liebe" (Op. 43 No. 1)** (p. 96): Complex connects "the tonic's minorized mediant, whose F agent discharges downward, to the dominant of its dominant, whose E# agent presses upward," setting "Nirgend noch Licht und nirgend noch Rauch."
+
+# Relationships
+## Builds Upon
+- double-agent-complex: The basic structure whose tonal freedom is demonstrated
+
+## Enables
+None directly.
+
+## Related
+- double-agent-pitch: The enharmonic pitch still functions even without tonic context
+
+## Contrasts With
+None specified.
+
+# Common Errors
+- **Error**: Assuming nontonic means atonal
+  **Correction**: The complex still operates within tonal context, just not centered on the global tonic
 
 # Common Confusions
-- Nontonic does not mean atonal; the complex still operates within tonal context
-- The complex's structure is independent of which triad is global tonic
-- The same complex can appear in compositions with completely different tonics
+- **Confusion**: The same complex appearing in different keys is coincidental
+  **Clarification**: The Schumann example shows the same complex "untransposed and in the same register" in two different songs
 
 # Source Reference
-Chapter 4: Weitzmann Regions, pages 95-96, Figure 4.16
+Cohn, Richard. *Audacious Euphony*, Chapter 4: Weitzmann Regions, pp. 95-96 (Figure 4.16).
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Schumann same-register observation, Brahms text-painting connection. High confidence: specific examples clearly analyzed.

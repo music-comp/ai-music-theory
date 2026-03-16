@@ -1,59 +1,109 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Boretz Region
-category: analysis
+slug: boretz-region
+
+# === CLASSIFICATION ===
+category: neo-riemannian-theory
+subcategory: tetrachordal regions
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
-pdf_page: 156
-unit: null
-authors: Richard Cohn
+pdf_page: 170
+section: "Boretz regions"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tristan-genus
+  - diminished-seventh-chord
+  - substitution-strategy
+extends:
+  - generalized-weitzmann-region
+related:
+  - weitzmann-region
+  - boretz-spider
+  - boretz-group-transformations
+  - octatonic-region
+contrasts_with:
+  - weitzmann-region
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a Boretz region?"
+  - "How do Boretz regions organize voice leading among seventh chords?"
+  - "How is a Boretz region analogous to a Weitzmann region?"
 ---
 
 # Quick Definition
-A collection of eight Tristan-genus chords (four half-diminished seventh chords and four dominant seventh chords) that are each a single semitonal displacement from the same diminished seventh chord.
+A Boretz region is a collection of eight Tristan-genus chords (four half-diminished and four dominant sevenths) that are each a single semitonal displacement from the same diminished seventh chord -- the tetrachordal analogue to a Weitzmann region.
 
-# Formal Definition
-A Boretz region is the seventh-chord analogue of a Weitzmann region. It comprises eight Tristan-genus chords - four half-diminished sevenths and four dominant sevenths - each of which relates to a single central diminished seventh chord by single semitonal displacement. Just as Weitzmann regions organize consonant triads around augmented triads, Boretz regions organize Tristan-genus chords around diminished seventh chords. There are 3 Boretz regions (corresponding to the 3 diminished seventh chords).
+# Core Definition
+A **Boretz region** is the seventh-chord analogue of a Weitzmann region. "A consequence of Boretz's observation that eight members of the Tristan genus minimally displace a fully diminished seventh chord is that those eight chords are second-order adjacent to each other. Thus they, too, form a tight voice-leading system even when, as in the Tristan Prelude, the diminished seventh chord is absent from the surface" (p. 170). Three Boretz regions exist (one per diminished seventh chord), each containing four V7 and four ø7 chords. Any two chords within the same region are separated by exactly two units of voice leading.
 
-# Construction/Recognition
-Structure of a Boretz region:
-- Central diminished seventh chord (e.g., {C, Eb, F#, A})
-- 4 half-diminished sevenths: each formed by raising one note of the dim7 by semitone
-- 4 dominant sevenths: each formed by lowering one note of the dim7 by semitone
+# Prerequisites
+- **Tristan genus**: The chords organized by Boretz regions
+- **Diminished seventh chord**: The perfectly even core of each region
+- **Substitution strategy**: The theoretical framework generating the region
 
-For the dim7 {C, Eb, F#, A}:
-- Half-diminished: {C#, Eb, F#, A}, {C, E, F#, A}, {C, Eb, G, A}, {C, Eb, F#, Bb}
-- Dominant: {B, Eb, F#, A}, {C, D, F#, A}, {C, Eb, F, A}, {C, Eb, F#, Ab}
+# Key Properties
+1. Three Boretz regions partition all 24 Tristan-genus chords
+2. Each region contains 8 chords (4 V7 + 4 ø7) clustered around one diminished seventh
+3. Any two chords in the same region are exactly 2 voice-leading units apart
+4. The central diminished seventh may be absent from the surface yet structure the region
+5. Motion within a region alternates upshift and downshift, balancing between adjacent voice-leading zones
 
-The Boretz region generalizes the Weitzmann region concept to four-note chords.
+# Construction / Recognition
+For each diminished seventh chord, the Boretz region contains:
+- 4 ø7 chords: each formed by raising one note of the dim7 by semitone
+- 4 V7 chords: each formed by lowering one note of the dim7 by semitone
 
-# Musical Context
-Boretz regions:
-- Extend pan-triadic voice-leading models to seventh chords
-- Help analyze chromatic seventh-chord progressions in late 19th-century music
-- Show how the Tristan chord and its relatives form systematic networks
-- Demonstrate that voice-leading proximity principles apply beyond triads
+Table 7.2 (p. 170):
+- **Region I** (core: C-Eb-F#-A): D7, F7, Ab7, B7, Ebø7, F#ø7, Aø7, Cø7
+- **Region II** (core: C#-E-G-Bb): C7, Eb7, F#7, A7, C#ø7, Eø7, Gø7, Bbø7
+- **Region III** (core: D-F-Ab-B): C#7, E7, G7, Bb7, Dø7, Fø7, G#ø7, Bø7
 
-Named after Benjamin Boretz, whose work on pitch-class relations contributed to understanding these structures.
+# Context & Application
+Boretz regions enable analysis of chromatic seventh-chord progressions in late nineteenth-century music. When a passage stays within a single Boretz region, the voice leading oscillates between adjacent zones (balanced motion). Interregional modulation occurs when the passage crosses to a chord belonging to a different Boretz region, typically through an octatonic transformation. Named after Benjamin Boretz, whose analysis of the Tristan Prelude (1972) provided the foundational observations.
 
 # Examples
-- Tristan chord and its resolution can be understood within Boretz region framework
-- Late Wagner, Liszt, and early Schoenberg seventh-chord progressions
-- The 4-Cube Trio graph represents all Boretz region connections
+- **Tristan Prelude opening**: "The first five chords of the Tristan Prelude are single semitonal displacements of a single equal division, B-D-F-G#; we will say that they share membership in a Boretz region" (p. 170)
+- **Brunnhilde's Immolation**: Alternating V7 and ø7 chords within the E-G-A#-C# Boretz region (pp. 173-174)
+- **Chord 5 to chord 6 in Tristan**: Marks interregional modulation as a new majority complex takes over (p. 169)
 
-# Related Concepts
-- Weitzmann Region
-- Generalized Weitzmann Region (GWR)
-- Tristan Genus
-- Diminished Seventh Chord
-- Single Semitonal Displacement
-- 4-Cube Trio
+# Relationships
+## Builds Upon
+- Generalized Weitzmann region (Boretz region is the GWR for n=4, q=3)
+## Enables
+- Boretz spider (graphical representation of the region)
+- Boretz-group transformations (operations within the region)
+- Interregional modulation analysis
+## Related
+- Weitzmann region (triadic analogue: 6 triads around an augmented triad)
+- Octatonic region (bridges between adjacent Boretz regions)
+## Contrasts With
+- Weitzmann region (Boretz has 8 chords per region vs. 6; 3 regions vs. 4)
+
+# Common Errors
+- **Error**: Expecting the central diminished seventh to appear on the musical surface
+  **Correction**: The diminished seventh often has "virtual" presence, structuring the region without sounding
 
 # Common Confusions
-- Boretz regions organize seventh chords, not triads (contrast with Weitzmann regions)
-- There are only 3 Boretz regions because there are only 3 distinct diminished seventh chords
-- The central diminished seventh chord may not appear in the music while still structuring the region
-- Boretz regions concern voice-leading proximity, not functional relationships
+- **Confusion**: Thinking Boretz regions concern functional relationships
+  **Clarification**: They describe voice-leading proximity, not harmonic function
 
 # Source Reference
-Glossary, page 229; developed in Chapter 7
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 170-172.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Table 7.2 content, three-region partition, virtual presence concept. Fresh extraction adds direct quotation on second-order adjacency and interregional modulation examples.

@@ -1,57 +1,101 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "Relative (R) - Glossary Definition"
-category: technique
+slug: relative-glossary
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: glossary-definitions
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Weitzmann Regions"
 chapter_number: 4
-pdf_page: 77
-unit: null
-authors: Richard Cohn
+pdf_page: 79
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Relative relation"
+  - "Relative major/minor"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - r-transformation
+extends: []
+related:
+  - w-group-transformations
+  - l-transformation
+  - lr-chain
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Relative (R) relation?"
+  - "What distinguishes L, P, R, N, and S transformations?"
 ---
 
 # Quick Definition
-The relation between two consonant triads that share a major-third dyad, for example C major and a minor; or the transformation that produces one of these triads from the other.
+The relation between two consonant triads that share a major-third dyad (e.g., C major and a minor), or the transformation that produces one from the other, moving one voice by whole step.
 
-# Formal Definition
-R (Relative) is defined in the Glossary as "the relation between two consonant triads that share a major-third dyad, for example, C major and a minor; or the transformation that produces one of these triads from the other." The transformation is an involution, involves two semitones of voice-leading work (root moves by minor third in one direction, fifth moves by whole tone in the other), and preserves two common tones (the major-third dyad). R is one of the three W-group transformations that map triads within Weitzmann regions.
+# Core Definition
+R is defined in the Glossary as "the relation between two consonant triads that share a major-third dyad, for example, C major and a minor; or the transformation that produces one of these triads from the other" (Glossary, p. 229). R is an involution, involves 2 semitones of voice-leading work (one voice moves by whole step), and preserves 2 common tones (the major-third dyad). R combined with L generates the L/R chain traversing all 24 triads.
 
-# Construction/Recognition
-Transformation specification:
-- Input: Consonant triad
-- Output: Consonant triad sharing major-third dyad
-- Voice leading: Two voices move in opposite directions
-- Work: 2 semitones total
-- Common tones: 2 (the major-third dyad)
+# Prerequisites
+- **R transformation**: The full transformational description from Chapter 4
 
-Algebraic properties:
-- R is an involution: R(R(X)) = X
-- R is a member of the W-group (along with N and S)
-- R preserves Weitzmann region membership
-- R combined with L generates the L/R chain (24 triads)
+# Key Properties
+1. R is an involution: R(R(X)) = X
+2. R preserves the major-third dyad (2 common tones)
+3. One voice moves by whole step (2 semitones)
+4. R preserves Weitzmann region membership
+5. R corresponds to traditional relative major/minor relationship
+6. R combined with L generates the 24-triad L/R chain
 
-# Musical Context
-R corresponds to the traditional relative major/minor relationship and is the most familiar W-group transformation. In tonal music, R connects closely related keys (C major and a minor share the same key signature). In pan-triadic contexts, R participates in L/R chains that traverse all 24 consonant triads through modally alternating mediant relations.
+# Construction / Recognition
+- R(C major) = a minor: (C, E, G) -> (A, C, E)
+- R(a minor) = C major
+- R(Eb major) = c minor
+
+# Context & Application
+R is the most familiar W-group transformation, corresponding to traditional key relationships. In pan-triadic contexts, R participates in L/R chains traversing all 24 triads.
 
 # Examples
 - R(C major) = a minor
-- R(a minor) = C major
-- R(Eb major) = c minor
 - L/R chain: C - a - F - d - Bb - g - Eb - c - Ab - f - Db - bb - ...
-- Relative key relationships in tonal music
+- Standard tonal practice: relative key relationships
 
-# Related Concepts
-- W-group transformations
-- L (Leittonwechsel)
-- L/R chain
-- Weitzmann region
-- Mediant relations
-- Common tones
+# Relationships
+## Builds Upon
+- r-transformation: The full transformational description
+
+## Enables
+None directly.
+
+## Related
+- w-group-transformations: R is a W-group member
+- l-transformation: R and L generate the L/R chain
+- lr-chain: Alternating L and R traverses all 24 triads
+
+## Contrasts With
+None specified.
+
+# Common Errors
+- **Error**: Equating R's 2 common tones with proximity to L and P
+  **Correction**: R involves 2 semitones of work; L and P involve only 1
 
 # Common Confusions
-- R is not the same as P (Parallel), which connects parallel major/minor sharing a root
-- R preserves the major-third dyad, while L preserves the minor-third dyad
-- R involves 2 semitones of work (balanced motion); P involves only 1
-- The "relative" designation comes from traditional theory (relative keys share key signature)
+- **Confusion**: R is a first-rank transformation because it maximizes common tones
+  **Clarification**: From voice-leading perspective, R is second-rank (2 units); from common-tone perspective, it is first-rank
 
 # Source Reference
-Glossary, page 229
+Cohn, Richard. *Audacious Euphony*, Glossary, p. 229; Chapter 4, pp. 79-80.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: L/R chain generation, dual ranking discussion. High confidence: glossary definition.

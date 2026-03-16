@@ -1,46 +1,96 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Departure-Overshoot-Return
-category: technique
+slug: departure-overshoot-return
+
+# === CLASSIFICATION ===
+category: analysis
+subcategory: compositional strategy
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
-pdf_page: 129
-unit: null
-authors: "Richard Cohn"
+pdf_page: 144
+section: "Departure -> Return Scripts"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "subdominant overshoot"
+  - "recapitulatory overshoot"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - departure-return-script
+  - voice-leading-zones
+extends:
+  - departure-return-script
+related:
+  - schubert-bb-sonata-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What happens when a departure-return overshoots the origin?"
 ---
 
 # Quick Definition
-A variation of the departure-return script in which the return overshoots the origin, requiring a final recuperation, characteristic of many Schubert first movements where the recapitulation overshoots into subdominant territory before settling on the tonic.
+A variation of the departure-return script where the return overshoots the origin into subdominant territory, requiring a final recuperation -- characteristic of many Schubert first movements.
 
-# Formal Definition
-The departure-overshoot-return scheme extends the basic departure-return script. In the departure phase, voice leading shifts uniformly in one direction (typically downshift). The return phase reverses this direction but continues past the point of origin (overshooting into subdominant territory in functional terms, or past the original zone in voice-leading terms). A final recuperative gesture brings the progression back to the origin. This pattern is "characteristic of many of Schubert's first movements."
+# Core Definition
+The scheme extends the basic departure-return: departure (downshift), nadir, return (upshift), overshoot (past the origin zone), recuperation (back to origin). In the Schubert Bb Sonata, "the b minor theme in the recapitulation constitutes an overshoot to sum class 7" (p. 153), with the "subdominant overshoot characteristic of many of Schubert's first movements" (p. 149).
 
-# Construction/Recognition
-In terms of voice-leading zones:
-1. **Departure**: Tonic zone descends through successively lower zones
-2. **Nadir**: Lowest zone reached (e.g., development opening)
-3. **Return**: Upshift reverses the descent
-4. **Overshoot**: Return continues past the tonic zone (e.g., recapitulatory subdominant key)
-5. **Recuperation**: Final motion back to tonic zone
+# Prerequisites
+- **Departure-return script**: The base pattern being extended
+- **Voice-leading zones**: The metric enabling overshoot measurement
 
-# Musical Context
-The overshoot is a classical trope familiar from the eighteenth century, where the recapitulation of the second theme is presented in a subdominant-related key. In chromatic contexts, the overshoot may be to a zone-diametrically distant key that nonetheless functions as subdominant overshoot.
+# Key Properties
+1. Departure: tonic zone descends
+2. Nadir: lowest zone reached
+3. Return: upshift reverses descent
+4. Overshoot: continues past tonic zone (subdominant territory)
+5. Recuperation: brief final motion back to tonic
+
+# Construction / Recognition
+In the Schubert Bb Sonata (figure 6.9):
+- Departure: zones 5 -> 4 -> 2
+- Nadir: zone 1 (c# minor, development opening)
+- Return: zones 2 -> 4 -> 5
+- Overshoot: zone 7 (b minor recapitulatory theme)
+- Recuperation: back to zone 5
+
+# Context & Application
+The overshoot is a classical trope (recapitulatory subdominant key) applied to pan-triadic context. Functional interpretation is optional: zone 7 may be heard as subdominant overshoot or simply as exceeding the tonic zone.
 
 # Examples
-- Schubert, Bb major Piano Sonata, D. 960, first movement: Exposition descends zones 5 -> 4 -> 2; development reaches nadir at zone 1; return through zones 2 -> 4 -> 5; recapitulatory b minor theme overshoots to zone 7 (subdominant); recuperation to tonic
-- Figure 6.9: Three analytic underlays showing the departure-overshoot-return scheme
+- **Schubert Bb Sonata, D. 960**: b minor at zone 7 overshoots tonic zone 5 (figure 6.9)
 
-# Related Concepts
-- Departure-Return Script
-- Voice-Leading Zones
-- Palindromic Voice Leading
-- Functional Interpretation of Zones
-- Schubert Bb Sonata Analysis
+# Relationships
+## Builds Upon
+- Departure-return script
+## Enables
+- Analysis of Schubert's recapitulatory practice
+## Related
+- Schubert Bb Sonata analysis
+## Contrasts With
+- Simple departure-return (no overshoot)
+
+# Common Errors
+- **Error**: Overshoot is a structural failure
+  **Correction**: It is a deliberate compositional strategy
 
 # Common Confusions
-- The overshoot is not a failure to return; it is a deliberate structural feature
-- The overshoot zone may be interpreted functionally (subdominant) or neutrally (past the tonic zone)
-- The recuperation from overshoot is typically brief compared to the departure and return phases
+- **Confusion**: Overshoot always has subdominant function
+  **Clarification**: Functional interpretation is optional; the zonal description is more neutral
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pp. 144-145
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 144-145, 149, 153.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: five-phase structure, Schubert characteristic, functional optionality. High confidence -- clearly articulated variant.

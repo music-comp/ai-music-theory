@@ -1,67 +1,118 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Collective Exchange
-category: theory
+slug: collective-exchange
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: generalized transformations
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
 pdf_page: 156
-unit: null
-authors: "Richard Cohn"
+section: "Octatonic-group transformations"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Kollektivwechsel"
+  - "collective exchange (Karg-Elert)"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - hexatonic-pole
+extends:
+  - hexatonic-pole
+related:
+  - generalized-weitzmann-region
+  - octatonic-pole
+  - nearly-even-chord
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is collective exchange (Kollektivwechsel)?"
+  - "What structural affinity links hexatonic poles and octatonic poles?"
+  - "How does the general formula for collective exchange work?"
 ---
 
 # Quick Definition
 Collective exchange (Kollektivwechsel) is Sigfrid Karg-Elert's term for transformations where nearly all voices move by semitone in one direction while a single voice moves in the opposite direction, encompassing both hexatonic poles (triadic) and octatonic poles (tetrachordal).
 
-# Formal Definition
-**Collective exchange** (*Kollektivwechsel*) is the term coined by Sigfrid Karg-Elert in his 1930 treatise to identify the structural affinity between hexatonic poles and octatonic poles. Both transformations share the following properties:
-1. They combine inversionally related species (major/minor triads or V7/half-diminished seventh chords)
-2. They involve upshifting in all-but-one voice, offset by downshifting in the remaining voice
-3. Their combined pitch content exhausts all tones of their eponymous scale (hexatonic or octatonic)
+# Core Definition
+Collective exchange (*Kollektivwechsel*) is the term coined by Sigfrid Karg-Elert in his 1930 treatise to identify the structural affinity between hexatonic poles and octatonic poles. "Both progressions combine inversionally related species; involve upshifting in all-but-one voice, offset by downshifting in the remaining voice; and use all of the tones of their eponymous scales" (p. 172). The general formula: in a nearly even chord of cardinality n, n-1 voices move by semitone in one direction, while 1 voice moves by semitone in the opposite direction.
 
-The general formula for collective exchange: in a nearly even chord of cardinality n, n-1 voices move by semitone in one direction, while 1 voice moves by semitone in the opposite direction.
+# Prerequisites
+- **Hexatonic Pole**: The triadic instance of collective exchange
 
-# Construction/Recognition
-For triads (hexatonic pole / **H**):
+# Key Properties
+1. Combines inversionally related species (major/minor triads or V7/half-diminished seventh chords)
+2. n-1 voices move in one direction by semitone
+3. 1 voice moves in the opposite direction by semitone
+4. Combined pitch content exhausts all tones of the eponymous scale
+5. The "maverick" transformation within bridging regions
+6. Generalizes across different cardinalities (triads, seventh chords, hexachords)
+
+# Construction / Recognition
+For triads (hexatonic pole / H):
 - 2 voices move in one direction (e.g., up)
-- 1 voice moves in the opposite direction (down)
+- 1 voice moves opposite (down)
 - Combined tones = hexatonic scale (6 notes)
 
 For Tristan-genus chords (octatonic pole):
 - 3 voices move in one direction
-- 1 voice moves in the opposite direction
+- 1 voice moves opposite
 - Combined tones = octatonic scale (8 notes)
 
 For nearly even hexachords (generalized):
 - 5 voices move in one direction
-- 1 voice moves in the opposite direction
+- 1 voice moves opposite
 - Combined tones = chromatic aggregate (12 notes)
 
-# Musical Context
-Karg-Elert's identification of the affinity between hexatonic and octatonic poles was historically prescient, recognizing a structural parallel that Cohn formalizes through the generalized Weitzmann region framework. Both types of collective exchange produce the "maverick" transformation within their respective bridging regions -- the transformation with maximum voice-leading distance that nonetheless maintains the semitonal character of the system.
-
-The collective exchange is the only bridging transformation that moves all voices rather than holding some stationary.
+# Context & Application
+Karg-Elert's identification of the affinity between hexatonic and octatonic poles was historically prescient, recognizing a structural parallel that Cohn formalizes through the generalized Weitzmann region framework. Both types of collective exchange produce the "maverick" transformation within their respective bridging regions -- the transformation with maximum voice-leading distance that nonetheless maintains the semitonal character of the system. The collective exchange is the only bridging transformation that moves all voices rather than holding some stationary.
 
 # Examples
-**Hexatonic pole (figure 7.12)**: C major to f minor -- E descends to F (down), while C rises to B and G rises to Ab (up). Combined: C-E-G + Ab-B-F = hexatonic collection.
+- **Hexatonic pole (figure 7.12)**: C major to f minor -- E descends to F (down), while C rises to B and G rises to Ab (up). Combined: C-E-G + Ab-B-F = hexatonic collection
+- **Octatonic pole (figure 7.12)**: Analogous motion with four voices, three moving one direction and one opposite; combined pitch classes exhaust an octatonic collection
+- **Franck's Piano Quintet, first movement**: Cohn (1996) observes hexatonic and octatonic poles directly juxtaposed, making the structural affinity audible in a single passage
 
-**Octatonic pole (figure 7.12)**: Analogous motion with four voices, three moving one direction and one moving the opposite. The combined pitch classes exhaust an octatonic collection.
+# Relationships
+## Builds Upon
+- Hexatonic pole (the triadic instance)
 
-**Franck's Piano Quintet, first movement**: Cohn (1996) observes hexatonic and octatonic poles directly juxtaposed, making the structural affinity Karg-Elert identified audible in a single passage.
+## Enables
+- Generalized Weitzmann region theory (the framework that unifies hexatonic and octatonic systems)
+- Understanding of the structural parallel between triadic and tetrachordal chromaticism
 
-# Related Concepts
-- Hexatonic pole
-- Octatonic pole
-- Generalized Weitzmann region (GWR)
-- Karg-Elert's treatise
-- Bridging region
-- Octatonic-group transformations
-- Nearly even chord
+## Related
+- Octatonic pole (the tetrachordal instance)
+- Nearly even chord (the property that enables collective exchange)
+- Generalized Weitzmann region (the broader framework)
+
+## Contrasts With
+- S-type transformations (which hold some voices stationary, unlike collective exchange)
+
+# Common Errors
+- **Error**: Collective exchange is the same as transposition
+  **Correction**: It involves contrary motion (most voices in one direction, one in the opposite), not parallel transposition
 
 # Common Confusions
-- Collective exchange is a general concept; hexatonic pole and octatonic pole are specific instances
-- The term is Karg-Elert's (1930), not Cohn's -- it predates neo-Riemannian theory
-- Collective exchange is not the same as "collective transposition"; it involves contrary motion
-- The transformation is the "maverick" within bridging regions, unlike the more parsimonious S-type transformations
+- **Confusion**: Collective exchange is Cohn's concept
+  **Clarification**: The term is Karg-Elert's (1930), predating neo-Riemannian theory by decades
+
+- **Confusion**: Collective exchange is the most parsimonious bridging transformation
+  **Clarification**: It is the maverick (maximum work) within bridging regions, not the most parsimonious
 
 # Source Reference
-Chapter 7: Dissonance, pages 172-173
+Cohn, Richard. *Audacious Euphony*, Chapter 7, pp. 172-173, Figure 7.12.
+
+# Verification Notes
+Re-extracted from v2 card to v3.1 format. Preserved: Karg-Elert 1930 attribution, triadic/tetrachordal/hexachordal formulas, Franck Piano Quintet example. Fresh extraction adds: direct quote from p. 172, maverick characterization, generalized formula for cardinality n, v3.1 structure.

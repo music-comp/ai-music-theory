@@ -1,59 +1,108 @@
 ---
-concept: Mobius Strip Topology
-category: analysis
+# === CORE IDENTIFICATION ===
+concept: "Mobius Strip Topology"
+slug: mobius-strip-topology
+
+# === CLASSIFICATION ===
+category: representations
+subcategory: topological concepts
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Syntactic Interaction and the Convertible Tonnetz"
 chapter_number: 8
-pdf_page: 186
-unit: null
-authors: Richard Cohn
+pdf_page: 195
+section: "The Diatonic Tonnetz"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Mobius strip"
+  - "half-twist topology"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - diatonic-tonnetz
+  - syntonic-image
+extends:
+  - diatonic-tonnetz
+related:
+  - convertible-tonnetz
+  - diatonic-encapsulation
+contrasts_with:
+  - cylindrical-tonnetz
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Mobius strip topology of the diatonic Tonnetz?"
+  - "Why does the diatonic Tonnetz have a half-twist?"
 ---
 
 # Quick Definition
-The geometric shape of the diatonic Tonnetz when the pseudo-fifth (B-F) is accepted as equivalent to a perfect fifth, creating a half-twist that transforms the planar parallelogram into a continuous surface where subdominant connects directly to dominant.
+The geometric shape of the diatonic Tonnetz when the pseudo-fifth (B-F tritone) is accepted as equivalent to a perfect fifth, creating a half-twist that transforms the planar parallelogram into a continuous surface where subdominant connects directly to dominant around the backside.
 
-# Formal Definition
-The Mobius strip topology of the diatonic Tonnetz results from two stages of closure. First, syntonic images at the remote corners of the diatonic parallelogram are identified. Second, the pseudo-fifth (B-F tritone) is accepted as if it were a perfect fifth. This second closure involves fixing the DF edge, folding the BD edge so that B comes alongside F, creating a locally closed triangle representing the diminished BDF triad and globally closing the chain of triangles into a loop. Because the front side of one end attaches to the back side of the opposite end, the parallelogram transforms into a Mobius strip. Lewin (1984) prophesied this geometry: the two spaces "may coexist locally without apparent conflict; in this way the surface of a Mobius strip would locally resemble the surface of a cylinder to an ant who had not fully explored the global logic of the space."
+# Core Definition
+The Mobius strip topology results from two stages of closure. First, syntonic images at the remote corners of the diatonic parallelogram are identified. Second, the pseudo-fifth (B-F tritone) is accepted as if perfect. Since the coiling process positioned B two ranks above F on the FDB minor-third line, they can be brought into contact only by crooking the line at its center, fixing the DF edge and folding the BD edge so B comes alongside F. "The front side of one end of the strip is attached to the back side of its opposite end, transforming the planar Tonnetz into a Mobius strip" (Brower 2008, 73-74, discussed in Cohn, p. 195). Cohn calls this "the equivalent of Oedipus at the crossroads: it fulfills Lewin's prophecy in all its details" (p. 195).
 
-# Construction/Recognition
-- First closure: Syntonic comma identification (81:80 treated as unison)
-- Second closure: Pseudo-fifth acceptance (tritone B-F treated as perfect fifth)
-- Geometric operation: Half-twist when gluing opposite ends
-- Result: Continuous surface where traversal around the strip returns to starting point with inverted orientation
-- The seven diatonic triads form a continuous series of diatonic mediants (Agmon 1995)
-- Rightward arrow (S to D) continues uniformly around the backside rather than reversing across the plane
+# Prerequisites
+- **Diatonic Tonnetz**: The parallelogram that gets folded into the Mobius strip
+- **Syntonic image**: The first closure that precedes the half-twist
 
-# Musical Context
-The Mobius interpretation affects how we understand T-S-D-T:
-- Planar conception: Subdominant to dominant involves "overshooting" reversal across the plane
-- Mobius conception: Motion continues uniformly around the backside in same direction
+# Key Properties
+1. The half-twist results from accepting the pseudo-fifth (B-F) as perfect
+2. Creates a continuous surface where traversal returns with inverted orientation
+3. Seven diatonic triads form a continuous series of diatonic mediants (Agmon 1995)
+4. The rightward S-to-D arrow continues uniformly around the backside rather than reversing across the plane
+5. The new B-F edge locally closes a triangle representing the diminished BDF triad
 
-This distinction has a voice-leading correlate:
-- Planar: Fumbling student negotiates downshift from subdominant to dominant without common-tone anchor
-- Mobius: Perpetually upshifting motion reconstructs Rameau's "double emploi"
+# Construction / Recognition
+Lewin's prophetic passage (1984, 345): "The nature and logic of Riemannian tonal space are not isomorphic with the nature and logic of scale-degree space... in this way the surface of a Mobius strip would locally resemble the surface of a cylinder to an ant who had not fully explored the global logic of the space."
 
-The Mobius strip is the equivalent of "Oedipus at the crossroads" - it fulfills Lewin's prophecy in all its details.
+Two interpretations of T-S-D-T (Figure 8.6, p. 196):
+- **Planar**: Fumbling keyboard harmony student negotiates S-to-D downshift without common-tone anchor
+- **Mobius**: Perpetually upshifting motion reconstructing Rameau's *double emploi*
+
+# Context & Application
+The Mobius topology means that leftward motion (D to T to S) is entirely upshifting voice leading, and this upshift continues uniformly. The salient voice-leading properties of the diatonic Tonnetz are: (1) edge-adjacent triads differ by one unit of voice-leading work, with the mobile voice moving by minimal diatonic step; (2) directed motion corresponds to directed voice leading (p. 196).
+
+Fetis's observation about sequences becomes relevant: the pseudo-fifth's "appellative powers are neutralized by the symmetry of movement and succession" (2008 [1844], 30), and the contours of the Mobius strip "disindividuate into a strangely shaped, greased racing oval" (p. 196).
 
 # Examples
-- Brower (2008) provides the definitive account of the diatonic Tonnetz as Mobius strip
-- The T-S-D-T paradigm mapped on Figure 8.5 shows the two interpretations
-- Figure 8.6 presents the two voice leadings: (a) planar with downshift challenge, (b) Mobius with perpetual upshift
-- The closing of the chain of fifths FCGDAEB through BF creates the half-twist
+- **Figure 8.5** (p. 194): T-S-D-T on the Tonnetz showing the two interpretations
+- **Figure 8.6** (p. 196): Two voice leadings: (a) planar with S-to-D challenge, (b) Mobius with perpetual upshift
+- **The chain FCGDAEB**: Closes into a circuit when BF is accepted as a fifth
+- **Brower 2008, pp. 73-74**: Definitive account of the diatonic Tonnetz as Mobius strip
 
-# Related Concepts
-- Diatonic Tonnetz
-- Syntonic image
-- Pseudo-fifth
-- Convertible Tonnetz
-- T-S-D-T progression
-- Voice-leading work
-- Rameau's double emploi
+# Relationships
+## Builds Upon
+- Diatonic Tonnetz (the structure that receives the topology)
+- Syntonic image identification (first closure stage)
+
+## Enables
+- Convertible Tonnetz (the Mobius strip is one possible shape of the convertible model)
+- Understanding T-S-D-T as continuous rather than disjunctive motion
+
+## Related
+- Diatonic encapsulation (the Mobius strip bounds the encapsulated space)
+
+## Contrasts With
+- Cylindrical Tonnetz (toroidal topology of the chromatic Tonnetz, no half-twist)
+
+# Common Errors
+- **Error**: The Mobius strip is merely a visualization choice
+  **Correction**: It represents a genuine topological difference with analytical consequences for how S connects to D
 
 # Common Confusions
-- The Mobius strip is not merely a visualization choice; it represents a genuine topological difference with analytical consequences
-- The half-twist is not arbitrary; it results from the specific way the pseudo-fifth closes the chain
-- The Mobius strip applies to the diatonic Tonnetz; the chromatic Tonnetz has cylindrical or toroidal topology
-- "Locally resembling a cylinder" does not mean it is a cylinder; global exploration reveals the half-twist
+- **Confusion**: The Mobius strip applies to the chromatic Tonnetz
+  **Clarification**: The chromatic Tonnetz has cylindrical or toroidal topology; the Mobius strip is specific to the diatonic Tonnetz
 
 # Source Reference
-Chapter 8: Syntactic Interaction and the Convertible Tonnetz, pages 193-196
+Cohn, Richard. *Audacious Euphony*, Chapter 8, pp. 193-196. Brower 2008, pp. 73-74. Lewin 1984, p. 345.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Lewin prophecy quote, Oedipus metaphor, Rameau double emploi, Fetis sequence connection. Fresh extraction adds v3.1 structure, clearer construction steps.

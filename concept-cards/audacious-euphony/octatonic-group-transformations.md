@@ -1,70 +1,108 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Octatonic-Group Transformations
-category: technique
+slug: octatonic-group-transformations
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: tetrachordal transformations
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
-pdf_page: 156
-unit: null
-authors: Richard Cohn
+pdf_page: 172
+section: "Octatonic-group transformations"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "inter-regional transformations (tetrachordal)"
+  - "octatonic bridge transformations"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - octatonic-region
+  - boretz-region
+extends: []
+related:
+  - octatonic-pole
+  - boretz-group-transformations
+  - hexatonic-pole
+contrasts_with:
+  - boretz-group-transformations
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are the octatonic-group transformations?"
+  - "How do seventh chords move between Boretz regions?"
 ---
 
 # Quick Definition
-Octatonic-group transformations are voice-leading operations that connect Tristan-genus chords between adjacent Boretz regions, analogous to hexatonic-group transformations (L, P) connecting triads between adjacent Weitzmann regions.
+Octatonic-group transformations connect Tristan-genus chords between adjacent Boretz regions, comprising three double-semitone operations (S2, S4, S5) and the octatonic pole, analogous to hexatonic-group transformations (L, P, H) connecting triads between Weitzmann regions.
 
-# Formal Definition
-**Octatonic-group transformations** bridge adjacent Boretz regions, connecting the half-diminished seventh chords of one region with the dominant seventh chords of the neighboring region. They are the tetrachordal analogues to hexatonic transformations L and P.
+# Core Definition
+**Octatonic-group transformations** bridge adjacent Boretz regions. The four transformations are: **S2** (stationary ic2 dyad), **S4** (stationary ic4 dyad), **S5** (stationary ic5 dyad), and the **octatonic pole** (all four voices move). "Adapting from Childs's labeling protocol, these S transformations bear only a single superscript, indicating the interval classification of the stationary dyad" (p. 173). S2, S4, and S5 involve double semitone voice leading; "the octatonic transformations lack the minimal-work feature of their hexatonic analogues because their chords contain more tones. After the held dyad is accounted for, there are two voices, not one, that are left to migrate between equal divisions" (p. 173).
 
-The four octatonic-group transformations are:
-1. **S2**: Stationary interval-class 2 dyad, two voices move by semitone
-2. **S4**: Stationary interval-class 4 dyad, two voices move by semitone
-3. **S5**: Stationary interval-class 5 dyad, two voices move by semitone
-4. **Octatonic pole**: All four voices move (3+1 contrary pattern)
+# Prerequisites
+- **Octatonic region**: The bridging structure these transformations navigate
+- **Boretz region**: The regions being connected
 
-# Construction/Recognition
-Voice-leading characteristics:
-- S2, S4, S5: 2 voices move by semitone (n-2 where n=4)
-- Octatonic pole: 4 voices move (3 in one direction, 1 in opposite)
+# Key Properties
+1. S2, S4, S5: 2 voices move by semitone while 2 hold (n-2 moving voices where n=4)
+2. Octatonic pole: all 4 voices move (3+1 contrary pattern), the "maverick"
+3. Single superscript indicates interval class of stationary dyad
+4. Combined with Boretz-group transformations, produce all transpositional values (Table 7.3)
+5. Less parsimonious than hexatonic analogues (2 moving voices vs. 1)
 
-Labeling (Childs 1998):
-- Single superscript indicates stationary dyad's interval class
-- No superscript indicates which dyad moves (it's determined by the stationary dyad)
+# Construction / Recognition
+The four octatonic bridge transformations (from Figure 7.13, p. 173):
+- **S2**: Hold ic2 dyad (whole step), move two voices by semitone
+- **S4**: Hold ic4 dyad (major third), move two voices by semitone
+- **S5**: Hold ic5 dyad (perfect fourth), move two voices by semitone
+- **Octatonic pole**: No held dyad; 3 voices move one direction, 1 moves opposite
 
-Comparison to hexatonic transformations:
-- Hexatonic (triadic): n-2 = 1 moving voice (minimal work)
-- Octatonic (tetrachordal): n-2 = 2 moving voices (not minimal)
+Table 7.3 combination outcomes:
+- Each row (Boretz transformation) x column (octatonic transformation) yields a transpositional value
+- T±1, T±2, T±4, T±5 are all achievable through four distinct pairs each
 
-This is why triads have special voice-leading properties: only for n=3 do bridging transformations involve minimal (single-voice) motion.
-
-# Musical Context
-Octatonic-group transformations enable:
-- Movement between Boretz regions (modulation in tetrachordal space)
-- Directed voice-leading trajectories through 4-Cube Trio
-- Circumnavigation when combined with Boretz-group transformations
-
-Table 7.3 shows how each transpositional value (T1, T2, T4, T5) can be produced by four distinct combinations of Boretz and octatonic transformations.
+# Context & Application
+Octatonic-group transformations enable interregional modulation and, when alternated with Boretz-group transformations, enable circumnavigation of 4-Cube Trio. The specific combination chosen determines the transpositional value and voice-leading character of the resulting sequence.
 
 # Examples
-**Tristan Prelude, chords 5-6**: The progression Aø7 → C#7 bridges Boretz regions via an octatonic transformation (S2), marking the first interregional modulation.
+- **Tristan Prelude, chords 5-6**: Aø7 to C#7 bridges Boretz regions via an octatonic transformation (p. 172)
+- **Figure 7.8(b)**: T11 sequence generated by S2 (octatonic) + S3(2) (Boretz) (p. 177)
+- **Figure 7.8(c)**: T5 sequence substitutes S3(4) as Boretz transformation (p. 177)
+- **Brunnhilde's Immolation**: Octatonic bridge Eb7 to C#ø7 sustains double-semitone voice leading (pp. 173-174)
 
-**Brunnhilde's Immolation**: The consecutive upshifts Eb7 → C#ø7 → C#7 enter a new Boretz region via octatonic transformation, with the octatonic bridge sustaining double-semitone voice leading.
+# Relationships
+## Builds Upon
+- Octatonic region (the bridging context)
+- Childs 1998 (labeling system)
+## Enables
+- Circumnavigation of 4-Cube Trio
+- Sequential analysis with transformation-class substitutions
+## Related
+- Hexatonic-group transformations (triadic analogue: L, P with minimal work)
+- Octatonic pole (the maverick transformation within this group)
+## Contrasts With
+- Boretz-group transformations (intra-regional vs. inter-regional)
 
-**Figure 7.8(b) and (c)**: Sequential templates using octatonic transformations in alternation with Boretz transformations to generate T11 and T5 sequences.
-
-# Related Concepts
-- Octatonic region
-- Octatonic pole
-- Hexatonic-group transformations (triadic analogue)
-- Boretz-group transformations
-- 4-Cube Trio
-- Voice-leading zone
-- Transformation class
+# Common Errors
+- **Error**: Expecting octatonic transformations to have minimal (single-voice) work like L and P
+  **Correction**: n-2 = 2 moving voices for tetrachords; minimal work in bridging is unique to n=3 (triads)
 
 # Common Confusions
-- Octatonic transformations bridge regions; Boretz transformations operate within regions
-- S2, S4, S5 involve 2 moving voices, not 1 (less parsimonious than hexatonic L and P)
-- The octatonic pole is the "maverick" involving all 4 voices (like hexatonic pole H)
-- Superscripts indicate stationary interval class, not moving interval class
+- **Confusion**: Thinking the single superscript indicates the moving dyad
+  **Clarification**: The superscript indicates the *stationary* dyad's interval class; the moving voices are determined by what remains
 
 # Source Reference
-Chapter 7: Dissonance, pages 172-173
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 172-173.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: four transformation definitions, Table 7.3 summary. Fresh extraction adds direct quotation on why octatonic bridges lack minimal work, and clarifies labeling protocol.

@@ -1,53 +1,100 @@
 ---
-concept: Tonnetz Weitzmann Representation
-category: analysis
+# === CORE IDENTIFICATION ===
+concept: "Tonnetz: Weitzmann Region Representation"
+slug: tonnetz-weitzmann-representation
+
+# === CLASSIFICATION ===
+category: representations
+subcategory: tonnetz-models
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Weitzmann Regions"
 chapter_number: 4
-pdf_page: 77
-unit: null
-authors: Richard Cohn
+pdf_page: 83
+section: "Weitzmann Transformations and N/R Cycles"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Tonnetz Weitzmann depictions"
+  - "Stalk and leaves Tonnetz"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - weitzmann-region
+  - tonnetz-representation
+extends: []
+related:
+  - tonnetz-distance-measures
+  - tonnetz-defense
+  - r-transformation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How is a Weitzmann region depicted on the Tonnetz?"
+  - "Why does R appear misleadingly close on the Tonnetz?"
 ---
 
 # Quick Definition
-Multiple ways of representing a Weitzmann region on the Tonnetz, ranging from a simple line (stalk with leaves) to an expanded parallelogram that correctly represents voice-leading distances.
+Three ways of depicting a Weitzmann region on the Tonnetz: as a stalk with leaves, with transformational arrows, and as an expanded parallelogram that correctly represents voice-leading distances.
 
-# Formal Definition
-A Weitzmann region can be depicted on the Tonnetz in three ways (Figure 4.6):
-(a) Stalk with leaves: The augmented-triad axis appears as a thickened line (stalk), with six consonant triads extending as leaves
-(b) Tonnetz with arrows: Transformational arrows show the five progressions from C major, four passing through vertices, one (R) crossing an edge
-(c) Expanded parallelogram: The augmented triad becomes a two-dimensional polygon with area, making all voice-leading distances "true"
+# Core Definition
+Figure 4.6 presents three depictions (p. 83). In (a), "the structure resembles a stalk with six leaves. The thickening of the stalk enhances the presence of the augmented triad as an entity." In (b), transformational arrows model the five progressions from C major: "four of the arrows pass through a vertex... The fifth arrow, labeled R, passes across an edge." In (c), "expanding the stalk into the gray parallelogram" makes all voice-leading distances "true" by giving the augmented triad "area conveying its status as a surface in its own right" (p. 83).
 
-# Construction/Recognition
-On the uninflected Tonnetz:
-- R appears to cover the same distance as L and P (edge-crossing)
-- N and S pass through vertices (corners)
-- This creates a false impression that R is closer than N and S
+# Prerequisites
+- **Weitzmann region**: The structure being represented
+- **Tonnetz representation**: Basic understanding of the Tonnetz graph
 
-On the expanded Tonnetz (Figure 4.6c):
-- The augmented triad axis becomes a parallelogram with area
-- All Weitzmann transformations visually require two steps through the augmented region
-- Voice-leading distances align with fused-triad graphs
+# Key Properties
+1. The uninflected Tonnetz creates an illusion that R involves less distance than N and S
+2. The expanded Tonnetz (parallelogram) corrects this by giving the augmented triad spatial extent
+3. The choice of representation reflects theoretical priorities (common-tone vs. voice-leading)
+4. The expanded version aligns with the hallway metaphor and with fused-triad graphs
 
-# Musical Context
-The representation choice reflects theoretical priorities. The uninflected Tonnetz privileges common-tone counting (where R joins L and P at first rank). The expanded version privileges voice-leading work (where R joins N and S at second rank). The expanded Tonnetz also relates to the hallway metaphor where the augmented triad is a space to be traversed.
+# Construction / Recognition
+Three depiction types:
+- **(a) Stalk with leaves**: Augmented triad as thickened line, consonant triads as leaves
+- **(b) Arrows**: Transformational labels on connections from a given triad
+- **(c) Parallelogram**: Augmented triad as two-dimensional polygon with area
+
+# Context & Application
+The expanded Tonnetz representation resolves the tension between common-tone and voice-leading measures. When the augmented triad is treated as an object with area, "distances on the Tonnetz align with those on the fused-triad graphs" and "the discrepancies that Tymoczko identifies are thus neutralized" (p. 85).
 
 # Examples
-- Figure 4.6(a): Stalk-and-leaves depiction showing augmented triad as thickened axis
-- Figure 4.6(b): Transformational arrows from C major to five other regional triads
-- Figure 4.6(c): Expanded parallelogram where augmented triad has area equal to its status as musical object
+**Figure 4.6** (p. 83): Three depictions side by side.
+**R illusion** (p. 83): "Considering the augmented-triad stalk as an object dispels that illusion" that R is closer than N and S.
 
-# Related Concepts
-- Tonnetz
-- Weitzmann Region Structure
-- Voice-Leading Work
-- R Transformation
-- Common-Tone Relations
+# Relationships
+## Builds Upon
+- weitzmann-region: The structure being represented
+
+## Enables
+- tonnetz-defense: The expanded representation resolves key criticisms
+
+## Related
+- tonnetz-distance-measures: The three measurement methods that motivate different representations
+- r-transformation: R's ambiguous status is clarified by the expanded representation
+
+## Contrasts With
+None specified.
+
+# Common Errors
+- **Error**: Using the uninflected Tonnetz and concluding R is closer than N and S
+  **Correction**: The expanded Tonnetz shows all Weitzmann transformations require equal work
 
 # Common Confusions
-- The uninflected Tonnetz creates an illusion that R is closer than N and S
-- The expanded version corrects this by giving the augmented triad spatial extent
-- The choice of representation depends on whether one privileges common-tones or voice-leading work
+- **Confusion**: One Tonnetz representation is "correct"
+  **Clarification**: Each captures different aspects; the choice depends on analytical goals
 
 # Source Reference
-Chapter 4: Weitzmann Regions, pages 83-86, Figure 4.6
+Cohn, Richard. *Audacious Euphony*, Chapter 4: Weitzmann Regions, pp. 83-86 (Figure 4.6).
+
+# Verification Notes
+Re-extracted from v2 card; preserved: three depiction types, R illusion discussion, Tymoczko discrepancy neutralization. High confidence: well-illustrated in source.

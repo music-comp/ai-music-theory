@@ -1,73 +1,102 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Mystic Chord
-category: theory
+slug: mystic-chord
+
+# === CLASSIFICATION ===
+category: dissonance
+subcategory: hexachordal systems
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
-pdf_page: 156
-unit: null
-authors: Richard Cohn
+pdf_page: 183
+section: "Scriabin's Mystic Species and Generalized Weitzmann Regions"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "chord of the pleroma"
+  - "Forte class 6-34"
+  - "prime form [013579]"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - generalized-weitzmann-region
+extends: []
+related:
+  - wozzeck-chord
+  - scriabin-analysis
+  - spoiler-tone
+contrasts_with:
+  - wozzeck-chord
+  - tristan-genus
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the mystic chord and how does it relate to nearly even chord theory?"
+  - "How does the GWR concept extend to six-note chords?"
 ---
 
 # Quick Definition
-The mystic chord is Scriabin's characteristic six-note sonority, a nearly even hexachord formed by upward semitonal displacement from a whole-tone scale, analyzed by Cohn as demonstrating the limits of extending voice-leading parsimony to larger chord cardinalities.
+The mystic chord is Scriabin's characteristic six-note sonority (Forte class 6-34, [013579]), a nearly even hexachord formed by upward semitonal displacement from a whole-tone scale, demonstrating how GWR principles extend to larger cardinalities with diminishing voice-leading efficiency.
 
-# Formal Definition
-The **mystic chord** (Scriabin's "chord of the pleroma") is a nearly even hexachord belonging to Forte-class 6-34, prime form [013579]. It is formed by:
-- Taking a whole-tone scale (perfectly even hexachord)
-- Displacing one tone upward by semitone
+# Core Definition
+The **mystic chord** is a "nearly even six-tone chord species, Forte-class 6-34 with prime form [013579], whose members minimally perturb one of the two whole-tone scales" (p. 183). It is formed by displacing one tone of a whole-tone scale upward by semitone -- the upshifting species of the hexachordal GWR. James Baker (1986, 129) calls Scriabin's *Feuillet d'album*, Op. 58, "a study of the properties of 6-34, with which Scriabin was then preoccupied" (p. 184). The chord demonstrates both the extension and the limits of the GWR framework: while any two chords in the same hexachordal GWR are 2 voice-leading units apart (as always), bridging between GWRs would require 4 moving voices (n-2 = 4), making such progressions impractical.
 
-The mystic chord relates to its whole-tone "core" in the same way that minor triads relate to augmented triads, or half-diminished seventh chords relate to diminished seventh chords - through upward semitonal displacement.
+# Prerequisites
+- **Generalized Weitzmann region**: The theoretical framework placing the mystic chord in context
 
-# Construction/Recognition
-Structure:
-- Whole-tone scale: perfectly even, divides octave into six equal parts
-- Mystic chord: one tone raised by semitone from whole-tone
-- Wozzeck chord: one tone lowered by semitone from whole-tone
+# Key Properties
+1. Formed by upward semitonal displacement of one whole-tone scale tone
+2. Forte class 6-34, prime form [013579]
+3. Same set class as the Wozzeck chord (related by inversion)
+4. Two whole-tone cores yield two hexachordal GWRs, each with 6 mystic + 6 Wozzeck chords
+5. Intra-regional motion: always 2 voice-leading units (as with triads and seventh chords)
+6. Inter-regional bridging would require 4 moving voices -- impractically unparsimonious
 
-Generalized Weitzmann Region (GWR) for n=6:
-- Core: whole-tone scale (2 exist)
-- Upshifters: 6 mystic chords (per whole-tone core)
-- Downshifters: 6 Wozzeck chords (per whole-tone core)
-- Total: 12 nearly even hexachords per GWR
+# Construction / Recognition
+- Whole-tone scale (perfectly even): e.g., C-D-E-F#-G#-A#
+- Raise one tone by semitone: e.g., D# replaces D to yield C-D#-E-F#-G#-A#
+- The displaced tone is the "spoiler" (applying Boretz's concept to hexachords)
+- Wozzeck chord: lower one tone by semitone (downshifting species)
 
-Voice-leading within hexachordal GWR:
-- Any two chords are 2 voice-leading units apart (as always)
-- Bridging would require n-2 = 4 moving voices (very unparsimonious)
-
-# Musical Context
-Scriabin's mystic chord exemplifies:
-- The extension of nearly even chord concepts beyond triads and seventh chords
-- The practical limits of voice-leading parsimony theory
-- How larger cardinalities lose the special efficiency of triads
-
-The chord is historically significant as:
-- A signature sonority of Scriabin's late period
-- A departure point for atonal harmony
-- A subject of extensive theoretical investigation
+# Context & Application
+The mystic chord analysis demonstrates the limits of extending voice-leading parsimony theory to larger cardinalities. "Whether or not some past composer has made, or some future composer could make, interesting music with such routines is an open question. Even were the question closed with a resounding no, the exploration is still worthwhile for the light that it sheds on the special capacities of triads" (p. 185).
 
 # Examples
-**Scriabin's Feuillet d'Album, Op. 58**: Baker (1986) calls this piece "a study of the properties of 6-34, with which Scriabin was then preoccupied." Three transpositions of the mystic chord open the first three phrases. Each differs from the whole-tone collection by one "spoiler" tone:
-- First chord: D# spoils (substitutes for D)
-- Second chord: F spoils (after D# recuperates)
-- Third chord: C# spoils (after F recuperates)
+- **Scriabin's Feuillet d'Album, Op. 58 (1910)**: Three transpositions of the mystic chord open the first three phrases. First chord: D# spoils (substitutes for D). Second chord: D# recuperated in bass, E to F becomes new spoiler. Third chord: F recuperated, C# becomes new spoiler. "Scriabin makes these idealized voice leadings salient through registral transfers and motivic play" (p. 184)
 
-Scriabin makes voice-leading salient through registral transfers and motivic exchanges.
+# Relationships
+## Builds Upon
+- Generalized Weitzmann region (the GWR for n=6)
+- Whole-tone scale (the perfectly even core)
+## Enables
+- Understanding limits of voice-leading parsimony theory
+- Appreciation of triads' unique voice-leading efficiency
+## Related
+- Wozzeck chord (the downshifting counterpart, same set class)
+- Scriabin analysis (the analytical application)
+## Contrasts With
+- Wozzeck chord (upward vs. downward displacement)
+- Tristan genus (tetrachordal: more practical; hexachordal: less practical)
 
-# Related Concepts
-- Wozzeck chord
-- Whole-tone scale
-- Nearly even chord
-- Generalized Weitzmann region
-- Spoiler tone
-- Scriabin analysis
-- Forte set class 6-34
+# Common Errors
+- **Error**: Classifying the mystic chord as a Tristan-genus chord
+  **Correction**: It is a hexachord (6 notes), not a tetrachord (4 notes); it belongs to a different GWR level
 
 # Common Confusions
-- The mystic chord is NOT a Tristan-genus chord (it's a hexachord, not a tetrachord)
-- "Mystic" is Scriabin's term; the theoretical significance is its nearly even structure
-- The chord's voice-leading properties are less useful than triads' due to large n
-- Bridging between mystic-chord GWRs would be impractical (4 moving voices)
+- **Confusion**: Thinking the mystic chord's voice-leading properties are as useful as triads'
+  **Clarification**: Bridging between hexachordal GWRs requires 4 moving voices, making the system far less practical than triadic or tetrachordal voice leading
 
 # Source Reference
-Chapter 7: Dissonance, pages 183-186
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 183-186.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Baker quotation, Feuillet d'Album analysis, construction details. Fresh extraction adds quotation on "special capacities of triads" and clearer bridging impracticality explanation.

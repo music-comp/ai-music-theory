@@ -1,62 +1,118 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Homophonous Diamorph
-category: theory
+slug: homophonous-diamorph
+
+# === CLASSIFICATION ===
+category: neo-riemannian-theory
+subcategory: theoretical-framework
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
-chapter: "Double Syntax and the Soft Revolution"
-chapter_number: 9
-pdf_page: 212
-unit: null
-authors: Richard Cohn
+source_slug: audacious-euphony
+authors: "Richard Cohn"
+chapter: "Hexatonic Cycles"
+chapter_number: 2
+pdf_page: 35
+section: "Triads Are Homophonous Diamorphs"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "dual-function triad"
+  - "dual-system element"
+  - "cognate term"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - near-evenness
+  - consonant-triad
+  - triads-second-nature
+extends: []
+related:
+  - overdetermination
+  - classical-versus-romantic-syntax
+  - pan-triadic-syntax
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a homophonous diamorph?"
+  - "Why can the same triads participate in two different syntactic systems?"
+  - "How does the consonant triad function as a homophonous diamorph?"
 ---
 
 # Quick Definition
-A sound that has meanings or functions in two distinct systems - in linguistics, a word with similar form and meaning in two languages that facilitates code switching; in music, the consonant triad as object functioning in both diatonic and chromatic syntax.
+One sound, two forms: the consonant triad as an object with two independent syntactic identities -- acoustic consonance (enabling diatonic syntax) and near evenness (enabling pan-triadic syntax) -- allowing it to function seamlessly in both systems.
 
-# Formal Definition
-A homophonous diamorph (from Muysken's "congruent lexicalization") is a cognate term existing in two languages with similar form and meaning. In code switching, such terms "cause, or at least facilitate, a codeswitch from one language to the other" (Broersma and de Bot 2006). Their function resembles pivot chords in modulation theory: "a dual-language zone intercedes between language 1 and language 2, so that 'it is very possible to know that a definite codeswitch has occurred even when we are unable to say at what point it occurred'" (Woolard 1998).
+# Core Definition
+"Identifying the triad as an optimal voice-leading structure by virtue of its near evenness does not detract from its status as an optimal acoustic structure by virtue of its consonance. What it suggests is that the triad is a homophonous diamorph: one sound, two forms" (Cohn, p. 59). The term is "appropriated from linguistic theories of code switching (Muysken 2000, 123)" (p. 59, footnote 22). In linguistics, cognate terms existing in two languages "cause, or at least facilitate, a codeswitch from one language to the other." In music, the consonant triad is the paradigmatic homophonous diamorph: identical sonic surface, dual syntactic function. "There are two distinct, independent reasons for selecting major and minor triads as primary structures on which to build a musical syntax" (p. 59). The Glossary defines it as "A sound that has meanings or functions in two distinct systems" (p. 229).
 
-In music, the consonant triad is the paradigmatic homophonous diamorph: identical sound, dual syntactic function. As acoustic consonance, it functions within diatonic tonality's hierarchies. As nearly even chord, it functions within chromatic voice-leading space. The triad's ability to operate in both systems smooths transitions between them.
+# Prerequisites
+- **near-evenness** — One of the two "forms" (enabling pan-triadic syntax)
+- **consonant-triad** — The object that is the homophonous diamorph
+- **triads-second-nature** — The concept that triads have two distinct natures
 
-# Construction/Recognition
-Properties making the triad a homophonous diamorph:
-1. Identical sonic surface in both syntactic interpretations
-2. Distinct functional meanings: root-indexing consonance vs. voice-leading optimizer
-3. Enables "fuzzy" boundaries between syntactic zones
-4. Performs pivot-chord-like role in syntactic modulation
+# Key Properties
+1. The triad has two independent properties: consonance and near evenness
+2. Each property generates a distinct syntax (diatonic and pan-triadic)
+3. "Even in some alternative universe where major and minor triads were acoustically dissonant, there would still be a musical motivation for inventing them" (p. 59)
+4. The term comes from linguistic code-switching theory (Muysken 2000)
+5. The dual identity allows triads to function as pivot points between syntactic systems
+6. Multiple items are homophonous diamorphs: triads, dominant sevenths, diatonic scales, the chromatic gamut (elaborated in Ch. 9)
+7. "The entire process is cognitively opaque, transacted beneath the horizon of awareness" (Ch. 9, p. 221)
 
-The role of overdetermination:
-- "It is overdetermined, functioning both with respect to the language that precedes it and that which follows"
-- Multiple satisfying conditions simultaneously: acoustic and voice-leading
-- "The entire process is cognitively opaque, transacted beneath the horizon of awareness"
+# Construction / Recognition
+Tymoczko's Deist parable (p. 59): If God offered you chords optimized for voice-leading efficiency, you'd get triads; if offered chords optimized for consonance, you'd also get triads. "He would hand you *the very same chords*, no matter which choice you made."
 
-# Musical Context
-The triad as homophonous diamorph explains:
-- Why syntactic transitions feel smooth rather than jarring
-- How the same chord can participate in diatonic function and chromatic transformation
-- Why the double syntax hypothesis is plausible despite seeming paradoxical
-- How 19th-century composers could exploit both syntaxes within single phrases
+The triad's diamorphic properties:
+- Same sound in both systems
+- In diatonic syntax: hierarchically subordinate to tonic, carrying function
+- In chromatic syntax: voice-leading optimizer, equidistant from neighbors
 
-The diatonic scale is also a homophonous diamorph: "evidently originated at a moment when modulation was inconceivable" yet was "preadapted to serve as a modulatory vehicle" in chromatic space due to its unique multiplicity property.
+# Context & Application
+The homophonous diamorph concept explains how nineteenth-century music can alternate between or overlay two syntactic systems without changing its harmonic vocabulary. The triad's dual identity is like organs that serve multiple functions: "Mouths are for eating, talking, and breathing; ears serve auditory and vestibular functions" (p. 60). The concept extends beyond triads: the diatonic scale is also a homophonous diamorph ("evidently originated at a moment when modulation was inconceivable" yet was "preadapted to serve as a modulatory vehicle"), and the 12-tone chromatic gamut is overdetermined at a still higher level (Ch. 9, pp. 230-231).
 
 # Examples
-- Every consonant triad is a homophonous diamorph between diatonic and chromatic syntax
-- The C#/Db minor triad in Schubert's Scherzo (m. 123): Db minor relative to f minor's diatonic capsule; C# minor relative to d minor's diatonic capsule; single entity in chromatic space equidistant from F and A
-- Tristan-genus chords similarly function as homophonous diamorphs (appellative power in diatonic syntax, voice-leading object in chromatic syntax)
+**Example 1** (p. 59): Tymoczko's Deist parable about God offering optimized chords in two suitcases — both contain the same objects.
 
-# Related Concepts
-- Code switching
-- Double syntax hypothesis
-- Congruent lexicalization
-- Overdetermination
-- Cognitive opacity
-- Convertible Tonnetz
-- Preadaptation
+**Example 2** (p. 60): Cohn will "continue to refer to them collectively as consonant triads, even though we are more interested in their extensionally identical but intensionally distinct status as nearly even trichords."
+
+**Example 3** (Ch. 9, pp. 214-216): C#/Db minor in Schubert's Scherzo functions in f minor's diatonic capsule and d minor's diatonic capsule; single entity in chromatic space equidistant from F and A.
+
+# Relationships
+## Builds Upon
+- **near-evenness** — The voice-leading "form" of the diamorph
+- **consonant-triad** — The acoustic "form" of the diamorph
+- **triads-second-nature** — The dual nature that makes the diamorph possible
+
+## Enables
+- Smooth syntactic transitions between diatonic and chromatic syntax (Ch. 8-9)
+
+## Related
+- **overdetermination** — The general phenomenon of which the homophonous diamorph is an instance
+- **classical-versus-romantic-syntax** — The two syntactic systems between which the diamorph operates
+- **pan-triadic-syntax** — One of the two syntaxes the diamorph participates in
+
+## Contrasts With
+No direct contrasts within this source.
+
+# Common Errors
+- **Error**: Thinking the two identities are in conflict or mutually exclusive
+  **Correction**: They are independent and complementary; the coincidence is an instance of overdetermination
 
 # Common Confusions
-- Homophonous diamorphs are not ambiguous chords; they have determinate meaning in each syntax
-- The dual function is not alternating but potentially simultaneous
-- The term comes from linguistics (Muysken) but applies to any dual-system element
-- "Diamorph" indicates two forms/meanings, not morphological structure
+- **Confusion**: Thinking "homophonous diamorph" means the triad is ambiguous
+  **Clarification**: The triad has determinate meaning in each syntax; the dual identity enables smooth transitions, not confusion
+- **Confusion**: "Diamorph" implies physical transformation
+  **Clarification**: It indicates two functional forms/meanings of a single sound, not morphological change
 
 # Source Reference
-Chapter 9: Double Syntax and the Soft Revolution, pages 220-221; Glossary page 229
+Chapter 2: Hexatonic Cycles, pp. 59-60. Section "Triads Are Homophonous Diamorphs." The term is from Muysken 2000. Elaborated in Chapter 9, pp. 220-221, 229-231.
+
+# Verification Notes
+- Re-extracted from v2 card (which was assigned to Ch. 9); reassigned to Ch. 2 where the concept is introduced. Preserved from old card: the Schubert Scherzo example, the diatonic scale as diamorph, the cognitive opacity point, the three-level extension. Fresh extraction adds the Ch. 2 framing with Tymoczko parable and the body-organ analogy
+- Confidence: HIGH — explicitly named and defined in a dedicated section with Glossary entry

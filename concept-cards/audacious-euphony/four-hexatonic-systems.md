@@ -1,68 +1,110 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Four Hexatonic Systems
-category: analysis
+slug: four-hexatonic-systems
+
+# === CLASSIFICATION ===
+category: triadic-systems
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Hexatonic Cycles"
 chapter_number: 2
 pdf_page: 35
-unit: null
-authors: Richard Cohn
+section: "A Minimal-Work Model of the Triadic Universe"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "hexatonic partition"
+  - "Northern/Southern/Eastern/Western systems"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - hexatonic-cycle
+extends: []
+related:
+  - twenty-four-consonant-triads
+  - augmented-triad-as-axis
+  - tonnetz-representation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What distinguishes the four hexatonic systems from each other?"
+  - "How do the four hexatonic systems partition all 24 triads?"
 ---
 
 # Quick Definition
-The four hexatonic systems are distinct, non-overlapping groups of six triads each that together partition all twenty-four major and minor triads, named Northern, Southern, Eastern, and Western after their positions on the Tonnetz.
+The four hexatonic cycles that together partition all 24 consonant triads into non-overlapping groups of six, each centered on a distinct augmented triad, conventionally named Northern, Southern, Eastern, and Western.
 
-# Formal Definition
-Each hexatonic system contains six consonant triads whose roots form two interlocking augmented triads, one for the three major triads and one for the three minor triads. The systems are closed under P and L transformations, meaning any sequence of these operations on a triad within a system produces another triad in the same system. Movement between systems requires different transformations (such as R).
+# Core Definition
+"Together, the four cycles partition the twenty-four consonant triads" (Cohn, p. 36). Each system contains 3 major and 3 minor triads whose roots form augmented triads. The systems are closed under P and L transformations. "Because they relate to each other by transposition, internal features proper to one are proper to all" (p. 36). Two triads are in the same cycle "if they have the same roots, or if their roots are four semitones apart" (p. 36).
 
-# Construction/Recognition
-The Four Systems:
+# Prerequisites
+- **hexatonic-cycle** — Each of the four systems is a hexatonic cycle
 
-**Northern System** (C-E-Ab roots):
-- Major triads: C, E, Ab
-- Minor triads: c, e, ab (enharmonically g#)
-- Augmented triad at center: C-E-G#
+# Key Properties
+1. Each system contains exactly 6 triads (3 major, 3 minor)
+2. The four systems exhaust all 24 consonant triads with no overlap
+3. Each system is centered on one of the four augmented triads
+4. The systems are transpositionally related (related by T1)
+5. Internal features of one system apply to all
+6. Closed under P and L transformations
 
-**Southern System** (Db-F-A roots):
-- Major triads: Db, F, A
-- Minor triads: db (c#), f, a
-- Augmented triad at center: Db-F-A
+# Construction / Recognition
+**Northern** (C-E-Ab roots): C, c, E, e, Ab, ab
+**Southern** (Db-F-A roots): Db, db/c#, F, f, A, a
+**Eastern** (D-F#-Bb roots): D, d, F#/Gb, f#, Bb, bb
+**Western** (Eb-G-B roots): Eb, eb, G, g, B, b
 
-**Eastern System** (D-F#-Bb roots):
-- Major triads: D, F# (Gb), Bb
-- Minor triads: d, f#, bb
-- Augmented triad at center: D-F#-A# (Bb)
+Each system's roots form an augmented triad at its center:
+- Northern: C-E-G# augmented
+- Southern: Db-F-A augmented
+- Eastern: D-F#-Bb augmented
+- Western: Eb-G-B augmented
 
-**Western System** (Eb-G-B roots):
-- Major triads: Eb, G, B
-- Minor triads: eb, g, b
-- Augmented triad at center: Eb-G-B
-
-# Musical Context
-The four hexatonic systems provide a framework for analyzing chromatic progressions that operate outside diatonic tonality. When a passage remains within a single hexatonic system, it creates a characteristic tonal suspension or "trance" state. Transitions between systems represent significant harmonic events that can be tracked analytically.
+# Context & Application
+The four systems provide a framework for analyzing chromatic progressions. When a passage remains within a single system, it creates a characteristic tonal suspension. Transitions between systems represent significant harmonic events. "Connections among the cycles will emerge as a central project of chapters 5 and 6" (p. 36).
 
 # Examples
-From the text (Figure 2.1, p. 37):
-- The graph shows all twenty-four triads organized into four cycles
-- Each cycle forms a closed hexagonal pattern
-- Adjacent triads in each cycle differ by one semitone in one voice
+**Example 1** (Fig. 2.1, p. 36): The graph shows all 24 triads organized into four cycles, each forming a closed hexagonal pattern.
 
-Mozart K. 543 finale (mm. 109-126) traverses the Northern hexatonic system:
-Ab major - ab/g# minor - E major - e minor - C major - c minor
+**Example 2** (pp. 43-45): Mozart K. 543 finale traverses the Northern system. Haydn Symphony 98 and Beethoven's "Spring" Sonata traverse other systems.
 
-# Related Concepts
-- Hexatonic Cycle
-- Augmented Triad
-- L Transformation
-- P Transformation
-- Tonnetz
-- Near Evenness
-- Voice-Leading Zone
+# Relationships
+## Builds Upon
+- **hexatonic-cycle** — Each system is a hexatonic cycle
+
+## Enables
+- **tonnetz-representation** — Each system forms a strip on the Tonnetz
+- **augmented-triad-as-axis** — Each system is centered on an augmented triad
+
+## Related
+- **twenty-four-consonant-triads** — The four systems partition all 24
+
+## Contrasts With
+No direct contrasts within this source.
+
+# Common Errors
+- **Error**: Assuming the directional names (Northern, etc.) have acoustic or tonal significance
+  **Correction**: The names are conventional labels based on Tonnetz orientation
 
 # Common Confusions
-- The directional names (Northern, Southern, Eastern, Western) are conventional labels based on Tonnetz orientation, not absolute designations
-- Each system contains ONE augmented triad at its center, not two; the major and minor triads cluster around this central point
-- The systems are transpositionally related to each other by semitone, so internal features of one apply to all
+- **Confusion**: Thinking each system contains two augmented triads
+  **Clarification**: Each system has one augmented triad at its center; the six consonant triads cluster around it
+- **Confusion**: Assuming triads can belong to multiple systems
+  **Clarification**: The four systems are non-overlapping; each consonant triad belongs to exactly one
 
 # Source Reference
-Chapter 2: Hexatonic Cycles, pp. 36-37
+Chapter 2: Hexatonic Cycles, pp. 36-37. Figure 2.1, p. 36.
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: the complete listing of all four systems, the augmented triad centers
+- Confidence: HIGH — the four systems are explicitly enumerated in Figure 2.1

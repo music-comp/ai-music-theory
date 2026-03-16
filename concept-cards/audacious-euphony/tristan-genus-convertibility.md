@@ -1,61 +1,106 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tristan Genus Convertibility
-category: theory
+slug: tristan-genus-convertibility
+
+# === CLASSIFICATION ===
+category: neo-riemannian-theory
+subcategory: convertible Tonnetz
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Syntactic Interaction and the Convertible Tonnetz"
 chapter_number: 8
-pdf_page: 186
-unit: null
-authors: Richard Cohn
+pdf_page: 207
+section: "The Convertible Tonnetz"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "tetrachordal convertibility"
+  - "seventh-chord double syntax"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - convertible-tonnetz
+  - tristan-genus
+  - boretz-region
+extends:
+  - convertible-tonnetz
+related:
+  - double-syntax-hypothesis
+  - near-evenness
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Does the convertible Tonnetz apply to seventh chords?"
+  - "How do Tristan-genus chords participate in double syntax?"
 ---
 
 # Quick Definition
-The extension of convertibility from triads to Tristan-genus seventh chords (dominant and half-diminished), which similarly can switch between chromatic voice-leading syntax and diatonic functional syntax, though their position cannot be directly traced on the two-dimensional Tonnetz.
+The extension of convertibility from triads to Tristan-genus seventh chords (dominant and half-diminished), which can similarly switch between chromatic voice-leading syntax and diatonic functional syntax, though their position cannot be directly traced on the two-dimensional Tonnetz.
 
-# Formal Definition
-Although the convertible Tonnetz is specific to the nearly even trichord, the process of convertibility is also pertinent to the Tristan genus (dominant seventh and half-diminished seventh chords). These tetrachords are nearly even in chromatic 12-space and participate both in pan-triadic voice-leading and in classical tonal syntax. The dimensional limitations of the Tonnetz prevent direct translation from trichordal to tetrachordal cases, but this is a "heuristic barrier, not an ontological one." If Tristan-genus chords could be assigned distinct Tonnetz locations, or if their position on Gollin's (1998) tetrahedron were legible on the planar page, their participation in voice-leading systems and potential for diatonic reversion could be traced as in the triadic case.
+# Core Definition
+Although the convertible Tonnetz is specific to the nearly even trichord, "the process of convertibility that it models is also pertinent to that other nearly even chord-class that doubles as a participant in classical syntax: the Tristan genus" (p. 207). The dimensional limitations of the Tonnetz prevent direct translation from trichordal to tetrachordal cases, "But this is a heuristic barrier, not an ontological one" (p. 207). If Tristan-genus chords could be assigned distinct Tonnetz locations, or if their position on Gollin's (1998) tetrahedron were legible on the planar page, their convertibility could be traced as in the triadic case.
 
-# Construction/Recognition
-Properties enabling convertibility:
-- Nearly even status: Tristan-genus chords minimally perturb the diminished seventh chord
-- Parsimonious voice leading: Single semitonal displacement between related chords
-- Diatonic function: Dominant sevenths have appellative power; half-diminished sevenths serve as ii7 or vii-half-dim
-- Dual syntax: Can operate under chromatic voice-leading logic or diatonic functional logic
+# Prerequisites
+- **Convertible Tonnetz**: The triadic model being extended
+- **Tristan genus**: The class of chords (dominant 7th, half-diminished 7th) to which convertibility extends
+- **Boretz region**: The chromatic grouping structure for Tristan-genus chords
 
-The metaphorical conduit:
-- "In order to imagine this participation, we need only contemplate the triadic case and boot it through the metaphorical conduit"
-- The process is parallel even if the geometric representation differs
+# Key Properties
+1. Tristan-genus chords are nearly even in chromatic 12-space
+2. They participate in both parsimonious voice-leading and diatonic functional syntax
+3. The 2D Tonnetz cannot directly represent them (heuristic, not ontological barrier)
+4. Gollin's (1998) tetrahedron provides the analogous geometric representation
+5. The conversion process parallels triadic convertibility exactly
 
-# Musical Context
-Examples from earlier chapters demonstrate convertibility:
-- Brunnhilde's Immolation: C#7 chords "hearken to their appellative properties after ignoring them for some measures" (p. 157)
-- Chopin e minor Prelude: G# "awakened from its omnitonal haze by the whole-step motion in the bass... remembers its monotonal responsibilities" (p. 162)
-- Lewin (2006) views the Tristan chord "perched on the cusp of a double syntax consistent with the model developed here"
+# Construction / Recognition
+Evidence of convertibility from earlier chapters:
+- Brunnhilde's Immolation: C-sharp-7 chords "hearken to their appellative properties after ignoring them for some measures" (p. 157)
+- Chopin e minor Prelude: G-sharp "awakened from its omnitonal haze by the whole-step motion in the bass... remembers its monotonal responsibilities" (p. 162)
+- Lewin (2006) views the Tristan chord "perched on the cusp of a double syntax consistent with the model developed here" (p. 207, n. 11)
 
-The convertibility process parallels triadic convertibility:
-- Chromatic mode: Voice-leading efficiency governs; appellative powers suspended
-- Diatonic mode: Functional syntax activated; dominant sevenths seek tonic resolution
+# Context & Application
+The convertibility process is identical in structure to the triadic case: in chromatic mode, voice-leading efficiency governs and appellative powers are suspended; in diatonic mode, functional syntax activates and dominant sevenths seek tonic resolution. "In order to imagine this participation, we need only contemplate the triadic case and boot it through the metaphorical conduit" (p. 207).
 
 # Examples
-- Wagner Tristan chord: Paradigmatic example of chord operating under double syntax
-- Brunnhilde's Immolation (chapter 7): C#7 chords traversing Boretz region before resuming diatonic function
-- Chopin e minor Prelude (chapter 7): Half-diminished chord awakening from omnitonal to monotonal operation
-- Gollin's (1998) tetrahedron: Geometric representation for tetrachords analogous to Tonnetz for trichords
+- **Wagner Tristan chord**: Paradigmatic chord operating under double syntax
+- **Brunnhilde's Immolation** (Chapter 7): C-sharp-7 chords traversing Boretz region before resuming diatonic function
+- **Chopin e minor Prelude** (Chapter 7): Half-diminished chord transitioning from omnitonal to monotonal operation
+- **Gollin's tetrahedron** (1998): Geometric representation for tetrachords analogous to Tonnetz for trichords
 
-# Related Concepts
-- Tristan genus
-- Convertible Tonnetz
-- Boretz region
-- Octatonic region
-- Nearly even chord
-- Single semitonal displacement
-- Double syntax hypothesis
+# Relationships
+## Builds Upon
+- Convertible Tonnetz (the model being extended)
+- Tristan genus (the chord class to which it extends)
+
+## Enables
+- Complete account of double syntax including dissonant harmonies
+
+## Related
+- Double syntax hypothesis (convertibility is a key mechanism)
+- Near-evenness (the property enabling dual function)
+
+## Contrasts With
+- (none specified)
+
+# Common Errors
+- **Error**: The Tonnetz can represent seventh-chord convertibility directly
+  **Correction**: An additional dimension (tetrahedron) or separate model is required
 
 # Common Confusions
-- The Tonnetz cannot directly represent Tristan-genus positions; an additional dimension (or separate model) is needed
-- Convertibility applies to the chords' behavior, not just their structure
-- "Omnitonal haze" and "monotonal responsibilities" describe the same chord under different syntactic modes
-- The tetrachordal case is not merely analogous; it is structurally parallel to the trichordal case
+- **Confusion**: "Omnitonal haze" and "monotonal responsibilities" describe different chords
+  **Clarification**: They describe the same chord under different syntactic modes (chromatic vs. diatonic)
 
 # Source Reference
-Chapter 8: Syntactic Interaction and the Convertible Tonnetz, pages 207-208
+Cohn, Richard. *Audacious Euphony*, Chapter 8, pp. 207-208.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Brunnhilde/Chopin examples, Gollin tetrahedron reference, heuristic/ontological distinction. Fresh extraction adds v3.1 structure, Lewin 2006 Tristan reference.

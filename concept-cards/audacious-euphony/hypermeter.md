@@ -1,68 +1,112 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Hypermeter
+slug: hypermeter
+
+# === CLASSIFICATION ===
 category: analysis
+subcategory: metric structure
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
 pdf_page: 129
-unit: null
-authors: Richard Cohn
+section: "Neighborhoods and Pitch Retention Loops"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "hypermetric structure"
+  - "phrase-level meter"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - thematic-rotation
+  - developmental-core
+  - voice-leading-zone
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is hypermeter and how does Cohn use it analytically?"
+  - "How does hypermetric structure coordinate with harmonic design?"
+  - "What is the difference between a 'measure' and a hypermeasure in Cohn's usage?"
 ---
 
 # Quick Definition
 Hypermeter is the organization of music into regular groupings of measures that create a higher-level metrical hierarchy, used in Cohn's analyses to track harmonic pacing and structural articulations in chromatic passages.
 
-# Formal Definition
-**Hypermeter** refers to metrical organization above the notated bar level, where groups of measures create regular patterns analogous to beat groupings within measures. In Cohn's analyses, hypermetric structure helps track:
-- Harmonic rhythm (rate of chord change at the hypermetric level)
-- Structural articulations (hypermetric downbeats marking significant harmonic events)
-- Thematic rotation patterns
+# Core Definition
+Hypermeter refers to metrical organization above the notated bar level, where groups of measures create regular patterns analogous to beat groupings within measures. In Cohn's analyses, hypermetric structure helps track harmonic rhythm (rate of chord change), structural articulations (hypermetric downbeats marking significant harmonic events), and thematic rotation patterns. Cohn uses "measure" (in quotes) to refer to hypermetric units when the notated measure is too small to capture the relevant metric structure.
 
-Cohn uses the term "measure" (in quotes) to refer to hypermetric units when the notated measure is too small to capture the relevant metric structure.
+# Prerequisites
+- Basic understanding of meter and phrase structure
 
-# Construction/Recognition
+# Key Properties
+1. Creates hierarchical metric levels above the notated bar
+2. Harmonic changes often align with hypermetric downbeats
+3. Multiple hypermetric levels can stack (four-bar within twelve-bar)
+4. Hypermetric ambiguity is common at formal boundaries
+5. Notated bar lines may not reflect hypermetric organization
+6. Hypermetric position distinguishes structural from passing harmonies
+
+# Construction / Recognition
 Hypermetric analysis involves:
 1. Identifying the hypermetric unit (e.g., four-bar groups)
 2. Tracking events at hypermetric downbeats
-3. Observing larger hypermetric groupings (e.g., twelve-bar hypermeasures from three four-bar units)
+3. Observing larger hypermetric groupings
 
-In Brahms's Second Symphony analysis:
+In Brahms's Second Symphony (mm. 246-302):
 - Four-bar hypermeter: harmonic changes align with four-bar units
-- Twelve-bar hypermeasure: established by thematic/textural module rotation (A → B → C)
-- Hypermetric ambiguity: overlapping interpretations at phrase boundaries
+- Twelve-bar hypermeasure: established by thematic/textural module rotation (A -> B -> C)
+- Hypermetric ambiguity at m. 290-302 as recapitulation approaches
 
-# Musical Context
-Hypermetric analysis is essential for understanding:
-- How harmonic events align with metric structure
-- The pacing of voice-leading zone changes
-- Structural weight of different harmonic arrivals
-- Relationships between thematic and harmonic design
-
-In pan-triadic analysis, hypermeter helps distinguish:
-- Harmonies prolonged for full hypermetric units (structural)
-- Passing harmonies within hypermetric units (transitional)
-- Hypermetric downbeat arrivals (emphatic) vs. mid-hypermeasure events
+# Context & Application
+In pan-triadic analysis, hypermeter helps distinguish harmonies prolonged for full hypermetric units (structural) from passing harmonies within units (transitional). Larger dots on the Tonnetz mark harmonies arriving on hypermetric downbeats. The coordination of hypermetric, harmonic, and thematic design reveals how composers organize chromatic passages within larger formal frameworks.
 
 # Examples
-**Brahms's Second Symphony, first movement (mm. 246-302)**: The passage proceeds in consistent four-bar hypermeter, articulated by harmonic changes and periodic rotation of three thematic/textural modules. Triple rotation establishes twelve-bar hypermeter sustained even after rotation is abandoned. Larger dots on the Tonnetz model mark harmonies arriving on hypermetric downbeats.
+- **Brahms, Second Symphony, first movement (mm. 246-302)**: Consistent four-bar hypermeter articulated by harmonic changes and periodic rotation of three modules; triple rotation establishes twelve-bar hypermeter sustained even after rotation is abandoned
+- **Dvorak, "New World" Symphony, development**: Entire development in clear four-bar hypermeter; hortatory incipits structure four paragraphs from hypermetric positions; N/L chain features semitonally ascending minor tonics every eight measures
+- **Chopin, e minor Prelude, Op. 28 no. 4**: 4:1 reduction represents each measure as a beat and each four-measure segment as a measure, revealing voice-leading zone pacing
 
-**Dvorak's "New World" Symphony, first movement development**: The entire development is in clear four-bar hypermeter. Hortatory thematic incipits structure the development into four paragraphs launched from hypermetric positions. The N/L chain features semitonally ascending minor tonics every eight measures (double hypermeasures).
+# Relationships
+## Builds Upon
+- Standard metric theory
 
-**Chopin's e minor Prelude, Op. 28 no. 4**: Analysis uses 4:1 reduction representing each measure as a beat and each four-measure segment as a measure, revealing the pacing of downshifting through voice-leading zones.
+## Enables
+- Tracking voice-leading zone changes at appropriate time scales
+- Distinguishing structural from passing harmonies
+- Understanding thematic rotation as hypermetrically coordinated
 
-# Related Concepts
-- Thematic rotation
-- Harmonic rhythm
-- Voice-leading zone
-- Metric reduction
-- Developmental core
-- Phrase structure
+## Related
+- Thematic rotation (often coordinated with hypermetric structure)
+- Developmental core (hypermetrically organized)
+- Voice-leading zone (changes tracked at hypermetric level)
+
+## Contrasts With
+- Surface-level harmonic rhythm (which may be faster than the hypermetric level)
+
+# Common Errors
+- **Error**: Hypermeter is the same as phrase structure
+  **Correction**: They often align but are conceptually distinct; hypermeter is metric, phrase structure is grouping
 
 # Common Confusions
-- Hypermeter is not the same as phrase structure, though they often align
-- Hypermetric ambiguity is common at formal boundaries
-- Notated bar lines may not reflect hypermetric organization
-- Hypermetric levels can stack (four-bar within twelve-bar within forty-eight-bar)
+- **Confusion**: Notated bar lines always reflect hypermetric organization
+  **Clarification**: The notated bar may be too small; Cohn uses four-bar units as his "measure"
+
+- **Confusion**: Hypermetric levels are fixed
+  **Clarification**: They can stack (four-bar within twelve-bar within forty-eight-bar) and can be ambiguous at formal boundaries
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pages 134-137
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 134-137, 152-153.
+
+# Verification Notes
+Re-extracted from v2 card to v3.1 format. Preserved: Brahms Second Symphony analysis, Dvorak New World analysis, Chopin reduction. Fresh extraction adds: "measure" in quotes convention, hypermetric ambiguity at m. 290, Tonnetz dot convention, v3.1 structure.

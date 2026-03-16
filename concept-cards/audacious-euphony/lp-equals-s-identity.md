@@ -1,50 +1,101 @@
 ---
-concept: R+LP=S Identity
-category: technique
+# === CORE IDENTIFICATION ===
+concept: "R+LP=S Identity"
+slug: lp-equals-s-identity
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: transformation-identities
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Weitzmann Regions"
 chapter_number: 4
-pdf_page: 77
-unit: null
-authors: Richard Cohn
+pdf_page: 98
+section: "Weitzmann Regions without Sequences: Wagner and Strauss"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "S decomposition"
+  - "Slide decomposition"
+  - "LP = S"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - s-transformation
+  - r-transformation
+  - lp-transformation
+extends: []
+related:
+  - fruhling-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How can the S transformation be decomposed into simpler transformations?"
+  - "What is the R+LP=S identity?"
 ---
 
 # Quick Definition
-The transformational identity showing that S (Slide) can be decomposed into R (Relative) combined with LP, or equivalently R combined with PL in retrograde.
+The transformational identity showing that S (Slide) can be decomposed into R (Relative) combined with LP, revealing how the maverick S relates to more normative transformations.
 
-# Formal Definition
-The identity R + LP = S states that the S transformation (connecting triads whose roots differ by semitone with opposite mode) can be achieved by combining R with a hexatonic compound (LP or PL). This decomposition shows how the maverick S relates to more normative transformations. The identity also appears retrograded (R + PL = S) and can be inverted in direction.
+# Core Definition
+"S is formed by combining R with PL" (p. 99) or equivalently R with LP. This decomposition shows how "the maverick S relates to more normative transformations" even though "S-related triads share no diatonic scale membership." The identity also appears retrograded (PL+R = S) and inverted. In Strauss's "Fruhling," it serves as a transformational motive appearing in original, retrograde, fragmented, and inverted forms.
 
-# Construction/Recognition
-Forward direction:
-c minor --(R)--> Eb major --(LP)--> B major
-Net result: c minor to B major = S
+# Prerequisites
+- **S transformation**: The transformation being decomposed
+- **R transformation**: One component
+- **LP transformation**: The other component (compound of L and P)
 
-Retrograde:
-e minor --(R)--> G major --(PL)--> Eb major
-Net result: e minor to Eb major = S
+# Key Properties
+1. R + LP = S (forward direction)
+2. R + PL = S (retrograde direction, since PL = LP^-1 for net effect)
+3. The compound paths route through the relative major/minor
+4. The identity breaks S into classically normative steps
+5. LP and PL reach the same net destination (2 stations around hexatonic cycle) but in opposite directions
 
-The compound paths both route through the relative major/minor, breaking S into classically normative steps.
+# Construction / Recognition
+Forward: c minor --(R)--> Eb major --(LP)--> B major. Net: c minor to B major = S.
+Retrograde: e minor --(R)--> G major --(PL)--> Eb major. Net: e minor to Eb major = S.
 
-# Musical Context
-This identity reveals the hidden structure in passages that appear to move directly by S. The decomposition through R and LP/PL shows how S connects to Classical syntax even though S-related triads share no diatonic scale. The identity serves as a motivic signature in Strauss's "Fruhling."
+# Context & Application
+This identity reveals the hidden structure in passages that move by S, showing the normative steps underlying an apparently non-normative progression. It serves as a motivic signature in Strauss's "Fruhling."
 
 # Examples
-- Strauss "Fruhling" opening: R + LP = S motive
-- Strauss "Fruhling" close of stanza 1: R + PL = S (retrograded)
-- Strauss "Fruhling" stanza 2 opening: Inverted form of the motive
+**Strauss, "Fruhling" opening** (p. 99): R+LP = S motive (c minor -> ab minor -> B major).
+**Strauss, "Fruhling" stanza 1 close** (p. 99): R+PL = S retrograded (e minor -> G major -> Eb major).
+**Strauss, "Fruhling" stanza 2** (p. 100): Inverted form in the CEAb region.
 
-# Related Concepts
-- S Transformation
-- R Transformation
-- LP Transformation
-- PL Transformation
-- Fruhling Analysis
+# Relationships
+## Builds Upon
+- s-transformation: The transformation being decomposed
+- r-transformation: Component of the decomposition
+
+## Enables
+- fruhling-analysis: The identity serves as the analytical key to the Strauss passage
+
+## Related
+None additional.
+
+## Contrasts With
+None specified.
+
+# Common Errors
+- **Error**: Treating LP and PL as producing different net results
+  **Correction**: Both move 2 stations around a hexatonic cycle, but in opposite directions; the net destination is the same
 
 # Common Confusions
-- LP and PL produce same net effect (2 stations around hexatonic cycle) but in opposite directions
-- The identity shows S's relation to normative transformations despite its non-normative status
-- The retrograde and inversion create distinct voice-leading trajectories
+- **Confusion**: The identity shows S is "really" R+LP
+  **Clarification**: The identity reveals structural relationships between transformations; S remains a valid transformation in its own right
 
 # Source Reference
-Chapter 4: Weitzmann Regions, pages 98-100
+Cohn, Richard. *Audacious Euphony*, Chapter 4: Weitzmann Regions, pp. 98-100.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: forward/retrograde examples, Strauss motive forms. High confidence: algebraic identity with clear demonstrations.

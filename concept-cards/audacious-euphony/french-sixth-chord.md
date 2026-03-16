@@ -1,77 +1,97 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: French Sixth Chord
-category: theory
+slug: french-sixth-chord
+
+# === CLASSIFICATION ===
+category: dissonance
+subcategory: seventh chord types
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
-pdf_page: 156
-unit: null
-authors: Richard Cohn
+pdf_page: 175
+section: "4-Cube Trio"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "set class 4-25"
+  - "prime form [0268]"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - four-cube-trio
+  - tristan-genus
+extends: []
+related:
+  - minor-seventh-chord
+  - diminished-seventh-chord
+contrasts_with:
+  - nearly-even-tetrachord
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What role does the French sixth chord play in 4-Cube Trio?"
+  - "How does the French sixth serve as a bridging chord?"
 ---
 
 # Quick Definition
-The French sixth chord is a perfectly even tetrachord (like the diminished seventh) that serves as a bridging harmony in 4-Cube Trio, occupying even-numbered voice-leading zones and connecting Tristan-genus chords alongside minor seventh chords.
+In 4-Cube Trio, the French sixth chord serves as a bridging harmony occupying even-numbered voice-leading zones, connecting Tristan-genus chords from adjacent Boretz regions alongside minor seventh chords.
 
-# Formal Definition
-The **French sixth chord** is a four-note chord containing two interlocking tritones, forming a perfectly even division of the octave into four parts (like the diminished seventh chord, but with different interval distribution). In Cohn's framework, French sixth chords:
+# Core Definition
+The **French sixth chord** (set class 4-25, prime form [0268]) appears in 4-Cube Trio as star-shaped nodes at the 12:00, 4:00, and 8:00 bridge positions. Six French sixth chords exist in the chromatic universe. They bridge the gap left by octatonic transformations, which "involve two voices moving by semitone in parallel motion" and therefore "jump voice-leading zones, leaving a gap that is not present in the triadic case. That gap can be bridged using either minor seventh or French sixth chords" (p. 175). French sixth chords, like minor seventh chords, "fulfill the bridging function independently; either can be removed without disconnecting the graph" (p. 175).
 
-1. Are perfectly even tetrachords (alongside diminished seventh chords)
-2. Serve as bridging harmonies in 4-Cube Trio
-3. Occupy even-numbered voice-leading zones
+# Prerequisites
+- **4-Cube Trio**: The graph in which French sixths serve their bridging role
+- **Tristan genus**: The primary chords being bridged
 
-There are six distinct French sixth chords in the chromatic universe.
+# Key Properties
+1. Six distinct French sixth chords exist in chromatic space
+2. Occupy even-numbered voice-leading zones
+3. Serve as alternative bridges to minor seventh chords at octatonic positions
+4. Either French sixth or minor seventh bridges can be removed without disconnecting 4-Cube Trio
+5. Represented as star-shaped nodes in Figure 7.16
 
-# Construction/Recognition
-Structure:
-- Two tritones a whole step apart (e.g., C-F# and D-G#)
-- Interval content: [0, 2, 6, 8] or M2 + A4 + M2 arrangement
-- Set class: 4-25, prime form [0268]
-- Perfectly even: divides octave into four parts (like diminished seventh)
+# Construction / Recognition
+- Two interlocking tritones a whole step apart (e.g., C-F# and D-G#)
+- Interval content: [0, 2, 6, 8]
+- Labels can be inferred from incident Tristan-genus chords at adjacent odd voice-leading zones
 
-Position in 4-Cube Trio:
-- Star-shaped nodes at 12:00, 4:00, 8:00 positions
-- Bridges between Boretz spiders
-- Alternative to minor seventh chords for bridging function
-- Six French sixth chords total
-
-Voice-leading zones:
-- Even-numbered zones (like minor sevenths and diminished sevenths)
-- Connect Tristan-genus chords in odd zones
-
-# Musical Context
-French sixth chords in the tetrachordal system:
-- Provide alternative bridges between Boretz regions
-- Can be engaged or bypassed in circumnavigation
-- Historically associated with dominant preparation in tonal contexts
-
-The chord's perfectly even structure makes it:
-- Symmetric under certain transpositions
-- Analogous to the augmented triad (perfectly even trichord) and diminished seventh (perfectly even tetrachord)
-- A potential axis for voice-leading relationships
+# Context & Application
+French sixth chords provide stepping-stone connections through even zones when circumnavigating 4-Cube Trio. They are engaged when a continuous voice-leading descent passes through zones that Tristan-genus chords cannot occupy. In the Chopin e minor Prelude analysis, French sixth chords may appear in the chromatic descent as bridging harmonies.
 
 # Examples
-**Schubert's "Der Doppelganger" (m. 32-33)**: E appears as component of a CE dyad sounding against dominant pitch classes as part of a French sixth chord.
+- **Figure 7.16 (4-Cube Trio)**: Star-shaped nodes at octatonic bridge positions alongside triangular minor seventh chord nodes (p. 175)
+- **Chopin e minor Prelude**: Even-zone chords including French sixths appear during the chromatic descent (pp. 178-182)
 
-**Schubert's "Der Doppelganger" (m. 42)**: E returns as part of a C major triad sounding against a single dominant pitch, A#, as part of a German sixth chord (related to French sixth).
+# Relationships
+## Builds Upon
+- 4-Cube Trio (the graph where the bridging function operates)
+## Enables
+- Continuous voice-leading paths through even zones
+## Related
+- Minor seventh chord (alternative bridge at same positions)
+- Diminished seventh chord (another even-zone chord, at spider centers)
+## Contrasts With
+- Nearly even tetrachord (French sixth is not a Tristan-genus chord; it bridges them)
 
-**Figure 7.16 (4-Cube Trio)**: Star-shaped nodes represent French sixth chords, appearing at octatonic bridge positions alongside triangular minor seventh chord nodes.
-
-**Chopin's e minor Prelude**: French sixth chords may appear in the chromatic descent as bridging harmonies.
-
-# Related Concepts
-- Minor seventh chord (alternative bridge)
-- Diminished seventh chord
-- Perfectly even chord
-- 4-Cube Trio
-- Augmented sixth chords
-- Voice-leading zone
-- Bridging chord
+# Common Errors
+- **Error**: Including the French sixth in the Tristan genus
+  **Correction**: It is a bridging chord, not a member of the Tristan genus (which contains only V7 and ø7)
 
 # Common Confusions
-- French sixth is not part of Tristan genus; it's a bridging chord
-- "French" refers to the traditional augmented sixth chord type, repurposed here for voice-leading function
-- French sixth is perfectly even (like diminished seventh), not nearly even (like Tristan genus)
-- Six French sixth chords exist (not three like diminished sevenths or four like hexatonic systems)
+- **Confusion**: Thinking the French sixth is structurally necessary for 4-Cube Trio connectivity
+  **Clarification**: It can be removed without disconnecting the graph; minor seventh chords independently provide the same bridging function
 
 # Source Reference
-Chapter 7: Dissonance, pages 174-176
+Cohn, R. *Audacious Euphony*, Chapter 7: "Dissonance," pp. 174-176.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: six distinct forms, star-shaped node representation, removability. Fresh extraction adds direct quotation on zone-jumping gap and clearer set-class identification.

@@ -1,55 +1,98 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Hocket Canon in Hexatonic Cycles
-category: analysis
+slug: hocket-canon
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: null
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Hexatonic Cycles"
 chapter_number: 2
 pdf_page: 35
-unit: null
-authors: Richard Cohn
+section: "The Hexatonic Trance"
+
+# === CONFIDENCE ===
+extraction_confidence: medium
+
+# === VARIANTS ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - hexatonic-cycle
+extends: []
+related:
+  - hexatonic-trance
+  - balanced-voice-leading
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What voice-leading structure underlies a hexatonic cycle?"
+  - "How do the three voices of a hexatonic cycle relate to each other?"
 ---
 
 # Quick Definition
-Hexatonic cycles embed a hocket canon structure where three voices enter canonically at staggered intervals, each executing the same semitonal displacement pattern two beats later and four semitones lower than its predecessor.
+The canonic structure within a hexatonic cycle where each voice executes its semitonal displacement two beats later and four semitones lower than its predecessor, creating an interlocking 3:2 phasing pattern.
 
-# Formal Definition
-When a hexatonic cycle progresses incrementally through its six triads, each of the three voices holds its pitch for three beats, then displaces by semitone to a new pitch sustained for three more beats before returning to the original. This creates a hocket canon - "a structure familiar to music historians from the caccia of late-medieval polyphony" (Bukofzer 1940). The interlocking of duple and triple periodicities forms a 3:2 phasing (polyrhythm, grouping dissonance, hemiola).
+# Core Definition
+In a hexatonic cycle, "each individual voice holds its pitch for three 'beats' and then displaces to a new pitch that is likewise sustained for three beats before returning to the original pitch" (Cohn, p. 38). The voices combine so that "each of which executes its displacements two beats later and four semitones lower than its predecessor (assuming octave equivalence). The voices thus combine to form a hocket canon, a structure familiar to music historians from the caccia of late-medieval polyphony (Bukofzer 1940)" (p. 38). "The interlocking of duple and triple periodicities, induced respectively within and between the individual voices, forms a 3:2 phasing (also referred to variously as polyrhythm, grouping dissonance, hemiola, and cross pattern)" (p. 38).
 
-# Construction/Recognition
-Structure of the hocket canon:
-- Each voice: 3 beats on pitch A, semitone to pitch B, 3 beats on B, semitone back to A
-- Voice periodicity: 6 beats (3 up + 3 down)
-- Entry spacing: 2 beats between voices
-- Pitch spacing: 4 semitones (major third) between voices
-- Combined result: 3:2 polyrhythm (triple within voices, duple between them)
+# Prerequisites
+- **hexatonic-cycle** — The hocket canon structure is a property of hexatonic cycles
 
-The three voices combine canonically:
-- Voice 1: sustains, displaces at beat 3
-- Voice 2: sustains, displaces at beat 5 (= beat 3 + 2)
-- Voice 3: sustains, displaces at beat 7 (= beat 5 + 2)
+# Key Properties
+1. Each voice sustains for 3 beats, then displaces by semitone, then sustains for 3 more
+2. Successive voices enter 2 beats apart, 4 semitones lower
+3. Creates 3:2 phasing (triple periodicity within voices, duple between them)
+4. Only six pitches engaged total (two per voice)
+5. Direction of displacement alternates at each step
 
-# Musical Context
-Cohn notes a speculative connection between this structural feature and African musical traditions associated with spirit possession and trance: "A small cluster of features line up suggestively... Hexatonic cycles embed a hocket canon that projects a 3:2 phasing. This particular combination of attributes is likewise identified with African musical traditions associated with spirit possession and trance" (pp. 43-44).
+# Construction / Recognition
+In Figure 2.2 (p. 38):
+1. Voice 1: holds pitch for 3 beats, displaces by semitone at beat 3
+2. Voice 2: follows same pattern, entering 2 beats later and 4 semitones lower
+3. Voice 3: follows 2 more beats later and 4 semitones lower still
+4. Arrowheads in Figure 2.2 indicate direction of semitonal displacement
+
+# Context & Application
+The hocket canon structure contributes to the hexatonic trance effect. Cohn draws a speculative analogy to African musical traditions: "This particular combination of attributes is likewise identified with African musical traditions associated with spirit possession and trance" (Rouget 1985, cited on p. 44). Cohn suggests readers "kinetically engrave and aurally entrain these periodicities by playing through the repeating hexatonic cycle with one hand at a keyboard" (p. 38).
 
 # Examples
-From the text (p. 39):
-Figure 2.2 "progresses clockwise about one of the cycles from figure 2.1, in a format that emphasizes the behavior of the individual voices. The repeat sign suggests a continuously cyclic process."
+**Example 1** (p. 38): Figure 2.2 shows voice leading through a hexatonic cycle with arrowheads indicating direction of displacement. "The repeat sign suggests a continuously cyclic process."
 
-The text suggests kinesthetic engagement: "Readers may find it useful at this point to kinetically engrave and aurally entrain these periodicities by playing through the repeating hexatonic cycle with one hand at a keyboard, or by arpeggiating the successive triads on a single-line instrument."
+# Relationships
+## Builds Upon
+- **hexatonic-cycle** — The hocket canon is a property of the cycle's voice leading
 
-# Related Concepts
-- Hexatonic Cycle
-- Hexatonic Trance
-- Balanced Voice Leading
-- Polyrhythm
-- 3:2 Phasing
-- Voice-Leading Zone
+## Enables
+- **hexatonic-trance** — The hocket canon structure contributes to the trance effect
+
+## Related
+- **balanced-voice-leading** — The directional alternation that creates the canon's character
+
+## Contrasts With
+No direct contrasts within this source.
+
+# Common Errors
+- **Error**: Expecting the hocket canon to be audible as a literal canon in composed-out passages
+  **Correction**: The canonic structure describes the abstract voice-leading pattern, not necessarily the surface texture
 
 # Common Confusions
-- The "hocket" is structural, not necessarily audible as such in composed-out passages
-- The term "canon" refers to the imitative relationship between voices, not to a genre
-- The 3:2 phasing is in the voice leading, not necessarily in the surface rhythm
-- This structural feature is one contributor to the "trance" effect, not its sole cause
+- **Confusion**: Thinking hocket canon requires actual rests (as in medieval hocket)
+  **Clarification**: Here "hocket" describes the interlocking pattern of displacements, not literal silences
+- **Confusion**: Assuming the 3:2 phasing appears in the surface rhythm
+  **Clarification**: The phasing is in the voice-leading structure, not necessarily in rhythmic grouping
 
 # Source Reference
-Chapter 2: Hexatonic Cycles, pp. 38-39, 43-44
+Chapter 2: Hexatonic Cycles, pp. 38-39. Figure 2.2. The caccia reference is Bukofzer 1940.
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: the 3:2 phasing terminology, the caccia comparison, the Rouget reference, the keyboard exercise suggestion
+- Confidence: MEDIUM — clearly described in the source but is an analytical observation rather than a formally defined term

@@ -1,52 +1,98 @@
 ---
-concept: Il Penseroso Analysis
+# === CORE IDENTIFICATION ===
+concept: "Il Penseroso Analysis (Liszt)"
+slug: il-penseroso-analysis
+
+# === CLASSIFICATION ===
 category: analysis
+subcategory: liszt-analysis
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Weitzmann Regions"
 chapter_number: 4
-pdf_page: 77
-unit: null
-authors: Richard Cohn
+pdf_page: 91
+section: "The Double-Agent Complex"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Annees de pelerinage Il Penseroso"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - double-agent-complex
+  - s-transformation
+  - lp-transformation
+extends: []
+related:
+  - tarnhelm-double-agent-analysis
+  - double-agent-pitch
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Liszt distribute the double-agent complex across phrases?"
 ---
 
 # Quick Definition
-Analysis of Liszt's "Il Penseroso" (c. 1840) showing a double-agent complex variant that omits the relative major in the first phrase, restoring it as goal of the second phrase.
+Analysis of Liszt's "Il Penseroso" (c. 1840) showing a double-agent complex variant that omits the relative major in the first phrase, restoring it as goal of the second phrase, with S transformation connecting a minor to G# major via enharmonic C/B#.
 
-# Formal Definition
-Liszt's "Il Penseroso" from the Annees de pelerinage (vol. 2) presents a double-agent complex that initially omits the relative major. The first phrase opens with LP progression (like the Tarnhelm), then proceeds via S transformation (C respelled as B#) from a minor with under-seventh to dominant G# major. The second phrase exercises the subdominant potential of a minor, ending by tonicizing the relative major (E major/e minor) as open fifth.
+# Core Definition
+"Il Penseroso" opens with LP (like the Tarnhelm) then proceeds via S with enharmonic C/B# respelling from "a minor with under-seventh to dominant G# major" (p. 92). The second phrase "exercises the subdominant potential of a minor, ending by tonicizing the relative major" as open fifth, which "Liszt fills... as e minor at the beginning of the third phrase" (p. 92). The composition "precedes the Tarnhelm by a decade" (p. 92).
 
-# Construction/Recognition
-First phrase:
-c# minor -> (LP) -> a minor[7] -> (S with enharmonic C/B#) -> G# major
+# Prerequisites
+- **Double-agent complex**: The basic structure being varied
+- **S transformation**: Connects a minor to G# major via enharmonic respelling
+- **LP transformation**: The hexatonic polar opening
 
-Second phrase:
-Exercises a minor's subdominant potential, tonicizes E as open fifth
-(Liszt fills the fifth as e minor at beginning of third phrase)
+# Key Properties
+1. First phrase: c# minor -> a minor (LP) -> a minor[7] -> G# major (S with C/B# enharmony)
+2. Second phrase: restores relative major (E/e minor) as phrase goal
+3. Omits relative major from first phrase, distributing the complex across two phrases
+4. Under-seventh on a minor creates augmented-sixth function to G# major
+5. Precedes the Tarnhelm by about a decade
 
-Transformational structure:
-- LP at opening (hexatonic polar effect)
-- S (with enharmonic double agent C/B#) to dominant
-- Restoration of relative major in second phrase
+# Construction / Recognition
+The four triads of the complex appear across two phrases rather than within one, with the relative major deferred.
 
-# Musical Context
-"Il Penseroso" precedes the Tarnhelm by a decade, establishing the LP-opening variant of the double-agent complex. The composition demonstrates how the complex can be distributed across phrases, with the relative major restored later rather than appearing in its canonical position. The meditation on Michelangelo's sculpture suits the harmonic introspection.
+# Context & Application
+"Il Penseroso" demonstrates that the double-agent complex can be distributed across phrases, with elements deferred and restored at compositionally significant moments.
 
 # Examples
-- Figure 4.13: Opening phrase of "Il Penseroso"
-- The S transformation with enharmonic C/B# mirrors Chopin Nocturne Op. 9 No. 1's Bbb/A
-- Rings 2011, p. 78: Comments on the affective paradox of the respelling
+**Figure 4.13** (p. 92): Opening phrase of "Il Penseroso."
+**Rings 2011, p. 78**: "Has some pertinent comments on the affective paradox that this respelling represents."
 
-# Related Concepts
-- Double-Agent Complex
-- LP Transformation
-- S Transformation
-- Tarnhelm Analysis
-- Enharmonic Reinterpretation
+# Relationships
+## Builds Upon
+- double-agent-complex: The structure being distributed across phrases
+- s-transformation: Used to connect a minor to G# major
+
+## Enables
+None directly.
+
+## Related
+- tarnhelm-double-agent-analysis: Similar LP opening
+- double-agent-pitch: The C/B# enharmony is the double agent
+
+## Contrasts With
+None specified.
+
+# Common Errors
+- **Error**: Treating the omission of the relative major as a defect
+  **Correction**: It is a compositional choice that distributes the complex across phrases for dramatic effect
 
 # Common Confusions
-- The omission of relative major is compositional choice, not error
-- The under-seventh on a minor creates augmented-sixth function to G# major
-- The third phrase fills in what the second phrase left as open fifth
+- **Confusion**: The under-seventh is structural
+  **Clarification**: It functions as an augmented sixth, facilitating the S transformation to dominant
 
 # Source Reference
-Chapter 4: Weitzmann Regions, pages 91-93, Figure 4.13
+Cohn, Richard. *Audacious Euphony*, Chapter 4: Weitzmann Regions, pp. 91-93 (Figure 4.13).
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Rings 2011 citation, under-seventh augmented-sixth function, decade-before-Tarnhelm chronology. High confidence: specific passage analysis.

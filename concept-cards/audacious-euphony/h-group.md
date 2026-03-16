@@ -1,65 +1,113 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "H-Group (Hexatonic Group)"
-category: technique
+slug: h-group
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: transformation groups
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "A Unified Model of Triadic Voice-Leading Space"
 chapter_number: 5
 pdf_page: 101
-unit: null
-authors: Richard Cohn
+section: "Chromatic Sequences"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "hexatonic group"
+  - "H-class"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - hexatonic-region
+  - weitzmann-region
+extends: []
+related:
+  - h-group-transformations
+  - w-group
+  - hexatonic-cycle
+  - chromatic-sequences
+contrasts_with:
+  - w-group
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the H-group as a mathematical structure?"
+  - "How does the H-group relate to the W-group?"
+  - "What role does the H-group play in generating chromatic sequences?"
 ---
 
 # Quick Definition
 The group of three transformations (L, P, H) that preserve hexatonic region membership while shifting Weitzmann region, complementary to the W-group (R, N, S).
 
-# Formal Definition
-The H-group (hexatonic group) consists of three triadic transformations:
-- L (Leading-tone exchange): one voice moves by semitone
-- P (Parallel): one voice moves by semitone
-- H (Hexatonic pole): three voices move by semitone
+# Core Definition
+The H-group (hexatonic group) is a mathematical group consisting of the three triadic transformations that preserve hexatonic region membership: L (leading-tone exchange, 1 unit work), P (parallel, 1 unit work), and H (hexatonic pole, 3 units work). All H-group transformations change mode and shift voice-leading zone by 1. L and P are classically normative; H is the "maverick" member, paralleling S in the W-group. The H-group is closed under composition within hexatonic regions: applying any two H-group transformations yields the third.
 
-All H-group transformations:
-- Preserve hexatonic region membership
-- Shift Weitzmann region membership
-- Change mode (major to minor or vice versa)
+# Prerequisites
+- **Hexatonic Region**: The structure preserved by the group
+- **Weitzmann Region**: The structure shifted by the group
 
-L and P require 1 unit of voice-leading work; H requires 3 units.
+# Key Properties
+1. Three members: L, P, H
+2. All preserve hexatonic region, shift Weitzmann region
+3. All change mode (major <-> minor)
+4. Each shifts voice-leading zone by +/-1
+5. Closed under composition: LP = H, PH = L, LH = P
+6. Two classically normative members (L, P), one maverick (H)
 
-# Construction/Recognition
-H-group properties:
-- Closed under combination within hexatonic region
-- Each H-group transformation shifts voice-leading zone by 1
-- L and P are classically normative; H is maverick
+# Construction / Recognition
+H-group combined with W-group generates all odd-transposition sequences:
+- 2 normative H-group (L, P) x 2 normative W-group (R, N) = 4 classical sequence types (more darkly shaded in Table 5.1)
+- Remaining 5 combinations involve a maverick (H or S)
+- The 3 gray-shaded combinations arise in Schubert and Liszt
+- 2 combinations lack documented examples
 
-Combination with W-group generates chromatic sequences:
-| H\W | R | N | S |
-|-----|-----|-----|-----|
-| L | T5 | T1 | T3 |
-| P | T3 | T5 | T1 |
-| H | T1 | T3 | T5 |
-
-The H-class maps any consonant triad in zone X to zone X +/- 1.
-
-# Musical Context
-The H-group/W-group distinction is fundamental to chromatic sequences. Alternating one H-group and one W-group transformation generates all odd-transposition sequences. The H-group's maverick member (H) parallels the W-group's maverick (S), both lacking classical syntactic basis but appearing in 19th-century chromatic practice.
+# Context & Application
+The H-group/W-group distinction is the fundamental organizing principle for chromatic sequences in Cohn's unified model. "On their own, the regions are static, like a right and left leg hopping in place. In collaboration, Weitzmann and hexatonic transformations gain the power of perambulation, unifying the triadic universe" (p. 83). The distinction explains why some sequences appear earlier historically (combining normative members from both groups) while others require Romantic-era innovation (involving maverick members).
 
 # Examples
-- L and P alternate in hexatonic cycles (L/P chains)
-- H appears in uncanny hexatonic-polar progressions
-- H-group combined with W-group generates chromatic sequences
+- **L and P alternate** in hexatonic cycles (L/P chains)
+- **H appears** in uncanny hexatonic-polar progressions
+- **L/R chain** (H-group L + W-group R): generates T5 sequences, the most common
+- **P/R chain** (H-group P + W-group R): generates T3 sequences in Die Zauberharfe
 
-# Related Concepts
-- W-Group
-- L Transformation
-- P Transformation
-- H Transformation
-- Hexatonic Region
-- Chromatic Sequences
+# Relationships
+## Builds Upon
+- Hexatonic and Weitzmann regions (the group's action is defined by these)
+
+## Enables
+- Systematic classification of all chromatic sequences
+- Cube Dance navigation between regions
+- Understanding of normative vs. maverick progressions
+
+## Related
+- H-group transformations (the individual operations)
+- Chromatic sequences (generated by H-group + W-group alternation)
+
+## Contrasts With
+- W-group (the complementary group preserving Weitzmann region)
+
+# Common Errors
+- **Error**: The H-group is the same as the hexatonic pole transformation
+  **Correction**: The H-group contains three transformations (L, P, H); H is just one of them
 
 # Common Confusions
-- H-group and W-group are complements, not opposites
-- H-group preserves hexatonic region (not Weitzmann)
-- The H in H-group stands for hexatonic, not the H transformation specifically
+- **Confusion**: H-group and W-group are independent systems
+  **Clarification**: They are complementary; their interaction generates all parsimonious triadic motion
+
+- **Confusion**: The maverick H transformation is as common as L and P
+  **Clarification**: H lacks classical syntactic basis; it appears in 19th-century practice but not classical sequences
 
 # Source Reference
-Chapter 5: A Unified Model of Triadic Voice-Leading Space, pages 107-109, 124
+Cohn, Richard. *Audacious Euphony*, Chapter 5, pp. 83-89, 107-109; Glossary, p. 229.
+
+# Verification Notes
+Re-extracted from v2 card to v3.1 format. Preserved: combination table structure, maverick/normative distinction, group closure. Fresh extraction adds: "hopping in place" quote (p. 83), historical chronology of sequence types, clearer distinction from h-group-transformations card, v3.1 structure.

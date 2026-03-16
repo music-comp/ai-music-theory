@@ -1,68 +1,102 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Neighborhood
-category: analysis
+slug: neighborhood
+
+# === CLASSIFICATION ===
+category: triadic-systems
+subcategory: pitch-retention structure
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
 pdf_page: 129
-unit: null
-authors: Richard Cohn
+section: "Neighborhoods and Pitch Retention Loops"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "pitch-class neighborhood"
+  - "Tonschema neighborhood"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - connected-tonnetz
+  - consonant-triad
+extends: []
+related:
+  - pitch-retention-loop
+  - double-neighborhood
+  - doppelganger-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a pitch-class neighborhood in the triadic universe?"
+  - "How do neighborhoods organize chromatic passages around a central pitch?"
 ---
 
 # Quick Definition
-A pitch-class neighborhood consists of the six tones consonant with a central pitch class and the six triads that include that central tone as root, third, or fifth.
+A complex of tones and triads organized around a central pitch class, consisting of the six tones consonant with that center (related by third or fifth) and the six triads containing it as root, third, or fifth.
 
-# Formal Definition
-A **neighborhood** is a complex of tones and triads organized around a central pitch class. It consists of:
-1. A central pitch class
-2. Six tones radiating from the center, each consonant (related by third or fifth) with the central tone
-3. Six edges forming a hexagon that bind those six tones to each other by consonances
-4. Six triangles representing the six triads that include the central pitch class (as root, third, or fifth of major or minor triads)
+# Core Definition
+A neighborhood is a complex of tones and triads organized around a central pitch class, as modeled in Hostinsky's 1879 *Tonschema* (figure 6.1). "Radiating from C are six edges that connect to the six tones with which it is consonant. Six further edges, forming a hexagon, bind those six tones directly to each other by consonances. The hexagons and radii together form six triangles, representing the six triads that include C" (p. 130). Following Igor Popovic (1992, p. 101), Cohn calls this complex a "neighborhood."
 
-The term derives from Igor Popovic (1992), building on Ottokar Hostinsky's 1879 *Tonschema* from *Die Lehre von den musikalischen Klängen*.
+# Prerequisites
+- **Connected Tonnetz**: Neighborhoods are visualized as hexagonal structures on the Tonnetz
+- **Consonant triad**: The six triads in a neighborhood are all consonant
 
-# Construction/Recognition
-For a central pitch class C:
-- The six consonant tones are: E, G, A, Ab/G#, Eb, and one more completing the hexagonal pattern
-- The six triads containing C are:
-  - C major (C as root)
-  - C minor (C as root)
-  - Ab major (C as third)
-  - A minor (C as third)
-  - F major (C as fifth)
-  - F minor (C as fifth)
+# Key Properties
+1. Central pitch class + six consonant tones + six triads containing the center
+2. On the Tonnetz: appears as a hexagonal structure with radii
+3. Each surrounding tone generates its own overlapping neighborhood
+4. Neighborhoods extend outward indefinitely on the Tonnetz
+5. Much nineteenth-century music concerns "kaleidoscopic pan-triadic harmonizations of a static pitch" (p. 130)
 
-Each of the six surrounding tones generates its own overlapping neighborhood, creating a network that extends outward indefinitely on the Tonnetz.
+# Construction / Recognition
+For central pitch class C:
+- Six consonant tones: E, G, A, Ab, Eb, F (those forming thirds and fifths with C)
+- Six triads containing C: C major, c minor, Ab major, a minor, F major, f minor
+- On the Tonnetz: hexagonal structure with C at center
 
-# Musical Context
-Neighborhoods provide an organizational framework for understanding music that features kaleidoscopic pan-triadic harmonizations of a static pitch. This technique is documented in:
-- Italian opera (antecedent to Central European developments)
-- German Lieder exploiting programmatic effects
-- Late Romantic chromatic music
-
-Neighborhoods help analysts track how composers maintain continuity through pitch retention while exploring diverse triadic harmonizations.
+# Context & Application
+Neighborhoods provide the framework for the first compositional script. They explain how composers maintain continuity through pitch retention while exploring diverse triadic harmonizations. The concept is particularly effective for analyzing Lieder and operatic passages with pedal-tone-centered harmony.
 
 # Examples
-**Schubert's "Der Doppelganger"**: The entire song is based on a neighborhood centered on F#. The song opens with the serial presentation of four tones of that region (B, A#, D, C#) in dyadic partnership with a drone F#. The dramatic climax occurs when D# is introduced at m. 47, completing F#'s pitch-class neighborhood. The final sounding of B-D# within a B major triad completes the neighborhood at the dyadic and triadic level.
+- **Hostinsky's *Tonschema*** (figure 6.1, p. 130): The original diagram showing C's neighborhood
+- **Schubert "Der Doppelganger"**: Entire song based on F# neighborhood, with gradual accumulation and completion at tonal, dyadic, and triadic levels
+- **Italian opera precedents**: Rothstein (2008) identifies Italian opera as historically antecedent
+- **Schubert "Zugenglocklein" (D. 871)** and **Cornelius "Ein Ton" (Op. 3/3)**: German Lieder exploiting this technique
 
-**Italian opera precedents**: William Rothstein (2008) identifies Italian opera as historically antecedent to Central European developments of this technique.
+# Relationships
+## Builds Upon
+- The Tonnetz as representation of pitch-class consonance relations
+## Enables
+- Pitch retention loop (systematic tour of the neighborhood)
+- Double neighborhood (two overlapping neighborhoods)
+## Related
+- Doppelganger analysis (paradigmatic neighborhood-based analysis)
+## Contrasts With
+- Key or tonal center (neighborhoods are organized around a pitch class, not a triad)
 
-**Schubert's "Zugenglocklein," D. 871 (1826)** and **Peter Cornelius's "Ein Ton," Op. 3, no. 3 (1854)**: German Lieder that exploit this technique for programmatic effect.
-
-# Related Concepts
-- Tonnetz
-- Pitch retention loop
-- Hexatonic region
-- Weitzmann region
-- Voice-leading zone
-- Common-tone relationships
-- Pan-triadic syntax
+# Common Errors
+- **Error**: A neighborhood is a key area
+  **Correction**: It is organized around a single pitch class, not a triad; the six triads may belong to different keys
 
 # Common Confusions
-- A neighborhood is not the same as a key or tonal center; it is organized around a single pitch class, not a triad
-- The six triads in a neighborhood share only the central pitch class; they may belong to different keys
-- Neighborhoods overlap and interconnect on the Tonnetz; each tone in a neighborhood generates its own neighborhood
-- The neighborhood concept is neutral with respect to tonal hierarchy; it documents pitch-class relationships without privileging tonic function
+- **Confusion**: The six triads in a neighborhood must all sound in a passage
+  **Clarification**: Partial tours are common; completion of the full neighborhood can be a dramatic goal (as in "Der Doppelganger")
+- **Confusion**: Neighborhoods are fixed regions
+  **Clarification**: They overlap on the Tonnetz; each tone generates its own neighborhood, creating an extensible network
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pages 129-133
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 129-131, Figure 6.1.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Hostinsky/Popovic attribution, hexagonal structure description, Italian opera precedent. High confidence -- clearly defined with historical source.

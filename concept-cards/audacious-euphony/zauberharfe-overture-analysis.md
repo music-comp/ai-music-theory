@@ -1,57 +1,100 @@
 ---
-concept: Zauberharfe Overture Analysis
+# === CORE IDENTIFICATION ===
+concept: "Schubert Die Zauberharfe Overture Analysis"
+slug: zauberharfe-overture-analysis
+
+# === CLASSIFICATION ===
 category: analysis
+subcategory: piece-specific analysis
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "A Unified Model of Triadic Voice-Leading Space"
 chapter_number: 5
-pdf_page: 101
-unit: null
-authors: Richard Cohn
+pdf_page: 104
+section: "How Hexatonic and Weitzmann Regions Interact"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Rosamunde Overture analysis"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - cube-dance-graph
+  - connected-tonnetz
+  - hexatonic-weitzmann-interaction
+extends: []
+related:
+  - upshifting-downshifting
+  - chromatic-sequences
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Cube Dance model a composition that crosses regional boundaries?"
+  - "How do Cube Dance and Tonnetz representations compare for the same passage?"
 ---
 
 # Quick Definition
-Analysis of Schubert's Die Zauberharfe/Rosamunde Overture (1821) demonstrating consistent downshifting through chromatic sequences, charted on both Cube Dance and Tonnetz.
+Analysis of the Adagio opening of Schubert's *Die Zauberharfe*/*Rosamunde* Overture (1821), demonstrating consistent downshifting through minor-third transpositions with transient augmented triads, charted on both Cube Dance and Tonnetz.
 
-# Formal Definition
-The Adagio opening of Schubert's Zauberharfe Overture presents a paradigmatic example of crossing boundaries between hexatonic and Weitzmann regions. After an eight-measure fanfare and antecedent/consequent in c minor/Eb major, Schubert pulsates on Eb major, drops to eb minor, slips through transient augmented triads, and cadences in Gb major. This pattern repeats twice in T4 transposition before deceptive motion to Ab major prepares the C major Allegro.
+# Core Definition
+The passage demonstrates how Cube Dance models progressions crossing between regions. After an eight-measure fanfare and antecedent/consequent in c minor/Eb major, Schubert pulsates on Eb major, drops G to Gb (forming eb minor), slips through a transient augmented triad to cadence in Gb major. This pattern repeats twice at T4 transposition: Gb major to A major, then A major toward C major (with deceptive motion to Ab major before the Allegro).
 
-# Construction/Recognition
-Progression:
-- c minor -> Eb major (consequent) -> eb minor (pulsation)
-- Through transient FAC# (augmented) -> cadence in Gb major
-- Gb major -> f# minor -> through FAC# -> cadence in A major
-- A major -> a minor -> through AbCE -> cadential 6/4 in C major
+# Prerequisites
+- **Cube Dance graph**: The primary representation used
+- **Connected Tonnetz**: The complementary representation
+- **Hexatonic-Weitzmann interaction**: The passage crosses between regions
 
-On Cube Dance (Figure 5.4):
-- Consistent counterclockwise/downshifting motion
-- Arc away from origin, then back toward it
-- Semitonal logic made visually explicit
+# Key Properties
+1. Three parallel modulatory segments, each transposing up by major third (T4)
+2. Consistent downshifting trajectory throughout
+3. Transient augmented triads mediate between regions
+4. Arc of motion away from origin and back toward it
+5. Demonstrates the semitonal logic of the modulatory progression
 
-On Tonnetz (Figure 5.5):
-- Direct motion along main diagonal
-- Each hexatonic strip = tread; each augmented triad = riser
-- Downward direction consistent with downward voice leading
+# Construction / Recognition
+Harmonic progression:
+- c minor -> Eb major -> eb minor -> (transient aug.) -> Gb major
+- Gb major -> f# minor -> (transient aug.) -> A major
+- A major -> a minor -> (transient aug.) -> cadential 6/4 in C major -> deceptive to Ab -> C major Allegro
 
-# Musical Context
-This passage demonstrates how Cube Dance models progressions that cross regional boundaries. The analysis reveals the modulatory progression's semitonal logic, its arc of motion, and its consistent downshifting. The comparison between Cube Dance and Tonnetz representations shows each model's strengths.
+# Context & Application
+This is the first extended analytical demonstration of the unified model. Cohn uses it to introduce both Cube Dance and connected Tonnetz representations, showing how each captures different aspects of the same passage. The analysis reveals the passage's semitonal logic, arc of motion, and consistent downshifting.
 
 # Examples
-- Figure 5.4: Cube Dance chart of prolonged harmonies with transient augmented triads
-- Figure 5.5: Tonnetz chart showing diagonal motion
-- Web score 5.4: Full score available online
-- The same overture later titled Rosamunde
+- **Figure 5.4** (p. 105): Cube Dance chart showing counterclockwise (downshifting) motion with transient augmented triads
+- **Figure 5.5** (p. 105): Tonnetz chart showing diagonal motion along the main axis
+- **Staircase metaphor** (p. 107): The Tonnetz representation resembles "a staircase seen from far above" with hexatonic strips as treads and augmented triads as risers
 
-# Related Concepts
-- Cube Dance
-- Tonnetz
-- Hexatonic-Weitzmann Interaction
-- Downshifting
-- Chromatic Sequences
+# Relationships
+## Builds Upon
+- The hexatonic-Weitzmann interaction that enables cross-regional motion
+## Enables
+- Understanding of how both representations work for the same passage
+- Introduction to the staircase metaphor for the Tonnetz
+## Related
+- Upshifting and downshifting (consistent downshift demonstrated)
+- Chromatic sequences (the T3 pattern)
+## Contrasts With
+- N/A
+
+# Common Errors
+- **Error**: Thinking the augmented triads are structurally prolonged
+  **Correction**: They are transient, serving as stepping stones between consonant triads
 
 # Common Confusions
-- The augmented triads are transient (not prolonged), but structurally important
-- The Tonnetz rightward motion corresponds to downshifting (counterintuitive)
-- Cube Dance makes cyclic motion explicit; Tonnetz requires imagining the glued edges
+- **Confusion**: Rightward motion on the Tonnetz should mean upshifting
+  **Clarification**: In this passage, the rightward diagonal represents downshifting; the voice-leading direction is confirmed by hearing the passage
 
 # Source Reference
-Chapter 5: A Unified Model of Triadic Voice-Leading Space, pages 104-107, Figures 5.4-5.5
+Cohn, Richard. *Audacious Euphony*, Chapter 5, pp. 104-107, Figures 5.4-5.5. Score: Web score 5.4.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: harmonic progression detail, figure references. High confidence -- the first major analytical demonstration in ch5.

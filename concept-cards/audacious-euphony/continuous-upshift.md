@@ -1,74 +1,110 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Continuous Upshift
-category: technique
+slug: continuous-upshift
+
+# === CLASSIFICATION ===
+category: analysis
+subcategory: compositional strategy
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
-pdf_page: 129
-unit: null
-authors: Richard Cohn
+pdf_page: 148
+section: "Continuous Upshifts"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "continuous upshifting"
+  - "developmental upshift"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - voice-leading-zones
+  - upshifting-downshifting
+extends:
+  - compositional-script
+related:
+  - developmental-core
+  - schumann-dichterliebe-tonal-plan
+  - dvorak-new-world-development
+contrasts_with:
+  - departure-return-script
+  - continuous-downshift
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the continuous upshift script?"
+  - "How does continuous upshift differ from sequential upshift?"
 ---
 
 # Quick Definition
-Continuous upshift is a compositional script where voice leading consistently moves in an upward direction through voice-leading zones, creating sustained tension and energy, often without patterned sequential repetition.
+A compositional script where voice leading consistently moves upward through voice-leading zones, creating sustained tension and energy, often without patterned sequential repetition, as a variation on classical tropes like the Mannheim Rocket and developmental core.
 
-# Formal Definition
-**Continuous upshift** is a compositional strategy where triadic progressions lead uniformly through a series of adjacent voice-leading zones in an upward direction. Unlike sequential passages that achieve this through patterned repetition, continuous upshift can occur through free circulation of thematic materials that maintain an overall upward voice-leading trajectory.
+# Core Definition
+"Our concern here is with passages that [progress uniformly through adjacent voice-leading zones] without benefit of patterned repetition" (p. 148). Continuous upshifting is documented in two environments: "as a slow unfolding of structural chords, mostly tonics, across Schumann's song cycles, and as a characteristically energized surge through the development section of first movements of Beethoven and Dvorak" (p. 148). The script is "a variation on a classical trope, in nuce the Mannheim Rocket, in elaboration the Sturm und Drang developmental core" (p. 129).
 
-This script is a variation on classical tropes such as the Mannheim Rocket (in nuce) and Sturm und Drang developmental cores (in elaboration). It creates mounting tension and energy characteristic of development sections.
+# Prerequisites
+- **Voice-leading zones**: The metric space through which upshifting proceeds
+- **Upshifting and downshifting**: The directional concept being sustained
 
-# Construction/Recognition
-Continuous upshift involves:
-1. Progressive motion through voice-leading zones in ascending order (e.g., 2 → 5 → 8 → 11 → 2 → ...)
-2. Aggregate voice motion predominantly upward
-3. Possible circumnavigation of voice-leading space (completing full rotations)
+# Key Properties
+1. Sustained unidirectional voice leading (upward through zones)
+2. May operate at multiple time scales: song cycles, development sections, improvisations
+3. Differs from sequential upshift: free thematic circulation, no patterned repetition
+4. Complete rotation = movement through all twelve voice-leading zones
+5. Can be punctuated by brief downshifts that do not reverse the overall trajectory
 
-Measurement: Track the sum of pitch classes in successive triads; consistent increase indicates upshifting.
+# Construction / Recognition
+1. Track voice-leading zones through successive structural harmonies
+2. Consistent increase in zone numbers indicates upshifting
+3. Two complete rotations = circumnavigation of the triadic universe twice
+4. Brief downshifts may interrupt without reversing the overall trajectory
 
-Complete rotation = movement through all voice-leading zones (12 semitones of aggregate motion).
-
-# Musical Context
-Continuous upshift serves several compositional purposes:
-- Creating developmental energy and tension
-- Building momentum toward climactic arrivals
-- Providing large-scale coherence to tonally adventurous passages
-- Connecting distant tonal regions through directed motion
-
-The technique can operate at multiple time scales:
-- Song cycles (gradual upshift across multiple songs)
-- Development sections (intense upshift within a single section)
-- Improvisatory passages
+# Context & Application
+Continuous upshift serves to create developmental energy, build momentum toward climactic arrivals, provide large-scale coherence to tonally adventurous passages, and connect distant tonal regions through directed motion. It captures the "adrenal concoction" (p. 153) Beethoven injected into his developments.
 
 # Examples
-**Schumann's Dichterliebe**: The sixteen-song cycle executes two complete rotations about Cube Dance through continuous upshifting. Songs 1-8 decrement key signatures from three sharps to zero (scalar downshift) but realize triadic upshifting. The cycle's boundary harmonies trace a consistent upward trajectory through voice-leading space.
+- **Schumann *Dichterliebe***: Boundary harmonies execute two complete rotations through voice-leading space; scalar downshift (decrementing key signatures) coincides with triadic upshift (p. 149)
+- **Schumann Op. 24 *Liederkreis***: Nine songs complete one upshifting rotation
+- **E.T.A. Hoffmann's *Kreisleriana***: Kreisler's improvisation executes upshift rotation E major -> a minor -> F major -> Bb major -> Eb major -> G major (p. 150)
+- **Beethoven "Tempest" Sonata development**: Compressed upshift bracketed by briefer downshifts (figure 6.16a)
+- **Beethoven "Waldstein" Sonata development**: Extended upshift using T5 chains (figure 6.16b)
+- **Dvorak "New World" Symphony, 1st mvt. development (mm. 177-273)**: Ninety-six measures tracing two complete rotations with free thematic circulation (figures 6.19-6.20)
 
-**Schumann's Op. 24 Liederkreis**: The ninth and final song completes an upshifting rotation about voice-leading space, similar to the first half of Dichterliebe.
+# Relationships
+## Builds Upon
+- Voice-leading zones and upshifting/downshifting
+## Enables
+- Analysis of developmental energy in sonata forms
+- Understanding of large-scale tonal plans in song cycles
+## Related
+- Developmental core (Caplin's term for the central upshifting passage)
+- Schumann Dichterliebe tonal plan
+- Dvorak New World development
+## Contrasts With
+- Departure-return script (palindromic vs. unidirectional)
+- Continuous downshift (opposite direction)
 
-**Beethoven's "Tempest" Sonata, Op. 31 no. 2, development**: Contains an intensely compressed upshift bracketed by two briefer downshifts. The core begins with "lights out" downshift f# minor → C# major, then executes upshifting that orbits voice-leading space.
-
-**Beethoven's "Waldstein" Sonata, Op. 53, development**: Executes extended upshift across a broader span, using T5 chains and N/R chains to climb through voice-leading zones.
-
-**Dvorak's "New World" Symphony, first movement development (mm. 177-273)**: The ninety-six-measure development traces two complete rotations from G major to e minor through relentless upshifting without benefit of patterned sequential repetition. The development features free circulation of thematic materials (choriambic rhythm linking pastoral third theme and principal theme). Third paragraph executes extended N/L chain with semitonally ascending minor tonics every eight measures.
-
-**E.T.A. Hoffmann's Kreisleriana**: Kreisler's improvised progression executes upshift rotation connecting E major → a minor → F major → Bb major → Eb major → G major.
-
-# Related Concepts
-- Voice-leading zone
-- Downshift
-- Continuous downshift
-- Cube Dance
-- Tonnetz
-- Sequential voice leading
-- Development section
-- Mannheim Rocket
-- N/L chain
-- Hexatonic transformations
+# Common Errors
+- **Error**: Continuous upshift requires strict sequential repetition
+  **Correction**: The defining feature is sustained directional voice leading, not patterned repetition
 
 # Common Confusions
-- Continuous upshift differs from sequential upshift: sequences use patterned repetition, while continuous upshift can involve free thematic circulation
-- Scalar downshift (descending key signatures) can coincide with triadic upshift (the two dimensions are independent)
-- Upshift refers to aggregate voice motion, not melodic contour; individual melodic lines may descend while the overall voice-leading trajectory ascends
-- Not all energetic passages are upshifts; the direction must be tracked through voice-leading zone analysis
+- **Confusion**: Scalar downshift (descending key signatures) contradicts triadic upshift
+  **Clarification**: These are independent dimensions; Dichterliebe demonstrates both simultaneously
+- **Confusion**: Every energetic passage is an upshift
+  **Clarification**: The direction must be verified through zone analysis; some energetic passages downshift
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pages 148-156
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 148-156, Figures 6.15-6.20.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: Mannheim Rocket connection, two time-scale environments, scalar/triadic independence. High confidence -- final major section of ch6 with extensive examples.

@@ -1,63 +1,107 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Law of Least Motion
-category: theory
+slug: law-of-least-motion
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: principles
+tier: foundational
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Mapping the Triadic Universe"
 chapter_number: 1
 pdf_page: 19
-unit: null
-authors: Richard Cohn
+section: "Three Ways to Calculate Triadic Distance"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "principle of least motion"
+  - "thoroughbass voice-leading rule"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - voice-leading-work
+  - common-tone-approach
+  - idealized-voice-leading
+  - single-semitonal-displacement
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the 'law of least motion' and what does it conflate?"
+  - "When do common-tone retention and voice-leading work diverge?"
+  - "Why does the priority of harmony vs. voice leading matter for this principle?"
 ---
 
 # Quick Definition
-The voice-leading principle that voices should move by minimal intervals, holding common tones in the same voice - though this conflates two metrics (common-tone retention and voice-leading work) that can diverge.
+The voice-leading principle that voices should move by minimal intervals, holding common tones in the same voice -- though this conflates two metrics (common-tone retention and voice-leading work) that can diverge.
 
-# Formal Definition
-The "law of least motion" is a voice-leading prescription decreeing that voices should move by minimal intervals while holding common tones in the same voice. As a thoroughbass principle dating at least to Charles Masson's 1694 treatise, it assumes that harmony is primary and voice leading secondary - one first selects chords, then considers how most economically to join them. Under this assumption, maximum common-tone preservation entails minimal voice-leading work. However, if voice-leading metrics serve as a primary determinant for selecting harmonies, the two criteria can produce conflicting proximity judgments.
+# Core Definition
+The "law of least motion" decrees that voices should move by minimal intervals while holding common tones in the same voice. "This principle has the status of a robust prescription if one takes the classical view that voice leading is secondary to harmony. If one first selects a pair of chords and then considers how most economically to join them, maximum common-tone preservation entails minimal voice-leading work" (p. 26). However, "if these metrics serve as a primary determinant for selecting harmonies, rather than as a criterion invoked only after the harmonies have been selected, then they do not yield identical judgments about triadic proximity" (Cook 2005, Tymoczko 2009b, qtd. p. 26).
 
-# Construction/Recognition
-The law conflates two distinct metrics:
-1. Common-tone retention: maximize shared pitch classes (0, 1, or 2)
-2. Voice-leading work: minimize total semitonal displacement
+# Prerequisites
+- Basic voice-leading concepts in four-part writing
 
-These diverge in certain cases:
-- Voice-leading makes finer distinctions (6 values vs. 3)
-- Example: f# minor to Gb major (1 unit work) vs. f# minor to A major (2 units work), though both share 2 common tones
-- Contradictory judgments: C major to g minor (1 common tone, 4 units work) vs. C major to g# minor (0 common tones, 3 units work)
+# Key Properties
+1. Conflates two distinct metrics: common-tone retention and voice-leading work
+2. Common-tone retention returns only 3 values (0, 1, or 2 common tones)
+3. Voice-leading work spreads across 6 distinct values (0-5 semitones)
+4. Under classical assumptions (harmony first), the two metrics align
+5. Under pan-triadic assumptions (voice leading first), they can diverge
+6. A thoroughbass principle dating at least to Charles Masson's 1694 treatise
 
-When voice-leading proximity determines chord selection, the metrics diverge.
+# Construction / Recognition
+The two metrics diverge in specific cases:
+- **Finer distinctions**: f# minor to Gb major (1 unit work) vs. f# minor to A major (2 units work), though both share 2 common tones
+- **Contradictory judgments**: C major to g minor (1 common tone, 4 units work) vs. C major to g# minor (0 common tones, 3 units work) -- the first is closer by common tones, the second by voice-leading work
 
-# Musical Context
-The law of least motion works well for:
-- Connecting pre-selected harmonies (thoroughbass practice)
-- Classical voice-leading pedagogy
-- Four-part chorale writing
-
-It becomes problematic when:
-- Voice-leading proximity motivates harmonic choices (pan-triadic contexts)
-- The distinction between metrics affects proximity judgments
-- Analytical precision requires distinguishing the two criteria
-
-Cook (2005) and Tymoczko (2009b) have explored how these metrics diverge.
+# Context & Application
+The law was "erroneously deposited in Arnold Schoenberg's theoretical account, but, like so many of the other treasures banked there (the chart of regions from Weber, the emancipation of dissonance from Weitzmann), it was siphoned from the accounts of predecessors" (p. 26, n. 11). It works well for connecting pre-selected harmonies (thoroughbass practice) but becomes problematic when voice-leading proximity motivates harmonic choices (pan-triadic contexts).
 
 # Examples
-- Parallel fifths/octaves prohibitions: motivated partly by least-motion aesthetics
-- Masson (1694): early codification of the principle
-- Schoenberg: erroneously credited with originating the "law" (actually inherited from thoroughbass tradition)
-- Weber's chart of regions, "emancipation of dissonance": other ideas Schoenberg transmitted rather than originated
+- **Masson (1694)**: earliest known codification of the principle
+- **Schoenberg**: credited but not the originator
+- **Pan-triadic contexts**: the divergence between metrics becomes analytically significant
+- **Schubert Bb Sonata, figure 1.1**: f# minor shares 2 common tones with both Gb major and A major, but the moving voice travels by semitone in one case, whole tone in the other
 
-# Related Concepts
-- Voice-Leading Work
-- Common-Tone Approach
-- Voice-Leading Approach
-- Idealized Voice Leading
-- Single Semitonal Displacement
+# Relationships
+## Builds Upon
+- Thoroughbass tradition (where the law originated)
+
+## Enables
+- Recognition that voice-leading work and common-tone retention are independent metrics
+- Understanding why pan-triadic analysis requires distinguishing the two criteria
+
+## Related
+- Voice-leading work (the finer metric)
+- Common-tone approach (the coarser metric)
+- Idealized voice leading (the assumption underlying both metrics)
+
+## Contrasts With
+- Pan-triadic voice-leading priority (reverses the classical assumption that harmony precedes voice leading)
+
+# Common Errors
+- **Error**: Schoenberg originated the law of least motion
+  **Correction**: It is a thoroughbass principle dating at least to 1694 (Masson)
 
 # Common Confusions
-- The "law" is prescriptive for voice leading but descriptive claims require separating the two metrics
-- Maximum common-tone retention does not always minimize voice-leading work
-- The law assumes harmony precedes voice leading; pan-triadic analysis reverses this priority
-- The law conflates two independent criteria that should be distinguished for analytical purposes
+- **Confusion**: Maximum common-tone retention always minimizes voice-leading work
+  **Clarification**: This holds only when harmony is selected first; when voice-leading proximity drives harmonic choice, the two metrics can conflict
+
+- **Confusion**: The law is universally applicable
+  **Clarification**: It assumes harmony precedes voice leading; pan-triadic analysis reverses this priority
 
 # Source Reference
-Chapter 1: Mapping the Triadic Universe, pages 26-27
+Cohn, Richard. *Audacious Euphony*, Chapter 1, pp. 26-27.
+
+# Verification Notes
+Re-extracted from v2 card to v3.1 format. Preserved: Masson attribution, Schoenberg misattribution, divergence examples (f#-Gb vs f#-A, C-g vs C-g#). Fresh extraction adds: direct quotes on classical vs. pan-triadic assumptions, v3.1 structure.

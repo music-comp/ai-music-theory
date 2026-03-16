@@ -1,58 +1,117 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Soft Revolution
-category: theory
+slug: soft-revolution
+
+# === CLASSIFICATION ===
+category: historical-context
+subcategory: evolutionary framework
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Double Syntax and the Soft Revolution"
 chapter_number: 9
-pdf_page: 212
-unit: null
-authors: Richard Cohn
+pdf_page: 225
+section: "The Soft Revolution"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "gradual syntactic change"
+  - "evolutionary model of harmonic change"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - double-syntax-hypothesis
+  - preadaptation
+  - near-evenness
+extends:
+  - double-syntax-hypothesis
+related:
+  - evolutionary-stages
+  - overdetermination
+  - homophonous-diamorph
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the soft revolution in music history?"
+  - "How did chromatic syntax emerge from diatonic tonality?"
 ---
 
 # Quick Definition
-Cohn's term (adapted from de la Motte) for the gradual, non-disruptive nature of 19th-century harmonic innovation, where chromatic syntax emerged within and alongside diatonic practice rather than overthrowing it through radical break.
+The gradual, non-disruptive nature of nineteenth-century harmonic innovation, where chromatic syntax emerged within and alongside diatonic practice through the triad's preadapted dual nature, rather than through revolutionary break. Adapted from de la Motte: "In this music of Schubert, so gorgeous and so tonally secure to the foregrounded ear, the position of the tonic as functional center is placed into question for the first time, like a soft revolution."
 
-# Formal Definition
-The soft revolution describes the historical process by which pan-triadic chromatic syntax developed from within diatonic tonality. Unlike narratives of revolutionary break (whether located at Tristan, Op. 11, or elsewhere), the soft revolution emphasizes continuity: "In the age of Mozart, musical pitches are primarily organized by diatonic tonality. In the age of Webern, there exists some species of music whose tones are organized in some other way." Rather than a sudden rupture, the transition occurred through incremental stages exploiting the triad's double nature. De la Motte's formulation: "In this music of Schubert, so gorgeous and so tonally secure to the foregrounded ear, the position of the tonic as functional center is placed into question for the first time, like a soft revolution."
+# Core Definition
+The soft revolution describes how pan-triadic chromatic syntax developed from within diatonic tonality. "In the age of Mozart, musical pitches are primarily organized by diatonic tonality. In the age of Webern, there exists some species of music whose tones are organized in some other way" (p. 225). Either that other way was "conjured tabula rasa from what was absent from diatonic tonality, or it is conjured partly by what was present in it. The first possibility is no possibility at all; it is inconsistent with everything else we know about historical process and human cognition" (p. 225).
 
-# Construction/Recognition
-Evolutionary stages of the soft revolution:
-1. **Diatonic sequence**: Triads exercise voice-leading capacity within diatonic space (Fetis's "law of uniformity")
-2. **Chromatic triadic syntax**: Same capacity exercised in chromatic 12-space with greater parsimony
-3. **Tristan-genus promotion**: Nearly even tetrachords (dominant/half-diminished sevenths) become primary
-4. **Scalar crystallization**: Hexatonic and octatonic scales emerge as by-products, then become primary
-5. **Atonal absorption**: Scales and chords become sets; arrow of orientation remains sprung outward
+The mechanism: "A theory of double syntax suggests a way out of this impasse. It allows that at the same time that triads are root-indexing consonances, they have the capacity to serve as something else entirely: nearly even chords participating in a system of tight voice leading. Under cover of a unified lexicon, a composer learns to hear a different set of syntactic possibilities" (p. 226).
 
-Key mechanism: The consonant triad is "preadapted" for chromatic syntax by its near-evenness, which manifests in both diatonic 7-space and chromatic 12-space.
+# Prerequisites
+- **Double syntax hypothesis**: The theoretical framework enabling the soft revolution
+- **Preadaptation**: The evolutionary mechanism by which triads acquired their second function
+- **Near-evenness**: The specific property of triads enabling their preadaptation
 
-# Musical Context
-The soft revolution provides a framework for:
-- Understanding how Webern's atonality emerged from Schubert's tonality
-- Avoiding false dichotomies between "tonal" and "atonal" periods
-- Recognizing chromatic syntax as present (latently) in 18th-century music
-- Explaining why 19th-century listeners could follow chromatic progressions without training in Neo-Riemannian theory
+# Key Properties
+1. The revolution is syntactic (new organizational principles), not lexical (same triads)
+2. Lexical continuity bridges the syntactic change
+3. The consonant triad is preadapted for chromatic syntax by near-evenness
+4. The process was gradual, not revolutionary
+5. The alternative (tabula rasa emergence of atonality) is impossible
 
-The alternative (tabula rasa emergence of atonality) is "no possibility at all; it is inconsistent with everything else we know about historical process and human cognition."
+# Construction / Recognition
+The central argument of Chapter 9 in three sentences (p. 227):
+- "The central argument of this book is that the consonant triad has two natures, and that those two natures lead to two syntaxes."
+- "The central argument of this chapter is that the juxtaposition of syntaxes is not as problematic as is sometimes thought, particularly when smoothed over by lexical continuity."
+- "The central suggestion of this penultimate section is that lexical continuity can bridge over a syntactic impasse along the historical axis, as well as within a phrase of Schubert."
+
+# Context & Application
+The soft revolution proceeds through identifiable evolutionary stages (pp. 227-230):
+1. Diatonic sequence (arrow flip within diatonic context)
+2. Chromatic triadic syntax (same capacity in 12-space with greater parsimony)
+3. Tristan-genus promotion (nearly even tetrachords become primary)
+4. Scalar crystallization (hexatonic/octatonic scales emerge, then become autonomous)
+5. Atonal absorption (sets and set classes of Second Viennese School)
+
+"It is the syntactic substitution at the first stage that provides the key that unlocks the capsule of diatonic tonality" (p. 227).
 
 # Examples
-- Schubert's late instrumental music: "So gorgeous and so tonally secure to the foregrounded ear" yet questioning tonic's centrality
-- The diatonic sequence (Baroque Fortspinnung): Arrow flips from tonic-oriented to voice-leading-oriented, then back
-- The progression from hexatonic cycles (Liszt, Wagner) to hexatonic scales (Rimsky-Korsakov, French impressionism)
-- Taruskin's account of octatonic emergence as by-product of minor-third cycles
+- **De la Motte on Schubert**: "So gorgeous and so tonally secure to the foregrounded ear" yet questioning tonic centrality (p. 225)
+- **Diatonic sequence (Baroque Fortspinnung)**: Arrow flips outward during sequential passage, back at cadence (p. 228)
+- **Progression from hexatonic cycles to hexatonic scales**: Liszt/Wagner to Rimsky-Korsakov/French impressionism (p. 229)
+- **Point of no easy return**: "Once composers begin to use [0148]-type chords in a hexatonic context... the imposition of a diatonic cadence often sounds like the grinding of gears" (p. 227)
 
-# Related Concepts
-- Double syntax hypothesis
-- Preadaptation
-- Overdetermination
-- Chromatic versus diatonic organization
-- Nearly even chord
-- Fetis's law of uniformity
+# Relationships
+## Builds Upon
+- Double syntax hypothesis (the theoretical foundation)
+- Preadaptation (the evolutionary mechanism)
+
+## Enables
+- Evolutionary stages (the detailed staging of the revolution)
+- Historical framework connecting Mozart to Webern
+
+## Related
+- Overdetermination (why the same objects serve both syntaxes)
+- Homophonous diamorph (the vehicle of lexical continuity)
+
+## Contrasts With
+- Revolutionary-break narratives (locating radical change at Tristan, Op. 11, etc.)
+
+# Common Errors
+- **Error**: "Soft" means the revolution was unimportant
+  **Correction**: It means gradual rather than abrupt; the change was fundamental
 
 # Common Confusions
-- "Soft" does not mean unimportant; it means gradual rather than abrupt
-- The revolution is in syntax (organizational principles), not lexicon (the same triads are used)
-- The soft revolution does not deny innovation; it explains how innovation became possible
-- The process was not linear or teleological; different stages coexisted
+- **Confusion**: The soft revolution is teleological (leading inevitably to atonality)
+  **Clarification**: Different stages coexisted; the process was not linear or inevitable
 
 # Source Reference
-Chapter 9: Double Syntax and the Soft Revolution, pages 225-231
+Cohn, Richard. *Audacious Euphony*, Chapter 9, pp. 225-231.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: de la Motte quote, five evolutionary stages, tabula rasa impossibility, "key that unlocks the capsule" formulation. Fresh extraction adds v3.1 structure, three-sentence summary of central argument, point-of-no-return detail.

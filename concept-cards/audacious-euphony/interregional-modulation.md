@@ -1,29 +1,70 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Interregional Modulation
-category: technique
+slug: interregional-modulation
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: Boretz regions
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Dissonance"
 chapter_number: 7
 pdf_page: 156
-unit: null
-authors: Richard Cohn
+section: "Octatonic regions"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Boretz-region modulation"
+  - "octatonic-region crossing"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - boretz-region
+  - boretz-group-transformations
+extends: []
+related:
+  - octatonic-pole
+  - voice-leading-zone
+  - tristan-prelude-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is interregional modulation in the context of Boretz regions?"
+  - "How does intra-regional motion differ from interregional modulation?"
+  - "What markers signal interregional modulation in analysis?"
 ---
 
 # Quick Definition
-Interregional modulation is movement between Boretz regions via octatonic transformations, analogous to modulation between Weitzmann regions via hexatonic transformations in the triadic system.
+Movement between Boretz regions via octatonic transformations, analogous to modulation between Weitzmann regions via hexatonic transformations in the triadic system.
 
-# Formal Definition
-**Interregional modulation** (Boretz's term) occurs when a progression moves from one Boretz region to another. This requires:
-1. An octatonic-group transformation (S2, S4, S5, or octatonic pole)
-2. A shift in the "majority diminished seventh chord" that the progression spoils
-3. Entry into a new voice-leading zone outside the previous region's range
+# Core Definition
+Interregional modulation (Boretz's term) occurs when a progression moves from one Boretz region to another. This requires an octatonic-group transformation (S2, S4, S5, or octatonic pole), a shift in the "majority diminished seventh chord" that the progression spoils, and entry into a new voice-leading zone outside the previous region's range. In Boretz's Tristan Prelude analysis, interregional modulation provides the harmonic scaffold, marking large-scale structural articulations.
 
-In Boretz's Tristan Prelude analysis, interregional modulation provides the harmonic scaffold of the Prelude, marking large-scale structural articulations.
+# Prerequisites
+- **Boretz Region**: The collection of eight Tristan-genus chords organized around a single diminished seventh
+- **Boretz-group Transformations**: The transformations that operate within a single region
 
-# Construction/Recognition
+# Key Properties
+1. Requires an octatonic-group transformation to cross between regions
+2. Shifts which diminished seventh chord is being "spoiled"
+3. Enters a new voice-leading zone range
+4. Marks large-scale structural articulations
+5. Intra-regional motion is balanced (oscillating); interregional is directed
+6. Analogous to hexatonic-region modulation in triadic space
+
+# Construction / Recognition
 Within a Boretz region:
-- All chords are displacements of one diminished seventh
-- Zone alternation is limited (e.g., 3 ↔ 1 for region III)
+- All chords displace one diminished seventh chord
+- Zone alternation is limited (e.g., zones 3 and 1 for region III)
 - Motion is balanced (oscillating, not directed)
 
 Between Boretz regions:
@@ -36,40 +77,45 @@ Markers of interregional modulation:
 - Entry into previously unvisited voice-leading zone
 - Rhetorically marked moments in the music
 
-# Musical Context
-Interregional modulation serves:
-- Large-scale structural articulation
-- Creation of directed harmonic trajectories
-- Movement from one "harmonic region" to another
-
-In Tristan:
-- The first five chords remain in one region
-- Chord 6 (C#7) marks the first interregional modulation
-- Boretz argues these modulations scaffold the Prelude's form
-
-The concept parallels hexatonic-region modulation in triadic music (e.g., moving from one hexatonic system to another).
+# Context & Application
+Interregional modulation parallels hexatonic-region modulation in triadic music. The concept extends pan-triadic analysis to the tetrachordal domain, showing that seventh-chord progressions can be organized by the same principles of regional membership and boundary crossing. Boretz's analysis of the Tristan Prelude demonstrates how these modulations scaffold large-scale form.
 
 # Examples
-**Tristan Prelude, chord 6**: The C#7 chord marks interregional modulation. The previous five chords all spoiled B-D-F-G#; now a new majority diminished seventh (A-C-D#-F#) takes over. The B survives but becomes the spoiler in the new region.
+- **Tristan Prelude, chord 6**: The C#7 chord marks interregional modulation. The previous five chords all spoiled B-D-F-G#; now a new majority diminished seventh (A-C-D#-F#) takes over
+- **Brunnhilde's Immolation**: The progression Eb7 -> C#o7 -> C#7 moves from one Boretz region to another via S2 octatonic transformation; consecutive upshifts enter a new voice-leading zone
+- **Chopin, Mazurka Op. 68/4**: The T5-to-T11 conversion at m. 38 effects interregional modulation through transformation-class substitution
 
-**Brunnhilde's Immolation**: The progression Eb7 → C#ø7 → C#7 moves from one Boretz region to another via S2 octatonic transformation.
+# Relationships
+## Builds Upon
+- Boretz region (the units between which modulation occurs)
+- Boretz-group transformations (intra-regional motion)
 
-**Chopin's Mazurka Op. 68/4**: The T5-to-T11 conversion at m. 38 effects interregional modulation through transformation-class substitution.
+## Enables
+- Large-scale structural analysis of seventh-chord progressions
+- Understanding of directed vs. balanced motion in tetrachordal space
+- Formal analysis of Wagner and late-Romantic seventh-chord usage
 
-# Related Concepts
-- Boretz region
-- Octatonic-group transformations
-- Hexatonic-region modulation (triadic analogue)
-- Voice-leading zone
-- Tristan Prelude analysis
-- Spoiler tone
-- Directed voice leading
+## Related
+- Octatonic pole (one type of interregional transformation)
+- Hexatonic-region modulation (the triadic analogue)
+- Tristan Prelude analysis (the primary analytical demonstration)
+
+## Contrasts With
+- Intra-regional motion (balanced, oscillating within one Boretz region)
+
+# Common Errors
+- **Error**: Interregional modulation is about tonal keys
+  **Correction**: It is about Boretz regions (organized around diminished seventh chords), not tonal keys
 
 # Common Confusions
-- Interregional modulation is about Boretz regions, not tonal keys
-- The term is Boretz's, used for seventh-chord progressions
-- Intra-regional motion is balanced; interregional motion is directed
-- The "modulation" involves changing which diminished seventh is spoiled
+- **Confusion**: The term "modulation" implies tonal key change
+  **Clarification**: It borrows the term for analogous motion between Boretz regions
+
+- **Confusion**: Intra-regional and interregional motion sound the same
+  **Clarification**: Intra-regional is balanced (alternating upshift/downshift); interregional is directed (consecutive shifts in one direction)
 
 # Source Reference
-Chapter 7: Dissonance, pages 169-170
+Cohn, Richard. *Audacious Euphony*, Chapter 7, pp. 169-170, 172-174.
+
+# Verification Notes
+Re-extracted from v2 card to v3.1 format. Preserved: Tristan chord 6 example, Brunnhilde's Immolation example, Chopin Mazurka example, balanced vs. directed distinction. Fresh extraction adds: spoiler-tone mechanism, zone-range shift, v3.1 structure.

@@ -1,46 +1,91 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Kreisleriana Upshift Improvisation
+slug: kreisleriana-upshift
+
+# === CLASSIFICATION ===
 category: analysis
+subcategory: literary-musical analysis
+tier: advanced
+
+# === PROVENANCE ===
 source: "Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature"
+source_slug: audacious-euphony
+authors: "Richard Cohn"
 chapter: "Navigating the Triadic Universe: Three Compositional Scripts"
 chapter_number: 6
-pdf_page: 129
-unit: null
-authors: "Richard Cohn"
+pdf_page: 150
+section: "Continuous Upshifts"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "Kreisler's improvisation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - continuous-upshift
+  - voice-leading-zones
+extends: []
+related:
+  - schumann-dichterliebe-tonal-plan
+  - beethoven-tempest-development
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What literary precedent exists for patterned upshifting?"
 ---
 
 # Quick Definition
-In E. T. A. Hoffmann's *Kreisleriana*, the character Kreisler slowly improvises a series of ten triads whose interior harmonies execute an upshifting rotation about voice-leading space, flanked by zone-identical downshifts at beginning and end, providing a possible literary source for Schumann's interest in patterned upshifting.
+In E.T.A. Hoffmann's *Kreisleriana* (1813-14), Kreisler slowly improvises ten triads whose interior harmonies execute an upshifting rotation of voice-leading space, flanked by zone-identical downshifts, providing a possible source for Schumann's interest in patterned upshifting.
 
-# Formal Definition
-In the vignette "Kreisler's Musico-Poetic Club" from Hoffmann's *Kreisleriana* (1813-14), Kreisler improvises ten triads (some with sevenths) and reports the sensations each evokes. The progression begins with a downshift Ab major -> ab minor and ends with the zone-identical downshift C major -> c minor. The six interior harmonies execute an upshifting rotation about voice-leading space: E major -> a minor -> F major -> Bb major -> Eb major -> G major.
+# Core Definition
+In "Kreisler's Musico-Poetic Club," Kreisler improvises ten triads and reports the sensations each evokes (Hoffmann 1989 [1813-14], pp. 131-36). "The progression begins with a downshift Ab major -> ab minor and ends with the zone-identical downshift C major -> c minor. The six interior harmonies execute an upshift rotation about voice-leading space, connecting E major -> a minor -> F major -> Bb major -> Eb major -> G major" (p. 150).
 
-# Construction/Recognition
-The structure mirrors the Beethoven "Tempest" development:
-- Opening downshift: Ab major -> ab minor
-- Interior upshift: Six harmonies rotating through voice-leading space
-- Closing downshift: C major -> c minor (zone-identical to opening)
-- The framing downshifts create a palindromic envelope around the central upshift
+# Prerequisites
+- **Continuous upshift**: The script pattern observed
+- **Voice-leading zones**: The metric revealing the rotation
 
-# Musical Context
-Hoffmann's literary description may have inspired Schumann's compositional interest in patterned upshifting and zonal completion. Schumann was famously absorbed with *Kreisleriana*, naming his own Op. 16 after it. The connection suggests that systematic voice-leading trajectories were part of the Romantic aesthetic imagination, not merely an analytical imposition.
+# Key Properties
+1. Ten triads total; six interior form upshifting rotation
+2. Flanking downshifts are zone-identical (same zone pair)
+3. Structural parallel with Beethoven "Tempest" development
+4. Possible literary source for Schumann's compositional practice
+5. Schumann was "famously absorbed" with *Kreisleriana*
+
+# Construction / Recognition
+Ab major -> ab minor [downshift] | E major -> a minor -> F major -> Bb major -> Eb major -> G major [upshift rotation] | C major -> c minor [zone-identical downshift]
+
+# Context & Application
+The connection suggests that systematic voice-leading trajectories were part of the Romantic aesthetic imagination, not merely an analytical imposition. Schumann named his Op. 16 after Hoffmann's work.
 
 # Examples
-- Kreisler's ten-triad improvisation: Ab major, ab minor, E major, a minor, F major, Bb major, Eb major, G major, C major, c minor
-- The six interior harmonies trace a complete upshifting rotation
-- The framing downshifts (Ab -> ab, C -> c) are zone-identical, providing structural closure
+- The ten-triad progression traced on voice-leading zones
 
-# Related Concepts
-- Continuous Upshift
-- Schumann Dichterliebe Tonal Plan
-- Development Core Upshift
-- Voice-Leading Zones
-- Beethoven Tempest Development Analysis
+# Relationships
+## Builds Upon
+- Continuous upshift concept
+## Enables
+- Historical/literary context for patterned upshifting
+## Related
+- Schumann Dichterliebe tonal plan (possible influenced work)
+- Beethoven Tempest development (structural parallel)
+## Contrasts With
+- N/A
+
+# Common Errors
+- **Error**: This is an actual musical composition
+  **Correction**: It is a literary description of an improvisation in a fictional narrative
 
 # Common Confusions
-- This is a literary description of an improvisation, not an actual composition; its analytical significance is as a possible source of influence
-- The zone-identical framing is structurally significant: it creates a "slow and dreamy" version of the Tempest development's compressed orbit
-- The connection to Schumann is suggestive, not proven
+- **Confusion**: The Schumann connection is proven
+  **Clarification**: It is suggestive, not demonstrated with certainty
 
 # Source Reference
-Chapter 6: Navigating the Triadic Universe: Three Compositional Scripts, pp. 150-151
+Cohn, Richard. *Audacious Euphony*, Chapter 6, pp. 150-151.
+
+# Verification Notes
+Re-extracted from v2 card; preserved: specific ten-triad progression, zone-identical framing, Schumann connection. High confidence -- concise literary-analytical observation.
