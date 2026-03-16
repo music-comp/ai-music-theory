@@ -1,149 +1,120 @@
 ---
-concept: Voice-Leading Graph / Voice Leadability
-category: theory
-pdf_page: null
-chapter_number: null
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Voice-Leading Graph
+slug: voice-leading-graph
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: geometric-theory
+tier: advanced
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Tonnetz as Analytical Apparatus"
-authors: "Cohn"
+source_slug: neo-riemannian-handbook
+authors: "Richard Cohn"
+chapter: "Tonal Pitch Space and the (Neo-)Riemannian Tonnetz"
+chapter_number: 11
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "voice-leading space"
+  - "parsimonious graph"
+  - "chicken-wire torus"
+  - "voice leadability"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tonnetz
+  - parsimonious-trichords
+extends: []
+related:
+  - dvls-avls
+  - plr-transformations
+  - geometric-duals
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are voice-leading graphs and how do they represent harmonic proximity?"
+  - "How does the Tonnetz function as a voice-leading graph?"
+  - "What is the chicken-wire torus and what does it reveal about triadic connections?"
 ---
 
-# Voice-Leading Graph / Voice Leadability
-
-## Quick Definition
+# Quick Definition
 
 Geometric representations of chords as points in multidimensional space where proximity reflects voice-leading efficiency, enabling the visualization and calculation of parsimonious connections between harmonies.
 
-## Formal Definition
+# Core Definition
 
-**Voice-leading graphs** are spatial models where:
-- **Nodes** represent chords (as points in pitch-class space)
-- **Edges** connect chords with efficient voice-leading relationships
-- **Distance** corresponds to total voice-leading displacement
+**Voice-leading graphs** are spatial models where nodes represent chords, edges connect chords with efficient voice-leading relationships, and distance corresponds to total voice-leading displacement. Cohn (Ch. 11) introduces the concept of **voice leadability** -- the property of chord types that participate in smooth voice-leading networks. A chord class is highly voice-leadable when multiple other chords lie at minimal distance, these connections form regular patterns, and the chord can participate in parsimonious progressions.
 
-### Voice Leadability (Cohn)
-The property of chord types that participate in smooth voice-leading networks. A chord class is highly "voice-leadable" when:
-1. Multiple other chords lie at minimal voice-leading distance
-2. These connections form regular patterns (cycles, grids)
-3. The chord can participate in parsimonious progressions
+Consonant triads [037] exhibit optimal voice leadability in 12-TET. The graph of all triadic P, L, R connections forms a torus with regular hexagonal tiling ("chicken-wire torus"): 24 vertices (triads), 36 edges (connections), vertex degree 3 (each triad has 3 parsimonious neighbors).
 
-Consonant triads ([037]) exhibit optimal voice leadability in 12-TET.
+# Prerequisites
 
-## Tonnetz as Voice-Leading Graph
+- **Tonnetz**: The underlying pitch-class lattice that voice-leading graphs relate to.
+- **Parsimonious trichords**: The theory of minimal voice-leading connections.
 
-### Triadic Tonnetz Properties
-The Tonnetz can be read as a voice-leading graph:
-- Each triangle (triad) is adjacent to three other triangles
-- Adjacent triangles share two pitch classes (one voice-leading step)
-- The P, L, R operations connect adjacent triangles
+# Key Properties
 
-### Voice-Leading Distance on Tonnetz
-| Transformation | Common Tones | Moving Voice | Semitone Distance |
-|----------------|--------------|--------------|-------------------|
-| P | 2 | 1 (semitone) | 1 |
-| L | 2 | 1 (semitone) | 1 |
-| R | 2 | 1 (whole tone) | 2 |
-| LP | 1 | 2 | 2 |
-| PR | 1 | 2 | 3 |
+1. **Distance = voice-leading effort**: Proximity in the graph reflects efficient connections
+2. **Dual structure**: Cohn shows the pitch-class Tonnetz and triadic Tonnetz are geometric duals
+3. **Toroidal topology**: Under equal temperament, the graph wraps into a torus
+4. **Regular connectivity**: Each triad connects to exactly 3 neighbors via P, L, R
 
-### Geometric Interpretation
-- P and L are "maximally parsimonious"
-- R is "next most parsimonious"
-- Compounds increase voice-leading distance
+# Construction / Recognition
 
-## DOUTH2 Relation (Douthett)
+The Tonnetz can be read as a voice-leading graph: each triangle (triad) is adjacent to three other triangles sharing two pitch classes. P, L, R operations connect adjacent triangles. Voice-leading distance on the Tonnetz: P = 1 semitone, L = 1 semitone, R = 2 semitones, LP = 2 semitones, PR = 3 semitones.
 
-### Definition
-Two chords of the same cardinality are **DOUTH2-related** when:
-- Two voices remain stationary
-- The remaining voices move by semitone in parallel motion
+# Context & Application
 
-### Application to Triads
-P and L transformations are DOUTH2 relations:
-- P: Root and fifth fixed; third moves by semitone
-- L: Third and fifth fixed; root moves by semitone
+Cohn (Ch. 11) demonstrates that the Tonnetz of pitch classes is equivalent to (geometric dual of) the Tonnetz of triads. He further argues that regions/keys can be mapped onto the same structure, conflating Lerdahl's three separate levels. The Tonnetz provides a "Babylonian" structure derivable from multiple independent assumptions (acoustic consonance, voice-leading parsimony, pc-intersection), making it robust against momentary coherence failures at any single level.
 
-### Extension to Larger Sets
-DOUTH2 applies to tetrachords and beyond:
-- [0148] tetrachords have DOUTH2 networks
-- Seventh chords form voice-leading graphs
-- Any set class can be analyzed for DOUTH2 connections
+Tymoczko (Ch. 8) extends this to higher-dimensional chord spaces (orbifolds) where voice-leading appears as linear paths between points.
 
-## Higher-Dimensional Voice-Leading Spaces
+# Examples
 
-### Tymoczko's Chord Geometry
-Dmitri Tymoczko developed comprehensive voice-leading geometry:
-- Chords as points in n-dimensional space (n = number of voices)
-- Voice-leading as linear paths between points
-- Orbifold structure accounts for permutation equivalence
+**DOUTH2 relation** (Douthett/Steinbach): Two chords where two voices stay fixed and remaining voices move by semitone in parallel. P and L on triads are DOUTH2 relations. Extends to tetrachords and beyond.
 
-### Properties
-- Distance = sum of individual voice motions
-- Efficient voice leadings = short paths
-- Maximally smooth cycles = closed geodesics
+**Chicken-wire torus**: The graph of 24 triads connected by P, L, R forms a regular hexagonal tiling on a torus -- connected (any triad reachable from any other), regular (all vertices equivalent), vertex degree 3.
 
-### Relation to Tonnetz
-The Tonnetz is a 2D projection of:
-- 3-voice chord space for triads
-- The projection preserves voice-leading relationships
-- Other projections yield different (complementary) views
+**Chopin Prelude analysis** (Cohn, Ch. 11): The Tonnetz path reveals the central position of the tonic surrounded in all directions, with horizontal motion corresponding to diatonic step displacement and vertical motion to chromatic inflection.
 
-## Parsimonious Graphs
+# Relationships
 
-### Douthett & Steinbach's Contribution
-Jack Douthett and Peter Steinbach formalized:
-- Graphs of parsimonious connections
-- Conditions for graph connectivity
-- Cycles within parsimonious networks
+## Builds Upon
+- Tonnetz and parsimonious trichord theory
 
-### Chicken-Wire Torus
-The graph of triadic P, L, R connections forms:
-- A torus (in equal temperament)
-- Regular hexagonal tiling ("chicken wire")
-- 24 vertices (triads), 36 edges (connections)
+## Enables
+- Systematic voice-leading analysis
+- Geometric music theory (Tymoczko's orbifold approach)
 
-### Graph Properties
-- Vertex degree: 3 (each triad has 3 parsimonious neighbors)
-- Connected: Any triad reachable from any other
-- Regular: All vertices equivalent
+## Related
+- DVLS/AVLS: Quantitative measures of distances in these graphs
+- Geometric duals: Pitch-class and triadic Tonnetze as dual graphs
 
-## Analytical Applications
+## Contrasts With
+- Transformation networks: Networks track operations; voice-leading graphs measure motion
 
-### Voice-Leading Parsimony Analysis
-Given a progression:
-1. Plot chords on voice-leading graph
-2. Identify the path traversed
-3. Measure total voice-leading distance
-4. Compare to alternatives (was this the "smoothest" path?)
+# Common Errors
 
-### Motivic Voice Leading
-Recurring voice-leading patterns:
-- May not be visible in traditional notation
-- Become apparent in geometric representation
-- Connect surface harmony to deeper logic
+- **Error**: Assuming the Tonnetz preserves all information from full chord space.
+  **Correction**: The Tonnetz is a 2D projection; some information is lost compared to Tymoczko's full n-dimensional spaces.
 
-### Chromatic Saturation
-As voice-leading distance decreases toward zero:
-- Chords cluster in pitch space
-- Maximal common tones
-- Minimal motion
-- "Saturation" of chromatic space
+# Common Confusions
 
-## Related Concepts
+- **Confusion**: Conflating voice-leading distance with harmonic distance.
+  **Clarification**: These are distinct measures. Dominant-to-tonic has high voice-leading distance but maximal harmonic proximity.
 
-- **Prerequisite**: voice-leading, tonnetz, parsimonious-trichords
+# Source Reference
 
-## Common Confusions
+Cohn, Richard. "Tonal Pitch Space and the (Neo-)Riemannian Tonnetz." Ch. 11. See also Douthett & Steinbach, "Parsimonious Graphs" (1998); Tymoczko, Ch. 8. In *The Oxford Handbook of Neo-Riemannian Music Theories*.
 
-- **Voice leading vs. transformation**: Voice-leading graphs measure motion; transformation networks classify operations
-- **Distance vs. path**: Distance is measured by the edge; path is the sequence of edges traversed
-- **Projection issues**: The Tonnetz is a 2D projection; some information is lost compared to full chord space
+# Verification Notes
 
-## Source References
-
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 11: Richard Cohn, "Tonnetz as Analytical Apparatus"
-- Ch 13: Edward Gollin, "Doppelklänge"
-- Douthett & Steinbach, "Parsimonious Graphs" (1998)
-- Tymoczko, *A Geometry of Music* (2011)
+Re-extracted from v2 card; preserved: voice leadability concept, Tonnetz as voice-leading graph, DOUTH2 relation, chicken-wire torus properties, Tymoczko's geometric extension. Enhanced with Cohn's geometric-dual argument and Babylonian robustness. Confidence high.

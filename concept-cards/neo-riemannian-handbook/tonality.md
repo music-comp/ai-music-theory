@@ -1,159 +1,143 @@
 ---
-concept: Tonality / Tonal System
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Riemann's Legacy (Ch. 1), The Nature of Harmony (Ch. 2), Tonal Function (Ch. 3)"
+# === CORE IDENTIFICATION ===
+concept: Tonality
+slug: tonality
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: tonal-system
+tier: foundational
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier, Benjamin Steege, Brian Hyer"
-pdf_page: null
+chapter: "Riemann's Legacy (Ch. 1), The Nature of Harmony (Ch. 2), Tonal Function (Ch. 3)"
 chapter_number: null
-unit: null
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Tonalitat"
+  - tonal system
+  - "major-minor key"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - klang
+extends: []
+related:
+  - harmonic-function
+  - klangvertretung
+  - modulation
+  - consonance-dissonance-psychological
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is tonality in Riemann's framework?"
+  - "How does Riemann's concept of tonality differ from scale-based definitions?"
 ---
 
-# Tonality / Tonal System
+# Quick Definition
 
-## Quick Definition
+The hierarchical organization of pitches and harmonies around a central tonic, understood through functional relationships (T, D, S) rather than scale membership. In Riemann's formulation, tonality is psychologically grounded in Tonvorstellung and not bound to the diatonic scale.
 
-The hierarchical organization of pitches and harmonies around a central tonic, understood through the functional relationships of chords to that center rather than merely through scale membership.
+# Core Definition
 
-## Formal Definition
+**Tonality** (*Tonalitat*) in Riemann's conception is the system of functional relationships that organizes all harmony around a central tonic. Riemann explicitly built on Fetis: "Our theory of tonal functions of harmony is nothing other than the development of Fetis's concept of tonality" (*Handbuch der Harmonielehre*, cited in Ch. 3, n. 8).
 
-**Tonality** (*Tonalitat*) in Riemann's conception is:
+Crucially, Riemann's tonality is **not bound to the scale**: "This modern notion of key or, as we say in distinction from the old notion of mode, of tonality, is not bound to the scale; Klange using tones foreign to the scale could also be comprehended in the sense of a tonic and thereby receive their own characteristic meaning, such as above all the third-Klange (the E-major chord and Ab-major chord in C major)" (Ch. 2, p. 85).
 
-1. **Not bound to the scale**: "This modern notion of key or, as we say in distinction from the old notion of mode, of tonality, is not bound to the scale; Klange using tones foreign to the scale could also be comprehended in the sense of a tonic"
+Tonality is structured hierarchically at three nested levels (Ch. 2, p. 85):
+1. **Tone within Klang**: A tone is understood as root, third, or fifth
+2. **Klang within Key**: A chord is understood as T, D, S, or representative thereof
+3. **Key within Composition**: A key is understood in relation to the principal key
 
-2. **Functionally defined**: All harmonies derive meaning from their relationship to the tonic through the three functions (T, D, S)
+Each level mirrors the next: "Just as the root of a Klang relates to its subsidiary tones... just as the principal Klang relates to its subsidiary Klange... the principal key relates to the subsidiary keys" (Ch. 2, p. 85).
 
-3. **Psychologically grounded**: Tonality exists in the "imagination of tone" (*Tonvorstellung*), not merely in acoustic phenomena
+# Prerequisites
 
-4. **Hierarchically structured**:
-   - Tonic = center, "conclusive chord"
-   - Dominant = upper fifth relation, tension toward tonic
-   - Subdominant = lower fifth relation, departure from tonic
-   - All other harmonies = representations of these three
+- **klang** — Tonality is built from Klange and their relationships
 
-Riemann explicitly built on Fetis's concept: "Our theory of tonal functions of harmony is nothing other than the development of Fetis's concept of tonality."
+# Key Properties
 
-## Historical Origin
+1. Functionally defined: three functions (T, D, S) rather than seven scale degrees
+2. Not bound to the diatonic scale; chromatic chords can belong to the key
+3. Psychologically grounded in Tonvorstellung (mental representation)
+4. Hierarchically structured at three nested levels
+5. Only the tonic Klang is truly consonant; all other Klange create functional tension
+6. The "major-minor key" (Hauptmann) encompasses both modal inflections within a single tonal space
 
-### Pre-Riemann Conceptions
+# Construction / Recognition
 
-**Traditional "Mode" concept**:
-- Scale-bound
-- Diatonic framework primary
-- Modulation = change of diatonic collection
+## Riemann's Tonal Hierarchy
+1. **Tonic** (T): Center, stable, conclusive — "only one major or minor chord can be the principal Klang of a key"
+2. **Dominant** (D): Upper-fifth relation — "an element of unrest occurs in it, the desire for progression to the tonic"
+3. **Subdominant** (S): Lower-fifth relation — departure from tonic, opposite pole from D
+4. **All other harmonies**: Representations of T, D, or S
 
-**Fetis's Tonalite** (1844):
-- First systematic use of "tonality" as organizing principle
-- Emphasized attraction to tonic
-- Historical/evolutionary framework
+## Three Levels of Relations
+- Tone to Klang: G within C major = fifth of tonic Klang
+- Klang to Key: G major chord within C major = dominant function
+- Key to Key: G major key within a C major composition = dominant region
 
-### Riemann's Transformation
+# Context & Application
 
-Riemann modernized tonality by:
-1. **Divorcing it from scale**: Chromatic chords belong to the key
-2. **Centering on function**: Three functions, not seven scale degrees
-3. **Psychological basis**: Tonality as mental representation
+Riemann's concept of tonality diverges fundamentally from traditional scale-based definitions. Traditional theory (Richter, Sechter) equated key with scale: chromatic tones were "outside" the key, and any chromatic chord potentially signaled modulation. Riemann redefined tonality functionally: chromatic chords may remain "within" the key if their functional meaning is clear.
 
-### The "Major-Minor Key"
+Louis/Thuille extended this with their concept of "expanded diatonicism" and five tonal "genders" (pure major, minor-major, pure minor, major-minor, Dorian minor), demonstrating that "diatonicism itself has become chromatic" (Ch. 1, n. 153).
 
-Drawing on Hauptmann, Riemann conceived a unified tonal space encompassing both major and minor inflections. This "major-minor key" allowed:
-- Mixture of modal elements
-- Chromatic harmony without modulation
-- Extended tonal regions
+# Examples
 
-## Musical Context
+**Example 1** (Ch. 2, pp. 84-85): "If I think to myself of a C-major chord in the context of the key of C major, it is itself the tonic, center, conclusive chord... but if I think to myself of a G-major chord in the context of the key of C major, then I think of it as the Klang of the over-fifth of the C-major Klang."
 
-### Consonance and Dissonance Redefined
+**Example 2** (Ch. 2, p. 85): Third-related Klange within C major: "the E-major chord and Ab-major chord in C major" can be "comprehended in the sense of a tonic" despite using scale-foreign tones. This is extended tonality.
 
-In Riemann's tonal system, consonance/dissonance become contextual:
+**Example 3** (Ch. 2, p. 85): The three-level analogy: "In a piece in C major, the G-major key plays the same role or a similar role to that played in a brief C-major cadence by the G-major chord or the tone G in a C-major arpeggio."
 
-> "It is a fact... that only one major or minor chord can be the principal Klang (the tonic) of a key, though not a diminished triad or a seventh chord... one must therefore wonder that theorists did not long ago arrive at the insight that all species of dissonant chords are not comprehensible in themselves, but rather become so in the context of a consonance."
+# Relationships
 
-Even the dominant seventh "can be added without changing its significance" because the dominant "is not a perfect consonance in C major."
+## Builds Upon
+- **klang** — Tonality is the system governing Klang relationships
 
-### Tonality as Relational
+## Enables
+- **harmonic-function** — Functions operate within a tonal framework
+- **klangvertretung** — Representation requires a tonal center
+- **modulation** — Change of tonal center = change of function
+- **consonance-dissonance-psychological** — Consonance requires a tonic for definition
 
-Every harmony acquires meaning relationally:
+## Related
+- **diatonicity** — The scalar dimension of tonality, expanded by function theory
 
-> "If I think to myself of a G-major chord in the context of the key of C major, then I think of it as the Klang of the over-fifth of the C-major Klang; that is, the C-major chord itself enters the mental representation... the center of the mental representation lies outside it—an element of unrest occurs in it, the desire for a progression to the C-major chord, dissonance."
+# Common Errors
 
-### Three Levels of Tonal Relations
+- **Error**: Equating tonality with the diatonic scale
+  **Correction**: Riemann explicitly separated tonality from the scale; tonality is a functional system that encompasses chromatic harmony
 
-1. **Tone within Klang**: G is fifth of C major triad
-2. **Klang within Key**: G major is dominant of C major key
-3. **Key within Composition**: G major key is dominant region of C major composition
+# Common Confusions
 
-## Examples
+- **Confusion**: Thinking tonality is simply "being in a key"
+  **Clarification**: Tonality is the dynamic tension between center and periphery — the hierarchical organization of all harmonies relative to a tonic, not merely the presence of a keynote
 
-### Basic Tonal Framework
+- **Confusion**: Believing Riemann claimed tonality was acoustically natural
+  **Clarification**: Early Riemann may have held this view, but mature Riemann grounded tonality in psychology (Tonvorstellung). The *Folkloristische Tonalitätsstudien* represents a late attempt to show tonality's universality, but on psychological rather than acoustic grounds.
 
-In C major, the tonal hierarchy:
-- **T (Tonic)**: C-E-G - stable center, conclusive
-- **D (Dominant)**: G-B-D - tension toward T, "dissonant" relation
-- **S (Subdominant)**: F-A-C - departure from T, opposite pole
+# Source Reference
 
-### Extended Tonality
+The Oxford Handbook of Neo-Riemannian Music Theories:
+- Chapter 1 (Holtmeier): pp. 10-11, modern vs. traditional modulation concepts; pp. 38-39, Louis's expanded diatonicism
+- Chapter 2 (Steege): pp. 84-86, Riemann's "Die Natur der Harmonik" on tonality
+- Chapter 3 (Hyer): pp. 91-131, functional logic of tonal relations
 
-Third-related keys within C major tonality:
-- E major chord = "third-Klang" (Terzklang)
-- A-flat major chord = "minor-third-Klang" (Kleinterzklang)
+# Verification Notes
 
-These are comprehensible "in the sense of a tonic" despite using scale-foreign tones.
-
-### From Repertoire
-
-Riemann's analyses of Wagner demonstrate extended tonality:
-- Passages traditionally labeled "constantly modulating"
-- Function theory reveals underlying T-S-D-T frameworks
-- Chromatic complexity understood within unified tonal conception
-
-## Evolution/Variants
-
-### Riemann vs. Traditional Scale-Based Tonality
-
-| Traditional | Riemann |
-|-------------|---------|
-| Scale defines key | Function defines key |
-| Chromatic = outside key | Chromatic = within extended key |
-| Seven diatonic positions | Three functional categories |
-| Modulation = new scale | Modulation = new tonal center |
-
-### Post-Riemann Developments
-
-**Louis/Thuille**:
-- Five tonal "genders" mixing major/minor
-- Pure major, minor-major, pure minor, major-minor, Dorian minor
-- "Diatonicism itself has become chromatic"
-
-**Neo-Riemannian Theory**:
-- Moves away from hierarchical tonality
-- Treats tonal space as network of equal transformational relations
-- Questions centricity itself
-
-### Comparative Musicology Challenge
-
-The Berlin school (Stumpf, Hornbostel) challenged universal tonality claims:
-- Phonograph recordings revealed diverse scales
-- Questioned "natural" basis of Western system
-- Riemann's *Folkloristische Tonalitätsstudien* was defensive response
-
-## Related Concepts
-
-- **Prerequisites**: scale, key, tonic, dominant, subdominant
-- **Leads to**: harmonic-function, modulation, chromatic-harmony
-- **See also**: mode, klangvertretung, tonvorstellung
-
-## Common Confusions
-
-1. **Tonality vs. Key**: Tonality is the *system* of functional relationships; key is a specific instantiation
-2. **Tonality vs. Scale**: Traditional theory conflates these; Riemann separates them
-3. **Tonal vs. Diatonic**: Tonal music may use extensive chromaticism while remaining "in a key"
-4. **Natural vs. Conventional**: Riemann claimed tonality was psychologically natural; comparative musicology questioned this
-5. **Static vs. Dynamic**: Tonality is not just "being in a key" but the dynamic tension between center and periphery
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part I:
-- Chapter 1 (Holtmeier): pp. 10-11, modern vs. traditional modulation concepts
-- Chapter 2 (Steege): pp. 84-86, Riemann's "Nature of Harmony" on tonality
-- Chapter 3 (Hyer): pp. 102-131, functional logic of tonal relations
+- Definition from Riemann's "Die Natur der Harmonik" as translated in Ch. 2
+- Three-level hierarchy explicit in Ch. 2, p. 85
+- Fetis connection explicit in Ch. 3, n. 8
+- Confidence: HIGH — the concept is central to all three chapters
+- Re-extracted from v2 card; preserved: the three-level hierarchy, Louis's five tonal genders, the comparative musicology challenge discussion

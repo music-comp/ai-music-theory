@@ -1,115 +1,134 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tonal Intention and Phenomenological Analysis
+slug: tonal-intention-phenomenology
+
+# === CLASSIFICATION ===
 category: analysis
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Chapter 18: Riemannian and Neo-Riemannian Analysis"
-authors: Steven Rings
-pdf_page: null
-chapter_number: null
-unit: null
+subcategory: interpretive-frameworks
+tier: advanced
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Steven Rings"
+chapter: "Riemannian Analytical Values, Paleo- and Neo-"
+chapter_number: 18
+pdf_page: 500
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - intentional path analysis
+  - phenomenological hearing
+  - tonal intention
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - plr-transformations
+  - harmonic-function
+  - analytical-values-paradigms
+extends:
+  - tonnetz
+related:
+  - fact-value-gap
+  - tonal-crisis-harmonic-anomaly
+  - monotonality-principle
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How can phenomenological listening bridge paleo- and neo-Riemannian analysis?"
+  - "How do I apply neo-Riemannian analysis to a Schubert song?"
+  - "What is a tonal intention in Rings's framework?"
 ---
 
-# Tonal Intention and Phenomenological Analysis
+# Quick Definition
 
-## Quick Definition
+A reconciliation of Riemannian and neo-Riemannian approaches that interprets function symbols not as chord labels but as descriptions of the intentional paths listeners trace from sounding harmonies back to the tonic, with qualitative "color" accruing along each path.
 
-A reconciliation of Riemannian and neo-Riemannian approaches that interprets function symbols not as chord labels but as descriptions of the **intentional paths** listeners trace from sounding harmonies back to the tonic, with qualitative "color" accruing along the way.
+# Core Definition
 
-## Formal Definition
+Rings proposes interpreting Riemann's function symbols as descriptions of intentional acts rather than as labels for chords. "To hear a chord as a subdominant is to perform the subdominant operation (S), directing awareness from the sounding chord to the tonic via S. The S-ness of the perception resides not in the sounding harmony (the raw acoustic signal) but in the action whereby the listener relates it back to the tonic" (Rings, p. 501). This phenomenological reinterpretation is mapped onto an LRP network (chicken-wire torus), where edges represent P, L, and R transformations and arrows indicate D and S functional relationships. Distance from the tonic along these intentional paths produces qualitative harmonic "color" — flatward paths produce dark shading, sharpward paths produce bright (pp. 500-506).
 
-**Tonal intention** refers to the action whereby a listener directs awareness from a sounding chord to the tonic. Rings proposes interpreting Riemann's function symbols as descriptions of these intentional acts rather than as labels for chords:
+# Prerequisites
 
-> "To hear a chord as a subdominant is to perform the subdominant operation (S), directing awareness from the sounding chord to the tonic via S. The S-ness of the perception resides not in the sounding harmony (the raw acoustic signal) but in the action whereby the listener relates it back to the tonic."
+- **PLR transformations** — The intentional paths are composed of P, L, R operations
+- **Harmonic function** — The D and S arrows that orient the network toward a tonic are functional concepts
+- **Analytical values and paradigms** — Understanding the gap between Riemannian and neo-Riemannian approaches motivates this reconciliation
 
-This addresses the **phenomenological question**: What happens to music after it enters our ears?
+# Key Properties
 
-## The LRP Map Framework
+1. Function symbols describe listener actions (intentional paths), not chord properties
+2. Intentional paths are traced on an LRP map (chicken-wire torus) oriented with D above and S below tonic
+3. Qualitative harmonic "color" accumulates along the path — like "multiple layers of paint around the dark perimeter of a Rembrandt portrait"
+4. Longer paths create greater tonal extremity and perceptual effort
+5. The "resistant medium" through which arrows travel models the effort of maintaining tonal hearing in chromatic passages
+6. Stripping away context reveals that the chord in context has more tonal character than a chord heard in isolation
 
-Rings traces intentional paths on an **LRP map** (Chicken-Wire Torus):
-- Edges represent P, L, and R transformations
-- D and S arrows indicate direct functional relationships
-- Network oriented with dominants "above" and subdominants "below" the tonic
+# Construction / Recognition
 
-## Intentional Paths
+## To Apply Tonal Intention Analysis
 
-**Simple path** (Eb- in m. 2 of Schubert Impromptu):
-- Heard as subdominant leading-tone change
-- Intentional path: L then S back to tonic
-- Passes through subdominant Cb+ along the way
+1. Identify the tonic and orient the LRP network with D-region above and S-region below
+2. Locate the sounding chord on the network
+3. Trace the intentional path from that chord back to the tonic using PLR edges and D/S arrows
+4. Note the length and direction of the path (how many steps, sharpward or flatward)
+5. Interpret the qualitative "color" that accumulates along the path
+6. Consider whether the path length creates perceptual strain (risk of losing tonal hearing)
 
-**Complex path** (A-/G- minor Neapolitan in m. 80):
-- Analyzed as variant of leading-tone change of minor subdominant
-- Intentional path: P-L-P-S back to tonic
-- Four interpretive moves required
+# Context & Application
 
-## Exertion and Resistance
+Rings develops this framework to bridge the "fact/value gap" he identifies in neo-Riemannian analysis. The approach restores "a sense of extremity — both harmonic and emotional/expressive — to the analysis" of passages that neo-Riemannian theory treats in terms of coherence alone (p. 506). It draws on Lewin's phenomenological writings on function and David Kopp's work on transformational approaches that explore "specifically tonal characteristics of chromatic passages" (p. 506, n. 33).
 
-Rings imagines the intentional arrows traveling through a **resistant medium**:
+# Examples
 
-> "The resistance might cause us to give up altogether in our effort to interpret the A- chord with relation to Gb+, thus breaking the chain of arrows...Our sense of Gb+ as tonic would thus be considerably attenuated, its hold on the music in our ears now precarious."
+**Schubert Impromptu, m. 2, Eb minor chord** (p. 502): Heard as subdominant leading-tone change in Gb major. Intentional path: L then S back to tonic. Passes through subdominant Cb+ along the way, acquiring flatward shading.
 
-This models the **effortful** quality of maintaining tonal hearing in chromatic passages.
+**Schubert Impromptu, m. 80, G minor chord** (pp. 503-505): The "minor Neapolitan" requires the intentional path P-L-P-S back to tonic — four interpretive moves creating extraordinary accumulation of flatward shading. "One thinks of the multiple layers of paint around the dark perimeter of a Rembrandt portrait."
 
-## Tonal Color and Shading
+**The "menacing" trill, m. 79** (p. 504): The E+ chord with "menacing bass trill on C" points intentionally toward the coming G minor via P-D. "Menace" = pointing further into the darkest regions of the tonal space. "We can hear it coming before it sounds."
 
-The **qualitative difference** between harmonies (dark/bright, subdominant/dominant "color") arises from the intentional path:
+**Stripping away context** (p. 505): "Clear our ears of the harmonic context...and simply play a G-minor chord alone, hearing it as a tonic. The effect is one of stripping away the layers of shading...revealing the blank canvas of the minor triad beneath."
 
-**Coloristic Regions**:
-- Sharpward/bright: up and left from tonic
-- Flatward/dark: down and right from tonic
+# Relationships
 
-**Accumulation of shading**: Each intentional act (arrow) adds a layer of interpretive color:
+## Builds Upon
+- **PLR transformations** — Provide the edges of the intentional network
+- **Harmonic function** — D and S orient the network toward a tonic
+- **Tonnetz** — The LRP map is a specific orientation of the Tonnetz
 
-> "One thinks of the multiple layers of paint around the dark perimeter of a Rembrandt portrait."
+## Enables
+- Reconciliation between functional and transformational hearing
+- Analysis of why chromatically extreme passages sound extraordinary, not just how they cohere
 
-The A-/G- chord acquires its "remarkable chiaroscuro quality" through the accumulation of four layers of flatward shading.
+## Related
+- **Fact-value gap** — Tonal intention addresses the gap between what we value and what analysis captures
+- **Tonal crisis and harmonic anomaly** — The paradigmatic case for applying tonal intention
 
-## Stripping Away the Layers
+# Common Errors
 
-To experience how tonal context creates this color:
+- **Error**: Treating the LRP map as a neutral, tonic-free space
+  **Correction**: Rings's network is explicitly oriented around a tonic, with "distortions" created by tonal gravity — restoring what Hyer eliminated
 
-> "Clear our ears of the harmonic context...and simply play a G-minor chord alone, hearing it as a tonic. The effect is one of stripping away the layers of shading...revealing the blank canvas of the minor triad beneath."
+- **Error**: Confusing intentional paths with voice-leading paths
+  **Correction**: Intentional paths model the listener's cognitive relating of chord to tonic, not the literal voice-leading between chords
 
-The chord in context has **more** tonal character than traditional harmonies, not less.
+# Common Confusions
 
-## The "Menacing" Trill
+- **Confusion**: Believing this framework fully closes the fact/value gap
+  **Clarification**: Rings acknowledges: "No formal model can capture all aspects of our musical experience...I find that the picture turns what had been a flickering and contingent experience into something more fixed and stable" (p. 506)
 
-The E+ chord containing the "menacing bass trill on C" points intentionally toward the coming A-:
-- Heard as dominant of A- (path: P-D)
-- "Menace" = pointing further into darkest regions
-- We can "hear it coming before it sounds"
+- **Confusion**: Thinking intentional paths are unique (only one path per chord)
+  **Clarification**: Multiple paths may be possible; the choice of path reflects the analyst's hearing
 
-## Reconciliation of Approaches
+# Source Reference
 
-This framework traces a **middle path**:
+Rings, Steven. "Riemannian Analytical Values, Paleo- and Neo-." Chapter 18 in *The Oxford Handbook of Neo-Riemannian Music Theories*, pp. 500-506. Extended in Rings, *Tonality and Transformation* (Oxford, 2011).
 
-| From Riemann | From Neo-Riemannian |
-|--------------|---------------------|
-| Tonal space with tonic center | Valorization of the remarkable |
-| Qualitative harmonic intensity | Formal network modeling |
-| Listener's interpretive activity | Attention to voice-leading |
+# Verification Notes
 
-## Key Insight: Extremity Through Context
-
-> "The tonal context is responsible for the extraordinary sound: the latter results from the ways in which the music moves toward the outer, benighted realms of Gb major, or better, the ways in which we work to interpret its harmonies from those realms back to the tonic."
-
-## The Fact/Value Gap
-
-Rings acknowledges the gap is not fully closed:
-
-> "No formal model can capture all aspects of our musical experience...I find that the picture turns what had been a flickering and contingent experience into something more fixed and stable."
-
-But the approach provides "hooks" for our aural sensations to interact with the formal model.
-
-## Related Concepts
-
-- **Prerequisite**: plr-transformations
-- **See also**: analytical-values-paradigms, monotonality-principle
-
-## Methodological Significance
-
-This phenomenological approach addresses what neo-Riemannian theory often leaves unexplored: **why** chromatically exceptional passages captivate us. It restores a sense of extremity---both harmonic and emotional/expressive---to the analysis.
-
-## Source Reference
-
-Rings, Steven. "Riemannian and Neo-Riemannian Analysis." Oxford Handbook of Neo-Riemannian Music Theories, Chapter 18, pp. 500-506.
+Re-extracted from v2 card; preserved: the LRP map framework, the Rembrandt metaphor, the Schubert examples, and the "stripping away" illustration. The v2 card was already rich but lacked v3.1 frontmatter fields. Confidence is high: Rings explicitly develops this framework as his central contribution in the chapter.

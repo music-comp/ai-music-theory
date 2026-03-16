@@ -1,186 +1,147 @@
 ---
-concept: Diatonicity / Diatonic Scale
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Riemann's Legacy (Ch. 1), Folkloristische Tonalitätsstudien (Ch. 4)"
+# === CORE IDENTIFICATION ===
+concept: Diatonicity
+slug: diatonicity
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: scalar-system
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier, Matthew Gelbart, Alexander Rehding"
-pdf_page: null
+chapter: "Riemann's Legacy (Ch. 1), Folkloristische Tonalitätsstudien (Ch. 4)"
 chapter_number: null
-unit: null
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - diatonic scale
+  - diatonic system
+  - expanded diatonicism
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - pentatonicism
+  - tetrachordal-structure
+extends:
+  - tetrachordal-structure
+related:
+  - tonality
+  - harmonic-function
+  - folkloristische-tonalitatsstudien
+  - louis-thuille-synthesis
+contrasts_with:
+  - pentatonicism
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is diatonicism in Riemann's expanded sense?"
+  - "What distinguishes pentatonic from diatonic tonality in Riemann's framework?"
 ---
 
-# Diatonicity / Diatonic Scale
+# Quick Definition
 
-## Quick Definition
+The seven-note scale system forming the basis of Western tonality, which in Riemann's theory operates at two levels: as the evolutionary endpoint of scalar development from pentatonicism, and as an expanded functional framework that encompasses chromatic alterations within a unified tonal conception.
 
-The seven-note scale system that forms the basis of Western tonality, which in Riemann's theory is both the evolutionary endpoint of scalar development and the expanded framework that encompasses chromatic alterations within a unified tonal conception.
+# Core Definition
 
-## Formal Definition
+**Diatonicity** in Riemann's theory operates on two distinct levels:
 
-**Diatonicism** in Riemann's theory operates on two levels:
+1. **Scalar-evolutionary** (Ch. 4): Diatonicism is the endpoint of a universal developmental path from pentatonicism through tetrachordal organization. The seven-note scale emerges when two *pien* tones fill the pentatonic gaps, creating structural semitones. The emergence of the third as a "part of the sonority" and the "separation into major and minor" mark the arrival of true diatonicism (Ch. 4, p. 157).
 
-1. **Scalar definition**: The seven-note scale with specific pattern of whole and half steps
-2. **Tonal definition**: The harmonic space defined by the three principal functions (T, D, S) and their representatives
+2. **Functional-expanded** (Ch. 1): Louis/Thuille expanded diatonicism beyond the scale: "For us moderns, who derive the key not from the scale but from the constituent principal triadic harmonies, the concept of diatonicism itself is vastly expanded" (Ch. 1, n. 153). This allows chromatic chords to belong to the key if their functional meaning is clear. Louis's five tonal "genders" (pure major, minor-major, pure minor, major-minor, Dorian minor) all count as "diatonic" in this expanded sense: "Diatonicism itself has become chromatic."
 
-**Key innovation**: Riemann (following Hauptmann) expanded diatonicism beyond the scale:
-> "For us, the more recent generation of composers, who do not derive the key from the scale, but from its constituent principal triadic harmonies, the concept of diatonicism itself is vastly expanded."
+The two levels converge in Riemann's claim that the tonal system is both natural (evolved from universal pentatonic origins) and functionally flexible (able to absorb chromaticism without losing tonal coherence).
 
-**Louis's formulation**: Diatonicism encompasses five tonal "genders":
-1. Pure major
-2. Minor-major (major with minor S)
-3. Pure minor (minor with minor D)
-4. Major-minor ("normal" minor with major D)
-5. Dorian minor (minor with major S)
+# Prerequisites
 
-"Diatonicism itself has become chromatic."
+- **pentatonicism** — Diatonicism evolves from pentatonic origins
+- **tetrachordal-structure** — Diatonic scales are built from paired tetrachords
 
-## Historical Origin
+# Key Properties
 
-### Traditional Diatonicism
+1. Seven-note scale with specific pattern of whole and half steps
+2. Evolutionary endpoint: derived from pentatonic scales via pien and tetrachordal organization
+3. The third as harmonic element: recognition of the third as a "Klang component" marks the transition (Ch. 4, p. 157)
+4. Leading-tone function: the *subsemitonium modi* establishes cadential direction
+5. Expanded diatonicism (Louis): functional framework encompasses chromatic alterations
+6. Five tonal "genders" (pure major, minor-major, pure minor, major-minor, Dorian minor) are all "diatonic"
 
-Classical theory (Sechter, Richter):
-- Scale defines key
-- Seven diatonic positions
-- Chromatic tones = "outside" the key
-- Modulation = change of scale
+# Construction / Recognition
 
-### Riemann's Transformation
+## Evolutionary Derivation (Ch. 4)
+1. **Pentatonic**: C-D-E-G-A (no F, no B)
+2. **With pien**: C-D-E-(F)-G-A-(B) — filling tones added ornamentally
+3. **Structural semitones**: F and B become structural, creating E-F and B-C semitones
+4. **Full diatonic**: C-D-E-F-G-A-B with leading tone (B→C) established
 
-Riemann divorced tonality from scale:
-- Function defines key, not scale
-- Chromatic chords can belong to the key
-- "Mixture" elements are diatonic in expanded sense
-- Related keys extend the diatonic framework
+## Functional Expansion (Ch. 1)
+1. Traditional diatonic: only scale tones belong to the key
+2. Expanded diatonic: T, D, S and all their representatives belong to the key
+3. Mixture chords (from parallel minor/major) are diatonic in the expanded sense
+4. Applied dominants operate within the diatonic framework
 
-### Evolutionary Framework (*Folkloristische Tonalitätsstudien*)
+# Context & Application
 
-Riemann posited diatonicism as the endpoint of universal scalar evolution:
-1. Anhemitonic pentatonic (universal origin)
-2. Pentatonic with *pien* (transitional)
-3. Tetrachordal organization (intermediate)
-4. Hexachordal system (medieval)
-5. Full diatonic (modern)
+Riemann's *Folkloristische Tonalitätsstudien* provides the evolutionary narrative: the "minor-third pyknon" replacing the "major-third pyknon" as center "indicates an emergent understanding of the essence of harmony, a recognition of the third as a Klang component, and the separation into major and minor" (Ch. 4, p. 157). This breakthrough — the moment when harmonic consciousness enters scalar structures — is what makes diatonicism qualitatively different from pentatonicism.
 
-The third (major/minor) emerges late in this development, enabling true diatonicism.
+Louis's functional expansion (Ch. 1) addresses a different but related problem: how to handle chromaticism in Romantic music without declaring constant modulation. By defining diatonicism through function rather than scale, Louis could analyze Wagner and Liszt as fundamentally diatonic despite their chromatic surfaces.
 
-## Musical Context
+# Examples
 
-### The Third as Key Element
+**Example 1** (Ch. 4, ex. 4.9): The hexachord as a bridge from pentatonic to diatonic — shown as both a combination of three tetrachords and an overlay of two pentatonic scales with pien.
 
-Diatonicism proper (in Riemann's view) requires:
-- Recognition of the third as a "part of the sonority"
-- "Separation into major and minor"
-- Leading tone function
+**Example 2** (Ch. 1, n. 153): Louis's "expanded diatonicism" — in C major, not only C-D-E-F-G-A-B but also Eb, Ab, Db (from minor mixture) count as "diatonic" in the functional sense.
 
-The "minor-third pyknon" (semitone + whole tone cluster) marks the transition:
-> "The fact that the minor-third pyknon came to the fore instead of the major-third pyknon as the center indicates an emergent understanding of the essence of harmony, a recognition of the third as a Klang component."
+**Example 3** (Ch. 4, pp. 154-155): The transition from pentatonic to diatonic through the structural stabilization of pien tones on strong beats.
 
-### Function Theory's Expanded Diatonicism
+# Relationships
 
-In function theory:
-- Parallel chords (Tp, Sp, Dp) are "diatonic" representatives
-- Applied dominants operate within diatonic framework
-- Mixture chords belong to the "major-minor key"
+## Builds Upon
+- **pentatonicism** — The evolutionary precursor
+- **tetrachordal-structure** — The building blocks of diatonic scales
 
-This allows chromatically rich music (Wagner, Liszt) to be analyzed as fundamentally diatonic.
+## Enables
+- **tonality** — The diatonic system is the scalar foundation of tonality
+- **harmonic-function** — Functions operate within the (expanded) diatonic framework
 
-### The Diatonic "Matrix"
+## Related
+- **folkloristische-tonalitatsstudien** — The evolutionary narrative
+- **louis-thuille-synthesis** — The functional expansion of diatonicism
 
-Traditional theory:
-- Related keys share scale tones
-- Modulation occurs at "intersection points"
-- Diatonic = within the scale collection
+## Contrasts With
+- **pentatonicism** — Pentatonic lacks semitones and harmonic consciousness
 
-Riemann:
-- Related keys share functional relationships
-- Applied dominants extend functional space
-- Diatonic = within the tonal/functional framework
+# Common Errors
 
-## Examples
+- **Error**: Equating diatonicism with the seven white keys of the piano
+  **Correction**: In Riemann's expanded sense, diatonicism encompasses the entire functional space of a key, including chromatic mixture and applied dominants
 
-### Traditional vs. Expanded Diatonicism
+# Common Confusions
 
-In C major:
+- **Confusion**: Thinking "diatonicism has become chromatic" is a contradiction
+  **Clarification**: Louis means that the *concept* of diatonicism (what belongs to a key) has expanded to include tones traditionally considered chromatic, because key membership is defined by function, not scale
 
-**Traditional diatonic**:
-- C-D-E-F-G-A-B = the seven scale tones
-- F# = chromatic alteration (possibly modulating to G)
+- **Confusion**: Believing Riemann's evolutionary stages are historically verified
+  **Clarification**: The stages are structural/heuristic, not a verified chronological sequence
 
-**Riemann's expanded diatonic**:
-- C major Klang (T), F major Klang (S), G major Klang (D)
-- D minor (Sp), E minor (Dp/Tg), A minor (Tp)
-- Plus: minor subdominant (F minor), Neapolitan, etc.
+# Source Reference
 
-### Louis's Five Genders in C
-
-| Gender | Tonic | Subdominant | Dominant |
-|--------|-------|-------------|----------|
-| Pure major | C major | F major | G major |
-| Minor-major | C major | F minor | G major |
-| Major-minor | C minor | F minor | G major |
-| Pure minor | C minor | F minor | G minor |
-| Dorian | C minor | F major | G minor |
-
-All are "diatonic" in the expanded sense.
-
-### From Pentatonic to Diatonic
-
-Riemann's evolutionary stages (from Chapter 4):
-
-```
-Stage 1 - Pentatonic: C - D - E - G - A (no F, no B)
-Stage 2 - With pien:  C - D - E - (F) - G - A - (B)
-Stage 3 - Full diatonic: C - D - E - F - G - A - B
-```
-
-The *pien* (F and B) become structural, creating:
-- Semitone E-F (Lydian tetrachord)
-- Semitone B-C (leading tone)
-
-## Evolution/Variants
-
-### Riemann vs. Neo-Riemannian
-
-| Riemann | Neo-Riemannian |
-|---------|----------------|
-| Diatonic = functional | Triadic = transformational |
-| Hierarchy preserved | Hierarchy questioned |
-| Scale expanded but central | Scale less relevant |
-| Chromatic serves diatonic | Chromatic autonomous |
-
-### The Diatonic Scale Debate
-
-Comparative musicologists challenged diatonic universality:
-- Phonograph recordings showed non-diatonic intervals
-- "Neutral thirds," "3/4 tones" observed
-- Riemann insisted these were "misperceptions"
-
-Riemann's response (*Folkloristische Tonalitätsstudien*):
-> "Presumably not a lot will be left of the intervals that contradict our musical system, such as 3/4 or 5/4 tones... that tone psychologists now believe to hear out of phonographic recordings."
-
-### Modern Assessment
-
-Riemann's claims about diatonic universality are:
-- Historically problematic (evolutionary stages not verified)
-- Culturally biased (projects Western norms)
-- Yet analytically productive (explains extended tonality)
-
-## Related Concepts
-
-- **Prerequisites**: scale, interval, tetrachord, pentatonicism
-- **Leads to**: tonality, mode, harmonic-function
-- **See also**: leading-tone
-
-## Common Confusions
-
-1. **Diatonic scale vs. diatonic harmony**: The scale is a collection; diatonicism (in Riemann) is a functional framework
-2. **Chromatic ≠ non-diatonic**: In expanded diatonicism, chromatic chords can be part of the diatonic framework
-3. **Historical vs. structural**: Riemann's "evolution" of scales is a structural heuristic, not verified history
-4. **Seven notes vs. functional space**: The seven-note scale is narrower than the functional space of "diatonicism"
-5. **Natural vs. Cultural**: Riemann claimed diatonicism was psychologically natural; this remains contested
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part I:
-- Chapter 1 (Holtmeier): pp. 38-39, Louis's expanded diatonicism
+The Oxford Handbook of Neo-Riemannian Music Theories:
+- Chapter 1 (Holtmeier): pp. 38-39, Louis's expanded diatonicism and five tonal genders
 - Chapter 4 (Gelbart/Rehding): pp. 148-158, scalar evolution toward diatonicism
+
+# Verification Notes
+
+- Dual-level treatment: scalar-evolutionary (Ch. 4) and functional-expanded (Ch. 1)
+- Louis quotation directly from Ch. 1 notes
+- Evolutionary narrative from Ch. 4 primary source analysis
+- Confidence: HIGH — explicit treatment in both chapters
+- Re-extracted from v2 card; preserved: Louis's five tonal genders, the expanded diatonicism concept, and the evolutionary stages. Added the Ch. 4 evolutionary dimension.

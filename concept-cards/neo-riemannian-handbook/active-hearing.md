@@ -1,115 +1,121 @@
 ---
-concept: Active Hearing
-category: theory
-source: The Oxford Handbook of Neo-Riemannian Music Theories
-authors: William E. Caplin
-chapter: "Ch 15: Riemann's Theories of Rhythm and Meter"
-pdf_page: null
-chapter_number: null
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Active Hearing (Aktives Horen)
+slug: active-hearing
+
+# === CLASSIFICATION ===
+category: rhythm-and-meter
+subcategory: aesthetic-principles
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "William E. Caplin"
+chapter: "Riemann's Theories of Rhythm and Meter"
+chapter_number: 15
+pdf_page: 420
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "aktives Horen"
+  - "active listening"
+  - "goal-directed hearing"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - auftakttheorie
+  - schlusswirkung
+  - expressed-meter
+  - harmoniewirkung
+contrasts_with:
+  - notated-meter
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is Riemann's principle of active hearing?"
+  - "How does active hearing support Riemann's end-accented Auftakttheorie?"
+  - "What are the analytical consequences of active hearing?"
 ---
 
-# Active Hearing
-
-## Quick Definition
+# Quick Definition
 
 Riemann's aesthetic principle that listening is a goal-directed cognitive activity in which we actively anticipate coming accents and resolutions rather than passively receiving sounds, forming the philosophical foundation for his end-accented Auftakttheorie.
 
-## Formal Definition
+# Core Definition
 
-**Active hearing** (German: *aktives Horen*) is Riemann's foundational aesthetic principle underlying his entire approach to music theory. From "Ideen zu einer 'Lehre von den Tonvorstellungen'":
+**Active hearing** (aktives Horen) is Riemann's foundational aesthetic principle. From "Ideen zu einer 'Lehre von den Tonvorstellungen'": "A guiding principle that extends throughout my music-theoretic and music-aesthetic work... is that music listening is not merely a passive processing of sound effects in the ear but, on the contrary, a highly developed manifestation of the logical functions of the human intellect" (quoted by Caplin, Ch. 15, p. 420).
 
-> "A guiding principle that extends throughout my music-theoretic and music-aesthetic work... is that music listening is not merely a passive processing of sound effects in the ear but, on the contrary, a highly developed manifestation of the logical functions of the human intellect."
+Core claims: listening is cognitively active; we hear toward goals (accents, cadences); the unaccented leads to the accented at every level. This supports Auftakttheorie: all groupings are end-accented, the "8" function is invariant because music is goal-directed, and Schlusswirkungen (cadential effects) are the ultimate goals.
 
-**Core Claims**:
-1. Listening is cognitively active, not passive reception
-2. We hear *toward* goals (accents, cadences, resolutions)
-3. We do not passively relate sounds to what preceded them
-4. Musical logic operates through this goal-directed anticipation
-5. The unaccented leads to the accented at every level
+# Prerequisites
 
-**Theoretical Consequences**:
-- Supports *Auftakttheorie*: all groupings are end-accented
-- The "8" function is invariant because music is goal-directed
-- "Statement-response" (*Aufstellung-Antwort*) places weight on the response
-- Cadences (*Schlusswirkungen*) are the ultimate goals of musical motion
+Foundational concept with no prerequisites -- active hearing is the root aesthetic principle underlying Riemann's mature theory.
 
-**Opposition to Passive Models**: Active hearing stands against theories where:
-- Accents mark beginnings (initial accentuation)
-- Listeners simply process what has occurred
-- Musical meaning is retrospective rather than anticipatory
+# Key Properties
 
-## Musical Context
+1. **Goal-directed**: We hear toward coming accents, not away from past ones
+2. **Anti-passive**: Opposes theories where accents mark beginnings (initial accentuation)
+3. **Universal scope**: Underlies ALL of Riemann's mature theory, not just metrics
+4. **Prescriptive**: As much about how we should hear as how we do hear
+5. **Philosophical roots**: Reflects 19th-century Idealist philosophy ("logical functions of the human intellect")
 
-Active hearing connects Riemann's metric theory to broader nineteenth-century aesthetics:
+# Construction / Recognition
 
-- Music as purposive, teleological unfolding
-- Listening as intellectual/spiritual activity
-- The artwork as vehicle for active engagement
-- Musical logic as analogous to linguistic/logical understanding
+Active hearing manifests in Riemann's analyses through end-accented phrasing: measures 1-7 are upbeat to measure 8. The "8" function receives primary structural weight because active hearing directs attention toward the cadential arrival, not the initial statement.
 
-**Analytical Implications**:
-- Analysis should reveal the goal-directed structures listeners anticipate
-- Phrase endings are more significant than phrase beginnings
-- Performers should project goal-directedness in their interpretations
-- "Reading between the lines" reveals the anticipated structures
+# Context & Application
 
-**Limitations and Critiques**: Many modern theorists find:
-- Beginning-accented models equally valid (Hauptmann, others)
-- Passive and active hearing may coexist
-- End-accentuation at all levels is too dogmatic
-- Some musical styles emphasize beginnings over endings
+Caplin (Ch. 15) clarifies five criteria Riemann uses to justify metrical analyses: Harmoniewirkung (effect of harmony), motivic imitation, durational accent, tonal accent, and Schlusswirkung (effect of cadence). Active hearing connects Riemann's metric theory to broader 19th-century aesthetics: music as purposive, teleological unfolding; listening as intellectual/spiritual activity.
 
-## Examples
+# Examples
 
-### Basic
+**Passive vs. active models** (Caplin, Ch. 15): Passive (beginning-accented): STRONG-weak-weak-weak. Active (end-accented): weak-weak-weak-STRONG. We hear TOWARD the coming accent.
 
-**Passive vs. Active hearing models**:
-
-Passive (beginning-accented):
-```
-STRONG - weak - weak - weak | STRONG - weak - weak - weak
-Accent marks beginning; subsequent events relate back to it.
-```
-
-Active (end-accented):
-```
-weak - weak - weak - STRONG | weak - weak - weak - STRONG
-We hear TOWARD the coming accent; the accent is the goal.
-```
-
-**Harmonic anticipation**:
-```
-Progression: I - IV - V - I
-Passive: Each chord is understood in relation to the preceding
-Active: The entire progression aims at the final tonic resolution
-```
-
-### From Repertoire
-
-**Eight-measure period**:
-- Passive model: Measure 1 is accented; subsequent measures relate to it
-- Active model (Riemann): Measures 1-7 are upbeat to measure 8; we hear toward the cadence
-
-**"Leonore Overture" No. 2**: Riemann's analysis places greater metrical weight on the second phrase (the "response") because active hearing directs attention toward the answering statement, not the initial statement.
+**Leonore Overture No. 2** (Caplin, Ch. 15, p. 427): Riemann's analysis places greater metrical weight on the second phrase (the "response") because active hearing directs attention toward the answering statement, not the initial statement. "It is easy to recognize that the relationship of statement and response is expressed... in the return of the same or similar melodic phrases."
 
 **Beethoven sonatas**: Riemann's analyses consistently locate primary structural weight on cadential arrivals ("8" functions), reflecting the listener's anticipation of resolution rather than attention to beginnings.
 
-## Related Concepts
+# Relationships
 
-- **Leads to**: auftakttheorie, schlusswirkung
-- **See also**: expressed-meter, harmonic-function
+## Builds Upon
+- No prerequisites; this is the foundational aesthetic principle
 
-## Common Confusions
+## Enables
+- Auftakttheorie: All end-accented groupings derive from active hearing
+- Schlusswirkung: Cadential effects receive metrical weight through active hearing
 
-- Active hearing is an AESTHETIC principle, not an empirical claim about all listeners
-- It does NOT deny that beginnings have any significance
-- The theory is prescriptive (how we SHOULD hear) as much as descriptive
-- Active hearing underlies ALL of Riemann's mature theory, not just metrics
-- Other theorists propose different models of listening that are equally coherent
-- "Logical functions of the human intellect" reflects 19th-century Idealist philosophy
-- Active hearing justifies analytical choices but does not prove them correct
+## Related
+- Expressed meter: Active hearing provides criteria for how meter emerges from content
+- Harmoniewirkung: Harmonic change creates accent through active anticipation
 
-## Source Reference
+## Contrasts With
+- Notated meter: Active hearing may override what the notation appears to indicate
+- Beginning-accented models (Hauptmann and others)
 
-The Oxford Handbook of Neo-Riemannian Music Theories, Chapter 15: William E. Caplin, "Riemann's Theories of Rhythm and Meter"
+# Common Errors
+
+- **Error**: Thinking active hearing denies any significance to phrase beginnings.
+  **Correction**: It does not deny significance to beginnings, but places primary weight on endings/goals.
+
+# Common Confusions
+
+- **Confusion**: Taking active hearing as an empirical claim about all listeners.
+  **Clarification**: It is an aesthetic principle -- prescriptive (how we SHOULD hear) as much as descriptive.
+
+- **Confusion**: Limiting active hearing to metrics.
+  **Clarification**: Active hearing underlies ALL of Riemann's mature theory, including harmony, not just rhythmic analysis.
+
+# Source Reference
+
+Caplin, William E. "Riemann's Theories of Rhythm and Meter." In *The Oxford Handbook of Neo-Riemannian Music Theories*, Chapter 15, pp. 419-432.
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: Riemann quotation, core claims, passive/active comparison, Leonore Overture example, Beethoven sonata references, limitations/critiques. Enhanced with Caplin's five criteria and precise page citations. Confidence high.

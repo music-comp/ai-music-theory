@@ -1,145 +1,120 @@
 ---
-concept: "Parallel Transformation (P)"
-category: technique
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Chapters 6-8"
-authors: "Henry Klumpenhouwer, Alexander Rehding, Dmitri Tymoczko"
+# === CORE IDENTIFICATION ===
+concept: Parallel Transformation (P)
+slug: parallel-transformation
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: neo-riemannian-operations
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Henry Klumpenhouwer"
+chapter: "Dualist Tonal Space and Transformation in Nineteenth-Century Musical Thought"
+chapter_number: 6
 pdf_page: null
-chapter_number: null
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "P transformation"
+  - "Quintwechsel"
+  - "Seitenwechsel"
+  - "Variante"
+  - "parallel mode change"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - klang
+extends:
+  - plr-transformations
+related:
+  - relative-transformation
+  - leittonwechsel
+  - seitenwechsel
+  - hexatonic-systems
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Parallel (P) transformation and how does it work?"
+  - "How does P relate to Riemann's Seitenwechsel/Variante terminology?"
+  - "Why is P called 'parallel' in English but corresponds to Riemann's 'Variante'?"
 ---
 
-# Parallel Transformation (P)
+# Quick Definition
 
-## Quick Definition
+A neo-Riemannian transformation that exchanges a major triad for its parallel minor (or vice versa) by moving the third by one semitone while holding the root and fifth fixed -- one of the three fundamental PLR operations and the simplest mode-changing transformation.
 
-A neo-Riemannian transformation that exchanges a major triad for its parallel minor (or vice versa) by moving the third by one semitone while holding the root and fifth fixed.
+# Core Definition
 
-## Formal Definition
+The **Parallel transformation (P)** maps C major (C-E-G) to C minor (C-Eb-G) by moving the third by semitone while the root and fifth remain stationary. In Riemann's terminology, P corresponds to *Seitenwechsel* or *Quintwechsel* -- the transformation preserving root and fifth while exchanging modal quality. Klumpenhouwer (Ch. 6) formalizes P as W0 in the Schritt/Wechsel system.
 
-The **Parallel transformation (P)** is one of the three fundamental neo-Riemannian operations (alongside L and R). It maps:
+P is an involution (P(P(X)) = X), preserves two common tones, and involves minimal voice leading (one semitone).
 
-- C major (C-E-G) <-> C minor (C-Eb-G)
-- Any major triad <-> its parallel minor
+# Prerequisites
 
-**Voice-leading specification**:
-- Root: stationary
-- Third: moves by semitone (E <-> Eb)
-- Fifth: stationary
+- **Klang**: Understanding major and minor triads as the fundamental harmonic units.
 
-**In Riemann's terminology**: P corresponds to *Quintwechsel* - the transformation that preserves the root and fifth while exchanging major for minor quality.
+# Key Properties
 
-**Formal properties**:
-- P is an involution: P(P(X)) = X (applying P twice returns the original)
-- P preserves two common tones
-- P involves minimal voice leading (one semitone)
+1. **Common tones**: Root and fifth preserved (the perfect-fifth frame)
+2. **Voice leading**: Third moves by semitone (1 semitone total displacement)
+3. **Mode change**: Switches between major and minor on the same root
+4. **Involution**: Applying P twice returns the original triad
+5. **Maximally smooth**: Alongside L, achieves minimum voice-leading distance for distinct triads
 
-## Historical Context
+# Construction / Recognition
 
-**Riemann's Original Conception**:
-In Riemann's dualistic framework, the parallel relationship connects chords sharing the same "frame" (root and fifth) but with different thirds:
-- C major: C (prime) - E (major third up) - G (fifth)
-- C minor (dualist): G (prime) - Eb (major third down) - C (under-fifth)
+P is identified whenever a triad changes quality (major to minor or vice versa) while maintaining the same root. In functional analysis, Riemann called P-related chords *Variante*: the parallel minor is the Variante of the major. In the Schritt/Wechsel notation, P = W0 (Seitenwechsel with zero root motion).
 
-For Riemann, both chords share C and G, but the generative logic differs fundamentally.
+# Context & Application
 
-**Neo-Riemannian Reinterpretation**:
-Modern theory redefines P in terms of voice leading rather than acoustic generation:
-- P simply exchanges the third
-- The "parallel" relationship emphasizes the single-semitone motion
-- P is one of three "maximally smooth" operations on triads
+P appears in modal mixture passages, Picardy thirds (minor to parallel major at cadences), and structural major/minor alternation. Rehding (Ch. 7) analyzes the first subject of Brahms's Clarinet Trio Op. 114 closing on the tonic *Variante* -- moving from A minor to A major, where P marks structural points in the form (p. 224). The "characteristic dissonances" of P-related chords are inversionally related in Riemann's system: major dominant adds minor seventh; minor subdominant adds major sixth (p. 224).
 
-## Theoretical Framework
+# Examples
 
-**Position in PLR Group**:
-P, along with L (Leittonwechsel) and R (Relative), generates all triadic transformations. Any succession of triads can be described as a sequence of these operations.
+**Basic P transformation**: C major (C-E-G) --P--> C minor (C-Eb-G). Root C and fifth G stay; third E moves to Eb.
 
-**Compared to L and R**:
-| Operation | Common Tones | Moving Voice | Distance |
-|-----------|-------------|--------------|----------|
-| P | 2 (root, fifth) | Third | 1 semitone |
-| L | 2 (third, fifth) | Root | 1 semitone |
-| R | 2 (root, third) | Fifth | 2 semitones |
+**Brahms Op. 114** (Rehding, Ch. 7): Opening phrase moves from A minor (tonic) through D minor (subdominant) to A major (tonic Variante). The final A major is the P-transform of tonic A minor (p. 224).
 
-P and L are "maximally smooth" (semitonal motion); R involves whole-tone motion.
+**Compound transformations**: LP: C major -> C minor -> Ab major (major third down). PL: C major -> E minor -> E major (major third up). PR: C major -> C minor -> Eb major.
 
-**Inversional Character**:
-P relates major and minor triads that share the same root in conventional (non-dualist) terms. In dualist terms, P exchanges a Klang with its modal opposite while preserving the outer boundary.
+# Relationships
 
-## Musical Context
+## Builds Upon
+- PLR transformations as a system
 
-**The "Variante" Relationship**:
-Riemann called the parallel minor the *Variante* of the major (and vice versa). This appears frequently in:
-- Modal mixture passages
-- Picardy thirds (minor to parallel major at cadences)
-- Alternating major/minor color
+## Enables
+- Hexatonic systems: LP/PL cycles generate hexatonic spaces
+- Mode mixture analysis
 
-**In Brahms's Clarinet Trio** (Rehding's analysis):
-The first subject closes on the tonic *Variante* - moving from A minor to A major:
-- Maintains the structural tones A and E
-- The third C <-> C# provides color change
-- P marks structural points in the form
+## Related
+- Seitenwechsel: Riemann's own term for the same operation
+- Relative transformation (R): Completes the PLR trio
 
-**"Characteristic Dissonances"**:
-Rehding notes that P-related chords receive different "characteristic dissonances" in Riemann's system:
-- Major dominant: adds minor seventh (dominant seventh chord)
-- Minor subdominant: adds major sixth (the "under-seventh")
+## Contrasts With
+- R transformation: P changes mode on same root; R changes to the relative key
 
-These are inversionally related, reflecting the dualist conception.
+# Common Errors
 
-## Examples
+- **Error**: Confusing "parallel" (English neo-Riemannian) with "Parallele" (German Riemannian).
+  **Correction**: In German, "Parallele" means relative (C major's Parallele is A minor). P is called "parallel" in English but Variante/Quintwechsel/Seitenwechsel in German.
 
-### Basic P Transformation
-```
-C major (C-E-G) --P--> C minor (C-Eb-G)
-                <--P--
-```
+# Common Confusions
 
-### In Context (Brahms Op. 114)
-Opening phrase harmonic outline:
-- A minor (Tonic)
-- D minor (Subdominant)
-- A major (Tonic Variante)
+- **Confusion**: Thinking P and R are similar operations.
+  **Clarification**: P exchanges C major with C minor (same root); R exchanges C major with A minor (relative key). These are fundamentally different.
 
-The final A major is the P-transform of the tonic A minor.
+# Source Reference
 
-### Compound Transformations
-- **LP**: C major -> C minor -> Ab major (Terzschritt - major third down)
-- **PL**: C major -> C minor -> E major (Terzschritt - major third up)
-- **PR**: C major -> C minor -> Eb major
+Klumpenhouwer, Henry. "Dualist Tonal Space and Transformation." In *The Oxford Handbook of Neo-Riemannian Music Theories*, Chapter 6. See also Ch. 7 (Rehding, Brahms analysis) and Ch. 8 (Tymoczko, voice-leading perspective).
 
-## Related Concepts
+# Verification Notes
 
-- **Prerequisite**: triad, semitone
-- **Leads to**: hexatonic-systems
-- **See also**: relative-transformation, leittonwechsel, voice-leading-efficiency
-
-## Common Confusions
-
-1. **Parallel vs. Relative**: P exchanges C major <-> C minor (same root); R exchanges C major <-> A minor (relative relationship)
-
-2. **P in Riemann vs. modern theory**: Riemann's *Quintwechsel* had different theoretical justification but produces the same pitch result
-
-3. **"Parallel" terminology**: In German, "Parallele" means relative (C major's Parallele is A minor). P is called "parallel" in English neo-Riemannian theory but *Variante* or *Quintwechsel* in German
-
-4. **Voice-leading vs. harmonic definition**: P can be defined either by voice leading (third moves by semitone) or by chord relationship (same root, different quality)
-
-## Significance for Analysis
-
-P captures one of the three simplest ways to transform a triad:
-- Minimal voice leading (1 semitone)
-- Maintains tonal center (same root)
-- Creates modal contrast
-
-P is essential for analyzing:
-- Chromatic third relations
-- Modal mixture
-- Structural parallel major/minor alternation
-- The "hexatonic pole" (PPP... returns to start)
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part II:
-- Chapter 6: Klumpenhouwer on transformation terminology
-- Chapter 7: Rehding uses P in Brahms analysis
-- Chapter 8: Tymoczko on P as voice-leading operation
+Re-extracted from v2 card; preserved: formal definition, PLR comparison, Brahms Op. 114 analysis, compound transformations, terminological confusion between English "parallel" and German "Parallele." Confidence high.

@@ -1,169 +1,130 @@
 ---
-concept: Modulation / Harmonic Progression
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Riemann's Legacy (Ch. 1), The Nature of Harmony (Ch. 2)"
+# === CORE IDENTIFICATION ===
+concept: Modulation
+slug: modulation
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: tonal-motion
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier, Benjamin Steege"
-pdf_page: null
+chapter: "Riemann's Legacy (Ch. 1), The Nature of Harmony (Ch. 2)"
 chapter_number: null
-unit: null
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - key change
+  - Modulation (German)
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tonality
+  - harmonic-function
+extends: []
+related:
+  - applied-dominant
+  - klangvertretung
+  - funktionstheorie
+contrasts_with:
+  - applied-dominant
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does function theory distinguish modulation from applied dominants?"
+  - "What is the essence of modulation in Riemann's theory?"
 ---
 
-# Modulation / Harmonic Progression
+# Quick Definition
 
-## Quick Definition
+The change of tonal center, defined by Riemann not as the introduction of chromatic tones but as the change of which harmony serves as tonic. The essence of modulation "lies in the change of [tonal] functions."
 
-The change of tonal center from one key to another; in Riemann's theory, modulation is defined by the change of tonal *functions*, not merely by the introduction of chromatic tones.
+# Core Definition
 
-## Formal Definition
+Riemann's second foundational axiom states: "The essence of modulation lies in the change of [tonal] functions" (*Vereinfachte Harmonielehre*, 1893; Ch. 3, p. 91). This definition contrasts sharply with traditional theory, where modulation was identified by the appearance of chromatic tones.
 
-Riemann's foundational axiom states:
-> "The essence of modulation lies in the change of [tonal] functions."
+The distinction is analytically consequential: traditional analysis of a chromatic passage might identify multiple "modulations" where function theory sees a single extended tonic with applied dominants. Holtmeier demonstrates this through Emil Ergo's critique of Richter's analysis: where Richter identified modulations in nearly every measure, function theory interprets the passage as an extended tonic prolongation (Ch. 1, pp. 9-10).
 
-This definition contrasts sharply with traditional theory, where:
-- **Traditional**: "A modulation happens when a harmony foreign to the previous key occurs" (Richter)
-- **Function theory**: Modulation requires a change in which harmony serves as *tonic*
+Riemann extended the concept hierarchically: just as Klange relate to their tonic within a key, keys relate to each other within a composition. "In a piece in C major, the G-major key plays the same role or a similar role to that played in a brief C-major cadence by the G-major chord" (Ch. 2, p. 85). Large-scale modulation parallels small-scale harmonic progression.
 
-**Formal distinction**:
-- **Diatonic alteration**: Chromatic tones within maintained tonal center (not modulation)
-- **Tonicization**: Brief emphasis on secondary harmony (ambiguous)
-- **Modulation proper**: Establishment of new tonic function
+# Prerequisites
 
-## Historical Origin
+- **tonality** — Modulation is defined as change of tonic within a tonal framework
+- **harmonic-function** — The functions whose reassignment constitutes modulation
 
-### Traditional "Diatonic" Modulation
+# Key Properties
 
-Classical theory (Richter, Sechter) operated on:
-- **Verwandtschaft** (relation): Diatonic keys sharing common tones
-- **Scale matrix**: Related keys defined by overlapping scales
-- **Intersection points**: Modulation via pivot through shared diatonic degrees
+1. Defined by change of function, not change of scale
+2. Applied dominants (Zwischendominanten) are NOT modulations — the governing tonic persists
+3. Modulation mirrors the Klang-to-key relationship at a larger scale
+4. Traditional theory over-identifies modulations; function theory under-identifies them
+5. Louis preferred "intermediate harmony" (*Zwischenharmonie*) for borderline cases
+6. Contrapuntal explanations (passing chords, pedal points) can further reduce apparent modulations
 
-In C major, related keys (ignoring hierarchy):
-- D minor, E minor, F major, G major, A minor
-- (With restrictions: Bb major)
+# Construction / Recognition
 
-### Riemann's Critique
+## To Distinguish Modulation from Tonicization
+1. Does the passage establish a new tonic through cadential confirmation? → Modulation
+2. Does a chromatic chord resolve to a secondary target but the original tonic resumes? → Applied dominant (not modulation)
+3. Can the chromatic events be explained as contrapuntal phenomena (passing chords, suspensions)? → Not modulation
 
-Emil Ergo's polemic against Richter's analysis demonstrates the issue:
+# Context & Application
 
-Richter on a passage: "Measure 3 presents a modulation to D minor, since C#-E-G-Bb no longer belongs to C major but undeniably to D minor. In measure 4 it is doubtful whether the C-major triad... belongs to C major or to the following G major."
+The practical consequence of Riemann's definition was enormous for the analysis of Romantic music. As Holtmeier notes, function theory was "predestined to demonstrate how superficial are judgments that assert: 'Wagner is always modulating!'" (Ch. 1, p. 10). The applied dominant concept, together with the "major-minor key," allowed vast stretches of chromatic harmony to be heard within a single tonic.
 
-Function theory interprets the same passage as:
-- Extended tonic prolongation
-- Applied dominants (Zwischendominanten)
-- No actual modulation
+However, this also created tension: some theorists (Louis, Kurth) felt the applied dominant concept was overextended, and that some chromatic events were better explained through linear/contrapuntal means rather than as functional tonicizations.
 
-### Wagner and Chromatic Harmony
+# Examples
 
-Traditional theory's inadequacy was exposed by Romantic harmony:
-- Liszt's and Wagner's chromaticism produced "derisory amounts of modulatory processes"
-- Function theory was "predestined to demonstrate how superficial are judgments that assert: 'Wagner is always modulating!'"
+**Example 1** (Ch. 1, p. 9): Richter's analysis vs. function theory — what Richter labeled as "modulation to D minor" in measure 3 is reinterpreted as an applied dominant within C major.
 
-## Musical Context
+**Example 2** (Ch. 2, p. 85): Large-scale modulation as key relation: "the G-major key plays the same role... to that played in a brief C-major cadence by the G-major chord."
 
-### Function Theory's Reframing
+# Relationships
 
-**Applied dominants** (Zwischendominanten) allow:
-- Chromatic harmony within a single key
-- Intensification toward secondary goals without modulation
-- Extended passages under unified tonic
+## Builds Upon
+- **tonality** — Modulation changes the tonal center
+- **harmonic-function** — Modulation reassigns which chord is T
 
-**The "major-minor key"** (Hauptmann):
-- Unified tonal space with both modal inflections
-- Mixture chords belong to the key
-- Chromaticism ≠ modulation
+## Enables
+- Large-scale tonal analysis of multi-key works
 
-### Three Levels of Tonal Relations
+## Related
+- **applied-dominant** — Simulates modulation without achieving it
+- **klangvertretung** — Keys represent the principal key at a larger level
 
-Riemann extends the modulatory principle hierarchically:
-> "Just as the root of a Klang relates to its subsidiary tones (the fifth and third), just as the principal Klang relates to its subsidiary Klange (the Klang of the fifth scale degree, the Klang of the third), the principal key relates to the subsidiary keys."
+## Contrasts With
+- **applied-dominant** — Modulation establishes a new tonic; applied dominants do not
 
-In a C major composition:
-- G major key = dominant function writ large
-- E major key = third relation (Terzklang) writ large
+# Common Errors
 
-### Louis's Five Tonal "Genders"
+- **Error**: Labeling every chromatic chord as a modulation
+  **Correction**: Function theory identifies most chromatic events as applied dominants or mixture within the key
 
-Rudolf Louis distinguished:
-1. **Pure major**: Major tonic, all major functions
-2. **Minor-major**: Major with minor subdominant
-3. **Pure minor**: Minor with minor dominant (rare)
-4. **Major-minor**: "Normal minor" with major dominant
-5. **Dorian minor**: Minor with major subdominant
+# Common Confusions
 
-"Diatonicism itself has become chromatic."
+- **Confusion**: Believing function theory denies the existence of modulation
+  **Clarification**: Function theory acknowledges modulation but restricts it to genuine changes of tonic. The boundary between extended tonicization and modulation remains a judgment call.
 
-## Examples
+# Source Reference
 
-### Apparent vs. Real Modulation
+The Oxford Handbook of Neo-Riemannian Music Theories:
+- Chapter 1 (Holtmeier): pp. 9-11, function-theory critique of traditional modulation analysis
+- Chapter 2 (Steege): pp. 84-86, hierarchical key relations
+- Chapter 3 (Hyer): p. 91, Riemann's second axiom
 
-**Traditional analysis** of C: C-G-Dm-G-C-F-Dm-E-Am:
-- C major → D minor → A minor (multiple modulations)
+# Verification Notes
 
-**Function theory analysis**:
-- T - D - Sp - D - T - S - Sp - (D of Tp) - Tp
-- No modulation; extended C major with applied dominant
-
-### Beethoven's Fifth Symphony
-
-Schreyer's analysis of the finale transition:
-- 50 measures of apparent harmonic activity
-- Reduces to prolonged dominant
-- "Parenthetical" harmonies are not true modulations
-- Final reduction: T - D motion
-
-### Wagner's Tannhauser Overture
-
-Ergo's functional reading:
-- What appears as "constant modulation"
-- Reduces to T-S-D-T with ornamental chords
-- Applied dominants explain chromatic surface
-
-## Evolution/Variants
-
-### Traditional vs. Function Theory Modulation
-
-| Traditional | Function Theory |
-|-------------|-----------------|
-| Chromatic tone = new key | Chromatic tone may stay in key |
-| Scale-based definition | Function-based definition |
-| Many small modulations | Few large modulations |
-| Pivot = shared scale degree | Pivot = ambiguous function |
-
-### Louis's Synthesis
-
-Louis was "not amenable to the notion that the inner tension of Klange (based on dominant character or leading tones) would triumph one-sidedly over identification by means of root position."
-
-His approach:
-- Bass motion as primary functional criterion
-- Diatonic scaffold underlying chromatic surface
-- "Intermediate harmony" (Zwischenharmonie) for passing chromatic chords
-
-### Contrapuntal Interpretation
-
-Some theorists (Louis, Schreyer, Ergo) developed:
-- "Passing chords"
-- "Interpolated chords"
-- "Intermediate harmonies"
-- "Idealized pedal point"
-
-These allow contrapuntal voice-leading to explain apparent harmonic changes without invoking modulation.
-
-## Related Concepts
-
-- **Prerequisites**: tonality, harmonic-function, applied-dominant, key
-- **Leads to**: chromatic-harmony, pivot-chord, tonicization
-
-## Common Confusions
-
-1. **Chromatic ≠ Modulation**: In function theory, chromatic alterations may remain within a key
-2. **Brief tonicization vs. modulation**: Applied dominants don't establish new tonic
-3. **Scale vs. Function definition**: Traditional theory defines modulation by scale; Riemann defines it by function
-4. **Surface vs. Deep structure**: Many "modulations" in analysis may be surface phenomena over stable deep structure
-5. **All analysts agree**: Louis and others resisted full adoption of Zwischendominant concept, preferring contrapuntal explanations
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part I:
-- Chapter 1 (Holtmeier): pp. 9-11, contrast between traditional and function-theory modulation
-- Chapter 2 (Steege): pp. 84-86, Riemann's "Nature of Harmony" on key relations
+- Definition from Riemann's *Vereinfachte Harmonielehre* as quoted in Ch. 3
+- Analytical examples from Ergo's critique in Ch. 1
+- Hierarchical extension from Ch. 2
+- Confidence: HIGH — explicitly defined in Riemann's axiom
+- Re-extracted from v2 card; preserved: the traditional vs. function-theory comparison table, the Louis alternative, and the three-level hierarchy of tonal relations

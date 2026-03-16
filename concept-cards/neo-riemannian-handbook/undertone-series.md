@@ -1,134 +1,145 @@
 ---
-concept: Undertone Series / Dual Series
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "The Problem of Harmonic Dualism"
-authors: "Ian Bent (translator), Hugo Riemann (original)"
+# === CORE IDENTIFICATION ===
+concept: Undertone Series
+slug: undertone-series
+
+# === CLASSIFICATION ===
+category: dualism
+subcategory: acoustic-foundations
+tier: foundational
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Ian Bent"
+chapter: "Steps to Parnassus: Contrapuntal Theory and the Problem of Harmonic Dualism"
+chapter_number: 5
 pdf_page: null
-chapter_number: null
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Untertonreihe"
+  - "under-series"
+  - "dual series"
+  - "string-length series"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - overtone-series
+extends: []
+related:
+  - harmonic-dualism
+  - minor-root-problem
+  - klang
+contrasts_with:
+  - overtone-series
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the undertone series?"
+  - "How does harmonic dualism relate to the undertone series?"
 ---
 
-# Undertone Series / Dual Series
+# Quick Definition
 
-## Quick Definition
+The undertone series is a theoretical mirror image of the overtone series, constructed as the series of simple multiples with respect to string-lengths (wavelengths) rather than frequencies, historically proposed as the acoustic basis for the minor triad but ultimately reframed by Riemann as a mathematical rather than physical construct.
 
-A theoretical mirror image of the overtone series, descending from a generating tone in inverse frequency ratios, historically proposed as the acoustic basis for the minor triad but ultimately abandoned by Riemann as "pseudo-logic."
+# Core Definition
 
-## Formal Definition
+The **undertone series** (*Untertonreihe*) is constructed as the mathematical inverse of the overtone series. Where overtones represent frequency multiples (1, 2, 3, 4, 5, 6...), undertones represent frequency divisions (1, 1/2, 1/3, 1/4, 1/5, 1/6...), equivalently expressed as string-length multiples (1, 2, 3, 4, 5, 6...).
 
-The **undertone series** (German: *Untertonreihe*) is constructed as the mathematical inverse of the overtone series. Where overtones represent frequency multiples (1, 2, 3, 4, 5, 6...), undertones represent frequency divisions (1, 1/2, 1/3, 1/4, 1/5, 1/6...).
+Riemann's final position in "Das Problem" (1905, translated by Bent, Ch. 5): "There are two types of relationship: (a) the series of simple multiples with respect to frequencies (over-series), and (b) the series of simple multiples with respect to string-lengths (under-series). These series do not require verification by way of acoustical phenomena" (p. 189).
 
-**String-length/wavelength ratios**: 1 : 2 : 3 : 4 : 5 : 6 ...
+# Prerequisites
 
-Starting from G4 and descending:
-- 1 = G4 (primary tone)
-- 2 = G3 (octave below)
-- 3 = C3 (perfect fifth below octave)
-- 4 = G2 (two octaves below)
-- 5 = Eb2 (major third below two octaves)
-- 6 = C2 (perfect fifth below two octaves)
+- **Overtone series** -- The undertone series is defined as the mathematical inverse of the overtone series; understanding the overtone series is essential to grasping the mirror relationship
 
-The first six undertones outline a minor triad (G-Eb-C), providing a mirror image of the major triad's generation from overtones.
+# Key Properties
 
-**Crucial distinction**: The overtone series emerges from frequency ratios; the undertone series emerges from string-length (or wavelength) ratios. Riemann's mature insight: "The principle of major is increase in speed of vibration, the principle of minor is growth in wave-lengths."
+1. Uses the same number series as the overtone series (1:2:3:4:5:6...) but applied to string-lengths/wavelengths rather than frequencies
+2. Starting from a generating tone and descending, the first six undertones outline a minor triad
+3. Has no independent acoustic reality -- unlike overtones, undertones are not naturally produced by vibrating bodies
+4. Riemann abandoned its acoustic justification in 1905, reframing it as purely mathematical
+5. The "principle of minor is growth in wave-lengths" (p. 189)
 
-## Historical Development
+# Construction / Recognition
 
-**Oettingen's Derivation (1866)**:
-Oettingen derived the undertone series indirectly:
-1. Start with multiple tones (e.g., C, Eb, G)
-2. Find their first common overtone (G)
-3. This "phonic overtone" becomes the reference for the series
+## To Construct the Undertone Series from G4
+1. G4 (primary tone, ratio 1)
+2. G3 (octave below, ratio 2 of string-length)
+3. C3 (perfect fifth below octave, ratio 3)
+4. G2 (two octaves below, ratio 4)
+5. Eb2 (major third below two octaves, ratio 5)
+6. C2 (perfect fifth below two octaves, ratio 6)
 
-Riemann later called this approach "pseudo-logic" - a "vicious circle" that derives undertones from overtones.
+The first six undertones outline **G-Eb-C** -- a C minor triad with G as the generating "prime."
 
-**Riemann's Evolution**:
-- **1873 dissertation**: Argued undertones are generated within the ear by sound waves striking the basilar membrane
-- **1875 article**: Claimed "objective existence of undertones" in the sound wave itself
-- **1891 *Handbuch der Akustik***: Modified to claim undertones exist but are inaudible due to interference
-- **1905 "Das Problem"**: Complete abandonment - "the emancipation of the theory of consonance from real overtones is totally indispensable"
+## Comparison with Overtone Series from C2
+1. C2 (fundamental, ratio 1)
+2. C3 (octave, ratio 2 of frequency)
+3. G3 (perfect fifth above octave, ratio 3)
+4. C4 (two octaves, ratio 4)
+5. E4 (major third above two octaves, ratio 5)
+6. G4 (perfect fifth above two octaves, ratio 6)
 
-## Theoretical Significance
+The first six overtones outline **C-E-G** -- a C major triad with C as the root.
 
-**The Problem with Acoustic Justification**:
-Riemann identified multiple issues:
+# Context & Application
 
-1. **Physical non-existence**: Unlike overtones, undertones have no physical reality as acoustic phenomena
-2. **Multiple fundamentals**: Oettingen's derivation gives the minor chord three or four "fundamentals" - contradicting the idea of consonance as unity
-3. **The vicious circle**: Deriving undertones from overtones, then claiming undertones independently justify minor, is logically circular
+The undertone series was the original justification for harmonic dualism. Oettingen (1866) derived it indirectly by finding common overtones of multiple tones. Riemann initially argued for the physical existence of undertones (1873 dissertation, 1875 article), then modified his claim to say they exist but are inaudible (1891), and finally abandoned acoustic justification entirely (1905).
 
-**The Psychological Solution**:
-Riemann's resolution was to abandon acoustics entirely:
-- Neither major nor minor consonance derives from physical phenomena
-- Both derive from the mind's active organizing of tone relationships
-- The mathematical simplicity of both series (same numbers, different reference) provides equal justification
+Riemann called Oettingen's derivation "pseudo-logic" -- a "vicious circle" that derives undertones from overtones. His mature position: "the emancipation of the theory of consonance from real overtones is totally indispensable" (p. 188).
 
-**Frequency vs. Wavelength**:
-Following Hermann Lotze's aesthetics, Riemann proposed:
-- **Major**: Simplest ratios of frequency (intensity, brightness, upward-striving)
-- **Minor**: Simplest ratios of wavelength/mass (weight, darkness, downward-dragging)
+# Examples
 
-"The two are numerically best expressed through the same simple number series" - achieving true equality.
+**Riemann's key insight** (p. 189): "The principle of major is increase in speed of vibration, the principle of minor is growth in wave-lengths." Both use the ratio 4:5:6:
+- Major: 4:5:6 as frequencies = C:E:G
+- Minor: 4:5:6 as wavelengths = 15:12:10 as frequencies = C:Eb:G (when normalized)
 
-## Musical Context
+**Riemann's dismissal of acoustic undertones** (p. 188): "One does not need to stop and investigate whether [undertones] in fact exist; for even if they did exist, this fact would be no more useful for the explanation of the essence of consonance than the overtones."
 
-**Practical Implications**:
-The undertone series, though acoustically questionable, explained several musical phenomena:
-- Why the minor triad sounds "sad" or "heavy" (Hauptmann's "downward-dragging weight")
-- Why the fifth can be omitted in minor more easily than in major (overtones reinforce it)
-- Why parallel construction of major and minor modes makes theoretical sense
+# Relationships
 
-**The "Minor Root" Problem**:
-If the undertone series generates minor from its fifth downward:
-- C minor = G (prime) - Eb (under-third) - C (under-fifth)
-- Why does C function as the bass and apparent root?
+## Builds Upon
+- **Overtone series** -- The undertone series is defined as its mathematical inverse
 
-Riemann's answer: The *practical* bass differs from the *theoretical* primary tone. Placing the prime (G) in the bass would clash with its strong overtones. The under-fifth (C) in the bass allows the overtone C# to be overpowered by the chord tone C.
+## Enables
+- **Harmonic dualism** -- Provides the theoretical basis for treating minor as the mirror of major
+- **Minor root problem** -- Arises directly from the undertone series construction
 
-## Examples
+## Related
+- **Klang** -- The triadic units generated by both over- and under-series
 
-### Comparison of Series
+## Contrasts With
+- **Overtone series** -- Physically real vs. purely theoretical; ascending vs. descending
 
-**C Major from overtones**:
-```
-C2 - C3 - G3 - C4 - E4 - G4
- 1    2    3    4    5    6  (frequencies)
-```
+# Common Errors
 
-**C Minor from undertones** (primary tone G):
-```
-G4 - G3 - C3 - G2 - Eb2 - C2
- 1    2    3    4     5    6  (wavelengths)
-```
+- **Error**: Attempting to demonstrate undertones through acoustic experiments
+  **Correction**: Unlike overtones, undertones have no independent acoustic reality; Riemann himself abandoned this approach
 
-Both use the same number series; the difference is the reference domain.
+- **Error**: Using Oettingen's derivation (finding common overtones) as proof of undertones
+  **Correction**: Riemann called this "pseudo-logic" -- deriving undertones from overtones is circular
 
-### Riemann's Final Position
+# Common Confusions
 
-"There are two types of relationship:
-(a) the series of simple multiples with respect to frequencies (over-series),
-(b) the series of simple multiples with respect to string-lengths (under-series).
+- **Confusion**: Believing the undertone series must physically exist for dualism to be valid
+  **Clarification**: Riemann's mature theory does not depend on acoustic undertones; the mathematical elegance of the same number series applied to different domains suffices
 
-These series do not require verification by way of acoustical phenomena."
+- **Confusion**: Conflating string-length ratios with frequency ratios
+  **Clarification**: These are reciprocals; the undertone series uses the same numbers as overtones but applied to wavelength/string-length, producing an inverted series
 
-## Related Concepts
+# Source Reference
 
-- **Prerequisite**: overtone-series
-- **Leads to**: harmonic-dualism, klang, tonvorstellungen
-- **See also**: minor-root-problem
+Chapter 5: Ian Bent, "Steps to Parnassus," in *The Oxford Handbook of Neo-Riemannian Music Theories*, translation of Riemann's "Das Problem des harmonischen Dualismus" (1905), pp. 177-191. Key discussion of undertone abandonment at pp. 186-189.
 
-## Common Confusions
+# Verification Notes
 
-1. **Undertones don't exist acoustically**: Unlike overtones, you cannot hear undertones in a natural sound
-2. **Mathematical vs. physical**: The undertone series is a mathematical construct, not a physical phenomenon
-3. **Riemann abandoned acoustic undertones**: His mature theory does not depend on their existence
-4. **String-length vs. frequency**: These are reciprocals; the undertone series uses the same *numbers* as overtones but applied to length/wavelength
-
-## Primary Source Note
-
-Chapter 5 contains Riemann's extended discussion of the undertone series in "Das Problem des harmonischen Dualismus" (1905). This article represents Riemann's final position, explicitly abandoning acoustic undertones while preserving dualism on mathematical/psychological grounds.
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part II, Chapter 5: Ian Bent, "The Problem of Harmonic Dualism" (translation of Riemann's 1905 article)
+- Definition: Direct adaptation from Riemann's text as translated by Bent
+- Historical evolution: Synthesized from Bent's editorial notes (nn. 2, 6-7)
+- Confidence: HIGH -- the undertone series is explicitly defined and extensively discussed in the source
+- Re-extracted from v2 card; preserved: detailed construction example, Oettingen's derivation description, Riemann's evolution timeline, frequency vs. wavelength explanation

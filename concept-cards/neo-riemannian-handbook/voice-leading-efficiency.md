@@ -1,147 +1,143 @@
 ---
-concept: Voice-Leading Efficiency / Parsimonious Motion
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Inversional Symmetry and Voice Leading"
+# === CORE IDENTIFICATION ===
+concept: Voice-Leading Efficiency
+slug: voice-leading-efficiency
+
+# === CLASSIFICATION ===
+category: voice-leading
+subcategory: efficiency-metrics
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
+chapter: "Dualism and the Beholder's Eye"
+chapter_number: 8
 pdf_page: null
-chapter_number: null
-unit: null
+section: "Sections 3-5"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "parsimonious motion"
+  - "efficient voice leading"
+  - "voice-leading parsimony"
+  - "minimal voice leading"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - voice-leading
+extends: []
+related:
+  - inversional-symmetry
+  - plr-transformations
+  - maximally-smooth-cycles
+  - chromatic-second-practice
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is voice-leading parsimony?"
+  - "How do PLR transformations relate to voice-leading efficiency?"
+  - "Why do efficient voice leadings create inversional relationships?"
 ---
 
-# Voice-Leading Efficiency / Parsimonious Motion
+# Quick Definition
 
-## Quick Definition
+The principle of minimizing the total distance voices travel when moving between chords, with P and L transformations achieving maximal efficiency (one semitone total) and the observation that efficient voice leadings necessarily form inversionally related pairs, explaining the appearance of dualistic patterns in chromatic music.
 
-The principle of minimizing the total distance voices travel when moving between chords, with "parsimonious" motion involving stepwise (especially semitonal) voice leading between sonorities.
+# Core Definition
 
-## Formal Definition
+**Voice-leading efficiency** measures how much total motion occurs when one chord moves to another. Tymoczko formalizes this through DVLS (Displacement Voice-Leading Size, sum of semitones) and AVLS (Average Voice-Leading Size, DVLS divided by voice count).
 
-**Voice-leading efficiency** measures how much total motion occurs when one chord moves to another. More efficient voice leading involves less total movement.
+The key theoretical insight: since transposition and inversion are the ONLY distance-preserving operations, "the efficient voice leadings between members of any two set classes can always be grouped into inversionally related pairs" (Ch. 8). This means that any musical style emphasizing efficient voice leading will necessarily exhibit inversional symmetry -- dualistic patterns emerge as by-products of contrapuntal parsimony.
 
-**Quantitative Measures**:
-- **DVLS (Displacement Voice-Leading Size)**: Sum of semitones moved by all voices
-- **AVLS (Average Voice-Leading Size)**: DVLS divided by number of voices
+# Prerequisites
 
-**Semitonal voice leading**: A voice leading where no voice moves more than one semitone. This represents maximal efficiency between distinct chords.
+- **Voice leading** -- The basic concept that efficiency applies to
 
-**Parsimonious motion**: Voice leading that achieves harmonic change with minimal pitch movement. Richard Cohn's term emphasizing the "economical" quality of certain chord connections.
+# Key Properties
 
-## Theoretical Framework
+1. P and L transformations: DVLS = 1 (one voice, one semitone) -- maximal efficiency for triads
+2. R transformation: DVLS = 2 (one voice, one whole tone) -- near-maximal efficiency
+3. Major-third related triads: Most efficient same-quality connection (DVLS = 2)
+4. Every efficient voice leading has an equally efficient inversional partner
+5. Efficient voice leading is "centrifugal" -- it pulls music away from tonal centers
 
-**The Chromatic "Second Practice"**:
-Tymoczko proposes that 19th-century chromaticism emphasizes efficient voice leading:
+# Construction / Recognition
 
-"Virtually any voice leading between familiar chords may be used, as long as it is efficient."
+## Measuring Efficiency
+1. Map each voice from source to target chord
+2. Calculate semitone displacement for each voice
+3. Sum = DVLS; average = AVLS
+4. Lower values = more efficient
 
-This creates a "second practice" alongside traditional functional harmony:
-- First practice: Diatonic chord progressions following tonal syntax
-- Second practice: Chromatic connections using efficient voice leading
+## PLR Transformations as Efficiency
+| Transformation | Voices Moving | Semitones | DVLS |
+|---------------|---------------|-----------|------|
+| P (Parallel) | 1 | 1 | 1 |
+| L (Leittonwechsel) | 1 | 1 | 1 |
+| R (Relative) | 1 | 2 | 2 |
 
-**Why Efficiency Matters**:
-Efficient voice leading creates:
-- Smooth connections between harmonically distant chords
-- "Centrifugal force" pulling music into new key areas
-- The characteristic sound of late Romantic harmony
+## Why Efficiency Creates Inversional Patterns
+1. Start with an efficient voice leading (e.g., C major → E major)
+2. Apply inversion to the entire voice leading
+3. Result: An equally efficient voice leading (Ab major → E minor, or similar)
+4. Both are equally likely in a style that values efficiency
+5. Therefore: Inversional patterns are ubiquitous without being intentional
 
-**The PLR Connection**:
-The neo-Riemannian P, L, and R transformations are defined by their voice-leading properties:
-- P: One voice moves by semitone (maximal efficiency)
-- L: One voice moves by semitone (maximal efficiency)
-- R: One voice moves by whole tone (near-maximal efficiency)
+# Context & Application
 
-These represent the most efficient ways to transform one triad into another.
+Tymoczko's observation resolves a longstanding puzzle: why does 19th-century chromatic music exhibit inversional symmetry when composers were not thinking dualistically? The answer: they were thinking contrapuntally, seeking smooth connections between familiar sonorities. Inversion preserves smoothness, so inversionally related voice leadings are equally attractive.
 
-## Musical Context
+This explains why neo-Riemannian theory (which emphasizes inversional operations) is analytically powerful for chromatic music even though composers were not consciously employing inversional thinking.
 
-**Cataloging Efficient Voice Leadings**:
-Tymoczko lists all 16 semitonal voice leadings between triads - every way to connect consonant triads with no voice moving more than a semitone.
+# Examples
 
-Key patterns:
-- **Major third relations**: Most efficient between same-quality triads (C major to E major: 2 semitones total)
-- **Minor third relations**: Also highly efficient
-- **Perfect fifth relations**: Less efficient (require more total motion)
+**The 16 semitonal voice leadings** (Ch. 8): All voice leadings between consonant triads where no voice moves more than one semitone. These naturally group into inversionally related pairs.
 
-**Wagner and Efficient Voice Leading**:
-The "Tristan" chord resolutions systematically explore efficient voice leadings:
-- Various resolutions of {F, G#, B, D#}
-- Each uses minimal voice motion to reach a familiar sonority
-- The prelude could be described as "about" the voice-leading possibilities of this chord
+**Wagner's Tarnhelm and Valhalla** (Ch. 8): The "Tarnhelm" voice leading (G# minor → E minor) and "Valhalla" voice leading (Gb major → F major) are inversionally equivalent. But the significance is that both use maximally efficient voice leading -- "the smoke that escapes from the locomotive's chimney, rather than the furnace that makes it go."
 
-**Brahms's Intermezzo Op. 76 No. 4**:
-Tymoczko's analysis: The piece "systematically explores the voice-leading possibilities of a few characteristic sonorities."
-- The Tristan chord resolves three ways
-- Eb minor triad resolves three ways
-- Each resolution uses efficient chromatic voice leading
+**Brahms Intermezzo Op. 76 No. 4** (Ch. 8): The piece "systematically explores the voice-leading possibilities of a few characteristic sonorities," with the Tristan chord resolving three ways via efficient voice leading. The piece demonstrates compositional control over centrifugal chromatic forces.
 
-## Examples
+# Relationships
 
-### Semitonal Voice Leadings Between Triads
+## Builds Upon
+- **Voice leading** -- Efficiency is a metric applied to voice leading
 
-Most efficient (1 semitone total):
-```
-C major (C-E-G) -> C minor (C-Eb-G)  [P transformation]
-C major (C-E-G) -> E minor (B-E-G)  [L transformation, enharmonic adjustment]
-```
+## Enables
+- **Maximally smooth cycles** -- Cycles that optimize voice-leading efficiency
+- **Chromatic second practice** -- The compositional approach that prioritizes efficiency
+- **PLR transformations** -- Defined by their voice-leading efficiency properties
 
-Efficient (2 semitones total):
-```
-C major (C-E-G) -> E major (B-E-G#)  [two voices move by semitone]
-C major (C-E-G) -> Ab major (C-Eb-Ab) [two voices move by semitone]
-```
+## Related
+- **Inversional symmetry** -- Efficient voice leadings form inversionally related pairs
+- **Parsimonious trichords** -- Triads have optimal voice-leading properties in 12-TET
 
-### Wagner's Tarnhelm
-```
-G# minor (G#-B-D#) -> E minor (G-B-E)
-Total motion: G# down to G (1), D# up to E (1) = 2 semitones
-This is maximally efficient for connecting these two triads.
-```
+# Common Errors
 
-### Tristan Chord to F7
-```
-{F-G#-B-D#} -> {F-A-C-Eb}
-Motion: G# up to A (1), B down to A or up to C (variable), D# down to Eb (1)
-Multiple efficient resolutions possible.
-```
+- **Error**: Concluding that composers used inversional techniques because inversional patterns appear
+  **Correction**: Inversional patterns are by-products of voice-leading efficiency; the composers sought smoothness, not inversion
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: voice-leading, counterpoint, chromatic-harmony
-- **Leads to**: secondary-neo-riemannian-transformations, hexatonic-systems, tonnetz
-- **See also**: inversional-symmetry, chromatic-tonality
+- **Confusion**: Voice-leading efficiency is the same as common-tone preservation
+  **Clarification**: Related but distinct -- efficiency measures total motion; common-tone preservation counts shared pitches. A voice leading with two common tones and one large leap is less efficient than one with zero common tones and three small moves.
 
-## Common Confusions
+- **Confusion**: Efficient voice leading implies functional connection
+  **Clarification**: Efficiency is a contrapuntal property independent of harmonic function; C major can connect efficiently to E major despite having no functional relationship
 
-1. **Efficiency vs. smoothness**: "Smooth" often implies stepwise motion; "efficient" focuses on total distance
+# Source Reference
 
-2. **Parsimonious vs. common-tone preserving**: Related but distinct - parsimony emphasizes small motion; common-tone relations emphasize shared pitches
+Chapter 8: Dmitri Tymoczko, "Dualism and the Beholder's Eye," in *The Oxford Handbook of Neo-Riemannian Music Theories*. Sections 3-5. Also: Cohn, "Maximally Smooth Cycles" (1996); Tymoczko, *A Geometry of Music* (2011).
 
-3. **Voice leading vs. harmonic function**: Efficient voice leading may connect functionally unrelated chords
+# Verification Notes
 
-4. **Chromatic vs. diatonic efficiency**: Semitonal voice leading is inherently chromatic in most contexts
-
-## Theoretical Significance
-
-**Explaining Chromatic Harmony**:
-Efficiency explains why certain chromatic progressions are common:
-- Major-third related triads appear frequently (most efficient same-quality connection)
-- The "Tristan" progression uses voice-leading logic, not functional logic
-- Chromatic sequences follow efficient voice-leading patterns
-
-**The Inversional Connection**:
-Since transposition and inversion preserve distances:
-- If a voice leading is efficient, its inversion is equally efficient
-- This explains why inversional relationships appear throughout chromatic music
-- "Dualism" emerges as a by-product of voice-leading concerns
-
-**Compositional Coherence**:
-Tymoczko emphasizes that efficient voice leading is "centrifugal" - it pulls music away from tonal centers. Compositional skill lies in harnessing this force:
-- Brahms returns repeatedly to the same sonorities
-- Motivic connections provide unity
-- Strategic deployment prevents "musical anarchy"
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part II, Chapter 8: Dmitri Tymoczko, "Inversional Symmetry and Voice Leading"
-
-Additional reference: Richard Cohn, "Maximally Smooth Cycles, Hexatonic Systems, and the Analysis of Late-Romantic Triadic Progressions" (cited in Tymoczko)
+- DVLS/AVLS: Referenced by Tymoczko, formally defined in his other publications
+- PLR efficiency values: Derived from standard neo-Riemannian theory, confirmed in Ch. 8
+- Inversional pairing: Directly from Tymoczko's central argument
+- Confidence: HIGH -- voice-leading efficiency is the central topic of Ch. 8's sections 3-5
+- Re-extracted from v2 card; preserved: PLR efficiency table, centrifugal metaphor, Tarnhelm/Valhalla comparison, Brahms analysis, 16 semitonal voice leadings

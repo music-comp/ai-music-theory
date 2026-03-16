@@ -1,124 +1,133 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Contextual Harmony and Context-Sensitive Analysis
+slug: contextual-harmony-analysis
+
+# === CLASSIFICATION ===
 category: analysis
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Chapter 19: Chromatic Music and Analytical Frameworks"
-authors: Robert C. Cook
-pdf_page: null
-chapter_number: null
-unit: null
+subcategory: analytical-practices
+tier: advanced
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Robert C. Cook"
+chapter: "Transformational Approaches to Romantic Harmony and the Late Works of Cesar Franck"
+chapter_number: 19
+pdf_page: 513
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - contextual analysis
+  - context-sensitive analysis
+  - contextual transformational analysis
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - plr-transformations
+  - voice-leading
+extends:
+  - transformational-theory
+related:
+  - xy-transformation-group
+  - analytical-incompleteness
+  - major-third-cycle
+contrasts_with:
+  - normative-analysis
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do I analyze chromatic progressions using neo-Riemannian tools?"
+  - "What distinguishes functional harmony from transformational harmony?"
+  - "How does contextual analysis differ from traditional harmonic analysis?"
 ---
 
-# Contextual Harmony and Context-Sensitive Analysis
+# Quick Definition
 
-## Quick Definition
+An analytical approach that derives categories from intuitive responses to the music itself rather than applying pre-existing diatonic frameworks, allowing chromatic music to "define many of its own premises within itself" while acknowledging the provisionality of the resulting model.
 
-An analytical approach that derives categories from intuitive responses to the music itself, rather than applying pre-existing diatonic frameworks, allowing chromatic music to "define many of its own premises within itself."
+# Core Definition
 
-## Formal Definition
+Cook's contextual analysis draws on Babbitt's concept of contextuality: music "defining very many of its own premises within itself, even while the modes of connection...are still pretty much defined within just a generally shared communal framework of tonality" (Cook, p. 524). The approach begins with "direct reflection on musical experience," selects salient events and gestures as models for a family of relations, formalizes and generalizes toward a model of possible relations, then traces how particular music moves through that space (pp. 524-530). It is characterized by "epistemological transparency" — explicitly acknowledging limits and provisionality — in contrast to the "masked epistemology" of Schenkerian analysis (pp. 531-532).
 
-**Contextual analysis** in Cook's neo-Riemannian sense draws on Milton Babbitt's concept of contextuality: music "defining very many of its own premises within itself, even while the modes of connection...are still pretty much defined within just a generally shared communal framework of tonality."
+# Prerequisites
 
-This approach:
-1. Begins with direct reflection on musical experience
-2. Selects salient events and gestures as models for a family of relations
-3. Formalizes and generalizes toward a model of possible relations
-4. Traces how particular music moves through that space
+- **PLR transformations** — The operations within the contextual model
+- **Voice-leading** — The basis for constructing contextual relations (directed voice-leading sums)
 
-## Epistemological Openness
+# Key Properties
 
-Cook contrasts contextual/transformational approaches with traditional ones through **epistemological transparency**:
+1. Categories derive from the music being analyzed, not from pre-existing theory
+2. Salient musical features (e.g., major-third pairs) become the basis for the relational model
+3. The model is explicitly provisional and incomplete
+4. Epistemologically open: acknowledges what the model cannot capture
+5. Combines technical language with figurative language to "tell the story of the music"
+6. Traditional analyses (contrapuntal, functional) remain part of the analytical picture
+7. Transformational theory's conceptual orderliness and epistemological transparency are strengths
 
-**Traditional Approaches** (e.g., Schenker):
-- "Masked epistemology" with tacit assumptions exempt from question
-- Epistemologically **closed**: denies knowledge not expressed in interpretation
-- Imposes diatonic categories on chromatic music
+# Construction / Recognition
 
-**Transformational Approaches**:
-- Epistemologically **open**: acknowledges limits and provisionality
-- Draws categories from intuitive responses to music heard
-- Explicitly acknowledges its own "formalism" as provisional
+## To Construct a Contextual Analysis
 
-> "Transformational theory explicitly acknowledges its own provisionality in its very formalism."
+1. Identify the salient musical feature that drives the passage (e.g., recurring interval, gesture, voice-leading pattern)
+2. Model that feature as the basis for a family of possible relations
+3. Formalize the family using algebraic structure (e.g., the X/Y group)
+4. Trace the music's path through the resulting space
+5. Use figurative language (programmatic, narrative) to animate the technical description
+6. Acknowledge what the model excludes
 
-## The Problem with Chromaticism
+# Context & Application
 
-Cook identifies why traditional approaches struggle with chromatic music:
+Cook develops contextual analysis through Franck's symphonic poem *Le chasseur maudit* ("The Accursed Huntsman"). Traditional contrapuntal and functional analyses each struggle with the passage at mm. 129-140 because each approach has difficulty "negotiating between two different concepts of a triad: as an object occurring on the musical surface, and as a token for some higher level category, be it *Stufe* or function" (p. 531). The contextual model, built on major-third pairs and the X/Y transformation group, captures "important features of our earliest intuitions" (p. 531).
 
-1. **Ontological confusion**: The triad serves dual roles as surface object and token for higher category (Stufe or function)
+# Examples
 
-2. **Conceptual priority threatened**: Dominant-tonic may no longer define hierarchical boundaries; consonance/dissonance categories lose significance
+**Franck, *Le chasseur maudit*, mm. 129-140** (pp. 524-530): The passage is "chromatic and modulatory" yet "sehr sanft." Cook identifies major-third pairs as the basic motion, encloses triad pairs in single nodes, and constructs the X/Y group based on directed voice-leading sums. The resulting network models the music's circumnavigation (or resistance to circumnavigation) of triadic space.
 
-3. **Missing the point**: Rich contrapuntal and functional analyses may not capture what's intuitively important
+**The programmatic connection** (pp. 532-533): Cook uses Burger's tale — the count's good conscience saying "Turn back!" — as figurative language to describe how X transformations arrest the Y-transformation circumnavigation. "We do not assert that the music retells Burger's tale. Instead, we tell the story of the music *through* Burger's tale."
 
-## Franck's *Le chasseur maudit* as Case Study
+**The complete circumnavigation** (pp. 540-542): In the final section (mm. 273-346), the music completes its tour of the triadic space. "The hunter is damned."
 
-The passage (mm. 129-140) is "chromatic and modulatory" yet "sehr sanft" (very gentle):
-- Voice-leading is smooth (chromatic semitone)
-- Sequential structure submerges complexity
-- Easy character doesn't reflect harmonic complexity
+# Relationships
 
-**Problem**: Contrapuntal and functional analyses "seem to miss the point of the music"---they don't promote contextually important features.
+## Builds Upon
+- **Transformational theory** — Provides the general framework for constructing contextual models
+- **PLR transformations** — Specific operations used within the model
 
-## Constructing a Contextual Model
+## Enables
+- **X/Y transformation group** — The specific algebraic structure Cook develops
+- **Major-third cycle** — The structural feature that drives the contextual model
 
-Cook's method for Franck:
+## Related
+- **Analytical incompleteness** — A necessary consequence of contextual modeling
 
-1. **Identify salient feature**: Major-third pairs as basic motion
-2. **Model as unified object**: Enclose triad pairs in single nodes
-3. **Recognize gesture**: Departure and return to "home" pair
-4. **Formalize**: X/Y transformations based on directed voice-leading sums
+## Contrasts With
+- **Normative analysis** — Contextual analysis does not impose pre-existing norms
 
-The resulting **X/Y group** distinguishes:
-- **X transformations**: Mode-switching (eXchange)
-- **Y transformations**: Mode-preserving
+# Common Errors
 
-## The Programmatic Connection
+- **Error**: Discarding contrapuntal and functional analyses when adopting contextual analysis
+  **Correction**: Cook emphasizes these are "not merely missteps on the path, or straw men to be knocked down" — they remain part of the analytical picture (p. 531)
 
-Cook uses Burger's tale (the source for Franck's program) as **figurative language** to animate technical description:
+- **Error**: Treating the contextual model as a complete account
+  **Correction**: "An analytical approach built on such principles will produce incomplete analyses" by design (p. 531)
 
-> "We do not assert that the music retells Burger's tale. Instead, we tell the story of the music *through* Burger's tale."
+# Common Confusions
 
-The "turn back" warning from the good conscience corresponds to harmonic reversals in the transformational network.
+- **Confusion**: Believing contextual analysis is purely subjective
+  **Clarification**: The model uses rigorous algebraic structure; "contextual" refers to deriving categories from the music, not abandoning formal tools
 
-## Analytical Incompleteness
+- **Confusion**: Thinking contextual analysis replaces traditional approaches
+  **Clarification**: It complements them, modeling what they miss while they model what it excludes
 
-Cook embraces incompleteness as a feature, not a bug:
+# Source Reference
 
-> "An analytical approach built on such principles will produce incomplete analyses because the building of such a model requires that a significant amount of the musical experience be excluded."
+Cook, Robert C. "Transformational Approaches to Romantic Harmony and the Late Works of Cesar Franck." Chapter 19 in *The Oxford Handbook of Neo-Riemannian Music Theories*, pp. 513-543.
 
-This suits chromatic-yet-triadic music because it "often works in the seams between traditional diatonic hierarchies and a more fluid syntax."
+# Verification Notes
 
-## What the Contextual Approach Captures
-
-For Franck:
-- Major-third pairs as motivic units
-- Shift to minor as structural event (arresting circumnavigation)
-- F# as agent of departure and return
-- "Return" as reversal, not continuation
-
-## What Traditional Approaches Contributed
-
-Cook emphasizes that contrapuntal and functional hearings remain **part of the analytical picture**:
-- Contrapuntal analysis: Importance of semitonal voice-leading, F# as pivot
-- Functional analysis: Parallel between local third pairs and global endpoints
-
-These are "not merely missteps on the path, or straw men to be knocked down."
-
-## Related Concepts
-
-- **Prerequisite**: secondary-neo-riemannian-transformations, voice-leading
-- **Leads to**: transformational-theory
-- **See also**: analytical-values-paradigms
-
-## Critical Distinction
-
-Contextual analysis differs from both:
-- **Immanent claims** (Schenkerian): Structure is "in" the music
-- **Pure esthesis**: Only subjective response matters
-
-Instead, it models "our very engagement with...contrapuntal thinking and functional thinking" as part of what drives interest in alternatives.
-
-## Source Reference
-
-Cook, Robert C. "Chromatic Music and Analytical Frameworks." Oxford Handbook of Neo-Riemannian Music Theories, Chapter 19, pp. 513-543.
+Re-extracted from v2 card; preserved: the epistemological openness discussion, the Franck case study, the programmatic connection, and the emphasis on analytical incompleteness. V2 card lacked v3.1 frontmatter. Confidence is high: contextual analysis is the explicit methodology Cook develops and advocates throughout the chapter.

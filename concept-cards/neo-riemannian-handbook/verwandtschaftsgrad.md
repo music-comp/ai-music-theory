@@ -1,155 +1,128 @@
 ---
-concept: "Verwandtschaftsgrad (Degree of Relatedness)"
-category: theory
-pdf_page: null
-chapter_number: null
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Verwandtschaftsgrad
+slug: verwandtschaftsgrad
+
+# === CLASSIFICATION ===
+category: pitch-space
+subcategory: distance metrics
+tier: intermediate
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Tonnetz from Acoustic to Metaphorical"
-authors: "Gollin"
+source_slug: neo-riemannian-handbook
+authors: "Edward Gollin"
+chapter: "From Acoustical to Metaphorical: The Tonnetz from Oettingen to Riemann"
+chapter_number: 9
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "degree of relatedness"
+  - "grade of kinship"
+  - "Verwandtschaftsgrad (degree of relationship)"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tonnetz
+extends: []
+related:
+  - traversable-landscape
+  - harmonieschritte
+  - tonal-pitch-space
+  - quintschritt-terzschritt
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How is harmonic distance measured on the Tonnetz?"
+  - "What is Verwandtschaftsgrad and how does it work?"
 ---
 
-# Verwandtschaftsgrad (Degree of Relatedness)
+# Quick Definition
 
-## Quick Definition
+Riemann's concept of measuring harmonic distance between tones, chords, or keys by counting generator steps along paths on the Tonnetz, marking the conceptual transition from viewing the Tonnetz as a static frequency table to a navigable space with a path-based distance metric.
 
-Riemann's concept of measuring harmonic distance between chords or keys by counting steps on the Tonnetz, marking the transition from understanding the Tonnetz as a frequency calculator to viewing it as a navigable space with path-based distance metrics.
+# Core Definition
 
-## Formal Definition
+**Verwandtschaftsgrad** (German: "degree of relationship" or "grade of kinship") quantifies the closeness of harmonic relationship by measuring the number of generator steps required to connect two points on the Tonnetz. Introduced by Riemann in the *Musik-Lexikon* (1894 edition), it formalized the idea that the Tonnetz is a space with meaningful distances. Given generators Q (fifth) and T (third), the Verwandtschaftsgrad between two tones or chords equals the minimum number of generator steps required to traverse the path connecting them. Gollin identifies this introduction as a pivotal moment in the Tonnetz's evolution: the table ceased being a static reference of frequency calculations and became a "traversable landscape" where distance, direction, and path carry meaning (Ch. 9).
 
-**Verwandtschaftsgrad** (German: "degree of relationship" or "grade of kinship") quantifies:
-- The closeness between two tones, chords, or keys
-- Measured by the number of generator steps required
-- Realized as path length on the Tonnetz
+# Prerequisites
 
-### Riemann's Introduction
-In the *Musik-Lexikon* (1894 edition), Riemann introduced:
-- Explicit distance measurement between Klangs
-- Path counting as the measure
-- The Tonnetz as the space where distance is computed
+- **Tonnetz**: The spatial framework within which distances are measured
 
-### Path-Based Calculation
-Given generators Q (fifth) and T (third):
-- C to G: 1 step (Q)
-- C to E: 1 step (T)
-- C to D: 2 steps (Q²)
-- C to A: 2 steps (Q⁻¹T or TQ⁻¹)
-- C to F#: 3+ steps
+# Key Properties
 
-## Significance for Tonnetz Interpretation
+1. **Path-based measurement**: Distance equals the minimum number of generator steps (Q and T) along any path
+2. **Generator-dependent**: The distance metric depends on which intervals are chosen as generators
+3. **Shortest-path principle**: Verwandtschaftsgrad takes the shortest available path (e.g., C to E = 1 step via T, not 4 steps via Q^4)
+4. **Applies at multiple levels**: Works for tone-to-tone, chord-to-chord, and key-to-key relationships
+5. **Includes mode change**: Adding Seitenwechsel counts as an additional step
 
-### From Matrix to Landscape
-The introduction of Verwandtschaftsgrad marked a conceptual shift:
+# Construction / Recognition
 
-**Before (Oettingen)**:
-- Tonnetz entries are calculation results
-- Spatial position records exponents
-- "Distance" is not a primary concept
+To calculate Verwandtschaftsgrad between two points:
+1. Locate both points on the Tonnetz
+2. Count horizontal moves (Q or Q^-1, fifths)
+3. Count vertical moves (T or T^-1, thirds)
+4. Sum for total Verwandtschaftsgrad
+5. If comparing across mode (major to minor), add 1 for Seitenwechsel
 
-**After (Riemann 1894)**:
-- Tonnetz is a navigable space
-- Paths between entries are meaningful
-- Distance = path length = degree of relatedness
+Example: C to E = 1 (one T step). C major to A minor = 2 (Q^-1 + T, or T then Seitenwechsel, depending on path).
 
-### Compositional Implications
-Composers "navigate" the Tonnetz:
-- Close modulations: short paths
-- Distant modulations: long paths
-- Chromatic progressions: complex trajectories
+# Context & Application
 
-## Calculation Methods
+Verwandtschaftsgrad represents an intermediate stage between pure acoustics and full transformational theory. It presupposes that the Tonnetz is a navigable space (contra Oettingen's static table) but does not yet treat the operations as formal group transformations (as Lewin and neo-Riemannians later would). The concept anticipates Lewin's "characteristic gesture" between points and Cohn's emphasis on cycles and paths.
 
-### Using Q and T
-Distance in the standard Tonnetz:
-- Count horizontal moves (Q or Q⁻¹)
-- Count vertical moves (T or T⁻¹)
-- Sum = total Verwandtschaftsgrad
+# Examples
 
-### Example: C major to E major
-- Path 1: C → G → D → A → E (4 fifths) = 4 steps
-- Path 2: C → E (1 third) = 1 step
-- Verwandtschaftsgrad = 1 (shortest path)
+From Gollin's discussion (Ch. 9):
+- C to G: Verwandtschaftsgrad = 1 (one Q step)
+- C to E: Verwandtschaftsgrad = 1 (one T step)
+- C to D: Verwandtschaftsgrad = 2 (Q^2, two fifths)
+- C to A: Verwandtschaftsgrad = 2 (Q^-1 then T, or TQ^-1)
 
-### Including Mode Change
-For major/minor relationships:
-- Add Seitenwechsel (⊕) where needed
-- Each mode change adds 1 step
-- C major to A minor: T⊕ = 2 steps
+Riemann's introduction in the 1894 Musik-Lexikon accompanied the use of Drobisch's symbolic notation (Q for fifth, T for third), which had shifted thinking from ratios to step-counting.
 
-## Relationship to Modern Distance Metrics
+# Relationships
 
-### Voice-Leading Distance
-Neo-Riemannian theory often measures distance by voice-leading displacement:
-- P: 1 semitone
-- L: 1 semitone
-- R: 2 semitones
+## Builds Upon
+- tonnetz (the space in which distances are measured)
 
-This is related but not identical to Verwandtschaftsgrad.
+## Enables
+- traversable-landscape (Verwandtschaftsgrad operationalizes the notion of the Tonnetz as a navigable space)
+- harmonieschritte (the classification of chord-to-chord relationships by distance and type)
 
-### Lerdahl's Tonal Distance
-Fred Lerdahl's chord distance formula incorporates:
-- Circle-of-fifths distance (similar to Q count)
-- Mode change
-- Non-common tones
+## Related
+- tonal-pitch-space (Lerdahl's modern hierarchical distance metric addresses similar questions)
+- quintschritt-terzschritt (Q and T are the generators used to measure Verwandtschaftsgrad)
 
-This operationalizes similar intuitions with different weighting.
+## Contrasts With
+(none specific)
 
-### Comparison
+# Common Errors
 
-| Metric | Basis | C to G | C to E | C+ to c- |
-|--------|-------|--------|--------|----------|
-| Verwandtschaftsgrad | Path length | 1 | 1 | 1 |
-| PLR steps | Transformation count | 2 (LR) | 2 (LP or RL) | 1 (P) |
-| Voice-leading | Semitone motion | 2 | 3 | 1 |
+- **Error**: Assuming Verwandtschaftsgrad is the same as voice-leading distance
+  **Correction**: Verwandtschaftsgrad measures path length in generator steps on the Tonnetz; voice-leading distance (DVLS/AVLS) measures total semitone displacement between chords. These are related but distinct metrics.
 
-## Analytical Applications
+# Common Confusions
 
-### Key Distance
-Verwandtschaftsgrad applies to keys:
-- C major to G major: 1 (one fifth)
-- C major to A minor: 2 (relative via third + mode)
-- C major to F# major: 3+ (depending on path)
+- **Confusion**: There is always a unique shortest path between two points
+  **Clarification**: Multiple paths of the same minimal length may exist (e.g., C to A can go Q^-1 then T, or T then Q^-1); Verwandtschaftsgrad counts the minimal length regardless of which path is taken
 
-### Modulation Complexity
-Complex modulations traverse more steps:
-- Diatonic modulation: 1-2 steps
-- Chromatic modulation: 3-4 steps
-- Enharmonic modulation: potentially infinite (in just intonation)
+- **Confusion**: Verwandtschaftsgrad is a fully formalized mathematical distance
+  **Clarification**: Riemann introduced it as a conceptual measure of harmonic proximity; the full group-theoretic formalization came later through Klumpenhouwer and others
 
-### Formal Analysis
-Large-scale tonal plans can be charted:
-- Exposition: Tonic region
-- Development: Increasing Verwandtschaftsgrad
-- Recapitulation: Return to minimal Verwandtschaftsgrad
+# Source Reference
 
-## Historical Position
+Gollin, Edward. "From Acoustical to Metaphorical: The Tonnetz from Oettingen to Riemann." In *The Oxford Handbook of Neo-Riemannian Music Theories*, edited by Edward Gollin and Alexander Rehding. Oxford University Press, 2011. Chapter 9.
 
-### Between Acoustics and Transformation
-Verwandtschaftsgrad represents:
-- A move beyond pure acoustics (frequency ratios)
-- Not yet fully transformational (operations on objects)
-- An intermediate stage: "distance in navigable space"
+Riemann, Hugo. *Musik-Lexikon*, 1894 and later editions.
 
-### Prefiguring Neo-Riemannian Theory
-The concept anticipates:
-- Lewin's "characteristic gesture" between points
-- Cohn's emphasis on path and cycle
-- Geometric models of harmonic space
+# Verification Notes
 
-## Related Concepts
-
-- **Prerequisite**: tonnetz, harmonieschritte
-- **Leads to**: tonal-pitch-space, voice-leading-graph
-- **See also**: combinatorial-group-theory
-
-## Common Confusions
-
-- **Path vs. destination**: Verwandtschaftsgrad measures the journey, not just the endpoint
-- **Multiple paths**: Different paths between same endpoints may have different lengths
-- **Generator choice matters**: Distance depends on which generators define the space
-
-## Source References
-
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 9: Edward Gollin, "From Acoustic to Metaphorical"
-- Riemann, *Musik-Lexikon* (1894 and later editions)
+Re-extracted from v2 card; preserved: calculation examples, comparison with modern distance metrics, historical positioning between acoustics and transformation theory. High confidence: explicitly discussed by Gollin as a pivotal development in Ch. 9.

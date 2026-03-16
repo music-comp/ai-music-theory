@@ -1,162 +1,141 @@
 ---
-concept: Problem of Minor Chord Root
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "The Problem of Harmonic Dualism"
-authors: "Ian Bent (translator), Hugo Riemann (original)"
+# === CORE IDENTIFICATION ===
+concept: Minor Root Problem
+slug: minor-root-problem
+
+# === CLASSIFICATION ===
+category: dualism
+subcategory: theoretical-challenges
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Ian Bent"
+chapter: "Steps to Parnassus: Contrapuntal Theory and the Problem of Harmonic Dualism"
+chapter_number: 5
 pdf_page: null
-chapter_number: null
-unit: null
+section: "Section V"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "problem of the Grundton"
+  - "problem of the fundamental"
+  - "minor chord root controversy"
+  - "Grundton problem"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - harmonic-dualism
+  - undertone-series
+extends: []
+related:
+  - klang-representation
+  - consonance-dissonance-dualism
+contrasts_with:
+  - monism-vs-dualism
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the minor root problem in dualist theory?"
+  - "How do monism and dualism differ in their treatment of minor?"
+  - "Why is the bass of the minor triad not the same as its dualist prime?"
 ---
 
-# Problem of Minor Chord Root (Dualism Controversy)
+# Quick Definition
 
-## Quick Definition
+The central challenge for harmonic dualism: explaining why the fifth of the minor triad functions as its generative "prime" in theory while the bass (traditionally called the "root") dominates in practical voice leading, cadences, and chord naming.
 
-The central challenge for harmonic dualism: explaining why the fifth of the minor triad functions as its generative "prime" in theory, while the bass (traditionally called the "root") dominates in practical voice leading, cadences, and chord naming.
+# Core Definition
 
-## Formal Definition
+In dualist theory, the minor triad is constructed downward from its fifth: C minor = G (prime) - Eb (under-third) - C (under-fifth). Riemann acknowledged this as "the principal tone [*Grundton*] of the minor chord" -- the "obstacle" that caused even his followers to waver (Ch. 5).
 
-In dualist theory, the minor triad is constructed downward from its fifth:
-- C minor = G (prime) - Eb (under-third) - C (under-fifth)
-- G is the generative tone, analogous to C in C major
+Capellen's challenge: "How can one denominate the minor chord after its topmost note when surely its lowest tone must [serve that purpose]?" (p. 183). Riemann responded by distinguishing the **prime** (generative reference tone, G in C minor) from the **bass function** (practical foundation in voice leading, C in C minor).
 
-**The Problem**:
-If G is the "prime" of C minor, why does C:
-- Function as the bass in "root position"?
-- Provide the cadential foundation?
-- Give the chord its name ("C" minor)?
+# Prerequisites
 
-Riemann acknowledged this as "the principal tone [*Grundton*] of the minor chord" - the "obstacle" that caused even his followers to waver.
+- **Harmonic dualism** -- The minor root problem arises only within a dualist framework that constructs minor downward from the fifth
+- **Undertone series** -- The specific acoustic construction that places the prime at the fifth
 
-## Historical Context
+# Key Properties
 
-**Capellen's Challenge**:
-Georg Capellen, Riemann's chief critic, demanded: "How can one denominate the minor chord after its topmost note when surely its lowest tone must [serve that purpose]?"
+1. In dualist theory, the prime of C minor is G, but C functions as the practical bass
+2. Riemann explained the divergence acoustically: placing G in the bass produces clashing overtones (D as third partial)
+3. The under-fifth (C) in the bass works because its strong presence "overpowers" conflicting overtones
+4. The prime (G/fifth of the chord) can be omitted because overtones of the bass reinforce it
+5. Riemann developed notation to reconcile: C major = c+, C minor = °g
 
-**Earlier Formulations**:
-- **Hauptmann**: The upper tone of minor "is had" by the lower tones (C minor: G "is had" as fifth by C and as third by Eb)
-- **Oettingen**: Distinguished "tonic fundamental" (acoustic) from "phonic overtone" (perceptual)
-- **Riemann (early)**: Sought acoustic justification for the minor root at the fifth
+# Construction / Recognition
 
-**Riemann's Response**:
-Rather than claiming the "prime" and "root" are identical, Riemann distinguished:
-- **Prime** (*Grundton*): The generative reference tone (G in C minor)
-- **Bass function**: The practical foundation in voice leading (C in C minor)
+## The Problem Illustrated
+1. C minor is constructed dualistically as: G (prime) → Eb (under-third) → C (under-fifth)
+2. Yet in practice: C sits in the bass, C gives the chord its name, C provides cadential foundation
+3. The discrepancy between theoretical derivation and practical usage is the "problem"
 
-## Theoretical Framework
+## Riemann's Acoustic Explanation
+1. **Why not G in bass?** The third overtone of G is D -- a non-chord tone that clashes
+2. **Why not Eb in bass?** The third overtone of Eb is Bb -- another non-chord tone
+3. **Why C works:** The fifth overtone of C approximates E/Eb; the strong chord tone C overpowers conflicting partials
 
-**Riemann's Explanation via Overtones**:
-The minor chord's voicing follows from acoustic interference:
+# Context & Application
 
-1. **Why not place the prime (G) in bass?**
-   The third overtone of G is D - a non-chord tone that would clash
+The minor root problem was the most potent weapon of dualism's critics. Capellen used it to argue that dualism "cannot be justified by natural laws." Riemann's disciples wavered, and some began teaching dualism in compromised forms.
 
-2. **Why not place the under-third (Eb) in bass?**
-   The third overtone of Eb is Bb - another non-chord tone
+Klumpenhouwer's modern defense (Ch. 6) reframes the critique: "The lesson we must take away is that if we are to judge the instrumentality of hard dualisms effectively... we must refrain from projecting monist expectations for how hard dualisms must operate." The "problem" assumes monist metrics for what counts as consistency.
 
-3. **Why does the under-fifth (C) work as bass?**
-   The fifth overtone of C is E (approximated as Eb in minor)
-   The strong chord-tone C at the bass overpowers this conflict
-   "Whenever the C, which is present as a strong chord-tone, is placed in direct proximity to the fifth overtone of A (C#), it overpowers the latter"
+# Examples
 
-**Why the Fifth Can Be Omitted**:
-In cadences, the prime (fifth of the chord) is often absent:
-- The third overtone of the bass reinforces it
-- "Here we actually have three occurrences of E as third overtone!"
-- The prime is acoustically present even when not explicitly sounded
+**C minor chord voicing with overtones** (from Riemann's text, pp. 189-190):
+- Bass: C with overtones C, G, C, E, G...
+- The E overtone is "overpowered" by the actual Eb chord tone
+- The G overtone reinforces the absent prime
 
-## Musical Context
+**Why the prime can be omitted** (p. 190): In A minor with three As in bass, the G (prime) is reinforced three times as the third overtone of each A. "Here we actually have three occurrences of E as third overtone!"
 
-**Practical Implications**:
-Riemann's theory allows him to:
-1. Maintain dualist construction (minor built downward)
-2. Accept conventional bass placement (under-fifth in bass)
-3. Explain both as consistent with acoustic reality
+**Pedagogical defense** (p. 190): Riemann asserts from "long experience of teaching over a quarter of a century" that "the denomination of the minor chord after its highest tone is not the slightest source of confusion to the elementary pupil."
 
-**Voice-Leading Conventions**:
-Despite the theoretical prime at the fifth:
-- Cadences typically place the under-fifth in bass
-- Standard doubling puts the bass tone (C) in multiple voices
-- The prime (G) may be omitted without losing chord identity
+# Relationships
 
-**Notation and Naming**:
-Riemann developed specialized notation:
-- C major = c+ (prime at C)
-- C minor = °g (prime at G, but commonly called "C minor")
-- This reconciles theoretical structure with conventional naming
+## Builds Upon
+- **Harmonic dualism** -- The problem only exists within a dualist framework
+- **Undertone series** -- Creates the construction that places the prime at the fifth
 
-## Examples
+## Enables
+- **Klang-representation** -- The distinction between theoretical prime and practical bass advances the concept of mental chord representation
 
-### The C Minor Chord
+## Related
+- **Consonance-dissonance dualism** -- Connected through the question of what makes minor consonant
 
-**Dualist construction**:
-```
-G (prime, 1)
-|
-Eb (under-third, 3)
-|
-C (under-fifth, 5)
-```
+## Contrasts With
+- **Monism** -- In monist theory, the root is simply the bass; no divergence exists
 
-**Practical voicing** (with overtones):
-```
-Bass: C with overtones C, G, C, E, G...
-The E overtone is "overpowered" by the actual Eb
-The G overtone reinforces the absent prime
-```
+# Common Errors
 
-### Why the Prime Can Be Omitted
+- **Error**: Concluding that dualism is refuted because the bass functions as root
+  **Correction**: Riemann distinguishes prime (generative) from bass (practical) function; the divergence is explained, not concealed
 
-Riemann's example: A minor chord with three As in bass:
-```
-A - A - A (bass)
-C (chord tone)
-```
-The G (prime of A minor) is reinforced three times as the third overtone of each A.
-The E# overtones (fifth partial of A) are "paralyzed" by the chord tone E.
+- **Error**: Placing the dualist prime in the bass when voicing minor chords
+  **Correction**: Riemann accepts conventional bass placement; the theoretical construction and practical voicing serve different purposes
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: harmonic-dualism, overtone-series, undertone-series
-- **Leads to**: klang-representation, cadence
+- **Confusion**: Prime and root are the same thing
+  **Clarification**: In dualist theory, these are distinct: the prime generates the chord theoretically; the root provides the bass foundation practically. They align in major but diverge in minor.
 
-## Common Confusions
+- **Confusion**: The minor chord is named after its prime
+  **Clarification**: The chord is named after its under-fifth (C), following practical convention, not theoretical construction. Riemann's notation (°g for C minor) preserves the dualist derivation.
 
-1. **Prime vs. root**: In dualist theory, these are not identical. The prime generates the chord; the root provides the bass foundation.
+# Source Reference
 
-2. **"C minor" naming**: The chord is named after its under-fifth (C), not its prime (G), following practical convention rather than theoretical construction.
+Chapter 5: Ian Bent, "Steps to Parnassus," in *The Oxford Handbook of Neo-Riemannian Music Theories*, pp. 177-191. Section V of Riemann's article specifically addresses "The Problem of the Fundamental [Grundton]," pp. 189-191. Also Chapter 6 (Klumpenhouwer) for modern defense.
 
-3. **The fifth is omissible**: This seems to contradict dualism (isn't the prime essential?) but Riemann explains it acoustically.
+# Verification Notes
 
-4. **Bass function vs. generative function**: Different roles that happen to align in major but diverge in minor.
-
-## Critics and Defenders
-
-**Critics argued**:
-- If theory contradicts practice so fundamentally, the theory must be wrong
-- The bass functions as root in every practical sense
-- "How can a theory claim validity that cannot be justified by natural laws?" (Capellen)
-
-**Riemann's defense**:
-- The bass is not the same as the generative prime
-- Acoustic phenomena explain the divergence
-- The divergence is a strength, not a weakness - it explains minor's distinctive character
-
-**Klumpenhouwer's modern defense**:
-"Why not 'double the pitch from which the interval p5 up emanates'?" - The "problem" assumes monist expectations for how dualism should work.
-
-## Significance
-
-The minor root problem crystallizes the central debate about dualism:
-- Is the theory viable if it contradicts practical usage?
-- Can psychological/mathematical elegance justify acoustic implausibility?
-- Does the theory describe how musicians think, or how they should think?
-
-Riemann's psychological turn (via *Tonvorstellungen*) partially sidesteps this debate by relocating theoretical justification from acoustics to mental representation.
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part II, Chapter 5: Ian Bent, "The Problem of Harmonic Dualism" (translation of Riemann's 1905 article)
-
-Section V of Riemann's article specifically addresses "The Problem of the Fundamental [Grundton]"
+- Definition: Direct from Riemann's text as translated by Bent, Section V
+- Acoustic explanation: Riemann's own argument about overtone interference (pp. 189-190)
+- Klumpenhouwer defense: From Ch. 6 conclusion
+- Confidence: HIGH -- this is the explicitly named central problem of the source article
+- Re-extracted from v2 card; preserved: acoustic explanation details, Capellen's challenge quote, pedagogical defense, Klumpenhouwer's modern reframing

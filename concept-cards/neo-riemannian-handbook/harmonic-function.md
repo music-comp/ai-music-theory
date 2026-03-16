@@ -1,150 +1,158 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Harmonic Function
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Riemann's Legacy (Ch. 1), Tonal Function (Ch. 3)"
+slug: harmonic-function
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: tonal-function
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier, Brian Hyer"
-pdf_page: null
+chapter: "Riemann's Legacy (Ch. 1), Tonal Function (Ch. 3)"
 chapter_number: null
-unit: null
+pdf_page: null
+section: "Funktion/Bedeutung"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - tonal function
+  - tonale Funktion
+  - "Bedeutung (meaning)"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - klang
+  - tonality
+extends: []
+related:
+  - funktionstheorie
+  - klangvertretung
+  - applied-dominant
+  - modulation
+contrasts_with:
+  - stufentheorie
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Riemann's function theory relate to neo-Riemannian transformations?"
+  - "What is a harmonic function in Riemann's theory?"
+  - "What must I know before understanding neo-Riemannian operations?"
 ---
 
-# Harmonic Function (Tonal Function)
+# Quick Definition
 
-## Quick Definition
+The concept that all harmonies in tonal music derive their meaning from their relationship to one of three fundamental categories: Tonic (T), Dominant (D), or Subdominant (S). Function is not a property of a chord in isolation but its *meaning* within a tonal context.
 
-The concept that all harmonies in tonal music derive their meaning from their relationship to one of three fundamental categories: Tonic (T), Dominant (D), or Subdominant (S).
+# Core Definition
 
-## Formal Definition
+**Harmonic function** (German: *tonale Funktion*) describes the meaning (*Bedeutung*) a chord acquires within a key based on its relationship to the tonic. Riemann introduced the term in the subtitle of *Vereinfachte Harmonielehre* (1893) — "or the Theory of the Tonal Functions of Chords" — yet "he almost never uses it in the treatise: it occurs just three times in the main text and never once in conjunction with a formal definition" (Ch. 3, p. 91).
 
-**Harmonic function** (German: *tonale Funktion*) describes the meaning (*Bedeutung*) a chord acquires within a key based on its relationship to the tonic. Riemann's foundational axiom states:
+The two foundational principles from the preface of *Vereinfachte Harmonielehre* are:
+1. "There are only three kinds of tonal functions of harmony (meanings within a key), namely those of the Tonic, Dominant, and Subdominant"
+2. "The essence of modulation lies in the change of these functions"
 
-> "There are only three kinds of tonal functions of harmony (meanings within a key), namely those of the Tonic, Dominant, and Subdominant. The essence of modulation lies in the change of these functions."
+Hyer's chapter explores the philosophical depth of "function" through comparison with Gottlob Frege's mathematical logic. In Fregean terms, a tonal function operates like a mathematical function: it maps individual chords (arguments) onto one of three categorical values (T, D, or S). The crucial insight is that "function" refers not to the chord itself but to the *form* of the expression — the relationship pattern, not the particular content (Ch. 3, pp. 96-100).
 
-In Fregean terms (as Hyer develops), a tonal function operates like a mathematical function:
-- **Arguments**: Individual chords (Klange)
-- **Values**: T, D, or S designation
-- **Expression**: f(x) = T, D, or S
+Riemann explicitly built on predecessors: Rameau identified T, D, and S as "the three principal pillars of tonal harmony"; Fetis developed the concept of tonality that Riemann extended. But Riemann's contribution was systematizing these into a complete analytical framework with symbolic notation (Ch. 3, pp. 92-93).
 
-The function "maps" any chord onto one of three categorical values, asserting an equivalence between the chord and its functional meaning.
+# Prerequisites
 
-## Historical Origin
+- **klang** — Functions are categories that Klange belong to; the three primary functions are themselves Klange
+- **tonality** — Functions exist only within a tonal framework; without a tonic, there is no function
 
-### Prehistory
+# Key Properties
 
-- **Rameau (1722-1760)**: Established fundamental bass theory; identified tonic, dominant, and subdominant as "principal pillars" of harmony
-- **Daube (18th c.)**: Early theorist returning to Rameau's three-chord foundation
-- **Fetis**: Developed concept of "tonality" that Riemann explicitly built upon
+1. Only three function categories exist: Tonic, Dominant, Subdominant
+2. Function is meaning (*Bedeutung*), not identity — the same chord can have different functions in different keys
+3. Functions derive from the *grosse Cadenz* (grand cadence): T-S-D-T
+4. Dominants are "never completely consonant" because they are "always represented and judged from the tonic" (Ch. 3, p. 95)
+5. Characteristic dissonances (D7, S6) borrow tones from the opposite dominant to clarify function
+6. Subsidiary chords (parallels, Leittonwechselklange) represent the primary functions they relate to
 
-### Riemann's Development
+# Construction / Recognition
 
-1. **"Musikalische Logik" (1872)**: First articulation of harmonic logic based on three functions
-2. **Vereinfachte Harmonielehre (1893)**: Mature statement of function theory with symbolic notation
-3. **Handbuch der Harmonielehre (1887, multiple editions)**: "Our theory of tonal functions of harmony is nothing other than the development of Fetis's concept of tonality"
+## To Determine Harmonic Function
+1. Identify the governing tonic
+2. Is the chord the tonic triad or a close representative? → T
+3. Is it the upper-fifth triad or its representatives? → D
+4. Is it the lower-fifth triad or its representatives? → S
+5. Does it serve as an applied dominant to a secondary target? → parenthetical (D)
+6. Does it establish a genuinely new tonic? → modulation
 
-### Key Innovation
+## Characteristic Dissonances
+- Dominant seventh: D adds the subdominant's root as its seventh
+- Subdominant sixth: S adds the dominant's third as its sixth
+- These dissonances "establish meaning more unambiguously" and prevent retrograde hearing (Ch. 3, p. 95)
 
-Riemann's contribution was not inventing the three-function concept but:
-1. Systematizing it into a complete analytical framework
-2. Creating symbolic notation (T, D, S)
-3. Integrating it with tone representation (Klangvertretung)
-4. Extending functions to cover all chromatic harmony
+# Context & Application
 
-## Musical Context
+Hyer's philosophical analysis (Ch. 3) reveals that the notion of harmonic function equates "function" with "meaning" (*Bedeutung*). This equation forms "the core of the later references to the idea" (Ch. 3, p. 91). The chapter traces a genealogy: Riemann's 1872 "Musikalische Logik" first articulated harmonic logic, arguing that Hauptmann "had understood the coherence of chords in a key, but *had absolutely not understood the different meanings of these chords in relation to each other*" (Ch. 3, p. 94).
 
-### The Cadential Framework
+In Riemann's 1882 essay "Die Natur der Harmonik," function acquires psychological depth: "If I think to myself of a G-major chord in the context of the key of C major, then I think of it as the Klang of the over-fifth of the C-major Klang; that is, *the C-major chord itself enters the mental representation* as the Klang by which the significance of the G-major chord is determined" (Ch. 3, p. 95).
 
-The function system derives from the *grosse Cadenz* (grand cadence): T-S-D-T
+The neo-Riemannian turn largely jettisons functional thinking. As Hyer observes, "What we have come to call neo-Riemannianism is, both ironically and poetically, much less Riemannian than Fregean" (Ch. 3, p. 131).
 
-This progression embodies the dialectical unfolding of tonal space:
-- T establishes tonal center
-- S moves to the "opposite" pole (fifth below)
-- D creates maximum tension toward return
-- T resolves the dialectic
+# Examples
 
-### Function vs. Scale Degree
+**Example 1** (Ch. 3, p. 95): The dominant seventh chord explained functionally: dominants "are never completely consonant" since they are always heard in relation to the tonic. The seventh can be added "without changing its significance" because the dominant is already functionally dissonant. The added seventh (from the subdominant) makes the dominant meaning "more unambiguous."
 
-| Function Theory | Scale-Degree Theory |
-|-----------------|---------------------|
-| Chord meaning relative to tonic | Chord identity by root position |
-| Three categories (T, D, S) | Seven categories (I-VII) |
-| Same function = different degrees | Same degree = same category |
-| Context-dependent | Position-dependent |
+**Example 2** (Ch. 1, pp. 14-15): In C major, the chord E-G-B — Function theory: Tp (Tonic parallel) or Dp (Dominant parallel); Scale-degree theory: iii. Function theory reveals the chord's *meaning* (related to tonic or dominant), not just its position.
 
-Example: In C major, the chord E-G-B:
-- Function theory: Tp (Tonic parallel) or D (without fifth)
-- Scale-degree theory: iii or V (incomplete)
+**Example 3** (Ch. 3, p. 94): Riemann's critique of Hauptmann via Frege's distinction between "form and content, sign and thing signified." Different chords can have the same function (like 2+5 and 3+4 both meaning 7); the function is the relational form, not the particular chord.
 
-### Characteristic Dissonances
+# Relationships
 
-Dominants are "never completely consonant" because they are "always represented and judged from the tonic":
+## Builds Upon
+- **klang** — Functions categorize relationships between Klange
+- **tonality** — Functions exist only within a tonal framework
 
-- **D7**: Adds characteristic seventh (from S)
-- **S6**: Adds characteristic sixth (from D)
+## Enables
+- **funktionstheorie** — The analytical system built on function theory
+- **klangvertretung** — Subsidiary chords represent primary functions
+- **applied-dominant** — Extends functional analysis to chromatic harmony
+- **modulation** — Defined as change of function, not change of scale
 
-These dissonances "establish meaning more unambiguously" and prevent retrograde hearing.
+## Related
+- **tonvorstellung** — Functions are psychological representations, not acoustic facts
 
-## Examples
+## Contrasts With
+- **stufentheorie** — Scale-degree theory identifies chords by position; function theory identifies by meaning
 
-### Basic Function Labels
+# Common Errors
 
-In C major:
-| Chord | Function Symbol | Meaning |
-|-------|-----------------|---------|
-| C-E-G | T | Tonic |
-| G-B-D | D | Dominant |
-| F-A-C | S | Subdominant |
-| A-C-E | Tp | Tonic parallel |
-| E-G-B | Dp or Tg | Dominant parallel or Tonic Gegenklang |
-| D-F-A | Sp | Subdominant parallel |
+- **Error**: Confusing a chord's function with its scale-degree identity
+  **Correction**: The same chord (e.g., E minor in C major) can be analyzed as iii (scale-degree) or Tp/Dp (function); these are different analytical claims
 
-### From Repertoire
+- **Error**: Assuming every chord has a single unambiguous function
+  **Correction**: Subsidiary chords can represent multiple functions; the "second scale degree" is the "black hole" of function theory, not mapping cleanly to T, D, or S
 
-Riemann's analysis of the Prelude from Bach's C major Cello Suite demonstrates function symbols applied to complex chromatic passages while maintaining tonal unity.
+# Common Confusions
 
-**Wagner's Tannhauser Overture** (per Emil Ergo's analysis): What appears as constant modulation can be reduced to T-S-D-T motion with "ornamental chords" on weak beats.
+- **Confusion**: Believing Riemann invented the three-function idea
+  **Clarification**: Rameau, Daube, and Fetis preceded him. Riemann's innovation was the systematic analytical framework and symbolic notation.
 
-## Evolution/Variants
+- **Confusion**: Equating "function" with "Roman numeral with a different name"
+  **Clarification**: Hyer's Fregean analysis shows function is about *form* (relational pattern), not *content* (specific chord). T, D, S are not renamed I, V, IV.
 
-### Riemann's Own Development
+- **Confusion**: Thinking neo-Riemannian theory uses harmonic functions
+  **Clarification**: Neo-Riemannian theory largely replaces functional hierarchy with transformational networks of equal nodes.
 
-1. **Dualistic phase**: Functions paired with Klangschluessel (e.g., c+, °e)
-2. **Function symbols**: T, D, S with modifiers (p for parallel, etc.)
-3. **Late period**: Psychological grounding in Tonvorstellung
+# Source Reference
 
-### Post-Riemann Developments
-
-**Monistic Reception** (dominant trend):
-- Dropped dualistic minor derivation
-- Retained T/D/S framework
-- Added figured-bass style annotations
-
-**Key Theorists**:
-- **Louis/Thuille**: Synthesized Viennese and Leipzig traditions
-- **Grabner**: Introduced "Gegenklang" terminology
-- **Maler**: Standardized symbols for German institutions post-WWII
-- **Kurth**: Psychologized function theory; spread Zwischendominant concept
-
-### Neo-Riemannian Turn
-
-Modern neo-Riemannian theory largely *jettisons* functional thinking in favor of transformational relations (P, L, R operations). As Hyer notes: "What we have come to call neo-Riemannianism is, both ironically and poetically, much less Riemannian than Fregean."
-
-## Related Concepts
-
-- **Prerequisites**: Klang, tonality, cadence, dominant, subdominant, tonic
-- **Leads to**: klangvertretung, applied-dominant, modulation
-- **See also**: stufentheorie
-
-## Common Confusions
-
-1. **Function vs. Scale Degree**: Functions group multiple scale degrees under one category; scale degrees are position-specific
-2. **Riemann's symbols vs. modern usage**: Original system was dualistic with Klangschluessel; modern practice often monistic
-3. **"Function" terminology**: Riemann used "tonal function" (*tonale Funktion*); "harmonic function" is later usage
-4. **D in minor**: In dualistic theory, minor dominant is °D (under-Klang); modern theory often uses D with alterations
-5. **Second scale degree**: The "black hole" of function theory - doesn't map cleanly to T, D, or S in strict dualism
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part I:
+The Oxford Handbook of Neo-Riemannian Music Theories:
 - Chapter 1 (Holtmeier): pp. 8-15, taxonomy of functions and reception history
-- Chapter 3 (Hyer): pp. 102-131, philosophical analysis via Frege
+- Chapter 3 (Hyer): pp. 91-131, philosophical analysis via Frege, "Funktion/Bedeutung" section
+
+# Verification Notes
+
+- Definition from Riemann's *Vereinfachte Harmonielehre* preface, as quoted in Ch. 3
+- Fregean analysis is Hyer's original contribution; the parallel is developed in detail
+- Confidence: HIGH — the concept is the explicit subject of Ch. 3 and central to Ch. 1
+- Re-extracted from v2 card; preserved: the Frege comparison table, characteristic dissonances section, the "black hole" observation about the second scale degree, and the neo-Riemannian turn observation

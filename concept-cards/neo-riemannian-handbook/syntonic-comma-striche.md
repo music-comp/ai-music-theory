@@ -1,155 +1,126 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Syntonic Comma and Striche
-category: theory
-pdf_page: null
-chapter_number: null
-unit: null
+slug: syntonic-comma-striche
+
+# === CLASSIFICATION ===
+category: pitch-space
+subcategory: notation and pitch distinction
+tier: intermediate
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Tonnetz from Acoustic to Metaphorical"
-authors: "Gollin"
+source_slug: neo-riemannian-handbook
+authors: "Edward Gollin"
+chapter: "From Acoustical to Metaphorical: The Tonnetz from Oettingen to Riemann"
+chapter_number: 9
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Comma of Didymus"
+  - "Striche (comma marks)"
+  - "syntonic comma notation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tonnetz
+extends: []
+related:
+  - nonconforming-tonnetz
+  - oettingens-acoustical-matrix
+  - enharmonic-equivalence
+  - regional-space
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are Striche and what do they indicate on the Tonnetz?"
+  - "What is the syntonic comma and why does it matter for the Tonnetz?"
+  - "How did the meaning of Striche change from Oettingen to late Riemann?"
 ---
 
-# Syntonic Comma and Striche
+# Quick Definition
 
-## Quick Definition
+The syntonic comma is a small pitch discrepancy (81:80, approximately 22 cents) between tones reached by different routes on the just-intoned Tonnetz; Striche are the notational marks (underlines/overlines) used by Oettingen and Riemann to distinguish these comma-different versions of like-named pitches.
 
-The syntonic comma is a small pitch discrepancy (81:80, ~22 cents) between tones reached by different routes on the just-intoned Tonnetz; Striche are the notational marks (underlines/overlines) used by Oettingen and Riemann to distinguish these comma-different versions of like-named pitches.
+# Core Definition
 
-## Formal Definition
+The **syntonic comma** (ratio 81:80, approximately 21.5 cents) is the difference between a tone reached by four perfect fifths and one reached by two octaves plus a major third. On the nonconforming Tonnetz, this means that like-named pitches at different positions have slightly different frequencies. **Striche** (German: "strokes" or "marks") are diacritical indicators devised by Oettingen: underlines indicate one syntonic comma lower, overlines one comma higher, with multiple marks for multiple comma differences. Gollin traces how these marks evolved from indicating real acoustic differences (Oettingen, early Riemann) to indicating path derivation in mental tone-space (late Riemann's "Ideen," 1914-15), where Riemann wrote: "Our imagination knows nothing of the intonational difference between d and d-bar, but rather equates both, imagining d as the lower fifth of a and yet at the same time also as the upper fifth of g" (Ch. 9).
 
-### Syntonic Comma
-The **syntonic comma** (also called the "comma of Didymus") is the interval:
-- **Ratio**: 81:80
-- **Cents**: ~21.5 cents
-- **Generation**: The difference between four perfect fifths and two octaves plus a major third
+# Prerequisites
 
-Mathematically: (3/2)⁴ ÷ (2¹ × 5/4) = 81/80
+- **Tonnetz**: Striche are notational devices used within the Tonnetz framework to mark comma differences
 
-### Striche (Marks)
-**Striche** (German: "strokes" or "marks") are diacritical indicators:
-- **Underline** (_): One syntonic comma lower
-- **Overline** (¯): One syntonic comma higher
-- Multiple marks indicate multiple comma differences
+# Key Properties
 
-### Notation Examples
-In the just-intoned Tonnetz:
-- d (without mark): D as upper fifth of G
-- d̲ (with underline): D as lower third of F#
-- These differ by one syntonic comma (~22 cents)
+1. **Syntonic comma ratio**: 81:80, approximately 21.5 cents
+2. **Generation**: Arises as (3/2)^4 / (2^1 x 5/4) = 81/80
+3. **Strich convention**: Underline = one comma lower; overline = one comma higher; multiple marks for multiple commas
+4. **Regional bounding**: Syntonic images of the same pitch (e.g., two versions of D) bound diatonic regions on the nonconforming Tonnetz
+5. **Distinct from enharmonic diesis**: The enharmonic diesis (128:125, approximately 41 cents) separates differently-spelled pitches (C# vs Db); the syntonic comma separates like-named pitches reached by different paths
 
-## Origin in Oettingen's System
+# Construction / Recognition
 
-### The Multiplication Table
-Oettingen's table calculated frequencies as 5ᵐ × 3ⁿ:
-- Different paths to "same" letter name yield different frequencies
-- Striche marked these distinct versions
-- The table was literally a frequency calculator
+To identify syntonic comma differences:
+1. On the just-intoned Tonnetz, locate two instances of the same letter name (e.g., D)
+2. Trace the path from a reference pitch to each instance
+3. If the paths differ by one vertical step (major third axis), the pitches differ by one syntonic comma
+4. Mark the lower version with an underline (Strich), the higher with an overline
 
-### Convention
-Oettingen's convention:
-- Underlines for pitches reached by descending thirds (in major context)
-- Overlines for pitches reached by ascending thirds
-- Each Strich = one comma difference
+Example: D as the upper fifth of G vs. D as the lower third-complement in F# — these differ by 81:80.
 
-### Riemann's Adoption and Modification
-Riemann adopted the system but:
-- Reversed the convention in some writings
-- Eventually reinterpreted Striche as path markers rather than tuning indicators
+# Context & Application
 
-## Function in Analysis
+Striche were essential for Oettingen's acoustical matrix and early Riemann, where they recorded real intonational differences a performer should respect. As Riemann shifted to a psychological foundation, Striche became markers of derivational pathways in mental space rather than tuning instructions. In the conforming (equal-tempered) Tonnetz, Striche are unnecessary because syntonic equivalence is assumed and all like-named pitches occupy a single node.
 
-### Bounding Diatonic Regions
-On the just-intoned Tonnetz:
-- A diatonic collection fits within a parallelogram
-- The boundaries are syntonic images (same letter, different comma)
-- Example: C major bounded by two D naturals (d and d̲)
+Cohn (Ch. 11) introduces the related concept of the **syntonic seam**: the boundary on the nonconforming Tonnetz where two syntonic versions of a pitch meet, marking the edge of a diatonic region. Crossing this seam indicates modulation.
 
-### Detecting Modulation
-Crossing a syntonic boundary indicates:
-- Movement to a new diatonic region
-- Modulation in traditional terms
-- The "syntonic seam" marks key change
+# Examples
 
-### Enharmonic vs. Syntonic
-Two types of pitch discrepancy:
-- **Syntonic**: Same spelling, comma different (d vs. d̲)
-- **Enharmonic**: Different spelling, diesis different (C# vs. Db)
+Gollin's example from Oettingen (Ch. 9): In the just-intoned Tonnetz, the C major diatonic region is bounded by two versions of D — one reached as the double fifth above C (d = fifth of fifth), the other as the third-complement below (d-bar). The parallelogram enclosing all seven scale degrees has these two D's at opposite corners.
 
-The enharmonic diesis ≈ 41 cents; syntonic comma ≈ 22 cents.
+Riemann's late position (from "Ideen," 1914-15): "Our imagination knows nothing of the intonational difference between d and d-bar, but rather equates both" — the Striche now indicate distinct mental derivations of the same heard pitch.
 
-## Evolution of Meaning
+# Relationships
 
-### Stage 1: Acoustic (Oettingen, Early Riemann)
-Striche indicated:
-- Real intonational differences
-- Pitches a performer should tune differently
-- Acoustically meaningful distinctions
+## Builds Upon
+- tonnetz (Striche are a notation specific to the Tonnetz framework)
 
-### Stage 2: Transitional (1880s-1900s)
-Striche began indicating:
-- Path derivation on the Tonnetz
-- Theoretical rather than practical distinctions
-- Equal temperament increasingly assumed
+## Enables
+- regional-space (syntonic images bound diatonic regions as parallelograms)
+- nonconforming-tonnetz (Striche are essential for distinguishing positions on the infinite plane)
 
-### Stage 3: Psychological (Late Riemann)
-In "Ideen" (1914-1915):
-- Striche indicate mental pathway, not tuning
-- Same pitch can have multiple meanings
-- Enharmonic/syntonic identification is "indispensable"
+## Related
+- oettingens-acoustical-matrix (Striche originated in Oettingen's frequency-calculating table)
+- enharmonic-equivalence (the enharmonic diesis is a distinct but related pitch discrepancy)
 
-Quote from Riemann:
-> "Our imagination knows nothing of the intonational difference between d and d̲, but rather equates both."
+## Contrasts With
+(none specific)
 
-## Implications for Neo-Riemannian Theory
+# Common Errors
 
-### The Conforming Tonnetz
-Modern neo-Riemannian theory assumes:
-- Equal temperament (12-TET)
-- Full syntonic equivalence (no comma differences)
-- Full enharmonic equivalence
-- The Tonnetz wraps into a torus
+- **Error**: Treating Striche as accidentals (sharps, flats)
+  **Correction**: Striche mark comma differences (approximately 22 cents), not chromatic alterations (100 cents); they indicate distinct tuning versions of the same letter name
 
-### Loss of Striche
-In the conforming model:
-- Striche are unnecessary
-- All like-named pitches occupy one node
-- Path derivation is tracked conceptually, not notationally
+# Common Confusions
 
-### Analytical Choice
-Analysts may:
-- Use Striche for historical fidelity
-- Omit them for modern chromatic analysis
-- Track paths without marking comma differences
+- **Confusion**: Striche always indicate real tuning differences
+  **Clarification**: For Oettingen and early Riemann, yes; but for late Riemann (after 1914), Striche indicate path derivation in mental space, not actual intonational differences
 
-## The Syntonic Seam (Cohn)
+- **Confusion**: The syntonic comma and enharmonic diesis are the same thing
+  **Clarification**: The syntonic comma (81:80, approximately 22 cents) separates like-named pitches reached by different paths; the enharmonic diesis (128:125, approximately 41 cents) separates differently-named pitches (e.g., C# vs Db)
 
-### Definition
-The **syntonic seam** is the boundary where:
-- Two syntonic versions of a pitch meet
-- Diatonic regions abut
-- Modulation is geometrically visible
+# Source Reference
 
-### Analytical Function
-The seam helps visualize:
-- Where keys change
-- How much diatonic overlap exists
-- The "distance" between keys
+Gollin, Edward. "From Acoustical to Metaphorical: The Tonnetz from Oettingen to Riemann." In *The Oxford Handbook of Neo-Riemannian Music Theories*, edited by Edward Gollin and Alexander Rehding. Oxford University Press, 2011. Chapter 9.
 
-## Related Concepts
+Cohn, Richard. Chapter 11 (syntonic seam concept).
 
-- **Prerequisite**: tonnetz
-- **Leads to**: enharmonic-equivalence, regional-space
-- **See also**: oettingens-harmoniesystem
+# Verification Notes
 
-## Common Confusions
-
-- **Striche are not accidentals**: They mark comma differences, not chromatic alterations
-- **Equal temperament eliminates the comma acoustically**: But the conceptual distinction may remain
-- **Riemann changed his view**: Early Riemann treated Striche acoustically; late Riemann treated them psychologically
-
-## Source References
-
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 9: Edward Gollin, "From Acoustic to Metaphorical"
-- Ch 11: Richard Cohn, "Tonnetz as Analytical Apparatus"
-- Oettingen, *Harmoniesystem in dualer Entwickelung* (1866)
+Re-extracted from v2 card; preserved: mathematical derivation, Strich convention detail, evolution through three stages, Riemann quotation from "Ideen," syntonic seam discussion. High confidence: explicitly defined and extensively discussed by Gollin in Ch. 9.

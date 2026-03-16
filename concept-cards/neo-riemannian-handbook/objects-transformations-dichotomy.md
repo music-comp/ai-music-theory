@@ -1,97 +1,128 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Objects and Transformations Dichotomy
-category: analysis
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Chapter 20: Objects, Transformations, and Tonal Meaning"
-authors: Daniel Harrison
-pdf_page: null
-chapter_number: null
-unit: null
+slug: objects-transformations-dichotomy
+
+# === CLASSIFICATION ===
+category: history-philosophy
+subcategory: phenomenology
+tier: advanced
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Daniel Harrison"
+chapter: "Three Short Essays on Neo-Riemannian Theory"
+chapter_number: 20
+pdf_page: 549
+section: "I. The New Riemann: Same as the Old Riemann?"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "being vs. doing"
+  - object/transformation problem
+  - ventriloquist's dummy problem
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - transformational-theory
+  - harmonic-function
+extends: []
+related:
+  - sensuous-functional-analysis
+  - functional-transformational-synthesis
+  - harrisonian-functional-discharge
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do objects and transformations interact in neo-Riemannian theory?"
+  - "What distinguishes functional harmony from transformational harmony?"
+  - "What is the ventriloquist's dummy problem in transformational theory?"
 ---
 
-# Objects and Transformations Dichotomy
+# Quick Definition
 
-## Quick Definition
+The fundamental tension in transformational theory between musical "objects" (chords with substance, quality, and tendency) and "transformations" (operations applied to them), which Harrison argues creates a "ventriloquist's dummy" problem: objects appear alive but are actually inert constructions moved by external forces.
 
-The fundamental tension in transformational theory between musical "objects" (things with substance and tendency) and "transformations" (operations applied to them), which Harrison argues creates a "ventriloquist's dummy" problem: objects appear alive but are actually inert constructions moved by external forces.
+# Core Definition
 
-## Formal Definition
+Harrison identifies two contradictory effects of transformational theory on musical objects. First, **evacuation**: "Objects are inert and without tendency, and all activity and meaning are supplied by transformations applied to them" (Harrison, p. 552). Objects become "an absence of sorts, an empty circle in a node-arrow graph, a thing in such constant becoming that it has no being" (p. 551). Second, **overdefinition**: for transformational theory to operate, "it needs homogeneous and well-defined things upon which to act" (p. 552), creating the early neo-Riemannian problem where operations worked on triads but not seventh chords. The combined effect is the "ventriloquist's dummy" problem: "transformational theory appears to model the metaphor of musical motion by constructing a ventriloquist's dummy; it only appears to be alive, but is in fact a construction of lifeless parts that are made to move by some external force" (p. 552).
 
-Harrison identifies two contradictory effects of transformational theory on musical objects:
+# Prerequisites
 
-**Effect 1: Evacuation of Objects**
-Objects lose stability as things-in-themselves, becoming either:
-- Things-that-move (Straus's notes being "pushed" and "urged")
-- Things-in-transformational-relations (defined only by what is done to them)
+- **Transformational theory** — The Lewinian framework that Harrison critiques
+- **Harmonic function** — The T, D, S system that Harrison argues transformational theory cannot adequately accommodate
 
-> "Objects are inert and without tendency, and all activity and meaning are supplied by transformations applied to them."
+# Key Properties
 
-**Effect 2: Overdefinition of Objects**
-For transformational theory to operate, it needs homogeneous, well-defined things:
-- Pitch classes, dynamics, tempi must be treated as points
-- Heterogeneous objects cannot be modeled together without "ontological strong-arm tactics"
-- Seventh chords required separate models from triads
+1. Transformational theory separates object and activity — what something IS vs. what is DONE to it
+2. Two contradictory effects: evacuation (objects lose substance) and overdefinition (objects must be rigidly typed)
+3. T, D, S are fundamentally about "being" — especially T, described through "metaphors of presence" (center, home)
+4. The tonic has "substance, quality, and intrinsic power" that resists transformational modeling
+5. Riemann had overlapping systems (Schritt/Wechsel, L/P/R, T/D/S) because each models different aspects of harmonic experience
+6. Lewin pointed out that Riemann conceived functions as "labels for Klangs in a key" rather than "labels for transformations"
 
-## The Ventriloquist's Dummy Problem
+# Construction / Recognition
 
-> "From this far vantage point, transformational theory appears to model the metaphor of musical motion by constructing a ventriloquist's dummy; it only appears to be alive, but is in fact a construction of lifeless parts that are made to move by some external force."
+## To Identify the Dichotomy in Practice
 
-This is the cost of Lewin's transformational insight: treating "dominant" as something one *does* to a Klang rather than something a Klang *is*.
+1. Note whether the analysis treats chords as having inherent character (functional approach) or as nodes in a network (transformational approach)
+2. Ask: Is the "life" of the chord coming from within (functional attitudes) or from external operations?
+3. Check whether different chord types (triads, sevenths) are handled by separate models
+4. Consider whether the analysis captures what Harrison calls the "sensuous dimension" of hearing
 
-## Lewin's Original Insight
+# Context & Application
 
-Lewin identified that Riemann "never quite worked through in his own mind the *transformational* character of his theories":
+Harrison's critique draws on Lewin, Hyer, Zuckerkandl, and Scruton. The practical consequence appeared early in neo-Riemannian research: "the operations had purchase on triads but not on seventh chords," forcing Cohn to omit bass tones from his *Parsifal* analysis and prompting Childs to construct a separate model for seventh chords (p. 551). Harrison asks: "Might the resulting unified theory be massive and overbuilt relative to the musical experience and metaphorical structure of musical motion it models?" (p. 552).
 
-> "He did not quite ever realize that he was conceiving 'dominant'...as something one *does* to a Klang, to obtain another Klang...[rather than] as *labels for Klangs* in a key."
+# Examples
 
-But Harrison notes this creates the problem: if dominants "just sit around, not going anywhere," Riemann's analyses are "subject to inertia and lifelessness"---yet neo-Riemannian analyses have the same potential "in a different way."
+**Lewin's figure 0.1** (p. 549): Two points s and t connected by an arrow. Lewin's "inspired gloss" imagines a singer thinking "I am at s; what characteristic transformation do I perform to arrive at t?" But Harrison notes this easily slides into imagining s being "pushed" or "urged" toward t (Straus's language), which is metaphysically problematic.
 
-## Why T, D, and S Were Left Behind
+**Zuckerkandl's objection** (p. 550): "How can the tone s move to the tone t and still be s? As soon as s starts, say, to be 'pushed,' does it not stop being the pitch s and become something else?"
 
-Brian Hyer's observation:
+**Early neo-Riemannian difficulty with seventh chords** (p. 551): "The effects of objects too well defined were clearly felt in the early stages of neo-Riemannian research, where the operations had purchase on triads but not on seventh chords."
 
-> "There is an enormous ontological difference between thinking of the dominant as a relation and thinking of it as an actual chord...For Riemann, the dominant is a 'being,' something a triad *is*, rather than a 'doing,' something one *does* to a triad."
+**Hyer on T, D, S** (p. 552): "For Riemann, the dominant is a 'being,' something a triad *is*, rather than a 'doing,' something one *does* to a triad."
 
-T, D, and S are fundamentally about **being**---especially T, which musicians describe through "metaphors of presence" (center, home). This substance, quality, and intrinsic power cannot easily enter transformational models.
+# Relationships
 
-## The Sensuous Dimension
+## Builds Upon
+- **Transformational theory** — The framework being critiqued
+- **Harmonic function** — The alternative "being"-based approach
 
-Harrison argues that T, D, and S restore a **sensuous dimension** to hearing:
+## Enables
+- **Sensuous-functional analysis** — Harrison's proposed reconciliation through functional attitudes
+- **Functional-transformational synthesis** — The broader project of combining both approaches
+- **Harrisonian functional discharge** — A specific mechanism for reconciliation
 
-> "Sensuousness in music involves objects that have mass and substance and that, moreover, ask to be savored, appreciated, and even caressed by one's own voice."
+## Related
+- **Analytical values and paradigms** — The dichotomy reflects the paradigmatic divide Rings identifies
 
-This follows Kurth's recognition of sensuousness as "the necessary counterweight to the energetic dimension so well modeled by neo-Riemannian theory."
+# Common Errors
 
-## Harrison's Resolution: Functional Attitudes
+- **Error**: Reading Harrison as anti-transformational
+  **Correction**: His goal is reconciliation, not rejection — he aims to "deflate immoderate enthusiasms" and "produce vigorous analytic hybrids" (p. 573)
 
-By endowing objects with **attitudes and moods**, Harrison collapses the object/transformation distinction:
+- **Error**: Assuming the ventriloquist's dummy problem invalidates transformational analysis
+  **Correction**: Harrison acknowledges that node-arrow networks provide real analytical power; the issue is what they cannot capture
 
-> "By endowing objects with attitudes and moods, I thereby allowed them tendencies and urges---which is to say, their own motive power. This move in effect makes musical motion the product of sensuous actors."
+# Common Confusions
 
-This places the origins of motion **within** the objects, "out of sight, and thereby out of the reach of transformational theory as it currently stands."
+- **Confusion**: Thinking "being" and "doing" are always opposed
+  **Clarification**: Harrison's functional attitudes collapse the distinction by endowing objects with tendencies and motive power — the objects "do" because of what they "are"
 
-## Practical Consequences
+- **Confusion**: Believing Riemann's multiple systems (S/W, L/P/R, T/D/S) reflect confusion
+  **Clarification**: Harrison suggests they each model different aspects of harmonic experience — the overlap is productive, not redundant
 
-The "too well defined" problem surfaced early:
-- Operations worked on triads but not seventh chords
-- Cohn's Parsifal analysis had to omit "subposed" bass tones
-- Childs constructed a separate model for seventh chords
-- Linking models requires additional "mapping technology"
+# Source Reference
 
-The question: "Might the resulting unified theory be massive and overbuilt relative to the musical experience...it models?"
+Harrison, Daniel. "Three Short Essays on Neo-Riemannian Theory." Chapter 20 in *The Oxford Handbook of Neo-Riemannian Music Theories*, Essay I: pp. 549-553.
 
-## Related Concepts
+# Verification Notes
 
-- **Prerequisite**: secondary-neo-riemannian-transformations
-- **Leads to**: harrisonian-functional-discharge
-- **See also**: analytical-values-paradigms
-
-## The Pinocchio Alternative
-
-Harrison suggests that T, D, and S imply "the ventriloquist's dummy, like Pinocchio, is somehow alive":
-
-> "While the substances of T, D, and S impose a distorting gravitational field upon pure transformational space, they do restore a sensuous dimension to the hearing and experience of tonal music."
-
-## Source Reference
-
-Harrison, Daniel. "Objects, Transformations, and Tonal Meaning." Oxford Handbook of Neo-Riemannian Music Theories, Chapter 20, pp. 549-553.
+Re-extracted from v2 card; preserved: the ventriloquist's dummy metaphor, Lewin's insight, Hyer quotation on being/doing, the seventh-chord difficulty, and the Pinocchio alternative. V2 card was rich but lacked v3.1 frontmatter. Confidence is high: the dichotomy is the explicit topic of Harrison's first essay.

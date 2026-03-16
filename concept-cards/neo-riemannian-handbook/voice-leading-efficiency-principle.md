@@ -1,43 +1,82 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Voice-Leading Efficiency Principle
+slug: voice-leading-efficiency-principle
+
+# === CLASSIFICATION ===
 category: analysis
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Chapter 18: Riemannian and Neo-Riemannian Analysis"
-authors: Steven Rings
-pdf_page: null
-chapter_number: null
-unit: null
+subcategory: analytical-methodology
+tier: advanced
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Steven Rings"
+chapter: "Riemannian and Neo-Riemannian Analysis"
+chapter_number: 18
+pdf_page: 489
+section: "II"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "voice-leading parsimony principle"
+  - "neo-Riemannian voice-leading analysis"
+  - "VL efficiency"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - dvls-avls
+extends: []
+related:
+  - weitzmann-region-analysis
+  - hexatonic-systems
+  - tonnetz
+  - analytical-values-paradigms
+contrasts_with:
+  - monotonality-principle
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the voice-leading efficiency principle in neo-Riemannian analysis?"
+  - "How does AVLS = 2 define a Weitzmann region?"
+  - "What are the limitations of voice-leading efficiency analysis?"
 ---
 
-# Voice-Leading Efficiency Principle
-
-## Quick Definition
+# Quick Definition
 
 The neo-Riemannian analytical strategy of detecting pattern and regularity through voice-leading metrics (such as AVLS and DVLS) where traditional tonal analysis might find only strain or disorder.
 
-## Formal Definition
+# Core Definition
 
-**Voice-leading efficiency** in neo-Riemannian analysis refers to measuring and interpreting harmonic progressions through the lens of minimal voice-leading motion between chords, rather than through their functional relationships to a tonic.
+**Voice-leading efficiency** in neo-Riemannian analysis means measuring and interpreting harmonic progressions through minimal voice-leading motion between chords, rather than through functional relationships to a tonic. Rings (Ch. 18) demonstrates this method using Cohn's DVLS (directed voice-leading sum) and AVLS (absolute voice-leading sum), showing how pattern detection in voice-leading metrics reveals coherence independent of tonal syntax.
 
-Two key metrics developed by Richard Cohn:
+AVLS = 2 defines membership in a **Weitzmann region** -- a set of triads all related by voice-leading distance of 2 semitones. The transformations possible within such a region are: N, R, LP, PL, and SLIDE -- the only neo-Riemannian transformations (out of 24) for which AVLS = 2 (p. 491).
 
-**DVLS (Directed Voice-Leading Sum)**: Measures the *directed* voice-leading motion between chords, distinguishing "up" from "down." Values are summed for all voices.
+# Prerequisites
 
-**AVLS (Absolute Voice-Leading Sum)**: Measures the absolute voice-leading distance traversed, regardless of direction---what Joseph Straus calls total voice-leading "work" or "exertion."
+- **DVLS/AVLS**: The quantitative voice-leading measures that this principle applies.
 
-## Analytical Method
+# Key Properties
 
-The neo-Riemannian analyst:
+1. **Pattern over function**: Detects regularity in voice-leading where functional analysis sees disorder
+2. **Enharmonic neutrality**: Treats enharmonic equivalents as identical, sidestepping notational complexities
+3. **Local focus**: Chord-to-chord motion rather than global tonic
+4. **Coherence through parsimony**: Smooth voice leading as structural principle
 
-1. Identifies chromatically exceptional passages
-2. Extracts *Klange* (triads) from the texture
-3. Calculates voice-leading metrics between successive chords
-4. Detects patterns that reveal coherence independent of tonal syntax
+# Construction / Recognition
 
-## Example: Schubert Impromptu mm. 78-82
+The analytical method: (1) Identify chromatically exceptional passages; (2) Extract Klange (triads) from texture; (3) Calculate DVLS and AVLS between successive chords; (4) Detect patterns revealing coherence independent of tonal syntax.
 
-Rings's analysis reveals:
+# Context & Application
 
+Rings (Ch. 18) identifies both values and limitations. Values: coherence through pattern; parsimony as aesthetic/structural principle; enharmonic neutrality; local relationship focus. Limitations: (1) **Functional blindness** -- cannot distinguish cadential 6/4 from tonic; (2) **Fact/value gap** -- reveals coherence but does not explain why passages sound extraordinary; (3) **Infelicities** -- leaves out harmonies that do not fit (diminished sevenths, applied dominants); (4) **Conflation** -- treats tonicized and syntactical harmonies identically (p. 492).
+
+# Examples
+
+**Schubert Impromptu mm. 78-82** (Rings, Ch. 18, p. 490):
 | Progression | DVLS | AVLS |
 |-------------|------|------|
 | Gb+ to B- | +2 | 2 |
@@ -47,60 +86,40 @@ Rings's analysis reveals:
 | Eb+ to Gb+ | 0 | 2 |
 | Gb+ to Db+ | - | 3 |
 
-**Pattern discovered**: DVLS alternates +2/-2 until the cadential resolution (DVLS = 0 from contrary motion). AVLS = 2 throughout the chromatic passage, incrementing to 3 only at the confirming cadence.
+Pattern: DVLS alternates +2/-2 until DVLS = 0 (contrary motion) marks the "wrenching" return. AVLS = 2 throughout chromatic passage, incrementing to 3 at cadential resolution.
 
-## Weitzmann Regions
+**Weitzmann region** (Rings, Ch. 18, p. 491): All Klange in the passage except the dominant Db+ reside in the tonic Weitzmann region. The passage navigates clockwise around the region's outer edge, then returns counterclockwise, leaving the region only for the confirming cadence.
 
-AVLS = 2 defines membership in a **Weitzmann region**---a set of triads all related by voice-leading distance of 2 semitones. The transformations possible within such a region are: N, R, LP, PL, and SLIDE.
+# Relationships
 
-This reveals that Schubert's "crisis" passage navigates entirely within a single Weitzmann region until the cadential return to diatonic syntax.
+## Builds Upon
+- DVLS/AVLS metrics
 
-## Contrast with Functional Analysis
+## Enables
+- Weitzmann region analysis
+- Hexatonic and octatonic system identification
 
-| Voice-Leading Analysis | Functional Analysis |
-|----------------------|---------------------|
-| All chords unified by AVLS = 2 | Complex functional labels required |
-| Pattern in voice-leading metrics | T-S-D-T syntax visible |
-| Enharmonic equivalence assumed | Enharmonic spelling matters |
-| No phrase-level distinction | Cadential function marked |
+## Related
+- Tonnetz: Provides the geometric backdrop for voice-leading paths
+- Analytical values paradigms: Voice-leading efficiency embodies neo-Riemannian values
 
-## What This Approach Values
+## Contrasts With
+- Monotonality principle: Functional analysis emphasizes tonic control; VL efficiency emphasizes local patterns
 
-- **Coherence through pattern**: Finding order in apparent disorder
-- **Parsimony**: Smooth voice-leading as aesthetic/structural principle
-- **Enharmonic neutrality**: Treating Gb and F# as equivalent
-- **Local relationships**: Chord-to-chord motion over global tonic
+# Common Errors
 
-## Limitations Identified by Rings
+- **Error**: Assuming voice-leading coherence explains the sonic effect of chromatic passages.
+  **Correction**: Rings identifies a "fact/value gap" -- the analysis reveals order but does not tell us why the music "thrills and captivates us" (p. 500).
 
-1. **Functional blindness**: Cannot distinguish phrase-level functions (cadential 6/4 vs. tonic)
+# Common Confusions
 
-2. **Fact/value gap**: Reveals coherence, but doesn't explain why the passage *sounds* extraordinary
+- **Confusion**: Thinking voice-leading efficiency analysis replaces functional analysis.
+  **Clarification**: Both perspectives are needed. Rings's comparison shows that the Riemannian T-S-D-T reading and the AVLS reading capture different but complementary aspects of the same passage.
 
-3. **"Infelicities"**: Leaves out harmonies that don't fit (diminished sevenths, applied dominants)
+# Source Reference
 
-4. **Conflation**: Treats tonicized harmonies and syntactical harmonies identically
+Rings, Steven. "Riemannian and Neo-Riemannian Analysis." In *The Oxford Handbook of Neo-Riemannian Music Theories*, Chapter 18, pp. 489-492.
 
-## The "Wrenching" Resolution
+# Verification Notes
 
-The resolution of the ffz augmented-sixth chord registers in the voice-leading metrics as:
-- DVLS = 0 (contrary motion ending the +2/-2 pattern)
-- The moment when the passage "wrenches back" to cadential function
-
-The **contrary motion** marks the return from chromatic voice-leading space to functional tonal syntax.
-
-## Related Concepts
-
-- **Prerequisite**: common-tone-relationships
-- **Leads to**: weitzmann-region, hexatonic-systems, tonnetz
-
-## Methodological Significance
-
-Voice-leading efficiency analysis represents a fundamental **shift in analytical focus**:
-- From "What key is this in?" to "How do these chords connect?"
-- From hierarchical tonal structure to network of local relationships
-- From functional semantics to voice-leading geometry
-
-## Source Reference
-
-Rings, Steven. "Riemannian and Neo-Riemannian Analysis." Oxford Handbook of Neo-Riemannian Music Theories, Chapter 18, pp. 489-492.
+Re-extracted from v2 card; preserved: analytical method, Schubert Impromptu DVLS/AVLS table, Weitzmann region concept, four identified limitations, contrast with functional analysis, "wrenching" contrary motion detail. Enhanced with Rings's fact/value gap observation. Confidence high.

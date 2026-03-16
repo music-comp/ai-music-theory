@@ -1,140 +1,143 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Evolution of Harmonic Dualism
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Chapters 5-8"
-authors: "Ian Bent, Henry Klumpenhouwer, Alexander Rehding, Dmitri Tymoczko"
+slug: dualism-evolution
+
+# === CLASSIFICATION ===
+category: history-philosophy
+subcategory: theoretical-development
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Ian Bent"
+chapter: "Steps to Parnassus: Contrapuntal Theory and the Problem of Harmonic Dualism"
+chapter_number: 5
 pdf_page: null
-chapter_number: null
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "phases of dualism"
+  - "acoustic to psychological dualism"
+  - "Riemann's shifting foundations"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - harmonic-dualism
+extends: []
+related:
+  - undertone-series
+  - tonvorstellungen
+  - monism-vs-dualism
+  - inversional-symmetry
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How did Riemann's justification for dualism change over time?"
+  - "What are the three phases of harmonic dualism?"
+  - "Why did Riemann abandon acoustic foundations for dualism?"
 ---
 
-# Evolution of Harmonic Dualism: Acoustic to Psychological to Mathematical
-
-## Quick Definition
+# Quick Definition
 
 The historical trajectory of harmonic dualism through three phases: Riemann's early acoustic justification (undertones exist physically), his mature psychological turn (the mind organizes tone relationships), and contemporary neo-Riemannian mathematical formalization (inversion as distance-preserving transformation).
 
+# Core Definition
+
+Harmonic dualism's foundational justification shifted dramatically across roughly 130 years. Bent's translation of Riemann's 1905 "Das Problem" (Ch. 5) documents the decisive moment: Riemann's explicit abandonment of acoustic foundations. The evolution continued through Klumpenhouwer's transformational defense (Ch. 6) and Tymoczko's geometric reframing (Ch. 8).
+
+The central continuity across all phases: major and minor triads are treated as equal, opposite, and structurally related by inversion. What changed was the justification for this claim.
+
+# Prerequisites
+
+- **Harmonic dualism** -- Understanding the basic dualist position is necessary to track how its foundations shifted
+
+# Key Properties
+
+1. Phase 1 (Acoustic, 1873-1890s): Undertones claimed to exist physically
+2. Phase 2 (Psychological, 1905-1919): Musical hearing is active mental organization; acoustics abandoned
+3. Phase 3 (Mathematical, 1980s-present): Inversion formalized as group-theoretic operation
+4. The theoretical structure (major/minor equality, inversional relationship) persists across all phases
+5. Each phase responds to specific critiques of the previous justification
+
+# Construction / Recognition
+
 ## Phase 1: Acoustic Dualism (1873-1890s)
+- 1873 dissertation: Undertones generated within the ear by sound waves on basilar membrane
+- 1875 article: "The Objective Existence of Undertones" -- undertones exist in the sound wave itself
+- 1891 *Handbuch der Akustik*: Undertones exist but are inaudible due to interference
+- **Problem**: No physical evidence; critics (Capellen, Stumpf) exposed circular reasoning
 
-**The Undertone Hypothesis**:
-Early Riemann sought physical reality for the undertone series:
-- **1873 dissertation**: Undertones generated within the ear by sound waves on the basilar membrane
-- **1875 article**: "The Objective Existence of Undertones" - undertones exist in the sound wave itself
-- **1891 *Handbuch der Akustik***: Undertones exist but are inaudible due to interference
-
-**The Appeal of Acoustic Foundations**:
-- Science provided cultural authority in 19th-century Germany
-- Helmholtz's *Tonempfindungen* (1863) established acoustics as basis for music theory
-- Riemann wanted equal scientific standing for both major and minor
-
-**The Problem**:
-- No physical evidence for undertones
-- Multiple "fundamentals" for minor contradicted the unity required for consonance
-- Critics (Capellen, Stumpf) exposed the "vicious circle" of deriving undertones from overtones
-
-## Phase 2: Psychological Dualism (1900-1919)
-
-**Riemann's "Epiphany" (1905)**:
-"Das Problem des harmonischen Dualismus" marks the decisive shift:
-- Abandons acoustic undertones as "pseudo-logic"
-- Recognizes that even major consonance cannot be fully justified acoustically
-- Declares "emancipation from acoustical phenomena"
-
-**The Tonvorstellungen Turn**:
-Musical hearing reconceived as active mental process:
-- The mind **selects** which acoustic phenomena to attend to
-- It **orders** tones into relationships of "greatest simplicity"
-- It **completes** partial information into full Klang-representations
-
-Key insight: "The objectively produced Klange are ultimately only a sort of raw material for musical hearing."
-
-**New Foundation - Mathematical Elegance**:
-Major and minor justified by the same number series applied to different domains:
-- Major: 4:5:6 (frequencies)
-- Minor: 6:5:4 (wavelengths/string-lengths)
-
-"The principle of major is increase in speed of vibration, the principle of minor is growth in wave-lengths."
-
-**Intellectual Context**:
-- Carl Stumpf's *Tonpsychologie* (1883-1890)
-- Rise of Gestalt psychology (von Ehrenfels)
-- Music psychology as academic discipline (Kurth)
+## Phase 2: Psychological Dualism (1905-1919)
+- 1905 "Das Problem": Abandons acoustic undertones as "pseudo-logic"
+- Recognizes even major consonance cannot be fully justified acoustically
+- Key insight: "The objectively produced Klange are ultimately only a sort of raw material for musical hearing" (p. 188)
+- Foundation shifts to *Tonvorstellungen* (tone imaginations/mental representations)
 
 ## Phase 3: Mathematical/Neo-Riemannian Dualism (1980s-present)
-
-**The Transformational Turn**:
-David Lewin and followers formalize Riemann's transformations mathematically:
+- Lewin's GIS theory (1987) provides mathematical framework
 - Schritte and Wechsel become group-theoretic operations
-- P, L, R generate the complete transformation group
-- Dualism becomes structural property, not acoustic claim
+- Tymoczko: "Transposition and inversion are the only distance-preserving transformations" (Ch. 8)
+- Dualism becomes a structural/mathematical property, not an acoustic or psychological claim
 
-**Tymoczko's Reframing**:
-"Transposition and inversion are the only distance-preserving transformations of pitch and pitch-class space."
+# Context & Application
 
-Dualism reinterpreted as:
-- Mathematical symmetry (not physical reality)
-- Tool for cataloging voice-leading possibilities
-- By-product of efficient voice leading concerns
+The evolution shows that a theoretical structure can survive radical foundation-shifts. Riemann's speculative identification of inversional symmetry between major and minor -- originally justified by dubious acoustic claims -- turned out to describe real mathematical properties that later became compositionally relevant (Schoenberg's twelve-tone system fully embraces inversional equivalence).
 
-**The Contrapuntal View**:
-Inversional relationships in chromatic music arise because:
-- Efficient voice leadings form inversionally related pairs
-- Any semitonal voice leading has an equally efficient inverse
-- Composers seeking parsimony necessarily create dualistic relationships
+As Tymoczko notes (Ch. 8): "No doubt Riemann would have rejected Schoenberg's music as violating natural laws of tonality. But from a more distant perspective, we can see twelve-tone music as a vindication of Riemann's speculative music theory."
 
-"Rather than being the syntactic engine that drives the music, inversion is merely epiphenomenal."
+# Examples
 
-## Comparison of Phases
+**The decisive moment** (1905, p. 188): Riemann declares "the emancipation of the theory of consonance from real overtones is totally indispensable." He acknowledges that Stumpf "was on the right track" in moving toward psychology.
 
-| Aspect | Acoustic (1873-) | Psychological (1905-) | Mathematical (1980s-) |
-|--------|-----------------|----------------------|----------------------|
-| Foundation | Physical undertones | Mental organization | Group theory |
-| Justification | Scientific | Cognitive | Structural |
-| Undertones | Real | Unnecessary | Irrelevant |
-| Consonance | Acoustic phenomenon | Mental perception | Set-theoretic property |
-| Goal | Match Helmholtz | Explain perception | Formalize transformations |
+**The new foundation** (p. 189): "The principle of major is increase in speed of vibration, the principle of minor is growth in wave-lengths." Major and minor justified by the same number series applied to different domains -- mathematical rather than acoustic.
 
-## Key Turning Points
+**Tymoczko's reframing** (Ch. 8): Inversional relationships in chromatic music arise because efficient voice leadings form inversionally related pairs. "Rather than being the syntactic engine that drives the music, inversion is merely epiphenomenal."
 
-**1. Stumpf's Critique**:
-Carl Stumpf's rejection of overtones as the cause of consonance opened the door for psychology. Riemann: "Stumpf... was on the right track."
+# Relationships
 
-**2. The 1905 Article**:
-Riemann's explicit abandonment of acoustic foundations while maintaining dualist structure.
+## Builds Upon
+- **Harmonic dualism** -- The evolving concept whose foundations shift
 
-**3. Lewin's GIS Theory**:
-*Generalized Musical Intervals and Transformations* (1987) provided mathematical framework for transformational thinking.
+## Enables
+- **Tonvorstellungen** -- Riemann's psychological foundation emerges from the Phase 2 shift
+- **Transformational theory** -- Phase 3 formalizes dualism mathematically
 
-**4. Cohn's Voice-Leading Connection**:
-"Maximally Smooth Cycles" (1996) linked neo-Riemannian transformations to voice-leading efficiency.
+## Related
+- **Undertone series** -- The abandoned acoustic foundation of Phase 1
+- **Inversional symmetry** -- The mathematical property that survives across all phases
+- **Monism vs. dualism** -- The debate that drove each foundation-shift
 
-## Continuities Across Phases
+# Common Errors
 
-Despite the shifts, certain principles persist:
-1. **Major/minor equality**: Both modes are equal and opposite
-2. **The Klang as fundamental unit**: Triads, not scales or intervals
-3. **Transformation over substance**: Relationships between Klange matter more than Klange themselves
-4. **Inversional structure**: Major and minor as mirror images (however justified)
+- **Error**: Dismissing Riemann's entire theoretical apparatus because his acoustic claims were wrong
+  **Correction**: The mathematical relationships Riemann identified are valid regardless of their original justification
 
-## Significance for Contemporary Theory
+- **Error**: Treating the three phases as complete replacements
+  **Correction**: Core principles (major/minor equality, inversional structure, Klang as fundamental unit) persist across all phases
 
-The evolution shows:
-- **Theory can survive foundation-shifts**: Dualism persisted through acoustic, psychological, and mathematical phases
-- **Multiple justifications possible**: The same theoretical structure can be grounded differently
-- **Historical awareness matters**: Understanding why Riemann shifted helps evaluate neo-Riemannian claims
-- **Speculative theory has value**: Riemann described symmetries that later became compositionally relevant (Schoenberg)
+# Common Confusions
 
-## Related Concepts
+- **Confusion**: Neo-Riemannian theory is simply modern Riemannian theory
+  **Clarification**: Neo-Riemannian theory (Phase 3) is arguably more "Fregean" (mathematically formal) than genuinely "Riemannian" -- it uses Riemann's structures but with fundamentally different justifications
 
-- **Prerequisite**: harmonic-dualism, overtone-series, undertone-series
-- **Leads to**: neo-riemannian-theory, transformational-theory, voice-leading-zones
-- **See also**: tonvorstellungen, klang-representation, inversional-symmetry
+- **Confusion**: Riemann's psychological turn resolved all problems
+  **Clarification**: The Tonvorstellungen framework satisfied neither pure dualists (who wanted empirical proof) nor monists (who still rejected inversional construction of minor)
 
-## Source Reference
+# Source Reference
 
-Oxford Handbook of Neo-Riemannian Music Theories, Part II:
-- Chapter 5 (Bent): Documents the acoustic-to-psychological shift
-- Chapter 6 (Klumpenhouwer): Formalizes transformational defense
-- Chapter 7 (Rehding): Explores analytical implications
-- Chapter 8 (Tymoczko): Provides mathematical/voice-leading reframing
+Chapter 5: Ian Bent, "Steps to Parnassus," in *The Oxford Handbook of Neo-Riemannian Music Theories*, pp. 177-191 (documents Phase 1-2 transition). Chapter 6: Klumpenhouwer (transformational defense). Chapter 8: Tymoczko (geometric reframing, Phase 3).
+
+# Verification Notes
+
+- Phase 1-2 transition: Directly documented in Riemann's 1905 text as translated by Bent
+- Phase 3: Synthesized from Tymoczko (Ch. 8) and references to Lewin, Cohn
+- Historical dates from Bent's editorial notes
+- Confidence: HIGH -- the evolution is the explicit narrative arc of Ch. 5
+- Re-extracted from v2 card; preserved: three-phase comparison table concept, key turning points (Stumpf, 1905, Lewin, Cohn), continuities across phases, Tymoczko quote about Schoenberg

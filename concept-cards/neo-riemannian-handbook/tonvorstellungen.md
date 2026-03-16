@@ -1,135 +1,123 @@
 ---
-concept: "Tonvorstellungen (Tone Imaginations)"
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
+# === CORE IDENTIFICATION ===
+concept: Tonvorstellungen (Tone Imaginations)
+slug: tonvorstellungen
+
+# === CLASSIFICATION ===
+category: dualism
+subcategory: perceptual-theory
+tier: advanced
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Ian Bent"
 chapter: "The Problem of Harmonic Dualism"
-authors: "Ian Bent (translator), Hugo Riemann (original)"
-pdf_page: null
-chapter_number: null
-unit: null
+chapter_number: 5
+pdf_page: 178
+section: "III. Interval Fusion or Klang-Representation?"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Tonvorstellung"
+  - "tone imaginations"
+  - "mental representations of tones"
+  - "tone representations"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - harmonic-dualism
+  - klang
+extends: []
+related:
+  - klang-representation
+  - tonvorstellungen-turn
+  - empfindung-vorstellung
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are Tonvorstellungen and how do they differ from Tonempfindungen?"
+  - "Why did Riemann shift from acoustic to psychological foundations for his theory?"
+  - "How does active musical hearing work according to Riemann's late theory?"
 ---
 
-# Tonvorstellungen (Tone Imaginations)
+# Quick Definition
 
-## Quick Definition
+Mental representations of tones formed through active psychological processes of selection, comparison, and organization, as opposed to passive reception of acoustic phenomena -- the foundation of Riemann's late psychological theory of harmony.
 
-Mental representations of tones formed through active psychological processes of selection, comparison, and organization, as opposed to passive reception of acoustic phenomena - the foundation of Riemann's late psychological theory of harmony.
+# Core Definition
 
-## Formal Definition
+**Tonvorstellungen** (singular: Tonvorstellung) marks Riemann's crucial shift from a physical-acoustic to a psychological foundation for music theory. As Riemann states in the 1905 article translated by Bent: "Musical hearing, even that of the listener whose ear has not been developed through technical training, is not just a passive physical process, but rather a psychic activity, a continuous comparing and associating together of successive tones and concurrent simultaneities" (p. 179).
 
-**Tonvorstellungen** (singular: *Tonvorstellung*) translates as "tone representations," "tone imaginations," or "mental representations of tones." The concept marks Riemann's crucial shift from a physical-acoustic to a psychological foundation for music theory.
+The core insight is that musical hearing is active and selective: "The objectively produced Klange are ultimately only a sort of raw material for musical hearing, a crude base-matter from which the representing mind fashions, in an admittedly restricted but not absolute dependency, the [musical] pattern that affords it delight" (p. 179).
 
-The core insight: Musical hearing is not passive reception of sound but **active psychic activity** involving:
-- **Selecting**: The mind chooses which acoustic phenomena to attend to
-- **Ordering**: Perceived tones are organized into relationships
-- **Comparing**: Successive and simultaneous tones are related to each other
-- **Associating**: Tones are grouped into larger meaningful units (Klange)
+# Prerequisites
 
-As Riemann states: "Musical hearing, even that of the listener whose ear has not been developed through technical training, is not just a passive physical process, but rather a psychic activity, a continuous comparing and associating together of successive tones and concurrent simultaneities."
+- **Harmonic dualism**: Tonvorstellungen emerged from the need to justify dualism without acoustics.
+- **Klang**: The concept of the triad as fundamental unit underlies how Tonvorstellungen operate.
 
-## Historical Context
+# Key Properties
 
-**The Epistemological Shift**:
-Riemann's turn to psychology was necessitated by his abandonment of acoustic foundations:
+1. **Active perception**: The mind selects, orders, compares, and associates tones
+2. **Economy principle**: The mind seeks "greatest simplicity" and "highest possible economy" in interpretation (p. 179)
+3. **Tolerance of approximation**: Musical hearing "contents itself with (tempered) approximations instead of absolutely pure intonations" (p. 179)
+4. **Selective filtering**: The mind "overlooks" inconvenient overtones that contradict musical context
 
-1. **Helmholtz's approach**: *Tonempfindungen* (tone sensations) - objective, physical, passive
-2. **Stumpf's contribution**: Rejected overtones as the cause of consonance, but failed to develop a positive alternative
-3. **Riemann's solution**: *Tonvorstellungen* - subjective, psychological, active
+# Construction / Recognition
 
-**Intellectual Context**:
-Riemann positioned his theory within broader developments:
-- **Carl Stumpf**: Early tone psychology (*Tonpsychologie*, 1883-1890)
-- **Ernst Kurth**: Later development of music psychology
-- **Christian von Ehrenfels**: Gestalt psychology
-- **Hermann Lotze**: Aesthetic philosophy (Riemann's teacher)
+The epistemological shift proceeds from: (1) Helmholtz's Tonempfindungen (tone sensations) -- objective, physical, passive; through (2) Stumpf's tone-psychology -- which rejected overtones as cause of consonance but offered no positive alternative; to (3) Riemann's Tonvorstellungen -- subjective, psychological, active.
 
-**Key Quote from Riemann**:
-"The objectively produced Klange are ultimately only a sort of raw material for musical hearing, a crude base-matter from which the representing mind fashions, in an admittedly restricted but not absolute dependency, the [musical] pattern that affords it delight."
+The term gained its definitive articulation in Riemann's late article "Ideen zu einer 'Lehre von den Tonvorstellungen'" (1914-15).
 
-## Theoretical Implications
+# Context & Application
 
-**Why Acoustics Fails**:
-1. Acoustic tuning cannot *compel* a particular interpretation
-2. The mind decides relationships based on "greatest simplicity" and "highest possible economy"
-3. Listeners accept tempered approximations instead of just ratios
-4. Musical hearing "overlooks" inconvenient overtones that don't fit the musical context
+Riemann positioned his theory within broader developments: Carl Stumpf's early tone psychology (*Tonpsychologie*, 1883-1890), Ernst Kurth's later music psychology, Christian von Ehrenfels's Gestalt psychology, and Hermann Lotze's aesthetic philosophy (Riemann's teacher). The concept freed pedagogy from acoustic justifications: "A truly elementary book of harmony along dualistic lines will eschew all speculative theoretical questions as to prime causes" (p. 196).
 
-**Klangvertretung (Klang-Representation)**:
-The most radical implication: Single tones are never heard as isolated pitches but always as representing complete triads.
+# Examples
 
-"Even just single tones are invariably heard in terms of Klange."
+**The G minor subdominant** (p. 178): Riemann's example shows Eb-G functioning as subdominant in G minor. The overtones of these tones include B, D, G#, yet we hear the subdominant G minor chord. "Physics is entirely to be discounted... only music psychology (music aesthetics) can provide an explanation."
 
-This means:
-- A monophonic melody implies harmonies
-- Even beginners hear melody "in terms of harmonies (tone-complexes)"
-- There are only two species of such complexes: major and minor triads
+**The augmented triad paradox** (p. 160): C-E-G# sounds dissonant despite each component dyad being consonant. Stumpf's fusion theory cannot explain this; Riemann's answer is that the mind cannot assign a single Klang-representation to the augmented triad.
 
-**The "Expanded Meaning" of Tone**:
-All octaves of a pitch are consolidated into a single "tone concept" (*Tonbegriff*). The octave relationship is a "fundamental fact of hearing that must be recognized."
+**Equal temperament**: The mind accepts tempered approximations instead of just ratios, proving that acoustic precision is not determinative of musical hearing.
 
-## Musical Context
+# Relationships
 
-**Practical Applications**:
+## Builds Upon
+- Helmholtz's Tonempfindungen (which Tonvorstellungen supersedes)
 
-1. **Why equal temperament works**: The mind selects interpretations based on musical context, not acoustic precision
+## Enables
+- Klang-representation: The most radical implication of active tone-imagination
+- Neo-Riemannian theory: Inherits emphasis on abstract relationships over acoustic foundations
 
-2. **Why the diminished triad functions**: B-D-F in C major is heard as representing dominant harmony despite chaotic overtones
+## Related
+- Empfindung-Vorstellung distinction: Sensations vs. mental representations
+- Tonvorstellungen-turn: The broader epistemological shift in Riemann's career
 
-3. **Why intervals are heard contextually**: E-G in G minor can represent the subdominant (G minor chord) despite overtones suggesting E major
+## Contrasts With
+- Helmholtz's passive, physical model of tone sensation
 
-4. **Why monophonic melody implies harmony**: Listeners complete single tones into full Klang representations
+# Common Errors
 
-**Pedagogical Implications**:
-"A truly elementary book of harmony along dualistic lines will eschew all speculative theoretical questions as to prime causes... The elementary student does not need reasons, only concise and tightly drawn definitions and stipulations of rules."
+- **Error**: Translating Vorstellung as mere "imagination" (implying fantasy).
+  **Correction**: The German Vorstellung implies mental representation more broadly -- how the mind conceives of tones.
 
-The psychological turn freed pedagogy from acoustic justifications while preserving dualistic structure.
+# Common Confusions
 
-## Examples
+- **Confusion**: Thinking Tonvorstellungen implies relativism in hearing.
+  **Clarification**: Riemann still believed in "correct" hearings; the mind seeks the simplest, most economical interpretations.
 
-### The G Minor Subdominant
+- **Confusion**: Confusing Tonvorstellungen with Tonempfindungen.
+  **Clarification**: Sensations (Empfindungen) are passive and physical; imaginations/representations (Vorstellungen) are active and mental.
 
-Riemann's example: A two-voice phrase with Eb-G functioning as subdominant in G minor.
+# Source Reference
 
-The overtones of these tones include B, D, G#, etc., yet we hear the dyad as representing the G minor chord. This proves:
-- Hearing cannot be explained by overtones or combination tones
-- "Physics is entirely to be discounted"
-- "Only music psychology (music aesthetics) can provide an explanation"
+Bent, Ian (translator). "The Problem of Harmonic Dualism." In *The Oxford Handbook of Neo-Riemannian Music Theories*, Chapter 5, pp. 178-182. Original: Riemann, "Das Problem des harmonischen Dualismus," *NZfM* 72 (1905).
 
-### The Augmented Triad Paradox
+# Verification Notes
 
-Riemann's challenge to Stumpf's theory: Why does C-E-G# sound dissonant when each component dyad (C-E, E-G#, C-Ab) is consonant?
-
-Stumpf's fusion theory cannot explain this. Riemann's answer: The mind cannot assign a single Klang-representation to the augmented triad - it implies multiple incompatible interpretations simultaneously.
-
-## Related Concepts
-
-- **Prerequisite**: harmonic-dualism, klang, consonance-dissonance
-- **Leads to**: klang-representation
-
-## Common Confusions
-
-1. **Tonvorstellungen vs. Tonempfindungen**: Sensations (Empfindungen) are passive and physical; imaginations (Vorstellungen) are active and mental
-
-2. **Not mere "imagination"**: The German *Vorstellung* implies mental representation more broadly - how the mind conceives of tones
-
-3. **Not relativism**: Riemann still believed in "correct" hearings; the mind seeks simplest, most economical interpretations
-
-4. **Context-dependent**: The same acoustic signal can produce different Tonvorstellungen depending on musical context
-
-## Significance for Neo-Riemannian Theory
-
-The psychological turn had lasting implications:
-- Freed theory from defending acoustically questionable undertones
-- Established mental operations (not physics) as the basis of harmony
-- Anticipated transformational approaches where mental operations define relationships
-- Opened questions about how listeners construct tonal meaning
-
-Modern neo-Riemannian theory inherits this emphasis on abstract relationships over acoustic foundations.
-
-## Primary Source Note
-
-Chapter 5 includes Riemann's 1905 article where he introduces *Tonvorstellungen* as the replacement for acoustic foundations. This represents Riemann's "epiphany" (his term) about escaping the trap of acoustic justification.
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part II, Chapter 5: Ian Bent, "The Problem of Harmonic Dualism" (translation of Riemann's 1905 article from *Neue Zeitschrift fur Musik*)
+Re-extracted from v2 card; preserved: core definition, epistemological shift narrative, G minor subdominant example, augmented triad example, intellectual context, pedagogical implications. Enhanced with precise page citations from Ch. 5. Confidence high due to extensive direct quotation.

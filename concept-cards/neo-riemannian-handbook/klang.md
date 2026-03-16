@@ -1,115 +1,157 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Klang
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Riemann's Legacy (Ch. 1), The Nature of Harmony (Ch. 2), Tonal Function (Ch. 3)"
+slug: klang
+
+# === CLASSIFICATION ===
+category: fundamentals
+subcategory: harmonic-entity
+tier: foundational
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier, Benjamin Steege, Brian Hyer"
-pdf_page: null
+chapter: "Riemann's Legacy (Ch. 1), The Nature of Harmony (Ch. 2), Tonal Function (Ch. 3)"
 chapter_number: null
-unit: null
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Oberklang (over-Klang)"
+  - "Unterklang (under-Klang)"
+  - consonant triad
+  - harmonic sonority
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - overtone-series
+  - harmonic-dualism
+  - consonance-dissonance-psychological
+contrasts_with:
+  - akkord
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a Klang in Riemann's harmonic theory?"
+  - "How does Klang differ from a generic chord (Akkord)?"
+  - "What must I know before understanding neo-Riemannian operations?"
 ---
 
-# Klang
+# Quick Definition
 
-## Quick Definition
+A Klang is a consonant sonority (major or minor triad) conceived as a unified acoustic-psychological entity, serving as the fundamental building block of Riemann's harmonic theory. The term deliberately sits between raw sensation and abstract chord theory.
 
-A consonant sonority (major or minor triad) conceived as a unified acoustic-psychological entity, serving as the fundamental building block of harmonic theory in Riemann's system.
+# Core Definition
 
-## Formal Definition
+In Riemann's theory, a **Klang** is the primary consonant chord type, encompassing both major and minor triads as acoustically and psychologically unified entities. The term carries specific theoretical weight beyond the English "chord" or generic German *Akkord*:
 
-A **Klang** is the primary consonant chord type in Riemann's harmonic theory, encompassing both major and minor triads as acoustically and psychologically unified entities. Unlike the English "chord," Klang carries specific theoretical weight:
+- **Oberklang** (over-Klang): Major triad constructed upward from a generator tone (root-third-fifth)
+- **Unterklang** (under-Klang): Minor triad constructed downward from a generator tone in dualistic theory
 
-- **Oberklang** (over-Klang/upper-Klang): Major triad constructed upward from a generator tone (root-third-fifth)
-- **Unterklang** (under-Klang/lower-Klang): Minor triad constructed downward from a generator tone (fifth-third-root in dualistic theory)
+As translator Benjamin Steege notes (n. 29), "none of the standard English options quite do justice to its particular meaning in Riemann's writing. 'Sonority' implies a far too limited notion of immediate sensation; 'chord,' on the other hand, points too much toward a purely theoretical abstraction.... In contrast, *Klang* sits somewhere right *between* the sensory and the abstract" (Ch. 2, notes).
 
-The term sits deliberately between sensation (Empfindung) and abstract theory (Akkord), capturing Riemann's conception of how we perceive and represent harmonic entities.
+The Klang concept evolved from acoustic to psychological foundations: early Riemann attempted physical grounding in the overtone series; late Riemann ("Ideen zu einer 'Lehre von den Tonvorstellungen,'" 1914) shifted to psychological justification. As Riemann wrote in "Die Natur der Harmonik" (1882): "The theory of harmony has developed from a theory of the mathematical ratios of musical intervals into a theory of tone representations (*Tonvorstellungen*) and their concatenation" (Ch. 2, p. 83).
 
-**Mathematical Properties**:
-- Major Klang: Frequency ratios 4:5:6 (harmonic division)
-- Minor Klang: String-length ratios 1:1/3:1/4:1/5:1/6 (arithmetic division per Zarlino)
+# Prerequisites
 
-## Historical Origin
+This is a foundational concept with no prerequisites within this source. Understanding of basic intervals and triads from general music theory is assumed.
 
-### Riemann's Development
+# Key Properties
 
-The term Klang predates Riemann but received distinctive theoretical significance in his work. Key developments:
+1. Only two species of Klang exist: major (Oberklang) and minor (Unterklang)
+2. Each Klang is a unified perceptual entity, not merely a collection of tones
+3. Mathematical properties: Major Klang frequency ratios 4:5:6; Minor Klang string-length ratios follow arithmetic division (per Zarlino)
+4. Only Klange (major/minor triads) are true consonances; all other formations are modifications or combinations
+5. Each tone can function as root, third, or fifth of both major and minor Klange, yielding six possible Klang-representations per tone
+6. Klang notation: c+ (C major Oberklang), °e (E Unterklang = A minor in dualistic notation)
 
-1. **Zarlino (1558)**: First established the "double form" of consonant chords through harmonic (divisione harmonica) and arithmetic (divisione aritmetica) string divisions
-2. **Rameau (1722)**: Discovered overtones and attempted to ground the major Klang in the corps sonore
-3. **Hauptmann (1853)**: Revived harmonic dualism through philosophical speculation
-4. **Oettingen (1866)**: Introduced Klangvertretung (tone representation) concept
-5. **Riemann (1880s-1910s)**: Systematized dualistic Klang theory and integrated it into practical composition
+# Construction / Recognition
 
-### Original vs. Later Development
+## To Identify a Klang
+1. Determine whether the sonority is a major or minor triad
+2. If major: identify as Oberklang with root as generator (e.g., C-E-G = c+)
+3. If minor (in dualistic theory): identify as Unterklang with the fifth as generator (e.g., A-C-E = °e, where E is the "prime")
+4. If the sonority is not a major or minor triad, it is not a Klang proper but a modification or dissonance
 
-Riemann's Klang concept evolved from acoustic/physical grounding toward psychological foundation:
+## To Apply Klangschluessel Notation
+1. For major: write the root letter with + superscript (c+, g+, f+)
+2. For minor (dualistic): write the upper tone (prime/fifth) with ° prefix (°e for A minor, °b for E minor)
 
-- **Early Riemann**: Attempted to prove undertones exist physically
-- **Late Riemann**: "Ideen zu einer 'Lehre von den Tonvorstellungen'" (1914) shifted to psychological justification
+# Context & Application
 
-## Musical Context
+The Klang serves multiple functions in Riemann's system:
 
-The Klang serves multiple functions in Riemann's theory:
-
-1. **Perceptual Unity**: We hear complex sounds as unified Klange rather than isolated tones
-2. **Representational Capacity**: Individual tones can represent (vertretung) entire Klange
+1. **Perceptual Unity**: Complex sounds are heard as unified Klange rather than isolated tones
+2. **Representational Capacity**: Individual tones represent entire Klange (Klangvertretung)
 3. **Functional Basis**: The three primary harmonic functions (T, D, S) are Klange
-4. **Consonance Definition**: Only Klange (major/minor triads) are true consonances; all other formations are modifications
+4. **Analytical Reduction**: All harmony is reducible to Klang progressions
 
-As Steege's translation of Riemann notes: "The theory of harmony has developed from a theory of the mathematical ratios of musical intervals into a theory of tone representations (Tonvorstellungen) and their concatenation."
+In analytical practice, Riemann's Klangschluessel notation was used alongside function symbols. Early function theorists like Schreyer used the Klangschluessel as a reductive notation, interpreting extended passages with independent voice-leading as unfoldings of a single underlying Klang (Ch. 1, pp. 19-20).
 
-## Examples
+# Examples
 
-### Basic
+**Example 1** (Ch. 2, pp. 82-83): Riemann explains that each tone E can represent six Klange: "It can be the root, fifth, or third in either the major or the minor direction." E as root of E over-Klang (E-G#-B), fifth of A over-Klang (A-C#-E), third of C over-Klang (C-E-G), root of E under-Klang (A-C-E), fifth of B under-Klang (E-G-B), or third of G# under-Klang (C#-E-G#).
 
-In C major:
-- **Tonic Klang** (T): C-E-G (C over-Klang, or c+)
-- **Dominant Klang** (D): G-B-D (G over-Klang, or g+)
-- **Subdominant Klang** (S): F-A-C (F over-Klang, or f+)
+**Example 2** (Ch. 1, pp. 19-20): Riemann's analysis of Bach's Fugue in A minor (WTC) demonstrates Klangschluessel notation, where the melodic surface is analyzed for neighbor notes, passing tones, and consonant skips, with extended passages interpreted as unfoldings of a single underlying Klang.
 
-In A minor (dualistic notation):
-- **Tonic Klang** (°T): A-C-E (E under-Klang, or °e)
-- **Dominant Klang** (°D): E-G#-B (B under-Klang, or °b)
-- **Subdominant Klang** (°S): D-F-A (A under-Klang, or °a)
+**Example 3** (Ch. 2, p. 84): "As long as a tone is not determined according to the significance of its Klang, we have the simplest musical representation of tone; the conception of tone is empty and unsatisfying."
 
-### From Repertoire
+# Relationships
 
-Riemann's analysis of Bach's A minor Fugue (WTC) demonstrates Klangschluessel notation, where extended passages with independent voice-leading are interpreted as unfoldings of a single underlying Klang.
+## Builds Upon
+- No prerequisites within this source (foundational concept)
 
-## Evolution/Variants
+## Enables
+- **harmonic-function** — Functions are relationships between Klange
+- **klangvertretung** — Tones represent Klange
+- **tonvorstellung** — Mental representation of Klange
+- **modulation** — Change of tonal center defined by Klang relationships
 
-### Riemann vs. Neo-Riemannian
+## Related
+- **overtone-series** — Early Riemann grounded Klang in overtones; later abandoned this
+- **harmonic-dualism** — The dual (major/minor) nature of Klang is central to dualism
+- **consonance-dissonance-psychological** — Only Klange are true consonances
 
-| Aspect | Riemann | Neo-Riemannian |
-|--------|---------|----------------|
-| **Focus** | Klang as functional carrier | Klang as transformational object |
-| **Minor derivation** | Undertone series (dualistic) | Often monistic (major-derived) |
-| **Primary concern** | Tonal meaning/function | Voice-leading parsimony |
-| **Notation** | Klangschluessel (e.g., c+, °e) | Set-class or pitch-class notation |
+## Contrasts With
+- **akkord** — Generic "chord" without the specific theoretical weight of Klang
 
-### Monistic Reception
+# Common Errors
 
-Most post-Riemann function theorists adopted "monistic" variants:
-- **Georg Capellen (1901)**: Criticized dualistic minor derivation
-- **Louis/Thuille**: Synthesized Viennese and Leipzig traditions without strict dualism
-- **Modern function theory**: Retains T/D/S symbols but derives minor monistically
+- **Error**: Notating minor Klange in dualistic system with the root as generator
+  **Correction**: In Riemann's dualism, the minor Klang's generator is the upper tone (fifth); °e means E is the prime/generator of A-C-E
 
-## Related Concepts
+- **Error**: Treating seventh chords as Klange
+  **Correction**: Only major and minor triads are true Klange; seventh chords combine elements of two Klange
 
-- **Prerequisites**: overtone-series, consonance, triad, interval
-- **Leads to**: harmonic-function, klangvertretung, tonvorstellung, modulation
-- **See also**: leittonwechsel
+# Common Confusions
 
-## Common Confusions
+- **Confusion**: Believing Klang simply means "chord" (Akkord)
+  **Clarification**: Klang specifically means consonant triadic sonority with unified perceptual identity; Akkord is generic and includes dissonant formations
 
-1. **Klang vs. Chord (Akkord)**: Klang specifically means consonant triadic sonority with unified perceptual identity; Akkord is generic "chord"
-2. **Klang vs. Tone**: A tone can represent a Klang (Klangvertretung), but they are distinct concepts
-3. **Physical vs. Psychological**: Early Riemann grounded Klang in acoustics; later Riemann shifted to psychological perception
-4. **Major/Minor symmetry**: In dualism, minor is not "derived from" major but is its polar opposite; monistic theories reject this
+- **Confusion**: Thinking the acoustic grounding of Klang (overtone series) is essential to the concept
+  **Clarification**: Late Riemann shifted entirely to psychological justification; the Klang is a mental representation, not an acoustic phenomenon
 
-## Source Reference
+- **Confusion**: Assuming major and minor Klange are unequal in status
+  **Clarification**: In Riemann's dualism, major and minor are polar opposites of equal theoretical standing, though monistic successors challenged this symmetry
 
-Oxford Handbook of Neo-Riemannian Music Theories, Part I:
-- Chapter 1 (Holtmeier): pp. 3-50, esp. discussion of dualistic derivation
-- Chapter 2 (Steege): pp. 55-90, esp. Riemann's "Nature of Harmony" translation
-- Chapter 3 (Hyer): pp. 102-131, esp. Frege-Riemann comparison
+# Source Reference
+
+The Oxford Handbook of Neo-Riemannian Music Theories, Part I:
+- Chapter 1 (Holtmeier): pp. 3-50, esp. discussion of Klangschluessel notation and dualistic derivation
+- Chapter 2 (Steege): pp. 55-90, esp. Riemann's "Nature of Harmony" translation including the concept of Klang representation (pp. 82-86)
+- Chapter 3 (Hyer): pp. 102-131, esp. Frege-Riemann comparison on the logical status of Klang
+
+# Verification Notes
+
+- Definition synthesized from multiple chapters; Steege's translator note on the untranslatability of "Klang" (n. 29) provides the clearest characterization
+- Key Properties items 1-5 explicit across all three chapters; item 6 (notation) from Ch. 1
+- Mathematical ratios from Ch. 2 (Riemann's "Nature of Harmony")
+- Confidence: HIGH — the Klang is explicitly defined and discussed at length across multiple chapters
+- Re-extracted from v2 card; preserved: table comparing Riemann vs neo-Riemannian usage of Klang, monistic reception history, and the mathematical properties section

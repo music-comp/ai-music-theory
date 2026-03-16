@@ -1,155 +1,149 @@
 ---
-concept: "Harmonieschritte (Harmonic Steps)"
-category: theory
-pdf_page: null
-chapter_number: null
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Harmonieschritte
+slug: harmonieschritte
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: chord classification and progression
+tier: intermediate
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Harmonieschritte & Neo-Riemannian Appropriations"
-authors: "Engebretsen"
+source_slug: neo-riemannian-handbook
+authors: "Nora Engebretsen"
+chapter: "The 'Over-Determined' Triad as a Source of Discord: Nascent Groups and the Individuation of Transformational Systems"
+chapter_number: 12
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Harmonic Steps"
+  - "Systematik der Harmonieschritte"
+  - "root-interval relations"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - klang
+  - harmonic-dualism
+extends: []
+related:
+  - schritt-wechsel-system
+  - schritte-wechsel
+  - quintschritt-terzschritt
+  - intelligibility-harmonieschritte
+  - over-determined-triad
+  - nascent-group-structures
+contrasts_with:
+  - plr-transformations
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a Harmonieschritt?"
+  - "How do I use Harmonieschritte to classify chord progressions?"
+  - "What is the complete taxonomy of triadic relations in Riemann's system?"
 ---
 
-# Harmonieschritte (Harmonic Steps)
+# Quick Definition
 
-## Quick Definition
+Riemann's comprehensive taxonomy of root-interval relations between consonant triads, presented in the *Skizze einer neuen Methode der Harmonielehre* (1880), encompassing 25 named relationships organized by root interval that later provided the foundation for neo-Riemannian transformational systems.
 
-Riemann's comprehensive taxonomy of root-interval relations between consonant triads, organized as directed relationships that later provided the foundation for neo-Riemannian transformational systems.
+# Core Definition
 
-## Formal Definition
+**Harmonieschritte** (German: "harmonic steps") comprise Riemann's complete catalog of relationships between consonant triads, systematically presented in section 38 of his *Skizze einer neuen Methode der Harmonielehre* (1880). Each relationship is classified by two features: the **root interval** separating the triads and whether the triads share the same mode (**Schritt**, mode-preserving) or change mode (**Wechsel**, mode-reversing). Directional modifiers distinguish **schlicht** (in the direction of chord generation — upward for major, downward for minor) from **gegen** (contrary to generation). Engebretsen (Ch. 12) emphasizes that neo-Riemannian theory's embrace of these relationships has entailed a significant "conflation of functional relations and root-interval transformations": where Riemann subordinated Harmonieschritte to functional contexts (key-dependent), neo-Riemannians extract them as autonomous, key-independent transformations.
 
-**Harmonieschritte** (German: "harmonic steps") comprise Riemann's complete catalog of relationships between consonant triads, presented systematically in his *Skizze einer neuen Methode der Harmonielehre* (1880).
+# Prerequisites
 
-### Core Terminology
+- **Klang**: The concept of consonant triads as the basic harmonic objects
+- **Harmonic dualism**: The dualistic framework that determines the directionality of Schritte (schlicht/gegen)
 
-**Schritt** (Step): A relationship between triads of the same mode
-- Major to major, or minor to minor
-- Named by root interval
+# Key Properties
 
-**Wechsel** (Exchange): A relationship between triads of opposite mode
-- Major to minor, or minor to major
-- Named by root interval plus "Wechsel"
+1. **25 named relationships**: The complete "chromatic" taxonomy includes 25 distinct triadic relations
+2. **Root-interval classification**: Named by the interval between roots (fifth, third, minor third, whole tone, semitone, tritone)
+3. **Mode preservation/reversal**: Schritte preserve mode; Wechsel reverse mode
+4. **Directional dualism**: Schlicht (with generation) vs. gegen (against generation)
+5. **Three generators**: Q (Quintschritt), T (Terzschritt), and Seitenwechsel (mode exchange) generate all 25 relationships
+6. **Intelligibility hierarchy**: Riemann distinguished 16 directly intelligible from 9 requiring mediation
 
-**Directional Modifiers**:
-- **schlicht** (plain): Motion in the direction of chord generation (up for major, down for minor)
-- **gegen** (contrary): Motion opposite to chord generation
+# Construction / Recognition
 
-## The Systematik der Harmonieschritte
+The seven categories of the Systematik der Harmonieschritte (Ch. 12):
 
-Riemann's complete taxonomy includes 25 "potentially intelligible" relationships, organized by root interval:
+I. **Seitenwechsel**: Mode change on same root (1 relationship)
+II. **Quintschritte**: Fifth relations (4: schlicht/gegen x Schritt/Wechsel)
+III. **Terzschritte**: Major third relations (4)
+IV. **Kleinterzschritte**: Minor third relations (4)
+V. **Ganztonschritte**: Whole tone relations (4)
+VI. **Halbtonschritte**: Semitone relations (4)
+VII. **Tritonusschritte**: Tritone relations (4, including the Doppelterzwechsel)
 
-### I. Seitenwechsel (Parallel Exchange)
-- Mode change on same root
-- C+ ↔ c°, e° ↔ E+
-- Most fundamental relationship
+Total: 1 + 4 + 4 + 4 + 4 + 4 + 4 = 25
 
-### II. Quintschritte (Fifth Steps)
-| Name | From C+ | From e° | Derivation |
-|------|---------|---------|------------|
-| Schlichte Quintschritt | C+ → G+ | e° → a° | Q |
-| Gegenquintschritt | C+ → F+ | e° → b° | Q⁻¹ |
-| Quintwechsel | C+ → g° | e° → A+ | Q⊕ |
-| Gegenquintwechsel | C+ → f° | e° → B+ | Q⁻¹⊕ |
+All derive from combinations of three generators: Q^a * T^b * Seitenwechsel^c.
 
-### III. Terzschritte (Third Steps)
-| Name | From C+ | From e° | Derivation |
-|------|---------|---------|------------|
-| Schlichte Terzschritt | C+ → E+ | e° → c°# | T |
-| Gegenterzschritt | C+ → Ab+ | e° → g°# | T⁻¹ |
-| Terzwechsel | C+ → e° | e° → C+ | T⊕ |
-| Gegenterzwechsel | C+ → ab° | e° → G#+ | T⁻¹⊕ |
+# Context & Application
 
-### IV. Kleinterzschritte (Minor Third Steps)
-| Name | From C+ | From e° | Derivation |
-|------|---------|---------|------------|
-| Schlichte Kleinterzschritt | C+ → A+ | e° → g° | Q⁻¹T |
-| Gegenkleinterzschritt | C+ → Eb+ | e° → c#° | T⁻¹Q |
-| Kleinterzwechsel | C+ → a° | e° → G+ | Q⁻¹T⊕ |
-| Gegenkleinterzwechsel | C+ → eb° | e° → C#+ | T⁻¹Q⊕ |
+Engebretsen locates the Harmonieschritte within a 19th-century combinatorial tradition shaped by Riemann's conception of key. She identifies three tensions in neo-Riemannian appropriation:
 
-### V. Ganztonschritte (Whole-Tone Steps)
-| Name | From C+ | From e° | Derivation |
-|------|---------|---------|------------|
-| Schlichte Ganztonschritt | C+ → D+ | e° → d° | Q² |
-| Gegenganztonschritt | C+ → Bb+ | e° → f#° | Q⁻² |
-| Ganztonwechsel | C+ → d° | e° → D+ | Q²⊕ |
-| Gegenganztonwechsel | C+ → bb° | e° → F#+ | Q⁻²⊕ |
+1. **Functional vs. transformational**: Riemann conceived Harmonieschritte as key-dependent relationships; neo-Riemannians treat them as key-independent transformations
+2. **Constrained vs. unconstrained**: Riemann limited acceptable progressions through functional intelligibility; neo-Riemannians abandon these constraints
+3. **Classification vs. group**: Riemann's system describes relationships; neo-Riemannians formalize it as a mathematical group
 
-### VI. Halbtonschritte (Semitone Steps)
-| Name | From C+ | From e° | Derivation |
-|------|---------|---------|------------|
-| Schlichte Leittonschritt | C+ → B+ | e° → f° | QT |
-| Gegenleittonschritt | C+ → Db+ | e° → d#° | Q⁻¹T⁻¹ |
-| Leittonwechsel | C+ → b° | e° → F+ | QT⊕ |
-| Gegenleittonwechsel | C+ → db° | e° → D#+ | Q⁻¹T⁻¹⊕ |
+As Kopp observed: neo-Riemannian "functional" labels (P, R, L) actually describe root-interval relations, making them "a pure root-interval system" (Ch. 12).
 
-### VII. Tritonusschritte (Tritone Steps)
-| Name | From C+ | From e° | Derivation |
-|------|---------|---------|------------|
-| Schlichte Tritonusschritt | C+ → F#+ | e° → bb° | Q³T |
-| Gegentritonusschritt | C+ → Gb+ | e° → a#° | Q⁻³T⁻¹ |
-| Tritonuswechsel | C+ → f#° | e° → Bb+ | Q³T⊕ |
-| Doppelterzwechsel | C+ → g#° | e° → Ab+ | T²⊕ |
+# Examples
 
-## Intelligibility Hierarchy
+From Engebretsen's translation of the Systematik (Ch. 12, appendix):
 
-Riemann distinguished 16 **directly intelligible** relationships from the full 25:
+Riemann on the **Schlichte Terzschritt** (C+ to E+): "The relation of the tonic to the Klang of its third... the Terzschritt has no cadential force, but the Terzklang proves very well-suited for direct confrontation with the tonic."
 
-### Directly Intelligible
-- All Seitenwechsel
-- All Quintschritte and Quintwechsel except Gegenquintwechsel
-- All Terzschritte and Terzwechsel (including Gegen- forms)
-- Kleinterzschritt, Gegenkleinterzschritt, Kleinterzwechsel, Gegenkleinterzwechsel
-- Leittonschritt, Gegenleittonschritt, Leittonwechsel
+Riemann on the **Ganztonschritte**: "whose harmonic relationships, as Doppelquintschritte, are not directly intelligible because the root interval is dissonant and therefore only indirectly understandable. Comprehension is aided by a mediating Klang closely related to both Klange."
 
-### Requiring Mediation
-The remaining relationships are understood through intermediate "skipped-over" Klänge:
-- Ganztonschritte lead to the expected Quintklang
-- Gegenganztonwechsel leads to a mediating Klang
-- Tritonusschritte reach out great distances, requiring mediation
+Riemann's warning about unconstrained Harmonieschritte: he recognized the system's potential to enable "any chord following any other" — what Engebretsen calls Riemann's "horror vision" of a theory allowing everything without functional constraint (Ch. 12).
 
-## Generators and Derivation
+# Relationships
 
-Riemann implicitly uses three generators:
-- **Q** (Quintschritt): Fifth relation, mode-preserving
-- **T** (Terzschritt): Major third relation, mode-preserving
-- **⊕** (Seitenwechsel): Mode exchange on same root
+## Builds Upon
+- klang (consonant triads as the objects being related)
+- harmonic-dualism (determines schlicht/gegen directionality)
 
-All 25 relationships derive as combinations:
-- Group presentation: ⟨⊕, Q, T; ⊕², (Q⊕)², (T⊕)², QT = TQ⟩
+## Enables
+- schritt-wechsel-system (formalization as a mathematical group)
+- quintschritt-terzschritt (the primary generators of the system)
+- intelligibility-harmonieschritte (the ranked hierarchy of comprehensibility)
+- nascent-group-structures (the implicit group structure Engebretsen identifies)
 
-## Relationship to Function Theory
+## Related
+- over-determined-triad (the structural property that makes the system "over-determined")
+- schritte-wechsel (the fundamental mode-preserving/reversing distinction)
 
-### In Riemann's System
-Harmonieschritte describe relationships **between** chords, while functions describe chord **identity** within a key. The two systems coexist:
-- Harmonieschritte: C+ to G+ is a Quintschritt
-- Function: G+ in C major is the Dominant
+## Contrasts With
+- plr-transformations (voice-leading-based organization vs. root-interval-based)
 
-### Neo-Riemannian Departure
-Neo-Riemannian theory:
-- Extracts Harmonieschritte from functional context
-- Treats them as autonomous transformations
-- Abandons the distinction between direct and mediated intelligibility
+# Common Errors
 
-As Kopp observes: Neo-Riemannian "functional" labels (P, R, L) actually describe root-interval relations, making them "a pure root-interval system."
+- **Error**: Treating Harmonieschritte as equivalent to neo-Riemannian PLR transformations
+  **Correction**: Harmonieschritte classify relationships by root interval in a key-dependent context; PLR classify by voice-leading parsimony in a key-independent context. They are isomorphic as groups but conceptually distinct.
 
-## Riemann's Concerns
+# Common Confusions
 
-Riemann recognized the system's potential to enable "any chord following any other":
-- The "chaos of possibilities" (Oettingen's term)
-- Riemann's "horror vision" of a theory allowing everything
-- His response: subordinate Harmonieschritte to functional constraints
+- **Confusion**: Riemann intended Harmonieschritte as a transformational system
+  **Clarification**: Engebretsen shows that Riemann conceived them as a classification scheme for relationships, not as formal group operations; the transformational interpretation was imposed by neo-Riemannian theorists
 
-In later editions (Handbuch), Riemann emphasized functional contexts for each Schritt, noting: "the true guide through the labyrinth of possible harmonic successions is no longer the nomenclature of the Harmonieschritte but rather that of function."
+- **Confusion**: All 25 Harmonieschritte are equally valid progressions
+  **Clarification**: Riemann carefully distinguished directly intelligible from mediated relationships, and subordinated the entire system to functional constraints in later writings
 
-## Related Concepts
+# Source Reference
 
-- **Prerequisite**: klang, triad, tch-interval, harmonic-dualism
-- **Leads to**: neo-riemannian-operations, schritt-wechsel-system, plr-transformations
-- **See also**: combinatorial-group-theory
+Engebretsen, Nora. "The 'Over-Determined' Triad as a Source of Discord: Nascent Groups and the Individuation of Transformational Systems." In *The Oxford Handbook of Neo-Riemannian Music Theories*, edited by Edward Gollin and Alexander Rehding. Oxford University Press, 2011. Chapter 12.
 
-## Source References
+Riemann, Hugo. *Skizze einer neuen Methode der Harmonielehre*. Leipzig: Breitkopf und Haertel, 1880. Section 38.
 
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 12: Nora Engebretsen, "Harmonieschritte & Neo-Riemannian Appropriations"
-- Riemann, *Skizze einer neuen Methode der Harmonielehre* (1880)
-- Translation of *Systematik der Harmonieschritte* in Engebretsen's appendix
+# Verification Notes
+
+Re-extracted from v2 card; preserved: seven-category structure, 25-relationship count, three generators, complete Schritt/Wechsel tables, Kopp quotation, "horror vision" reference. Enhanced with Engebretsen's specific emphasis on the functional-vs-transformational conflation. High confidence: the central topic of Ch. 12.

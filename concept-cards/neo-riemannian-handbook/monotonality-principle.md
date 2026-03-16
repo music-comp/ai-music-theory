@@ -1,38 +1,71 @@
 ---
-concept: "Riemann's Monotonality Principle"
+# === CORE IDENTIFICATION ===
+concept: Monotonality Principle
+slug: monotonality-principle
+
+# === CLASSIFICATION ===
 category: analysis
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Chapter 18: Riemannian and Neo-Riemannian Analysis"
-authors: Steven Rings
-pdf_page: null
-chapter_number: null
-unit: null
+subcategory: analytical-values
+tier: advanced
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Steven Rings"
+chapter: "Riemannian and Neo-Riemannian Analysis"
+chapter_number: 18
+pdf_page: 493
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Haupttonalitat"
+  - "monotonal hearing"
+  - "single-tonic principle"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - garden-of-eden-metaphor
+  - analytical-values-paradigms
+  - funktionstheorie
+contrasts_with:
+  - voice-leading-efficiency-principle
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is Riemann's monotonality principle?"
+  - "How does monotonality contrast with neo-Riemannian approaches?"
+  - "What are the limitations and values of the monotonality principle?"
 ---
 
-# Riemann's Monotonality Principle
-
-## Quick Definition
+# Quick Definition
 
 Riemann's conviction that a single tonic controls an entire work, with even the boldest modulations serving to "trace ever wider circles around the unshakeable center," concentrically expanding its dominion.
 
-## Formal Definition
+# Core Definition
 
-**Monotonality** is the principle that a single main tonic (*Haupttonalitat*) governs an entire musical work, maintaining its "controlling force" (*Geltung*) throughout even the most wide-ranging modulations. Riemann articulates this in his *Systematische Modulationslehre* (1887):
+**Monotonality** is the principle that a single main tonic (Haupttonalitat) governs an entire musical work. From Riemann's *Systematische Modulationslehre* (1887), quoted by Rings (Ch. 18, p. 494): "One is constantly struck by the controlling force [Geltung] of the main tonic, even during the boldest and most wide-ranging modulations. When we find ourselves at the end of the path, looking back, we know that we have learned how to trace ever wider circles around the unshakeable center."
 
-> "One is constantly struck by the controlling force of the main tonic, even during the boldest and most wide-ranging modulations. When we find ourselves at the end of the path, looking back, we know that we have learned how to trace ever wider circles around the unshakeable center."
+Rings notes this principle has "significant pre-echoes" in the later work of both Schenker and Schoenberg, suggesting a broader historical commitment to tonal unity (p. 493).
 
-This principle has significant pre-echoes in the later work of both **Schenker** and **Schoenberg**, suggesting a broader historical commitment to tonal unity.
+# Prerequisites
 
-## Analytical Function
+Foundational analytical principle with no technical prerequisites.
 
-Monotonality serves to:
+# Key Properties
 
-1. **Contain** chromatic extravagances within rational tonal bounds
-2. **Demonstrate** that no passage eludes the theory's explanatory reach
-3. **Celebrate** the piece's confirmation of eternal tonal laws
-4. **Reinforce** the normative status of tonal harmony
+1. **Single controlling tonic**: One Haupttonalitat governs the entire work
+2. **Containment function**: Chromatic extravagances are rationalized within tonal bounds
+3. **Demonstrative purpose**: Analysis shows no passage eludes the theory's explanatory reach
+4. **Celebratory tone**: Confirmations of tonal law are valued, not disruptions
+5. **Conservative ideology**: Theory serves as brake against further chromatic dissolution
 
-## Contrast with Neo-Riemannian Approaches
+# Construction / Recognition
 
 | Aspect | Monotonality | Neo-Riemannian |
 |--------|-------------|----------------|
@@ -41,45 +74,45 @@ Monotonality serves to:
 | Analysis begins | From the tonic outward | From chromatic extremes inward |
 | Enharmonicism | Must be resolved to tonal spelling | Invokes enharmonic equivalence |
 
-## Examples
+# Context & Application
 
-### Schubert Impromptu in G-flat
+Rings (Ch. 18) contrasts Riemann's monotonal analysis of Schubert's Gb Impromptu with a neo-Riemannian reading. Riemann hears the coda's chromatic passage as "the final consolidation of the primary key" with "excellent effect" -- a footnote to tonal order. The neo-Riemannian analyst begins precisely with this passage as a "tonal crisis," seeking voice-leading coherence where tonal syntax breaks down.
 
-Riemann describes the piece as "a masterpiece as regards not only melodic form and metric structure, but especially as regards the ordering of its progressions. And over all of it reigns the tonality of G major, the principal key."
+# Examples
 
-Even the shocking minor Neapolitan in m. 80 serves the "final consolidation of the primary key" (*Festigung der Haupttonalitat*).
+**Schubert Impromptu in Gb** (Rings, Ch. 18, p. 493): Riemann describes the piece as "a masterpiece as regards not only melodic form and metric structure, but especially as regards the ordering of its progressions. And over all of it reigns the tonality of G major, the principal key." Even the shocking minor Neapolitan serves the "final consolidation of the primary key" (Festigung der Haupttonalitat).
 
-### Functional Containment
+**Riemannian T-S-D-T analysis** (p. 496): The passage that sounds like a tonal crisis (mm. 78-82) is recast as a syntactically normative T-S-D-T progression with expanded subdominant region. "The dangerous chord of measure 80 has now been fully contained within the boundaries of Riemann's Garden of Eden."
 
-Riemann's analysis of the same passage shows it as syntactically normative T-S-D-T progression. The dangerous chord has been "fully contained within the boundaries of Riemann's Garden of Eden."
+# Relationships
 
-## Historical Significance
+## Builds Upon
+- No prerequisites; foundational analytical commitment
 
-The monotonality principle reflects:
+## Enables
+- Garden of Eden metaphor: Monotonality defines the Garden's territory
+- Function theory: Provides the apparatus for demonstrating tonic control
 
-1. **Conservative ideology**: Theory as brake against further chromatic dissolution
-2. **Pedagogical mission**: Teaching composers the "laws and limits of musical possibility"
-3. **Anxiety**: A "premonition---conscious or not---of its actual, contingent nature" (Rehding)
-4. **Pre-Schenkerian thought**: Anticipates the Ursatz concept
+## Related
+- Analytical values paradigms: Monotonality embodies Riemann's normative values
 
-## Limitations
+## Contrasts With
+- Voice-leading efficiency principle: Neo-Riemannian focus on local patterns rather than global tonic
 
-Neo-Riemannian analysts note that strict adherence to monotonality:
+# Common Errors
 
-- May obscure the aurally arresting quality of chromatic passages
-- Forces complex functional labeling (e.g., Riemann's triple-modified subdominant symbol)
-- Cannot account for passages that genuinely "overflow" tonal bounds
-- Risks making the extraordinary seem ordinary
+- **Error**: Assuming monotonality means every chord must be immediately related to the tonic.
+  **Correction**: Modulations are allowed; the claim is about the governing force of the main tonic over the whole work.
 
-## Related Concepts
+# Common Confusions
 
-- **Leads to**: garden-of-eden-metaphor, analytical-levels
-- **See also**: tonic-prolongation
+- **Confusion**: Thinking monotonality and neo-Riemannian approaches are wholly incompatible.
+  **Clarification**: Rings suggests monotonality offers something neo-Riemannian theory struggles to provide: an account of "what happens to music after it enters our ears" -- how harmonies acquire qualitative intensity through tonic relationship (p. 500).
 
-## Methodological Implications
+# Source Reference
 
-Rings suggests that the monotonality principle, while limiting, offers something neo-Riemannian theory struggles to provide: an account of **what happens to music after it enters our ears**---how harmonies acquire qualitative intensity through their relationship to a tonic center.
+Rings, Steven. "Riemannian and Neo-Riemannian Analysis." In *The Oxford Handbook of Neo-Riemannian Music Theories*, Chapter 18, pp. 493-494.
 
-## Source Reference
+# Verification Notes
 
-Rings, Steven. "Riemannian and Neo-Riemannian Analysis." Oxford Handbook of Neo-Riemannian Music Theories, Chapter 18, pp. 493-494.
+Re-extracted from v2 card; preserved: Riemann quotation, comparison table, Schubert Impromptu analysis, T-S-D-T reading, Schenker/Schoenberg pre-echoes, limitations of strict monotonality. Enhanced with Rings's observation about what monotonality provides that neo-Riemannian theory lacks. Confidence high.

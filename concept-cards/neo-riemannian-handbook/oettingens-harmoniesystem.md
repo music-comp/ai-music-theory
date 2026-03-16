@@ -1,92 +1,114 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: "Oettingen's Harmoniesystem"
-category: theory
-pdf_page: null
-chapter_number: null
-unit: null
+slug: oettingens-harmoniesystem
+
+# === CLASSIFICATION ===
+category: dualism
+subcategory: historical-theory
+tier: advanced
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Tonnetz from Acoustic to Metaphorical"
-authors: "Gollin"
+source_slug: neo-riemannian-handbook
+authors: "Edward Gollin"
+chapter: "From Acoustic to Metaphorical: The Tonnetz in Riemann's Writings"
+chapter_number: 9
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Harmoniesystem in dualer Entwickelung"
+  - "Oettingen's dual development system"
+  - "Oettingen's table of tone relations"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - overtone-series
+  - harmonic-dualism
+extends: []
+related:
+  - tonnetz
+  - oettingen-phonicity-tonicity
+  - consonance-dissonance-dualism
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What was Oettingen's Harmoniesystem and how did it influence Riemann?"
+  - "What are tonicity and phonicity in Oettingen's theory?"
+  - "How does Oettingen's table of tone relations relate to the Tonnetz?"
 ---
 
-# Oettingen's Harmoniesystem
-
-## Quick Definition
+# Quick Definition
 
 Arthur von Oettingen's 1866 theoretical system presenting harmonic dualism through the dual principles of tonicity and phonicity, realized in a table of tone relations that served as the prototype for Riemann's Tonnetz.
 
-## Formal Definition
+# Core Definition
 
-**Arthur von Oettingen's *Harmoniesystem in dualer Entwickelung*** (1866) established foundational concepts later developed by Riemann:
+**Oettingen's *Harmoniesystem in dualer Entwickelung*** (1866) established foundational concepts later developed by Riemann. As Gollin explains (Ch. 9), the table functions as a literal multiplication matrix where variables n and m represent exponents in the expression 5^m x 3^n, with integer values yielding relative vibrational frequencies in just intonation. Oettingen introduced two dual principles: **tonicity** (tones sharing a common fundamental, e.g., C4, E4, G4 as 4th, 5th, 6th partials of C2) and **phonicity** (his invention -- tones that are fundamentals to a common upper partial, e.g., C4, Eb4, G4 projecting common overtone G6).
 
-### The Table of Tone Relations
-Oettingen's table functions as a **literal multiplication matrix** where:
-- Variables *n* and *m* represent exponents in the expression **5^m × 3^n**
-- Integer values yield relative vibrational frequencies in just intonation
-- Implicit factors of 2 keep tones in the same register
+While tonicity and phonicity stand in reciprocal logical relationship, they are phenomenologically asymmetric: tonicity involves real overtones in pure intervallic relationships; phonicity requires tones to BE in pure relationships to project a coincident overtone.
 
-Example calculations:
-- Entry *f* at n=3, m=-1: frequency = 5^(-1) × 3^3 × 2^(-2) = 27/20 relative to central c
-- Entry *e* at n=-4, m=2: frequency = 5^2 × 3^(-4) × 2^2 = 100/81 relative to c
+# Prerequisites
 
-### Dual Principles
+- **Overtone series**: Oettingen's system is grounded in acoustical ratios and overtone relationships.
+- **Harmonic dualism**: The system's purpose is to establish the dual nature of major and minor.
 
-**Tonicity**: The historically recognized relationship between tones sharing a common fundamental. The tones C4, E4, and G4 are tonically unified as the 4th, 5th, and 6th partials of fundamental C2.
+# Key Properties
 
-**Phonicity**: Oettingen's invention—the relationship among tones that are fundamentals to a common upper partial. The tones C4, Eb4, and G4 are phonically unified as fundamentals projecting the common overtone G6.
+1. **Multiplication matrix**: Table entries represent prime factorizations yielding just-intonation frequencies
+2. **Geometric patterns**: Major triads appear as right-triangular formations (above-right); minor triads as (below-left)
+3. **Just-intonation requirement**: Phonicity requires pure tuning to function, motivating Oettingen's strict advocacy
+4. **Static relations**: The table reflects static relationships among tones, not harmonic progressions
 
-### Critical Difference from Tonicity
-While tonicity and phonicity stand in **reciprocal logical relationship**, they are **phenomenologically asymmetric**:
-- Tonicity: A fundamental produces sounding overtones in pure intervallic relationships
-- Phonicity: Requires tones to BE in pure intervallic relationships to project a coincident overtone
+# Construction / Recognition
 
-This asymmetry motivated Oettingen's insistence on just intonation—pure tuning was necessary to reify the fundamental relationships of his harmonic system.
+The table uses Buchstabentonschriften (letter-tone notations). Oettingen observed geometric forms: minor thirds along diagonals upward-left, major sevenths along diagonals upward-right. He did not use the table directly to describe harmonic progressions, unlike Riemann's later traversable Tonnetz.
 
-## The Table's Subordinated Spatiality
+# Context & Application
 
-The explicit multiplication-matrix format of Oettingen's table means:
-- Internal spatial relations are subordinated to external organization
-- Motions between entries are mediated by exponents defining rows/columns
-- The table reflects **static relations** among tones conceived as tokens of unique prime factorizations
+Oettingen was a strict advocate of just intonation. He regarded Beethoven's enharmonic modulation in the funeral march from Sonata Op. 26 as a compositional error because three descending major thirds on the just-intoned Tonnetz produce an arrival distinct from the departure by an enharmonic diesis (128:125, approximately 41 cents).
 
-Oettingen observed geometric forms:
-- Minor thirds along diagonals upward-left
-- Major sevenths along diagonals upward-right
-- Major triads as right-triangular formations (above and right)
-- Minor triads as right-triangular formations (below and left)
+# Examples
 
-However, he did **not** use the table directly to describe harmonic progressions. Instead, he referenced the *Buchstabentonschriften* (letter-tone notations) furnished by the table.
+**Calculation example** (Gollin, Ch. 9): Entry f at n=3, m=-1 yields frequency = 5^(-1) x 3^3 x 2^(-2) = 27/20 relative to central c. Entry e at n=-4, m=2 yields frequency = 5^2 x 3^(-4) x 2^2 = 100/81.
 
-## Just Intonation and Compositional Error
+**Beethoven "error"**: A descent by three major thirds on the just-intoned Tonnetz leads to an arrival tone nominally and intonationally distinct from the departure tone by the enharmonic diesis -- Oettingen considered this a compositional error.
 
-Oettingen was a strict advocate of just intonation. The acoustical ramifications of enharmonic passages posed such challenges that he regarded Beethoven's enharmonic modulation in the funeral march from Sonata Op. 26 as a **compositional error**.
+# Relationships
 
-The problem: A descent by three major thirds on the just-intoned Tonnetz leads to an arrival tone that is:
-- Nominally distinct from the departure tone
-- Intonationally distinct by an **enharmonic diesis** (128:125, approximately 41 cents)
+## Builds Upon
+- Overtone series and acoustical consonance theory
 
-## Influence on Riemann
+## Enables
+- Tonnetz: Oettingen's table provided the graphic model for Riemann's Tonnetz
+- Riemann's dualist framework: Oettingen supplied the dual principles Riemann developed
 
-Oettingen's table provided Riemann with:
-1. **The graphic model** for the table of relations in his dissertation
-2. **The underlying acoustical conception** of consonance based on overtone ratios
-3. **Dualistic framework** that Riemann would develop into function theory
-4. **Nomenclature** including terms like *Buchstabentonschriften* and the comma notation system
+## Related
+- Oettingen's phonicity/tonicity: The dual principles underlying the system
 
-Riemann's key departures from Oettingen:
-- Reversed the convention for *Striche* (comma marks)
-- Gradually shifted from acoustical to psychological foundation
-- Eventually embraced enharmonic equivalence as "indispensable"
-- Reconceived the table as a traversable landscape rather than a static matrix
+## Contrasts With
+- Riemann's later Tonnetz: Riemann reconceived the static matrix as a traversable landscape
 
-## Related Concepts
+# Common Errors
 
-- **Prerequisite**: overtone-series, harmonic-dualism, consonance
-- **Leads to**: tonnetz, klang
+- **Error**: Attributing the Tonnetz solely to Riemann.
+  **Correction**: Oettingen's 1866 table provided both the graphic model and the underlying acoustical conception.
 
-## Source References
+# Common Confusions
 
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 9: Edward Gollin, "From Acoustic to Metaphorical"
-- Ch 11: Richard Cohn, "Tonnetz as Analytical Apparatus"
-- Oettingen, *Harmoniesystem in dualer Entwickelung* (1866)
+- **Confusion**: Thinking tonicity and phonicity are symmetrical in every respect.
+  **Clarification**: They are logically reciprocal but phenomenologically asymmetric -- tonicity involves sounding overtones, phonicity requires already-pure intervals.
+
+# Source Reference
+
+Gollin, Edward. "From Acoustic to Metaphorical: The Tonnetz in Riemann's Writings." In *The Oxford Handbook of Neo-Riemannian Music Theories*, Chapter 9.
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: table-as-multiplication-matrix concept, tonicity/phonicity definitions, geometric patterns, just-intonation advocacy, Beethoven "error" example, Riemann's departures from Oettingen. Enhanced with calculation examples from Gollin. Confidence high.

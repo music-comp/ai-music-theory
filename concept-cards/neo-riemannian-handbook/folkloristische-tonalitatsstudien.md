@@ -1,182 +1,148 @@
 ---
-concept: "Folkloristische Tonalitätsstudien (Folk Music Studies)"
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Folkloristische Tonalitätsstudien (Ch. 4)"
+# === CORE IDENTIFICATION ===
+concept: "Folkloristische Tonalitätsstudien"
+slug: folkloristische-tonalitatsstudien
+
+# === CLASSIFICATION ===
+category: history-philosophy
+subcategory: primary-source
+tier: advanced
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
 authors: "Matthew Gelbart, Alexander Rehding"
+chapter: "Folkloristische Tonalitätsstudien"
+chapter_number: 4
 pdf_page: null
-chapter_number: null
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - Studies in Folk-Musical Tonality
+  - "Riemann 1916 folk music study"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tonality
+  - klang
+  - tonvorstellung
+extends: []
+related:
+  - pentatonicism
+  - tetrachordal-structure
+  - diatonicity
+  - mese
+  - pyknon
+  - pien
+  - pure-minor-mode
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What distinguishes pentatonic from diatonic tonality in Riemann's framework?"
+  - "What is the evolutionary path from pentatonicism to diatonic tonality?"
 ---
 
-# Folkloristische Tonalitätsstudien (Folk Music Studies)
+# Quick Definition
 
-## Quick Definition
+Riemann's 1916 study arguing that pentatonic and tetrachordal scalar systems across diverse cultures demonstrate a universal developmental path toward Western diatonic tonality. His only major work approaching music from a strictly melodic rather than harmonic angle.
 
-Riemann's 1916 study of non-Western and folk music, arguing that pentatonic and tetrachordal scalar systems across diverse cultures demonstrate the universal, natural basis of the Western diatonic/tonal system.
+# Core Definition
 
-## Formal Definition
+**Folkloristische Tonalitätsstudien** ("Studies in Folk-Musical Tonality," 1916) was the inaugural publication of the Royal Research Institute for Musicology, directed by Riemann. It represents:
 
-**Folkloristische Tonalitätsstudien** ("Studies in Folk-Musical Tonality," 1916) was:
+1. **Defensive project**: Response to comparative musicologists (Stumpf, Hornbostel) who challenged Western tonal universalism through phonograph recordings revealing non-Western intervals
+2. **Methodological departure**: Riemann's only major work "that does not start out from the assumption of tonal triadic harmonies; instead, it approaches musical structures from a strictly melodic angle" (Ch. 4, abstract)
+3. **Synthetic theory**: Proposes a universal developmental path: pentatonicism → tetrachords → hexachords → diatonic scales → common-practice tonality
+4. **Connection to Tonvorstellungen**: Riemann explicitly connected this study to his psychological theory, arguing that musical hearing imposes categorical tone-representations on acoustic stimuli
 
-1. **Institutional milestone**: First volume of the Royal Research Institute for Musicology series, directed by Riemann
-2. **Defensive project**: Response to comparative musicologists (Stumpf, Hornbostel) who challenged Western tonal universalism
-3. **Methodological departure**: Riemann's only major work not starting from triadic harmony
-4. **Synthetic theory**: Unified pentatonic, tetrachordal, and diatonic systems through evolutionary narrative
+Riemann wrote in the preface: "The annoying result of these researches of comparative musicology was first of all a shaking of the foundations of music theory that had slowly solidified over millennia... It finally turned out that the dependence of our organ of hearing on the tone-stimuli that approach it is not absolute, not unlimited, but that rather in musical hearing a continuous operation with fixed concepts must be noted" (Ch. 4, n. 35).
 
-**Central claim**: Music from China, Japan, ancient Greece, Celtic regions, and Gregorian chant demonstrates a universal developmental path:
-```
-Anhemitonic pentatonic → Tetrachordal organization → Diatonic scales → Common-practice tonality
-```
+# Prerequisites
 
-## Historical Origin
+- **tonality** — The study argues for the universality of tonal principles
+- **klang** — Though the study starts from melody, it ultimately connects to Klang theory
+- **tonvorstellung** — The psychological foundation that justifies the study's approach
 
-### Institutional Context
+# Key Properties
 
-The study appeared as Riemann's research institute's inaugural publication:
-- **Director**: Riemann appointed 1914
-- **Publication**: 1916
-- **Significance**: Major statement from Germany's premier musicological institution
+1. Approaches music from melodic/scalar perspective rather than harmonic
+2. Proposes five structural stages: anhemitonic pentatonic → pentatonic with pien → tetrachordal → hexachordal → diatonic
+3. Introduces concepts borrowed from Greek (mese, pyknon) and Chinese (pien) theory
+4. Argues pentatonic scale arises from chain of fifths with central symmetry (mese-centered)
+5. Claims the "minor-third pyknon" marks the transition to harmonic consciousness
+6. Maintains universalist claims despite relying on secondary ethnographic sources
+7. Dualistic principles persist even in melodic analysis (symmetrical scalar derivation)
 
-### Polemical Context
+# Construction / Recognition
 
-Riemann wrote against the Berlin school of comparative musicology:
-- **Phonograph recordings**: New technology revealing diverse scalar systems
-- **"Neutral thirds," "3/4 tones"**: Intervals contradicting Western system
-- **Challenge**: Western tonal principles are culturally specific, not universal
+## Riemann's Evolutionary Stages
+1. **Anhemitonic pentatonic**: Five-note scale from chain of fifths, no semitones
+2. **Pentatonic with pien**: Ornamental "filling tones" added in gaps
+3. **Tetrachordal organization**: Pien become structural; semitone placement defines mode
+4. **Hexachordal synthesis**: Combination of tetrachords and overlapping pentatonic scales
+5. **Full diatonicism**: Leading tone established; major-minor distinction crystallized
 
-Riemann's counter-argument:
-> "Once these studies are deepened, presumably not a lot will be left of the intervals that contradict our musical system... that tone psychologists now believe to hear out of phonographic recordings."
+# Context & Application
 
-### Intellectual Precedents
+The study was polemical from its inception. Comparative musicologists had used phonograph recordings to identify intervals that contradicted Western scalar systems — "neutral thirds," "3/4 tones," "5/4 tones." Riemann countered: "Once these studies are deepened, presumably not a lot will be left of the intervals that contradict our musical system" (Ch. 4, n. 35).
 
-Riemann drew on (but rarely cited) prior discourse:
-- **Burney (1776-1789)**: Connected Greek, Chinese, Scottish pentatonic scales
-- **Forkel**: Expanded Burney's comparative approach
-- **Helmholtz**: Reconstructed "old enharmonic scale"
-- **Fortlage, Bellermann, Gevaert**: Identified anhemitonic pentatonic as proto-Greek scale
+The study holds a "unique position within Riemann's output while also remaining characteristic of that output, in that even this late departure from Riemann's usual analytical practice clearly carries the signature trait of his music-theoretical work, his deep-seated belief in the explanatory power of symmetries" (Ch. 4, p. 159).
 
-## Musical Context
+Modern assessment: The study is "hardly more than a curiosity in the history of ethnomusicology" (Ch. 4, p. 158), but "a better angle from which to approach *Folkloristische Tonalitätsstudien* is from the vantage point of the analytical techniques that Riemann brings to bear on melodic structures" (Ch. 4, p. 159).
 
-### Unique Methodological Position
+# Examples
 
-Unlike all other Riemann works:
-- **No triadic starting point**: Melody approached on its own terms
-- **Klangvertretung suspended**: Cannot assume each tone represents a triad
-- **Scalar dualism**: Instead of harmonic dualism, symmetrical scalar derivation
+**Example 1** (Ch. 4, pp. 148-149): Three fifth-related pentatonic scales presented symmetrically around their respective *mese* values, suggesting proto-functional T-D-S relationships within the pentatonic framework.
 
-Yet dualistic principles persist:
-- Central *mese* with symmetrical extensions above/below
-- Roman numerals (descending) vs. Arabic (ascending) from center
-- Quest for "pure minor" in folk repertoires
+**Example 2** (Ch. 4, p. 149): The Chinese melody "Tsi Tschong" — Riemann's primary evidence that the *mese* (not the lowest pitch) serves as the melodic tonic.
 
-### Key Theoretical Concepts
+**Example 3** (Ch. 4, p. 166): The hexachord as both a combination of three tetrachord types AND an overlaying of two pentatonic scales with pien: "Here again we have another bridge from the melody of primordial times to the rarefied system of the middle ages!"
 
-**1. Mese**: Central tone of pentatonic scale (borrowed from Greek theory)
-- Functions like a "proto-tonic"
-- Riemann assigns it central structural role
+# Relationships
 
-**2. Pyknon**: Three-note cluster at scale center
-- "Major-third pyknon": whole + whole (pentatonic)
-- "Minor-third pyknon": semi + whole (transitional to diatonicism)
+## Builds Upon
+- **tonality** — The study defends tonal universalism
+- **klang** — Ultimately connects melodic structures to harmonic foundations
+- **tonvorstellung** — The psychological framework enabling the argument
 
-**3. Pien**: Chinese concept of "filling tones"
-- Convert pentatonic trichords to tetrachords
-- Variable intonation; ornamental role
-- Enable "modulation" between pentatonic centers
+## Enables
+- Understanding Riemann's late engagement with non-Western music
+- Analytical techniques for monophonic melodic repertoires
 
-**4. Tetrachords**: Four-note units spanning a fourth
-- Dorian, Phrygian, Lydian types
-- Defined by semitone location
-- Derived from pentatonic trichords + pien
+## Related
+- **pentatonicism** — The starting point of Riemann's evolutionary narrative
+- **tetrachordal-structure** — The intermediate stage
+- **diatonicity** — The endpoint
+- **mese** — The central tone concept
+- **pyknon** — The central tone-cluster concept
+- **pien** — The "filling tone" concept
+- **pure-minor-mode** — A side agenda of the study
 
-### The Leading Tone Problem
+# Common Errors
 
-Riemann's key analytical challenge:
-- Leading tone requires semitone approach to tonic
-- In pure pentatonic, no semitones exist
-- Solution: Minor-third pyknon emerges as semitone becomes structural
+- **Error**: Reading *Folkloristische Tonalitätsstudien* as ethnomusicology
+  **Correction**: Riemann's goals were defensive/universalist, not ethnographic. He used non-Western music as evidence for Western theoretical claims.
 
-This explains the evolution from pentatonic to "modern" minor with its *subsemitonium modi*.
+# Common Confusions
 
-## Examples
+- **Confusion**: Thinking the "evolutionary" stages represent historical chronology
+  **Clarification**: Riemann "is generally careful not to commit to a chronology, but supplies instead heuristic links between structural stages" (Ch. 4, abstract). The stages are structural, not historical.
 
-### Chinese Melody "Tsi Tschong"
+- **Confusion**: Believing Riemann's pentatonic analysis abandoned his harmonic worldview
+  **Clarification**: Dualistic principles persist throughout (symmetrical derivation, central-tone conception). The study ultimately reinforces Riemann's tonal universalism.
 
-Riemann's primary example:
-- Anhemitonic pentatonic scale
-- Most phrases end on *mese*
-- Demonstrates cadential gestures without leading tone
+# Source Reference
 
-### Scalar Derivation
+The Oxford Handbook of Neo-Riemannian Music Theories, Chapter 4 (Gelbart/Rehding): pp. 140-163, comprehensive analysis of the study's intellectual context, methodology, key concepts, and modern assessment.
 
-Three fifth-related pentatonic scales:
-```
-Scale on A: E - G - A - C - D
-Scale on D: A - C - D - F - G
-Scale on G: D - F - G - Bb - C
-```
+# Verification Notes
 
-These proto-functional relations (like T-D-S) emerge within pentatonic framework.
-
-### Hexachord as Synthesis
-
-Riemann shows the hexachord as both:
-1. Combination of three tetrachord types
-2. Overlap of two pentatonic scales with pien
-
-## Evolution/Variants
-
-### Riemann's Personal Evolution
-
-| Period | Approach |
-|--------|----------|
-| Early | Acoustic justification for dualism |
-| Middle | Psychological turn (Tonvorstellung) |
-| Late (1916) | Melodic/scalar analysis; folk music |
-
-Some speculate: had Riemann lived longer, might he have "fully reconsidered the harmonic foundations of his musical worldview"?
-
-### Relation to Riemann's System
-
-The study represents:
-- **Continuity**: Symmetry, dualistic principles, universalism
-- **Departure**: No triadic assumption, melodic focus
-- **Synthesis**: "Prehistory" to his main tonal narrative
-
-### Modern Assessment
-
-**Strengths**:
-- Methodological innovation (melodic analysis within tonal framework)
-- Attempt to engage with non-Western music
-- Development of analytical tools for monophonic repertoires
-
-**Weaknesses**:
-- Teleological bias (Western tonality as endpoint)
-- Tendentious use of sources
-- Ignored contrary evidence
-- Cultural imperialism in theoretical framework
-
-### Contemporary Context
-
-The study belongs to broader debates about:
-- Universalism vs. cultural relativism in music theory
-- "Nature" vs. "convention" in musical systems
-- Role of technology (phonograph) in musicological evidence
-
-## Related Concepts
-
-- **Prerequisites**: pentatonicism, tetrachord, diatonic-scale, tonality
-
-## Common Confusions
-
-1. **Folk music study vs. ethnomusicology**: Riemann's goals were defensive/universalist, not ethnographic
-2. **Melodic turn vs. abandoning harmony**: Riemann still saw pentatonicism as "prehistory" to harmonic tonality
-3. **Cross-cultural comparison vs. cultural sensitivity**: Riemann treated diverse musics as interchangeable examples
-4. **Historical claims vs. structural models**: The "evolution" is structural/heuristic, not verified history
-5. **Phonograph skepticism**: Riemann dismissed machine evidence in favor of trained musical perception
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part I:
-- Chapter 4 (Gelbart/Rehding): pp. 140-163, comprehensive analysis of Folkloristische Tonalitätsstudien
+- The chapter provides extensive analysis of the primary source with numerous examples
+- Historical context well-documented through preceding publications (Handbuch, Japanese music articles)
+- Confidence: HIGH — Ch. 4 is entirely devoted to this work
+- Re-extracted from v2 card; preserved: the evolutionary stages, the Riemann vs. Berlin School comparison, the modern assessment (strengths and weaknesses), and the polemical context

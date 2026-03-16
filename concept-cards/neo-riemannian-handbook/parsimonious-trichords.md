@@ -1,128 +1,128 @@
 ---
-concept: Parsimonious Trichords / Generated Trichords
-category: theory
-pdf_page: null
-chapter_number: null
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Parsimonious Trichords
+slug: parsimonious-trichords
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: voice-leading-theory
+tier: advanced
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Klangvertretung & Tone Representation"
-authors: "Clark"
+source_slug: neo-riemannian-handbook
+authors: "Suzannah Clark"
+chapter: "Analyzing Schubert"
+chapter_number: 10
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "parsimonious voice leading"
+  - "generated trichords"
+  - "maximally smooth trichords"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - plr-transformations
+  - voice-leading-graph
+extends: []
+related:
+  - hexatonic-systems
+  - octatonic-systems
+  - dvls-avls
+  - tonnetz
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What makes consonant triads 'parsimonious' in voice-leading terms?"
+  - "How do PLR operations generate cycles of triads?"
+  - "What is the relationship between near-evenness and parsimonious voice leading?"
 ---
 
-# Parsimonious Trichords / Generated Trichords
-
-## Quick Definition
+# Quick Definition
 
 Three-note chords (trichords) that can be connected through maximally smooth voice leading, where only one voice moves by a single semitone, forming the basis for neo-Riemannian transformational systems.
 
-## Formal Definition
+# Core Definition
 
-**Parsimonious trichords** are set classes that participate in efficient voice-leading networks:
+**Parsimonious trichords** are set classes that participate in efficient voice-leading networks. A connection is parsimonious when total voice-leading distance is minimal and the number of moving voices is minimal. Richard Cohn demonstrated that consonant triads [037] are optimal for parsimonious voice leading because of their near-evenness: the interval pattern (4-3-5) is close to even division of the octave, enabling semitone displacements. Clark (Ch. 10) explores these properties through Riemann's concept of Klangvertretung, showing how attention to changing triadic identities of tones enriches analysis of Schubert Lieder.
 
-### Voice-Leading Parsimony
-A voice-leading connection is **parsimonious** when:
-- Total voice-leading distance is minimal
-- Individual voices move by small intervals (semitones preferred)
-- The number of moving voices is minimal
+For triads: P and L operations achieve DVLS = 1 (most parsimonious); R achieves DVLS = 2 (next most parsimonious).
 
-For triads (set class [037]):
-- **Most parsimonious**: P and L operations (1 semitone total)
-- **Next most parsimonious**: R operation (2 semitones total)
+# Prerequisites
 
-### The Consonant Triad's Special Status
-Richard Cohn demonstrated that consonant triads [037] are optimal for parsimonious voice leading because:
+- **PLR transformations**: The operations that connect parsimonious trichords.
+- **Voice-leading graphs**: The geometric framework for measuring parsimony.
 
-1. **Acoustic foundation**: Triads are the largest-cardinality consonant collections
-2. **Chromatic positioning**: Triads bear optimal voice-leading properties in 12-tone equal temperament
-3. **Near-evenness**: The interval pattern (4-3-5) is close to even division of the octave
+# Key Properties
 
-### Maximally Even Sets
-Parsimonious behavior relates to **maximal evenness**—how close a set comes to dividing the octave equally:
-- Perfectly even: Augmented triad [048]
-- Nearly even: Major/minor triads [037]
-- The slight deviation from evenness enables the semitone displacements
+1. **Two common tones**: Each PLR operation preserves two of three tones
+2. **Semitone displacement**: P and L move one voice by semitone
+3. **Near-evenness**: Triads' interval pattern (4-3-5) nearly divides the octave equally
+4. **Cycle generation**: Compound operations produce closed cycles of specific lengths
 
-## Generation Through Transformation
+# Construction / Recognition
 
-### PLR as Generators
-The PLR operations generate all 24 consonant triads from any starting triad:
-- P, L, R are **involutions** (self-inverse)
-- Their combinations produce all possible triadic relations
-- The group has a rich internal structure
+Repeated application of operations generates cycles:
+| Operation | Cycle Length | Set Traversed |
+|-----------|-------------|---------------|
+| LP | 6 | Hexatonic cycle [014589] |
+| PR | 8 | Octatonic cycle [0134679T] |
+| LR | 24 | All 24 triads |
 
-### Cycle Generation
-Repeated application of single transformations or compounds:
+PLR operations are involutions (self-inverse). Their combinations produce all possible triadic relations, and the group has rich internal structure isomorphic to D12.
 
-| Operation | Cycle | Length | Set Class Traversed |
-|-----------|-------|--------|---------------------|
-| P alone | Toggles between parallel | 2 | Major/minor pair |
-| L alone | Toggles between L-related | 2 | Major/minor pair |
-| R alone | Toggles between relatives | 2 | Major/minor pair |
-| LP | Hexatonic cycle | 6 | 6 triads in [014589] |
-| PR | Octatonic cycle | 8 | 8 triads in [0134679T] |
-| LR | Full chromatic | 24 | All 24 triads |
+# Context & Application
 
-## Douthett's DOUTH2 Relation
+Clark (Ch. 10) begins from Riemann's "Ideen" (1914-15), Figure 3: three pairs of triads showing P, R, and L relationships. Riemann observed that imagining any perfect fifth, major third, or minor third yields exactly one major and one minor triad sharing those tones. These common-tone relationships anchor parsimonious voice-leading connections. Clark applies Klangvertretung to show how tones change their triadic significance in Schubert's chromatic passages.
 
-Jack Douthett formalized **DOUTH2**: the relation between two sets of the same cardinality where:
-- Two tones remain fixed
-- Two tones move by semitone in parallel motion
+# Examples
 
-This captures the voice-leading logic underlying:
-- P and L transformations on triads
-- Transformations on larger sets (e.g., [0148] tetrachords in Ravel)
-- Contextual inversions preserving specific interval content
+**Common-tone anchoring** (Clark, Ch. 10): P holds root and fifth, third moves; L holds third and fifth, root moves; R holds root and third, fifth moves. Each preserves a different dyad from the original triad.
 
-## Analytical Applications
+**Hexatonic cycle**: C+ --P--> c- --L--> Ab+ --P--> ab- --L--> E+ --P--> e- --L--> C+. Six triads, returning to start after six steps, all within hexatonic collection [014589].
 
-### Tracking Common Tones
-Parsimonious voice leading foregrounds **common tones** as anchoring points:
-- P: Fifth (root and fifth) held, third moves
-- L: Minor third (third and fifth) held, root moves
-- R: Major third (root and third) held, fifth moves
+**DOUTH2 relation** (Douthett): Two chords where two tones remain fixed and remaining tones move by semitone. P and L are DOUTH2 relations on triads. Extends to larger sets (e.g., [0148] tetrachords).
 
-### Network Analysis
-Parsimonious connections create **transformation networks** where:
-- Nodes represent triads
-- Edges represent single parsimonious moves
-- Paths trace voice-leading trajectories through pitch-class space
+# Relationships
 
-### Hexatonic and Octatonic Spaces
-Parsimonious cycles partition triads into subsystems:
-- 4 hexatonic systems (each containing 6 triads)
-- 3 octatonic systems (each containing 8 triads)
-- These provide intermediate structures between individual triads and full chromatic space
+## Builds Upon
+- PLR transformations and voice-leading theory
 
-## Extension to Other Set Classes
+## Enables
+- Hexatonic and octatonic systems as analytical frameworks
+- Maximally smooth cycles in chromatic analysis
 
-### [0148] Tetrachords
-Gollin's analysis of Ravel's Forlane demonstrates parsimonious transformations on [0148]:
-- Inversion about the semitone (analogous to PLR on triads)
-- W₃ operation maps embedded triads between hexatonic poles
-- Voice-leading logic extends beyond triadic contexts
+## Related
+- Tonnetz: Parsimonious connections form the edges of the triadic Tonnetz
+- DVLS/AVLS: Metrics that formalize parsimony
 
-### General Principles
-Parsimonious behavior is possible for any set class that:
-- Contains intervals of 1 or 2 semitones
-- Has cardinality allowing minimal-motion connections
-- Exhibits near-evenness in its interval structure
+## Contrasts With
+- Functional harmonic analysis: Parsimony measures voice-leading distance, not harmonic function
 
-## Related Concepts
+# Common Errors
 
-- **Prerequisite**: triad, voice-leading, set-class, interval
-- **Leads to**: hexatonic-systems, maximally-smooth-cycles, voice-leading-graph
-- **See also**: plr-transformations, tonnetz, common-tones
+- **Error**: Assuming parsimony applies only to triads.
+  **Correction**: Parsimonious behavior is possible for any set class with near-even interval structure.
 
-## Common Confusions
+# Common Confusions
 
-- **Parsimonious ≠ efficient**: "Efficient" can mean many things; "parsimonious" specifically means minimal voice-leading displacement
-- **Not just triads**: While triads are the focus of neo-Riemannian theory, parsimony applies to other cardinalities
-- **Acoustic vs. voice-leading**: Triads are acoustically optimal (consonance) AND voice-leading optimal (parsimony)—these are independent properties that happen to coincide
+- **Confusion**: Equating "parsimonious" with "efficient" generally.
+  **Clarification**: "Parsimonious" specifically means minimal voice-leading displacement; "efficient" can mean many things.
 
-## Source References
+- **Confusion**: Thinking acoustic consonance and voice-leading parsimony are the same property.
+  **Clarification**: These are independent properties that happen to coincide in consonant triads.
 
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 11: Richard Cohn, "Tonnetz as Analytical Apparatus"
-- Ch 13: Edward Gollin, "Doppelklänge"
-- Cohn, "Neo-Riemannian Operations, Parsimonious Trichords, and Their Tonnetz Representations" (1997)
-- Douthett & Steinbach, "Parsimonious Graphs" (1998)
+# Source Reference
+
+Clark, Suzannah. "Analyzing Schubert." In *The Oxford Handbook of Neo-Riemannian Music Theories*, Chapter 10. See also Cohn, "Neo-Riemannian Operations, Parsimonious Trichords, and Their Tonnetz Representations" (1997).
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: definition of parsimony, PLR comparison, cycle generation table, DOUTH2 relation, near-evenness concept, extension to other set classes. Corrected chapter attribution to Clark (Ch. 10) as primary. Confidence high.

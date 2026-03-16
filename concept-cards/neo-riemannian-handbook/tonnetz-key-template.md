@@ -1,95 +1,124 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Tonnetz Key Template
-category: theory
-source: The Oxford Handbook of Neo-Riemannian Music Theories
-authors: David Kopp
-chapter: "Ch 14: Key and Function in Chromatic/Relational Harmonic Systems"
-pdf_page: null
-chapter_number: null
-unit: null
+slug: tonnetz-key-template
+
+# === CLASSIFICATION ===
+category: analysis
+subcategory: chromatic-tonality
+tier: advanced
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "David Kopp"
+chapter: "Key and Function in Chromatic/Relational Harmonic Systems"
+chapter_number: 14
+pdf_page: 413
+section: "III. Postscript"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "key-flip on the Tonnetz"
+  - "diatonic template on Tonnetz"
+  - "Kopp's key template"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tonnetz
+  - chromatic-mediant
+extends: []
+related:
+  - key-template-tonnetz-flips
+  - common-tone-tonality
+  - tonalitaet-vs-tonart
+contrasts_with:
+  - hexatonic-systems
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a Tonnetz key template and how does it generate chromatic mediants?"
+  - "How do key-flips on the Tonnetz produce the four chromatic mediant keys?"
+  - "Why does Kopp argue chromatic mediants are tonal rather than hexatonic?"
 ---
 
-# Tonnetz Key Template
-
-## Quick Definition
+# Quick Definition
 
 A geometric template representing the diatonic set of a key projected onto the Tonnetz, which can be flipped along its edges to generate the keys of the four chromatic mediants, demonstrating their intrinsic relationship to the tonic key.
 
-## Formal Definition
+# Core Definition
 
-The **Tonnetz key template** is an analytical tool derived from Riemann's classic *Tonnetz* (from "Ideen zu einer 'Lehre von den Tonvorstellungen,'" 1914-15). It represents the seven-note diatonic collection of a key as a connected region on the pitch-class lattice.
+The **Tonnetz key template** is an analytical tool derived from Riemann's classic Tonnetz (from "Ideen," 1914-15). It represents the seven-note diatonic collection as a connected parallelogram on the pitch-class lattice. Kopp (Ch. 14, p. 413) shows that 180-degree flips of the template along its long edges produce exactly the keys of the four chromatic mediants:
 
-**Template Properties**:
-- Contains all seven pitch classes of the diatonic scale
-- D appears at symmetrically opposite positions (as the axis of diatonic symmetry)
-- Has two "long edges" that can serve as axes of transformation
-- Oriented such that the *Tonnetz* tends upward-to-the-right and sharpward-toward-the-top
+| Flip Direction | D Position | Result |
+|---------------|------------|--------|
+| Upward flip | D at lower right | Upper Sharp Mediant |
+| Downward flip | D at lower right | Upper Flat Mediant |
+| Upward flip | D at upper left | Lower Sharp Mediant |
+| Downward flip | D at upper left | Lower Flat Mediant |
 
-**Key-Flip Operations**: 180-degree flips of the template along its long edges produce exactly the keys of the four chromatic mediants:
+D appears at symmetrically opposite positions as the axis of diatonic symmetry. The Tonnetz tends upward-to-the-right and sharpward-toward-the-top.
 
-| Flip Direction | Template Form | Result |
-|---------------|---------------|--------|
-| Upward flip | D at lower right | Upper Sharp Mediant key |
-| Downward flip | D at lower right | Upper Flat Mediant key |
-| Upward flip | D at upper left | Lower Sharp Mediant key |
-| Downward flip | D at upper left | Lower Flat Mediant key |
+# Prerequisites
 
-**Common-Tone Distribution**: The flipped templates reveal that chromatic mediant keys share either three or four pitch classes with the original key (three-to-four or four-to-three distribution), explaining the characteristic "distance-yet-connectedness" quality.
+- **Tonnetz**: The pitch-class lattice on which templates are projected.
+- **Chromatic mediant**: The four chromatic-third relations that templates generate.
 
-## Musical Context
+# Key Properties
 
-The Tonnetz key template provides geometric validation for chromatic mediant relationships:
+1. **Seven pitch classes**: Contains all diatonic scale members
+2. **D as symmetry axis**: D appears at opposite corners reflecting diatonic set symmetry
+3. **Common-tone distribution**: Flipped templates share 3-4 or 4-3 pitch classes with original
+4. **Direct relation**: Chromatic mediants arise from key structure, not compound voice-leading operations
 
-- Demonstrates that chromatic mediants are not arbitrary or "extra-tonal" but intrinsic to key structure
-- Explains the smoothness of chromatic mediant key juxtapositions through common-tone content
-- Contrasts with the neo-Riemannian hexatonic model, which generates chromatic mediants as compound products of successive diatonic operations at the chordal level
-- Supports understanding chromatic third relations as direct, unmediated harmonic relationships
+# Construction / Recognition
 
-**Theoretical Implications**: This visualization argues against treating common chromatic third relations as fundamentally hexatonic, since they can be shown to arise directly from properties of the diatonic key itself.
+Project the diatonic collection onto the Tonnetz as a parallelogram. The template has two "long edges" serving as flip axes. Flip 180 degrees along either edge. The resulting collection is the key of one of the four chromatic mediants. The D at opposite corners reflects the axis of diatonic symmetry (not a special property of the pitch D itself).
 
-## Examples
+# Context & Application
 
-### Basic
+Kopp argues that this intrinsic property of the Tonnetz validates chromatic mediants as essential tonal relationships, not as evidence of atonality or hexatonicism. "This is in contrast to the neo-Riemannian hexatonic model, which generates chromatic mediants as the compound products of two different successive diatonic voice-leading operations at the chordal level" (p. 414). Kopp's broader argument (Ch. 14) is that neo-Riemannian theory's abstraction of Harmonieschritte has resulted in "a view of harmonic relations uncomfortably divorced from the tonal and functional contexts in which they were conceived."
 
-**C major key template flip to E major (USM)**:
-- Original C major: C-D-E-F-G-A-B
-- Flipped to E major: E-F#-G#-A-B-C#-D#
-- Common tones: E, A, B (plus enharmonically D# = Eb scenario)
-- Three-to-four common-tone ratio
+# Examples
 
-**C major to Ab major (LFM)**:
-- Original: C-D-E-F-G-A-B
-- Flipped: Ab-Bb-C-Db-Eb-F-G
-- Common tones: C, F, G (or four in the reverse direction)
-- Shows why descending major third feels most "natural"
+**C major to E major (USM)** (Kopp, Ch. 14, p. 413): Original C major: C-D-E-F-G-A-B. Flipped to E major: E-F#-G#-A-B-C#-D#. Common tones: E, A, B (three shared). The three-to-four common-tone ratio explains the characteristic "distance-yet-connectedness."
 
-### Visualization
+**C major to Ab major (LFM)**: Original: C-D-E-F-G-A-B. Flipped: Ab-Bb-C-Db-Eb-F-G. Common tones: C, F, G (three shared).
 
-```
-Original key template (simplified):
-    F---C---G
-   / \ / \ / \
-  D---A---E---B
+**Short-edge flips**: Produce different nondiatonic cyclic sets -- incomplete octatonic in one direction, hexatonic with redundant member in the other (p. 414, n. 21).
 
-Flip produces chromatic mediant key with maximum
-common-tone retention and minimal pitch-class change.
-```
+# Relationships
 
-## Related Concepts
+## Builds Upon
+- Tonnetz structure and diatonic set theory
 
-- **Prerequisite**: tonnetz, hexatonic-scale, chromatic-mediant
-- **Leads to**: key-relationships, modulation, chromatic-tonality
-- **See also**: secondary-neo-riemannian-transformations
+## Enables
+- Understanding chromatic mediants as tonal (not extra-tonal) relationships
+- Key-level analysis on the Tonnetz
 
-## Common Confusions
+## Related
+- Common-tone tonality (Kopp): Broader framework for chromatic-mediant function
 
-- The key template operates on *keys* (7-note collections), not individual *chords* (3-note)
-- Flipping the template is NOT the same as PLR chord transformations, though both use the Tonnetz
-- The D at opposite corners reflects diatonic set symmetry, not any special property of the pitch D
-- Short-edge flips produce different results (incomplete octatonic or hexatonic sets with redundancy)
-- This model validates chromatic mediants as *tonal* relationships, not as evidence of atonality
-- Common-tone count (3-4 or 4-3) varies by mediant type, affecting their distinctive qualities
+## Contrasts With
+- Hexatonic systems: Neo-Riemannian model generates mediants via compound PLR operations; Kopp's template shows them arising directly from key structure
 
-## Source Reference
+# Common Errors
 
-The Oxford Handbook of Neo-Riemannian Music Theories, Chapter 14: David Kopp, "Key and Function in Chromatic/Relational Harmonic Systems"
+- **Error**: Confusing key templates (7-note collections) with PLR chord transformations (3-note).
+  **Correction**: Key-flip operates on keys, not individual chords, though both use the Tonnetz.
+
+# Common Confusions
+
+- **Confusion**: Thinking the D at corners reflects a special property of the pitch D.
+  **Clarification**: It reflects diatonic set symmetry -- D is the axis of symmetry whether the diatonic set is arranged in scalar steps or fifths.
+
+# Source Reference
+
+Kopp, David. "Key and Function in Chromatic/Relational Harmonic Systems." In *The Oxford Handbook of Neo-Riemannian Music Theories*, Chapter 14, pp. 413-414.
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: template properties, flip-direction table, common-tone distribution, contrast with hexatonic model, short-edge flip note. Enhanced with Kopp's broader argument about tonal context and precise page citations. Confidence high.

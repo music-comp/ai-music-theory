@@ -1,103 +1,134 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Durational Accent
-category: theory
-source: The Oxford Handbook of Neo-Riemannian Music Theories
-authors: William E. Caplin
-chapter: "Ch 15: Riemann's Theories of Rhythm and Meter"
-pdf_page: null
-chapter_number: null
-unit: null
+slug: durational-accent
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: metric theory
+tier: foundational
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "William E. Caplin"
+chapter: "Riemann's Theory of Rhythmic-Metric Organization"
+chapter_number: 15
+pdf_page: 428
+section: "Expressed Meter"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "accent by duration"
+  - "notated durational emphasis"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - expressed-meter
+extends: []
+related:
+  - harmoniewirkung
+  - schlusswirkung
+  - auftakttheorie
+contrasts_with:
+  - agogic-accent
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does note duration create metrical accent?"
+  - "What is the difference between durational accent and agogic accent?"
 ---
 
-# Durational Accent
+# Quick Definition
 
-## Quick Definition
+The phenomenon whereby notes of longer notated duration receive greater metrical weight, serving as one of Riemann's criteria for expressed meter, where listeners instinctively attribute stronger accent to tones distinguished by extended duration, typically in proportions of 2:1 or 3:1.
 
-The phenomenon whereby notes of longer duration receive greater metrical weight, as listeners instinctively attribute stronger accent to tones distinguished by extended duration, typically in proportions of 2:1 or 3:1 relative to surrounding notes.
+# Core Definition
 
-## Formal Definition
+Durational accent is one of Riemann's criteria for expressed meter in which notated differences in note values create perceived metrical accent. From the *Grosse Kompositionslehre*: "The ear instinctively attributes the greater weight to the tones that are distinguished by longer duration; that is, the ear assumes a time signature that places these notes directly behind the bar line" (cited by Caplin, p. 428). Crucially, Caplin distinguishes this from Riemann's earlier concept of "agogic accent" (*Musikalische Dynamik und Agogik*, 1884), which refers to a performed, minute extension of durational value not present in the notation. Durational accent involves manifest, notated differences in duration.
 
-**Durational accent** (related to but distinct from "agogic accent") is one of Riemann's criteria for expressed meter, in which notated differences in note values create perceived metrical accent.
+# Prerequisites
 
-**Core Principle** (from *Grosse Kompositionslehre*):
-> "The ear instinctively attributes the greater weight to the tones that are distinguished by longer duration; that is, the ear assumes a time signature that places these notes directly behind the bar line."
+- **Expressed meter** — Durational accent is one of the criteria operating within the expressed-meter framework
 
-**Distinction from Agogic Accent**:
-- **Agogic accent** (*Musikalische Dynamik und Agogik*, 1884): A performed, minute extension of durational value—not notated, but applied by the performer
-- **Durational accent** (mature theory): A manifest, notated difference in duration (e.g., half note vs. quarter note)
+# Key Properties
 
-**Typical Proportions**: 2:1 or 3:1
+1. Operates on notated differences in note values (not performed nuance)
+2. Most effective in proportions of 2:1 or 3:1 (e.g., half note vs. quarter note)
+3. Relatively long notes tend to bring musical motion to a standstill, making them appropriate for phrase endings
+4. Supports Schlusswirkung — long notes at phrase endings reinforce cadential accent
+5. Functions as an "assistant" criterion when Harmoniewirkung is ambiguous
+6. Works clearly at local (beat) level but becomes ambiguous at higher hierarchical levels
+
+# Construction / Recognition
+
+## To Identify Durational Accent
+
+1. Compare note durations within a phrase or passage
+2. Notes with significantly longer duration (2:1 or 3:1 ratio) than surrounding notes receive durational accent
+3. These notes should correspond to metrically strong positions
+4. If they fall on weak beats in the notation, Riemann would argue for rebarring
+
+## Typical Pattern
+
 ```
 short-LONG-short = LONG receives durational accent
-quarter-HALF-quarter
-eighth-DOTTED QUARTER-eighth
+quarter-HALF-quarter → HALF is accented
+eighth-DOTTED QUARTER-eighth → DOTTED QUARTER is accented
 ```
 
-**Aesthetic Function**: Relatively long notes bring musical motion to a standstill, making them appropriate for phrase endings (supporting *Schlusswirkung*).
+# Context & Application
 
-## Musical Context
+Durational accent serves as an "assistant" criterion when other expressed-meter factors (especially Harmoniewirkung) are ambiguous. It is most useful at the beat level and within phrases where long notes mark cadential arrivals. Caplin notes a complexity at higher levels: "At the single beat-level, durational accent is clear (half note vs. quarter). At higher levels (e.g., half-note motion), the same notated values may not generate clear accent" (p. 429).
 
-Durational accent serves as an "assistant" criterion when other expressed-meter factors are ambiguous:
+**Aesthetic function**: "Relatively long notes bring musical motion to a standstill" (p. 428), making them appropriate for endings and supporting Riemann's end-accentuation theory.
 
-- Supports the articulating force of accented beats
-- Helps listeners recognize metric organization without the score
-- Often reinforces cadential points (long notes at phrase endings)
+# Examples
 
-**Analytical Application**: When notation seems to place bar lines incorrectly, durational accent can reveal the "true" expressed meter—longer values should fall on strong beats, not create "hindering" syncopations.
+**Example 1** (p. 429): Beethoven, Piano Sonata Op. 27, No. 1, i. Riemann argues the notation places long values on upbeats, creating "incessantly hindering" syncopation effects. His rebarring aligns durational accents with metrical downbeats, moving bar lines so that long notes fall after the bar line.
 
-**Complexity at Higher Levels**: At single beat-level, durational accent is clear (half note vs. quarter). At higher levels (e.g., half-note motion), the same notated values may not generate clear accent:
-- A half note following two quarters: clear 2:1 accent
-- A half note related to a combined pair of quarters: ambiguous at that level
+**Example 2** (p. 428): Basic durational accent at 2:1 ratio: a half note among quarter notes. The ear "assumes a time signature that places these notes directly behind the bar line."
 
-## Examples
+# Relationships
 
-### Basic
+## Builds Upon
+- **Expressed meter** — Durational accent is one of five expressed-meter criteria
 
-**Clear durational accent (2:1 ratio)**:
-```
-eighth-eighth-QUARTER-eighth-eighth-QUARTER
-  weak   weak  STRONG   weak   weak  STRONG
-```
-The quarter notes receive durational accent, suggesting 3/4 or 6/8 meter.
+## Enables
+- **Rebarring** — Discrepancies between durational accent and notation motivate rebarring
 
-**3:1 ratio**:
-```
-eighth-eighth-eighth-DOTTED QUARTER
-  weak   weak   weak      STRONG
-```
-The dotted quarter has three times the duration, creating strong durational accent.
+## Related
+- **Harmoniewirkung** — The primary criterion that durational accent assists
+- **Schlusswirkung** — Long notes at cadences reinforce cadential accent
 
-### From Repertoire
+## Contrasts With
+- **Agogic accent** — Agogic accent is performed (unnotated); durational accent is notated
 
-**Beethoven, Piano Sonata Op. 27, No. 1, i**: Riemann argues the notation places long values on upbeats, creating "incessantly hindering" syncopation effects. His rebarring aligns durational accents with metrical downbeats:
+# Common Errors
 
-- Original notation: long notes appear on weak beats
-- Riemann's rebarring: long notes align with strong beats
-- Result: the expressed meter (via duration) matches notated meter
+- **Error**: Confusing durational accent with agogic accent
+  **Correction**: Durational accent involves notated duration differences; agogic accent is a performer's subtle lengthening not written in the score
 
-**Distinction in practice**:
-```
-Original:  | short LONG short | short LONG short |
-Rebarred:  short | LONG short short | LONG short short |
-```
-The long value now follows the bar line.
+- **Error**: Assuming any long note creates accent regardless of context
+  **Correction**: Context (harmonic, melodic, formal) affects perception; a long note on a genuinely weak beat creates syncopation, not a change in meter
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: rhythm, note-values
-- **Leads to**: expressed-meter
-- **See also**: harmoniewirkung, schlusswirkung, syncopation
+- **Confusion**: Thinking durational accent overrides other metric criteria
+  **Clarification**: It functions as an "assistant" criterion, typically confirming rather than contradicting Harmoniewirkung
 
-## Common Confusions
+- **Confusion**: Believing Riemann's rebarrings based on durational accent are universally accepted
+  **Clarification**: They are controversial; many modern analysts reject them as imposing theoretical bias on notation
 
-- Durational accent is NOTATED; agogic accent is PERFORMED (not in the score)
-- Durational accent works clearly at local levels but becomes ambiguous at higher levels
-- Not all long notes create accent—context (harmonic, melodic) affects perception
-- 2:1 or 3:1 proportions are most effective; more complex ratios may be ambiguous
-- Durational accent often supports other expressed-meter criteria but rarely overrides them alone
-- Riemann's rebarrings based on durational accent are controversial and often rejected today
-- A long note on a weak beat creates syncopation, not a change in the underlying meter
+# Source Reference
 
-## Source Reference
+Chapter 15: William E. Caplin, "Riemann's Theory of Rhythmic-Metric Organization," pp. 428-430. Distinction from agogic accent on p. 428; Beethoven Op. 27 example on p. 429.
 
-The Oxford Handbook of Neo-Riemannian Music Theories, Chapter 15: William E. Caplin, "Riemann's Theories of Rhythm and Meter"
+# Verification Notes
+
+- Re-extracted from v2 card; preserved: Grosse Kompositionslehre quote, 2:1/3:1 proportions, agogic accent distinction, Beethoven Op. 27 rebarring example, higher-level ambiguity
+- Definition: Direct from Caplin (p. 428) with Riemann quotation
+- Confidence: HIGH — Caplin provides explicit definition with Riemann quotation and clear distinction from agogic accent

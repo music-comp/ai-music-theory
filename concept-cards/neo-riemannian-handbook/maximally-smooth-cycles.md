@@ -1,137 +1,130 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Maximally Smooth Cycles
-category: theory
-pdf_page: null
-chapter_number: null
-unit: null
+slug: maximally-smooth-cycles
+
+# === CLASSIFICATION ===
+category: pitch-space
+subcategory: cyclic triadic structures
+tier: intermediate
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Tonnetz as Analytical Apparatus"
-authors: "Cohn"
+source_slug: neo-riemannian-handbook
+authors: "Richard Cohn"
+chapter: "Tonal Pitch Space and the (Neo-)Riemannian Tonnetz"
+chapter_number: 11
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "MSC"
+  - "LP/PL cycles"
+  - "semitonal cycles"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - plr-transformations
+  - common-tone-relationships
+extends: []
+related:
+  - hexatonic-systems
+  - tonnetz
+  - voice-leading-efficiency
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are maximally smooth cycles?"
+  - "How do maximally smooth cycles relate to hexatonic systems?"
 ---
 
-# Maximally Smooth Cycles
+# Quick Definition
 
-## Quick Definition
+Closed sequences of chords where each successive pair differs by the smallest possible voice-leading motion (typically a single semitone in a single voice), with the LP/PL cycle on triads (length 6, generating hexatonic systems) being the principal example.
 
-Closed sequences of chords where each successive pair differs by the smallest possible voice-leading motion, typically a single semitone in a single voice, creating cyclic structures fundamental to neo-Riemannian analysis.
+# Core Definition
 
-## Formal Definition
+A **maximally smooth cycle** is a sequence of chords (C1, C2, ... Cn, C1) where each adjacent pair shares all tones but one, and that non-shared tone moves by semitone — achieving the minimum possible voice-leading displacement (DVLS = 1) throughout. For consonant triads in 12-TET, the LP (or PL) cycle is the principal maximally smooth cycle: it has length 6, returns to the starting triad, and generates the four hexatonic systems that partition the 24 consonant triads. Cohn (Ch. 11) connects these cycles to the Tonnetz, where they trace small closed loops through adjacent triangles, and to the toroidal Tonnetz, where they appear as tubes. The concept originates in Cohn's 1996 article "Maximally Smooth Cycles, Hexatonic Systems, and the Analysis of Late-Romantic Triadic Progressions."
 
-A **maximally smooth cycle** is a sequence of chords (C₁, C₂, ... Cₙ, C₁) where:
-1. Each adjacent pair shares all tones but one
-2. The non-shared tones differ by semitone
-3. The sequence is cyclic (returns to starting chord)
-4. The voice-leading distance is minimal throughout
+# Prerequisites
 
-### Formal Criteria
-For chords of cardinality k:
-- k-1 common tones between adjacent chords
-- 1 voice moves by 1 semitone
-- Total displacement per step = 1 semitone
+- **PLR transformations**: L and P are the operations that produce maximally smooth steps
+- **Common-tone relationships**: Maximum common-tone retention (2 of 3) is required at each step
 
-## Principal Maximally Smooth Cycles
+# Key Properties
 
-### On Consonant Triads
+1. **Minimal displacement**: Each step moves exactly one voice by exactly one semitone (DVLS = 1)
+2. **Maximum common tones**: k-1 tones retained at each step (for k-note chords)
+3. **Cyclic closure**: The sequence returns to the starting chord
+4. **LP generation**: For triads, LP (or PL) is the only maximally smooth cycle generator
+5. **Length 6**: The LP cycle has order 6, producing hexatonic systems
+6. **Partition property**: Four disjoint LP cycles partition all 24 consonant triads
 
-**LP/PL Cycle (Hexatonic)**
-- Length: 6 triads
-- Example: C+ → C- → Ab+ → Ab- → E+ → E- → C+
-- Displacement pattern: One semitone per move
-- Creates hexatonic systems
+# Construction / Recognition
 
-**LR/RL Cycle (Chromatic)**
-- Length: 24 triads (all major and minor)
-- Covers the entire triadic universe
-- Not "maximally smooth" in strictest sense (R moves whole tone)
+To construct a maximally smooth cycle from a triad:
+1. Start from any consonant triad (e.g., C major: C-E-G)
+2. Apply L: C major to E minor (C moves to B; E-G retained)
+3. Apply P: E minor to E major (G moves to G#; E-B retained)
+4. Continue LP alternation: E+ to Ab- to Ab+ to C- to C+ (return)
+5. Total: 6 triads, each connected by single-semitone motion
 
-### On Augmented Triads
-- 4 augmented triads form a smooth cycle
-- Each differs by one semitone from neighbors
-- C-E-G# → Db-F-A → D-F#-A# → Eb-G-B → C-E-G#
+On the Tonnetz, this cycle traces a compact closed path through 6 adjacent triangles.
 
-### On Diminished Seventh Chords
-- 3 diminished sevenths form a cycle
-- Each differs by one semitone from neighbors
+# Context & Application
 
-## Analytical Significance
-
-### Voice-Leading Geometry
-Maximally smooth cycles trace:
-- Efficient paths through pitch-class space
-- "Tubes" in Tymoczko's higher-dimensional voice-leading geometry
-- Minimal-energy transformations between chords
-
-### Chromatic Coherence
-In analysis of 19th-century music, maximally smooth cycles provide:
-- Logic for progressions outside functional harmony
-- Coherence based on voice-leading rather than root motion
-- Alternative to tonal-functional explanations
-
-### Compositional Unity
-Composers exploiting smooth cycles include:
+Maximally smooth cycles provide voice-leading logic for chromatic progressions that resist functional explanation. They are analytically central for:
 - Wagner (Tristan, Parsifal)
-- Liszt (late piano works)
-- Brahms (chromatic passages)
-- Schubert (third-related sequences)
+- Liszt's late piano works
+- Schubert's chromatic third-related passages
+- Any passage where stepwise voice-leading appears to generate harmonic motion
 
-## Example: Cohn's Analysis of Parsifal
+Cohn's Parsifal analysis (Ch. 11) demonstrates how LP cycles create local coherence within hexatonic systems, while transitions between systems require non-smooth operations (R).
 
-The Faith Proclamation (Act I Prelude) demonstrates:
-- LP cycling through hexatonic space
-- Departure through octatonic connection
-- Return via smooth voice-leading
+# Examples
 
-The analysis shows how:
-- Each harmonic move minimizes voice-leading distance
-- The overall trajectory creates coherent tonal motion
-- Smooth cycles substitute for functional progressions
+Example LP cycle (Ch. 11): C+ -> C- -> Ab+ -> Ab- -> E+ -> E- -> C+ (each step: DVLS = 1, one voice moves by semitone). This traces through the "Northern" hexatonic system.
 
-## Relationship to Tonnetz
+PR cycles (length 8, generating octatonic systems) are smooth but not maximally smooth, because R involves a whole-step displacement (DVLS = 2).
 
-On the Tonnetz:
-- LP cycles trace small closed loops
-- Each step moves to an adjacent triangle
-- The cycle covers a local region before returning
+# Relationships
 
-Maximally smooth cycles appear as:
-- Minimal perimeter paths on the Tonnetz
-- Closed walks visiting each node once
-- Efficient tours through triadic space
+## Builds Upon
+- plr-transformations (L and P produce the cycle)
+- common-tone-relationships (maximum retention at each step)
 
-## Mathematical Properties
+## Enables
+- hexatonic-systems (MSCs generate the four hexatonic partitions)
+- Voice-leading analysis of chromatic music
 
-### Cycle Lengths
-For triads in 12-TET:
-- Hexatonic (LP): 6
-- Full chromatic (LR): 24
-- These are the only maximally smooth proper cycles for triads
+## Related
+- tonnetz (MSCs trace minimal paths on the Tonnetz)
+- voice-leading-efficiency (MSCs are the most efficient triadic cycles)
 
-### Group-Theoretic Interpretation
-- LP generates Z₆ (cyclic group of order 6)
-- Four disjoint LP cycles partition the 24 triads
-- Cycles are orbits under the LP subgroup
+## Contrasts With
+(none specific)
 
-### Voice-Leading Distance
-If we define distance as total semitone motion:
-- LP cycle: 6 semitones total (1 per step)
-- Covers 6 triads with minimal displacement
-- Average displacement: 1 semitone per triad
+# Common Errors
 
-## Related Concepts
+- **Error**: Calling PR cycles "maximally smooth"
+  **Correction**: R involves whole-step motion (DVLS = 2), so PR cycles are smooth but not maximally smooth; only LP cycles achieve DVLS = 1 at every step for triads
 
-- **Prerequisite**: parsimonious-trichords, plr-transformations, voice-leading
-- **Leads to**: hexatonic-systems, voice-leading-graph, chromatic-transformation-networks
-- **See also**: tonnetz, octatonic-systems
+# Common Confusions
 
-## Common Confusions
+- **Confusion**: Maximally smooth cycles are the only analytically important cycles
+  **Clarification**: PR cycles (octatonic), LR cycles (chromatic), and other compound cycles are also analytically important; "maximally smooth" is one specific property
 
-- **Smooth vs. parsimonious**: "Smooth" emphasizes the cyclic structure; "parsimonious" emphasizes the local voice-leading
-- **PR cycles aren't maximally smooth**: R involves whole-tone motion, so PR cycles are smooth but not *maximally* smooth
-- **Not all closed paths are cycles**: A cycle must traverse distinct chords before returning
+# Source Reference
 
-## Source References
+Cohn, Richard. "Tonal Pitch Space and the (Neo-)Riemannian Tonnetz." In *The Oxford Handbook of Neo-Riemannian Music Theories*, edited by Edward Gollin and Alexander Rehding. Oxford University Press, 2011. Chapter 11.
 
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 11: Richard Cohn, "Tonnetz as Analytical Apparatus"
-- Ch 13: Edward Gollin, "Doppelklänge"
-- Cohn, "Maximally Smooth Cycles, Hexatonic Systems, and the Analysis of Late-Romantic Triadic Progressions" (1996)
+Cohn, Richard. "Maximally Smooth Cycles, Hexatonic Systems, and the Analysis of Late-Romantic Triadic Progressions." *Music Analysis* 15.1 (1996): 9-40.
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: LP cycle example, DVLS = 1 property, length 6, partition into 4 systems, PR distinction, Parsifal reference. High confidence: central to Cohn's analytical framework in Ch. 11 and his earlier published work.

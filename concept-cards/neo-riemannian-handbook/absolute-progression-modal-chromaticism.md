@@ -1,130 +1,139 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Absolute Progression and Modal Chromaticism
-category: analysis
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Chapter 20: Objects, Transformations, and Tonal Meaning"
-authors: Daniel Harrison
-pdf_page: null
-chapter_number: null
-unit: null
+slug: absolute-progression-modal-chromaticism
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: chromatic-harmony
+tier: advanced
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Daniel Harrison"
+chapter: "Three Short Essays on Neo-Riemannian Theory"
+chapter_number: 20
+pdf_page: 565
+section: "III. Remarks on Fantasia on a Theme by Thomas Tallis"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - Kurthian absolute progression
+  - modal chromaticism
+  - tonic overcrowding
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - sensuous-functional-analysis
+  - plr-transformations
+extends: []
+related:
+  - functional-transformational-synthesis
+  - objects-transformations-dichotomy
+contrasts_with:
+  - monotonality-principle
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is an absolute progression?"
+  - "When is transformational analysis more appropriate than functional analysis?"
+  - "What is modal chromaticism?"
 ---
 
-# Absolute Progression and Modal Chromaticism
+# Quick Definition
 
-## Quick Definition
+Two related concepts identifying contexts where transformational rather than functional analysis is most appropriate: absolute progressions occur when each chord in a succession proposes itself as a local tonic (creating "tonic overcrowding"), and modal chromaticism arises when modal context contradicts the systematic functional implications of chord progressions.
 
-Contexts where individual chords propose themselves (however weakly) as local tonics, accumulating without functional transaction, creating conditions where neo-Riemannian analysis is most appropriate---not because tonics are absent, but because there are too many of them.
+# Core Definition
 
-## Formal Definition
+Harrison identifies **absolute progressions** (following Kurth) as successions where "individual chords in a succession of chords propose themselves (however meekly or ineffectually) as local tonics" and where "such proposals pile up and accumulate" so that "there is no longer any sensuous-functional transactions and discharges, no circulation of T, D, and S" (Harrison, p. 573). This condition is not tonic-free but tonic-overcrowded: "I identify this state not as being absent of tonics but rather as overcrowded with them" (p. 573).
 
-**Absolute progression** (from Kurth) refers to chord successions where:
-- Each chord proposes itself as a local tonic
-- Proposals "pile up and accumulate"
-- No sensuous-functional transactions or discharges occur
-- There is no circulation of T, D, and S
+**Modal chromaticism** (borrowing Charles Smith's term) occurs "when we find a fragment of a conventional progression that has been forced into a context that contradicts its apparent functional allegiance and imposes another functional interpretation, usually around a different tonic" — producing "both of these contradictory functional interpretations, the systematically implicit and the contextual, resonating...through the passage" (Smith, quoted on p. 566).
 
-**Modal chromaticism** (from Charles Smith) describes:
-> "A fragment of a conventional progression that has been forced into a context that contradicts its apparent functional allegiance and imposes another functional interpretation, usually around a different tonic."
+# Prerequisites
 
-Both create conditions where L/P/R transformational analysis becomes most useful.
+- **Sensuous-functional analysis** — Understanding what functional analysis can and cannot capture
+- **PLR transformations** — The transformational tools appropriate for these contexts
 
-## Harrison's Key Realization
+# Key Properties
 
-Initial framing suggested neo-Riemannian analysis works when "functional tonics are absent or only weakly effective." But the Vaughan Williams analysis reveals:
+1. Absolute progressions: each chord proposes itself as T, preventing functional discharge
+2. "Tonic overcrowding" — not absence of tonicity but excess of it
+3. PLR labels are "uniquely suited" to absolute progressions because they derive from "alteration" — changing a chord's sound while retaining an underlying meaning
+4. Modal chromaticism: systematic function (e.g., G as dominant of C) contradicts contextual function (G as tonic of Phrygian mode)
+5. Both conditions create "functional confusion" where chords' "motive power is screwed up"
+6. These are the specific contexts where transformational analysis is the "best first approach"
 
-> "I identify this state not as being absent of tonics but rather as overcrowded with them."
+# Construction / Recognition
 
-**Too many tonics** produces the same analytical effect as **no tonic**: loss of orientation preventing sensuous-functional transactions.
+## To Identify Absolute Progressions
 
-## The Vaughan Williams Case Study
+1. Listen for whether each chord seems to assert itself as a potential tonic
+2. Check for root motion by second (suggesting contrapuntal/melodic rather than functional logic)
+3. Note whether functional labels require constant reassignment (no stable T)
+4. If "each chord for itself" is the dominant impression, transformational analysis is appropriate
 
-*Fantasia on a Theme by Thomas Tallis* presents:
+## To Identify Modal Chromaticism
 
-1. **Systemic implication**: G-major chords sound like dominants of C
-2. **Contextual behavior**: G functions as tonic of Phrygian mode
-3. **Bifurcation**: "The motive power of the chords here is screwed up"
+1. Look for chords that sound like one function (e.g., dominant) but behave like another (e.g., tonic)
+2. Check whether the modal context (e.g., Phrygian) contradicts the tonal-functional implications
+3. Note if major/minor shimmering around a pitch center creates functional ambiguity
 
-The piece has functional gravitation, but of an "unusual and even dreamlike" kind.
+# Context & Application
 
-## Smith's Phrygian System
+Harrison demonstrates both concepts through Vaughan Williams's *Fantasia on a Theme by Thomas Tallis* (1910). The Tallis theme in Phrygian mode creates modal chromaticism: "the G-major chords can sound like dominants of a key on C yet are clearly acting as tonics of a mode on G" (p. 566). Vaughan Williams's own contributions feature absolute progressions, particularly in the introduction and the *Abgesang* section, where "a thoroughly modern chord-root progression" floats "in a very light, G-ish tonal gravity" (p. 568).
 
-For Phrygian mode:
-- 2 (lowered) becomes the agent of pivotal function
-- Traditional dominant function is weakened
-- Plagal motion (C to G) confirms tonal center
+# Examples
 
-This creates the unease of "both contradictory functional interpretations, the systematically implicit and the contextual, resonating."
+**Vaughan Williams, *Tallis Fantasia*, introduction** (pp. 568-570): The opening chord succession G+-F+-Eb+-Db+-Gb+ proceeds by step in "absolute progression." PLR labels (PRLR, LPR, etc.) are chosen to minimize distortion of the G-Phrygian prototype scale. "Given a choice of transformations that take one chord to another, the 'best' one is that which distorts a G-Phrygian scale the least."
 
-## When Neo-Riemannian Analysis Is Appropriate
+**Vaughan Williams, organum passage** (p. 571): Root-position major triads planed in parallel — "the ultimate expression of melodic-harmonic preeminence." Pitch transposition Tx replaces PLR as the more natural model, since each alteration requires "four operations, such as LRPR, etc., which makes them all four-letter words — a rather discouraging analytic portent."
 
-Harrison identifies specific conditions:
+**Tallis theme, functional bifurcation** (p. 567): Two rows of functional labels are needed — systemic function (C-minor hearing) vs. contextual/rhetorical function (G-Phrygian hearing). "Because of the bifurcation of systemic implication and contextual behavior, the motive power of the chords here is screwed up."
 
-1. **Light tonal gravity**: Chords float without strong functional attachment
-2. **Each chord for itself**: The overall impression of absolute progression
-3. **Alteration chains**: L/P/R derive from procedures of chordal alteration
-4. **Root motion by seconds**: Melodic-contrapuntal values penetrate harmony
+**Boundary turbulence, rehearsal E** (p. 572): "The motion to and from the hexatonic pole, F#-d-F#," is "a signal response of the twentieth century to the sixteenth." Colliding dynamic and harmonic masses — "fortissimo major chords separated from pianissimo minor ones by the distancing transformation RPR."
 
-In these contexts, L/P/R labels model remoteness between triads effectively.
+**Harrison's "strategic retraction"** (p. 573): "I identify this state not as being absent of tonics but rather as overcrowded with them. Still, the effect upon analysis is the same — a loss of orientation that prevents sensuous-functional transactions from taking place."
 
-## The Alteration Interpretation
+# Relationships
 
-L/P/R transformations historically derive from Riemann's concept of alteration:
-- A chord's sounding aspect changes without changing underlying meaning
-- The transformed chord "retains essential C-ness" even when it becomes G
+## Builds Upon
+- **Sensuous-functional analysis** — Absolute progression is where sensuous hearing fails
+- **PLR transformations** — The analytical tool appropriate for these contexts
 
-> "LR claims that if C was construed as T, then G also expresses T; G is an 'altered' C."
+## Enables
+- **Functional-transformational synthesis** — Identifying when each paradigm applies
 
-This is fundamentally different from saying G functions as D of C.
+## Related
+- **Objects-transformations dichotomy** — Absolute progressions expose the need for both perspectives
 
-## Analytical Method for Absolute Progressions
+## Contrasts With
+- **Monotonality principle** — Absolute progressions are where monotonality breaks down
 
-Harrison analyzes the Tallis Fantasia opening:
+# Common Errors
 
-1. Major-minor "shimmering" on G final
-2. Root progression in neither key nor mode
-3. Outer-voice counterpoint as main constructive feature
-4. L/P/R labels chosen to minimize non-Phrygian pitches
+- **Error**: Assuming absolute progressions lack all tonal content
+  **Correction**: Harrison is clear that they are overcrowded with local tonics, not empty of them
 
-**Selection criterion**: The "best" transformation distorts G-Phrygian scale the least.
+- **Error**: Using PLR analysis exclusively for passages with clear tonal gravity
+  **Correction**: PLR is specifically suited to absolute progressions; functional analysis handles tonal gravity
 
-## Modal Chromaticism in Practice
+# Common Confusions
 
-The Tallis tune creates dual hearing:
-- Top row: Systemic function (C-minor key profile)
-- Bottom row: Contextual function (G-Phrygian center)
-- "2 pivotal function replaces dominant function
+- **Confusion**: Thinking "modal chromaticism" involves literal chromaticism
+  **Clarification**: Smith's "modal chromaticism" refers to the contradiction between systematic tonal implications and contextual modal behavior — it can occur in purely diatonic music
 
-This allows Vaughan Williams to **conserve** the Tallis environment while composing **twentieth-century** music.
+- **Confusion**: Believing neo-Riemannian analysis is always the best approach for chromatic music
+  **Clarification**: Harrison argues it is best specifically for absolute progressions, not for all chromatic contexts
 
-## Boundary Turbulence
+# Source Reference
 
-At transitions (e.g., rehearsal E), Harrison notes:
-- "Purple" patches with hexatonic-polar motion (F#-d-F#)
-- Colliding dynamic and harmonic masses
-- *RPR* transformation creating distance
-- Return through chromatic fog
+Harrison, Daniel. "Three Short Essays on Neo-Riemannian Theory." Chapter 20 in *The Oxford Handbook of Neo-Riemannian Music Theories*, Essay III: pp. 564-573. See also Smith, "The Functional Extravagance of Chromatic Chords," *Music Theory Spectrum* 8 (1986): 94-139; Rothfarb, *Ernst Kurth as Theorist and Analyst*, ch. 7.
 
-These moments of "boundary turbulence" between tonal centers invite transformational description.
+# Verification Notes
 
-## Strategic Retraction
-
-> "My purpose in these three essays has been...to identify cases in which transformation theory may indeed be the best first approach."
-
-These cases correlate with **Kurthian absolute progressions** rather than general sensuous-functional stress.
-
-## Related Concepts
-
-- **Prerequisite**: plr-transformations
-- **See also**: analytical-levels
-
-## Critical Insight
-
-The value of neo-Riemannian analysis is context-dependent:
-- Not a cure-all for analytical anxieties
-- Best for genuine absolute progressions
-- Should be crossed with functional approaches for "vigorous analytic hybrids"
-- Maintains sensuous-functional analysis for other contexts
-
-## Source Reference
-
-Harrison, Daniel. "Objects, Transformations, and Tonal Meaning." Oxford Handbook of Neo-Riemannian Music Theories, Chapter 20, pp. 564-573.
+Re-extracted from v2 card; preserved: the tonic-overcrowding insight, the Tallis Fantasia examples (including boundary turbulence and hexatonic pole), Smith's Phrygian system, and Harrison's strategic retraction. V2 card lacked v3.1 frontmatter and structured sections. Confidence is high: Harrison explicitly discusses both concepts with analytical demonstrations.

@@ -1,136 +1,147 @@
 ---
-concept: "Applied Dominant (Zwischendominant)"
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Riemann's Legacy (Ch. 1)"
+# === CORE IDENTIFICATION ===
+concept: Applied Dominant (Zwischendominant)
+slug: applied-dominant
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: chromatic-harmony
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
 authors: "Ludwig Holtmeier"
+chapter: "Riemann and the Birth of Modern Harmonic Theory"
+chapter_number: 1
 pdf_page: null
-chapter_number: null
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - Zwischendominant
+  - Zwischendominante
+  - intermediate dominant
+  - secondary dominant
+  - Klammerdominante (parenthetical dominant)
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - harmonic-function
+  - tonality
+extends:
+  - harmonic-function
+related:
+  - modulation
+  - funktionstheorie
+  - klangvertretung
+contrasts_with:
+  - modulation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Riemann's function theory relate to neo-Riemannian transformations?"
+  - "How does function theory handle chromaticism without invoking modulation?"
 ---
 
-# Applied Dominant (Zwischendominant)
+# Quick Definition
 
-## Quick Definition
+A dominant-function chord that temporarily tonicizes a scale degree other than the tonic, creating momentary harmonic tension toward a secondary goal without establishing a true modulation. The concept was systematized by Riemann and widely disseminated by Ernst Kurth.
 
-A dominant-function chord that temporarily tonicizes a scale degree other than the tonic, resolving to a chord that is not the actual tonic of the key.
+# Core Definition
 
-## Formal Definition
+The **Zwischendominant** ("intermediate dominant" or "applied dominant") is a chord bearing dominant function that resolves to a harmony other than the tonic. It creates a momentary tonicization without changing the governing tonic.
 
-The **Zwischendominant** ("intermediate dominant" or "applied dominant") is a chord bearing dominant function that resolves to a harmony other than the tonic. It creates a momentary tonicization without establishing a true modulation.
+Riemann introduced both the conceptual category and the symbolic notation (parenthetical function symbols). The concept was integral to his modern understanding of tonality, which aimed to interpret chromatically rich progressions within a single key. As Holtmeier notes, function theory was "predestined to demonstrate how superficial are judgments that assert: 'Wagner is always modulating!'" (Ch. 1, p. 10).
 
-**Formal notation**:
-- Riemann: Parenthetical function symbols, e.g., (D) or D with arrow
-- Modern function theory: D/x where x is the target
-- Scale-degree theory: V/V, V/ii, V/vi, etc.
+Ernst Kurth popularized the concept, making it "common knowledge" and ensuring its adoption by "almost all German and many non-German post-Riemannian harmonic theories" (Ch. 1, p. 9). However, Holtmeier also notes that the applied dominant concept has roots in Sechter's tradition: "The emergence of intermediary dominants can be related back to the tendency of fifth- and third-related *Klange*, to assume tonic significance" (Grabner, cited in Ch. 1, n. 70).
 
-**Key distinction from modulation**: The Zwischendominant does not change the governing tonic; it creates temporary functional tension toward a secondary goal while the primary tonal center remains in force.
+# Prerequisites
 
-## Historical Origin
+- **harmonic-function** — Applied dominants presuppose the three-function framework (T, D, S)
+- **tonality** — The concept requires a governing tonic that persists through the tonicization
 
-### Pre-Riemann
+# Key Properties
 
-The *phenomenon* of applied dominants was recognized before Riemann, but:
-- No systematic term existed
-- No analytical symbols were developed
-- Traditional theory often labeled these as "modulations"
+1. Creates temporary functional tension toward a secondary target chord
+2. Does not change the governing tonic of the passage
+3. Notation: parenthetical symbols (D) or D/x, where x is the target function
+4. Distinguishes surface chromaticism from genuine modulation
+5. Extends the explanatory reach of function theory to Romantic chromatic harmony
+6. Achieves analytical economy: complex passages remain "within a key"
 
-### Riemann's Innovation
+# Construction / Recognition
 
-Riemann introduced both:
-1. The concept as a distinct theoretical category
-2. Symbolic notation for analytical representation
+## To Identify an Applied Dominant
+1. Locate a chord with dominant characteristics (major triad or dominant seventh) resolving to a non-tonic chord
+2. Determine whether the governing tonic is maintained throughout
+3. If yes: the dominant chord is an applied dominant (Zwischendominant)
+4. If no (the new target becomes the tonic): true modulation has occurred
+5. Notate: (D) resolving to target, or D/target function
 
-This was integral to his modern understanding of tonality, which aimed to interpret chromatically rich progressions within a single key.
+## To Distinguish from Modulation
+- Applied dominant: brief, typically resolves immediately, governing tonic resumed
+- Modulation: extended establishment of a new tonal center with cadential confirmation
 
-### Kurth's Dissemination
+# Context & Application
 
-Ernst Kurth popularized the concept, making it "common knowledge" and ensuring its adoption by "almost all German and many non-German post-Riemannian harmonic theories."
+Holtmeier's chapter demonstrates the applied dominant's analytical power through Emil Ergo's critique of traditional analysis. Richter analyzed a passage as: "Measure 3 presents a modulation to D minor, since C#-E-G-Bb no longer belongs to C major" (Ch. 1, p. 9). Function theory interprets the same passage as an extended tonic prolongation with applied dominants — no modulation at all.
 
-## Musical Context
+Together with Hauptmann's "major-minor key" concept, applied dominants "allow the theory of functions to interpret harmonically rich progressions within one key without having to invoke modulations" (Ch. 1, p. 10).
 
-### The Problem with Traditional Modulation Theory
+However, not all theorists embraced the concept equally. Louis preferred "intermediate harmony" (*Zwischenharmonie*), a contrapuntal/linear explanation that preserved the diatonic foundation while acknowledging the chromatic surface (Ch. 1, pp. 36-37).
 
-Holtmeier cites Emil Ergo's critique of Richter's traditional approach:
+# Examples
 
-Traditional analysis of a passage might identify:
-- Measure 3: "modulation to D minor"
-- Measure 4: "modulation to C major or G major"
-- Measure 5: "modulation to A minor"
+**Example 1** (Ch. 1, p. 10): Wagner's *Tannhauser* Overture — Ergo's functional reading reveals that what appears as "constant modulation" reduces to T-S-D-T motion with applied dominants creating surface motion.
 
-Function theory with Zwischendominanten interprets the same passage as a single prolonged tonic with applied dominants to secondary scale degrees.
+**Example 2** (Ch. 1, p. 9): In C major: D-F#-A-C analyzed as "modulation to G" in scale-degree theory becomes D of D (applied dominant to the dominant) in function theory.
 
-### Analytical Power
+**Example 3** (Ch. 1, p. 10): Holtmeier notes that "numerous theories of harmony, which in their author's eyes are based entirely on the theory of scale degrees... are in essence more practical theories of function operating with Roman numerals" — the applied dominant concept has been absorbed even by traditions that claim not to use it.
 
-The Zwischendominant concept allows function theory to "demonstrate how superficial are judgments that assert: 'Wagner is always modulating!'"
+# Relationships
 
-Instead of constant key changes, extended chromatic passages can be understood as:
-- Elaborations of the principal functions
-- Temporary tonicizations that reinforce (rather than undermine) the tonal center
-- Intermediate cadential gestures within a larger harmonic trajectory
+## Builds Upon
+- **harmonic-function** — Applied dominants extend the three-function framework
+- **tonality** — Presupposes a persistent tonic
 
-### Relationship to Hauptmann's "Major-Minor Key"
+## Enables
+- **harmonic-reduction** — Allows chromatically complex passages to be reduced to fundamental functions
 
-The Zwischendominant relates to Hauptmann's conception of the "major-minor key" - a unified tonal space encompassing both modal inflections. Together, these concepts "allow the theory of functions to interpret harmonically rich progressions within one key without having to invoke modulations."
+## Related
+- **funktionstheorie** — The analytical system that houses the concept
+- **klangvertretung** — Applied dominants are a form of extended representation
 
-## Examples
+## Contrasts With
+- **modulation** — Applied dominants occur *within* a key; modulation *changes* the key
 
-### Basic
+# Common Errors
 
-In C major:
-| Chord | Traditional View | Function Theory |
-|-------|------------------|-----------------|
-| D-F#-A-C | "Modulation to G" | D of D (applied dominant to V) |
-| E-G#-B | "Modulation to A minor" | D of Tp (applied dominant to vi) |
-| A-C#-E-G | "Modulation to D minor" | D of Sp (applied dominant to ii) |
+- **Error**: Treating every chromatic chord as an applied dominant
+  **Correction**: Some chromatic chords are passing/neighbor harmonies or mixture chords, not applied dominants
 
-### Analytical Application
+- **Error**: Labeling extended passages with applied dominants when true modulation has occurred
+  **Correction**: If a new tonic is established through cadential confirmation, the passage has modulated
 
-**Beethoven's Fifth Symphony, Finale theme** (per Ergo):
-The dominants on weak beats function as "ornamental chords" - the entire passage unfolds as an extended tonic, not a series of miniature modulations.
+# Common Confusions
 
-**Wagner's Tannhauser Overture** (per Ergo):
-Apparent chromatic complexity reduces to T-S-D-T with intermediate applied dominants creating surface motion.
+- **Confusion**: Believing Riemann invented the phenomenon of secondary dominants
+  **Clarification**: The phenomenon was recognized before Riemann; his contribution was the systematic theoretical category and notation
 
-## Evolution/Variants
+- **Confusion**: Assuming applied dominants and Louis's Zwischenharmonie are the same
+  **Clarification**: Louis's concept emphasizes the linear/contrapuntal origin of chromatic passing chords; Zwischendominant emphasizes functional tonicization. They represent different theoretical commitments.
 
-### Terminological Variants
+# Source Reference
 
-| Term | Theorist/Tradition |
-|------|-------------------|
-| Zwischendominant | Riemann, German function theory |
-| Klammerdominante (parenthetical dominant) | Some German theorists |
-| Zwischenfunf (intermediate fifth) | Alternative German term |
-| Applied dominant | English/American theory |
-| Secondary dominant | American theory |
-| V/x notation | Modern scale-degree hybrid |
+The Oxford Handbook of Neo-Riemannian Music Theories, Chapter 1 (Holtmeier): pp. 9-11, applied dominants as key element of Riemann reception and functional analysis. See also discussion of Louis's alternative (pp. 36-37) and Ergo's analyses of Wagner (pp. 9-10).
 
-### Integration with Scale-Degree Theory
+# Verification Notes
 
-Holtmeier notes that many nominally "scale-degree" theories have adopted the Zwischendominant concept:
-
-> "Numerous theories of harmony, which in their author's eyes are based entirely on the theory of scale degrees—among them popular German theory books such as those by Lehmacher/Schröder or Dachs/Söhner—are in essence more practical theories of function operating with Roman numerals than they are genuine theories of scale degrees."
-
-### Resistance and Alternatives
-
-Some theorists (Halm, Louis, Kurth, Schmitz, Rögely, Eycken) showed "considerable reticence" toward the Zwischendominant:
-- Louis preferred "intermediate harmony" (*Zwischenharmonie*) - a contrapuntal/linear explanation
-- This preserved the diatonic foundation while acknowledging chromatic surface
-
-## Related Concepts
-
-- **Prerequisites**: harmonic-function, dominant, tonicization, modulation
-- **Leads to**: chromatic-harmony, tonic-prolongation
-- **See also**: klangvertretung, pivot-chord
-
-## Common Confusions
-
-1. **Zwischendominant vs. Modulation**: Applied dominants do not change the tonic; they temporarily intensify motion toward secondary goals
-2. **All chromaticism as applied dominants**: Some chromatic chords function as passing/neighbor harmonies rather than applied dominants
-3. **Strength of tonicization**: Brief Zwischendominanten create weak tonicizations; extended ones may constitute true modulations
-4. **Historical attribution**: While Riemann systematized the concept, the phenomenon was recognized (under different names or no name) earlier
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part I:
-- Chapter 1 (Holtmeier): pp. 9-11, applied dominants as key element of Riemann reception
+- Concept explicitly discussed in Ch. 1 with multiple analytical examples
+- Historical attribution and dissemination through Kurth clearly stated
+- Louis's alternative (Zwischenharmonie) discussed as important variant
+- Confidence: HIGH — explicit treatment with clear definitions and examples
+- Re-extracted from v2 card; preserved: the terminological variants table, the Louis resistance discussion, and the Ergo analytical examples

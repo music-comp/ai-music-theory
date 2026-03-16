@@ -1,159 +1,121 @@
 ---
-concept: Klang and Klang-Representation
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
+# === CORE IDENTIFICATION ===
+concept: Klang-Representation (Klangvertretung)
+slug: klang-representation
+
+# === CLASSIFICATION ===
+category: dualism
+subcategory: perceptual-theory
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Ian Bent"
 chapter: "The Problem of Harmonic Dualism"
-authors: "Ian Bent (translator), Hugo Riemann (original)"
-pdf_page: null
-chapter_number: null
-unit: null
+chapter_number: 5
+pdf_page: 179
+section: "III. Interval Fusion or Klang-Representation?"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Klangvertretung"
+  - "tone representation"
+  - "Klang representation"
+  - "triad representation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - klang
+  - harmonic-dualism
+extends:
+  - tonvorstellungen
+related:
+  - klangvertretung
+  - consonance-dissonance-dualism
+contrasts_with:
+  - monism-vs-dualism
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is Klangvertretung and how does it explain harmonic perception?"
+  - "How can single tones imply complete triadic harmonies?"
+  - "Why does the diminished triad function harmonically despite chaotic overtones?"
 ---
 
-# Klang and Klang-Representation
+# Quick Definition
 
-## Quick Definition
+The cognitive process by which incomplete pitch structures -- even single notes -- are heard as implying complete triadic harmonies (major or minor Klange), forming the foundation of Riemann's psychological theory of harmonic perception.
 
-The Klang is the fundamental harmonic unit (major or minor triad); Klang-representation (Klangvertretung) is the cognitive process by which incomplete pitch structures - even single notes - are heard as implying complete triadic harmonies.
+# Core Definition
 
-## Formal Definition
+**Klangvertretung** (Klang-representation) is the principle that any tone or interval is perceived as representing a complete Klang (major or minor triad). As Riemann states in "Das Problem des harmonischen Dualismus" (1905, translated by Bent in Ch. 5): "Even just single tones are invariably heard in terms of Klange... The listener of today undoubtedly, and very likely the listener of any era, hears even purely monophonic melody in terms of harmonies (tone-complexes)" (p. 180).
 
-**Klang** (German: "sound," "sonority"):
-The major or minor triad conceived as a unified three-element structure:
-- **Major Klang**: Prime - Third - Fifth (built upward)
-- **Minor Klang**: Prime - Under-third - Under-fifth (built downward)
+Riemann insists there are only "two unique, fundamentally different [entities] in terms of which all other possible combinations are heard" -- the major chord and the minor chord. "The major chord and minor chord are not two arbitrary conglomerates of tones existing inter pares alongside however many others" (p. 180).
 
-Notation: c+ (C major), °e (A minor with prime on E)
+# Prerequisites
 
-**Klangvertretung** (Klang-representation):
-The principle that any tone or interval is perceived as representing a complete Klang.
+- **Klang**: The fundamental harmonic unit (major or minor triad) that Klangvertretung references.
+- **Harmonic dualism**: The two-species principle (only major and minor) grounds Klangvertretung.
 
-Riemann's key statement: "Even just single tones are invariably heard in terms of Klänge."
+# Key Properties
 
-This implies:
-- Monophonic melodies carry harmonic implications
-- Dyads suggest specific triadic contexts
-- The mind "completes" incomplete harmonic structures
+1. **Active perception**: "Musical hearing... is not just a passive physical process, but rather a psychic activity, a continuous comparing and associating together" (p. 179)
+2. **Two-species limitation**: All hearing reduces to major and minor Klange; no third option exists
+3. **Automatic completion**: The mind "completes" incomplete harmonic structures into full triads
+4. **Context-dependent**: The same acoustic signal produces different Klang-representations depending on musical context
 
-## Theoretical Framework
+# Construction / Recognition
 
-**The Two-Species Principle**:
-"The only two species of complexes, in terms of which individual tones can be heard equally well as two-, three-, and more tone chords, are the major chord and the minor chord."
+Each Klang contains exactly three functional elements: prime, third, and fifth. A single note (e.g., A) might represent the prime of A major, the third of F major, the fifth of D major, or corresponding positions within minor Klange. Context determines which Klang is represented. Two notes constrain possibilities further: E-G can represent C major (missing prime), E minor (missing fifth), or a subdominant context.
 
-There is no third option - all harmonic hearing reduces to major and minor Klänge.
+# Context & Application
 
-**Klang Structure**:
-Each Klang contains exactly three functional elements:
-1. Prime (reference tone)
-2. Third (major third from prime)
-3. Fifth (perfect fifth from prime)
+Klang-representation is foundational because it explains melodic harmony (how monophonic music implies chords), grounds function theory (functions are relationships between Klange), defines dissonance (as competing Klang-representations), and justifies analytical reduction (any music can be reduced to Klang progressions).
 
-All octave transpositions are included by the principle of "expanded meaning" (*Erweiterung*).
+# Examples
 
-**Limits of the Klang**:
-Why stop at three tones?
-- Seventh: Introduces a second prime, creating dissonance
-- Ninth: Two fifths away, requiring mediation
-- Higher partials: Reinterpreted via the opposite (under/over) series
+**The diminished triad**: B-D-F in C major contains chaotic overtones, yet is heard as "an elliptical G major chord(!) with a seventh" (p. 174). The Klang-representation prevails despite contradictory acoustic evidence.
 
-**The Active Mind**:
-Klang-representation requires active perception:
-"Musical hearing, even that of the listener whose ear has not been developed through technical training, is not just a passive physical process, but rather a psychic activity."
+**The subdominant example**: Riemann's crucial example: In G minor, the dyad Eb-G is heard as representing the subdominant G minor Klang, despite overtones suggesting E major. "Such processes of hearing can be explained by means of neither overtones nor combination tones... only music psychology (music aesthetics) can provide an explanation" (p. 178).
 
-The mind selects, orders, and completes the raw acoustic material.
+**The augmented triad problem**: C-E-G# cannot be assigned a single Klang-representation; C-E suggests C major while E-G# suggests E major. The competing representations create dissonance, explaining why the augmented triad sounds dissonant despite consonant component intervals (p. 160).
 
-## Musical Context
+# Relationships
 
-**Single-Tone Klang-Representation**:
-A single note implies multiple possible Klänge:
+## Builds Upon
+- Tonvorstellungen: Klang-representation is the most radical implication of active tone-imagination
 
-The note A might represent:
-- Prime of A major (a+)
-- Third of F major (f+)
-- Fifth of D major (d+)
-- Under-fifth of C# minor (°g#)
-- Under-third of F# minor (°c#)
-- Prime of A minor (ambiguous notation)
+## Enables
+- Harmonic function theory: Functions are relationships between Klange, which require Klangvertretung
+- Analytical reduction: Klangvertretung justifies reducing any music to Klang progressions
 
-Context determines which Klang is represented.
+## Related
+- Consonance-dissonance in dualist terms: Dissonance arises from competing Klang-representations
 
-**Dyadic Klang-Representation**:
-Two notes constrain the possibilities:
+## Contrasts With
+- Stumpf's interval-fusion theory: "So long as Stumpf and his school do not get beyond researching dyads, they will never enter the realm of musical hearing" (p. 160)
 
-E-G can represent:
-- C major (missing prime C)
-- E minor (missing fifth B)
-- G minor subdominant context (as in Riemann's example)
+# Common Errors
 
-**The Subdominant Example**:
-Riemann's crucial example: In G minor, the dyad Eb-G is heard as representing the subdominant G minor Klang, despite overtones suggesting E major.
+- **Error**: Treating Klang-representation as conscious chord identification.
+  **Correction**: It is automatic perception -- the mind performs Klangvertretung without deliberate analysis.
 
-"Such processes of hearing can be explained by means of neither overtones nor combination tones... only music psychology (music aesthetics) can provide an explanation."
+# Common Confusions
 
-## Examples
+- **Confusion**: Believing any chord is a Klang.
+  **Clarification**: Not all chords are Klange. Seventh chords contain two Klange in competition; only major and minor triads are true Klange.
 
-### Monophonic Melody
+- **Confusion**: Thinking Klang-representation exists in the acoustic signal.
+  **Clarification**: It exists in the listener's mind, not in the physical sound. "The objectively produced Klange are ultimately only a sort of raw material for musical hearing" (p. 179).
 
-In a C major context, the melody C-D-E-F-E-D-C is heard:
-- C: Tonic Klang representative (prime of c+)
-- D: Could be V, ii, or passing
-- E: Tonic Klang representative (third of c+)
-- F: Subdominant Klang representative (prime of f+)
-- etc.
+# Source Reference
 
-The single line implies harmonic progression.
+Bent, Ian (translator). "The Problem of Harmonic Dualism." In *The Oxford Handbook of Neo-Riemannian Music Theories*, Chapter 5. Original: Hugo Riemann, "Das Problem des harmonischen Dualismus," *Neue Zeitschrift fur Musik* 72 (1905). See especially Section III: "Interval Fusion or Klang-Representation?"
 
-### The Diminished Triad
+# Verification Notes
 
-B-D-F in C major:
-- Contains no complete Klang
-- Heard as representing G major with added seventh (missing G)
-- "An elliptical G major chord(!) with a seventh"
-- The overtones of B, D, F include chaotic non-chord tones
-- Yet the Klang-representation prevails
-
-### Augmented Triad Problem
-
-C-E-G# cannot be assigned a single Klang-representation:
-- C-E suggests C major
-- E-G# suggests E major (or C# minor)
-- The competing representations create dissonance
-- This explains why the augmented triad sounds dissonant despite consonant component intervals
-
-## Related Concepts
-
-- **Prerequisite**: triad, consonance-dissonance, tonvorstellungen
-- **See also**: klang
-
-## Common Confusions
-
-1. **Klang vs. any chord**: Not all chords are Klänge. Seventh chords contain two Klänge in competition.
-
-2. **Klang-representation vs. chord identification**: Klang-representation is automatic perception, not conscious analysis.
-
-3. **Objective vs. subjective**: The Klang-representation exists in the listener's mind, not in the acoustic signal.
-
-4. **Minor Klang naming**: A minor (°e) has prime E, under-third C, under-fifth A. It's called "A minor" by convention, not by theoretical structure.
-
-## Significance for Theory
-
-Klang-representation is foundational because:
-
-1. **Explains melodic harmony**: How monophonic music implies chords
-2. **Grounds function theory**: Functions are relationships between Klänge
-3. **Defines dissonance**: As competing Klang-representations
-4. **Justifies analytical reduction**: Any music can be reduced to Klang progressions
-
-Riemann: "Since the concept of Klang was first recognized people have spoken of Klang-representation, and for centuries communal musical experience has become accustomed to hearing individual tones as elements of chords."
-
-## Relation to Stumpf's Critique
-
-Riemann criticized Carl Stumpf's interval-based approach:
-"So long as Stumpf and his school do not get beyond researching dyads, they will never enter the realm of musical hearing."
-
-The Klang (triad), not the interval (dyad), is the fundamental unit. Intervals are understood only as parts of Klänge.
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part II, Chapter 5: Ian Bent, "The Problem of Harmonic Dualism" (translation of Riemann's 1905 article)
-
-See especially Section III: "Interval Fusion or Klang-Representation?"
+Re-extracted from v2 card; preserved: core definition, all major examples (diminished triad, subdominant, augmented triad), Stumpf critique, common confusions. Enhanced with precise page citations from Ch. 5 translation. Confidence high due to extensive direct quotation from source.

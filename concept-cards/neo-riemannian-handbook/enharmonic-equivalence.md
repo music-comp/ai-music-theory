@@ -1,114 +1,124 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Enharmonic Equivalence
-category: theory
-pdf_page: null
-chapter_number: null
-unit: null
+slug: enharmonic-equivalence
+
+# === CLASSIFICATION ===
+category: pitch-space
+subcategory: pitch identity and equivalence
+tier: foundational
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Tonnetz from Acoustic to Metaphorical"
-authors: "Gollin"
+source_slug: neo-riemannian-handbook
+authors: "Edward Gollin"
+chapter: "From Acoustical to Metaphorical: The Tonnetz from Oettingen to Riemann"
+chapter_number: 9
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "enharmonic identification"
+  - "enharmonic reinterpretation"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tonnetz
+extends: []
+related:
+  - toroidal-tonnetz
+  - nonconforming-tonnetz
+  - syntonic-comma-striche
+  - hexatonic-systems
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is enharmonic equivalence and how does it affect the Tonnetz?"
+  - "How does enharmonic equivalence relate to equal temperament?"
+  - "How did Riemann's view of enharmonic equivalence evolve?"
 ---
 
-# Enharmonic Equivalence
+# Quick Definition
 
-## Quick Definition
+The condition under equal temperament where differently-spelled pitches (e.g., C# and Db) sound identical, enabling the Tonnetz to wrap from an infinite plane into a finite torus and permitting enharmonic reinterpretation in harmonic progressions.
 
-The condition under equal temperament where differently-spelled pitches (e.g., C# and Db) sound identical, enabling the Tonnetz to wrap into a torus and permitting enharmonic reinterpretation in harmonic progressions.
+# Core Definition
 
-## Formal Definition
+**Enharmonic equivalence** is the identification of differently-spelled pitches that have the same acoustic frequency under equal temperament. In neo-Riemannian theory, this concept determines whether the Tonnetz is an infinite plane (no equivalence, just intonation) or a finite torus (full equivalence, equal temperament). Gollin traces the evolving treatment of this concept through three positions (Ch. 9): Oettingen regarded enharmonic distinctions as acoustically real, treating Beethoven's enharmonic modulation in Op. 26 as a compositional error because Bbb and A differ by an enharmonic diesis (128:125, approximately 41 cents). In *Skizze* (1880), Riemann distinguished between **orthographic enharmonicism** (mere respelling for convenience) and **real/genuine enharmonicism** (arising through harmonic progression). By "Ideen" (1914-15), Riemann embraced enharmonic equivalence as "absolutely indispensable for our hearing of music," arguing that the imagination equates enharmonic equivalents while preserving their distinct derivational meanings.
 
-**Enharmonic equivalence** exists when two pitch names refer to the same acoustic frequency. In neo-Riemannian theory, this concept is crucial for understanding:
+# Prerequisites
 
-1. **Tonnetz geometry**: Whether the space is infinite (just intonation) or bounded (equal temperament)
-2. **Transformational closure**: Whether triadic operations form a finite group
-3. **Analytical interpretation**: Whether enharmonic spellings carry distinct meanings
+- **Tonnetz**: Enharmonic equivalence determines the Tonnetz's fundamental geometry
 
-### Conforming vs. Nonconforming Tonnetz
+# Key Properties
 
-**Nonconforming Tonnetz** (Daniel Harrison's term):
-- Assumes just intonation
-- Nodes are syntonically and enharmonically distinct
-- Generates an infinite plane
-- C# and Db occupy different locations
-- Multiple "versions" of each letter name exist (marked by *Striche*)
+1. **Pitch identity**: C# = Db, F# = Gb, etc., under equal temperament (12-TET)
+2. **Geometric consequence**: Enforcing equivalence causes the infinite Tonnetz plane to wrap into a torus
+3. **Enharmonic diesis**: In just intonation, enharmonic equivalents differ by 128:125 (approximately 41 cents)
+4. **Transformational closure**: Equivalence enables the PLR group to be a finite group of order 24
+5. **Distinct from syntonic equivalence**: Syntonic equivalence (collapsing comma differences) and enharmonic equivalence (collapsing spelling differences) are separate but both required for the conforming Tonnetz
 
-**Conforming Tonnetz**:
-- Assumes equal temperament
-- Nodes reflect syntonic and enharmonic equivalence
-- Generating axes are cyclic
-- Underlying structure is a **torus** (two axes) or **hypertorus** (three axes)
-- C# and Db occupy the same location
+# Construction / Recognition
 
-## Historical Development
+To identify where enharmonic equivalence matters:
+1. Trace a chain of thirds or fifths on the Tonnetz
+2. After 12 fifths or 3 major thirds, the path returns to the "same" pitch class (under ET) but a different Tonnetz position (under JI)
+3. Enforcing enharmonic equivalence identifies these positions, creating the wrapping that produces the torus
 
-### Oettingen's Strict Position
-Oettingen viewed enharmonic distinctions as acoustically real and musically meaningful. He considered Beethoven's enharmonic modulation in Op. 26's funeral march a **compositional error** because:
-- A descent by three major thirds leads to Bbb, not A#
-- The two are an **enharmonic diesis** apart (128:125 ≈ 41 cents)
-- Just intonation cannot accommodate such "nonclosure"
+Riemann's distinction: orthographic enharmonicism is simple respelling (B major for Cb major); real enharmonicism arises when a progression traverses tonal space such that the "true" harmonic derivation differs from the spelled result.
 
-### Riemann's Orthographic vs. Real Enharmonicism
-In *Skizze* (1880), Riemann distinguished:
-- **Orthographic enharmonicism**: Respelling for convenience (e.g., B major for Cb major)
-- **Real/genuine enharmonicism**: Arises through harmonic progression, where the "true" enharmonic event is the journey through tonal space
+# Context & Application
 
-Example from Beethoven Op. 26:
-- B major in m. 9 is respelled Cb (orthographic)
-- The progression B major → B minor → D major → Eb → Bbb minor traces a path on the Tonnetz that doesn't return to A#
+Enharmonic equivalence is a foundational assumption of modern neo-Riemannian theory. Without it, the PLR group cannot be finite, hexatonic cycles cannot close, and the entire apparatus of transformation groups on the 24 consonant triads breaks down. Historically, the acceptance of enharmonic equivalence was neither obvious nor uncontroversial: Oettingen and early Riemann resisted it, and the gradual acceptance tracks the broader shift from just-intonation thinking to equal-temperament thinking in the late 19th century.
 
-### Riemann's Mature Position ("Ideen," 1914-1915)
-Riemann eventually embraced enharmonic equivalence as "absolutely indispensable for our hearing of music":
+# Examples
 
-> "Our imagination knows nothing of the intonational difference between d and d̄, but rather equates both, imagining d as the lower fifth of a and yet at the same time also as the upper fifth of g."
+Gollin's central example (Ch. 9): Oettingen criticized Beethoven's Op. 26 funeral march, where a descent by three major thirds (Ab to E to C to Ab, enharmonically) crosses an enharmonic seam. On the nonconforming Tonnetz, this path leads to Bbb, not A — the two are an enharmonic diesis apart. Oettingen regarded this as a compositional error.
 
-The Tonnetz became a map of **logical relations** rather than acoustic distinctions:
-- Elements distinguished by path derivation, not frequency
-- Same pitch can have multiple meanings based on its pathway
-- *Striche* signify derivational difference, not intonational difference
+Riemann's mature position from "Ideen" (1914-15): "Our imagination knows nothing of the intonational difference between d and d-bar, but rather equates both, imagining d as the lower fifth of a and yet at the same time also as the upper fifth of g." The Tonnetz mediates between tempered sounds and unbounded mental meanings.
 
-### Neo-Riemannian Assumption
-Modern neo-Riemannian theory assumes:
-- Equal temperament (12-tone equal division)
-- Full enharmonic equivalence
-- Resulting toroidal Tonnetz geometry
-- Finite group of 24 triadic transformations
+# Relationships
 
-## Analytical Implications
+## Builds Upon
+- tonnetz (enharmonic equivalence determines its geometry)
 
-### Regional Ambiguity and *Mehrdeutigkeit*
-Enharmonic equivalence enables:
-- **Multiply-determined meaning**: A triad can belong to several keys simultaneously
-- **Seamless modulation**: Pivoting between enharmonically related keys
-- **Hexatonic cycles**: LP compounds traverse enharmonic seams
+## Enables
+- toroidal-tonnetz (enharmonic equivalence creates the wrapping)
+- hexatonic-systems (LP cycles require enharmonic closure to form finite cycles)
 
-### The Syntonic Seam
-When analyzing just-intonation oriented passages, the **syntonic seam** marks where:
-- Like-named pitches differ by a syntonic comma (81:80)
-- Diatonic regions are bounded
-- Moving through the seam indicates modulation
+## Related
+- nonconforming-tonnetz (defined by the absence of enharmonic equivalence)
+- syntonic-comma-striche (a related but distinct type of pitch equivalence)
 
-### Practical Analysis
-Cohn suggests that in regionally indeterminate passages:
-1. The Tonnetz allows tracking motion without forcing key determination
-2. Enharmonic reinterpretation can mark significant structural points
-3. Path notation (e.g., Daniel Harrison's work) preserves distinctions when needed
+## Contrasts With
+(none specific)
 
-## Related Concepts
+# Common Errors
 
-- **Prerequisite**: tonnetz
-- **Leads to**: hexatonic-systems
-- **See also**: mehrdeutigkeit, tonal-pitch-space
+- **Error**: Assuming enharmonic equivalence means C# and Db are "the same thing" in all analytical contexts
+  **Correction**: Even under equal temperament, different spellings may carry different analytical meanings reflecting distinct derivational pathways
 
-## Common Confusions
+# Common Confusions
 
-- **Equivalence vs. identity**: Enharmonically equivalent pitches are acoustically identical but may carry different musical meanings
-- **Spelling matters contextually**: In analysis, respelling often signals functional reinterpretation
-- **Historical shift**: What Riemann initially resisted, he later embraced as necessary
-- **Neo-Riemannian simplification**: The assumption of enharmonic equivalence is a modernization, not Riemann's original position
+- **Confusion**: Enharmonic equivalence was always assumed in Riemannian theory
+  **Clarification**: Oettingen rejected it entirely; Riemann resisted it for decades before embracing it in his mature work (1914-15)
 
-## Source References
+- **Confusion**: Enharmonic and syntonic equivalence are the same thing
+  **Clarification**: Enharmonic equivalence collapses differently-spelled pitches (C# = Db, differing by the diesis 128:125); syntonic equivalence collapses like-named pitches at different Tonnetz positions (differing by the comma 81:80)
 
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 9: Edward Gollin, "From Acoustic to Metaphorical"
-- Ch 11: Richard Cohn, "Tonnetz as Analytical Apparatus"
-- Harrison, "Nonconformist Notions of Nineteenth-Century Enharmonicism" (2002)
+# Source Reference
+
+Gollin, Edward. "From Acoustical to Metaphorical: The Tonnetz from Oettingen to Riemann." In *The Oxford Handbook of Neo-Riemannian Music Theories*, edited by Edward Gollin and Alexander Rehding. Oxford University Press, 2011. Chapter 9.
+
+Cohn, Richard. Chapter 11 (enharmonic equivalence as default analytical assumption).
+
+Harrison, Daniel. "Nonconformist Notions of Nineteenth-Century Enharmonicism" (2002).
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: Oettingen's Beethoven Op. 26 critique, Riemann's orthographic vs. real distinction, "Ideen" quotation, enharmonic diesis value. High confidence: central to Gollin's argument and explicitly discussed throughout Ch. 9.

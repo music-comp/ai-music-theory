@@ -1,178 +1,121 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Chromatic Transformation Networks
+slug: chromatic-transformation-networks
+
+# === CLASSIFICATION ===
 category: analysis
-pdf_page: null
-chapter_number: null
-unit: null
+subcategory: transformational-analysis
+tier: advanced
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Tonnetz as Analytical Apparatus"
-authors: "Cohn"
+source_slug: neo-riemannian-handbook
+authors: "Richard Cohn"
+chapter: "Tonal Pitch Space and the (Neo-)Riemannian Tonnetz"
+chapter_number: 11
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "transformation networks"
+  - "triadic transformation networks"
+  - "neo-Riemannian networks"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - plr-transformations
+  - neo-riemannian-operations
+  - tonnetz
+extends: []
+related:
+  - hexatonic-systems
+  - voice-leading-graph
+  - combinatorial-group-theory
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are chromatic transformation networks and how are they used analytically?"
+  - "How do transformation networks relate to the Tonnetz?"
+  - "What is the difference between sequential, spatial, and motivic networks?"
 ---
 
-# Chromatic Transformation Networks
-
-## Quick Definition
+# Quick Definition
 
 Graphical representations of harmonic progressions showing the transformational operations connecting successive chords, used to analyze chromatic music independent of functional tonal syntax.
 
-## Formal Definition
+# Core Definition
 
-**Chromatic transformation networks** are analytical diagrams where:
-- **Nodes**: Represent chords (typically consonant triads)
-- **Arrows/Edges**: Represent transformations (PLR, Schritte/Wechsel, etc.)
-- **Labels**: Identify specific operations
-- **Structure**: Reveals motivic, cyclic, or symmetrical patterns
+**Chromatic transformation networks** are analytical diagrams where nodes represent chords (typically consonant triads), arrows/edges represent transformations (PLR, Schritte/Wechsel), and labels identify specific operations. Cohn (Ch. 11) systematizes these within his broader project of relating the Tonnetz to Lerdahl's Tonal Pitch Space, showing how the Tonnetz itself functions as a meta-network containing all possible triads as nodes and all PLR connections as edges.
 
-### Network Types
+The approach derives from Lewin's "transformational attitude" (GMIT, 1987): the shift from "What is this chord?" to "How does this chord relate to that chord?" Networks can be sequential (linear chains), spatial (two-dimensional Tonnetz-based), or motivic (highlighting recurring transformational patterns).
 
-**Sequential Networks**:
-- Linear chains representing temporal succession
-- A → B → C → D...
-- May form closed loops (returns to starting chord)
+# Prerequisites
 
-**Spatial Networks**:
-- Two-dimensional layouts (Tonnetz-based)
-- Show structural relationships beyond temporal sequence
-- May include unrealized or implied chords
+- **PLR transformations**: The operations that label network edges.
+- **Neo-Riemannian operations**: The complete Schritt/Wechsel system.
+- **Tonnetz**: The underlying spatial model.
 
-**Motivic Networks**:
-- Highlight recurring transformational patterns
-- Foreground compositional unity
-- Abstract from specific pitch content
+# Key Properties
 
-## Historical Development
+1. **Abstraction from pitch**: Networks capture structural similarity regardless of specific pitches
+2. **Closed loops**: Cyclic progressions form closed paths on the network
+3. **Multiple representations**: The same progression admits Tonnetz path, linear network, or set-class representations
+4. **Non-unique**: A progression may have multiple valid network representations
 
-### Lewin's Transformational Attitude
-David Lewin (*GMIT*, 1987) introduced:
-- Shift from "objects" to "transformations"
-- Question: "If I am at s and wish to get to t, what characteristic gesture should I perform?"
-- Networks as analytical representations of this thinking
+# Construction / Recognition
 
-### Hyer's Triadic Networks
-Brian Hyer (1989, 1995) applied transformational thinking to:
-- Late Romantic chromatic progressions
-- Wagner's *Tristan und Isolde*
-- Developed the PLR framework for triadic networks
+Network components: **Nodes** represent major/minor triads (24 total in 12-TET). **Arrows** represent operations (PLR or Schritte/Wechsel). All PLR operations are self-inverse (reversible). Specific progressions trace paths on the Tonnetz surface -- bounded regions for diatonic passages, extended trajectories for chromatic ones.
 
-### Cohn's Systematization
-Richard Cohn provided:
-- Rigorous group-theoretic foundation
-- Connection to voice-leading parsimony
-- Hexatonic and octatonic cycle identification
+# Context & Application
 
-## Network Components
+Cohn (Ch. 11) analyzes Schumann's "Im wunderschonen Monat Mai," the Faith Proclamation from Wagner's Parsifal, and Chopin's E-major Prelude op. 28 no. 9 using both Tonnetz and TPS combined-space representations. He shows that the Tonnetz provides "Babylonian" robustness -- derivable from several independent assumptions, overcoming momentary coherence failures at any single level (p. 325).
 
-### Nodes
-Typically represent:
-- Major/minor triads (24 total in 12-TET)
-- Occasionally augmented triads, diminished sevenths
-- Extended to [0148], [0158], etc. in Gollin's work
+Engebretsen (Ch. 12) observes that networks provide coherence without tonic through structural relationships, embodying what Riemann called his "horror vision" of unconstrained harmonic possibility -- but order emerges through transformational logic.
 
-### Arrows
-Represent operations:
-- **PLR operations**: Mode-reversing, parsimonious
-- **Schritte/Wechsel**: Full 24-operation group
-- **Compound transformations**: LP, RL, PRL, etc.
+# Examples
 
-### Arrow Properties
-- **Direction**: Source to target
-- **Label**: Operation name
-- **Reversibility**: All PLR operations are self-inverse
+**Hexatonic cycle**: C+ --L--> e- --P--> E+ --L--> g#- --P--> G#+ --L--> c-. Complete cycle via LP compounds.
 
-## Analytical Applications
+**Wagner Parsifal** (Cohn, Ch. 11): Faith Proclamation shows LP cycling through hexatonic space, departure through octatonic connection (via PR), and return path visible in network structure.
 
-### Wagner: Parsifal Analysis
-Cohn's analysis of the Faith Proclamation:
-- Network shows LP cycling through hexatonic space
-- Departure through octatonic connection (via PR)
-- Return path visible in network structure
+**Chopin Prelude analysis** (Cohn, Ch. 11): Tonnetz path reveals palindromic column progression, central position of tonic surrounded in all directions, and functional directionality (rightward = plagal, leftward = authentic).
 
-### Motivic Transformation
-Discovering that a passage uses:
-- Consistent transformation type (e.g., all L operations)
-- Systematic cycling (LP₃ = return)
-- Symmetrical patterns (palindromic sequences)
+# Relationships
 
-### Formal Correspondences
-Networks can reveal:
-- Parallelisms between sections
-- Large-scale transformational arcs
-- Tonal-transformational synthesis
+## Builds Upon
+- PLR transformations and the Tonnetz
 
-## Examples of Network Types
+## Enables
+- Formal analysis of chromatic progressions resisting functional explanation
+- Detection of motivic harmonic patterns and symmetrical structures
 
-### Simple Chain
-```
-C+ --L--> e- --P--> E+ --L--> g#- --P--> G#+ --L--> c-
-```
-Shows a complete hexatonic cycle via LP compounds.
+## Related
+- Hexatonic systems: Specific cyclic network structures
+- Voice-leading graphs: Complementary perspective (geometry vs. algebra)
 
-### Forked Network
-```
-        F+ --R--> d-
-       /
-C+ --L
-       \
-        a- --P--> A+
-```
-Shows alternative transformational paths from C+.
+## Contrasts With
+- Functional analysis: Networks track operations, not functions; arrows are not voice-leadings
 
-### Closed Loop
-```
-C+ --RL--> G+ --RL--> D+ --RL--> A+ --RL--> E+ --RL--> B+ --RL--> F#+ --RL--> C#+...
-```
-The RL cycle eventually returns to C+ (after 12 applications).
+# Common Errors
 
-## Relationship to Tonnetz
+- **Error**: Reading network arrows as representing voice leading.
+  **Correction**: Arrows represent abstract operations, not specific pitch motion between voices.
 
-### Tonnetz as Meta-Network
-The Tonnetz itself is a network:
-- All possible triads as nodes
-- All possible P, L, R connections as edges
-- An actual progression traces a path
+# Common Confusions
 
-### Network on Tonnetz
-Specific progressions appear as:
-- Paths on the Tonnetz surface
-- Bounded regions for diatonic passages
-- Extended trajectories for chromatic passages
+- **Confusion**: Thinking network representations are unique for a given passage.
+  **Clarification**: The same progression admits multiple valid network representations.
 
-### Multiple Representations
-The same progression can be shown:
-- As a linear transformation network
-- As a path on the Tonnetz
-- As a sequence of set-class representatives
+# Source Reference
 
-## Engebretsen's Perspective
+Cohn, Richard. "Tonal Pitch Space and the (Neo-)Riemannian Tonnetz." Ch. 11. Engebretsen, Nora. Ch. 12. In *The Oxford Handbook of Neo-Riemannian Music Theories*.
 
-### Coherence Without Tonic
-Transformation networks provide:
-- Coherence through structural relationships
-- Logic through group properties
-- Unity without requiring tonal reference
+# Verification Notes
 
-### Riemann's "Horror Vision" Realized
-Networks embody what Riemann feared:
-- Any chord can follow any other
-- No prescriptive limits
-- But order emerges through transformational logic
-
-## Related Concepts
-
-- **Prerequisite**: plr-transformations, neo-riemannian-operations, tonnetz
-- **See also**: hexatonic-systems, schritt-wechsel-system
-
-## Common Confusions
-
-- **Networks are not scores**: They abstract from rhythm, register, orchestration
-- **Arrows are not voice-leading**: They represent operations, not pitch motion
-- **Networks are not unique**: The same progression admits multiple network representations
-
-## Source References
-
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 11: Richard Cohn, "Tonnetz as Analytical Apparatus"
-- Ch 12: Nora Engebretsen, "Harmonieschritte"
-- Ch 13: Edward Gollin, "Doppelklänge"
-- Lewin, *Generalized Musical Intervals and Transformations* (1987)
-- Hyer, "Reimag(in)ing Riemann" (1995)
+Re-extracted from v2 card; preserved: network types, Lewin's transformational attitude, Tonnetz as meta-network, Wagner and Chopin examples, Engebretsen's "horror vision" observation. Enhanced with Cohn's Babylonian robustness concept. Confidence high.

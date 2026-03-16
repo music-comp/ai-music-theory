@@ -1,150 +1,117 @@
 ---
-concept: "Relative Transformation (R)"
-category: technique
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Chapters 6-8"
-authors: "Henry Klumpenhouwer, Alexander Rehding, Dmitri Tymoczko"
+# === CORE IDENTIFICATION ===
+concept: Relative Transformation (R)
+slug: relative-transformation
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: neo-riemannian-operations
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Henry Klumpenhouwer"
+chapter: "Dualist Tonal Space and Transformation in Nineteenth-Century Musical Thought"
+chapter_number: 6
 pdf_page: null
-chapter_number: null
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "R transformation"
+  - "Terzwechsel"
+  - "Parallele (German)"
+  - "relative key change"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - klang
+extends:
+  - plr-transformations
+related:
+  - parallel-transformation
+  - leittonwechsel
+  - tonnetz
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Relative (R) transformation and how does it work?"
+  - "Why is R the 'least smooth' of the three PLR operations?"
+  - "How does R relate to Riemann's Parallele/Terzwechsel terminology?"
 ---
 
-# Relative Transformation (R)
-
-## Quick Definition
+# Quick Definition
 
 A neo-Riemannian transformation that exchanges a major triad for its relative minor (or vice versa) by moving one note by whole tone while holding two notes fixed, connecting keys that share the same key signature.
 
-## Formal Definition
+# Core Definition
 
-The **Relative transformation (R)** is one of the three fundamental neo-Riemannian operations (alongside P and L). It maps:
+The **Relative transformation (R)** maps C major (C-E-G) to A minor (A-C-E) by moving the fifth G to A (whole step) while preserving the root and third (C and E) as common tones. In Riemann's terminology, R corresponds to *Terzwechsel* (W4) -- connecting triads whose roots are a minor third apart. Riemann designated R-related triads with function symbols: Tp (Tonikaparallele), Sp (Subdominantparallele), Dp (Dominantparallele).
 
-- C major (C-E-G) <-> A minor (A-C-E)
-- Any major triad <-> its relative minor
+R is an involution, preserves two common tones, but involves whole-tone motion (2 semitones), making it "less smooth" than P or L.
 
-**Voice-leading specification**:
-- From C major to A minor: G moves down to A (whole step - actually up to A or down to A depending on voicing)
-- The third and fifth of major become root and third of minor
-- Two common tones are preserved (C and E)
+# Prerequisites
 
-**In Riemann's terminology**: R corresponds to *Terzwechsel* - connecting triads whose roots are a minor third apart (C major and A minor share C and E).
+- **Klang**: Understanding major and minor triads as fundamental units.
 
-**Formal properties**:
-- R is an involution: R(R(X)) = X
-- R preserves two common tones
-- R involves whole-tone motion (2 semitones) - making it "less smooth" than P or L
+# Key Properties
 
-## Historical Context
+1. **Common tones**: Root and third preserved (the major-third dyad)
+2. **Voice leading**: Fifth moves by whole tone (2 semitones total displacement)
+3. **Diatonic character**: R can be entirely diatonic (C major to A minor uses only white keys)
+4. **Key-signature preservation**: R-related keys share a key signature
+5. **Involution**: R(R(X)) = X
 
-**Riemann's Parallele**:
-In German theory, the "Parallele" (*Parallel*) refers to what English speakers call the "relative" relationship:
-- C major's Parallele = A minor
-- C minor's Parallele = Eb major
+# Construction / Recognition
 
-**Functional Interpretation**:
-Riemann designated R-related triads with function symbols:
-- Tp = Tonic Parallel (A minor relative to C major tonic)
-- Sp = Subdominant Parallel (D minor relative to F major subdominant)
-- Dp = Dominant Parallel (E minor relative to G major dominant)
+R is special among PLR transformations: P and L are inherently chromatic (they change accidentals), but R can be entirely diatonic. This makes R fundamental to diatonic tonal relationships while P and L are more characteristic of chromatic practice.
 
-These "apparent consonances" (*Scheinkonsonanzen*) share two tones with their parent function.
+# Context & Application
 
-**In Hauptmann's Chain of Thirds**:
-The relative relationship appears naturally in Hauptmann's arrangement of diatonic triads by thirds:
-```
-F - A - C - E - G - B - D
-```
-Adjacent triads share two tones: F-A-C and A-C-E share A and C.
+In Brahms's Clarinet Trio Op. 114 (Rehding, Ch. 7), the second subject in C major functions as Tp (Tonikaparallele) to the home key of A minor. The shift from A minor to C major is an R-transformation at the structural level: "Tonic value is transferred between the first and second subjects from the A minor triad to the C major triad" (p. 226). The relative major is the standard secondary key area for minor-mode sonatas.
 
-## Theoretical Framework
+# Examples
 
-**Position in PLR Group**:
+**Basic R transformation**: C major (C-E-G) --R--> A minor (A-C-E). Common tones C and E; G becomes A.
 
-| Operation | Common Tones | Moving Voice | Distance |
-|-----------|-------------|--------------|----------|
-| P | 2 (root, fifth) | Third | 1 semitone |
-| L | 2 (third, fifth) | Root | 1 semitone |
-| R | 2 (root, third) | Fifth | 2 semitones |
+**Brahms Op. 114 exposition** (Rehding, Ch. 7): Key areas A minor (T) -> C major (Tp) -> E minor (D). The C major second subject relates to A minor tonic by R, functioning as Tonikaparallele (pp. 226-228).
 
-R is the "least smooth" of the three, involving whole-tone rather than semitone motion.
+**Hauptmann's chain of thirds** (Ch. 7): F-A-C-E-G-B-D. Adjacent triads share two tones: F-A-C and A-C-E share A and C, demonstrating the R relationship (p. 226).
 
-**Diatonic vs. Chromatic**:
-R is special among PLR transformations:
-- P and L are inherently chromatic (they change accidentals)
-- R can be entirely diatonic (C major to A minor uses only white keys)
+# Relationships
 
-This makes R fundamental to diatonic tonal relationships while P and L are more characteristic of chromatic practice.
+## Builds Upon
+- PLR transformations as a system
 
-## Musical Context
+## Enables
+- Tonnetz navigation: R corresponds to horizontal motion on the Tonnetz
+- Functional substitution analysis (Tp, Sp, Dp)
 
-**Tonikaparallele in Analysis** (Rehding):
-In Brahms's Clarinet Trio Op. 114, the second subject in C major functions as *Tp* (Tonikaparallele) to the home key of A minor:
-- A minor and C major share A, C, and E (sort of - the Klang-representation)
-- The shift from A minor to C major is the minimal change to establish new key area
-- R captures the close relationship between relative keys
+## Related
+- Parallel transformation (P) and Leittonwechsel (L): Fellow PLR operations
 
-**In Sonata Form**:
-The relative major is the standard secondary key area for minor-mode sonatas:
-- First theme: A minor (tonic)
-- Second theme: C major (Tp)
-- This is an R-transformation at the structural level
+## Contrasts With
+- L transformation: R is diatonic where L is chromatic; R uses whole tone where L uses semitone
 
-**The "Chain of Thirds" Organization**:
-Rehding uses Hauptmann's chain to show how exposition key areas relate:
-- A minor - C major - E minor spans the chain
-- Each adjacent pair is R-related
-- The E in Brahms's trio acts as a "prolonged" pivot
+# Common Errors
 
-## Examples
+- **Error**: Confusing English "relative" with German "Parallele."
+  **Correction**: The relative minor (English) is the Parallele (German). English "Parallel" = Riemann's "Variante."
 
-### Basic R Transformation
-```
-C major (C-E-G) --R--> A minor (A-C-E)
-                <--R--
-```
+# Common Confusions
 
-### Functional Analysis (Brahms Op. 114)
-Exposition key areas:
-- A minor (T) -> C major (Tp) -> E minor (D)
+- **Confusion**: Assuming R is as parsimonious as P or L.
+  **Clarification**: R involves 2 semitones of motion (whole tone), making it less parsimonious than P or L (each 1 semitone).
 
-The C major second subject relates to A minor tonic by R:
-- Shares C and E
-- G becomes A (whole-tone motion)
-- Functions as Tonikaparallele
+# Source Reference
 
-### Compound Transformations
-- **RL**: C major -> A minor -> F major (Gegenquintschritt equivalent)
-- **RR**: C major -> A minor -> C major (returns to start)
-- **PRL**: One of the compound operations generating the full transformation network
+Klumpenhouwer, Henry. "Dualist Tonal Space and Transformation." Ch. 6. Rehding, Alexander. Ch. 7 (Brahms analysis). Tymoczko, Dmitri. Ch. 8 (voice-leading context). In *The Oxford Handbook of Neo-Riemannian Music Theories*.
 
-## Related Concepts
+# Verification Notes
 
-- **Prerequisite**: relative-keys, triad, hexatonic-scale
-- **Leads to**: tonnetz
-- **See also**: parallel-transformation, leittonwechsel
-
-## Common Confusions
-
-1. **English "relative" vs. German "Parallel"**: The relative minor (English) is the Parallele (German). P-transformation in neo-Riemannian theory corresponds to Variante/Quintwechsel, not Parallele.
-
-2. **R vs. diatonic transposition**: R exchanges relative keys; diatonic transposition shifts patterns within a scale.
-
-3. **Two semitones vs. one**: R involves larger motion than P or L, making it "less parsimonious" in strict voice-leading terms.
-
-4. **R preserves key signature**: C major and A minor share a key signature; P and L change accidentals.
-
-## Significance for Analysis
-
-R captures the fundamental relative major/minor relationship:
-- Most natural key relationship in minor-mode music
-- Essential for understanding secondary key areas in sonata form
-- Links function theory (Tp, Sp, Dp) to transformational approach
-
-R is less prominent in chromatic analysis (where P and L dominate) but essential for understanding diatonic relationships and functional substitution.
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part II:
-- Chapter 6: Klumpenhouwer on functional implications
-- Chapter 7: Rehding's analysis uses R (Tp) relationships
-- Chapter 8: Tymoczko places R in voice-leading context
+Re-extracted from v2 card; preserved: formal definition, PLR comparison, Brahms Op. 114 analysis, Hauptmann's chain of thirds, terminological notes (English "relative" vs. German "Parallele"). Confidence high.

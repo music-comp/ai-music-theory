@@ -1,184 +1,154 @@
 ---
-concept: Pentatonicism as Universal
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Folkloristische Tonalitätsstudien (Ch. 4)"
+# === CORE IDENTIFICATION ===
+concept: Pentatonicism
+slug: pentatonicism
+
+# === CLASSIFICATION ===
+category: scales-modes
+subcategory: scalar-system
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
 authors: "Matthew Gelbart, Alexander Rehding"
+chapter: "Folkloristische Tonalitätsstudien"
+chapter_number: 4
 pdf_page: null
-chapter_number: null
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - pentatonic scale
+  - anhemitonic pentatonic
+  - five-note scale
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - klang
+extends: []
+related:
+  - folkloristische-tonalitatsstudien
+  - mese
+  - pyknon
+  - pien
+  - tetrachordal-structure
+  - diatonicity
+contrasts_with:
+  - diatonicity
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What distinguishes pentatonic from diatonic tonality in Riemann's framework?"
+  - "How does Riemann derive pentatonic scales?"
 ---
 
-# Pentatonicism as Universal
+# Quick Definition
 
-## Quick Definition
+The five-note anhemitonic (no half-steps) scale that Riemann argued represents a universal, natural stage in musical development, derived from a symmetrical chain of fifths centered on a *mese* and serving as the evolutionary precursor to diatonic scales.
 
-The theory that the anhemitonic (without half-steps) pentatonic scale represents a universal, "natural" stage in musical development from which all cultures evolved toward heptatonic diatonic systems.
+# Core Definition
 
-## Formal Definition
+In *Folkloristische Tonalitätsstudien* (1916), Riemann argues that the **anhemitonic pentatonic scale** (e.g., C-D-E-G-A) is the universal starting point for all musical cultures. The scale is derived from a chain of five consecutive fifths, collapsed into a single octave and centered on a *mese* (central tone):
 
-Riemann's *Folkloristische Tonalitätsstudien* (1916) argues:
+Chain of fifths: F - C - G - D - A → collapsed to scale: C - D - E - G - A
 
-1. **Universal origin**: The anhemitonic pentatonic scale (e.g., C-D-E-G-A) is the natural starting point for all musical cultures
-2. **Evolutionary development**: Scales develop from simple pentatonic toward complex heptatonic/chromatic
-3. **Symmetrical derivation**: Pentatonic scales arise from chains of fifths extending symmetrically around a central *mese*
-4. **Cross-cultural evidence**: Greek, Chinese, Japanese, Celtic musics share this foundation
+Riemann's distinctive contribution was the *mese*-centered derivation: unlike predecessors who built pentatonic scales from the bottom, Riemann placed the central pitch (*mese*) at the conceptual center, with tones extending symmetrically above and below. This allowed dualistic principles to operate even in melodic theory (Ch. 4, pp. 148-149).
 
-**Formal structure**:
-```
-Chain of fifths: F - C - G - D - A
-Collapsed to scale: C - D - E - G - A (anhemitonic pentatonic)
-Central tone (mese): E (in Riemann's symmetrical conception)
-```
+The pentatonic scale's key structural feature is the "major-third pyknon" — the three central notes separated by whole-tone steps (e.g., D-E-G around *mese* E). Riemann borrowed the term *pyknon* from Greek tetrachordal theory, applying it liberally to this new context to imply a connection between pentatonic and tetrachordal structures (Ch. 4, pp. 148-149).
 
-## Historical Origin
+Riemann drew on a long tradition connecting Chinese, Greek, Japanese, Celtic, and Scottish pentatonic musics, originating with Burney (1776) who connected "the old enharmonic scale" across cultures. The tradition shifted from hemitonic to anhemitonic forms, and Riemann built on the consensus that the anhemitonic form was "primitive" and universal (Ch. 4, pp. 142-146).
 
-### Burney's Foundation
+# Prerequisites
 
-Charles Burney (*General History of Music*, 1776-1789):
-- Interpreted Plutarch's "old enharmonic" as a pentatonic scale
-- Connected ancient Greek, Chinese, and Scottish music
-- Argued this scale was "natural to a people of simple manners during the infancy of civilization"
+- **klang** — While pentatonicism is melodic, Riemann ultimately relates it to Klang theory through the evolutionary narrative
 
-**Burney's key insight**:
-> "The similarity... at least proves them all to be more natural than they at first seem to be, as well as more ancient."
+# Key Properties
 
-### Corrections to Burney
+1. Five notes derived from a chain of consecutive fifths
+2. Anhemitonic: no semitones (whole-tone and minor-third intervals only)
+3. *Mese*-centered: conceptually organized around a central pitch, not the lowest pitch
+4. Symmetrical: tones extend above and below the *mese*
+5. The "major-third pyknon" (three central whole-tone-separated notes) is the defining structural feature
+6. "Gaps" (the missing 4th and 7th degrees) can be filled by *pien* tones to approach diatonicism
+7. Three fifth-related pentatonic scales suggest proto-functional (T-D-S) relationships
 
-Later writers (Thomson, Campbell, and others) corrected Burney:
-- Burney posited *hemitonic* pentatonic (with half-steps)
-- Consensus shifted to *anhemitonic* pentatonic as the universal form
-- The "black keys on the piano" became the paradigm
+# Construction / Recognition
 
-### Riemann's Contribution
+## To Construct Riemann's Pentatonic Scale
+1. Choose a *mese* (central pitch), e.g., E
+2. Build two fifths above: E → B → F#... but Riemann uses scale degrees
+3. Build two fifths below: E → A → D
+4. The five-note chain of fifths: D - A - E - B - F# → collapsed: D - E - F# - A - B
+5. Riemann relabels using Roman numerals from *mese*: IV - II - mese - 2 - 4
 
-Riemann built on this established narrative but added:
-1. **Symmetrical derivation**: *Mese* at center, not bottom
-2. **Dualistic principles**: Even melodic theory retains polar thinking
-3. **Defensive purpose**: Response to comparative musicologists
+## To Recognize Proto-Functional Relations
+1. Three fifth-related pentatonic scales can coexist (Ch. 4, ex. 4.1)
+2. Scale on A (mese=A): E-G-A-C-D
+3. Scale on D (mese=D): A-C-D-F-G
+4. Scale on G (mese=G): D-F-G-Bb-C
+5. These three together suggest T-D-S functions within the pentatonic world
 
-## Musical Context
+# Context & Application
 
-### The Defensive Context
+Riemann's pentatonic theory was polemical: he wrote against the Berlin school of comparative musicology (Stumpf, Hornbostel), who used phonograph recordings to argue that non-Western scales revealed different organizational principles than Western diatonic theory assumed. Riemann countered that pentatonic scales across all cultures demonstrated the same "natural" principles, and that apparent "neutral thirds" and "3/4 tones" in recordings were misperceptions.
 
-Riemann wrote *Folkloristische Tonalitätsstudien* against:
-- Berlin comparative musicologists (Stumpf, Hornbostel)
-- Phonograph-based observations of "3/4 tones," "5/4 tones," "neutral thirds"
-- Claims that Western tonal system was arbitrary, not natural
+The Chinese melody "Tsi Tschong" served as Riemann's primary example (Ch. 4, pp. 149-150). He argued that most phrase endings occur on the *mese* (D in his analysis), not on the lowest pitch (C), proving that the central pitch — not the bass — functions as the melodic tonic.
 
-Riemann's prediction:
-> "Once these studies are deepened, presumably not a lot will be left of the intervals that contradict our musical system."
+Riemann's analysis of pentatonic "modulation" is particularly significant: by observing shifts of *pykna* (central three-note clusters), he could trace movement between fifth-related pentatonic centers without invoking harmonic means (Ch. 4, p. 152).
 
-### Riemann's Symmetrical Framework
+# Examples
 
-Unlike predecessors who built scales from the bottom, Riemann:
-- Placed *mese* (central tone) at the conceptual center
-- Added tones symmetrically above and below
-- Used dualistic notation: Roman numerals (descending from mese), Arabic (ascending)
+**Example 1** (Ch. 4, ex. 4.1): Three fifth-related pentatonic scales with their *mese* values, presented in Riemann's symmetrical notation with Roman numerals below and Arabic above the *mese*.
 
-```
-Example: Pentatonic on mese = E
-IV - II - mese - 2 - 4
-A  - D  -  E   - G - A (octave)
-```
+**Example 2** (Ch. 4, ex. 4.2): "Tsi Tschong" — Chinese melody demonstrating *mese*-centric phrase endings and the proto-tonic function of the central pitch.
 
-### The Pyknon
+**Example 3** (Ch. 4, ex. 4.3): "Modulations" in pentatonic music — shift from c-scale to bb-scale to g-scale observable through *pyknon* displacement.
 
-Riemann borrowed from Greek theory the term *pyknon* to describe the central three-note complex around the *mese*:
-- In anhemitonic pentatonic: whole tone + whole tone (e.g., D-E-G)
-- Called "major-third pyknon"
-- Later: "minor-third pyknon" (semitone + whole tone) marks evolution toward diatonicism
+**Example 4** (Ch. 4, ex. 4.4): Tonal implications around the pyknon — "many melodies with pentatonic tendencies exhibit... a noticeable cadential oscillation between the two relative keys to which the central pyknon is common."
 
-### Pien Tones
+# Relationships
 
-From Chinese theory, Riemann took the concept of *pien*:
-- "Filling tones" that convert pentatonic to heptatonic
-- Variable, unstable intonation
-- Function like chromatic passing tones
+## Builds Upon
+- **klang** — The evolutionary narrative connects pentatonicism to Klang theory
 
-The *pien* on either side of the *mese* produce:
-- III> (below mese): Creates Dorian tetrachord tendency
-- 3< (above mese): Creates Lydian tetrachord tendency
+## Enables
+- **tetrachordal-structure** — Pentatonic trichords + pien = tetrachords
+- **diatonicity** — Pentatonicism is the evolutionary precursor to diatonic scales
+- **pien** — The "filling tones" that transform pentatonic to diatonic
 
-## Examples
+## Related
+- **folkloristische-tonalitatsstudien** — The primary source for Riemann's pentatonic theory
+- **mese** — The central tone concept
+- **pyknon** — The central tone-cluster concept
 
-### Riemann's Three Pentatonic Scales
+## Contrasts With
+- **diatonicity** — Pentatonic lacks semitones; diatonic has structural semitones
 
-From *Folkloristische Tonalitätsstudien*, p. 3:
+# Common Errors
 
-```
-Scale 1 (mese on A): E - G - A - C - D
-Scale 2 (mese on D): A - C - D - F - G
-Scale 3 (mese on G): D - F - G - Bb - C
-```
+- **Error**: Assuming the lowest note of a pentatonic scale is the tonic
+  **Correction**: Riemann argued the *mese* (central pitch) functions as the proto-tonic, not the lowest pitch
 
-These three fifth-related scales suggest proto-functional relationships (T-D-S).
+# Common Confusions
 
-### Chinese Melody "Tsi Tschong"
+- **Confusion**: Thinking Riemann proved pentatonic scale universality
+  **Clarification**: Riemann's claims are historically problematic; cross-cultural parallels don't prove single origin or universal development
 
-Riemann's primary evidence for mese-centric organization:
-- Most phrase endings on D (the *mese*)
-- Final ending on G (lower fifth)
-- Demonstrates that lowest tone is not always "tonic"
+- **Confusion**: Equating Riemann's pentatonic analysis with ethnomusicological findings
+  **Clarification**: Riemann relied exclusively on secondary sources and tendentiously adapted non-Western theoretical concepts (pien, mese) to his own framework
 
-### Cadential Gesture
+# Source Reference
 
-Typical pentatonic closing (per Riemann):
-```
-Upper neighbor - mese - lower neighbor - mese
-(e.g., G - E - D - E in A pentatonic)
-```
+The Oxford Handbook of Neo-Riemannian Music Theories, Chapter 4 (Gelbart/Rehding): pp. 140-159, full discussion of pentatonicism in *Folkloristische Tonalitätsstudien*, including historical precedents (Burney, Helmholtz), Riemann's symmetrical derivation, and analytical examples.
 
-This becomes the prototype for the leading-tone cadence when *pien* are added.
+# Verification Notes
 
-## Evolution/Variants
-
-### The Evolutionary Narrative
-
-Riemann's (and predecessors') developmental stages:
-1. **Anhemitonic pentatonic**: No half-steps, universal origin
-2. **Heptatonic with *pien***: Half-steps added as unstable passing tones
-3. **Hemitonic pentatonic**: Half-steps become structural
-4. **Diatonic scales**: Full tetrachordal organization
-5. **Common-practice tonality**: Leading-tone cadences, harmonic thirds
-
-### Riemann vs. Comparative Musicology
-
-| Riemann | Berlin School |
-|---------|---------------|
-| Universal scale development | Diverse, parallel developments |
-| Psychological foundation | Acoustic measurement |
-| Diatonic as natural goal | Diatonic as one option among many |
-| Phonograph unreliable | Phonograph reveals truth |
-
-### Modern Assessment
-
-Riemann's claims are historically problematic:
-- Plutarch himself said Olympian scale was formed by *omission* of existing tones
-- Chinese hemitonic forms may predate anhemitonic
-- Cross-cultural parallels don't prove single origin
-- "Teleological" thinking projects Western norms onto other musics
-
-Yet the study marks a significant methodological moment:
-- First Riemann work not starting from triadic harmony
-- Melodic analysis techniques developed
-- Scalar dualism explored
-
-## Related Concepts
-
-- **Prerequisites**: scale, interval, fifth, tetrachord
-- **Leads to**: hexatonic-scale, tetrachordal-structure
-- **See also**: mode
-
-## Common Confusions
-
-1. **Hemitonic vs. Anhemitonic**: Burney's original was hemitonic; later consensus (including Riemann) favored anhemitonic as "primitive"
-2. **Universal vs. Widespread**: Evidence shows pentatonicism is *common*, not necessarily *universal*
-3. **Evolution vs. History**: Riemann's "stages" are logical/structural, not necessarily chronological
-4. **Mese as tonic**: Riemann's *mese*-centric analysis is controversial; finalis may vary
-5. **Natural vs. Cultural**: The "naturalness" of pentatonic development remains debated
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part I:
-- Chapter 4 (Gelbart/Rehding): pp. 140-159, full discussion of Folkloristische Tonalitätsstudien
+- Core theory from Ch. 4's detailed analysis of *Folkloristische Tonalitätsstudien*
+- Historical precedents (Burney, Forkel, Helmholtz) documented in Ch. 4, pp. 142-146
+- Musical examples from the primary source reproduced and analyzed
+- Confidence: HIGH — extensively documented with primary source examples
+- Re-extracted from v2 card; preserved: the three pentatonic scales example, the cadential oscillation between relative keys, the mese-centric analysis, and the modern assessment of Riemann's claims

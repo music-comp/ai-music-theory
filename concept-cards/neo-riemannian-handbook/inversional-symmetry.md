@@ -1,141 +1,144 @@
 ---
-concept: Inversional Symmetry / Symmetry Operations
-category: technique
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Inversional Symmetry and Voice Leading"
+# === CORE IDENTIFICATION ===
+concept: Inversional Symmetry
+slug: inversional-symmetry
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: symmetry-operations
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
+chapter: "Dualism and the Beholder's Eye"
+chapter_number: 8
 pdf_page: null
-chapter_number: null
-unit: null
+section: "Sections 1-2"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "pitch-space inversion"
+  - "inversional invariance"
+  - "reflection symmetry in music"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - harmonic-dualism
+extends: []
+related:
+  - voice-leading
+  - voice-leading-efficiency
+  - rameau-weber-symmetries
+  - dualistic-equivalence
+contrasts_with:
+  - contrapuntal-vs-harmonic-dualism
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is inversional symmetry in music theory?"
+  - "How does inversional symmetry relate to Riemann's dualism?"
+  - "Are the inversional patterns in chromatic music intentional or epiphenomenal?"
 ---
 
-# Inversional Symmetry / Symmetry Operations
+# Quick Definition
 
-## Quick Definition
+The property by which musical structures or operations remain unchanged under inversion (pitch-space reflection), identified by Tymoczko as one of only two distance-preserving operations in pitch space (alongside transposition), and reinterpreted as either a fundamental principle (harmonic dualism) or a by-product of voice-leading efficiency (contrapuntal dualism).
 
-The property by which musical structures or operations remain unchanged under inversion (pitch-space reflection), alongside transposition as one of the two fundamental distance-preserving operations in music theory.
+# Core Definition
 
-## Formal Definition
+Tymoczko defines **inversional symmetry** as the property preserved when pitch space is reflected around an axis. "Transposition and inversion are the only distance-preserving transformations of pitch and pitch-class space" (Ch. 8). This makes inversion mathematically fundamental: if an interval spans 9 semitones, its inversion also spans 9 semitones.
 
-**Symmetry in music theory**: A symmetry is a transformation that leaves certain properties of musical objects unchanged. The most important music-theoretical symmetries include:
+Riemann's contribution was attempting to add inversion to the standard collection of musical symmetries (reordering, octave shift, note duplication, transposition) already implicit in Rameau/Weber theory. His dualistic terminology was designed to be **inversionally invariant**: Schritte and Wechsel describe inversionally related progressions identically.
 
-1. **Octave equivalence**: Notes an octave apart are treated as "the same"
-2. **Reordering**: Permuting the order of notes in a chord
-3. **Note duplication**: Adding octave doublings
-4. **Transposition**: Shifting all notes by the same interval
-5. **Inversion**: Reflecting pitch space around an axis
+The critical finding: traditional tonal syntax is NOT inversionally symmetric. I-IV-V-I is common; its inversion i-v-iv-i is rare. Riemann's terminology describes a symmetry that common-practice tonality does not actually possess.
 
-**Inversion as distance-preserving**:
-"Transposition and inversion are the only distance-preserving transformations of pitch and pitch-class space."
+# Prerequisites
 
-If an interval spans 9 semitones (e.g., C to A), inversion transforms it to another 9-semitone interval (e.g., Eb to C). This makes inversion fundamentally significant for analyzing relationships between chords and voice leadings.
+- **Harmonic dualism** -- Inversional symmetry is the mathematical formalization of dualist intuitions
 
-**Individual vs. Uniform Symmetries**:
-- **Individual symmetry**: Can be applied independently to each chord in a progression (reordering, octave shift, note duplication)
-- **Uniform symmetry**: Must be applied identically to all chords (transposition, inversion)
+# Key Properties
 
-Example: Transposing C-F-G-C to G-C-D-G preserves the progression (I-IV-V-I). Transposing each chord by different amounts destroys it.
+1. Transposition and inversion are the ONLY distance-preserving operations in pitch space
+2. Individual symmetries (reordering, octave shift) can be applied independently per chord
+3. Uniform symmetries (transposition, inversion) must be applied identically to all chords
+4. Traditional tonal syntax lacks inversional symmetry (major and minor relate by diatonic transposition, not inversion)
+5. 19th-century chromaticism exhibits approximate inversional symmetry as a by-product of voice-leading efficiency
 
-## Historical Development
+# Construction / Recognition
 
-**Rameau/Weber Symmetries**:
-Traditional tonal theory embodies several symmetries:
-- Roman numerals are invariant under transposition
-- Chord labels ignore voicing/register (octave symmetry, reordering)
-- Figured bass ignores doublings (note duplication)
+## Rameau/Weber Symmetries (Pre-Riemann)
+1. **Reordering**: Permuting notes in a chord (individual)
+2. **Octave shift**: Moving notes between octaves (individual)
+3. **Note duplication**: Adding doublings (individual)
+4. **Transposition**: Shifting all notes by the same interval (uniform)
 
-**Riemann's Addition**:
-Riemann attempted to add inversion to this collection of symmetries. His dualistic terminology is designed to be *inversionally invariant*:
-- Root/third/fifth labels apply symmetrically to major and minor
-- *Schritte* and *Wechsel* describe inversionally related progressions identically
-- "Gegenquintschritt" covers both C major -> F major AND C minor -> G minor
+## Riemann's Addition
+5. **Inversion**: Reflecting pitch space (uniform) -- treats major and minor identically
+- Roman numerals: Already invariant under transposition (I-V means the same in any key)
+- Riemann's labels: Additionally invariant under inversion (Quintschritt covers C→G in major AND C→F in minor)
 
-**The Problem**:
-Traditional tonal syntax is NOT inversionally symmetric. I-IV-V-I is common; its inversion i-v-iv-i is rare. Riemann's terminology describes a symmetry that tonality doesn't actually possess.
-
-## Theoretical Framework
-
-**Why Traditional Tonality Lacks Inversional Symmetry**:
-
-Major and minor relate by **diatonic transposition**, not inversion:
+## Why Tonality Lacks Inversional Symmetry
 - Major I-ii6/5-V-I transposes diatonically to minor i-ii°6/5-V-i
-- Inverted major I-ii6/5-V-I produces the non-stylistic minor i-v6/5-iv-i
+- But the INVERSION of I-ii6/5-V-I produces i-v6/5-iv-i -- a non-stylistic progression
+- "The harmonic patterns in traditional tonal music do not exhibit even approximate signs of inversional invariance" (Ch. 8)
 
-"The harmonic patterns in traditional tonal music do not exhibit even approximate signs of inversional invariance."
+# Context & Application
 
-**Where Inversional Symmetry Does Apply**:
+Tymoczko's analysis reveals a fundamental tension in Riemannian dualism: the terminology is inversionally invariant, but the music it describes is not. This explains why Riemann's function theory coexists "only somewhat uncomfortably" with his dualism.
 
-The "second practice" of 19th-century chromaticism:
-- Efficient voice leadings form inversionally related pairs
-- P, L, R transformations are defined by inversional relationships
-- Any semitonal voice leading has an equally efficient inverse
+However, the "second practice" of 19th-century chromaticism DOES exhibit approximate inversional symmetry, because efficient voice leadings form inversionally related pairs. This is where Riemann's insights prove most relevant -- but for reasons he did not anticipate.
 
-**Dualistic Equivalence**:
-Two progressions are **dualistically equivalent** if related by uniform transposition or inversion. Example:
-- Ab major to C major (German sixth resolution)
-- F major to E minor (penultimate progression in *Tristan*)
+# Examples
 
-These are dualistically equivalent because the inversion transforming Ab to F also transforms C major to E minor.
+**The Gegenquintschritt covers two progressions** (Ch. 8): C major → F major AND C minor → G minor are both labeled Gegenquintschritt. This inversional invariance is a feature of the terminology, not of tonal syntax.
 
-## Musical Context
+**Wagner's Ring** (Ch. 8): The "Tarnhelm" (G# minor → E minor) and "Valhalla" (Gb major → F major) voice leadings are inversionally equivalent. But the significance lies in both using maximally efficient voice leading, not in their inversional relationship per se.
 
-**Symmetry and Voice Leading**:
+**Schoenberg's vindication** (Ch. 8): "No doubt Riemann would have rejected Schoenberg's music as violating natural laws of tonality. But from a more distant perspective, we can see twelve-tone music as a vindication of Riemann's speculative music theory."
 
-The crucial insight: "The efficient voice leadings between members of any two set classes can always be grouped into inversionally related pairs."
+# Relationships
 
-Since 19th-century chromaticism emphasizes efficient voice leading, inversional relationships appear throughout the repertoire - not because composers sought inversion, but because:
-- Efficient voice leadings are desirable
-- Inversion preserves efficiency
-- Therefore, inversionally related voice leadings are equally likely
+## Builds Upon
+- **Harmonic dualism** -- Inversional symmetry is the mathematical core of dualism
 
-**The Contrapuntal View**:
-"Rather than being the syntactic engine that drives the music, inversion is merely epiphenomenal - the smoke that escapes from the locomotive's chimney, rather than the furnace that makes it go."
+## Enables
+- **Dualistic equivalence** -- The criterion for when two progressions are dualistically related
+- **Voice-leading efficiency** -- Inversion preserves voice-leading efficiency
+- **Contrapuntal vs. harmonic dualism** -- The debate about whether inversion is fundamental or epiphenomenal
 
-## Examples
+## Related
+- **Rameau-Weber symmetries** -- The existing symmetry collection to which Riemann added inversion
+- **Voice leading** -- The domain where inversional symmetry actually manifests in chromatic music
 
-### Semitonal Voice Leadings
+## Contrasts With
+- **Contrapuntal dualism** -- Views inversion as by-product rather than cause
 
-All 16 semitonal voice leadings between triads can be grouped:
-- By inversional equivalence (pairs)
-- By retrograde relationship (pairs)
-- These categories help systematize chromatic possibilities
+# Common Errors
 
-### Wagner's Ring
+- **Error**: Claiming that tonal music exhibits inversional symmetry
+  **Correction**: Traditional tonal syntax (I-IV-V-I patterns) does NOT exhibit inversional symmetry; only chromatic voice-leading patterns do
 
-The "Tarnhelm" (G# minor to E minor) and "Valhalla" (Gb major to F major) voice leadings are inversionally equivalent. But the significance lies in both using *maximally efficient voice leading*, not in their inversional relationship per se.
+# Common Confusions
 
-### Schoenberg's Vindication
+- **Confusion**: Inversional symmetry in music theory = chord inversions (root position, first inversion)
+  **Clarification**: Pitch-space inversion (I-operation) is fundamentally different from chord voicing inversions
 
-Twelve-tone music fully embraces inversional equivalence through inversionally related rows. "No doubt Riemann would have rejected Schoenberg's music as violating natural laws of tonality. But from a more distant perspective, we can see twelve-tone music as a vindication of Riemann's speculative music theory."
+- **Confusion**: Inversional relationships in chromatic music prove that composers thought dualistically
+  **Clarification**: Tymoczko argues these relationships may be "epiphenomenal" -- by-products of voice-leading concerns rather than compositional goals
 
-## Related Concepts
+# Source Reference
 
-- **Prerequisite**: transposition, pitch-space, voice-leading
-- **Leads to**: secondary-neo-riemannian-transformations
-- **See also**: harmonic-dualism, voice-leading-efficiency
+Chapter 8: Dmitri Tymoczko, "Dualism and the Beholder's Eye," in *The Oxford Handbook of Neo-Riemannian Music Theories*. Sections 1-2 on Rameau/Weber symmetries and Riemann's addition.
 
-## Common Confusions
+# Verification Notes
 
-1. **Symmetry of notation vs. symmetry in music**: Dualistic terminology is inversionally symmetric; traditional tonal practice is not
-
-2. **Inversion vs. chord inversion**: Pitch-space inversion differs from first/second inversions of chords
-
-3. **Uniform vs. individual**: Inversion must be applied uniformly to preserve musical relationships
-
-4. **Necessary vs. intentional**: Inversional relationships in chromatic music may be by-products of voice leading, not compositional goals
-
-## Significance for Neo-Riemannian Theory
-
-Inversion's role depends on perspective:
-
-**Harmonic dualism**: Inversion is fundamental - the generative principle behind major/minor duality
-
-**Contrapuntal dualism**: Inversion is derivative - a tool for categorizing voice-leading possibilities
-
-Tymoczko advocates the contrapuntal view: dualism helps analysts organize chromatic possibilities but may not reflect composers' actual concerns.
-
-The key insight: "It is possible that inversional symmetry is a feature of chromaticism as it appears to us, not as it is in itself."
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part II, Chapter 8: Dmitri Tymoczko, "Inversional Symmetry and Voice Leading"
+- Distance-preserving property: Directly stated by Tymoczko
+- Individual vs. uniform symmetries: Tymoczko's explicit categorization
+- Tonal asymmetry: Demonstrated through specific examples of non-inversional tonal progressions
+- Confidence: HIGH -- inversional symmetry is explicitly defined and analyzed throughout Ch. 8
+- Re-extracted from v2 card; preserved: Rameau/Weber symmetry collection, individual vs. uniform distinction, tonal asymmetry demonstration, Wagner Ring examples, Schoenberg vindication

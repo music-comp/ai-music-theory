@@ -1,145 +1,147 @@
 ---
-concept: "Doppelklänge (Double Sounds)"
-category: theory
-pdf_page: null
-chapter_number: null
-unit: null
+# === CORE IDENTIFICATION ===
+concept: "Doppelkl\xE4nge"
+slug: doppelklaenge
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: dissonance
+tier: intermediate
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Doppelklänge & Transformational Analysis"
-authors: "Gollin"
+source_slug: neo-riemannian-handbook
+authors: "Edward Gollin"
+chapter: "On the Doppelkl\xE4nge: Neo-Riemannian Approaches to Dissonant Triads and Seventh Chords"
+chapter_number: 13
+pdf_page: 382
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "double sounds"
+  - "double Klangs"
+  - "Doppelkl\xE4nge (double sounds)"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - klang
+  - harmonieschritte
+extends:
+  - consonance-dissonance-dualism
+related:
+  - seventh-chord-spaces
+  - schematisierung-der-dissonanzen
+  - hexatonic-systems
+  - neo-riemannian-operations
+contrasts_with:
+  - parsimonious-trichords
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are Doppelkl\xE4nge in Riemann's theory?"
+  - "How does Riemann explain dissonant chords through consonant triads?"
+  - "How can neo-Riemannian analysis extend to seventh chords and dissonance?"
 ---
 
-# Doppelklänge (Double Sounds)
+# Quick Definition
 
-## Quick Definition
+Doppelklänge ("double sounds") are Riemann's theoretical category for dissonant chords understood as combinations of two consonant triads in a coordinate relationship, classified according to the Harmonieschritte that relate their component Klänge.
 
-Riemann's theoretical category of dissonant chords conceived as combinations of two consonant triads sharing common tones, enabling the extension of transformational logic to dissonant sonorities in both tonal and post-tonal repertoire.
+# Core Definition
 
-## Formal Definition
+In Riemann's *Skizze einer neuen Methode der Harmonielehre* (1880), Doppelklänge form a key category within his *Schematisierung der Dissonanzen* (systematization of dissonances). They are dissonant chords that arise through the combination of two consonant triads sharing common tones, where the relationship between the component triads is classified using the same Harmonieschritte that organize harmonic progression. As Gollin explains, Riemann "classifies Doppelklänge according to the Harmonieschritte that relate their component Klänge, reflecting within those dissonant chordal structures the same relations that organize harmonic progression in music" (p. 382). Gollin extends this concept transformationally, showing how operations on embedded triads within larger sonorities can yield analytic insights into tonal, post-tonal, and transitional repertoires.
 
-**Doppelklänge** (German: "double sounds" or "double Klangs") are Riemann's mechanism for comprehending dissonant chords through reference to constituent triads.
+# Prerequisites
 
-### Riemann's Original Conception
-From the *Musik-Lexikon* (1884 onward):
-- Seventh chords and other dissonances understood as combinations of two overlapping triads
-- The compound inherits properties of both constituent Klangs
-- Transformational operations can act on either constituent or both
+- **Klang** — Doppelklänge are defined as combinations of two Klänge (consonant triads); the concept of Klang as the basic harmonic unit is essential
+- **Harmonieschritte** — The classification of Doppelklänge depends on the specific Schritt (step-relation) between the two component triads
 
-### Example: Dominant Seventh
-G7 (G-B-D-F) analyzed as Doppelklang:
-- **G major triad**: G-B-D
-- **B diminished/D minor**: B-D-F or D-F-(A)
-- The two triads share the dyad B-D
+# Key Properties
 
-### Notation
-Riemann indicated Doppelklänge using superscript or subscript symbols showing the relationship between constituents:
-- D̲⁷ indicates dominant seventh as combination
-- Various symbols for different seventh chord types
+1. Each Doppelklang consists of exactly two consonant triads in a coordinate (non-hierarchical) relationship
+2. The component triads share one or more common tones, producing a dissonant aggregate
+3. The classification of a Doppelklang is determined by the Harmonieschritt relating its two component Klänge
+4. The category reflects Riemann's principle that all harmonic phenomena are reducible to triadic combinations
+5. Neo-Riemannian reinterpretation treats Doppelklänge transformationally rather than merely taxonomically
+6. The concept bridges triadic and post-triadic harmonic spaces
 
-## Neo-Riemannian Extension: Gollin's Analysis
+# Construction / Recognition
 
-### Theoretical Framework
-Edward Gollin extends Doppelklänge to neo-Riemannian transformational analysis:
-1. **Dissonant chords** contain embedded consonant triads
-2. **Transformations** can target specific triadic subsets
-3. **Voice-leading parsimony** extends beyond triadic contexts
+## To Identify a Doppelklang
 
-### The W₃ Transformation
-A key operation in Gollin's Doppelklänge analysis:
-- Acts on embedded triads within larger sonorities
-- Connects hexatonic pole relationships
-- Generates specific set classes through iterated application
+1. Take a dissonant chord (e.g., a seventh chord or other tetrachord)
+2. Identify two consonant triads embedded within the chord that share common tones
+3. Determine the Harmonieschritt that relates the two triadic components
+4. The Doppelklang is classified by that Schritt
 
-### Set-Class Generation
-Repeated application of Doppelklänge-inspired operations generates:
-- [0148] tetrachords
-- [01478] pentachords
-- Other parsimonious set classes
+## To Apply Transformationally (Gollin's Extension)
 
-## Analytical Applications
+1. Identify embedded triadic subsets within a dissonant sonority
+2. Apply transformational operations (e.g., PLR operations) to specific triadic subsets
+3. Track voice-leading connections between successive Doppelklänge
+4. Map the resulting network of transformations
 
-### William Grant Still's *Afro-American Symphony* (1930)
+# Context & Application
 
-Gollin analyzes the "longing" theme (motto):
-- Opening chord: {Gb, Bb, C, E} = [0148]
-- Contains embedded triads (e.g., C major, Bb minor)
-- Transformations connect successive motto appearances
-- The W₃ operation links Bb minor (m. 1) to E minor (m. 6)
+Riemann introduced Doppelklänge in his early *Skizze* (1880) as part of a systematic approach to dissonance. Although the category was "short-lived" in Riemann's own theoretical development, Gollin demonstrates its analytical potential for music by Chopin, William Grant Still, and Ravel. The concept is particularly valuable for analyzing early twentieth-century music where dissonant sonorities exhibit voice-leading parsimony analogous to triadic contexts.
 
-### Ravel's *Le tombeau de Couperin*: Forlane
+**Historical significance**: The Doppelklang concept shows how Riemann attempted to extend his fundamentally triadic harmonic framework to account for dissonance, foreshadowing later neo-Riemannian extensions to seventh chords and set classes.
 
-The recurring [0148] tetrachord analyzed through:
-- Doppelklänge logic (overlapping triadic constituents)
-- DOUTH2 relations (Douthett's parsimonious connections)
-- Voice-leading parsimony between tetrachordal sonorities
+# Examples
 
-### Key Insight
-Both analyses reveal that:
-- Dissonant sonorities in early 20th-century music
-- Retain voice-leading logic analogous to triadic parsimony
-- Can be understood through extended neo-Riemannian operations
+**Example 1** (p. 382): The dominant seventh chord G-B-D-F analyzed as a Doppelklang: G major triad (G-B-D) combined with diminished triad (B-D-F), related by a specific Harmonieschritt.
 
-## Relationship to Riemann's Theory
+**Example 2** (p. 396ff): William Grant Still's *Afro-American Symphony* (1930) — Gollin analyzes the "longing" motto theme, whose opening chord {Gb, Bb, C, E} forms a [0148] tetrachord containing embedded triads connected by transformational operations.
 
-### Continuity
-Doppelklänge preserve Riemann's core principle:
-- All harmonic phenomena reducible to triadic combinations
-- Dissonance is *conceptually* resolved to consonance
-- Mental representation involves "hearing" constituent Klangs
+**Example 3** (p. 396ff): Ravel's *Le tombeau de Couperin*, Forlane — The recurring [0148] tetrachord is analyzed through Doppelklänge logic, with DOUTH2 relations (Douthett's parsimonious connections) linking successive tetrachordal sonorities.
 
-### Extension
-Neo-Riemannian Doppelklänge analysis extends Riemann by:
-- Applying transformational (not just classificatory) logic
-- Analyzing post-tonal repertoire using triadic categories
-- Connecting to voice-leading geometry and set theory
+# Relationships
 
-## DOUTH2 and Triadic Embedding
+## Builds Upon
+- **Klang** — Doppelklänge are defined as combinations of Klänge
+- **Harmonieschritte** — Classification depends on the Schritt between component triads
+- **Consonance-dissonance dualism** — The concept addresses dissonance through consonant components
 
-### Douthett's DOUTH2 Relation
-Two sets are DOUTH2-related when:
-- Two tones remain fixed
-- Two tones move by parallel semitones
+## Enables
+- **Seventh-chord-spaces** — Doppelklänge provide the conceptual basis for neo-Riemannian extensions to seventh chords
+- **Post-tonal voice-leading analysis** — Extends parsimonious voice-leading to dissonant contexts
 
-### Application to [0148]
-The [0148] tetrachord (e.g., C-E-G-B, a major-seventh chord) participates in:
-- Parsimonious voice-leading networks
-- Transformations analogous to PLR on triads
-- Cyclic structures similar to hexatonic systems
+## Related
+- **Hexatonic systems** — Both involve parsimonious voice-leading among chord types
+- **Neo-Riemannian operations** — PLR operations can act on embedded triads within Doppelklänge
+- **Schematisierung der Dissonanzen** — The broader taxonomic framework in which Doppelklänge appear
 
-### Triadic Embedding
-Each [0148] contains two overlapping triads:
-- C major (C-E-G) and E minor (E-G-B)
-- The tetrachord is itself a "Doppelklang"
+## Contrasts With
+- **Parsimonious trichords** — Trichordal approach stays within consonant triads; Doppelklänge extend to dissonant formations
 
-## Extensions Beyond Triads
+# Common Errors
 
-### Seventh Chord Spaces
-Gollin and others have explored:
-- Tonnetz-like spaces for seventh chords
-- Transformation groups on [0258], [0358], etc.
-- Voice-leading parsimony in tetrachordal contexts
+- **Error**: Treating Doppelklänge as merely a synonym for "seventh chord"
+  **Correction**: Doppelklänge applies to any dissonant formation analyzable as a combination of two triads, not only standard seventh chords
 
-### Post-Tonal Applications
-The Doppelklänge principle enables neo-Riemannian analysis of:
-- Impressionist music (Debussy, Ravel)
-- African American vernacular traditions (Still, Ellington)
-- Any music featuring parsimonious voice leading among dissonances
+- **Error**: Assuming both component triads are equally important or hierarchically ordered
+  **Correction**: The two triads are in a "coordinate relationship" — neither subordinates the other
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: klang, seventh-chord, voice-leading, parsimonious-trichords
-- **Leads to**: chromatic-transformation-networks, set-class
-- **See also**: hexatonic-systems, neo-riemannian-operations
+- **Confusion**: Believing Doppelklänge analysis is purely classificatory
+  **Clarification**: While Riemann's original use was taxonomic, Gollin's neo-Riemannian reinterpretation is transformational — operations act on embedded triads to generate voice-leading networks
 
-## Common Confusions
+- **Confusion**: Thinking Doppelklänge are only relevant to tonal music
+  **Clarification**: Gollin demonstrates their applicability to post-tonal and transitional repertoires (Still, Ravel) where parsimonious voice-leading among dissonant sonorities is analytically productive
 
-- **Not just seventh chords**: Doppelklänge applies to any dissonant formation analyzable as triadic compounds
-- **Not mere classification**: Neo-Riemannian Doppelklänge analysis is transformational, not taxonomic
-- **Historical vs. modern**: Riemann's Doppelklänge classified; Gollin's Doppelklänge transforms
+# Source Reference
 
-## Source References
+Chapter 13: Edward Gollin, "On the Doppelklänge: Neo-Riemannian Approaches to Dissonant Triads and Seventh Chords," pp. 382-400. See especially the abstract, the discussion of Riemann's *Skizze*, and analytical applications to Still and Ravel. Appendix provides translation of *Schematisierung der Dissonanzen*.
 
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 13: Edward Gollin, "Doppelklänge & Transformational Analysis"
-- Douthett & Steinbach, "Parsimonious Graphs" (1998)
-- Gollin, "Some Aspects of Three-Dimensional Tonnetze" (1998)
+# Verification Notes
+
+- Re-extracted from v2 card; preserved: W3 transformation mention, DOUTH2 relation details, [0148] set-class examples, and the three-part analytical framework (Chopin/Still/Ravel)
+- Definition: Direct from abstract and chapter introduction (p. 382)
+- Key Properties: Synthesized from Gollin's discussion of Riemann's classification system
+- Confidence: HIGH — Gollin explicitly defines and historicizes the concept with extensive examples
+- The old card attributed the chapter generically; corrected to exact chapter title

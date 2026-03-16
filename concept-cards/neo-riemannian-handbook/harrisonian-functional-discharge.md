@@ -1,117 +1,136 @@
 ---
-concept: Harrisonian Functional Discharge System
-category: analysis
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Chapter 20: Objects, Transformations, and Tonal Meaning"
-authors: Daniel Harrison
-pdf_page: null
-chapter_number: null
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Harrisonian Functional Discharge
+slug: harrisonian-functional-discharge
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: functional-discharge
+tier: advanced
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Daniel Harrison"
+chapter: "Three Short Essays on Neo-Riemannian Theory"
+chapter_number: 20
+pdf_page: 556
+section: "II. Some Hypotheses about Tonic and Antitonic Trichords"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - discharge functions
+  - "Da, Db, Dc"
+  - antitonic discharge
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - harmonic-function
+  - antitonic-trichord
+extends:
+  - objects-transformations-dichotomy
+related:
+  - nonatonic-system
+  - sensuous-functional-analysis
+  - linking-accumulative-analysis
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does Riemann's function theory relate to neo-Riemannian transformations?"
+  - "What are discharge functions in Harrison's system?"
+  - "What distinguishes functional harmony from transformational harmony?"
 ---
 
-# Harrisonian Functional Discharge System
+# Quick Definition
 
-## Quick Definition
+Harrison's system of three discharge functions (Da, Db, Dc) that model resolutions from antitonic [026] trichords to tonic [037] concords, each involving a specific mixture of dominant (D) and subdominant (S) functional components with zero voice-leading displacement.
 
-Harrison's system for reconciling transformational voice-leading analysis with sensuous-functional hearing, using "discharge functions" (Da, Db, Dc) to model resolutions from antitonic [026] trichords to tonic [037] concords with varying scale-degree behaviors.
+# Core Definition
 
-## Formal Definition
+Harrison develops three discharge functions within a nonatonic system. Da is the standard dominant-seventh resolution (descending-fifth root motion): 7->8 (D->T), 5->5 (D->T), 4->3 (S->T). Db has descending minor-third root motion: b2->1 (S->T), #2->3 (D->T), 5->5 (D->T). Dc has ascending minor-second root motion: 7->8 (D->T), 6->5 (S->T), #2->3 (D->T) (Harrison, pp. 556-557). All three discharges involve "functional mixtures of D and S — even Da, which involves the traditional dominant seventh, although its S component is the weakest of the three" (p. 556). Crucially, "the sum of the respective directed voice-leading motions is 0" for all three, creating "a balance and even a certain sense of aptness" (p. 557).
 
-Harrison develops a **nonatonic system** (following Matthew Santa) that combines:
-- **Tonic concords**: [037] consonant triads
-- **Antitonic discords**: [026] trichords (the fundamental "dominant discord")
+# Prerequisites
 
-Three **discharge functions** model resolutions from antitonic to tonic:
+- **Harmonic function** — The T, D, S framework that Harrison's discharge functions elaborate
+- **Antitonic trichord** — The [026] trichords from which discharge occurs
 
-| Function | Root Motion | D Components | S Components |
-|----------|-------------|--------------|--------------|
-| **Da** | Descending 5th | 7->8, 5->5 | 4->3 |
-| **Db** | Descending m3 | #2->3, 5->5 | b2->1 |
-| **Dc** | Ascending m2 | 7->8, #2->3 | 6->5 |
+# Key Properties
 
-All three have directed voice-leading sum of 0, creating "balance and even a certain sense of aptness."
+1. Three discharge types: Da (fifth root motion), Db (minor-third root motion), Dc (semitone root motion)
+2. All discharges tonicize the triad of resolution (symbolized by ->T)
+3. Each discharge involves a mixture of D and S functional components
+4. All three have directed voice-leading sum of 0
+5. Scale-degree behaviors are ordered by functional power (most powerful first)
+6. All [026] discords can successfully discharge to any [037] via Da-c
+7. Inverse operations (Da-1, Db-1, Dc-1) function as tonic charging
 
-## The [026] as Fundamental Dominant Discord
+# Construction / Recognition
 
-Following Rameau, Harrison argues that the [026] trichord (omitting the chordal fifth) is not merely an incomplete seventh chord but "the fundamental dominant discord":
+## To Identify Discharge Functions
 
-- Rameau called these notes: dominant (the "2"), major dissonance ("6"), minor dissonance ("0")
-- The chordal fifth "does not affect the character and function of the chord"
-- Nontonic chords are, by nature, seventh chords (even simple triads are "feigning consonances")
+1. Identify an [026] trichord (e.g., B-D#-F: the fundamental dominant discord)
+2. Identify the following [037] triad (the tonic of resolution)
+3. Determine which discharge type by root motion: descending 5th = Da, descending m3 = Db, ascending m2 = Dc
+4. Verify by checking scale-degree behaviors against Table 20.1
+5. Note that all three involve D and S functional mixtures
 
-## Antitonic Mixtures
+## To Apply in Analysis
 
-All three discharges involve **functional mixtures** of D and S:
+1. Identify antitonic-to-tonic progressions in the music
+2. Classify each as Da, Db, or Dc
+3. Note the functional components (which voices carry D, which carry S)
+4. Track how discharge patterns interact with PLR transformations among the [037] triads
 
-> "All of the [026]s are interpreted as functional mixtures, I will hereafter substitute the adjective 'antitonic' for 'dominant' when describing them."
+# Context & Application
 
-This allows theorizing about dominant-seventh resolutions that don't follow the canonical descending-fifth pattern.
+Harrison's discharge system reconciles transformational voice-leading analysis with sensuous-functional hearing. Only Da (standard V7->I) is "canonically recognized in tonal theory," but Db and Dc are "not unknown and useless" (p. 557). The system allows analysis of dominant-type progressions that don't follow the canonical descending-fifth pattern, extending functional analysis into chromatic contexts where traditional labels fail.
 
-## The Nonatonic Cycle
+# Examples
 
-Example from Harrison (via Santa): A cycle of [037] triads alternating with [026] "dominant sevenths" using nine pitch classes:
+**Brahms, *Ein deutsches Requiem*, I, mm. 35-42** (p. 557): A Db discharge/charge pattern in which oscillation between C7 and A+ "maintains and even strengthens the energetic flow of the passage" rather than promoting stasis. The Db functions prevent the "failed" cadence from being merely dilatory.
 
-```
-C+ - Eb7 - Ab+ - B7 - E+ - G7 - C+...
-```
+**Wagner, *Tristan* Prelude, mm. 16-17** (p. 557): A "well-known example" of Dc function — the ascending-semitone root motion that characterizes the Tristan progression.
 
-All adjacent chords maintain voice-leading sum of 0.
+**Nonatonic cycle** (pp. 554-556): C+ - Eb7 - Ab+ - B7 - E+ - G7 - C+... Each adjacent pair represents a Da discharge (or its inverse). All maintain voice-leading sum of 0.
 
-## Chromatic Intensification
+# Relationships
 
-Harrison shows that the chromatic scale (not just whole-tone) can fill in the cycle, with raised/lowered fifths creating **additional [026] trichords**:
+## Builds Upon
+- **Objects-transformations dichotomy** — Discharge restores functional substance to transformational networks
+- **Harmonic function** — T, D, S are the functional categories
+- **Antitonic trichord** — The [026] entities from which discharge occurs
 
-> "The proliferation of these [026] trichords endows the 'altered' dominant tetrachords with their characteristic functional energy gain."
+## Enables
+- **Linking-accumulative analysis** — Discharge connects to how [037] triads relate functionally
+- **Sensuous-functional analysis** — Discharge provides the mechanism for "sensuous" hearing
 
-The [02468] pentachord (altered dominant) embeds **six forms of [026]**, amplifying antitonic charge.
+## Related
+- **Nonatonic system** — The system within which discharge operates
 
-## Linking vs. Accumulative Analysis
+# Common Errors
 
-For [037] triads related by (PL)/(LP) cycles:
+- **Error**: Assuming only Da (standard V7-I) is a valid functional resolution
+  **Correction**: Db and Dc are equally valid discharge types with different but recognizable functional effects
 
-**Linking Analysis**: One triad has structural superiority; others are functional mixtures related back to governing T
+- **Error**: Treating [026] trichords as incomplete seventh chords rather than fundamental discords
+  **Correction**: Following Rameau, Harrison argues the [026] is "the fundamental dominant discord" — the fifth is dispensable
 
-**Accumulative Analysis**: Each triad receives equal accent; tonicizations accumulate
-- Retrospective: Second triad receives tonicizing discharge from first
-- Prospective: Tonicized first charges the second
+# Common Confusions
 
-## Integration with Neo-Riemannian Systems
+- **Confusion**: Believing discharge replaces PLR analysis
+  **Clarification**: Discharge operates between [026] and [037] types; PLR operates within each type. Both are needed.
 
-Harrison grafts antitonic [026] discords onto Cohn's sum-class system:
+- **Confusion**: Thinking all three discharges are equally common in tonal music
+  **Clarification**: Da is canonical; Db and Dc extend the system into nonstandard chromatic progressions
 
-- Class Σ11 ("northern system") contains all triads whose pitch classes sum to 11 mod 12
-- Antitonic pentachords create paths between sum classes
-- Pivoting possible through shared [026] embeddings
+# Source Reference
 
-## What This Reconciles
+Harrison, Daniel. "Three Short Essays on Neo-Riemannian Theory." Chapter 20 in *The Oxford Handbook of Neo-Riemannian Music Theories*, Essay II: pp. 554-564. See also Harrison, *Harmonic Function in Chromatic Music* (1994), pp. 90-126.
 
-| Transformational | Sensuous-Functional |
-|-----------------|---------------------|
-| (PL)/(LP) cycles | Linking/accumulative function |
-| Voice-leading sums | D and S discharge components |
-| Set-class preservation | Tonic/antitonic distinction |
-| Mathematical group | Attitudes and tendencies |
+# Verification Notes
 
-## Example: Brahms Requiem
-
-Measures 37-42 involve Db discharge/charge patterns:
-- Oscillation maintains energetic flow
-- "Failed" cadence doesn't promote stasis
-- Function strengthens rather than dilutes
-
-## Related Concepts
-
-- **Prerequisite**: neo-riemannian-operations
-- **Leads to**: extended-tertian-harmony, altered-dominant-chord
-- **See also**: weitzmann-region
-
-## Methodological Significance
-
-This system allows "heterogeneity of harmonic function and set-class type" to be handled systematically:
-- Objects remain sensuously distinct (concord vs. discord)
-- Transformations respect functional implications
-- Voice-leading parsimony connects to functional discharge
-
-## Source Reference
-
-Harrison, Daniel. "Objects, Transformations, and Tonal Meaning." Oxford Handbook of Neo-Riemannian Music Theories, Chapter 20, pp. 554-564.
+Re-extracted from v2 card; preserved: the three-discharge table structure, Brahms Requiem and Tristan examples, the [026]-as-fundamental-discord argument, and the linking/accumulative distinction. V2 card lacked v3.1 frontmatter. Confidence is high: Harrison explicitly defines and names the discharge functions with formal precision.

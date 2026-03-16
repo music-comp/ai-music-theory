@@ -1,163 +1,152 @@
 ---
-concept: "Schritt/Wechsel System (S/W System)"
-category: technique
-pdf_page: null
-chapter_number: null
-unit: null
+# === CORE IDENTIFICATION ===
+concept: "Schritt/Wechsel System"
+slug: schritt-wechsel-system
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: group theory
+tier: advanced
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Harmonieschritte & Neo-Riemannian Appropriations"
-authors: "Engebretsen"
+source_slug: neo-riemannian-handbook
+authors: "Nora Engebretsen"
+chapter: "The 'Over-Determined' Triad as a Source of Discord: Nascent Groups and the Individuation of Transformational Systems"
+chapter_number: 12
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "S/W system"
+  - "S/W group"
+  - "Schritt-Wechsel group"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - harmonieschritte
+  - schritte-wechsel
+extends:
+  - harmonieschritte
+related:
+  - plr-transformations
+  - quintschritt-terzschritt
+  - nascent-group-structures
+  - over-determined-triad
+  - combinatorial-group-theory
+contrasts_with:
+  - plr-transformations
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Schritt/Wechsel system and how is it structured?"
+  - "How does the S/W system relate to the PLR group?"
+  - "What distinguishes the S/W system from PLR as an analytical framework?"
 ---
 
-# Schritt/Wechsel System (S/W System)
+# Quick Definition
 
-## Quick Definition
+The complete group of 24 transformations on consonant triads, comprising 12 mode-preserving Schritte and 12 mode-reversing Wechsel, isomorphic to the PLR group but organized by root-interval relationships rather than voice-leading parsimony.
 
-The complete group of 24 transformations on consonant triads, comprising 12 mode-preserving Schritte (steps) and 12 mode-reversing Wechsel (exchanges), isomorphic to the PLR group but organized by root-interval relationships.
+# Core Definition
 
-## Formal Definition
+The **Schritt/Wechsel system** formalizes Riemann's Harmonieschritte as a mathematical group of order 24 acting on the 24 consonant triads. It contains 12 **Schritte** (mode-preserving, analogous to transpositions) and 12 **Wechsel** (mode-reversing, analogous to inversions), forming a group isomorphic to the dihedral group D12 (equivalently Z12 semidirect product Z2). Engebretsen (Ch. 12) traces how this group structure, though implicit in Riemann's 1880 Skizze, was first explicitly recognized by Klumpenhouwer (1994), who proposed it as a corrective to Lewin/Hyer's PLR system. Klumpenhouwer argued that the PLR system inconsistently mixed dualist operations (P, L, R are all Wechsel) with monist ones (the Dominant transformation D transposes all triads up a fifth regardless of mode), producing counterintuitive results. The S/W system avoids this by being fully dualist: every operation respects the schlicht/gegen distinction based on the direction of chord generation.
 
-The **Schritt/Wechsel system** formalizes Riemann's *Harmonieschritte* as a mathematical group:
+# Prerequisites
 
-### Schritte (Steps)
-Mode-preserving transformations:
-- Major triad → Major triad
-- Minor triad → Minor triad
-- Named by root interval (0-11 semitones)
+- **Harmonieschritte**: The complete taxonomy that the system formalizes
+- **Schritte and Wechsel**: The fundamental mode-preserving/reversing distinction
 
-**Notation**: Sₙ where n = semitones of root motion in the direction of chord generation
-- S₀ = Identity
-- S₇ = Quintschritt (up fifth for major, down fifth for minor)
-- S₄ = Terzschritt (up major third / down major third)
-- S₂ = Ganztonschritt (up whole tone / down whole tone)
+# Key Properties
 
-### Wechsel (Exchanges)
-Mode-reversing transformations:
-- Major triad → Minor triad
-- Minor triad → Major triad
-- Named by root interval between source and target
+1. **Order 24**: 12 Schritte (including identity) + 12 Wechsel = 24 total operations
+2. **Isomorphic to D12**: The dihedral group of order 24 (equivalently Z12 semidirect product Z2)
+3. **Three generators**: Q (Quintschritt), T (Terzschritt), Seitenwechsel; or equivalently S1 and W0
+4. **Fully dualist**: All operations respect the inversional structure of major/minor duality
+5. **Group presentation**: (Q, T, Seitenwechsel | Q^12 = T^4 = Seitenwechsel^2 = e, QT = TQ, (Q*Seitenwechsel)^2 = (T*Seitenwechsel)^2 = e)
+6. **Isomorphic to PLR**: Every S/W operation has a PLR equivalent and vice versa
 
-**Notation**: Wₙ where n = semitones between roots
-- W₀ = Seitenwechsel (P in PLR notation)
-- W₄ = Terzwechsel (R in PLR notation)
-- W₃ = Leittonwechsel (L in PLR notation)
-- W₇ = Quintwechsel
+# Construction / Recognition
 
-## Klumpenhouwer's Recovery
+Key isomorphisms between S/W and PLR (Ch. 12):
 
-Henry Klumpenhouwer (1994) revived the S/W system as:
-- A corrective to Lewin/Hyer's "conflicted" mixing of dualist and monist operations
-- A fully dualized system with consistent behavior
-- A historically grounded alternative to PLR
+| S/W | PLR | Root interval |
+|-----|-----|--------------|
+| W0 (Seitenwechsel) | P | 0 semitones, mode change |
+| W3 (Leittonwechsel) | L | 3 semitones, mode change |
+| W4 (Terzwechsel) | R | 4 semitones, mode change |
+| S7 (Quintschritt) | LR | 7 semitones, same mode |
+| S4 (Terzschritt) | LPL or RPR | 4 semitones, same mode |
 
-### The Conflation Problem
-In Lewin/Hyer's original system:
-- P, L, R are dualist (effect depends on chord quality)
-- D (Dominant) is monist (always moves up fifth regardless of quality)
+Generator presentation: (S1, W0 | S1^12 = W0^2 = (S1*W0)^2 = e)
 
-This mixing produces counterintuitive results:
-- LR applied to major = subdominant direction
-- LR applied to minor = dominant direction
+# Context & Application
 
-The S/W system avoids this by being fully dualist throughout.
+Engebretsen situates the S/W system within a combinatorial tradition where the choice of generators and the constraints placed on their composition determine the character of the resulting transformational system. She identifies a crucial difference between Riemann's and neo-Riemannian usage: Riemann subordinated the Harmonieschritte to key-based constraints (only certain progressions are "intelligible" within a key), while neo-Riemannian theory extracts the unconstrained group, treating all 24 operations as equally valid.
 
-## Group Structure
-
-### Presentation
-⟨S₁, W₀ | S₁¹² = W₀² = (S₁W₀)² = e⟩
-
-Or equivalently with different generators:
-⟨⊕, Q, T | ⊕² = (Q⊕)² = (T⊕)² = QT-TQ = e⟩
-
-where ⊕ = Seitenwechsel, Q = Quintschritt, T = Terzschritt
-
-### Order and Structure
-- Total operations: 24
-- 12 Schritte (including identity)
-- 12 Wechsel
-- Isomorphic to dihedral group D₁₂ or Z₁₂ ⋊ Z₂
-
-### Isomorphism with PLR Group
-Every S/W operation has a PLR equivalent:
-| S/W | PLR Equivalent |
-|-----|----------------|
-| W₀ | P |
-| W₃ | L |
-| W₄ | R |
-| S₇ | LR |
-| S₅ | RL |
-| S₄ | LPL or RPR |
-| W₈ | LP or PL |
-
-## Combinatorial Foundation
-
-### Generators
-The complete group can be generated from:
-- Q (Quintschritt): Fifth relation
-- T (Terzschritt): Major third relation
-- ⊕ (Seitenwechsel): Mode exchange
-
-### Derivation
-All 24 operations derive from combinations:
-- S₂ = Q² (two fifths = whole tone)
-- W₇ = Q⊕ (fifth then mode change)
-- S₆ = Q³T (tritone = three fifths plus third)
-
-### Word Length
-Measuring "distance" by generator count:
-- Primary operations (⊕, Q, Q⁻¹, T, T⁻¹): Length 1
-- Compounds (Q², Q⊕, T⊕...): Length 2
-- Further compounds: Length 3+
-
-## Comparison: S/W vs. PLR
-
-| Feature | S/W System | PLR System |
-|---------|------------|------------|
-| Basis | Root interval | Voice leading |
-| Generators | Q, T, ⊕ | P, L, R |
-| Fifth relation | Direct (S₇) | Compound (LR) |
-| Parsimony emphasis | No | Yes |
-| Historical basis | Riemann | Neo-Riemannian |
-| Distance metric | Root motion | Voice-leading steps |
-
-### Kopp's Critique
-David Kopp noted that PLR makes fifth relations (like dominant) seem "indirect" (requiring LR compound), obscuring their acoustic and perceptual directness. The S/W system preserves this directness.
-
-## Analytical Implications
-
-### When S/W is Preferable
+The S/W system is preferable to PLR when:
 - Analyzing root-motion patterns
-- Passages emphasizing acoustic relationships
-- Historical reconstruction of 19th-century hearing
-- Comparison with function theory
+- Working in a dualistic framework
+- Reconstructing 19th-century hearing
+- Comparing with function theory
 
-### When PLR is Preferable
-- Voice-leading analysis
-- Maximally smooth cycles
-- Hexatonic/octatonic spaces
-- Passages emphasizing parsimonious motion
+The PLR system is preferable when:
+- Analyzing voice-leading parsimony
+- Working with hexatonic/octatonic cycles
+- Emphasizing smooth voice-leading connections
 
-### Hybrid Approaches
-Many analysts use both:
-- S/W for classifying relationships
-- PLR for tracing voice-leading paths
-- The isomorphism ensures compatibility
+# Examples
 
-## Related Concepts
+Engebretsen's derivation table (Ch. 12) shows how all relationships derive from Q, T, and Seitenwechsel:
+- Kleinterzschritt = Q^-1 * T (fifth down, then third up)
+- Ganztonschritt = Q^2 (two fifths up)
+- Leittonschritt = Q * T (fifth up, then third up)
+- Tritonusschritt = Q^3 * T (three fifths plus a third)
 
-- **Prerequisite**: harmonieschritte, plr-transformations
-- **Leads to**: neo-riemannian-operations, chromatic-transformation-networks
-- **See also**: klang, harmonic-dualism, tch-interval
+Kopp's critique (cited by Engebretsen): PLR makes the fifth relation (dominant) seem "indirect" (requiring LR compound), obscuring its acoustic and perceptual directness. The S/W system preserves this directness with the single symbol Q.
 
-## Common Confusions
+# Relationships
 
-- **S/W is not "better" than PLR**: They're isomorphic; preference depends on analytical goals
-- **Riemann didn't formalize the group**: Klumpenhouwer extracted group structure from Riemann's writings
-- **Schritte preserve mode, Wechsel reverse it**: This is the fundamental distinction
+## Builds Upon
+- harmonieschritte (the taxonomy that the system formalizes)
+- schritte-wechsel (the mode-preserving/reversing distinction)
 
-## Source References
+## Enables
+- nascent-group-structures (the implicit group properties Engebretsen identifies)
+- combinatorial-group-theory (the formal mathematical framework)
 
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 12: Nora Engebretsen, "Harmonieschritte & Neo-Riemannian Appropriations"
-- Klumpenhouwer, "Some Remarks on the Use of Riemann Transformations" (1994)
-- Hook, "Uniform Triadic Transformations" (2002)
+## Related
+- quintschritt-terzschritt (the primary generators Q and T)
+- over-determined-triad (explains why the generators produce a group of exactly this order)
+
+## Contrasts With
+- plr-transformations (voice-leading-based vs. root-interval-based; isomorphic but conceptually different)
+
+# Common Errors
+
+- **Error**: Treating the S/W system as "more correct" than PLR
+  **Correction**: They are isomorphic groups with different analytical emphases; neither is inherently superior
+
+# Common Confusions
+
+- **Confusion**: Riemann explicitly formalized the S/W group
+  **Clarification**: Riemann described the relationships; Klumpenhouwer (1994) extracted the explicit group structure. Engebretsen describes this as "nascent" group content.
+
+- **Confusion**: The S/W system and PLR system give different analytical results
+  **Clarification**: They are isomorphic and produce identical structural analyses; the difference is in how operations are named and which relationships are treated as "basic"
+
+# Source Reference
+
+Engebretsen, Nora. "The 'Over-Determined' Triad as a Source of Discord: Nascent Groups and the Individuation of Transformational Systems." In *The Oxford Handbook of Neo-Riemannian Music Theories*, edited by Edward Gollin and Alexander Rehding. Oxford University Press, 2011. Chapter 12.
+
+Klumpenhouwer, Henry. "Some Remarks on the Use of Riemann Transformations." *Music Theory Online* 0.9 (1994).
+
+Hook, Julian. "Uniform Triadic Transformations." *Journal of Music Theory* 46.1/2 (2002): 57-126.
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: group presentation, S/W-PLR isomorphism table, D12 structure, Klumpenhouwer recovery narrative, Kopp critique. Enhanced with Engebretsen's specific framing of nascent group content and combinatorial tradition. High confidence: the central formal structure discussed in Ch. 12.

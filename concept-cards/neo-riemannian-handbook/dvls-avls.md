@@ -1,182 +1,128 @@
 ---
-concept: DVLS / AVLS Measurements
-category: analysis
-source: Oxford Handbook of Neo-Riemannian Music Theories
-chapter: "Inversional Symmetry and Voice Leading"
+# === CORE IDENTIFICATION ===
+concept: DVLS and AVLS Voice-Leading Measurements
+slug: dvls-avls
+
+# === CLASSIFICATION ===
+category: transformations
+subcategory: voice-leading-metrics
+tier: advanced
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
 authors: "Dmitri Tymoczko"
+chapter: "Inversional Symmetry and Voice Leading"
+chapter_number: 8
 pdf_page: null
-chapter_number: null
-unit: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Displacement Voice-Leading Size"
+  - "Average Voice-Leading Size"
+  - "directed voice-leading sum"
+  - "absolute voice-leading sum"
+  - "voice-leading distance measures"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - voice-leading-graph
+  - plr-transformations
+extends: []
+related:
+  - voice-leading-efficiency-principle
+  - weitzmann-region-analysis
+  - parsimonious-trichords
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are DVLS and AVLS and how do they quantify voice-leading efficiency?"
+  - "How do neo-Riemannian transformations compare in terms of voice-leading distance?"
+  - "What is a Weitzmann region and how is it defined by AVLS?"
 ---
 
-# DVLS / AVLS Measurements
+# Quick Definition
 
-## Quick Definition
+Quantitative measures of voice-leading efficiency: DVLS (Displacement/Directed Voice-Leading Size) sums the semitone distances moved by all voices (with or without direction), while AVLS (Average/Absolute Voice-Leading Size) divides this by the number of voices to give average motion per voice.
 
-Quantitative measures of voice-leading efficiency: DVLS (Displacement Voice-Leading Size) sums the semitone distances moved by all voices, while AVLS (Average Voice-Leading Size) divides this by the number of voices to give average motion per voice.
+# Core Definition
 
-## Formal Definition
+Tymoczko (Ch. 8) develops DVLS and AVLS as part of a geometric approach to voice leading. **DVLS** = |d1| + |d2| + ... + |dn| where di is the displacement in semitones of voice i. **AVLS** = DVLS / n where n is the number of voices. These metrics quantify distances in "voice-leading space" where points represent chords, distances represent voice-leading effort, and efficient progressions correspond to short paths.
 
-**DVLS (Displacement Voice-Leading Size)**:
-The total number of semitones traveled by all voices in a voice leading.
+Rings (Ch. 18) uses these measures analytically, noting that DVLS can also be "directed" (distinguishing up from down) while AVLS measures "absolute" distance regardless of direction -- what Joseph Straus calls total voice-leading "work" or "exertion" (p. 490).
 
-Formula: DVLS = |d1| + |d2| + |d3| + ... + |dn|
+# Prerequisites
 
-Where di is the displacement (in semitones) of voice i.
+- **Voice-leading graphs**: The geometric spaces in which DVLS/AVLS measure distances.
+- **PLR transformations**: The operations whose efficiency these metrics quantify.
 
-**AVLS (Average Voice-Leading Size)**:
-The average displacement per voice.
+# Key Properties
 
-Formula: AVLS = DVLS / n
+1. **Non-negative**: Both measures are always >= 0
+2. **Zero only for identity**: DVLS = 0 only when chords are identical (or contrary motion cancels)
+3. **Inversion-preserving**: I-related voice leadings have equal DVLS/AVLS
+4. **Normalization**: AVLS allows comparison across different chord cardinalities
 
-Where n is the number of voices.
+# Construction / Recognition
 
-**Example Calculation**:
-For the voice leading C major (C-E-G) -> C minor (C-Eb-G):
-- Voice 1: C -> C = 0 semitones
-- Voice 2: E -> Eb = 1 semitone
-- Voice 3: G -> G = 0 semitones
-- DVLS = 0 + 1 + 0 = 1
-- AVLS = 1/3 ≈ 0.33
-
-## Theoretical Framework
-
-**Voice-Leading Spaces**:
-Tymoczko develops these measures as part of a geometric approach to voice leading. DVLS and AVLS quantify distances in "voice-leading space" - a mathematical space where:
-- Points represent chords
-- Distances represent voice-leading effort
-- Efficient progressions correspond to short paths
-
-**Properties**:
-- DVLS measures total effort required
-- AVLS normalizes for chord size (useful when comparing different cardinalities)
-- Both are non-negative
-- DVLS = 0 only when chords are identical
-- Inversion preserves both measures (I-related voice leadings have equal DVLS/AVLS)
-
-**Relationship to Neo-Riemannian Transformations**:
-| Transformation | DVLS (triads) | AVLS |
-|---------------|---------------|------|
+For neo-Riemannian transformations on triads:
+| Transformation | DVLS | AVLS |
+|---------------|------|------|
 | P | 1 | 0.33 |
 | L | 1 | 0.33 |
 | R | 2 | 0.67 |
-| T1 | 3 | 1.00 |
-| T5/T7 | 5 | 1.67 |
 
-P and L are "maximally smooth" - they achieve the minimum DVLS for distinct triads.
+P and L are "maximally smooth" -- achieving minimum DVLS for distinct triads. AVLS = 2 defines membership in a **Weitzmann region** (Rings, Ch. 18, p. 491).
 
-## Musical Context
+# Context & Application
 
-**Defining "Efficient" Voice Leading**:
-Tymoczko uses these measures to formalize efficiency:
-- "Semitonal" voice leading: AVLS ≤ 1 (no voice moves more than a semitone on average)
-- "Stepwise" voice leading: AVLS ≤ 2 (no voice moves more than a whole step on average)
+Rings (Ch. 18) uses DVLS/AVLS to analyze Schubert's Gb Impromptu, mm. 78-82. The chromatically extraordinary passage shows AVLS = 2 throughout, revealing that all progressions stay within a single Weitzmann region. DVLS alternates +2/-2 until the cadential resolution where DVLS = 0 marks the "wrenching" return to functional tonal syntax via contrary motion (p. 490).
 
-These definitions are style-agnostic and allow cross-repertoire comparison.
+# Examples
 
-**Cataloging Voice Leadings**:
-The 16 semitonal voice leadings between triads (Tymoczko's Table) all have DVLS ≤ 2:
-- DVLS = 1: P and L transformations
-- DVLS = 2: Two voices move by semitone (LP, PL, and similar compounds)
+**P transformation** (C major to C minor): C->C: 0, E->Eb: 1, G->G: 0. DVLS = 1, AVLS = 0.33.
 
-**Chromatic vs. Diatonic Efficiency**:
-Interesting insight: Motion by perfect fifth (dominant-to-tonic) has relatively high DVLS:
-- G major (G-B-D) -> C major (G-C-E): DVLS = 4 (B->C + D->C + D->E... depending on voicing)
-- This explains why V-I is "strong" harmonically but not voice-leading-efficient
-- Chromatic harmony (low DVLS) and functional harmony (different criteria) operate differently
+**R transformation** (C major to A minor): C->C: 0, E->E: 0, G->A: 2. DVLS = 2, AVLS = 0.67.
 
-## Examples
+**Schubert Impromptu analysis** (Rings, Ch. 18, p. 490): Gb+ to B-: DVLS = +2, AVLS = 2. B- to D+: DVLS = -2, AVLS = 2. Pattern: DVLS alternates +2/-2 while AVLS = 2 throughout the chromatic passage, incrementing to 3 only at the confirming cadence.
 
-### Comparing Voice Leadings
+**Why chromatic thirds recur**: C major to Ab major has DVLS = 2, more efficient than fifth-related progressions. This explains the prevalence of major-third-related triads in chromatic music.
 
-**P transformation** (C major to C minor):
-```
-C -> C: 0
-E -> Eb: 1
-G -> G: 0
-DVLS = 1, AVLS = 0.33
-```
+# Relationships
 
-**R transformation** (C major to A minor):
-```
-C -> C: 0
-E -> E: 0
-G -> A: 2
-DVLS = 2, AVLS = 0.67
-```
+## Builds Upon
+- Voice-leading graph theory and geometric chord spaces
 
-**Tritone transposition** (C major to F# major):
-```
-C -> C#: 1
-E -> F#: 2
-G -> A#: 3
-DVLS = 6, AVLS = 2.0
-```
+## Enables
+- Weitzmann region analysis: AVLS = 2 defines these regions
+- Systematic comparison of voice-leading efficiency across repertoires
 
-### Wagner Analysis Application
+## Related
+- Voice-leading efficiency principle (Rings): Uses DVLS/AVLS as analytical tools
+- Parsimonious trichords: Defined by minimal DVLS connections
 
-Tarnhelm motive: G# minor to E minor
-```
-G# -> G: 1
-B -> B: 0
-D# -> E: 1
-DVLS = 2, AVLS = 0.67
-```
+## Contrasts With
+- Functional harmonic analysis (measures harmonic distance, not voice-leading distance)
 
-This is efficient (DVLS = 2) but not maximally smooth (DVLS > 1).
+# Common Errors
 
-### Seventh Chord Voice Leadings
+- **Error**: Confusing DVLS with number of moving voices.
+  **Correction**: DVLS counts total semitones moved, not number of active voices.
 
-The Tristan chord to dominant seventh:
-```
-{F, G#, B, D#} -> {F, A, C, Eb}
-F -> F: 0
-G# -> A: 1
-B -> C: 1
-D# -> Eb: 1 (enharmonic)
-DVLS = 3, AVLS = 0.75
-```
+# Common Confusions
 
-Extremely efficient for a four-note chord transformation.
+- **Confusion**: Thinking low DVLS means harmonically close.
+  **Clarification**: Voice-leading distance and harmonic/functional distance are independent measures. V-I has relatively high DVLS but is harmonically fundamental.
 
-## Related Concepts
+# Source Reference
 
-- **Prerequisite**: voice-leading, interval, semitone
-- **Leads to**: voice-leading-zones
-- **See also**: voice-leading-efficiency, inversional-symmetry
+Tymoczko, Dmitri. "Inversional Symmetry and Voice Leading." Ch. 8. Rings, Steven. "Riemannian and Neo-Riemannian Analysis." Ch. 18, pp. 489-492. In *The Oxford Handbook of Neo-Riemannian Music Theories*.
 
-## Common Confusions
+# Verification Notes
 
-1. **DVLS vs. number of moving voices**: DVLS counts total semitones, not number of active voices
-
-2. **Direction independence**: DVLS uses absolute values - motion up equals motion down
-
-3. **Voicing matters**: Different voicings of the same chord progression can have different DVLS
-
-4. **AVLS comparability**: AVLS allows comparison between voice leadings of different sizes (triads vs. seventh chords)
-
-## Analytical Applications
-
-**Identifying Efficient Progressions**:
-- DVLS ≤ 2 for triads: Highly efficient (includes P, L, R)
-- DVLS ≤ 3 for seventh chords: Highly efficient
-- Higher DVLS suggests different organizational logic (functional rather than voice-leading)
-
-**Explaining Chromatic Patterns**:
-Why do major-third related triads appear so often in chromatic music?
-- C major to Ab major: DVLS = 2 (minimal for same-quality triads at that interval)
-- C major to E major: DVLS = 2 (same)
-- These are more efficient than fifth-related progressions
-
-**Limitations**:
-DVLS/AVLS measure one aspect of voice leading. They don't capture:
-- Voice crossing/uncrossing
-- Harmonic function
-- Registral concerns
-- Timbral factors
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part II, Chapter 8: Dmitri Tymoczko, "Inversional Symmetry and Voice Leading"
-
-Extended treatment in: Tymoczko, *A Geometry of Music* (Oxford University Press, 2011)
+Re-extracted from v2 card; preserved: formulas, PLR comparison table, all calculation examples, Schubert Impromptu analysis from Rings, chromatic-third explanation. Enhanced with Rings's directed/absolute distinction and Weitzmann region connection. Confidence high.

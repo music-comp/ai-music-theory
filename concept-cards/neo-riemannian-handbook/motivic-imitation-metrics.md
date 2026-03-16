@@ -1,95 +1,126 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Motivic Imitation in Metrics
-category: theory
-source: The Oxford Handbook of Neo-Riemannian Music Theories
-authors: William E. Caplin
-chapter: "Ch 15: Riemann's Theories of Rhythm and Meter"
-pdf_page: null
-chapter_number: null
-unit: null
+slug: motivic-imitation-metrics
+
+# === CLASSIFICATION ===
+category: rhythm-meter
+subcategory: metric theory
+tier: intermediate
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "William E. Caplin"
+chapter: "Riemann's Theory of Rhythmic-Metric Organization"
+chapter_number: 15
+pdf_page: 426
+section: "Expressed Meter"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "melodic imitation criterion"
+  - "statement-response accent"
+  - "Aufstellung-Antwort"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - expressed-meter
+extends: []
+related:
+  - harmoniewirkung
+  - auftakttheorie
+contrasts_with:
+  - initial-accentuation
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does melodic repetition create metrical accent in Riemann's theory?"
+  - "What role does imitation play in determining expressed meter?"
 ---
 
-# Motivic Imitation in Metrics
+# Quick Definition
 
-## Quick Definition
+Riemann's principle that melodic repetition or imitation creates metrical accent, where the "response" (*Antwort*) to a melodic "statement" (*Aufstellung*) receives greater metrical weight than the original presentation, reflecting his general aesthetic that musical motion is directed toward goals.
 
-Riemann's principle that melodic repetition or imitation creates metrical accent, where the "response" to a melodic "statement" receives greater metrical weight than the original presentation—an application of his general aesthetic that musical motion is directed toward goals.
+# Core Definition
 
-## Formal Definition
+Motivic imitation as a metric criterion holds that when a melodic idea is repeated or imitated, the repetition ("response" or *Antwort*) is metrically stronger than the original presentation ("statement" or *Aufstellung*). From the *Vademecum der Phrasierung*: "It is easy to recognize that the relationship of statement and response is expressed not only, but above all, in the return of the same or similar melodic phrases, in the imitation of the motive" (cited by Caplin, p. 426). Riemann considers several forms of melodic imitation: literal repetition, inversion ("It has indeed long been recognized that inversion is a form of imitation"), sequential repetition, and answering contour (rise answered by fall). The criterion is invoked especially "in all cases where the harmony remains the same for a longer series of measures" (p. 427), since Harmoniewirkung is then unavailable.
 
-**Motivic imitation** as a metric criterion holds that when a melodic idea is repeated or imitated, the repetition ("response" or *Antwort*) is metrically stronger than the original presentation ("statement" or *Aufstellung*).
+# Prerequisites
 
-**Core Principle** (from *Vademecum der Phrasierung*):
-> "It is easy to recognize that the relationship of statement and response is expressed not only, but above all, in the return of the same or similar melodic phrases, in the imitation of the motive."
+- **Expressed meter** — Motivic imitation is one of the five criteria for determining expressed meter
 
-**Forms of Imitation**:
-- **Literal repetition**: Same melodic contour restated
-- **Inversion**: Melodic direction reversed ("It has indeed long been recognized that inversion is a form of imitation")
-- **Sequential repetition**: Pattern restated at different pitch level
-- **Answering contour**: Rise answered by fall, or vice versa
+# Key Properties
 
-**Rationale**: Motivic imitation functions as a kind of temporal "question-and-answer" relationship, with the answer carrying greater weight as the goal of the musical utterance.
+1. The repeated or imitated melodic idea ("response") receives greater metrical weight than the original ("statement")
+2. Multiple forms count as imitation: literal repetition, inversion, sequential repetition, answering contour
+3. Invoked primarily when Harmoniewirkung is unavailable (static harmony)
+4. Supports Auftakttheorie: the second occurrence (answer/goal) is accented
+5. The principle contradicts "initial accentuation" (Hauptmann), where the first presentation is stronger
+6. Dahlhaus critiques: "motivic repetition... gives rise to a copy, which is less weighty than the model"
 
-**Use When Harmony Fails**: Riemann specifically invokes motivic imitation "in all cases where the harmony remains the same for a longer series of measures," since *Harmoniewirkung* is not available.
+# Construction / Recognition
 
-## Musical Context
+## To Apply Motivic Imitation
 
-Motivic imitation extends Riemann's goal-directed aesthetic to melodic parameters:
+1. Identify melodic repetitions, imitations, or sequential patterns
+2. Designate the first occurrence as "statement" (weak/upbeat function)
+3. Designate the repetition/answer as "response" (strong/downbeat function)
+4. Check for inversional imitation: a rising melody answered by a falling melody counts as imitation
+5. Use this criterion primarily when harmony is static and Harmoniewirkung is unavailable
 
-- Supports *Auftakttheorie*: the second occurrence (answer) is accented
-- Provides expressed-meter evidence when harmonic change is absent
-- Allows analysis of passages with static harmony
+# Context & Application
 
-**Combined Criteria**: Riemann claims that "the melodic contours and the harmony will be found sufficient at least in the great majority of cases for a certain determination of the metrical weight."
+Motivic imitation serves as a backup criterion when harmonic evidence is ambiguous. Riemann's claim that "the melodic contours and the harmony will be found sufficient at least in the great majority of cases for a certain determination of the metrical weight" (p. 427) suggests these two criteria together cover most analytical situations. The principle reflects Riemann's broader goal-directed aesthetic: just as harmonic motion is directed toward cadential goals, melodic motion is directed toward the responding statement.
 
-**Controversial Assumption**: This principle contradicts the idea of "initial accentuation" (Hauptmann), which holds that the first presentation of something is stronger. Dahlhaus critiques: "In general, motivic repetition (not unlike harmonic repetition) gives rise to a copy, which is less weighty than the model."
+**Controversial assumption**: The principle directly contradicts Hauptmann's "initial accentuation." Dahlhaus and most modern theorists hold that first presentations are metrically stronger than repetitions. Riemann's invocation of this criterion sometimes appears ad hoc — used to preserve his model when Harmoniewirkung contradicts it.
 
-## Examples
+# Examples
 
-### Basic
+**Example 1** (p. 430): Beethoven, "Leonore Overture" No. 2, mm. 57-65. The second phrase receives metrical accent as a "response" to the first. Within each phrase, change in melodic direction (inversion) creates accent on the second half.
 
-**Two-phrase structure with melodic imitation**:
-```
-Phrase 1 (mm. 1-4): Rising melodic contour
-Phrase 2 (mm. 5-8): Similar melodic contour restated
+**Example 2** (p. 430): Beethoven, Op. 31, No. 1, ii. Despite Harmoniewirkung suggesting accent in measure 3, Riemann appeals to melodic inversion to justify accent in measures 2 and 4: "the 'sinking down' of the melody is contrasted as an answer to the 'rising up.'"
 
-According to Riemann:
-  mm. 1-4: "Statement" (weaker)
-  mm. 5-8: "Response" (stronger, accented)
-```
+**Example 3** (Burnham, p. 449): Op. 31, No. 3, opening. The Mannheim sigh figure is interpreted as having its accented "answer" on the note following the sigh, not on the sigh itself — though Burnham notes this reading "strains" credulity.
 
-**Inversion as imitation within a phrase**:
-```
-mm. 1-2: Melody rises
-mm. 3-4: Melody falls (inverted contour)
+# Relationships
 
-Riemann: mm. 3-4 receive accent as "answer" to mm. 1-2
-```
+## Builds Upon
+- **Expressed meter** — One of five expressed-meter criteria
 
-### From Repertoire
+## Enables
+- Analysis of metrically ambiguous passages with static harmony
 
-**Beethoven, "Leonore Overture" No. 2, mm. 57-65**: Riemann analyzes the second phrase as metrically stronger than the first because of melodic repetition. Within each phrase, the change in melodic direction (inversion) creates accent on the second half.
+## Related
+- **Harmoniewirkung** — The primary criterion that motivic imitation supplements
+- **Auftakttheorie** — Motivic imitation supports end-accentuation (response is the goal)
 
-**Beethoven, Op. 31, No. 1, ii**: Despite *Harmoniewirkung* suggesting accent in measure 3, Riemann appeals to melodic inversion to justify accent in measures 2 and 4: "the 'sinking down' of the melody is contrasted as an answer to the 'rising up.'"
+## Contrasts With
+- **Initial accentuation** — The opposing principle (Hauptmann/Dahlhaus) that first presentations are metrically stronger
 
-**Op. 31, No. 3, opening**: The Mannheim sigh figure is interpreted as having its accented "answer" on the note following the sigh, not on the sigh itself.
+# Common Errors
 
-## Related Concepts
+- **Error**: Treating only literal repetition as "imitation"
+  **Correction**: Inversion, sequential transposition, and answering contour all qualify as imitation in Riemann's theory
 
-- **Prerequisite**: motive, imitation, inversion
-- **Leads to**: expressed-meter
-- **See also**: harmoniewirkung, sequence
+# Common Confusions
 
-## Common Confusions
+- **Confusion**: Thinking melodic repetition always creates accent on the repetition
+  **Clarification**: Most modern theorists hold the opposite — that first presentations are metrically stronger (Dahlhaus: "the copy is less weighty than the model")
 
-- This principle CONTRADICTS initial accentuation—the "copy" is NOT weaker in Riemann's view
-- Melodic inversion counts as "imitation" even though the contour is reversed
-- Riemann uses this criterion as a backup when *Harmoniewirkung* is unavailable
-- The principle can conflict with other expressed-meter criteria, requiring analytical judgment
-- "Response" receiving accent follows from *Auftakttheorie*, not from melodic properties per se
-- Many modern theorists reject the idea that repetition creates accent (they find the opposite)
-- Riemann sometimes invokes motivic imitation to preserve his model when harmony contradicts it
+- **Confusion**: Believing motivic imitation is Riemann's primary metric criterion
+  **Clarification**: It serves as an "assistant" criterion, invoked mainly when Harmoniewirkung is unavailable
 
-## Source Reference
+# Source Reference
 
-The Oxford Handbook of Neo-Riemannian Music Theories, Chapter 15: William E. Caplin, "Riemann's Theories of Rhythm and Meter"
+Chapter 15: William E. Caplin, "Riemann's Theory of Rhythmic-Metric Organization," pp. 426-428. Vademecum quotation on p. 426; Dahlhaus critique on p. 427.
+
+# Verification Notes
+
+- Re-extracted from v2 card; preserved: Vademecum quote, forms of imitation list, Dahlhaus critique, all three Beethoven examples, "assistant criterion" status, initial accentuation contrast
+- Definition: Direct from Caplin (pp. 426-427) with Riemann quotation
+- Confidence: HIGH — Caplin provides explicit definition with quotation and systematic discussion

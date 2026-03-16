@@ -1,125 +1,119 @@
 ---
-concept: 'Riemann''s "Das Problem" - Primary Source'
-category: theory
-source: Oxford Handbook of Neo-Riemannian Music Theories
+# === CORE IDENTIFICATION ===
+concept: "Riemann's 'Das Problem des harmonischen Dualismus' (Primary Source)"
+slug: riemann-primary-source
+
+# === CLASSIFICATION ===
+category: dualism
+subcategory: primary-source
+tier: advanced
+
+# === PROVENANCE ===
+source: "The Oxford Handbook of Neo-Riemannian Music Theories"
+source_slug: neo-riemannian-handbook
+authors: "Ian Bent"
 chapter: "The Problem of Harmonic Dualism"
-authors: "Ian Bent (translator), Hugo Riemann (original author, 1905)"
-pdf_page: null
-chapter_number: null
-unit: null
+chapter_number: 5
+pdf_page: 168
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Das Problem des harmonischen Dualismus"
+  - "The Problem of Harmonic Dualism"
+  - "Riemann 1905 article"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - harmonic-dualism
+  - overtone-series
+extends: []
+related:
+  - tonvorstellungen
+  - klang-representation
+  - undertone-series
+  - monism-vs-dualism
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is Riemann's 1905 article 'Das Problem des harmonischen Dualismus' and why is it significant?"
+  - "How did Riemann shift from acoustic to psychological foundations for dualism?"
+  - "What was the controversy that prompted Riemann's 'Das Problem'?"
 ---
 
-# Riemann's "Das Problem des harmonischen Dualismus" - Primary Source
+# Quick Definition
 
-## Quick Definition
+Hugo Riemann's 1905 article published in the Neue Zeitschrift fur Musik, representing his mature and final position on harmonic dualism -- notably abandoning acoustic foundations in favor of psychological justification while maintaining the dualist framework.
 
-Hugo Riemann's 1905 article published in *Neue Zeitschrift fur Musik*, representing his mature and final position on harmonic dualism - notably abandoning acoustic foundations in favor of psychological justification while maintaining the dualist framework.
+# Core Definition
 
-## Document Overview
+"Das Problem des harmonischen Dualismus" (The Problem of Harmonic Dualism), serialized across multiple issues of the *Neue Zeitschrift fur Musik* in 1905 and translated by Ian Bent in Chapter 5, is Riemann's definitive late statement on dualism. Bent observes it was written in response to Georg Capellen's "The Impossibility and Superfluousness of Riemann's Dualistic Theory of Minor" (1901), and served also as "a summons to backsliders among his own ranks, a rallying call to keep the faith" (p. 168).
 
-**Original publication**: "Das Problem des harmonischen Dualismus" (The Problem of Harmonic Dualism)
-**Journal**: *Neue Zeitschrift fur Musik*, Vol. 72 (1905), serialized across multiple issues
-**Translator**: Ian Bent (Oxford Handbook, Chapter 5)
-**Significance**: The definitive statement of Riemann's late dualist theory
+The article marks Riemann's "epiphany" (his own term): his abandonment of the undertone series as the physical basis for minor consonance, replacing it with a psychological foundation based on the active, selecting mind.
 
-## Historical Context
+# Prerequisites
 
-**The Controversy**:
-Riemann wrote in response to attacks on his dualist theory, particularly Georg Capellen's "Die Unmoglichkeit und Uberflusssigkeit der dualistischen Molltheorie Riemanns" (1901) - "The Impossibility and Superfluousness of Riemann's Dualistic Theory of Minor."
+- **Harmonic dualism**: Understanding the basic dualist position is essential for following Riemann's defense.
+- **Overtone series**: The article systematically critiques and ultimately rejects acoustic foundations.
 
-**Riemann's Strategy**:
-- Explicitly abandons acoustic undertones
-- Shifts to psychological/mathematical foundation
-- Responds to critics while "pointedly ignoring them" (a preferred tactic)
-- Rallies wavering followers: "a summons to backsliders among his own ranks"
+# Key Properties
 
-**The "Epiphany"**:
-Riemann describes his realization that acoustics cannot ground either major or minor consonance as "epiphanic" - a liberating insight that freed theory from "pseudo-logic."
+1. **Abandonment of acoustics**: "The attempt to ground the consonance of the major chord in the overtone series demands a completely arbitrary disregard of all the tones above the sixth overtone" (p. 172)
+2. **Psychological turn**: Musical hearing is "not just a passive physical process, but rather a psychic activity" (p. 179)
+3. **Mathematical dualism**: Major = "growing intensity" (frequency ratios 4:5:6), Minor = "accumulating mass" (string-length ratios 4:5:6)
+4. **Polemical strategy**: Riemann "pointedly ignoring" his critics, adopting "barely controlled patience toward his followers" (p. 170)
 
-## Key Arguments
+# Construction / Recognition
 
-**1. Against Acoustic Foundations (Section II)**:
-"The attempt to ground the consonance of the major chord in the overtone series demands a completely arbitrary disregard of all the tones above the sixth overtone."
+The article proceeds in five sections: (I) Introduction and controversy context; (II) "Are Overtones the 'Basis' of Consonance?" -- No; (III) "Interval Fusion or Klang-Representation?" -- The psychological alternative; (IV) "The True Root of Harmonic Dualism" -- Mathematical/aesthetic foundation; (V) "The Problem of the Fundamental" -- Reconciling theory with practice.
 
-Even major consonance cannot be justified purely by overtones:
-- Partials 7, 11, 13 etc. are not consonant
-- The diminished triad's chaotic overtones don't prevent its clear harmonic function
-- "If the derivation of the major consonance from the overtone series is itself already not all that secure, then the 'explanation' of the minor consonance by way of the overtones is a downright impossibility."
+# Context & Application
 
-**2. The Psychological Turn (Section III)**:
-"Musical hearing, even that of the listener whose ear has not been developed through technical training, is not just a passive physical process, but rather a psychic activity, a continuous comparing and associating together of successive tones and concurrent simultaneities."
+The article marks three major transitions: (1) the end of acoustic justification for Riemannian dualism; (2) the beginning of psychological/cognitive foundations anticipating modern approaches; (3) a shift toward mathematical elegance over physical reality -- the same impulse behind later set theory.
 
-Key insight: Musical hearing is **active and selective**:
-- The mind organizes raw acoustic material
-- It "contents itself with tempered approximations"
-- It "overlooks" inconvenient overtones
-- The listener seeks "greatest simplicity" and "economy"
+# Examples
 
-**3. The True Root of Dualism (Section IV)**:
-The distinction between major and minor lies in:
-- **Major**: Simplest ratios of frequency increase ("growing intensity")
-- **Minor**: Simplest ratios of wavelength/mass increase ("accumulating mass")
+**Against acoustic foundations** (Section II): "If the derivation of the major consonance from the overtone series is itself already not all that secure, then the 'explanation' of the minor consonance by way of the overtones is a downright impossibility" (p. 174).
 
-"The principle of major is increase in speed of vibration (ascent toward the next-related tones), the principle of minor is growth in wave-lengths (descent toward the next-related tones)."
+**On the uniqueness of major/minor**: "A healthy, natural musical instinct cries out for the unconditional recognition of the consonant character of the minor chord, for unreserved and straightforward coordination with the major chord as one of the two important forms of consonance, alongside which there is not, and cannot be, a third option!" (p. 174).
 
-Both modes use the same number series (4:5:6 / 6:5:4) - perfect mathematical equality.
+**On Klang-representation**: "Even just single tones are invariably heard in terms of Klange... The listener of today undoubtedly, and very likely the listener of any era, hears even purely monophonic melody in terms of harmonies (tone-complexes)" (p. 180).
 
-**4. The Minor Root Problem (Section V)**:
-Riemann addresses why the "under-fifth" functions as bass while the "prime" is at the fifth:
-- Acoustic overtones explain the practical voicing
-- The prime (fifth) can be omitted because bass overtones reinforce it
-- Theory and practice are reconciled through acoustics of voicing, not generation
+# Relationships
 
-## Key Quotes
+## Builds Upon
+- Oettingen's dualist framework and nomenclature
 
-**On abandoning undertones**:
-"These series do not require verification by way of acoustical phenomena, referral to which, on the contrary, only complicates and confuses the understanding of what are in themselves very simple ratios."
+## Enables
+- Tonvorstellungen: This article lays the foundation for the late theory of tone-imaginations
+- Psychological approaches to music theory
 
-**On Klang-representation**:
-"Even just single tones are invariably heard in terms of Klange... The listener of today undoubtedly, and very likely the listener of any era, hears even purely monophonic melody in terms of harmonies (tone-complexes)."
+## Related
+- Klang-representation: Introduced as the core mechanism of musical hearing
+- Monism vs. dualism: The article is the definitive response to monist critics
 
-**On the uniqueness of major/minor**:
-"The major chord and minor chord are not two arbitrary conglomerates of tones existing inter pares alongside however many others; rather, they are the two unique, fundamentally different [entities] in terms of which all other possible combinations are heard."
+## Contrasts With
+- Helmholtz's Tonempfindungen (passive, physical approach to hearing)
+- Stumpf's tone-psychology (still trapped in dyadic investigation)
 
-**On healthy musical instinct**:
-"A healthy, natural musical instinct cries out for the unconditional recognition of the consonant character of the minor chord, for unreserved and straightforward coordination with the major chord as one of the two important forms of consonance, alongside which there is not, and cannot be, a third option!"
+# Common Errors
 
-## Structure of the Article
+- **Error**: Assuming Riemann always held the same position on undertones.
+  **Correction**: He prevaricated for thirty years before this article's definitive abandonment of the acoustic basis.
 
-1. **Introduction**: Context and the challenge from critics
-2. **Section II**: "Are Overtones the 'Basis' of Consonance?" - No
-3. **Section III**: "Interval Fusion or Klang-Representation?" - The psychological alternative
-4. **Section IV**: "The True Root of Harmonic Dualism" - Mathematical/aesthetic foundation
-5. **Section V**: "The Problem of the Fundamental" - Reconciling theory with practice
-6. **Conclusion**: Defense against Belinfante; continuity of Riemann's position
+# Common Confusions
 
-## Significance for Neo-Riemannian Theory
+- **Confusion**: Believing the psychological turn weakened Riemann's dualism.
+  **Clarification**: Riemann saw it as liberating: it freed dualism from its weakest point (undertones) while preserving its core insight (major/minor symmetry).
 
-The article marks:
-1. **The end of acoustic justification** for Riemannian dualism
-2. **The beginning of psychological/cognitive foundations** - anticipating modern approaches
-3. **Mathematical elegance over physical reality** - the same impulse behind set theory
-4. **Transformation-focused thinking** - relationships over objects
+# Source Reference
 
-The psychological turn frees dualism from its weakest point (undertones) while preserving its core insight (major/minor symmetry).
+Bent, Ian (translator). "The Problem of Harmonic Dualism." In *The Oxford Handbook of Neo-Riemannian Music Theories*, Chapter 5, pp. 167-196. Original: Hugo Riemann, "Das Problem des harmonischen Dualismus," *Neue Zeitschrift fur Musik* 72 (1905): 3-5, 23-26, 43-46, 67-70.
 
-## Editorial Notes (Bent)
+# Verification Notes
 
-Bent observes:
-- Riemann's "manner of barely controlled patience toward his followers"
-- "Ridicule toward his attackers"
-- "Long sentences and intricate syntax" when arguments become difficult
-- The article as "a study of music-theoretical 'politics' in action"
-
-The translation updates Helmholtz notation to ASA (C4 = middle C) and supplies publication information Riemann omitted.
-
-## Related Concepts
-
-- **Prerequisite**: harmonic-dualism, overtone-series, undertone-series
-- **Leads to**: tonvorstellungen, klang-representation
-
-## Source Reference
-
-Oxford Handbook of Neo-Riemannian Music Theories, Part II, Chapter 5: Ian Bent, "The Problem of Harmonic Dualism"
-
-Original: Hugo Riemann, "Das Problem des harmonischen Dualismus," *Neue Zeitschrift fur Musik* 72 (1905): 3-5, 23-26, 43-46, 67-70
+Re-extracted from v2 card; preserved: article overview, all major arguments (against acoustics, psychological turn, mathematical dualism, minor root problem), key quotations, editorial notes from Bent. Enhanced with precise page citations. Confidence high due to direct translation in source chapter.

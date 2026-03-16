@@ -1,177 +1,140 @@
 ---
-concept: "Toroidal Tonnetz (Conforming Tonnetz)"
-category: theory
-pdf_page: null
-chapter_number: null
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Toroidal Tonnetz
+slug: toroidal-tonnetz
+
+# === CLASSIFICATION ===
+category: pitch-space
+subcategory: spatial representations of pitch
+tier: intermediate
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Tonnetz from Acoustic to Metaphorical"
-authors: "Gollin"
+source_slug: neo-riemannian-handbook
+authors: "Edward Gollin"
+chapter: "From Acoustical to Metaphorical: The Tonnetz from Oettingen to Riemann"
+chapter_number: 9
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "Conforming Tonnetz"
+  - "tempered Tonnetz"
+  - "equal-tempered Tonnetz"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - tonnetz
+  - enharmonic-equivalence
+extends:
+  - tonnetz
+related:
+  - hexatonic-systems
+  - octatonic-systems
+  - plr-transformations
+  - geometric-duals
+contrasts_with:
+  - nonconforming-tonnetz
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does the conforming Tonnetz relate to equal temperament?"
+  - "What distinguishes the conforming from nonconforming Tonnetz?"
+  - "What is the geometry of the Tonnetz under equal temperament?"
 ---
 
-# Toroidal Tonnetz (Conforming Tonnetz)
+# Quick Definition
 
-## Quick Definition
+The geometric shape of the Tonnetz under equal temperament, where enharmonic and syntonic equivalence cause the infinite plane to wrap into a torus containing exactly 12 pitch classes and 24 triadic regions.
 
-The geometric shape of the Tonnetz under equal temperament, where enharmonic equivalence causes the infinite plane to wrap into a torus (donut shape) with finite surface area containing exactly 12 pitch classes.
+# Core Definition
 
-## Formal Definition
+The **toroidal Tonnetz** (also called the **conforming Tonnetz**, per Daniel Harrison) arises when equal temperament is assumed, enforcing both enharmonic equivalence (C# = Db) and syntonic equivalence (eliminating comma differences). The generating intervals become cyclic: 12 perfect fifths close the circle, and 3 major thirds equal one octave. This causes the infinite plane to wrap into a **torus** (the product of two circles), a finite, bounded surface containing exactly 12 pitch-class nodes, 24 triadic regions (triangles), and 36 edges. Gollin describes how Riemann progressively moved toward this conception as he shifted from acoustical to psychological foundations (Ch. 9), while Cohn adopts it as the default analytical framework for neo-Riemannian theory (Ch. 11).
 
-The **toroidal Tonnetz** arises when:
-1. Equal temperament is assumed
-2. Enharmonic equivalences are enforced
-3. The generating intervals become cyclic
+# Prerequisites
 
-### From Plane to Torus
+- **Tonnetz**: The general lattice concept that the toroidal version specifies
+- **Enharmonic equivalence**: The identification of differently-spelled pitches (C# = Db) that enables the wrapping
 
-**Infinite Plane (Just Intonation)**:
-- Perfect fifths generate infinitely (no cycle)
-- Major thirds generate infinitely
-- Enharmonically "same" pitches occupy different locations
-- C# ≠ Db on the plane
+# Key Properties
 
-**Torus (Equal Temperament)**:
-- 12 perfect fifths = 7 octaves (closes the cycle)
-- 3 major thirds = 1 octave (closes the cycle)
-- C# = Db at the same location
-- The plane wraps into a torus
+1. **Toroidal geometry**: The surface is a torus (product of two circles), a 2D surface embedded in 3D space
+2. **Finite content**: Exactly 12 pitch-class nodes, 24 triadic regions, 36 edges
+3. **No boundary effects**: Every triad is equivalent in position; no "edge" of the space
+4. **Cyclic axes**: The fifth axis closes after 12 steps; the major-third axis closes after 3 (or 4) steps
+5. **Hexatonic tubes**: Hexatonic systems appear as cylindrical regions (4 non-overlapping tubes) on the torus
 
-### Mathematical Description
-The torus is the product of two circles:
-- **Circle 1**: 12 pitch classes by fifth (C-G-D-A-E-B-F#-C#-G#-D#-A#-E#/F-C)
-- **Circle 2**: 4 pitch-class groups by major third (C-E-G#, Db-F-A, D-F#-A#, Eb-G-B)
+# Construction / Recognition
 
-Torus = S¹ × S¹ where each S¹ is a circle.
-
-## Daniel Harrison's Terminology
-
-### Conforming Tonnetz
-The toroidal version "conforms" to equal temperament:
-- Respects enharmonic equivalence
-- Has finite, bounded geometry
-- Each pitch class appears exactly once
-
-### Nonconforming Tonnetz
-The planar version "does not conform" to equal temperament:
-- Maintains just-intonation distinctions
-- Has infinite, unbounded geometry
-- Same letter name appears multiple times
-
-## Geometric Properties
-
-### Surface Area
-The torus surface contains:
-- 12 pitch-class nodes
-- 24 triadic regions (triangles)
-- 36 edges connecting nodes
-
-### Triadic Navigation
-On the torus:
-- Every triad has exactly 3 PLR neighbors
-- LP cycles trace "longitudinal" loops
-- PR cycles trace "latitudinal" loops
-- LR spirals around the torus
-
-### Homotopy
-Paths on the torus can be classified by:
-- How many times they wind around each axis
-- Whether they return to starting point
-- These correspond to transformation cycles
-
-## Visualization
-
-### Flat Torus Representation
 The torus can be visualized as a rectangle with opposite edges identified:
-```
-A--E--B--F#--C#--G#--D#--A#--F--C--G--D--A
-|  |  |   |   |   |   |   |  |  |  |  |  |
-F--C--G--D--A--E--B--F#--C#--G#--D#--A#--F
-|  |  |   |   |   |   |   |  |  |  |  |  |
-Db-Ab-Eb--Bb--F--C--G--D--A--E--B--F#--Db
-|  |  |   |   |   |   |   |  |  |  |  |  |
-A--E--B--F#--C#--G#--D#--A#--F--C--G--D--A
-```
-Top edge connects to bottom; left edge connects to right.
+- Top edge connects to bottom edge (closing the third axis)
+- Left edge connects to right edge (closing the fifth axis)
 
-### 3D Embedding
-The torus can be embedded in 3D space:
-- Major donut shape
-- Pitch classes as points on the surface
-- Triads as triangular regions
+Mathematically: Torus = S^1 x S^1, where each S^1 is a circle generated by one of the cyclic interval classes.
 
-## Analytical Implications
+On this surface:
+- Every triad has exactly 3 PLR neighbors
+- LP cycles trace "longitudinal" loops (hexatonic tubes)
+- PR cycles trace "latitudinal" loops (octatonic bands)
 
-### Finite Group Action
-On the conforming torus:
-- The PLR group has order 24
-- Acts on exactly 24 triads
+# Context & Application
+
+The toroidal Tonnetz is the default model in modern neo-Riemannian theory. It is preferred because:
+- The PLR group has order 24 and acts cleanly on exactly 24 triads
 - All operations are well-defined and closed
+- Cycles (hexatonic, octatonic) close naturally
+- It matches contemporary musical practice (equal temperament)
 
-### No "Edge" Effects
-Unlike the infinite plane:
-- No boundary to the space
-- Every triad equivalent in position
-- Cycles close naturally
+Cohn (Ch. 11) uses it extensively in analyses of Schumann, Wagner, and Chopin, demonstrating how triadic progressions trace paths on this surface.
 
-### Hexatonic "Tubes"
-Hexatonic systems appear as:
-- Cylindrical regions on the torus
-- 4 non-overlapping tubes
-- LP motion stays within one tube
+# Examples
 
-## Comparison with Other Representations
+When three generating intervals are used simultaneously (IC3, IC4, IC5), as discussed by Gollin, the space becomes a 3-torus (hypertorus). Hostinsky (1879), Krumhansl, Hyer, and Cohn all worked with such three-axis representations (Ch. 11).
 
-### Chicken-Wire Torus
-The graph of PLR connections:
-- Vertices = triads
-- Edges = P, L, or R relations
-- Embedding on torus = chicken-wire pattern
+Cohn's analysis of the Faith Proclamation in Wagner's Parsifal (Act I Prelude) demonstrates how LP cycling traces paths through hexatonic tubes on the toroidal surface, with octatonic connections serving as bridges between tubes (Ch. 11).
 
-### Dual Representations
-- **Pitch-class torus**: 12 nodes (pitches)
-- **Triadic torus**: 24 nodes (triads)
-- These are geometric duals
+# Relationships
 
-## Historical Development
+## Builds Upon
+- tonnetz (the toroidal version is a specific realization)
+- enharmonic-equivalence (required for the wrapping)
 
-### From Plane to Torus
-The transition reflects:
-- 19th century: Just intonation assumed (plane)
-- Late 19th century: Equal temperament normalizing
-- 20th century: Torus embraced for analytical convenience
+## Enables
+- hexatonic-systems (appear as tubes on the torus)
+- octatonic-systems (appear as bands on the torus)
+- plr-transformations (group of order 24 acts on the 24 triadic regions)
 
-### Neo-Riemannian Adoption
-Modern theory prefers the torus:
-- Finite, tractable space
-- Group actions well-behaved
-- Matches contemporary musical practice
+## Related
+- geometric-duals (the pitch-class torus and triadic torus are duals of each other)
 
-## Three-Axis Hypertorus
+## Contrasts With
+- nonconforming-tonnetz (the infinite-plane version under just intonation)
 
-### Gollin's Extension
-When three generating intervals are used (IC3, IC4, IC5):
-- The space becomes a 3-torus (hypertorus)
-- Additional structure emerges
-- More complex navigation possible
+# Common Errors
 
-### Research Frontier
-Multidimensional Tonnetze remain an active area of theoretical research.
+- **Error**: Confusing the torus with a sphere
+  **Correction**: A torus has a hole (like a donut); a sphere does not. The Tonnetz is toroidal because it is the product of two independent cycles.
 
-## Related Concepts
+# Common Confusions
 
-- **Prerequisite**: tonnetz, enharmonic-equivalence
-- **Leads to**: hexatonic-systems, plr-transformations
-- **See also**: voice-leading-graph, regional-space
+- **Confusion**: The toroidal Tonnetz is "more correct" than the planar version
+  **Clarification**: "Conforming" refers to conformity with equal temperament, not correctness; both models are valid for different analytical purposes
 
-## Common Confusions
+- **Confusion**: The torus is a 3D object
+  **Clarification**: The torus is a 2D surface that can be embedded in 3D space; the intrinsic dimensionality is 2
 
-- **Torus vs. sphere**: A torus has a hole; a sphere doesn't. The Tonnetz is toroidal, not spherical.
-- **Conforming doesn't mean "correct"**: Both plane and torus are valid models for different purposes
-- **Still 2D**: The torus is a 2D surface, just embedded in 3D space
+# Source Reference
 
-## Source References
+Gollin, Edward. "From Acoustical to Metaphorical: The Tonnetz from Oettingen to Riemann." In *The Oxford Handbook of Neo-Riemannian Music Theories*, edited by Edward Gollin and Alexander Rehding. Oxford University Press, 2011. Chapter 9.
 
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 9: Edward Gollin, "From Acoustic to Metaphorical"
-- Ch 11: Richard Cohn, "Tonnetz as Analytical Apparatus"
-- Harrison, "Nonconformist Notions of Nineteenth-Century Enharmonicism" (2002)
+Cohn, Richard. Chapter 11 (analytical applications on the conforming Tonnetz).
+
+Harrison, Daniel. "Nonconformist Notions of Nineteenth-Century Enharmonicism" (2002) — source of the conforming/nonconforming terminology.
+
+# Verification Notes
+
+Re-extracted from v2 card; preserved: mathematical description (S^1 x S^1), surface area counts (12 nodes, 24 triangles, 36 edges), hexatonic tubes concept, 3-torus extension. High confidence: explicitly discussed by Gollin (Ch. 9) and Cohn (Ch. 11), with Harrison's terminology widely used.

@@ -1,152 +1,127 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Common-Tone Relationships
-category: theory
-pdf_page: null
-chapter_number: null
-unit: null
+slug: common-tone-relationships
+
+# === CLASSIFICATION ===
+category: harmony
+subcategory: voice-leading and pitch retention
+tier: foundational
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Klangvertretung & Tone Representation"
-authors: "Clark"
+source_slug: neo-riemannian-handbook
+authors: "Suzannah Clark"
+chapter: "On the Imagination of Tone in Schubert's Liedesend"
+chapter_number: 10
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "common tones"
+  - "shared pitch classes"
+  - "pitch-class retention"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - plr-transformations
+  - klangvertretung
+  - tonal-imagination
+  - hexatonic-systems
+  - maximally-smooth-cycles
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are common-tone relationships and why do they matter?"
+  - "How do common tones relate to PLR transformations?"
 ---
 
-# Common-Tone Relationships
+# Quick Definition
 
-## Quick Definition
+The pitch classes shared between two chords, serving as a fundamental measure of harmonic proximity in neo-Riemannian theory and the basis for parsimonious voice leading, with each pitch class participating in exactly six triads (three major, three minor).
 
-The pitch classes shared between two chords, serving as a fundamental measure of harmonic proximity and the basis for parsimonious voice leading in neo-Riemannian theory.
+# Core Definition
 
-## Formal Definition
+**Common tones** are pitch classes that appear in both chords of a harmonic progression. In neo-Riemannian theory, common-tone count is a primary measure of harmonic proximity: P, L, and R each preserve 2 of 3 tones (the maximum possible for distinct triads), making them "maximally parsimonious." Clark (Ch. 10) emphasizes that common tones are not merely shared pitches but are sites of **Klangvertretung transformation**: when a tone is retained across a chord change, its triadic identity (root, third, or fifth) may shift, and this shift is the mechanism of tonal imagination. Each pitch class participates in exactly 6 triads (as root, third, or fifth of 3 major and 3 minor triads), a fact that Cohn (Ch. 11) uses to derive the structure of the Tonnetz and that Kopp used to derive his complete transformation system.
 
-**Common tones** are pitch classes that appear in both chords of a harmonic progression:
-- C major (C-E-G) and A minor (A-C-E) share {C, E} = 2 common tones
-- C major and G major share {G} = 1 common tone
-- C major and F# major share {} = 0 common tones
+# Prerequisites
 
-### Relationship to PLR Transformations
+Foundational concept with no technical prerequisites.
 
-| Transformation | Common Tones | Which Tones |
-|----------------|--------------|-------------|
-| P (Parallel) | 2 | Root and fifth |
-| L (Leittonwechsel) | 2 | Third and fifth |
-| R (Relative) | 2 | Root and third |
-| Fifth relation (LR) | 1 | One pitch class |
-| Tritone relation | 0 | None |
+# Key Properties
 
-## Theoretical Significance
+1. **Maximum for triads**: Two common tones is the maximum possible between distinct triads (achieved by P, L, R)
+2. **Six triads per pitch**: Each pitch class appears in exactly 6 triads (3 major, 3 minor), corresponding to its 3 possible roles (root, third, fifth) in each mode
+3. **Inversely related to voice-leading distance**: More common tones = less voice-leading motion required
+4. **Site of identity transformation**: Common tones undergo Klangvertretung shifts (change of triadic role) across chord changes
+5. **Basis for parsimony**: Neo-Riemannian parsimony is defined by maximizing common tones
 
-### Basis for Parsimony
-Common tones enable smooth voice leading:
-- Shared tones remain stationary
-- Only non-common tones move
-- More common tones = smoother progression
+# Construction / Recognition
 
-### Cohn's Framework
-Richard Cohn privileges transformations preserving maximum common tones:
-- P, L, R all preserve 2 common tones
-- These are "maximally parsimonious" for triads
-- Other transformations are understood as compounds
+Common-tone count between triads:
 
-### Alternative to Root Motion
-Traditional theory emphasizes root relationships:
-- "Progression by fifth" (C to G)
-- "Progression by third" (C to E)
+| Transformation | Common Tones | Moving Voice |
+|----------------|-------------|-------------|
+| P (Parallel) | 2 (root, fifth) | Third moves by semitone |
+| L (Leittonwechsel) | 2 (third, fifth) | Root moves by semitone |
+| R (Relative) | 2 (root, third) | Fifth moves by whole step |
+| Fifth relation (LR) | 1 | Two voices move |
+| Tritone relation | 0 | All voices move |
 
-Common-tone theory emphasizes:
-- "Two common tones" (P, L, or R)
-- "One common tone" (various)
-- "No common tones" (tritone relations)
+The six triads containing pitch class A: A major (A as root), A minor (A as root), F major (A as third), F# minor (A as third), D major (A as fifth), D minor (A as fifth).
 
-## Six Triads from One Tone (Klangvertretung)
+# Context & Application
 
-### The Complete Set
-Given any pitch class (e.g., A), exactly six triads contain it:
-1. A as root of major (A major: A-C#-E)
-2. A as root of minor (A minor: A-C-E)
-3. A as third of major (F major: F-A-C)
-4. A as third of minor (F# minor: F#-A-C#)
-5. A as fifth of major (D major: D-F#-A)
-6. A as fifth of minor (D minor: D-F-A)
+Clark uses common-tone analysis to trace how individual pitches undergo triadic-identity transformation across Schubert's Lieder (Ch. 10). A sustained pitch serves as a common tone across multiple chord changes, but its meaning (as root, third, or fifth) shifts with each new harmonic context. This approach enriches standard neo-Riemannian chord-level analysis by revealing tone-level structural threads.
 
-### Transformation Relationships
-These six triads are related by PLR operations:
-- A major ↔ A minor (P)
-- A major ↔ F# minor (L)
-- A major ↔ F major (R)
-- etc.
+Cohn (Ch. 11) uses common-tone preservation as a defining feature of PLR transformations and as the basis for constructing the Tonnetz: edges connect pitch classes that form consonant dyads (and hence can be common tones in triadic progressions).
 
-### Kopp's Derivation
-David Kopp derived his complete transformation system from this six-triad configuration, showing that all common-tone-preserving operations appear among these relationships.
+# Examples
 
-## Common Tones in Analysis
+Clark's analysis of Schubert Lieder (Ch. 10): A single pitch persists across distant modulations, its triadic identity transforming at each chord change. The analysis traces the pitch through all possible triadic roles, revealing structural coherence invisible at the chord level alone.
 
-### Schubert Analysis (Clark)
-Suzannah Clark's analyses trace common tones through songs:
-- A single pitch persists across key changes
-- Its triadic function transforms (Klangvertretung)
-- Common-tone threads provide coherence
+Cohn (Ch. 11): On the Tonnetz, P, L, and R correspond to moving between adjacent triangles that share an edge (2 common tones). The shared edge represents the retained dyad; the third vertex changes.
 
-### Example: Gretchens Bitte
-- The pitch Db/C# appears throughout
-- Opens as third of Bb minor
-- Transforms through all six possibilities
-- Provides unity despite distant modulations
+# Relationships
 
-### Formal Significance
-Common tones can mark:
-- Pivot points in modulation
-- Structural pitches (Schenkerian Kopfton)
-- Motivic connections across sections
+## Builds Upon
+(foundational concept)
 
-## Mathematical Formalization
+## Enables
+- plr-transformations (defined by maximizing common tones)
+- maximally-smooth-cycles (cycles that retain maximum common tones at each step)
+- klangvertretung (common tones are the sites of triadic-identity transformation)
 
-### Set-Theoretic View
-Common tones = intersection of pitch-class sets:
-- C major = {0, 4, 7}
-- A minor = {9, 0, 4}
-- Intersection = {0, 4} = 2 common tones
+## Related
+- tonal-imagination (common-tone identity shifts are the mechanism of tonal imagination)
+- hexatonic-systems (LP cycles maximize common-tone retention throughout)
 
-### Maximum Common Tones
-For triads, maximum common tones = 2 (P, L, R achieve this)
-For larger sets:
-- Seventh chords: max 3 common tones
-- [0148]: max 3 common tones with triads
+## Contrasts With
+(none specific)
 
-### DOUTH2 Generalization
-Douthett's DOUTH2 relation captures when:
-- 2 tones fixed
-- 2 tones move by semitone
-This generalizes common-tone logic to larger sets.
+# Common Errors
 
-## Historical Perspective
+- **Error**: Assuming common tones are analytically passive (merely "held over")
+  **Correction**: Clark shows that common tones are analytically active — their changing triadic identity is a primary source of musical meaning
 
-### 19th-Century Recognition
-Theorists recognized common tones' importance:
-- Hauptmann: Common-tone connections ground tonality
-- Oettingen: Classified relationships by shared tones
-- Riemann: Developed Klangvertretung systematically
+# Common Confusions
 
-### Neo-Riemannian Emphasis
-Modern theory foregrounds common tones:
-- Voice-leading parsimony as organizing principle
-- Geometric models (Tonnetz) visualize common-tone relationships
-- Transformation groups built on common-tone operations
+- **Confusion**: More common tones always means a "closer" or "better" progression
+  **Clarification**: Common-tone count measures one dimension of proximity (voice-leading parsimony), not harmonic function or aesthetic quality; V-I has only 1 common tone but is the strongest functional progression
 
-## Related Concepts
+# Source Reference
 
-- **Prerequisite**: triad, pitch-class, voice-leading
-- **Leads to**: plr-transformations, klangvertretung, parsimonious-trichords
-- **See also**: chromatic-transformation-networks, tonnetz
+Clark, Suzannah. "On the Imagination of Tone in Schubert's Liedesend." In *The Oxford Handbook of Neo-Riemannian Music Theories*, edited by Edward Gollin and Alexander Rehding. Oxford University Press, 2011. Chapter 10.
 
-## Common Confusions
+Cohn, Richard. Chapter 11 (common-tone basis for Tonnetz construction and PLR definition).
 
-- **Common tones vs. common-tone modulation**: Common tones describe any shared pitches; common-tone modulation is a specific technique
-- **Inversional equivalence**: Common-tone counts don't account for voicing or register
-- **Enharmonic consideration**: C# and Db are "common" in equal temperament but may be analytically distinct
+# Verification Notes
 
-## Source References
-
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 10: Suzannah Clark, "Klangvertretung"
-- Ch 11: Richard Cohn, "Tonnetz as Analytical Apparatus"
-- Ch 12: Nora Engebretsen, "Harmonieschritte"
-- Kopp, *Chromatic Transformations in Nineteenth-Century Music* (2002)
+Re-extracted from v2 card; preserved: six-triads-per-pitch enumeration, PLR common-tone table, Clark's Schubert analysis reference, Kopp derivation mention. Chapter attribution corrected: primary treatment is in Clark Ch. 10, with additional discussion in Cohn Ch. 11. High confidence: explicitly discussed in both chapters.

@@ -1,148 +1,118 @@
 ---
-concept: "Lerdahl's Tonal Pitch Space"
-category: analysis
-pdf_page: null
-chapter_number: null
-unit: null
+# === CORE IDENTIFICATION ===
+concept: Tonal Pitch Space
+slug: tonal-pitch-space
+
+# === CLASSIFICATION ===
+category: pitch-space
+subcategory: hierarchical tonal models
+tier: advanced
+
+# === PROVENANCE ===
 source: "The Oxford Handbook of Neo-Riemannian Music Theories"
-chapter: "Tonnetz as Analytical Apparatus"
-authors: "Cohn"
+source_slug: neo-riemannian-handbook
+authors: "Richard Cohn"
+chapter: "Tonal Pitch Space and the (Neo-)Riemannian Tonnetz"
+chapter_number: 11
+pdf_page: null
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "TPS"
+  - "Lerdahl's Tonal Pitch Space"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites: []
+extends: []
+related:
+  - tonnetz
+  - regional-space
+contrasts_with:
+  - tonnetz
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is Tonal Pitch Space and how does it differ from the Tonnetz?"
+  - "How does the Tonnetz connect pitch space to key space?"
 ---
 
-# Lerdahl's Tonal Pitch Space
+# Quick Definition
 
-## Quick Definition
+Fred Lerdahl's hierarchical model of tonal organization comprising three distinct levels (pitch-class space, chord space, and regional space), each with its own distance metric, which Cohn engages as a critical counterpoint to the Tonnetz's unified spatial representation.
 
-Fred Lerdahl's hierarchical model of tonal organization comprising three distinct levels (pitch-class, chord, and regional spaces), each with its own distance metric, offered as a contrast to the Tonnetz's unified representation.
+# Core Definition
 
-## Formal Definition
+**Tonal Pitch Space** (TPS), developed by Fred Lerdahl in his 2001 book of the same name, proposes three hierarchically distinct spatial levels for modeling tonal relationships: (1) **pitch-class space** (chromatic proximity), (2) **chordal space** (triadic relationships measured by voice-leading and common-tone counts), and (3) **regional space** (key relationships measured by shared pitch content). Each level has its own structure and distance metric. Cohn (Ch. 11) engages Lerdahl's model as a critical foil for the Tonnetz, arguing against Lerdahl's claim that "the three levels of tonal space do not correspond to one another" and that their "homology" in the Riemannian Tonnetz "is misleading." Cohn's counter-argument is that a single Tonnetz naturally represents all three levels through what he calls **mutual implication**: pitch classes are nodes, chords are triangles grouping nodes, and regions are parallelograms grouping triangles.
 
-**Tonal Pitch Space** (TPS) is Lerdahl's comprehensive model from his 2001 book, which proposes:
+# Prerequisites
 
-### Three Hierarchical Levels
+Foundational concept in this context (Lerdahl's system provides the critical interlocutor for Cohn's argument).
 
-**1. Pitch-Class Space (Chromatic)**
-- All 12 pitch classes arranged by proximity
-- Primarily a chromatic/diatonic circle
-- Distance measured in semitones or scale steps
+# Key Properties
 
-**2. Chordal Space**
-- All triads (and optionally seventh chords)
-- Distance based on voice-leading and common-tone relationships
-- Organized around a circle of fifths with mode distinction
+1. **Three separate levels**: Pitch-class, chord, and regional spaces, each with distinct structures
+2. **Hierarchical embedding**: Stability measured by level of embedding in the hierarchy
+3. **Distance formula**: Chord distance delta = i + j + k (non-common tones + fifth-distance + mode change)
+4. **Regional determination required**: Every event must be assigned to a key for the model to work
+5. **Cognitive grounding**: Designed to model tonal cognition and perception, not transformation
 
-**3. Regional Space**
-- All 24 major and minor keys
-- Distance based on shared pitch content
-- Organized as a toroidal structure
+# Construction / Recognition
 
-### Basic Space
-Lerdahl's **basic space** is a reduction showing:
-- Current pitch-class collection
-- Current chord (as subset)
-- Current key (as reference point)
+Lerdahl's **basic space** is a hierarchical reduction showing:
+- Current pitch-class collection (chromatic level)
+- Current chord as a subset (chordal level)
+- Current key as reference point (regional level)
 
-Stability is measured by **level of embedding** in this hierarchy.
+Distance between chords combines: circle-of-fifths distance between roots (j), mode change penalty (k), and non-common-tone count (i).
 
-## Distance Metrics
+# Context & Application
 
-### Chord Distance (δ)
-Lerdahl's chord distance calculation includes:
-1. **j**: Number of steps on circle of fifths between roots
-2. **k**: Change in chord type (major/minor)
-3. **i**: Non-common tones between chords
+Cohn presents TPS as the principal challenge to the Tonnetz's unified representation. The debate matters because it concerns whether a single spatial model can represent pitch, chord, and key relations, or whether these require separate formalisms. Cohn argues for the Tonnetz's greater parsimony and its ability to handle regionally indeterminate passages (where TPS requires a key assignment that may be analytically premature). However, Cohn also proposes a "pragmatic solution" and "hybrid spatial model" that draws on both traditions for analytical applications.
 
-Formula: δ = i + j + k
+# Examples
 
-### Regional Distance
-Similar calculation for keys:
-- Fifth-circle distance between tonics
-- Mode change penalty
-- Scale-degree difference counting
+Cohn illustrates the debate with analyses of Schumann, Wagner, and Chopin (Ch. 11). For regionally determinate passages, both TPS and the Tonnetz can produce valid analyses. But for passages like the Faith Proclamation in Wagner's Parsifal, where triadic progressions resist key assignment, Cohn argues the Tonnetz provides coherent analysis while TPS demands premature regional determination.
 
-### Aggregate Distance
-Total tonal distance sums:
-- Event-to-event chord changes
-- Regional implications
-- Weighted by structural importance
+Cohn's comparison: In TPS, the fifth relation (I to V) is "close" by the distance formula; in the Tonnetz, it requires a compound transformation (LR). Conversely, the LP relation (maximally smooth voice leading) is "close" on the Tonnetz but receives no special status in TPS.
 
-## Cohn's Critique
+# Relationships
 
-### The Conflation Argument
-Richard Cohn challenges Lerdahl's separation:
+## Builds Upon
+(external model introduced as interlocutor)
 
-**Lerdahl**: Pitch-class, chord, and regional spaces are distinct structures requiring separate representations.
+## Enables
+- Hybrid analytical approaches combining TPS and Tonnetz insights
 
-**Cohn**: A single Tonnetz can represent all three levels:
-- Pitch classes are nodes
-- Chords are triangles (groupings of nodes)
-- Regions are parallelograms (groupings of triangles)
+## Related
+- tonnetz (the model Cohn advocates as an alternative to TPS)
+- regional-space (the level of TPS that Cohn shows can be derived from the Tonnetz)
 
-### Mutual Implication
-Cohn argues these levels **mutually imply** each other:
-- Knowing any two levels determines the third
-- Separate representations are redundant
-- The Tonnetz is more parsimonious
+## Contrasts With
+- tonnetz (Lerdahl argues they are fundamentally different; Cohn argues the Tonnetz subsumes TPS)
 
-### Counterexample Cases
-Lerdahl's model handles:
-- Clear tonal passages with established keys
-- Hierarchically structured music
-- Pieces following conventional harmonic progressions
+# Common Errors
 
-But Cohn argues it struggles with:
-- Regionally indeterminate passages
-- Chromatic sequences without clear tonal center
-- Late Romantic and early modernist repertoire
+- **Error**: Assuming TPS and the Tonnetz are incompatible
+  **Correction**: Cohn proposes a hybrid model; TPS and Tonnetz can be complementary, each illuminating different aspects of the music
 
-## Points of Agreement
+# Common Confusions
 
-Both Lerdahl and Cohn acknowledge:
-- Voice-leading proximity is analytically significant
-- Chord relations can be modeled spatially
-- Regional relations exist at a higher structural level
-- Some form of distance metric is valuable
+- **Confusion**: TPS is "wrong" because Cohn critiques it
+  **Clarification**: Cohn's critique is that the Tonnetz does the same work more parsimoniously, not that TPS is incorrect; TPS is especially valuable for hierarchically structured tonal music
 
-## Comparison Table
+- **Confusion**: The Tonnetz replaces TPS entirely
+  **Clarification**: TPS handles regionally determinate music well; the Tonnetz excels at regionally indeterminate chromatic music; a hybrid approach is often best
 
-| Feature | Tonal Pitch Space | Tonnetz (Cohn) |
-|---------|-------------------|----------------|
-| Levels | 3 distinct | 1 unified |
-| Distance | Calculated formula | Path length |
-| Emphasis | Hierarchical embedding | Geometric position |
-| Tonality | Always regionally determined | Optionally indeterminate |
-| Application | Tonal music primarily | Chromatic music emphasis |
-| Theoretical basis | Cognition/linguistics | Geometry/group theory |
+# Source Reference
 
-## Integration Possibilities
+Cohn, Richard. "Tonal Pitch Space and the (Neo-)Riemannian Tonnetz." In *The Oxford Handbook of Neo-Riemannian Music Theories*, edited by Edward Gollin and Alexander Rehding. Oxford University Press, 2011. Chapter 11.
 
-### Complementary Use
-The models can be complementary:
-- TPS for establishing hierarchical relationships
-- Tonnetz for tracking chromatic voice leading
-- Each illuminates different aspects of the music
+Lerdahl, Fred. *Tonal Pitch Space*. Oxford University Press, 2001.
 
-### Hybrid Approaches
-Some analysts use:
-- TPS concepts (stability, distance) within Tonnetz framework
-- Tonnetz visualization with Lerdahl-style metrics
-- Multiple representations for different analytical questions
+# Verification Notes
 
-## Related Concepts
-
-- **Prerequisite**: tonnetz, voice-leading
-- **Leads to**: regional-space
-- **See also**: tonic-prolongation
-
-## Common Confusions
-
-- **TPS is not "wrong"**: Cohn's critique is that the Tonnetz does the same work more efficiently, not that TPS is incorrect
-- **Different purposes**: TPS was designed for cognitive modeling; Tonnetz for transformation tracking
-- **Levels are not independent**: Even in TPS, the levels interact hierarchically
-
-## Source References
-
-- Oxford Handbook of Neo-Riemannian Music Theories, Part 3
-- Ch 11: Richard Cohn, "Tonnetz as Analytical Apparatus"
-- Lerdahl, *Tonal Pitch Space* (2001)
-- Lerdahl & Jackendoff, *A Generative Theory of Tonal Music* (1983)
+Re-extracted from v2 card; preserved: three-level structure, distance formula, Cohn's conflation argument, comparison table content (restructured), hybrid approach discussion. High confidence: TPS is explicitly discussed and critiqued by Cohn as the central interlocutor in Ch. 11.
