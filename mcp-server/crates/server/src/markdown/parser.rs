@@ -140,10 +140,6 @@ pub fn extract_first_paragraph(content: &str, max_chars: usize) -> Option<String
 /// assert!(!text.contains("**"));
 /// assert!(!text.contains("["));
 /// ```
-#[expect(
-    dead_code,
-    reason = "utility function used in tests; planned for FTS snippet generation"
-)]
 pub fn extract_text_content(content: &str) -> String {
     let parser = Parser::new(content);
     let mut text = String::new();
