@@ -67,6 +67,10 @@ help:
 	@echo "  $(YELLOW)make clean$(RESET)            - Clean bin directory"
 	@echo "  $(YELLOW)make clean-all$(RESET)        - Full clean (cargo clean)"
 	@echo ""
+	@echo "$(GREEN)Cache Management:$(RESET)"
+	@echo "  $(YELLOW)make download-caches$(RESET)  - Download pre-built caches from GitHub"
+	@echo "  $(YELLOW)make package-caches$(RESET)   - Build indexes and package for distribution"
+	@echo ""
 	@echo "$(GREEN)Utilities:$(RESET)"
 	@echo "  $(YELLOW)make push$(RESET)             - Pushes to Codeberg and Github"
 	@echo "  $(YELLOW)make publish$(RESET)          - WIP: Publishes all crates to crates.io"
@@ -598,6 +602,22 @@ push:
 	@echo "$(CYAN)• Github:$(RESET)"
 	@git push github main && git push github --tags
 	@echo "$(GREEN)✓ Pushed$(RESET)"
+
+# Cache management
+.PHONY: package-caches
+package-caches: build-release-full
+	@echo "$(BLUE)Building all indexes...$(RESET)"
+	@$(BIN_DIR)/music-theory-mcp index --force
+	@$(BIN_DIR)/music-theory-mcp graph build
+	@$(BIN_DIR)/music-theory-mcp vectordb build --force
+	@echo "$(BLUE)Packaging caches...$(RESET)"
+	@$(BIN_DIR)/music-theory-mcp cache package all --output ./dist
+	@cd dist && for f in *.tar.gz; do shasum -a 256 "$$f" > "$$f.sha256"; done
+	@echo "$(GREEN)✓ Cache packages in ./dist/$(RESET)"
+
+.PHONY: download-caches
+download-caches:
+	@$(BIN_DIR)/music-theory-mcp cache download all
 
 # Build all configurations for comparison
 .PHONY: build-all

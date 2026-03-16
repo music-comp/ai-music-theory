@@ -11,3 +11,9 @@ reindex: build
 	@cd mcp-server && ./bin/music-theory-mcp index
 	@cd mcp-server && ./bin/music-theory-mcp graph build
 
+download-caches:
+	@cd mcp-server && make download-caches
+
+package-caches:
+	@cd mcp-server && make package-caches
+

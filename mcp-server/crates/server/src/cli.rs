@@ -87,6 +87,9 @@ pub enum Commands {
 
     /// Source management (scan, validate, aliases)
     Sources(SourcesCommands),
+
+    /// Cache management (download pre-built indexes, package for distribution)
+    Cache(CacheCommands),
 }
 
 /// Graph subcommands
@@ -145,6 +148,42 @@ pub enum VectordbSubcommand {
     Status,
 }
 
+/// Cache management subcommands.
+#[derive(Parser)]
+pub struct CacheCommands {
+    #[command(subcommand)]
+    command: CacheSubcommand,
+}
+
+/// Cache command operations.
+#[derive(Subcommand)]
+pub enum CacheSubcommand {
+    /// Download pre-built caches from GitHub releases
+    Download {
+        /// Which cache to download (graph, fts, vector, all)
+        #[arg(default_value = "all")]
+        backend: String,
+
+        /// Force re-download even if cache exists at current version
+        #[arg(long, short)]
+        force: bool,
+    },
+
+    /// Show status of local caches
+    Status,
+
+    /// Package local caches for distribution (CI use)
+    Package {
+        /// Which cache to package (graph, fts, vector, all)
+        #[arg(default_value = "all")]
+        backend: String,
+
+        /// Output directory for archives
+        #[arg(long, short, default_value = "./dist")]
+        output: String,
+    },
+}
+
 /// Handle the CLI command.
 ///
 /// Dispatches to the appropriate handler based on the command.
@@ -198,6 +237,8 @@ pub async fn handle_command(cli: Cli) -> Result<()> {
         Commands::Sources(sources_cmds) => {
             crate::sources::cli::handle_sources_command(sources_cmds, log_level).await
         }
+
+        Commands::Cache(cache_cmds) => handle_cache_command(cache_cmds, log_level).await,
     }
 }
 
@@ -687,6 +728,42 @@ async fn handle_vectordb_command(
             } else {
                 println!("Vector cache: not built");
                 println!("  Run `music-theory-mcp vectordb build` to create the index");
+            }
+            Ok(())
+        }
+    }
+}
+
+/// Handle cache subcommand.
+async fn handle_cache_command(
+    cache_cmds: CacheCommands,
+    log_level_override: Option<String>,
+) -> Result<()> {
+    let config = Config::load()?;
+    let opts = apply_log_level_override(&config.logging, log_level_override)?;
+    let _ = twyg::setup(opts);
+
+    match cache_cmds.command {
+        CacheSubcommand::Download { backend, force } => {
+            let backends = crate::cache::parse_backend_arg(&backend)?;
+            for b in &backends {
+                crate::cache::download_cache(b, &config, force)?;
+            }
+            Ok(())
+        }
+        CacheSubcommand::Status => {
+            let report = crate::cache::cache_status(&config)?;
+            println!("{report}");
+            Ok(())
+        }
+        CacheSubcommand::Package { backend, output } => {
+            let backends = crate::cache::parse_backend_arg(&backend)?;
+            let version = env!("CARGO_PKG_VERSION");
+            let base_path = config.paths.base_path()?;
+            let output_dir = std::path::PathBuf::from(output);
+            for b in &backends {
+                let path = crate::cache::package_cache(b, &base_path, &output_dir, version)?;
+                println!("Packaged: {}", path.display());
             }
             Ok(())
         }

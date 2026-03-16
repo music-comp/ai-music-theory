@@ -1,0 +1,86 @@
+name: Release Caches
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (e.g., v0.4.0)'
+        required: true
+
+jobs:
+  package-caches:
+    name: Build and Upload Cache Packages
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install Rust toolchain
+      uses: dtolnay/rust-toolchain@stable
+
+    - name: Cache Cargo registry
+      uses: actions/cache@v4
+      with:
+        path: ~/.cargo/registry
+        key: cargo-registry-${{ runner.os }}-${{ hashFiles('**/Cargo.lock') }}
+        restore-keys: |
+          cargo-registry-${{ runner.os }}-
+
+    - name: Cache Cargo git dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.cargo/git
+        key: cargo-git-${{ runner.os }}-${{ hashFiles('**/Cargo.lock') }}
+        restore-keys: |
+          cargo-git-${{ runner.os }}-
+
+    - name: Cache build artifacts
+      uses: actions/cache@v4
+      with:
+        path: mcp-server/target
+        key: cargo-target-release-${{ runner.os }}-${{ hashFiles('**/Cargo.lock') }}
+        restore-keys: |
+          cargo-target-release-${{ runner.os }}-
+
+    - name: Build release binary
+      run: |
+        cd mcp-server
+        cargo build --release --features full
+
+    - name: Build all indexes
+      run: |
+        cd mcp-server
+        ./target/release/music-theory-mcp index --force
+        ./target/release/music-theory-mcp graph build
+        ./target/release/music-theory-mcp vectordb build --force
+
+    - name: Package caches
+      run: |
+        cd mcp-server
+        ./target/release/music-theory-mcp cache package all --output ../dist
+
+    - name: Generate checksums
+      run: |
+        cd dist
+        for f in *.tar.gz; do
+          shasum -a 256 "$f" > "$f.sha256"
+        done
+        echo "Cache packages:"
+        ls -lh
+
+    - name: Upload to release
+      if: github.event_name == 'release'
+      uses: softprops/action-gh-release@v2
+      with:
+        files: dist/*
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Upload as artifact (for workflow_dispatch)
+      if: github.event_name == 'workflow_dispatch'
+      uses: actions/upload-artifact@v4
+      with:
+        name: cache-packages
+        path: dist/*

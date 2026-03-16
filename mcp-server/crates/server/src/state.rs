@@ -370,7 +370,10 @@ pub async fn initialize_fts(state: &Arc<AppState>) -> Result<()> {
         // Index already loaded during AppState::new()
         Ok(())
     } else {
-        log::info!("FTS index needs building - starting background task");
+        log::info!(
+            "FTS index needs building — starting background task. \
+             Tip: run `music-theory-mcp cache download fts` to use a pre-built index."
+        );
         start_background_indexing(Arc::clone(state));
         Ok(())
     }
@@ -415,8 +418,9 @@ pub async fn initialize_graph(state: &Arc<AppState>) -> Result<()> {
     let graph_path = data_dir.join("graphs").join("concept_graph.json");
 
     if !graph_path.exists() {
-        log::info!(
-            "Concept graph not found at {}. Run `music-theory-mcp graph build` to create it.",
+        log::warn!(
+            "Concept graph not found at {}. Run `music-theory-mcp cache download graph` \
+             to download pre-built graph, or `music-theory-mcp graph build` to build from source.",
             graph_path.display()
         );
         return Ok(());
@@ -532,7 +536,15 @@ pub async fn initialize_vector(state: &Arc<AppState>) -> Result<()> {
     let base = state.config.paths.base_path()?;
     let cache_dir = base.join(".cache").join("vector");
 
-    log::info!("Starting background vector index build");
+    let cache_file = cache_dir.join("vector-cache.json");
+    if cache_file.exists() {
+        log::info!("Starting background vector index build (using cached embeddings)");
+    } else {
+        log::info!(
+            "Starting background vector index build (no cache — this may take a while). \
+             Tip: run `music-theory-mcp cache download vector` to use pre-built embeddings."
+        );
+    }
     start_vector_building(Arc::clone(state), cache_dir);
     Ok(())
 }

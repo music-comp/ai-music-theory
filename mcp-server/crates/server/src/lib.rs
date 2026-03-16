@@ -3,6 +3,7 @@
 //! This module exposes the core functionality for integration testing
 //! and potential library usage.
 
+pub mod cache;
 pub mod cli;
 pub mod config;
 pub mod content;
