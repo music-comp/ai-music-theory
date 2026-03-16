@@ -1,47 +1,129 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Equal Temperament versus Just Intonation
-category: analysis
+slug: equal-temperament-versus-just-intonation
+
+# === CLASSIFICATION ===
+category: tuning-systems
+subcategory: temperament
+tier: advanced
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Tuning The Scale To Obtain Rational Intervals"
 chapter_number: 12
 pdf_page: 152
-authors: "David Wright"
-unit: null
+section: "Drawbacks of Unequal Temperament"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - ET vs JI
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - irrationality-of-equally-tempered-intervals
+  - just-intonation-scale
+  - drawbacks-of-unequal-temperament
+extends: []
+related:
+  - consonance-freedom-trade-off
+  - harmonic-freedom-and-modulation
+  - well-tempered-clavier
+  - natural-gravitation-toward-just-intonation
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What distinguishes just intonation from equal temperament?"
+  - "Why did equal temperament gain acceptance?"
 ---
 
 # Quick Definition
+
 Equal temperament won over just intonation and other unequal temperaments because it allows all keys to be equally (if imperfectly) tuned, enabling free modulation and harmonic variety at the cost of perfectly consonant intervals.
 
-# Formal Definition
-In equal temperament, all intervals of the same type have identical ratios regardless of the root note: every semitone is 2^(1/12), every fifth is 2^(7/12), every major third is 2^(1/3). All these ratios are irrational (by the irrationality theorem). In just intonation and other unequal temperaments, specific intervals are rational and perfectly consonant in some keys, but other keys have noticeably worse tuning. The trade-off is between local consonance (just intonation) and global uniformity (equal temperament).
+# Core Definition
 
-# Mathematical Context
-The fundamental tension is between three mathematical facts: (1) consonant intervals correspond to small-integer ratios; (2) small-integer ratios are irrational in equal temperament (by unique factorization); (3) no rational tuning system can produce uniform intervals across all keys (because powers of different primes never coincide). Equal temperament resolves (3) by accepting (2), distributing the comma of Pythagoras equally across all twelve fifths (~1.96 cents each) and accepting thirds that are ~14 cents sharp.
+The fundamental tension: in equal temperament, all intervals of the same type have identical (irrational) ratios regardless of root, while in just intonation, specific intervals are rational and perfectly consonant in some keys but other keys have poor tuning. Wright summarizes: "In the equally tempered scale, one has to accept sharp thirds and sevenths, but all chords of the same type are tuned precisely the same, regardless of their root relative to the key" (p. 158). The irrationality theorem proves that no equal-tempered interval (except octaves) is just.
 
-# Musical Context
-The gradual adoption of equal temperament enabled the rich harmonic language of the 18th-20th centuries. J. S. Bach's Well-Tempered Clavier (first half of 18th century) demonstrated equal temperament with 48 preludes and fugues in all 24 major and minor keys. Franz Liszt's Liebestraum extensively traverses the circle of fifths, modulates several times, and uses every chromatic root note -- music that would be impossible in fixed unequal temperament. A great deal of 19th and 20th century music is "deeply entrenched" in the harmonic freedom provided by equal temperament.
+# Prerequisites
+
+- **Irrationality of equally tempered intervals** -- Proves that ET intervals are never just
+- **Just intonation scale** -- The system ET replaced
+- **Drawbacks of unequal temperament** -- The problems that drove ET adoption
+
+# Key Properties
+
+1. ET: every semitone = 2^(1/12); all intervals uniform but irrational
+2. JI: intervals are rational; some are perfectly just but others are poor
+3. ET fifth: 700 cents vs. just fifth: 701.96 cents (~2 cents difference)
+4. ET major third: 400 cents vs. just major third: 386.31 cents (~14 cents difference)
+5. ET enables free modulation; JI is key-dependent
+6. Augmented/diminished chords exist only in ET (require irrational ratios)
+7. Flexible-pitch instruments naturally gravitate toward JI even in ET contexts
+
+# Construction / Recognition
+
+The trade-off is between local consonance and global uniformity:
+1. JI maximizes consonance for specific chords in specific keys
+2. ET distributes imperfection equally across all keys
+3. The comma of Pythagoras (~23.46 cents) in JI is spread as ~1.96 cents per fifth in ET
+4. The ~14 cent sharp third in ET is the price for key uniformity
+
+# Context & Application
+
+The gradual adoption of ET enabled the rich harmonic language of 18th-20th century Western music. Wright cites Bach's Well-Tempered Clavier (demonstrating all 24 keys) and Liszt's Liebestraum (traversing the full circle of fifths). Wright notes historians disagree whether Bach "was actually touting equal temperament or some other system quite close to equal temperament" (p. 159). JI remains the natural tuning for voices and unfretted strings.
 
 # Examples
-- Equal temperament: fifth = 700 cents in every key (vs. just fifth = 701.96 cents)
-- Equal temperament: major third = 400 cents (vs. just major third = 386.31 cents, ~14 cents sharp)
-- Bach's Well-Tempered Clavier: 48 pieces in all 24 keys, demonstrating equal temperament
-- Liszt's Liebestraum: extensive modulation requiring uniform tuning across keys
-- Augmented and diminished chords: only achievable in equal temperament (require irrational intervals)
 
-# Related Concepts
-- Irrationality of Equally-Tempered Intervals
-- Drawbacks of Unequal Temperament
-- Pythagorean Scale
-- Just Intonation Scale
-- Classical Mean-Tone Scale
-- Comma of Pythagoras
-- Natural Gravitation Toward Just Intonation
+**Example 1** (p. 158): ET fifth = 700 cents in every key vs. just fifth = 701.96 cents.
+
+**Example 2** (p. 158): ET major third = 400 cents vs. just major third = 386.31 cents (~14 cents sharp).
+
+**Example 3** (p. 159): Bach's Well-Tempered Clavier: 48 pieces in all 24 keys.
+
+**Example 4** (p. 159): Liszt's Liebestraum: extensive modulation requiring uniform tuning.
+
+**Example 5** (p. 149): Augmented and diminished chords require irrational intervals; they are "perhaps even a result of equal temperament."
+
+# Relationships
+
+## Builds Upon
+- **Irrationality of equally tempered intervals** -- The mathematical basis for ET's uniformity
+- **Drawbacks of unequal temperament** -- The problems ET solves
+
+## Related
+- **Consonance-freedom trade-off** -- The fundamental tension between the two systems
+- **Harmonic freedom and modulation** -- The capability ET enables
+- **Well-Tempered Clavier** -- The demonstration of ET's viability
+- **Natural gravitation toward just intonation** -- JI persists in flexible-pitch contexts
+
+# Common Errors
+
+- **Error**: Thinking ET is simply "better" than JI
+  **Correction**: Each optimizes different properties; JI gives better consonance in specific keys, ET gives key uniformity
 
 # Common Confusions
-- Bach's Well-Tempered Clavier may not actually have used true equal temperament -- historians debate whether Bach advocated equal temperament or a "well temperament" that was close but not identical
-- Equal temperament does not mean "perfect" -- all intervals except the octave are slightly out of tune
-- Just intonation is still used today by vocalists and string players who naturally gravitate toward pure intervals
-- The "victory" of equal temperament is specifically about fixed-pitch keyboard instruments; flexible-pitch instruments effectively use a hybrid approach
+
+- **Confusion**: Thinking Bach's Well-Tempered Clavier proves he used true equal temperament
+  **Clarification**: Historians debate whether Bach used true ET or a "well temperament" that was close but not identical
+
+- **Confusion**: Thinking JI is obsolete
+  **Clarification**: JI is still used today by vocalists and string players who naturally gravitate toward pure intervals; ET applies specifically to fixed-pitch keyboard instruments
 
 # Source Reference
+
 Chapter 12: "Tuning The Scale To Obtain Rational Intervals," pp. 158-159.
+
+# Verification Notes
+
+- Definition source: Synthesized from pp. 158-159
+- Confidence rationale: High -- extensive discussion with examples and quotes
+- Uncertainties: None
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: Bach historiographical caveat, Liszt example, augmented/diminished observation, flexible-pitch caveat

@@ -1,41 +1,121 @@
 ---
-concept: M on N Polyrhythmic Patterns
-category: application
+# === CORE IDENTIFICATION ===
+concept: M-on-N Polyrhythmic Patterns
+slug: m-on-n-polyrhythmic-patterns
+
+# === CLASSIFICATION ===
+category: algebra-in-music
+subcategory: number-theory
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Algebraic Properties of the Integers"
 chapter_number: 8
 pdf_page: 100
-authors: "David Wright"
-unit: null
+section: "Patterns of m on n in Music"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "m on n patterns"
+  - "polyrhythm"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - greatest-common-divisor
+  - relatively-prime-integers
+extends:
+  - generating-interval
+related:
+  - cyclic-group-and-generator
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do m-on-n polyrhythmic patterns work mathematically?"
+  - "Why does a 3-on-4 pattern take 12 beats to complete?"
 ---
 
 # Quick Definition
-A compositional technique where a pattern of $m$ notes or beats is superimposed against a pattern of $n$, exploiting the mathematical fact that when $\gcd(m, n) = 1$, the combined pattern takes exactly $mn$ units to complete its cycle.
 
-# Formal Definition
-An m-on-n pattern occurs when a cycle of $m$ elements (pitches, rhythmic figures) is repeated against a cycle of $n$ elements (beats, rhythmic groups). When $\gcd(m, n) = 1$, the element $[m]$ is a generator of $\mathbb{Z}_n$ (and $[n]$ is a generator of $\mathbb{Z}_m$), ensuring that the double pattern completes after exactly $m \times n$ units and not before. Each cycle of $m$ starts on a different element of $\mathbb{Z}_n$, exhausting all $n$ possibilities.
+A compositional technique where a pattern of $m$ elements is superimposed against a pattern of $n$ elements. When $\gcd(m, n) = 1$, the combined pattern takes exactly $m \times n$ units to complete, creating musical tension and fulfillment.
 
-# Mathematical Context
-The pattern works because $\gcd(m, n) = 1$ implies $[m]$ generates $\mathbb{Z}_n$. Labeling beat positions $1, 2, \ldots, mn$ and marking every $m$th position, the sequence of positions modulo $n$ is $[m], [2m], [3m], \ldots, [nm] = [0]$, which runs through all of $\mathbb{Z}_n$ before repeating. There is perfect symmetry: viewing the pattern from either cycle's perspective yields the same analysis with $m$ and $n$ swapped.
+# Core Definition
 
-# Musical Context
-Composers use m-on-n patterns to create musical tension and a sense of fulfillment when the double cycle completes. The technique is a form of polyrhythm, fundamentally different from tuplets. It gives the listener the choice of counting beats in groups of $m$ or $n$, creating rhythmic ambiguity and interest.
+"Composers sometimes create ingenious musical passages by imposing a pattern of $m$ notes or beats against a pattern of $n$ such, where $\gcd(m, n) = 1$. This technique exploits (perhaps unknowingly by the composer) the fact that $[m]$ is a generator in $\mathbb{Z}_n$ (and vice versa)" (Wright, Ch. 8, p. 106). The double pattern completes after exactly $m \times n$ units and not before.
+
+# Prerequisites
+
+- **Greatest Common Divisor** -- The technique depends on $\gcd(m, n) = 1$
+- **Relatively Prime Integers** -- Coprimality ensures full cycle completion
+
+# Key Properties
+
+1. Requires $\gcd(m, n) = 1$ for the full effect
+2. The double pattern completes after exactly $mn$ units
+3. Each $m$-cycle starts on a different element of $\mathbb{Z}_n$
+4. Perfect symmetry: the pattern can be analyzed from either cycle's perspective
+5. This polyrhythm is fundamentally different from tuplets
+
+# Construction / Recognition
+
+## How the pattern works mathematically:
+1. Label beat positions $1, 2, \ldots, mn$
+2. Every $m$th position marks a cycle point
+3. The sequence of positions modulo $n$ is $[m], [2m], [3m], \ldots, [nm] = [0]$
+4. Since $\gcd(m, n) = 1$, $[m]$ generates $\mathbb{Z}_n$, so all elements appear
+5. The cycles align again only at position $mn$
+
+# Context & Application
+
+Composers use m-on-n patterns to create tension and a sense of fulfillment when the double cycle completes. The technique gives the listener the choice of counting beats in groups of $m$ or groups of $n$, creating rhythmic ambiguity.
 
 # Examples
-- **"In the Mood"** (3 on 4): three pitches ($C_4$, $E_4^\flat$, $A_4^\flat$) cycled through a four-eighth-note rhythmic pattern. Both cycles complete together at 12 eighth notes ($3 \times 4$), not before. The multiples of $[3]$ in $\mathbb{Z}_4$ are $[3], [2], [1], [0]$, exhausting all elements.
-- **"Rhapsody in Blue"** (3 on 5): three pitches ($D_4^\sharp$, $D_4$, $C_4^\sharp$) against a five-note rhythmic figure. Double pattern completes after $15$ notes ($3 \times 5$), spanning three measures.
-- **"Ain't No Sunshine"** (3 on 16): a rhythmic figure of 3 sixteenth notes repeated in 4/4 time (16 sixteenth notes per measure). The pattern runs for $48$ sixteenth notes ($3 \times 16$) = 3 measures before both cycles restart.
 
-# Related Concepts
-- Greatest Common Divisor
-- Relatively Prime Integers
-- Cyclic Group and Generator
-- GCD Condition for Generators
+**Example 1** (p. 106): "In the Mood" -- 3 on 4. Three pitches ($C_4$, $E_4^\flat$, $A_4^\flat$) cycled through a four-eighth-note swing rhythm. Both cycles complete at 12 eighth notes. The multiples of $[3]$ in $\mathbb{Z}_4$ are $[3], [2], [1], [0]$, exhausting all elements.
+
+**Example 2** (p. 107): "Rhapsody in Blue" -- 3 on 5. Three pitches ($D_4^\sharp$, $D_4$, $C_4^\sharp$) against a five-note rhythmic figure. Completes after $3 \times 5 = 15$ notes, spanning three measures.
+
+**Example 3** (p. 107): "Ain't No Sunshine" -- 3 on 16. A rhythmic figure of 3 sixteenth notes repeated in 4/4 time (16 sixteenth notes per measure). Runs for $3 \times 16 = 48$ sixteenth notes = 3 measures.
+
+# Relationships
+
+## Builds Upon
+- **Greatest Common Divisor** -- Pattern completion depends on $\gcd(m, n) = 1$
+- **Relatively Prime Integers** -- Coprimality is the essential condition
+
+## Enables
+- Compositional understanding of polyrhythmic techniques
+
+## Related
+- **Cyclic Group and Generator** -- $[m]$ generating $\mathbb{Z}_n$ underlies the pattern
+
+# Common Errors
+
+- **Error**: Assuming any $m$-on-$n$ pattern takes $mn$ units
+  **Correction**: If $\gcd(m, n) > 1$, the pattern completes in fewer than $mn$ units
 
 # Common Confusions
-- The m-on-n technique requires $\gcd(m, n) = 1$ to work fully; if $\gcd(m, n) > 1$, the pattern completes in fewer than $mn$ units
-- M-on-n patterns are distinct from tuplets (which subdivide beats unequally); polyrhythm here involves two independent cycles
-- The technique can involve pitch cycling against rhythm (as in "In the Mood") or rhythmic figure cycling against meter (as in "Ain't No Sunshine")
+
+- **Confusion**: Thinking m-on-n is the same as a tuplet
+  **Clarification**: Tuplets subdivide beats unequally; m-on-n polyrhythm involves two independent cycles running simultaneously
+
+- **Confusion**: Thinking the technique only works for pitch cycling
+  **Clarification**: It can involve pitch cycling against rhythm (as in "In the Mood") or rhythmic figure cycling against meter (as in "Ain't No Sunshine")
 
 # Source Reference
-Chapter 8, "Patterns of m on n in Music" section, p. 100 (PDF)
+
+Chapter 8: "Algebraic Properties of the Integers," "Patterns of m on n in Music" section, pp. 106-108.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 106-108
+- Confidence rationale: Explicit discussion with three detailed musical examples
+- Uncertainties: None
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: all three musical examples, mathematical analysis

@@ -1,39 +1,113 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Chipmunk Effect
-category: application
+slug: chipmunk-effect
+
+# === CLASSIFICATION ===
+category: harmonics-and-timbre
+subcategory: acoustics
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Timbre and Periodic Functions"
 chapter_number: 10
 pdf_page: 118
-authors: "David Wright"
-unit: null
+section: "Formants"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - formants
+  - effect-of-horizontal-stretching-on-pitch
+extends: []
+related:
+  - geometric-transformations-on-periodic-functions
+  - timbre-as-harmonic-amplitudes
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "Why does speeding up a recording sound unnatural?"
+  - "What is the chipmunk effect?"
 ---
 
 # Quick Definition
-The "chipmunk effect" is the unnatural sound produced when a recording is sped up, raising all frequencies proportionally and shifting the formants away from their natural positions, distorting the timbre beyond simply changing pitch.
 
-# Formal Definition
-When a recorded tone is played at a rate c times its original recording speed, the sound wave is compressed by factor c: f(t) becomes f(ct). This multiplies all frequencies by c, including the fundamental and all harmonics. The formants, which depend on fixed physical resonating chambers, are thereby shifted to c times their natural frequencies, destroying the original timbre.
+The "chipmunk effect" is the unnatural sound produced when a recording is sped up, which raises all frequencies proportionally -- including formants -- destroying the natural timbre. Slowing down produces a similarly unnatural dark, muddy sound.
 
-# Mathematical Context
-In the Fourier representation g(t) = C + sum d_k*sin(2*pi*F*k*t + beta_k), simple time-scaling to g(ct) changes F to cF while keeping all d_k and beta_k unchanged. The formant structure -- which determines which d_k values are large -- is preserved in the mathematical description but no longer matches the physical formant frequencies of the original source.
+# Core Definition
 
-# Musical Context
-Speeding up produces the familiar high-pitched, cartoonish "chipmunk" sound. Slowing down produces a dark, muddy sound. In both cases, the character of the music is "changed in a rather comical way." Modern studio technology can now transpose pitch while preserving formants (pitch-shifting without time-stretching), representing "a great triumph in signal analysis technology."
+"When a recorded tone is played at a different rate from which it was recorded, the sound wave is simply stretched or compressed over time, i.e., the frequency $F$ is changed, with all other parameters in (10.8) remaining unaltered. Thus the formants are not preserved, but rather shifted along with $F$" (Wright, Ch. 10, p. 134). "Speeding up recorded music produces the familiar 'chipmunk effect.' Music which is slowed down sounds dark and muddy. In either case the character of the music is changed in a rather comical way."
+
+# Prerequisites
+
+- **Formants** -- Understanding that formants are fixed frequency bands
+- **Effect of Horizontal Stretching on Pitch** -- Time-scaling multiplies all frequencies
+
+# Key Properties
+
+1. Simple time-scaling $f(ct)$ multiplies ALL frequencies by $c$, including formants
+2. The mathematical amplitudes $d_k$ remain unchanged, but the physical formant frequencies shift
+3. The formant structure no longer matches the original source
+4. Modern pitch-shifting can preserve formants -- "a great triumph in signal analysis technology"
+
+# Construction / Recognition
+
+## Why the chipmunk effect occurs:
+1. Recording played at speed $c$: $g(t) \to g(ct)$
+2. Fundamental changes: $F \to cF$
+3. All harmonics change: $kF \to ckF$
+4. Formant frequencies shift: center at $f_0 \to cf_0$
+5. The shifted formants no longer match the natural resonance of the original instrument/voice
+
+# Context & Application
+
+The chipmunk effect demonstrates that timbre is not simply determined by the mathematical amplitudes $d_k$ in the Fourier series; it also depends on the formant structure. Modern studio technology can transpose pitch while preserving formants, which is sophisticated signal processing.
 
 # Examples
-- Speeding up a male voice by factor 2: pitch rises an octave, formants shift up by an octave, voice sounds like a cartoon chipmunk
-- Slowing down music by factor 1/2: pitch drops an octave, formants shift down, sound becomes muddy and unnatural
-- Modern pitch-shifting algorithms: can change pitch while keeping formants intact, preserving natural character
 
-# Related Concepts
-- Formants
-- Effect of Horizontal Stretching on Pitch
-- Geometric Transformations on Periodic Functions
-- Timbre as Harmonic Amplitudes
+**Example 1** (p. 134): Speeding up a male voice by factor 2: pitch rises an octave, formants shift up by an octave, producing cartoon-like sound.
+
+**Example 2** (p. 134): Slowing down music by factor 1/2: pitch drops an octave, formants shift down, sound becomes muddy and unnatural.
+
+**Example 3** (p. 134): Modern pitch-shifting: can change pitch while keeping formants intact, preserving natural character.
+
+# Relationships
+
+## Builds Upon
+- **Formants** -- The fixed frequency bands that get shifted
+- **Effect of Horizontal Stretching on Pitch** -- The mathematical transformation
+
+## Related
+- **Geometric Transformations on Periodic Functions** -- Time-scaling is a horizontal transformation
+- **Timbre as Harmonic Amplitudes** -- Formant shifting changes the effective amplitudes
+
+# Common Errors
+
+- **Error**: Thinking speeding up a recording merely raises pitch
+  **Correction**: It also raises all formant frequencies, which is why the sound becomes unnatural
 
 # Common Confusions
-Students often think speeding up a recording merely raises the pitch. It also raises all formant frequencies, which is why the sound becomes unnatural rather than simply sounding like a higher-pitched version of the same instrument or voice. Preserving formants during pitch change requires sophisticated signal processing, not simple time-scaling.
+
+- **Confusion**: Thinking the mathematical description $g(ct)$ fully explains what we hear
+  **Clarification**: The Fourier amplitudes $d_k$ are preserved under time-scaling, but the formant structure (which depends on fixed physical resonances) is shifted, causing the unnatural sound
 
 # Source Reference
-Chapter 10: "Timbre and Periodic Functions," pp. 133-134 (PDF page 118).
+
+Chapter 10: "Timbre and Periodic Functions," pp. 133-134.
+
+# Verification Notes
+
+- Definition source: Direct quotes from p. 134
+- Confidence rationale: Explicit description with physical explanation
+- Uncertainties: None
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: modern pitch-shifting note, formant-shift mechanism

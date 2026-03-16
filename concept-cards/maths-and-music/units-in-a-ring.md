@@ -1,43 +1,124 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Units in a Ring
-category: theory
+slug: units-in-a-ring
+
+# === CLASSIFICATION ===
+category: algebra-in-music
+subcategory: rings
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Algebraic Properties of the Integers"
 chapter_number: 8
 pdf_page: 100
-authors: "David Wright"
-unit: null
+section: "Units"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "invertible elements"
+  - "group of units"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - ring
+extends:
+  - ring
+related:
+  - euler-phi-function
+  - generating-interval
+  - greatest-common-divisor
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are units in a ring?"
+  - "Which elements of a ring have multiplicative inverses?"
+  - "How are units in Z_m related to generating intervals?"
 ---
 
 # Quick Definition
-Elements of a ring that have multiplicative inverses, forming a group under multiplication. In $\mathbb{Z}_m$, the units are precisely the generators of the additive group.
 
-# Formal Definition
-An element $x$ in a ring $R$ is called a unit if it has a multiplicative inverse, denoted $x^{-1}$, such that $x \cdot x^{-1} = x^{-1} \cdot x = 1$. The set of units, denoted $R^*$, forms a group under multiplication. For $\mathbb{Z}_m$, the units are exactly those $[n]$ with $\gcd(m, n) = 1$, and $|\mathbb{Z}_m^*| = \phi(m)$.
+A unit in a ring $R$ is an element with a multiplicative inverse. The set of all units $R^*$ forms a group under multiplication. In $\mathbb{Z}_m$, the units are exactly the elements $[n]$ with $\gcd(m, n) = 1$.
 
-# Mathematical Context
-In general, $(R, \cdot)$ is only a monoid, not a group, because $0$ has no multiplicative inverse (except in the trivial ring $R = \{0\}$). But the subset $R^*$ of units does form a group. Key examples: $\mathbb{Z}^* = \{1, -1\}$; $\mathbb{R}^* = \mathbb{R} \setminus \{0\}$; $\mathbb{Q}^* = \mathbb{Q} \setminus \{0\}$.
+# Core Definition
 
-# Musical Context
-The units of $\mathbb{Z}_{12}$ are $\{[1], [5], [7], [11]\}$, which are precisely the generating intervals of the 12-chromatic scale. The equivalence between being a unit ($[n] \in \mathbb{Z}_m^*$), being a generator of $(\mathbb{Z}_m, +)$, and satisfying $\gcd(m, n) = 1$ ties together ring theory, group theory, and the structure of chromatic scales.
+"If $x \in R$ is such an element [having a multiplicative inverse], we call $x$ a *unit*, and we denote its multiplicative inverse by $x^{-1}$. The set of units in $R$, sometimes denoted $R^*$, form a group with respect to multiplication" (Wright, Ch. 8, p. 100).
+
+# Prerequisites
+
+- **Ring** -- Units are defined within the context of a ring's multiplicative structure
+
+# Key Properties
+
+1. The multiplicative inverse $x^{-1}$ is unique to $x$
+2. $R^*$ forms a group under multiplication
+3. $1$ is always a unit (with $1^{-1} = 1$)
+4. $0$ is never a unit (except in the trivial ring where $0 = 1$)
+5. In $\mathbb{Z}_m$, $[n] \in \mathbb{Z}_m^*$ iff $\gcd(m, n) = 1$ iff $[n]$ generates $(\mathbb{Z}_m, +)$
+6. $|\mathbb{Z}_m^*| = \phi(m)$
+
+# Construction / Recognition
+
+## To determine units in $\mathbb{Z}_m$:
+1. List elements $[1], [2], \ldots, [m-1]$
+2. For each $[n]$, compute $\gcd(n, m)$
+3. If $\gcd(n, m) = 1$, then $[n]$ is a unit
+4. To find the inverse, use the extended Euclidean algorithm to find $k$ with $kn \equiv 1 \pmod{m}$
+
+# Context & Application
+
+The units of $\mathbb{Z}_{12}$ correspond exactly to the generating intervals of the 12-chromatic scale. This connection between multiplicative invertibility and additive generation is one of the most elegant algebraic facts underlying chromatic scale theory.
 
 # Examples
-- $\mathbb{Z}^* = \{1, -1\}$: only $\pm 1$ have integer multiplicative inverses
-- $\mathbb{R}^* = \mathbb{R} \setminus \{0\}$: every non-zero real has a multiplicative inverse
-- $\mathbb{Z}_{12}^* = \{[1], [5], [7], [11]\}$: these are the four elements with $\gcd(n, 12) = 1$
-- In $\mathbb{Z}_7$: all non-zero elements are units ($\mathbb{Z}_7^* = \{[1], [2], [3], [4], [5], [6]\}$) since 7 is prime
 
-# Related Concepts
-- Ring
-- GCD Condition for Generators
-- Euler Phi Function
-- Integral Domain
-- Generating Interval
+**Example 1** (p. 100): $\mathbb{Z}^* = \{1, -1\}$ -- only $\pm 1$ have integer multiplicative inverses.
+
+**Example 2** (p. 100): $\mathbb{R}^* = \mathbb{R} \setminus \{0\}$ -- every non-zero real has a multiplicative inverse.
+
+**Example 3** (p. 104): $\mathbb{Z}_{12}^* = \{[1], [5], [7], [11]\}$ -- these are the four elements coprime to 12, corresponding to the semitone, fourth, fifth, and major seventh as generating intervals.
+
+**Example 4** (p. 101): In $\mathbb{Z}_7$, all non-zero elements are units since 7 is prime: $\mathbb{Z}_7^* = \{[1], [2], [3], [4], [5], [6]\}$.
+
+# Relationships
+
+## Builds Upon
+- **Ring** -- Units are defined relative to the multiplicative monoid of a ring
+
+## Enables
+- **Euler Phi Function** -- $\phi(m) = |\mathbb{Z}_m^*|$ counts the units
+- **Generating Interval** -- Units in $\mathbb{Z}_m$ are precisely the generating intervals
+
+## Related
+- **Greatest Common Divisor** -- $\gcd(m, n) = 1$ characterizes units in $\mathbb{Z}_m$
+
+# Common Errors
+
+- **Error**: Assuming every non-zero element is a unit
+  **Correction**: In $\mathbb{Z}$, only $\pm 1$ are units; $2$ has no integer multiplicative inverse
 
 # Common Confusions
-- Not every non-zero element of a ring is a unit; in $\mathbb{Z}$, the only units are $\pm 1$
-- $0$ is never a unit (except in the trivial ring where $0 = 1$)
-- In $\mathbb{Z}_m$, being a unit (multiplicative property) is equivalent to being a group generator (additive property); this is a non-obvious algebraic fact
+
+- **Confusion**: Thinking "unit" means the number 1
+  **Clarification**: "Unit" means an element with a multiplicative inverse; $1$ is always a unit but is generally not the only one
+
+- **Confusion**: Thinking multiplicative invertibility and additive generation are unrelated properties
+  **Clarification**: In $\mathbb{Z}_m$, being a unit is equivalent to being an additive group generator -- a non-obvious algebraic theorem
 
 # Source Reference
-Chapter 8, "Units" section, p. 100 (PDF)
+
+Chapter 8: "Algebraic Properties of the Integers," "Units" section, p. 100, and theorem on p. 104.
+
+# Verification Notes
+
+- Definition source: Direct quote from p. 100
+- Confidence rationale: Explicit definition with clear examples
+- Uncertainties: None
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: examples, musical interpretation of Z_12 units

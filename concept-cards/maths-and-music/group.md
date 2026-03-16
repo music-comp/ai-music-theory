@@ -1,45 +1,130 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Group
-category: theory
+slug: group
+
+# === CLASSIFICATION ===
+category: algebra-in-music
+subcategory: groups
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Octave Identification and Modular Arithmetic"
 chapter_number: 7
 pdf_page: 82
-authors: "David Wright"
-unit: null
+section: "Group"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - monoid
+extends:
+  - monoid
+related:
+  - commutative-group
+  - cyclic-group-and-generator
+  - group-of-intervals
+  - modular-chromatic-intervals
+  - homomorphism
+contrasts_with:
+  - monoid
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a group in abstract algebra?"
+  - "How does a group differ from a monoid?"
+  - "Why do musical intervals form a group?"
 ---
 
 # Quick Definition
+
 A monoid in which every element has an inverse, providing the algebraic structure that models musical interval composition, octave equivalence, and modular arithmetic.
 
-# Formal Definition
-A group is a monoid $(G, \cdot)$ with the additional property: for every $x \in G$, there exists a unique element $x_{\text{inv}}$ (the inverse of $x$) such that $x \cdot x_{\text{inv}} = x_{\text{inv}} \cdot x = e$, where $e$ is the identity element. When the operation is written as $+$ (commutative case), the inverse of $x$ is denoted $-x$, and $x - y$ means $x + (-y)$.
+# Core Definition
 
-# Mathematical Context
-The uniqueness of inverses follows from the proof: if $x'_{\text{inv}}$ is another inverse of $x$, then $x_{\text{inv}} = x_{\text{inv}} \cdot e = x_{\text{inv}} \cdot (x \cdot x'_{\text{inv}}) = (x_{\text{inv}} \cdot x) \cdot x'_{\text{inv}} = e \cdot x'_{\text{inv}} = x'_{\text{inv}}$. Key examples: $(\mathbb{Z}, +)$ with inverse $-k$; $(\mathbb{Z}_m, +)$ with inverse $[-k]$; $(\mathbb{R}^+, \cdot)$ with inverse $x^{-1}$; $(\mathbb{R} \setminus \{0\}, \cdot)$ with inverse $1/x$.
+A group is a monoid (G, *) with the additional property: for every x in G, there exists a unique element x_inv (the inverse of x) such that x * x_inv = x_inv * x = e, where e is the identity element. The uniqueness of inverses follows from: if x'_inv is another inverse, then x_inv = x_inv * e = x_inv * (x * x'_inv) = (x_inv * x) * x'_inv = e * x'_inv = x'_inv. When + is used (commutative case), the inverse of x is written -x, and x - y means x + (-y) (Wright, pp. 88-89).
 
-# Musical Context
-The set of musical intervals forms a group under composition: the identity is the unison interval, and the inverse of any interval is its opposite (e.g., up a fifth inverted is down a fifth). Under octave equivalence, modular chromatic intervals form the group $\mathbb{Z}_{12}$, where the inverse of [5] (a fourth) is [7] (a fifth), reflecting that a fourth plus a fifth equals an octave (unison modulo octave).
+# Prerequisites
+
+- **Monoid** — A group is a monoid with the additional inverse property
+
+# Key Properties
+
+1. Every element has a unique inverse
+2. x * x_inv = x_inv * x = e
+3. The group inherits associativity and identity from the monoid structure
+4. When using additive notation (+), inverses are written -x
+5. A group is always non-empty (contains e)
+
+# Construction / Recognition
+
+## To Verify a Group
+1. Verify it is a monoid (closure, associativity, identity)
+2. For each element x, find x_inv such that x * x_inv = x_inv * x = e
+3. If inverses exist for all elements, the structure is a group
+
+# Context & Application
+
+The set of musical intervals forms a group under composition: the identity is the unison interval, and the inverse of any interval is its opposite (e.g., up a fifth inverted is down a fifth). Under octave equivalence, modular chromatic intervals form the group Z_12, where [5] (fourth) and [7] (fifth) are inverses.
 
 # Examples
-- $(\mathbb{Z}, +)$: inverse of $k$ is $-k$
-- $(\mathbb{Z}_m, +)$: inverse of $[k]$ is $[-k] = [m - k]$
-- $(\mathbb{R}^+, \cdot)$: inverse of $x$ is $1/x$
-- $(\mathbb{R}, \cdot)$ is NOT a group: $0$ has no multiplicative inverse
-- $\{1, -1\}$ under multiplication is a group isomorphic to $\mathbb{Z}_2$
 
-# Related Concepts
-- Monoid
-- Commutative Group
-- Cyclic Group and Generator
-- Group of Intervals
-- Modular Chromatic Intervals
-- Homomorphism
+**Example 1** (p. 89): (Z, +) is a group: inverse of k is -k.
+
+**Example 2** (p. 89): (Z_m, +) is a group: inverse of [k] is [-k] = [m - k].
+
+**Example 3** (p. 89): (R+, *) is a group: inverse of x is 1/x.
+
+**Example 4** (p. 89): (R, *) is NOT a group: 0 has no multiplicative inverse. But (R - {0}, *) and (R+, *) are groups.
+
+**Example 5** (p. 89): ({1, -1}, *) is a group isomorphic to Z_2.
+
+# Relationships
+
+## Builds Upon
+- **Monoid** — A group is a monoid with inverses
+
+## Enables
+- **Commutative group** — A group with the additional commutativity property
+- **Cyclic group and generator** — Special groups generated by a single element
+- **Homomorphism** — Structure-preserving maps between groups
+- **Group of intervals** — Musical intervals form a group
+
+## Related
+- **Modular chromatic intervals** — Z_12 is a group of interval classes
+
+## Contrasts With
+- **Monoid** — In a monoid, elements need not have inverses
+
+# Common Errors
+
+- **Error**: Assuming (R, *) is a group
+  **Correction**: (R, *) fails because 0 has no multiplicative inverse; removing 0 gives the group (R - {0}, *)
 
 # Common Confusions
-- Not every monoid is a group; the crucial addition is the existence of inverses for every element
-- A commutative group is also called an abelian group; all groups in this text are commutative
-- The group operation need not be multiplication or addition in the usual sense; it is any associative operation with identity and inverses
+
+- **Confusion**: Thinking "group" means any collection of things
+  **Clarification**: In mathematics, "group" is a precise algebraic structure with specific axioms (closure, associativity, identity, inverses)
+
+- **Confusion**: Believing all groups are commutative
+  **Clarification**: Non-commutative groups exist, though all groups in this text are commutative
 
 # Source Reference
-Chapter 7, "Group" section, p. 82 (PDF)
+
+Chapter 7: "Octave Identification and Modular Arithmetic," pp. 88-89 (Group section). See the uniqueness proof for inverses.
+
+# Verification Notes
+
+- Definition source: Direct from Wright, pp. 88-89, with uniqueness proof
+- Confidence rationale: High — formal definition with proof and multiple examples
+- Uncertainties: None
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: uniqueness proof, all examples including (R,*) non-group, Z_2 isomorphism

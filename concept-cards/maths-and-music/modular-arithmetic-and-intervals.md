@@ -1,42 +1,122 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Modular Arithmetic and Intervals
-category: theory
+slug: modular-arithmetic-and-intervals
+
+# === CLASSIFICATION ===
+category: modular-arithmetic
+subcategory: twelve-tone
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
-chapter: "Harmony and Related Numerology"
-chapter_number: 3
-pdf_page: 44
+source_slug: maths-and-music
 authors: "David Wright"
-unit: null
+chapter: "Octave Identification and Modular Arithmetic"
+chapter_number: 7
+pdf_page: 82
+section: "Octave identification"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - interval arithmetic mod 12
+  - chromatic interval composition
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - modular-arithmetic
+  - octave-equivalence-formalized
+extends:
+  - modular-arithmetic
+related:
+  - modular-chromatic-intervals
+  - z-twelve-as-chromatic-interval-group
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does modular arithmetic apply to musical interval composition?"
+  - "How are intervals composed under octave equivalence?"
 ---
 
 # Quick Definition
-Modular arithmetic in Z_12 provides the mathematical framework for octave equivalence, where two intervals differing by any number of octaves are treated as the same modular interval.
 
-# Formal Definition
-For a fixed positive integer n, the relation k ≡ l (mod n), defined by n | (k - l), is an equivalence relation on Z. When n = 12, this captures octave identification for intervals measured in semitones: two intervals of k and l semitones are equivalent modulo octave if and only if k ≡ l (mod 12). The set of equivalence classes is denoted Z_12, containing exactly 12 classes represented by {0, 1, 2, ..., 11}.
+The application of Z_12 (or Z_n) arithmetic to compose, iterate, and analyze musical intervals under octave equivalence.
 
-# Mathematical Context
-Each equivalence class in Z_12 contains a unique representative r with 0 <= r < 12, obtained as the remainder in the Division Algorithm with n = 12. The set Z_n of equivalence classes inherits well-defined addition from Z. This structure is fundamental to analyzing chords and their interval sequences, where intervals between note classes are elements of Z_12.
+# Core Definition
 
-# Musical Context
-Octave equivalence is one of the most fundamental principles in music: notes separated by octaves are perceived as "the same" in an important sense. Modular arithmetic formalizes this. A ninth (14 semitones) is equivalent to a second (2 semitones) since 14 ≡ 2 (mod 12). Going down a fourth (-5 semitones) is equivalent to going up a fifth (7 semitones) since -5 ≡ 7 (mod 12).
+Under octave equivalence, chromatic intervals measured in semitones compose by addition in Z_12. Going up an octave is the identity ([12] = [0]). The interval of a fourth followed by a fifth yields unison ([5] + [7] = [0]). Two fifths equal a whole step ([7] + [7] = [2]). This identification parameterizes chromatic interval composition by the modular group Z_12 (Wright, p. 82).
+
+# Prerequisites
+
+- **Modular arithmetic** — Interval composition is modular arithmetic
+- **Octave equivalence formalized** — The equivalence relation that motivates the modular framework
+
+# Key Properties
+
+1. Interval composition = addition in Z_12
+2. The octave = identity: [12] = [0]
+3. Fourth + fifth = unison: [5] + [7] = [0]
+4. Two fifths = whole step: [7] + [7] = [2]
+5. Every chromatic interval has a unique representative in {0, 1, ..., 11}
+6. Iteration of intervals = repeated addition in Z_12
+
+# Construction / Recognition
+
+## To Compose Intervals Modularly
+1. Express each interval in semitones
+2. Add the values
+3. Reduce modulo 12
+4. Interpret the result as a chromatic interval
+
+# Context & Application
+
+Modular arithmetic provides the computational framework for all chromatic interval analysis under octave equivalence. It is used extensively in twelve-tone composition (row chart construction), pitch-class set theory, and the analysis of interval cycles. The same framework applies to Z_n for non-standard chromatic scales.
 
 # Examples
-- A ninth (14 semitones) ≡ a second (2 semitones) since 14 ≡ 2 (mod 12)
-- Down a fourth (-5 semitones) ≡ up a fifth (7 semitones) since -5 ≡ 7 (mod 12)
-- The interval from Eb to B is represented by 8 semitones (a minor sixth) in Z_12
-- There is a well-defined interval class between any ordered pair of note classes
 
-# Related Concepts
-- Chords as Note Class Collections
-- Chord Types and Interval Sequences
-- Cyclic Permutations and Root Identification
-- Octave Equivalence of Interval Ratios
+**Example 1** (p. 82): A fourth + a fifth = [5] + [7] = [12] = [0] (unison).
+
+**Example 2** (p. 82): Two fifths = [7] + [7] = [14] = [2] (a whole step).
+
+**Example 3** (p. 89): Minor third + octave + fourth = [3] + [0] + [5] = [8] (augmented fifth).
+
+**Example 4** (exercise): Six fifths = 6 * [7] = [42] = [6] (tritone).
+
+# Relationships
+
+## Builds Upon
+- **Modular arithmetic** — The underlying algebraic framework
+- **Octave equivalence formalized** — The musical motivation
+
+## Enables
+- **Modular chromatic intervals** — The formal treatment of interval classes
+- **Z_12 as chromatic interval group** — The full algebraic analysis
+
+## Related
+- **Modular chromatic intervals** — The interval classes that result from this arithmetic
+
+# Common Errors
+
+- **Error**: Computing interval compositions without reducing modulo 12
+  **Correction**: Always reduce modulo 12 to get the canonical representative; 14 semitones -> [2], not [14]
 
 # Common Confusions
-- Z_12 elements represent interval *classes*, not specific intervals -- a major ninth and a major second are different intervals but the same element of Z_12
-- The "modular interval" is always represented by a non-negative value less than 12
-- Modular intervals apply to note *classes*, not to specific pitches in a voicing
+
+- **Confusion**: Thinking modular interval composition loses information
+  **Clarification**: It intentionally discards octave information, retaining only the interval class; this is the mathematical formalization of octave equivalence
 
 # Source Reference
-Chapter 3: "Harmony and Related Numerology," pp. 44-45.
+
+Chapter 7: "Octave Identification and Modular Arithmetic," p. 82 (Octave identification section) and pp. 88-89 (interval examples).
+
+# Verification Notes
+
+- Definition source: Synthesized from Wright, pp. 82, 88-89
+- Confidence rationale: High — concept explicitly demonstrated throughout chapter
+- Uncertainties: None
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card (which was from Ch. 3); updated provenance to Ch. 7 where the formal treatment appears. Preserved: ninth=second example, interval composition examples

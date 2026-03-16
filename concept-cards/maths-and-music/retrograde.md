@@ -1,41 +1,125 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Retrograde
-category: technique
+slug: retrograde
+
+# === CLASSIFICATION ===
+category: modular-arithmetic
+subcategory: serialism
+tier: advanced
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Chromatic Scales"
 chapter_number: 6
 pdf_page: 74
-authors: "David Wright"
-unit: null
+section: "Twelve-Tone Music"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - retrograde row
+  - row reversal
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - prime-row
+  - twelve-tone-technique
+extends: []
+related:
+  - inversion-and-transposition-of-rows
+  - retrogression
+  - n-tone-row-chart
+contrasts_with:
+  - inversion-and-transposition-of-rows
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a retrograde in twelve-tone music?"
+  - "How is the retrograde of a row obtained?"
 ---
 
 # Quick Definition
+
 The reversal of a sequence of note classes from a row chart, reading a row from right to left or a column from bottom to top.
 
-# Formal Definition
-Given a sequence $a_1, a_2, \ldots, a_n$ from a row or column of an n-tone row chart, its retrograde is the sequence $a_n, a_{n-1}, \ldots, a_1$. The retrograde of a row is obtained by reading that row from right to left. The retrograde of a column is obtained by reading from bottom to top.
+# Core Definition
 
-# Mathematical Context
-If row $i$ of the chart has entries $a_j - a_i$ for $j = 1, \ldots, n$, then its retrograde is the sequence $a_n - a_i, a_{n-1} - a_i, \ldots, a_1 - a_i$. The retrograde operation is an involution: applying it twice returns the original sequence. Combined with inversion and transposition, retrograde produces additional valid sequences for composition.
+Given a sequence a_1, a_2, ..., a_n from a row or column of an n-tone row chart, its retrograde is the sequence a_n, a_(n-1), ..., a_1. The retrograde of a row is obtained by reading right to left; the retrograde of a column by reading bottom to top (Wright, p. 78).
 
-# Musical Context
-Retrograde is one of the four fundamental row transformations in twelve-tone music (along with the prime form, inversion, and retrograde-inversion). Composers use retrogrades to create musical material that maintains the structural integrity of the row while introducing variety. The sequences from rows, columns, and their retrogrades form the complete palette of melodic and harmonic resources for the composition.
+# Prerequisites
+
+- **Prime row** — The retrograde is defined relative to a row in the chart
+- **Twelve-tone technique** — The retrograde is one of the fundamental row operations
+
+# Key Properties
+
+1. The retrograde reverses the order of note classes
+2. It is an involution: applying retrograde twice returns the original
+3. The retrograde preserves the set of notes but reverses their ordering
+4. Combined with inversion, it produces the retrograde-inversion (a fourth transformation)
+
+# Construction / Recognition
+
+## To Compute the Retrograde
+1. Take any row or column of the row chart
+2. Write its elements in reverse order
+3. The retrograde of a row: read right to left
+4. The retrograde of a column: read bottom to top
+
+# Context & Application
+
+Retrograde is one of the four fundamental row transformations in twelve-tone music (prime, inversion, retrograde, retrograde-inversion). Composers use retrogrades to create musical material that maintains the structural integrity of the row while introducing variety. The rows, columns, and their retrogrades form the complete palette of melodic and harmonic resources.
 
 # Examples
-- If the original row is E, G, F$\sharp$, A, G$\sharp$, C, F, D, D$\sharp$, C$\sharp$, B, B$\flat$, its retrograde is B$\flat$, B, C$\sharp$, D$\sharp$, D, F, C, G$\sharp$, A, F$\sharp$, G, E
-- In the musical example from the text, the top treble clef line uses the retrograde of the original row
-- The bottom treble clef line uses a column of the row chart (a transposition of the inversion)
 
-# Related Concepts
-- Row Chart
-- Prime Row
-- Inversion and Transposition of Rows
-- Twelve-Tone Technique
+**Example 1** (pp. 77-78): If the original row is E, G, F#, A, G#, C, F, D, D#, C#, B, Bb, its retrograde is Bb, B, C#, D#, D, F, C, G#, A, F#, G, E.
+
+**Example 2** (p. 78): In the musical example, the top treble clef line uses the retrograde of the original row.
+
+**Example 3** (p. 78): The bottom treble clef line uses a column of the row chart (a transposition of the inversion), not a retrograde.
+
+# Relationships
+
+## Builds Upon
+- **Prime row** — The retrograde reverses the prime row or other chart sequences
+- **Twelve-tone technique** — Retrograde is one of the four fundamental operations
+
+## Enables
+- Retrograde-inversion: the retrograde of the inversion, a fourth distinct transformation
+
+## Related
+- **Retrogression** — A related concept from tonal music (time reversal of melodic material)
+- **N-tone row chart** — Retrogrades apply equally to n-tone charts
+
+## Contrasts With
+- **Inversion and transposition of rows** — Inversion reverses interval direction; retrograde reverses note order. These are distinct operations
+
+# Common Errors
+
+- **Error**: Confusing retrograde with inversion
+  **Correction**: Retrograde reverses the order of note classes; inversion reverses the direction of intervals. They operate in different dimensions
 
 # Common Confusions
-- Retrograde reverses the order of note classes but does not change their identity; it is distinct from inversion, which reverses the direction of intervals
-- Retrograde-inversion (the retrograde of the inversion) is a fourth distinct transformation, different from either retrograde or inversion alone
-- "Retrograde" in twelve-tone music has a precise meaning different from casual use of the word
+
+- **Confusion**: Thinking retrograde changes the identity of note classes
+  **Clarification**: Retrograde preserves the set of notes; it only changes their order
+
+- **Confusion**: Believing "retrograde" in twelve-tone music is the same as "retrogression" in tonal contexts
+  **Clarification**: In twelve-tone theory, retrograde has a precise meaning (reversal of a chart sequence)
 
 # Source Reference
-Chapter 6, "Twelve-Tone Music" section, p. 74 (PDF)
+
+Chapter 6: "Chromatic Scales," pp. 78-79 (Twelve-Tone Music section). See the retrogrades in the musical examples.
+
+# Verification Notes
+
+- Definition source: Direct from Wright, p. 78
+- Confidence rationale: High — explicitly defined with musical examples
+- Uncertainties: None
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: E-row retrograde example, distinction from inversion

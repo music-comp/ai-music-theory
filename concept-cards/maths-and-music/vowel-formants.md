@@ -1,42 +1,112 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Vowel Formants
-category: application
+slug: vowel-formants
+
+# === CLASSIFICATION ===
+category: harmonics-and-timbre
+subcategory: acoustics
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Timbre and Periodic Functions"
 chapter_number: 10
 pdf_page: 118
-authors: "David Wright"
-unit: null
+section: "Formants"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - formants
+extends:
+  - formants
+related:
+  - timbre-as-harmonic-amplitudes
+  - harmonics-and-overtones
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do vowel sounds differ in their formant structure?"
+  - "Why does 'ee' sound brighter than 'oo'?"
 ---
 
 # Quick Definition
-Different vowel sounds are distinguished by their characteristic formant frequencies -- fixed resonant frequency bands created by the shape of the mouth and throat. The three American English vowels "oo," "ah," and "ee" each have three distinctive formants.
 
-# Formal Definition
-Vowel formants are the specific frequency ranges amplified by the resonating cavities of the human vocal tract when producing a vowel sound. Each vowel has a characteristic set of typically three formants, determined by the positions of the tongue, jaw, and lips. These formants remain approximately fixed regardless of the fundamental pitch being sung.
+Different vowel sounds are distinguished by their characteristic formant frequencies -- fixed resonant frequency bands created by the shape of the mouth and throat. American English vowels typically have three distinctive formants each.
 
-# Mathematical Context
-The formant structure acts as a frequency-dependent amplitude envelope applied to the harmonic series. For fundamental frequency F, the k-th harmonic at frequency kF receives an amplitude boost if kF falls within a formant band. A formant has no effect if the fundamental pitch lies above it (no harmonics to amplify). For a soprano singing A5 (880 Hz), the lowest "oo" formant at ~310 Hz is completely bypassed.
+# Core Definition
 
-# Musical Context
-Vowel formants explain why different vowels are distinguishable when sung. They also explain why high soprano singing can make vowels harder to distinguish -- when the fundamental is above the lower formants, those formants have no harmonics to amplify, and the vowel identity becomes ambiguous. The "ee" vowel has higher upper formants (2250, 2900 Hz) than "oo" or "ah," giving it a brighter quality.
+Vowel formants are specific frequency ranges amplified by the resonating cavities of the human vocal tract when producing a vowel. Each vowel has a characteristic set of typically three formants, determined by tongue, jaw, and lip positions. These formants remain approximately fixed regardless of the fundamental pitch (Wright, Ch. 10, pp. 133-134).
+
+# Prerequisites
+
+- **Formants** -- Vowel formants are a specific application of the formant concept
+
+# Key Properties
+
+1. Each vowel has a characteristic set of three formants
+2. Formant positions are determined by mouth and throat shape
+3. Formants remain fixed as pitch changes
+4. "Bright" sounds have prominent high formants; "dark" sounds have low formants
+5. High soprano singing can make vowels harder to distinguish (fundamental above low formants)
+
+# Construction / Recognition
+
+## Typical American English vowel formants:
+1. **"oo"** (as in "food"): ~310, ~870, ~2250 Hz
+2. **"ah"** (as in "father"): ~710, ~1100, ~2640 Hz
+3. **"ee"** (as in "feed"): ~280, ~2250, ~2900 Hz
+
+# Context & Application
+
+Vowel formants explain why different vowels are distinguishable when sung. The "ee" vowel sounds brightest due to its high second and third formants (2250, 2900 Hz). The "oo" vowel sounds darkest due to its lower formants. High soprano singing can make vowels ambiguous because the fundamental exceeds the lower formants, leaving no harmonics for them to amplify.
 
 # Examples
-Typical American English vowel formants:
-- "oo" (as in "food"): ~310 Hz, ~870 Hz, ~2250 Hz
-- "ah" (as in "father"): ~710 Hz, ~1100 Hz, ~2640 Hz
-- "ee" (as in "feed"): ~280 Hz, ~2250 Hz, ~2900 Hz
 
-The "ee" vowel sounds brightest due to its high second and third formants. "oo" sounds darkest due to its low first and second formants.
+**Example 1** (p. 133): "oo" formants: ~310, ~870, ~2250 Hz.
 
-# Related Concepts
-- Formants
-- Timbre as Harmonic Amplitudes
-- Harmonics and Overtones
-- Effect of Horizontal Stretching on Pitch
+**Example 2** (p. 133): "ah" formants: ~710, ~1100, ~2640 Hz.
+
+**Example 3** (p. 133): "ee" formants: ~280, ~2250, ~2900 Hz -- brightest due to high upper formants.
+
+**Example 4** (p. 134): A soprano singing A5 (880 Hz) on "oo": the lowest formant (310 Hz) has no harmonics to amplify, since all harmonics ($880, 1760, 2640, \ldots$) exceed 310 Hz.
+
+# Relationships
+
+## Builds Upon
+- **Formants** -- Vowel formants are a specific case
+
+## Related
+- **Timbre as Harmonic Amplitudes** -- Formants shape the amplitude profile
+- **Harmonics and Overtones** -- Formants amplify certain harmonics
+
+# Common Errors
+
+- **Error**: Assuming vowel formants change with pitch
+  **Correction**: Formant frequencies are determined by mouth shape, not pitch; what changes is which harmonics fall within the formant bands
 
 # Common Confusions
-Students sometimes think formants change with pitch. They do not -- the resonating cavities of the mouth maintain the same formant frequencies regardless of the note being sung (though a singer can deliberately alter mouth shape). What changes is which harmonics fall within the formant bands.
+
+- **Confusion**: Thinking "bright" and "dark" are subjective judgments only
+  **Clarification**: Brightness correlates with having prominent high-frequency formants; this has a precise physical basis in the formant structure
 
 # Source Reference
-Chapter 10: "Timbre and Periodic Functions," pp. 133-134 (PDF page 118).
+
+Chapter 10: "Timbre and Periodic Functions," pp. 133-134.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 133-134
+- Confidence rationale: Explicit formant values given for three vowels
+- Uncertainties: None
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: all formant frequency values, soprano A5 example, bright/dark characterization

@@ -1,41 +1,116 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Pure Tone
-category: theory
+slug: pure-tone
+
+# === CLASSIFICATION ===
+category: harmonics-and-timbre
+subcategory: acoustics
+tier: foundational
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Timbre and Periodic Functions"
 chapter_number: 10
 pdf_page: 118
-authors: "David Wright"
-unit: null
+section: "Effect of Horizontal Stretching on Pitch"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "sine tone"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - sine-and-cosine-functions
+  - vibrations-and-sound-waves
+extends: []
+related:
+  - timbre
+  - fourier-series
+  - harmonics-and-overtones
+contrasts_with:
+  - square-wave-fourier-analysis
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a pure tone?"
+  - "What does a sine wave sound like?"
 ---
 
 # Quick Definition
+
 A pure tone is the sound produced by a single sine wave -- the simplest possible musical sound, containing only one frequency with no overtones. It resembles the sound of a tuning fork.
 
-# Formal Definition
-A pure tone is a vibration described by y = d*sin(2*pi*F*t + beta) for some amplitude d, frequency F, and phase shift beta. Equivalently, it is a tone whose Fourier series contains only the first harmonic (k = 1), with all higher harmonics having zero amplitude (dk = 0 for k >= 2).
+# Core Definition
 
-# Mathematical Context
-In the Fourier series g(t) = C + sum(dk*sin(2*pi*F*k*t + beta_k)), a pure tone has d1 > 0 and dk = 0 for all k >= 2. It is the fundamental building block from which all complex tones are constructed via superposition.
+"The tone given by a sine function [...] is sometimes called a 'pure tone'. It is a nondescript hum, very similar to the tone produced by a tuning fork" (Wright, Ch. 10, p. 125). In Fourier terms, a pure tone has $d_1 > 0$ and $d_k = 0$ for all $k \geq 2$.
 
-# Musical Context
-A pure tone is described as a "nondescript hum" -- it has pitch but minimal timbral character. The tuning fork produces an approximately pure tone. Electronic synthesizers can generate exact pure tones. Real musical instruments always produce complex tones with multiple harmonics, which is what gives them their distinctive timbres.
+# Prerequisites
+
+- **Sine and Cosine Functions** -- A pure tone is a single sine wave
+- **Vibrations and Sound Waves** -- A pure tone is a specific type of vibration
+
+# Key Properties
+
+1. Described by $y = d\sin(2\pi Ft + \beta)$ for amplitude $d$, frequency $F$, phase $\beta$
+2. Only the first harmonic ($k = 1$) has non-zero amplitude
+3. Sounds like a "nondescript hum"
+4. The tuning fork produces an approximately pure tone
+5. It is the fundamental building block of all complex tones
+
+# Construction / Recognition
+
+## To create a pure tone at frequency r Hz:
+1. Use $y = \sin(2\pi r t)$
+2. Or equivalently: $y = \sin(rPt)$ where $P = 2\pi$ is the period of $\sin t$
+
+# Context & Application
+
+Pure tones have pitch but minimal timbral character. Real musical instruments always produce complex tones with multiple harmonics, which gives them distinctive timbres. Pure tones serve as the "atoms" from which all complex sounds are built via Fourier superposition.
 
 # Examples
-- y = sin(880*pi*t): pure tone at A4 (440 Hz)
-- A tuning fork struck gently: approximately pure
-- Electronic sine wave generator: exactly pure
-- Contrast with clarinet, violin, voice: all produce complex tones with many harmonics
 
-# Related Concepts
-- Timbre
-- Fourier Series
-- Harmonics and Overtones
-- Sine and Cosine Functions
-- Square Wave Fourier Analysis
+**Example 1** (p. 125): $y = \sin(880\pi t)$: pure tone at A4 (440 Hz).
+
+**Example 2**: A tuning fork struck gently: approximately pure.
+
+**Example 3**: Electronic sine wave generator: exactly pure.
+
+# Relationships
+
+## Enables
+- **Fourier Series** -- Pure tones are the building blocks of Fourier decomposition
+
+## Related
+- **Timbre** -- A pure tone has the simplest possible timbre
+- **Harmonics and Overtones** -- A pure tone has no overtones
+
+## Contrasts With
+- **Square Wave Fourier Analysis** -- A square wave has many harmonics, unlike a pure tone
+
+# Common Errors
+
+- **Error**: Thinking pure tones are "better" or more musical than complex tones
+  **Correction**: Pure tones are the simplest, but musical richness comes from the interaction of multiple harmonics
 
 # Common Confusions
-A pure tone is not "better" or "more musical" than a complex tone -- it is simply the simplest. Most musical richness comes from the interaction of multiple harmonics. A pure tone sounds bland precisely because it lacks overtones to give it character.
+
+- **Confusion**: Thinking any single-frequency sound is a pure tone
+  **Clarification**: A pure tone is specifically a sinusoidal vibration; other periodic waveforms at a single fundamental frequency still contain harmonics
 
 # Source Reference
-Chapter 10: "Timbre and Periodic Functions," p. 125 (PDF page 118).
+
+Chapter 10: "Timbre and Periodic Functions," p. 125.
+
+# Verification Notes
+
+- Definition source: Direct quote from p. 125
+- Confidence rationale: Explicit description with clear characterization
+- Uncertainties: None
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: "nondescript hum" quote, tuning fork comparison

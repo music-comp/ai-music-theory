@@ -1,46 +1,123 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: N-Chromatic Units
-category: theory
+slug: n-chromatic-units
+
+# === CLASSIFICATION ===
+category: pitch-and-intervals
+subcategory: measurement
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Ratios and Musical Intervals"
 chapter_number: 4
 pdf_page: 58
-authors: "David Wright"
-unit: null
+section: "Arbitrary Chromatic Units"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - arbitrary chromatic units
+  - n-tone equal temperament
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - semitone-ratio
+extends:
+  - semitone-ratio
+related:
+  - cents
+  - microtuning
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are n-chromatic units?"
+  - "How do you generalize equal temperament to n divisions of the octave?"
 ---
 
 # Quick Definition
+
 An n-chromatic unit is the interval obtained by dividing the octave into n equal parts. The interval of x n-chromatic units has ratio 2^(x/n).
 
-# Formal Definition
-For a positive integer n, dividing the octave into n equal subintervals produces units called n-chromatic units. By the same reasoning that derives the semitone ratio, each n-chromatic unit has ratio 2^(1/n). More generally:
+# Core Definition
+
+For a positive integer n, dividing the octave into n equal subintervals produces units called n-chromatic units. Each n-chromatic unit has ratio 2^(1/n). More generally:
 
 The interval of x n-chromatic units has ratio 2^(x/n).    (Formula 4.4)
 
-This generalizes both the semitone formula (n = 12, giving 2^(x/12)) and the cent formula (n = 1200, giving 2^(x/1200)).
+This generalizes both the semitone formula (n = 12, giving 2^(x/12)) and the cent formula (n = 1200, giving 2^(x/1200)) (Wright, p. 62).
 
-# Mathematical Context
-The formula r = 2^(x/n) defines a family of exponential conversion functions parameterized by n. Each choice of n defines a different additive unit for measuring intervals, all based on equal subdivision of the octave. The standard chromatic scale corresponds to n = 12; cents to n = 1200. Alternative tuning systems explore other values of n (e.g., n = 19, n = 31, n = 53).
+# Prerequisites
 
-# Musical Context
-Different values of n yield different equal-tempered tuning systems. The 12-chromatic scale is standard in Western music, but other divisions have been explored. For microtonal music, values like n = 19, 24, or 31 are used. The concept generalizes the familiar 12-tone system and provides a framework for analyzing any equal temperament.
+- **Semitone Ratio** -- N-chromatic units generalize the semitone; the semitone is the case n = 12
+
+# Key Properties
+
+1. Each n-chromatic unit has ratio 2^(1/n)
+2. x units have ratio 2^(x/n) -- Formula 4.4
+3. n = 12: standard semitones
+4. n = 1200: cents
+5. Different values of n yield different equal-tempered tuning systems
+6. The formula works for any real x, not just integers
+
+# Construction / Recognition
+
+## To Work with N-Chromatic Units
+
+1. Choose the number of divisions n
+2. Each unit has ratio 2^(1/n)
+3. To convert x units to a ratio: r = 2^(x/n)
+4. To convert a ratio r to units: x = n * log_2(r)
+
+# Context & Application
+
+Different values of n yield different equal-tempered tuning systems. The 12-chromatic scale is standard in Western music, but other divisions have been explored for microtonal music: n = 19, 24, 31, 53, etc. The concept provides a unified framework for analyzing any equal temperament (Wright, p. 62).
 
 # Examples
-- n = 12: standard semitones, each with ratio 2^(1/12)
-- n = 1200: cents, each with ratio 2^(1/1200)
-- n = 19: 19-tone equal temperament, each unit with ratio 2^(1/19)
-- Exercises in the text ask for conversions using n = 8, 11, 13, 17, 19, 21, 30
 
-# Related Concepts
-- Semitone Ratio
-- Cents
-- Microtuning
-- Converting Ratios to Semitones
+**Example 1** (p. 62): n = 12: standard semitones, each with ratio 2^(1/12).
+
+**Example 2** (p. 62): n = 1200: cents, each with ratio 2^(1/1200).
+
+**Example 3**: n = 19: 19-tone equal temperament, each unit with ratio 2^(1/19).
+
+# Relationships
+
+## Builds Upon
+
+- **Semitone Ratio** -- N-chromatic units generalize the semitone
+
+## Related
+
+- **Cents** -- Cents are the special case n = 1200
+- **Microtuning** -- Alternative values of n enable microtonal tuning systems
+
+# Common Errors
+
+- **Error**: Assuming n must be 12
+  **Correction**: n can be any positive integer; 12 is the Western standard but other values are musically valid
 
 # Common Confusions
-- N-chromatic units generalize semitones; semitones are the special case n = 12
-- Cents are the special case n = 1200, not a different concept
-- Different values of n do not produce "better" or "worse" tunings in absolute terms; each has different approximation properties for just intervals
+
+- **Confusion**: Thinking different values of n produce objectively "better" or "worse" tunings
+  **Clarification**: Different values of n have different approximation properties for just intervals; none is universally superior
+- **Confusion**: Believing cents are a fundamentally different concept from n-chromatic units
+  **Clarification**: Cents are simply n-chromatic units with n = 1200
 
 # Source Reference
-Chapter 4: "Ratios and Musical Intervals," p. 62.
+
+Chapter 4: "Ratios and Musical Intervals," p. 62. Formula 4.4.
+
+# Verification Notes
+
+- Definition source: Direct from p. 62
+- Confidence rationale: High -- explicitly defined with formula
+- Uncertainties: None
+- Cross-reference status: All slugs verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: examples of alternative n values, formula 4.4 reference

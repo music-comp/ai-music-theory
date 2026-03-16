@@ -1,53 +1,147 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Classical Mean-Tone Scale
-category: theory
+slug: mean-tone-scale
+
+# === CLASSIFICATION ===
+category: tuning-systems
+subcategory: mean-tone
+tier: advanced
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Tuning The Scale To Obtain Rational Intervals"
 chapter_number: 12
 pdf_page: 152
-authors: "David Wright"
-unit: null
+section: "The Classical Mean-Tone Scale"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - mean-tone temperament
+  - quarter-comma meantone
+  - classical meantone
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - just-major-third
+  - comma-of-didymus
+  - mean-tone-fifth
+extends: []
+related:
+  - mean-tone-whole-tone
+  - wolf-fifth
+  - lesser-diesis
+contrasts_with:
+  - pythagorean-scale
+  - just-intonation-scale
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is mean-tone temperament?"
+  - "What distinguishes mean-tone temperament from Pythagorean tuning?"
 ---
 
 # Quick Definition
+
 The classical mean-tone scale shrinks fifths equally around the circle so that four consecutive fifths (modulo octave) produce an exact just major third (5/4), using a fifth of ratio 5^(1/4), approximately 696.58 cents.
 
-# Formal Definition
-The classical mean-tone scale tunes the fifth to ratio x = 5^(1/4), determined by the equation x^4 = 4 * (5/4) = 5, so that four iterations of this fifth equal two octaves plus a just major third. This mean-tone fifth is irrational (~1.49535, close to 3/2 = 1.5). Unlike the Pythagorean and just intonation scales, the mean-tone scale allows irrational intervals. All of its rational intervals lie in the subgroup of Q+ with prime factorization involving only 2 and 5.
+# Core Definition
 
-The diatonic scale ratios to the tonic are:
+Wright explains: "The idea of the mean-tone scale is to shrink the fifths around the clock equally so that the major third spanning four clock positions (modulo octave) is the just major third, having ratio 5:4" (p. 157). The fifth ratio x is determined by x^4 = 4 * (5/4) = 5, giving x = 5^(1/4) ~ 1.49535. Unlike Pythagorean and just intonation scales, the mean-tone scale allows irrational intervals. Its rational intervals involve only primes 2 and 5.
 
-| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+# Prerequisites
+
+- **Just major third** -- The target interval that the scale is designed to achieve
+- **Comma of Didymus** -- The mean-tone fifth is flat of the just fifth by one-quarter of this comma
+- **Mean-tone fifth** -- The fundamental interval of the scale
+
+# Key Properties
+
+1. Mean-tone fifth: 5^(1/4) ~ 696.58 cents (~3 cents flat of tempered, ~5 cents flat of just)
+2. All major thirds are exactly 5/4 (just major third, 386.31 cents)
+3. Whole tone: sqrt(5)/2 ~ 193.16 cents (one size, unlike just intonation)
+4. Contains irrational intervals (unlike Pythagorean and just intonation)
+5. Rational intervals involve only primes 2 and 5
+6. Wolf fifth absorbs the lesser diesis (128/125 ~ 41 cents)
+7. With wolf placed away from diatonic tones, all diatonic major triads except VII have good tuning
+
+# Construction / Recognition
+
+## To Build a Mean-Tone Scale
+
+1. Set the fifth ratio to x = 5^(1/4) ~ 1.49535
+2. Tune consecutive fifths around the circle at this ratio
+3. The 12th position falls short of 7 octaves by the lesser diesis (128/125 ~ 41 cents)
+4. Place the wolf fifth at a musically inconvenient position (e.g., between 8 and 9 o'clock)
+5. Each whole tone = two mean-tone fifths minus an octave = sqrt(5)/2
+
+## Scale Ratios to Tonic
+
+| 1-hat | 2-hat | 3-hat | 4-hat | 5-hat | 6-hat | 7-hat | 8-hat |
 |---|---|---|---|---|---|---|---|
 | 1/1 | sqrt(5)/2 | 5/4 | 2/5^(1/4) | 5^(1/4) | 5^(3/4)/2 | 5^(5/4)/4 | 2/1 |
 
-# Mathematical Context
-The mean-tone fifth at 1200 * log2(5^(1/4)) = 300 * log2(5) ~ 696.58 cents is about 3 cents flat of the tempered fifth and about 5 cents flat of the just fifth. The whole tone equals two mean-tone fifths minus an octave: (5^(1/4))^2 / 2 = sqrt(5)/2 ~ 193.16 cents, about 7 cents flat of the tempered step. Since three just major thirds do not equal an octave ((5/4)^3 = 125/64 < 2), the twelfth position on the circle falls short by 128/125 ~ 41.06 cents, requiring a "large fifth" (wolf fifth) somewhere on the circle.
+# Context & Application
 
-# Musical Context
-The mean-tone scale emerged in the 14th-15th centuries when thirds became accepted in Western music. It represents a compromise: fifths are slightly flattened (by ~5 cents each from just) to achieve perfect major thirds. With the wolf fifth placed away from diatonic notes (e.g., between the 8 and 9 o'clock positions on the circle), all diatonic major triads except VII have tolerably tuned fifths and perfect major thirds. The wolf fifth, being about two-fifths of a semitone sharp of a just fifth, was named for the animal's howl.
+The mean-tone scale emerged in the 14th-15th centuries when thirds became accepted in Western music. Wright notes: "Certain compromises were introduced which detuned fifths in order to improve the sound of thirds. Such scales are called mean-tone scales" (p. 156). The classical mean-tone scale represents the most common compromise, achieving perfect major thirds at the cost of slightly flat fifths and one very bad wolf fifth (~737 cents).
 
 # Examples
-- Mean-tone fifth: 5^(1/4) ~ 696.58 cents (just fifth ~ 701.96, tempered fifth = 700)
-- Major third: exactly 5/4 (just major third, 386.31 cents)
-- Whole tone: sqrt(5)/2 ~ 193.16 cents
-- Wolf fifth gap: 128/125 ~ 41.06 cents (the comma that must be absorbed)
-- Compare: Pythagorean comma ~ 23.46 cents; mean-tone comma (128/125) ~ 41.06 cents
 
-# Related Concepts
-- Just Major Third
-- Wolf Fifth
-- Pythagorean Scale
-- Just Intonation Scale
-- Comma of Didymus
-- p-Limit Tuning
-- Equal Temperament versus Just Intonation
+**Example 1** (p. 157): Mean-tone fifth: 5^(1/4) ~ 1.49535 (close to 3/2 = 1.5).
+
+**Example 2** (p. 157): 1200 * log2(5^(1/4)) = 300 * log2(5) ~ 696.58 cents.
+
+**Example 3** (p. 157): Three just major thirds: (5/4)^3 = 125/64 < 2, falling short by 128/125 ~ 41 cents.
+
+**Example 4** (p. 157): Mean-tone whole tone: sqrt(5)/2 ~ 193.16 cents, about 7 cents flat of tempered step.
+
+# Relationships
+
+## Builds Upon
+- **Just major third** -- The target interval: four mean-tone fifths yield exactly 5/4
+- **Comma of Didymus** -- Each fifth is flattened by one-quarter of this comma
+- **Mean-tone fifth** -- The fundamental interval of the scale
+
+## Enables
+- **Wolf fifth** -- The residual discrepancy that must be placed on the circle
+
+## Related
+- **Lesser diesis** -- The comma (128/125 ~ 41 cents) that the wolf fifth absorbs
+- **Mean-tone whole tone** -- The single whole-step size of the scale
+
+## Contrasts With
+- **Pythagorean scale** -- Optimizes fifths at the expense of thirds; mean-tone does the opposite
+- **Just intonation scale** -- Uses only rational intervals and has two whole-tone sizes
+
+# Common Errors
+
+- **Error**: Thinking the mean-tone scale is purely rational
+  **Correction**: The mean-tone fifth (5^(1/4)) is irrational; the scale mixes rational and irrational intervals
 
 # Common Confusions
-- The mean-tone scale is not purely rational -- the fifth (5^(1/4)) is irrational, unlike the Pythagorean and just intonation scales which use only rational intervals
-- The wolf fifth is much larger than the Pythagorean comma (~41 cents vs. ~23 cents), making it more disruptive
-- "Mean tone" refers to the whole step being the geometric mean of certain intervals, not an arithmetic average
-- The mean-tone fifth is flat of the just fifth by one-quarter of the comma of Didymus
+
+- **Confusion**: Thinking "mean tone" means the arithmetic average of two intervals
+  **Clarification**: "Mean tone" refers to the whole step being the geometric mean in a specific sense -- two mean-tone whole tones compose to an exact just major third
+
+- **Confusion**: Thinking the wolf fifth is similar in size to the Pythagorean comma
+  **Clarification**: The wolf fifth absorbs ~41 cents (the lesser diesis), nearly twice the Pythagorean comma (~23 cents), making it more disruptive
+
+- **Confusion**: Thinking the mean-tone fifth is flat of the just fifth by the Pythagorean comma
+  **Clarification**: It is flat by one-quarter of the comma of Didymus (~5.38 cents), not the Pythagorean comma
 
 # Source Reference
+
 Chapter 12: "Tuning The Scale To Obtain Rational Intervals," pp. 156-158.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 156-157
+- Confidence rationale: Explicit definition with full calculation and scale table
+- Uncertainties: None
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: complete scale table, lesser diesis calculation, quarter-comma relationship, historical context

@@ -1,47 +1,131 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Dotted Note Duration Formula
-category: theory
+slug: dotted-note-duration-formula
+
+# === CLASSIFICATION ===
+category: rhythm-and-form
+subcategory: duration
+tier: foundational
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Horizontal Structure"
 chapter_number: 2
 pdf_page: 30
-authors: "David Wright"
-unit: null
+section: "Dots"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - "dotted notes"
+  - "dot duration formula"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - note-durational-values
+  - geometric-series-and-summation
+extends:
+  - note-durational-values
+related:
+  - ties-and-slurs
+  - meter-and-time-signatures
+  - rests
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does a dot affect a note's duration?"
+  - "What is the formula for the duration of a multiply-dotted note?"
+  - "What is the limiting duration as the number of dots increases?"
 ---
 
 # Quick Definition
-A dot after a note extends its duration by half, a second dot adds a quarter, and in general m dots multiply the original duration d by $[2 - (1/2)^m]$, approaching but never reaching 2d.
 
-# Formal Definition
-A note of duration $d$ followed by $m$ dots has duration:
+A dot after a note extends its duration by half, a second dot adds a quarter, and in general $m$ dots multiply the original duration $d$ by $[2 - (1/2)^m]$, approaching but never reaching $2d$.
+
+# Core Definition
+
+A note of duration $d$ followed by $m$ dots has duration (Wright, p. 33, equation 2.1):
 $$d_m = d\left[2 - \left(\frac{1}{2}\right)^m\right]$$
+
 This is derived from the geometric series:
-$$d_m = d\left(1 + \frac{1}{2} + \frac{1}{2^2} + \cdots + \frac{1}{2^m}\right) = d\sum_{i=0}^{m}\left(\frac{1}{2}\right)^i = d\left[\frac{1 - \left(\frac{1}{2}\right)^{m+1}}{1 - \frac{1}{2}}\right]$$
+$$d_m = d\left(1 + \frac{1}{2} + \frac{1}{2^2} + \cdots + \frac{1}{2^m}\right) = d\sum_{i=0}^{m}\left(\frac{1}{2}\right)^i$$
 
 Equivalently: $d_m = d\left[1 + \frac{2^m - 1}{2^m}\right]$.
 
-# Mathematical Context
-The formula uses the finite geometric series sum $\sum_{i=0}^{m} r^i = \frac{1 - r^{m+1}}{1 - r}$ for $r \neq 1$, applied with $r = \frac{1}{2}$. As $m \to \infty$, $d_m \to 2d$, since $\lim_{m \to \infty}\left[2 - \left(\frac{1}{2}\right)^m\right] = 2$. The infinite sum $\sum_{i=0}^{\infty}\left(\frac{1}{2}\right)^i = 2$ captures this limit. The value $d_m$ is always strictly less than $2d$ for any finite $m$.
+# Prerequisites
 
-# Musical Context
-One dot multiplies duration by $3/2$ (the most common case). Two dots multiply by $7/4$. Three dots multiply by $15/8$. In practice, more than two dots are rarely used. The dotted note is fundamental to rhythmic notation: a dotted quarter note in $\frac{4}{4}$ time has duration $\frac{3}{2}$ beats, a dotted half note has 3 beats. Dots apply to rests as well.
+- **Note Durational Values** — The base duration $d$ comes from the power-of-2 system
+- **Geometric Series and Summation** — The formula uses the finite geometric series sum
+
+# Key Properties
+
+1. One dot multiplies duration by $3/2$
+2. Two dots multiply by $7/4$
+3. Three dots multiply by $15/8$
+4. The formula uses $r = 1/2$ in the geometric series
+5. As $m \to \infty$, $d_m \to 2d$ (but never reaches it)
+6. The value $d_m$ is always strictly less than $2d$ for any finite $m$
+7. Dots apply to rests as well as notes
+
+# Construction / Recognition
+
+## To calculate a dotted note's duration:
+
+1. Determine the base duration $d$ of the undotted note
+2. Count the number of dots $m$
+3. Apply the formula: $d_m = d[2 - (1/2)^m]$
+4. Alternatively: first dot adds $d/2$, second adds $d/4$, third adds $d/8$, etc.
+
+# Context & Application
+
+In practice, more than two dots are rarely used. A dotted quarter note in $\frac{4}{4}$ time has duration $\frac{3}{2}$ beats, a dotted half note has 3 beats. The convergence to $2d$ as $m \to \infty$ connects to the infinite geometric series $\sum_{i=0}^{\infty}(1/2)^i = 2$, illustrating the concept of limit from calculus.
 
 # Examples
-- Dotted sixteenth note (4 beats per whole note): $d = \frac{1}{4}$, $m = 1$: $d_1 = \frac{1}{4} \cdot \frac{3}{2} = \frac{3}{8}$ beats
-- Double-dotted sixteenth: $d_2 = \frac{1}{4} \cdot \frac{7}{4} = \frac{7}{16}$ beats
-- Triply dotted sixteenth (2 beats per whole note): $d = \frac{1}{8}$, $m = 3$: $d_3 = \frac{1}{8}\left[2 - \frac{1}{8}\right] = \frac{1}{8} \cdot \frac{15}{8} = \frac{15}{64}$ beats
-- A dotted half note in $\frac{4}{4}$: $d = 2$ beats, $d_1 = 2 \cdot \frac{3}{2} = 3$ beats
 
-# Related Concepts
-- Note Durational Values
-- Geometric Series and Summation
-- Meter and Time Signatures
-- Ties and Slurs
+- Dotted sixteenth (4 beats/whole note): $d = \frac{1}{4}$, $m = 1$: $d_1 = \frac{1}{4} \cdot \frac{3}{2} = \frac{3}{8}$ beats (p. 32)
+- Double-dotted sixteenth: $d_2 = \frac{1}{4} \cdot \frac{7}{4} = \frac{7}{16}$ beats (p. 33)
+- Triply dotted sixteenth (2 beats/whole note): $d = \frac{1}{8}$, $m = 3$: $d_3 = \frac{1}{8}[2 - \frac{1}{8}] = \frac{15}{64}$ beats (p. 34)
+- Dotted half note in $\frac{4}{4}$: $d = 2$ beats, $d_1 = 3$ beats
+
+# Relationships
+
+## Builds Upon
+- **Note Durational Values** — Dots modify the power-of-2 duration system
+- **Geometric Series and Summation** — The formula is a geometric series with $r = 1/2$
+
+## Enables
+- Complex rhythmic patterns that cannot be expressed with simple note values alone
+
+## Related
+- **Ties and Slurs** — Ties provide an alternative way to extend duration
+- **Rests** — Dots apply to rests as well
+
+# Common Errors
+
+- **Error**: Thinking each dot adds half of the original duration
+  **Correction**: Each dot adds half of the *previous* addition: first dot adds $d/2$, second adds $d/4$, third adds $d/8$
 
 # Common Confusions
-- Each dot adds half of the previous addition, not half of the original duration: the second dot adds $d/4$ (not $d/2$), the third adds $d/8$
-- The total duration of an $m$-dotted note always falls strictly below $2d$, never reaching it
-- Dots apply to rests as well as to notes
+
+- **Confusion**: Believing a dotted note can reach double the original duration
+  **Clarification**: $d_m < 2d$ for all finite $m$; the limit $2d$ is never reached
+- **Confusion**: Thinking dots only apply to notes
+  **Clarification**: Dots apply to rests as well as notes
 
 # Source Reference
-Chapter 2, "Dots" section, pp. 32-34 (PDF); equation (2.1)
+
+Chapter 2: "Horizontal Structure", "Dots" section, pp. 32-34 (PDF); equation (2.1).
+
+# Verification Notes
+
+- Definition source: Direct from source, equation (2.1), p. 33
+- Confidence rationale: High — explicit formula with derivation and worked examples
+- Uncertainties: None
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: all worked examples, limit interpretation, dots-on-rests note

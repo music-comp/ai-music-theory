@@ -1,41 +1,117 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Well-Tempered Clavier
-category: application
+slug: well-tempered-clavier
+
+# === CLASSIFICATION ===
+category: tuning-systems
+subcategory: temperament
+tier: advanced
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Tuning The Scale To Obtain Rational Intervals"
 chapter_number: 12
 pdf_page: 152
-authors: "David Wright"
-unit: null
+section: "Drawbacks of Unequal Temperament"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - Das Wohltemperierte Klavier
+  - WTC
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - equal-temperament-versus-just-intonation
+  - harmonic-freedom-and-modulation
+extends: []
+related:
+  - drawbacks-of-unequal-temperament
+  - comma-placement-on-circle-of-fifths
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is the Well-Tempered Clavier?"
+  - "How does it demonstrate equal temperament?"
 ---
 
 # Quick Definition
+
 Bach's Well-Tempered Clavier is a collection of 48 preludes and fugues in all 24 major and minor keys, serving as a bold demonstration that equal (or near-equal) temperament enables music in every key.
 
-# Formal Definition
-The Well-Tempered Clavier is a collection of keyboard works by J. S. Bach, assembled in two parts in the first half of the 18th century. Each part contains 24 pieces, one in each of the 12 major and 12 minor keys, systematically demonstrating that a single keyboard tuning can serve all keys adequately. It is historically significant as a demonstration of the viability of temperaments that allow free modulation.
+# Core Definition
 
-# Mathematical Context
-The work demonstrates the practical consequence of equal (or near-equal) temperament: when the comma is distributed across all fifths rather than concentrated in one place, every key receives equally good (if slightly imperfect) tuning. This stands in contrast to unequal temperaments where some keys sound excellent and others are unusable. The mathematical trade-off is accepting irrational intervals (~2 cents flat fifths, ~14 cents sharp thirds) in exchange for key uniformity.
+Wright describes: "In the first half of the 18th century J. S. Bach produced a bold demonstration of equal temperament by producing his famous Well-Tempered Clavier, a collection of 48 preludes and fugues, assembled in two parts, each part containing 24 pieces representing each of the major and minor keys" (p. 159). The footnote adds: "Actually, music historians disagree as to whether Bach was actually touting equal temperament or some other system quite close to equal temperament" (p. 159).
 
-# Musical Context
-Music historians debate whether Bach actually advocated true equal temperament or some "well temperament" that was close but not identical -- a system where all keys are usable but retain subtle differences in character. Regardless, the work stands as a landmark in the history of tuning, demonstrating that the imperfections of tempered tuning are an acceptable price for harmonic freedom. Franz Liszt's Liebestraum (19th century) is another example, extensively traversing the circle of fifths and using every chromatic root note.
+# Prerequisites
+
+- **Equal temperament versus just intonation** -- The WTC demonstrates the viability of (near-)equal temperament
+- **Harmonic freedom and modulation** -- The WTC demonstrates freedom to compose in all keys
+
+# Key Properties
+
+1. 48 preludes and fugues (2 parts of 24 each)
+2. Each part covers all 12 major and 12 minor keys
+3. Composed in the first half of the 18th century
+4. Demonstrates viability of temperament allowing all keys
+5. Historians debate whether Bach used true equal temperament or a "well temperament"
+6. Landmark in the history of keyboard tuning
+
+# Construction / Recognition
+
+The WTC demonstrates equal temperament by:
+1. Composing substantive pieces in every major and minor key
+2. Showing that no key produces unacceptable dissonance
+3. Implying that the keyboard tuning must accommodate all keys at least adequately
+
+# Context & Application
+
+The WTC is a landmark in the history of tuning that demonstrates the practical viability of temperaments allowing free modulation. Wright pairs it with Liszt's Liebestraum as an example of the "harmonic emancipation" that equal temperament provides. Whether Bach intended true equal temperament or a "well temperament" (where all keys are usable but retain subtle character differences) remains debated.
 
 # Examples
-- 48 pieces: 24 in Part I (BWV 846-869), 24 in Part II (BWV 870-893)
-- Each part covers all 12 major keys and all 12 minor keys
-- Produced in the first half of the 18th century
-- Liszt's Liebestraum: modulates several times, uses every root note in the chromatic scale of Ab
 
-# Related Concepts
-- Equal Temperament versus Just Intonation
-- Drawbacks of Unequal Temperament
-- Comma Placement on Circle of Fifths
+**Example 1** (p. 159): 48 pieces covering all 24 major and minor keys, assembled in two parts.
+
+**Example 2** (p. 159): Produced "in the first half of the 18th century."
+
+**Example 3** (p. 159): Liszt's Liebestraum as another demonstration, "extensively traversing the circle of fifths."
+
+# Relationships
+
+## Builds Upon
+- **Equal temperament versus just intonation** -- The WTC demonstrates ET's viability
+- **Harmonic freedom and modulation** -- The capability the WTC showcases
+
+## Related
+- **Drawbacks of unequal temperament** -- The limitations the WTC implicitly overcomes
+
+# Common Errors
+
+- **Error**: Citing the WTC as proof that Bach used true equal temperament
+  **Correction**: Historians debate whether Bach used exact ET or a "well temperament" close to but not identical with ET
 
 # Common Confusions
-- "Well-tempered" may not mean "equally tempered" -- the historical tuning Bach intended is debated
-- The work was a demonstration, not the invention of equal temperament -- various forms of temperament were already in use
-- The title refers to the keyboard ("Clavier"), not to a specific piece -- it is a collection of 48 works
+
+- **Confusion**: Thinking the WTC invented equal temperament
+  **Clarification**: Various forms of temperament were already in use; the WTC was a demonstration, not an invention
+
+- **Confusion**: Thinking "Well-Tempered" means "equally tempered"
+  **Clarification**: "Well-tempered" means the tuning is adequate for all keys; this could be ET or a close approximation
 
 # Source Reference
+
 Chapter 12: "Tuning The Scale To Obtain Rational Intervals," p. 159.
+
+# Verification Notes
+
+- Definition source: Direct from p. 159
+- Confidence rationale: Explicitly described with historical context
+- Uncertainties: Whether Bach actually used equal temperament (acknowledged in the source)
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: historian debate caveat, Liszt pairing, "well temperament" distinction

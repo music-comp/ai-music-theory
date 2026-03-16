@@ -1,43 +1,131 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Diminished Seventh Chord
-category: theory
+slug: diminished-seventh-chord
+
+# === CLASSIFICATION ===
+category: chord-theory
+subcategory: seventh-chords
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Harmony and Related Numerology"
 chapter_number: 3
 pdf_page: 44
-authors: "David Wright"
-unit: null
+section: "Diminished Seventh"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - full diminished chord
+  - fully diminished seventh
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - diminished-triad
+  - cyclic-permutations-and-root-identification
+extends:
+  - diminished-triad
+related:
+  - chord-spelling
+contrasts_with:
+  - half-diminished-seventh-chord
+  - augmented-triad
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a diminished seventh chord?"
+  - "Why does the diminished seventh chord have no discernible root?"
+  - "How many distinct diminished seventh chords exist?"
 ---
 
 # Quick Definition
-The diminished seventh (or "full diminished") chord is a four-note chord defined by the interval sequence (3, 3, 3, 3) in semitones. Like the augmented triad, its complete cyclic symmetry means it has no discernible root.
 
-# Formal Definition
-The diminished seventh chord is defined by the sequence of modular intervals (3, 3, 3, 3) in Z_12. Every cyclic permutation of (3, 3, 3, 3) yields the same sequence. Therefore the chord has complete cyclic symmetry and no discernible root -- any of its four notes could serve as root.
+The diminished seventh (or "full diminished") chord is a four-note chord defined by the interval sequence (3, 3, 3, 3) in semitones. Its complete cyclic symmetry means it has no discernible root.
 
-# Mathematical Context
-The sequence (3, 3, 3, 3) is the unique partition of 12 into four equal parts. Its symmetry group is Z_4 (cyclic group of order 4). The diminished seventh chord divides the octave into four equal parts of 3 semitones each. Consequently, there are only 3 distinct diminished seventh chords (since 12/4 = 3), as compared to 12 for most other four-note chord types. Correct spelling of the chord can identify which note is intended as root.
+# Core Definition
 
-# Musical Context
-The diminished seventh chord imparts a feeling of tension or instability. It often resolves to a more consonant chord, such as a major or minor triad. Because of its symmetry, it is an extremely versatile chord for modulation -- any of its four notes can be reinterpreted as the root, potentially resolving to four different keys. It is labeled with suffix "o7" (e.g., Co7).
+The diminished seventh chord is defined by the sequence of modular intervals (3, 3, 3, 3) in Z_12. Every cyclic permutation of (3, 3, 3, 3) yields the same sequence. Therefore the chord has complete cyclic symmetry and no discernible root -- any of its four notes could serve as root. The chord divides the octave into four equal parts of 3 semitones each (Wright, pp. 48-49).
+
+# Prerequisites
+
+- **Diminished Triad** -- The diminished seventh extends the concept of stacked minor thirds
+- **Cyclic Permutations and Root Identification** -- Understanding why full symmetry eliminates root discernibility
+
+# Key Properties
+
+1. Contains exactly four distinct note classes
+2. Interval sequence: (3, 3, 3, 3) in semitones, summing to 12
+3. Complete cyclic symmetry (Z_4 symmetry group) -- no discernible root
+4. Divides the octave into four equal parts
+5. Only 3 distinct diminished seventh chords exist (12 / 4 = 3)
+6. Labeled with suffix o7 (e.g., Co7)
+7. Correct spelling identifies the intended root
+
+# Construction / Recognition
+
+## To Construct a Diminished Seventh Chord
+
+1. Choose any note as the starting point
+2. Go up 3 semitones (minor third) three times
+3. The fourth note is 3 semitones below the starting note (completing the cycle)
+
+# Context & Application
+
+The diminished seventh chord imparts a feeling of tension or instability. It often resolves to a more consonant chord, such as a major or minor triad. Because of its symmetry, it is extremely versatile for modulation -- any of its four notes can be reinterpreted as the root, potentially resolving to four different keys (Wright, pp. 48-49).
 
 # Examples
-- Co7: C-Eb-Gb-Bbb (enharmonically C-Eb-F#-A), intervals (3, 3, 3, 3)
-- The same pitch classes {C, Eb, F#, A} can be spelled as any of four diminished seventh chords
-- Only 3 distinct diminished seventh chords exist in the 12-tone system
-- D#o7 spelled differently from Co7 may represent the same enharmonic chord
 
-# Related Concepts
-- Diminished Triad
-- Augmented Triad
-- Half-Diminished Seventh Chord
-- Cyclic Permutations and Root Identification
-- Chord Spelling
+**Example 1** (pp. 48-49): Two examples of diminished seventh chords are shown in musical notation.
+
+**Example 2** (p. 52): The correct spelling of Co7 is given: C-Eb-Gb-Bbb. The text also shows how the same enharmonic chord can be spelled as D#o7.
+
+**Example 3**: Only 3 distinct diminished seventh chords exist: {C, Eb, F#, A}, {Db, E, G, Bb}, and {D, F, Ab, B}.
+
+# Relationships
+
+## Builds Upon
+
+- **Diminished Triad** -- Extends the stacked minor thirds concept to four notes
+
+## Enables
+
+- **Chord Spelling** -- Spelling conventions are especially important for identifying the intended root of a rootless chord
+
+## Related
+
+- **Augmented Triad** -- Also has complete cyclic symmetry (but with 3 notes and major thirds)
+
+## Contrasts With
+
+- **Half-Diminished Seventh Chord** -- (3, 3, 4, 2): shares the first two intervals but has a discernible root
+- **Augmented Triad** -- Both lack a discernible root, but the augmented triad has 3 notes while the diminished seventh has 4
+
+# Common Errors
+
+- **Error**: Stating there are 12 distinct diminished seventh chords
+  **Correction**: There are only 3, since each set of 4 pitch classes can be spelled four ways
 
 # Common Confusions
-- The diminished seventh chord (3, 3, 3, 3) is not the same as the diminished triad (3, 3, 6) -- the former has four notes, the latter three
-- The root is determined by spelling/context, not by the interval structure itself
-- Only 3 distinct diminished seventh chords exist, though they can be spelled 12 different ways
+
+- **Confusion**: Confusing the diminished seventh chord (3, 3, 3, 3) with the diminished triad (3, 3, 6)
+  **Clarification**: The diminished seventh has four notes; the diminished triad has three
+- **Confusion**: Thinking the root is determined by the interval structure
+  **Clarification**: The root is determined by spelling or context, not by the pitch class content
 
 # Source Reference
-Chapter 3: "Harmony and Related Numerology," pp. 48-49.
+
+Chapter 3: "Harmony and Related Numerology," pp. 48-49. Spelling conventions on p. 52.
+
+# Verification Notes
+
+- Definition source: Direct from pp. 48-49
+- Confidence rationale: High -- explicitly defined with discussion of symmetry and examples
+- Uncertainties: None
+- Cross-reference status: All slugs verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: Z_4 symmetry group, count of 3 distinct chords, spelling examples from p. 52

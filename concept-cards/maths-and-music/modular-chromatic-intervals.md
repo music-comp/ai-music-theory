@@ -1,44 +1,126 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Modular Chromatic Intervals
-category: theory
+slug: modular-chromatic-intervals
+
+# === CLASSIFICATION ===
+category: modular-arithmetic
+subcategory: twelve-tone
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
+source_slug: maths-and-music
+authors: "David Wright"
 chapter: "Octave Identification and Modular Arithmetic"
 chapter_number: 7
 pdf_page: 82
-authors: "David Wright"
-unit: null
+section: "The Group of Modular Chromatic Intervals"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases:
+  - chromatic interval classes
+  - interval classes mod octave
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - modular-arithmetic
+  - octave-equivalence-formalized
+extends:
+  - modular-arithmetic
+related:
+  - z-twelve-as-chromatic-interval-group
+  - modular-clock
+  - generating-interval
+  - group-of-modular-intervals
+contrasts_with:
+  - group-of-modular-intervals
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What are modular chromatic intervals?"
+  - "How does Z_12 represent chromatic interval classes?"
 ---
 
 # Quick Definition
-Chromatic intervals considered modulo octave, forming equivalence classes identified with elements of $\mathbb{Z}_{12}$ (or $\mathbb{Z}_n$ for non-standard scales), with composition given by addition in the group.
 
-# Formal Definition
-A modular chromatic interval is an equivalence class of keyboard intervals under octave equivalence. Since keyboard intervals are measured in whole semitones, the set of modular chromatic intervals is identified with $\mathbb{Z}_{12}$. Each modular chromatic interval has a unique representative $n$ semitones with $0 \leq n \leq 11$. The law of composition is addition in $\mathbb{Z}_{12}$, and iteration of intervals corresponds to a sequence of rotations on the modular clock.
+Chromatic intervals considered modulo octave, forming equivalence classes identified with elements of Z_12, with composition given by addition in the group.
 
-# Mathematical Context
-The group $(\mathbb{Z}_{12}, +)$ is the group of modular chromatic intervals. It is cyclic with generators $[1], [5], [7], [11]$. For non-standard chromatic scales dividing the octave into $n$ equal parts, modular chromatic intervals form $\mathbb{Z}_n$. The modular clock provides a visualization where addition corresponds to clockwise rotation.
+# Core Definition
 
-# Musical Context
-Under octave equivalence, there are exactly 12 distinct chromatic intervals. Every chromatic interval composition reduces to addition in $\mathbb{Z}_{12}$. For example, ascending by a minor third (3), an octave (12 = 0), and a fourth (5) gives $[3] + [0] + [5] = [8]$, an augmented fifth. The modular clock labeled with note names allows quick conversion between numerical and musical representations.
+A modular chromatic interval is an equivalence class of keyboard intervals under octave equivalence. Since keyboard intervals are measured in whole semitones, the set of modular chromatic intervals is identified with Z_12. Each has a unique representative n semitones with 0 <= n <= 11. The law of composition is addition in Z_12, and iteration of intervals corresponds to a sequence of rotations on the modular clock (Wright, pp. 88-89).
+
+# Prerequisites
+
+- **Modular arithmetic** — Interval composition is addition in Z_12
+- **Octave equivalence formalized** — Modular chromatic intervals are defined by octave equivalence
+
+# Key Properties
+
+1. There are exactly 12 distinct modular chromatic intervals
+2. Each has a unique representative in {0, 1, ..., 11} semitones
+3. Composition = addition in Z_12
+4. The group is cyclic with generators [1], [5], [7], [11]
+5. The modular clock provides visualization
+6. For non-standard scales, modular chromatic intervals form Z_n
+
+# Construction / Recognition
+
+## To Compose Modular Chromatic Intervals
+1. Express each interval in semitones
+2. Add the semitone values
+3. Reduce modulo 12
+4. The result is the composed modular interval
+
+# Context & Application
+
+Under octave equivalence, every chromatic interval computation reduces to Z_12 arithmetic. The modular clock labeled with note names allows quick conversion between numerical and musical representations, essential for twelve-tone composition and analysis.
 
 # Examples
-- Semitone = [1], whole step = [2], minor third = [3], major third = [4], fourth = [5], tritone = [6], fifth = [7], minor sixth = [8], major sixth = [9], minor seventh = [10], major seventh = [11], unison/octave = [0]
-- [3] + [12] + [5] = [8] in $\mathbb{Z}_{12}$: minor third + octave + fourth = augmented fifth
-- Six fifths: $6 \cdot [7] = [42] = [6]$ in $\mathbb{Z}_{12}$ (a tritone)
-- Up three minor thirds, down six steps: $3 \cdot [3] + (-6) \cdot [2] = [9] + [-12] = [9]$ in $\mathbb{Z}_{12}$
 
-# Related Concepts
-- Octave Equivalence Formalized
-- Modular Integers
-- Modular Arithmetic
-- Group of Modular Intervals
-- Modular Clock
-- Generating Interval
+**Example 1** (p. 89): Minor third + octave + fourth = [3] + [12] + [5] = [3] + [0] + [5] = [8] (augmented fifth), since 20 = 8 (mod 12).
+
+**Example 2** (p. 89): The interval names: [0]=unison, [1]=semitone, [2]=whole step, [3]=minor third, [4]=major third, [5]=fourth, [6]=tritone, [7]=fifth, [8]=minor sixth, [9]=major sixth, [10]=minor seventh, [11]=major seventh.
+
+**Example 3** (exercises): Six fifths: 6 * [7] = [42] = [6] (a tritone). Up three minor thirds, down six steps: 3 * [3] + (-6) * [2] = [9] + [-12] = [9].
+
+# Relationships
+
+## Builds Upon
+- **Modular arithmetic** — Composition is addition in Z_12
+- **Octave equivalence formalized** — The defining equivalence relation
+
+## Enables
+- **Z_12 as chromatic interval group** — The detailed algebraic analysis of Z_12 as the interval group
+
+## Related
+- **Modular clock** — The visualization tool
+- **Generating interval** — The generators of Z_12 are the musically significant modular intervals
+
+## Contrasts With
+- **Group of modular intervals** — That group includes all intervals (including microtonal) mod octave; modular chromatic intervals are the discrete subgroup Z_12
+
+# Common Errors
+
+- **Error**: Treating modular chromatic intervals as specific numbers rather than equivalence classes
+  **Correction**: [5] includes 5, 17, 29, -7, etc.; it is a class, not a single number
 
 # Common Confusions
-- A modular chromatic interval is an equivalence class, not a specific number of semitones; [5] includes 5, 17, 29, -7, etc.
-- The unique representative in $\{0, 1, \ldots, 11\}$ is conventional; negative representatives are equally valid
-- "Going up 14 semitones" and "going up 2 semitones" are the same modular chromatic interval
+
+- **Confusion**: Thinking "going up 14 semitones" and "going up 2 semitones" are different modular intervals
+  **Clarification**: They are the same modular chromatic interval [2], since 14 = 2 (mod 12)
 
 # Source Reference
-Chapter 7, "The Group of Modular Chromatic Intervals" section, p. 82 (PDF)
+
+Chapter 7: "Octave Identification and Modular Arithmetic," pp. 88-89 (The Group of Modular Chromatic Intervals section).
+
+# Verification Notes
+
+- Definition source: Direct from Wright, pp. 88-89
+- Confidence rationale: High — explicit definition with examples
+- Uncertainties: None
+- Cross-reference status: Verified
+- Re-extraction notes: Re-extracted from v2 card; preserved: complete interval name table, composition examples, six-fifths calculation

@@ -1,47 +1,123 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Converting Ratios to Octaves
-category: technique
+slug: converting-ratios-to-octaves
+
+# === CLASSIFICATION ===
+category: pitch-and-intervals
+subcategory: measurement
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Mathematics and Music"
-chapter: "Logarithms and Musical Intervals"
-chapter_number: 5
-pdf_page: 66
+source_slug: maths-and-music
 authors: "David Wright"
-unit: null
+chapter: "Ratios and Musical Intervals"
+chapter_number: 4
+pdf_page: 58
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: medium
+
+# === VARIANTS (authority control) ===
+aliases:
+  - ratio to octave conversion
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - interval-as-frequency-ratio
+extends: []
+related:
+  - converting-ratios-to-semitones
+  - converting-ratios-to-cents
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How do I measure an interval in octaves?"
+  - "Why is base-2 the natural logarithm base for music?"
 ---
 
 # Quick Definition
+
 An interval ratio r is converted to octaves by the formula x = log_2(r). This is the most fundamental additive measurement, from which semitones (multiply by 12) and cents (multiply by 1200) are derived.
 
-# Formal Definition
+# Core Definition
+
 Given an interval ratio r in R+, its measurement in octaves is:
 
-x = log_2(r)    (Formula 5.3)
+x = log_2(r)
 
-This is the base case from which all other conversions derive. To obtain the octave as the unit interval (distance 1 on a logarithmic axis), we need log_b(2) = 1, which requires b = 2. Therefore base 2 is the natural base for musical logarithms.
+This is the base case from which all other conversions derive. To make the octave correspond to exactly 1 unit, we need log_b(2) = 1, which requires b = 2. Therefore base 2 is the natural base for musical logarithms. The formulas for semitones (12 * log_2(r)) and cents (1200 * log_2(r)) are simply rescalings of this fundamental measurement (Wright, Ch. 4-5).
 
-# Mathematical Context
-The choice of base 2 is determined by the requirement that the octave (ratio 2) should correspond to exactly 1 unit. Since log_b(2) = 1 implies b^1 = 2, i.e., b = 2, base 2 is the unique base for which the octave maps to 1. The formulas for semitones (12 * log_2(r)) and cents (1200 * log_2(r)) are simply rescalings of this fundamental measurement.
+# Prerequisites
 
-# Musical Context
-Measuring in octaves is the coarsest standard measurement. It answers the question: "How many octaves does this interval span?" For most practical purposes, the finer measurements (semitones or cents) are more useful, but the octave measurement is conceptually the simplest and serves as the foundation. Plotting pitches by log_2(frequency) produces equally spaced octaves on the axis.
+- **Interval as Frequency Ratio** -- Must understand intervals as ratios to apply the logarithmic conversion
+
+# Key Properties
+
+1. x = log_2(r) converts ratio to octaves
+2. Base 2 is the unique base where the octave maps to 1
+3. Semitones = 12 * log_2(r) = 12 * x (rescaling by 12)
+4. Cents = 1200 * log_2(r) = 1200 * x (rescaling by 1200)
+5. Plotting pitches by log_2(frequency) produces equally spaced octaves
+
+# Construction / Recognition
+
+## To Convert a Ratio to Octaves
+
+1. Given ratio r
+2. Compute x = log_2(r) = ln(r) / ln(2)
+3. The result is the number of octaves (can be fractional)
+
+# Context & Application
+
+Measuring in octaves is the coarsest standard measurement. For most practical purposes, the finer measurements (semitones or cents) are more useful, but the octave measurement is conceptually the simplest and serves as the foundation. Plotting pitches by log_2(frequency) produces equally spaced octaves, correcting the non-equal spacing seen on a linear frequency axis. The concept is implicit in Ch. 4's discussion of the n-chromatic unit formula r = 2^(x/n) and developed explicitly with logarithms in Ch. 5 (Wright, Ch. 4-5).
 
 # Examples
-- Ratio 2: log_2(2) = 1 octave
-- Ratio 4: log_2(4) = 2 octaves
-- Ratio 3/2: log_2(3/2) ~ 0.585 octaves (a fifth is slightly more than half an octave)
-- Ratio 1: log_2(1) = 0 octaves (unison)
-- Ratio 1/2: log_2(1/2) = -1 octave (down one octave)
 
-# Related Concepts
-- Converting Ratios to Semitones
-- Converting Ratios to Cents
-- Logarithmic Pitch Scale
-- Logarithmic Functions as Inverses
+**Example 1**: Ratio 2: log_2(2) = 1 octave.
+
+**Example 2**: Ratio 4: log_2(4) = 2 octaves.
+
+**Example 3**: Ratio 3/2: log_2(3/2) ~ 0.585 octaves (a fifth is slightly more than half an octave).
+
+**Example 4**: Ratio 1: log_2(1) = 0 octaves (unison).
+
+**Example 5**: Ratio 1/2: log_2(1/2) = -1 octave (down one octave).
+
+# Relationships
+
+## Builds Upon
+
+- **Interval as Frequency Ratio** -- The logarithm converts the multiplicative ratio to an additive measurement
+
+## Related
+
+- **Converting Ratios to Semitones** -- Semitones = 12 * octaves
+- **Converting Ratios to Cents** -- Cents = 1200 * octaves
+
+# Common Errors
+
+- **Error**: Using log_10 or ln instead of log_2
+  **Correction**: log_2 is required so that the octave (ratio 2) maps to exactly 1; use the change of base formula for computation
 
 # Common Confusions
-- log_2 is the musically natural base, not log_10 or ln -- though the change of base formula allows using any base for computation
-- The octave measurement is not commonly used in practice (semitones and cents are preferred), but it is the conceptual foundation
-- A non-integer octave measurement does not mean "part of an octave" in the sense of a fraction; it means the interval is not a whole number of octaves
+
+- **Confusion**: Thinking octave measurement is commonly used in practice
+  **Clarification**: Semitones and cents are the practical units; octave measurement is the conceptual foundation
+- **Confusion**: Interpreting a fractional octave value as "part of an octave"
+  **Clarification**: It means the interval is not a whole number of octaves; e.g., 0.585 octaves is a fifth, not "58.5% of an octave" in any musical sense
 
 # Source Reference
-Chapter 5: "Logarithms and Musical Intervals," pp. 70-71.
+
+Chapter 4: "Ratios and Musical Intervals" (implicit in the n-chromatic unit formula). Chapter 5: "Logarithms and Musical Intervals," pp. 70-71 (explicit formula).
+
+# Verification Notes
+
+- Definition source: Synthesized from Ch. 4 (n-chromatic formula with n=1) and Ch. 5 (explicit logarithmic formula)
+- Confidence rationale: Medium -- the concept is implicit in Ch. 4 and explicit in Ch. 5; synthesized across chapters
+- Uncertainties: The explicit formula appears in Ch. 5, not Ch. 4
+- Cross-reference status: All slugs verified
+- Re-extraction notes: Re-extracted from v2 card (which had Ch. 5 provenance); preserved: base-2 uniqueness argument, logarithmic pitch plotting, relationship between octave/semitone/cent measurements
