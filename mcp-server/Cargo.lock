@@ -2257,7 +2257,7 @@ dependencies = [
 [[package]]
 name = "fabryk"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "fabryk-acl",
  "fabryk-auth",
@@ -2271,7 +2271,7 @@ dependencies = [
 [[package]]
 name = "fabryk-acl"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "async-trait",
  "fabryk-core",
@@ -2281,7 +2281,7 @@ dependencies = [
 [[package]]
 name = "fabryk-auth"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "axum",
  "http",
@@ -2295,7 +2295,7 @@ dependencies = [
 [[package]]
 name = "fabryk-cli"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "clap",
  "confyg",
@@ -2314,7 +2314,7 @@ dependencies = [
 [[package]]
 name = "fabryk-content"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "fabryk-core",
  "log",
@@ -2327,7 +2327,7 @@ dependencies = [
 [[package]]
 name = "fabryk-core"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "async-trait",
  "async-walkdir 2.1.0",
@@ -2346,7 +2346,7 @@ dependencies = [
 [[package]]
 name = "fabryk-fts"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "async-trait",
  "async-walkdir 2.1.0",
@@ -2364,7 +2364,7 @@ dependencies = [
 [[package]]
 name = "fabryk-graph"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "async-trait",
  "blake3",
@@ -2384,7 +2384,7 @@ dependencies = [
 [[package]]
 name = "fabryk-mcp"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "fabryk-mcp-auth",
  "fabryk-mcp-content",
@@ -2397,7 +2397,7 @@ dependencies = [
 [[package]]
 name = "fabryk-mcp-auth"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "axum",
  "serde_json",
@@ -2406,7 +2406,7 @@ dependencies = [
 [[package]]
 name = "fabryk-mcp-content"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "async-trait",
  "fabryk-content",
@@ -2421,7 +2421,7 @@ dependencies = [
 [[package]]
 name = "fabryk-mcp-core"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "async-trait",
  "axum",
@@ -2437,7 +2437,7 @@ dependencies = [
 [[package]]
 name = "fabryk-mcp-fts"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "async-trait",
  "fabryk-core",
@@ -2452,7 +2452,7 @@ dependencies = [
 [[package]]
 name = "fabryk-mcp-graph"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "async-trait",
  "fabryk-core",
@@ -2468,7 +2468,7 @@ dependencies = [
 [[package]]
 name = "fabryk-mcp-semantic"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "async-trait",
  "fabryk-core",
@@ -2485,7 +2485,7 @@ dependencies = [
 [[package]]
 name = "fabryk-vector"
 version = "0.4.0"
-source = "git+https://github.com/oxur/ecl.git?branch=main#d4344b3849865dbf37343f940c8efc398e7e1b78"
+source = "git+https://github.com/oxur/ecl.git?branch=main#ea6be1588e326e04b21647c905266379aa143cc2"
 dependencies = [
  "arrow-array",
  "arrow-schema",
@@ -5452,7 +5452,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "343d3bd7056eda839b03204e68deff7d1b13aba7af2b2fd16890697274262ee7"
 dependencies = [
  "heck",
- "itertools 0.14.0",
+ "itertools 0.12.1",
  "log",
  "multimap",
  "petgraph",
@@ -5471,7 +5471,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "27c6023962132f4b30eb4c172c91ce92d933da334c59c23cddee82358ddafb0b"
 dependencies = [
  "anyhow",
- "itertools 0.14.0",
+ "itertools 0.12.1",
  "proc-macro2",
  "quote",
  "syn 2.0.114",
@@ -6644,7 +6644,7 @@ version = "3.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8b1fdf65dd6331831494dd616b30351c38e96e45921a27745cf98490458b90bb"
 dependencies = [
- "dirs 6.0.0",
+ "dirs 5.0.1",
 ]
 
 [[package]]
@@ -8307,7 +8307,7 @@ version = "0.1.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c2a7b1c03c876122aa43f3020e6c3c3ee5c05081c9a00739faf7503aeba10d22"
 dependencies = [
- "windows-sys 0.61.2",
+ "windows-sys 0.48.0",
 ]
 
 [[package]]
