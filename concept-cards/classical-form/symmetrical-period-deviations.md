@@ -44,11 +44,34 @@ Symmetrical deviations maintain the period's characteristic sense of balance and
 - Mozart, Piano Concerto in F, K. 459, ii, mm. 1-10: symmetrical 5+5 period with interpolated rising eighth-note figure after basic idea in both phrases
 - Beethoven, String Quartet in G, Op. 18/2, ii, mm. 1-6: symmetrical 3+3 period with compressed phrases (antecedent: 2+1 basic idea + one-measure HC; consequent: 1+2)
 
-# Related Concepts
-- Period
-- Asymmetrical Period Deviations
-- Interpolation
-- Phrase-Structural Compression
+# Prerequisites
+- **Period** -- the normative form from which deviations occur
+
+# Key Properties
+1. Both phrases deviate from the four-measure norm
+2. Resulting grouping structure remains symmetrical (e.g., 5+5, 3+3, 6+6)
+3. Four techniques: extension, expansion, interpolation, compression
+4. Extension: structural end occurs normally, then the function is stretched out
+5. Expansion: structural end is delayed because internal components are enlarged
+6. Interpolation: material inserted between functions, lacking motivic connection to either
+7. Compression: both phrases shortened below norm while preserving essential functions
+8. Despite grouping symmetry (e.g., 5+5), cadential pattern may be asymmetrical (e.g., 4+6)
+
+# Relationships
+## Builds Upon
+- Period (the normative 4+4 form)
+## Enables
+- Extended and altered periods that preserve the essential sense of balance
+## Related
+- Interpolation, phrase-structural compression (specific techniques)
+- Asymmetrical period deviations (the complementary category)
+## Contrasts With
+- Asymmetrical period deviations (only the consequent is altered)
+
+# Common Errors
+- Confusing extension with expansion -- extension stretches after structural completion; expansion delays completion
+- Failing to distinguish interpolation from extension (check motivic connection)
+- Assuming grouping symmetry implies cadential symmetry
 
 # Common Confusions
 - Extension and expansion are different: extension stretches a function *after* it is structurally complete; expansion enlarges a function *before* it reaches its structural goal
@@ -56,4 +79,7 @@ Symmetrical deviations maintain the period's characteristic sense of balance and
 - Apparent symmetry in grouping (5+5) may coexist with asymmetry in cadential pattern (4+6) — these are different analytical dimensions
 
 # Source Reference
-Chapter 4: Period, "Deviations from the Norm — Symmetrical Deviations" section (PDF page 60)
+Chapter 4: Period, "Deviations from the Norm -- Symmetrical Deviations" section (PDF page 60)
+
+# Verification Notes
+Upgraded to v3: added Prerequisites, Key Properties, Relationships, Common Errors, Verification Notes. Core content preserved from original extraction.

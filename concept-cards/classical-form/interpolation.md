@@ -42,12 +42,35 @@ Interpolations expand the phrase without disrupting the fundamental formal logic
 - Mozart, Piano Concerto in F, K. 459, ii, mm. 1-10: rising eighth-note figure interpolated after the basic idea (m. 2, second half) in both antecedent and consequent; the figure fills in the melodic leap of the basic idea, participating in larger melodic processes despite seeming unrelated; can be excised to create normative 4+4 period
 - Mozart, Piano Sonata in C, K. 279/189d, iii, mm. 7-8: two interpolated measures in the consequent, belonging to neither the basic idea nor the contrasting idea
 
-# Related Concepts
-- Symmetrical Period Deviations
-- Asymmetrical Period Deviations
-- Extension
-- Expansion
-- Period
+# Prerequisites
+- **Period** -- the formal context in which interpolation most commonly occurs
+- **Extension** -- the related technique from which interpolation must be distinguished
+
+# Key Properties
+1. Material inserted between two logically succeeding formal functions
+2. Belongs to neither the preceding nor the following function
+3. Distinguished from extension by the absence of motivic connection with the preceding function
+4. Can be removed to restore a normative grouping structure
+5. May nonetheless play significant roles in larger melodic or harmonic processes
+6. May occur in both antecedent and consequent to maintain symmetry
+
+# Relationships
+## Builds Upon
+- Period form (the primary context for interpolation)
+- Extension (the related but distinct technique)
+## Enables
+- Expanded phrases without disrupting fundamental formal logic
+- Symmetrical deviations (same interpolation in both phrases)
+## Related
+- Symmetrical and asymmetrical period deviations
+- Expansion (enlarges a function before its structural goal)
+## Contrasts With
+- Extension: has motivic connection with preceding material; interpolation does not
+
+# Common Errors
+- Confusing interpolation with extension -- check for motivic connection
+- Dismissing interpolated material as unimportant -- it may serve larger-scale functions
+- Failing to recognize that an interpolation can be removed to restore normative structure
 
 # Common Confusions
 - Interpolation vs. extension: interpolation lacks motivic connection with the preceding material; extension is motivically continuous with what precedes it
@@ -55,4 +78,7 @@ Interpolations expand the phrase without disrupting the fundamental formal logic
 - Interpolation is a neutral term — it does not imply the material is unimportant, only that it is formally insertional
 
 # Source Reference
-Chapter 4: Period, "Deviations from the Norm — Symmetrical Deviations" section (PDF page 60)
+Chapter 4: Period, "Deviations from the Norm -- Symmetrical Deviations" section (PDF page 60)
+
+# Verification Notes
+Upgraded to v3: added Prerequisites, Key Properties, Relationships, Common Errors, Verification Notes. Core content preserved from original extraction.

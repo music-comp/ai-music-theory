@@ -3,13 +3,13 @@ concept: Second Part of Binary
 slug: second-part-of-binary
 category: formal-functions
 tier: intermediate
-source: "Classical Form: A Theory of Formal Functions for the Instrumental Music of Haydn, Mozart, and Beethoven"
+source: "Analyzing Classical Form: An Approach for the Classroom"
 source_slug: classical-form
 authors: "William E. Caplin"
-chapter: "Small Binary"
-chapter_number: 7
-pdf_page: 98
-section: "Second Part"
+chapter: "The Small Binary"
+chapter_number: 8
+pdf_page: 262
+section: "Part 2"
 extraction_confidence: high
 aliases: []
 prerequisites: ["small-binary"]
@@ -19,46 +19,70 @@ contrasts_with: ["recapitulation-in-small-ternary"]
 answers_questions:
   - "How is the second part of a small binary constructed?"
   - "What functions can appear in the second part?"
+  - "What are the four patterns for material following a contrasting middle?"
 ---
 
 # Quick Definition
 The concluding eight-measure section of a small binary, which always ends with a PAC in the home key and may or may not contain a contrasting middle, but crucially lacks a genuine recapitulation of the opening basic idea.
 
 # Core Definition
-The second part of a small binary begins, in the majority of cases, with a four-measure unit identical in organization to a contrasting middle (B section) of the small ternary. The material that follows the B section can express various functions -- continuation, cadential, or consequent -- but never a recapitulation. Less frequently, the second part contains no contrasting middle and is constructed instead as a single theme-like unit, often with sentential or periodic characteristics. The melodic material opening the second part usually derives from the basic idea of the first part, reinforcing bipartite structure and dampening expectations for a subsequent recapitulation.
+The second part begins, in the majority of cases, with a four-measure unit functioning as a contrasting middle. Four patterns typically follow: (1) contrasting middle + continuation, (2) contrasting middle + cadential (supported by ECP), (3) contrasting middle + new consequent (using a *new* basic idea), (4) contrasting middle + further dominant prolongation (often resolving deceptively to VI before PAC). Less frequently, the second part contains no contrasting middle and is organized as a single theme-like unit (often sentential) or as continuation/cadential functions exclusively. The opening material usually derives from the first part's basic idea, reinforcing bipartite structure.
+
+# Prerequisites
+- **Small binary**: The overarching form
+
+# Key Properties
+1. Normatively 8 measures, repeated together with first part
+2. Always concludes with PAC in the home key
+3. No genuine recapitulation of the basic idea in home-key tonic
+4. Four typical patterns when contrasting middle is present
+5. Opening material usually derives from the first part's basic idea
+6. Even if basic idea material appears, it serves continuation/cadential function, not recapitulation
+7. When contrasting middle is absent, the entire part may be continuational or sentential
+8. May suggest various functions without fully realizing any single conventional theme type
 
 # Construction / Recognition
-1. Normatively 8 measures, usually repeated together with the first part
-2. Always concludes with PAC in the home key
-3. **With contrasting middle**: B section (4 mm.) followed by continuation, cadential, consequent, or further dominant prolongation (4 mm.)
-4. **Without contrasting middle**: Single theme-like unit (often sentential or periodic)
-5. Opening material usually derives from the first part's basic idea (motivic connection)
-6. No genuine recapitulation of the basic idea in home-key tonic
-7. Even if basic idea appears, it serves a different function (continuation, cadential) rather than recapitulation
+1. Check whether the opening suggests a contrasting middle (dominant emphasis, model-sequence)
+2. If contrasting middle present: identify which of four patterns follows (continuation, cadential, new consequent, further dominant prolongation)
+3. If no contrasting middle: identify the overall organization (sentence, continuation, cadential)
+4. Confirm PAC in home key at the end
+5. Verify that no genuine recapitulation of the basic idea occurs
 
 # Context & Application
-The second part of the small binary must confirm the home key through PAC while avoiding the recapitulatory return that would convert the form into a small ternary. The motivic connection between part openings projects bipartite unity. When the first part is built as a sentence, composing a four-measure recapitulation is difficult (unlike with a period), making the small binary form more natural for sentential expositions within a 16-measure framework.
+The second part must confirm the home key through PAC while avoiding the recapitulatory return that would convert the form into a small ternary. The motivic connection between part openings projects bipartite unity. The four patterns for post-B material offer significant compositional variety while maintaining the fundamental binary character.
 
 # Examples
-- Haydn, Piano Trio in A-flat, Hob. XV:14, ii, mm. 9-16 (contrasting middle + continuation from first part, tonally adjusted)
-- Beethoven, Fifteen Variations, Op. 35, mm. 74-81 (contrasting middle as standing on dominant + cadential phrase)
-- Beethoven, Violin Sonata in A, Op. 30/1, iii, mm. 17-24 (contrasting middle as standing on dominant + consequent)
-- Beethoven, String Quartet in C-sharp Minor, Op. 131, iv, mm. 17-32 (no contrasting middle; sentence with dominant-tonic reversed presentation)
-- Haydn, Piano Sonata in E, Hob. XVI:31, iii, mm. 9-16 (no clear contrasting middle; large continuation)
+- Haydn, Piano Trio in A-flat, Hob. XV:14, ii, mm. 9-16: contrasting middle + continuation (modeled on first part's continuation, tonally adjusted)
+- Beethoven, Fifteen Variations, Op. 35, mm. 74-81: contrasting middle (standing on dominant) + cadential phrase (ECP)
+- Beethoven, Violin Sonata in A, Op. 30/1, iii, mm. 17-24: contrasting middle (standing on dominant) + new consequent
+- Haydn, Piano Sonata in E, Hob. XVI:22, iii, mm. 9-16: contrasting middle + further dominant prolongation resolving deceptively to VI
+- Beethoven, String Quartet in C-sharp Minor, Op. 131, iv, mm. 17-32: no contrasting middle; sentence with reversed dominant-tonic presentation
 
-# Related Concepts
-- Small Binary
-- First Part of Binary
-- Contrasting Middle in Binary
-- Binary Without Contrasting Middle
-- Contrasting Middle
-- Recapitulation in Small Ternary
+# Relationships
+## Builds Upon
+- Small binary (the overarching form)
+- Contrasting middle (may or may not be present)
+
+## Related
+- Contrasting middle in binary (specific treatment of B section)
+- Binary without contrasting middle (alternative organization)
+
+## Contrasts With
+- Recapitulation in small ternary: the small ternary's A' brings back the basic idea; the small binary's part 2 does not
+
+# Common Errors
+- Assuming material resembling the basic idea is a recapitulation -- check the harmonic function (if cadential or continuational, not recapitulatory)
+- Assuming a contrasting middle in the second part converts the binary into a ternary -- only recapitulation would do that
+- Forcing a single theme-type label on the entire second part when it may combine multiple functional elements
 
 # Common Confusions
-- Material resembling the basic idea may appear in the second part, but if it serves continuation or cadential function (not recapitulatory function), the form remains a binary
-- A contrasting middle in the second part does NOT convert the binary into a ternary -- only a subsequent recapitulation would do that
-- The grouping structure (2x2)+4 in the second part may suggest a sentence, but the harmonic content (dominant prolongation) prevents a true sentence from emerging
-- A period-like relationship may be suggested between the two parts (HC then PAC), but this does not make the overall form a period
+- Material resembling the basic idea may appear but serves continuation or cadential function, not recapitulatory
+- A contrasting middle in part 2 does NOT convert the binary into a ternary
+- A period-like relationship (HC then PAC) between the two parts does not make the overall form a period
+- A "new consequent" uses a NEW basic idea -- if it used the original basic idea, it would create a recapitulation
 
 # Source Reference
-Chapter 7: Small Binary, "Second Part" section, pp. 89-93 (PDF page 98)
+Chapter 8: The Small Binary, "Part 2" section, pp. 262; "More Details -- Part 2" pp. 268-275 (PDF page 262).
+
+# Verification Notes
+The four typical patterns are enumerated on p. 262. The motivic connection between part openings is discussed on p. 261. The absence of contrasting middle is treated on pp. 274-275. All four patterns are illustrated with examples in the source text.

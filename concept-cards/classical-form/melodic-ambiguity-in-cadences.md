@@ -41,12 +41,33 @@ This ambiguity commonly occurs at the end of antecedent phrases where the melody
 # Examples
 - Beethoven, Bagatelle in D, Op. 33/6, mm. 1-8: the antecedent's final melody has both D (^1) and F-sharp (^3) at the cadence; the final D is understood as an embellishment (chordal skip) of the more fundamental F-sharp; the subsequent consequent closes with an unambiguous PAC, confirming the period design
 
-# Related Concepts
-- Antecedent Phrase
-- Weak Cadential Closure
-- Imperfect Authentic Cadence
-- Perfect Authentic Cadence
-- Period
+# Prerequisites
+- **Antecedent** -- the phrase context in which cadential ambiguity most commonly arises
+- **Weak cadential closure** -- the antecedent requires a weak cadence, making the PAC vs. IAC distinction critical
+
+# Key Properties
+1. Melodic ornamentation can obscure whether the final note is on ^1 (PAC) or ^3 (IAC)
+2. A final leap from ^3 to ^1 may be an embellishment ("chordal skip") of the more fundamental ^3
+3. Formal context inclines the listener toward the weaker interpretation (IAC) for antecedents
+4. An opening four-measure phrase does not normally end with full harmonic and melodic closure
+5. The presence of a genuine consequent ending with unambiguous PAC confirms the period design
+
+# Relationships
+## Builds Upon
+- Cadential strength hierarchy (PAC > IAC > HC)
+- Antecedent function (requires weak cadential closure)
+## Enables
+- Correct identification of period form despite ambiguous surface melodies
+## Related
+- Weak cadential closure
+- Reinterpreted half cadence (another type of cadential ambiguity)
+## Contrasts With
+- Unambiguous cadences where the final melodic note is clearly ^1 or ^3
+
+# Common Errors
+- Mechanically determining cadence type from the literal last note without considering melodic context
+- Ignoring the formal function of the phrase when determining cadence type
+- Treating all cadential ambiguity as analytical failure rather than compositional subtlety
 
 # Common Confusions
 - The determination of PAC vs. IAC is not always a matter of which note is literally last — the structural weight and formal context of the melodic line must be considered
@@ -54,4 +75,7 @@ This ambiguity commonly occurs at the end of antecedent phrases where the melody
 - When in doubt, let the formal context guide interpretation — if the phrase clearly functions as an antecedent, it almost certainly ends with a weak cadence
 
 # Source Reference
-Chapter 4: Period, "Irregular Closure of Antecedent Phrase — Melodic ambiguity" section (PDF page 60)
+Chapter 4: Period, "Irregular Closure of Antecedent Phrase -- Melodic ambiguity" section (PDF page 60)
+
+# Verification Notes
+Upgraded to v3: added Prerequisites, Key Properties, Relationships, Common Errors, Verification Notes. Core content preserved from original extraction.

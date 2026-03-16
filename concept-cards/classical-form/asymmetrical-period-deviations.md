@@ -43,12 +43,33 @@ Asymmetrical deviations create a sense of surprise and heightened expressivity. 
 - Mozart, Piano Sonata in C, K. 279/189d, iii, mm. 1-10: 4+6 period; consequent expanded by two interpolated measures (mm. 7-8) that belong to neither the basic idea nor the contrasting idea
 - Mozart, Piano Sonata in A Minor, K. 310/300d, iii, mm. 1-20: 4+16 period; consequent's expected PAC at m. 16 thwarted by deceptive cadence, motivating extension with repeated cadential idea (melodic variant reaching climactic high A); PAC finally achieved at m. 20
 
-# Related Concepts
-- Period
-- Symmetrical Period Deviations
-- Deceptive Cadence
-- Interpolation
-- Consequent Phrase
+# Prerequisites
+- **Period** -- the normative form from which deviations occur
+
+# Key Properties
+1. Antecedent maintains its normative four-measure length
+2. Consequent is expanded or extended beyond four measures
+3. Creates an imbalanced grouping structure (e.g., 4+6, 4+8, 4+16)
+4. Common causes: deceptive cadence, interpolation, expansion of contrasting idea or ECP
+5. The regular antecedent sets up normative expectations that the expanded consequent disrupts
+6. Often used for dramatic effect, building momentum toward a climactic PAC
+
+# Relationships
+## Builds Upon
+- Period (the normative 4+4 form)
+## Enables
+- Dramatically extended consequent phrases
+- Climactic cadential closures after deceptive cadences
+## Related
+- Deceptive cadence (a common cause of consequent extension)
+- Symmetrical period deviations (the complementary category)
+## Contrasts With
+- Symmetrical period deviations (both phrases altered equally)
+
+# Common Errors
+- Confusing extension (after expected closure point) with expansion (before expected closure point)
+- Failing to recognize the regular antecedent as the norm that makes the deviation perceptible
+- Treating asymmetrical periods as defective rather than expressive
 
 # Common Confusions
 - Asymmetrical does not mean "irregular" — these are standard compositional techniques, just ones that break the 4+4 balance
@@ -56,4 +77,7 @@ Asymmetrical deviations create a sense of surprise and heightened expressivity. 
 - The normative antecedent is what makes the consequent's alteration perceptible as a deviation
 
 # Source Reference
-Chapter 4: Period, "Deviations from the Norm — Asymmetrical Deviations" section (PDF page 60)
+Chapter 4: Period, "Deviations from the Norm -- Asymmetrical Deviations" section (PDF page 60)
+
+# Verification Notes
+Upgraded to v3: added Prerequisites, Key Properties, Relationships, Common Errors, Verification Notes. Core content preserved from original extraction.

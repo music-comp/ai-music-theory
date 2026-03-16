@@ -39,11 +39,33 @@ Phrase-structural compression creates urgency and conciseness within a period. I
 # Examples
 - Beethoven, String Quartet in G, Op. 18/2, ii, mm. 1-6: symmetrical 3+3 period; antecedent has 2+1 grouping (two-measure basic idea, one-measure HC); consequent has 1+2 grouping (one measure of basic idea broken off, two-measure contrasting idea with PAC); the 3+3 symmetry at phrase level complemented by asymmetrical 2+1, 1+2 at the idea level
 
-# Related Concepts
-- Period
-- Symmetrical Period Deviations
-- Sentence (compressed continuation)
-- Continuation Phrase Deviations
+# Prerequisites
+- **Period** -- the normative form being compressed
+- **Compression** -- the general technique of shortening formal units
+
+# Key Properties
+1. Phrases shorter than the normative four measures
+2. Essential functions still present: basic idea, contrasting idea, cadence
+3. Typically applied symmetrically (both phrases compressed equally)
+4. Internal idea groupings may be asymmetrical despite phrase-level symmetry
+5. Condenses essential formal elements into a smaller time span
+6. Demonstrates flexibility of Caplin's formal categories for non-normative phrase lengths
+
+# Relationships
+## Builds Upon
+- Period (the normative form being compressed)
+- Compression (the general technique)
+## Enables
+- Concise, urgent period structures
+## Related
+- Symmetrical period deviations (the broader category)
+## Contrasts With
+- Extension and expansion (which lengthen phrases rather than shorten them)
+
+# Common Errors
+- Assuming compression eliminates formal functions (it condenses them, not removes them)
+- Confusing compression with truncation (compression preserves formal completeness)
+- Missing the interplay between phrase-level symmetry and idea-level asymmetry
 
 # Common Confusions
 - Compression does not eliminate formal functions — it condenses them into fewer measures; all essential components must still be identifiable
@@ -51,4 +73,7 @@ Phrase-structural compression creates urgency and conciseness within a period. I
 - The internal asymmetry of ideas (2+1, 1+2) within a symmetrical phrase structure (3+3) operates at a different analytical level than the phrase-level symmetry
 
 # Source Reference
-Chapter 4: Period, "Deviations from the Norm — Symmetrical Deviations" section (PDF page 60)
+Chapter 4: Period, "Deviations from the Norm -- Symmetrical Deviations" section (PDF page 60)
+
+# Verification Notes
+Upgraded to v3: added Prerequisites, Key Properties, Relationships, Common Errors, Verification Notes. Core content preserved from original extraction.
