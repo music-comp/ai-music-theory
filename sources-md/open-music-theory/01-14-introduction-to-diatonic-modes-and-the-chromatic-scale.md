@@ -2,7 +2,7 @@
 source: Open Music Theory
 part: "I. Fundamentals"
 part_number: 1
-chapter: "Introduction to Diatonic Modes and the Chromatic "Scale""
+chapter: 'Introduction to Diatonic Modes and the Chromatic "Scale"'
 chapter_number: 14
 url: https://viva.pressbooks.pub/openmusictheory/
 license: CC-BY-SA
