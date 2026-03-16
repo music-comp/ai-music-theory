@@ -1,68 +1,119 @@
 ---
 concept: Secundal Chord Inversions
-category: theory
+slug: secundal-chord-inversions
+category: chords
+subcategory: secundal-chords
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Chords by Seconds"
 chapter_number: 6
+section: "Three-Note Chords by Seconds"
 pdf_page: 120
-unit: null
-authors: Vincent Persichetti
+extraction_confidence: high
+aliases:
+  - "inversions of secundal chords"
+  - "secundal inversion"
+prerequisites:
+  - three-note-secundal-chord
+  - secundal-chord-types
+extends:
+  - three-note-secundal-chord
+related:
+  - dissonant-tone-in-secundal-harmony
+  - secundal-chord-spacing
+contrasts_with:
+  - quartal-chord-inversion
+answers_questions:
+  - "How many inversions does a three-note secundal chord have?"
+  - "How does inversion change the interval content of a secundal chord?"
+  - "What is the relationship between seconds and sevenths in inversion?"
 ---
 
 # Quick Definition
-The two possible inversions of each three-note secundal chord type, created by transferring the lowest note up an octave, which transforms seconds into sevenths and changes the dissonant-tone location within the chord.
 
-# Formal Definition
-Two inversions of each three-note secundal chord are possible. When inverted, some seconds become sevenths (the inversion of the second). The dissonant tone's position changes depending on the inversion and chord type.
+The two possible inversions of each three-note secundal chord type, created by transferring the lowest note up an octave, transforming some seconds into sevenths and changing the dissonant-tone location.
 
-# Musical/Mathematical Formulation
-Inversion structure:
-- **Fundamental position**: 2nd-2nd (both intervals are seconds)
-- **First inversion**: 2nd-7th (upper interval becomes seventh)
-- **Second inversion**: 7th-2nd (lower interval becomes seventh)
+# Core Definition
 
-Dissonant tone location by position and type:
-- Fundamental position (all types): Dissonant tone = middle note (the "second" of the chord)
-- Second inversion (all types): Dissonant tone = middle note (the "second" of the chord)
-- First inversion (most types): Dissonant tone = top note (the "third" of the chord)
-- First inversion (minor-major): Dissonant tone = bottom note (the "root")
-- First inversion (major-major): Root becomes dissonant if it lies below the third
+"Two inversions of each are possible" (Persichetti, p. 121). When inverted, seconds become sevenths (their inversional complement). "Chords by seconds may be arranged in sevenths, as chords by thirds may be arranged in sixths and chords by fourths in fifths" (p. 121). The dissonant tone's position changes with each inversion and chord type.
 
-Seventh spacing equivalence:
-- Chords by seconds in seventh arrangement parallel:
-  - Chords by thirds in sixth arrangement
-  - Chords by fourths in fifth arrangement
+# Prerequisites
 
-# Musical Context/Application
-Understanding inversions is crucial for voice-leading in secundal harmony. The dissonant tone behaves differently in each inversion, affecting how voices should be approached and left. This knowledge allows composers to create smooth secundal progressions despite the inherently dissonant material.
+- **Three-note secundal chord** — Inversions are operations on this fundamental unit
+- **Secundal chord types** — The behavior of the dissonant tone under inversion depends on type
 
-The seventh-spaced inversions provide:
-- More resonant voicings
-- Greater linear freedom
-- Clearer voice definition
-- Reduced muddiness in lower registers
+# Key Properties
+
+1. Fundamental position: intervals are 2nd + 2nd
+2. First inversion: intervals are 2nd + 7th (lower note moved up an octave)
+3. Second inversion: intervals are 7th + 2nd
+4. Seventh spacing parallels how tertian chords rearrange in sixths and quartal chords in fifths
+5. The dissonant tone shifts position with each inversion
+6. Open-position (seventh) voicing provides greater resonance and linear freedom
+
+# Construction / Recognition
+
+## To Invert a Secundal Chord
+1. Start with fundamental position (2nd + 2nd)
+2. First inversion: move bottom note up one octave, yielding 2nd + 7th
+3. Second inversion: from fundamental, move both lower notes up, or from first inversion move bottom note up, yielding 7th + 2nd
+
+## To Identify Inversion
+1. Check interval content: two seconds = fundamental; one second + one seventh = inverted
+2. Position of the seventh (upper or lower) distinguishes first from second inversion
+
+# Context & Application
+
+Understanding inversions is crucial for voice-leading in secundal harmony. The seventh-spaced inversions provide more resonant voicings, greater linear freedom, clearer voice definition, and reduced muddiness in lower registers. The inversion choice directly affects which chord member is the dissonant tone, governing approach and departure voice-leading.
 
 # Examples
-Ex. 6-2: Two inversions of each four-note type
-Ex. 6-3: Secundal chords arranged in sevenths
-Ex. 6-7: Dissonant tone identification in each position
 
-Source material:
+**Ex. 6-2** (p. 121): Two inversions of each four chord types
+**Ex. 6-3** (p. 121): Secundal chords arranged in sevenths
+**Ex. 6-7** (p. 122): Dissonant tone identification in each position
+
+**Composer examples:**
 - Bela Bartok: String Quartet No. 3, p. 3 (Boosey)
 - Carl Ruggles: Men and Mountains, p. 12 (New Music)
 
-# Related Concepts
-- Three-Note Secundal Chord
-- Secundal Chord Types
-- Dissonant Tone in Secundal Harmony
-- Secundal Chord Spacing
-- Voice-Leading
+# Relationships
+
+## Builds Upon
+- **three-note-secundal-chord** — Inversions are operations on this chord
+
+## Enables
+- **dissonant-tone-in-secundal-harmony** — Inversion determines which member is dissonant
+- **secundal-chord-spacing** — Seventh voicing is a product of inversion
+
+## Related
+- **interval-inversion** — The general principle that seconds invert to sevenths
+
+## Contrasts With
+- **quartal-chord-inversion** — Quartal inversions produce fifths; secundal inversions produce sevenths
+
+# Common Errors
+
+- **Error**: Assuming the dissonant tone stays on the same chord member across inversions
+  **Correction**: The dissonant tone shifts position with each inversion; always re-identify it
+- **Error**: Treating seventh-spaced chords as a different chord type
+  **Correction**: Seventh spacing is an inversion of seconds; the chord retains its secundal identity
 
 # Common Confusions
-- "Inversion" in secundal context follows the same principle as tertian inversion (lowest note moved up)
-- The dissonant tone shifts position with inversion; it is not always the same chord member
-- Seventh spacing creates inversions but maintains secundal character
-- The first inversion of minor-major is exceptional; the root (not third) is most dissonant
+
+- **Confusion**: Inversion in secundal context works differently than in tertian context
+  **Clarification**: The same principle applies (lowest note moved up an octave); the resulting interval transformation differs because seconds invert to sevenths rather than thirds to sixths
+- **Confusion**: The first inversion of minor-major follows the general dissonant-tone rule
+  **Clarification**: It is exceptional; the root (not the third) is most dissonant in m-M first inversion (p. 122)
 
 # Source Reference
-Chapter 6: Chords by Seconds, pages 121-123
+
+Chapter 6: Chords by Seconds, pages 121-123. Ex. 6-2, 6-3, 6-7.
+
+# Verification Notes
+
+- Core Definition: Direct quotation from p. 121
+- Key Properties: All items explicit in source
+- Confidence: HIGH — systematic presentation with examples
+- Re-extracted from v2 card; preserved: inversion interval table, dissonant-tone location details

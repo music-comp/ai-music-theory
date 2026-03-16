@@ -1,82 +1,88 @@
 ---
 concept: Isorhythm
-category: technique
+slug: isorhythm
+category: rhythm-meter
+subcategory: timing-dynamics
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Timing and Dynamics"
 chapter_number: 10
 pdf_page: 211
-unit: null
-authors: Vincent Persichetti
+section: "Rhythm"
+extraction_confidence: high
+aliases:
+  - "talea"
+prerequisites:
+  - meter-and-rhythm
+extends: []
+related:
+  - isomelos
+  - ostinato
+contrasts_with:
+  - isomelos
+answers_questions:
+  - "What is isorhythm and how does it differ from ostinato?"
+  - "How can isorhythm function beyond aural perception?"
 ---
 
 # Quick Definition
+A compositional technique where one or more voices of changing notes adhere to a single repeated rhythmic pattern (talea), with pitch levels free while rhythm is fixed.
 
-A compositional technique where one or more voices of changing notes adhere to a single repeated rhythmic pattern, with pitch levels free while rhythm is fixed.
+# Core Definition
+When one or more voices of changing notes adhere to a single rhythmic pattern, **isorhythm** exists. The pitch levels are free and used with the repeated rhythmic pattern (talea). Different voices may follow individual isorhythmic patterns, and these patterns may vary in length. When the pattern is long, the device is often beyond immediate aural perception, functioning as structural rather than surface organization. In a combination of isorhythm and isomelos, the melodic and rhythmic patterns may start together, but one pattern may begin repetition before the other (Ch. 10, pp. 216-218).
 
-# Formal Definition
+# Prerequisites
+- **Meter and rhythm** -- understanding rhythmic organization
 
-**Isorhythm** (from Greek "iso" = same, "rhythmos" = rhythm) exists when one or more voices of changing notes adhere to a single repeated rhythmic pattern. The pitch levels are free and used with the repeated rhythmic pattern. Different voices may follow individual isorhythmic patterns, and these patterns may vary in length. When the pattern is long, the device is often beyond immediate aural perception, functioning as a structural rather than surface organizing principle.
+# Key Properties
+1. Repeated rhythmic pattern (talea) with free pitch content (color)
+2. Different voices may have individual isorhythmic patterns
+3. Patterns may vary in length
+4. Long patterns may be beyond immediate aural perception
+5. Functions as structural organizing principle
+6. Can combine with isomelos, with patterns phasing against each other
+7. Connects to medieval isorhythmic motet tradition
 
-# Musical/Mathematical Formulation
+# Construction / Recognition
+- Identify a recurring rhythmic pattern in one or more voices
+- Verify that the pitch content changes with each pattern repetition
+- Check whether multiple voices use independent isorhythmic patterns
+- Note pattern length and whether the device operates perceptibly or structurally
 
-Isorhythmic structure:
-- **Talea**: The repeated rhythmic pattern
-- **Color**: The melodic/pitch content (free, not repeated in sync)
-
-Pattern interaction:
-- Single voice: One talea repeating with free pitches
-- Multiple voices: Each voice may have its own talea
-- Long patterns: May function below conscious perception
-
-When combined with isomelos:
-- Melodic and rhythmic patterns may start together
-- One pattern may begin repetition before the other
-- Creates complex phasing relationships
-
-# Musical Context/Application
-
-Isorhythm provides:
-- Structural coherence through rhythmic repetition
-- Freedom in pitch content within rhythmic framework
-- Layered complexity when different voices use different patterns
-- Connection to medieval isorhythmic motet tradition
-
-Applications include:
-- Large-scale structural organization
-- Creating unity without melodic repetition
-- Generating rhythmic ostinato with harmonic flexibility
-- Modernist revival of medieval techniques
+# Context & Application
+Isorhythm provides structural coherence through rhythmic repetition, freedom in pitch content within a rhythmic framework, and layered complexity when different voices use different patterns. The technique revives medieval practices for twentieth-century compositional purposes.
 
 # Examples
+**Example 1** (Ch. 10, Ex. 10-11, p. 216): Single voice with repeated rhythmic pattern.
+**Example 2** (Ch. 10, Ex. 10-12, p. 216): Different voices following individual isorhythmic patterns.
+**Example 3** (Ch. 10, Ex. 10-14, p. 217): Isorhythm combined with isomelos, patterns phasing.
 
-**From source (Ex. 10-11, Ex. 10-12, Ex. 10-14):**
-- Single voice adhering to repeated rhythmic pattern
-- Different voices following individual isorhythmic patterns
-- Varying pattern lengths
-- Isorhythm combined with isomelos
+Source material: Barber, Piano Sonata, p. 38; Britten, Peter Grimes, p. 172; Copland, Piano Sonata, p. 14; Stravinsky, Symphony of Psalms, pp. 31-32.
 
-**Recommended source material:**
-- Samuel Barber, Piano Sonata, p. 38
-- Benjamin Britten, Peter Grimes, p. 172
-- Aaron Copland, Piano Sonata, p. 14
-- Igor Stravinsky, Symphony of Psalms, pp. 31-32
+# Relationships
+## Builds Upon
+- Meter and rhythm (isorhythm organizes rhythm systematically)
+## Enables
+- Large-scale structural organization through rhythmic repetition
+## Related
+- Isomelos (inverse technique: fixed pitch, free rhythm)
+- Ostinato (repeats both rhythm and pitch; isorhythm repeats rhythm only)
+## Contrasts With
+- Isomelos (fixed rhythm vs. fixed pitch)
 
-# Related Concepts
-
-- Isomelos
-- Ostinato
-- Talea
-- Color (isorhythmic)
-- Medieval Motet
-- Rhythmic Pattern
-- Structural Rhythm
+# Common Errors
+- Confusing isorhythm with ostinato (ostinato repeats both rhythm and pitch)
+- Assuming isorhythm must always be aurally perceptible
 
 # Common Confusions
-
-- **Isorhythm vs. ostinato**: Ostinato typically repeats both rhythm and pitch; isorhythm repeats only rhythm while pitch varies.
-- **Audible vs. structural**: Long isorhythmic patterns function structurally even when not consciously perceived.
-- **Historical vs. modern**: While originating in medieval music, isorhythm was revived and adapted by twentieth-century composers.
+- **Isorhythm vs. ostinato**: Ostinato repeats both rhythm and pitch; isorhythm repeats only rhythm
+- **Audible vs. structural**: Long patterns function structurally even when not consciously perceived
+- **Historical vs. modern**: Medieval origin, but adapted for twentieth-century use
 
 # Source Reference
+Chapter 10: Timing and Dynamics, pp. 216-218 (pdf pp. 216-218)
 
-Chapter 10: Timing and Dynamics, pages 216-218
+# Verification Notes
+Upgraded from old card. Preserved: talea/color terminology, all composer examples, structural function, medieval connection. Added: v3 structure, slug references, phasing concept with isomelos.

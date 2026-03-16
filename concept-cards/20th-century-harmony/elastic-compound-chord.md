@@ -1,69 +1,97 @@
 ---
 concept: Elastic Compound Chord
-category: theory
+slug: elastic-compound-chord
+category: chords
+subcategory: compound-chords
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Compound and Mirror Harmony"
 chapter_number: 8
+section: "Compound Construction"
 pdf_page: 162
-unit: null
-authors: Vincent Persichetti
+extraction_confidence: high
+aliases:
+  - "small compound chord"
+  - "flexible compound chord"
+prerequisites:
+  - compound-chord
+extends:
+  - compound-chord
+related:
+  - compound-chord-progression
+contrasts_with:
+  - percussive-compound-chord
+answers_questions:
+  - "What makes smaller compound chords elastic?"
+  - "How many tones characterize an elastic compound chord?"
 ---
 
 # Quick Definition
 
 Smaller compound chords of five or six discreetly placed tones that possess fluidity and flexibility due to the limited number of varied intervals.
 
-# Formal Definition
+# Core Definition
 
-An **elastic compound chord** is a smaller compound formation, typically of five or six tones, that possesses an elastic quality arising from the fluidity of a limited number of varied intervals. Unlike larger compound chords that tend toward inflexibility and percussive or sustained usage, these smaller formations can move more freely in harmonic progressions while retaining the heterogeneous interval character of compound harmony.
+"Smaller compound chords of five or six discreetly placed tones have an elastic quality because of the fluidity of the smaller number of varied intervals" (Persichetti, p. 167).
 
-# Musical/Mathematical Formulation
+# Prerequisites
 
-Characteristics:
-- **Size**: Five or six discrete tones (compared to larger compound formations)
-- **Interval variety**: Multiple interval types present, but fewer total intervals
-- **Placement**: Discreet (carefully chosen) positioning of each tone
-- **Result**: Fluidity and adaptability in progression
+- **Compound chord** — Elastic compound chords are a size variant of compound harmony
 
-The reduced number of intervals allows:
-- More flexible voice leading
-- Smoother connection to adjacent chords
-- Greater responsiveness to melodic demands
+# Key Properties
 
-# Musical Context/Application
+1. Five or six discrete tones (smaller than typical compound formations)
+2. Carefully chosen ("discreet") placement of each tone
+3. Elastic quality from fluidity of limited interval variety
+4. More flexible voice leading than larger compound formations
+5. Smoother connection to adjacent chords
+6. Greater responsiveness to melodic demands
 
-Elastic compound chords enable:
-- Compound harmony in passages requiring harmonic motion
-- Integration with other harmonic types (tertian, quartal, secundal)
-- More continuous musical flow than large compound formations
-- Compound color without the weight and inflexibility of massive structures
+# Construction / Recognition
 
-These chords are particularly useful when:
-- Harmonic variety is needed within a compound context
-- Compound harmony must participate in active progression
-- The density of larger formations is inappropriate
+## To Construct
+1. Select five or six tones with heterogeneous intervals
+2. Place each tone with aural care for balance and fluidity
+3. Verify the formation moves easily to adjacent chords
+4. Ensure the chord maintains compound character (mixed intervals, not tertian/quartal/secundal)
+
+# Context & Application
+
+Elastic compound chords enable compound harmony in passages requiring active harmonic motion. They integrate with other harmonic types and provide compound color without the weight and inflexibility of massive structures. Useful when harmonic variety is needed within a compound context or when density of larger formations is inappropriate.
 
 # Examples
 
-**From source (Ex. 8-9):**
-- Five- and six-note compound chords with elastic quality
-- Discreet tone placement for maximum fluidity
+**Ex. 8-9** (p. 167): Five- and six-note compound chords with elastic quality
 
-# Related Concepts
+# Relationships
 
-- Compound Chord
-- Harmonic Density
-- Voice Leading
-- Chord Spacing
-- Flexible Harmony
-- Mixed Intervals
+## Builds Upon
+- **compound-chord** — A size variant of compound harmony
+
+## Related
+- **compound-chord-progression** — Elastic chords allow more active progression
+
+## Contrasts With
+- **percussive-compound-chord** — Large, inflexible formations vs. small, elastic ones
+
+# Common Errors
+
+- **Error**: Assuming any five-note chord with mixed intervals is elastic
+  **Correction**: Elastic quality requires careful ("discreet") placement; random distribution may not produce fluidity
 
 # Common Confusions
 
-- **Elastic vs. inflexible compound**: The distinction is primarily one of size and resulting flexibility, not of fundamental chord type.
-- **Discreet vs. indiscriminate placement**: Elastic quality requires careful placement; random distribution of five or six tones may not produce fluidity.
-- **Compound vs. other chord types**: Even elastic compound chords retain the heterogeneous interval character that distinguishes compound from tertian, quartal, or secundal formations.
+- **Confusion**: The distinction is about chord type rather than size
+  **Clarification**: Elastic compound chords are still compound in character; the distinction is primarily about size and resulting flexibility
 
 # Source Reference
 
-Chapter 8: Compound and Mirror Harmony, page 167
+Chapter 8: Compound and Mirror Harmony, page 167. Ex. 8-9.
+
+# Verification Notes
+
+- Core Definition: Direct quotation from p. 167
+- Confidence: HIGH — explicit description
+- Re-extracted from v2 card; preserved: five-six tone specification, "discreet" placement principle

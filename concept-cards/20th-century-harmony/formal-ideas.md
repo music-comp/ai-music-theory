@@ -1,37 +1,73 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Formal Ideas
-category: theory
+slug: formal-ideas
+
+# === CLASSIFICATION ===
+category: form
+subcategory: synthesis
+tier: advanced
+
+# === PROVENANCE ===
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Harmonic Synthesis"
 chapter_number: 13
 pdf_page: 270
-unit: null
-authors: Vincent Persichetti
+section: "Theme and Form Ideas"
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS ===
+aliases:
+  - "formal generation"
+  - "form-shaping ideas"
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - theme-and-form
+extends: []
+related:
+  - thematic-conception
+  - harmonic-synthesis
+  - compositional-freedom
+contrasts_with: []
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What kinds of musical ideas can shape formal structure?"
+  - "How do harmonic events suggest formal direction?"
+  - "Can a single harmonic idea generate an entire work's form?"
 ---
 
 # Quick Definition
-Specific musical concepts that shape formal structure, arising from the interaction of harmonic, melodic, and rhythmic elements during the creative process.
+Specific musical concepts -- such as a dissonant chord refusing consonance, a succession of chords suggesting large-scale tonal shape, or harmonic brightening correlated with rhythmic deceleration -- that emerge during composition to stimulate and shape formal structure.
 
-# Formal Definition
-It is during the growth of the compositional process that specific ideas for shaping the formal structure stimulate creative writing. Association of musical ideas is created by the melodic motif, the harmonic succession, and the rhythmic pattern; none of these three formal elements becomes functional until it is transformed by the creative musical process.
+# Core Definition
+It is during the growth of the compositional process that specific ideas for shaping the formal structure stimulate creative writing. Association of musical ideas is created by the melodic motif, the harmonic succession, and the rhythmic pattern; none of these three formal elements becomes functional until it is transformed by the creative musical process. A succession of opening chords may, in microcosm, suggest the tonal shape of the entire work.
 
-# Musical/Mathematical Formulation
-Formal idea sources:
-- Simple chords fighting dissonant forces (may succeed or fail)
-- Dissonant chord refusing to become consonant (distinctive progression)
-- Dramatically placed chord succession (indicates formal direction)
-- Initial harmony falling cadentially (basis for work)
-- Harmonic brightening as notes slow, darkening as notes speed
-- Electronic and acoustic combinations (contemporary resources)
+# Prerequisites
+- **Theme and form**: The broader formal relationship
 
-Formal element integration:
-- Melodic motif (creates association)
-- Harmonic succession (creates association)
-- Rhythmic pattern (creates association)
-- Creative transformation (makes elements functional)
+# Key Properties
+1. Formal ideas emerge during composition, not before
+2. Sources: chord resistance, dramatic placement, cadential fall, harmonic-rhythmic correlation
+3. Opening material may suggest entire work's tonal shape in microcosm
+4. Three elements (motif, succession, pattern) become functional only through transformation
+5. Conflicting formal elements produce free and imaginative forms
+6. Modern resources (electronic, acoustic) offer additional formal possibilities
 
-# Musical Context/Application
-Formal ideas emerge from the material itself during composition. A succession of opening chords may suggest the formal shape of an entire work in microcosm. Provocative formal elements may be introduced through specific harmonic-rhythmic relationships (brightening harmony with slowing notes, etc.). Modern resources including electronic manipulation offer additional formal possibilities.
+# Construction / Recognition
+- Note whether opening chords suggest large-scale formal direction
+- Identify harmonic events that generate formal momentum (resistance, resolution, dramatic placement)
+- Look for harmonic-rhythmic correlations (brightening with slowing, darkening with speeding)
+- Track how initial formal ideas develop over the course of a work
+- Assess whether formal ideas emerged from the material or were imposed on it
+
+# Context & Application
+Specific formal generation possibilities include: a succession of simple chords fighting dissonant forces (which may succeed or fail); an extremely dissonant and overbearing chord refusing to become consonant (producing a distinctive progression); a succession of chords dramatically placed (indicating formal direction); a work built upon initial harmony falling cadentially; provocative formal elements introduced by brightening harmony as notes slow and darkening as notes speed; electronic and acoustic combinations creating new formal possibilities. Any tone can succeed any other, any tone can sound with any other, and any group can follow any other -- successful projection depends on contextual and formal conditions.
 
 # Examples
 Works with unique forms demonstrating formal ideas:
@@ -42,17 +78,30 @@ Works with unique forms demonstrating formal ideas:
 - Karlheinz Stockhausen, Klavierstucke I-IV
 - Edgard Varese, Ionisation
 
-# Related Concepts
-- Theme and Form
-- Thematic Transformation
-- Formal Coherence
-- Compositional Process
-- Harmonic-Formal Interaction
+# Relationships
+## Builds Upon
+- Theme and form (the broader formal relationship)
+
+## Enables
+- Unique formal structures in twentieth-century music
+
+## Related
+- Thematic conception (the material generating formal ideas)
+- Harmonic synthesis (the resource palette)
+- Compositional freedom (the governing principle)
+
+# Common Errors
+- Pre-determining form before engaging with materials
+- Treating formal ideas as recipes rather than creative discoveries
+- Ignoring the potential of harmonic-rhythmic correlations
 
 # Common Confusions
-- Formal ideas emerge during composition, not before
-- Elements become functional only through creative transformation
-- Form and material are inseparable
+- **Emergence, not imposition**: Formal ideas emerge from the material during composition, not from a pre-determined plan
+- **Microcosm**: Opening material can suggest the entire work's shape, but this is discovered, not engineered
+- **Functional transformation**: Elements become formally functional only when creatively transformed
 
 # Source Reference
-Chapter 13: Harmonic Synthesis, pages 277-278
+Chapter 13: Harmonic Synthesis, pages 277-278 (PDF page 270).
+
+# Verification Notes
+Re-extracted from v2 card; preserved: composer examples, formal generation possibilities. Added: v3 template, slug references, harmonic-rhythmic correlations, emergence principle.

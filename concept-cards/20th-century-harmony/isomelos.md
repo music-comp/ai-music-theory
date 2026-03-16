@@ -1,80 +1,77 @@
 ---
 concept: Isomelos
-category: technique
+slug: isomelos
+category: rhythm-meter
+subcategory: timing-dynamics
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Timing and Dynamics"
 chapter_number: 10
 pdf_page: 211
-unit: null
-authors: Vincent Persichetti
+section: "Rhythm"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - meter-and-rhythm
+extends: []
+related:
+  - isorhythm
+contrasts_with:
+  - isorhythm
+answers_questions:
+  - "What is the inverse relationship between isomelos and isorhythm?"
 ---
 
 # Quick Definition
-
 A compositional technique where rhythm is free while a melodic pattern is repeated, the inverse of isorhythm.
 
-# Formal Definition
+# Core Definition
+When the rhythm is free with a repeated melodic pattern, a device called **isomelos** exists. This is the inverse of isorhythm: pitch content remains constant while rhythmic values vary. In a combination of isorhythm and isomelos, the melodic and rhythmic patterns may start together, but one of the patterns may begin repetition before the other, creating phasing effects (Ch. 10, pp. 217-218).
 
-**Isomelos** (from Greek "iso" = same, "melos" = melody) is a device where rhythm is free with a repeated melodic pattern. This is the inverse of isorhythm, where the pitch content remains constant while the rhythmic values vary. The technique allows the same melodic contour or pitch sequence to appear in different rhythmic guises, creating varied presentations of consistent melodic material.
+# Prerequisites
+- **Meter and rhythm** -- understanding rhythmic organization
 
-# Musical/Mathematical Formulation
+# Key Properties
+1. Fixed element: melodic pattern (pitch sequence)
+2. Free element: rhythmic values
+3. Inverse of isorhythm (isorhythm: fixed rhythm, free pitch)
+4. Can combine with isorhythm for complex phasing
+5. Allows same melodic contour in different rhythmic guises
 
-Isomelos structure:
-- **Fixed element**: Melodic pattern (pitch sequence)
-- **Free element**: Rhythmic values
+# Construction / Recognition
+- Identify a recurring pitch sequence that appears in different rhythmic configurations
+- Verify that the rhythm changes while the pitch pattern stays fixed
+- Check for combination with isorhythmic patterns and their phasing relationships
 
-Comparison with isorhythm:
-| Technique | Fixed | Free |
-|-----------|-------|------|
-| Isorhythm | Rhythm | Pitch |
-| Isomelos | Pitch | Rhythm |
-
-When combined with isorhythm:
-- Both patterns begin together
-- One pattern may start repetition before the other
-- Creates phasing effects between melodic and rhythmic cycles
-
-# Musical Context/Application
-
-Isomelos provides:
-- Melodic consistency with rhythmic variation
-- Recognizable pitch content in varied temporal presentation
-- Development through rhythmic transformation of fixed pitch material
-- Complementary technique to isorhythm
-
-Applications include:
-- Thematic transformation through rhythmic variation
-- Creating unity through persistent melodic pattern
-- Combining with isorhythm for complex structural organization
-- Variation technique for melodic development
+# Context & Application
+Isomelos provides melodic consistency with rhythmic variation, recognizable pitch content in varied temporal presentation, and development through rhythmic transformation of fixed material. When combined with isorhythm, complex structural organization emerges through the phasing of independent melodic and rhythmic cycles.
 
 # Examples
+**Example 1** (Ch. 10, Ex. 10-13, p. 217): Repeated melodic pattern with free rhythm.
+**Example 2** (Ch. 10, Ex. 10-14, p. 217): Combination of isorhythm and isomelos with patterns starting together but repeating at different points.
 
-**From source (Ex. 10-13, Ex. 10-14):**
-- Repeated melodic pattern with free rhythm
-- Combination of isorhythm and isomelos
-- Patterns starting together but repeating at different points
+# Relationships
+## Builds Upon
+- Meter and rhythm (isomelos organizes pitch within free rhythmic contexts)
+## Enables
+- Melodic unity with rhythmic variety
+## Related
+- Isorhythm (inverse technique)
+## Contrasts With
+- Isorhythm (fixed rhythm/free pitch vs. fixed pitch/free rhythm)
 
-**Recommended source material:**
-- Sources listed for isorhythm often employ isomelos as well
-- Passages combining both techniques
-
-# Related Concepts
-
-- Isorhythm
-- Melodic Pattern
-- Rhythmic Variation
-- Thematic Transformation
-- Ostinato
-- Color (isorhythmic)
-- Motivic Development
+# Common Errors
+- Confusing isomelos with sequence (sequence transposes; isomelos repeats at same pitch level)
+- Failing to exploit the phasing potential when combining with isorhythm
 
 # Common Confusions
-
-- **Isomelos vs. sequence**: A sequence transposes melodic patterns; isomelos repeats at the same pitch level with rhythmic variation.
-- **Isomelos vs. variation**: Isomelos specifically varies rhythm while keeping pitch fixed; general variation may alter any element.
-- **Complementary techniques**: Isomelos and isorhythm are inverse techniques that can be combined for complex structural effects.
+- **Isomelos vs. sequence**: Sequence transposes melodic patterns; isomelos repeats at the same pitch level with rhythmic variation
+- **Isomelos vs. variation**: Isomelos specifically varies rhythm while keeping pitch fixed; general variation may alter any element
 
 # Source Reference
+Chapter 10: Timing and Dynamics, pp. 217-218 (pdf pp. 217-218)
 
-Chapter 10: Timing and Dynamics, pages 217-218
+# Verification Notes
+Upgraded from old card. Preserved: inverse relationship with isorhythm, phasing concept, comparison table. Added: v3 structure, slug references.

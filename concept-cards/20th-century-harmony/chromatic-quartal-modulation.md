@@ -1,56 +1,79 @@
 ---
 concept: Chromatic Quartal Modulation
-category: theory
+slug: chromatic-quartal-modulation
+category: harmony
+subcategory: modulation
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Chords by Fourths"
 chapter_number: 4
 pdf_page: 92
-unit: null
-authors: Vincent Persichetti
+section: "Four-Note Chords by Fourths"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - perfect-fourth-stacks
+extends:
+  - perfect-fourth-stacks
+related:
+  - quartal-harmony
+contrasts_with: []
+answers_questions:
+  - "How can quartal chords cause sudden tonal shifts?"
+  - "Why are quartal chords effective for modulation?"
+  - "What is the polytonal potential of perfect-fourth chords?"
 ---
-
 # Quick Definition
-The use of chromatically introduced quartal chords to create sudden shifts of tonality or scale formation, exploiting the tonal ambiguity of quartal harmony for modulatory purposes.
+The use of chromatically introduced quartal chords to cause sudden shifts of tonality or scale formation, exploiting quartal harmony's tonal ambiguity and the polytonal potential of perfect-fourth stacks.
 
-# Formal Definition
-The chromatic introduction of a chord by fourths may cause a sudden shift of tonality or scale formation. This occurs because chords by perfect fourths are tonally ambiguous; any member can function as the root. A chromatically introduced quartal chord can therefore pivot the harmonic context to a new tonal area without the preparation required by traditional modulation.
+# Core Definition
+The chromatic introduction of a chord by fourths may cause a sudden shift of tonality or scale formation. This occurs because chords by perfect fourths are tonally ambiguous; any member can function as the root. A chromatically introduced quartal chord can pivot the harmonic context without traditional modulation preparation. Scale tones used as roots for perfect-fourth chords will be duplicated at different tonal levels, indicating a polytonal potential.
 
-# Musical/Mathematical Formulation
-**Modulatory Mechanism:**
-1. Quartal chord appears chromatically (not diatonic to current key)
-2. Tonal ambiguity allows reinterpretation
-3. Melodic emphasis or subsequent harmony establishes new tonal area
-4. Shift of tonality or scale is achieved
+# Prerequisites
+- **Perfect fourth stacks**: The tonally ambiguous formations enabling modulation
 
-**Contrast with Diatonic Quartal:**
-- Diatonic quartal: reinforces current tonality/mode
-- Chromatic quartal: disrupts and redirects tonality
+# Key Properties
+1. Chromatic quartal chord = sudden tonal/scale shift
+2. Tonal ambiguity enables reinterpretation in new key
+3. Melodic emphasis or subsequent harmony establishes new area
+4. Polytonal potential from scale-tone duplication at different levels
+5. No traditional pivot-chord preparation required
+6. Effective for abrupt key changes and distant-key modulations
 
-**Perfect Fourth Polytonal Potential:**
-Scale tones used as building roots for perfect-fourth chords will be duplicated at different tonal levels, indicating a polytonal potential. This polytonal quality enables the sudden tonal shifts.
+# Construction / Recognition
+- Quartal chord appears chromatically (not diatonic to current key)
+- Tonal ambiguity allows reinterpretation
+- New key confirmed by melodic emphasis or subsequent harmony
 
-# Musical Context/Application
-Chromatic quartal modulation is valuable for:
-1. Abrupt key changes without traditional pivot chord preparation
-2. Creating harmonic surprise
-3. Moving between distantly related keys
-4. Establishing bitonality or polytonality
-
-The technique exploits the rootless nature of quartal harmony: since no single pitch has inherent priority as root, any pitch can be emphasized to define the new tonal center.
+# Context & Application
+Chromatic quartal modulation exploits the rootless nature of quartal harmony: since no pitch has inherent root priority, any pitch can be emphasized to define a new tonal center. Useful for abrupt key changes, harmonic surprise, distant-key modulation, and establishing bitonality or polytonality.
 
 # Examples
-Ex. 4-30 demonstrates the chromatic introduction of a chord by fourths causing sudden shift of tonality or scale formation.
+- Ex. 4-30: Chromatic quartal chord causing sudden tonal/scale shift
 
-# Related Concepts
-- Quartal Harmony
-- Perfect Fourth Stacks
-- Tonal Ambiguity
-- Modulation
-- Polytonality
-- Root Ambiguity
+# Relationships
+## Builds Upon
+- Perfect fourth stacks (the ambiguous formations)
+
+## Enables
+- Abrupt modulation without traditional preparation
+
+## Related
+- quartal-harmony (the system exploited for modulation)
+
+## Contrasts With
+- Traditional pivot-chord modulation (which requires common-chord preparation)
+
+# Common Errors
+- Expecting chromatic quartal chords to resolve back to the original key
 
 # Common Confusions
-Students familiar with traditional modulation may expect chromatic quartal chords to require resolution back to the original key. In twentieth-century practice, the chromatic quartal chord can simply redefine the tonal context without looking back, establishing the new key through subsequent melodic or harmonic emphasis.
+- **No looking back**: The chromatic quartal chord simply redefines the tonal context; it does not require return to the original key
 
 # Source Reference
-Chapter 4: Chords by Fourths, pp. 95, 102
+Chapter 4: Chords by Fourths, pp. 95, 102 (PDF page 92)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved v2 content about polytonal potential.

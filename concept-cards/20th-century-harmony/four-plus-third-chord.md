@@ -1,70 +1,96 @@
 ---
 concept: Four-Plus-Third Chord
-category: theory
+slug: four-plus-third-chord
+category: chords
+subcategory: compound-chords
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Compound and Mirror Harmony"
 chapter_number: 8
+section: "Compound Construction"
 pdf_page: 162
-unit: null
-authors: Vincent Persichetti
+extraction_confidence: high
+aliases:
+  - "quartal chord with third"
+  - "compound quartal-tertian chord"
+prerequisites:
+  - compound-chord
+  - quartal-harmony
+extends:
+  - compound-chord
+related:
+  - compound-quartal-chords
+  - fused-chord
+contrasts_with: []
+answers_questions:
+  - "What is the most frequently used compound chord?"
+  - "How does the four-plus-third chord function in different contexts?"
 ---
 
 # Quick Definition
 
-A frequently used compound chord consisting of a three-note quartal structure with an added third, functioning flexibly in both tertian and quartal harmonic contexts.
+The most frequently used compound chord, consisting of a three-note quartal structure with an added third, functioning flexibly in both tertian and quartal contexts.
 
-# Formal Definition
+# Core Definition
 
-The **four-plus-third chord** is one of the most frequently used compound chords, formed by a three-note chord built in fourths with the addition of a third. This hybrid structure combines quartal and tertian intervals, creating a harmonically flexible and colorful sonority that functions well in both tertian and quartal contexts. As a compound chord combining two different interval types, it represents a common point of intersection between distinct harmonic vocabularies.
+"One of the most frequently used compound chords is the three-note chord by fourths with the addition of a third (discussed in Chapter 4). Harmonically, this chord is flexible and colorful and functions well in tertian or quartal context" (Persichetti, p. 169).
 
-# Musical/Mathematical Formulation
+# Prerequisites
 
-Construction:
-- Base: Three-note quartal chord (two stacked perfect fourths = 5+5 semitones)
-- Addition: One interval of a third (major or minor = 3 or 4 semitones)
+- **Compound chord** — This is a specific type within compound harmony
+- **Quartal harmony** — The quartal foundation is the primary structural element
 
-Possible formations:
-- Fourth-fourth-third (ascending)
-- Fourth-third-fourth
-- Third-fourth-fourth
-- Various arrangements with different third qualities
+# Key Properties
 
-The chord spans approximately a ninth to eleventh depending on third placement and quality.
+1. Three-note quartal chord + one interval of a third
+2. Most frequently used compound chord
+3. Harmonically flexible and colorful
+4. Functions well in both tertian and quartal contexts
+5. A bridge between quartal and tertian harmonic vocabularies
 
-# Musical Context/Application
+# Construction / Recognition
 
-The four-plus-third chord provides:
-- Bridge between quartal and tertian harmonic vocabularies
-- Colorful alternative to pure quartal or tertian harmony
-- Flexibility to appear in multiple harmonic contexts
-- Frequently useful chord for twentieth-century harmonic practice
+## To Construct
+1. Build a three-note quartal chord (two stacked fourths)
+2. Add a third (major or minor) above or below the quartal structure
+3. The resulting four-note chord functions in either tertian or quartal passages
 
-Its dual allegiance to quartal and tertian principles makes it valuable for:
-- Transitional passages between harmonic styles
-- Adding variety within sustained quartal or tertian textures
-- Creating ambiguity about the prevailing harmonic system
+# Context & Application
+
+The four-plus-third chord represents the most common intersection point between quartal and tertian harmony. Its dual allegiance makes it valuable for transitional passages between harmonic styles, adding variety within sustained textures, and creating useful ambiguity about the prevailing harmonic system.
 
 # Examples
 
-**From source (discussed in Chapter 4 and referenced in Chapter 8):**
-- The chord discussed as frequently used compound formation
-- Functions in both tertian and quartal contexts
+Discussed in Chapter 4 (pp. 101-102) and referenced in Chapter 8 (p. 169) as the most frequently used compound chord.
 
-# Related Concepts
+# Relationships
 
-- Compound Chord
-- Quartal Harmony
-- Tertian Harmony
-- Hybrid Chord
-- Mixed Intervals
-- Added-Note Chord
+## Builds Upon
+- **compound-chord** — A specific type of compound formation
+- **quartal-harmony** — The quartal structure is primary
+
+## Related
+- **compound-quartal-chords** — Broader category of quartal-tertian hybrids
+- **fused-chord** — Another specialized compound formation
+
+# Common Errors
+
+- **Error**: Classifying the chord as purely quartal or purely tertian
+  **Correction**: It is compound, combining both interval types; context determines emphasis
 
 # Common Confusions
 
-- **Compound vs. added-note**: This chord may function as an added-note chord if it shows tonal tendencies, or as compound if it lacks root significance. Context determines classification.
-- **Quartal with third vs. tertian with fourth**: The labeling depends on which structure is perceived as primary; the four-plus-third emphasizes the quartal foundation.
-- **Specific vs. generic**: "Four-plus-third" describes a specific type; not all compound chords mixing fourths and thirds fall into this category.
+- **Confusion**: This is the same as an added-note chord
+  **Clarification**: It may function as added-note if tonal tendencies are present, or as compound if not; context determines classification
 
 # Source Reference
 
-Chapter 8: Compound and Mirror Harmony, page 169 (referencing Chapter 4 discussion)
+Chapter 8: Compound and Mirror Harmony, page 169 (referencing Chapter 4 discussion).
+
+# Verification Notes
+
+- Core Definition: Direct quotation from p. 169
+- Confidence: HIGH — explicit identification as most frequently used compound chord
+- Re-extracted from v2 card; preserved: dual-context function, cross-chapter reference

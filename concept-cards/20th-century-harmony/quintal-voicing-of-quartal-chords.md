@@ -1,61 +1,80 @@
 ---
 concept: Quintal Voicing of Quartal Chords
-category: technique
+slug: quintal-voicing-of-quartal-chords
+category: voice-leading
+subcategory: chord-spacing
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Chords by Fourths"
 chapter_number: 4
 pdf_page: 92
-unit: null
-authors: Vincent Persichetti
+section: "Four-Note Chords by Fourths"
+extraction_confidence: high
+aliases:
+  - "quartal chords in fifths"
+prerequisites:
+  - quartal-chord-inversion
+extends:
+  - quartal-chord-inversion
+related:
+  - compound-quartal-chords
+contrasts_with: []
+answers_questions:
+  - "Can quartal chords be arranged in fifths?"
+  - "What happens when fifths dominate a quartal chord?"
+  - "How is the resulting restlessness resolved?"
 ---
-
 # Quick Definition
-The practice of arranging quartal chords in fifths rather than fourths, analogous to how tertian chords may be arranged in sixths, with the understanding that fifths dominating the texture make the fourths sound restless.
+The practice of arranging quartal chords in fifths (analogous to arranging tertian chords in sixths), which makes the remaining fourths sound restless and is best resolved by moving to a compound quartal chord (with third) before returning to pure fourths.
 
-# Formal Definition
-Chords by fourths may be arranged in fifths as easily as chords by thirds are arranged in sixths. When fifths dominate a quartal chord, the fourths become restless. It is advisable to resolve the fourth to a third of a compound quartal chord before returning to the pure chord by fourths.
+# Core Definition
+Chords by fourths may be arranged in fifths as easily as chords by thirds are arranged in sixths. When fifths dominate a quartal chord the fourths become restless. It is advisable to resolve the fourth to a third of a compound quartal chord before returning to the pure chord by fourths. The chord identity remains quartal; only the voicing changes.
 
-# Musical/Mathematical Formulation
-**Interval Relationship:**
-- Fourth inverted = Fifth
-- A quartal chord voiced in fifths contains the same pitch classes as the original
+# Prerequisites
+- **Quartal chord inversion**: Understanding respacing of quartal formations
 
-**Example:**
-- Quartal voicing: C-F-Bb
-- Quintal voicing: Bb-F-C (same pitches, fifths instead of fourths)
+# Key Properties
+1. Fourth inverted = fifth (same pitch classes)
+2. Fifth dominance makes remaining fourths restless
+3. Resolution: move restless fourth to third of compound quartal chord
+4. Then return to pure quartal voicing
+5. Chord identity remains quartal (not quintal harmony)
+6. Provides textural variety within quartal passages
 
-**Restlessness Effect:**
-When fifths dominate:
-- The remaining fourths sound active
-- Resolution tendency increases
-- Moving to compound quartal chord (with third) provides relief
+# Construction / Recognition
+- Quartal voicing: C-F-Bb; Quintal voicing: Bb-F-C (fifths instead of fourths)
+- Restless fourths within fifth-dominated texture
+- Resolution to compound quartal (adding third) provides relief
 
-**Tertian Parallel:**
-Just as C-E-G (thirds) can become C-G-E (fifth + fourth), quartal chords have equivalent respacing options.
-
-# Musical Context/Application
-Quintal voicing of quartal chords provides:
-1. Textural variety within quartal passages
-2. Emphasis on the resonant perfect fifth
-3. A way to create tension before returning to pure quartal voicing
-
-The technique is particularly useful for creating small-scale tension and release within sustained quartal harmony. The restlessness of the isolated fourths among fifths can be resolved by:
-- Returning to pure fourth voicing
-- Moving to a compound quartal chord with third
+# Context & Application
+Quintal voicing creates small-scale tension and release within sustained quartal harmony. The restlessness of isolated fourths among fifths is resolved by moving to compound quartal or returning to pure fourth voicing. The technique is analogous to the tertian practice of writing chords in sixth spacing.
 
 # Examples
-Ex. 4-31 demonstrates quartal chords arranged in fifths and the resulting restlessness of the fourths, showing resolution to compound quartal before returning to pure quartal.
+- Ex. 4-31: Quartal chords in fifths with restless fourths, resolution to compound quartal
 
-# Related Concepts
-- Quartal Harmony
-- Quintal Harmony
-- Quartal Chord Inversion
-- Compound Quartal Chords
-- Chord Voicing
-- Perfect Fifth
+# Relationships
+## Builds Upon
+- Quartal chord inversion (respacing principle)
+
+## Enables
+- Internal tension-release within quartal passages
+
+## Related
+- compound-quartal-chords (resolution target for restless fourths)
+
+## Contrasts With
+- True quintal harmony (building from stacked fifths as generative interval)
+
+# Common Errors
+- Thinking quintal voicing creates quintal harmony (the identity remains quartal)
 
 # Common Confusions
-Students may think quintal voicing of quartal chords creates quintal harmony. The chord identity remains quartal; only the voicing changes. True quintal harmony involves building chords primarily from stacked fifths as the generative interval.
+- **Voicing vs. identity**: Quintal voicing of quartal chords is a respacing; true quintal harmony uses stacked fifths as the generative interval
 
 # Source Reference
-Chapter 4: Chords by Fourths, pp. 102-103
+Chapter 4: Chords by Fourths, pp. 102-103 (PDF page 92)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved the tertian parallel (sixths) from v2 card.

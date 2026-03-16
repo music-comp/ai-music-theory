@@ -1,73 +1,117 @@
 ---
 concept: Compound Chord Progression
-category: theory
+slug: compound-chord-progression
+category: harmony
+subcategory: harmonic-motion
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Compound and Mirror Harmony"
 chapter_number: 8
+section: "Compound Construction"
 pdf_page: 162
-unit: null
-authors: Vincent Persichetti
+extraction_confidence: high
+aliases:
+  - "compound harmonic motion"
+  - "compound harmony progression"
+prerequisites:
+  - compound-chord
+  - intervallic-tension-distribution
+extends:
+  - compound-chord
+related:
+  - percussive-compound-chord
+  - elastic-compound-chord
+contrasts_with:
+  - harmonic-progression
+answers_questions:
+  - "How do compound chords progress without root movement?"
+  - "What creates harmonic rhythm in compound progressions?"
+  - "How are compound cadences constructed?"
 ---
 
 # Quick Definition
 
-Harmonic motion created through sequences of compound chords, governed by fluctuating density and shifting degrees of intervallic tension rather than traditional root movement.
+Harmonic motion created through sequences of compound chords, governed by fluctuating density and shifting intervallic tension rather than traditional root movement.
 
-# Formal Definition
+# Core Definition
 
-**Compound chord progression** refers to the movement of compound chords in succession. Because compound chords have little or no root significance and do not subordinate themselves to tonal regulation of root movement or key, their progressions are governed by alternative principles: fluctuating density contained within the highest and lowest voices, shifting degrees of intervallic tension, and the changing speeds with which these factors move, which together create a harmonic rhythm.
+"Compound chords do not readily subordinate themselves to the tonal regulation of root movement or key. Any compound structure may be established as a central chord by the relative tension set up by surrounding chords, and may serve as the harmonic center to which adjacent chords gravitate. Harmonic motion is created by the fluctuating density contained within the highest and lowest voices and by the shifting degrees of intervallic tension. The changing speeds with which the density and consonant-dissonant factors move create a harmonic rhythm" (Persichetti, pp. 167-168).
 
-# Musical/Mathematical Formulation
+# Prerequisites
 
-Progression governed by:
-1. **Fluctuating density**: Changes in the number of tones and their vertical spread between outer voices
-2. **Intervallic tension shifts**: Movement between more consonant and more dissonant areas
-3. **Speed of change**: Rate at which density and consonant-dissonant factors alter
+- **Compound chord** — Progression operates on compound chord successions
+- **Intervallic tension distribution** — Tension shifts drive compound progression
 
-Establishing harmonic centers without roots:
-- Any compound structure may be established as a central chord
-- Centrality determined by relative tension of surrounding chords
-- Adjacent chords gravitate toward the central formation through tension relationships
+# Key Properties
 
-# Musical Context/Application
+1. No root movement or tonal key regulation
+2. Central chord established by relative tension of surrounding chords
+3. Harmonic motion from fluctuating density between outer voices
+4. Shifting degrees of intervallic tension create direction
+5. Changing speeds of density/tension shifts create harmonic rhythm
+6. Effective as declamations, arrival points, opening/closing statements
+7. Large formations often limited to percussive accentuations, sustained backgrounds, cadences
+8. Cadential treatment: compound arrival chord usually preceded by greater density
 
-Compound chord progressions are particularly effective for:
-- **Declamations**: Large, complex chords commanding attention
-- **Arrival points**: Cadential treatment where compound chord is preceded by greater density
-- **Opening and closing statements**: Bold, full sonorities establishing or concluding sections
-- **Percussive accentuations**: Creating textural contrast with smaller intervals placed low
-- **Sustained backgrounds**: Compound textures underlying solo foreground material
+# Construction / Recognition
 
-**Cadential treatment**: The compound chord of arrival is usually preceded by a structure of greater chordal density; the chords leading to the cadence need not themselves be compound.
+## To Create Compound Progressions
+1. Plan density fluctuation between outer voices
+2. Shift intervallic tension levels across successive chords
+3. Vary the speed of density/tension changes for harmonic rhythm
+4. For cadences: move from greater density to the arrival chord
+5. For percussive use: create two textural levels (compound for accent, other type for continuity)
+
+# Context & Application
+
+Compound chords function effectively as declamations, arrival points, and opening/closing statements. As sustained backgrounds, they move independently of solo foreground material. In cadential treatment, the compound chord of arrival is usually preceded by greater chordal density; the leading chords need not be compound.
 
 # Examples
 
-**From source (Ex. 8-10, Ex. 8-11, Ex. 8-12, Ex. 8-13):**
-- Percussive compound chords creating textural contrast with tertian, quartal, or secundal layers
-- Background compound textures with independent melodic foreground
-- Cadential progressions moving to compound arrival chords
+**Ex. 8-10** (p. 168): Percussive compound chords as accentuation
+**Ex. 8-11** (p. 168): Two textural levels with compound accent
+**Ex. 8-12** (p. 169): Background compound texture with solo foreground
+**Ex. 8-13** (p. 169): Cadential treatment with density reduction to arrival
 
-**Recommended source material:**
-- William Schuman, Symphony No. 6, pp. 1, 49 (compound chord passages)
-- Igor Stravinsky, Le Sacre du Printemps, p. 83
+**Composer examples:**
+- William Schuman: Symphony No. 6, pp. 1, 49 (G. Schirmer)
+- Igor Stravinsky: Le Sacre du Printemps, p. 83 (Kalmus)
 
-# Related Concepts
+# Relationships
 
-- Compound Chord
-- Harmonic Rhythm
-- Intervallic Tension Distribution
-- Harmonic Density
-- Cadence
-- Non-Tonal Harmony
-- Mass Sonority
+## Builds Upon
+- **compound-chord** — Progression operates on compound chord successions
+- **intervallic-tension-distribution** — Tension shifts drive progression
+
+## Related
+- **percussive-compound-chord** — One common role for compound chords in progression
+- **elastic-compound-chord** — Smaller formations allowing more active progression
+
+## Contrasts With
+- **harmonic-progression** — Tertian progression uses root movement; compound uses density/tension fluctuation
+
+# Common Errors
+
+- **Error**: Applying traditional root analysis to compound progressions
+  **Correction**: Focus on density and tension changes, not root relationships
+- **Error**: Preceding a cadential compound chord with lesser density
+  **Correction**: The arrival chord is usually preceded by greater density (p. 169)
 
 # Common Confusions
 
-- **Root-based vs. tension-based progression**: Compound chord progressions are not governed by traditional root relationships; analysis must focus on density and tension changes.
-- **Absence of scale governance**: No likely scale dominates compound harmony; tonal inflection is minimal or absent.
-- **Cadential compound chords**: Though compound chords appear at cadences, they don't function as dominant or tonic in traditional sense.
-- **Rhythmic vs. harmonic factors**: The "harmonic rhythm" of compound progressions emerges from tension/density fluctuation, not from chord changes per se.
+- **Confusion**: Compound progressions have no harmonic rhythm
+  **Clarification**: They have harmonic rhythm created by changing speeds of density and tension shifts
+- **Confusion**: Compound cadences function like V-I
+  **Clarification**: They function through density reduction, not functional resolution
 
 # Source Reference
 
-Chapter 8: Compound and Mirror Harmony, pages 166-170
+Chapter 8: Compound and Mirror Harmony, pages 166-170. Ex. 8-10 through 8-13.
+
+# Verification Notes
+
+- Core Definition: Direct quotation from pp. 167-168
+- Confidence: HIGH — explicit treatment with multiple applications
+- Re-extracted from v2 card; preserved: harmonic rhythm principle, cadential density-reduction

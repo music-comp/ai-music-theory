@@ -1,44 +1,75 @@
 ---
 concept: Ornamental Chords
+slug: ornamental-chords
 category: technique
+subcategory: embellishment
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Embellishment and Transformation"
 chapter_number: 11
 pdf_page: 229
-unit: null
-authors: Vincent Persichetti
+section: "Ornamental Figuration"
+extraction_confidence: high
+aliases:
+  - "passing chords"
+  - "auxiliary chords"
+prerequisites:
+  - nonharmonic-tones
+extends:
+  - nonharmonic-tones
+related:
+  - ornamental-figuration
+contrasts_with: []
+answers_questions:
+  - "How do nonharmonic tones combine to form complete ornamental chord structures?"
+  - "When does an ornamental chord become a structural harmony?"
 ---
 
 # Quick Definition
 Complete chordal structures formed when nonharmonic tones in multiple voices are grouped chord-wise, creating passing chords, auxiliary chords, and similar formations.
 
-# Formal Definition
-Ornamental chords result from the grouping of nonharmonic tones in a chord-wise fashion. When multiple voices simultaneously employ nonharmonic tones, these tones combine to form complete harmonic structures that function ornamentally rather than structurally. Common types include passing chords (connecting principal harmonies), auxiliary chords (neighboring principal harmonies), and other formations derived from the basic nonharmonic tone types.
+# Core Definition
+Nonharmonic tones may be grouped chord-wise and used as **ornamental chords** such as passing chords, auxiliary chords, and so on. When multiple voices simultaneously employ nonharmonic tones, these tones combine to form complete harmonic structures that function ornamentally rather than structurally. The ornamental tone may remain unresolved, causing a change of harmonic texture. Simple chords may be embellished in such a way that one chord penetrates another, creating polychordal sounds where they meet (Ch. 11, pp. 232-234).
 
-# Musical/Mathematical Formulation
-Ornamental chord construction:
-- **Source**: Multiple voices simultaneously employ nonharmonic tones
-- **Types**: Passing chords, auxiliary chords, appoggiatura chords, etc.
-- **Function**: Decorative rather than structural
-- **Voice leading**: Individual voices follow nonharmonic tone patterns
+# Prerequisites
+- **Nonharmonic tones** -- understanding individual ornamental tone types
 
-When simple chords are embellished so that one chord penetrates another, polychordal sounds may emerge at points where ornamental and structural harmonies meet.
+# Key Properties
+1. Multiple simultaneous nonharmonic tones grouped chord-wise
+2. Types: passing chords, auxiliary chords, appoggiatura chords, etc.
+3. Function ornamentally rather than structurally
+4. Individual voices follow nonharmonic tone patterns
+5. May remain unresolved, permanently changing harmonic texture
+6. Embellishment overlap can create polychordal sounds
 
-# Musical Context/Application
-Ornamental chords expand the harmonic palette by allowing complete vertical structures to function ornamentally. In twentieth-century practice, ornamental chords may be derived from contrasting key centers, creating temporary polytonality. The ornamental chord may remain unresolved, causing a permanent change of harmonic texture rather than returning to the principal harmony. This technique blurs the boundary between ornament and structure.
+# Construction / Recognition
+- Identify simultaneous nonharmonic tones that form a recognizable chord structure
+- Classify the ornamental chord type by its voice-leading behavior
+- Note whether it resolves or remains, changing the texture
+
+# Context & Application
+Ornamental chords expand the harmonic palette by allowing complete vertical structures to function decoratively. In twentieth-century practice, ornamental chords may derive from contrasting keys, creating temporary polytonality. When unresolved, they blur the boundary between ornament and structure.
 
 # Examples
-- Ex. 11-9: Nonharmonic tones grouped chord-wise as passing chords, auxiliary chords, etc.
-- Ex. 11-10: Ornamental tone remaining unresolved, causing change of harmonic texture
-- Ex. 11-11: Simple chords embellished so that one chord penetrates another, creating polychordal sounds
+**Example 1** (Ch. 11, Ex. 11-9, p. 233): Nonharmonic tones grouped as passing chords and auxiliary chords.
+**Example 2** (Ch. 11, Ex. 11-10, p. 233): Unresolved ornamental tone causing texture change.
+**Example 3** (Ch. 11, Ex. 11-11, p. 233): Polychordal sounds from embellishment overlap.
 
-# Related Concepts
-- Nonharmonic Tones
-- Passing Tones
-- Auxiliary Tones
-- Polychords
-- Harmonic Transformation
-- Polytonality
+# Relationships
+## Builds Upon
+- Nonharmonic tones (ornamental chords are chord-wise groupings of nonharmonic tones)
+## Enables
+- Polychordal textures through embellishment overlap
+## Related
+- Ornamental figuration (broader embellishment context)
+## Contrasts With
+- (none directly)
+
+# Common Errors
+- Not recognizing ornamental chords as decorative when they form recognizable vertical structures
+- Failing to notice when unresolved ornamental chords have become structural
 
 # Common Confusions
 - Ornamental chords are complete vertical structures, not single tones
@@ -46,4 +77,7 @@ Ornamental chords expand the harmonic palette by allowing complete vertical stru
 - Polychordal effects can arise from ornamental chord overlap with structural harmony
 
 # Source Reference
-Chapter 11: Embellishment and Transformation, pages 232-234
+Chapter 11: Embellishment and Transformation, pp. 232-234 (pdf pp. 232-234)
+
+# Verification Notes
+Upgraded from old card. Preserved: chord-wise grouping, polychordal creation, texture-change through non-resolution. Added: v3 structure, slug references, ornament-structure boundary blurring.

@@ -1,69 +1,85 @@
 ---
 concept: Harmonic Elision
-category: theory
+slug: harmonic-elision
+category: harmony
+subcategory: harmonic-direction
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Harmonic Direction"
 chapter_number: 9
 pdf_page: 181
-unit: null
-authors: Vincent Persichetti
+section: "Progression"
+extraction_confidence: high
+aliases:
+  - "chord omission"
+prerequisites:
+  - harmonic-progression
+extends: []
+related:
+  - dismembered-progression
+  - deceptive-resolution
+  - sequence
+contrasts_with: []
+answers_questions:
+  - "How does omitting an expected chord create new harmonic relationships?"
+  - "What distinguishes harmonic elision from random chord omission?"
 ---
 
 # Quick Definition
+A technique where an expected chord is omitted from a progression, creating new relationships through the absence of anticipated harmonic events.
 
-A technique where an expected chord is omitted from a progression, creating new relationships and freshness through the absence of anticipated harmonic events.
+# Core Definition
+**Harmonic elision** brings about new relationships by omitting a chord that is expected because of previously established passages, strong sequential patterns, or traditional successions. Chordal relationships new to the piece may appear by skipping over an anticipated chord, creating freshness within established harmonic contexts (Ch. 9, pp. 187-188).
 
-# Formal Definition
+# Prerequisites
+- **Harmonic progression** -- understanding established chord patterns to recognize what is being elided
 
-**Harmonic elision** is a compositional technique that creates new harmonic relationships by omitting a chord that is expected due to previously established passages, strong sequential patterns, or traditional successions. By skipping over an anticipated chord, unexpected relationships between the surrounding chords emerge, bringing freshness to harmonic flow and creating surprise within established harmonic contexts.
+# Key Properties
+1. An expected chord is omitted, not replaced
+2. Expectation derives from previously established passages, sequential patterns, or traditional successions
+3. New chordal relationships emerge from the gap
+4. Harmonic rhythm may be compressed by the omission
+5. Requires sufficient harmonic momentum to bridge the gap
+6. Melodic or rhythmic continuity maintains coherence across the elision
 
-# Musical/Mathematical Formulation
+# Construction / Recognition
+- Identify passages where an established pattern has set up clear expectations
+- Look for a missing chord that breaks the expected sequence
+- Note the new relationship created between the chords flanking the gap
+- Check whether melodic continuity bridges the harmonic omission
 
-Elision creates new relationships:
-- Chord A (expected) -> Chord B (elided) -> Chord C (present)
-- Result: Direct A -> C relationship, novel to the piece
-
-Contexts where elision is effective:
-- Sequential patterns where one chord of the sequence is skipped
-- Traditional progressions where a standard chord is omitted
-- Previously established passages that created specific expectations
-- Strong linear contexts where harmonic gap can be bridged melodically
-
-# Musical Context/Application
-
-Harmonic elision serves:
-- Creating freshness and surprise in predictable progressions
-- Establishing new chordal relationships within familiar contexts
-- Compressing harmonic rhythm by skipping intermediate steps
-- Adding variety to sequential patterns without abandoning the sequence
-
-The technique requires:
-- Established context that creates expectation
-- Sufficient harmonic momentum to bridge the gap
-- Melodic or rhythmic continuity to maintain coherence
+# Context & Application
+Harmonic elision is effective in sequential passages where one chord of the sequence is skipped, in traditional progressions where a standard chord is omitted, and in any context where established patterns have created specific listener expectations. The technique adds freshness and variety without abandoning the underlying harmonic logic.
 
 # Examples
+**Example** (Ch. 9, Ex. 9-12, p. 187): Chordal relationships created by omitting an expected chord from previously established passages and sequential successions.
 
-**From source (Ex. 9-12):**
-- Chordal relationships created by omitting expected chord
-- Elision based on previously established passages
-- Sequential and traditional succession expectations subverted
+# Relationships
+## Builds Upon
+- Harmonic progression (elision subverts established progressions)
+## Enables
+- Harmonic surprise and freshness within familiar contexts
+## Related
+- Dismembered progression (more extensive reordering/omission)
+- Deceptive resolution (another expectation-subversion technique)
+- Sequence (sequential patterns are prime targets for elision)
+## Contrasts With
+- (none directly)
 
-# Related Concepts
-
-- Harmonic Progression
-- Sequential Harmony
-- Deceptive Resolution
-- Harmonic Rhythm
-- Dismembered Progression
-- Expectation and Surprise
+# Common Errors
+- Omitting chords from passages where no clear expectation has been established (this is not elision)
+- Eliding too many chords, destroying the pattern that gives the elision meaning
+- Failing to maintain melodic or rhythmic continuity across the elided passage
 
 # Common Confusions
-
-- **Elision vs. substitution**: Elision omits an expected chord entirely; substitution replaces it with another chord.
-- **Elision vs. compression**: While elision compresses harmonic rhythm, not all rhythmic compression involves elision of expected chords.
-- **Random omission vs. elision**: True elision requires established expectation; randomly omitting chords from an unfamiliar context is not elision.
+- **Elision vs. substitution**: Elision omits an expected chord entirely; substitution replaces it with another
+- **Elision vs. compression**: While elision compresses harmonic rhythm, not all rhythmic compression involves elision of expected chords
+- **Random omission vs. elision**: True elision requires established expectation; randomly omitting chords from unfamiliar context is not elision
 
 # Source Reference
+Chapter 9: Harmonic Direction, pp. 187-188 (pdf pp. 187-188)
 
-Chapter 9: Harmonic Direction, pages 187-188
+# Verification Notes
+Upgraded from old card. Preserved: core definition, expectation requirement, relationship to sequential patterns. Added: v3 structure, slug references, harmonic momentum concept, melodic continuity requirement.

@@ -1,73 +1,76 @@
 ---
 concept: Oblique Harmony
+slug: oblique-harmony
 category: technique
+subcategory: harmonic-direction
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Harmonic Direction"
 chapter_number: 9
 pdf_page: 181
-unit: null
-authors: Vincent Persichetti
+section: "Parallel Harmony"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - parallel-harmony
+extends:
+  - parallel-harmony-renewal
+related:
+  - pedal-point
+contrasts_with: []
+answers_questions:
+  - "How is oblique harmony created from broken chords and parallel harmony?"
 ---
 
 # Quick Definition
+A texture where the dominant chord formation is broken melodically and parallel chords are placed under the melodic notes of the broken chord, combining sustained tones with moving harmony.
 
-A textural technique where a chord is broken melodically and parallel chords are placed under the melodic notes of the broken chord, creating sustained tones against moving harmony.
+# Core Definition
+The chordal formation that dominates a succession of parallel chords may be broken melodically and a new set of parallel chords placed under the melodic notes of the broken chord, resulting in **oblique harmony**. This produces a texture where one or more voices sustain arpeggiated tones from the original chord while other voices move in parallel motion (Ch. 9, p. 200).
 
-# Formal Definition
+# Prerequisites
+- **Parallel harmony** -- understanding parallel chord movement
 
-**Oblique harmony** is created when the chordal formation dominating a succession of parallel chords is broken melodically, and a new set of parallel chords is placed under (or over) the melodic notes of the broken chord. This produces a texture where one or more voices sustain tones from the original chord while other voices move in parallel motion, combining oblique motion (stationary voice against moving voices) with parallel harmony.
+# Key Properties
+1. Dominant chord formation broken into melodic arpeggiation
+2. New parallel chords placed beneath arpeggiated melody
+3. Combines oblique motion (sustained notes) with parallel motion (moving chords)
+4. Creates pedal-like effect from melodically sustained tones
+5. Listed as one of the fourteen parallel harmony renewal devices
 
-# Musical/Mathematical Formulation
+# Construction / Recognition
+- Identify a passage where a melodic voice arpeggiates a chord while parallel chords move beneath
+- Note the combination of sustained and moving textural elements
+- Check whether the sustained tones derive from a single chord formation
 
-Construction:
-1. Establish a chord formation as the dominant sonority
-2. Break this chord into a melodic line (arpeggiation)
-3. Place parallel chords beneath the arpeggiated melody
-4. Result: Sustained melodic tones from original chord + moving parallel chords below
-
-The technique creates:
-- Pedal-like effect from melodically sustained tones
-- Harmonic motion from parallel chord movement
-- Textural richness from combined static and moving elements
-- Connection to original sonority through persistent melodic tones
-
-# Musical Context/Application
-
-Oblique harmony serves:
-- Relieving extended parallel harmony through contrasting element
-- Creating textural interest through combined motion types
-- Maintaining harmonic connection while adding movement
-- Providing a departure point and return for parallel passages
-
-The technique is particularly effective:
-- After extended parallel motion needs variety
-- When textural richness is desired
-- For transitions between harmonic areas
-- When pedal effect combined with motion is needed
+# Context & Application
+Oblique harmony relieves extended parallel passages, creates textural richness through combined motion types, maintains connection to the original sonority through persistent melodic tones, and provides a departure point and return for parallel passages.
 
 # Examples
+**Example** (Ch. 9, Ex. 9-39, p. 200): Chord broken melodically, parallel chords placed under sustained melodic tones.
 
-**From source (Ex. 9-39):**
-- Chord broken melodically in upper voice
-- Parallel chords placed under sustained melodic tones
-- Oblique motion combined with parallel harmony
+# Relationships
+## Builds Upon
+- Parallel harmony (oblique harmony emerges from parallel technique)
+## Enables
+- Textural richness within parallel contexts
+## Related
+- Pedal point (related sustained-tone technique)
+## Contrasts With
+- (none directly)
 
-# Related Concepts
-
-- Parallel Harmony
-- Oblique Motion
-- Pedal Point
-- Arpeggiation
-- Textural Layering
-- Parallel Harmony Renewal
-- Compound Texture
+# Common Errors
+- Confusing oblique harmony with general oblique motion (oblique harmony specifically combines arpeggiated chord with parallel movement)
+- Using the technique without establishing the source chord clearly
 
 # Common Confusions
-
-- **Oblique harmony vs. oblique motion**: Oblique motion is one voice stationary while others move; oblique harmony specifically combines this with parallel chord movement.
-- **Pedal vs. oblique harmony**: Traditional pedal sustains one note; oblique harmony arpeggiatessustains notes from a broken chord against parallel movement.
-- **Part of parallel technique**: Oblique harmony is listed as a renewal device for parallel harmony, showing its role in maintaining parallel texture interest.
+- **Oblique harmony vs. oblique motion**: Oblique motion is a general voice-leading concept; oblique harmony specifically combines arpeggiated chord tones with parallel chord movement
+- **Pedal vs. oblique harmony**: Traditional pedal sustains single tones; oblique harmony arpeggiates a chord against parallel movement
 
 # Source Reference
+Chapter 9: Harmonic Direction, p. 200 (pdf p. 200)
 
-Chapter 9: Harmonic Direction, page 200
+# Verification Notes
+Upgraded from old card. Preserved: core construction method, pedal comparison. Added: v3 structure, slug references, connection to renewal device catalog.

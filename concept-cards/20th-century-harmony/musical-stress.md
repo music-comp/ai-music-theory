@@ -1,78 +1,82 @@
 ---
 concept: Musical Stress
-category: theory
+slug: musical-stress
+category: rhythm-meter
+subcategory: timing-dynamics
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Timing and Dynamics"
 chapter_number: 10
 pdf_page: 211
-unit: null
-authors: Vincent Persichetti
+section: "Rhythm"
+extraction_confidence: high
+aliases:
+  - "accent factors"
+  - "multi-factor accent"
+prerequisites:
+  - meter-and-rhythm
+extends: []
+related:
+  - syncopation-in-twentieth-century-harmony
+  - percussive-use-of-harmony
+contrasts_with: []
+answers_questions:
+  - "What four factors create musical stress?"
+  - "How does accent completeness relate to the number of contributing factors?"
 ---
 
 # Quick Definition
-
 Accent created by pitch, intensity, color, or duration, where the more factors contributing to an accent, the more complete the accent.
 
-# Formal Definition
+# Core Definition
+**Musical stress** is created by pitch (register extremes or melodic contour), intensity (dynamic accent), color (timbral distinction), or duration (agogic accent). The more factors contributing to an accent, the more complete the accent. Rhythmic pulse is most clearly defined when the related melodic, contrapuntal, and harmonic functions are emphasized (Ch. 10, p. 215).
 
-**Musical stress** is created by pitch (register extremes or melodic contour), intensity (dynamic accent), color (timbral distinction), or duration (agogic accent through length). The more factors contributing to an accent, the more complete the accent. Rhythmic pulse is most clearly defined when related melodic, contrapuntal, and harmonic functions are emphasized. This multi-dimensional understanding of accent enables composers to create varied degrees and types of emphasis.
+# Prerequisites
+- **Meter and rhythm** -- understanding rhythmic accent within metric context
 
-# Musical/Mathematical Formulation
+# Key Properties
+1. Pitch: higher/lower register, melodic peak or nadir
+2. Intensity: dynamic accent (forte, sforzando)
+3. Color: timbral change, new instrument entry
+4. Duration: longer note value (agogic accent)
+5. More factors = more complete accent
+6. Factors may reinforce or contradict each other
 
-Stress factors:
-1. **Pitch**: Higher or lower register, melodic peak or nadir
-2. **Intensity**: Dynamic accent (forte, sforzando)
-3. **Color**: Timbral change, new instrument entry
-4. **Duration**: Longer note value (agogic accent)
+# Construction / Recognition
+- Identify which stress factors operate at each accent point
+- Count the contributing factors to assess accent completeness
+- Note when factors reinforce (clear accent) versus contradict (ambiguous accent)
 
-Accent completeness:
-- Single factor: Weak accent
-- Two factors: Moderate accent
-- Three factors: Strong accent
-- Four factors: Maximum accent
-
-Interaction:
-- Factors may reinforce each other
-- Factors may contradict each other
-- Contradiction creates ambiguity or tension
-
-# Musical Context/Application
-
-Understanding musical stress enables:
-- Creating varied accent types for different effects
-- Emphasizing important structural moments through multiple factors
-- Creating subtle stress through single factors
-- Playing factors against each other for ambiguity
-
-Applications include:
-- Melodic shaping through varied stress
-- Phrase articulation through strategic accents
-- Structural highlighting through accumulated factors
-- Rhythmic interest through stress variation
+# Context & Application
+Understanding musical stress enables creating varied accent types, emphasizing structural moments through multiple factors, creating subtle stress through single factors, and playing factors against each other for ambiguity.
 
 # Examples
+Source discussion (Ch. 10, p. 215): Multiple factors creating complete accent; rhythmic pulse defined by emphasized melodic, contrapuntal, and harmonic functions.
 
-**From source discussion:**
-- Multiple factors creating complete accent
-- Rhythmic pulse defined by emphasized melodic, contrapuntal, and harmonic functions
-- Various combinations of stress factors
+# Relationships
+## Builds Upon
+- Meter and rhythm (stress operates within/against metric framework)
+## Enables
+- Varied accent types for compositional flexibility
+## Related
+- Syncopation (stress factors may contradict metric position)
+- Percussive use of harmony (harmonic accent as stress)
+## Contrasts With
+- (none directly)
 
-# Related Concepts
-
-- Rhythmic Accent
-- Agogic Accent
-- Dynamic Accent
-- Metric Accent
-- Phrase Articulation
-- Melodic Contour
-- Orchestration
+# Common Errors
+- Relying on a single factor when a complete accent is needed
+- Assuming all accents require all four factors
 
 # Common Confusions
-
-- **Stress vs. meter**: Musical stress occurs wherever the musical content places it, which may not align with metric strong beats.
-- **Single vs. compound stress**: Not all accents need multiple factors; subtle effects may use single factors.
-- **Stress hierarchy**: Some factors may be more salient than others in given contexts; there is no universal hierarchy.
+- **Stress vs. meter**: Musical stress occurs wherever the content places it, which may not align with metric strong beats
+- **Single vs. compound stress**: Not all accents need multiple factors
+- **No universal hierarchy**: Some factors may be more salient than others in given contexts
 
 # Source Reference
+Chapter 10: Timing and Dynamics, p. 215 (pdf p. 215)
 
-Chapter 10: Timing and Dynamics, page 215
+# Verification Notes
+Upgraded from old card. Preserved: four factors, completeness principle. Added: v3 structure, slug references, reinforcement/contradiction concept.

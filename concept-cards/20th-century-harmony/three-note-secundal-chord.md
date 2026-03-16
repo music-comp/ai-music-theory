@@ -1,63 +1,134 @@
 ---
 concept: Three-Note Secundal Chord
-category: theory
+slug: three-note-secundal-chord
+category: chords
+subcategory: secundal-chords
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Chords by Seconds"
 chapter_number: 6
+section: "Three-Note Chords by Seconds"
 pdf_page: 120
-unit: null
-authors: Vincent Persichetti
+extraction_confidence: high
+aliases:
+  - "three-note chord by seconds"
+  - "secundal trichord"
+prerequisites:
+  - secundal-harmony
+  - interval
+extends:
+  - secundal-harmony
+related:
+  - secundal-chord-types
+  - secundal-chord-inversions
+  - secundal-chord-spacing
+  - secundal-doubling
+  - dissonant-tone-in-secundal-harmony
+contrasts_with:
+  - tone-cluster
+  - multi-note-secundal-chords
+answers_questions:
+  - "How many types of three-note secundal chords exist?"
+  - "How are three-note secundal chords inverted?"
+  - "Why do close-position secundal chords cramp in low registers?"
 ---
 
 # Quick Definition
+
 The basic building block of secundal harmony, consisting of three notes arranged in stacked seconds, existing in four intervallic types with varying degrees of consonance and dissonance.
 
-# Formal Definition
-Both major and minor seconds may be used in the construction of chords by seconds. There are four intervallic types of three-note chords by seconds: major-major, major-minor, minor-major, and minor-minor. Two inversions of each are possible, and the chords may be rearranged in sevenths (the inversion of seconds).
+# Core Definition
 
-# Musical/Mathematical Formulation
-Four intervallic types (from bottom up, in order of increasing dissonance):
-1. **Major-Major** (M2-M2): Most consonant (e.g., C-D-E)
-2. **Major-Minor** (M2-m2): (e.g., C-D-Eb)
-3. **Minor-Major** (m2-M2): (e.g., C-Db-Eb)
-4. **Minor-Minor** (m2-m2): Most dissonant, chromatic (e.g., C-Db-D)
+"Both major and minor seconds may be used in the construction of chords by seconds (the augmented second is tertian in effect). There are four intervallic types of three-note chords by seconds: major-major, major-minor, minor-major, and minor-minor" (Persichetti, p. 120). Two inversions of each are possible, and the chords may be rearranged in sevenths.
 
-Inversions (each type has two):
-- Root position: 2nd-2nd
-- First inversion: 2nd-7th
-- Second inversion: 7th-2nd
+# Prerequisites
 
-Seventh arrangement:
-- Chords by seconds can be spaced in sevenths (like tertian chords in sixths, quartal in fifths)
-- Opens up the texture while maintaining secundal identity
+- **Secundal harmony** — The three-note chord is the fundamental unit of this harmonic system
+- **Interval** — Understanding major/minor seconds and their inversions (sevenths) is essential for construction and classification
 
-# Musical Context/Application
-Three-note secundal chords have a unique flavor distinct from tertian and quartal sonorities. In major, minor, or the five other modal scales, only the first three types (M-M, M-m, m-M) are found naturally; the minor-minor type is derived from chromatic or synthetic scales.
+# Key Properties
 
-Close position secundal chords cramp easily and become percussive in the low register. Spacing in intervals of the seventh and ninth gives these "muscle-bound" chords linear freedom and room for activity of the parts.
+1. Four intervallic types classified by second quality from bottom up: M-M, M-m, m-M, m-m
+2. Arranged in order from most consonant (M-M) to most dissonant (m-m)
+3. Two inversions possible for each type: first inversion (2nd-7th) and second inversion (7th-2nd)
+4. Can be rearranged in sevenths for open-position voicing
+5. In diatonic modal scales, only the first three types occur naturally; m-m requires chromatic or synthetic scales
+6. Close position cramps easily and becomes percussive in low register
+7. Spacing in sevenths and ninths provides linear freedom and room for voice activity
+8. "Three-note secundal harmony has a unique flavor" (p. 123)
+
+# Construction / Recognition
+
+## To Construct
+1. Choose a root note
+2. Add a major or minor second above
+3. Add another major or minor second above that
+4. Classify by interval combination: M-M, M-m, m-M, or m-m
+5. For open position, rearrange intervals as sevenths (e.g., C-D-E becomes C-E-D at the octave)
+
+## To Recognize
+1. Identify a three-note sonority where adjacent notes are seconds (or sevenths in open position)
+2. Classify the second types from bottom to top
+3. Determine inversion by checking whether sevenths replace seconds
+
+# Context & Application
+
+Three-note secundal chords provide the essential vocabulary of secundal writing. Their "unique flavor" distinguishes them from tertian and quartal sonorities. The distinction between close and open position is practically critical: close-position chords in low registers become "muscle-bound," while seventh/ninth spacing allows contrapuntal activity.
 
 # Examples
-Ex. 6-1: Four intervallic types arranged by consonance to dissonance
-Ex. 6-2: Two inversions of each type
-Ex. 6-3: Chords arranged in sevenths (inverted form)
-Ex. 6-4: Spacing in sevenths and ninths for linear freedom
 
-Source material:
+**Ex. 6-1** (p. 121): Four intervallic types arranged by consonance to dissonance
+**Ex. 6-2** (p. 121): Two inversions of each type
+**Ex. 6-3** (p. 121): Chords arranged in sevenths
+**Ex. 6-4** (p. 121): Spacing in sevenths and ninths for linear freedom
+**Ex. 6-10** (p. 123): Three-note secundal harmony demonstrating unique flavor
+
+**Composer examples:**
 - Heitor Villa-Lobos: String Quartet No. 3, p. 32 (Eschig)
 - Camillo Togni: Fantasia Concertante, pp. 4-5 (Zerboni)
 
-# Related Concepts
-- Secundal Harmony
-- Secundal Chord Types
-- Secundal Chord Inversions
-- Secundal Chord Spacing
-- Tone Cluster
+# Relationships
+
+## Builds Upon
+- **secundal-harmony** — The three-note chord is the fundamental unit of this system
+
+## Enables
+- **secundal-chord-types** — Classification of the four intervallic varieties
+- **secundal-chord-inversions** — Inversion behavior and dissonant-tone shifts
+- **multi-note-secundal-chords** — Larger formations built from the same principle
+
+## Related
+- **secundal-chord-spacing** — Open vs. close position voicing strategies
+- **secundal-doubling** — Doubling strategies for textural control
+- **dissonant-tone-in-secundal-harmony** — Resolution behavior of the restless tone
+
+## Contrasts With
+- **tone-cluster** — Clusters lack defined inner voice movement
+- **multi-note-secundal-chords** — Four+ notes with greater contrapuntal difficulty
+
+# Common Errors
+
+- **Error**: Placing close-position secundal chords in the bass register
+  **Correction**: Use seventh/ninth spacing in low registers to avoid cramped, percussive texture
+- **Error**: Treating seventh-spaced secundal chords as tertian ninths
+  **Correction**: In secundal context, open-position chords remain secundal regardless of resemblance to ninth chords
 
 # Common Confusions
-- The terms "root," "second," and "third" refer to position in the secundal chord, not tertian function
-- Minor-minor type requires chromatic or synthetic scales; it does not occur diatonically
-- Seventh spacing does not make the chord tertian; it remains secundal in origin and effect
-- The augmented second is excluded because it sounds tertian
+
+- **Confusion**: The terms "root," "second," and "third" refer to tertian scale-degree functions
+  **Clarification**: In secundal chords these refer to chord-member positions (1st, 2nd, 3rd notes from the bottom)
+- **Confusion**: The minor-minor type is just a chromatic version of other types
+  **Clarification**: It is structurally distinct, requiring chromatic or synthetic scale sources, and does not occur in any diatonic mode
 
 # Source Reference
-Chapter 6: Chords by Seconds, pages 120-121
+
+Chapter 6: Chords by Seconds, pages 120-123. Ex. 6-1 through 6-10.
+
+# Verification Notes
+
+- Core Definition: Direct quotation from p. 120
+- Key Properties: Items 1-7 directly from source; item 8 direct quote from p. 123
+- Confidence: HIGH — explicit definition with systematic enumeration
+- Re-extracted from v2 card; preserved: composer examples, intervallic type enumeration

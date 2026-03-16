@@ -1,66 +1,80 @@
 ---
 concept: Augmented Sixth Added Notes
-category: technique
+slug: augmented-sixth-added-notes
+category: chords
+subcategory: added-note-chords
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Added-Note Chords"
 chapter_number: 5
 pdf_page: 108
-unit: null
-authors: Vincent Persichetti
+section: "Augmented Sixth Chords"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - augmented-sixth-chord
+extends:
+  - augmented-sixth-chord
+related:
+  - added-note-chord
+contrasts_with: []
+answers_questions:
+  - "Can multiple notes be added to augmented sixth chords simultaneously?"
+  - "How do augmented sixth chords with added notes resolve?"
+  - "Is there a limit to added notes on augmented sixth chords?"
 ---
-
 # Quick Definition
-The technique of attaching multiple major and minor seconds to augmented sixth chords without altering their harmonic function, creating complex sonorities that retain strong directional tendency.
+Multiple major and minor seconds added simultaneously to any augmented sixth chord without changing its function, creating complex sonorities that retain strong directional tendency and resolve most naturally to other added-note chord types.
 
-# Formal Definition
-Several major and minor seconds may be added simultaneously to any form of the augmented sixth chord without changing its function. The chord retains its strong tendency to move onward regardless of the number of notes attached to it. Augmented sixth chords with two or more added notes resolve most naturally to added-note chords of another variety because of their common secundal texture.
+# Core Definition
+Several major and minor seconds may be added simultaneously to any form of the augmented sixth chord without changing its function. The chord retains its strong tendency to move onward regardless of the number of notes attached to it. Augmented sixth chords with two or more added notes resolve most naturally to added-note chords of another variety, because of their common secundal texture. The augmented sixth interval maintains its directional power through any amount of color-tone accumulation.
 
-# Musical/Mathematical Formulation
-Addition principle:
-- Any number of M2 or m2 intervals may be added to any of the five basic augmented sixth forms
-- Each addition creates a secundal texture without changing function
-- The original augmented sixth interval maintains directional power
+# Prerequisites
+- **Augmented sixth chord**: The base formation receiving added notes
 
-Resolution pattern:
-- Augmented sixth + multiple added notes -> Added-note chord of another type
-- Common secundal texture facilitates smooth voice-leading
-- The augmented sixth interval still governs resolution direction
+# Key Properties
+1. Multiple seconds (M2 and m2) may be added simultaneously
+2. Function unchanged regardless of number of additions
+3. Strong onward tendency preserved
+4. Resolution: to other added-note chords (common secundal texture)
+5. Secundal texture of added notes facilitates smooth resolution
+6. Augmented sixth interval governs resolution direction throughout
 
-Example structure:
-- Italian Aug6: Ab-C-F# (in C)
-- With added notes: Ab-Bb-C-Db-F#-G (multiple seconds attached)
-- Still resolves with Aug6 expanding to octave
+# Construction / Recognition
+- Take any of the five basic augmented sixth forms
+- Attach M2 or m2 above/below any member
+- Multiple additions create secundal texture around the base
+- The augmented sixth interval must remain audible
 
-# Musical Context/Application
-This technique allows composers to create increasingly complex sonorities while maintaining clear harmonic direction. The strong pull of the augmented sixth interval acts as an anchor, allowing considerable accumulation of added tones before the chord becomes non-functional.
-
-The technique is particularly useful in:
-- Building tension through harmonic density
-- Creating coloristic effects without losing harmonic clarity
-- Transitioning between sections of different harmonic density
-- Connecting to other added-note passages
+# Context & Application
+This technique allows increasing harmonic density while maintaining clear direction. The strong pull of the augmented sixth acts as an anchor for considerable tone accumulation. Resolution to other added-note chord types (sharing secundal texture) provides smooth voice-leading connections.
 
 # Examples
-Ex. 5-3: Multiple added notes to augmented sixth chords
-- Demonstrates simultaneous M2 and m2 additions
-- Shows resolution to other added-note chord types
-- Illustrates retention of directional function
+- Ex. 5-3: Multiple added notes to augmented sixth chords with resolution
 
-Source material composers:
-- Luigi Dallapiccola: Volo di Notte, p. 37 (Universal)
-- Arthur Honegger: Jeanne d'Arc au Bucher, pp. 20-21 (Salabert)
+# Relationships
+## Builds Upon
+- Augmented sixth chord (base formation)
 
-# Related Concepts
-- Augmented Sixth Chord
-- Added-Note Chord
-- Secundal Harmony
-- Harmonic Density
-- Voice-Leading in Added-Note Chords
+## Enables
+- Maximum-density directional harmony
+
+## Related
+- added-note-chord (the general technique applied here)
+
+## Contrasts With
+- Simple augmented sixth (without added notes)
+
+# Common Errors
+- Thinking added notes weaken the augmented sixth's directional pull
 
 # Common Confusions
-- The added notes do not create new chord types; they modify texture while preserving function
-- Resolution to added-note chords is preferred over resolution to simple triads (common secundal texture)
-- The number of added notes is theoretically unlimited as long as the augmented sixth interval remains audible
+- **Function preserved**: The added notes modify texture but cannot override the strong directional pull of the augmented sixth interval
 
 # Source Reference
-Chapter 5: Added-Note Chords, page 110
+Chapter 5: Added-Note Chords, p. 110 (PDF page 108)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved the resolution-to-added-note-chords principle from v2 card.

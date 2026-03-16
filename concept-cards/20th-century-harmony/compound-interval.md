@@ -1,49 +1,88 @@
 ---
 concept: Compound Interval
-category: theory
+slug: compound-interval
+category: intervals
+subcategory: fundamentals
+tier: foundational
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Intervals"
 chapter_number: 1
-pdf_page: 12
-unit: null
-authors: Vincent Persichetti
+pdf_page: 17
+section: "Inversion and Spacing"
+extraction_confidence: high
+aliases:
+  - compound intervals
+  - intervals beyond the octave
+prerequisites:
+  - interval
+  - interval-spacing
+extends:
+  - interval
+related:
+  - interval-spacing
+  - overtone-series
+  - open-consonance
+  - soft-consonance
+  - sharp-dissonance
+contrasts_with: []
+answers_questions:
+  - "What is a compound interval?"
+  - "How do compound intervals differ qualitatively from their simple forms?"
+  - "Why is the ninth below a chord an effective supporting tone?"
 ---
 
 # Quick Definition
-Intervals spanning more than one octave, which possess distinct qualities from their simple counterparts and serve as primary harmonic resources in twentieth-century music.
+Intervals spanning more than one octave, which possess qualitatively distinct characteristics from their simple counterparts -- dissonances become brilliant, consonances become richer or stronger.
 
-# Formal Definition
-Compound intervals are intervals that exceed the span of one octave, such as the ninth (octave plus second), tenth (octave plus third), or eleventh (octave plus fourth). These intervals have qualitatively different characteristics from their simple forms, becoming not just melodic embellishments but primary harmonic resources in twentieth-century composition.
+# Core Definition
+Compound intervals exceed the span of one octave. They are not merely "bigger versions" of simple intervals but have qualitatively different characteristics. Soft consonances become richer; open consonances become stronger; dissonances become less biting yet more brilliant; the tritone becomes more ambiguous and veiled. The most effective supporting tones are the fifth or ninth below the bottom tone of a chord, because the fifth is a strong and resonant interval and the ninth is a fifth below the fifth.
 
-# Musical/Mathematical Formulation
-- Compound interval = simple interval + octave(s)
-- Ninth = octave + second (14 semitones for major ninth)
-- Tenth = octave + third (15 or 16 semitones)
-- Eleventh = octave + fourth (17 semitones)
-- Quality transformations with compounding:
-  - Soft consonances (3rds, 6ths): become richer
-  - Open consonances (5ths, 8ves): become stronger
-  - Dissonances (2nds, 7ths): less biting, more brilliant
-  - Tritone: more ambiguous and veiled
+# Prerequisites
+- **interval** -- compound intervals are extensions of simple intervals
+- **interval-spacing** -- compound intervals result from wide spacing
 
-# Musical Context/Application
-Compound intervals function differently from their simple counterparts. The most effective supporting tones for resonance are the fifth or ninth below the bottom tone of a chord, because the fifth is a strong and resonant interval and the ninth is a fifth below the fifth. Extensions beyond the octave become primary harmonic resources in twentieth-century extended tertian harmony (ninth chords, eleventh chords, thirteenth chords).
+# Key Properties
+1. **Compound = simple + octave(s)**: ninth = octave + second, tenth = octave + third, etc.
+2. **Quality transformations**: not just size changes but character changes
+3. **Supporting resonance**: fifth or ninth below bass cast a "reflected sheen" over harmony
+4. **Ninth = fifth below the fifth**: explains its resonant supporting quality
+5. **Primary harmonic resources**: ninths, elevenths, thirteenths are essential in 20th-century extended harmony
+
+# Construction / Recognition
+1. Identify the simple interval equivalent (compound modulo octave)
+2. Note the transformed quality: richer, stronger, more brilliant, or more veiled
+3. In bass support: look for fifths or ninths below the harmonic bass
+
+# Context & Application
+Extensions beyond the octave are primary harmonic resources in twentieth-century harmony. Basses plucking the fifth or ninth below the actual bass line cast a reflected sheen over the harmony. In lower registers, addition of tones is limited by the danger of muddy progressions. Most effective supporting tones are the fifth or ninth below.
 
 # Examples
-- Ex. 1-9: Dissonances spaced more than an octave apart
-- Ex. 1-23: Basses adding the ninth below for supporting resonance
-- Chord structures using ninths, elevenths, and thirteenths as essential components
+- Ex. 1-9: dissonances spaced more than an octave apart becoming brilliant
+- Ex. 1-23: basses adding the ninth below for supporting resonance
 
-# Related Concepts
-- Interval
-- Interval Spacing
-- Interval Inversion
-- Overtone Series
-- Extended Tertian Chord
-- Ninth Chord
+# Relationships
+## Builds Upon
+- **interval** -- the simple form being extended
+- **interval-spacing** -- the mechanism producing compound intervals
+## Enables
+- Extended tertian harmony (ninths, elevenths, thirteenths)
+## Related
+- **overtone-series** -- explains why wider spacing is more resonant in lower registers
+- All interval types: compound spacing transforms each distinctly
+## Contrasts With
+- None
+
+# Common Errors
+- **Error**: Treating compound intervals as equivalent to their simple forms. **Correction**: While they share some characteristics, compound intervals have qualitatively distinct characters and serve different harmonic functions.
 
 # Common Confusions
-Students may treat compound intervals as equivalent to their simple forms. While they share some characteristics, compound intervals have distinct qualities and serve different harmonic functions in twentieth-century music.
+- **Confusion**: Thinking a ninth is "just a second spread out." **Clarification**: The ninth has its own brilliance and serves as a primary resonance support (fifth below the fifth), with functions distinct from the simple second.
 
 # Source Reference
-Chapter 1: Intervals, pages 17, 23-24
+Chapter 1: Intervals, pages 17, 23-24.
+
+# Verification Notes
+- Re-extracted from v2 card; preserved: quality transformations, supporting resonance concept, ninth-as-fifth-below-fifth
+- Confidence rationale: discussed across inversion/spacing and overtone sections

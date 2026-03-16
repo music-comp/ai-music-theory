@@ -1,71 +1,96 @@
 ---
 concept: Partial Reflection
-category: technique
+slug: partial-reflection
+category: voice-leading
+subcategory: mirror-harmony
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Compound and Mirror Harmony"
 chapter_number: 8
+section: "Mirror Writing"
 pdf_page: 162
-unit: null
-authors: Vincent Persichetti
+extraction_confidence: high
+aliases:
+  - "partial mirror"
+  - "free inner-voice mirror"
+prerequisites:
+  - mirror-writing
+extends:
+  - mirror-writing
+related:
+  - thematic-mirror-writing
+contrasts_with: []
+answers_questions:
+  - "What is partial reflection?"
+  - "Which voices are mirrored and which are free?"
+  - "Why does partial reflection provide greater harmonic freedom?"
 ---
 
 # Quick Definition
 
-A mirror writing technique where only the outer voices maintain strict reflective relationship while inner voices move freely, allowing greater harmonic flexibility.
+A mirror writing technique where only the outer voices maintain strict reflective relationship while inner voices move freely, providing greater harmonic flexibility.
 
-# Formal Definition
+# Core Definition
 
-**Partial reflection** is a modification of strict mirror writing in which greater harmonic freedom is obtained by maintaining the reflective relationship only in the outer voices while allowing the inner voices to move freely. This technique preserves the essential mirror character and the distinctive sound of reflective outer-voice motion while gaining flexibility in harmonic progression and voice leading through the freed inner parts.
+"Greater freedom in harmony can be obtained through only partial reflection, the outer voices mirrored while the inner voices move freely" (Persichetti, p. 177).
 
-# Musical/Mathematical Formulation
+# Prerequisites
 
-Strictness spectrum in mirror writing:
-1. **Strict mirror**: All voices, including ornamental tones, maintain reflective relationship
-2. **Partial reflection**: Outer voices (soprano and bass) mirrored; inner voices (alto, tenor) free
-3. **Free mirror reference**: Mirror principles used loosely as compositional guide
+- **Mirror writing** — Partial reflection is a relaxation of strict mirror writing
 
-In partial reflection:
-- Soprano moves in contrary motion to bass, interval for interval
-- Inner voices fill harmony without reflective constraint
-- Overall mirror character preserved through outer-voice frame
+# Key Properties
 
-# Musical Context/Application
+1. Outer voices (soprano and bass) maintain strict mirror relationship
+2. Inner voices (alto, tenor) move freely without reflective constraint
+3. Overall mirror character preserved through outer-voice frame
+4. Greater harmonic flexibility than strict mirror writing
+5. Smoother harmonic progressions possible
+6. More natural inner-voice motion and better chord voicing
 
-Partial reflection enables:
-- Maintaining distinctive mirror sound while gaining voice-leading flexibility
-- Smoother harmonic progressions than strict mirror writing allows
-- More natural inner-voice motion and better chord voicing
-- Use of mirror technique in contexts requiring harmonic variety
+# Construction / Recognition
 
-The outer-voice frame establishes the mirror character; inner voices can then provide:
-- Common tones for smooth connection
-- Chromatic motion for color
-- Contrary or oblique motion for independence
-- Doubling for emphasis or fullness
+## To Apply Partial Reflection
+1. Compose outer voices in strict contrary-motion mirror
+2. Fill inner voices freely for optimal voicing and voice-leading
+3. The outer-voice frame establishes mirror character
+4. Inner voices provide common tones, chromatic motion, contrary/oblique motion as needed
+
+# Context & Application
+
+Partial reflection enables maintaining distinctive mirror sound while gaining voice-leading flexibility, smoother progressions, more natural inner-voice motion, and use of mirror technique in contexts requiring harmonic variety. The outer-voice frame is sufficient to establish mirror character.
 
 # Examples
 
-**From source (Ex. 8-26):**
-- Outer voices in strict mirror relationship
-- Inner voices moving freely within the harmonic framework
-- Greater harmonic flexibility achieved while maintaining mirror character
+**Ex. 8-26** (p. 177): Outer voices in strict mirror; inner voices moving freely
 
-# Related Concepts
+# Relationships
 
-- Mirror Writing
-- Mirror Chord
-- Strict Counterpoint
-- Free Counterpoint
-- Outer Voice Framework
-- Voice Leading
-- Harmonic Flexibility
+## Builds Upon
+- **mirror-writing** — A relaxed form of the mirror technique
+
+## Related
+- **thematic-mirror-writing** — Another approach to mirror flexibility
+
+# Common Errors
+
+- **Error**: Maintaining strict reflection in all voices when flexibility is needed
+  **Correction**: Free inner voices when harmonic flexibility is more important than strict symmetry
 
 # Common Confusions
 
-- **Partial vs. strict mirror**: Strict mirror reflects all voices; partial reflects only outer voices. Both are valid mirror techniques.
-- **Which voices to reflect**: Outer voices (highest and lowest) carry the most weight in establishing mirror character; inner voices are less prominent and thus may be freed.
-- **Partial vs. non-mirror**: Partial reflection still employs mirror principles; it is not abandonment of mirror technique but strategic relaxation of strictness.
+- **Confusion**: Partial reflection abandons mirror technique
+  **Clarification**: It preserves the essential mirror character through outer voices while gaining harmonic freedom
+- **Confusion**: Which voices to mirror is arbitrary
+  **Clarification**: Outer voices carry the most perceptual weight; they establish the mirror character most effectively
 
 # Source Reference
 
-Chapter 8: Compound and Mirror Harmony, page 177
+Chapter 8: Compound and Mirror Harmony, page 177. Ex. 8-26.
+
+# Verification Notes
+
+- Core Definition: Direct quotation from p. 177
+- Confidence: HIGH — explicit definition
+- Re-extracted from v2 card; preserved: outer/inner voice distinction, flexibility benefit

@@ -1,86 +1,81 @@
 ---
 concept: Polymeter
-category: technique
+slug: polymeter
+category: rhythm-meter
+subcategory: timing-dynamics
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Timing and Dynamics"
 chapter_number: 10
 pdf_page: 211
-unit: null
-authors: Vincent Persichetti
+section: "Rhythm"
+extraction_confidence: high
+aliases:
+  - "poly-time-signatures"
+prerequisites:
+  - meter-and-rhythm
+extends: []
+related:
+  - polyrhythm
+contrasts_with:
+  - polyrhythm
+answers_questions:
+  - "How is polymeter achieved through different time signatures?"
+  - "What is complete rhythmic independence of voices?"
 ---
 
 # Quick Definition
-
 The simultaneous use of different time signatures when the pulse is irregularly but consistently subdivided, with bar lines potentially falling at different places in different voices.
 
-# Formal Definition
+# Core Definition
+When the pulse is irregularly but consistently subdivided, different time signatures are used simultaneously (**polymeter**). Complete rhythmic independence of voices is obtained by using different time signatures with bar lines falling at different places (Ch. 10, pp. 214-215).
 
-**Polymeter** occurs when the pulse is irregularly but consistently subdivided, requiring different time signatures to be used simultaneously. Complete rhythmic independence of voices is obtained by using different time signatures with bar lines falling at different places. This technique creates metric complexity through the superimposition of different metric organizations.
+# Prerequisites
+- **Meter and rhythm** -- understanding metric organization
 
-# Musical/Mathematical Formulation
+# Key Properties
+1. Different time signatures used simultaneously
+2. Pulse irregularly but consistently subdivided
+3. Bar lines may coincide (same-length different groupings) or fall at different places
+4. Complete rhythmic independence achievable
+5. Each voice may have its own metric organization
 
-Polymeter types:
-1. **Same barlines**: Different time signatures but bar lines coincide
-   - 3/4 against 6/8 (different beat groupings, same bar length)
+# Construction / Recognition
+- Identify simultaneous different time signatures in the score
+- Note whether bar lines coincide or are staggered
+- Determine the level of metric independence between voices
 
-2. **Different barlines**: Time signatures with bar lines at different places
-   - 3/4 in one voice, 4/4 in another
-   - Bar lines never coincide except at start
-
-Complete independence achieved when:
-- Each voice has its own time signature
-- Each voice has its own barline placement
-- Metric organization is entirely independent
-
-# Musical Context/Application
-
-Polymeter creates:
-- Complete rhythmic independence between voices
-- Metric complexity through organizational layering
-- Textural richness through metric contrast
-- Freedom from unified metric framework
-
-Applications include:
-- Complex modernist counterpoint
-- Notation of rhythmically independent layers
-- Extended techniques in chamber music
-- Exploratory rhythmic writing
-
-Notation considerations:
-- Multiple time signatures may appear simultaneously
-- Bar lines may be staggered across the score
-- Cues may be necessary for ensemble coordination
+# Context & Application
+Polymeter creates complete rhythmic independence, metric complexity through organizational layering, and freedom from unified metric framework. Notation may require multiple simultaneous time signatures, staggered bar lines, and coordination cues.
 
 # Examples
+**Example 1** (Ch. 10, Ex. 10-6, p. 213): Different time signatures used simultaneously.
+**Example 2** (Ch. 10, Ex. 10-7, p. 214): Complete independence with bar lines at different places.
 
-**From source (Ex. 10-6, Ex. 10-7):**
-- Different time signatures used simultaneously
-- Complete rhythmic independence with bar lines at different places
-- Irregular but consistent pulse subdivision
+Source material: Bartok, String Quartet No. 3, pp. 9, 23; Carter, String Quartet No. 1, p. 5; Hindemith, Mathis der Maler, pp. 20-22; Ravel, Sonate pour Violon et Violoncelle, p. 5; Stravinsky, Petrushka, p. 10.
 
-**Recommended source material:**
-- Bela Bartok, String Quartet No. 3, pp. 9, 23
-- Elliott Carter, String Quartet No. 1, p. 5
-- Paul Hindemith, Symphonie Mathis der Maler, pp. 20-22
-- Maurice Ravel, Sonate pour Violon et Violoncelle, p. 5
-- Igor Stravinsky, Petrushka, p. 10
+# Relationships
+## Builds Upon
+- Meter and rhythm (polymeter extends metric concepts to simultaneous layers)
+## Enables
+- Complete rhythmic independence of voices
+## Related
+- Polyrhythm (independent rhythmic patterns within shared or different meters)
+## Contrasts With
+- Polyrhythm (polymeter involves time signatures; polyrhythm involves rhythmic patterns)
 
-# Related Concepts
-
-- Polyrhythm
-- Time Signature
-- Metric Independence
-- Rhythmic Layering
-- Metric Modulation
-- Bar Line
-- Composite Meter
+# Common Errors
+- Confusing polymeter with polyrhythm
+- Neglecting coordination cues in polymetric notation
 
 # Common Confusions
-
-- **Polymeter vs. polyrhythm**: Polymeter involves different time signatures; polyrhythm involves different rhythmic patterns (potentially within same meter).
-- **Notation vs. perception**: Polymetric notation may or may not be perceived as such by listeners.
-- **Independence levels**: Polymeter can range from different beat groupings (same bar length) to completely independent metric organization.
+- **Polymeter vs. polyrhythm**: Polymeter involves different time signatures; polyrhythm involves different rhythmic patterns
+- **Notation vs. perception**: Polymetric notation may not be perceived as such by listeners
 
 # Source Reference
+Chapter 10: Timing and Dynamics, pp. 214-215 (pdf pp. 214-215)
 
-Chapter 10: Timing and Dynamics, pages 214-215
+# Verification Notes
+Upgraded from old card. Preserved: all definitions, all composer examples, independence concept. Added: v3 structure, slug references.

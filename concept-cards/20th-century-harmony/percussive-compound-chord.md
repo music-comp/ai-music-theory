@@ -1,72 +1,100 @@
 ---
 concept: Percussive Compound Chord
-category: theory
+slug: percussive-compound-chord
+category: chords
+subcategory: compound-chords
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Compound and Mirror Harmony"
 chapter_number: 8
+section: "Compound Construction"
 pdf_page: 162
-unit: null
-authors: Vincent Persichetti
+extraction_confidence: high
+aliases:
+  - "percussive harmony"
+  - "accentual compound chord"
+prerequisites:
+  - compound-chord
+  - intervallic-tension-distribution
+extends:
+  - compound-chord
+related:
+  - compound-chord-progression
+contrasts_with:
+  - elastic-compound-chord
+answers_questions:
+  - "What makes compound chords sound percussive?"
+  - "How do percussive compound chords create textural levels?"
 ---
 
 # Quick Definition
 
-Compound chords that create a percussive effect through the placement of smaller intervals in the lower registers, used for rhythmic accentuation against other textural levels.
+Compound chords with smaller intervals placed low in the structure, creating a naturally percussive quality used for rhythmic accentuation against other textural levels.
 
-# Formal Definition
+# Core Definition
 
-**Percussive compound chords** are compound chord formations in which smaller intervals (seconds, minor seconds) are placed low in the structure, creating a naturally percussive quality. The inflexibility of large compound formations often limits their harmonic activity to percussive accentuations, sustained backgrounds, and cadences. When used for percussive accentuation, two textural levels of different kinds may be created: the compound harmony providing percussive accents while another layer uses tertian, quartal, or secundal harmony.
+"They form naturally percussive chords when the smaller intervals are low in the structure" (Persichetti, p. 168). "When these chords are used for percussive accentuation two textural levels of different kinds may be created. The harmony containing the percussive chords is compound and the other may be tertian, quartal, or secundal" (p. 168).
 
-# Musical/Mathematical Formulation
+# Prerequisites
 
-Construction principles for percussive effect:
-- Small intervals (m2, M2) placed in bass and lower-middle register
-- Larger intervals may appear in upper portions
-- Sharp dissonant intervals in low register create attack quality
-- The bottom-heavy dissonance produces dampened pitch projection
+- **Compound chord** — Percussive compound chords are a voicing variant
+- **Intervallic tension distribution** — The placement of small intervals low creates the percussive quality
 
-Textural layering:
-- Level 1: Percussive compound chords (accent function)
-- Level 2: Different harmonic type (tertian/quartal/secundal) for continuous texture
+# Key Properties
 
-# Musical Context/Application
+1. Small intervals (m2, M2) placed in bass and lower-middle register
+2. Creates naturally percussive, attack-like quality
+3. Two textural levels: compound (percussive accent) + another type (continuous texture)
+4. Large formations often limited to percussive accentuations, sustained backgrounds, cadences
+5. Low-register dense intervals approach unpitched percussion quality
 
-Percussive compound chords serve:
-- **Rhythmic accentuation**: Punctuating melodic or harmonic phrases
-- **Textural contrast**: Creating distinct planes of sound
-- **Orchestral color**: Particularly effective in lower brass and low strings
-- **Dramatic emphasis**: Highlighting arrival points or structural downbeats
+# Construction / Recognition
 
-The dampened pitch quality of low-register dense intervals creates sounds approaching unpitched percussion, making these chords function rhythmically as much as harmonically.
+## To Create Percussive Effect
+1. Place small intervals (seconds) in the bottom register of the chord
+2. Larger intervals may appear in upper portions
+3. Use for accentuation against a contrasting harmonic texture
+4. Plan as brief rhythmic events rather than sustained harmony
+
+# Context & Application
+
+Percussive compound chords serve rhythmic accentuation (punctuating phrases), textural contrast (distinct sound planes), orchestral color (lower brass, low strings), and dramatic emphasis (arrival points, structural downbeats). The dampened pitch quality of low-register dense intervals creates sounds functioning rhythmically as much as harmonically.
 
 # Examples
 
-**From source (Ex. 8-10, Ex. 8-11):**
-- Percussive chords used against contrasting tertian, quartal, or secundal textures
-- Two-level textural writing where compound harmony provides accent function
+**Ex. 8-10** (p. 168): Percussive compound chords
+**Ex. 8-11** (p. 168): Two textural levels with compound accent
 
-**From source material:**
-- Bela Bartok, Piano Sonata, p. 13 (Universal) - percussive harmony
-- Alban Berg, Wozzeck, p. 215 (Universal)
-- Carlos Chavez, Sinfonia de Antigona, p. 4 (G. Schirmer)
-- Manuel de Falla, Harpsichord Concerto, p. 4 (Eschig)
-- Arthur Honegger, Pacific 231, p. 4 (Senart)
+# Relationships
 
-# Related Concepts
+## Builds Upon
+- **compound-chord** — A voicing variant of compound chords
+- **intervallic-tension-distribution** — Small intervals low = percussive quality
 
-- Compound Chord
-- Harmonic Percussiveness
-- Textural Layering
-- Intervallic Tension Distribution
-- Orchestration
-- Rhythmic Accent
+## Related
+- **compound-chord-progression** — Percussive chords serve as accents within progressions
+
+## Contrasts With
+- **elastic-compound-chord** — Flexible, mobile vs. massive, percussive
+
+# Common Errors
+
+- **Error**: Placing small intervals high and expecting percussive effect
+  **Correction**: The percussive quality depends on small intervals being low; high placement produces different character
 
 # Common Confusions
 
-- **Percussive vs. sustained compound chords**: The same compound chord type may function percussively or as sustained background depending on register, articulation, and context.
-- **Interval placement is crucial**: The percussive effect depends on small intervals being low; the same intervals placed high would not produce the same attack quality.
-- **Harmonic vs. rhythmic function**: Percussive compound chords blur the line between harmony and rhythm, functioning primarily as timbral/rhythmic events.
+- **Confusion**: The same chord is always percussive
+  **Clarification**: Percussive effect depends on register, articulation, and context, not just interval content
 
 # Source Reference
 
-Chapter 8: Compound and Mirror Harmony, pages 168-169
+Chapter 8: Compound and Mirror Harmony, pages 168-169. Ex. 8-10, 8-11.
+
+# Verification Notes
+
+- Core Definition: Direct quotation from p. 168
+- Confidence: HIGH — explicit treatment
+- Re-extracted from v2 card; preserved: two-level textural principle, composer examples

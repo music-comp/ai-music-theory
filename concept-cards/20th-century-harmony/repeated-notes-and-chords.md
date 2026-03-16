@@ -1,79 +1,82 @@
 ---
 concept: Repeated Notes and Chords
-category: technique
+slug: repeated-notes-and-chords
+category: rhythm-meter
+subcategory: timing-dynamics
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Timing and Dynamics"
 chapter_number: 10
 pdf_page: 211
-unit: null
-authors: Vincent Persichetti
+section: "Percussive Use of Harmony"
+extraction_confidence: high
+aliases:
+  - "chordal repetition"
+prerequisites:
+  - harmonic-rhythm
+extends: []
+related:
+  - percussive-use-of-harmony
+  - static-harmony
+  - ostinato
+contrasts_with: []
+answers_questions:
+  - "How do repeated notes relate to percussion rhythm?"
+  - "How does chordal repetition function in slow harmonic rhythm?"
 ---
 
 # Quick Definition
+Melodic repeated notes and chordal repetition as rhythmic forces that create tonal stimulation in slow harmonic rhythm, bridging pitched and unpitched percussion.
 
-The use of melodic repeated notes and chordal repetition as rhythmic forces that create tonal stimulation in slow harmonic rhythm and establish percussive character.
+# Core Definition
+The tonal equivalent of percussion rhythms (instruments of indeterminate pitch) is the melodic **repeated note**. Reiteration of the melodic tone is a rhythmic force that often stimulates repeated-chord activity. The rhythm of **chordal repetition** may act as a tonal stimulant in slow harmonic rhythm, providing rhythmic activity when harmonic change is minimal (Ch. 10, pp. 219-220).
 
-# Formal Definition
+# Prerequisites
+- **Harmonic rhythm** -- understanding chord-change pacing
 
-The **repeated note** is the tonal equivalent of percussion rhythms (instruments of indeterminate pitch). Reiteration of the melodic tone is a rhythmic force that often stimulates repeated-chord activity. The rhythm of **chordal repetition** may act as a tonal stimulant in slow harmonic rhythm, providing rhythmic activity when harmonic change is minimal. This technique bridges the gap between pitched and unpitched rhythm.
+# Key Properties
+1. Melodic repeated note = tonal equivalent of percussion rhythm
+2. Repeated notes stimulate repeated-chord activity
+3. Chordal repetition provides rhythm without harmonic change
+4. Maintains energy in slow harmonic rhythm
+5. Bridges the gap between pitched and unpitched rhythmic forces
 
-# Musical/Mathematical Formulation
+# Construction / Recognition
+- Identify insistent melodic note repetition and whether it generates chordal repetition
+- Note whether the harmonic rhythm is slow while chordal articulation is active
+- Check whether repeated chords provide rhythmic drive without harmonic motion
 
-Functional relationships:
-- Melodic repeated note : Percussion rhythm :: Pitched : Unpitched
-- Repeated notes stimulate repeated chord activity
-- Chordal repetition provides rhythm without harmonic change
-
-Effects:
-- Rhythmic activity maintained in slow harmonic rhythm
-- Tonal stimulation through insistent reiteration
-- Percussive character in pitched instruments
-- Energy without harmonic motion
-
-# Musical Context/Application
-
-Repeated notes and chords serve:
-- Maintaining rhythmic interest in harmonically static passages
-- Creating drive and momentum without harmonic change
-- Establishing tonal presence through insistence
-- Bridging pitched and percussion realms
-
-The technique is effective for:
-- Ostinato-based passages
-- Building tension through repetition
-- Creating trance-like or hypnotic effects
-- Providing rhythmic foundation for melodic development
+# Context & Application
+Repeated notes and chords maintain rhythmic interest in harmonically static passages, create drive and momentum without harmonic change, and establish tonal presence through insistence.
 
 # Examples
+**Example** (Ch. 10, Ex. 10-15, p. 220): Chordal repetition as rhythmic stimulant in slow harmonic rhythm.
 
-**From source (Ex. 10-15):**
-- Chordal repetition as rhythmic stimulant
-- Repeated notes creating tonal stimulation in slow harmonic rhythm
+Source material: Bloch, Piano Quintet, p. 72; Diamond, Rounds for String Orchestra, p. 1; Prokofiev, Violin Concerto in D, p. 21; Ruggles, Evocations for Piano, p. 3; Webern, Symphonie Op. 21, p. 12.
 
-**Recommended source material:**
-- Ernest Bloch, Piano Quintet, p. 72
-- David Diamond, Rounds for String Orchestra, p. 1
-- Serge Prokofiev, Violin Concerto in D, p. 21
-- Carl Ruggles, Evocations for Piano, p. 3
-- Dmitri Shostakovich, Symphony No. 10, p. 151
-- Anton Webern, Symphonie Op. 21, p. 12
+# Relationships
+## Builds Upon
+- Harmonic rhythm (repetition provides activity without harmonic motion)
+## Enables
+- Rhythmic drive within static harmonic contexts
+## Related
+- Percussive use of harmony (percussive chord treatment)
+- Static harmony (single chord sustained or repeated)
+- Ostinato (related repetitive technique)
+## Contrasts With
+- (none directly)
 
-# Related Concepts
-
-- Harmonic Rhythm
-- Percussive Use of Harmony
-- Static Harmony
-- Ostinato
-- Rhythmic Drive
-- Tonal Stimulation
-- Percussion Rhythm
+# Common Errors
+- Confusing chordal repetition with harmonic rhythm movement (repeated chords do not create harmonic rhythm)
 
 # Common Confusions
-
-- **Repetition vs. stasis**: Repeated notes/chords provide rhythmic activity even when harmony is static.
-- **Melodic vs. harmonic repetition**: Melodic repeated notes stimulate but do not require chordal repetition.
-- **Notation of harmonic rhythm**: Repeated chords do not create harmonic rhythm movement; the same chord persists regardless of articulation.
+- **Repetition vs. stasis**: Repeated notes/chords provide rhythmic activity even when harmony is static
+- **Notation of harmonic rhythm**: Repeated chords persist as the same harmony regardless of articulation
 
 # Source Reference
+Chapter 10: Timing and Dynamics, pp. 219-220 (pdf pp. 219-220)
 
-Chapter 10: Timing and Dynamics, pages 219-220
+# Verification Notes
+Upgraded from old card. Preserved: percussion-equivalence concept, all source material. Added: v3 structure, slug references.

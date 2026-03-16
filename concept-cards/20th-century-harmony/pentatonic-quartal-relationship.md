@@ -1,63 +1,81 @@
 ---
 concept: Pentatonic-Quartal Relationship
-category: theory
+slug: pentatonic-quartal-relationship
+category: fundamentals
+subcategory: chord-scale-theory
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Chords by Fourths"
 chapter_number: 4
 pdf_page: 92
-unit: null
-authors: Vincent Persichetti
+section: "Introduction"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - perfect-fourth-stacks
+  - pentatonic-scale
+extends:
+  - perfect-fourth-stacks
+related:
+  - quartal-harmony
+contrasts_with: []
+answers_questions:
+  - "Why do quartal stacks sound pentatonic?"
+  - "How does the five-note quartal chord equal the pentatonic scale?"
+  - "What compositional opportunities does this relationship create?"
 ---
-
 # Quick Definition
-The correspondence between quartal chord structures and pentatonic scales, where three-, four-, and five-note perfect fourth stacks have pentatonic flavor, and the five-note form contains all steps of the diatonic pentatonic scale.
+The correspondence between quartal chord structures and pentatonic scales: three-, four-, and five-note perfect-fourth stacks have pentatonic flavor, and the five-note form contains all steps of the diatonic pentatonic scale.
 
-# Formal Definition
-Three-, four-, and five-note chords by perfect fourths have a pentatonic flavor. The five-note form contains all the steps of the diatonic pentatonic scale. This relationship means that melodic writing featuring pentatonic quartal chords naturally aligns with pentatonic melody, creating stylistic coherence.
+# Core Definition
+Three-, four-, and five-note chords by perfect fourths have a pentatonic flavor. The five-note form contains all the steps of the diatonic pentatonic scale. This means that quartal harmony and pentatonic melody naturally align, creating stylistic coherence. Neither pentatonic scales nor perfect-fourth structures contain semitones, which explains their shared open, non-chromatic quality. The fourth encompasses one minor third and one major second, the two intervals of the pentatonic scale.
 
-# Musical/Mathematical Formulation
-**Perfect Fourth Stack = Pentatonic Collection:**
-5 notes in perfect fourths:
-C - F - Bb - Eb - Ab
+# Prerequisites
+- **Perfect fourth stacks**: The quartal formations exhibiting pentatonic flavor
+- **Pentatonic scale**: The scale to which quartal stacks correspond
 
-Rearranged as scale:
-Ab - Bb - C - Eb - F = Ab pentatonic (minor pentatonic on Ab)
-Or: C - Eb - F - Ab - Bb = C minor pentatonic
+# Key Properties
+1. Five perfect fourths stacked = complete pentatonic collection
+2. C-F-Bb-Eb-Ab rearranged = Ab pentatonic (Ab-Bb-C-Eb-F)
+3. No semitones in either system
+4. P4 = m3 + M2 (pentatonic intervals)
+5. 3-note stack = 3 of 5 pentatonic notes; 4-note = 4 of 5
+6. Quartal harmony + pentatonic melody = natural coherence
 
-**Interval Content:**
-Pentatonic scale intervals: M2, m3
-Perfect fourth stack: P4 (= m3 + M2)
+# Construction / Recognition
+- Stack perfect fourths and rearrange as scale to reveal pentatonic identity
+- Coherence between quartal harmony and pentatonic melody indicates this relationship
 
-The fourth encompasses one m3 and one M2, explaining the pentatonic flavor.
-
-**Smaller Stacks:**
-- 3-note perfect fourth stack: pentatonic subset (3 of 5 notes)
-- 4-note perfect fourth stack: pentatonic subset (4 of 5 notes)
-- 5-note perfect fourth stack: complete pentatonic collection
-
-# Musical Context/Application
-The pentatonic-quartal relationship enables:
-1. Coherent combination of quartal harmony with pentatonic melody
-2. Modal/folk-like textures through quartal structures
-3. Avoidance of semitones (neither pentatonic nor perfect-fourth structures contain semitones)
-
-This relationship is particularly relevant for composers seeking non-Western or archaic sounds, as both pentatonicism and quartal harmony evoke pre-Common Practice traditions.
+# Context & Application
+The pentatonic-quartal relationship enables coherent combination of quartal harmony with pentatonic melody, modal/folk-like textures through quartal structures, and avoidance of semitones for non-Western or archaic sounds.
 
 # Examples
-Ex. 4-3 demonstrates the pentatonic flavor of three-, four-, and five-note perfect fourth chords, showing that the five-note form contains all pentatonic scale steps.
+- Ex. 4-3: Pentatonic flavor of three-, four-, five-note perfect-fourth chords
+- Ex. 4-40: Pentatonic melodic and quartal harmonic writing in string quartet
 
-Ex. 4-40 extends the string-quartet opening featuring pentatonic melodic and quartal harmonic writing.
+# Relationships
+## Builds Upon
+- Perfect fourth stacks (the formations exhibiting this property)
 
-# Related Concepts
-- Perfect Fourth Stacks
-- Pentatonic Scale
-- Quartal Harmony
-- Modal Harmony
-- Folk Music Influence
-- Semitone Avoidance
+## Enables
+- Coherent quartal-pentatonic style writing
+
+## Related
+- quartal-harmony (the harmonic system)
+
+## Contrasts With
+- Chromatic or semitone-based harmony (semitone avoidance is shared trait)
+
+# Common Errors
+- Not recognizing the pentatonic collection within quartal stacks (notes in fourth order vs. scalar order)
 
 # Common Confusions
-Students may not immediately recognize the pentatonic collection within quartal stacks because the notes appear in fourth relationships rather than scalar order. Rearranging the quartal chord as a scale reveals the pentatonic identity clearly.
+- **Rearrangement reveals identity**: The quartal chord and pentatonic scale contain the same pitches in different orders
 
 # Source Reference
-Chapter 4: Chords by Fourths, pp. 93, 107
+Chapter 4: Chords by Fourths, pp. 93, 107 (PDF page 92)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved the mathematical explanation (P4 = m3 + M2) from v2 card.

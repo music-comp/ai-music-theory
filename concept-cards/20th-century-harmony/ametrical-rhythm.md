@@ -1,78 +1,76 @@
 ---
 concept: Ametrical Rhythm
-category: technique
+slug: ametrical-rhythm
+category: rhythm-meter
+subcategory: timing-dynamics
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Timing and Dynamics"
 chapter_number: 10
 pdf_page: 211
-unit: null
-authors: Vincent Persichetti
+section: "Rhythm"
+extraction_confidence: high
+aliases:
+  - "non-metric rhythm"
+prerequisites:
+  - meter-and-rhythm
+extends: []
+related:
+  - meter-change
+contrasts_with: []
+answers_questions:
+  - "How are ametrical patterns created from rhythmic transformation?"
 ---
 
 # Quick Definition
-
 Rhythmic patterns created by lengthening parts of a rhythmic figure through added notes, rests, or dots, producing patterns that do not conform to regular metric organization.
 
-# Formal Definition
+# Core Definition
+Any part of a rhythmic figure may be lengthened by a note (a), a rest (b), or a dot (c). The rhythmic transformation produces **ametrical patterns** that exist outside regular barline periodicity, creating phrase structures that transcend conventional metric groupings (Ch. 10, pp. 215-216).
 
-**Ametrical rhythm** refers to rhythmic patterns that do not conform to regular metric organization, produced when any part of a rhythmic figure is lengthened by a note, a rest, or a dot. This rhythmic transformation produces patterns that exist outside regular barline periodicity, creating phrase structures that transcend conventional metric groupings.
+# Prerequisites
+- **Meter and rhythm** -- understanding the metric framework that ametrical patterns transcend
 
-# Musical/Mathematical Formulation
+# Key Properties
+1. Added note lengthens a rhythmic figure
+2. Added rest inserts silence within a figure
+3. Added dot extends note value by half
+4. Resulting patterns do not conform to regular metric organization
+5. Creates asymmetrical phrase lengths and irregular accent patterns
 
-Lengthening techniques:
-1. **Added note**: Insert additional note value in rhythmic figure
-2. **Added rest**: Insert silence within rhythmic figure
-3. **Added dot**: Extend note value by dot (adding half its value)
+# Construction / Recognition
+- Identify a rhythmic figure that has been expanded through addition
+- Note which element was added: note, rest, or dot
+- Observe the resulting asymmetry relative to the metric framework
 
-Results:
-- Asymmetrical phrase lengths
-- Irregular accent patterns
-- Phrases that don't align with barlines
-- Freedom from metric periodicity
-
-Transformation example:
-- Original: even quarter notes (1-1-1-1)
-- Ametrical: 1-1.5-1-1 (dotted note inserted)
-- Or: 1-1-rest-1-1 (rest inserted)
-
-# Musical Context/Application
-
-Ametrical rhythm enables:
-- Prose-like rhythmic freedom
-- Natural speech rhythm in vocal music
-- Escape from "tyranny of the barline"
-- Asymmetrical phrase structures
-
-Applications include:
-- Text setting with natural prosody
-- Melodic lines with irregular lengths
-- Complex modernist rhythmic writing
-- Flexible temporal organization
+# Context & Application
+Ametrical rhythm enables prose-like rhythmic freedom, natural speech rhythm in vocal music, and escape from metric periodicity. The technique is fundamental to much twentieth-century rhythmic writing.
 
 # Examples
+**Example** (Ch. 10, Ex. 10-9, p. 215): Rhythmic figure lengthened by note (a), rest (b), and dot (c), producing ametrical patterns.
 
-**From source (Ex. 10-9):**
-- Rhythmic figure lengthened by note (a)
-- Rhythmic figure lengthened by rest (b)
-- Rhythmic figure lengthened by dot (c)
-- Resulting ametrical patterns
+# Relationships
+## Builds Upon
+- Meter and rhythm (ametrical patterns defined against metric norms)
+## Enables
+- Prose-like rhythmic flexibility
+## Related
+- Meter change (both address metric flexibility)
+## Contrasts With
+- (none directly)
 
-# Related Concepts
-
-- Meter and Rhythm
-- Prose Rhythm
-- Asymmetrical Meter
-- Rhythmic Transformation
-- Phrase Structure
-- Additive Rhythm
-- Irregular Grouping
+# Common Errors
+- Confusing ametrical rhythm with free rhythm (ametrical has measurable durations)
+- Only considering lengthening, not recognizing that the three methods have different rhythmic effects
 
 # Common Confusions
-
-- **Ametrical vs. non-metric**: Ametrical patterns may still be notated within metric framework; they simply don't conform to regular periodicity.
-- **Lengthening vs. shortening**: The specific technique described involves adding to rhythmic figures, though subtraction can also create irregular patterns.
-- **Ametrical vs. free rhythm**: Ametrical rhythm has measurable durations; free rhythm may lack precise temporal organization.
+- **Ametrical vs. non-metric**: Ametrical patterns may still be notated within a metric framework
+- **Ametrical vs. free rhythm**: Ametrical rhythm has precise durations; free rhythm may lack them
 
 # Source Reference
+Chapter 10: Timing and Dynamics, pp. 215-216 (pdf pp. 215-216)
 
-Chapter 10: Timing and Dynamics, pages 215-216
+# Verification Notes
+Upgraded from old card. Preserved: three lengthening methods, asymmetry principle. Added: v3 structure, slug references.

@@ -1,81 +1,92 @@
 ---
 concept: Dissonance Resolution
-category: technique
+slug: dissonance-resolution
+category: voice-leading
+subcategory: harmonic-direction
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Harmonic Direction"
 chapter_number: 9
 pdf_page: 181
-unit: null
-authors: Vincent Persichetti
+section: "Dissonance"
+extraction_confidence: high
+aliases:
+  - "dissonant tone treatment"
+prerequisites:
+  - dissonance-in-context
+extends: []
+related:
+  - chord-connection
+  - doubling-in-complex-harmony
+  - parallel-harmony
+contrasts_with: []
+answers_questions:
+  - "What are the options for resolving a dissonant tone in twentieth-century harmony?"
+  - "How can dissonant tones be softened or intensified through doubling?"
 ---
 
 # Quick Definition
+The various techniques by which dissonant tones move to resolution in twentieth-century harmony, including ten options from nearest-tone stepwise motion to resolution transferred to another voice.
 
-The various techniques by which dissonant tones move to resolution, including stepwise motion, contrary direction movement, remaining stationary, octave leaps, and resolution in another voice.
+# Core Definition
+When a chord is dissonant by context it is usually resolved by the movement of the voices containing the most dissonant tones. For smoothness, the dissonant tone resolves to the nearest note of the prevailing scale scheme. However, twentieth-century practice offers multiple alternatives: the dissonant tone can resist its natural tendency by moving scalewise in the opposite direction; if adjacent tones are equidistant, movement in either direction is natural; for passive non-commitment it remains stationary or leaps an octave; it may evaporate by skipping to another chord member; freeze in parallel harmony; skip freely when strong melodic motifs overshadow resolution tendency; move without resolution in sequential momentum; or resolve in another voice for sudden tension lift (Ch. 9, pp. 195-197).
 
-# Formal Definition
+# Prerequisites
+- **Dissonance in context** -- understanding relative consonance-dissonance
 
-**Dissonance resolution** in twentieth-century harmony encompasses the various ways a contextually dissonant tone may be treated at chord change. While traditional practice resolves dissonance by step to the nearest consonance, contemporary practice offers multiple options: resolution to nearest scale tone, contrary direction scalewise motion, remaining stationary, octave leap, skip to another chord member, freezing in parallel harmony, free melodic movement, and resolution transferred to another voice.
+# Key Properties
+1. Nearest-tone resolution: smoothest option
+2. Contrary-direction resolution: resists natural tendency
+3. Equidistant options: movement in either direction is natural
+4. Stationary: passive non-commitment (or octave leap)
+5. Skip to chord member: dissonant tone evaporates
+6. Freeze in parallel: remains unresolved through parallel passage
+7. Free melodic motion: strong motifs overshadow resolution
+8. Sequential momentum: pattern carries dissonant tone without resolution
+9. Voice transfer: resolution appears in another voice
+10. Doubling dissonant tone raises tension; coupling with consonant intervals softens it
 
-# Musical/Mathematical Formulation
+# Construction / Recognition
+- Identify the contextually dissonant tones in each chord
+- Trace the motion of each dissonant tone to the next chord
+- Classify the resolution type (nearest, contrary, stationary, skip, freeze, free, sequential, transfer)
+- Note any softening or intensification through doubling
 
-Resolution options:
-1. **Nearest tone**: Move to nearest note of prevailing scale (smoothest)
-2. **Contrary direction**: Move scalewise opposite to natural tendency
-3. **Either direction**: When adjacent tones equidistant, either direction is natural
-4. **Stationary**: Remain on same pitch for passive non-commitment
-5. **Octave leap**: Jump octave at chord change
-6. **Skip to chord member**: Move to another member of same chord
-7. **Freeze in parallel**: Remain unresolved through parallel motion passage
-8. **Free melodic motion**: Skip freely when strong melodic motifs overshadow resolution tendency
-9. **Sequential momentum**: Move without resolution due to sequential pattern
-10. **Voice transfer**: Resolve in another voice for sudden tension lift
-
-# Musical Context/Application
-
-Resolution choice depends on:
-- Harmonic context and tension management goals
-- Melodic considerations and motivic development
-- Degree of dissonance intensity
-- Sequential or patterned movement
-- Overall harmonic vocabulary of the passage
-
-Softening techniques:
-- Couple dissonant tone with consonant intervals
-- Use contrary motion for doubled dissonant tones
-- Move one doubled tone before other resolves
-
-Intensification:
-- Double the dissonant tone to raise tension
-- Doubled dissonance enables simple chord to function with complex formations
+# Context & Application
+The quality of a dissonant tone can be softened by coupling it with consonant intervals, but doubling the dissonant tone raises harmonic tension. Such doubling enables a simple chord to function easily with complex formations. To soften doubled dissonant tones, the voices involving the dissonance move in contrary motion, or one of the doubled tones may move before the other resolves. Dissonant melodic and chordal clashes occur with less aural concern in harmony stemming from horizontal thinking -- in multi-voice counterpoint, ornamental chords, and voice reflection.
 
 # Examples
+**Example 1** (Ch. 9, Ex. 9-28, p. 195): Resolution to nearest scale tone.
+**Example 2** (Ch. 9, Ex. 9-29, p. 195): Contrary direction, equidistant options, stationary treatment, octave leap.
+**Example 3** (Ch. 9, Ex. 9-30, p. 196): Evaporation to chord member, freezing in parallel, free melodic motion, sequential momentum, voice transfer.
+**Example 4** (Ch. 9, Ex. 9-31, p. 196): Doubled dissonance raising tension, softening through contrary motion.
 
-**From source (Ex. 9-28, Ex. 9-29, Ex. 9-30, Ex. 9-31):**
-- Resolution to nearest scale tone
-- Resolution in contrary direction
-- Stationary treatment and octave leaps
-- Parallel harmony freezing dissonance
-- Free melodic motion with strong motifs
-- Resolution transferred to another voice
-- Doubled dissonance with softening techniques
+# Relationships
+## Builds Upon
+- Dissonance in context (resolution choices depend on contextual evaluation)
+## Enables
+- Flexible twentieth-century voice leading
+## Related
+- Chord connection (resolution is a key connection technique)
+- Doubling in complex harmony (doubling affects dissonance treatment)
+- Parallel harmony (freezing dissonance in parallel motion)
+## Contrasts With
+- (none directly)
 
-# Related Concepts
-
-- Dissonance in Context
-- Voice Leading
-- Parallel Harmony
-- Sequential Harmony
-- Melodic Motion
-- Tension Management
-- Doubling
+# Common Errors
+- Assuming nearest-tone resolution is always required
+- Resolving dissonances in contexts where non-resolution would be more effective
+- Doubling dissonant tones without considering the resulting tension increase
 
 # Common Confusions
-
-- **Resolution required vs. optional**: In twentieth-century practice, resolution is one option among many; dissonance may be sustained, frozen, or ignored.
-- **Nearest tone assumption**: While nearest-tone resolution is smoothest, other options are equally valid depending on context.
-- **Voice transfer**: Resolution "in another voice" means the resolving motion appears elsewhere in texture, not that the dissonant voice itself moves.
+- **Resolution required vs. optional**: In twentieth-century practice, resolution is one option among many
+- **Nearest tone assumption**: While smoothest, other options are equally valid in context
+- **Voice transfer**: Resolution "in another voice" means the resolving motion appears elsewhere in the texture
 
 # Source Reference
+Chapter 9: Harmonic Direction, pp. 195-197 (pdf pp. 195-197)
 
-Chapter 9: Harmonic Direction, pages 195-197
+# Verification Notes
+Upgraded from old card. Preserved: all ten resolution options, doubling principles, softening techniques. Added: v3 structure, slug references, horizontal-thinking context for reduced aural concern.

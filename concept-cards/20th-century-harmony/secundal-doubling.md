@@ -1,74 +1,111 @@
 ---
 concept: Secundal Doubling
-category: technique
+slug: secundal-doubling
+category: voice-leading
+subcategory: voicing
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Chords by Seconds"
 chapter_number: 6
+section: "Three-Note Chords by Seconds"
 pdf_page: 120
-unit: null
-authors: Vincent Persichetti
+extraction_confidence: high
+aliases:
+  - "doubling in secundal harmony"
+prerequisites:
+  - three-note-secundal-chord
+  - dissonant-tone-in-secundal-harmony
+extends:
+  - three-note-secundal-chord
+related:
+  - secundal-chord-spacing
+  - mild-and-sharp-textures
+contrasts_with:
+  - chord-doubling
+answers_questions:
+  - "What are the three doubling strategies for secundal harmony?"
+  - "How does doubling control texture in secundal chords?"
+  - "Which note should be doubled for solidarity vs. mildness vs. sharpness?"
 ---
 
 # Quick Definition
-The technique of doubling notes in secundal harmony for specific textural effects: doubling the bass note for solidarity, doubling the most consonant note for mildness, or doubling the most dissonant note for sharpness.
 
-# Formal Definition
-For solidarity, the bass note of secundal harmony, whether root, second, or third, is doubled. For mildness of texture, the most consonant note over the bass is doubled regardless of whether or not it is the root. For sharpness of texture, the most dissonant note over the bass is doubled.
+Three doubling strategies for secundal chords: bass note for solidarity, most consonant note over the bass for mildness, most dissonant note over the bass for sharpness.
 
-# Musical/Mathematical Formulation
-Three doubling strategies:
+# Core Definition
 
-1. **For Solidarity**: Double the bass note
-   - Applicable regardless of chord position (root, first inv., second inv.)
-   - Creates stable foundation
-   - Emphasizes lowest pitch
+"For solidarity, the bass note of secundal harmony, whether root, second, or third, is doubled (a). For mildness of texture the most consonant note over the bass is doubled regardless of whether or not it is the root (b). For sharpness of texture the most dissonant note over the bass is doubled (c)" (Persichetti, p. 122).
 
-2. **For Mildness**: Double the most consonant note over the bass
-   - Not necessarily the root
-   - Determined by interval relationship to bass
-   - Reduces overall dissonance effect
+# Prerequisites
 
-3. **For Sharpness**: Double the most dissonant note over the bass
-   - Emphasizes tension
-   - Determined by interval relationship to bass
-   - Increases dissonance effect
+- **Three-note secundal chord** — Doubling operates on these chords
+- **Dissonant tone in secundal harmony** — Identifying consonant/dissonant members is required for strategy (b) and (c)
 
-Consonance/dissonance over bass:
-- Notes forming M3, P5 with bass = more consonant
-- Notes forming m2, M7 with bass = more dissonant
-- m3, M2, P4, tritone = intermediate
+# Key Properties
 
-# Musical Context/Application
-Doubling choices in secundal harmony directly affect the textural character of the music. Unlike tertian harmony where doubling rules are often about voice-leading and parallel avoidance, secundal doubling is primarily about controlling the consonance-dissonance spectrum.
+1. **Solidarity doubling**: Double the bass note regardless of chord position
+2. **Mildness doubling**: Double the most consonant note above the bass (not necessarily the root)
+3. **Sharpness doubling**: Double the most dissonant note above the bass
+4. Consonance/dissonance is measured relative to the bass note, not in absolute terms
+5. The root may not be the most consonant member in some inversions
+6. Doubling choices directly control the harmonic tension spectrum
 
-Strategic doubling allows:
-- Fluctuation of harmonic tension
-- Control of textural weight
-- Emphasis of particular chord members
-- Balance in scoring
+# Construction / Recognition
+
+## To Apply Doubling
+1. Determine the desired textural effect (solidarity, mildness, or sharpness)
+2. For solidarity: identify and double the bass note
+3. For mildness: determine which upper note forms the most consonant interval with the bass; double it
+4. For sharpness: determine which upper note forms the most dissonant interval with the bass; double it
+
+# Context & Application
+
+Unlike tertian harmony where doubling rules center on voice-leading and parallel avoidance, secundal doubling is primarily about controlling the consonance-dissonance spectrum. Strategic doubling allows fluctuation of harmonic tension, control of textural weight, emphasis of particular chord members, and balance in scoring.
 
 # Examples
-Ex. 6-6: Three doubling strategies demonstrated
-- (a) Bass doubled for solidarity
-- (b) Most consonant note doubled for mildness
-- (c) Most dissonant note doubled for sharpness
 
-Source material:
+**Ex. 6-6** (p. 122): Three doubling strategies demonstrated: (a) bass doubled for solidarity, (b) most consonant note doubled for mildness, (c) most dissonant note doubled for sharpness
+
+**Composer examples:**
 - Darius Milhaud: Christophe Colomb, p. 143 (Universal)
 - Carl Ruggles: Men and Mountains, p. 12 (New Music)
 
-# Related Concepts
-- Three-Note Secundal Chord
-- Dissonant Tone in Secundal Harmony
-- Mild and Sharp Textures
-- Voicing
-- Orchestration
+# Relationships
+
+## Builds Upon
+- **three-note-secundal-chord** — Doubling is applied to these chords
+- **dissonant-tone-in-secundal-harmony** — Identifying the dissonant member is prerequisite
+
+## Related
+- **secundal-chord-spacing** — Both contribute to texture management
+- **mild-and-sharp-textures** — Doubling is one tool for controlling this spectrum
+
+## Contrasts With
+- **chord-doubling** — Tertian doubling rules differ fundamentally from secundal doubling strategies
+
+# Common Errors
+
+- **Error**: Always doubling the root for stability
+  **Correction**: The root may not be the most consonant note; doubling strategies are relative to the bass
+- **Error**: Applying tertian doubling conventions to secundal chords
+  **Correction**: Secundal doubling serves textural control, not voice-leading correctness
 
 # Common Confusions
-- "Most consonant" and "most dissonant" are relative to the bass, not absolute
-- The root may not be the most consonant note in some inversions
-- Doubling rules differ from tertian harmony conventions
-- The goal is textural control, not voice-leading correctness
+
+- **Confusion**: "Most consonant" and "most dissonant" are absolute qualities
+  **Clarification**: They are relative to the bass note; a different inversion changes which member is most consonant/dissonant
+- **Confusion**: Doubling the dissonant note will sound "wrong"
+  **Clarification**: Sharpness doubling is a deliberate textural strategy, not an error
 
 # Source Reference
-Chapter 6: Chords by Seconds, page 122
+
+Chapter 6: Chords by Seconds, page 122. Ex. 6-6.
+
+# Verification Notes
+
+- Core Definition: Direct quotation from p. 122
+- Key Properties: All items from source
+- Confidence: HIGH — explicit three-part system with clear examples
+- Re-extracted from v2 card; preserved: consonance/dissonance hierarchy relative to bass

@@ -1,73 +1,79 @@
 ---
 concept: Added-Note Spacing
-category: technique
+slug: added-note-spacing
+category: voice-leading
+subcategory: chord-spacing
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Added-Note Chords"
 chapter_number: 5
 pdf_page: 108
-unit: null
-authors: Vincent Persichetti
+section: "Other Added-Note Chords"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - added-note-chord
+extends:
+  - added-note-chord
+related:
+  - triad-with-added-bass
+contrasts_with: []
+answers_questions:
+  - "What happens when added notes are placed outside the original octave?"
+  - "How does wide spacing affect harmonic movement and dissonance focus?"
+  - "What is the general principle about lower placement and resonance?"
 ---
-
 # Quick Definition
-The placement of added notes outside the original octave range of the basic chord, producing greater freedom of harmonic movement and clearer focusing of dissonant added tones.
+The placement of added notes outside the original octave range of the basic chord, producing greater freedom of harmonic movement and clearer focusing of dissonant added tones, with wide-spaced added notes often doubled in octaves for balance.
 
-# Formal Definition
-Occasionally, added notes are placed outside the original octave range. This wider spacing produces greater freedom of harmonic movement and clearer focusing of the dissonant added tones. The general principle that lower placement reduces resonance applies, but wide spacing can compensate for this effect.
+# Core Definition
+Occasionally, added notes are placed outside the original octave range. This wider spacing produces greater freedom of harmonic movement and clearer focusing of the dissonant added tones. The general principle that lower placement reduces resonance applies, but wide spacing can compensate. Wide-spaced added notes are often doubled (especially in bass, in octaves) for balance. This leads to a special category: the triad in close position with a note added below.
 
-# Musical/Mathematical Formulation
-Spacing principles:
-- **Close spacing**: Added notes within original octave range
-  - More dense texture
-  - Can become muddy in lower registers
-  - Added tones may be obscured
+# Prerequisites
+- **Added-note chord**: The formations being spaced
 
-- **Wide spacing**: Added notes outside original octave range
-  - Greater freedom of harmonic movement
-  - Clearer focus on dissonant added tones
-  - Better resonance in complex chords
+# Key Properties
+1. Wide spacing = greater freedom of harmonic movement
+2. Wide spacing = clearer focus on dissonant added tones
+3. Lower placement = less resonant (general principle)
+4. Wide spacing compensates for low-register muddiness
+5. Bass doubling in octaves provides balance
+6. Leads to the triad-with-added-bass special category
 
-Register considerations:
-- Lower register: wide spacing preferred for clarity
-- Upper register: close spacing acceptable
-- Middle register: flexible depending on texture desired
+# Construction / Recognition
+- Place added note outside the basic chord's octave range
+- Double in octaves (especially bass) for balance
+- Choose spacing based on register and clarity needs
 
-Balance principle:
-- Wide-spaced added notes often doubled (especially in bass)
-- Octave doubling of added bass note provides balance
-- Coupling throughout maintains textural consistency
-
-# Musical Context/Application
-Wide spacing is particularly valuable when:
-- Working in lower registers where close spacing creates muddiness
-- Seeking maximum clarity of the added dissonance
-- Allowing individual voice activity within the texture
-- Creating orchestral textures where different sections take different roles
-
-The technique allows added-note harmony to maintain clarity even in dense, complex passages by separating the color elements from the structural elements.
+# Context & Application
+Wide spacing is valuable when working in lower registers, seeking maximum dissonance clarity, allowing individual voice activity, and creating orchestral textures with different sections taking different roles. It separates color elements from structural elements.
 
 # Examples
-Ex. 5-13: Added notes placed outside original octave range
-Ex. 5-7: Coupling and spacing techniques
+- Ex. 5-13: Added notes placed outside original octave range
 
-Source material:
-- Paul Hindemith: Das Marienleben, p. 69 (Schott)
-- Arthur Honegger: Jeanne d'Arc au Bucher, pp. 20-21 (Salabert)
-- William Schuman: Various orchestral works
+# Relationships
+## Builds Upon
+- Added-note chord (spacing variation)
 
-# Related Concepts
-- Added-Note Chord
-- Chord Voicing
-- Resonance
-- Register
-- Orchestration
-- Triad with Added Bass
+## Enables
+- Triad-with-added-bass technique (a special case of wide spacing)
+
+## Related
+- triad-with-added-bass (the most developed form of wide-spaced added notes)
+
+## Contrasts With
+- Close-position added-note chords (more dense, potentially muddy)
+
+# Common Errors
+- Thinking wide spacing changes the added note's function (it does not)
 
 # Common Confusions
-- Wide spacing does not change the function of the added note
-- The added note remains an added note regardless of register placement
-- Wide spacing is a clarity technique, not a method of creating new chord types
-- Balance through doubling is practical, not a voice-leading requirement
+- **Spacing is a clarity technique**: It does not change the identity or function of the added note
 
 # Source Reference
-Chapter 5: Added-Note Chords, page 115
+Chapter 5: Added-Note Chords, p. 115 (PDF page 108)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved the connection to triad-with-added-bass from v2 card.

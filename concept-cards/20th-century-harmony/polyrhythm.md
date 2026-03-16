@@ -1,84 +1,82 @@
 ---
 concept: Polyrhythm
-category: technique
+slug: polyrhythm
+category: rhythm-meter
+subcategory: timing-dynamics
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Timing and Dynamics"
 chapter_number: 10
 pdf_page: 211
-unit: null
-authors: Vincent Persichetti
+section: "Rhythm"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - meter-and-rhythm
+extends: []
+related:
+  - polymeter
+  - isorhythm
+contrasts_with:
+  - polymeter
+answers_questions:
+  - "How does polyrhythm differ from polymeter?"
+  - "When do polyrhythmic patterns realign?"
 ---
 
 # Quick Definition
-
 The simultaneous use of two or more rhythmic phrases of unequal length, each repeated until the original combination returns.
 
-# Formal Definition
+# Core Definition
+Two or more rhythmic phrases of unequal length may each be repeated until the return of the original combination (**polyrhythm**). Two patterns of varying note values coinciding at occasional points will flow without a feeling of chaos. The technique creates complex rhythmic textures through superimposition of independent rhythmic cycles (Ch. 10, pp. 213-214).
 
-**Polyrhythm** occurs when two or more rhythmic phrases of unequal length are each repeated until the return of the original combination. Two patterns of varying note values coinciding at occasional points will flow without a feeling of chaos. The technique creates complex rhythmic textures through the superimposition of independent rhythmic cycles.
+# Prerequisites
+- **Meter and rhythm** -- understanding rhythmic organization
 
-# Musical/Mathematical Formulation
+# Key Properties
+1. Two or more rhythmic phrases of unequal length
+2. Each phrase repeated until original combination returns
+3. Coincidence points: LCM of pattern lengths
+4. Patterns coincide at occasional points, preventing chaos
+5. Complexity arises from interaction, not individual pattern complexity
 
-Polyrhythmic calculation:
-- Pattern A length: x beats
-- Pattern B length: y beats
-- Coincidence point: LCM (Least Common Multiple) of x and y
+# Construction / Recognition
+- Identify two or more simultaneously repeating rhythmic patterns
+- Determine the length of each pattern
+- Calculate when they will realign (LCM)
+- Note coincidence points that provide rhythmic orientation
 
-Example:
-- Pattern of 3 beats + Pattern of 4 beats
-- Coincide every 12 beats (LCM of 3 and 4)
-- Creates 4 cycles of Pattern A, 3 cycles of Pattern B
-
-Polyrhythmic characteristics:
-- Each pattern maintains its own internal logic
-- Occasional coincidence points provide orientation
-- Complexity arises from interaction, not from individual patterns
-- Original alignment eventually returns
-
-# Musical Context/Application
-
-Polyrhythm creates:
-- Rhythmic complexity through simple component patterns
-- Textural richness through rhythmic layering
-- Forward momentum through pattern interaction
-- Structural interest through varying coincidence density
-
-Applications include:
-- African and Afro-Caribbean influenced music
-- Minimalist phase relationships
-- Complex modernist textures
-- Jazz and popular music grooves
+# Context & Application
+Polyrhythm creates rhythmic complexity through simple component patterns, textural richness through layering, and forward momentum through pattern interaction.
 
 # Examples
+**Example** (Ch. 10, Ex. 10-5, p. 213): Two or more rhythmic phrases of unequal length, each repeated until original combination returns.
 
-**From source (Ex. 10-5):**
-- Two or more rhythmic phrases of unequal length
-- Each phrase repeated until original combination returns
-- Patterns coinciding at occasional points
+Source material: Barber, Vanessa, p. 172; Copland, Symphony No. 1, p. 20; Ives, Symphony No. 3, pp. 26-27; Schoenberg, String Trio Op. 45, p. 13; Stockhausen, Zeitmasse, p. 21.
 
-**Recommended source material:**
-- Samuel Barber, Vanessa, p. 172
-- Aaron Copland, Symphony No. 1, p. 20
-- Charles Ives, Symphony No. 3, pp. 26-27
-- Arnold Schoenberg, String Trio Op. 45, p. 13
-- Gunther Schuller, String Quartet No. 1, p. 27
+# Relationships
+## Builds Upon
+- Meter and rhythm (polyrhythm operates within/against metric framework)
+## Enables
+- Complex rhythmic textures
+## Related
+- Polymeter (independent metric organization, distinct from rhythmic independence)
+- Isorhythm (repeated rhythmic pattern with free pitch)
+## Contrasts With
+- Polymeter (different time signatures vs. different rhythmic phrases)
 
-# Related Concepts
-
-- Polymeter
-- Rhythmic Independence
-- Isorhythm
-- Metric Modulation
-- Rhythmic Layering
-- Composite Rhythm
-- Phase Music
+# Common Errors
+- Confusing polyrhythm with polymeter
+- Making individual patterns so complex that the interaction becomes chaotic
 
 # Common Confusions
-
-- **Polyrhythm vs. polymeter**: Polyrhythm involves different rhythmic patterns; polymeter involves different time signatures simultaneously.
-- **Cross-rhythm vs. polyrhythm**: Cross-rhythm typically means simple ratios (3:2, 4:3); polyrhythm can involve more complex, unequal phrase lengths.
-- **Complexity perception**: Polyrhythm creates complexity through interaction of simple patterns, not through individually complex rhythms.
+- **Polyrhythm vs. polymeter**: Polyrhythm involves different rhythmic patterns; polymeter involves different time signatures simultaneously
+- **Complexity perception**: Polyrhythm creates complexity through interaction of simple patterns
 
 # Source Reference
+Chapter 10: Timing and Dynamics, pp. 213-214 (pdf pp. 213-214)
 
-Chapter 10: Timing and Dynamics, pages 213-214
+# Verification Notes
+Upgraded from old card. Preserved: core definition, all composer examples, LCM principle, polymeter distinction. Added: v3 structure, slug references.

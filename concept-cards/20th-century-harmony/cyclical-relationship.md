@@ -1,81 +1,90 @@
 ---
 concept: Cyclical Relationship
-category: theory
+slug: cyclical-relationship
+category: harmony
+subcategory: harmonic-direction
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Harmonic Direction"
 chapter_number: 9
 pdf_page: 181
-unit: null
-authors: Vincent Persichetti
+section: "Progression"
+extraction_confidence: high
+aliases:
+  - "cycle of fifths relationship"
+  - "cycle of thirds"
+  - "cycle of seconds"
+prerequisites:
+  - root-movement
+extends: []
+related:
+  - harmonic-progression
+  - cadential-devices
+  - deceptive-resolution
+contrasts_with: []
+answers_questions:
+  - "How do the three primary cyclical relationships organize twentieth-century harmony?"
+  - "How does the prevailing cycle determine cadential behavior?"
+  - "What constitutes a deceptive cadence in each cycle?"
 ---
 
 # Quick Definition
-
 A systematic harmonic organization based on consistent root movement by fifths, thirds, or seconds, each cycle encompassing all twelve chromatic tones.
 
-# Formal Definition
+# Core Definition
+In tonal music of the twentieth century, the root distance between important chords of a phrase or cadence is usually determined by the **cyclical relationship** upon which the music is constructed. Three primary cycles exist: the cycle of fifths (a series of perfect fifths encompassing twelve tones), the cycle of thirds (alternating major and minor thirds creating the chromatic compass), and the cycle of seconds (major and minor seconds encircling twelve tones). Harmonic writing may be based upon a single cycle, upon the tension created by moving from one cycle to another, or upon horizontal voice movement without cycle adherence (Ch. 9, pp. 183-184).
 
-A **cyclical relationship** is a system of harmonic organization in twentieth-century tonal music where the root distance between important chords is determined by a consistent intervallic cycle. Three primary cycles exist: the cycle of fifths, the cycle of thirds, and the cycle of seconds. Each cycle encompasses all twelve chromatic tones through its characteristic interval, providing a framework for harmonic progression that may operate within or outside traditional tonal function.
+# Prerequisites
+- **Root movement** -- understanding intervallic relationships between successive chord roots
 
-# Musical/Mathematical Formulation
+# Key Properties
+1. Cycle of fifths: 12 perfect fifths encompass all 12 tones; creates strongest harmonic motion
+2. Cycle of thirds: alternating major and minor thirds; creates softer harmonic quality
+3. Cycle of seconds: major and minor seconds; creates blandest harmonic quality
+4. Each cycle independently encompasses all twelve chromatic tones
+5. The prevailing cycle determines what constitutes a "perfect" or "deceptive" cadence
+6. Tension arises from moving between different cyclical relationships
+7. Music may operate outside any cycle through purely horizontal voice movement
 
-**Three primary cycles:**
+# Construction / Recognition
+- Identify the root movement intervals in a passage's important chords
+- Determine which cycle predominates (fifths, thirds, or seconds)
+- Check whether cadential root relationships match the prevailing cycle
+- Note any departures from the cycle (potential deceptive cadences)
+- Observe if the music transitions between cycles for expressive tension
 
-1. **Fifth relationship (Cycle of Fifths)**:
-   - Series of perfect fifths: C-G-D-A-E-B-F#-C#-G#-D#-A#-F-C
-   - 12 steps to complete cycle
-   - Strongest harmonic motion
-
-2. **Third relationship (Cycle of Thirds)**:
-   - Alternating major and minor thirds
-   - C-E-G-B-D-F#-A-C#-E#-G#-B#-D#-C (enharmonic)
-   - 12 steps via M3-m3 alternation
-   - Softer harmonic quality
-
-3. **Second relationship (Cycle of Seconds)**:
-   - Series of major and minor seconds
-   - Chromatic scale movement
-   - 12 steps
-   - Blandest harmonic quality
-
-# Musical Context/Application
-
-Cyclical relationships determine:
-- Root distance between important phrase and cadential chords
-- Character of harmonic progression (strength, softness, blandness)
-- Tonal organization outside traditional major/minor tonality
-- Basis for deceptive cadences (moving to unexpected cycle point)
-
-Harmonic writing may be based on:
-- Single cyclical relationship throughout
-- Tension created by moving between different cycles
-- Horizontal voice movement without cycle adherence
+# Context & Application
+The cyclical relationship governs not only chord-to-chord motion but also the character of cadences. In fifth relationship, the chord of weaker impulse progresses "perfectly" to a tonic whose root lies the interval of the existing cyclical relationship below its own. Deceptive cadences are created by moving to a chord whose root interval is not characteristic of the prevailing cycle. The cycle concept extends traditional circle-of-fifths thinking to embrace third and second relationships as equally valid organizational principles.
 
 # Examples
+**Example 1** (Ch. 9, Ex. 9-6, p. 184): Complete cycles of fifth, third, and second relationships, each encompassing twelve tones.
+**Example 2** (Ch. 9, Ex. 9-55, p. 207): Deceptive cadences defined by departure from expected cyclical movement -- in fifth relationship, root moves up a second; in third, up a fifth; in second, up a third.
 
-**From source (Ex. 9-6):**
-- Complete cycles of fifth, third, and second relationships
-- Demonstration of how each cycle encompasses twelve tones
+# Relationships
+## Builds Upon
+- Root movement (cyclical relationships organize root distances systematically)
+## Enables
+- Cadential devices (cadential quality determined by cyclical context)
+- Deceptive resolution (departure from expected cycle point)
+## Related
+- Harmonic progression (cycles provide framework for progression)
+## Contrasts With
+- (none directly)
 
-**From source (Ex. 9-55):**
-- Deceptive cadences defined by departure from expected cyclical movement
-
-# Related Concepts
-
-- Root Movement
-- Harmonic Progression
-- Circle of Fifths
-- Chromatic Mediant
-- Deceptive Cadence
-- Tonal Organization
-- Transient Keys
+# Common Errors
+- Assuming all twentieth-century tonal music operates in a cycle-of-fifths framework
+- Failing to recognize third or second cycles as valid organizational principles
+- Not understanding that deceptive cadences are cycle-specific
 
 # Common Confusions
-
-- **Cycle vs. circle**: "Cycle" emphasizes the complete twelve-tone compass; "circle" (as in circle of fifths) is the traditional term for the fifth cycle.
-- **Mixed cycles**: Harmonic writing may move between cycles; strict adherence to one cycle is not required.
-- **Cycle vs. tonality**: Cyclical relationships organize root movement but do not necessarily establish tonal function; a piece may use cyclic organization without being traditionally tonal.
+- **Cycle vs. circle**: "Cycle" emphasizes the complete twelve-tone compass; "circle" (as in circle of fifths) is the traditional term for the fifth cycle specifically
+- **Mixed cycles**: Harmonic writing may move between cycles; strict adherence to one cycle is not required
+- **Cycle vs. tonality**: Cyclical relationships organize root movement but do not necessarily establish tonal function
 
 # Source Reference
+Chapter 9: Harmonic Direction, pp. 183-184, 206-207 (pdf pp. 183-184, 206-207)
 
-Chapter 9: Harmonic Direction, pages 183-184
+# Verification Notes
+Upgraded from old card. Preserved: all three cycle descriptions, twelve-tone compass principle, deceptive cadence relationships. Added: v3 structure, slug references, explicit deceptive cadence intervals for each cycle, tension-between-cycles concept.

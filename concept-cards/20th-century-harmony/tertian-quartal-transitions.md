@@ -1,68 +1,94 @@
 ---
 concept: Tertian-Quartal Transitions
-category: technique
+slug: tertian-quartal-transitions
+category: voice-leading
+subcategory: harmonic-integration
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Chords by Fourths"
 chapter_number: 4
 pdf_page: 92
-unit: null
-authors: Vincent Persichetti
+section: "Three-Note Chords by Fourths"
+extraction_confidence: high
+aliases:
+  - "quartal-tertian integration"
+prerequisites:
+  - quartal-harmony
+  - extended-tertian-harmony
+extends:
+  - quartal-harmony
+related:
+  - compound-quartal-chords
+  - quartal-cadences
+  - ninth-chord-inversion
+contrasts_with: []
+answers_questions:
+  - "How are quartal chords approached from tertian harmony?"
+  - "What devices bring out the fourth in tertian chords before transitioning?"
+  - "How do ninth chords bridge tertian and quartal textures?"
 ---
-
 # Quick Definition
-Techniques for smoothly connecting chords by thirds with chords by fourths, including suspensions, prepared upper notes, added sixths and ninths, and using tertian chords that emphasize the perfect fourth interval.
+Techniques for smoothly connecting tertian and quartal chords: prepared upper notes, unresolved suspensions, added sixths/ninths, fourth-inversion ninth chords (whose seventh spans two fourths), seventh chords with fourth replacing third/fifth, and thirteenth chords arranged with predominant fourths.
 
-# Formal Definition
-Chords by fourths may be approached or left by triads when the uppermost note is prepared, when suspensions are not resolved, and when the sixth or ninth is added to a cadential tertian tonic. When both tertian and quartal chords appear in a progression, it is advisable to employ devices in the tertian harmony that bring out the flavor of the perfect fourth.
+# Core Definition
+Chords by fourths may be approached or left by triads when the uppermost note is prepared, when suspensions are not resolved, and when the sixth or ninth is added to a cadential tertian tonic. When both tertian and quartal chords appear in a progression, it is advisable to employ devices in the tertian harmony that bring out the flavor of the perfect fourth. Quartal chords may be approached by fourth-inversion ninth chords (root on top, the seventh spanning two fourths acts as a binder); by seventh chords where the third and fifth are replaced by the fourth; and by thirteenth chords arranged so fourths predominate.
 
-# Musical/Mathematical Formulation
-**Tertian to Quartal Approaches:**
-1. **Prepared upper note:** Top voice of quartal chord held from previous tertian chord
-2. **Unresolved suspension:** Suspension creates fourth that leads into quartal texture
-3. **Added sixth/ninth:** These additions to tertian tonic contain fourths that connect to quartal texture
+# Prerequisites
+- **Quartal harmony**: The system being approached
+- **Extended tertian harmony**: The system being departed from
 
-**Quartal to Tertian Resolution:**
-- Four-note quartal resolves when two voices move conjunctly
-- Other voices remain stationary
-- Three-note quartal with doubling facilitates this resolution
+# Key Properties
+1. Prepared upper note: top voice of quartal chord held from tertian chord
+2. Unresolved suspension: creates fourth leading into quartal texture
+3. Added sixth/ninth: these tertian additions contain fourths connecting to quartal
+4. Fourth-inversion ninth: root on top, seventh spans two fourths (binder)
+5. Seventh chords: third and fifth replaced by fourth
+6. Thirteenth chords: arranged so fourths predominate
+7. Four-note quartal resolves to tertian: two voices conjunct, two stationary
 
-**Tertian Chords with Quartal Flavor:**
-- Fourth inversion ninth chord (root on top): seventh spans two fourths
-- Seventh chords with third and fifth replaced by fourth
-- Thirteenth chords arranged so fourths predominate
+# Construction / Recognition
+- Identify transitional devices emphasizing the fourth in tertian chords
+- Look for held common tones between systems
+- Fourth-inversion ninth chord = the key bridge formation
+- Verify that fourths are emphasized in the tertian side of the transition
 
-# Musical Context/Application
-Combining tertian and quartal harmony requires careful attention to the transition points. The most effective techniques involve:
-1. Using the fourth as a common element between the two systems
-2. Preparing quartal entries through suspended or added notes
-3. Creating tertian chords that emphasize fourths before moving to pure quartal texture
-
-Without these transitional devices, the shift between harmonic systems can sound abrupt or unmotivated.
+# Context & Application
+Combining tertian and quartal harmony requires careful attention to transition points. Without transitional devices, the shift between systems sounds abrupt. The most effective techniques use the fourth as a common element. The fourth-inversion ninth chord is the quintessential bridge formation, with its seventh spanning two fourths acting as a binder between categories.
 
 # Examples
-Ex. 4-16 shows quartal chords approached by triads when the uppermost note is prepared.
+- Ex. 4-16: Quartal approached by triads with prepared uppermost note
+- Ex. 4-17: Unresolved suspensions leading into quartal
+- Ex. 4-18: Added sixth/ninth connecting to quartal
+- Ex. 4-19: Fourth-inversion ninth as bridge (seventh spans two fourths)
+- Ex. 4-20: Seventh chords with fourth replacing third/fifth
+- Ex. 4-21: Thirteenth chords with predominant fourths
 
-Ex. 4-17 demonstrates unresolved suspensions leading into quartal texture.
+# Relationships
+## Builds Upon
+- Both quartal and tertian systems
 
-Ex. 4-18 presents sixth and ninth additions to cadential tertian tonics connecting to quartal harmony.
+## Enables
+- Mixed-idiom harmonic writing
+- Smooth system transitions
 
-Ex. 4-19 uses fourth inversion ninth chords as bridges (the seventh spans two fourths).
+## Related
+- compound-quartal-chords (another bridge between systems)
+- quartal-cadences (cadential application of mixed idioms)
+- ninth-chord-inversion (fourth inversion as bridge)
 
-Ex. 4-20 shows seventh chords with third and fifth replaced by fourth.
+## Contrasts With
+- Pure quartal or pure tertian writing (no transition needed)
 
-Ex. 4-21 demonstrates thirteenth chords arranged so fourths predominate.
-
-# Related Concepts
-- Quartal Harmony
-- Tertian Harmony
-- Suspension
-- Added-Note Chords
-- Ninth Chord Inversion
-- Thirteenth Chords
-- Four-Note Quartal Chords
+# Common Errors
+- Combining tertian and quartal chords without transitional preparation (sounds abrupt)
 
 # Common Confusions
-Students may attempt to combine tertian and quartal chords without transitional preparation. The two systems have different intervallic foundations; smooth combination requires deliberate use of the fourth as a connecting element in the tertian chords.
+- **The fourth as connector**: The two systems have different intervallic foundations; smooth combination requires deliberate use of the fourth as connecting element
 
 # Source Reference
-Chapter 4: Chords by Fourths, pp. 98-100
+Chapter 4: Chords by Fourths, pp. 98-100 (PDF page 92)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved all six example references from v2 card. The "binder" concept (seventh spanning two fourths) is a key Persichetti insight.

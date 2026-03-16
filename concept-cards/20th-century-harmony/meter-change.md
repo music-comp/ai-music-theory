@@ -1,80 +1,81 @@
 ---
 concept: Meter Change
-category: technique
+slug: meter-change
+category: rhythm-meter
+subcategory: timing-dynamics
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Timing and Dynamics"
 chapter_number: 10
 pdf_page: 211
-unit: null
-authors: Vincent Persichetti
+section: "Rhythm"
+extraction_confidence: high
+aliases:
+  - "changing meters"
+  - "fluid bar line"
+prerequisites:
+  - meter-and-rhythm
+extends: []
+related:
+  - ametrical-rhythm
+  - polymeter
+contrasts_with: []
+answers_questions:
+  - "How does changing meter achieve rhythmic variety?"
+  - "What is a fluid bar line?"
 ---
 
 # Quick Definition
-
 A common means of achieving rhythmic variety through changing time signatures, with the fluid bar line accommodating fractional measures and adapting to demands of vocal texts (prose rhythm).
 
-# Formal Definition
+# Core Definition
+**Change of meter** is a common means of achieving rhythmic variety. The fluid bar line adjusts easily and accommodates fractional measures. Rhythmic freedom of the bar line may result from the demands of vocal texts (prose rhythm), melodic contours that do not fit regular patterns, or compositional desire for asymmetric phrase structures (Ch. 10, p. 215).
 
-**Meter change** is a common means of achieving rhythmic variety in twentieth-century composition. The fluid bar line adjusts easily and accommodates fractional measures, enabling flexible phrase lengths and rhythmic groupings. Rhythmic freedom of the bar line may result from the demands of vocal texts (prose rhythm), melodic contours that do not fit regular metrical patterns, or compositional desire for asymmetric phrase structures.
+# Prerequisites
+- **Meter and rhythm** -- understanding the meter-rhythm distinction
 
-# Musical/Mathematical Formulation
+# Key Properties
+1. Fluid bar line adjusts to accommodate any phrase length
+2. Fractional measures are accommodated naturally
+3. Prose rhythm drives meter change in vocal music
+4. May be regular alternation, irregular shifts, or continuous change
+5. Enables asymmetric phrase structures
 
-Meter change applications:
-- **Regular alternation**: Predictable pattern of changing meters (e.g., 3/4, 4/4, 3/4, 4/4)
-- **Irregular changes**: Unpredictable meter shifts following musical logic
-- **Fractional measures**: Partial measures inserted or concluding phrases
-- **Prose rhythm**: Meters following natural text accentuation
+# Construction / Recognition
+- Identify passages with changing time signatures
+- Note whether changes follow a pattern or are irregular
+- Check whether meter changes correspond to text rhythm, melodic contour, or compositional intent
 
-Compositional purposes:
-- Accommodating asymmetric melodic phrases
-- Following natural speech rhythm in vocal music
-- Creating rhythmic interest through unpredictability
-- Avoiding metric regularity and predictability
-
-# Musical Context/Application
-
-Meter change enables:
-- Natural text setting without metric distortion
-- Melodic phrases of varying lengths
-- Rhythmic variety within coherent musical flow
-- Escape from hypnotic regularity of unchanging meter
-
-The technique is particularly effective for:
-- Art song and opera with complex texts
-- Folk-influenced music with irregular phrase lengths
-- Music seeking to avoid mechanical regularity
-- Complex modernist rhythmic writing
+# Context & Application
+Meter change enables natural text setting without metric distortion, melodic phrases of varying lengths, and escape from hypnotic regularity. The technique appears in art song, opera, folk-influenced music, and complex modernist rhythmic writing.
 
 # Examples
+Source material: Becker, String Quartet No. 2, p. 9; Blacher, Divertimento, p. 3; Copland, Sextet, p. 5; Haubenstock-Ramati, Les Symphonies de Timbres, pp. 10-11; Revueltas, Sensemaya, pp. 27-37.
 
-**From source discussion:**
-- Fluid bar line accommodating fractional measures
-- Prose rhythm resulting from vocal text demands
-- Rhythmic freedom through changing meters
+# Relationships
+## Builds Upon
+- Meter and rhythm (meter change exploits the meter-rhythm distinction)
+## Enables
+- Prose rhythm and asymmetric phrasing
+## Related
+- Ametrical rhythm (patterns produced by rhythmic transformation)
+- Polymeter (simultaneous different meters)
+## Contrasts With
+- (none directly)
 
-**Recommended source material:**
-- John Becker, String Quartet No. 2, p. 9
-- Boris Blacher, Divertimento, p. 3
-- Aaron Copland, Sextet, p. 5
-- Roman Haubenstock-Ramati, Les Symphonies de Timbres, pp. 10-11
-- Peter Mennin, String Quartet No. 2, p. 24
-
-# Related Concepts
-
-- Meter and Rhythm
-- Time Signature
-- Asymmetric Meter
-- Prose Rhythm
-- Phrase Structure
-- Ametrical Rhythm
-- Composite Meter
+# Common Errors
+- Changing meter arbitrarily without musical justification
+- Using meter changes as mere notational convenience when the rhythm could be notated otherwise
 
 # Common Confusions
-
-- **Change vs. complexity**: Frequent meter changes do not necessarily create complex rhythm; the result depends on how changes are used.
-- **Notation vs. perception**: Meter changes may or may not be perceived by listeners; sometimes they are notational conveniences.
-- **Prose rhythm**: Not all meter changes relate to text; purely instrumental music also employs meter change for rhythmic variety.
+- **Change vs. complexity**: Frequent meter changes do not necessarily create complex rhythm
+- **Notation vs. perception**: Meter changes may or may not be perceived by listeners
+- **Prose rhythm**: Not all meter changes relate to text; instrumental music also uses them
 
 # Source Reference
+Chapter 10: Timing and Dynamics, p. 215 (pdf p. 215)
 
-Chapter 10: Timing and Dynamics, page 215
+# Verification Notes
+Upgraded from old card. Preserved: core definition, prose rhythm concept, all source material. Added: v3 structure, slug references, fractional measures.

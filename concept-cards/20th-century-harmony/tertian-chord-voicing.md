@@ -1,65 +1,94 @@
 ---
 concept: Tertian Chord Voicing
-category: technique
+slug: tertian-chord-voicing
+category: voice-leading
+subcategory: chord-spacing
+tier: intermediate
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Chords by Thirds"
 chapter_number: 3
 pdf_page: 65
-unit: null
-authors: Vincent Persichetti
+section: "Seventh and Ninth Chords / Elevenths and Thirteenths"
+extraction_confidence: high
+aliases:
+  - "tertian spacing"
+  - "chord arrangement"
+prerequisites:
+  - extended-tertian-harmony
+extends:
+  - extended-tertian-harmony
+related:
+  - chord-member-omission
+  - ninth-chord-inversion
+  - quartal-harmony
+  - polychord
+contrasts_with: []
+answers_questions:
+  - "How does voicing affect whether a chord sounds tertian, quartal, or polychordal?"
+  - "What are the doubling principles for seventh and ninth chords?"
+  - "How should large tertian chords be spaced to preserve their identity?"
 ---
-
 # Quick Definition
-The art of spacing and arranging tertian chord members to achieve specific sonic effects, with choices about doubling, omission, and intervallic arrangement significantly affecting a chord's character, resonance, and mobility.
+The art of spacing and arranging tertian chord members to achieve specific sonic effects, where voicing choices about doubling, omission, and intervallic arrangement fundamentally affect whether a chord sounds tertian, quartal, or polychordal.
 
-# Formal Definition
-The voicing of tertian chords involves decisions about doubling (any note may be doubled), omission (strategic removal of chord members), spacing (close or open), and inversion (which note appears in bass). These choices affect harmonic color, resonant quality, suppleness of movement, and whether the chord sounds tertian or takes on quartal or polychordal characteristics.
+# Core Definition
+Voicing of tertian chords involves decisions about doubling, omission, spacing, and inversion that affect harmonic color, resonance, suppleness, and chord identity. In seventh chords, any note may be doubled, and first inversion spaced in fifths acts as a key center chord. In ninth chords, doubling root or fifth yields solidity, third or seventh yields density, ninth yields tension. Omitting the fifth creates richness; omitting third or seventh reduces color. For eleventh and thirteenth chords, resonant intervallic arrangement is best, but if fourths predominate the chord sounds quartal; if triadic units separate it becomes a polychord.
 
-# Musical/Mathematical Formulation
-**Seventh Chord Voicing:**
-- Any note may be doubled
-- First inversion spaced in fifths is particularly useful as a key center chord
-- May be inverted and spaced freely without destroying harmonic suppleness
+# Prerequisites
+- **Extended tertian harmony**: Understanding the full range of tertian chord sizes
 
-**Ninth Chord Voicing:**
-- Doubling: root or fifth for solidity; third or seventh for density; ninth for tension
-- Omission: fifth for richness; third or seventh for less color
-- When ninth is below root: chord is less agile
-- Fourth inversion: hard texture, effective for rough passages
+# Key Properties
+1. First inversion seventh spaced in fifths = key center chord
+2. Ninth chord doubling: root/fifth = solidity; third/seventh = density; ninth = tension
+3. Ninth chord omission: fifth = richness; third/seventh = less color
+4. If fourths predominate in spacing: sounds quartal
+5. If triadic units separate: sounds polychordal
+6. If seconds cluster: sounds like tone cluster
+7. When combining with quartal chords, arrange to include fourth intervals
+8. Register affects perception: thick textures lighten in upper registers
 
-**Large Chord Voicing (11th, 13th, and beyond):**
-- Resonant intervallic arrangement is best
-- Separated triadic units create polychordal effect
-- Predominant fourths create quartal sound
-- Omit tones forming sharp dissonant intervals for suppleness
-- Thin texture by omitting two or three inner tones
+# Construction / Recognition
+- Check spacing for unintended quartal or polychordal sound
+- Verify that at least one fourth appears when bridging to quartal passages
+- For large chords, thin texture by omitting two or three inner tones
+- Fourth inversion of ninth chord: root on top, seventh spans two fourths (useful bridge to quartal)
+- Avoid separated triadic units unless polychord is desired
 
-**Avoiding Unintended Effects:**
-- If fourths predominate: sounds like chord by fourths
-- If triadic units separate: sounds like polychord
-- If seconds cluster: sounds like tone cluster
-
-# Musical Context/Application
-Voicing decisions are crucial when combining tertian and quartal harmonies. When ninth chords are used with chords by fourths or other non-third categories, the members of the ninth should be spaced so that at least one interval resembles the building interval of the non-tertian harmony. This fourth should be given emphasis to prepare for the entrance of quartal harmony.
-
-Register affects perception: thick textures lighten in upper registers; low register spacing requires larger intervals.
+# Context & Application
+Voicing decisions are structural, not merely coloristic. The same pitch collection can sound tertian, quartal, or polychordal depending on spacing. When ninth chords precede quartal or non-tertian harmony, space members so that at least one interval resembles the building interval of the incoming harmony. This fourth should be emphasized to prepare for the texture change.
 
 # Examples
-Ex. 3-18 shows first inversion seventh chords spaced in fifths, demonstrating their usefulness as key center chords.
+- Ex. 3-18: First inversion seventh chords spaced in fifths as key center chords
+- Ex. 3-37: How chord member arrangement determines tertian, quartal, or polychordal identity
 
-Ex. 3-37 demonstrates how chord member arrangement affects whether a large chord sounds tertian, quartal, or polychordal.
+# Relationships
+## Builds Upon
+- Extended tertian harmony (the formations being voiced)
 
-# Related Concepts
-- Extended Tertian Harmony
-- Seventh Chords in Twentieth-Century Harmony
-- Ninth Chord Inversion
-- Eleventh Chords
-- Thirteenth Chords
-- Quartal Harmony
-- Polychords
+## Enables
+- Tertian-quartal transitions (through voicing that includes fourths)
+
+## Related
+- chord-member-omission (thinning texture is a voicing decision)
+- ninth-chord-inversion (inversion as voicing)
+- quartal-harmony (voicing can make tertian chords sound quartal)
+- polychord (voicing can create polychordal effect)
+
+## Contrasts With
+- Quartal chord voicing (different principles due to rootless harmony)
+
+# Common Errors
+- Treating voicing as aesthetic preference rather than structural decision
+- Spacing large chords without considering unintended quartal or polychordal effects
 
 # Common Confusions
-Students often treat voicing as merely aesthetic preference. In extended tertian harmony, voicing fundamentally affects chord identity: the same pitch collection can sound tertian, quartal, or polychordal depending on how it is spaced. Voicing is a structural decision, not merely coloristic.
+- **Voicing = identity**: The same pitch collection can have fundamentally different sonic identities depending on spacing
+- **Doubling hierarchy**: Unlike tertian doubling rules, the hierarchy here is contextual (solidity, density, or tension as needed)
 
 # Source Reference
-Chapter 3: Chords by Thirds, pp. 75-90
+Chapter 3: Chords by Thirds, pp. 75-90 (PDF page 65)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved the cross-reference to quartal bridging (from Ch. 4 context).

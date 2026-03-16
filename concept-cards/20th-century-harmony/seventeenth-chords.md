@@ -1,38 +1,57 @@
 ---
 concept: Seventeenth Chords
-category: theory
+slug: seventeenth-chords
+category: chords
+subcategory: tertian-chords
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Chords by Thirds"
 chapter_number: 3
 pdf_page: 65
-unit: null
-authors: Vincent Persichetti
+section: "Fifteenths and Seventeenths"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - fifteenth-chords
+extends:
+  - fifteenth-chords
+related:
+  - twelve-note-tertian-chords
+  - chord-member-omission
+contrasts_with: []
+answers_questions:
+  - "What is a seventeenth chord?"
+  - "Why are larger chord names ('nineteenth,' 'twenty-first') seldom used?"
+  - "How is chord size determined beyond the seventeenth?"
 ---
-
 # Quick Definition
-Nine-note tertian chords built by adding another third above the fifteenth, further extending the chromatic tertian vocabulary without necessarily duplicating chord members.
+Nine-note tertian chords adding another third above the fifteenth, representing near-maximum tertian extension; beyond the seventeenth, the terminology shifts to "twelve-note chords" since not every tone is necessarily different.
 
-# Formal Definition
-As the tonal system expanded into one that accommodated more than seven different chord tones, thirds were added to the thirteenth chord as a fifteenth and a seventeenth without duplicating chord members. In tertian chords larger than the seventeenth, not every tone is necessarily different; the size of the chord is determined by the distance between the root and the highest new note that rises in thirds above the root.
+# Core Definition
+Thirds were added to the thirteenth chord as a fifteenth and a seventeenth without duplicating chord members. The seventeenth chord contains nine different pitch classes. In tertian chords larger than the seventeenth, not every tone is necessarily different; the size of the chord is determined by the distance between the root and the highest new note that rises in thirds above the root. The unwieldy terms "nineteenth," "twenty-first," or "twenty-third" chord are seldom used. Complete fifteenth or seventeenth chords are effective in parallel harmony or in harmonic punctuations.
 
-# Musical/Mathematical Formulation
-**Construction:**
-Nine notes built in thirds: Root + 3rd + 5th + 7th + 9th + 11th + 13th + 15th + 17th
+# Prerequisites
+- **Fifteenth chords**: Eight-note tertian formation
 
-**Interval Span:**
-The seventeenth spans two octaves plus a third (compound third)
+# Key Properties
+1. Nine notes built in thirds: R-3-5-7-9-11-13-15-17
+2. Spans two octaves plus a third (compound third)
+3. Beyond seventeenth, the terminology shifts to "twelve-note chords"
+4. Larger formations may contain duplicated pitches
+5. Size determined by distance from root to highest new note, not by number of different pitches
+6. Must thin by omitting two or three inner tones for practical manipulation
+7. Avoid separated triadic units unless polychord desired
 
-**Terminology Note:**
-The unwieldy terms "nineteenth," "twenty-first," or "twenty-third" chord are seldom used for larger formations. Beyond the seventeenth, the terminology shifts to "twelve-note chords."
+# Construction / Recognition
+- Build in thirds beyond the fifteenth to the seventeenth
+- Nine distinct pitch classes present
+- Terms larger than "seventeenth" are seldom used (shift to "twelve-note chord")
+- Thin texture and avoid triadic separation for practical use
 
-**Size Determination:**
-The size of the chord is determined by the distance between the root and the highest new note that rises in thirds above the root, regardless of whether all intervening tones are different.
-
-# Musical Context/Application
-Complete fifteenth or seventeenth chords are effective in parallel harmony or in harmonic punctuations. Like other large tertian formations, they require:
-1. Thinning by omitting two or three inner tones for manipulation
-2. Avoiding separated triadic units (unless polychordal texture is desired)
-3. Careful attention to register and instrumentation
+# Context & Application
+Like fifteenth chords, seventeenth chords are effective in parallel harmony and harmonic punctuations. They represent near-maximum tertian density and require careful orchestration. The terminological boundary at "seventeenth" reflects a practical reality: beyond this point, pitch duplication becomes inevitable, and the chord is better described by its total pitch content than by its tertian span.
 
 # Examples
 - Henk Badings, *Louisville-Symphony*, p. 63 (Peters)
@@ -41,16 +60,29 @@ Complete fifteenth or seventeenth chords are effective in parallel harmony or in
 - Riccardo Malipiero, *Sonata for Violin and Piano*, p. 18 (Zerboni)
 - Heitor Villa-Lobos, *Rudepoema*, p. 22 (Eschig)
 
-# Related Concepts
-- Fifteenth Chords
-- Thirteenth Chords
-- Twelve-Note Tertian Chords
-- Extended Tertian Harmony
-- Parallel Harmony
-- Chord Member Omission
+# Relationships
+## Builds Upon
+- Fifteenth chords (extended by one more third)
+
+## Enables
+- Twelve-note tertian chords (maximum extension)
+
+## Related
+- twelve-note-tertian-chords (the endpoint of tertian stacking)
+- chord-member-omission (essential for manipulation)
+
+## Contrasts With
+- Fifteenth chords (eight vs. nine notes; seventeenth = terminological boundary)
+
+# Common Errors
+- Using unwieldy terms ("nineteenth chord") when "twelve-note chord" is appropriate
 
 # Common Confusions
-Students may be uncertain when to stop counting chord members. Persichetti clarifies that fifteenth and seventeenth are useful terms, but beyond this, the terminology "twelve-note chord" is preferred regardless of how the notes are arranged in thirds.
+- **Size determination**: Beyond seventeenth, chord size is measured by root-to-top span, not by number of distinct pitches
+- **Terminological boundary**: "Seventeenth" is the practical upper limit of numbered tertian chord names
 
 # Source Reference
-Chapter 3: Chords by Thirds, pp. 84-86
+Chapter 3: Chords by Thirds, pp. 84-86 (PDF page 65)
+
+# Verification Notes
+Re-extracted from source to v3 template. Five composer examples preserved from v2 card.

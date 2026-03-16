@@ -1,75 +1,106 @@
 ---
 concept: Clusters with Other Harmony
-category: technique
+slug: clusters-with-other-harmony
+category: harmony
+subcategory: harmonic-combination
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Chords by Seconds"
 chapter_number: 6
+section: "Clusters"
 pdf_page: 120
-unit: null
-authors: Vincent Persichetti
+extraction_confidence: high
+aliases:
+  - "cluster integration"
+  - "clusters in mixed harmony"
+prerequisites:
+  - tone-cluster
+  - secundal-harmony
+extends:
+  - tone-cluster
+related:
+  - cluster-accumulation
+  - harmonic-progression
+contrasts_with: []
+answers_questions:
+  - "How should clusters be integrated with other harmony types?"
+  - "Why is arbitrary space-filling with seconds ineffective?"
+  - "Can clusters participate in functional root progressions?"
 ---
 
 # Quick Definition
-The combination of cluster or secundal harmony with chords by thirds or fourths, allowing participation in functional root progressions and avoiding the arbitrary, calculative effect of simply filling in space with seconds.
 
-# Formal Definition
-Translating traditional harmony into cluster harmony by arbitrarily filling in the space is calculative and usually without musical impetus. Clusters more effectively stem from the secundal harmony that generates them because of the common interval of the second. Clusters are used with chords by seconds, but occasionally in conjunction with or in contrast to other types of harmony. When clusters or chords by seconds are used with chords by thirds or fourths they can take part in progressions of functional root relationships.
+The integration of clusters with chords by thirds or fourths, allowing participation in functional root progressions while avoiding the calculative effect of arbitrary space-filling.
 
-# Musical/Mathematical Formulation
-Integration approaches:
+# Core Definition
 
-1. **Organic generation**: Clusters stem from secundal harmony
-   - Common second interval provides continuity
-   - Musical rather than calculative
-   - Grows naturally from secundal context
+"Translating traditional harmony into cluster harmony by arbitrarily filling in the space is calculative and usually without musical impetus. Clusters more effectively stem from the secundal harmony that generates them because of the common interval of the second. Clusters are used with chords by seconds, but occasionally in conjunction with or in contrast to other types of harmony. When clusters or chords by seconds are used with chords by thirds or fourths they can take part in progressions of functional root relationships" (Persichetti, p. 131).
 
-2. **Contrast**: Clusters against tertian/quartal harmony
-   - Textural opposition
-   - Dramatic effect
-   - Sectional articulation
+# Prerequisites
 
-3. **Functional participation**: Clusters within root progressions
-   - Clusters/secundal chords combined with thirds/fourths
-   - Root relationships still operative
-   - Hybrid harmonic syntax
+- **Tone cluster** — Integration concerns how clusters relate to other harmony
+- **Secundal harmony** — The generating system from which clusters stem organically
 
-Ineffective approach:
-- Arbitrary space-filling with seconds
-- Calculative rather than musical
-- Lacks organic connection to surrounding material
+# Key Properties
 
-# Musical Context/Application
-The most effective cluster writing connects to its harmonic environment rather than standing as isolated effect. When clusters are integrated with other harmonic types, they gain contextual meaning and avoid sounding arbitrary.
+1. Organic generation from secundal context is more effective than arbitrary space-filling
+2. Common second interval provides continuity between secundal chords and clusters
+3. Clusters may function in conjunction with or in contrast to other harmony types
+4. Functional root relationships can operate when clusters appear with thirds/fourths
+5. Four possible combinations of cluster consonance/dissonance with outer-voice consonance/dissonance
 
-Clusters function best when:
-- Generated from surrounding secundal material
-- Used for specific dramatic or coloristic effect
-- Integrated into functional progressions
-- Providing contrast to other texture types
+# Construction / Recognition
 
-The consonant-dissonant quality of cluster harmony may oppose or parallel the quality of the counterpoint of the outer voices, creating four possible combinations.
+## Effective Integration Approaches
+1. Generate clusters organically from surrounding secundal material
+2. Use clusters for contrast against tertian/quartal harmony
+3. Combine clusters with chords by thirds/fourths for functional participation
+4. Avoid arbitrary filling-in of chordal space with seconds
+
+# Context & Application
+
+The most effective cluster writing connects to its harmonic environment rather than standing as isolated effect. Clusters gain contextual meaning when integrated with other harmonic types and avoid sounding arbitrary. The consonant-dissonant quality of cluster harmony may oppose or parallel the quality of the counterpoint of the outer voices, creating four distinct textural combinations.
 
 # Examples
-Ex. 6-26: Clusters and chords by seconds with chords by thirds or fourths in functional root relationships
 
-Source material showing integration:
+**Ex. 6-26** (p. 131): Clusters and chords by seconds with chords by thirds/fourths in functional root relationships
+
+**Composer examples:**
 - Bela Bartok: String Quartet No. 3, p. 3 (Boosey)
 - Aaron Copland: Piano Sonata, p. 14 (Boosey)
 - Darius Milhaud: Christophe Colomb, p. 143 (Universal)
 
-# Related Concepts
-- Tone Cluster
-- Secundal Harmony
-- Tertian Harmony
-- Quartal Harmony
-- Functional Harmony
-- Harmonic Contrast
+# Relationships
+
+## Builds Upon
+- **tone-cluster** — Integration concerns how clusters relate to surrounding harmony
+
+## Related
+- **cluster-accumulation** — Uses non-cluster materials to build clusters
+- **harmonic-progression** — Functional root relationships remain operative with clusters
+
+# Common Errors
+
+- **Error**: Filling in tertian chords with seconds to create clusters
+  **Correction**: This is "calculative and usually without musical impetus"; clusters should stem from secundal harmony organically
+- **Error**: Treating clusters as isolated effects disconnected from harmonic context
+  **Correction**: Clusters function most effectively when integrated with surrounding harmonic material
 
 # Common Confusions
-- Filling in chords with seconds does not automatically create effective clusters
-- Organic generation is different from arbitrary addition
-- Functional root relationships can operate alongside cluster texture
-- Contrast and integration are both valid approaches
+
+- **Confusion**: Clusters cannot participate in functional harmony
+  **Clarification**: When used with chords by thirds or fourths, clusters can take part in functional root progressions
+- **Confusion**: Organic generation and contrast are contradictory approaches
+  **Clarification**: Both are valid; organic connection works within secundal context, while contrast works between harmonic types
 
 # Source Reference
-Chapter 6: Chords by Seconds, pages 131-132
+
+Chapter 6: Chords by Seconds, pages 131-132. Ex. 6-26.
+
+# Verification Notes
+
+- Core Definition: Direct quotation from p. 131
+- Confidence: HIGH — explicit treatment with clear compositional advice
+- Re-extracted from v2 card; preserved: organic vs. calculative distinction, functional root relationship principle

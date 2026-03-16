@@ -1,65 +1,88 @@
 ---
 concept: Four-Note Quartal Chords
-category: theory
+slug: four-note-quartal-chords
+category: chords
+subcategory: quartal-chords
+tier: intermediate-advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Chords by Fourths"
 chapter_number: 4
 pdf_page: 92
-unit: null
-authors: Vincent Persichetti
+section: "Four-Note Chords by Fourths"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - three-note-quartal-chords
+extends:
+  - three-note-quartal-chords
+related:
+  - quartal-chord-inversion
+  - compound-quartal-chords
+  - tertian-quartal-transitions
+contrasts_with: []
+answers_questions:
+  - "Why are four-note quartal chords more resonant than three-note?"
+  - "How do four-note quartal inversions create harmonic movement?"
+  - "How do four-note quartal chords resolve to tertian harmony?"
 ---
-
 # Quick Definition
-Quartal structures of four stacked fourths, more resonant than three-note quartal chords due to the consonant tenth formed between bass and top note, with three useful inversions providing variety of intervals.
+Quartal structures of four stacked fourths, more resonant than three-note types due to the consonant tenth between outer voices, extremely useful in their three inverted forms, and capable of resolving smoothly to tertian chords when two voices move conjunctly.
 
-# Formal Definition
-A quartal structure more resonant than a three-note chord by fourths is made by adding another fourth to the chord. The new tone forms a consonant interval (tenth) with the bass tone and adds color and variety to quartal harmony. Four-note chords by fourths are extremely useful in their three inverted forms because of the variety of intervals they contain.
+# Core Definition
+A quartal structure more resonant than a three-note chord by fourths is made by adding another fourth to the chord. The new tone forms a consonant interval (tenth) with the bass tone and adds color and variety. Four-note chords by fourths are extremely useful in their three inverted forms because of the variety of intervals they contain. Moving through inversions of the same chord produces real harmonic movement without root change. They resolve easily to chords by thirds when two voices move conjunctly while the others remain stationary. When the augmented fourth is present, the tritone moves most easily when placed at the top.
 
-# Musical/Mathematical Formulation
-**Construction:**
-P4 + P4 + P4 = compound minor third (tenth) from bass to top
-Example: C-F-Bb-Eb spans a minor tenth (C to Eb)
+# Prerequisites
+- **Three-note quartal chords**: The simpler quartal formations
 
-**Resonance Factor:**
-The consonant tenth between outer voices adds warmth and stability not present in three-note quartal chords.
+# Key Properties
+1. P4+P4+P4 spans a minor tenth (consonant outer interval)
+2. Three inverted forms, each with different intervallic content
+3. Moving through inversions = harmonic movement without root change
+4. Resolve to tertian chords: two voices conjunct, two stationary
+5. Three-note quartal with doubling useful for this resolution
+6. Tritone at top of chord = easiest resolution
+7. More versatile than three-note formations due to interval variety
 
-**Inversions (three available):**
-Each inversion contains different intervallic combinations of:
-- Fourths
-- Fifths
-- Seconds
-- Major/minor thirds
+# Construction / Recognition
+- Stack three fourths: e.g., C-F-Bb-Eb (minor tenth from C to Eb)
+- Three inversions each contain different combinations of fourths, fifths, and seconds
+- Identify tritone position for resolution ease
 
-**Movement Through Inversions:**
-Moving through inversions of the same chord produces real harmonic movement without root change.
-
-**Tritone Placement:**
-When the augmented fourth is present in a four-note chord by fourths, the tritone moves most easily when placed at the top of the chord.
-
-# Musical Context/Application
-Four-note quartal chords resolve easily to chords by thirds when two voices move conjunctly while the others remain stationary. This makes them excellent transitional sonorities between quartal and tertian passages.
-
-The variety of intervals in the inversions makes four-note quartal chords more versatile than three-note formations. Composers can select inversions to emphasize fourths, fifths, or the contrasting intervals depending on context.
+# Context & Application
+Four-note quartal chords serve as excellent transitional sonorities between quartal and tertian passages due to their smooth resolution mechanism. The variety of intervals in inversions makes them more versatile than three-note formations. Composers can select inversions to emphasize fourths, fifths, or contrasting intervals depending on context.
 
 # Examples
-Ex. 4-24 presents four-note quartal chords showing the consonant tenth between bass and top note.
+- Ex. 4-24: Four-note quartal showing consonant tenth between outer voices
+- Ex. 4-25: Movement through inversions creating harmonic motion
+- Ex. 4-26: Resolution to tertian chords with conjunct voice movement
+- Ex. 4-27: Tritone at top for easiest resolution
 
-Ex. 4-25 demonstrates movement through inversions creating harmonic motion without root change.
+# Relationships
+## Builds Upon
+- Three-note quartal chords (extended by one fourth)
 
-Ex. 4-26 shows four-note quartal chords resolving to tertian chords with conjunct voice movement.
+## Enables
+- Multi-note quartal chords (further extension)
+- Smooth tertian-quartal transitions
 
-Ex. 4-27 demonstrates how the tritone moves easily when placed at the top of the chord.
+## Related
+- quartal-chord-inversion (inversions particularly useful for four-note chords)
+- compound-quartal-chords (thirds added to quartal structures)
+- tertian-quartal-transitions (resolution mechanism)
 
-# Related Concepts
-- Three-Note Quartal Chords
-- Multi-Note Quartal Chords
-- Quartal Chord Inversion
-- Quartal Harmony
-- Tertian-Quartal Transitions
-- Compound Intervals
+## Contrasts With
+- Three-note quartal (less resonant, fewer inversion options)
+
+# Common Errors
+- Undervaluing inversions (four-note inversions create substantially different textures)
 
 # Common Confusions
-Students may undervalue inversions of four-note quartal chords. Unlike three-note versions where inversions mainly introduce fifths, four-note inversions create substantially different intervallic textures, making inversion choice a significant compositional decision.
+- **Inversion significance**: Unlike three-note quartal where inversions mainly introduce fifths, four-note inversions create substantially different intervallic textures
 
 # Source Reference
-Chapter 4: Chords by Fourths, pp. 100-102
+Chapter 4: Chords by Fourths, pp. 100-102 (PDF page 92)
+
+# Verification Notes
+Re-extracted from source to v3 template. Preserved all example references from v2 card.

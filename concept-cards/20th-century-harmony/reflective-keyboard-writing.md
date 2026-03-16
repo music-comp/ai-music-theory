@@ -1,74 +1,104 @@
 ---
 concept: Reflective Keyboard Writing
-category: technique
+slug: reflective-keyboard-writing
+category: voice-leading
+subcategory: mirror-harmony
+tier: advanced
 source: "Twentieth-Century Harmony: Creative Aspects and Practice"
+source_slug: 20th-century-harmony
+authors: "Vincent Persichetti"
 chapter: "Compound and Mirror Harmony"
 chapter_number: 8
+section: "Mirror Writing"
 pdf_page: 162
-unit: null
-authors: Vincent Persichetti
+extraction_confidence: high
+aliases:
+  - "keyboard mirror"
+  - "piano mirror technique"
+prerequisites:
+  - mirror-writing
+  - building-tone
+extends:
+  - mirror-writing
+related:
+  - reflective-scale
+contrasts_with: []
+answers_questions:
+  - "What are the mirror pivotal points of the keyboard?"
+  - "Why does reflective keyboard writing produce identical fingering?"
+  - "How does this technique equalize hand movement?"
 ---
 
 # Quick Definition
 
-Piano writing that exploits the keyboard's symmetrical layout around specific pivotal points (D and G#), producing mirror harmony with identical fingering in both hands.
+Piano writing exploiting the keyboard's symmetrical layout around pivotal points (D and G#), producing mirror harmony with identical fingering in both hands regardless of harmony type.
 
-# Formal Definition
+# Core Definition
 
-**Reflective keyboard writing** is a specialized application of mirror technique that exploits the symmetrical properties of the piano keyboard. The mirror or reflective pivotal points of the keyboard are D and G#. When simultaneous inversion begins at any one of the twelve pivotal points, strict mirroring results regardless of the type of harmony used, and the fingering in both hands will, without exception, be identical. This creates a unique mirror harmony that equalizes the movement of the hands and creates simultaneous and uniform keyboard technique.
+"Reflective keyboard writing produces unique mirror harmony that equalizes the movement of the hands and creates simultaneous and uniform keyboard technique. The mirror or reflective pivotal points of the keyboard are D and G#. Simultaneous inversion beginning at any one of the twelve pivotal points produces strict mirroring regardless of what type of harmony is used; the fingering in both hands will, without exception, be identical" (Persichetti, pp. 178-179).
 
-# Musical/Mathematical Formulation
+# Prerequisites
 
-Keyboard mirror axes:
-- **Primary pivots**: D and G# are natural reflective centers
-- **All twelve pivots**: Any chromatic pitch can serve as pivot; fingering remains identical
+- **Mirror writing** — Keyboard reflection is a specialized application
+- **Building tone** — D and G# are the natural keyboard building tones
 
-Symmetry principle:
-- Ascending interval from pivot in right hand = descending interval from pivot in left hand
-- Same finger numbers used in both hands (1-2-3-4-5 pattern mirrors exactly)
-- Black/white key patterns mirror around the axis
+# Key Properties
 
-# Musical Context/Application
+1. D and G# are natural reflective pivotal points of the keyboard
+2. Any of twelve chromatic pitches can serve as pivot
+3. Identical fingering in both hands without exception
+4. Equalizes hand movement and creates uniform technique
+5. Produces unique mirror harmony specific to keyboard geometry
+6. Works regardless of harmony type used
 
-Reflective keyboard writing provides:
-- Fresh, unique piano sounds arising from symmetrical structure
-- Practical benefit of equalized hand technique
-- Idiomatic writing that exploits keyboard geometry
-- Pedagogical value for developing uniform technique
+# Construction / Recognition
 
-The technique is particularly effective for:
-- Allegro passages requiring uniform virtuosity
-- Textures where symmetrical motion creates distinctive color
-- Passages where mirror harmony serves the musical expression
-- Technical etudes developing ambidextrous facility
+## To Apply
+1. Choose a pivotal point (D and G# are most natural)
+2. Play ascending intervals in right hand from pivot
+3. Play descending intervals in left hand from pivot (same magnitude)
+4. Fingering patterns will be identical in both hands
+
+# Context & Application
+
+Reflective keyboard writing provides fresh, unique piano sounds from symmetrical structure, practical benefit of equalized technique, idiomatic writing exploiting keyboard geometry, and pedagogical value for developing uniform ambidextrous facility. Particularly effective for allegro passages requiring uniform virtuosity.
 
 # Examples
 
-**From source (Ex. 8-28):**
-- Simultaneous inversion from pivotal points
-- Strict mirroring with identical fingering in both hands
-- Reflective keyboard passages in allegro context
+**Ex. 8-28** (p. 179): Simultaneous inversion from pivotal points with identical fingering
 
-**Recommended source material:**
-- Vincent Persichetti, Sixth Piano Sonata, p. 18 (Elkan-Vogel)
-- Gerald Strang, Mirrorrorrim (New Music)
-- Antonio Veretti, Piano Sonatina, p. 19 (Ricordi)
+**Composer examples:**
+- Vincent Persichetti: Sixth Piano Sonata, p. 18 (Elkan-Vogel)
+- Gerald Strang: Mirrorrorrim (New Music)
+- Antonio Veretti: Piano Sonatina, p. 19 (Ricordi)
 
-# Related Concepts
+# Relationships
 
-- Mirror Writing
-- Mirror Chord
-- Keyboard Technique
-- Symmetrical Inversion
-- Piano Writing
-- Hand Independence/Coordination
+## Builds Upon
+- **mirror-writing** — A specialized keyboard application
+- **building-tone** — D and G# as natural keyboard pivots
+
+## Related
+- **reflective-scale** — Scale reflection underlies keyboard mirror harmony
+
+# Common Errors
+
+- **Error**: Assuming only D and G# work as pivots
+  **Correction**: Any of the twelve chromatic pitches can serve as pivot with identical fingering results
 
 # Common Confusions
 
-- **Pivot point flexibility**: While D and G# are "natural" pivots, any of the twelve chromatic pitches can serve as pivot with identical fingering results.
-- **Musical vs. technical purpose**: Reflective keyboard writing serves both musical expression (unique mirror sounds) and practical technique (equalized hand movement).
-- **Strict vs. free**: True reflective keyboard writing maintains strict mirroring; once voices move independently, the fingering symmetry is lost.
+- **Confusion**: Reflective keyboard writing is only a technical exercise
+  **Clarification**: It serves both musical expression (unique mirror sounds) and practical technique (equalized hands)
+- **Confusion**: Once voices move independently, mirror fingering continues
+  **Clarification**: True reflective keyboard writing maintains strict mirroring; independent voice movement breaks the fingering symmetry
 
 # Source Reference
 
-Chapter 8: Compound and Mirror Harmony, pages 178-179
+Chapter 8: Compound and Mirror Harmony, pages 178-179. Ex. 8-28.
+
+# Verification Notes
+
+- Core Definition: Direct quotation from pp. 178-179
+- Confidence: HIGH — explicit definition with specific keyboard mechanics
+- Re-extracted from v2 card; preserved: D/G# pivots, twelve-pivot flexibility, identical fingering principle
