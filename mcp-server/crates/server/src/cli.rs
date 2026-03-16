@@ -6,6 +6,8 @@
 use std::sync::Arc;
 
 use clap::{Parser, Subcommand};
+use fabryk::core::ConfigManager;
+use fabryk_cli::ConfigAction;
 
 use crate::config::Config;
 use crate::error::Result;
@@ -75,6 +77,13 @@ pub enum Commands {
     /// Vector index management
     #[cfg(feature = "vector")]
     Vectordb(VectordbCommands),
+
+    /// Manage server configuration; as a command by itself, returns the full
+    /// path to the config file
+    Config {
+        #[command(subcommand)]
+        action: Option<ConfigAction>,
+    },
 
     /// Source management (scan, validate, aliases)
     Sources(SourcesCommands),
@@ -184,8 +193,35 @@ pub async fn handle_command(cli: Cli) -> Result<()> {
         #[cfg(feature = "vector")]
         Commands::Vectordb(vector_cmds) => handle_vectordb_command(vector_cmds, log_level).await,
 
+        Commands::Config { action } => handle_config_command(action),
+
         Commands::Sources(sources_cmds) => {
             crate::sources::cli::handle_sources_command(sources_cmds, log_level).await
+        }
+    }
+}
+
+/// Handle the `config` command and its subcommands.
+///
+/// Delegates to generic `fabryk_cli::config_handlers` functions
+/// parameterized over the server's `Config` type.
+fn handle_config_command(action: Option<ConfigAction>) -> Result<()> {
+    match action {
+        None | Some(ConfigAction::Path) => {
+            fabryk_cli::config_handlers::cmd_config_path::<Config>(None)
+        }
+        Some(ConfigAction::Get { key }) => {
+            fabryk_cli::config_handlers::cmd_config_get::<Config>(None, &key)
+        }
+        Some(ConfigAction::Set { key, value }) => {
+            fabryk_cli::config_handlers::cmd_config_set::<Config>(None, &key, &value)
+        }
+        Some(ConfigAction::Init { file, force }) => {
+            fabryk_cli::config_handlers::cmd_config_init::<Config>(file.as_deref(), force)
+        }
+        Some(ConfigAction::Export { docker_env }) => {
+            let config = <Config as ConfigManager>::load(None)?;
+            fabryk_cli::config_handlers::cmd_config_export(&config, docker_env)
         }
     }
 }
