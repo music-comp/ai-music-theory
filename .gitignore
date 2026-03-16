@@ -9,6 +9,7 @@
 /mcp-server/.fastembed_cache/
 /.tantivy-index/
 /.tantivy-index-test/
+/.cache/
 /data
 /assets/images/logo/drafts/
 /sources-md/neo-riemannian-handbook/
