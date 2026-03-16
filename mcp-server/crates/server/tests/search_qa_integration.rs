@@ -128,6 +128,9 @@ async fn search_default(
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -156,6 +159,9 @@ async fn search_with_mode(
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -540,6 +546,9 @@ async fn test_empty_query_matches_all() {
         source: None,
         query_mode: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let result = search_concepts(&state, params).await;
@@ -569,6 +578,9 @@ async fn test_wildcard_query_matches_all() {
         source: None,
         query_mode: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let result = search_concepts(&state, params).await;
@@ -603,6 +615,9 @@ async fn test_whitespace_only_query() {
         source: None,
         query_mode: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let result = search_concepts(&state, params).await;
@@ -927,6 +942,9 @@ async fn test_backend_is_tantivy() {
         source: None,
         query_mode: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)

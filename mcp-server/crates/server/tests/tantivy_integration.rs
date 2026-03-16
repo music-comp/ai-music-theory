@@ -175,6 +175,9 @@ async fn test_search_returns_relevant_results() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -209,6 +212,9 @@ async fn test_search_ranking_by_relevance() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -248,6 +254,9 @@ async fn test_fuzzy_search_finds_typos() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -288,6 +297,9 @@ async fn test_backend_switching_simple_to_tantivy() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let simple_response = search_concepts(&simple_state, params.clone())
@@ -347,6 +359,9 @@ async fn test_snippet_generation_includes_context() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -381,6 +396,9 @@ async fn test_empty_query_matches_all() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let result = search_concepts(&state, params).await;
@@ -412,6 +430,9 @@ async fn test_search_with_limit() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -469,6 +490,9 @@ async fn test_index_rebuild_clears_old_data() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -495,6 +519,9 @@ async fn test_search_tool_integration() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -525,6 +552,9 @@ async fn test_category_filtering() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
     let _response_all = search_concepts(&state, params_all)
         .await
@@ -538,6 +568,9 @@ async fn test_category_filtering() {
         category: Some("harmony".to_string()),
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
     let response_harmony = search_concepts(&state, params_harmony)
         .await
@@ -559,6 +592,9 @@ async fn test_category_filtering() {
         category: Some("counterpoint".to_string()),
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
     let response_counterpoint = search_concepts(&state, params_counterpoint)
         .await
@@ -580,6 +616,9 @@ async fn test_category_filtering() {
         category: Some("nonexistent".to_string()),
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
     let response_nonexistent = search_concepts(&state, params_nonexistent)
         .await
@@ -629,6 +668,9 @@ async fn test_phrase_search_order_sensitivity() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
     let response_exact = search_concepts(&state, params_exact)
         .await
@@ -655,6 +697,9 @@ async fn test_phrase_search_order_sensitivity() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
     let response_reversed = search_concepts(&state, params_reversed)
         .await
@@ -680,6 +725,9 @@ async fn test_phrase_search_order_sensitivity() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
     let response_no_quotes = search_concepts(&state, params_no_quotes)
         .await

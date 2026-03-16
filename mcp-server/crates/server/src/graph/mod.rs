@@ -179,6 +179,7 @@ pub fn to_fabryk_relationship(name: &str) -> fabryk::graph::Relationship {
         "extends" => fabryk::graph::Relationship::Extends,
         "introduces" => fabryk::graph::Relationship::Introduces,
         "covers" => fabryk::graph::Relationship::Covers,
+        "contrastswith" | "contrasts_with" => fabryk::graph::Relationship::ContrastsWith,
         "sameas" | "same_as" => fabryk::graph::Relationship::Custom("same_as".to_string()),
         "cites" => fabryk::graph::Relationship::Custom("cites".to_string()),
         other => fabryk::graph::Relationship::Custom(other.to_string()),

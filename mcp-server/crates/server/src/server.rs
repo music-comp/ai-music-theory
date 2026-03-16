@@ -78,6 +78,12 @@ struct ListConceptsArgs {
     category: Option<String>,
     #[serde(default)]
     limit: Option<usize>,
+    #[serde(default)]
+    tier: Option<String>,
+    #[serde(default)]
+    subcategory: Option<String>,
+    #[serde(default)]
+    source: Option<String>,
 }
 
 #[derive(Deserialize)]
@@ -126,6 +132,12 @@ struct SearchConceptsArgs {
     source: Option<String>,
     #[serde(default)]
     content_types: Option<Vec<String>>,
+    #[serde(default)]
+    tier: Option<String>,
+    #[serde(default)]
+    subcategory: Option<String>,
+    #[serde(default)]
+    min_confidence: Option<String>,
 }
 
 fn default_limit() -> usize {
@@ -147,6 +159,22 @@ struct SemanticSearchArgs {
 
 fn default_hybrid_mode() -> tools::semantic::SearchMode {
     tools::semantic::SearchMode::Hybrid
+}
+
+#[derive(Deserialize)]
+struct SearchByQuestionArgs {
+    question: String,
+    #[serde(default = "default_limit")]
+    limit: usize,
+}
+
+#[derive(Deserialize)]
+struct GetLearningPathArgs {
+    target_id: String,
+    #[serde(default)]
+    tier: Option<String>,
+    #[serde(default)]
+    min_confidence: Option<String>,
 }
 
 #[derive(Deserialize)]
@@ -174,6 +202,10 @@ struct GetRelatedConceptsArgs {
     direction: String,
     #[serde(default = "default_depth_1")]
     depth: u32,
+    #[serde(default)]
+    tier: Option<String>,
+    #[serde(default)]
+    min_confidence: Option<String>,
 }
 
 fn default_depth_1() -> u32 {
@@ -197,6 +229,10 @@ struct GetPrerequisitesArgs {
     concept_id: String,
     #[serde(default = "default_depth_3")]
     depth: u32,
+    #[serde(default)]
+    tier: Option<String>,
+    #[serde(default)]
+    min_confidence: Option<String>,
 }
 
 fn default_depth_3() -> u32 {
@@ -210,6 +246,10 @@ struct GetConceptNeighborhoodArgs {
     radius: u32,
     #[serde(default = "default_max_nodes")]
     max_nodes: u32,
+    #[serde(default)]
+    tier: Option<String>,
+    #[serde(default)]
+    min_confidence: Option<String>,
 }
 
 fn default_radius() -> u32 {
@@ -237,6 +277,10 @@ struct GetCentralConceptsArgs {
     category: Option<String>,
     #[serde(default = "default_limit_10")]
     limit: u32,
+    #[serde(default)]
+    tier: Option<String>,
+    #[serde(default)]
+    min_confidence: Option<String>,
 }
 
 fn default_limit_10() -> u32 {
@@ -289,7 +333,7 @@ impl ToolRegistry for ConceptToolsRegistry {
         vec![
             make_tool(
                 "list_concepts",
-                "List concept cards with optional category filtering",
+                "List concept cards with optional filtering by category, tier, subcategory, or source",
                 json!({
                     "type": "object",
                     "properties": {
@@ -300,6 +344,19 @@ impl ToolRegistry for ConceptToolsRegistry {
                         "limit": {
                             "type": "integer",
                             "description": "Maximum results"
+                        },
+                        "tier": {
+                            "type": "string",
+                            "enum": ["foundational", "intermediate", "advanced"],
+                            "description": "Filter by prerequisite depth tier"
+                        },
+                        "subcategory": {
+                            "type": "string",
+                            "description": "Filter by subcategory"
+                        },
+                        "source": {
+                            "type": "string",
+                            "description": "Filter by source text"
                         }
                     }
                 }),
@@ -340,6 +397,9 @@ impl ToolRegistry for ConceptToolsRegistry {
                 let params = tools::concepts::ListConceptsParams {
                     category: args.category,
                     limit: args.limit,
+                    tier: args.tier,
+                    subcategory: args.subcategory,
+                    source: args.source,
                 };
                 let response = tools::concepts::list_concepts(&config, Some(params))
                     .await
@@ -623,7 +683,7 @@ impl ToolRegistry for SourceToolsRegistry {
 }
 
 // ============================================================================
-// SearchToolsRegistry (2 tools)
+// SearchToolsRegistry (3 tools)
 // ============================================================================
 
 struct SearchToolsRegistry {
@@ -671,6 +731,20 @@ impl ToolRegistry for SearchToolsRegistry {
                             "type": "array",
                             "items": {"type": "string"},
                             "description": "Optional content type filter (concept_card, source_chapter, unified_concept, guide)"
+                        },
+                        "tier": {
+                            "type": "string",
+                            "enum": ["foundational", "intermediate", "advanced"],
+                            "description": "Filter by prerequisite depth tier"
+                        },
+                        "subcategory": {
+                            "type": "string",
+                            "description": "Filter by subcategory"
+                        },
+                        "min_confidence": {
+                            "type": "string",
+                            "enum": ["high", "medium", "low"],
+                            "description": "Minimum extraction confidence (high includes only high; medium includes high+medium; low includes all)"
                         }
                     },
                     "required": ["query"]
@@ -709,6 +783,25 @@ impl ToolRegistry for SearchToolsRegistry {
                     "required": ["query"]
                 }),
             ),
+            make_tool(
+                "search_by_question",
+                "Find concept cards that answer a specific question. Matches against competency questions declared in card metadata.",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "question": {
+                            "type": "string",
+                            "description": "The question to search for"
+                        },
+                        "limit": {
+                            "type": "integer",
+                            "description": "Maximum results (default: 10)",
+                            "default": 10
+                        }
+                    },
+                    "required": ["question"]
+                }),
+            ),
         ]
     }
 
@@ -731,6 +824,9 @@ impl ToolRegistry for SearchToolsRegistry {
                     category: args.category,
                     source: args.source,
                     content_types: args.content_types,
+                    tier: args.tier,
+                    subcategory: args.subcategory,
+                    min_confidence: args.min_confidence,
                 };
                 let response = tools::search::search_concepts(&state, search_params)
                     .await
@@ -762,12 +858,34 @@ impl ToolRegistry for SearchToolsRegistry {
             }));
         }
 
+        if name == "search_by_question" {
+            let config = state.config.clone();
+            return Some(Box::pin(async move {
+                let args: SearchByQuestionArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let params = tools::questions::SearchByQuestionParams {
+                    question: args.question,
+                    limit: args.limit,
+                };
+                let response = tools::questions::search_by_question(&config, params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error searching by question"))?;
+                serialize_response(&response)
+            }));
+        }
+
         None
     }
 }
 
 // ============================================================================
-// GraphToolsRegistry (15 tools)
+// GraphToolsRegistry (16 tools)
 // ============================================================================
 
 struct GraphToolsRegistry {
@@ -855,6 +973,16 @@ impl ToolRegistry for GraphToolsRegistry {
                             "type": "integer",
                             "description": "Depth to traverse (default: 1, max: 3)",
                             "default": 1
+                        },
+                        "tier": {
+                            "type": "string",
+                            "enum": ["foundational", "intermediate", "advanced"],
+                            "description": "Filter results by prerequisite depth tier"
+                        },
+                        "min_confidence": {
+                            "type": "string",
+                            "enum": ["high", "medium", "low"],
+                            "description": "Minimum extraction confidence threshold"
                         }
                     },
                     "required": ["concept_id"]
@@ -897,6 +1025,16 @@ impl ToolRegistry for GraphToolsRegistry {
                             "type": "integer",
                             "description": "Depth to traverse (default: 3, max: 5)",
                             "default": 3
+                        },
+                        "tier": {
+                            "type": "string",
+                            "enum": ["foundational", "intermediate", "advanced"],
+                            "description": "Filter results by prerequisite depth tier"
+                        },
+                        "min_confidence": {
+                            "type": "string",
+                            "enum": ["high", "medium", "low"],
+                            "description": "Minimum extraction confidence threshold"
                         }
                     },
                     "required": ["concept_id"]
@@ -921,6 +1059,16 @@ impl ToolRegistry for GraphToolsRegistry {
                             "type": "integer",
                             "description": "Maximum nodes to return (default: 30, max: 50)",
                             "default": 30
+                        },
+                        "tier": {
+                            "type": "string",
+                            "enum": ["foundational", "intermediate", "advanced"],
+                            "description": "Filter results by prerequisite depth tier"
+                        },
+                        "min_confidence": {
+                            "type": "string",
+                            "enum": ["high", "medium", "low"],
+                            "description": "Minimum extraction confidence threshold"
                         }
                     },
                     "required": ["concept_id"]
@@ -959,6 +1107,16 @@ impl ToolRegistry for GraphToolsRegistry {
                             "type": "integer",
                             "description": "Limit number of results (default: 10, max: 25)",
                             "default": 10
+                        },
+                        "tier": {
+                            "type": "string",
+                            "enum": ["foundational", "intermediate", "advanced"],
+                            "description": "Filter results by prerequisite depth tier"
+                        },
+                        "min_confidence": {
+                            "type": "string",
+                            "enum": ["high", "medium", "low"],
+                            "description": "Minimum extraction confidence threshold"
                         }
                     }
                 }),
@@ -1026,6 +1184,30 @@ impl ToolRegistry for GraphToolsRegistry {
                         }
                     },
                     "required": ["source_id"]
+                }),
+            ),
+            make_tool(
+                "get_learning_path",
+                "Get topologically sorted learning path of prerequisites for a target concept, with tier annotations",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "target_id": {
+                            "type": "string",
+                            "description": "Target concept identifier to learn"
+                        },
+                        "tier": {
+                            "type": "string",
+                            "enum": ["foundational", "intermediate", "advanced"],
+                            "description": "Filter steps by prerequisite depth tier"
+                        },
+                        "min_confidence": {
+                            "type": "string",
+                            "enum": ["high", "medium", "low"],
+                            "description": "Minimum extraction confidence threshold"
+                        }
+                    },
+                    "required": ["target_id"]
                 }),
             ),
         ]
@@ -1111,6 +1293,8 @@ impl ToolRegistry for GraphToolsRegistry {
                     relationship_types: args.relationship_types,
                     direction: args.direction,
                     depth: args.depth,
+                    tier: args.tier,
+                    min_confidence: args.min_confidence,
                 };
                 let response = tools::get_related_concepts(&state, tool_params)
                     .await
@@ -1152,6 +1336,8 @@ impl ToolRegistry for GraphToolsRegistry {
                 let tool_params = tools::graph_query::GetPrerequisitesParams {
                     concept_id: args.concept_id,
                     depth: args.depth,
+                    tier: args.tier,
+                    min_confidence: args.min_confidence,
                 };
                 let response = tools::get_prerequisites(&state, tool_params)
                     .await
@@ -1174,6 +1360,8 @@ impl ToolRegistry for GraphToolsRegistry {
                     concept_id: args.concept_id,
                     radius: args.radius,
                     max_nodes: args.max_nodes,
+                    tier: args.tier,
+                    min_confidence: args.min_confidence,
                 };
                 let response = tools::get_concept_neighborhood(&state, tool_params)
                     .await
@@ -1214,6 +1402,8 @@ impl ToolRegistry for GraphToolsRegistry {
                 let tool_params = tools::graph_query::GetCentralConceptsParams {
                     category: args.category,
                     limit: args.limit,
+                    tier: args.tier,
+                    min_confidence: args.min_confidence,
                 };
                 let response = tools::get_central_concepts(&state, tool_params)
                     .await
@@ -1296,6 +1486,27 @@ impl ToolRegistry for GraphToolsRegistry {
                 let response = tools::get_source_coverage(&state, tool_params)
                     .await
                     .map_err(|e| to_mcp_error(e, "Error getting source coverage"))?;
+                serialize_response(&response)
+            }));
+        }
+
+        if name == "get_learning_path" {
+            return Some(Box::pin(async move {
+                let args: GetLearningPathArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
+                let tool_params = tools::graph_query::GetLearningPathParams {
+                    target_id: args.target_id,
+                    tier: args.tier,
+                    min_confidence: args.min_confidence,
+                };
+                let response = tools::get_learning_path(&state, tool_params)
+                    .await
+                    .map_err(|e| to_mcp_error(e, "Error getting learning path"))?;
                 serialize_response(&response)
             }));
         }
@@ -1544,7 +1755,7 @@ mod tests {
         let config = Config::load().unwrap();
         let state = AppState::new(config).await.unwrap();
         let registry = SearchToolsRegistry::new(state);
-        assert_eq!(registry.tools().len(), 2);
+        assert_eq!(registry.tools().len(), 3);
     }
 
     #[tokio::test]
@@ -1552,7 +1763,7 @@ mod tests {
         let config = Config::load().unwrap();
         let state = AppState::new(config).await.unwrap();
         let registry = GraphToolsRegistry::new(state);
-        assert_eq!(registry.tools().len(), 15);
+        assert_eq!(registry.tools().len(), 16);
     }
 
     #[tokio::test]
@@ -1587,8 +1798,8 @@ mod tests {
         let state = AppState::new(config).await.unwrap();
         let server = build_server(state);
 
-        // 3 concept + 2 guide + 5 source + 2 search + 15 graph + 1 health = 28
-        assert_eq!(server.registry().tool_count(), 28);
+        // 3 concept + 2 guide + 5 source + 3 search + 16 graph + 1 health = 30
+        assert_eq!(server.registry().tool_count(), 30);
     }
 
     #[tokio::test]
@@ -1611,6 +1822,7 @@ mod tests {
             "get_source_pdf_path",
             "search_concepts",
             "semantic_search",
+            "search_by_question",
             "health",
             "graph_status",
             "graph_stats",
@@ -1627,6 +1839,7 @@ mod tests {
             "get_concept_variants",
             "find_bridge_concepts",
             "get_source_coverage",
+            "get_learning_path",
         ];
 
         for tool_name in &expected_tools {
@@ -1730,6 +1943,22 @@ mod tests {
         assert_eq!(args.limit, 10);
         assert!(args.category.is_none());
         assert!(args.source.is_none());
+    }
+
+    #[test]
+    fn test_search_by_question_args_defaults() {
+        let json = r#"{"question":"What is harmony?"}"#;
+        let args: SearchByQuestionArgs = serde_json::from_str(json).unwrap();
+        assert_eq!(args.question, "What is harmony?");
+        assert_eq!(args.limit, 10);
+    }
+
+    #[test]
+    fn test_search_by_question_args_with_limit() {
+        let json = r#"{"question":"What is a chord?","limit":5}"#;
+        let args: SearchByQuestionArgs = serde_json::from_str(json).unwrap();
+        assert_eq!(args.question, "What is a chord?");
+        assert_eq!(args.limit, 5);
     }
 
     // --- Resource registry ---

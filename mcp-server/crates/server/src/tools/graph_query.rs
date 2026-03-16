@@ -43,6 +43,12 @@ pub struct GetRelatedConceptsParams {
     /// Depth to traverse (default: 1, max: 3)
     #[serde(default = "default_depth_1")]
     pub depth: u32,
+    /// Optional tier filter: "foundational", "intermediate", "advanced"
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub tier: Option<String>,
+    /// Optional minimum confidence threshold: "low", "medium", "high"
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub min_confidence: Option<String>,
 }
 
 fn default_direction() -> String {
@@ -77,6 +83,12 @@ pub struct GetPrerequisitesParams {
     /// Depth to traverse (default: 3, max: 5)
     #[serde(default = "default_depth_3")]
     pub depth: u32,
+    /// Optional tier filter: "foundational", "intermediate", "advanced"
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub tier: Option<String>,
+    /// Optional minimum confidence threshold: "low", "medium", "high"
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub min_confidence: Option<String>,
 }
 
 fn default_depth_3() -> u32 {
@@ -94,6 +106,12 @@ pub struct GetConceptNeighborhoodParams {
     /// Maximum nodes to return (default: 30, max: 50)
     #[serde(default = "default_max_nodes")]
     pub max_nodes: u32,
+    /// Optional tier filter: "foundational", "intermediate", "advanced"
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub tier: Option<String>,
+    /// Optional minimum confidence threshold: "low", "medium", "high"
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub min_confidence: Option<String>,
 }
 
 fn default_radius() -> u32 {
@@ -127,6 +145,12 @@ pub struct GetCentralConceptsParams {
     /// Limit number of results (default: 10, max: 25)
     #[serde(default = "default_limit_10")]
     pub limit: u32,
+    /// Optional tier filter: "foundational", "intermediate", "advanced"
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub tier: Option<String>,
+    /// Optional minimum confidence threshold: "low", "medium", "high"
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub min_confidence: Option<String>,
 }
 
 fn default_limit_10() -> u32 {
@@ -168,6 +192,116 @@ fn default_limit_5() -> u32 {
 pub struct GetSourceCoverageParams {
     /// Source ID to query
     pub source_id: String,
+}
+
+/// Parameters for get_learning_path.
+#[derive(Debug, Serialize, Deserialize)]
+pub struct GetLearningPathParams {
+    /// Target concept to learn
+    pub target_id: String,
+    /// Optional tier filter: "foundational", "intermediate", "advanced"
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub tier: Option<String>,
+    /// Optional minimum confidence threshold: "low", "medium", "high"
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub min_confidence: Option<String>,
+}
+
+// ============================================================================
+// Response Types
+// ============================================================================
+
+/// Response for get_learning_path tool.
+#[derive(Debug, Serialize)]
+pub struct LearningPathResponse {
+    /// Target concept ID
+    pub target_id: String,
+    /// Target concept title
+    pub target_title: String,
+    /// Total number of steps in the learning path
+    pub total_steps: usize,
+    /// Ordered learning steps
+    pub steps: Vec<LearningStep>,
+}
+
+/// A single step in a learning path.
+#[derive(Debug, Serialize)]
+pub struct LearningStep {
+    /// 1-based order in the learning path
+    pub order: usize,
+    /// Concept ID
+    pub concept_id: String,
+    /// Concept title
+    pub title: String,
+    /// Concept category
+    pub category: String,
+    /// Prerequisite depth tier: "foundational", "intermediate", "advanced"
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub tier: Option<String>,
+    /// Extraction quality: "high", "medium", "low"
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub extraction_confidence: Option<String>,
+}
+
+// ============================================================================
+// Metadata Filtering Helpers
+// ============================================================================
+
+/// Map a confidence level string to a numeric rank for ordering.
+///
+/// Returns `None` for unrecognised values so callers can decide how to handle
+/// them (typically: exclude the result when a `min_confidence` filter is active).
+#[cfg(feature = "graph")]
+fn confidence_rank(level: &str) -> Option<u32> {
+    match level {
+        "low" => Some(1),
+        "medium" => Some(2),
+        "high" => Some(3),
+        _ => None,
+    }
+}
+
+/// Check whether a graph node passes the optional tier and min_confidence filters.
+///
+/// * If `tier` is `Some`, the node must have `metadata["tier"]` equal to that value.
+/// * If `min_confidence` is `Some`, the node must have `metadata["extraction_confidence"]`
+///   whose rank is >= the threshold rank.  Nodes **without** confidence metadata are
+///   excluded when a `min_confidence` filter is set.
+#[cfg(feature = "graph")]
+fn node_passes_filters(
+    node: &fabryk::graph::Node,
+    tier: &Option<String>,
+    min_confidence: &Option<String>,
+) -> bool {
+    // Tier filter
+    if let Some(ref t) = tier {
+        let node_tier = node.metadata.get("tier").and_then(|v| v.as_str());
+        match node_tier {
+            Some(nt) if nt == t.as_str() => {}
+            _ => return false,
+        }
+    }
+
+    // Confidence filter
+    if let Some(ref mc) = min_confidence {
+        let threshold = match confidence_rank(mc) {
+            Some(r) => r,
+            None => return false, // unrecognised threshold value — exclude everything
+        };
+        let node_confidence = node
+            .metadata
+            .get("extraction_confidence")
+            .and_then(|v| v.as_str());
+        match node_confidence {
+            Some(nc) => match confidence_rank(nc) {
+                Some(rank) if rank >= threshold => {}
+                _ => return false,
+            },
+            None => return false, // no confidence metadata — exclude
+        }
+    }
+
+    true
 }
 
 // ============================================================================
@@ -298,7 +432,9 @@ pub async fn get_related_concepts(
 
             // Extract node details
             let neighbor_node = &loaded.data.graph[neighbor_idx];
-            if is_concept_node(neighbor_node) {
+            if is_concept_node(neighbor_node)
+                && node_passes_filters(neighbor_node, &params.tier, &params.min_confidence)
+            {
                 related.push(RelatedConcept {
                     id: neighbor_node.id.clone(),
                     title: node_title(neighbor_node).to_string(),
@@ -457,7 +593,9 @@ pub async fn get_prerequisites(
     let mut learning_order = Vec::new();
 
     for (i, node) in prereq_result.ordered.iter().enumerate() {
-        if is_concept_node(node) {
+        if is_concept_node(node)
+            && node_passes_filters(node, &params.tier, &params.min_confidence)
+        {
             learning_order.push(node.id.clone());
             prerequisites.push(crate::graph::query::PrerequisiteConcept {
                 id: node.id.clone(),
@@ -556,6 +694,7 @@ pub async fn get_concept_neighborhood(
     for node in result
         .nodes
         .iter()
+        .filter(|n| node_passes_filters(n, &params.tier, &params.min_confidence))
         .take((params.max_nodes as usize).saturating_sub(1))
     {
         node_ids_in_neighborhood.insert(node.id.clone());
@@ -727,7 +866,7 @@ pub async fn get_central_concepts(
     // Use fabryk calculate_centrality algorithm
     let centrality_scores = crate::graph::calculate_centrality(&loaded.data);
 
-    // Build response: filter by category, filter concept nodes only, limit results
+    // Build response: filter by category, tier, confidence, concept nodes only, limit results
     let mut concepts = Vec::new();
     for score in centrality_scores.iter() {
         if concepts.len() >= params.limit as usize {
@@ -742,6 +881,10 @@ pub async fn get_central_concepts(
                 if node_category(node) != cat_filter.as_str() {
                     continue;
                 }
+            }
+            // Apply tier and confidence filters
+            if !node_passes_filters(node, &params.tier, &params.min_confidence) {
+                continue;
             }
             // Calculate raw connection count from centrality score
             let n = loaded.data.node_count() as f32;
@@ -1080,6 +1223,110 @@ pub async fn get_source_coverage(
 }
 
 // ============================================================================
+// get_learning_path
+// ============================================================================
+
+/// Get a topologically sorted learning path to a target concept.
+///
+/// Returns the prerequisite chain with tier annotations, followed by the
+/// target concept itself as the final step. This builds on `prerequisites_sorted`
+/// but provides a learning-focused response format.
+///
+/// # Arguments
+///
+/// * `state` - Application state
+/// * `params` - Query parameters
+///
+/// # Returns
+///
+/// Returns `LearningPathResponse` with ordered learning steps.
+///
+/// # Errors
+///
+/// Returns error if graph is not loaded or the target node is not found.
+#[cfg(feature = "graph")]
+pub async fn get_learning_path(
+    state: &AppState,
+    params: GetLearningPathParams,
+) -> Result<LearningPathResponse> {
+    // Get loaded graph
+    let guard = state.require_graph()?;
+    let loaded = guard.as_ref().unwrap();
+
+    // Verify target node exists and get its details
+    let target_node = loaded.data.get_node(&params.target_id).ok_or_else(|| {
+        crate::error::Error::not_found_msg(format!("Node not found: {}", params.target_id))
+    })?;
+    let target_title = node_title(target_node).to_string();
+
+    // Use fabryk prerequisites_sorted algorithm
+    let prereq_result = prerequisites_sorted(&loaded.data, &params.target_id)
+        .map_err(|e| crate::error::Error::operation(format!("Prerequisites failed: {}", e)))?;
+
+    // Build learning steps from ordered prerequisites
+    let mut steps = Vec::new();
+    let mut order = 1;
+
+    for node in &prereq_result.ordered {
+        if is_concept_node(node) && node_passes_filters(node, &params.tier, &params.min_confidence)
+        {
+            let tier = node
+                .metadata
+                .get("tier")
+                .and_then(|v| v.as_str())
+                .map(String::from);
+            let extraction_confidence = node
+                .metadata
+                .get("extraction_confidence")
+                .and_then(|v| v.as_str())
+                .map(String::from);
+
+            steps.push(LearningStep {
+                order,
+                concept_id: node.id.clone(),
+                title: node_title(node).to_string(),
+                category: node_category(node).to_string(),
+                tier,
+                extraction_confidence,
+            });
+            order += 1;
+        }
+    }
+
+    // Add the target concept itself as the final step (if it passes filters)
+    if node_passes_filters(target_node, &params.tier, &params.min_confidence) {
+        let tier = target_node
+            .metadata
+            .get("tier")
+            .and_then(|v| v.as_str())
+            .map(String::from);
+        let extraction_confidence = target_node
+            .metadata
+            .get("extraction_confidence")
+            .and_then(|v| v.as_str())
+            .map(String::from);
+
+        steps.push(LearningStep {
+            order,
+            concept_id: params.target_id.clone(),
+            title: target_title.clone(),
+            category: node_category(target_node).to_string(),
+            tier,
+            extraction_confidence,
+        });
+    }
+
+    let total_steps = steps.len();
+
+    Ok(LearningPathResponse {
+        target_id: params.target_id,
+        target_title,
+        total_steps,
+        steps,
+    })
+}
+
+// ============================================================================
 // Helper Functions
 // ============================================================================
 
@@ -1176,6 +1423,16 @@ pub async fn find_bridge_concepts(
 pub async fn get_source_coverage(
     _state: &AppState,
     _params: GetSourceCoverageParams,
+) -> Result<String> {
+    Err(crate::error::Error::config(
+        "Graph feature not enabled. Rebuild with --features graph".to_string(),
+    ))
+}
+
+#[cfg(not(feature = "graph"))]
+pub async fn get_learning_path(
+    _state: &AppState,
+    _params: GetLearningPathParams,
 ) -> Result<String> {
     Err(crate::error::Error::config(
         "Graph feature not enabled. Rebuild with --features graph".to_string(),
@@ -1358,6 +1615,8 @@ mod tests {
                 relationship_types: None,
                 direction: "both".to_string(),
                 depth: 1,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_related_concepts(&state, params).await.unwrap();
@@ -1375,6 +1634,8 @@ mod tests {
                 relationship_types: Some("prerequisite".to_string()),
                 direction: "incoming".to_string(),
                 depth: 1,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_related_concepts(&state, params).await.unwrap();
@@ -1418,6 +1679,8 @@ mod tests {
             let params = GetPrerequisitesParams {
                 concept_id: "concept-a".to_string(),
                 depth: 3,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_prerequisites(&state, params).await.unwrap();
@@ -1435,6 +1698,8 @@ mod tests {
                 concept_id: "concept-b".to_string(),
                 radius: 2, // Larger radius to include more nodes
                 max_nodes: 30,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_concept_neighborhood(&state, params).await.unwrap();
@@ -1464,6 +1729,8 @@ mod tests {
             let params = GetCentralConceptsParams {
                 category: None,
                 limit: 10,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_central_concepts(&state, params).await.unwrap();
@@ -1480,6 +1747,8 @@ mod tests {
             let params = GetCentralConceptsParams {
                 category: Some("harmony".to_string()),
                 limit: 10,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_central_concepts(&state, params).await.unwrap();
@@ -1551,6 +1820,8 @@ mod tests {
                 relationship_types: None,
                 direction: "both".to_string(),
                 depth: 1,
+                tier: None,
+                min_confidence: None,
             };
 
             let result = get_related_concepts(&state, params).await;
@@ -1576,6 +1847,8 @@ mod tests {
             let params = GetPrerequisitesParams {
                 concept_id: "nonexistent".to_string(),
                 depth: 3,
+                tier: None,
+                min_confidence: None,
             };
 
             let result = get_prerequisites(&state, params).await;
@@ -1594,6 +1867,8 @@ mod tests {
                 relationship_types: None,
                 direction: "both".to_string(),
                 depth: 4, // max is 3
+                tier: None,
+                min_confidence: None,
             };
 
             let result = get_related_concepts(&state, params).await;
@@ -1623,6 +1898,8 @@ mod tests {
             let params = GetPrerequisitesParams {
                 concept_id: "concept-a".to_string(),
                 depth: 6, // max is 5
+                tier: None,
+                min_confidence: None,
             };
 
             let result = get_prerequisites(&state, params).await;
@@ -1638,6 +1915,8 @@ mod tests {
                 concept_id: "concept-a".to_string(),
                 radius: 4, // max is 3
                 max_nodes: 30,
+                tier: None,
+                min_confidence: None,
             };
 
             let result = get_concept_neighborhood(&state, params).await;
@@ -1653,6 +1932,8 @@ mod tests {
                 concept_id: "concept-a".to_string(),
                 radius: 2,
                 max_nodes: 51, // max is 50
+                tier: None,
+                min_confidence: None,
             };
 
             let result = get_concept_neighborhood(&state, params).await;
@@ -1681,6 +1962,8 @@ mod tests {
             let params = GetCentralConceptsParams {
                 category: None,
                 limit: 26, // max is 25
+                tier: None,
+                min_confidence: None,
             };
 
             let result = get_central_concepts(&state, params).await;
@@ -1728,6 +2011,8 @@ mod tests {
                 concept_id: "nonexistent".to_string(),
                 radius: 2,
                 max_nodes: 30,
+                tier: None,
+                min_confidence: None,
             };
 
             let result = get_concept_neighborhood(&state, params).await;
@@ -1875,6 +2160,8 @@ mod tests {
                 relationship_types: None,
                 direction: "outgoing".to_string(),
                 depth: 1,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_related_concepts(&state, params).await.unwrap();
@@ -1892,6 +2179,8 @@ mod tests {
                 relationship_types: None,
                 direction: "incoming".to_string(),
                 depth: 1,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_related_concepts(&state, params).await.unwrap();
@@ -1913,6 +2202,8 @@ mod tests {
                 relationship_types: None,
                 direction: "both".to_string(),
                 depth: 2,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_related_concepts(&state, params).await.unwrap();
@@ -1929,6 +2220,8 @@ mod tests {
                 relationship_types: None,
                 direction: "both".to_string(),
                 depth: 3,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_related_concepts(&state, params).await.unwrap();
@@ -1947,6 +2240,8 @@ mod tests {
                 relationship_types: Some("prerequisite,relates_to".to_string()),
                 direction: "both".to_string(),
                 depth: 1,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_related_concepts(&state, params).await.unwrap();
@@ -1968,6 +2263,8 @@ mod tests {
                 relationship_types: Some("covers".to_string()),
                 direction: "both".to_string(),
                 depth: 1,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_related_concepts(&state, params).await.unwrap();
@@ -2030,6 +2327,8 @@ mod tests {
             let params = GetPrerequisitesParams {
                 concept_id: "concept-c".to_string(),
                 depth: 3,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_prerequisites(&state, params).await.unwrap();
@@ -2046,6 +2345,8 @@ mod tests {
             let params = GetPrerequisitesParams {
                 concept_id: "concept-a".to_string(),
                 depth: 3,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_prerequisites(&state, params).await.unwrap();
@@ -2070,6 +2371,8 @@ mod tests {
                 concept_id: "concept-a".to_string(),
                 radius: 2,
                 max_nodes: 2, // Very small limit
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_concept_neighborhood(&state, params).await.unwrap();
@@ -2086,6 +2389,8 @@ mod tests {
                 concept_id: "concept-b".to_string(),
                 radius: 1,
                 max_nodes: 30,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_concept_neighborhood(&state, params).await.unwrap();
@@ -2104,6 +2409,8 @@ mod tests {
                 concept_id: "concept-a".to_string(),
                 radius: 2,
                 max_nodes: 30,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_concept_neighborhood(&state, params).await.unwrap();
@@ -2130,6 +2437,8 @@ mod tests {
                 concept_id: "concept-b".to_string(),
                 radius: 2,
                 max_nodes: 30,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_concept_neighborhood(&state, params).await.unwrap();
@@ -2211,6 +2520,8 @@ mod tests {
             let params = GetCentralConceptsParams {
                 category: Some("nonexistent-category".to_string()),
                 limit: 10,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_central_concepts(&state, params).await.unwrap();
@@ -2224,6 +2535,8 @@ mod tests {
             let params = GetCentralConceptsParams {
                 category: None,
                 limit: 1,
+                tier: None,
+                min_confidence: None,
             };
 
             let response = get_central_concepts(&state, params).await.unwrap();
@@ -2601,6 +2914,283 @@ mod tests {
                 }
             }
         }
+
+        // ---------------------------------------------------------------
+        // Tier and confidence metadata filtering
+        // ---------------------------------------------------------------
+
+        /// Helper to create AppState with metadata-annotated nodes.
+        async fn create_metadata_test_state() -> Arc<AppState> {
+            let mut data = fabryk::graph::GraphData::new();
+
+            // Source node
+            data.add_node(
+                Node::new("source-1", "Source One")
+                    .with_node_type(NodeType::Custom("source".to_string()))
+                    .with_metadata("author", serde_json::json!("Author")),
+            );
+
+            // Concept nodes with tier and confidence metadata
+            data.add_node(
+                Node::new("c-found-high", "Foundational High")
+                    .with_category("harmony")
+                    .with_source("source-1")
+                    .with_metadata("tier", serde_json::json!("foundational"))
+                    .with_metadata("extraction_confidence", serde_json::json!("high")),
+            );
+            data.add_node(
+                Node::new("c-found-med", "Foundational Medium")
+                    .with_category("harmony")
+                    .with_source("source-1")
+                    .with_metadata("tier", serde_json::json!("foundational"))
+                    .with_metadata("extraction_confidence", serde_json::json!("medium")),
+            );
+            data.add_node(
+                Node::new("c-inter-high", "Intermediate High")
+                    .with_category("harmony")
+                    .with_source("source-1")
+                    .with_metadata("tier", serde_json::json!("intermediate"))
+                    .with_metadata("extraction_confidence", serde_json::json!("high")),
+            );
+            data.add_node(
+                Node::new("c-adv-low", "Advanced Low")
+                    .with_category("harmony")
+                    .with_source("source-1")
+                    .with_metadata("tier", serde_json::json!("advanced"))
+                    .with_metadata("extraction_confidence", serde_json::json!("low")),
+            );
+            // Node with no tier/confidence metadata
+            data.add_node(
+                Node::new("c-no-meta", "No Metadata")
+                    .with_category("harmony")
+                    .with_source("source-1"),
+            );
+
+            // Hub node that connects to all others
+            data.add_node(
+                Node::new("c-hub", "Hub Concept")
+                    .with_category("fundamentals")
+                    .with_source("source-1")
+                    .with_metadata("tier", serde_json::json!("foundational"))
+                    .with_metadata("extraction_confidence", serde_json::json!("high")),
+            );
+
+            // Edges: hub relates to all concept nodes
+            data.add_edge(Edge::new("c-hub", "c-found-high", Relationship::RelatesTo))
+                .expect("edge");
+            data.add_edge(Edge::new("c-hub", "c-found-med", Relationship::RelatesTo))
+                .expect("edge");
+            data.add_edge(Edge::new("c-hub", "c-inter-high", Relationship::RelatesTo))
+                .expect("edge");
+            data.add_edge(Edge::new("c-hub", "c-adv-low", Relationship::RelatesTo))
+                .expect("edge");
+            data.add_edge(Edge::new("c-hub", "c-no-meta", Relationship::RelatesTo))
+                .expect("edge");
+            // Prerequisite chain: c-found-high -> c-inter-high -> c-adv-low
+            data.add_edge(Edge::new(
+                "c-found-high",
+                "c-inter-high",
+                Relationship::Prerequisite,
+            ))
+            .expect("edge");
+            data.add_edge(Edge::new(
+                "c-inter-high",
+                "c-adv-low",
+                Relationship::Prerequisite,
+            ))
+            .expect("edge");
+            // Source introduces hub
+            data.add_edge(Edge::new("source-1", "c-hub", Relationship::Introduces))
+                .expect("edge");
+
+            let stats = GraphStats {
+                node_count: 7,
+                edge_count: 8,
+                concept_count: 6,
+                source_count: 1,
+            };
+
+            let loaded = LoadedGraph {
+                data,
+                loaded_at: chrono::Utc::now(),
+                stats,
+            };
+
+            let config = Config::load().unwrap();
+            let state = Arc::new(AppState::new(config).await.unwrap());
+            {
+                let mut graph_guard = state.graph_data.write().unwrap();
+                *graph_guard = Some(loaded);
+            }
+            state.graph_service.set_state(ServiceState::Ready);
+
+            state
+        }
+
+        #[tokio::test]
+        async fn test_get_related_concepts_filter_by_tier() {
+            let state = create_metadata_test_state().await;
+            let params = GetRelatedConceptsParams {
+                concept_id: "c-hub".to_string(),
+                relationship_types: None,
+                direction: "both".to_string(),
+                depth: 1,
+                tier: Some("foundational".to_string()),
+                min_confidence: None,
+            };
+
+            let response = get_related_concepts(&state, params).await.unwrap();
+            // Only foundational nodes should appear
+            for r in &response.related {
+                assert!(
+                    r.id == "c-found-high" || r.id == "c-found-med",
+                    "Unexpected node in tier-filtered results: {}",
+                    r.id
+                );
+            }
+            assert!(response.total >= 2);
+        }
+
+        #[tokio::test]
+        async fn test_get_related_concepts_filter_by_min_confidence_high() {
+            let state = create_metadata_test_state().await;
+            let params = GetRelatedConceptsParams {
+                concept_id: "c-hub".to_string(),
+                relationship_types: None,
+                direction: "both".to_string(),
+                depth: 1,
+                tier: None,
+                min_confidence: Some("high".to_string()),
+            };
+
+            let response = get_related_concepts(&state, params).await.unwrap();
+            // Only high-confidence nodes should appear; c-no-meta is excluded
+            for r in &response.related {
+                assert!(
+                    r.id == "c-found-high" || r.id == "c-inter-high",
+                    "Unexpected node in confidence-filtered results: {}",
+                    r.id
+                );
+            }
+        }
+
+        #[tokio::test]
+        async fn test_get_related_concepts_filter_by_min_confidence_medium() {
+            let state = create_metadata_test_state().await;
+            let params = GetRelatedConceptsParams {
+                concept_id: "c-hub".to_string(),
+                relationship_types: None,
+                direction: "both".to_string(),
+                depth: 1,
+                tier: None,
+                min_confidence: Some("medium".to_string()),
+            };
+
+            let response = get_related_concepts(&state, params).await.unwrap();
+            // medium and high confidence nodes should appear; low and no-meta excluded
+            let ids: Vec<&str> = response.related.iter().map(|r| r.id.as_str()).collect();
+            assert!(ids.contains(&"c-found-high"));
+            assert!(ids.contains(&"c-found-med"));
+            assert!(ids.contains(&"c-inter-high"));
+            assert!(!ids.contains(&"c-adv-low"));
+            assert!(!ids.contains(&"c-no-meta"));
+        }
+
+        #[tokio::test]
+        async fn test_get_related_concepts_filter_tier_and_confidence() {
+            let state = create_metadata_test_state().await;
+            let params = GetRelatedConceptsParams {
+                concept_id: "c-hub".to_string(),
+                relationship_types: None,
+                direction: "both".to_string(),
+                depth: 1,
+                tier: Some("foundational".to_string()),
+                min_confidence: Some("high".to_string()),
+            };
+
+            let response = get_related_concepts(&state, params).await.unwrap();
+            // Only foundational + high confidence
+            assert_eq!(response.total, 1);
+            assert_eq!(response.related[0].id, "c-found-high");
+        }
+
+        #[tokio::test]
+        async fn test_get_related_concepts_filter_excludes_no_metadata() {
+            let state = create_metadata_test_state().await;
+            let params = GetRelatedConceptsParams {
+                concept_id: "c-hub".to_string(),
+                relationship_types: None,
+                direction: "both".to_string(),
+                depth: 1,
+                tier: None,
+                min_confidence: Some("low".to_string()),
+            };
+
+            let response = get_related_concepts(&state, params).await.unwrap();
+            let ids: Vec<&str> = response.related.iter().map(|r| r.id.as_str()).collect();
+            // c-no-meta has no confidence metadata and should be excluded
+            assert!(!ids.contains(&"c-no-meta"));
+            // c-adv-low has "low" which is >= threshold "low"
+            assert!(ids.contains(&"c-adv-low"));
+        }
+
+        #[tokio::test]
+        async fn test_get_prerequisites_filter_by_tier() {
+            let state = create_metadata_test_state().await;
+            // c-adv-low has prerequisites: c-inter-high, c-found-high
+            let params = GetPrerequisitesParams {
+                concept_id: "c-adv-low".to_string(),
+                depth: 3,
+                tier: Some("intermediate".to_string()),
+                min_confidence: None,
+            };
+
+            let response = get_prerequisites(&state, params).await.unwrap();
+            // Only intermediate-tier prerequisites
+            for p in &response.prerequisites {
+                assert_eq!(p.id, "c-inter-high");
+            }
+        }
+
+        #[tokio::test]
+        async fn test_get_central_concepts_filter_by_tier() {
+            let state = create_metadata_test_state().await;
+            let params = GetCentralConceptsParams {
+                category: None,
+                limit: 25,
+                tier: Some("foundational".to_string()),
+                min_confidence: None,
+            };
+
+            let response = get_central_concepts(&state, params).await.unwrap();
+            // All returned concepts must be foundational
+            let ids: Vec<&str> = response.concepts.iter().map(|c| c.id.as_str()).collect();
+            for id in &ids {
+                assert!(
+                    *id == "c-found-high" || *id == "c-found-med" || *id == "c-hub",
+                    "Non-foundational concept in filtered results: {}",
+                    id
+                );
+            }
+        }
+
+        #[tokio::test]
+        async fn test_get_central_concepts_filter_by_min_confidence() {
+            let state = create_metadata_test_state().await;
+            let params = GetCentralConceptsParams {
+                category: None,
+                limit: 25,
+                tier: None,
+                min_confidence: Some("high".to_string()),
+            };
+
+            let response = get_central_concepts(&state, params).await.unwrap();
+            let ids: Vec<&str> = response.concepts.iter().map(|c| c.id.as_str()).collect();
+            // Only high-confidence nodes
+            assert!(!ids.contains(&"c-adv-low"));
+            assert!(!ids.contains(&"c-no-meta"));
+            assert!(!ids.contains(&"c-found-med"));
+        }
     }
 
     // -------------------------------------------------------------------
@@ -2678,6 +3268,8 @@ mod tests {
             relationship_types: Some("prerequisite".to_string()),
             direction: "outgoing".to_string(),
             depth: 2,
+            tier: None,
+            min_confidence: None,
         };
         let json = serde_json::to_string(&params).unwrap();
         let deserialized: GetRelatedConceptsParams = serde_json::from_str(&json).unwrap();
@@ -2695,9 +3287,191 @@ mod tests {
             relationship_types: None,
             direction: "both".to_string(),
             depth: 1,
+            tier: None,
+            min_confidence: None,
         };
         let json = serde_json::to_string(&params).unwrap();
         // relationship_types should be skipped when None
         assert!(!json.contains("relationship_types"));
+    }
+
+    // -------------------------------------------------------------------
+    // confidence_rank unit tests
+    // -------------------------------------------------------------------
+
+    #[test]
+    #[cfg(feature = "graph")]
+    fn test_confidence_rank_ordering() {
+        assert_eq!(confidence_rank("low"), Some(1));
+        assert_eq!(confidence_rank("medium"), Some(2));
+        assert_eq!(confidence_rank("high"), Some(3));
+    }
+
+    #[test]
+    #[cfg(feature = "graph")]
+    fn test_confidence_rank_unknown_returns_none() {
+        assert_eq!(confidence_rank("unknown"), None);
+        assert_eq!(confidence_rank(""), None);
+        assert_eq!(confidence_rank("very_high"), None);
+    }
+
+    // -------------------------------------------------------------------
+    // Deserialization with tier and min_confidence fields
+    // -------------------------------------------------------------------
+
+    #[test]
+    fn test_get_related_concepts_params_with_tier_and_confidence() {
+        let json = r#"{"concept_id": "test", "tier": "foundational", "min_confidence": "high"}"#;
+        let params: GetRelatedConceptsParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.tier, Some("foundational".to_string()));
+        assert_eq!(params.min_confidence, Some("high".to_string()));
+        // defaults still apply
+        assert_eq!(params.direction, "both");
+        assert_eq!(params.depth, 1);
+    }
+
+    #[test]
+    fn test_get_prerequisites_params_with_tier_and_confidence() {
+        let json =
+            r#"{"concept_id": "test", "depth": 2, "tier": "intermediate", "min_confidence": "medium"}"#;
+        let params: GetPrerequisitesParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.tier, Some("intermediate".to_string()));
+        assert_eq!(params.min_confidence, Some("medium".to_string()));
+        assert_eq!(params.depth, 2);
+    }
+
+    #[test]
+    fn test_get_concept_neighborhood_params_with_tier_and_confidence() {
+        let json =
+            r#"{"concept_id": "test", "tier": "advanced", "min_confidence": "low"}"#;
+        let params: GetConceptNeighborhoodParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.tier, Some("advanced".to_string()));
+        assert_eq!(params.min_confidence, Some("low".to_string()));
+        assert_eq!(params.radius, 2); // default
+        assert_eq!(params.max_nodes, 30); // default
+    }
+
+    #[test]
+    fn test_get_central_concepts_params_with_tier_and_confidence() {
+        let json = r#"{"tier": "foundational", "min_confidence": "high"}"#;
+        let params: GetCentralConceptsParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.tier, Some("foundational".to_string()));
+        assert_eq!(params.min_confidence, Some("high".to_string()));
+        assert_eq!(params.limit, 10); // default
+        assert!(params.category.is_none());
+    }
+
+    #[test]
+    fn test_params_without_tier_and_confidence_default_to_none() {
+        let json = r#"{"concept_id": "test"}"#;
+        let params: GetRelatedConceptsParams = serde_json::from_str(json).unwrap();
+        assert!(params.tier.is_none());
+        assert!(params.min_confidence.is_none());
+
+        let params: GetPrerequisitesParams = serde_json::from_str(json).unwrap();
+        assert!(params.tier.is_none());
+        assert!(params.min_confidence.is_none());
+
+        let params: GetConceptNeighborhoodParams = serde_json::from_str(json).unwrap();
+        assert!(params.tier.is_none());
+        assert!(params.min_confidence.is_none());
+
+        let json = r#"{}"#;
+        let params: GetCentralConceptsParams = serde_json::from_str(json).unwrap();
+        assert!(params.tier.is_none());
+        assert!(params.min_confidence.is_none());
+    }
+
+    // -------------------------------------------------------------------
+    // GetLearningPathParams and LearningPathResponse tests
+    // -------------------------------------------------------------------
+
+    #[test]
+    fn test_get_learning_path_params_deserialization_minimal() {
+        let json = r#"{"target_id": "seventh-chord"}"#;
+        let params: GetLearningPathParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.target_id, "seventh-chord");
+        assert!(params.tier.is_none());
+        assert!(params.min_confidence.is_none());
+    }
+
+    #[test]
+    fn test_get_learning_path_params_deserialization_with_filters() {
+        let json =
+            r#"{"target_id": "seventh-chord", "tier": "foundational", "min_confidence": "high"}"#;
+        let params: GetLearningPathParams = serde_json::from_str(json).unwrap();
+        assert_eq!(params.target_id, "seventh-chord");
+        assert_eq!(params.tier, Some("foundational".to_string()));
+        assert_eq!(params.min_confidence, Some("high".to_string()));
+    }
+
+    #[test]
+    fn test_get_learning_path_params_serialization_skip_none() {
+        let params = GetLearningPathParams {
+            target_id: "interval".to_string(),
+            tier: None,
+            min_confidence: None,
+        };
+        let json = serde_json::to_string(&params).unwrap();
+        assert!(json.contains("\"target_id\":\"interval\""));
+        assert!(!json.contains("tier"));
+        assert!(!json.contains("min_confidence"));
+    }
+
+    #[test]
+    fn test_learning_path_response_serialization() {
+        let response = LearningPathResponse {
+            target_id: "seventh-chord".to_string(),
+            target_title: "Seventh Chord".to_string(),
+            total_steps: 2,
+            steps: vec![
+                LearningStep {
+                    order: 1,
+                    concept_id: "triad".to_string(),
+                    title: "Triad".to_string(),
+                    category: "harmony".to_string(),
+                    tier: Some("foundational".to_string()),
+                    extraction_confidence: Some("high".to_string()),
+                },
+                LearningStep {
+                    order: 2,
+                    concept_id: "seventh-chord".to_string(),
+                    title: "Seventh Chord".to_string(),
+                    category: "harmony".to_string(),
+                    tier: Some("intermediate".to_string()),
+                    extraction_confidence: None,
+                },
+            ],
+        };
+
+        let json = serde_json::to_string(&response).unwrap();
+        assert!(json.contains("\"target_id\":\"seventh-chord\""));
+        assert!(json.contains("\"total_steps\":2"));
+        assert!(json.contains("\"order\":1"));
+        assert!(json.contains("\"concept_id\":\"triad\""));
+        // tier=None fields should be skipped, but present ones should appear
+        assert!(json.contains("\"tier\":\"foundational\""));
+        // Second step has extraction_confidence=None, should be skipped
+        let parsed: serde_json::Value = serde_json::from_str(&json).unwrap();
+        let step2 = &parsed["steps"][1];
+        assert!(step2.get("extraction_confidence").is_none());
+    }
+
+    #[test]
+    fn test_learning_step_serialization_no_optional_fields() {
+        let step = LearningStep {
+            order: 1,
+            concept_id: "interval".to_string(),
+            title: "Interval".to_string(),
+            category: "fundamentals".to_string(),
+            tier: None,
+            extraction_confidence: None,
+        };
+
+        let json = serde_json::to_string(&step).unwrap();
+        assert!(json.contains("\"order\":1"));
+        assert!(json.contains("\"concept_id\":\"interval\""));
+        assert!(!json.contains("tier"));
+        assert!(!json.contains("extraction_confidence"));
     }
 }

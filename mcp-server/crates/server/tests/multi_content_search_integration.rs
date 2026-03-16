@@ -310,6 +310,9 @@ async fn test_search_without_filter_returns_all_types() {
         category: None,
         source: None,
         content_types: None, // No filter - should return all types
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -353,6 +356,9 @@ async fn test_search_filter_by_content_type() {
         category: None,
         source: None,
         content_types: Some(vec!["concept_card".to_string()]),
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -388,6 +394,9 @@ async fn test_search_filter_by_multiple_content_types() {
         category: None,
         source: None,
         content_types: Some(vec!["concept_card".to_string(), "guide".to_string()]),
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -423,6 +432,9 @@ async fn test_search_with_category_and_content_type_filters() {
         category: Some("harmony".to_string()),
         source: None,
         content_types: Some(vec!["source_chapter".to_string()]),
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)
@@ -601,6 +613,9 @@ async fn test_cross_content_type_relevance_ranking() {
         category: None,
         source: None,
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = search_concepts(&state, params)

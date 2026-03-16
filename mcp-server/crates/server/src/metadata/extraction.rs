@@ -66,6 +66,36 @@ pub struct UniversalMetadata {
     pub author: Option<String>,
     /// Publication or modification date
     pub date: Option<String>,
+
+    // V3 concept card fields
+    /// Machine-readable identifier matching the filename
+    pub slug: Option<String>,
+    /// Finer classification within category
+    pub subcategory: Option<String>,
+    /// Prerequisite depth: foundational, intermediate, advanced
+    pub tier: Option<String>,
+    /// Normalized source directory name
+    pub source_slug: Option<String>,
+    /// Extraction quality: high, medium, low
+    pub extraction_confidence: Option<String>,
+    /// Alternative names, abbreviations
+    pub aliases: Vec<String>,
+    /// Concept slugs that must be understood first
+    pub prerequisites: Vec<String>,
+    /// Concept slugs this builds upon
+    pub extends: Vec<String>,
+    /// Associated concept slugs (non-hierarchical)
+    pub related: Vec<String>,
+    /// Commonly confused concept slugs
+    pub contrasts_with: Vec<String>,
+    /// Competency questions this card answers
+    pub answers_questions: Vec<String>,
+    /// Chapter number (integer)
+    pub chapter_number: Option<i32>,
+    /// PDF page number
+    pub pdf_page: Option<i32>,
+    /// Multi-author field
+    pub authors: Option<String>,
 }
 
 /// Extract metadata from any content type (v0.3.0).
@@ -140,6 +170,20 @@ async fn extract_concept_card_metadata(
         tags: fm.tags,
         author: fm.author,
         date: fm.date,
+        slug: fm.slug,
+        subcategory: fm.subcategory,
+        tier: fm.tier,
+        source_slug: fm.source_slug,
+        extraction_confidence: fm.extraction_confidence,
+        aliases: fm.aliases,
+        prerequisites: fm.prerequisites,
+        extends: fm.extends,
+        related: fm.related,
+        contrasts_with: fm.contrasts_with,
+        answers_questions: fm.answers_questions,
+        chapter_number: fm.chapter_number,
+        pdf_page: fm.pdf_page,
+        authors: fm.authors,
     })
 }
 
@@ -185,6 +229,20 @@ async fn extract_source_chapter_metadata(
         tags: fm.tags,
         author: fm.author,
         date: fm.date,
+        slug: fm.slug,
+        subcategory: fm.subcategory,
+        tier: fm.tier,
+        source_slug: fm.source_slug,
+        extraction_confidence: fm.extraction_confidence,
+        aliases: fm.aliases,
+        prerequisites: fm.prerequisites,
+        extends: fm.extends,
+        related: fm.related,
+        contrasts_with: fm.contrasts_with,
+        answers_questions: fm.answers_questions,
+        chapter_number: fm.chapter_number,
+        pdf_page: fm.pdf_page,
+        authors: fm.authors,
     })
 }
 
@@ -231,6 +289,20 @@ async fn extract_unified_concept_metadata(
         tags: fm.tags,
         author: fm.author,
         date: fm.date,
+        slug: fm.slug,
+        subcategory: fm.subcategory,
+        tier: fm.tier,
+        source_slug: fm.source_slug,
+        extraction_confidence: fm.extraction_confidence,
+        aliases: fm.aliases,
+        prerequisites: fm.prerequisites,
+        extends: fm.extends,
+        related: fm.related,
+        contrasts_with: fm.contrasts_with,
+        answers_questions: fm.answers_questions,
+        chapter_number: fm.chapter_number,
+        pdf_page: fm.pdf_page,
+        authors: fm.authors,
     })
 }
 
@@ -271,6 +343,20 @@ async fn extract_guide_metadata(base_path: &Path, file_path: &Path) -> Result<Un
         tags: fm.tags,
         author: fm.author,
         date: fm.date,
+        slug: fm.slug,
+        subcategory: fm.subcategory,
+        tier: fm.tier,
+        source_slug: fm.source_slug,
+        extraction_confidence: fm.extraction_confidence,
+        aliases: fm.aliases,
+        prerequisites: fm.prerequisites,
+        extends: fm.extends,
+        related: fm.related,
+        contrasts_with: fm.contrasts_with,
+        answers_questions: fm.answers_questions,
+        chapter_number: fm.chapter_number,
+        pdf_page: fm.pdf_page,
+        authors: fm.authors,
     })
 }
 

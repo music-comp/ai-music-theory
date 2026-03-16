@@ -209,6 +209,9 @@ async fn search_keyword(
         category: params.category.clone(),
         source: params.source.clone(),
         content_types: None,
+        tier: None,
+        subcategory: None,
+        min_confidence: None,
     };
 
     let response = crate::tools::search::search_concepts(state, search_params).await?;

@@ -34,6 +34,42 @@ pub struct Frontmatter {
     pub section: Option<String>,
     /// Part number or name (e.g., "1", "V. Chromaticism", "Workbook")
     pub part: Option<String>,
+
+    // V3 concept card fields
+    /// Machine-readable identifier matching the filename (without .md)
+    pub slug: Option<String>,
+    /// Finer classification within category
+    pub subcategory: Option<String>,
+    /// Prerequisite depth: foundational, intermediate, advanced
+    pub tier: Option<String>,
+    /// Normalized source directory name
+    pub source_slug: Option<String>,
+    /// Extraction quality: high, medium, low
+    pub extraction_confidence: Option<String>,
+    /// Alternative names, abbreviations, historical names
+    #[serde(default)]
+    pub aliases: Vec<String>,
+    /// Concept slugs that must be understood first
+    #[serde(default)]
+    pub prerequisites: Vec<String>,
+    /// Concept slugs this builds upon
+    #[serde(default)]
+    pub extends: Vec<String>,
+    /// Associated concept slugs (non-hierarchical)
+    #[serde(default)]
+    pub related: Vec<String>,
+    /// Commonly confused concept slugs
+    #[serde(default)]
+    pub contrasts_with: Vec<String>,
+    /// Competency questions this card answers
+    #[serde(default)]
+    pub answers_questions: Vec<String>,
+    /// Chapter number (integer)
+    pub chapter_number: Option<i32>,
+    /// PDF page number
+    pub pdf_page: Option<i32>,
+    /// Multi-author field (v3 uses "authors" plural)
+    pub authors: Option<String>,
 }
 
 /// Extract YAML frontmatter from markdown content.
@@ -215,6 +251,21 @@ Content here"#;
         assert_eq!(fm.source, None);
         assert_eq!(fm.chapter, None);
         assert_eq!(fm.part, None);
+        // v3 fields
+        assert_eq!(fm.slug, None);
+        assert_eq!(fm.subcategory, None);
+        assert_eq!(fm.tier, None);
+        assert_eq!(fm.source_slug, None);
+        assert_eq!(fm.extraction_confidence, None);
+        assert!(fm.aliases.is_empty());
+        assert!(fm.prerequisites.is_empty());
+        assert!(fm.extends.is_empty());
+        assert!(fm.related.is_empty());
+        assert!(fm.contrasts_with.is_empty());
+        assert!(fm.answers_questions.is_empty());
+        assert_eq!(fm.chapter_number, None);
+        assert_eq!(fm.pdf_page, None);
+        assert_eq!(fm.authors, None);
     }
 
     #[test]
@@ -265,5 +316,136 @@ Body"#;
         assert_eq!(fm.source, None);
         assert_eq!(fm.chapter, None);
         assert_eq!(fm.part, None);
+    }
+
+    #[test]
+    fn test_extract_frontmatter_v3_all_fields() {
+        let content = r#"---
+title: "Acoustic Consonance"
+description: "The phenomenon of two or more tones sounding stable together"
+concept: "Acoustic Consonance"
+category: "acoustics"
+source: "Geometry of Music"
+chapter: "Consonance and Dissonance"
+section: "2.1"
+part: "I"
+slug: "acoustic-consonance"
+subcategory: "consonance-dissonance"
+tier: "foundational"
+source_slug: "geometry-of-music"
+extraction_confidence: "high"
+aliases:
+  - "sensory consonance"
+  - "tonal consonance"
+prerequisites:
+  - "harmonic-series"
+  - "frequency-ratio"
+extends:
+  - "interval-quality"
+related:
+  - "roughness"
+  - "beating"
+contrasts_with:
+  - "musical-consonance"
+  - "acoustic-dissonance"
+answers_questions:
+  - "What makes two tones sound consonant?"
+  - "How does frequency ratio affect consonance?"
+chapter_number: 2
+pdf_page: 45
+authors: "Dmitri Tymoczko"
+tags: ["acoustics", "consonance"]
+---
+# Acoustic Consonance
+
+Content here"#;
+
+        let (fm, body) = extract_frontmatter(content).unwrap();
+        assert!(fm.is_some());
+        let fm = fm.unwrap();
+        // Existing fields
+        assert_eq!(fm.title, Some("Acoustic Consonance".to_string()));
+        assert_eq!(fm.category, Some("acoustics".to_string()));
+        assert_eq!(fm.source, Some("Geometry of Music".to_string()));
+        assert_eq!(fm.chapter, Some("Consonance and Dissonance".to_string()));
+        assert_eq!(fm.section, Some("2.1".to_string()));
+        assert_eq!(fm.part, Some("I".to_string()));
+        // V3 fields
+        assert_eq!(fm.slug, Some("acoustic-consonance".to_string()));
+        assert_eq!(fm.subcategory, Some("consonance-dissonance".to_string()));
+        assert_eq!(fm.tier, Some("foundational".to_string()));
+        assert_eq!(fm.source_slug, Some("geometry-of-music".to_string()));
+        assert_eq!(fm.extraction_confidence, Some("high".to_string()));
+        assert_eq!(fm.aliases, vec!["sensory consonance", "tonal consonance"]);
+        assert_eq!(fm.prerequisites, vec!["harmonic-series", "frequency-ratio"]);
+        assert_eq!(fm.extends, vec!["interval-quality"]);
+        assert_eq!(fm.related, vec!["roughness", "beating"]);
+        assert_eq!(
+            fm.contrasts_with,
+            vec!["musical-consonance", "acoustic-dissonance"]
+        );
+        assert_eq!(
+            fm.answers_questions,
+            vec![
+                "What makes two tones sound consonant?",
+                "How does frequency ratio affect consonance?"
+            ]
+        );
+        assert_eq!(fm.chapter_number, Some(2));
+        assert_eq!(fm.pdf_page, Some(45));
+        assert_eq!(fm.authors, Some("Dmitri Tymoczko".to_string()));
+        assert!(body.contains("# Acoustic Consonance"));
+    }
+
+    #[test]
+    fn test_extract_frontmatter_v2_card_graceful_defaults() {
+        // A v2 card with no v3 fields should parse fine with defaults
+        let content = r#"---
+title: "Accidental"
+description: "Musical symbol that alters pitch"
+category: "fundamentals"
+concept: "Accidental"
+source: "Open Music Theory"
+chapter: "Half Steps"
+tags: ["pitch"]
+---
+Body"#;
+
+        let (fm, _body) = extract_frontmatter(content).unwrap();
+        let fm = fm.unwrap();
+        assert_eq!(fm.title, Some("Accidental".to_string()));
+        // All v3 fields should be None/empty
+        assert_eq!(fm.slug, None);
+        assert_eq!(fm.subcategory, None);
+        assert_eq!(fm.tier, None);
+        assert_eq!(fm.source_slug, None);
+        assert_eq!(fm.extraction_confidence, None);
+        assert!(fm.aliases.is_empty());
+        assert!(fm.prerequisites.is_empty());
+        assert!(fm.extends.is_empty());
+        assert!(fm.related.is_empty());
+        assert!(fm.contrasts_with.is_empty());
+        assert!(fm.answers_questions.is_empty());
+        assert_eq!(fm.chapter_number, None);
+        assert_eq!(fm.pdf_page, None);
+        assert_eq!(fm.authors, None);
+    }
+
+    #[test]
+    fn test_extract_frontmatter_v3_integer_fields() {
+        let content = "---\ntitle: \"Test\"\nchapter_number: 15\npdf_page: 203\n---\nBody";
+        let (fm, _) = extract_frontmatter(content).unwrap();
+        let fm = fm.unwrap();
+        assert_eq!(fm.chapter_number, Some(15));
+        assert_eq!(fm.pdf_page, Some(203));
+    }
+
+    #[test]
+    fn test_extract_frontmatter_v3_empty_arrays() {
+        let content = "---\ntitle: \"Test\"\naliases: []\nprerequisites: []\n---\nBody";
+        let (fm, _) = extract_frontmatter(content).unwrap();
+        let fm = fm.unwrap();
+        assert!(fm.aliases.is_empty());
+        assert!(fm.prerequisites.is_empty());
     }
 }

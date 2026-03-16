@@ -109,8 +109,21 @@ impl SearchBackend for SimpleSearch {
             }
 
             // Calculate relevance and extract snippet
-            let relevance = doc.relevance(&params.query);
+            let mut relevance = doc.relevance(&params.query);
             let snippet = doc.extract_snippet(&params.query, snippet_length);
+
+            // Alias boost: if the query exactly matches an alias (case-insensitive),
+            // multiply relevance by 1.5 to give direct alias matches a meaningful bump.
+            if let Ok((Some(fm), _)) = crate::markdown::extract_frontmatter(&content) {
+                let query_lower = params.query.to_lowercase();
+                if fm
+                    .aliases
+                    .iter()
+                    .any(|alias| alias.to_lowercase() == query_lower)
+                {
+                    relevance *= 1.5;
+                }
+            }
 
             results.push(FabrykSearchResult {
                 id: doc.id.clone(),
@@ -675,6 +688,95 @@ Good music content.
         // Should succeed even with a problematic file
         let result = backend.search(params).await.expect("Search should succeed");
         assert!(result.total >= 1);
+    }
+
+    #[tokio::test]
+    async fn test_simple_search_alias_boost() {
+        use std::fs;
+        use tempfile::TempDir;
+
+        let temp_dir = TempDir::new().expect("Failed to create temp dir");
+        let concept_cards_path = temp_dir.path().join("concept-cards");
+        fs::create_dir_all(&concept_cards_path).expect("Failed to create concept cards dir");
+
+        // Card with an alias matching the query -- should get a 1.5x boost
+        let card_with_alias = r#"---
+title: Acoustic Consonance
+category: acoustics
+description: Two or more tones sounding stable together
+aliases:
+  - "sensory consonance"
+  - "tonal consonance"
+---
+
+# Acoustic Consonance
+
+Acoustic consonance is the phenomenon of tones sounding stable.
+"#;
+        // Card without aliases -- mentions "sensory consonance" in body only
+        let card_without_alias = r#"---
+title: Roughness Theory
+category: acoustics
+description: Roughness perception in psychoacoustics
+---
+
+# Roughness Theory
+
+Roughness perception relates to sensory consonance in acoustics.
+"#;
+        fs::write(
+            concept_cards_path.join("acoustic-consonance.md"),
+            card_with_alias,
+        )
+        .expect("Failed to write card");
+        fs::write(
+            concept_cards_path.join("roughness-theory.md"),
+            card_without_alias,
+        )
+        .expect("Failed to write card");
+
+        let mut config = test_config();
+        config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
+
+        let backend = SimpleSearch::new(config);
+
+        // Search for "sensory consonance" -- the alias in acoustic-consonance.md
+        let params = SearchParams {
+            query: "sensory consonance".to_string(),
+            limit: Some(10),
+            ..Default::default()
+        };
+
+        let result = backend
+            .search(params)
+            .await
+            .expect("Search should succeed");
+        assert!(
+            result.total >= 1,
+            "Should find at least one match for 'sensory consonance'"
+        );
+
+        // The card with the alias should have higher relevance than
+        // one that merely mentions the phrase in the body
+        if result.items.len() >= 2 {
+            let alias_card = result
+                .items
+                .iter()
+                .find(|r| r.title == "Acoustic Consonance");
+            let non_alias_card = result
+                .items
+                .iter()
+                .find(|r| r.title == "Roughness Theory");
+
+            if let (Some(ac), Some(rt)) = (alias_card, non_alias_card) {
+                assert!(
+                    ac.relevance > rt.relevance,
+                    "Alias-matched card ({}) should have higher relevance than non-alias card ({})",
+                    ac.relevance,
+                    rt.relevance
+                );
+            }
+        }
     }
 
     #[tokio::test]

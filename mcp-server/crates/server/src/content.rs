@@ -34,6 +34,19 @@ pub struct ConceptSummary {
     pub source: Option<String>,
     /// Short description or preview text.
     pub preview: Option<String>,
+    // V3 fields
+    /// Finer classification within category.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub subcategory: Option<String>,
+    /// Prerequisite depth: foundational, intermediate, advanced.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub tier: Option<String>,
+    /// Extraction quality: high, medium, low.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub extraction_confidence: Option<String>,
+    /// Alternative names, abbreviations.
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub aliases: Vec<String>,
 }
 
 /// Content provider for music theory concept cards.
@@ -67,6 +80,9 @@ impl ContentItemProvider for MusicTheoryContentProvider {
             Some(ListConceptsParams {
                 category: category.map(String::from),
                 limit,
+                tier: None,
+                subcategory: None,
+                source: None,
             })
         } else {
             None
@@ -83,6 +99,10 @@ impl ContentItemProvider for MusicTheoryContentProvider {
                 category: c.category,
                 source: c.source,
                 preview: c.preview,
+                subcategory: c.subcategory,
+                tier: c.tier,
+                extraction_confidence: c.extraction_confidence,
+                aliases: c.aliases,
             })
             .collect();
 
@@ -136,6 +156,10 @@ mod tests {
             category: "harmony".to_string(),
             source: Some("Open Music Theory".to_string()),
             preview: Some("A three-note chord".to_string()),
+            subcategory: None,
+            tier: None,
+            extraction_confidence: None,
+            aliases: vec![],
         };
 
         let json = serde_json::to_string(&summary).expect("should serialize");
@@ -154,6 +178,10 @@ mod tests {
             category: "test".to_string(),
             source: None,
             preview: None,
+            subcategory: None,
+            tier: None,
+            extraction_confidence: None,
+            aliases: vec![],
         };
 
         let json = serde_json::to_string(&summary).expect("should serialize");

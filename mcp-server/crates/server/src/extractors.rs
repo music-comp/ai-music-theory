@@ -76,7 +76,6 @@ impl MusicTheoryDocumentExtractor {
             .id(&id)
             .path(path.to_string_lossy())
             .title(&title)
-            .content(body.trim())
             .category(&category);
 
         if let Some(ref desc) = fm.description {
@@ -94,9 +93,33 @@ impl MusicTheoryDocumentExtractor {
         if let Some(ref section) = fm.section {
             builder = builder.section(section);
         }
-        if !fm.tags.is_empty() {
-            builder = builder.tags(fm.tags.clone());
+        // V3: merge aliases and answers_questions into tags for faceted search,
+        // and append to content for full-text indexing.
+        let mut tags = fm.tags.clone();
+        if let Some(ref tier) = fm.tier {
+            tags.push(format!("tier:{tier}"));
         }
+        if let Some(ref subcat) = fm.subcategory {
+            tags.push(format!("subcategory:{subcat}"));
+        }
+        if let Some(ref confidence) = fm.extraction_confidence {
+            tags.push(format!("confidence:{confidence}"));
+        }
+        if !tags.is_empty() {
+            builder = builder.tags(tags);
+        }
+
+        // V3: enrich content with aliases and competency questions for FTS.
+        let mut enriched_content = body.trim().to_string();
+        if !fm.aliases.is_empty() {
+            enriched_content.push_str("\n\nAliases: ");
+            enriched_content.push_str(&fm.aliases.join(", "));
+        }
+        if !fm.answers_questions.is_empty() {
+            enriched_content.push_str("\n\nCompetency Questions: ");
+            enriched_content.push_str(&fm.answers_questions.join(" | "));
+        }
+        builder = builder.content(&enriched_content);
 
         // Determine content type from the file path.
         let content_type = Self::detect_content_type(path);
@@ -178,6 +201,7 @@ mod graph_extractor {
 
     use fabryk::core::Result;
     use fabryk::graph::{Edge, GraphExtractor, Node, Relationship};
+    use serde_json;
 
     /// Domain-specific node data extracted from a music theory concept card.
     #[derive(Clone, Debug)]
@@ -190,6 +214,15 @@ mod graph_extractor {
         pub category: Option<String>,
         /// Source text name, if any.
         pub source: Option<String>,
+        // V3 metadata fields for graph node enrichment
+        /// Prerequisite depth tier.
+        pub tier: Option<String>,
+        /// Finer classification within category.
+        pub subcategory: Option<String>,
+        /// Extraction quality.
+        pub extraction_confidence: Option<String>,
+        /// Alternative names.
+        pub aliases: Vec<String>,
     }
 
     /// Domain-specific edge data extracted from concept card frontmatter.
@@ -197,8 +230,14 @@ mod graph_extractor {
     pub struct MusicTheoryEdgeData {
         /// IDs of prerequisite concepts.
         pub prerequisites: Vec<String>,
-        /// IDs of related concepts.
+        /// IDs of related concepts (v2 field name).
         pub related_concepts: Vec<String>,
+        /// Concept slugs this builds upon (v3).
+        pub extends: Vec<String>,
+        /// Commonly confused concept slugs (v3).
+        pub contrasts_with: Vec<String>,
+        /// Associated concept slugs (v3 field name).
+        pub related: Vec<String>,
     }
 
     /// Graph extractor for music theory concept cards.
@@ -264,11 +303,32 @@ mod graph_extractor {
                 .and_then(|v| v.as_str())
                 .map(String::from);
 
+            let tier = frontmatter
+                .get("tier")
+                .and_then(|v| v.as_str())
+                .map(String::from);
+
+            let subcategory = frontmatter
+                .get("subcategory")
+                .and_then(|v| v.as_str())
+                .map(String::from);
+
+            let extraction_confidence = frontmatter
+                .get("extraction_confidence")
+                .and_then(|v| v.as_str())
+                .map(String::from);
+
+            let aliases = extract_string_array(frontmatter, "aliases");
+
             Ok(MusicTheoryNodeData {
                 id,
                 title,
                 category,
                 source,
+                tier,
+                subcategory,
+                extraction_confidence,
+                aliases,
             })
         }
 
@@ -279,14 +339,26 @@ mod graph_extractor {
         ) -> Result<Option<Self::EdgeData>> {
             let prerequisites = extract_string_array(frontmatter, "prerequisites");
             let related_concepts = extract_string_array(frontmatter, "related_concepts");
+            let extends = extract_string_array(frontmatter, "extends");
+            let contrasts_with = extract_string_array(frontmatter, "contrasts_with");
+            let related = extract_string_array(frontmatter, "related");
 
-            if prerequisites.is_empty() && related_concepts.is_empty() {
-                Ok(None)
-            } else {
+            let has_edges = !prerequisites.is_empty()
+                || !related_concepts.is_empty()
+                || !extends.is_empty()
+                || !contrasts_with.is_empty()
+                || !related.is_empty();
+
+            if has_edges {
                 Ok(Some(MusicTheoryEdgeData {
                     prerequisites,
                     related_concepts,
+                    extends,
+                    contrasts_with,
+                    related,
                 }))
+            } else {
+                Ok(None)
             }
         }
 
@@ -298,6 +370,22 @@ mod graph_extractor {
             if let Some(ref source) = node_data.source {
                 node = node.with_source(source);
             }
+            // V3 metadata enrichment
+            if let Some(ref tier) = node_data.tier {
+                node = node.with_metadata("tier", serde_json::Value::String(tier.clone()));
+            }
+            if let Some(ref confidence) = node_data.extraction_confidence {
+                node = node.with_metadata(
+                    "extraction_confidence",
+                    serde_json::Value::String(confidence.clone()),
+                );
+            }
+            if let Some(ref subcat) = node_data.subcategory {
+                node = node.with_metadata("subcategory", serde_json::Value::String(subcat.clone()));
+            }
+            if !node_data.aliases.is_empty() {
+                node = node.with_metadata("aliases", serde_json::json!(node_data.aliases));
+            }
             node
         }
 
@@ -308,8 +396,20 @@ mod graph_extractor {
                 edges.push(Edge::new(from_id, prereq, Relationship::Prerequisite));
             }
 
+            // V2 field name (backward compat)
             for related in &edge_data.related_concepts {
                 edges.push(Edge::new(from_id, related, Relationship::RelatesTo));
+            }
+
+            // V3 field names
+            for ext in &edge_data.extends {
+                edges.push(Edge::new(from_id, ext, Relationship::Extends));
+            }
+            for contrast in &edge_data.contrasts_with {
+                edges.push(Edge::new(from_id, contrast, Relationship::ContrastsWith));
+            }
+            for rel in &edge_data.related {
+                edges.push(Edge::new(from_id, rel, Relationship::RelatesTo));
             }
 
             edges
@@ -399,13 +499,47 @@ mod vector_extractor {
 
             let description = frontmatter.get("description").and_then(|v| v.as_str());
 
-            // Compose embedding text: title | category | description | body
+            let subcategory = frontmatter.get("subcategory").and_then(|v| v.as_str());
+
+            let aliases: Vec<String> = frontmatter
+                .get("aliases")
+                .and_then(|v| v.as_sequence())
+                .map(|seq| {
+                    seq.iter()
+                        .filter_map(|v| v.as_str())
+                        .map(String::from)
+                        .collect()
+                })
+                .unwrap_or_default();
+
+            let answers_questions: Vec<String> = frontmatter
+                .get("answers_questions")
+                .and_then(|v| v.as_sequence())
+                .map(|seq| {
+                    seq.iter()
+                        .filter_map(|v| v.as_str())
+                        .map(String::from)
+                        .collect()
+                })
+                .unwrap_or_default();
+
+            // Compose embedding text: title | category | subcategory | description |
+            // aliases | answers_questions | body
             let mut parts = vec![title.to_string()];
             if let Some(cat) = category {
                 parts.push(cat.to_string());
             }
+            if let Some(subcat) = subcategory {
+                parts.push(subcat.to_string());
+            }
             if let Some(desc) = description {
                 parts.push(desc.to_string());
+            }
+            if !aliases.is_empty() {
+                parts.push(aliases.join(", "));
+            }
+            if !answers_questions.is_empty() {
+                parts.push(answers_questions.join(" | "));
             }
             parts.push(content.trim().to_string());
 
@@ -564,6 +698,56 @@ The major triad consists of a root, major third, and perfect fifth."#;
         assert!(doc.tags.is_empty());
     }
 
+    #[test]
+    fn test_document_extractor_v3_enrichment() {
+        let extractor = MusicTheoryDocumentExtractor::new();
+        let path = PathBuf::from("/content/concept-cards/acoustics/consonance.md");
+        let content = r#"---
+title: "Acoustic Consonance"
+category: "acoustics"
+tier: "foundational"
+subcategory: "consonance-dissonance"
+extraction_confidence: "high"
+aliases:
+  - "sensory consonance"
+  - "tonal consonance"
+answers_questions:
+  - "What makes two tones sound consonant?"
+  - "How does frequency ratio affect consonance?"
+tags: ["acoustics"]
+---
+The phenomenon of stability."#;
+
+        let doc = extractor.extract(&path, content).unwrap();
+        // V3 fields encoded into tags
+        assert!(doc.tags.contains(&"tier:foundational".to_string()));
+        assert!(doc
+            .tags
+            .contains(&"subcategory:consonance-dissonance".to_string()));
+        assert!(doc.tags.contains(&"confidence:high".to_string()));
+        assert!(doc.tags.contains(&"acoustics".to_string()));
+        // V3 fields appended to content for FTS
+        assert!(doc.content.contains("sensory consonance"));
+        assert!(doc.content.contains("tonal consonance"));
+        assert!(doc
+            .content
+            .contains("What makes two tones sound consonant?"));
+        assert!(doc.content.contains("The phenomenon of stability."));
+    }
+
+    #[test]
+    fn test_document_extractor_v3_no_enrichment_for_v2() {
+        let extractor = MusicTheoryDocumentExtractor::new();
+        let path = PathBuf::from("/content/concept-cards/harmony/triad.md");
+        let content = "---\ntitle: Triad\ncategory: harmony\n---\nA three-note chord.";
+
+        let doc = extractor.extract(&path, content).unwrap();
+        // No v3 tags added
+        assert!(doc.tags.is_empty());
+        // Content is just the body
+        assert_eq!(doc.content, "A three-note chord.");
+    }
+
     // -----------------------------------------------------------------------
     // GraphExtractor tests (feature-gated)
     // -----------------------------------------------------------------------
@@ -687,6 +871,10 @@ prerequisites:
                 title: "Test Title".to_string(),
                 category: Some("harmony".to_string()),
                 source: Some("OMT".to_string()),
+                tier: None,
+                subcategory: None,
+                extraction_confidence: None,
+                aliases: vec![],
             };
 
             let node = extractor.to_graph_node(&node_data);
@@ -704,6 +892,10 @@ prerequisites:
                 title: "X".to_string(),
                 category: None,
                 source: None,
+                tier: None,
+                subcategory: None,
+                extraction_confidence: None,
+                aliases: vec![],
             };
 
             let node = extractor.to_graph_node(&node_data);
@@ -717,6 +909,9 @@ prerequisites:
             let edge_data = MusicTheoryEdgeData {
                 prerequisites: vec!["a".to_string(), "b".to_string()],
                 related_concepts: vec!["x".to_string()],
+                extends: vec![],
+                contrasts_with: vec![],
+                related: vec![],
             };
 
             let edges = extractor.to_graph_edges("from-node", &edge_data);
@@ -742,6 +937,9 @@ prerequisites:
             let edge_data = MusicTheoryEdgeData {
                 prerequisites: vec![],
                 related_concepts: vec![],
+                extends: vec![],
+                contrasts_with: vec![],
+                related: vec![],
             };
 
             let edges = extractor.to_graph_edges("node", &edge_data);
@@ -753,6 +951,103 @@ prerequisites:
             let extractor = MusicTheoryGraphExtractor::new();
             assert_eq!(extractor.content_glob(), "**/*.md");
             assert_eq!(extractor.name(), "music-theory");
+        }
+
+        #[test]
+        fn test_graph_extractor_v3_node_metadata() {
+            let extractor = MusicTheoryGraphExtractor::new();
+            let base_path = PathBuf::from("/data");
+            let file_path = PathBuf::from("/data/test.md");
+            let fm: yaml_serde::Value = yaml_serde::from_str(
+                r#"
+title: "Acoustic Consonance"
+category: "acoustics"
+tier: "foundational"
+subcategory: "consonance-dissonance"
+extraction_confidence: "high"
+aliases:
+  - "sensory consonance"
+  - "tonal consonance"
+"#,
+            )
+            .unwrap();
+
+            let node_data = extractor
+                .extract_node(&base_path, &file_path, &fm, "")
+                .unwrap();
+
+            assert_eq!(node_data.tier, Some("foundational".to_string()));
+            assert_eq!(
+                node_data.subcategory,
+                Some("consonance-dissonance".to_string())
+            );
+            assert_eq!(node_data.extraction_confidence, Some("high".to_string()));
+            assert_eq!(
+                node_data.aliases,
+                vec!["sensory consonance", "tonal consonance"]
+            );
+
+            // Verify metadata is set on the graph node
+            let node = extractor.to_graph_node(&node_data);
+            assert_eq!(
+                node.metadata.get("tier").unwrap(),
+                &serde_json::Value::String("foundational".to_string())
+            );
+            assert_eq!(
+                node.metadata.get("subcategory").unwrap(),
+                &serde_json::Value::String("consonance-dissonance".to_string())
+            );
+            assert_eq!(
+                node.metadata.get("extraction_confidence").unwrap(),
+                &serde_json::Value::String("high".to_string())
+            );
+            assert_eq!(
+                node.metadata.get("aliases").unwrap(),
+                &serde_json::json!(["sensory consonance", "tonal consonance"])
+            );
+        }
+
+        #[test]
+        fn test_graph_extractor_v3_edges() {
+            let extractor = MusicTheoryGraphExtractor::new();
+            let fm: yaml_serde::Value = yaml_serde::from_str(
+                r#"
+prerequisites:
+  - harmonic-series
+extends:
+  - interval-quality
+contrasts_with:
+  - acoustic-dissonance
+related:
+  - roughness
+"#,
+            )
+            .unwrap();
+
+            let edge_data = extractor.extract_edges(&fm, "").unwrap().unwrap();
+            assert_eq!(edge_data.prerequisites, vec!["harmonic-series"]);
+            assert_eq!(edge_data.extends, vec!["interval-quality"]);
+            assert_eq!(edge_data.contrasts_with, vec!["acoustic-dissonance"]);
+            assert_eq!(edge_data.related, vec!["roughness"]);
+
+            let edges = extractor.to_graph_edges("source-node", &edge_data);
+            assert_eq!(edges.len(), 4);
+            assert!(
+                edges
+                    .iter()
+                    .any(|e| e.to == "harmonic-series"
+                        && e.relationship == Relationship::Prerequisite)
+            );
+            assert!(edges
+                .iter()
+                .any(|e| e.to == "interval-quality" && e.relationship == Relationship::Extends));
+            assert!(edges
+                .iter()
+                .any(|e| e.to == "acoustic-dissonance"
+                    && e.relationship == Relationship::ContrastsWith));
+            assert!(edges
+                .iter()
+                .any(|e| e.to == "roughness" && e.relationship == Relationship::RelatesTo));
         }
     }
 
