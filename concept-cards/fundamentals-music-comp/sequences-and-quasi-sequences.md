@@ -1,55 +1,149 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Sequences and Quasi-Sequences
+slug: sequences-and-quasi-sequences
+
+# === CLASSIFICATION ===
 category: technique
+subcategory: motivic-development
+tier: intermediate/advanced
+
+# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
+source_slug: fundamentals-music-comp
+authors: "Arnold Schoenberg"
 chapter: "Construction of Simple Themes (4): Completion of the Sentence"
 chapter_number: 8
 pdf_page: 39
-authors:
-  - Arnold Schoenberg
-editors:
-  - Gerald Strang
-  - Leonard Stein
+section: null
+
+# === CONFIDENCE ===
+extraction_confidence: high
+
+# === VARIANTS (authority control) ===
+aliases: []
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - motive
+  - beginning-the-sentence
+extends: []
+related:
+  - diatonic-and-chromatic-sequences
+  - modified-and-partial-sequences
+  - pattern-formation-in-sequences
+  - development-and-liquidation
+  - centripetal-and-centrifugal-harmony
+contrasts_with:
+  - chain-like-construction
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "What is a sequence in Schoenberg's usage?"
+  - "How are sequences used in sentence continuation?"
+  - "What is the difference between a strict sequence and a quasi-sequence?"
 ---
 
 # Quick Definition
-A sequence is a repetition of a segment transposed to another degree, including harmony and all voices. Quasi-sequences are freer treatments where some elements are transposed while others are varied, maintaining the general character of transposed repetition without literal transposition.
 
-# Formal Definition
-A sequence, in its strictest meaning, is a repetition of a segment or unit in its entirety, including the harmony and the accompanying voices, transposed to another degree. Sequence-like procedures are very useful in the continuation of a sentence. The pattern for such sequence treatment is usually a transformation or condensation of preceding motive-forms. Sequential treatment is not always complete: it may be applied to melody or harmony alone, with the remaining element freely varied. Such cases may be called modified or partial sequences. In other cases, the general character of transposed repetition may be present without literal transposition of any element -- these are quasi-sequential.
+A sequence is a repetition of a segment transposed to another degree, including harmony and all voices. Quasi-sequences are freer treatments maintaining the character of transposed repetition without literal transposition.
 
-# Construction/Recognition
-- The pattern must be built so that it introduces the degree on which the sequence begins and provides smooth melodic connection
-- Quasi-sequential repetitions are often free transpositions a whole- or half-tone up or down (or a fourth down)
-- The pattern is usually a transformation or condensation of preceding motive-forms
-- Assuming correct harmonic connection, the pattern may begin on any degree
-- Modified sequences: transposition of melody or harmony alone
-- Partial sequences: some elements transposed, others freely varied
-- Quasi-sequential: general character of transposition without literal transposition
+# Core Definition
 
-# Musical Context
-Sequences are particularly useful in the continuation of a sentence because they provide a structured way of extending material while maintaining comprehensibility. They also serve as a means of establishing harmonic motion. However, the pattern must be carefully constructed to provide smooth harmonic and melodic connections. The degree of strictness varies enormously in practice, from literal transposition to free treatments that only suggest sequential motion.
+A sequence, in its strictest meaning, is a repetition of a segment or unit in its entirety, including the harmony and the accompanying voices, transposed to another degree (Schoenberg, p. 40, footnote 2). Sequence-like procedures are very useful in the continuation of a sentence. The pattern for such sequence treatment is usually a transformation or condensation of preceding motive-forms. Assuming a correct harmonic connection, the pattern may begin on any degree (p. 40).
+
+Sequential treatment is not always complete. It may be applied to either melody or harmony alone, the remaining element being more or less freely varied. Such cases may be called modified or partial sequences. In other cases, the general character of transposed repetition may be present without literal transposition of any element. These, and others involving variation of some features, may be described as "sequentially controlled" (p. 41).
+
+# Prerequisites
+
+- **Motive** -- Sequences operate on motive-forms and their transformations
+- **Beginning the sentence** -- Sequences are used in the sentence continuation following the twofold statement
+
+# Key Properties
+
+1. Strict sequence: transposition of segment in its entirety (melody, harmony, all voices)
+2. Modified sequence: only melody or only harmony transposed
+3. Partial sequence: some features transposed, others freely varied
+4. Quasi-sequential: general character of transposition without literal transposition
+5. Pattern is usually a transformation or condensation of preceding motive-forms
+6. Pattern must introduce the starting degree of the sequence and provide smooth melodic connection
+7. Diatonic sequences maintain centripetal harmony; chromatic ones may become centrifugal
+
+# Construction / Recognition
+
+## To Construct a Sequence
+
+1. Form a pattern by transforming or condensing preceding motive-forms
+2. Ensure the pattern introduces the degree on which the sequence begins
+3. Provide smooth melodic connection between pattern and transposition
+4. Choose diatonic (centripetal) or chromatic (centrifugal) treatment
+5. Quasi-sequential repetitions are often free transpositions a whole- or half-tone up or down
+
+## To Recognize Sequences
+
+1. Identify a repeated segment at a different pitch level
+2. Determine the degree of strictness (strict, modified, partial, or quasi-sequential)
+3. Check whether melody, harmony, or both are transposed
+4. Note the interval of transposition (typically whole-tone, half-tone, or fourth)
+
+# Context & Application
+
+Sequences are particularly useful in sentence continuations because they provide structured extension while maintaining comprehensibility. They serve as a means of establishing harmonic motion. The degree of strictness varies enormously in practice, from literal transposition to free treatments that only suggest sequential motion. In minor keys, sequences are more apt to produce modulation because of the varying forms of the minor scale; they are most often built around the natural or descending form, with strategic reintroduction of the leading tone to prevent premature modulation.
 
 # Examples
-- Exs. 54, 55, 56: Quasi-sequential repetitions, more or less free transpositions a whole- or half-tone up or down; Ex. 56b transposes a fourth down
-- Pattern construction in Exs. 54d, 55b: Order same as first phrase
-- Exs. 54e, f: Order reversed ('b'-'a')
-- Ex. 56: Only 'b' and 'c' are used from the original motive-forms
-- Ex. 55a: Pattern begins with a transposition of the feature that ended the preceding phrase
-- Mozart, Ex. 59d: Extension produced by a sequence in m. 6-7
 
-# Related Concepts
-- Diatonic and Chromatic Sequences
-- Modified and Partial Sequences
-- Pattern Formation in Sequences
-- Sentence Structure
-- Development and Liquidation
-- Centripetal and Centrifugal Harmony
+- **Exs. 54, 55, 56** (p. 40): Quasi-sequential repetitions, more or less free transpositions a whole- or half-tone up or down; Ex. 56b transposes a fourth down
+
+- **Ex. 55a** (p. 41): Pattern begins with a transposition of the feature that ended the preceding phrase ('c1', m. 8), associating it with 'b' in the form used in m. 3 and 7
+
+- **Mozart, Ex. 59d** (p. 42): Extension produced by a sequence in m. 6-7
+
+# Relationships
+
+## Builds Upon
+
+- **Motive** -- Sequences operate on motive-forms
+
+## Enables
+
+- **Diatonic and chromatic sequences** -- The distinction between centripetal and centrifugal sequential treatment
+- **Modified and partial sequences** -- The spectrum of sequential strictness
+- **Pattern formation in sequences** -- The technique of constructing the sequential pattern
+
+## Related
+
+- **Development and liquidation** -- Sequences are tools used within the development phase
+- **Centripetal and centrifugal harmony** -- Sequences may be centripetal (diatonic) or centrifugal (chromatic)
+
+## Contrasts With
+
+- **Chain-like construction** -- Sequences transpose complete patterns; chain-like construction overlaps material at boundaries
+
+# Common Errors
+
+- **Error**: Using a strict sequence when a freer treatment would serve the musical context better
+  **Correction**: Most sequences in practice are modified, partial, or quasi-sequential
+
+- **Error**: Starting a sequence on a degree without smooth harmonic connection from the pattern
+  **Correction**: The pattern must introduce its starting degree with a smooth harmonic and melodic link
 
 # Common Confusions
-- A strict sequence transposes everything (melody, harmony, accompanying voices); most sequences in practice are modified or partial.
-- The pattern for a sequence is not simply the original motive; it is usually a transformation or condensation of preceding motive-forms.
-- Quasi-sequential treatment can be effective even without any literal transposition, as long as the character of transposed repetition is suggested.
+
+- **Confusion**: Thinking a strict sequence is always preferable
+  **Clarification**: Most sequences in masterworks are modified or partial; strict sequences are the exception
+
+- **Confusion**: Equating the pattern with the original motive
+  **Clarification**: The pattern is usually a transformation or condensation of preceding motive-forms, not the motive itself
+
+- **Confusion**: Assuming quasi-sequential means weak or failed
+  **Clarification**: Quasi-sequential treatment can be highly effective even without literal transposition
 
 # Source Reference
-Chapter 8: Construction of Simple Themes (4) -- Completion of the Sentence, pp. 40-41 (PDF)
+
+Chapter 8: Construction of Simple Themes (4) -- Completion of the Sentence, pp. 40-41 (PDF).
+
+# Verification Notes
+
+- Re-extracted from v2 card; preserved: distinction between strict/modified/partial/quasi-sequential, Ex. 55a pattern analysis, fourth-down transposition in Ex. 56b
+- Definition from pp. 40-41
+- Confidence: HIGH -- Schoenberg provides an explicit definition and extensive discussion

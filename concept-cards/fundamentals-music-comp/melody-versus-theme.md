@@ -1,46 +1,91 @@
 ---
 concept: Melody Versus Theme
-category: theory
+slug: melody-versus-theme
+category: melody
+subcategory: null
+tier: intermediate
 source: "Fundamentals of Musical Composition"
+source_slug: fundamentals-music-comp
+authors: "Arnold Schoenberg"
 chapter: "Melody and Theme"
 chapter_number: 11
 pdf_page: 59
-authors:
-  - Arnold Schoenberg
-editors:
-  - Gerald Strang
-  - Leonard Stein
+section: "Melody Versus Theme"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - melody-definition
+extends: []
+related:
+  - theme-as-hypothesis
+  - melody-as-apercu
+  - unrest-and-problem-solving
+  - melodic-independence
+  - thematic-complexity
+  - melody-theme-hybrids
+contrasts_with: []
+answers_questions:
+  - "How does melody relate to theme?"
+  - "What is the difference between melody and theme?"
+  - "Why does Schoenberg distinguish melody from theme?"
 ---
 
 # Quick Definition
 A melody re-establishes repose through balance and is self-contained like an apercu; a theme poses a problem requiring development and proof, like a scientific hypothesis that demands testing.
 
-# Formal Definition
+# Core Definition
 Every succession of tones produces unrest, conflict, problems. A melody re-establishes repose through balance; a theme solves the problem by carrying out its consequences. The unrest in a melody need not reach below the surface, while the problem of a theme may penetrate to the profoundest depths. A melody can be compared to an apercu or aphorism in its rapid advance from problem to solution. A theme resembles rather a scientific hypothesis which does not convince without a number of tests, without presentation of proof.
 
-# Construction/Recognition
-Melody characteristics: (1) two-dimensional (interval and latent harmony), (2) tends toward regularity and symmetry, (3) distinct phrasing, (4) extends by continuation rather than elaboration, (5) uses slightly varied motive-forms, (6) remains within closer harmonic relationships, (7) is independent and self-determined. Theme characteristics: (1) three-dimensional (interval, harmony, and rhythmic development), (2) sharpens or deepens its problem, (3) juxtaposes remotely coherent segments, (4) leaps directly to remote developments, (5) harmony is often "roving" and unstable, (6) strictly bound to consequences.
+# Prerequisites
+- melody-definition: Understanding what melody is before comparing it with theme
 
-# Musical Context
-This distinction is central to Schoenberg's compositional pedagogy. Hybrid forms exist: sometimes a melody elaborates rhythmical problems or draws consequences; many a theme contains melodic segments or is based on simple period construction. The distinction necessarily exaggerates in order to generalize.
+# Key Properties
+- Melody: two-dimensional (interval + latent harmony); theme: three-dimensional (interval + harmony + rhythmic development)
+- Melody: achieves balance directly; theme: sharpens or deepens its problem
+- Melody: extends by continuation; theme: leaps to remote developments
+- Melody: independent and self-determined; theme: strictly bound to consequences
+- Melody: tends toward regularity and symmetry; theme: juxtaposes remotely coherent segments
+- Melody: closer harmonic relationships; theme: often active, "roving," unstable harmony
+- "Theme" is one of the most misused terms in the musical vocabulary
+
+# Construction / Recognition
+Melody is recognized by: distinct phrasing, regularity, symmetry, continuation rather than development, self-containment. Theme is recognized by: rhythmic development, juxtaposition of segments without connectives, roving harmony, leaps to remote motivic developments, the sense that development must follow.
+
+# Context & Application
+This distinction is central to Schoenberg's compositional pedagogy. The description necessarily exaggerates the difference. Hybrid forms exist. The distinction describes tendencies rather than absolute categories. Time has widened the concepts of both theme and melody.
 
 # Examples
 - Clearest Beethoven themes: Op. 53-I, Op. 57-I, Op. 27/2-III, Op. 111-I
 - Melody-like themes in Beethoven String Quartets (Exs. 96a, b): structurally instrumental themes that make the impression of melodies
-- Theme examples showing rhythmic development: Op. 10/1-I, Op. 27/2-III, Op. 14/2-I (Exs. 95a, b)
-- Themes with remote developments of basic motive: Op. 10/1-I m. 9, 17; Op. 7-I; Op. 31/2-I
+- Theme showing rhythmic development: Op. 10/1-I, Op. 27/2-III, Op. 14/2-I (Exs. 95a, b)
+- Themes leaping to remote developments: Op. 10/1-I m. 9, 17; Op. 7-I; Op. 31/2-I
 
-# Related Concepts
-- Melody Definition
-- Theme as Hypothesis
-- Melody as Apercu
-- Unrest and Problem-Solving
-- Melodic Independence
+# Relationships
+## Builds Upon
+- melody-definition
+## Enables
+- theme-as-hypothesis
+- melody-as-apercu
+- melody-theme-hybrids
+## Related
+- unrest-and-problem-solving
+- melodic-independence
+- thematic-complexity
+## Contrasts With
+None
+
+# Common Errors
+- Using "theme" indiscriminately for any musical idea
+- Treating a melody as though it needs development
+- Treating a theme as though it should be self-contained
 
 # Common Confusions
-- "Theme" is one of the most misused terms in the musical vocabulary; it is applied without discrimination to many different structures
-- The distinction between melody and theme is not absolute; hybrid forms exist and the boundary has shifted historically
+- "Theme" is one of the most misused terms in music; it is applied without discrimination to many different structures
+- The distinction is not absolute; hybrid forms exist and the boundary has shifted historically
 - A theme is not inferior to a melody; it serves a different structural function
 
 # Source Reference
-Chapter 11: Melody and Theme, pp. 105-108
+Chapter 11: Melody and Theme, PDF pp. 64-67
+
+# Verification Notes
+Re-extracted from v2 card; preserved: quick definition, apercu/hypothesis analogy, all Beethoven examples, "most misused term" observation. Added v3.1 fields, six-point key properties comparison, enables/builds-upon hierarchy.

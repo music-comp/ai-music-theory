@@ -1,51 +1,137 @@
 ---
+# === CORE IDENTIFICATION ===
 concept: Period Structure
+slug: period-structure
+
+# === CLASSIFICATION ===
 category: form
+subcategory: theme-types
+tier: intermediate
+
+# === PROVENANCE ===
 source: "Fundamentals of Musical Composition"
-chapter: "Construction of Simple Themes (2): Antecedent of the Period"
-chapter_number: 6
-pdf_page: 22
-authors:
-  - Arnold Schoenberg
-editors:
-  - Gerald Strang
-  - Leonard Stein
+source_slug: fundamentals-music-comp
+authors: "Arnold Schoenberg"
+chapter: "Construction of Simple Themes (1): Beginning the Sentence"
+chapter_number: 5
+pdf_page: 20
+section: "The Period and the Sentence"
+
+# === CONFIDENCE ===
+extraction_confidence: medium
+
+# === VARIANTS (authority control) ===
+aliases:
+  - period form
+  - Periode
+
+# === TYPED RELATIONSHIPS ===
+prerequisites:
+  - phrase
+  - motive
+  - period-versus-sentence
+extends: []
+related:
+  - sentence-structure
+  - form
+contrasts_with:
+  - sentence-structure
+
+# === COMPETENCY QUESTIONS ===
+answers_questions:
+  - "How does a period differ from a sentence?"
+  - "What is a period in musical composition?"
 ---
 
 # Quick Definition
-A period is a theme structure consisting of two complementary halves -- an antecedent and a consequent -- separated by a caesura, where the consequent functions as a modified repetition of the antecedent.
 
-# Formal Definition
-The period is a structural form in which the first phrase (antecedent) is not immediately repeated but is united with more remote, contrasting motive-forms, and then followed by a second half (consequent) constructed as a kind of repetition of the antecedent. The construction of the beginning determines the construction of the continuation: repetition cannot be postponed beyond the consequent without endangering comprehensibility. Only a small percentage of classical themes are true periods, and Romantic composers use them even less.
+A theme structure consisting of two complementary halves -- an antecedent and a consequent -- where the consequent is a modified repetition of the antecedent, distinguished from the sentence by its postponement of repetition.
 
-# Construction/Recognition
-- Practice form: eight measures divided into antecedent (m. 1-4) and consequent (m. 5-8)
-- A caesura in the fourth measure divides the two halves, carried out in both melody and harmony
-- The antecedent typically ends on V (via half or full cadence, or interchange of I and V)
-- The consequent usually ends on I, V, or III (major or minor) with a full cadence
-- The consequent retains one or two measures of the antecedent's beginning, sometimes with variation
-- Even if the consequent repeats the antecedent strictly, the structure is only "quasi-symmetrical"
+# Core Definition
 
-# Musical Context
-The period differs from the sentence in its postponement of repetition. While only a minority of classical themes use the period form, practicing period construction is a convenient way to learn many technical problems of thematic construction. The real purpose of musical construction is not beauty but intelligibility.
+The period is introduced in Chapter 5 alongside the sentence as one of two fundamental theme structures. "A complete musical idea or theme is customarily articulated as a period or a sentence" (Ch. 5, p. 20). Both structures "centre around a tonic" and "have a definite ending" (Ch. 5, p. 20). "The distinction between the sentence and the period lies in the treatment of the second phrase, and in the continuation after it" (Ch. 5, p. 21). While the sentence uses immediate repetition, the period postpones repetition: the first half (antecedent) presents material without immediate repetition, and the second half (consequent) provides the modified repetition. The period is treated in detail in Chapters 6-7.
+
+# Prerequisites
+
+- **phrase** -- The period is built from phrases
+- **motive** -- The period presents and varies motivic material
+- **period-versus-sentence** -- Must understand the distinction between the two theme types
+
+# Key Properties
+
+1. Consists of two complementary halves: antecedent and consequent
+2. Centers around a tonic with a definite ending
+3. Usually consists of an even number of measures (typically eight)
+4. The antecedent presents material without immediate repetition
+5. The consequent provides modified repetition of the antecedent
+6. The distinction from the sentence lies in the postponement of repetition
+7. Treated in detail in Chapters 6-7 (only introduced in Ch. 5)
+
+# Construction / Recognition
+
+## Practice Form (8 measures)
+
+1. **Mm. 1-4** (Antecedent): Presents material; typically ends on V (half cadence)
+2. **Mm. 5-8** (Consequent): Modified repetition of the antecedent; typically ends on I (full cadence)
+3. A caesura in m. 4 divides the two halves
+
+## Key Distinction from Sentence
+
+- In the **sentence**, mm. 3-4 immediately repeat mm. 1-2
+- In the **period**, mm. 1-4 form a single antecedent without internal repetition; the repetition comes in mm. 5-8
+
+# Context & Application
+
+Chapter 5 introduces the period alongside the sentence as the two fundamental theme types but does not treat the period in detail. The detailed treatment of antecedent construction is in Chapter 6 and consequent construction in Chapter 7. Schoenberg notes that "only a small percentage of classical themes are true periods" -- the sentence is actually more common in leading themes of sonatas and symphonies.
 
 # Examples
-- Beethoven, Op. 2/1-II (Adagio): Antecedent ends on V (m. 4), consequent on I (m. 8). Harmony of antecedent is mere interchange of I and V.
-- Beethoven, Op. 2/2-IV: Caesura on V reinforced by half cadence in m. 4; consequent ends with full cadence on V (m. 8).
-- Beethoven, Op. 10/3, Menuetto: Antecedent and consequent each consist of eight measures; consequent transposes melody and harmony a note higher.
-- Beethoven, Op. 10/3, Rondo: Nine-measure period with five-measure consequent, showing irregularity.
 
-# Related Concepts
-- Antecedent of the Period
-- Consequent of the Period
-- Caesura
-- Sentence Structure
-- Cadence Contour
+**Example 1** (p. 20): The basic definition distinguishing period from sentence structure.
+
+**Example 2** (p. 21): The distinction stated: "The distinction between the sentence and the period lies in the treatment of the second phrase, and in the continuation after it."
+
+# Relationships
+
+## Builds Upon
+
+- **phrase** -- The period is built from phrases
+- **motive** -- The period presents motivic material
+
+## Enables
+
+Detailed period construction is treated in Chapters 6-7 (outside the scope of this extraction).
+
+## Related
+
+- **sentence-structure** -- The contrasting theme structure
+- **form** -- The period is a fundamental formal unit
+
+## Contrasts With
+
+- **sentence-structure** -- The sentence uses immediate repetition; the period postpones it
+
+# Common Errors
+
+- **Error**: Assuming all eight-measure themes are periods
+  **Correction**: The distinction is about internal organization (postponed vs. immediate repetition), not length
+
+- **Error**: Looking for the period's detailed treatment in Chapter 5
+  **Correction**: Chapter 5 only introduces the concept; detailed treatment is in Chapters 6-7
 
 # Common Confusions
-- The term "symmetrical" is misleading when applied to periods; true symmetry exists only in mirror forms from contrapuntal music. Periods are at best "quasi-symmetrical."
-- A period is not simply any eight-measure phrase -- it requires the specific antecedent-consequent relationship with modified repetition.
-- Not all themes are periods; the sentence is actually more common in leading themes of sonatas and symphonies.
+
+- **Confusion**: Using "period" to mean any complete musical statement
+  **Clarification**: Schoenberg uses "period" as a specific technical term for the antecedent-consequent structure
+
+- **Confusion**: Thinking the period is more common than the sentence
+  **Clarification**: "Only a small percentage of classical themes are true periods" (Ch. 6); the sentence is more common in leading themes
 
 # Source Reference
-Chapter 6: Construction of Simple Themes (2) -- Antecedent of the Period, pp. 22-23 (PDF)
+
+Chapter 5: Construction of Simple Themes (1): Beginning the Sentence, pp. 20-21 (pdf p. 20). Detailed treatment in Chapters 6-7.
+
+# Verification Notes
+
+- Definition: Synthesized from Ch. 5 pp. 20-21 introduction and Ch. 6 p. 22 detailed treatment
+- Confidence: MEDIUM -- Ch. 5 introduces the concept briefly; the full definition requires Ch. 6-7 material
+- Re-extracted from v2 card; preserved: the "small percentage of classical themes" observation, the antecedent/consequent structure, the quasi-symmetrical characterization
