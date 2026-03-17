@@ -49,7 +49,9 @@ pub use fabryk::fts::TantivySearch;
 /// - `snippet_size` -> `snippet_length`
 /// - `stopword_allowlist` -> `allowlist`
 #[cfg(feature = "fts")]
-pub fn to_fabryk_search_config(config: &crate::config::SearchConfig) -> fabryk::fts::SearchConfig {
+pub fn to_fabryk_search_config(
+    config: &crate::config::SearchConfig,
+) -> crate::error::Result<fabryk::fts::SearchConfig> {
     let query_mode = match config.query_mode {
         crate::config::QueryMode::Smart => fabryk::fts::QueryMode::Smart,
         crate::config::QueryMode::And => fabryk::fts::QueryMode::And,
@@ -57,9 +59,11 @@ pub fn to_fabryk_search_config(config: &crate::config::SearchConfig) -> fabryk::
         crate::config::QueryMode::MinimumMatch(_) => fabryk::fts::QueryMode::MinimumMatch,
     };
 
-    fabryk::fts::SearchConfig {
+    let index_path = config.index_path()?;
+
+    Ok(fabryk::fts::SearchConfig {
         backend: config.backend.clone(),
-        index_path: Some(config.index_path.clone()),
+        index_path: Some(index_path.to_string_lossy().into_owned()),
         content_path: None, // set per-invocation
         query_mode,
         fuzzy_enabled: config.fuzzy_search,
@@ -69,7 +73,7 @@ pub fn to_fabryk_search_config(config: &crate::config::SearchConfig) -> fabryk::
         allowlist: config.stopword_allowlist.clone(),
         default_limit: 10,
         snippet_length: config.snippet_size,
-    }
+    })
 }
 
 /// Convert the project's `QueryMode` to fabryk's `QueryMode`.
@@ -375,10 +379,12 @@ mod tests {
     #[test]
     fn test_to_fabryk_search_config_smart() {
         let config = test_search_config();
-        let fabryk_config = to_fabryk_search_config(&config);
+        let fabryk_config = to_fabryk_search_config(&config).expect("config resolution failed");
 
         assert_eq!(fabryk_config.backend, "simple");
-        assert_eq!(fabryk_config.index_path, Some(".tantivy-index".to_string()));
+        // index_path is resolved to an absolute path
+        let index_path = fabryk_config.index_path.expect("index_path should be Some");
+        assert!(index_path.ends_with(".tantivy-index"));
         assert_eq!(fabryk_config.query_mode, fabryk::fts::QueryMode::Smart);
         assert!(!fabryk_config.fuzzy_enabled);
         assert_eq!(fabryk_config.fuzzy_distance, 2);
@@ -394,7 +400,7 @@ mod tests {
     fn test_to_fabryk_search_config_and() {
         let mut config = test_search_config();
         config.query_mode = crate::config::QueryMode::And;
-        let fabryk_config = to_fabryk_search_config(&config);
+        let fabryk_config = to_fabryk_search_config(&config).expect("config resolution failed");
         assert_eq!(fabryk_config.query_mode, fabryk::fts::QueryMode::And);
     }
 
@@ -402,7 +408,7 @@ mod tests {
     fn test_to_fabryk_search_config_or() {
         let mut config = test_search_config();
         config.query_mode = crate::config::QueryMode::Or;
-        let fabryk_config = to_fabryk_search_config(&config);
+        let fabryk_config = to_fabryk_search_config(&config).expect("config resolution failed");
         assert_eq!(fabryk_config.query_mode, fabryk::fts::QueryMode::Or);
     }
 
@@ -410,7 +416,7 @@ mod tests {
     fn test_to_fabryk_search_config_minimum_match() {
         let mut config = test_search_config();
         config.query_mode = crate::config::QueryMode::MinimumMatch(0.6);
-        let fabryk_config = to_fabryk_search_config(&config);
+        let fabryk_config = to_fabryk_search_config(&config).expect("config resolution failed");
         assert_eq!(
             fabryk_config.query_mode,
             fabryk::fts::QueryMode::MinimumMatch

@@ -304,7 +304,15 @@ fn start_fts_loading(state: Arc<AppState>, needs_rebuild: bool) {
         }
 
         // Load index from disk (freshly built or pre-existing)
-        let fabryk_config = crate::search::to_fabryk_search_config(&state.config.search);
+        let fabryk_config = match crate::search::to_fabryk_search_config(&state.config.search) {
+            Ok(c) => c,
+            Err(e) => {
+                state.fts_service.set_state(ServiceState::Failed(format!(
+                    "Failed to resolve FTS config: {e}"
+                )));
+                return;
+            }
+        };
         match TantivySearch::new(&fabryk_config) {
             Ok(backend) => {
                 if state.update_fts_backend(backend).is_ok() {
@@ -792,7 +800,8 @@ Test content.
             .expect("Failed to create state");
 
         // Load the index we just built
-        let fabryk_config = crate::search::to_fabryk_search_config(&config.search);
+        let fabryk_config = crate::search::to_fabryk_search_config(&config.search)
+            .expect("Failed to resolve FTS config");
         let backend = TantivySearch::new(&fabryk_config).expect("Failed to load index");
 
         // Update backend
@@ -840,7 +849,8 @@ Test content.
             .expect("Failed to create state");
 
         // Load and set backend
-        let fabryk_config = crate::search::to_fabryk_search_config(&config.search);
+        let fabryk_config = crate::search::to_fabryk_search_config(&config.search)
+            .expect("Failed to resolve FTS config");
         let backend = TantivySearch::new(&fabryk_config).expect("Failed to load index");
         state.update_fts_backend(backend).expect("Failed to update");
         state.fts_service.set_state(ServiceState::Ready);
