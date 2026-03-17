@@ -396,12 +396,23 @@ pub async fn initialize_graph(state: &Arc<AppState>) -> Result<()> {
     let graph_path = data_dir.join("graphs").join("concept_graph.json");
 
     if !graph_path.exists() {
-        log::warn!(
-            "Concept graph not found at {}. Run `music-theory-mcp cache download graph` \
-             to download pre-built graph, or `music-theory-mcp graph build` to build from source.",
-            graph_path.display()
+        log::info!("Concept graph not found, building from source cards");
+        let (graph_data, build_stats) = crate::graph::build_graph(&state.config).await?;
+        log::info!(
+            "Graph built: {} nodes, {} edges ({} files processed)",
+            graph_data.node_count(),
+            graph_data.edge_count(),
+            build_stats.files_processed
         );
-        return Ok(());
+
+        let graphs_dir = data_dir.join("graphs");
+        tokio::fs::create_dir_all(&graphs_dir)
+            .await
+            .map_err(|e| crate::error::Error::io_with_path(e, &graphs_dir))?;
+
+        fabryk::graph::save_graph(&graph_data, &graph_path, None)
+            .map_err(|e| crate::error::Error::operation(format!("Failed to save graph: {}", e)))?;
+        log::info!("Graph saved to {}", graph_path.display());
     }
 
     log::info!("Starting async graph load");
