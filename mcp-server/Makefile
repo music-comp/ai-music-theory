@@ -34,14 +34,18 @@ help:
 	@echo "$(CYAN)╚══════════════════════════════════════════════════════════╝$(RESET)"
 	@echo ""
 	@echo "$(GREEN)Building:$(RESET)"
-	@echo "  $(YELLOW)make build$(RESET)            - Build all binaries (simple search)"
+	@echo "  $(YELLOW)make build$(RESET)            - Build all binaries (all features)"
 	@echo "  $(YELLOW)make build-fts$(RESET)        - Build with full-text search feature"
 	@echo "  $(YELLOW)make build-graph$(RESET)      - Build with graph database feature"
+	@echo "  $(YELLOW)make build-http$(RESET)       - Build with HTTP transport feature"
+	@echo "  $(YELLOW)make build-vector$(RESET)     - Build with vector search feature"
 	@echo "  $(YELLOW)make build-fts-graph$(RESET)  - Build with FTS + graph"
 	@echo "  $(YELLOW)make build-full$(RESET)       - Build with all features (FTS + graph + vector + http)"
-	@echo "  $(YELLOW)make build-release$(RESET)    - Build optimized release binaries (simple)"
+	@echo "  $(YELLOW)make build-release$(RESET)    - Build optimized release binaries (all features)"
 	@echo "  $(YELLOW)make build-release-fts$(RESET) - Build optimized release binaries (with FTS)"
 	@echo "  $(YELLOW)make build-release-graph$(RESET) - Build optimized release (with graph)"
+	@echo "  $(YELLOW)make build-release-http$(RESET) - Build optimized release (with HTTP)"
+	@echo "  $(YELLOW)make build-release-vector$(RESET) - Build optimized release (with vector)"
 	@echo "  $(YELLOW)make build-release-fts-graph$(RESET) - Build optimized (FTS + graph)"
 	@echo "  $(YELLOW)make build-release-full$(RESET) - Build optimized (all features, recommended)"
 	@echo "  $(YELLOW)make build-all$(RESET)        - Build all configurations in release mode"
@@ -51,6 +55,8 @@ help:
 	@echo "  $(YELLOW)make test$(RESET)             - Run all tests (without features)"
 	@echo "  $(YELLOW)make test-fts$(RESET)         - Run all tests with FTS feature"
 	@echo "  $(YELLOW)make test-graph$(RESET)       - Run all tests with graph feature"
+	@echo "  $(YELLOW)make test-http$(RESET)        - Run all tests with HTTP feature"
+	@echo "  $(YELLOW)make test-vector$(RESET)      - Run all tests with vector feature"
 	@echo "  $(YELLOW)make test-fts-graph$(RESET)   - Run all tests with FTS + graph"
 	@echo "  $(YELLOW)make test-full$(RESET)        - Run all tests with all features"
 	@echo "  $(YELLOW)make test-all$(RESET)         - Run tests in all configurations"
@@ -60,6 +66,8 @@ help:
 	@echo "  $(YELLOW)make check$(RESET)            - Build + lint + test (simple)"
 	@echo "  $(YELLOW)make check-fts$(RESET)        - Build + lint + test (FTS)"
 	@echo "  $(YELLOW)make check-graph$(RESET)      - Build + lint + test (graph)"
+	@echo "  $(YELLOW)make check-http$(RESET)       - Build + lint + test (HTTP)"
+	@echo "  $(YELLOW)make check-vector$(RESET)     - Build + lint + test (vector)"
 	@echo "  $(YELLOW)make check-fts-graph$(RESET)  - Build + lint + test (FTS + graph)"
 	@echo "  $(YELLOW)make check-all$(RESET)        - Build + lint + test (all configs)"
 	@echo ""
@@ -193,6 +201,48 @@ build-fts: clean $(BIN_DIR)
 	@echo "$(GREEN)✓ Build complete (FTS enabled)$(RESET)"
 	@echo "$(CYAN)→ Binaries available in $(BIN_DIR)/$(RESET)"
 
+.PHONY: build-http
+build-http: clean $(BIN_DIR)
+	@echo "$(BLUE)Building $(PROJECT_NAME) with HTTP feature in $(MODE) mode...$(RESET)"
+	@echo "$(CYAN)• Compiling workspace with --features http...$(RESET)"
+	@if [ "$(MODE)" = "release" ]; then \
+		cargo build --release --features http; \
+	else \
+		cargo build --features http; \
+	fi
+	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (with HTTP)"; \
+		else \
+			echo "  $(YELLOW)⚠$(RESET) $$bin not found, skipping"; \
+		fi; \
+	done
+	@echo "$(GREEN)✓ Build complete (HTTP enabled)$(RESET)"
+	@echo "$(CYAN)→ Binaries available in $(BIN_DIR)/$(RESET)"
+
+.PHONY: build-vector
+build-vector: clean $(BIN_DIR)
+	@echo "$(BLUE)Building $(PROJECT_NAME) with vector feature in $(MODE) mode...$(RESET)"
+	@echo "$(CYAN)• Compiling workspace with --features vector...$(RESET)"
+	@if [ "$(MODE)" = "release" ]; then \
+		cargo build --release --features vector; \
+	else \
+		cargo build --features vector; \
+	fi
+	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (with vector)"; \
+		else \
+			echo "  $(YELLOW)⚠$(RESET) $$bin not found, skipping"; \
+		fi; \
+	done
+	@echo "$(GREEN)✓ Build complete (vector enabled)$(RESET)"
+	@echo "$(CYAN)→ Binaries available in $(BIN_DIR)/$(RESET)"
+
 .PHONY: build-release
 build-release: MODE = release
 build-release: TARGET = ./target/$(MODE)
@@ -230,6 +280,44 @@ build-release-fts: clean $(BIN_DIR)
 		fi; \
 	done
 	@echo "$(GREEN)✓ Release build complete (FTS enabled)$(RESET)"
+	@echo "$(CYAN)→ Optimized binaries in $(BIN_DIR)/$(RESET)"
+
+.PHONY: build-release-http
+build-release-http: MODE = release
+build-release-http: TARGET = ./target/$(MODE)
+build-release-http: clean $(BIN_DIR)
+	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with HTTP...$(RESET)"
+	@echo "$(CYAN)• Compiling optimized workspace with --features http...$(RESET)"
+	@cargo build --release --features http
+	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (with HTTP, size: $$(du -h $(BIN_DIR)/$$bin | cut -f1))"; \
+		else \
+			echo "  $(YELLOW)⚠$(RESET) $$bin not found, skipping"; \
+		fi; \
+	done
+	@echo "$(GREEN)✓ Release build complete (HTTP enabled)$(RESET)"
+	@echo "$(CYAN)→ Optimized binaries in $(BIN_DIR)/$(RESET)"
+
+.PHONY: build-release-vector
+build-release-vector: MODE = release
+build-release-vector: TARGET = ./target/$(MODE)
+build-release-vector: clean $(BIN_DIR)
+	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with vector...$(RESET)"
+	@echo "$(CYAN)• Compiling optimized workspace with --features vector...$(RESET)"
+	@cargo build --release --features vector
+	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (with vector, size: $$(du -h $(BIN_DIR)/$$bin | cut -f1))"; \
+		else \
+			echo "  $(YELLOW)⚠$(RESET) $$bin not found, skipping"; \
+		fi; \
+	done
+	@echo "$(GREEN)✓ Release build complete (vector enabled)$(RESET)"
 	@echo "$(CYAN)→ Optimized binaries in $(BIN_DIR)/$(RESET)"
 
 .PHONY: build-graph
@@ -447,6 +535,20 @@ test-graph:
 	@cargo test --features graph --workspace
 	@echo "$(GREEN)✓ All tests passed (graph enabled)$(RESET)"
 
+.PHONY: test-http
+test-http:
+	@echo "$(BLUE)Running tests with HTTP feature...$(RESET)"
+	@echo "$(CYAN)• Running all workspace tests with --features http...$(RESET)"
+	@cargo test --features http --workspace
+	@echo "$(GREEN)✓ All tests passed (HTTP enabled)$(RESET)"
+
+.PHONY: test-vector
+test-vector:
+	@echo "$(BLUE)Running tests with vector feature...$(RESET)"
+	@echo "$(CYAN)• Running all workspace tests with --features vector...$(RESET)"
+	@cargo test --features vector --workspace
+	@echo "$(GREEN)✓ All tests passed (vector enabled)$(RESET)"
+
 .PHONY: test-fts-graph
 test-fts-graph:
 	@echo "$(BLUE)Running tests with FTS + graph features...$(RESET)"
@@ -462,7 +564,7 @@ test-full:
 	@echo "$(GREEN)✓ All tests passed (all features enabled)$(RESET)"
 
 # Feature configurations to test across modes
-FEATURE_CONFIGS := none fts graph fts,graph full
+FEATURE_CONFIGS := none fts graph http vector fts,graph full
 
 .PHONY: test-all
 test-all:
@@ -497,6 +599,12 @@ lint:
 	@echo "$(CYAN)• Running clippy with graph...$(RESET)"
 	@cargo clippy --features graph --workspace -- -D warnings
 	@echo "$(GREEN)✓ Clippy passed (with graph)$(RESET)"
+	@echo "$(CYAN)• Running clippy with HTTP...$(RESET)"
+	@cargo clippy --features http --workspace -- -D warnings
+	@echo "$(GREEN)✓ Clippy passed (with HTTP)$(RESET)"
+	@echo "$(CYAN)• Running clippy with vector...$(RESET)"
+	@cargo clippy --features vector --workspace -- -D warnings
+	@echo "$(GREEN)✓ Clippy passed (with vector)$(RESET)"
 	@echo "$(CYAN)• Running clippy with FTS + graph...$(RESET)"
 	@cargo clippy --features fts,graph --workspace -- -D warnings
 	@echo "$(GREEN)✓ Clippy passed (with FTS + graph)$(RESET)"
@@ -553,6 +661,32 @@ check-graph:
 	@echo "$(GREEN)✓ All graph checks passed$(RESET)"
 	@echo ""
 
+.PHONY: check-http
+check-http:
+	@echo "$(BLUE)Running checks for HTTP configuration...$(RESET)"
+	@echo "$(CYAN)• Building with HTTP...$(RESET)"
+	@cargo build --features http
+	@echo "$(CYAN)• Running clippy with HTTP...$(RESET)"
+	@cargo clippy --features http --workspace -- -D warnings
+	@echo "$(CYAN)• Running tests with HTTP...$(RESET)"
+	@cargo test --features http --workspace
+	@echo ""
+	@echo "$(GREEN)✓ All HTTP checks passed$(RESET)"
+	@echo ""
+
+.PHONY: check-vector
+check-vector:
+	@echo "$(BLUE)Running checks for vector configuration...$(RESET)"
+	@echo "$(CYAN)• Building with vector...$(RESET)"
+	@cargo build --features vector
+	@echo "$(CYAN)• Running clippy with vector...$(RESET)"
+	@cargo clippy --features vector --workspace -- -D warnings
+	@echo "$(CYAN)• Running tests with vector...$(RESET)"
+	@cargo test --features vector --workspace
+	@echo ""
+	@echo "$(GREEN)✓ All vector checks passed$(RESET)"
+	@echo ""
+
 .PHONY: check-fts-graph
 check-fts-graph:
 	@echo "$(BLUE)Running checks for FTS + graph configuration...$(RESET)"
@@ -579,7 +713,13 @@ check-all:
 	@echo "$(CYAN)═══ Configuration 3: With Graph ═══$(RESET)"
 	@$(MAKE) check-graph
 	@echo ""
-	@echo "$(CYAN)═══ Configuration 4: With FTS + Graph ═══$(RESET)"
+	@echo "$(CYAN)═══ Configuration 4: With HTTP ═══$(RESET)"
+	@$(MAKE) check-http
+	@echo ""
+	@echo "$(CYAN)═══ Configuration 5: With Vector ═══$(RESET)"
+	@$(MAKE) check-vector
+	@echo ""
+	@echo "$(CYAN)═══ Configuration 6: With FTS + Graph ═══$(RESET)"
 	@$(MAKE) check-fts-graph
 	@echo ""
 	@echo "$(GREEN)✓ Full validation complete (all configurations)$(RESET)"
@@ -646,7 +786,27 @@ build-all: clean $(BIN_DIR)
 		fi; \
 	done
 	@echo ""
-	@echo "$(CYAN)═══ Configuration 3: With FTS + Graph ═══$(RESET)"
+	@echo "$(CYAN)═══ Configuration 3: With HTTP ═══$(RESET)"
+	@cargo build --release --features http
+	@mkdir -p $(BIN_DIR)/http
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/http/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (HTTP, size: $$(du -h $(BIN_DIR)/http/$$bin | cut -f1))"; \
+		fi; \
+	done
+	@echo ""
+	@echo "$(CYAN)═══ Configuration 4: With Vector ═══$(RESET)"
+	@cargo build --release --features vector
+	@mkdir -p $(BIN_DIR)/vector
+	@for bin in $(BINARIES); do \
+		if [ -f $(TARGET)/$$bin ]; then \
+			cp $(TARGET)/$$bin $(BIN_DIR)/vector/$$bin; \
+			echo "  $(GREEN)✓$(RESET) $$bin (vector, size: $$(du -h $(BIN_DIR)/vector/$$bin | cut -f1))"; \
+		fi; \
+	done
+	@echo ""
+	@echo "$(CYAN)═══ Configuration 5: With FTS + Graph ═══$(RESET)"
 	@cargo build --release --features fts,graph
 	@mkdir -p $(BIN_DIR)/all
 	@for bin in $(BINARIES); do \
@@ -659,6 +819,8 @@ build-all: clean $(BIN_DIR)
 	@echo "$(GREEN)✓ All configurations built$(RESET)"
 	@echo "$(CYAN)→ Simple binaries in $(BIN_DIR)/simple/$(RESET)"
 	@echo "$(CYAN)→ FTS binaries in $(BIN_DIR)/fts/$(RESET)"
+	@echo "$(CYAN)→ HTTP binaries in $(BIN_DIR)/http/$(RESET)"
+	@echo "$(CYAN)→ Vector binaries in $(BIN_DIR)/vector/$(RESET)"
 	@echo "$(CYAN)→ FTS + graph binaries in $(BIN_DIR)/all/$(RESET)"
 	@echo "$(YELLOW)→ Run 'make size-compare' to see size comparison$(RESET)"
 
