@@ -630,7 +630,7 @@ async fn handle_vectordb_command(
         VectordbSubcommand::Build { force } => {
             let base = config.paths.base_path()?;
             let cache_dir = base.join(".cache").join("vector");
-            std::fs::create_dir_all(&cache_dir).map_err(|e| crate::error::Error::io(e))?;
+            std::fs::create_dir_all(&cache_dir).map_err(crate::error::Error::io)?;
             let cache_file = cache_dir.join("vector-cache.json");
 
             if force {

@@ -5,13 +5,30 @@
 
 #![cfg(feature = "fts")]
 
-use music_theory_mcp::config::{Config, PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
-use music_theory_mcp::search::build_index;
-use music_theory_mcp::state::AppState;
-use music_theory_mcp::tools::search::{search_concepts, SearchConceptsParams};
 use std::fs;
 use std::path::PathBuf;
+use std::sync::Arc;
+
+use music_theory_mcp::config::{Config, PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
+use music_theory_mcp::search::build_index;
+use music_theory_mcp::state::{initialize_fts, AppState};
+use music_theory_mcp::tools::search::{search_concepts, SearchConceptsParams};
 use tempfile::TempDir;
+
+/// Create AppState with FTS initialized and ready.
+async fn create_state_with_fts(config: Config) -> AppState {
+    build_index(&config).await.expect("Index build failed");
+    let state = AppState::new(config).await.expect("State creation failed");
+    let state_arc = Arc::new(state.clone());
+    initialize_fts(&state_arc).await.expect("FTS init failed");
+    for _ in 0..100 {
+        if state.is_fts_ready() {
+            return state;
+        }
+        tokio::time::sleep(std::time::Duration::from_millis(50)).await;
+    }
+    panic!("FTS did not become ready within 5 seconds");
+}
 
 /// Create a test config with Tantivy backend
 fn create_test_config(temp_dir: &TempDir, backend: &str, fuzzy: bool) -> Config {
@@ -162,10 +179,7 @@ async fn test_search_returns_relevant_results() {
     let config = create_test_config(&temp_dir, "tantivy", false);
 
     // Build index
-    build_index(&config).await.expect("Failed to build index");
-
-    // Create AppState (which loads the index)
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_state_with_fts(config).await;
 
     // Search for "triads"
     let params = SearchConceptsParams {
@@ -200,9 +214,7 @@ async fn test_search_ranking_by_relevance() {
     setup_test_data(&temp_dir).expect("Failed to setup test data");
 
     let config = create_test_config(&temp_dir, "tantivy", false);
-    build_index(&config).await.expect("Failed to build index");
-
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_state_with_fts(config).await;
 
     // Search for "chords" - appears in multiple documents
     let params = SearchConceptsParams {
@@ -242,9 +254,7 @@ async fn test_fuzzy_search_finds_typos() {
     setup_test_data(&temp_dir).expect("Failed to setup test data");
 
     let config = create_test_config(&temp_dir, "tantivy", true); // Enable fuzzy search
-    build_index(&config).await.expect("Failed to build index");
-
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_state_with_fts(config).await;
 
     // Search with typo: "haromny" instead of "harmony"
     let params = SearchConceptsParams {
@@ -309,12 +319,7 @@ async fn test_backend_switching_simple_to_tantivy() {
 
     // Build Tantivy index and test
     let tantivy_config = create_test_config(&temp_dir, "tantivy", false);
-    build_index(&tantivy_config)
-        .await
-        .expect("Failed to build index");
-    let tantivy_state = AppState::new(tantivy_config)
-        .await
-        .expect("Failed to create tantivy state");
+    let tantivy_state = create_state_with_fts(tantivy_config).await;
 
     let tantivy_response = search_concepts(&tantivy_state, params)
         .await
@@ -348,9 +353,7 @@ async fn test_snippet_generation_includes_context() {
     setup_test_data(&temp_dir).expect("Failed to setup test data");
 
     let config = create_test_config(&temp_dir, "tantivy", false);
-    build_index(&config).await.expect("Failed to build index");
-
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_state_with_fts(config).await;
 
     let params = SearchConceptsParams {
         query: "parallel".to_string(),
@@ -385,9 +388,7 @@ async fn test_empty_query_matches_all() {
     setup_test_data(&temp_dir).expect("Failed to setup test data");
 
     let config = create_test_config(&temp_dir, "tantivy", false);
-    build_index(&config).await.expect("Failed to build index");
-
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_state_with_fts(config).await;
 
     let params = SearchConceptsParams {
         query: "".to_string(), // Empty query should match all documents
@@ -418,9 +419,7 @@ async fn test_search_with_limit() {
     setup_test_data(&temp_dir).expect("Failed to setup test data");
 
     let config = create_test_config(&temp_dir, "tantivy", false);
-    build_index(&config).await.expect("Failed to build index");
-
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_state_with_fts(config).await;
 
     // Search with limit of 1
     let params = SearchConceptsParams {
@@ -483,6 +482,14 @@ async fn test_index_rebuild_clears_old_data() {
 
     // Search should find both
     let state = AppState::new(config).await.expect("Failed to create state");
+    let state_arc = Arc::new(state.clone());
+    initialize_fts(&state_arc).await.expect("FTS init failed");
+    for _ in 0..100 {
+        if state.is_fts_ready() {
+            break;
+        }
+        tokio::time::sleep(std::time::Duration::from_millis(50)).await;
+    }
     let params = SearchConceptsParams {
         query: "test".to_string(),
         query_mode: None,
@@ -508,10 +515,9 @@ async fn test_search_tool_integration() {
     setup_test_data(&temp_dir).expect("Failed to setup test data");
 
     let config = create_test_config(&temp_dir, "tantivy", false);
-    build_index(&config).await.expect("Failed to build index");
 
     // Test the search_concepts tool (full integration)
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_state_with_fts(config).await;
     let params = SearchConceptsParams {
         query: "harmony".to_string(),
         query_mode: None,
@@ -540,9 +546,7 @@ async fn test_category_filtering() {
     setup_test_data(&temp_dir).expect("Failed to setup test data");
 
     let config = create_test_config(&temp_dir, "tantivy", false);
-    build_index(&config).await.expect("Failed to build index");
-
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_state_with_fts(config).await;
 
     // Search without category filter - should find results from multiple categories
     let params_all = SearchConceptsParams {
@@ -656,9 +660,7 @@ async fn test_phrase_search_order_sensitivity() {
     ).expect("Failed to create test card");
 
     let config = create_test_config(&temp_dir, "tantivy", false);
-    build_index(&config).await.expect("Failed to build index");
-
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_state_with_fts(config).await;
 
     // Search for exact phrase "perfect authentic cadence"
     let params_exact = SearchConceptsParams {
@@ -750,11 +752,8 @@ async fn test_health_tool_with_fts_ready() {
     // Set up test data
     setup_test_data(&temp_dir).expect("Failed to setup test data");
 
-    // Build index
-    build_index(&config).await.expect("Failed to build index");
-
-    // Create state (should load the index)
-    let state = AppState::new(config).await.expect("Failed to create state");
+    // Create state with FTS
+    let state = create_state_with_fts(config).await;
 
     // Get health status
     let health = get_health(&state).await.expect("Failed to get health");

@@ -8,10 +8,12 @@
 
 #![cfg(feature = "fts")]
 
+use std::sync::Arc;
+
 use music_theory_mcp::config::{Config, PathsConfig, SearchConfig, ServerConfig, SourcesConfig};
 use music_theory_mcp::metadata::{extract_metadata, ContentType};
 use music_theory_mcp::search::build_index;
-use music_theory_mcp::state::AppState;
+use music_theory_mcp::state::{initialize_fts, AppState};
 use music_theory_mcp::tools::search::{search_concepts, SearchConceptsParams};
 use music_theory_mcp::tools::sources::{
     check_source_availability, list_source_chapters, AvailabilityStatus,
@@ -19,6 +21,23 @@ use music_theory_mcp::tools::sources::{
 
 use tempfile::TempDir;
 use tokio::fs;
+
+/// Create AppState with FTS initialized and ready.
+/// Builds index, creates state, starts async FTS loading, and waits for ready.
+async fn create_state_with_fts(config: Config) -> AppState {
+    build_index(&config).await.expect("Index build failed");
+    let state = AppState::new(config).await.expect("State creation failed");
+    let state_arc = Arc::new(state.clone());
+    initialize_fts(&state_arc).await.expect("FTS init failed");
+    // Poll for FTS readiness
+    for _ in 0..100 {
+        if state.is_fts_ready() {
+            return state;
+        }
+        tokio::time::sleep(std::time::Duration::from_millis(50)).await;
+    }
+    panic!("FTS did not become ready within 5 seconds");
+}
 
 /// Create a test config with temp directories.
 async fn create_test_config(temp_dir: &TempDir) -> Config {
@@ -298,9 +317,7 @@ async fn test_search_without_filter_returns_all_types() {
     create_test_fixtures(&temp_dir).await;
 
     let config = create_test_config(&temp_dir).await;
-    build_index(&config).await.expect("Index build failed");
-
-    let state = AppState::new(config).await.expect("State creation failed");
+    let state = create_state_with_fts(config).await;
 
     // Search for "cadence" - appears in all 4 content types
     let params = SearchConceptsParams {
@@ -344,9 +361,7 @@ async fn test_search_filter_by_content_type() {
     create_test_fixtures(&temp_dir).await;
 
     let config = create_test_config(&temp_dir).await;
-    build_index(&config).await.expect("Index build failed");
-
-    let state = AppState::new(config).await.expect("State creation failed");
+    let state = create_state_with_fts(config).await;
 
     // Search only concept cards
     let params = SearchConceptsParams {
@@ -382,9 +397,7 @@ async fn test_search_filter_by_multiple_content_types() {
     create_test_fixtures(&temp_dir).await;
 
     let config = create_test_config(&temp_dir).await;
-    build_index(&config).await.expect("Index build failed");
-
-    let state = AppState::new(config).await.expect("State creation failed");
+    let state = create_state_with_fts(config).await;
 
     // Search concept cards and guides
     let params = SearchConceptsParams {
@@ -420,9 +433,7 @@ async fn test_search_with_category_and_content_type_filters() {
     create_test_fixtures(&temp_dir).await;
 
     let config = create_test_config(&temp_dir).await;
-    build_index(&config).await.expect("Index build failed");
-
-    let state = AppState::new(config).await.expect("State creation failed");
+    let state = create_state_with_fts(config).await;
 
     // Search harmony category + source chapters only
     let params = SearchConceptsParams {
@@ -495,15 +506,7 @@ async fn test_check_source_availability_indexed() {
     create_test_fixtures(&temp_dir).await;
 
     let config = create_test_config(&temp_dir).await;
-    let stats = build_index(&config).await.expect("Index build failed");
-
-    eprintln!("Index stats: {:?}", stats);
-    eprintln!("FTS ready before state creation");
-
-    let state = AppState::new(config).await.expect("State creation failed");
-
-    eprintln!("State FTS ready: {}", state.is_fts_ready());
-    eprintln!("Active backend: {}", state.active_backend_name());
+    let state = create_state_with_fts(config).await;
 
     // Check availability of indexed source
     let response = check_source_availability(&state, "test-source")
@@ -568,9 +571,7 @@ async fn test_list_source_chapters_from_index() {
     create_test_fixtures(&temp_dir).await;
 
     let config = create_test_config(&temp_dir).await;
-    build_index(&config).await.expect("Index build failed");
-
-    let state = AppState::new(config).await.expect("State creation failed");
+    let state = create_state_with_fts(config).await;
 
     // List chapters from indexed source
     let response = list_source_chapters(&state, "test-source")
@@ -601,9 +602,7 @@ async fn test_cross_content_type_relevance_ranking() {
     create_test_fixtures(&temp_dir).await;
 
     let config = create_test_config(&temp_dir).await;
-    build_index(&config).await.expect("Index build failed");
-
-    let state = AppState::new(config).await.expect("State creation failed");
+    let state = create_state_with_fts(config).await;
 
     // Search for "cadence" - should rank by relevance across content types
     let params = SearchConceptsParams {

@@ -26,10 +26,6 @@ use crate::search::SimpleSearch;
 #[cfg(feature = "fts")]
 use crate::search::{build_index, is_index_fresh, TantivySearch};
 
-/// Type alias for FTS backend initialization return type.
-#[cfg(feature = "fts")]
-type FtsBackendInit = (Arc<StdRwLock<Option<Arc<TantivySearch>>>>, ServiceHandle);
-
 /// Shared application state.
 ///
 /// Manages search backends and FTS readiness. Cloneable for sharing across
@@ -91,16 +87,13 @@ impl AppState {
     pub async fn new(config: Config) -> Result<Self> {
         let simple_backend = Arc::new(SimpleSearch::new(config.clone()));
 
-        #[cfg(feature = "fts")]
-        let (fts_backend, fts_service) = initialize_fts_backend(&config)?;
-
         Ok(Self {
             config,
             simple_backend,
             #[cfg(feature = "fts")]
-            fts_backend,
+            fts_backend: Arc::new(StdRwLock::new(None)),
             #[cfg(feature = "fts")]
-            fts_service,
+            fts_service: ServiceHandle::new("fts"),
             #[cfg(feature = "graph")]
             graph_service: ServiceHandle::new("graph"),
             #[cfg(feature = "graph")]
@@ -155,18 +148,6 @@ impl AppState {
     #[cfg(feature = "fts")]
     pub fn is_fts_ready(&self) -> bool {
         self.fts_service.state().is_ready()
-    }
-
-    /// Mark FTS as ready or not ready (internal use).
-    ///
-    /// Used by background indexing to signal when FTS becomes available.
-    #[cfg(feature = "fts")]
-    pub(crate) fn set_fts_ready(&self, ready: bool) {
-        if ready {
-            self.fts_service.set_state(ServiceState::Ready);
-        } else {
-            self.fts_service.set_state(ServiceState::Stopped);
-        }
     }
 
     /// Update the FTS backend after background indexing completes.
@@ -293,47 +274,54 @@ impl AppState {
     }
 }
 
-/// Initialize FTS backend on startup (module-level function).
+/// Spawn an async task that loads or rebuilds the FTS index.
 ///
-/// Attempts to load an existing Tantivy index if configured.
-/// Returns None if index doesn't exist (will be built in background).
-///
-/// # Arguments
-///
-/// * `config` - Server configuration
-///
-/// # Returns
-///
-/// Returns tuple of (fts_backend, fts_service) where backend may be None
-/// if index needs to be built.
+/// Follows the same async pattern as graph and vector initialization:
+/// transitions through `Starting → Ready` (or `Failed`/`Degraded`).
 #[cfg(feature = "fts")]
-fn initialize_fts_backend(config: &Config) -> Result<FtsBackendInit> {
-    let fts_service = ServiceHandle::new("fts");
+fn start_fts_loading(state: Arc<AppState>, needs_rebuild: bool) {
+    tokio::spawn(async move {
+        state.fts_service.set_state(ServiceState::Starting);
 
-    if config.search.backend == "tantivy" {
-        let fabryk_config = crate::search::to_fabryk_search_config(&config.search);
-
-        // Try to load existing index
-        match TantivySearch::new(&fabryk_config) {
-            Ok(backend) => {
-                // Index exists and is loadable
-                log::info!("Loaded existing FTS index from disk");
-                fts_service.set_state(ServiceState::Ready);
-                Ok((
-                    Arc::new(StdRwLock::new(Some(Arc::new(backend)))),
-                    fts_service,
-                ))
-            }
-            Err(e) => {
-                // Index doesn't exist yet - will build in background (Phase 3)
-                log::debug!("FTS index not found: {} (will build if configured)", e);
-                Ok((Arc::new(StdRwLock::new(None)), fts_service))
+        if needs_rebuild {
+            // Build index from scratch
+            match build_fts_index_for_state(&state).await {
+                Ok(stats) => {
+                    log::info!(
+                        indexed = stats.indexed,
+                        errors = stats.errors;
+                        "FTS index built"
+                    );
+                }
+                Err(e) => {
+                    log::warn!("FTS indexing failed (graceful degradation): {}", e);
+                    state
+                        .fts_service
+                        .set_state(ServiceState::Degraded(format!("simple fallback: {e}")));
+                    return;
+                }
             }
         }
-    } else {
-        // FTS not configured
-        Ok((Arc::new(StdRwLock::new(None)), fts_service))
-    }
+
+        // Load index from disk (freshly built or pre-existing)
+        let fabryk_config = crate::search::to_fabryk_search_config(&state.config.search);
+        match TantivySearch::new(&fabryk_config) {
+            Ok(backend) => {
+                if state.update_fts_backend(backend).is_ok() {
+                    state.fts_service.set_state(ServiceState::Ready);
+                } else {
+                    state.fts_service.set_state(ServiceState::Failed(
+                        "Failed to store FTS backend".to_string(),
+                    ));
+                }
+            }
+            Err(e) => {
+                state.fts_service.set_state(ServiceState::Failed(format!(
+                    "Failed to load FTS index: {e}"
+                )));
+            }
+        }
+    });
 }
 
 /// Initialize FTS backend and start background indexing if needed.
@@ -363,20 +351,10 @@ pub async fn initialize_fts(state: &Arc<AppState>) -> Result<()> {
     }
 
     let index_path = state.config.search.index_path()?;
+    let needs_rebuild = !index_exists_and_fresh(&index_path, &state.config).await?;
 
-    // Check if index exists and is fresh
-    if index_exists_and_fresh(&index_path, &state.config).await? {
-        log::info!("FTS index found and is current");
-        // Index already loaded during AppState::new()
-        Ok(())
-    } else {
-        log::info!(
-            "FTS index needs building — starting background task. \
-             Tip: run `music-theory-mcp cache download fts` to use a pre-built index."
-        );
-        start_background_indexing(Arc::clone(state));
-        Ok(())
-    }
+    start_fts_loading(Arc::clone(state), needs_rebuild);
+    Ok(())
 }
 
 /// Check if index exists and is fresh (module-level helper).
@@ -462,51 +440,6 @@ fn start_graph_loading(state: Arc<AppState>, data_dir: std::path::PathBuf) {
                 state
                     .graph_service
                     .set_state(ServiceState::Failed(e.to_string()));
-            }
-        }
-    });
-}
-
-/// Start background indexing task (module-level function).
-///
-/// Spawns a tokio task that builds the index asynchronously.
-/// When complete, updates the AppState with the new backend and marks FTS ready.
-#[cfg(feature = "fts")]
-fn start_background_indexing(state: Arc<AppState>) {
-    tokio::spawn(async move {
-        log::info!("Background indexing started");
-
-        match build_fts_index_for_state(&state).await {
-            Ok(stats) => {
-                log::info!(
-                    indexed = stats.indexed,
-                    errors = stats.errors;
-                    "Background indexing complete"
-                );
-
-                // Load newly built index
-                let fabryk_config = crate::search::to_fabryk_search_config(&state.config.search);
-                match TantivySearch::new(&fabryk_config) {
-                    Ok(backend) => {
-                        if state.update_fts_backend(backend).is_ok() {
-                            state.set_fts_ready(true);
-                            log::info!("FTS backend now active");
-                        } else {
-                            log::error!("Failed to update FTS backend");
-                        }
-                    }
-                    Err(e) => {
-                        log::error!("Failed to load newly built index: {}", e);
-                    }
-                }
-            }
-            Err(e) => {
-                log::warn!("Background indexing failed (graceful degradation): {}", e);
-                // Mark FTS as ready anyway — the simple backend fallback will
-                // handle searches. This ensures the server doesn't permanently
-                // report FTS as unavailable when content paths are missing.
-                state.set_fts_ready(true);
-                log::info!("FTS marked ready with simple backend fallback");
             }
         }
     });
@@ -780,7 +713,7 @@ mod tests {
 
     #[tokio::test]
     #[cfg(feature = "fts")]
-    async fn test_set_fts_ready() {
+    async fn test_fts_service_ready_via_handle() {
         use tempfile::TempDir;
 
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
@@ -796,11 +729,11 @@ mod tests {
 
         assert!(!state.is_fts_ready());
 
-        state.set_fts_ready(true);
+        state.fts_service.set_state(ServiceState::Ready);
         assert!(state.is_fts_ready());
         assert_eq!(state.fts_service.state(), ServiceState::Ready);
 
-        state.set_fts_ready(false);
+        state.fts_service.set_state(ServiceState::Stopped);
         assert!(!state.is_fts_ready());
         assert_eq!(state.fts_service.state(), ServiceState::Stopped);
     }
@@ -899,7 +832,7 @@ Test content.
         let fabryk_config = crate::search::to_fabryk_search_config(&config.search);
         let backend = TantivySearch::new(&fabryk_config).expect("Failed to load index");
         state.update_fts_backend(backend).expect("Failed to update");
-        state.set_fts_ready(true);
+        state.fts_service.set_state(ServiceState::Ready);
 
         // Now search_backend should return FTS backend
         let _backend = state.search_backend();
@@ -926,7 +859,7 @@ Test content.
         assert_eq!(state.active_backend_name(), "simple");
 
         // After marking ready
-        state.set_fts_ready(true);
+        state.fts_service.set_state(ServiceState::Ready);
         assert_eq!(state.active_backend_name(), "tantivy");
     }
 
@@ -1032,31 +965,25 @@ New content.
 
     #[tokio::test]
     #[cfg(feature = "fts")]
-    async fn test_initialize_fts_backend_with_simple() {
+    async fn test_new_state_fts_not_ready_simple_backend() {
         let config = test_config("simple");
-        let result = initialize_fts_backend(&config);
-        assert!(result.is_ok());
-
-        let (backend, fts_service) = result.unwrap();
-        assert!(backend.read().unwrap().is_none());
-        assert!(!fts_service.state().is_ready());
+        let state = AppState::new(config).await.expect("Failed to create state");
+        assert!(!state.is_fts_ready());
+        assert_eq!(state.fts_service.state(), ServiceState::Stopped);
     }
 
     #[tokio::test]
     #[cfg(feature = "fts")]
-    async fn test_initialize_fts_backend_no_index() {
+    async fn test_new_state_fts_not_ready_no_index() {
         use std::env;
 
         let mut config = test_config("tantivy");
         let nonexistent_path = env::temp_dir().join(format!("nonexistent-{}", std::process::id()));
         config.search.index_path = nonexistent_path.to_string_lossy().to_string();
 
-        let result = initialize_fts_backend(&config);
-        assert!(result.is_ok());
-
-        let (backend, fts_service) = result.unwrap();
-        assert!(backend.read().unwrap().is_none());
-        assert!(!fts_service.state().is_ready());
+        let state = AppState::new(config).await.expect("Failed to create state");
+        assert!(!state.is_fts_ready());
+        assert_eq!(state.fts_service.state(), ServiceState::Stopped);
     }
 
     #[tokio::test]
@@ -1118,6 +1045,7 @@ Test content.
     async fn test_initialize_fts_with_fresh_index() {
         use std::fs;
         use tempfile::TempDir;
+        use tokio::time::{sleep, Duration};
 
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         let index_path = temp_dir.path().join("test-index");
@@ -1146,13 +1074,25 @@ Test content.
             .await
             .expect("Failed to build index");
 
-        // Create state (should load existing index)
+        // Create state (starts with empty FTS state)
         let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
 
-        // Initialize FTS - should detect fresh index and not start background indexing
+        // Initialize FTS - should detect fresh index and start async loading
         let result = initialize_fts(&state).await;
         assert!(result.is_ok());
-        assert!(state.is_fts_ready());
+
+        // Poll for FTS to become ready (async loading)
+        let mut attempts = 0;
+        while !state.is_fts_ready() && attempts < 40 {
+            sleep(Duration::from_millis(100)).await;
+            attempts += 1;
+        }
+
+        assert!(
+            state.is_fts_ready(),
+            "FTS should be ready after loading fresh index (waited {} ms)",
+            attempts * 100
+        );
     }
 
     #[tokio::test]
@@ -1208,7 +1148,7 @@ Test content.
 
     #[tokio::test]
     #[cfg(feature = "fts")]
-    async fn test_start_background_indexing_success() {
+    async fn test_start_fts_loading_with_rebuild() {
         use std::fs;
         use tempfile::TempDir;
         use tokio::time::{sleep, Duration};
@@ -1249,20 +1189,28 @@ Test content.
 
         let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
 
-        // Manually call start_background_indexing
-        start_background_indexing(Arc::clone(&state));
+        // Manually call start_fts_loading with rebuild
+        start_fts_loading(Arc::clone(&state), true);
 
-        // Give it time to complete
-        sleep(Duration::from_secs(2)).await;
+        // Poll for FTS to become ready
+        let mut attempts = 0;
+        while !state.is_fts_ready() && attempts < 40 {
+            sleep(Duration::from_millis(100)).await;
+            attempts += 1;
+        }
 
         // Check if FTS became ready
-        assert!(state.is_fts_ready());
+        assert!(
+            state.is_fts_ready(),
+            "FTS should be ready after rebuild (waited {} ms)",
+            attempts * 100
+        );
         assert_eq!(state.active_backend_name(), "tantivy");
     }
 
     #[tokio::test]
     #[cfg(feature = "fts")]
-    async fn test_start_background_indexing_empty_directory() {
+    async fn test_start_fts_loading_empty_directory() {
         use std::env;
         use tempfile::TempDir;
         use tokio::time::{sleep, Duration};
@@ -1282,8 +1230,8 @@ Test content.
         // Verify initial state
         assert!(!state.is_fts_ready());
 
-        // Manually call start_background_indexing (will succeed with 0 documents due to graceful degradation)
-        start_background_indexing(Arc::clone(&state));
+        // Call start_fts_loading with rebuild (will succeed with 0 documents due to graceful degradation)
+        start_fts_loading(Arc::clone(&state), true);
 
         // Poll for FTS to become ready (with timeout for CI environments)
         let mut attempts = 0;
@@ -1309,7 +1257,7 @@ Test content.
         let state = AppState::new(config).await.expect("Failed to create state");
 
         // Set ready but don't actually set a backend
-        state.set_fts_ready(true);
+        state.fts_service.set_state(ServiceState::Ready);
 
         // Should fall back to simple backend because backend is None
         let backend = state.search_backend();
@@ -1507,9 +1455,10 @@ Test content.
 
     #[tokio::test]
     #[cfg(feature = "fts")]
-    async fn test_appstate_new_tantivy_with_existing_index() {
+    async fn test_initialize_fts_loads_existing_index() {
         use std::fs;
         use tempfile::TempDir;
+        use tokio::time::{sleep, Duration};
 
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         let index_path = temp_dir.path().join("test-index");
@@ -1549,9 +1498,26 @@ Test content.
             .await
             .expect("Failed to build index");
 
-        // Now create AppState - should detect and load existing index
-        let state = AppState::new(config).await.expect("Failed to create state");
-        assert!(state.is_fts_ready());
+        // Create AppState - now starts with empty FTS state
+        let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
+
+        // Initialize FTS - should detect fresh index and load it asynchronously
+        initialize_fts(&state)
+            .await
+            .expect("Failed to initialize FTS");
+
+        // Poll for FTS to become ready
+        let mut attempts = 0;
+        while !state.is_fts_ready() && attempts < 40 {
+            sleep(Duration::from_millis(100)).await;
+            attempts += 1;
+        }
+
+        assert!(
+            state.is_fts_ready(),
+            "FTS should be ready after loading existing index (waited {} ms)",
+            attempts * 100
+        );
         assert_eq!(state.active_backend_name(), "tantivy");
 
         // search_backend should return the FTS backend
@@ -1560,9 +1526,10 @@ Test content.
 
     #[tokio::test]
     #[cfg(feature = "fts")]
-    async fn test_initialize_fts_backend_with_existing_index() {
+    async fn test_start_fts_loading_with_existing_index() {
         use std::fs;
         use tempfile::TempDir;
+        use tokio::time::{sleep, Duration};
 
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         let index_path = temp_dir.path().join("test-index");
@@ -1602,11 +1569,22 @@ Test content.
             .await
             .expect("Failed to build index");
 
-        // initialize_fts_backend should load the existing index
-        let (backend, fts_service) =
-            initialize_fts_backend(&config).expect("Failed to init backend");
-        assert!(fts_service.state().is_ready());
-        assert!(backend.read().unwrap().is_some());
+        // Create state and start FTS loading (no rebuild needed since index exists)
+        let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
+        start_fts_loading(Arc::clone(&state), false);
+
+        // Poll for FTS to become ready
+        let mut attempts = 0;
+        while !state.is_fts_ready() && attempts < 40 {
+            sleep(Duration::from_millis(100)).await;
+            attempts += 1;
+        }
+
+        assert!(
+            state.is_fts_ready(),
+            "FTS should be ready after loading existing index (waited {} ms)",
+            attempts * 100
+        );
     }
 
     #[tokio::test]
@@ -1631,7 +1609,7 @@ Test content.
 
     #[tokio::test]
     #[cfg(feature = "fts")]
-    async fn test_set_fts_ready_toggle_multiple_times() {
+    async fn test_fts_service_toggle_multiple_times() {
         use tempfile::TempDir;
 
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
@@ -1646,11 +1624,11 @@ Test content.
 
         // Toggle multiple times to exercise both branches repeatedly
         for _ in 0..3 {
-            state.set_fts_ready(true);
+            state.fts_service.set_state(ServiceState::Ready);
             assert!(state.is_fts_ready());
             assert_eq!(state.active_backend_name(), "tantivy");
 
-            state.set_fts_ready(false);
+            state.fts_service.set_state(ServiceState::Stopped);
             assert!(!state.is_fts_ready());
             assert_eq!(state.active_backend_name(), "simple");
         }
@@ -1680,7 +1658,7 @@ Test content.
         assert_eq!(state.active_backend_name(), "simple");
 
         // Transition to Ready
-        state.set_fts_ready(true);
+        state.fts_service.set_state(ServiceState::Ready);
         assert!(state.is_fts_ready());
 
         // Transition to Failed

@@ -6,13 +6,16 @@
 //! Phase 1 Tests: Multi-word query logic improvements
 
 #[cfg(feature = "fts")]
+use std::sync::Arc;
+
+#[cfg(feature = "fts")]
 use music_theory_mcp::config::{
     Config, PathsConfig, QueryMode, SearchConfig, ServerConfig, SourcesConfig,
 };
 #[cfg(feature = "fts")]
 use music_theory_mcp::search::build_index;
 #[cfg(feature = "fts")]
-use music_theory_mcp::state::AppState;
+use music_theory_mcp::state::{initialize_fts, AppState};
 #[cfg(feature = "fts")]
 use music_theory_mcp::tools::search::{search_concepts, SearchConceptsParams};
 
@@ -110,16 +113,30 @@ async fn ensure_index_built() {
         .await;
 }
 
+/// Create AppState with FTS initialized and ready.
+#[cfg(feature = "fts")]
+async fn create_fts_state() -> AppState {
+    ensure_index_built().await;
+    let config = test_config();
+    let state = AppState::new(config).await.expect("Failed to create state");
+    let state_arc = Arc::new(state.clone());
+    initialize_fts(&state_arc).await.expect("FTS init failed");
+    for _ in 0..100 {
+        if state.is_fts_ready() {
+            return state;
+        }
+        tokio::time::sleep(std::time::Duration::from_millis(50)).await;
+    }
+    panic!("FTS did not become ready within 5 seconds");
+}
+
 /// Helper to perform search with default settings
 #[cfg(feature = "fts")]
 async fn search_default(
     query: &str,
     limit: usize,
 ) -> Vec<music_theory_mcp::tools::search::SearchResult> {
-    ensure_index_built().await;
-
-    let config = test_config();
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_fts_state().await;
 
     let params = SearchConceptsParams {
         query: query.to_string(),
@@ -147,10 +164,7 @@ async fn search_with_mode(
     limit: usize,
     mode: QueryMode,
 ) -> Vec<music_theory_mcp::tools::search::SearchResult> {
-    ensure_index_built().await;
-
-    let config = test_config();
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_fts_state().await;
 
     let params = SearchConceptsParams {
         query: query.to_string(),
@@ -534,10 +548,7 @@ async fn test_single_term_unchanged() {
 #[serial]
 #[cfg(feature = "fts")]
 async fn test_empty_query_matches_all() {
-    ensure_index_built().await;
-
-    let config = test_config();
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_fts_state().await;
 
     let params = SearchConceptsParams {
         query: "".to_string(), // Empty query should match all documents
@@ -566,10 +577,7 @@ async fn test_empty_query_matches_all() {
 #[serial]
 #[cfg(feature = "fts")]
 async fn test_wildcard_query_matches_all() {
-    ensure_index_built().await;
-
-    let config = test_config();
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_fts_state().await;
 
     let params = SearchConceptsParams {
         query: "*".to_string(), // Wildcard query should match all documents
@@ -603,10 +611,7 @@ async fn test_wildcard_query_matches_all() {
 #[serial]
 #[cfg(feature = "fts")]
 async fn test_whitespace_only_query() {
-    ensure_index_built().await;
-
-    let config = test_config();
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_fts_state().await;
 
     let params = SearchConceptsParams {
         query: "   ".to_string(),
@@ -930,10 +935,7 @@ async fn test_phrase_vs_non_phrase() {
 #[serial]
 #[cfg(feature = "fts")]
 async fn test_backend_is_tantivy() {
-    ensure_index_built().await;
-
-    let config = test_config();
-    let state = AppState::new(config).await.expect("Failed to create state");
+    let state = create_fts_state().await;
 
     let params = SearchConceptsParams {
         query: "cadence".to_string(),

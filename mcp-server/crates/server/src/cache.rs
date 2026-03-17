@@ -66,7 +66,7 @@ impl FromStr for CacheBackend {
             "graph" => Ok(Self::Graph),
             "fts" => Ok(Self::Fts),
             "vector" => Ok(Self::Vector),
-            other => Err(Error::operation(&format!(
+            other => Err(Error::operation(format!(
                 "Unknown cache backend: '{other}'. Expected one of: graph, fts, vector"
             ))),
         }
@@ -200,7 +200,7 @@ pub fn load_manifest(base_path: &Path) -> Result<CacheManifest> {
     }
     let contents = std::fs::read_to_string(&path).map_err(|e| Error::io_with_path(e, &path))?;
     serde_json::from_str(&contents).map_err(|e| {
-        Error::operation(&format!(
+        Error::operation(format!(
             "Failed to parse cache manifest at {}: {e}",
             path.display()
         ))
@@ -210,9 +210,8 @@ pub fn load_manifest(base_path: &Path) -> Result<CacheManifest> {
 /// Write the cache manifest as pretty-printed JSON.
 pub fn save_manifest(base_path: &Path, manifest: &CacheManifest) -> Result<()> {
     let path = base_path.join(MANIFEST_FILENAME);
-    let json = serde_json::to_string_pretty(manifest).map_err(|e| {
-        Error::operation(&format!("Failed to serialize cache manifest: {e}"))
-    })?;
+    let json = serde_json::to_string_pretty(manifest)
+        .map_err(|e| Error::operation(format!("Failed to serialize cache manifest: {e}")))?;
     std::fs::write(&path, json).map_err(|e| Error::io_with_path(e, &path))
 }
 
@@ -266,13 +265,11 @@ pub fn shell_download(url: &str, dest: &Path) -> Result<()> {
         .arg(dest)
         .arg(url)
         .output()
-        .map_err(|e| {
-            Error::operation(&format!("Failed to execute curl: {e}"))
-        })?;
+        .map_err(|e| Error::operation(format!("Failed to execute curl: {e}")))?;
 
     if !output.status.success() {
         let stderr = String::from_utf8_lossy(&output.stderr);
-        return Err(Error::operation(&format!(
+        return Err(Error::operation(format!(
             "curl exited with status {}: {stderr}",
             output.status
         )));
@@ -289,27 +286,21 @@ pub fn verify_checksum(archive: &Path, expected_hash: &str) -> Result<()> {
         .args(["-a", "256"])
         .arg(archive)
         .output()
-        .map_err(|e| {
-            Error::operation(&format!("Failed to execute shasum: {e}"))
-        })?;
+        .map_err(|e| Error::operation(format!("Failed to execute shasum: {e}")))?;
 
     if !output.status.success() {
         let stderr = String::from_utf8_lossy(&output.stderr);
-        return Err(Error::operation(&format!(
+        return Err(Error::operation(format!(
             "shasum exited with status {}: {stderr}",
             output.status
         )));
     }
 
     let stdout = String::from_utf8_lossy(&output.stdout);
-    let actual_hash = stdout
-        .split_whitespace()
-        .next()
-        .unwrap_or("")
-        .trim();
+    let actual_hash = stdout.split_whitespace().next().unwrap_or("").trim();
 
     if actual_hash != expected_hash.trim() {
-        return Err(Error::operation(&format!(
+        return Err(Error::operation(format!(
             "Checksum mismatch for {}: expected {}, got {actual_hash}",
             archive.display(),
             expected_hash.trim()
@@ -321,20 +312,22 @@ pub fn verify_checksum(archive: &Path, expected_hash: &str) -> Result<()> {
 
 /// Extract a `.tar.gz` archive into a target directory.
 pub fn extract_archive(archive: &Path, target_dir: &Path) -> Result<()> {
-    log::info!("Extracting {} to {} ...", archive.display(), target_dir.display());
+    log::info!(
+        "Extracting {} to {} ...",
+        archive.display(),
+        target_dir.display()
+    );
     let output = Command::new("tar")
         .args(["-xzf"])
         .arg(archive)
         .arg("-C")
         .arg(target_dir)
         .output()
-        .map_err(|e| {
-            Error::operation(&format!("Failed to execute tar: {e}"))
-        })?;
+        .map_err(|e| Error::operation(format!("Failed to execute tar: {e}")))?;
 
     if !output.status.success() {
         let stderr = String::from_utf8_lossy(&output.stderr);
-        return Err(Error::operation(&format!(
+        return Err(Error::operation(format!(
             "tar exited with status {}: {stderr}",
             output.status
         )));
@@ -391,11 +384,7 @@ pub fn download_cache(backend: &CacheBackend, config: &Config, force: bool) -> R
     // Read expected checksum from sidecar.
     let expected_hash = std::fs::read_to_string(&checksum_file)
         .map_err(|e| Error::io_with_path(e, &checksum_file))?;
-    let expected_hash = expected_hash
-        .split_whitespace()
-        .next()
-        .unwrap_or("")
-        .trim();
+    let expected_hash = expected_hash.split_whitespace().next().unwrap_or("").trim();
 
     // Verify and extract.
     verify_checksum(&archive_file, expected_hash)?;
@@ -457,13 +446,13 @@ pub fn package_cache(
         }
     }
 
-    let output = cmd.output().map_err(|e| {
-        Error::operation(&format!("Failed to execute tar: {e}"))
-    })?;
+    let output = cmd
+        .output()
+        .map_err(|e| Error::operation(format!("Failed to execute tar: {e}")))?;
 
     if !output.status.success() {
         let stderr = String::from_utf8_lossy(&output.stderr);
-        return Err(Error::operation(&format!(
+        return Err(Error::operation(format!(
             "tar exited with status {}: {stderr}",
             output.status
         )));
@@ -527,8 +516,7 @@ fn days_to_date(days_since_epoch: u64) -> (u64, u64, u64) {
     let z = days_since_epoch as i64 + 719468;
     let era = if z >= 0 { z } else { z - 146096 } / 146097;
     let doe = (z - era * 146097) as u64; // day of era [0, 146096]
-    let yoe =
-        (doe - doe / 1460 + doe / 36524 - doe / 146096) / 365; // year of era [0, 399]
+    let yoe = (doe - doe / 1460 + doe / 36524 - doe / 146096) / 365; // year of era [0, 399]
     let y = yoe as i64 + era * 400;
     let doy = doe - (365 * yoe + yoe / 4 - yoe / 100); // day of year [0, 365]
     let mp = (5 * doy + 2) / 153; // month index [0, 11]
@@ -599,14 +587,26 @@ mod tests {
 
     #[test]
     fn test_cache_backend_from_str() {
-        assert_eq!(CacheBackend::from_str("graph").unwrap(), CacheBackend::Graph);
+        assert_eq!(
+            CacheBackend::from_str("graph").unwrap(),
+            CacheBackend::Graph
+        );
         assert_eq!(CacheBackend::from_str("fts").unwrap(), CacheBackend::Fts);
-        assert_eq!(CacheBackend::from_str("vector").unwrap(), CacheBackend::Vector);
+        assert_eq!(
+            CacheBackend::from_str("vector").unwrap(),
+            CacheBackend::Vector
+        );
 
         // Case-insensitive.
-        assert_eq!(CacheBackend::from_str("GRAPH").unwrap(), CacheBackend::Graph);
+        assert_eq!(
+            CacheBackend::from_str("GRAPH").unwrap(),
+            CacheBackend::Graph
+        );
         assert_eq!(CacheBackend::from_str("FTS").unwrap(), CacheBackend::Fts);
-        assert_eq!(CacheBackend::from_str("Vector").unwrap(), CacheBackend::Vector);
+        assert_eq!(
+            CacheBackend::from_str("Vector").unwrap(),
+            CacheBackend::Vector
+        );
 
         // Invalid name.
         assert!(CacheBackend::from_str("unknown").is_err());
@@ -647,7 +647,10 @@ mod tests {
         let result = parse_backend_arg("nope");
         assert!(result.is_err());
         let msg = result.unwrap_err().to_string();
-        assert!(msg.contains("nope"), "Error should mention the invalid name");
+        assert!(
+            msg.contains("nope"),
+            "Error should mention the invalid name"
+        );
     }
 
     // -----------------------------------------------------------------------
