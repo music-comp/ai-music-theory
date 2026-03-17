@@ -1,46 +1,85 @@
 ---
 concept: Strong Cadential Closure
-category: theory
-pdf_page: 105
-chapter_number: 3
-unit: null
-authors: "William E. Caplin"
+slug: strong-cadential-closure
+category: cadential-types
+subcategory: cadential-strength
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "The Period"
+chapter_number: 3
+pdf_page: 95
+section: "Strong Cadential Closure"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - basic-cadence-types
+  - consequent-phrase
+extends: []
+related:
+  - weak-cadential-closure
+  - cadential-differentiation
+contrasts_with:
+  - weak-cadential-closure
+answers_questions:
+  - "What constitutes strong cadential closure?"
+  - "Why does the consequent's cadential progression often begin earlier?"
 ---
 
-# Strong Cadential Closure
+# Quick Definition
+The consequent closes with a cadence stronger than the antecedent's, almost always a PAC. The consequent's cadential progression often begins earlier in the phrase (shifted backwards) to accommodate the penultimate dominant, creating greater temporal weight and more powerful cadential expression.
 
-**Strong cadential closure** refers to cadences that achieve complete harmonic and melodic closure. The perfect authentic cadence (PAC) is the strongest cadence type.
+# Core Definition
+The consequent closes with a contrasting idea leading to a strong cadence, almost always a PAC. The use of an IAC is rare (p. 105). The cadential progression of the consequent often begins earlier within the phrase than that of the antecedent, especially if the latter ends with HC. Since the final harmonies of both phrases normally occupy analogous positions (e.g., downbeats of mm. 4 and 8), the penultimate dominant of the consequent must be shifted backwards; as well, the initial tonic or pre-dominant appears earlier in the consequent (p. 107).
 
-## Perfect Authentic Cadence (PAC)
+# Prerequisites
+- **Basic cadence types** — PAC is the strong cadence
+- **Consequent phrase** — Strong closure characterizes the consequent
 
-- Ends with root-position tonic
-- Tonic scale degree (1) in soprano
-- Achieves complete harmonic closure (V-I in root position)
-- Achieves complete melodic closure (descent to 1)
+# Key Properties
+1. Almost always PAC (IAC rare, only when antecedent has HC)
+2. PAC achieves complete harmonic AND melodic closure
+3. Cadential progression often begins earlier than antecedent's
+4. Penultimate dominant shifted backwards to accommodate authentic progression
+5. Greater temporal weight for cadential progression
+6. Results in more powerful cadential expression
 
-## Essential for Consequent
+# Construction / Recognition
+## To Identify:
+1. Verify PAC at end of consequent (root-position I, soprano on scale degree 1)
+2. Compare cadential progression timing with antecedent's
+3. Note if pre-dominant and dominant appear earlier in the consequent
 
-The consequent phrase must close with a cadence **stronger** than the antecedent:
-- If antecedent ends with HC → consequent needs PAC (or IAC)
-- If antecedent ends with IAC → consequent needs PAC
+# Context & Application
+The combination of stronger cadence type AND greater temporal weight creates the consequent's characteristic sense of completion and closure. The backward shift of the cadential progression is a subtle but important compositional technique.
 
-## Cadential Progression Expansion
+# Examples
+**Example 1** (p. 107, Ex. 3.15): Mozart, K. 459, i -- antecedent's cadential progression starts mid-m. 3; consequent's starts at beginning of m. 7 (shifted backwards).
 
-The cadential progression of the consequent is often **expanded** relative to the antecedent:
-- Begins earlier in the phrase
-- Contains more harmonies
-- Creates greater temporal weight for closure
+**Example 2** (p. 106, Ex. 3.13): Mozart, K. 466, ii -- rare case of IAC closing the consequent.
 
-## Timing of Cadential Progression
+# Relationships
+## Builds Upon
+- **Basic cadence types** — PAC is the strong type
+- **Consequent phrase** — Strong closure is its defining feature
+## Related
+- **Cadential differentiation** — Strong closure completes the weak-to-strong pattern
+## Contrasts With
+- **Weak cadential closure** — Strong (PAC) vs. weak (HC, IAC)
 
-Since both phrases normally occupy analogous positions (cadences at mm. 4 and 8):
-- The penultimate dominant of the consequent shifts backward
-- The initial tonic or pre-dominant appears earlier in the consequent
+# Common Errors
+- **Error**: Not noting the backward shift of the cadential progression in the consequent
+  **Correction**: Compare the timing of cadential progressions in antecedent and consequent
 
-## Result
+# Common Confusions
+- **Confusion**: Thinking the consequent's cadential strength comes only from the cadence type
+  **Clarification**: Greater temporal weight (earlier progression start) also contributes
 
-Through cadential expansion, the consequent acquires more powerful cadential expression than the antecedent, due to:
-- The cadence type (PAC vs. HC/IAC)
-- Greater temporal weight accorded the cadential progression
+# Source Reference
+Chapter 3: The Period, pages 105-108. Example 3.15 (cadential progression timing).
+
+# Verification Notes
+- Definition source: Direct from pp. 105, 107
+- Confidence rationale: Explicitly defined with cadential progression timing detail
+- Re-extraction notes: Re-extracted from v2 card; preserved backward-shift analysis

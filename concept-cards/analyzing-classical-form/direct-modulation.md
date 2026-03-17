@@ -1,49 +1,49 @@
 ---
 concept: "Direct Modulation"
+slug: direct-modulation
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites: []
+extends: []
+related:
+  - transition-function-minuet
+contrasts_with: []
+answers_questions:
+  - "What is direct modulation?"
+  - "How does it differ from pivot-chord modulation?"
 ---
 
-## Definition
+# Quick Definition
+Direct modulation is a technique of changing tonal orientation whereby the start of a new formal unit is set in a new key without the obvious use of a pivot chord. It produces no sense of transition function.
 
-Direct modulation is a technique of changing tonal orientation whereby the very start of a formal unit is set in a new key without the obvious use of a pivot chord.
+# Core Definition
+A technique of changing tonal orientation whereby the very start of a formal unit is set in a new key without the obvious use of a pivot chord (Caplin, Glossary, p. 725).
 
-## Mechanism
+# Key Properties
+1. New key arrives at phrase boundary without pivot chord
+2. No connecting harmony between keys
+3. Produces no sense of transition function
+4. Contrasts with pivot-chord modulation (smooth harmonic transition)
+5. Common in subordinate theme entries, interior theme starts, couplet beginnings
 
-- One phrase ends in the original key
-- The next phrase begins **directly** in the new key
-- No pivot chord connects the two keys
+# Relationships
+## Related
+- **Transition function (minuet)** -- Direct modulation means no transition sense emerges
 
-## Contrast with Pivot-Chord Modulation
+# Source Reference
+Glossary of Terms, page 725.
 
-| Direct Modulation | Pivot-Chord Modulation |
-|------------------|----------------------|
-| No connecting harmony | Pivot chord reinterpreted |
-| Abrupt key change | Smooth harmonic transition |
-| New key at phrase boundary | Modulation within phrase |
-| No transition sense | Creates transition function |
-
-## Formal Implications
-
-When direct modulation occurs:
-- The sense of **transition function** is typically absent
-- There is no passage that "accomplishes" the modulation
-- The new key simply arrives with the new phrase
-
-## Common Contexts
-
-- Subordinate theme beginning directly in new key (after main theme)
-- Interior theme starting in minore
-- Couplet beginning in new region
-- Return sections appearing in unexpected keys
-
-## Analytical Note
-
-If a new phrase begins immediately in the subordinate key without pivot chord:
-- The resulting direct modulation will not bring any sense of transition
-- This affects how we label the thematic functions
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved comparison from old card; added v3.1 fields

@@ -1,64 +1,84 @@
 ---
 concept: Ascending-Second Sequence
-category: theory
-source: "Analyzing Classical Form: An Approach for the Classroom"
+slug: ascending-second-sequence
+category: harmony
+subcategory: sequential-progressions
+tier: foundational
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "A Review of Harmony"
 chapter_number: 1
 pdf_page: 23
-unit: null
-authors: William E. Caplin
+section: "Ascending Second"
+extraction_confidence: high
+aliases:
+  - "ascending stepwise sequence"
+  - "5-6 sequence"
+prerequisites:
+  - sequential-progression
+extends:
+  - sequential-progression
+related:
+  - descending-second-sequence
+  - secondary-dominant
+contrasts_with:
+  - descending-second-sequence
+answers_questions:
+  - "What is the ascending-second sequence?"
+  - "What is the 5-6 pattern and why is it used?"
 ---
 
 # Quick Definition
-A frequently occurring sequential progression with roots ascending by step, typically using a 5-6 pattern to avoid parallel fifths, with optional chromatic alteration creating secondary dominants.
+A frequently occurring sequential progression with roots ascending by step, typically using a 5-6 pattern to avoid parallel fifths. Can be enhanced with chromatic alterations creating genuine secondary dominants at each step.
 
-# Formal Definition
-The potential problem of faulty parallels encountered with the descending-second progression applies as well to the frequently occurring ascending-step sequence. Using first-inversion triads can eliminate the difficulty, but this version appears seldom in the literature. Instead, the stepwise ascent usually remains in root position, while the parallel fifths are broken up by means of a 5-6 pattern formed by one of the upper voices against the bass.
+# Core Definition
+The potential problem of faulty parallels applies to the ascending-step sequence as well. Instead of using first-inversion triads (which seldom appears), the stepwise ascent usually remains in root position while parallel fifths are broken by a 5-6 pattern formed by one of the upper voices against the bass (pp. 45-46). This contrapuntal procedure generates intervening first-inversion chords that stand, by analogy, in a dominant-to-tonic relationship to the succeeding root-position chords. Chromatic alterations can make each six-three chord a genuine secondary dominant (p. 46).
 
-# Musical/Theoretical Formulation
-Voice-leading solutions:
-1. **First-inversion triads**: All chords in first inversion (rare)
-2. **5-6 pattern**: Root-position chords with 5-6 motion in upper voice (common)
+# Prerequisites
+- **Sequential progression** — This is one of six types
 
-The 5-6 pattern:
-- Generates intervening first-inversion chords
-- These chords stand, by analogy, in dominant-to-tonic relationship to succeeding root-position chords
-- Creates alternation: I - V6/II - II - V6/III - III - etc.
+# Key Properties
+1. Frequently used in classical music
+2. Root-position stepwise ascent with 5-6 pattern (standard solution)
+3. First-inversion triads throughout is possible but seldom used
+4. 5-6 pattern generates intervening chords with implied V-I relationships
+5. Chromatic enhancement: each intervening chord becomes genuine secondary dominant
+6. Root-position intervening chords create most emphatic V-I expression
 
-Chromatic enhancement:
-- Each six-three chord can become a genuine secondary dominant through chromatic alteration
-- Creates chain of actual V-I progressions
-- Even more emphatic when intervening chords are placed in root position
+# Construction / Recognition
+## To Identify:
+1. Look for roots ascending by step in root position
+2. Check for 5-6 pattern in upper voice against bass
+3. Note any chromatic alterations creating secondary dominants
 
-# Musical Context/Application
-The ascending-second sequence:
-- Is frequently used in classical music
-- The 5-6 pattern is the standard solution for voice leading
-- May be enhanced with chromatic secondary dominants
-- Creates strong sense of harmonic motion upward through scale
-
-The functional implication (dominant-to-tonic at each step) becomes more explicit with chromatic alterations.
+# Context & Application
+The ascending-second sequence frequently appears in classical music. The 5-6 pattern is the standard solution for voice leading. Progressively more chromatic variants create increasingly emphatic dominant-tonic implications at each step.
 
 # Examples
-Example 1.22 (pp. 45-46) demonstrates the ascending-second sequential progression:
-- (a) First-inversion triads throughout (seldom used)
-- (b) 5-6 pattern in root position with upper-voice motion
-- (c) Chromatic alterations making each six-three a genuine secondary dominant
-- (d) Intervening chords placed in root position for more emphatic V-I expression
+**Example 1** (pp. 45-46, Ex. 1.22): (a) first-inversion throughout (rare); (b) 5-6 pattern; (c) chromatic secondary dominants; (d) root-position intervening chords.
 
-# Related Concepts
-- Sequential Progression
-- Descending-Second Sequence
-- Parallel Fifths
-- Voice Leading
-- Secondary Dominant
-- 5-6 Pattern
+# Relationships
+## Builds Upon
+- **Sequential progression** — One of six types
+## Related
+- **Secondary dominant** — Chromatic enhancement creates genuine secondary dominants
+- **Descending-second sequence** — Reverse direction
+## Contrasts With
+- **Descending-second sequence** — Ascending vs. descending
+
+# Common Errors
+- **Error**: Using simple root-position ascending steps without the 5-6 pattern
+  **Correction**: This creates parallel fifths; use the 5-6 contrapuntal solution
 
 # Common Confusions
-- Using simple root-position chords (creates parallel fifths)
-- Not recognizing the dominant-tonic analogy in the 5-6 pattern
-- Missing the difference between diatonic and chromatically altered versions
-- Confusing with ascending passing motion in prolongational contexts
+- **Confusion**: Not recognizing the dominant-tonic analogy in the 5-6 pattern
+  **Clarification**: Each intervening chord implies V of the following root-position chord
 
 # Source Reference
-Chapter 1: A Review of Harmony, pages 27, 45-46 (PDF pages 27, 45-46)
+Chapter 1: A Review of Harmony, pages 27, 45-46. Example 1.22.
+
+# Verification Notes
+- Definition source: Direct from pp. 45-46
+- Confidence rationale: Explicitly defined with progressive levels of chromatic enhancement
+- Re-extraction notes: Re-extracted from v2 card; preserved 5-6 pattern explanation and chromatic variants

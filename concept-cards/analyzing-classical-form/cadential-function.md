@@ -1,41 +1,95 @@
 ---
 concept: Cadential Function
-category: form
-pdf_page: 77
-chapter_number: 2
-unit: null
-authors: "William E. Caplin"
+slug: cadential-function
+category: formal-functions
+subcategory: phrase-functions
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "The Sentence"
+chapter_number: 2
+pdf_page: 55
+section: "Cadential Function"
+extraction_confidence: high
+aliases:
+  - "cad."
+  - "cadential formal function"
+prerequisites:
+  - continuation-phrase
+  - cadential-progression
+extends: []
+related:
+  - presentation-function
+  - continuation-function
+  - cadential-idea
+  - basic-cadence-types
+contrasts_with:
+  - presentation-function
+  - continuation-function
+answers_questions:
+  - "What is cadential function?"
+  - "What are the three distinct meanings of 'cadential'?"
+  - "Where does cadential function typically begin in a sentence?"
 ---
 
-# Cadential Function
+# Quick Definition
+The concluding formal function that creates the conditions for "ending" a theme. It refers to the time span leading up to cadential arrival, supported by a cadential progression, with typically conventional melodic material. Distinguished from both cadential arrival (the moment) and cadential progression (the harmonic event).
 
-**Cadential function** creates the necessary conditions for "ending" a theme. It is a concluding formal function that brings closure to the thematic process.
+# Core Definition
+Cadential function creates the necessary conditions for "ending" the theme (p. 57). Three distinct meanings of "cadential": (1) cadential arrival -- the specific moment marking the structural end; (2) cadential function -- the time span leading to this arrival; (3) cadential progression -- a particular type of harmonic progression used to confirm tonality (p. 81). The boundaries of cadential function are almost always defined by the boundaries of its supporting cadential progression. The cadence typically starts at m. 7 (or its upbeat) and arrives at the downbeat of m. 8 (p. 81).
 
-## Definition
+# Prerequisites
+- **Continuation phrase** — Cadential function fuses with continuation within the continuation phrase
+- **Cadential progression** — The harmonic foundation of cadential function
 
-Cadential function refers to the time span leading up to the point of cadential arrival - the passage that communicates to the listener that "the cadence" is forthcoming.
+# Key Properties
+1. Concluding formal function -- "ending" the theme
+2. Three meanings: cadential arrival (moment), cadential function (time span), cadential progression (harmonic event)
+3. Boundaries defined by cadential progression boundaries
+4. Typically begins at m. 7, arrives at downbeat of m. 8
+5. Melodic material is typically conventional (formulaic, descending)
+6. Fused with continuation function in the sentence
+7. Supported by cadential progression (not just any harmonic motion)
 
-## Components
+# Construction / Recognition
+## To Identify:
+1. Locate the cadential progression (marked with square bracket)
+2. The time span of that progression defines cadential function
+3. Check for conventional, descending melodic material
+4. Note the moment of cadential arrival (where final harmony first appears)
 
-Cadential function is achieved through specific devices:
-- **Harmonic**: Supported by a cadential progression
-- **Melodic**: Typically a falling contour with conventional, formulaic material
-- **Phrase-structural**: Usually occupies the final 2 measures of a continuation phrase
+# Context & Application
+Cadential function may emerge from continuation (the processes of fragmentation and acceleration extending into cadential material) or stand apart as a distinct cadential idea. A cadential progression is required for cadential function, but cadential progressions may also appear in non-cadential contexts (codettas). Be careful not to confuse the three meanings.
 
-## Three Meanings of "Cadential"
+# Examples
+**Example 1** (p. 56, Ex. 2.1): Beethoven, Op. 2, No. 1 -- cadential function in mm. 7-8, supported by cadential progression I6-II6-V(6/4-5/3), arriving at HC on downbeat of m. 8.
 
-1. **Cadential arrival** - The specific moment marking the structural end of a theme (where PAC, IAC, or HC is placed)
-2. **Cadential function** - The time span leading to this arrival
-3. **Cadential progression** - A particular type of harmonic progression (not a formal function)
+# Relationships
+## Builds Upon
+- **Continuation phrase** — Cad. function fuses with cont. function
+- **Cadential progression** — Required harmonic support
+## Enables
+- **Cadential arrival** — The moment of closure
+## Related
+- **Cadential idea** — The melodic unit expressing cadential function
+- **Basic cadence types** — PAC, IAC, HC result from cadential function
+## Contrasts With
+- **Presentation function** — Beginning vs. ending
+- **Continuation function** — Middle vs. ending
 
-## Boundaries
+# Common Errors
+- **Error**: Confusing cadential progression with cadential function
+  **Correction**: The progression is harmonic; the function is the formal role within a theme
 
-The boundaries of cadential function are almost always defined by the boundaries of its supporting cadential progression. The cadence typically:
-- Starts at measure 7 (or with its upbeat)
-- Arrives on the downbeat of measure 8
+# Common Confusions
+- **Confusion**: Thinking every cadential progression creates a cadence
+  **Clarification**: Cadential progressions may appear in contexts that do not give rise to genuine cadences (codettas)
 
-## Relation to Continuation
+# Source Reference
+Chapter 2: The Sentence, pages 57, 77-82. "Cadence and Cadential" box p. 81.
 
-In a sentence, cadential function is **fused** with continuation function within the continuation phrase. The continuational processes of fragmentation and harmonic acceleration often extend into the cadential material.
+# Verification Notes
+- Definition source: Direct from pp. 57, 81
+- Confidence rationale: Explicitly defined with three-way distinction
+- Re-extraction notes: Re-extracted from v2 card; preserved three-meaning distinction and m. 7-8 timing

@@ -1,50 +1,53 @@
 ---
 concept: Cadential Distribution in Compound Period
-category: analysis
-pdf_page: 206
-chapter_number: 6
-unit: null
-authors: "William E. Caplin"
+slug: cadential-distribution-compound-period
+category: theme-types
+subcategory: compound
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Compound Themes"
+chapter_number: 6
+pdf_page: 206
+section: "Cadential Distribution"
+extraction_confidence: high
+aliases:
+  - compound period cadence patterns
+prerequisites:
+  - compound-period
+  - reinterpreted-half-cadence
+extends:
+  - compound-period
+related:
+  - half-cadence
+contrasts_with: []
+answers_questions:
+  - "What cadential patterns are found in compound periods?"
+  - "Why is the 'ideal' HC-IAC-HC-PAC pattern rare?"
 ---
 
-# Cadential Distribution in Compound Period
+# Quick Definition
+When the compound antecedent is built as ant+cont, four cadence points arise (mm. 4, 8, 12, 16). The "ideal" pattern (HC, IAC, HC, PAC) rarely occurs because IAC seldom ends an antecedent. Common alternatives include HC-HC-HC-PAC, IAC-reinterpreted HC-HC-PAC, and other patterns, often employing a reinterpreted HC at m. 8.
 
-When the compound antecedent is built as "antecedent + continuation," the distribution of cadences presents complexities.
+# Core Definition
+The distribution of cadences in compound periods built from ant+cont hybrids presents complexities. The ideal weak-to-strong progression (HC at m. 4, IAC at m. 8, HC at m. 12, PAC at m. 16) is curiously rare because IAC rarely ends any kind of antecedent. Common patterns include two HCs in succession (m. 4 and m. 8), which seems to violate normal syntax. The reinterpreted HC is particularly helpful: when the compound antecedent modulates and closes with a PAC in the dominant key, the return to home key at m. 9 retrospectively converts that PAC into an HC, creating an appropriate weak-to-strong progression.
 
-## The Challenge
+# Key Properties
+1. Four cadence points: mm. 4, 8, 12, 16
+2. "Ideal" pattern (HC, IAC, HC, PAC) is rare
+3. Two successive HCs (mm. 4, 8) are common
+4. Reinterpreted HC at m. 8 is especially useful
+5. Composers may weaken redundant HCs in the compound consequent
 
-Multiple cadences occur:
-- m. 4: End of simple antecedent
-- m. 8: End of compound antecedent
-- m. 12: End of simple antecedent (in consequent)
-- m. 16: End of theme
+# Examples
+**Example 1** (p. 206): Haydn, Sonata H. 20, i -- two HCs in succession; Haydn changes antecedent to c.b.i. in consequent to avoid third HC.
+**Example 2** (p. 198): Mozart, K. 465, iv -- HC at m. 4, HC at m. 8; weakened HC at m. 12.
 
-## Ideal Pattern (Rare)
+# Source Reference
+Chapter 6: Compound Themes, pages 206-208.
 
-The "syntactically ideal" pattern would be:
-- m. 4: Weak HC
-- m. 8: Stronger IAC
-- m. 12: Weak HC
-- m. 16: Strongest PAC
-
-But this rarely occurs because IAC seldom ends an antecedent.
-
-## Common Patterns
-
-More typical patterns include:
-- HC, HC, HC, PAC
-- HC, reinterpreted HC, HC, PAC
-- IAC, reinterpreted HC, HC, PAC
-
-## Reinterpreted HC Solution
-
-The reinterpreted half cadence is helpful:
-- m. 8: PAC in dominant key (within compound antecedent)
-- Reinterpreted as HC when home key returns (m. 9)
-- Creates appropriate weak-to-strong across compound period
-
-## Analysis Approach
-
-When analyzing, identify all cadences and assess their syntactical relationships, noting any complications.
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Explicitly discussed with multiple cadence patterns
+- Re-extraction notes: Preserved pattern comparison from old card; reformatted to v3.1

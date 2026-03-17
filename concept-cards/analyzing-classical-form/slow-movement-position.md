@@ -1,51 +1,74 @@
 ---
-concept: "Slow Movement Position and Key"
+concept: "Slow-Movement Position"
+slug: slow-movement-position
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Slow-Movement Forms"
 chapter_number: 17
 pdf_page: 587
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Slow-Movement Forms"
+section: "The Basics"
+extraction_confidence: high
+aliases:
+  - "interior movement"
+  - "slow movement placement"
+prerequisites:
+  - slow-movement-forms-overview
+extends: []
+related:
+  - formal-simplicity-slow-movements
+contrasts_with: []
+answers_questions:
+  - "Where does the slow movement appear in a multi-movement cycle?"
+  - "What key does the slow movement typically use?"
 ---
 
-## Position in Cycle
+# Quick Definition
+The slow movement normally occupies an interior position in the instrumental cycle and is usually set in a contrasting tonality -- typically the subdominant -- or sometimes the contrasting modality of the cycle's overall key.
 
-Most instrumental cycles in the classical period contain at least one movement performed in a slow or moderately slow tempo (Adagio, Largo, Andante). This movement normally occupies an **interior position** in the cycle.
+# Core Definition
+Most instrumental cycles in the classical period contain at least one movement performed in a slow or moderately slow tempo (Adagio, Largo, Andante). This movement normally occupies an interior position and is set in a contrasting tonality, typically the subdominant, of the cycle's overall key. Sometimes the slow movement is set in the contrasting modality of that key (Caplin, p. 587).
 
-## Typical Tempos
+# Prerequisites
+- **Slow-movement forms overview** -- General context for slow-movement formal types
 
-- Adagio
-- Largo
-- Andante
-- Moderately slow tempos
+# Key Properties
+1. Interior position within the cycle (usually second or third movement)
+2. Contrasting tonality -- most often the subdominant
+3. Sometimes contrasting modality (e.g., major to minor or vice versa)
+4. Tempos: Adagio, Largo, Andante
 
-## Tonal Relationship
+# Construction / Recognition
+## To Identify:
+1. Look for a slow tempo marking in an interior movement
+2. Check the key relationship to the cycle's overall key (typically IV)
+3. Note any modal contrast with the outer movements
 
-The slow movement is usually set in a **contrasting tonality** of the cycle's overall key:
+# Context & Application
+The slow movement provides tonal and emotional contrast within the multi-movement cycle. Its interior placement and contrasting key contribute to the overall dramatic arc. Though theme and variations is treated in this chapter, it frequently appears in outer movements, especially finales.
 
-### Most Common
-- **Subdominant** (IV): The most typical choice
+# Examples
+**Example 1** (p. 587): The slow movement typically resides in the subdominant of the cycle's overall key.
 
-### Alternative
-- **Contrasting modality**: Same key signature but opposite mode
-- Other closely related keys
+# Relationships
+## Builds Upon
+- **Slow-movement forms overview** -- General framing of slow-movement forms
+## Enables
+- **Formal simplicity in slow movements** -- The position explains the need for formal balance
+## Related
+- **Formal simplicity in slow movements** -- Connected aesthetic concern
 
-## Examples of Tonal Relationships
+# Common Errors
+- **Error**: Assuming the slow movement is always in the subdominant
+  **Correction**: The subdominant is typical but not required; contrasting modality or other closely related keys also occur
 
-| Cycle Key | Typical Slow Movement Key |
-|-----------|--------------------------|
-| C major | F major (IV) or A minor (vi) |
-| D major | G major (IV) or B minor (vi) |
-| G minor | B-flat major (III) or E-flat major (VI) |
+# Source Reference
+Chapter 17: Slow-Movement Forms, page 587.
 
-## Rationale
-
-The contrasting key:
-- Provides tonal variety within the cycle
-- Creates a sense of departure and return across movements
-- Subdominant relationship creates smooth harmonic connection
-
-## Note on Theme and Variations
-
-Though treated in a chapter on slow movements, theme and variations form is found frequently in **outer movements**, especially in moderate to fast finales. Most examples in Caplin's chapter are actually from finale movements.
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clearly stated factual information
+- Re-extraction notes: Preserved tonal relationship table from old card; upgraded to v3.1 format

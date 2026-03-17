@@ -1,45 +1,56 @@
 ---
 concept: "Abridged Refrain"
+slug: abridged-refrain
+category: rondo-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Rondo Forms"
 chapter_number: 19
 pdf_page: 677
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Rondo Forms"
+section: "Returns of the Main Theme"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - returns-of-main-theme
+extends:
+  - returns-of-main-theme
+related:
+  - incomplete-refrain
+contrasts_with:
+  - incomplete-refrain
+answers_questions:
+  - "What is an abridged refrain?"
+  - "How does it differ from an incomplete refrain?"
 ---
 
-## Definition
+# Quick Definition
+An abridged refrain brings only the A (or A') section of an original small ternary, concluding with a home-key PAC. It is shortened but formally complete, unlike an incomplete refrain which lacks cadential closure.
 
-An abridged refrain is a restatement of the rondo refrain that consists of only the A or A' section of an original small ternary form. It concludes with a home-key PAC but omits the contrasting middle and/or recapitulation of the original theme.
+# Core Definition
+If the theme is built as a small ternary, the return of the theme may bring only the A (or A') section, concluding with a home-key PAC. We can speak in that case of an abridged refrain (Caplin, p. 677).
 
-## Structure Comparison
+# Prerequisites
+- **Returns of main theme** -- The general concept of refrain returns
 
-| Original Refrain | Abridged Refrain |
-|-----------------|------------------|
-| A section | A section only |
-| B section | (omitted) |
-| A' section | (omitted) |
-| Ends with PAC | Ends with PAC |
+# Key Properties
+1. Only A or A' section of original small ternary
+2. Concludes with home-key PAC (formally complete)
+3. B and subsequent sections omitted
+4. Shortened but closed
 
-## When It Occurs
+# Relationships
+## Builds Upon
+- **Returns of main theme** -- One type of return
+## Contrasts With
+- **Incomplete refrain** -- Lacks cadential closure; harmonically open
 
-Abridgment typically occurs in:
-- Middle returns of the refrain (refrain 2 in five-part rondo)
-- Less commonly in final returns
+# Source Reference
+Chapter 19: Rondo Forms, page 677.
 
-## Distinction from Incomplete Refrain
-
-| Abridged Refrain | Incomplete Refrain |
-|-----------------|-------------------|
-| Shortened but complete | Lacks cadential closure |
-| Home-key PAC achieved | May end in other key or without PAC |
-| Formal compression | Formal openness |
-
-## Purpose
-
-The abridged refrain:
-- Avoids redundancy of hearing full theme multiple times
-- Maintains formal momentum
-- Preserves essential character of refrain
-- Still provides the "return" effect needed in rondo
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear definition with comparison
+- Re-extraction notes: Preserved comparison from old card; added v3.1 fields

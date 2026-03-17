@@ -1,36 +1,60 @@
 ---
 concept: Development Section Composer Differences
-category: form
-pdf_page: 480
+slug: development-composer-differences
+category: sonata-form
+tier: advanced
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Development"
 chapter_number: 13
-unit: null
-authors: "William E. Caplin"
+pdf_page: 480
+section: "Differences Among the Classical Composers"
+extraction_confidence: high
+aliases:
+  - Haydn Mozart Beethoven development
+prerequisites:
+  - development-section
+  - core
+  - pre-core
+related:
+  - development-without-core
+  - development-melodic-motivic-material
+contrasts_with: []
+answers_questions:
+  - "How do Haydn, Mozart, and Beethoven differ in their development sections?"
 ---
 
-# Development Section Composer Differences
+# Quick Definition
+The three classical composers show marked differences in development construction: Haydn avoids pre-core/core technique and favors rotation; Mozart uses tight-knit pre-cores and introduces new material in shorter developments; Beethoven extends the tonal scope through modal borrowing and writes large developments.
 
-The three major classical composers reveal marked differences in development section construction.
+# Core Definition
+Caplin identifies systematic differences (p. 480): Haydn "generally does not employ the pre-core/core technique" and tends to write transition-like or subordinate-themelike units, frequently running through exposition material in the same order (rotational form). Mozart "employs pre-core/core technique regularly" but restricts development scope, favors tight-knit pre-cores, and introduces new material. Beethoven "extends the tonal scope to include regions arising out of modal borrowing," uses pre-core/core technique like Mozart, introduces new ideas, and writes developments comparable in size to the exposition.
 
-## Haydn
+# Prerequisites
+- **Development section** — The broader concept
+- **Core** — The presence/absence of which differentiates composers
+- **Pre-core** — Different types favored by different composers
 
-- Generally does not employ pre-core/core technique
-- Tends to write transition-like or subordinate themelike units in place of cores
-- Frequently has development run through exposition material in same order (rotation)
-- Development sections usually comparable in size to exposition/recapitulation
+# Key Properties
+1. **Haydn**: No core (usually); transition-like/subordinate-themelike substitutes; rotational form; large developments
+2. **Mozart**: Regular pre-core/core; tight-knit pre-cores; new material; shorter developments
+3. **Beethoven**: Pre-core/core; modal borrowing (bVI, bIII, bII); new ideas; large developments; dominant arrivals over HCs
 
-## Mozart
+# Context & Application
+These differences are tendencies, not rules. Individual works by any composer may deviate from their typical practice. Understanding these tendencies helps calibrate analytical expectations when approaching an unfamiliar work.
 
-- Employs pre-core/core technique regularly
-- Restricts overall scope of development sections (usually shorter than surrounding sections)
-- More likely to begin with tight-knit pre-core
-- Likes to introduce new material into development (rarely found in Haydn)
+# Relationships
+## Builds Upon
+- **Development section** — Composer-specific approaches to this section
+## Related
+- **Development without core** — Characterizes Haydn's typical approach
+- **Development melodic-motivic material** — Source material differences among composers
 
-## Beethoven
+# Source Reference
+Chapter 13: Development, page 480.
 
-- Extends tonal scope to include regions from modal borrowing (flat-VI, flat-III, flat-II)
-- Tends to use pre-core/core technique like Mozart
-- Introduces new ideas like Mozart
-- Development size comparable to exposition/recapitulation like Haydn
-- More likely to employ dominant arrivals in place of half cadences
+# Verification Notes
+- Definition source: Direct from "Differences Among the Classical Composers" box, p. 480
+- Confidence rationale: Systematically compared in source
+- Re-extraction notes: Preserved all three composer profiles from old card; added v3.1 template

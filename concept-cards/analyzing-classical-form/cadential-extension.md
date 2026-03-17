@@ -1,50 +1,65 @@
 ---
 concept: Cadential Extension
-category: technique
-pdf_page: 164
-chapter_number: 5
-unit: null
-authors: "William E. Caplin"
+slug: cadential-extension
+category: cadential-deviations
+subcategory: null
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
+chapter_number: 5
+pdf_page: 160
+section: "Common Extensions"
+extraction_confidence: high
+aliases:
+  - post-deviation extension
+prerequisites:
+  - cadential-deviations
+  - phrase-extension
+extends:
+  - phrase-extension
+related:
+  - deceptive-cadence
+  - evaded-cadence
+  - abandoned-cadence
+contrasts_with: []
+answers_questions:
+  - "What happens after a cadential deviation?"
+  - "How do cadential deviations lead to theme expansion?"
 ---
 
-# Cadential Extension
+# Quick Definition
+Cadential extension is the additional material that follows a cadential deviation (deceptive, evaded, or abandoned), repeating earlier continuation or cadential material in order to achieve genuine cadential closure.
 
-**Cadential extension** is additional material following a cadential deviation, added in order to achieve genuine cadential closure.
+# Core Definition
+When a cadential deviation denies expected closure, the phrase is extended by material that makes another attempt at cadence. This extension of continuation or cadential functions (or both) typically repeats earlier material. The pattern may recur: deviation -> extension -> new attempt -> possible further deviation -> eventual PAC. An IAC may also trigger extension when the composer wishes to achieve a stronger PAC.
 
-## Definition
+# Prerequisites
+- **Cadential deviations** — The triggering events
+- **Phrase extension** — The mechanism
 
-When a cadential deviation (deceptive, evaded, or abandoned) denies expected closure, the phrase is extended by material that:
-- Continues the search for closure
-- Makes additional attempts at cadence
-- Eventually achieves genuine cadential arrival
+# Key Properties
+1. Extends continuation or cadential functions (or both)
+2. Typically repeats earlier material
+3. Triggered by deceptive, evaded, or abandoned cadences (or IAC)
+4. May recur multiple times before genuine PAC
+5. Significantly expands themes beyond normative length
 
-## Relationship to Cadential Deviations
+# Examples
+**Example 1** (p. 161): Beethoven, Op. 2/3, i, mm. 1-13 -- continuation concludes with IAC; repetition extends theme and pushes PAC to m. 13.
 
-Cadential extension is the **consequence** of cadential deviation:
-- Deviation denies closure → extension seeks closure
-- More deviations → more extension required
+# Relationships
+## Builds Upon
+- **Cadential deviations** — The triggers
+- **Phrase extension** — The mechanism
+## Enables
+- **Theme expansion** — The cumulative result
 
-## Content of Extensions
+# Source Reference
+Chapter 5: Phrase Deviations, Cadential Deviations, and Framing Functions, pages 160-161.
 
-Cadential extensions typically include:
-- Repeated cadential progressions
-- Modified attempts at the failed cadence
-- Continuational material leading to new cadential try
-- Eventually, successful cadential arrival
-
-## Effect on Theme Size
-
-Cadential extensions can significantly expand themes:
-- One deviation + extension: adds 2-4 measures
-- Multiple deviations: can add many more measures
-
-## Common Pattern
-
-Typical sequence:
-1. Expected cadence fails (deviation)
-2. Extension material follows
-3. New cadential attempt
-4. (Possible further deviations and extensions)
-5. Genuine PAC achieved
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Common technique discussed in multiple examples
+- Re-extraction notes: Preserved core from old card; reformatted to v3.1

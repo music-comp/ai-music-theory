@@ -1,48 +1,69 @@
 ---
 concept: "Da Capo"
+slug: da-capo
+category: minuet-trio
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Minuet/Trio Form"
 chapter_number: 18
 pdf_page: 630
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Minuet/Trio Form"
+section: "The Basics"
+extraction_confidence: high
+aliases:
+  - "Menuet da capo"
+prerequisites:
+  - minuet-trio-form
+extends: []
+related:
+  - trio
+contrasts_with: []
+answers_questions:
+  - "What is the da capo in minuet/trio form?"
+  - "Is the da capo written out?"
 ---
 
-## Definition
+# Quick Definition
+The da capo is the third part of minuet/trio form, bringing a return of the minuet proper after the trio. It is usually not written out but indicated by "Menuet da capo" in the score, and internal repeats are typically not taken.
 
-The da capo is the third part of minuet/trio form, bringing a return of the minuet proper after the trio. The expression "Menuet da capo" (or variant) instructs performers to repeat the first minuet.
+# Core Definition
+The minuet proper is performed again after the trio. The restatement is not usually written out (unless the composer wishes to introduce ornamental variations). Instead, the expression "Menuet da capo" is indicated in the score. In a few cases, a coda (typically referencing trio contents) follows the da capo to conclude the movement (Caplin, p. 630).
 
-## Notation Practice
+# Prerequisites
+- **Minuet/trio form** -- The full-movement form containing the da capo
 
-- Usually **not written out** in the score
-- Exception: When composer wishes to introduce ornamental variations
-- Indicated by the expression "Menuet da capo" or similar
+# Key Properties
+1. Third part of minuet/trio form
+2. Returns the minuet proper after the trio
+3. Usually not written out (indicated by score marking)
+4. Internal repeats typically not taken
+5. Optional coda may follow, often referencing trio material
+6. Restores home key and mode if trio was in different key/mode
 
-## No Repeats in Da Capo
+# Construction / Recognition
+## To Identify:
+1. Look for "Menuet da capo" or similar marking after the trio
+2. If written out, check for ornamental variations
+3. Note whether a coda follows
 
-When performing the da capo:
-- The internal repeats of the minuet proper are typically **not taken**
-- This distinguishes the da capo from the original performance of the minuet
+# Context & Application
+Continues Baroque practice of performing the first dance again after the second. Creates a large-scale ABA frame for the movement.
 
-## Coda After Da Capo
+# Examples
+**Example 1** (p. 630): The expression "Menuet da capo" instructs the performer to return to the minuet proper.
 
-In a few cases, a coda follows the da capo:
-- Typically references contents of the trio
-- Concludes the movement as a whole
-- Provides additional closure
+# Relationships
+## Builds Upon
+- **Minuet/trio form** -- The movement form
+## Related
+- **Trio** -- The section that precedes the da capo
 
-## Historical Context
+# Source Reference
+Chapter 18: Minuet/Trio Form, page 630.
 
-Continuing Baroque practice:
-- Dance movements in suites often had two contrasting dances
-- The first dance was performed again after the second
-- This ABA structure was standard for minuet movements
-
-## Structural Function
-
-The da capo:
-- Creates a frame with the opening minuet
-- Restores the home key (if trio was in different key)
-- Restores the original mode (if trio was in different mode)
-- Provides large-scale formal balance
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clearly defined practice
+- Re-extraction notes: Preserved historical context from old card; added v3.1 fields

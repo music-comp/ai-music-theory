@@ -1,48 +1,57 @@
 ---
 concept: "Solo Subordinate Theme Distribution"
+slug: solo-subordinate-theme-distribution
+category: concerto-form
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Concerto Form"
 chapter_number: 20
 pdf_page: 708
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Concerto Form"
+section: "Subordinate-theme Group"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - solo-exposition
+extends: []
+related:
+  - bravura-theme
+contrasts_with: []
+answers_questions:
+  - "How are subordinate themes distributed in the solo exposition?"
+  - "Why is the first subordinate theme often new?"
 ---
 
-## General Characteristics
+# Quick Definition
+The solo subordinate-theme group contains at least two themes (three is common). The first is often entirely new (allowing the solo its own profile), while ritornello subordinate themes reappear as later themes. The group is responsible for major formal loosening and virtuosic display.
 
-The solo subordinate-theme group:
-- Contains at least **two themes** (three is extremely common)
-- One or more themes based on ritornello material
-- New material almost always added
-- Responsible for substantially loosening the form
+# Core Definition
+The subordinate-theme group of the solo exposition contains at least two themes (three is extremely common). In the majority of concertos, the first subordinate theme is entirely new, to aid the solo in projecting its own melodic-motivic profile. The first ritornello subordinate theme usually reappears as the second subordinate theme or the second part of a two-part subordinate theme (Caplin, pp. 708-710).
 
-## Distribution Principles
+# Prerequisites
+- **Solo exposition** -- The section containing these themes
 
-Because each concerto finds its own logical way of distributing material, it is difficult to formulate rigid principles. However:
+# Key Properties
+1. At least two themes; three is extremely common
+2. First subordinate theme often entirely new (solo's own profile)
+3. Ritornello subordinate themes reappear as later themes
+4. Responsible for substantial formal loosening
+5. Features enormous expanded cadential progressions
+6. Bravura theme often appears as final subordinate theme
+7. Culminates in cadential trill
 
-### General Tendency
-In the majority of concertos, the **first subordinate theme is entirely new**:
-- Aids the solo in projecting its own melodic-motivic profile
-- The first ritornello subordinate theme usually reappears later
+# Relationships
+## Builds Upon
+- **Solo exposition** -- The containing section
+## Related
+- **Bravura theme** -- Often the final subordinate theme
 
-### Reappearance Options for Ritornello Subordinate Theme
+# Source Reference
+Chapter 20: Concerto Form, pages 708-710.
 
-1. **Second subordinate theme**: Complete, separate theme
-2. **Second part of two-part subordinate theme**: Following internal HC and standing on dominant
-
-The second option is particularly effective because both:
-- The new material
-- The earlier ritornello theme
-
-...can be preceded by a standing on dominant (one ending solo transition, one following internal HC).
-
-## Lyrical Ritornello Themes
-
-The first ritornello subordinate theme is often:
-- Soft and lyrical in character
-- Not appropriate for subordinate-key ritornello (which needs vigorous material)
-- Crying out to reappear somewhere
-- Ideally performed by the solo
-
-This theme may return in the recapitulation at various points in the subordinate-theme group.
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear distribution principles
+- Re-extraction notes: Preserved from old card; added v3.1 fields

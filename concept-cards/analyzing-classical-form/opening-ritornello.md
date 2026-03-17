@@ -1,46 +1,77 @@
 ---
 concept: "Opening Ritornello"
+slug: opening-ritornello
+category: concerto-form
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Concerto Form"
 chapter_number: 20
 pdf_page: 696
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Concerto Form"
+section: "Opening Ritornello"
+extraction_confidence: high
+aliases:
+  - "orchestral exposition"
+prerequisites:
+  - concerto-form
+extends: []
+related:
+  - double-exposition
+  - formal-associations-ritornello
+  - main-theme-transition-fusion-concerto
+contrasts_with:
+  - solo-exposition
+answers_questions:
+  - "How is the opening ritornello organized?"
+  - "Why does it stay in the home key?"
+  - "How does it differ from a sonata exposition?"
 ---
 
-## Definition
+# Quick Definition
+The opening ritornello is the first section of concerto form, organized like a sonata exposition (main theme, transition, subordinate theme, closing section) but remaining fundamentally in the home key and minimizing loosening devices, thus reserving the tonal conflict and virtuosic display for the solo.
 
-The opening ritornello is the first section of concerto form. It resembles the thematic organization of a sonata exposition but remains fundamentally in the home key and minimizes loosening devices.
+# Core Definition
+The opening ritornello consists of multiple thematic units identifiable as main theme, transition, and subordinate theme. A genuine sonata exposition does not emerge because these units largely remain rooted in the home key. The main theme always closes with PAC (never HC, like rondo). The transition is nonmodulating. The subordinate themes are relatively tight-knit. Formal loosening is kept to a minimum (Caplin, pp. 696-698, 702-706).
 
-## Thematic Functions Present
+# Prerequisites
+- **Concerto form** -- The full-movement form
 
-- **Main theme**: Tight-knit, closes with PAC (never HC, unlike sonata)
-- **Transition**: Nonmodulating, ends with home-key HC; usually begins with new material
-- **Subordinate theme(s)**: Remains in home key; relatively tight-knit
-- **Closing section**: Codettas ending the ritornello
+# Key Properties
+1. Organized like a sonata exposition but stays in the home key
+2. Main theme: tight-knit, closes with PAC (never HC); compound sentence favored
+3. Transition: nonmodulating, ends with home-key HC; almost always begins with new material
+4. Subordinate theme(s): remains in home key; relatively tight-knit
+5. Closing section: codettas ending the ritornello
+6. Loosening devices minimized
+7. May feature main-theme/transition fusion (Mozart, especially for wind concertos)
+8. Forges initial associations between ideas and formal functions
 
-## Key Difference from Sonata Exposition
+# Construction / Recognition
+## To Identify:
+1. Look for an orchestral section at the movement's opening
+2. Identify main theme, transition, and subordinate theme functions
+3. Confirm all material remains in the home key
+4. Note the relatively tight-knit organization
 
-**No genuine tonal conflict**: The ritornello remains entirely in the home key (or returns quickly without confirming subordinate key). This:
-- Allows the solo to produce the major tonal event (establishing subordinate key)
-- Generates expectations for the solo's entrance
-- Prevents the orchestra from creating a complete exposition independently
+# Examples
+**Example 1** (p. 696): Mozart, Piano Concerto in E-flat, K. 482, i -- subordinate themes relatively tight-knit, lacking substantial cadential expansion.
 
-## Phrase-Structural Organization
+# Relationships
+## Builds Upon
+- **Concerto form** -- The overall form
+## Related
+- **Double exposition** -- The concept linking ritornello and solo exposition
+- **Formal associations (ritornello)** -- How ideas are reassigned in later sections
+- **Main-theme/transition fusion (concerto)** -- A variant organization
+## Contrasts With
+- **Solo exposition** -- Contains the tonal conflict absent from the ritornello
 
-Subordinate themes are more **tight-knit** than in a regular sonata exposition:
-1. Home key doesn't require cadential emphasis
-2. Sequential treatment might undermine solo's developmental role
-3. Major cadential expansions are reserved for solo's virtuosic display
+# Source Reference
+Chapter 20: Concerto Form, pages 696-698, 702-706.
 
-## Formal Associations
-
-The opening ritornello forges initial associations between musical ideas and their form-functional expression. These ideas may return in different functional contexts throughout the movement.
-
-## Main-Theme/Transition Fusion
-
-Sometimes the ritornello divides into two principal parts:
-- First part ends with HC (fuses main theme and transition)
-- Second part (with new material) functions as subordinate theme
-- Mozart prefers this for more modest concertos (especially wind concertos)
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Core section with extensive discussion
+- Re-extraction notes: Preserved thematic functions table from old card; added v3.1 fields

@@ -1,51 +1,52 @@
 ---
 concept: "Aesthetic Goals of Concerto Form"
+slug: aesthetic-goals-concerto
+category: concerto-form
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Concerto Form"
 chapter_number: 20
 pdf_page: 695
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Concerto Form"
+section: "Aesthetic Goals of Concerto Form"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - concerto-form
+extends: []
+related: []
+contrasts_with: []
+answers_questions:
+  - "What are the aesthetic goals of concerto form?"
+  - "How does the form balance solo and orchestra?"
 ---
 
-## The Central Challenge
+# Quick Definition
+The concerto must balance two aesthetic goals: highlighting the solo instrument (through exclusive material, modulatory action, and cadenza) and maintaining the orchestra's identity (through ritornellos providing a textural frame and independent orchestral sections).
 
-The classical concerto pits a single instrumentalist against a full orchestra. Because of this inherent inequality, ways must be found to ensure:
-1. The soloist can compete effectively against the larger forces
-2. The orchestra is not so subordinate that it becomes mere accompaniment
+# Core Definition
+The classical concerto pits a single instrumentalist against a full orchestra. Because of this inherent inequality, ways must be found to ensure the soloist can compete effectively while the orchestra is not reduced to mere accompaniment. Solo highlighting techniques include exclusive material, principal modulatory action, and unaccompanied cadenza. Orchestra identity is maintained through the textural frame of opening and closing ritornellos and at least one additional independent orchestral section (Caplin, pp. 695-696; after Tovey and Rosen).
 
-## Techniques to Highlight the Solo
+# Prerequisites
+- **Concerto form** -- The form expressing these goals
 
-### 1. Exclusive Material
-The solo is assigned musical ideas **not previously sounded by the orchestra**:
-- Alternative main theme
-- New subordinate themes
-- Fresh melodic content
+# Key Properties
+1. Central challenge: balancing solo against full orchestra
+2. Solo highlighted through: exclusive material, modulatory action, cadenza
+3. Orchestra maintained through: textural frame (ritornellos), independent orchestral sections
+4. At least three tutti sections ensure orchestra is not mere accompaniment
+5. These goals explain the form's specific structural choices
 
-### 2. Principal Modulatory Action
-The solo has the **primary modulatory action** in the movement:
-- Opening ritornello stays in home key
-- Solo exposition establishes subordinate key
+# Relationships
+## Builds Upon
+- **Concerto form** -- The form expressing these goals
 
-### 3. Cadenza
-An **unaccompanied cadenza** is interpolated into the form:
-- Throws special light on the soloist
-- Provides opportunity for improvisation and virtuosity
-- Solo plays entirely alone
+# Source Reference
+Chapter 20: Concerto Form, pages 695-696.
 
-## Techniques to Maintain Orchestra's Identity
-
-### 1. Textural Frame
-The orchestra alone provides the **opening and closing** of the movement:
-- Opening ritornello
-- Closing ritornello (interrupted only by cadenza)
-
-### 2. Additional Orchestral Section
-The orchestra appears **by itself** at least one more time:
-- Subordinate-key ritornello
-- Asserts orchestral identity in relation to solo
-
-## Sources
-
-This summary of aesthetic goals owes much to the writings of Tovey and Rosen.
+# Verification Notes
+- Definition source: Direct from Caplin (after Tovey and Rosen)
+- Confidence rationale: Clearly articulated aesthetic principles
+- Re-extraction notes: Preserved from old card; added v3.1 fields

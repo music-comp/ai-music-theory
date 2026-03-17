@@ -1,54 +1,60 @@
 ---
 concept: Liquidation in Transition
-chapter: "Exposition II: Transition"
+slug: liquidation-transition
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 350
-chapter_number: 11
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (II): Transition"
+chapter_number: 11
+pdf_page: 350
+section: Closure
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - transition-basics
+extends: []
+related:
+  - fragmentation
+  - standing-on-the-dominant
+  - medial-caesura
+contrasts_with: []
+answers_questions:
+  - "What is liquidation and why does it occur in transitions?"
+  - "How does liquidation relate to fragmentation?"
 ---
 
-## Liquidation in Transition
+# Quick Definition
+Liquidation is the progressive elimination of characteristic melodic-motivic material, typically occurring at the transition's end and within the standing on the dominant. Complex, distinctive motives give way to simpler, conventionalized patterns (scales, arpeggios), clearing the stage for the subordinate theme's new material.
 
-**Liquidation** is the process of gradually eliminating characteristic melodic-motivic material, often occurring at the end of a transition to "clear the stage" for the subordinate theme.
+# Core Definition
+Liquidation is the third primary function of the transition: to **liquidate characteristic motivic material** to "clear the stage" for the subordinate theme. This involves progressive reduction of motivic content, where complex, characteristic motives yield to simpler, conventionalized patterns. Liquidation often accompanies fragmentation (units get smaller AND simpler) and typically occurs within the standing on the dominant. The close of the transition is marked by liquidation, texture reduction, and sometimes a medial caesura (Caplin, Ch. 11, pp. 330, 350).
 
-### Definition
+# Prerequisites
+- **Transition basics** -- Liquidation is one of the transition's three functions
 
-The progressive reduction of motivic content:
-- Complex, characteristic motives give way to simpler patterns
-- Thematic material becomes more neutral, conventionalized
-- Distinctive features are gradually removed
+# Key Properties
+1. Progressive elimination of characteristic motivic material
+2. Complex motives yield to conventionalized scalar/arpeggiated patterns
+3. Often accompanies fragmentation (smaller AND simpler units)
+4. Typically occurs in standing on the dominant
+5. Creates "empty" texture for subordinate theme to fill
+6. Third of the transition's three primary functions
 
-### Where Liquidation Occurs
+# Relationships
+## Builds Upon
+- **Transition basics** -- One of the three primary functions
+## Related
+- **Fragmentation** -- Often co-occurs; fragmentation = size, liquidation = content
+- **Standing on the dominant** -- Where liquidation typically takes place
+- **Medial caesura** -- May punctuate the end of liquidation
 
-**End of transition**:
-- Liquidation of melodic-motivic material
-- Reduction in texture
-- Prepares for subordinate theme entrance
+# Source Reference
+Chapter 11: Exposition (II): Transition, pages 330, 350.
 
-**Standing on the dominant**:
-- Material becomes progressively simpler
-- May reduce to scales, arpeggios, or repeated notes
-- Creates "empty" texture for subordinate theme to fill
-
-### Relationship to Fragmentation
-
-Liquidation often accompanies fragmentation:
-- As units get smaller (fragmentation)
-- Their content becomes simpler (liquidation)
-- Together they create sense of dissolution and preparation
-
-### Function
-
-Liquidation serves to:
-- Clear away the characteristic material of one section
-- Create space for new thematic content
-- Mark formal boundaries
-- Enhance the freshness of new material
-
-### Related Concepts
-- [[fragmentation]]
-- [[standing-on-the-dominant]]
-- [[transition-closure]]
-- [[medial-caesura]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Named as one of three primary functions
+- Re-extraction notes: Upgraded from old card; clarified relationship to fragmentation

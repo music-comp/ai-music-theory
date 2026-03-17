@@ -1,50 +1,51 @@
 ---
 concept: Compressed Continuation (Compound Sentence)
-category: technique
-pdf_page: 202
-chapter_number: 6
-unit: null
-authors: "William E. Caplin"
+slug: compressed-continuation
+category: theme-types
+subcategory: compound
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Compound Themes"
+chapter_number: 6
+pdf_page: 202
+section: "Compressed Continuation"
+extraction_confidence: high
+aliases:
+  - compressed compound sentence continuation
+prerequisites:
+  - compound-sentence
+extends:
+  - compound-sentence
+related:
+  - phrase-compression
+contrasts_with: []
+answers_questions:
+  - "How is a compound sentence's continuation commonly compressed?"
+  - "How do composers restore symmetry after compressing the continuation?"
 ---
 
-# Compressed Continuation (Compound Sentence)
+# Quick Definition
+Many compound sentences compress their continuation and cadential functions into a single 4-m. phrase (like a simple sentence's continuation), then restore symmetry by repeating the continuation or adding postcadential extension, bringing the total back to 16 measures.
 
-In compound sentences, the continuation and cadential functions can often be expressed in fewer than the expected 8 measures, creating a **compressed continuation**.
+# Core Definition
+Unlike the period, which maintains balance, the sentence's forward-striving character allows flexible continuation length. Common pattern: 8-m. compound presentation + 4-m. continuation ending with deceptive cadence + 4-m. repetition ending with PAC = 16 mm. with restored symmetry. An ECP may support a continuation => cadential phrase. Even compressed, the function is fully expressed.
 
-## Nature of the Sentence
+# Key Properties
+1. Continuation compressed from 8 mm. to 4 mm.
+2. Symmetry restored by repetition or postcadential extension
+3. Deceptive cadence commonly motivates repetition
+4. ECP may support continuation => cadential
 
-Unlike the period, which maintains balance between antecedent and consequent, the sentence has:
-- Forward-striving character
-- Less need to preserve symmetry
-- Flexible continuation length
+# Examples
+**Example 1** (p. 203): Mozart, Clarinet Trio K. 498, i, mm. 1-16 -- 8-m. presentation + 4-m. continuation => deceptive cadence + 4-m. repetition => PAC.
+**Example 2** (p. 204): Haydn, Symphony No. 83, i, mm. 1-16 -- compressed continuation to HC at m. 12; 4-m. standing on dominant restores 16-m. balance.
 
-## Compression Options
+# Source Reference
+Chapter 6: Compound Themes, pages 202-204.
 
-Many compound sentences compress their continuation into:
-- A single 4-measure continuation phrase
-- A continuation⇒cadential phrase (with ECP)
-
-## Restoring Symmetry
-
-Even with compression, composers may restore balance through:
-- **Repeating** the continuation phrase
-- Adding **postcadential extension**
-- Using deceptive cadence to motivate repetition
-
-## Common Pattern
-
-A typical pattern with compression:
-1. 8-measure compound presentation
-2. 4-measure continuation → deceptive cadence
-3. 4-measure repetition → PAC
-
-This restores phrase-structural symmetry (8 + 8) while maintaining compressed continuation.
-
-## Standing on the Dominant
-
-If the compound sentence ends with an HC, a postcadential **standing on the dominant** may be added to:
-- Reinforce the dominant arrival
-- Restore balance with the presentation
-- Prepare for subsequent formal events
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Common technique explicitly discussed
+- Re-extraction notes: Preserved pattern from old card; reformatted to v3.1

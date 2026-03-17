@@ -1,40 +1,76 @@
 ---
 concept: Core Model
-category: form
-pdf_page: 452
+slug: core-model
+category: sonata-form
+tier: advanced
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Development"
 chapter_number: 13
-unit: null
-authors: "William E. Caplin"
+pdf_page: 452
+section: "Model"
+extraction_confidence: high
+aliases:
+  - development model
+  - model of core
+prerequisites:
+  - core
+  - model-sequence-technique
+related:
+  - sequence-in-core
+  - fragmentation-in-core
+contrasts_with: []
+answers_questions:
+  - "How large is the model in a development core?"
+  - "What material can a core model contain?"
 ---
 
-# Core Model
+# Quick Definition
+The initial, relatively long unit of the core (normally 4-8 measures) that establishes the material for sequential repetition and subsequent fragmentation.
 
-The initial, relatively long unit of the core that establishes the material for sequential repetition.
+# Core Definition
+The model must be "sufficiently large to project a sense of structural beginning, as well as to permit extensive fragmentation" (p. 452). It normally spans 4-8 measures. Short developments may use 2-m. models; models exceeding 8 measures are rare in the classical style but become common beginning with Schubert. The model may contain internal repetitions, but larger-scale sequencing must remain distinctly perceptible. Melodic-motivic content may come from any previous material or be new.
 
-## Size
+# Prerequisites
+- **Core** — The formal unit containing the model
+- **Model-sequence technique** — The compositional process the model initiates
 
-- Normally 4-8 measures
-- Must be sufficiently large to project structural beginning
-- Must permit extensive fragmentation
-- Short developments may use 2-measure models
-- Models exceeding 8 measures are rare in classical style (but common in Romantic)
+# Key Properties
+1. Normally 4-8 measures in length
+2. Must be large enough to project structural beginning
+3. Must permit extensive fragmentation
+4. May contain internal repetitions (exact, statement-response, sequential)
+5. Internal sequential repetitions must not obscure the larger-scale sequence
+6. Content may derive from any prior material or be new
+7. Long models may contain multiple phrases of differing function
 
-## Internal Structure
+# Construction / Recognition
+## To Identify:
+1. Look for a unit of 4-8 measures that is repeated (transposed) at least once
+2. Confirm the unit is large enough to be a model (not just a 1-m. transitional figure)
+3. Check whether internal repetitions create ambiguity about the true model size
 
-The model may contain:
-- Repeated material
-- Internal repetitions (exact, statement-response, or sequential)
-- If sequential repetition within the model, larger-scale sequencing must remain perceptible
+# Examples
+**Example 13.3** (p. 454): Haydn, H. 49 — 4-m. model (mm. 84-87) consisting of a repeated 2-m. idea from the first subordinate theme; sequenced twice by descending thirds.
 
-## Content
+**Example 13.5** (p. 457): Mozart, K. 614 — 10-m. model with sentential organization (presentation + continuation); one of the rare cases exceeding 8 measures in the classical style.
 
-Melodic-motivic content may be drawn from:
-- Any previous material of the movement
-- New material
-- If quite long, may contain variety of ideas across distinct phrases
+# Relationships
+## Builds Upon
+- **Model-sequence technique** — The model is its first component
+## Enables
+- **Sequence in core** — The model establishes what is sequenced
+- **Fragmentation in core** — The model's size defines the starting point for fragmentation
 
-## Relationship to Sequence
+# Common Errors
+- **Error**: Identifying a 2-m. internal repetition as the model when the true model is 4 measures
+  **Correction**: Look for the largest unit that is sequenced at a broader structural level; internal repetitions within the model are not the model itself
 
-The model establishes the pattern that is then sequenced one or more times, though the sequential pattern may change in the course of the core.
+# Source Reference
+Chapter 13: Development, page 452.
+
+# Verification Notes
+- Definition source: Direct from p. 452
+- Confidence rationale: Precisely defined with clear size parameters
+- Re-extraction notes: Preserved key content from old card; added internal repetition detail, rare 10-m. model example

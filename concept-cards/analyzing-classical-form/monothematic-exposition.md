@@ -1,45 +1,55 @@
 ---
 concept: Monothematic Exposition
-chapter: "Sonata Form: An Overview"
+slug: monothematic-exposition
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 380
-chapter_number: 9
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (III): Subordinate Theme"
+chapter_number: 12
+pdf_page: 380
+section: The Basics
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - subordinate-theme-basics
+extends: []
+related:
+  - haydn-style-exposition
+contrasts_with: []
+answers_questions:
+  - "What is a monothematic exposition?"
+  - "Which composer is most associated with this technique?"
 ---
 
-## Monothematic Exposition
+# Quick Definition
+A monothematic exposition occurs when the subordinate theme opens with the basic idea from the main theme, a technique especially associated with Haydn. Despite shared material, formal differentiation is still achieved through change of key, looser phrase organization, and different developmental treatment.
 
-A **monothematic exposition** occurs when the subordinate theme opens with the basic idea from the main theme, a technique especially associated with Haydn.
+# Core Definition
+Contrast with the main theme is usually provided by new melodic-motivic material. However, Haydn is well known for opening his subordinate themes with the basic idea of the main theme -- the so-called **monothematic exposition**. Even in monothematic expositions, contrast remains present through tonal contrast (the fundamental source), different melodic ideas as the subordinate theme progresses, and looser formal organization (Caplin, Ch. 12, p. 380).
 
-### Definition
+# Prerequisites
+- **Subordinate theme basics** -- Must understand the contrast function
 
-Rather than introducing new, contrasting melodic material, the subordinate theme begins with material derived directly from the main theme's basic idea.
+# Key Properties
+1. Subordinate theme opens with main theme's basic idea
+2. Especially associated with Haydn
+3. Tonal contrast remains (the fundamental source of contrast)
+4. Different melodic ideas appear as the subordinate theme develops
+5. Subordinate theme still displays looser organization
 
-### Haydn's Practice
+# Relationships
+## Builds Upon
+- **Subordinate theme basics** -- Monothematic is a variant of thematic contrast
+## Related
+- **Haydn's style** -- Particularly associated with this composer
 
-Haydn is well known for opening his subordinate themes with the basic idea of the main theme. This creates strong motivic unity across the exposition while still achieving formal differentiation through:
-- Change of key
-- Looser phrase organization
-- Different developmental treatment
+# Source Reference
+Chapter 12: Exposition (III): Subordinate Theme, page 380.
 
-### Contrast Still Present
-
-Even in monothematic expositions:
-- Tonal contrast remains (the fundamental source of contrast)
-- Different melodic ideas appear as the subordinate theme progresses
-- The subordinate theme still displays looser organization
-
-### Analytical Implications
-
-When analyzing monothematic expositions:
-- Note the motivic connection to the main theme
-- Observe how the shared material is treated differently
-- Consider how the technique affects formal perception
-
-### Related Concepts
-- [[subordinate-theme]]
-- [[main-theme]]
-- [[basic-idea]]
-- [[haydn-style]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Named concept with clear attribution
+- Re-extraction notes: Upgraded from old card; preserved Haydn association, clarified that contrast still exists

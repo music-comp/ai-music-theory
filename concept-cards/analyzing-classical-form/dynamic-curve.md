@@ -1,51 +1,48 @@
 ---
 concept: "Dynamic Curve"
+slug: dynamic-curve
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - progressive-dynamic
+  - recessive-dynamic
+extends: []
+related: []
+contrasts_with: []
+answers_questions:
+  - "What is a dynamic curve?"
 ---
 
-## Definition
+# Quick Definition
+A dynamic curve is a particular pattern of progressive and recessive dynamics that shapes the formal unfolding of a passage or movement.
 
-A dynamic curve is a particular pattern of progressive and recessive dynamics that shapes the formal unfolding of a musical passage or movement.
+# Core Definition
+A particular pattern of progressive and regressive dynamics (Caplin, Glossary, p. 725).
 
-## Components
+# Key Properties
+1. Combines progressive (buildup) and recessive (release) dynamics
+2. Shapes formal unfolding at theme and movement levels
+3. One coda compensatory function: shaping a new dynamic curve
 
-### Progressive Dynamic
-- Systematic buildup of tension and excitement
-- Increasing intensity, texture, rhythmic activity
-- Moves toward climax
+# Relationships
+## Builds Upon
+- **Progressive dynamic** -- The buildup component
+- **Recessive dynamic** -- The release component
 
-### Recessive Dynamic
-- Systematic release of tension and excitement
-- Decreasing intensity, texture, rhythmic activity
-- Moves toward repose
+# Source Reference
+Glossary of Terms, page 725.
 
-## Typical Curves
-
-### Within a Theme
-1. Beginning: Moderate
-2. Continuation: Progressive (building)
-3. Cadence: Peak, then recessive (closing)
-
-### Within a Movement
-1. Exposition: Builds through subordinate theme
-2. Development: Greatest intensity
-3. Recapitulation: Resolution, balanced dynamic
-4. Coda: Final dynamic shaping (may include new curve)
-
-## Analytical Value
-
-Tracking the dynamic curve helps:
-- Understand formal proportions
-- Identify climactic moments
-- Recognize expressive shape of the music
-- Appreciate compositional design
-
-## Coda Function
-
-One compensatory function of a coda is to **shape a new dynamic curve** for the movement, providing a final expressive shape that may differ from the recapitulation's curve.
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved from old card; added v3.1 fields

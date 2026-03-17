@@ -1,48 +1,50 @@
 ---
 concept: "Retrospective Reinterpretation"
+slug: retrospective-reinterpretation
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases:
+  - "becomes"
+prerequisites: []
+extends: []
+related:
+  - contextual-vs-intrinsic-function
+contrasts_with: []
+answers_questions:
+  - "What is retrospective reinterpretation?"
+  - "What does the arrow symbol mean in formal analysis?"
 ---
 
-## Definition
+# Quick Definition
+Retrospective reinterpretation is changing an analytical interpretation originally formed in one formal context when a newer context is perceived. One function "becomes" another, notated with the arrow symbol.
 
-Retrospective reinterpretation is the process of changing an analytical interpretation originally formed on the basis of one formal context in light of perceiving a newer context. Through this process, one function "becomes" (⇒) another function.
+# Core Definition
+Changing an analytical interpretation originally formed on the basis of one formal context in light of perceiving a newer context. Through this process, one function "becomes" (arrow) another function (Caplin, Glossary, p. 725).
 
-## Notation
+# Key Properties
+1. Initially interpret a passage based on available context
+2. Subsequent music reveals different formal context
+3. Reinterpret the earlier passage retroactively
+4. Notated with arrow symbol
+5. Captures the temporal experience of listening
 
-The symbol ⇒ indicates retrospective reinterpretation:
-- "Closing section ⇒ presentation"
-- "Codetta ⇒ basic idea"
-- Read as: "becomes" or "is reinterpreted as"
+# Relationships
+## Related
+- **Contextual vs. intrinsic function** -- Related distinction
 
-## How It Works
+# Source Reference
+Glossary of Terms, page 725.
 
-1. We initially interpret a passage based on available context
-2. Subsequent music reveals a different formal context
-3. We reinterpret the earlier passage in light of the new information
-4. The original interpretation "becomes" the new interpretation
-
-## Common Examples
-
-### False Closing Section
-- Initially sounds like closing section (postcadential)
-- Continues and develops
-- Reinterpreted as initiation of new theme
-
-### Continuation ⇒ Cadential
-- Passage begins with continuation characteristics
-- As cadential progression emerges, we understand it as cadential function
-- Written: continuation ⇒ cadential
-
-## Analytical Value
-
-Retrospective reinterpretation:
-- Captures the temporal experience of listening
-- Shows how formal understanding develops in real time
-- Acknowledges ambiguity and multiple valid interpretations
-- Reveals compositional strategies for manipulating expectations
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved from old card; added v3.1 fields

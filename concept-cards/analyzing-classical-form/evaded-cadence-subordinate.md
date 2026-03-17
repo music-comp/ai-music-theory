@@ -1,48 +1,73 @@
 ---
 concept: Evaded Cadence in Subordinate Theme
-chapter: "Exposition III: Subordinate Theme"
+slug: evaded-cadence-subordinate
+category: cadential-types
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 388
-chapter_number: 12
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (III): Subordinate Theme"
+chapter_number: 12
+pdf_page: 388
+section: Extension of Cadential Function
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - subordinate-theme-basics
+  - loosening-devices-subordinate-theme
+  - evaded-cadence
+extends:
+  - evaded-cadence
+related:
+  - one-more-time-technique
+  - abandoned-cadence-subordinate
+contrasts_with:
+  - abandoned-cadence-subordinate
+answers_questions:
+  - "How does an evaded cadence work in a subordinate theme?"
+  - "What typically follows an evaded cadence?"
+  - "Can an evaded cadence use root-position tonic?"
 ---
 
-## Evaded Cadence in Subordinate Theme
+# Quick Definition
+The most common means of extending cadential function in subordinate themes: the event following the cadential dominant groups with subsequent material (as a new beginning) rather than with the material leading to that dominant (as an ending). The melody is typically interrupted, and the bass usually moves to I6 rather than root-position I.
 
-The most common way of extending cadential function in a subordinate theme is through the **evaded cadence**, where prevailing musical processes fail to reach their projected goal.
+# Core Definition
+An evaded cadence occurs when the musical event following the cadential dominant groups with **subsequent** material (not with what preceded the dominant), sounding like a new beginning rather than an end. The dominant is left "hanging in the air." Texture, dynamics, and accompanimental pattern change; the melody is interrupted in its projected resolution (often leaping back to scale degree 5). In most cases, the cadential dominant moves to **I6** (first inversion prohibits perceiving a true cadence). To lead smoothly to I6, the dominant may first move through V7 (a passing seventh, NOT an abandoned cadence). Even root-position tonic can be an evaded cadence if sufficient disruption of melody, texture, dynamics, and register counters the perception of closure (Caplin, Ch. 12, pp. 388-394).
 
-### Definition
+# Prerequisites
+- **Subordinate theme basics** -- Context for cadential extension
+- **Evaded cadence** -- The general concept
 
-An evaded cadence occurs when:
-- The musical event following the cadential dominant groups with **subsequent** material
-- Not with the material leading up to that dominant
-- The event doesn't sound like a structural end but like a **new beginning**
-- Music supported by cadential dominant is left "hanging in the air"
+# Key Properties
+1. Post-dominant event groups with what follows, not what precedes
+2. Sounds like a new beginning, not an ending
+3. Melody usually interrupted (leaps back to 5 or moves to tonic in different register)
+4. Most common: V moves to I6 (inversion prevents true cadence)
+5. V7 before I6 is a passing seventh, NOT an abandoned cadence
+6. Root-position tonic CAN be an evasion if other parameters disrupt closure
+7. Often followed by "one more time" technique
 
-### How Evasion is Projected
+# Context & Application
+The evaded cadence is the most dramatic means of extending cadential function in subordinate themes. It arouses powerful expectation for further cadential action and is particularly well suited to subordinate themes because dramatizing the subordinate key's confirmation makes it a harder-won achievement.
 
-**Textural factors**:
-- Distinct change in texture
-- Change in dynamics
-- Change in accompanimental patterning
+# Relationships
+## Builds Upon
+- **Evaded cadence** -- General concept applied to subordinate theme
+## Enables
+- **One more time technique** -- Often follows an evaded cadence
+## Contrasts With
+- **Abandoned cadence** -- Less dramatic; cadential progression loses direction
 
-**Melodic factors**:
-- Melodic line interrupted in projected resolution to tonic
-- Melody often leaps back up to 5, starting another descent
-- Or melody moves to tonic in different register (avoiding stepwise resolution)
+# Common Errors
+- **Error**: Treating V7 before I6 as an abandoned cadence
+  **Correction**: The seventh is a passing tone; the V7 is an embellishment of root-position V, creating an evaded cadence
 
-### Typical Harmony
+# Source Reference
+Chapter 12: Exposition (III): Subordinate Theme, pages 388-394.
 
-In most evaded cadences, cadential dominant moves to **I6** (first inversion):
-- Inverted tonic prohibits perceiving a true cadence
-- I6 can then easily begin another cadential progression
-
-To lead more smoothly into I6, the dominant may move to V7 just prior to the evasion.
-
-### Related Concepts
-- [[cadential-extension]]
-- [[one-more-time-technique]]
-- [[cadential-function]]
-- [[essential-expositional-closure]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Detailed discussion with multiple clarifications
+- Re-extraction notes: Upgraded from old card; added passing seventh exception, root-position tonic possibility

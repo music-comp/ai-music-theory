@@ -1,49 +1,57 @@
 ---
 concept: "Returns of Main Theme in Rondo"
+slug: returns-of-main-theme
+category: rondo-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Rondo Forms"
 chapter_number: 19
 pdf_page: 677
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Rondo Forms"
+section: "Returns of the Main Theme"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - refrain
+extends:
+  - refrain
+related:
+  - abridged-refrain
+  - incomplete-refrain
+contrasts_with: []
+answers_questions:
+  - "What happens when the rondo refrain returns?"
+  - "What types of modification can returns undergo?"
 ---
 
-## Definition
+# Quick Definition
+All returns of the rondo refrain are set in the home key. The original structure may remain intact (with ornamental changes), be abridged (only the A section of a small ternary), or be incomplete (lacking cadential closure or ending in another key).
 
-All returns of the rondo refrain are set in the home key. The original structure of the refrain may remain intact or be modified in various ways.
+# Core Definition
+All returns of the rondo refrain are set in the home key. The original structure may well remain intact on its return, with ornamental changes. If the theme is a small ternary, the return may bring only the A (or A') section (abridged refrain). Less frequently, the refrain is shortened to lack cadential closure or concludes in some other tonal region (incomplete refrain; Caplin, p. 677).
 
-## Types of Returns
+# Prerequisites
+- **Refrain** -- The returning element
 
-### 1. Complete Return
-- Brings back the refrain's complete structure
-- May include ornamental changes:
-  - Melodic embellishment
-  - Textural enrichment
-  - Dynamic variations
+# Key Properties
+1. Always in the home key
+2. May be complete (with ornamental changes), abridged, or incomplete
+3. Abridged: only A/A' section of original ternary, concluding with PAC
+4. Incomplete: lacks home-key PAC or ends in another tonal region
 
-### 2. Abridged Refrain
-- If theme is built as small ternary (common)
-- Return brings only the **A (or A') section**
-- Concludes with home-key PAC
-- Internal structure shortened but still closed
+# Relationships
+## Builds Upon
+- **Refrain** -- The element whose returns are described
+## Related
+- **Abridged refrain** -- Shortened but closed return
+- **Incomplete refrain** -- Open-ended return
 
-### 3. Incomplete Refrain
-- Refrain is shortened to extent that it **lacks cadential closure**
-- Or concludes with a cadence in **some other tonal region**
-- Rare but creates interesting formal effects
+# Source Reference
+Chapter 19: Rondo Forms, page 677.
 
-## Example: Incomplete Refrain
-
-Haydn, Piano Sonata in E-flat, H. 49, iii:
-- Second refrain consists only of its modulating A section
-- Final cadence (m. 60) initially understood as authentic in new key
-- Becomes reinterpreted HC in home key when minore couplet begins
-
-## Dramatic Function
-
-Each return:
-- Reasserts the primacy of the home key
-- Creates sense of familiarity and stability
-- Provides structural anchor in the form
-- The moment of return is often the most anticipated event
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear classification of return types
+- Re-extraction notes: Preserved return types from old card; added v3.1 fields

@@ -1,53 +1,78 @@
 ---
 concept: "Minuet/Trio Form: Functional Relations"
+slug: minuet-trio-functional-relations
+category: minuet-trio
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Minuet/Trio Form"
 chapter_number: 18
 pdf_page: 655
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Minuet/Trio Form"
+section: "Minuet/Trio Form: Functional Relations"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - minuet-trio-form
+  - large-ternary-form
+extends: []
+related:
+  - trio-structural-dependence
+contrasts_with:
+  - large-ternary-form
+  - small-ternary
+answers_questions:
+  - "Can standard formal labels (exposition, development, recapitulation) be applied to minuet/trio form?"
+  - "How does minuet/trio form relate to large ternary?"
 ---
 
-## Ternary Appearance
+# Quick Definition
+The tripartite scheme of minuet/trio form superficially resembles ternary form, but applying standard labels (exposition, contrasting middle, recapitulation) is unsatisfactory. The trio is not a B section, and the da capo does not tonally adjust the minuet. No consistent functional relations exist among the three parts.
 
-The tripartite scheme (minuet, trio, da capo) is highly suggestive of an overall ternary structure:
-- Trio is a "contrasting" element in the "middle"
-- Da capo represents a "return" of the minuet proper
+# Core Definition
+Employing the labels of exposition, contrasting middle, and recapitulation proves unsatisfactory, since the trio bears no relation to a B section or development, and the da capo neither tonally adjusts nor structurally alters the original minuet. The form has a stronger relationship to large ternary when the trio resides in a contrasting mode and remains open on dominant, but we must not equate the two forms. Between total subordination and complete independence lies a spectrum, and thus no consistent functional relations can be identified (Caplin, pp. 655-656).
 
-## Why Standard Labels Don't Apply
+# Prerequisites
+- **Minuet/trio form** -- The form under analysis
+- **Large ternary form** -- The form to which it is compared
 
-Using exposition, contrasting middle, and recapitulation labels is **unsatisfactory** because:
-1. **Trio structure**: Bears no relation to a B section or development
-2. **Da capo**: Neither tonally adjusts nor structurally alters the original minuet
+# Key Properties
+1. Tripartite structure suggestive of ternary form
+2. Standard ternary labels are unsatisfactory
+3. Stronger resemblance to large ternary when trio is in contrasting mode and structurally incomplete
+4. But the two forms should not be equated
+5. Trio may be fully independent (same key, complete) or fully dependent (different key, incomplete)
+6. A spectrum of dependence exists between these extremes
+7. Parts remain labeled with neutral terms: minuet proper, trio, da capo
 
-It would be misleading to relate this form to either small ternary or sonata.
+# Construction / Recognition
+## To Identify:
+1. Assess the trio's degree of dependence on the minuet
+2. Check for modal/tonal contrast, structural incompleteness, retransition
+3. Place the trio on the spectrum from independence to subordination
+4. Use neutral labels rather than imposing ternary or sonata labels
 
-## Relationship to Large Ternary
+# Examples
+**Example 1** (p. 655): When trio is in the same key and fully closed, the movement seems like a "stringing together of parts" rather than true integration.
 
-Stronger relationship exists when:
-- Trio resides in contrasting mode or tonality
-- Trio remains open on dominant harmony
-- The trio then functions like an interior theme between main theme statements
+# Relationships
+## Builds Upon
+- **Minuet/trio form** -- The form under analysis
+## Related
+- **Trio structural dependence** -- The techniques that create subordination
+## Contrasts With
+- **Large ternary form** -- Similar in some cases but fundamentally different
+- **Small ternary** -- Uses exposition/B section/recapitulation labels that don't apply here
 
-## Important Caution
+# Common Errors
+- **Error**: Forcing exposition/development/recapitulation labels onto minuet/trio form
+  **Correction**: These labels are unsatisfactory; use the neutral terms minuet proper, trio, and da capo
 
-We must **not equate** the two full-movement forms:
-- Trio often not at all like interior theme
-- Especially when trio resides in same key/mode as minuet and is fully closed
-- In such cases, the movement seems more like a "stringing together of parts" than true integration
+# Source Reference
+Chapter 18: Minuet/Trio Form, pages 655-656.
 
-## Spectrum of Relationships
-
-| Trio Character | Relationship to Minuet |
-|----------------|----------------------|
-| Same key, fully closed | Complete independence |
-| Different mode, some openness | Moderate dependence |
-| Different key, structurally incomplete | Total subordination (most like large ternary) |
-
-## Terminological Solution
-
-Because consistent functional relations cannot be identified:
-- Parts remain labeled by **neutral terms**
-- "Minuet proper," "trio," and "da capo"
-- No attempt to assign exposition/development/recapitulation labels
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clearly stated analytical position
+- Re-extraction notes: Preserved spectrum concept from old card; added v3.1 fields

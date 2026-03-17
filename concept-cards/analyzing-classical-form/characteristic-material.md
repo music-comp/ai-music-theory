@@ -1,51 +1,55 @@
 ---
 concept: "Characteristic vs. Conventional Material"
+slug: characteristic-material
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases:
+  - "conventional material"
+prerequisites: []
+extends: []
+related:
+  - galant-cadence
+  - drum-bass
+  - murky-bass
+contrasts_with: []
+answers_questions:
+  - "What is characteristic material?"
+  - "What is conventional material?"
+  - "How does the distinction relate to formal function?"
 ---
 
-## Definitions
+# Quick Definition
+Characteristic material consists of unique melodic-rhythmic configurations defining a theme's identity. Conventional material consists of widely used patterns (scales, Alberti bass, standard cadential figures) interchangeable between pieces. Beginning functions feature characteristic material; ending functions tend toward conventional material.
 
-### Characteristic Material
-Melodic and rhythmic configurations used to define a theme as **unique**. This material gives a theme its individual identity.
+# Core Definition
+Characteristic material: melodic and rhythmic configurations used to define a theme as unique. Conventional material: melodic and rhythmic configurations widely used within the style and potentially interchangeable from piece to piece (Caplin, Glossary, p. 725).
 
-### Conventional Material
-Melodic and rhythmic configurations **widely used** within the style and thus potentially interchangeable from piece to piece.
+# Key Properties
+1. Characteristic: unique to a particular theme; establishes identity
+2. Conventional: standard patterns (scales, arpeggiations, Alberti bass, standard cadential figures)
+3. Beginning functions (presentation, antecedent) feature characteristic material
+4. Ending functions (continuation, cadential) feature conventional material
+5. Liquidation: systematic elimination of characteristic motives, leaving conventional material
 
-## Examples
+# Relationships
+## Related
+- **Galant cadence** -- Example of conventional cadential material
+- **Drum bass** -- Example of conventional accompanimental material
+- **Murky bass** -- Example of conventional accompanimental material
 
-| Type | Examples |
-|------|----------|
-| Characteristic | Distinctive melodic motives, unique rhythmic patterns |
-| Conventional | Scales, arpeggiations, Alberti bass, standard cadential figures |
+# Source Reference
+Glossary of Terms, page 725.
 
-## Role in Formal Function
-
-### Beginning Functions (Presentation, Antecedent)
-- Tend to feature **characteristic** material
-- Establish the theme's unique identity
-- Create memorable, identifiable content
-
-### Ending Functions (Continuation, Cadential)
-- Tend to feature more **conventional** material
-- Allow characteristic material to recede
-- Prepare for cadential closure
-
-## Liquidation
-
-The process of **liquidation** involves the systematic elimination of characteristic motives, leaving behind conventional material. This typically occurs in:
-- Continuation phrases
-- Development sections
-- Transitions
-
-## Analytical Value
-
-Distinguishing between characteristic and conventional material helps:
-- Identify formal functions
-- Understand thematic identity
-- Track motivic processes throughout a movement
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definitions with clear formal-function link
+- Re-extraction notes: Preserved from old card; added v3.1 fields

@@ -1,45 +1,59 @@
 ---
 concept: Dominant Arrival
-chapter: "Exposition II: Transition"
+slug: dominant-arrival
+category: cadential-types
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 353
-chapter_number: 11
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (II): Transition"
+chapter_number: 11
+pdf_page: 353
+section: Dominant Arrival
+extraction_confidence: high
+aliases:
+  - "premature dominant arrival"
+prerequisites:
+  - transition-basics
+  - half-cadence-transition
+extends: []
+related:
+  - standing-on-the-dominant
+contrasts_with:
+  - half-cadence-transition
+answers_questions:
+  - "What is a dominant arrival vs. a half cadence?"
+  - "What is a premature dominant arrival?"
 ---
 
-## Dominant Arrival
+# Quick Definition
+A dominant arrival occurs when the transition's final dominant is not associated with a genuine half cadence -- either because it lacks a true cadential progression or because the progression is obscured -- yet the dominant still functions as an ending harmony (through liquidation, elongation, or initiating a standing on the dominant).
 
-A **dominant arrival** occurs when the final harmony of the transition is not associated literally with a half cadence, yet still functions as an ending.
+# Core Definition
+A **dominant arrival** distinguishes situations where the transition's final dominant is not literally a half cadence. Two main situations: (1) no cadential progression -- the dominant may include a seventh from the start, or no progression is implied; (2) cadential progression present but obscured. The dominant can still function as an "ending" because it marks the beginning of a standing on the dominant, features liquidation and texture reduction, or is elongated. A **premature dominant arrival** occurs when the harmonic goal (dominant) does not coordinate with melodic or grouping processes -- the music gets "stuck" on the dominant too early (Caplin, Ch. 11, pp. 353-354).
 
-### Two Situations
+# Prerequisites
+- **Transition basics** -- Dominant arrival is the alternative to HC
+- **Half cadence** -- The more definitive closure
 
-**1. No cadential progression**:
-- Final dominant not achieved by genuine half-cadential progression
-- Sometimes progression is forming but fails (dominant includes seventh)
-- Sometimes no cadential progression is even implied
+# Key Properties
+1. Final dominant NOT in context of genuine HC
+2. Still functions as "ending" harmony
+3. May include seventh or be inverted from the start
+4. Can be recognized by liquidation, elongation, or standing on the dominant
+5. "Premature" when harmonic goal precedes melodic/grouping goal
 
-**2. Cadential progression present but obscured**:
-- Various factors obscure sense of true cadential closure
-- Dominant appears to arrive "too early"
+# Relationships
+## Contrasts With
+- **Half cadence** -- HC has genuine cadential progression; dominant arrival does not
+## Enables
+- **Standing on the dominant** -- May follow a dominant arrival
 
-### When Dominant Feels Like an Ending
+# Source Reference
+Chapter 11: Exposition (II): Transition, pages 353-354.
 
-The dominant can still appear to be an ending harmony because:
-- It marks what sounds like beginning of standing on the dominant
-- It features liquidation and texture reduction
-- It is especially elongated relative to preceding harmonies
-
-### Premature Dominant Arrival
-
-When the moment of dominant arrival does not coordinate with melodic or grouping processes:
-- Music seems to get stuck "too early" on the dominant
-- Harmonic goal precedes melodic goal
-- This is called a **premature** dominant arrival
-
-### Related Concepts
-- [[half-cadence]]
-- [[transition-closure]]
-- [[standing-on-the-dominant]]
-- [[premature-dominant-arrival]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear distinction from HC with specific criteria
+- Re-extraction notes: Upgraded from old card; added premature dominant arrival

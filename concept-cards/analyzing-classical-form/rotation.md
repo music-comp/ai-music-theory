@@ -1,46 +1,54 @@
 ---
 concept: "Rotation"
+slug: rotation
+category: concerto-form
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - sonata-form
+extends: []
+related:
+  - double-exposition
+  - solo-recapitulation
+contrasts_with: []
+answers_questions:
+  - "What does rotation mean in formal analysis?"
+  - "How does rotation apply to concerto form?"
 ---
 
-## Definition
+# Quick Definition
+Rotation refers to bringing back in a later part of the form (such as the recapitulation) the same ordering of musical events that was established in an earlier part (such as the exposition). Deviations from rotation are analytically significant.
 
-Rotation refers to bringing back in a later part of the form (such as the recapitulation) the same ordering of musical events that was established in an earlier part (such as the exposition).
+# Core Definition
+Bringing back in a later part of the form (such as the recapitulation) the same ordering of musical events that was established in an earlier part (such as the exposition; Caplin, Glossary, p. 725).
 
-## The Concept
+# Prerequisites
+- **Sonata form** -- The primary context for rotation
 
-- The exposition establishes an **order** of events: main theme → transition → subordinate theme → closing
-- The recapitulation **rotates** through this same order
-- Even if material is modified or transposed, the sequence is preserved
+# Key Properties
+1. Ordering of events established in exposition is preserved in recapitulation
+2. Even modified/transposed material maintains the same sequence
+3. Deviations from rotation are analytically significant
+4. Especially relevant in concerto form (must combine two rotations)
 
-## Application
+# Relationships
+## Related
+- **Double exposition** -- Creates two rotations that must be reconciled
+- **Solo recapitulation** -- Must combine rotations from both expositions
 
-### In Sonata Form
-- Exposition: MT → TR → ST → CS
-- Recapitulation: MT → TR → ST → CS (same order, home key)
+# Source Reference
+Glossary of Terms, page 725.
 
-### In Concerto Form
-- Opening ritornello: MT → TR → ST
-- Solo exposition: MT → TR → ST (same rotation)
-- Recapitulation: must combine both rotations
-
-## Deviations
-
-When material appears "out of order":
-- A deviation from rotation has occurred
-- This is analytically significant
-- May indicate formal reinterpretation or special effect
-
-## Analytical Value
-
-The concept of rotation helps:
-- Track how expositions are recapitulated
-- Identify when material is omitted or reordered
-- Understand the relationship between different formal sections
-- Analyze concerto form's "double exposition" challenge
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved from old card; added v3.1 fields

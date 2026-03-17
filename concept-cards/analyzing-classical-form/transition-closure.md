@@ -1,50 +1,69 @@
 ---
 concept: Transition Closure
-chapter: "Exposition II: Transition"
+slug: transition-closure
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 350
-chapter_number: 11
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (II): Transition"
+chapter_number: 11
+pdf_page: 350
+section: Closure
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - transition-basics
+  - half-cadence-transition
+  - dominant-arrival
+extends: []
+related:
+  - standing-on-the-dominant
+  - medial-caesura
+  - liquidation-transition
+contrasts_with: []
+answers_questions:
+  - "How does a transition end?"
+  - "What is the difference between structural and literal end?"
 ---
 
-## Transition Closure
+# Quick Definition
+The transition's close is typically marked by liquidation of motivic material, texture reduction, and sometimes a medial caesura. The structural end is the HC or dominant arrival; the literal end may extend further through the standing on the dominant. These may coincide or differ.
 
-The close of the transition is typically marked by specific formal and textural features.
+# Core Definition
+The transition's close is marked by liquidation, texture reduction, and sometimes a break in rhythmic activity (medial caesura). The final harmony is a dominant (of SK or HK), often given temporal emphasis via a standing on the dominant. A fermata on the final sonority effectively "extends" the dominant and signals a medial caesura. Important distinction: **structural end** = the HC or dominant arrival; **literal end** = just before the subordinate theme begins (may include the standing on the dominant and medial caesura). These may coincide or occur at different points. Not all transitions end with a standing on the dominant; slow movements in particular may not (Caplin, Ch. 11, pp. 350-351, 355).
 
-### Characteristic Features
+# Prerequisites
+- **Transition basics** -- Closure is the final phase
+- **HC in transition** -- The definitive closing cadence
+- **Dominant arrival** -- The alternative closing device
 
-- **Liquidation** of melodic-motivic material
-- **Reduction** in texture
-- Sometimes a **break in rhythmic activity** (medial caesura)
+# Key Properties
+1. Liquidation + texture reduction + possible medial caesura
+2. Structural end (HC/dominant arrival) vs. literal end (before subordinate theme)
+3. Standing on the dominant prolongs the final harmony
+4. Fermata on final sonority extends dominant and signals MC
+5. Not all transitions have standing on the dominant (esp. slow movements)
+6. Some transitions lack a clear ending function entirely
 
-### Harmonic Goal
+# Relationships
+## Builds Upon
+- **HC in transition** -- The structural end
+- **Dominant arrival** -- Alternative structural end
+## Related
+- **Standing on the dominant** -- Extends between structural and literal end
+- **Medial caesura** -- Textural gap at the literal end
+- **Liquidation** -- Motivic process marking closure
 
-The final harmony is a **dominant** (of subordinate or home key):
-- Often given temporal emphasis via standing on the dominant
-- Use of fermata on final sonority is effective for extending dominant
-- Fermata also signals medial caesura
+# Common Errors
+- **Error**: Locating the transition's end at the beginning of the subordinate theme
+  **Correction**: The transition ends at the HC; the tonic beginning the subordinate theme is a new beginning, not an ending
 
-### Half Cadence vs. Dominant Arrival
+# Source Reference
+Chapter 11: Exposition (II): Transition, pages 350-355.
 
-**Half Cadence**: Dominant must initially appear as triad in root position
-- Subsequent prolongation may add seventh or invert
-
-**Dominant Arrival**: Dominant doesn't appear in clear cadential context
-- May be inverted or contain seventh from the start
-- Still functions as "ending" harmony
-
-### Structural End vs. Literal End
-
-Important distinction:
-- **Structural end**: The moment of HC or dominant arrival
-- **Literal end**: Just before subordinate theme entrance (may include standing on dominant, medial caesura)
-
-These may occur simultaneously or at different points.
-
-### Related Concepts
-- [[half-cadence]]
-- [[dominant-arrival]]
-- [[standing-on-the-dominant]]
-- [[medial-caesura]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Critical analytical distinction
+- Re-extraction notes: Upgraded from old card; added structural vs. literal end distinction

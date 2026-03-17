@@ -1,48 +1,80 @@
 ---
 concept: Elision
-category: technique
-pdf_page: 108
-chapter_number: 3
-unit: null
-authors: "William E. Caplin"
+slug: elision
+category: formal-functions
+subcategory: boundary-processes
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "The Period"
+chapter_number: 3
+pdf_page: 95
+section: "Non-elision of Antecedent with Consequent"
+extraction_confidence: high
+aliases:
+  - "phrase overlap"
+prerequisites:
+  - period
+extends: []
+related:
+  - lead-in
+contrasts_with:
+  - lead-in
+answers_questions:
+  - "What is elision?"
+  - "Why don't antecedent and consequent elide in a period?"
 ---
 
-# Elision
+# Quick Definition
+A boundary process where the end of one formal unit directly coincides with the beginning of the next. Creates pronounced rhythmic and formal continuity. Crucially: an antecedent phrase does NOT elide with a consequent phrase in a period, because this would break the symmetrical structure and obscure the perception of weak-to-strong cadential repetition.
 
-**Elision** occurs when the end of one formal unit directly coincides with the beginning of the subsequent unit, creating pronounced rhythmic and formal continuity.
+# Core Definition
+When the end of one formal unit directly coincides with the beginning of the subsequent unit, then we term this boundary process elision. An elision creates a pronounced sense of rhythmic and formal continuity and has its appropriate uses in various places within a musical work -- but not within a period (p. 108). An examination of the classical repertory reveals that an antecedent phrase does not elide with a consequent phrase (p. 109).
 
-## Definition
+# Prerequisites
+- **Period** — The no-elision rule specifically applies to periods
 
-When the ending of one phrase and the beginning of the next phrase occur at the **same moment** in time, an elision is created. A single event serves as both:
-- The goal (ending) of the preceding phrase
-- The beginning of the next phrase
+# Key Properties
+1. End of one unit coincides with beginning of next
+2. Creates pronounced rhythmic and formal continuity
+3. Used in various formal contexts (transitions, developments)
+4. NOT used within a period (antecedent does not elide with consequent)
+5. Three reasons for no-elision in periods: (a) harmony may not support authentic cadence at m. 5; (b) would break symmetrical phrase structure; (c) would obscure perception of weak-to-strong repetition
 
-## Effect
+# Construction / Recognition
+## To Identify (or Rule Out):
+1. Check if the cadence of the antecedent falls on the downbeat of m. 5
+2. If so, verify the harmony: does it truly create an authentic cadence?
+3. Even if harmonically possible, the non-elision principle applies in periods
+4. Consider an HC at m. 4 rather than an elided authentic cadence at m. 5
 
-Elision creates:
-- Pronounced sense of rhythmic continuity
-- Strong formal momentum
-- Compressed formal structure
+# Context & Application
+Elision is common in other formal contexts (e.g., between transitions and subordinate themes, or within development sections), but is specifically excluded from the antecedent-consequent relationship in periods. The symmetrical structure and clear phrase boundaries are essential components of the period form.
 
-## Important Rule: No Elision in Periods
+# Examples
+**Example 1** (p. 109, Ex. 3.16): Haydn, H. 30, iii -- continuous rhythm into m. 9 might suggest elided IAC, but bass voice-leading undermines cadential potential; the antecedent closes with HC at m. 7.
 
-An examination of the classical repertory reveals that **an antecedent phrase does NOT elide with a consequent phrase**.
+# Relationships
+## Builds Upon
+- **Period** — The no-elision rule is specific to periods
+## Related
+- **Lead-in** — Alternative boundary process (linking, not overlapping)
+## Contrasts With
+- **Lead-in** — Elision overlaps; lead-in creates space
 
-Reasons:
-- The symmetrical phrase structure would be broken (5 bars vs. 4 bars)
-- The perception of repeating a unit of weak closure with stronger closure is obscured
-- Clear separation between units is essential for period form
+# Common Errors
+- **Error**: Hearing an elided authentic cadence between antecedent and consequent
+  **Correction**: Antecedent and consequent do not elide in periods; reinterpret as HC
 
-## Contexts Where Elision Does Occur
+# Common Confusions
+- **Confusion**: Confusing rhythmic continuity with formal elision
+  **Clarification**: Music may continue without pause through phrase boundaries without elision occurring; elision requires the END of one unit to coincide with the BEGINNING of the next (see end-vs-stop distinction)
 
-Elision is used appropriately in other formal contexts:
-- Theme ending with subsequent formal section
-- Closing section with postcadential material
-- Later in movements where continuity is desired
+# Source Reference
+Chapter 3: The Period, pages 108-110. Example 3.16 (Haydn, H. 30).
 
-## Distinction from Melodic Overlap
-
-**Elision**: Entire final measure belongs to both preceding and following groups
-**Melodic overlap**: Only the melodic goal coincides; the measure belongs to the new phrase
+# Verification Notes
+- Definition source: Direct from pp. 108-109
+- Confidence rationale: Explicitly defined with three reasons for non-elision in periods
+- Re-extraction notes: Re-extracted from v2 card; preserved three-reason analysis and Haydn example

@@ -1,47 +1,43 @@
 ---
 concept: "Phrygian Cadence"
+slug: phrygian-cadence
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites: []
+extends: []
+related: []
+contrasts_with: []
+answers_questions:
+  - "What is a Phrygian cadence?"
 ---
 
-## Definition
+# Quick Definition
+A Phrygian cadence is a type of half cadence in which the bass descends a half-step from the lowered sixth scale degree to the fifth (b6 to 5), typically involving iv6 to V.
 
-A phrygian cadence is a type of half cadence in which the bass descends a half-step from the lowered sixth scale degree to the fifth scale degree (b6 to 5).
+# Core Definition
+A type of half cadence in which the bass descends a half-step from b6 to 5 (Caplin, Glossary, p. 725).
 
-## Bass Motion
+# Key Properties
+1. Half cadence type
+2. Bass descends b6 to 5
+3. Often involves iv6 to V
+4. Named after Phrygian mode
+5. Common in minor-mode contexts
 
-```
-b6 → 5 (in minor: Ab → G in C minor)
-```
+# Source Reference
+Glossary of Terms, page 725.
 
-## Typical Harmonic Context
-
-- Often involves iv6 → V
-- The iv6 chord has b6 in the bass
-- Resolution to root-position V creates the phrygian motion
-
-## Historical Association
-
-Named after the Phrygian mode:
-- The Phrygian mode has a half-step between 1 and 2
-- The cadential bass motion echoes this characteristic interval
-- Strong historical connection to Baroque practice
-
-## Effect
-
-- Creates distinctive cadential color
-- The half-step descent in bass is aurally prominent
-- Associated with particular expressive qualities
-- Common in minor-mode contexts
-
-## Usage in Classical Style
-
-- Continues Baroque tradition
-- Found especially in minor-mode movements
-- May appear in slow movements
-- Often in interior phrases or transitions
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved from old card; added v3.1 fields

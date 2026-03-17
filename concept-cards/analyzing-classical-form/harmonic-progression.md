@@ -1,57 +1,91 @@
 ---
 concept: Harmonic Progression
-category: theory
-source: "Analyzing Classical Form: An Approach for the Classroom"
+slug: harmonic-progression
+category: harmony
+subcategory: fundamentals
+tier: foundational
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "A Review of Harmony"
 chapter_number: 1
 pdf_page: 23
-unit: null
-authors: William E. Caplin
+section: "Harmonic Progressions"
+extraction_confidence: high
+aliases:
+  - "types of harmonic progression"
+prerequisites:
+  - harmonic-function
+extends: []
+related:
+  - prolongational-progression
+  - cadential-progression
+  - sequential-progression
+  - linking-harmony
+contrasts_with: []
+answers_questions:
+  - "What are the three types of harmonic progression?"
+  - "How do harmonic progressions relate to formal analysis?"
+  - "What is a linking harmony?"
 ---
 
 # Quick Definition
-An arrangement of individual harmonies into one of three main types: prolongational, cadential, or sequential.
+Most harmonic progressions classify into one of three main types: prolongational (sustaining a harmony), cadential (confirming a tonal center), or sequential (destabilizing through consistent root motion). A linking harmony can connect two progressions by functioning as the last chord of one and the first of the next.
 
-# Formal Definition
-Harmonic progressions describe how individual harmonies are arranged to create directed motion through time. Most harmonic progressions can be classified into one of three main types: prolongational (sustaining a harmony through subordinate chords), cadential (confirming a tonal center through functional ordering), or sequential (destabilizing through consistent root-motion patterns).
+# Core Definition
+Let us now consider how the individual harmonies can be arranged to make progressions of harmonies. Most harmonic progressions can be classified into one of three main types: prolongational, cadential, or sequential. Typically, the individual progressions are fully distinct one from the other. Often, however, the final harmony of one progression can function as the first harmony of the next progression; this shared sonority can be termed a linking harmony (p. 25).
 
-# Musical/Theoretical Formulation
-The three types of harmonic progression:
+# Prerequisites
+- **Harmonic function** — Must understand tonic, dominant, and pre-dominant functions to classify progressions
 
-1. **Prolongational**: Sustains a single harmony through intervening subordinate chords (neighboring, passing, substitute harmonies, or pedal point)
+# Key Properties
+1. Three main types: prolongational, cadential, sequential
+2. Prolongational: sustains a harmony through subordinate chords
+3. Cadential: confirms tonality through functional ordering (T-PD-D-T)
+4. Sequential: destabilizes through consistent root-motion patterns
+5. Progressions are typically distinct but may share a linking harmony at boundaries
+6. Themes often contain all three types, frequently in the order: prolongational, sequential, cadential
 
-2. **Cadential**: Confirms tonality by bringing fundamental functions in order: (initial) tonic - pre-dominant - dominant - (final) tonic
+# Construction / Recognition
+## To Identify a Progression Type:
+1. Does it sustain a single harmony through embellishing chords? -- Prolongational
+2. Does it bring functions in the order T-PD-D-T (or subset)? -- Cadential
+3. Does it feature consistent root-motion patterns? -- Sequential
+4. Check boundaries: does the final chord of one progression also begin the next? -- Linking harmony
 
-3. **Sequential**: Destabilizes through consistent intervallic patterns of root motion; may facilitate modulation
-
-Typically, individual progressions are fully distinct. However, the final harmony of one progression can function as the first harmony of the next - this shared sonority is termed a **linking harmony**.
-
-# Musical Context/Application
-Understanding progression types is essential for analyzing classical form:
-- Themes typically contain prolongational, sequential, and cadential progressions (often in that order)
-- The distinction between prolongational and cadential is fundamental to formal analysis
-- Recognizing progression boundaries helps identify formal units and cadential arrivals
-
-Each progression type has specific analytical notation to clarify its role in the formal structure.
+# Context & Application
+Understanding progression types is essential for analyzing classical form. Themes typically contain prolongational, sequential, and cadential progressions (often in that order). The distinction between prolongational and cadential is fundamental to formal analysis. Recognizing progression boundaries helps identify formal units and cadential arrivals. Each type has specific analytical notation: parentheses for subordinate harmonies (prolongational), square brackets for cadential, and "seq." label for sequential.
 
 # Examples
-Examples 1.4 and 1.5 demonstrate themes containing all three progression types in order:
+**Example 1** (p. 28, Ex. 1.4): Mozart, K. 332, mm. 50-57 -- tonic prolongation (mm. 50-53), descending-step sequential progression (mm. 54-56), incomplete half-cadential progression (mm. 56-57). IV6 at m. 56 is a linking harmony.
 
-Example 1.4 (Mozart, K. 332, mm. 50-57): Opening four bars prolong tonic, mm. 54-56 bring a sequential progression, followed by an incomplete half-cadential progression.
+**Example 2** (p. 29, Ex. 1.5): Haydn, Symphony No. 93, mm. 29-36 -- tonic pedal prolongation (mm. 29-32), descending-fifth sequence (mm. 33-34), authentic cadential progression (mm. 35-36).
 
-Example 1.5 (Haydn, Symphony No. 93, mm. 29-36): Tonic pedal prolongation (mm. 29-32), descending-fifth sequential progression (mm. 33-34), then authentic cadential progression.
+# Relationships
+## Builds Upon
+- **Harmonic function** — Progressions are classified by how they deploy functions
+## Enables
+- **Formal analysis workflow** — Progression identification is a primary analytical step
+## Related
+- **Prolongational progression** — One of the three types
+- **Cadential progression** — One of the three types
+- **Sequential progression** — One of the three types
+- **Linking harmony** — Connects two progressions
+## Contrasts With
+- No direct contrasts (the three sub-types contrast with each other)
 
-# Related Concepts
-- Prolongational Progression
-- Cadential Progression
-- Sequential Progression
-- Linking Harmony
-- Harmonic Function
+# Common Errors
+- **Error**: Assuming any V-I motion is cadential
+  **Correction**: Prolongational I-V-I (with V as neighboring chord) is not cadential
 
 # Common Confusions
-- Assuming any V-I motion is cadential (prolongational I-V-I with V6 is not cadential)
-- Not recognizing linking harmonies that belong to two progressions simultaneously
-- Treating all three progression types as equally common (cadential progressions are essential for formal closure)
+- **Confusion**: Thinking complete cadential progressions are "stronger" than incomplete ones
+  **Clarification**: Whether a composer uses complete or incomplete depends on context; there is nothing defective about incomplete progressions (p. 37)
 
 # Source Reference
-Chapter 1: A Review of Harmony, pages 25-29 (PDF pages 25-29)
+Chapter 1: A Review of Harmony, pages 25-29. Examples 1.4 and 1.5 demonstrate all three types in sequence.
+
+# Verification Notes
+- Definition source: Direct from p. 25
+- Confidence rationale: Explicitly defined with clear taxonomy
+- Re-extraction notes: Re-extracted from v2 card; consolidated old linking-harmony card into this one; preserved linking harmony examples

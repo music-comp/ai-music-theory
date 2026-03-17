@@ -1,49 +1,76 @@
 ---
 concept: "Double Variations Form"
+slug: double-variations
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Slow-Movement Forms"
 chapter_number: 17
 pdf_page: 591
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Slow-Movement Forms"
+section: "Double Variations Form"
+extraction_confidence: high
+aliases:
+  - "alternating variations"
+prerequisites:
+  - theme-and-variations
+  - minore-maggiore
+extends:
+  - theme-and-variations
+related: []
+contrasts_with: []
+answers_questions:
+  - "What is double variations form?"
+  - "How do two themes alternate in a variations movement?"
 ---
 
-## Definition
+# Quick Definition
+Double variations (or alternating variations) is a formal type using two themes as the basis for variation. The themes alternate and become varied on each reappearance. Haydn regularly employs this form, and several examples appear in Beethoven's works.
 
-Double variations (also called "alternating variations") is a formal type that uses two themes as the basis for variation. The themes alternate with each other throughout the movement, becoming varied on each reappearance.
+# Core Definition
+A related formal type uses two themes as the basis for variation. Haydn regularly employs this "double variations" form (or "alternating variations," as Elaine Sisman terms it). The second theme is a minore (or maggiore) whose opening idea is often, but not necessarily, derived from that of the first theme. Throughout the movement, the themes alternate with each other and become varied on each reappearance (Caplin, p. 591).
 
-## Structure
+# Prerequisites
+- **Theme and variations** -- The single-theme form from which double variations derives
+- **Minore/maggiore** -- The modal contrast between the two themes
 
-| Order | Content |
-|-------|---------|
-| 1 | Theme A |
-| 2 | Theme B (minore/maggiore) |
-| 3 | Variation of Theme A |
-| 4 | Variation of Theme B |
-| 5 | Further Variation of Theme A |
-| ... | Continues alternating |
+# Key Properties
+1. Two themes serve as the basis for variation
+2. Second theme is typically a minore (or maggiore)
+3. Opening idea of second theme may (but need not) derive from the first
+4. Themes alternate throughout the movement
+5. Each reappearance is varied
+6. Especially associated with Haydn
 
-## Characteristics
+# Construction / Recognition
+## To Identify:
+1. Identify two distinct themes at the beginning of the movement
+2. Confirm they are in contrasting modes (major/minor)
+3. Track the alternation pattern: A, B, A', B', A'', etc.
+4. Note variation techniques applied to each theme
 
-### The Two Themes
-- Second theme is typically a **minore** (or maggiore) version
-- Opening idea of second theme is often (but not necessarily) derived from the first theme
-- Both themes are usually built as small ternary or small binary
+# Context & Application
+Double variations provide inherent variety through the modal contrast between themes. This form is especially characteristic of Haydn but also appears in Beethoven.
 
-### Compositional Usage
-- **Haydn** regularly employs this form
-- Several examples appear in Beethoven's works
-- Creates greater variety than single-theme variations
+# Examples
+**Example 1** (p. 591): Haydn regularly employs this form; several examples appear in Beethoven's works.
 
-## Relationship Between Themes
+# Relationships
+## Builds Upon
+- **Theme and variations** -- The single-theme form that is expanded here
+## Related
+- **Minore/maggiore** -- The modal contrast between the two themes
 
-- The modal contrast provides inherent variety
-- Derivation of thematic material creates unity
-- Each appearance offers opportunity for new variation techniques
+# Common Errors
+- **Error**: Assuming the two themes must share melodic material
+  **Correction**: The opening idea of the second theme is "often, but not necessarily" derived from the first
 
-## Analytical Considerations
+# Source Reference
+Chapter 17: Slow-Movement Forms, page 591.
 
-- Track which theme is being varied at each point
-- Note how variation techniques differ between the two themes
-- Observe how the alternating pattern affects overall form
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clearly defined in text box
+- Re-extraction notes: Preserved structure table from old card; added v3.1 fields

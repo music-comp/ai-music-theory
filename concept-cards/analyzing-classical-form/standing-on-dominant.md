@@ -1,54 +1,49 @@
 ---
 concept: "Standing on the Dominant"
+slug: standing-on-dominant
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases:
+  - "dominant pedal"
+prerequisites: []
+extends: []
+related:
+  - dramatic-element-rondo
+contrasts_with: []
+answers_questions:
+  - "What is a standing on the dominant?"
 ---
 
-## Definition
+# Quick Definition
+A postcadential phrase function following a half cadence, consisting of one or more ideas supported exclusively by a dominant prolongation. Especially dramatic in rondo retransitions.
 
-A standing on the dominant is a postcadential phrase function following a half cadence. It consists of one or more ideas supported exclusively by a dominant prolongation. It may also follow a PAC at the end of a small ternary exposition to initiate a contrasting middle.
+# Core Definition
+A postcadential phrase function following a half cadence. It may also follow a PAC at the end of a small ternary exposition to initiate a contrasting middle. It consists of one or more ideas supported exclusively by a dominant prolongation (Caplin, Glossary, p. 725).
 
-## Characteristics
+# Key Properties
+1. Follows HC (or initiates B section after PAC)
+2. Exclusively dominant harmony (prolonged)
+3. Creates strong expectation for tonic resolution
+4. Found after transitions, in contrasting middles, in retransitions
+5. In rondos: most dramatic event of a couplet
 
-- Follows HC (or initiates B section after PAC)
-- Harmony: **Exclusively dominant** (prolonged)
-- Duration: Can range from brief to extensive
-- Content: One or more melodic ideas over the pedal
+# Relationships
+## Related
+- **Dramatic element (rondo)** -- Standing on dominant as locus of rondo drama
 
-## Where It Occurs
+# Source Reference
+Glossary of Terms, page 725.
 
-### After Transition
-- Following the transition's HC
-- Prepares the subordinate theme entrance
-
-### In Contrasting Middle (B Section)
-- After reaching home-key HC
-- Prepares the recapitulation
-
-### In Retransition
-- After development or couplet
-- Prepares return of main theme
-
-### In Rondo
-- Part of the dramatic preparation for refrain return
-- Can become the most climactic moment of a couplet
-
-## Musical Content
-
-Often features:
-- Motives anticipating the upcoming theme's basic idea
-- Crescendo building to the theme's entrance
-- Rhythmic intensification
-- Textural buildup
-
-## Effect
-
-Creates strong expectation for:
-- Resolution to tonic
-- Return of thematic material
-- New formal beginning
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved from old card; added v3.1 fields

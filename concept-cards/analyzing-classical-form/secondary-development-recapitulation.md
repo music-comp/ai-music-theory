@@ -1,45 +1,76 @@
 ---
 concept: "Secondary Development in Recapitulation"
+slug: secondary-development-recapitulation
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Slow-Movement Forms"
 chapter_number: 17
 pdf_page: 594
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Slow-Movement Forms"
+section: "Sonata Without Development"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - sonata-without-development
+  - recapitulation
+extends:
+  - recapitulation
+related:
+  - development
+contrasts_with: []
+answers_questions:
+  - "What is a secondary development?"
+  - "How does the recapitulation compensate for the absent development?"
 ---
 
-## Definition
+# Quick Definition
+A secondary development is a newly added passage in a recapitulation featuring model-sequence technique and tonicization of flat-side tonal regions, providing the harmonic contrast and motivic manipulation that the absent development would have supplied.
 
-A secondary development is a newly added passage in a recapitulation featuring model-sequence technique and the tonicization of flat-side tonal regions. It provides harmonic-tonal contrast and motivic manipulation in place of, or in addition to, a primary development section.
+# Core Definition
+A secondary development frequently appears in either the main theme or the transition of a sonata without development recapitulation, providing harmonic-tonal contrast and motivic manipulation in the absence of a genuine development section (Caplin, p. 594).
 
-## Context in Sonata Without Development
+# Prerequisites
+- **Sonata without development** -- The formal context motivating this compensatory technique
+- **Recapitulation** -- The section in which the secondary development appears
 
-In sonata without development form, a secondary development frequently appears in either:
-- The main theme
-- The transition
+# Key Properties
+1. Newly added passage in the recapitulation (not present in the exposition)
+2. Features model-sequence technique
+3. Tonicizes flat-side tonal regions (IV, ii, bVI, etc.)
+4. Compensates for the absent development section
+5. Most common in the main theme or transition of the recapitulation
 
-This compensates for the absence of a genuine development section by providing:
-- Harmonic-tonal contrast
-- Motivic manipulation
-- Sequential activity
+# Construction / Recognition
+## To Identify:
+1. Compare the recapitulation to the exposition
+2. Look for newly added passages with sequential technique
+3. Check for tonicization of flat-side regions
+4. Confirm the passage serves developmental purposes
 
-## Typical Characteristics
+# Context & Application
+The secondary development is the recapitulation's way of compensating for the form's lack of a separate development section. It provides the harmonic adventure and motivic manipulation that listeners expect somewhere in a sonata-type form.
 
-1. **Model-sequence technique**: A model is established and sequentially repeated
-2. **Flat-side regions**: Tonicization of regions with more flats than the home key (IV, ii, bVI, bIII, bII)
-3. **Developmental character**: Creates contrast within the recapitulation itself
+# Examples
+**Example 1** (p. 594): In sonata without development, secondary developments frequently appear in the main theme or transition of the recapitulation.
 
-## Function
+# Relationships
+## Builds Upon
+- **Sonata without development** -- The form motivating this technique
+- **Recapitulation** -- The section containing the secondary development
+## Related
+- **Development** -- The absent section whose function is partially compensated
 
-- Provides the developmental content missing from the form
-- Adds complexity and interest to the recapitulation
-- Prepares for the transposition of subordinate theme to home key
+# Common Errors
+- **Error**: Assuming the secondary development makes the form a regular sonata
+  **Correction**: A secondary development within the recapitulation is not a substitute for a full development section; the form remains a sonata without development
 
-## Placement
+# Source Reference
+Chapter 17: Slow-Movement Forms, page 594.
 
-Most commonly appears in:
-- The main theme of the recapitulation
-- The transition of the recapitulation (especially common)
-
-The transition placement is particularly effective because it already involves harmonic instability and modulation.
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clearly defined compensatory technique
+- Re-extraction notes: Preserved characteristics from old card; added v3.1 fields

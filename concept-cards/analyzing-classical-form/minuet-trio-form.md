@@ -1,48 +1,89 @@
 ---
 concept: "Minuet/Trio Form"
+slug: minuet-trio-form
+category: minuet-trio
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Minuet/Trio Form"
 chapter_number: 18
 pdf_page: 629
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Minuet/Trio Form"
+section: "The Basics"
+extraction_confidence: high
+aliases:
+  - "compound ternary"
+  - "minuet-trio-minuet"
+prerequisites:
+  - small-ternary
+  - minuet-form
+extends: []
+related:
+  - large-ternary-form
+  - da-capo
+  - trio
+contrasts_with:
+  - large-ternary-form
+  - sonata-form
+answers_questions:
+  - "What is minuet/trio form?"
+  - "How is the overall minuet movement structured?"
+  - "What is the relationship between minuet form and minuet/trio form?"
 ---
 
-## Definition
+# Quick Definition
+Minuet/trio form is a tripartite full-movement form consisting of a minuet proper, a trio, and a da capo (return of the minuet proper). The individual parts are themselves composed in minuet form.
 
-Minuet/trio form is a tripartite full-movement form consisting of a minuet proper, a trio, and a minuet da capo (return of the minuet proper). The individual parts are themselves composed in minuet form.
+# Core Definition
+The form of the entire movement is tripartite: minuet proper, trio, minuet da capo. This overall form is termed minuet/trio form. The individual parts are themselves composed in minuet form. The trio contrasts with the first minuet in melodic-motivic content, rhythmic configurations, and texture. Most trios reside in the same key as the first minuet, but some shift mode or tonality (Caplin, pp. 630-631).
 
-## Structure
+# Prerequisites
+- **Small ternary** -- The theme type on which minuet form is modeled
+- **Minuet form** -- The form of the individual minuets within the movement
 
-| Part | Label | Content |
-|------|-------|---------|
-| First | Minuet proper | Complete minuet form |
-| Second | Trio | Contrasting minuet form |
-| Third | Da capo | Return of minuet proper |
+# Key Properties
+1. Three parts: minuet proper, trio, minuet da capo
+2. Each part is itself in minuet form (resembling small ternary)
+3. Da capo usually not written out (indicated as "Menuet da capo")
+4. Trio contrasts in melodic content, rhythm, texture
+5. Most trios in same key; some shift mode or tonality (especially to IV)
+6. A coda may follow the da capo in rare cases
 
-## Terminology Clarification
+# Construction / Recognition
+## To Identify:
+1. Identify two distinct minuets (minuet proper and trio)
+2. Confirm the minuet proper returns after the trio (da capo)
+3. Check whether the trio contrasts in mode, key, or texture
+4. Look for "Menuet da capo" or similar indication
 
-"Minuet" can refer to:
-1. **Generic**: Either of the two minuets (all minuets are in triple meter)
-2. **Specific**: The first minuet (the minuet is major; the trio is minor)
-3. **Movement**: The entire movement (this serenade contains two minuet movements)
+# Context & Application
+Many instrumental cycles contain a minuet movement. The classical minuet derives from a Baroque dance type and survived into the classical era when most other dance types were replaced. Found in symphonies, quartets, sonatas, and serenades. The scherzo emerged as a faster variant but uses the same formal organization.
 
-**Minuet form** = Form of individual minuets (minuet proper and trio)
-**Minuet/trio form** = Form of the whole movement
+# Examples
+**Example 1** (p. 630): The movement consists of minuet proper, trio, and minuet da capo, with the individual parts composed in minuet form.
 
-## Da Capo
+# Relationships
+## Builds Upon
+- **Small ternary** -- Model for individual minuets
+- **Minuet form** -- Form of each constituent part
+## Enables
+- **Trio** -- The contrasting middle part
+- **Da capo** -- The return of the minuet proper
+## Related
+- **Large ternary form** -- Similar tripartite structure but with different functional relations
+## Contrasts With
+- **Large ternary form** -- The trio is often independent rather than subordinate
+- **Sonata form** -- Different organizational principle
 
-- The minuet proper is performed again after the trio
-- Usually not written out (unless ornamental variations intended)
-- Indicated in score as "Menuet da capo" or similar expression
-- In a few cases, a coda follows the da capo
+# Common Errors
+- **Error**: Confusing "minuet form" with "minuet/trio form"
+  **Correction**: Minuet form = form of individual minuets; minuet/trio form = form of the whole movement
 
-## Trio Characteristics
+# Source Reference
+Chapter 18: Minuet/Trio Form, pages 629-631.
 
-The trio contrasts with the first minuet through:
-- Different melodic-motivic content
-- Different rhythmic configurations
-- Different texture
-- May shift to opposite mode or different tonality (especially subdominant)
-- Most trios reside in the same mode and key as the first minuet
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Core formal type with extensive discussion
+- Re-extraction notes: Preserved terminology clarification from old card; added v3.1 fields

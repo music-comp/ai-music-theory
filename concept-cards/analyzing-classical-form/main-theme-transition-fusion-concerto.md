@@ -1,51 +1,60 @@
 ---
 concept: "Main-Theme/Transition Fusion in Concerto"
+slug: main-theme-transition-fusion-concerto
+category: concerto-form
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Concerto Form"
 chapter_number: 20
 pdf_page: 704
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Concerto Form"
+section: "Main-theme/Transition Fusion"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - opening-ritornello
+  - fusion
+extends:
+  - fusion
+related: []
+contrasts_with: []
+answers_questions:
+  - "When does main-theme/transition fusion occur in the ritornello?"
+  - "Which composer favors this approach?"
 ---
 
-## Definition
+# Quick Definition
+In some concerto ritornellos, the opening divides into two principal parts: the first fuses main theme and transition functions (ending with HC), while the second begins with new material functioning as subordinate theme. Mozart prefers this for more modest concertos, especially wind concertos.
 
-In some concerto ritornellos, the opening section divides into two principal parts on the basis of cadential articulations, with the first part fusing main theme and transition functions.
+# Core Definition
+Sometimes the opening ritornello appears divided into two principal parts. The first part ends with an HC and fuses main theme and transition functions. The second part begins with completely different material and takes on subordinate-theme characteristics. Mozart seems to prefer this type of ritornello for more modest concertos, especially those featuring wind instruments (Caplin, pp. 704-705).
 
-## Structure
+# Prerequisites
+- **Opening ritornello** -- The section where this fusion occurs
+- **Fusion** -- The general concept of combining functions
 
-| Part | Content | Cadence |
-|------|---------|---------|
-| First part | Fused main theme + transition | HC in home key |
-| Second part | Subordinate theme (new material) | PAC |
+# Key Properties
+1. Ritornello divides into two parts based on cadential articulations
+2. First part: fuses main theme + transition, ends with HC
+3. Second part: new material functioning as subordinate theme
+4. Not a periodic structure (second part does not respond to first)
+5. Mozart favors this for modest/wind concertos
+6. In the solo exposition, a more normal main theme often emerges
 
-## Recognition
+# Examples
+**Example 1** (p. 705): Mozart, Horn Concerto in E-flat, K. 447, i -- 8-m. unit ending with HC fuses main theme and transition; second part brings subordinate-theme characteristics.
 
-The second part:
-- Begins with completely different material
-- Does not give impression of being a consequent
-- Takes on characteristics of subordinate theme
-- Features modest loosening and expanded cadential progressions
+# Relationships
+## Builds Upon
+- **Opening ritornello** -- The section
+- **Fusion** -- The technique
 
-## The First Part's Dual Function
+# Source Reference
+Chapter 20: Concerto Form, pages 704-705.
 
-The initial unit (ending with HC) could be seen as:
-- A standard hybrid (compound basic idea + continuation) = main theme
-- But material in second phrase suggests **transition**:
-  - Marked change in dynamics
-  - Change in texture
-  - Different melodic profile (wide leaps)
-  - Restless harmonic activity
-
-From a thematic perspective: **fusion of main theme and transition**
-
-## Solo Exposition Comparison
-
-In the solo exposition, a more normal main theme often emerges:
-- New continuation phrase belongs in style/character of opening
-- The fusion is "resolved" into distinct functions
-
-## Mozart's Preference
-
-Mozart seems to prefer this type of ritornello for more modest concertos, especially those featuring **wind instruments** (e.g., Horn Concerto in E-flat, K. 447).
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear with Mozart preference noted
+- Re-extraction notes: Preserved from old card; added v3.1 fields

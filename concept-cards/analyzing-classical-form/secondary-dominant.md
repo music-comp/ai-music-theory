@@ -1,64 +1,92 @@
 ---
 concept: Secondary Dominant
-category: theory
-source: "Analyzing Classical Form: An Approach for the Classroom"
+slug: secondary-dominant
+category: harmony
+subcategory: chromatic-harmony
+tier: foundational
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "A Review of Harmony"
 chapter_number: 1
 pdf_page: 23
-unit: null
-authors: William E. Caplin
+section: "Dominant of the Dominant"
+extraction_confidence: high
+aliases:
+  - "applied dominant"
+  - "dominant of the dominant"
+  - "V/V"
+prerequisites:
+  - dominant-function
+  - pre-dominant-function
+extends: []
+related:
+  - augmented-sixth-chords
+  - tonicization
+contrasts_with: []
+answers_questions:
+  - "What is a secondary dominant?"
+  - "How does V/V function as a pre-dominant?"
+  - "What is the significance of the raised fourth scale degree?"
 ---
 
 # Quick Definition
-A dominant-type chord that temporarily tonicizes a scale degree other than the tonic, functioning as V (or VII) of that degree, notated with arrows or slashes (V7→II or V7/II).
+A dominant-type chord that temporarily tonicizes a scale degree other than tonic, functioning as V (or VII) of that degree. The most important secondary dominant is V/V (and VII7/V), which functions as a pre-dominant featuring the raised fourth scale degree (sharp-4).
 
-# Formal Definition
-Secondary (or applied) dominants function as dominant-type harmonies of scale degrees other than the tonic. The most important secondary dominant for cadential function is the dominant of the dominant (V/V or VII7/V), which functions as a pre-dominant harmony. Secondary dominants of other degrees create tonicization without full modulation.
+# Core Definition
+One group of pre-dominants relates to harmonies that function as a secondary (or applied) dominant of the dominant. These harmonies feature the chromatic raised-fourth scale degree (sharp-4), which functions as the leading tone of the dominant. The significance of the raised-fourth degree is highlighted by its normally being placed in the bass voice, so that the motion to the root of the following dominant is all the more enhanced (p. 32). The most typical pre-dominant of this type is the diminished-seventh VII7/V; the less-dissonant V6/V and V/V are also regularly encountered (p. 33).
 
-# Musical/Theoretical Formulation
-Types of secondary dominants:
-- **V/V, VII7/V**: Function as pre-dominants (dominant of the dominant)
-- **V7/II, V7/IV, V7/VI, etc.**: Tonicize other scale degrees
+# Prerequisites
+- **Dominant function** — Secondary dominants are dominant-type chords applied to non-tonic degrees
+- **Pre-dominant function** — V/V group functions as pre-dominant
 
-The dominant of the dominant (V/V):
-- Features the chromatic raised-fourth scale degree
-- This raised fourth functions as the leading tone of V
-- Is highlighted by normally being placed in the bass voice
-- VII7/V is the most typical diminished-seventh form
+# Key Properties
+1. V/V, VII7/V: function as pre-dominants (most important secondary dominants)
+2. Raised fourth scale degree (sharp-4) = leading tone of V
+3. Sharp-4 normally placed in bass to enhance motion to V
+4. VII7/V is the most typical diminished-seventh form
+5. V6/V and V/V are less-dissonant alternatives
+6. Secondary dominants of other degrees (V/II, V/IV, etc.) create tonicizations
+7. Arrow notation (V7->II): resolving; slash notation (V7/II): not resolving
 
-Analytical notation:
-- Arrow notation: V7→II (secondary dominant followed by tonicized harmony)
-- Slash notation: V7/II (when not followed by expected resolution)
-- Extended tonicizations shown with horizontal brace
+# Construction / Recognition
+## To Identify:
+1. Look for chromatic alterations suggesting a dominant of a non-tonic degree
+2. Check for sharp-4 in bass (indicating V/V family)
+3. Determine if the secondary dominant functions as pre-dominant (V/V) or tonicization (other)
+4. Use arrow or slash notation as appropriate
 
-# Musical Context/Application
-Secondary dominants:
-- Create chromatic interest within diatonic frameworks
-- May intensify motion toward specific harmonies
-- V/V group functions as pre-dominant in cadential progressions
-- Other secondary dominants create local tonicizations
-
-Within sequential progressions, chromatic alterations may convert passing chords into genuine secondary dominants (see ascending-second sequence).
+# Context & Application
+V/V and VII7/V function as pre-dominants within cadential progressions, providing chromatic intensification of motion toward V. Secondary dominants of other degrees create tonicizations. Within sequential progressions, chromatic alterations may convert passing chords into genuine secondary dominants (ascending-second sequence, Ex. 1.22c).
 
 # Examples
-Example 1.13b-d (p. 38): "The most frequently employed embellishment of pre-dominant function appears over raised 4 in the bass voice" - showing VII7/V and related secondary dominants of V.
+**Example 1** (p. 38, Ex. 1.13b-d): VII7/V and related secondary dominants as pre-dominant embellishments.
 
-Example 1.22c (p. 45-46): In the ascending-second sequence, "each six-three chord becomes a genuine secondary dominant" through chromatic alteration.
+**Example 2** (pp. 45-46, Ex. 1.22c): Ascending-second sequence with chromatically altered passing chords becoming genuine secondary dominants.
 
-The chapter notes that secondary dominants of the dominant (such as VII7/V) are among the pre-dominant harmonies (p. 24).
+# Relationships
+## Builds Upon
+- **Dominant function** — Secondary dominants are applied dominant-type chords
+- **Pre-dominant function** — V/V group functions as pre-dominant
+## Enables
+- **Tonicization** — Secondary dominants are the primary mechanism
+## Related
+- **Augmented-sixth chords** — Related to V/V; also contain sharp-4
+## Contrasts With
+- No direct contrasts
 
-# Related Concepts
-- Pre-dominant Function
-- Dominant of the Dominant
-- Tonicization
-- Augmented-Sixth Chords
-- Chromatic Harmony
+# Common Errors
+- **Error**: Treating V/V as a true dominant (it functions as pre-dominant)
+  **Correction**: V/V functions within the pre-dominant slot of cadential progressions
 
 # Common Confusions
-- Confusing tonicization (secondary dominant) with modulation (new key established)
-- Not recognizing V/V as functioning as pre-dominant rather than as true dominant
-- Missing secondary dominants in sequential contexts
-- Confusing notation: arrow (→) indicates resolution; slash (/) indicates expected but not realized
+- **Confusion**: Confusing arrow and slash notation
+  **Clarification**: Arrow (V7->II) = resolution occurs; slash (V7/II) = expected resolution not reached
 
 # Source Reference
-Chapter 1: A Review of Harmony, pages 24, 32-33, 38, 45-46 (PDF pages 24, 32-33, 38, 45-46)
+Chapter 1: A Review of Harmony, pages 24, 32-33, 38, 45-46. Notation on pp. 46-47.
+
+# Verification Notes
+- Definition source: Direct from pp. 32-33
+- Confidence rationale: Explicitly defined; sharp-4 significance highlighted
+- Re-extraction notes: Re-extracted from v2 card; consolidated old dominant-of-the-dominant card; preserved sharp-4 emphasis and notation rules

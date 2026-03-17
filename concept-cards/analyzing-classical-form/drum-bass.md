@@ -1,46 +1,49 @@
 ---
 concept: "Drum Bass"
+slug: drum-bass
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites: []
+extends: []
+related:
+  - murky-bass
+  - characteristic-material
+contrasts_with: []
+answers_questions:
+  - "What is drum bass?"
 ---
 
-## Definition
+# Quick Definition
+Drum bass is a conventional accompanimental pattern consisting of repeated block chords. Along with Alberti bass and murky bass, it is part of the "conventional material" of the classical style.
 
-Drum bass is a conventional accompanimental pattern consisting of repeated block chords, typically in steady rhythmic values.
+# Core Definition
+A conventional accompanimental pattern consisting of repeated block chords (Caplin, Glossary, p. 725).
 
-## Characteristics
+# Key Properties
+1. Repeated block chords on each beat
+2. Creates rhythmic energy and forward motion
+3. Part of conventional (not characteristic) material
+4. Related patterns: Alberti bass (arpeggiation), murky bass (broken octaves)
 
-- Repeated chords on each beat (or subdivision)
-- Creates rhythmic energy and forward motion
-- Provides harmonic support
-- Named for resemblance to drum patterns
+# Relationships
+## Related
+- **Murky bass** -- Another conventional accompanimental pattern
+- **Characteristic material** -- Drum bass is conventional, not characteristic
 
-## Example Pattern
+# Source Reference
+Glossary of Terms, page 725.
 
-```
-| C | C | C | C | (quarter notes, each a block chord)
-```
-
-## Related Accompanimental Patterns
-
-| Pattern | Description |
-|---------|-------------|
-| Drum bass | Repeated block chords |
-| Alberti bass | Arpeggiation figurations |
-| Murky bass | Broken octaves |
-
-## Common Contexts
-
-- Energetic passages
-- Accompaniment to active melodic material
-- Transitional passages
-- Development sections
-
-## Conventional Material
-
-Like Alberti bass and murky bass, drum bass is part of the **conventional material** of the classical style - patterns that are widely used and potentially interchangeable from piece to piece.
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved from old card; added v3.1 fields

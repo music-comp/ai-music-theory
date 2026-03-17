@@ -1,45 +1,68 @@
 ---
 concept: Typical Development Formal Plans
-category: form
-pdf_page: 445
+slug: typical-development-formal-plans
+category: sonata-form
+tier: advanced
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Development"
 chapter_number: 13
-unit: null
-authors: "William E. Caplin"
+pdf_page: 445
+section: "Typical Formal Plans"
+extraction_confidence: high
+aliases:
+  - development formal plans
+  - three development plans
+prerequisites:
+  - development-section
+  - core
+  - pre-core
+  - retransition
+related:
+  - multiple-cores
+contrasts_with: []
+answers_questions:
+  - "What are the typical formal plans for a development section?"
+  - "How do multiple cores and retransitions create different plans?"
 ---
 
-# Typical Development Formal Plans
+# Quick Definition
+Three typical formal plans for development sections: (1) single core leading to home-key dominant, (2) two cores (first in development key, second in home key), (3) single core in development key followed by a retransition.
 
-Three typical formal plans found in development sections.
+# Core Definition
+Caplin illustrates three typical plans in Figure 13.1 (p. 445): Plan 1 uses a single core leading to dominant of the home key. Plan 2 shows two cores, the first ending in a development key, the second in the home key. Plan 3 features a single core ending in a development key, followed by a retransition returning to the home key. All three plans may include a pre-core at the beginning and end with a standing on the dominant.
 
-## Plan 1: Single Core to Home Key
+# Prerequisites
+- **Development section** — The formal section being planned
+- **Core** — The central process in all three plans
+- **Pre-core** — Optional opening section in all plans
+- **Retransition** — Used in Plan 3 to return home
 
-- Pre-core (if present)
-- Single core leading to dominant of home key
-- Standing on the dominant
-- Direct to recapitulation
+# Key Properties
+1. Plan 1: Pre-core (optional) -> Core -> Home-key dominant -> Standing on V -> Recapitulation
+2. Plan 2: Pre-core -> Core 1 (dev. key) -> Core 2 (home key) -> Standing on V -> Recapitulation
+3. Plan 3: Pre-core -> Core (dev. key) -> Retransition (home key) -> Standing on V -> Recapitulation
+4. All plans end with standing on the dominant leading to recapitulation
+5. Beethoven favors Plan 2 for large symphonic works
 
-## Plan 2: Two Cores
+# Construction / Recognition
+## To Identify:
+1. Determine whether the core ends in the home key (Plan 1) or a development key (Plans 2 or 3)
+2. If development key, determine whether a second core or retransition follows
+3. Second core = Plan 2; retransition = Plan 3
 
-- Pre-core (if present)
-- First core ending in development key
-- Second core returning to home key
-- Standing on the dominant
-- To recapitulation
+# Relationships
+## Builds Upon
+- **Core** — All three plans center on the core
+## Related
+- **Multiple cores** — Plans 2 uses two cores
+- **Retransition** — Plan 3 uses this to return home
 
-## Plan 3: Core Plus Retransition
+# Source Reference
+Chapter 13: Development, page 445.
 
-- Pre-core (if present)
-- Single core ending in development key
-- Retransition returning to home key
-- Standing on the dominant
-- To recapitulation
-
-## Selection Factors
-
-The choice of plan depends on:
-- Overall length and scope of movement
-- How many development keys are explored
-- Dramatic pacing of the work
-- Individual compositional style (Beethoven tends toward Plan 2)
+# Verification Notes
+- Definition source: Direct from Figure 13.1, p. 445
+- Confidence rationale: Explicitly diagrammed in source
+- Re-extraction notes: Preserved three-plan structure from old card; added v3.1 template, clearer step notation

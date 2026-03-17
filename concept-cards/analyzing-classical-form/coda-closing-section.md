@@ -1,33 +1,58 @@
 ---
 concept: Coda Closing Section
-category: form
-pdf_page: 559
+slug: coda-closing-section
+category: sonata-form
+tier: advanced
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Coda"
 chapter_number: 15
-unit: null
-authors: "William E. Caplin"
+pdf_page: 559
+section: "Phrase-structural Organization of the Coda"
+extraction_confidence: high
+aliases:
+  - coda's closing section
+prerequisites:
+  - coda-section
+  - closing-section
+related:
+  - coda-restoration-deleted-material
+  - coda-as-interpolation
+contrasts_with: []
+answers_questions:
+  - "How does the coda itself end?"
+  - "Can the coda's closing section restore deleted material?"
 ---
 
-# Coda Closing Section
+# Quick Definition
+Most codas end with a closing section of codettas following the final home-key PAC; this material may be new, based on earlier material, or restored from closing-section material deleted in the recapitulation (creating an "interpolation" effect).
 
-The final portion of the coda following the last PAC.
+# Core Definition
+"Most codas end with a closing section (made up of codettas) that follows the final PAC of the home key" (p. 559). Content may be new or based on earlier material. "If the material of the exposition's closing section is deleted in the recapitulation," the coda may restore it, giving "the impression of being interpolated in, rather than following on, the recapitulation." Haydn frequently employs this, creating "considerable ambiguity as to whether or not the movement contains an independent coda."
 
-## Typical Content
+# Prerequisites
+- **Coda section** — Contains the closing section
+- **Closing section** — The formal function being replicated
 
-- Made up of codettas
-- May be new material
-- May be based on material from earlier in movement
-- Sometimes extremely short or omitted altogether
+# Key Properties
+1. Made up of codettas following the final PAC
+2. Content may be new or based on earlier material
+3. May restore closing material deleted from recapitulation
+4. Restoration creates interpolation effect (Haydn)
+5. Sometimes extremely short or omitted altogether
 
-## Restoration of Deleted Material
+# Relationships
+## Builds Upon
+- **Coda section** — This is its concluding portion
+## Related
+- **Coda restoration of deleted material** — A common source for coda closing-section content
+- **Coda as interpolation** — The effect created by restoring exposition material
 
-If exposition's closing section material was deleted in recapitulation (because composer used different material or started coda immediately), the coda likely restores that deleted material as its own closing section.
+# Source Reference
+Chapter 15: Coda, page 559.
 
-## Interpolation Effect
-
-When closing section material is restored at end of coda, it can give impression of coda being interpolated in (rather than following on) the recapitulation.
-
-## Haydn's Practice
-
-Haydn frequently employs this technique, which given his tendency to significantly rewrite recapitulations, can create considerable ambiguity about whether movement contains independent coda.
+# Verification Notes
+- Definition source: Direct from p. 559
+- Confidence rationale: Clearly defined
+- Re-extraction notes: Preserved interpolation effect from old card; added v3.1 template

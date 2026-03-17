@@ -1,50 +1,79 @@
 ---
 concept: "Main Theme in Large Ternary"
+slug: main-theme-large-ternary
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Slow-Movement Forms"
 chapter_number: 17
 pdf_page: 588
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Slow-Movement Forms"
+section: "First Part, Main Theme"
+extraction_confidence: high
+aliases:
+  - "large ternary outer part"
+prerequisites:
+  - large-ternary-form
+  - small-ternary
+extends:
+  - main-theme
+related:
+  - interior-theme
+contrasts_with:
+  - main-theme
+answers_questions:
+  - "How is the main theme of a large ternary constructed?"
+  - "Does the return of the main theme require tonal adjustment?"
 ---
 
-## Definition
+# Quick Definition
+The main theme of a large ternary form is normally a complete small ternary (or small binary) that begins and ends in the home key with a PAC. Because it resides entirely in the home key, its return requires no tonal adjustment.
 
-The main theme of a large ternary form is the outer part that frames the interior theme. It normally functions as a complete, self-contained theme in the home key.
+# Core Definition
+The main theme is normally constructed as a complete small ternary (or sometimes, a small binary). It begins in the home key and ends there with a PAC. Most often, a subordinate key is confirmed somewhere within the main theme, usually at the end of its A section, but sometimes within its B section (Caplin, p. 588).
 
-## Construction
+# Prerequisites
+- **Large ternary form** -- The full-movement form containing this main theme
+- **Small ternary** -- The theme type on which the main theme is modeled
 
-The main theme is normally constructed as:
-- A complete **small ternary** (most common)
-- A complete **small binary** (occasionally)
+# Key Properties
+1. Constructed as complete small ternary or small binary
+2. Begins and ends in the home key with PAC
+3. May contain internal modulation to a subordinate key
+4. Return (third part) follows the same basic structure, often with ornamental changes
+5. No tonal adjustment needed for the return
 
-## Tonal Characteristics
+# Construction / Recognition
+## To Identify:
+1. Look for a complete small ternary or binary at the beginning of the movement
+2. Confirm it begins and ends in the home key with PAC
+3. Check for the same material returning (with embellishment) as the third part
 
-1. **Begins** in the home key
-2. **Ends** in the home key with a PAC
-3. May have internal modulation (especially at end of A section or within B section)
-4. But always returns to and closes in the home key
+# Context & Application
+The main theme rarely deviates from standard small ternary/binary norms, making separate illustration unnecessary. The return is often embellished, especially in slow movements where ornamental variation is standard practice.
 
-## No Tonal Adjustment Needed
+# Examples
+**Example 1** (p. 607): Beethoven, Piano Sonata in E-flat, Op. 7, ii -- main theme shown in Ex. 7.11, return achieves formal closure with PAC at m. 74.
 
-Because the main theme essentially resides in the home key:
-- The return of the main theme does not require any tonal adjustment
-- The third part follows the same basic structure as the first part
+# Relationships
+## Builds Upon
+- **Main theme** -- General concept of initiating thematic function
+## Enables
+- **Interior theme** -- Contrasts with the main theme in the middle section
+- **Coda (large ternary)** -- May follow the return of the main theme
+## Related
+- **Interior theme** -- The contrasting part that stands between the two main themes
 
-## Relationship to Surrounding Form
+# Common Errors
+- **Error**: Expecting the return to require tonal adjustment (as in sonata form)
+  **Correction**: Since the main theme always begins and ends in the home key, no tonal adjustment is necessary for the return
 
-Unlike the small ternary's A section, which may modulate and close in a subordinate key:
-- The large ternary's main theme always ends in the home key
-- This is a fundamental difference between small and large ternary forms
+# Source Reference
+Chapter 17: Slow-Movement Forms, pages 588-589.
 
-## Return of Main Theme
-
-The third part (return) usually:
-- Brings the same basic formal and tonal structure
-- Features considerable ornamental changes
-- May be followed by a coda
-
-## Why No Separate Illustration Needed
-
-Main themes of large ternary rarely deviate from the norms established for small ternary/binary themes in Part I of Caplin's book, so separate illustration is unnecessary.
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear description in source
+- Re-extraction notes: Preserved key points from old card; added v3.1 fields

@@ -1,54 +1,50 @@
 ---
 concept: Cadential Deviation Summary
-category: theory
-pdf_page: 158
-chapter_number: 5
-unit: null
-authors: "William E. Caplin"
+slug: cadential-deviation-summary
+category: cadential-deviations
+subcategory: null
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
+chapter_number: 5
+pdf_page: 151
+section: "Cadential Deviations"
+extraction_confidence: high
+aliases:
+  - cadential deviation types comparison
+prerequisites:
+  - cadential-deviations
+extends:
+  - cadential-deviations
+related:
+  - deceptive-cadence
+  - evaded-cadence
+  - abandoned-cadence
+contrasts_with: []
+answers_questions:
+  - "How do the three cadential deviation types compare?"
 ---
 
-# Cadential Deviation Summary
+# Quick Definition
+A comparative overview of the three cadential deviation types, distinguished by what goes wrong: deceptive (tonic replaced, groups backward), evaded (new beginning replaces resolution, groups forward), and abandoned (cadential dominant undermined or omitted).
 
-Cadential deviations occur when expected cadences fail to materialize. Four main types exist.
+# Core Definition
+The three types differ in both harmonic and grouping-structure criteria. Deceptive: V resolves to unexpected harmony (usually vi); replacement groups BACKWARDS as phrase goal. Evaded: expected cadential goal fails; what follows groups FORWARD as new beginning; "one more time" effect. Abandoned: problem is with the cadential dominant itself, which is inverted or omitted. The critical distinction between deceptive and evaded is grouping structure, not just harmony. All three typically motivate extension and repetition of prior material.
 
-## Types Comparison
+# Key Properties
+1. Deceptive: tonic replaced (V -> vi), groups backward, is a phrase goal
+2. Evaded: goal absent, groups forward, new beginning replaces ending
+3. Abandoned: dominant undermined (inverted) or omitted
+4. All apply only to implied authentic cadences (not HC)
+5. All typically motivate "one more time" technique
+6. Grouping structure is the key to distinguishing deceptive from evaded
 
-| Deviation | What Happens | Typical Resolution |
-|-----------|--------------|-------------------|
-| Deceptive | V → vi (not I) | Extension → PAC |
-| Evaded | Replaced by new beginning | Restart → PAC |
-| Abandoned | Process stops | New material/PAC |
-| Dominant Arrival | V without proper progression | Continues to PAC |
+# Source Reference
+Chapter 5: Phrase Deviations, Cadential Deviations, and Framing Functions, pages 151-155, 163-166.
 
-## Deceptive Cadence
-
-- V resolves to unexpected harmony (usually vi)
-- Creates "deception" - expected I doesn't arrive
-- Motivates continuation to achieve real closure
-
-## Evaded Cadence
-
-- Expected goal replaced by new formal beginning
-- "One more time" effect
-- Music restarts rather than achieving closure
-
-## Abandoned Cadence
-
-- Cadential process simply stops
-- No resolution occurs
-- Maximum suspense before new material
-
-## Dominant Arrival
-
-- V appears without proper HC progression
-- Or V is inverted/has seventh
-- Not a true cadence, but dominant emphasis
-
-## Common Result
-
-All deviations typically lead to **cadential extension**:
-- Additional material follows
-- Genuine cadence eventually achieved
-- Theme becomes expanded
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Core three-type taxonomy
+- Re-extraction notes: Corrected abandoned cadence description (was "process simply stops"; now correctly identifies dominant as the problem); added grouping criterion

@@ -1,62 +1,87 @@
 ---
 concept: Modulation
-category: theory
-source: "Analyzing Classical Form: An Approach for the Classroom"
+slug: modulation
+category: harmony
+subcategory: tonal-processes
+tier: foundational
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "A Review of Harmony"
 chapter_number: 1
 pdf_page: 23
-unit: null
-authors: William E. Caplin
+section: "Guide to Harmonic Annotation"
+extraction_confidence: medium
+aliases:
+  - "key change"
+  - "pivot-chord modulation"
+prerequisites:
+  - cadential-progression
+extends: []
+related:
+  - tonicization
+  - sequential-progression
+contrasts_with:
+  - tonicization
+answers_questions:
+  - "What is modulation?"
+  - "How does modulation differ from tonicization?"
+  - "How is pivot-chord modulation notated?"
 ---
 
 # Quick Definition
-The process of establishing a new tonic through cadential confirmation, such that the new key displaces the original key as the structural reference.
+The process of establishing a new tonic through cadential confirmation, displacing the original key. Distinguished from tonicization by the presence of cadential confirmation in the new key. Pivot-chord modulation uses a harmony functioning in both old and new keys.
 
-# Formal Definition
-Modulation is the process of changing tonal focus such that a new tonic, confirmed as such by cadential function, is perceived to displace the previous tonic. Unlike tonicization, modulation involves genuine establishment of a new key through cadential confirmation.
+# Core Definition
+Modulation involves genuine establishment of a new key through cadential confirmation. Unlike tonicization, modulation displaces the previous tonic as the structural reference. Sequential progressions are "especially appropriate for destabilizing harmonic activity within a given key or for effecting a modulation from one key to another" (p. 27). The final harmony of a modulating sequence restores clear functional meaning within a new key (p. 28).
 
-# Musical/Theoretical Formulation
-Modulation requires:
-- Establishment of a new tonal center
-- Cadential confirmation of the new key
-- Displacement of the previous tonic
+# Prerequisites
+- **Cadential progression** — Modulation requires cadential confirmation of the new key
 
-Pivot-chord modulation:
-- Uses a harmony that functions in both the original and new keys
-- Indicated by a vertical brace connecting the harmonies
-- The new key's relation to home key is shown with Roman numeral in parentheses
+# Key Properties
+1. Establishes a new tonal center through cadential confirmation
+2. The new key displaces the original as structural reference
+3. Pivot-chord modulation: a harmony functioning in both old and new keys
+4. Notation: vertical brace connecting analyses in both keys; new key relation shown with Roman numeral in parentheses
+5. Sequential progressions can facilitate modulation
 
-Modulation vs. Tonicization:
-- Modulation: New tonic confirmed by cadence
-- Tonicization: Temporary emphasis without cadential confirmation
+# Construction / Recognition
+## To Identify:
+1. Look for cadential confirmation (PAC or HC) in a new key
+2. Identify a potential pivot chord functioning in both keys
+3. Annotate with vertical brace and new key label
 
-# Musical Context/Application
-Modulation typically occurs:
-- In transitions (moving to subordinate key)
-- In developments (moving through various keys)
-- In sequential progressions (modulating sequences)
-
-Sequential progressions are "especially appropriate for... effecting a modulation from one key to another."
+# Context & Application
+Modulation typically occurs in transitions (moving to subordinate key), developments (moving through various keys), and modulating sequences. Distinguished from tonicization: modulation requires cadential confirmation; tonicization merely emphasizes a scale degree temporarily.
 
 # Examples
-The Guide to Harmonic Annotation (p. 46) describes pivot-chord modulation notation:
-- "A pivot-chord modulation is indicated by a vertical brace connecting the harmonies of the prevailing key and the new key."
-- "The harmonic relation of the new key to the home key is indicated by a Roman numeral placed in parentheses below the new key name."
+**Example 1** (p. 46): Notation guide describes pivot-chord modulation with vertical brace connecting harmonies.
 
-The chapter notes that sequences can facilitate modulation, with the "final harmony restoring a clear functional meaning within either the initial key or, in the case of modulating sequences, a new key" (p. 28).
+**Example 2** (p. 28): Sequential progressions facilitating modulation, with "the final harmony restoring clear functional meaning within... a new key."
 
-# Related Concepts
-- Tonicization
-- Pivot Chord
-- Sequential Progression
-- Cadential Progression
-- Key Relationships
+# Relationships
+## Builds Upon
+- **Cadential progression** — Modulation requires cadential confirmation
+## Enables
+- **Modulating sentence** — Sentence that modulates to a new key
+- **Modulating period** — Period whose consequent modulates
+## Related
+- **Sequential progression** — Can facilitate modulation
+## Contrasts With
+- **Tonicization** — Temporary emphasis vs. genuine key change
+
+# Common Errors
+- **Error**: Labeling brief chromatic inflections as modulations
+  **Correction**: Modulation requires cadential confirmation in the new key
 
 # Common Confusions
-- Confusing modulation with tonicization (modulation requires cadential confirmation)
-- Assuming all chromaticism indicates modulation
-- Not recognizing pivot chords that function in both keys
-- Treating brief key changes in development as structural modulations
+- **Confusion**: Confusing modulation with tonicization
+  **Clarification**: Modulation has cadential confirmation; tonicization does not
 
 # Source Reference
-Chapter 1: A Review of Harmony, pages 27-28, 46 (PDF pages 27-28, 46)
+Chapter 1: A Review of Harmony, pages 27-28, 46. Pivot-chord notation on p. 46.
+
+# Verification Notes
+- Definition source: Synthesized from pp. 27-28, 46 (no single explicit definition given)
+- Confidence rationale: Medium -- concept is used throughout but not given a formal definition in Ch. 1
+- Re-extraction notes: Re-extracted from v2 card; consolidated old pivot-chord card; preserved pivot notation detail

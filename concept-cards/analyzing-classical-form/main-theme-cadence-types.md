@@ -1,50 +1,63 @@
 ---
 concept: Main Theme Cadence Types
-chapter: "Exposition I: Main Theme"
+slug: main-theme-cadence-types
+category: cadential-types
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 308
-chapter_number: 10
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (I): Main Theme"
+chapter_number: 10
+pdf_page: 308
+section: The Basics
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - main-theme-basics
+  - pac
+  - half-cadence
+extends: []
+related:
+  - transition-opening-strategies
+contrasts_with: []
+answers_questions:
+  - "What cadences can end a main theme?"
+  - "How does the cadence type affect the transition?"
+  - "Why is HC more common in minor-mode main themes?"
 ---
 
-## Main Theme Cadence Types
+# Quick Definition
+The main theme always closes with one of three cadence types: most often PAC, sometimes HC (especially in minor-mode movements), rarely IAC. The cadence type affects the transition's opening strategy and the clarity of the boundary between main theme and transition.
 
-The main theme always closes with one of the three cadence types, each with different implications for the subsequent transition.
+# Core Definition
+The main theme confirms the home key through cadential closure. A **PAC** provides the strongest closure and typically allows the transition to begin with new material. An **HC** (especially common in minor mode) creates expectation for continuation, often prompting the transition to use main-theme material (sounding like a "consequent" that ultimately fails). An **IAC** is rare. After a PAC, a closing section (codettas) may follow; after an HC, a standing on the dominant may analogously follow (Caplin, Ch. 10, pp. 308-309).
 
-### PAC (Most Common)
+# Prerequisites
+- **Main theme basics** -- The broader context
+- **PAC / HC** -- Must understand cadence types
 
-When main theme ends with PAC:
-- Strongest sense of closure
-- Home key is firmly confirmed
-- Transition can begin with new material
-- Clear boundary between main theme and transition
+# Key Properties
+1. PAC: most common; strongest closure; clear boundary with transition
+2. HC: sometimes used; weaker closure; boundary with transition may blur
+3. HC is somewhat more common in minor-mode movements
+4. IAC: rare; similar implications to HC
+5. Cadence type influences transition's opening strategy
+6. PAC may generate closing section; HC may generate standing on the dominant
 
-### HC (Sometimes)
+# Relationships
+## Builds Upon
+- **Main theme basics** -- Cadence is the concluding event of the main theme
+## Enables
+- **Transition opening strategies** -- Cadence type determines how the transition begins
+## Related
+- **Closing section** -- Possible after PAC
+- **Standing on the dominant** -- Possible after HC
 
-When main theme ends with HC:
-- Weaker sense of closure
-- Creates expectation for continuation
-- Transition often uses main-theme material (seeming to "continue")
-- Boundary between main theme and transition may be obscured
+# Source Reference
+Chapter 10: Exposition (I): Main Theme, pages 308-309.
 
-### HC Especially in Minor
-
-In minor-mode movements:
-- HC ending is somewhat more common
-- May relate to the need to establish relative major as subordinate key
-- The unstable HC can motivate more extensive transitional activity
-
-### IAC (Rarely)
-
-When main theme ends with IAC:
-- Less conclusive than PAC
-- Similar implications to HC
-- Motivates continuation or transition
-
-### Related Concepts
-- [[main-theme-basics]]
-- [[pac]]
-- [[half-cadence]]
-- [[transition-opening-strategies]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear statements about frequency and implications
+- Re-extraction notes: Upgraded from old card; added relationship to transition opening strategy

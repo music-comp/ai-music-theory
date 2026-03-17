@@ -1,45 +1,65 @@
 ---
 concept: "Interpolated Episode"
+slug: interpolated-episode
+category: minuet-trio
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Minuet/Trio Form"
 chapter_number: 18
 pdf_page: 643
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Minuet/Trio Form"
+section: "Contrasting Middle (B Section)"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - minuet-contrasting-middle
+extends: []
+related:
+  - minuet-recapitulation
+contrasts_with: []
+answers_questions:
+  - "What is an interpolated episode?"
+  - "Where does it appear in minuet form?"
 ---
 
-## Definition
+# Quick Definition
+An interpolated episode is a passage of strikingly new, unrelated material in a relatively remote tonal region, standing apart from the regular succession of formal functions. It appears within the B section or expanded A' section of minuet form.
 
-An interpolated episode is a passage of strikingly new, unrelated material lying within a relatively remote tonal region and standing apart from the regular succession of formal functions.
+# Core Definition
+An interpolated episode consists of strikingly new, unrelated material lying within a relatively remote tonal region and standing apart from the regular succession of formal functions. It may appear in the contrasting middle of a minuet or in an expanded recapitulation. It is characterized by a new melodic idea, abrupt textural change, and a remote key (Caplin, p. 643).
 
-## Where It Appears
+# Prerequisites
+- **Minuet contrasting middle** -- One principal location for interpolated episodes
 
-In minuet form:
-- Within the **contrasting middle (B section)**
-- Within an **expanded recapitulation (A' section)**
+# Key Properties
+1. Strikingly new melodic idea (not derived from previous material)
+2. Relatively remote tonal region (e.g., bVI)
+3. Abrupt textural/dynamic change (e.g., forte to piano)
+4. Stands apart from surrounding formal functions
+5. Could theoretically be removed without disrupting overall formal logic
+6. Found in B sections and expanded A' sections of minuet form
 
-## Characteristics
+# Construction / Recognition
+## To Identify:
+1. Look for sudden new material in an unexpected key
+2. Note abrupt changes in dynamics, texture, or register
+3. Confirm the passage stands apart from surrounding formal logic
 
-1. **New melodic idea**: Not derived from previous material
-2. **Remote tonal region**: Often bVI or another unexpected key
-3. **Abrupt textural change**: Often marked by dynamic shift (e.g., forte to piano)
-4. **Stands apart**: Distinct from surrounding formal functions
+# Examples
+**Example 1** (p. 644): Haydn, Symphony No. 98 in B-flat, iii -- B section tonicizes supertonic, then m. 25 introduces interpolated episode with new idea in A-flat major (bVI of supertonic), abrupt shift from forte to piano.
 
-## Example: Haydn, Symphony No. 98 in B-flat, iii
+# Relationships
+## Builds Upon
+- **Minuet contrasting middle** -- Primary location
+## Related
+- **Minuet recapitulation** -- May also contain interpolated episodes
 
-The B section:
-1. Quickly tonicizes supertonic region (C minor) using minuet material
-2. M. 25: Interpolated episode begins
-   - New melodic idea
-   - Abrupt shift from forte to piano
-   - Immediate move into A-flat major (bVI of supertonic)
-3. M. 31: Forte dynamic restored; music returns to home key
-4. HC at m. 36, then standing on dominant
+# Source Reference
+Chapter 18: Minuet/Trio Form, page 643.
 
-## Function
-
-- Provides contrast within an already contrasting section
-- Explores remote harmonic territory
-- Creates formal interest through unexpected departure
-- The "interpolated" quality means it could theoretically be removed without disrupting overall formal logic
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear definition with illustrative example
+- Re-extraction notes: Preserved Haydn example from old card; added v3.1 fields

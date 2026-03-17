@@ -1,41 +1,77 @@
 ---
 concept: "Coda in Theme and Variations"
+slug: coda-variations
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Slow-Movement Forms"
 chapter_number: 17
 pdf_page: 611
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Slow-Movement Forms"
+section: "Coda"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - theme-and-variations
+  - coda-overview
+extends:
+  - coda-overview
+related:
+  - extensions-interpolations-variations
+  - variation-finale
+contrasts_with: []
+answers_questions:
+  - "What special function does the coda serve in a variations movement?"
+  - "How does the coda break the formal symmetry of variations?"
 ---
 
-## Definition
+# Quick Definition
+The coda in a variations movement serves the particular function of breaking the formal symmetry created by the regular succession of equal-size units and provides the only real opportunity for structural expansion toward the end.
 
-The final variation of a theme and variations movement is often followed by a genuine coda. This coda serves special functions related to the unique nature of variation form.
+# Core Definition
+The final variation is often followed by a genuine coda. Besides serving its usual formal functions, the coda in a variations set has the particular function of breaking the pattern of formal symmetry created by the regular succession of more or less equal-size units. The coda provides the only real opportunity for creating the kinds of structural expansion typically found toward the end of classical movements. It also permits the composer to create a circular effect by bringing back the theme in its original, unvaried version (Caplin, pp. 611-612).
 
-## Unique Functions in Variations
+# Prerequisites
+- **Theme and variations** -- The formal context
+- **Coda overview** -- General coda functions
 
-### Breaking Formal Symmetry
-- The regular succession of more or less equal-size units (theme + variations) creates formal symmetry
-- The coda breaks this pattern
-- Provides the only real opportunity for structural expansion toward the end
+# Key Properties
+1. Follows the final variation
+2. Breaks the pattern of formal symmetry
+3. Provides opportunity for structural expansion (cadential expansions, etc.)
+4. May bring back the theme in its original, unvaried form (circular effect)
+5. Distinguishable from extensions, which precede the finale
 
-### Cadential Expansion
-- Allows for the kinds of structural expansion typical of classical movement endings
-- Can include cadential expansions like those in a sonata recapitulation's final subordinate theme
+# Construction / Recognition
+## To Identify:
+1. Look for new or significantly altered material after the final variation
+2. Check for cadential expansion or structural growth
+3. Note any return of the original theme material
 
-### Circular Effect
-- Permits the composer to create formal circularity
-- May bring back the theme (or parts of it) in its original, unvaried form at the very end
+# Context & Application
+The coda is the primary means of creating the asymmetrical expansion typical of classical endings within a form that is otherwise defined by symmetrical repetition.
 
-## Example: Beethoven, Piano Sonata in C minor, Op. 111, ii
+# Examples
+**Example 1** (p. 611): Beethoven, Piano Trio in C minor, Op. 1, No. 3, iii -- brief coda returns to the original staccato eighth-note setting an octave higher, with a slightly expanded closing cadence and a final fortissimo reference to the sforzando interruptions throughout the movement.
 
-The final variation ends at m. 84, followed by a brief coda that:
-- Returns to original staccato eighth-note setting of the theme
-- Sets the return an octave higher than opening
-- Slightly expands the closing cadence
-- Makes a final *fortissimo* reference to the *sforzando* interruptions throughout the movement
+# Relationships
+## Builds Upon
+- **Theme and variations** -- The formal context
+- **Coda overview** -- General compensatory functions
+## Related
+- **Extensions and interpolations (variations)** -- Also break formal symmetry, but before the finale
+- **Variation finale** -- The section the coda follows
 
-## Distinction from Extensions
+# Common Errors
+- **Error**: Confusing the coda with extensions/interpolations
+  **Correction**: Extensions precede the final variation; the coda follows it
 
-While extensions and interpolations typically occur **before** the final variation, the coda follows **after** the final variation and provides true structural closure.
+# Source Reference
+Chapter 17: Slow-Movement Forms, pages 611-612.
+
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear definition with illustrative example
+- Re-extraction notes: Preserved Beethoven example from old card; added v3.1 fields

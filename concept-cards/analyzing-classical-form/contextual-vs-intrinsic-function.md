@@ -1,47 +1,50 @@
 ---
 concept: "Contextual vs. Intrinsic Formal Function"
+slug: contextual-vs-intrinsic-function
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - formal-function
+extends: []
+related:
+  - retrospective-reinterpretation
+contrasts_with: []
+answers_questions:
+  - "What is the difference between contextual and intrinsic formal function?"
 ---
 
-## Definitions
+# Quick Definition
+Intrinsic formal function is what a passage "sounds like" based on its musical content alone. Contextual formal function is determined by the passage's actual location within the broader form. The same music can have different contextual and intrinsic functions.
 
-### Intrinsic Formal Function
-The formal function of a passage expressed by its **musical content**, irrespective of its actual location within a broader formal context.
+# Core Definition
+Intrinsic formal function: the formal function of a passage expressed by its musical content, irrespective of its actual location within a broader formal context. Contextual formal function: the formal function of a musical passage based on its actual location (as beginning, middle, or end) within a broader formal context (Caplin, Glossary, p. 725).
 
-### Contextual Formal Function
-The formal function of a musical passage based on its **actual location** (as beginning, middle, or end) within a broader formal context.
+# Key Properties
+1. Intrinsic = what music sounds like on its own terms
+2. Contextual = where it appears in the larger form
+3. The two may differ (creating analytical richness)
+4. Helps explain formally ambiguous passages
+5. Accounts for recontextualization of material
+6. Important for development sections and recapitulations
 
-## The Distinction
+# Relationships
+## Related
+- **Retrospective reinterpretation** -- When intrinsic function changes based on subsequent context
 
-A passage's intrinsic function (what it "sounds like") may differ from its contextual function (where it appears in the form).
+# Source Reference
+Glossary of Terms, page 725.
 
-## Example
-
-A passage with:
-- **Intrinsic function**: Presentation (repeated basic idea, tonic prolongation)
-- **Contextual function**: Beginning of transition (occurs after main theme closes)
-
-The music "sounds like" a presentation but "functions as" the start of a transition.
-
-## Analytical Application
-
-When analyzing, consider both:
-1. What the music sounds like on its own terms (intrinsic)
-2. Where it appears in the larger formal design (contextual)
-
-## Why This Matters
-
-- Helps explain passages that seem formally ambiguous
-- Accounts for recontextualization of material
-- Explains how the same music can serve different functions in different locations
-- Important for understanding development sections and recapitulations
-
-## Retrospective Reinterpretation
-
-Sometimes our understanding of intrinsic function changes based on subsequent context, leading to retrospective reinterpretation (indicated by the symbol ⇒).
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved from old card; added v3.1 fields

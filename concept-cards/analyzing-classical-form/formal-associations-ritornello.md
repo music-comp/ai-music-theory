@@ -1,50 +1,53 @@
 ---
 concept: "Formal Associations of Ritornello Material"
+slug: formal-associations-ritornello
+category: concerto-form
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Concerto Form"
 chapter_number: 20
 pdf_page: 705
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Concerto Form"
+section: "Formal Associations of Melodic-motivic Material"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - opening-ritornello
+extends: []
+related: []
+contrasts_with: []
+answers_questions:
+  - "How do ritornello ideas change their formal function throughout the movement?"
+  - "Why is formal recontextualization especially prominent in concerto form?"
 ---
 
-## The Opening Ritornello's Role
+# Quick Definition
+The opening ritornello forges initial associations between musical ideas and their formal functions, but subsequent sections rarely bring back ideas in the same order. A main-theme idea may function as transition material later; a subordinate theme may return only in the development. This recontextualization is especially prominent in concerto form.
 
-Beyond allowing the orchestra to express its own material, the opening ritornello forges an initial association between:
-- Various musical ideas
-- Their form-functional expression
+# Core Definition
+The opening ritornello forges an initial association between the various musical ideas and their form-functional expression. Since subsequent sections rarely bring back content in the same order, it is always of analytical interest to observe how ritornello ideas are linked to varying formal units throughout the movement. The creation of multiple associations of a given idea with differing formal contexts is especially prominent in concerto form, where each of the five subsequent sections can grant a new formal interpretation (Caplin, pp. 705-706).
 
-## Recontextualization Throughout the Movement
+# Prerequisites
+- **Opening ritornello** -- The section establishing initial associations
 
-Subsequent sections rarely bring back ritornello content in the same order. It is analytically interesting to observe how ritornello ideas are linked to varying formal units:
+# Key Properties
+1. Ritornello establishes initial idea-function associations
+2. Later sections recontextualize ideas in different functional roles
+3. Main-theme material may function as transition in solo exposition
+4. Subordinate-theme material may return only in development
+5. This technique is found throughout classical form but is especially prominent in concerto
+6. Five subsequent sections each offer opportunities for new interpretation
 
-### Main-Theme Material
-- Frequently functions to begin the **transition** in solo exposition
-- May appear in development
-- Returns in recapitulation
+# Relationships
+## Builds Upon
+- **Opening ritornello** -- Source of initial associations
 
-### Transition Material
-- Often eliminated in solo exposition
-- May reappear in subordinate-key ritornello
-- Or in closing ritornello
-- Or at start of development
+# Source Reference
+Chapter 20: Concerto Form, pages 705-706.
 
-### Subordinate-Theme Material
-- May return only in the **development**
-- Or appear at different point in subordinate-theme group
-- First ritornello subordinate theme often returns in recapitulation
-
-## General Principle
-
-The creation of multiple associations of a given idea with differing formal contexts:
-- Is a compositional technique found throughout classical forms
-- Is **especially prominent in concerto form**
-- Each of the five subsequent sections can grant new formal interpretation to ritornello material
-
-## Analytical Value
-
-Tracking these associations reveals:
-- The composer's organizational strategy
-- How material gains new meaning through formal recontextualization
-- The logic behind material distribution
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear analytical principle
+- Re-extraction notes: Preserved from old card; added v3.1 fields

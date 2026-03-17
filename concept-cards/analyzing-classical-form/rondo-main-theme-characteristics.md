@@ -1,55 +1,58 @@
 ---
 concept: "Rondo Main Theme Characteristics"
+slug: rondo-main-theme-characteristics
+category: rondo-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Rondo Forms"
 chapter_number: 19
 pdf_page: 672
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Rondo Forms"
+section: "Main Theme"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - refrain
+extends:
+  - refrain
+related: []
+contrasts_with:
+  - main-theme
+answers_questions:
+  - "How do rondo main themes differ from sonata main themes?"
+  - "What theme types are preferred in rondos?"
 ---
 
-## General Principle
+# Quick Definition
+Rondo main themes are more tightly knit than sonata main themes: they always close with PAC (never HC), favor periodic forms over sentences, and tend to be conventional and symmetrical. The 8-measure period frequently appears.
 
-Main themes in rondo forms are generally **more tightly knit** than those in sonata form.
+# Core Definition
+In general, main themes in rondo forms are more tightly knit than those in sonata form. A rondo theme always closes with a PAC, never an HC. Moreover, rondo refrains tend to be conventional and symmetrical, whereas the looser, nonconventional themes frequently found in a sonata rarely appear. Unlike the sonata, the use of sentences or sentence-like hybrids is shunned in favor of periodic forms (Caplin, p. 672).
 
-## Specific Differences
+# Prerequisites
+- **Refrain** -- The rondo element whose characteristics are detailed
 
-### Cadential Closure
-| Rondo | Sonata |
-|-------|--------|
-| Always closes with **PAC** | May close with HC |
+# Key Properties
+1. Always closes with PAC (never HC)
+2. Conventional and symmetrical
+3. Periodic forms preferred over sentences
+4. 8-measure period frequently appears
+5. May be stand-alone, first part of small ternary, or first part of small binary
+6. May be followed by closing section or second main theme
+7. Nonconventional themes rare
 
-### Formal Organization
-| Rondo | Sonata |
-|-------|--------|
-| Conventional and symmetrical | Looser, nonconventional themes possible |
+# Relationships
+## Builds Upon
+- **Refrain** -- The rondo element being characterized
+## Contrasts With
+- **Main theme** -- Sonata main themes are less constrained
 
-### Theme Type Preference
-| Rondo | Sonata |
-|-------|--------|
-| Periodic forms favored | Sentences and sentence-like hybrids common |
+# Source Reference
+Chapter 19: Rondo Forms, page 672.
 
-## Common Theme Types in Rondo
-
-1. **8-measure period**: Frequently appears as:
-   - First part of small ternary
-   - First part of small binary
-   - Stand-alone theme type
-
-2. **Small ternary**: Very common as complete refrain
-
-3. **Small binary**: Also used for refrains
-
-## Additional Elements
-
-The main theme proper may be followed by:
-- A **closing section**
-- A **second main theme** in home key (as part of opening refrain)
-
-## Why Tighter Organization?
-
-The refrain's repeated appearances throughout the movement:
-- Require clear, memorable thematic identity
-- Benefit from symmetrical, balanced construction
-- Need strong cadential closure for sense of arrival with each return
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear comparison with sonata
+- Re-extraction notes: Preserved comparison tables from old card; added v3.1 fields

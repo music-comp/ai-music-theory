@@ -1,45 +1,75 @@
 ---
-concept: "Formal Simplicity in Slow Movements"
+concept: "Formal Simplicity in Slow-Movement Forms"
+slug: formal-simplicity-slow-movements
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Slow-Movement Forms"
 chapter_number: 17
 pdf_page: 587
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Slow-Movement Forms"
+section: "Formal Simplicity in Slow-Movement Forms"
+extraction_confidence: high
+aliases:
+  - "compression in slow movements"
+prerequisites:
+  - slow-movement-forms-overview
+  - sonata-form
+extends: []
+related:
+  - slow-movement-sonata
+  - compression
+contrasts_with: []
+answers_questions:
+  - "Why are slow movements formally simpler than fast movements?"
+  - "How do composers maintain consistent movement length across a cycle?"
 ---
 
-## Principle
+# Quick Definition
+Composers select inherently simpler formal types for slow movements because, at a slower pace, a form of equal complexity to a fast movement would last considerably longer. When sonata form is used, it is compressed.
 
-Composers normally select an inherently simpler formal type for slow movements compared to fast movements. This maintains relatively consistent movement lengths throughout an instrumental cycle despite the slower pacing of events.
+# Core Definition
+If all movements had the same degree of formal complexity, the slow movement would last considerably longer than others due to its slower pacing. To maintain relatively consistent length, composers either select an inherently simpler formal type (large ternary, theme and variations, sonata without development, five-part rondo) or use regular sonata form but with compression techniques (Caplin, pp. 587-588).
 
-## Rationale
+# Prerequisites
+- **Slow-movement forms overview** -- Context for the range of slow-movement forms
+- **Sonata form** -- The complex form against which slow-movement forms are compared
 
-If all movements of an instrumental cycle were constructed with the same degree of formal complexity, the slow movement would last considerably longer because of the slower pacing of its events.
+# Key Properties
+1. Slow pacing requires simpler formal organization to avoid excessive length
+2. Large ternary, theme and variations, sonata without development, and five-part rondo are less complex than sonata or sonata-rondo
+3. When regular sonata form is used in slow movements, compression techniques are applied
+4. This is a practical, aesthetic choice, not a limitation
 
-## Simpler vs. Complex Forms
+# Construction / Recognition
+## To Identify:
+1. Compare the slow movement's formal type with the fast movements' formal types
+2. If sonata form, look for compression techniques (transition/subordinate fusion, transition elimination, development reduction)
 
-### Simpler Forms (Slow Movements)
-- Large ternary
-- Theme and variations
-- Sonata without development
-- Five-part rondo
+# Context & Application
+This principle explains why certain formal types cluster in slow movements and provides the rationale for the compression techniques detailed under "Finer Points" (slow-movement sonata form).
 
-### More Complex Forms (Fast Movements)
-- Sonata form
-- Sonata-rondo
-- Concerto form
+# Examples
+**Example 1** (p. 588): The forms used in slow movements -- large ternary, theme and variations, sonata without development, five-part rondo -- are less complex than the highly elaborate schemes of sonata, sonata-rondo, and concerto.
 
-## When Sonata Form Is Used in Slow Movements
+# Relationships
+## Builds Upon
+- **Slow-movement forms overview** -- General context
+## Enables
+- **Slow-movement sonata** -- Explains why compression techniques are needed
+## Related
+- **Compression** -- The general technique applied to slow-movement sonatas
 
-Composers who choose regular sonata form for a slow movement normally **do not exploit all its resources**:
-- Subordinate-theme group is less expansive
-- Development section may be reduced
-- Form-functional fusion is common
-- Standings on dominant are limited
+# Common Errors
+- **Error**: Thinking simpler form means simpler music
+  **Correction**: Formal simplicity compensates for slower pacing; the actual musical content can be highly sophisticated
 
-## Typical Slow Movement Placement
+# Source Reference
+Chapter 17: Slow-Movement Forms, pages 587-588.
 
-- Usually occupies an **interior position** in the cycle
-- Set in a **contrasting tonality** (typically subdominant)
-- Sometimes set in the **contrasting modality** of the cycle's key
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Explicitly stated rationale in text box
+- Re-extraction notes: Preserved core content from old card, upgraded to v3.1

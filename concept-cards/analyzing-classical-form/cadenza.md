@@ -1,53 +1,54 @@
 ---
 concept: "Cadenza"
+slug: cadenza
+category: concerto-form
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Concerto Form"
 chapter_number: 20
 pdf_page: 700
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Concerto Form"
+section: "Closing Ritornello"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - closing-ritornello
+extends: []
+related: []
+contrasts_with: []
+answers_questions:
+  - "What is a cadenza in concerto form?"
+  - "How is it introduced and resolved?"
 ---
 
-## Definition
+# Quick Definition
+A cadenza is an unaccompanied solo passage interpolated into the closing ritornello, introduced by a cadential six-four under fermata. It broadly prolongs that harmony and resolves to a dominant seventh creating the PAC that closes the first part of the ritornello.
 
-A cadenza is an unaccompanied passage for the solo instrument, interpolated into the closing ritornello of concerto form. It showcases the soloist's virtuosity and interpretive abilities.
+# Core Definition
+The cadenza is conventionally introduced by the appearance of a prominent cadential six-four. The cadenza itself can often be seen as broadly prolonging that harmony, finally resolving at its end to a dominant seventh to create a PAC. In the score, the composer usually notates the cadential six-four and the penultimate dominant seventh, both placed under fermata signs, indicating an improvised cadenza by the performer. In Mozart and Beethoven, the cadenza is within the closing ritornello; Haydn follows the mid-18th-century convention of placing it at the end of the recapitulation (Caplin, pp. 700, 717).
 
-## Introduction
+# Prerequisites
+- **Closing ritornello** -- The section interrupted by the cadenza
 
-The cadenza is conventionally introduced by a prominent **cadential six-four**:
-- This harmony is placed under a fermata in the score
-- The cadenza broadly prolongs this harmony
-- Finally resolves at its end to a dominant seventh
+# Key Properties
+1. Unaccompanied solo passage
+2. Introduced by cadential six-four under fermata
+3. Broadly prolongs cadential six-four harmony
+4. Resolves to dominant seventh creating PAC
+5. Composer notates six-four and dominant seventh with fermatas
+6. Historically improvised; increasingly written out from Beethoven onward
+7. Mozart/Beethoven: within closing ritornello; Haydn: end of recapitulation
 
-## Notation
+# Relationships
+## Builds Upon
+- **Closing ritornello** -- The section containing the cadenza
 
-The composer usually notates:
-1. The cadential six-four (under fermata)
-2. The penultimate dominant seventh (under fermata)
+# Source Reference
+Chapter 20: Concerto Form, pages 700, 717.
 
-Everything between is:
-- Left for the performer to improvise (historical practice)
-- Or written out by the composer (increasingly common from Beethoven onward)
-
-## Harmonic Function
-
-The cadenza can be understood as broadly prolonging the cadential six-four:
-- The entire passage embellishes dominant function
-- The resolution to dominant seventh creates the PAC
-- This PAC closes the first part of the closing ritornello
-
-## Placement by Composer
-
-| Composer | Typical Placement |
-|----------|------------------|
-| Mozart | Within closing ritornello |
-| Beethoven | Within closing ritornello |
-| Haydn | At end of recapitulation (mid-18th-century convention) |
-
-## Function
-
-- Spotlights the soloist one final time
-- Provides opportunity for virtuosic display
-- Creates dramatic pause in the form
-- Allows performer to demonstrate improvisatory skill
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear definition with harmonic analysis
+- Re-extraction notes: Preserved placement table from old card; added v3.1 fields

@@ -1,47 +1,67 @@
 ---
 concept: Development Melodic-Motivic Material
-category: form
-pdf_page: 450
+slug: development-melodic-motivic-material
+category: sonata-form
+tier: advanced
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Development"
 chapter_number: 13
-unit: null
-authors: "William E. Caplin"
+pdf_page: 450
+section: "Melodic-motivic Material"
+extraction_confidence: high
+aliases:
+  - development material sources
+  - motivic development
+prerequisites:
+  - development-section
+  - exposition
+related:
+  - development-composer-differences
+  - pre-core-beginning
+contrasts_with: []
+answers_questions:
+  - "Where does the development's melodic material come from?"
+  - "What is the difference between 'development' as section and as process?"
 ---
 
-# Development Melodic-Motivic Material
+# Quick Definition
+The melodic-motivic material of a development normally derives from the exposition (subjected to variation, transformation, and recombination), though new ideas may also appear, especially in Mozart.
 
-The melodic and motivic content used in development sections.
+# Core Definition
+Caplin identifies two sources: material from the exposition (subjected to "significant variation, transformation, and recombination") and new ideas (p. 450). The term "development" has two meanings: the central section of sonata form, and the systematic manipulation of musical ideas (also called "working out," "elaboration," or Durchfuhrung). This latter sense "can take place at any point in the musical form, but writers have noted that such motivic work is particularly associated with the central section."
 
-## Sources
+# Prerequisites
+- **Development section** — The formal context
+- **Exposition** — The primary source of material
 
-The melodic-motivic material normally derives from the exposition and is often subjected to:
-- Significant variation
-- Transformation
-- Recombination
+# Key Properties
+1. Material normally derives from the exposition
+2. Subjected to variation, transformation, and recombination
+3. New ideas may appear (especially Mozart)
+4. Haydn restricts to motivic and accompanimental patterns from exposition
+5. Haydn sometimes brings material back in similar order (rotational form)
+6. "Development" as motivic process vs. "development" as formal section
 
-## New Ideas
+# Context & Application
+The dual meaning of "development" is important: the motivic process of developing material can occur anywhere in the form, not just in the development section. The German term Durchfuhrung ("leading through") and alternatives like "working out," "elaboration," and "free fantasia" all emphasize the motivic-process aspect.
 
-New ideas may also appear, especially in Mozart, who likes to introduce melodies with no obvious connection to the exposition.
+# Relationships
+## Builds Upon
+- **Exposition** — Primary source of material for the development
+## Related
+- **Development composer differences** — Each composer handles material differently
+- **Pre-core beginning** — Specific material choices for the development's opening
 
-## Composer Differences
+# Common Confusions
+- **Confusion**: Assuming "development" only means the formal section
+  **Clarification**: It also means the process of motivic manipulation, which can occur in any section of the form
 
-### Haydn
-- Generally restricts developments to motivic and accompanimental patterns from exposition
-- Sometimes brings back material in similar order to exposition
-- Illustrates "rotational" form concept
+# Source Reference
+Chapter 13: Development, pages 450-451.
 
-### Mozart
-- Tends to introduce new material
-- Regularly uses pre-core/core technique
-- Shorter development sections overall
-
-### Beethoven
-- Uses pre-core/core technique
-- Introduces new ideas
-- Development sections comparable in size to exposition/recapitulation
-- Uses dominant arrivals in place of half cadences
-
-## "Development" as Motivic Process
-
-The term "development" can mean both the section and the process of systematically manipulating and transforming musical ideas (also called "working out," "elaboration," or Durchfuhrung).
+# Verification Notes
+- Definition source: Direct from pp. 450-451
+- Confidence rationale: Clearly explained with terminological clarification
+- Re-extraction notes: Preserved composer differences and dual-meaning note from old card; added v3.1 template

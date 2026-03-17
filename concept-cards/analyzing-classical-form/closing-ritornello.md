@@ -1,52 +1,60 @@
 ---
 concept: "Closing Ritornello"
-chapter_number: 20
-pdf_page: 717
-source: "Analyzing Classical Form (Caplin)"
-unit: null
+slug: closing-ritornello
+category: concerto-form
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
 chapter: "Concerto Form"
+chapter_number: 20
+pdf_page: 699
+section: "Closing Ritornello"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - concerto-form
+  - cadenza
+extends: []
+related:
+  - subordinate-key-ritornello
+  - closing-ritornello-vs-coda
+contrasts_with:
+  - coda-section
+answers_questions:
+  - "What is the closing ritornello?"
+  - "How is the cadenza incorporated?"
 ---
 
-## Definition
+# Quick Definition
+The closing ritornello frames the overall form, alludes to opening ritornello material, and is usually divided into two parts separated by the cadenza. It is NOT a coda -- it lacks loosening devices, fresh contexts, and main-theme circularity.
 
-The closing ritornello is the final section of concerto form, completing the structural frame initiated by the opening ritornello. It elides with the end of the solo recapitulation and is usually interrupted by a solo cadenza.
+# Core Definition
+The closing ritornello frames the overall form and generally alludes strongly to material from the opening ritornello. It is usually divided into two parts separated by a cadenza. The second part always ends with a closing section, usually from the opening ritornello. In Mozart and Beethoven, the cadenza is within the closing ritornello; in Haydn, at the end of the recapitulation (Caplin, pp. 699-700, 717-718).
 
-## Two Parts
+# Prerequisites
+- **Concerto form** -- The overall form
+- **Cadenza** -- The solo interpolation
 
-### First Part (Before Cadenza)
-- Follows the cadential trill and PAC ending the recapitulation
-- Builds to the cadential six-four that introduces the cadenza
+# Key Properties
+1. Completes the textural frame with the opening ritornello
+2. Two parts separated by cadenza
+3. NOT a coda (four distinguishing criteria)
+4. Part 2 always ends with closing section (from opening ritornello)
+5. Mozart/Beethoven: cadenza within; Haydn: cadenza before
 
-### Second Part (After Cadenza)
-- Follows the cadenza's resolution to dominant seventh
-- Always ends with a closing section (usually same as opening ritornello's)
+# Relationships
+## Related
+- **Subordinate-key ritornello** -- Similar functions in subordinate key
+- **Closing ritornello vs. coda** -- Important distinction
+## Contrasts With
+- **Coda** -- The closing ritornello is NOT a coda
 
-## Functions
+# Source Reference
+Chapter 20: Concerto Form, pages 699-700, 717-718.
 
-1. **Final orchestral opportunity**: Orchestra sounds its own music in home key
-2. **Dynamic sustenance**: Sustains/intensifies climax from recapitulation
-3. **Brings back material**: Last chance for ritornello ideas not heard elsewhere
-4. **Completes frame**: Creates formal rhyme with opening ritornello
-
-## Cadenza Placement
-
-| Composer | Cadenza Location |
-|----------|-----------------|
-| Mozart | Within closing ritornello (divides it into two parts) |
-| Beethoven | Within closing ritornello |
-| Haydn | Marks end of recapitulation (closing ritornello follows) |
-
-## Not a Coda
-
-The closing ritornello should **not be confused with a genuine coda**:
-- Brings back material in much the same way as earlier
-- Does not set ideas in fresh formal context
-- Does not feature loosening devices typical of coda
-- Rarely contains main-theme ideas (unlike coda's circular effect)
-- Creates sense of frame through matching closing sections ("rhyme")
-
-## Example: Beethoven's Emperor Concerto
-
-The presence of a genuine coda after the closing ritornello confirms how different the two functions are.
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear two-part structure
+- Re-extraction notes: Preserved from old card; added v3.1 fields

@@ -1,47 +1,60 @@
 ---
 concept: Slow Introduction Tonal Organization
-category: form
-pdf_page: 578
+slug: slow-introduction-tonal-organization
+category: harmonic-techniques
+tier: advanced
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Slow Introduction"
 chapter_number: 16
-unit: null
-authors: "William E. Caplin"
+pdf_page: 578
+section: "Tonal, Phrase-structural, and Motivic Organization"
+extraction_confidence: high
+aliases:
+  - slow introduction harmonic plan
+prerequisites:
+  - slow-introduction-section
+related:
+  - slow-introduction-phrase-structure
+  - standing-on-dominant
+contrasts_with: []
+answers_questions:
+  - "How do slow introductions typically end harmonically?"
+  - "Can a slow introduction end with a PAC?"
 ---
 
-# Slow Introduction Tonal Organization
+# Quick Definition
+Slow introductions begin with home-key tonic and typically end on the dominant (with HC or dominant arrival and standing on the dominant), though some close with an authentic cadence that elides with the exposition's beginning.
 
-The harmonic and tonal plans typically found in slow introductions.
+# Core Definition
+"Slow introductions typically begin with tonic harmony of the home key and, in short introductions, remain in that key throughout" (p. 578). In multi-part introductions, brief modulation occurs, with "prominent tonicizations and an emphasis on minor modality (in movements that are otherwise in major)." "In the majority of cases, the harmonic goal is the dominant of the home key, articulated by an HC (or dominant arrival) and followed by a standing on the dominant." However, "often enough, introductions close with an authentic cadence that elides with the beginning of the exposition." In exceptional cases, the structural end occurs after the exposition has already begun.
 
-## Opening
+# Prerequisites
+- **Slow introduction section** — The formal context
 
-Slow introductions typically begin with tonic harmony of the home key.
+# Key Properties
+1. Begins with home-key tonic
+2. Short introductions may remain in home key throughout
+3. Multi-part introductions include brief modulations
+4. Prominent tonicizations and minor-mode emphasis common
+5. Majority end on dominant (HC or dominant arrival + standing on V)
+6. Alternative: PAC eliding with exposition's beginning
+7. Exceptional: structural end occurs after exposition has begun
 
-## Short Introductions
+# Examples
+**Example 16.4** (p. 581): Beethoven, "Kreutzer" Sonata, Op. 47, i — introduction ends on D minor triad (iv of A minor, the home key); not a dominant, but functions as pre-dominant leading into exposition's basic idea supported by iv then V.
 
-May remain in home key throughout.
+# Relationships
+## Builds Upon
+- **Slow introduction section** — Its harmonic dimension
+## Related
+- **Standing on the dominant** — Common ending for slow introductions
 
-## Multi-part Introductions
+# Source Reference
+Chapter 16: Slow Introduction, page 578.
 
-Brief modulation typically occurs, often to related keys.
-
-## Emphasis on Minor
-
-Prominent tonicizations and emphasis on minor modality (in movements otherwise in major) are common.
-
-## Harmonic Goal
-
-In the majority of cases:
-- Dominant of home key
-- Articulated by HC or dominant arrival
-- Followed by standing on the dominant
-
-This harmonic emphasis is most appropriate for building powerful expectation for home-key tonic at start of exposition.
-
-## Alternative Ending
-
-Often enough, introductions close with authentic cadence that elides with beginning of exposition.
-
-## Exceptional Cases
-
-Structural end of introduction may actually occur somewhat after exposition has begun.
+# Verification Notes
+- Definition source: Direct from p. 578
+- Confidence rationale: Clearly enumerated harmonic options
+- Re-extraction notes: Preserved key harmonic options from old card; added v3.1 template, Kreutzer example

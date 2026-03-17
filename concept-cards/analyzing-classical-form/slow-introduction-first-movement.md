@@ -1,36 +1,47 @@
 ---
 concept: Slow Introduction in First Movement
-category: form
-pdf_page: 577
+slug: slow-introduction-first-movement
+category: sonata-form
+tier: advanced
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Slow Introduction"
 chapter_number: 16
-unit: null
-authors: "William E. Caplin"
+pdf_page: 577
+section: "More Details"
+extraction_confidence: high
+aliases:
+  - slow introduction placement
+prerequisites:
+  - slow-introduction-section
+related: []
+contrasts_with: []
+answers_questions:
+  - "Where are slow introductions most commonly placed?"
+  - "Can a finale have a slow introduction?"
 ---
 
-# Slow Introduction in First Movement
+# Quick Definition
+Slow introductions most commonly open the first movement of an instrumental cycle (providing introduction to the whole work), though Beethoven occasionally places one before a finale, as in his First Symphony.
 
-The typical placement and function of slow introductions in instrumental works.
+# Core Definition
+"Not surprisingly, slow introductions are used most often to open the first movement of an instrumental cycle, in which case they also provide a sense of introduction to the work as a whole" (p. 577). "On occasion, however, Beethoven opens a finale movement with a slow introduction, as in his First Symphony." Scope varies from "relatively short" to very extensive (Beethoven's Second and Seventh Symphonies "occupy a significant proportion of the movement as a whole"). A slow introduction itself can even open with a thematic introduction.
 
-## Primary Location
+# Prerequisites
+- **Slow introduction section** — The formal unit being placed
 
-Slow introductions are used most often to open the first movement of an instrumental cycle, where they also provide a sense of introduction to the work as a whole.
+# Key Properties
+1. Most common in first movements of instrumental cycles
+2. Also provides introduction to the work as a whole
+3. Beethoven occasionally uses slow introductions for finales
+4. Scope varies enormously (brief to very extensive)
+5. Can itself open with a thematic introduction
 
-## Genres
+# Source Reference
+Chapter 16: Slow Introduction, page 577.
 
-Most common in:
-- Symphony (public genre)
-- Overture (theatrical/concert)
-- Chamber music (especially string quartet)
-- Rarely in solo sonata
-
-## Exception: Finale Movement
-
-On occasion, Beethoven opens a finale movement with a slow introduction, as in his First Symphony.
-
-## Scope Variation
-
-- Some relatively short (brief framing gesture)
-- Others extensive (Beethoven's Second and Seventh Symphonies occupy significant proportion of movement)
-- A slow introduction can even open with its own thematic introduction
+# Verification Notes
+- Definition source: Direct from p. 577
+- Confidence rationale: Clear factual statement
+- Re-extraction notes: Preserved key content from old card; added v3.1 template

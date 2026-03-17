@@ -1,54 +1,62 @@
 ---
 concept: "Bravura Theme"
+slug: bravura-theme
+category: concerto-form
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Concerto Form"
 chapter_number: 20
 pdf_page: 710
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Concerto Form"
+section: "Subordinate-theme Group"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - solo-exposition
+extends:
+  - subordinate-theme
+related:
+  - expanded-cadential-progression-concerto
+contrasts_with: []
+answers_questions:
+  - "What is a bravura theme?"
+  - "Why is it typically repeated and expanded?"
 ---
 
-## Definition
+# Quick Definition
+A bravura theme is a subordinate theme in concerto form featuring continuous sixteenth notes in a virtuosic style. It is typically first presented in compressed form (e.g., an 8-measure sentence), then repeated and significantly expanded with model-sequence technique and extended cadential progressions.
 
-A bravura theme is a subordinate theme in concerto form written in a "bravura" style, featuring continuous sixteenth notes that showcase virtuosic passage work. It is typically first presented in compressed form, then repeated and significantly expanded.
+# Core Definition
+The final subordinate theme is often written in a "bravura" style, featuring continuous sixteenth notes. Typically, this bravura theme is first presented in a relatively compressed form. The effect of cutting short such hustle and bustle raises expectations that more of the theme will have to appear. And indeed, the theme is then repeated and significantly expanded in accord with the nature of its material (Caplin, pp. 710-711).
 
-## Characteristics
+# Prerequisites
+- **Solo exposition** -- The section containing the bravura theme
 
-1. **Continuous sixteenth notes**: Constant rapid motion
-2. **Virtuosic figuration**: Scales, arpeggiations, passagework
-3. **Initial compression**: First presentation is relatively short
-4. **Subsequent expansion**: Repetition brings significant extension
+# Key Properties
+1. Continuous sixteenth notes
+2. Virtuosic passage work (scales, arpeggiations)
+3. Initial presentation compressed (e.g., 8-m. sentence)
+4. Compression raises expectations for more
+5. Repeated and significantly expanded
+6. Expanded through model-sequence technique and cadential progression
+7. Cadential dominant may be stretched to many measures
+8. Culminates in "cadential trill" marking end of solo exposition
 
-## Typical Structure
+# Examples
+**Example 1** (p. 711): Mozart, Piano Concerto in E-flat, K. 482, i -- second subordinate theme (m. 171) with sixteenth-note arpeggiations; initial 8-m. sentence; repeated at m. 178 and expanded with dominant stretched to 10 measures.
 
-### First Presentation
-- Simple 8-measure sentence or similar
-- Despite energy, seems "all too short"
-- Creates expectation that more will come
+# Relationships
+## Builds Upon
+- **Subordinate theme** -- The function expressed in bravura style
+## Related
+- **Expanded cadential progression (concerto)** -- The hallmark technique in bravura themes
 
-### Repetition and Expansion
-- Theme is repeated
-- Expanded through:
-  - Model-sequence technique
-  - Extended cadential progression
-  - Cadential dominant stretched to many measures
+# Source Reference
+Chapter 20: Concerto Form, pages 710-711.
 
-## Function
-
-The bravura theme:
-- Provides major opportunity for virtuosic display
-- Builds to the climactic "cadential trill"
-- Creates structural space for passage work
-- Leads to final PAC of subordinate-theme group
-
-## Example: Mozart, Piano Concerto in E-flat, K. 482, i
-
-- Second subordinate theme (m. 171): sixteenth-note arpeggiations
-- Initial form: simple 8-m. sentence
-- Repetition (m. 178): expanded via model-sequence and cadential progression
-- Dominant stretched to 10 measures
-
-## Concerto Style Marker
-
-The appearance of a broad ECP leading to a cadential trill immediately brings the idea of concerto to mind, regardless of the actual genre of the work.
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear definition with illustrative example
+- Re-extraction notes: Preserved Mozart example from old card; added v3.1 fields

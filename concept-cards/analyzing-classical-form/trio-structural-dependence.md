@@ -1,52 +1,67 @@
 ---
 concept: "Trio Structural Dependence"
+slug: trio-structural-dependence
+category: minuet-trio
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Minuet/Trio Form"
 chapter_number: 18
 pdf_page: 651
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Minuet/Trio Form"
+section: "Trio"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - trio
+extends:
+  - trio
+related:
+  - interior-theme-phrase-structure
+contrasts_with: []
+answers_questions:
+  - "How can the trio be made structurally dependent on the minuet?"
+  - "What techniques inhibit the trio's closure?"
 ---
 
-## Definition
+# Quick Definition
+Composers may forge a stronger sense of overall minuet/trio form by making the trio structurally dependent on the surrounding minuets through changing mode/tonality, adding a retransition, or leaving the trio formally incomplete (open on dominant harmony).
 
-Composers may forge a stronger sense of overall minuet/trio form by making the trio structurally dependent on the surrounding minuets through various techniques that inhibit the trio's closure.
+# Core Definition
+The most important formal distinction occurs when the composer aims to forge a stronger sense of overall minuet/trio form by making the trio more dependent on the minuet proper. Methods include changing the trio's mode or tonality, adding a retransition, and leaving the trio formally incomplete. Between total subordination and complete independence lies a spectrum of possibilities (Caplin, pp. 651-652).
 
-## Techniques for Creating Dependence
+# Prerequisites
+- **Trio** -- The section being made structurally dependent
 
-### 1. Change of Mode or Tonality
-- When the trio changes mode or key
-- The change motivates restoration of original key in the da capo
-- The trio becomes dependent on the surrounding minuets for tonal resolution
+# Key Properties
+1. Three techniques: modal/tonal change, retransition, structural incompleteness
+2. Modal/tonal change motivates restoration of original key in da capo
+3. Retransition links trio to da capo (often anticipates minuet motives)
+4. Structural incompleteness: A' fails to close, or trio is truncated (A+B only)
+5. If in different key, incomplete trio typically ends on dominant of minuet's home key
+6. Spectrum between total subordination and complete independence
 
-### 2. Retransition
-- Added when tonality changes (especially to remote regions)
-- Links end of trio to beginning of da capo
-- Often anticipates motives from the minuet
-- Aids considerably in integrating the overall form
+# Construction / Recognition
+## To Identify:
+1. Check whether the trio changes mode or tonality
+2. Look for a retransition between trio and da capo
+3. Determine whether the trio achieves cadential closure
+4. Note the final harmony -- is it dominant of the minuet's home key?
 
-### 3. Structural Incompleteness
-- Similar to interior theme endings in large ternary
-- Various techniques inhibit closure
+# Examples
+**Example 1** (p. 652): Haydn, Symphony No. 100 in G ("Military"), iii -- trio shifts to minor, ends with HC in home key, B section ends on dominant with "Menuetto d.c." marking; truncated trio remains structurally subordinate.
 
-## Types of Incomplete Endings
+# Relationships
+## Builds Upon
+- **Trio** -- The section being made dependent
+## Related
+- **Interior theme phrase structure** -- Similar techniques of formal incompleteness
 
-1. **Reopened Cadence**: A' section initially cadences, but when repeated, remains open on dominant (often after deceptive cadence)
+# Source Reference
+Chapter 18: Minuet/Trio Form, pages 651-652.
 
-2. **Stuck on Dominant**: Recapitulation begins normally but gets stuck on dominant, which marks the trio's harmonic end
-
-3. **Truncated Trio**: Consists of A and B sections only; dominant of B section leads back to da capo
-
-## Key Relationship When Incomplete
-
-If the trio is in a different key from the minuet:
-- The harmony ending the incomplete trio is normally **dominant of the minuet's home key**
-- This creates the strongest connection back to the da capo
-
-## Spectrum of Dependence
-
-Between total subordination and complete independence lies a spectrum:
-- Trio may be more or less dependent on the minuet
-- No consistent functional relations exist among the three parts
-- Parts remain labeled: minuet proper, trio, da capo
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Three clear techniques enumerated with examples
+- Re-extraction notes: Preserved techniques list from old card; added v3.1 fields

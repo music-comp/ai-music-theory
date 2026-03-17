@@ -1,48 +1,55 @@
 ---
 concept: "First Hearing of Refrain 2"
+slug: first-hearing-refrain-2
+category: rondo-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Rondo Forms"
 chapter_number: 19
 pdf_page: 678
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Rondo Forms"
+section: "On the 'First Hearing' of Refrain 2"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - five-part-rondo
+  - sonata-rondo
+extends: []
+related: []
+contrasts_with: []
+answers_questions:
+  - "How does the listener interpret refrain 2 on first hearing?"
+  - "When is the rondo form confirmed?"
 ---
 
-## The Interpretive Problem
+# Quick Definition
+The first hearing of refrain 2 can elicit divergent interpretations: if couplet 1 was a subordinate-theme complex, it may seem like an exposition repeat or recapitulation; if couplet 1 was an interior theme (slow movement), it may suggest large ternary. The rondo form is not confirmed until couplet 2 appears.
 
-Our "first" hearing of refrain 2 can elicit quite divergent formal interpretations depending on the structure of the preceding first couplet.
+# Core Definition
+Our "first" hearing of refrain 2 can elicit quite divergent formal interpretations depending on the structure of the preceding first couplet. If the first couplet is a subordinate-theme complex, the return may appear to mark the repeat of a sonata exposition or the beginning of a recapitulation. If the first couplet is an interior theme (slow movement), the return may suggest the third part of a large ternary. In both situations, the rondo form is not fully confirmed until couplet 2 appears (Caplin, p. 678).
 
-## If Couplet 1 = Subordinate-Theme Complex
+# Prerequisites
+- **Five-part rondo** -- One form where this ambiguity arises
+- **Sonata-rondo** -- The other form
 
-The return of the main theme may appear to mark:
-- The **repeat of a sonata exposition**, OR
-- The beginning of a **recapitulation** in a sonata without development
+# Key Properties
+1. Refrain 2 creates interpretive ambiguity
+2. If couplet 1 was subordinate-theme complex: may seem like exposition repeat or recapitulation
+3. If couplet 1 was interior theme (slow movement): may suggest large ternary
+4. If couplet 1 was interior theme (fast movement): immediately suggests rondo
+5. Rondo confirmed only at couplet 2
 
-The listener cannot immediately distinguish these options.
+# Relationships
+## Builds Upon
+- **Five-part rondo** -- Where the ambiguity arises
+- **Sonata-rondo** -- Another context for ambiguity
 
-## If Couplet 1 = Interior Theme (Slow Movement)
+# Source Reference
+Chapter 19: Rondo Forms, page 678.
 
-The first return of the main theme may suggest:
-- The **third part of a large ternary**
-
-This interpretation is reinforced in slow movements where large ternary is common.
-
-## If Couplet 1 = Interior Theme (Fast Movement)
-
-The appearance of an interior theme following the main theme:
-- Would **immediately suggest** a rondo form
-- Because large ternary is rarely used in fast movements
-
-## When Is Rondo Confirmed?
-
-In both ambiguous situations, the rondo form is **not fully confirmed until the appearance of couplet 2**:
-- Only then does the characteristic ABACA or ABACABA pattern become clear
-- Prior to couplet 2, multiple interpretations remain viable
-
-## Analytical Implication
-
-The analyst should:
-1. Consider what the listener might think at refrain 2
-2. Note when the rondo form becomes unambiguous
-3. Appreciate how the form unfolds through time
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clearly articulated interpretive problem
+- Re-extraction notes: Preserved scenarios from old card; added v3.1 fields

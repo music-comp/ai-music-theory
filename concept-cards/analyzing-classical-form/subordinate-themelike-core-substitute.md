@@ -1,36 +1,70 @@
 ---
 concept: Subordinate Themelike Core Substitute
-category: form
-pdf_page: 479
+slug: subordinate-themelike-core-substitute
+category: sonata-form
+tier: advanced
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Development"
 chapter_number: 13
-unit: null
-authors: "William E. Caplin"
+pdf_page: 479
+section: "Subordinate Themelike Unit"
+extraction_confidence: high
+aliases:
+  - subordinate-theme-like development unit
+prerequisites:
+  - development-without-core
+  - subordinate-theme
+related:
+  - pseudo-core
+  - transition-like-core-substitute
+contrasts_with:
+  - core
+  - subordinate-theme
+answers_questions:
+  - "What is a subordinate-themelike core substitute?"
+  - "How does it differ from a genuine subordinate theme?"
 ---
 
-# Subordinate Themelike Core Substitute
+# Quick Definition
+A core substitute resembling a subordinate theme, with a harmonic goal of authentic cadence in a development key and loosening devices such as extended continuation, expanded cadential progression, and cadential deviations.
 
-A core substitute resembling a subordinate theme in its formal organization.
+# Core Definition
+"A core substitute can resemble a subordinate theme if its harmonic goal is an authentic cadence of a development key and if it features loosening devices such as an extended continuation, an expanded cadential progression, and evaded, deceptive, or abandoned cadences" (p. 479). Unlike a genuine subordinate theme, this unit "can promise authentic cadential closure but never achieve a true cadential arrival." It frequently begins in one region and modulates to another for closure.
 
-## Characteristics
+# Prerequisites
+- **Development without core** — The context for core substitutes
+- **Subordinate theme** — The formal function it resembles
 
-- Harmonic goal is authentic cadence of a development key
-- Features loosening devices typical of subordinate themes:
-  - Extended continuation
-  - Expanded cadential progression
-  - Evaded, deceptive, or abandoned cadences
+# Key Properties
+1. Harmonic goal is authentic cadence in a development key
+2. Features subordinate-theme loosening devices
+3. May promise but never achieve authentic cadential closure
+4. May begin in one region and modulate to another
+5. Obscured functional boundaries characteristic of subordinate themes
+6. Part of Haydn's tendency toward "rotational" development organization
 
-## Difference from Genuine Subordinate Theme
+# Construction / Recognition
+## To Identify:
+1. Look for loosening devices (extended continuation, expanded cadential progression)
+2. Check for authentic cadential goal (vs. HC/dominant arrival)
+3. Note evaded, deceptive, or abandoned cadences
 
-Unlike a genuine subordinate theme (which must close with PAC), a subordinate themelike unit can:
-- Promise authentic cadential closure but never achieve true cadential arrival
-- Begin in one tonal region and modulate to another for closure
+# Examples
+**Example 13.16** (p. 477): Haydn, Piano Sonata in B-flat, H. 41, i — third part of development (mm. 77-85) begins with basic idea in G minor; presentation with ambiguous continuation (m. 80); expanded cadential progression (m. 82), momentarily abandoned (m. 84), then achieved; followed by closing section.
 
-## Typical in Haydn
+# Relationships
+## Builds Upon
+- **Development without core** — One type of core substitute
+## Contrasts With
+- **Core** — The genuine core uses model-sequence technique, not subordinate-theme loosening
+- **Subordinate theme** — The genuine form always achieves PAC; this may not
 
-Part of Haydn's tendency to have development sections run through exposition material in similar order (main theme, transition, subordinate theme material), exemplifying formal "rotation."
+# Source Reference
+Chapter 13: Development, pages 479-480.
 
-## Example Organization
-
-The unit may obscure functional boundaries, feature expanded cadential progressions, and employ abandoned cadences - all loosening devices associated with subordinate themes.
+# Verification Notes
+- Definition source: Direct from p. 479
+- Confidence rationale: Clearly defined with distinguishing criteria
+- Re-extraction notes: Preserved key content from old card; added v3.1 template, rotational tendency note

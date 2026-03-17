@@ -1,63 +1,89 @@
 ---
 concept: Tonicization
-category: theory
-source: "Analyzing Classical Form: An Approach for the Classroom"
+slug: tonicization
+category: harmony
+subcategory: tonal-processes
+tier: foundational
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "A Review of Harmony"
 chapter_number: 1
 pdf_page: 23
-unit: null
-authors: William E. Caplin
+section: "Guide to Harmonic Annotation"
+extraction_confidence: medium
+aliases:
+  - "secondary dominant application"
+  - "applied dominant"
+prerequisites:
+  - secondary-dominant
+extends: []
+related:
+  - modulation
+  - harmonic-annotation-guide
+contrasts_with:
+  - modulation
+answers_questions:
+  - "What is tonicization?"
+  - "How does tonicization differ from modulation?"
+  - "What notation distinguishes arrow from slash in secondary dominants?"
 ---
 
 # Quick Definition
-The temporary emphasis of a scale degree (other than tonic) through the use of its secondary dominant, creating a local sense of tonic without establishing a new key.
+Temporary emphasis of a scale degree through its secondary dominant, creating a local sense of tonic without establishing a new key. Distinguished from modulation by the absence of cadential confirmation.
 
-# Formal Definition
-Tonicization is the process of emphasizing a scale degree by treating it temporarily as a local tonic, typically through the use of secondary (applied) dominants. Unlike modulation, tonicization does not involve cadential confirmation of the new key and maintains the original tonic as the structural reference.
+# Core Definition
+Tonicization is the process of emphasizing a scale degree by treating it temporarily as a local tonic, typically through secondary (applied) dominants. Unlike modulation, tonicization does not involve cadential confirmation of the new key and maintains the original tonic as the structural reference. The notation system distinguishes: V7->II (secondary dominant resolving to target) from V7/II (target not reached or delayed) (p. 46).
 
-# Musical/Theoretical Formulation
-Tonicization vs. Modulation:
-- **Tonicization**: Temporary emphasis, no cadential confirmation
-- **Modulation**: New tonic confirmed by cadence, displaces previous tonic
+# Prerequisites
+- **Secondary dominant** — The primary mechanism of tonicization
 
-Analytical notation:
-- Arrow notation: V7→II (secondary dominant followed by its target)
-- Slash notation: V7/II (when target is not reached or delayed)
-- Extended tonicization: horizontal brace with tonicized degree below
+# Key Properties
+1. Temporary emphasis of a non-tonic scale degree
+2. Achieved through secondary (applied) dominants
+3. No cadential confirmation of the emphasized degree
+4. Original tonic remains the structural reference
+5. Arrow notation (V7->II): secondary dominant resolving to its target
+6. Slash notation (V7/II): target not reached or delayed
+7. Extended tonicizations: horizontal brace with tonicized degree below
 
-Secondary dominants indicate tonicization:
-- V/V, VII7/V (functioning as pre-dominants)
-- V/II, V/IV, V/VI (tonicizing other degrees)
+# Construction / Recognition
+## To Identify:
+1. Look for chromaticisms suggesting secondary dominants
+2. Verify the secondary dominant resolves to or implies its target
+3. Confirm no cadential confirmation of the tonicized degree
+4. Use arrow notation for resolution, slash for non-resolution
 
-# Musical Context/Application
-Tonicization:
-- Creates chromatic interest without leaving the key
-- Intensifies motion toward specific harmonies
-- May occur within any type of harmonic progression
-- Is distinct from the functional pre-dominant role of V/V
-
-The distinction between tonicization and modulation is crucial: modulation involves cadential confirmation of a new key, while tonicization merely emphasizes a scale degree temporarily.
+# Context & Application
+Tonicization creates chromatic interest without leaving the key. V/V functioning as pre-dominant represents a special case where tonicization and pre-dominant function overlap. The distinction between tonicization and modulation is crucial for formal analysis.
 
 # Examples
-The Guide to Harmonic Annotation (p. 46) provides notation examples:
-- "V7→II" shows secondary dominant resolving to tonicized degree
-- "V7/II" shows secondary dominant when expected resolution is not reached
-- Extended tonicizations are shown with a horizontal brace
+**Example 1** (p. 29, Ex. 1.5): Haydn, Symphony No. 93, m. 33 -- V7->II indicates tonicization of II within a sequential progression.
 
-Example 1.5 (Haydn, Symphony No. 93, m. 33): "V7→II" indicates tonicization of II within the sequential progression.
+**Example 2** (p. 46): Notation guide: V7->II (resolving) vs. V7/II (not resolving).
 
-# Related Concepts
-- Secondary Dominant
-- Modulation
-- Chromatic Harmony
-- Dominant of the Dominant
-- Harmonic Annotation Guide
+# Relationships
+## Builds Upon
+- **Secondary dominant** — Primary mechanism of tonicization
+## Enables
+- **Chromatic enrichment** — Tonicization adds chromatic interest within a key
+## Related
+- **Harmonic annotation guide** — Notation conventions for tonicization
+## Contrasts With
+- **Modulation** — Genuine key change vs. temporary emphasis
+
+# Common Errors
+- **Error**: Using modulation terminology for brief chromatic inflections
+  **Correction**: Reserve "modulation" for key changes confirmed by cadence
 
 # Common Confusions
-- Confusing tonicization with modulation (tonicization lacks cadential confirmation)
-- Not distinguishing V/V as pre-dominant from V/V as tonicization
-- Using modulation terminology for brief chromatic inflections
-- Missing the difference between arrow (→) and slash (/) notation
+- **Confusion**: Missing the arrow (->)  vs. slash (/) notation distinction
+  **Clarification**: Arrow means resolution occurs; slash means target is not reached
 
 # Source Reference
-Chapter 1: A Review of Harmony, pages 46-47 (PDF pages 46-47)
+Chapter 1: A Review of Harmony, pages 46-47. Notation conventions for secondary dominants.
+
+# Verification Notes
+- Definition source: Synthesized from notation guide pp. 46-47
+- Confidence rationale: Medium -- concept is applied throughout but defined primarily through notation
+- Re-extraction notes: Re-extracted from v2 card; preserved arrow-vs-slash distinction

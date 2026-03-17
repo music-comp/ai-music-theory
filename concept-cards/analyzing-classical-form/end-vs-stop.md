@@ -1,46 +1,82 @@
 ---
 concept: End vs. Stop
-category: theory
-pdf_page: 110
-chapter_number: 3
-unit: null
-authors: "William E. Caplin"
+slug: end-vs-stop
+category: formal-functions
+subcategory: analytical-principles
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "The Period"
+chapter_number: 3
+pdf_page: 95
+section: "End vs. Stop"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - basic-cadence-types
+extends: []
+related:
+  - elision
+  - annotating-cadences
+contrasts_with: []
+answers_questions:
+  - "What is the difference between ending and stopping?"
+  - "Must a cadence involve a rhythmic stop?"
 ---
 
-# End vs. Stop
+# Quick Definition
+End (formal) and stop (rhythmic) are entirely different phenomena. All cadences represent the formal end of processes within a theme, but stopping of musical motion is NOT an essential component of cadence. A cadence may occur without a rhythmic stop, and music may stop at places that are not cadences.
 
-When analyzing cadences, it is essential to distinguish between two distinct notions: **end** and **stop**.
+# Core Definition
+All cadences represent the formal end of fundamental harmonic and melodic processes within a theme. Many cadences also bring the musical motion to a stop, with silence immediately following. But the stopping of musical motion is not an essential component of cadence: a cadence may occur even when the motion continues into the next formal unit. Likewise, the music may stop even at places that are not cadences. In short, rhythmic stop and formal end are entirely different musical phenomena; they often operate together, but they are conceptually (and perceptually) distinct (p. 110).
 
-## Definitions
+# Prerequisites
+- **Basic cadence types** — Must understand cadences to appreciate the end-vs-stop distinction
 
-### End (Formal)
-All cadences represent the formal **end** of fundamental harmonic and melodic processes within a theme. "Ending" is about structural closure.
+# Key Properties
+1. End = formal closure of harmonic/melodic processes (structural)
+2. Stop = cessation of rhythmic activity (surface)
+3. Cadences always represent formal ends
+4. Stopping is NOT required for a cadence
+5. Stopping may occur at non-cadential points
+6. The two often coincide but are conceptually distinct
 
-### Stop (Rhythmic)
-Many cadences also bring the musical motion to a **stop**, with silence (notated as rests) immediately following the cadential material. "Stopping" is about cessation of rhythmic activity.
+# Construction / Recognition
+## To Apply:
+1. Identify cadences based on harmonic and formal criteria, NOT rhythmic cessation
+2. Do not assume rhythmic pauses indicate cadences
+3. Do not assume cadences must involve stops
 
-## Key Distinction
+# Context & Application
+This distinction is important for analyzing passages with continuous rhythmic flow through cadential arrivals (e.g., Ex. 3.16 where half-cadential closure occurs without rhythmic cessation). It also prevents false cadence identification at rhythmic breaks that lack harmonic support.
 
-**Stopping is NOT an essential component of cadence.**
+# Examples
+**Example 1** (p. 109, Ex. 3.16): Haydn, H. 30, iii -- HC closure with no cessation of rhythmic activity.
 
-A cadence may occur even when:
-- The motion continues into the next formal unit
-- There is no rhythmic pause
-- The accompaniment persists without interruption
+**Example 2** (p. 98, Ex. 3.2, m. 3): Rhythmic break that is NOT a cadence.
 
-Conversely, music may stop at places that are NOT cadences:
-- Rhythmic breaks in the middle of phrases
-- Pauses that do not coincide with cadential arrivals
+# Relationships
+## Builds Upon
+- **Basic cadence types** — The distinction applies to cadence identification
+## Related
+- **Elision** — Related to continuity through formal boundaries
+- **Annotating cadences** — Helps determine where cadences actually occur
+## Contrasts With
+- No direct contrasts
 
-## Practical Implications
+# Common Errors
+- **Error**: Identifying a cadence wherever the music stops
+  **Correction**: Cadences are identified by harmonic criteria, not rhythmic cessation
 
-When analyzing:
-- Do not assume that rhythmic pauses indicate cadences
-- Do not assume that cadences must involve rhythmic stops
-- Identify cadences based on harmonic and formal criteria, not rhythmic cessation
+# Common Confusions
+- **Confusion**: Thinking a cadence must involve silence or rests
+  **Clarification**: Cadences can occur in the midst of continuous musical activity
 
-## Summary
+# Source Reference
+Chapter 3: The Period, page 110. "End vs. Stop" box.
 
-**Rhythmic stop** and **formal end** are entirely different musical phenomena. They often operate together, but they are conceptually (and perceptually) distinct.
+# Verification Notes
+- Definition source: Direct from p. 110
+- Confidence rationale: Explicitly defined in dedicated text box
+- Re-extraction notes: Re-extracted from v2 card; preserved both directions of the distinction

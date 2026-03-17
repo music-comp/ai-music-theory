@@ -1,50 +1,59 @@
 ---
 concept: "Loose Organization"
+slug: loose-organization
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites: []
+extends: []
+related:
+  - tight-knit-organization
+contrasts_with:
+  - tight-knit-organization
+answers_questions:
+  - "What constitutes loose organization?"
+  - "Where does loose organization typically appear?"
 ---
 
-## Definition
+# Quick Definition
+Loose organization is characterized by nonconventional thematic structures, harmonic-tonal instability (modulation, chromaticism), asymmetrical grouping, phrase-structural extension and expansion, form-functional redundancy, and diversity of melodic-motivic material.
 
-Loose organization is a formal organization characterized by nonconventional thematic structures, harmonic-tonal instability, asymmetrical grouping structure, phrase-structural extension and expansion, form-functional redundancy, and diversity of melodic-motivic material.
+# Core Definition
+A formal organization characterized by nonconventional thematic structures, harmonic-tonal instability (modulation, chromaticism), an asymmetrical grouping structure, phrase-structural extension and expansion, form-functional redundancy, and a diversity of melodic-motivic material (Caplin, Glossary, p. 725).
 
-## Characteristics
+# Prerequisites
+(None)
 
-| Feature | Loose Expression |
-|---------|-----------------|
-| Thematic structure | Nonconventional |
-| Harmony/Tonality | Unstable, modulatory, chromatic |
-| Grouping | Asymmetrical |
-| Phrase structure | Extended, expanded |
-| Function | Redundant (multiple cadential attempts) |
-| Motivic content | Diverse, varied |
+# Key Properties
+1. Nonconventional thematic structures
+2. Harmonic-tonal instability (modulation, chromaticism)
+3. Asymmetrical grouping
+4. Phrase-structural extension and expansion
+5. Form-functional redundancy (multiple cadential attempts)
+6. Diversity of melodic-motivic material
 
-## Contrast with Tight-Knit
+# Context & Application
+Loose organization appears in subordinate themes, transitions, development sections, and codas -- sections that require formal destabilization, tonal conflict, or expansion.
 
-| Tight-Knit | Loose |
-|------------|-------|
-| Conventional themes | Nonconventional |
-| Stable harmony | Unstable harmony |
-| Symmetrical groups | Asymmetrical groups |
-| Efficient functions | Redundant functions |
-| Unified motives | Diverse motives |
+# Relationships
+## Related
+- **Tight-knit organization** -- The contrasting formal quality
+## Contrasts With
+- **Tight-knit organization** -- Conventional, stable, symmetrical, efficient, unified
 
-## Where Loose Organization Appears
+# Source Reference
+Glossary of Terms, page 725.
 
-- **Subordinate themes**: Loosening to emphasize subordinate key
-- **Transitions**: Destabilizing home key
-- **Development sections**: Maximum loosening
-- **Codas**: Various loosening devices
-
-## Function
-
-Loose organization:
-- Creates contrast with tight-knit main themes
-- Allows for expansion and development
-- Provides formal variety
-- Emphasizes important structural moments
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved from old card; added v3.1 fields

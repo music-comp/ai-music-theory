@@ -1,47 +1,69 @@
 ---
-concept: "Transition and Subordinate Theme Functions in Minuet"
+concept: "Transition and Subordinate-Theme Functions in Minuet"
+slug: transition-function-minuet
+category: minuet-trio
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Minuet/Trio Form"
 chapter_number: 18
 pdf_page: 637
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Minuet/Trio Form"
+section: "Transition, Subordinate-theme Functions"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - minuet-exposition-a-section
+extends: []
+related:
+  - transition-subordinate-fusion
+contrasts_with: []
+answers_questions:
+  - "How are transition and subordinate-theme functions expressed in a minuet?"
+  - "Why is fusion of these functions common in minuet form?"
 ---
 
-## Subordinate-Theme Function
+# Quick Definition
+In a modulating minuet A section, subordinate-theme function is always expressed at least by cadential confirmation of the subordinate key. Transition function emerges if modulation occurs via harmonic pivot. The two functions are frequently fused, more often than in sonata form.
 
-In a modulating A section, subordinate-theme function is always expressed at least minimally by **cadential confirmation of the subordinate key**.
+# Core Definition
+Subordinate-theme function in a modulating A section is always expressed, at least minimally, by a cadential confirmation of the subordinate key. Transition function also emerges if the modulation occurs by means of a harmonic pivot within a phrase. Frequently, the modulation and cadential articulation occur in the same phrase, creating transition/subordinate-theme fusion. At other times, these functions may occupy distinct groups (Caplin, p. 637).
 
-## Transition Function
+# Prerequisites
+- **Minuet exposition (A section)** -- The section where these functions appear
 
-Transition function emerges if modulation occurs by means of a **harmonic pivot within a phrase**.
-- If new phrase begins immediately in subordinate key (direct modulation): no transition sense
+# Key Properties
+1. Subordinate-theme function: always at least cadential confirmation of subordinate key
+2. Transition function: emerges with harmonic pivot modulation
+3. Direct modulation (new phrase begins in new key): no transition sense
+4. Fusion of both functions in one phrase is common
+5. More regular in minuet form than in sonata form
+6. Occasionally, multiple subordinate themes may appear within A section
 
-## Degrees of Expression
+# Construction / Recognition
+## To Identify:
+1. Look for cadential confirmation of the subordinate key (subordinate-theme function)
+2. Check whether modulation involves a harmonic pivot (transition function)
+3. Determine if both functions occur in the same phrase (fusion)
+4. Note loosening devices accompanying the modulation
 
-### Minimal Expression
-- Modulation and cadential articulation occur in same phrase
-- Creates **transition/subordinate-theme fusion**
-- Difficult to find decisive ending for transition or beginning for subordinate theme
+# Context & Application
+The fusion of transition and subordinate-theme functions is especially characteristic of the minuet, reflecting the smaller scale of the form compared to sonata.
 
-### More Palpable Expression
-- Change of key accompanied by loosening devices typical of these functions
-- Harmonic sequence, fragmentation, asymmetry
+# Examples
+**Example 1** (p. 637): Frequently the modulation and cadential articulation occur in the same phrase, creating transition/subordinate-theme fusion.
 
-### Distinct Groups
-- Transition and subordinate theme may occupy their own distinct groups
-- Each closes with its own cadence or articulation
+# Relationships
+## Builds Upon
+- **Minuet exposition (A section)** -- The formal context
+## Related
+- **Transition/subordinate-theme fusion** -- The same technique applied in slow-movement sonatas
 
-### Multiple Subordinate Themes
-Occasionally:
-- PAC in subordinate key followed by second thematic unit
-- Both residing in subordinate key, confirmed by another cadence
-- Produces multiple subordinate themes within the A section
+# Source Reference
+Chapter 18: Minuet/Trio Form, page 637.
 
-## Fusion is Common
-
-The fusion of transition and subordinate-theme functions:
-- Found more regularly in minuet form than in sonata form
-- Allows traversing both functions more rapidly
-- Appropriate to the smaller scale of the minuet
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clearly articulated with degrees of expression
+- Re-extraction notes: Preserved degrees of expression from old card; added v3.1 fields

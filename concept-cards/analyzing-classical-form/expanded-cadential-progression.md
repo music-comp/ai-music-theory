@@ -1,40 +1,89 @@
 ---
 concept: Expanded Cadential Progression
-category: theory
-pdf_page: 82
-chapter_number: 2
-unit: null
-authors: "William E. Caplin"
+slug: expanded-cadential-progression
+category: harmony
+subcategory: cadential-progressions
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "The Sentence"
+chapter_number: 2
+pdf_page: 55
+section: "Continuation => Cadential"
+extraction_confidence: high
+aliases:
+  - "ECP"
+prerequisites:
+  - cadential-progression
+  - continuation-phrase
+extends:
+  - cadential-progression
+related:
+  - continuation-becomes-cadential
+  - cadential-function
+contrasts_with: []
+answers_questions:
+  - "What is an expanded cadential progression?"
+  - "How is the ECP notated?"
+  - "In which formal contexts does the ECP appear?"
 ---
 
-# Expanded Cadential Progression (ECP)
+# Quick Definition
+A single cadential progression stretched out to support an entire 4-m. phrase (beginning at m. 5 rather than the typical m. 7). Notated with the abbreviation "ECP" rather than an overly long horizontal bracket. Creates more emphatic cadential function than a standard 2-m. cadential idea.
 
-An **expanded cadential progression** (ECP) is a single cadential progression that is stretched out to support an entire 4-measure phrase, rather than the typical 2-measure cadential idea.
+# Core Definition
+Cadential function acquires greater status when a single cadential progression begins in m. 5 of the theme and is stretched out to support the entire 4-m. phrase. This expanded cadential progression (ECP) brings a more emphatic expression of cadential function to the phrase than is usually the case (as when the cadential progression first arises in m. 7) (p. 83). Even though cadential function is present from the start of the phrase, characteristics of continuation function, such as fragmentation and harmonic acceleration, are usually found as well (p. 83).
 
-## Definition
+# Prerequisites
+- **Cadential progression** — The ECP is an extended cadential progression
+- **Continuation phrase** — The ECP appears within the continuation phrase
 
-When a cadential progression begins in measure 5 of a theme (rather than measure 7) and supports the entire continuation phrase, it creates an expanded cadential progression.
+# Key Properties
+1. Single cadential progression spanning 4 measures (m. 5 through m. 8)
+2. More emphatic cadential function than standard 2-m. cadential idea
+3. Continuation characteristics (fragmentation, acceleration) usually still present
+4. Notation: "ECP" abbreviation at lower right of initial harmony (replaces long bracket)
+5. Triggers cont.=>cad. retrospective reinterpretation
 
-## Effect on Formal Function
+# Construction / Recognition
+## To Identify:
+1. Check if the cadential progression begins at m. 5 (not m. 7)
+2. Verify it spans the entire continuation phrase (4 measures)
+3. Label with "ECP" after the initial harmony
+4. Note any continuation characteristics present alongside
 
-The ECP brings a more emphatic expression of **cadential function** to the phrase than is usually the case. When supported by an ECP, the phrase projects strong cadential function alongside continuational characteristics.
+# Context & Application
+The ECP appears in several formal contexts: in sentences (creating cont.=>cad.), in hybrid themes (antecedent + cadential), in compound periods, and in small binaries. When the ECP is present, it is unnecessary (and clutters the analysis) to use horizontal brackets for the remaining harmonies.
 
-## Analytical Notation
+# Examples
+**Example 1** (p. 84, Ex. 2.24): Haydn, Op. 42, i -- ECP from m. 5 with fragmentation and harmonic acceleration.
 
-- Use the abbreviation **ECP** placed at the lower right of the initial harmony of the progression
-- Do NOT use horizontal brackets for the rest of the harmonies
-- This avoids an overly long bracket that would clutter the analysis
+**Example 2** (p. 85, Ex. 2.25): Mozart, K. 464, ii -- ECP without obvious fragmentation but with slight harmonic and surface-rhythm acceleration.
 
-## Contexts
+# Relationships
+## Builds Upon
+- **Cadential progression** — The ECP extends the standard cadential progression
+- **Continuation phrase** — The ECP appears within the continuation phrase
+## Enables
+- **Continuation becomes cadential** — The ECP triggers this reinterpretation
+## Related
+- **Cadential function** — Prominently expressed with ECP
+## Contrasts With
+- No direct contrasts
 
-The ECP appears in several formal contexts:
-- **Sentence**: Creates continuation⇒cadential phrase
-- **Hybrid (antecedent + cadential)**: Second phrase is exclusively cadential
-- **Compound period**: Often supports the final phrase of the compound consequent
-- **Small binary**: May support the final phrase of part 2
+# Common Errors
+- **Error**: Using horizontal brackets for the entire 4-m. ECP
+  **Correction**: Use "ECP" abbreviation to avoid cluttering the analysis
 
-## Key Characteristic
+# Common Confusions
+- **Confusion**: Thinking ECP eliminates continuation characteristics
+  **Clarification**: Even with ECP, fragmentation and acceleration are usually still present
 
-Even with an ECP, other continuational features (fragmentation, harmonic acceleration) are usually still present within the phrase.
+# Source Reference
+Chapter 2: The Sentence, pages 82-85. Notation convention p. 83. Examples 2.24-2.25.
+
+# Verification Notes
+- Definition source: Direct from p. 83
+- Confidence rationale: Explicitly defined with notation convention
+- Re-extraction notes: Re-extracted from v2 card; preserved multi-context applicability and notation rule

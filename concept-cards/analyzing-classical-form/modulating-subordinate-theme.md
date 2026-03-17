@@ -1,44 +1,60 @@
 ---
 concept: Modulating Subordinate Theme
-chapter: "Exposition III: Subordinate Theme"
+slug: modulating-subordinate-theme
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 420
-chapter_number: 12
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (III): Subordinate Theme"
+chapter_number: 12
+pdf_page: 420
+section: Modulating Subordinate Theme
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - subordinate-theme-basics
+extends: []
+related:
+  - loosening-devices-subordinate-theme
+contrasts_with: []
+answers_questions:
+  - "Can a subordinate theme begin in a different key from where it ends?"
+  - "Which composer favors modulating subordinate themes?"
 ---
 
-## Modulating Subordinate Theme
+# Quick Definition
+The most radical harmonic-tonal loosening occurs when a subordinate theme begins in one key and ends (with PAC) in a different key -- the goal is always the dominant region of the home key. This technique is most often in Beethoven. A modulating subordinate theme contains a degree of "transition function" and is often followed by a long closing section emphasizing root-position tonic to compensate.
 
-The most radical loosening of the subordinate theme by harmonic-tonal devices occurs when the theme **begins in a different key from that in which it ends**. This creates a **modulating subordinate theme**.
+# Core Definition
+The most radical loosening by harmonic-tonal means occurs when a subordinate theme begins in a key other than that in which it ends. In all cases, the **goal subordinate key** (where the PAC closes) is the dominant region of the home key. The starting key varies but typically favors the submediant (vi) in major and the mediant (III, relative major) in minor. This technique is seen most often in **Beethoven**. A modulating subordinate theme contains a degree of "transition function" due to its modulatory structure. Following the PAC, a long closing section emphasizing root-position tonic often compensates for the absence of that harmony within the theme's structural boundaries (Caplin, Ch. 12, pp. 420-422).
 
-### Association with Beethoven
+# Prerequisites
+- **Subordinate theme basics** -- The normal standard being departed from
 
-Examples are seen most often in Beethoven, reflecting his greater use of more far-reaching tonal relationships than Haydn and Mozart.
+# Key Properties
+1. Theme begins in one key, ends with PAC in another
+2. Goal key is always the dominant region of the home key
+3. Starting key often vi (major) or III (minor)
+4. Most often in Beethoven
+5. Contains "transition function" due to modulation
+6. Long closing section often compensates for absent root-position tonic
+7. Most radical harmonic-tonal loosening device
 
-### Tonal Structure
+# Examples
+**Example 1** (p. 421): Beethoven, Op. 31/3, ii, mm. 33-63 -- Begins in F major (vi), modulates to Eb major; long closing section (mm. 50-59) follows.
 
-**Goal key** (where theme closes with PAC): Always the dominant region of the home key
+# Relationships
+## Builds Upon
+- **Subordinate theme basics** -- Radical departure from normal procedure
+## Related
+- **Loosening devices** -- The most extreme harmonic-tonal loosening
 
-**Initial key** (where theme begins): Can vary, but usually:
-- In major-mode movements: submediant (vi) region
-- In minor-mode movements: mediant (III, relative major)
+# Source Reference
+Chapter 12: Exposition (III): Subordinate Theme, pages 420-422.
 
-The initial key is established by its dominant at the end of the transition.
-
-### Transition Function Within Subordinate Theme
-
-The use of a modulating subordinate theme makes sense when:
-- Transition has little or no harmonic activity
-- A certain sense of "transition function" resides within the subordinate theme
-
-### Compensation
-
-Following the PAC, a **long closing section** emphasizing root-position tonic often compensates for the complete absence of that harmony within the structural boundaries of the modulating subordinate theme.
-
-### Related Concepts
-- [[subordinate-theme-basics]]
-- [[loosening-devices-subordinate-theme]]
-- [[transition-basics]]
-- [[beethoven-style]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Explicit description with Beethoven association
+- Re-extraction notes: Upgraded from old card; added compensation principle, v3.1 template

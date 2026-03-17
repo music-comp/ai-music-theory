@@ -1,51 +1,57 @@
 ---
 concept: "Dramatic Element in Rondo Forms"
+slug: dramatic-element-rondo
+category: rondo-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Rondo Forms"
 chapter_number: 19
 pdf_page: 675
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Rondo Forms"
+section: "The 'Dramatic' Element of Rondo Forms"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - rondo-forms-overview
+extends: []
+related:
+  - returns-of-main-theme
+contrasts_with:
+  - sonata-form
+answers_questions:
+  - "Where does drama arise in a rondo?"
+  - "How does rondo drama differ from sonata drama?"
 ---
 
-## General Character
+# Quick Definition
+Unlike sonatas, rondos are not typically dramatic; they tend to be lighter and more relaxed. Drama in rondos is associated with the return of the refrain, making the retransition -- not the development or subordinate key -- the locus of dramatic effect.
 
-Unlike sonata movements, rondos are normally **not as dramatic** in emotional expression:
-- Tend to be lighter and more relaxed in character
-- Tonal conflict early in the form may be minimized or absent
+# Core Definition
+Unlike sonata movements, rondos are normally not as dramatic in emotional expression; they tend to be lighter and more relaxed. A sense of tonal conflict early in the form may either be minimized or, with an interior-theme first couplet, largely absent. To the extent that drama arises in a rondo form, it tends to be associated with the return of the refrain. The retransition provides the best opportunity for dramatic effect (Caplin, p. 675).
 
-## Where Drama Arises
+# Prerequisites
+- **Rondo forms overview** -- General rondo context
 
-To the extent that drama arises in rondo form, it tends to be associated with the **return of the refrain**:
-- How the return is set up in the retransition
-- The moment of arrival back at the main theme
-- Standing on dominant creates anticipation
+# Key Properties
+1. Rondos lighter and more relaxed than sonatas
+2. Tonal conflict minimized or absent
+3. Drama associated with returns of the refrain
+4. Retransition is the locus of dramatic effect
+5. Retransition longer and more elaborate than in sonata
+6. Motives anticipating the refrain's basic idea heighten expectations
 
-## Dramatic Retransition
+# Relationships
+## Related
+- **Returns of main theme** -- The events around which drama centers
+## Contrasts With
+- **Sonata form** -- Drama centers on tonal conflict and development
 
-The retransition provides the best opportunity for dramatic effect:
-- Usually longer and more elaborate than in sonata exposition
-- Motives anticipating the refrain's basic idea often included
-- Heightens expectations for eventual return
-- May include:
-  - Systematic acceleration of rhythmic values
-  - Dynamic climax followed by deceleration
-  - Standing on dominant building suspense
+# Source Reference
+Chapter 19: Rondo Forms, page 675.
 
-## Example: Beethoven, "Pathetique" Sonata, Op. 13, iii
-
-The standing on the dominant in the retransition:
-- Becomes the most dramatic event of the central couplet
-- Features running sixteenth notes bringing rhythmic climax
-- Dynamic climax at m. 111
-- Deceleration to triplets preparing main theme's eighth-note rhythms
-- Raises strong expectations for refrain's return
-
-## Contrast with Sonata
-
-| Sonata | Rondo |
-|--------|-------|
-| Drama in tonal conflict | Drama in returns |
-| Subordinate key emphasized | Subordinate key tempered |
-| Development is climactic | Retransition is climactic |
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear aesthetic distinction from sonata
+- Re-extraction notes: Preserved contrast table from old card; added v3.1 fields

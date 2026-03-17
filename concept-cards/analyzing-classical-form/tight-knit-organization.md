@@ -1,49 +1,58 @@
 ---
 concept: "Tight-Knit Organization"
+slug: tight-knit-organization
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites: []
+extends: []
+related:
+  - loose-organization
+contrasts_with:
+  - loose-organization
+answers_questions:
+  - "What constitutes tight-knit organization?"
+  - "Where does tight-knit organization typically appear?"
 ---
 
-## Definition
+# Quick Definition
+Tight-knit organization is characterized by conventional theme types, harmonic-tonal stability, symmetrical grouping structure, form-functional efficiency, and unity of melodic-motivic material. It is the norm for main themes, refrains, and ritornello themes.
 
-Tight-knit organization is a formal organization characterized by conventional theme types, harmonic-tonal stability, symmetrical grouping structure, form-functional efficiency, and unity of melodic-motivic material.
+# Core Definition
+A formal organization characterized by conventional theme types, harmonic-tonal stability, a symmetrical grouping structure, form-functional efficiency, and unity of melodic-motivic material (Caplin, Glossary, p. 725).
 
-## Characteristics
+# Prerequisites
+(None)
 
-| Feature | Tight-Knit Expression |
-|---------|----------------------|
-| Thematic structure | Conventional (sentence, period, hybrid) |
-| Harmony/Tonality | Stable, diatonic, key-confirming |
-| Grouping | Symmetrical (2+2, 4+4, 8+8) |
-| Function | Efficient (no redundancy) |
-| Motivic content | Unified, consistent |
+# Key Properties
+1. Conventional thematic structures (sentence, period, hybrid)
+2. Harmonic-tonal stability (diatonic, key-confirming)
+3. Symmetrical grouping (2+2, 4+4, 8+8)
+4. Form-functional efficiency (no redundancy)
+5. Unified melodic-motivic material
 
-## Contrast with Loose
+# Context & Application
+Tight-knit organization establishes a norm against which loosening is measured. It appears in main themes, rondo refrains, opening ritornello themes, and variation themes.
 
-| Tight-Knit | Loose |
-|------------|-------|
-| Conventional themes | Nonconventional |
-| Stable harmony | Unstable harmony |
-| Symmetrical groups | Asymmetrical groups |
-| Efficient functions | Redundant functions |
-| Unified motives | Diverse motives |
+# Relationships
+## Related
+- **Loose organization** -- The contrasting formal quality
+## Contrasts With
+- **Loose organization** -- Nonconventional, unstable, asymmetrical, redundant, diverse
 
-## Where Tight-Knit Organization Appears
+# Source Reference
+Glossary of Terms, page 725.
 
-- **Main themes**: Establish the standard of tight-knit organization
-- **Refrains**: In rondo forms
-- **Opening ritornello themes**: In concerto
-- **Theme for variations**: Sets the formal model
-
-## Function
-
-Tight-knit organization:
-- Establishes clear thematic identity
-- Creates a norm against which loosening is measured
-- Provides stability at the beginning of movements
-- Sets expectations for the form
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved comparison table from old card; added v3.1 fields

@@ -1,53 +1,52 @@
 ---
 concept: "Progressive Dynamic"
+slug: progressive-dynamic
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites: []
+extends: []
+related:
+  - recessive-dynamic
+  - dynamic-curve
+contrasts_with:
+  - recessive-dynamic
+answers_questions:
+  - "What is a progressive dynamic?"
 ---
 
-## Definition
+# Quick Definition
+A progressive dynamic is a systematic buildup of tension and excitement through increasing intensity, texture, and rhythmic activity.
 
-A progressive dynamic is a systematic buildup of tension and excitement by various musical means, including intensity, texture, and rhythmic activity.
+# Core Definition
+A systematic buildup of tension and excitement by various musical means (including intensity, texture, rhythmic activity; Caplin, Glossary, p. 725).
 
-## Characteristics
+# Key Properties
+1. Crescendo, increasing volume
+2. Thickening texture
+3. Accelerating rhythmic activity
+4. Characteristic of continuation phrases, development sections, subordinate themes
 
-| Parameter | Progressive Expression |
-|-----------|----------------------|
-| Dynamics | Crescendo, increasing volume |
-| Texture | Thickening, adding voices |
-| Rhythm | Accelerating activity, shorter values |
-| Register | Often expanding (higher highs, lower lows) |
-| Harmonic rhythm | Often accelerating |
+# Relationships
+## Related
+- **Recessive dynamic** -- The opposite process
+- **Dynamic curve** -- Combined progressive and recessive dynamics
+## Contrasts With
+- **Recessive dynamic** -- Systematic release of tension
 
-## Where It Occurs
+# Source Reference
+Glossary of Terms, page 725.
 
-### Continuation Phrases
-- Building from presentation toward cadence
-- Characteristic of "middle" function
-
-### Development Sections
-- Building toward climax and retransition
-- Creating maximum intensity
-
-### Subordinate Themes
-- Building toward cadential confirmation
-- Especially in expanded cadential progressions
-
-## Relation to Form Function
-
-| Function | Typical Dynamic |
-|----------|----------------|
-| Beginning (presentation) | Neutral/moderate |
-| Middle (continuation) | Progressive |
-| End (cadential) | Peak, then resolution |
-
-## Contrast with Recessive
-
-- **Progressive**: Builds up
-- **Recessive**: Winds down
-
-Both together create the **dynamic curve** of a passage or movement.
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved from old card; added v3.1 fields

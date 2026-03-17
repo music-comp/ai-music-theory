@@ -1,53 +1,91 @@
 ---
 concept: "Sonata-Rondo"
+slug: sonata-rondo
+category: rondo-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Rondo Forms"
 chapter_number: 19
 pdf_page: 666
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Rondo Forms"
+section: "Sonata-rondo"
+extraction_confidence: high
+aliases:
+  - "ABACABA"
+  - "sonata rondo form"
+prerequisites:
+  - rondo-forms-overview
+  - sonata-form
+  - refrain
+  - couplet
+extends:
+  - rondo-forms-overview
+  - sonata-form
+related:
+  - five-part-rondo
+contrasts_with:
+  - five-part-rondo
+  - sonata-form
+answers_questions:
+  - "What is sonata-rondo form?"
+  - "How does it combine rondo and sonata elements?"
+  - "Why is the coda required in sonata-rondo?"
 ---
 
-## Definition
+# Quick Definition
+The sonata-rondo (ABACABA) combines rondo features (four refrains alternating with three couplets) with sonata features (exposition, possible development, recapitulation). It is perhaps the most complex of classical forms and is used almost exclusively for fast finales. The coda is required because it includes the final return of the main theme.
 
-The sonata-rondo (ABACABA) combines features of the five-part rondo (with regular alternation of refrains and couplets) and the sonata (with tripartite organization of exposition, development, and recapitulation). It is perhaps the most complex of the classical forms.
+# Core Definition
+The sonata-rondo combines features of the five-part rondo (with regular alternation of refrains and couplets) and the sonata (with tripartite organization of exposition, development, and recapitulation). The initial refrain and first couplet constitute a complete sonata exposition (never repeated). The third refrain and couplet constitute a complete recapitulation. The coda is a required element because it includes the final refrain. When couplet 2 is an interior theme rather than development, the form is more rondo-like than sonata-like (Caplin, pp. 666-667).
 
-## Structure
+# Prerequisites
+- **Rondo forms overview** -- General rondo principles
+- **Sonata form** -- The sonata elements within the form
+- **Refrain** -- The recurring main theme
+- **Couplet** -- The contrasting sections
 
-| Section | Rondo Term | Formal Function | Tonal Region |
-|---------|------------|-----------------|--------------|
-| 1 | Refrain 1 (A) | Exposition of main theme | I |
-| 2 | Couplet 1 (B) | Exposition of subordinate-theme complex | V |
-| 3 | Refrain 2 (A) | First return of main theme | I |
-| 4 | Couplet 2 (C) | Development OR Interior theme | various or IV, vi, minore |
-| 5 | Refrain 3 (A) | Recapitulation of main theme | I |
-| 6 | Couplet 3 (B) | Recapitulation of subordinate-theme complex | I |
-| 7 | Refrain 4 (A) | Coda (including final return of main theme) | I |
+# Key Properties
+1. Seven sections: four refrains + three couplets
+2. Refrain 1 + couplet 1 = sonata exposition (unrepeated)
+3. Refrain 3 + couplet 3 = sonata recapitulation
+4. Couplet 2 = development OR interior theme
+5. Coda is REQUIRED (includes final refrain)
+6. Almost exclusively for fast finales; majority by Mozart and Beethoven
+7. Exposition is never repeated
 
-## Usage
+# Construction / Recognition
+## To Identify:
+1. Count four statements of the refrain with three couplets
+2. Check whether couplet 2 is a development or interior theme
+3. Confirm couplets 1 and 3 are subordinate-theme complexes
+4. Note the required coda containing the final refrain
 
-- Almost exclusively for **fast finale** movements
-- Rarely for slow movements
-- Never as opening movement
+# Context & Application
+The sonata-rondo is the most complex classical form, combining the regularity of rondo returns with the tonal drama of sonata form. Most examples are by Mozart and Beethoven; only a small number by Haydn.
 
-## Rondo Aspects
+# Examples
+**Example 1** (p. 679): Beethoven, Violin Sonata in D, Op. 12, No. 1, iii -- refrain 2 begins to repeat but shifts to minor, revealing sonata-rondo rather than sonata with exposition repeat.
 
-- Four statements of refrain alternate with three couplets
-- First and third couplets related by similar melodic-motivic material
-- Regular alternation pattern
+# Relationships
+## Builds Upon
+- **Rondo forms overview** -- General rondo principles
+- **Sonata form** -- Provides the tripartite tonal organization
+## Related
+- **Five-part rondo** -- Simpler rondo type
+## Contrasts With
+- **Five-part rondo** -- No recapitulation of subordinate-theme complex
+- **Sonata form** -- Exposition not repeated; coda required; more regular returns of main theme
 
-## Sonata Aspects
+# Common Confusions
+- **Confusion**: Assuming the exposition can be repeated as in regular sonata
+  **Clarification**: The sonata-rondo exposition is never repeated; the return of the refrain following the first couplet initiates the second refrain, not a repeated exposition
 
-- Initial refrain + couplet = complete sonata exposition (but not repeated)
-- Third refrain + couplet = complete recapitulation
-- Second couplet may be organized as a development
+# Source Reference
+Chapter 19: Rondo Forms, pages 666-667.
 
-## Key Distinction
-
-When couplet 2 is organized as an interior theme rather than development:
-- The overall form is considerably **more like a rondo than a sonata**
-
-## Required Coda
-
-Unlike regular sonata, the coda is a **required element** because it includes the final return of the main theme.
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Core formal type with detailed structural table
+- Re-extraction notes: Preserved structure table from old card; added v3.1 fields

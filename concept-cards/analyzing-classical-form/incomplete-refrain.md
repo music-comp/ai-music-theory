@@ -1,48 +1,61 @@
 ---
 concept: "Incomplete Refrain"
+slug: incomplete-refrain
+category: rondo-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Rondo Forms"
 chapter_number: 19
 pdf_page: 677
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Rondo Forms"
+section: "Returns of the Main Theme"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - returns-of-main-theme
+extends:
+  - returns-of-main-theme
+related:
+  - abridged-refrain
+contrasts_with:
+  - abridged-refrain
+answers_questions:
+  - "What is an incomplete refrain?"
+  - "How does harmonic openness affect the rondo form?"
 ---
 
-## Definition
+# Quick Definition
+An incomplete refrain lacks a home-key authentic cadence or concludes with a cadence in another tonal region, leaving the form harmonically open and blurring the boundary between refrain and the following couplet.
 
-An incomplete refrain is a restatement of a rondo refrain that lacks a home-key authentic cadence or concludes with a cadence in some other tonal region, leaving the form harmonically open.
+# Core Definition
+Less frequently, the refrain is shortened to the extent that it lacks cadential closure or concludes with a cadence in some other tonal region. Both situations result in an incomplete refrain (Caplin, p. 677).
 
-## Characteristics
+# Prerequisites
+- **Returns of main theme** -- The general concept of refrain returns
 
-1. **Lacks cadential closure**: No home-key PAC
-2. **May modulate**: Concludes in another tonal region
-3. **Creates expectation**: The openness demands continuation
+# Key Properties
+1. Lacks home-key PAC
+2. May conclude in another tonal region
+3. Creates harmonic openness demanding continuation
+4. Blurs boundary between refrain and couplet
+5. Increases dramatic tension
 
-## Examples
+# Examples
+**Example 1** (p. 677): Haydn, Piano Sonata in E-flat, H. 49, iii -- refrain 2 consists only of modulating A section; cadence reinterpreted as HC when minore couplet begins.
+**Example 2** (p. 678): Beethoven, Symphony No. 3 ("Eroica"), ii -- refrain 2 moves to subdominant and cadences there; couplet 2 elides with refrain's end.
 
-### Haydn, Piano Sonata in E-flat, H. 49, iii
-- Refrain 2 consists only of modulating A section
-- Final cadence initially heard as authentic in new key (B-flat)
-- Reinterpreted as HC in home key when minore couplet begins
+# Relationships
+## Builds Upon
+- **Returns of main theme** -- One type of return
+## Contrasts With
+- **Abridged refrain** -- Shortened but formally complete with PAC
 
-### Beethoven, Symphony No. 3 ("Eroica"), Op. 55, ii
-- Refrain 2 moves toward subdominant region at m. 111
-- Cadences there at m. 114
-- Beginning of couplet 2 (fugal passage) elides with end of refrain
+# Source Reference
+Chapter 19: Rondo Forms, pages 677-678.
 
-## Formal Effect
-
-The incomplete refrain:
-- Blurs boundary between refrain and couplet
-- Creates stronger continuity through the form
-- Increases dramatic tension
-- Requires the following couplet to provide resolution eventually
-
-## Distinction from Abridged Refrain
-
-| Incomplete Refrain | Abridged Refrain |
-|-------------------|------------------|
-| Lacks proper closure | Achieves closure |
-| May end in wrong key | Ends in home key |
-| Harmonically open | Harmonically closed |
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear definition with examples
+- Re-extraction notes: Preserved examples from old card; added v3.1 fields

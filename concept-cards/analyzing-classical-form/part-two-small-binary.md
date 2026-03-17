@@ -1,43 +1,52 @@
 ---
 concept: Part 2 - Small Binary
-category: form
-pdf_page: 261
-chapter_number: 8
-unit: null
-authors: "William E. Caplin"
+slug: part-two-small-binary
+category: small-forms
+subcategory: null
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "The Small Binary"
+chapter_number: 8
+pdf_page: 261
+section: "Part 2"
+extraction_confidence: high
+aliases:
+  - small binary second part
+prerequisites:
+  - small-binary
+extends:
+  - small-binary
+related:
+  - contrasting-middle-plus-continuation
+  - contrasting-middle-plus-cadential
+  - contrasting-middle-plus-new-consequent
+  - contrasting-middle-plus-dominant-prolongation
+  - small-binary-without-contrasting-middle
+contrasts_with: []
+answers_questions:
+  - "What are the structural options for Part 2 of a small binary?"
+  - "Does Part 2 always contain a contrasting middle?"
 ---
 
-# Part 2 - Small Binary
+# Quick Definition
+Part 2 of a small binary may or may not begin with a contrasting middle. If it does, four patterns follow the B section: continuation, cadential (ECP), new consequent, or further dominant prolongation. If it does not, Part 2 may be organized as a loose sentence or exclusively continuation/cadential material. Part 2 always ends with a PAC in the home key.
 
-**Part 2** of a small binary often begins with a contrasting middle, followed by various phrase types, but critically lacks recapitulation.
+# Core Definition
+The first analytical question for Part 2 is whether it begins with a contrasting middle. If so, four options follow: (1) B + continuation (often related to Part 1's continuation); (2) B + cadential (ECP, may have some continuational features); (3) B + "new" consequent (a 2-m. idea that is NOT the original basic idea, followed by contrasting idea and PAC; absence of original b.i. prevents recapitulation); (4) B + further dominant prolongation (V extends past B section, often resolving deceptively to VI before PAC). Without contrasting middle, Part 2 may take a loose sentential form or bring exclusively continuation/cadential material.
 
-## First Question
+# Key Properties
+1. May or may not include contrasting middle
+2. Four patterns with B section: continuation, cadential, new consequent, dominant prolongation
+3. "New consequent" uses a NEW idea (not original b.i.), preventing recapitulation
+4. Without B section: loose sentence or continuation throughout
+5. Always ends with PAC in home key
 
-When analyzing Part 2, first determine:
-- Does it begin with a **contrasting middle** (B section)?
+# Source Reference
+Chapter 8: The Small Binary, pages 261-262, 268-275.
 
-## Four Patterns (with Contrasting Middle)
-
-If Part 2 includes a contrasting middle:
-
-1. **Contrasting middle + continuation**
-2. **Contrasting middle + cadential** (supported by ECP)
-3. **Contrasting middle + new consequent** (new 2-m. idea, NOT original basic idea)
-4. **Contrasting middle + further dominant prolongation** (V extends, often → VI deceptively)
-
-## Without Contrasting Middle
-
-Part 2 may lack a clear contrasting middle:
-- May be organized as a loose **sentence**
-- May bring exclusively continuation or cadential material
-- May still suggest B-section characteristics at opening
-
-## Essential Ending
-
-Part 2 always ends with a **PAC in the home key** (like A' of small ternary).
-
-## Why No Recapitulation?
-
-The lack of recapitulation distinguishes small binary from rounded binary/small ternary. The basic idea does NOT return in its original tonic-harmonized form.
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Four patterns explicitly enumerated
+- Re-extraction notes: Preserved four patterns from old card; reformatted to v3.1; added "new consequent" clarification

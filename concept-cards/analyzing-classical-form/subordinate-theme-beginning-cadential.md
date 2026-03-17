@@ -1,41 +1,60 @@
 ---
-concept: Beginning with Cadential Function
-chapter: "Exposition III: Subordinate Theme"
+concept: Subordinate Theme Beginning with Cadential Function
+slug: subordinate-theme-beginning-cadential
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 414
-chapter_number: 12
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (III): Subordinate Theme"
+chapter_number: 12
+pdf_page: 414
+section: Beginning with Cadential Function
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - subordinate-theme-basics
+  - intrinsic-vs-contextual-function
+  - expanded-cadential-progression
+extends: []
+related:
+  - subordinate-theme-beginning-continuation
+contrasts_with: []
+answers_questions:
+  - "How can a subordinate theme begin directly with cadential function?"
 ---
 
-## Beginning with Cadential Function
+# Quick Definition
+A subordinate theme occasionally begins directly with an expanded cadential progression, projecting cadential function from its very start despite the absence of any prior material to close. The expanded initial tonic (I6) possesses harmonic stability projecting some sense of beginning, but the grouping structure resembles continuation more than a conventional initiating function.
 
-A subordinate theme occasionally begins directly with an **expanded cadential progression** and thus projects cadential function, despite lacking any previous material that the cadence would bring to a close.
+# Core Definition
+A subordinate theme occasionally begins directly with an expanded cadential progression, projecting cadential function despite lacking any previous material to close. The entire theme may be supported by a single ECP, so one functional label -- **cadential** -- applies to the whole. The expanded I6 at the ECP's start possesses harmonic stability projecting some sense of structural beginning within an overall cadential function. The grouping structure, however, resembles continuation more than a conventional initiating function (presentation or compound basic idea) (Caplin, Ch. 12, pp. 414-415).
 
-### How It Works
+# Prerequisites
+- **Subordinate theme basics** -- Context
+- **Intrinsic vs. contextual function** -- Cadential function at contextual beginning
+- **ECP** -- The progression supporting this opening
 
-The entire theme is supported by a single ECP:
-- One functional label - **cadential** - can be assigned to the whole theme
-- There is no preceding continuation or presentation to "close"
+# Key Properties
+1. Theme opens with expanded cadential progression
+2. No prior material for the cadence to "close"
+3. I6 provides some sense of stability/beginning
+4. Grouping resembles continuation more than initiation
+5. Entire theme may carry a single "cadential" label
+6. Creates pronounced formal loosening
 
-### Initiating Quality within Cadential Function
+# Relationships
+## Builds Upon
+- **Intrinsic vs. contextual function** -- Cadential function at a contextual beginning
+- **ECP** -- The harmonic structure supporting this technique
+## Related
+- **Beginning with continuation** -- Alternative omission of initiation
 
-The expanded I6 (typical start of ECP) possesses a degree of harmonic stability:
-- The opening measures project sense of **structural beginning**
-- The grouping structure more resembles **continuation** than presentation or CBI
-- But overall the theme is heard as cadential from the start
+# Source Reference
+Chapter 12: Exposition (III): Subordinate Theme, pages 414-415.
 
-### Quick Progression Through Functions
-
-The theme may move quickly through the ECP:
-- I6 (initial tonic, perhaps expanded)
-- ii6 (pre-dominant, possibly prolonged by chromatic chords)
-- Dominant (perhaps with cadential 6/4)
-- Final tonic (may be reached through deceptive cadence first)
-
-### Related Concepts
-- [[expanded-cadential-progression]]
-- [[cadential-function]]
-- [[subordinate-theme-omission-initiation]]
-- [[i6]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Specific technique with analytical clarification
+- Re-extraction notes: Upgraded from old card; added I6 detail, v3.1 template

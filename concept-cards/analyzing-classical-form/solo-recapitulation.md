@@ -1,51 +1,65 @@
 ---
 concept: "Solo Recapitulation"
+slug: solo-recapitulation
+category: concerto-form
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Concerto Form"
 chapter_number: 20
 pdf_page: 714
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Concerto Form"
+section: "Solo Recapitulation"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - concerto-form
+  - solo-exposition
+  - opening-ritornello
+extends:
+  - recapitulation
+related:
+  - double-exposition
+contrasts_with:
+  - recapitulation
+answers_questions:
+  - "How does the concerto recapitulation differ from a sonata recapitulation?"
+  - "How are materials from both expositions recapitulated?"
 ---
 
-## Definition
+# Quick Definition
+The solo recapitulation must "recapitulate" material from both the opening ritornello and the solo exposition in a single section. It usually begins with the ritornello main theme and reintroduces ritornello ideas eliminated from the solo exposition, especially the first subordinate theme.
 
-The solo recapitulation is the fifth section of concerto form, fulfilling the basic functions of a sonata recapitulation: projecting large-scale return and resolving the dramatic conflict of tonalities.
+# Core Definition
+The recapitulation of concerto form fulfills sonata-recapitulation functions but must also "recapitulate" elements from both the opening ritornello and the solo exposition in a single section. It usually begins with ritornello main-theme material and frequently reintroduces ideas from the opening ritornello that found no place in the solo exposition (Caplin, pp. 714-717).
 
-## Unique Challenge: Double Recapitulation
+# Prerequisites
+- **Concerto form** -- The overall form
+- **Solo exposition** -- One of the two "expositions"
+- **Opening ritornello** -- The other "exposition"
 
-Because the concerto brings two "expositions" (opening ritornello and solo exposition):
-- Elements of **both** must be "recapitulated" in a **single section**
-- The recapitulation may resemble the opening ritornello more than the solo exposition
-- More often, it is organized differently from either
+# Key Properties
+1. Must recapitulate material from both expositions
+2. Usually begins with ritornello main-theme material
+3. Alternative main theme seldom begins the recapitulation
+4. Reintroduces ritornello ideas eliminated from solo exposition
+5. First ritornello subordinate theme especially likely to return
+6. Often organized differently from either exposition
+7. Ends with cadential trill and PAC
 
-## Main Theme
+# Relationships
+## Builds Upon
+- **Recapitulation** -- General recapitulatory function
+## Related
+- **Double exposition** -- Explains why both must be recapitulated
+## Contrasts With
+- **Recapitulation** -- Sonata recapitulation only recapitulates one exposition
 
-- Usually begins with material from **opening ritornello** (creates strongest sense of return)
-- Form may be altered or left unclosed (main theme/transition fusion)
-- If solo exposition used an alternative main theme, that theme:
-  - Will seldom begin the recapitulation
-  - May appear elsewhere (start of development, after original main theme, or not at all)
+# Source Reference
+Chapter 20: Concerto Form, pages 714-717.
 
-## Transition
-
-Since solo exposition transition often differs from ritornello transition:
-- One or the other is chosen for recapitulation
-- Sometimes a completely new transition is written
-
-## Subordinate-Theme Group
-
-The group frequently incorporates material from opening ritornello that was not in solo exposition:
-- First ritornello subordinate theme (often soft, lyrical) may return here
-- May appear at beginning of subordinate-theme group
-- Or immediately after opening of first solo subordinate theme
-- Or at start of second subordinate theme
-- Will not appear late (lyrical theme unsuitable for climax building)
-
-## Goal
-
-Recapitulation must find effective way of combining:
-- Elements from the opening ritornello
-- Elements from the solo exposition
-- All in the home key
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Core section with detailed discussion
+- Re-extraction notes: Preserved from old card; added v3.1 fields

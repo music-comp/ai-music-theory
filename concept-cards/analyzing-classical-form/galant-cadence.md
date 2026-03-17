@@ -1,45 +1,48 @@
 ---
 concept: "Galant Cadence"
+slug: galant-cadence
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites: []
+extends: []
+related:
+  - characteristic-material
+contrasts_with: []
+answers_questions:
+  - "What is a galant cadence?"
 ---
 
-## Definition
+# Quick Definition
+A galant cadence is a conventionalized type of PAC (or HC) regularly used in the galant style, featuring a rapid scalar descent in the melody from scale degree 7 down to scale degree 3.
 
-A galant cadence is a conventionalized type of perfect authentic cadence (or half cadence) regularly used in the galant style, featuring a rapid scalar descent in the melody from scale degree 7 to scale degree 3.
+# Core Definition
+A conventionalized type of perfect authentic cadence (or half cadence) regularly used in the galant style, featuring a rapid scalar descent in the melody from 7 to 3 (Caplin, Glossary, p. 725).
 
-## Melodic Pattern
+# Key Properties
+1. Rapid scalar descent: 7-6-5-4-3
+2. Conventional (interchangeable between pieces)
+3. Clearly signals cadential function
+4. Associated with galant (mid-18th century) style
+5. Part of the "conventional material" of the style
 
-The melody descends rapidly through:
-```
-7 - 6 - 5 - 4 - 3
-(or 7 - 6 - 5 - 4 - 3 - 2 - 1 for PAC)
-```
+# Relationships
+## Related
+- **Characteristic material** -- The galant cadence is conventional, not characteristic
 
-## Characteristics
+# Source Reference
+Glossary of Terms, page 725.
 
-- **Rapid**: The descent occurs quickly, often in short note values
-- **Scalar**: Stepwise motion without leaps
-- **Conventional**: Part of the standard vocabulary of the galant style
-- **Cadential**: Appears specifically in cadential contexts
-
-## Style Association
-
-The term "galant" refers to:
-- Mid-18th century musical style
-- Emphasis on melody and clear phrase structure
-- Lighter texture than Baroque
-- Precursor to Classical style
-
-## Usage
-
-This cadential figure:
-- Clearly signals cadential function
-- Provides elegant melodic closure
-- Became conventional enough to be interchangeable between pieces
-- Part of the "conventional material" of the style
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved from old card; added v3.1 fields

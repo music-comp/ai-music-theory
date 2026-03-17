@@ -1,46 +1,93 @@
 ---
 concept: Continuation Function
-category: form
-pdf_page: 69
-chapter_number: 2
-unit: null
-authors: "William E. Caplin"
+slug: continuation-function
+category: formal-functions
+subcategory: phrase-functions
+tier: foundational
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "The Sentence"
+chapter_number: 2
+pdf_page: 55
+section: "Continuation Function"
+extraction_confidence: high
+aliases:
+  - "cont."
+prerequisites:
+  - sentence
+  - presentation-function
+extends: []
+related:
+  - continuation-phrase
+  - fragmentation
+  - harmonic-acceleration
+  - surface-rhythm-acceleration
+contrasts_with:
+  - presentation-function
+  - cadential-function
+answers_questions:
+  - "What is continuation function?"
+  - "What are the four compositional devices of continuation?"
 ---
 
-# Continuation Function
+# Quick Definition
+A medial formal function that destabilizes the context established by the presentation, creating the sense of "being in the middle" of thematic processes. Characterized by four independent processes: fragmentation, harmonic acceleration, increased surface rhythm, and sequential harmonies. None is a necessary condition; at least one is typically present.
 
-**Continuation function** is a medial formal function that destabilizes the formal context established by the presentation and provides greater mobility to the theme.
+# Core Definition
+It is precisely the function of continuation to destabilize the formal context established by the presentation and to provide greater mobility to the theme. With continuation function, we feel that we are "in the middle" of various melodic, harmonic, and rhythmic processes; thus continuation is a medial formal function (p. 70). Continuation function is characterized by four compositional devices: (1) phrase-structural fragmentation, (2) acceleration in harmonic change, (3) increase in surface rhythmic activity, and (4) sequential harmonies. These are distinct and independent processes; none is a necessary condition of the function (p. 70).
 
-## Temporal Meaning
+# Prerequisites
+- **Sentence** — Continuation is one of three formal functions
+- **Presentation function** — Continuation destabilizes what presentation established
 
-With continuation function, we feel that we are "in the middle" of various melodic, harmonic, and rhythmic processes. It expresses the sense of **being in the middle** of the thematic process.
+# Key Properties
+1. Medial formal function -- "being in the middle"
+2. Destabilizes the presentation's stability
+3. Four independent characteristics: fragmentation, harmonic acceleration, surface-rhythm increase, sequential harmonies
+4. None is a necessary condition; at least one is typically present
+5. Often present alongside cadential function (fused in the continuation phrase)
+6. Distinct from continuation phrase (function vs. grouping)
 
-## Four Compositional Devices
+# Construction / Recognition
+## To Identify:
+1. Check for fragmentation (shorter units than in presentation)
+2. Check for harmonic acceleration (faster rate of harmonic change)
+3. Check for increased surface rhythmic activity
+4. Check for sequential harmonies
+5. At least one characteristic should be present
 
-Continuation function is characterized by:
+# Context & Application
+Continuation function disrupts the stability of the presentation to create forward momentum. It often extends into the cadential material (fusion). The four processes work together or independently to create the medial quality.
 
-1. **Phrase-structural fragmentation** - Breaking down larger units into smaller segments
-2. **Acceleration in harmonic rhythm** - Faster rate of harmonic change
-3. **Increase in surface rhythmic activity** - Shorter durational values
-4. **Sequential harmonies** - Harmonic sequences with possible model-sequence technique
+# Examples
+**Example 1** (p. 56, Ex. 2.1): Beethoven, Op. 2, No. 1 -- all three main characteristics: fragmentation, harmonic acceleration, increased surface rhythm.
 
-These are distinct and independent processes. **None is a necessary condition** of the function, but at least one is typically present.
+# Relationships
+## Builds Upon
+- **Sentence** — One of three formal functions
+- **Presentation function** — Continuation destabilizes what presentation established
+## Enables
+- **Cadential function** — Continuation prepares the conditions for cadential closure
+## Related
+- **Fragmentation** — Key characteristic
+- **Harmonic acceleration** — Key characteristic
+## Contrasts With
+- **Presentation function** — Middle vs. beginning
+- **Cadential function** — Middle vs. ending
 
-## Destabilization
+# Common Errors
+- **Error**: Requiring all four characteristics to be present
+  **Correction**: None is necessary; at least one is typically present
 
-Continuation function destabilizes:
-- **Harmonic processes** - Moving away from pure tonic prolongation
-- **Tonal processes** - Possible modulation or chromaticism
-- **Rhythmic processes** - Disrupting established patterns
+# Common Confusions
+- **Confusion**: Thinking continuation function IS the continuation phrase
+  **Clarification**: Function and phrase are different (function may also appear in other contexts)
 
-## Relation to Presentation
+# Source Reference
+Chapter 2: The Sentence, pages 69-77.
 
-The presentation phrase establishes:
-- Fundamental melodic-motivic content
-- 2-measure unit size
-- Stable tonic prolongation
-- Clear grouping structure
-
-Continuation function then disrupts all of these established patterns to create forward momentum.
+# Verification Notes
+- Definition source: Direct from pp. 69-70
+- Confidence rationale: Explicitly defined with four characteristics listed
+- Re-extraction notes: Re-extracted from v2 card; consolidated old continuation-characteristics-summary card; preserved independence of characteristics

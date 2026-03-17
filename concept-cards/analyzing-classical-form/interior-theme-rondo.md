@@ -1,51 +1,74 @@
 ---
 concept: "Interior Theme in Rondo"
+slug: interior-theme-rondo
+category: rondo-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Rondo Forms"
 chapter_number: 19
 pdf_page: 675
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Rondo Forms"
+section: "Interior Theme"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - interior-theme
+  - couplet
+extends:
+  - interior-theme
+related:
+  - five-part-rondo
+  - sonata-rondo
+contrasts_with:
+  - subordinate-theme-complex
+answers_questions:
+  - "How are interior themes used in rondo forms?"
+  - "In which couplets do interior themes appear?"
 ---
 
-## Definition
+# Quick Definition
+Interior themes find widespread use as rondo couplets, set in minore, submediant, or subdominant. They may be built as small ternary (complete, cadentially open, or truncated), sentential structures, or nonconventional forms. A retransition normally follows.
 
-Interior themes find widespread use within rondo forms, functioning as couplets that contrast with the surrounding refrains through modal shift or contrasting tonal region.
+# Core Definition
+Interior themes find widespread use within rondo forms. The second couplet of most five-part rondos features this function, and the first couplet may also be built as an interior theme (especially in Haydn). Within a sonata-rondo, the second couplet may also be an interior theme. As in the large ternary, the interior theme is set as a minore or in the contrasting tonal regions of the submediant or subdominant (Caplin, pp. 675-676).
 
-## Where Interior Themes Appear
+# Prerequisites
+- **Interior theme** -- The formal function applied in rondo contexts
+- **Couplet** -- The rondo position occupied by interior themes
 
-| Form | Couplet 1 | Couplet 2 |
-|------|-----------|-----------|
-| Five-part rondo | May be interior theme (especially Haydn) | Usually interior theme |
-| Sonata-rondo | Always subordinate-theme complex | May be interior theme |
+# Key Properties
+1. Widespread in five-part rondo (second couplet usually; first couplet sometimes)
+2. Also found in sonata-rondo (second couplet)
+3. Set in minore, submediant (vi), or subdominant (IV)
+4. Usually modeled on small ternary (complete, cadentially open, or truncated)
+5. Sometimes sentential or completely nonconventional
+6. Normally followed by retransition (sometimes incorporated into contrasting middle)
+7. More formally diverse than in large ternary
 
-## Tonal Settings
+# Construction / Recognition
+## To Identify:
+1. Look for a couplet in minore, vi, or IV
+2. Check for small ternary organization (with possible distortions)
+3. Note whether a retransition follows or is incorporated into the form
 
-As in large ternary:
-- **Minore**: Minor mode of home key
-- **Submediant (vi)**: Related major/minor region
-- **Subdominant (IV)**: Lower fifth
+# Examples
+**Example 1** (p. 676): Haydn, Piano Sonata in G, H. 39, i -- first couplet of five-part rondo as minore interior theme built as truncated small ternary; retransition incorporated into contrasting middle.
 
-## Formal Structure
+# Relationships
+## Builds Upon
+- **Interior theme** -- The general concept applied in rondo context
+## Related
+- **Five-part rondo** -- Common location for interior themes
+- **Sonata-rondo** -- Alternative location (second couplet)
+## Contrasts With
+- **Subordinate-theme complex** -- Uses subordinate key and tonal conflict rather than modal contrast
 
-Usually modeled on small ternary (or small binary):
-- Form may be **complete**
-- Form may be **cadentially open**
-- Form may be **truncated** (A' section omitted)
+# Source Reference
+Chapter 19: Rondo Forms, pages 675-677.
 
-Sometimes based on:
-- Different theme type (sentential structure)
-- Completely **nonconventional** form
-
-## Retransition
-
-No matter how the interior theme is structured:
-- Normally followed by a retransition
-- Can be quite extensive
-- Leads music back to home key
-- Prepares return of main theme
-
-In some cases:
-- Retransition function is incorporated into the contrasting middle
-- Especially if that section is the last part of the couplet (truncated small ternary)
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clearly positioned within rondo context
+- Re-extraction notes: Preserved distribution table from old card; added v3.1 fields

@@ -1,46 +1,87 @@
 ---
 concept: Formal Functionality and Musical Time
-category: theory
-pdf_page: 69
-chapter_number: 2
-unit: null
-authors: "William E. Caplin"
+slug: formal-functionality-and-time
+category: formal-functions
+subcategory: fundamentals
+tier: foundational
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "The Sentence"
+chapter_number: 2
+pdf_page: 55
+section: "Formal Functionality and Musical Time"
+extraction_confidence: high
+aliases:
+  - "formal function"
+  - "temporal function"
+prerequisites:
+  - theme-definition
+extends: []
+related:
+  - presentation-function
+  - continuation-function
+  - cadential-function
+  - formal-type-vs-formal-function
+contrasts_with: []
+answers_questions:
+  - "What is formal function?"
+  - "How does formal function relate to time?"
 ---
 
-# Formal Functionality and Musical Time
+# Quick Definition
+Formal function relates to temporal senses of beginning, being-in-the-middle, or ending within music. Presentation = beginning/initiating; continuation = middle/medial; cadential = ending/concluding. At a lower level: basic idea = formal beginning; cadential idea = formal ending. This temporal concept is central to Caplin's theory.
 
-The concept of **formal function** is central to the theory and analysis of classical form. It relates fundamentally to general notions of **time**.
+# Core Definition
+The concept of formal function is central to the theory and analysis of classical form. Most fundamentally, formal functionality relates to some general notions of time. In many situations we can experience the sense of beginning something, of being in the middle of something, or of ending something. These general temporalities apply to passages of music. Within a theme, some portion expresses initiating; other portions suggest being in the middle; others bring the theme to a close. The specific terms applied to these portions refer to the formal functions of the theme (p. 69).
 
-## Temporal Categories
+# Prerequisites
+- **Theme definition** — Formal function operates within themes
 
-In many life situations, we experience:
-- The sense of **beginning** something
-- The sense of **being in the middle** of something
-- The sense of **ending** something
+# Key Properties
+1. Three temporal categories: beginning, middle, ending
+2. Sentence phrase functions: presentation (beginning), continuation (middle), cadential (ending)
+3. Period phrase functions: antecedent (initiating), consequent (concluding)
+4. Lower-level idea functions: basic idea (beginning), cadential idea (ending)
+5. Formal function is central to Caplin's analytical approach
+6. Distinguished from formal type (which has no predetermined temporal location)
 
-These general temporalities apply to passages of music. Within a theme:
-- Some portions express the sense of **initiating** the theme
-- Other portions suggest being in its **middle**
-- Other portions bring the theme to a **close**
+# Construction / Recognition
+## To Apply:
+1. Identify which part of the theme you are analyzing
+2. Determine its temporal quality: is it beginning, middle, or ending?
+3. Apply the appropriate functional label
 
-## Phrase Functions in the Sentence
+# Context & Application
+This concept provides the theoretical foundation for all formal analysis in the text. Every analytical decision about formal functions ultimately relates to temporal qualities of beginning, middle, and ending.
 
-The sentence contains three phrase functions corresponding to temporal categories:
+# Examples
+**Example 1** (p. 69): "Presentation function articulates a powerful sense of beginning; continuation function expresses being in the middle; cadential function creates the necessary conditions for ending."
 
-| Phrase Function | Temporal Sense |
-|-----------------|----------------|
-| Presentation | Beginning / Initiating |
-| Continuation | Middle / Medial |
-| Cadential | Ending / Concluding |
+# Relationships
+## Builds Upon
+- **Theme definition** — Formal function operates within themes
+## Enables
+- **Presentation function** — One temporal function
+- **Continuation function** — One temporal function
+- **Cadential function** — One temporal function
+## Related
+- **Formal type vs. formal function** — Type and function are distinct
+## Contrasts With
+- No direct contrasts
 
-## Idea Functions
+# Common Errors
+- **Error**: Applying formal function labels without considering temporal quality
+  **Correction**: Always consider whether the music expresses beginning, middle, or ending
 
-At a lower level in the structural hierarchy:
-- **Basic idea** - Expresses formal beginning
-- **Cadential idea** - Expresses formal ending
+# Common Confusions
+- **Confusion**: Confusing formal function with formal type
+  **Clarification**: Function = temporal role; type = structural arrangement with no predetermined temporal location
 
-## Key Insight
+# Source Reference
+Chapter 2: The Sentence, pages 57, 69. "Focus on Function" box pp. 69-70.
 
-The specific terms applied to portions of music refer to their **formal functions**. Understanding these temporal meanings helps analysts identify how each part of a theme contributes to its overall temporal unfolding.
+# Verification Notes
+- Definition source: Direct from pp. 57, 69
+- Confidence rationale: Explicitly defined as "central" to the theory
+- Re-extraction notes: Re-extracted from v2 card; preserved temporal categories and centrality emphasis

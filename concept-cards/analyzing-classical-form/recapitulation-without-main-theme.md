@@ -1,40 +1,68 @@
 ---
 concept: Recapitulation Without Main Theme Opening
-category: form
-pdf_page: 526
+slug: recapitulation-without-main-theme
+category: sonata-form
+tier: advanced
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Recapitulation"
 chapter_number: 14
-unit: null
-authors: "William E. Caplin"
+pdf_page: 526
+section: "Deletion of the Main Theme's Opening"
+extraction_confidence: high
+aliases:
+  - deleted main theme recapitulation
+prerequisites:
+  - recapitulation-section
+  - double-return
+related:
+  - reversed-recapitulation
+  - small-binary
+contrasts_with:
+  - double-return
+answers_questions:
+  - "Can a recapitulation lack the main theme's opening?"
+  - "Is it still a recapitulation without the basic idea?"
 ---
 
-# Recapitulation Without Main Theme Opening
+# Quick Definition
+A deviation where the recapitulation deletes the opening material of the main theme (and sometimes the entire transition), beginning directly with the subordinate-theme area, with main-theme ideas usually returning later.
 
-Recapitulations that delete the opening material of the main theme.
+# Core Definition
+"Some recapitulations delete the opening material of the main theme" (p. 526). "At times the transition may be eliminated as well, and the recapitulation begins directly with the subordinate-theme area." This is "deviant in the high-classical style" but "normative in midcentury works" with "roots in Baroque binary dance forms." The large-scale form seems "analogous more to the small binary than to the small ternary," raising the question of whether it is truly a "recapitulation." The practice is maintained by convention, since "one of the principal functions — to restore to the home key any material originally presented in the subordinate key — is nevertheless fulfilled."
 
-## The Deviation
+# Prerequisites
+- **Recapitulation section** — The section being deviated from
+- **Double return** — The norm being violated
 
-Some recapitulations delete the opening material of the main theme. At times the transition may be eliminated as well, with recapitulation beginning directly with subordinate-theme area.
+# Key Properties
+1. Main theme's opening material deleted from recapitulation
+2. Transition may also be eliminated
+3. Recapitulation may begin directly with subordinate theme
+4. Deviant in high-classical style; normative in midcentury
+5. Analogous to small binary rather than small ternary
+6. Main-theme ideas usually return later (in subordinate-theme area or coda)
+7. Sonata principle still fulfilled despite deletion
 
-## Historical Context
+# Construction / Recognition
+## To Identify:
+1. If the recapitulation begins with subordinate-theme material (not main-theme basic idea)
+2. Check whether main-theme ideas return later in the subordinate area or coda
+3. Note that the passage may function as a subordinate theme despite main-theme content
 
-- Deviant in high-classical style
-- Normative in midcentury works
-- Roots in Baroque binary dance forms
+# Relationships
+## Builds Upon
+- **Recapitulation section** — A significant deviation from normal procedure
+## Related
+- **Reversed recapitulation** — Often results from main-theme deletion
+## Contrasts With
+- **Double return** — The basic-idea requirement is violated
 
-## Formal Analogy
+# Source Reference
+Chapter 14: Recapitulation, pages 526-530.
 
-Large-scale form seems analogous more to small binary than small ternary:
-- Is it truly a "recapitulation" without main theme's basic idea?
-- This requirement distinguishes small ternary from small binary
-
-## Typical Compensation
-
-If main-theme opening is deleted in recapitulation, these ideas usually return later:
-- Incorporated into subordinate-theme area
-- Appear in subsequent coda
-
-## Terminological Convention
-
-Traditional theories label the section following development as "recapitulation" - this practice is maintained despite theoretical concerns, since the sonata principle is still fulfilled.
+# Verification Notes
+- Definition source: Direct from pp. 526-527
+- Confidence rationale: Clearly defined deviation with theoretical discussion
+- Re-extraction notes: Preserved small-binary analogy from old card; added v3.1 template, sonata-principle fulfillment

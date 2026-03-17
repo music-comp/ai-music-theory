@@ -1,51 +1,81 @@
 ---
 concept: Motive
-category: form
-pdf_page: 60
-chapter_number: 2
-unit: null
-authors: "William E. Caplin"
+slug: motive
+category: formal-functions
+subcategory: idea-functions
+tier: foundational
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "The Sentence"
+chapter_number: 2
+pdf_page: 55
+section: "Basic Idea"
+extraction_confidence: high
+aliases:
+  - "melodic motive"
+  - "rhythmic motive"
+prerequisites:
+  - basic-idea
+extends: []
+related:
+  - fragmentation
+  - liquidation
+contrasts_with: []
+answers_questions:
+  - "What is a motive?"
+  - "How does a motive differ from a basic idea?"
 ---
 
-# Motive
+# Quick Definition
+A small melodic-rhythmic unit within the basic idea that may become detached and developed as the theme progresses. Motives are smaller than the b.i. (typically 1 m. or less) and serve as building blocks for fragmentation, development, and liquidation.
 
-A **motive** is a small melodic-rhythmic unit contained within the basic idea, which may become detached and developed as the theme progresses.
+# Core Definition
+The basic idea usually contains various motives; these may eventually become detached from the idea and developed later in the theme (p. 58). The basic idea itself is made up of individual motives (p. 66). When a 2-m. basic idea consists of a repeated 1-m. motive, the 2-m. unit remains the basic idea, not the 1-m. motive (p. 61).
 
-## Definition
+# Prerequisites
+- **Basic idea** — Motives are constituent elements of the b.i.
 
-Motives are the constituent elements of the basic idea:
-- Small melodic-rhythmic figures
-- Distinctive, memorable patterns
-- Building blocks for further development
+# Key Properties
+1. Small melodic-rhythmic figures contained within the b.i.
+2. Smaller than the b.i. (1 m., half m., or less)
+3. May be extracted for development, fragmentation, sequencing
+4. When b.i. consists of a repeated 1-m. motive, the 2-m. unit is still the b.i.
+5. Subject to liquidation (systematic elimination in cadential function)
 
-## Relation to Basic Idea
+# Construction / Recognition
+## To Identify:
+1. Examine the b.i. for distinctive melodic-rhythmic patterns
+2. Note individual motives by letter labels (a, b, etc.)
+3. Track how motives are developed, fragmented, or liquidated in the continuation
 
-The basic idea typically contains one or more motives that:
-- Define its characteristic profile
-- Can be extracted for development
-- May be varied, fragmented, or liquidated
+# Context & Application
+Motives are the raw material for thematic development. In continuation, fragments often derive from b.i. motives. In cadential function, characteristic motives are progressively liquidated toward conventional material.
 
-## Size Distinction
+# Examples
+**Example 1** (p. 56, Ex. 2.1): Beethoven, Op. 2, No. 1 -- motive "a" (ascending arpeggio in quarter notes) and motive "b" (turn figure in triplet sixteenths).
 
-- **Basic idea**: 2 measures (the primary formal unit)
-- **Motive**: Smaller than basic idea (1 measure, half-measure, or less)
+# Relationships
+## Builds Upon
+- **Basic idea** — Motives are sub-units of the b.i.
+## Enables
+- **Fragmentation** — Fragments often isolate individual motives
+- **Liquidation** — Progressive elimination of characteristic motives
+## Contrasts With
+- No direct contrasts
 
-## When Basic Idea = Repeated Motive
+# Common Errors
+- **Error**: Treating a 1-m. motive as the basic idea when it is repeated within a 2-m. unit
+  **Correction**: The 2-m. unit remains the b.i.; the 1-m. unit is a motive
 
-When a 2-measure basic idea consists of a repeated 1-measure motive:
-- The 2-measure unit remains the basic idea
-- The 1-measure unit is the motive
-- Do not confuse the two
+# Common Confusions
+- **Confusion**: Confusing motives with fragments
+  **Clarification**: Motives are melodic-rhythmic units; fragments are grouping-structure units (shorter than the b.i.)
 
-## Role in Development
+# Source Reference
+Chapter 2: The Sentence, pages 58, 60-61, 66.
 
-Motives become important in:
-- **Continuation phrases**: May be fragmented and developed
-- **Contrasting middles**: Subject to sequential treatment
-- **Cadential material**: May undergo liquidation
-
-## Motivic Unity
-
-Themes often achieve unity through consistent use of motives across different formal sections.
+# Verification Notes
+- Definition source: Direct from pp. 58, 60-61
+- Confidence rationale: Clearly defined in relation to basic idea
+- Re-extraction notes: Re-extracted from v2 card; preserved motive-vs-b.i. distinction

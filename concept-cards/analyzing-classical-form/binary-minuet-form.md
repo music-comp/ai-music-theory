@@ -1,50 +1,71 @@
 ---
 concept: "Binary Minuet Form"
+slug: binary-minuet-form
+category: minuet-trio
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Minuet/Trio Form"
 chapter_number: 18
 pdf_page: 653
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Minuet/Trio Form"
+section: "Binary Minuet Form"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - minuet-form
+  - small-binary
+extends:
+  - small-binary
+related: []
+contrasts_with:
+  - minuet-form
+answers_questions:
+  - "What is binary minuet form?"
+  - "How does it differ from regular minuet form?"
 ---
 
-## Definition
+# Quick Definition
+Binary minuet form is a large-scale bipartite form modeled on the small binary theme type, containing two repeated parts. Unlike regular minuet form, it lacks a recapitulatory articulation -- the opening basic idea does not return within the form's normal boundaries.
 
-Binary minuet form is a large-scale bipartite form modeled on the small binary theme type. Unlike regular minuet form, it lacks a recapitulatory articulation (no return of opening basic idea in home key within normal boundaries).
+# Core Definition
+A few minuets are built along lines resembling the small binary form. This binary minuet form contains two parts, each repeated. Part 1 resembles the A section of regular minuet form, except it more frequently closes with an HC. Part 2 often contains material functioning like a contrasting middle but does not include a recapitulatory articulation. The opening material may appear again in a closing section or coda, fulfilling a compensatory function (Caplin, pp. 653-654).
 
-## Structure
+# Prerequisites
+- **Minuet form** -- The regular tripartite form from which this deviates
+- **Small binary** -- The theme type on which this form is modeled
 
-| Part | Content | Typical Ending |
-|------|---------|----------------|
-| Part 1 | Resembles minuet A section | Often HC (more frequently than in regular minuet) |
-| Part 2 | Contains contrasting-middle material | PAC in home key |
+# Key Properties
+1. Two repeated parts (bipartite)
+2. No recapitulatory return of opening basic idea within normal boundaries
+3. Part 1 often ends with HC (more frequently than in regular minuet form)
+4. Part 2 contains contrasting-middle material but no recapitulation
+5. Opening material may return in closing section or coda (compensatory function)
 
-Each part is repeated.
+# Construction / Recognition
+## To Identify:
+1. Check for bipartite structure with repeats
+2. Confirm the absence of a recapitulatory return in Part 2
+3. Look for compensatory return of opening material in closing section or coda
 
-## Key Difference from Regular Minuet Form
+# Examples
+**Example 1** (p. 654): Mozart, Serenade in D ("Haffner"), K. 250, iii -- Part 1 has early PAC plus modulation to subordinate key; Part 2 has standing on dominant, adjusted material, then opening phrase returns as coda with compensatory function.
 
-- **No recapitulation**: Part 2 does not include return of opening basic idea in home key
-- Opening material may appear in **closing section** or **coda** instead
-- This fulfills an obvious **compensatory function**
+# Relationships
+## Builds Upon
+- **Small binary** -- The theme type modeled
+## Contrasts With
+- **Minuet form** -- Regular tripartite form with recapitulation
 
-## Example: Mozart, Serenade in D ("Haffner"), K. 250, iii
+# Common Confusions
+- **Confusion**: Expecting all minuets to have three-part form
+  **Clarification**: About 10% of minuets use binary form, lacking a recapitulatory section
 
-### Part 1 (mm. 1-12)
-- 4-m. cadential phrase with early PAC (m. 4) = main-theme function
-- Continuation at m. 5 leading to dominant confirmation (subordinate key)
-- Strongly continuational passage (m. 9) directs to subordinate-key PAC (m. 12)
+# Source Reference
+Chapter 18: Minuet/Trio Form, pages 653-654.
 
-### Part 2
-- Contrasting middle: standing on dominant (until m. 24)
-- Music of mm. 5-8 returns (mm. 25-28), adjusted to remain in home key
-- Continuation (m. 29) adjusted for home key; PAC at m. 32
-- Closing section with strange rise to fifth degree (m. 36)
-- Opening phrase returns as **coda** (m. 37)
-
-## Compensatory Return
-
-The opening phrase's relocation to a final position is fitting:
-- Makes up for not having been recapitulated
-- Finds more natural location as cadential unit
-- Closes the preceding material effectively
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear definition with detailed example
+- Re-extraction notes: Preserved Mozart example from old card; added v3.1 fields

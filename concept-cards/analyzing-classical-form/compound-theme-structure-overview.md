@@ -1,52 +1,47 @@
 ---
 concept: Compound Theme Structure Overview
-category: analysis
-pdf_page: 188
-chapter_number: 6
-unit: null
-authors: "William E. Caplin"
+slug: compound-theme-structure-overview
+category: theme-types
+subcategory: compound
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Compound Themes"
+chapter_number: 6
+pdf_page: 188
+section: "The Basics"
+extraction_confidence: high
+aliases:
+  - compound theme comparison
+prerequisites:
+  - compound-themes
+extends:
+  - compound-themes
+related:
+  - compound-period
+  - compound-sentence
+contrasts_with: []
+answers_questions:
+  - "How do compound themes relate to simple themes at each structural level?"
 ---
 
-# Compound Theme Structure Overview
+# Quick Definition
+A structural comparison showing how compound themes scale up from simple themes: basic idea (2m) becomes compound basic idea (4m), presentation (4m) becomes compound presentation (8m), antecedent (4m) becomes compound antecedent (8m), and theme (8m) becomes compound theme (16m).
 
-Compound themes are 16-measure structures built from internally complex 8-measure units, providing expanded versions of sentence and period.
+# Core Definition
+The hierarchical relationship between simple and compound themes: simple basic idea (2m) -> compound basic idea (4m); simple presentation (4m) -> compound presentation (8m); simple antecedent (4m) -> compound antecedent (8m); simple theme (8m) -> compound theme (16m). Each compound unit has internally more complex structure but the same functional role as its simple counterpart. Compound period: compound antecedent (8m, weak cadence) + compound consequent (8m, PAC). Compound sentence: compound presentation (8m, no cadence) + continuation (8m, cadence).
 
-## Compound Period (16m)
+# Key Properties
+1. Each level doubles in size from simple to compound
+2. Functional roles are preserved
+3. Internal complexity increases at each level
+4. Genre association: compound sentences in symphonies/concertos
 
-**Structure**:
-- Compound antecedent (8m) → weak cadence
-- Compound consequent (8m) → PAC
+# Source Reference
+Chapter 6: Compound Themes, pages 188-192.
 
-**Internal options for compound antecedent**:
-1. Sentence (presentation + continuation)
-2. Hybrid (c.b.i. + continuation)
-3. Hybrid (antecedent + continuation)
-
-## Compound Sentence (16m)
-
-**Structure**:
-- Compound presentation (8m) → no cadence
-- Continuation (8m) → cadence
-
-**Internal structure**:
-- Compound presentation = c.b.i. (4m) + repetition (4m)
-- Continuation features fragmentation to 2m units
-
-## Key Relationships
-
-| Simple | Compound |
-|--------|----------|
-| Basic idea (2m) | Compound basic idea (4m) |
-| Presentation (4m) | Compound presentation (8m) |
-| Antecedent (4m) | Compound antecedent (8m) |
-| Theme (8m) | Compound theme (16m) |
-
-## Genre Association
-
-Compound sentences are often found in large public genres (symphonies, concertos), less often in chamber music.
-
-## Phrase Deviations
-
-Compound themes may undergo the same deviations as simple themes: extension, compression, internal expansion.
+# Verification Notes
+- Definition source: Synthesized from Caplin
+- Confidence rationale: Direct structural comparison from the text
+- Re-extraction notes: Preserved table comparison from old card; reformatted to v3.1

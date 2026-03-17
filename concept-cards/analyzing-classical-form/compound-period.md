@@ -1,48 +1,71 @@
 ---
 concept: Compound Period
-category: form
-pdf_page: 188
-chapter_number: 6
-unit: null
-authors: "William E. Caplin"
+slug: compound-period
+category: theme-types
+subcategory: compound
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Compound Themes"
+chapter_number: 6
+pdf_page: 188
+section: "Compound Period"
+extraction_confidence: high
+aliases:
+  - 16-measure period
+  - double period (avoided)
+prerequisites:
+  - period
+  - compound-antecedent
+  - compound-consequent
+extends:
+  - period
+related:
+  - compound-sentence
+  - reinterpreted-half-cadence
+contrasts_with:
+  - compound-sentence
+answers_questions:
+  - "What is a compound period?"
+  - "What three types of compound antecedent does Caplin identify?"
+  - "Why does Caplin avoid the term 'double period'?"
 ---
 
-# Compound Period
+# Quick Definition
+A 16-measure theme type built from two 8-m. thematic units fulfilling antecedent and consequent functions, with the compound antecedent closing with a weak cadence (usually HC) and the compound consequent closing with a PAC.
 
-The **compound period** is a 16-measure theme type built from two 8-measure thematic units fulfilling antecedent and consequent functions.
+# Core Definition
+The compound period's 8-m. antecedent is built as one of three simple theme types: (1) sentence (presentation + continuation), (2) hybrid c.b.i. + continuation, or (3) hybrid antecedent + continuation. It usually closes with an HC (regular or reinterpreted), rarely IAC. The compound consequent repeats the antecedent but closes with a PAC. The return of the basic idea at m. 9 signals the consequent; this return must sound fresh, so the basic idea should not return prematurely at m. 5 (which is why the compound antecedent does not normally end with a simple consequent). The consequent's final phrase often features an ECP for greater cadential emphasis.
 
-## Structure
+# Prerequisites
+- **Period** — The simple theme type being elaborated
+- **Compound antecedent** — The first 8-m. unit
+- **Compound consequent** — The second 8-m. unit
 
-- 8-measure **compound antecedent** (weak cadence, usually HC)
-- 8-measure **compound consequent** (strong cadence, PAC)
+# Key Properties
+1. 16 real measures (8 + 8)
+2. Three categories based on antecedent structure
+3. Return of basic idea at m. 9 signals consequent
+4. Basic idea must NOT return prematurely at m. 5
+5. Compound consequent often has ECP in final phrase
+6. The term "double period" is avoided
 
-## Compound Antecedent Options
+# Examples
+**Example 1** (p. 189): Beethoven, Op. 26, i, mm. 1-16 -- compound antecedent as hybrid (ant + cont) closing with HC; compound consequent closing with PAC.
 
-The compound antecedent can be built as:
-1. 8-measure **sentence** (presentation + continuation)
-2. 8-measure **hybrid** (compound basic idea + continuation)
-3. 8-measure **hybrid** (antecedent + continuation)
+# Relationships
+## Builds Upon
+- **Period** — The simple version
+## Related
+- **Reinterpreted half cadence** — More common in compound periods than simple ones
+## Contrasts With
+- **Compound sentence** — Different structural basis
 
-## Compound Consequent
+# Source Reference
+Chapter 6: Compound Themes, pages 188-190, 193-199, 205-208.
 
-The compound consequent:
-- Repeats the antecedent structure
-- Closes with a PAC instead of HC
-- Often features expanded cadential progression
-
-## Return of Basic Idea
-
-The return of the basic idea at m. 9 signals the start of the compound consequent. This return should sound "fresh" - the basic idea should NOT return prematurely at m. 5.
-
-## Cadential Distribution
-
-The compound consequent's cadential progression is often expanded relative to the antecedent, throwing greater weight onto the final PAC.
-
-## Three Main Categories
-
-Compound periods are categorized by their antecedent structure:
-- Presentation + Continuation (sentential)
-- Compound basic idea + Continuation
-- Antecedent + Continuation
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Core theme type with extensive discussion
+- Re-extraction notes: Preserved three-category framework and "fresh return" principle from old card; reformatted to v3.1

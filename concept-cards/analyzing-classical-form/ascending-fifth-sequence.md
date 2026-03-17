@@ -1,55 +1,77 @@
 ---
 concept: Ascending-Fifth Sequence
-category: theory
-source: "Analyzing Classical Form: An Approach for the Classroom"
+slug: ascending-fifth-sequence
+category: harmony
+subcategory: sequential-progressions
+tier: foundational
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "A Review of Harmony"
 chapter_number: 1
 pdf_page: 23
-unit: null
-authors: William E. Caplin
+section: "Ascending Fifth"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - sequential-progression
+extends:
+  - sequential-progression
+related:
+  - descending-fifth-sequence
+contrasts_with:
+  - descending-fifth-sequence
+answers_questions:
+  - "What is the ascending-fifth sequence and how common is it?"
 ---
 
 # Quick Definition
-An infrequently used sequential progression featuring roots ascending by fifths (or descending by fourths), moving "backwards" through the circle of fifths.
+An infrequently used sequential progression with roots ascending by fifths (I-V-II-VI), moving "backwards" through the circle of fifths. It almost always features the same harmonic pattern, breaking at VI and proceeding to IV.
 
-# Formal Definition
-The ascending-fifth sequence occurs infrequently in the classical repertory. The progression almost always features the same set of harmonies: it starts with tonic and moves "backwards" through the circle of fifths as far as the submediant. At this point, the sequential chain is broken, and the music moves to the subdominant.
+# Core Definition
+The ascending-fifth sequence occurs infrequently in the classical repertory. The progression almost always features the same set of harmonies. It starts with tonic and moves "backwards" through the circle of fifths as far as the submediant. At this point the sequential chain is broken, and the music moves to the subdominant (p. 43).
 
-# Musical/Theoretical Formulation
-Typical pattern: I - V - II - VI ... then to IV
+# Prerequisites
+- **Sequential progression** — This is one of six types
 
-Characteristics:
-- Roots ascend by fifths (or descend by fourths)
-- Moves in the opposite direction from the common descending-fifth sequence
-- Creates a sense of moving "away" from tonic
-- The sequential chain typically breaks at VI, then proceeds to IV
+# Key Properties
+1. Roots ascend by fifths (or descend by fourths)
+2. Infrequently used in classical music
+3. Almost always the same pattern: I-V-II-VI...then to IV
+4. Sequential chain breaks at VI
+5. Reverses the normal dominant-tonic gravitational direction
 
-This sequence essentially reverses the normal dominant-to-tonic direction, creating a weakening rather than strengthening of tonal direction.
+# Construction / Recognition
+## To Identify:
+1. Look for roots ascending by fifth consistently
+2. Typical pattern: I-V-II-VI, then break to IV
 
-# Musical Context/Application
-The ascending-fifth sequence:
-- Is infrequently used in classical music
-- Almost always follows the same harmonic pattern
-- Creates unusual effect of moving "backwards" through harmonic space
-- Typically breaks at VI to redirect toward subdominant
-
-Its rarity may stem from its opposition to the natural dominant-tonic gravitational pull of tonal harmony.
+# Context & Application
+Its rarity may stem from its opposition to the natural dominant-tonic pull. Almost always follows the same harmonic formula, giving composers less room for variation than other sequence types.
 
 # Examples
-Example 1.18 (p. 43) demonstrates the ascending-fifth sequential progression, showing the typical pattern I - V - II - VI leading to IV.
+**Example 1** (p. 43, Ex. 1.18): Ascending-fifth sequential progression showing I-V-II-VI leading to IV.
 
-The chapter notes this sequence "occurs infrequently in the classical repertory" and "almost always features the same set of harmonies."
+# Relationships
+## Builds Upon
+- **Sequential progression** — One of six types
+## Related
+- **Descending-fifth sequence** — Reverse direction; far more common
+## Contrasts With
+- **Descending-fifth sequence** — Ascending vs. descending root motion
 
-# Related Concepts
-- Sequential Progression
-- Descending-Fifth Sequence
-- Circle of Fifths
-- Harmonic Function
+# Common Errors
+- **Error**: Expecting variety in this sequence type
+  **Correction**: It almost always follows the same harmonic pattern
 
 # Common Confusions
-- Expecting variety in this sequence type (it almost always uses the same harmonies)
-- Not recognizing when the sequential chain breaks at VI
-- Confusing with applied dominant chains (which move by fifths but with chromatic alteration)
+- **Confusion**: Confusing with applied dominant chains that move by fifths
+  **Clarification**: Applied dominant chains involve chromatic alteration; the ascending-fifth sequence is diatonic
 
 # Source Reference
-Chapter 1: A Review of Harmony, pages 27, 43 (PDF pages 27, 43)
+Chapter 1: A Review of Harmony, pages 27, 43. Example 1.18.
+
+# Verification Notes
+- Definition source: Direct from p. 43
+- Confidence rationale: Explicitly defined as "infrequently used"
+- Re-extraction notes: Re-extracted from v2 card; no unique content to preserve

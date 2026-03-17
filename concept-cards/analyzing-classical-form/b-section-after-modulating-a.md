@@ -1,52 +1,67 @@
 ---
 concept: "B Section After Modulating A Section"
+slug: b-section-after-modulating-a
+category: minuet-trio
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Minuet/Trio Form"
 chapter_number: 18
 pdf_page: 643
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Minuet/Trio Form"
+section: "B Section Follows a Modulating A Section"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - minuet-contrasting-middle
+extends:
+  - minuet-contrasting-middle
+related:
+  - b-section-after-nonmodulating-a
+contrasts_with:
+  - b-section-after-nonmodulating-a
+answers_questions:
+  - "What does the B section do when the A section has already modulated?"
 ---
 
-## Context
+# Quick Definition
+When the A section modulates, the B section is freed from providing tonal contrast and may explore other tonal regions, return to the home key, or simply consist of a standing on the dominant. Organization tends to be loose with continuational traits.
 
-When the A section of a minuet form is modulatory (presenting main theme, transition, and subordinate-theme functions), the B section is freed from the responsibility of establishing tonal contrast.
+# Core Definition
+In cases where the exposition of a minuet is modulatory, the B section is free either to touch on other tonal regions or to return to the home key and conclude there with dominant harmony. The phrase-structural organization tends to be loose and nonconventional, with an emphasis on continuational traits. Brief tonicizations occur frequently, though cadential confirmation of a development key is uncommon. In the simplest cases, the B section consists entirely of a standing on the dominant (Caplin, pp. 643-645).
 
-## Characteristics
+# Prerequisites
+- **Minuet contrasting middle** -- The general B section in minuet form
 
-The B section may:
-- Touch on other tonal regions
-- Return quite often to the home key
-- Conclude with dominant harmony
+# Key Properties
+1. Freed from providing subordinate-key function (already accomplished in A)
+2. May explore other tonal regions with brief tonicizations
+3. Rarely confirms a development key cadentially
+4. Loose, nonconventional organization with continuational traits
+5. Simplest case: entirely a standing on the dominant
+6. May feature model-sequence technique resembling a developmental core
 
-## Phrase-Structural Organization
+# Construction / Recognition
+## To Identify:
+1. Confirm the preceding A section modulated
+2. Look for loose organization with tonal exploration
+3. Note the absence of subordinate-key establishment (already done)
+4. Check for standing on dominant at the end
 
-- Tends to be **loose and nonconventional**
-- Emphasizes **continuational traits**:
-  - Fragmentation
-  - Model-sequence technique
-  - Harmonic acceleration
+# Examples
+**Example 1** (p. 645): Mozart, Piano Sonata in A, K. 331, ii -- B section establishes 4-m. model with sequential repetition; augmented sixth prepares concluding HC.
 
-## Tonicizations
+# Relationships
+## Builds Upon
+- **Minuet contrasting middle** -- The general B section function
+## Contrasts With
+- **B section after nonmodulating A** -- Must provide subordinate-key function instead
 
-- Brief tonicizations of various regions occur frequently
-- Uncommon for a **development key** to be cadentially confirmed
-- Exploratory rather than definitive
+# Source Reference
+Chapter 18: Minuet/Trio Form, pages 643-645.
 
-## Simplest Case
-
-The B section may consist entirely of a **standing on the dominant**:
-- No tonal exploration needed
-- A section has already provided subordinate key
-- B section simply prepares the recapitulation
-
-## Model-Sequence Technique
-
-When present, model-sequence activity:
-- May bring a 4-measure model with sequential repetition down a step
-- Move toward augmented sixth to prepare concluding HC
-- Resembles a developmental core but:
-  - Relatively short
-  - Little sense of fragmentation
-  - Lacks emotional restlessness typical of sonata-form core
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear description with multiple scenarios
+- Re-extraction notes: Preserved model-sequence detail from old card; added v3.1 fields

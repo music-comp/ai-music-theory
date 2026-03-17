@@ -1,42 +1,59 @@
 ---
 concept: Main-Theme Group
-chapter: "Exposition I: Main Theme"
+slug: main-theme-group
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 320
-chapter_number: 10
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (I): Main Theme"
+chapter_number: 10
+pdf_page: 320
+section: Main-theme Group
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - main-theme-basics
+extends: []
+related:
+  - subordinate-theme-group
+contrasts_with: []
+answers_questions:
+  - "Can a sonata exposition have more than one main theme?"
+  - "What are the requirements for a main-theme group?"
 ---
 
-## Main-Theme Group
+# Quick Definition
+A sonata exposition may open with two distinct main themes forming a main-theme group. Each theme closes with a PAC in the home key. The themes usually feature different material and phrase structures, though some share material with varying degrees of alteration.
 
-A sonata exposition may begin with two distinct main themes to form a **main-theme group**.
+# Core Definition
+A sonata exposition may begin with two distinct main themes to form a **main-theme group**. Each theme closes with a PAC in the home key. Themes are usually constructed from different melodic-motivic material, each with its own phrase structure. One or both may be nonconventional. Sometimes the second theme uses material from the first, ranging from a merely varied repeat to more extensively altered phrase structure (Caplin, Ch. 10, pp. 320-322).
 
-### Requirements
+# Prerequisites
+- **Main theme basics** -- Must understand what constitutes a single main theme
 
-Each theme in the group:
-- Closes with a **PAC in the home key**
-- May be constructed from different melodic-motivic material
-- Takes on its own phrase structure
-- One (or both) may be nonconventional in form
+# Key Properties
+1. Two distinct main themes, each closing with PAC in home key
+2. Usually different melodic-motivic material
+3. Each has its own phrase structure
+4. One or both may be nonconventional
+5. Second theme may share material with the first (spectrum of possibilities)
 
-### Material Relationships
+# Examples
+**Example 1** (p. 320): Mozart, K. 543, i, mm. 26-71 -- Two themes: compound period + hybrid with invertible counterpoint.
+**Example 2** (p. 321): Beethoven, Op. 30/1, i, mm. 1-19 -- Second theme shares material but extends continuation and expands cadential idea.
 
-Themes in a group may have:
-- **Different material**: Each theme brings its own melodic-motivic content
-- **Similar material**: Second theme uses material from first theme
-  - Ranging from merely varied repeat of first theme
-  - To more extensively altered phrase structure
+# Relationships
+## Builds Upon
+- **Main theme basics** -- Extension of single main theme concept
+## Related
+- **Subordinate-theme group** -- Analogous concept for subordinate themes
 
-### Postcadential Elements
+# Source Reference
+Chapter 10: Exposition (I): Main Theme, pages 320-322.
 
-One (or both) of the themes may be followed by:
-- Closing section (codettas)
-- Standing on the dominant (if ending with HC)
-
-### Related Concepts
-- [[main-theme-basics]]
-- [[pac]]
-- [[closing-section]]
-- [[subordinate-theme-group]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear definition with examples
+- Re-extraction notes: Upgraded from old card; added material-sharing spectrum

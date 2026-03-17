@@ -1,47 +1,58 @@
 ---
 concept: Transition Opening Strategies
-chapter: "Exposition II: Transition"
+slug: transition-opening-strategies
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 331
-chapter_number: 11
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (II): Transition"
+chapter_number: 11
+pdf_page: 331
+section: Opening Strategies
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - transition-basics
+  - main-theme-cadence-types
+extends: []
+related:
+  - false-closing-section
+contrasts_with: []
+answers_questions:
+  - "What are the four ways a transition can begin?"
+  - "How does the main theme's cadence type influence the transition's opening?"
 ---
 
-## Transition Opening Strategies
+# Quick Definition
+Four principal opening strategies: (1) new material over HK tonic (commonly after PAC); (2) main-theme material (typically after HC, creating a "failed consequent"); (3) false closing section (codettas retrospectively reinterpreted as transition's presentation); (4) immediate shift to nontonic region (usually vi), effective when the main-theme area has strongly emphasized tonic.
 
-A transition typically opens by employing one of four compositional strategies.
+# Core Definition
+Transitions typically open with one of four strategies: (1) **New material** over HK tonic -- common after PAC; listener initially uncertain whether this is a transition or second main theme. (2) **Main-theme material** -- typical after HC; creates impression of a consequent that "fails" when modulation occurs. (3) **False closing section** -- codettas following main-theme PAC are retrospectively understood as the transition's presentation. (4) **Nontonic region** (usually vi) -- used when the main-theme area has strongly emphasized tonic through closing section or multiple themes; vi creates modal contrast and pivots easily to the new key (Caplin, Ch. 11, pp. 331, 339-345).
 
-### 1. New Material
+# Prerequisites
+- **Transition basics** -- Context for opening strategies
+- **Main theme cadence types** -- The cadence type influences strategy choice
 
-- New melodic-motivic material, supported by tonic harmony of home key
-- Commonly used after main theme closes with PAC
-- Listener initially uncertain if this is a transition or second main theme
-- Only subsequent modulation (or goal dominant) confirms transition function
+# Key Properties
+1. New material: commonly after PAC; ambiguous at first (transition or second main theme?)
+2. Main-theme material: typically after HC; creates "failed consequent" impression
+3. False closing section: retrospective reinterpretation of codettas as presentation
+4. Nontonic region (vi): immediate tonal destabilization when tonic already well established
+5. Strategy choice often correlates with main theme's closing cadence type
 
-### 2. Main-Theme Material
+# Relationships
+## Builds Upon
+- **Transition basics** -- Strategies for initiating the transition
+- **Main theme cadence types** -- Determines which strategy is appropriate
+## Related
+- **False closing section** -- One specific opening strategy
 
-- Material drawn from beginning of the main theme
-- Typically employed when main theme ends with HC
-- Creates initial impression of consequent phrase beginning
-- Retrospectively understood as transition when modulation occurs
+# Source Reference
+Chapter 11: Exposition (II): Transition, pages 331, 339-345.
 
-### 3. False Closing Section
-
-- Series of codettas to the main theme
-- Retrospectively understood as the real beginning of the transition
-- Creates presentation function from what seemed postcadential
-
-### 4. Nontonic Region
-
-- Immediate shift to a nontonic region (usually vi)
-- Used when main-theme area strongly emphasizes tonic
-- vi is effective because it creates modal contrast and can pivot to new key
-- Still functions as tonic substitute, projecting formal initiation
-
-### Related Concepts
-- [[transition-basics]]
-- [[false-closing-section]]
-- [[main-theme-material]]
-- [[presentation]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Four strategies clearly enumerated
+- Re-extraction notes: Upgraded from old card; added correlations with cadence types, vi details

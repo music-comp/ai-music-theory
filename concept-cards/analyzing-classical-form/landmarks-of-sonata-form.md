@@ -1,37 +1,75 @@
 ---
 concept: Landmarks of Sonata Form
-chapter: "Sonata Form: An Overview"
+slug: landmarks-of-sonata-form
+category: sonata-form
+subcategory: null
+tier: intermediate
 source: "Analyzing Classical Form"
-pdf_page: 284
-chapter_number: 9
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Sonata Form: An Overview"
+chapter_number: 9
+pdf_page: 284
+section: Landmarks of Sonata Form
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - sonata-form-overview
+  - exposition-overview
+extends: []
+related:
+  - cadential-closure
+contrasts_with: []
+answers_questions:
+  - "How do you identify the major sections of sonata form?"
+  - "Which landmark is hardest to find?"
+  - "Are beginnings or endings more reliable landmarks?"
 ---
 
-## Landmarks of Sonata Form
+# Quick Definition
+The major landmarks of sonata form are normally easy to identify: the exposition's start and end are marked by tempo change and repeat signs; the development begins after the exposition and ends when the recapitulation returns main-theme material in the home key. The hardest landmark is the boundary between recapitulation and coda.
 
-The major landmarks of sonata form are normally easy to identify.
+# Core Definition
+The beginning and end of the exposition are clearly articulated (by tempo change and repetition structure). The development begins after the exposition's close, and its end is signaled by the start of the recapitulation, which brings back exposition materials in the home key. The one major landmark that can cause difficulty is the end of the recapitulation and beginning of the coda; the general rule is that the recapitulation ends when it no longer corresponds with the exposition. Most landmarks are **cadences defining the end of thematic units**, which are more reliable than melodic-motivic markers of beginnings (Caplin, Ch. 9, pp. 284-285, 292-293).
 
-### Identifying Major Sections
+# Prerequisites
+- **Sonata form overview** -- Must understand the three-section structure
+- **Exposition** -- Need to know the internal thematic functions
 
-**Beginning of the exposition**: Obvious enough, even if preceded by a slow introduction (marked by change to fast tempo)
+# Key Properties
+1. Exposition landmarks: HK cadence (end of main theme), SK: HC (end of transition), SK: PAC (end of subordinate theme)
+2. Additional exposition landmarks: closing section, retransition
+3. Development landmarks: model-sequence onset (core beginning), HC + standing on the dominant (core end)
+4. Recapitulation/coda boundary: where recapitulation stops corresponding to exposition
+5. Cadential endings are more reliable than melodic beginnings
 
-**End of the exposition**: Clearly articulated by the repetition structure, usually with notated repeat signs
+# Construction / Recognition
+## To Identify:
+1. Find the exposition's boundaries (repeat signs or written-out repeat)
+2. Within the exposition: HK cadence, SK: HC, SK: PAC(s), closing section
+3. In development: identify core onset and terminal HC/standing on dominant
+4. Recapitulation: return of main-theme basic idea in home key
+5. Coda: where recapitulation diverges from exposition
 
-**Beginning of the development**: Starts right after the close of the exposition
+# Context & Application
+When listening to a sonata for the first time, focus on identifying cadences that mark the ends of thematic units. These are the most reliable formal landmarks.
 
-**End of the development**: Made evident by the start of the recapitulation, which brings back the same materials in the home key
+# Relationships
+## Builds Upon
+- **Sonata form overview** -- Landmarks articulate the form's structure
+## Enables
+- **Analytical methodology** -- Provides the framework for beginning analysis
+## Related
+- **Cadential closure** -- The primary mechanism for marking landmarks
 
-**End of the recapitulation/Beginning of coda**: The one major landmark that can cause difficulty. General rule: the recapitulation ends when it no longer corresponds with the exposition
+# Common Errors
+- **Error**: Treating the beginning of the subordinate theme as the primary landmark between transition and subordinate theme
+  **Correction**: The HC or dominant arrival ending the transition is the more reliable landmark
 
-### Analytical Approach
+# Source Reference
+Chapter 9: Sonata Form: An Overview, pages 284-285, 292-293.
 
-Most "landmarks" are cadences defining the *end* of thematic units. The beginning of units may be marked by salient melodic-motivic material, but such markers are a less reliable source of formal articulation than the cadences that establish thematic closure.
-
-### Related Concepts
-- [[exposition]]
-- [[development-section]]
-- [[recapitulation]]
-- [[coda]]
-- [[cadential-closure]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Explicit discussion in text boxes
+- Re-extraction notes: Upgraded from old card; preserved analytical approach note, expanded

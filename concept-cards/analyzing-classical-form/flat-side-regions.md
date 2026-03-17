@@ -1,53 +1,49 @@
 ---
 concept: "Flat-Side Regions"
+slug: flat-side-regions
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites: []
+extends: []
+related:
+  - secondary-development-recapitulation
+contrasts_with: []
+answers_questions:
+  - "What are flat-side regions?"
 ---
 
-## Definition
+# Quick Definition
+Flat-side regions are tonal regions whose key signatures have more flats than the home key (e.g., IV, ii, bVI, bIII, bII). They are explored especially in secondary developments within recapitulations.
 
-Flat-side regions are tonal regions of the home key whose key signatures have more flats than the home key. They represent "darker" or more distant harmonic territory.
+# Core Definition
+Tonal regions of the home key whose key signatures have more flats than the home key (e.g., IV, ii, bVI, bIII, bII; Caplin, Glossary, p. 725).
 
-## Common Flat-Side Regions
+# Key Properties
+1. Key signatures with more flats than the home key
+2. Common examples: IV, ii, bVI, bIII, bII
+3. Explored in secondary developments
+4. Create sense of harmonic "depth"
+5. Contrast with sharp-side brightness
+6. Preparation for strong return to home key
 
-For a major-mode home key:
+# Relationships
+## Related
+- **Secondary development (recapitulation)** -- Features tonicization of flat-side regions
 
-| Region | Symbol | Example in C major |
-|--------|--------|-------------------|
-| Subdominant | IV | F major |
-| Supertonic | ii | D minor |
-| Lowered submediant | bVI | A-flat major |
-| Lowered mediant | bIII | E-flat major |
-| Lowered supertonic | bII | D-flat major |
+# Source Reference
+Glossary of Terms, page 725.
 
-## Contexts for Flat-Side Regions
-
-### Secondary Development
-In recapitulations, a secondary development features:
-- Model-sequence technique
-- Tonicization of flat-side regions
-- Provides developmental content within the recapitulation
-
-### Development Sections
-Flat-side regions may be explored in the development proper, especially:
-- In minor-mode movements (iv, VI)
-- After establishing sharp-side regions
-
-## Harmonic Color
-
-Flat-side regions create:
-- Sense of harmonic "depth"
-- Contrast with sharp-side brightness
-- Preparation for strong return to home key
-
-## Analytical Significance
-
-Tracking flat-side excursions helps understand:
-- Harmonic trajectory of development/recapitulation
-- Tonal drama and contrast
-- The journey back to home key
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved from old card; added v3.1 fields

@@ -1,53 +1,49 @@
 ---
 concept: "Murky Bass"
+slug: murky-bass
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Glossary"
 chapter_number: null
 pdf_page: 725
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Glossary"
+section: null
+extraction_confidence: high
+aliases: []
+prerequisites: []
+extends: []
+related:
+  - drum-bass
+  - characteristic-material
+contrasts_with: []
+answers_questions:
+  - "What is murky bass?"
 ---
 
-## Definition
+# Quick Definition
+Murky bass is a conventional accompanimental pattern consisting of broken octaves, alternating between a low bass note and its octave above.
 
-Murky bass is a conventional accompanimental pattern consisting of broken octaves, typically alternating between a low bass note and its octave above.
+# Core Definition
+A conventional accompanimental pattern consisting of broken octaves (Caplin, Glossary, p. 725).
 
-## Typical Pattern
+# Key Properties
+1. Broken octaves: alternating low note and octave above
+2. Creates bass presence without thick texture
+3. Part of conventional (not characteristic) material
+4. Related patterns: Alberti bass (arpeggiation), drum bass (block chords)
 
-```
-C - c - C - c (low C, then C an octave higher, alternating)
-```
+# Relationships
+## Related
+- **Drum bass** -- Another conventional accompanimental pattern
+- **Characteristic material** -- Murky bass is conventional, not characteristic
 
-## Characteristics
+# Source Reference
+Glossary of Terms, page 725.
 
-- Creates sense of bass foundation
-- Provides rhythmic motion
-- More open texture than block chords
-- Named after 18th-century keyboard practice
-
-## Related Accompanimental Patterns
-
-| Pattern | Description |
-|---------|-------------|
-| Murky bass | Broken octaves |
-| Alberti bass | Arpeggiation figurations |
-| Drum bass | Repeated block chords |
-
-## Common Contexts
-
-- Keyboard music (especially piano)
-- Passages requiring bass presence without thick texture
-- Accompaniment to melodic material
-- Transitional or developmental passages
-
-## Conventional Material
-
-Like Alberti bass and drum bass, murky bass is part of the **conventional material** of the classical style - patterns that are widely used and potentially interchangeable from piece to piece.
-
-## Effect
-
-- Provides harmonic support with minimal material
-- Creates forward motion through repetition
-- Maintains bass register presence
-- Allows clear melodic projection in upper voices
+# Verification Notes
+- Definition source: Direct from Caplin glossary
+- Confidence rationale: Standard definition
+- Re-extraction notes: Preserved from old card; added v3.1 fields

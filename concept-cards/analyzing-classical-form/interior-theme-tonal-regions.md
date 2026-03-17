@@ -1,45 +1,75 @@
 ---
 concept: "Interior Theme Tonal Regions"
+slug: interior-theme-tonal-regions
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Slow-Movement Forms"
 chapter_number: 17
 pdf_page: 598
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Slow-Movement Forms"
+section: "Large Ternary: Interior Theme - Modality, Tonality"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - interior-theme
+extends:
+  - interior-theme
+related:
+  - minore-maggiore
+contrasts_with:
+  - subordinate-key
+answers_questions:
+  - "What tonal regions can an interior theme occupy?"
+  - "Why is the subordinate key excluded from interior themes?"
 ---
 
-## Primary Tonal Options
+# Quick Definition
+An interior theme usually changes mode (to minore) while remaining in the same tonality, but may also reside in the submediant (vi), lowered submediant (bVI), or subdominant (IV). It is never set in the standard subordinate key.
 
-### Most Common: Minore
-- Interior theme set in the **minor mode of the home key**
-- Labeled "minore" in the score
-- For minor-mode main themes: interior theme shifts to "maggiore"
+# Core Definition
+Although an interior theme usually changes mode, its tonality generally remains the same as the main theme. On occasion, the theme resides in a related tonal region such as the submediant (vi), lowered submediant (bVI), or subdominant (IV). The use of bVI or IV results in those few instances when the mode does not change to minor. An interior theme is never set primarily in the standard subordinate key (Caplin, p. 598).
 
-### Alternative Regions
-| Region | Symbol | Example in C major |
-|--------|--------|-------------------|
-| Submediant | vi | A minor |
-| Lowered submediant | bVI | A-flat major |
-| Subdominant | IV | F major |
+# Prerequisites
+- **Interior theme** -- The formal function whose tonal options are specified here
 
-## Critical Distinction
+# Key Properties
+1. Most common: minore (same key, opposite mode)
+2. Alternative: submediant (vi), lowered submediant (bVI), or subdominant (IV)
+3. bVI and IV do not involve modal change from a major home key
+4. Never the standard subordinate key (V for major, III/v for minor)
+5. When set in a nontonic region, more likely to end with a PAC in its own key
 
-An interior theme is **never** set primarily in the standard subordinate key:
-- Not in V (for major-mode movements)
-- Not in III or v (for minor-mode movements)
+# Construction / Recognition
+## To Identify:
+1. Determine the tonal region at the start of the interior theme
+2. Check whether it is a modal shift (minore) or a different tonal region
+3. Confirm it is NOT the subordinate key
 
-This fundamentally distinguishes the interior theme from the subordinate theme.
+# Context & Application
+The exclusion of the subordinate key is the fundamental distinction between interior themes and subordinate themes. This tonal constraint applies across all contexts where interior themes appear: large ternary, rondo couplets, and related forms.
 
-## When Mode Does Not Change
+# Examples
+**Example 1** (p. 598): In the great majority of cases, interior themes shift to the minor mode (minore) of the home key.
 
-The use of bVI or IV as tonal region results in those few instances when the mode does not change to minor:
-- bVI: Already a major key (no modal change from major home key)
-- IV: Also a major key (no modal change from major home key)
+# Relationships
+## Builds Upon
+- **Interior theme** -- The formal function whose tonal options are detailed here
+## Related
+- **Minore/maggiore** -- The modal shift that creates the primary contrast
+## Contrasts With
+- **Subordinate key** -- The tonal region excluded from interior themes
 
-## Closing Behavior
+# Common Errors
+- **Error**: Assuming interior themes always involve modal shift
+  **Correction**: While minore is most common, regions like vi, bVI, or IV also occur without modal change
 
-When the interior theme is set in a nontonic region (vi, bVI, IV):
-- It is more likely to end with a PAC in its own key
-- A retransition then follows to prepare the home-key dominant
-- Prepares the return of the main theme
+# Source Reference
+Chapter 17: Slow-Movement Forms, page 598.
+
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear enumeration of tonal options
+- Re-extraction notes: Preserved tonal region table from old card; added v3.1 fields

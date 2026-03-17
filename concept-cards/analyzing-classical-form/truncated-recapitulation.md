@@ -1,44 +1,75 @@
 ---
 concept: "Truncated Recapitulation"
+slug: truncated-recapitulation
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Slow-Movement Forms"
 chapter_number: 17
 pdf_page: 617
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Slow-Movement Forms"
+section: "Sonata Without Development: Truncated Recapitulation"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - sonata-without-development
+extends:
+  - sonata-without-development
+related:
+  - large-ternary-form
+contrasts_with:
+  - large-ternary-form
+answers_questions:
+  - "What is a truncated recapitulation?"
+  - "How does a truncated recapitulation relate to large ternary form?"
 ---
 
-## Definition
+# Quick Definition
+A truncated recapitulation in sonata without development form consists only of the main theme, with the transition and subordinate theme entirely eliminated. A coda may be added.
 
-A truncated recapitulation in sonata without development form consists only of the main theme. The transition, subordinate theme, and closing section are eliminated, though a coda may be added.
+# Core Definition
+The principal deviation in sonata without development form involves a truncated recapitulation. The exposition is followed only by the main theme, whose structure is the same as in the exposition. The rest (transition, subordinate theme, closing section) is eliminated, but a coda may be added. With such a truncated recapitulation, the composer creates a form that resembles a large ternary, but the two should be regarded as distinct (Caplin, p. 617).
 
-## Structure Comparison
+# Prerequisites
+- **Sonata without development** -- The form in which truncation occurs
 
-| Full Recapitulation | Truncated Recapitulation |
-|---------------------|--------------------------|
-| Main theme | Main theme |
-| Transition | (eliminated) |
-| Subordinate theme | (eliminated) |
-| Closing section | (eliminated) |
-| Coda (optional) | Coda (may be added) |
+# Key Properties
+1. Only the main theme is recapitulated
+2. Transition, subordinate theme, and closing section are eliminated
+3. A coda may follow
+4. Creates resemblance to large ternary (subordinate-theme complex functions like an interior theme)
+5. Still analytically distinct from large ternary based on listener experience
 
-## Resemblance to Large Ternary
+# Construction / Recognition
+## To Identify:
+1. After the exposition, look for only the main theme returning
+2. Confirm that no transition or subordinate theme follows
+3. Check for a possible coda
 
-With truncated recapitulation, the form resembles large ternary:
-- Main theme functions like the first part (main theme) of large ternary
-- Subordinate-theme complex functions like an interior theme
-- Main theme's return parallels the third part of large ternary
+# Context & Application
+The distinction between a truncated recapitulation (within sonata without development) and a large ternary is experiential: the listener initially hears sonata-form expectations, and reinterpretation as large ternary can only emerge retrospectively.
 
-When the main theme is built as a small ternary or binary, the resemblance is even greater.
+# Examples
+**Example 1** (p. 617): In works by Mozart and Haydn, the exposition is followed only by the main theme with the rest of the recapitulation eliminated.
 
-## Analytical Distinction
+# Relationships
+## Builds Upon
+- **Sonata without development** -- The form in which this deviation occurs
+## Related
+- **Large ternary form** -- Structurally similar but analytically distinct
+## Contrasts With
+- **Large ternary form** -- Despite resemblance, the experiential and analytical distinction is maintained
 
-Despite similarities, prefer to regard large ternary and sonata without development (truncated recapitulation) as **distinct forms**:
-- Until transition and subordinate theme are perceived as eliminated, the form appears to be sonata without development
-- Reinterpretation as "deviated large ternary" can only emerge very much after the fact
-- The listener's initial experience follows sonata-form expectations
+# Common Errors
+- **Error**: Automatically reinterpreting a truncated recapitulation as a large ternary
+  **Correction**: Prefer to maintain the sonata without development analysis, as the listener initially experiences sonata-form expectations
 
-## Example
+# Source Reference
+Chapter 17: Slow-Movement Forms, page 617.
 
-Haydn, Piano Trio in E-flat, H. 30, i: After the subordinate-theme complex of the exposition, only the main theme returns. The entire subordinate-theme area is eliminated from the recapitulation.
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear analytical distinction provided
+- Re-extraction notes: Preserved comparison from old card; added v3.1 fields

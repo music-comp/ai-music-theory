@@ -1,50 +1,82 @@
 ---
 concept: "Slow-Movement Sonata Form"
+slug: slow-movement-sonata
+category: slow-movement-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Slow-Movement Forms"
 chapter_number: 17
 pdf_page: 612
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Slow-Movement Forms"
+section: "Finer Points: Sonata Form in Slow Movements"
+extraction_confidence: high
+aliases:
+  - "compressed sonata"
+prerequisites:
+  - sonata-form
+  - formal-simplicity-slow-movements
+extends:
+  - sonata-form
+related:
+  - transition-subordinate-fusion
+  - transition-elimination-slow-movement
+  - development-reduction-slow-movement
+contrasts_with: []
+answers_questions:
+  - "How is sonata form modified for slow movements?"
+  - "What compression techniques are used in slow-movement sonatas?"
 ---
 
-## Definition
+# Quick Definition
+Many slow movements use conventional sonata form but employ compression techniques -- transition/subordinate-theme fusion, elimination of the transition, or reduction of the development -- to prevent excessive length.
 
-Many slow movements are constructed in conventional sonata form but employ various modifications to effect the formal compression typical of slow movements.
+# Core Definition
+Many slow movements are constructed in conventional sonata form. A number of modifications are frequently employed to effect the kinds of formal compression typical of slow movements. The exposition usually contains a single subordinate theme, often relatively tight-knit. Standings on the dominant are generally held in check, and form-functional fusion is regularly employed (Caplin, pp. 612-616).
 
-## Rationale for Compression
+# Prerequisites
+- **Sonata form** -- The form being compressed
+- **Formal simplicity in slow movements** -- The rationale for compression
 
-If all movements had the same formal complexity, slow movements would last considerably longer due to slower pacing. To maintain consistent length, composers either:
-1. Select an inherently simpler formal type (large ternary, variations, etc.)
-2. Use regular sonata form but with compression techniques
+# Key Properties
+1. Uses conventional sonata form with compression
+2. Exposition usually has single subordinate theme
+3. Subordinate theme relatively tight-knit (though still looser than main theme)
+4. Standings on the dominant held in check
+5. Three specific compression techniques: fusion, elimination, reduction
+6. Form-functional fusion regularly employed
 
-## Compression Techniques
+# Construction / Recognition
+## To Identify:
+1. Confirm the movement uses sonata form (exposition, development, recapitulation)
+2. Look for compression techniques in the transition and subordinate theme
+3. Check the development section's scope relative to the exposition
+4. Note any fusion of formal functions
 
-### 1. Transition/Subordinate-Theme Fusion
-- Two functions traversed more rapidly within a single group
-- Eliminates: half cadence for transition, standing on dominant, new basic idea for subordinate theme
-- More frequent in slow movements than fast movements
+# Context & Application
+When composers choose regular sonata form for a slow movement (rather than large ternary, variations, or sonata without development), they normally do not exploit all its resources in order to prevent the movement from becoming excessively long.
 
-### 2. Elimination of Transition
-- Main theme cadence followed immediately by subordinate theme
-- Subordinate theme begins directly in subordinate key
-- Dominant emphasis shifted into subordinate theme (internal HC and standing on dominant)
+# Examples
+**Example 1** (p. 616): Haydn, Piano Trio in A, H. 9, i -- development less than one-third the length of exposition, briefly touching three tonal regions via descending-third sequence without genuine core.
 
-### 3. Reduction of Development
-- Forgoes full-fledged core
-- May have brief model-sequence activity
-- Development key not cadentially confirmed
-- May resemble contrasting middle of small ternary
-- Development can be less than one-third the length of exposition
+# Relationships
+## Builds Upon
+- **Sonata form** -- The form being compressed
+- **Formal simplicity in slow movements** -- The principle motivating compression
+## Enables
+- **Transition/subordinate-theme fusion** -- One compression technique
+- **Transition elimination (slow movement)** -- Another compression technique
+- **Development reduction (slow movement)** -- Third compression technique
 
-## General Characteristics
+# Common Errors
+- **Error**: Expecting a slow-movement sonata to have the same proportions as a fast-movement sonata
+  **Correction**: Compression techniques specifically reduce the scope of transitions, subordinate themes, and developments
 
-- Exposition usually contains single subordinate theme
-- Subordinate theme relatively tight-knit (though still looser than main theme)
-- Standings on dominant held in check
-- Form-functional fusion regularly employed
+# Source Reference
+Chapter 17: Slow-Movement Forms, pages 612-616.
 
-## Example
-
-Haydn, Piano Trio in A, H. 9, i: Development is less than one-third as long as exposition, briefly touching on three tonal regions via descending-third sequence without genuine core.
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear overview with three specific techniques
+- Re-extraction notes: Preserved compression techniques from old card; added v3.1 fields

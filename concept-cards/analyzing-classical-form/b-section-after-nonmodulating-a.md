@@ -1,49 +1,67 @@
 ---
 concept: "B Section After Nonmodulating A Section"
+slug: b-section-after-nonmodulating-a
+category: minuet-trio
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Minuet/Trio Form"
 chapter_number: 18
 pdf_page: 645
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Minuet/Trio Form"
+section: "B Section Follows a Nonmodulating A Section"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - minuet-contrasting-middle
+extends:
+  - minuet-contrasting-middle
+related:
+  - b-section-after-modulating-a
+contrasts_with:
+  - b-section-after-modulating-a
+answers_questions:
+  - "What does the B section do when the A section stays in the home key?"
 ---
 
-## Context
+# Quick Definition
+When the A section does not modulate, the B section typically assumes the role of introducing transition and subordinate-theme functions, providing the principal tonal contrast of the minuet.
 
-When the A section of a minuet does not modulate, the B section typically assumes the role of introducing transition and subordinate-theme functions.
+# Core Definition
+If the A section does not modulate, the B section can assume the role of introducing transition and subordinate-theme functions into the minuet. The contrasting middle most often moves to the subordinate key employing phrase-structural processes typical of transition and subordinate-theme functions. The B section may also include an interpolated episode and significant model-sequence technique (Caplin, pp. 645-646).
 
-## Not Required
+# Prerequisites
+- **Minuet contrasting middle** -- The general B section function
 
-This shifting of expositional functions into the contrasting middle is not required:
-- Some minuets remain effectively in the home key throughout
-- There may be prominent tonicization of subordinate-key region without full confirmation
+# Key Properties
+1. Provides the principal tonal contrast (A section did not modulate)
+2. Typically introduces transition and subordinate-theme functions
+3. May begin immediately in the subordinate key (omitting transition)
+4. Transition and subordinate theme may be fused or distinct
+5. May include interpolated episodes and model-sequence technique
+6. Not required: some minuets remain in the home key throughout
 
-## Typical Organization
+# Construction / Recognition
+## To Identify:
+1. Confirm the preceding A section stayed in the home key
+2. Look for modulation to the subordinate key
+3. Identify transition and subordinate-theme functions
+4. Note the overall thematic functional distribution: A = main theme, B = transition + subordinate theme
 
-Following a nonmodulating exposition, the B section most often:
-1. Moves to the subordinate key
-2. Employs phrase-structural processes typical of transition and subordinate-theme functions
-3. May begin immediately in subordinate key (omitting transition)
+# Examples
+**Example 1** (p. 646): Haydn, Symphony No. 87 in A, iii -- B section begins with modulating phrase (transition), followed by genuine subordinate theme with presentation and continuation, then brief retransition.
 
-## Additional Possibilities
+# Relationships
+## Builds Upon
+- **Minuet contrasting middle** -- The general B section function
+## Contrasts With
+- **B section after modulating A** -- Freed from subordinate-key function
 
-The B section may include:
-- **Interpolated episode**: New material in remote tonal region
-- **Significant model-sequence technique**: In manner of a core
-- **Transition and subordinate theme**: Either fused or as distinct units
+# Source Reference
+Chapter 18: Minuet/Trio Form, pages 645-646.
 
-## Example: Haydn, Symphony No. 87 in A, iii
-
-After home-key cadence closing A section:
-1. B section begins with 4-m. phrase that quickly modulates to subordinate key
-2. Dominant confirmation (mm. 11-12) = transition function
-3. Genuine subordinate theme begins (m. 13) with distinct presentation and continuation phrases
-4. Brief retransition returns to home key for recapitulation
-
-## Thematic Functional Distribution
-
-When B section brings these functions:
-- A section = main theme only
-- B section = transition + subordinate theme + (possible retransition)
-- A' section = main theme (possibly expanded to suggest subordinate-theme recapitulation)
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear with illustrative example
+- Re-extraction notes: Preserved thematic functional distribution from old card; added v3.1 fields

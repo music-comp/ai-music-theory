@@ -1,40 +1,60 @@
 ---
 concept: Modulating Transition
-chapter: "Exposition II: Transition"
+slug: modulating-transition
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 330
-chapter_number: 11
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (II): Transition"
+chapter_number: 11
+pdf_page: 330
+section: The Basics
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - transition-basics
+extends: []
+related:
+  - nonmodulating-transition
+  - two-part-transition
+  - pivot-chord-modulation
+contrasts_with:
+  - nonmodulating-transition
+answers_questions:
+  - "How does a modulating transition work?"
+  - "What are common modulation techniques?"
+  - "Why is the move to vi so important?"
 ---
 
-## Modulating Transition
+# Quick Definition
+The most common transition type, a modulating transition destabilizes the home key by actually modulating to the subordinate key, ending there with dominant harmony (HC or dominant arrival). Common pivot techniques include using the home-key tonic as subdominant of the new key, or the move to vi pivoting to become ii.
 
-A **modulating transition** destabilizes the home key by actually modulating to the subordinate key, ending there with dominant harmony.
+# Core Definition
+A modulating transition destabilizes the home key by actually modulating to the subordinate key, ending there with dominant harmony. This is the most common type of transition. In major, common pivot procedures include: HK tonic becoming IV of SK; prominent move to vi (submediant) pivoting to become ii in SK -- so common it is "like waving a flag" that modulation is imminent; and sequential progressions. In minor, iv or VI pivot to become ii or IV in the relative major (Caplin, Ch. 11, pp. 330, 339).
 
-### Characteristics
+# Prerequisites
+- **Transition basics** -- Must understand the three tonal categories
 
-- Most common type of transition
-- Ends with an HC (or dominant arrival) **in the subordinate key**
-- Establishes the subordinate key as a rival tonality
+# Key Properties
+1. Most common transition type
+2. Ends with HC or dominant arrival in the subordinate key
+3. Major: pivot through HK I = SK IV, or vi = ii
+4. Move to vi is the most common signal of impending modulation
+5. Minor: iv or VI pivot to ii or IV in relative major
+6. Sequential progressions also effective for modulation
 
-### Modulation Techniques in Major
+# Relationships
+## Builds Upon
+- **Transition basics** -- One of three tonal categories
+## Contrasts With
+- **Nonmodulating transition** -- Remains in home key
 
-Common pivot-chord procedures:
-- Home-key I becomes IV of subordinate key (then moves to V)
-- Prominent move to vi (submediant), pivoting to become ii in subordinate key
-- Sequential progressions create smooth modulation
+# Source Reference
+Chapter 11: Exposition (II): Transition, pages 330, 339.
 
-The appearance of **vi (submediant)** is so common it's like "waving a flag" that modulation is about to occur.
-
-### Modulation Techniques in Minor
-
-- Home-key iv or VI pivots to become ii or IV respectively in relative major
-- If subordinate key is minor dominant, similar procedures to major
-
-### Related Concepts
-- [[transition-basics]]
-- [[nonmodulating-transition]]
-- [[pivot-chord-modulation]]
-- [[subordinate-key]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear definition with modulation techniques
+- Re-extraction notes: Upgraded from old card; added "waving a flag" comment, sequential modulation

@@ -1,49 +1,68 @@
 ---
 concept: Closing Section in Exposition
-chapter: "Exposition III: Subordinate Theme"
+slug: closing-section-exposition
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 409
-chapter_number: 12
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (III): Subordinate Theme"
+chapter_number: 12
+pdf_page: 409
+section: Closing Section
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - subordinate-theme-basics
+  - subordinate-theme-group
+extends:
+  - closing-section
+related:
+  - false-closing-section-subordinate
+  - closing-section-vs-closing-theme
+  - retransition-exposition
+contrasts_with:
+  - false-closing-section-subordinate
+answers_questions:
+  - "When does a closing section appear in the exposition?"
+  - "How is it structured?"
+  - "Why do subordinate themes need a closing section more than main themes?"
 ---
 
-## Closing Section in Exposition
+# Quick Definition
+A closing section of codettas follows the final PAC of the subordinate-theme group, prolonging tonic and reinforcing cadential arrival. It almost always appears (unlike after main themes). Codettas are typically repeated with progressive shortening (fragmentation), containing conventionalized scalar or arpeggiated patterns. Rarely omitted from an exposition.
 
-Any thematic unit closing with a PAC can give rise to a postcadential **closing section**, which prolongs the tonic harmony and reinforces the sense of cadential arrival.
+# Core Definition
+Any thematic unit closing with a PAC can generate a postcadential closing section prolonging tonic and reinforcing cadential arrival. In movements with a single subordinate theme, the closing section follows that theme's PAC. In groups, it follows the **last** theme's PAC. Subordinate themes almost always demand a closing section (unlike main themes) because of the greater energy accumulated in achieving the cadential goal. The section contains several codettas: the first typically repeated, followed by a second (possibly repeated), then a third; subsequent codettas are usually shorter (fragmentation). Content usually consists of conventionalized scalar or arpeggiated patterns, contrasting with the cadential ideas of the subordinate theme, though main-theme motives sometimes return (Caplin, Ch. 12, pp. 409-411).
 
-### When Closing Section Appears
+# Prerequisites
+- **Subordinate theme basics** -- The closing section follows the final PAC
+- **Subordinate-theme group** -- Closing section follows the last theme
 
-**Single subordinate theme**: Closing section immediately follows the cadence
+# Key Properties
+1. Follows the final PAC of the subordinate theme (or group)
+2. Almost always present (rarely omitted)
+3. More necessary than after main themes (greater accumulated energy)
+4. Codettas: first repeated, subsequent ones shorter (fragmentation)
+5. Content: conventionalized patterns (scales, arpeggios)
+6. Sometimes main-theme motives return (rounding out the exposition)
+7. Function: dissipate or sustain accumulated energy
 
-**Subordinate-theme group**: Closing section follows the cadence ending the **last** theme of the group
+# Relationships
+## Builds Upon
+- **Subordinate theme** -- Closing section follows its PAC
+## Related
+- **False closing section (subordinate)** -- Apparent closing section that becomes next theme
+- **Closing section vs. closing theme** -- Terminological distinction
+- **Retransition** -- May follow the closing section
+## Contrasts With
+- **False closing section** -- Closing section that proves to be initiating function
 
-**Rarely omitted**: Unlike main themes (which only occasionally include a closing section), subordinate themes almost always have one.
+# Source Reference
+Chapter 12: Exposition (III): Subordinate Theme, pages 409-411.
 
-### Why Subordinate Theme Needs It
-
-Greater energy is built up in achieving the cadential goal of a subordinate theme compared to a main theme. A postcadential passage is needed to:
-- **Dissipate** the accumulated energy, or
-- **Sustain** that energy even further beyond actual moment of cadential closure
-
-### Structure of Closing Section
-
-Usually contains several **codettas**:
-- First codetta is typically repeated
-- Followed by a second (which may or may not be repeated)
-- A third may also appear
-- Subsequent codettas are usually **shorter** than previous ones
-- Creates **fragmentation** within the closing section
-
-### Melodic Content
-
-Content usually **contrasts** with cadential ideas of subordinate theme:
-- Conventionalized scalar or arpeggiated patterns
-- Occasionally significant motivic references (especially main-theme ideas rounding out exposition)
-
-### Related Concepts
-- [[codetta]]
-- [[subordinate-theme-group]]
-- [[fragmentation]]
-- [[pac]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear definition with structural details
+- Re-extraction notes: Upgraded from old card; added energy rationale, codetta structure, main-theme return

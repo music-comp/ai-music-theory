@@ -1,52 +1,55 @@
 ---
 concept: "Solo Development"
+slug: solo-development
+category: concerto-form
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Concerto Form"
 chapter_number: 20
 pdf_page: 713
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Concerto Form"
+section: "Solo Development"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - concerto-form
+extends:
+  - development
+related: []
+contrasts_with:
+  - development
+answers_questions:
+  - "How does the concerto development differ from a sonata development?"
 ---
 
-## Definition
+# Quick Definition
+The solo development in concerto form is organized like sonata development but tends to feature rhapsodic improvisation and conventional passage work rather than intense motivic work, since polyphonic textures would direct attention to the orchestra rather than the solo.
 
-The solo development is the fourth section of concerto form, functioning for all intents and purposes the same as a sonata development. It begins after the subordinate-key ritornello.
+# Core Definition
+The formal organization of a concerto development is the same as that of sonata form. This section usually begins with a reappearance of the solo part (silent during the subordinate-key ritornello). The development tends to be less a working out of prominent motivic material and more a rhapsodic improvisation employing conventional passage work, since intense motivische Arbeit might employ polyphonic textures directing attention to the orchestra (Caplin, pp. 713-714).
 
-## Historical Background
+# Prerequisites
+- **Concerto form** -- The overall form
 
-The solo development derives from the "second solo" of the Baroque ritornello form. This section usually begins with a reappearance of the solo part, which was silent during the subordinate-key ritornello.
+# Key Properties
+1. Same formal organization as sonata development
+2. Solo reappears after subordinate-key ritornello silence
+3. Less motivic work; more rhapsodic improvisation
+4. Conventional passage work: scales, arpeggiations
+5. Polyphonic textures avoided (would favor orchestra over solo)
 
-## Character Differences from Symphonic Development
+# Relationships
+## Builds Upon
+- **Development** -- General developmental function
+## Contrasts With
+- **Development** -- Symphonic developments feature more intense motivic work
 
-### Less Motivic Work
-The intense "motivische Arbeit" (motivic work) typical of symphonic development by Haydn or Beethoven:
-- Would employ polyphonic instrumental textures
-- Might direct attention more to orchestra than to solo
+# Source Reference
+Chapter 20: Concerto Form, pages 713-714.
 
-### More Rhapsodic Improvisation
-Concerto developments tend toward:
-- Rhapsodic improvisation
-- Conventional passage work (scales, arpeggiations)
-- Display of virtuosity
-
-## Rationale
-
-Figurational patterns:
-- Foster greater display of virtuosity from soloist
-- Keep orchestra largely in the background
-- Maintain the solo-orchestra hierarchy
-
-## Structure
-
-Like sonata development, may contain:
-- Pre-core
-- One or more cores (or core substitutes)
-- Retransition with standing on dominant
-
-## Solo Entrance After Ritornello
-
-The reappearance of the solo to begin development:
-- Marks return of protagonist after orchestral interlude
-- Creates fresh sonority after being silent
-- Maintains formal tradition from Baroque practice
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Clear comparison with sonata development
+- Re-extraction notes: Preserved from old card; added v3.1 fields

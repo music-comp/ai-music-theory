@@ -1,39 +1,58 @@
 ---
 concept: "Nine-Part Sonata-Rondo"
+slug: nine-part-sonata-rondo
+category: rondo-forms
+subcategory: null
+tier: advanced
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "Rondo Forms"
 chapter_number: 19
 pdf_page: 686
-source: "Analyzing Classical Form (Caplin)"
-unit: null
-authors: "William E. Caplin"
-category: analysis
-chapter: "Rondo Forms"
+section: "Enlargements of Rondo Form"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - sonata-rondo
+extends:
+  - sonata-rondo
+related:
+  - seven-part-rondo
+contrasts_with: []
+answers_questions:
+  - "What is a nine-part sonata-rondo?"
+  - "Where is the extra material inserted?"
 ---
 
-## Definition
+# Quick Definition
+A nine-part sonata-rondo is an enlarged sonata-rondo with an extra refrain and couplet (usually an interior theme) inserted between couplet 2 and the recapitulation.
 
-A nine-part sonata-rondo is an enlarged version of the standard sonata-rondo, created by inserting an extra refrain and couplet between couplet 2 and the recapitulation.
+# Core Definition
+A sonata-rondo can become enlarged into a nine-part sonata-rondo. In this case, the extra refrain and couplet are inserted between couplet 2 and the recapitulation. The additional couplet is usually organized as an interior theme (Caplin, p. 686).
 
-## Structure
+# Prerequisites
+- **Sonata-rondo** -- The form being enlarged
 
-| Section | Standard Sonata-Rondo | Nine-Part Sonata-Rondo |
-|---------|----------------------|------------------------|
-| 1 | Refrain 1 (exposition MT) | Refrain 1 |
-| 2 | Couplet 1 (exposition ST complex) | Couplet 1 |
-| 3 | Refrain 2 | Refrain 2 |
-| 4 | Couplet 2 (development/interior) | Couplet 2 |
-| 5 | Refrain 3 (recap MT) | **Refrain 3** (extra) |
-| 6 | Couplet 3 (recap ST complex) | **Couplet 3** (extra interior theme) |
-| 7 | Refrain 4 (coda with MT) | Refrain 4 (recap MT) |
-| 8 | — | Couplet 4 (recap ST complex) |
-| 9 | — | Refrain 5 (coda with MT) |
+# Key Properties
+1. Enlarged sonata-rondo with nine sections instead of seven
+2. Extra refrain + couplet inserted between couplet 2 and recapitulation
+3. Additional couplet usually an interior theme
+4. Differs from earlier couplets in material, region, and organization
 
-## Additional Couplet
+# Examples
+**Example 1** (p. 686): Mozart, Rondo in F, K. 494 -- a nine-part sonata-rondo.
 
-The extra couplet (inserted as couplet 3 in the enlarged form):
-- Usually organized as an **interior theme**
-- Provides additional contrast before recapitulation
-- Melodic-motivic material, tonal region, and formal organization differ from earlier couplets
+# Relationships
+## Builds Upon
+- **Sonata-rondo** -- The form being enlarged
+## Related
+- **Seven-part rondo** -- Analogous enlargement of five-part rondo
 
-## Example
+# Source Reference
+Chapter 19: Rondo Forms, page 686.
 
-Mozart, Rondo in F, K. 494: A nine-part sonata-rondo
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Brief but clear definition
+- Re-extraction notes: Preserved structure comparison from old card; added v3.1 fields

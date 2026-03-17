@@ -1,67 +1,90 @@
 ---
 concept: Passing Chord
-category: theory
-source: "Analyzing Classical Form: An Approach for the Classroom"
+slug: passing-chord
+category: harmony
+subcategory: prolongation-techniques
+tier: foundational
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "A Review of Harmony"
 chapter_number: 1
 pdf_page: 23
-unit: null
-authors: William E. Caplin
+section: "Passing Chords"
+extraction_confidence: high
+aliases:
+  - "pass chord"
+prerequisites:
+  - prolongational-progression
+extends: []
+related:
+  - neighboring-chord
+  - pedal-point
+  - substitute-harmony
+contrasts_with:
+  - neighboring-chord
+answers_questions:
+  - "What is a passing chord?"
+  - "How does passing differ from neighboring in prolongational contexts?"
+  - "When should chord quality symbols be used instead of Roman numerals?"
 ---
 
 # Quick Definition
-A subordinate harmony within a prolongational progression where the prolonged harmony changes position (root position to inversion, or vice versa) from the beginning to the end of the progression.
+A subordinate harmony within a prolongational progression where the prolonged harmony changes position (e.g., from root position to first inversion). The distinction from neighboring chords is based on the position of the prolonged harmony, not literal voice motion.
 
-# Formal Definition
-A given harmony is prolonged by one or more passing chords when the prolonged harmony changes position from the beginning to the end of the progression. Such prolongations usually feature a passing tone in the bass voice lying between root-position and first-inversion forms of the prolonged harmony. A variety of chords can be built over this passing tone.
+# Core Definition
+A given harmony is prolonged by one or more passing chords when the prolonged harmony changes position from the beginning to the end of the progression. Such prolongations usually see a passing tone in the bass voice lying between root-position and first-inversion forms of the prolonged harmony. A variety of chords can be built over this passing tone (p. 34). A passing chord may arise without any of the voices literally displaying passing motion (p. 35).
 
-# Musical/Theoretical Formulation
-Passing chord characteristics:
-- Prolonged harmony changes position (e.g., I to I6)
-- Example: I - V6/5 - I6 (tonic moves from root position to first inversion)
-- Usually features passing motion in bass (connecting 1 to 3)
-- A variety of chords may be built over the passing bass tone
+# Prerequisites
+- **Prolongational progression** — Passing chords are one technique of prolongation
 
-The distinction between neighboring and passing chords:
-- Based on position of the PROLONGED harmony, not literal voice motion
-- Passing: prolonged harmony changes position
-- Neighboring: prolonged harmony stays in same position
+# Key Properties
+1. Prolonged harmony changes position (e.g., I to I6)
+2. Usually features passing motion in bass (connecting scale degree 1 to 3)
+3. Various chords can be built over the passing bass tone
+4. Passing chord may arise without literal passing motion in any voice
+5. Weakly functional passing chords labeled "p" and placed in parentheses
+6. Nonfunctional passing chords use chord quality symbols (e.g., m7) instead of Roman numerals
 
-Note: A passing chord may arise without any of the voices literally displaying passing motion.
+# Construction / Recognition
+## To Identify a Passing Chord:
+1. Identify the prolonged harmony at beginning and end
+2. Verify it changes position (e.g., root position to first inversion)
+3. The intervening chord is passing regardless of literal voice motion
+4. Common pattern: I-V6/5-I6 (bass: 1-2-3)
+5. If the passing chord lacks genuine function, use chord quality symbol rather than Roman numeral
 
-# Musical Context/Application
-Common passing chord situations:
-- I - V6/5 - I6 (bass: 1 - 2 - 3, passing)
-- I - VII6 - I6 (bass: 1 - 2 - 3, with leading-tone chord)
-- Other patterns connecting root position to first inversion
-
-Analytical notation:
-- Some weakly functional passing chords are labeled "p" for "passing"
-- Such chords are placed in parentheses
-- Arise primarily from contrapuntal processes, minimally from harmonic ones
-
-Nonfunctional passing chords: When a passing chord lacks genuine harmonic function (e.g., incorrect seventh resolution), use chord quality symbols (m7) rather than Roman numerals.
+# Context & Application
+Common passing chord situations include I-V6/5-I6, I-VII6-I6, and other patterns connecting root position to first inversion. When the passing chord arises entirely from counterpoint (e.g., incorrect seventh resolution), the symbol m7 replaces the Roman numeral. Ascending passing motion in the soprano (3-4-5) against contrary bass is another common pattern (Ex. 1.9g).
 
 # Examples
-Example 1.9 (pp. 34-35) demonstrates passing chords in prolongational progressions:
-- (a-f) Various chords built over passing bass tones
-- (g) Ascending passing motion in soprano (3-4-5) with bass leaping in contrary motion
-- (h) Passing chord arising without literal passing motion in any voice
-- (c) The passing chord labeled (m7) rather than II7 because of incorrect seventh resolution
+**Example 1** (pp. 34-35, Ex. 1.9): Various passing chords: (a-f) chords built over passing bass tones; (g) ascending soprano passing motion with contrary bass; (h) passing chord without literal passing motion; (c) labeled (m7) rather than II7 due to incorrect seventh resolution.
 
-# Related Concepts
-- Neighboring Chord
-- Prolongational Progression
-- Prolonged Harmony
-- Subordinate Harmony
-- Voice Leading
-- Contrapuntal Processes
+# Relationships
+## Builds Upon
+- **Prolongational progression** — One of four prolongation techniques
+## Enables
+- **Bass arpeggiation** — Passing chords connect different positions of the same harmony
+## Related
+- **Pedal point** — Another prolongation technique
+- **Substitute harmony** — Another prolongation technique
+## Contrasts With
+- **Neighboring chord** — Prolonged harmony stays same position vs. changes position
+
+# Common Errors
+- **Error**: Analyzing weakly functional passing chords with Roman numerals
+  **Correction**: Use chord quality symbols (m7, o7) when the chord lacks genuine harmonic function
 
 # Common Confusions
-- Basing the distinction on literal melodic passing motion (it's about harmonic position)
-- Assuming all passing chords have literal passing tones in the voices
-- Analyzing weakly functional passing chords with Roman numerals when chord quality symbols are more appropriate
-- Confusing passing motion with sequential motion
+- **Confusion**: Basing the distinction on literal melodic passing motion
+  **Clarification**: The distinction is about whether the prolonged harmony changes position
+- **Confusion**: Assuming all passing chords have literal passing tones in the voices
+  **Clarification**: A passing chord may arise without any voice literally displaying passing motion (p. 35)
 
 # Source Reference
-Chapter 1: A Review of Harmony, pages 34-35 (PDF pages 34-35)
+Chapter 1: A Review of Harmony, pages 34-35. Example 1.9 (paradigms). Nonfunctional chord notation p. 35, 47.
+
+# Verification Notes
+- Definition source: Direct from pp. 34-35
+- Confidence rationale: Explicitly defined with paradigms; nonfunctional chord notation clearly described
+- Re-extraction notes: Re-extracted from v2 card; preserved nonfunctional chord notation detail and non-literal passing motion point
