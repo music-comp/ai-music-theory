@@ -32,6 +32,11 @@ pub struct Cli {
     #[arg(long = "log-level", short = 'l', global = true)]
     pub log_level: Option<String>,
 
+    /// MCP transport: "http" or "stdio". Overrides config file value.
+    #[cfg(feature = "http")]
+    #[arg(long)]
+    pub transport: Option<String>,
+
     #[command(subcommand)]
     pub command: Option<Commands>,
 }
@@ -47,12 +52,7 @@ pub enum Commands {
         #[arg(long)]
         test: bool,
 
-        /// Serve over HTTP instead of stdio
-        #[cfg(feature = "http")]
-        #[arg(long)]
-        http: bool,
-
-        /// Port for HTTP server (requires --http)
+        /// Port for HTTP server (requires --transport http)
         #[cfg(feature = "http")]
         #[arg(long, short, default_value = "8080")]
         port: u16,
@@ -198,23 +198,21 @@ pub enum CacheSubcommand {
 /// Returns `Err` if command execution fails.
 pub async fn handle_command(cli: Cli) -> Result<()> {
     let log_level = cli.log_level.clone();
+    #[cfg(feature = "http")]
+    let transport = cli.transport.as_deref();
 
     match cli.command.unwrap_or(Commands::Serve {
         test: false,
-        #[cfg(feature = "http")]
-        http: false,
         #[cfg(feature = "http")]
         port: 8080,
     }) {
         Commands::Serve {
             test,
             #[cfg(feature = "http")]
-            http,
-            #[cfg(feature = "http")]
             port,
         } => {
             #[cfg(feature = "http")]
-            if http {
+            if transport == Some("http") {
                 return run_server_http(log_level, port).await;
             }
             run_server(log_level, test).await
