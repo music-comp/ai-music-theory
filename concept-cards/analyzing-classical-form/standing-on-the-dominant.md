@@ -14,6 +14,7 @@ section: Standing on the Dominant
 extraction_confidence: high
 aliases:
   - "dominant pedal passage"
+  - "dominant pedal"
 prerequisites:
   - transition-basics
   - half-cadence-transition
@@ -21,6 +22,7 @@ extends: []
 related:
   - medial-caesura
   - liquidation-transition
+  - dramatic-element-rondo
 contrasts_with:
   - dominant-expansion-not-internal-hc
 answers_questions:
@@ -28,13 +30,14 @@ answers_questions:
   - "How is the dominant prolonged?"
   - "What is the typical grouping structure?"
   - "How does it differ from just any dominant emphasis?"
+  - "Where else does standing on the dominant appear besides transitions?"
 ---
 
 # Quick Definition
-A postcadential standing on the dominant prolongs the final harmony of the transition's HC (or dominant arrival), typically featuring a new 2-measure idea that is repeated and then fragmented or liquidated, clearing the stage for the subordinate theme.
+A postcadential phrase function following a half cadence, consisting of one or more ideas supported exclusively by a dominant prolongation. In transitions, it prolongs the HC's final harmony, typically featuring a new 2-measure idea that is repeated and then fragmented or liquidated, clearing the stage for the subordinate theme.
 
 # Core Definition
-A postcadential **standing on the dominant** serves to prolong the final harmony of the HC or dominant arrival. It can sustain/reinforce the arrival or dissipate energy to clear the stage for the subordinate theme. The dominant is prolonged through: literal extension (rare), pedal-point prolongation with neighboring chords, subordinate harmonies with bass change, or half-cadential progressions. The typical structure features a new 2-m. idea that is repeated one or more times and then fragmented or liquidated. There is no convenient term for this opening idea (not "codetta" since that implies post-PAC; not "basic idea" since this is not a complete theme). Not all transitions end with a standing on the dominant; slow movements in particular may not (Caplin, Ch. 11, pp. 351-355).
+A postcadential **standing on the dominant** serves to prolong the final harmony of the HC or dominant arrival. It can sustain/reinforce the arrival or dissipate energy to clear the stage for the subordinate theme. The dominant is prolonged through: literal extension (rare), pedal-point prolongation with neighboring chords, subordinate harmonies with bass change, or half-cadential progressions. The typical structure features a new 2-m. idea that is repeated one or more times and then fragmented or liquidated. There is no convenient term for this opening idea (not "codetta" since that implies post-PAC; not "basic idea" since this is not a complete theme). Not all transitions end with a standing on the dominant; slow movements in particular may not. Beyond transitions, a standing on the dominant may also follow a PAC at the end of a small ternary exposition to initiate a contrasting middle. In rondos, it can serve as the most dramatic event of a couplet (Caplin, Ch. 11, pp. 351-355; Glossary, p. 725).
 
 # Prerequisites
 - **Transition basics** -- Standing on the dominant occurs at the transition's end
@@ -47,6 +50,8 @@ A postcadential **standing on the dominant** serves to prolong the final harmony
 4. The opening idea has no standard label
 5. Grouping may resemble a sentence but is NOT one (no harmonic activity, no cadence)
 6. Not always present (especially absent in slow movements)
+7. Creates strong expectation for tonic resolution
+8. Found after transitions, in contrasting middles (after PAC), and in rondo retransitions
 
 # Construction / Recognition
 ## To Identify:
@@ -67,6 +72,7 @@ The standing on the dominant is the literal end of the transition, even though t
 ## Related
 - **Medial caesura** -- May punctuate the standing on the dominant
 - **Liquidation** -- Process within the standing on the dominant
+- **Dramatic element (rondo)** -- Standing on dominant as locus of rondo drama
 ## Contrasts With
 - **Dominant expansion (not internal HC)** -- Different function of dominant emphasis
 
@@ -75,9 +81,9 @@ The standing on the dominant is the literal end of the transition, even though t
   **Correction**: The tonic at the subordinate theme's start is a beginning, not an ending
 
 # Source Reference
-Chapter 11: Exposition (II): Transition, pages 351-355.
+Chapter 11: Exposition (II): Transition, pages 351-355. Glossary of Terms, page 725.
 
 # Verification Notes
-- Definition source: Direct from Caplin
+- Definition source: Direct from Caplin (chapter and glossary)
 - Confidence rationale: Detailed discussion with multiple clarifications
-- Re-extraction notes: Upgraded from old card; added prolongation methods, labeling challenge, sentence caveat
+- Re-extraction notes: Merged standing-on-dominant (glossary card); added contrasting middle and rondo contexts, glossary definition

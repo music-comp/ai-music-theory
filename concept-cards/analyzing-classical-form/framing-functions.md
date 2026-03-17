@@ -14,6 +14,7 @@ section: "Framing Functions"
 extraction_confidence: high
 aliases:
   - before-the-beginning and after-the-end
+  - framing functions overview
 prerequisites:
   - sentence
   - period
@@ -22,28 +23,38 @@ related:
   - thematic-introduction
   - closing-section
   - postcadential-standing-on-dominant
+  - codetta
 contrasts_with: []
 answers_questions:
   - "What formal functions can appear before a theme begins or after it ends?"
   - "What are the temporal meanings of framing functions?"
+  - "What are all the framing function types at a glance?"
 ---
 
 # Quick Definition
 Framing functions appear outside the principal boundaries of a theme -- a thematic introduction can precede the theme's beginning, and postcadential material (closing section or standing on the dominant) can follow its end. They express the temporal functions of "before-the-beginning" and "after-the-end."
 
 # Core Definition
-The principal boundaries of a theme are marked by the beginning of the basic idea and the moment of cadential closure. Two additional formal functions can frame these boundaries. A thematic introduction precedes the theme's beginning, and postcadential function takes two forms: a closing section (following a PAC) or a standing on the dominant (following an HC). Caplin connects these to general temporal experience: just as a class has a "before" (entering, sitting down) and an "after" (packing up, leaving), themes have framing functions that belong to the theme's full experience without being within its literal boundaries.
+The principal boundaries of a theme are marked by the beginning of the basic idea and the moment of cadential closure. Two additional formal functions can frame these boundaries. A thematic introduction precedes the theme's beginning, and postcadential function takes two forms: a closing section (following a PAC) or a standing on the dominant (following an HC). Caplin connects these to general temporal experience: just as a class has a "before" (entering, sitting down) and an "after" (packing up, leaving), themes have framing functions that belong to the theme's full experience without being within its literal boundaries. All framing functions are external to the theme and could theoretically be removed without destroying its fundamental organization.
 
 # Prerequisites
-- **Sentence** and **Period** — The theme types that framing functions frame
+- **Sentence** and **Period** -- The theme types that framing functions frame
 
 # Key Properties
 1. Two main types: before-the-beginning (introduction) and after-the-end (postcadential)
 2. Postcadential takes two forms: closing section (after PAC) or standing on dominant (after HC)
 3. Framing functions are external to the theme proper
 4. They exhibit distinct dynamic processes (progressive or recessive)
-5. Introduction: typically progressive dynamic (building energy)
-6. Closing section: typically recessive dynamic (dissipating energy)
+5. Introduction: typically progressive dynamic (building energy), minimal motivic content, tonic prolongation
+6. Closing section: typically recessive dynamic (dissipating energy), series of codettas, tonic prolongation, fragmentation
+7. Standing on dominant: dominant prolongation, may feature textural dissolution and motivic anticipation, no cadence at end
+
+## Summary of Framing Function Types
+| Type | Position | Follows | Harmonic Character | Dynamic |
+|------|----------|---------|-------------------|---------|
+| Thematic introduction | Before the beginning | -- | Tonic prolongation | Progressive |
+| Closing section | After the end | PAC | Tonic prolongation | Recessive |
+| Standing on dominant | After the end | HC | Dominant prolongation | Variable |
 
 # Construction / Recognition
 ## To Identify:
@@ -59,13 +70,13 @@ Framing functions affect the overall length of a theme without being part of its
 
 # Relationships
 ## Builds Upon
-- **Sentence** and **Period** — The themes being framed
+- **Sentence** and **Period** -- The themes being framed
 ## Enables
-- **Thematic introduction** — The before-the-beginning function
-- **Closing section** — The after-the-end function (after PAC)
-- **Standing on the dominant** — The after-the-end function (after HC)
+- **Thematic introduction** -- The before-the-beginning function
+- **Closing section** -- The after-the-end function (after PAC)
+- **Standing on the dominant** -- The after-the-end function (after HC)
 ## Related
-- **Codetta** — The building block of closing sections
+- **Codetta** -- The building block of closing sections
 
 # Common Errors
 - **Error**: Counting framing functions as part of the theme's measure structure
@@ -76,9 +87,9 @@ Framing functions affect the overall length of a theme without being part of its
   **Clarification**: A thematic introduction is a short unit (rarely more than 2 measures) preceding a theme; a slow introduction precedes an entire sonata-form exposition
 
 # Source Reference
-Chapter 5: Phrase Deviations, Cadential Deviations, and Framing Functions, pages 155-158, 166-168.
+Chapter 5: Phrase Deviations, Cadential Deviations, and Framing Functions, pages 155-158, 166-179.
 
 # Verification Notes
 - Definition source: Direct from Caplin
 - Confidence rationale: Core organizational concept with clear temporal analogy
-- Re-extraction notes: Preserved types from old card; added temporal analogy and dynamic process discussion
+- Re-extraction notes: Merged framing-function-summary card; added summary table, removability principle, detailed descriptions of each type

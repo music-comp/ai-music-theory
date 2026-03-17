@@ -14,6 +14,7 @@ section: "Cadential Deviations"
 extraction_confidence: high
 aliases:
   - cadential deviation types
+  - cadential deviation types comparison
 prerequisites:
   - cadential-progression
 extends: []
@@ -26,23 +27,32 @@ answers_questions:
   - "What are the three types of cadential deviation?"
   - "How do cadential deviations affect theme length?"
   - "Do cadential deviations apply to half cadences?"
+  - "How do the three cadential deviation types compare?"
 ---
 
 # Quick Definition
-Cadential deviations occur when an implied authentic cadence fails to materialize. Three types are responsible: deceptive cadence, evaded cadence, and abandoned cadence. These deviations do not apply to half cadences.
+Cadential deviations occur when an implied authentic cadence fails to materialize. Three types are responsible: deceptive cadence (tonic replaced, groups backward), evaded cadence (new beginning replaces resolution, groups forward), and abandoned cadence (cadential dominant undermined or omitted). These deviations do not apply to half cadences.
 
 # Core Definition
-In some formal situations, an authentic cadence is promised but does not actually occur. Three types of cadential deviation are responsible: the deceptive cadence (final tonic replaced by another harmony), the evaded cadence (final tonic fails to appear; new beginning replaces resolution), and the abandoned cadence (problem concerns the cadential dominant itself, which is undermined or omitted). Following any of these deviations, the music usually "backs up" to previous material and makes another try for the authentic cadence.
+In some formal situations, an authentic cadence is promised but does not actually occur. Three types of cadential deviation are responsible: the deceptive cadence (final tonic replaced by another harmony), the evaded cadence (final tonic fails to appear; new beginning replaces resolution), and the abandoned cadence (problem concerns the cadential dominant itself, which is undermined or omitted). Following any of these deviations, the music usually "backs up" to previous material and makes another try for the authentic cadence. The critical distinction between deceptive and evaded is grouping structure, not just harmony.
 
 # Prerequisites
-- **Cadential progression** — Must understand what constitutes a genuine cadence to recognize its deviation
+- **Cadential progression** -- Must understand what constitutes a genuine cadence to recognize its deviation
 
 # Key Properties
 1. Three types: deceptive, evaded, abandoned
 2. Apply only to implied authentic cadences (not half cadences)
-3. Typically motivate repetition of prior material ("one more time")
+3. Typically motivate repetition of prior material ("one more time" technique)
 4. Result in extended themes
 5. Distinguished by both harmonic and grouping-structure criteria
+6. Grouping structure is the key to distinguishing deceptive from evaded
+
+## Comparison of the Three Types
+| Type | What Goes Wrong | Grouping | Effect |
+|------|----------------|----------|--------|
+| Deceptive | V resolves to unexpected harmony (usually vi) | Replacement groups BACKWARD as phrase goal | Is a phrase ending |
+| Evaded | Expected cadential goal fails to appear | New material groups FORWARD as new beginning | "One more time" effect |
+| Abandoned | Cadential dominant is inverted or omitted | Cadential process interrupted | Requires new cadential attempt |
 
 # Construction / Recognition
 ## To Identify:
@@ -59,14 +69,14 @@ Cadential deviations arise infrequently in simple main themes but appear much mo
 
 # Relationships
 ## Builds Upon
-- **Cadential progression** — The normative process that is deviated from
+- **Cadential progression** -- The normative process that is deviated from
 ## Enables
-- **Cadential extension** — The additional material motivated by the deviation
-- **Theme expansion** — The cumulative lengthening effect
+- **Cadential extension** -- The additional material motivated by the deviation
+- **Theme expansion** -- The cumulative lengthening effect
 ## Related
-- **Deceptive cadence** — One of the three types
-- **Evaded cadence** — One of the three types
-- **Abandoned cadence** — One of the three types
+- **Deceptive cadence** -- One of the three types
+- **Evaded cadence** -- One of the three types
+- **Abandoned cadence** -- One of the three types
 
 # Common Errors
 - **Error**: Applying cadential deviation labels to half cadences
@@ -82,4 +92,4 @@ Chapter 5: Phrase Deviations, Cadential Deviations, and Framing Functions, pages
 # Verification Notes
 - Definition source: Direct from Caplin
 - Confidence rationale: Core framework with explicit three-type taxonomy
-- Re-extraction notes: Preserved three-type comparison from old card; added grouping-structure distinction and HC exclusion
+- Re-extraction notes: Merged cadential-deviation-summary card; added comparison table, grouping-structure criterion, abandoned cadence correction

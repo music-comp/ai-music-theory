@@ -24,11 +24,14 @@ extends:
 related:
   - periodic-subordinate-theme
   - sentential-subordinate-theme
+  - loosening-devices-subordinate-theme
 contrasts_with: []
 answers_questions:
   - "How does periodic design appear in subordinate themes?"
   - "What happens to the consequent in an expanded periodic design?"
   - "Can melodic material derive from the main theme?"
+  - "Do subordinate themes use periodic (antecedent-consequent) organization?"
+  - "How is the period loosened in subordinate themes?"
 ---
 
 # Quick Definition
@@ -49,6 +52,7 @@ Antecedent and consequent functions occur less frequently in subordinate themes 
 4. Less common than sentential organization in subordinate themes
 5. One theme in a group may be a tight-knit period for contrast
 6. Melodic material may derive from main theme's contrasting idea
+7. The expansion of the consequent is itself a loosening device
 
 # Construction / Recognition
 ## To Identify:
@@ -69,6 +73,7 @@ Expanded periodic design is one way subordinate themes can achieve the requisite
 ## Related
 - **Periodic subordinate theme** -- Broader topic of periodic functions in subordinate themes
 - **Sentential subordinate theme** -- More common alternative organization
+- **Loosening devices** -- Consequent expansion is a loosening technique
 
 # Common Errors
 - **Error**: Assuming any antecedent-consequent pairing in a subordinate theme constitutes a tight-knit period
@@ -80,4 +85,4 @@ Chapter 12: Exposition (III): Subordinate Theme, pages 417-418.
 # Verification Notes
 - Definition source: Direct from Caplin
 - Confidence rationale: Clearly described with specific example
-- Re-extraction notes: Upgraded from v2 card; added motivic derivation detail, tight-knit period contrast
+- Re-extraction notes: Merged expanded-periodic-design-subordinate into this card; added loosening device relationship

@@ -1,5 +1,5 @@
 ---
-concept: Codetta Definition and Structure
+concept: Codetta in Exposition Closing Section
 slug: codetta-definition
 category: sonata-form
 subcategory: null

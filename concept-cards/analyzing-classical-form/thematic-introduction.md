@@ -21,6 +21,7 @@ extends:
   - framing-functions
 related:
   - closing-section
+  - progressive-and-recessive-dynamic
 contrasts_with:
   - slow-introduction
 answers_questions:
@@ -35,7 +36,7 @@ A thematic introduction is a short unit (rarely more than two measures, sometime
 A thematic introduction is a before-the-beginning framing function. Its motivic content is minimal so as not to project any sense of being a basic idea. It often consists exclusively of accompanimental figurations that continue after the beginning of the theme. Most thematic introductions prolong tonic harmony in root position. They feature a progressive dynamic -- an increasing buildup of energy and anticipation. Caplin distinguishes the thematic introduction from the "slow introduction" of Chapter 16, which precedes an entire sonata-form exposition.
 
 # Prerequisites
-- **Framing functions** — The overarching category
+- **Framing functions** -- The overarching category
 
 # Key Properties
 1. Short: rarely more than 2 measures, sometimes just a chord or two
@@ -58,25 +59,27 @@ Thematic introductions help establish mood, texture, and key before the theme pr
 # Examples
 **Example 1** (p. 156): Beethoven, Sonata Op. 22, ii, m. 1 -- left-hand "vamp" figure constitutes a 1-m. introduction; theme begins with upbeat to m. 2.
 **Example 2** (p. 167): Beethoven, Op. 135, iii, mm. 1-2 -- progressive dynamic through crescendo and accumulating texture; theme begins at m. 3.
+**Example 3** (p. 200): Beethoven, Violin Concerto Op. 61, i, m. 1 -- timpani introduction (rhythmic motive).
 
 # Relationships
 ## Builds Upon
-- **Framing functions** — The before-the-beginning type
+- **Framing functions** -- The before-the-beginning type
 ## Enables
-- **Mood establishment** — Sets character before theme begins
+- **Mood establishment** -- Sets character before theme begins
 ## Related
-- **Closing section** — The corresponding after-the-end function
+- **Closing section** -- The corresponding after-the-end function
+- **Progressive and recessive dynamic** -- Introduction exhibits the progressive type
 ## Contrasts With
-- **Slow introduction** — Much larger-scale introduction preceding an entire exposition
+- **Slow introduction** -- Much larger-scale introduction preceding an entire exposition
 
 # Common Errors
 - **Error**: Counting the introduction as m. 1 of the theme
   **Correction**: The theme's measures begin with the basic idea; the introduction is external
 
 # Source Reference
-Chapter 5: Phrase Deviations, Cadential Deviations, and Framing Functions, pages 155-156, 167.
+Chapter 5: Phrase Deviations, Cadential Deviations, and Framing Functions, pages 155-156, 167, 200.
 
 # Verification Notes
 - Definition source: Direct from Caplin
 - Confidence rationale: Explicitly defined with clear examples
-- Re-extraction notes: New card (previously "introduction" -- renamed for clarity and expanded with v3.1 template)
+- Re-extraction notes: Merged introduction card; added Violin Concerto example, progressive dynamic relationship
