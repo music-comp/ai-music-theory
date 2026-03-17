@@ -1,34 +1,82 @@
 ---
 concept: Sonata Principle
-category: form
-pdf_page: 501
+slug: sonata-principle
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Recapitulation"
 chapter_number: 14
-unit: null
-authors: "William E. Caplin"
+pdf_page: 501
+section: "Subordinate Theme (Group)"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - recapitulation-harmonic-tonal-organization
+  - tonal-adjustment
+extends: []
+related:
+  - essential-sonata-closure
+  - recapitulation-content-vs-function
+contrasts_with: []
+answers_questions:
+  - "What is the sonata principle?"
+  - "Who proposed and who challenged the sonata principle?"
+  - "Is the sonata principle a rule or a tendency?"
 ---
 
-# Sonata Principle
+# Quick Definition
+The sonata principle holds that all material appearing in the subordinate key in the exposition should be transposed back into the home key in the recapitulation -- a concept associated with Cone and Rosen but challenged by Hepokoski and Darcy.
 
-A theoretical concept regarding the tonal requirements of the recapitulation.
+# Core Definition
+The observation that the subordinate theme of the recapitulation is regularly structured like that of the exposition has been explained by historians and critics -- especially Edward T. Cone and Charles Rosen -- in relation to the "sonata principle." This principle holds that all of the material appearing in the subordinate key in the exposition should be transposed back into the home key in the recapitulation. Hepokoski and Darcy have recently challenged the validity and significance of the sonata principle, noting especially the major alterations regularly given the recapitulation's subordinate theme by Haydn (and now and then by Mozart and Beethoven). Even if viewed more as a "tendency" than as a "rule," it is still worth speculating on why the later classical composers (Mozart and Beethoven) seem satisfied to retain the subordinate theme's structure most of the time. A simple answer continues to remain elusive.
 
-## Definition
+# Prerequisites
+- Understanding of recapitulation harmonic-tonal organization
+- Knowledge of tonal adjustment procedures
 
-The principle holds that all material appearing in the subordinate key in the exposition should be transposed back into the home key in the recapitulation.
+# Key Properties
+- Material in the subordinate key in the exposition should return in the home key in the recapitulation
+- Associated with Edward T. Cone and Charles Rosen
+- Challenged by Hepokoski and Darcy (noting Haydn's frequent alterations)
+- More a tendency than a strict rule
+- Mozart and Beethoven tend to follow it more consistently than Haydn
+- Why later composers follow it so consistently remains an open question
 
-## Origins
+# Construction / Recognition
+Compare the subordinate theme of the recapitulation with the exposition's. If the recapitulation retains the same structure (transposed into the home key), the sonata principle is operative. If substantial structural changes occur (as often happens in Haydn), the principle is less strictly observed. The degree to which the principle is followed varies by composer and by individual work.
 
-Associated with historians and critics Edward T. Cone and Charles Rosen.
+# Context & Application
+The sonata principle is one of the foundational concepts in sonata form theory, though its status has been debated. It provides a useful baseline expectation for how the recapitulation handles the subordinate theme: analysts can note the degree to which a given recapitulation conforms to or departs from this expectation. Departures are particularly common in Haydn, who frequently restructures the subordinate theme group in the recapitulation.
 
-## Recent Challenges
+# Examples
+- Mozart and Beethoven: subordinate theme structure typically retained in recapitulation (sonata principle observed)
+- Haydn: frequently alters the subordinate theme's structure in the recapitulation, challenging the sonata principle's universality
 
-Hepokoski and Darcy have challenged the validity and significance of the sonata principle, noting especially the major alterations regularly given the recapitulation's subordinate theme by Haydn.
+# Relationships
+## Builds Upon
+- recapitulation-harmonic-tonal-organization
+- tonal-adjustment
+## Enables
+None
+## Related
+- essential-sonata-closure
+- recapitulation-content-vs-function
+## Contrasts With
+None
 
-## Current Understanding
+# Common Errors
+- Treating the sonata principle as an absolute rule that every recapitulation must follow
+- Assuming departures from the sonata principle indicate compositional failure
 
-Even if viewed more as a "tendency" than a "rule," it remains worth speculating why later classical composers (Mozart and Beethoven) seem satisfied to retain the subordinate theme's structure most of the time.
+# Common Confusions
+- The sonata principle is NOT a prescriptive rule -- it describes a tendency observed primarily in Mozart and Beethoven; Haydn frequently and deliberately departs from it
+- Following the sonata principle does NOT mean the recapitulation is a mere transposition -- ornamental changes, register adjustments, and cadential intensification may still occur
 
-## Ongoing Question
+# Source Reference
+Chapter 14: Recapitulation, PDF p. 501, "Subordinate Theme (Group)" (Sonata Principle box)
 
-A simple answer to why the sonata principle is followed so consistently by Mozart and Beethoven continues to remain elusive.
+# Verification Notes
+Upgraded from v2 card; preserved: definition, origins, recent challenges, current understanding, ongoing question. Added v3.1 fields including slug, tier, answers_questions, relationships hierarchy, key properties, common errors.

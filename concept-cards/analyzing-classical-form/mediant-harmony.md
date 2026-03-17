@@ -1,60 +1,88 @@
 ---
 concept: Mediant Harmony
-category: theory
-source: "Analyzing Classical Form: An Approach for the Classroom"
+slug: mediant-harmony
+category: harmony
+subcategory: harmonic-vocabulary
+tier: foundational
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "A Review of Harmony"
 chapter_number: 1
-pdf_page: 23
-unit: null
-authors: William E. Caplin
+pdf_page: 31
+section: "Harmonic Vocabulary"
+extraction_confidence: high
+aliases:
+  - III
+  - mediant triad
+prerequisites:
+  - scale-degree
+  - dominant-function
+extends: []
+related:
+  - leading-tone-seventh-chord
+  - circle-of-fifths
+contrasts_with:
+  - submediant-harmony
+answers_questions:
+  - "Can III function as a dominant substitute?"
+  - "When does III lack harmonic function?"
+  - "How does III typically appear in classical music?"
 ---
 
 # Quick Definition
-The triad built on the third scale degree (III), which can function as a dominant substitute in limited contexts (III6-I) but often appears without clear function in sequential progressions.
+The triad built on the third scale degree (III), which can function as a dominant substitute in limited contexts (III6-I) but most often appears without clear function in sequential progressions.
 
-# Formal Definition
-In certain limited contexts, the harmony built on the third degree (III) can function as a substitute for the dominant (as in the progression III6-I). However, III frequently appears in sequential contexts where it lacks genuine harmonic function and serves merely as part of a melodic-contrapuntal pattern.
+# Core Definition
+"In certain limited contexts, the harmony built on the third degree (III) can function as a substitute for the dominant (as in the progression III6-I)" (p. 31). However, III frequently appears in sequential contexts where it lacks genuine harmonic function and serves merely as part of a pattern. Its functional ambiguity makes context essential for analysis.
 
-# Musical/Theoretical Formulation
-Mediant function depends on context:
+# Prerequisites
+- **Scale degree** — III is identified by its root on scale degree 3
+- **Dominant function** — Understanding dominant function is needed to assess III's potential as substitute
 
-**As dominant substitute:**
-- III6-I progression
-- III contains the leading tone (in major)
-- Functions like a dominant but without root-position V
+# Key Properties
+1. Built on scale degree 3
+2. Can function as dominant substitute in limited contexts (III6-I)
+3. Contains the leading tone (in major), supporting dominant-like resolution
+4. Most commonly appears in sequential contexts without genuine function
+5. Functional ambiguity: context determines whether III is functional or pattern-based
 
-**In sequential contexts:**
-- No genuine harmonic function
-- Part of pattern (e.g., descending-fifth sequence: III-VI-II-V-I)
-- Linked by root motion, not functional relation
+# Construction / Recognition
+## To Identify:
+1. Locate a triad built on scale degree 3
+2. Check whether it resolves to tonic (potential dominant substitute)
+3. If it appears within a sequential pattern (e.g., III-VI-II-V), classify as non-functional
+4. Reserve dominant-substitute classification for specific voice-leading contexts
 
-Note: VII chords "are not considered dominants when, in some sequential situations, they progress to nontonic harmonies, such as III" - showing that III itself is not always a functional goal.
-
-# Musical Context/Application
-III appears:
-- As dominant substitute (rare, specific voice-leading)
-- In circle-of-fifths sequences (common)
-- In third-based sequences (descending or ascending thirds)
-
-The functional ambiguity of III makes context essential for analysis. Its most common appearances are non-functional (sequential) rather than as true dominant substitute.
+# Context & Application
+III appears most frequently in circle-of-fifths sequences (III-VI-II-V-I) and descending-third sequences, where it lacks genuine harmonic function. Its role as dominant substitute is rare and requires specific voice-leading conditions (III6-I). The functional ambiguity of III makes it one of the most context-dependent harmonies in tonal analysis.
 
 # Examples
-The chapter notes: "In certain limited contexts, the harmony built on the third degree (III) can function as a substitute for the dominant (as in the progression III6-I)" (p. 31).
+**Example 1** (p. 31): "In certain limited contexts, the harmony built on the third degree (III) can function as a substitute for the dominant (as in the progression III6-I)."
 
-Example 1.17 (pp. 42-43) shows III in descending-fifth sequential progressions: "III-VI-II-V-I."
+**Example 2** (pp. 42-43): Example 1.17 shows III in descending-fifth sequential progressions: "III-VI-II-V-I."
 
-# Related Concepts
-- Dominant Function
-- Sequential Progression
-- Descending-Fifth Sequence
-- Dominant Substitute
-- Harmonic Function
+# Relationships
+## Builds Upon
+- **Scale degree** — Identified by position on scale degree 3
+## Enables
+- Nothing specific; III is functionally ambiguous
+## Related
+- **Circle of fifths** — III appears as a step in descending-fifth sequences
+- **Leading-tone seventh chord** — VII progressing to III represents non-functional motion
+## Contrasts With
+- **Submediant harmony** — VI has clearer tonic-substitute function; III is more ambiguous
+
+# Common Errors
+- **Error**: Assuming III always has dominant function
+  **Correction**: III functions as dominant substitute only in specific limited contexts (e.g., III6-I)
 
 # Common Confusions
-- Assuming III always has dominant function (context-dependent)
-- Treating III in sequences as functionally significant (often non-functional)
-- Not recognizing the limited contexts where III substitutes for V
-- Confusing III's role in major vs. minor modes
+- **Confusion**: Treating III in sequences as functionally significant
+  **Clarification**: In sequential contexts, III is part of a pattern and lacks genuine harmonic function
 
 # Source Reference
-Chapter 1: A Review of Harmony, pages 24, 31, 42-43 (PDF pages 24, 31, 42-43)
+Chapter 1: A Review of Harmony, pages 24, 31, 42-43.
+
+# Verification Notes
+- Re-extracted from v2 card; upgraded to v3.1 format

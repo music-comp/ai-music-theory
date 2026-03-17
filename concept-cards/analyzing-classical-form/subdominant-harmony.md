@@ -1,63 +1,91 @@
 ---
 concept: Subdominant Harmony
-category: theory
-source: "Analyzing Classical Form: An Approach for the Classroom"
+slug: subdominant-harmony
+category: harmony
+subcategory: harmonic-vocabulary
+tier: foundational
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "A Review of Harmony"
 chapter_number: 1
-pdf_page: 23
-unit: null
-authors: William E. Caplin
+pdf_page: 32
+section: "Harmonic Vocabulary"
+extraction_confidence: high
+aliases:
+  - IV
+  - subdominant triad
+prerequisites:
+  - pre-dominant-function
+  - scale-degree
+extends:
+  - pre-dominant-function
+related:
+  - supertonic-harmony
+  - common-tones
+contrasts_with:
+  - supertonic-harmony
+answers_questions:
+  - "Is IV the most common pre-dominant in classical music?"
+  - "How does IV compare to II6 in frequency?"
+  - "How does IV function in prolongational contexts?"
 ---
 
 # Quick Definition
-The triad or seventh chord built on the fourth scale degree (IV), functioning as a pre-dominant, though less frequently employed than the supertonic (II6) in classical music.
+The triad built on the fourth scale degree (IV), functioning as a pre-dominant, though less frequently employed than the supertonic (II6) in classical music.
 
-# Formal Definition
-The subdominant triad (IV) is a pre-dominant harmony often thought to be the most typical of this function. However, examination of the classical literature reveals that the supertonic triad in first inversion (II6) is more often employed. Both IV and II6 can be enriched through the addition of dissonant sevenths and through modal borrowing (mixture).
+# Core Definition
+The subdominant triad (IV) is often thought to be the most typical pre-dominant harmony. However, "examination of the classical literature reveals, however, that the supertonic triad in first inversion (II6) is more often employed" (p. 32). Both IV and II6 can be enriched through the addition of dissonant sevenths and through modal borrowing (mixture). IV also appears in prolongational contexts as a neighboring chord embellishing tonic.
 
-# Musical/Theoretical Formulation
-Forms of subdominant harmony:
-- **IV**: Root position
-- **IV6**: First inversion
-- **IV7**: With added seventh
-- **iv**: Minor subdominant (in minor mode or through mixture)
+# Prerequisites
+- **Pre-dominant function** — IV serves as pre-dominant
+- **Scale degree** — Built on scale degree 4
 
-Characteristics:
-- Contains scale degree 4 in root position (same as II6 in bass)
-- Functions as pre-dominant
-- Creates plagal motion when progressing to I (IV-I)
-- May substitute for II or be enriched through mixture
+# Key Properties
+1. Built on scale degree 4 (root position IV, or IV6 in first inversion)
+2. Functions as pre-dominant within cadential progressions
+3. Less frequently used than II6 as cadential pre-dominant
+4. Can be enriched with seventh (IV7) or through mixture (iv in major)
+5. Also appears in prolongational contexts as neighboring chord
+6. Shares scale degrees 4 and 6 with II (common-tone relationship)
 
-Though textbooks often emphasize IV as the primary pre-dominant, II6 is actually more frequently employed in classical practice.
+# Construction / Recognition
+## To Identify:
+1. Locate a triad or seventh chord built on scale degree 4
+2. Determine whether it serves as pre-dominant (within a cadential progression) or prolongational (embellishing tonic)
+3. Note modal borrowing if the chord is minor subdominant in a major key
 
-# Musical Context/Application
-Subdominant harmony:
-- Functions as pre-dominant within cadential progressions
-- Creates characteristic "plagal" sound quality
-- May be used in prolongational progressions (embellishing tonic)
-- Less common than II6 as cadential pre-dominant
-
-In Example 1.5, the tonic pedal contains "various embellishing dominant and subdominant harmonies," showing IV in a prolongational rather than cadential context.
+# Context & Application
+IV functions as pre-dominant within cadential progressions and as a neighboring chord in prolongational contexts. The recognition that II6 is more common than IV as cadential pre-dominant is an important correction to the emphasis of many textbooks. IV creates a characteristic "plagal" quality when progressing to I (IV-I), though this is not the same as an authentic cadential function.
 
 # Examples
-Example 1.11b (p. 37): Shows the cadential progression with IV as pre-dominant: I6 - IV - V7 - I.
+**Example 1** (p. 37): Example 1.11b shows the cadential progression with IV as pre-dominant: I6-IV-V7-I.
 
-Example 1.5 (Haydn, Symphony No. 93, mm. 29-32): "The opening tonic prolongational progression is well projected by the tonic pedal in the bass voice, within which occur various embellishing dominant and subdominant harmonies."
+**Example 2** (Haydn, Symphony No. 93, mm. 29-32): Example 1.5 shows "various embellishing dominant and subdominant harmonies" within a tonic prolongational progression.
 
-Example 1.8 (p. 34): IV appears as a neighboring chord in tonic prolongational progressions.
+**Example 3** (p. 34): Example 1.8 shows IV as a neighboring chord in tonic prolongational progressions.
 
-# Related Concepts
-- Pre-dominant Function
-- Supertonic Harmony
-- Plagal Cadence
-- Modal Borrowing
-- Prolongational Progression
+# Relationships
+## Builds Upon
+- **Pre-dominant function** — IV is one expression of pre-dominant function
+## Enables
+- **Cadential progression** — Serves as pre-dominant between initial tonic and dominant
+## Related
+- **Supertonic harmony** — II6 shares pre-dominant function; both have scale degree 4 in bass
+- **Common tones** — IV and II share scale degrees 4 and 6
+## Contrasts With
+- **Supertonic harmony** — II6 is more frequently employed as cadential pre-dominant
+
+# Common Errors
+- **Error**: Assuming IV is the most common pre-dominant
+  **Correction**: II6 is more frequently employed in classical music
 
 # Common Confusions
-- Assuming IV is the most common pre-dominant (II6 is more frequent in classical music)
-- Confusing IV-I (plagal) with authentic cadential function
-- Not recognizing IV in prolongational contexts (neighboring tonic)
-- Forgetting that IV can be enriched through mixture (iv in major)
+- **Confusion**: Confusing IV-I (plagal) motion with authentic cadential function
+  **Clarification**: Plagal motion (IV-I) does not carry the same cadential weight as authentic V-I motion
 
 # Source Reference
-Chapter 1: A Review of Harmony, pages 24, 32-33, 34, 37 (PDF pages 24, 32-33, 34, 37)
+Chapter 1: A Review of Harmony, pages 24, 32-33, 34, 37.
+
+# Verification Notes
+- Re-extracted from v2 card; upgraded to v3.1 format

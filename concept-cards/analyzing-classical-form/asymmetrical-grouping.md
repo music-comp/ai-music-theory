@@ -1,57 +1,87 @@
 ---
 concept: Asymmetrical Grouping Structure
-chapter: "Exposition II: Transition"
+slug: asymmetrical-grouping
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 346
-chapter_number: 11
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (II): Transition"
+chapter_number: 11
+pdf_page: 346
+section: "Phrase-structural Organization; Loosening Devices"
+extraction_confidence: high
+aliases:
+  - asymmetrical grouping
+  - irregular phrase lengths
+prerequisites:
+  - tight-knit-vs-loose-organization
+  - transition-loosening-devices
+extends:
+  - tight-knit-vs-loose-organization
+related:
+  - extension
+  - compression
+contrasts_with:
+  - symmetrical-grouping
+answers_questions:
+  - "What makes grouping structure asymmetrical?"
+  - "How does asymmetrical grouping contribute to formal loosening?"
+  - "Why is asymmetry appropriate for transitions?"
 ---
 
-## Asymmetrical Grouping Structure
+# Quick Definition
+Asymmetrical grouping structure is a criterion of loose organization in which phrase lengths do not balance and units are irregular (e.g., 3, 5, or 7 measures instead of 2, 4, or 8), contrasting with the balanced, symmetrical groupings of tight-knit themes.
 
-**Asymmetrical grouping structure** is a criterion of loose organization commonly found in transitions.
+# Core Definition
+Grouping is asymmetrical when phrase lengths do not balance, units are irregular, and groupings do not divide evenly. Tight-knit themes typically feature balanced groupings such as 2+2+4 (sentence) or 4+4 (period). Transitions frequently display asymmetrical grouping through extended continuations (longer than presentations), compressed or expanded phrases, irregular sequential patterns, and non-standard phrase lengths. This asymmetry creates forward momentum, resists balanced closure, propels the music toward the dominant goal, and contributes to overall loose organization. Despite the asymmetry, transitions remain organized: internal units still manifest phrase functionality and the overall structure has clear direction (Ch. 11, pp. 331, 346).
 
-### Definition
+# Prerequisites
+- **Tight-knit vs. loose organization** -- Asymmetry is a criterion of loose organization
+- **Transition loosening devices** -- Context for how asymmetry functions
 
-Grouping is asymmetrical when:
-- Phrase lengths do not balance
-- Units are irregular (3, 5, 7 measures instead of 2, 4, 8)
-- Groupings do not divide evenly
+# Key Properties
+1. Phrase lengths do not balance (e.g., 4+3 instead of 4+4)
+2. Units may be irregular (3, 5, 7 measures instead of 2, 4, 8)
+3. Groupings do not divide evenly
+4. Creates forward momentum and resists balanced closure
+5. Despite asymmetry, transitions remain formally organized
+6. Often produced by extension of continuation or compression of other functions
 
-### Contrast with Tight-Knit Themes
+# Construction / Recognition
+## To Identify:
+1. Count measure groupings within the transition
+2. Compare phrase lengths -- are they balanced or unequal?
+3. Check if continuation is longer than presentation
+4. Look for irregular sequential patterns
+5. Note whether the asymmetry serves the transition's forward drive
 
-Tight-knit themes typically feature:
-- 2+2+4 (sentence)
-- 4+4 (period)
-- Balanced, symmetrical groupings
+# Context & Application
+Asymmetrical grouping is one of seven loosening devices Caplin lists for transitions (alongside extension of continuation, expansion of cadential function, omission of initiating function, modal shift, tonicization of remote regions, and nonconventional formal structures). It frequently results from the combination of extension in one function and compression in another.
 
-### Transition's Asymmetry
+# Examples
+**Example 1** (p. 333): Beethoven, Piano Sonata Op. 49/1, i, mm. 9-15 -- Transition with asymmetrical grouping structure (4+3), along with modulating tonal structure and slight expansion of half-cadential progression supporting the compressed continuation phrase.
 
-Transitions often display:
-- Extended continuation (longer than presentation)
-- Compressed or expanded phrases
-- Irregular sequential patterns
-- Non-standard phrase lengths
+# Relationships
+## Builds Upon
+- **Tight-knit vs. loose organization** -- Asymmetry is a key loosening criterion
+## Enables
+- **Transition loosening** -- Helps fulfill transition's destabilizing function
+## Related
+- **Extension** -- Can produce asymmetry when one function is extended
+- **Compression** -- Can produce asymmetry when combined with extension
+## Contrasts With
+- **Symmetrical grouping** -- Balanced phrase lengths typical of tight-knit themes
 
-### Effect
+# Common Errors
+- **Error**: Assuming asymmetrical grouping means the passage is disorganized
+  **Correction**: Asymmetry is a controlled loosening device; internal units still manifest clear phrase functionality
 
-Asymmetrical grouping:
-- Creates forward momentum
-- Resists the sense of balanced closure
-- Propels music toward the dominant goal
-- Contributes to overall loose organization
+# Source Reference
+Chapter 11: Exposition (II): Transition, pages 331, 346.
 
-### Still Organized
-
-Despite asymmetry, transitions are still **organized**:
-- Internal units manifest phrase functionality
-- The overall structure has clear direction
-- Asymmetry serves the formal function
-
-### Related Concepts
-- [[transition-loosening-devices]]
-- [[tight-knit-vs-loose-organization]]
-- [[extension]]
-- [[compression]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Listed explicitly as loosening device with clear definition
+- Re-extraction notes: Upgraded from v2 card; added specific example with measure groupings, distinguished from disorganization

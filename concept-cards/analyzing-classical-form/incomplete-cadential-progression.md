@@ -1,66 +1,87 @@
 ---
 concept: Incomplete Cadential Progression
-category: theory
-source: "Analyzing Classical Form: An Approach for the Classroom"
+slug: incomplete-cadential-progression
+category: harmony
+subcategory: cadential-progressions
+tier: foundational
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "A Review of Harmony"
 chapter_number: 1
-pdf_page: 23
-unit: null
-authors: William E. Caplin
+pdf_page: 37
+section: "Cadential Progressions"
+extraction_confidence: high
+aliases:
+  - incomplete cadence
+prerequisites:
+  - cadential-progression
+extends:
+  - cadential-progression
+related:
+  - complete-cadential-progression
+  - initial-tonic
+contrasts_with:
+  - complete-cadential-progression
+answers_questions:
+  - "What makes a cadential progression incomplete?"
+  - "Which functions are most commonly omitted?"
+  - "Are incomplete cadential progressions weaker than complete ones?"
 ---
 
 # Quick Definition
-A cadential progression that omits one or more constituent harmonic functions, typically lacking the initial tonic and/or pre-dominant.
+A cadential progression that omits one or more harmonic functions, typically lacking the initial tonic and/or pre-dominant, yet remaining entirely viable.
 
-# Formal Definition
-An incomplete cadential progression lacks an initial tonic or a pre-dominant. The initial tonic is omitted more often than the pre-dominant, since eliminating the latter results in the loss of a fundamental harmonic function. An incomplete authentic cadential progression may even lack both initial tonic and pre-dominant, resulting in the basic V7 - I succession.
+# Core Definition
+An incomplete cadential progression lacks an initial tonic or a pre-dominant. "The initial tonic is left out more often than the pre-dominant, since eliminating the latter results in the loss of a fundamental harmonic function" (p. 37). Even the most reduced forms remain viable: the progression I-V is "widely used" for half cadences, and V-I is "an entirely viable cadential progression" for authentic cadences (Caplin, pp. 37, 40).
 
-# Musical/Theoretical Formulation
-Examples of incomplete cadential progressions:
+# Prerequisites
+- **Cadential progression** — Must understand the complete form to recognize what is omitted
 
-**Authentic (omitting initial tonic):**
-- II6 - V7 - I
+# Key Properties
+1. Omits initial tonic, pre-dominant, or both
+2. Initial tonic is omitted more frequently than pre-dominant
+3. II6-V7-I (omitting initial tonic) is common for authentic cadences
+4. I-V (omitting pre-dominant) is widely used for half cadences
+5. V7-I (omitting both initial tonic and pre-dominant) remains entirely viable
+6. Incomplete progressions are NOT inferior to complete ones
 
-**Authentic (omitting pre-dominant):**
-- I6 - V7 - I
+# Construction / Recognition
+## To Identify:
+1. Locate the cadential progression boundaries
+2. Check which harmonic functions are present
+3. If initial tonic, pre-dominant, or both are missing, the progression is incomplete
+4. Note that incompleteness does not diminish cadential validity
 
-**Authentic (omitting both):**
-- V7 - I (still entirely viable)
-
-**Half (omitting initial tonic):**
-- II6 - V
-
-**Half (omitting pre-dominant):**
-- I - V (widely used)
-
-The very incomplete progression I - V (for half cadence) and V - I (for authentic) remain entirely viable cadential progressions.
-
-# Musical Context/Application
-Incomplete cadential progressions are neither weaker nor defective:
-- Compositional context determines the choice between complete and incomplete
-- There is nothing inadequate about incomplete progressions
-- They do not require a following complete progression to resolve any deficiency
-- The omission of pre-dominant is less common because it eliminates a fundamental function
-
-Incomplete progressions appear regularly throughout the classical repertoire with full cadential effect.
+# Context & Application
+Whether a composer employs a complete or incomplete cadential progression depends on circumstances unique to the given context. There is "nothing inadequate about incomplete cadential progressions"; they do not require a following complete progression to resolve any deficiency. The very incomplete I-V half-cadential progression is one of the most widely used patterns in classical music.
 
 # Examples
-Example 1.15c (p. 40): The very incomplete half-cadential progression I - V, which is "widely used."
+**Example 1** (p. 40): Example 1.15c shows the very incomplete half-cadential progression I-V, described as "widely used."
 
-The chapter notes that excluding both initial tonic and pre-dominant "occurs infrequently in the literature, but the resulting V - I succession still represents an entirely viable cadential progression."
+**Example 2** (p. 37): The chapter notes that excluding both initial tonic and pre-dominant "occurs infrequently in the literature, but the resulting V-I succession still represents an entirely viable cadential progression."
 
-# Related Concepts
-- Complete Cadential Progression
-- Cadential Progression
-- Authentic Cadential Progression
-- Half-Cadential Progression
-- Harmonic Function
+# Relationships
+## Builds Upon
+- **Cadential progression** — Incomplete is a subtype of cadential progression
+## Enables
+- **Tonal confirmation** — Even incomplete progressions confirm tonality
+## Related
+- **Initial tonic** — The most commonly omitted function
+- **Complete cadential progression** — The counterpart with all functions present
+## Contrasts With
+- **Complete cadential progression** — Differs in harmonic content, not structural strength
+
+# Common Errors
+- **Error**: Viewing incomplete progressions as "weaker" than complete ones
+  **Correction**: Both are equally viable; the choice depends on compositional context
 
 # Common Confusions
-- Viewing incomplete progressions as "weaker" than complete ones (they are not hierarchically inferior)
-- Thinking incomplete progressions must be "resolved" by subsequent complete progressions
-- Assuming the omission of functions creates formal deficiency
-- Overlooking that even V-I alone constitutes a cadential progression
+- **Confusion**: Thinking incomplete progressions must be "resolved" by subsequent complete progressions
+  **Clarification**: There is nothing inadequate about incomplete cadential progressions; they need no compensatory resolution
 
 # Source Reference
-Chapter 1: A Review of Harmony, pages 27, 37, 40 (PDF pages 27, 37, 40)
+Chapter 1: A Review of Harmony, pages 27, 37, 40.
+
+# Verification Notes
+- Re-extracted from v2 card; upgraded to v3.1 format

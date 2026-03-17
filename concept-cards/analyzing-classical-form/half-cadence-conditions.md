@@ -1,47 +1,96 @@
 ---
 concept: Half Cadence Conditions
-category: theory
-pdf_page: 166
-chapter_number: 5
-unit: null
-authors: "William E. Caplin"
+slug: half-cadence-conditions
+category: cadential-types
+subcategory: null
+tier: foundational
 source: "Analyzing Classical Form"
-chapter: "Phrase Deviations, Cadential Deviations, and Framing Functions"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
+chapter: "The Sentence"
+chapter_number: 2
+pdf_page: 78
+section: "Basic Cadence Types"
+extraction_confidence: high
+aliases:
+  - HC conditions
+  - half cadence requirements
+prerequisites:
+  - cadence-classification
+  - cadential-progression
+extends:
+  - cadence-classification
+related:
+  - perfect-authentic-cadence-conditions
+  - standing-on-dominant
+  - annotating-cadences
+contrasts_with:
+  - perfect-authentic-cadence-conditions
+answers_questions:
+  - "What conditions must be met for a genuine half cadence?"
+  - "What disqualifies a dominant arrival from being an HC?"
+  - "Why doesn't a standing on the dominant end with an HC?"
 ---
 
-# Half Cadence Conditions
+# Quick Definition
+A genuine half cadence requires: (1) root-position dominant, (2) a half-cadential progression leading to V, (3) proper phrase-structural position at phrase end. A dominant with a dissonant seventh (V7) weakens cadential status. A standing on the dominant does NOT end with an HC because no harmonic progression occurs -- dominant is simply prolonged.
 
-A genuine **half cadence** requires specific conditions that distinguish it from mere dominant arrivals.
+# Core Definition
+The half cadence is the weakest of the three cadence types, ending on the dominant with both harmonic and melodic incompleteness (pp. 78, 102). A genuine HC requires a root-position dominant chord arrived at through a proper half-cadential progression (such as I-V or I6-II6-V). The HC must occur at a phrase-structural boundary. Common half-cadential progressions include the brief I-V and the more extended I-IV-V patterns. The phrygian cadence is a special type of HC featuring characteristic half-step motion in the bass, with augmented-sixth chords (Italian or French) typically appearing in classical style in place of the Baroque IV6 (p. 80). The cadence label should be placed where the root of V first appears, not when suspensions resolve (p. 80).
 
-## Requirements for True HC
+# Prerequisites
+- **Cadence classification** — HC is one of three cadence types
+- **Cadential progression** — A proper harmonic progression must lead to V
 
-1. **Root-position dominant**: The V must be in root position
-2. **No dissonant seventh**: V7 weakens cadential status
-3. **Proper progression**: A half-cadential progression must lead to V
-4. **Phrase-structural position**: Must occur at phrase end
+# Key Properties
+1. Ends on root-position dominant (V)
+2. Requires a half-cadential progression leading to V
+3. Must fall at a phrase-structural boundary
+4. Weakest cadence type (harmonically and melodically incomplete)
+5. V7 weakens cadential status
+6. Phrygian cadence is a special HC with half-step bass motion
+7. Label placed where root of V first appears
 
-## What Disqualifies as HC
+# Construction / Recognition
+## To Identify:
+1. Locate a root-position V at a phrase boundary
+2. Verify a half-cadential progression precedes the V
+3. Ensure V is not merely a passing or embellishing dominant
+4. Check that V is not part of an ongoing prolongation (standing on dominant)
+5. Place the HC label at the point where V first appears in root position
 
-**Dominant arrival** (not HC) occurs when:
-- Dominant is inverted (V6 or V6/4)
-- Dominant contains dissonant seventh (V7)
-- No proper half-cadential progression precedes it
-- Dominant does not fall at phrase-structural end
+# Context & Application
+The HC is the cadence most commonly used to end antecedent phrases in periods, creating the weak closure that motivates the consequent's stronger PAC. Not every prominent dominant equals an HC -- premature dominant arrivals (before phrase-structural end) and standing-on-the-dominant passages (prolonging V without cadential progression) do not qualify. The six-four embellishment of V is common at HC; the label is placed at the root-position arrival, not when the 6-4 resolves (p. 80).
 
-## Standing on the Dominant
+# Examples
+**Example 1** (p. 80, Ex. 2.22g): Haydn, H. 30, iii -- simple HC with incomplete progression I-V.
+**Example 2** (p. 80, Ex. 2.22h): Beethoven, Op. 10, No. 1, iii -- phrygian HC with half-step bass motion and augmented sixth.
+**Example 3** (p. 96, Ex. 3.1): Mozart, K. 525, ii -- brief HC progression I-V ending antecedent at m. 4.
 
-A standing on the dominant does NOT end with HC because:
-- No harmonic progression occurs
-- Dominant is simply prolonged
-- No cadential process takes place
+# Relationships
+## Builds Upon
+- **Cadence classification** — HC is the weakest cadence type
+## Enables
+- **Antecedent phrase** — Most antecedents end with HC
+- **Weak cadential closure** — HC is the primary weak cadence
+## Related
+- **Standing on dominant** — Prolongation of V, NOT an HC
+- **Annotating cadences** — Placement rules for HC labels
+## Contrasts With
+- **Perfect authentic cadence conditions** — HC (incomplete) vs. PAC (complete)
 
-## Premature Dominant Arrival
+# Common Errors
+- **Error**: Labeling every prominent dominant arrival as an HC
+  **Correction**: Verify all conditions: root position, proper progression, phrase-structural position
 
-When dominant arrives before phrase-structural end:
-- Not a true cadence
-- The arrival is "premature"
-- Must wait for phrase-structural conclusion
+# Common Confusions
+- **Confusion**: Thinking a standing on the dominant ends with an HC
+  **Clarification**: A standing on the dominant prolongs V without any cadential progression; no harmonic process is completed, so no cadence occurs
 
-## Analysis Implication
+# Source Reference
+Chapter 2: The Sentence, pages 78-80; Chapter 5: Framing Functions, page 157.
 
-Not every prominent dominant equals an HC. Verify all conditions before labeling a half cadence.
+# Verification Notes
+- Definition source: Direct from pp. 78-80
+- Confidence rationale: Explicitly defined with examples of HC progressions
+- Re-extraction notes: Upgraded from v2; corrected primary chapter attribution to Ch2 (not Ch5); added phrygian cadence detail; added annotation placement rule

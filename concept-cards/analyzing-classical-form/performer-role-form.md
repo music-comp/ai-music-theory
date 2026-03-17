@@ -1,51 +1,75 @@
 ---
 concept: The Performer's Role in Formal Articulation
-chapter: "Exposition III: Subordinate Theme"
+slug: performer-role-form
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
-pdf_page: 394
-chapter_number: 12
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Exposition (III): Subordinate Theme"
+chapter_number: 12
+pdf_page: 394
+section: "Extension of Cadential Function"
+extraction_confidence: high
+aliases:
+  - performance and form
+  - Luftpause
+prerequisites:
+  - evaded-cadence-subordinate
+  - one-more-time-technique
+extends: []
+related:
+  - cadential-extension
+contrasts_with: []
+answers_questions:
+  - "How can a performer clarify formal ambiguity?"
+  - "What is a Luftpause and how does it function?"
+  - "How does formal analysis inform performance?"
 ---
 
-## The Performer's Role in Formal Articulation
+# Quick Definition
+In situations of potential formal ambiguity -- such as when a cadential evasion moves to root-position tonic that could be heard as a cadential arrival -- the performer can play a decisive role in projecting the intended formal structure, using techniques such as the Luftpause (breath pause) and dynamic shaping.
 
-In situations of potential formal ambiguity, the **performer can play a decisive role** in clarifying or projecting the intended formal structure.
+# Core Definition
+When a cadential evasion moves to root-position tonic, the tonic could potentially be heard as a cadential arrival rather than a new beginning. The performer can help project the intended sense of cadential evasion through specific techniques. A Luftpause (breath pause) -- a slight breath before the "evading" tonic -- makes the tonic sound like a new beginning rather than a cadential goal. Dynamic shaping reinforces this: the preceding phrase should build toward the expected cadence, while the "evading" moment resets the dynamic level, creating a sense of interruption and restart. More broadly, understanding formal function helps performers project the intended formal structure, make informed interpretive decisions, and communicate the music's logic to listeners (Caplin, Ch. 12, p. 394).
 
-### Evaded Cadence Situations
+# Prerequisites
+- **Evaded cadence in subordinate theme** -- The primary context for performer intervention
+- **One more time technique** -- Often follows the evaded cadence
 
-When a cadential evasion moves to root-position tonic:
-- The tonic could potentially be heard as a cadential arrival
-- The performer can help project the sense of cadential evasion
+# Key Properties
+1. Performer can clarify formal ambiguity at cadential evasions
+2. Luftpause (breath pause) before evading tonic projects new beginning
+3. Dynamic shaping: build to expected cadence, reset at evasion
+4. Prevents root-position tonic from sounding like cadential arrival
+5. Formal analysis directly informs performance decisions
+6. Performer must decide: closure or continuation?
 
-### Performance Techniques
+# Construction / Recognition
+## To Identify:
+1. Locate moments of formal ambiguity (especially evaded cadences with root-position tonic)
+2. Consider how dynamic shaping and breath placement affect the listener's perception
+3. Determine whether the composer intends the moment as evasion or arrival
+4. Shape the performance to project the intended formal function
 
-**Luftpause (breath pause)**:
-- A slight breath before the "evading" tonic
-- Makes the tonic sound like a **new beginning**
-- Prevents it from sounding like a cadential **goal**
+# Context & Application
+This concept bridges analysis and performance, demonstrating that formal-functional understanding has direct practical implications. Performers who understand whether a moment represents cadential evasion or genuine arrival can make the difference between a structurally clear and a confusing performance. The Luftpause is particularly effective because it creates a micro-silence that perceptually separates the preceding cadential approach from the new beginning.
 
-**Dynamic shaping**:
-- The preceding phrase should build toward expected cadence
-- The "evading" moment should reset dynamic level
-- Creates sense of interruption and restart
+# Relationships
+## Builds Upon
+- **Evaded cadence** -- The primary formal context
+## Related
+- **Cadential extension** -- The broader process clarified by performance
 
-### Interpretive Decisions
+# Common Errors
+- **Error**: Performing through an evaded cadence without any articulation
+  **Correction**: Use a Luftpause and dynamic reset to project the sense of interruption and restart, preventing the tonic from sounding like a cadential goal
 
-The performer must decide:
-- Whether a moment represents closure or continuation
-- How much to articulate formal boundaries
-- Whether to emphasize or smooth over phrase breaks
+# Source Reference
+Chapter 12: Exposition (III): Subordinate Theme, page 394.
 
-### Analysis Informing Performance
-
-Understanding formal function helps performers:
-- Project the intended formal structure
-- Make informed interpretive decisions
-- Communicate the music's logic to listeners
-
-### Related Concepts
-- [[evaded-cadence-subordinate]]
-- [[one-more-time-technique]]
-- [[cadential-extension-aesthetic]]
+# Verification Notes
+- Definition source: Direct from Caplin
+- Confidence rationale: Explicit performance recommendation with specific technique
+- Re-extraction notes: Upgraded from v2 card; added Luftpause detail, dynamic shaping, analysis-performance bridge

@@ -1,40 +1,83 @@
 ---
 concept: Transition Deletions and Compressions
-category: form
-pdf_page: 511
+slug: recapitulation-transition-deletions
+category: sonata-form
+subcategory: null
+tier: advanced
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "Recapitulation"
 chapter_number: 14
-unit: null
-authors: "William E. Caplin"
+pdf_page: 511
+section: "Structural Changes: Transition"
+extraction_confidence: high
+aliases: []
+prerequisites:
+  - tonal-adjustment
+  - recapitulation-harmonic-tonal-organization
+extends: []
+related:
+  - fusion-main-theme-transition
+  - nonmodulating-transition-recapitulation
+  - greater-rhythmic-continuity
+contrasts_with: []
+answers_questions:
+  - "Why is the transition often shortened in the recapitulation?"
+  - "Which parts of the transition are most likely to be deleted?"
+  - "How are two-part transitions handled in the recapitulation?"
 ---
 
-# Transition Deletions and Compressions
+# Quick Definition
+The transition in the recapitulation often deletes or compresses substantial portions of exposition material, particularly passages that prolong home-key tonic, since such prolongation is dispensable when the subordinate theme will provide abundant tonic emphasis.
 
-The reduction of transitional material in the recapitulation.
+# Core Definition
+The transition in the recapitulation often deletes or compresses substantial portions of exposition material. In extreme cases, the entire transition may be eliminated. Material usually deleted comes from the beginning of the transition, where it functions to prolong home-key tonic. Such extensive tonic prolongation was needed in the exposition to reinforce the home key before modulating, but is easily omitted in the recapitulation since the upcoming subordinate theme provides abundant tonic emphasis. If the exposition has a two-part transition, the recapitulation often deletes material from each part, eliminates the modulating passages from the second part, compresses the structure into a one-part nonmodulating transition, and avoids a redundant double HC in the home key.
 
-## General Principle
+# Prerequisites
+- Understanding of tonal adjustment in the recapitulation
+- Knowledge of recapitulation harmonic-tonal organization
 
-The transition in recapitulation often deletes or compresses substantial portions of exposition material. In extreme cases, entire transition may be eliminated.
+# Key Properties
+- Deletions usually taken from the beginning of the transition (tonic-prolongation passages)
+- Tonic prolongation dispensable since subordinate theme provides abundant home-key emphasis
+- Two-part transitions may be compressed into one-part structure
+- Modulating passages from second part eliminated
+- Redundant double HC in home key avoided
+- In extreme cases, entire transition may be eliminated
+- Creates more efficient formal proportions
 
-## What Gets Deleted
+# Construction / Recognition
+Compare the transition of the recapitulation with the exposition's. Identify which passages have been deleted (usually tonic-prolongation passages near the beginning) and which have been retained. For two-part transitions, check whether the two-part structure is preserved or compressed into a single part, and whether the double HC has been reduced to a single HC.
 
-Usually taken from beginning of transition, where they function to prolong home-key tonic.
+# Context & Application
+Transition deletions and compressions reflect the changed functional requirements of the recapitulation. In the exposition, the transition must spend time reinforcing the home key before destabilizing it for the modulation. In the recapitulation, this reinforcement is unnecessary: the home key has just been reestablished at the start of the recapitulation, and the subordinate theme will provide its ultimate confirmation. Deleting tonic-prolongation passages creates a more streamlined and efficient path to the subordinate theme.
 
-### Why These Passages
+# Examples
+- Mozart, Piano Sonata in D, K. 576, i: transition material emphasizing root-position tonic (mm. 17-23) eliminated in recapitulation since the rest of the recapitulation provides sufficient home-key tonic expression
+- General pattern: two-part exposition transition compressed to one-part recapitulation transition, avoiding double HC in home key
 
-- Extensive tonic prolongation needed in exposition to reinforce home key before modulating
-- Such prolongation easily omitted in recapitulation
-- Upcoming subordinate theme provides abundant tonic emphasis
+# Relationships
+## Builds Upon
+- tonal-adjustment
+- recapitulation-harmonic-tonal-organization
+## Enables
+- fusion-main-theme-transition
+## Related
+- nonmodulating-transition-recapitulation
+- greater-rhythmic-continuity
+## Contrasts With
+None
 
-## Two-Part Transitions
+# Common Errors
+- Assuming the transition must be the same length in the recapitulation as in the exposition
+- Failing to recognize that deleted passages were functionally redundant in the recapitulation context
 
-If exposition has two-part transition, recapitulation often:
-- Deletes material from each part
-- Eliminates modulating passages from second part
-- Compresses into one-part nonmodulating structure
-- Avoids redundant double HC in home key
+# Common Confusions
+- Transition compression is NOT the same as transition elimination -- compression retains the essential harmonic trajectory while removing redundant passages, whereas elimination removes the transition entirely (an extreme and unusual case)
 
-## Effect
+# Source Reference
+Chapter 14: Recapitulation, PDF p. 511, "Structural Changes: Transition"
 
-Creates more efficient formal proportions while maintaining essential harmonic trajectory.
+# Verification Notes
+Upgraded from v2 card; preserved: general principle, what gets deleted, two-part transitions, effect. Added v3.1 fields including slug, tier, answers_questions, relationships hierarchy, key properties, common errors. Added specific example from source text.

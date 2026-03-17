@@ -1,47 +1,79 @@
 ---
 concept: Large-Scale Tonal Structure in Sonata Form
-chapter: "Sonata Form: An Overview"
+slug: large-scale-tonal-structure
+category: sonata-form
+subcategory: null
+tier: intermediate
 source: "Analyzing Classical Form"
-pdf_page: 285
-chapter_number: 9
-unit: null
+source_slug: analyzing-classical-form
 authors: "William E. Caplin"
-category: analysis
+chapter: "Sonata Form: An Overview"
+chapter_number: 9
+pdf_page: 285
+section: "Large-scale Tonal Structure"
+extraction_confidence: high
+aliases:
+  - sonata tonal plan
+  - tonal structure of sonata form
+prerequisites:
+  - sonata-form-large-scale-structure
+  - home-key
+  - subordinate-key
+extends:
+  - sonata-form-large-scale-structure
+related:
+  - development-keys
+  - tonal-contrast-sonata
+contrasts_with: []
+answers_questions:
+  - "How does sonata form create and resolve tonal conflict?"
+  - "What is the tonal plan of each section?"
+  - "Does the exposition emphasize major or minor modality?"
 ---
 
-## Large-Scale Tonal Structure in Sonata Form
+# Quick Definition
+Sonata form creates and then resolves a dramatic conflict of tonalities: the exposition establishes the conflict between home key and subordinate key, the development intensifies it through exploration of minor-mode regions, and the recapitulation resolves it by keeping everything in the home key.
 
-Sonata form is often described as creating, and then resolving, a **dramatic conflict** of tonalities between the home key and a closely related subordinate key.
+# Core Definition
+The exposition begins in the home key (HK), confirmed by a cadence (usually PAC, possibly IAC or HC), then modulates to the subordinate key (SK), confirmed by PAC. As a general rule, the exposition emphasizes major modality, since even in minor-mode movements most of the exposition sounds in the major-mode subordinate key. The development explores one or more development keys (DK) -- in major: vi, iii, ii; in minor: iv, v -- normally confirmed by HC, less often by PAC. The development tends to emphasize minor modalities. Toward its end, the home key is restored (usually confirmed with HC or dominant arrival). The recapitulation begins in the home key and remains there throughout, with a typical move toward the subdominant region (not confirmed as a genuine key) early in the section, eventually reconfirming the home key with a PAC.
 
-### The Tonal Drama
+# Prerequisites
+- **Sonata form large-scale structure** -- The formal framework
+- **Home key** -- The primary tonal center
+- **Subordinate key** -- The rival tonality
 
-1. **Exposition**: Conflict is established
-2. **Development**: Conflict is intensified through exploration of additional tonal areas
-3. **Recapitulation**: Conflict is resolved
+# Key Properties
+1. Three-stage tonal drama: establish, intensify, resolve
+2. Exposition emphasizes major modality
+3. Development emphasizes minor modality
+4. Development keys: vi, iii, ii (major); iv, v (minor)
+5. Recapitulation stays in home key throughout
+6. Subdominant emphasis in recapitulation transition (not a genuine modulation)
 
-### Exposition's Tonal Plan
+# Construction / Recognition
+## Tonal Plan Summary:
+| Section | Tonal Activity | Modal Emphasis |
+|---------|---------------|----------------|
+| Exposition | HK confirmed, then SK confirmed (PAC) | Major |
+| Development | DK explored (HC or PAC); HK restored at end | Minor |
+| Recapitulation | HK throughout; subdominant emphasis in transition; PAC confirms HK | Resolution |
 
-- Begins in the **home key (HK)**, confirmed by a cadence (usually PAC, possibly IAC or HC)
-- Modulates to the **subordinate key (SK)**, confirmed by a PAC
-- General rule: the exposition emphasizes major modality, since even in minor-mode movements most of the exposition sounds in the major-mode subordinate key
+# Context & Application
+The large-scale tonal structure is the most fundamental organizing principle of sonata form. While thematic and phrase-structural aspects receive much analytical attention, it is the tonal conflict and its resolution that give the form its dramatic power. The modal contrast between exposition (major emphasis) and development (minor emphasis) adds an additional dimension to the tonal drama.
 
-### Development's Tonal Exploration
+# Relationships
+## Builds Upon
+- **Sonata form large-scale structure** -- The formal framework
+## Related
+- **Development keys** -- The tonal regions explored in the development
+- **Tonal contrast in sonata form** -- The dramatic conflict
+## Enables
+- **Recapitulation analysis** -- Understanding what the recapitulation resolves
 
-- Explores one or more additional **development keys (DK)**
-- Development keys normally confirmed by an HC, less often by a PAC
-- In major-mode movements: minor-mode regions of vi, iii, and ii
-- In minor-mode movements: minor-mode regions of iv and v
-- The development tends to emphasize minor modalities
-- Toward the end, the home key is restored (usually confirmed with an HC or dominant arrival)
+# Source Reference
+Chapter 9: Sonata Form: An Overview, pages 285-286.
 
-### Recapitulation's Tonal Resolution
-
-- Begins in the home key and remains there throughout
-- A move toward the subdominant region (not confirmed as genuine key) typically occurs early
-- Eventually reconfirms the home key with a PAC
-
-### Related Concepts
-- [[home-key]]
-- [[subordinate-key]]
-- [[development-keys]]
-- [[tonal-conflict]]
+# Verification Notes
+- Definition source: Direct from Caplin's "Large-scale Tonal Structure" section
+- Confidence rationale: Comprehensive tonal plan with modal observations
+- Re-extraction notes: Major revision from v2; added v3.1 template, modal emphasis contrast, tonal plan table

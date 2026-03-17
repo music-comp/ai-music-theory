@@ -1,59 +1,92 @@
 ---
 concept: Italian Sixth
-category: theory
-source: "Analyzing Classical Form: An Approach for the Classroom"
+slug: italian-sixth
+category: harmony
+subcategory: pre-dominant-harmony
+tier: foundational
+source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "A Review of Harmony"
 chapter_number: 1
-pdf_page: 23
-unit: null
-authors: William E. Caplin
+pdf_page: 32
+section: "Harmonic Vocabulary"
+extraction_confidence: high
+aliases:
+  - It+6
+  - Italian augmented sixth
+prerequisites:
+  - dominant-of-the-dominant
+  - raised-fourth-scale-degree
+extends:
+  - dominant-of-the-dominant
+related:
+  - german-sixth
+  - french-sixth
+contrasts_with:
+  - german-sixth
+  - french-sixth
+answers_questions:
+  - "What pitches make up the Italian sixth?"
+  - "How does the Italian sixth differ from the German and French sixths?"
+  - "Why is the Italian sixth the simplest augmented-sixth chord?"
 ---
 
 # Quick Definition
-An augmented-sixth chord containing only three pitches: the lowered sixth degree in the bass, the tonic pitch, and the raised fourth degree, creating the characteristic augmented-sixth interval.
+An augmented-sixth chord containing only three pitches -- lowered 6, tonic, and raised 4 -- creating the characteristic augmented-sixth interval that resolves outward to the dominant.
 
-# Formal Definition
-The Italian sixth (It+6) is one of three varieties of augmented-sixth chords functioning as pre-dominants. It is the simplest of the three, containing only the essential pitches that define the augmented-sixth sonority: the lowered sixth scale degree (typically in bass), the tonic pitch, and the raised fourth scale degree. The augmented sixth interval between lowered 6 and raised 4 resolves outward to the octave on the dominant.
+# Core Definition
+The Italian sixth (It+6) is the simplest of three varieties of augmented-sixth chords functioning as pre-dominants. It contains only the essential pitches defining the augmented-sixth sonority: the lowered sixth scale degree (typically in bass), the tonic pitch, and the raised fourth scale degree. The augmented sixth between lowered 6 and raised 4 resolves outward to the octave on the dominant (Caplin, pp. 32-33).
 
-# Musical/Theoretical Formulation
-Pitch content (in C major/minor):
-- Ab (lowered 6) - typically in bass
-- C (tonic/1)
-- F# (raised 4) - typically in an upper voice
+# Prerequisites
+- **Dominant of the dominant** — The Italian sixth belongs to the V/V pre-dominant category
+- **Raised fourth scale degree** — Contains raised 4 as the defining chromatic element
 
-Resolution:
-- Lowered 6 resolves down to 5 (dominant root)
-- Raised 4 resolves up to 5 (dominant root)
-- Creates outward resolution of augmented sixth to octave
+# Key Properties
+1. Pitch content (in C): Ab (lowered 6), C (1), F# (raised 4)
+2. Only three pitches (one is doubled in four-voice settings)
+3. Lowered 6 resolves down to 5; raised 4 resolves up to 5
+4. Creates outward resolution of augmented sixth to octave
+5. Resolves directly to root-position V (no parallel-fifth issues)
+6. Simplest of the three augmented-sixth varieties
 
-The Italian sixth is the most basic form, lacking the additional pitches found in the German and French sixths.
+# Construction / Recognition
+## To Identify:
+1. Look for the augmented sixth interval (lowered 6 to raised 4)
+2. Verify only three distinct pitches (no lowered 3 or natural 2)
+3. Note that one pitch (usually the tonic) is doubled in four-voice settings
+4. Confirm pre-dominant function resolving to V
 
-# Musical Context/Application
-The Italian sixth:
-- Functions as pre-dominant within cadential progressions
-- May embellish other pre-dominant harmonies
-- Resolves directly to root-position V
-- Creates chromatic intensification before dominant
-
-Its sparse texture (only three pitches, one often doubled) makes it useful for lighter scorings or when other augmented sixths would create voice-leading difficulties.
+# Context & Application
+The Italian sixth functions as pre-dominant within cadential progressions and may embellish other pre-dominant harmonies. Its sparse texture (only three pitches) makes it useful for lighter scorings or when the German or French sixths would create voice-leading difficulties. It can resolve directly to root-position V without needing a cadential six-four.
 
 # Examples
-Example 1.4 (Mozart, K. 332, m. 56): "The incomplete half-cadential progression, initiated by the pre-dominant IV6 (further embellished by the Italian augmented sixth)."
+**Example 1** (p. 29): Example 1.4 (Mozart, K. 332, m. 56) shows "the incomplete half-cadential progression, initiated by the pre-dominant IV6 (further embellished by the Italian augmented sixth)."
 
-The Italian sixth embellishes the IV6 pre-dominant before resolution to the half-cadential dominant.
+**Example 2** (p. 38): Example 1.13 shows augmented-sixth chords in pre-dominant contexts within cadential progressions.
 
-# Related Concepts
-- Augmented-Sixth Chords
-- German Sixth
-- French Sixth
-- Pre-dominant Function
-- Cadential Progression
+# Relationships
+## Builds Upon
+- **Dominant of the dominant** — Italian sixth is a subclass of V/V-type pre-dominants
+## Enables
+- **Cadential progression** — Provides chromatic pre-dominant intensification
+## Related
+- **German sixth** — Adds lowered 3 to the Italian's three pitches
+- **French sixth** — Adds scale degree 2 to the Italian's three pitches
+## Contrasts With
+- **German sixth** — Italian has three pitches; German has four (adds lowered 3)
+- **French sixth** — Italian has three pitches; French has four (adds natural 2)
+
+# Common Errors
+- **Error**: Confusing the Italian sixth with the German or French sixths
+  **Correction**: The Italian sixth has only three distinct pitches; the others add a fourth pitch
 
 # Common Confusions
-- Confusing with German sixth (which adds lowered 3)
-- Confusing with French sixth (which adds scale degree 2)
-- Not recognizing that tonic pitch (1) is doubled in four-voice settings
-- Treating as independent harmony rather than pre-dominant function
+- **Confusion**: Treating the Italian sixth as an independent harmony rather than pre-dominant
+  **Clarification**: Like all augmented sixths, it functions as pre-dominant resolving to V
 
 # Source Reference
-Chapter 1: A Review of Harmony, pages 29, 32-33, 38, 46 (PDF pages 29, 32-33, 38, 46)
+Chapter 1: A Review of Harmony, pages 29, 32-33, 38, 46.
+
+# Verification Notes
+- Re-extracted from v2 card; upgraded to v3.1 format

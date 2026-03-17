@@ -1,52 +1,84 @@
 ---
 concept: Analyzing Recapitulation (Small Ternary)
-category: analysis
-pdf_page: 236
-chapter_number: 7
-unit: null
-authors: "William E. Caplin"
+slug: analyzing-recapitulation-small-ternary
+category: small-forms
+subcategory: null
+tier: intermediate
 source: "Analyzing Classical Form"
+source_slug: analyzing-classical-form
+authors: "William E. Caplin"
 chapter: "The Small Ternary (Rounded Binary)"
+chapter_number: 7
+pdf_page: 236
+section: "More Details: The Recapitulation"
+extraction_confidence: high
+aliases:
+  - analyzing A-prime section
+prerequisites:
+  - small-ternary-structure-overview
+  - ornamental-vs-structural-changes
+extends:
+  - small-ternary-structure-overview
+related:
+  - comparing-recapitulation
+  - structural-vs-ornamental-changes
+  - change-in-formal-function
+contrasts_with: []
+answers_questions:
+  - "How should one analyze a recapitulation in small ternary form?"
+  - "What systematic procedure helps compare exposition and recapitulation?"
+  - "What should one do when A and A' are identical?"
 ---
 
-# Analyzing Recapitulation (Small Ternary)
+# Quick Definition
+Analyzing a recapitulation in small ternary form involves a systematic bar-by-bar comparison with the exposition, classifying every change as ornamental or structural, and asking why each change was made.
 
-A systematic procedure for analyzing recapitulations involves careful comparison with the exposition.
+# Core Definition
+Caplin prescribes a four-step analytical procedure for studying the recapitulation (A') of a small ternary: (1) compare the A and A' sections bar by bar, aligning them carefully; (2) observe every change, no matter how small; (3) classify each change as either ornamental (melody, texture, dynamics, instrumentation, accompanimental patterning) or structural (tonality, harmony, grouping structure, formal functions); (4) ask why the change was made -- what musical purpose does it serve? When sections are identical, one should ask why the composer maintained identity and what purposes exact repetition serves.
 
-## The Procedure
+# Prerequisites
+- **Small ternary structure overview** -- Must understand the A-B-A' framework
+- **Ornamental vs. structural changes** -- The classification system for differences
 
-1. **Compare bar by bar**: Align A and A' sections
-2. **Observe every change**: Note all differences
-3. **Classify changes**: Ornamental or structural?
-4. **Ask why**: What purpose does each change serve?
+# Key Properties
+1. The principal analytical method is comparison
+2. Four steps: compare, observe, classify, ask why
+3. Structural changes alter tonality, harmony, grouping structure, or formal functions
+4. Ornamental changes affect melody, texture, dynamics, instrumentation, or accompaniment
+5. Identical A and A' sections also merit analytical attention
+6. Clear answers may not always be found, but the effort deepens understanding
 
-## Structural Changes
+# Construction / Recognition
+## To Analyze:
+1. Align A and A' sections bar by bar
+2. Note every difference between them
+3. Classify each difference as ornamental or structural
+4. Ask why the composer made each change
+5. If sections are identical, ask why no changes were made and whether A was nonmodulating (allowing identity)
 
-Changes that alter fundamental organization:
-- Tonality (tonal adjustment)
-- Harmony (different progressions)
-- Grouping structure (different phrase lengths)
-- Formal functions (different phrase types)
+# Context & Application
+This analytical method applies not only to the small ternary but anticipates the same approach used for sonata-form recapitulations. The habit of systematic comparison reveals compositional choices, highlights musical relationships, and deepens understanding of the work. You may not always find clear answers, but the effort almost always yields interesting observations.
 
-## Ornamental Changes
+# Examples
+**Example** (pp. 236-250): Throughout Chapter 7, Caplin demonstrates the comparative method on multiple small ternary recapitulations, showing how structural changes such as tonal adjustment, compression, expansion, and changes in formal function coexist with ornamental changes in texture and melodic embellishment.
 
-Changes that don't alter fundamentals:
-- Melodic embellishment
-- Texture variation
-- Dynamics
-- Instrumentation
-- Accompanimental patterns
+# Relationships
+## Builds Upon
+- **Small ternary structure overview** -- The form whose recapitulation is being analyzed
+## Enables
+- **Comparing recapitulation** -- Same method used in sonata form
+## Related
+- **Change in formal function** -- One type of structural change found in recapitulations
+- **Structural vs. ornamental changes** -- The classification categories
 
-## When Sections Are Identical
+# Common Errors
+- **Error**: Treating ornamental changes as structural
+  **Correction**: Only changes to tonality, harmony, grouping structure, or formal functions count as structural; changes in texture, dynamics, or embellishment are ornamental
 
-If A and A' are identical, ask:
-- Why no changes?
-- What purposes are served by exact repetition?
-- Is the exposition nonmodulating (allowing identity)?
+# Source Reference
+Chapter 7: The Small Ternary (Rounded Binary), pages 236-250.
 
-## Answering "Why?"
-
-You may not always find clear answers, but the effort:
-- Reveals compositional choices
-- Highlights musical relationships
-- Deepens understanding of the work
+# Verification Notes
+- Definition source: Direct from Caplin's analytical procedure (Ch. 7)
+- Confidence rationale: Systematic method explicitly stated in text
+- Re-extraction notes: Major expansion from v2 card; added full v3.1 template with all fields, detailed procedure, and contextual application
