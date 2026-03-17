@@ -217,9 +217,7 @@ This card has no competency questions."#;
         fs::write(dir.join("circle-of-fifths.md"), card2)
             .await
             .unwrap();
-        fs::write(dir.join("pitch-class.md"), card3)
-            .await
-            .unwrap();
+        fs::write(dir.join("pitch-class.md"), card3).await.unwrap();
         fs::write(dir.join("no-questions.md"), card_no_questions)
             .await
             .unwrap();
@@ -245,7 +243,10 @@ This card has no competency questions."#;
 
         assert!(!response.matches.is_empty());
         assert_eq!(response.matches[0].concept_id, "pitch-class");
-        assert_eq!(response.matches[0].matched_question, "What is a pitch class?");
+        assert_eq!(
+            response.matches[0].matched_question,
+            "What is a pitch class?"
+        );
         assert!(response.matches[0].similarity > 0.9);
     }
 

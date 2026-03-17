@@ -747,10 +747,7 @@ Roughness perception relates to sensory consonance in acoustics.
             ..Default::default()
         };
 
-        let result = backend
-            .search(params)
-            .await
-            .expect("Search should succeed");
+        let result = backend.search(params).await.expect("Search should succeed");
         assert!(
             result.total >= 1,
             "Should find at least one match for 'sensory consonance'"
@@ -763,10 +760,7 @@ Roughness perception relates to sensory consonance in acoustics.
                 .items
                 .iter()
                 .find(|r| r.title == "Acoustic Consonance");
-            let non_alias_card = result
-                .items
-                .iter()
-                .find(|r| r.title == "Roughness Theory");
+            let non_alias_card = result.items.iter().find(|r| r.title == "Roughness Theory");
 
             if let (Some(ac), Some(rt)) = (alias_card, non_alias_card) {
                 assert!(

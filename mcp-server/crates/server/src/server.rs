@@ -861,14 +861,13 @@ impl ToolRegistry for SearchToolsRegistry {
         if name == "search_by_question" {
             let config = state.config.clone();
             return Some(Box::pin(async move {
-                let args: SearchByQuestionArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
+                let args: SearchByQuestionArgs = serde_json::from_value(args).map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
                 let params = tools::questions::SearchByQuestionParams {
                     question: args.question,
                     limit: args.limit,

@@ -593,8 +593,7 @@ pub async fn get_prerequisites(
     let mut learning_order = Vec::new();
 
     for (i, node) in prereq_result.ordered.iter().enumerate() {
-        if is_concept_node(node)
-            && node_passes_filters(node, &params.tier, &params.min_confidence)
+        if is_concept_node(node) && node_passes_filters(node, &params.tier, &params.min_confidence)
         {
             learning_order.push(node.id.clone());
             prerequisites.push(crate::graph::query::PrerequisiteConcept {
@@ -3332,8 +3331,7 @@ mod tests {
 
     #[test]
     fn test_get_prerequisites_params_with_tier_and_confidence() {
-        let json =
-            r#"{"concept_id": "test", "depth": 2, "tier": "intermediate", "min_confidence": "medium"}"#;
+        let json = r#"{"concept_id": "test", "depth": 2, "tier": "intermediate", "min_confidence": "medium"}"#;
         let params: GetPrerequisitesParams = serde_json::from_str(json).unwrap();
         assert_eq!(params.tier, Some("intermediate".to_string()));
         assert_eq!(params.min_confidence, Some("medium".to_string()));
@@ -3342,8 +3340,7 @@ mod tests {
 
     #[test]
     fn test_get_concept_neighborhood_params_with_tier_and_confidence() {
-        let json =
-            r#"{"concept_id": "test", "tier": "advanced", "min_confidence": "low"}"#;
+        let json = r#"{"concept_id": "test", "tier": "advanced", "min_confidence": "low"}"#;
         let params: GetConceptNeighborhoodParams = serde_json::from_str(json).unwrap();
         assert_eq!(params.tier, Some("advanced".to_string()));
         assert_eq!(params.min_confidence, Some("low".to_string()));
