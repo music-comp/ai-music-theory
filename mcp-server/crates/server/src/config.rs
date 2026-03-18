@@ -404,16 +404,24 @@ impl ConfigManager for Config {
             .map(PathBuf::from)
             .or_else(|| Self::resolve_config_path(None));
 
-        if let Some(path) = resolved {
-            let path_str = path.to_string_lossy().to_string();
+        if let Some(file_path) = resolved {
+            let dir = file_path
+                .parent()
+                .ok_or_else(|| Error::config("Config path has no parent directory"))?;
+            let filename = file_path
+                .file_name()
+                .and_then(|f| f.to_str())
+                .unwrap_or("default.toml");
+            let dir_str = dir.to_string_lossy().to_string();
+
             let mut opts = conf::Options::default();
-            opts.add_path(&path_str);
+            opts.add_path(&dir_str);
 
             let config: Config = Confygery::new()
                 .map_err(|e| Error::config(format!("config init: {e}")))?
                 .with_opts(opts)
                 .map_err(|e| Error::config(format!("config opts: {e}")))?
-                .add_file("default.toml")
+                .add_file(filename)
                 .map_err(|e| Error::config(format!("config file: {e}")))?
                 .build()
                 .map_err(|e| Error::config(format!("config build: {e}")))?;
@@ -432,13 +440,14 @@ impl ConfigManager for Config {
         // Check env var
         if let Ok(path) = std::env::var("MUSIC_THEORY_CONFIG_DIR") {
             let expanded = crate::util::paths::expand_tilde(&path);
-            if expanded.join("default.toml").exists() {
-                return Some(expanded);
+            let file = expanded.join("default.toml");
+            if file.exists() {
+                return Some(file);
             }
         }
 
         // Fall back to util::paths resolution
-        crate::util::paths::config_dir()
+        crate::util::paths::config_dir().map(|d| d.join("default.toml"))
     }
 
     fn default_config_path() -> Option<PathBuf> {
