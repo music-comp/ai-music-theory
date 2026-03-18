@@ -554,18 +554,11 @@ async fn build_vector_index(
     tokio::fs::create_dir_all(cache_dir).await?;
     let cache_file = cache_dir.join("vector-cache.json");
 
-    // Use a sibling directory for model cache so the ONNX model is found
-    // consistently regardless of how the process is launched (CLI vs Desktop)
-    let model_cache_dir = cache_dir
-        .parent()
-        .unwrap_or(cache_dir)
-        .join("models");
-    tokio::fs::create_dir_all(&model_cache_dir).await?;
-    let model_cache_str = model_cache_dir.to_string_lossy().to_string();
-
-    // Create embedding provider (downloads model if not cached)
-    let provider: Arc<dyn EmbeddingProvider> =
-        Arc::new(FastEmbedProvider::new("bge-small-en-v1.5", Some(&model_cache_str))?);
+    // Create embedding provider using config values
+    let provider: Arc<dyn EmbeddingProvider> = Arc::new(FastEmbedProvider::new(
+        &config.lancedb.embedding_model,
+        config.lancedb.embedding_cache_dir.as_deref(),
+    )?);
 
     // Resolve content directories
     let base = config.paths.base_path().map_err(|e| e.to_string())?;

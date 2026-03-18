@@ -16,6 +16,7 @@ pub struct Config {
     pub sources: SourcesConfig,
     pub logging: twyg::Opts,
     pub search: SearchConfig,
+    pub lancedb: LanceDbConfig,
 }
 
 /// Server configuration.
@@ -263,6 +264,44 @@ impl SearchConfig {
     /// Will be used when search backends are implemented (Phase 2+).
     pub fn index_path(&self) -> Result<PathBuf> {
         expand_path(&self.index_path)
+    }
+}
+
+/// LanceDB vector search configuration.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(default)]
+pub struct LanceDbConfig {
+    /// Embedding model name for vector search.
+    #[serde(default = "default_embedding_model")]
+    pub embedding_model: String,
+
+    /// Path to fastembed model cache directory.
+    /// If None, fastembed uses its default (`.fastembed_cache` relative to CWD).
+    /// Set to an absolute path for reliable operation when CWD varies.
+    #[serde(default)]
+    pub embedding_cache_dir: Option<String>,
+
+    /// Enable vector search.
+    /// Set to false to disable even when content directories exist.
+    #[serde(default = "default_lancedb_enabled")]
+    pub enabled: bool,
+}
+
+fn default_embedding_model() -> String {
+    "bge-small-en-v1.5".to_string()
+}
+
+fn default_lancedb_enabled() -> bool {
+    true
+}
+
+impl Default for LanceDbConfig {
+    fn default() -> Self {
+        Self {
+            embedding_model: default_embedding_model(),
+            embedding_cache_dir: None,
+            enabled: default_lancedb_enabled(),
+        }
     }
 }
 

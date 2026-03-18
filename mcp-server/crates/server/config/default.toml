@@ -160,3 +160,18 @@ custom_stopwords = []
 # - Roman numerals: I, V, ii, IV, vi, vii, i, v, iv
 # - Solfège syllables: do, re, mi, fa, sol, la, ti
 stopword_allowlist = ["I", "V", "ii", "IV", "vi", "vii", "i", "v", "iv", "do", "re", "mi", "fa", "sol", "la", "ti"]
+
+[lancedb]
+# Embedding model for vector/semantic search
+# Supported: bge-small-en-v1.5, all-minilm-l6-v2, bge-base-en-v1.5, bge-large-en-v1.5
+embedding_model = "bge-small-en-v1.5"
+
+# Model cache directory (absolute path recommended)
+# If not set, fastembed uses .fastembed_cache/ relative to CWD, which may
+# not be found when the server is launched from different contexts (e.g.,
+# Claude Desktop vs CLI). Set to an absolute path for reliable operation.
+# embedding_cache_dir = "/path/to/.fastembed_cache"
+
+# Enable vector/semantic search
+# Set to false to disable even when the vector feature is compiled in
+enabled = true
