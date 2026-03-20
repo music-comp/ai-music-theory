@@ -1,177 +1,89 @@
+[lancedb]
+embedding_cache_dir = "/Users/oubiwann/lab/music-comp/ai-music-theory/mcp-server/.fastembed_cache"
+embedding_model = "bge-small-en-v1.5"
+enabled = true
+
+[logging]
+coloured = true
+level = "info"
+output = "stderr"
+report_caller = false
+
+[paths]
+base = "."
+concept_cards = "concept-cards"
+concepts_unified = "concepts-unified"
+guides = "guides"
+skill_docs = "."
+sources_md = "sources-md"
+
+[search]
+backend = "tantivy"
+custom_stopwords = []
+enable_stopwords = true
+fuzzy_distance = 2
+fuzzy_search = false
+index_path = ".tantivy-index"
+minimum_match_percent = 0.6
+query_mode = "smart"
+rebuild_on_startup = false
+snippet_size = 200
+stopword_allowlist = [
+    "I",
+    "V",
+    "ii",
+    "IV",
+    "vi",
+    "vii",
+    "i",
+    "v",
+    "iv",
+    "do",
+    "re",
+    "mi",
+    "fa",
+    "sol",
+    "la",
+    "ti",
+]
+
 [server]
 name = "music-theory-skill"
 version = "0.2.0"
 
-[paths]
-# Base path for the skill repository (dynamically resolved from binary location)
-# All relative paths below are resolved against the skill root directory
-base = "."
+[sources.general]
+path = "~/Dropbox/Apps/General Books/Music"
 
-# Converted sources
-sources_md = "sources-md"
+[sources.general.aliases]
+caplin-classical-form = ["Analyzing Classical Form (Caplin)"]
+persichetti-20th-century = ["Twentieth-Century Harmony"]
 
-# Concept cards
-concept_cards = "concept-cards"
-
-# Unified concepts (future)
-concepts_unified = "concepts-unified"
-
-# Topic guides (future)
-guides = "guides"
-
-# Core skill documents
-skill_docs = "."
-
-[sources]
-# Source file locations (original PDFs/EPUBs)
-# These are the raw sources before conversion
+[sources.general.files]
+caplin-classical-form = "[2013] Caplin - Analyzing Classical Form: An Approach for the Classroom.pdf"
+hutchinson-21c = "[2023] Hutchinson - Music Theory for the 21st-Century Classroom.epub"
+messiaen-technique = "[1944] Messiaen - The Technique of My Musical Language.pdf"
+open-music-theory = "[2022] Gotham - Open Music Theory.xml"
+persichetti-20th-century = "[1961] Persichetti - Twentieth-Century Harmony: Creative Aspects and Practice.pdf"
+straus-post-tonal = "[2016] Straus - Introduction to Post-Tonal Theory (Fifth Edition).pdf"
+wright-math-music = "[2009] Wright - Mathematics and Music.pdf"
 
 [sources.oxford]
 path = "~/Dropbox/Apps/Oxford University Press"
 
-[sources.oxford.files]
-lewin-gmit = "[2007] Lewin - Generalized Musical Intervals and Transformations.pdf"
-tymoczko-geometry = "[2011] Tymoczko - A Geometry of Music.pdf"
-tymoczko-tonality = "[2023] Tymoczko - Tonality - An Owners Manual.epub"
-cohn-audacious = "[2012] Cohn - Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature.pdf"
-gollin-handbook = "[2012] Gollin - Oxford Handbook of Neo-Riemannian Music Theories.pdf"
-
 [sources.oxford.aliases]
 gollin-handbook = ["The Oxford Handbook of Neo-Riemannian Music Theories"]
 
-[sources.general]
-path = "~/Dropbox/Apps/General Books/Music"
-
-[sources.general.files]
-open-music-theory = "[2022] Gotham - Open Music Theory.xml"
-straus-post-tonal = "[2016] Straus - Introduction to Post-Tonal Theory (Fifth Edition).pdf"
-wright-math-music = "[2009] Wright - Mathematics and Music.pdf"
-hutchinson-21c = "[2023] Hutchinson - Music Theory for the 21st-Century Classroom.epub"
-messiaen-technique = "[1944] Messiaen - The Technique of My Musical Language.pdf"
-persichetti-20th-century = "[1961] Persichetti - Twentieth-Century Harmony: Creative Aspects and Practice.pdf"
-caplin-classical-form = "[2013] Caplin - Analyzing Classical Form: An Approach for the Classroom.pdf"
-
-[sources.general.aliases]
-persichetti-20th-century = ["Twentieth-Century Harmony"]
-caplin-classical-form = ["Analyzing Classical Form (Caplin)"]
+[sources.oxford.files]
+cohn-audacious = "[2012] Cohn - Audacious Euphony: Chromaticism and the Consonant Triad's Second Nature.pdf"
+gollin-handbook = "[2012] Gollin - Oxford Handbook of Neo-Riemannian Music Theories.pdf"
+lewin-gmit = "[2007] Lewin - Generalized Musical Intervals and Transformations.pdf"
+tymoczko-geometry = "[2011] Tymoczko - A Geometry of Music.pdf"
+tymoczko-tonality = "[2023] Tymoczko - Tonality - An Owners Manual.epub"
 
 [sources.papers]
 path = "~/Dropbox/Apps/Papers/Music Theory"
 
 [sources.papers.files]
-papadopoulos = "[2014] Papadopoulos - Mathematics and group theory in music/[2014] Papadopoulos - Mathematics and group theory in music.pdf"
-fiore = "[2009] Fiore - Music and Mathematics.pdf"
 acef-sanchez = "[2012] Acef-Sanchez - An Introduction to Group Theory with applications to Mathematical Music Theory.pdf"
-
-[logging]
-# Log level: trace, debug, info, warn, error (lowercase)
-level = "info"
-
-# Enable colored output
-coloured = true
-
-# Output destination: "stdout", "stderr", or { file = "/path/to/log.log" }
-# MCP protocol requires stderr for server logs (stdout is for MCP messages)
-# Use file output only when redirecting logs to a file
-output = "stderr"
-# Example file output:
-# output = { file = "/path/to/music-theory-mcp.log" }
-
-# Report caller location (file:line) in log messages
-# Useful for debugging but adds overhead
-report_caller = false
-
-# Optional: Customize timestamp format
-# Defaults to "standard" if not specified
-# Options: "standard", "simple", "timeonly", "rfc3339", or { custom = "%Y-%m-%d %H:%M:%S" }
-# timestamp_format = "simple"
-
-# Optional: Enable level padding for alignment
-# pad_level = true
-# pad_amount = 5
-# pad_side = "right"  # or "left"
-
-# Optional: Customize separators and symbols
-# msg_separator = ": "
-# arrow_char = "▶"
-
-[search]
-# Backend selection: "simple" or "tantivy"
-# - "simple": Linear scan (suitable for <500 concepts, no index needed, always available)
-# - "tantivy": Full-text search engine (recommended for better search quality, requires --features fts)
-#
-# CHANGED in v0.2.0: tantivy is now the default backend for improved search quality
-# Note: "tantivy" requires building the server with --features fts
-# Without the feature flag, "tantivy" will fall back to "simple" backend
-# To use the legacy simple backend, set: backend = "simple"
-backend = "tantivy"
-
-# Tantivy index storage (relative to skill root or absolute path)
-index_path = ".tantivy-index"
-
-# Rebuild index on startup
-# With async background indexing (Phase 3), this setting is less critical:
-# - false (recommended): Index is built only if missing or stale (content hash check)
-# - true: Forces rebuild on every startup (useful for development/testing)
-#
-# The server starts immediately regardless - indexing happens in the background.
-# Use the CLI tool for explicit control: `music-theory-mcp index [--force]`
-rebuild_on_startup = false
-
-# Snippet context size in characters for search results
-# Applies to both backends (simple and tantivy)
-snippet_size = 200
-
-# Enable fuzzy search (typo tolerance)
-# When enabled, "haromny" will find "harmony"
-# Only available with tantivy backend (requires --features fts)
-fuzzy_search = false
-
-# Maximum edit distance for fuzzy matching (1-2)
-# Higher values are more permissive but slower
-# Only applies when fuzzy_search = true
-fuzzy_distance = 2
-
-# Query mode for multi-word queries (tantivy backend only)
-# - "smart": 2 words = AND (both required), 3+ words = OR with minimum 60% match
-# - "and": All terms must be present (strict matching)
-# - "or": Any term matches (maximum recall)
-# - { minimum_match = 0.75 }: At least N% of terms must match
-# Default: "smart" (recommended for best balance of precision and recall)
-query_mode = "smart"
-
-# Minimum match percentage for OR queries with 3+ terms (0.0 to 1.0)
-# Only applies when query_mode = "smart" or query_mode = { minimum_match = N }
-# Example: 0.6 = 60% of terms must match (2 out of 3, 3 out of 5, etc.)
-minimum_match_percent = 0.6
-
-# Enable stopword filtering for natural language queries
-# When enabled, common words like "what", "is", "a", "the" are filtered
-# before searching, improving results for queries like "what is a cadence"
-# Domain-specific terms (Roman numerals, solfège) are preserved via allowlist
-enable_stopwords = true
-
-# Custom stopwords to add beyond the default English stopwords
-# Use this to filter domain-specific common words if needed
-custom_stopwords = []
-
-# Domain-specific terms to preserve (never filtered as stopwords)
-# Music theory terms that might otherwise be filtered:
-# - Roman numerals: I, V, ii, IV, vi, vii, i, v, iv
-# - Solfège syllables: do, re, mi, fa, sol, la, ti
-stopword_allowlist = ["I", "V", "ii", "IV", "vi", "vii", "i", "v", "iv", "do", "re", "mi", "fa", "sol", "la", "ti"]
-
-[lancedb]
-# Embedding model for vector/semantic search
-# Supported: bge-small-en-v1.5, all-minilm-l6-v2, bge-base-en-v1.5, bge-large-en-v1.5
-embedding_model = "bge-small-en-v1.5"
-
-# Model cache directory (absolute path recommended)
-# If not set, fastembed uses .fastembed_cache/ relative to CWD, which may
-# not be found when the server is launched from different contexts (e.g.,
-# Claude Desktop vs CLI). Set to an absolute path for reliable operation.
-# embedding_cache_dir = "/path/to/.fastembed_cache"
-
-# Enable vector/semantic search
-# Set to false to disable even when the vector feature is compiled in
-enabled = true
+fiore = "[2009] Fiore - Music and Mathematics.pdf"
+papadopoulos = "[2014] Papadopoulos - Mathematics and group theory in music/[2014] Papadopoulos - Mathematics and group theory in music.pdf"
