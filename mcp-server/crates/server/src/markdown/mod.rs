@@ -10,5 +10,5 @@
 mod frontmatter;
 mod parser;
 
-pub use frontmatter::{extract_frontmatter, strip_frontmatter};
+pub use frontmatter::{extract_frontmatter, extract_frontmatter_with_path, strip_frontmatter};
 pub use parser::{extract_first_heading, extract_first_paragraph};

@@ -3,7 +3,7 @@ use std::path::{Path, PathBuf};
 
 use crate::config::Config;
 use crate::error::Result;
-use crate::markdown::{extract_first_heading, extract_first_paragraph, extract_frontmatter};
+use crate::markdown::{extract_first_heading, extract_first_paragraph};
 use crate::util::files::{find_all_files, find_file_by_id, read_file, FindOptions};
 
 /// Information about a guide document.
@@ -92,7 +92,7 @@ async fn extract_title_and_description(path: &Path) -> Result<(String, Option<St
     let content = read_file(path).await?;
 
     // Extract frontmatter
-    let (frontmatter, body) = extract_frontmatter(&content)?;
+    let (frontmatter, body) = crate::markdown::extract_frontmatter_with_path(&content, path)?;
 
     // Get title from frontmatter or first heading
     let title = frontmatter

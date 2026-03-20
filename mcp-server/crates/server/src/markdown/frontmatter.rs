@@ -99,6 +99,21 @@ pub struct Frontmatter {
 /// Returns `Err` if there is an I/O or parsing error that cannot be recovered from.
 /// Invalid YAML in the frontmatter is logged as a warning and treated as if no frontmatter exists.
 pub fn extract_frontmatter(content: &str) -> Result<(Option<Frontmatter>, &str)> {
+    extract_frontmatter_inner(content, None)
+}
+
+/// Extract YAML frontmatter, logging the file path on parse failure.
+pub fn extract_frontmatter_with_path<'a>(
+    content: &'a str,
+    path: &std::path::Path,
+) -> Result<(Option<Frontmatter>, &'a str)> {
+    extract_frontmatter_inner(content, Some(path))
+}
+
+fn extract_frontmatter_inner<'a>(
+    content: &'a str,
+    path: Option<&std::path::Path>,
+) -> Result<(Option<Frontmatter>, &'a str)> {
     // Check if content starts with ---
     let trimmed = content.trim_start();
     if !trimmed.starts_with("---") {
@@ -128,7 +143,11 @@ pub fn extract_frontmatter(content: &str) -> Result<(Option<Frontmatter>, &str)>
             Ok(fm) => Some(fm),
             Err(e) => {
                 // Log warning but don't fail - treat as no frontmatter
-                log::warn!("Failed to parse frontmatter: {}", e);
+                if let Some(p) = path {
+                    log::warn!("Failed to parse frontmatter in {}: {}", p.display(), e);
+                } else {
+                    log::warn!("Failed to parse frontmatter: {}", e);
+                }
                 None
             }
         }

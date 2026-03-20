@@ -9,7 +9,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::config::Config;
 use crate::error::Result;
-use crate::markdown::extract_frontmatter;
 use crate::util::files::{find_all_files, read_file, FindOptions};
 
 /// Parameters for searching concept cards by competency question.
@@ -89,7 +88,8 @@ pub async fn search_by_question(
             Err(_) => continue,
         };
 
-        let (frontmatter, _body) = match extract_frontmatter(&content) {
+        let (frontmatter, _body) =
+            match crate::markdown::extract_frontmatter_with_path(&content, &file_info.path) {
             Ok((Some(fm), body)) => (fm, body),
             _ => continue,
         };
