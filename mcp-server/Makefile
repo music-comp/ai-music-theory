@@ -475,30 +475,76 @@ ensure-binstall:
 .PHONY: check-deps
 check-deps: ensure-binstall
 	@echo "$(BLUE)Checking for outdated dependencies...$(RESET)"
-	@command -v cargo-outdated >/dev/null 2>&1 || { \
-		echo "$(YELLOW)→ Installing cargo-outdated...$(RESET)"; \
-		cargo binstall -y cargo-outdated; \
-	}
-	@OUTPUT=$$(cargo outdated --root-deps-only --ignore-external-rel 2>/dev/null); \
-	echo "$$OUTPUT"; \
-	echo ""; \
-	if echo "$$OUTPUT" | grep -E "^[a-z0-9_-]+\s+" | grep -v "^----" | awk '{print $$3}' | grep -v "^---$$" | grep -v "^Compat$$" | grep -E "^[0-9]" | grep -q .; then \
+	@if ! cargo upgrade --help >/dev/null 2>&1; then \
+		echo "$(YELLOW)→ Installing cargo-edit...$(RESET)"; \
+		cargo binstall -y --force cargo-edit; \
+	fi
+	@OUTPUT=$$(cargo upgrade --dry-run --incompatible 2>&1); \
+	if ! echo "$$OUTPUT" | grep -q "aborting upgrade due to dry run"; then \
+		echo "$(RED)✗ cargo upgrade --dry-run failed:$(RESET)"; \
+		echo "$$OUTPUT"; \
+		exit 1; \
+	fi; \
+	UPDATES=$$(echo "$$OUTPUT" | awk '/^[a-z][a-z0-9_-]/ && !/^name / { \
+		split($$2, a, "."); split($$4, b, "."); \
+		if (a[1] == b[1] && (b[2]+0 > a[2]+0 || (b[2]+0 == a[2]+0 && b[3]+0 >= a[3]+0))) print \
+	}' | sort -t' ' -k1,1 -u); \
+	MAJOR=$$(echo "$$OUTPUT" | awk '/^[a-z][a-z0-9_-]/ && !/^name / { \
+		split($$2, a, "."); split($$5, b, "."); \
+		if (a[1] != b[1]) print \
+	}' | sort -t' ' -k1,1 -u | wc -l | tr -d ' '); \
+	if [ -n "$$UPDATES" ]; then \
+		printf "%-20s %-10s %-10s\n" "name" "current" "latest"; \
+		printf "%-20s %-10s %-10s\n" "====" "=======" "======"; \
+		echo "$$UPDATES" | awk '{ printf "%-20s %-10s %-10s\n", $$1, $$2, $$4 }'; \
+		echo ""; \
+		echo "$(RED)✗ Dependency updates available$(RESET)"; \
+		echo "$(YELLOW)→ Run 'make deps' to update$(RESET)"; \
+		if [ "$$MAJOR" -gt 0 ]; then \
+			echo "$(CYAN)  ($$MAJOR major-version updates not shown)$(RESET)"; \
+		fi; \
+		exit 1; \
+	else \
+		echo "$(GREEN)✓ All dependencies up to date$(RESET)"; \
+		if [ "$$MAJOR" -gt 0 ]; then \
+			echo "$(CYAN)  ($$MAJOR major-version updates available, not shown)$(RESET)"; \
+		fi; \
+	fi
+.PHONY: check-deps-cicd
+check-deps-cicd: ensure-binstall
+	@echo "$(BLUE)Checking for outdated dependencies (compatible only)...$(RESET)"
+	@if ! cargo upgrade --help >/dev/null 2>&1; then \
+		echo "$(YELLOW)→ Installing cargo-edit...$(RESET)"; \
+		cargo binstall -y --force cargo-edit; \
+	fi
+	@OUTPUT=$$(cargo upgrade --dry-run 2>&1); \
+	if ! echo "$$OUTPUT" | grep -q "aborting upgrade due to dry run"; then \
+		echo "$(RED)✗ cargo upgrade --dry-run failed:$(RESET)"; \
+		echo "$$OUTPUT"; \
+		exit 1; \
+	fi; \
+	UPDATES=$$(echo "$$OUTPUT" | awk '/^[a-z][a-z0-9_-]/ && !/^name / && !/^note:/ && !/^warning:/ { print }' | sort -t' ' -k1,1 -u); \
+	if [ -n "$$UPDATES" ]; then \
+		printf "%-20s %-10s %-10s\n" "name" "current" "latest"; \
+		printf "%-20s %-10s %-10s\n" "====" "=======" "======"; \
+		echo "$$UPDATES" | awk '{ printf "%-20s %-10s %-10s\n", $$1, $$2, $$4 }'; \
+		echo ""; \
 		echo "$(RED)✗ Compatible dependency updates available$(RESET)"; \
-		echo "$(YELLOW)→ Run 'make deps' to update and commit the updated Cargo.lock$(RESET)"; \
+		echo "$(YELLOW)→ Run 'make deps' to update$(RESET)"; \
 		exit 1; \
 	else \
 		echo "$(GREEN)✓ All dependencies up to date$(RESET)"; \
 	fi
+
 .PHONY: deps
 deps: ensure-binstall
 	@echo "$(BLUE)Updating dependencies ...$(RESET)"
-	@command -v cargo-upgrade >/dev/null 2>&1 || { \
+	@if ! cargo upgrade --help >/dev/null 2>&1; then \
 		echo "$(YELLOW)→ Installing cargo-edit...$(RESET)"; \
-		cargo binstall -y cargo-edit; \
-	}
+		cargo binstall -y --force cargo-edit; \
+	fi
 	@cargo upgrade
 	@echo "$(GREEN)✓ Cargo deps upgraded$(RESET)"
-
 
 # Cleaning targets
 .PHONY: clean
@@ -637,16 +683,6 @@ coverage-html:
 	@cargo llvm-cov --html --features full --package music-theory-mcp
 	@echo "$(GREEN)✓ HTML coverage report generated$(RESET)"
 	@echo "$(CYAN)→ Report: target/llvm-cov/html/index.html$(RESET)"
-
-.PHONY: deps
-deps: ensure-binstall
-	@echo "$(BLUE)Updating dependencies ...$(RESET)"
-	@command -v cargo-upgrade >/dev/null 2>&1 || { \
-		echo "$(YELLOW)→ Installing cargo-edit...$(RESET)"; \
-		cargo binstall -y cargo-edit; \
-	}
-	@cargo upgrade
-	@echo "$(GREEN)✓ Cargo deps upgraded$(RESET)"
 
 .PHONY: check-graph
 check-graph:
