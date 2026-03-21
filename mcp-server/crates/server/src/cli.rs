@@ -250,7 +250,7 @@ fn handle_config_command(action: Option<ConfigAction>) -> Result<()> {
             fabryk_cli::config_handlers::cmd_config_path::<Config>(None)
         }
         Some(ConfigAction::Get { key }) => {
-            fabryk_cli::config_handlers::cmd_config_get::<Config>(None, &key)
+            fabryk_cli::config_handlers::cmd_config_get_or_dump::<Config>(None, key.as_deref())
         }
         Some(ConfigAction::Set { key, value }) => {
             fabryk_cli::config_handlers::cmd_config_set::<Config>(None, &key, &value)
@@ -258,9 +258,9 @@ fn handle_config_command(action: Option<ConfigAction>) -> Result<()> {
         Some(ConfigAction::Init { file, force }) => {
             fabryk_cli::config_handlers::cmd_config_init::<Config>(file.as_deref(), force)
         }
-        Some(ConfigAction::Export { docker_env }) => {
+        Some(ConfigAction::Export { docker_env, file }) => {
             let config = <Config as ConfigManager>::load(None)?;
-            fabryk_cli::config_handlers::cmd_config_export(&config, docker_env)
+            fabryk_cli::config_handlers::cmd_config_export(&config, docker_env, file.as_deref())
         }
     }
 }

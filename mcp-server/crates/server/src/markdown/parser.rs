@@ -1,6 +1,6 @@
 //! Markdown content extraction using pulldown-cmark.
 
-use pulldown_cmark::{Event, HeadingLevel, Parser, Tag};
+use pulldown_cmark::{Event, HeadingLevel, Parser, Tag, TagEnd};
 
 /// Extract the first heading from markdown content along with its level.
 ///
@@ -34,14 +34,14 @@ pub fn extract_first_heading(content: &str) -> Option<(HeadingLevel, String)> {
 
     for event in parser {
         match event {
-            Event::Start(Tag::Heading(level, _, _)) => {
+            Event::Start(Tag::Heading { level, .. }) => {
                 in_heading = true;
                 heading_level = Some(level);
             }
             Event::Text(text) if in_heading => {
                 heading_text.push_str(&text);
             }
-            Event::End(Tag::Heading(_, _, _)) if in_heading => {
+            Event::End(TagEnd::Heading(_)) if in_heading => {
                 return heading_level.map(|level| (level, heading_text));
             }
             _ => {}
@@ -99,10 +99,10 @@ pub fn extract_first_paragraph(content: &str, max_chars: usize) -> Option<String
                     }
                 }
             }
-            Event::End(Tag::Paragraph) if in_paragraph => {
+            Event::End(TagEnd::Paragraph) if in_paragraph => {
                 return Some(paragraph_text.trim().to_string());
             }
-            Event::End(Tag::Heading(_, _, _)) => {
+            Event::End(TagEnd::Heading(_)) => {
                 skip_headings = false; // Start looking for paragraphs after first heading
             }
             _ => {}

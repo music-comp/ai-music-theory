@@ -33,7 +33,7 @@ serde_json = "1"
 schemars = "1.2"
 
 # File operations and markdown
-pulldown-cmark = "0.9"
+pulldown-cmark = "0.13"
 yaml_serde = "0.10"
 shellexpand = "3.1"
 dirs = "5"
@@ -45,21 +45,21 @@ thiserror = "2"
 regex = "1"
 
 # Full-text search (optional)
-tantivy = "0.22"
-stop-words = "0.8"
+tantivy = "0.25"
+stop-words = "0.10"
 
 # CLI parsing
 clap = { version = "4", features = ["derive"] }
 
 # Source management
 strsim = "0.11"
-toml_edit = { version = "0.22", features = ["serde"] }
+toml_edit = { version = "0.25", features = ["serde"] }
 
 # Graph database (optional)
 petgraph = "0.8"
-rkyv = { version = "0.7", features = ["validation"] }
+rkyv = { version = "0.8", features = ["bytecheck"] }
 memmap2 = "0.9"
-blake3 = "1.5"
+blake3 = "1.8"
 chrono = { version = "0.4", features = ["serde"] }
 
 # Music theory computation
