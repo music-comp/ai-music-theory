@@ -117,8 +117,7 @@ async fn scan_concept_cards(base_path: &std::path::Path) -> Result<Vec<ConceptIn
         // Parse frontmatter to extract v3 fields not yet in ConceptMetadata
         let content = read_file(path).await.unwrap_or_default();
         let (fm, _) =
-            crate::markdown::extract_frontmatter_with_path(&content, path)
-                .unwrap_or((None, ""));
+            crate::markdown::extract_frontmatter_with_path(&content, path).unwrap_or((None, ""));
 
         let (subcategory, tier, extraction_confidence, aliases, chapter_number, pdf_page) =
             if let Some(fm) = fm {

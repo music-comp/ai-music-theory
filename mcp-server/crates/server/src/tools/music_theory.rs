@@ -24,8 +24,8 @@ fn parse_pitch(s: &str) -> Result<Pitch> {
 }
 
 fn parse_mode(s: &str) -> Result<Mode> {
-    let (mode, _) = Mode::from_regex(s)
-        .map_err(|e| Error::parse(format!("Invalid mode '{}': {}", s, e)))?;
+    let (mode, _) =
+        Mode::from_regex(s).map_err(|e| Error::parse(format!("Invalid mode '{}': {}", s, e)))?;
     Ok(mode)
 }
 
@@ -64,10 +64,7 @@ pub fn get_scale_notes(args: GetScaleNotesArgs) -> Result<GetScaleNotesResponse>
     Ok(GetScaleNotesResponse {
         notes,
         scale_type: format!("{:?}", scale.scale_type),
-        mode: scale
-            .mode
-            .map(|m| format!("{:?}", m))
-            .unwrap_or_default(),
+        mode: scale.mode.map(|m| format!("{:?}", m)).unwrap_or_default(),
     })
 }
 

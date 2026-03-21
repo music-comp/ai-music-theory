@@ -22,7 +22,7 @@ pub mod tools;
 pub mod util;
 
 // Re-export commonly used types
-pub use config::Config;
+pub use config::{Config, LanceDbConfig};
 pub use error::{Error, Result};
 pub use fabryk::fts::SearchDocument;
 pub use state::AppState;

@@ -1751,8 +1751,8 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
     fn call(&self, name: &str, args: Value) -> Option<ToolResult> {
         match name {
             "get_scale_notes" => Some(Box::pin(async move {
-                let args: tools::music_theory::GetScaleNotesArgs =
-                    serde_json::from_value(args).map_err(|e| {
+                let args: tools::music_theory::GetScaleNotesArgs = serde_json::from_value(args)
+                    .map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -1764,8 +1764,8 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                 serialize_response(&response)
             })),
             "get_chord_notes" => Some(Box::pin(async move {
-                let args: tools::music_theory::GetChordNotesArgs =
-                    serde_json::from_value(args).map_err(|e| {
+                let args: tools::music_theory::GetChordNotesArgs = serde_json::from_value(args)
+                    .map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -1777,8 +1777,8 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                 serialize_response(&response)
             })),
             "get_interval" => Some(Box::pin(async move {
-                let args: tools::music_theory::GetIntervalArgs =
-                    serde_json::from_value(args).map_err(|e| {
+                let args: tools::music_theory::GetIntervalArgs = serde_json::from_value(args)
+                    .map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -1790,8 +1790,8 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                 serialize_response(&response)
             })),
             "transpose" => Some(Box::pin(async move {
-                let args: tools::music_theory::TransposeArgs =
-                    serde_json::from_value(args).map_err(|e| {
+                let args: tools::music_theory::TransposeArgs = serde_json::from_value(args)
+                    .map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -1803,8 +1803,8 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                 serialize_response(&response)
             })),
             "get_diatonic_chords" => Some(Box::pin(async move {
-                let args: tools::music_theory::GetDiatonicChordsArgs =
-                    serde_json::from_value(args).map_err(|e| {
+                let args: tools::music_theory::GetDiatonicChordsArgs = serde_json::from_value(args)
+                    .map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -1816,8 +1816,8 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                 serialize_response(&response)
             })),
             "identify_chord" => Some(Box::pin(async move {
-                let args: tools::music_theory::IdentifyChordArgs =
-                    serde_json::from_value(args).map_err(|e| {
+                let args: tools::music_theory::IdentifyChordArgs = serde_json::from_value(args)
+                    .map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -1829,8 +1829,8 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                 serialize_response(&response)
             })),
             "identify_scale" => Some(Box::pin(async move {
-                let args: tools::music_theory::IdentifyScaleArgs =
-                    serde_json::from_value(args).map_err(|e| {
+                let args: tools::music_theory::IdentifyScaleArgs = serde_json::from_value(args)
+                    .map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -1842,14 +1842,14 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                 serialize_response(&response)
             })),
             "check_enharmonic" => Some(Box::pin(async move {
-                let args: tools::music_theory::CheckEnharmonicArgs =
-                    serde_json::from_value(args).map_err(|e| {
-                        ErrorData::new(
-                            ErrorCode::INVALID_PARAMS,
-                            format!("Invalid parameters: {}", e),
-                            None,
-                        )
-                    })?;
+                let args: tools::music_theory::CheckEnharmonicArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                    ErrorData::new(
+                        ErrorCode::INVALID_PARAMS,
+                        format!("Invalid parameters: {}", e),
+                        None,
+                    )
+                })?;
                 let response = tools::music_theory::check_enharmonic(args)
                     .map_err(|e| to_mcp_error(e, "Error checking enharmonic"))?;
                 serialize_response(&response)

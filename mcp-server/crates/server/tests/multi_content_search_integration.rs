@@ -81,6 +81,7 @@ async fn create_test_config(temp_dir: &TempDir) -> Config {
             field_boost_description: 2.0,
             field_boost_content: 1.0,
         },
+        lancedb: music_theory_mcp::LanceDbConfig::default(),
     }
 }
 

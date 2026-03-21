@@ -373,6 +373,7 @@ mod tests {
                 backend: backend.to_string(),
                 ..test_search_config()
             },
+            lancedb: crate::config::LanceDbConfig::default(),
         }
     }
 

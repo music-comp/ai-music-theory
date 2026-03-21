@@ -90,9 +90,9 @@ pub async fn search_by_question(
 
         let (frontmatter, _body) =
             match crate::markdown::extract_frontmatter_with_path(&content, &file_info.path) {
-            Ok((Some(fm), body)) => (fm, body),
-            _ => continue,
-        };
+                Ok((Some(fm), body)) => (fm, body),
+                _ => continue,
+            };
 
         if frontmatter.answers_questions.is_empty() {
             continue;

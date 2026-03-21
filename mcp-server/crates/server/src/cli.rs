@@ -773,6 +773,15 @@ mod tests {
     use super::*;
     use serial_test::serial;
 
+    fn test_cli(log_level: Option<String>, command: Option<Commands>) -> Cli {
+        Cli {
+            log_level,
+            #[cfg(feature = "http")]
+            transport: None,
+            command,
+        }
+    }
+
     #[test]
     fn test_cli_parse_no_command() {
         let cli = Cli::parse_from(["music-theory-mcp"]);
@@ -989,10 +998,7 @@ mod tests {
     #[ignore = "Hangs waiting for MCP protocol on stdin - needs mocking"]
     async fn test_handle_command_serve_default() {
         // Test that handle_command dispatches to serve when no command given
-        let cli = Cli {
-            log_level: None,
-            command: None,
-        };
+        let cli = test_cli(None, None);
 
         // This will try to run the server, which will hang waiting for stdin
         // TODO: Mock stdio transport to test this properly
@@ -2368,10 +2374,7 @@ fuzzy_distance = 2
 
         std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
 
-        let cli = Cli {
-            log_level: None,
-            command: Some(Commands::Index { force: true }),
-        };
+        let cli = test_cli(None, Some(Commands::Index { force: true }));
 
         let result = handle_command(cli).await;
 
@@ -2433,10 +2436,7 @@ fuzzy_distance = 2
 
         std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
 
-        let cli = Cli {
-            log_level: Some("error".to_string()),
-            command: Some(Commands::Status),
-        };
+        let cli = test_cli(Some("error".to_string()), Some(Commands::Status));
 
         let result = handle_command(cli).await;
 
@@ -2500,12 +2500,12 @@ fuzzy_distance = 2
         std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
 
         // Test graph stats command (lightest operation)
-        let cli = Cli {
-            log_level: None,
-            command: Some(Commands::Graph(GraphCommands {
+        let cli = test_cli(
+            None,
+            Some(Commands::Graph(GraphCommands {
                 command: GraphSubcommand::Stats,
             })),
-        };
+        );
 
         let result = handle_command(cli).await;
 
@@ -2834,10 +2834,7 @@ fuzzy_distance = 2
             },
         };
 
-        let cli = Cli {
-            log_level: None,
-            command: Some(Commands::Sources(sources_cmds)),
-        };
+        let cli = test_cli(None, Some(Commands::Sources(sources_cmds)));
 
         let result = handle_command(cli).await;
 
@@ -3032,10 +3029,7 @@ fuzzy_distance = 2
             .expect("Failed to build index");
 
         // Dispatch through handle_command with force=false on a fresh index
-        let cli = Cli {
-            log_level: None,
-            command: Some(Commands::Index { force: false }),
-        };
+        let cli = test_cli(None, Some(Commands::Index { force: false }));
 
         let result = handle_command(cli).await;
 
@@ -3119,10 +3113,7 @@ fuzzy_distance = 2
             .expect("Failed to build index");
 
         // Dispatch through handle_command
-        let cli = Cli {
-            log_level: Some("error".to_string()),
-            command: Some(Commands::Status),
-        };
+        let cli = test_cli(Some("error".to_string()), Some(Commands::Status));
 
         let result = handle_command(cli).await;
 
@@ -3142,11 +3133,11 @@ fuzzy_distance = 2
     #[test]
     #[cfg(feature = "http")]
     fn test_cli_parse_serve_http() {
-        let cli = Cli::parse_from(["music-theory-mcp", "serve", "--http"]);
+        let cli = Cli::parse_from(["music-theory-mcp", "--transport", "http", "serve"]);
+        assert_eq!(cli.transport, Some("http".to_string()));
         match cli.command {
-            Some(Commands::Serve { test, http, port }) => {
+            Some(Commands::Serve { test, port }) => {
                 assert!(!test, "test should be false");
-                assert!(http, "http should be true");
                 assert_eq!(port, 8080, "default port should be 8080");
             }
             other => panic!("Expected Serve command, got {:?}", other.is_some()),
@@ -3156,11 +3147,18 @@ fuzzy_distance = 2
     #[test]
     #[cfg(feature = "http")]
     fn test_cli_parse_serve_http_custom_port() {
-        let cli = Cli::parse_from(["music-theory-mcp", "serve", "--http", "--port", "3000"]);
+        let cli = Cli::parse_from([
+            "music-theory-mcp",
+            "--transport",
+            "http",
+            "serve",
+            "--port",
+            "3000",
+        ]);
+        assert_eq!(cli.transport, Some("http".to_string()));
         match cli.command {
-            Some(Commands::Serve { test, http, port }) => {
+            Some(Commands::Serve { test, port }) => {
                 assert!(!test, "test should be false");
-                assert!(http, "http should be true");
                 assert_eq!(port, 3000, "port should be 3000");
             }
             other => panic!("Expected Serve command, got {:?}", other.is_some()),
@@ -3170,11 +3168,18 @@ fuzzy_distance = 2
     #[test]
     #[cfg(feature = "http")]
     fn test_cli_parse_serve_http_short_port() {
-        let cli = Cli::parse_from(["music-theory-mcp", "serve", "--http", "-p", "9090"]);
+        let cli = Cli::parse_from([
+            "music-theory-mcp",
+            "--transport",
+            "http",
+            "serve",
+            "-p",
+            "9090",
+        ]);
+        assert_eq!(cli.transport, Some("http".to_string()));
         match cli.command {
-            Some(Commands::Serve { test, http, port }) => {
+            Some(Commands::Serve { test, port }) => {
                 assert!(!test);
-                assert!(http);
                 assert_eq!(port, 9090);
             }
             other => panic!("Expected Serve command, got {:?}", other.is_some()),
@@ -3188,16 +3193,17 @@ fuzzy_distance = 2
             "music-theory-mcp",
             "-l",
             "debug",
+            "--transport",
+            "http",
             "serve",
-            "--http",
             "--test",
             "--port",
             "4000",
         ]);
+        assert_eq!(cli.transport, Some("http".to_string()));
         match cli.command {
-            Some(Commands::Serve { test, http, port }) => {
+            Some(Commands::Serve { test, port }) => {
                 assert!(test, "test should be true");
-                assert!(http, "http should be true");
                 assert_eq!(port, 4000);
             }
             other => panic!("Expected Serve command, got {:?}", other.is_some()),
@@ -3209,10 +3215,10 @@ fuzzy_distance = 2
     #[cfg(feature = "http")]
     fn test_cli_parse_serve_no_http_flag_defaults() {
         let cli = Cli::parse_from(["music-theory-mcp", "serve"]);
+        assert!(cli.transport.is_none(), "transport should default to None");
         match cli.command {
-            Some(Commands::Serve { test, http, port }) => {
+            Some(Commands::Serve { test, port }) => {
                 assert!(!test);
-                assert!(!http, "http should default to false");
                 assert_eq!(port, 8080, "port should default to 8080");
             }
             other => panic!("Expected Serve command, got {:?}", other.is_some()),
@@ -3389,10 +3395,10 @@ fuzzy_distance = 2
             },
         };
 
-        let cli = Cli {
-            log_level: Some("error".to_string()),
-            command: Some(Commands::Sources(sources_cmds)),
-        };
+        let cli = test_cli(
+            Some("error".to_string()),
+            Some(Commands::Sources(sources_cmds)),
+        );
 
         let result = handle_command(cli).await;
 
@@ -3470,10 +3476,10 @@ fuzzy_distance = 2
         std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
 
         // Verify that log_level is properly cloned and passed to the handler
-        let cli = Cli {
-            log_level: Some("warn".to_string()),
-            command: Some(Commands::Index { force: true }),
-        };
+        let cli = test_cli(
+            Some("warn".to_string()),
+            Some(Commands::Index { force: true }),
+        );
 
         let result = handle_command(cli).await;
 
@@ -3691,12 +3697,12 @@ fuzzy_distance = 2
 
         std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
 
-        let cli = Cli {
-            log_level: None,
-            command: Some(Commands::Vectordb(VectordbCommands {
+        let cli = test_cli(
+            None,
+            Some(Commands::Vectordb(VectordbCommands {
                 command: VectordbSubcommand::Status,
             })),
-        };
+        );
 
         let result = handle_command(cli).await;
 
@@ -4097,12 +4103,12 @@ fuzzy_distance = 2
 
         std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
 
-        let cli = Cli {
-            log_level: Some("error".to_string()),
-            command: Some(Commands::Graph(GraphCommands {
+        let cli = test_cli(
+            Some("error".to_string()),
+            Some(Commands::Graph(GraphCommands {
                 command: GraphSubcommand::Stats,
             })),
-        };
+        );
 
         let result = handle_command(cli).await;
 
@@ -4164,12 +4170,12 @@ fuzzy_distance = 2
 
         std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
 
-        let cli = Cli {
-            log_level: Some("error".to_string()),
-            command: Some(Commands::Vectordb(VectordbCommands {
+        let cli = test_cli(
+            Some("error".to_string()),
+            Some(Commands::Vectordb(VectordbCommands {
                 command: VectordbSubcommand::Status,
             })),
-        };
+        );
 
         let result = handle_command(cli).await;
 
