@@ -10,6 +10,8 @@ RESET := \033[0m
 
 # Variables
 PROJECT_NAME := mcp-server
+GH_ORG := music-comp
+GH_REPO := ai-music-theory
 BIN_DIR := ./bin
 MODE := debug
 MODES := debug release
@@ -21,6 +23,12 @@ RUST_VERSION := $(shell rustc --version 2>/dev/null || echo "unknown")
 
 # List of binaries to build and install
 BINARIES := music-theory-mcp
+
+# Git remotes to push to
+GIT_REMOTES := macpro github codeberg
+REMOTE_macpro := ssh://macpro.local:23231/$(GH_ORG)/$(GH_REPO).git
+REMOTE_github := git@github.com:$(GH_ORG)/$(GH_REPO).git
+REMOTE_codeberg := ssh://git@codeberg.org/$(GH_ORG)/$(GH_REPO).git
 
 # Default target
 .DEFAULT_GOAL := help
@@ -824,15 +832,32 @@ tracked-files:
 	@echo "$(GREEN)✓ Tracked files saved to $(TARGET)/git-tracked-files.txt$(RESET)"
 	@echo "$(CYAN)• Total files: $$(wc -l < $(TARGET)/git-tracked-files.txt)$(RESET)"
 
+.PHONY: remotes
+remotes:
+	@echo "$(BLUE)Configuring git remotes...$(RESET)"
+	@for remote in $(GIT_REMOTES); do \
+		case $$remote in \
+			macpro)   url="$(REMOTE_macpro)"   ;; \
+			github)   url="$(REMOTE_github)"   ;; \
+			codeberg) url="$(REMOTE_codeberg)" ;; \
+		esac; \
+		if git remote get-url $$remote >/dev/null 2>&1; then \
+			echo "  $(YELLOW)⊙$(RESET) $$remote already exists ($$url)"; \
+		else \
+			git remote add $$remote $$url; \
+			echo "  $(GREEN)✓$(RESET) Added $$remote → $$url"; \
+		fi; \
+	done
+	@echo "$(GREEN)✓ Remotes configured$(RESET)"
+
 .PHONY: push
 push:
 	@echo "$(BLUE)Pushing changes ...$(RESET)"
-	@echo "$(CYAN)• Codeberg:$(RESET)"
-	@git push codeberg main && git push codeberg --tags
-	@echo "$(GREEN)✓ Pushed$(RESET)"
-	@echo "$(CYAN)• Github:$(RESET)"
-	@git push github main && git push github --tags
-	@echo "$(GREEN)✓ Pushed$(RESET)"
+	@for remote in $(GIT_REMOTES); do \
+		echo "$(CYAN)• $$remote:$(RESET)"; \
+		git push $$remote main && git push $$remote --tags; \
+		echo "$(GREEN)✓ Pushed$(RESET)"; \
+	done
 
 # Cache management
 .PHONY: package-caches
