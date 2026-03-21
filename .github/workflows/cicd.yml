@@ -40,6 +40,11 @@ jobs:
       with:
         components: clippy, rustfmt
 
+    # protobuf-compiler: required by lance-encoding (transitive dep of
+    #   lancedb via prost-build, activated with --all-features / vector)
+    - name: Install system dependencies
+      run: sudo apt-get update && sudo apt-get install -y protobuf-compiler
+
     - uses: Swatinem/rust-cache@v2
       with:
         shared-key: "ci-${{ matrix.mode }}"
