@@ -1552,6 +1552,327 @@ impl ToolRegistry for HealthToolsRegistry {
 }
 
 // ============================================================================
+// MusicTheoryToolsRegistry (9 tools — pure computation, no state needed)
+// ============================================================================
+
+struct MusicTheoryToolsRegistry;
+
+impl ToolRegistry for MusicTheoryToolsRegistry {
+    fn tools(&self) -> Vec<Tool> {
+        vec![
+            make_tool(
+                "get_scale_notes",
+                "Compute the notes of a musical scale given a tonic and mode",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "tonic": {
+                            "type": "string",
+                            "description": "Root note (e.g. 'C', 'F#', 'Bb')"
+                        },
+                        "mode": {
+                            "type": "string",
+                            "description": "Scale mode (e.g. 'Major', 'Dorian', 'Harmonic Minor', 'Pentatonic Major')"
+                        },
+                        "direction": {
+                            "type": "string",
+                            "enum": ["ascending", "descending"],
+                            "description": "Scale direction (default: ascending)"
+                        }
+                    },
+                    "required": ["tonic", "mode"]
+                }),
+            ),
+            make_tool(
+                "get_chord_notes",
+                "Compute the notes of a chord given root, quality, and optional number/inversion",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "root": {
+                            "type": "string",
+                            "description": "Root note (e.g. 'C', 'F#', 'Bb')"
+                        },
+                        "quality": {
+                            "type": "string",
+                            "description": "Chord quality (e.g. 'Major', 'Minor', 'Diminished', 'Dominant')"
+                        },
+                        "number": {
+                            "type": "string",
+                            "description": "Chord number (e.g. 'Seventh', 'Ninth', 'Triad')"
+                        },
+                        "inversion": {
+                            "type": "integer",
+                            "description": "Inversion number (0 = root position, 1 = first inversion, etc.)"
+                        }
+                    },
+                    "required": ["root", "quality"]
+                }),
+            ),
+            make_tool(
+                "get_interval",
+                "Calculate the interval between two notes",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "from": {
+                            "type": "string",
+                            "description": "Starting note (e.g. 'C', 'F#')"
+                        },
+                        "to": {
+                            "type": "string",
+                            "description": "Ending note (e.g. 'G', 'Bb')"
+                        }
+                    },
+                    "required": ["from", "to"]
+                }),
+            ),
+            make_tool(
+                "transpose",
+                "Transpose a list of notes up or down by a number of semitones",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "notes": {
+                            "type": "array",
+                            "items": { "type": "string" },
+                            "description": "Notes to transpose (e.g. ['C', 'E', 'G'])"
+                        },
+                        "semitones": {
+                            "type": "integer",
+                            "description": "Number of semitones to transpose"
+                        },
+                        "direction": {
+                            "type": "string",
+                            "enum": ["up", "down"],
+                            "description": "Transpose direction (default: up)"
+                        }
+                    },
+                    "required": ["notes", "semitones"]
+                }),
+            ),
+            make_tool(
+                "get_diatonic_chords",
+                "Get all diatonic chords (triads or sevenths) for a key",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "tonic": {
+                            "type": "string",
+                            "description": "Key tonic (e.g. 'C', 'G', 'Bb')"
+                        },
+                        "mode": {
+                            "type": "string",
+                            "description": "Scale mode (e.g. 'Ionian', 'Dorian', 'Aeolian')"
+                        },
+                        "chord_type": {
+                            "type": "string",
+                            "enum": ["triad", "seventh"],
+                            "description": "Whether to build triads or seventh chords (default: triad)"
+                        }
+                    },
+                    "required": ["tonic", "mode"]
+                }),
+            ),
+            make_tool(
+                "identify_chord",
+                "Identify possible chords from a set of notes",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "notes": {
+                            "type": "array",
+                            "items": { "type": "string" },
+                            "description": "Notes to identify (e.g. ['C', 'E', 'G'])"
+                        }
+                    },
+                    "required": ["notes"]
+                }),
+            ),
+            make_tool(
+                "identify_scale",
+                "Identify possible scales/modes from a set of notes",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "notes": {
+                            "type": "array",
+                            "items": { "type": "string" },
+                            "description": "Notes to identify (e.g. ['C', 'D', 'E', 'F', 'G', 'A', 'B'])"
+                        }
+                    },
+                    "required": ["notes"]
+                }),
+            ),
+            make_tool(
+                "check_enharmonic",
+                "Check if two notes are enharmonically equivalent",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "note_a": {
+                            "type": "string",
+                            "description": "First note (e.g. 'C#')"
+                        },
+                        "note_b": {
+                            "type": "string",
+                            "description": "Second note (e.g. 'Db')"
+                        }
+                    },
+                    "required": ["note_a", "note_b"]
+                }),
+            ),
+            make_tool(
+                "analyze_roman_numerals",
+                "Analyze chords in a key context, returning Roman numeral labels",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "key_tonic": {
+                            "type": "string",
+                            "description": "Key tonic (e.g. 'C', 'G')"
+                        },
+                        "key_mode": {
+                            "type": "string",
+                            "description": "Key mode (e.g. 'Major', 'Ionian', 'Aeolian')"
+                        },
+                        "chords": {
+                            "type": "array",
+                            "items": { "type": "string" },
+                            "description": "Chords to analyze (e.g. ['C Major', 'G Major', 'A Minor'])"
+                        }
+                    },
+                    "required": ["key_tonic", "key_mode", "chords"]
+                }),
+            ),
+        ]
+    }
+
+    fn call(&self, name: &str, args: Value) -> Option<ToolResult> {
+        match name {
+            "get_scale_notes" => Some(Box::pin(async move {
+                let args: tools::music_theory::GetScaleNotesArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::music_theory::get_scale_notes(args)
+                    .map_err(|e| to_mcp_error(e, "Error computing scale"))?;
+                serialize_response(&response)
+            })),
+            "get_chord_notes" => Some(Box::pin(async move {
+                let args: tools::music_theory::GetChordNotesArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::music_theory::get_chord_notes(args)
+                    .map_err(|e| to_mcp_error(e, "Error computing chord"))?;
+                serialize_response(&response)
+            })),
+            "get_interval" => Some(Box::pin(async move {
+                let args: tools::music_theory::GetIntervalArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::music_theory::get_interval(args)
+                    .map_err(|e| to_mcp_error(e, "Error computing interval"))?;
+                serialize_response(&response)
+            })),
+            "transpose" => Some(Box::pin(async move {
+                let args: tools::music_theory::TransposeArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::music_theory::transpose(args)
+                    .map_err(|e| to_mcp_error(e, "Error transposing"))?;
+                serialize_response(&response)
+            })),
+            "get_diatonic_chords" => Some(Box::pin(async move {
+                let args: tools::music_theory::GetDiatonicChordsArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::music_theory::get_diatonic_chords(args)
+                    .map_err(|e| to_mcp_error(e, "Error computing diatonic chords"))?;
+                serialize_response(&response)
+            })),
+            "identify_chord" => Some(Box::pin(async move {
+                let args: tools::music_theory::IdentifyChordArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::music_theory::identify_chord(args)
+                    .map_err(|e| to_mcp_error(e, "Error identifying chord"))?;
+                serialize_response(&response)
+            })),
+            "identify_scale" => Some(Box::pin(async move {
+                let args: tools::music_theory::IdentifyScaleArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::music_theory::identify_scale(args)
+                    .map_err(|e| to_mcp_error(e, "Error identifying scale"))?;
+                serialize_response(&response)
+            })),
+            "check_enharmonic" => Some(Box::pin(async move {
+                let args: tools::music_theory::CheckEnharmonicArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::music_theory::check_enharmonic(args)
+                    .map_err(|e| to_mcp_error(e, "Error checking enharmonic"))?;
+                serialize_response(&response)
+            })),
+            "analyze_roman_numerals" => Some(Box::pin(async move {
+                let args: tools::music_theory::AnalyzeRomanNumeralsArgs =
+                    serde_json::from_value(args).map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::music_theory::analyze_roman_numerals(args)
+                    .map_err(|e| to_mcp_error(e, "Error analyzing roman numerals"))?;
+                serialize_response(&response)
+            })),
+            _ => None,
+        }
+    }
+}
+
+// ============================================================================
 // MusicTheoryResources (ResourceRegistry implementation)
 // ============================================================================
 
@@ -1629,6 +1950,7 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
     let search_tools = SearchToolsRegistry::new(state.clone());
     let graph_tools = GraphToolsRegistry::new(state.clone());
     let health_tools = HealthToolsRegistry::new(state.clone());
+    let music_theory_tools = MusicTheoryToolsRegistry;
 
     let registry = CompositeRegistry::new()
         .add(concept_tools)
@@ -1636,7 +1958,8 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         .add(source_tools)
         .add(search_tools)
         .add(graph_tools)
-        .add(health_tools);
+        .add(health_tools)
+        .add(music_theory_tools);
 
     let resources = MusicTheoryResources::new(state.config.clone());
 
@@ -1797,8 +2120,8 @@ mod tests {
         let state = AppState::new(config).await.unwrap();
         let server = build_server(state);
 
-        // 3 concept + 2 guide + 5 source + 3 search + 16 graph + 1 health = 30
-        assert_eq!(server.registry().tool_count(), 30);
+        // 3 concept + 2 guide + 5 source + 3 search + 16 graph + 1 health + 9 music theory = 39
+        assert_eq!(server.registry().tool_count(), 39);
     }
 
     #[tokio::test]
@@ -1839,6 +2162,15 @@ mod tests {
             "find_bridge_concepts",
             "get_source_coverage",
             "get_learning_path",
+            "get_scale_notes",
+            "get_chord_notes",
+            "get_interval",
+            "transpose",
+            "get_diatonic_chords",
+            "identify_chord",
+            "identify_scale",
+            "check_enharmonic",
+            "analyze_roman_numerals",
         ];
 
         for tool_name in &expected_tools {

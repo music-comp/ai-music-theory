@@ -5,6 +5,8 @@ pub mod questions;
 pub mod search;
 pub mod sources;
 
+pub mod music_theory;
+
 pub mod graph;
 pub mod graph_query;
 pub mod semantic;

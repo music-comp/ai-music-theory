@@ -43,6 +43,9 @@ clap = { workspace = true }
 strsim = { workspace = true }
 toml_edit = { workspace = true }
 
+# Music theory computation
+music-comp-mt = { workspace = true }
+
 # Fabryk framework (umbrella crates re-export sub-crates)
 fabryk = { workspace = true }
 fabryk-mcp = { workspace = true }

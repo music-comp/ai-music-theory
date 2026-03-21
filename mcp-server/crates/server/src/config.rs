@@ -1250,9 +1250,10 @@ backend = "tantivy"
         std::fs::write(tmp.path().join("default.toml"), config_content)
             .expect("Failed to write config");
 
-        let path_str = tmp.path().to_string_lossy().to_string();
+        let file_path = tmp.path().join("default.toml");
+        let path_str = file_path.to_string_lossy().to_string();
         let result = <Config as ConfigManager>::load(Some(&path_str));
-        assert!(result.is_ok());
+        assert!(result.is_ok(), "Config load failed: {:?}", result.err());
         let config = result.unwrap();
         assert_eq!(config.server.name, "test-server");
         assert_eq!(config.server.version, "0.0.1");
@@ -1274,9 +1275,9 @@ backend = "tantivy"
 
         let result = Config::resolve_config_path(None);
         assert!(result.is_some());
-        // The env var path should be returned since it contains default.toml
+        // The env var path should be returned with default.toml appended
         let resolved = result.unwrap();
-        assert_eq!(resolved, tmp.path());
+        assert_eq!(resolved, tmp.path().join("default.toml"));
 
         std::env::remove_var("MUSIC_THEORY_CONFIG_DIR");
     }

@@ -667,6 +667,7 @@ mod tests {
                 field_boost_description: 2.0,
                 field_boost_content: 1.0,
             },
+            lancedb: crate::config::LanceDbConfig::default(),
         }
     }
 
