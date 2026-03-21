@@ -12,7 +12,7 @@ A Model Context Protocol (MCP) server that provides access to comprehensive musi
 - ✅ **Configuration management** - confyg for TOML + ENV with path expansion
 - ✅ **Logging** - twyg for beautiful colored output
 - ✅ **Error handling** - Canonical pattern with backtraces (EH-17)
-- ✅ **25 Tools registered and working**:
+- ✅ **34 Tools registered and working**:
   - **Content Access (10 tools):**
     - `list_sources` - List all source materials with metadata
     - `get_source_chapter` - Retrieve specific chapters
@@ -24,6 +24,16 @@ A Model Context Protocol (MCP) server that provides access to comprehensive musi
     - `list_guides` - List topic guides
     - `get_guide` - Retrieve specific guides
     - `health` - Get server health and search backend status
+  - **Music Theory Computation (9 tools, via `music-comp-mt`):**
+    - `get_scale_notes` - Compute the notes of a scale given tonic and mode
+    - `get_chord_notes` - Compute chord notes given root, quality, and optional number/inversion
+    - `get_interval` - Calculate the interval between two notes
+    - `transpose` - Transpose notes up or down by semitones
+    - `get_diatonic_chords` - Get all diatonic chords (triads or sevenths) for a key
+    - `identify_chord` - Identify possible chords from a set of notes
+    - `identify_scale` - Identify possible scales/modes from a set of notes
+    - `check_enharmonic` - Check if two notes are enharmonically equivalent
+    - `analyze_roman_numerals` - Analyze chords in a key context with Roman numeral labels
   - **Graph Database (15 tools, requires `--features graph`):**
     - `graph_status` - Get graph loading state and statistics
     - `graph_stats` - Detailed graph statistics (categories, relationships, degree)
@@ -65,7 +75,8 @@ mcp-server/
 │   │   ├── sources.rs      # Source material tools
 │   │   ├── concepts.rs     # Concept card tools
 │   │   ├── guides.rs       # Topic guide tools
-│   │   └── search.rs       # Search functionality
+│   │   ├── search.rs       # Search functionality
+│   │   └── music_theory.rs # Music theory computation tools
 │   └── resources/          # Static resource providers
 │       └── mod.rs
 └── assets/ai/              # Rust development guidelines (symlink)

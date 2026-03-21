@@ -1,4 +1,4 @@
-# AI Music Theory Skill
+# AI Music Theory
 
 [![][build-badge]][build]
 [![][tag-badge]][tag]
@@ -9,7 +9,7 @@
 
 ## Overview
 
-This skill provides structured access to music theory concepts spanning:
+This knowledge base provides structured access to music theory concepts spanning:
 
 - **Fundamentals** — notation, scales, intervals, chords, rhythm
 - **Harmony** — diatonic progressions, tonicization, modulation
@@ -56,10 +56,11 @@ The `mcp-server/` directory contains a Rust implementation of an MCP (Model Cont
 - **Concept lookup** — Access atomic concept cards by ID
 - **Full-text search** — Find relevant concepts by query (with Tantivy backend)
 - **Graph database** — Explore concept relationships and learning paths
+- **Music theory computation** — Scales, chords, intervals, transposition, Roman numeral analysis (via `music-comp-mt`)
 - **PDF path resolution** — Locate original source files for deeper reading
 - **Convention access** — Retrieve notation standards on demand
 
-### Available Tools (25 total)
+### Available Tools (34 total)
 
 **Content Access (10 tools):**
 
@@ -75,6 +76,20 @@ The `mcp-server/` directory contains a Rust implementation of an MCP (Model Cont
 | `list_guides` | List available topic guides |
 | `get_guide` | Retrieve a specific topic guide |
 | `health` | Get server health and search backend status |
+
+**Music Theory Computation (9 tools):**
+
+| Tool | Description |
+|------|-------------|
+| `get_scale_notes` | Compute the notes of a musical scale given a tonic and mode |
+| `get_chord_notes` | Compute the notes of a chord given root, quality, and optional number/inversion |
+| `get_interval` | Calculate the interval between two notes |
+| `transpose` | Transpose a list of notes up or down by a number of semitones |
+| `get_diatonic_chords` | Get all diatonic chords (triads or sevenths) for a key |
+| `identify_chord` | Identify possible chords from a set of notes |
+| `identify_scale` | Identify possible scales/modes from a set of notes |
+| `check_enharmonic` | Check if two notes are enharmonically equivalent |
+| `analyze_roman_numerals` | Analyze chords in a key context, returning Roman numeral labels |
 
 **Graph Database (15 tools, requires `--features graph`):**
 
@@ -117,7 +132,7 @@ cargo build --release --features fts
 # With graph database (adds 15 relationship tools)
 cargo build --release --features graph
 
-# Full build - recommended (all 25 tools)
+# Full build - recommended (all 34 tools)
 cargo build --release --features fts,graph
 ```
 
@@ -162,7 +177,7 @@ See the [MCP server documentation](mcp-server/crates/server/README.md) for detai
 
 - ✅ **Open Music Theory** — 123 chapters converted, 200+ concept cards
 - ✅ **Core documentation** — CONVENTIONS.md, SCOPE.md, SOURCES.md
-- ✅ **MCP Server** — 25 tools (content + search + graph database)
+- ✅ **MCP Server** — 34 tools (content + computation + search + graph database)
 - ✅ **Full-text search** — Tantivy backend with advanced query support
 - ✅ **Graph database** — Concept relationships and learning path exploration
 

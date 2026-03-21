@@ -56,7 +56,7 @@ For complete step-by-step instructions including configuration, verification, an
 
 ✅ **Fully Functional** - All core features implemented and working
 
-- **25 MCP tools** registered and operational (10 base + 15 graph)
+- **34 MCP tools** registered and operational (10 base + 9 music theory computation + 15 graph)
 - **Graph database** for exploring concept relationships (v0.3.0)
 - **Full-text search** with Tantivy backend (v0.2.0)
 - Beautiful structured logging with twyg
