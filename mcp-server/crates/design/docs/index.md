@@ -6,6 +6,7 @@ This index is automatically generated. Do not edit manually.
 
 | Number | Title | State | Updated |
 |--------|-------|-------|----------|
+| 0014 | Music Theory Computational Tools | Active | 2026-03-21 |
 | 0013 | Fabryk Extraction: Project Plan Overview | Active | 2026-02-03 |
 | 0012 | Fabryk Extraction Audit: Amendment & Refinements | Final | 2026-02-03 |
 | 0011 | A Guide for Parallel Concept Card Extraction | Active | 2026-02-03 |
@@ -24,6 +25,7 @@ This index is automatically generated. Do not edit manually.
 
 ### Active
 
+- [0014 - Music Theory Computational Tools](05-active/0014-music-theory-computational-tools.md)
 - [0013 - Fabryk Extraction: Project Plan Overview](05-active/0013-fabryk-extraction-project-plan-overview.md)
 - [0011 - A Guide for Parallel Concept Card Extraction](05-active/0011-a-guide-for-parallel-concept-card-extraction.md)
 - [0010 - A Guide to Prepare PDF-Converted Source for Indexing and Concept Extraction](05-active/0010-a-guide-to-prepare-pdf-converted-source-for-indexing-and-concept-extraction.md)
