@@ -61,7 +61,9 @@ help:
 	@echo "  $(YELLOW)make test-full$(RESET)        - Run all tests with all features"
 	@echo "  $(YELLOW)make test-all$(RESET)         - Run tests in all configurations"
 	@echo "  $(YELLOW)make lint$(RESET)             - Run clippy and format check (all configs)"
+	@echo "  $(YELLOW)make fmt-check$(RESET)        - Check code formatting only"
 	@echo "  $(YELLOW)make format$(RESET)           - Format all code with rustfmt"
+	@echo "  $(YELLOW)make ci$(RESET)               - Run full CI pipeline locally (fmt, build, lint, test, docs)"
 	@echo "  $(YELLOW)make coverage$(RESET)         - Generate test coverage report"
 	@echo "  $(YELLOW)make check$(RESET)            - Build + lint + test (simple)"
 	@echo "  $(YELLOW)make check-fts$(RESET)        - Build + lint + test (FTS)"
@@ -79,9 +81,12 @@ help:
 	@echo "  $(YELLOW)make download-caches$(RESET)  - Download pre-built caches from GitHub"
 	@echo "  $(YELLOW)make package-caches$(RESET)   - Build indexes and package for distribution"
 	@echo ""
+	@echo "$(GREEN)Dependencies:$(RESET)"
+	@echo "  $(YELLOW)make check-deps$(RESET)       - Check for outdated dependencies"
+	@echo "  $(YELLOW)make deps$(RESET)              - Update dependencies (cargo upgrade)"
+	@echo ""
 	@echo "$(GREEN)Utilities:$(RESET)"
 	@echo "  $(YELLOW)make push$(RESET)             - Pushes to Codeberg and Github"
-	@echo "  $(YELLOW)make publish$(RESET)          - WIP: Publishes all crates to crates.io"
 	@echo "  $(YELLOW)make tracked-files$(RESET)    - Save list of tracked files"
 	@echo "  $(YELLOW)make size-compare$(RESET)     - Compare binary sizes (all configs)"
 	@echo ""
@@ -89,11 +94,17 @@ help:
 	@echo "  $(YELLOW)make index$(RESET)            - Build FTS index"
 	@echo "  $(YELLOW)make index-force$(RESET)      - Force rebuild FTS index"
 	@echo "  $(YELLOW)make fts-status$(RESET)       - Show FTS index status"
+	@echo "  $(YELLOW)make status$(RESET)            - Alias for fts-status"
 	@echo ""
 	@echo "$(GREEN)CLI Tools - Graph (requires --features graph):$(RESET)"
 	@echo "  $(YELLOW)make graph-build$(RESET)      - Build concept graph database"
+	@echo "  $(YELLOW)make graph-build-verbose$(RESET) - Build graph with verbose output"
 	@echo "  $(YELLOW)make graph-validate$(RESET)   - Validate graph integrity"
 	@echo "  $(YELLOW)make graph-stats$(RESET)      - Show graph statistics"
+	@echo ""
+	@echo "$(GREEN)Documentation:$(RESET)"
+	@echo "  $(YELLOW)make docs$(RESET)             - Build documentation"
+	@echo "  $(YELLOW)make open-docs$(RESET)        - Build and open documentation in browser"
 	@echo ""
 	@echo "$(GREEN)Information:$(RESET)"
 	@echo "  $(YELLOW)make info$(RESET)             - Show build information"
@@ -164,9 +175,9 @@ build: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) in $(MODE) mode with all features...$(RESET)"
 	@echo "$(CYAN)• Compiling workspace with --features full (fts,graph,vector,http)...$(RESET)"
 	@if [ "$(MODE)" = "release" ]; then \
-		cargo build --release --features full; \
+		cargo build --locked --release --features full; \
 	else \
-		cargo build --features full; \
+		cargo build --locked --features full; \
 	fi
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
@@ -185,9 +196,9 @@ build-fts: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) with FTS feature in $(MODE) mode...$(RESET)"
 	@echo "$(CYAN)• Compiling workspace with --features fts...$(RESET)"
 	@if [ "$(MODE)" = "release" ]; then \
-		cargo build --release --features fts; \
+		cargo build --locked --release --features fts; \
 	else \
-		cargo build --features fts; \
+		cargo build --locked --features fts; \
 	fi
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
@@ -206,9 +217,9 @@ build-http: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) with HTTP feature in $(MODE) mode...$(RESET)"
 	@echo "$(CYAN)• Compiling workspace with --features http...$(RESET)"
 	@if [ "$(MODE)" = "release" ]; then \
-		cargo build --release --features http; \
+		cargo build --locked --release --features http; \
 	else \
-		cargo build --features http; \
+		cargo build --locked --features http; \
 	fi
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
@@ -227,9 +238,9 @@ build-vector: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) with vector feature in $(MODE) mode...$(RESET)"
 	@echo "$(CYAN)• Compiling workspace with --features vector...$(RESET)"
 	@if [ "$(MODE)" = "release" ]; then \
-		cargo build --release --features vector; \
+		cargo build --locked --release --features vector; \
 	else \
-		cargo build --features vector; \
+		cargo build --locked --features vector; \
 	fi
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
@@ -250,7 +261,7 @@ build-release: ODM_TARGET = $(OXUR_WORKSPACE)/target/$(MODE)
 build-release: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with all features...$(RESET)"
 	@echo "$(CYAN)• Compiling optimized workspace with --features full (fts,graph,vector,http)...$(RESET)"
-	@cargo build --release --features full
+	@cargo build --locked --release --features full
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -269,7 +280,7 @@ build-release-fts: TARGET = ./target/$(MODE)
 build-release-fts: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with FTS...$(RESET)"
 	@echo "$(CYAN)• Compiling optimized workspace with --features fts...$(RESET)"
-	@cargo build --release --features fts
+	@cargo build --locked --release --features fts
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -288,7 +299,7 @@ build-release-http: TARGET = ./target/$(MODE)
 build-release-http: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with HTTP...$(RESET)"
 	@echo "$(CYAN)• Compiling optimized workspace with --features http...$(RESET)"
-	@cargo build --release --features http
+	@cargo build --locked --release --features http
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -307,7 +318,7 @@ build-release-vector: TARGET = ./target/$(MODE)
 build-release-vector: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with vector...$(RESET)"
 	@echo "$(CYAN)• Compiling optimized workspace with --features vector...$(RESET)"
-	@cargo build --release --features vector
+	@cargo build --locked --release --features vector
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -325,9 +336,9 @@ build-graph: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) with graph feature in $(MODE) mode...$(RESET)"
 	@echo "$(CYAN)• Compiling workspace with --features graph...$(RESET)"
 	@if [ "$(MODE)" = "release" ]; then \
-		cargo build --release --features graph; \
+		cargo build --locked --release --features graph; \
 	else \
-		cargo build --features graph; \
+		cargo build --locked --features graph; \
 	fi
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
@@ -347,7 +358,7 @@ build-release-graph: TARGET = ./target/$(MODE)
 build-release-graph: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with graph...$(RESET)"
 	@echo "$(CYAN)• Compiling optimized workspace with --features graph...$(RESET)"
-	@cargo build --release --features graph
+	@cargo build --locked --release --features graph
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -365,9 +376,9 @@ build-fts-graph: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) with FTS + graph features in $(MODE) mode...$(RESET)"
 	@echo "$(CYAN)• Compiling workspace with --features fts,graph...$(RESET)"
 	@if [ "$(MODE)" = "release" ]; then \
-		cargo build --release --features fts,graph; \
+		cargo build --locked --release --features fts,graph; \
 	else \
-		cargo build --features fts,graph; \
+		cargo build --locked --features fts,graph; \
 	fi
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
@@ -387,7 +398,7 @@ build-release-fts-graph: TARGET = ./target/$(MODE)
 build-release-fts-graph: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with FTS + graph...$(RESET)"
 	@echo "$(CYAN)• Compiling optimized workspace with --features fts,graph...$(RESET)"
-	@cargo build --release --features fts,graph
+	@cargo build --locked --release --features fts,graph
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -405,9 +416,9 @@ build-full: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) with all features in $(MODE) mode...$(RESET)"
 	@echo "$(CYAN)• Compiling workspace with --features full (fts,graph,vector,http)...$(RESET)"
 	@if [ "$(MODE)" = "release" ]; then \
-		cargo build --release --features full; \
+		cargo build --locked --release --features full; \
 	else \
-		cargo build --features full; \
+		cargo build --locked --features full; \
 	fi
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
@@ -427,7 +438,7 @@ build-release-full: TARGET = ./target/$(MODE)
 build-release-full: clean $(BIN_DIR)
 	@echo "$(BLUE)Building $(PROJECT_NAME) in release mode with all features...$(RESET)"
 	@echo "$(CYAN)• Compiling optimized workspace with --features full (fts,graph,vector,http)...$(RESET)"
-	@cargo build --release --features full
+	@cargo build --locked --release --features full
 	@echo "$(CYAN)• Copying binaries to $(BIN_DIR)/$(RESET)"
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -440,18 +451,20 @@ build-release-full: clean $(BIN_DIR)
 	@echo "$(GREEN)✓ Release build complete (all features enabled)$(RESET)"
 	@echo "$(CYAN)→ Optimized binaries in $(BIN_DIR)/$(RESET)"
 
+.PHONY: docs
 docs: DOCS_PATH = target/doc/$(PROJECT_NAME)
 docs:
 	@echo "$(BLUE)Building $(PROJECT_NAME) docs...$(RESET)"
-	@cargo doc --all-features --no-deps --workspace
+	@cargo doc --locked --all-features --no-deps --workspace
 	@echo
 	@echo "$(CYAN)• Docs are available here:$(RESET)"
 	@echo "   • $(DOCS_PATH)"
 	@echo "   • file://$(shell pwd)/$(DOCS_PATH)/index.html"
 	@echo
 
+.PHONY: open-docs
 open-docs:
-	@cargo doc --all-features --no-deps --workspace --open
+	@cargo doc --locked --all-features --no-deps --workspace --open
 
 # Common checks
 .PHONY: common-checks
@@ -564,49 +577,53 @@ clean-all: clean
 test:
 	@echo "$(BLUE)Running tests (without FTS)...$(RESET)"
 	@echo "$(CYAN)• Running all workspace tests...$(RESET)"
-	@cargo test --workspace
+	@cargo test --locked --workspace
 	@echo "$(GREEN)✓ All tests passed$(RESET)"
 
 .PHONY: test-fts
 test-fts:
 	@echo "$(BLUE)Running tests with FTS feature...$(RESET)"
 	@echo "$(CYAN)• Running all workspace tests with --features fts...$(RESET)"
-	@cargo test --features fts --workspace
+	@cargo test --locked --features fts --workspace
 	@echo "$(GREEN)✓ All tests passed (FTS enabled)$(RESET)"
 
 .PHONY: test-graph
 test-graph:
 	@echo "$(BLUE)Running tests with graph feature...$(RESET)"
 	@echo "$(CYAN)• Running all workspace tests with --features graph...$(RESET)"
-	@cargo test --features graph --workspace
+	@cargo test --locked --features graph --workspace
 	@echo "$(GREEN)✓ All tests passed (graph enabled)$(RESET)"
 
 .PHONY: test-http
 test-http:
 	@echo "$(BLUE)Running tests with HTTP feature...$(RESET)"
 	@echo "$(CYAN)• Running all workspace tests with --features http...$(RESET)"
-	@cargo test --features http --workspace
+	@cargo test --locked --features http --workspace
 	@echo "$(GREEN)✓ All tests passed (HTTP enabled)$(RESET)"
 
 .PHONY: test-vector
 test-vector:
 	@echo "$(BLUE)Running tests with vector feature...$(RESET)"
 	@echo "$(CYAN)• Running all workspace tests with --features vector...$(RESET)"
-	@cargo test --features vector --workspace
+	@cargo test --locked --features vector --workspace
 	@echo "$(GREEN)✓ All tests passed (vector enabled)$(RESET)"
 
 .PHONY: test-fts-graph
 test-fts-graph:
 	@echo "$(BLUE)Running tests with FTS + graph features...$(RESET)"
 	@echo "$(CYAN)• Running all workspace tests with --features fts,graph...$(RESET)"
-	@cargo test --features fts,graph --workspace
+	@cargo test --locked --features fts,graph --workspace
 	@echo "$(GREEN)✓ All tests passed (FTS + graph enabled)$(RESET)"
 
 .PHONY: test-full
 test-full:
-	@echo "$(BLUE)Running tests with all features...$(RESET)"
+	@echo "$(BLUE)Running tests with all features ($(MODE))...$(RESET)"
 	@echo "$(CYAN)• Running all workspace tests with --features full...$(RESET)"
-	@cargo test --features full --workspace
+	@if [ "$(MODE)" = "release" ]; then \
+		cargo test --locked --features full --workspace --release; \
+	else \
+		cargo test --locked --features full --workspace; \
+	fi
 	@echo "$(GREEN)✓ All tests passed (all features enabled)$(RESET)"
 
 # Feature configurations to test across modes
@@ -623,10 +640,10 @@ test-all:
 		for features in $(FEATURE_CONFIGS); do \
 			if [ "$$features" = "none" ]; then \
 				echo "$(CYAN)• [$$mode] Without features$(RESET)"; \
-				cargo test --workspace $$RELEASE_FLAG; \
+				cargo test --locked --workspace $$RELEASE_FLAG; \
 			else \
 				echo "$(CYAN)• [$$mode] With $$features$(RESET)"; \
-				cargo test --features $$features --workspace $$RELEASE_FLAG; \
+				cargo test --locked --features $$features --workspace $$RELEASE_FLAG; \
 			fi; \
 		done; \
 	done
@@ -637,27 +654,33 @@ test-all:
 lint:
 	@echo "$(BLUE)Running linter checks (all configurations)...$(RESET)"
 	@echo "$(CYAN)• Running clippy without features...$(RESET)"
-	@cargo clippy --workspace -- -D warnings
+	@cargo clippy --locked --workspace -- -D warnings
 	@echo "$(GREEN)✓ Clippy passed (without features)$(RESET)"
 	@echo "$(CYAN)• Running clippy with FTS...$(RESET)"
-	@cargo clippy --features fts --workspace -- -D warnings
+	@cargo clippy --locked --features fts --workspace -- -D warnings
 	@echo "$(GREEN)✓ Clippy passed (with FTS)$(RESET)"
 	@echo "$(CYAN)• Running clippy with graph...$(RESET)"
-	@cargo clippy --features graph --workspace -- -D warnings
+	@cargo clippy --locked --features graph --workspace -- -D warnings
 	@echo "$(GREEN)✓ Clippy passed (with graph)$(RESET)"
 	@echo "$(CYAN)• Running clippy with HTTP...$(RESET)"
-	@cargo clippy --features http --workspace -- -D warnings
+	@cargo clippy --locked --features http --workspace -- -D warnings
 	@echo "$(GREEN)✓ Clippy passed (with HTTP)$(RESET)"
 	@echo "$(CYAN)• Running clippy with vector...$(RESET)"
-	@cargo clippy --features vector --workspace -- -D warnings
+	@cargo clippy --locked --features vector --workspace -- -D warnings
 	@echo "$(GREEN)✓ Clippy passed (with vector)$(RESET)"
 	@echo "$(CYAN)• Running clippy with FTS + graph...$(RESET)"
-	@cargo clippy --features fts,graph --workspace -- -D warnings
+	@cargo clippy --locked --features fts,graph --workspace -- -D warnings
 	@echo "$(GREEN)✓ Clippy passed (with FTS + graph)$(RESET)"
 	@echo "$(CYAN)• Running clippy with all features...$(RESET)"
-	@cargo clippy --features full --workspace -- -D warnings
+	@cargo clippy --locked --features full --workspace -- -D warnings
 	@echo "$(GREEN)✓ Clippy passed (with all features)$(RESET)"
 	@echo "$(CYAN)• Checking code formatting...$(RESET)"
+	@cargo fmt --all -- --check
+	@echo "$(GREEN)✓ Format check passed$(RESET)"
+
+.PHONY: fmt-check
+fmt-check:
+	@echo "$(BLUE)Checking code formatting...$(RESET)"
 	@cargo fmt --all -- --check
 	@echo "$(GREEN)✓ Format check passed$(RESET)"
 
@@ -667,6 +690,37 @@ format:
 	@echo "$(CYAN)• Running rustfmt on all files...$(RESET)"
 	@cargo fmt --all
 	@echo "$(GREEN)✓ Code formatted$(RESET)"
+
+# CI pipeline — mirrors .github/workflows/cicd.yml exactly
+# Usage: make ci  (debug)  or  make ci MODE=release
+.PHONY: ci
+ci: check-deps fmt-check
+	@echo "$(BLUE)Building ($(MODE), all features)...$(RESET)"
+	@if [ "$(MODE)" = "release" ]; then \
+		cargo build --locked --all-features --workspace --release; \
+	else \
+		cargo build --locked --all-features --workspace; \
+	fi
+	@echo "$(GREEN)✓ Build passed$(RESET)"
+	@echo "$(BLUE)Linting ($(MODE), all features)...$(RESET)"
+	@if [ "$(MODE)" = "release" ]; then \
+		cargo clippy --locked --all-features --workspace --release -- -D warnings; \
+	else \
+		cargo clippy --locked --all-features --workspace -- -D warnings; \
+	fi
+	@echo "$(GREEN)✓ Lint passed$(RESET)"
+	@echo "$(BLUE)Testing ($(MODE), all features)...$(RESET)"
+	@if [ "$(MODE)" = "release" ]; then \
+		cargo test --locked --all-features --workspace --release; \
+	else \
+		cargo test --locked --all-features --workspace; \
+	fi
+	@echo "$(GREEN)✓ Tests passed$(RESET)"
+	@echo "$(BLUE)Building docs...$(RESET)"
+	@cargo doc --locked --all-features --workspace --no-deps
+	@echo "$(GREEN)✓ Docs built$(RESET)"
+	@echo ""
+	@echo "$(GREEN)✓ CI pipeline passed ($(MODE))$(RESET)"
 
 .PHONY: coverage
 coverage:
@@ -688,11 +742,11 @@ coverage-html:
 check-graph:
 	@echo "$(BLUE)Running checks for graph configuration...$(RESET)"
 	@echo "$(CYAN)• Building with graph...$(RESET)"
-	@cargo build --features graph
+	@cargo build --locked --features graph
 	@echo "$(CYAN)• Running clippy with graph...$(RESET)"
-	@cargo clippy --features graph --workspace -- -D warnings
+	@cargo clippy --locked --features graph --workspace -- -D warnings
 	@echo "$(CYAN)• Running tests with graph...$(RESET)"
-	@cargo test --features graph --workspace
+	@cargo test --locked --features graph --workspace
 	@echo ""
 	@echo "$(GREEN)✓ All graph checks passed$(RESET)"
 	@echo ""
@@ -701,11 +755,11 @@ check-graph:
 check-http:
 	@echo "$(BLUE)Running checks for HTTP configuration...$(RESET)"
 	@echo "$(CYAN)• Building with HTTP...$(RESET)"
-	@cargo build --features http
+	@cargo build --locked --features http
 	@echo "$(CYAN)• Running clippy with HTTP...$(RESET)"
-	@cargo clippy --features http --workspace -- -D warnings
+	@cargo clippy --locked --features http --workspace -- -D warnings
 	@echo "$(CYAN)• Running tests with HTTP...$(RESET)"
-	@cargo test --features http --workspace
+	@cargo test --locked --features http --workspace
 	@echo ""
 	@echo "$(GREEN)✓ All HTTP checks passed$(RESET)"
 	@echo ""
@@ -714,11 +768,11 @@ check-http:
 check-vector:
 	@echo "$(BLUE)Running checks for vector configuration...$(RESET)"
 	@echo "$(CYAN)• Building with vector...$(RESET)"
-	@cargo build --features vector
+	@cargo build --locked --features vector
 	@echo "$(CYAN)• Running clippy with vector...$(RESET)"
-	@cargo clippy --features vector --workspace -- -D warnings
+	@cargo clippy --locked --features vector --workspace -- -D warnings
 	@echo "$(CYAN)• Running tests with vector...$(RESET)"
-	@cargo test --features vector --workspace
+	@cargo test --locked --features vector --workspace
 	@echo ""
 	@echo "$(GREEN)✓ All vector checks passed$(RESET)"
 	@echo ""
@@ -727,11 +781,11 @@ check-vector:
 check-fts-graph:
 	@echo "$(BLUE)Running checks for FTS + graph configuration...$(RESET)"
 	@echo "$(CYAN)• Building with FTS + graph...$(RESET)"
-	@cargo build --features fts,graph
+	@cargo build --locked --features fts,graph
 	@echo "$(CYAN)• Running clippy with FTS + graph...$(RESET)"
-	@cargo clippy --features fts,graph --workspace -- -D warnings
+	@cargo clippy --locked --features fts,graph --workspace -- -D warnings
 	@echo "$(CYAN)• Running tests with FTS + graph...$(RESET)"
-	@cargo test --features fts,graph --workspace
+	@cargo test --locked --features fts,graph --workspace
 	@echo ""
 	@echo "$(GREEN)✓ All FTS + graph checks passed$(RESET)"
 	@echo ""
@@ -770,6 +824,7 @@ tracked-files:
 	@echo "$(GREEN)✓ Tracked files saved to $(TARGET)/git-tracked-files.txt$(RESET)"
 	@echo "$(CYAN)• Total files: $$(wc -l < $(TARGET)/git-tracked-files.txt)$(RESET)"
 
+.PHONY: push
 push:
 	@echo "$(BLUE)Pushing changes ...$(RESET)"
 	@echo "$(CYAN)• Codeberg:$(RESET)"
@@ -803,7 +858,7 @@ build-all: clean $(BIN_DIR)
 	@echo "$(BLUE)Building all configurations in release mode...$(RESET)"
 	@echo ""
 	@echo "$(CYAN)═══ Configuration 1: Simple Search ═══$(RESET)"
-	@cargo build --release
+	@cargo build --locked --release
 	@mkdir -p $(BIN_DIR)/simple
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -813,7 +868,7 @@ build-all: clean $(BIN_DIR)
 	done
 	@echo ""
 	@echo "$(CYAN)═══ Configuration 2: With FTS ═══$(RESET)"
-	@cargo build --release --features fts
+	@cargo build --locked --release --features fts
 	@mkdir -p $(BIN_DIR)/fts
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -823,7 +878,7 @@ build-all: clean $(BIN_DIR)
 	done
 	@echo ""
 	@echo "$(CYAN)═══ Configuration 3: With HTTP ═══$(RESET)"
-	@cargo build --release --features http
+	@cargo build --locked --release --features http
 	@mkdir -p $(BIN_DIR)/http
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -833,7 +888,7 @@ build-all: clean $(BIN_DIR)
 	done
 	@echo ""
 	@echo "$(CYAN)═══ Configuration 4: With Vector ═══$(RESET)"
-	@cargo build --release --features vector
+	@cargo build --locked --release --features vector
 	@mkdir -p $(BIN_DIR)/vector
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -843,7 +898,7 @@ build-all: clean $(BIN_DIR)
 	done
 	@echo ""
 	@echo "$(CYAN)═══ Configuration 5: With FTS + Graph ═══$(RESET)"
-	@cargo build --release --features fts,graph
+	@cargo build --locked --release --features fts,graph
 	@mkdir -p $(BIN_DIR)/all
 	@for bin in $(BINARIES); do \
 		if [ -f $(TARGET)/$$bin ]; then \
@@ -973,11 +1028,11 @@ graph-stats:
 check-fts:
 	@echo "$(BLUE)Running checks for FTS configuration...$(RESET)"
 	@echo "$(CYAN)• Building with FTS...$(RESET)"
-	@cargo build --features fts
+	@cargo build --locked --features fts
 	@echo "$(CYAN)• Running clippy with FTS...$(RESET)"
-	@cargo clippy --features fts --workspace -- -D warnings
+	@cargo clippy --locked --features fts --workspace -- -D warnings
 	@echo "$(CYAN)• Running tests with FTS...$(RESET)"
-	@cargo test --features fts --workspace
+	@cargo test --locked --features fts --workspace
 	@echo ""
 	@echo "$(GREEN)✓ All FTS checks passed$(RESET)"
 	@echo ""

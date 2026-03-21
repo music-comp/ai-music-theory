@@ -52,17 +52,17 @@ jobs:
       run: make check-deps
 
     - name: Check formatting
-      run: cargo fmt --all -- --check
+      run: make fmt-check
 
     - name: Build
-      run: cargo build --locked --all-features --workspace ${{ matrix.mode == 'release' && '--release' || '' }}
+      run: make build MODE=${{ matrix.mode }}
 
     - name: Lint
-      run: cargo clippy --locked --all-features --workspace ${{ matrix.mode == 'release' && '--release' || '' }} -- -D warnings
+      run: make lint
 
     - name: Run tests
-      run: cargo test --locked --all-features --workspace ${{ matrix.mode == 'release' && '--release' || '' }}
+      run: make test-full MODE=${{ matrix.mode }}
 
     - name: Build docs
       if: matrix.mode == 'debug'
-      run: cargo doc --locked --all-features --workspace --no-deps
+      run: make docs
