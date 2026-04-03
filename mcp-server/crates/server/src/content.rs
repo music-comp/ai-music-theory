@@ -1,20 +1,27 @@
-//! Content layer: `ContentItemProvider` implementation for music theory concepts.
+//! Content layer: provider implementations for music theory content.
 //!
-//! This module wraps the existing `tools::concepts` functionality behind the
-//! `fabryk_mcp::content::ContentItemProvider` trait, enabling domain-agnostic
-//! MCP tools to operate on music theory concept cards.
+//! This module wraps existing tool functionality behind fabryk's content traits,
+//! enabling domain-agnostic MCP tools to operate on music theory data.
 //!
-//! The provider delegates to existing functions in `tools::concepts` rather
-//! than reimplementing the logic. This allows incremental migration: the old
-//! tool handlers continue to work while new trait-based handlers can be
-//! introduced alongside them.
+//! - [`MusicTheoryContentProvider`] implements [`ContentItemProvider`] for concept cards,
+//!   delegating to `tools::concepts`.
+//! - [`MusicTheorySourceProvider`] implements [`SourceProvider`] for reference materials
+//!   (books, papers), delegating to `tools::sources`.
+//!
+//! Both providers delegate to existing functions rather than reimplementing logic.
+//! This allows incremental migration: the old tool handlers continue to work
+//! while new trait-based handlers can be introduced alongside them.
 
 use async_trait::async_trait;
 use fabryk::core::Result;
-use fabryk_mcp::content::{CategoryInfo, ContentItemProvider};
+use fabryk_mcp::content::{
+    CategoryInfo, ChapterInfo as FabrykChapterInfo, ContentItemProvider, SourceProvider,
+};
 use serde::Serialize;
+use std::path::PathBuf;
 
 use crate::config::Config;
+use crate::state::AppState;
 use crate::tools::concepts::{ListCategoriesResponse, ListConceptsParams};
 
 /// Summary information for a music theory concept card.
@@ -137,6 +144,137 @@ impl ContentItemProvider for MusicTheoryContentProvider {
 
     fn content_type_name_plural(&self) -> &str {
         "concepts"
+    }
+}
+
+// ============================================================================
+// Source Provider
+// ============================================================================
+
+/// Summary information for a source material.
+///
+/// This is the `SourceSummary` associated type for [`SourceProvider`].
+/// It mirrors the fields from [`crate::tools::sources::SourceInfo`] that are
+/// relevant for listing operations.
+#[derive(Debug, Clone, Serialize)]
+pub struct SourceSummary {
+    /// Source identifier (e.g., "open-music-theory").
+    pub id: String,
+    /// Human-readable title.
+    pub title: String,
+    /// Format of the source file.
+    pub format: String,
+    /// Filesystem path to the source.
+    pub path: String,
+    /// Number of chapters, if converted.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub chapters: Option<usize>,
+    /// Conversion status.
+    pub status: String,
+}
+
+/// Source provider for music theory reference materials.
+///
+/// Wraps the existing source infrastructure, delegating to
+/// [`crate::tools::sources::list_sources`],
+/// [`crate::tools::sources::get_source_chapter`],
+/// [`crate::tools::sources::list_source_chapters`], and
+/// [`crate::tools::sources::get_source_pdf_path`].
+#[derive(Clone)]
+pub struct MusicTheorySourceProvider {
+    state: AppState,
+}
+
+impl std::fmt::Debug for MusicTheorySourceProvider {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        f.debug_struct("MusicTheorySourceProvider")
+            .finish_non_exhaustive()
+    }
+}
+
+impl MusicTheorySourceProvider {
+    /// Create a new source provider with the given application state.
+    pub fn new(state: AppState) -> Self {
+        Self { state }
+    }
+}
+
+#[async_trait]
+impl SourceProvider for MusicTheorySourceProvider {
+    type SourceSummary = SourceSummary;
+
+    async fn list_sources(&self) -> Result<Vec<Self::SourceSummary>> {
+        let response = crate::tools::sources::list_sources(&self.state.config).await?;
+
+        let summaries = response
+            .sources
+            .into_iter()
+            .map(|s| SourceSummary {
+                id: s.id,
+                title: s.title,
+                format: format!("{:?}", s.format).to_lowercase(),
+                path: s.path,
+                chapters: s.chapters,
+                status: format!("{:?}", s.status),
+            })
+            .collect();
+
+        Ok(summaries)
+    }
+
+    async fn get_chapter(
+        &self,
+        source_id: &str,
+        chapter: &str,
+        section: Option<&str>,
+    ) -> Result<String> {
+        crate::tools::sources::get_source_chapter(
+            &self.state.config,
+            source_id,
+            chapter,
+            section,
+        )
+        .await
+    }
+
+    async fn list_chapters(&self, source_id: &str) -> Result<Vec<FabrykChapterInfo>> {
+        let response =
+            crate::tools::sources::list_source_chapters(&self.state, source_id).await?;
+
+        let chapters = response
+            .chapters
+            .into_iter()
+            .map(|c| FabrykChapterInfo {
+                id: c.id,
+                title: c.title,
+                number: c.section,
+                available: true,
+            })
+            .collect();
+
+        Ok(chapters)
+    }
+
+    async fn get_source_path(&self, source_id: &str) -> Result<Option<PathBuf>> {
+        match crate::tools::sources::get_source_pdf_path(&self.state.config, source_id) {
+            Ok(path) => {
+                if path.exists() {
+                    Ok(Some(path))
+                } else {
+                    Ok(None)
+                }
+            }
+            Err(_) => Ok(None),
+        }
+    }
+
+    async fn is_available(&self, source_id: &str) -> Result<bool> {
+        let response =
+            crate::tools::sources::check_source_availability(&self.state, source_id).await?;
+        Ok(!matches!(
+            response.status,
+            crate::tools::sources::AvailabilityStatus::Unavailable
+        ))
     }
 }
 
@@ -322,5 +460,146 @@ mod tests {
         let provider = MusicTheoryContentProvider::new(config);
         let count = provider.count().await.unwrap();
         assert_eq!(count, 0);
+    }
+
+    // ========================================================================
+    // MusicTheorySourceProvider tests
+    // ========================================================================
+
+    #[tokio::test]
+    async fn test_source_provider_new() {
+        let config = Config::load().unwrap();
+        let state = AppState::new(config).await.unwrap();
+        let _provider = MusicTheorySourceProvider::new(state);
+        // Construction succeeds — provider is ready for use.
+    }
+
+    #[test]
+    fn test_source_summary_serialization() {
+        let summary = SourceSummary {
+            id: "open-music-theory".to_string(),
+            title: "Open Music Theory".to_string(),
+            format: "markdown".to_string(),
+            path: "/some/path".to_string(),
+            chapters: Some(12),
+            status: "Converted".to_string(),
+        };
+
+        let json = serde_json::to_string(&summary).expect("should serialize");
+        assert!(json.contains("open-music-theory"));
+        assert!(json.contains("Open Music Theory"));
+        assert!(json.contains("markdown"));
+        assert!(json.contains("12"));
+    }
+
+    #[test]
+    fn test_source_summary_serialization_no_chapters() {
+        let summary = SourceSummary {
+            id: "test".to_string(),
+            title: "Test".to_string(),
+            format: "pdf".to_string(),
+            path: "/test".to_string(),
+            chapters: None,
+            status: "NotConverted".to_string(),
+        };
+
+        let json = serde_json::to_string(&summary).expect("should serialize");
+        // chapters field should be skipped when None
+        assert!(!json.contains("chapters"));
+    }
+
+    #[tokio::test]
+    async fn test_source_provider_list_sources_empty() {
+        let mut config = Config::load().unwrap();
+        config.paths.sources_md = "/nonexistent/path/for/testing".to_string();
+        // Clear configured source files so list_unconverted_sources returns nothing
+        config.sources.oxford.files.clear();
+        config.sources.general.files.clear();
+        config.sources.papers.files.clear();
+        let state = AppState::new(config).await.unwrap();
+
+        let provider = MusicTheorySourceProvider::new(state);
+        let sources = provider.list_sources().await.unwrap();
+        assert!(sources.is_empty());
+    }
+
+    #[tokio::test]
+    async fn test_source_provider_get_chapter_not_found() {
+        let config = Config::load().unwrap();
+        let state = AppState::new(config).await.unwrap();
+
+        let provider = MusicTheorySourceProvider::new(state);
+        let result = provider
+            .get_chapter("nonexistent-source", "chapter-1", None)
+            .await;
+        assert!(result.is_err());
+    }
+
+    #[tokio::test]
+    async fn test_source_provider_get_source_path_unknown() {
+        let config = Config::load().unwrap();
+        let state = AppState::new(config).await.unwrap();
+
+        let provider = MusicTheorySourceProvider::new(state);
+        let result = provider.get_source_path("unknown-source").await.unwrap();
+        assert!(result.is_none());
+    }
+
+    #[tokio::test]
+    async fn test_source_provider_is_available_nonexistent() {
+        let config = Config::load().unwrap();
+        let state = AppState::new(config).await.unwrap();
+
+        let provider = MusicTheorySourceProvider::new(state);
+        let available = provider.is_available("nonexistent-source").await.unwrap();
+        assert!(!available);
+    }
+
+    #[tokio::test]
+    async fn test_source_provider_list_chapters_with_temp_content() {
+        let temp = tempfile::TempDir::new().unwrap();
+        let source_dir = temp.path().join("my-source");
+        tokio::fs::create_dir_all(&source_dir).await.unwrap();
+
+        tokio::fs::write(
+            source_dir.join("ch-01.md"),
+            "---\ntitle: Introduction\nsection: pp. 1-10\n---\n\n# Introduction",
+        )
+        .await
+        .unwrap();
+
+        let mut config = Config::load().unwrap();
+        config.paths.sources_md = temp.path().to_string_lossy().to_string();
+        let state = AppState::new(config).await.unwrap();
+
+        let provider = MusicTheorySourceProvider::new(state);
+        let chapters = provider.list_chapters("my-source").await.unwrap();
+        assert_eq!(chapters.len(), 1);
+        assert_eq!(chapters[0].id, "ch-01");
+        assert_eq!(chapters[0].title, "Introduction");
+        assert!(chapters[0].available);
+    }
+
+    #[tokio::test]
+    async fn test_source_provider_get_chapter_with_temp_content() {
+        let temp = tempfile::TempDir::new().unwrap();
+        let source_dir = temp.path().join("my-source");
+        tokio::fs::create_dir_all(&source_dir).await.unwrap();
+
+        let content = "---\ntitle: Introduction\n---\n\n# Introduction\n\nWelcome.";
+        tokio::fs::write(source_dir.join("ch-01.md"), content)
+            .await
+            .unwrap();
+
+        let mut config = Config::load().unwrap();
+        config.paths.sources_md = temp.path().to_string_lossy().to_string();
+        let state = AppState::new(config).await.unwrap();
+
+        let provider = MusicTheorySourceProvider::new(state);
+        let result = provider
+            .get_chapter("my-source", "ch-01", None)
+            .await
+            .unwrap();
+        assert_eq!(result, content);
     }
 }
