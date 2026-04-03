@@ -6,6 +6,7 @@ This index is automatically generated. Do not edit manually.
 
 | Number | Title | State | Updated |
 |--------|-------|-------|----------|
+| 0014 | Quintal Fiber Bundle Implementation: Project Plan | Under Review | 2026-04-02 |
 | 0014 | Music Theory Computational Tools | Active | 2026-03-21 |
 | 0013 | Fabryk Extraction: Project Plan Overview | Active | 2026-02-03 |
 | 0012 | Fabryk Extraction Audit: Amendment & Refinements | Final | 2026-02-03 |
@@ -22,6 +23,10 @@ This index is automatically generated. Do not edit manually.
 | 0001 | Open Music Theory Processing Plan | Active | 2026-01-24 |
 
 ## Documents by State
+
+### Under Review
+
+- [0014 - Quintal Fiber Bundle Implementation: Project Plan](02-under-review/0014-quintal-fiber-bundle-implementation-project-plan.md)
 
 ### Active
 
