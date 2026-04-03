@@ -164,6 +164,7 @@ pub async fn search_concepts(
             .as_ref()
             .map(crate::search::to_fabryk_query_mode),
         snippet_length: None,
+        extra_filters: None,
     };
 
     // Execute search via fabryk's SearchBackend trait (owned params)

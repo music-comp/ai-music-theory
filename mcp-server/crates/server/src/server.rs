@@ -884,6 +884,69 @@ impl ToolRegistry for SearchToolsRegistry {
 }
 
 // ============================================================================
+// QuestionSearchRegistry (1 tool) — standalone for search_by_question
+// ============================================================================
+
+struct QuestionSearchRegistry {
+    config: Config,
+}
+
+impl QuestionSearchRegistry {
+    fn new(config: Config) -> Self {
+        Self { config }
+    }
+}
+
+impl ToolRegistry for QuestionSearchRegistry {
+    fn tools(&self) -> Vec<Tool> {
+        vec![make_tool(
+            "search_by_question",
+            "Find concept cards that answer a specific question. Matches against competency questions declared in card metadata.",
+            json!({
+                "type": "object",
+                "properties": {
+                    "question": {
+                        "type": "string",
+                        "description": "The question to search for"
+                    },
+                    "limit": {
+                        "type": "integer",
+                        "description": "Maximum results (default: 10)",
+                        "default": 10
+                    }
+                },
+                "required": ["question"]
+            }),
+        )]
+    }
+
+    fn call(&self, name: &str, args: Value) -> Option<ToolResult> {
+        if name != "search_by_question" {
+            return None;
+        }
+
+        let config = self.config.clone();
+        Some(Box::pin(async move {
+            let args: SearchByQuestionArgs = serde_json::from_value(args).map_err(|e| {
+                ErrorData::new(
+                    ErrorCode::INVALID_PARAMS,
+                    format!("Invalid parameters: {}", e),
+                    None,
+                )
+            })?;
+            let params = tools::questions::SearchByQuestionParams {
+                question: args.question,
+                limit: args.limit,
+            };
+            let response = tools::questions::search_by_question(&config, params)
+                .await
+                .map_err(|e| to_mcp_error(e, "Error searching by question"))?;
+            serialize_response(&response)
+        }))
+    }
+}
+
+// ============================================================================
 // GraphToolsRegistry (16 tools)
 // ============================================================================
 
@@ -1948,6 +2011,7 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
     let guide_tools = GuideToolsRegistry::new(state.config.clone());
     let source_tools = SourceToolsRegistry::new(state.clone());
     let search_tools = SearchToolsRegistry::new(state.clone());
+    let question_search = QuestionSearchRegistry::new(state.config.clone());
     let graph_tools = GraphToolsRegistry::new(state.clone());
     let health_tools = HealthToolsRegistry::new(state.clone());
     let music_theory_tools = MusicTheoryToolsRegistry;
@@ -1956,6 +2020,7 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         .add(concept_tools)
         .add(guide_tools)
         .add(source_tools)
+        .add(question_search)
         .add(search_tools)
         .add(graph_tools)
         .add(health_tools)
@@ -2120,8 +2185,8 @@ mod tests {
         let state = AppState::new(config).await.unwrap();
         let server = build_server(state);
 
-        // 3 concept + 2 guide + 5 source + 3 search + 16 graph + 1 health + 9 music theory = 39
-        assert_eq!(server.registry().tool_count(), 39);
+        // 3 concept + 2 guide + 5 source + 1 question + 3 search + 16 graph + 1 health + 9 music theory = 40
+        assert_eq!(server.registry().tool_count(), 40);
     }
 
     #[tokio::test]
