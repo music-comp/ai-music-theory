@@ -6,6 +6,7 @@ This index is automatically generated. Do not edit manually.
 
 | Number | Title | State | Updated |
 |--------|-------|-------|----------|
+| 0015 | Complete the Fabryk Extraction — Implementation Plan | Active | 2026-04-03 |
 | 0014 | Quintal Fiber Bundle Implementation: Project Plan | Under Review | 2026-04-02 |
 | 0014 | Music Theory Computational Tools | Active | 2026-03-21 |
 | 0013 | Fabryk Extraction: Project Plan Overview | Active | 2026-02-03 |
@@ -30,6 +31,7 @@ This index is automatically generated. Do not edit manually.
 
 ### Active
 
+- [0015 - Complete the Fabryk Extraction — Implementation Plan](05-active/0015-complete-the-fabryk-extraction-implementation-plan.md)
 - [0014 - Music Theory Computational Tools](05-active/0014-music-theory-computational-tools.md)
 - [0013 - Fabryk Extraction: Project Plan Overview](05-active/0013-fabryk-extraction-project-plan-overview.md)
 - [0011 - A Guide for Parallel Concept Card Extraction](05-active/0011-a-guide-for-parallel-concept-card-extraction.md)
