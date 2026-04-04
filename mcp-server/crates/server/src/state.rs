@@ -58,6 +58,14 @@ pub struct AppState {
     #[cfg(feature = "graph")]
     pub graph_data: Arc<RwLock<Option<crate::graph::LoadedGraph>>>,
 
+    /// Shared graph data for fabryk `GraphTools` (tokio RwLock).
+    ///
+    /// This is a separate reference to the graph data that uses `tokio::sync::RwLock`
+    /// (required by `GraphTools::with_shared`). It is updated in lockstep with
+    /// `graph_data` whenever the graph is loaded or rebuilt.
+    #[cfg(feature = "graph")]
+    pub shared_graph: Arc<tokio::sync::RwLock<crate::graph::GraphData>>,
+
     /// Vector service lifecycle handle
     #[cfg(feature = "vector")]
     pub vector_service: ServiceHandle,
@@ -98,6 +106,8 @@ impl AppState {
             graph_service: ServiceHandle::new("graph"),
             #[cfg(feature = "graph")]
             graph_data: Arc::new(RwLock::new(None)),
+            #[cfg(feature = "graph")]
+            shared_graph: Arc::new(tokio::sync::RwLock::new(crate::graph::GraphData::new())),
             #[cfg(feature = "vector")]
             vector_service: ServiceHandle::new("vector"),
             #[cfg(feature = "vector")]
@@ -446,6 +456,12 @@ fn start_graph_loading(state: Arc<AppState>, data_dir: std::path::PathBuf) {
                     loaded.stats.concept_count,
                     loaded.stats.source_count
                 );
+
+                // Update the shared tokio::sync::RwLock<GraphData> for GraphTools
+                {
+                    let mut shared = state.shared_graph.write().await;
+                    *shared = loaded.data.clone();
+                }
 
                 // Store graph data and mark service ready
                 {

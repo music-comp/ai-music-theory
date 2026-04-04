@@ -15,7 +15,8 @@
 use async_trait::async_trait;
 use fabryk::core::Result;
 use fabryk_mcp::content::{
-    CategoryInfo, ChapterInfo as FabrykChapterInfo, ContentItemProvider, SourceProvider,
+    CategoryInfo, ChapterInfo as FabrykChapterInfo, ContentItemProvider, FilterMap, GuideProvider,
+    SourceProvider,
 };
 use serde::Serialize;
 use std::path::PathBuf;
@@ -90,6 +91,55 @@ impl ContentItemProvider for MusicTheoryContentProvider {
                 tier: None,
                 subcategory: None,
                 source: None,
+            })
+        } else {
+            None
+        };
+
+        let response = crate::tools::concepts::list_concepts(&self.config, params).await?;
+
+        let summaries = response
+            .concepts
+            .into_iter()
+            .map(|c| ConceptSummary {
+                id: c.id,
+                title: c.title,
+                category: c.category,
+                source: c.source,
+                preview: c.preview,
+                subcategory: c.subcategory,
+                tier: c.tier,
+                extraction_confidence: c.extraction_confidence,
+                aliases: c.aliases,
+            })
+            .collect();
+
+        Ok(summaries)
+    }
+
+    async fn list_items_filtered(
+        &self,
+        category: Option<&str>,
+        limit: Option<usize>,
+        extra_filters: &FilterMap,
+    ) -> Result<Vec<Self::ItemSummary>> {
+        let tier = extra_filters.get("tier").and_then(|v| v.as_str());
+        let subcategory = extra_filters.get("subcategory").and_then(|v| v.as_str());
+        let source = extra_filters.get("source").and_then(|v| v.as_str());
+
+        let has_filters = category.is_some()
+            || limit.is_some()
+            || tier.is_some()
+            || subcategory.is_some()
+            || source.is_some();
+
+        let params = if has_filters {
+            Some(ListConceptsParams {
+                category: category.map(String::from),
+                limit,
+                tier: tier.map(String::from),
+                subcategory: subcategory.map(String::from),
+                source: source.map(String::from),
             })
         } else {
             None
@@ -275,6 +325,73 @@ impl SourceProvider for MusicTheorySourceProvider {
             response.status,
             crate::tools::sources::AvailabilityStatus::Unavailable
         ))
+    }
+}
+
+// ============================================================================
+// Guide Provider
+// ============================================================================
+
+/// Summary information for a topic guide.
+///
+/// This is the `GuideSummary` associated type for [`GuideProvider`].
+/// It mirrors the fields from [`crate::tools::guides::GuideInfo`].
+#[derive(Debug, Clone, Serialize)]
+pub struct GuideSummary {
+    /// Guide identifier (e.g., "intervals").
+    pub id: String,
+    /// Human-readable title.
+    pub title: String,
+    /// Topic area the guide covers.
+    pub topic: String,
+    /// Filesystem path to the guide.
+    pub path: String,
+    /// Short description.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub description: Option<String>,
+}
+
+/// Guide provider for music theory topic guides.
+///
+/// Wraps the existing guide infrastructure, delegating to
+/// [`crate::tools::guides::list_guides`] and
+/// [`crate::tools::guides::get_guide`].
+#[derive(Debug)]
+pub struct MusicTheoryGuideProvider {
+    config: Config,
+}
+
+impl MusicTheoryGuideProvider {
+    /// Create a new guide provider with the given configuration.
+    pub fn new(config: Config) -> Self {
+        Self { config }
+    }
+}
+
+#[async_trait]
+impl GuideProvider for MusicTheoryGuideProvider {
+    type GuideSummary = GuideSummary;
+
+    async fn list_guides(&self) -> Result<Vec<Self::GuideSummary>> {
+        let response = crate::tools::guides::list_guides(&self.config).await?;
+
+        let summaries = response
+            .guides
+            .into_iter()
+            .map(|g| GuideSummary {
+                id: g.id,
+                title: g.title,
+                topic: g.topic,
+                path: g.path,
+                description: g.description,
+            })
+            .collect();
+
+        Ok(summaries)
+    }
+
+    async fn get_guide(&self, id: &str) -> Result<String> {
+        crate::tools::guides::get_guide(&self.config, id).await
     }
 }
 
@@ -601,5 +718,112 @@ mod tests {
             .await
             .unwrap();
         assert_eq!(result, content);
+    }
+
+    // ========================================================================
+    // MusicTheoryGuideProvider tests
+    // ========================================================================
+
+    #[test]
+    fn test_guide_summary_serialization() {
+        let summary = GuideSummary {
+            id: "intervals".to_string(),
+            title: "Intervals".to_string(),
+            topic: "harmony".to_string(),
+            path: "/some/path".to_string(),
+            description: Some("A guide about intervals".to_string()),
+        };
+
+        let json = serde_json::to_string(&summary).expect("should serialize");
+        assert!(json.contains("intervals"));
+        assert!(json.contains("Intervals"));
+        assert!(json.contains("harmony"));
+        assert!(json.contains("A guide about intervals"));
+    }
+
+    #[test]
+    fn test_guide_summary_serialization_no_description() {
+        let summary = GuideSummary {
+            id: "test".to_string(),
+            title: "Test".to_string(),
+            topic: "general".to_string(),
+            path: "/test".to_string(),
+            description: None,
+        };
+
+        let json = serde_json::to_string(&summary).expect("should serialize");
+        // description field should be skipped when None
+        assert!(!json.contains("description"));
+    }
+
+    #[test]
+    fn test_guide_provider_new() {
+        let config = Config::load().unwrap();
+        let provider = MusicTheoryGuideProvider::new(config);
+        assert_eq!(provider.guide_type_name(), "guide");
+        assert_eq!(provider.guide_type_name_plural(), "guides");
+    }
+
+    #[tokio::test]
+    async fn test_guide_provider_list_guides_empty() {
+        let mut config = Config::load().unwrap();
+        config.paths.guides = "/nonexistent/path/for/testing".to_string();
+
+        let provider = MusicTheoryGuideProvider::new(config);
+        let guides = provider.list_guides().await.unwrap();
+        assert!(guides.is_empty());
+    }
+
+    #[tokio::test]
+    async fn test_guide_provider_list_guides_with_temp_content() {
+        let temp = tempfile::TempDir::new().unwrap();
+        let topic_dir = temp.path().join("harmony");
+        tokio::fs::create_dir_all(&topic_dir).await.unwrap();
+
+        tokio::fs::write(
+            topic_dir.join("intervals.md"),
+            "---\ntitle: Intervals\n---\n\n# Intervals\n\nAn interval is the distance between two pitches.",
+        )
+        .await
+        .unwrap();
+
+        let mut config = Config::load().unwrap();
+        config.paths.guides = temp.path().to_string_lossy().to_string();
+
+        let provider = MusicTheoryGuideProvider::new(config);
+        let guides = provider.list_guides().await.unwrap();
+        assert_eq!(guides.len(), 1);
+        assert_eq!(guides[0].id, "intervals");
+        assert_eq!(guides[0].title, "Intervals");
+        assert_eq!(guides[0].topic, "harmony");
+    }
+
+    #[tokio::test]
+    async fn test_guide_provider_get_guide_with_temp_content() {
+        let temp = tempfile::TempDir::new().unwrap();
+        let topic_dir = temp.path().join("harmony");
+        tokio::fs::create_dir_all(&topic_dir).await.unwrap();
+
+        let content = "---\ntitle: Intervals\n---\n\n# Intervals\n\nAn interval is the distance between two pitches.";
+        tokio::fs::write(topic_dir.join("intervals.md"), content)
+            .await
+            .unwrap();
+
+        let mut config = Config::load().unwrap();
+        config.paths.guides = temp.path().to_string_lossy().to_string();
+
+        let provider = MusicTheoryGuideProvider::new(config);
+        let result = provider.get_guide("intervals").await.unwrap();
+        assert_eq!(result, content);
+    }
+
+    #[tokio::test]
+    async fn test_guide_provider_get_guide_not_found() {
+        let mut config = Config::load().unwrap();
+        config.paths.guides = "/nonexistent/path/for/testing".to_string();
+
+        let provider = MusicTheoryGuideProvider::new(config);
+        let result = provider.get_guide("nonexistent").await;
+        assert!(result.is_err());
     }
 }
