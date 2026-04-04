@@ -44,15 +44,6 @@ fn make_tool(name: &str, description: &str, schema: Value) -> Tool {
     )
 }
 
-/// Convenience wrapper to build a `Tool` with no parameters.
-fn make_tool_no_params(name: &str, description: &str) -> Tool {
-    Tool::new(
-        name.to_string(),
-        description.to_string(),
-        json_schema(json!({"type": "object"})),
-    )
-}
-
 /// Serialize a value to pretty JSON and wrap it in a successful `CallToolResult`.
 fn serialize_response<T: serde::Serialize>(value: &T) -> Result<CallToolResult, ErrorData> {
     let json = serde_json::to_string_pretty(value).map_err(|e| {
@@ -148,42 +139,8 @@ impl ToolRegistry for QuestionSearchRegistry {
     }
 }
 
-// ============================================================================
-// HealthToolsRegistry (1 tool)
-// ============================================================================
+// HealthToolsRegistry removed — now provided by fabryk_mcp::HealthTools
 
-struct HealthToolsRegistry {
-    state: AppState,
-}
-
-impl HealthToolsRegistry {
-    fn new(state: AppState) -> Self {
-        Self { state }
-    }
-}
-
-impl ToolRegistry for HealthToolsRegistry {
-    fn tools(&self) -> Vec<Tool> {
-        vec![make_tool_no_params(
-            "health",
-            "Get server health and search backend status",
-        )]
-    }
-
-    fn call(&self, name: &str, _args: Value) -> Option<ToolResult> {
-        if name != "health" {
-            return None;
-        }
-
-        let state = self.state.clone();
-        Some(Box::pin(async move {
-            let response = tools::health::get_health(&state)
-                .await
-                .map_err(|e| to_mcp_error(e, "Error getting health status"))?;
-            serialize_response(&response)
-        }))
-    }
-}
 
 // ============================================================================
 // MusicTheoryToolsRegistry (9 tools — pure computation, no state needed)
@@ -759,8 +716,39 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         SemanticSearchTools::new(state.search_backend(), None)
     };
     let question_search = QuestionSearchRegistry::new(state.config.clone());
-    let health_tools = HealthToolsRegistry::new(state.clone());
     let music_theory_tools = MusicTheoryToolsRegistry;
+
+    // Build backend probes for health diagnostics
+    let search_backend_for_probe = state.search_backend();
+    #[allow(unused_mut)]
+    let mut probes: Vec<Arc<dyn fabryk::core::BackendProbe>> =
+        vec![fabryk::fts::search_probe(search_backend_for_probe)];
+
+    #[cfg(feature = "vector")]
+    {
+        if let Ok(guard) = state.vector_backend.read() {
+            if let Some(ref backend) = *guard {
+                probes.push(fabryk::vector::vector_probe(Arc::clone(backend)));
+            }
+        }
+    }
+
+    let health_tools = fabryk_mcp::HealthTools::new(
+        &state.config.server.name,
+        &state.config.server.version,
+        0, // legacy field; CompositeRegistry handles actual count
+    )
+    .with_backends(probes)
+    .with_search_config(fabryk_mcp::SearchConfigInfo {
+        query_mode: format!("{:?}", state.config.search.query_mode).to_lowercase(),
+        stopwords_enabled: state.config.search.enable_stopwords,
+        fuzzy_search: state.config.search.fuzzy_search,
+        field_boosts: Some(fabryk_mcp::FieldBoosts {
+            title: state.config.search.field_boost_title,
+            description: state.config.search.field_boost_description,
+            content: state.config.search.field_boost_content,
+        }),
+    });
 
     #[allow(unused_mut)]
     let mut registry = CompositeRegistry::new()
@@ -939,22 +927,6 @@ mod tests {
         assert_eq!(tool.description.as_deref(), Some("A test tool"));
     }
 
-    #[test]
-    fn test_make_tool_no_params() {
-        let tool = make_tool_no_params("test_tool", "A test tool");
-        assert_eq!(tool.name, "test_tool");
-    }
-
-    // --- Registry tool counts ---
-
-    #[tokio::test]
-    async fn test_health_tools_registry_tool_count() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config).await.unwrap();
-        let registry = HealthToolsRegistry::new(state);
-        assert_eq!(registry.tools().len(), 1);
-    }
-
     // --- Build server ---
 
     #[tokio::test]
@@ -1109,16 +1081,6 @@ mod tests {
         let config = Config::load().unwrap();
         let resources = MusicTheoryResources::new(config);
         assert!(resources.read("skill://nonexistent").is_none());
-    }
-
-    // --- Tool call dispatch ---
-
-    #[tokio::test]
-    async fn test_health_registry_unknown_tool_returns_none() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config).await.unwrap();
-        let registry = HealthToolsRegistry::new(state);
-        assert!(registry.call("nonexistent", json!({})).is_none());
     }
 
     // --- Resource content tests (directly via resources module) ---

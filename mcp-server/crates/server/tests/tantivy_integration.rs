@@ -743,46 +743,30 @@ async fn test_phrase_search_order_sensitivity() {
     );
 }
 
+/// Verify that the search backend probe reports "tantivy" + ready after FTS init.
 #[tokio::test]
-async fn test_health_tool_with_fts_ready() {
-    use music_theory_mcp::tools::health::get_health;
+async fn test_health_probe_with_fts_ready() {
+    use fabryk::core::BackendProbe;
+    use fabryk::fts::search_probe;
 
     let temp_dir = TempDir::new().expect("Failed to create temp dir");
     let config = create_test_config(&temp_dir, "tantivy", false);
 
-    // Set up test data
     setup_test_data(&temp_dir).expect("Failed to setup test data");
 
-    // Create state with FTS
     let state = create_state_with_fts(config).await;
+    let probe = search_probe(state.search_backend());
 
-    // Get health status
-    let health = get_health(&state).await.expect("Failed to get health");
-
-    assert_eq!(health.status, "ok");
-    assert_eq!(
-        health.backend.active, "tantivy",
-        "Should report tantivy as active"
-    );
-    assert!(health.backend.fts_enabled, "FTS should be enabled");
-    assert!(health.backend.fts_ready, "FTS should be ready");
-    assert!(
-        health.backend.index_stats.is_some(),
-        "Should have index stats"
-    );
-
-    if let Some(stats) = health.backend.index_stats {
-        assert!(stats.doc_count > 0, "Should have indexed documents");
-        assert!(
-            stats.last_indexed.is_some(),
-            "Should have last indexed time"
-        );
-    }
+    assert_eq!(probe.probe_name(), "tantivy", "Should report tantivy");
+    assert!(probe.probe_ready(), "Probe should be ready");
+    assert_eq!(probe.probe_kind(), "fts");
 }
 
+/// Verify that the search backend probe reports "simple" when using simple backend.
 #[tokio::test]
-async fn test_health_tool_simple_backend() {
-    use music_theory_mcp::tools::health::get_health;
+async fn test_health_probe_simple_backend() {
+    use fabryk::core::BackendProbe;
+    use fabryk::fts::search_probe;
 
     let temp_dir = TempDir::new().expect("Failed to create temp dir");
     let config = create_test_config(&temp_dir, "simple", false);
@@ -790,42 +774,31 @@ async fn test_health_tool_simple_backend() {
     setup_test_data(&temp_dir).expect("Failed to setup test data");
 
     let state = AppState::new(config).await.expect("Failed to create state");
+    let probe = search_probe(state.search_backend());
 
-    let health = get_health(&state).await.expect("Failed to get health");
-
-    assert_eq!(health.status, "ok");
-    assert_eq!(
-        health.backend.active, "simple",
-        "Should report simple as active"
-    );
+    assert_eq!(probe.probe_name(), "simple", "Should report simple");
+    assert!(probe.probe_ready(), "Simple backend is always ready");
 }
 
+/// Verify that the probe falls back to simple when tantivy is configured but not ready.
 #[tokio::test]
-async fn test_health_tool_tantivy_not_ready() {
-    use music_theory_mcp::tools::health::get_health;
+async fn test_health_probe_tantivy_not_ready() {
+    use fabryk::core::BackendProbe;
+    use fabryk::fts::search_probe;
 
     let temp_dir = TempDir::new().expect("Failed to create temp dir");
     let config = create_test_config(&temp_dir, "tantivy", false);
 
     setup_test_data(&temp_dir).expect("Failed to setup test data");
 
-    // Create state without building index
+    // Create state without building index — FTS not ready, falls back to simple
     let state = AppState::new(config).await.expect("Failed to create state");
+    let probe = search_probe(state.search_backend());
 
-    let health = get_health(&state).await.expect("Failed to get health");
-
-    assert_eq!(health.status, "ok");
     assert_eq!(
-        health.backend.active, "simple",
-        "Should fall back to simple"
+        probe.probe_name(),
+        "simple",
+        "Should fall back to simple when tantivy not ready"
     );
-    assert!(
-        health.backend.fts_enabled,
-        "FTS should be enabled in config"
-    );
-    assert!(!health.backend.fts_ready, "FTS should not be ready");
-    assert!(
-        health.backend.index_stats.is_none(),
-        "Should not have index stats"
-    );
+    assert!(probe.probe_ready(), "Simple backend is always ready");
 }
