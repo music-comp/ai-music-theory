@@ -79,107 +79,10 @@ fn default_limit() -> usize {
 }
 
 #[derive(Deserialize)]
-struct SemanticSearchArgs {
-    query: String,
-    #[serde(default = "default_hybrid_mode")]
-    mode: tools::semantic::SearchMode,
-    #[serde(default)]
-    category: Option<String>,
-    #[serde(default)]
-    source: Option<String>,
-    #[serde(default = "default_limit")]
-    limit: usize,
-}
-
-fn default_hybrid_mode() -> tools::semantic::SearchMode {
-    tools::semantic::SearchMode::Hybrid
-}
-
-#[derive(Deserialize)]
 struct SearchByQuestionArgs {
     question: String,
     #[serde(default = "default_limit")]
     limit: usize,
-}
-
-// ============================================================================
-// SemanticSearchRegistry (1 tool) — domain-specific, feature-gated
-// ============================================================================
-
-struct SemanticSearchRegistry {
-    state: AppState,
-}
-
-impl SemanticSearchRegistry {
-    fn new(state: AppState) -> Self {
-        Self { state }
-    }
-}
-
-impl ToolRegistry for SemanticSearchRegistry {
-    fn tools(&self) -> Vec<Tool> {
-        vec![make_tool(
-            "semantic_search",
-            "Semantic search using vector embeddings, keyword search, or hybrid mode (vector+keyword via reciprocal rank fusion)",
-            json!({
-                "type": "object",
-                "properties": {
-                    "query": {
-                        "type": "string",
-                        "description": "Natural language search query"
-                    },
-                    "mode": {
-                        "type": "string",
-                        "description": "Search mode: \"vector\", \"keyword\", or \"hybrid\" (default)",
-                        "enum": ["vector", "keyword", "hybrid"],
-                        "default": "hybrid"
-                    },
-                    "category": {
-                        "type": "string",
-                        "description": "Optional category filter"
-                    },
-                    "source": {
-                        "type": "string",
-                        "description": "Optional source filter"
-                    },
-                    "limit": {
-                        "type": "integer",
-                        "description": "Maximum results (default: 10)",
-                        "default": 10
-                    }
-                },
-                "required": ["query"]
-            }),
-        )]
-    }
-
-    fn call(&self, name: &str, args: Value) -> Option<ToolResult> {
-        if name != "semantic_search" {
-            return None;
-        }
-
-        let state = self.state.clone();
-        Some(Box::pin(async move {
-            let args: SemanticSearchArgs = serde_json::from_value(args).map_err(|e| {
-                ErrorData::new(
-                    ErrorCode::INVALID_PARAMS,
-                    format!("Invalid parameters: {}", e),
-                    None,
-                )
-            })?;
-            let tool_params = tools::semantic::SemanticSearchParams {
-                query: args.query,
-                mode: args.mode,
-                category: args.category,
-                source: args.source,
-                limit: args.limit,
-            };
-            let response = tools::semantic::semantic_search(&state, tool_params)
-                .await
-                .map_err(|e| to_mcp_error(e, "Error in semantic search"))?;
-            serialize_response(&response)
-        }))
-    }
 }
 
 // ============================================================================
@@ -839,7 +742,22 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
             }
         }));
 
-    let semantic_search = SemanticSearchRegistry::new(state.clone());
+    // Fabryk's SemanticSearchTools handles keyword/vector/hybrid dispatch with
+    // RRF fusion. The vector_slot is a tokio::sync::RwLock that starts empty and
+    // is populated when the background vector build completes.
+    #[cfg(feature = "vector")]
+    let semantic_search = {
+        use fabryk_mcp::semantic::SemanticSearchTools;
+        SemanticSearchTools::with_vector_slot(
+            state.search_backend(),
+            Arc::clone(&state.vector_slot),
+        )
+    };
+    #[cfg(not(feature = "vector"))]
+    let semantic_search = {
+        use fabryk_mcp::semantic::SemanticSearchTools;
+        SemanticSearchTools::new(state.search_backend(), None)
+    };
     let question_search = QuestionSearchRegistry::new(state.config.clone());
     let health_tools = HealthToolsRegistry::new(state.clone());
     let music_theory_tools = MusicTheoryToolsRegistry;
@@ -1030,14 +948,6 @@ mod tests {
     // --- Registry tool counts ---
 
     #[tokio::test]
-    async fn test_semantic_search_registry_tool_count() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config).await.unwrap();
-        let registry = SemanticSearchRegistry::new(state);
-        assert_eq!(registry.tools().len(), 1);
-    }
-
-    #[tokio::test]
     async fn test_health_tools_registry_tool_count() {
         let config = Config::load().unwrap();
         let state = AppState::new(config).await.unwrap();
@@ -1159,17 +1069,6 @@ mod tests {
     // --- Argument deserialization ---
 
     #[test]
-    fn test_semantic_search_args_defaults() {
-        let json = r#"{"query":"test"}"#;
-        let args: SemanticSearchArgs = serde_json::from_str(json).unwrap();
-        assert_eq!(args.query, "test");
-        assert_eq!(args.mode, tools::semantic::SearchMode::Hybrid);
-        assert_eq!(args.limit, 10);
-        assert!(args.category.is_none());
-        assert!(args.source.is_none());
-    }
-
-    #[test]
     fn test_search_by_question_args_defaults() {
         let json = r#"{"question":"What is harmony?"}"#;
         let args: SearchByQuestionArgs = serde_json::from_str(json).unwrap();
@@ -1213,14 +1112,6 @@ mod tests {
     }
 
     // --- Tool call dispatch ---
-
-    #[tokio::test]
-    async fn test_semantic_search_registry_unknown_tool_returns_none() {
-        let config = Config::load().unwrap();
-        let state = AppState::new(config).await.unwrap();
-        let registry = SemanticSearchRegistry::new(state);
-        assert!(registry.call("nonexistent", json!({})).is_none());
-    }
 
     #[tokio::test]
     async fn test_health_registry_unknown_tool_returns_none() {

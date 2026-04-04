@@ -73,6 +73,14 @@ pub struct AppState {
     /// Vector backend (populated when `vector_service` reaches `Ready`)
     #[cfg(feature = "vector")]
     pub vector_backend: Arc<RwLock<Option<Arc<dyn fabryk::vector::VectorBackend>>>>,
+
+    /// Shared vector slot for fabryk `SemanticSearchTools` (tokio RwLock).
+    ///
+    /// This mirrors `vector_backend` but uses `tokio::sync::RwLock` as required
+    /// by [`fabryk_mcp::semantic::VectorSlot`]. It is updated in lockstep with
+    /// `vector_backend` whenever the vector index finishes building.
+    #[cfg(feature = "vector")]
+    pub vector_slot: fabryk_mcp::semantic::VectorSlot,
 }
 
 impl AppState {
@@ -112,6 +120,8 @@ impl AppState {
             vector_service: ServiceHandle::new("vector"),
             #[cfg(feature = "vector")]
             vector_backend: Arc::new(RwLock::new(None)),
+            #[cfg(feature = "vector")]
+            vector_slot: Arc::new(tokio::sync::RwLock::new(None)),
         })
     }
 
@@ -246,10 +256,20 @@ impl AppState {
         &self,
         backend: Arc<dyn fabryk::vector::VectorBackend>,
     ) -> Result<()> {
-        let mut guard = self.vector_backend.write().map_err(|_| {
-            crate::error::Error::config("Failed to acquire vector write lock".to_string())
-        })?;
-        *guard = Some(backend);
+        {
+            let mut guard = self.vector_backend.write().map_err(|_| {
+                crate::error::Error::config("Failed to acquire vector write lock".to_string())
+            })?;
+            *guard = Some(Arc::clone(&backend));
+        }
+        // Also update the tokio-based vector slot used by SemanticSearchTools.
+        // `try_write()` is non-blocking and should always succeed here since
+        // there is no concurrent reader holding the lock during startup.
+        if let Ok(mut slot) = self.vector_slot.try_write() {
+            *slot = Some(backend);
+        } else {
+            log::warn!("Could not acquire vector_slot write lock; SemanticSearchTools may not see the new backend immediately");
+        }
         Ok(())
     }
 
