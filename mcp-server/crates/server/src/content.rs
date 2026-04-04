@@ -16,7 +16,7 @@ use async_trait::async_trait;
 use fabryk::core::Result;
 use fabryk_mcp::content::{
     CategoryInfo, ChapterInfo as FabrykChapterInfo, ContentItemProvider, FilterMap, GuideProvider,
-    SourceProvider,
+    QuestionMatch, QuestionSearchProvider, QuestionSearchResponse, SourceProvider,
 };
 use serde::Serialize;
 use std::path::PathBuf;
@@ -392,6 +392,61 @@ impl GuideProvider for MusicTheoryGuideProvider {
 
     async fn get_guide(&self, id: &str) -> Result<String> {
         crate::tools::guides::get_guide(&self.config, id).await
+    }
+}
+
+// ============================================================================
+// Question Search Provider
+// ============================================================================
+
+/// Question search provider for music theory concept cards.
+///
+/// Wraps the existing question search infrastructure, delegating to
+/// [`crate::tools::questions::search_by_question`].
+/// Converts the domain-specific `QuestionMatch` fields (`concept_id`,
+/// `concept_title`) into fabryk's generic `QuestionMatch` fields
+/// (`item_id`, `item_title`).
+#[derive(Debug)]
+pub struct MusicTheoryQuestionProvider {
+    config: Config,
+}
+
+impl MusicTheoryQuestionProvider {
+    /// Create a new question search provider with the given configuration.
+    pub fn new(config: Config) -> Self {
+        Self { config }
+    }
+}
+
+#[async_trait]
+impl QuestionSearchProvider for MusicTheoryQuestionProvider {
+    async fn search_by_question(
+        &self,
+        question: &str,
+        limit: usize,
+    ) -> Result<QuestionSearchResponse> {
+        let params = crate::tools::questions::SearchByQuestionParams {
+            question: question.to_string(),
+            limit,
+        };
+        let response = crate::tools::questions::search_by_question(&self.config, params).await?;
+
+        Ok(QuestionSearchResponse {
+            matches: response
+                .matches
+                .into_iter()
+                .map(|m| QuestionMatch {
+                    item_id: m.concept_id,
+                    item_title: m.concept_title,
+                    matched_question: m.matched_question,
+                    category: m.category,
+                    tier: m.tier,
+                    similarity: m.similarity,
+                })
+                .collect(),
+            total: response.total,
+            query: response.query,
+        })
     }
 }
 
@@ -825,5 +880,94 @@ mod tests {
         let provider = MusicTheoryGuideProvider::new(config);
         let result = provider.get_guide("nonexistent").await;
         assert!(result.is_err());
+    }
+
+    // ========================================================================
+    // MusicTheoryQuestionProvider tests
+    // ========================================================================
+
+    #[test]
+    fn test_question_provider_new() {
+        let config = Config::load().unwrap();
+        let _provider = MusicTheoryQuestionProvider::new(config);
+        // Construction succeeds.
+    }
+
+    #[tokio::test]
+    async fn test_question_provider_search_empty_directory() {
+        let temp = tempfile::TempDir::new().unwrap();
+        let mut config = Config::load().unwrap();
+        config.paths.concept_cards = temp.path().to_string_lossy().to_string();
+
+        let provider = MusicTheoryQuestionProvider::new(config);
+        let response = provider.search_by_question("anything", 10).await.unwrap();
+        assert!(response.matches.is_empty());
+        assert_eq!(response.total, 0);
+    }
+
+    #[tokio::test]
+    async fn test_question_provider_search_with_temp_content() {
+        let temp = tempfile::TempDir::new().unwrap();
+
+        let card = r#"---
+title: "Circle of Fifths"
+slug: "circle-of-fifths"
+category: "harmony"
+tier: "intermediate"
+answers_questions:
+  - "What is the circle of fifths?"
+---
+# Circle of Fifths
+
+Content about the circle of fifths."#;
+
+        tokio::fs::write(temp.path().join("circle-of-fifths.md"), card)
+            .await
+            .unwrap();
+
+        let mut config = Config::load().unwrap();
+        config.paths.concept_cards = temp.path().to_string_lossy().to_string();
+
+        let provider = MusicTheoryQuestionProvider::new(config);
+        let response = provider
+            .search_by_question("What is the circle of fifths?", 10)
+            .await
+            .unwrap();
+
+        assert!(!response.matches.is_empty());
+        // Field mapping: concept_id -> item_id, concept_title -> item_title
+        assert_eq!(response.matches[0].item_id, "circle-of-fifths");
+        assert_eq!(response.matches[0].item_title, "Circle of Fifths");
+        assert_eq!(response.matches[0].category, "harmony");
+        assert_eq!(response.matches[0].tier, Some("intermediate".to_string()));
+        assert!(response.matches[0].similarity > 0.9);
+    }
+
+    #[tokio::test]
+    async fn test_question_provider_respects_limit() {
+        let temp = tempfile::TempDir::new().unwrap();
+
+        let card = r#"---
+title: "Test Card"
+slug: "test-card"
+category: "test"
+answers_questions:
+  - "What is this?"
+  - "How does this work?"
+  - "Why is this important?"
+---
+# Test"#;
+
+        tokio::fs::write(temp.path().join("test-card.md"), card)
+            .await
+            .unwrap();
+
+        let mut config = Config::load().unwrap();
+        config.paths.concept_cards = temp.path().to_string_lossy().to_string();
+
+        let provider = MusicTheoryQuestionProvider::new(config);
+        let response = provider.search_by_question("what", 1).await.unwrap();
+
+        assert!(response.matches.len() <= 1);
     }
 }

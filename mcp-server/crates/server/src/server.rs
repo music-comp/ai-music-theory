@@ -6,138 +6,14 @@
 
 use std::sync::Arc;
 
-use serde::Deserialize;
-use serde_json::{json, Value};
-
 use fabryk_mcp::{
-    model::{
-        AnnotateAble, CallToolResult, Content, ErrorCode, ErrorData, RawResource, Resource,
-        ResourceContents, Tool,
-    },
-    CompositeRegistry, FabrykMcpServer, ResourceFuture, ResourceRegistry, ToolRegistry, ToolResult,
+    model::{AnnotateAble, ErrorCode, ErrorData, RawResource, Resource, ResourceContents},
+    CompositeRegistry, FabrykMcpServer, ResourceFuture, ResourceRegistry,
 };
 
 use crate::config::Config;
-use crate::error::McpErrorContextExt;
 use crate::resources;
 use crate::state::AppState;
-use crate::tools;
-
-// ============================================================================
-// Helper functions
-// ============================================================================
-
-/// Convert a JSON value to the `Map<String, Value>` that `Tool::new` expects.
-fn json_schema(value: Value) -> serde_json::Map<String, Value> {
-    match value {
-        Value::Object(map) => map,
-        _ => serde_json::Map::new(),
-    }
-}
-
-/// Convenience wrapper to build a `Tool` with an input schema.
-fn make_tool(name: &str, description: &str, schema: Value) -> Tool {
-    Tool::new(
-        name.to_string(),
-        description.to_string(),
-        json_schema(schema),
-    )
-}
-
-/// Serialize a value to pretty JSON and wrap it in a successful `CallToolResult`.
-fn serialize_response<T: serde::Serialize>(value: &T) -> Result<CallToolResult, ErrorData> {
-    let json = serde_json::to_string_pretty(value).map_err(|e| {
-        ErrorData::new(
-            ErrorCode::INTERNAL_ERROR,
-            format!("Serialization error: {}", e),
-            None,
-        )
-    })?;
-    Ok(CallToolResult::success(vec![Content::text(json)]))
-}
-
-/// Convert a project error to an MCP `ErrorData` using the `McpErrorContextExt` trait.
-fn to_mcp_error(e: crate::error::Error, context: &str) -> ErrorData {
-    e.to_mcp_error(context)
-}
-
-// ============================================================================
-// Argument types (deserialized from MCP tool call arguments)
-// ============================================================================
-
-fn default_limit() -> usize {
-    10
-}
-
-#[derive(Deserialize)]
-struct SearchByQuestionArgs {
-    question: String,
-    #[serde(default = "default_limit")]
-    limit: usize,
-}
-
-// ============================================================================
-// QuestionSearchRegistry (1 tool) — standalone for search_by_question
-// ============================================================================
-
-struct QuestionSearchRegistry {
-    config: Config,
-}
-
-impl QuestionSearchRegistry {
-    fn new(config: Config) -> Self {
-        Self { config }
-    }
-}
-
-impl ToolRegistry for QuestionSearchRegistry {
-    fn tools(&self) -> Vec<Tool> {
-        vec![make_tool(
-            "search_by_question",
-            "Find concept cards that answer a specific question. Matches against competency questions declared in card metadata.",
-            json!({
-                "type": "object",
-                "properties": {
-                    "question": {
-                        "type": "string",
-                        "description": "The question to search for"
-                    },
-                    "limit": {
-                        "type": "integer",
-                        "description": "Maximum results (default: 10)",
-                        "default": 10
-                    }
-                },
-                "required": ["question"]
-            }),
-        )]
-    }
-
-    fn call(&self, name: &str, args: Value) -> Option<ToolResult> {
-        if name != "search_by_question" {
-            return None;
-        }
-
-        let config = self.config.clone();
-        Some(Box::pin(async move {
-            let args: SearchByQuestionArgs = serde_json::from_value(args).map_err(|e| {
-                ErrorData::new(
-                    ErrorCode::INVALID_PARAMS,
-                    format!("Invalid parameters: {}", e),
-                    None,
-                )
-            })?;
-            let params = tools::questions::SearchByQuestionParams {
-                question: args.question,
-                limit: args.limit,
-            };
-            let response = tools::questions::search_by_question(&config, params)
-                .await
-                .map_err(|e| to_mcp_error(e, "Error searching by question"))?;
-            serialize_response(&response)
-        }))
-    }
-}
 
 // HealthToolsRegistry removed — now provided by fabryk_mcp::HealthTools
 
@@ -536,7 +412,7 @@ impl ResourceRegistry for MusicTheoryResources {
 /// Used by `GraphTools::with_extra_schema` to add `tier` and `min_confidence`
 /// parameters to graph query tools that support domain-specific filtering.
 fn tier_confidence_schema() -> serde_json::Value {
-    json!({
+    serde_json::json!({
         "tier": {
             "type": "string",
             "enum": ["foundational", "intermediate", "advanced"],
@@ -715,7 +591,8 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         use fabryk_mcp::semantic::SemanticSearchTools;
         SemanticSearchTools::new(state.search_backend(), None)
     };
-    let question_search = QuestionSearchRegistry::new(state.config.clone());
+    let question_provider = crate::content::MusicTheoryQuestionProvider::new(state.config.clone());
+    let question_search = fabryk_mcp::content::QuestionSearchTools::new(question_provider);
     let music_theory_tools = MusicTheoryToolsRegistry;
 
     // Build backend probes for health diagnostics
@@ -892,41 +769,6 @@ mod tests {
     use super::*;
     use crate::config::Config;
 
-    #[test]
-    fn test_default_limit() {
-        assert_eq!(default_limit(), 10);
-    }
-
-    #[test]
-    fn test_serialize_response() {
-        let data = serde_json::json!({"key": "value"});
-        let result = serialize_response(&data);
-        assert!(result.is_ok());
-        let call_result = result.unwrap();
-        assert_eq!(call_result.is_error, Some(false));
-    }
-
-    #[test]
-    fn test_json_schema_with_object() {
-        let schema = json!({"type": "object", "properties": {}});
-        let map = json_schema(schema);
-        assert!(map.contains_key("type"));
-    }
-
-    #[test]
-    fn test_json_schema_with_non_object() {
-        let schema = json!("not an object");
-        let map = json_schema(schema);
-        assert!(map.is_empty());
-    }
-
-    #[test]
-    fn test_make_tool() {
-        let tool = make_tool("test_tool", "A test tool", json!({"type": "object"}));
-        assert_eq!(tool.name, "test_tool");
-        assert_eq!(tool.description.as_deref(), Some("A test tool"));
-    }
-
     // --- Build server ---
 
     #[tokio::test]
@@ -1036,24 +878,6 @@ mod tests {
                 tool_name
             );
         }
-    }
-
-    // --- Argument deserialization ---
-
-    #[test]
-    fn test_search_by_question_args_defaults() {
-        let json = r#"{"question":"What is harmony?"}"#;
-        let args: SearchByQuestionArgs = serde_json::from_str(json).unwrap();
-        assert_eq!(args.question, "What is harmony?");
-        assert_eq!(args.limit, 10);
-    }
-
-    #[test]
-    fn test_search_by_question_args_with_limit() {
-        let json = r#"{"question":"What is a chord?","limit":5}"#;
-        let args: SearchByQuestionArgs = serde_json::from_str(json).unwrap();
-        assert_eq!(args.question, "What is a chord?");
-        assert_eq!(args.limit, 5);
     }
 
     // --- Resource registry ---
