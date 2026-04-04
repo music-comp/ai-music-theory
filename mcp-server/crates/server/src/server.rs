@@ -6,13 +6,8 @@
 
 use std::sync::Arc;
 
-use fabryk_mcp::{
-    model::{AnnotateAble, ErrorCode, ErrorData, RawResource, Resource, ResourceContents},
-    CompositeRegistry, FabrykMcpServer, ResourceFuture, ResourceRegistry,
-};
+use fabryk_mcp::{CompositeRegistry, FabrykMcpServer};
 
-use crate::config::Config;
-use crate::resources;
 use crate::state::AppState;
 
 // HealthToolsRegistry removed — now provided by fabryk_mcp::HealthTools
@@ -336,69 +331,6 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
             })),
             _ => None,
         }
-    }
-}
-
-// ============================================================================
-// MusicTheoryResources (ResourceRegistry implementation)
-// ============================================================================
-
-struct MusicTheoryResources {
-    config: Config,
-}
-
-impl MusicTheoryResources {
-    fn new(config: Config) -> Self {
-        Self { config }
-    }
-}
-
-impl ResourceRegistry for MusicTheoryResources {
-    fn resources(&self) -> Vec<Resource> {
-        resources::list_resources()
-            .into_iter()
-            .map(|info| {
-                RawResource {
-                    uri: info.uri,
-                    name: info.name,
-                    title: None,
-                    description: Some(info.description),
-                    mime_type: Some(info.mime_type),
-                    size: None,
-                    icons: None,
-                    meta: None,
-                }
-                .no_annotation()
-            })
-            .collect()
-    }
-
-    fn read(&self, uri: &str) -> Option<ResourceFuture> {
-        // Clone values needed for the async block
-        let config = self.config.clone();
-        let uri_owned = uri.to_string();
-
-        // Check if this URI is one we handle before creating the future
-        let known_uris = [
-            "skill://conventions",
-            "skill://scope",
-            "skill://sources",
-            "skill://index",
-        ];
-        if !known_uris.contains(&uri) {
-            return None;
-        }
-
-        Some(Box::pin(async move {
-            match resources::get_resource(&config, &uri_owned) {
-                Ok(content) => Ok(vec![ResourceContents::text(content, uri_owned)]),
-                Err(_) => Err(ErrorData::new(
-                    ErrorCode::RESOURCE_NOT_FOUND,
-                    format!("Resource not found: {}", uri_owned),
-                    None,
-                )),
-            }
-        }))
     }
 }
 
@@ -748,7 +680,45 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         registry = registry.add(graph_tools);
     }
 
-    let resources = MusicTheoryResources::new(state.config.clone());
+    let skill_docs_path = state
+        .config
+        .paths
+        .skill_docs_path()
+        .unwrap_or_else(|_| std::path::PathBuf::from("."));
+
+    let resources = fabryk_mcp::StaticResources::new(skill_docs_path)
+        .with_resource(fabryk_mcp::StaticResourceDef {
+            uri: "skill://conventions".into(),
+            name: "Music Theory Conventions".into(),
+            description: "Notation conventions and terminology used in this skill".into(),
+            mime_type: "text/markdown".into(),
+            filename: "CONVENTIONS.md".into(),
+            fallback: Some(crate::resources::default_conventions()),
+        })
+        .with_resource(fabryk_mcp::StaticResourceDef {
+            uri: "skill://scope".into(),
+            name: "Skill Scope".into(),
+            description: "Topics covered and learning objectives of this skill".into(),
+            mime_type: "text/markdown".into(),
+            filename: "SCOPE.md".into(),
+            fallback: Some(crate::resources::default_scope()),
+        })
+        .with_resource(fabryk_mcp::StaticResourceDef {
+            uri: "skill://sources".into(),
+            name: "Source Materials".into(),
+            description: "Bibliography and source attribution".into(),
+            mime_type: "text/markdown".into(),
+            filename: "SOURCES.md".into(),
+            fallback: Some(crate::resources::default_sources()),
+        })
+        .with_resource(fabryk_mcp::StaticResourceDef {
+            uri: "skill://index".into(),
+            name: "Skill Index".into(),
+            description: "Complete index of concepts, topics, and materials".into(),
+            mime_type: "text/markdown".into(),
+            filename: "INDEX.md".into(),
+            fallback: Some(crate::resources::default_index()),
+        });
 
     FabrykMcpServer::new(registry)
         .with_name(&state.config.server.name)
@@ -878,93 +848,5 @@ mod tests {
                 tool_name
             );
         }
-    }
-
-    // --- Resource registry ---
-
-    #[test]
-    fn test_music_theory_resources_list() {
-        let config = Config::load().unwrap();
-        let resources = MusicTheoryResources::new(config);
-        let list = resources.resources();
-        assert_eq!(list.len(), 4);
-    }
-
-    #[test]
-    fn test_music_theory_resources_read_known() {
-        let config = Config::load().unwrap();
-        let resources = MusicTheoryResources::new(config);
-        assert!(resources.read("skill://conventions").is_some());
-        assert!(resources.read("skill://scope").is_some());
-        assert!(resources.read("skill://sources").is_some());
-        assert!(resources.read("skill://index").is_some());
-    }
-
-    #[test]
-    fn test_music_theory_resources_read_unknown() {
-        let config = Config::load().unwrap();
-        let resources = MusicTheoryResources::new(config);
-        assert!(resources.read("skill://nonexistent").is_none());
-    }
-
-    // --- Resource content tests (directly via resources module) ---
-
-    #[test]
-    fn test_list_resources_directly() {
-        let resources = resources::list_resources();
-        assert!(!resources.is_empty());
-        assert_eq!(resources.len(), 4);
-
-        let first_resource = &resources[0];
-        assert!(first_resource.uri.starts_with("skill://"));
-        assert!(!first_resource.name.is_empty());
-        assert!(!first_resource.description.is_empty());
-        assert_eq!(first_resource.mime_type, "text/markdown");
-    }
-
-    #[test]
-    fn test_read_resource_conventions() {
-        let config = Config::load().unwrap();
-        let result = resources::get_resource(&config, "skill://conventions");
-        assert!(result.is_ok());
-        let content = result.unwrap();
-        assert!(!content.is_empty());
-        assert!(content.contains("Music Theory") || content.contains("Notation"));
-    }
-
-    #[test]
-    fn test_read_resource_scope() {
-        let config = Config::load().unwrap();
-        let result = resources::get_resource(&config, "skill://scope");
-        assert!(result.is_ok());
-        let content = result.unwrap();
-        assert!(!content.is_empty());
-    }
-
-    #[test]
-    fn test_read_resource_sources() {
-        let config = Config::load().unwrap();
-        let result = resources::get_resource(&config, "skill://sources");
-        assert!(result.is_ok());
-        let content = result.unwrap();
-        assert!(!content.is_empty());
-    }
-
-    #[test]
-    fn test_read_resource_index() {
-        let config = Config::load().unwrap();
-        let result = resources::get_resource(&config, "skill://index");
-        assert!(result.is_ok());
-        let content = result.unwrap();
-        assert!(!content.is_empty());
-    }
-
-    #[test]
-    fn test_read_resource_not_found() {
-        let config = Config::load().unwrap();
-        let result = resources::get_resource(&config, "skill://nonexistent");
-        assert!(result.is_err());
-        let error = result.unwrap_err();
-        assert!(error.is_not_found());
     }
 }
