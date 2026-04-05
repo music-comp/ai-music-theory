@@ -4,8 +4,9 @@ use std::path::{Path, PathBuf};
 
 use crate::config::Config;
 use crate::error::Result;
+use crate::frontmatter::extract_frontmatter;
 use crate::metadata::extract_concept_metadata;
-use crate::util::files::{find_all_files, find_file_by_id, read_file, FindOptions};
+use fabryk::core::util::files::{find_all_files, find_file_by_id, read_file, FindOptions};
 
 /// Information about a concept card.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -63,7 +64,7 @@ pub async fn list_concepts(
 ) -> Result<ListConceptsResponse> {
     let concept_cards_path = config.paths.concept_cards_path()?;
 
-    if !crate::util::files::exists(&concept_cards_path).await {
+    if !fabryk::core::util::files::exists(&concept_cards_path).await {
         return Ok(ListConceptsResponse {
             concepts: Vec::new(),
             total: 0,
@@ -193,7 +194,7 @@ pub struct ListCategoriesResponse {
 pub async fn list_categories(config: &Config) -> Result<ListCategoriesResponse> {
     let concept_cards_path = config.paths.concept_cards_path()?;
 
-    if !crate::util::files::exists(&concept_cards_path).await {
+    if !fabryk::core::util::files::exists(&concept_cards_path).await {
         return Ok(ListCategoriesResponse {
             categories: Vec::new(),
             total: 0,

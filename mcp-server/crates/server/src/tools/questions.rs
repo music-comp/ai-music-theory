@@ -9,7 +9,8 @@ use serde::{Deserialize, Serialize};
 
 use crate::config::Config;
 use crate::error::Result;
-use crate::util::files::{find_all_files, read_file, FindOptions};
+use crate::frontmatter::extract_frontmatter;
+use fabryk::core::util::files::{find_all_files, read_file, FindOptions};
 
 /// Parameters for searching concept cards by competency question.
 #[derive(Debug, Clone, Deserialize, JsonSchema)]

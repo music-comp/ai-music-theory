@@ -13,7 +13,7 @@ use crate::config::Config;
 use crate::error::{Error, Result};
 use crate::sources::scanner::scan_concept_cards_with_stats;
 use crate::sources::validator::{validate_sources, ValidationMode};
-use crate::util::paths::config_dir;
+use crate::config::path_resolver;
 
 /// Source management commands.
 #[derive(Parser, Debug)]
@@ -597,7 +597,8 @@ fn parse_source_id(source_id: &str) -> Result<(&str, &str)> {
 
 /// Get the path to the config file.
 fn get_config_path() -> Result<PathBuf> {
-    config_dir()
+    path_resolver()
+        .config_dir()
         .map(|d| d.join("default.toml"))
         .ok_or_else(|| Error::config("Could not locate config directory".to_string()))
 }

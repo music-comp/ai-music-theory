@@ -4,7 +4,7 @@ use std::path::{Path, PathBuf};
 use crate::config::Config;
 use crate::error::{Error, Result};
 use crate::state::AppState;
-use crate::util::files::{
+use fabryk::core::util::files::{
     count_files, find_file_by_id, list_subdirectories, read_file, FindOptions,
 };
 
@@ -97,7 +97,7 @@ pub async fn list_sources(config: &Config) -> Result<ListSourcesResponse> {
 
     // Check for converted sources in sources-md directory
     let sources_md_path = config.paths.sources_md_path()?;
-    if crate::util::files::exists(&sources_md_path).await {
+    if fabryk::core::util::files::exists(&sources_md_path).await {
         sources.extend(scan_converted_sources(&sources_md_path).await?);
     }
 
@@ -139,7 +139,7 @@ pub async fn check_source_availability(
     // Step 2: Check if converted to markdown
     let sources_md_path = config.paths.sources_md_path()?;
     let source_path = sources_md_path.join(source_id);
-    let text_extracted = crate::util::files::exists(&source_path).await;
+    let text_extracted = fabryk::core::util::files::exists(&source_path).await;
 
     // Count chapters if converted
     let chapters = if text_extracted {
@@ -236,6 +236,7 @@ async fn list_chapters_from_index(state: &AppState, source_id: &str) -> Result<V
         content_types: Some(vec!["source_chapter".to_string()]),
         query_mode: None,
         snippet_length: None,
+        extra_filters: None,
     };
 
     let results = state.search_backend().search(params).await?;
@@ -263,12 +264,12 @@ async fn list_chapters_from_filesystem(
 ) -> Result<Vec<ChapterInfo>> {
     use crate::metadata::extract_metadata;
     use crate::metadata::ContentType;
-    use crate::util::files::find_all_files;
+    use fabryk::core::util::files::find_all_files;
 
     let sources_md_path = config.paths.sources_md_path()?;
     let source_path = sources_md_path.join(source_id);
 
-    if !crate::util::files::exists(&source_path).await {
+    if !fabryk::core::util::files::exists(&source_path).await {
         return Err(Error::file_not_found(source_path));
     }
 
@@ -314,6 +315,7 @@ async fn check_source_indexed(state: &AppState, source_id: &str) -> Result<bool>
         content_types: Some(vec!["source_chapter".to_string()]),
         query_mode: None,
         snippet_length: None,
+        extra_filters: None,
     };
 
     let results = state.search_backend().search(params).await?;
@@ -510,7 +512,7 @@ pub async fn get_source_chapter(
     let sources_md_path = config.paths.sources_md_path()?;
     let source_path = sources_md_path.join(source_id);
 
-    if !crate::util::files::exists(&source_path).await {
+    if !fabryk::core::util::files::exists(&source_path).await {
         return Err(Error::not_found_msg(format!(
             "Source '{}' not found. Check if it's been converted to markdown.",
             source_id

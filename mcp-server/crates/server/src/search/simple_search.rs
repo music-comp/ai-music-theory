@@ -11,7 +11,7 @@ use fabryk::fts::{SearchBackend, SearchParams, SearchResult as FabrykSearchResul
 
 use crate::config::Config;
 use crate::extractors::MusicTheoryDocumentExtractor;
-use crate::util::files::{find_all_files, FindOptions};
+use fabryk::core::util::files::{find_all_files, FindOptions};
 
 /// Simple search backend using linear scan.
 ///
@@ -51,7 +51,7 @@ impl SearchBackend for SimpleSearch {
             .concept_cards_path()
             .map_err(|e| fabryk::core::Error::config(e.to_string()))?;
 
-        if !crate::util::files::exists(&concept_cards_path).await {
+        if !fabryk::core::util::files::exists(&concept_cards_path).await {
             return Ok(SearchResults::empty(self.name()));
         }
 
@@ -70,7 +70,7 @@ impl SearchBackend for SimpleSearch {
             let path = &file_info.path;
 
             // Read file content
-            let content = match crate::util::files::read_file(path).await {
+            let content = match fabryk::core::util::files::read_file(path).await {
                 Ok(c) => c,
                 Err(_) => continue,
             };
@@ -114,7 +114,7 @@ impl SearchBackend for SimpleSearch {
 
             // Alias boost: if the query exactly matches an alias (case-insensitive),
             // multiply relevance by 1.5 to give direct alias matches a meaningful bump.
-            if let Ok((Some(fm), _)) = crate::markdown::extract_frontmatter(&content) {
+            if let Ok((Some(fm), _)) = crate::frontmatter::extract_frontmatter(&content) {
                 let query_lower = params.query.to_lowercase();
                 if fm
                     .aliases

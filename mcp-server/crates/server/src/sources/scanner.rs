@@ -9,7 +9,7 @@ use crate::config::Config;
 use crate::error::Result;
 use crate::metadata::extract_concept_metadata;
 use crate::sources::types::SourceReference;
-use crate::util::files::{find_all_files, FindOptions};
+use fabryk::core::util::files::{find_all_files, FindOptions};
 
 /// Scan all concept cards and extract source references.
 ///

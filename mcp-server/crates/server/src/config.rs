@@ -1,4 +1,6 @@
 use confyg::{conf, Confygery};
+use fabryk::core::util::paths::expand_tilde;
+use fabryk::core::util::resolver::PathResolver;
 use fabryk::core::{ConfigManager, ConfigProvider};
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
@@ -309,13 +311,9 @@ impl Config {
     /// Load configuration from the default location.
     /// Searches for config directory using binary-relative path resolution.
     pub fn load() -> Result<Self> {
-        use crate::util::paths;
-
-        let config_dir = paths::config_dir().ok_or_else(|| {
-            Error::config(format!(
-                "Could not locate config directory.\n{}",
-                paths::debug_paths()
-            ))
+        let resolver = path_resolver();
+        let config_dir = resolver.config_dir().ok_or_else(|| {
+            Error::config("Could not locate config directory.".to_string())
         })?;
 
         let mut opts = conf::Options::default();
@@ -437,17 +435,43 @@ impl ConfigManager for Config {
             return Some(PathBuf::from(path));
         }
 
-        // Check env var
+        // Check env var (requires default.toml to exist within the directory)
         if let Ok(path) = std::env::var("MUSIC_THEORY_CONFIG_DIR") {
-            let expanded = crate::util::paths::expand_tilde(&path);
-            let file = expanded.join("default.toml");
-            if file.exists() {
-                return Some(file);
+            let expanded = expand_tilde(&path);
+            if expanded.join("default.toml").exists() {
+                return Some(expanded);
             }
         }
 
-        // Fall back to util::paths resolution
-        crate::util::paths::config_dir().map(|d| d.join("default.toml"))
+        // Fall back to marker-based search (skip env var since we already checked it above
+        // with the stricter default.toml existence requirement)
+        use fabryk::core::util::paths::{binary_dir, find_dir_with_marker};
+
+        // Walk up from binary looking for config/default.toml
+        if let Some(bin_dir) = binary_dir() {
+            if let Some(root) = find_dir_with_marker(&bin_dir, "config/default.toml") {
+                let config_path = root.join("config");
+                if config_path.exists() {
+                    return Some(config_path);
+                }
+            }
+        }
+
+        // CWD-relative paths (for development)
+        for rel_path in &["./config", "../config", "./crates/server/config"] {
+            let path = PathBuf::from(rel_path);
+            if path.join("default.toml").exists() {
+                return Some(path);
+            }
+        }
+
+        // Hardcoded fallback
+        let fallback = expand_tilde("~/lab/music-comp/ai-music-theory/mcp-server/crates/server/config");
+        if fallback.join("default.toml").exists() {
+            return Some(fallback);
+        }
+
+        None
     }
 
     fn default_config_path() -> Option<PathBuf> {
@@ -494,27 +518,34 @@ fn flatten_toml_table(table: &toml_edit::Table, prefix: &str, out: &mut Vec<(Str
     }
 }
 
-/// Expand shell variables and tildes in paths.
-/// Relative paths are resolved against the skill root directory.
-fn expand_path(path_str: &str) -> Result<PathBuf> {
-    use crate::util::paths;
+/// Build the standard PathResolver for this project.
+pub(crate) fn path_resolver() -> PathResolver {
+    PathResolver::new("music-theory")
+        .with_config_marker("config/default.toml")
+        .with_project_markers(&["SKILL.md", "CONVENTIONS.md", "SCOPE.md"])
+        .with_config_fallback("~/lab/music-comp/ai-music-theory/mcp-server/crates/server/config")
+        .with_project_fallback("~/lab/music-comp/ai-music-theory")
+}
 
+/// Expand shell variables and tildes in paths.
+/// Relative paths are resolved against the project root directory.
+fn expand_path(path_str: &str) -> Result<PathBuf> {
     // First expand environment variables and tilde via shellexpand
     let expanded = shellexpand::full(path_str)
         .map_err(|e| Error::invalid_path(PathBuf::from(path_str), e.to_string()))?;
 
     let path = PathBuf::from(expanded.as_ref());
 
-    // If the path is relative, resolve it against skill_root()
+    // If the path is relative, resolve it against project_root()
     if path.is_relative() {
-        let skill_root = paths::skill_root().ok_or_else(|| {
+        let resolver = path_resolver();
+        let project_root = resolver.project_root().ok_or_else(|| {
             Error::config(format!(
-                "Cannot resolve relative path '{}': skill root not found.\n{}",
+                "Cannot resolve relative path '{}': project root not found.",
                 path_str,
-                paths::debug_paths()
             ))
         })?;
-        Ok(skill_root.join(path))
+        Ok(project_root.join(path))
     } else {
         Ok(path)
     }

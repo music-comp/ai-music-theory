@@ -6,8 +6,9 @@
 //! 3. Filesystem (directory structure, filename)
 
 use crate::error::Result;
-use crate::markdown::{extract_first_heading, extract_frontmatter};
-use crate::util::files::read_file;
+use crate::frontmatter::extract_frontmatter;
+use fabryk::content::extract_first_heading;
+use fabryk::core::util::files::read_file;
 use std::path::Path;
 
 /// Content type classification for universal search (v0.3.0).

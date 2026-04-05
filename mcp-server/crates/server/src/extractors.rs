@@ -10,15 +10,15 @@
 //! - [`MusicTheoryVectorExtractor`] — (feature `vector`) composes embedding
 //!   text from concept card metadata for semantic search.
 //!
-//! These extractors wrap existing functions in `crate::markdown` and do not
-//! replace them; the old code paths remain operational until the migration
-//! switchover in a later milestone.
+//! These extractors use `crate::frontmatter` for domain-specific parsing and
+//! `fabryk::content` for generic markdown extraction.
 
 use std::path::Path;
 
 use fabryk::fts::SearchDocument;
 
-use crate::markdown::{extract_first_heading, extract_frontmatter, strip_frontmatter};
+use crate::frontmatter::{extract_frontmatter, strip_frontmatter};
+use fabryk::content::extract_first_heading;
 
 // ============================================================================
 // DocumentExtractor (always available — used by both simple and FTS search)

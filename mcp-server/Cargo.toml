@@ -17,7 +17,7 @@ description = "Music Theory AI Skill - MCP server for accessing music theory edu
 # Async runtime
 tokio = { version = "1", features = ["full", "fs", "sync"] }
 async-trait = "0.1"
-async-walkdir = "1"
+async-walkdir = "2"
 futures = "0.3"
 
 # Configuration and logging
@@ -36,7 +36,7 @@ schemars = "1.2"
 pulldown-cmark = "0.13"
 yaml_serde = "0.10"
 shellexpand = "3.1"
-dirs = "5"
+dirs = "6"
 
 # Error handling
 thiserror = "2"
@@ -45,7 +45,7 @@ thiserror = "2"
 regex = "1"
 
 # Full-text search (optional)
-tantivy = "0.25"
+tantivy = "0.26"
 stop-words = "0.10"
 
 # CLI parsing
@@ -59,11 +59,8 @@ toml_edit = { version = "0.25", features = ["serde"] }
 petgraph = "0.8"
 rkyv = { version = "0.8", features = ["bytecheck"] }
 memmap2 = "0.9"
-blake3 = "1.8"
+blake3 = "1.5"
 chrono = { version = "0.4", features = ["serde"] }
-
-# Music theory computation
-music-comp-mt = { version = "0.4", features = ["serde"] }
 
 # Fabryk framework (umbrella crates pull in sub-crates transitively)
 # For local development, create .cargo/config.toml with path overrides

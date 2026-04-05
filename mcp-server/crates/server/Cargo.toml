@@ -48,8 +48,8 @@ music-comp-mt = { workspace = true }
 
 # Fabryk framework (umbrella crates re-export sub-crates)
 fabryk = { workspace = true }
-fabryk-mcp = { workspace = true }
-fabryk-cli = { workspace = true }
+fabryk-mcp = { workspace = true , version = "0.5.0" }
+fabryk-cli = { workspace = true , version = "0.5.0" }
 
 # Full-text search engine (optional)
 tantivy = { workspace = true, optional = true }
