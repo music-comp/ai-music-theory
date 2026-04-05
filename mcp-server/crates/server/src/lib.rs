@@ -25,9 +25,6 @@ pub use config::{Config, LanceDbConfig};
 pub use error::{Error, Result};
 pub use fabryk::fts::SearchDocument;
 pub use state::AppState;
-pub use tools::search::{
-    search_concepts, SearchConceptsParams, SearchConceptsResponse, SearchResult,
-};
 
 // FTS-specific re-exports (only when feature enabled)
 #[cfg(feature = "fts")]

@@ -252,7 +252,7 @@ fn handle_config_command(action: Option<ConfigAction>) -> Result<()> {
         Some(ConfigAction::Get { key }) => match key {
             Some(ref k) => fabryk_cli::config_handlers::cmd_config_get::<Config>(None, k),
             None => fabryk_cli::config_handlers::cmd_config_get_or_dump::<Config>(None, None),
-        }
+        },
         Some(ConfigAction::Set { key, value }) => {
             fabryk_cli::config_handlers::cmd_config_set::<Config>(None, &key, &value)
         }

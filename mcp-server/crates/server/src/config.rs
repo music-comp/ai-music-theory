@@ -312,9 +312,9 @@ impl Config {
     /// Searches for config directory using binary-relative path resolution.
     pub fn load() -> Result<Self> {
         let resolver = path_resolver();
-        let config_dir = resolver.config_dir().ok_or_else(|| {
-            Error::config("Could not locate config directory.".to_string())
-        })?;
+        let config_dir = resolver
+            .config_dir()
+            .ok_or_else(|| Error::config("Could not locate config directory.".to_string()))?;
 
         let mut opts = conf::Options::default();
         opts.add_path(config_dir.to_string_lossy().as_ref());
@@ -466,7 +466,8 @@ impl ConfigManager for Config {
         }
 
         // Hardcoded fallback
-        let fallback = expand_tilde("~/lab/music-comp/ai-music-theory/mcp-server/crates/server/config");
+        let fallback =
+            expand_tilde("~/lab/music-comp/ai-music-theory/mcp-server/crates/server/config");
         if fallback.join("default.toml").exists() {
             return Some(fallback);
         }

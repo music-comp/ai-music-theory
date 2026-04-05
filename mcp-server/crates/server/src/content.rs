@@ -278,18 +278,12 @@ impl SourceProvider for MusicTheorySourceProvider {
         chapter: &str,
         section: Option<&str>,
     ) -> Result<String> {
-        crate::tools::sources::get_source_chapter(
-            &self.state.config,
-            source_id,
-            chapter,
-            section,
-        )
-        .await
+        crate::tools::sources::get_source_chapter(&self.state.config, source_id, chapter, section)
+            .await
     }
 
     async fn list_chapters(&self, source_id: &str) -> Result<Vec<FabrykChapterInfo>> {
-        let response =
-            crate::tools::sources::list_source_chapters(&self.state, source_id).await?;
+        let response = crate::tools::sources::list_source_chapters(&self.state, source_id).await?;
 
         let chapters = response
             .chapters

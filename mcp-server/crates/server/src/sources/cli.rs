@@ -9,11 +9,11 @@ use std::path::PathBuf;
 
 use clap::{Parser, Subcommand};
 
+use crate::config::path_resolver;
 use crate::config::Config;
 use crate::error::{Error, Result};
 use crate::sources::scanner::scan_concept_cards_with_stats;
 use crate::sources::validator::{validate_sources, ValidationMode};
-use crate::config::path_resolver;
 
 /// Source management commands.
 #[derive(Parser, Debug)]

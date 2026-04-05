@@ -1,9 +1,5 @@
 pub mod concepts;
-pub mod graph;
-pub mod graph_query;
 pub mod guides;
 pub mod music_theory;
 pub mod questions;
-pub mod search;
-pub mod semantic;
 pub mod sources;

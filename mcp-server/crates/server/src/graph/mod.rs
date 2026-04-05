@@ -11,7 +11,6 @@
 //!   provide backward-compatible access patterns.
 //! - **CLI handlers**: `handle_build`, `handle_validate`, `handle_stats`,
 //!   `handle_compile` for the `graph` CLI subcommand.
-//! - **query**: Project-specific MCP response types (JSON API contract).
 //!
 //! # Feature Gate
 //!
@@ -61,16 +60,6 @@ pub use fabryk::graph::{
 pub use fabryk::graph::{load_graph, load_graph_from_str, save_graph};
 
 // ============================================================================
-// Query sub-module (MCP API contract types)
-// ============================================================================
-
-pub mod query;
-
-pub use query::{
-    BridgeConceptsResponse, CentralConceptsResponse, ConceptPathResponse, ConceptSourcesResponse,
-    ConceptVariantsResponse, DependentsResponse, NeighborhoodResponse, PrerequisitesResponse,
-    RelatedConceptsResponse, SourceCoverageResponse,
-};
 
 // ============================================================================
 // Backward-compatible adapter types
@@ -542,10 +531,7 @@ impl fabryk_mcp::graph::GraphNodeFilter for MusicTheoryNodeFilter {
         }
 
         // Check min_confidence filter
-        if let Some(min_conf) = extra_args
-            .get("min_confidence")
-            .and_then(|v| v.as_str())
-        {
+        if let Some(min_conf) = extra_args.get("min_confidence").and_then(|v| v.as_str()) {
             if let Some(node_conf) = node
                 .metadata
                 .get("extraction_confidence")
