@@ -194,7 +194,7 @@ impl IndexMetadata {
 
 /// Build a full-text search index from all content types.
 ///
-/// Uses fabryk's `IndexBuilder` with the project's `MusicTheoryDocumentExtractor`.
+/// Uses fabryk's `IndexBuilder` with fabryk's `ConceptCardDocumentExtractor`.
 /// Indexes content from all 4 content directories: concept_cards, sources_md,
 /// concepts_unified, and guides. Missing directories are silently skipped.
 ///
@@ -241,7 +241,7 @@ pub async fn build_index(config: &crate::config::Config) -> crate::error::Result
     let mut first = true;
 
     for (content_path, label) in &content_dirs {
-        let extractor = crate::extractors::MusicTheoryDocumentExtractor::new();
+        let extractor = fabryk::fts::ConceptCardDocumentExtractor::new();
         let builder = fabryk::fts::IndexBuilder::new()
             .with_extractor(Box::new(extractor))
             .force_rebuild();
@@ -511,6 +511,7 @@ mod tests {
             errors: 5,
             bytes_processed: 1024,
             content_hash: "abc123".to_string(),
+            label_counts: std::collections::HashMap::new(),
         };
 
         let stats = IndexStats::from(fabryk_stats);

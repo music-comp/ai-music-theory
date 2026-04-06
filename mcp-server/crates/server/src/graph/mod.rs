@@ -259,7 +259,7 @@ fn compute_graph_stats(data: &fabryk::graph::GraphData) -> GraphStats {
 
 /// Build the concept graph from content files and configuration.
 ///
-/// Uses the fabryk `GraphBuilder` with the project's `MusicTheoryGraphExtractor`.
+/// Uses the fabryk `GraphBuilder` with fabryk's `ConceptCardGraphExtractor`.
 /// Optionally merges manual edges from `data/graphs/manual_edges.json`.
 ///
 /// # Arguments
@@ -277,7 +277,7 @@ pub async fn build_graph(config: &Config) -> Result<(fabryk::graph::GraphData, B
     let concept_cards_path = config.paths.concept_cards_path()?;
     let data_dir = config.paths.base_path()?.join("data");
 
-    let extractor = crate::extractors::MusicTheoryGraphExtractor::new();
+    let extractor = fabryk::graph::ConceptCardGraphExtractor::new();
     let mut builder =
         fabryk::graph::GraphBuilder::new(extractor).with_content_path(&concept_cards_path);
 

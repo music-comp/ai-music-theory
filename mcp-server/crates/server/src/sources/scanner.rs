@@ -7,9 +7,9 @@ use std::collections::HashMap;
 
 use crate::config::Config;
 use crate::error::Result;
-use crate::metadata::extract_concept_metadata;
 use crate::sources::types::SourceReference;
-use fabryk::core::util::files::{find_all_files, FindOptions};
+use fabryk::content::{ConceptCardFrontmatter, extract_frontmatter};
+use fabryk::core::util::files::{find_all_files, read_file, FindOptions};
 
 /// Scan all concept cards and extract source references.
 ///
@@ -39,16 +39,26 @@ pub async fn scan_concept_cards(config: &Config) -> Result<HashMap<String, Sourc
     let files = find_all_files(&cards_path, FindOptions::markdown()).await?;
 
     for file_info in files {
-        // Extract metadata from each concept card
-        if let Ok(metadata) = extract_concept_metadata(&cards_path, &file_info.path).await {
-            // Only process cards with a source field
-            if let Some(source_title) = metadata.source {
+        let content = match read_file(&file_info.path).await {
+            Ok(c) => c,
+            Err(_) => continue,
+        };
+        if let Some(fm) = extract_frontmatter(&content)
+            .ok()
+            .and_then(|r| r.deserialize::<ConceptCardFrontmatter>().ok().flatten())
+        {
+            if let Some(source_title) = fm.source {
                 let source_title = source_title.trim().to_string();
                 if !source_title.is_empty() {
+                    let id = file_info
+                        .path
+                        .file_stem()
+                        .map(|s| s.to_string_lossy().to_string())
+                        .unwrap_or_default();
                     sources
                         .entry(source_title.clone())
                         .or_insert_with(|| SourceReference::new(&source_title))
-                        .add_card(&metadata.id);
+                        .add_card(&id);
                 }
             }
         }
@@ -97,17 +107,27 @@ pub async fn scan_concept_cards_with_stats(
     for file_info in files {
         total_cards += 1;
 
-        // Extract metadata from each concept card
-        if let Ok(metadata) = extract_concept_metadata(&cards_path, &file_info.path).await {
-            // Only process cards with a source field
-            if let Some(source_title) = metadata.source {
+        let content = match read_file(&file_info.path).await {
+            Ok(c) => c,
+            Err(_) => continue,
+        };
+        if let Some(fm) = extract_frontmatter(&content)
+            .ok()
+            .and_then(|r| r.deserialize::<ConceptCardFrontmatter>().ok().flatten())
+        {
+            if let Some(source_title) = fm.source {
                 let source_title = source_title.trim().to_string();
                 if !source_title.is_empty() {
                     cards_with_sources += 1;
+                    let id = file_info
+                        .path
+                        .file_stem()
+                        .map(|s| s.to_string_lossy().to_string())
+                        .unwrap_or_default();
                     sources
                         .entry(source_title.clone())
                         .or_insert_with(|| SourceReference::new(&source_title))
-                        .add_card(&metadata.id);
+                        .add_card(&id);
                 }
             }
         }

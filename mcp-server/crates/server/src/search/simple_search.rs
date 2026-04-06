@@ -10,13 +10,14 @@ use async_trait::async_trait;
 use fabryk::fts::{SearchBackend, SearchParams, SearchResult as FabrykSearchResult, SearchResults};
 
 use crate::config::Config;
-use crate::extractors::MusicTheoryDocumentExtractor;
+use fabryk::content::{ConceptCardFrontmatter, extract_frontmatter};
 use fabryk::core::util::files::{find_all_files, FindOptions};
+use fabryk::fts::ConceptCardDocumentExtractor;
 
 /// Simple search backend using linear scan.
 ///
 /// This backend scans all concept card files sequentially, parsing each with
-/// `MusicTheoryDocumentExtractor` and using fabryk `SearchDocument` methods
+/// `ConceptCardDocumentExtractor` and using fabryk `SearchDocument` methods
 /// for matching and relevance scoring.
 ///
 /// It is suitable for small to medium collections (<500 documents) and
@@ -55,7 +56,7 @@ impl SearchBackend for SimpleSearch {
             return Ok(SearchResults::empty(self.name()));
         }
 
-        let extractor = MusicTheoryDocumentExtractor::new();
+        let extractor = ConceptCardDocumentExtractor::new();
         let snippet_length = params.snippet_length.unwrap_or(200);
         let limit = params.limit.unwrap_or(10);
 
@@ -75,7 +76,7 @@ impl SearchBackend for SimpleSearch {
                 Err(_) => continue,
             };
 
-            // Extract SearchDocument using the MusicTheoryDocumentExtractor
+            // Extract SearchDocument using the ConceptCardDocumentExtractor
             let doc = match extractor.extract(path, &content) {
                 Some(d) => d,
                 None => continue,
@@ -114,7 +115,10 @@ impl SearchBackend for SimpleSearch {
 
             // Alias boost: if the query exactly matches an alias (case-insensitive),
             // multiply relevance by 1.5 to give direct alias matches a meaningful bump.
-            if let Ok((Some(fm), _)) = crate::frontmatter::extract_frontmatter(&content) {
+            if let Some(fm) = extract_frontmatter(&content)
+                .ok()
+                .and_then(|r| r.deserialize::<ConceptCardFrontmatter>().ok().flatten())
+            {
                 let query_lower = params.query.to_lowercase();
                 if fm
                     .aliases

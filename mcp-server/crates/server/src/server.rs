@@ -380,17 +380,20 @@ fn tier_confidence_schema() -> serde_json::Value {
 /// Fabryk's `graph_bridges` tool is also exposed (an additional 17th tool that
 /// finds bridge nodes by betweenness centrality).
 pub fn build_server(state: AppState) -> FabrykMcpServer {
-    use fabryk_mcp::content::{ContentTools, GuideTools, SourceTools};
+    use fabryk_mcp::content::{
+        ContentTools, FsContentItemProvider, FsGuideProvider, FsQuestionSearchProvider,
+        FsSourceProvider, GuideTools, SourceTools,
+    };
     use fabryk_mcp::fts::FtsTools;
     #[cfg(feature = "graph")]
     use fabryk_mcp::graph::GraphTools;
     use std::collections::HashMap;
 
-    use crate::content::{
-        MusicTheoryContentProvider, MusicTheoryGuideProvider, MusicTheorySourceProvider,
-    };
-
-    let content_provider = Arc::new(MusicTheoryContentProvider::new(state.config.clone()));
+    let concept_cards_path = state.config.paths.concept_cards_path().unwrap_or_default();
+    let content_provider = Arc::new(
+        FsContentItemProvider::new(&concept_cards_path)
+            .with_content_type_name("concept", "concepts"),
+    );
     let concept_tools = ContentTools::with_shared(content_provider)
         .with_names(HashMap::from([
             ("list".to_string(), "list_concepts".to_string()),
@@ -428,7 +431,8 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
             }
         }));
 
-    let source_provider = Arc::new(MusicTheorySourceProvider::new(state.clone()));
+    let sources_md_path = state.config.paths.sources_md_path().unwrap_or_default();
+    let source_provider = Arc::new(FsSourceProvider::new(&sources_md_path));
     let source_tools = SourceTools::with_shared(source_provider)
         .with_names(HashMap::from([
             ("sources_list".to_string(), "list_sources".to_string()),
@@ -472,7 +476,8 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
             ),
         ]));
 
-    let guide_provider = MusicTheoryGuideProvider::new(state.config.clone());
+    let guides_path = state.config.paths.guides_path().unwrap_or_default();
+    let guide_provider = FsGuideProvider::new(&guides_path);
     let guide_tools = GuideTools::new(guide_provider);
 
     let search_backend = state.search_backend();
@@ -523,7 +528,7 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         use fabryk_mcp::semantic::SemanticSearchTools;
         SemanticSearchTools::new(state.search_backend(), None)
     };
-    let question_provider = crate::content::MusicTheoryQuestionProvider::new(state.config.clone());
+    let question_provider = FsQuestionSearchProvider::new(&concept_cards_path);
     let question_search = fabryk_mcp::content::QuestionSearchTools::new(question_provider);
     let music_theory_tools = MusicTheoryToolsRegistry;
 

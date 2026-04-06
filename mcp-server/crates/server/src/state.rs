@@ -582,7 +582,7 @@ async fn build_vector_index(
     fabryk::vector::SimpleVectorBackend,
     Box<dyn std::error::Error + Send + Sync>,
 > {
-    use crate::extractors::MusicTheoryVectorExtractor;
+    use fabryk::vector::ConceptCardVectorExtractor;
     use fabryk::vector::builder::ErrorHandling;
     use fabryk::vector::{EmbeddingProvider, FastEmbedProvider, VectorIndexBuilder};
 
@@ -617,7 +617,7 @@ async fn build_vector_index(
             continue;
         }
 
-        let extractor = MusicTheoryVectorExtractor::new();
+        let extractor = ConceptCardVectorExtractor::new();
         let builder = VectorIndexBuilder::new(extractor)
             .with_content_path(content_path)
             .with_embedding_provider(Arc::clone(&provider))

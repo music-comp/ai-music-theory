@@ -618,7 +618,7 @@ async fn handle_vectordb_command(
 ) -> Result<()> {
     use std::sync::Arc;
 
-    use crate::extractors::MusicTheoryVectorExtractor;
+    use fabryk::vector::ConceptCardVectorExtractor;
     use fabryk::vector::{EmbeddingProvider, FastEmbedProvider, VectorIndexBuilder};
 
     let config = Config::load()?;
@@ -668,7 +668,7 @@ async fn handle_vectordb_command(
                     continue;
                 }
 
-                let extractor = MusicTheoryVectorExtractor::new();
+                let extractor = ConceptCardVectorExtractor::new();
                 let builder = VectorIndexBuilder::new(extractor)
                     .with_content_path(content_path)
                     .with_embedding_provider(Arc::clone(&provider))

@@ -6,19 +6,14 @@
 pub mod cache;
 pub mod cli;
 pub mod config;
-pub mod content;
 pub mod error;
-pub mod extractors;
-pub mod frontmatter;
 #[cfg(feature = "graph")]
 pub mod graph;
-pub mod metadata;
 pub mod resources;
 pub mod search;
 pub mod server;
 pub mod sources;
 pub mod state;
-pub mod tools;
 
 // Re-export commonly used types
 pub use config::{Config, LanceDbConfig};
