@@ -500,55 +500,8 @@ pub async fn handle_compile(config: &Config) -> Result<()> {
     Ok(())
 }
 
-// ============================================================================
-// MCP Node Filter
-// ============================================================================
-
-/// Domain-specific node filter for music theory graph queries.
-///
-/// Filters graph query results based on music-theory-specific metadata:
-/// - **tier**: Matches nodes whose `tier` metadata equals the requested tier
-///   (`foundational`, `intermediate`, or `advanced`).
-/// - **min_confidence**: Filters nodes by `extraction_confidence` metadata,
-///   requiring at least the specified confidence level (`low` < `medium` < `high`).
-///
-/// Both filters are extracted from the MCP tool call arguments (the `extra_args`
-/// JSON value). If a filter parameter is absent from the arguments, all nodes
-/// pass that filter.
-pub struct MusicTheoryNodeFilter;
-
-impl fabryk_mcp::graph::GraphNodeFilter for MusicTheoryNodeFilter {
-    fn matches(&self, node: &fabryk::graph::Node, extra_args: &serde_json::Value) -> bool {
-        // Check tier filter
-        if let Some(tier) = extra_args.get("tier").and_then(|v| v.as_str()) {
-            if let Some(node_tier) = node.metadata.get("tier").and_then(|v| v.as_str()) {
-                if node_tier != tier {
-                    return false;
-                }
-            } else {
-                return false;
-            }
-        }
-
-        // Check min_confidence filter
-        if let Some(min_conf) = extra_args.get("min_confidence").and_then(|v| v.as_str()) {
-            if let Some(node_conf) = node
-                .metadata
-                .get("extraction_confidence")
-                .and_then(|v| v.as_str())
-            {
-                let order = ["low", "medium", "high"];
-                let min_idx = order.iter().position(|&c| c == min_conf).unwrap_or(0);
-                let node_idx = order.iter().position(|&c| c == node_conf).unwrap_or(0);
-                if node_idx < min_idx {
-                    return false;
-                }
-            }
-        }
-
-        true
-    }
-}
+// Node filter is now provided by fabryk_mcp::graph::MetadataNodeFilter.
+// See server.rs build_server() for the configured filter.
 
 // ============================================================================
 // Tests
@@ -2017,104 +1970,7 @@ mod tests {
         assert!(debug.contains("GraphStats"));
     }
 
-    // -----------------------------------------------------------------------
-    // MusicTheoryNodeFilter
-    // -----------------------------------------------------------------------
-
-    #[test]
-    fn test_node_filter_no_filters_passes_everything() {
-        use fabryk_mcp::graph::GraphNodeFilter;
-
-        let filter = MusicTheoryNodeFilter;
-        let node = Node::new("n1", "Note");
-        let args = serde_json::json!({});
-        assert!(filter.matches(&node, &args));
-    }
-
-    #[test]
-    fn test_node_filter_tier_match() {
-        use fabryk_mcp::graph::GraphNodeFilter;
-
-        let filter = MusicTheoryNodeFilter;
-        let node = Node::new("n1", "Note").with_metadata("tier", "foundational");
-        let args = serde_json::json!({"tier": "foundational"});
-        assert!(filter.matches(&node, &args));
-    }
-
-    #[test]
-    fn test_node_filter_tier_mismatch() {
-        use fabryk_mcp::graph::GraphNodeFilter;
-
-        let filter = MusicTheoryNodeFilter;
-        let node = Node::new("n1", "Note").with_metadata("tier", "advanced");
-        let args = serde_json::json!({"tier": "foundational"});
-        assert!(!filter.matches(&node, &args));
-    }
-
-    #[test]
-    fn test_node_filter_tier_missing_on_node() {
-        use fabryk_mcp::graph::GraphNodeFilter;
-
-        let filter = MusicTheoryNodeFilter;
-        let node = Node::new("n1", "Note");
-        let args = serde_json::json!({"tier": "foundational"});
-        assert!(!filter.matches(&node, &args));
-    }
-
-    #[test]
-    fn test_node_filter_min_confidence_passes() {
-        use fabryk_mcp::graph::GraphNodeFilter;
-
-        let filter = MusicTheoryNodeFilter;
-        let node = Node::new("n1", "Note").with_metadata("extraction_confidence", "high");
-        let args = serde_json::json!({"min_confidence": "medium"});
-        assert!(filter.matches(&node, &args));
-    }
-
-    #[test]
-    fn test_node_filter_min_confidence_exact() {
-        use fabryk_mcp::graph::GraphNodeFilter;
-
-        let filter = MusicTheoryNodeFilter;
-        let node = Node::new("n1", "Note").with_metadata("extraction_confidence", "medium");
-        let args = serde_json::json!({"min_confidence": "medium"});
-        assert!(filter.matches(&node, &args));
-    }
-
-    #[test]
-    fn test_node_filter_min_confidence_too_low() {
-        use fabryk_mcp::graph::GraphNodeFilter;
-
-        let filter = MusicTheoryNodeFilter;
-        let node = Node::new("n1", "Note").with_metadata("extraction_confidence", "low");
-        let args = serde_json::json!({"min_confidence": "high"});
-        assert!(!filter.matches(&node, &args));
-    }
-
-    #[test]
-    fn test_node_filter_min_confidence_missing_on_node() {
-        use fabryk_mcp::graph::GraphNodeFilter;
-
-        let filter = MusicTheoryNodeFilter;
-        let node = Node::new("n1", "Note");
-        // No extraction_confidence metadata — filter is a no-op (passes)
-        let args = serde_json::json!({"min_confidence": "medium"});
-        assert!(filter.matches(&node, &args));
-    }
-
-    #[test]
-    fn test_node_filter_combined_tier_and_confidence() {
-        use fabryk_mcp::graph::GraphNodeFilter;
-
-        let filter = MusicTheoryNodeFilter;
-        let node = Node::new("n1", "Note")
-            .with_metadata("tier", "foundational")
-            .with_metadata("extraction_confidence", "high");
-        let args = serde_json::json!({"tier": "foundational", "min_confidence": "medium"});
-        assert!(filter.matches(&node, &args));
-
-        // Tier mismatch should fail even if confidence passes
-        let args2 = serde_json::json!({"tier": "advanced", "min_confidence": "low"});
-        assert!(!filter.matches(&node, &args2));
-    }
+    // Node filter tests are now in fabryk_mcp::graph::filter::tests.
+    // MusicTheoryNodeFilter has been replaced with MetadataNodeFilter
+    // configured in server.rs.
 }

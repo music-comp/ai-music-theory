@@ -27,8 +27,12 @@ use serde::{Deserialize, Serialize};
 use crate::config::Config;
 use crate::error::{Error, Result};
 
-/// Base URL for GitHub Release assets.
-const RELEASE_BASE_URL: &str = "https://github.com/oxur/ai-music-theory/releases/download";
+/// Default base URL for GitHub Release assets.
+/// Override via Config's `cache.release_base_url` if available.
+const DEFAULT_RELEASE_BASE_URL: &str = "https://github.com/oxur/ai-music-theory/releases/download";
+
+/// Default project prefix for cache archive names.
+const DEFAULT_PROJECT_PREFIX: &str = "music-theory";
 
 /// Filename for the cache manifest stored alongside downloaded caches.
 const MANIFEST_FILENAME: &str = "cache-manifest.json";
@@ -169,15 +173,15 @@ impl fmt::Display for CacheStatusReport {
 
 /// Return the archive filename for a backend at a given version.
 ///
-/// Format: `music-theory-cache-{backend}-v{version}.tar.gz`
+/// Format: `{project}-cache-{backend}-v{version}.tar.gz`
 pub fn archive_name(backend: &CacheBackend, version: &str) -> String {
-    format!("music-theory-cache-{backend}-v{version}.tar.gz")
+    format!("{DEFAULT_PROJECT_PREFIX}-cache-{backend}-v{version}.tar.gz")
 }
 
 /// Return the full GitHub Release download URL for a cache archive.
 pub fn release_url(backend: &CacheBackend, version: &str) -> String {
     let name = archive_name(backend, version);
-    format!("{RELEASE_BASE_URL}/v{version}/{name}")
+    format!("{DEFAULT_RELEASE_BASE_URL}/v{version}/{name}")
 }
 
 /// Return the URL for the `.sha256` sidecar checksum file.
