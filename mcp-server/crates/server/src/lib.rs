@@ -12,7 +12,6 @@ pub mod graph;
 pub mod resources;
 pub mod search;
 pub mod server;
-pub mod sources;
 pub mod state;
 
 // Re-export commonly used types

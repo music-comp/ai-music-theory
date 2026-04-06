@@ -12,7 +12,7 @@ use fabryk_cli::ConfigAction;
 use crate::config::Config;
 use crate::error::Result;
 use crate::server::build_server;
-use crate::sources::cli::SourcesCommands;
+use fabryk_cli::SourcesCommand;
 use crate::state::AppState;
 
 #[cfg(feature = "fts")]
@@ -86,7 +86,7 @@ pub enum Commands {
     },
 
     /// Source management (scan, validate, aliases)
-    Sources(SourcesCommands),
+    Sources(SourcesCommand),
 
     /// Cache management (download pre-built indexes, package for distribution)
     Cache(CacheCommands),
@@ -233,7 +233,39 @@ pub async fn handle_command(cli: Cli) -> Result<()> {
         Commands::Config { action } => handle_config_command(action),
 
         Commands::Sources(sources_cmds) => {
-            crate::sources::cli::handle_sources_command(sources_cmds, log_level).await
+            use fabryk::content::sources::SourceCategory;
+            use std::collections::HashMap;
+
+            let config = Config::load()?;
+            let content_path = config.paths.concept_cards_path()?;
+
+            let mut categories = HashMap::new();
+            for (name, cat) in [
+                ("oxford", &config.sources.oxford),
+                ("general", &config.sources.general),
+                ("papers", &config.sources.papers),
+            ] {
+                categories.insert(
+                    name.to_string(),
+                    SourceCategory {
+                        path: cat.path.clone(),
+                        files: cat.files.clone(),
+                        aliases: cat.aliases.clone(),
+                    },
+                );
+            }
+
+            let config_path = crate::config::path_resolver()
+                .config_dir()
+                .map(|d| d.join("default.toml"));
+
+            fabryk_cli::sources_handlers::handle_sources(
+                sources_cmds,
+                &content_path,
+                &categories,
+                config_path.as_deref(),
+            )
+            .await
         }
 
         Commands::Cache(cache_cmds) => handle_cache_command(cache_cmds, log_level).await,
@@ -2028,7 +2060,7 @@ fuzzy_distance = 2
         ]);
         match cli.command {
             Some(Commands::Sources(ref s)) => match s.command {
-                crate::sources::cli::SourcesSubcommand::Scan {
+                fabryk_cli::sources_handlers::SourcesSubcommand::Scan {
                     ref output,
                     show_cards,
                 } => {
@@ -2046,7 +2078,7 @@ fuzzy_distance = 2
         let cli = Cli::parse_from(&["music-theory-mcp", "sources", "scan"]);
         match cli.command {
             Some(Commands::Sources(ref s)) => match s.command {
-                crate::sources::cli::SourcesSubcommand::Scan {
+                fabryk_cli::sources_handlers::SourcesSubcommand::Scan {
                     ref output,
                     show_cards,
                 } => {
@@ -2074,7 +2106,7 @@ fuzzy_distance = 2
         ]);
         match cli.command {
             Some(Commands::Sources(ref s)) => match s.command {
-                crate::sources::cli::SourcesSubcommand::Validate {
+                fabryk_cli::sources_handlers::SourcesSubcommand::Validate {
                     ref mode,
                     suggest_matches,
                     threshold,
@@ -2096,7 +2128,7 @@ fuzzy_distance = 2
         let cli = Cli::parse_from(&["music-theory-mcp", "sources", "validate"]);
         match cli.command {
             Some(Commands::Sources(ref s)) => match s.command {
-                crate::sources::cli::SourcesSubcommand::Validate {
+                fabryk_cli::sources_handlers::SourcesSubcommand::Validate {
                     ref mode,
                     suggest_matches,
                     threshold,
@@ -2128,9 +2160,9 @@ fuzzy_distance = 2
         ]);
         match cli.command {
             Some(Commands::Sources(ref s)) => match s.command {
-                crate::sources::cli::SourcesSubcommand::Alias(ref alias_cmds) => {
+                fabryk_cli::sources_handlers::SourcesSubcommand::Alias(ref alias_cmds) => {
                     match alias_cmds.command {
-                        crate::sources::cli::AliasSubcommand::Add {
+                        fabryk_cli::sources_handlers::AliasSubcommand::Add {
                             ref source_id,
                             ref alias,
                         } => {
@@ -2158,9 +2190,9 @@ fuzzy_distance = 2
         ]);
         match cli.command {
             Some(Commands::Sources(ref s)) => match s.command {
-                crate::sources::cli::SourcesSubcommand::Alias(ref alias_cmds) => {
+                fabryk_cli::sources_handlers::SourcesSubcommand::Alias(ref alias_cmds) => {
                     match alias_cmds.command {
-                        crate::sources::cli::AliasSubcommand::Remove {
+                        fabryk_cli::sources_handlers::AliasSubcommand::Remove {
                             ref source_id,
                             ref alias,
                         } => {
@@ -2181,9 +2213,9 @@ fuzzy_distance = 2
         let cli = Cli::parse_from(&["music-theory-mcp", "sources", "alias", "list", "--json"]);
         match cli.command {
             Some(Commands::Sources(ref s)) => match s.command {
-                crate::sources::cli::SourcesSubcommand::Alias(ref alias_cmds) => {
+                fabryk_cli::sources_handlers::SourcesSubcommand::Alias(ref alias_cmds) => {
                     match alias_cmds.command {
-                        crate::sources::cli::AliasSubcommand::List { json } => {
+                        fabryk_cli::sources_handlers::AliasSubcommand::List { json } => {
                             assert!(json, "json flag should be true");
                         }
                         _ => panic!("Expected List subcommand"),
@@ -2828,8 +2860,8 @@ fuzzy_distance = 2
         std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
 
         // Construct a Sources Scan command directly
-        let sources_cmds = SourcesCommands {
-            command: crate::sources::cli::SourcesSubcommand::Scan {
+        let sources_cmds = SourcesCommand {
+            command: fabryk_cli::sources_handlers::SourcesSubcommand::Scan {
                 output: "table".to_string(),
                 show_cards: false,
             },
@@ -3389,8 +3421,8 @@ fuzzy_distance = 2
         std::env::set_var("MUSIC_THEORY_CONFIG_DIR", &config_dir);
 
         // Test that log_level clone works properly through Sources dispatch
-        let sources_cmds = SourcesCommands {
-            command: crate::sources::cli::SourcesSubcommand::Scan {
+        let sources_cmds = SourcesCommand {
+            command: fabryk_cli::sources_handlers::SourcesSubcommand::Scan {
                 output: "table".to_string(),
                 show_cards: false,
             },
