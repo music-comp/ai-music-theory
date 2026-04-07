@@ -28,19 +28,11 @@ log = { workspace = true }
 serde = { workspace = true }
 serde_json = { workspace = true }
 schemars = { workspace = true }
-async-walkdir = { workspace = true }
-futures = { workspace = true }
-pulldown-cmark = { workspace = true }
-yaml_serde = { workspace = true }
 shellexpand = { workspace = true }
 dirs = { workspace = true }
-thiserror = { workspace = true }
 
 # CLI parsing
 clap = { workspace = true }
-
-# Source management
-strsim = { workspace = true }
 toml_edit = { workspace = true }
 
 # Music theory computation
