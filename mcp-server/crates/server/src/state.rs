@@ -582,8 +582,8 @@ async fn build_vector_index(
     fabryk::vector::SimpleVectorBackend,
     Box<dyn std::error::Error + Send + Sync>,
 > {
-    use fabryk::vector::ConceptCardVectorExtractor;
     use fabryk::vector::builder::ErrorHandling;
+    use fabryk::vector::ConceptCardVectorExtractor;
     use fabryk::vector::{EmbeddingProvider, FastEmbedProvider, VectorIndexBuilder};
 
     // Ensure cache directory exists

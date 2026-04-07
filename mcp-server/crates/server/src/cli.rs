@@ -12,8 +12,8 @@ use fabryk_cli::ConfigAction;
 use crate::config::Config;
 use crate::error::Result;
 use crate::server::build_server;
-use fabryk_cli::SourcesCommand;
 use crate::state::AppState;
+use fabryk_cli::SourcesCommand;
 
 #[cfg(feature = "fts")]
 use crate::search::{build_index, is_index_fresh, IndexMetadata};

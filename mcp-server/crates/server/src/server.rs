@@ -587,7 +587,11 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         let node_filter = Arc::new(
             fabryk_mcp::graph::MetadataNodeFilter::new()
                 .with_exact("tier", "tier")
-                .with_ordered("min_confidence", "extraction_confidence", &["low", "medium", "high"])
+                .with_ordered(
+                    "min_confidence",
+                    "extraction_confidence",
+                    &["low", "medium", "high"],
+                ),
         );
         let extra = tier_confidence_schema();
 

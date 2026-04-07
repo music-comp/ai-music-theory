@@ -10,7 +10,7 @@ use async_trait::async_trait;
 use fabryk::fts::{SearchBackend, SearchParams, SearchResult as FabrykSearchResult, SearchResults};
 
 use crate::config::Config;
-use fabryk::content::{ConceptCardFrontmatter, extract_frontmatter};
+use fabryk::content::{extract_frontmatter, ConceptCardFrontmatter};
 use fabryk::core::util::files::{find_all_files, FindOptions};
 use fabryk::fts::ConceptCardDocumentExtractor;
 
