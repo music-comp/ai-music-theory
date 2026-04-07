@@ -13,7 +13,7 @@ use music_comp_mt::interval::Interval;
 use music_comp_mt::note::{Notes, Pitch};
 use music_comp_mt::scale::{Direction, Mode, Scale};
 
-use super::{Error, Result};
+use crate::error::{Error, Result};
 
 // ============================================================================
 // Pitch parsing helper

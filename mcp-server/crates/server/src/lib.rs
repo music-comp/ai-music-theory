@@ -13,6 +13,7 @@ pub mod resources;
 pub mod search;
 pub mod server;
 pub mod state;
+pub mod tools;
 
 // Re-export commonly used types
 pub use config::{Config, LanceDbConfig};

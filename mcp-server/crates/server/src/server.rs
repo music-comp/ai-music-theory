@@ -6,12 +6,43 @@
 
 use std::sync::Arc;
 
-use fabryk_mcp::{CompositeRegistry, FabrykMcpServer};
+use serde_json::{json, Value};
 
+use fabryk_mcp::{
+    model::{CallToolResult, Content, ErrorCode, ErrorData, Tool},
+    CompositeRegistry, FabrykMcpServer, ToolRegistry, ToolResult,
+};
+
+use crate::error::McpErrorContextExt;
 use crate::state::AppState;
+use crate::tools;
 
-// HealthToolsRegistry removed — now provided by fabryk_mcp::HealthTools
+// ============================================================================
+// Helper functions (for MusicTheoryToolsRegistry)
+// ============================================================================
 
+fn make_tool(name: &str, description: &str, schema: Value) -> Tool {
+    let input_schema = match schema {
+        Value::Object(map) => map,
+        _ => serde_json::Map::new(),
+    };
+    Tool::new(name.to_string(), description.to_string(), input_schema)
+}
+
+fn serialize_response<T: serde::Serialize>(value: &T) -> Result<CallToolResult, ErrorData> {
+    let json = serde_json::to_string_pretty(value).map_err(|e| {
+        ErrorData::new(
+            ErrorCode::INTERNAL_ERROR,
+            format!("Serialization error: {}", e),
+            None,
+        )
+    })?;
+    Ok(CallToolResult::success(vec![Content::text(json)]))
+}
+
+fn to_mcp_error(e: crate::error::Error, context: &str) -> ErrorData {
+    e.to_mcp_error(context)
+}
 
 // ============================================================================
 // MusicTheoryToolsRegistry (9 tools — pure computation, no state needed)
@@ -572,7 +603,6 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         .add(search_tools)
         .add(semantic_search)
         .add(question_search)
-        .add(graph_tools)
         .add(health_tools)
         .add(music_theory_tools);
 
