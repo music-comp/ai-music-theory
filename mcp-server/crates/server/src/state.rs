@@ -101,7 +101,12 @@ impl AppState {
     ///
     /// Returns `Err` if simple search initialization fails.
     pub async fn new(config: Config) -> Result<Self> {
-        let simple_backend = Arc::new(SimpleSearch::new(config.clone()));
+        let mut search_config = crate::search::to_fabryk_search_config(&config.search)?;
+        // Set content_path so SimpleSearch knows where to scan
+        if let Ok(cards_path) = config.paths.concept_cards_path() {
+            search_config.content_path = Some(cards_path.to_string_lossy().into_owned());
+        }
+        let simple_backend = Arc::new(SimpleSearch::with_default_extractor(&search_config));
 
         Ok(Self {
             config,

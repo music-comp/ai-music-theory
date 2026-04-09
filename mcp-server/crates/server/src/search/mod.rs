@@ -18,8 +18,6 @@
 //! - **`IndexStats`** / **`IndexMetadata`**: Adapter types providing
 //!   backward-compatible field names on top of fabryk's types.
 
-mod simple_search;
-
 // ============================================================================
 // Re-exports from fabryk
 // ============================================================================
@@ -27,11 +25,11 @@ mod simple_search;
 // The SearchBackend trait (async fn search(SearchParams) -> Result<SearchResults>)
 pub use fabryk::fts::SearchBackend;
 
-// Types needed by tools/search.rs, state.rs, and sources.rs
+// Types needed by state.rs
 pub use fabryk::fts::SearchParams;
 
-// Re-export our SimpleSearch
-pub use simple_search::SimpleSearch;
+// SimpleSearch from fabryk (real implementation, not a stub)
+pub use fabryk::fts::SimpleSearch;
 
 // FTS-specific re-exports (only when feature enabled)
 #[cfg(feature = "fts")]
@@ -524,15 +522,16 @@ mod tests {
     #[test]
     fn test_simple_search_new() {
         let config = test_config("simple");
-        let backend = SimpleSearch::new(config);
-        // Verify it was created without panic
+        let search_config = to_fabryk_search_config(&config.search).unwrap();
+        let backend = SimpleSearch::with_default_extractor(&search_config);
         assert_eq!(backend.name(), "simple");
     }
 
     #[tokio::test]
     async fn test_simple_search_empty_directory() {
         let config = test_config("simple");
-        let backend = SimpleSearch::new(config);
+        let search_config = to_fabryk_search_config(&config.search).unwrap();
+        let backend = SimpleSearch::with_default_extractor(&search_config);
 
         let params = SearchParams {
             query: "test".to_string(),
