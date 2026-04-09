@@ -2,6 +2,8 @@
 
 SOURCE_FILE=$1
 OUTPUT_DIR=$2
+echo "Reading PDF file '$SOURCE_FILE' ..."
+echo "Preparing output directory '$OUTPUT_DIR' ..."
 mkdir -p "$OUTPUT_DIR"
 
 # Claude Code does not support this usage; you need to get an
@@ -9,8 +11,8 @@ mkdir -p "$OUTPUT_DIR"
 # uses a different billing model :-(
 #
 # --llm_service marker.services.claude.ClaudeService
-
-marker_single \
+source .venv/bin/activate
+TORCH_DEVICE=cpu marker_single \
   --output_format markdown \
   --output_dir "$OUTPUT_DIR" \
   "$SOURCE_FILE"
