@@ -144,24 +144,24 @@ See [`mcp-server/README.md`](mcp-server/crates/server/README.md) for complete do
 
 ```bash
 cd mcp-server
-cargo build --release --features fts,graph
+make build
 
 # Initialize FTS index (optional but recommended)
-./target/release/music-theory-mcp index
+./bin/music-theory-mcp index
 
 # Initialize graph database (if using graph feature)
-./target/release/music-theory-mcp graph build
+./bin/music-theory-mcp graph build
 ```
 
 **2. Configure Claude Desktop:**
 
-Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
+Add to `~/Library/Application Support/Claude/claude_desktop_config.json`, e.g.:
 
 ```json
 {
   "mcpServers": {
     "music-theory": {
-      "command": "/path/to/ai-music-theory/mcp-server/target/release/music-theory-mcp"
+      "command": "/Users/oubiwann/lab/music-comp/ai-music-theory/mcp-server/bin/music-theory-mcp"
     }
   }
 }
