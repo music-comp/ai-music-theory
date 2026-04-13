@@ -1,9 +1,6 @@
 [workspace]
 resolver = "2"
-members = [
-    "crates/server",
-    "crates/design",
-]
+members = ["crates/server", "crates/design"]
 
 [workspace.package]
 version = "0.4.0"
@@ -63,7 +60,9 @@ blake3 = "1.8"
 chrono = { version = "0.4", features = ["serde"] }
 
 # Music theory computation
-music-comp-mt = { path = "../../mt-rs/crates/mt" }
+music-comp-mt = { version = "0.5", path = "../../mt-rs/crates/mt", features = [
+    "serde",
+] }
 
 # Fabryk framework (umbrella crates pull in sub-crates transitively)
 # For local development, create .cargo/config.toml with path overrides

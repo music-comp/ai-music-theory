@@ -4453,6 +4453,7 @@ name = "music-comp-mt"
 version = "0.5.1"
 dependencies = [
  "regex",
+ "serde",
  "strum 0.28.0",
  "strum_macros 0.28.0",
 ]

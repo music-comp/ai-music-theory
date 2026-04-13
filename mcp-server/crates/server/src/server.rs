@@ -366,6 +366,473 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
 }
 
 // ============================================================================
+// OthToolsRegistry (12 tools — Open Tone Harmony, quintal/quartal analysis)
+// ============================================================================
+
+struct OthToolsRegistry;
+
+impl ToolRegistry for OthToolsRegistry {
+    fn tools(&self) -> Vec<Tool> {
+        vec![
+            // ---- Tier 1: Core (5 tools) ----
+            make_tool(
+                "get_oth_orbit_info",
+                "Get complete information about an OTH orbit: modes, parent scales, \
+                 step sequence, Forte number, prime form, degree, orbit size, fiber class, \
+                 and quartal label",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "orbit": {
+                            "type": "string",
+                            "description": "Orbit identifier: quintal label (e.g. 'Q777'), \
+                                            quartal label (e.g. 'Q555'), or interval structure \
+                                            (e.g. '7,7,7')"
+                        }
+                    },
+                    "required": ["orbit"]
+                }),
+            ),
+            make_tool(
+                "list_oth_orbits",
+                "List all 14 OTH orbits with full data, optionally filtered by \
+                 step-vocabulary cluster",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "cluster": {
+                            "type": "string",
+                            "enum": [
+                                "NoSemitoneNoTritone",
+                                "ContainsSemitone",
+                                "EvenStepsOnly",
+                                "ContainsTritoneStep"
+                            ],
+                            "description": "Optional step-vocabulary cluster filter"
+                        }
+                    }
+                }),
+            ),
+            make_tool(
+                "get_oth_parent_scales",
+                "Find traditional parent scales containing an OTH chord's pitch classes",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "orbit": {
+                            "type": "string",
+                            "description": "Orbit identifier (e.g. 'Q777'). \
+                                            Mutually exclusive with pcs; orbit takes precedence."
+                        },
+                        "pcs": {
+                            "type": "array",
+                            "items": { "type": "integer", "minimum": 0, "maximum": 11 },
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "description": "Four pitch classes (0-11). \
+                                            Mutually exclusive with orbit."
+                        }
+                    }
+                }),
+            ),
+            make_tool(
+                "get_oth_chord_info",
+                "Identify which OTH orbit a 4-note chord belongs to, or explain why \
+                 it is outside the [6,8] space",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "pcs": {
+                            "type": "array",
+                            "items": { "type": "integer", "minimum": 0, "maximum": 11 },
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "description": "Four pitch classes (0-11)"
+                        },
+                        "notes": {
+                            "type": "array",
+                            "items": { "type": "string" },
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "description": "Four note names (e.g. ['C', 'D', 'G', 'A'])"
+                        }
+                    }
+                }),
+            ),
+            make_tool(
+                "get_oth_chord_scale",
+                "Compute the Tymoczko chord scale and full inversion cycle for a \
+                 voiced chord, with L1 distances and fiber class",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "pitches": {
+                            "type": "array",
+                            "items": { "type": "integer", "minimum": 0, "maximum": 127 },
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "description": "Four MIDI pitches in ascending order \
+                                            (e.g. [48, 55, 62, 69] for C3-G3-D4-A4)"
+                        }
+                    },
+                    "required": ["pitches"]
+                }),
+            ),
+            // ---- Tier 2: Analytical (4 tools) ----
+            make_tool(
+                "list_oth_modes",
+                "List all 52 distinct OTH modes with optional filtering by opening \
+                 interval, step-vocabulary cluster, or orbit",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "opening_interval": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 6,
+                            "description": "Filter by opening interval size (1-6)"
+                        },
+                        "cluster": {
+                            "type": "string",
+                            "enum": [
+                                "NoSemitoneNoTritone",
+                                "ContainsSemitone",
+                                "EvenStepsOnly",
+                                "ContainsTritoneStep"
+                            ],
+                            "description": "Filter by step-vocabulary cluster"
+                        },
+                        "orbit": {
+                            "type": "string",
+                            "description": "Filter to modes of a specific orbit \
+                                            (e.g. 'Q777', 'Q555', '7,7,7')"
+                        }
+                    }
+                }),
+            ),
+            make_tool(
+                "get_oth_distance",
+                "Compute geodesic distance between two chords in the [6,8] base \
+                 space B (228 chords)",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "from": {
+                            "type": "object",
+                            "description": "Source chord: {\"pcs\": [0,2,7,9]} or \
+                                            {\"notes\": [\"C\",\"D\",\"G\",\"A\"]}",
+                            "properties": {
+                                "pcs": {
+                                    "type": "array",
+                                    "items": { "type": "integer", "minimum": 0, "maximum": 11 }
+                                },
+                                "notes": {
+                                    "type": "array",
+                                    "items": { "type": "string" }
+                                }
+                            }
+                        },
+                        "to": {
+                            "type": "object",
+                            "description": "Target chord, same format as 'from'",
+                            "properties": {
+                                "pcs": {
+                                    "type": "array",
+                                    "items": { "type": "integer", "minimum": 0, "maximum": 11 }
+                                },
+                                "notes": {
+                                    "type": "array",
+                                    "items": { "type": "string" }
+                                }
+                            }
+                        }
+                    },
+                    "required": ["from", "to"]
+                }),
+            ),
+            make_tool(
+                "get_oth_neighbors",
+                "Get all adjacent chords (distance 1) for a chord in the [6,8] base \
+                 space, with voice movement details and orbit distribution",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "pcs": {
+                            "type": "array",
+                            "items": { "type": "integer", "minimum": 0, "maximum": 11 },
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "description": "Four pitch classes (0-11)"
+                        },
+                        "notes": {
+                            "type": "array",
+                            "items": { "type": "string" },
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "description": "Four note names"
+                        },
+                        "orbit": {
+                            "type": "string",
+                            "description": "Optional: filter neighbors to this orbit"
+                        }
+                    }
+                }),
+            ),
+            make_tool(
+                "verify_oth_properties",
+                "Run mathematical verification checks on OTH properties: fiber-mode \
+                 connection, multiset uniqueness, Universal L1 Law, quartal/quintal duality",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "check": {
+                            "type": "string",
+                            "enum": ["all", "fiber_modes", "multisets", "l1_law", "duality"],
+                            "description": "Which check to run (default: 'all')"
+                        }
+                    }
+                }),
+            ),
+            // ---- Tier 3: Exploratory (3 tools) ----
+            make_tool(
+                "get_oth_geodesics",
+                "Find all shortest paths between two chords in the [6,8] space \
+                 with step-by-step voice movement analysis",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "from": {
+                            "type": "object",
+                            "description": "Source chord: {\"pcs\": [...]} or {\"notes\": [...]}",
+                            "properties": {
+                                "pcs": {
+                                    "type": "array",
+                                    "items": { "type": "integer", "minimum": 0, "maximum": 11 }
+                                },
+                                "notes": {
+                                    "type": "array",
+                                    "items": { "type": "string" }
+                                }
+                            }
+                        },
+                        "to": {
+                            "type": "object",
+                            "description": "Target chord, same format as 'from'",
+                            "properties": {
+                                "pcs": {
+                                    "type": "array",
+                                    "items": { "type": "integer", "minimum": 0, "maximum": 11 }
+                                },
+                                "notes": {
+                                    "type": "array",
+                                    "items": { "type": "string" }
+                                }
+                            }
+                        },
+                        "max_paths": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "description": "Maximum geodesics to return (default: 10)"
+                        }
+                    },
+                    "required": ["from", "to"]
+                }),
+            ),
+            make_tool(
+                "get_oth_crossroads",
+                "Return the 6 crossroads chords (Q686 orbit) with betweenness \
+                 centrality, T6 partners, and structural properties",
+                json!({
+                    "type": "object",
+                    "properties": {}
+                }),
+            ),
+            make_tool(
+                "find_oth_modes_by_opening",
+                "Find OTH modes grouped by opening interval for exploratory analysis",
+                json!({
+                    "type": "object",
+                    "properties": {
+                        "interval": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 6,
+                            "description": "Specific opening interval (1-6). \
+                                            If omitted, returns all grouped."
+                        }
+                    }
+                }),
+            ),
+        ]
+    }
+
+    fn call(&self, name: &str, args: Value) -> Option<ToolResult> {
+        match name {
+            // ---- Tier 1 ----
+            "get_oth_orbit_info" => Some(Box::pin(async move {
+                let args: tools::oth::GetOthOrbitInfoArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::oth::get_oth_orbit_info(args)
+                    .map_err(|e| to_mcp_error(e, "Error getting orbit info"))?;
+                serialize_response(&response)
+            })),
+            "list_oth_orbits" => Some(Box::pin(async move {
+                let args: tools::oth::ListOthOrbitsArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::oth::list_oth_orbits(args)
+                    .map_err(|e| to_mcp_error(e, "Error listing orbits"))?;
+                serialize_response(&response)
+            })),
+            "get_oth_parent_scales" => Some(Box::pin(async move {
+                let args: tools::oth::GetOthParentScalesArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::oth::get_oth_parent_scales(args)
+                    .map_err(|e| to_mcp_error(e, "Error getting parent scales"))?;
+                serialize_response(&response)
+            })),
+            "get_oth_chord_info" => Some(Box::pin(async move {
+                let args: tools::oth::GetOthChordInfoArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::oth::get_oth_chord_info(args)
+                    .map_err(|e| to_mcp_error(e, "Error identifying chord"))?;
+                serialize_response(&response)
+            })),
+            "get_oth_chord_scale" => Some(Box::pin(async move {
+                let args: tools::oth::GetOthChordScaleArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::oth::get_oth_chord_scale(args)
+                    .map_err(|e| to_mcp_error(e, "Error computing chord scale"))?;
+                serialize_response(&response)
+            })),
+            // ---- Tier 2 ----
+            "list_oth_modes" => Some(Box::pin(async move {
+                let args: tools::oth::ListOthModesArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::oth::list_oth_modes(args)
+                    .map_err(|e| to_mcp_error(e, "Error listing modes"))?;
+                serialize_response(&response)
+            })),
+            "get_oth_distance" => Some(Box::pin(async move {
+                let args: tools::oth::GetOthDistanceArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::oth::get_oth_distance(args)
+                    .map_err(|e| to_mcp_error(e, "Error computing distance"))?;
+                serialize_response(&response)
+            })),
+            "get_oth_neighbors" => Some(Box::pin(async move {
+                let args: tools::oth::GetOthNeighborsArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::oth::get_oth_neighbors(args)
+                    .map_err(|e| to_mcp_error(e, "Error getting neighbors"))?;
+                serialize_response(&response)
+            })),
+            "verify_oth_properties" => Some(Box::pin(async move {
+                let args: tools::oth::VerifyOthPropertiesArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::oth::verify_oth_properties(args)
+                    .map_err(|e| to_mcp_error(e, "Error verifying properties"))?;
+                serialize_response(&response)
+            })),
+            // ---- Tier 3 ----
+            "get_oth_geodesics" => Some(Box::pin(async move {
+                let args: tools::oth::GetOthGeodesicsArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::oth::get_oth_geodesics(args)
+                    .map_err(|e| to_mcp_error(e, "Error computing geodesics"))?;
+                serialize_response(&response)
+            })),
+            "get_oth_crossroads" => Some(Box::pin(async move {
+                let args: tools::oth::GetOthCrossroadsArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::oth::get_oth_crossroads(args)
+                    .map_err(|e| to_mcp_error(e, "Error getting crossroads"))?;
+                serialize_response(&response)
+            })),
+            "find_oth_modes_by_opening" => Some(Box::pin(async move {
+                let args: tools::oth::FindOthModesByOpeningArgs = serde_json::from_value(args)
+                    .map_err(|e| {
+                        ErrorData::new(
+                            ErrorCode::INVALID_PARAMS,
+                            format!("Invalid parameters: {}", e),
+                            None,
+                        )
+                    })?;
+                let response = tools::oth::find_oth_modes_by_opening(args)
+                    .map_err(|e| to_mcp_error(e, "Error finding modes by opening"))?;
+                serialize_response(&response)
+            })),
+            _ => None,
+        }
+    }
+}
+
+// ============================================================================
 // Server builder
 // ============================================================================
 
@@ -562,6 +1029,7 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
     let question_provider = FsQuestionSearchProvider::new(&concept_cards_path);
     let question_search = fabryk_mcp::content::QuestionSearchTools::new(question_provider);
     let music_theory_tools = MusicTheoryToolsRegistry;
+    let oth_tools = OthToolsRegistry;
 
     // Build backend probes for health diagnostics
     let search_backend_for_probe = state.search_backend();
@@ -604,7 +1072,8 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         .add(semantic_search)
         .add(question_search)
         .add(health_tools)
-        .add(music_theory_tools);
+        .add(music_theory_tools)
+        .add(oth_tools);
 
     // ---- Graph tools (17 tools, replacing the former 16-tool GraphToolsRegistry) ----
     //
