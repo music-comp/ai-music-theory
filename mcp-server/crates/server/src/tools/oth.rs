@@ -595,6 +595,8 @@ pub struct InversionInfo {
 
 #[derive(Serialize)]
 pub struct GetOthChordScaleResponse {
+    pub inversion_method: String,
+    pub inversion_method_note: String,
     pub voiced_chord: VoicedChordInfo,
     pub chord_scale: ChordScaleInfo,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -604,6 +606,8 @@ pub struct GetOthChordScaleResponse {
     pub fiber_class: Option<String>,
     pub inversions_in_6_8: usize,
     pub total_cycle_cost: u32,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub note: Option<String>,
 }
 
 pub fn get_oth_chord_scale(args: GetOthChordScaleArgs) -> Result<GetOthChordScaleResponse> {
@@ -679,7 +683,27 @@ pub fn get_oth_chord_scale(args: GetOthChordScaleArgs) -> Result<GetOthChordScal
         });
     }
 
+    // If the chord is not in the [6,8] space, add a note suggesting
+    // traditional inversion may be more appropriate.
+    let is_in_space = orbit_obj.is_some();
+    let note = if !is_in_space {
+        Some(
+            "This chord is not in the [6,8] quintal space. Tymoczko interscalar \
+             transposition is still computed correctly, but traditional bass-note \
+             inversion (via get_chord_notes) may be more appropriate for close-voiced \
+             tertian chords."
+                .to_string(),
+        )
+    } else {
+        None
+    };
+
     Ok(GetOthChordScaleResponse {
+        inversion_method: "tymoczko_interscalar_transposition".to_string(),
+        inversion_method_note: "Each step moves all voices to the next chord-scale degree. \
+                                Traditional bass-rotation inversion is incompatible with the \
+                                [6,8] constraint (Theorem 1, §19)."
+            .to_string(),
         voiced_chord: voiced_info,
         chord_scale: cs_info,
         orbit: orbit_obj,
@@ -687,6 +711,7 @@ pub fn get_oth_chord_scale(args: GetOthChordScaleArgs) -> Result<GetOthChordScal
         fiber_class: fc,
         inversions_in_6_8: in_6_8_count,
         total_cycle_cost: total_cost,
+        note,
     })
 }
 

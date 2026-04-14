@@ -78,7 +78,11 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
             ),
             make_tool(
                 "get_chord_notes",
-                "Compute the notes of a chord given root, quality, and optional number/inversion",
+                "Compute the notes of a chord given root, quality, and optional \
+                 number/inversion. Note: the inversion parameter uses traditional \
+                 octave-transfer (bass-note rotation), correct for close-voiced \
+                 tertian chords. For quintal/quartal chord inversions via Tymoczko \
+                 interscalar transposition, use get_oth_chord_scale.",
                 json!({
                     "type": "object",
                     "properties": {
@@ -96,7 +100,13 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                         },
                         "inversion": {
                             "type": "integer",
-                            "description": "Inversion number (0 = root position, 1 = first inversion, etc.)"
+                            "description": "Traditional bass-note inversion (0 = root position, \
+                                            1 = first inversion, etc.). Rotates which chord \
+                                            tone is in the bass — correct for close-voiced \
+                                            tertian chords (triads, seventh chords). For \
+                                            Tymoczko interscalar transposition of spread \
+                                            voicings (quintal/quartal chords), use \
+                                            get_oth_chord_scale instead."
                         }
                     },
                     "required": ["root", "quality"]
@@ -461,8 +471,12 @@ impl ToolRegistry for OthToolsRegistry {
             ),
             make_tool(
                 "get_oth_chord_scale",
-                "Compute the Tymoczko chord scale and full inversion cycle for a \
-                 voiced chord, with L1 distances and fiber class",
+                "Compute the Tymoczko chord scale and full interscalar transposition \
+                 inversion cycle for a voiced chord. This is the geometrically correct \
+                 inversion method for spread voicings (quintal/quartal stacks). Each \
+                 inversion step moves every voice to the next chord-scale degree in its \
+                 local register. NOT the same as traditional bass-note inversion — for \
+                 that, use get_chord_notes with the inversion parameter.",
                 json!({
                     "type": "object",
                     "properties": {

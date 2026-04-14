@@ -87,6 +87,8 @@ pub struct GetChordNotesResponse {
     pub notes: Vec<String>,
     pub quality: String,
     pub number: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub warning: Option<String>,
 }
 
 pub fn get_chord_notes(args: GetChordNotesArgs) -> Result<GetChordNotesResponse> {
@@ -100,10 +102,31 @@ pub fn get_chord_notes(args: GetChordNotesArgs) -> Result<GetChordNotesResponse>
         chord.inversion = inv;
     }
     let notes: Vec<String> = chord.notes().iter().map(note_to_string).collect();
+
+    // Warn if inversion was requested on a chord with wide intervals.
+    // Traditional bass-note inversion (rotate_left) produces musically
+    // unnatural voicings for spread chords (quintal/quartal stacks).
+    let warning = if args.inversion.is_some()
+        && args.inversion != Some(0)
+        && chord.intervals.iter().any(|i| i.semitone_count > 8)
+    {
+        Some(
+            "This chord contains intervals wider than an augmented fifth. \
+             Traditional bass-note inversion (rotate_left) may produce musically \
+             unnatural voicings for spread chords. For geometrically correct \
+             inversion of quintal/quartal voicings, use get_oth_chord_scale with \
+             MIDI pitches instead."
+                .to_string(),
+        )
+    } else {
+        None
+    };
+
     Ok(GetChordNotesResponse {
         notes,
         quality: format!("{:?}", chord.quality),
         number: format!("{:?}", chord.number),
+        warning,
     })
 }
 
