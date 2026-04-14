@@ -9,39 +9,20 @@ use std::sync::Arc;
 use serde_json::{json, Value};
 
 use fabryk_mcp::{
-    model::{CallToolResult, Content, ErrorCode, ErrorData, Tool},
-    CompositeRegistry, FabrykMcpServer, ToolRegistry, ToolResult,
+    model::{ErrorCode, ErrorData, Tool},
+    make_tool, serialize_response,
+    CompositeRegistry, FabrykMcpServer, McpErrorContextExt, ToolRegistry, ToolResult,
 };
 
-use crate::error::McpErrorContextExt;
 use crate::state::AppState;
 use crate::tools;
 
 // ============================================================================
-// Helper functions (for MusicTheoryToolsRegistry)
+// Helper function
 // ============================================================================
 
-fn make_tool(name: &str, description: &str, schema: Value) -> Tool {
-    let input_schema = match schema {
-        Value::Object(map) => map,
-        _ => serde_json::Map::new(),
-    };
-    Tool::new(name.to_string(), description.to_string(), input_schema)
-}
-
-fn serialize_response<T: serde::Serialize>(value: &T) -> Result<CallToolResult, ErrorData> {
-    let json = serde_json::to_string_pretty(value).map_err(|e| {
-        ErrorData::new(
-            ErrorCode::INTERNAL_ERROR,
-            format!("Serialization error: {}", e),
-            None,
-        )
-    })?;
-    Ok(CallToolResult::success(vec![Content::text(json)]))
-}
-
 fn to_mcp_error(e: crate::error::Error, context: &str) -> ErrorData {
-    e.to_mcp_error(context)
+    e.to_mcp_error_with_context(context)
 }
 
 // ============================================================================
@@ -851,24 +832,7 @@ impl ToolRegistry for OthToolsRegistry {
 // ============================================================================
 
 #[cfg(feature = "graph")]
-/// Extra JSON schema properties for music-theory-specific graph tool filters.
-///
-/// Used by `GraphTools::with_extra_schema` to add `tier` and `min_confidence`
-/// parameters to graph query tools that support domain-specific filtering.
-fn tier_confidence_schema() -> serde_json::Value {
-    serde_json::json!({
-        "tier": {
-            "type": "string",
-            "enum": ["foundational", "intermediate", "advanced"],
-            "description": "Filter results by prerequisite depth tier"
-        },
-        "min_confidence": {
-            "type": "string",
-            "enum": ["high", "medium", "low"],
-            "description": "Minimum extraction confidence threshold"
-        }
-    })
-}
+use fabryk_mcp::tier_confidence_schema;
 
 /// Build the Music Theory MCP server from application state.
 ///

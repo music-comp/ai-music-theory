@@ -20,12 +20,12 @@ use std::fmt;
 use std::path::{Path, PathBuf};
 use std::process::Command;
 use std::str::FromStr;
-use std::time::SystemTime;
 
 use serde::{Deserialize, Serialize};
 
 use crate::config::Config;
 use crate::error::{Error, Result};
+use fabryk::core::util::time::iso8601_now;
 
 /// Default base URL for GitHub Release assets.
 /// Override via Config's `cache.release_base_url` if available.
@@ -486,50 +486,6 @@ pub fn parse_backend_arg(arg: &str) -> Result<Vec<CacheBackend>> {
     Ok(vec![backend])
 }
 
-// ---------------------------------------------------------------------------
-// Internal helpers
-// ---------------------------------------------------------------------------
-
-/// Return the current time as an ISO 8601 string (UTC).
-///
-/// Uses `std::time::SystemTime` to avoid requiring chrono as a non-optional
-/// dependency. The format is `YYYY-MM-DDTHH:MM:SSZ`.
-fn iso8601_now() -> String {
-    let now = SystemTime::now();
-    let duration = now
-        .duration_since(SystemTime::UNIX_EPOCH)
-        .unwrap_or_default();
-    let secs = duration.as_secs();
-
-    // Decompose seconds since epoch into date/time components.
-    let days = secs / 86400;
-    let time_of_day = secs % 86400;
-    let hours = time_of_day / 3600;
-    let minutes = (time_of_day % 3600) / 60;
-    let seconds = time_of_day % 60;
-
-    // Convert days since epoch to year/month/day.
-    let (year, month, day) = days_to_date(days);
-
-    format!("{year:04}-{month:02}-{day:02}T{hours:02}:{minutes:02}:{seconds:02}Z")
-}
-
-/// Convert days since Unix epoch to (year, month, day).
-fn days_to_date(days_since_epoch: u64) -> (u64, u64, u64) {
-    // Algorithm based on Howard Hinnant's civil_from_days.
-    let z = days_since_epoch as i64 + 719468;
-    let era = if z >= 0 { z } else { z - 146096 } / 146097;
-    let doe = (z - era * 146097) as u64; // day of era [0, 146096]
-    let yoe = (doe - doe / 1460 + doe / 36524 - doe / 146096) / 365; // year of era [0, 399]
-    let y = yoe as i64 + era * 400;
-    let doy = doe - (365 * yoe + yoe / 4 - yoe / 100); // day of year [0, 365]
-    let mp = (5 * doy + 2) / 153; // month index [0, 11]
-    let d = doy - (153 * mp + 2) / 5 + 1; // day [1, 31]
-    let m = if mp < 10 { mp + 3 } else { mp - 9 }; // month [1, 12]
-    let y = if m <= 2 { y + 1 } else { y };
-    (y as u64, m, d)
-}
-
 // ===========================================================================
 // Tests
 // ===========================================================================
@@ -781,36 +737,6 @@ mod tests {
 
         manifest.set(&CacheBackend::Vector, entry);
         assert!(manifest.get(&CacheBackend::Vector).is_some());
-    }
-
-    // -----------------------------------------------------------------------
-    // ISO 8601 timestamp helper
-    // -----------------------------------------------------------------------
-
-    #[test]
-    fn test_iso8601_now_format() {
-        let ts = iso8601_now();
-        // Should match YYYY-MM-DDTHH:MM:SSZ pattern.
-        assert_eq!(ts.len(), 20, "Timestamp should be 20 chars: {ts}");
-        assert!(ts.ends_with('Z'));
-        assert_eq!(&ts[4..5], "-");
-        assert_eq!(&ts[7..8], "-");
-        assert_eq!(&ts[10..11], "T");
-        assert_eq!(&ts[13..14], ":");
-        assert_eq!(&ts[16..17], ":");
-    }
-
-    #[test]
-    fn test_days_to_date_epoch() {
-        let (y, m, d) = days_to_date(0);
-        assert_eq!((y, m, d), (1970, 1, 1));
-    }
-
-    #[test]
-    fn test_days_to_date_known() {
-        // 2025-01-01 is 20089 days after epoch.
-        let (y, m, d) = days_to_date(20089);
-        assert_eq!((y, m, d), (2025, 1, 1));
     }
 
     // -----------------------------------------------------------------------

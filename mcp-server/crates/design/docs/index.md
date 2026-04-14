@@ -6,6 +6,8 @@ This index is automatically generated. Do not edit manually.
 
 | Number | Title | State | Updated |
 |--------|-------|-------|----------|
+| 0017 | Fabryk Migration Plan: ai-music-theory MCP Server | Active | 2026-04-14 |
+| 0016 | Code Audit Report: PoC MCP Server — Final Fabryk Extraction | Final | 2026-04-14 |
 | 0015 | Complete the Fabryk Extraction — Implementation Plan | Active | 2026-04-03 |
 | 0014 | Quintal Fiber Bundle Implementation: Project Plan | Under Review | 2026-04-02 |
 | 0014 | Music Theory Computational Tools | Active | 2026-03-21 |
@@ -25,12 +27,9 @@ This index is automatically generated. Do not edit manually.
 
 ## Documents by State
 
-### Under Review
-
-- [0014 - Quintal Fiber Bundle Implementation: Project Plan](02-under-review/0014-quintal-fiber-bundle-implementation-project-plan.md)
-
 ### Active
 
+- [0017 - Fabryk Migration Plan: ai-music-theory MCP Server](05-active/0017-fabryk-migration-plan-ai-music-theory-mcp-server.md)
 - [0015 - Complete the Fabryk Extraction — Implementation Plan](05-active/0015-complete-the-fabryk-extraction-implementation-plan.md)
 - [0014 - Music Theory Computational Tools](05-active/0014-music-theory-computational-tools.md)
 - [0013 - Fabryk Extraction: Project Plan Overview](05-active/0013-fabryk-extraction-project-plan-overview.md)
@@ -41,6 +40,7 @@ This index is automatically generated. Do not edit manually.
 
 ### Final
 
+- [0016 - Code Audit Report: PoC MCP Server — Final Fabryk Extraction](06-final/0016-code-audit-report-poc-mcp-server-final-fabryk-extraction.md)
 - [0012 - Fabryk Extraction Audit: Amendment & Refinements](06-final/0012-fabryk-extraction-audit-amendment-refinements.md)
 - [0008 - Graph Database Phase 2 - Query Tools & Algorithms](06-final/0008-graph-database-phase-2-query-tools-algorithms.md)
 - [0007 - Graph Database Phase 1 - Generation & Infrastructure](06-final/0007-graph-database-phase-1-generation-infrastructure.md)
