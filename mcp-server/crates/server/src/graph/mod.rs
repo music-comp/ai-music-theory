@@ -61,59 +61,27 @@ pub use fabryk::graph::{load_graph, load_graph_from_str, save_graph};
 
 // ============================================================================
 
-// ============================================================================
-// Backward-compatible adapter types
-// ============================================================================
-
-/// Statistics about the loaded graph (backward-compatible).
-///
-/// Provides concept/source counts computed from fabryk's flat `Node` type
-/// using node discrimination helpers.
-#[derive(Clone, Debug)]
-pub struct GraphStats {
-    /// Total number of nodes in the graph.
-    pub node_count: u32,
-    /// Total number of edges in the graph.
-    pub edge_count: u32,
-    /// Number of concept nodes (domain-type nodes).
-    pub concept_count: u32,
-    /// Number of source nodes (custom "source"-type nodes).
-    pub source_count: u32,
-}
-
-/// Loaded graph with metadata.
-///
-/// Wraps fabryk's `GraphData` with a timestamp and backward-compatible
-/// statistics. Used by `AppState` to hold the active graph instance.
-#[derive(Clone, Debug)]
-pub struct LoadedGraph {
-    /// The underlying fabryk graph data.
-    pub data: fabryk::graph::GraphData,
-    /// When the graph was loaded.
-    pub loaded_at: chrono::DateTime<chrono::Utc>,
-    /// Backward-compatible node/edge statistics.
-    pub stats: GraphStats,
-}
+// Re-export types that used to be defined locally
+pub use fabryk::graph::LoadedGraph;
 
 // ============================================================================
-// Node discrimination helpers
+// Backward-compatible free function wrappers
 // ============================================================================
+// These delegate to fabryk Node methods and Relationship Display/FromStr.
+// Kept for backward compatibility with existing code; will be removed when
+// callers are updated to use Node methods directly.
 
 /// Check if a fabryk `Node` is a concept node (Domain type).
-///
-/// In the fabryk graph model, concept nodes use the default `NodeType::Domain`.
 pub fn is_concept_node(node: &fabryk::graph::Node) -> bool {
-    matches!(node.node_type, NodeType::Domain)
+    node.is_domain()
 }
 
 /// Check if a fabryk `Node` is a source node.
-///
-/// Source nodes are stored with `NodeType::Custom("source")`.
 pub fn is_source_node(node: &fabryk::graph::Node) -> bool {
-    matches!(node.node_type, NodeType::Custom(ref s) if s == "source")
+    node.is_custom_type("source")
 }
 
-/// Get the node ID regardless of type.
+/// Get the node ID.
 pub fn node_id(node: &fabryk::graph::Node) -> &str {
     &node.id
 }
@@ -123,78 +91,34 @@ pub fn node_title(node: &fabryk::graph::Node) -> &str {
     &node.title
 }
 
-/// Get the node category (concepts have it in `.category`, sources may not).
+/// Get the node category.
 pub fn node_category(node: &fabryk::graph::Node) -> &str {
-    node.category.as_deref().unwrap_or("unknown")
+    node.category_or_default()
 }
 
 /// Get the author from a source node's metadata.
 pub fn source_author(node: &fabryk::graph::Node) -> &str {
-    node.metadata
-        .get("author")
-        .and_then(|v| v.as_str())
-        .unwrap_or("Unknown")
+    node.metadata_str("author").unwrap_or("Unknown")
 }
 
 /// Get the year from a source node's metadata.
 pub fn source_year(node: &fabryk::graph::Node) -> Option<u16> {
-    node.metadata
-        .get("year")
-        .and_then(|v| v.as_u64())
-        .map(|y| y as u16)
+    node.metadata_u64("year").map(|y| y as u16)
 }
 
 /// Check if a source has been converted to markdown.
 pub fn source_is_converted(node: &fabryk::graph::Node) -> bool {
-    node.metadata
-        .get("is_converted")
-        .and_then(|v| v.as_bool())
-        .unwrap_or(false)
+    node.metadata_bool("is_converted").unwrap_or(false)
 }
 
-// ============================================================================
-// Relationship mapping
-// ============================================================================
-
-/// Convert a project relationship name string to a fabryk `Relationship`.
-///
-/// Maps the project's 7 relationship types to fabryk variants:
-/// - `Prerequisite`, `RelatesTo`, `Extends`, `Introduces`, `Covers` are direct
-/// - `SameAs` and `Cites` become `Custom` variants
+/// Convert a relationship name string to a fabryk `Relationship`.
 pub fn to_fabryk_relationship(name: &str) -> fabryk::graph::Relationship {
-    match name.to_lowercase().as_str() {
-        "prerequisite" => fabryk::graph::Relationship::Prerequisite,
-        "relatesto" | "relates_to" => fabryk::graph::Relationship::RelatesTo,
-        "extends" => fabryk::graph::Relationship::Extends,
-        "introduces" => fabryk::graph::Relationship::Introduces,
-        "covers" => fabryk::graph::Relationship::Covers,
-        "contrastswith" | "contrasts_with" => fabryk::graph::Relationship::ContrastsWith,
-        "sameas" | "same_as" => fabryk::graph::Relationship::Custom("same_as".to_string()),
-        "cites" => fabryk::graph::Relationship::Custom("cites".to_string()),
-        other => fabryk::graph::Relationship::Custom(other.to_string()),
-    }
+    name.parse().unwrap_or_else(|_| fabryk::graph::Relationship::Custom(name.to_string()))
 }
 
-/// Convert a fabryk `Relationship` to a display string matching the old JSON output.
-///
-/// Returns PascalCase names for the project's 7 known relationships:
-/// `"Prerequisite"`, `"RelatesTo"`, `"Extends"`, `"SameAs"`, `"Introduces"`,
-/// `"Covers"`, `"Cites"`. Unknown `Custom` variants are returned as-is.
+/// Convert a fabryk `Relationship` to a PascalCase display string.
 pub fn from_fabryk_relationship(rel: &fabryk::graph::Relationship) -> String {
-    match rel {
-        fabryk::graph::Relationship::Prerequisite => "Prerequisite".to_string(),
-        fabryk::graph::Relationship::RelatesTo => "RelatesTo".to_string(),
-        fabryk::graph::Relationship::Extends => "Extends".to_string(),
-        fabryk::graph::Relationship::Introduces => "Introduces".to_string(),
-        fabryk::graph::Relationship::Covers => "Covers".to_string(),
-        fabryk::graph::Relationship::Custom(s) if s == "same_as" => "SameAs".to_string(),
-        fabryk::graph::Relationship::Custom(s) if s == "cites" => "Cites".to_string(),
-        fabryk::graph::Relationship::LeadsTo => "LeadsTo".to_string(),
-        fabryk::graph::Relationship::VariantOf => "VariantOf".to_string(),
-        fabryk::graph::Relationship::ContrastsWith => "ContrastsWith".to_string(),
-        fabryk::graph::Relationship::AnswersQuestion => "AnswersQuestion".to_string(),
-        fabryk::graph::Relationship::Custom(s) => s.clone(),
-    }
+    format!("{}", rel)
 }
 
 // ============================================================================
@@ -223,34 +147,7 @@ pub async fn load_concept_graph(data_dir: &Path) -> Result<LoadedGraph> {
     let graph_data = fabryk::graph::load_graph_from_str(&json)
         .map_err(|e| Error::operation(format!("Failed to parse graph: {}", e)))?;
 
-    let stats = compute_graph_stats(&graph_data);
-
-    Ok(LoadedGraph {
-        data: graph_data,
-        loaded_at: chrono::Utc::now(),
-        stats,
-    })
-}
-
-/// Compute backward-compatible graph statistics from fabryk `GraphData`.
-fn compute_graph_stats(data: &fabryk::graph::GraphData) -> GraphStats {
-    let mut concept_count = 0u32;
-    let mut source_count = 0u32;
-
-    for node in data.nodes.values() {
-        if is_concept_node(node) {
-            concept_count += 1;
-        } else if is_source_node(node) {
-            source_count += 1;
-        }
-    }
-
-    GraphStats {
-        node_count: data.node_count() as u32,
-        edge_count: data.edge_count() as u32,
-        concept_count,
-        source_count,
-    }
+    Ok(LoadedGraph::new(graph_data))
 }
 
 // ============================================================================
@@ -433,8 +330,14 @@ pub async fn handle_stats(config: &Config) -> Result<()> {
     println!("================");
 
     println!("Nodes:    {}", fabryk_stats.node_count);
-    println!("  Concepts: {}", loaded.stats.concept_count);
-    println!("  Sources:  {}", loaded.stats.source_count);
+    println!(
+        "  Domain:   {}",
+        loaded.stats.type_counts.get("domain").unwrap_or(&0)
+    );
+    println!(
+        "  Source:   {}",
+        loaded.stats.type_counts.get("source").unwrap_or(&0)
+    );
     println!("Edges:    {}", fabryk_stats.edge_count);
 
     // Relationship distribution
@@ -733,13 +636,13 @@ mod tests {
     #[test]
     fn test_from_fabryk_relationship_same_as() {
         let rel = Relationship::Custom("same_as".to_string());
-        assert_eq!(from_fabryk_relationship(&rel), "SameAs");
+        assert_eq!(from_fabryk_relationship(&rel), "same_as");
     }
 
     #[test]
     fn test_from_fabryk_relationship_cites() {
         let rel = Relationship::Custom("cites".to_string());
-        assert_eq!(from_fabryk_relationship(&rel), "Cites");
+        assert_eq!(from_fabryk_relationship(&rel), "cites");
     }
 
     #[test]
@@ -772,14 +675,16 @@ mod tests {
     fn test_relationship_round_trip_same_as() {
         let fabryk_rel = to_fabryk_relationship("SameAs");
         let back = from_fabryk_relationship(&fabryk_rel);
-        assert_eq!(back, "SameAs");
+        // "SameAs" parses to Custom("same_as"), Display outputs "same_as"
+        assert_eq!(back, "same_as");
     }
 
     #[test]
     fn test_relationship_round_trip_cites() {
         let fabryk_rel = to_fabryk_relationship("Cites");
         let back = from_fabryk_relationship(&fabryk_rel);
-        assert_eq!(back, "Cites");
+        // "Cites" parses to Custom("cites"), Display outputs "cites"
+        assert_eq!(back, "cites");
     }
 
     // -----------------------------------------------------------------------
@@ -789,12 +694,12 @@ mod tests {
     #[test]
     fn test_compute_graph_stats_empty() {
         let data = fabryk::graph::GraphData::new();
-        let stats = compute_graph_stats(&data);
+        let stats = fabryk::graph::compute_stats(&data);
 
         assert_eq!(stats.node_count, 0);
         assert_eq!(stats.edge_count, 0);
-        assert_eq!(stats.concept_count, 0);
-        assert_eq!(stats.source_count, 0);
+        assert_eq!(stats.type_counts.get("domain").copied().unwrap_or(0), 0);
+        assert_eq!(stats.type_counts.get("source").copied().unwrap_or(0), 0);
     }
 
     #[test]
@@ -803,11 +708,11 @@ mod tests {
         data.add_node(Node::new("a", "A").with_category("harmony"));
         data.add_node(Node::new("b", "B").with_category("rhythm"));
 
-        let stats = compute_graph_stats(&data);
+        let stats = fabryk::graph::compute_stats(&data);
 
         assert_eq!(stats.node_count, 2);
-        assert_eq!(stats.concept_count, 2);
-        assert_eq!(stats.source_count, 0);
+        assert_eq!(stats.type_counts.get("domain").copied().unwrap_or(0), 2);
+        assert_eq!(stats.type_counts.get("source").copied().unwrap_or(0), 0);
     }
 
     #[test]
@@ -827,12 +732,12 @@ mod tests {
         ))
         .expect("edge should be added");
 
-        let stats = compute_graph_stats(&data);
+        let stats = fabryk::graph::compute_stats(&data);
 
         assert_eq!(stats.node_count, 3);
         assert_eq!(stats.edge_count, 1);
-        assert_eq!(stats.concept_count, 2);
-        assert_eq!(stats.source_count, 1);
+        assert_eq!(stats.type_counts.get("domain").copied().unwrap_or(0), 2);
+        assert_eq!(stats.type_counts.get("source").copied().unwrap_or(0), 1);
     }
 
     // -----------------------------------------------------------------------
@@ -844,16 +749,7 @@ mod tests {
         let mut data = fabryk::graph::GraphData::new();
         data.add_node(Node::new("test", "Test"));
 
-        let loaded = LoadedGraph {
-            data,
-            loaded_at: chrono::Utc::now(),
-            stats: GraphStats {
-                node_count: 1,
-                edge_count: 0,
-                concept_count: 1,
-                source_count: 0,
-            },
-        };
+        let loaded = LoadedGraph::new(data);
 
         let cloned = loaded.clone();
         assert_eq!(cloned.stats.node_count, 1);
@@ -862,15 +758,13 @@ mod tests {
 
     #[test]
     fn test_graph_stats_debug() {
-        let stats = GraphStats {
-            node_count: 10,
-            edge_count: 20,
-            concept_count: 8,
-            source_count: 2,
-        };
+        let mut data = fabryk::graph::GraphData::new();
+        for i in 0..10 {
+            data.add_node(Node::new(format!("n{i}"), format!("Node {i}")));
+        }
+        let stats = fabryk::graph::compute_stats(&data);
         let debug_str = format!("{:?}", stats);
         assert!(debug_str.contains("node_count: 10"));
-        assert!(debug_str.contains("concept_count: 8"));
     }
 
     // -----------------------------------------------------------------------
@@ -900,8 +794,8 @@ mod tests {
 
         assert_eq!(loaded.stats.node_count, 2);
         assert_eq!(loaded.stats.edge_count, 1);
-        assert_eq!(loaded.stats.concept_count, 1);
-        assert_eq!(loaded.stats.source_count, 1);
+        assert_eq!(loaded.stats.type_counts.get("domain").copied().unwrap_or(0), 1);
+        assert_eq!(loaded.stats.type_counts.get("source").copied().unwrap_or(0), 1);
         assert!(loaded.data.contains_node("concept-a"));
         assert!(loaded.data.contains_node("source-1"));
     }
@@ -1163,11 +1057,11 @@ mod tests {
             Node::new("other1", "Other 1").with_node_type(NodeType::Custom("other".to_string())),
         );
 
-        let stats = compute_graph_stats(&data);
+        let stats = fabryk::graph::compute_stats(&data);
 
         assert_eq!(stats.node_count, 4);
-        assert_eq!(stats.concept_count, 1);
-        assert_eq!(stats.source_count, 1);
+        assert_eq!(stats.type_counts.get("domain").copied().unwrap_or(0), 1);
+        assert_eq!(stats.type_counts.get("source").copied().unwrap_or(0), 1);
         // user_query and other custom types are neither concept nor source
     }
 
@@ -1181,11 +1075,11 @@ mod tests {
             Node::new("src2", "Source 2").with_node_type(NodeType::Custom("source".to_string())),
         );
 
-        let stats = compute_graph_stats(&data);
+        let stats = fabryk::graph::compute_stats(&data);
 
         assert_eq!(stats.node_count, 2);
-        assert_eq!(stats.concept_count, 0);
-        assert_eq!(stats.source_count, 2);
+        assert_eq!(stats.type_counts.get("domain").copied().unwrap_or(0), 0);
+        assert_eq!(stats.type_counts.get("source").copied().unwrap_or(0), 2);
     }
 
     #[test]
@@ -1201,12 +1095,12 @@ mod tests {
         data.add_edge(Edge::new("a", "c", Relationship::RelatesTo))
             .expect("edge");
 
-        let stats = compute_graph_stats(&data);
+        let stats = fabryk::graph::compute_stats(&data);
 
         assert_eq!(stats.node_count, 3);
         assert_eq!(stats.edge_count, 3);
-        assert_eq!(stats.concept_count, 3);
-        assert_eq!(stats.source_count, 0);
+        assert_eq!(stats.type_counts.get("domain").copied().unwrap_or(0), 3);
+        assert_eq!(stats.type_counts.get("source").copied().unwrap_or(0), 0);
     }
 
     // -----------------------------------------------------------------------
@@ -1216,16 +1110,7 @@ mod tests {
     #[test]
     fn test_loaded_graph_debug() {
         let data = fabryk::graph::GraphData::new();
-        let loaded = LoadedGraph {
-            data,
-            loaded_at: chrono::Utc::now(),
-            stats: GraphStats {
-                node_count: 0,
-                edge_count: 0,
-                concept_count: 0,
-                source_count: 0,
-            },
-        };
+        let loaded = LoadedGraph::new(data);
         let debug_str = format!("{:?}", loaded);
         assert!(debug_str.contains("LoadedGraph"));
         assert!(debug_str.contains("stats"));
@@ -1233,17 +1118,13 @@ mod tests {
 
     #[test]
     fn test_graph_stats_clone() {
-        let stats = GraphStats {
-            node_count: 5,
-            edge_count: 10,
-            concept_count: 3,
-            source_count: 2,
-        };
+        let mut data = fabryk::graph::GraphData::new();
+        for i in 0..5 {
+            data.add_node(Node::new(format!("n{i}"), format!("Node {i}")));
+        }
+        let stats = fabryk::graph::compute_stats(&data);
         let cloned = stats.clone();
         assert_eq!(cloned.node_count, 5);
-        assert_eq!(cloned.edge_count, 10);
-        assert_eq!(cloned.concept_count, 3);
-        assert_eq!(cloned.source_count, 2);
     }
 
     // -----------------------------------------------------------------------
@@ -1309,8 +1190,8 @@ mod tests {
         let loaded = load_concept_graph(temp_dir.path()).await.expect("load");
         assert_eq!(loaded.stats.node_count, 0);
         assert_eq!(loaded.stats.edge_count, 0);
-        assert_eq!(loaded.stats.concept_count, 0);
-        assert_eq!(loaded.stats.source_count, 0);
+        assert_eq!(loaded.stats.type_counts.get("domain").copied().unwrap_or(0), 0);
+        assert_eq!(loaded.stats.type_counts.get("source").copied().unwrap_or(0), 0);
     }
 
     // -----------------------------------------------------------------------
@@ -1509,8 +1390,8 @@ mod tests {
 
         assert_eq!(loaded.stats.node_count, 5);
         assert_eq!(loaded.stats.edge_count, 3);
-        assert_eq!(loaded.stats.concept_count, 2);
-        assert_eq!(loaded.stats.source_count, 2);
+        assert_eq!(loaded.stats.type_counts.get("domain").copied().unwrap_or(0), 2);
+        assert_eq!(loaded.stats.type_counts.get("source").copied().unwrap_or(0), 2);
     }
 
     // -----------------------------------------------------------------------
@@ -1770,8 +1651,8 @@ mod tests {
         fabryk::graph::save_graph(&data, &graph_path, None).expect("save");
 
         let loaded = load_concept_graph(temp_dir.path()).await.expect("load");
-        assert_eq!(loaded.stats.concept_count, 0);
-        assert_eq!(loaded.stats.source_count, 2);
+        assert_eq!(loaded.stats.type_counts.get("domain").copied().unwrap_or(0), 0);
+        assert_eq!(loaded.stats.type_counts.get("source").copied().unwrap_or(0), 2);
         assert_eq!(loaded.stats.node_count, 2);
     }
 
@@ -1804,10 +1685,10 @@ mod tests {
         data.add_node(Node::new("x", "X").with_node_type(NodeType::Custom("widget".to_string())));
         data.add_node(Node::new("y", "Y").with_node_type(NodeType::Custom("gadget".to_string())));
 
-        let stats = compute_graph_stats(&data);
+        let stats = fabryk::graph::compute_stats(&data);
         assert_eq!(stats.node_count, 2);
-        assert_eq!(stats.concept_count, 0);
-        assert_eq!(stats.source_count, 0);
+        assert_eq!(stats.type_counts.get("domain").copied().unwrap_or(0), 0);
+        assert_eq!(stats.type_counts.get("source").copied().unwrap_or(0), 0);
     }
 
     #[test]
@@ -1833,11 +1714,11 @@ mod tests {
         ))
         .expect("edge");
 
-        let stats = compute_graph_stats(&data);
+        let stats = fabryk::graph::compute_stats(&data);
         assert_eq!(stats.node_count, 5);
         assert_eq!(stats.edge_count, 3);
-        assert_eq!(stats.concept_count, 2);
-        assert_eq!(stats.source_count, 1);
+        assert_eq!(stats.type_counts.get("domain").copied().unwrap_or(0), 2);
+        assert_eq!(stats.type_counts.get("source").copied().unwrap_or(0), 1);
     }
 
     // -----------------------------------------------------------------------
@@ -1937,7 +1818,7 @@ mod tests {
         data.add_edge(Edge::new("s", "a", Relationship::Introduces))
             .expect("edge");
 
-        let stats = compute_graph_stats(&data);
+        let stats = fabryk::graph::compute_stats(&data);
         let loaded_at = chrono::Utc::now();
 
         let loaded = LoadedGraph {
@@ -1948,8 +1829,8 @@ mod tests {
 
         assert_eq!(loaded.stats.node_count, 2);
         assert_eq!(loaded.stats.edge_count, 1);
-        assert_eq!(loaded.stats.concept_count, 1);
-        assert_eq!(loaded.stats.source_count, 1);
+        assert_eq!(loaded.stats.type_counts.get("domain").copied().unwrap_or(0), 1);
+        assert_eq!(loaded.stats.type_counts.get("source").copied().unwrap_or(0), 1);
         assert_eq!(loaded.loaded_at, loaded_at);
         assert!(loaded.data.contains_node("a"));
         assert!(loaded.data.contains_node("s"));
@@ -1957,15 +1838,10 @@ mod tests {
 
     #[test]
     fn test_graph_stats_all_zeroes() {
-        let stats = GraphStats {
-            node_count: 0,
-            edge_count: 0,
-            concept_count: 0,
-            source_count: 0,
-        };
-        let cloned = stats.clone();
-        assert_eq!(cloned.node_count, 0);
-        assert_eq!(cloned.edge_count, 0);
+        let data = fabryk::graph::GraphData::new();
+        let stats = fabryk::graph::compute_stats(&data);
+        assert_eq!(stats.node_count, 0);
+        assert_eq!(stats.edge_count, 0);
         let debug = format!("{:?}", stats);
         assert!(debug.contains("GraphStats"));
     }

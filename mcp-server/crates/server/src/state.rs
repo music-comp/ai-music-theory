@@ -309,11 +309,11 @@ fn start_graph_loading(state: Arc<AppState>, data_dir: std::path::PathBuf) {
         match crate::graph::load_concept_graph(&data_dir).await {
             Ok(loaded) => {
                 log::info!(
-                    "Concept graph loaded: {} nodes, {} edges ({} concepts, {} sources)",
+                    "Concept graph loaded: {} nodes, {} edges ({} domain, {} source)",
                     loaded.stats.node_count,
                     loaded.stats.edge_count,
-                    loaded.stats.concept_count,
-                    loaded.stats.source_count
+                    loaded.stats.type_counts.get("domain").unwrap_or(&0),
+                    loaded.stats.type_counts.get("source").unwrap_or(&0),
                 );
 
                 // Update the shared tokio::sync::RwLock<GraphData> for GraphTools
