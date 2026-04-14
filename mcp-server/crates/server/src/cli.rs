@@ -778,7 +778,7 @@ async fn handle_cache_command(
         CacheSubcommand::Download { backend, force } => {
             let backends = crate::cache::parse_backend_arg(&backend)?;
             for b in &backends {
-                crate::cache::download_cache(b, &config, force)?;
+                crate::cache::download_project_cache(b, &config, force)?;
             }
             Ok(())
         }
@@ -789,11 +789,9 @@ async fn handle_cache_command(
         }
         CacheSubcommand::Package { backend, output } => {
             let backends = crate::cache::parse_backend_arg(&backend)?;
-            let version = env!("CARGO_PKG_VERSION");
-            let base_path = config.paths.base_path()?;
             let output_dir = std::path::PathBuf::from(output);
             for b in &backends {
-                let path = crate::cache::package_cache(b, &base_path, &output_dir, version)?;
+                let path = crate::cache::package_project_cache(b, &config, &output_dir)?;
                 println!("Packaged: {}", path.display());
             }
             Ok(())
