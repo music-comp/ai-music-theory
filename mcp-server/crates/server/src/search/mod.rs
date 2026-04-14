@@ -1,42 +1,21 @@
 //! Search functionality delegating to fabryk-fts.
 //!
-//! This module provides a thin wrapper around `fabryk::fts` types, adapting
-//! them to the project's existing API surface. It replaces the original 11-file
-//! search module with delegation to the fabryk framework.
-//!
-//! # Architecture
-//!
-//! - **`SearchBackend` trait**: Re-exported from `fabryk::fts::SearchBackend`.
-//!   Uses `SearchParams` / `SearchResults` instead of the old
-//!   `SearchConceptsParams` / `Vec<SearchResult>` contract.
-//! - **`SimpleSearch`**: Project-specific implementation that scans concept card
-//!   files and uses `fabryk::fts::SearchDocument` methods for matching.
-//! - **`TantivySearch`**: Re-exported from fabryk when the `fts` feature is
-//!   enabled.
-//! - **`build_index`** / **`is_index_fresh`**: Wrapper functions that bridge
-//!   the project's `Config` to fabryk's `IndexBuilder` / `IndexMetadata`.
-//! - **`IndexStats`** / **`IndexMetadata`**: Adapter types providing
-//!   backward-compatible field names on top of fabryk's types.
+//! This module re-exports fabryk's search types and provides thin wrappers
+//! that bridge the project's `Config` to fabryk's index building APIs.
 
 // ============================================================================
 // Re-exports from fabryk
 // ============================================================================
 
-// The SearchBackend trait (async fn search(SearchParams) -> Result<SearchResults>)
 pub use fabryk::fts::SearchBackend;
-
-// Types needed by state.rs
 pub use fabryk::fts::SearchParams;
-
-// SimpleSearch from fabryk (real implementation, not a stub)
 pub use fabryk::fts::SimpleSearch;
 
-// FTS-specific re-exports (only when feature enabled)
 #[cfg(feature = "fts")]
-pub use fabryk::fts::TantivySearch;
+pub use fabryk::fts::{IndexMetadata, IndexStats, TantivySearch};
 
 // ============================================================================
-// Config conversion
+// Config conversion (needed until Phase 3.1 unifies QueryMode)
 // ============================================================================
 
 /// Convert the project's `SearchConfig` to fabryk's `SearchConfig`.
@@ -85,122 +64,22 @@ pub fn to_fabryk_query_mode(mode: &crate::config::QueryMode) -> fabryk::fts::Que
 }
 
 // ============================================================================
-// IndexStats adapter (backward-compatible field names)
-// ============================================================================
-
-/// Statistics from index building.
-///
-/// Provides backward-compatible field names on top of fabryk's `IndexStats`.
-/// The project uses `files_found`, `indexed`, `errors` while fabryk uses
-/// `files_processed`, `documents_indexed`, `errors`.
-#[cfg(feature = "fts")]
-#[derive(Debug, Clone, Default)]
-pub struct IndexStats {
-    /// Total number of files found across all content types.
-    pub files_found: usize,
-    /// Total number of documents successfully indexed.
-    pub indexed: usize,
-    /// Total number of errors encountered.
-    pub errors: usize,
-    /// Per-type statistics.
-    pub concept_cards: usize,
-    pub source_chapters: usize,
-    pub unified_concepts: usize,
-    pub guides: usize,
-}
-
-#[cfg(feature = "fts")]
-impl From<fabryk::fts::IndexStats> for IndexStats {
-    fn from(fabryk_stats: fabryk::fts::IndexStats) -> Self {
-        Self {
-            files_found: fabryk_stats.files_processed,
-            indexed: fabryk_stats.documents_indexed,
-            errors: fabryk_stats.errors,
-            // fabryk's IndexStats doesn't track per-type counts;
-            // all indexed documents are counted as concept_cards for now.
-            concept_cards: fabryk_stats.documents_indexed,
-            source_chapters: 0,
-            unified_concepts: 0,
-            guides: 0,
-        }
-    }
-}
-
-#[cfg(feature = "fts")]
-impl std::ops::AddAssign for IndexStats {
-    fn add_assign(&mut self, other: Self) {
-        self.files_found += other.files_found;
-        self.indexed += other.indexed;
-        self.errors += other.errors;
-        self.concept_cards += other.concept_cards;
-        self.source_chapters += other.source_chapters;
-        self.unified_concepts += other.unified_concepts;
-        self.guides += other.guides;
-    }
-}
-
-// ============================================================================
-// IndexMetadata adapter (backward-compatible field names)
-// ============================================================================
-
-/// Index metadata with backward-compatible field names.
-///
-/// The project uses `doc_count` and `last_indexed: SystemTime` while fabryk
-/// uses `document_count` and `indexed_at: String` (ISO 8601).
-#[cfg(feature = "fts")]
-pub struct IndexMetadata {
-    inner: fabryk::fts::IndexMetadata,
-}
-
-#[cfg(feature = "fts")]
-impl IndexMetadata {
-    /// Load metadata from the index directory.
-    ///
-    /// Returns `Ok(None)` if the metadata file doesn't exist.
-    pub fn load(index_path: &std::path::Path) -> crate::error::Result<Option<Self>> {
-        match fabryk::fts::IndexMetadata::load(index_path) {
-            Ok(Some(inner)) => Ok(Some(Self { inner })),
-            Ok(None) => Ok(None),
-            Err(e) => Err(crate::error::Error::operation(e.to_string())),
-        }
-    }
-
-    /// Get the document count.
-    pub fn doc_count(&self) -> usize {
-        self.inner.document_count
-    }
-
-    /// Get the indexed-at timestamp as a formatted string.
-    pub fn indexed_at_display(&self) -> String {
-        self.inner.indexed_at.clone()
-    }
-
-    /// Get the schema version.
-    pub fn schema_version(&self) -> u32 {
-        self.inner.schema_version
-    }
-
-    /// Get the content hash.
-    pub fn content_hash(&self) -> &str {
-        &self.inner.content_hash
-    }
-}
-
-// ============================================================================
 // FTS wrapper functions
 // ============================================================================
 
 /// Build a full-text search index from all content types.
 ///
-/// Uses fabryk's `IndexBuilder` with fabryk's `ConceptCardDocumentExtractor`.
-/// Indexes content from all 4 content directories: concept_cards, sources_md,
-/// concepts_unified, and guides. Missing directories are silently skipped.
+/// Delegates to fabryk's `build_index_multi` with content directories resolved
+/// from the project's `Config`. Missing directories are silently skipped.
 ///
 /// # Errors
 ///
-/// Returns `Err` if index path resolution fails or all content directories are missing.
+/// Returns `Err` if index path resolution fails or all content directories
+/// are missing.
 #[cfg(feature = "fts")]
-pub async fn build_index(config: &crate::config::Config) -> crate::error::Result<IndexStats> {
+pub async fn build_index(
+    config: &crate::config::Config,
+) -> crate::error::Result<fabryk::fts::IndexStats> {
     let index_path = config.search.index_path()?;
 
     log::info!("Building FTS index at: {}", index_path.display());
@@ -209,6 +88,7 @@ pub async fn build_index(config: &crate::config::Config) -> crate::error::Result
     let content_dirs: Vec<(std::path::PathBuf, &str)> = [
         (config.paths.concept_cards_path(), "concept_cards"),
         (config.paths.sources_md_path(), "source_chapters"),
+        #[cfg(feature = "fts")]
         (config.paths.concepts_unified_path(), "unified_concepts"),
         (config.paths.guides_path(), "guides"),
     ]
@@ -235,76 +115,24 @@ pub async fn build_index(config: &crate::config::Config) -> crate::error::Result
         ));
     }
 
-    let mut total_stats = IndexStats::default();
-    let mut first = true;
-
-    for (content_path, label) in &content_dirs {
-        let extractor = fabryk::fts::ConceptCardDocumentExtractor::new();
-        let builder = fabryk::fts::IndexBuilder::new()
-            .with_extractor(Box::new(extractor))
-            .force_rebuild();
-
-        let result = if first {
-            builder.build(content_path, &index_path).await
-        } else {
-            builder.build_append(content_path, &index_path).await
-        };
-
-        match result {
-            Ok(fabryk_stats) => {
-                let partial = IndexStats::from(fabryk_stats);
-                // Update per-type counts based on the directory label.
-                let mut typed_stats = IndexStats {
-                    files_found: partial.files_found,
-                    indexed: partial.indexed,
-                    errors: partial.errors,
-                    ..Default::default()
-                };
-                match *label {
-                    "concept_cards" => typed_stats.concept_cards = partial.indexed,
-                    "source_chapters" => typed_stats.source_chapters = partial.indexed,
-                    "unified_concepts" => typed_stats.unified_concepts = partial.indexed,
-                    "guides" => typed_stats.guides = partial.indexed,
-                    _ => typed_stats.concept_cards = partial.indexed,
-                }
-                total_stats += typed_stats;
-                first = false;
-                log::info!(
-                    "Indexed {} from {}: {} docs",
-                    label,
-                    content_path.display(),
-                    partial.indexed
-                );
-            }
-            Err(e) => {
-                log::warn!(
-                    "Failed to index {} from {}: {}",
-                    label,
-                    content_path.display(),
-                    e
-                );
-                total_stats.errors += 1;
-            }
-        }
-    }
+    let extractor = fabryk::fts::ConceptCardDocumentExtractor::new();
+    let stats = fabryk::fts::build_index_multi(&content_dirs, &index_path, Box::new(extractor))
+        .await
+        .map_err(|e| crate::error::Error::operation(format!("Index build failed: {}", e)))?;
 
     log::info!(
         "Index build complete: {} docs indexed, {} errors",
-        total_stats.indexed,
-        total_stats.errors
+        stats.documents_indexed,
+        stats.errors
     );
 
-    Ok(total_stats)
+    Ok(stats)
 }
 
 /// Check if the index is fresh (content hasn't changed).
 ///
-/// Delegates to fabryk's `IndexMetadata::is_fresh()` using the concept_cards
-/// path as the content directory to check.
-///
-/// # Errors
-///
-/// Returns `Err` if path resolution or freshness check fails.
+/// Delegates to fabryk's `is_index_fresh` using the concept_cards path as
+/// the content directory to check.
 #[cfg(feature = "fts")]
 pub async fn is_index_fresh(
     index_path: &std::path::Path,
@@ -381,7 +209,6 @@ mod tests {
         let fabryk_config = to_fabryk_search_config(&config).expect("config resolution failed");
 
         assert_eq!(fabryk_config.backend, "simple");
-        // index_path is resolved to an absolute path
         let index_path = fabryk_config.index_path.expect("index_path should be Some");
         assert!(index_path.ends_with(".tantivy-index"));
         assert_eq!(fabryk_config.query_mode, fabryk::fts::QueryMode::Smart);
@@ -389,7 +216,6 @@ mod tests {
         assert_eq!(fabryk_config.fuzzy_distance, 2);
         assert!(fabryk_config.stopwords_enabled);
         assert_eq!(fabryk_config.snippet_length, 200);
-        // Allowlist should carry through
         assert!(fabryk_config.allowlist.contains(&"I".to_string()));
         assert!(fabryk_config.allowlist.contains(&"V".to_string()));
         assert!(fabryk_config.allowlist.contains(&"do".to_string()));
@@ -440,83 +266,6 @@ mod tests {
             to_fabryk_query_mode(&crate::config::QueryMode::MinimumMatch(0.5)),
             fabryk::fts::QueryMode::MinimumMatch
         );
-    }
-
-    #[test]
-    fn test_index_stats_default() {
-        let stats = IndexStats::default();
-        assert_eq!(stats.files_found, 0);
-        assert_eq!(stats.indexed, 0);
-        assert_eq!(stats.errors, 0);
-        assert_eq!(stats.concept_cards, 0);
-    }
-
-    #[test]
-    fn test_index_stats_add_assign() {
-        let mut stats1 = IndexStats {
-            files_found: 10,
-            indexed: 8,
-            errors: 2,
-            concept_cards: 8,
-            source_chapters: 0,
-            unified_concepts: 0,
-            guides: 0,
-        };
-
-        let stats2 = IndexStats {
-            files_found: 5,
-            indexed: 4,
-            errors: 1,
-            concept_cards: 0,
-            source_chapters: 4,
-            unified_concepts: 0,
-            guides: 0,
-        };
-
-        stats1 += stats2;
-
-        assert_eq!(stats1.files_found, 15);
-        assert_eq!(stats1.indexed, 12);
-        assert_eq!(stats1.errors, 3);
-        assert_eq!(stats1.concept_cards, 8);
-        assert_eq!(stats1.source_chapters, 4);
-    }
-
-    #[test]
-    fn test_index_stats_clone() {
-        let stats = IndexStats {
-            files_found: 10,
-            indexed: 10,
-            errors: 0,
-            concept_cards: 5,
-            source_chapters: 3,
-            unified_concepts: 1,
-            guides: 1,
-        };
-
-        let cloned = stats.clone();
-        assert_eq!(cloned.files_found, stats.files_found);
-        assert_eq!(cloned.indexed, stats.indexed);
-    }
-
-    #[cfg(feature = "fts")]
-    #[test]
-    fn test_index_stats_from_fabryk() {
-        let fabryk_stats = fabryk::fts::IndexStats {
-            documents_indexed: 42,
-            files_processed: 50,
-            files_skipped: 3,
-            errors: 5,
-            bytes_processed: 1024,
-            content_hash: "abc123".to_string(),
-            label_counts: std::collections::HashMap::new(),
-        };
-
-        let stats = IndexStats::from(fabryk_stats);
-        assert_eq!(stats.indexed, 42);
-        assert_eq!(stats.files_found, 50);
-        assert_eq!(stats.errors, 5);
-        assert_eq!(stats.concept_cards, 42);
     }
 
     #[test]

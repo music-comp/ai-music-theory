@@ -555,8 +555,8 @@ async fn handle_index_command(force: bool, log_level_override: Option<String>) -
     let stats = build_index(&config).await?;
 
     println!("✓ Index build complete:");
-    println!("  Files found:      {}", stats.files_found);
-    println!("  Documents indexed: {}", stats.indexed);
+    println!("  Files found:      {}", stats.files_processed);
+    println!("  Documents indexed: {}", stats.documents_indexed);
     println!("  Errors:           {}", stats.errors);
     println!("  Location:         {}", index_path.display());
 
@@ -603,8 +603,8 @@ async fn handle_status_command(log_level_override: Option<String>) -> Result<()>
 
     println!("Index Status:");
     println!("  Location:     {}", index_path.display());
-    println!("  Documents:    {}", metadata.doc_count());
-    println!("  Last indexed: {}", metadata.indexed_at_display());
+    println!("  Documents:    {}", metadata.document_count);
+    println!("  Last indexed: {}", metadata.indexed_at);
     println!(
         "  Status:       {}",
         if is_fresh {

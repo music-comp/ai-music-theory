@@ -156,7 +156,7 @@ fn start_fts_loading(state: Arc<AppState>, needs_rebuild: bool) {
             match build_fts_index_for_state(&state).await {
                 Ok(stats) => {
                     log::info!(
-                        indexed = stats.indexed,
+                        indexed = stats.documents_indexed,
                         errors = stats.errors;
                         "FTS index built"
                     );
@@ -942,12 +942,24 @@ Test content.
         assert!(result.is_ok());
 
         let stats = result.unwrap();
-        // v0.3.0: Check total indexed and per-type counts
-        assert_eq!(stats.indexed, 1);
-        assert_eq!(stats.concept_cards, 1);
-        assert_eq!(stats.source_chapters, 0);
-        assert_eq!(stats.unified_concepts, 0);
-        assert_eq!(stats.guides, 0);
+        // Check total indexed and per-label counts
+        assert_eq!(stats.documents_indexed, 1);
+        assert_eq!(
+            stats.label_counts.get("concept_cards").copied().unwrap_or(0),
+            1
+        );
+        assert_eq!(
+            stats.label_counts.get("source_chapters").copied().unwrap_or(0),
+            0
+        );
+        assert_eq!(
+            stats.label_counts.get("unified_concepts").copied().unwrap_or(0),
+            0
+        );
+        assert_eq!(
+            stats.label_counts.get("guides").copied().unwrap_or(0),
+            0
+        );
     }
 
     #[tokio::test]
