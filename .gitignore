@@ -1,5 +1,5 @@
 .DS_Store
-.claude
+.claude*
 /workbench
 /mcp-server/workbench
 /mcp-server/assets/ai/ai-rust
