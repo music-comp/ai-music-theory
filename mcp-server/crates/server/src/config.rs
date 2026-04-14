@@ -2,7 +2,6 @@ use confyg::{conf, Confygery};
 use fabryk::core::util::paths::expand_tilde;
 use fabryk::core::util::resolver::PathResolver;
 use fabryk::core::{ConfigManager, ConfigProvider};
-use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use std::path::PathBuf;
@@ -112,19 +111,8 @@ impl SourceCategory {
     }
 }
 
-/// Query matching mode for multi-word queries.
-#[derive(Debug, Clone, Serialize, Deserialize, JsonSchema, PartialEq)]
-#[serde(rename_all = "snake_case")]
-pub enum QueryMode {
-    /// Match ANY term (OR logic) - original behavior
-    Or,
-    /// Match ALL terms (AND logic) - strict matching
-    And,
-    /// Match at least N% of terms - flexible matching
-    MinimumMatch(f32),
-    /// Smart tiered: 2 words = AND, 3+ = OR with 60% minimum
-    Smart,
-}
+// QueryMode is re-exported from fabryk-fts.
+pub use fabryk::fts::QueryMode;
 
 /// Search configuration.
 /// Fields will be used when search backends are implemented (Phase 2+).
@@ -156,7 +144,7 @@ pub struct SearchConfig {
     pub fuzzy_distance: u8,
 
     /// Query mode: how to match multi-word queries (smart, and, or, minimum_match)
-    #[serde(default = "default_query_mode")]
+    #[serde(default)]
     pub query_mode: QueryMode,
 
     /// Minimum match percentage for OR queries with 3+ terms (0.0-1.0)
@@ -205,10 +193,6 @@ fn default_fuzzy_distance() -> u8 {
     2
 }
 
-fn default_query_mode() -> QueryMode {
-    QueryMode::Smart
-}
-
 fn default_minimum_match() -> f32 {
     0.6 // 60% of terms must match for OR queries with 3+ terms
 }
@@ -249,7 +233,7 @@ impl Default for SearchConfig {
             snippet_size: default_snippet_size(),
             fuzzy_search: false,
             fuzzy_distance: default_fuzzy_distance(),
-            query_mode: default_query_mode(),
+            query_mode: QueryMode::default(),
             minimum_match_percent: default_minimum_match(),
             enable_stopwords: default_enable_stopwords(),
             custom_stopwords: vec![],
@@ -897,7 +881,7 @@ mod tests {
 
     #[test]
     fn test_default_query_mode_is_smart() {
-        assert_eq!(default_query_mode(), QueryMode::Smart);
+        assert_eq!(QueryMode::default(), QueryMode::Smart);
     }
 
     #[test]
@@ -976,9 +960,9 @@ mod tests {
 
     #[test]
     fn test_query_mode_serde_minimum_match() {
-        let json = r#"{"minimum_match":0.75}"#;
+        let json = r#""minimum_match""#;
         let mode: QueryMode = serde_json::from_str(json).expect("Should deserialize MinimumMatch");
-        assert_eq!(mode, QueryMode::MinimumMatch(0.75));
+        assert_eq!(mode, QueryMode::MinimumMatch);
     }
 
     #[test]
@@ -986,12 +970,12 @@ mod tests {
         assert!(format!("{:?}", QueryMode::Or).contains("Or"));
         assert!(format!("{:?}", QueryMode::And).contains("And"));
         assert!(format!("{:?}", QueryMode::Smart).contains("Smart"));
-        assert!(format!("{:?}", QueryMode::MinimumMatch(0.5)).contains("MinimumMatch"));
+        assert!(format!("{:?}", QueryMode::MinimumMatch).contains("MinimumMatch"));
     }
 
     #[test]
     fn test_query_mode_clone() {
-        let mode = QueryMode::MinimumMatch(0.8);
+        let mode = QueryMode::MinimumMatch;
         let cloned = mode.clone();
         assert_eq!(mode, cloned);
     }

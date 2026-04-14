@@ -15,34 +15,30 @@ pub use fabryk::fts::SimpleSearch;
 pub use fabryk::fts::{IndexMetadata, IndexStats, TantivySearch};
 
 // ============================================================================
-// Config conversion (needed until Phase 3.1 unifies QueryMode)
+// Config conversion (maps local field names to fabryk field names)
 // ============================================================================
 
 /// Convert the project's `SearchConfig` to fabryk's `SearchConfig`.
 ///
-/// Maps field names and handles type differences:
-/// - `query_mode`: `MinimumMatch(f32)` -> `MinimumMatch` (drops the f32)
-/// - `index_path`: `String` -> `Option<String>`
+/// Maps field names between the project's config format and fabryk's:
+/// - `index_path`: `String` -> `Option<String>` (with path expansion)
 /// - `snippet_size` -> `snippet_length`
+/// - `fuzzy_search` -> `fuzzy_enabled`
+/// - `enable_stopwords` -> `stopwords_enabled`
 /// - `stopword_allowlist` -> `allowlist`
+///
+/// QueryMode is now the same type (fabryk::fts::QueryMode) and needs no conversion.
 #[cfg(feature = "fts")]
 pub fn to_fabryk_search_config(
     config: &crate::config::SearchConfig,
 ) -> crate::error::Result<fabryk::fts::SearchConfig> {
-    let query_mode = match config.query_mode {
-        crate::config::QueryMode::Smart => fabryk::fts::QueryMode::Smart,
-        crate::config::QueryMode::And => fabryk::fts::QueryMode::And,
-        crate::config::QueryMode::Or => fabryk::fts::QueryMode::Or,
-        crate::config::QueryMode::MinimumMatch(_) => fabryk::fts::QueryMode::MinimumMatch,
-    };
-
     let index_path = config.index_path()?;
 
     Ok(fabryk::fts::SearchConfig {
         backend: config.backend.clone(),
         index_path: Some(index_path.to_string_lossy().into_owned()),
         content_path: None, // set per-invocation
-        query_mode,
+        query_mode: config.query_mode,
         fuzzy_enabled: config.fuzzy_search,
         fuzzy_distance: config.fuzzy_distance,
         stopwords_enabled: config.enable_stopwords,
@@ -50,17 +46,12 @@ pub fn to_fabryk_search_config(
         allowlist: config.stopword_allowlist.clone(),
         default_limit: 10,
         snippet_length: config.snippet_size,
+        rebuild_on_startup: config.rebuild_on_startup,
+        minimum_match_percent: config.minimum_match_percent,
+        field_boost_title: config.field_boost_title,
+        field_boost_description: config.field_boost_description,
+        field_boost_content: config.field_boost_content,
     })
-}
-
-/// Convert the project's `QueryMode` to fabryk's `QueryMode`.
-pub fn to_fabryk_query_mode(mode: &crate::config::QueryMode) -> fabryk::fts::QueryMode {
-    match mode {
-        crate::config::QueryMode::Smart => fabryk::fts::QueryMode::Smart,
-        crate::config::QueryMode::And => fabryk::fts::QueryMode::And,
-        crate::config::QueryMode::Or => fabryk::fts::QueryMode::Or,
-        crate::config::QueryMode::MinimumMatch(_) => fabryk::fts::QueryMode::MinimumMatch,
-    }
 }
 
 // ============================================================================
@@ -240,30 +231,10 @@ mod tests {
     #[test]
     fn test_to_fabryk_search_config_minimum_match() {
         let mut config = test_search_config();
-        config.query_mode = crate::config::QueryMode::MinimumMatch(0.6);
+        config.query_mode = crate::config::QueryMode::MinimumMatch;
         let fabryk_config = to_fabryk_search_config(&config).expect("config resolution failed");
         assert_eq!(
             fabryk_config.query_mode,
-            fabryk::fts::QueryMode::MinimumMatch
-        );
-    }
-
-    #[test]
-    fn test_to_fabryk_query_mode() {
-        assert_eq!(
-            to_fabryk_query_mode(&crate::config::QueryMode::Smart),
-            fabryk::fts::QueryMode::Smart
-        );
-        assert_eq!(
-            to_fabryk_query_mode(&crate::config::QueryMode::And),
-            fabryk::fts::QueryMode::And
-        );
-        assert_eq!(
-            to_fabryk_query_mode(&crate::config::QueryMode::Or),
-            fabryk::fts::QueryMode::Or
-        );
-        assert_eq!(
-            to_fabryk_query_mode(&crate::config::QueryMode::MinimumMatch(0.5)),
             fabryk::fts::QueryMode::MinimumMatch
         );
     }
